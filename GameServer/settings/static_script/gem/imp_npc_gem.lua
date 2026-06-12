@@ -1,7 +1,7 @@
 Include("\\script\\system_switch_config.lua")
 Include("\\settings\\static_script\\gem\\imp_item_gem_box.lua")
 
-ING_SZ_NPC_NAME = "Hoµn Nhan Hy Y "
+ING_SZ_NPC_NAME = "Dia Sab Kdor"
 function gem_OnServerStart()
 	local npcIndex1 = CreateNpc("Gem_Npc", ING_SZ_NPC_NAME, 350,1381,3017)
     SetNpcScript(npcIndex1, "\\script\\gem\\npc_gem.lua")
