@@ -3,16 +3,16 @@ Include("\\script\\newbattles\\head.lua")
 Include("\\script\\ksgvn\\functions\\battle_head.lua")
 Import("\\script\\vng\\lib\\vnglib_textdata.lua")
 
-g_szTitle = "<color=green>Mé Binh Quan: <color>"
+g_szTitle = "<color=green>Recruitment Officer: <color>"
 
 function battle_OpenMenu()
     local tSay = {
-        g_szTitle .. "Chän lo¹i chiÕn tr­êng muèn më.",
-        "Nh¹n M«n Quan-ChiÕn tr­êng phô/battle_OpenNMQ_Sub",
-        "Nh¹n M«n Quan-ChiÕn dÞch chÝnh/battle_OpenNMQ",
-        "Ngäc M«n Quan-ChiÕn dÞch chÝnh/battle_OpenNMQ_1",
-        "Xãa giíi h¹n vµo chiÕn tr­êng/battle_Before_ClearSignUp",
-        "\nKÕt thóc ®èi tho¹i/no",
+        g_szTitle .. "Choose the battlefield type to open.",
+        "Yanmen Pass - Sub Battlefield/battle_OpenNMQ_Sub",
+        "Yanmen Pass - Main Campaign/battle_OpenNMQ",
+        "Jade Gate Pass - Main Campaign/battle_OpenNMQ_1",
+        "Clear battlefield entry limit/battle_Before_ClearSignUp",
+        "\nEnd conversation/no",
     }
     KsgNpc:SayDialog(tSay)
 end
@@ -20,25 +20,25 @@ end
 function battle_Before_ClearSignUp(nConfirm)
     if not nConfirm then
         local tSay = {
-            g_szTitle .. "X¸c nhËn thao t¸c më chiÕn tr­êng Nh¹n M«n Quan-ChiÕn dÞch chÝnh?",
-            "X¸c nhËn/#battle_Before_ClearSignUp(1)",
-            "Trë l¹i/battle_OpenMenu",
-            "\nKÕt thóc ®èi tho¹i/no",
+            g_szTitle .. "Confirm opening the Yanmen Pass - Main Campaign battlefield?",
+            "Confirm/#battle_Before_ClearSignUp(1)",
+            "Back/battle_OpenMenu",
+            "\nEnd conversation/no",
         }
         KsgNpc:SayDialog(tSay)
         return
     end
     battle_ClearSignUp()
-    KsgPlayer:Talk("§· xãa d÷ liÖu giíi h¹n chiÕn tr­êng trËn hiÖn t¹i hoÆc trËn s¾p tíi.")
+    KsgPlayer:Talk("Cleared the battlefield limit data for the current or upcoming match.")
 end
 
 function battle_OpenNMQ(nConfirm)
     if not nConfirm then
         local tSay = {
-            g_szTitle .. "X¸c nhËn thao t¸c më chiÕn tr­êng Nh¹n M«n Quan-ChiÕn dÞch chÝnh?",
-            "X¸c nhËn/#battle_OpenNMQ(1)",
-            "Trë l¹i/battle_OpenMenu",
-            "\nKÕt thóc ®èi tho¹i/no",
+            g_szTitle .. "Confirm opening the Yanmen Pass - Main Campaign battlefield?",
+            "Confirm/#battle_OpenNMQ(1)",
+            "Back/battle_OpenMenu",
+            "\nEnd conversation/no",
         }
         KsgNpc:SayDialog(tSay)
         return
@@ -51,12 +51,12 @@ function battle_OpenNMQ(nConfirm)
     if GetGlbValue(GLB_FORBIDBATTLE) == 0 then
         local nHour = tonumber(date("%H"))
         if SubWorldID2Idx(200) >= 0 then
-            AddLocalNews("Th¸m m· håi b¸o, Nh¹n M«n Quan-chiÕn dÞch chÝnh s¾p khai chiÕn, mêi c¸c vÞ anh hïng nhanh chãng b¸o danh.")
-            Msg2Global("Th¸m m· håi b¸o, Nh¹n M«n Quan-chiÕn dÞch chÝnh s¾p khai chiÕn, mêi c¸c vÞ anh hïng nhanh chãng b¸o danh.")
+            AddLocalNews("Scouts report: the Yanmen Pass - main campaign is about to begin. Heroes, register quickly.")
+            Msg2Global("Scouts report: the Yanmen Pass - main campaign is about to begin. Heroes, register quickly.")
         end
         battle_ClearSignUp()
         local nOldSubWorld = SubWorld
-        SetGlbValue(GLB_NEW_BATTLESTATE, nHour * 10 + 3)    --ÉèÎªXX3£¬×¢Òâ£¬ÕâÀïµÄXX¿ÉÄÜºÍ¸±Õ½³¡µÄXX²»Ò»ÑùÅ¶
+        SetGlbValue(GLB_NEW_BATTLESTATE, nHour * 10 + 3)    --Set to XX3 (note: this XX may differ from the sub-battlefield XX)
         SubWorld = SubWorldID2Idx(tBTMSInfo[MAINBATTLE_ID][2])
         if RANDOM_CAMP_PLACE == 1 then
             SetGlbValue(GLB_RANDOM_PLACE_MAIN, random(0, 1))
@@ -74,10 +74,10 @@ end
 function battle_OpenNMQ_1(nConfirm)
     if not nConfirm then
         local tSay = {
-            g_szTitle .. "X¸c nhËn thao t¸c më chiÕn tr­êng Ngäc M«n Quan-ChiÕn dÞch chÝnh?",
-            "X¸c nhËn/#battle_OpenNMQ_1(1)",
-            "Trë l¹i/battle_OpenMenu",
-            "\nKÕt thóc ®èi tho¹i/no",
+            g_szTitle .. "Confirm opening the Jade Gate Pass - Main Campaign battlefield?",
+            "Confirm/#battle_OpenNMQ_1(1)",
+            "Back/battle_OpenMenu",
+            "\nEnd conversation/no",
         }
         KsgNpc:SayDialog(tSay)
         return
@@ -90,12 +90,12 @@ function battle_OpenNMQ_1(nConfirm)
     if GetGlbValue(GLB_FORBIDBATTLE) == 0 then
         local nHour = tonumber(date("%H"))
         if SubWorldID2Idx(500) >= 0 then
-            AddLocalNews("Th¸m m· håi b¸o, Ngäc M«n Quan-chiÕn dÞch chÝnh s¾p khai chiÕn, mêi c¸c vÞ anh hïng nhanh chãng b¸o danh.")
-            Msg2Global("Th¸m m· håi b¸o, Ngäc M«n Quan-chiÕn dÞch chÝnh s¾p khai chiÕn, mêi c¸c vÞ anh hïng nhanh chãng b¸o danh.")
+            AddLocalNews("Scouts report: the Jade Gate Pass - main campaign is about to begin. Heroes, register quickly.")
+            Msg2Global("Scouts report: the Jade Gate Pass - main campaign is about to begin. Heroes, register quickly.")
         end
         battle_ClearSignUp()
         local nOldSubWorld = SubWorld
-        SetGlbValue(GLB_NEW_BATTLESTATE, nHour * 10 + 3)    --ÉèÎªXX3£¬×¢Òâ£¬ÕâÀïµÄXX¿ÉÄÜºÍ¸±Õ½³¡µÄXX²»Ò»ÑùÅ¶
+        SetGlbValue(GLB_NEW_BATTLESTATE, nHour * 10 + 3)    --Set to XX3 (note: this XX may differ from the sub-battlefield XX)
         SubWorld = SubWorldID2Idx(tBTMSInfo[PRIMARY_MAINBATTLE_ID][2])
         if RANDOM_CAMP_PLACE == 1 then
             SetGlbValue(GLB_RANDOM_PLACE_MAIN, random(0, 1))
@@ -113,10 +113,10 @@ end
 function battle_OpenNMQ_Sub(nConfirm)
     if not nConfirm then
         local tSay = {
-            g_szTitle .. "X¸c nhËn thao t¸c më chiÕn tr­êng Nh¹n M«n Quan-ChiÕn tr­êng phô?",
-            "X¸c nhËn/#battle_OpenNMQ_Sub(1)",
-            "Trë l¹i/OnUse",
-            "§ãng/no",
+            g_szTitle .. "Confirm opening the Yanmen Pass - Sub Battlefield?",
+            "Confirm/#battle_OpenNMQ_Sub(1)",
+            "Back/OnUse",
+            "Close/no",
         }
         KsgNpc:SayDialog(tSay)
         return
@@ -126,7 +126,7 @@ function battle_OpenNMQ_Sub(nConfirm)
         return 0
     end
     WriteLog("[NewBattle]:Initialize Sub-Battle")
-    SetGlbValue(GLB_VILLAGE, 0)    --²»¹ÜÔõÑù£¬¶¼°ÑÕ½³¡µÄ½á¹ûÇåµô
+    SetGlbValue(GLB_VILLAGE, 0)    --Clear the battlefield result no matter what
     SetGlbValue(GLB_RESOURCE, 0)
     SetGlbValue(GLB_EMPLACEMENT, 0)
     SetGlbValue(GLB_MAINBATTLE, 0)
@@ -135,12 +135,12 @@ function battle_OpenNMQ_Sub(nConfirm)
         local nHour = tonumber(date("%H"))
         if nGlobalState == 0 then
             if SubWorldID2Idx(200) >= 0 then
-                AddGlobalNews("ChiÕn tr­êng Nh¹n M«n Quan s¾p khai chiÕn, mêi c¸c vÞ anh hïng nhanh chãng b¸o danh.")
-                Msg2Global("ChiÕn tr­êng Nh¹n M«n Quan s¾p khai chiÕn, mêi c¸c vÞ anh hïng nhanh chãng b¸o danh.")
+                AddGlobalNews("The Yanmen Pass battlefield is about to begin. Heroes, register quickly.")
+                Msg2Global("The Yanmen Pass battlefield is about to begin. Heroes, register quickly.")
             end
             battle_ClearSignUp()
             local nOldSubWorld = SubWorld
-            SetGlbValue(GLB_NEW_BATTLESTATE, nHour * 10 + 1)    --ÉèÎªXX1
+            SetGlbValue(GLB_NEW_BATTLESTATE, nHour * 10 + 1)    --Set to XX1
             if RANDOM_CAMP_PLACE == 1 then
                 SetGlbValue(GLB_RANDOM_PLACE_VILL, random(0, 1))
                 SetGlbValue(GLB_RANDOM_PLACE_RESO, random(0, 1))
@@ -183,7 +183,7 @@ function battle_CanSignUp(nBattleType)
         return 1
     end
     if tonumber(LIB_txtData.tbTextData[nMacIdx][4]) >= TONGLIEU_MAX_PLAYER_SIGNUP then
-        KsgNpc:Talk(format(g_szTitle .. "HiÖn mçi trËn chØ cho phÐp <color=gold>%d nh©n vËt<color> b¸o danh tham gia Tèng Liªu. Xin h·y tham gia tiÕp vµo trËn sau.", TONGLIEU_MAX_PLAYER_SIGNUP))
+        KsgNpc:Talk(format(g_szTitle .. "Each match currently allows only <color=gold>%d characters<color> to register for Song-Liao. Please join the next match instead.", TONGLIEU_MAX_PLAYER_SIGNUP))
         return nil
     end
     return 1
@@ -226,7 +226,7 @@ function battle_ClearSignUp()
 end
 
 function battle_ChangeTitle()
-    local tSay = { "Thay ®æi qu©n hµm" }
+    local tSay = { "Change military rank" }
     local nMax = 5
     if KsgPlayer:IsGM() then
         nMax = 6
@@ -234,10 +234,10 @@ function battle_ChangeTitle()
     for i = 3, nMax do
         local nBattleTitle = KsgLib:BattleRank2Title(i)
         if nBattleTitle then
-            tinsert(tSay, format("§æi qu©n hµm thµnh %s/#battle_ChangeTitle_SelectCamp(%d)", nBattleTitle, i))
+            tinsert(tSay, format("Change military rank to %s/#battle_ChangeTitle_SelectCamp(%d)", nBattleTitle, i))
         end
     end
-    tinsert(tSay, "\nRêi khái/no")
+    tinsert(tSay, "\nLeave/no")
     KsgNpc:SayDialog(tSay)
 end
 
@@ -256,35 +256,35 @@ function battle_ChangeBattleRank(nCamp, nLevel, nConfirm)
             return
         end
         if (nCamp == 1) then
-            --Gia nhËp Tèng³
-            SetTask(701, nPoint)    --Set ®iÓm qu©n c«ng phe Tèng
-            SetTask(704, nLevel)    --Set qu©n hµm
-            SetTask(745, nLevel)    --Set qu©n hµm cao nhÊt
-            SetTask(702, nPoint)    --Set qu©n c«ng phe Tèng cao nhÊt
-            KsgPlayer:Msg("NhËn ®­îc qu©n hµm Tèng " .. nTitle)
+            --Join Song
+            SetTask(701, nPoint)    --Set military merit points for the Song side
+            SetTask(704, nLevel)    --Set military rank
+            SetTask(745, nLevel)    --Set highest military rank
+            SetTask(702, nPoint)    --Set highest Song-side military merit
+            KsgPlayer:Msg("Received Song military rank " .. nTitle)
         elseif (nCamp == 2) then
-            --Gia nhËp liªu
-            SetTask(701, -nPoint)    --Set ®iÓm qu©n c«ng phe Liªu
-            SetTask(704, -nLevel)    --Set qu©n hµm
-            SetTask(746, -nLevel)    --Set qu©n hµm cao nhÊt
-            SetTask(703, nPoint)    --Set qu©n c«ng phe Liªu cao nhÊt
-            KsgPlayer:Msg("NhËn ®­îc qu©n hµm Liªu " .. nTitle)
+            --Join Liao
+            SetTask(701, -nPoint)    --Set military merit points for the Liao side
+            SetTask(704, -nLevel)    --Set military rank
+            SetTask(746, -nLevel)    --Set highest military rank
+            SetTask(703, nPoint)    --Set highest Liao-side military merit
+            KsgPlayer:Msg("Received Liao military rank " .. nTitle)
         end
         return
     end
     local nTitle = KsgLib:BattleRank2Title(nLevel)
     if not nTitle then
-        return KsgNpc:Talk("CÊp qu©n hµm lùa chän kh«ng hîp lÖ.")
+        return KsgNpc:Talk("The selected military rank is invalid.")
     end
-    local szMsg = 'Liªu '
+    local szMsg = 'Liao '
     if nCamp == 1 then
-        szMsg = "Tèng "
+        szMsg = "Song "
     end
     szMsg = szMsg .. nTitle
     local tSay = {
-        format("X¸c nhËn thay ®æi qu©n hµm thµnh %s?", szMsg, nLevel),
-        format("X¸c nhËn/#battle_ChangeBattleRank(%d, %d, 1)", nCamp, nLevel),
-        "Suy nghÜ l¹i mét chót/no"
+        format("Confirm changing military rank to %s?", szMsg, nLevel),
+        format("Confirm/#battle_ChangeBattleRank(%d, %d, 1)", nCamp, nLevel),
+        "Let me reconsider/no"
     }
     return KsgNpc:SayDialog(tSay)
 end
@@ -293,14 +293,14 @@ function battle_ChangeTitle_SelectCamp(nLevel)
     local nTitle = KsgLib:BattleRank2Title(nLevel)
     if nTitle then
         local tSay = {
-            "Chän phe gia nhËp:",
-            format("%s phe Tèng/#battle_ChangeBattleRank(%d,%d)", nTitle, 1, nLevel),
-            format("%s phe Liªu/#battle_ChangeBattleRank(%d,%d)", nTitle, 2, nLevel),
-            "\nRêi khái/no"
+            "Choose the side to join:",
+            format("%s Song side/#battle_ChangeBattleRank(%d,%d)", nTitle, 1, nLevel),
+            format("%s Liao side/#battle_ChangeBattleRank(%d,%d)", nTitle, 2, nLevel),
+            "\nLeave/no"
         }
         return KsgNpc:SayDialog(tSay)
     end
-    KsgNpc:Talk("CÊp qu©n hµm lùa chän kh«ng hîp lÖ.")
+    KsgNpc:Talk("The selected military rank is invalid.")
 end
 
 function battle_CheckBattleEquipState(nItemIdx)
@@ -340,14 +340,14 @@ function battle_CheckBattleEquip(nEquipCamp, nRequireQuanHam, nRequireCongTrang,
         nPlayerCamp = SONG_ID
     end
     if nPlayerCamp == ALL_ID then
-        Msg2Player("Qu©n hµm cña b¹n hiÖn míi lµ Binh sÜ, kh«ng thÓ mÆc trang bÞ " .. szEquipName)
+        Msg2Player("Your military rank is still only Soldier, you cannot wear the Equipment " .. szEquipName)
         return 0
     end
     if (nEquipCamp ~= nPlayerCamp) then
         if nPlayerCamp == SONG_ID then
-            Msg2Player("Ng­¬i lµ phe Tèng, kh«ng thÓ mÆc trang bÞ phe Liªu")
+            Msg2Player("You are on the Song side, you cannot wear Liao-side Equipment")
         else
-            Msg2Player("Ng­¬i lµ phe Liªu, kh«ng thÓ mÆc trang bÞ phe Tèng")
+            Msg2Player("You are on the Liao side, you cannot wear Song-side Equipment")
         end
         return 0
     end
@@ -369,6 +369,6 @@ function battle_CheckBattleEquip(nEquipCamp, nRequireQuanHam, nRequireCongTrang,
         return 1
     end
 
-    Msg2Player("Qu©n hµm cña b¹n qu¸ thÊp, kh«ng thÓ mÆc " .. szEquipName)
+    Msg2Player("Your military rank is too low, you cannot wear " .. szEquipName)
     return 0
 end

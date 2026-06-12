@@ -1,7 +1,7 @@
 Import("\\script\\ksgvn\\lib.lua")
 
 function book_AddBookByType(nNum, nType)
-    -- MËt tÞch m«n ph¸i
+    -- Sect Secret Manual
     local nRoute = KsgPlayer:GetRoute()
     local tbBook = g_tbFactionBook_Basic
     nType = nType or 1
@@ -39,12 +39,12 @@ end
 
 function book_ShowCommonMenu()
     local tSay = {
-        "H·y chän lo¹i mËt tÞch:",
+        "Please choose a Secret Manual type:",
     }
     for i = 55, 66 do
-        tinsert(tSay, format("NhËn %s/#book_AddCommonBook(%d)", KsgItem:GetName(GENRE_ITEM_EQUIP, EQUIP_TYPE_BOOK, i), i))
+        tinsert(tSay, format("Receive %s/#book_AddCommonBook(%d)", KsgItem:GetName(GENRE_ITEM_EQUIP, EQUIP_TYPE_BOOK, i), i))
     end
-    tinsert(tSay, "\nRêi khái/no")
+    tinsert(tSay, "\nLeave/no")
     KsgNpc:SayDialog(tSay)
 end
 
@@ -53,7 +53,7 @@ function book_AddMasterBook()
         return
     end
     if not KsgPlayer:IsJoinedRoute() then
-        return KsgNpc:Talk("C¸c h¹ ch­a gia nhËp m«n ph¸i, kh«ng thÓ më r­¬ng yÕu quyÕt nµy!")
+        return KsgNpc:Talk("You have not joined a Sect, you cannot open this essential-formula chest!")
     end
     local nRoute = KsgPlayer:GetRoute()
     if not g_tbFactionBook_Master[nRoute] then
@@ -62,7 +62,7 @@ function book_AddMasterBook()
     local tbAward = {
         { tbProp = { GENRE_ITEM_EQUIP, EQUIP_TYPE_EXTEND_BOOK, g_tbFactionBook_Master[nRoute] }, nStatus = 4 },
     }
-    KsgAward:Give(tbAward, "NhËn TrÊn Ph¸i")
+    KsgAward:Give(tbAward, "Receive Sect-Guarding Manual")
 end
 
 function book_FastPractice()
@@ -74,12 +74,12 @@ function book_FastPractice()
     end
     PlaySound("\\sound\\sound_i016.wav");
     SetCurrentNpcSFX(PIdx2NpcIdx(), 905, 0, 0)
-    KsgPlayer:Msg("Hoµn thµnh luyÖn mËt tÞch!!")
+    KsgPlayer:Msg("Secret Manual training complete!!")
 end
 
 function book_AddYeuQuyet()
     if not KsgPlayer:IsJoinedRoute() then
-        return KsgNpc:Talk("C¸c h¹ ch­a gia nhËp m«n ph¸i, kh«ng thÓ nhËn r­¬ng yÕu quyÕt!")
+        return KsgNpc:Talk("You have not joined a Sect, you cannot receive the essential-formula chest!")
     end
 
     KsgAward:Give({ tbProp = { 2, 1, 50005 }, nStack = 1, nStatus = 4 })
@@ -87,7 +87,7 @@ end
 
 function book_AddCoPho()
     if not KsgPlayer:IsJoinedRoute() then
-        return KsgNpc:Talk("C¸c h¹ ch­a gia nhËp m«n ph¸i, kh«ng thÓ lÜnh ngé vâ c«ng trong Cæ phæ!")
+        return KsgNpc:Talk("You have not joined a Sect, you cannot comprehend the martial arts in the Ancient Manual!")
     end
     local tbAward = {
         { tbProp = { 2, 1, 50028 }, nStack = 10, nStatus = 4 },
@@ -108,12 +108,12 @@ function book_AddLangBa()
     local tbAward = {
         { tbProp = { GENRE_ITEM_EQUIP, EQUIP_TYPE_EXTEND_BOOK, 158 }, nStatus = 4 },
     }
-    KsgAward:Give(tbAward, "NhËn L¨ng Ba Vi Bé")
+    KsgAward:Give(tbAward, "Receive Wavetreading Steps")
 end
 
 function book_AddTieuDao()
     local tbAward = {
         { tbProp = { GENRE_ITEM_EQUIP, EQUIP_TYPE_EXTEND_BOOK, 224 }, nStatus = 4 },
     }
-    KsgAward:Give(tbAward, "NhËn Tiªu Dao MËt tÞch")
+    KsgAward:Give(tbAward, "Receive Tieu Dao Secret Manual")
 end

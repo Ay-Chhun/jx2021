@@ -27,7 +27,7 @@ function pet_AddRandom(nLevel)
     end
     local bRet = AddPet(tbPet[nLevel])
     if bRet and bRet ~= -1 then
-        Msg2Player(format("NhËn ®­îc 1 thó c­ng cÊp %d", nLevel))
+        Msg2Player(format("Received 1 level %d Pet", nLevel))
     end
 end
 

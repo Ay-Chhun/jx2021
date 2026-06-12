@@ -2,7 +2,7 @@ Import("\\script\\ksgvn\\lib.lua")
 
 function guild_ShowCreateDialog()
     if IsTongMember() ~= 0 then
-        return KsgNpc:Talk("Ng≠¨i Æ∑ c„ bang hÈi!")
+        return KsgNpc:Talk("You already have a Guild!")
     end
     if not KsgLib:HasEnoughBagRoom(2, 100) then
         return
@@ -28,50 +28,50 @@ function guild_LevelUp()
         PlaySound("\\sound\\sound_i016.wav")
         SetCurrentNpcSFX(PIdx2NpcIdx(), 905, 0, 0)
     else
-        KsgNpc:Talk("C p bang hÈi Æ∑ Æπt Æ’n tËi Æa, kh´ng th” th®ng c p th™m.")
+        KsgNpc:Talk("The Guild level has reached the maximum, it cannot be upgraded further.")
     end
 end
 
 function guild_AddGxd()
     if IsTongMember() == 0 and 1 == 2 then
-        return KsgNpc:Talk("C∏c hπ c«n vµo bang ho∆c tπo lÀp bang tr≠Ìc khi ti’n hµnh thao t∏c nµy!")
+        return KsgNpc:Talk("You must join or create a Guild before performing this action!")
     end
     add_tong_gxd(10000)
-    KsgPlayer:Msg("NhÀn Æ≠Óc 10.000 Æi”m cËng hi’n bang!")
+    KsgPlayer:Msg("Received 10,000 Guild contribution points!")
 end
 
 function guild_ShowAddTitle()
     if IsTongMember() == 0 then
-        return KsgNpc:Talk("C∏c hπ c«n vµo bang ho∆c tπo lÀp bang tr≠Ìc khi ti’n hµnh thao t∏c nµy!")
+        return KsgNpc:Talk("You must join or create a Guild before performing this action!")
     end
     local tSay = {
-        "NhÀn hi÷u bang",
+        "Receive Guild title",
     }
 
     for i = 1, 10 do
         if i > get_tong_title_max_lv() then
-            tinsert(tSay, i + 1, format("NhÀn hi÷u bang c p %s/#guild_AddTitle(%d)", i, i))
+            tinsert(tSay, i + 1, format("Receive Guild title level %s/#guild_AddTitle(%d)", i, i))
         else
-            tinsert(tSay, i + 1, format("NhÀn hi÷u bang c p %s (Æ∑ nhÀn)/no", i))
+            tinsert(tSay, i + 1, format("Receive Guild title level %s (already received)/no", i))
         end
     end
-    tinsert(tSay, "\nRÍi kh·i/no")
+    tinsert(tSay, "\nLeave/no")
     KsgNpc:SayDialog(tSay)
 end
 
 function guild_ShowAddGangToken()
     if IsTongMember() == 0 then
-        return KsgNpc:Talk("C∏c hπ c«n vµo bang ho∆c tπo lÀp bang tr≠Ìc khi ti’n hµnh thao t∏c nµy!")
+        return KsgNpc:Talk("You must join or create a Guild before performing this action!")
     end
     local tSay = {
-        "NhÀn t›n vÀt bang hÈi: ",
+        "Receive Guild token: ",
     }
 
     for i = 1, 20 do
-        tinsert(tSay, i + 1, format("NhÀn t›n vÀt c p %s/#guild_AddGangToken(%d)", i, i))
+        tinsert(tSay, i + 1, format("Receive token level %s/#guild_AddGangToken(%d)", i, i))
     end
 
-    tinsert(tSay, "\nRÍi kh·i/no")
+    tinsert(tSay, "\nLeave/no")
     KsgNpc:SayDialog(tSay)
 end
 
@@ -82,9 +82,9 @@ function guild_AddGangToken(nLevel)
     end
     if KsgItem:CountAll(0, 155, nLevel) == 0 then
         AddItem(0, 155, nLevel, 1)
-        KsgNpc:Talk(format("NhÀn thµnh c´ng t›n vÀt bang c p %d", nLevel))
+        KsgNpc:Talk(format("Successfully received Guild token level %d", nLevel))
     else
-        KsgNpc:Talk(format("C∏c hπ Æ∑ c„ t›n vÀt bang c p %d rÂi, kh´ng th” nhÀn th™m!", nLevel))
+        KsgNpc:Talk(format("You already have a Guild token level %d, you cannot receive more!", nLevel))
     end
 end
 
@@ -100,6 +100,6 @@ function guild_AddTitle(nLevel)
         SetCurTitle(72, nLevel)
         PlaySound("\\sound\\sound_i016.wav")
         SetCurrentNpcSFX(PIdx2NpcIdx(), 905, 0, 0)
-        KsgNpc:Talk(format("NhÀn thµnh c´ng hi÷u bang c p %d", nLevel))
+        KsgNpc:Talk(format("Successfully received Guild title level %d", nLevel))
     end
 end

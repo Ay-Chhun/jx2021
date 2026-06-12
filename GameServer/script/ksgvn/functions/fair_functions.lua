@@ -1,13 +1,13 @@
 Import("\\script\\ksgvn\\lib.lua")
 
-FAIR_LV_MAX = 3 --VN:»¯¾³µÈ¼¶ÉÏÏÞ
-FAIR_LV_ROUND = 3 --VN:Éý¼¶»¯¾³ÐèÒª¼¤»îËùÓÐÐÇËÞµÄÂ×´Î
-FAIR_STAR_NUM = 10 --VN:Ã¿ÂÖÓÐ¶àÉÙ¿ÅÐÇÐÇ
-FAIR_STAR_LV_MAX = (FAIR_STAR_NUM * FAIR_LV_ROUND * FAIR_LV_MAX) --VN:»¯¾³ÐÇÐÇµÈ¼¶ÉÏÏÞ
-g_tFairBaseNeedLingpo = { -- ÁéÆÇµ¤ÏûºÄ»ù×¼
+FAIR_LV_MAX = 3 --VN:Transformation Realm level cap
+FAIR_LV_ROUND = 3 --VN:Rounds of activating all constellations required to level up Transformation Realm
+FAIR_STAR_NUM = 10 --VN:Number of stars per round
+FAIR_STAR_LV_MAX = (FAIR_STAR_NUM * FAIR_LV_ROUND * FAIR_LV_MAX) --VN:Transformation Realm star level cap
+g_tFairBaseNeedLingpo = { -- Soul Pill consumption baseline
     2, 4, 6--10,20,30
 }
-g_tFairBaseNeedHuixian = { -- »ØÏÉµ¤ÏûºÄ»ù×¼
+g_tFairBaseNeedHuixian = { -- Immortal Return Pill consumption baseline
     5, 10, 15
 }
 TASKID_FAIR_UP_FLAG = 3511
@@ -16,7 +16,7 @@ TASKID_FAIR_VALUE = 3510
 function fair_Recall(nConfirm)
     local nTotalHoiTienDan, nTotalLinhPhachDan, nTotalTuiQua = fair_GetRecallCount()
     if nTotalHoiTienDan == 0 then
-        return KsgNpc:Talk("C¸c h¹ ch­a hãa c¶nh, kh«ng thÓ nhËn ®Òn bï.")
+        return KsgNpc:Talk("You have not reached Transcendence, so you cannot claim compensation.")
     end
     if not KsgLib:HasEnoughBagRoom(7) then
         return
@@ -24,9 +24,9 @@ function fair_Recall(nConfirm)
     local nFairLv = GetTask(TASKID_FAIR_VALUE)
     if not nConfirm then
         local tSay = {
-            format("§¹i hiÖp ®· hãa c¶nh %d m¹ch, nhËn ®­îc <color=gold>%d Håi Tiªn §¬n<color> vµ <color=gold>%d Linh Ph¸ch §¬n<color> ®Òn bï, ®¹i hiÖp muèn nhËn ngay kh«ng?", nFairLv, nTotalHoiTienDan, nTotalLinhPhachDan),
-            format("Ta muèn nhËn /#fair_Recall(1)"),
-            "\nT¹m ch­a muèn nhËn/no"
+            format("Hero, you have reached Transcendence in %d meridians and will receive <color=gold>%d Hoi Tien Pills<color> and <color=gold>%d Linh Phach Pills<color> as compensation. Do you want to claim it now?", nFairLv, nTotalHoiTienDan, nTotalLinhPhachDan),
+            format("I want to claim it /#fair_Recall(1)"),
+            "\nNot yet/no"
         }
         return KsgNpc:SayDialog(tSay)
     end
@@ -36,8 +36,8 @@ function fair_Recall(nConfirm)
         { tbProp = { 2, 1, 31239 }, nStack = nTotalLinhPhachDan, nStatus = 4 },
         { tbProp = { 2, 1, 30847 }, nStack = nTotalHoiTienDan, nStatus = 4 },
         { tbProp = { 2, 1, 50016 }, nStack = nTotalTuiQua, nStatus = 4 },
-    }, "§Òn bï ®ãng Hãa C¶nh")
-    KsgNpc:Talk(format("NhËn ®Òn bï thµnh c«ng, thu l¹i ®­îc <color=gold>%d Håi Tiªn §¬n<color> vµ <color=gold>%d Linh Ph¸ch §¬n<color>."))
+    }, "Transcendence closure compensation")
+    KsgNpc:Talk(format("Compensation claimed successfully; recovered <color=gold>%d Hoi Tien Pills<color> and <color=gold>%d Linh Phach Pills<color>."))
 end
 
 function fair_GetRecallCount()

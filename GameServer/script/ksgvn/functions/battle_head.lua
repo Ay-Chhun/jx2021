@@ -30,12 +30,12 @@ LIAO_ID = 2
 
 g_tbBattleEquip = {
     [SONG_ID] = {
-        -- L«i Hæ T­íng
+        -- Thunder Tiger General
         [1] = {
             tbRange = {
                 { 30215, 30218 },
             },
-            szName = "Trang bÞ L«i Hæ T­íng",
+            szName = "Thunder Tiger General Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_LOIHO_TUONG,
@@ -44,17 +44,17 @@ g_tbBattleEquip = {
             tbRange = {
                 { 30157, 30168 },
             },
-            szName = "Trang søc L«i Hæ T­íng",
+            szName = "Thunder Tiger General Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_LOIHO_TUONG,
         },
-        -- L«i Hæ So¸i
+        -- Thunder Tiger Marshal
         [3] = {
             tbRange = {
                 { 30219, 30222 },
             },
-            szName = "Trang bÞ L«i Hæ So¸i",
+            szName = "Thunder Tiger Marshal Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_LOIHO_SOAI,
@@ -63,19 +63,19 @@ g_tbBattleEquip = {
             tbRange = {
                 { 30169, 30184 },
             },
-            szName = "Trang søc L«i Hæ So¸i",
+            szName = "Thunder Tiger Marshal Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_LOIHO_SOAI,
         },
-        --Háa phông T­íng
+        --Fire Phoenix General
         [5] = {
             tbRange = {
                 { 30311, 30374 },
                 { 32153, 32153 },
                 { 32161, 32161 },
             },
-            szName = "Trang bÞ Háa Phông T­íng",
+            szName = "Fire Phoenix General Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_HOAPHUNG_TUONG,
@@ -86,7 +86,7 @@ g_tbBattleEquip = {
                 { 31486, 31488 },
                 { 31514, 31516 },
             },
-            szName = "Trang søc Háa Phông T­íng",
+            szName = "Fire Phoenix General Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_HOAPHUNG_TUONG,
@@ -97,19 +97,19 @@ g_tbBattleEquip = {
                 { 32165, 32167 },
                 { 32193, 32195 },
             },
-            szName = "Vò KhÝ Háa Phông T­íng",
+            szName = "Fire Phoenix General Weapon",
             tbDetail = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_HOAPHUNG_TUONG,
         },
-        --Háa phông So¸i
+        --Fire Phoenix Marshal
         [8] = {
             tbRange = {
                 { 30375, 30438 },
                 { 32154, 32154 },
                 { 32162, 32162 },
             },
-            szName = "Trang bÞ Háa Phông So¸i",
+            szName = "Fire Phoenix Marshal Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_HOAPHUNG_SOAI,
@@ -120,7 +120,7 @@ g_tbBattleEquip = {
                 { 31489, 31492 },
                 { 31517, 31520 },
             },
-            szName = "Trang søc Háa Phông So¸i",
+            szName = "Fire Phoenix Marshal Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_HOAPHUNG_SOAI,
@@ -131,19 +131,19 @@ g_tbBattleEquip = {
                 { 32168, 32170 },
                 { 32196, 32198 },
             },
-            szName = "Vò khÝ Háa Phông So¸i",
+            szName = "Fire Phoenix Marshal Weapon",
             tbDetail = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_HOAPHUNG_SOAI,
         },
-        --Thanh Long T­íng
+        --Azure Dragon General
         [11] = {
             tbRange = {
                 { 30570, 30589 },
                 { 32157, 32157 },
                 { 32165, 32165 },
             },
-            szName = "Trang bÞ Thanh Long T­íng",
+            szName = "Azure Dragon General Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_THANHLONG_TUONG,
@@ -154,7 +154,7 @@ g_tbBattleEquip = {
                 { 31493, 31495 },
                 { 31521, 31523 },
             },
-            szName = "Trang søc Thanh Long T­íng",
+            szName = "Azure Dragon General Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_THANHLONG_TUONG,
@@ -165,19 +165,19 @@ g_tbBattleEquip = {
                 { 32171, 32173 },
                 { 32199, 32201 },
             },
-            szName = "Vò khÝ Thanh Long T­íng",
+            szName = "Azure Dragon General Weapon",
             tbDetail = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_THANHLONG_TUONG,
         },
-        --Thanh Long So¸i
+        --Azure Dragon Marshal
         [14] = {
             tbRange = {
                 { 30590, 30609 },
                 { 32158, 32158 },
                 { 32166, 32166 },
             },
-            szName = "Trang bÞ Thanh Long So¸i",
+            szName = "Azure Dragon Marshal Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_THANHLONG_SOAI,
@@ -188,7 +188,7 @@ g_tbBattleEquip = {
                 { 31496, 31499 },
                 { 31524, 31527 },
             },
-            szName = "Trang søc Thanh Long So¸i",
+            szName = "Azure Dragon Marshal Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_THANHLONG_SOAI,
@@ -199,17 +199,17 @@ g_tbBattleEquip = {
                 { 32174, 32176 },
                 { 32202, 32204 },
             },
-            szName = "Vò khÝ Thanh Long So¸i",
+            szName = "Azure Dragon Marshal Weapon",
             tbDetail = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_THANHLONG_SOAI,
         },
-        --Uy Hæ  T­íng
+        --Mighty Tiger General
         [17] = {
             tbRange = {
                 { 32171, 32192 },
             },
-            szName = "Trang bÞ Uy Hæ T­íng",
+            szName = "Mighty Tiger General Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_UYHO_TUONG,
@@ -218,7 +218,7 @@ g_tbBattleEquip = {
             tbRange = {
                 { 31542, 31607 },
             },
-            szName = "Trang søc Uy Hæ T­íng",
+            szName = "Mighty Tiger General Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_UYHO_TUONG,
@@ -227,17 +227,17 @@ g_tbBattleEquip = {
             tbRange = {
                 { 32219, 32284 },
             },
-            szName = "Vò KhÝ Uy Hæ T­íng",
+            szName = "Mighty Tiger General Weapon",
             tbDetail = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_UYHO_TUONG,
         },
-        --Uy Hæ  So¸i
+        --Mighty Tiger Marshal
         [20] = {
             tbRange = {
                 { 32193, 32214 },
             },
-            szName = "Trang bÞ Uy Hæ So¸i",
+            szName = "Mighty Tiger Marshal Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_UYHO_SOAI,
@@ -246,7 +246,7 @@ g_tbBattleEquip = {
             tbRange = {
                 { 31608, 31695 },
             },
-            szName = "Trang søc Uy Hæ So¸i",
+            szName = "Mighty Tiger Marshal Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_UYHO_SOAI,
@@ -255,18 +255,18 @@ g_tbBattleEquip = {
             tbRange = {
                 { 32285, 32350 },
             },
-            szName = "Vò khÝ Uy Hæ So¸i",
+            szName = "Mighty Tiger Marshal Weapon",
             tbDetail = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_UYHO_SOAI,
         },
 
-        --HuyÒn Vò T­íng
+        --Black Tortoise General
         [23] = {
             tbRange = {
                 { 52259, 52280 },
             },
-            szName = "Trang bÞ HuyÒn Vò T­íng",
+            szName = "Black Tortoise General Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_HANVU_TUONG,
@@ -275,7 +275,7 @@ g_tbBattleEquip = {
             tbRange = {
                 { 51852, 51917 },
             },
-            szName = "Trang søc HuyÒn Vò T­íng",
+            szName = "Black Tortoise General Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_HANVU_TUONG,
@@ -284,17 +284,17 @@ g_tbBattleEquip = {
             tbRange = {
                 { 52505, 52570 },
             },
-            szName = "Vò KhÝ HuyÒn Vò T­íng",
+            szName = "Black Tortoise General Weapon",
             tbDetail = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_HANVU_TUONG,
         },
-        --HuyÒn Vò  So¸i
+        --Black Tortoise Marshal
         [26] = {
             tbRange = {
                 { 52281, 52302 },
             },
-            szName = "Trang bÞ HuyÒn Vò So¸i",
+            szName = "Black Tortoise Marshal Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_HANVU_SOAI,
@@ -303,7 +303,7 @@ g_tbBattleEquip = {
             tbRange = {
                 { 51918, 52005 },
             },
-            szName = "Trang søc HuyÒn Vò So¸i",
+            szName = "Black Tortoise Marshal Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_HANVU_SOAI,
@@ -312,17 +312,17 @@ g_tbBattleEquip = {
             tbRange = {
                 { 52571, 52636 },
             },
-            szName = "Vò khÝ HuyÒn Vò So¸i",
+            szName = "Black Tortoise Marshal Weapon",
             tbDetail = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_HANVU_SOAI,
         },
-        --H·n Vò T­íng
+        --Han Vu General
         [29] = {
             tbRange = {
                 { 50002, 50002 },
             },
-            szName = "Trang bÞ H·n Vò T­íng",
+            szName = "Han Vu General Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_HANVU_TUONG,
@@ -331,17 +331,17 @@ g_tbBattleEquip = {
             tbRange = {
                 { 50002, 50013 },
             },
-            szName = "Trang søc H·n Vò T­íng",
+            szName = "Han Vu General Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_HANVU_TUONG,
         },
-        --H·n Vò  So¸i
+        --Han Vu Marshal
         [31] = {
             tbRange = {
                 { 50003, 50003 },
             },
-            szName = "Trang bÞ H·n Vò So¸i",
+            szName = "Han Vu Marshal Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_HANVU_SOAI,
@@ -350,7 +350,7 @@ g_tbBattleEquip = {
             tbRange = {
                 { 50014, 50029 },
             },
-            szName = "Trang søc H·n Vò So¸i",
+            szName = "Han Vu Marshal Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_HANVU_SOAI,
@@ -358,12 +358,12 @@ g_tbBattleEquip = {
     },
 
     [LIAO_ID] = {
-        -- L«i Hæ T­íng
+        -- Thunder Tiger General
         [1] = {
             tbRange = {
                 { 30227, 30230 },
             },
-            szName = "Trang bÞ L«i Hæ T­íng",
+            szName = "Thunder Tiger General Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_LOIHO_TUONG,
@@ -372,17 +372,17 @@ g_tbBattleEquip = {
             tbRange = {
                 { 30193, 30204 },
             },
-            szName = "Trang søc L«i Hæ T­íng",
+            szName = "Thunder Tiger General Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_LOIHO_TUONG,
         },
-        -- L«i Hæ So¸i
+        -- Thunder Tiger Marshal
         [3] = {
             tbRange = {
                 { 30231, 30234 },
             },
-            szName = "Trang bÞ L«i Hæ So¸i",
+            szName = "Thunder Tiger Marshal Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_LOIHO_SOAI,
@@ -391,19 +391,19 @@ g_tbBattleEquip = {
             tbRange = {
                 { 30205, 30220 },
             },
-            szName = "Trang søc L«i Hæ So¸i",
+            szName = "Thunder Tiger Marshal Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_LOIHO_SOAI,
         },
-        --Háa phông T­íng
+        --Fire Phoenix General
         [5] = {
             tbRange = {
                 { 30439, 30502 },
                 { 32155, 32155 },
                 { 32163, 32163 },
             },
-            szName = "Trang bÞ Háa Phông T­íng",
+            szName = "Fire Phoenix General Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_HOAPHUNG_TUONG,
@@ -414,7 +414,7 @@ g_tbBattleEquip = {
                 { 31500, 31502 },
                 { 31528, 31530 },
             },
-            szName = "Trang søc Háa Phông T­íng",
+            szName = "Fire Phoenix General Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_HOAPHUNG_TUONG,
@@ -425,19 +425,19 @@ g_tbBattleEquip = {
                 { 32177, 32179 },
                 { 32205, 32207 },
             },
-            szName = "Vò KhÝ Háa Phông T­íng",
+            szName = "Fire Phoenix General Weapon",
             tbDetail = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_HOAPHUNG_TUONG,
         },
-        -- Háa Phông So¸i
+        -- Fire Phoenix Marshal
         [8] = {
             tbRange = {
                 { 30503, 30566 },
                 { 32156, 32156 },
                 { 32164, 32164 },
             },
-            szName = "Trang bÞ Háa Phông So¸i",
+            szName = "Fire Phoenix Marshal Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_HOAPHUNG_SOAI,
@@ -448,7 +448,7 @@ g_tbBattleEquip = {
                 { 31503, 31506 },
                 { 31531, 31534 },
             },
-            szName = "Trang søc Háa Phông So¸i",
+            szName = "Fire Phoenix Marshal Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_HOAPHUNG_SOAI,
@@ -459,19 +459,19 @@ g_tbBattleEquip = {
                 { 32180, 32182 },
                 { 32208, 32210 },
             },
-            szName = "Vò khÝ Háa Phông So¸i",
+            szName = "Fire Phoenix Marshal Weapon",
             tbDetail = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_HOAPHUNG_SOAI,
         },
-        --Thanh Long T­íng
+        --Azure Dragon General
         [11] = {
             tbRange = {
                 { 30611, 30630 },
                 { 32159, 32159 },
                 { 32167, 32167 },
             },
-            szName = "Trang bÞ Thanh Long T­íng",
+            szName = "Azure Dragon General Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_THANHLONG_TUONG,
@@ -482,7 +482,7 @@ g_tbBattleEquip = {
                 { 31507, 31509 },
                 { 31535, 31537 },
             },
-            szName = "Trang søc Thanh Long T­íng",
+            szName = "Azure Dragon General Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_THANHLONG_TUONG,
@@ -493,19 +493,19 @@ g_tbBattleEquip = {
                 { 32183, 32185 },
                 { 32211, 32213 },
             },
-            szName = "Vò khÝ Thanh Long T­íng",
+            szName = "Azure Dragon General Weapon",
             tbDetail = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_THANHLONG_TUONG,
         },
-        --Thanh Long So¸i
+        --Azure Dragon Marshal
         [14] = {
             tbRange = {
                 { 30631, 30650 },
                 { 32160, 32160 },
                 { 32168, 32168 },
             },
-            szName = "Trang bÞ Thanh Long So¸i",
+            szName = "Azure Dragon Marshal Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_THANHLONG_SOAI,
@@ -516,7 +516,7 @@ g_tbBattleEquip = {
                 { 31510, 31513 },
                 { 31538, 31541 },
             },
-            szName = "Trang søc Thanh Long So¸i",
+            szName = "Azure Dragon Marshal Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_THANHLONG_SOAI,
@@ -527,17 +527,17 @@ g_tbBattleEquip = {
                 { 32186, 32188 },
                 { 32214, 32216 },
             },
-            szName = "Vò khÝ Thanh Long So¸i",
+            szName = "Azure Dragon Marshal Weapon",
             tbDetail = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_THANHLONG_SOAI,
         },
-        --Uy Hæ T­íng
+        --Mighty Tiger General
         [17] = {
             tbRange = {
                 { 32215, 32236 },
             },
-            szName = "Trang bÞ Uy Hæ T­íng",
+            szName = "Mighty Tiger General Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_UYHO_TUONG,
@@ -546,7 +546,7 @@ g_tbBattleEquip = {
             tbRange = {
                 { 31696, 31761 },
             },
-            szName = "Trang søc Uy Hæ T­íng",
+            szName = "Mighty Tiger General Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_UYHO_TUONG,
@@ -555,17 +555,17 @@ g_tbBattleEquip = {
             tbRange = {
                 { 32351, 32416 },
             },
-            szName = "Vò KhÝ Uy Hæ T­íng",
+            szName = "Mighty Tiger General Weapon",
             tbDetail = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_UYHO_TUONG,
         },
-        --Uy Hæ So¸i
+        --Mighty Tiger Marshal
         [20] = {
             tbRange = {
                 { 32237, 32258 },
             },
-            szName = "Trang bÞ Uy Hæ So¸i",
+            szName = "Mighty Tiger Marshal Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_UYHO_SOAI,
@@ -574,7 +574,7 @@ g_tbBattleEquip = {
             tbRange = {
                 { 31762, 31849 },
             },
-            szName = "Trang søc Uy Hæ So¸i",
+            szName = "Mighty Tiger Marshal Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_UYHO_SOAI,
@@ -583,18 +583,18 @@ g_tbBattleEquip = {
             tbRange = {
                 { 32417, 32482 },
             },
-            szName = "Vò khÝ Uy Hæ So¸i",
+            szName = "Mighty Tiger Marshal Weapon",
             tbDetail = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_UYHO_SOAI,
         },
 
-        --HuyÒn Vò T­íng
+        --Black Tortoise General
         [23] = {
             tbRange = {
                 { 52303, 52324 },
             },
-            szName = "Trang bÞ HuyÒn Vò T­íng",
+            szName = "Black Tortoise General Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_HANVU_TUONG,
@@ -603,7 +603,7 @@ g_tbBattleEquip = {
             tbRange = {
                 { 52006, 52071 },
             },
-            szName = "Trang søc HuyÒn Vò T­íng",
+            szName = "Black Tortoise General Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_HANVU_TUONG,
@@ -612,17 +612,17 @@ g_tbBattleEquip = {
             tbRange = {
                 { 52637, 52702 },
             },
-            szName = "Vò KhÝ HuyÒn Vò T­íng",
+            szName = "Black Tortoise General Weapon",
             tbDetail = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_HANVU_TUONG,
         },
-        --HuyÒn Vò  So¸i
+        --Black Tortoise Marshal
         [26] = {
             tbRange = {
                 { 52325, 52346 },
             },
-            szName = "Trang bÞ HuyÒn Vò So¸i",
+            szName = "Black Tortoise Marshal Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_HANVU_SOAI,
@@ -631,7 +631,7 @@ g_tbBattleEquip = {
             tbRange = {
                 { 52072, 52159 },
             },
-            szName = "Trang søc HuyÒn Vò So¸i",
+            szName = "Black Tortoise Marshal Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_HANVU_SOAI,
@@ -640,17 +640,17 @@ g_tbBattleEquip = {
             tbRange = {
                 { 52703, 52768 },
             },
-            szName = "Vò khÝ HuyÒn Vò So¸i",
+            szName = "Black Tortoise Marshal Weapon",
             tbDetail = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_HANVU_SOAI,
         },
-        --H·n Vò T­íng
+        --Han Vu General
         [29] = {
             tbRange = {
                 { 50004, 50004 },
             },
-            szName = "Trang bÞ H·n Vò T­íng",
+            szName = "Han Vu General Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_HANVU_TUONG,
@@ -659,17 +659,17 @@ g_tbBattleEquip = {
             tbRange = {
                 { 50030, 50041 },
             },
-            szName = "Trang søc H·n Vò T­íng",
+            szName = "Han Vu General Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 5,
             nRequireCongTrang = CONGTRANG_HANVU_TUONG,
         },
-        --H·n Vò  So¸i
+        --Han Vu Marshal
         [31] = {
             tbRange = {
                 { 50005, 50005 },
             },
-            szName = "Trang bÞ H·n Vò So¸i",
+            szName = "Han Vu Marshal Equipment",
             tbDetail = { 100, 101, 103 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_HANVU_SOAI,
@@ -678,7 +678,7 @@ g_tbBattleEquip = {
             tbRange = {
                 { 50042, 50057 },
             },
-            szName = "Trang søc H·n Vò So¸i",
+            szName = "Han Vu Marshal Accessory",
             tbDetail = { 102 },
             nRequireQuanHam = 6,
             nRequireCongTrang = CONGTRANG_HANVU_SOAI,

@@ -21,9 +21,9 @@ end
 function meridian_ResetPoint(nConfirm)
     if not nConfirm or tonumber(nConfirm) ~= 1 then
         return KsgNpc:SayDialog({
-            "C¸c h¹ x¸c nhËn muèn tÈy l¹i ®iÓm kinh m¹ch?",
-            "§ång ý/#meridian_ResetPoint(1)",
-            "Ta suy nghÜ l¹i mét chót/no",
+            "Do you confirm you want to reset your Meridian points?",
+            "Agree/#meridian_ResetPoint(1)",
+            "Let me think it over a bit/no",
         })
     end
     MeridianRestore(-1)

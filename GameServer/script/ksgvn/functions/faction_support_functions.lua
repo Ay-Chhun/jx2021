@@ -14,7 +14,7 @@ function factionSupport_SetLimit()
     end
     local nDate = tonumber(date('%d'))
     KsgTask:SetByte(TASKID_KSG_NEWPLAYER, TASKID_KSG_NEWPLAYER_BYTE_FACTION_SUPPORT, nDate)
-    KsgNpc:Talk("Hç trî m«n ph¸i mçi ngµy chØ ®­îc nhËn 1 lÇn, xin h·y gi÷ g×n cÈn thËn, ®õng ®Ó l·ng phÝ!")
+    KsgNpc:Talk("Sect support can only be claimed once per day; please keep it carefully and don't waste it!")
 end
 
 function factionSupport_TLT()
@@ -54,20 +54,20 @@ function factionSupport_NgaMiKiem()
 end
 
 g_tbHorseAttribute = {
-    { "T¨ng sinh lùc 4000 ®iÓm", 4000, 2, 486 },
-    { "Ngo¹i c«ng t¨ng 4 %", 1500, 1, 261 },
-    { "Ngo¹i c«ng t¨ng 8 %", 4, 2, 261 },
-    { "T¨ng tèc ®é xuÊt chiªu 6 %", 1, 1, 24 },
-    { "T¨ng tèc ®é xuÊt chiªu 9 %", 1, 2, 24 },
-    { "Hç trî mËt tÞch t¨ng thªm 4 %", 1, 1, 564 },
-    { "Hç trî mËt tÞch t¨ng thªm 5 %", 1, 2, 564 },
-    { "T¨ng sinh lùc 1000 ®iÓm", 100, 1, 486 },
-    { "Néi phßng, ngo¹i phßng t¨ng 98 ®iÓm", 1500, 5, 420 },
-    { "Néi lùc tiªu hao 15 %", 1000, 2, 443 },
-    { "X¸c suÊt gi¶m nöa thä th­¬ng 10 %", 900, 1, 302 },
-    { "Kh¸ng tÊt c¶ 10 ®iÓm", 990, 2, 329 },
-    { "Lùc tÊn c«ng D­¬ng Gia B«n Lang Th­¬ng t¨ng 15 %", 1, 1, 323 },
-    { "Lùc tÊn c«ng D­¬ng Gia To¸i Kim TiÔn t¨ng 15 %", 1, 1, 325 },
+    { "Max HP +4000", 4000, 2, 486 },
+    { "Ex.atk +4%", 1500, 1, 261 },
+    { "Ex.atk +8%", 4, 2, 261 },
+    { "Attack Speed +6%", 1, 1, 24 },
+    { "Attack Speed +9%", 1, 2, 24 },
+    { "Secret Manual Bonus +4%", 1, 1, 564 },
+    { "Secret Manual Bonus +5%", 1, 2, 564 },
+    { "Max HP +1000", 100, 1, 486 },
+    { "Internal & External Defense +98", 1500, 5, 420 },
+    { "MP Cost Reduction 15%", 1000, 2, 443 },
+    { "10% chance to halve damage taken", 900, 1, 302 },
+    { "All Resistance +10", 990, 2, 329 },
+    { "Yang Family Charging Wolf Spear attack power +15%", 1, 1, 323 },
+    { "Yang Family Gold-Shattering Arrow attack power +15%", 1, 1, 325 },
 }
 
 function factionSupport_DGT()
@@ -157,11 +157,11 @@ end
 
 function factionSupport_ThuyYenLinhNu()
     local tbSay = {
-        g_szTitle .. "Thao t¸c TiÓu §iªu",
-        "NhËn TiÓu §iªu/factionSupport_NhanTieuDieu",
-        "Nu«i TiÓu §iªu/factionSupport_NuoiTieuDieu",
-        "HuÊn luyÖn TiÓu §iªu/factionSupport_HuanLuyenTieuDieu",
-        "Trë l¹i/no",
+        g_szTitle .. "Little Falcon Actions",
+        "Receive Little Falcon/factionSupport_NhanTieuDieu",
+        "Raise Little Falcon/factionSupport_NuoiTieuDieu",
+        "Train Little Falcon/factionSupport_HuanLuyenTieuDieu",
+        "Back/no",
     }
     KsgNpc:SayDialog(tbSay)
 end
@@ -193,12 +193,12 @@ end
 function factionSupport_HuanLuyenTieuDieu()
     local nPetItemIndex = GetPlayerEquipIndex(12)
     if (nPetItemIndex == nil or nPetItemIndex <= 0) then
-        return KsgPlayer:Msg("C¸c h¹ ch­a cã thó c­ng, kh«ng thÓ tiÕn hµnh huÊn luyÖn!")
+        return KsgPlayer:Msg("You don't have a Pet, so training cannot be done!")
     end
     local ItemGen, ItemDetail, ItemParticular = GetItemInfoByIndex(nPetItemIndex)
     if (ItemGen == nil or ItemDetail == nil or ItemParticular == nil) or (ItemGen ~= 2 or ItemDetail ~= 20)
     then
-        return KsgPlayer:Msg("C¸c h¹ ch­a cã thó c­ng, kh«ng thÓ tiÕn hµnh huÊn luyÖn!")
+        return KsgPlayer:Msg("You don't have a Pet, so training cannot be done!")
     end
 
     for _ = 1, 84 do

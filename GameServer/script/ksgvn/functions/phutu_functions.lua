@@ -4,77 +4,77 @@ Include("\\script\\ksgvn\\functions\\phutu_head.lua")
 function phutu_Main(szTalkHead)
     szTalkHead = szTalkHead or g_szTalkHead
     if KsgPlayer:GetBigLevel() < PHUTU_REQUIRE_MIN_LEVEL then
-        return KsgNpc:Talk(szTalkHead .. "N¨ng lùc cña ng­¬i cßn h¹n chÕ, ch­a thÓ lÜnh ngé vâ häc c¸c m«n ph¸i kh¸c, h·y cè g¾ng tu luyÖn thªm.")
+        return KsgNpc:Talk(szTalkHead .. "Your ability is still limited; you cannot yet master the martial arts of other Sects. Keep training harder.")
     end
     local tSay = {
-        szTalkHead .. "§Ö tö bæn ph¸i muèn vang danh thiªn h¹ ¾t ph¶i tinh th«ng nhiÒu lo¹i vâ nghÖ, nÕu ng­¬i ®· cã ®ñ n¨ng lùc, cã thÓ ®Õn chç ta, ta sÏ tiÕn cö ng­¬i tíi c¸c ®¹i m«n ph¸i kh¸c ®Ó tiÕp tôc tu luyÖn.",
+        szTalkHead .. "A disciple of our Sect who wishes to be renowned across the land must master many kinds of martial arts. If you have enough ability, come to me and I will recommend you to other great Sects to continue your training.",
     }
     for nRouteNum, tbCfg in g_tbPhuTuCfg do
         local nRoute = KsgTask:GetByte(TASKID_PHUTU_ROUTE, tbCfg.nByte)
         if KsgPlayer:GetBigLevel() >= tbCfg.nRequireLevel and nRoute == 0 then
-            tinsert(tSay, format("Ta muèn phô tu m«n ph¸i thø %s /#phutu_JoinFaction(%d)", tbCfg.szName, nRouteNum))
+            tinsert(tSay, format("I want to take up Phu Tu in the %s Sect /#phutu_JoinFaction(%d)", tbCfg.szName, nRouteNum))
         end
         if KsgPlayer:GetRoute() ~= nRoute and nRoute > 0 then
-            tinsert(tSay, format("Thay ®æi ®Õn %s /#phutu_ChangeFactionRoute(%d)", KsgPlayer:GetRouteName(nRoute), nRouteNum))
+            tinsert(tSay, format("Change to %s /#phutu_ChangeFactionRoute(%d)", KsgPlayer:GetRouteName(nRoute), nRouteNum))
         end
     end
     local nOriginRoute = KsgTask:GetByte(TASKID_PHUTU_ROUTE, TASKID_PHUTU_BYTE_ORIGIN_ROUTE)
     if nOriginRoute ~= 0 and KsgPlayer:GetRoute() ~= nOriginRoute then
-        tinsert(tSay, format("\nThay ®æi ®Õn %s (Ph¸i chñ tu)/phutu_ChangeFactionRoute", KsgPlayer:GetRouteName(nOriginRoute)))
+        tinsert(tSay, format("\nChange to %s (Main Sect)/phutu_ChangeFactionRoute", KsgPlayer:GetRouteName(nOriginRoute)))
     end
-    tinsert(tSay, "\nLiªn quan tíi phô tu/phutu_Intro")
-    tinsert(tSay, "\nKÕt thóc ®èi tho¹i/no")
+    tinsert(tSay, "\nAbout Phu Tu/phutu_Intro")
+    tinsert(tSay, "\nEnd conversation/no")
     KsgNpc:SayDialog(tSay)
 end
 
 function phutu_Intro()
-    local talk1 = g_szTalkHead .. "§Ö tö bæn ph¸i nÕu ®¹t <color=yellow>ChuyÓn sinh 8 cÊp 90 trë lªn<color> cã thÓ ®Õn t×m Ch­ëng M«n ®Ó lùa chän m«n ph¸i phô tu."
-    talk1 = talk1 .. "<enter><enter>Mçi ®Ö tö tèi ®a chØ <color=gold>cã thÓ phô tu thªm 3 hÖ ph¸i<color>.<enter>- §¹t chuyÓn sinh 8 cÊp 90 cã thÓ phô tu ph¸i thø nhÊt."
-    talk1 = talk1 .. "<enter>- §¹t chuyÓn sinh 9 cÊp 90 cã thÓ phô tu ph¸i thø hai.<enter>- §¹t chuyÓn sinh 10 cÊp 90 trë lªn cã thÓ phô tu thªm hÖ ph¸i thø ba."
-    local talk2 = g_szTalkHead .. "Cã thÓ t×m ta hoÆc th«ng qua <color=red>Tu LuyÖn Ch©u<color> ®Ó tiÕn hµnh chuyÓn sang hÖ ph¸i phô tu."
-    talk2 = talk2 .. "<enter>Mçi lÇn ®æi sang hÖ ph¸i kh¸c <color=red>30 phót sau<color> míi cã thÓ thao t¸c tiÕp. Sau khi ®æi sÏ nhËn ®­îc <color=yellow>Danh phËn ®Ö tö ký danh<color> vµ <color=green>Danh hiÖu ký danh t­¬ng øng<color>"
-    talk2 = talk2 .. "<enter>Khi thao t¸c cÇn tiÕn hµnh <color=red>th¸o trang bÞ, vò khÝ vµ mËt tÞch<color> ®ang trang bÞ trªn ng­êi.<enter><color=gray>(Vò khÝ bao gåm c¶ vò khÝ phô, trang bÞ gåm: Nãn, ¸o, quÇn vµ 2 ngäc béi)<color>"
+    local talk1 = g_szTalkHead .. "A disciple of our Sect who reaches <color=yellow>Rebirth 8 Level 90 or above<color> may come to the Sect Leader to choose a Phu Tu Sect."
+    talk1 = talk1 .. "<enter><enter>Each disciple may <color=gold>take up Phu Tu in at most 3 additional Sects<color>.<enter>- Reaching Rebirth 8 Level 90 allows Phu Tu in the first Sect."
+    talk1 = talk1 .. "<enter>- Reaching Rebirth 9 Level 90 allows Phu Tu in the second Sect.<enter>- Reaching Rebirth 10 Level 90 or above allows Phu Tu in a third Sect."
+    local talk2 = g_szTalkHead .. "You may find me or use the <color=red>Cultivation Bead<color> to switch to a Phu Tu Sect."
+    talk2 = talk2 .. "<enter>Each time you switch to another Sect, you must wait <color=red>30 minutes<color> before acting again. After switching you will receive the <color=yellow>Registered Disciple status<color> and the <color=green>corresponding Registered Title<color>"
+    talk2 = talk2 .. "<enter>When doing this you must <color=red>remove the equipment, weapons and manuals<color> you are wearing.<enter><color=gray>(Weapons include the secondary weapon; equipment includes: Hat, robe, pants and 2 jade pendants)<color>"
     Talk(2, "", talk1, talk2)
 end
 
 function phutu_JoinFaction(nRouteNum, nSelectRoute)
     if not g_tbPhuTuCfg[nRouteNum] then
-        return KsgNpc:Talk(g_szTalkHead .. "TÝnh n¨ng nµy t¹m thêi ch­a më")
+        return KsgNpc:Talk(g_szTalkHead .. "This feature is not available yet")
     end
 
     local tbCfg = g_tbPhuTuCfg[nRouteNum]
     if nSelectRoute and KsgLib:IsInTable(nSelectRoute, g_tbFactionRoutes) then
         if not phutu_CanJoinRoute(nSelectRoute) then
-            return KsgNpc:Talk(g_szTalkHead .. "Kh«ng thÓ phô tu m«n ph¸i nµy, h·y chän mét m«n ph¸i kh¸c.")
+            return KsgNpc:Talk(g_szTalkHead .. "You cannot take up Phu Tu in this Sect; please choose another Sect.")
         end
         local tSay = {
-            g_szTalkHead .. format("Ng­¬i x¸c nhËn muèn chän <color=gold>%s<color> lµm m«n ph¸i phô tu <color=red>thø %s<color> chø?", KsgPlayer:GetRouteName(nSelectRoute), tbCfg.szName),
-            format("§óng vËy/#phutu_JoinFaction_Confirm(%d, %d)", nRouteNum, nSelectRoute),
-            "\n§Ó ta suy nghÜ kü l¹i ®·/no"
+            g_szTalkHead .. format("Do you confirm you want to choose <color=gold>%s<color> as your <color=red>%s<color> Phu Tu Sect?", KsgPlayer:GetRouteName(nSelectRoute), tbCfg.szName),
+            format("That's right/#phutu_JoinFaction_Confirm(%d, %d)", nRouteNum, nSelectRoute),
+            "\nLet me think it over carefully first/no"
         }
         return KsgNpc:SayDialog(tSay)
     end
 
     local nPhuTuRoute = KsgTask:GetByte(TASKID_PHUTU_ROUTE, tbCfg.nByte)
     if nPhuTuRoute > 0 then
-        -- §· chän phô tu råi
-        return KsgNpc:Talk(g_szTalkHead .. format("C¸c h¹ ®· chän ph¸i phô tu thø %s, kh«ng thÓ chän l¹i!", tbCfg.szName))
+        -- Phu Tu already chosen
+        return KsgNpc:Talk(g_szTalkHead .. format("You have already chosen your %s Phu Tu Sect; you cannot choose again!", tbCfg.szName))
     end
     local tSay = {
-        g_szTalkHead .. "H·y chän m«n ph¸i ng­¬i muèn ®Õn phô tu:"
+        g_szTalkHead .. "Choose the Sect you want to take up Phu Tu in:"
     }
     for _, nFactionRoute in g_tbFactionRoutes do
         if phutu_CanJoinRoute(nFactionRoute) then
-            tinsert(tSay, format("Ta muèn phô tu %s/#phutu_JoinFaction(%d, %d)", KsgPlayer:GetRouteName(nFactionRoute), nRouteNum, nFactionRoute))
+            tinsert(tSay, format("I want to take up Phu Tu in %s/#phutu_JoinFaction(%d, %d)", KsgPlayer:GetRouteName(nFactionRoute), nRouteNum, nFactionRoute))
         end
     end
-    tinsert(tSay, "\nTa suy nghÜ l¹i mét l¸t/no")
+    tinsert(tSay, "\nLet me think it over for a moment/no")
     KsgNpc:PageSay(tSay, 2, 10)
 end
 
 function phutu_JoinFaction_Confirm(nSelectRouteNum, nSelectRoute)
     if not g_tbPhuTuCfg[nSelectRouteNum] then
-        return KsgNpc:Talk(g_szTalkHead .. "TÝnh n¨ng nµy t¹m thêi ch­a më")
+        return KsgNpc:Talk(g_szTalkHead .. "This feature is not available yet")
     end
     if KsgTask:GetByte(TASKID_PHUTU_ROUTE, TASKID_PHUTU_BYTE_ORIGIN_ROUTE) == 0 then
         KsgTask:SetByte(TASKID_PHUTU_ROUTE, TASKID_PHUTU_BYTE_ORIGIN_ROUTE, KsgPlayer:GetRoute())
@@ -82,7 +82,7 @@ function phutu_JoinFaction_Confirm(nSelectRouteNum, nSelectRoute)
     for nRouteNum, tbCfg in g_tbPhuTuCfg do
         if nRouteNum == nSelectRouteNum then
             KsgTask:SetByte(TASKID_PHUTU_ROUTE, tbCfg.nByte, nSelectRoute)
-            KsgNpc:Talk(g_szTalkHead .. format("§· chän hÖ ph¸i <color=gold>%s<color> lµm m«n ph¸i phô tu <color=green>thø %s<color><enter>Cã thÓ th«ng qua <color=red>Tu LuyÖn Ch©u<color> hoÆc trë l¹i t×m ta ®Ó ®æi sang m«n ph¸i míi", KsgPlayer:GetRouteName(nSelectRoute), tbCfg.szName))
+            KsgNpc:Talk(g_szTalkHead .. format("Chosen <color=gold>%s<color> as your <color=green>%s<color> Phu Tu Sect<enter>You can use the <color=red>Cultivation Bead<color> or return to me to switch to a new Sect", KsgPlayer:GetRouteName(nSelectRoute), tbCfg.szName))
         end
     end
 end
@@ -91,27 +91,27 @@ function phutu_ChangeFactionRoute(nRouteNum)
     local nLastChange = KsgTask:Get(TASKID_PHUTU_LAST_CHANGE_ROUTE)
     local _, _, nMinDiff = KsgDate:DateDiff(GetTime(), nLastChange + PHUTU_WAIT_TIME)
     if nLastChange + PHUTU_WAIT_TIME > GetTime() then
-        return KsgNpc:Talk(g_szTalkHead .. format("Sau <color=yellow>%d phót n÷a<color> míi cã thÓ tiÕp tôc ®æi ph¸i phô tu hoÆc trë vÒ m«n ph¸i ban ®Çu. H·y kiªn nhÉn ®îi mét l¸t!", nMinDiff))
+        return KsgNpc:Talk(g_szTalkHead .. format("You must wait <color=yellow>%d more minutes<color> before you can switch Phu Tu Sect again or return to your original Sect. Please wait patiently!", nMinDiff))
     end
     if nRouteNum then
         if not g_tbPhuTuCfg[nRouteNum] then
-            return KsgNpc:Talk(g_szTalkHead .. "TÝnh n¨ng nµy t¹m thêi ch­a më")
+            return KsgNpc:Talk(g_szTalkHead .. "This feature is not available yet")
         end
         local tbCfg = g_tbPhuTuCfg[nRouteNum]
         local nRoute = KsgTask:GetByte(TASKID_PHUTU_ROUTE, tbCfg.nByte)
         local tSay = {
-            g_szTalkHead .. format("Ng­¬i x¸c nhËn muèn trë thµnh ®Ö tö ph¸i <color=gold>%s<color> chø?", KsgPlayer:GetRouteName(nRoute)),
-            format("X¸c nhËn/#phutu_ChangeFactionRoute_Confirm(%d)", nRoute),
-            "\nKh«ng/no"
+            g_szTalkHead .. format("Do you confirm you want to become a disciple of the <color=gold>%s<color> Sect?", KsgPlayer:GetRouteName(nRoute)),
+            format("Confirm/#phutu_ChangeFactionRoute_Confirm(%d)", nRoute),
+            "\nNo/no"
         }
         return KsgNpc:SayDialog(tSay)
     end
 
     local nOriginRoute = KsgTask:GetByte(TASKID_PHUTU_ROUTE, TASKID_PHUTU_BYTE_ORIGIN_ROUTE)
     local tSay = {
-        g_szTalkHead .. format("X¸c nhËn trë vÒ <color=gold>%s<color>?", KsgPlayer:GetRouteName(nOriginRoute)),
-        format("X¸c nhËn/#phutu_ChangeFactionRoute_Confirm(%d)", nOriginRoute),
-        "\nKh«ng/no"
+        g_szTalkHead .. format("Confirm return to <color=gold>%s<color>?", KsgPlayer:GetRouteName(nOriginRoute)),
+        format("Confirm/#phutu_ChangeFactionRoute_Confirm(%d)", nOriginRoute),
+        "\nNo/no"
     }
     return KsgNpc:SayDialog(tSay)
 end
@@ -122,13 +122,13 @@ function phutu_ChangeFactionRoute_Confirm(nRoute)
             return
         end
         if GetFightState() == 1 then
-            return KsgNpc:Talk(g_szTalkHead .. "Tr¹ng th¸i chiÕn ®Êu kh«ng thÓ thùc hiÖn thao t¸c nµy!")
+            return KsgNpc:Talk(g_szTalkHead .. "You cannot perform this action while in combat!")
         end
         local nOldRoute = KsgPlayer:GetRoute()
         if nOldRoute == nRoute then
-            return KsgNpc:Talk(g_szTalkHead .. format("HiÖn t¹i ®¹i hiÖp ®· lµ ph¸i <color=green>%s<color>, kh«ng cÇn ®æi.", KsgPlayer:GetRouteName(nRoute)))
+            return KsgNpc:Talk(g_szTalkHead .. format("You are currently already in the <color=green>%s<color> Sect; no need to switch.", KsgPlayer:GetRouteName(nRoute)))
         end
-        --Xãa tr¹ng th¸i kü n¨ng hiÖn t¹i
+        --Clear current skill states
         for i = 1, 4096 do
             RemoveState(i);
         end
@@ -139,17 +139,17 @@ function phutu_ChangeFactionRoute_Confirm(nRoute)
         SetPlayerRoute(nRoute)
         phutu_FixFactionTask()
         phutu_LearnSkills(nRoute)
-        -- §Æt chiªu mÆt ®Þnh thµnh skill ®¸nh qu¸i
+        -- Set default move to the monster-attack skill
         SetLRSkill(g_tbFactionRoute_Skill[nRoute].tbMonsters[1], 0)
         SetLRSkill(g_tbFactionRoute_Skill[nRoute].tbMonsters[1], 1)
-        -- Xãa thi ngò ®éc
+        -- Remove the Five Poisons corpse
         RemoveRevivals()
         phutu_AddTitle(nRoute)
-        -- L­u thêi gian ®æi ph¸i gÇn nhÊt
+        -- Save the most recent Sect-change time
         KsgTask:Set(TASKID_PHUTU_LAST_CHANGE_ROUTE, GetTime())
-        return KsgNpc:Talk(g_szTalkHead .. format("§· chuyÓn sang ph¸i <color=gold>%s<color>.", KsgPlayer:GetRouteName(nRoute)))
+        return KsgNpc:Talk(g_szTalkHead .. format("Switched to the <color=gold>%s<color> Sect.", KsgPlayer:GetRouteName(nRoute)))
     end
-    return KsgNpc:Talk(g_szTalkHead .. "TÝnh n¨ng nµy t¹m thêi ch­a më")
+    return KsgNpc:Talk(g_szTalkHead .. "This feature is not available yet")
 end
 
 function phutu_CheckMap()
@@ -168,12 +168,12 @@ function phutu_SaveSuperSkill(nRoute)
     end
     local nSuperSkillLevel = GetSkillLevel(tbSkillCfg.nTranPhai)
 
-    KsgTask:SetByte(TASKID_PHUTU_TRANPHAI, phutu_GetByteTranPhaiByRoute(nRoute), nSuperSkillLevel) -- L­u cÊp trÊn ph¸i hiÖn t¹i
+    KsgTask:SetByte(TASKID_PHUTU_TRANPHAI, phutu_GetByteTranPhaiByRoute(nRoute), nSuperSkillLevel) -- Save current Sect-Guardian skill level
 end
 
 function phutu_FixFactionTask()
     if KsgPlayer:GetFaction() == ROUTE_DUONGMON and GetTask(1005) < 8 then
-        -- fix nv so nhap duong mon
+        -- fix the early Tang Sect quest
         SetTask(1005, 8)
     end
 end
@@ -218,19 +218,19 @@ function phutu_RemoveSkills(nRoute)
         RemoveSkill(tbSkillCfg.nTranPhai);
     end
     for i = tbSkillCfg.nBegin, tbSkillCfg.nEnd do
-        -- C¸c skill c¬ b¶n
+        -- Basic skills
         if 1 == HaveLearnedSkill(i) then
             RemoveSkill(i);
         end
     end
     for _, nSkillId in tbSkillCfg.tbDefault do
-        -- Skill ®¸nh th­êng
+        -- Normal-attack skills
         if 1 == HaveLearnedSkill(nSkillId) then
             RemoveSkill(nSkillId);
         end
     end
     for _, nSkillId in tbSkillCfg.tbMonsters do
-        -- Skill ®¸nh qu¸i
+        -- Monster-attack skills
         if 1 == HaveLearnedSkill(nSkillId) then
             RemoveSkill(nSkillId);
         end
@@ -243,24 +243,24 @@ function phutu_LearnSkills(nRoute)
         return
     end
     if HaveLearnedSkill(20) == 0 then
-        LearnSkill(20) -- Khinh c«ng
+        LearnSkill(20) -- Lightness skill
     end
-    LearnSkill(tbSkillCfg.nTranPhai) -- TrÊn Ph¸i
+    LearnSkill(tbSkillCfg.nTranPhai) -- Sect Guardian
     for i = tbSkillCfg.nBegin, tbSkillCfg.nEnd do
-        -- C¸c skill c¬ b¶n
+        -- Basic skills
         LearnSkill(i)
         while LevelUpSkill(i) == 1 do
-            KsgPlayer:Msg("Th¨ng cÊp kü n¨ng thµnh c«ng")
+            KsgPlayer:Msg("Skill leveled up successfully")
         end
     end
     for _, nSkillId in tbSkillCfg.tbDefault do
-        -- Skill ®¸nh th­êng
+        -- Normal-attack skills
         if 1 ~= HaveLearnedSkill(nSkillId) then
             LearnSkill(nSkillId)
         end
     end
     for _, nSkillId in tbSkillCfg.tbMonsters do
-        -- Skill ®¸nh qu¸i
+        -- Monster-attack skills
         if 1 ~= HaveLearnedSkill(nSkillId) then
             LearnSkill(nSkillId)
         end
@@ -286,15 +286,15 @@ end
 
 function phutu_CheckItem(nRoute)
     local tbPunish = {
-        [EQUIP_POS_CAP] = 'Nãn',
-        [EQUIP_POS_BODY] = '¸o',
-        [EQUIP_POS_PANTS] = 'QuÇn',
-        [EQUIP_POS_RING1] = 'NhÉn trªn',
-        [EQUIP_POS_RING2] = 'NhÉn d­íi',
-        [EQUIP_POS_BOOK] = 'MËt tÞch',
-        [EQUIP_POS_EXTEND_BOOK] = 'MËt tÞch phô',
-        [EQUIP_POS_WEAPON] = 'Vò khÝ',
-        [EQUIP_POS_EXTEND_WEAPON] = 'Vò khÝ phô',
+        [EQUIP_POS_CAP] = 'Hat',
+        [EQUIP_POS_BODY] = 'Robe',
+        [EQUIP_POS_PANTS] = 'Pants',
+        [EQUIP_POS_RING1] = 'Upper Ring',
+        [EQUIP_POS_RING2] = 'Lower Ring',
+        [EQUIP_POS_BOOK] = 'Manual',
+        [EQUIP_POS_EXTEND_BOOK] = 'Secondary Manual',
+        [EQUIP_POS_WEAPON] = 'Weapon',
+        [EQUIP_POS_EXTEND_WEAPON] = 'Secondary Weapon',
     }
     local nPass = 1
     local szItem = ''
@@ -302,7 +302,7 @@ function phutu_CheckItem(nRoute)
         local nEquipIdx = GetPlayerEquipIndex(nEquipPos)
         if nEquipIdx ~= 0 then
             if nEquipPos == EQUIP_POS_WEAPON then
-                KsgNpc:Talk(g_szTalkHead .. format("§æi hÖ ph¸i cÇn ph¶i th¸o <color=red>Vò khÝ<color> xuèng tr­íc."))
+                KsgNpc:Talk(g_szTalkHead .. format("To switch Sect you must remove your <color=red>Weapon<color> first."))
                 return nil
             end
             local nEquipRoute = GetEquipRoute(nEquipIdx)
@@ -313,7 +313,7 @@ function phutu_CheckItem(nRoute)
         end
     end
     if not nPass then
-        local szTalk = g_szTalkHead .. format("<color=red>%s<color>mµ ®¹i hiÖp ®ang mÆc kh«ng thÝch hîp víi hÖ ph¸i <color=yellow>%s<color>, xin h·y th¸o trang bÞ nµy xuèng.", szItem, KsgPlayer:GetRouteName(nRoute))
+        local szTalk = g_szTalkHead .. format("The <color=red>%s<color>you are wearing is not suitable for the <color=yellow>%s<color> Sect; please remove this equipment.", szItem, KsgPlayer:GetRouteName(nRoute))
         KsgNpc:Talk(szTalk)
     end
     return nPass
