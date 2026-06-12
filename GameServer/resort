@@ -1,0 +1,159 @@
+#!/bin/bash
+
+function split_a_file(){
+    sed -e "/$2/!{
+        w tmp2.txt
+        d
+    }" $1 > tmp.txt
+
+    mv tmp.txt $1
+    echo "find the next day's log in $1"
+    echo "$1 have been removed the next day's log"
+    local str=$(head -1 tmp2.txt)
+
+    local date_l;local time_l;local newfilename
+    if [ $3 ]; then
+        date_l=$(echo ${str:0:20}|sed -e "s/^\([0-9]\{8\}\)-.*/\1/;s/\([0-9]\{4\}\)\([0-9]\{2\}\)\([0-9]\{2\}\)/\1_\2_\3/")
+        time_l=$(echo ${str:0:20}|sed -e "s/^.*-\([0-9]\{6\}\).*/\1/;s/\([0-9]\{2\}\)\([0-9]\{2\}\)\([0-9]\{2\}\)/\1_\2_\3/")
+        newfilename=$(echo $1|sed -e "s/\([a-z]_\)[0-9_]*\./\1$time_l\./")
+    else
+        date_l=$(echo ${str:0:22}|sed -e "s/^.\([0-9-]\{10\}\).*/\1/;s/-/_/g")
+        time_l=$(echo ${str:0:22}|sed -e "s/^.*\([0-9:]\{8\}\).*/\1/;s/:/_/g")
+        newfilename=$(echo $1|sed -e "s/_[0-9_]\{8\}/_$time_l/")
+    fi
+
+    if [ ! -e ../$date_l ]; then
+        mkdir ../$date_l
+        echo "make new dir $date_l"
+    fi
+
+    mv tmp2.txt ../$date_l/$newfilename
+    echo "the next day's log in $1 have been moved to file $date_l/$newfilename"
+}
+
+function process_a_dir(){
+#    tar czf "$1.tar.gz" $1
+    cd $1
+    if [ $? != 0 ]; then
+        echo "Error: can't open dir \"$1\""
+        return 1
+    fi
+
+    echo "processing the dir `pwd`"
+
+    local dir; local file
+
+    for dir in *
+    do
+        if [ ! -d $dir ]; then
+            echo "Error: $1/$dir is not a dir, a dir expected here"
+            continue
+        fi
+
+        if [ ${#date_s} -gt 1 ]; then
+            local time_diff=$((${dir//_/} - $date_s))
+            if [ $time_diff -lt 0 ]; then
+                continue
+            fi
+        fi
+
+        cd $dir
+
+        for file in *
+        do
+            if [ ! -f $file ]; then
+                echo "Error: $1/$dir/$file is not a file, a file expected here"
+                continue
+            fi
+
+            if [ -s $file ]; then
+                if [ $2 ]; then
+                    day=${dir//_/}
+                else
+                    day=${dir//_/-}
+                fi
+                ret=$(tail -1 $file|sed -e "/$day/d")
+                if [ -n "$ret" ]; then
+                    split_a_file $file $day $2
+                fi
+            fi
+        done
+
+        cd ../
+    done
+
+    cd ../
+}
+
+function show_version(){
+    echo "resort version 0.4,Made by Jxonline2@kingsoft!"
+    echo "Description: \"resort\" is a script used to rearrange 
+          all the log files according the date. for example, 
+          under _GAMESVR_LOG_/2008_07_11/ there is a file 
+          ScriptLog_14_01_31.log, we find it also record 
+          2008-07-11's logs, so it need to be splited to 
+          two parts, one file record 2008-07-10's log, and the
+          other one record 2008-07-11's log."
+}
+
+function show_usage(){
+    echo "Usage: \"./resort [-dhvty] [date]\" resort all date's
+            log file under _GAMESVR_LOG_, logs/Trade, 
+            logs/ItemBilling, Item/Gamesvr.
+            
+          \"-d YYYY-MM-DD\" -date specify the timeline of resort 
+            start to resort logs from.
+          \"-y\" specify the date to yesterday.
+          \"-t\" specify the date to today.
+          \"-h\" show usage info.
+          \"-v\" show version info."
+}
+
+E_ERRDATE=60
+E_ERRPOS=61
+E_BADPARAM=62
+date_s=0
+
+if [ $# -gt 2 ]; then
+    echo "Error: invalid number of parameter"
+    show_usage
+    exit $E_BADPARAM
+fi
+
+case $1 in
+    -v) show_version; exit 0;;
+    -h) show_usage; exit 0;;
+    -y) date_s=$(date -dyesterday +%F);;
+    -t) date_s=$(date +%F);;
+    -d) ret=$(echo $2|sed -n -e 's/^\(20[0-9]\{2\}\).\([0-9]\{2\}\).\([0-9]\{2\}\)$/\1\2\3/p')
+        if [ -n "$ret" ]; then
+            date_s=$ret
+        else
+            echo "Error: Invaild date $2!"
+            exit $E_ERRDATE
+        fi
+        ;;
+     *) show_usage; exit $E_BADPARAM;;
+esac
+
+ret_0=$(echo `ls`|sed -n -e '/_GAMESVR_LOG_.*logs/p')
+if [ -z "$ret_0" ]; then
+    echo "Error: you put \"resort\" in a wrong position, it must be under the folder of gamesvr!"
+    exit E_ERRPOS
+fi
+
+{
+process_a_dir _GAMESVR_LOG_
+
+cd logs
+if [ $? != 0 ]; then
+    echo "Error: can't open dir \"logs\""
+    exit 1
+fi
+process_a_dir Trade
+process_a_dir ItemBilling
+process_a_dir GameServer 1
+} > log.txt
+
+exit 0
+

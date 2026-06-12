@@ -1,0 +1,22 @@
+#!/bin/bash
+#mwg@2012-3-31
+STR_DATE=`date -d "0 days ago" +%Y_%m_%d`
+echo $(pwd)|grep '/home/so2game/server' > /dev/null && program=SO2GameSvr
+###
+num=$(echo $(pwd)|grep -o '.$')
+gs=${program}${num}
+tim=`date +%Y%m%d_%T`
+dat=`date +%Y%m%d`
+
+###
+mv gs.log logs/GameServer/${STR_DATE}/gs_"${tim}".log -f
+gstime=$(stat ${gs}|grep Modify|awk '{print $2}'|sed s/-//g)
+diftime=$(date -d "6 days ago" +%Y%m%d)
+ulimit -c unlimited
+
+##
+[ -d ./startlog ] || mkdir ./startlog
+echo ${tim} start ${gs} >> ./startlog/${dat}.log
+./${gs} 1> gs.log 2> gs.err & 
+echo "GS ${gs} Started"
+exit 0

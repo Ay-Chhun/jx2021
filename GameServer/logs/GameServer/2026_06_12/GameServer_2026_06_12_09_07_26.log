@@ -1,0 +1,947 @@
+ChangeLogFile: FirstWrite=1, CurrentLine=0/65535 LastTime=1900-1-0 0:0:0
+20260612-090726<INFO :0x76141048f100>: [GameSvr][Version:Mar 28 2021 22:32:16] begin start up...
+20260612-090726<INFO :0x76141048f100>: Succeeded in loading version.ini. Lower Version:309 Upper Version:309
+20260612-090726<INFO :0x76141048f100>: This ServerIP : 127.0.0.1 : 192.168.70.137
+20260612-090726<INFO :0x76141048f100>: [GameServer Type] RealmType=0, IsMatchRealm=0
+20260612-090726<INFO :0x76141048f100>: BugFix.LiangShanNpcDebug = 0
+20260612-090726<INFO :0x76141048f100>: IS_KINGSOFT_INNER_VERSION=0|0
+20260612-090726<INFO :0x76141048f100>: IS_EXP_SVR=0|0
+20260612-090726<ERROR:0x76141048f100>: SetSpecialSwitch(Index=3,bOpen=1,AccessCode=292234229) ok, result=1
+20260612-090726<INFO :0x76141048f100>: [GameServer] ServerCount=1, ServerIndex=1
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarDefaultCriticalHitRate=5
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarMinCriticalHitRate=0
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarMaxCriticalHitRate=50
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarDefaultCriticalHitDamageAddPct=10
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarMinCriticalHitDamageAddPct=0
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarMaxCriticalHitDamageAddPct=300
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarPlayerDogeParaA=5
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarPlayerDogeParaB=5
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarMinHitRatePlayer=95
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarMaxHitRatePlayer=100
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarNpcDogeParaA=10
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarNpcDogeParaB=10
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarMinHitRateNpc=50
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarMaxHitRateNpc=100
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarTransLife2DogePara=10000
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarLevel2DogePara=1000
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarStrength2DogePara=100
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarDesterity2DogePara=100
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarEnergy2DogePara=100
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarVitality2DogePara=100
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarObserve2DogePara=100
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarTransLife2HitPara=8500
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarLevel2HitPara=850
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarStrength2HitPara=85
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarDesterity2HitPara=85
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarEnergy2HitPara=85
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarVitality2HitPara=85
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarObserve2HitPara=85
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarDestinyAdjustPermillMin_PVE=600
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarDestinyAdjustPermillMax_PVE=1150
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarDestinyAdjustPermillMin_PVP=600
+20260612-090726<INFO :0x76141048f100>: [GlovalVariable] gblvarDestinyAdjustPermillMax_PVP=1150
+20260612-090726<ERROR:0x76141048f100>: [CustomAward] Open file [] fail
+20260612-090726<INFO :0x76141048f100>: [CustomAward] RandSeed = 3816473243
+20260612-090726<ERROR:0x76141048f100>: [CustomAward] LoadCfg fail
+20260612-090728<INFO :0x76141048f100>: Loading All Scripts....................
+20260612-090729<INFO :0x76141048f100>: All Scripts Have Been Loaded! ScriptCount = 7265
+20260612-090729<INFO :0x76141048f100>: Script Global Share Memory Update To 62KB.
+20260612-090729<INFO :0x76141048f100>: Script Global Share Memory Update To 86KB.
+20260612-090729<ERROR:0x76141048f100>: [LuaImportFile] Failed to import [\script\ks2vng\lib\globalfunctions.lua][5804] from [/script/ks2vng/lib/globalfunctions.lua][5804]
+20260612-090729<INFO :0x76141048f100>: [Mis] {\script\missions\yp\pop_ex.lua} Init
+20260612-090729<INFO :0x76141048f100>: [Mis] {\script\function\zk_update\zk_main.lua} Init
+20260612-090729<INFO :0x76141048f100>: [info][Isolate]{\settings\static_script\missions\cangjianshanzhuang\hard_main.lua} is out of date{1 0, 20160328, 20160430}
+20260612-090729<INFO :0x76141048f100>: [info][Isolate]{\script\function\vip_card\ac_head.lua} is out of date{0 0, 0, 0}
+20260612-090729<INFO :0x76141048f100>: [info][Isolate]{\script\isolate\online_activites\master_bai\main.lua} is out of date{1 0, 20151220, 20160103}
+20260612-090729<INFO :0x76141048f100>: [info][Isolate]{\script\isolate\online_activites\christmas\2015_12\main.lua} is out of date{1 0, 20151220, 20160105}
+20260612-090729<INFO :0x76141048f100>: Script Global Share Memory Update To 89KB.
+20260612-090729<INFO :0x76141048f100>: Script Global Share Memory Update To 103KB.
+20260612-090729<INFO :0x76141048f100>: [info][Isolate]{\script\function\cdkey\ck_head.lua} is out of date{1 20161209, 20170109, 20170209}
+20260612-090729<INFO :0x76141048f100>: [info][Isolate]{\script\isolate\online_activites\every_month\main.lua} is out of date{1 0, 20170210, 20170301}
+20260612-090729<INFO :0x76141048f100>: [info][Isolate]{\script\isolate\functions\daomu_micheng\main.lua} is out of date{1 20151115, 20151115, 20151130}
+20260612-090729<INFO :0x76141048f100>: [info][Isolate]{\script\isolate\functions\jubaozhai\main.lua} is out of date{1 20230105, 20230105, 20230305}
+20260612-090729<INFO :0x76141048f100>: [info][Isolate]{\script\isolate\online_activites\spring_festival\2016_01\main.lua} is out of date{1 20160119, 20160119, 20160131}
+20260612-090729<INFO :0x76141048f100>: [Isolate] {1:\settings\static_script\isolate\base\gdata_center\base_export\export_main.lua} init ok
+20260612-090729<INFO :0x76141048f100>: [Isolate] {2:\settings\static_script\isolate\base\event_center\base_handler\main.lua} init ok
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,9}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,11}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,1,12}) [_jiandangyanyun_1] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,3,14}) [_jiandangyanyun_3] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,1,17}) [_jiandangyanyunhero_1] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,3,19}) [_jiandangyanyunhero_3] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,22}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,22}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,23}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,23}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,23}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,24}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,24}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,24}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,24}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,25}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,25}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,25}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,25}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,25}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,26}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,26}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,26}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,26}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,26}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyun,6,26}) [_jiandangyanyun_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,27}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,27}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,28}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,28}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,28}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,29}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,29}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,29}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,29}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,30}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,30}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,30}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,30}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,30}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,31}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,31}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,31}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,31}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,31}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<WARN :0x76141048f100>: [error][Event] watch_event(event_mission_stage_finish, \script\isolate\functions\gtask\main.lua, _batch_watch_list_handler_2, {jiandangyanyunhero,6,31}) [_jiandangyanyunhero_6] repeat handler
+20260612-090729<INFO :0x76141048f100>: [Isolate] {3:\script\isolate\functions\gtask\main.lua} init ok
+20260612-090729<INFO :0x76141048f100>: [Isolate] {4:\script\isolate\functions\armory\main.lua} init ok
+20260612-090729<INFO :0x76141048f100>: [Isolate] {5:\script\isolate\functions\auto_fixup\main.lua} init ok
+20260612-090729<INFO :0x76141048f100>: [Isolate] {6:\script\isolate\functions\missions\yp\shiluoya_boss\main.lua} init ok
+20260612-090729<INFO :0x76141048f100>: [Isolate] {7:\script\isolate\functions\tong_title\main.lua} init ok
+20260612-090729<INFO :0x76141048f100>: [Isolate] {8:\script\task\global_task\gtask_event.lua} init ok
+20260612-090729<INFO :0x76141048f100>: [Isolate] {9:\script\isolate\functions\old_sys\main.lua} init ok
+20260612-090729<INFO :0x76141048f100>: [Isolate] {10:\script\isolate\online_activites\spring_festival\2016_02\main.lua} init ok
+20260612-090730<INFO :0x76141048f100>: Start to load map(s)...
+20260612-090736<ERROR:0x76141048f100>: [LoadRandomNpc] [\maps\ÊÀ½çµØÍ¼\Î÷µºNpc_S.dat] open failed!!!
+20260612-090736<INFO :0x76141048f100>: 338/400 map(s) has been loaded.
+20260612-090736<ERROR:0x76141048f100>: SetSpecialSwitch(Index=1,bOpen=0,AccessCode=425249699) ok, result=0
+20260612-090736<ERROR:0x76141048f100>: SetSpecialSwitch(Index=2,bOpen=0,AccessCode=2506225612) ok, result=0
+20260612-090736<INFO :0x76141048f100>: [SystimeTask] load 90/90 systemtimetasks from {\settings\systemtimetask.txt}
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<ERROR:0x76141048f100>: 
+20260612-090737<WARN :0x76141048f100>: left_pearl attribute id equals zero.[ID:0 Row:2]
+20260612-090737<INFO :0x76141048f100>: [net] Connect [127.0.0.1:5001] ok
+20260612-090737<INFO :0x76141048f100>: start to connect Database, IP: 127.0.0.1 - Port: 5001 ... ok!
+20260612-090737<INFO :0x76141048f100>: [net] Connect [127.0.0.1:5003] ok
+20260612-090737<INFO :0x76141048f100>: start to connect RelayHost, IP: 127.0.0.1 - Port: 5003 ... ok!
+20260612-090737<INFO :0x76141048f100>: [net] Connect [127.0.0.1:5004] ok
+20260612-090737<INFO :0x76141048f100>: start to connect RelayChat, IP: 127.0.0.1 - Port: 5004 ... ok!
+20260612-090737<INFO :0x76141048f100>: [net] Connect [127.0.0.1:5005] ok
+20260612-090737<INFO :0x76141048f100>: start to connect RelayTong, IP: 127.0.0.1 - Port: 5005 ... ok!
+20260612-090737<INFO :0x76141048f100>: [net] Connect [127.0.0.1:5633] ok
+20260612-090737<INFO :0x76141048f100>: start to connect Gateway, IP: 127.0.0.1 - Port: 5633 ... ok!
+20260612-090737<INFO :0x76141048f100>: [verify_up2date] send Goddess|Relay|Router version request...
+20260612-090737<INFO :0x76141048f100>: [GameSvr] start up OK----------.
+20260612-090737<INFO :0x76141048f100>: Recv Bishop time sync(2026-6-12 9:7:37)
+20260612-090737<INFO :0x76141048f100>: [Bishop] send UPDATE_MAP_INFO nMapCount=338
+20260612-090737<INFO :0x76141048f100>: [verify_up2date] send Bishop version request...
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=0 send=1/39|1 avg=0 
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame -1] total process 0/0=0 trans message
+20260612-090737<INFO :0x76141048f100>: Start init log database.
+20260612-090737<INFO :0x76141048f100>: Init log database end.
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=1 send=1/38|2 avg=0 
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 0] total process 298/2=298 trans message
+20260612-090737<DEBUG:0x76141048f100>: [NormalSmallPackPorcess] Received packet MAP_INDEX_INFO from relay
+20260612-090737<INFO :0x76141048f100>: Received map index notification from relay (338 maps)
+20260612-090737<INFO :0x76141048f100>: recv tong msg 127.0.0.1:5005 53 22
+20260612-090737<INFO :0x76141048f100>: recv tong msg 127.0.0.1:5005 53 22
+20260612-090737<INFO :0x76141048f100>: recv tong msg 127.0.0.1:5005 53 22
+20260612-090737<INFO :0x76141048f100>: recv tong msg 127.0.0.1:5005 53 21
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=2 send=1/37|3 avg=0 
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=3 send=1/36|4 avg=0 
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=4 send=1/35|5 avg=0 
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=5 send=1/34|6 avg=0 
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=6 send=1/33|7 avg=0 
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=7 send=1/32|8 avg=0 
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=8 send=1/31|9 avg=0 
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=9 send=1/30|10 avg=0 
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=10 send=1/29|11 avg=0 
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=11 send=1/28|12 avg=0 
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=12 send=1/27|13 avg=0 
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=13 send=1/26|14 avg=0 
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=14 send=1/25|15 avg=0 
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=15 send=1/24|16 avg=0 
+20260612-090737<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=16 send=1/23|17 avg=0 
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=17 send=1/22|18 avg=0 
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=18 send=1/21|19 avg=0 
+20260612-090737<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 1] total process 2404/5=133 trans message
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=19 send=1/20|20 avg=0 
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=20 send=1/19|21 avg=0 
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 18] total process 3554/23=177 trans message
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=21 send=1/18|22 avg=0 
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 20] total process 3614/24=172 trans message
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=22 send=1/17|23 avg=0 
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 21] total process 3674/25=167 trans message
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=23 send=1/16|24 avg=0 
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 22] total process 3734/26=162 trans message
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=24 send=1/15|25 avg=0 
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=25 send=1/14|26 avg=0 
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 23] total process 3912/28=156 trans message
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=26 send=1/13|27 avg=0 
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 25] total process 3972/29=152 trans message
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=27 send=1/12|28 avg=0 
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 26] total process 4032/30=149 trans message
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=28 send=1/11|29 avg=0 
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=29 send=1/10|30 avg=0 
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 27] total process 4152/32=143 trans message
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=30 send=1/9|31 avg=0 
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 29] total process 4272/34=142 trans message
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=31 send=1/8|32 avg=0 
+20260612-090738<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=32 send=1/7|33 avg=0 
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 30] total process 4332/35=135 trans message
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=33 send=1/6|34 avg=0 
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 32] total process 4392/36=133 trans message
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=34 send=1/5|35 avg=0 
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 33] total process 4452/37=130 trans message
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=35 send=1/4|36 avg=0 
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=36 send=1/3|37 avg=0 
+20260612-090738<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 34] total process 4573/39=127 trans message
+20260612-090739<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=37 send=1/2|38 avg=0 
+20260612-090739<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 36] total process 4634/40=125 trans message
+20260612-090739<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=38 send=1/1|39 avg=0 
+20260612-090739<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 37] total process 4825/42=126 trans message
+20260612-090739<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=39 send=1/0|40 avg=0 
+20260612-090739<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 38] total process 4947/44=126 trans message
+20260612-090739<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090739<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 39] total process 5008/45=92 trans message
+20260612-090740<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090740<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=72 send=1/1|1 avg=0 
+20260612-090740<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 54] total process 5138/46=71 trans message
+20260612-090740<DEBUG:0x76141048f100>: [ProcessGMCommand] gm command: PlayerIdx=-1, Command=1, Param=Msg2SubWorld([[ThÊt L¹c Nhai ®· truyÒn th«ng tin, mËt ®¹o ®· më, c¸c hiÖp kh¸ch muèn cã h·y ®Õn Thiªn ¢m Gi¸o ThÊt L¹c Nhai ph©n ®µ tiÕn vÒ ThÊt L¹c Nhai MËt Cèc ®Ó chuÈn bÞ.!]]), Length=178
+20260612-090741<DEBUG:0x76141048f100>: [net dbg] [SendNetMsgToTransfer] frame=73 send=1/0|2 avg=0 
+20260612-090741<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 72] total process 5487/48=74 trans message
+20260612-090741<DEBUG:0x76141048f100>: [ProcessGMCommand] gm command: PlayerIdx=-1, Command=1, Param=Msg2SubWorld([[MËt ®¹o Thiªn ¢m Gi¸o ThÊt L¹c Nhai Ph©n §µ ®· ®ãng, chóc c¸c hiÖp kh¸ch vµo ph©n ®µ cã thÓ tranh ®o¹t vµng thµnh c«ng.]]), Length=137
+20260612-090741<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090741<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 74] total process 5665/49=62 trans message
+20260612-090742<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090742<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 90] total process 5795/50=53 trans message
+20260612-090743<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090743<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 108] total process 5925/51=47 trans message
+20260612-090744<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090744<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 126] total process 6055/52=42 trans message
+20260612-090745<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090745<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 144] total process 6185/53=38 trans message
+20260612-090746<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090746<DEBUG:0x76141048f100>: [net dbg] [TransferMessageProcess] [frame 162] total process 6315/54=35 trans message
+20260612-090747<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090748<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090749<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090750<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090751<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090752<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090753<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090754<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090755<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090756<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090757<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[361] LastFrame[0] NewFrame[361]
+20260612-090757<INFO :0x76141048f100>: [BiShopPing] Ping return at 42713.
+20260612-090757<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090758<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090759<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090800<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090801<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090802<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090803<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090804<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090805<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090806<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090807<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090807<INFO :0x76141048f100>: gs ping goddess[result=1], CurFrame[556] LastFrame[15] NewFrame[556]
+20260612-090807<INFO :0x76141048f100>: receieve goddess ping reply, goddess time = 56535
+20260612-090808<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090809<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090810<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090811<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090812<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090813<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090814<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090815<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090816<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090817<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[722] LastFrame[361] NewFrame[722]
+20260612-090817<INFO :0x76141048f100>: [BiShopPing] Ping return at 62736.
+20260612-090817<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090818<DEBUG:0x76141048f100>: [ProcessGMCommand] gm command: PlayerIdx=-1, Command=1, Param=biwudahuiqianzou_init(), Length=23
+20260612-090818<DEBUG:0x76141048f100>: [ProcessGMCommand] gm command: PlayerIdx=-1, Command=1, Param=fair_rank_auto_save(), Length=21
+20260612-090818<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090819<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090820<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090821<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090822<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090823<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090824<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090825<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090826<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090827<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090828<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090829<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090830<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090831<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090832<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090833<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090834<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090835<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090836<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090837<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[1083] LastFrame[722] NewFrame[1083]
+20260612-090837<INFO :0x76141048f100>: [BiShopPing] Ping return at 82756.
+20260612-090837<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090837<INFO :0x76141048f100>: gs ping goddess[result=1], CurFrame[1097] LastFrame[556] NewFrame[1097]
+20260612-090837<INFO :0x76141048f100>: receieve goddess ping reply, goddess time = 86587
+20260612-090838<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090839<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090840<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090841<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090842<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090843<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090844<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090845<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090846<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090847<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090848<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090849<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090850<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090851<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090852<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090853<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090854<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090855<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090856<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090857<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[1444] LastFrame[1083] NewFrame[1444]
+20260612-090857<INFO :0x76141048f100>: [BiShopPing] Ping return at 102879.
+20260612-090857<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090858<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090859<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090900<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090901<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090902<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090903<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090904<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090905<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090906<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090907<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090907<INFO :0x76141048f100>: gs ping goddess[result=1], CurFrame[1638] LastFrame[1097] NewFrame[1638]
+20260612-090907<INFO :0x76141048f100>: receieve goddess ping reply, goddess time = 116640
+20260612-090908<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090909<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090910<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090911<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090912<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090913<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090914<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090915<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090916<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090917<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[1805] LastFrame[1444] NewFrame[1805]
+20260612-090917<INFO :0x76141048f100>: [BiShopPing] Ping return at 122900.
+20260612-090917<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090918<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090918<DEBUG:0x76141048f100>: [ProcessGMCommand] gm command: PlayerIdx=-1, Command=1, Param=biwudahuiqianzou_init(), Length=23
+20260612-090919<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090920<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090921<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090922<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090923<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090924<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090925<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090926<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090927<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090928<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090929<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090930<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090931<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090932<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090933<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090934<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090935<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090936<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090937<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[2166] LastFrame[1805] NewFrame[2166]
+20260612-090937<INFO :0x76141048f100>: [BiShopPing] Ping return at 142921.
+20260612-090937<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090938<INFO :0x76141048f100>: gs ping goddess[result=1], CurFrame[2179] LastFrame[1638] NewFrame[2179]
+20260612-090938<INFO :0x76141048f100>: receieve goddess ping reply, goddess time = 146699
+20260612-090938<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090939<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090940<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090941<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090942<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090943<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090944<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090945<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090946<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090947<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090948<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090949<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090950<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090951<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090952<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090953<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090954<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090955<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090956<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090957<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[2527] LastFrame[2166] NewFrame[2527]
+20260612-090957<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090957<INFO :0x76141048f100>: [BiShopPing] Ping return at 163044.
+20260612-090958<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-090959<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091000<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091001<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091002<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091003<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091004<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091005<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091006<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091007<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091008<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091008<INFO :0x76141048f100>: gs ping goddess[result=1], CurFrame[2720] LastFrame[2179] NewFrame[2720]
+20260612-091008<INFO :0x76141048f100>: receieve goddess ping reply, goddess time = 176753
+20260612-091009<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091010<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091011<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091012<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091013<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091014<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091015<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091016<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091017<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[2888] LastFrame[2527] NewFrame[2888]
+20260612-091017<INFO :0x76141048f100>: [BiShopPing] Ping return at 183064.
+20260612-091017<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091018<DEBUG:0x76141048f100>: [ProcessGMCommand] gm command: PlayerIdx=-1, Command=1, Param=biwudahuiqianzou_init(), Length=23
+20260612-091018<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091019<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091020<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091021<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091022<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091023<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091024<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091025<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091026<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091027<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091028<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091029<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091030<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091031<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091032<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091033<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091034<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091035<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091036<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091036<INFO :0x76141048f100>: [Frame debug] Frame 3240
+20260612-091037<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091037<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[3249] LastFrame[2888] NewFrame[3249]
+20260612-091037<INFO :0x76141048f100>: [BiShopPing] Ping return at 203084.
+20260612-091038<INFO :0x76141048f100>: gs ping goddess[result=1], CurFrame[3261] LastFrame[2720] NewFrame[3261]
+20260612-091038<INFO :0x76141048f100>: receieve goddess ping reply, goddess time = 206816
+20260612-091038<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091039<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091040<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091041<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091042<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091043<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091044<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091045<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091046<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091047<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091048<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091049<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091050<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091051<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091052<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091053<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091054<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091055<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091056<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091057<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[3610] LastFrame[3249] NewFrame[3610]
+20260612-091057<INFO :0x76141048f100>: [BiShopPing] Ping return at 223203.
+20260612-091057<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091058<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091059<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091100<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091101<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091102<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091103<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091104<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091105<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091106<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091107<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091108<INFO :0x76141048f100>: gs ping goddess[result=1], CurFrame[3802] LastFrame[3261] NewFrame[3802]
+20260612-091108<INFO :0x76141048f100>: receieve goddess ping reply, goddess time = 236863
+20260612-091108<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091109<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091110<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091110<WARN :0x76141048f100>: # GameLogicSpeed : 17 fps.(abnormal!!!)
+20260612-091111<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091112<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091113<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091114<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091115<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091116<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091117<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091117<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[3971] LastFrame[3610] NewFrame[3971]
+20260612-091117<INFO :0x76141048f100>: [BiShopPing] Ping return at 243223.
+20260612-091118<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091118<DEBUG:0x76141048f100>: [ProcessGMCommand] gm command: PlayerIdx=-1, Command=1, Param=biwudahuiqianzou_init(), Length=23
+20260612-091119<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091120<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091121<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091122<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091123<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091124<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091125<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091126<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091127<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091128<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091129<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091130<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091131<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091132<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091133<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091134<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091135<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091136<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091137<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[4332] LastFrame[3971] NewFrame[4332]
+20260612-091137<INFO :0x76141048f100>: [BiShopPing] Ping return at 263343.
+20260612-091137<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091138<INFO :0x76141048f100>: gs ping goddess[result=1], CurFrame[4343] LastFrame[3802] NewFrame[4343]
+20260612-091138<INFO :0x76141048f100>: receieve goddess ping reply, goddess time = 266924
+20260612-091138<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091139<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091140<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091141<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091142<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091143<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091144<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091145<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091146<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091147<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091148<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091149<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091150<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091151<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091152<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091153<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091154<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091155<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091156<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091157<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091157<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[4693] LastFrame[4332] NewFrame[4693]
+20260612-091157<INFO :0x76141048f100>: [BiShopPing] Ping return at 283366.
+20260612-091158<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091159<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091200<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091201<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091202<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091203<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091204<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091205<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091206<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091207<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091208<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091208<INFO :0x76141048f100>: gs ping goddess[result=1], CurFrame[4884] LastFrame[4343] NewFrame[4884]
+20260612-091208<INFO :0x76141048f100>: receieve goddess ping reply, goddess time = 296979
+20260612-091209<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091210<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091211<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091212<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091213<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091214<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091215<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091216<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091217<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[5054] LastFrame[4693] NewFrame[5054]
+20260612-091217<INFO :0x76141048f100>: [BiShopPing] Ping return at 303387.
+20260612-091217<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091218<DEBUG:0x76141048f100>: [ProcessGMCommand] gm command: PlayerIdx=-1, Command=1, Param=biwudahuiqianzou_init(), Length=23
+20260612-091218<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091219<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091220<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091221<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091222<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091223<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091224<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091225<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091226<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091227<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091228<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091229<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091230<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091231<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091232<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091233<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091234<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091235<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091236<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091237<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091237<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[5415] LastFrame[5054] NewFrame[5415]
+20260612-091237<INFO :0x76141048f100>: [BiShopPing] Ping return at 323509.
+20260612-091238<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091238<INFO :0x76141048f100>: gs ping goddess[result=1], CurFrame[5425] LastFrame[4884] NewFrame[5425]
+20260612-091238<INFO :0x76141048f100>: receieve goddess ping reply, goddess time = 327034
+20260612-091239<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091240<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091241<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091242<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091243<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091244<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091245<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091246<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091247<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091248<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091249<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091250<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091251<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091252<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091253<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091254<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091255<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091256<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091257<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091257<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[5776] LastFrame[5415] NewFrame[5776]
+20260612-091257<INFO :0x76141048f100>: [BiShopPing] Ping return at 343532.
+20260612-091258<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091259<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091300<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091301<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091302<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091303<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091304<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091305<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091306<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091307<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091308<INFO :0x76141048f100>: gs ping goddess[result=1], CurFrame[5966] LastFrame[5425] NewFrame[5966]
+20260612-091308<INFO :0x76141048f100>: receieve goddess ping reply, goddess time = 357088
+20260612-091308<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091309<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091310<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091311<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091312<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091313<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091314<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091315<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091316<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091317<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091317<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[6137] LastFrame[5776] NewFrame[6137]
+20260612-091317<INFO :0x76141048f100>: [BiShopPing] Ping return at 363552.
+20260612-091318<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091318<DEBUG:0x76141048f100>: [ProcessGMCommand] gm command: PlayerIdx=-1, Command=1, Param=biwudahuiqianzou_init(), Length=23
+20260612-091319<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091320<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091321<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091322<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091323<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091324<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091325<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091326<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091327<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091328<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091329<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091330<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091331<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091332<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091332<WARN :0x76141048f100>: # GameLogicSpeed : 17 fps.(abnormal!!!)
+20260612-091333<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091334<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091335<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091336<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091336<INFO :0x76141048f100>: [Frame debug] Frame 6480
+20260612-091337<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091337<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[6498] LastFrame[6137] NewFrame[6498]
+20260612-091338<INFO :0x76141048f100>: [BiShopPing] Ping return at 383674.
+20260612-091338<INFO :0x76141048f100>: gs ping goddess[result=1], CurFrame[6507] LastFrame[5966] NewFrame[6507]
+20260612-091338<INFO :0x76141048f100>: receieve goddess ping reply, goddess time = 387144
+20260612-091338<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091339<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091340<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091341<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091342<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091343<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091344<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091345<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091346<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091347<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091348<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091349<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091350<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091351<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091352<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091353<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091354<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091355<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091356<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091357<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091358<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[6859] LastFrame[6498] NewFrame[6859]
+20260612-091358<INFO :0x76141048f100>: [BiShopPing] Ping return at 403695.
+20260612-091358<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091359<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091400<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091401<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091402<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091403<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091404<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091405<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091406<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091407<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091408<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091408<INFO :0x76141048f100>: gs ping goddess[result=1], CurFrame[7048] LastFrame[6507] NewFrame[7048]
+20260612-091408<INFO :0x76141048f100>: receieve goddess ping reply, goddess time = 417200
+20260612-091409<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091410<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091411<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091412<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091413<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091414<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091415<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091415<WARN :0x76141048f100>: # GameLogicSpeed : 17 fps.(abnormal!!!)
+20260612-091416<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091417<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091418<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[7220] LastFrame[6859] NewFrame[7220]
+20260612-091418<INFO :0x76141048f100>: [BiShopPing] Ping return at 423716.
+20260612-091418<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091418<DEBUG:0x76141048f100>: [ProcessGMCommand] gm command: PlayerIdx=-1, Command=1, Param=biwudahuiqianzou_init(), Length=23
+20260612-091419<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091420<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091421<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091422<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091423<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091424<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091425<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091426<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091427<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091428<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091429<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091430<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091431<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091432<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091433<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091434<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091435<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091436<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091437<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091438<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[7581] LastFrame[7220] NewFrame[7581]
+20260612-091438<INFO :0x76141048f100>: [BiShopPing] Ping return at 443841.
+20260612-091438<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091438<INFO :0x76141048f100>: gs ping goddess[result=1], CurFrame[7589] LastFrame[7048] NewFrame[7589]
+20260612-091438<INFO :0x76141048f100>: receieve goddess ping reply, goddess time = 447259
+20260612-091439<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091440<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091441<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091442<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091443<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091444<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091445<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091446<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091447<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091448<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091449<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091450<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091451<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091452<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091453<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091454<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091455<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091456<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091457<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091458<ERROR:0x76141048f100>: gs ping bishop[result=1], CurFrame[7942] LastFrame[7581] NewFrame[7942]
+20260612-091458<INFO :0x76141048f100>: [BiShopPing] Ping return at 463864.
+20260612-091458<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined
+20260612-091459<INFO :0x76141048f100>: [KEventCenter] GetEventId(event_server_tick) not defined

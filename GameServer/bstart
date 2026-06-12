@@ -1,0 +1,6 @@
+pkill -9 SO2GameSvr1
+pkill -9 SO2GameSvr2
+export LANG=zh_CN.gbk
+./SO2GameSvr1 1> gs.log 2> gs.err &
+cd ../server2
+./SO2GameSvr2 1> gs.log 2> gs.err &

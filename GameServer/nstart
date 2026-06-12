@@ -1,0 +1,11 @@
+sudo -u root -H sh -c "pkill -9 SO2GameSvr1"
+sudo -u root -H sh -c "pkill -9 SO2GameSvr2"
+export LANG=zh_CN.gbk
+7za x script.7z -o"/home/so2game/server1" -y
+7za x script.7z -o"/home/so2game/server2" -y
+
+sudo -u root -H sh -c "
+export LANG=zh_CN.gbk
+cd /home/so2game/server1 && ./SO2GameSvr1 1> gs.log 2> gs.err &
+cd /home/so2game/server1 && ./SO2GameSvr2 1> gs.log 2> gs.err &
+"
