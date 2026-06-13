@@ -5,7 +5,7 @@ Include("\\script\\vng\\lib\\vnglib_function.lua");
 Include("\\script\\vng\\chitonvuonglenh\\chitonvuonglenh_newserver.lua");
 Include("\\script\\vng\\chitonvuonglenh\\chitonvuonglenh_head.lua");
 
-szNPCName = "<color=green>Anh/ChÞ Chñ Phßng M¸y: <color>"
+szNPCName = "<color=green>Machine Room Owner: <color>"
 szLogTitle = "CHI TON VUONG LENH"
 szLogTitle1 = "CHI TON VUONG LENH BK"
 DEFINE_30_DAYS = 2592000
@@ -114,9 +114,9 @@ function CTVL_getDaily_Award()
 	local nCountItem = 1
 	local nDelItem = 1
 	local tItem_check = {
-									{"B¸t nh· nhá",  2,0,504,1},
-									{"B¸t nh· lín", 2,0,398,1},
-									{"H¹t gièng", 2,1,30086,3},
+									{"Small Bagua",  2,0,504,1},
+									{"Large Bagua", 2,0,398,1},
+									{"Seed", 2,1,30086,3},
 								}
 	local tItem_add = {
 									{"M¶nh Thiªn M«n", 2,1,30410,10},
@@ -209,7 +209,7 @@ function CTVL_getLevel_Award()
 	if DelItem(tb_award_ctvl_PS0[nLevel][3], tb_award_ctvl_PS0[nLevel][4], tb_award_ctvl_PS0[nLevel][5], tb_award_ctvl_PS0[nLevel][6]) == 1 then
 		VNG_SetTaskPos(TSK_CTVL_ALL, tb_award_ctvl_PS0[nLevel][1], 6,5)
 		ModifyExp(tb_award_ctvl_PS0[nLevel][7])
-		Msg2Player("NhËn ®­îc "..tb_award_ctvl_PS0[nLevel][7].." ®iÓm kinh nghiÖm")
+		Msg2Player("Received"..tb_award_ctvl_PS0[nLevel][7].." ®iÓm kinh nghiÖm")
 		if nLevel < 90 then
 			Earn(tb_award_ctvl_PS0[nLevel][8])
 		else
@@ -575,7 +575,7 @@ function CTVL_Tong_Active()
 	local szLogAward = szTong.."	"..szAcc.."	"..szRole.."	0	"..nWeek
 	local nResult = LIB_txtData:AddLine(szLogAward)
 	Talk(1,"",szNpcName.."TuÇn nµy Bang héi cña c¸c h¹ ®· ®¨ng ký nhËn th­ëng Bang Héi ChÝ T«n thµnh c«ngi, h·y b¸o tin cho c¸c thµnh viªn bang héi.")
-	gf_WriteLogEx(szLogTitle, "®¨ng ký", 1, "§¨ng ký thµnh c«ng")
+	gf_WriteLogEx(szLogTitle, "register", 1, "§¨ng ký thµnh c«ng")
 end
 
 function CTVL_Tong_Show()
@@ -692,8 +692,8 @@ function CTVL_Tong_Contribute()
 	Talk(1,"",szNpcName.."§¹i hiÖp ®· ®ãng gãp x©y dùng Bang héi ChÝ T«n thµnh c«ng. H·y chê ®Õn cuèi tuÇn ®Ó nhËn th­ëng. ")
 	LIB_txtData.tbTextData[nBang][4] = LIB_txtData.tbTextData[nBang][4] + 1
 	LIB_txtData:SaveMultiColumn()
-	gf_WriteLogEx(szLogTitle1, "nhËn", 1, "X©y dùng bang "..szTong)
-	gf_WriteLogEx(szLogTitle, "nhËn", 1, "X©y dùng bang ")
+	gf_WriteLogEx(szLogTitle1, "nhËn", 1, "Build the guild"..szTong)
+	gf_WriteLogEx(szLogTitle, "nhËn", 1, "Build the guild")
 end
 function CTVL_Tong_Award()
 	local nWeek = date("%W")

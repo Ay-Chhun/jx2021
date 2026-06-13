@@ -4,7 +4,7 @@ Include("\\script\\lib\\task_id_manage.lua")
 Include("\\script\\lib\\globalfunctions.lua")
 
 g_tItem = {
-	{"Huy Ch­¬ng Vâ L©m Tranh B¸", {2,95,843}},
+	{"Wulin Contention Medal", {2,95,843}},
 }
 
 msg = "Chóc mõng $n dïng [Huy Ch­¬ng Vâ L©m Tranh B¸] ®æi $i";
@@ -78,7 +78,7 @@ function exchange()
 	local sel = {};
 	for i = 1, getn(g_tExchange) do
 		local tRule = g_tExchange[i];
-		local info = format("Dïng %d huy ch­¬ng ®æi [%s]x%d",tRule[2],tRule[1][1],1);
+		local info = format("Use %d medals to exchange for [%s]x%d",tRule[2],tRule[1][1],1);
 		if tRule[3] then
 			info = info..format("(Giíi h¹n %d:%d)", getValue(tRule[3][2]), tRule[3][1]);
 		end
@@ -143,7 +143,7 @@ function exchange3(id, bSure,nCount)
 	if not bSure then
 		Say(format("§ång ý dïng %d huy ch­¬ng ®æi [%s]x%d??",totalCount,tRule[1][1],nCount),
 			2,
-			format("§ång ý/#exchange3(%d,1,%d)",id,nCount),
+			format("Agree/#exchange3(%d,1,%d)",id,nCount),
 			"trë l¹i/exchange");
 		return
 	end

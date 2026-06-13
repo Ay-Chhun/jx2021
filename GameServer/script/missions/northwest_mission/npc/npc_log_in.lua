@@ -42,8 +42,8 @@ function main()
 		local tb_dialog_city_main = {
 			"Ta muèn ®Õn T©y Vùc thÇn bİ/stge_main_city",
 			"Mua vËt phÈm thÇn bİ/#Sale(99)",
-			"Liªn quan T©y Vùc thÇn bİ/about_mis",
-			"Rêi khái/end_dialog",
+			"About the mysterious Western Regions/about_mis",
+			"Leave/end_dialog",
 		}
 		Say(Npc_name_city.."Theo ®iÒu tra cña nhiÒu hiÖp sü, ph¸t hiÖn T©y Vùc cã nhiÒu ®éng chøa nhiÒu Kim th¹ch cã thÓ thªm <color=yellow>Linh tİnh<color> cho binh khİ. TriÒu ®×nh còng ®ang b¾t ®Çu coi träng s¸ch l­îc lÊy vâ cøu quèc nªn ph¸i chóng t«i ®Õn ®Ó hç trî c¸c hiÖp sü. Ngoµi ra trªn tay ta ®· thu thËp ®Çy ®ñ vËt phÈm ®Ó c¸c vŞ hiÖp sü sö dông trªn ®­êng kh¸m ph¸ T©y Vùc.",
 			getn(tb_dialog_city_main),tb_dialog_city_main
@@ -68,9 +68,9 @@ function main()
 		Say(Stage_info[stage_seq].main_dialog[stage_diff],
 			4,
 			Stage_info[stage_seq].log_in_dialog[stage_diff].."/search_ground",
-			"§iÒu kiÖn v­ît ¶i/stage_condition",
-			Stage_info[stage_seq].stage_name.."Bèi c¶nh/stage_backgroud",
-			"Rêi khái/end_dialog"
+			"Pass clearing conditions/stage_condition",
+			Stage_info[stage_seq].stage_name.."Background/stage_backgroud",
+			"Leave/end_dialog"
 		)
 	end
 end
@@ -81,7 +81,7 @@ function stge_main_city()
 		tinsert(stage_name,Stage_info[i].stage_name.."/#city_stage_sel("..i..")")
 	end
 	tinsert(stage_name,"trë l¹i/main")
-	tinsert(stage_name,"Rêi khái/end_dialog")
+	tinsert(stage_name,"Leave/end_dialog")
 	Say(Npc_name_city.."Vµi n¬i ë T©y Vùc ®· ph¸t hiÖn <color=yellow>Kim th¹ch<color>, b¹n muèn ®Õn ®©u ®Ó t×m hiÓu?",
 		getn(stage_name),stage_name
 	)
@@ -98,7 +98,7 @@ function about_mis()
 	Say(Npc_name_city.."NhiÒu hiÖp sü §¹i Tèng ph¸t hiÖn <color=yellow>Kim th¹ch<color> ë vïng ®Êt thÇn bİ T©y Vùc, ®­îc biÕt <color=green>Long Quang Ch©n Nh©n<color> cã thÓ sö dông Kim th¹ch ®Ó lµm to¸t lªn <color=yellow>Hµo quang<color> cña binh khİ, thËm chİ cã gäi ra <color=yellow>Linh tİnh<color> cña binh khİ. Vâ l©m nh©n sü ïn ïn kĞo ®Õn T©y Vùc ®Ó kh¸m ph¸ l¹i thªm viÖc T©y H¹ kh«ng chŞu nghŞ hßa bao phen x©m ph¹m biªn giíi n­íc ta, triÒu ®×nh ph¸i ta mang tin tøc ®Õn gióp ®ì c¸c vŞ hiÖp sü.",
 		2,
 		"trë l¹i/main",
-		"Rêi khái/end_dialog"
+		"Leave/end_dialog"
 	)
 end
 --¿ÉÓÃ³¡µØ¶Ô»°
@@ -112,7 +112,7 @@ function search_ground()
 	local map_total = getn(Stage_info[stage_seq].map[login_diff])
 	for i = 1, map_total do
 		if mf_GetMissionV(MS_ID,MS_STATE_ID,Stage_info[stage_seq].map[login_diff][i]) == 0 then
-			tinsert(tb_dialog,Stage_info[stage_seq].stage_name.."["..i.."(Tr¹ng th¸i: Trèng)/#log_stageg("..Stage_info[stage_seq].map[login_diff][i]..")")
+			tinsert(tb_dialog,Stage_info[stage_seq].stage_name.."["..i.."(Status: Empty)/#log_stageg("..Stage_info[stage_seq].map[login_diff][i]..")")
 		else
 			tinsert(tb_dialog,Stage_info[stage_seq].stage_name.."["..i.."(Tr¹ng th¸i: ChiÕm dông)/cannot_log")
 			team_total = team_total + 1
@@ -122,11 +122,11 @@ function search_ground()
 		local dialog_main = Stage_info[stage_seq].ground_sel_dialog[stage_diff][1]
 		if login_diff == 2 then
 			dialog_main = Stage_info.city_mis_dia_main[stage_seq]
-			tinsert(tb_dialog,"Kh¸m ph¸"..Stage_info[stage_seq].stage_name.."§iÒu kiÖn/stage_condition")
-			tinsert(tb_dialog,"Kh¸m ph¸"..Stage_info[stage_seq].stage_name.."nh¾c nhë/stage_login_clew")
+			tinsert(tb_dialog,"Explore"..Stage_info[stage_seq].stage_name.."Conditions/stage_condition")
+			tinsert(tb_dialog,"Explore"..Stage_info[stage_seq].stage_name.."Reminder/stage_login_clew")
 		end	
 		tinsert(tb_dialog,"trë l¹i/main")
-		tinsert(tb_dialog,"Rêi khái/end_dialog")
+		tinsert(tb_dialog,"Leave/end_dialog")
 		Say(dialog_main.."(<color=yellow>Nh¾c nhë: khi vµo trËn sÏ vøt bá thó c­ng trªn ng­êi cña nh©n vËt<color>)",
 			getn(tb_dialog),
 			tb_dialog
@@ -185,7 +185,7 @@ function log_stageg(map_id)
 	local pk_chk_player = mission_pk_chk()
 	if pk_chk_player ~= "none" then
 		Talk(1,"",npc_name.."Trong ®éi cã thµnh viªn cã trŞ PK lín h¬n <color=yellow>"..Mission_PK_max.."<color>, h·y xãa trŞ PK råi quay l¹i v­ît ¶i.\n    Tæ ®éi kh«ng ®ñ ®iÒu kiÖn: <color=yellow>"..pk_chk_player.."<color>")
-		Zgc_pub_mission_team_msg(pk_chk_player.."PK v­ît qu¸ "..Mission_PK_max..", kh«ng thÓ v­ît ¶i!")
+		Zgc_pub_mission_team_msg(pk_chk_player.."PK exceeds"..Mission_PK_max..", kh«ng thÓ v­ît ¶i!")
 		return
 	end
 	--Íê³É´ÎÊı¼ì²â
@@ -246,7 +246,7 @@ function log_stageg(map_id)
 	end
 	SetMapTaskTemp(map_id,1,(GetMapTaskTemp(map_id,1) +1))
 	local mission_count = GetMapTaskTemp(map_id,1)
-	WriteLog("[¶i T©y B¾c]Thèng kª ®¨ng nhËp: ID ¶i	"..stage_seq..":"..map_id..":"..mission_count.."	Sè ng­êi ch¬i	"..GetTeamSize().."	Tªn ®éi tr­ëng: 	"..GetName().."	M· hÖ ph¸i ng­êi ch¬i	"..player_route_str.."")
+	WriteLog("[Northwest Pass]Login statistics: Pass ID"..stage_seq..":"..map_id..":"..mission_count.."	Sè ng­êi ch¬i	"..GetTeamSize().."	Team leader name:"..GetName().."	M· hÖ ph¸i ng­êi ch¬i	"..player_route_str.."")
 	--¹Ø¿¨¿ªÊ¼º¯Êı
 	for i = 1,GetTeamSize() do
 		PlayerIndex = GetTeamMember(i)
@@ -310,7 +310,7 @@ function stage_backgroud()
 	Say(Stage_info[stage_seq].stage_background[stage_diff],
 	2,
 	"trë l¹i/main",
-	"Rêi khái/end_dialog"
+	"Leave/end_dialog"
 	)	
 end
 --´³¹ØÌáÊ¾

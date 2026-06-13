@@ -295,7 +295,7 @@ function confirm_get_award(nType)
 		ModifyReputation(10,0)
 		--gf_WriteLogEx("BINH THIEN HA", "nhËn thµnh c«ng", 1, "§iÓm Danh väng")
 		--Msg2Player("B¹n nhËn ®­îc 10 §iÓm Danh väng")
-		gf_WriteLogEx("BINH THIEN HA", "nhËn thµnh c«ng", 1, "Cóng TÕ")		
+		gf_WriteLogEx("BINH THIEN HA", "nhËn thµnh c«ng", 1, "Sacrifice")		
 	end
 	if nType == 2 then
 		DelItem(2,1,9999,tbCheck[nType][1]) 
@@ -316,14 +316,14 @@ function confirm_get_award(nType)
 		end
 		--gf_WriteLogEx("BINH THIEN HA", "nhËn thµnh c«ng", 1, "§iÓm C«ng tr¹ng")
 		Msg2Player("B¹n nhËn ®­îc " ..nCongTrang.." §iÓm C«ng tr¹ng")		
-		gf_WriteLogEx("BINH THIEN HA", "nhËn thµnh c«ng", 1, "TrÞ An")				
+		gf_WriteLogEx("BINH THIEN HA", "nhËn thµnh c«ng", 1, "Govern in Peace")				
 	end
 	if nType == 3 then
 		DelItem(2,0,504,tbCheck[nType][1]) 
 		DelItem(2,0,398,tbCheck[nType][2]) 
 		DelItem(2,1,30269,tbCheck[nType][3]) 
 		local nAwardRand = mod(random(1,1000),20)
-		gf_AddItemEx2({2,1,(30164+nAwardRand),10}, "Item Tr¸i c©y", "BINH THIEN HA", "nhËn thµnh c«ng")    
+		gf_AddItemEx2({2,1,(30164+nAwardRand),10}, "Fruit Item", "BINH THIEN HA", "nhËn thµnh c«ng")    
 		gf_WriteLogEx("BINH THIEN HA", "nhËn thµnh c«ng", 1, "Thñy Lîi")					
 	end		
 	if nType == 4 then

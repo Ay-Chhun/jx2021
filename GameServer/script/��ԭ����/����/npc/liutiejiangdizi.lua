@@ -27,31 +27,31 @@ THIS_FILE = "\\script\\ÖÐÔ­¶þÇø\\ÏåÑô\\npc\\liutiejiangdizi.lua"
 tZbWz = {
 	[1]={0,"§Çu kh«i"},
 	[2]={1,"Ngo¹i trang"},
-	[3]={3,"H¹ y"}
+	[3]={3,"Lower Garment"}
 	}
 
 tChangeRing = {
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"§«ng Ph­¬ng Long Ch©u",0,102,24},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"Lµm gi¶m néi, ngo¹i phßng cña ®èi ph­¬ng 10%",5,444},"Hiªn Viªn ChiÕn"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Tµng KiÕm B¶o Ch©u",0,102,38},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"Sinh lùc, néi lùc tèi ®a t¨ng 8%",1,481},"Hiªn Viªn ChiÕn"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Ngäc",0,102,129},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"Søc m¹nh +40",7,264},"Hiªn Viªn ChiÕn"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Béi",0,102,132},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"Néi c«ng +40",7,267},"Hiªn Viªn ChiÕn"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Hoµn",0,102,131},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"G©n cèt +40",7,263},"Hiªn Viªn ChiÕn"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn §¸i",0,102,130},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"Th©n ph¸p +40",7,265},"Hiªn Viªn ChiÕn"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Giíi",0,102,133},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"Linh ho¹t +40",7,266},"Hiªn Viªn ChiÕn"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn §¹i",0,102,134},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"TÊn c«ng kÌm ®éc s¸t 35",1,480},"Hiªn Viªn ChiÕn"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Th¹ch",0,102,135},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"S¸t th­¬ng t¨ng 40",2,331},"Hiªn Viªn ChiÕn"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"KhuÊt Nguyªn Béi",0,102,27},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"600 gi©y ®é bÒn vò khÝ håi phôc 5",5,43},"Hiªn Viªn ChiÕn"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"§¹i Lùc ThÇn H¹ng Liªn",0,102,28},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"Tèc ®é di chuyÓn t¨ng 10%",1,101},"Hiªn Viªn §Êu"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Tµng KiÕm Kim Ên",0,102,40},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"S¸t th­¬ng gi¶m 10%",3,107},"Hiªn Viªn §Êu"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Tµng KiÕm Kú Th¹ch",0,102,39},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"Tû lÖ xuÊt chiªu t¨ng 3%",2,27},"Hiªn Viªn §Êu"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Ngäc",0,102,129},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"Søc m¹nh +40",7,264},"Hiªn Viªn §Êu"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Béi",0,102,132},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"Néi c«ng +40",7,267},"Hiªn Viªn §Êu"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Hoµn",0,102,131},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"G©n cèt +40",7,263},"Hiªn Viªn §Êu"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn §¸i",0,102,130},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"Th©n ph¸p +40",7,265},"Hiªn Viªn §Êu"}, 
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Giíi",0,102,133},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"Linh ho¹t +40",7,266},"Hiªn Viªn §Êu"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn §¹i",0,102,134},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"TÊn c«ng kÌm ®éc s¸t 35",1,480},"Hiªn Viªn §Êu"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Th¹ch",0,102,135},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"S¸t th­¬ng t¨ng 40",2,331},"Hiªn Viªn §Êu"},
-{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"KhuÊt Nguyªn Béi",0,102,27},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Sinh lùc tèi ®a 6%",2,253,"Søc lùc t¨ng 1000",1,479},"Hiªn Viªn §Êu"}
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"§«ng Ph­¬ng Long Ch©u",0,102,24},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"Lµm gi¶m néi, ngo¹i phßng cña ®èi ph­¬ng 10%",5,444},"Hiªn Viªn ChiÕn"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Tµng KiÕm B¶o Ch©u",0,102,38},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"Sinh lùc, néi lùc tèi ®a t¨ng 8%",1,481},"Hiªn Viªn ChiÕn"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Ngäc",0,102,129},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"Strength +40",7,264},"Hiªn Viªn ChiÕn"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Béi",0,102,132},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"Néi c«ng +40",7,267},"Hiªn Viªn ChiÕn"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Hoµn",0,102,131},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"Tendons and bones +40",7,263},"Hiªn Viªn ChiÕn"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn §¸i",0,102,130},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"Agility +40",7,265},"Hiªn Viªn ChiÕn"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Giíi",0,102,133},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"Linh ho¹t +40",7,266},"Hiªn Viªn ChiÕn"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn §¹i",0,102,134},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"TÊn c«ng kÌm ®éc s¸t 35",1,480},"Hiªn Viªn ChiÕn"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Th¹ch",0,102,135},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"S¸t th­¬ng t¨ng 40",2,331},"Hiªn Viªn ChiÕn"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Qu Yuan Pendant",0,102,27},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"600 gi©y ®é bÒn vò khÝ håi phôc 5",5,43},"Hiªn Viªn ChiÕn"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"§¹i Lùc ThÇn H¹ng Liªn",0,102,28},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"Tèc ®é di chuyÓn t¨ng 10%",1,101},"Hiªn Viªn §Êu"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Tµng KiÕm Kim Ên",0,102,40},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"S¸t th­¬ng gi¶m 10%",3,107},"Hiªn Viªn §Êu"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Tµng KiÕm Kú Th¹ch",0,102,39},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"Tû lÖ xuÊt chiªu t¨ng 3%",2,27},"Hiªn Viªn §Êu"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Ngäc",0,102,129},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"Strength +40",7,264},"Hiªn Viªn §Êu"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Béi",0,102,132},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"Néi c«ng +40",7,267},"Hiªn Viªn §Êu"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Hoµn",0,102,131},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"Tendons and bones +40",7,263},"Hiªn Viªn §Êu"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn §¸i",0,102,130},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"Agility +40",7,265},"Hiªn Viªn §Êu"}, 
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Giíi",0,102,133},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"Linh ho¹t +40",7,266},"Hiªn Viªn §Êu"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn §¹i",0,102,134},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"TÊn c«ng kÌm ®éc s¸t 35",1,480},"Hiªn Viªn §Êu"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Cöu Thiªn HuyÒn Th¹ch",0,102,135},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"S¸t th­¬ng t¨ng 40",2,331},"Hiªn Viªn §Êu"},
+{{"Thµnh ThÕ kim b¶o r­¬ng",2,0,1028,2},{"Qu Yuan Pendant",0,102,27},{"Tèc ®é thi triÓn vâ c«ng t¨ng 5%",1,477,"Maximum HP 6%",2,253,"Søc lùc t¨ng 1000",1,479},"Hiªn Viªn §Êu"}
 	}
 
 tXuanyuanZhan = 
@@ -170,21 +170,21 @@ tWpChangeRing = {
 	}
 
 tBaguaNum = {--µÚ2£¬3£¬4ÎªÎïÆ·id£¬µÚ5Î»ÎªÁéÆøÖµ81-100ÐèÒªµÄÊýÁ¿  µÚÁùÎ»ÁéÆøÖµ61-80ÐèÒªµÄÊýÁ¿
-	[1]={"Kh¶m",2,1,471,10,10},
-	[2]={"Kh«n",2,1,470,10,10},
-	[3]={"ChÊn",2,1,474,3,2},
-	[4]={"Tèn",2,1,476,3,2},
-	[6]={"Cµn",2,1,469,10,10},
-	[7]={"§oµi",2,1,472,10,10},
-	[8]={"CÊn",2,1,475,3,3},
+	[1]={"Kan",2,1,471,10,10},
+	[2]={"Kun",2,1,470,10,10},
+	[3]={"Zhen",2,1,474,3,2},
+	[4]={"Xun",2,1,476,3,2},
+	[6]={"Qian",2,1,469,10,10},
+	[7]={"Dui",2,1,472,10,10},
+	[8]={"Gen",2,1,475,3,3},
 	[9]={"Ly",2,1,473,3,3}
 	};
 
 --°Ë¾Å¼¶ÎäÆ÷
-tHighLvWp = {{"ThÇn Quy",0,0,15},{"¢m D­¬ng Ên",0,0,16},{"Häa ¶nh",0,2,37},{"Nha Cöu",0,2,38},{"Ngäc Trô",0,5,41},{"ThÇn Ch©m",0,5,42},
-{"Khoa Phô",0,1,54},{"Kh«ng cã",0,1,55},{"LËu C¶nh",0,3,65},{"NghÞch L©n",0,3,66},{"§¹i Th¸nh Di ¢m",0,10,76},{"Kh« Méc Long Ng©m",0,10,77},{"Toan D­",0,9,87},
-{"Th¸i H­",0,9,88},{"Môc KiÒn Liªn Tr­îng",0,8,98},{"D­îc S­ tr­îng",0,8,99},{"Cöu Long Toµn KÝch",0,6,109},{"Th­¬ng N«",0,6,110},{"Viªn §Ò",0,4,120},
-{"BÊt X¹ Chi X¹",0,4,121},{"V« NgÊn",0,11,13},{"Thanh Long",0,11,14},{"BÝch Thñy",0,7,13},{"Thiªn T«n",0,7,14}}; 
+tHighLvWp = {{"ThÇn Quy",0,0,15},{"¢m D­¬ng Ên",0,0,16},{"Painting Shadow",0,2,37},{"Nha Cöu",0,2,38},{"Ngäc Trô",0,5,41},{"ThÇn Ch©m",0,5,42},
+{"Khoa Phu",0,1,54},{"None",0,1,55},{"Tower View",0,3,65},{"Adverse Scale",0,3,66},{"Great Saint Lingering Sound",0,10,76},{"Withered Wood Dragon Chant",0,10,77},{"Toan Du",0,9,87},
+{"Th¸i H­",0,9,88},{"Mu Jianlian Staff",0,8,98},{"Medicine Master Staff",0,8,99},{"Cöu Long Toµn KÝch",0,6,109},{"Spear Slave",0,6,110},{"Viªn §Ò",0,4,120},
+{"Shoot Without Shooting",0,4,121},{"Boundless Silver",0,11,13},{"Thanh Long",0,11,14},{"BÝch Thñy",0,7,13},{"Thiªn T«n",0,7,14}}; 
 
 --ÌìµØÐþ»ÆÎäÆ÷
 tTiandiWp ={{"Thiªn §Þa HuyÒn Hoµng Thñ",0,0,17},{"Thiªn §Þa HuyÒn Hoµng KiÕm ",0,2,39},{"Thiªn §Þa HuyÒn Hoµng C«n",0,5,43},{"Thiªn §Þa HuyÒn Hoµng KhÝ ",0,1,56},{"Thiªn §Þa HuyÒn Hoµng Dao",0,3,67},{"Thiªn §Þa HuyÒn Hoµng CÇm",0,10,78},{"Thiªn §Þa HuyÒn Hoµng Bót ",0,9,89},{"Thiªn §Þa HuyÒn Hoµng Tr­îng",0,8,100},{"Thiªn §Þa HuyÒn Hoµng Th­¬ng ",0,6,111},{"Thiªn §Þa HuyÒn Hoµng Cung ",0,4,122},{"Thiªn §Þa HuyÒn Hoµng Tr¶o",0,11,15},{"Thiªn §Þa HuyÒn Hoµng NhÉn ",0,7,15}};
@@ -225,7 +225,7 @@ tTiandi = {
 	};
 
 tHuihuang = {{"Huy Hoµng Chi Thñy",0,102,8840},{"Huy Hoµng Chi KÕ",0,102,8842},{"Huy Hoµng QuËt Khëi",0,102,8844},{"Huy Hoµng",0,102,8846}};
-tRongyao = {{"Vinh Dù Chi Thñy",0,102,8841},{"Vinh Dù Chi KÕ",0	,102,8843},{"Vinh Dù QuËt Khëi",0,102,8845},{"Vinh Dù",	0,102,8847}};
+tRongyao = {{"Vinh Dù Chi Thñy",0,102,8841},{"Honor Plan",0	,102,8843},{"Glory Rise",0,102,8845},{"Glory",	0,102,8847}};
 tUplevel = {{"Thiªn Th¹ch Tinh Th¹ch",2,1,1009,400},{"Thiªn Th¹ch Tinh Th¹ch",2,1,1009,400},{"Thiªn Th¹ch Tinh Th¹ch",2,1,1009,1000}};
 
 function main()
@@ -234,9 +234,9 @@ function main()
 --		"ÄãÄÜÌáÉýÊ²Ã´ÑùµÄÁéÆø×°±¸/about_enhance",
 		"ChÕ t¹o vµ n©ng cÊp trang bÞ/npc_upgrade_talk",
 		
-		"Viªm §Õ/ViemDeMenu",
-		"T­íng Qu©n/TuongQuanMenu",
-		"Nguyªn So¸i/NguyenSoaiMenu",
+		"Yan Emperor/ViemDeMenu",
+		"General/TuongQuanMenu",
+		"Marshal/NguyenSoaiMenu",
 		"Thiªn H¹ V« Song/VoSong_Menu",
 --		"ChuyÓn ®æi trang bÞ Tèng Liªu/npc_convert_talk",
 		"ChuyÓn hãa trang bÞ linh khÝ/lingqi_item_change",			
@@ -311,7 +311,7 @@ function enhance_level()
 			4,
 			"§Çu kh«i/#enhance_zhuangbei(0)",
 			"Ngo¹i trang/#enhance_zhuangbei(1)",
-			"H¹ y/#enhance_zhuangbei(3)",
+			"Lower garment/#enhance_zhuangbei(3)",
 			"§îi ta mÆc trang bÞ lªn ®·./nothing"
 			)
 	end
@@ -327,7 +327,7 @@ function enhance_zhuangbei(nWz)
 	local nZhuangbeiLv = GetEquipLevel(nIndex); --»ñÈ¡µ±Ç°×°±¸µÈ¼¶
 	local nLingqi = GetItemMaxLingQi(nIndex);   --»ñÈ¡ÁéÆøÖµ
 	if nIndex	== 0 then
-		Talk(1,"","Ng­¬i kh«ng mÆc theo "..tZbWz[nTb][2].." µ?");
+		Talk(1,"","Ng­¬i kh«ng mÆc theo "..tZbWz[nTb][2].." ?");
 		return
 	else 
 		if nLingqi == 0 or nZhuangbeiLv < 7 then
@@ -392,7 +392,7 @@ function weapon_update()
 	Say("<color=green>§Ö tö thî rÌn L­u<color>: Ng­¬i cã thÓ ®­a vò khÝ Hoµng §Õ cho ta, ta sÏ gióp ng­¬i thay ®æi c¸c thuéc tÝnh cña vò khÝ Hoµng §Õ miÔn phÝ, ng­¬i cã thÓ thay ®æi ®Õn khi nµo võa ý th× th«i. Ng­¬i x¸c nhËn muèn thay ®æi? <color=red>L­u ý, trong lóc ®æi ph¶i trang bÞ vò khÝ trªn ng­êi. Kh«ng gi÷ l¹i hiÖu qu¶ c­êng ho¸ vµ ®Þnh hån cña vò khÝ!<color>",
 		2,
 		"õ, ta muèn ®æi./confirm_weapon_update",
-		"Kh«ng, ta nhÇm!/main")
+		"No, my mistake!/main")
 end
 
 function confirm_weapon_update()
@@ -432,13 +432,13 @@ function how_change_ring(nPage)
 		nDiaNum = nRemaid;
 	end
 	for i = 1,nDiaNum do
-		tinsert(strtab,tChangeRing[nPage*nPageNum+i][1][5].."c¸i"..tChangeRing[nPage*nPageNum+i][1][1].." (hoÆc 1 "..tChangeRing[nPage*nPageNum+i][4]..") +1 "..tChangeRing[nPage*nPageNum+i][2][1].."--> Thuéc tÝnh ®Æc biÖt"..tChangeRing[nPage*nPageNum+i][4].."/#change_ring_detail("..(nPage*nPageNum+i)..")");
+		tinsert(strtab,tChangeRing[nPage*nPageNum+i][1][5].."c¸i"..tChangeRing[nPage*nPageNum+i][1][1].." (or 1"..tChangeRing[nPage*nPageNum+i][4]..") +1 "..tChangeRing[nPage*nPageNum+i][2][1].."--> Thuéc tÝnh ®Æc biÖt"..tChangeRing[nPage*nPageNum+i][4].."/#change_ring_detail("..(nPage*nPageNum+i)..")");
 	end
 	if nPage ~= 0 then
-		tinsert(strtab,"Trang tr­íc/#how_change_ring("..(nPage-1)..")");
+		tinsert(strtab,"Previous page/#how_change_ring("..(nPage-1)..")");
 	end
 	if nRemaid > 6 then
-		tinsert(strtab,"Trang kÕ/#how_change_ring("..(nPage+1)..")");
+		tinsert(strtab,"Next page/#how_change_ring("..(nPage+1)..")");
 	end
 	tinsert(strtab,"trë l¹i/main");
 	Say("Ng­¬i lÊy <color=yellow>"..tChangeRing[1][1][5].."c¸i"..tChangeRing[1][1][1].." hoÆc trang søc Hoµng ®Õ Hiªn Viªn chiÕn hoÆc Hiªn Viªn ®Êu <color>thªm mét trang søc Hoµng kim vèn cã cho ta, ta sÏ ®æi <color=yellow>trang bÞ Hoµng ®Õ Hiªn Viªn chiÕn hoÆc Hiªn Viªn ®Êu cã thuéc tÝnh ®Æc biÖt <color>cho ng­¬i, quy t¾c ®æi cô thÓ nh­ sau, chó ý, h¹ng liªn kh¸c nhau sÏ ®æi thuéc tÝnh trang bÞ Hoµng ®Õ kh¸c nhau.",
@@ -447,7 +447,7 @@ function how_change_ring(nPage)
 end
 
 function change_ring_detail(nIndex)
-	Talk(1,"#how_change_ring(0)","…"..tChangeRing[nIndex][1][5].."c¸i"..tChangeRing[nIndex][1][1].." (hoÆc 1 "..tChangeRing[nIndex][4]..") vµ 1 "..tChangeRing[nIndex][2][1].."§æi 3 thuéc tÝnh thµnh: <color=yellow>"..tChangeRing[nIndex][3][1]..","..tChangeRing[nIndex][3][4]..","..tChangeRing[nIndex][3][7].."<color> "..tChangeRing[nIndex][4]);
+	Talk(1,"#how_change_ring(0)","…"..tChangeRing[nIndex][1][5].."c¸i"..tChangeRing[nIndex][1][1].." (or 1"..tChangeRing[nIndex][4]..") and 1"..tChangeRing[nIndex][2][1].."§æi 3 thuéc tÝnh thµnh: <color=yellow>"..tChangeRing[nIndex][3][1]..","..tChangeRing[nIndex][3][4]..","..tChangeRing[nIndex][3][7].."<color> "..tChangeRing[nIndex][4]);
 end
 
 function change_ring()
@@ -470,13 +470,13 @@ function box_change_ring(nPage)
 		nDiaNum = nRemaid;
 	end
 	for i = 1,nDiaNum do
-		tinsert(strtab,tChangeRing[nPage*nPageNum+i][1][5].."c¸i"..tChangeRing[nPage*nPageNum+i][1][1].." vµ 1 "..tChangeRing[nPage*nPageNum+i][2][1].." ®æi "..tChangeRing[nPage*nPageNum+i][4].."/#confirm_box_change_ring("..(nPage*nPageNum+i)..")");
+		tinsert(strtab,tChangeRing[nPage*nPageNum+i][1][5].."c¸i"..tChangeRing[nPage*nPageNum+i][1][1].." and 1"..tChangeRing[nPage*nPageNum+i][2][1].." change"..tChangeRing[nPage*nPageNum+i][4].."/#confirm_box_change_ring("..(nPage*nPageNum+i)..")");
 	end
 	if nPage ~= 0 then
-		tinsert(strtab,"Trang tr­íc/#box_change_ring("..(nPage-1)..")");
+		tinsert(strtab,"Previous page/#box_change_ring("..(nPage-1)..")");
 	end
 	if nRemaid > 7 then
-		tinsert(strtab,"Trang kÕ/#box_change_ring("..(nPage+1)..")");
+		tinsert(strtab,"Next page/#box_change_ring("..(nPage+1)..")");
 	end
 	tinsert(strtab,"§îi mét l¸t, ta ph¶i mang trang søc muèn ®æi lªn ng­êi/nothing");		
 	Say("Chän lo¹i ng­¬i muèn ®æi. <color=red>Chó ý, ®Æt trang søc Hoµng kim ng­¬i muèn ®æi vµo vÞ trÝ trang søc ®Çu tiªn trªn ng­êi!<color>",
@@ -485,9 +485,9 @@ function box_change_ring(nPage)
 end
 
 function confirm_box_change_ring(nIndex)
-	Say("Ng­¬i chän dïng "..tChangeRing[nIndex][1][5].."c¸i"..tChangeRing[nIndex][1][1].." vµ 1 "..tChangeRing[nIndex][2][1].." ®æi 3 thuéc tÝnh thµnh <color=yellow>"..tChangeRing[nIndex][3][1]..","..tChangeRing[nIndex][3][4]..","..tChangeRing[nIndex][3][7].."<color> "..tChangeRing[nIndex][4]..". X¸c ®Þnh kh«ng?",
+	Say("Ng­¬i chän dïng "..tChangeRing[nIndex][1][5].."c¸i"..tChangeRing[nIndex][1][1].." and 1"..tChangeRing[nIndex][2][1].." ®æi 3 thuéc tÝnh thµnh <color=yellow>"..tChangeRing[nIndex][3][1]..","..tChangeRing[nIndex][3][4]..","..tChangeRing[nIndex][3][7].."<color> "..tChangeRing[nIndex][4]..". X¸c ®Þnh kh«ng?",
 		2,
-		"§ång ý/#give_the_ring("..nIndex..")",
+		"Agree/#give_the_ring("..nIndex..")",
 		"Ta chän nhÇm råi./#box_change_ring(0)")
 end
 
@@ -526,9 +526,9 @@ function give_the_ring(nIndex)
 			end
 			if Add_flag == 1 then
 				Msg2Player("Chóc mõng ng­¬i ®æi trang søc Hoµng ®Õ thµnh c«ng!");
-				WriteLog("§Ö tö thî rÌn L­u ®æi trang søc Hoµng ®Õ: Ng­êi ch¬i "..GetName().."dïng 2 "..tChangeRing[nIndex][1][1].." vµ"..tChangeRing[nIndex][2][1].." ®æi 1 trang søc Hoµng ®Õ");
+				WriteLog("§Ö tö thî rÌn L­u ®æi trang søc Hoµng ®Õ: Ng­êi ch¬i "..GetName().."dïng 2 "..tChangeRing[nIndex][1][1].." and"..tChangeRing[nIndex][2][1].." ®æi 1 trang søc Hoµng ®Õ");
 			else
-				WriteLog("§Ö tö thî rÌn L­u ®æi trang søc Hoµng ®Õ: Ng­êi ch¬i "..GetName().."dïng 2 "..tChangeRing[nIndex][1][1].." vµ"..tChangeRing[nIndex][2][1].."§æi trang søc Hoµng ®Õ thÊt b¹i, log: "..Add_flag);
+				WriteLog("§Ö tö thî rÌn L­u ®æi trang søc Hoµng ®Õ: Ng­êi ch¬i "..GetName().."dïng 2 "..tChangeRing[nIndex][1][1].." and"..tChangeRing[nIndex][2][1].."§æi trang søc Hoµng ®Õ thÊt b¹i, log: "..Add_flag);
 			end
 		end
 	else
@@ -546,13 +546,13 @@ function ring_change_ring(nPage)
 		nDiaNum = nRemaid;
 	end
 	for i = 1,nDiaNum do
-		tinsert(strtab,"1 "..tChangeRing[nPage*nPageNum+i][4].." vµ 1 "..tChangeRing[nPage*nPageNum+i][2][1].." ®æi "..tChangeRing[nPage*nPageNum+i][4].."/#confirm_ring_change_ring("..(nPage*nPageNum+i)..")");
+		tinsert(strtab,"1 "..tChangeRing[nPage*nPageNum+i][4].." and 1"..tChangeRing[nPage*nPageNum+i][2][1].." change"..tChangeRing[nPage*nPageNum+i][4].."/#confirm_ring_change_ring("..(nPage*nPageNum+i)..")");
 	end
 	if nPage ~= 0 then
-		tinsert(strtab,"Trang tr­íc/#ring_change_ring("..(nPage-1)..")");
+		tinsert(strtab,"Previous page/#ring_change_ring("..(nPage-1)..")");
 	end
 	if nRemaid > 7 then
-		tinsert(strtab,"Trang kÕ/#ring_change_ring("..(nPage+1)..")");
+		tinsert(strtab,"Next page/#ring_change_ring("..(nPage+1)..")");
 	end
 	tinsert(strtab,"Ta kh«ng ®æi/nothing");		
 	Say("Chän lo¹i ng­¬i muèn ®æi. <color=red>Chó ý, ®Æt trang søc Hoµng ®Õ ng­¬i muèn ®æi vµo vÞ trÝ trang søc ®Çu tiªn trªn ng­êi, trang søc Hoµng kim ë vÞ trÝ trang søc thø hai!<color>",
@@ -561,9 +561,9 @@ function ring_change_ring(nPage)
 end
 
 function confirm_ring_change_ring(nIndex)
-	Say("Ng­¬i chän dïng 1 "..tChangeRing[nIndex][4].." vµ 1 "..tChangeRing[nIndex][2][1].." ®æi 3 thuéc tÝnh thµnh <color=yellow>"..tChangeRing[nIndex][3][1]..","..tChangeRing[nIndex][3][4]..","..tChangeRing[nIndex][3][7].."<color> "..tChangeRing[nIndex][4]..". X¸c ®Þnh kh«ng?",
+	Say("Ng­¬i chän dïng 1 "..tChangeRing[nIndex][4].." and 1"..tChangeRing[nIndex][2][1].." ®æi 3 thuéc tÝnh thµnh <color=yellow>"..tChangeRing[nIndex][3][1]..","..tChangeRing[nIndex][3][4]..","..tChangeRing[nIndex][3][7].."<color> "..tChangeRing[nIndex][4]..". X¸c ®Þnh kh«ng?",
 		2,
-		"§ång ý/#give_the_ring2("..nIndex..")",
+		"Agree/#give_the_ring2("..nIndex..")",
 		"Ta chän nhÇm råi./#ring_change_ring(0)")	
 end
 
@@ -630,9 +630,9 @@ function give_the_ring2(nIndex)
 		end
 		if Add_flag == 1 then
 			Msg2Player("Chóc mõng ng­¬i ®æi trang søc Hoµng ®Õ thµnh c«ng!");
-			WriteLog("§Ö tö thî rÌn L­u ®æi trang søc Hoµng ®Õ: Ng­êi ch¬i "..GetName().."Dïng thÎ"..tChangeRing[nIndex][2][1].." vµ"..tChangeRing[nIndex][4].." ®æi 1 trang søc Hoµng ®Õ");
+			WriteLog("§Ö tö thî rÌn L­u ®æi trang søc Hoµng ®Õ: Ng­êi ch¬i "..GetName().."Use card"..tChangeRing[nIndex][2][1].." and"..tChangeRing[nIndex][4].." ®æi 1 trang søc Hoµng ®Õ");
 		else
-			WriteLog("§Ö tö thî rÌn L­u ®æi trang søc Hoµng ®Õ: Ng­êi ch¬i "..GetName().."Dïng thÎ"..tChangeRing[nIndex][2][1].." vµ"..tChangeRing[nIndex][4].."§æi trang søc Hoµng ®Õ thÊt b¹i, log: "..Add_flag);
+			WriteLog("§Ö tö thî rÌn L­u ®æi trang søc Hoµng ®Õ: Ng­êi ch¬i "..GetName().."Use card"..tChangeRing[nIndex][2][1].." and"..tChangeRing[nIndex][4].."§æi trang søc Hoµng ®Õ thÊt b¹i, log: "..Add_flag);
 		end
 	end
 end
@@ -663,7 +663,7 @@ function confirm_wp_change_ring(nType)
 		Talk(1,"","Ng­¬i ®ang mang kh«ng ph¶i vò khÝ Hoµng ®Õ, h·y mang vò khÝ Hoµng ®Õ vµo ng­êi ®i!");
 		return
 	end
-	Say("Ng­¬i x¸c ®Þnh dïng <color=red>"..tChangeWp[nIndex][1].."<color>®æi <color=yellow>"..tWpChangeRing[nIndex][nType][1].."<color> chø?",
+	Say("Ng­¬i x¸c ®Þnh dïng <color=red>"..tChangeWp[nIndex][1].."<color>to change <color=yellow>"..tWpChangeRing[nIndex][nType][1].."<color> ?",
 		2,
 		"õ, ta muèn ®æi./#give_change_ring("..nIndex..","..nType..")",
 		"Kh«ng ph¶i, ta muèn x¸c ®Þnh l¹i vò khÝ Hoµng ®Õ ta muèn ®æi/nothing")
@@ -678,9 +678,9 @@ function give_change_ring(nIndex,nType)
 		local Add_flag = AddItem(tWpChangeRing[nIndex][nType][2],tWpChangeRing[nIndex][nType][3],tWpChangeRing[nIndex][nType][4],1,1,-1,-1,-1,-1,-1,-1);
 		if Add_flag == 1 then
 			Msg2Player("Chóc mõng ng­¬i dïng "..tChangeWp[nIndex][1].."§æi"..tWpChangeRing[nIndex][nType][1].." thµnh c«ng!");
-			WriteLog("§Ö tö thî rÌn L­u-Vò khÝ Hoµng ®Õ ®æi trang søc Hoµng ®Õ: Ng­êi ch¬i"..GetName().."Dïng thÎ"..tChangeWp[nIndex][1].."§æi"..tWpChangeRing[nIndex][nType][1].." thµnh c«ng!");
+			WriteLog("§Ö tö thî rÌn L­u-Vò khÝ Hoµng ®Õ ®æi trang søc Hoµng ®Õ: Ng­êi ch¬i"..GetName().."Use card"..tChangeWp[nIndex][1].."§æi"..tWpChangeRing[nIndex][nType][1].." thµnh c«ng!");
 		else
-			WriteLog("§Ö tö thî rÌn L­u-Vò khÝ Hoµng ®Õ ®æi trang søc Hoµng ®Õ: Ng­êi ch¬i"..GetName().."Dïng thÎ"..tChangeWp[nIndex][1].."§æi"..tWpChangeRing[nIndex][nType][1].."thÊt b¹i! log: "..Add_flag);
+			WriteLog("§Ö tö thî rÌn L­u-Vò khÝ Hoµng ®Õ ®æi trang søc Hoµng ®Õ: Ng­êi ch¬i"..GetName().."Use card"..tChangeWp[nIndex][1].."§æi"..tWpChangeRing[nIndex][nType][1].."thÊt b¹i! log: "..Add_flag);
 		end
 	end
 end	
@@ -714,13 +714,13 @@ function input_box_num(nType)
 		nNum = 10000/tProb[nType];
 	end
 	SetTaskTemp(TT_BOX_TYPE,nType);
-	AskClientForNumber("confirm_change_yuehua", 1, tonumber(nNum), "Xin nhËp "..tBox[nType].."Chän");
+	AskClientForNumber("confirm_change_yuehua", 1, tonumber(nNum), "Please enter"..tBox[nType].."Choose");
 end
 
 function confirm_change_yuehua(nCount)
 	local tProb = {0.1,0.25,5,50};
 	local nType = GetTaskTemp(TT_BOX_TYPE);
-	Say("Ng­¬i cã <color=yellow>"..format("%.2f",nCount*tProb[nType]).."%<color> nhËn ®­îc <color=yellow>1 NguyÖt Hoa<color>, ®æi thÊt b¹i sÏ kh«ng cã g× c¶, ng­¬i muèn ®æi kh«ng?",
+	Say("You have a <color=yellow>"..format("%.2f",nCount*tProb[nType]).."%<color> nhËn ®­îc <color=yellow>1 NguyÖt Hoa<color>, ®æi thÊt b¹i sÏ kh«ng cã g× c¶, ng­¬i muèn ®æi kh«ng?",
 		2,
 		"õ, ta muèn ®æi./#give_yuehua("..nType..","..nCount..")",
 		"T¹m thêi kh«ng ®æi/nothing")
@@ -818,7 +818,7 @@ function choose_item_weizhi(nAddMax)
 		5,
 		"§Çu/#confirm_update_lingqi(0,"..nAddMax..")",
 		"Ngo¹i trang/#confirm_update_lingqi(1,"..nAddMax..")",
-		"H¹ y/#confirm_update_lingqi(3,"..nAddMax..")",
+		"Lower garment/#confirm_update_lingqi(3,"..nAddMax..")",
 		"Vò khÝ/#confirm_update_lingqi(2,"..nAddMax..")",
 		"§îi ta mÆc trang bÞ lªn ®·./nothing")
 end
@@ -916,8 +916,8 @@ end
 function dasan_bagua_tixing()
 	Say("<color=green>§Ö tö thî rÌn L­u<color>: L­u ý ®Æc biÖt ®©y! ChØ cã bá ra <color=red>10000 gi¸ trÞ<color> míi cã thÓ ®¶m b¶o trang bÞ cña ng­¬i kh«ng bÞ biÕn mÊt trong lóc th¸o gì, <color=yellow>cã thÓ mang LÖnh th¸o gì miÔn phÝ ®Õn chç ta ®Ó nhËn l¹i sè tiÒn ®· tiªu hao, gi¸ trÞ sÏ kh«ng ®­îc hoµn l¹i.<color>",
 		2,
-		"Më giao diÖn ®óc/dasan_bagua_item",
-		"Kh«ng cã g×/nothing")
+		"Open the forging interface/dasan_bagua_item",
+		"Nothing/nothing")
 end
 
 function dasan_bagua_item()
@@ -947,7 +947,7 @@ function get_bagua_buchang()
 --		if GetTask(TASK_DASAN_NUM) <= DASAN_TOTAL_NUM then
 			Say("<color=green>§Ö tö thî rÌn L­u<color>: B©y giê ng­¬i cã thÓ nhËn tiÒn båi th­êng th¸o gì trang bÞ B¸t Qu¸i<color=yellow>"..nBuchang.."<color> lÇn, cÇn cã <color=yellow>LÖnh th¸o gì miÔn phÝ "..nBuchang.." c¸i<color>, tiÒn båi th­êng cã thÓ nhËn ®­îc "..nGold.." §ång, ®­îc kh«ng?",
 				2,
-				"§­îc/confirm_get_buchang",
+				"All right/confirm_get_buchang",
 				"SÏ ®Õn nhËn sau/nothing");
 --		end
 --	end		
@@ -972,7 +972,7 @@ function confirm_get_buchang()
 			SetTask(TASK_BUCHANG_GOLD,GetTask(TASK_BUCHANG_GOLD)+nGold);
 			Earn(nGold);
 			Talk(1,"","<color=green>§Ö tö thî rÌn L­u<color>: Ng­¬i ®· nhËn tiÒn båi th­êng råi.");
-			WriteLog("§Ö tö thî rÌn L­u: Ng­êi ch¬i: "..GetName().." ®· nhËn tiÒn båi th­êng th¸o gì B¸t Qu¸i, sè tiÒn: "..nGold);
+			WriteLog("Blacksmith Disciple Liu: Player:"..GetName().." ®· nhËn tiÒn båi th­êng th¸o gì B¸t Qu¸i, sè tiÒn: "..nGold);
 		end
 --	end
 end
@@ -982,16 +982,16 @@ function get_bagua_lingshi(nType)
 		5,
 		"§Çu/#ask_quchu_lingshi(0,"..nType..")",
 		"Ngo¹i trang/#ask_quchu_lingshi(1,"..nType..")",
-		"H¹ y/#ask_quchu_lingshi(3,"..nType..")",
+		"Lower garment/#ask_quchu_lingshi(3,"..nType..")",
 		"Vò khÝ/#ask_quchu_lingshi(2,"..nType..")",
 		"§îi ta mÆc trang bÞ lªn ®·./nothing")	
 end
 
 function ask_quchu_lingshi(nWz,nType)
-	local tChouqu = {"§Çu","Ngo¹i trang","Vò khÝ","H¹ y"}
-	Say("Ng­¬i muèn lÊy ®¸ trªn <color=yellow>"..tChouqu[nWz+1].."<color> µ?",
+	local tChouqu = {"§Çu","Ngo¹i trang","Vò khÝ","Lower Garment"}
+	Say("Ng­¬i muèn lÊy ®¸ trªn <color=yellow>"..tChouqu[nWz+1].."<color>?",
 		3,
-		"§­îc/#confirm_quchu_lingshi("..nWz..","..nType..")",
+		"All right/#confirm_quchu_lingshi("..nWz..","..nType..")",
 		"Ta chän nhÇm råi./#get_bagua_lingshi("..nType..")",
 		"§îi ta mÆc trang bÞ lªn ®·./nothing")
 end
@@ -999,15 +999,15 @@ end
 function confirm_quchu_lingshi(nWz,nType)
 	local nRoute = GetPlayerFaction();
 	local tItem = {	
-	[1] = {2,0,448,"Phæ HiÒn X¸ Lîi"},	--ÉÙÁÖ
+	[1] = {2,0,448,"Puxian Relic"},	--ÉÙÁÖ
 	[2] = {2,0,469,"Thiªn C¬ Méc"},--Îäµ±
-	[3] = {2,0,457,"Kim Liªn Hoa"},--¶ëáÒ
-	[4] = {2,0,466,"Tö Kim B¸t"},--Ø¤°ï
+	[3] = {2,0,457,"Golden Lotus Flower"},--¶ëáÒ
+	[4] = {2,0,466,"Purple Gold Bowl"},--Ø¤°ï
 	[5] = {2,0,454,"BÝ §éc ph­¬ng"},--ÌÆÃÅ	
-	[6] = {2,0,477,"Tinh B× TiÔn §¹i"},	--ÑîÃÅ
+	[6] = {2,0,477,"Star Hide Arrow Grand"},	--ÑîÃÅ
 	[7] = {2,0,484,"RÕt ®éc"},--Îå¶¾
-	[8] = {2,0,491,"Mai QuÕ Lé"},--´äÑÌ
-	[9] = {2,0,495,"Khu Ma H­¬ng"},--À¥ÂØ
+	[8] = {2,0,491,"Plum Osmanthus Road"},--´äÑÌ
+	[9] = {2,0,495,"Demon Quelling Incense"},--À¥ÂØ
 	[10] = {2,0,499,"Th¸nh Háa LÖnh"}--Ã÷½Ì
 	};
 	if nType == 1 then  
@@ -1169,9 +1169,9 @@ function choose_change_wz(nType)
 		6,
 		"§Çu/#confirm_change_cailiao("..nType..",0)",
 		"Ngo¹i trang/#confirm_change_cailiao("..nType..",1)",
-		"H¹ y/#confirm_change_cailiao("..nType..",3)",
+		"Lower garment/#confirm_change_cailiao("..nType..",3)",
 		"Vò khÝ/#confirm_change_cailiao("..nType..",2)",
-		"Chän sai. Trë vÒ/lingqi_item_change",
+		"Wrong choice. Go back/lingqi_item_change",
 		"§îi ta mÆc trang bÞ lªn ®·./nothing")		
 end
 
@@ -1409,7 +1409,7 @@ function add_lingqi_wz()
 	local strtab = {
 		"§Çu/#add_lingqi_ask(0)",
 		"Ngo¹i trang/#add_lingqi_ask(1)",
-		"H¹ y/#add_lingqi_ask(3)",
+		"Lower it/#add_lingqi_ask(3)",
 		"Vò khÝ/#add_lingqi_ask(2)",
 		"§îi ta mÆc trang bÞ lªn ®·./nothing"};
 	Say("Ng­¬i muèn ®iÒu chØnh linh khÝ cña trang bÞ nµo trªn ng­êi? Chó ý, chØ cã trang bÞ linh khÝ ch­a kh¶m míi cã thÓ ®iÒu chØnh.",
@@ -1418,11 +1418,11 @@ function add_lingqi_wz()
 end
 
 function add_lingqi_ask(nWz)
-	local tWz = {"§Çu","Ngo¹i trang","Vò khÝ","H¹ y"};
+	local tWz = {"§Çu","Ngo¹i trang","Vò khÝ","Lower Garment"};
 	Say("Ng­¬i cã muèn ®iÒu chØnh linh khÝ cña trang bÞ <color=yellow>"..tWz[nWz+1].."<color> kh«ng?",
 		3,
 		"Ta muèn ®iÒu chØnh/#add_lingqi_confirm("..nWz..")",
-		"Kh«ng, ta nhÇm!/add_lingqi_wz",
+		"No, I made a mistake!/add_lingqi_wz",
 		"§îi ta mÆc trang bÞ lªn ®·./nothing");
 end
 
@@ -1511,7 +1511,7 @@ function add_tiandi_wz()
 	local strtab = {
 		"§Çu/#add_tiandi_ask(0)",
 		"Ngo¹i trang/#add_tiandi_ask(1)",
-		"H¹ y/#add_tiandi_ask(3)",
+		"Lower it/#add_tiandi_ask(3)",
 		"Vò khÝ/#add_tiandi_ask(2)",
 		"§îi ta mÆc trang bÞ lªn ®·./nothing"};
 	Say("Ng­¬i muèn ®óc linh khÝ cña trang bÞ Thiªn §Þa HuyÒn Hoµng nµo trªn ng­êi? Chó ý, chØ cã trang bÞ Thiªn §Þa HuyÒn Hoµng ch­a kh¶m míi ®óc ®­îc.",
@@ -1520,11 +1520,11 @@ function add_tiandi_wz()
 end
 
 function add_tiandi_ask(nWz)
-	local tWz = {"§Çu","Ngo¹i trang","Vò khÝ","H¹ y"};
+	local tWz = {"§Çu","Ngo¹i trang","Vò khÝ","Lower Garment"};
 	Say("Ng­¬i muèn ®óc Thiªn §Þa HuyÒn Hoµng <color=yellow>"..tWz[nWz+1].."<color> kh«ng?",
 		3,
 		"Ta muèn ®iÒu chØnh/#add_tiandi_confirm("..nWz..")",
-		"Kh«ng, ta nhÇm!/add_tiandi_wz",
+		"No, I made a mistake!/add_tiandi_wz",
 		"§îi ta mÆc trang bÞ lªn ®·./nothing");		
 end
 
@@ -1623,11 +1623,11 @@ function item_uplevel()
 end
 
 function item_uplevel_wz(nType)
-	local tItem = {"1 Tinh LuyÖn B¨ng Th¹ch","1 V« NgÊn Thuû","1 N÷ Oa Tinh Th¹ch","1 N÷ Oa Tinh Th¹ch","1 N÷ Oa Tinh Th¹ch"}
+	local tItem = {"1 Tinh LuyÖn B¨ng Th¹ch","1 Wuyin Water","1 N÷ Oa Tinh Th¹ch","1 N÷ Oa Tinh Th¹ch","1 N÷ Oa Tinh Th¹ch"}
 	local strtab = {
 		"§Çu/#confirm_item_uplevel("..nType..",0)",
 		"Ngo¹i trang/#confirm_item_uplevel("..nType..",1)",
-		"H¹ y/#confirm_item_uplevel("..nType..",3)",
+		"Lower it/#confirm_item_uplevel("..nType..",3)",
 		"trë l¹i/item_uplevel"
 		}
 	Say("<color=green>§Ö tö thî rÌn L­u<color>: Ng­¬i muèn th¨ng cÊp trang bÞ nµy, cÇn ph¶i cã <color=yellow>"..tItem[nType].."<color>, ng­¬i muèn th¨ng cÊp trang bÞ ë vÞ trÝ nµo?",
@@ -1744,7 +1744,7 @@ function OnPutinCheck(param, idx, genre, detail, particular)
 		["L­u Yªn c«n"] = {0,5,6009,},
 		["HuyÒn Yªn kiÕm"] = {0,2,6010,},
 		["Vò Yªn bót"] = {0,9,6011,},
-		["Hµ Tiªm Th­¬ng"] = {0,6,6012,},
+		["He Tian Spear"] = {0,6,6012,},
 		["Hµnh Yªn Cung"] = {0,4,6013,},
 		["Träc Yªn nhÉn"] = {0,7,6014,},
 		["Yªu Yªn tr¶o"] = {0,11,6015,},
@@ -1873,10 +1873,10 @@ end
 
 function ask_is_duihuan(nType,nWp,nLingqi)
 	local tTiandiName = {"Thiªn §Þa HuyÒn Hoµng Kh«i","Thiªn §Þa HuyÒn Hoµng Gi¸p ","GiÇy Thiªn §Þa HuyÒn Hoµng","Vò khÝ Thiªn §Þa HuyÒn Hoµng"};
-	Say("<color=green>§Ö tö thî rÌn L­u<color>: Ng­¬i muèn dïng Thanh §ång ®Ønh cÊp 1 ®æi linh khÝ <color=yellow>"..nLingqi.."-"..tTiandiName[nType].."<color> chø?",
+	Say("<color=green>§Ö tö thî rÌn L­u<color>: Ng­¬i muèn dïng Thanh §ång ®Ønh cÊp 1 ®æi linh khÝ <color=yellow>"..nLingqi.."-"..tTiandiName[nType].."<color> ?",
 		3,
 		"õ, ta muèn ®æi./#confirm_change_yijiding("..nType..","..nWp..","..nLingqi..")",
-		"Kh«ng, ta nhÇm!/chang_yijiding",
+		"No, I made a mistake!/chang_yijiding",
 		"T¹m thêi kh«ng ®æi. /nothing"
 		)
 end
@@ -1973,10 +1973,10 @@ end
 
 function ask_yanhuang_duihuan(nType,nWp,nLingqi)
 	local tTiandiName = {"Thiªn §Þa HuyÒn Hoµng Kh«i","Thiªn §Þa HuyÒn Hoµng Gi¸p ","GiÇy Thiªn §Þa HuyÒn Hoµng","Vò khÝ Thiªn §Þa HuyÒn Hoµng"};
-	Say("<color=green>§Ö tö thî rÌn L­u<color>: Ng­¬i muèn dïng Viªm Hoµng ThiÕt Hån ®æi ®iÓm linh khÝ <color=yellow>"..nLingqi.."-"..tTiandiName[nType].."<color> chø?",
+	Say("<color=green>§Ö tö thî rÌn L­u<color>: Ng­¬i muèn dïng Viªm Hoµng ThiÕt Hån ®æi ®iÓm linh khÝ <color=yellow>"..nLingqi.."-"..tTiandiName[nType].."<color> ?",
 		3,
 		"õ, ta muèn ®æi./#confirm_change_yanhuang("..nType..","..nWp..","..nLingqi..")",
-		"Kh«ng, ta nhÇm!/chang_yanhuang",
+		"No, I made a mistake!/chang_yanhuang",
 		"T¹m thêi kh«ng ®æi. /nothing"
 		)
 end
@@ -2041,16 +2041,16 @@ function get_bagua_lingshi_mianfei()
 		5,
 		"§Çu/#ask_quchu_lingshi_mianfei(0)",
 		"Ngo¹i trang/#ask_quchu_lingshi_mianfei(1)",
-		"H¹ y/#ask_quchu_lingshi_mianfei(3)",
+		"Lower it/#ask_quchu_lingshi_mianfei(3)",
 		"Vò khÝ/#ask_quchu_lingshi_mianfei(2)",
 		"§îi ta mÆc trang bÞ lªn ®·./nothing")	
 end
 
 function ask_quchu_lingshi_mianfei(nWz)
-	local tChouqu = {"§Çu","Ngo¹i trang","Vò khÝ","H¹ y"}
-	Say("Ng­¬i muèn lÊy ®¸ trªn <color=yellow>"..tChouqu[nWz+1].."<color> µ?",
+	local tChouqu = {"§Çu","Ngo¹i trang","Vò khÝ","Lower Garment"}
+	Say("Ng­¬i muèn lÊy ®¸ trªn <color=yellow>"..tChouqu[nWz+1].."<color>?",
 		3,
-		"§­îc/#confirm_quchu_lingshi_mianfei("..nWz..")",
+		"Confirm/#confirm_quchu_lingshi_mianfei("..nWz..")",
 		"Ta chän nhÇm råi./get_bagua_lingshi_mianfei",
 		"§îi ta mÆc trang bÞ lªn ®·./nothing")
 end
@@ -2140,12 +2140,12 @@ function box_change_weapon()
 			3,
 			"Ph¶i, ta muèn ®æi Hiªn Viªn To¸i Vò §ao/#confirm_box_change_weapon(1)",
 			"Ph¶i, ta muèn ®æi Hiªn Viªn To¸i Vò C«n/#confirm_box_change_weapon(2)",
-			"ChØ xem thö!/nothing")		
+			"Just taking a look!/nothing")		
 	else
 		Say("<color=green>§Ö tö thî rÌn L­u<color>: Dïng 15 R­¬ng vµng ThÞnh ThÕ ®æi 1 vò khÝ Hoµng §Õ <color=yellow>cña l­u ph¸i<color> t­¬ng øng. Ng­¬i cã muèn ®æi kh«ng?",
 			2,
 			"õ, ta muèn ®æi./#confirm_box_change_weapon(0)",
-			"ChØ xem thö!/nothing")
+			"Just taking a look!/nothing")
 	end
 end
 
@@ -2195,12 +2195,12 @@ function jinbox_huan_ring()
 		3,
 		"Ta muèn ®æi Hiªn Viªn ChiÕn/#choose_xuanyuan(1)",
 		"Ta muèn ®æi Hiªn Viªn §Èu/#choose_xuanyuan(2)",
-		"Kh«ng cã g×!/nothing")
+		"Nothing!/nothing")
 end
 
 function choose_xuanyuan(nType)
 	local tRing = {"Hiªn Viªn ChiÕn","Hiªn Viªn §Êu"};
-	Say("<color=green>§Ö tö thî rÌn L­u<color>: Dïng 4 R­¬ng vµng ThÞnh ThÕ ®æi 1 <color=yellow>"..tRing[nType].."<color> chø?",
+	Say("<color=green>§Ö tö thî rÌn L­u<color>: Dïng 4 R­¬ng vµng ThÞnh ThÕ ®æi 1 <color=yellow>"..tRing[nType].."<color> ?",
 		2,
 		"õ, ta muèn ®æi./#confirm_jinbox_xuanyuan("..nType..")",
 		"Ta chän nhÇm råi./jinbox_huan_ring")
@@ -2282,7 +2282,7 @@ function about_hhry()
 		"Huy Hoµng Chi KÕ, Vinh Dù Chi KÕ th¨ng cÊp thµnh Huy Hoµng QuËt Khëi, Vinh Dù QuËt Khëi (400 Thiªn Th¹ch Tinh Th¹ch)/#uplevel_hhry(2)",
 		"Huy Hoµng QuËt Khëi, Vinh Dù QuËt Khëi th¨ng cÊp thµnh Huy Hoµng, Vinh Dù (1000 Thiªn Th¹ch Tinh Th¹ch1000)/#uplevel_hhry(3)",
 		"Xem c¸c thuéc tÝnh cÊp cña huy hoµng, vinh dù (kh«ng thÓ mua)/ring_Sale",
-		"Kh«ng cã g×!/nothing"
+		"Nothing!/nothing"
 		}
 	Say("<color=green>§Ö tö thî rÌn L­u<color>: Huy hoµng, vinh dù tæng céng cã 4 cÊp, ng­¬i cã thÓ xem c¸c thuéc tÝnh cÊp cña huy hoµng, vinh dù bªn d­íi, nÕu muèn th¨ng cÊp t×m hiÓu néi dung ®i!",
 		getn(strtab),
@@ -2294,7 +2294,7 @@ function ring_Sale()
 end 
 
 function uplevel_hhry(nType)
-	Say("<color=green>§Ö tö thî rÌn L­u<color>: Ng­¬i muèn lÊy <color=yellow>"..tHuihuang[nType][1].." vµ"..tRongyao[nType][1].."<color> th¨ng cÊp thµnh <color=yellow>"..tHuihuang[nType+1][1].." vµ"..tRongyao[nType+1][1].."<color> kh«ng? CÇn thu thËp <color=yellow>"..tUplevel[nType][1]..tUplevel[nType][5].." <color>. <color=yellow>Chó ý, mang 2 trang søc muèn th¨ng cÊp lªn ng­êi. <color>",
+	Say("<color=green>§Ö tö thî rÌn L­u<color>: Ng­¬i muèn lÊy <color=yellow>"..tHuihuang[nType][1].." and"..tRongyao[nType][1].."<color> th¨ng cÊp thµnh <color=yellow>"..tHuihuang[nType+1][1].." and"..tRongyao[nType+1][1].."<color> kh«ng? CÇn thu thËp <color=yellow>"..tUplevel[nType][1]..tUplevel[nType][5].." <color>. <color=yellow>Chó ý, mang 2 trang søc muèn th¨ng cÊp lªn ng­êi. <color>",
 		3,
 		"§­îc, ta muèn th¨ng cÊp /#confirm_uplevel_hhry("..nType..")",
 		"Xem c¸c thuéc tÝnh cÊp cña huy hoµng, vinh dù (kh«ng thÓ mua)/ring_Sale",
@@ -2343,18 +2343,18 @@ function confirm_uplevel_hhry(nType)
 			local nAddFlag = AddItem(tHuihuang[nType+1][2],tHuihuang[nType+1][3],tHuihuang[nType+1][4],1,1,-1,-1,-1,-1,-1,-1);
 			if nAddFlag == 1 then
 				Msg2Player("B¹n ®Æt thµnh c«ng "..tHuihuang[nType][1].."T¨ng cÊp thµnh "..tHuihuang[nType+1][1]);
-				Msg2Global("Qua t«i luyÖn,"..GetName().." thµnh c«ng më tiÒm n¨ng cña "..tHuihuang[nType][1]..", hãa thµnh "..tHuihuang[nType+1][1].."!");
+				Msg2Global("After refining,"..GetName().." thµnh c«ng më tiÒm n¨ng cña "..tHuihuang[nType][1]..", hãa thµnh "..tHuihuang[nType+1][1].."!");
 				WriteLog("[Huy hoµng vinh dù]: Ng­êi ch¬i "..GetName().." thµnh c«ng ®em "..tHuihuang[nType][1].."T¨ng cÊp thµnh "..tHuihuang[nType+1][1]);
 			else
-				WriteLog("[Huy hoµng vinh dù]: Ng­êi ch¬i "..GetName().." ®em "..tHuihuang[nType][1].."T¨ng cÊp thµnh "..tHuihuang[nType+1][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
+				WriteLog("[Huy hoµng vinh dù]: Ng­êi ch¬i "..GetName().." bring"..tHuihuang[nType][1].."T¨ng cÊp thµnh "..tHuihuang[nType+1][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
 			end
 			nAddFlag = AddItem(tRongyao[nType+1][2],tRongyao[nType+1][3],tRongyao[nType+1][4],1,1,-1,-1,-1,-1,-1,-1);
 			if nAddFlag == 1 then
 				Msg2Player("B¹n ®Æt thµnh c«ng "..tRongyao[nType][1].."T¨ng cÊp thµnh "..tRongyao[nType+1][1]);
-				Msg2Global("Qua t«i luyÖn,"..GetName().." thµnh c«ng më tiÒm n¨ng cña "..tRongyao[nType][1]..", hãa thµnh "..tRongyao[nType+1][1].."!");
+				Msg2Global("After refining,"..GetName().." thµnh c«ng më tiÒm n¨ng cña "..tRongyao[nType][1]..", hãa thµnh "..tRongyao[nType+1][1].."!");
 				WriteLog("[Huy hoµng vinh dù]: Ng­êi ch¬i "..GetName().." thµnh c«ng ®em "..tRongyao[nType][1].."T¨ng cÊp thµnh "..tRongyao[nType+1][1]);
 			else
-				WriteLog("[Huy hoµng vinh dù]: Ng­êi ch¬i "..GetName().." ®em "..tRongyao[nType][1].."T¨ng cÊp thµnh "..tRongyao[nType+1][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
+				WriteLog("[Huy hoµng vinh dù]: Ng­êi ch¬i "..GetName().." bring"..tRongyao[nType][1].."T¨ng cÊp thµnh "..tRongyao[nType+1][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
 			end
 		else
 			WriteLog("[Huy hoµng vinh dù]: Ng­êi ch¬i "..GetName().."T¨ng"..tHuihuang[nType][1]..", khÊu trõ trang søc thÊt b¹i.");

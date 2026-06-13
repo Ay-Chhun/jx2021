@@ -14,7 +14,7 @@ tNpcInfo = {
 		{1,{"Liªu Quèc ThÝch Kh¸ch Tinh Anh","Liªu Quèc ThÝch Kh¸ch Tinh Anh",nMapId,nMapX,nMapY,-1,1},"\\script\\pop\\2012\\liaoguo_cike_npc.lua","\\script\\pop\\2012\\liaoguo_cike_npc.lua"},
 		},
 	[132] = {nil,0,1,TASKID_SW_ITEM_ZLSSW_CD,5077,--×ÏÂÞÉ½Ê¥Îï
-		{1,{"Linh Tª Tö","Linh Tª Tö",nMapId,nMapX,nMapY,},"\\script\\pop\\2012\\flute_item.lua","\\script\\pop\\2012\\flute_item.lua",},
+		{1,{"Linh Te Tu","Linh Te Tu",nMapId,nMapX,nMapY,},"\\script\\pop\\2012\\flute_item.lua","\\script\\pop\\2012\\flute_item.lua",},
 		},
 	}	
 	
@@ -77,8 +77,8 @@ tNpcInfo = {
 end
 
 function OnDeath(nNpcIdx)
-	if GetNpcName(nNpcIdx) == "Linh Tª Tö" then
-		gf_AddItemEx({2,96,133,1,4},"M¶nh §¹o §øc Kinh");
+	if GetNpcName(nNpcIdx) == "Linh Te Tu" then
+		gf_AddItemEx({2,96,133,1,4},"Fragment of the Tao Te Ching");
 		RemoveNpc(nNpcIdx);
 	end
 end

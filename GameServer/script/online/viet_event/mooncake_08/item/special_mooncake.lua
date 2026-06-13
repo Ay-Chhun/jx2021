@@ -14,7 +14,7 @@ TYPE_EQUIP = 2;	--´øÊôÐÔ×°±¸ÀàÎïÆ·
 TYPE_CMD = 3;	--ÃüÁî
 
 --=========================================================================================
-g_szLogTitle = "Ho¹t ®éng trung thu : ".."B¸nh Trung thu ®Æc biÖt"		--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
+g_szLogTitle = "Ho¹t ®éng trung thu : ".."Special Mooncake"		--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
 g_nVietUseMoonCakeEnd = 2008101300				--ÔÂ±ýµÄÊ¹ÓÃ½ØÖ¹ÈÕÆÚ
 g_nNeedRoom = 1;
 g_nNeedWeight = 20;	
@@ -26,33 +26,33 @@ g_szFileName = "special_mooncake.lua"			--ÎÄ¼þÃû
 g_tbItem = 
 {
 	--		ÀàÐÍ	   ¸ÅÂÊ		ÊýÁ¿ Ãû×Ö			ID1,ID2,ID3
-	[1] = {TYPE_ITEM,	1,		1,	"Kim Cang Phôc Ma kinh",	0,	107,	1},
+	[1] = {TYPE_ITEM,	1,		1,	"Vajra Demon-Subduing Sutra",	0,	107,	1},
 	[2] = {TYPE_ITEM,	1,		1,	"TiÒm Long MËt tÞch",		0,	107,	3},
 	[3] = {TYPE_ITEM,	1,		1,	"V« TrÇn MËt tÞch",		0,	107,	5},
 	[4] = {TYPE_ITEM,	1,		1,	"Thiªn La MËt TÞch",		0,	107,	7},
 	[5] = {TYPE_ITEM,	1,		1,	"Nh­ ý MËt TÞch",		0,	107,	9},
-	[6] = {TYPE_ITEM,	1,		1,	"BÝch H¶i Phæ",		0,	107,	11},
+	[6] = {TYPE_ITEM,	1,		1,	"Azure Sea Score",		0,	107,	11},
 	[7] = {TYPE_ITEM,	1,		1,	"Hçn §én MËt tÞch",		0,	107,	13},
 	[8] = {TYPE_ITEM,	1,		1,	"Quý Thiªn MËt tÞch",		0,	107,	15},
 	[9] = {TYPE_ITEM,	1,		1,	"HuyÒn ¶nh MËt tÞch",		0,	107,	17},
 	[10] = {TYPE_ITEM,	1,		1,	"Qu©n Tö MËt tÞch",		0,	107,	19},
 	[11] = {TYPE_ITEM,	1,		1,	"TrÊn Qu©n MËt tÞch",		0,	107,	21},
 	[12] = {TYPE_ITEM,	1,		1,	"Xuyªn V©n MËt tÞch",		0,	107,	23},
-	[13] = {TYPE_ITEM,	1,		1,	"U Minh Quû Lôc",		0,	107,	25},
+	[13] = {TYPE_ITEM,	1,		1,	"Nether Ghost Record",		0,	107,	25},
 	[14] = {TYPE_ITEM,	1,		1,	"Linh Cæ MËt tÞch",		0,	107,	27},
 	[15] = {TYPE_ITEM,	5,		1,	"B¸t B¶o TÈy Tñy Tiªn §¬n",	2,	0,		138},
-	[16] = {TYPE_ITEM,	10,		1,	"TÈy Tñy linh ®¬n",		2,	0,		137},
-	[17] = {TYPE_ITEM,	3000,	1,	"TiÓu Nh­ ý",		2,	1,		30030},
-	[18] = {TYPE_ITEM,	70,		1,	"Chiªm Y Phæ",		0,	107,	66},
+	[16] = {TYPE_ITEM,	10,		1,	"Marrow-Cleansing Spirit Pill",		2,	0,		137},
+	[17] = {TYPE_ITEM,	3000,	1,	"Little Ruyi",		2,	1,		30030},
+	[18] = {TYPE_ITEM,	70,		1,	"Zhanyi Manual",		0,	107,	66},
 	[19] = {TYPE_ITEM,	100,	1,	"Tö Hµ MËt tÞch",		0,	107,	65},
 	[20] = {TYPE_ITEM,	150,	1,	"Thiªn Hµ MËt tÞch",		0,	107,	64},
 	[21] = {TYPE_ITEM,	2000,	1,	"M¶nh Thiªn th¹ch",		2,	2,		7},
 	[22] = {TYPE_ITEM,	5000,	1,	"Thiªn th¹ch",			2,	2,		8},
-	[23] = {TYPE_ITEM,	5000,	1,	"M¶nh B¨ng th¹ch",		2,	1,		148},
-	[24] = {TYPE_ITEM,	5000,	1,	"B¨ng th¹ch",			2,	1,		149},
-	[25] = {TYPE_ITEM,	10000,	1,	"C©y B¸t Nh·",		2,	0,		398},
-	[26] = {TYPE_ITEM,	20000,	1,	"C©y B¸t Nh· nhá",	2,	0,		504},
-	[27] = {TYPE_ITEM,	140000,	1,	"Lé thñy",			2,	0,		351},
+	[23] = {TYPE_ITEM,	5000,	1,	"Ice Stone Fragment",		2,	1,		148},
+	[24] = {TYPE_ITEM,	5000,	1,	"Ice Stone",			2,	1,		149},
+	[25] = {TYPE_ITEM,	10000,	1,	"Prajna Tree",		2,	0,		398},
+	[26] = {TYPE_ITEM,	20000,	1,	"Small Prajna Tree",	2,	0,		504},
+	[27] = {TYPE_ITEM,	140000,	1,	"Dew Water",			2,	0,		351},
 	[28] = {TYPE_ITEM,	10000,	1,	"Bång Lai Tiªn Thñy",		2,	1,		1012},
 	--		ÀàÐÍ	   ¸ÅÂÊ ÊýÖµ	ÌáÊ¾×Ö·û´® 		ÃüÁî×Ö·û´®
 	[29] = {TYPE_CMD,	50000,	1,	"®iÓm danh väng",	"ModifyReputation(%d,0)"},
@@ -128,7 +128,7 @@ function use_it()
 		if g_tbItem[nRandIdx][4] ~= "®iÓm danh väng"  then
 			Msg2Player(szMsgText)
 		end
-		WriteLogEx(szLogTrungThuName,"B¸nh trung thu ®Æc biÖt",nItemNum,szItemName)			
+		WriteLogEx(szLogTrungThuName,"Special mooncake",nItemNum,szItemName)			
 	else
 		WriteLog("["..g_szLogTitle.."]: [Account: "..GetAccount().."][Role Name: "..GetName().."] "..szMsgText.." Failed, return value = "..nRetCode)
 	end

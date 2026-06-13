@@ -23,7 +23,7 @@ function ask_question(nPageNum)
 	selTab[2] = tTeamName[nTeamIndexBase+2].."/#select("..(nTeamIndexBase+2)..")";
 	selTab[3] = tTeamName[nTeamIndexBase+3].."/#select("..(nTeamIndexBase+3)..")";
 	selTab[4] = tTeamName[nTeamIndexBase+4].."/#select("..(nTeamIndexBase+4)..")";
-	selTab[5] = "Trang tr­íc/#ask_question("..(nPageNum-1)..")";
+	selTab[5] = "Previous page/#ask_question("..(nPageNum-1)..")";
 	selTab[6] = "Trang sau/#ask_question("..(nPageNum+1)..")";
 	if nPageNum == 1 then
 		tremove(selTab,5);
@@ -41,7 +41,7 @@ function select(nTeamIndex)
 		return 0;
 	end;
 	local selTab = {
-				"§ång ý/#confirm("..nTeamIndex..")",
+				"Confirm/#confirm("..nTeamIndex..")",
 				"Chän l¹i/#ask_question(1)",
 				}
 	Say("B¹n chän <color=yellow>"..tTeamName[nTeamIndex].."<color>. X¸c ®Þnh chø?",getn(selTab),selTab);
@@ -116,8 +116,8 @@ function give_random_card(nProbability,nTeamIndex)
 	SetTask(TASK_GOTCARD_DATE,nDate);
 	if nRandomNum <= nProbability then
 		AddItem(tItemCard[nTeamIndex][2],tItemCard[nTeamIndex][3],tItemCard[nTeamIndex][4],1);
-		Say("B¹n nhËn ®­îc 1 tÊm <color=yellow>"..tItemCard[nTeamIndex][1].."<color>. H«m nay b¹n ®· tham gia <color=yellow>"..GetTask(TASK_GOTCARD_COUNT).."<color> lÇn ho¹t ®éng cóp thÕ giíi, b¹n cã thÓ tham gia thªm <color=yellow>"..(6-GetTask(TASK_GOTCARD_COUNT)).."<color> lÇn.",0);
-		WriteLog("[Vui ho¹t ®éng cóp thÕ giíi]:"..GetName().."NhËn ®­îc"..tItemCard[nTeamIndex][1]);
+		Say("B¹n nhËn ®­îc 1 tÊm <color=yellow>"..tItemCard[nTeamIndex][1].."<color>. Today you have joined the <color=yellow>"..GetTask(TASK_GOTCARD_COUNT).."<color> lÇn ho¹t ®éng cóp thÕ giíi, b¹n cã thÓ tham gia thªm <color=yellow>"..(6-GetTask(TASK_GOTCARD_COUNT)).."<color> lÇn.",0);
+		WriteLog("[Vui ho¹t ®éng cóp thÕ giíi]:"..GetName().."Received"..tItemCard[nTeamIndex][1]);
 	else
 		nRandomNum = random(1,10000);
 		for i=1,getn(tItemCard) do
@@ -128,11 +128,11 @@ function give_random_card(nProbability,nTeamIndex)
 					nTeamIndex = i;
 				end;
 				AddItem(tItemCard[nTeamIndex][2],tItemCard[nTeamIndex][3],tItemCard[nTeamIndex][4],1);
-				Say("B¹n nhËn ®­îc 1 tÊm <color=yellow>"..tItemCard[nTeamIndex][1].."<color>. H«m nay b¹n ®· tham gia <color=yellow>"..GetTask(TASK_GOTCARD_COUNT).."<color> lÇn ho¹t ®éng cóp thÕ giíi, b¹n cã thÓ tham gia thªm <color=yellow>"..(6-GetTask(TASK_GOTCARD_COUNT)).."<color> lÇn.",0);
+				Say("B¹n nhËn ®­îc 1 tÊm <color=yellow>"..tItemCard[nTeamIndex][1].."<color>. Today you have joined the <color=yellow>"..GetTask(TASK_GOTCARD_COUNT).."<color> lÇn ho¹t ®éng cóp thÕ giíi, b¹n cã thÓ tham gia thªm <color=yellow>"..(6-GetTask(TASK_GOTCARD_COUNT)).."<color> lÇn.",0);
 				if nTeamIndex == 34 then	--Èç¹ûÊÇÖÐ¹ú¶ÓÖ®¿¨
 					SetTask(TASK_GOTCHINA_CARD,1);
 				end;
-				WriteLog("[Vui ho¹t ®éng cóp thÕ giíi]:"..GetName().."NhËn ®­îc"..tItemCard[nTeamIndex][1]);
+				WriteLog("[Vui ho¹t ®éng cóp thÕ giíi]:"..GetName().."Received"..tItemCard[nTeamIndex][1]);
 				break;
 			end;
 		end;

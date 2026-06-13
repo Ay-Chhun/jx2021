@@ -21,15 +21,15 @@ SF_FILE_SVR =
 --°´ÁÐ´Ó×óµ½ÓÒ£ºÊÇ·ñÇø·ÖÌåÐÍ£¬ÎïÆ·Ãû³Æ£¬´óÀà£¬¸±Àà£¬ÏêÏ¸Àà±ð
 tGOOD_DROP_ITEM = 
 {
-	[1] = {1, "Tæng Qu¶n khè", 0, 101, 91},
+	[1] = {1, "Chief Steward Warehouse", 0, 101, 91},
 	[2] = {1, "Tæng Qu¶n Ngo¹i trang", 0, 100, 91},
 	[3] = {0, "TiÓu Th­ Giíi ChØ", 0, 102, 36},
-	[4] = {1, "Trang Chñ m·o", 0, 103, 91},
+	[4] = {1, "Manor Master hat", 0, 103, 91},
 	[5] = {0, "Tr­ëng L·o ChØ Hoµn", 0, 102, 37},
 	[6] = {0, "Tµng KiÕm B¶o Ch©u", 0, 102, 38},
 	[7] = {0, "Tµng KiÕm Kú Th¹ch", 0, 102, 39},
 	[8] = {1, "Tµng KiÕm Tö Kim m·o", 0,103,95},
-	[9] = {1, "Kim Lò Th­êng", 0,100,95},
+	[9] = {1, "Gold-Inlaid Robe", 0,100,95},
 	[10] = {1, "Tµng KiÕm ¤ kim phôc", 0,101,95},
 	[11] = {0, "Tµng KiÕm Kim Ên", 0,102,40},
 }
@@ -48,7 +48,7 @@ tBOSS_GOOD_DROP =
 		[90] = {{160, 2}},
 	},
 	
-	["§¹i tiÓu th­"] = {
+	["Eldest Young Lady"] = {
 		[70] = {{100, 3}},
 		[80] = {{120, 3}},
 		[90] = {{160, 3}},
@@ -95,7 +95,7 @@ tBOSS_GOOD_DROP =
 
 
 SF_TOWNID_SVR = {300,200,100,350,150}
-SF_TOWNNAME_SVR = {"Thµnh §«","BiÖn Kinh","TuyÒn Ch©u","T­¬ng D­¬ng","D­¬ng Ch©u"}
+SF_TOWNNAME_SVR = {"Thµnh §«","Bianjing","TuyÒn Ch©u","T­¬ng D­¬ng","D­¬ng Ch©u"}
 SF_BACKPOINT_SVR = {			-- ÒâÍâÖÐ¶ÏºóÍæ¼Ò·µ»ØµÄµØµã
 {300,1776,3704},
 {200,1229,2763},
@@ -470,8 +470,8 @@ GT_FILE = new(KTabFile, "\\settings\\²Ø½£É½×¯\\gears\\cangjian_gears.txt")			-- 
 GT_TYPE = {"¶i","Ng­êi bÞ rít","Sù kiÖn","Tr¹ng th¸i","Lo¹i h×nh ®¹o cô","Lo¹i phô r¬i ra","Lo¹i nhá phô thuéc",			-- ±íÍ·£¨ÁÐÃû³Æ£© 
 		   "Tû lÖ r¬i30","Tû lÖ r¬i40","Tû lÖ r¬i50","Tû lÖ r¬i60","Tû lÖ r¬i70","Tû lÖ r¬i80","Tû lÖ r¬i90"}
 GT_ROWCOUNT = tonumber(GT_FILE:getRow())											-- ±í×ÜÐÐÊý
-GT_GEARSPART = {"§Çu", "Th©n thÓ", "Ch©n", "Kim hoµn", "Vò khÝ"}
-GT_GEARFACTION = {"ThiÕu L©m tôc gia", "ThiÕu L©m tôc gia", "ThiÕu L©m thiÒn t¨ng", "ThiÕu L©m vâ t¨ng", "§­êng M«n", "Nga My phËt gia", "Nga My tôc gia", "C¸i Bang TÜnh y", "C¸i Bang ¤ Y", "Vâ §ang ®¹o gia", "Vâ §ang tôc gia", "D­¬ng M«n th­¬ng Kþ", "D­¬ng M«n Cung Kþ", "HiÖp §éc", "Tµ §éc"}
+GT_GEARSPART = {"§Çu", "Th©n thÓ", "Zhen", "Kim hoµn", "Vò khÝ"}
+GT_GEARFACTION = {"Shaolin Lay Branch", "Shaolin Lay Branch", "ThiÕu L©m thiÒn t¨ng", "ThiÕu L©m vâ t¨ng", "§­êng M«n", "Emei Buddhist Branch", "Emei Lay Branch", "Beggars' Guild Pure Robe", "Beggars' Guild Dirty Robe", "Wudang Daoist Branch", "Wudang Lay Branch", "D­¬ng M«n th­¬ng Kþ", "D­¬ng M«n Cung Kþ", "Chivalrous Venom", "Wicked Venom"}
 ------------------------------------------------------------------------------------------------ FUNCTION ----
 -- È¡µÃ¹Ì¶¨rowÐÐdatatypeÁÐµÄµ¥ÔªÄÚÈÝ
 function GT_GetData(row, datatype)
@@ -542,7 +542,7 @@ function GT_NewBossDrop(name)
 	{
 		["Tæng qu¶n ngo¹i viÖn"] = {"LÖnh bµi tæng qu¶n ngo¹i viÖn", "LÖnh bµi tæng qu¶n ngo¹i viÖn", "\\script\\task\\tasklink\\taskitem.lua"},
 		["Tæng qu¶n néi viÖn"] = {"LÖnh bµi tæng qu¶n néi viÖn", "LÖnh bµi tæng qu¶n néi viÖn", "\\script\\task\\tasklink\\taskitem.lua"},
-		["§¹i tiÓu th­"] = {"ViÖt N÷ kiÕm", "ViÖt N÷ kiÕm", "\\script\\task\\tasklink\\taskitem.lua"},
+		["Eldest Young Lady"] = {"ViÖt N÷ kiÕm", "ViÖt N÷ kiÕm", "\\script\\task\\tasklink\\taskitem.lua"},
 		["§¹i trang chñ"] = {"Trang chñ kim Ên", "Trang chñ kim Ên", "\\script\\task\\tasklink\\taskitem.lua"},
 		["Tr­ëng l·o Tµng KiÕm C¸c"] = {"Tr­ëng L·o ChØ Hoµn", "Tr­ëng L·o ChØ Hoµn", "\\script\\task\\tasklink\\taskitem.lua"},
 	}
@@ -961,7 +961,7 @@ end
 function TM_IsPlayer()
 	local nIsPlayer = 0
 	TT_TARGET_Index, TT_TARGET_ModID, TT_TARGET_Name = GetTriggeringUnit()
-	if (TT_TARGET_ModID == "Nam tiªu chuÈn") or (TT_TARGET_ModID == "Nam kh«i ng«") or (TT_TARGET_ModID == "N÷ gîi c¶m") or (TT_TARGET_ModID == "KiÒu n÷") then
+	if (TT_TARGET_ModID == "Nam tiªu chuÈn") or (TT_TARGET_ModID == "Imposing man") or (TT_TARGET_ModID == "Alluring woman") or (TT_TARGET_ModID == "Graceful woman") then
 		nIsPlayer = 1
 	end
 	return nIsPlayer
@@ -1184,7 +1184,7 @@ MC_SPWN_LIMIT_TABLE = {150, 150, 150, 150, 150, 150, 150, 150, 150}		-- Ã¿¹Ø¿¨µÄ
 MC_BOSS_POS = {
 {"Tæng ngo¹i qu¶n", "Tæng qu¶n ngo¹i viÖn", 1, 1587, 3238},		-- 1 - Stage 1 boss
 {"Tæng néi qu¶n", "Tæng qu¶n néi viÖn", 2, 1657, 3133},			-- 2 - Stage 2 boss
-{"§¹i tiÓu th­", "§¹i tiÓu th­", 3, 1629, 3147},					-- 3 - Stage 3 boss
+{"Eldest Young Lady", "Eldest Young Lady", 3, 1629, 3147},					-- 3 - Stage 3 boss
 {"§¹i trang chñ", "§¹i trang chñ", 4, 1869, 2895},					-- 4 - Stage 4 boss
 {"Tæng qu¶n Tµng KiÕm", "Tr­ëng l·o Tµng KiÕm C¸c", 5, 1602, 3193},			-- 5 - Stage 5 boss
 {"", "", 0, 0, 0},										-- 6 - Stage 6 boss
@@ -1624,10 +1624,10 @@ function TB_AddScore(nType, nValue, nIndex)
 			PlayerIndex = nIndex
 		end
 --- »ý·Ö¼ÇÂ¼
-		if (nType == 1) or (nType == "§iÓm tÝch lòy") then
+		if (nType == 1) or (nType == "Accumulated points") then
 			SetTask(TB_BONUS_SCORE, GetTask(TB_BONUS_SCORE)+nValue)
 --- Ê±¼ä¼ÇÂ¼
-		elseif (nType == 2) or (nType == " thêi gian ") then
+		elseif (nType == 2) or (nType == "time") then
 			SetTask(TB_BONUS_TIME, GetTask(TB_BONUS_TIME)+nValue)
 --- ÓÑºÃ¼ÇÂ¼
 		elseif (nType == 3) or (nType == "H¶o h÷u") then
@@ -1645,7 +1645,7 @@ function TB_AddScore(nType, nValue, nIndex)
 		elseif (nType == 7) or (nType == "GiÕt qu¸i") then
 			SetTask(TB_BONUS_KILLED, GetTask(TB_BONUS_KILLED)+nValue)
 --- ¶Ó³¤´ÎÊý
-		elseif (nType == 8) or (nType == "§éi tr­ëng") then
+		elseif (nType == 8) or (nType == "Team Leader") then
 			SetTask(TB_BONUS_BECAPTAIN, GetTask(TB_BONUS_BECAPTAIN)+nValue)
 --- ´¦ÀíÍê³É
 		end
@@ -1663,7 +1663,7 @@ function TB_StoreScore()									-- È«¶Ó»ñµÃ¹Ø¿¨½±Àø
 	local nStage = TC_STAGE_Index[nZone]
 	local nRanInt = random(0,14)
 	local nOldIndex = PlayerIndex
-	local nCaptain = {"", "§éi tr­ëng"}
+	local nCaptain = {"", "Team Leader"}
 	for i=1, GetTeamSize() do
 		PlayerIndex = GetTeamMember(i)
 --- »ý·Ö¼ÇÂ¼
@@ -1714,7 +1714,7 @@ end
 GS_STAGE_START = {					-- ²Ø½£Ê¹Õß¿ªÊ¼¶Ô»°µÄÄÚÈÝ
 	MU_GetColoredText("Tµng KiÕm s¬n trang. S¬n M«n", "gold").."\n §Õn Tµng KiÕm s¬n trang ®Òu lµ nh÷ng anh tµi kú n÷ trong giang hå, cã g× thÊt lÔ xin l­îng thø. \n Trang chñ muèn thö tµi c¸c vÞ. \n §¸nh b¹i 25"..MU_GetColoredText("Gia ®inh", "green").."\n. §¸nh b¹i"..MU_GetColoredText("Tæng qu¶n ngo¹i viÖn", "green"),
 	MU_GetColoredText("§¹i ViÖn. Tµng KiÕm s¬n trang", "gold").."\n §¹i viÖn do Tæng qu¶n néi viÖn phô tr¸ch, cã g× cÇn xin ch­ vÞ cø tù nhiªn. \n. "..MU_GetColoredText("????", "green").."\n. §¸nh b¹i"..MU_GetColoredText("Tæng qu¶n néi viÖn", "green"),
-	MU_GetColoredText("HËu Hoa Viªn. Tµng KiÕm s¬n trang", "gold").."\n HËu Hoa viªn kh«ng cho phÐp ng­êi ngoµi ra vµo. C¸c vÞ ®õng chäc giËn §¹i TiÓu Th­. \n §¹i tiÓu th­ xinh ®Ñp nh­ng do tõ nhá ®· theo cha häc vâ nªn tÝnh khÝ h¬i ngç ng­îc. \n. §¸nh b¹i 8"..MU_GetColoredText("L·o béc", "green").."\n. §¸nh b¹i"..MU_GetColoredText("§¹i tiÓu th­", "green"),
+	MU_GetColoredText("HËu Hoa Viªn. Tµng KiÕm s¬n trang", "gold").."\n HËu Hoa viªn kh«ng cho phÐp ng­êi ngoµi ra vµo. C¸c vÞ ®õng chäc giËn §¹i TiÓu Th­. \n §¹i tiÓu th­ xinh ®Ñp nh­ng do tõ nhá ®· theo cha häc vâ nªn tÝnh khÝ h¬i ngç ng­îc. \n. §¸nh b¹i 8"..MU_GetColoredText("L·o béc", "green").."\n. §¸nh b¹i"..MU_GetColoredText("Eldest Young Lady", "green"),
 	MU_GetColoredText("Liªn Hoµn Sµo. Tµng KiÕm s¬n trang", "gold").."\n Trong Cöu Cung ®Æt 9 ®Ønh l­ h­¬ng cã ch¹m træ Tam s¾c kú th¹ch, tr·i qua nhiÒu ®êi ®­îc ng­ng kÕt bëi tia löa vµ khãi ®óc kiÕm ë s¬n trang. §õng nh×n vÎ ngoµi mµ xem th­êng! ChØ cÇn cã ng­êi ngang nhiªn ®ét nhËp vµo, Tam s¾c kú th¹ch sÏ ph¸t huy ma lùc. \n . Lµm bÓ"..MU_GetColoredText("L­ h­¬ng", "green").."\n. §¸nh b¹i"..MU_GetColoredText("???", "green"),
 	MU_GetColoredText("Tµng KiÕm C¸c. Tµng KiÕm s¬n trang", "gold").."\n N¬i ®©y ®· tµng gi÷ v« sè ®ao kiÕm cã gi¸ trÞ liªn thµnh. \n §Æc biÖt lµ c¸c lo¹i vò khÝ thuéc hÖ ngò hµnh. \n Rót vò khÝ ra ®¸nh b¹i"..MU_GetColoredText("B¶o vÖ ngò hµnh", "green").."\n VÞ huynh ®Ö nµo cã thÓ thö søc \n ®¸nh b¹i"..MU_GetColoredText("Tr­ëng l·o Tµng KiÕm C¸c", "green"),
 	MU_GetColoredText("Tµng KiÕm s¬n trang. Tö Tróc L©m", "gold").."\n Nghe nãi chèn nµy vèn lµ n¬i tró ngô cña mét vÞ tiªn nh©n, tæng céng 16 ph­¬ng vÞ, ®Òu cã Kh¾c Ên phï, dÔ vµo khã ra. \n NÕu c¸c vÞ cã thÓ ra ®­îc, l·o phu sÏ dÉn ®­êng ®Õn KiÕm Trñng. \n ®i t×m vµ"..MU_GetColoredText("Sø gi¶ Tµng KiÕm", "green").." ®èi tho¹i .",
@@ -1907,9 +1907,9 @@ function GS_EnterCheck()
 -------------------------------------
 	if TM_IsCaptain() == 1 then
 		nCheckPoint[1] = 1
-		GS_TeamLeaderTxt = "<color=green>§éi tr­ëng<color>"
+		GS_TeamLeaderTxt = "<color=green>Team Leader<color>"
 	else
-		GS_TeamLeaderTxt = "<color=red>§éi tr­ëng<color>"
+		GS_TeamLeaderTxt = "<color=red>Team Leader<color>"
 	end
 -------------------------------------
 	local nTeamSize = GetTeamSize()
@@ -2333,8 +2333,8 @@ end
 	-- Íæ¼Ò²é¿´ÒÑ¾­±»Ê¹ÓÃµÄ³¡µØÊ±µÄ½çÃæÏÔÊ¾
 	function GS_ViewZone(nZone)
 		--local sBNum = {"Ò¼", "·¡", "Èþ", "ËÁ", "Îé", "Â½", "Æâ", "°Æ", "¾Á", "Áã", "??"}
-		local sBNum = {"mét", "hai", "ba", "bèn", "Ngò ", "s¸u", "b¶y", "t¸m", "chÝn", "0", "??"}
-		local sSNam = {"S¬n m«n", "§¹i viÖn", "HËu hoa viªn", "Liªn Hoµn Sµo", "Tµng KiÕm c¸c", "????", "????", "Tö Tróc l©m", "KiÕm Chñng", "????", "????"}
+		local sBNum = {"mét", "hai", "ba", "ben", "Wu", "six", "seven", "eight", "nine", "0", "??"}
+		local sSNam = {"Mountain Gate", "Great Hall", "Rear Garden", "Lianhuan Stronghold", "Tµng KiÕm c¸c", "????", "????", "Tö Tróc l©m", "KiÕm Chñng", "????", "????"}
 		local Temp = TC_STAGE_Index[nZone]
 		local Temp2 = ""
 		local Temp3 = 0

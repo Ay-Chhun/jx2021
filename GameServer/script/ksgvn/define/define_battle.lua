@@ -3,8 +3,8 @@ Import("\\script\\ksgvn\\constants.lua")
 g_tbBattleTitleCfg = {
     [3] = "§« Thèng",
     [4] = "Tiªn Phong",
-    [5] = "T­íng Qu©n",
-    [6] = "Nguyªn So¸i",
+    [5] = "General",
+    [6] = "Marshal",
     [7] = "Nguyªn So¸i VÜnh ViÔn",
 }
 g_tbBattleCamps = {

@@ -57,10 +57,10 @@ T_CK_TASK_LIST = {
 	[1102] = {0, "C­íp tiªu", {"Hoµn thµnh 1 lÇn nhiÖm vô c­íp tiªu", "§Õn b¶n ®å thÕ lùc chç NPC Tiªu §Çu TrÊn ViÔn Tiªu Côc ®Ó nhËn nhiÖm vô ®o¹t tiªu"}, {5000000, 18, nil, CK_EXT_AWARD}, {8, 4, 5, 6}},
 	[1103] = {0, "Thu thËp Ngäc Ph¸ch", {"Thu thËp 1 Ngäc Ph¸ch", "§Õn Th¸i H­ Cæ Thô cña thÕ lùc trång 1 h¹t gièng, thu thËp 1 Ngäc Ph¸ch"}, {5000000, 18, nil, CK_EXT_AWARD}, {8, 7, 8, 9}},
 	[1104] = {0, "Trém Ngäc Ph¸ch", {"§Õn thÕ lùc kh¸c trém 1 Ngäc Ph¸ch", "Vµo b¶n ®å thÕ lùc kh¸c ®Ó trém 1 Ngäc Ph¸ch"}, {5000000, 18, nil, CK_EXT_AWARD}, {8, 10, 11, 12}},
-	[1105] = {0, "T©y Vùc TruyÒn §¹o", {"Tham gia tÝnh n¨ng T©y Vùc TruyÒn §¹o, nhÊp vµo 3 th¸nh vËt ®Ó nhËn th­ëng", "Vµo b¶n ®å thÕ lùc tham gia tÝnh n¨ng T©y Vùc TruyÒn §¹o, nhÊp vµo 3 th¸nh vËt ®Ó nhËn th­ëng"}, {5000000, 18, nil, CK_EXT_AWARD}, {8, 13, 14, 15}},
+	[1105] = {0, "Western Region Preaching", {"Tham gia tÝnh n¨ng T©y Vùc TruyÒn §¹o, nhÊp vµo 3 th¸nh vËt ®Ó nhËn th­ëng", "Vµo b¶n ®å thÕ lùc tham gia tÝnh n¨ng T©y Vùc TruyÒn §¹o, nhÊp vµo 3 th¸nh vËt ®Ó nhËn th­ëng"}, {5000000, 18, nil, CK_EXT_AWARD}, {8, 13, 14, 15}},
 	[1106] = {0, "BOSS ThÕ Lùc", {"NhËn b¶o vÖ BOSS cña thÕ lùc vµ tiªu diÖt BOSS cña thÕ lùc phe ®Þch ®Ó nhËn ®­îc phÇn th­ëng", "Buæi tèi sÏ xuÊt hiÖn BOSS cña thÕ lùc phe ta hoÆc phe ®Þch, b¶o vÖ BOSS cña phe ta vµ tiªu diÖt BOSS cña phe ®Þch sÏ nhËn ®­îc phÇn th­ëng"}, {5000000, 18, nil, CK_EXT_AWARD}, {8, 16, 17, 18}},
 	[1107] = {0, "Thî S¨n TiÒn Th­ëng", {"Hoµn thµnh 1 lÇn nhiÖm vô Thî S¨n TiÒn Th­ëng", "Hoµn thµnh 1 lÇn nhiÖm vô Thî S¨n TiÒn Th­ëng"}, {5000000, 18, nil, CK_EXT_AWARD}, {8, 19, 20, 21}},
-	[1108] = {0, "NhiÖm vô §µo Kho B¸u", {"Hoµn thµnh 1 lÇn nhiÖm vô §µo Kho B¸u", "Vµo thÕ lùc nhËn 1 Tµng B¶o §å, hoµn thµnh 1 lÇn nhiÖm vô §µo Kho B¸u"}, {5000000, 18, nil, CK_EXT_AWARD}, {8, 22, 23, 24}},
+	[1108] = {0, "Treasure Digging Mission", {"Hoµn thµnh 1 lÇn nhiÖm vô §µo Kho B¸u", "Vµo thÕ lùc nhËn 1 Tµng B¶o §å, hoµn thµnh 1 lÇn nhiÖm vô §µo Kho B¸u"}, {5000000, 18, nil, CK_EXT_AWARD}, {8, 22, 23, 24}},
 	
 	--°ÙÕ½²»´ù ¸±±¾ÈÎÎñ
 --	[1201] = {},
@@ -83,14 +83,14 @@ T_CK_TASK_LIST = {
 	[2103] = {0, "Nép ®iÓm cèng hiÕn bang héi", {"Tham gia tÝnh n¨ng Bang Héi Vinh Danh, giao nép 10 ®iÓm cèng hiÕn bang héi", "Tham gia tÝnh n¨ng Bang Héi Vinh Danh, giao nép 10 ®iÓm cèng hiÕn bang héi"}, {8000000, 100}, {9, 0, 3, 4}},
 	[2104] = {0, "NhËn phÇn th­ëng Bang Héi Vinh Danh", {"NhËn phÇn th­ëng Bang Héi Vinh Danh", "Tham gia tÝnh n¨ng Bang Héi Vinh Danh vµ nhËn phÇn th­ëng"}, {10000000, 300}, {9, 0, 5, 6}},
 	
-	[2201] = {0, "ThÎ Th¸ng", {"KÝch ho¹t 1 thÎ th¸ng", "KÝch ho¹t thÎ th¸ng, ch¬i trß ch¬i nhÑ nhµng h¬n"}, {5000000, 1200}, {10, 0, _ck_check_yueka, 1}},
-	[2202] = {0, "Gia nhËp thÕ lùc", {"Gia nhËp 1 thÕ lùc trong ba phe", "Gia nhËp 1 thÕ lùc trong ba phe"}, {5000000, 300}, {10, 0, _ck_check_shili, 2}},
+	[2201] = {0, "Monthly Card", {"KÝch ho¹t 1 thÎ th¸ng", "KÝch ho¹t thÎ th¸ng, ch¬i trß ch¬i nhÑ nhµng h¬n"}, {5000000, 1200}, {10, 0, _ck_check_yueka, 1}},
+	[2202] = {0, "Join a faction", {"Join 1 of the three factions", "Join 1 of the three factions"}, {5000000, 300}, {10, 0, _ck_check_shili, 2}},
 	[2203] = {0, "VËn tiªu", {"Hoµn thµnh 1 lÇn vËn tiªu", "Vµo thÕ lùc nhËn nhiÖm vô vËn tiªu, hoµn thµnh 1 lÇn vËn tiªu"}, {5000000, 600}, {10, 0, 3, 4}},
 	[2204] = {0, "C­íp tiªu", {"Hoµn thµnh 1 lÇn c­íp tiªu", "Vµo thÕ lùc nhËn nhiÖm vô c­íp tiªu, hoµn thµnh 1 lÇn c­íp tiªu"}, {5000000, 600}, {10, 0, 5, 6}},
-	[2205] = {0, "Trång c©y", {"Hoµn thµnh 1 lÇn nhiÖm vô trång c©y", "Vµo thÕ lùc chç C©y Th¸i H­ hoµn thµnh 1 lÇn nhiÖm vô trång c©y"}, {5000000, 600}, {10, 0, 7, 8}},
+	[2205] = {0, "Plant a tree", {"Hoµn thµnh 1 lÇn nhiÖm vô trång c©y", "Vµo thÕ lùc chç C©y Th¸i H­ hoµn thµnh 1 lÇn nhiÖm vô trång c©y"}, {5000000, 600}, {10, 0, 7, 8}},
 	[2206] = {0, "§µo r­¬ng", {"Hoµn thµnh 1 lÇn nhiÖm vô ®µo r­¬ng", "Hoµn thµnh 1 lÇn nhiÖm vô ®µo r­¬ng"}, {5000000, 600}, {10, 0, 9, 10}},
 	[2207] = {0, "Thî S¨n TiÒn Th­ëng", {"Hoµn thµnh 1 lÇn nhiÖm vô Thî S¨n TiÒn Th­ëng", "Hoµn thµnh 1 lÇn nhiÖm vô Thî S¨n TiÒn Th­ëng"}, {5000000, 600}, {10, 0, 11, 12}},
-	[2208] = {0, "T©y Vùc TruyÒn §¹o", {"Dïng 1 ®¹o cô bÊt kú sau ®©y: Kim L¨ng Töu, Tµng KiÕm BÝ TruyÒn T©m Kinh, B¸ch HiÓu Sinh BÝ Ph¸p", "Tham gia tÝnh n¨ng T©y Vùc TruyÒn §¹o, sö dông 1 ®¹o cô bÊt kú sau ®©y: Kim L¨ng Töu, Tµng KiÕm BÝ TruyÒn T©m Kinh, B¸ch HiÓu Sinh BÝ Ph¸p"}, {5000000, 600}, {10, 0, 13, 14}},
+	[2208] = {0, "Western Region Preaching", {"Dïng 1 ®¹o cô bÊt kú sau ®©y: Kim L¨ng Töu, Tµng KiÕm BÝ TruyÒn T©m Kinh, B¸ch HiÓu Sinh BÝ Ph¸p", "Tham gia tÝnh n¨ng T©y Vùc TruyÒn §¹o, sö dông 1 ®¹o cô bÊt kú sau ®©y: Kim L¨ng Töu, Tµng KiÕm BÝ TruyÒn T©m Kinh, B¸ch HiÓu Sinh BÝ Ph¸p"}, {5000000, 600}, {10, 0, 13, 14}},
 }
 
 --ÈÎÎñ×éÁÐ±í,ÓÃÓÚÉú³ÉÈÎÎñ¶Ô»°
@@ -104,10 +104,10 @@ T_CK_TASK_GROUP_LIST = {
 		},
 	},
 	[2] = {
-		"Tèc ChiÕn Tèc Th¾ng", {2, "Trong thêi gian ho¹t ®éng chØ hoµn thµnh 1 lÇn, nhËn ®­îc nhiÒu EXP vµ ®é n¨ng ®éng!"},
+		"Swift Battle Swift Victory", {2, "Trong thêi gian ho¹t ®éng chØ hoµn thµnh 1 lÇn, nhËn ®­îc nhiÒu EXP vµ ®é n¨ng ®éng!"},
 		{
 			[1] = {"NhiÖm vô bang héi", 0, {2101,2102,2103,2104}}, --ËÙÕ½ËÙ¾ö-°ï»áÈÎÎñ
-			[2] = {"NhiÖm vô h­íng dÉn", 0, {2201,2202,2203,2204,2205,2206,2207,2208}}, --ËÙÕ½ËÙ¾ö-Ö¸ÒýÈÎÎñ
+			[2] = {"Tutorial Mission", 0, {2201,2202,2203,2204,2205,2206,2207,2208}}, --ËÙÕ½ËÙ¾ö-Ö¸ÒýÈÎÎñ
 		},
 	},
 }
@@ -186,7 +186,7 @@ function ck_task_group_talk1(nMainIndex)
 	
 	local t = T_CK_TASK_GROUP_LIST[nMainIndex]
 	local tSay = {}
-	local szTitle = format("<color=gold>%s<color>%s, %s", t[1], "NhiÖm vô", t[2][2])
+	local szTitle = format("<color=gold>%s<color>%s, %s", t[1], "Mission", t[2][2])
 	for i, tTaskGroup in T_CK_TASK_GROUP_LIST[nMainIndex][3] do
 		tinsert(tSay, format("%s/#ck_task_group_talk2(%d, %d)", tTaskGroup[1], nMainIndex, i))
 	end
@@ -474,11 +474,11 @@ CK_TASK_FORWARD = {
 
 --°ÙÕ½²»´ùÉ±¹ÖÈÎÎñ
 CK_TASK_BZ_KILL = {
-	[1] = {"Quay VÒ Chèn Cò", 234},
-	[2] = {"Quay VÒ Chèn Cò", 235},
-	[3] = {"Quay VÒ Chèn Cò", 236},
-	[4] = {"Quay VÒ Chèn Cò", 237},
-	[5] = {"Quay VÒ Chèn Cò", 238},
+	[1] = {"Return to the Old Place", 234},
+	[2] = {"Return to the Old Place", 235},
+	[3] = {"Return to the Old Place", 236},
+	[4] = {"Return to the Old Place", 237},
+	[5] = {"Return to the Old Place", 238},
 }
 
 --°ÙÕ½²»´ù¸±±¾ÈÎÎñ(×î¶à5¸ö)
@@ -504,12 +504,12 @@ CK_TASK_BZ_PVP = {
 
 --ÊýÖµÀÛ¼ÆÈÎÎñ
 CK_TASK_ZILON_ATRR = {
-	[1] = {"Gia nhËp giang hå", {0, 90, 2000, 2000, 10000}, {5000000, 100}},
+	[1] = {"Join the martial world", {0, 90, 2000, 2000, 10000}, {5000000, 100}},
 	[2] = {"TiÓu H÷u Së Thµnh", {0, 99, 3000, 3000, 20000}, {8000000, 200}},
 	[3] = {"S¬ xuÊt mao l­", {1, 90, 6000, 6000, 40000}, {11000000, 300}},
-	[4] = {"S¬ XuÊt Mao L«", {2, 90, 8000, 8000, 80000}, {14000000, 400}},
-	[5] = {"§¹i Lang §µo Sa", {3, 90, 10000, 10000, 120000}, {17000000, 500}},
-	[6] = {"TiÓu H÷u Danh KhÝ", {4, 90, 12000, 12000, 180000}, {20000000, 600}},
+	[4] = {"First Show of Talent", {2, 90, 8000, 8000, 80000}, {14000000, 400}},
+	[5] = {"Great Wave Washing the Sand", {3, 90, 10000, 10000, 120000}, {17000000, 500}},
+	[6] = {"Little Fame", {4, 90, 12000, 12000, 180000}, {20000000, 600}},
 	[7] = {"Tr¸ng ChÝ L¨ng V©n", {5, 90, 15000, 15000, 250000}, {23000000, 1200}},
 	[8] = {"KhÝ tr¸ng hµ s¬n", {6, 90, 16000, 16000, 280000}, {32000000, 1600}},
 }
@@ -519,14 +519,14 @@ CK_TASK_ZILON_ATRR_BEGIN = 1
 CK_TASK_IB_COST = {
 	--[1] = {"²ÆÔ´¹ö¹ö", 5,   {12500000, 150}},
 	--[2] = {"½ðÓñÂúÌÃ", 25,   {25000000, 300}},
-	[1] = {"Phong Y Tóc Thùc", 5,   {12500000, 150}},
-	[2] = {"Uy Phong B¸t DiÖn", 25,  {25000000, 300}},
-	[3] = {"Kinh tÕ gia ®×nh", 50,  {37500000, 450}},	
-	[4] = {"§¹i Phó §¹i Quý", 100, {50000000, 900}},
-	[5] = {"Tµi §¹i KhÝ Th«", 200, {62500000, 1100}},
+	[1] = {"Clothed in Silk, Fed in Plenty", 5,   {12500000, 150}},
+	[2] = {"Mighty Presence on All Sides", 25,  {25000000, 300}},
+	[3] = {"Family Economy", 50,  {37500000, 450}},	
+	[4] = {"Great Wealth and Honor", 100, {50000000, 900}},
+	[5] = {"Great Talent Late to Mature", 200, {62500000, 1100}},
 	[6] = {"Gia Tµi V¹n Qu¸n", 300, {75000000, 1300}},
-	[7] = {"Giµu cã thiªn h¹", 400, {100000000, 1500}},
-	[8] = {"Phó Kh¶ §Þch Quèc", 500, {125000000, 1800}},
+	[7] = {"Wealthy Across the Land", 400, {100000000, 1500}},
+	[8] = {"Riches Rivaling the Nation", 500, {125000000, 1800}},
 }
 CK_TASK_IB_COST_BEGIN = getn(CK_TASK_ZILON_ATRR)+1
 
@@ -573,125 +573,125 @@ CK_YAOYANG_JIEZI_2 = {
 }
 
 CK_4_LEVEL_YUNLING = {
-	{"H-LiÖt Nham-Lv4", {0, 148, 53, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"H-Ph¸ Kh«ng-Lv4", {0, 148, 54, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"H-Fierce Cliff-Lv4", {0, 148, 53, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"H-Sky Breaking-Lv4", {0, 148, 54, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"H-Tóy KiÕm-Lv4", {0, 148, 55, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"H-TËt Phong-Lv4", {0, 148, 56, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"H-TÊn Vò-Lv4", {0, 148, 57, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"H-¦ng TËp-Lv4", {0, 148, 58, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"H-Swift Wind-Lv4", {0, 148, 56, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"H-Frost Dance-Lv4", {0, 148, 57, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"H-Eagle Strike-Lv4", {0, 148, 58, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"H-Linh T©m-Lv4", {0, 148, 59, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"H-ThÇn Lùc-Lv4", {0, 148, 60, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"H-Ng­ng ThÇn-Lv4", {0, 148, 61, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"H-V« Gian-Lv4", {0, 148, 62, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"H-V« Cùc-Lv4", {0, 148, 63, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"H-No Gap-Lv4", {0, 148, 62, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"H-No Limit-Lv4", {0, 148, 63, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"H-Cuång NhÉn-Lv4", {0, 148, 64, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"H-L¨ng NhuÖ-Lv4", {0, 148, 65, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"H-Sharp Edge-Lv4", {0, 148, 65, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"H-Linh Viªn-Lv4", {0, 148, 66, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"H-H¶i VËn-Lv4", {0, 148, 67, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"H-Sea Fortune-Lv4", {0, 148, 67, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"H-H¶i T©m-Lv4", {0, 148, 68, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"C-LiÖt Nham-Lv4", {0, 149, 53, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"C-Ph¸ Kh«ng-Lv4", {0, 149, 54, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"C-Liet Nham-Lv4", {0, 149, 53, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"C-Pha Khong-Lv4", {0, 149, 54, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"C-Tóy KiÕm-Lv4", {0, 149, 55, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"C-TËt Phong-Lv4", {0, 149, 56, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"C-TÊn Vò-Lv4", {0, 149, 57, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"C-Tat Phong-Lv4", {0, 149, 56, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"C-Tan Vu-Lv4", {0, 149, 57, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"C-Qu¸n Th¹ch-Lv4", {0, 149, 58, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"C-Né Ng©m-Lv4", {0, 149, 59, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"C-No Ngam-Lv4", {0, 149, 59, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"C-Xuyªn V©n-Lv4", {0, 149, 60, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"C-ThÇn Lùc-Lv4", {0, 149, 61, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"C-Ng­ng ThÇn-Lv4", {0, 149, 62, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"C-V« Gian-Lv4", {0, 149, 63, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"C-V« Cùc-Lv4", {0, 149, 64, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"C-Vo Gian-Lv4", {0, 149, 63, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"C-Vo Cuc-Lv4", {0, 149, 64, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"C-Cuång NhÉn-Lv4", {0, 149, 65, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"C-L¨ng NhuÖ-Lv4", {0, 149, 66, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"C-Lang Nhue-Lv4", {0, 149, 66, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"C-Linh Viªn-Lv4", {0, 149, 67, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"C-H¶i VËn-Lv4", {0, 149, 68, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"C-Hai Van-Lv4", {0, 149, 68, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"C-H¶i T©m-Lv4", {0, 149, 69, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-LiÖt Nham-Lv4", {0, 150, 53, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-Ph¸ Kh«ng-Lv4", {0, 150, 54, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Fierce Cliff-Lv4", {0, 150, 53, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Sky Breaking-Lv4", {0, 150, 54, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"T-Tóy KiÕm-Lv4", {0, 150, 55, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-TËt Phong-Lv4", {0, 150, 56, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-TÊn Vò-Lv4", {0, 150, 57, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-V« L­îng-Lv4", {0, 150, 58, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-Môc Minh-Lv4", {0, 150, 59, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Swift Wind-Lv4", {0, 150, 56, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Frost Dance-Lv4", {0, 150, 57, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Boundless-Lv4", {0, 150, 58, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Eye Closing-Lv4", {0, 150, 59, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"T-ThÇn Lùc-Lv4", {0, 150, 60, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"T-Ng­ng ThÇn-Lv4", {0, 150, 61, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-V« Gian-Lv4", {0, 150, 62, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-V« Cùc-Lv4", {0, 150, 63, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-No Gap-Lv4", {0, 150, 62, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Vo Cuc-Lv4", {0, 150, 63, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"T-Cuång NhÉn-Lv4", {0, 150, 64, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-L¨ng NhuÖ-Lv4", {0, 150, 65, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Lang Nhue-Lv4", {0, 150, 65, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"T-Linh Viªn-Lv4", {0, 150, 66, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-H¶i VËn-Lv4", {0, 150, 67, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Hai Van-Lv4", {0, 150, 67, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"T-H¶i T©m-Lv4", {0, 150, 68, 1, 4, -1, -1, -1, -1, -1, -1}},
 }
 
 CK_5_LEVEL_YUNLING = {
-	{"H-LiÖt Nham-Lv5", {0, 148, 69, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"H-Ph¸ Kh«ng-Lv5", {0, 148, 70, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"H-Liet Nham-Lv5", {0, 148, 69, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"H-Pha Khong-Lv5", {0, 148, 70, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"H-Tóy KiÕm-Lv5", {0, 148, 71, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"H-TËt Phong-Lv5", {0, 148, 72, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"H-TÊn Vò-Lv5", {0, 148, 73, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"H-¦ng TËp-Lv5", {0, 148, 74, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"H-Tat Phong-Lv5", {0, 148, 72, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"H-Tan Vu-Lv5", {0, 148, 73, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"H-Ung Tap-Lv5", {0, 148, 74, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"H-Linh T©m-Lv5", {0, 148, 75, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"H-ThÇn Lùc-Lv5", {0, 148, 76, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"H-Ng­ng ThÇn-Lv5", {0, 148, 77, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"H-V« Gian-Lv5", {0, 148, 78, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"H-V« Cùc-Lv5", {0, 148, 79, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"H-Vo Gian-Lv5", {0, 148, 78, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"H-Vo Cuc-Lv5", {0, 148, 79, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"H-Cuång NhÉn-Lv5", {0, 148, 80, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"H-L¨ng NhuÖ-Lv5", {0, 148, 81, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"H-Lang Nhue-Lv5", {0, 148, 81, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"H-Linh Viªn-Lv5", {0, 148, 82, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"H-H¶i VËn-Lv5", {0, 148, 83, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"H-Hai Van-Lv5", {0, 148, 83, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"H-H¶i T©m-Lv5", {0, 148, 84, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"C-LiÖt Nham-Lv5", {0, 149, 70, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"C-Ph¸ Kh«ng-Lv5", {0, 149, 71, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"C-Liet Nham-Lv5", {0, 149, 70, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"C-Pha Khong-Lv5", {0, 149, 71, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"C-Tóy KiÕm-Lv5", {0, 149, 72, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"C-TËt Phong-Lv5", {0, 149, 73, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"C-TÊn Vò-Lv5", {0, 149, 74, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"C-Tat Phong-Lv5", {0, 149, 73, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"C-Tan Vu-Lv5", {0, 149, 74, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"C-Qu¸n Th¹ch-Lv5", {0, 149, 75, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"C-Né Ng©m-Lv5", {0, 149, 76, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"C-No Ngam-Lv5", {0, 149, 76, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"C-Xuyªn V©n-Lv5", {0, 149, 77, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"C-ThÇn Lùc-Lv5", {0, 149, 78, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"C-Ng­ng ThÇn-Lv5", {0, 149, 79, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"C-V« Gian-Lv5", {0, 149, 80, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"C-V« Cùc-Lv5", {0, 149, 81, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"C-Vo Gian-Lv5", {0, 149, 80, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"C-Vo Cuc-Lv5", {0, 149, 81, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"C-Cuång NhÉn-Lv5", {0, 149, 82, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"C-L¨ng NhuÖ-Lv5", {0, 149, 83, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"C-Lang Nhue-Lv5", {0, 149, 83, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"C-Linh Viªn-Lv5", {0, 149, 84, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"C-H¶i VËn-Lv5", {0, 149, 85, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"C-Hai Van-Lv5", {0, 149, 85, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"C-H¶i T©m-Lv5", {0, 149, 86, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-LiÖt Nham-Lv5", {0, 150, 69, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-Ph¸ Kh«ng-Lv5", {0, 150, 70, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Liet Nham-Lv5", {0, 150, 69, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Pha Khong-Lv5", {0, 150, 70, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"T-Tóy KiÕm-Lv5", {0, 150, 71, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-TËt Phong-Lv5", {0, 150, 72, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-TÊn Vò-Lv5", {0, 150, 73, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-V« L­îng-Lv5", {0, 150, 74, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-Môc Minh-Lv5", {0, 150, 75, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Tat Phong-Lv5", {0, 150, 72, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Tan Vu-Lv5", {0, 150, 73, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Vo Luong-Lv5", {0, 150, 74, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Muc Minh-Lv5", {0, 150, 75, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"T-ThÇn Lùc-Lv5", {0, 150, 76, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"T-Ng­ng ThÇn-Lv5", {0, 150, 77, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-V« Gian-Lv5", {0, 150, 78, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-V« Cùc-Lv5", {0, 150, 79, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Vo Gian-Lv5", {0, 150, 78, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Vo Cuc-Lv5", {0, 150, 79, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"T-Cuång NhÉn-Lv5", {0, 150, 80, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-L¨ng NhuÖ-Lv5", {0, 150, 81, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Lang Nhue-Lv5", {0, 150, 81, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"T-Linh Viªn-Lv5", {0, 150, 82, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-H¶i VËn-Lv5", {0, 150, 83, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Hai Van-Lv5", {0, 150, 83, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"T-H¶i T©m-Lv5", {0, 150, 84, 1, 4, -1, -1, -1, -1, -1, -1}},
 }
 
 CK_6_LEVEL_YUNLING = {
-	{"T-LiÖt Nham-Lv6", {0, 150,	85, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-Ph¸ Kh«ng-Lv6", {0, 150,	86, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Liet Nham-Lv6", {0, 150,	85, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Pha Khong-Lv6", {0, 150,	86, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"T-Tóy KiÕm-Lv6", {0, 150,	87, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-TËt Phong-Lv6", {0, 150,	88, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-TÊn Vò-Lv6", {0, 150,	89, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-V« L­îng-Lv6", {0, 150,	90, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-Môc Minh-Lv6", {0, 150,	91, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Tat Phong-Lv6", {0, 150,	88, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Tan Vu-Lv6", {0, 150,	89, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Vo Luong-Lv6", {0, 150,	90, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Muc Minh-Lv6", {0, 150,	91, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"T-ThÇn Lùc-Lv6", {0, 150,	92, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"T-Ng­ng ThÇn-Lv6", {0, 150,	93, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-V« Gian-Lv6", {0, 150,	94, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-V« Cùc-Lv6", {0, 150,	95, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Vo Gian-Lv6", {0, 150,	94, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Vo Cuc-Lv6", {0, 150,	95, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"T-Cuång NhÉn-Lv6", {0, 150,	96, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-L¨ng NhuÖ-Lv6", {0, 150,	97, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Lang Nhue-Lv6", {0, 150,	97, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"T-Linh Viªn-Lv6", {0, 150,	98, 1, 4, -1, -1, -1, -1, -1, -1}},
-	{"T-H¶i VËn-Lv6", {0, 150,	99, 1, 4, -1, -1, -1, -1, -1, -1}},
+	{"T-Hai Van-Lv6", {0, 150,	99, 1, 4, -1, -1, -1, -1, -1, -1}},
 	{"T-H¶i T©m-Lv6", {0, 150,100, 1, 4, -1, -1, -1, -1, -1, -1}},
 }
 
@@ -1258,7 +1258,7 @@ CK_SCROE_AWARD_TABLE = {
 		{900, 5000000, 100, 100, 1000, 10000},
 		--{"select","Ó¢ÐÛÑ«ÕÂ", {2,1,30499,4}},
 		--{"item", "Ó¢ÐÛÑ«ÕÂ", {2,1,30499,4}},
-		{"func", "§¶ th«ng c¶nh giíi Vâ HiÒn", award_wuzhe},
+		{"func", "Reached the realm of Martial Sage", award_wuzhe},
 	},
 	[2] = {
 		--score, EXP ÉùÍûÖµ Ê¦ÃÅÖµ ¾ü¹¦Öµ ÕæÆø
@@ -1269,13 +1269,13 @@ CK_SCROE_AWARD_TABLE = {
 	[3] = {
 		--score, EXP ÉùÍûÖµ Ê¦ÃÅÖµ ¾ü¹¦Öµ ÕæÆø
 		{1300, 12000000, 220, 220, 1800, 20000},
-		{"func", "§¶ th«ng c¶nh giíi Vâ T­íng", award_wujiang},
+		{"func", "Break through to the War General realm", award_wujiang},
 	},
 	[4] = {
 		--score, EXP ÉùÍûÖµ Ê¦ÃÅÖµ ¾ü¹¦Öµ ÕæÆø
 		{1700, 15000000, 280, 280, 2200, 0},
 		{"item", "Ma Tinh", {2,1,30497,500,4}},
-		{"item", "L¨ng Ba Vi Bé", {0,112,78,1}},
+		{"item", "Lingbo Microstep", {0,112,78,1}},
 	},
 	[5] = {
 		--score, EXP ÉùÍûÖµ Ê¦ÃÅÖµ ¾ü¹¦Öµ ÕæÆø
@@ -1296,7 +1296,7 @@ CK_SCROE_AWARD_TABLE = {
 		--score, EXP ÉùÍûÖµ Ê¦ÃÅÖµ ¾ü¹¦Öµ ÕæÆø
 		{3100, 30000000, 520, 520, 3800, 0},
 		{"func", "§¸ quý cÊp 1*20", award_random_gem1_2},
-		{"func", "UÈn Linh CÊp 4", award_yunling4},
+		{"func", "Yun Ling Level 4", award_yunling4},
 	},
 	[9] = {
 		--score, EXP ÉùÍûÖµ Ê¦ÃÅÖµ ¾ü¹¦Öµ ÕæÆø
@@ -1307,28 +1307,28 @@ CK_SCROE_AWARD_TABLE = {
 		--score, EXP ÉùÍûÖµ Ê¦ÃÅÖµ ¾ü¹¦Öµ ÕæÆø
 		{4000, 34000000, 580, 580, 4200, 0},
 		{"func", "Non chiÕn cuång+9", award_zhankuangtou},
-		{"func", "§iÓm cèng hiÕn bang", award_tongscore,{100}},
+		{"func", "Guild Contribution Points", award_tongscore,{100}},
 	},
 	[11] = {
 		--score, EXP ÉùÍûÖµ Ê¦ÃÅÖµ ¾ü¹¦Öµ ÕæÆø
 		{5000, 36000000, 580, 580, 4200, 0},
 		{"func", "¸o chiÕn cuång+9", award_zhankuangyi},
 		{"func", "§¸ quý cÊp 2 *12", award_random_gem2_2},
-		{"func", "§iÓm cèng hiÕn bang", award_tongscore,{200}},
+		{"func", "Guild Contribution Points", award_tongscore,{200}},
 	},
 	[12] = {
 		--score, EXP ÉùÍûÖµ Ê¦ÃÅÖµ ¾ü¹¦Öµ ÕæÆø
 		{6000, 38000000, 580, 580, 4200, 0},
 		{"func", "QuÇn chiÕn cuång+9", award_zhankuangku},
-		{"func", "§iÓm cèng hiÕn bang", award_tongscore,{300}},
+		{"func", "Guild Contribution Points", award_tongscore,{300}},
 	},
 	[13] = {
 		--score, EXP ÉùÍûÖµ Ê¦ÃÅÖµ ¾ü¹¦Öµ ÕæÆø
 		{7000, 40000000, 580, 580, 4200, 0},
-		{"item", "HiÖp NghÜa Chi Chøng", {2, 1, 30912, 400, 4}},
+		{"item", "Token of Chivalry", {2, 1, 30912, 400, 4}},
 		{"item", "Linh §å Giíi (tr¸i)", {0, 102, 30221, 1, 4}},
 		{"item", "Linh §å Giíi (ph¶i)", {0, 102, 30222, 1, 4}},
-		{"func", "UÈn Linh CÊp 5", award_yunling5},
+		{"func", "Yun Ling Level 5", award_yunling5},
 --		{"select", "ºÏ³É²ÄÁÏ£¨3Ñ¡1£©",
 --			{
 --				{"item", "Ä§ÀÇÆ¤", {2, 1, 30672, 50, 4}},
@@ -1350,14 +1350,14 @@ CK_SCROE_AWARD_TABLE = {
 			},
 		},
 		--{"func", "Danh hiÖu bang héi cÊp 3", award_tong_title3},
-		{"item", "§ång TÕ Chi NguyÖn", {2,1,30913,21,4}},
+		{"item", "Vow of the Same Will", {2,1,30913,21,4}},
 	},
 	[15] = {
 		--score, EXP ÉùÍûÖµ Ê¦ÃÅÖµ ¾ü¹¦Öµ ÕæÆø
 		{9500, 44000000, 580, 580, 4200, 0},
 		{"func", "6 chuyÓn 90 cÊp", award_6zhuan90},
-		{"item", "Tinh Hoa UÈn Linh CÊp 6", {2,1,30668,4, 4}},
-		{"item", "HiÖp NghÜa Chi Chøng", {2, 1, 30912, 400, 4}},
+		{"item", "Spirit Essence Gathering Level 6", {2,1,30668,4, 4}},
+		{"item", "Token of Chivalry", {2, 1, 30912, 400, 4}},
 --		{"select", "ºÏ³É²ÄÁÏ£¨3Ñ¡1£©",
 --			{
 --				{"item", "Ä§ÀÇÆ¤", {2, 1, 30672, 100, 4}},
@@ -1370,9 +1370,9 @@ CK_SCROE_AWARD_TABLE = {
 		--score, EXP ÉùÍûÖµ Ê¦ÃÅÖµ ¾ü¹¦Öµ ÕæÆø
 		{11000, 46000000, 580, 580, 4200, 0},
 		{"func", "§¸ quý cÊp 3*5", award_random_gem3_5},
-		{"item", "Tinh Hoa UÈn Linh CÊp 6", {2,1,30668,6,4}},
-		{"item", "Trøng Linh Thó-Cao", {2,1,30728,1,4}},
-		{"func", "§iÓm cèng hiÕn bang", award_tongscore,{300}},
+		{"item", "Spirit Essence Gathering Level 6", {2,1,30668,6,4}},
+		{"item", "Spirit Beast Egg - High", {2,1,30728,1,4}},
+		{"func", "Guild Contribution Points", award_tongscore,{300}},
 		{"item", "TÝn VËt cÊp 3", {0,155,3,1,4}},
 		{"select", "Trang bÞ Hµo hiÖp(3 chän 1)",
 			{
@@ -1386,8 +1386,8 @@ CK_SCROE_AWARD_TABLE = {
 		--score, EXP ÉùÍûÖµ Ê¦ÃÅÖµ ¾ü¹¦Öµ ÕæÆø
 		{15000, 48000000, 580, 580, 4200, 0},
 		{"func", "§¸ quý cÊp 3*7", award_random_gem3_7},
-		{"item", "Tinh Hoa UÈn Linh CÊp 6", {2,1,30668,8,4}},
-		{"item", "§ång TÕ Chi NguyÖn", {2,1,30913,42,4}},
+		{"item", "Spirit Essence Gathering Level 6", {2,1,30668,8,4}},
+		{"item", "Vow of the Same Will", {2,1,30913,42,4}},
 --		{"select", "ºÏ³É²ÄÁÏ£¨3Ñ¡1£©",
 --			{
 --				{"item", "Ä§ÀÇÆ¤", {2, 1, 30672, 150, 4}},
@@ -1402,7 +1402,7 @@ CK_SCROE_AWARD_TABLE = {
 		{"func", "§¸ quý cÊp 3*9", award_random_gem3_9},
 		--{"func", "Ëæ»ú¹ÒÒÂ", award_guayi},
 		{"item", "ThiÕt tinh cÊp 4", {2, 1, 30612, 10, 4}},
-		{"func", "§iÓm cèng hiÕn bang", award_tongscore,{400}},
+		{"func", "Guild Contribution Points", award_tongscore,{400}},
 		{"select", "V©n Du, ThiÕt Huyªt, ¸o kho¸c Du HiÖp(chän 1 trong 3)",
 			{
 				{"item", "¸o Choµng V©n Du", {0, 152, 28, 1, 4,-1,-1,-1,-1,-1,-1,-1,7}},
@@ -1424,12 +1424,12 @@ CK_SCROE_AWARD_TABLE = {
 		{"func", "§¸ quý cÊp 4*3", award_random_gem4_3},
 		--{"func", "Ëæ»ú»ÕÕÂ", award_huizhang},
 		{"item", "ThiÕt tinh cÊp 4", {2, 1, 30612, 20, 4}},
-		{"func", "§iÓm cèng hiÕn bang", award_tongscore,{500}},
+		{"func", "Guild Contribution Points", award_tongscore,{500}},
 		{"select", "V©n Du, ThiÕt HuyÕt, Huy ch­¬ng Du HiÖp(chän 1 trong 3)",
 			{
 				{"item", "Huy Ch­¬ng V©n Du", {0, 153, 28, 1, 4,-1,-1,-1,-1,-1,-1,-1,7}},
-				{"item", "Huy Ch­¬ng ThiÕt HuyÕt", {0, 153, 27, 1, 4,-1,-1,-1,-1,-1,-1,-1,7}},
-				{"item", "Huy Ch­¬ng Du HiÖp", {0, 153, 26, 1, 4,-1,-1,-1,-1,-1,-1,-1,7}},
+				{"item", "Iron Blood Medal", {0, 153, 27, 1, 4,-1,-1,-1,-1,-1,-1,-1,7}},
+				{"item", "Roaming Hero Medal", {0, 153, 26, 1, 4,-1,-1,-1,-1,-1,-1,-1,7}},
 			},
 		},
 --		{"select", "ºÏ³É²ÄÁÏ£¨3Ñ¡1£©",
@@ -1446,12 +1446,12 @@ CK_SCROE_AWARD_TABLE = {
 		{"func", "§¸ Quý CÊp 3-5 (NgÉu nhiªn)", award_gem345_2},
 		--{"func", "Ëæ»ú»ÕÕÂ", award_xie},
 		{"item", "ThiÕt tinh cÊp 4", {2, 1, 30612, 30, 4}},
-		{"func", "§iÓm cèng hiÕn bang", award_tongscore,{600}},
+		{"func", "Guild Contribution Points", award_tongscore,{600}},
 		{"select", "V©n Du, ThiÕt HuyÕt, GiÇy Du HiÖp(chän 1 trong 3)",
 			{
 				{"item", "§¹o Hµi V©n Du", {0, 154, 28, 1, 4,-1,-1,-1,-1,-1,-1,-1,7}},
-				{"item", "ChiÕn Hµi ThiÕt HuyÕt", {0, 154, 27, 1, 4,-1,-1,-1,-1,-1,-1,-1,7}},
-				{"item", "ChiÕn Hµi Du HiÖp", {0, 154, 26, 1, 4,-1,-1,-1,-1,-1,-1,-1,7}},
+				{"item", "Iron Blood Boots", {0, 154, 27, 1, 4,-1,-1,-1,-1,-1,-1,-1,7}},
+				{"item", "Roaming Hero Boots", {0, 154, 26, 1, 4,-1,-1,-1,-1,-1,-1,-1,7}},
 			},
 		},
 --		{"select", "ºÏ³É²ÄÁÏ£¨3Ñ¡1£©",
@@ -1467,7 +1467,7 @@ CK_SCROE_AWARD_TABLE = {
 		{22000, 150000000, 580, 580, 4200, 0},
 		{"func", "ChuyÓn sinh 7 cÊp 73", award_7zhuan73},
 		{"func", "§¸ Quý CÊp 3-5 (NgÉu nhiªn)", award_gem345_3},
-		{"item", "Phôc Sinh §¬n", {2, 1, 30814, 1, 4}},
+		{"item", "Resurrection Pill", {2, 1, 30814, 1, 4}},
 		{"select", "Trang bÞ Hµo hiÖp(3 chän 1)",
 			{
 				{"item", "Hµo HiÖp §Çu", {0, 103, 30568, 1, 4}},
@@ -1479,12 +1479,12 @@ CK_SCROE_AWARD_TABLE = {
 	[22] = {
 		--score, EXP ÉùÍûÖµ Ê¦ÃÅÖµ ¾ü¹¦Öµ ÕæÆø
 		{24000, 250000000, 580, 580, 4200, 0},
-		{"item", "HiÖp NghÜa Chi Chøng", {2, 1, 30912, 400, 4}},
+		{"item", "Token of Chivalry", {2, 1, 30912, 400, 4}},
 		{"func", "§¶ th«ng c¶nh giíi Vâ T«n", award_wuzun},
 		{"func", "§¸ Quý CÊp 3-5 (NgÉu nhiªn)", award_gem345_5},
 --		{"item", "4¼¶Ìú¾§", {2, 1, 30612, 30, 4}},
-		{"item", "Tinh Hoa UÈn Linh CÊp 6", {2,1,30668,12,4}},
-		{"func", "§iÓm cèng hiÕn bang", award_tongscore,{600}},
+		{"item", "Spirit Essence Gathering Level 6", {2,1,30668,12,4}},
+		{"func", "Guild Contribution Points", award_tongscore,{600}},
 --		{"item", "ºÍÊÏèµ", {2, 1, 1001, 1, 4}},
 		{"func", "Danh hiÖu NhiÖm Vô §¹t Nh©n", award_title},
 		{"select", "Trang bÞ Hµo hiÖp(3 chän 1)",

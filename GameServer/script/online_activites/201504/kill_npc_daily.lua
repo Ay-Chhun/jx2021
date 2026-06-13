@@ -64,14 +64,14 @@ tbKillNpcDaily.tbAward =
 		tbCost = 
 		{
 			{2, 1, 30603, 19, "Tiªu Dao Ngäc"},
-			{2, 1, 30807, 1000, "èng Phãng"},
-			{2, 1, 30806, 1000, "Ngßi Ph¸o"},
+			{2, 1, 30807, 1000, "Launch Tube"},
+			{2, 1, 30806, 1000, "Fuse"},
 		},
 		tbPrize = 
 		{
 			{"Exp", 39000000},
-			{2, 1, 30808, 1000, "Thuèc Næ"},
-			{2, 1, 30785, 9, "V« Tù Kinh Th­"},
+			{2, 1, 30808, 1000, "Explosive Powder"},
+			{2, 1, 30785, 9, "Wordless Scripture"},
 		}
 	},
 	[ADVANCED_TYPE] = 
@@ -80,14 +80,14 @@ tbKillNpcDaily.tbAward =
 		tbCost = 
 		{
 			{2, 1, 30603, 299, "Tiªu Dao Ngäc"},
-			{2, 1, 30807, 1000, "èng Phãng"},
-			{2, 1, 30806, 1000, "Ngßi Ph¸o"},
+			{2, 1, 30807, 1000, "Launch Tube"},
+			{2, 1, 30806, 1000, "Fuse"},
 		},
 		tbPrize = 
 		{
 			{"Exp", 99000000},
-			{2, 1, 30785, 19, "V« Tù Kinh Th­"},
-			{2, 1, 30811, 99, "Ph¸o Hoa Vinh Dù"},
+			{2, 1, 30785, 19, "Wordless Scripture"},
+			{2, 1, 30811, 99, "Glory Fireworks"},
 		}
 	}
 }

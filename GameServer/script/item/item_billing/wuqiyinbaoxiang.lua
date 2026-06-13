@@ -47,12 +47,12 @@ function list_item(nPageNum,nRecordCount,nItemIdx)
 		tinsert(selTab,tbItemTab[i]);
 	end;
 	if nPageNum ~= 1 then
-		tinsert(selTab,format("\n Trang tr≠Ìc/#list_item(%d,%d,%d)",nPageNum-1,nRecordCount,nItemIdx));
+		tinsert(selTab,format("\n Previous page/#list_item(%d,%d,%d)",nPageNum-1,nRecordCount,nItemIdx));
 	end;
 	if nPageNum ~= ceil(nRecordCount/MAX_SEL_PER_PAGE) then
 		tinsert(selTab,format("\n Trang sau/#list_item(%d,%d,%d)",nPageNum+1,nRecordCount,nItemIdx));	
 	end;
-	tinsert(selTab,"\n ß„ng");
+	tinsert(selTab,"\n Close");
 	Say("Xin ch‰n vÀt ph»m bπn c«n: ",getn(selTab),selTab);
 end
 
@@ -82,7 +82,7 @@ function add_item(nIdx,nItemIdx)
 			Msg2Player("Bπn nhÀn Æ≠Óc "..szItemName);
 			WriteLog("["..g_szPacketName.."]:"..GetName().."NhÀn Æ≠Óc vÀt ph»m"..szItemName);
 		else
-			WriteLog("["..g_szPacketName.."LÁi]:"..GetName().."NhÀn Æ≠Óc vÀt ph»m"..szItemName.."AddItem b∏o lÁ, trﬁ ph∂n hÂi: "..nRetCode);
+			WriteLog("["..g_szPacketName.."Error]:"..GetName().."NhÀn Æ≠Óc vÀt ph»m"..szItemName.."AddItem reported an error, return value:"..nRetCode);
 		end;
 	end;
 end;

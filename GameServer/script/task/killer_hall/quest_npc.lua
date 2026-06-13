@@ -74,10 +74,10 @@ function done_quest()
 			SetTask(KH_QUEST_TSK, GetTask(KH_QUEST_TSK) - 100)
 			--gf_AddItemEx2({2,1,30170,1}, "D©u", "Nhiem vu STD", "nhÀn")
 			ModifyExp(tExpAward[7])
-			Msg2Player("NhÀn Æ≠Óc "..tExpAward[7].." Æi”m kinh nghi÷m!")
+			Msg2Player("Received"..tExpAward[7].." Æi”m kinh nghi÷m!")
 			gf_WriteLogEx("Nhiem vu STD", "nhÀn "..tExpAward[7].." Æi”m kinh nghi÷m")
-			gf_AddItemEx2({2,1,30164+mod(random(1,1000),20),3}, "Tr∏i c©y", "Nhiem vu STD", "nhÀn")
-			gf_AddItemEx2({2,1,30498,1}, "Hu©n ch≠¨ng dÚng s‹", "Nhiem vu STD", "nhÀn")
+			gf_AddItemEx2({2,1,30164+mod(random(1,1000),20),3}, "Fruit", "Nhiem vu STD", "nhÀn")
+			gf_AddItemEx2({2,1,30498,1}, "Brave Warrior Medal", "Nhiem vu STD", "nhÀn")
 		--- ßi”m VÀn May
 --			local nPointVM = gf_GetTaskByte(TSK_LUCKY_DAOHUU_NEW_THANG4, BYTE_POINT_LUCKY)	
 --			local nExpVM = (nPointVM - 100)/100*tExpAward[7]
@@ -92,10 +92,10 @@ function done_quest()
 		if nType2 ~= 0 then
 			SetTask(KH_QUEST_TSK, GetTask(KH_QUEST_TSK) - 1000)
 			ModifyExp(tExpAward[8])
-			Msg2Player("NhÀn Æ≠Óc "..tExpAward[8].." Æi”m kinh nghi÷m!")
+			Msg2Player("Received"..tExpAward[8].." Æi”m kinh nghi÷m!")
 			gf_WriteLogEx("Nhiem vu STD", "nhÀn "..tExpAward[8].." Æi”m kinh nghi÷m")
-			gf_AddItemEx2({2,1,30164+mod(random(1,1000),20),4}, "Tr∏i c©y", "Nhiem vu STD", "nhÀn")
-			gf_AddItemEx2({2,1,30498,1}, "Hu©n ch≠¨ng dÚng s‹", "Nhiem vu STD", "nhÀn")
+			gf_AddItemEx2({2,1,30164+mod(random(1,1000),20),4}, "Fruit", "Nhiem vu STD", "nhÀn")
+			gf_AddItemEx2({2,1,30498,1}, "Brave Warrior Medal", "Nhiem vu STD", "nhÀn")
 		--- ßi”m VÀn May
 --			local nPointVM = gf_GetTaskByte(TSK_LUCKY_DAOHUU_NEW_THANG4, BYTE_POINT_LUCKY)	
 --			local nExpVM = (nPointVM - 100)/100*tExpAward[8]
@@ -110,10 +110,10 @@ function done_quest()
 		if nType3 ~= 0 then
 			SetTask(KH_QUEST_TSK, GetTask(KH_QUEST_TSK) - 10000)
 			ModifyExp(tExpAward[9])
-			Msg2Player("NhÀn Æ≠Óc "..tExpAward[9].." Æi”m kinh nghi÷m!")
+			Msg2Player("Received"..tExpAward[9].." Æi”m kinh nghi÷m!")
 			gf_WriteLogEx("Nhiem vu STD", "nhÀn "..tExpAward[9].." Æi”m kinh nghi÷m")
-			gf_AddItemEx2({2,1,30164+mod(random(1,1000),20),5}, "Tr∏i c©y", "Nhiem vu STD", "nhÀn")
-			gf_AddItemEx2({2,1,30498,2}, "Hu©n ch≠¨ng dÚng s‹", "Nhiem vu STD", "nhÀn")
+			gf_AddItemEx2({2,1,30164+mod(random(1,1000),20),5}, "Fruit", "Nhiem vu STD", "nhÀn")
+			gf_AddItemEx2({2,1,30498,2}, "Brave Warrior Medal", "Nhiem vu STD", "nhÀn")
 		--- ßi”m VÀn May
 --			local nPointVM = gf_GetTaskByte(TSK_LUCKY_DAOHUU_NEW_THANG4, BYTE_POINT_LUCKY)	
 --			local nExpVM = (nPointVM - 100)/100*tExpAward[9]
@@ -171,9 +171,9 @@ function done_quest1()
 		if nType1 ~= 0 then
 			SetTask(KH_QUEST_TSK, GetTask(KH_QUEST_TSK) - 100)
 			ModifyExp(tExpAward[7])
-			Msg2Player("NhÀn Æ≠Óc "..tExpAward[7].." Æi”m kinh nghi÷m!")
+			Msg2Player("Received"..tExpAward[7].." Æi”m kinh nghi÷m!")
 			gf_WriteLogEx("Nhiem vu STD", "nhÀn "..tExpAward[7].." Æi”m kinh nghi÷m")
-			gf_AddItemEx2({2,1,30164+mod(random(1,1000),20),6}, "Tr∏i c©y", "Nhiem vu STD", "nhÀn")
+			gf_AddItemEx2({2,1,30164+mod(random(1,1000),20),6}, "Fruit", "Nhiem vu STD", "nhÀn")
 		--- ßi”m VÀn May
 --			local nPointVM = gf_GetTaskByte(TSK_LUCKY_DAOHUU_NEW_THANG4, BYTE_POINT_LUCKY)	
 --			local nExpVM = (nPointVM - 100)/100*tExpAward[7]
@@ -188,10 +188,10 @@ function done_quest1()
 		if nType2 ~= 0 then
 			SetTask(KH_QUEST_TSK, GetTask(KH_QUEST_TSK) - 1000)
 			ModifyExp(tExpAward[8])
-			Msg2Player("NhÀn Æ≠Óc "..tExpAward[8].." Æi”m kinh nghi÷m!")
+			Msg2Player("Received"..tExpAward[8].." Æi”m kinh nghi÷m!")
 			gf_WriteLogEx("Nhiem vu STD", "nhÀn "..tExpAward[8].." Æi”m kinh nghi÷m")
-			gf_AddItemEx2({2,1,30164+mod(random(1,1000),20),8}, "Tr∏i c©y", "Nhiem vu STD", "nhÀn")
-			gf_AddItemEx2({2,1,30499,1}, "Hu©n ch≠¨ng anh hÔng", "Nhiem vu STD", "nhÀn")
+			gf_AddItemEx2({2,1,30164+mod(random(1,1000),20),8}, "Fruit", "Nhiem vu STD", "nhÀn")
+			gf_AddItemEx2({2,1,30499,1}, "Hero's Medal", "Nhiem vu STD", "nhÀn")
 		--- ßi”m VÀn May
 --			local nPointVM = gf_GetTaskByte(TSK_LUCKY_DAOHUU_NEW_THANG4, BYTE_POINT_LUCKY)	
 --			local nExpVM = (nPointVM - 100)/100*tExpAward[8]
@@ -206,10 +206,10 @@ function done_quest1()
 		if nType3 ~= 0 then
 			SetTask(KH_QUEST_TSK, GetTask(KH_QUEST_TSK) - 10000)
 			ModifyExp(tExpAward[9])
-			Msg2Player("NhÀn Æ≠Óc "..tExpAward[9].." Æi”m kinh nghi÷m!")
+			Msg2Player("Received"..tExpAward[9].." Æi”m kinh nghi÷m!")
 			gf_WriteLogEx("Nhiem vu STD", "nhÀn "..tExpAward[9].." Æi”m kinh nghi÷m")
-			gf_AddItemEx2({2,1,30164+mod(random(1,1000),20),10}, "Tr∏i c©y", "Nhiem vu STD", "nhÀn")
-			gf_AddItemEx2({2,1,30499,1}, "Hu©n ch≠¨ng anh hÔng", "Nhiem vu STD", "nhÀn")	
+			gf_AddItemEx2({2,1,30164+mod(random(1,1000),20),10}, "Fruit", "Nhiem vu STD", "nhÀn")
+			gf_AddItemEx2({2,1,30499,1}, "Hero's Medal", "Nhiem vu STD", "nhÀn")	
 		--- ßi”m VÀn May
 --			local nPointVM = gf_GetTaskByte(TSK_LUCKY_DAOHUU_NEW_THANG4, BYTE_POINT_LUCKY)	
 --			local nExpVM = (nPointVM - 100)/100*tExpAward[9]

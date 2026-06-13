@@ -64,8 +64,8 @@ function OnUse()
             SetTask(137, i);
             SetTask(TASK_BJ_ID, 11);
             nIndexNpcXh = CreateNpc("Tiªu Hµn", "Tiªu Hµn", xh_point[i][1], xh_point[i][2], xh_point[i][3]);
-            Msg2Player("B¸ch Th¶o ¤ng ë  "..xh_point[i][4]..","..xh_point[i][5].." !!");
-            TaskTip("B¸ch Th¶o ¤ng ë  "..xh_point[i][4]..","..xh_point[i][5].." !!");
+            Msg2Player("Bach Thao Ong is at"..xh_point[i][4]..","..xh_point[i][5].." !!");
+            TaskTip("Bach Thao Ong is at"..xh_point[i][4]..","..xh_point[i][5].." !!");
             nFlag = 1;
             break
         end;

@@ -40,7 +40,7 @@ function npc_xiao_talk()
 	end	
 	local tSay ={
 		"NhËn th­ëng T©n Niªn/give_new_year_exp",
-		"KÕt thóc ®èi tho¹i/nothing";
+		"End dialogue/nothing";
 	}	
 	Say(szNpcName.."Sù kiÖn <color=green>Mõng Xu©n Canh DÇn<color> diÔn ra tõ ngµy <color=yellow>29-01-2010 ®Õn 24:00 ngµy 28-02-2010<color>. Th«ng tin chi tiÕt, ®ång ®¹o xem thªm trªn trang chñ http://volam2.zing.vn",getn(tSay),tSay);	
 end

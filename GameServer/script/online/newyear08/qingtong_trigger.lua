@@ -8,7 +8,7 @@ function finishkill()
 	if get_spring_festival_state() == 1 then
 		local nNpcIdx,sMoban,sName = GetTriggeringUnit();
 		local nNpcLv = GetUnitCurStates(nNpcIdx,0);
-		if (sMoban == "Nghi÷t HÂn" and sName == "L∑nh H≠¨ng L®ng") or (sMoban == "S¨n T∆c ß«u MÙc" and sName == "Bæc LÙc L©m Minh ChÒ") or (sMoban == "Huy“n V‚ Th≠ong" and sName == "Th≠¨ng Th«n Doanh Thi™n") then
+		if (sMoban == "Nghi÷t HÂn" and sName == "L∑nh H≠¨ng L®ng") or (sMoban == "S¨n T∆c ß«u MÙc" and sName == "Northern Greenwood Alliance Leader") or (sMoban == "Huy“n V‚ Th≠ong" and sName == "Th≠¨ng Th«n Doanh Thi™n") then
 			local nRandnum = random(1,100);
 			if nRandnum <= 15 then
 				AddItem(2,1,3220,1);

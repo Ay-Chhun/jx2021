@@ -101,11 +101,11 @@ end
 --»ñÈ¡¹¥ÊØË«·½°ïÖ÷µÄÃû×Ö
 function GCZ_GetTongHeaderName(nCamp)
 	if nCamp == GONG_ID then
-		return "S¬n TuyÒn N«ng Phu";
+		return "Mountain Spring Farmer";
 	elseif nCamp == SHOU_ID then
-		return "Y Sa ¸i";
+		return "Doctor Sha";
 	else
-		return "S¬n TuyÒn N«ng Phu","Y Sa ¸i";
+		return "Mountain Spring Farmer","Doctor Sha";
 	end;
 end;
 --»ñÈ¡³ÇÃÅÊØÎÀµÄÃû×Ö¡£²ÎÊý1£ºÕóÓª£¬²ÎÊý2£ºÃÅµÄÎ»ÖÃË÷Òý
@@ -257,9 +257,9 @@ function GCZ_CreateNpc(nMapID)
 	SetNpcScript(nNpcIdx,"\\script\\gongcheng\\npc\\gongchengcanmou_npc.lua");
 	nNpcIdx = CreateNpc("V­¬ng An Th¹ch","Thñ thµnhTham m­u",nMapID,1450,2583);
 	SetNpcScript(nNpcIdx,"\\script\\gongcheng\\npc\\shouchengcanmou_npc.lua");
-	nNpcIdx = CreateNpc("V­¬ng An Th¹ch","TËp kÕt quan",nMapID,1126,3144);
+	nNpcIdx = CreateNpc("V­¬ng An Th¹ch","Assembly Troops",nMapID,1126,3144);
 	SetNpcScript(nNpcIdx,"\\script\\gongcheng\\npc\\chuansong_npc.lua");
-	nNpcIdx = CreateNpc("V­¬ng An Th¹ch","TËp kÕt quan",nMapID,1458,2593);
+	nNpcIdx = CreateNpc("V­¬ng An Th¹ch","Assembly Troops",nMapID,1458,2593);
 	SetNpcScript(nNpcIdx,"\\script\\gongcheng\\npc\\chuansong_npc.lua");	
 	for i=1,getn(tChengMenJiGuanPos) do
 		nNpcIdx = CreateNpc(tChengMenJiGuanPos[i][4],tChengMenJiGuanPos[i][3],nMapID,tChengMenJiGuanPos[i][1],tChengMenJiGuanPos[i][2]);

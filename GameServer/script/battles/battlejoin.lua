@@ -47,7 +47,7 @@ end
 		 	print("ID b¶n ®å ®iÓm b¸o danh b¸o lçi, xin kiÓm tra l¹i!");
 		 	return 	
 		 end
-		 Say("N¬i nµy lµ"..szGAME_GAMELEVEL[maplevel]..", ®¼ng cÊp cña ng­¬i chØ cã thÓ ®Õn"..szGAME_GAMELEVEL[bt_level].." b¸o danh!", 0)--£¿£¿Ã»ÓĞ·ÖµÈ¼¶µÄÌáÊ¾ĞÅÏ¢		 
+		 Say("N¬i nµy lµ"..szGAME_GAMELEVEL[maplevel]..", ®¼ng cÊp cña ng­¬i chØ cã thÓ ®Õn"..szGAME_GAMELEVEL[bt_level].."register!", 0)--£¿£¿Ã»ÓĞ·ÖµÈ¼¶µÄÌáÊ¾ĞÅÏ¢		 
 		 return
 	end
 
@@ -90,9 +90,9 @@ if (BT_GetGameData(GAME_BATTLEID) ~= BT_GetData(PL_BATTLEID) or BT_GetGameData(G
 	BT_SetData( PL_SERIESKILL, 0 )	--Á¬Õ¶ÊıÇå0
 	BT_SetData( PL_KILLPLAYER, 0 )	--É±ÈËÊıÇå0
 	if (bt_ncamp == 1) then
-		Say(str, 2, "Gia nhËp/bt_joinsong", "Ta suy nghÜ l¹i!/bt_oncancel");
+		Say(str, 2, "Join/bt_joinsong", "Ta suy nghÜ l¹i!/bt_oncancel");
 	else
-		Say(str, 2, "Gia nhËp/bt_joinjin", "Ta suy nghÜ l¹i!/bt_oncancel");
+		Say(str, 2, "Join/bt_joinjin", "Ta suy nghÜ l¹i!/bt_oncancel");
 	end
 	return	
 end;
@@ -116,7 +116,7 @@ end
 
 --ÕıÊ½¿ÉÒÔ±¨ÃûÁË
 
-Say( str, 2, "§­îc!/bt_enterbattle", "§Ó ta suy nghÜ l¹i/bt_oncancel");
+Say( str, 2, "Alright!/bt_enterbattle", "§Ó ta suy nghÜ l¹i/bt_oncancel");
 end;
 
 function bt_enterbattle()
@@ -162,7 +162,7 @@ function bt_joinsong()
 --	BT_SetData(PL_BATTLEPOINT, 0)
 --	Msg2Player("Õ½ÒÛ¹«¸æ£ºĞÂÕ½ÒÛ¿ªÊ¼ÁË£¬ÄúÉÏÒ»´ÎµÄÕ½ÒÛ×ÜÕ½¹¦½«±»ÇåÁã¡£")
 	Msg2Player("Hoan nghªnh anh hïng. H·y nhanh ch©n vµo chiÕn tr­êng!")
-	Say("Hoan nghªnh anh hïng trë thµnh t­íng sÜ Tèng TriÒu. HiÖn ®· khai chiÕn! Cã muèn lËp tøc vµo chiÕn tr­êng?", 2, "§­îc!/bt_enterbattle", "§Ó ta suy nghÜ l¹i/bt_oncancel");
+	Say("Hoan nghªnh anh hïng trë thµnh t­íng sÜ Tèng TriÒu. HiÖn ®· khai chiÕn! Cã muèn lËp tøc vµo chiÕn tr­êng?", 2, "Alright!/bt_enterbattle", "§Ó ta suy nghÜ l¹i/bt_oncancel");
 end;
 
 function bt_joinjin()
@@ -173,7 +173,7 @@ function bt_joinjin()
 --	BT_SetData(PL_BATTLEPOINT, 0)
 --	Msg2Player("Õ½ÒÛ¹«¸æ£ºĞÂÕ½ÒÛ¿ªÊ¼ÁË£¬ÄúÉÏÒ»´ÎµÄÕ½ÒÛ×ÜÕ½¹¦½«±»ÇåÁã¡£")
 	Msg2Player("Hoan nghªnh dòng sÜ Liªu Quèc! H·y nhanh ch©n vµo chiÕn tr­êng!")
-	Say("Hoan nghªnh anh hïng trë thµnh dòng sÜ Liªu Quèc. HiÖn ®· khai chiÕn! Cã muèn lËp tøc vµo chiÕn tr­êng?", 2, "§­îc!/bt_enterbattle", "§Ó ta suy nghÜ l¹i/bt_oncancel");
+	Say("Hoan nghªnh anh hïng trë thµnh dòng sÜ Liªu Quèc. HiÖn ®· khai chiÕn! Cã muèn lËp tøc vµo chiÕn tr­êng?", 2, "Alright!/bt_enterbattle", "§Ó ta suy nghÜ l¹i/bt_oncancel");
 end;
 
 function bt_oncancel()

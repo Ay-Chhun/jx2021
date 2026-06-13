@@ -25,9 +25,9 @@ g_szFileName = "new_year_bag.lua"				--文件名
 g_tbItem = 
 {
 	--		类型	   概率	数量 名字	ID1,ID2,ID3
-	[1] = {TYPE_ITEM,	50,	1,	"Nc Tinh Khi誸",	2,	1,	30047,	},
-	[2] = {TYPE_ITEM,	10,	1,	"B譶h Hoa",	2,	1,	30048,	},
-	[3] = {TYPE_ITEM,	40,	1,	"Dng Ch蕋",	2,	1,	30049,	},
+	[1] = {TYPE_ITEM,	50,	1,	"Pure Water",	2,	1,	30047,	},
+	[2] = {TYPE_ITEM,	10,	1,	"Flower Vase",	2,	1,	30048,	},
+	[3] = {TYPE_ITEM,	40,	1,	"Nutrient",	2,	1,	30049,	},
 }
 
 
@@ -78,7 +78,7 @@ function use_it()
 		else
 			Msg2Player("B筺 nh薾 頲  "..nItemNum.." "..szItemName)
 		end
-		WriteLogEx(g_szLogTitle, "Nh薾 頲", nItemNum, szItemName, szInfoDescribe, GetTongName() )
+		WriteLogEx(g_szLogTitle, "Received", nItemNum, szItemName, szInfoDescribe, GetTongName() )
 	else
 		WriteLogEx(g_szLogTitle, "", "", "", szInfoDescribe, GetTongName(), "Thu 頲 th蕋 b筰, ".."AddItem return value = "..nRetCode)
 	end

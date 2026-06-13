@@ -9,7 +9,7 @@ tCreateNpcList = {
 	{"wsyd_jl", "Kim Linh ",321,1716,3585},
 	
 	--9×ªÈÎÎñ
-	{"jz_ylcdcf", "Xa phu Xe vËn l­¬ng",306,1369,2973},
+	{"jz_ylcdcf", "Carter Supply Cart",306,1369,2973},
 	{"jz_tyjjy", "Tinh hoa Thiªn D­¬ng Giao",6400,1770,3397},
 	{"jz_tyjjy", "Tinh hoa Thiªn D­¬ng Giao",6400,1776,3401},
 	{"jz_tyjjy", "Tinh hoa Thiªn D­¬ng Giao",6400,1781,3407},
@@ -21,6 +21,6 @@ tCreateNpcList = {
 	{"jz_tyjjy", "Tinh hoa Thiªn D­¬ng Giao",6400,1755,3422},
 	{"jz_tyjjy", "Tinh hoa Thiªn D­¬ng Giao",6400,1763,3410},
 	{"jz_tyjjy", "Tinh hoa Thiªn D­¬ng Giao",6400,1763,3410},
-	{"jz_htsk", "Hµn ThiÕt Kho¸ng",315,1784,2919},
-	{"jz_lg", "Vua ƒc Quû", 306,1453,2860},
+	{"jz_htsk", "Han Thiet Ore",315,1784,2919},
+	{"jz_lg", "Vua c Quy", 306,1453,2860},
 }

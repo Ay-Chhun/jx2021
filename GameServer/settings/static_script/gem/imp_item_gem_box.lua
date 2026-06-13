@@ -76,7 +76,7 @@ function OnUse_GemBox(nItemIdx)
 	tinsert(tbSay, format("%s/_checkout_gem", "Ta muèn rót ®¸ quý"))
 	tinsert(tbSay, format("%s/_compose_gem", "Ta muèn ghÐp ®¸ quý"))
 	--tinsert(tbSay, format("%s/OnUse_SKillAppBox", "¼¼ÄÜÊ¯½õÄÒ"))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -86,9 +86,9 @@ function _checkin_all_gem(bConfirm)
 		local szTitle = format("%s:%s", g_szTitle, "Mçi lo¹i ®¸ quý cã thÓ cÊt gi÷ 255 c¸i, ®ång ý cÊt vµo kh«ng?")
     	local tbSay = {}
     
-    	tinsert(tbSay, format("%s/#_checkin_all_gem(1)", "§ång ý"))
+    	tinsert(tbSay, format("%s/#_checkin_all_gem(1)", "Agree"))
     	tinsert(tbSay, format("%s/OnUse_GemBox", "trë l¹i"))
-    	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+    	tinsert(tbSay, format("%s/nothing", "Exit"))
 		Say(szTitle, getn(tbSay), tbSay)
 		return
 	end
@@ -134,7 +134,7 @@ function _checkout_gem()
 		tinsert(tbSay, format("%s/#_checkout_gem_type(%d)", v[2], v[1]))
 	end
 	tinsert(tbSay, format("%s/OnUse_GemBox", "trë l¹i"))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -152,7 +152,7 @@ function _checkout_gem_type(nType)
 		
 	end
 	tinsert(tbSay, format("%s/_checkout_gem", "trë l¹i"))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -211,7 +211,7 @@ function _compose_gem()
 		tinsert(tbSay, format("%s/#_compose_gem_type(%d)", v[2], v[1]))
 	end
 	tinsert(tbSay, format("%s/OnUse_GemBox", "trë l¹i"))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -234,7 +234,7 @@ function _compose_gem_type(nType)
 	end
 	tinsert(tbSay, format("%s%s/#_compose_gem_type_lv(%d,%d)", "GhÐp toµn bé", tType[2], nType, 0))
 	tinsert(tbSay, format("%s/_compose_gem", "trë l¹i"))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -297,9 +297,9 @@ function _compose_gem_type_lv(nType, nLevel)
 			, szName, szName, nCnt, nMaxLv, szName, nNeedGold)
 		local szTitle = format("%s:%s", g_szTitle, szMsg)
     	local tbSay = {}
-    	tinsert(tbSay, format("%s/#_compose_gem_type_lv_num(%d,%d,%d,%d)", "§ång ý", nType, 0,0,1))
+    	tinsert(tbSay, format("%s/#_compose_gem_type_lv_num(%d,%d,%d,%d)", "Agree", nType, 0,0,1))
     	tinsert(tbSay, format("%s/#_compose_gem_type(%d)", "trë l¹i", nType))
-    	tinsert(tbSay, format("%s/nothing", "Tõ bá"))
+    	tinsert(tbSay, format("%s/nothing", "Give up"))
     	Say(szTitle, getn(tbSay), tbSay)
 		return
 	end
@@ -360,9 +360,9 @@ function _compose_gem_type_lv_num(nType, nLevel,nNum, bConfirm)
 		local szMsg = format("GhÐp thµnh %d c¸i %s cÇn tiªu hao %d vµng, x¸c nhËn kh«ng?", nNum, szItemName, nNeedGoldAll)
 		local szTitle = format("%s:%s", g_szTitle, szMsg)
     	local tbSay = {}
-    	tinsert(tbSay, format("%s/#_compose_gem_type_lv_num(%d,%d,%d,1)", "§ång ý", nType, nLevel,nNum))
+    	tinsert(tbSay, format("%s/#_compose_gem_type_lv_num(%d,%d,%d,1)", "Agree", nType, nLevel,nNum))
     	tinsert(tbSay, format("%s/#_compose_gem_type(%d)", "trë l¹i", nType))
-    	tinsert(tbSay, format("%s/nothing", "Tõ bá"))
+    	tinsert(tbSay, format("%s/nothing", "Give up"))
     	Say(szTitle, getn(tbSay), tbSay)
 		return
 	end
@@ -376,7 +376,7 @@ function _compose_gem_type_lv_num(nType, nLevel,nNum, bConfirm)
 		return
 	end
 	if 1 == Pay(nNeedMoneyAll) then
-		local szMsg = format("%s ghÐp hoµn tÊt, tiªu hao vµng %d, t×nh tr¹ng ®¸ quý nh­ sau\n%-8s %-8s %-8s %-8s %-8s",szName, nNeedGoldAll, "CÊp", "§· cã","Hîp thµnh","tiªu hao ","Cßn ")
+		local szMsg = format("%s ghÐp hoµn tÊt, tiªu hao vµng %d, t×nh tr¹ng ®¸ quý nh­ sau\n%-8s %-8s %-8s %-8s %-8s",szName, nNeedGoldAll, "CÊp", "§· cã","Hîp thµnh","tiªu hao ","There are")
 		for i=1,getn(tGem) do
 			local t = tGem[i]
 			local nNewNum = t[4] - t[5]

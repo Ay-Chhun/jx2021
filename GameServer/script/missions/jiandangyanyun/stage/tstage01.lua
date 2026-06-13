@@ -9,12 +9,12 @@ tStage01 = {
 tStage01 = inherit(cycPhase, tStage01);
 
 tStage01_1 = {
-	name = "Giai Æoπn chu»n bﬁ",
+	name = "Preparation phase",
 	szStageId = "01_1",
 	maxsecond = 5 * 60,
 	actionsType = "second",
 	guage = {
-		msg = "Giai Æoπn chu»n bﬁ",
+		msg = "Preparation phase",
 		time = 5 * 60,
 		cyc = 0,
 		id = 2,

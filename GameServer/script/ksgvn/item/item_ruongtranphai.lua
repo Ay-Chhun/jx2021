@@ -13,6 +13,6 @@ function OnUse(nItemIdx)
         { tbProp = {GENRE_ITEM_EQUIP, EQUIP_TYPE_EXTEND_BOOK, nBookId}, nStatus = 1 },
     }
     if DelItemByIndex(nItemIdx, 1) == 1 then
-        KsgAward:Give(tbAward, "R≠¨ng Tr n Ph∏i")
+        KsgAward:Give(tbAward, "Town Sect Chest")
     end
 end

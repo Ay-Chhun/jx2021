@@ -23,6 +23,6 @@ function OnTimer()
 		StartMissionTimer(MISSION_ID,READY_TIMER_ID,READY_TIME);
 		SetMissionV(MV_TIMELEFT,timeleft-1);
 		timeleft = timeleft*READY_TIME/18;
-		Msg2MSAll(MISSION_ID,"TrÀn Æ u sœ sau"..timeleft.." gi©y k’t thÛc b∏o danh");		
+		Msg2MSAll(MISSION_ID,"TrÀn Æ u sœ sau"..timeleft.." seconds");		
 	end;
 end;

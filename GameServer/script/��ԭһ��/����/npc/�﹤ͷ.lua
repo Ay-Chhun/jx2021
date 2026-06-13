@@ -17,7 +17,7 @@ local nTaskValue = FN_GetTaskState(FN_SL);
 		task_005();
 		return
 	else
-		Say("Cã chuyÖn g× vËy?",0);
+		Say("What's the matter?",0);
 	end
 
 end

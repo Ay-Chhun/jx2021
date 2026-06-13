@@ -1,7 +1,7 @@
 Include("\\script\\newbattles\\sign_up_npc.lua");
 
 --g_sNpcName = "TriÖu Diªn Niªn";
-g_sNpcName = "TiÓu Ph­¬ng";
+g_sNpcName = "Xiaofang";
 g_nNpcCamp = SONG_ID;
 
 function main()

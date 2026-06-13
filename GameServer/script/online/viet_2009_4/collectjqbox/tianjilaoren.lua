@@ -35,7 +35,7 @@ end
 --------------------------------------
 function JQ_LevelBToRFlag()
 -----ÅÐ¶Ï±³°üºÍ¸ºÖØ------------------------
-	if gf_Judge_Room_Weight(2, 0, "Xin lçi, ") == 0 then
+	if gf_Judge_Room_Weight(2, 0, "Sorry,") == 0 then
 		return 0
 	end
 -----Ç®²»¹»--------	
@@ -45,11 +45,11 @@ function JQ_LevelBToRFlag()
 	end
 
 	if DelItem(2, 1, 30081, JQ_LEVEL_B_TO_R_FLAG_BFLAG_NUM) ~= 1 then
-		Say("Nguyªn liÖu mang theo kh«ng ®ñ", 1, "KÕt thóc ®èi tho¹i/JQ_DoNothing");
+		Say("Nguyªn liÖu mang theo kh«ng ®ñ", 1, "End the conversation/JQ_DoNothing");
 		return 0;
 	end
 	if Pay(JQ_LEVEL_B_TO_R_FLAG_MONEY) ~= 1 then
-		WriteLog("[Ho¹t ®éng thu thËp hiÖu kú th¸ng 4]:" .. GetName() .. "Chi tr¶".. JQ_LEVEL_B_TO_R_FLAG_MONEY .. " xu thÊt b¹i");
+		WriteLog("[Ho¹t ®éng thu thËp hiÖu kú th¸ng 4]:" .. GetName() .. "Pay".. JQ_LEVEL_B_TO_R_FLAG_MONEY .. " xu thÊt b¹i");
 		return 0;
 	end
 	
@@ -62,7 +62,7 @@ function JQ_LevelBToRFlag()
 		end
 	else
 		if AddItem(2, 1, 30081, 2) == 1 then
-			Say("Qu¸ tr×nh n©ng cÊp thÊt b¹i, c¸c h¹ chØ nhËn l¹i ®­îc 2 Lam Kú..", 1, "KÕt thóc ®èi tho¹i/main");
+			Say("Qu¸ tr×nh n©ng cÊp thÊt b¹i, c¸c h¹ chØ nhËn l¹i ®­îc 2 Lam Kú..", 1, "End the conversation/main");
 		end
 	end
 end
@@ -73,12 +73,12 @@ end
 --------------------------------------
 function JQ_GroupRedAndStone()
 -----ÅÐ¶Ï±³°üºÍ¸ºÖØ------------------------
-	if gf_Judge_Room_Weight(1, 0, "Xin lçi, ") == 0 then
+	if gf_Judge_Room_Weight(1, 0, "Sorry,") == 0 then
 		return 0;
 	end
 -----Ô­ÁÏ²»¹»------------------------------
 	if GetItemCount(2, 1, 30080) < 2 or GetItemCount(2, 1, 30082) == 0 then
-		Say("Nguyªn liÖu mang theo kh«ng ®ñ", 1, "KÕt thóc ®èi tho¹i/JQ_DoNothing");
+		Say("Nguyªn liÖu mang theo kh«ng ®ñ", 1, "End the conversation/JQ_DoNothing");
 		return 0;
 	end
 
@@ -105,15 +105,15 @@ end
 --------------------------------------
 function JQ_GetJinNang()
 	if GetItemCount(2, 1, 30045) ~= 0 then
-		Say("C¸c h¹ ®· nhËn CÈm nang ®¹i sù kiÖn råi, kh«ng thÓ nhËn thªm ®­îc n÷a.", 1, "KÕt thóc ®èi tho¹i!/JQ_DoNothing");
+		Say("C¸c h¹ ®· nhËn CÈm nang ®¹i sù kiÖn råi, kh«ng thÓ nhËn thªm ®­îc n÷a.", 1, "End the conversation!/JQ_DoNothing");
 		return 0;	
 	else
 		-----ÅÐ¶Ï±³°üºÍ¸ºÖØ------------------------
-		if gf_Judge_Room_Weight(1, 1, "Xin lçi, ") == 0 then
+		if gf_Judge_Room_Weight(1, 1, "Sorry,") == 0 then
 			return 0;
 		end
 		if AddItem(2, 1, 30045, 1) == 1 then
-			Say("Ng­¬i nh©n ®­îc 1 CÈm Nang §¹i Sù KiÖn.", 1, "§a t¹ tiÒn bèi.!/JQ_DoNothing");
+			Say("You received 1 Grand Event Handbook.", 1, "Many thanks, senior.!/JQ_DoNothing");
 		end
 	end
 end

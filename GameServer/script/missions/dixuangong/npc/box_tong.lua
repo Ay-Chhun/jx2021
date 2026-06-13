@@ -15,7 +15,7 @@ T_BoxScript = {
 T_TONG_BOX_IDX = {}
 function remove_tong_box()
 	for i,v in T_TONG_BOX_IDX do
-		if GetNpcName(i) == "R≠¨ng ßÂng" then
+		if GetNpcName(i) == "Copper Chest" then
 			SetNpcLifeTime(i, 0);
 		end
 	end
@@ -29,7 +29,7 @@ function create_box_tong(nNpcIdx, nBoxId)
 	local m, x, y = GetNpcWorldPos(nNpcIdx);
 	--ÃÏ“ı√‹œ‰1∏ˆ
 	local x2, y2 = x + random(-5, 5), y + random(-5, 5);
-	local npc = CreateNpc("tongbaoxiang", "R≠¨ng ßÂng", m, x2, y2);
+	local npc = CreateNpc("tongbaoxiang", "Copper Chest", m, x2, y2);
 	if npc and npc > 0 then
 		T_TONG_BOX_IDX[npc]  = 1
 		--SetNpcLifeTime(npc, 180);
@@ -41,24 +41,24 @@ end
         
 tClause1 = {
     --{{"–°¥´π¶µ§",{2,1,30312,1,4}},10*30},
-    {{"M∂nh Tu Ch©n Y’u Quy’t",{2,1,30315,1,4}},20},
+    {{"Cultivation Truth Fragment",{2,1,30315,1,4}},20},
     {{"Thi’t Tinh c p 1",{2,1,30533,1,4}},40},
     {{"Thi’t Tinh c p 2",{2,1,30534,1,4}},40},
     {{"Thi’t Tinh c p 3",{2,1,30535,1,4}},30},
 }
 tClause2 = {
     --{{"–°¥´π¶µ§",{2,1,30312,1,4}},10*10},
-    {{"M∂nh Tu Ch©n Y’u Quy’t",{2,1,30315,1,4}},10},
+    {{"Cultivation Truth Fragment",{2,1,30315,1,4}},10},
     {{"Thi’t Tinh c p 1",{2,1,30533,1,4}},40},
     {{"Thi’t Tinh c p 2",{2,1,30534,1,4}},30},
     {{"Thi’t Tinh c p 3",{2,1,30535,1,4}},10},
     {{"∏o Choµng Tπo BË",{0,152,1,1,4}},10},
 }
 tClause4 = {
-    {{"T¯ Linh Quy Nguy™n ß¨n",{2,1,30352,1,4}},5},
-    {{"BÂi Nguy™n ß¨n",{2,1,30351,1,4}},5},
+    {{"Four Spirits Return to Origin Pill",{2,1,30352,1,4}},5},
+    {{"Replenishing Origin Pill",{2,1,30351,1,4}},5},
     --{{"¥´π¶µ§",{2,1,30313,1,4}},10*5},
-    {{"M∂nh Tu Ch©n Y’u Quy’t",{2,1,30315,1,4}},5},
+    {{"Cultivation Truth Fragment",{2,1,30315,1,4}},5},
     {{"Thi’t Tinh c p 1",{2,1,30533,1,4}},10},
     {{"Thi’t Tinh c p 2",{2,1,30534,1,4}},10},
     {{"Thi’t Tinh c p 3",{2,1,30535,1,4}},15},
@@ -70,7 +70,7 @@ tClause5 = {
     --{{"Œ‰¡÷‘Á±®",{2,1,30314,1,4}},10*5},
     {{"Th∏nh VÀt S≠ M´n",{2,1,30311,1,4}},5},
     --{{"¥´π¶µ§",{2,1,30313,1,4}},10*5},
-    {{"M∂nh Tu Ch©n Y’u Quy’t",{2,1,30315,1,4}},5},
+    {{"Cultivation Truth Fragment",{2,1,30315,1,4}},5},
     {{"Thi’t Tinh c p 1",{2,1,30533,1,4}},10},
     {{"Thi’t Tinh c p 2",{2,1,30534,1,4}},10},
     {{"Thi’t Tinh c p 3",{2,1,30535,1,4}},20},
@@ -82,7 +82,7 @@ tClause6 = {
     --{{"Œ‰¡÷‘Á±®",{2,1,30314,1,4}},10*5},
     {{"Th∏nh VÀt S≠ M´n",{2,1,30311,1,4}},5},
     --{{"¥´π¶µ§",{2,1,30313,1,4}},10*5},
-    {{"M∂nh Tu Ch©n Y’u Quy’t",{2,1,30315,1,4}},5},
+    {{"Cultivation Truth Fragment",{2,1,30315,1,4}},5},
     {{"Thi’t Tinh c p 1",{2,1,30533,1,4}},10},
     {{"Thi’t Tinh c p 2",{2,1,30534,1,4}},10},
     {{"Thi’t Tinh c p 3",{2,1,30535,1,4}},20},

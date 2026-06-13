@@ -16,12 +16,12 @@ TASK_FULL_8_HOUR = 2540
 tBuff = {
 		{"C«ng kÝch +4%", 125, {{"state_p_attack_percent_add", 4},{"state_m_attack_percent_add", 4}}},
 		{"Kh¸ng tÊt c¶ +8", 125, {{"state_add_allability", 8}}},
-		{"Søc m¹nh +8", 125, {{"state_add_strength", 8}}},
+		{"Strength +8", 125, {{"state_add_strength", 8}}},
 		{"Néi c«ng +8", 125, {{"state_add_energy", 8}}},
-		{"G©n cèt +8", 125, {{"state_add_vitality", 8}}},
-		{"Th©n ph¸p +8", 125, {{"state_add_dexterity", 8}}},
+		{"Constitution +8", 125, {{"state_add_vitality", 8}}},
+		{"Agility +8", 125, {{"state_add_dexterity", 8}}},
 		{"Linh ho¹t +8", 125, {{"state_add_observe", 8}}},
-		{"NÐ tr¸nh +50", 125, {{"state_dodge_rate_point_add", 50}}},
+		{"Evasion +50", 125, {{"state_dodge_rate_point_add", 50}}},
 }
 
 tOnlineAward = {
@@ -49,9 +49,9 @@ tOnlineAward = {
 
 tDayAward = {
 	[1] = {
-				[1] = {"Phï Ên",{2,1,302,200,1}},
+				[1] = {"Talisman Seal",{2,1,302,200,1}},
 				[2] = {"Tµn KiÕm",{2,1,299,200,1}},
-				[3] = {"Linh t¶n",{2,1,185,200,1}},
+				[3] = {"Spirit Scatter",{2,1,185,200,1}},
 			},
 			
 	[2] = {
@@ -68,17 +68,17 @@ tDayAward = {
 }
 VET_70_GAOJIMIJI_NEW =
 {
-		[2] =  {"Kim Cang B¸t Nh· Ch©n QuyÓn", {0, 107, 204, 1}}, 
-		[3] =  {"V« TrÇn Bå §Ò Ch©n QuyÓn", {0, 107, 206, 1}}, 
-		[4] =  {"TiÒm Long Tóc DiÖt Ch©n QuyÓn", {0, 107, 205, 1}}, 
+		[2] =  {"Vajra Prajna True Scroll", {0, 107, 204, 1}}, 
+		[3] =  {"Dustless Bodhi True Manual", {0, 107, 206, 1}}, 
+		[4] =  {"Hidden Dragon Annihilation True Manual", {0, 107, 205, 1}}, 
 		[14] =  {"HuyÒn ¶nh Mª T«ng Ch©n QuyÓn", {0, 107, 212, 1}}, 
-		[15] =  {"Qu©n Tö §íi Phong Ch©n QuyÓn", {0, 107, 213, 1}}, 
-		[8] =  {"Nh­ ý Kim §Ønh Ch©n QuyÓn", {0, 107, 208, 1}}, 
-		[9] =  {"BÝch H¶i TuyÖt ¢m Ch©n QuyÓn", {0, 107, 209, 1}}, 
-		[11] =  {"Hçn §én TrÊn Nh¹c Ch©n QuyÓn", {0, 107, 210, 1}}, 
+		[15] =  {"Gentleman Welcomes the Wind True Manual", {0, 107, 213, 1}}, 
+		[8] =  {"Wishful Golden Top True Manual", {0, 107, 208, 1}}, 
+		[9] =  {"Azure Sea Silent Sound True Manual", {0, 107, 209, 1}}, 
+		[11] =  {"Chaos Town Mountain True Manual", {0, 107, 210, 1}}, 
 		[12] =  {"Quú Thiªn Du Long Ch©n QuyÓn", {0, 107, 211, 1}}, 
 		[6] =  {"Thiªn La Liªn Ch©u Ch©n QuyÓn", {0, 107, 207, 1}}, 
-		[17] =  {"TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn", {0, 107, 214, 1}}, 
+		[17] =  {"Town Army Flying Dragon Spear True Manual", {0, 107, 214, 1}}, 
 		[18] =  {"Xuyªn V©n L¹c Hång Ch©n QuyÓn", {0, 107, 215, 1}}, 
 		[20] = {"HuyÒn Minh Phong Ma Ch©n QuyÓn", {0, 107, 216, 1}}, 
 		[21] = {"Linh Cæ HuyÒn Tµ Ch©n QuyÓn", {0, 107, 217, 1}}, 

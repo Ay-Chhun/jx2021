@@ -7,8 +7,8 @@ TOKEN_TASK_ID = 2428
 
 tAward ={
 	[5] = {"MËt TÞch Tø Linh V« Song",{0,107,165,1},1,1},
-	[6] = {"Kú L©n Thó",{0,105,30000,1,1,-1,-1,-1,-1,-1,-1},1,100},
-	[7] = {"Trang bÞ Viªm §Õ",{0,100,8000,1,1,-1,-1,-1,-1,-1,-1,0,7},3,300},
+	[6] = {"Kirin Beast",{0,105,30000,1,1,-1,-1,-1,-1,-1,-1},1,100},
+	[7] = {"Yandi Equipment",{0,100,8000,1,1,-1,-1,-1,-1,-1,-1,0,7},3,300},
 	[8] = {"§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch",{2,1,1067,1},1,1},
 	[9] = {"§¹i hång bao hoµng kim",{2,1,539,30},1,1},
 }
@@ -16,18 +16,18 @@ tAward ={
 -- tªn ngo¹i trang, G, D, P, sè lÇn chuyÓn sinh + lv mua ®­îc (do chuyÓn sinh tiÕp theo ko bÞ giíi h¹n lv mua nªn ghÐp 2 sè thµnh 1)
 t_translife_cloth = 
 {
-	[1] = {"V¨n Sö ngo¹i trang",0,108,570,290},
+	[1] = {"Scholar Outfit",0,108,570,290},
 	[2] = {"Thiªn ¢m ngo¹i trang",0,108,562,390},
 	[3] = {"ThiÕu D­¬ng ngo¹i trang",0,108,566,488},
-	[4] = {"Tø Linh ViÖt  ngo¹i trang",0,108,30001,588},
+	[4] = {"Four Spirits Viet outfit",0,108,30001,588},
 }
 -- tªn ngo¹i trang, G, D, P, sè lÇn chuyÓn sinh + lv mua ®­îc (do chuyÓn sinh tiÕp theo ko bÞ giíi h¹n lv mua nªn ghÐp 2 sè thµnh 1)
 t_translife_cloth_cs6 = 
 {
-	[1] = {"V¨n Sö ngo¹i trang",0,108,570,188, 288,388,489},
+	[1] = {"Scholar Outfit",0,108,570,188, 288,388,489},
 	[2] = {"Thiªn ¢m ngo¹i trang",0,108,562,188, 288,388,489},
 	[3] = {"ThiÕu D­¬ng ngo¹i trang",0,108,566,188, 288,388,489},
-	[4] = {"Tø Linh Phôc Sinh ngo¹i trang",0,108,30005,188, 288,388,489},	
+	[4] = {"Four Spirits Resurrection outfit",0,108,30005,188, 288,388,489},	
 	[5] = { --phôc sinh 1
 			[1] = {
 					[1] = {{0,108,30005,1,4,5,639,6,102}, {0,109,30005,1,4,5,342,6,102}, {0,110,30005,1,4,6,306,6,102}},
@@ -135,16 +135,16 @@ t_translife_cloth_cs6 =
 }
 t_translife_horse = 
 {
-	[1] = {"Niªn Thó",{0, 105, 33, 1, 1, 3, 403}, 292, 1000000},
+	[1] = {"New Year Beast",{0, 105, 33, 1, 1, 3, 403}, 292, 1000000},
 	[2] = {"B¹ch Hæ", {0, 105, 30009, 1, 4, -1, -1, -1, -1, -1, -1}, 490, 10000000},
 }
 t_translife_horse_cs6 = 
 {
 	[1] = {"B¹ch Hæ", {0, 105, 30009, 1, 4, -1, -1, -1, -1, -1, -1}, 190, 10000000},
-	[2] = {"H¾c Hæ", {0, 105, 30011, 1, 4, -1, -1, -1, -1, -1, -1}, 191, 10000000},	
+	[2] = {"Black Tiger", {0, 105, 30011, 1, 4, -1, -1, -1, -1, -1, -1}, 191, 10000000},	
 	[3] = {"Ngù KiÕm Phôc Sinh 2", {0, 105, 10107, 1, 4, -1, -1, -1, -1, -1, -1}, 290, 8},	--Phôc Sinh 2 (cs7)
 	[4] = {"Ngù KiÕm Phôc Sinh 3", {0, 105, 10108, 1, 4, -1, -1, -1, -1, -1, -1}, 392, 10000000},	--Phôc Sinh 3 (cs8)
-	[5] = {"Long M·", {0, 105, 30056, 1, 4, -1, -1, -1, -1, -1, -1}, 491, 10000000},	--Phôc Sinh 4 (cs9)
+	[5] = {"Dragon Horse", {0, 105, 30056, 1, 4, -1, -1, -1, -1, -1, -1}, 491, 10000000},	--Phôc Sinh 4 (cs9)
 }
 
 tSFX ={
@@ -154,41 +154,41 @@ tSFX ={
 	{956,928},
 }
 
-tLife = {"Long","Hæ","¦ng","Phông"}
-tLife_cs6 = {"Long","Hæ","¦ng","Phông"}
+tLife = {"Long","Hæ","Eagle","Phông"}
+tLife_cs6 = {"Long","Hæ","Eagle","Phông"}
 
 tb_translife_weapon_effect = {			
 			"Hµo m«n",
 			"PhÇn V©n",
-			"§o¹n Giao",			
+			"Doan Giao",			
 			"Ph¸ Qu©n",
 }
 
 function UseDragonToken(nItemIdx)
 	local tSay={}	
-	tinsert(tSay, "BËt Long Tö Quang/#GetSFX(1)")
-	tinsert(tSay, "T¾t Long Tö Quang/CloseSFX")
+	tinsert(tSay, "Activate Dragon Son Aura/#GetSFX(1)")
+	tinsert(tSay, "Deactivate Dragon Son Aura/CloseSFX")
 	tinsert(tSay, "KÝch ho¹t hiÖu øng Vò KhÝ/#WeaponEffect(1)")
 	if GetPlayerRebornParam(0) == 0 then
  		tinsert(tSay, "Long Tö Héi lÖnh/#TransferLife(1)")
  	else
  		tinsert(tSay, "Tø Linh Long Tö lÖnh/#TranferTuLinh(1)")
  	end
- 	tinsert(tSay, "§ãng/closedialog")
+ 	tinsert(tSay, "Close/closedialog")
 	Say("Cæn cæn tr­êng giang ®«ng thÖ thñy. L·ng hoa ®µo tËn anh hïng. ThÞ phi thµnh b¹i chuyÓn ®Çu kh«ng ! Long Tö Héi chiªu hiÒn n¹p sÜ, cao thñ gi÷ Long Tö Ên cã thÓ hiÖu lÖnh: ",getn(tSay),tSay)
 end
 
 function UseTigerToken(nItemIdx)
 	local tSay={}	
-	tinsert(tSay, "BËt Hæ Tö Quang/#GetSFX(2)")
-	tinsert(tSay, "T¾t Hæ Tö Quang/CloseSFX")
+	tinsert(tSay, "Activate Tiger Son Aura/#GetSFX(2)")
+	tinsert(tSay, "Deactivate Tiger Son Aura/CloseSFX")
 	tinsert(tSay, "KÝch ho¹t hiÖu øng Vò KhÝ/#WeaponEffect(1)")
 	if GetPlayerRebornParam(0) == 0 then	
 		tinsert(tSay, "Hæ Tö Héi lÖnh/#TransferLife(2)")
 	else
 		tinsert(tSay, "Tø Linh Hæ Tö lÖnh/#TranferTuLinh(2)")
 	end	 	
-	tinsert(tSay, "§ãng/closedialog")	
+	tinsert(tSay, "Close/closedialog")	
 	Say("Cæn cæn tr­êng giang ®«ng thÖ thñy. L·ng hoa ®µo tËn anh hïng. ThÞ phi thµnh b¹i chuyÓn ®Çu kh«ng ! Hæ Tö Héi chiªu hiÒn n¹p sÜ, cao thñ gi÷ Hæ Tö Ên cã thÓ hiÖu lÖnh: ",getn(tSay),tSay)
 end
 
@@ -203,22 +203,22 @@ function UseFengToken(nItemIdx)
  	else
  		tinsert(tSay, "Tø Linh Phông Tö lÖnh/#TranferTuLinh(4)")
  	end	 	
- 	tinsert(tSay, "§ãng/closedialog")	
+ 	tinsert(tSay, "Close/closedialog")	
 	Say("Cæn cæn tr­êng giang ®«ng thÖ thñy. L·ng hoa ®µo tËn anh hïng. ThÞ phi thµnh b¹i chuyÓn ®Çu kh«ng ! Phông Tö Héi chiªu hiÒn n¹p sÜ, cao thñ gi÷ Phông Tö Ên cã thÓ hiÖu lÖnh: ",getn(tSay),tSay)
 end
 
 
 function UseYingToken(nItemIdx)
 	local tSay={}	
-	tinsert(tSay, "BËt ¦ng Tö Quang/#GetSFX(4)")
-	tinsert(tSay, "T¾t ¦ng Tö Quang/CloseSFX")
+	tinsert(tSay, "Activate Eagle Son Aura/#GetSFX(4)")
+	tinsert(tSay, "Deactivate Eagle Son Aura/CloseSFX")
 	tinsert(tSay, "KÝch ho¹t hiÖu øng Vò KhÝ/#WeaponEffect(1)")
 	if GetPlayerRebornParam(0) == 0 then			
  		tinsert(tSay, "¦ng Tö Héi lÖnh/#TransferLife(3)")
  	else
  		tinsert(tSay, "Tø Linh ¦ng Tö lÖnh/#TranferTuLinh(3)")
  	end	 		 		
-	tinsert(tSay, "§ãng/closedialog")	
+	tinsert(tSay, "Close/closedialog")	
 	Say("Cæn cæn tr­êng giang ®«ng thÖ thñy. L·ng hoa ®µo tËn anh hïng. ThÞ phi thµnh b¹i chuyÓn ®Çu kh«ng ! ¦ng Tö Héi chiªu hiÒn n¹p sÜ, cao thñ gi÷ ¦ng Tö Ên cã thÓ hiÖu lÖnh: ",getn(tSay),tSay)
 end
 
@@ -303,7 +303,7 @@ function GetAward()
 	 	"NhËn phÇn th­ëng Viªm §Õ/#GetItem(7)", 
 	 	"NhËn phÇn th­ëng §Þnh Hån Thiªn Th¹ch ThÇn Th¹ch/#GetItem(8)",
 	 	"NhËn phÇn th­ëng 30 §¹i hång bao hoµng kim/#GetItem(9)", 
-	 	"§ãng/closedialog",	
+	 	"Close/closedialog",	
 	}
 	Say("PhÇn th­ëng dµnh cho Bang chñ cña Bang héi h¹ng nhÊt nh©n khÝ. Thêi gian nhËn th­ëng <color=red>01/10/2009 - 24:00 07/10/2009<color>.",getn(tSay),tSay)
 end
@@ -316,7 +316,7 @@ function TransferLife(szLife)
 	 	format("KÝch ho¹t chÕ t¹o ngo¹i trang UÈn Linh dßng %s Tö/translife_cloth",tLife[szLife]),
 	 	"KÝch ho¹t chÕ t¹o Vò KhÝ Linh Ph¸ch/nothing",
 	 	"KÝch ho¹t Kü N¨ng Sèng sau chuyÓn sinh/nothing",
-	 	"§ãng/closedialog",	
+	 	"Close/closedialog",	
 	}
 	Say(format("C¸c chøc n¨ng cña %s Tö Héi:",tLife[szLife]),getn(tSay),tSay)
 end
@@ -329,7 +329,7 @@ function buy_translife_equip()
 		"Mua HËu NghÖ L¹c NhËt Hoµn (cÇn 700 ®iÓm s­ m«n + 700 ®iÓm danh väng + h¹n sö dông 7 ngµy)/#confirm_buy_translife_equip(1)",		
 		"Mua H»ng Nga HuyÔn ThÇn §¸i (cÇn 700 ®iÓm s­ m«n + 700 ®iÓm danh väng + h¹n sö dông 7 ngµy)/#confirm_buy_translife_equip(2)",
 		"Mua KhuÊt Nguyªn Bé (cÇn 1500 ®iÓm s­ m«n + 1500 ®iÓm danh väng + h¹n sö dông 7 ngµy)/#confirm_buy_translife_equip(3)",		
-		"§ãng/closedialog",
+		"Close/closedialog",
 	}
 	Say("C¸c lo¹i trang søc: ",getn(tSay),tSay)
 end
@@ -357,7 +357,7 @@ function get_translife_equip(nType)
 				Talk(1,"","ChØ cã ng­êi tu luyÖn theo h­íng Long/Hæ/¦ng Tö míi cã thÓ nhËn trang søc nµy!!")
 				return
 			end
-			gf_AddItemEx2({0,102,43,1,1,-1,-1,-1,-1,-1,-1},"HËu NghÖ L¹c NhËt Hoµn","Chuyen Sinh","nhËn",30*24*3600,1)	
+			gf_AddItemEx2({0,102,43,1,1,-1,-1,-1,-1,-1,-1},"Houyi Setting Sun Pill","Chuyen Sinh","nhËn",30*24*3600,1)	
 		elseif nType == 2 then
 			if BigGetItemCount(0,102,42) > 0 then
 				Talk(1,"","C¸c h¹ ®· së h÷u trang søc nµy, kh«ng thÓ nhËn thªm!")
@@ -373,7 +373,7 @@ function get_translife_equip(nType)
 				Talk(1,"","C¸c h¹ ®· së h÷u trang søc nµy, kh«ng thÓ nhËn thªm!")
 				return
 			end
-			gf_AddItemEx2({0,102,27,1,4,-1,-1,-1,-1,-1,-1},"KhuÊt Nguyªn Béi","Chuyen Sinh","nhËn",30*24*3600,1)
+			gf_AddItemEx2({0,102,27,1,4,-1,-1,-1,-1,-1,-1},"Qu Yuan Pendant","Chuyen Sinh","nhËn",30*24*3600,1)
 		end
 		SetTaskTrans()
 	else
@@ -409,7 +409,7 @@ function confirm_buy_translife_equip(nType)
 		end
 		ModifyReputation(-700,1)
 		SetTask(336,GetTask(336) - 700)
-		gf_AddItemEx2({0,102,43,1,1,-1,-1,-1,-1,-1,-1},"HËu NghÖ L¹c NhËt Hoµn","Chuyen Sinh","nhËn",7*24*3600,1)		
+		gf_AddItemEx2({0,102,43,1,1,-1,-1,-1,-1,-1,-1},"Houyi Setting Sun Pill","Chuyen Sinh","nhËn",7*24*3600,1)		
 	elseif nType == 2 then
 		if GetTranslifeFaction() ~= 4 then
 			Talk(1,"","ChØ cã ng­êi tu luyÖn theo h­íng Phông Tö míi cã thÓ mua trang søc nµy!!")
@@ -430,7 +430,7 @@ function confirm_buy_translife_equip(nType)
 		ModifyReputation(-1500,1)
 		SetTask(336,GetTask(336) - 1500)
 		Msg2Player("B¹n bÞ trõ 1500 ®iÓm s­ m«n!")
-		gf_AddItemEx2({0,102,27,1,4,-1,-1,-1,-1,-1,-1},"KhuÊt Nguyªn Béi","Chuyen Sinh","nhËn",7*24*3600,1)
+		gf_AddItemEx2({0,102,27,1,4,-1,-1,-1,-1,-1,-1},"Qu Yuan Pendant","Chuyen Sinh","nhËn",7*24*3600,1)
 	end
 end
 
@@ -438,9 +438,9 @@ function buy_translife_horse()
 	local tSay={	 	
 		"Kú L©n Niªn Thó (cÇn 1 Phiªu Vò + 100 vµng)/#confirm_buy_translife_horse(1)",
 		"B¹ch Hæ ThÇn Thó (cÇn 1 Phiªu Vò + 1000 vµng)/#confirm_buy_translife_horse(2)",
-		"§ãng/closedialog",
+		"Close/closedialog",
 	}
-	Say("C¸c thó c­ìi:",getn(tSay),tSay)
+	Say("Mounts:",getn(tSay),tSay)
 end
 
 function confirm_buy_translife_horse(nType)
@@ -486,14 +486,14 @@ end
 
 function buy_translife_cloth()
 	local tSay={	 	
-		"V¨n Sö ngo¹i trang/#confirm_buy_translife_cloth(1)",
+		"Wen Shi Outfit/#confirm_buy_translife_cloth(1)",
 		"Thiªn ¢m ngo¹i trang/#confirm_buy_translife_cloth(2)",
 		"ThiÕu D­¬ng ngo¹i trang/#confirm_buy_translife_cloth(3)",
-		"Tø Linh ViÖt  ngo¹i trang/#confirm_buy_translife_cloth(4)",
-		"Tø Linh ngo¹i trang/nothing",
-		"§ãng/closedialog",
+		"Si Ling Yue Outfit/#confirm_buy_translife_cloth(4)",
+		"Si Ling Outfit/nothing",
+		"Close/closedialog",
 	}
-	Say("C¸c ngo¹i trang:",getn(tSay),tSay)
+	Say("Outfits:",getn(tSay),tSay)
 end
 
 
@@ -534,7 +534,7 @@ function translife_cloth()
 		"KÝch ho¹t M·o ngo¹i trang UÈn Linh theo h­íng tu luyÖn (cÇn 100 vµng)/#translife_cloth_confirm(6)",
 		"KÝch ho¹t Th­îng y  ngo¹i trang UÈn Linh theo h­íng tu luyÖn (cÇn 100 vµng)/#translife_cloth_confirm(7)",
 		"KÝch ho¹t H¹ y ngo¹i trang UÈn Linh theo h­íng tu luyÖn (cÇn 100 vµng)/#translife_cloth_confirm(8)",
-		"§ãng/closedialog",
+		"Close/closedialog",
 	}
 	Say("Chän lo¹i ngo¹i trang muèn kÝch ho¹t:",getn(tSay),tSay)
 end
@@ -549,7 +549,7 @@ function translife_cloth_cs6()
 		"KÝch ho¹t M·o ngo¹i trang UÈn Linh theo h­íng tu luyÖn (cÇn 800 vµng)/#translife_cloth_confirm(6)",
 		"KÝch ho¹t Th­îng y  ngo¹i trang UÈn Linh theo h­íng tu luyÖn (cÇn 800 vµng)/#translife_cloth_confirm(7)",
 		"KÝch ho¹t H¹ y ngo¹i trang UÈn Linh theo h­íng tu luyÖn (cÇn 800 vµng)/#translife_cloth_confirm(8)",
-		"§ãng/closedialog",
+		"Close/closedialog",
 	}
 	Say("Chän lo¹i ngo¹i trang muèn kÝch ho¹t:",getn(tSay),tSay)
 end
@@ -564,7 +564,7 @@ function translife_cloth_cs7()
 		"KÝch ho¹t M·o ngo¹i trang UÈn Linh theo h­íng tu luyÖn (cÇn 800 vµng)/#translife_cloth_confirm(6)",
 		"KÝch ho¹t Th­îng y  ngo¹i trang UÈn Linh theo h­íng tu luyÖn (cÇn 800 vµng)/#translife_cloth_confirm(7)",
 		"KÝch ho¹t H¹ y ngo¹i trang UÈn Linh theo h­íng tu luyÖn (cÇn 800 vµng)/#translife_cloth_confirm(8)",
-		"§ãng/closedialog",
+		"Close/closedialog",
 	}
 	Say("Chän lo¹i ngo¹i trang muèn kÝch ho¹t:",getn(tSay),tSay)
 end
@@ -579,7 +579,7 @@ function translife_cloth_cs8()
 		"KÝch ho¹t M·o ngo¹i trang UÈn Linh theo h­íng tu luyÖn (cÇn 800 vµng)/#translife_cloth_confirm(6)",
 		"KÝch ho¹t Th­îng y  ngo¹i trang UÈn Linh theo h­íng tu luyÖn (cÇn 800 vµng)/#translife_cloth_confirm(7)",
 		"KÝch ho¹t H¹ y ngo¹i trang UÈn Linh theo h­íng tu luyÖn (cÇn 800 vµng)/#translife_cloth_confirm(8)",
-		"§ãng/closedialog",
+		"Close/closedialog",
 	}
 	Say("Chän lo¹i ngo¹i trang muèn kÝch ho¹t:",getn(tSay),tSay)
 end
@@ -594,7 +594,7 @@ function translife_cloth_cs9()
 		"KÝch ho¹t M·o ngo¹i trang UÈn Linh theo h­íng tu luyÖn (cÇn 800 vµng)/#translife_cloth_confirm(6)",
 		"KÝch ho¹t Th­îng y  ngo¹i trang UÈn Linh theo h­íng tu luyÖn (cÇn 800 vµng)/#translife_cloth_confirm(7)",
 		"KÝch ho¹t H¹ y ngo¹i trang UÈn Linh theo h­íng tu luyÖn (cÇn 800 vµng)/#translife_cloth_confirm(8)",
-		"§ãng/closedialog",
+		"Close/closedialog",
 	}
 	Say("Chän lo¹i ngo¹i trang muèn kÝch ho¹t:",getn(tSay),tSay)
 end
@@ -731,7 +731,7 @@ function TranferTuLinh(nLife)
 	elseif nPhucSinh == 4 then
 		tinsert(tSay, format("KÝch ho¹t chÕ t¹o ngo¹i trang UÈn Linh Phôc Sinh 4 dßng %s Tö/translife_cloth_cs9",tLife_cs6[nLife]))
 	end
-	tinsert(tSay, "§ãng/closedialog")
+	tinsert(tSay, "Close/closedialog")
 	Say("Cæn cæn tr­êng giang ®«ng thÖ thñy. L·ng hoa ®µo tËn anh hïng. ThÞ phi thµnh b¹i chuyÓn ®Çu kh«ng ! Long Tö Héi chiªu hiÒn n¹p sÜ, cao thñ gi÷ Long Tö Ên cã thÓ hiÖu lÖnh: ",getn(tSay),tSay)	
 end
 
@@ -756,7 +756,7 @@ function get_TranferTuLinh()
 	end
 	--tinsert(tSay, "Ta muèn nhËn Ngäc Béi Kü N¨ng 30 ngµy (1 lÇn duy nhÊt + cÇn ®¼ng cÊp 86)/cs6_get_HNHN")		
 	tinsert(tSay, "Ta muèn nhËn KhuÊt Nguyªn Béi 30 ngµy (1 lÇn duy nhÊt + cÇn ®¼ng cÊp 89)/cs6_get_KNB")	
-	tinsert(tSay, "§ãng/closedialog")
+	tinsert(tSay, "Close/closedialog")
 	Say("Cæn cæn tr­êng giang ®«ng thÖ thñy. L·ng hoa ®µo tËn anh hïng. ThÞ phi thµnh b¹i chuyÓn ®Çu kh«ng ! Long Tö Héi chiªu hiÒn n¹p sÜ, cao thñ gi÷ Long Tö Ên cã thÓ hiÖu lÖnh: ",getn(tSay),tSay)		
 end
 
@@ -786,7 +786,7 @@ function buy_TranferTuLinh()
 	if nPhucSinh == 4 then
 		tinsert(tSay, "N©ng cÊp Long M· (cÇn V©n Sö ThÊt Qu©n KiÕm + 1000 vµng)/#upgrade_buy_horse_cs9(5)")
 	end
-	tinsert(tSay, "§ãng/closedialog")
+	tinsert(tSay, "Close/closedialog")
 	Say("Cæn cæn tr­êng giang ®«ng thÖ thñy. L·ng hoa ®µo tËn anh hïng. ThÞ phi thµnh b¹i chuyÓn ®Çu kh«ng ! Long Tö Héi chiªu hiÒn n¹p sÜ, cao thñ gi÷ Long Tö Ên cã thÓ hiÖu lÖnh: ",getn(tSay),tSay)	
 end
 function cs6_get_translife_cloth()
@@ -807,7 +807,7 @@ function cs6_get_translife_cloth()
 	local nTypePS = GetPlayerRebornParam(1)
 	local nKieuHinh = GetBody()
 	for i = 1, 3 do
-		gf_AddItemEx2(t_translife_cloth_cs6[nType][nTypePS][nKieuHinh][i], " Bé ngo¹i trang miÔn phÝ ", "Ngoai trang chuyen sinh 6","nhËn", 120*24*3600, "NhËn trang bÞ miÔn phÝ thµnh c«ng")
+		gf_AddItemEx2(t_translife_cloth_cs6[nType][nTypePS][nKieuHinh][i], " Free outfit set", "Ngoai trang chuyen sinh 6","nhËn", 120*24*3600, "NhËn trang bÞ miÔn phÝ thµnh c«ng")
 		
 	end
 --	if DelItem(2,1,30230,200) == 1 then
@@ -842,7 +842,7 @@ function cs7_get_translife_cloth()
 	local nTypePS = GetPlayerRebornParam(1)
 	local nKieuHinh = GetBody()
 	for i = 1, 3 do
-		gf_AddItemEx2(t_translife_cloth_cs6[nType][nTypePS][nKieuHinh][i], " Bé ngo¹i trang miÔn phÝ ", "Ngoai trang chuyen sinh 7","nhËn", 120*24*3600, "NhËn trang bÞ miÔn phÝ thµnh c«ng")
+		gf_AddItemEx2(t_translife_cloth_cs6[nType][nTypePS][nKieuHinh][i], " Free outfit set", "Ngoai trang chuyen sinh 7","nhËn", 120*24*3600, "NhËn trang bÞ miÔn phÝ thµnh c«ng")
 	end
 
 	SetTask(TSK_CS6_GET1TIME, GetTask(2685) + 1)
@@ -867,7 +867,7 @@ function cs8_get_translife_cloth()
 	local nTypePS = GetPlayerRebornParam(1)
 	local nKieuHinh = GetBody()
 	for i = 1, 3 do
-		gf_AddItemEx2(t_translife_cloth_cs6[nType][nTypePS][nKieuHinh][i], " Bé ngo¹i trang miÔn phÝ ", "Ngoai trang chuyen sinh 8","nhËn", 120*24*3600, "NhËn trang bÞ miÔn phÝ thµnh c«ng")
+		gf_AddItemEx2(t_translife_cloth_cs6[nType][nTypePS][nKieuHinh][i], " Free outfit set", "Ngoai trang chuyen sinh 8","nhËn", 120*24*3600, "NhËn trang bÞ miÔn phÝ thµnh c«ng")
 	end
 
 	SetTask(TSK_CS6_GET1TIME, GetTask(2685) + 1)
@@ -879,7 +879,7 @@ function gf_PSAddNewItem(tbItemIds, strName, szLogTitle, szLogAction, nExpireTim
 	nMsg2Player = nMsg2Player or 0;
 	
 	if type(tbItemIds) ~= "table" or getn(tbItemIds) < 4 then
-		WriteLog("["..szLogTitle.."]\tgf_AddItemEx2:\t tham sè lçi!");
+		WriteLog("["..szLogTitle.."]\tgf_AddItemEx2:\t parameter error!");
 		return 0;
 	end
 	
@@ -958,7 +958,7 @@ function cs9_get_translife_cloth()
 	local nTypePS = GetPlayerRebornParam(1)
 	local nKieuHinh = GetBody()
 	for i = 1, 3 do
-		gf_PSAddNewItem(t_translife_cloth_cs6[nType][nTypePS][nKieuHinh][i], " Bé ngo¹i trang miÔn phÝ ", "Ngoai trang chuyen sinh 9","nhËn", 120*24*3600, "NhËn trang bÞ miÔn phÝ thµnh c«ng")
+		gf_PSAddNewItem(t_translife_cloth_cs6[nType][nTypePS][nKieuHinh][i], " Free outfit set", "Ngoai trang chuyen sinh 9","nhËn", 120*24*3600, "NhËn trang bÞ miÔn phÝ thµnh c«ng")
 	end
 
 	SetTask(TSK_CS6_GET1TIME, GetTask(2685) + 1)
@@ -1209,8 +1209,8 @@ function cs6_get_HNHN()
 			gf_AddItemEx2({0,102,42,1,4,-1,-1,-1,-1,-1,-1},"H»ng Nga NguyÖt Vò §¸i","Chuyen Sinh 6","nhËn",30*24*3600,1)
 			WriteLogEx("Ngoai trang chuyen sinh 6","nhËn",1, "H»ng Nga NguyÖt Vò §¸i")		
 		else
-			gf_AddItemEx2({0,102,43,1,4,-1,-1,-1,-1,-1,-1},"HËu NghÖ L¹c NhËt Hoµn","Chuyen Sinh 6","nhËn",30*24*3600,1)	
-			WriteLogEx("Ngoai trang chuyen sinh 6","nhËn",1, "HËu NghÖ L¹c NhËt Hoµn")	
+			gf_AddItemEx2({0,102,43,1,4,-1,-1,-1,-1,-1,-1},"Houyi Setting Sun Pill","Chuyen Sinh 6","nhËn",30*24*3600,1)	
+			WriteLogEx("Ngoai trang chuyen sinh 6","nhËn",1, "Houyi Setting Sun Pill")	
 		end
 	elseif nPhucSinh == 2 then
 		if nTransCount < 286 then
@@ -1236,8 +1236,8 @@ function cs6_get_HNHN()
 			gf_AddItemEx2({0,102,42,1,4,-1,-1,-1,-1,-1,-1},"H»ng Nga NguyÖt Vò §¸i","Chuyen Sinh 7","nhËn",30*24*3600,1)
 			WriteLogEx("Ngoai trang chuyen sinh 6","nhËn",1, "H»ng Nga NguyÖt Vò §¸i")		
 		else
-			gf_AddItemEx2({0,102,43,1,4,-1,-1,-1,-1,-1,-1},"HËu NghÖ L¹c NhËt Hoµn","Chuyen Sinh 7","nhËn",30*24*3600,1)	
-			WriteLogEx("Ngoai trang chuyen sinh 6","nhËn",1, "HËu NghÖ L¹c NhËt Hoµn")	
+			gf_AddItemEx2({0,102,43,1,4,-1,-1,-1,-1,-1,-1},"Houyi Setting Sun Pill","Chuyen Sinh 7","nhËn",30*24*3600,1)	
+			WriteLogEx("Ngoai trang chuyen sinh 6","nhËn",1, "Houyi Setting Sun Pill")	
 		end
 	elseif nPhucSinh == 3 then
 		if nTransCount < 386 then
@@ -1263,8 +1263,8 @@ function cs6_get_HNHN()
 			gf_AddItemEx2({0,102,42,1,4,-1,-1,-1,-1,-1,-1},"H»ng Nga NguyÖt Vò §¸i","Chuyen Sinh 8","nhËn",30*24*3600,1)
 			WriteLogEx("Ngoai trang chuyen sinh 6","nhËn",1, "H»ng Nga NguyÖt Vò §¸i")		
 		else
-			gf_AddItemEx2({0,102,43,1,4,-1,-1,-1,-1,-1,-1},"HËu NghÖ L¹c NhËt Hoµn","Chuyen Sinh 8","nhËn",30*24*3600,1)	
-			WriteLogEx("Ngoai trang chuyen sinh 6","nhËn",1, "HËu NghÖ L¹c NhËt Hoµn")	
+			gf_AddItemEx2({0,102,43,1,4,-1,-1,-1,-1,-1,-1},"Houyi Setting Sun Pill","Chuyen Sinh 8","nhËn",30*24*3600,1)	
+			WriteLogEx("Ngoai trang chuyen sinh 6","nhËn",1, "Houyi Setting Sun Pill")	
 		end
 	elseif nPhucSinh == 4 then
 		if nTransCount < 486 then
@@ -1290,8 +1290,8 @@ function cs6_get_HNHN()
 			gf_AddItemEx2({0,102,42,1,4,-1,-1,-1,-1,-1,-1},"H»ng Nga NguyÖt Vò §¸i","Chuyen Sinh 8","nhËn",30*24*3600,1)
 			WriteLogEx("Ngoai trang chuyen sinh 6","nhËn",1, "H»ng Nga NguyÖt Vò §¸i")		
 		else
-			gf_AddItemEx2({0,102,43,1,4,-1,-1,-1,-1,-1,-1},"HËu NghÖ L¹c NhËt Hoµn","Chuyen Sinh 8","nhËn",30*24*3600,1)	
-			WriteLogEx("Ngoai trang chuyen sinh 6","nhËn",1, "HËu NghÖ L¹c NhËt Hoµn")	
+			gf_AddItemEx2({0,102,43,1,4,-1,-1,-1,-1,-1,-1},"Houyi Setting Sun Pill","Chuyen Sinh 8","nhËn",30*24*3600,1)	
+			WriteLogEx("Ngoai trang chuyen sinh 6","nhËn",1, "Houyi Setting Sun Pill")	
 		end
 	end
 end
@@ -1334,8 +1334,8 @@ function cs6_buy_HNHN(nType)
 		ModifyReputation(-700,1)
 		SetTask(336,GetTask(336) - 700)
 		Msg2Player("B¹n bÞ trõ 700 ®iÓm s­ m«n!")		
-		gf_AddItemEx2({0,102,43,1,1,-1,-1,-1,-1,-1,-1},"HËu NghÖ L¹c NhËt Hoµn","Chuyen Sinh 6","mua",7*24*3600,1)	
-		WriteLogEx("Ngoai trang chuyen sinh 6","mua",1, "HËu NghÖ L¹c NhËt Hoµn")	
+		gf_AddItemEx2({0,102,43,1,1,-1,-1,-1,-1,-1,-1},"Houyi Setting Sun Pill","Chuyen Sinh 6","mua",7*24*3600,1)	
+		WriteLogEx("Ngoai trang chuyen sinh 6","mua",1, "Houyi Setting Sun Pill")	
 	elseif nType == 2 then
 		if BigGetItemCount(0,102,42) > 0 then
 			Talk(1,"","C¸c h¹ ®· së h÷u trang søc nµy, kh«ng thÓ nhËn thªm!")
@@ -1376,9 +1376,9 @@ function cs6_get_KNB()
 			return
 		end
 		SetTask(TSK_CS6_GET1TIME, nTotal)	
-		gf_AddItemEx2({0,102,27,1,4,-1,-1,-1,-1,-1,-1},"KhuÊt Nguyªn Béi","Chuyen Sinh 6","nhËn",30*24*3600,1)
+		gf_AddItemEx2({0,102,27,1,4,-1,-1,-1,-1,-1,-1},"Qu Yuan Pendant","Chuyen Sinh 6","nhËn",30*24*3600,1)
 		Msg2Player("B¹n nhËn ®­îc KhuÊt Nguyªn Béi h¹n sö dông 30 ngµy")
-		WriteLogEx("Ngoai trang chuyen sinh 6","nhËn",1, "KhuÊt Nguyªn Béi")		
+		WriteLogEx("Ngoai trang chuyen sinh 6","nhËn",1, "Qu Yuan Pendant")		
 	elseif nPhucSinh == 2 then
 		if nTransCount < 289 then
 			Say("B¹n ch­a ®ñ ®iÒu kiÖn sö dông chøc n¨ng nµy!",0)
@@ -1396,9 +1396,9 @@ function cs6_get_KNB()
 			return
 		end
 		SetTask(TSK_CS6_GET1TIME, nTotal)	
-		gf_AddItemEx2({0,102,27,1,4,-1,-1,-1,-1,-1,-1},"KhuÊt Nguyªn Béi","Chuyen Sinh 7","nhËn",30*24*3600,1)
+		gf_AddItemEx2({0,102,27,1,4,-1,-1,-1,-1,-1,-1},"Qu Yuan Pendant","Chuyen Sinh 7","nhËn",30*24*3600,1)
 		Msg2Player("B¹n nhËn ®­îc KhuÊt Nguyªn Béi h¹n sö dông 30 ngµy")
-		WriteLogEx("Ngoai trang chuyen sinh 7","nhËn",1, "KhuÊt Nguyªn Béi")		
+		WriteLogEx("Ngoai trang chuyen sinh 7","nhËn",1, "Qu Yuan Pendant")		
 	elseif nPhucSinh == 3 then
 		if nTransCount < 389 then
 			Say("B¹n ch­a ®ñ ®iÒu kiÖn sö dông chøc n¨ng nµy!",0)
@@ -1416,9 +1416,9 @@ function cs6_get_KNB()
 			return
 		end
 		gf_SetTaskByte(2188,3,2)
-		gf_AddItemEx2({0,102,27,1,4,-1,-1,-1,-1,-1,-1},"KhuÊt Nguyªn Béi","Chuyen Sinh 8","nhËn",30*24*3600,1)
+		gf_AddItemEx2({0,102,27,1,4,-1,-1,-1,-1,-1,-1},"Qu Yuan Pendant","Chuyen Sinh 8","nhËn",30*24*3600,1)
 		Msg2Player("B¹n nhËn ®­îc KhuÊt Nguyªn Béi h¹n sö dông 30 ngµy")
-		WriteLogEx("Ngoai trang chuyen sinh 8","nhËn",1, "KhuÊt Nguyªn Béi")		
+		WriteLogEx("Ngoai trang chuyen sinh 8","nhËn",1, "Qu Yuan Pendant")		
 	end
 end
 
@@ -1455,9 +1455,9 @@ function cs6_buy_KNB()
 	ModifyReputation(-1500,1)
 	SetTask(336,GetTask(336) - 1500)
 	Msg2Player("B¹n bÞ trõ 1500 ®iÓm s­ m«n!")
-	gf_AddItemEx2({0,102,27,1,4,-1,-1,-1,-1,-1,-1},"KhuÊt Nguyªn Béi","Chuyen Sinh 6","nhËn",30*24*3600,1)	
+	gf_AddItemEx2({0,102,27,1,4,-1,-1,-1,-1,-1,-1},"Qu Yuan Pendant","Chuyen Sinh 6","nhËn",30*24*3600,1)	
 	Msg2Player("B¹n nhËn ®­îc KhuÊt Nguyªn Béi h¹n sö dông 30 ngµy")
-	WriteLogEx("Ngoai trang chuyen sinh 6","mua",1, "KhuÊt Nguyªn Béi")		
+	WriteLogEx("Ngoai trang chuyen sinh 6","mua",1, "Qu Yuan Pendant")		
 end
 
 function cs6_buy_translife_cloth(nType)

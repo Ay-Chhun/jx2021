@@ -13,14 +13,14 @@ TASK_GET_AWARD = 2037; --¼ÇÂ¼ÁìÈ¡½±Àø³É¹¦Óë·ñµÄ±êÖ¾£¬1±íÊ¾³É¹¦£¬0±íÊ¾Ê§°Ü
 
 --Ç°ÆÚ×°±¸½±Àøtable ¿ã×Ó ÒÂ·þ Ã±×Ó
 tZbAward = {
-	[26]={[1]={"ChØ TrÇn Trang",0,101,2600},
-				[2]={"ChØ TrÇn Trang",0,101,2601},
-				[3]={"ChØ TrÇn Trang",0,101,2602},
-				[4]={"ChØ TrÇn Trang",0,101,2603}},
-	[34]={[1]={"Thõa ¶nh Y",0,100,2604},
-				[2]={"Thõa ¶nh Y",0,100,2605},
-				[3]={"Thõa ¶nh Y",0,100,2606},
-				[4]={"Thõa ¶nh Y",0,100,2607}},
+	[26]={[1]={"Chi Tran Trang",0,101,2600},
+				[2]={"Chi Tran Trang",0,101,2601},
+				[3]={"Chi Tran Trang",0,101,2602},
+				[4]={"Chi Tran Trang",0,101,2603}},
+	[34]={[1]={"Thua Anh Y",0,100,2604},
+				[2]={"Thua Anh Y",0,100,2605},
+				[3]={"Thua Anh Y",0,100,2606},
+				[4]={"Thua Anh Y",0,100,2607}},
 	[44]={[1]={"Khinh V©n Thóc",0,103,2608},
 				[2]={"Khinh V©n Thóc",0,103,2609},
 				[3]={"Khinh V©n Thóc",0,103,2610},
@@ -29,7 +29,7 @@ tZbAward = {
 
 --Ç°ÆÚÊ×ÊÎ½±Àø
 tSsAward = {
-	[59]={"§»ng Giao BÝch",0,102,2612},
+	[59]={"Dang Giao Bich",0,102,2612},
 	[64]={"Khëi Ph­îng Ngäc",0,102,2613}
 }
 
@@ -39,72 +39,72 @@ tZbId = {26,34,44,59,64,11,49}
 --Ç°ÆÚÎäÆ÷½±Àø ¶ÔÓ¦½±Àø±àºÅÎª11	
 tWqAwardOne = {
 	[2]={"Ph¸ Phong §ao",0,3,2510},
-	[3]={"PhÇn Phong Tr­îng",0,8,2510},
+	[3]={"Phan Phong Staff",0,8,2510},
 	[4]={"TËt Phong Thñ",0,0,2510},
-	[6]={"Èn Phong Ch©m",0,1,2510},
+	[6]={"An Phong Cham",0,1,2510},
 	[8]={"Håi Phong KiÕm",0,2,2510},
-	[9]={"UÈn Phong CÇm",0,10,2510},
+	[9]={"Uan Phong Cam",0,10,2510},
 	[11]={"LiÖt Phong Thñ",0,0,2511},
 	[12]={"Ph¸n Phong C«n",0,5,2510},
 	[14]={"L­u Phong KiÕm",0,2,2511},
-	[15]={"TiÖt Phong Bót",0,9,2510},
-	[17]={"§o·n Phong Th­¬ng",0,6,2510},
-	[18]={"TËp Phong Cung",0,4,2510},
-	[20]={"Minh Phong NhÉn",0,7,2510},
-	[21]={"Dùc Phong Tr¶o",0,11,2510}
+	[15]={"Tiet Phong Pen",0,9,2510},
+	[17]={"Doan Phong Spear",0,6,2510},
+	[18]={"Tap Phong Bow",0,4,2510},
+	[20]={"Minh Phong Ring",0,7,2510},
+	[21]={"Duc Phong Claw",0,11,2510}
 	}
 
 --Ð¡°×randomÓÃ	
 tRanAwardOne = {
 	[1]={"Ph¸ Phong §ao",0,3,2510},
-	[2]={"PhÇn Phong Tr­îng",0,8,2510},
+	[2]={"Phan Phong Staff",0,8,2510},
 	[3]={"TËt Phong Thñ",0,0,2510},
-	[4]={"Èn Phong Ch©m",0,1,2510},
+	[4]={"An Phong Cham",0,1,2510},
 	[5]={"Håi Phong KiÕm",0,2,2510},
-	[6]={"UÈn Phong CÇm",0,10,2510},
+	[6]={"Uan Phong Cam",0,10,2510},
 	[7]={"LiÖt Phong Thñ",0,0,2511},
 	[8]={"Ph¸n Phong C«n",0,5,2510},
 	[9]={"L­u Phong KiÕm",0,2,2511},
-	[10]={"TiÖt Phong Bót",0,9,2510},
-	[11]={"§o·n Phong Th­¬ng",0,6,2510},
-	[12]={"TËp Phong Cung",0,4,2510},
-	[13]={"Minh Phong NhÉn",0,7,2510},
-	[14]={"Dùc Phong Tr¶o",0,11,2510}
+	[10]={"Tiet Phong Pen",0,9,2510},
+	[11]={"Doan Phong Spear",0,6,2510},
+	[12]={"Tap Phong Bow",0,4,2510},
+	[13]={"Minh Phong Ring",0,7,2510},
+	[14]={"Duc Phong Claw",0,11,2510}
 	}
 
 --Ç°ÆÚÎäÆ÷½±Àø ¶ÔÓ¦½±Àø±àºÅÎª49	
 tWqAwardTwo = {
 	[2]={"§»ng Tinh §ao",0,3,2520},
-	[3]={"Lam Tinh Tr­îng",0,8,2520},
+	[3]={"Lam Tinh Staff",0,8,2520},
 	[4]={"ChÊn Tinh Thñ",0,0,2520},
-	[6]={"HÊp Tinh Ch©m",0,1,2520},
+	[6]={"Hap Tinh Cham",0,1,2520},
 	[8]={"Tô Tinh KiÕm",0,2,2520},
 	[9]={"Th¸i Tinh CÇm",0,10,2520},
 	[11]={"TiÕu Tinh Thñ",0,0,2521},
 	[12]={"BiÕn Tinh C«n",0,5,2520},
 	[14]={"Phi Tinh KiÕm",0,2,2521},
-	[15]={"ChuyÓn Tinh Bót",0,9,2520},
-	[17]={"§Þnh Tinh Th­¬ng",0,6,2520},
-	[18]={"T­êng Tinh Cung",0,4,2520},
-	[20]={"Ma Tinh NhÉn",0,7,2520},
-	[21]={"Hèi Tinh Tr¶o",0,11,2520}}
+	[15]={"Chuyen Tinh Pen",0,9,2520},
+	[17]={"Dinh Tinh Spear",0,6,2520},
+	[18]={"Tuong Tinh Bow",0,4,2520},
+	[20]={"Ma Tinh Ring",0,7,2520},
+	[21]={"Hoi Tinh Claw",0,11,2520}}
 
 --Ð¡°×randomÓÃ
 tRanAwardTwo = {
 	[1]={"§»ng Tinh §ao",0,3,2520},
-	[2]={"Lam Tinh Tr­îng",0,8,2520},
+	[2]={"Lam Tinh Staff",0,8,2520},
 	[3]={"ChÊn Tinh Thñ",0,0,2520},
-	[4]={"HÊp Tinh Ch©m",0,1,2520},
+	[4]={"Hap Tinh Cham",0,1,2520},
 	[5]={"Tô Tinh KiÕm",0,2,2520},
 	[6]={"Th¸i Tinh CÇm",0,10,2520},
 	[7]={"TiÕu Tinh Thñ",0,0,2521},
 	[8]={"BiÕn Tinh C«n",0,5,2520},
 	[9]={"Phi Tinh KiÕm",0,2,2521},
-	[10]={"ChuyÓn Tinh Bót",0,9,2520},
-	[11]={"§Þnh Tinh Th­¬ng",0,6,2520},
-	[12]={"T­êng Tinh Cung",0,4,2520},
-	[13]={"Ma Tinh NhÉn",0,7,2520},
-	[14]={"Hèi Tinh Tr¶o",0,11,2520}}
+	[10]={"Chuyen Tinh Pen",0,9,2520},
+	[11]={"Dinh Tinh Spear",0,6,2520},
+	[12]={"Tuong Tinh Bow",0,4,2520},
+	[13]={"Ma Tinh Ring",0,7,2520},
+	[14]={"Hoi Tinh Claw",0,11,2520}}
 
 --×îÖÕ×°±¸½±Àø£¬Ã±×Ó£¬¿ã×Ó£¬ÒÂ·þ
 tFinalZb = {
@@ -112,20 +112,20 @@ tFinalZb = {
 			 [2]={"TuyÖt V©n",0,103,2616},
 			 [3]={"TuyÖt V©n",0,103,2617},
 			 [4]={"TuyÖt V©n",0,103,2618}},
-	[3]={[1]={"Phï Dao",0,101,2619},
-			 [2]={"Phï Dao",0,101,2620},
-			 [3]={"Phï Dao",0,101,2621},
-			 [4]={"Phï Dao",0,101,2622}},
-	[4]={[1]={"Ngù Phong",0,100,2623},
-			 [2]={"Ngù Phong",0,100,2624},
-			 [3]={"Ngù Phong",0,100,2625},
-			 [4]={"Ngù Phong",0,100,2626}}	
+	[3]={[1]={"Phu Dao",0,101,2619},
+			 [2]={"Phu Dao",0,101,2620},
+			 [3]={"Phu Dao",0,101,2621},
+			 [4]={"Phu Dao",0,101,2622}},
+	[4]={[1]={"Ngu Phong",0,100,2623},
+			 [2]={"Ngu Phong",0,100,2624},
+			 [3]={"Ngu Phong",0,100,2625},
+			 [4]={"Ngu Phong",0,100,2626}}	
 	}
 	
 --Ã±×Ó¿ã×ÓÊôÐÔÒ»£¬ÊôÐÔÃû ÊôÐÔµÈ¼¶ Ä§·¨id
 tMzAttriOne = {
 	[2]={"Ph¸t huy tèc ®é 15%",2,276},
-	[3]={"Sinh mÖnh tèi ®a 12%",4,253}
+	[3]={"Maximum health 12%",4,253}
 	}
 
 --ÒÂ·þÊôÐÔÒ»
@@ -159,38 +159,38 @@ tSsAttri = {
 --×îÖÕÎäÆ÷½±Àø
 tFinalWp = {
 	[2]={"Hoµn ¶nh §ao",0,3,2530},
-	[3]={"Lu©n ¶nh Tr­îng",0,8,2530},
+	[3]={"Lun Ying Staff",0,8,2530},
 	[4]={"HuyÒn ¶nh Thñ",0,0,2530},
-	[6]={"Du ¶nh Ch©m",0,1,2530},
+	[6]={"You Ying Needle",0,1,2530},
 	[8]={"Linh ¶nh KiÕm",0,2,2530},
-	[9]={"BÝch ¶nh CÇm",0,10,2530},
+	[9]={"Bi Ying Zither",0,10,2530},
 	[11]={"B«n ¶nh Thñ",0,0,2531},
 	[12]={"Ph¸ ¶nh C«n",0,5,2530},
 	[14]={"DËt ¶nh KiÕm",0,2,2531},
-	[15]={"Phong ¶nh Bót",0,9,2530},
-	[17]={"Ngù ¶nh Th­¬ng",0,6,2530},
+	[15]={"Phong Ying Brush",0,9,2530},
+	[17]={"Ngu Ying Spear",0,6,2530},
 	[18]={"Hång ¶nh Cung",0,4,2530},
-	[20]={"U ¶nh NhÉn",0,7,2530},
-	[21]={"Thùc ¶nh Tr¶o",0,11,2530}
+	[20]={"You Ying Ring",0,7,2530},
+	[21]={"Thuc Ying Claw",0,11,2530}
 	}
 
 
 --×îÖÕÎäÆ÷random
 tFinalRand = {
 	[1]={"Hoµn ¶nh §ao",0,3,2530},
-	[2]={"Lu©n ¶nh Tr­îng",0,8,2530},
+	[2]={"Lun Ying Staff",0,8,2530},
 	[3]={"HuyÒn ¶nh Thñ",0,0,2530},
-	[4]={"Du ¶nh Ch©m",0,1,2530},
+	[4]={"You Ying Needle",0,1,2530},
 	[5]={"Linh ¶nh KiÕm",0,2,2530},
-	[6]={"BÝch ¶nh CÇm",0,10,2530},
+	[6]={"Bi Ying Zither",0,10,2530},
 	[7]={"B«n ¶nh Thñ",0,0,2531},
 	[8]={"Ph¸ ¶nh C«n",0,5,2530},
 	[9]={"DËt ¶nh KiÕm",0,2,2531},
-	[10]={"Phong ¶nh Bót",0,9,2530},
-	[11]={"Ngù ¶nh Th­¬ng",0,6,2530},
+	[10]={"Phong Ying Brush",0,9,2530},
+	[11]={"Ngu Ying Spear",0,6,2530},
 	[12]={"Hång ¶nh Cung",0,4,2530},
-	[13]={"U ¶nh NhÉn",0,7,2530},
-	[14]={"Thùc ¶nh Tr¶o",0,11,2530}
+	[13]={"You Ying Ring",0,7,2530},
+	[14]={"Thuc Ying Claw",0,11,2530}
 	}
 
 --ÎäÆ÷ÊôÐÔÒ»
@@ -223,7 +223,7 @@ function give_zb_award(nId)
 		Msg2Player("Chóc mõng b¹n ®· nhËn ®­îc 1 "..tZbAward[nId][sBody][1]);
 		SetTask(TASK_GET_AWARD,1);
 	else
-		WriteLog("NhiÖm vô T©y B¾c: Ng­êi ch¬i"..GetName().."Thu trang bÞ thÊt b¹i, ký hiÖu thÊt b¹i:"..add_flog);
+		WriteLog("Northwest Quest: Player"..GetName().."Thu trang bÞ thÊt b¹i, ký hiÖu thÊt b¹i:"..add_flog);
 	end	
 end	
 
@@ -237,7 +237,7 @@ function give_ss_award(nId)
 		Msg2Player("Chóc mõng b¹n ®· nhËn ®­îc 1 "..tSsAward[nId][1]);
 		SetTask(TASK_GET_AWARD,1);
 	else
-		WriteLog("NhiÖm vô T©y B¾c: Ng­êi ch¬i"..GetName().."Thu trang søc thÊt b¹i, ký hiÖu thÊt b¹i:"..add_flog);
+		WriteLog("Northwest Quest: Player"..GetName().."Thu trang søc thÊt b¹i, ký hiÖu thÊt b¹i:"..add_flog);
 	end
 end
 
@@ -247,7 +247,7 @@ function give_wp_award(nId)
 	if nRoute == 0 or nRoute == 1 or nRoute == 5 or nRoute == 7 or nRoute == 10 or nRoute == 13 or nRoute == 16 or nRoute == 19 then
 		Say("<color=green>KhÊu ChuÈn<color>: Do b¹n ch­a chän ®­êng tu luyÖn vâ c«ng, nªn tÆng b¹n mét mãn vò khÝ ngÉu nhiªn, ®ång ý chø?",
 			2,
-			"§ång ý/#confirm_wp_award("..nId..")",
+			"Agree/#confirm_wp_award("..nId..")",
 			"Sau khi ta b¸i s­ sÏ ®Õn l·nh th­ëng/nothing")
 	else
 		confirm_wp_award(nId);
@@ -275,7 +275,7 @@ function confirm_wp_award(nId)
 		 Msg2Player("Chóc mõng b¹n ®· nhËn ®­îc 1 "..tRand[n][1]);
 		 SetTask(TASK_GET_AWARD,1);
 		else
-		 WriteLog("NhiÖm vô T©y B¾c: Ng­êi ch¬i"..GetName().."Thu vò khÝ thÊt b¹i, ký hiÖu thÊt b¹i: "..add_flog);
+		 WriteLog("Northwest Quest: Player"..GetName().."Thu vò khÝ thÊt b¹i, ký hiÖu thÊt b¹i: "..add_flog);
 		end
 	else
 		local add_flog = AddItem(tAward[nRoute][2],tAward[nRoute][3],tAward[nRoute][4],1,1,-1,-1,-1,-1,-1,-1);
@@ -283,7 +283,7 @@ function confirm_wp_award(nId)
 			Msg2Player("Chóc mõng b¹n ®· nhËn ®­îc 1 "..tAward[nRoute][1]);
 			SetTask(TASK_GET_AWARD,1);
 		else
-			WriteLog("NhiÖm vô T©y B¾c: Ng­êi ch¬i"..GetName().."Thu vò khÝ thÊt b¹i, ký hiÖu thÊt b¹i: "..add_flog);
+			WriteLog("Northwest Quest: Player"..GetName().."Thu vò khÝ thÊt b¹i, ký hiÖu thÊt b¹i: "..add_flog);
 		end
 	end 
 end
@@ -292,8 +292,8 @@ end
 function final_award()
 	local strtab = {
 		"Trang søc/#confirm_choose(1)",
-		"M·o/#confirm_choose(2)",
-		"QuÇn /#confirm_choose(3)",
+		"Hat/#confirm_choose(2)",
+		"Pants/#confirm_choose(3)",
 		"Y phôc/#confirm_choose(4)",
 		"Vò khÝ/#confirm_choose(5)",
 		"Sau nµy ®æi l¹i/nothing"
@@ -304,19 +304,19 @@ function final_award()
 end
 
 function confirm_choose(nId)
-	local tZb = {"Trang søc","M·o","QuÇn ","Y phôc","Vò khÝ"};
+	local tZb = {"Trang søc","Helmet","Pants","Y phôc","Vò khÝ"};
 	local nRoute = GetPlayerRoute();
 	if nId == 5 then
 		if nRoute == 0 or nRoute == 1 or nRoute == 5 or nRoute == 7 or nRoute == 10 or nRoute == 13 or nRoute == 16 or nRoute == 19 then
 			Say("<color=green>KhÊu ChuÈn<color>: Do b¹n ch­a chän ®­êng tu luyÖn vâ c«ng, nªn tÆng b¹n mét mãn vò khÝ ngÉu nhiªn, ®ång ý chø?",
 				2,
-				"§ång ý/#give_final_award("..nId..")",
+				"Agree/#give_final_award("..nId..")",
 				"Ta chän nhÇm råi, chän l¹i/final_award");
 		end
 	end		
-	Say("<color=green>KhÊu ChuÈn<color>: B¹n chän trang bÞ muèn ®æi lµ "..tZb[nId]..". §æi chø?",
+	Say("<color=green>KhÊu ChuÈn<color>: B¹n chän trang bÞ muèn ®æi lµ "..tZb[nId]..". Exchange it?",
 		2,
-		"§ång ý/#give_final_award("..nId..")",
+		"Agree/#give_final_award("..nId..")",
 		"Ta chän nhÇm råi, chän l¹i/final_award");
 end
 
@@ -451,7 +451,7 @@ end
 function confirm_shoushi(nId,nOne)
 	Say("<color=green>KhÊu ChuÈn<color>: B¹n chän thuéc tÝnh dßng 1 xuÊt hiÖn trªn trang søc<color=yellow>: "..tSsAttri[nOne][1].."<color>, thuéc tÝnh cè ®Þnh thø hai lµ: <color=yellow>"..tSsAttri[nOne][4].."<color>, x¸c ®Þnh ch­a?",
 		2,
-		"§ång ý/#confirm_final("..nId..","..nOne..")",
+		"Agree/#confirm_final("..nId..","..nOne..")",
 		"Chän sai råi, ta muèn chän l¹i/give_final_award("..nId..")"
 		)	
 end
@@ -459,7 +459,7 @@ end
 function confirm_maozi(nId,nOne)
 	Say("<color=green>KhÊu ChuÈn<color>: B¹n chän thuéc tÝnh dßng 2 xuÊt hiÖn trªn nãn<color=yellow>: "..tAttriTwo[nOne][1].."<color>, x¸c ®Þnh ch­a?",
 		2,
-		"§ång ý/#confirm_final("..nId..","..nOne..")",
+		"Agree/#confirm_final("..nId..","..nOne..")",
 		"Chän sai råi, ta muèn chän l¹i/give_final_award("..nId..")"
 		)
 end
@@ -467,7 +467,7 @@ end
 function confirm_kuzi(nId,nOne)
 	Say("<color=green>KhÊu ChuÈn<color>: B¹n chän thuéc tÝnh dßng 2 xuÊt hiÖn trªn quÇn<color=yellow>: "..tAttriTwo[nOne][1].."<color>, x¸c ®Þnh ch­a?",
 		2,
-		"§ång ý/#confirm_final("..nId..","..nOne..")",
+		"Agree/#confirm_final("..nId..","..nOne..")",
 		"Chän sai råi, ta muèn chän l¹i/give_final_award("..nId..")"
 		)
 end
@@ -476,7 +476,7 @@ end
 function confirm_yifu(nId,nOne)
 	Say("<color=green>KhÊu ChuÈn<color>: B¹n chän thuéc tÝnh dßng 1 xuÊt hiÖn trªn ¸o<color=yellow>: "..tYfAttriOne[nOne][1].."<color>, x¸c ®Þnh ch­a?",
 		2,
-		"§ång ý/#choose_yifu_two("..nId..","..nOne..")",
+		"Agree/#choose_yifu_two("..nId..","..nOne..")",
 		"Chän sai råi, ta muèn chän l¹i/give_final_award("..nId..")"
 		);
 end
@@ -495,7 +495,7 @@ end
 function confirm_yifu_two(nId,nOne,nTwo)
 	Say("<color=green>KhÊu ChuÈn<color>: B¹n chän thuéc tÝnh dßng 2 xuÊt hiÖn trªn ¸o<color=yellow>: "..tAttriTwo[nTwo][1].."<color>, x¸c ®Þnh ch­a?",
 		2,
-		"§ång ý/#confirm_final("..nId..","..nOne..","..nTwo..")",
+		"Agree/#confirm_final("..nId..","..nOne..","..nTwo..")",
 		"Chän sai råi, ta muèn chän l¹i/choose_yifu_two("..nId..","..nOne..")"
 		);	
 end
@@ -503,7 +503,7 @@ end
 function confirm_wuqi(nId,nOne)
 	Say("<color=green>KhÊu ChuÈn<color>: B¹n chän thuéc tÝnh dßng 1 xuÊt hiÖn trªn vò khÝ<color=yellow>: "..tWpAttriOne[nOne][1].."<color>, x¸c ®Þnh ch­a?",
 		2,
-		"§ång ý/#choose_wuqi_two("..nId..","..nOne..")",
+		"Agree/#choose_wuqi_two("..nId..","..nOne..")",
 		"Chän sai råi, ta muèn chän l¹i/give_final_award("..nId..")"
 		);	
 end
@@ -522,7 +522,7 @@ end
 function confirm_wuqi_two(nId,nOne,nTwo)
 	Say("<color=green>KhÊu ChuÈn<color>: B¹n chän thuéc tÝnh dßng 2 xuÊt hiÖn trªn vò khÝ<color=yellow>: "..tWpAttriTwo[nTwo][1].."<color>, thuéc tÝnh cè ®Þnh thø ba lµ: <color=yellow>"..tWpAttriThree[1].."<color>, x¸c ®Þnh ch­a?",
 		2,
-		"§ång ý/#confirm_final("..nId..","..nOne..","..nTwo..")",
+		"Agree/#confirm_final("..nId..","..nOne..","..nTwo..")",
 		"Chän sai råi, ta muèn chän l¹i/choose_wuqi_two("..nId..","..nOne..")"
 		);	
 end
@@ -616,7 +616,7 @@ function confirm_final(nId,nOne,nTwo)
 			Msg2Player("Chóc mõng b¹n, ®· ®æi thµnh c«ng"..sName);
 			SetTask(TASK_GET_AWARD,1);
 		else
-			WriteLog("NhiÖm vô T©y B¾c: Ng­êi ch¬i"..GetName().."Thu trang bÞ sau cïng thÊt b¹i, log: "..add_flog);
+			WriteLog("Northwest Quest: Player"..GetName().."Thu trang bÞ sau cïng thÊt b¹i, log: "..add_flog);
 		end 
 end
 

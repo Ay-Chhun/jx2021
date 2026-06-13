@@ -12,7 +12,7 @@
 function OnUse()
 	Say("B¹n muèn dïng <color=yellow>Phông HuyÕt hoµn<color>? Sau khi phôc dïng ®é cèng hiÕn s­ m«n sÏ ®¹t 4000 ®iÓm.",
 		2,
-		"§­îc/use_fengxue_wan",
+		"Confirm/use_fengxue_wan",
 		"Kh«ng sö dông/cancel_dialog")
 end;
 

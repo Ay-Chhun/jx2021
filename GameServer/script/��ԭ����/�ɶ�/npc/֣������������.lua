@@ -1,7 +1,7 @@
 function main()
 	UWorld1508 = GetTask(1508)
 	if  UWorld1508 == 15   then
-		Say("ThÞt heo 50 ®ång mét c©n, ng­¬i mua bao nhiªu?",2,"Mua 1 c©n thÞt heo!/yes1508","Kh«ng mua!/no1508")
+		Say("ThÞt heo 50 ®ång mét c©n, ng­¬i mua bao nhiªu?",2,"Buy 1 catty of pork!/yes1508","Don't buy!/no1508")
 	else
 		Talk(1,"","TrÞnh mç ta mæ heo ®· 20 n¨m, ®­îc mäi ng­êi phong cho biÖt hiÖu lµ TrÊn Quan T©y coi nh­ còng kh«ng uæng kiÕp nµy! Nh­ng b©y giê cã chuyÖn x¶y ra, e r»ng ®Õn ta còng kh«ng b¸n ®­îc thÞt heo.")
 	end

@@ -6,14 +6,14 @@
 VET_201012_03_STR_LOG_TITLE = "Hoat dong Suoi Am Dem Dong";--±¾´Î»î¶¯ÈÕÖ¾±êÌâ
 
 VET_201012_03_TB_LOG_ACTION_LIST = {
-    [1] = "Mua cñi",
+    [1] = "Buy firewood",
     [2] = "KÝch ho¹t löa tr¹i s­ëi Êm",
 };
 
 VET_201012_03_TB_STRING_LIST = {
     [1] = "KÝch ho¹t löa tr¹i",
     [2] = "Mua cñi (cÇn 20 vµng)",
-    [3] = "KÕt thóc ®èi tho¹i",
+    [3] = "End conversation",
     [4] = "TiÒn vµng ®¹i hiÖp mang theo kh«ng ®ñ.",
     [5] = "ChØ cã ®éi tr­ëng míi cã thÓ kÝch ho¹t löa tr¹i",
     [6] = "Tæ ®éi 2 ng­êi trë lªn míi cã thÓ kÝch ho¹t löa tr¹i",
@@ -26,7 +26,7 @@ VET_201012_03_TB_STRING_LIST = {
 };
 
 VET_201012_03_TB_ITEM_LIST = {
-    [1] = {"Cñi",2,1,30264},
+    [1] = {"Firewood",2,1,30264},
 };
 
 VET_201012_03_TB_MAPID = {

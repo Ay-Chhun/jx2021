@@ -14,7 +14,7 @@ function main()
 		format("%s/%s","NhiÖm vô ngµy","dxg_daily_task_menu"),
 		"V­ît ¶i th­êng/entry_jingli",
 		"V­ît ¶i Thiªn Kiªu/#entry_tianjiaoling(0)",
-		"\nKÕt thóc ®èi tho¹i/nothing",
+		"\nEnd conversation/nothing",
 	}	
 	Say(DXG_NPC_NAME.."Kh«ng ngê c¸c b»ng h÷u vâ l©m v× ®Õn chóc mõng ph¸i K«n L«n ta mµ gÆp n¹n, ta thËt ¸y n¸y. NhÊt ®Þnh ph¶i cøu hä ra, tiªu diÖt Thiªn ©m gi¸o. \n sè l­u ph¸i trong tæ ®éi cµng nhiÒu gi¶i th­ëng cµng tèt.", getn(tSay), tSay);
 end
@@ -25,7 +25,7 @@ end
 function entry_tianjiaoling(bSure)
 	if not bSure or 0 == bSure then
 		local tSay = {
-				"§ång ý/#entry_tianjiaoling(1)",
+				"Agree/#entry_tianjiaoling(1)",
 				"Ta chØ ghÐ qua th«i/nothing",
 				}
 			Say(format("D¹ng Thiªn Kiªu cÇn <color=red>%d c¸i %s (Cã thÓ mua trong Ngù C¸c)<color> ®ång ý kh«ng?",N_JOIN_TIANJIAOLING_NEED, T_TIANJIAOLING[4]),getn(tSay),tSay)
@@ -43,8 +43,8 @@ function dxg_info()
 	tbSay.msg = DXG_NPC_NAME..tbBody;
 	tbSay.sel = {
 		{"Ta muèn t×m hiÓu v­ît ¶i nh­ thÕ nµo", "dxg_info1"},
-		{"\n Ph¶n håi","main"},
-		{"Ra khái","nothing"},
+		{"\n Feedback","main"},
+		{"Exit","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -56,8 +56,8 @@ function dxg_info1()
 	local tbSay = {};
 	tbSay.msg = DXG_NPC_NAME..tbBody;
 	tbSay.sel = {
-		{"\n Ph¶n håi","main"},
-		{"Ra khái","nothing"},
+		{"\n Feedback","main"},
+		{"Exit","nothing"},
 	};
 	temp_Talk(tbSay);
 end

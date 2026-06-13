@@ -7,11 +7,11 @@ function OnUse(nItem)
 	local szItemName = GetItemName(nItem)
 	local tName2Id = {
 		["Vπn Hoa ß¨n"] = {"state_critical_point_increase", 30, 300*18, 10031, 1},
-		["Kh∏ng Long T∏n"] = {"state_critical_damage_increase", 50, 300*18, 10032, 2},
-		["Ninh H≠ ß¨n"] = {"state_def_critical_point_increase", 20, 300*18, 10033, 3},
+		["Anti-Dragon Powder"] = {"state_critical_damage_increase", 50, 300*18, 10032, 2},
+		["Ningxu Pill"] = {"state_def_critical_point_increase", 20, 300*18, 10033, 3},
 		["Tri”n PhÙng T∏n"] = {"state_def_critical_damage_increase", 50, 300*18, 10034, 4},
-		["Ti’t CËt T∏n"] = {"state_receive_half_damage", 15, 300*18, 10035, 5},
-		["Ph∏ Qu©n ß¨n"] = {"state_destiny_attack_point_add", 300, 300*18, 10036, 6},
+		["Severing Bone Powder"] = {"state_receive_half_damage", 15, 300*18, 10035, 5},
+		["Army-Breaking Pill"] = {"state_destiny_attack_point_add", 300, 300*18, 10036, 6},
 	}
 	if not tName2Id[szItemName] then
 		return 0;

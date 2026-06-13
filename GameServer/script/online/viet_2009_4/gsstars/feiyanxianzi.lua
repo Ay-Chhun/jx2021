@@ -21,8 +21,8 @@ GS_AWARD_PARAM = {
 							"Phong th­ëng lÖnh_Tèng (Tiªn Phong)",
 							"Phong th­ëng lÖnh_Liªu (Tiªn Phong)",
 							"Qu©n C«ng §¹i",
-							"Sæ tay sèng",
-							"TÈy Tñy linh ®¬n",
+							"Living Notebook",
+							"Marrow-Cleansing Spirit Pill",
 							"B¸t B¶o TÈy Tñy Tiªn §¬n",
 							"Phong th­ëng lÖnh_Tèng (T­íng Qu©n)",
 							"Phong th­ëng lÖnh_Liªu (T­íng Qu©n)"
@@ -61,7 +61,7 @@ function main()
 		"200" .. "Lóa m¹ch qu©n dông" .. "(CÇn 1 Ng«i Sao Vµng)/#GSStarsGetReward(2, 2, 0, 309, 200, 1, 0)",
 		"200" .. "Kho¸ng th¹ch qu©n dông" .. "(CÇn 1 Ng«i Sao Vµng)/#GSStarsGetReward(3, 2, 0, 307, 200, 1, 0)",
 		"200" .. "Linh huyÕt qu©n dông" .. "(CÇn 1 Ng«i Sao Vµng)/#GSStarsGetReward(4, 2, 0, 313, 200, 1, 0)",
-		"Trang kÕ.../Feiyanxianzi_talk_1",
+		"Next page.../Feiyanxianzi_talk_1",
 		"T¹i h¹ chØ ghÐ ngang!/GSStarsDoNothing"
 	)
 end
@@ -72,7 +72,7 @@ end
 --------------------------------------
 function GSStarsLevelSToG()
 -----ÅÐ¶Ï±³°üºÍ¸ºÖØ------------------------
-	if gf_Judge_Room_Weight(1, 0, "Xin lçi, ") == 0 then
+	if gf_Judge_Room_Weight(1, 0, "Sorry,") == 0 then
 		return 0
 	end
 -----Ç®²»¹»--------	
@@ -86,7 +86,7 @@ function GSStarsLevelSToG()
 		return 0;
 	end
 	if Pay(GSSTARS_LEVEL_TO_GSTAR_MONEY) ~= 1 then
-		WriteLog("[Ho¹t ®éng ng«i sao vµng ng«i sao b¹c th¸ng 4]:" .. GetName() .. "Chi tr¶".. GSSTARS_LEVEL_TO_GSTAR_MONEY .. " xu thÊt b¹i");
+		WriteLog("[Ho¹t ®éng ng«i sao vµng ng«i sao b¹c th¸ng 4]:" .. GetName() .. "Pay".. GSSTARS_LEVEL_TO_GSTAR_MONEY .. " xu thÊt b¹i");
 		return 0;
 	end
 	
@@ -115,7 +115,7 @@ function GSStarsGetReward(nID, nMainType, nSecondryType, nDetailType, nCount, nG
 --		return 0;
 --	end
 -----ÅÐ¶Ï±³°üºÍ¸ºÖØ------------------------
-	if gf_Judge_Room_Weight(1, 200, "Xin lçi, ") == 0 then
+	if gf_Judge_Room_Weight(1, 200, "Sorry,") == 0 then
 		return 0
 	end
 	
@@ -149,7 +149,7 @@ function Feiyanxianzi_talk_1()
 			"§æi thµnh " .. "Phong th­ëng lÖnh_Liªu (§« Thèng)" .. "(CÇn 100 Ng«i Sao Vµng)/#GSStarsGetReward(10, 2, 1, 9989, 1, 100, 1)",
 			"§æi thµnh " .. "Phong th­ëng lÖnh_Tèng (Tiªn Phong)" .. "(CÇn 300 Ng«i Sao Vµng)/#GSStarsGetReward(11, 2, 1, 9986, 1, 300, 1)",
 			"§æi thµnh " .. "Phong th­ëng lÖnh_Liªu (Tiªn Phong)" .. "(CÇn 300 Ng«i Sao Vµng)/#GSStarsGetReward(12, 2, 1, 9985, 1, 300, 1)",
-			"Trang kÕ.../Feiyanxianzi_talk_2",
+			"Next page.../Feiyanxianzi_talk_2",
 			"trë l¹i/main",
 			"T¹i h¹ chØ ghÐ ngang!/GSStarsDoNothing"
 			);
@@ -158,8 +158,8 @@ end
 function Feiyanxianzi_talk_2()
 	Say("", 8, 
 			"§æi thµnh " .. "Qu©n C«ng §¹i" .. "(CÇn 200 Ng«i Sao Vµng)/#GSStarsGetReward(13, 2, 1, 9998, 1, 200, 1)",
-			"§æi thµnh " .. "Sæ tay sèng" .. "(CÇn 500 Ng«i Sao Vµng)/#GSStarsGetReward(14, 2, 19, 1, 1, 500, 1)",
-			"§æi thµnh " .. "TÈy Tñy linh ®¬n" .. "(CÇn 600 Ng«i Sao Vµng)/#GSStarsGetReward(15, 2, 0, 137, 1, 600, 1)",
+			"§æi thµnh " .. "Living Notebook" .. "(CÇn 500 Ng«i Sao Vµng)/#GSStarsGetReward(14, 2, 19, 1, 1, 500, 1)",
+			"§æi thµnh " .. "Marrow-Cleansing Spirit Pill" .. "(CÇn 600 Ng«i Sao Vµng)/#GSStarsGetReward(15, 2, 0, 137, 1, 600, 1)",
 			"§æi thµnh " .. "B¸t B¶o TÈy Tñy Tiªn §¬n" .. "(CÇn 800 Ng«i Sao Vµng)/#GSStarsGetReward(16, 2, 0, 138, 1, 800, 1)",
 			"§æi thµnh " .. "Phong th­ëng lÖnh_Tèng (T­íng Qu©n)" .. "(CÇn 400 Ng«i Sao Vµng)/#GSStarsGetReward(17, 2, 1, 9984, 1, 400, 1)",
 			"§æi thµnh " .. "Phong th­ëng lÖnh_Liªu (T­íng Qu©n)" .. "(CÇn 400 Ng«i Sao Vµng)/#GSStarsGetReward(18, 2, 1, 9983, 1, 400, 1)",

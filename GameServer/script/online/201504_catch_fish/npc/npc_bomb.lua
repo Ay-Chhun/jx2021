@@ -17,7 +17,7 @@ function npc_talk_main()
 		local sel = format("Bá vµo %s",name)
 		tinsert(tbSay, format("%s/#insert_bomb(%d)", sel, i))
 	end
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 	
 	Say(szTitle, getn(tbSay), tbSay)
 end

@@ -36,7 +36,7 @@ function main_kf_newbattle()
 	local selTab = {
 			"Ta muèn tham gia"..tBattleName[EMPLACEMENT_ID].."chiÕn tr­êng [Tèng "..nSongPlayerCount.." ng­êi]: [Liªu "..nLiaoPlayerCount.." ng­êi]/#join_battle("..EMPLACEMENT_ID..")",
 			"Ta muèn ®­îc h­íng dÉn vÒ chiÕn tr­êng/get_battle_book",
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 	}
 	
 	Say("<color=green>"..g_sNpcName..format("<color>: ChiÕn tr­êng phÝa tr­íc ®· khai háa, %s muèn tham gia kh«ng?", gf_GetPlayerSexName()),getn(selTab),selTab);
@@ -115,7 +115,7 @@ function get_kf_pt_award()
 	tinsert(tSay.sel, {"Qu©n c«ng ®¹i nhËn th­ëng", "#get_kf_pt_award_deal(3)"})
 	tinsert(tSay.sel, {"Qu©n c«ng huy hoµng nhËn th­ëng", "#get_kf_pt_award_deal(4)"})
 	tinsert(tSay.sel, {"Vinh Dù Qu©n C«ng Ch­¬ng nhËn th­ëng", "#get_kf_pt_award_deal(5)"})
-	tinsert(tSay.sel, {"Ra khái", "nothing"})
+	tinsert(tSay.sel, {"Exit", "nothing"})
 	tSay.msg = "<color=green>"..g_sNpcName.."<color>: "..strTemp;
 	temp_Talk(tSay);
 end
@@ -206,7 +206,7 @@ function get_kf_pt_award_deal(nKind)
 	
 	--¸ø½±Àø
 	gf_Modify("Exp", tAwardRet[1] * tAwardType[nKind][1]);
-	gf_EventGiveCustomAward(31, tAwardRet[2] * tAwardType[nKind][2], 1, "Ph¸o §µi ChiÕn Liªn Server", tAwardType[nKind][4]);
+	gf_EventGiveCustomAward(31, tAwardRet[2] * tAwardType[nKind][2], 1, "Fortress Battle Cross-Server", tAwardType[nKind][4]);
 	local funcPackAward = function (tParam)
 		if not tParam or getn(tParam) ~= 2 then
 			return 0;
@@ -221,9 +221,9 @@ function get_kf_pt_award_deal(nKind)
 				{27, 100, 1000, 1},
 				{34, 75, 60, 1},
 				{35, 25, 60, 1},
-				{1, 150, "VÐ TiÕu Y §ång", {2, 1, 30493, 1}, 0},
-				{1, 100, "VÐ TiÕu Y §ång", {2, 1, 30493, 2}, 0},
-				{1, 50, "VÐ TiÕu Y §ång", {2, 1, 30493, 4}, 0},
+				{1, 150, "Bronze Tieu Y Token", {2, 1, 30493, 1}, 0},
+				{1, 100, "Bronze Tieu Y Token", {2, 1, 30493, 2}, 0},
+				{1, 50, "Bronze Tieu Y Token", {2, 1, 30493, 4}, 0},
 				{1, 100, "ThiÕt Tinh cÊp 1", {2, 1, 30533, 4}, 0},
 			},
 			[2] = {
@@ -235,9 +235,9 @@ function get_kf_pt_award_deal(nKind)
 				{27, 100, 1500, 1},
 				{34, 40, 60, 1},
 				{35, 10, 60, 1},
-				{1, 200, "VÐ TiÕu Y §ång", {2, 1, 30493, 2}, 0},
-				{1, 100, "VÐ TiÕu Y §ång", {2, 1, 30493, 4}, 0},
-				{1, 50, "VÐ TiÕu Y B¹c", {2, 1, 30492, 1}, 0},
+				{1, 200, "Bronze Tieu Y Token", {2, 1, 30493, 2}, 0},
+				{1, 100, "Bronze Tieu Y Token", {2, 1, 30493, 4}, 0},
+				{1, 50, "Silver Tieu Y Token", {2, 1, 30492, 1}, 0},
 				{1, 120, "ThiÕt Tinh cÊp 1", {2, 1, 30533, 4}, 0},
 				{1, 100, "ThiÕt Tinh cÊp 2", {2, 1, 30534, 4}, 0},
 			},
@@ -250,9 +250,9 @@ function get_kf_pt_award_deal(nKind)
 				{27, 100, 2500, 1},
 				{35, 75, 60, 1},
 				{36, 25, 60, 1},
-				{1, 100, "VÐ TiÕu Y B¹c", {2, 1, 30493, 1}, 0},
-				{1, 100, "VÐ TiÕu Y B¹c", {2, 1, 30493, 2}, 0},
-				{1, 50, "VÐ TiÕu Y B¹c", {2, 1, 30492, 4}, 0},
+				{1, 100, "Silver Tieu Y Token", {2, 1, 30493, 1}, 0},
+				{1, 100, "Silver Tieu Y Token", {2, 1, 30493, 2}, 0},
+				{1, 50, "Silver Tieu Y Token", {2, 1, 30492, 4}, 0},
 				{1, 50, "ThiÕt Tinh cÊp 1", {2, 1, 30533, 4}, 0},
 				{1, 50, "ThiÕt Tinh cÊp 2", {2, 1, 30534, 4}, 0},
 				{1, 40, "ThiÕt Tinh cÊp 3", {2, 1, 30535, 4}, 0},
@@ -260,15 +260,15 @@ function get_kf_pt_award_deal(nKind)
 		}
 		local tTempAdd = {
 			[1] = {
-				{1, "Hu©n ch­¬ng anh hïng", {2, 1, 30499, 1}, 0},
+				{1, "Hero's Medal", {2, 1, 30499, 1}, 0},
 				{28, 300, 1},--ÕæÆø
 			},
 			[2] = {
-				{1, "Hu©n ch­¬ng anh hïng", {2, 1, 30499, 2}, 0},
+				{1, "Hero's Medal", {2, 1, 30499, 2}, 0},
 				{28, 400, 1},--ÕæÆø
 			},
 			[3] = {
-				{1, "Hu©n ch­¬ng anh hïng", {2, 1, 30499, 6}, 0},
+				{1, "Hero's Medal", {2, 1, 30499, 6}, 0},
 				{28, 500, 1},--ÕæÆø
 			},
 		}
@@ -278,8 +278,8 @@ function get_kf_pt_award_deal(nKind)
 			return 0;
 		end
 		for i = 1, tParam[2] do
-			gf_EventGiveRandAward(ttAward, gf_SumRandBase(ttAward), 1, "Ph¸o §µi ChiÕn Liªn Server", "Ph¸o §µi ChiÕn Liªn Server");
-			gf_EventGiveAllAward(ttAwardAdd, "Ph¸o §µi ChiÕn Liªn Server", "Ph¸o §µi ChiÕn Liªn Server");
+			gf_EventGiveRandAward(ttAward, gf_SumRandBase(ttAward), 1, "Fortress Battle Cross-Server", "Fortress Battle Cross-Server");
+			gf_EventGiveAllAward(ttAwardAdd, "Fortress Battle Cross-Server", "Fortress Battle Cross-Server");
 		end
 	end
 	funcPackAward(tAwardRet[3]);

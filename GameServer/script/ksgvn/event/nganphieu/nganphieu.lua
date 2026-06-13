@@ -31,7 +31,7 @@ function _nganPhieu_ExchangeShowInput(nIndex)
         return KsgNpc:FormalTalk(g_szNpcName, format("thËt cã mang theo <color=yellow>%d %s<color> tíi ­? Ta kh«ng nh×n nhÇm chø?", tbExchangeCfg.nNeedNum, tbExchangeCfg.szName))
     else
         g_tbCurrentExchange[GetName()] = nIndex
-        AskClientForNumber("_nganPhieu_DoExchange", 0, floor(nHaveItemCount / tbExchangeCfg.nNeedNum), "NhËp sè l­îng ®æi")
+        AskClientForNumber("_nganPhieu_DoExchange", 0, floor(nHaveItemCount / tbExchangeCfg.nNeedNum), "Enter the amount to exchange")
     end
 
 end

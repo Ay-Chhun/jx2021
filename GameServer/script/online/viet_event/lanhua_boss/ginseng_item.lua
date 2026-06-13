@@ -35,6 +35,6 @@ function OnUse(nItemIdx)
 		ModifyExp(nItemNum)
 		Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." "..szItemName)
 		SetTask(TASK_ID_GINSENG_NUM, (GetTask(TASK_ID_GINSENG_NUM) + 1))
-		WriteLogEx(g_szLogTitle, "NhËn ®­îc", nItemNum, szItemName, szInfoDescribe, GetTongName() )
+		WriteLogEx(g_szLogTitle, "Received", nItemNum, szItemName, szInfoDescribe, GetTongName() )
 	end
 end

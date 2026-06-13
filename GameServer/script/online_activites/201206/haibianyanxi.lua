@@ -6,7 +6,7 @@ Include("\\script\\meridian\\meridian_script_api.lua")
 
 VET_201206_ACITIVITY_ID = 67;
 
-VET_201206_NPC = "<color=green>Chñ Töu LÇu:<color>";
+VET_201206_NPC = "<color=green>Tavern Owner:<color>";
 
 VET_201206_Say_Tb = {
 	"T¹i h¹ muèn ®ãng gãp Cua Rang Muèi cho buæi tiÖc (tiªu hao 25 Cua Rang Muèi + 25 Vµng)/exchange_one",
@@ -33,10 +33,10 @@ Exp_Award_Final2 = 10000000;
 Item_QCJWJ = 25;
 Item_BDSG = 25;
 Coin_Consume = 25;
-Item_table1 = {2,1,30395,"Cua Rang Muèi"};
-Item_table2 = {2,1,30396,"Cµng GhÑ N­íng Muèi ít"};
+Item_table1 = {2,1,30395,"Salt-Roasted Ribs"};
+Item_table2 = {2,1,30396,"Spicy Salt-Roasted Skewers"};
 Acitivity_log1 = "Ho¹t ®éng Buæi TiÖc Ven BiÓn th¸ng 7";
-Acitivity_log2 = "Nguyªn liÖu ®ãng gãp";
+Acitivity_log2 = "Contributed Ingredients";
 Zhenqi_value1 = 10;
 Zhenqi_value2 = 30;
 strMsg2Player1 = "C¸c h¹ ®· lÇn thø %d ®ãng gãp %s cho buæi tiÖc råi";
@@ -46,7 +46,7 @@ strMsg2Player3 = "C¸c h¹ ®· lÇn thø %d ®ãng gãp %s vµ %s cho buæi tiÖc råi";
 --½±Àø±í
 Vet_201206_Award  = {
     {1, 1919, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 0},
-    {1, 1502, "§Êu hån", {2, 1, 1157, 1}, 7 * 24 * 3600},
+    {1, 1502, "Soul Duel", {2, 1, 1157, 1}, 7 * 24 * 3600},
     {1, 2918, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 7 * 24 * 3600},
     {1, 888, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
     {1, 111, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},
@@ -55,7 +55,7 @@ Vet_201206_Award  = {
 };
 Vet_201206_Award_Final  = {
     {1, 1919, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 2}, 0},
-    {1, 1838, "§Êu hån", {2, 1, 1157, 1}, 7 * 24 * 3600},
+    {1, 1838, "Soul Duel", {2, 1, 1157, 1}, 7 * 24 * 3600},
     {1, 2525, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 7 * 24 * 3600},
     {1, 522, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
     {1, 200, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},

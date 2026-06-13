@@ -57,7 +57,7 @@ function get_present()
 		return 0
 	end
 	if AddItem(2,0,628,1) == 1 then
-		WriteLog("[Ho¹t ®éng mïa xu©n Phóc ThÇn]:"..GetName().."T¹i"..g_sPlace.."NhËn ®­îc quµ may m¾n cña Phóc ThÇn")
+		WriteLog("[Ho¹t ®éng mïa xu©n Phóc ThÇn]:"..GetName().."At"..g_sPlace.."NhËn ®­îc quµ may m¾n cña Phóc ThÇn")
 		SetTask(TASK_GOT_PRESENT,GetCurDate())
 		Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 hép quµ n¨m míi!")
 		local present_left = GetGlbValue(GLB_PRESENT_NUM) - 1
@@ -98,7 +98,7 @@ function goto_huashan()
 		end
 		local minit_seq_now = floor(GetTime()/60)
 		if minit_seq_now < huashan_in_minit_seq or (huashan_in_minit_seq == minit_seq_now and huashan_in_num_per_minit > huashan_in_num_per_minit_max) then
-			Talk(1,"","Sè ng­êi tham gia ®· ®ñ, xin ®îi"..(((minit_seq_now+1)*60) - GetTime()).." gi©y!")
+			Talk(1,"","Sè ng­êi tham gia ®· ®ñ, xin ®îi"..(((minit_seq_now+1)*60) - GetTime()).." seconds!")
 			return
 		elseif huashan_in_minit_seq > minit_seq_now then
 			huashan_in_num_per_minit = 0
@@ -130,15 +130,15 @@ end
 function spring_info_choice()
 
 	local selTab = {
-			"Online tÆng quµ/#spring_info(1)",
+			"Online gift giving/#spring_info(1)",
 			"Phóc ThÇn ph¸t hång bao/#spring_info(2)",
-			"Móa l©n/#spring_info(3)",
+			"Lion dance/#spring_info(3)",
 			"§o¹t b¶o r­¬ng/#spring_info(4)",
-			"Heo vµng ®em ®Õn c¸t t­êng/#spring_info(5)",
-			"Chóc tÕt/#spring_info(6)",
+			"The golden pig brings good fortune/#spring_info(5)",
+			"New Year greetings/#spring_info(6)",
 			"N¨m míi mÆc ®å míi./#spring_info(7)",
 			"Niªn thó lµm thó c­ìi/#spring_info(8)",
-			"Rêi khái/nothing"
+			"Leave/nothing"
 			}
 	
 	Say("N¨m míi ®Õn råi! Mäi ng­êi chuÈn bÞ thËt nhiÒu quµ, nhÊp vµo tªn ho¹t ®éng t­¬ng øng ®Ó xem chi tiÕt.",getn(selTab),selTab);
@@ -183,7 +183,7 @@ local selTab = {
 	};
 
 	Say("N¨m míi ®· ®Õn, cã rÊt nhiÒu ho¹t ®éng ®Ó nhËn quµ. NhÊp chuét vµo tªn ho¹t ®éng ®Ó xem chi tiÕc! \n"..selTab[nType][1],2,	"trë l¹i/spring_info_choice",
-	"Rêi khái/nothing");
+	"Leave/nothing");
 
 end
 function spr_book_add()

@@ -1,7 +1,7 @@
 Include("\\script\\class\\ktabfile.lua");
 Include("\\script\\online\\abluemoon\\abluemoon_head.lua")
 Include("\\script\\online\\abluemoon\\abluemoon_question_head.lua")
-Include("\\script\\中原二区\\成都\\npc\\镖师.lua")
+Include("\\script\\Central Plains Zone 2\\Chengdu\\npc\\Chef.lua")
 gather_exp = new(KTabFile, "\\settings\\skill\\skills_gather_exp.txt");
 compose_exp = new(KTabFile, "\\settings\\skill\\skills_compose_exp.txt");
 tExp = new(KTabFile, "\\settings\\uplevel.txt");
@@ -9,57 +9,57 @@ tExp = new(KTabFile, "\\settings\\uplevel.txt");
 THIS_FILE = "\\script\\online\\abluemoon\\abluemoon_npc.lua"
 
 function main()
-	Say("<color=green>兔小丫<color>：欢迎参加剑网2第一届科举考试第一季的考试，大侠有胆量挑战一下吗？",7,
-			"来吧，我要挑战你！/abluemoon_go",
-			"我想看看我现在的科考成绩/abluemoon_jifen",
-			"我先看看今天的科考运势如何/abluemoon_luck",
-			"我要领取上次考试的奖励/CheckHappyTimes",
-			"我想看看现在科考的排名/abluemoon_paihang",
+	Say("<color=green>Rabbit Xiao Ya<color>: Welcome to the first season of the first Swordsman Online 2 imperial exam. Do you have the courage to take on the challenge, hero?",7,
+			"Come on, I challenge you! /abluemoon_go",
+			"I want to see my current exam results /abluemoon_jifen",
+			"Let me first check how my exam luck is today /abluemoon_luck",
+			"I want to claim the reward from my last exam /CheckHappyTimes",
+			"I want to see the current exam rankings /abluemoon_paihang",
 			--"我要领取科考外装/abluemoon_cloth",
-			"给我讲讲规则吧/abluemoon_rule",
-			"算了，今天状态不行/end_say"
+			"Explain the rules to me /abluemoon_rule",
+			"Forget it, I'm not in good shape today /end_say"
 			)
 end
 
 function abluemoon_go()
 	if GetLevel() < 50 then
-		Say("<color=green>兔小丫<color>：小于50级的玩家暂时不能参加科举考试，先回去锻炼锻炼吧。",0)
+		Say("<color=green>Rabbit Xiao Ya<color>: Players below level 50 cannot take part in the imperial exam for now. Go back and train a bit more first.",0)
 		return
 	end
 	local nDay = tonumber(date("%y%m%d"))
 	if GetTask(ABLUEMOON_ANSWER_STAGE) ~= 0 then
-		Say("<color=green>兔小丫<color>：你上次考试的奖励好像还没有领取哦，先把奖励领了再来考试吧！",0)
+		Say("<color=green>Rabbit Xiao Ya<color>: It seems you still haven't claimed the reward from your last exam. Claim the reward first, then come back to take the exam!",0)
 		return
 	end
 	if GetTask(ABLUEMOON_QUEST_DATE_PAY) == nDay --如果今天参加的是高经验考试
 		and GetTask(ABLUEMOON_QUEST_COUNT) < GetTask(ABLUEMOON_QUEST_COUNT_MAX) --如果是答题数小于猜拳数
 		and GetTask(ABLUEMOON_QUEST_ROUND) == 1 then  --如果是第一关答题框就消失了
-		Say("<color=green>兔小丫<color>：你上次院试的考试好像还没有结束，你要继续参加院试吗？",2,
-				"\n我要继续参加考试/#abluemoon_cuntinue(1)",
-				"\n我再考虑一下/end_say"
+		Say("<color=green>Rabbit Xiao Ya<color>: It seems your last academy exam hasn't ended yet. Do you want to continue taking the academy exam?",2,
+				"\nI want to continue taking the exam /#abluemoon_cuntinue(1)",
+				"\nLet me think about it again /end_say"
 		)
 	elseif GetTask(ABLUEMOON_QUEST_DATE_PAY) == nDay 
 		and GetTask(ABLUEMOON_QUEST_COUNT) < GetTask(ABLUEMOON_QUEST_RIGHT_COUNT_1st) --如果是第二关答题数小于第一关正确题数
 		and GetTask(ABLUEMOON_QUEST_ROUND) == 2 then  --如果是第二关答题框就消失了
-		Say("<color=green>兔小丫<color>：你上次乡试的考试好像还没有结束，你要继续参加乡试吗？",2,
-				"\n我要继续参加考试/#abluemoon_cuntinue(2)",
-				"\n我再考虑一下/end_say"
+		Say("<color=green>Rabbit Xiao Ya<color>: It seems your last provincial exam hasn't ended yet. Do you want to continue taking the provincial exam?",2,
+				"\nI want to continue taking the exam /#abluemoon_cuntinue(2)",
+				"\nLet me think about it again /end_say"
 		)
 	elseif GetMissionV(MV_TIMER_IDEL) == 1 then
 		local rest = floor((TIMER_TOTAL_TIME - GetMissionV(MV_TIMER_TIME))/60)
-		Say("<color=green>兔小丫<color>：还有<color=yellow>"..rest.."<color>分钟我更换考场啦，现在已经停止接受报名！",0)
+		Say("<color=green>Rabbit Xiao Ya<color>: There are still <color=yellow>"..rest.."<color> minutes until I change the exam venue. Registration is now closed!",0)
 		return
 	else
 		local nluck = GetTask(ABLUEMOON_LUCK)
-		local szluck = "未知，比大凶还凶"  --如果没算 默认大凶
+		local szluck = "Unknown, more fierce than the fierce one"  --如果没算 默认大凶
 		local nDay = tonumber(date("%y%m%d"))
 		if GetTask(ABLUEMOON_LUCK_DATE) == nDay then  --如果算过了 显示当前运势
 			szluck = tluck[nluck]  
 		end
-		Say("<color=green>兔小丫<color>：猜拳这个东西跟<color=yellow>运势<color>有很大关系哦，你可以先在我这里算算今天的运势怎么样，也许对你有好处。你当前的运势是：<color=yellow>"..szluck.."<color>",3,
-				"\n好吧，我先算算今天的运势/abluemoon_luck",
-				"\n我要参加科举考试/abluemoon_gogo_select",
-				"\n算了，今天状态不行/end_say"
+		Say("<color=green>Rabbit Xiao Ya<color>: Guessing this thing is closely tied to your <color=yellow>luck<color>. You can first let me calculate your luck for today here, it may do you some good. Your current luck is: <color=yellow>"..szluck.."<color>",3,
+				"\nAll right, let me calculate today's luck first /abluemoon_luck",
+				"\nI want to take the imperial exam /abluemoon_gogo_select",
+				"\nForget it, I'm not in good shape today /end_say"
 		)
 	end
 end
@@ -76,18 +76,18 @@ end
 function abluemoon_gogo_select()
 	local nDay = tonumber(date("%y%m%d"))
 	if GetTask(ABLUEMOON_QUEST_DATE) == -1 and GetTask(ABLUEMOON_QUEST_DATE_PAY) == -1 then  --如果是获得了免费答题机会
-			Say("<color=green>兔小丫<color>：这次是你<color=yellow>免费<color>参加考试的机会，无论你选择哪种考试都免费，你要参加哪种考试呢？",
+			Say("<color=green>Rabbit Xiao Ya<color>: This is your chance to take the exam for <color=yellow>free<color>. No matter which exam you choose it's free. Which exam do you want to take?",
 					3,
-					"我要免费参加一般考试/#abluemoon_gogo(-1,1)",
-					"我要免费参加高经验考试/#abluemoon_gogo(-1,2)",
-					"我再考虑一下/end_say"
+					"I want to take the standard exam for free /#abluemoon_gogo(-1,1)",
+					"I want to take the high-EXP exam for free /#abluemoon_gogo(-1,2)",
+					"Let me think about it again/end_say"
 			)		
 	else
-		Say("<color=green>兔小丫<color>：目前的考试分为两种，一种是<color=yellow>一般考试<color>：不收取红萝卜，奖励一般，每人每天1次机会。一种是<color=yellow>高经验考试<color>：需要收取红萝卜，奖励丰厚。你要参加哪种考试呢？",
+		Say("<color=green>Rabbit Xiao Ya<color>: The current exam has two types. One is the <color=yellow>standard exam<color>: no red carrots required, ordinary rewards, one chance per person per day. The other is the <color=yellow>high-EXP exam<color>: red carrots required, generous rewards. Which exam do you want to take?",
 				3,
-				"我要参加一般考试/#abluemoon_gogo_check(1)",
-				"我要参加高经验考试/#abluemoon_gogo_check(2)",
-				"我再考虑一下/end_say"
+				"I want to take the standard exam /#abluemoon_gogo_check(1)",
+				"I want to take the high-EXP exam /#abluemoon_gogo_check(2)",
+				"Let me think about it again/end_say"
 		)
 	end
 end
@@ -98,13 +98,13 @@ function abluemoon_gogo_check(nType)
 	local nNeedItemCount = 20;
 	if nType == 1 then  --如果是一般考试
 		if GetTask(ABLUEMOON_QUEST_DATE) < nDay then  --如果是当天第一次参加一般考试
-			Say("<color=green>兔小丫<color>：这次是你今天参加<color=yellow>一般考试<color>的机会，你要参加一般考试吗？",
+			Say("<color=green>Rabbit Xiao Ya<color>: This is your chance to take the <color=yellow>standard exam<color> today. Do you want to take the standard exam?",
 					2,
-					"我要参加一般考试/#abluemoon_gogo(0,1)",
-					"我再考虑一下/end_say"
+					"I want to take the standard exam /#abluemoon_gogo(0,1)",
+					"Let me think about it again/end_say"
 			)	
 		else
-			Say("<color=green>兔小丫<color>：你今天已经参加过一般考试啦，每个人一天只有一次机会哦！",0)
+			Say("<color=green>Rabbit Xiao Ya<color>: You've already taken the standard exam today. Each person only gets one chance per day!",0)
 		end
 	else                --如果是高经验考试
 		if GetTask(ABLUEMOON_QUEST_DATE_PAY) < nDay then  --如果是当天第一次参加高级考试
@@ -115,13 +115,13 @@ function abluemoon_gogo_check(nType)
 			nNeedItemCount = nNeedItemAll[nTimes]
 		end
 		if GetItemCount(2,1,1090) >= nNeedItemCount then
-			Say("<color=green>兔小丫<color>：这是你今天第<color=yellow>"..nTimes.."<color>次参加高经验考试，需要交纳<color=yellow>"..nNeedItemCount.."<color>个<color=yellow>红萝卜<color>。你要参加考试吗？",
+			Say("<color=green>Rabbit Xiao Ya<color>: This is your <color=yellow>"..nTimes.."<color> time taking the high-EXP exam today. You need to pay <color=yellow>"..nNeedItemCount.."<color> <color=yellow>red carrots<color>. Do you want to take the exam?",
 					2,
-					"我要参加考试/#abluemoon_gogo("..nNeedItemCount..",2)",
-					"我再考虑一下/end_say"
+					"I want to take the exam /#abluemoon_gogo("..nNeedItemCount..",2)",
+					"Let me think about it again/end_say"
 			)
 		else
-			Say("<color=green>兔小丫<color>：这是你今天第<color=yellow>"..nTimes.."<color>次参加高经验考试，需要交纳<color=yellow>"..nNeedItemCount.."<color>个<color=yellow>红萝卜<color>。你身上好像没有这么多红萝卜哦，先去准备好吧！",0)
+			Say("<color=green>Rabbit Xiao Ya<color>: This is your <color=yellow>"..nTimes.."<color> time taking the high-EXP exam today. You need to pay <color=yellow>"..nNeedItemCount.."<color> <color=yellow>red carrots<color>. It seems you don't have that many red carrots on you. Go prepare some first!",0)
 		end
 	end
 end
@@ -136,8 +136,8 @@ function abluemoon_gogo(nNeedItemCount,nType)
 			local nJifen = floor(GetTask(ABLUEMOON_JIFEN)/6)  --衰减的积分
 			if nJifen > 80 then nJifen = 80 end               --最多衰减80分
 			SetTask(ABLUEMOON_JIFEN,(GetTask(ABLUEMOON_JIFEN)-nJifen))
-			Talk(1,"","由于你今天之前参加的最后一次考试不是高经验考试，积分被衰减了<color=yellow>"..nJifen.."<color>分！")
-			Msg2Player("由于你今天之前参加的最后一次考试不是高经验考试，积分被衰减了"..nJifen.."分！")
+			Talk(1,"","Because the last exam you took earlier today was not a high-EXP exam, your score has been reduced by <color=yellow>"..nJifen.."<color> points!")
+			Msg2Player("Because the last exam you took earlier today was not a high-EXP exam, your score has been reduced by"..nJifen.."points!")
 		end
 		if nNeedItemCount > 0 then  --免费赠送的和一般考试不算次数
 			SetTask(ABLUEMOON_TIMES_DAILY,GetTask(ABLUEMOON_TIMES_DAILY)+1)
@@ -164,7 +164,7 @@ function abluemoon_gogo(nNeedItemCount,nType)
 		AddMSPlayer(MISSION_ID,1)  --把玩家加入MISSION
 		ApplyRelayShareData("abluemoon_count", nDay, 0, THIS_FILE, "abluemoon_gogogo")
 	else
-		Say("<color=green>兔小丫<color>：你身上好像没有这么多红萝卜啊！",0)
+		Say("<color=green>Rabbit Xiao Ya<color>: It seems you don't have that many red carrots on you!",0)
 	end
 end
 
@@ -183,40 +183,40 @@ function abluemoon_gogogo(szKey, nKey1, nKey2, nCount)
 	if count == 1 or mod(count,100) == 0 then  --彩蛋～
 		SetTask(ABLUEMOON_QUEST_DATE, -1)
 		SetTask(ABLUEMOON_QUEST_DATE_PAY, -1)
-		Msg2Player("恭喜你获得今天再次闯关的机会！下次考试将会免费！")
+		Msg2Player("Congratulations on earning the chance to challenge again today! Your next exam will be free!")
 	end
-	Say("<color=green>兔小丫<color>：你是今天第<color=yellow>"..count.."<color>个挑战者。先跟我猜拳，一共10局，你能赢几局就给你几次答题的机会，怎么样？放弃的话今天就没有机会了哦！",2,
-		"\n开始挑战/WantCaiquan",                               --猜拳
-		"\n我放弃今天的机会/end_say"
+	Say("<color=green>Rabbit Xiao Ya<color>: You are the <color=yellow>"..count.."<color> challenger today. First play finger-guessing with me, ten rounds in total. However many rounds you win, that's how many chances you get to answer questions. How about it? If you give up, you'll have no chance today!",2,
+		"\nStart the challenge /WantCaiquan",                               --猜拳
+		"\nI give up my chance for today /end_say"
 	)	
 end
 
 function abluemoon_jifen()
 	local jifen = GetTask(ABLUEMOON_JIFEN)
 	local nTitleLevel = jifen2level(jifen)
-	Say("<color=green>兔小丫<color>：你现在的积分是：<color=yellow>"..jifen.."<color>分。",0)
+	Say("<color=green>Rabbit Xiao Ya<color>: Your current score is: <color=yellow>"..jifen.."<color> points.",0)
 	for i = 1,getn(tTitle) do --删除原有的称号
 		RemoveTitle(50,i)
 	end
 	if AddTitle(tTitle[nTitleLevel][1],tTitle[nTitleLevel][2]) == 1 then
 		SetCurTitle(tTitle[nTitleLevel][1],tTitle[nTitleLevel][2]);
-		Msg2Player("你获得“"..tTitle[nTitleLevel][3].."”的称号");
+		Msg2Player("You earned the title of \""..tTitle[nTitleLevel][3].."\"");
 	end;
 end
 
 --====================================================资格赛猜拳开始=========================================================
-partner_caimei  = {"吴越老祖","九绝剑魔","月亮兔"}
+partner_caimei  = {"吴越老祖","Nine Severances Sword Demon","月亮兔"}
 function WantCaiquan()
 	if GetTask(ABLUEMOON_CAIQUAN_COUNT) < 10 then 
-		Say("<color=green>兔小丫<color>： 来来来，开始划拳咯。你还有<color=yellow>"..(10-GetTask(ABLUEMOON_CAIQUAN_COUNT)).."<color>次猜拳的机会，你出什么？",4,
-				"\n吴越老祖\n/Caiquan_shitou",
-				"\n九绝剑魔\n/Caiquan_jianzi",
-				"\n月亮兔\n/Caiquan_bu",
-				"\n先让我知道规则\n/Caiquan_info"
+		Say("<color=green>Rabbit Xiao Ya<color>: Come on, come on, let's start the finger-guessing. You still have <color=yellow>"..(10-GetTask(ABLUEMOON_CAIQUAN_COUNT)).."<color> chances to guess. What do you throw?",4,
+				"\nWu-Yue Ancestor\n/Caiquan_shitou",
+				"\nNine Severances Sword Demon\n/Caiquan_jianzi",
+				"\nMoonlight Rabbit\n/Caiquan_bu",
+				"\nLet me know the rules first\n/Caiquan_info"
 		)
 	else
-		Say("<color=green>兔小丫<color>：已经猜完10次啦，你现在一共有<color=yellow>"..GetTask(ABLUEMOON_QUEST_COUNT_MAX).."<color>次答题的机会，开始咯！",1,
-				"我已经准备好了/abluemoon_1st"
+		Say("<color=green>Rabbit Xiao Ya<color>: We've already guessed 10 times. You now have a total of <color=yellow>"..GetTask(ABLUEMOON_QUEST_COUNT_MAX).."<color> chances to answer questions. Let's begin!",1,
+				"I'm ready /abluemoon_1st"
 				)
 	end
 end
@@ -230,12 +230,12 @@ function Caiquan_shitou()
 	local win = random(7)
 	if GetTask(ABLUEMOON_LUCK) >= win then i = 2 end
 	if i ~= 2 then	
-		Say("<color=green>兔小丫<color>：我出<color=yellow>"..partner_caimei[i].."<color>,哎呀！我赢啦，嘻嘻！",1,
-				"我就不信邪，再来！/WantCaiquan")
+		Say("<color=green>Rabbit Xiao Ya<color>: I throw <color=yellow>"..partner_caimei[i].."<color>, aha! I win, hehe!",1,
+				"I don't believe it, again! /WantCaiquan")
 	else
 		SetTask(ABLUEMOON_QUEST_COUNT_MAX,GetTask(ABLUEMOON_QUEST_COUNT_MAX)+1)
-		Say("<color=green>兔小丫<color>：我出<color=yellow>"..partner_caimei[i].."<color>,哎呀！被你赢啦，今天<color=yellow>运气<color>不错嘛。给你加上一次答题机会。",1,
-				"太好了，继续继续/WantCaiquan")
+		Say("<color=green>Rabbit Xiao Ya<color>: I throw <color=yellow>"..partner_caimei[i].."<color>, aha! You beat me. Your <color=yellow>luck<color> is pretty good today. I'll grant you one more chance to answer a question.",1,
+				"Great, keep going, keep going /WantCaiquan")
 	end
 end
 
@@ -245,12 +245,12 @@ function Caiquan_jianzi()
 	local win = random(7)
 	if GetTask(ABLUEMOON_LUCK) >= win then i = 3 end
 	if i ~= 3 then
-		Say("<color=green>兔小丫<color>：我出<color=yellow>"..partner_caimei[i].."<color>,哎呀！我赢啦，嘻嘻！",1,
-				"我就不信邪，再来！/WantCaiquan")
+		Say("<color=green>Rabbit Xiao Ya<color>: I throw <color=yellow>"..partner_caimei[i].."<color>, aha! I win, hehe!",1,
+				"I don't believe it, again! /WantCaiquan")
 	else
 		SetTask(ABLUEMOON_QUEST_COUNT_MAX,GetTask(ABLUEMOON_QUEST_COUNT_MAX)+1)
-		Say("<color=green>兔小丫<color>：我出<color=yellow>"..partner_caimei[i].."<color>,哎呀！被你赢啦，今天<color=yellow>运气<color>不错嘛。给你加上一次答题机会。",1,
-				"太好了，继续继续/WantCaiquan")
+		Say("<color=green>Rabbit Xiao Ya<color>: I throw <color=yellow>"..partner_caimei[i].."<color>, aha! You beat me. Your <color=yellow>luck<color> is pretty good today. I'll grant you one more chance to answer a question.",1,
+				"Great, keep going, keep going /WantCaiquan")
 	end
 end
 
@@ -260,17 +260,17 @@ function Caiquan_bu()
 	local win = random(7)
 	if GetTask(ABLUEMOON_LUCK) >= win then i = 1 end
 	if i ~= 1 then
-		Say("<color=green>兔小丫<color>：我出<color=yellow>"..partner_caimei[i].."<color>,哎呀！我赢啦，嘻嘻！",1,
-				"我就不信邪，再来！/WantCaiquan")
+		Say("<color=green>Rabbit Xiao Ya<color>: I throw <color=yellow>"..partner_caimei[i].."<color>, aha! I win, hehe!",1,
+				"I don't believe it, again! /WantCaiquan")
 	else
 		SetTask(ABLUEMOON_QUEST_COUNT_MAX,GetTask(ABLUEMOON_QUEST_COUNT_MAX)+1)
-		Say("<color=green>兔小丫<color>：我出<color=yellow>"..partner_caimei[i].."<color>,哎呀！被你赢啦，今天<color=yellow>运气<color>不错嘛。给你加上一次答题机会。",1,
-				"太好了，继续继续/WantCaiquan")
+		Say("<color=green>Rabbit Xiao Ya<color>: I throw <color=yellow>"..partner_caimei[i].."<color>, aha! You beat me. Your <color=yellow>luck<color> is pretty good today. I'll grant you one more chance to answer a question.",1,
+				"Great, keep going, keep going /WantCaiquan")
 	end
 end
 
 function Caiquan_info()
-	Say("<color=green>兔小丫<color>：规则是这样滴：吴越老祖、九绝剑魔和月亮兔呢，吴越老祖赢九绝剑魔，九绝剑魔赢月亮兔，月亮兔赢吴越老祖。懂了没？你赢了我就过关，没赢我或者打成平手，比如你出九绝剑魔我也出九绝剑魔，那也算我赢。哼哼。",1,"我要返回上一层菜单/WantCaiquan")
+	Say("<color=green>Rabbit Xiao Ya<color>: The rules are like this: Wu-Yue Ancestor, Nine Severances Sword Demon, and Moonlight Rabbit. The Wu-Yue Ancestor beats the Nine Severances Sword Demon, the Nine Severances Sword Demon beats the Moonlight Rabbit, and the Moonlight Rabbit beats the Wu-Yue Ancestor. Got it? If you beat me you pass; if you don't beat me or it's a tie, for example you throw Nine Severances Sword Demon and I also throw Nine Severances Sword Demon, that counts as my win too. Hehe.",1,"I want to go back to the previous menu /WantCaiquan")
 end
 --=====================================================资格赛猜拳结束===============================================================
 
@@ -281,21 +281,21 @@ function abluemoon_1st()
 	if GetTask(ABLUEMOON_QUEST_COUNT_MAX) > GetTask(ABLUEMOON_QUEST_COUNT) then
 		SetTask(ABLUEMOON_STATE,1) --开始答题
 		SetTask(ABLUEMOON_TIMER,GetGameTime()) --设置计时器起始时间
-		show_question(1, "你今天<color=yellow>院试<color>的第<color=yellow>"..(GetTask(ABLUEMOON_QUEST_COUNT)+1).."<color>个问题如下，请听题：<enter>" )
+		show_question(1, "Your <color=yellow>academy exam<color> question number <color=yellow>"..(GetTask(ABLUEMOON_QUEST_COUNT)+1).."<color> today is as follows, please listen: <enter>" )
 	elseif GetTask(ABLUEMOON_QUEST_COUNT_MAX) == GetTask(ABLUEMOON_QUEST_COUNT) then  --如果已经回答完毕
 --		if GetTask(ABLUEMOON_QUEST_RIGHT_COUNT_1st) == GetTask(ABLUEMOON_QUEST_COUNT_MAX) then  --如果全对
 		if right_count_1st >= 5  then  --如果答对5题以上
-			Say("<color=green>兔小丫<color>：今天<color=yellow>院试<color>问题已经回答完毕，你一共答对了<color=yellow>"..right_count_1st.."<color>道题，正确率<color=yellow>"..floor((right_count_1st/GetTask(ABLUEMOON_QUEST_COUNT)*100)).."%<color>。恭喜你可以<color=yellow>继续闯关<color>，也可以现在就领取奖励。你在<color=yellow>乡试<color>中共有<color=yellow>"..right_count_1st.."<color>次答题机会，加油！",2,
-					"\n我现在就领取奖励吧/#GetHappyTimes(1,1)",
-					"\n我要继续闯关/abluemoon_2nd"
+			Say("<color=green>Rabbit Xiao Ya<color>: Today's <color=yellow>academy exam<color> questions are all answered. You got a total of <color=yellow>"..right_count_1st.."<color> questions right, an accuracy rate of <color=yellow>"..floor((right_count_1st/GetTask(ABLUEMOON_QUEST_COUNT)*100)).."%<color>. Congratulations, you can <color=yellow>keep advancing<color>, or you can claim your reward now. You have a total of <color=yellow>"..right_count_1st.."<color> chances to answer questions in the <color=yellow>provincial exam<color>, keep it up!",2,
+					"\nLet me claim my reward now /#GetHappyTimes(1,1)",
+					"\nI want to keep advancing /abluemoon_2nd"
 					)
 
 		elseif right_count_1st == 0 then  --全错
 			DelMSPlayer(MISSION_ID,1)  --把玩家从MISSION中删除
-			Say("<color=green>兔小丫<color>：真可惜丫，你一题都没有答对，下次再来挑战吧！",0)
+			Say("<color=green>Rabbit Xiao Ya<color>: What a pity, you didn't get a single question right. Come back and try again next time!",0)
 		else
-			Say("<color=green>兔小丫<color>：今天<color=yellow>院试<color>问题已经回答完毕，你一共答对了<color=yellow>"..right_count_1st.."<color>道题，正确率<color=yellow>"..floor((right_count_1st/GetTask(ABLUEMOON_QUEST_COUNT)*100)).."%<color>。由于没有答对<color=yellow>5<color>题以上，不能继续闯关啦，下次努力！",1,
-						"\n我现在就领取奖励吧/#GetHappyTimes(1,1)")
+			Say("<color=green>Rabbit Xiao Ya<color>: Today's <color=yellow>academy exam<color> questions are all answered. You got a total of <color=yellow>"..right_count_1st.."<color> questions right, an accuracy rate of <color=yellow>"..floor((right_count_1st/GetTask(ABLUEMOON_QUEST_COUNT)*100)).."%<color>. Since you didn't get more than <color=yellow>5<color> questions right, you can't keep advancing. Work harder next time!",1,
+						"\nLet me claim my reward now /#GetHappyTimes(1,1)")
 		end
 	end
 end
@@ -311,11 +311,11 @@ function abluemoon_2nd()
 --			"\n剑侠情缘/#abluemoon_2nd_go(4)",
 --			"\n乱七八糟/#abluemoon_2nd_go(5)"
 --		)
-	Say("<color=green>兔小丫<color>：大侠真厉害，居然能闯入<color=yellow>乡试<color>！我这里有几类题目，你想选哪类呢？",4,
-			"\n剑/#abluemoon_2nd_go(2)",
-			"\n侠/#abluemoon_2nd_go(3)",
-			"\n情/#abluemoon_2nd_go(4)",
-			"\n缘/#abluemoon_2nd_go(5)"
+	Say("<color=green>Rabbit Xiao Ya<color>: Impressive, hero, you actually made it into the <color=yellow>provincial exam<color>! I have a few categories of questions here. Which category do you want to choose?",4,
+			"\nSword /#abluemoon_2nd_go(2)",
+			"\nChivalry /#abluemoon_2nd_go(3)",
+			"\nRomance /#abluemoon_2nd_go(4)",
+			"\nFate /#abluemoon_2nd_go(5)"
 		)
 end
 
@@ -326,7 +326,7 @@ function abluemoon_2nd_go(choice)
 	if num < 2 or num > 5 then --防止传进来一个非法值
 		num = random(2,5)
 	end
-	show_question(num, "你今天<color=yellow>乡试<color>的第<color=yellow>"..(GetTask(ABLUEMOON_QUEST_COUNT)+1).."<color>个问题如下，请听题：<enter>" )		
+	show_question(num, "Your <color=yellow>provincial exam<color> question number <color=yellow>"..(GetTask(ABLUEMOON_QUEST_COUNT)+1).."<color> today is as follows, please listen: <enter>" )		
 end
 --==================================================第二关答题结束====================================================
 
@@ -338,13 +338,13 @@ function SpecialQues(choice)
 	local num = random(1,8)  --以后增加题目的时候记得修改后面这个数
 	if num == 1 and GetGlbValue(151) == 0 then num = random(2,8) end
 	if num == 1 then  --1.猜辉煌之夜
-		Say("<color=green>兔小丫<color>：啊！老是问同一类问题太无聊了，我突然想到一个问题，请问今天的辉煌之夜是什么活动？",6,
-					"战场/#SpecialAnswer(1,1,"..nchoice..")",
-					"商会/#SpecialAnswer(1,2,"..nchoice..")",
-					"师门随机任务/#SpecialAnswer(1,3,"..nchoice..")",
-					"师门重复任务/#SpecialAnswer(1,4,"..nchoice..")",
-					"杀手任务/#SpecialAnswer(1,5,"..nchoice..")",
-					"龙舟/#SpecialAnswer(1,6,"..nchoice..")"
+		Say("<color=green>Rabbit Xiao Ya<color>: Ah! Always asking the same kind of question is too boring. I suddenly thought of a question: what activity is the Night of Glory today?",6,
+					"Battlefield /#SpecialAnswer(1,1,"..nchoice..")",
+					"Merchant Fair /#SpecialAnswer(1,2,"..nchoice..")",
+					"Sect Random Quest /#SpecialAnswer(1,3,"..nchoice..")",
+					"Sect Repeatable Quest /#SpecialAnswer(1,4,"..nchoice..")",
+					"Assassin Quest /#SpecialAnswer(1,5,"..nchoice..")",
+					"Dragon Boat /#SpecialAnswer(1,6,"..nchoice..")"
 				)
 	elseif num == 2 then  --2.根据声望猜称号
 		local nShengwang = random(-500,35000)	
@@ -358,7 +358,7 @@ function SpecialQues(choice)
 			end
 		end
 		ReSort(options)
-		Say("<color=green>兔小丫<color>：啊！老是问同一类问题太无聊了，我突然想到一个问题，请问声望是<color=yellow>"..nShengwang.."<color>时的称号是什么？",4,
+		Say("<color=green>Rabbit Xiao Ya<color>: Ah! Always asking the same kind of question is too boring. I suddenly thought of a question: what is the title when your reputation is <color=yellow>"..nShengwang.."<color>?",4,
 				 options[1], options[2], options[3], options[4])
 	elseif num == 3 then  --3.猜升级所需经验
 		local level = random(50,97)
@@ -373,7 +373,7 @@ function SpecialQues(choice)
 		options[3] = format("%s/#answer_fail(%d,%d)", (exp+tab_exp[2]), nchoice, 6)
 		options[4] = format("%s/#answer_fail(%d,%d)", (exp+tab_exp[3]), nchoice, 6)		
 		ReSort(options)
-		Say("<color=green>兔小丫<color>：啊！老是问同一类问题太无聊了，我突然想到一个问题，请问<color=yellow>"..level.."级升到"..(level+1).."级<color>需要多少经验？",4,
+		Say("<color=green>Rabbit Xiao Ya<color>: Ah! Always asking the same kind of question is too boring. I suddenly thought of a question: <color=yellow>"..level.."leveling up to"..(level+1).."level<color> requires how much experience?",4,
 				 options[1], options[2], options[3], options[4])
 	elseif num == 4 then  --4.猜当前等级交满收集品能获得多少钱
 		local num_max = Zgc_conf_task_num_max()
@@ -389,7 +389,7 @@ function SpecialQues(choice)
 		options[3] = format("%s/#answer_fail(%d,%d)", (gold+tab_gold[2]), nchoice, 6)
 		options[4] = format("%s/#answer_fail(%d,%d)", (gold+tab_gold[3]), nchoice, 6)		
 		ReSort(options)
-		Say("<color=green>兔小丫<color>：啊！老是问同一类问题太无聊了，我突然想到一个问题，请问你现在上交帮会高级收集品<color=yellow>"..sinup.."个<color>能获得多少钱？以<color=yellow>铜<color>为单位。",4,
+		Say("<color=green>Rabbit Xiao Ya<color>: Ah! Always asking the same kind of question is too boring. I suddenly thought of a question: if you turn in <color=yellow>"..sinup.."<color> high-grade guild collection items<color> now, how much money can you get? In <color=yellow>copper<color> as the unit.",4,
 				 options[1], options[2], options[3], options[4])		
 	elseif num == 5 then  --5.猜某个等级采集技能升级经验
 		local skillID = random(1,6)
@@ -405,7 +405,7 @@ function SpecialQues(choice)
 		options[3] = format("%s/#answer_fail(%d,%d)", (exp+tab_exp[2]), nchoice, 6)
 		options[4] = format("%s/#answer_fail(%d,%d)", (exp+tab_exp[3]), nchoice, 6)		
 		ReSort(options)
-		Say("<color=green>兔小丫<color>：啊！老是问同一类问题太无聊了，我突然想到一个问题，请问<color=yellow>"..tGatherSkill[skillID].."<color>从<color=yellow>"..level.."级升到"..(level+1).."级<color>需要多少经验？",4,
+		Say("<color=green>Rabbit Xiao Ya<color>: Ah! Always asking the same kind of question is too boring. I suddenly thought of a question: <color=yellow>"..tGatherSkill[skillID].."<color> from <color=yellow>"..level.."leveling up to"..(level+1).."level<color> requires how much experience?",4,
 				 options[1], options[2], options[3], options[4])
 	elseif num == 6 then  --6.猜某个等级生产系技能升级经验
 		local skillID = random(1,9)
@@ -421,7 +421,7 @@ function SpecialQues(choice)
 		options[3] = format("%s/#answer_fail(%d,%d)", (exp+tab_exp[2]), nchoice, 6)
 		options[4] = format("%s/#answer_fail(%d,%d)", (exp+tab_exp[3]), nchoice, 6)		
 		ReSort(options)
-		Say("<color=green>兔小丫<color>：啊！老是问同一类问题太无聊了，我突然想到一个问题，请问<color=yellow>"..tComposeSkill[skillID].."<color>从<color=yellow>"..level.."级升到"..(level+1).."级<color>需要多少经验？",4,
+		Say("<color=green>Rabbit Xiao Ya<color>: Ah! Always asking the same kind of question is too boring. I suddenly thought of a question: <color=yellow>"..tComposeSkill[skillID].."<color> from <color=yellow>"..level.."leveling up to"..(level+1).."level<color> requires how much experience?",4,
 				 options[1], options[2], options[3], options[4])	
 	elseif num == 7 then  --根据XX猜XX,调用吴炜脚本
 		options = MoonRabbit_GetAQuestion(1)
@@ -457,7 +457,7 @@ function SpecialQues(choice)
 		options[3] = format("%s/#answer_fail(%d,%d)", result+radresult[2], nchoice, 6)
 		options[4] = format("%s/#answer_fail(%d,%d)", result+radresult[3], nchoice, 6)
 		ReSort(options)		
-		Say("<color=green>兔小丫<color>：最近我在研究九九口诀，遇到一个问题不知道大侠能不能帮我解决：隔壁老王养了<color=yellow>"..A.."<color>只鸡，每只鸡每天都会下<color=yellow>"..B.."<color>个蛋。他还养了<color=yellow>"..C.."<color>只鸭子，每只鸭子每天都会下<color=yellow>"..D.."<color>个蛋。每个蛋能卖<color=yellow>2<color>个铜板，卖蛋的收入还得交给官府<color=yellow>十分之一<color>的关税，请问他一天能赚多少个铜板啊？",4,
+		Say("<color=green>Rabbit Xiao Ya<color>: Lately I've been studying the multiplication table and ran into a problem. I wonder if you can help me solve it, hero: Old Wang next door keeps <color=yellow>"..A.."<color> chickens, and each chicken lays <color=yellow>"..B.."<color> eggs every day. He also keeps <color=yellow>"..C.."<color> ducks, and each duck lays <color=yellow>"..D.."<color> eggs every day. Each egg can sell for <color=yellow>2<color> copper coins. The income from selling eggs must also pay the government <color=yellow>one tenth<color> in tax. So how many copper coins can he earn in a day?",4,
 				 options[1], options[2], options[3], options[4])	
 	end
 end
@@ -478,12 +478,12 @@ end
 --=======================================================给科考外装=========================================================
 function abluemoon_cloth()
 	if GetTask(ABLUEMOON_JIFEN) < 1000 then
-		Say("<color=green>兔小丫<color>： 你的科考成绩还没有达到<color=yellow>进士<color>，还没有资格领取文魁花锦袍。不过，你可以去<color=yellow>御街<color>看看，好像有各种颜色的科考外装卖。",0)
+		Say("<color=green>Rabbit Yaya<color>: Your exam score has not yet reached <color=yellow>Jinshi<color>, so you are not yet qualified to receive the Wenkui Flower Robe. But you can go to <color=yellow>Imperial Street<color> and take a look; it seems there are exam outfits of various colors for sale.",0)
 		return
 	end
 	if floor(GetTask(ABLUEMOON_COMPENSATION)/10) == 0 then --个位记录是否领取过补偿 十位记录是否领取过科考外装
 		if GetFreeItemRoom() < 2 or (GetMaxItemWeight() - GetCurItemWeight()) < 10 then
-			Say("<color=green>兔小丫<color>： 你的背包空间已经装不下了，先整理一下再来吧！",0)
+			Say("<color=green>Rabbit Yaya<color>: Your bag is already full and cannot hold any more. Tidy it up first and come back!",0)
 			return
 		end
 		local player_sex = GetBody();
@@ -497,49 +497,49 @@ function abluemoon_cloth()
 		else
 			AddItem(0,109,275,1)  --文魁花锦裳(橙) 娇小女永久
 		end
-		Say("<color=green>兔小丫<color>： 文魁花锦裳拿好啦，穿上去看看。大侠能文能武，国家有望了！",0)
+		Say("<color=green>Rabbit Yaya<color>: The Wenkui Flower Robe is ready, put it on and take a look. A great hero skilled in both literary and martial arts gives the nation hope!",0)
 	else
-		Say("<color=green>兔小丫<color>： 你已经领取过科考外装啦！每个人只能领取一套，如果还想要其他颜色的外装，可以去<color=yellow>御街<color>挑选。",0)
+		Say("<color=green>Rabbit Yaya<color>: You have already received an exam outfit! Each person can only receive one set. If you still want an outfit in another color, you can go to <color=yellow>Imperial Street<color> to pick one out.",0)
 	end
 end
 --=====================================================规则介绍=================================================
 function abluemoon_rule()
 	local tSay = {
-		"<enter>每天<color=yellow>除23：00－8：00时间段外<color>，我都会随机出现在各大城市中，接受大家的挑战。每人每天只能挑战一次，每次先要跟我猜拳，根据猜拳获胜的次数决定",
-		"院试题目的数目，院试答对5题以上的话可以进入乡试。乡试的题数由院试正确的题数决定。乡试答对5题以上的话会有证书发放。",
+		"<enter>Every day <color=yellow>except during the 23:00-8:00 period<color>, I will randomly appear in the major cities to accept everyone's challenge. Each person can challenge only once a day. Each time, you must first play rock-paper-scissors with me, and the number of wins decides",
+		"the number of questions in the Court Exam. Answer more than 5 questions correctly in the Court Exam and you can advance to the Provincial Exam. The number of questions in the Provincial Exam is decided by how many you answered correctly in the Court Exam. Answer more than 5 correctly in the Provincial Exam and a certificate will be issued.",
 		--继续在这里添加就行
 	}
 	local szSay = "";
 	for i = 1,getn(tSay) do szSay = szSay..tSay[i] end
-	Say("<color=green>兔小丫<color>：规则是这样的……"..szSay,0)
+	Say("<color=green>Rabbit Yaya<color>: The rules are as follows......"..szSay,0)
 end
 
 tShengwang = {  --根据声望猜称号
-	{-500,"恶名昭著"},
-	{-100,"声名狼藉"},
-	{0,"平民百姓"},
-	{50,"不名一文"},
-	{150,"初出江湖"},
-	{300,"无名小辈"},
-	{500,"默默无闻"},
-	{700,"初显锋芒"},
-	{1000,"小有名气"},
-	{1500,"声名鹊起"},
-	{2250,"锋芒毕露"},
-	{3000,"名声显赫"},
-	{4500,"德高望重"},
-	{6000,"威风八面"},
-	{9000,"如雷贯耳"},
-	{12000,"威镇九州"},
-	{15000,"傲视群雄"},
-	{18000,"一代宗师"},
-	{22500,"笑傲江湖"},
-	{27000,"举世无双"},
-	{31500,"震古铄今"},
-	{36500,"空前绝后"},
-	{45000,"武林神话"},
+	{-500,"Notorious"},
+	{-100,"Disreputable"},
+	{0,"Common Folk"},
+	{50,"Penniless Nobody"},
+	{150,"Newcomer to the Martial World"},
+	{300,"Nameless Junior"},
+	{500,"Quiet and Unknown"},
+	{700,"First Showing of Talent"},
+	{1000,"A Little Reputation"},
+	{1500,"Rising Fame"},
+	{2250,"Talent Fully Revealed"},
+	{3000,"Renowned Name"},
+	{4500,"High Virtue and Esteem"},
+	{6000,"Awe-Inspiring on All Sides"},
+	{9000,"Famed Like Thunder"},
+	{12000,"Commanding Respect Across the Land"},
+	{15000,"Looking Down on All Heroes"},
+	{18000,"Grandmaster of a Generation"},
+	{22500,"Proud Lord of the Martial World"},
+	{27000,"Unmatched in the World"},
+	{31500,"Shaking the Past and Present"},
+	{36500,"Unprecedented and Unmatched"},
+	{45000,"Legend of the Martial World"},
 }
 
-tGatherSkill = { "伐木", "制皮", "收耕", "采药", "挖矿", "抽丝", }
+tGatherSkill = { "伐木", "制皮", "Harvesting", "采药", "挖矿", "抽丝", }
 
-tComposeSkill = { "长兵器锻造", "短兵器锻造", "奇门兵器锻造", "护甲织造", "制药", "烹饪", "制符", "下装织造", "头冠织造",}
+tComposeSkill = { "Long Weapon Forging", "Short Weapon Forging", "Exotic Weapon Forging", "Armor Crafting", "Medicine Making", "Cooking", "Talisman Making", "Lower Armor Weaving", "Headgear Weaving",}

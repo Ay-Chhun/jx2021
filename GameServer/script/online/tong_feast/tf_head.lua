@@ -290,7 +290,7 @@ end
 function tf_Award_JingZhiCooker()
 	gf_ModifyExp(10000000);
 	gf_AddItemEx2({TF_ITEM_TONG_TOKEN_CHIP[1], TF_ITEM_TONG_TOKEN_CHIP[2], TF_ITEM_TONG_TOKEN_CHIP[3], 15}, TF_ITEM_TONG_TOKEN_CHIP[4], 
-			"YÕn TiÖc Bang Héi", "D©ng tÆng Bé NÊu BÕp", 0, 1);
+			"Guild Banquet", "Donate Cookware Set", 0, 1);
 end
 
 function tf_Award_ShiCai(nTotal)
@@ -324,7 +324,7 @@ function tf_Award_ShiCai(nTotal)
 		nNum = 0;
 	end
 	gf_AddItemEx2({TF_ITEM_TONG_TOKEN_CHIP[1], TF_ITEM_TONG_TOKEN_CHIP[2], TF_ITEM_TONG_TOKEN_CHIP[3], nNum}, TF_ITEM_TONG_TOKEN_CHIP[4], 
-		"YÕn TiÖc Bang Héi", "D©ng tÆng ®å ¨n", 0, 1);
+		"Guild Banquet", "Donate food", 0, 1);
 end
 
 function tf_Award_JingzhiTableChair()
@@ -584,13 +584,13 @@ function tf_OpenBanquet(x, y, nCount, sdb)
 	local tTableName;
 	if sData[7] and sData[7] > 0 then
 		tTableName = {
-			{1, 75, "YÕn TiÖc Linh §×nh"},
+			{1, 75, "Grand Banquet"},
 			{1, 25, "YÕn TiÖc Hµo Hoa"},
 		}
 	else
 		tTableName = {
 			{1, 90, "YÕn tiÖc"},
-			{1, 8, "YÕn TiÖc Linh §×nh"},
+			{1, 8, "Grand Banquet"},
 			{1, 2, "YÕn TiÖc Hµo Hoa"},
 		}
 	end
@@ -658,11 +658,11 @@ function tf_AddBuff(nBuffTime)
 	for i = 1, getn(TF_AWARD_BUFF) do 
 		CastState(TF_AWARD_BUFF[i][1], TF_AWARD_BUFF[i][2], nBuffTime or TF_AWARD_BUFF[i][3], TF_AWARD_BUFF[i][4], TF_AWARD_BUFF[i][5], TF_AWARD_BUFF[i][6]);
 	end
-	SyncCustomState(1, TF_AWARD_BUFF[1][5], 1, "BUFF YÕn TiÖc Bang Héi");
+	SyncCustomState(1, TF_AWARD_BUFF[1][5], 1, "Guild Banquet BUFF");
 	if not nBuffTime then
 		tf_SetBuffTime(GetTime());
 		local szMsg = "Ng­¬i nhËn ®­îc %s, néi ngo¹i c«ng t¨ng %d%%, néi ngo¹i phßng t¨ng %d%%, Sinh lùc t¨ng %d%%,"
-		szMsg = format(szMsg, "BUFF YÕn TiÖc Bang Héi", 5, 5, 10);
+		szMsg = format(szMsg, "Guild Banquet BUFF", 5, 5, 10);
 		Msg2Player(szMsg);
 		szMsg1 = "Tèc ®é di chuyÓn t¨ng %d%%, tèc ®é xuÊt chiªu t¨ng %d%%, kinh nghiÖm nhËn ®­îc khi ®¸nh qu¸i t¨ng %d%%.";
 		szMsg1 = format(szMsg1, 10, 5, 300);
@@ -710,7 +710,7 @@ function tf_HaveDinner()
 	--ÓÃµÄÊÇÄÄÒ»Àà
 	local tTableName = {
 			{1, "YÕn tiÖc"},
-			{2, "YÕn TiÖc Linh §×nh"},
+			{2, "Grand Banquet"},
 			{3, "YÕn TiÖc Hµo Hoa"},
 	}
 	local nKind = 0;

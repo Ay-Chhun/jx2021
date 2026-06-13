@@ -20,9 +20,9 @@ VIET_0912_TASK_USE_SHENGDANLIHE_COUNT = 1531;           --Íæ¼Ò½ñÌìµã»÷Ê¥µ®ÀñºÐµÄ
 VIET_0912_TASK_ACTIVE_SHENGDANSHU_TRIGGER_EXIST_TIME = 1532; --´¥·¢Æ÷´æÔÚµÄÊ±¼ä£¬¼ÇÂ¼ÔÚÍæ¼ÒÉíÉÏ£¬Ã¿´Î´¥·¢£¬´ËÊ±¼ä¼õ1£¬µ¥Î»ÊÇ·ÖÖÓ
 
 VIET_0912_STR_EVENT_LOG_TITLE = "Hoat dong thang 12";
-VIET_0912_NPC_NAME_1 = "<color=green>CÈm nang ®¹i sù kiÖn<color>";
+VIET_0912_NPC_NAME_1 = "<color=green>Grand Event Handbook<color>";
 VIET_0912_NPC_NAME_2 = "<color=green>Th«ng Gi¸ng Sinh v¹n niªn: <color>";
-VIET_0912_NPC_NAME_3 = "<color=green>Ph¸o hoa: <color>";
+VIET_0912_NPC_NAME_3 = "<color=green>Fireworks: <color>";
 
 VIET_0912_SHIMEN_AWARD_MAX_COUNT = 10;                  --Ã¿ÌìÊ¦ÃÅÈÎÎñ×î¶à»ñµÃ½±ÀøµÄ´ÎÊý
 VIET_0912_XIANGCAODANGAO_MAX_COUNT = 1200;              --Ã¿½ÇÉ«×î¶àÊ¹ÓÃµÄÏã²Ýµ°¸âµÄÊýÁ¿
@@ -54,15 +54,15 @@ VIET_0912_SHIMEN_SHENGDANTANGGUO = {
 VIET_0912_XIANGCAODANGAO_AWARD = {
 		{1, 4, "M¶nh Thiªn th¹ch", {2, 2, 7, 1}, 0},
 		{1, 4, "Thiªn th¹ch", {2, 2, 8, 1}, 0},
-		{1, 5, "M¶nh B¨ng th¹ch", {2, 1, 148, 1},  0},
-		{1, 5, "B¨ng th¹ch", {2, 1, 149, 1}, 0},
-		{1, 3, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 1}, 15 * 24 * 3600},
+		{1, 5, "Ice Stone Fragment", {2, 1, 148, 1},  0},
+		{1, 5, "Ice Stone", {2, 1, 149, 1}, 0},
+		{1, 3, "Xiu Zhen Yao Jue", {2, 0, 554, 1}, 15 * 24 * 3600},
 		{1, 1, "ThÕ Th©n Phï", {2, 0, 556, 1}, 15 * 24 * 3600},
 		{3, 28, 1, 1},
 		{4, 27, 1, 1},
-		{1, 2, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 15 * 24 * 3600},
-		{1, 2, "XÝch ThiÕt Tinh", {2, 1, 2652, 1}, 0},		
-		{1, 4, "L­u Tinh lÖ", {2, 1, 2000, 1}, 0},
+		{1, 2, "Tribulation Dispel Powder", {2, 0, 141, 1}, 15 * 24 * 3600},
+		{1, 2, "Red Iron Essence", {2, 1, 2652, 1}, 0},		
+		{1, 4, "Meteor Tears", {2, 1, 2000, 1}, 0},
 		{1, 4, "Ngäc Tóy", {2, 1, 2001, 1}, 0},
 		{1, 9, "Lé Thñy", {2, 0, 351, 1}, 0},
 		{1, 2, "NguyÖt Hoa", {2, 1, 2002, 1}, 0},
@@ -70,22 +70,22 @@ VIET_0912_XIANGCAODANGAO_AWARD = {
 
 VIET_0912_XIANGCAODANGAO_AWARD_50 = {
 		{1, 25, "§ång TiÒn Vµng", {2, 1, 30094, 1}, 0},
-		{1, 5, "R­¬ng BÝ KÝp", {2, 1, 30093, 1}, 15 * 24 * 3600},
+		{1, 5, "Secret Manual Chest", {2, 1, 30093, 1}, 15 * 24 * 3600},
 		{1, 10,"Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 15 * 24 * 3600},
 		{1, 5, "Tø Linh Thiªn ý Phæ", {0, 107, 160, 1}, 0},
-		{1, 5, "Tø Linh Tö ý Phæ", {0, 107, 161, 1}, 0},
-		{1, 5, "Tø Linh ChiÕn ý Phæ", {0, 107, 159, 1}, 0},
-		{1, 15, "Bµn Long bÝch", {2, 1, 1000, 1}, 15 * 24 * 3600},
+		{1, 5, "Four Spirits Earth Intent Manual", {0, 107, 161, 1}, 0},
+		{1, 5, "Four Spirits Battle Intent Manual", {0, 107, 159, 1}, 0},
+		{1, 15, "Coiling Dragon Jade", {2, 1, 1000, 1}, 15 * 24 * 3600},
 		{1, 10, "Tö Quang Bµi", {2, 0, 762, 1}, 15 * 24 * 3600},
-		{1, 5, "TÈy Tñy §¬n", {2, 0, 136, 1}, 15 * 24 * 3600},
+		{1, 5, "Marrow-Cleansing Pill", {2, 0, 136, 1}, 15 * 24 * 3600},
 		{1, 5, "V« NgÊn Thñy", {2, 1, 503, 1}, 15 * 24 * 3600},
 		{1, 10, "§Êu Hån", {2, 1, 1157, 1}, 15 * 24 * 3600},
 }
 
 VIET_0912_XIANGCAODANGAO_AWARD_FULL = {
 		{1, 7, "B¶o R­¬ng §Æc BiÖt", {2, 1, 30091, 1}, 15*3600*24},
-		{1, 5468, "R­¬ng TrÊn Ph¸i", {2, 1, 30113, 1}, 15*3600*24},
-		{1, 250, "TÈy Tñy Linh §¬n", {2, 0, 137, 1}, 15*3600*24},
+		{1, 5468, "Town Sect Chest", {2, 1, 30113, 1}, 15*3600*24},
+		{1, 250, "Marrow-Cleansing Spirit Pellet", {2, 0, 137, 1}, 15*3600*24},
 		{1, 100, "B¸t B¶o TÈy Tñy §¬n", {2, 0, 138, 1}, 15*3600*24},
 		{1, 250, "R­¬ng YÕu QuyÕt_Cao cÊp", {2, 1, 30112, 1}, 15*3600*24},
 		{1, 100, "Thiªn C¬ Toµn", {2, 1, 1176, 1}, 15*3600*24},
@@ -93,8 +93,8 @@ VIET_0912_XIANGCAODANGAO_AWARD_FULL = {
 		{1, 100, "Thiªn Th¹ch Linh Th¹ch", {2, 1, 1068, 1}, 15*3600*24},
 		{1, 1500, "Thiªn Th¹ch Tinh Th¹ch", {2, 1, 1009, 1}, 0},
 		{1, 100, "Cöu Thiªn V« Cùc §¬n", {2, 1, 1006, 1}, 15*3600*24},
-		{1, 25, "L¨ng Ba Vi Bé", {0, 112, 78, 1}, 0},
-		{1, 200, "Tø Linh ChiÕn ý phæ", {0, 107, 162, 1}, 0},
+		{1, 25, "Lingbo Microstep", {0, 112, 78, 1}, 0},
+		{1, 200, "Four Spirits War Will Manual", {0, 107, 162, 1}, 0},
 		{1, 100, "Tö Quang ThÇn Th¹ch", {2, 1, 30131, 1}, 0},
 		{1, 100, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 15*3600*24},
 		{1, 100, "Phi Yªn Th¹ch", {2, 1, 30130, 1}, 0},
@@ -104,21 +104,21 @@ VIET_0912_XIANGCAODANGAO_AWARD_FULL = {
 --ÔùËÍ¸øNPC20¸öÏã²Ýµ°¸âÒÔºó»ñµÃµÄ½±Àø
 VIET_0912_NPC_AWARD = {		
 		{1, 100, "§¹i Nh©n S©m", {2, 0, 553, 1}, 15 * 24 * 3600},
-		{1, 30, "§Êu hån", {2, 1, 1157, 1}, 15 * 24 * 3600},
+		{1, 30, "Soul Duel", {2, 1, 1157, 1}, 15 * 24 * 3600},
 		{1, 30, "Thiªn Th¹ch Tinh Th¹ch", {2, 1, 1009, 1}, 0},
 		{1, 30, "MÆt n¹ S¸t Thñ §­êng", {2, 1, 1087, 1}, 15 * 24 * 3600},
 		{1, 30, "Tø Linh Thiªn ý Phæ", {0, 107, 160, 1}, 0},
-		{1, 30, "Tø Linh Tö ý Phæ", {0, 107, 161, 1}, 0},
-		{1, 30, "Tø Linh ChiÕn ý Phæ", {0, 107, 159, 1}, 0},
+		{1, 30, "Four Spirits Earth Intent Manual", {0, 107, 161, 1}, 0},
+		{1, 30, "Four Spirits Battle Intent Manual", {0, 107, 159, 1}, 0},
 		{2, 320, 600000},
 		{1, 10, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 15 * 24 * 3600},
 		{1, 40, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 15 * 24 * 3600},
 		{1, 20, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 15 * 24 * 3600},
 		{1, 100, "Th¸i H­ §a MËt Qu¶", {2, 1, 387, 1}, 15 * 24 * 3600},
-		{1, 20, "TÈy Tñy ®¬n", {2, 0, 136, 1}, 15 * 24 * 3600},
-		{1, 15, "Bé C¶nh", {0, 105, 13, 1,1,-1,-1,-1,-1,-1,-1}, 30 * 24 * 3600},
+		{1, 20, "Marrow-Cleansing Pill", {2, 0, 136, 1}, 15 * 24 * 3600},
+		{1, 15, "Scenery Set", {0, 105, 13, 1,1,-1,-1,-1,-1,-1,-1}, 30 * 24 * 3600},
 		{1, 15, "Hèt L«i B¸c", {0, 105, 12, 1,1,-1,-1,-1,-1,-1,-1}, 30 * 24 * 3600},
-		{1, 15, "XÝch Thè", {0, 105, 9, 1,1,-1,-1,-1,-1,-1,-1}, 30 * 24 * 3600},
+		{1, 15, "Red Hare", {0, 105, 9, 1,1,-1,-1,-1,-1,-1,-1}, 30 * 24 * 3600},
 		{1, 15, "Tr¶o Hoµng Phi DiÖn", {0, 105, 11, 1,1,-1,-1,-1,-1,-1,-1}, 30 * 24 * 3600},
 		{1, 75, "S­ M«n LÖnh Th­", {2, 1, 1016, 1}, 15 * 24 * 3600},
 		{1, 75, "S­ M«n T×nh NguyÖn Th­", {2, 1, 1019, 1}, 15 * 24 * 3600},		
@@ -128,22 +128,22 @@ VIET_0912_NPC_AWARD = {
 VIET_0912_YUTUXIAO_AWARD = {
 		{1, 5000, "M¶nh Thiªn th¹ch", {2, 2, 7, 1}, 0},
 		{1, 5033, "Thiªn th¹ch", {2, 2, 8, 1}, 0},
-		{1, 1400, "B¨ng th¹ch", {2, 1, 149, 1}, 0},
-		{1, 100, "TÈy Tñy linh ®¬n", {2, 0, 137, 1}, 15 * 24 * 3600},
-		{1, 500, "R­¬ng BÝ KÝp", {2, 1, 30093, 1}, 30 * 24 * 3600},
-		{1, 100, "Siªu Quang", {0, 105, 19, 1, 1, -1,-1,-1,-1,-1,-1}, 30 * 24 * 3600},
+		{1, 1400, "Ice Stone", {2, 1, 149, 1}, 0},
+		{1, 100, "Marrow-Cleansing Spirit Pill", {2, 0, 137, 1}, 15 * 24 * 3600},
+		{1, 500, "Secret Manual Chest", {2, 1, 30093, 1}, 30 * 24 * 3600},
+		{1, 100, "Sieu Quang", {0, 105, 19, 1, 1, -1,-1,-1,-1,-1,-1}, 30 * 24 * 3600},
 		{1, 500, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 0},
-		{1, 2000, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 15 * 24 * 3600},
+		{1, 2000, "Tribulation Dispel Powder", {2, 0, 141, 1}, 15 * 24 * 3600},
 		{1, 10, "Thiªn Th¹ch linh th¹ch", {2, 1, 1068, 1}, 15 * 24 * 3600},
-		{1, 60, "R­¬ng TrÊn Ph¸i", {2, 1, 30113, 1}, 30 * 24 * 3600},
+		{1, 60, "Town Sect Chest", {2, 1, 30113, 1}, 30 * 24 * 3600},
 		{1, 40, "ThÇn hµnh b¶o ®iÓn", {0, 200, 40, 1}, 30 * 24 * 3600},
 		{1, 120, "Tö Quang Bµi", {2, 0, 762, 1}, 15 * 24 * 3600},
-		{1, 15137, "C¬m chiªn trøng", {1, 1, 14, 1}, 0},
-		{1, 14000, "B¸nh Bét vµng", {1, 1, 15, 1}, 15 * 24 * 3600},
-		{1, 14000, "L¹c Mai", {1, 1, 16, 1}, 0},
+		{1, 15137, "Fried egg rice", {1, 1, 14, 1}, 0},
+		{1, 14000, "Golden Flour Cake", {1, 1, 15, 1}, 15 * 24 * 3600},
+		{1, 14000, "Plum Blossom", {1, 1, 16, 1}, 0},
 		{1, 14000, "Minh NguyÖt D¹", {1, 1, 17, 1}, 0},
-		{1, 14000, "Méc Lan Xu©n", {1, 1, 18, 1}, 0},
-		{1, 14000, "T©y B¾c Väng", {1, 1, 19, 1}, 0},
+		{1, 14000, "Magnolia Spring", {1, 1, 18, 1}, 0},
+		{1, 14000, "Northwest Gaze", {1, 1, 19, 1}, 0},
 };
 
 --ÔùËÍ¸øNPC20¸öÏã²Ýµ°¸âÒÔºó»ñµÃ½±Àø
@@ -168,7 +168,7 @@ function give_xiangcaodangao_get_award()
     end
     if DelItem(2, 1, 30124, 10) == 1 then
         SetTask(VIET_0912_TASK_GET_NPC_AWARD_DATE, SetByte(GetTask(VIET_0912_TASK_GET_NPC_AWARD_DATE), 2, nTaskVal + 1))        
-        gf_EventGiveRandAward(VIET_0912_NPC_AWARD, 1000, 1, szFullLogTitle, "TÆng B¸nh Kem Vani");--¸ø½±Àø
-        gf_EventGiveCustomAward(1, 1500000, 1,"TÆng B¸nh Kem Vani")--¸ø¾­Ñé
+        gf_EventGiveRandAward(VIET_0912_NPC_AWARD, 1000, 1, szFullLogTitle, "Gift Vanilla Cake");--¸ø½±Àø
+        gf_EventGiveCustomAward(1, 1500000, 1,"Gift Vanilla Cake")--¸ø¾­Ñé
     end
 end

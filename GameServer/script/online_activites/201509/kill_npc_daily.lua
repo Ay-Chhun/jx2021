@@ -51,8 +51,8 @@ TB_KILL_NPC =
 MAP_DESC = 
 {
 	[MAP_1] = "Thiªn Long Tù",
-	[MAP_2] = "Quúnh KÕt",
-	[MAP_3] = "H­ng Kh¸nh",
+	[MAP_2] = "Qiong Jie",
+	[MAP_3] = "Xing Qing",
 }
 
 tbKillNpcDaily = {}
@@ -66,7 +66,7 @@ tbKillNpcDaily.nRetsetTaskTaskIndex = 3 --ÖØÖÃÈÎÎñ±äÁ¿
 tbKillNpcDaily.nTaskInfoTaskIndex = 4 --ÈÎÎñÐÅÏ¢£¬É±¹ÖÇé¿ö
 tbKillNpcDaily.nRandomMapTaskIndex = 5 --Ëæ»úµÄµØÍ¼×Ô¶¨ÒåID
 
-tbKillNpcDaily.tbLogInfo = {"Ho¹t §éng th¸ng 9 n¨m 2015", "Ho¹t §éng th¸ng 9 n¨m 2015"}
+tbKillNpcDaily.tbLogInfo = {"September 2015 Activity", "September 2015 Activity"}
 tbKillNpcDaily.tbAward = 
 {
 	[NORMAL_TYPE] = 
@@ -75,14 +75,14 @@ tbKillNpcDaily.tbAward =
 		tbCost = 
 		{
 			{2, 1, 30603, 75, "Tiªu Dao Ngäc"},
-			{2, 1, 30916, 3000, "Bét m×"},
+			{2, 1, 30916, 3000, "Flour"},
 			{2, 1, 30917, 3000, "Nh©n b¸nh"},
 		},
 		tbPrize = 
 		{
 			{"Exp", 100000000},
 			{2, 1, 30918, 1000, "Nh©n b¸nh thËp cÈm"},
-			{2, 1, 30785, 50, "V« Tù Kinh Th­"},
+			{2, 1, 30785, 50, "Wordless Scripture"},
 		}
 	},
 	[ADVANCED_TYPE] = 
@@ -91,14 +91,14 @@ tbKillNpcDaily.tbAward =
 		tbCost = 
 		{
 			{2, 1, 30603, 223, "Tiªu Dao Ngäc"},
-			{2, 1, 30916, 3000, "Bét m×"},
+			{2, 1, 30916, 3000, "Flour"},
 			{2, 1, 30917, 3000, "Nh©n b¸nh"},
 		},
 		tbPrize = 
 		{
 			{"Exp", 125000000},
-			{2, 1, 30921, 69, "B¸nh thËp cÈm"},
-			{2, 1, 30785, 111, "V« Tù Kinh Th­"},
+			{2, 1, 30921, 69, "Assorted cake"},
+			{2, 1, 30785, 111, "Wordless Scripture"},
 		}
 	}
 }

@@ -8,7 +8,7 @@ function main()
 			"Ta téi ¸c tµy trêi, ta ph¶i tù thó/surrender",
 			"B»ng h÷u ta ë ®©y, h·y ®Ó ta vµo th¨m./visit_a_prisoner",
 			"T×m hiÓu t×nh h×nh/know_detail",
-			"Kh«ng cã g×/nothing",
+			"Nothing/nothing",
 			}
 	Say("<color=green>"..g_NpcName.."<color>: ë ®©y lµ thiªn lao, kh«ng cã viÖc cho ng­¬i!",getn(selTab),selTab);
 end;
@@ -94,8 +94,8 @@ function visit_a_prisoner()
 		return 0;
 	end;
 	local selTab = {
-				"§ång ý/#enter_jail(2)",
-				"Hñy bá/nothing",
+				"Agree/#enter_jail(2)",
+				"Cancel/nothing",
 				}
 	Say("<color=green>"..g_NpcName.."<color>: L·o gia ta d¹o nµy cã h¬i khã kh¨n, cÇn <color=yellow>1 tiÒn vµng<color>.",getn(selTab),selTab);
 end;

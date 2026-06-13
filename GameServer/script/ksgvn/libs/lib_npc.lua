@@ -60,10 +60,10 @@ function KsgNpc:PageSay(tbSay, nStart, nPerPage)
             tinsert(tbCurrentlyShow, 1, format("%s/#_PageSay(2,%d)", "Trë l¹i", nEveryPage))
         end
         if nStartDialogNum + nEveryPage - 1 < nCount then
-            tinsert(tbCurrentlyShow, 1, format("%s/#_PageSay(%d,%d)", "Trang kÕ", nStartDialogNum + nEveryPage, nEveryPage))
+            tinsert(tbCurrentlyShow, 1, format("%s/#_PageSay(%d,%d)", "Next page", nStartDialogNum + nEveryPage, nEveryPage))
         end
         if nStartDialogNum ~= 2 then
-            tinsert(tbCurrentlyShow, 1, format("%s/#_PageSay(%d,%d)", "Trang tr­íc", nStartDialogNum - nEveryPage, nEveryPage))
+            tinsert(tbCurrentlyShow, 1, format("%s/#_PageSay(%d,%d)", "Previous page", nStartDialogNum - nEveryPage, nEveryPage))
         end
         for i = 1, nLen do
             tinsert(tbCurrentlyShow, 1, format(g_tbPageSay[GetName()][nStartDialogNum + nLen - i], nStartDialogNum + nLen - i))

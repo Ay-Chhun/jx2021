@@ -117,7 +117,7 @@ function LIB_Award:Award(tbAwardList)
 	if type(tbAwardList["nDanhvong"])=="number" then
 		ModifyReputation(tbAwardList["nDanhvong"], 0)
 		if self.szLogTitle ~= "" then
-			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nDanhvong"], "Danh väng")
+			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nDanhvong"], "Reputation")
 		end
 	end
 -- Award Su Mon
@@ -125,14 +125,14 @@ function LIB_Award:Award(tbAwardList)
 		SetTask(336, GetTask(336) + tbAwardList["nSumon"])
 		Msg2Player("§iÓm s­ m«n t¨ng thªm " .. tbAwardList["nSumon"] .. ".")
 		if self.szLogTitle ~= "" then
-			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nSumon"], "S­ m«n")
+			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nSumon"], "Sect")
 		end
 	end
 -- Award Gold
 	if type(tbAwardList["nGold"])=="number" then
 		Earn(tbAwardList["nGold"])
 		if self.szLogTitle ~= "" then
-			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nGold"], "Ng©n l­îng")
+			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nGold"], "Silver tael")
 		end
 	end
 	return 1
@@ -146,7 +146,7 @@ function LIB_Award:Punish(tbPunishList)
 		for i=1,getn(tbItemSet) do
 			DelItem(tbItemSet[i]["gdp"][1], tbItemSet[i]["gdp"][2], tbItemSet[i]["gdp"][3], tbItemSet[i]["gdp"][4])
 			Msg2Player("B¹n bÞ mÊt " .. tbItemSet[i]["gdp"][4] .. " " .. tbItemSet[i]["name"])
-			gf_WriteLogEx(self.szLogTitle.." FAIL", "mÊt", tbItemSet[i]["gdp"][4], tbItemSet[i]["name"])
+			gf_WriteLogEx(self.szLogTitle.." FAIL", "lost", tbItemSet[i]["gdp"][4], tbItemSet[i]["name"])
 		end
 	end
 	return 1

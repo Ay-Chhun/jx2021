@@ -15,7 +15,7 @@ function main()
 	--¹ú¼Ê¶ùÍ¯½Ú
 		local tSay = aah_GetSayDialog(93);
 		if getn(tSay) > 0 then
-			tinsert(tSay, "Tho¸t/nothing");
+			tinsert(tSay, "Exit/nothing");
 			Say(format("<color=green>H¹ HÇu Liªn<color>: %s mang mãn ngon g× ®Õn tÆng muéi thÕ?", GetPlayerSex()), getn(tSay), tSay);
 			return 0;
 		end

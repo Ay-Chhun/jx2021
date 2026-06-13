@@ -1,6 +1,6 @@
 Include("\\script\\lib\\globalfunctions.lua");
 Include("\\script\\task\\faction\\faction_equipment.lua");
-g_szPacketName = "Tói S­ §å T×nh Th©m";	--°üµÄÃû×Ö
+g_szPacketName = "Master-Disciple Deep Affection Bag";	--°üµÄÃû×Ö
 g_nNeedRoom = 1;
 g_nNeedWeight = 100;	
 function OnUse(nItemIdx)
@@ -9,8 +9,8 @@ function OnUse(nItemIdx)
 		return 0;
 	end;
 	local selTab = {};
-	tinsert(selTab,format("§ång ý/#add_item(%d)",nItemIdx));
-	tinsert(selTab,"Hñy bá/nothing");	
+	tinsert(selTab,format("Confirm/#add_item(%d)",nItemIdx));
+	tinsert(selTab,"Cancel/nothing");	
 	Say("B¹n muèn më <color=yellow>"..g_szPacketName.."<color>chø? B¹n cã thÓ nhËn ®­îc <color=yellow>m·o S­ M«n Trung CÊp <color> vµ <color=yellow>200<color> ®iÓm cèng hiÕn S­ m«n.",getn(selTab),selTab);
 end;
 
@@ -22,6 +22,6 @@ function add_item(nItemIdx)
 		Msg2Player("B¹n nhËn ®­îc 1 m·o S­ m«n trung cÊp");
 		SetTask(336,GetTask(336)+200);
 		Msg2Player("B¹n nhËn ®­îc 200 ®iÓm cèng hiÕn S­ m«n ");
-		WriteLog("["..g_szPacketName.."]:"..GetName().."Më 1 tói ");
+		WriteLog("["..g_szPacketName.."]:"..GetName().."Open 1 bag");
 	end;
 end;

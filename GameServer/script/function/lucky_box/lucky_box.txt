@@ -1,5 +1,5 @@
 Name	G	D	P	Num	freePbby	freeExpire	freeBind	freeNotice	Pbby	Expire	Bind	Notice
-Tªn vËt phÈm:	id	id	id	Chän	Tû lÖ miÔn phİ (§iÒn ngÉu nhiªn)	Thêi gian tån t¹i (Ngµy)	Khãa kh«ng (4 khãa, 1 kh«ng khãa)	Th«ng b¸o kh«ng	Tû lÖ (§iÒn ngÉu nhiªn)	Thêi gian tån t¹i (Ngµy)	Khãa kh«ng	Th«ng b¸o kh«ng
+Tªn vËt phÈm:	id	id	id	Choose	Tû lÖ miÔn phİ (§iÒn ngÉu nhiªn)	Thêi gian tån t¹i (Ngµy)	Khãa kh«ng (4 khãa, 1 kh«ng khãa)	Th«ng b¸o kh«ng	Tû lÖ (§iÒn ngÉu nhiªn)	Thêi gian tån t¹i (Ngµy)	Khãa kh«ng	Th«ng b¸o kh«ng
 HuyÕtTrİchTh¹ch Lv1	2	22	101	1	10000	0	1	0	1000	0	1	0
 HuyÕtTrİchTh¹ch Lv2	2	22	102	1	3750	0	1	0	375	0	1	0
 HuyÕtTrİchTh¹ch Lv3	2	22	103	1	1000	0	1	0	100	0	1	0

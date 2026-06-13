@@ -64,8 +64,8 @@ function OnPutinComplete(param)
 	end
 	if nResult == 1 and Pay(1000000) == 1 then
 		--Ìí¼ÓĞÂÃØ¼®
-		gf_AddItemEx({0, 107, 162, 1}, "Tø Linh ChiÕn ı Phæ");
-		WriteLogEx("Hoat dong thang 11","n©ng cÊp",1,"Tø Linh ChiÕn ı Phæ")
+		gf_AddItemEx({0, 107, 162, 1}, "Four Spirits Battle Intent Manual");
+		WriteLogEx("Hoat dong thang 11","n©ng cÊp",1,"Four Spirits Battle Intent Manual")
 	end
 end
 

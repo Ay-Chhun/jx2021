@@ -13,7 +13,7 @@
 function OnUse()
 	Say("Trong nµy cã thÓ chøa 10 <color=yellow>V¹n VËt Quy Nguyªn ®¬n<color>, më chø?",
 		2,
-		"§­îc/open_10_wanwuguiyuandan",
+		"Yes/open_10_wanwuguiyuandan",
 		"T¹m thêi kh«ng më--Hñy bá/cancel_dialog")
 end;
 

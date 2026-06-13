@@ -16,7 +16,7 @@ function OnUse()
 	"MËt ®å nhiÖm vô 2/#add_reel_task(2)",
 	"MËt ®å nhiÖm vô 3/#add_reel_task(3)",
 	"MËt ®å nhiÖm vô 4/#add_reel_task(4)",
-	"Trang kÕ/#next_page(1)",
+	"Next page/#next_page(1)",
 	"§ãng hép, t¹m thêi ta kh«ng cÇn mËt ®å nhiÖm vô./nothing"
 	);
 end;
@@ -29,7 +29,7 @@ function next_page(flag)
 		"MËt ®å nhiÖm vô 6/#add_reel_task(6)",
 		"MËt ®å nhiÖm vô 7/#add_reel_task(7)",
 		"MËt ®å nhiÖm vô 8/#add_reel_task(8)",
-		"Trang kÕ/#next_page(2)",
+		"Next page/#next_page(2)",
 		"§ãng hép, t¹m thêi ta kh«ng cÇn mËt ®å nhiÖm vô./nothing"
 		);
 	else--flag

@@ -30,7 +30,7 @@ function ConfirmGetTongQian(nCount)
 		return
 	end
 	if GetItemCount(2, 1, 30030) < nCount then
-		Talk(1, "", "Sè l­îng tiÓu nh­ ý kh«ng ®ñ ®Ó ®æi"..nCount.." ®ång tiÒn vµng!");
+		Talk(1, "", "Sè l­îng tiÓu nh­ ý kh«ng ®ñ ®Ó ®æi"..nCount.." golden coins!");
 		return
 	end
 	if gf_Judge_Room_Weight(2, 10, " ") == 0 then

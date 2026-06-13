@@ -9,7 +9,7 @@ tabLVEXP = new(KTabFile, "\\settings\\huodong_exp.txt");
 
 function OnUse()
 	local selTab = {
-				"§ång ý/ok",
+				"Agree/ok",
 				"Ta ch­a muèn ¨n./cancel"
 				}
 	local yxleft = 10 - GetByte(GetTask(TASK_USEYUANXIAO),2)

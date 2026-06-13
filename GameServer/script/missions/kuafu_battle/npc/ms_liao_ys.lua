@@ -7,7 +7,7 @@ function main()
 		tinsert(tSay, "Mêi §« Thèng phßng thñ/order_duwei");
 	end
 	local tTemp = {
-		[KF_ALL_ID] = "Trung lËp",
+		[KF_ALL_ID] = "Neutral",
 		[KF_CampOne_ID] = "Tèng qu©n chiÕm lÜnh",
 		[KF_CampTwo_ID] = "Liªu qu©n chiÕm lÜnh",	
 	}

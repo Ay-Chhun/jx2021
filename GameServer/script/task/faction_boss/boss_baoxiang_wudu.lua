@@ -10,28 +10,28 @@ TASK_ID_LAST_GET_DATE = 88			-- ÉÏ´ÎÁìÈ¡ÈÎÎñµÄÊ±¼ä£¬ÈÎÎñ±äÁ¿ID
 TASK_ID_HAVE_GOT_TODAY = 89			-- ½ñÌìÊÇ·ñÒÑ¾­ÁìÈ¡ÁËÈÎÎñ,ÈÎÎñ±äÁ¿ID
 
 tGaojiMiji = {
-	[0] = {{"Kim Cang B¸t Nh· Kinh",0,107,166},{"V« TrÇn Bå §Ò Kinh",0,107,168},{"TiÒm Long TÞch DiÖt Kinh",0,107,167},{"Thiªn La Liªn Ch©u Lôc",0,107,169},{"Nh­ ý Kim §Ønh MËt TÞch",0,107,170},{"BÝch H¶i TuyÖt ¢m Phæ",0,107,171},{"Hçn §én TrÊn Nh¹c MËt TÞch",0,107,172},{"Quü Thiªn Du Long MËt TÞch",0,107,173},{"HuyÔn ¶nh Mª Tung MËt TÞch",0,107,174},{"Qu©n Tö TiÖt Phong MËt TÞch",0,107,175},{"TrÊn Qu©n Phi Long Th­¬ng Phæ",0,107,176},{"Xuyªn V©n L¹c Hång MËt TÞch",0,107,177},{"U Minh Phong Ma Lôc",0,107,178},{"Linh Cæ HuyÔn Tµ Lôc",0,107,179}},
-	[1] = {{"Kim Cang B¸t Nh· Kinh",0,107,166},{"V« TrÇn Bå §Ò Kinh",0,107,168},{"TiÒm Long TÞch DiÖt Kinh",0,107,167}},
-	[2] = {{"Kim Cang B¸t Nh· Kinh",0,107,166}},
-	[3] = {{"V« TrÇn Bå §Ò Kinh",0,107,168}},
+	[0] = {{"Kim Cang Bat Nha Kinh",0,107,166},{"Vo Tran Bo De Kinh",0,107,168},{"TiÒm Long TÞch DiÖt Kinh",0,107,167},{"Thiªn La Liªn Ch©u Lôc",0,107,169},{"Nh­ ý Kim §Ønh MËt TÞch",0,107,170},{"Azure Sea Silent Sound Score",0,107,171},{"Hçn §én TrÊn Nh¹c MËt TÞch",0,107,172},{"Quü Thiªn Du Long MËt TÞch",0,107,173},{"HuyÔn ¶nh Mª Tung MËt TÞch",0,107,174},{"Qu©n Tö TiÖt Phong MËt TÞch",0,107,175},{"Tran Quan Phi Long Thuong Manual",0,107,176},{"Xuyªn V©n L¹c Hång MËt TÞch",0,107,177},{"U Minh Phong Ma Manual",0,107,178},{"Linh Co Huyen Ta Manual",0,107,179}},
+	[1] = {{"Kim Cang Bat Nha Kinh",0,107,166},{"Vo Tran Bo De Kinh",0,107,168},{"TiÒm Long TÞch DiÖt Kinh",0,107,167}},
+	[2] = {{"Kim Cang Bat Nha Kinh",0,107,166}},
+	[3] = {{"Vo Tran Bo De Kinh",0,107,168}},
 	[4] = {{"TiÒm Long TÞch DiÖt Kinh",0,107,167}},
 	[5] = {{"Thiªn La Liªn Ch©u Lôc",0,107,169}},
 	[6] = {{"Thiªn La Liªn Ch©u Lôc",0,107,169}},
-	[7] = {{"Nh­ ý Kim §Ønh MËt TÞch",0,107,170},{"BÝch H¶i TuyÖt ¢m Phæ",0,107,171}},
+	[7] = {{"Nh­ ý Kim §Ønh MËt TÞch",0,107,170},{"Azure Sea Silent Sound Score",0,107,171}},
 	[8] = {{"Nh­ ý Kim §Ønh MËt TÞch",0,107,170}},
-	[9] = {{"BÝch H¶i TuyÖt ¢m Phæ",0,107,171}},
+	[9] = {{"Azure Sea Silent Sound Score",0,107,171}},
 	[10] = {{"Hçn §én TrÊn Nh¹c MËt TÞch",0,107,172},{"Quü Thiªn Du Long MËt TÞch",0,107,173}},
 	[11] = {{"Hçn §én TrÊn Nh¹c MËt TÞch",0,107,172}},
 	[12] = {{"Quü Thiªn Du Long MËt TÞch",0,107,173}},
 	[13] = {{"HuyÔn ¶nh Mª Tung MËt TÞch",0,107,174},{"Qu©n Tö TiÖt Phong MËt TÞch",0,107,175}},
 	[14] = {{"HuyÔn ¶nh Mª Tung MËt TÞch",0,107,174}},
 	[15] = {{"Qu©n Tö TiÖt Phong MËt TÞch",0,107,175}},
-	[16] = {{"TrÊn Qu©n Phi Long Th­¬ng Phæ",0,107,176},{"Xuyªn V©n L¹c Hång MËt TÞch",0,107,177}},
-	[17] = {{"TrÊn Qu©n Phi Long Th­¬ng Phæ",0,107,176}},
+	[16] = {{"Tran Quan Phi Long Thuong Manual",0,107,176},{"Xuyªn V©n L¹c Hång MËt TÞch",0,107,177}},
+	[17] = {{"Tran Quan Phi Long Thuong Manual",0,107,176}},
 	[18] = {{"Xuyªn V©n L¹c Hång MËt TÞch",0,107,177}},
-	[19] = {{"U Minh Phong Ma Lôc",0,107,178},{"Linh Cæ HuyÔn Tµ Lôc",0,107,179}},
-	[20] = {{"U Minh Phong Ma Lôc",0,107,178}},
-	[21] = {{"Linh Cæ HuyÔn Tµ Lôc",0,107,179}}
+	[19] = {{"U Minh Phong Ma Manual",0,107,178},{"Linh Co Huyen Ta Manual",0,107,179}},
+	[20] = {{"U Minh Phong Ma Manual",0,107,178}},
+	[21] = {{"Linh Co Huyen Ta Manual",0,107,179}}
 };
 
 -- ³õÊ¼¶Ô»°Èë¿Ú
@@ -107,12 +107,12 @@ function main()
 			Msg2Player("B¹n më ®­îc b¶o r­¬ng, nhËn ®­îc 1 quyÓn mËt tÞch.")
 		end
 	end
-	Msg2SubWorld("Ng­êi ch¬i"..GetName().."§¸nh b¹i  Cæ MÆc, nhËn ®­îc Tói tïy th©n");
+	Msg2SubWorld("Player"..GetName().."§¸nh b¹i  Cæ MÆc, nhËn ®­îc Tói tïy th©n");
 	-- °Ñ×Ô¼ºÉ¾³ý
 	local nSelfIndex = GetTargetNpc()
 	SetNpcLifeTime(nSelfIndex, 0)
 	SetTask(TASK_ID_HAVE_GOT_TODAY, 0)
-	WriteLogEx("Boss su mon","nhÆt tói Ngò §éc")
+	WriteLogEx("Boss su mon","pick up the Five Poisons bag")
 end;
 
 -- µÃµ½Ê¦ÃÅÌ××°ÈýÍ·
@@ -352,7 +352,7 @@ end;
 
 -- »ñµÃÊ¦ÃÅÃØ¼®¾í±¾Ò»¸ö£¬nType = 0/1/2 ±íÊ¾ ÉÏ¾í/ÖÐ¾í/ÏÂ¾í
 function get_faction_misbook(nType)
-	local strTab = {"[th­îng]", "[trung]", "[h¹]"}
+	local strTab = {"[upper]", "[trung]", "[lower]"}
 	
 	local nBookType = tonumber(nType)
 	local nBase = 0

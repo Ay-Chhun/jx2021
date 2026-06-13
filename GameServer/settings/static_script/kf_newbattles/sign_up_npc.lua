@@ -38,17 +38,17 @@ function battle_main()
 	local nLiaoPlayerMSCount = BT_GetPlayerCount(nBattleType,LIAO_ID);
 	--ÐÂÑ¡ÏîÖ»ÄÜ¼ÓÔÚÏÂÃæµÚÎå¸öÑ¡ÏîÖ®ºó
 	local selTab = {
-			"B¸o danh"..tBattleName[VILLAGE_ID].." [Tèng "..nSongPlayerCountV.." ng­êi]: [Liªu "..nLiaoPlayerCountV.." ng­êi]/#sign_up("..VILLAGE_ID..")",
-			"B¸o danh"..tBattleName[RESOURCE_ID].." [Tèng "..nSongPlayerCountR.." ng­êi]: [Liªu "..nLiaoPlayerCountR.." ng­êi]/#sign_up("..RESOURCE_ID..")",
-			"B¸o danh"..tBattleName[EMPLACEMENT_ID].." [Tèng "..nSongPlayerCountE.." ng­êi]: [Liªu "..nLiaoPlayerCountE.." ng­êi]/#sign_up("..EMPLACEMENT_ID..")",
-			"B¸o danh"..tBattleName[MAINBATTLE_ID].." [Tèng "..nSongPlayerCountM.." ng­êi]: [Liªu "..nLiaoPlayerCountM.." ng­êi]/#sign_up("..MAINBATTLE_ID..")",
+			"Register"..tBattleName[VILLAGE_ID].." [Tèng "..nSongPlayerCountV.." ng­êi]: [Liªu "..nLiaoPlayerCountV.." ng­êi]/#sign_up("..VILLAGE_ID..")",
+			"Register"..tBattleName[RESOURCE_ID].." [Tèng "..nSongPlayerCountR.." ng­êi]: [Liªu "..nLiaoPlayerCountR.." ng­êi]/#sign_up("..RESOURCE_ID..")",
+			"Register"..tBattleName[EMPLACEMENT_ID].." [Tèng "..nSongPlayerCountE.." ng­êi]: [Liªu "..nLiaoPlayerCountE.." ng­êi]/#sign_up("..EMPLACEMENT_ID..")",
+			"Register"..tBattleName[MAINBATTLE_ID].." [Tèng "..nSongPlayerCountM.." ng­êi]: [Liªu "..nLiaoPlayerCountM.." ng­êi]/#sign_up("..MAINBATTLE_ID..")",
 			"Ta muèn vµo"..tBattleName[nBattleType].."chiÕn tr­êng [Tèng "..nSongPlayerMSCount.." ng­êi]: [Liªu "..nLiaoPlayerMSCount.." ng­êi]/#join_battle("..nBattleType..")",
-			"Xem sè liÖu thèng kª/BTS_ViewBattleStatistic",
+			"View statistics/BTS_ViewBattleStatistic",
 			"Ta muèn nhËn phÇn th­ëng chiÕn tr­êng/get_battle_award",
 			"§æi phÇn th­ëng chiÕn tr­êng/battle_regular_award",
 			"Tham gia ®¸nh gi¸ qu©n hµm/assess_rank",
 			"Ta muèn ®­îc h­íng dÉn vÒ chiÕn tr­êng/get_battle_book",
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 			}
 	local nGlobalState = GetGlbValue(GLB_NEW_BATTLESTATE);
 	if nGlobalState == 0 then
@@ -136,7 +136,7 @@ function sign_up(nBattleType)	--ÅÐ¶ÏÕ½³¡Ê±¼äÓëÍæ¼ÒµÈ¼¶
 		--sMedicineStr = "ÔÚÈ·ÈÏ±¨Ãû<color=yellow>"..tBattleName[].."ºó£¬Äã¿ÉÒÔÃâ·Ñ»ñµÃ";
 	end;
 	local selTab = {
-				"§ång ý/#sign_up_confirm("..nBattleType..")",
+				"Agree/#sign_up_confirm("..nBattleType..")",
 				"Ta suy nghÜ l¹i!/nothing",
 				}
 	if g_nNpcCamp == SONG_ID then
@@ -319,7 +319,7 @@ function get_battle_award_confirm(nType)
 		return 0;
 	end;
 	local selTab = {
-				format("§óng/#get_all_award(%d)",nType),
+				format("Confirm/#get_all_award(%d)",nType),
 				"Sai/nothing",
 				}
 	Say("<color=green>"..g_sNpcName.."<color>: Ng­¬i muèn sö dông <color=yellow>"..tbJUNGONGZHANG[nType][1].."<color>?",getn(selTab),selTab);
@@ -417,7 +417,7 @@ function get_all_award(nType)
 	local nYinXiongXunZhangCnt = tYinXiongXunZhang[nType][is_winner+1] or 0
 	if nYinXiongXunZhangCnt > 0 then
 		gf_SetLogCaption("NewBattle");
-    	gf_AddItemEx({2, 1, 30499, nYinXiongXunZhangCnt}, "Hu©n ch­¬ng anh hïng");
+    	gf_AddItemEx({2, 1, 30499, nYinXiongXunZhangCnt}, "Hero's Medal");
     	gf_SetLogCaption("");
 	end
 
@@ -464,7 +464,7 @@ function get_all_award(nType)
 		BT_SetData(PT_RANKPOINT,nCurRankPoint-nJunGongAward);
 	end;
 	SetRankPoint(RANK_BATTLE_CONTRIBUTION,BATTLE_OFFSET+PT_RANKPOINT,1);
-	Msg2Player("B¹n nhËn ®­îc "..tCampNameZ[nLastCamp].."Ph­¬ng "..nJunGongAward.." ®iÓm c«ng tr¹ng");
+	Msg2Player("B¹n nhËn ®­îc "..tCampNameZ[nLastCamp].."Faction"..nJunGongAward.." ®iÓm c«ng tr¹ng");
 	--ÎäÁÖ¹¦Ñ«
 	if nLastBattle ~= MAINBATTLE_ID then	--Èç¹ûÊÇÐ¡Õ½³¡
 		if nLastCamp == nLastResult then
@@ -499,8 +499,8 @@ function not_use_jungongzhang_confirm2()
 		return 0;
 	end;
 	local selTab = {
-				"§ång ý/#get_all_award(0)",
-				"Ra khái/nothing",
+				"Agree/#get_all_award(0)",
+				"Leave/nothing",
 				}
 	Say("<color=green>"..g_sNpcName.."<color>: B¹n tham gia chiÕn tr­êng phe ®èi ph­¬ng, trùc tiÕp nhËn th­ëng sÏ bÞ khÊu trõ ®iÓm qu©n c«ng, cã thÓ sö dông <color=yellow>mÆt n¹ Gi¸n §iÖp<color> lµm qu©n c«ng b¹n bÞ khÊu trõ thµnh 0. NÕu b¹n vÉn muèn nhËn phÇn th­ëng h·y chän x¸c nhËn, nÕu b¹n muèn suy nghÜ thªm hay chän Rêi khái.",getn(selTab),selTab);
 end;
@@ -510,7 +510,7 @@ function assess_rank()
 			"Ta muèn nhËn qu©n hµm qu©n c«ng tuÇn nµy/battle_shouxian",
 			"§æi míi qu©n hµm/update_cur_rank",
 			"Quay l¹i néi dung tr­íc./main",
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 			}
 	Say("<color=green>"..g_sNpcName.."<color>: Ng­¬i muèn tham gia trao qu©n hµm tuÇn nµy ­?",getn(selTab),selTab);
 end;
@@ -522,7 +522,7 @@ function battle_regular_award()
 				"Ta muèn ®æi 30000 ®iÓm tÝch lòy lÊy LÖnh bµi bang héi/want_ling_pai",
 				"Ta muèni 1000 ®iÓm tÝch lòy lÊy ®iÓm kinh nghiÖm/want_exp_award",
 				"Quay l¹i néi dung tr­íc./main",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"End dialogue/nothing",
 				}
 	if IB_VERSION == 1 then	--IB°æ±¾Ã»ÓÐ»ý·Ö»»×°±¸¡¢¾­Ñé¡¢»áÃËÁîÅÆ½±Àø
 		tremove(selTab,2);
@@ -534,8 +534,8 @@ end;
 
 function want_ling_pai()
 	local selTab = {
-			"§ång ý/give_ling_pai",
-			"Hñy bá/nothing",
+			"Agree/give_ling_pai",
+			"Cancel/nothing",
 			}
 	Say("<color=green>"..g_sNpcName.."<color>: §æi <color=yellow>LÖnh bµi bang héi<color> cÇn <color=yellow>30000 ®iÓm tÝch lòy<color>, b¹n x¸c nhËn muèn ®æi?",getn(selTab),selTab);
 end;
@@ -563,8 +563,8 @@ end;
 
 function want_cangjian_equip()
 	local selTab = {
-			"§ång ý/give_cangjian_equip",
-			"Hñy bá/nothing",
+			"Agree/give_cangjian_equip",
+			"Cancel/nothing",
 			}
 	Say("<color=green>"..g_sNpcName.."<color>: Muèn ®æi <color=yellow>H¹ y Tµng KiÕm cÊp 70<color> cÇn <color=yellow>100000 ®iÓm tÝch lòy<color>, b¹n x¸c nhËn muèn ®æi?",getn(selTab),selTab);
 end;

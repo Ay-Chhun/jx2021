@@ -6,10 +6,10 @@ Include("\\script\\lib\\globalfunctions.lua")
 nItemId1 = 2;
 nItemId2 = 96;
 tItem = {
-	[137] = {5077,1797,3211,"§«ng b¾c",1},
-	[140] = {5077,1687,3545,"T©y nam",2},
-	[138] = {5077,1626,3177,"T©y b¾c",3},
-	[139] = {5077,1876,3563,"§«ng nam",4},
+	[137] = {5077,1797,3211,"Northeast",1},
+	[140] = {5077,1687,3545,"Southwest",2},
+	[138] = {5077,1626,3177,"Northwest",3},
+	[139] = {5077,1876,3563,"Southeast",4},
 	}
 tInfo ={
 	{936,TASKID_SW_USE_KEY,},

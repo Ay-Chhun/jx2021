@@ -165,7 +165,7 @@ function ChoiceUnLockAttr(nItem, nLineID)
     for i = 1, getn(tCurrList) do
       tinsert(tbSay.sel, { GetItemFeedAttrDesc(tCurrList[i]), format("#ChoiceUnLockAttr(%d, %d)", nItem, tCurrList[i]) });
     end
-    tinsert(tbSay.sel, { "\n rót lui", "nothing" });
+    tinsert(tbSay.sel, { "\n withdraw", "nothing" });
     temp_Talk(tbSay);
     return 0;
   end
@@ -179,7 +179,7 @@ function ChoiceUnLockAttr(nItem, nLineID)
       tinsert(tbSay.sel, { tRet[1][i][2],
                            format("#ChoiceUnLockAttr(%d, %d)", nItem, i) });
     end
-    tinsert(tbSay.sel, { "\n rót lui", "nothing" });
+    tinsert(tbSay.sel, { "\n withdraw", "nothing" });
     temp_Talk(tbSay);
     return 0;
   end
@@ -192,7 +192,7 @@ function ChoiceUnLockAttr(nItem, nLineID)
   msg = msg .. format("Thuéc tÝnh mÆc ®Þnh: \n<color=green>%s, %s, %s<color>\n", GetItemFeedAttrDesc(tLineID[1]), GetItemFeedAttrDesc(tLineID[2]), GetItemFeedAttrDesc(tLineID[3]));
   msg = msg .. format("Thuéc tÝnh më khãa:  \n<color=green>%s, %s, %s<color>\n", GetItemFeedAttrDesc(tLineID[4]), GetItemFeedAttrDesc(tLineID[5]), GetItemFeedAttrDesc(tLineID[6]));
   msg = msg .. format("QuyÕt ®Þnh dïng <color=gold>%s<color> ghÐp thµnh <color=gold>%s<color> kh«ng?", GetItemName(nItem), tRet[2]);
-  Say(msg, 2, szDialog, "§Ó ta suy nghÜ/nothing");
+  Say(msg, 2, szDialog, "Let me think about it/nothing");
 end
 
 --Ñ¡Ôñ»ù´¡ÊôÐÔ
@@ -205,7 +205,7 @@ function ChoiceBaseAttr(nItem, choice1, curIndex, choice2)
     for k, v in base do
       tinsert(tSay, format("%s/#ChoiceBaseAttr(%d, '%s')", k, nItem, k));
     end
-    tinsert(tSay, "\n rót lui/nothing");
+    tinsert(tSay, "\n withdraw/nothing");
     Say("H·y chän lo¹i thuéc tÝnh c¬ b¶n: ", getn(tSay), tSay);
     return 0;
   end
@@ -231,7 +231,7 @@ function ChoiceBaseAttr(nItem, choice1, curIndex, choice2)
         end
         tinsert(tSay, format(szFormat, GetItemFeedAttrDesc(tBaseAttr[i][j]), nItem, choice1, i, j));
       end
-      tinsert(tSay, "\n rót lui/nothing");
+      tinsert(tSay, "\n withdraw/nothing");
       Say("H·y chän lo¹i thuéc tÝnh con c¬ b¶n: ", getn(tSay), tSay);
       return 0;
     end

@@ -18,7 +18,7 @@ function MS_StartMission()
 	if nGuanType == 3 or nGuanType == 5 then
 		aoyun_light_InitFieldNpc(nGuanType);
 	end
-	Msg2MSAll(AOYUN_LIGHT_MISSION_ID,"Héi th¾p ®Ìn ¶i "..nGuanType.." chÝnh thøc b¾t ®Çu, h·y chó ý thøc tù ®Ìn cÇn th¾p.");
+	Msg2MSAll(AOYUN_LIGHT_MISSION_ID,"Lantern-lighting event stage"..nGuanType.." chÝnh thøc b¾t ®Çu, h·y chó ý thøc tù ®Ìn cÇn th¾p.");
 	local nBackStr = "";
 	if nGuanType == 1 then
 		nBackStr = aoyun_light_random(1,8,2);
@@ -78,7 +78,7 @@ function MS_ProcessDiandengTimer()
 	local nLoop = GetMissionV(AOYUN_LIGHT_TIMER_LOOP);
 	if nLoop == 0 then
 		aoyun_light_ChangeMSState(AOYUN_LIGHT_STATE_STARTED);
-		Msg2MSAll(AOYUN_LIGHT_MISSION_ID,"B¾t ®Çu th¾p ®Ìn, xin th¾p theo thø tù mµ hÖ thèng ®· th¾p.");
+		Msg2MSAll(AOYUN_LIGHT_MISSION_ID,"Begin lighting lanterns, please light them in the order the system has lit.");
 	else
 		SetMissionV(AOYUN_LIGHT_TIMER_LOOP,nLoop-1);
 		local tLetter = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"};

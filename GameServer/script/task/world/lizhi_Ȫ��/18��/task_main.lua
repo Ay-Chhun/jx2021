@@ -27,7 +27,7 @@ function task_000_00()
         "Ch×a khãa nhµ §¹i ChÝ C­êng lµ do ta lµm, së thÝch cña ta lµ khi lµm ch×a cho ng­êi kh¸c th­êng lµm thªm mét c¸i. Tªn h¾c y nh©n b¾t ta ph¶i ®em ®å ngäc vÒ b»ng kh«ng vî con gÆp nguy hiÓm.",
         "Ng­¬i biÕt ng­êi ®ã lµ ai, ë ®©u kh«ng?",
         "Nghe ®©u h¾n tªn Ch­¬ng VÜ C­¬ng, tiÓu ®Çu môc cña Xi Háa gi¸o. §ang ë B¾c TuyÒn Ch©u.",
-        "§Ó ta ®i t×m h¾n."
+        "Let me go find him."
     };
     
     TalkEx("task_001_00", szTalk);
@@ -61,7 +61,7 @@ end;
 
 function task_002_00()
     local szTalk = {
-        "§a t¹ ©n nh©n! Phu thª ta ®· ®­îc ®oµn tô!"
+        "Many thanks, benefactor! My wife and I have been reunited!"
     };
     TalkEx("task_003_00", szTalk);
 end;

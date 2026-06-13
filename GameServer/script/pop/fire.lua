@@ -48,7 +48,7 @@ function OnUse(nItemIndex)
 		end
 	end
 
-	Talk(1, "", "HÖ thèng bÞ lçi.");
+	Talk(1, "", "The system has an error.");
 	return
 end
 

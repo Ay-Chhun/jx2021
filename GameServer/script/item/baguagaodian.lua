@@ -6,62 +6,62 @@ Include("\\script\\task\\lingshi_task.lua")
 
 --Ã◊◊∞“¬∑˛table
 tTaoZhuang = {
-	{"Ng≠Íi mπnh","Kh´n","Kh∂m","ßoµi","Ly","T®ng S¯c mπnh vµ G©n cËt","80 trÎ xuËng"},                                 
-	{"TËc K›ch","Kh∂m","ßoµi","Ly","C n","T®ngS¯c mπnh vµ Th©n ph∏p","80 trÎ xuËng"},                                 
-	{"Ki’m kh›","ßoµi","Ly","C n","Cµn","T®ng NÈi c´ng vµ linh hoπt","80 trÎ xuËng"},                                 
-	{"ßÈng ph∏","Ly","C n","Cµn","Kh´n","T®ng linh hoπt vµ l˘c l≠Óng","80 trÎ xuËng"},                                 
-	{"Th›ch kh∏ch","C n","Cµn","Kh´n","Kh∂m","T®ng th©n ph∏p vµ linh hoπt","80 trÎ xuËng"},                                 
-	{"Phong TËc","Ly","ßoµi","Kh∂m","C n","T®ng NÈi c´ng vµ Th©n ph∏p","80 trÎ xuËng"},
-	{"PhÙc Long","Cµn","Kh´n","Kh∂m","ßoµi","T®ng NÈi c´ng vµ G©n cËt","80 trÎ xuËng"},                                 
-	{"Huy“n Kh©u","Ch n","Cµn","C n","Ly","T®ng phﬂng ng˘ vµ c´ng k›ch NÈi, ngoπi c´ng","80 trÎ xuËng"},                                 
-	{"M∑nh hÊ","Kh´n","TËn","Kh∂m","ßoµi","S∏t th≠¨ng t®ng ","80 trÎ xuËng"},                                 
-	{"T≠Íng Ph≠Óng","Cµn","Kh∂m","Ch n","ßoµi","T®ng Sinh l˘c vµ NÈi l˘c","80 trÎ xuËng"},                                 
-	{"Giao Long","Kh∂m","C n","Ly","TËn","T®ng Sinh l˘c vµ NÈi l˘c","80 trÎ xuËng"},                                 
-	{"Uy phong","Ch n","Ch n","Kh´n","Cµn","C´ng k›ch + ","80 trÎ xuËng"},                                 
-	{"Hi÷p s‹","C n","Kh∂m","TËn","TËn","T®ng Sinh l˘c","80 trÎ xuËng"},      	
-	{"Ti“m long","Cµn","Kh´n","Kh∂m","ßoµi","T®ng Sinh l˘c","80 ho∆c 80 trÎ l™n"},
-	{"HÁn ÆÈn","Kh´n","Kh∂m","ßoµi","Ly","T®ng S¯c mπnh vµ G©n cËt","80 ho∆c 80 trÎ l™n"},
-	{"Ly H·a","Kh∂m","ßoµi","Ly","C n","T®ngS¯c mπnh vµ Th©n ph∏p","80 ho∆c 80 trÎ l™n"},
-	{"Huy“n B®ng","ßoµi","Ly","C n","Cµn","T®ng NÈi c´ng vµ linh hoπt","80 ho∆c 80 trÎ l™n"},
-	{"Huy“n Hoµng","Ly","C n","Cµn","Kh´n","T®ng linh hoπt vµ l˘c l≠Óng","80 ho∆c 80 trÎ l™n"},
-	{"C´n Bªng","C n","Cµn","Kh´n","Kh∂m","T®ng th©n ph∏p vµ linh hoπt","80 ho∆c 80 trÎ l™n"},
-	{"Kh∏ng Long","Ly","ßoµi","Kh∂m","C n","T®ng NÈi c´ng vµ Th©n ph∏p","80 ho∆c 80 trÎ l™n"},
-	{"Ni’t Bµn","Cµn","Kh´n","Kh∂m","ßoµi","T®ng NÈi c´ng vµ G©n cËt","80 ho∆c 80 trÎ l™n"},
-	{"Huy“n VÚ","Ch n","Cµn","C n","Ly","T®ng phﬂng ng˘ vµ c´ng k›ch NÈi, ngoπi c´ng","80 ho∆c 80 trÎ l™n"},
-	{"HÊ træng","Kh´n","TËn","Kh∂m","ßoµi","S∏t th≠¨ng t®ng ","80 ho∆c 80 trÎ l™n"},
-	{"Chu T≠Ìc","Cµn","Kh∂m","Ch n","ßoµi","T®ng Sinh l˘c vµ NÈi l˘c","80 ho∆c 80 trÎ l™n"},
-	{"Thanh Long","Kh∂m","C n","Ly","TËn","T®ng Sinh l˘c vµ NÈi l˘c","80 ho∆c 80 trÎ l™n"},
-	{"V´ Song","Ch n","Ch n","Kh´n","Cµn","C´ng k›ch + ","80 ho∆c 80 trÎ l™n"},
-	{"QuËc S‹","C n","Kh∂m","TËn","TËn","T®ng Sinh l˘c","80 ho∆c 80 trÎ l™n"}                          
+	{"Strong One","Kun","Kan","Dui","Ly","Increases Strength and Constitution","80 trÎ xuËng"},                                 
+	{"TËc K›ch","Kan","Dui","Ly","Gen","Increases Strength and Agility","80 trÎ xuËng"},                                 
+	{"Ki’m kh›","Dui","Ly","Gen","Qian","T®ng NÈi c´ng vµ linh hoπt","80 trÎ xuËng"},                                 
+	{"Breakthrough","Ly","Gen","Qian","Kun","T®ng linh hoπt vµ l˘c l≠Óng","80 trÎ xuËng"},                                 
+	{"Th›ch kh∏ch","Gen","Qian","Kun","Kan","T®ng th©n ph∏p vµ linh hoπt","80 trÎ xuËng"},                                 
+	{"Wind Speed","Ly","Dui","Kan","Gen","T®ng NÈi c´ng vµ Th©n ph∏p","80 trÎ xuËng"},
+	{"Subduing Dragon","Qian","Kun","Kan","Dui","T®ng NÈi c´ng vµ G©n cËt","80 trÎ xuËng"},                                 
+	{"Huy“n Kh©u","Zhen","Qian","Gen","Ly","T®ng phﬂng ng˘ vµ c´ng k›ch NÈi, ngoπi c´ng","80 trÎ xuËng"},                                 
+	{"M∑nh hÊ","Kun","Xun","Kan","Dui","S∏t th≠¨ng t®ng ","80 trÎ xuËng"},                                 
+	{"Phoenix Wall","Qian","Kan","Zhen","Dui","T®ng Sinh l˘c vµ NÈi l˘c","80 trÎ xuËng"},                                 
+	{"Giao Long","Kan","Gen","Ly","Xun","T®ng Sinh l˘c vµ NÈi l˘c","80 trÎ xuËng"},                                 
+	{"Uy phong","Zhen","Zhen","Kun","Qian","C´ng k›ch + ","80 trÎ xuËng"},                                 
+	{"Knight","Gen","Kan","Xun","Xun","Increase vitality","80 trÎ xuËng"},      	
+	{"Hidden Dragon","Qian","Kun","Kan","Dui","Increase vitality","80 ho∆c 80 trÎ l™n"},
+	{"Chaos","Kun","Kan","Dui","Ly","Increases Strength and Constitution","80 ho∆c 80 trÎ l™n"},
+	{"Ly H·a","Kan","Dui","Ly","Gen","Increases Strength and Agility","80 ho∆c 80 trÎ l™n"},
+	{"Huy“n B®ng","Dui","Ly","Gen","Qian","T®ng NÈi c´ng vµ linh hoπt","80 ho∆c 80 trÎ l™n"},
+	{"Huy“n Hoµng","Ly","Gen","Qian","Kun","T®ng linh hoπt vµ l˘c l≠Óng","80 ho∆c 80 trÎ l™n"},
+	{"C´n Bªng","Gen","Qian","Kun","Kan","T®ng th©n ph∏p vµ linh hoπt","80 ho∆c 80 trÎ l™n"},
+	{"Resisting Dragon","Ly","Dui","Kan","Gen","T®ng NÈi c´ng vµ Th©n ph∏p","80 ho∆c 80 trÎ l™n"},
+	{"Nirvana","Qian","Kun","Kan","Dui","T®ng NÈi c´ng vµ G©n cËt","80 ho∆c 80 trÎ l™n"},
+	{"Huy“n VÚ","Zhen","Qian","Gen","Ly","T®ng phﬂng ng˘ vµ c´ng k›ch NÈi, ngoπi c´ng","80 ho∆c 80 trÎ l™n"},
+	{"HÊ træng","Kun","Xun","Kan","Dui","S∏t th≠¨ng t®ng ","80 ho∆c 80 trÎ l™n"},
+	{"Vermilion Bird","Qian","Kan","Zhen","Dui","T®ng Sinh l˘c vµ NÈi l˘c","80 ho∆c 80 trÎ l™n"},
+	{"Thanh Long","Kan","Gen","Ly","Xun","T®ng Sinh l˘c vµ NÈi l˘c","80 ho∆c 80 trÎ l™n"},
+	{"Peerless","Zhen","Zhen","Kun","Qian","C´ng k›ch + ","80 ho∆c 80 trÎ l™n"},
+	{"National Scholar","Gen","Kan","Xun","Xun","Increase vitality","80 ho∆c 80 trÎ l™n"}                          
 	}	
 	
 tTiandi = {
-	{"Thi™n ßﬁa Ti“m Long","Cµn","Kh´n","Kh∂m","ßoµi","T®ng Sinh l˘c","T®ng Sinh l˘c"," tı 119 trÎ l™n"},
-	{"TrÍi Æ t hÁn ÆÈn","Kh´n","Kh∂m","ßoµi","Ly","T®ng S¯c mπnh vµ G©n cËt","N©ng cao giÌi hπn nÈi l˘c vµ sinh m÷nh"," tı 119 trÎ l™n"},
-	{"Thi™n ßﬁa Ly H·a","Kh∂m","ßoµi","Ly","C n","T®ngS¯c mπnh vµ Th©n ph∏p","N©ng cao giÌi hπn nÈi l˘c vµ sinh m÷nh"," tı 119 trÎ l™n"},
-	{"Thi™n ßﬁa Huy“n B®ng","ßoµi","Ly","C n","Cµn","T®ng NÈi c´ng vµ linh hoπt","N©ng cao giÌi hπn nÈi l˘c vµ sinh m÷nh"," tı 119 trÎ l™n"},
-	{"Thi™n ßﬁa Huy“n Hoµng","Ly","C n","Cµn","Kh´n","T®ng linh hoπt vµ l˘c l≠Óng","N©ng cao giÌi hπn nÈi l˘c vµ sinh m÷nh"," tı 119 trÎ l™n"},
-	{"Thi™n ßﬁa C´n Bªng","C n","Cµn","Kh´n","Kh∂m","T®ng th©n ph∏p vµ linh hoπt","N©ng cao giÌi hπn nÈi l˘c vµ sinh m÷nh"," tı 119 trÎ l™n"},
-	{"Thi™n ßﬁa Kh∏ng Long","Ly","ßoµi","Kh∂m","C n","T®ng NÈi c´ng vµ Th©n ph∏p","N©ng cao giÌi hπn nÈi l˘c vµ sinh m÷nh"," tı 119 trÎ l™n"},
-	{"Thi™n ßﬁa Ni’t Bµn","Cµn","Kh´n","Kh∂m","ßoµi","T®ng NÈi c´ng vµ G©n cËt","N©ng cao giÌi hπn nÈi l˘c vµ sinh m÷nh"," tı 119 trÎ l™n"},
-	{"Tr≠Íng Sinh Huy“n V‚","Ch n","Cµn","C n","Ly","T®ng phﬂng ng˘ vµ c´ng k›ch NÈi, ngoπi c´ng","T®ng Sinh l˘c"," tı 119 trÎ l™n"},
-	{"Hung Tinh Bπch HÊ","Kh´n","TËn","Kh∂m","ßoµi","S∏t th≠¨ng t®ng ","T®ng Sinh l˘c"," tı 119 trÎ l™n"},
-	{"Chu T≠Ìc B t Di÷t","Cµn","Kh∂m","Ch n","ßoµi","T®ng Sinh l˘c vµ NÈi l˘c","T®ng Sinh l˘c"," tı 119 trÎ l™n"},
-	{"Tπi Thi™n Thanh Long","Kh∂m","C n","Ly","TËn","T®ng Sinh l˘c vµ NÈi l˘c","T®ng Sinh l˘c"," tı 119 trÎ l™n"},
-	{"Thi™n Hπ V´ ßﬁch","Ch n","Ch n","Kh´n","Cµn","C´ng k›ch + ","T®ng Sinh l˘c"," tı 119 trÎ l™n"},
-	{"Thi™n Chi QuËc S‹","C n","Kh∂m","TËn","TËn","T®ng Sinh l˘c","N©ng cao giÌi hπn nÈi l˘c vµ sinh m÷nh"," tı 119 trÎ l™n"} 
+	{"Thi™n ßﬁa Ti“m Long","Qian","Kun","Kan","Dui","Increase vitality","Increase vitality"," tı 119 trÎ l™n"},
+	{"Heaven and Earth Chaos","Kun","Kan","Dui","Ly","Increases Strength and Constitution","N©ng cao giÌi hπn nÈi l˘c vµ sinh m÷nh"," tı 119 trÎ l™n"},
+	{"Thi™n ßﬁa Ly H·a","Kan","Dui","Ly","Gen","Increases Strength and Agility","N©ng cao giÌi hπn nÈi l˘c vµ sinh m÷nh"," tı 119 trÎ l™n"},
+	{"Thi™n ßﬁa Huy“n B®ng","Dui","Ly","Gen","Qian","T®ng NÈi c´ng vµ linh hoπt","N©ng cao giÌi hπn nÈi l˘c vµ sinh m÷nh"," tı 119 trÎ l™n"},
+	{"Thi™n ßﬁa Huy“n Hoµng","Ly","Gen","Qian","Kun","T®ng linh hoπt vµ l˘c l≠Óng","N©ng cao giÌi hπn nÈi l˘c vµ sinh m÷nh"," tı 119 trÎ l™n"},
+	{"Thi™n ßﬁa C´n Bªng","Gen","Qian","Kun","Kan","T®ng th©n ph∏p vµ linh hoπt","N©ng cao giÌi hπn nÈi l˘c vµ sinh m÷nh"," tı 119 trÎ l™n"},
+	{"Thi™n ßﬁa Kh∏ng Long","Ly","Dui","Kan","Gen","T®ng NÈi c´ng vµ Th©n ph∏p","N©ng cao giÌi hπn nÈi l˘c vµ sinh m÷nh"," tı 119 trÎ l™n"},
+	{"Thi™n ßﬁa Ni’t Bµn","Qian","Kun","Kan","Dui","T®ng NÈi c´ng vµ G©n cËt","N©ng cao giÌi hπn nÈi l˘c vµ sinh m÷nh"," tı 119 trÎ l™n"},
+	{"Tr≠Íng Sinh Huy“n V‚","Zhen","Qian","Gen","Ly","T®ng phﬂng ng˘ vµ c´ng k›ch NÈi, ngoπi c´ng","Increase vitality"," tı 119 trÎ l™n"},
+	{"Hung Tinh Bπch HÊ","Kun","Xun","Kan","Dui","S∏t th≠¨ng t®ng ","Increase vitality"," tı 119 trÎ l™n"},
+	{"Immortal Vermilion Bird","Qian","Kan","Zhen","Dui","T®ng Sinh l˘c vµ NÈi l˘c","Increase vitality"," tı 119 trÎ l™n"},
+	{"Tπi Thi™n Thanh Long","Kan","Gen","Ly","Xun","T®ng Sinh l˘c vµ NÈi l˘c","Increase vitality"," tı 119 trÎ l™n"},
+	{"Thi™n Hπ V´ ßﬁch","Zhen","Zhen","Kun","Qian","C´ng k›ch + ","Increase vitality"," tı 119 trÎ l™n"},
+	{"Thi™n Chi QuËc S‹","Gen","Kan","Xun","Xun","Increase vitality","N©ng cao giÌi hπn nÈi l˘c vµ sinh m÷nh"," tı 119 trÎ l™n"} 
 	};	
 	
 --∞Àÿ‘µƒ◊È≥…
 tGuaWei = {--ÿ‘Œª »˝¡È Ø∆Ê≈º ◊‹ ˝∆Ê≈º
-	{"Cµn","LŒ","LŒ","LŒ","LŒ"},
-	{"Kh´n","ChΩn","ChΩn","ChΩn","ChΩn"},
-	{"Ly","LŒ","ChΩn","LŒ","ChΩn"},
-	{"Kh∂m","ChΩn","LŒ","ChΩn","LŒ"},	
-	{"Ch n","LŒ","ChΩn","ChΩn","LŒ"},
-	{"TËn","ChΩn","LŒ","LŒ","ChΩn"},
-	{"C n","ChΩn","ChΩn","LŒ","LŒ"},
-	{"ßoµi","LŒ","LŒ","ChΩn","ChΩn"}
+	{"Qian","Odd","Odd","Odd","Odd"},
+	{"Kun","Even","Even","Even","Even"},
+	{"Ly","Odd","Even","Odd","Even"},
+	{"Kan","Even","Odd","Even","Odd"},	
+	{"Zhen","Odd","Even","Even","Odd"},
+	{"Xun","Even","Odd","Odd","Even"},
+	{"Gen","Even","Even","Odd","Odd"},
+	{"Dui","Odd","Odd","Even","Even"}
 	}
 
 function OnUse()
@@ -127,19 +127,19 @@ function bagua_taozhuang(nPage)
 		tinsert(tDiaTab,tTaoZhuang[nPageNum*nPage+i][1].."Trang bﬁ: ßi”m linh kh› Æ¨n "..tTaoZhuang[nPageNum*nPage+i][7].."]["..tTaoZhuang[nPageNum*nPage+i][2]..":"..tTaoZhuang[nPageNum*nPage+i][3]..":"..tTaoZhuang[nPageNum*nPage+i][4]..":"..tTaoZhuang[nPageNum*nPage+i][5].."]["..tTaoZhuang[nPageNum*nPage+i][6].."]/#taozhuang_detail("..nPage..","..(nPageNum*nPage+i)..")");
 	end
 	if nPage ~= 0 then
-		tinsert(tDiaTab,"Trang tr≠Ìc/#bagua_taozhuang("..(nPage-1)..")");
+		tinsert(tDiaTab,"Previous page/#bagua_taozhuang("..(nPage-1)..")");
 	end
 	if nRemaidNum > nPageNum then
-		tinsert(tDiaTab,"Trang k’/#bagua_taozhuang("..(nPage+1)..")");
+		tinsert(tDiaTab,"Next page/#bagua_taozhuang("..(nPage+1)..")");
 	end
 	tinsert(tDiaTab,"trÎ lπi/OnUse");
-	Say("Trang bﬁ B∏t Qu∏i c„: ",
+	Say("Bagua equipment includes:",
 		getn(tDiaTab),
 		tDiaTab)
 end	
 
 function taozhuang_detail(nPage,nType)
-	Talk(1,"#bagua_taozhuang("..nPage..")","\n<color=red>"..tTaoZhuang[nType][1].."<color>trang bﬁ<color=red>"..tTaoZhuang[nType][2].."<color>Qu∏i ß«u BÈ+<color=red>"..tTaoZhuang[nType][3].."<color>Qu∏i Y PhÙc+<color=red>"..tTaoZhuang[nType][4].."<color>Qu∏i Hπ Trang+<color=red>"..tTaoZhuang[nType][5].."<color>Qu∏i VÚ Kh›. Phπm vi Æi”m linh kh› c«n cho mÁi trang bﬁ lµ: <color=red>"..tTaoZhuang[nType][7].."<color>. ThuÈc t›nh k›ch hoπt lµ: <color=red>"..tTaoZhuang[nType][6].."<color>")
+	Talk(1,"#bagua_taozhuang("..nPage..")","\n<color=red>"..tTaoZhuang[nType][1].."<color>trang bﬁ<color=red>"..tTaoZhuang[nType][2].."<color>Qu∏i ß«u BÈ+<color=red>"..tTaoZhuang[nType][3].."<color>Bagua Robe+<color=red>"..tTaoZhuang[nType][4].."<color>Bagua Lower Garment+<color=red>"..tTaoZhuang[nType][5].."<color>Qu∏i VÚ Kh›. Phπm vi Æi”m linh kh› c«n cho mÁi trang bﬁ lµ: <color=red>"..tTaoZhuang[nType][7].."<color>. ThuÈc t›nh k›ch hoπt lµ: <color=red>"..tTaoZhuang[nType][6].."<color>")
 end
 
 function dazao_guawei()
@@ -160,7 +160,7 @@ function ziyuanhuode()
 	"NhÀn Æ≠Óc Linh Thπch/lingshihuode",
 	"HÓp thµnh Linh Thπch/hechenglingshi",	
 	"Bi’t Æ≠Óc c∏ch phËi hÓp Linh Thπch /lingshipeifanghuode",
-	"ß’n h·i th®m th´i mµ!/SayHello"
+	"Just dropping by to say hello!/SayHello"
 	)
 end
 
@@ -183,8 +183,8 @@ end
 function guawei_detail(nType)
 	if nType > 0 and nType <= getn(tGuaWei) then
 		local strtab = {
-			"Xem Qu∏i vﬁ kh∏c/dazao_guawei",
-			"Tho∏t/nothing"};
+			"View other Bagua pieces/dazao_guawei",
+			"Exit/nothing"};
 		Say("Ch’ tπo 1 bÈ <color=yellow>"..tGuaWei[nType][1].."<color>Qu∏i trang bﬁ c«n \ntrang bﬁ: giÌi hπn Æi”m linh kh› lµ <color=yellow>"..tGuaWei[nType][5].."<color>Trang bﬁ sË\nKh∂m nπm vi™n linh thπch th¯ 1: Æi”m linh kh› kh∂m nπm lµ <color=yellow>"..tGuaWei[nType][2].."<color>linh thπch sË\nKh∂m nπm vi™n linh thπch th¯ 2: Æi”m linh kh› kh∂m nπm lµ <color=yellow>"..tGuaWei[nType][3].."<color>linh thπch sË\nkh∂m nπm vi™n linh thπch th¯ 3: dÆi”m linh kh› kh∂m nπm lµ <color=yellow>"..tGuaWei[nType][4].."<color>linh thπch sË\nB∏t Qu∏t trang bﬁ vµ Æi”m linh kh› cÒa linh thπch ph∂i phÔ hÓp tr™n b∂ng chÿ d…n, lÛc Æi”m cÒa 3 vi™n linh thπch bªng vÌi giÌi hπn Æi”m linh kh› trang bﬁ t¯c lµ h◊nh thµnh trang bﬁ b∏t qu∏i ch≠a k›ch hoπt.",
 			getn(strtab),
 			strtab)
@@ -211,7 +211,7 @@ function bagua_chuansong()
 	"Ng≠Íi giÛp ch’ tπo trang bﬁ linh kh› vµ ÆÙc lÁ/zhizuoxi",
 	"Ng≠Íi giÛp k›ch hoπt trang bﬁ b∏t qu∏i!/shenyouzhenren",
 	"Ng≠Íi giÛp kh∂m nπm linh thπch vµ t®ng trang bﬁ B∏t Qu∏i./liutiejiang",
-	"Chÿ xem thˆ!/SayHello"	
+	"Just looking!/SayHello"	
 	)
 end
 
@@ -232,7 +232,7 @@ function zhizuoxi()
 	"Mπc Nhﬁ Î Thµnh ß´, thi™n v“ ch’ tπo vÚ kh› ngæn dµi, chÒ y’u lµ Æao, ki’m, song Æao, hÈ thÒ./moer",
 	"Mπc Tam Î T≠¨ng D≠¨ng, thi™n v“ ch’ tπo binh kh› k˙ m´n, chÒ y’u ∏m kh›, Æµn, bÛt, tr∂o, cung/mosan",
 	"C»m N≠¨ng Î Thµnh ß´, thi™n v“ d÷t v∂i, mÁi h◊nh d∏ng Æ“u c„ th” h‰c Æ≠Óc tı bµ  y./jinniang",
-	"Tˆ Quy™n c´ n≠¨ng Î ßπi L˝, thi™n v“ d÷t hπ trang/zijuan",
+	"Lady Zijuan is in Dali, specializing in weaving lower garments/zijuan",
 	"Minh s≠ phÙ Î T≠¨ng D≠¨ng, chuy™n v“ Kh´i qu∏n/mingshifu",
 	"Ta kh´ng muËn t◊m h‰./SayHello"	
 	)
@@ -433,10 +433,10 @@ function tiandi_taozhuang(nPage)
 		tinsert(tDiaTab,tTiandi[nPageNum*nPage+i][1].."Trang bﬁ: ßi”m linh kh› Æ¨n "..tTiandi[nPageNum*nPage+i][8].."]["..tTiandi[nPageNum*nPage+i][2]..":"..tTiandi[nPageNum*nPage+i][3]..":"..tTiandi[nPageNum*nPage+i][4]..":"..tTiandi[nPageNum*nPage+i][5].."]/#tiandi_detail("..nPage..","..(nPageNum*nPage+i)..")");
 	end
 	if nPage ~= 0 then
-		tinsert(tDiaTab,"Trang tr≠Ìc/#tiandi_taozhuang("..(nPage-1)..")");
+		tinsert(tDiaTab,"Previous page/#tiandi_taozhuang("..(nPage-1)..")");
 	end
 	if nRemaidNum > nPageNum then
-		tinsert(tDiaTab,"Trang k’/#tiandi_taozhuang("..(nPage+1)..")");
+		tinsert(tDiaTab,"Next page/#tiandi_taozhuang("..(nPage+1)..")");
 	end
 	tinsert(tDiaTab,"trÎ lπi/OnUse");
 	Say("Trang bﬁ Thi™n ßﬁa Huy“n hoµng bao gÂm thuÈc t›nh trang bﬁ PhÊ th´ng B∏t Qu∏i.",
@@ -445,5 +445,5 @@ function tiandi_taozhuang(nPage)
 end	
 
 function tiandi_detail(nPage,nType)
-	Talk(1,"#tiandi_taozhuang("..nPage..")","\n<color=red>"..tTiandi[nType][1].."<color>trang bﬁ<color=red>"..tTiandi[nType][2].."<color>Qu∏i ß«u BÈ+<color=red>"..tTiandi[nType][3].."<color>Qu∏i Y PhÙc+<color=red>"..tTiandi[nType][4].."<color>Qu∏i Hπ Trang+<color=red>"..tTiandi[nType][5].."<color>Qu∏i VÚ Kh›. Phπm vi Æi”m linh kh› c«n cho mÁi trang bﬁ lµ: <color=red>"..tTiandi[nType][8].."<color>. ThuÈc t›nh k›ch hoπt lµ: <color=red>"..tTiandi[nType][6].."."..tTiandi[nType][7].."<color>.")
+	Talk(1,"#tiandi_taozhuang("..nPage..")","\n<color=red>"..tTiandi[nType][1].."<color>trang bﬁ<color=red>"..tTiandi[nType][2].."<color>Qu∏i ß«u BÈ+<color=red>"..tTiandi[nType][3].."<color>Bagua Robe+<color=red>"..tTiandi[nType][4].."<color>Bagua Lower Garment+<color=red>"..tTiandi[nType][5].."<color>Qu∏i VÚ Kh›. Phπm vi Æi”m linh kh› c«n cho mÁi trang bﬁ lµ: <color=red>"..tTiandi[nType][8].."<color>. ThuÈc t›nh k›ch hoπt lµ: <color=red>"..tTiandi[nType][6].."."..tTiandi[nType][7].."<color>.")
 end

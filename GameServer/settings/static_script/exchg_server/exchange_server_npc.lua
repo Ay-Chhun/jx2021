@@ -52,7 +52,7 @@ function npc_talk_goto_ggs()
 	local tbSay = {}
 	local szTitle = "Ta c„ th” Æ≠a ng≠¨i Æ’n li™n server, chu»n bﬁ xong ch≠a?"
 	tinsert(tbSay, "\nTa Æ∑ chu»n bﬁ xong/goto_ggs_waiting_room")
-	tinsert(tbSay, format("\n%s/nothing", "Ra kh·i"))
+	tinsert(tbSay, format("\n%s/nothing", "Exit"))
 	Say(szTitle, getn(tbSay), tbSay)
 end
 
@@ -63,7 +63,7 @@ function npc_talk_back_to_source_gs()
 		local szCity = t_source_gs_svr_exit_pos[i][4] or ""
 		tinsert(tbSay, format("%s%s/#back_to_source_gs(%d)", "Ta muËn quay v“", szCity, i))
 	end
-	tinsert(tbSay, format("\n%s/nothing", "Ra kh·i"))
+	tinsert(tbSay, format("\n%s/nothing", "Exit"))
 	Say(szTitle, getn(tbSay), tbSay)
 end
 

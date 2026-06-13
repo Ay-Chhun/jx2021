@@ -19,7 +19,7 @@ end
 function task_deal()
 	if tGtTask:check_cur_task(128) == 1 then
 		if GetItemCount(2,0,30062) < 1 then
-			Talk(1,"","Kh«ng cã thuèc trÞ liÖu:".."S¸t khÝ ®¬n");
+			Talk(1,"","There is no healing medicine:".."S¸t khÝ ®¬n");
 			return 0;
 		end
 		local nCount = GetTask(ZQ_CURE_LIAO);
@@ -38,7 +38,7 @@ function task_deal()
 --				SetNpcDeathScript(nNpcIndex, "\\script\\function\\zq_battles\\npc\\zm_liaoshangbing.lua");
 --				SetNpcRemoveScript(nNpcIndex, "\\script\\function\\zq_battles\\npc\\zm_liaoshangbing.lua");
 --				SetNpcLifeTime(nNpcIndex, 10 * 60);
-				Talk(1,"fail_punish",NPC_SONG_NAME.."Wa hahaha, A hahaha, giÕt, giÕt s¹ch, giÕt hÕt……");
+				Talk(1,"fail_punish",NPC_SONG_NAME.."Wa hahaha, A hahaha, kill, kill them all, kill everyone.");
 			end
 		end
 	end

@@ -9,7 +9,7 @@ function main()
 --				"ÎÒÏë¿´¿´Ã¿¸öÀÞÌ¨ÊÇÄÄÐ©ÈËÔÚ½ÏÒÕ/know_matches",
 				"Ta muèn thiÕt lËp l¹i ®iÓm sè tû vâ/reset_point",
 				"Ta muèn rêi khái n¬i nµy/leave",
-				"Kh«ng cã g×/nothing",
+				"Nothing/nothing",
 				}
 --	if GetMaskStatus() == 0 then
 --		tinsert(selTab,1,"ÎÒÒªÄäÃû/#hide_name(1)");
@@ -25,7 +25,7 @@ function know_matches()
 				"Ta muèn xem L«i ®µi h­íng nam/#list_matches(2)",
 				"Ta muèn xem L«i ®µi h­íng t©y/#list_matches(3)",
 				"Ta muèn xem L«i ®µi h­íng b¾c/#list_matches(4)",
-				"Kh«ng cã g×/nothing",
+				"Nothing/nothing",
 				}
 	Say(g_szInfoHead.."Ng­¬i muèn xem L«i ®µi nµo?",getn(selTab),selTab);
 end;
@@ -47,21 +47,21 @@ function list_matches(nDirection)
 	for i=1,8 do
 		nPIdx1,nPIdx2,nState,bAllow = BWT_GetMatchInfo(nCityID,nDirection,i);
 		if bAllow == 1 then
-			szStr = ", cho phÐp xem ";
+			szStr = ", allows viewing";
 		else
 			szStr = ", kh«ng cho phÐp xem ";
 		end;
 		if nPIdx1 == 0 then
-			szString = szString.."khu vùc "..i..": hiÖn t¹i kh«ng cã ng­êi tØ vâ\n";
+			szString = szString.."area"..i..": hiÖn t¹i kh«ng cã ng­êi tØ vâ\n";
 		elseif nState <= MS_STATE_READY then
-			szString = szString.."khu vùc "..i..": hiÖn t¹i ®ang trong giai ®o¹n chuÈn bÞ tû vâ "..szStr.."\n";
+			szString = szString.."area"..i..": hiÖn t¹i ®ang trong giai ®o¹n chuÈn bÞ tû vâ "..szStr.."\n";
 		else
 			szName1,szName2 = BWT_GetName(nPIdx1),BWT_GetName(nPIdx2);
-			szString = szString.."khu vùc "..i..": hai bªn lµ ["..szName1.."] vµ ["..szName2.."]"..szStr.."\n";
+			szString = szString.."area"..i..": the two sides are ["..szName1.."] and ["..szName2.."]"..szStr.."\n";
 		end;
 	end;
-	local tbDirection = {"H­íng ®«ng","H­íng nam","H­íng T©y","H­íng B¾c"};
-	Talk(1,"know_matches",g_szInfoHead..tbDirection[nDirection].."T×nh h×nh tû vâ:\n"..szString);
+	local tbDirection = {"East direction","South direction","West direction","North direction"};
+	Talk(1,"know_matches",g_szInfoHead..tbDirection[nDirection].."Duel status:\n"..szString);
 end;
 
 function leave()
@@ -70,7 +70,7 @@ function leave()
 	else
 		local selTab = {
 					--"ÈªÖÝ/#leave_confirm(100)",
-					"BiÖn Kinh/#leave_confirm(200)",
+					"Bianjing/#leave_confirm(200)",
 					--"³É¶¼/#leave_confirm(300)",
 					"T¹m thêi kh«ng rêi khái/nothing",
 					}

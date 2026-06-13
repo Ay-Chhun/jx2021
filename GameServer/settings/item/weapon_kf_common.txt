@@ -1,5 +1,5 @@
 Index	AttributeID	AttributeRate	LevelRate1	LevelRate2	LevelRate3	LevelRate4	LevelRate5	LevelRate6	LevelRate7	AttributeType	AttributeText
-H­íng dÉn	Sè hiÖu thuéc tİnh: 	Tû lÖ xuÊt hiÖn	CÊp 1 tû lÖ 	CÊp 2 tû lÖ 	CÊp 3 tû lÖ 	CÊp 4 tû lÖ 	CÊp 5 tû lÖ 	CÊp 6 tû lÖ 	CÊp 7 tû lÖ 	HÖ néi, ngo¹i c«ng	Tªn thuéc tİnh
+Guide	Sè hiÖu thuéc tİnh: 	Tû lÖ xuÊt hiÖn	CÊp 1 tû lÖ 	CÊp 2 tû lÖ 	CÊp 3 tû lÖ 	CÊp 4 tû lÖ 	CÊp 5 tû lÖ 	CÊp 6 tû lÖ 	CÊp 7 tû lÖ 	HÖ néi, ngo¹i c«ng	Tªn thuéc tİnh
 1	1	1000	15	15	15	15	15	15	10	0	ThÓ lùc +/1 
 2	9	1000	15	15	15	15	15	15	10	0	Hao mßn vò khİ gi¶m: /1% 
 3	110	1000	15	15	15	15	15	15	10	0	Søc lùc+/1

@@ -12,21 +12,21 @@ tbKillNpcWeekly.nGetPrizeTaskIndex = 7 --ÊÇ·ñÁìÈ¡½±Àø
 tbKillNpcWeekly.nRetsetTaskTaskIndex = 8 --ÖØÖÃÈÎÎñ±äÁ¿
 tbKillNpcWeekly.nTaskInfoTaskIndex = 9 --ÈÎÎñĞÅÏ¢£¬É±¹ÖÇé¿ö
 
-tbKillNpcWeekly.tbLogInfo = {"Ho¹t §éng th¸ng 9 n¨m 2015", "Ho¹t §éng th¸ng 9 n¨m 2015"}
+tbKillNpcWeekly.tbLogInfo = {"September 2015 Activity", "September 2015 Activity"}
 tbKillNpcWeekly.tbAward = 
 {
 	tbFreeRoom = {1,1},
 	tbCost = 
 	{
 		{2, 1, 30603, 223, "Tiªu Dao Ngäc"},
-		{2, 1, 30916, 3000, "Bét m×"},
+		{2, 1, 30916, 3000, "Flour"},
 		{2, 1, 30917, 3000, "Nh©n b¸nh"},
 	},
 	tbPrize = 
 	{
 		{"Exp", 150000000},
-		{2, 1, 30921, 69, "B¸nh thËp cÈm"},
-		{2, 1, 30785, 111, "V« Tù Kinh Th­"},
+		{2, 1, 30921, 69, "Assorted cake"},
+		{2, 1, 30785, 111, "Wordless Scripture"},
 	}
 }
 

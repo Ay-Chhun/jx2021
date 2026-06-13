@@ -52,13 +52,13 @@ tbExpMaterial = {
 tbAward2a = {
 	nCheckExp = 0,
 	nExp = 3000000,
-	item = {{gdp={2,1,30191,3}, name ="Ng«i sao may m¾n", nExpired = 15*24*3600}, {gdp={2,1,30154,30}, name ="N÷ Oa B¶o H¹p", nExpired = 15*24*3600}},
+	item = {{gdp={2,1,30191,3}, name ="Lucky Star", nExpired = 15*24*3600}, {gdp={2,1,30154,30}, name ="N÷ Oa B¶o H¹p", nExpired = 15*24*3600}},
 }
 
 tbAward2b = {
 	nCheckExp = 0,
 	nExp = 6000000,
-	item = {{gdp={2,1,30351,6}, name ="Båi Nguyªn §¬n", nExpired = 15*24*3600}, {gdp={2,1,30352,6}, name ="Tø Linh Quy Nguyªn §¬n", nExpired = 15*24*3600}, {gdp={2,1,30191,6}, name ="Ng«i sao may m¾n", nExpired = 15*24*3600}},
+	item = {{gdp={2,1,30351,6}, name ="Replenishing Origin Pill", nExpired = 15*24*3600}, {gdp={2,1,30352,6}, name ="Four Spirits Return to Origin Pill", nExpired = 15*24*3600}, {gdp={2,1,30191,6}, name ="Lucky Star", nExpired = 15*24*3600}},
 }
 
 tbExpMaterial2 = {
@@ -84,8 +84,8 @@ tbAward60Event = {
 	item = {{gdp={2,1,30230,30}, name = "xu vËt phÈm"}},
 }
 tbExpMaterialEventT5 = {
-	[1] = {{{2,1,30517,60}}, tbAward60Event, "Nép 60 Sir« Ngò S¾c"},
-	[2] = {{{2,1,30518,60}}, tbAward60Event, "Nép 60 Kem Que CÇu Vßng"},
+	[1] = {{{2,1,30517,60}}, tbAward60Event, "Submit 60 Five-Color Syrup"},
+	[2] = {{{2,1,30518,60}}, tbAward60Event, "Submit 60 Rainbow Popsicles"},
 }
 
 tbRandomAward = {
@@ -101,11 +101,11 @@ tbRandomAward = {
 	[10] = {[1] = {item={{gdp={2,1,538,1}, name = "Hoµng Kim Hång Bao (Trèng)", nExpired = 7*24*3600}}}, nRate = 6.00},
 	[11] = {[1] = {item={{gdp={2,1,30228,1}, name = "B¹ch Kim Hång Bao (Trèng)", nExpired = 7*24*3600}}}, nRate = 6.00},
 	[12] = {[1] = {item={{gdp={2,1,30491,1}, name = "VÐ TiÕu Y (Vµng)", nExpired = 7*24*3600}}}, nRate = 2.00},
-	[13] = {[1] = {item={{gdp={2,1,30492,1}, name = "VÐ TiÕu Y (B¹c)", nExpired = 7*24*3600}}}, nRate = 3.00},
-	[14] = {[1] = {item={{gdp={2,1,30493,1}, name = "VÐ TiÕu Y (§ång)", nExpired = 7*24*3600}}}, nRate = 3.00},
+	[13] = {[1] = {item={{gdp={2,1,30492,1}, name = "Xiao Yi Ticket (Silver)", nExpired = 7*24*3600}}}, nRate = 3.00},
+	[14] = {[1] = {item={{gdp={2,1,30493,1}, name = "Xiao Yi Ticket (Copper)", nExpired = 7*24*3600}}}, nRate = 3.00},
 	[15] = {[1] = {item={{gdp={2,1,30305,1}, name = "Linh Th¹ch bao cÊp 7", nExpired = 7*24*3600}}}, nRate = 12.00},
-	[16] = {[1] = {item={{gdp={2,1,30458,1}, name = "Tô Linh Hoµn", nExpired = 7*24*3600}}}, nRate = 4.00},
-	[17] = {[1] = {item={{gdp={2,1,30459,1}, name = "§¹i Tô Linh Hoµn", nExpired = 7*24*3600}}}, nRate = 3.00},
+	[16] = {[1] = {item={{gdp={2,1,30458,1}, name = "Spirit-Gathering Pill", nExpired = 7*24*3600}}}, nRate = 4.00},
+	[17] = {[1] = {item={{gdp={2,1,30459,1}, name = "Grand Spirit-Gathering Pill", nExpired = 7*24*3600}}}, nRate = 3.00},
 	[18] = {[1] = {item={{gdp={2,1,30460,1}, name = "Tô Linh Tiªn §¬n", nExpired = 7*24*3600}}}, nRate = 1.00},
 	[19] = {[1] = {nExp = 500000}, nRate = 6.00},
 	[20] = {[1] = {nExp = 1000000}, nRate = 15.00},
@@ -171,17 +171,17 @@ end
 
 function RandomBook()
 	local tbBook = {
-		[1] = {[1] = {item={{gdp={0,107,204,1}, name="Kim Cang B¸t Nh· Ch©n QuyÓn"}}}, nRate = 7.00},
-		[2] = {[1] = {item={{gdp={0,107,205,1}, name="TiÒm Long Tóc DiÖt Ch©n QuyÓn"}}}, nRate = 8.00},
-		[3] = {[1] = {item={{gdp={0,107,206,1}, name="V« TrÇn Bå §Ò Ch©n QuyÓn"}}}, nRate = 7.00},
+		[1] = {[1] = {item={{gdp={0,107,204,1}, name="Vajra Prajna True Scroll"}}}, nRate = 7.00},
+		[2] = {[1] = {item={{gdp={0,107,205,1}, name="Hidden Dragon Annihilation True Manual"}}}, nRate = 8.00},
+		[3] = {[1] = {item={{gdp={0,107,206,1}, name="Dustless Bodhi True Manual"}}}, nRate = 7.00},
 		[4] = {[1] = {item={{gdp={0,107,207,1}, name="Thiªn La Liªn Ch©u Ch©n QuyÓn"}}}, nRate = 7.00},
-		[5] = {[1] = {item={{gdp={0,107,208,1}, name="Nh­ ý Kim §Ønh Ch©n QuyÓn"}}}, nRate = 7.00},
-		[6] = {[1] = {item={{gdp={0,107,209,1}, name="BÝch H¶i TuyÖt ¢m Ch©n QuyÓn"}}}, nRate = 8.00},
-		[7] = {[1] = {item={{gdp={0,107,210,1}, name="Hçn §én TrÊn Nh¹c Ch©n QuyÓn"}}}, nRate = 7.00},
+		[5] = {[1] = {item={{gdp={0,107,208,1}, name="Wishful Golden Top True Manual"}}}, nRate = 7.00},
+		[6] = {[1] = {item={{gdp={0,107,209,1}, name="Azure Sea Silent Sound True Manual"}}}, nRate = 8.00},
+		[7] = {[1] = {item={{gdp={0,107,210,1}, name="Chaos Town Mountain True Manual"}}}, nRate = 7.00},
 		[8] = {[1] = {item={{gdp={0,107,211,1}, name="Quú Thiªn Du Long Ch©n QuyÓn"}}}, nRate = 7.00},
 		[9] = {[1] = {item={{gdp={0,107,212,1}, name="HuyÒn ¶nh Mª T«ng Ch©n QuyÓn"}}}, nRate = 7.00},
-		[10] = {[1] = {item={{gdp={0,107,213,1}, name="Qu©n Tö §íi Phong Ch©n QuyÓn"}}}, nRate = 7.00},
-		[11] = {[1] = {item={{gdp={0,107,214,1}, name="TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn"}}}, nRate = 7.00},
+		[10] = {[1] = {item={{gdp={0,107,213,1}, name="Gentleman Welcomes the Wind True Manual"}}}, nRate = 7.00},
+		[11] = {[1] = {item={{gdp={0,107,214,1}, name="Town Army Flying Dragon Spear True Manual"}}}, nRate = 7.00},
 		[12] = {[1] = {item={{gdp={0,107,215,1}, name="Xuyªn V©n L¹c Hång Ch©n QuyÓn"}}}, nRate = 7.00},
 		[13] = {[1] = {item={{gdp={0,107,216,1}, name="HuyÒn Minh Phong Ma Ch©n QuyÓn"}}}, nRate = 7.00},
 		[14] = {[1] = {item={{gdp={0,107,217,1}, name="Linh Cæ HuyÒn Tµ Ch©n QuyÓn"}}}, nRate = 7.00},
@@ -362,9 +362,9 @@ function TradeMaterial_Done4(nOption)
 		nCount = (nCount + 1)*nHeso + mod(GetTask(TSK_THUQUANDUNG),nHeso)
 		SetTask(TSK_THUQUANDUNG, floor(GetTask(TSK_THUQUANDUNG)/(nHeso*10))*nHeso*10 + nCount)
 		if nOption == 1 then
-			gf_WriteLogEx("MO RONG EVENT THANG 5", "thµnh c«ng", 1, "Siro Ngò S¾c")
+			gf_WriteLogEx("MO RONG EVENT THANG 5", "thµnh c«ng", 1, "Five-Color Syrup")
 		else
-			gf_WriteLogEx("MO RONG EVENT THANG 5", "thµnh c«ng", 1, "Kem Que CÇu Vång")
+			gf_WriteLogEx("MO RONG EVENT THANG 5", "thµnh c«ng", 1, "Rainbow Popsicle")
 		end
 		Trade_Material_Menu4()
 	end
@@ -455,7 +455,7 @@ end
 function change_nguyenlieu_thang8(nType)
 	local tNguyenlieu = {
 										[1] = {2,1,1009,1," Thiªn th¹ch tinh th¹ch", 1, 19000000},
-										[2] = {2,2,7,1," M¶nh thiªn th¹ch", 1, 390000},
+										[2] = {2,2,7,1," meteorite shard", 1, 390000},
 										[3] = {2,2,8,1," Thiªn th¹ch", 1, 290000},
 							}
 	if GetItemCount(tNguyenlieu[nType][1],tNguyenlieu[nType][2],tNguyenlieu[nType][3]) < tNguyenlieu[nType][4] then
@@ -487,7 +487,7 @@ function change_banhtrungthu()
 	end
 	if DelItem(2,2,7,1) == 1 and DelItem(2,2,8,2) == 1 then
 		Pay(10000)
-		gf_AddItemEx2({2,1,30571 ,1}, "§æi b¸nh socola th¸ng 8", "EVENT PHU THEM THANG 8 BK", "§æi b¸nh Trung thu Socola")
+		gf_AddItemEx2({2,1,30571 ,1}, "Exchange August chocolate cake", "EVENT PHU THEM THANG 8 BK", "Exchange Chocolate Mooncake")
 		gf_WriteLogEx("EVENT PHU THEM THANG 8", "nép thµnh c«ng", 1, "§æi b¸nh trung thu Socola thµnh c«ng")
 	else
 		gf_WriteLogEx("EVENT PHU THEM THANG 8", "nép kh«ng thµnh c«ng", 1, "§æi b¸nh trung thu Socola kh«ng thµnh c«ng")
@@ -602,7 +602,7 @@ function noel_get_1_time()
 			SetTask(TSK_NOEL_DIEUDUONG, GetTask(TSK_NOEL_DIEUDUONG)+1)
 			VNG_SetTaskPos(TSK_NOEL_DIEUDUONG, nCount+1, 5, 4)
 		end
-		gf_WriteLogEx("NOEL DOI DIEU DUONG", "thµnh c«ng", 1, "Nép 1 hép quµ")
+		gf_WriteLogEx("NOEL DOI DIEU DUONG", "thµnh c«ng", 1, "Submit 1 gift box")
 	else
 		gf_WriteLogEx("NOEL DOI DIEU DUONG", "thµnh c«ng", 1, "Nép 1 hép quµ thÊt b¹i")
 	end

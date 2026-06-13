@@ -8,11 +8,11 @@ function OnUse(nItemIdx)
 		return 0;
 	end;
 	local selTab = {
-				"*Xem t×nh h×nh phe ®Þch/view_enemy_info",
+				"*View enemy situation/view_enemy_info",
 				"*Xem t×nh h×nh c¸c §¹i kú vµ thµnh m«n/see_flag_state",
 				"*Xem t×nh h×nh th­¬ng vong/view_death",
 				"*Ta muèn rêi khái chiÕn tr­êng/leave_battle",
-				"*Tho¸t/nothing",
+				"*Exit/nothing",
 				}
 	Say("C¸c h¹ muèm xem tin tøc nµo?",getn(selTab),selTab);
 end;
@@ -35,10 +35,10 @@ function see_flag_state()
 	--==============================================================================
 	for i=1,getn(tReviviFlagPos) do
 		if GetMissionV(MV_REVIVI_FLAG1_OWNER+i-1) == nPlayerCamp then
-			szStr = "Phe ta chiÕm lÜnh ";
+			szStr = "Our side has occupied";
 			szColorHeader = "<color=yellow>"
 		else
-			szStr = "®Þch chiÕm";
+			szStr = "the enemy occupies";
 			szColorHeader = "<color=red>"
 		end;
 		szContent = szContent..gf_FormatStringLength(tReviviFlagPos[i][3]..":",15,0)..szColorHeader..gf_FormatStringLength(szStr,10).."<color>";
@@ -54,7 +54,7 @@ function see_flag_state()
 	szContent = szContent.."\n\n";	--ÐÂµÄÄÚÈÝ£¬»»ÐÐ
 	for i=getn(tNormalFlagPos),1,-1 do
 		if GetMissionV(MV_DESTROY_FLAG1+i-1) == 1 then
-			szStr = "bÞ ph¸";
+			szStr = "destroyed";
 			if nPlayerCamp == GONG_ID then
 				szColorHeader = "<color=yellow>"
 			else
@@ -95,11 +95,11 @@ function see_flag_state()
 end;
 
 function view_death()
-	Talk(1,"OnUse","Th­¬ng vong hai phe nh­ sau: \nPhe c«ng: <color=yellow>"..GetMissionV(MV_DEATH_GONG).."<color>\nPhe thñ: <color=yellow>"..GetMissionV(MV_DEATH_SHOU).."<color>");
+	Talk(1,"OnUse","Th­¬ng vong hai phe nh­ sau: \nPhe c«ng: <color=yellow>"..GetMissionV(MV_DEATH_GONG).."<color>\nDefending side: <color=yellow>"..GetMissionV(MV_DEATH_SHOU).."<color>");
 end;
 
 function leave_battle()
-	AskClientForString("leave","NhÑ nhµng rêi khái...",1,32,"Sao ph¶i rêi khái?");
+	AskClientForString("leave","Gently leaving...",1,32,"Sao ph¶i rêi khái?");
 end;
 
 function leave(szMsg)

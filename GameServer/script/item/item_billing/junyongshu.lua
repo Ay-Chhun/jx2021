@@ -29,7 +29,7 @@ function OnUse(nidx)
 		return
 	end
 	
-	Say("B¹n muèn dïng"..tTab[nTabIndex][4].."? Nã cã thÓ gióp b¹n t¨ng tû lÖ cã ®­îc vËt liÖu qu©n dông"..tTab[nTabIndex][5].."lÇn.", 2, "§óng/#yes_use("..nTabIndex..")", "Sai/no_use")
+	Say("B¹n muèn dïng"..tTab[nTabIndex][4].."? Nã cã thÓ gióp b¹n t¨ng tû lÖ cã ®­îc vËt liÖu qu©n dông"..tTab[nTabIndex][5].."lÇn.", 2, "Yes/#yes_use("..nTabIndex..")", "Sai/no_use")
 end
 
 function yes_use(nTabIndex)
@@ -42,7 +42,7 @@ function yes_use(nTabIndex)
 	if nDate >= nNow and nProbability == tTab[nTabIndex][5] then
 		Say("H«m nay b¹n ®· sö dông"..tTab[nTabIndex][4].."Ngµy mai h·y quay l¹i!", 0)
 	elseif nDate >= nNow and nProbability < tTab[nTabIndex][5] then
-		Say("B¹n muèn dïng qu©n dông-thèng trï th­?", 2, "§óng/yes_use_2", "Sai/no_say")
+		Say("B¹n muèn dïng qu©n dông-thèng trï th­?", 2, "Yes/yes_use_2", "Sai/no_say")
 	elseif nDate >= nNow and nProbability > tTab[nTabIndex][5] then
 		Say("B¹n ®· dïng qu©n dông-thèng trï th­ kh«ng cÇn dïng qu©n dông-thu thËp th­.", 0)
 	elseif nDate < nNow then

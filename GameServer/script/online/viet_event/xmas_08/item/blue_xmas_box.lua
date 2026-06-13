@@ -33,11 +33,11 @@ g_tbItem =
 	[5]  = {TYPE_ITEM,	10,	1,	"Bæ Th¹ch MËt tÞch",	0,	107,62},
 	[6]  = {TYPE_ITEM,	2,	1,	"M¶nh Thiªn th¹ch",	2,	2,	7},
 	[7]  = {TYPE_ITEM,	10,	1,	"Thiªn th¹ch",		2,	2,	8},
-	[8]  = {TYPE_ITEM,	10,	1,	"M¶nh B¨ng th¹ch",	2,	1,	148},
-	[9]  = {TYPE_ITEM,	10,	1,	"B¨ng th¹ch",		2,	1,	149},
-	[10]  = {TYPE_ITEM,	1,	1,	"C©y B¸t Nh·",	2,	0,	398},
-	[11] = {TYPE_ITEM,	1,	1,	"C©y B¸t Nh· nhá",	2,	0,	504},
-	[12] = {TYPE_ITEM,	341,	1,	"Lé thñy",		2,	0,	351},
+	[8]  = {TYPE_ITEM,	10,	1,	"Ice Stone Fragment",	2,	1,	148},
+	[9]  = {TYPE_ITEM,	10,	1,	"Ice Stone",		2,	1,	149},
+	[10]  = {TYPE_ITEM,	1,	1,	"Prajna Tree",	2,	0,	398},
+	[11] = {TYPE_ITEM,	1,	1,	"Small Prajna Tree",	2,	0,	504},
+	[12] = {TYPE_ITEM,	341,	1,	"Dew Water",		2,	0,	351},
 	[13] = {TYPE_ITEM,	50,	1,	"Bång Lai Lé Thñy",	2,	1,	1052},
 	--		ÀàÐÍ	   ¸ÅÂÊ ÊýÖµ	ÌáÊ¾×Ö·û´® 	ÃüÁî×Ö·û´®
 	[14] = {TYPE_CMD,	3000,	1,	{"®iÓm danh väng"},	"ModifyReputation(%d,0)"},
@@ -79,7 +79,7 @@ function use_it()
 		local szItemName = "®iÓm kinh nghiÖm"
 		local nItemNum = nExp
 		local szInfoDescribe = format("ModifyExp(%d)", nItemNum)
-		WriteLogEx(g_szLogTitle, "Hép Quµ Xanh", nItemNum, szItemName, szInfoDescribe, GetTongName() )
+		WriteLogEx(g_szLogTitle, "Green Gift Box", nItemNum, szItemName, szInfoDescribe, GetTongName() )
 	end
 	--ÎïÆ·½±Àø²¿·Ö
 	local nRandIdx = get_random_item(g_tbItem)
@@ -112,9 +112,9 @@ function use_it()
 		else
 			Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." "..szItemName)
 		end
-		WriteLogEx(g_szLogTitle, "Hép Quµ Xanh", nItemNum, szItemName, szInfoDescribe, GetTongName() )
+		WriteLogEx(g_szLogTitle, "Green Gift Box", nItemNum, szItemName, szInfoDescribe, GetTongName() )
 	else
-		WriteLogEx(g_szLogTitle, "Hép Quµ Xanh", "", "", "", "", "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
+		WriteLogEx(g_szLogTitle, "Green Gift Box", "", "", "", "", "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
 	end
 end
 

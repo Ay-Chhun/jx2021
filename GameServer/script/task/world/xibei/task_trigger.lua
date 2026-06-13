@@ -91,7 +91,7 @@ local	strTalk = {
 
 	nNpcIndex = CreateNpc("","Danh bæ Viªn Phi V©n ",nMapID,nXworldpos,nYworldpos);
 	SetNpcLifeTime(nNpcIndex,1200);
-	SetNpcScript(nNpcIndex,"§­íng dÉn file");
+	SetNpcScript(nNpcIndex,"Guide file");
 	SetTask(YUANFEIYUN_NPCINDEX,nNpcIndex);--¼ÇÂ¼Ô¬·ÉÔÆNpcIndex
 	TalkEx("",strTalk);
 	RemoveTrigger(GetRunningTrigger());--É¾È¥¸Ã´¥·¢Æ÷
@@ -104,8 +104,8 @@ function anrishi_killed_1()
 	if g_probability(15,100) then
   	AddItem(2,0,695,1,1);--µÃµ½Áò»Ç
   	if GetItemCount(2,0,695) >= 10 then
-  		TaskTip("§· thu thËp 10 viªn L­u huúnh, mau ®­a cho TriÖu Tö B×nh. ");
-  		Msg2Player("§· thu thËp 10 viªn L­u huúnh, mau ®­a cho TriÖu Tö B×nh. ");
+  		TaskTip("You have collected 10 pellets of sulfur. Hurry and bring them to Zhao Ziping.");
+  		Msg2Player("You have collected 10 pellets of sulfur. Hurry and bring them to Zhao Ziping.");
   	end;
 	end;
 
@@ -145,8 +145,8 @@ function xibeiyanhan_killed_1()
 	if g_probability(15,100) then
   	AddItem(2,0,708,1,1);--µÃµ½ÆÏÌÑ¾Æ
   	if GetItemCount(2,0,708) >= 10 then
-  		TaskTip("§· thu thËp 10 hñ r­îu nho, mau ®­a cho ¢n Minh gi¶i r­îu ®i. ");
-  		Msg2Player("§· thu thËp 10 hñ r­îu nho, mau ®­a cho ¢n Minh gi¶i r­îu ®i. ");
+  		TaskTip("You have collected 10 jars of grape wine. Hurry and bring them to An Minh to sober up.");
+  		Msg2Player("You have collected 10 jars of grape wine. Hurry and bring them to An Minh to sober up.");
   	end;
 	end;
 
@@ -272,8 +272,8 @@ function qiannianshuren_killed_1()
 	if g_probability(15,100) then
   	AddItem(2,0,720,1,1);--µÃµ½Ç§ÄêÎÚÄ¾
   	if GetItemCount(2,0,720) >= 20 then
-  		TaskTip("§· thu thËp ®­îc 20 m¶nh ¤ Méc ngµn n¨m. ");
-  		Msg2Player("§· thu thËp ®­îc 20 m¶nh ¤ Méc ngµn n¨m. ");
+  		TaskTip("You have collected 20 pieces of thousand-year Black Wood.");
+  		Msg2Player("You have collected 20 pieces of thousand-year Black Wood.");
   	end;
 	end;
 
@@ -346,8 +346,8 @@ function lieyanchilong_killed_1()
 	if g_probability(10,100) then
   	AddItem(2,0,703,1,1);--µÃµ½ó¤ÁúÐë
   	if GetItemCount(2,0,703) >= 10 then
-  		TaskTip("§· thu thËp ®­îc 10 m¶nh Li Long Tu. ");
-  		Msg2Player("§· thu thËp ®­îc 10 m¶nh Li Long Tu. ");
+  		TaskTip("You have collected 10 pieces of Li Long Beard.");
+  		Msg2Player("You have collected 10 pieces of Li Long Beard.");
   	end;
 	end;
 	

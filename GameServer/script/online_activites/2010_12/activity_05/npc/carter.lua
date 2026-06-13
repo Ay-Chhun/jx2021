@@ -6,29 +6,29 @@ CR_Head = "<color=green>Xa Phu Æ u tr≠Íng Tuy’t: <color>Hoπt ÆÈng ß u Tr≠Íng Tuy
 CR_Menu1 = 
 {
 	"Vµo ß u Tr≠Íng Tuy’t (ti™u hao 5 vµng t∆ng 10 Ti”u Tuy’t C«u)/CR_DoEnter",
-	"Mua Æπn tuy’t c«u/CR_DoShowSaleList",
-	"RÍi kh·i/gf_DoNothing"
+	"Buy snowball ammo/CR_DoShowSaleList",
+	"Leave/gf_DoNothing"
 };
 
 CR_Menu2 = 
 {
-	"RÍi kh·i Æ u tr≠Íng tuy’t/CR_DoExit",
-	"Mua Æπn tuy’t c«u/CR_DoShowSaleList",
-	"RÍi kh·i/gf_DoNothing"
+	"Leave the Snow Arena/CR_DoExit",
+	"Buy snowball ammo/CR_DoShowSaleList",
+	"Leave/gf_DoNothing"
 }
 
 CR_SaleList = 
 {
-	{{2, 3, 221}, "ßπi tuy’t c«u", 10, 150000},
-	{{2, 3, 220}, "Trung tuy’t c«u", 10, 100000},
-	{{2, 3, 219}, "Ti”u tuy’t c«u", 10, 50000},
+	{{2, 3, 221}, "Large Snowball", 10, 150000},
+	{{2, 3, 220}, "Medium Snowball", 10, 100000},
+	{{2, 3, 219}, "Small Snowball", 10, 50000},
 }
 
 CR_Menu3_1 = 
 {
-	"10 ßπi Tuy’t C«u (15 vµng)/#CR_DoBuy(1)",
-	"10 Trung Tuy’t C«u (10 vµng)/#CR_DoBuy(2)",
-	"10 Ti”u Tuy’t C«u (5 vµng)/#CR_DoBuy(3)",
+	"10 Large Snowballs (15 gold)/#CR_DoBuy(1)",
+	"10 Medium Snowballs (10 gold)/#CR_DoBuy(2)",
+	"10 Small Snowballs (5 gold)/#CR_DoBuy(3)",
 	"Ta chÿ gh– ch¨i/gf_DoNothing",
 }
 
@@ -68,9 +68,9 @@ function CR_DoEnter()
  		return 0
  	end	
 	local itemID = {2, 3, 219, 10};
-	local itemName = "Ti”u tuy’t c«u";
-	gf_AddItemEx2(itemID, itemName, "Event th∏ng 12 n®m 2012", "application gift");
-	gf_WriteLogEx("NEM TUYET 022013", "tham gia thµnh c´ng", 1, "Tham gia n–m tuy’t")
+	local itemName = "Small Snowball";
+	gf_AddItemEx2(itemID, itemName, "December 2012 Event", "application gift");
+	gf_WriteLogEx("NEM TUYET 022013", "tham gia thµnh c´ng", 1, "Join the snowball fight")
 	mf_JoinMission(SB_MISSION_ID, SB_CAMP_ID, mapID);
 end
 
@@ -96,7 +96,7 @@ function CR_DoBuy(index)
 	if 1 == gf_Judge_Room_Weight(4,100, "") then
 		if 1 == Pay(cost) then
 			local tmpItemID = {itemID[1], itemID[2], itemID[3], itemCount};
-			gf_AddItemEx2(tmpItemID, itemName, "NEM TUYET 022013", "Mua Æπn tuy’t c«u"); --Event th∏ng 12 n®m 2012
+			gf_AddItemEx2(tmpItemID, itemName, "NEM TUYET 022013", "Buy snowball ammo"); --Event th∏ng 12 n®m 2012
 		end
 	end
 	CR_DoShowSaleList();	

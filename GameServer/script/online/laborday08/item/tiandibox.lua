@@ -47,12 +47,12 @@ function OnUse(nIndex)
 	if nTabIdx ~= 4 then
 		Say("Sö dông "..tTiandiBox[nTabIdx][1].."SÏ nhËn ®­îc trang bÞ Thiªn §Þa HuyÒn Hoµng t­¬ng øng, ®ång ý dïng chø?",
 			2,
-			"§­îc/#choose_tiandi_lingqi("..nTabIdx..",0)",
+			"Yes/#choose_tiandi_lingqi("..nTabIdx..",0)",
 			"Kh«ng cÇn/nothing");
 	else
 		Say("Sö dông "..tTiandiBox[nTabIdx][1].."SÏ nhËn ®­îc vò khÝ Thiªn §Þa HuyÒn Hoµng cña l­u ph¸i t­¬ng øng, ®ång ý dïng chø?",
 			2,
-			"§­îc/choose_tiandi_weapon",
+			"Yes/choose_tiandi_weapon",
 			"Kh«ng cÇn/nothing");
 	end
 end
@@ -89,7 +89,7 @@ function confirm_give_tiandi(nTabIdx,nType,nLingqi)
 			if add_flag == 1 then
 				SetEquipCanChouQu(add_idx,1);
 				Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tTiandi[nTabIdx][nBody][1]);
-				WriteLog("Ho¹t ®éng 1-5: Ng­êi ch¬i"..GetName().."Sö dông "..tTiandiBox[nTabIdx][1].."NhËn ®­îc"..tTiandi[nTabIdx][nBody][1]);
+				WriteLog("Ho¹t ®éng 1-5: Ng­êi ch¬i"..GetName().."Sö dông "..tTiandiBox[nTabIdx][1].."Received"..tTiandi[nTabIdx][nBody][1]);
 			else
 				WriteLog("Ho¹t ®éng 1-5: Ng­êi ch¬i"..GetName().."Sö dông "..tTiandiBox[nTabIdx][1].."NhËn ®­îc thÊt b¹i, vÞ trÝ thÊt b¹i: "..add_flag);
 			end
@@ -100,7 +100,7 @@ function confirm_give_tiandi(nTabIdx,nType,nLingqi)
 				if add_flag == 1 then
 					SetEquipCanChouQu(add_idx,1);
 					Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tTiandi[nTabIdx][nRoute][nType][1]);
-					WriteLog("Ho¹t ®éng 1-5: Ng­êi ch¬i"..GetName().."Sö dông "..tTiandiBox[nTabIdx][1].."NhËn ®­îc"..tTiandi[nTabIdx][nRoute][nType][1]);
+					WriteLog("Ho¹t ®éng 1-5: Ng­êi ch¬i"..GetName().."Sö dông "..tTiandiBox[nTabIdx][1].."Received"..tTiandi[nTabIdx][nRoute][nType][1]);
 				else
 					WriteLog("Ho¹t ®éng 1-5: Ng­êi ch¬i"..GetName().."Sö dông "..tTiandiBox[nTabIdx][1].."NhËn ®­îc thÊt b¹i, vÞ trÝ thÊt b¹i: "..add_flag);
 				end	
@@ -110,7 +110,7 @@ function confirm_give_tiandi(nTabIdx,nType,nLingqi)
 				if add_flag == 1 then
 					SetEquipCanChouQu(add_idx,1);
 					Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tTiandi[nTabIdx][nRoute][nRand][1]);
-					WriteLog("Ho¹t ®éng 1-5: Ng­êi ch¬i"..GetName().."Sö dông "..tTiandiBox[nTabIdx][1].."NhËn ®­îc"..tTiandi[nTabIdx][nRoute][nRand][1]);
+					WriteLog("Ho¹t ®éng 1-5: Ng­êi ch¬i"..GetName().."Sö dông "..tTiandiBox[nTabIdx][1].."Received"..tTiandi[nTabIdx][nRoute][nRand][1]);
 				else
 					WriteLog("Ho¹t ®éng 1-5: Ng­êi ch¬i"..GetName().."Sö dông "..tTiandiBox[nTabIdx][1].."NhËn ®­îc thÊt b¹i, vÞ trÝ thÊt b¹i: "..add_flag);
 				end	

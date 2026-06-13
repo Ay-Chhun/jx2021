@@ -59,7 +59,7 @@ function moverandomplayer()
 		if GetTask(POSITION) ~= TRAPCOUNT then
 			NewWorld(MapID,MapX,MapY);
 			SetTask(POSITION,nPos);
-			Msg2MSAll(MISSION_ID,sName.."Liªn tiÕp v­ît qua cê vµng vµ cê ®á, di chuyÓn "..GetName().." ®Õn bªn c¹nh.");
+			Msg2MSAll(MISSION_ID,sName.."Liªn tiÕp v­ît qua cê vµng vµ cê ®á, di chuyÓn "..GetName().." to the side.");
 		else
 			PlayerIndex = tempPI;
 			Msg2Player("Di chuyÓn ng­êi ch¬i thÊt b¹i!");
@@ -82,6 +82,6 @@ function fixfront3()
 			nCount = nCount + 1;
 		end;
 	end;
-	Msg2MSAll(MISSION_ID,sName.." Liªn tiÕp v­ît qua cê xanh vµ cê ®á, 3 h¹ng ®Çu bÞ ®øng yªn.");
+	Msg2MSAll(MISSION_ID,sName.." Passing the blue and red flags in a row, the top 3 ranks are frozen in place.");
 	PlayerIndex = tempPI;
 end;

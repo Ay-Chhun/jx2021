@@ -53,7 +53,7 @@ function main()
 	-- 如果玩家可以挖这个药品，进入下面执行段
 	if (nCanDig == 1 and nCanDigTool == 1) then
 		if (DoFireworks(890, 1) == 1) then
-			Msg2Player("Thu th藀......");
+			Msg2Player("Collecting......");
 			CastState("state_fetter", 1, 5 * 18)
 			ProgressSlot(5 * 18)
 			

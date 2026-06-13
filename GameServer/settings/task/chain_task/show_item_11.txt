@@ -5,9 +5,9 @@ TaskID	Genre	Detail	Particular	ItemNum	MapIndex	TaskValueBase	TaskValueExt	TaskC
 40020002	0	100	1	5		40	58	4	1650	1650	1650	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	HiÖp ThiÕu bè y	5 HiÖp ThiÕu Bè Y	TiÖm Nam phôc	
 40020003	0	100	19	5		40	58	4	1650	1650	1650	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	HiÖp ThiÕu y	5 HiÖp ThiÕu Y	TiÖm Nam phôc	
 40020004	0	100	55	5		40	58	4	1650	1650	1650	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Vò Th­êng	5 Vò Th­êng	TiÖm N÷ phôc	
-40020005	2	3	6	10		20	233	6	0	0	0	1000	600	600	0	0	0	0	0	0	0	0	0	0	0	0	0	0	C¬ quan	10 C¬ Quan	§­êng M«n	
-40020006	2	3	4	10		50	233	6	0	0	0	1000	600	600	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Thiªn PhËt Ch©u	10 Thiªn PhËt Ch©u	ThiÕu L©m	
-40020007	2	3	12	10		50	233	6	0	0	0	1000	600	600	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ph¸ Ma Chó	10 Ph¸ Ma Chó	ThiÕu L©m	
+40020005	2	3	6	10		20	233	6	0	0	0	1000	600	600	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Mechanism	10 C¬ Quan	§­êng M«n	
+40020006	2	3	4	10		50	233	6	0	0	0	1000	600	600	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Thiªn PhËt Ch©u	10 Thiªn PhËt Ch©u	Shaolin	
+40020007	2	3	12	10		50	233	6	0	0	0	1000	600	600	0	0	0	0	0	0	0	0	0	0	0	0	0	0	Ph¸ Ma Chó	10 Ph¸ Ma Chó	Shaolin	
 40020008	0	101	1	1		74	90	6	0	0	0	1000	600	600	0	0	0	0	0	0	0	0	0	0	0	0	0	0	HiÖp ThiÕu Bè Trang	1 HiÖp ThiÕu Bè Trang	TiÖm Nam phôc	
 40030001	0	103	1	1		57	90	6	0	0	0	1000	600	600	0	0	0	0	0	0	0	0	0	0	0	0	0	0	ThiÕu HiÖp C©n	1 ThiÕu HiÖp C©n	TiÖm Nam phôc	
 40030002	0	103	19	1		57	90	6	0	0	0	1000	600	600	0	0	0	0	0	0	0	0	0	0	0	0	0	0	HiÖp ThiÕu bè c©n	1 HiÖp ThiÕu §Çu §¸i	TiÖm Nam phôc	
@@ -27,12 +27,12 @@ TaskID	Genre	Detail	Particular	ItemNum	MapIndex	TaskValueBase	TaskValueExt	TaskC
 40040006	0	100	56	1		230	160	10	0	0	0	0	0	0	200	200	0	0	0	0	0	0	0	0	0	0	0	0	Hång V©n Th­êng	1 Hång V©n Th­êng	TiÖm N÷ phôc
 40040007	0	103	38	1		652	160	10	0	0	0	0	0	0	200	200	0	0	0	0	0	0	0	0	0	0	0	0	Th¸i Méc Tr©m	1 Th¸i Méc tr©m	TiÖm N÷ phôc
 40050001	0	103	56	1		652	160	10	0	0	0	0	0	0	200	200	0	0	0	0	0	0	0	0	0	0	0	0	Th¸i V¨n Méc tr©m	1 Th¸i V¨n Méc tr©m	TiÖm N÷ phôc
-40050002	0	200	11	5		500	160	10	0	0	0	0	0	0	200	200	0	0	0	0	0	0	0	0	0	0	0	0	Cuèc chim	5 Cuèc chim	T¹p hãa
+40050002	0	200	11	5		500	160	10	0	0	0	0	0	0	200	200	0	0	0	0	0	0	0	0	0	0	0	0	Bird Hoe	5 Cuèc chim	T¹p hãa
 40050003	0	200	12	5		500	160	10	0	0	0	0	0	0	200	200	0	0	0	0	0	0	0	0	0	0	0	0	ChÕ B× ®ao	5 ChÕ B× §ao	T¹p hãa
 40050004	0	200	13	5		500	160	10	0	0	0	0	0	0	200	200	0	0	0	0	0	0	0	0	0	0	0	0	Cuèc	5 Cuèc	T¹p hãa
-40050005	0	200	14	5		500	160	10	0	0	0	0	0	0	200	200	0	0	0	0	0	0	0	0	0	0	0	0	ThiÕt phñ	5 ThiÕt phñ	T¹p hãa
+40050005	0	200	14	5		500	160	10	0	0	0	0	0	0	200	200	0	0	0	0	0	0	0	0	0	0	0	0	Iron Mansion	5 ThiÕt phñ	T¹p hãa
 40050006	0	200	15	5		500	160	10	0	0	0	0	0	0	200	200	0	0	0	0	0	0	0	0	0	0	0	0	Con thoi	5 Con thoi	T¹p hãa
-40050007	0	200	16	5		500	160	10	0	0	0	0	0	0	200	200	0	0	0	0	0	0	0	0	0	0	0	0	Cuèc thuèc	5 Cuèc thuèc	T¹p hãa
+40050007	0	200	16	5		500	160	10	0	0	0	0	0	0	200	200	0	0	0	0	0	0	0	0	0	0	0	0	Medicine Hoe	5 Cuèc thuèc	T¹p hãa
 40070003	0	0	3	2		2262	160	14	0	0	0	0	0	0	200	200	0	0	0	0	0	0	0	0	0	0	0	0	Phi Ng­ thñ	2 Phi Ng­ Thñ	TiÖm vò khÝ
 40070004	0	2	16	2		2152	160	14	0	0	0	0	0	0	200	200	0	0	0	0	0	0	0	0	0	0	0	0	Linh Xµ kiÕm	2 Linh Xµ KiÕm	TiÖm vò khÝ
 40070005	0	5	29	2		2238	160	14	0	0	0	0	0	0	200	200	0	0	0	0	0	0	0	0	0	0	0	0	Thñy Háa c«n	2 Thñy Háa C«n	TiÖm vò khÝ
@@ -120,7 +120,7 @@ TaskID	Genre	Detail	Particular	ItemNum	MapIndex	TaskValueBase	TaskValueExt	TaskC
 40110002	0	101	23	2		5970	600	22	0	0	0	0	0	0	0	0	0	0	200	200	150	150	150	150	0	0	0	0	Hµo HiÖp trang	2 Hµo Dòng Trang	TiÖm Nam phôc
 40110003	0	101	24	2		7562	600	22	0	0	0	0	0	0	0	0	0	0	200	200	150	150	150	150	0	0	0	0	Kim Lò trang	2 Kim Lò Trang	TiÖm Nam phôc
 40110004	0	103	5	2		5928	600	22	0	0	0	0	0	0	0	0	0	0	200	200	150	150	150	150	0	0	0	0	M·n NguyÖt L¹p	2 M·n NguyÖt L¹p	TiÖm Nam phôc
-40110005	0	103	6	2		4696	600	22	0	0	0	0	0	0	0	0	0	0	200	200	150	150	150	150	0	0	0	0	Kim Phong Qu¸n	2 Kim Phong Qu¸n	TiÖm Nam phôc
+40110005	0	103	6	2		4696	600	22	0	0	0	0	0	0	0	0	0	0	200	200	150	150	150	150	0	0	0	0	Jinfeng Hall	2 Kim Phong Qu¸n	TiÖm Nam phôc
 40120001	0	103	22	2		4386	600	22	0	0	0	0	0	0	0	0	0	0	200	200	150	150	150	150	0	0	0	0	Kim §iÒu c©n	2 Kim Thao Ph¸t §¸i	TiÖm Nam phôc
 40120002	0	103	23	2		5928	600	22	0	0	0	0	0	0	0	0	0	0	200	200	150	150	150	150	0	0	0	0	Vò Th¾ng Sa M·o	2 Vò Th¾ng Sa M·o	TiÖm Nam phôc
 40120003	0	102	6	2		5280	600	22	0	0	0	0	0	0	0	0	0	0	200	200	150	150	150	150	100	100	100	100	Lôc Du Ngäc Béi	2 Lôc Du Ngäc Béi	TiÖm Kim hoµn

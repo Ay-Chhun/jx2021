@@ -1,7 +1,7 @@
 tNormalFlagPos = 		--²»¿ÉÖØÉúÆì×ÓµÄ×ø±ê--
 {
 	[1] = {1300,2962,"§¹i kú §«ng thµnh","§¹i kú thµnh m«n"},
-	[2] = {1293,2779,"§¹i kú Trung khu","§¹i kú thµnh m«n"},
+	[2] = {1293,2779,"Central banner","§¹i kú thµnh m«n"},
 	[3] = {1100,2764,"§¹i kú T©y thµnh","§¹i kú thµnh m«n"},
 }
 tReviviFlagPos = 		--¿ÉÖØÉúÆì×ÓµÄ×ø±ê--
@@ -9,7 +9,7 @@ tReviviFlagPos = 		--¿ÉÖØÉúÆì×ÓµÄ×ø±ê--
 	[1] = {1280,2622,"HuyÒn vò kú T©y thµnh","ChiÕm ®­îc Lam kú","ChiÕm ®­îc Hång kú"},
 	[2] = {1453,2794,"HuyÒn vò kú §«ng thµnh","ChiÕm ®­îc Lam kú","ChiÕm ®­îc Hång kú"},
 	[3] = {1183,2630,"B¹ch Hæ kú T©y thµnh","ChiÕm ®­îc Lam kú","ChiÕm ®­îc Hång kú"},
-	[4] = {1318,2750,"ThÊt Tinh kú","ChiÕm ®­îc Lam kú","ChiÕm ®­îc Hång kú"},
+	[4] = {1318,2750,"Seven Stars banner","ChiÕm ®­îc Lam kú","ChiÕm ®­îc Hång kú"},
 	[5] = {1437,2881,"Thanh Long kú §«ng thµnh","ChiÕm ®­îc Lam kú","ChiÕm ®­îc Hång kú"},
 	[6] = {1162,2739,"Chu T­íc kú T©y thµnh","ChiÕm ®­îc Lam kú","ChiÕm ®­îc Hång kú"},
 	[7] = {1336,2912,"Chu T­íc kú §«ng thµnh","ChiÕm ®­îc Lam kú","ChiÕm ®­îc Hång kú"},

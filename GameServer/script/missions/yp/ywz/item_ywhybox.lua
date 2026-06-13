@@ -6,7 +6,7 @@ function OnUse(nItem)
 		Talk(1,"","VËt phÈm ®· qu¸ h¹n sö dông");
 		return 0;
 	end
-    Say(format("§ång ý më %s kh«ng?", GetItemName(nItem)), 3, format("Më miÔn phÝ/#open_ywhy_free(%d)", nItem), format("Thiªn Kiªu LÖnh ®Ó më/#open_ywhy_ib(%d)", nItem), "T¹i h¹ chØ xem qua th«i/nothing");
+    Say(format("§ång ý më %s kh«ng?", GetItemName(nItem)), 3, format("Open for free/#open_ywhy_free(%d)", nItem), format("Thiªn Kiªu LÖnh ®Ó më/#open_ywhy_ib(%d)", nItem), "T¹i h¹ chØ xem qua th«i/nothing");
 end
 
 function open_ywhy_free(nItem)

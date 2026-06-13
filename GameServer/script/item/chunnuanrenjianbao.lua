@@ -12,15 +12,15 @@ end;
 function confirm_open(nItemIdx)
 	local selTab = {
 				format("§­îc råi. B¾t ®Çu më th«i!/#open(%d)",nItemIdx),
-				format("Xem bªn trong cã g× ®·!/#see_item(%d)",nItemIdx),
+				format("Let's see what's inside!/#see_item(%d)",nItemIdx),
 				"T¹m thêi kh«ng më/nothing",
 				}
-	Say("<color=red> Chó ý<color>: R­¬ng b¹n ph¶i cã "..g_NeedRoom.." chç trèng vµ "..g_NeedWeight.." søc lùc. Linh Th¹ch vµ Linh Th¹ch Phèi Ph­¬ng sÏ tô hîp t¹i Tô Linh §Ønh. Xin h·y chó ý Danh Väng hiÖn t¹i cña b¹n, ®iÓm cèng hiÕn S­ M«n ph¶i ®¹t tèi ®a, nÕu nh­ sè l­îng tói më ®­îc v­ît qu¸ giíi h¹n, hÖ thèng sÏ tù ®éng khÊu trõ. QuyÕt ®Þnh më ngay b©y giê chø?",getn(selTab),selTab);
+	Say("<color=red> Chó ý<color>: R­¬ng b¹n ph¶i cã "..g_NeedRoom.." empty slots and"..g_NeedWeight.." søc lùc. Linh Th¹ch vµ Linh Th¹ch Phèi Ph­¬ng sÏ tô hîp t¹i Tô Linh §Ønh. Xin h·y chó ý Danh Väng hiÖn t¹i cña b¹n, ®iÓm cèng hiÕn S­ M«n ph¶i ®¹t tèi ®a, nÕu nh­ sè l­îng tói më ®­îc v­ît qu¸ giíi h¹n, hÖ thèng sÏ tù ®éng khÊu trõ. QuyÕt ®Þnh më ngay b©y giê chø?",getn(selTab),selTab);
 end
 
 function see_item(nItemIdx)
 	local szItems = "1 XÝch ThiÕt Tinh, 2 Thiªn th¹ch, 50 ®iÓm Danh Väng, ®é cèng hiÕn S­ M«n 25? (cÇn ph¶i gia nhËp M«n Ph¸i), 1 Cñ C¶i ®á, 3 Sinh ®å chøng th­, 3 Tó tµi chøng th­, 3 Cö nh©n chøng th­, 1 ThÕ Th©n phï, ngÉu nhiªn 1 Linh Th¹ch Phèi Ph­¬ng cÊp 6, ngÉu nhiªn 1 Linh Th¹ch cÊp 6, 1 Linh Th¹ch Phèi Ph­¬ng cÊp 7 ngÉu nhiªn, Ch×a khãa vµng? (Mçi ng­êi chØ cã duy nhÊt 1 c¬ héi)? (nh©n vËt tr­íc ®ã ®· cã vËt phÈm nµy sÏ kh«gn thÓ mua n÷a), 1 Linh Th¹ch cÊp 7 ngÉu nhiªn, 1 N«ng Tang Phæ, 1 Vâ L©m B¶o §iÓn, 1 B«n Tiªu hoÆc §»ng Vô ngÉu nhiªn , 1 Viªm Hoµng ThiÕt Hån.";
-	Talk(1,"#OnUse("..nItemIdx..")","Mçi '"..g_ItemName.." cã thÓ më ®­îc c¸c vËt phÈm: "..szItems..". Chóc b¹n may m¾n!");
+	Talk(1,"#OnUse("..nItemIdx..")","Mçi '"..g_ItemName.." cã thÓ më ®­îc c¸c vËt phÈm: "..szItems..". Good luck!");
 end;
 
 function open(nItemIdx)
@@ -64,12 +64,12 @@ function open(nItemIdx)
 				end;
 			end;
 			add_lingshi(7,1,0.2,60,1);	--Ëæ»ú7¼¶ÁéÊ¯1¿Å,0.2%ÇÒÃ¿¿ª60¸ö°ü±Ø¸ø1¸ö
-			give_item(2,1,1056,1,"1 N«ng Tang phæ",0.5,80,1);	--Å©É£¼­Òª,0.5%ÇÒÃ¿¿ª80¸ö°ü±Ø¸øÒ»¸ö
-			give_item(2,1,3206,1,"1Vâ L©m b¶o ®iÓn",0.1,160,1);--ÎäÁÖ±¦µä1±¾,0.1%ÇÒÃ¿¿ª160¸ö°ü±Ø¸ø1¸ö
+			give_item(2,1,1056,1,"1 Farming Manual",0.5,80,1);	--Å©É£¼­Òª,0.5%ÇÒÃ¿¿ª80¸ö°ü±Ø¸øÒ»¸ö
+			give_item(2,1,3206,1,"1 Wulin Treasure Manual",0.1,160,1);--ÎäÁÖ±¦µä1±¾,0.1%ÇÒÃ¿¿ª160¸ö°ü±Ø¸ø1¸ö
 			--ÒÔÏÂÐèÒª·¢È«·þ¹«¸æºÍ¹öÆÁ¹«¸æ
 			add_horse(0.2,240);	--±¼Ïü»òÌÚÎíËæ»ú1Æ¥£¬0.2%ÇÒÃ¿¿ª240¸ö°ü±Ø¸ø1¸ö
 			give_item(2,1,1146,1,"1 Viªm Hoµng ThiÕt hån",0.01,2000,2)	--Ñ×»ÆÌú»ê1¸ö,0.01%ÇÒÃ¿¿ª2000¸ö°ü±Ø¸ø 1¸ö
-			WriteLog("["..g_ItemName.."]:"..GetName().."thø"..nCurCount.." më "..g_ItemName);
+			WriteLog("["..g_ItemName.."]:"..GetName().."the"..nCurCount.." to open"..g_ItemName);
 		end;
 	else
 		Talk(1,"","Kho¶ng trèng hoÆcsøc lùccña b¹n kh«ng ®ñ. Xin kiÓm tra l¹i hµnh trang tr­íc!"..g_ItemName.."!");
@@ -79,12 +79,12 @@ end;
 function show_msg(szItemName,bGlobalMsg)
 	Msg2Player("B¹n nhËn ®­îc "..szItemName);
 	if bGlobalMsg == 1 then
-		Msg2Global(get_name().."Më '"..g_ItemName.." nhËn ®­îc "..szItemName);
+		Msg2Global(get_name().."Open '"..g_ItemName.." nhËn ®­îc "..szItemName);
 	elseif bGlobalMsg == 2 then
-		Msg2Global(get_name().."Më '"..g_ItemName.." nhËn ®­îc "..szItemName);
-		AddGlobalNews(get_name().."Më '"..g_ItemName.." nhËn ®­îc "..szItemName);
+		Msg2Global(get_name().."Open '"..g_ItemName.." nhËn ®­îc "..szItemName);
+		AddGlobalNews(get_name().."Open '"..g_ItemName.." nhËn ®­îc "..szItemName);
 	end;
-	WriteLog("["..g_ItemName.."]:"..GetName().."NhËn ®­îc"..szItemName);	
+	WriteLog("["..g_ItemName.."]:"..GetName().."Received"..szItemName);	
 end;
 --¸øÕòÅÉ²ÐÆªµÄº¯Êý
 function give_zpcp(tbZPCP,nCount)
@@ -207,7 +207,7 @@ function add_horse(nP,nModCount)
 			AddItem(0,105,16,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,2)
 		else
-			szItemName = "1 §»ng Vô";
+			szItemName = "1 Deng Wu";
 			AddItem(0,105,20,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,2)
 		end;
@@ -219,7 +219,7 @@ function add_horse(nP,nModCount)
 			AddItem(0,105,16,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,2)
 		else
-			szItemName = "1 §»ng Vô";
+			szItemName = "1 Deng Wu";
 			AddItem(0,105,20,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,2)
 		end;	

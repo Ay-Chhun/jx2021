@@ -12,7 +12,7 @@ function OnOpenShopGroup1()
 	if IsTongTianHuanJingMissionSystemOpen() == 1 then
 		tinsert(strtab,"\n Tô B¶o Th­¬ng Nh©n Thiªn M«n Kim LÖnh /OnOpenShops_TianMenJinLing");
 	end
-	tinsert(strtab,"\n rót lui/nothing");
+	tinsert(strtab,"\n withdraw/nothing");
 	
 	Say(szTitle, getn(strtab), strtab)
 end
@@ -25,20 +25,20 @@ function OnOpenShops_GuLingShi()
 			"\n ®æi S­ M«n bé 4/#show_equip_shop(3)",
 			"\n ®æi S­ M«n bé 5/#show_equip_shop(6)",
 			"\n ®æi UÈn Linh cÊp 1 /OpenLevel1WenShiShops",
-			"\n rót lui/nothing",
+			"\n withdraw/nothing",
 	};
 	Say(szTitle, getn(strtab), strtab)
 end
 
 --Ò»¼¶ÎÆÊÎ¶Ò»»
 function OpenLevel1WenShiShops()
-	local szTitle = format("Vui lßng chän bé phËn VËn Linh")
+	local szTitle = format("Please choose the Yun Ling part")
 	local strtab = {
 			"\n ®æi UÈn Linh ®Çu qu¸n cÊp 1/#show_equip_shop(3004)",
 			"\n ®æi UÈn Linh y phôc cÊp 1/#show_equip_shop(3005)",
 			"\n ®æi UÈn Linh h¹ y cÊp 1/#show_equip_shop(3006)",
-			"\n Ph¶n håi/OnOpenShops_GuLingShi",
-			"\n rót lui/nothing",
+			"\n Return/OnOpenShops_GuLingShi",
+			"\n withdraw/nothing",
 	};
 	Say(szTitle, getn(strtab), strtab)
 end
@@ -50,33 +50,33 @@ function OnOpenShops_GuLingYu()
 			"\n ®æi trang bÞ Cæ Linh Ngäc H¹o NguyÖt/#show_equip_shop(10)",
 			"\n ®æi UÈn Linh cÊp 2/OpenLevel2WenShiShops",
 			"\n ®æi UÈn Linh cÊp 3/OpenLevel3WenShiShops",
-			"\n rót lui/nothing",
+			"\n withdraw/nothing",
 	};
 	Say(szTitle, getn(strtab), strtab)
 end
 
 --¶þ¼¶ÎÆÊÎ¶Ò»»
 function OpenLevel2WenShiShops()
-	local szTitle = format("Vui lßng chän bé phËn VËn Linh")
+	local szTitle = format("Please choose the Yun Ling part")
 	local strtab = {
 			"\n ®æi UÈn Linh ®Çu qu¸n cÊp 2/#show_equip_shop(3007)",
 			"\n ®æi UÈn Linh y phôc cÊp 2/#show_equip_shop(3008)",
 			"\n ®æi UÈn Linh h¹ y cÊp 2/#show_equip_shop(3009)",
-			"\n Ph¶n håi/OnOpenShops_GuLingYu",
-			"\n rót lui/nothing",
+			"\n Return/OnOpenShops_GuLingYu",
+			"\n withdraw/nothing",
 	};
 	Say(szTitle, getn(strtab), strtab)
 end
 
 --Èý¼¶ÎÆÊÎ¶Ò»»
 function OpenLevel3WenShiShops()
-	local szTitle = format("Vui lßng chän bé phËn VËn Linh")
+	local szTitle = format("Please choose the Yun Ling part")
 	local strtab = {
 			"\n ®æi UÈn Linh ®Çu qu¸n cÊp 3/#show_equip_shop(3010)",
 			"\n ®æi UÈn Linh y phôc cÊp 3/#show_equip_shop(3011)",
 			"\n§æi UÈn Linh Khè cÊp 3/#show_equip_shop(3012)",
-			"\n Ph¶n håi/OnOpenShops_GuLingYu",
-			"\n rót lui/nothing",
+			"\n Return/OnOpenShops_GuLingYu",
+			"\n withdraw/nothing",
 	};
 	Say(szTitle, getn(strtab), strtab)
 end
@@ -94,16 +94,16 @@ function OnOpenShops_TianMenJinLing()
 		tinsert(strtab, "\n§æi trang bÞ H¹o NguyÖn, DiÖu D­¬ng (tõ 12 th¸ng 10 ®Õn 11 th¸ng 11)/#show_equip_shop(3025)");
 	end 
 	
-	tinsert(strtab, "\n rót lui/nothing");
+	tinsert(strtab, "\n withdraw/nothing");
 	Say(szTitle, getn(strtab), strtab)
 end
 
 --Èý¼¶ÎÆÊÎ¶Ò»»
 function OpenLeihuJingPoShops()
-	local szTitle = format("Vui lßng chän bé phËn VËn Linh")
+	local szTitle = format("Please choose the Yun Ling part")
 	local strtab = {
 			"\n cöa hiÖu qu©n phôc L«i Hæ/#show_equip_shop(3038)",
-			"\n rót lui/nothing",
+			"\n withdraw/nothing",
 	};
 	Say(szTitle, getn(strtab), strtab)
 end

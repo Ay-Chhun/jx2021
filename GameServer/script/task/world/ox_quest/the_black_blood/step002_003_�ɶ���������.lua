@@ -20,6 +20,6 @@ function wq_ox_tbb_002_003()
 	ModifyExp(200)							-- ¾­Ñé½±Àø
 	
 	-- ÒÔÏÂÊÇÎÄ×ÖÏÔÊ¾²¿·Ö
-	TaskTip("§· giÕt 30 Thá x¸m, quay vÒ gÆp thî s¨n.")
+	TaskTip("Killed 30 Grey Rabbits, return to meet the hunter.")
 	Say(quest_title..quest_detail..quest_description_1, 0)
 end

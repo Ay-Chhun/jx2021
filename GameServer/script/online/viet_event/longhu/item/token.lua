@@ -14,7 +14,7 @@ function OnUse()
 		"Ta muèn nhËn vßng s¸ng danh hiÖu/getSfxEffect",
 --		"Ta muèn nhËn hiÖu øng vò khÝ/getWeaponSfxEffect",
 --		"Ta muèn nhËn phÇn th­ëng cho b»ng h÷u/getAward_hongbao",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	}
 	
 	Say("Vâ L©m ThËp NhÞ LÖnh lµ n¬i ph¸t th­ëng cho c¸c gi¶i ®Êu, quý ®ång ®¹o cã thÓ xem thªm th«ng tin chi tiÕt bªn d­íi.", getn(tSel), tSel);
@@ -53,7 +53,7 @@ function getSfxEffect()
 end
 
 function getWeaponSfxEffect()
-	BindWeaponEffect("L¹c Hµ",1)	
+	BindWeaponEffect("Lac Ha",1)	
 end
 
 function getAward_hongbao()

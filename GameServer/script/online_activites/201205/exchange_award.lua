@@ -33,8 +33,8 @@ Exp_Award_Final2 = 10000000;
 Item_QCJWJ = 25;
 Item_BDSG = 25;
 Coin_Consume = 25;
-Item_table1 = {2,1,30382,"B¸nh ó Tro"};
-Item_table2 = {2,1,30383,"B¸nh ó Tro §Ëu §á"};
+Item_table1 = {2,1,30382,"Ash Rice Dumpling"};
+Item_table2 = {2,1,30383,"Red Bean Ash Rice Dumpling"};
 Acitivity_log1 = "Ho¹t ®éng phô th¸ng 6";
 Acitivity_log2 = "§æi phÇn th­ëng";
 Zhenqi_value1 = 10;
@@ -42,7 +42,7 @@ Zhenqi_value2 = 30;
 --½±Àø±í
 Vet_201205_Award  = {
     {1, 1850, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 0},
-    {1, 1502, "§Êu hån", {2, 1, 1157, 1}, 7 * 24 * 3600},
+    {1, 1502, "Soul Duel", {2, 1, 1157, 1}, 7 * 24 * 3600},
     {1, 2929, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 7 * 24 * 3600},
     {1, 1010, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
     {1, 51, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},
@@ -50,7 +50,7 @@ Vet_201205_Award  = {
 };
 Vet_201205_Award_Final  = {
     {1, 18020, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 2}, 0},
-    {1, 15020, "§Êu hån", {2, 1, 1157, 1}, 7 * 24 * 3600},
+    {1, 15020, "Soul Duel", {2, 1, 1157, 1}, 7 * 24 * 3600},
     {1, 38410, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 7 * 24 * 3600},
     {1, 5218, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
     {1, 2000, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},

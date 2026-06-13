@@ -57,7 +57,7 @@ CS_CampPos2[10] = {838, 1600, 3238};   --ÂÌÉ«
 
 MapTab = {};
 MapTab[1]= {801, 300, "Th«ng Thiªn §¹i L«i"};
-MapTab[2]= {805, 300, "S¬n gian s¸ch kiÒu"};
+MapTab[2]= {805, 300, "Mountain Pass Plank Bridge"};
 MapTab[3]= {803, 300, "C­íc ®iÕm kh¸ch s¹n"};
 MapTab[4]= {810, 100, "Khª l­u béc bè"};
 MapTab[5]= {811, 100, "Thiªn ngo¹i phi tiªn"};
@@ -120,12 +120,12 @@ JOINROOMINDEX = 243; --Ñ¡ÔñµÄ³¡µØ±àºÅ
 --¶àÈËµØÍ¼ĞÅÏ¢
 --µØÍ¼ID£¬ËùÔÚ³ÇÊĞµØÍ¼ID£¬µØÍ¼Ãû³Æ£¬´«ËÍ×ø±ê£¬´«ËÍNpc×ø±ê
 MultiMapTab = {
-	[1]= {821, 300, "B¸ch nh©n l«i ®µi",1604,3244,1600,3238,"QuÇn hïng chiÕn","Thµnh §«"},--¶àÈËÍ¨Ìì´óÀŞ
-	[2]= {826, 300, "B¸ch nh©n l«i ®µi",1637,3166,1630,3174,"QuÇn hïng chiÕn","Thµnh §«"},--¶àÈËÉ½¼äË÷ÇÅ
-	[3]= {823, 300, "B¸ch nh©n l«i ®µi",1602,3192,1598,3186,"QuÇn hïng chiÕn","Thµnh §«"},--¶àÈË½Åµê¿ÍÕ»
-	[4]= {822, 100, "B¸ch nh©n l«i ®µi",1604,3244,1600,3238,"QuÇn hïng chiÕn","TuyÒn Ch©u"},--¶àÈËÀŞÕğ°Ë·½
-	[5]= {825, 100, "B¸ch nh©n l«i ®µi",1598,3237,1591,3229,"QuÇn hïng chiÕn","TuyÒn Ch©u"},--¶àÈËÌìÍâ·ÉÏÉ
-	[6]= {824, 100, "B¸ch nh©n l«i ®µi",1607,3227,1602,3222,"QuÇn hïng chiÕn","TuyÒn Ch©u"},--¶àÈËÏªÁ÷ÆÙ²¼
+	[1]= {821, 300, "Hundred Man Lei Stage",1604,3244,1600,3238,"QuÇn hïng chiÕn","Thµnh §«"},--¶àÈËÍ¨Ìì´óÀŞ
+	[2]= {826, 300, "Hundred Man Lei Stage",1637,3166,1630,3174,"QuÇn hïng chiÕn","Thµnh §«"},--¶àÈËÉ½¼äË÷ÇÅ
+	[3]= {823, 300, "Hundred Man Lei Stage",1602,3192,1598,3186,"QuÇn hïng chiÕn","Thµnh §«"},--¶àÈË½Åµê¿ÍÕ»
+	[4]= {822, 100, "Hundred Man Lei Stage",1604,3244,1600,3238,"QuÇn hïng chiÕn","TuyÒn Ch©u"},--¶àÈËÀŞÕğ°Ë·½
+	[5]= {825, 100, "Hundred Man Lei Stage",1598,3237,1591,3229,"QuÇn hïng chiÕn","TuyÒn Ch©u"},--¶àÈËÌìÍâ·ÉÏÉ
+	[6]= {824, 100, "Hundred Man Lei Stage",1607,3227,1602,3222,"QuÇn hïng chiÕn","TuyÒn Ch©u"},--¶àÈËÏªÁ÷ÆÙ²¼
 	}
 
 --³£Á¿ĞÅÏ¢
@@ -176,7 +176,7 @@ AWARD_DATE_TEAM							= 1154;		--¼ÇÂ¼Íæ¼ÒÉÏÒ»´Î»ñÈ¡ÍÅ¶ÓÀŞÌ¨³£¹æ½±ÀøµÄÈÕÆÚ
 --µØÍ¼ID£¬ËùÔÚ³ÇÊĞµØÍ¼ID£¬µØÍ¼Ãû³Æ£¬´«ËÍ×ø±ê£¬´«ËÍNpc×ø±ê
 SingleTeamMapTab = {
 	[1]= {829, 300, "Th«ng Thiªn §¹i L«i",1604,3244,1600,3238,"Tæ ®éi ®Êu víi Th«ng Thiªn §¹i L«i","Thµnh §«"},--¶àÈË×é¶ÓÍ¨Ìì´óÀŞ
-	[2]= {834, 300, "S¬n gian s¸ch kiÒu",1637,3166,1630,3174,"Tæ ®éi ®Êu víi S¬n Gian S¸ch KiÒu","Thµnh §«"},--¶àÈË×é¶ÓÉ½¼äË÷ÇÅ
+	[2]= {834, 300, "Mountain Pass Plank Bridge",1637,3166,1630,3174,"Tæ ®éi ®Êu víi S¬n Gian S¸ch KiÒu","Thµnh §«"},--¶àÈË×é¶ÓÉ½¼äË÷ÇÅ
 	[3]= {831, 300, "C­íc ®iÕm kh¸ch s¹n",1602,3192,1598,3186,"Tæ ®éi ®Êu víi C­íc ®iÕm kh¸ch s¹n","Thµnh §«"},--¶àÈË×é¶Ó½Åµê¿ÍÕ»
 	[4]= {830, 100, "L«i ChÊn B¸t Ph­¬ng",1604,3244,1600,3238,"Tæ ®éi ®Êu víi L«i ChÊn B¸t Ph­¬ng","TuyÒn Ch©u"},--¶àÈË×é¶ÓÀŞÕğ°Ë·½
 	[5]= {833, 100, "Thiªn ngo¹i phi tiªn",1598,3237,1591,3229,"Tæ ®éi ®Êu víi Thiªn Ngo¹i Phi Tiªn","TuyÒn Ch©u"},--¶àÈË×é¶ÓÌìÍâ·ÉÏÉ
@@ -556,13 +556,13 @@ function GetPlayerInfo(player_index)
 	if (route == 0) then
 		playerinfo = playerinfo.."V« m«n ph¸i";
 	elseif (route == 1) then
-		playerinfo = playerinfo.."ThiÕu L©m";
+		playerinfo = playerinfo.."Shaolin";
 	elseif (route == 2) then
-		playerinfo = playerinfo.."ThiÕu L©m tôc gia";
+		playerinfo = playerinfo.."Shaolin Lay Branch";
 	elseif (route == 3) then
-		playerinfo = playerinfo.."ThiÕu L©m thiÒn t«ng";
+		playerinfo = playerinfo.."Shaolin Chan Sect";
 	elseif (route == 4) then
-		playerinfo = playerinfo.."ThiÕu L©m vâ t«ng";
+		playerinfo = playerinfo.."Shaolin Martial Sect";
 	elseif (route == 5) then
 		playerinfo = playerinfo.."§­êng M«n";
 	elseif (route == 6) then
@@ -570,21 +570,21 @@ function GetPlayerInfo(player_index)
 	elseif (route == 7) then
 		playerinfo = playerinfo.."Nga My";
 	elseif (route == 8) then
-		playerinfo = playerinfo.."Nga My PhËt gia";
+		playerinfo = playerinfo.."Emei Buddhist School";
 	elseif (route == 9) then
-		playerinfo = playerinfo.."Nga My tôc gia";
+		playerinfo = playerinfo.."Emei Lay Branch";
 	elseif (route == 10) then
-		playerinfo = playerinfo.."C¸i Bang";
+		playerinfo = playerinfo.."Beggars' Sect";
 	elseif (route == 11) then
-		playerinfo = playerinfo.."C¸i Bang TÜnh y";
+		playerinfo = playerinfo.."Beggars' Guild Pure Robe";
 	elseif (route == 12) then
-		playerinfo = playerinfo.."C¸i Bang ¤ Y";
+		playerinfo = playerinfo.."Beggars' Guild Dirty Robe";
 	elseif (route == 13) then
-		playerinfo = playerinfo.."Vâ §ang";
+		playerinfo = playerinfo.."Wudang";
 	elseif (route == 14) then
-		playerinfo = playerinfo.."Vâ §ang ®¹o gia";
+		playerinfo = playerinfo.."Wudang Daoist Branch";
 	elseif (route == 15) then
-		playerinfo = playerinfo.."Vâ §ang tôc gia";
+		playerinfo = playerinfo.."Wudang Lay Branch";
 	elseif route == 16 then
 		playerinfo = playerinfo.."D­¬ng M«n";
 	elseif route == 17 then
@@ -592,11 +592,11 @@ function GetPlayerInfo(player_index)
 	elseif route == 18 then
 		playerinfo = playerinfo.."D­¬ng M«n Cung Kş";
 	elseif route == 19 then
-		playerinfo = playerinfo.."Ngò §éc"
+		playerinfo = playerinfo.."Five Poisons"
 	elseif route == 20  then
-		playerinfo = playerinfo.."HiÖp §éc"
+		playerinfo = playerinfo.."Chivalrous Venom"
 	elseif route == 21 then
-		playerinfo = playerinfo.."Tµ §éc"
+		playerinfo = playerinfo.."Wicked Venom"
 	end
 	PlayerIndex = OldPlayer;
 	return playerinfo
@@ -696,7 +696,7 @@ local nTotalAudicnceNum = 0;
 	SubWorld = SubWorldID2Idx(MultiMapTab[nMapIndex][1]);
 	
 	if SubWorld <= 0 then
-		WriteLog("[QuÇn hïng chiÕn]Tham gia xem thi ®Êu ®äc SubWorld b¸o lçi, lçi nMapIndex lµ"..nMapIndex..", SubWorld lµ"..SubWorld..".");
+		WriteLog("[QuÇn hïng chiÕn]Tham gia xem thi ®Êu ®äc SubWorld b¸o lçi, lçi nMapIndex lµ"..nMapIndex..", SubWorld is"..SubWorld..".");
 		SubWorld = OldSubworld;
 		return 0
 	end 
@@ -854,15 +854,15 @@ local nBonus = ""
 	nGold = (nMoney - nCuprum - nSilver*100)/10000;
 	
 	if nGold ~= 0 then
-		nBonus = "<color=yellow>"..nGold.."<color> vµng";
+		nBonus = "<color=yellow>"..nGold.."<color> gold";
 	end
 	
 	if nSilver ~= 0 then
-		nBonus = nBonus.."<color=yellow>"..nSilver.."<color> b¹c";
+		nBonus = nBonus.."<color=yellow>"..nSilver.."<color> silver";
 	end
 	
 	if nCuprum ~= 0 then
-		nBonus = nBonus.."<color=yellow>"..nCuprum.."<color> ®ång";
+		nBonus = nBonus.."<color=yellow>"..nCuprum.."<color> copper";
 	end
 	
 	return nBonus

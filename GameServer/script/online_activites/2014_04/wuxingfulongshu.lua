@@ -243,11 +243,11 @@ function activating_award_2()
 		PlayerIndex = GetTeamMember(i)
 		if GetCaptainName() ~= GetName() then
 			gf_Modify("Exp", cal_total_level() * 666)
-			gf_AddItemEx2({2, 95, 208, 1, 4}, "Tô NghÜa LÖnh", "event phô 2 th¸ng 4", "thuËt ngò hµnh phôc hæ ", 0, 1)
+			gf_AddItemEx2({2, 95, 208, 1, 4}, "Token of Righteousness", "Side Event 2 April", "thuËt ngò hµnh phôc hæ ", 0, 1)
 			WXLS_TASKGROUP:SetTask(WXLS_TASKGROUP.Times, WXLS_TASKGROUP:GetTask(WXLS_TASKGROUP.Times) + 1)
 		else
 			gf_Modify("Exp", cal_total_level() * 3333)
-			gf_AddItemEx2({2, 95, 208, 1, 4}, "Tô NghÜa LÖnh", "event phô 2 th¸ng 4", "thuËt ngò hµnh phôc hæ ", 0, 1)
+			gf_AddItemEx2({2, 95, 208, 1, 4}, "Token of Righteousness", "Side Event 2 April", "thuËt ngò hµnh phôc hæ ", 0, 1)
 			WXLS_TASKGROUP:SetTask(WXLS_TASKGROUP.TimesCap, WXLS_TASKGROUP:GetTask(WXLS_TASKGROUP.TimesCap) + 1)
 		end
 	end
@@ -348,14 +348,14 @@ function activating_award_3()
 		PlayerIndex = GetTeamMember(i)
 		if GetCaptainName() ~= GetName() then
 			gf_Modify("Exp", cal_total_level() * 1331)
-			gf_AddItemEx2({2, 95, 208, 1, 4}, "Tô NghÜa LÖnh", "event phô 2 th¸ng 4", "thuËt ngò hµnh phôc hæ ", 0, 1)
-			gf_AddItemEx2({2, 1, 30409, 1, 4}, "Th«ng Thiªn LÖnh", "event phô 2 th¸ng 4", "thuËt ngò hµnh phôc hæ ", 0, 1)
+			gf_AddItemEx2({2, 95, 208, 1, 4}, "Token of Righteousness", "Side Event 2 April", "thuËt ngò hµnh phôc hæ ", 0, 1)
+			gf_AddItemEx2({2, 1, 30409, 1, 4}, "Th«ng Thiªn LÖnh", "Side Event 2 April", "thuËt ngò hµnh phôc hæ ", 0, 1)
 			ahf_GetAFruits(10)
 			WXLS_TASKGROUP:SetTask(WXLS_TASKGROUP.Times, WXLS_TASKGROUP:GetTask(WXLS_TASKGROUP.Times) + 1)
 		else
 			gf_Modify("Exp", cal_total_level() * 9999)
-			gf_AddItemEx2({2, 95, 208, 1, 4}, "Tô NghÜa LÖnh", "event phô 2 th¸ng 4", "thuËt ngò hµnh phôc hæ ", 0, 1)
-			gf_AddItemEx2({2, 1, 30409, 1, 4}, "Th«ng Thiªn LÖnh", "event phô 2 th¸ng 4", "thuËt ngò hµnh phôc hæ ", 0, 1)
+			gf_AddItemEx2({2, 95, 208, 1, 4}, "Token of Righteousness", "Side Event 2 April", "thuËt ngò hµnh phôc hæ ", 0, 1)
+			gf_AddItemEx2({2, 1, 30409, 1, 4}, "Th«ng Thiªn LÖnh", "Side Event 2 April", "thuËt ngò hµnh phôc hæ ", 0, 1)
 			ahf_GetAFruits(10)
 			WXLS_TASKGROUP:SetTask(WXLS_TASKGROUP.TimesCap, WXLS_TASKGROUP:GetTask(WXLS_TASKGROUP.TimesCap) + 1)
 		end
@@ -369,11 +369,11 @@ function get_final_award()
 		return
 	end
 	if WXLS_TASKGROUP:GetTask(WXLS_TASKGROUP.Times) < 5 then
-		Talk(1,"",format("chØ cã %s kÝch ho¹t phÇn th­ëng  %d lÇn míi nhËn ®­îc phÇn th­ëng nµy ", "®éi viªn ", 5))
+		Talk(1,"",format("chØ cã %s kÝch ho¹t phÇn th­ëng  %d lÇn míi nhËn ®­îc phÇn th­ëng nµy ", "Team member", 5))
 		return
 	end
 	if WXLS_TASKGROUP:GetTask(WXLS_TASKGROUP.TimesCap) < 5 then
-		Talk(1,"",format("chØ cã %s kÝch ho¹t phÇn th­ëng  %d lÇn míi nhËn ®­îc phÇn th­ëng nµy ", "§éi tr­ëng", 5))
+		Talk(1,"",format("chØ cã %s kÝch ho¹t phÇn th­ëng  %d lÇn míi nhËn ®­îc phÇn th­ëng nµy ", "Team Leader", 5))
 		return
 	end
 	if gf_Judge_Room_Weight(2, 10, " ") ~= 1 then
@@ -386,8 +386,8 @@ function get_final_award()
 	if DelItem(2, 1, 30603, 1357) ~= 1 then
 		return
 	end
-	gf_AddItemEx2({2, 1, 30499, 10}, "Hu©n ch­¬ng anh hïng", "event phô 2 th¸ng 4", "nhËn th­ëng mËt ®iÓn ngò hµnh phôc lßng ", 0, 1)
-	gf_AddItemEx2({2, 1, 30133, 1}, "Ch×a khãa vµng", "event phô 2 th¸ng 4", "nhËn th­ëng mËt ®iÓn ngò hµnh phôc lßng ", 0, 1)
+	gf_AddItemEx2({2, 1, 30499, 10}, "Hero's Medal", "Side Event 2 April", "nhËn th­ëng mËt ®iÓn ngò hµnh phôc lßng ", 0, 1)
+	gf_AddItemEx2({2, 1, 30133, 1}, "Ch×a khãa vµng", "Side Event 2 April", "nhËn th­ëng mËt ®iÓn ngò hµnh phôc lßng ", 0, 1)
 	WXLS_TASKGROUP:SetTask(WXLS_TASKGROUP.Final, 1)
 end
 

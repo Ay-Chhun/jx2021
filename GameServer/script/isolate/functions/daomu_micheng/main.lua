@@ -12,16 +12,16 @@ t_isolate_base_cfg = {
   nTaskGroupVersion	= 15,
 }
 
-DBMC_NPC_NAME = "<color=green>Binh Bé ThÞ Lang<color>:"
+DBMC_NPC_NAME = "<color=green>Bing Bu Shi Lang<color>:"
 DBMC_DAILY_TASK_LIMIT = 20
 DBMC_USE_ITEM_LIMIT = 600
 
 g_Dbmc_tTask = {
-	{"ThÊt L¹c Nhai", "NhËt ®µn hé ph¸p", 20, 6300},
-	{"ThÊt L¹c Nhai", "NguyÖt §µn Hé Ph¸p", 20, 6300},
-	{"ThÊt L¹c Nhai", "Tinh §µn Hé Ph¸p", 20, 6300},
-	{"ThÊt L¹c Nhai", "Nhai Th­îng S¬n TÆc", 20, 6300},
-	{"Cæ D­¬ng ®éng_1", "¢m NhËt Sø ", 30, 511},
+	{"That Lac Nhai", "NhËt ®µn hé ph¸p", 20, 6300},
+	{"That Lac Nhai", "NguyÖt §µn Hé Ph¸p", 20, 6300},
+	{"That Lac Nhai", "Tinh §µn Hé Ph¸p", 20, 6300},
+	{"That Lac Nhai", "Nhai Th­îng S¬n TÆc", 20, 6300},
+	{"Cæ D­¬ng ®éng_1", "Am Nhat Su", 30, 511},
 	{"Cæ D­¬ng ®éng_2", "XÝch LuyÖn Háa Hå", 20, 512},
 	--{"´ó²ÝÔ­¶þ", "Òì×å¼ýÊÖ", 20, 602},
 	{"H¾c Phong ®éng", "M·ng KhÊu", 20, 215},
@@ -30,8 +30,8 @@ g_Dbmc_tTask = {
 }
 
 g_Dbmc_tAward = {
-	{"item", 10, "Da §Þa Long", {2, 1, 30673, 100}},
-	{"item", 25, "Viªm Linh Ti", {2, 1, 30671, 100}},
+	{"item", 10, "Da Di Long", {2, 1, 30673, 100}},
+	{"item", 25, "Yan Ling Si", {2, 1, 30671, 100}},
 	{"item", 50, "Da Ma Lang", {2, 1, 30672, 100}},
 	{"item", 75, "HuyÒn Viªm ThiÕt", {2, 1, 30670, 100}},
 	{"item", 100, "Tiªn ¢m Th¹ch", {2, 1, 30674, 100}},
@@ -172,16 +172,16 @@ end
 
 function handle_on_item_talk(nItemIndex)
 	local tPos = {
-		{"ThÊt L¹c Nhai (167,217)", {6300,1342,3481}},
-		{"ThÊt L¹c Nhai (165,190)", {6300,1320,3043}},
-		{"ThÊt L¹c Nhai(184,205)", {6300,1473,3294}},
-		{"Quúnh KÕt(221,203)", {6100,1768,3252}},
-		{"H­ng Kh¸nh(176,195)", {6200,1412,3124}},
+		{"That Lac Nhai (167,217)", {6300,1342,3481}},
+		{"That Lac Nhai (165,190)", {6300,1320,3043}},
+		{"That Lac Nhai(184,205)", {6300,1473,3294}},
+		{"Quynh Ket(221,203)", {6100,1768,3252}},
+		{"Hung Khanh(176,195)", {6200,1412,3124}},
 		{"Thiªn Long Tù(177,165)", {6000,1417,2649}},
 		{"T©y Thµnh §« (182,178)", {301,1458,2854}},
 		{"Nam Thµnh §«(188,184)", {304,1508,2956}},
-		{"§«ng BiÖn Kinh (211,189)", {205,1692,3029}},
-		{"T©y BiÖn Kinh (182,183)", {203,1462,2942}},
+		{"East Bianjing (211,189)", {205,1692,3029}},
+		{"West Bianjing (182,183)", {203,1462,2942}},
 		{"T©y TuyÒn Ch©u (184,190)", {105,1472,3056}},
 		{"B¾c TuyÒn Ch©u(185,186)", {108,1486,2981}},
 	}
@@ -244,7 +244,7 @@ function event_treasure_deal(nType)
 		end
 		tTaskGroup:SetTaskBit(tTaskGroup.Task7, 2, 1);
 		isolate_enable_player_event_watch("event_kill_npc", "kill_npc_daobaozei")
-		Talk(1,"","Nguy hiÓm!")
+		Talk(1,"","Danger!")
 	elseif nType == 2 then
 		Talk(1,"",DBMC_NPC_NAME.."Cã ng­êi ®· ®Õn tr­íc ®µo kho b¸u ®i mÊt råi!");
 	elseif nType == 3 then

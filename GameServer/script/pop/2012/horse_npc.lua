@@ -7,8 +7,8 @@ tHorse = { --×ßÔ¶µÄÕ½Âí
 	nstartDate = 20120301, --»î¶¯¿ªÊ¼Ê±¼ä
 	nEndDate = 20301230, --»î¶¯½áÊøÊ±¼ä
 	nCheckRoute = 0,  --ÊÇ·ñÒª¼ÓÈëÁ÷ÅÉ
-	strNpcMod = "ChiÕn M· Ch¹y Xa",  --NpcÄ£°å
-	strNpcName = "ChiÕn M· Ch¹y Xa", --npcÃû×Ö
+	strNpcMod = "Swift War Horse",  --NpcÄ£°å
+	strNpcName = "Swift War Horse", --npcÃû×Ö
 	nCampType = 1,   --¶Ô»°npc»¹ÊÇÕ½¶·npc
 	nNeedRoom = 0,   --Èç¹ûÊÇ¶Ô»°npc£¬ĞèÒªÅĞ¶Ï±³°ü¿Õ¼ä£¨¸ù¾İ½±Àø¶ø¶¨£©
 	nNeedWeight = 0, --Èç¹ûÊÇ¶Ô»°npc£¬ĞèÒªÅĞ¶Ï±³°ü¸ºÖØ£¨¸ù¾İ½±Àø¶ø¶¨£©
@@ -84,7 +84,7 @@ function tHorse:giveTalkAward()
 	if GetFollower() ~= 0 then
 		return 0;
 	end
-	print(SummonNpc("ChiÕn M· Ch¹y Xa","ChiÕn M· Ch¹y Xa"));
+	print(SummonNpc("Swift War Horse","Swift War Horse"));
 end
 
 function get_horse()
@@ -105,15 +105,15 @@ function tHorse:onTalk()
 	if tGtTask:check_cur_task(945) ~= 1 then return 0;	end;
 	if GetFollower() ~= 0 then 
 		local nIdx =  GetFollower();
-		if GetNpcName(nIdx) == "ChiÕn M· Ch¹y Xa" then
+		if GetNpcName(nIdx) == "Swift War Horse" then
 			Talk(1,"","Ch¼ng ph¶i ng­¬i ®· cã mét con chiÕn m· råi sao? H·y dÉn chiÕn m· vÒ chuång råi quay l¹i t×m ta!")
 			return 0;
 		else       
 			KillFollower();
 		end
 	end
-	Say("ChiÕn M· Ch¹y Xa: ",2,
+	Say("Swift War Horse:",2,
 		{"CÇm d©y c­¬ng cña chiÕn m·/get_horse",
-		"KÕt thóc ®èi tho¹i/nothing",}
+		"End dialogue/nothing",}
 		)	
 end

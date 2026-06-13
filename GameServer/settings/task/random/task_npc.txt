@@ -1,44 +1,44 @@
 NpcID	NpcName	NpcMap	MapID
 NpcID	Tªn Npc	V¨n tù Map hiÖn t¹i	ID b¶n ®å hiÖn t¹i 
-3001	Thñ khè	BiÖn Kinh	200
-3002	Xa phu	BiÖn Kinh	200
-3003	TriÖu Phæ	BiÖn Kinh	200
-3004	Bé ®Çu	BiÖn Kinh	200
-3005	VÖ binh thµnh m«n	BiÖn Kinh	200
-3006	Tµo B©n	BiÖn Kinh	200
-3007	Binh Bé ThŞ Lang	BiÖn Kinh	200
-3008	Binh Bé Thñ vÖ	BiÖn Kinh	200
-3009	ThŞ VÖ T­íng phñ	BiÖn Kinh	200
-3010	CÊm qu©n	BiÖn Kinh	200
-3011	LÔ quan	BiÖn Kinh	200
-3012	D· TÈu	BiÖn Kinh	200
-3013	Chñ TiÖm vò khİ	BiÖn Kinh	200
-3014	Chñ D­îc ®iÕm	BiÖn Kinh	200
-3015	Chñ T¹p hãa	BiÖn Kinh	200
-3016	Chñ TiÖm Nam phôc	BiÖn Kinh	200
-3017	Chñ TiÖm N÷ phôc	BiÖn Kinh	200
-3018	Chñ töu lÇu	BiÖn Kinh	200
-3019	TiÓu nhŞ	BiÖn Kinh	200
-3020	Nh©n sÜ giang hå	BiÖn Kinh	200
-3021	Tµo §¹i Lùc	BiÖn Kinh	200
-3022	Vâ s­	BiÖn Kinh	200
-3023	Chñ tiÒn trang	BiÖn Kinh	200
-3024	Chñ Kim hoµn	BiÖn Kinh	200
-3025	Sø gi¶ m«n ph¸i	BiÖn Kinh	200
-3026	Hµng xãm Hµn Trİ Nh­îng	BiÖn Kinh	200
-3027	Tiªu s­	BiÖn Kinh	200
-3028	Vò N­¬ng	BiÖn Kinh	200
-3029	ThÇy bãi	BiÖn Kinh	200
-3030	Quan viªn tho¸i nhiÖm	BiÖn Kinh	200
-3031	Chñ th­¬ng héi	BiÖn Kinh	200
-3032	Hµnh C­íc Th­¬ng Nh©n	BiÖn Kinh	200
-3033	B¸ch HiÓu Sinh	BiÖn Kinh	200
-3034	Ngù Trï	BiÖn Kinh	200
-3035	Chñ Kim hoµn	BiÖn Kinh	200
-3036	V©n Du §¹o Nh©n	BiÖn Kinh	200
+3001	Thñ khè	Bianjing	200
+3002	Xa phu	Bianjing	200
+3003	TriÖu Phæ	Bianjing	200
+3004	Bé ®Çu	Bianjing	200
+3005	VÖ binh thµnh m«n	Bianjing	200
+3006	Tµo B©n	Bianjing	200
+3007	Binh Bé ThŞ Lang	Bianjing	200
+3008	Binh Bé Thñ vÖ	Bianjing	200
+3009	ThŞ VÖ T­íng phñ	Bianjing	200
+3010	CÊm qu©n	Bianjing	200
+3011	LÔ quan	Bianjing	200
+3012	D· TÈu	Bianjing	200
+3013	Chñ TiÖm vò khİ	Bianjing	200
+3014	Chñ D­îc ®iÕm	Bianjing	200
+3015	Chñ T¹p hãa	Bianjing	200
+3016	Chñ TiÖm Nam phôc	Bianjing	200
+3017	Chñ TiÖm N÷ phôc	Bianjing	200
+3018	Chñ töu lÇu	Bianjing	200
+3019	TiÓu nhŞ	Bianjing	200
+3020	Nh©n sÜ giang hå	Bianjing	200
+3021	Tµo §¹i Lùc	Bianjing	200
+3022	Vâ s­	Bianjing	200
+3023	Chñ tiÒn trang	Bianjing	200
+3024	Chñ Kim hoµn	Bianjing	200
+3025	Sø gi¶ m«n ph¸i	Bianjing	200
+3026	Hµng xãm Hµn Trİ Nh­îng	Bianjing	200
+3027	Tiªu s­	Bianjing	200
+3028	Vò N­¬ng	Bianjing	200
+3029	ThÇy bãi	Bianjing	200
+3030	Quan viªn tho¸i nhiÖm	Bianjing	200
+3031	Chñ th­¬ng héi	Bianjing	200
+3032	Hµnh C­íc Th­¬ng Nh©n	Bianjing	200
+3033	B¸ch HiÓu Sinh	Bianjing	200
+3034	Ngù Trï	Bianjing	200
+3035	Chñ Kim hoµn	Bianjing	200
+3036	V©n Du §¹o Nh©n	Bianjing	200
 3037	Xa Th¸i Qu©n	Thiªn Ba D­¬ng phñ	219
-3038	B¸n ngùa	BiÖn Kinh	200
-3039	KhÊu ChuÈn	BiÖn Kinh	200
+3038	B¸n ngùa	Bianjing	200
+3039	KhÊu ChuÈn	Bianjing	200
 3040	Thñ khè	Thµnh §«	300
 3041	Xa phu	Thµnh §«	300
 3042	D· TÈu	Thµnh §«	300
@@ -96,16 +96,16 @@ NpcID	Tªn Npc	V¨n tù Map hiÖn t¹i	ID b¶n ®å hiÖn t¹i
 3094	Hµnh C­íc Th­¬ng Nh©n	T­¬ng D­¬ng	350
 3095	M¹c Tam	T­¬ng D­¬ng	350
 3096	Tiªu s­	T­¬ng D­¬ng	350
-3097	HuyÒn Tõ	ThiÕu L©m	204
-3098	HuyÒn Minh	ThiÕu L©m	204
-3099	Háa C«ng §Çu	ThiÕu L©m	204
+3097	HuyÒn Tõ	Shaolin	204
+3098	HuyÒn Minh	Shaolin	204
+3099	Háa C«ng §Çu	Shaolin	204
 3100	Tö H¹c ch©n nh©n	Ph¸i Vâ §ang	312
 3101	Tr­¬ng Ngä D­¬ng	Ph¸i Vâ §ang	312
 3102	Ch©n Nh­ s­ th¸i	Nga My	303
-3103	Long T¹i Thiªn	C¸i Bang	209
-3104	V­u Tri VŞ	C¸i Bang	209
-3105	Hång ThÊt	C¸i Bang	209
+3103	Long T¹i Thiªn	Beggars' Sect	209
+3104	V­u Tri VŞ	Beggars' Sect	209
+3105	Hång ThÊt	Beggars' Sect	209
 3106	§­êng M«n L·o L·o	§­êng M«n	305
 3107	§­êng V©n	§­êng M«n	305
 3108	§­êng UyÓn Nhi	§­êng M«n	305
-3109	B¹ch Doanh Doanh	Ngò §éc Gi¸o	407
+3109	B¹ch Doanh Doanh	Five Poisons Sect	407

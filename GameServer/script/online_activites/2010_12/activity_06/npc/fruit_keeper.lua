@@ -21,7 +21,7 @@ FK_MENU1 =
 
 FK_MENU1_1 = 
 {
-	[0] = "Xin chän v­ên c©y"
+	[0] = "Please choose a garden"
 }
 for i=1, getn(FG_PLAYER_SPAWN_POINTS) do
 	tinsert(FK_MENU1_1, FG_PLAYER_SPAWN_POINTS[i][3].."/#FK_DoEnter("..i..")");
@@ -57,7 +57,7 @@ function FK_Check()
 		local playerIndex = GetTeamMember(i);
 		--WriteLog("FK_Check::playerIndex: "..playerIndex);
 		if 1 ~= FG_CheckPlayer(playerIndex) then
-			FK_Result("Xin lçi, "..FK_GetPlayerName(playerIndex).."Kh«ng tháa ®iÒu kiÖn, kh«ng thÓ vµo b¶n ®å thu thËp");
+			FK_Result("Sorry,"..FK_GetPlayerName(playerIndex).."Kh«ng tháa ®iÒu kiÖn, kh«ng thÓ vµo b¶n ®å thu thËp");
 			return 0;
 		end
 	end
@@ -78,7 +78,7 @@ function FK_DoEnter(index)
 		local mapID = FG_GetGatherMap(SubWorldIdx2ID(SubWorld));
 		--WriteLog("FK_DoEnter::FG_GetState("..mapID.."): "..FG_GetState(mapID));
 		if FG_STATE_INITING ~= FG_GetState(mapID) then
-			FK_Result("RÊt tiÕc, thêi gian b¸o danh ®· kÕt thóc");
+			FK_Result("Sorry, the registration time has ended");
 			return
 		end
 		if 1 == FG_IsZoneFull(mapID, index) then

@@ -44,14 +44,14 @@ function aoyun_canjia_huoju()
 	end
 	Say("<color=green>§¹i sø ho¹t ®éng r­íc Th¸nh Háa<color>: Ng­¬i muèn tham gia ho¹t ®éng, chØ cÇn trªn cÊp 70 lµ cã thÓ b¸o danh, <color=red>30 th¸ng 6<color> sÏ b¾t ®Çu r­íc Th¸nh Háa. Xin chó ı, bÊt kú ai nÕu tham gia ho¹t ®éng ®Òu cã thÓ nhËn ®­îc phÇn th­ëng.",
 		2,
-		"§­îc/aoyun_ask_canjia",
+		"Yes/aoyun_ask_canjia",
 		"Kh«ng cÇn/nothing")
 end
 
 function aoyun_ask_canjia()
 	Say("<color=green>§¹i sø ho¹t ®éng r­íc Th¸nh Háa<color>: Xin chó ı, mçi tµi kho¶n chØ cã thÓ cã 1 nh©n vËt ®­îc chän lµm ng­êi r­íc ®uèc, nÕu b¸o danh cïng lóc nhiÒu nh©n vËt th× sÏ chän ng­êi cã ®iÓm tİch lòy cao nhÊt.",
 		2,
-		"§­îc/aoyun_confirm_canjia",
+		"Yes/aoyun_confirm_canjia",
 		"Kh«ng cÇn/nothing")
 end
 

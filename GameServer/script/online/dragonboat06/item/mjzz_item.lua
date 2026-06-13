@@ -6,7 +6,7 @@ function OnUse()
 	if DelItem(2,1,389,1) == 1 then
 		RestoreAll();
 		Msg2Player("B¹n ®· ¨n 1 c¸i b¸nh Ýt møt, håi phôc tÊt c¶ sinh lùc, néi lùc, thÓ lùc.");
-		Msg2_LeiTai("B¸nh nh©n møt");
+		Msg2_LeiTai("Sweet bean zongzi");
 	end;
 end;
 

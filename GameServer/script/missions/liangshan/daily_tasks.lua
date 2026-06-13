@@ -39,7 +39,7 @@ __t_free_award_stage ={
 		t_other_group ={
 			{ {"Ma §ao Th¹ch cÊp 1", {2,1,30428,1, 4}, nil,nil,{1, 100} }, 1500},
 			{ {"ThiÕt Tinh cÊp 1", {2,1,30533,1, 4}, nil,nil,{1, 100} }, 3000},
-			{ {"Båi Nguyªn §¬n", {2,1,30351,1, 4}, nil,nil,{1, 100} }, 4500},
+			{ {"Replenishing Origin Pill", {2,1,30351,1, 4}, nil,nil,{1, 100} }, 4500},
 			{ {"Thiªn Lý TruyÒn ¢m Phï ChØ", {2,1,3508,1, 4}, nil,nil,{1, 100} }, 500},
 			{ {"ThiÕt Tinh cÊp 2", {2,1,30534,1, 4}, nil,nil,{1, 100} }, 500},
 		},
@@ -53,7 +53,7 @@ __t_free_award_stage ={
 			{ {"ThiÕt Tinh cÊp 2", {2,1,30534,1, 4}, nil,nil,{1, 100} }, 2500},
 			{ {"Thiªn th¹ch", {2,2,8,1, 4}, nil,nil,{1, 100} }, 700},
 			{ {"b¸nh Ýt B¸c B¶o", {2,1,1125,1, 4}, nil,nil,{1, 100} }, 300},
-			{ {"C©y B¸t Nh· nhá", {2,0,504,1, 4}, nil,nil,{1, 100} }, 600},
+			{ {"Small Prajna Tree", {2,0,504,1, 4}, nil,nil,{1, 100} }, 600},
 		},
 	},
 	[3] = {
@@ -63,8 +63,8 @@ __t_free_award_stage ={
 			{{MA_GivePopur, {4000}}, 5000},
 			{ {"Ma §ao Th¹ch cÊp 3", {2,1,30430,1, 4}, nil,nil,{1, 100} }, 500},
 			{ {"ThiÕt Tinh cÊp 3", {2,1,30535,1, 4}, nil,nil,{1, 100} }, 1500},
-			{ {"Tø Linh Quy Nguyªn §¬n", {2,1,30352,1, 4}, nil,nil,{1, 100} }, 1000},
-			{ {"C©y B¸t Nh·", {2,0,398,1, 4}, nil,nil,{1, 100} }, 500},
+			{ {"Four Spirits Return to Origin Pill", {2,1,30352,1, 4}, nil,nil,{1, 100} }, 1000},
+			{ {"Prajna Tree", {2,0,398,1, 4}, nil,nil,{1, 100} }, 500},
 			{ {"B¨ng Tinh Th¹ch", {2,1,30554,1, 4}, nil,nil,{1, 100} }, 1000},
 		},
 	},
@@ -92,17 +92,17 @@ t_ls_daily_task_award = {
         	[1] ={
         			{MA_GiveExp, {3000000}},
         			--{MA_GiveZhenQi, {100}},
-        			{"Hu©n ch­¬ng anh hïng", {2,1,30499,1}, nil,nil, {1, 100}}
+        			{"Hero's Medal", {2,1,30499,1}, nil,nil, {1, 100}}
         		},
         	[2] ={
         			{MA_GiveExp, {4000000}},
         			--{MA_GiveZhenQi, {200}},
-        			{"Hu©n ch­¬ng anh hïng", {2,1,30499,1}, nil,nil, {1, 100}}
+        			{"Hero's Medal", {2,1,30499,1}, nil,nil, {1, 100}}
         		},
         	[3] ={
         			{MA_GiveExp, {6000000}},
         			--{MA_GiveZhenQi, {300}},
-        			{"Hu©n ch­¬ng anh hïng", {2,1,30499,1}, nil,nil, {1, 100}}
+        			{"Hero's Medal", {2,1,30499,1}, nil,nil, {1, 100}}
         		},
         },
 	},
@@ -354,7 +354,7 @@ function QueryTask(nIdx)
 		szMsg = format(tTaskInfo.szInfo2, tMission:getBossName(GetTask(tTaskInfo.tBossInfo.nTaskID)));		
 	end
 
-	Talk(1, "", format(LSSysTalk[14][1].."<color=green>%s<color>”. \n\n%s", tTaskInfo.szTitle, szMsg));
+	Talk(1, "", format(LSSysTalk[14][1].."<color=green>%s<color>. \n\n%s", tTaskInfo.szTitle, szMsg));
 end
 
 function RandomSelectedBoss(tBossInfo)

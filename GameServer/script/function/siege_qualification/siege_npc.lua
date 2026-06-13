@@ -9,7 +9,7 @@ SIEGE_NPC_NAME = "<color=green>Chñ L«i §µi<color>:";
 function siege_qualification()
 	local tSay = {
 		"Giíi thiÖu T­ C¸ch C«ng Thµnh ChiÕn/siege_info",
-		"\n rót lui/nothing",
+		"\n withdraw/nothing",
 	}
 	local wDay = tonumber(date("%w"));
 	if wDay == 5 then		
@@ -24,8 +24,8 @@ function siege_register()
 	tbSay.msg = SIEGE_NPC_NAME..tbBody;
 	tbSay.sel = {
 		{"§ång ý tham gia", "siege_join_match"},
-		{"\n Ph¶n håi", "siege_qualification"},
-		{"Ra khái","nothing"},
+		{"\n Feedback", "siege_qualification"},
+		{"Exit","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -35,8 +35,8 @@ function siege_info()
 	local tbSay = {};
 	tbSay.msg = SIEGE_NPC_NAME..tbBody;
 	tbSay.sel = {
-		{"\n Ph¶n håi", "siege_qualification"},
-		{"Ra khái","nothing"},
+		{"\n Feedback", "siege_qualification"},
+		{"Exit","nothing"},
 	};
 	temp_Talk(tbSay);
 end

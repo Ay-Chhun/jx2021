@@ -291,7 +291,7 @@ function main(ExchangeComing)
 		end
 		if bCreateFailed == 1 then
 			Msg2Player("B¹n kh«ng thÓ tham gia nÐm tuyÕt b×nh th­êng trong lÇn ®¨ng nhËp nµy. H·y thö ®¨ng nhËp l¹i!")
-			WriteLog("[Ho¹t ®éng mïa xu©n -KÕt nèi thÊt b¹i]:"..GetName().."§¨ng nhËp/mÊt kÕt nèi server rêi khái bé kÕt nèi map (3101-3105).")
+			WriteLog("[Ho¹t ®éng mïa xu©n -KÕt nèi thÊt b¹i]:"..GetName().."Login/connection loss with the server disconnects from the connection map (3101-3105).")
 		end
 	else
 		for i=3100,3105 do
@@ -399,7 +399,7 @@ function main(ExchangeComing)
 		end;
 		if bCreateFailed == 1 then
 			Msg2Player("LÇn ®¨ng nhËp nµy khiÕn b¹n kh«ng thÓ tiÕn hµnh trång c©y b×nh th­êng! Vui lßng ®¨ng nhËp l¹i!")
-			WriteLog("[Ho¹t ®éng Th¸i H­ Qu¶ Thô (KÕt nèi thÊt b¹i)]:"..GetName().."§¨ng nhËp/mÊt kÕt nèi server rêi khái bé kÕt nèi map (3113-3118).")
+			WriteLog("[Ho¹t ®éng Th¸i H­ Qu¶ Thô (KÕt nèi thÊt b¹i)]:"..GetName().."Login/connection loss with the server disconnects from the connection map (3113-3118).")
 		end
 	else
 		for i = 3113,3118 do
@@ -557,8 +557,8 @@ function main(ExchangeComing)
 	flower_time();
 	--================================================================
 	--ÒÆ³ýÒÑ¾­·ÏÖ¹µÄ¼¼ÄÜ: "»ìãçÈ­·¨"
-	if HaveLearnedSkill("Hçn §én quyÒn ph¸p") == 1 then
-		RemoveSkill("Hçn §én quyÒn ph¸p")
+	if HaveLearnedSkill("Chaos Fist Technique") == 1 then
+		RemoveSkill("Chaos Fist Technique")
 	end
 	--================================================================
 	--========ÁéÊ¯ÈÎÎñ==============
@@ -881,8 +881,8 @@ overdue_goods_list = {
 	--×°±¸´óÀà-¸±Àà------------------------Ð¡ÀàÁÐ±í---------------------ÓÐÐ§ÆÚ£¨Ìì£©--É¾³ýÎïÆ·ÌáÊ¾
 	{0,		109,173,174,175,176,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,1,"Y phôc h«n lÔ b¹n thuª ®· hÕt h¹n!"},	--½á»éÒÂ·þ
 	{0,		108,131,132,133,134,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,1,"Trang søc h«n lÔ b¹n thuª ®· hÕt h¹n!"},	--½á»éÍ·ÊÎ
-	{0,		109,177,178,179,180,1,"Chñ h«n lÔ b¹n thuª ®· hÕt h¹n!"},
-	{0,		105,32,1,"KiÖu hoa h«n lÔ b¹n thuª ®· hÕt h¹n!"},
+	{0,		109,177,178,179,180,1,"The wedding canopy you rented has expired!"},
+	{0,		105,32,1,"The bridal sedan you rented has expired!"},
 	-- PhÇn nµy kh«ng Merg khi cã event míi
 	--{0,		105,33,1,"Niªn thó cña b¹n ®· hÕt h¹n!"},
 }
@@ -922,9 +922,9 @@ function add_pouch_new_year_09_viet(tItem, szLog)
 	nRetCode = AddItem(G, D, P, nItemNum)
 	if nRetCode == 1 then
 		Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." c¸i "..szItemName)
-		WriteLogEx(szLog, "NhËn ®­îc", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName() )
+		WriteLogEx(szLog, "Received", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName() )
 	else
-		WriteLogEx(szLog, "NhËn ®­îc", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
+		WriteLogEx(szLog, "Received", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
 	end
 end
 
@@ -977,7 +977,7 @@ function ShowShinyNightMsg()
 	local system = GetGlbValue(GAMESVRGLB_SYSTEM)
 	local multiple = GetGlbValue(GAMESVRGLB_MULTIPLE)
 	if (system ~= 0) then
-		Msg2Player(format("»Ô»ÍÖ®Ò¹»î¶¯½øÐÐÖÐ£¬½±Àø·­±¶µÄÏµÍ³ÊÇ%s£¬±¶ÂÊÊÇ%1.1f",
+		Msg2Player(format("The treasure event is in progress. The reward multiplier system is %s, the multiplier is %1.1f",
 			map_sysnames[system],
 			multiple / 100))
 	end
@@ -1284,7 +1284,7 @@ function process_biwudahui_2()
 			if nCurPoint < 200 then	--Ö»¸ø200·ÖÒÔÏÂµÄÍæ¼ÒÔö¼Ó»ý·Ö
 				if nCurPoint + 100 > 200 then
 					SetTask(666,200,TASK_ACCESS_CODE_BIWUDAHUI);
-					Msg2Player("§iÓm tû vâ ®· t¨ng"..(200 - nCurPoint).." Phót ");
+					Msg2Player("§iÓm tû vâ ®· t¨ng"..(200 - nCurPoint).." minutes");
 				else
 					SetTask(666,nCurPoint+100,TASK_ACCESS_CODE_BIWUDAHUI);
 					Msg2Player("§iÓm tû vâ ®· t¨ng 100 ®iÓm");
@@ -1454,7 +1454,7 @@ function GLB_BW_Syn_CB(strName,nkey1,nkey2)
 		end
 		PayXYB(nValue);
 		SetTask(TASKID_XOYO_CONSUME,0);
-		WriteLog(format("[Xu Tiªu Dao] [Role:%s Acc:%s] [Tèn Xu Tiªu Dao  %d]", GetName(), GetAccount(), nValue));
+		WriteLog(format("[Xiao Yao Coin] [Role:%s Acc:%s] [Spent Xiao Yao Coin  %d]", GetName(), GetAccount(), nValue));
 	elseif nkey1 == 0 and nkey2 == 3 then --åÐÒ£Óñ
 		local nValue = GetRelayShareDataByKey(strName,nkey1,nkey2,"XYY");
 		if nValue == nil or nValue < 0 then
@@ -1627,7 +1627,7 @@ end;
 function about_suohun()
 	Say("<color=red>Chó ý:<color>:\nVËt phÈm khãa hån sÏ xuÊt hiÖn th«ng tin <color=red>së h÷u: 'Tªn ng­êi ch¬i'<color>, vËt phÈm sau khi khãa hån, nh©n vËt ®ã sÏ cã quyÒn së h÷u vËt phÈm nµy, mét khi ph¸t hiÖn vËt phÈm bÞ r¬i mÊt, hÖ thèng phôc vô sÏ dùa vµo ®ã ®Ó ph©n ®Þnh.\nDo ®ã, khi ®ang giao dÞch, vËt phÈm cã th«ng tin <color=red>së h÷u: 'Tªn ng­êi ch¬i'<color>, nÕu kh«ng ph¶i cho m­în, ch¾c ch¾n kh«ng nªn giao dÞch.",
 		1,
-		"Ta ®· hiÓu/nothing");
+		"I understand/nothing");
 	SetTask(544,1);
 end
 

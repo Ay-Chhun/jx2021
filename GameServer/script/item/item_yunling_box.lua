@@ -26,7 +26,7 @@ function NpcTalkMain()
 	szTitle = format("Ta cã Tñ ¸o Thiªn BiÕn TiÕu dÔ dµng mua vµ l­u tr÷ ngo¹i trang.")
 	tinsert(tbSay, "NhËn Tñ ¸o Thiªn BiÕn TiÕu/_npc_get_box")
 	tinsert(tbSay, "T×m hiÓu vÒ Tñ ¸o/_about")
-	tinsert(tbSay, "Ra khái/no")
+	tinsert(tbSay, "Leave/no")
 
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -37,16 +37,16 @@ function _about(nIndex)
 	local tMsg = {
 		"Tñ ƒo Thiªn BiÕn TiÕu lµ n¬i tæng hîp <color=yellow>ngo¹i trang, thó c­ìi, trang søc<color> vµ qu¶n lı <color=yellow>®iÓm quyÕn rò<color>, ng­êi ch¬i cã thÓ më Tñ ƒo Thiªn BiÕn TiÕu ®Ó xem, mua, thu thËp vËt phÈm ngo¹i trang.",
 		format("<color=yellow>%s<color>:%s", "Ngo¹i trang", "Tiªu <color=yellow>§iÓm Th­ëng Tiªu Y Ph­¬ng<color> mua ngo¹i trang. Mua ngo¹i trang <color=yellow>vÜnh viÔn<color> sÏ tù ®éng l­u tr÷ hoÆc l­u tr÷ vµo tñ ¸o. Ngo¹i trang ®· l­u tr÷ cã thÓ lÊy ra kh«ng giíi h¹n sè lÇn. Khi lÊy ra cã thÓ th«ng qua Tñ ƒo Thiªn BiÕn TiÕu ®Ó tiÕn hµnh uÈn linh (UÈn linh ®· l­u tr÷)."),
-		format("<color=yellow>%s<color>:%s", "Thó c­ìi", "Tiªu <color=yellow>xu vËt phÈm<color> ®Ó mua hoÆc ®em thó c­ìi <color=yellow>vÜnh viÔn<color> l­u tr÷ vµo tñ ¸o. Thó c­ìi ®· l­u tr÷ cã thÓ lÊy ra kh«ng giíi h¹n sè lÇn."),
+		format("<color=yellow>%s<color>:%s", "Mounts", "Tiªu <color=yellow>xu vËt phÈm<color> ®Ó mua hoÆc ®em thó c­ìi <color=yellow>vÜnh viÔn<color> l­u tr÷ vµo tñ ¸o. Thó c­ìi ®· l­u tr÷ cã thÓ lÊy ra kh«ng giíi h¹n sè lÇn."),
 		format("<color=yellow>%s<color>:%s", "Trang søc ®eo h«ng", "Tiªu <color=yellow>§iÓm Phong Hoa<color> ®Ó mua. Mua trang søc vÜnh viÔn sÏ tù ®éng l­u tr÷ hoÆc ®em <color=yellow>trang søc vÜnh viÔn<color> l­u tr÷ vµo tñ ¸o. Trang søc ®· l­u tr÷ cã thÓ lÊy ra kh«ng giíi h¹n sè lÇn."),
 		format("%s", "<color=red>VËt phÈm lÊy ra tõ Tñ ƒo Thiªn BiÕn TiÕu ®Òu cã h¹n sö dông 30 ngµy, kh«ng thÓ giao dŞch<color>"),
 	}
 
 	tinsert(tbSay, "trë l¹i/NpcTalkMain")
 	if nIndex < getn(tMsg) then
-		tinsert(tbSay, format("%s/#_about(%d)", "Trang kÕ", nIndex+1))
+		tinsert(tbSay, format("%s/#_about(%d)", "Next page", nIndex+1))
 	end
-	tinsert(tbSay, "Ra khái/no")
+	tinsert(tbSay, "Leave/no")
 	local szTitle = format("<color=green>%s:<color>\n%s", "Tñ ¸o Thiªn BiÕn TiÕu", tMsg[nIndex])
 	Say(szTitle, getn(tbSay), tbSay)
 end

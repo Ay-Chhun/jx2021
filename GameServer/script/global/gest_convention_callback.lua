@@ -21,7 +21,7 @@ function SyncZgPoint(nPoint)
 	local nDiff = nPoint - nBodyPoint
 	if nDiff > 0 then
 		SetTask(662, nPoint, 21)
-		Msg2Player("§iÓm t­ c¸ch ®¹i héi tû vâ cña b¹n ®· t¨ng lªn "..nDiff.." ®iÓm, ®iÓm t­ c¸ch hiÖn t¹i lµ "..nPoint.." Phót ")
+		Msg2Player("§iÓm t­ c¸ch ®¹i héi tû vâ cña b¹n ®· t¨ng lªn "..nDiff.." ®iÓm, ®iÓm t­ c¸ch hiÖn t¹i lµ "..nPoint.." minutes")
 	end
 	WriteLog("[§¹i héi tû vâ] event=CËp nhËt ®iÓm t­ c¸ch name="..GetName().." "..nBodyPoint.." "..nPoint)
 end

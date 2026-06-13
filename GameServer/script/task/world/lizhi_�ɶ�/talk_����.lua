@@ -9,7 +9,7 @@ function talk_four()
     local szTalk = {
         "Xin hái cã ph¶i lµ Hång ThÊt ®¹i ca kh«ng? T¹i h¹ phông mÖnh Ph¹m Träng Yªn ®Õn th¨m hái, ®©y lµ tÝn vËt xin xem qua!",
         "<sex> kh«ng cÇn ®a lÔ. <sex> ®Õn ®©y v× chuyÖn cña Ph¹m tiªn sinh ph¶i kh«ng?",
-        "§óng vËy!",
+        "That is right!",
         "Ta ®· cho ®Ö tö C¸i Bang ®Õn ph©n ®µ Thµnh §« dß la, hiÖn vÉn ch­a vÒ. Ng­¬i gióp ta khai th«ng con ®­êng ®Õn D· Tr­ l©m ®­îc kh«ng?"
     };
     local szTalk1 = {

@@ -14,9 +14,9 @@ local nDecedentIndex = PlayerIndex;
 	SetTaskTemp(TOTAL_KILL_NUM,GetTaskTemp(TOTAL_KILL_NUM)+1);
 	if GetMissionV(GAME_TYPE) == 2 then
 		Earn(10000);
-		news_str = nMurderName.."  Æ∑ gi’t  "..nDecedentName..", nhÀn Æ≠Óc 1 ti“n vµng. Hi÷n Æ∑ Æ∏nh bπi"..GetTaskTemp(TOTAL_KILL_NUM).." ng≠Íi.";
+		news_str = nMurderName.."  has killed"..nDecedentName..", nhÀn Æ≠Óc 1 ti“n vµng. Hi÷n Æ∑ Æ∏nh bπi"..GetTaskTemp(TOTAL_KILL_NUM).." ng≠Íi.";
 	else
-		news_str = nMurderName.."  Æ∑ gi’t  "..nDecedentName..". Hi÷n Æ∑ Æ∏nh bπi"..GetTaskTemp(TOTAL_KILL_NUM).." ng≠Íi.";
+		news_str = nMurderName.."  has killed"..nDecedentName..". Hi÷n Æ∑ Æ∏nh bπi"..GetTaskTemp(TOTAL_KILL_NUM).." ng≠Íi.";
 	end
 	PlayerIndex = nDecedentIndex;
 	--∑¢Ω±¿¯∏¯À¿’ﬂ

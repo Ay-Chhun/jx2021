@@ -16,7 +16,7 @@ PhÇn th­ëng &Action ID	Lo¹i							Type: Trigger (®iÓm khëi ®éng, tham sè ®iÒn Cr
 30015	Item	2,0,30038,1	Bót L«ng					
 30016	Item	2,0,30039,1	Kú Phæ					
 30017	Item	2,0,30041,1	Kú Tö					
-30018	Item	2,0,30030,1	Lóa					
+30018	Item	2,0,30030,1	Rice					
 30019	Exp	3000000						
 30020	Exp	6000000						
 30021	Exp	3000000						
@@ -137,8 +137,8 @@ PhÇn th­ëng &Action ID	Lo¹i							Type: Trigger (®iÓm khëi ®éng, tham sè ®iÒn Cr
 30147	Money	300000						
 30148	Exp	5000000						
 30149	Exp	9000000						
-30150	Item	2,1,30499,2	Hu©n ch­¬ng anh hïng					
-30151	Item	2,1,30499,4	Hu©n ch­¬ng anh hïng					
+30150	Item	2,1,30499,2	Hero's Medal					
+30151	Item	2,1,30499,4	Hero's Medal					
 30157	Exp	2000000						
 30158	Exp	4000000						
 30159	Exp	2000000						
@@ -157,7 +157,7 @@ PhÇn th­ëng &Action ID	Lo¹i							Type: Trigger (®iÓm khëi ®éng, tham sè ®iÒn Cr
 30172	Trigger	0	1280					
 30173	Item	2,0,30060,1	Th­ tÝn					
 30174	Item	2,0,30057,1	N÷a m¶nh b¶n ®å					
-30175	CrNpc	chunyizhang1	ThuÇn NhÊt Ch­ëng	1				
+30175	CrNpc	chunyizhang1	Pure Unity Palm	1				
 30176	Trigger	0	1281					
 30177	Trigger	0	1282					
 30178	Trigger	0	1283					
@@ -298,10 +298,10 @@ PhÇn th­ëng &Action ID	Lo¹i							Type: Trigger (®iÓm khëi ®éng, tham sè ®iÒn Cr
 30315	Trigger	0	1296					
 30316	Script	script/task/function/kill_yaohu.lua						
 30317	Script	script/task/function/meridian_wuwan.lua						
-30318	Item	2,1,30498,1	Hu©n ch­¬ng dòng sÜ					
-30319	Item	2,1,30499,3	Hu©n ch­¬ng anh hïng					
-30320	Item	2,1,30499,3	Hu©n ch­¬ng dòng sÜ					
-30321	Item	2,1,30499,8	Hu©n ch­¬ng anh hïng					
+30318	Item	2,1,30498,1	Brave Warrior Medal					
+30319	Item	2,1,30499,3	Hero's Medal					
+30320	Item	2,1,30499,3	Brave Warrior Medal					
+30321	Item	2,1,30499,8	Hero's Medal					
 30325	Money	10000						
 30326	Exp	2000000						
 30327	Exp	3000000						
@@ -390,7 +390,7 @@ PhÇn th­ëng &Action ID	Lo¹i							Type: Trigger (®iÓm khëi ®éng, tham sè ®iÒn Cr
 30410	Item	2,1,30601,1	Linh Thó §¶n cÊp 1					
 30411	Item	2,1,30669,200	M¶nh MËt TÞch					
 30412	Item	2,0,1083,2	Th¸i DÞch Hçn Nguyªn C«ng phæ					
-30413	Item	2,1,30345,2	ChuyÓn Sinh §¬n 					
+30413	Item	2,1,30345,2	Reincarnation Pill					
 30414	Item	2,1,30723,1	L«i KiÕp Phï					
 30415	Exp	1000000						
 30416	Exp	2000000						
@@ -530,8 +530,8 @@ PhÇn th­ëng &Action ID	Lo¹i							Type: Trigger (®iÓm khëi ®éng, tham sè ®iÒn Cr
 30552	Trigger	0	1402					S¸t thñ Thiªn ¢m Gi¸o
 30553	Trigger	0	1403					Tiªn phong Thiªn D­¬ng Giao
 30554	Trigger	0	1404					Tinh hoa Thiªn D­¬ng Giao
-30555	Trigger	0	1405					Mao TÆc lo¹n nhËp
-30556	Trigger	0	1406					Long Hæ §­êng C¬ Quan Thó
+30555	Trigger	0	1405					Maozei Intruders
+30556	Trigger	0	1406					Longhu Hall Mechanism Beast
 30557	Trigger	0	1407					Hµnh Gi¶ Vâ Tßng
 30558	Trigger	0	1408					Tiªu NhiÔm NguyÖt Thiªn ¢m Gi¸o
 30559	Item	2,0,780,4	Háa Chung					
@@ -548,13 +548,13 @@ PhÇn th­ëng &Action ID	Lo¹i							Type: Trigger (®iÓm khëi ®éng, tham sè ®iÒn Cr
 30570	Item	2,1,31088,1	Hoa v¨n mÊt linh khÝ - NhÉn					
 30571	Item	2,1,31089,1	V¨n Søc MÊt Linh KhÝ-Ngäc Béi					
 30572	Item	2,1,31068,1,4	Kh¾c B¶n Vì CÊp 1 (§Çu)					
-30573	Item	2,1,31092,1	Méc Tinh					
-30574	Item	2,1,31069,1,4	Kh¾c B¶n Vì CÊp 1 (¸o)					
-30575	Item	2,1,31070,1,4	Kh¾c B¶n Vì CÊp 1 (QuÇn)					
-30576	Item	2,1,31071,1,4	Kh¾c B¶n Vì CÊp 1 (NhÉn)					
+30573	Item	2,1,31092,1	Wood Essence					
+30574	Item	2,1,31069,1,4	Engraving Broken Level 1 (top)					
+30575	Item	2,1,31070,1,4	Engraving Broken Level 1 (pants)					
+30576	Item	2,1,31071,1,4	Engraving Plate Level 1 (Ring)					
 30577	Item	2,1,31072,1,4	Kh¾c B¶n Vì CÊp 1 (Ngäc Béi)					
 30578	Item	2,1,31068,3,4	Kh¾c B¶n Vì CÊp 1 (§Çu)					
-30579	Item	2,1,31096,1,4	L­u Kim					
+30579	Item	2,1,31096,1,4	Liu Jin					
 30580	Item	2,1,31097,1	Th­ §iÒu §éng VËt T­					
 30581	Exp	100000						
 30582	Exp	2000000						
@@ -600,14 +600,14 @@ PhÇn th­ëng &Action ID	Lo¹i							Type: Trigger (®iÓm khëi ®éng, tham sè ®iÒn Cr
 30622	Item	2,1,31104,1	Mét l« kú m«n binh khÝ					
 30623	Item	2,1,31107,1	L­¬ng th¶o vËt t­					
 30624	Item	2,1,31109,1	C«ng v¨n ®iÒu l­¬ng thùc					
-30625	Item	2,1,31110,3	Töu B«i					
+30625	Item	2,1,31110,3	Wine Cup					
 30626	Item	2,1,31111,1	VËt t­ hoa v¨n					
 30627	Item	2,1,31117,1	Th­ TiÕn Cö Phôc Sinh 4					
 30628	Trigger	0	1409					Giang Hå Tiªu TiÓu
 30629	Trigger	0	1410					Giang Hå Tiªu TiÓu §Çu Môc
 30630	Trigger	0	1411					Gian TÕ Minh gi¸o
 30631	Trigger	0	1412					§Ö Tö Minh gi¸o
-30632	Item	2,1,31105,1	KÝnh ChiÕu Yªu					
+30632	Item	2,1,31105,1	Demon-Reflecting Mirror					
 30633	Script	script/task/function/mingjiao_join_faction.lua						
 30634	Item	2,1,31131,1	M¶nh §å Phæ 1					
 30635	Item	2,1,31132,1	M¶nh §å Phæ 2					
@@ -665,7 +665,7 @@ PhÇn th­ëng &Action ID	Lo¹i							Type: Trigger (®iÓm khëi ®éng, tham sè ®iÒn Cr
 30687	Trigger	0	1429					S¸t Thñ §Çu LÜnh
 30688	Trigger	0	1430					Cung Thñ §Çu LÜnh
 30689	Trigger	0	1431					Th¶o Nguyªn Kh¾c H·n
-30690	Item	2,0,30034,10	Ng©n l­îng					
+30690	Item	2,0,30034,10	Silver tael					
 30691	Item	2,0,31005,1	Phï TruyÒn Tèng-Phong Ên					
 30692	Item	2,0,31006,1	Phï TruyÒn Tèng-Gi¶i Khãa					
 30693	Item	2,0,31009,1	Trang Phôc Th­¬ng §éi					
@@ -711,7 +711,7 @@ PhÇn th­ëng &Action ID	Lo¹i							Type: Trigger (®iÓm khëi ®éng, tham sè ®iÒn Cr
 30733	Exp	78400000						
 30734	Trigger	0						Con Rèi Thñ TrËn
 30735	Trigger	0	1433					C¸c C¸ch C­¬ng
-30736	Trigger	0	1434					Ng­êi thÇn bÝ
+30736	Trigger	0	1434					Mysterious Person
 30737	Trigger	0	1435					Hæ Y Nh©n
 30738	Item	2,1,31242,1	Ma Vùc BÝ Lôc					
 30739	Item	2,1,31244,5	M¶nh C¬ Quan MÆc Gia					
@@ -773,7 +773,7 @@ PhÇn th­ëng &Action ID	Lo¹i							Type: Trigger (®iÓm khëi ®éng, tham sè ®iÒn Cr
 30793	Trigger	0	1463					Tam ThiÕu Gia
 30794	Trigger	0	1464					¢n V« Phóc
 30795	Trigger	0	1465					Lam Bµo Kh¸ch
-30796	Trigger	0	1466					D¹ Xoa
+30796	Trigger	0	1466					Yaksha
 30797	Trigger	0	1467					Phi T­íng Qu©n
 30798	Item	2,1,31319,1	B¸nh §Æc ChÕ					
 30799	Trigger	0	1468					Ng« Lçi
@@ -794,7 +794,7 @@ PhÇn th­ëng &Action ID	Lo¹i							Type: Trigger (®iÓm khëi ®éng, tham sè ®iÒn Cr
 30814	Trigger	0	1483					Tam ThiÕu Gia
 30815	Trigger	0	1484					¢n V« Phóc
 30816	Trigger	0	1485					Lam Bµo Kh¸ch
-30817	Trigger	0	1486					D¹ Xoa
+30817	Trigger	0	1486					Yaksha
 30818	Trigger	0	1487					Phi T­íng Qu©n
 30819	ShiMenWeiWang	1020						
 30820	Trigger	0	1488					Nhai Th­îng S¬n TÆc

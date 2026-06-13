@@ -1,7 +1,7 @@
 --some npc
 
 tTongNpcTalk = {
-	{"Tr­ëng l·o B¸ch HiÓu Sinh","Vâ L©m Minh lµ liªn minh tù ph¸t cña vâ l©m nh©n sÜ trung nguyªn ®Ó chèng l¹i Thiªn ¢m Gi¸o."},
+	{"Elder Bai Xiaosheng","Vâ L©m Minh lµ liªn minh tù ph¸t cña vâ l©m nh©n sÜ trung nguyªn ®Ó chèng l¹i Thiªn ¢m Gi¸o."},
 	{"İch B¶o Trai - Gia C¸t Kú","İch B¶o Trai lµ kho cña bang ph¸i, bang ph¸i cã thÓ dù tr÷ bao nhiªu tiÒn quü th× ph¶i phô thuéc vµo cÊp cña İch B¶o Trai."},
 	{"ThiÕu chñ Tµng KiÕm DiÖp Tö Kh­u","ThiÕt DiÖn huynh ®Ö ®õng lo, ta ®· b¶o H¹o NhËt Doanh dÉn theo ng­êi ®i viÖn trî §Şa S¸t vµ TuyÖt T×nh."},
 	{"Th­ëng thiÖn ph¹t ¸c sø - Hµn §an T©m","Th­ëng thiÖn ph¹t ¸c ®­êng, gÆp thiÖn sÏ th­ëng, gÆp ¸c sÏ ph¹t."},
@@ -14,10 +14,10 @@ tTongNpcTalk = {
 	{"Thóy Yªn lôc y tiªn tö Tiªu Së Së","Phi Yªn tû tû, ta nhÊt ®Şnh sÏ cøu tû ra."},
 	--{"Ã÷½Ì½ğÃ«Ê¨ÍõĞÜ°ÔÌì","Õâ¡¶ÒĞÌìÍÀÁú¼Ç¡·Ğ´µÄÕæÊÇµ´Æø»Ø³¦£¬ºÀÆøÍòÇ§£¬ÈÃÈËÓû°Õ²»ÄÜ¡£"},
 	{"Ng« BÊt Duy-Tö hµ thiªn s­ cña C«n L«n","B¨ng T©m c« n­¬ng, kh«ng cÇn lo l¾ng. §Şa S¸t vµ TuyÖt T×nh cã vâ c«ng cao c­êng, bän tiÓu tÆc cña Thiªn ¢m kh«ng lµm g× ®­îc ®©u."},
-	{"Tø ®¹i danh bé - ThiÕt DiÖn","Kh«ng ngê trªn ®­êng ®i l¹i bŞ bän Thiªn ¢m Gi¸o chÆn ®­êng."},
-	{"Tø §¹i Danh Bæ-TuyÖt T×nh","Thiªn ¢m tiÓu tÆc, ta vµ ng­¬i quyÕt ®Êu ®Õn cïng."},
+	{"Four Great Constables - Iron Face","Kh«ng ngê trªn ®­êng ®i l¹i bŞ bän Thiªn ¢m Gi¸o chÆn ®­êng."},
+	{"Four Great Constables - Jueqing","Thiªn ¢m tiÓu tÆc, ta vµ ng­¬i quyÕt ®Êu ®Õn cïng."},
 	{"Tø ®¹i danh bé - B¨ng T©m","§Şa S¸t vµ TuyÖt T×nh lµ v× b¶o vÖ chóng t«i mµ chñ ®éng chÆn hËu, ®õng nªn x¶y ra chuyÖn nhĞ!"},
-	{"Tø §¹i Danh Bæ-§Şa S¸t","Bän thá ®Õ Thiªn ¢m Gi¸o, h·y ®Õn ®¹i chiÕn 300 hiÖp víi gia gia nµo."},
+	{"Four Great Constables - Disha","Bän thá ®Õ Thiªn ¢m Gi¸o, h·y ®Õn ®¹i chiÕn 300 hiÖp víi gia gia nµo."},
 	{"Vâ L©m Minh Hé VÖ","N¬i dãng qu©n cña Vâ L©m Minh, kh«ng phËn sù miÔn vµo!"},
 };
 
@@ -32,7 +32,7 @@ function main()
 	if nNpcName == "Thñ Khè" then
 		OpenBox()
 		EnableBoxLock(1)
-	elseif nNpcName == "TiÖm T¹p Hãa" then
+	elseif nNpcName == "General Store" then
 		Sale(35)
 	elseif nNpcName == "Chñ D­îc ®iÕm" then
 		Sale(30)

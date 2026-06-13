@@ -24,7 +24,7 @@ function dowait_cb()
 			SetTaskTemp(TMP_TASK_TONG_MELEE_X, nX);
 			SetTaskTemp(TMP_TASK_TONG_MELEE_Y, nY);
 			SetPlayerScript("\\script\\missions\\tong_melee\\item\\siling_keyin.lua");
-			Say(format("%s [ThÇn Thó Khan Hé Gi¶] triÖu håi ng­¬i! ", sName), 2, "H­ëng øng chiªu gäi/ensure", "Ta rÊt bËn/nothing");
+			Say(format("%s [ThÇn Thó Khan Hé Gi¶] triÖu håi ng­¬i! ", sName), 2, "Answer the call/ensure", "I am very busy/nothing");
 		end
 	end
 	PlayerIndex = oldPlayerIndex;

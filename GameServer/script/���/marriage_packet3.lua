@@ -18,6 +18,6 @@ function OnUse(nItemIdx)
 		Msg2Player("B¹n nhËn ®­îc 6 M¹n Thiªn ThÓ TiÕt bao")
 		AddItem(ITEM_NOTEBOOK[1],ITEM_NOTEBOOK[2],ITEM_NOTEBOOK[3],1)
 		Msg2Player("B¹n nhËn ®­îc 1 quyÓn thuyÕt minh chiÕn ®Þa.");
-		WriteLog("[KÕt h«n]:"..GetName().."Më Chu Liªn BÝch Hîp bao");
+		WriteLog("[Marriage]:"..GetName().."Më Chu Liªn BÝch Hîp bao");
 	end
 end;

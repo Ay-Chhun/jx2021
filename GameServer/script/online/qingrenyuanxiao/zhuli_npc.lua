@@ -7,7 +7,7 @@ Include("\\script\\online\\qingrenyuanxiao\\qryx_head.lua")
 function main()
 	if CanAcceptTask(TASK_LOVESTORY4,2) == 1 then
 		Talk(5,"","Chu LÖ c« n­¬ng, c«ng tö La MËt, quen ë ®ªm d¹ yÕn lÇn tr­íc, nhê ta chuyÓn lêi víi n÷ hiÖp.",
-				"ChuyÖn g× thÕ?",
+				"What is it?",
 				"Quªn råi, ®Ó ta nghÜ l¹i ®·.",
 				"Ta nghÜ r»ng chØ cã ta kh«ng ngñ §­îc! Th× ra Chu LÖ c« n­¬ng còng kh«ng ngñ ®­îc sao?",
 				"Ta nghÜ r»ng chØ cã ta kh«ng ngñ §­îc! Th× ra Tinh Tinh c« n­¬ng còng kh«ng ngñ ®­îc sao?")
@@ -24,12 +24,12 @@ function main()
 		end
 		PlayerIndex = OldPlayerIndex
 	elseif CanAcceptTask(TASK_LOVESTORY4,3) == 1 then
-		Say("Tim ta ®ang ®Ëp th×nh thÞch...",0)
+		Say("My heart is pounding...",0)
 	elseif CanAcceptTask(TASK_LOVESTORY4,4) == 1 then
 		Talk(7,"","Ta ®· truyÒn ®¹t t×nh ý cho hai ng­êi yªu nhau, mong ®«i uyªn ­¬ng gi÷ chÆt mèi t×nh nµy!",
 				"§­îc! Ta sÏ tr©n träng mèi t×nh nµy.",
 				"La MËt c«ng tö nãi mÊy lÇn hÑn víi c« n­¬ng, sao c« n­¬ng ®Òu cù tuyÖt vËy?",
-				"huhu…",
+				"boohoo",
 				"C« n­¬ng h·y tõ tõ nãi!",
 				"Bµ Chu XuyÕn nãi, La MËt lµ ch¸u cña §o¹t mÖnh th­ sinh, kÎ thï kh«ng ®éi trêi chung cña nhµ ta. H¾n ®· ®¸nh b¹i §­êng Thiªn Hµo, phu qu©n cña bµ bµ, ®o¹t lÊy binh khÝ phæ vµ v­¬n lªn hµng thø hai, ®Èy §­êng M«n B¸ V­¬ng Th­¬ng xuèng hµng thø 3, cho nªn nghiªm cÊm ta kh«ng ®­îc qua l¹i víi La MËt.",
 				"Th× ra nh­ thÕ, ®Ó ta vÒ nãi l¹i víi La MËt.")
@@ -63,7 +63,7 @@ function main()
 		Say("§a t¹! Chóc thiÕu hiÖp vui vÎ.",0)
 	elseif GetTask(TASK_LOVESTORY4) == 0 or GetTask(TASK_LOVESTORY4) == 1 then
 		if GetCash() == 214 then
-			Say("Trêi!",0)
+			Say("Heavens!",0)
 		elseif GetSex() == 1 and GetCash() == 521 then
 			Say("ThiÕu hiÖp cßn ®Ñp trai h¬n c¶ La MËt, xem ra ta v­ît qua bao thÕ kû ®Õn víi thÕ giíi vâ l©m 2 lµ ®Ó héi ngé cïng thiÕu hiÖp.",0)
 		else

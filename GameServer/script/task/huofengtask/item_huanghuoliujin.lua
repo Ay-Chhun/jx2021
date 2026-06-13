@@ -7,7 +7,7 @@ N_MAX_HUANGHUOZHIXIN_BOSS_CALL_CNT=1
 function OnUse(id)
 	local tbSay = {}
 	tinsert(tbSay, format("%s/call_fight_npc", "Chiªu gäi Hoang Háa L­u Kim (Ch©n th©n) "))
-	tinsert(tbSay, format("%s/no", "KÕt thóc ®èi tho¹i"))
+	tinsert(tbSay, format("%s/no", "End conversation"))
 	local szMsg = format("%s:%s", "<color=green>Hoang Háa Chi T©m<color>", "Hoµn thµnh chuçi nhiÖm vô Háa Phông mçi tuÇn cã thÓ khiªu chiÕn 1 lÇn Hoang Háa L­u Kim (Ch©n th©n) ")
 	Say(szMsg,getn(tbSay),tbSay)
 end

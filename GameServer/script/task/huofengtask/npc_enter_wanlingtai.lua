@@ -9,16 +9,16 @@ function npc_talk_main()
 	local tbSay = {}
 	tinsert(tbSay, format("%s/how_to_enter", "Lµm sao ®Ó vµo V¹n Linh §µi"))
 	tinsert(tbSay, format("%s/#iwant_enter(0)", "Vµo V¹n Linh §µi"))
-	tinsert(tbSay, format("%s/no", "KÕt thóc ®èi tho¹i"))
-	local szMsg = format("%s:%s", "<color=green>Yªu Hå<color>", "Chµo mõng ®Õn víi V¹n Linh §µi, b¹n chuÈn bÞ xong ch­a?")
+	tinsert(tbSay, format("%s/no", "End conversation"))
+	local szMsg = format("%s:%s", "<color=green>Demon Fox<color>", "Chµo mõng ®Õn víi V¹n Linh §µi, b¹n chuÈn bÞ xong ch­a?")
 	Say(szMsg,getn(tbSay),tbSay)
 end
 
 function how_to_enter()
 	local tbSay = {}
 	tinsert(tbSay, format("%s/npc_talk_main", "trë l¹i"))
-	tinsert(tbSay, format("%s/no", "KÕt thóc ®èi tho¹i"))
-	local szMsg = format("%s:%s", "<color=green>Yªu Hå<color>", "Cã thÓ c¸ nh©n hoÆc tæ ®éi ®Ó vµo. C¸ nh©n vµo:  cÇn hoµn thµnh nhiÖm vô sö thi vò khÝ Háa Phông tr­íc, tiªu hao 1 Thiªn Kiªu LÖnh ®Ó vµo. Tæ ®éi vµo:  §éi tr­ëng cÇn hoµn thµnh nhiÖm vô sö thi vò khÝ Háa Phông, nép cho b¶n th©n vµ tÊt c¶ thµnh viªn, mçi ng­êi 1 Thiªn Kiªu LÖnh míi cã thÓ vµo.")
+	tinsert(tbSay, format("%s/no", "End conversation"))
+	local szMsg = format("%s:%s", "<color=green>Demon Fox<color>", "Cã thÓ c¸ nh©n hoÆc tæ ®éi ®Ó vµo. C¸ nh©n vµo:  cÇn hoµn thµnh nhiÖm vô sö thi vò khÝ Háa Phông tr­íc, tiªu hao 1 Thiªn Kiªu LÖnh ®Ó vµo. Tæ ®éi vµo:  §éi tr­ëng cÇn hoµn thµnh nhiÖm vô sö thi vò khÝ Háa Phông, nép cho b¶n th©n vµ tÊt c¶ thµnh viªn, mçi ng­êi 1 Thiªn Kiªu LÖnh míi cã thÓ vµo.")
 	Say(szMsg,getn(tbSay),tbSay)
 end
 
@@ -28,8 +28,8 @@ function iwant_enter(bConfirm)
 		local tbSay = {}
 		tinsert(tbSay, format("%s/#iwant_enter(1)", "X¸c nhËn ®i vµo"))
 		tinsert(tbSay, format("%s/npc_talk_main", "trë l¹i"))
-		tinsert(tbSay, format("%s/no", "KÕt thóc ®èi tho¹i"))
-		local szMsg = format("%s:%s", "<color=green>Yªu Hå<color>", "§i vµo V¹n Linh §µi ®éi tr­ëng tiªu hao thiªn kiªu lÖnh ,sè l­îng t­¬ng ®­¬ng víi sè ng­êi tæ ®éi, cã x¸c nhËn ®i vµo kh«ng?")
+		tinsert(tbSay, format("%s/no", "End conversation"))
+		local szMsg = format("%s:%s", "<color=green>Demon Fox<color>", "§i vµo V¹n Linh §µi ®éi tr­ëng tiªu hao thiªn kiªu lÖnh ,sè l­îng t­¬ng ®­¬ng víi sè ng­êi tæ ®éi, cã x¸c nhËn ®i vµo kh«ng?")
 		Say(szMsg,getn(tbSay),tbSay)
 		return
 	end
@@ -76,7 +76,7 @@ function consume_tianjiaoling(bDelete, nPlayerNum)
         	end
     	else
     		if GetCash() < nNeed*10000 then
-    			szMsg = format("Kh«ng cã %d%s", ti[1], nNeed)
+    			szMsg = format("You don't have %d%s", ti[1], nNeed)
         		return 0,szMsg
     		end
     	end

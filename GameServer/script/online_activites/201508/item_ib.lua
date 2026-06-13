@@ -6,11 +6,11 @@ function OnUse(nItemIndex)
 		return 0;
 	end
 	if VET_201508_Item1UseTime()<VET_201508_GetItem1MaxUseTime() then
-		Talk(1,"",format("Sö dông ®ñ %d %s vµ %d %s míi ®­îc dïng!", 2000, "Bã Hoa Sen Hång", 2000, "Bã Hoa Sen Tr¾ng"));
+		Talk(1,"",format("Sö dông ®ñ %d %s vµ %d %s míi ®­îc dïng!", 2000, "Bã Hoa Sen Hång", 2000, "Bouquet of White Lotus Flowers"));
 		return 0
 	end
 	if VET_201508_Item2UseTime()<VET_201508_GetItem2MaxUseTime() then
-		Talk(1,"",format("Sö dông ®ñ %d %s vµ %d %s míi ®­îc dïng!", 2000, "Bã Hoa Sen Hång", 2000, "Bã Hoa Sen Tr¾ng"));
+		Talk(1,"",format("Sö dông ®ñ %d %s vµ %d %s míi ®­îc dïng!", 2000, "Bã Hoa Sen Hång", 2000, "Bouquet of White Lotus Flowers"));
 		return 0
 	end
 	

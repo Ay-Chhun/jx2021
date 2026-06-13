@@ -12,16 +12,16 @@ tbDieuKien = {
 								},
 						[2] = {--option
 									[1] = {--tabb
-												[1] = {6250, "6250 vµng"},
-												[2] = {625, "625 thiªn th¹ch"},	
+												[1] = {6250, "6250 gold"},
+												[2] = {625, "625 spirit stone"},	
 											},
 									[2] = {--cdpb
-												[1] = {1925, "1925 vµng"},
-												[2] = {175, "175 thiªn th¹ch tinh th¹ch"},
+												[1] = {1925, "1925 gold"},
+												[2] = {175, "175 spirit stone refined stone"},
 											},	
 									[3] = {--xtcv
 												[1] = {4975, "4975 xu vËt phÈm"},
-												[2] = {100, "100 thiªn th¹ch tinh th¹ch"},
+												[2] = {100, "100 spirit stone refined stone"},
 											},		
 								},
 					}
@@ -45,7 +45,7 @@ function main()
 		nLoaiBox = 1
 	elseif nNPC_name == "ChiÕu D¹ Ph¸p B¶o" then
 		nLoaiBox = 2	
-	elseif nNPC_name == "XÝch Thè Cæ VËt" then
+	elseif nNPC_name == "Red Hare Antique" then
 		nLoaiBox = 3
 	end
 	if nLoaiBox == 0 then
@@ -57,7 +57,7 @@ function main()
 	local szSayHead = "Th«ng tin chi tiÕt c¸c ho¹t ®éng ®ång ®¹o cã thÓ xem trªn trang chñ <color=green>http://volam2.zing.vn<color>."	
 	tinsert(tbSayDialog, "Sö dông vËt phÈm Xu ®Ó më r­¬ng/#open_QuyTy_box(1,"..nLoaiBox..")")
 	tinsert(tbSayDialog, "Sö dông vËt phÈm kh¸c ®Ó më r­¬ng/#open_QuyTy_box(2,"..nLoaiBox..")")
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/dialog_over"	)
+	tinsert(tbSayDialog,"End conversation/dialog_over"	)
 	nSaySize = getn(tbSayDialog);
 	Say(szSayHead, nSaySize, tbSayDialog);
 	
@@ -221,7 +221,7 @@ function xichtho_box_award()
 				{1, 100, "Thiªn Th¹ch Linh Th¹ch", {2,1,1068, 1},7 * 24 * 3600},
 				{1, 100, "§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", {2,1,1067, 1},7 * 24 * 3600},
 				{1, 100, "§¹i §Þnh Hån", {2,1,1113, 1},7 * 24 * 3600},
-				{1, 100, "ChuyÓn Sinh §¬n", {2,1,30345, 1},7 * 24 * 3600},
+				{1, 100, "Rebirth Pill", {2,1,30345, 1},7 * 24 * 3600},
 				{31, 11500, "give_weapon7()"},
 				{31, 10000, "give_weapon8()"},
 				{31, 5000, "give_weapon9()"},
@@ -290,16 +290,16 @@ tAttribute_quyty_first = {	--tAttribute_bkl_first
 				{600, "V¹n NhÉn", 0, 0, 14},
 				{600, "M·n Thiªn Hoa Vò",	 0, 1, 53},
 				{1000, "Háa Tinh", 0, 2, 36},
-				{600, "Cæ §Ýnh",	0, 3, 64},
+				{600, "Guding",	0, 3, 64},
 				{600, "ThÇn Cung", 0,	4,	119},
-				{600, "LiÖt DiÖm", 0, 5, 40},
+				{600, "Lie Yan", 0, 5, 40},
 				{600, "§¹i H¶o L«i Th­¬ng",	0,	6, 108},
-				{600, "L¨ng Phong", 0, 7, 12},
-				{600, "A La H¸n Tr­îng", 0, 8, 97},
+				{600, "Lingfeng", 0, 7, 12},
+				{600, "Arhat Staff", 0, 8, 97},
 				{600, "ThÇn Hµnh",	 0, 9, 86},
 				{600, "Hi Nh©n CÇm", 	0,	10, 75},
-				{600, "M·nh Hæ", 0, 11, 12},
-				{1200, "Minh B¨ng", 0, 12, 12},
+				{600, "Meng Tiger", 0, 11, 12},
+				{1200, "Ice Brightness", 0, 12, 12},
 				{1200, "Ngäc Doanh", 0, 13, 12},
 		}
 
@@ -357,18 +357,18 @@ tAttribute_quyty_first = {	--tAttribute_bkl_first
 		}	
 	local tWeapon_quyty = { --tWeapon_bkl
 				{600, "ThÇn Quy", 0, 0, 15},
-				{600, "Khoa Phô",	 0, 1, 54},
-				{1000, "Häa ¶nh", 0, 2, 37},
-				{600, "LËu C¶nh",	0, 3, 65},
+				{600, "Khoa Phu",	 0, 1, 54},
+				{1000, "Painting Shadow", 0, 2, 37},
+				{600, "Tower View",	0, 3, 65},
 				{600, "Viªn §Ò", 0,	4,	120},
 				{600, "Ngäc Trô", 0, 5, 41},
 				{600, "Cöu Long Toµn KÝch",	0,	6, 109},
 				{600, "BÝch Thñy", 0, 7, 13},
-				{600, "Môc KiÒn Liªn Tr­îng", 0, 8, 98},
-				{600, "Toan D­",	 0, 9, 87},
-				{600, "§¹i Th¸nh Di ¢m", 	0,	10, 76},
-				{600, "V« NgÊn", 0, 11, 13},
-				{1200, "XÝch Tiªu", 0, 12, 13},
+				{600, "Mu Jianlian Staff", 0, 8, 98},
+				{600, "Toan Du",	 0, 9, 87},
+				{600, "Great Saint Lingering Sound", 	0,	10, 76},
+				{600, "Boundless Silver", 0, 11, 13},
+				{1200, "Xich Tieu", 0, 12, 13},
 				{1200, "Di T©m", 0, 13, 13},
 		}
 
@@ -425,18 +425,18 @@ function give_weapon9()
 		}	
 	local tWeapon_quyty = { --tWeapon_bkl
 				{600, "¢m D­¬ng ¢n", 0, 0, 16},
-				{600, "Kh«ng Cã",	 0, 1, 55},
+				{600, "None",	 0, 1, 55},
 				{1000, "Nha Cöu", 0, 2, 38},
-				{600, "NghÞch L©n",	0, 3, 66},
-				{600, "B¸t X¹ Chi X¹", 0,	4,	121},
+				{600, "Adverse Scale",	0, 3, 66},
+				{600, "Eight Shots of Shooting", 0,	4,	121},
 				{600, "ThÇn Ch©m", 0, 5, 42},
-				{600, "Th­¬ng N«",	0,	6, 110},
+				{600, "Spear Slave",	0,	6, 110},
 				{600, "Thiªn T«n", 0, 7, 14},
-				{600, "D­îc S­ Tr­îng", 0, 8, 99},
+				{600, "Apothecary Staff", 0, 8, 99},
 				{600, "Th¸i H­",	 0, 9, 88},
-				{600, "Kh« Méc Long Ng©m", 	0,	10, 77},
+				{600, "Withered Wood Dragon Chant", 	0,	10, 77},
 				{600, "Thanh Long", 0, 11, 14},
-				{600, "U©n H­¬ng", 0, 12, 14},
+				{600, "Uan Huong", 0, 12, 14},
 				{600, "Hoan Linh", 0, 13, 14},
 		}
 
@@ -489,22 +489,22 @@ function get_random_attrib_quyty(nTabQuyTy, nDeterminator) --get_random_attrib_b
 end
 -- MËt tÞch cao cÊp 
 VET_2012_GAOJIMIJI = {
-				[2] = {"Kim Cang B¸t Nh· Ch©n QuyÓn ", {0, 107, 204, 1}},		
-				[4] = {"TiÒm Long Tóc DiÖt Ch©n QuyÓn", {0, 107, 205, 1}},
-				[3] = {"V« TrÇn Bå §Ò Ch©n QuyÓn", {0, 107, 206, 1}},		
+				[2] = {"Vajra Prajna True Manual", {0, 107, 204, 1}},		
+				[4] = {"Hidden Dragon Annihilation True Manual", {0, 107, 205, 1}},
+				[3] = {"Dustless Bodhi True Manual", {0, 107, 206, 1}},		
 				[6] = {"Thiªn La Liªn Ch©u Ch©n QuyÓn", {0, 107, 207,1 }},		
-				[8] = {"Nh­ ý Kim §Ønh Ch©n QuyÓn", {0, 107, 208, 1}},		
-				[9] = {"BÝch H¶i TuyÖt ¢m Ch©n QuyÓn", {0, 107, 209, 1}},		
-				[11] = {"Hçn §én TrÊn Nh¹c Ch©n QuyÓn", {0, 107, 210, 1}},		
+				[8] = {"Wishful Golden Top True Manual", {0, 107, 208, 1}},		
+				[9] = {"Azure Sea Silent Sound True Manual", {0, 107, 209, 1}},		
+				[11] = {"Chaos Town Mountain True Manual", {0, 107, 210, 1}},		
 				[12] = {"Quú Thiªn Du Long Ch©n QuyÓn", {0, 107, 211, 1}},		
 				[14] = {"HuyÒn ¶nh Mª T«ng Ch©n QuyÓn", {0, 107, 212, 1}},		
-				[15] = {"Qu©n Tö §íi Phong Ch©n QuyÓn", {0, 107, 213, 1}},		
-				[17] = {"TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn", {0, 107, 214, 1}},		
+				[15] = {"Gentleman Welcomes the Wind True Manual", {0, 107, 213, 1}},		
+				[17] = {"Town Army Flying Dragon Spear True Manual", {0, 107, 214, 1}},		
 				[18] = {"Xuyªn V©n L¹c Hång Ch©n QuyÓn", {0, 107, 215, 1}},		
 				[20] = {"HuyÒn Minh Phong Ma Ch©n QuyÓn", {0, 107, 216, 1}},		
 				[21] = {"Linh Cæ HuyÒn Tµ Ch©n QuyÓn", {0, 107, 217, 1}},		
 				[23] = {"Cöu Thiªn Phong L«i Ch©n QuyÓn", {0, 107, 218, 1}},		
-				[25] = {"Håi Phong Tr¶m NhËt Ch©n QuyÓn", {0, 107, 219, 1}},		
+				[25] = {"Returning Wind Slashing Sun Fist Manual", {0, 107, 219, 1}},		
 				[26] = {"Phô Kú Hµnh TrËn Ch©n QuyÓn", {0, 107, 220, 1}},		
 				[27] = {"Ng­ng HuyÕt Phong Hån Ch©n QuyÓn", {0, 107, 221, 1}},		
 				[29] = {"Hång TrÇn Tóy Méng Ch©n QuyÓn", {0, 107, 222, 1}},		
@@ -517,33 +517,33 @@ function give70GaojiMiji()
 	--gf_EventGiveRandAward(VET_2012_GAOJIMIJI,10000,1)
 end
 VET_2013_FRUIT = {
-		[1] = {1, 5, "Nh·n", {2, 1, 30164, 1}, 0},
-		[2] = {1, 5, "Ch«m Ch«m", {2, 1, 30165, 1}, 0},
+		[1] = {1, 5, "Longan", {2, 1, 30164, 1}, 0},
+		[2] = {1, 5, "Rambutan", {2, 1, 30165, 1}, 0},
 		[3] = {1, 5, "Cam", {2, 1, 30165, 1}, 0},
-		[4] = {1, 5, "Dõa", {2, 1, 30167, 1}, 0},
-		[5] = {1, 5, "M¨ng Côt", {2, 1, 30168, 1}, 0},
-		[6] = {1, 5, "M·ng cÇu", {2, 1, 30179, 1}, 0},
-		[7] = {1, 5, "Khãm", {2, 1, 30180, 1}, 0},
-		[8] = {1, 5, "Lª", {2, 1, 30181, 1}, 0},
-		[9] = {1, 5, "Bßn Bon", {2, 1, 30182, 1}, 0},
-		[10] = {1, 5, "KhÕ", {2, 1, 30183, 1}, 0},
-		[11] = {1, 5, "B­ëi", {2, 1, 30169, 1}, 0},
-		[12] = {1, 5, "D©u", {2, 1, 30170, 1}, 0},
-		[13] = {1, 5, "Chuèi", {2, 1, 30171, 1}, 0},
-		[14] = {1, 5, "Xoµi", {2, 1, 30172, 1}, 0},
-		[15] = {1, 5, "§µo", {2, 1, 30173, 1}, 0},
-		[16] = {1, 5, "MËn", {2, 1, 30174, 1}, 0},
-		[17] = {1, 5, "V¶i", {2, 1, 30175, 1}, 0},
-		[18] = {1, 5, "T¸o", {2, 1, 30176, 1}, 0},
-		[19] = {1, 5, "B¬", {2, 1, 30177, 1}, 0},
-		[20] = {1, 5, "§u §ñ", {2, 1, 30178, 1}, 0},
+		[4] = {1, 5, "Coconut", {2, 1, 30167, 1}, 0},
+		[5] = {1, 5, "Mangosteen", {2, 1, 30168, 1}, 0},
+		[6] = {1, 5, "Soursop", {2, 1, 30179, 1}, 0},
+		[7] = {1, 5, "Pineapple", {2, 1, 30180, 1}, 0},
+		[8] = {1, 5, "Li", {2, 1, 30181, 1}, 0},
+		[9] = {1, 5, "Langsat", {2, 1, 30182, 1}, 0},
+		[10] = {1, 5, "Star Fruit", {2, 1, 30183, 1}, 0},
+		[11] = {1, 5, "Pomelo", {2, 1, 30169, 1}, 0},
+		[12] = {1, 5, "Strawberry", {2, 1, 30170, 1}, 0},
+		[13] = {1, 5, "Banana", {2, 1, 30171, 1}, 0},
+		[14] = {1, 5, "Mango", {2, 1, 30172, 1}, 0},
+		[15] = {1, 5, "Peach", {2, 1, 30173, 1}, 0},
+		[16] = {1, 5, "Plum", {2, 1, 30174, 1}, 0},
+		[17] = {1, 5, "Lychee", {2, 1, 30175, 1}, 0},
+		[18] = {1, 5, "Apple", {2, 1, 30176, 1}, 0},
+		[19] = {1, 5, "Avocado", {2, 1, 30177, 1}, 0},
+		[20] = {1, 5, "Papaya", {2, 1, 30178, 1}, 0},
 		}
 function give_fruit1()
 --	local nIndex = random(1,20)
 	local nG = VET_2013_FRUIT[6][4][1]
 	local nD = VET_2013_FRUIT[6][4][2]
 	local nP = VET_2013_FRUIT[6][4][3]
-	gf_AddItemEx2({nG, nD, nP, 77}, VET_2013_FRUIT[6][3], "GIAP NGO BAO RUONG BK", "tr¸i c©y")
+	gf_AddItemEx2({nG, nD, nP, 77}, VET_2013_FRUIT[6][3], "GIAP NGO BAO RUONG BK", "fruit")
 	Msg2Player("B¹n nhËn ®­îc 77 M·ng CÇu")
 end
 function give_fruit2()
@@ -551,7 +551,7 @@ function give_fruit2()
 	local nG = VET_2013_FRUIT[4][4][1]
 	local nD = VET_2013_FRUIT[4][4][2]
 	local nP = VET_2013_FRUIT[4][4][3]
-	gf_AddItemEx2({nG, nD, nP, 77}, VET_2013_FRUIT[4][3], "GIAP NGO BAO RUONG BK", "tr¸i c©y")
+	gf_AddItemEx2({nG, nD, nP, 77}, VET_2013_FRUIT[4][3], "GIAP NGO BAO RUONG BK", "fruit")
 	Msg2Player("B¹n nhËn ®­îc 77 Dõa")
 end
 function give_fruit3()
@@ -559,7 +559,7 @@ function give_fruit3()
 	local nG = VET_2013_FRUIT[20][4][1]
 	local nD = VET_2013_FRUIT[20][4][2]
 	local nP = VET_2013_FRUIT[20][4][3]
-	gf_AddItemEx2({nG, nD, nP, 77}, VET_2013_FRUIT[20][3], "GIAP NGO BAO RUONG BK", "tr¸i c©y")
+	gf_AddItemEx2({nG, nD, nP, 77}, VET_2013_FRUIT[20][3], "GIAP NGO BAO RUONG BK", "fruit")
 	Msg2Player("B¹n nhËn ®­îc 77 §u §ñ")
 end
 function give_fruit4()
@@ -567,7 +567,7 @@ function give_fruit4()
 	local nG = VET_2013_FRUIT[14][4][1]
 	local nD = VET_2013_FRUIT[14][4][2]
 	local nP = VET_2013_FRUIT[14][4][3]
-	gf_AddItemEx2({nG, nD, nP, 77}, VET_2013_FRUIT[14][3], "GIAP NGO BAO RUONG BK", "tr¸i c©y")
+	gf_AddItemEx2({nG, nD, nP, 77}, VET_2013_FRUIT[14][3], "GIAP NGO BAO RUONG BK", "fruit")
 	Msg2Player("B¹n nhËn ®­îc 77 Xoµi")
 end
 function give_HHVD2()
@@ -576,16 +576,16 @@ function give_HHVD2()
 end
 function give_HHVD3()
 	gf_AddItemEx2({0,102,8842, 1,1,-1,-1,-1,-1,-1,-1,-1,0}, "Huy Hoµng Chi KÕ", "GIAP NGO BAO RUONG BK", "Huy Hoµng Chi KÕ")
-	gf_AddItemEx2({0,102,8843, 1,1,-1,-1,-1,-1,-1,-1,-1,0}, "Vinh Dù Chi KÕ", "GIAP NGO BAO RUONG BK", "Vinh Dù Chi KÕ")
+	gf_AddItemEx2({0,102,8843, 1,1,-1,-1,-1,-1,-1,-1,-1,0}, "Honor Plan", "GIAP NGO BAO RUONG BK", "Honor Plan")
 end
 function give_HHVD4()
 	gf_AddItemEx2({0,102,8844, 1,1,-1,-1,-1,-1,-1,-1,-1,0}, "Huy Hoµng QuËt Khëi", "GIAP NGO BAO RUONG BK", "Huy Hoµng QuËt Khëi")
-	gf_AddItemEx2({0,102,8845, 1,1,-1,-1,-1,-1,-1,-1,-1,0}, "Vinh Dù QuËt Khëi", "GIAP NGO BAO RUONG BK", "Vinh Dù QuËt Khëi")
+	gf_AddItemEx2({0,102,8845, 1,1,-1,-1,-1,-1,-1,-1,-1,0}, "Glory Rise", "GIAP NGO BAO RUONG BK", "Glory Rise")
 	Msg2Player("B¹n nhËn ®­îc vËt phÈm Huy Hoµng Vinh Dù QuËt Khëi")
 end
 function give_HHVD5()
 	gf_AddItemEx2({0,102,8846, 1,1,-1,-1,-1,-1,-1,-1,-1,0}, "Huy Hoµng", "GIAP NGO BAO RUONG BK", "Huy Hoµng")
-	gf_AddItemEx2({0,102,8847, 1,1,-1,-1,-1,-1,-1,-1,-1,0}, "Vinh Dù", "GIAP NGO BAO RUONG BK", "Vinh Dù")
+	gf_AddItemEx2({0,102,8847, 1,1,-1,-1,-1,-1,-1,-1,-1,0}, "Glory", "GIAP NGO BAO RUONG BK", "Glory")
 	Msg2Player("B¹n nhËn ®­îc vËt phÈm Huy Hoµng Vinh Dù")
 end
 
@@ -685,120 +685,120 @@ function get_MaDaoThanhCong(nType)
 end
 
 function award_random_gem_box_1()
-	gf_AddItemEx2({2, 1, 30998, 1}, "Tói §¸ Quý CÊp 1", "GIAP NGO BAO RUONG BK", "Tói §¸ Quý CÊp 1")
+	gf_AddItemEx2({2, 1, 30998, 1}, "Gem Bag Tier 1", "GIAP NGO BAO RUONG BK", "Gem Bag Tier 1")
 end
 
 function award_random_gem_box_2()
-	gf_AddItemEx2({2, 1, 30999, 1}, "Tói §¸ Quý CÊp 2", "GIAP NGO BAO RUONG BK", "Tói §¸ Quý CÊp 2")
+	gf_AddItemEx2({2, 1, 30999, 1}, "Gem Bag Tier 2", "GIAP NGO BAO RUONG BK", "Gem Bag Tier 2")
 end
 
 function award_random_gem_box_3()
-	gf_AddItemEx2({2, 1, 31000, 1}, "Tói §¸ Quý CÊp 3", "GIAP NGO BAO RUONG BK", "Tói §¸ Quý CÊp 3")
+	gf_AddItemEx2({2, 1, 31000, 1}, "Gem Bag Tier 3", "GIAP NGO BAO RUONG BK", "Gem Bag Tier 3")
 end
 
 function award_random_gem_box_4()
-	gf_AddItemEx2({2, 1, 31001, 1}, "Tói §¸ Quý CÊp 4", "GIAP NGO BAO RUONG BK", "Tói §¸ Quý CÊp 4")
+	gf_AddItemEx2({2, 1, 31001, 1}, "Gem Bag Tier 4", "GIAP NGO BAO RUONG BK", "Gem Bag Tier 4")
 end
 
 function award_random_gem_box_5()
-	gf_AddItemEx2({2, 1, 31024, 1}, "Tói §¸ Quý CÊp 5", "GIAP NGO BAO RUONG BK", "Tói §¸ Quý CÊp 5")
+	gf_AddItemEx2({2, 1, 31024, 1}, "Gem Bag Tier 5", "GIAP NGO BAO RUONG BK", "Gem Bag Tier 5")
 end
 
 
 VET_BOOK_PET1 = {
 	{1, 699, "Ch©n khÝ hé thÓ CÊp 1", {2,150,1,1}, 0},
 	{1, 699, "Ých Thä Diªn D­¬ng CÊp 1", {2,150,5,1}, 0},
-	{1, 699, "C­êng Th©n B¸ ThÓ CÊp 1", {2,150,9,1}, 0},
-	{1, 699, "¢m Phong Thùc Cèt CÊp 1", {2,150,13,1}, 0},
+	{1, 699, "Strong Body Mighty Form Lv 1", {2,150,9,1}, 0},
+	{1, 699, "Yin Wind Bone Eroding Lv 1", {2,150,13,1}, 0},
 	{1, 456, "HuyÒn Vò V« Song CÊp 1", {2,150,17,1}, 0},
-	{1, 699, "V« Hµnh V« T­¬ng CÊp 1", {2,150,21,1}, 0},
-	{1, 699, "Kim Linh Phô ThÓ CÊp 1", {2,150,25,1}, 0},
-	{1, 699, "Méc Linh Phô ThÓ CÊp 1", {2,150,29,1}, 0},
+	{1, 699, "Formless Featureless Lv 1", {2,150,21,1}, 0},
+	{1, 699, "Metal Spirit Attachment Lv 1", {2,150,25,1}, 0},
+	{1, 699, "Wood Spirit Attachment Lv 1", {2,150,29,1}, 0},
 	{1, 699, "Thñy Linh Phô ThÓ CÊp 1", {2,150,33,1}, 0},
 	{1, 699, "Háa Linh Phô ThÓ CÊp 1", {2,150,37,1}, 0},
-	{1, 699, "Thæ Linh Phô ThÓ CÊp 1", {2,150,41,1}, 0},
-	{1, 699, "Ph¸ Kh«ng Tr¶m ¶nh CÊp 1", {2,150,45,1}, 0},
+	{1, 699, "Earth Spirit Attachment Lv 1", {2,150,41,1}, 0},
+	{1, 699, "Sky Shattering Shadow Slash Lv 1", {2,150,45,1}, 0},
 	{1, 699, "S¸t th­¬ng gia n©ng CÊp 1", {2,150,49,1}, 0},
-	{1, 456, "Khinh Linh TÊn TËt CÊp 1", {2,150,53,1}, 0},
-	{1, 700, "V« H×nh Chi Cæ CÊp 1", {2,150,57,1}, 0},
+	{1, 456, "Swift Spirit Quickness Lv 1", {2,150,53,1}, 0},
+	{1, 700, "Formless Ancient Lv 1", {2,150,57,1}, 0},
 }
 
 VET_BOOK_PET2 = {
 	{1, 699, "Ch©n khÝ hé thÓ CÊp 2", {2,150,2,1}, 0},
 	{1, 699, "Ých Thä Diªn D­¬ng CÊp 2", {2,150,6,1}, 0},
-	{1, 699, "C­êng Th©n B¸ ThÓ CÊp 2", {2,150,10,1}, 0},
-	{1, 699, "¢m Phong Thùc Cèt CÊp 2", {2,150,14,1}, 0},
+	{1, 699, "Strong Body Mighty Form Lv 2", {2,150,10,1}, 0},
+	{1, 699, "Yin Wind Bone Eroding Lv 2", {2,150,14,1}, 0},
 	{1, 456, "HuyÒn Vò V« Song CÊp 2", {2,150,18,1}, 0},
-	{1, 699, "V« Hµnh V« T­¬ng CÊp 2", {2,150,22,1}, 0},
-	{1, 699, "Kim Linh Phô ThÓ CÊp 2", {2,150,26,1}, 0},
-	{1, 699, "Méc Linh Phô ThÓ CÊp 2", {2,150,30,1}, 0},
+	{1, 699, "Formless Featureless Lv 2", {2,150,22,1}, 0},
+	{1, 699, "Metal Spirit Attachment Lv 2", {2,150,26,1}, 0},
+	{1, 699, "Wood Spirit Attachment Lv 2", {2,150,30,1}, 0},
 	{1, 699, "Thñy Linh Phô ThÓ CÊp 2", {2,150,34,1}, 0},
 	{1, 699, "Háa Linh Phô ThÓ CÊp 2", {2,150,38,1}, 0},
-	{1, 699, "Thæ Linh Phô ThÓ CÊp 2", {2,150,42,1}, 0},
-	{1, 699, "Ph¸ Kh«ng Tr¶m ¶nh CÊp 2", {2,150,46,1}, 0},
+	{1, 699, "Earth Spirit Attachment Lv 2", {2,150,42,1}, 0},
+	{1, 699, "Sky Shattering Shadow Slash Lv 2", {2,150,46,1}, 0},
 	{1, 699, "S¸t th­¬ng gia n©ng CÊp 2", {2,150,50,1}, 0},
-	{1, 456, "Khinh Linh TÊn TËt CÊp 2", {2,150,54,1}, 0},
-	{1, 700, "V« H×nh Chi Cæ CÊp 2", {2,150,58,1}, 0},
+	{1, 456, "Swift Spirit Quickness Lv 2", {2,150,54,1}, 0},
+	{1, 700, "Formless Ancient Lv 2", {2,150,58,1}, 0},
 }
 
 VET_BOOK_PET3 = {
 	{1, 718, "Ch©n khÝ hé thÓ CÊp 3", {2,150,3,1}, 0},
 	{1, 718, "Ých Thä Diªn D­¬ng CÊp 3", {2,150,7,1}, 0},
-	{1, 718, "C­êng Th©n B¸ ThÓ CÊp 3", {2,150,11,1}, 0},
-	{1, 718, "¢m Phong Thùc Cèt CÊp 3", {2,150,15,1}, 0},
+	{1, 718, "Strong Body Mighty Form Lv 3", {2,150,11,1}, 0},
+	{1, 718, "Yin Wind Bone Eroding Lv 3", {2,150,15,1}, 0},
 	{1, 333, "HuyÒn Vò V« Song CÊp 3", {2,150,19,1}, 0},
-	{1, 718, "V« Hµnh V« T­¬ng CÊp 3", {2,150,23,1}, 0},
-	{1, 718, "Kim Linh Phô ThÓ CÊp 3", {2,150,27,1}, 0},
-	{1, 718, "Méc Linh Phô ThÓ CÊp 3", {2,150,31,1}, 0},
+	{1, 718, "Formless Featureless Lv 3", {2,150,23,1}, 0},
+	{1, 718, "Metal Spirit Attachment Lv 3", {2,150,27,1}, 0},
+	{1, 718, "Wood Spirit Attachment Lv 3", {2,150,31,1}, 0},
 	{1, 718, "Thñy Linh Phô ThÓ CÊp 3", {2,150,35,1}, 0},
 	{1, 718, "Háa Linh Phô ThÓ CÊp 3", {2,150,39,1}, 0},
-	{1, 718, "Thæ Linh Phô ThÓ CÊp 3", {2,150,43,1}, 0},
-	{1, 718, "Ph¸ Kh«ng Tr¶m ¶nh CÊp 3", {2,150,47,1}, 0},
+	{1, 718, "Earth Spirit Attachment Lv 3", {2,150,43,1}, 0},
+	{1, 718, "Sky Shattering Shadow Slash Lv 3", {2,150,47,1}, 0},
 	{1, 718, "S¸t th­¬ng gia n©ng CÊp 3", {2,150,51,1}, 0},
-	{1, 333, "Khinh Linh TÊn TËt CÊp 3", {2,150,55,1}, 0},
-	{1, 718, "V« H×nh Chi Cæ CÊp 3", {2,150,59,1}, 0},
+	{1, 333, "Swift Spirit Quickness Lv 3", {2,150,55,1}, 0},
+	{1, 718, "Formless Ancient Lv 3", {2,150,59,1}, 0},
 }
 VET_BOOK_PET4 = {
 	{1, 718, "Ch©n khÝ hé thÓ CÊp 4",{2,150,4,1}, 0},
 	{1, 718, "Ých Thä Diªn D­¬ng CÊp 4",{2,150,8,1}, 0},
-	{1, 718, "C­êng Th©n B¸ ThÓ CÊp 4",{2,150,12,1}, 0},
-	{1, 718, "¢m Phong Thùc Cèt CÊp 4",{2,150,16,1}, 0},
+	{1, 718, "Qiang Shen Ba Ti Level 4",{2,150,12,1}, 0},
+	{1, 718, "Yin Feng Shi Gu Level 4",{2,150,16,1}, 0},
 	{1, 333, "HuyÒn Vò V« Song CÊp 4",{2,150,20,1}, 0},
-	{1, 718, "V« Hµnh V« T­¬ng CÊp 4",{2,150,24,1}, 0},
-	{1, 718, "Kim Linh Phô ThÓ CÊp 4",{2,150,28,1}, 0},
-	{1, 718, "Méc Linh Phô ThÓ CÊp 4",{2,150,32,1}, 0},
-	{1, 718, "Thuû Linh Phô ThÓ CÊp 4",{2,150,36,1}, 0},
-	{1, 718, "Ho¶ Linh Phô ThÓ CÊp 4",{2,150,40,1}, 0},
-	{1, 718, "Thæ Linh Phô ThÓ CÊp 4",{2,150,44,1}, 0},
-	{1, 718, "Ph¸ Kh«ng Tr¶m ¶nh CÊp 4",{2,150,48,1}, 0},
+	{1, 718, "Wu Xing Wu Xiang Level 4",{2,150,24,1}, 0},
+	{1, 718, "Jin Ling Fu Ti Level 4",{2,150,28,1}, 0},
+	{1, 718, "Mu Ling Fu Ti Level 4",{2,150,32,1}, 0},
+	{1, 718, "Shui Ling Fu Ti Level 4",{2,150,36,1}, 0},
+	{1, 718, "Huo Ling Fu Ti Level 4",{2,150,40,1}, 0},
+	{1, 718, "Tu Ling Fu Ti Level 4",{2,150,44,1}, 0},
+	{1, 718, "Po Kong Zhan Ying Level 4",{2,150,48,1}, 0},
 	{1, 718, "S¸t th­¬ng gia n©ng cÊp 4",{2,150,52,1}, 0},
-	{1, 333, "Khinh Linh TÊn TËt  CÊp 4",{2,150,56,1}, 0},
-	{1, 718, "V« H×nh Chi Cæ CÊp 4",{2,150,60,1}, 0},
+	{1, 333, "Qing Ling Xun Ji Level 4",{2,150,56,1}, 0},
+	{1, 718, "Wu Xing Zhi Gu Level 4",{2,150,60,1}, 0},
 }
 function Book_Pet1(nNum)
 	for i = 1, nNum do
-		gf_EventGiveRandAward(VET_BOOK_PET1,10000,"", "GIAP NGO BAO RUONG BK","S¸ch PET 1")
+		gf_EventGiveRandAward(VET_BOOK_PET1,10000,"", "GIAP NGO BAO RUONG BK","PET Book 1")
 		Msg2Player("B¹n nhËn ®­îc 1 s¸ch PET cÊp 1")
 	end
 end
 
 function Book_Pet2(nNum)
 	for i = 1, nNum do
-		gf_EventGiveRandAward(VET_BOOK_PET2,10000,"", "GIAP NGO BAO RUONG BK","S¸ch PET 2")
+		gf_EventGiveRandAward(VET_BOOK_PET2,10000,"", "GIAP NGO BAO RUONG BK","PET Book 2")
 		Msg2Player("B¹n nhËn ®­îc 1 s¸ch PET cÊp 2")
 	end
 end
 
 function Book_Pet3(nNum)
 	for i = 1, nNum do
-		gf_EventGiveRandAward(VET_BOOK_PET3,10000,"", "GIAP NGO BAO RUONG BK","S¸ch PET 3")
+		gf_EventGiveRandAward(VET_BOOK_PET3,10000,"", "GIAP NGO BAO RUONG BK","PET Book 3")
 		Msg2Player("B¹n nhËn ®­îc 1 s¸ch PET cÊp 3")
 	end
 end
 
 function Book_Pet4(nNum)
 	for i = 1, nNum do
-		gf_EventGiveRandAward(VET_BOOK_PET4,10000,"", "GIAP NGO BAO RUONG BK","S¸ch PET 4")
+		gf_EventGiveRandAward(VET_BOOK_PET4,10000,"", "GIAP NGO BAO RUONG BK","PET Book 4")
 		Msg2Player("B¹n nhËn ®­îc 1 s¸ch PET cÊp 4")
 	end
 end
@@ -818,7 +818,7 @@ tbKimXa3sao = {
 	[12] = {item={{gdp={0,153,7,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Huy Ch­¬ng Háa ChÕ ngò hµnh"}}},
 	[13] = {item={{gdp={0,153,8,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Huy Ch­¬ng Thæ ChÕ ngò hµnh"}}},
 	[14] = {item={{gdp={0,153,9,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Huy Ch­¬ng ¢m ChÕ ngò hµnh"}}},
-	[15] = {item={{gdp={0,154,3,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Bè ChÕ Cao §ång Ngoa"}}},
+	[15] = {item={{gdp={0,154,3,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Gao Tong Wa Recipe"}}},
 	[16] = {item={{gdp={0,154,4,1,1,-1,-1,-1,-1,-1,-1,-1}, name="ChiÕn Hµi Kim ChÕ ngò hµnh"}}},
 	[17] = {item={{gdp={0,154,5,1,1,-1,-1,-1,-1,-1,-1,-1}, name="ChiÕn Hµi Méc ChÕ ngò hµnh"}}},
 	[18] = {item={{gdp={0,154,6,1,1,-1,-1,-1,-1,-1,-1,-1}, name="ChiÕn Hµi Thñy ChÕ ngò hµnh"}}},
@@ -859,22 +859,22 @@ function TrangBiKimXa3Sao(nQty)
 	gf_WriteLogEx("GIAP NGO BAO RUONG BK", "nhËn", 1, "trang bÞ Kim Xµ")
 end
 tbMatTich_GN = {
-		[2] = {0,107,204, 2,"Kim Cang B¸t Nh· Ch©n QuyÓn"},
-		[4] = {0,107,205, 1,"TiÒm Long Tóc DiÖt Ch©n QuyÓn"},
-		[3] = {0,107,206, 1,"V« TrÇn Bå §Ò Ch©n QuyÓn"},
+		[2] = {0,107,204, 2,"Vajra Prajna True Scroll"},
+		[4] = {0,107,205, 1,"Hidden Dragon Annihilation True Manual"},
+		[3] = {0,107,206, 1,"Dustless Bodhi True Manual"},
 		[6] = {0,107,207, 2,"Thiªn La Liªn Ch©u Ch©n QuyÓn"},
-		[8] = {0,107,208, 1,"Nh­ ý Kim §Ønh Ch©n QuyÓn"},
-		[9] = {0,107,209, 1,"BÝch H¶i TuyÖt ¢m Ch©n QuyÓn"},
-		[11] = {0,107,210, 2,"Hçn §én TrÊn Nh¹c Ch©n QuyÓn"},
+		[8] = {0,107,208, 1,"Wishful Golden Top True Manual"},
+		[9] = {0,107,209, 1,"Azure Sea Silent Sound True Manual"},
+		[11] = {0,107,210, 2,"Chaos Town Mountain True Manual"},
 		[12] = {0,107,211, 2,"Quú Thiªn Du Long Ch©n QuyÓn"},
 		[14] = {0,107,212, 1,"HuyÒn ¶nh Mª T«ng Ch©n QuyÓn"},
-		[15] = {0,107,213, 2,"Qu©n Tö §íi Phong Ch©n QuyÓn"},
-		[17] = {0,107,214, 2,"TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn"},
+		[15] = {0,107,213, 2,"Gentleman Welcomes the Wind True Manual"},
+		[17] = {0,107,214, 2,"Town Army Flying Dragon Spear True Manual"},
 		[18] = {0,107,215, 2,"Xuyªn V©n L¹c Hång Ch©n QuyÓn"},
 		[20] = {0,107,216, 2,"HuyÒn Minh Phong Ma Ch©n QuyÓn"},
 		[21] = {0,107,217, 1,"Linh Cæ HuyÒn Tµ Ch©n QuyÓn"},
 		[23] = {0,107,218,1,"Cöu Thiªn Phong L«i Ch©n QuyÓn"},
-		[25] = {0,107,219,2,"Håi Phong Tr¶m NhËt Ch©n QuyÓn"},
+		[25] = {0,107,219,2,"Returning Wind Slashing Sun Fist Manual"},
 		[26] = {0,107,220,2,"Phô Kú Hµnh TrËn Ch©n QuyÓn"},
 		[27] = {0,107,221,1,"Ng­ng HuyÕt Phong Hån Ch©n QuyÓn"},
 		[29] = {0,107,222,2,"Hång TrÇn Tóy Méng Ch©n QuyÓn"},
@@ -892,23 +892,23 @@ function MatTichMonPhai20_HePhai()
 	Msg2Player("B¹n nhËn ®­îc 1 mËt tÞch siªu cÊp")
 end
 tbMatTich_random_GN = {
-		[0] = {0,107,204, 2,"Kim Cang B¸t Nh· Ch©n QuyÓn"},
-		[1] = {0,107,205, 1,"TiÒm Long Tóc DiÖt Ch©n QuyÓn"},
-		[2] = {0,107,206, 1,"V« TrÇn Bå §Ò Ch©n QuyÓn"},
+		[0] = {0,107,204, 2,"Vajra Prajna True Scroll"},
+		[1] = {0,107,205, 1,"Hidden Dragon Annihilation True Manual"},
+		[2] = {0,107,206, 1,"Dustless Bodhi True Manual"},
 		[3] = {0,107,207, 2,"Thiªn La Liªn Ch©u Ch©n QuyÓn"},
-		[4] = {0,107,208, 1,"Nh­ ý Kim §Ønh Ch©n QuyÓn"},
-		[5] = {0,107,209, 1,"BÝch H¶i TuyÖt ¢m Ch©n QuyÓn"},
-		[6] = {0,107,210, 2,"Hçn §én TrÊn Nh¹c Ch©n QuyÓn"},
+		[4] = {0,107,208, 1,"Wishful Golden Top True Manual"},
+		[5] = {0,107,209, 1,"Azure Sea Silent Sound True Manual"},
+		[6] = {0,107,210, 2,"Chaos Town Mountain True Manual"},
 		[7] = {0,107,211, 2,"Quú Thiªn Du Long Ch©n QuyÓn"},
 		[8] = {0,107,212, 1,"HuyÒn ¶nh Mª T«ng Ch©n QuyÓn"},
-		[9] = {0,107,213, 2,"Qu©n Tö §íi Phong Ch©n QuyÓn"},
-		[10] = {0,107,214, 2,"TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn"},
+		[9] = {0,107,213, 2,"Gentleman Welcomes the Wind True Manual"},
+		[10] = {0,107,214, 2,"Town Army Flying Dragon Spear True Manual"},
 		[11] = {0,107,215, 2,"Xuyªn V©n L¹c Hång Ch©n QuyÓn"},
 		[12] = {0,107,216, 2,"HuyÒn Minh Phong Ma Ch©n QuyÓn"},
 		[13] = {0,107,217, 1,"Linh Cæ HuyÒn Tµ Ch©n QuyÓn"},
 		[14] = {0,107,218,1,"Cöu Thiªn Phong L«i Ch©n QuyÓn"},
 		[15] = {0,107,222,2,"Hång TrÇn Tóy Méng Ch©n QuyÓn"},
-		[16] = {0,107,219,2,"Håi Phong Tr¶m NhËt Ch©n QuyÓn"},
+		[16] = {0,107,219,2,"Returning Wind Slashing Sun Fist Manual"},
 		[17] = {0,107,220,2,"Phô Kú Hµnh TrËn Ch©n QuyÓn"},
 		[18] = {0,107,221,1,"Ng­ng HuyÕt Phong Hån Ch©n QuyÓn"},
 		[19] = {0,107,223,2,"Phong Hoa Thiªn DiÖp Ch©n QuyÓn"},

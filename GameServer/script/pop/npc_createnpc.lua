@@ -16,7 +16,7 @@ talkTable.sel = {
 	{"Quû ¶nh Bót Lý ChÝ KiÖt", "gyb_lzj"},
 	{"V« T×nh Tr¶o Tiªu Thanh", "wqz_xq"},
 	{"Sö dông ph¸o hoa", "OnUse"},
-	{"KÕt thóc ®èi tho¹i", "nothing",}, 
+	{"End conversation", "nothing",}, 
 };
 
 function nxj_ykl()

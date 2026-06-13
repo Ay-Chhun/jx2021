@@ -796,7 +796,7 @@ function _trigger_npc_talk_event(tList, data)
         		end
         	end
         	tinsert(tSay, format("%s/#_npc_talk_main(%d)", "Ta cÇn xö lý nh÷ng viÖc kh¸c", nIndex))
-        	tinsert(tSay, format("%s/nothing", "Ra khái"))
+        	tinsert(tSay, format("%s/nothing", "Exit"))
         	Say(szTitle, getn(tSay), tSay)
 		end
 	else
@@ -825,7 +825,7 @@ function _trigger_item_talk_event(tList, data)
         		end
         	end
         	tinsert(tSay, format("%s/#_item_talk_main(%d)", "Ta cÇn xö lý nh÷ng viÖc kh¸c", nIndex))
-        	tinsert(tSay, format("%s/nothing", "Ra khái"))
+        	tinsert(tSay, format("%s/nothing", "Exit"))
         	Say(szTitle, getn(tSay), tSay)
 		end
 	else

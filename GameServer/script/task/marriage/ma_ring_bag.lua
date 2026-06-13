@@ -9,7 +9,7 @@ Tb_ma_ring = {104,105}
 function OnUse()
 	Say("<color=green>Gîi ı<color>: Sö dông <color=yellow>hép nhÉn<color> cã thÓ cã nhÉn kim c­¬ng t­¬ng øng tİnh c¸ch<color=yellow>nhÉn kim c­¬ng<color> phï hîp tİnh c¸ch. Sao h¶?",
 	2,
-	"§æi/ma_ring_bag_use",
+	"Exchange/ma_ring_bag_use",
 	"§Ó ta suy nghÜ l¹i/end_dialog"
 	)
 end

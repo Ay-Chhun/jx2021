@@ -14,7 +14,7 @@ end
 function sure_exchange()
 	local nFreeRoom = GetFreeItemRoom();
 	local nCount = min(GetItemCount(2, 1, 30540), floor(GetCash()/(CC_ZLP_PARK_COST * 10000)));
-	AskClientForNumber("sure_exchange_deal",0,min(nFreeRoom, nCount),"NhËp sè l­îng","")
+	AskClientForNumber("sure_exchange_deal",0,min(nFreeRoom, nCount),"Enter quantity","")
 end
 
 function sure_exchange_deal(nNum)
@@ -37,7 +37,7 @@ function sure_exchange_deal(nNum)
 		if Pay(CC_ZLP_PARK_COST * 10000) ~= 1 then
 			return 0;
 		end
-		gf_AddItemEx2({2, 1, 30541, 1}, "LÔ bao N©ng CÊp Phiªn B¶n Míi", CC_LOG_TITLE, "§æi LÔ Bao N©ng CÊp Phiªn B¶n Míi", 0, 1);
+		gf_AddItemEx2({2, 1, 30541, 1}, "New Version Upgrade Gift Pack", CC_LOG_TITLE, "Exchange for New Version Upgrade Gift Pack", 0, 1);
 	end
 end 
 

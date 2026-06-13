@@ -20,15 +20,15 @@ T_FinalAward = {
 			{"Exp", -3, 0, 0, 1000000000},
 			{"Ch©n khÝ", -4, 0, 0, 50000},
 		}},
-	["exp1g_shengwang10k_shimen10k"] = {"EXP + Danh väng + §iÓm s­ m«n", 1, {
+	["exp1g_shengwang10k_shimen10k"] = {"EXP + Reputation + Sect Points", 1, {
 			{"Exp", -3, 0, 0, 1000000000},
-			{"Danh väng", -5, 0, 0, 10000},
-			{"§iÓm s­ m«n", -6, 0, 0, 10000},
+			{"Reputation", -5, 0, 0, 10000},
+			{"Sect Points", -6, 0, 0, 10000},
 		}},
-	["exp2g_shengwang10k_shimen10k"] = {"EXP + Danh väng + §iÓm s­ m«n", 1, {
+	["exp2g_shengwang10k_shimen10k"] = {"EXP + Reputation + Sect Points", 1, {
 			{"Exp", -3, 0, 0, 2000000000},
-			{"Danh väng", -5, 0, 0, 10000},
-			{"§iÓm s­ m«n", -6, 0, 0, 10000},
+			{"Reputation", -5, 0, 0, 10000},
+			{"Sect Points", -6, 0, 0, 10000},
 		}},
 	["exp1g_dinghunyuntieshenshi"] = {"EXP + M¶nh MËt TÞch",1,  {
 			{"Exp", -3, 0, 0, 1000000000},

@@ -25,7 +25,7 @@ tbKillNpcWeekly.tbAward =
 	tbPrize = 
 	{
 		{"Exp", 150000000},
-		{2, 1, 30785, 19, "V« Tù Kinh Th­"},
+		{2, 1, 30785, 19, "Wordless Scripture"},
 		{2, 1, 30868, 99, "B¶o VËt V¹n Niªn"},
 	}
 }

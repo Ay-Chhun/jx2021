@@ -27,12 +27,12 @@ local strTalk = {
 	"VËy t¹i h¹ cã thÓ gióp ®iÖn h¹ ®em {chiÕu th­} nµy ®Õn {§æng Quèc S­}, «ng Êy cã thÓ chøng minh thËt gi¶.",
 	"§æng Quèc S­ tuy ®· ph¸i binh ®Õn chiªu mé ta, nh­ng còng cÇn chøng minh ®©y ®Ých thËt lµ bót tÝch cña Hoµng th­îng, ng­¬i ®em ®Õn ®ã gióp ta.",
 	"T¹i h¹ sÏ ®em th­ nµy ®Õn cho {§æng Quèc S­} x¸c minh, cã g× sÏ th«ng b¸o ngay cho §iÖn h¹.",
-	"Ng­¬i ®i mau ®i, nhí b¶o träng!",
+	"Go quickly, take care!",
 	}
 	TalkEx("",strTalk);
 	AddItem(2,0,381,1);--µÃµ½¶þ»Ê×ÓµÄÐÅÎï
-	TaskTip("§em chiÕu th­ ®Õn cho §æng Quèc S­.");
-	Msg2Player("§em chiÕu th­ ®Õn cho §æng Quèc S­.");
+	TaskTip("Bring the edict to National Preceptor Dong.");
+	Msg2Player("Bring the edict to National Preceptor Dong.");
 	SetTask(TASK_DL_LV80_ID,3);
 	GivePlayerAward("Level_76","xn_step_1");
 	GivePlayerExp(SkeyDali,"duanchengen")

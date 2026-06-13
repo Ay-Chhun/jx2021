@@ -10,7 +10,7 @@ function InitMission()
 	SetMissionV(MV_TIMELEFT,READY_TIMER_LOOP);
 	local GameID = tonumber(date("%d%H%M%S"));
 	SetMissionV(MV_GAMEID,GameID);
-	Write_Log("§ua thuyÒn Rång tÕt §oan Ngä","Cuéc thi b¾t ®Çu"..GameID);
+	Write_Log("Dragon Boat Race for the Duanwu Festival","The competition has begun"..GameID);
 end;
 
 function RunMission()
@@ -51,14 +51,14 @@ function EndMission()
 	SetMissionV(MV_ENTERORDER,0);
 	SetMissionV(MV_COMPLETENUM,0);
 	SetMissionV(MV_TIMELEFT,0);
-	Write_Log("§ua thuyÒn Rång tÕt §oan Ngä","TrËn ®Êu kÕt thóc"..GetMissionV(MV_GAMEID));
+	Write_Log("Dragon Boat Race for the Duanwu Festival","TrËn ®Êu kÕt thóc"..GetMissionV(MV_GAMEID));
 end;
 
 function OnLeave(RoleIndex)
 	PlayerIndex = RoleIndex;
 	if GetTask(FINISHTIME) ~= 999999999 then	--Èç¹ûÊÇÍê³É±ÈÈüµÄÈËÍË³öÁË
 		if GetMissionV(MV_ROOMSTATE) == MS_STATE_WAITCOMPLETE then
-			Write_Log("Ho¹t ®éng tÕt §oan Ngä","Ng­êi ch¬i"..GetName().."sau khi c¸n ®Ých kh«ng chê th«ng b¸o thµnh tÝch ®· tho¸t khái cuéc thi");
+			Write_Log("Ho¹t ®éng tÕt §oan Ngä","Player"..GetName().."sau khi c¸n ®Ých kh«ng chê th«ng b¸o thµnh tÝch ®· tho¸t khái cuéc thi");
 			SetMissionV(MV_COMPLETENUM,GetMissionV(MV_COMPLETENUM)-1);
 		end;
 	end;
@@ -68,7 +68,7 @@ function OnLeave(RoleIndex)
 	elseif status == CAMP_PLAYER then
 		Restore_Player_State();
 	else
-		Write_Log("Ho¹t ®éng tÕt §oan Ngä",GetName().."Khi rêi khái tr­êng ®Êu tr¹ng th¸i ph¸t sinh sai sãt, STATUS lµ"..status);
+		Write_Log("Ho¹t ®éng tÕt §oan Ngä",GetName().."When leaving the arena an error occurred; STATUS is"..status);
 	end;
 	local MapID = GetWorldPos();
 	SetMapTaskTemp(MapID,1,0);

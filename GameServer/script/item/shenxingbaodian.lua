@@ -18,19 +18,19 @@ TB_DES_INFO =
 		[0] = "Khu vùc luyÖn cÊp",
 		[1] = {21,"NhÞ Long s¬n",3,1},
 		[2] = {22,"KiÕm M«n quan",3,1},
-		[3] = {24,"Miªu LÜnh",3,1},
-		[4] = {30,"H¹nh Hoa th«n",3,1},
+		[3] = {24,"Miaoling",3,1},
+		[4] = {30,"Hanh Hoa village",3,1},
 		[5] = {31,"Ngò §éc mª cung tÇng 1",3,1},
 		[6] = {32,"Ngò §éc cung tÇng 2",3,1},
 		[7] = {33,"D· Tr­ l©m",3,1},
-		[8] = {34,"Long TuyÒn Th«n",3,1},
+		[8] = {34,"Long Tuyen Village",3,1},
 		[9] = {35,"Mé TuyÕt s¬n trang",3,1},
 		[10] = {36,"¤ M«ng Bé",3,1},
 		[11] = {37,"V©n Méng Tr¹ch",3,1},
 		[12] = {38,"Linh B¶o s¬n",3,1},
 		[13] = {39,"Giang T©n Th«n",4,1},
 		[14] = {40,"Vò L¨ng s¬n",3,1},
-		[15] = {41,"Ch©n nói Vò L¨ng",3,1},
+		[15] = {41,"Foot of Vu Lang Mountain",3,1},
 		[16] = {42,"Thanh Khª ®éng",3,1},
 		[17] = {43,"ThiÕu L©m mËt thÊt-1",3,1},
 		[18] = {44,"ThiÕu L©m mËt thÊt-2",3,1},
@@ -49,7 +49,7 @@ TB_DES_INFO =
 		[31] = {57,"§iÓm Th­¬ng s¬n",3,1},
 		[32] = {58,"Vò Di s¬n",3,1},
 		[33] = {59,"Phôc Ng­u s¬n",3,1},
-		[34] = {60,"L­¬ng S¬n B¹c",3,1},
+		[34] = {60,"Liang Son Bac",3,1},
 		[35] = {61,"L­ìng Thñy ®éng_1",4,1},
 		[36] = {62,"L­ìng Thñy ®éng_2",5,1},
 		[37] = {63,"Kim Quang ®éng",3,1},
@@ -70,16 +70,16 @@ TB_DES_INFO =
 		[52] = {78,"Long Nh·n ®éng-2",7,1},
 		[53] = {79,"Thiªn S­ ®éng-1",5,1},
 		[54] = {80,"Thiªn S­ ®éng-2",6,1},
-		[55] = {81,"Phong §«",6,1},
-		[56] = {82,"§¹i Th¶o Nguyªn 1",3,1},
-		[57] = {83,"§¹i Th¶o Nguyªn 2",4,1},
+		[55] = {81,"Phong Do",6,1},
+		[56] = {82,"Great Grassland 1",3,1},
+		[57] = {83,"Great Grassland 2",4,1},
 		[58] = {84,"Bé l¹c V­¬ng Kú",4,1},
-		[59] = {85,"§µo Hoa ®¶o",5,1},
+		[59] = {85,"Peach Blossom Island",5,1},
 		[60] = {86,"Quû M«n Håi Lang",7,1},
 		[61] = {87,"Thanh ¢m ®éng_1",5,1},
 		[62] = {88,"Thanh ¢m ®éng_2",6,1},
-		[63] = {89,"T©y Song B¶n N¹p B¾c ",5,1},
-		[64] = {90,"T©y Song B¶n N¹p Nam ",6,1},
+		[63] = {89,"Xishuangbanna North",5,1},
+		[64] = {90,"Xishuangbanna South",6,1},
 		[65] = {91,"Thiªn TÇm th¸p_1",6,1},
 		[66] = {92,"Thiªn TÇm th¸p_2",7,1},
 		[67] = {93,"Thiªn TÇm th¸p_3",8,1},
@@ -90,27 +90,27 @@ TB_DES_INFO =
 		[72] = {99,"B¾c Phông T­êng",4,1},
 		[73] = {100,"Nam Phông T­êng",4,1},
 		[74] = {101,"Long M«n trÊn",5,1},
-		[75] = {102,"Quang Minh ®Ønh",7,1},
-		[76] = {103,"TÇn L¨ng",8,1},
+		[75] = {102,"Guangming Peak",7,1},
+		[76] = {103,"Qin Mausoleum",8,1},
 		[77] = {104,"Hoµng L¨ng mé thÊt tÇng 1",9,1},
 		[78] = {105,"Hoµng L¨ng mé thÊt tÇng 2",10,1},
 		[79] = {106,"Cæ D­¬ng ®éng_1",8,1},
 		[80] = {107,"Cæ D­¬ng ®éng_2",9,1},
 		[81] = {108,"D­îc V­¬ng cèc",9,1},
 		[82] = {109,"D­îc V­¬ng ®éng",10,1},
-		[83] = {110,"Mª cung sa m¹c",10,1},
+		[83] = {110,"Desert Demon Palace",10,1},
 		[84] = {111,"Dao Tiªn ®éng",4,1},
 	},
 	[2] = 	--ÎÒÏëÈ¥ÃÅÅÉµØÍ¼
 	{
 		[0] = "Khu vùc m«n ph¸i",
-		[1] = {"NewWorld(204,1599,3182)","ThiÕu L©m",5,0,1},
-		[2] = {"NewWorld(312,1825,3323)","Vâ §ang",5,0,1},
-		[3] = {"NewWorld(209,1547,3183)","C¸i Bang",5,0,1},
+		[1] = {"NewWorld(204,1599,3182)","Shaolin",5,0,1},
+		[2] = {"NewWorld(312,1825,3323)","Wudang",5,0,1},
+		[3] = {"NewWorld(209,1547,3183)","Beggars' Sect",5,0,1},
 		[4] = {"NewWorld(303,1645,3159)","Nga My",5,0,1},
 		[5] = {"NewWorld(305,1598,2824)","§­êng M«n",5,0,1},
 		[6] = {"NewWorld(219,1538,3151)","D­¬ng M«n",5,0,1},
-		[7] = {"NewWorld(407,1609,3193)","Ngò §éc",5,0,1},
+		[7] = {"NewWorld(407,1609,3193)","Five Poisons",5,0,1},
 		[8] = {"NewWorld(509,1424,3444)","C«n L«n",5,0,1},
 		[9] = {"NewWorld(152,1690,3289)","Minh gi¸o",5,0,1},
 		[10] = {"NewWorld(404,1484,2828)","Thóy Yªn",5,0,1},
@@ -120,14 +120,14 @@ TB_DES_INFO =
 		[0] = "Chç NPC thµnh thÞ",
 		[1] = 
 		{
-			[0] = "BiÖn Kinh",
+			[0] = "Bianjing",
 			[1] = {"NewWorld(200,1488,2953)","Thñ khè (§«ng)",5,0},
 			[2] = {"NewWorld(200,1296,2990)","Thñ khè (Nam)",5,0},
 			[3] = {"NewWorld(200,1272,2774)","Thñ khè (T©y)",5,0},
 			[4] = {"NewWorld(200,1183,2826)","D· TÈu",5,0},
 			[5] = {"NewWorld(200,1169,2845)","Thè TiÓu Nha",5,0},
 			[6] = {"NewWorld(200,1360,2925)","Chñ th­¬ng héi",5,0},
-			[7] = {"NewWorld(200,1439,2956)","Th­¬ng nh©n T©y Vùc",5,0},
+			[7] = {"NewWorld(200,1439,2956)","Merchant of the Western Regions",5,0},
 			[8] = {"NewWorld(200,1482,2764)","LÔ quan",5,0},
 			[9] = {"NewWorld(200,1392,2659)","Bé ®Çu",5,0},
 			[10] = {"NewWorld(200,1150,2850)","ThÇn Du Ch©n Nh©n",5,0},
@@ -145,7 +145,7 @@ TB_DES_INFO =
 			[4] = {"NewWorld(300,1634,3549)","D· TÈu",5,0},
 			[5] = {"NewWorld(300,1653,3559)","Thè TiÓu Nha",5,0},
 			[6] = {"NewWorld(300,1897,3492)","Chñ th­¬ng héi",5,0},
-			[7] = {"NewWorld(300,1794,3608)","Th­¬ng nh©n T©y Vùc",5,0},
+			[7] = {"NewWorld(300,1794,3608)","Merchant of the Western Regions",5,0},
 			[8] = {"NewWorld(300,1787,3497)","LÔ quan",5,0},
 			[9] = {"NewWorld(300,1779,3473)","Bé ®Çu",5,0},
 			[10] = {"NewWorld(300,1974,3552)","ThÇn Du Ch©n Nh©n",5,0},
@@ -165,7 +165,7 @@ TB_DES_INFO =
 			[4] = {"NewWorld(100,1447,2800)","D· TÈu",5,0},
 			[5] = {"NewWorld(100,1459,2811)","Thè TiÓu Nha",5,0},
 			[6] = {"NewWorld(100,1537,2933)","Chñ th­¬ng héi",5,0},
-			[7] = {"NewWorld(100,1499,3059)","Th­¬ng nh©n T©y Vùc",5,0},
+			[7] = {"NewWorld(100,1499,3059)","Merchant of the Western Regions",5,0},
 			[8] = {"NewWorld(100,1512,2990)","LÔ quan",5,0},
 			[9] = {"NewWorld(100,1519,2988)","Bé ®Çu",5,0},
 			[10] = {"NewWorld(100,1381,2857)","ThÇn Du Ch©n Nh©n",5,0},
@@ -180,16 +180,16 @@ TB_DES_INFO =
 			[4] = {"NewWorld(150,1727,3073)","Thñ khè (B¾c)",5,0},
 			[5] = {"NewWorld(150,1680,3118)","Thè TiÓu Nha",5,0},
 			[6] = {"NewWorld(150,1635,3139)","Chñ th­¬ng héi",5,0},
-			[7] = {"NewWorld(150,1653,3109)","Th­¬ng nh©n T©y Vùc",5,0},
+			[7] = {"NewWorld(150,1653,3109)","Merchant of the Western Regions",5,0},
 			[8] = {"NewWorld(150,1738,3158)","Bé ®Çu",5,0},
 			[9] = {"NewWorld(150,1744,3121)","Sø gi¶ Tµng KiÕm",5,0},
 			[10] = {"NewWorld(150,1713,3137)","§¹i sø ho¹t ®éng cuèi tuÇn",5,0},
-			[11] = {"NewWorld(150,1680,3161)","ChØ huy sø",5,0},
+			[11] = {"NewWorld(150,1680,3161)","Commander",5,0},
 			[12] = {"NewWorld(150,1650,3174)","Tö Quang C¸c L·o Nh©n",5,0},
 			[13] = {"NewWorld(150,1600,3136)","Bµ mai",5,0},
-			[14] = {"NewWorld(150,1588,3143)","X¶o n÷",5,0},
-			[15] = {"NewWorld(150,1711,3046)","Sø gi¶ h«n lÔ",5,0},
-			[16] = {"NewWorld(150,1701,3170)","§Æc sø Vâ L©m",5,0},
+			[14] = {"NewWorld(150,1588,3143)","Cunning Woman",5,0},
+			[15] = {"NewWorld(150,1711,3046)","Wedding Envoy",5,0},
+			[16] = {"NewWorld(150,1701,3170)","Wulin Envoy",5,0},
 		},
 		[5] = 
 		{
@@ -199,24 +199,24 @@ TB_DES_INFO =
 			[3] = {"NewWorld(350,1532,2861)","Thñ khè (B¾c)",5,0},
 			[4] = {"NewWorld(350,1436,2808)","Thè TiÓu Nha",5,0},
 			[5] = {"NewWorld(350,1455,2924)","Chñ th­¬ng héi",5,0},
-			[6] = {"NewWorld(350,1497,2882)","Th­¬ng nh©n T©y Vùc",5,0},
+			[6] = {"NewWorld(350,1497,2882)","Merchant of the Western Regions",5,0},
 			[7] = {"NewWorld(350,1506,2997)","Bé ®Çu",5,0},
 			[8] = {"NewWorld(350,1394,2850)","Sø gi¶ Tµng KiÕm",5,0},
 			[9] = {"NewWorld(350,1452,2968)","§¹i sø ho¹t ®éng cuèi tuÇn",5,0},
-			[10] = {"NewWorld(350,1503,3023)","ChØ huy sø",5,0},
+			[10] = {"NewWorld(350,1503,3023)","Commander",5,0},
 			[11] = {"NewWorld(350,1415,2930)","Thî rÌn L­u",5,0},
 			[12] = {"NewWorld(350,1345,2924)","M¹c Tam",5,0},
 			[13] = {"NewWorld(350,1433,2769)","Minh Chñ Kim S¬n",5,0},
 		},
 		[6] = 
 		{
-			[0] = "§¹i Lý",
+			[0] = "Da Li",
 			[1] = {"NewWorld(400,1528,3111)","Thñ khè (§«ng)",5,0},
 			[2] = {"NewWorld(400,1455,3070)","Thñ khè (Nam)",5,0},
 			[3] = {"NewWorld(400,1553,2912)","Thñ khè (B¾c)",5,0},
 			[4] = {"NewWorld(400,1485,3018)","Thè TiÓu Nha",5,0},
 			[5] = {"NewWorld(400,1486,2924)","Chñ th­¬ng héi",5,0},
-			[6] = {"NewWorld(400,1428,3005)","Th­¬ng nh©n T©y Vùc",5,0},
+			[6] = {"NewWorld(400,1428,3005)","Merchant of the Western Regions",5,0},
 			[7] = {"NewWorld(400,1506,2847)","LÔ quan",5,0},
 		},
 		[7] = 
@@ -237,7 +237,7 @@ TB_DES_INFO =
 		[0] = "Kü n¨ng thu thËp n¬i s­ phô",
 		[1] = {"NewWorld(300,1836,3430)","Thµnh §« §¹i Kho¸ng C«ng (®µo kho¸ng)",3,0},
 		[2] = {"NewWorld(300,1848,3493)","Thµnh §« Hoµng §¹i ThÈm (KÐo t¬)",3,0},
-		[3] = {"NewWorld(200,1220,2909)","BiÖn Kinh L­u NhÊt Phñ (§èn gç)",3,0},
+		[3] = {"NewWorld(200,1220,2909)","Bianjing Liu Yi Fu (logging)",3,0},
 		[4] = {"NewWorld(200,1347,3029)","BiÖn Kinh thî s¨n Tr­¬ng (Thuéc da)",3,0},
 		[5] = {"NewWorld(100,1393,2969)","TuyÒn Ch©u M¹c Qu©n §¹o tr­ëng (TËp linh)",3,0},
 		[6] = {"NewWorld(100,1555,2961)","TuyÒn Ch©u L©m D­îc S­ (H¸i thuèc)",3,0},
@@ -257,10 +257,10 @@ TB_DES_INFO =
 				[1] = {"NewWorld(204,1644,3270)","ThiÕu L©m HuyÒn Kh«ng",5,0},
 				[2] = {"NewWorld(305,1674,2936)","§­êng M«n §­êng T« M¹c",5,0},
 				[3] = {"NewWorld(303,1715,3059)","Nga My TuÖ V©n S­ Th¸i",5,0},
-				[4] = {"NewWorld(209,1530,3209)","C¸i Bang Bµng L· Väng",5,0},
+				[4] = {"NewWorld(209,1530,3209)","Beggars' Guild Pang Lu Wang",5,0},
 				[5] = {"NewWorld(312,1871,3276)","Vâ §ang TiÕt V©n Tranh",5,0},
 				[6] = {"NewWorld(219,1542,2939)","D­¬ng M«n D­¬ng Diªn Chiªu",5,0},
-				[7] = {"NewWorld(407,1572,3160)","Ngò §éc C©u S¸ch",5,0},
+				[7] = {"NewWorld(407,1572,3160)","Five Poisons Gou Suo",5,0},
 				[8] = {"NewWorld(509,1539,3230)","C«n L«n  TrÇn BÊt Vi",5,0},
 				[9] = {"NewWorld(404,1539,2698)","Thóy Yªn  L­u Thanh Mi",5,0},
 		},
@@ -278,7 +278,7 @@ TB_DES_INFO =
 			},
 		[4] =
 			{ 
-				[0] = "Dß th¸m T©y Vùc",
+				[0] = "Scout Western Regions",
 				[1] = {"NewWorld(500,1762,3147)","MËt th¸m §¹i Tèng T©y Vùc (mËt th¸m T©y Vùc)",5,0},
 				[2] = {"NewWorld(512,2052,3416)","§Ö tö C«n L«n (mËt ®éng Cæ D­¬ng)",10,1},
 				[3] = {"NewWorld(513,1595,3190)","Thñ Mé Nh©n (mËt ®¹o Hoµng l¨ng)",10,1},
@@ -291,9 +291,9 @@ TB_DES_INFO =
 		[5] = 
 			{
 				[0] = "B¶n ®å nhiÖm vô",
-				[1] = {"NewWorld(502,1637,3237)","Hoa S¬n",4,0},
+				[1] = {"NewWorld(502,1637,3237)","Hua Shan",4,0},
 				[2] = {"NewWorld(6016,1499,3094)","Mai Trang",4,1},
-				[3] = {"NewWorld(6024,1652,3093)","ThiÕt Ch­ëng S¬n Trang",4,1},
+				[3] = {"NewWorld(6024,1652,3093)","Iron Palm Mountain Manor",4,1},
 				[4] = {"NewWorld(6025,1699,3397)","ThÇn ®iÖn",4,1},
 			},
 	},
@@ -357,7 +357,7 @@ function list_destination(nScrollIndex,...)
 			szCmdStr = tbDes[i][0]..get_cmd_string("list_destination",nScrollIndex,gf_UnPack(arg));
 			tinsert(selTab,szCmdStr);
 		end;
-		tinsert(selTab,"Quay vÒ trang trang ®èi tho¹i/#OnUse("..nScrollIndex..")")
+		tinsert(selTab,"Return to the dialog page/#OnUse("..nScrollIndex..")")
 		tinsert(selTab,"T¹m thêi ch­a sö dông!/cancel_dialog");
 		Say("Ng­¬i muèn ®i ®©u?",getn(selTab),selTab);
 	else
@@ -395,14 +395,14 @@ function list_page(nPageNum,nScrollIndex,...)
 	end;
 	local szCmdStr = "";
 	if nPageNum ~= 1 then
-		szCmdStr = "Trang tr­íc"..get_cmd_string("list_page",nPageNum-1,nScrollIndex,gf_UnPack(arg));
+		szCmdStr = "Previous page"..get_cmd_string("list_page",nPageNum-1,nScrollIndex,gf_UnPack(arg));
 		tinsert(selTab,szCmdStr);
 	end;
 	if nPageNum ~= ceil(nRecordCount/MAX_SEL_PER_PAGE) then
-		szCmdStr = "Trang kÕ"..get_cmd_string("list_page",nPageNum+1,nScrollIndex,gf_UnPack(arg));
+		szCmdStr = "Next page"..get_cmd_string("list_page",nPageNum+1,nScrollIndex,gf_UnPack(arg));
 		tinsert(selTab,szCmdStr);	
 	end;
-	tinsert(selTab,"Quay vÒ trang trang ®èi tho¹i/#OnUse("..nScrollIndex..")")
+	tinsert(selTab,"Return to the dialog page/#OnUse("..nScrollIndex..")")
 	tinsert(selTab,"T¹m thêi ch­a sö dông!/cancel_dialog");
 	local nMaxPage = ceil(getn(tbDesTab)/MAX_SEL_PER_PAGE);
 	Say("Ng­¬i muèn ®Õn n¬i nµo? HiÖn lµ trang <color=yellow>"..nPageNum.."<color>, tæng céng <color=yellow>"..nMaxPage.."<color> trang.",getn(selTab),selTab);
@@ -450,7 +450,7 @@ function go_to_destination(nScrollIndex,...)
 		UseFlightList(tbDes[1],nScrollIndex,nCost);
 	end;
 	set_recently_pos(arg)
-	Msg2Player("Tiªu hao ®é bÒn"..nCost.." ®iÓm");
+	Msg2Player("Consumes durability"..nCost.." ®iÓm");
 end;
 
 -- È¥×î½üµÄÒ»Ð©µØ·½
@@ -484,7 +484,7 @@ function flight_recently(nScrollIndex)
 			end;
 		end;
 	end;
-	tinsert(selTab,"\nTrë vÒ khung ®èi tho¹i chÝnh/#OnUse("..nScrollIndex..")")
+	tinsert(selTab,"\nReturn to the main dialog box/#OnUse("..nScrollIndex..")")
 	tinsert(selTab,"T¹m thêi ch­a sö dông!/cancel_dialog");
 	Say("Xin chän ®Þa ®iÓm muèn ®Õn:",getn(selTab),selTab);
 end;

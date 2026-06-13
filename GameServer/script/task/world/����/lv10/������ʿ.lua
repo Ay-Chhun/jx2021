@@ -53,8 +53,8 @@ local nMapId, nX, nY = GetWorldPos();
 		if GetTask(TASK_DL_LV45_ID) == 2 then
 			AddItem(2,0,369,1);--¥Úµπ√Á¡Î¡¶ øµ√µΩ“ª∑‚–≈
 			SetTask(TASK_DL_LV45_ID,3);
-			TaskTip("ßem th≠ v“ cho Trﬁnh Qu∏n Chi");
-			Msg2Player("ßem th≠ v“ cho Trﬁnh Qu∏n Chi");
+			TaskTip("Take the letter back to Zheng Guanzhi.");
+			Msg2Player("Take the letter back to Zheng Guanzhi.");
 		end;
 	else	
 		for i=1,nMemCount do
@@ -64,8 +64,8 @@ local nMapId, nX, nY = GetWorldPos();
 			if GetTask(TASK_DL_LV45_ID) == 2 then
 				AddItem(2,0,369,1);--¥Úµπ√Á¡Î¡¶ øµ√µΩ“ª∑‚–≈ 
 				SetTask(TASK_DL_LV45_ID,3);
-				TaskTip("ßem th≠ v“ cho Trﬁnh Qu∏n Chi");
-				Msg2Player("ßem th≠ v“ cho Trﬁnh Qu∏n Chi");
+				TaskTip("Take the letter back to Zheng Guanzhi.");
+				Msg2Player("Take the letter back to Zheng Guanzhi.");
 			end;
 		end;
 	PlayerIndex = nPreservedPlayerIndex; -- ÷ÿ÷√÷Æ«∞¥¢¥ÊµƒÕÊº“±‡∫≈

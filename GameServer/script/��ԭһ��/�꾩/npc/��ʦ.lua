@@ -29,7 +29,7 @@ function main()
 		Say("<color=green>Tiªu s­<color>: Huhu, ngµy ®©y mai ®ã, kh«ng biÕt khi nµo tÊm x­¬ng kh« nµy cã chç dõng ch©n.",
 			2,
 			"NhËn phÇn th­ëng ho¹t ®éng bang héi tinh anh/first_tong_event",
-			"KÕt thóc ®èi tho¹i/no"
+			"End dialogue/no"
 		)
 	end;
 end;
@@ -128,19 +128,19 @@ function obtain_first_tong_reward_1(nDateStart, nPrizeFlag, szTongName)
 			[12] = {"Xuyªn V©n T©m Ph¸p",		0,107,24,1},
 			[13] = {"U Minh T©m Ph¸p",		0,107,26,1},
 			[14] = {"Linh Cæ T©m Ph¸p",		0,107,28,1},
-			[15] = {"Kim Cang Phôc Ma kinh",	0,107, 1,1},
+			[15] = {"Vajra Demon-Subduing Sutra",	0,107, 1,1},
 			[16] = {"TiÒm Long MËt tÞch",		0,107, 3,1},
 			[17] = {"V« TrÇn MËt tÞch",		0,107, 5,1},
 			[18] = {"Thiªn La MËt TÞch",		0,107, 7,1},
 			[19] = {"Nh­ ý MËt TÞch",		0,107, 9,1},
-			[20] = {"BÝch H¶i Phæ",		0,107,11,1},
+			[20] = {"Azure Sea Score",		0,107,11,1},
 			[21] = {"Hçn §én MËt tÞch",		0,107,13,1},
 			[22] = {"Quý Thiªn MËt tÞch",		0,107,15,1},
 			[23] = {"HuyÒn ¶nh MËt tÞch",		0,107,17,1},
 			[24] = {"Qu©n Tö MËt tÞch",		0,107,19,1},
 			[25] = {"TrÊn Qu©n MËt tÞch",		0,107,21,1},
 			[26] = {"Xuyªn V©n MËt tÞch",		0,107,23,1},
-			[27] = {"U Minh Quû Lôc",		0,107,25,1},
+			[27] = {"Nether Ghost Record",		0,107,25,1},
 			[28] = {"Linh Cæ MËt tÞch",		0,107,27,1},
 		}
 

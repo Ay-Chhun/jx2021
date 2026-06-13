@@ -11,8 +11,8 @@
 Include("\\script\\task\\world\\ox_common\\common.lua");
 
 quest_giver = cf_ox_SetColor("Binh sÜ", "green")..":"
-quest_title = cf_ox_SetColor("Qu¸i ®Ò kh¸ng", "yellow").."\n"
-quest_detail = cf_ox_SetColor("GiÕt 1 Hñ Thi", "gray").."\n\n"
+quest_title = cf_ox_SetColor("Monster resistance", "yellow").."\n"
+quest_detail = cf_ox_SetColor("Kill 1 Rotting Corpse", "gray").."\n\n"
 quest_description_1 = quest_giver.."May mµ lÇn nµy cã b»ng h÷u t­¬ng trî, chót th­¬ng d­îc nµy xin nhËn cho!"
 quest_confirm = ""
 quest_cancel = ""

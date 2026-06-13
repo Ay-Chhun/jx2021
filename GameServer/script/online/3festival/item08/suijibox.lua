@@ -5,8 +5,8 @@
 function OnUse()
 	Say("Më hép cã tû lÖ 90% nhËn ®­îc Hép Ng©n Bµi Vinh Dù, 10% nhËn ®­îc Hép Kim Bµi Vinh Dù, b¹n muèn më chø?",
 		2,
-		"§ång ý/just_do_it",
-		"Kh«ng cã g×/nothing")
+		"Agree/just_do_it",
+		"Nothing/nothing")
 end
 
 function just_do_it()

@@ -21,7 +21,7 @@ function main()
 			"Chän chiÕn tr­êng Tö Quang C¸c/select_area",
 			"Ta muèn ®æi ®iÓm tÝch lòy lÊy ®iÓm kinh nghiÖm/get_exchange_exp",
 			"§æi phÇn th­ëng Tö Quang C¸c/get_award",
-			"Bèi c¶nh/know_background",
+			"Background/know_background",
 			"Giíi thiÖu quy t¾c Tö Quang C¸c/know_stage_reflash",
 			"H¹n chÕ cña Tö Quang C¸c/know_stage_restriction",
 			"Giíi thiÖu Èn sÜ Tö Quang C¸c/know_boss_info",
@@ -62,12 +62,12 @@ end;
 
 function know_boss_info()
 	local selTab = {
-				"Bãng hé vÖ/#know_boss_detail_info(0)",
+				"Shadow Guardian/#know_boss_detail_info(0)",
 				"¶i 1: Li Yªn/#know_boss_detail_info(1)",
-				"¶i 2: B¸ KiÒu/#know_boss_detail_info(2)",
+				"Stage 2: Ba Qiao/#know_boss_detail_info(2)",
 				"¶i 3: Phong D­¬ng, V©n Thïy/#know_boss_detail_info(3)",
 				"¶i 4: §Þa HuyÒn/#know_boss_detail_info(4)",
-				"¶i 5: TiÕt Hoµnh Thó/#know_boss_detail_info(5)",
+				"Stage 5: Tiet Hoanh Thu/#know_boss_detail_info(5)",
 				"¶i 6: Th­îng Cæ Háa Kú L©n Háa Vò, Th­îng Cæ Háa Kú L©n L­u Quang/#know_boss_detail_info(6)",
 				"Ta chØ tiÖn ®­êng hái ch¬i!/nothing",
 				}
@@ -81,7 +81,7 @@ end;
 function select_area()
 	local selTab = {};
 	for i=1,MAX_AREA do
-		tinsert(selTab,format("Khu vùc %d/#select_field(%d)",i,i));
+		tinsert(selTab,format("Area %d/#select_field(%d)",i,i));
 	end;
 	tinsert(selTab,"Trë l¹i/main");
 	local nSvrPlayerCount = 0;
@@ -90,11 +90,11 @@ function select_area()
 	end;
 	local szSvrState = "";
 	if nSvrPlayerCount <= 300 then
-		szSvrState = " <color=green>nhá<color>";
+		szSvrState = " <color=green>small<color>";
 	elseif nSvrPlayerCount <= 800 then
-		szSvrState = " <color=yellow>võa<color>";
+		szSvrState = " <color=yellow>medium<color>";
 	else
-		szSvrState = " <color=red>lín<color>";
+		szSvrState = " <color=red>large<color>";
 	end;
 	Say(g_szInfoHeader.."HiÖn t¹i nh©n khÈu thµnh thÞ nµy cã ¸p lùc:"..szSvrState..", ®Ó cho quý ®¹i hiÖp tiÕn hµnh v­ît ¶i ë tr¹ng th¸i tèt nhÊt, kiÕn nghÞ nªn chän nh÷ng thµnh phè cã l­îng ng­êi Ýt. Xin mêi chän khu vùc muèn tiÕn vµo: ",getn(selTab),selTab);
 end;
@@ -110,12 +110,12 @@ function select_field(nAreaIdx)
 		szFieldState = sf_Replace(szFieldState,":","-");
 		nCurStage = max(nCurStage,1);
 		if nMisstionState == MS_STATE_IDEL then
-			tinsert(selTab,format("Khu vùc %d: ®ang trèng/#enter_field(%d,%d)",i,nAreaIdx,i));
+			tinsert(selTab,format("Area %d: empty/#enter_field(%d,%d)",i,nAreaIdx,i));
 		else
-			tinsert(selTab,format("Khu vùc %d: %s(¶i %d)/#enter_field(%d,%d)",i,szFieldState,nCurStage,nAreaIdx,i));
+			tinsert(selTab,format("Area %d: %s(stage %d)/#enter_field(%d,%d)",i,szFieldState,nCurStage,nAreaIdx,i));
 		end;
 	end;
-	tinsert(selTab,"Xin mêi chän khu vùc kh¸c/select_area");
+	tinsert(selTab,"Please choose another area/select_area");
 	Say(g_szInfoHeader.."Xin mêi chän khu vùc mµ ®¹i hiÖp muèn vµo:",getn(selTab),selTab);
 end;
 --½øÈëÁ÷³ÌÒÑ¾­¸ÄµÃÂÒÆß°ËÔãÁË£¡£¡£¡£¡
@@ -267,7 +267,7 @@ function check_tong(nAreaIdx,nFieldIdx)
 	{
 		[100] = "TuyÒn Ch©u",
 		[150] = "D­¬ng Ch©u",
-		[200] = "BiÖn Kinh",
+		[200] = "Bianjing",
 		[300] = "Thµnh §«",
 		[350] = "T­¬ng D­¬ng",
 	}
@@ -379,10 +379,10 @@ end;
 
 function clear_relay_data()
 	local selTab = {
-				"thËt/clear_relay_data_confirm",
-				"Gi¶/nothing",
+				"Confirm/clear_relay_data_confirm",
+				"Cancel/nothing",
 				}
-	Say(g_szInfoHeader.."ThËt? ",getn(selTab),selTab);
+	Say(g_szInfoHeader.."Really?",getn(selTab),selTab);
 end;
 
 function clear_relay_data_confirm()
@@ -393,7 +393,7 @@ function clear_relay_data_confirm()
 	end;
 	ClearRelayShareData(szTongName,0,0,"","");
 	DelRelayShareDataCopy(szTongName,0,0);
-	Talk(1,"",g_szInfoHeader.."D÷ liÖu ®· dän s¹ch!	");
+	Talk(1,"",g_szInfoHeader.."The data has been cleared!");
 end;
 
 function get_award()
@@ -411,14 +411,14 @@ function get_award_use_point()
 				"Tö Quang Ngäc/get_jewelry_award",
 				"Ta chØ ®Õn xem/nothing",
 				}
-	Say(g_szInfoHeader.."Ng­¬i ®ang cã <color=yellow>"..GetTask(TSK_POINT).."<color> ®iÓm, ®¹i hiÖp muèn lo¹i trang bÞ nµo d­íi ®©y?",getn(selTab),selTab);
+	Say(g_szInfoHeader.."You currently have <color=yellow>"..GetTask(TSK_POINT).."<color> ®iÓm, ®¹i hiÖp muèn lo¹i trang bÞ nµo d­íi ®©y?",getn(selTab),selTab);
 end;
 
 function get_equip_award()
 	local selTab = {
-				"Tö Quang M¹o/#get_equip(1)",
+				"Ziguang Helm/#get_equip(1)",
 				"Tö Quang Hé Gi¸p/#get_equip(2)",
-				"Tö Quang Hé Trang/#get_equip(3)",
+				"Ziguang Garb/#get_equip(3)",
 				"Tö Quang Th¹ch/#get_equip(4)",
 				"Xem trang bÞ kh¸c/get_award_use_point",
 				"Ta chØ ®Õn xem/nothing",
@@ -432,13 +432,13 @@ function get_equip(nType)
 		Talk(1,"",g_szInfoHeader.."§iÓm Tö Quang C¸c cña c¸c h¹ kh«ng ®ñ, ph¶i ®ñ <color=yellow>500<color> ®iÓm Tö Quang C¸c míi cã thÓ ®æi lo¹i  trang bÞ nµy.");
 		return 0;
 	end;
-	local tbEquipName = {"Tö Quang M¹o","Tö Quang Hé Gi¸p","Tö Quang Hé Trang","Tö Quang Th¹ch"};
+	local tbEquipName = {"Ziguang Helm","Tö Quang Hé Gi¸p","Ziguang Garb","Tö Quang Th¹ch"};
 	local selTab = {
-				"§ång ý/#get_equip_confirm("..nType..")",
+				"Agree/#get_equip_confirm("..nType..")",
 				"Xem trang bÞ kh¸c/get_equip_award",
 				"Ta suy nghÜ l¹i!/nothing",
 				}
-	Say(g_szInfoHeader.."§¹i hiÖp cã ch¾c dïng <color=yellow>500<color> ®iÓm ®æi lÊy <color=yellow>"..tbEquipName[nType].."<color> chø?",getn(selTab),selTab);
+	Say(g_szInfoHeader.."§¹i hiÖp cã ch¾c dïng <color=yellow>500<color> ®iÓm ®æi lÊy <color=yellow>"..tbEquipName[nType].."<color> ?",getn(selTab),selTab);
 end;
 
 function get_equip_confirm(nType)
@@ -451,7 +451,7 @@ function get_equip_confirm(nType)
 		Talk(1,"",g_szInfoHeader.."Hµnh trang hoÆc søc lùc kh«ng ®ñ, xin mêi h·y s¾p xÕp l¹i hµnh trang råi tiÕp tôc ®æi phÇn th­ëng.");
 		return 0;
 	end;
-	local tbEquipName = {"Tö Quang M¹o","Tö Quang Hé Gi¸p","Tö Quang Hé Trang","Tö Quang Th¹ch"};
+	local tbEquipName = {"Ziguang Helm","Tö Quang Hé Gi¸p","Ziguang Garb","Tö Quang Th¹ch"};
 	local nBody = GetBody(); 
 	local nRetCode = 0;
 	SetTask(TSK_POINT,nPoint-500);
@@ -466,9 +466,9 @@ function get_equip_confirm(nType)
 	end;
 	if nRetCode == 1 then
 		Msg2Player("B¹n ®· nhËn ®­îc 1 "..tbEquipName[nType]);
-		WriteLogEx("Tu Quang Cac","®æi","1",tbEquipName[nType]);
+		WriteLogEx("Tu Quang Cac","exchange","1",tbEquipName[nType]);
 	else
-		WriteLog("[Bang héi ¶i lçi]"..GetName().."§æi ®­îc 1 "..tbEquipName[nType].."AddItem gÆp lçi, nRetCode:"..nRetCode);
+		WriteLog("[Bang héi ¶i lçi]"..GetName().."Exchanged 1"..tbEquipName[nType].."AddItem error, nRetCode:"..nRetCode);
 	end;
 end;
 function get_jewelry_award()
@@ -498,7 +498,7 @@ function get_jewelry(nType)
 					"Søc m¹nh t¨ng 18, g©n cèt t¨ng 18, linh ho¹t t¨ng 18",
 					};
 	local selTab = {
-				"§ång ý/#get_jewelry_confirm("..nType..")",
+				"Agree/#get_jewelry_confirm("..nType..")",
 				"Xem trang bÞ kh¸c/get_jewelry_award",
 				"Ta suy nghÜ l¹i!/nothing",
 				}
@@ -520,7 +520,7 @@ function get_jewelry_confirm(nType)
 	nRetCode = AddItem(0,102,2355+nType-1,1,1,-1,-1,-1,-1,-1,-1);
 	if nRetCode == 1 then
 		Msg2Player("§¹i hiÖp ®· thu ®­îc 1 Tö Quang Ngäc");
-		WriteLogEx("Tu Quang Cac","®æi","1","Tö Quang Th¹ch");
+		WriteLogEx("Tu Quang Cac","exchange","1","Tö Quang Th¹ch");
 	else
 		WriteLog("[Bang héi ¶i lçi]"..GetName().."Lóc ®æi 1 Tö Quang Ngäc xuÊt hiÖn lçi, lo¹i h×nh: "..nType..",nRetCode:"..nRetCode);
 	end;
@@ -530,7 +530,7 @@ function get_award_use_item()
 	local selTab = {
 		"Tö Quang ChiÕn Kh«i/#list_special_equip(1,1)",
 		"Tö Quang ChiÕn Bµo/#list_special_equip(2,1)",
-		"Tö Quang ChiÕn Trang/#list_special_equip(3,1)",
+		"Ziguang Battle Garb/#list_special_equip(3,1)",
 		"Tö Quang Tiªn Ngäc/#list_special_equip(4,1)",
 		"Tö Quang ThÇn Binh/#list_special_equip(5,1)",
 		"Ta chØ tiÖn ®­êng hái ch¬i!/nothing",
@@ -556,15 +556,15 @@ function list_special_equip(nEquipType,nPageNum)
 		tinsert(selTab,tbItemTab[i]);
 	end;
 	if nPageNum ~= 1 then
-		tinsert(selTab,1,format("Trang tr­íc/#list_special_equip(%d,%d)",nEquipType,nPageNum-1));
+		tinsert(selTab,1,format("Previous page/#list_special_equip(%d,%d)",nEquipType,nPageNum-1));
 	end;
 	if nPageNum ~= ceil(nRecordCount/MAX_SEL_PER_PAGE) then
-		tinsert(selTab,format("Trang kÕ/#list_special_equip(%d,%d)",nEquipType,nPageNum+1));	
+		tinsert(selTab,format("Next page/#list_special_equip(%d,%d)",nEquipType,nPageNum+1));	
 	end;
 	tinsert(selTab,"\nXem trang bÞ kh¸c./get_award_use_item");
 	tinsert(selTab,"Ta chØ ghÐ ch¬i/nothing");
 	local nPoint = GetTask(TSK_POINT);
-	Say(g_szInfoHeader.."Ng­¬i muèn ®æi <color=yellow>"..TB_AWARD[nEquipType][2].."<color>? CÇn ph¶i cã <color=yellow>"..TB_AWARD[nEquipType][1][1][2][4].."c¸i"..TB_AWARD[nEquipType][1][1][2][5].." vµ"..TB_AWARD[nEquipType][1][1][3].." ®iÓm Tö Quang C¸c.<color>. HiÖn t¹i ng­¬i cã <color=yellow>"..nPoint.."<color> ®iÓm Tö Quang C¸c. Xin mêi c¨n cø vµo t×nh tr¹ng hiÖn t¹i cña ®¹i hiÖp ®Ó chän thuéc tÝnh trang bÞ cÇn thiÕt:",getn(selTab),selTab);
+	Say(g_szInfoHeader.."Ng­¬i muèn ®æi <color=yellow>"..TB_AWARD[nEquipType][2].."<color>? CÇn ph¶i cã <color=yellow>"..TB_AWARD[nEquipType][1][1][2][4].."c¸i"..TB_AWARD[nEquipType][1][1][2][5].." and"..TB_AWARD[nEquipType][1][1][3].." ®iÓm Tö Quang C¸c.<color>. HiÖn t¹i ng­¬i cã <color=yellow>"..nPoint.."<color> ®iÓm Tö Quang C¸c. Xin mêi c¨n cø vµo t×nh tr¹ng hiÖn t¹i cña ®¹i hiÖp ®Ó chän thuéc tÝnh trang bÞ cÇn thiÕt:",getn(selTab),selTab);
 end;
 
 function get_special_equip_list(nEquipType)
@@ -577,7 +577,7 @@ end;
 
 function get_special_equip_affirm(nEquipType,nEquipIdx)
 	local selTab = {
-				format("§ång ý/#get_special_equip_confirm(%d,%d)",nEquipType,nEquipIdx),
+				format("Agree/#get_special_equip_confirm(%d,%d)",nEquipType,nEquipIdx),
 				"Ta muèn xem trang bÞ kh¸c/get_award_use_item",
 				"T¹m thêi kh«ng ®­îc ®æi/nothing",
 				}
@@ -615,12 +615,12 @@ function get_special_equip_confirm(nEquipType,nEquipIdx)
 			Msg2Player("B¹n nhËn ®­îc "..szEquipName);
 			if nEquipType == 5 then
 				local szWeaponName = tbItemInfo[5] or  ""
-				WriteLogEx("Tu Quang Cac","®æi","1",szWeaponName);
+				WriteLogEx("Tu Quang Cac","exchange","1",szWeaponName);
 			else
-				WriteLogEx("Tu Quang Cac","®æi","1",szEquipName);
+				WriteLogEx("Tu Quang Cac","exchange","1",szEquipName);
 			end			
 		else
-			WriteLog("[Bang héi ¶i lçi]"..GetName().."§æi "..szEquipName.."(nEquipIdx:"..nEquipIdx..") AddItem gÆp lçi, nRetCode:"..nRetCode);
+			WriteLog("[Bang héi ¶i lçi]"..GetName().."Exchange"..szEquipName.."(nEquipIdx:"..nEquipIdx..") AddItem error, nRetCode:"..nRetCode);
 		end;
 	end;
 end;
@@ -629,7 +629,7 @@ function go_to_another_city()
 	local selTab = {
 				[1] = "TuyÒn Ch©u/#go_to_the_city_test(1)",
 				[2] = "D­¬ng Ch©u/#go_to_the_city_test(2)",
-				[3] = "BiÖn Kinh/#go_to_the_city_test(3)",
+				[3] = "Bianjing/#go_to_the_city_test(3)",
 				[4] = "Thµnh §«/#go_to_the_city_test(4)",
 				[5] = "T­¬ng D­¬ng/#go_to_the_city_test(5)",
 				[6] = "Kh«ng cÇn ®i n÷a/nothing",
@@ -651,7 +651,7 @@ end;
 
 function get_award_use_xiakehuizhang()
 	local selTab = {
-				"§æi bé Tö Viªm/get_yandi_suit",
+				"Exchange Ziyan set/get_yandi_suit",
 				"§æi bé Tö Viªn/get_huangdi_suit",
 				"Xem phÇn th­ëng kh¸c/get_award",
 				"Ta chØ ghÐ ch¬i/nothing",
@@ -662,7 +662,7 @@ end;
 g_tbYanDiSuitAward = 
 {
 	[1] = {"Tö Quang Viªm §Õ Kh«i",180,6750,{0,103,8051}},
-	[2] = {"Tö Quang Viªm §Õ Trang",180,6750,{0,101,8051}},
+	[2] = {"Ziguang Yandi Garb",180,6750,{0,101,8051}},
 	[3] = {"Tö Quang Viªm §Õ Gi¸p",252,9450,{0,100,8051}},
 }
 
@@ -684,7 +684,7 @@ function get_yandi_suit()
 		nItemName = g_tbYanDiSuitAward[i][1];
 		nNum = g_tbYanDiSuitAward[i][2];
 		nPoint = g_tbYanDiSuitAward[i][3];
-		tinsert(selTab,nItemName.." (CÇn "..nNum.." HiÖp kh¸ch ch­¬ng, ®iÓm tÝch lòy Tö Quang "..nPoint..")/#get_yandi_suit_1("..i..")");
+		tinsert(selTab,nItemName.." (Requires"..nNum.." HiÖp kh¸ch ch­¬ng, ®iÓm tÝch lòy Tö Quang "..nPoint..")/#get_yandi_suit_1("..i..")");
 	end;
 	tinsert(selTab,"Ta xem trang bÞ kh¸c/get_award_use_xiakehuizhang");
 	tinsert(selTab,"Ta chØ ghÐ ch¬i/nothing");
@@ -693,13 +693,13 @@ end;
 
 function get_yandi_suit_1(nIdx)
 	local selTab = {
-				"§ång ý/#get_yandi_suit_2("..nIdx..")",
-				"Hñy bá/nothing",
+				"Agree/#get_yandi_suit_2("..nIdx..")",
+				"Cancel/nothing",
 				}
 	local nItemName = g_tbYanDiSuitAward[nIdx][1];
 	local nNum = g_tbYanDiSuitAward[nIdx][2];
 	local nPoint = g_tbYanDiSuitAward[nIdx][3];
-	Say(g_szInfoHeader.."Ng­¬i muèn dïng <color=yellow>"..nNum.."<color> HiÖp kh¸ch ch­¬ng vµ <color=yellow>"..nPoint.."<color> ®iÓm tÝch lòy Tö Quang §æi <color=yellow>"..nItemName.."<color> chø?",getn(selTab),selTab);
+	Say(g_szInfoHeader.."Ng­¬i muèn dïng <color=yellow>"..nNum.."<color> HiÖp kh¸ch ch­¬ng vµ <color=yellow>"..nPoint.."<color> ®iÓm tÝch lòy Tö Quang §æi <color=yellow>"..nItemName.."<color> ?",getn(selTab),selTab);
 end;
 
 function get_yandi_suit_2(nIdx)
@@ -727,9 +727,9 @@ function get_yandi_suit_2(nIdx)
 		SetTask(TSK_POINT,nCurPoint-nPoint);
 		AddItem(nID1,nID2,nID3+nBody-1,1,1,-1,-1,-1,-1,-1,-1);
 		Msg2Player("B¹n ®æi "..nNum.." HiÖp kh¸ch ch­¬ng vµ "..nPoint.." ®iÓm tÝch lòy Tö Quang ®æi 1  "..nItemName);
-		gf_WriteLog("Tö Quang C¸c","Dïng thÎ"..nNum.." HiÖp kh¸ch ch­¬ng vµ "..nPoint.." ®iÓm tÝch lòy ®æi 1  "..nItemName);
+		gf_WriteLog("Purple Light Pavilion","Use card"..nNum.." HiÖp kh¸ch ch­¬ng vµ "..nPoint.." ®iÓm tÝch lòy ®æi 1  "..nItemName);
 	else
-		gf_WriteLog("Tö Quang C¸c bÞ lçi","Hñy bá"..nNum.." HiÖp kh¸ch ch­¬ng DelItem bÞ lçi ");
+		gf_WriteLog("Ziguang Pavilion error","Cancel"..nNum.." HiÖp kh¸ch ch­¬ng DelItem bÞ lçi ");
 	end;
 end;
 --=======================================================================================
@@ -744,7 +744,7 @@ function get_huangdi_suit()
 		nItemName = g_tbHuangDiSuitAward[i][1];
 		nNum = g_tbHuangDiSuitAward[i][2];
 		nPoint = g_tbHuangDiSuitAward[i][3];
-		tinsert(selTab,nItemName.." (CÇn "..nNum.." HiÖp kh¸ch ch­¬ng, ®iÓm tÝch lòy Tö Quang "..nPoint..")/#get_huangdi_suit_1("..i..")");
+		tinsert(selTab,nItemName.." (Requires"..nNum.." HiÖp kh¸ch ch­¬ng, ®iÓm tÝch lòy Tö Quang "..nPoint..")/#get_huangdi_suit_1("..i..")");
 	end;
 	tinsert(selTab,"Ta xem trang bÞ kh¸c/get_award_use_xiakehuizhang");
 	tinsert(selTab,"Ta chØ ghÐ ch¬i/nothing");
@@ -753,13 +753,13 @@ end;
 
 function get_huangdi_suit_1(nIdx)
 	local selTab = {
-				"§ång ý/#get_huangdi_suit_2("..nIdx..")",
-				"Hñy bá/nothing",
+				"Agree/#get_huangdi_suit_2("..nIdx..")",
+				"Cancel/nothing",
 				}
 	local nItemName = g_tbHuangDiSuitAward[nIdx][1];
 	local nNum = g_tbHuangDiSuitAward[nIdx][2];
 	local nPoint = g_tbHuangDiSuitAward[nIdx][3];
-	Say(g_szInfoHeader.."Ng­¬i muèn dïng <color=yellow>"..nNum.."<color> HiÖp kh¸ch ch­¬ng vµ <color=yellow>"..nPoint.."<color> ®iÓm tÝch lòy Tö Quang §æi <color=yellow>"..nItemName.."<color> chø?",getn(selTab),selTab);
+	Say(g_szInfoHeader.."Ng­¬i muèn dïng <color=yellow>"..nNum.."<color> HiÖp kh¸ch ch­¬ng vµ <color=yellow>"..nPoint.."<color> ®iÓm tÝch lòy Tö Quang §æi <color=yellow>"..nItemName.."<color> ?",getn(selTab),selTab);
 end;
 
 function get_huangdi_suit_2(nIdx)
@@ -787,9 +787,9 @@ function get_huangdi_suit_2(nIdx)
 		SetTask(TSK_POINT,nCurPoint-nPoint);
 		give_huangdi_suit(nIdx,nRouteIdx);
 		Msg2Player("B¹n ®æi "..nNum.." HiÖp kh¸ch ch­¬ng vµ "..nPoint.." ®iÓm tÝch lòy Tö Quang ®æi 1  "..nItemName);
-		gf_WriteLog("Tö Quang C¸c","Dïng thÎ"..nNum.." HiÖp kh¸ch ch­¬ng vµ "..nPoint.." ®iÓm tÝch lòy ®æi 1  "..nItemName);
+		gf_WriteLog("Purple Light Pavilion","Use card"..nNum.." HiÖp kh¸ch ch­¬ng vµ "..nPoint.." ®iÓm tÝch lòy ®æi 1  "..nItemName);
 	else
-		gf_WriteLog("Tö Quang C¸c bÞ lçi","Hñy bá"..nNum.." HiÖp kh¸ch ch­¬ng DelItem bÞ lçi ");
+		gf_WriteLog("Ziguang Pavilion error","Cancel"..nNum.." HiÖp kh¸ch ch­¬ng DelItem bÞ lçi ");
 	end;
 end;
 

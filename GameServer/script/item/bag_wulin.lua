@@ -47,9 +47,9 @@ function onUse_Confirm(nItemIndex, bConfirm)
 		if getn(tCfg) > 1 then
 			Say(format("[%s] cã %d c¸ch më.",GetItemName(nItemIndex),getn(tCfg)),
 				3,
-				format("\nMë miÔn phÝ/#onUse_Real(%d,%d,%d)", nItemIndex, 1, 0),
-				format("\nDïng ®¹o cô më/#onUse_Real(%d,%d,%d)", nItemIndex, 2, 0),
-				"\nBá qua/nothing");
+				format("\nOpen for free/#onUse_Real(%d,%d,%d)", nItemIndex, 1, 0),
+				format("\nUse an item to open/#onUse_Real(%d,%d,%d)", nItemIndex, 2, 0),
+				"\nSkip/nothing");
 			return
 		elseif getn(tCfg) == 1 then
 			onUse_Real(nItemIndex, 1, 0)
@@ -69,7 +69,7 @@ function onUse_Real(nItemIndex, nOpenIndex, bConfirm)
 			Say(format("Më [%s] cÇn <color=yellow>[%s]<color>, ®ång ý më kh«ng?",GetItemName(nItemIndex), szConsumeDesc),
 			2,
 			format("\n x¸c nhËn më/#onUse_Real(%d,%d,%d)", nItemIndex, nOpenIndex, 1),
-			"\nBá qua/nothing");
+			"\nSkip/nothing");
 			return
 		end
 		local szFunc = format("onInputNumCallBack_%d_%d",ID, nOpenIndex)

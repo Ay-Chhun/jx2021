@@ -4,13 +4,13 @@
 Import("\\script\\lib\\globalfunctions.lua");
 
 THE_FILE = "\\script\\misc\\mail_carrier.lua"
-NPC_NAME = "<color=green>Chñ B­u côc<color>";
+NPC_NAME = "<color=green>Post Office Manager<color>";
 
 function main()
 	Say( NPC_NAME.."Quý kh¸ch ®Õn nhËn th­ ph¶i kh«ng?",
 		3,
-		"NhËn th­/query_mail_list",
-		"H­íng dÉn giao dÞch tiÒn xu/trade_gold_coin_help",
+		"Receive letter/query_mail_list",
+		"Coin trading guide/trade_gold_coin_help",
 		"Quay l¹i sau!/nothing"
 	);
 end
@@ -60,7 +60,7 @@ function query_mail_list(nMailCount, nMaxMailCount, nNewMailCount)
 			tMailList[i].lowid,
 			tMailList[i].highid);
 	end
-	tSayNote[nCount+1] = "KÕt thóc ®èi tho¹i/nothing";
+	tSayNote[nCount+1] = "End dialogue/nothing";
 	local msg = "";
 	if nMailCount > 6 then
 		msg = format("B¹n cã %d th­ míi, hiÖn t¹i chØ cã thÓ hiÓn thÞ 6 th­ míi nhÊt, h·y nhanh chãng dän dÑp chç trèng. \n 6 th­ míi nhÊt: ", nMailCount);
@@ -110,9 +110,9 @@ function receive_mail(lowid, highid)
 	end
 	if getn(tSelNode) == 0 then
 		--tSelNode[1] = format("É¾³ýÓÊ¼þ/#DelMail(%d, %s, %s)", uId, THE_FILE, "nothing");
-		tSelNode[1] = format("Xãa th­/#pickup(%d, %d)", uId, 0);
+		tSelNode[1] = format("Delete letter/#pickup(%d, %d)", uId, 0);
 	end
-	tSelNode[getn(tSelNode)+1] = "KÕt thóc ®èi tho¹i/nothing";
+	tSelNode[getn(tSelNode)+1] = "End dialogue/nothing";
 
 	Say( szMsg, getn(tSelNode), tSelNode );
 end

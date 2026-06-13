@@ -425,7 +425,7 @@ function bagua()
 	"Lµm sao chÕ t¹o trang bŞ cã lç kh¶m n¹m/kongzhuangbeizhizuo",
 	"VËt phÈm thªm vµo cã t¸c dông g×/tianjiawu",
 	"Lµm sao trang bŞ ®­îc chÕ t¹o thµnh trang bŞ B¸t Qu¸i/xiangqianzhuyi",
-	"§Õn hái th¨m th«i mµ!/SayHello"
+	"Just dropping by to say hello!/SayHello"
 	)
 end
 
@@ -443,7 +443,7 @@ end
 
 function update_max_skill_level()
 	Say(strTitle..format("Më réng cÊp kü n¨ng s¶n xuÊt cÇn kü n¨ng thu thËp ®¹t cÊp 79 ®ång thêi tiªu hao %d Vµng", 1000), 
-		2, "§ång ı/update_max_skill_level_ensure", "T¹i h¹ chØ xem qua th«i/SayHello")
+		2, "Agree/update_max_skill_level_ensure", "T¹i h¹ chØ xem qua th«i/SayHello")
 end
 
 function update_max_skill_level_ensure()

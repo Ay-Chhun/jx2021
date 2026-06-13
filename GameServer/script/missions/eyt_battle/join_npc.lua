@@ -5,7 +5,7 @@ Include("\\script\\missions\\eyt_battle\\mission.lua")
 Include("\\script\\system_switch_config.lua")
 Include("\\script\\function\\vip_card\\vc_head.lua")
 
-EYT_NPC = "<color=green>Nh¹c BÊt QuÇn:<color>";
+EYT_NPC = "<color=green>Yue Buqun:<color>";
 
 function main()
 	if ISEytSystemOpen(2) ~= 1 then
@@ -14,10 +14,10 @@ function main()
 	local tSay = {};
 	tSay.msg = EYT_NPC..format("¢n O¸n §µi ®­îc ®Æt ë Hång Liªn S¬n, lµ n¬i ®Ó cho nh©n sÜ giang hå tranh ®o¹t ch©n khÝ vµ gi¶i quyÕt ©n o¸n. Sau khi c¸c ®¹i hiÖp vµo Tû Vâ ¢n O¸n §µi sÏ chia thµnh hai ®éi, mçi ®éi %d ng­êi. §¸nh b¹i ng­êi ch¬i phe ®Þch hoÆc ®o¹t ®­îc chiÕn kú trªn ¢n O¸n §µi sÏ nhËn ®­îc ®iÓm tÝch lòy, ®éi ®¹t ®­îc %d ®iÓm tÝch lòy tr­íc tiªn sÏ giµnh chiÕn th¾ng. §¹i hiÖp muèn tham gia chiÕn ®Êu kh«ng?", 8, 150);
 	tSay.sel = {
-		{"§iÒu kiÖn tham gia ", "eyt_npc_condition"},
-		{"B¸o danh ®¬n", "eyt_npc_join"},
+		{"Entry requirements", "eyt_npc_condition"},
+		{"Register solo", "eyt_npc_join"},
 		{"B¸o danh nhãm (Tèi ®a 3 ng­êi)", "eyt_npc_join_team"},
-		{"\nKÕt thóc ®èi tho¹i", "nothing"},
+		{"\nEnd conversation", "nothing"},
 	};
 	temp_Talk(tSay);	
 end
@@ -28,8 +28,8 @@ function eyt_npc_condition()
 	tSay.msg = tSay.msg.."\nGiíi h¹n cÊp: Ng­êi ch¬i ®¹t chuyÓn sinh 5 cÊp 96 cã thÓ b¸o danh tham gia";
 	tSay.msg = tSay.msg.."\nC¸ch thøc b¸o danh: Cã thÓ b¸o danh ®¬n hoÆc b¸o danh nhãm kh«ng qu¸ 3 ng­êi, mçi ng­êi tham gia tèi ®a 4 lÇn/ngµy.";
 	tSay.sel = {
-		{"\n Ph¶n håi", "main"},
-		{"KÕt thóc ®èi tho¹i", "nothing"},
+		{"\n Feedback", "main"},
+		{"End conversation", "nothing"},
 	};
 	temp_Talk(tSay);
 end
@@ -172,7 +172,7 @@ function main_eyt_award()
 			tinsert(tSay.sel, {"NhËn phÇn th­ëng b¹i trËn", "eyt_npc_get_fail_award"});
 		end
 	end
-	tinsert(tSay.sel, {"KÕt thóc ®èi tho¹i", "nothing"});
+	tinsert(tSay.sel, {"End conversation", "nothing"});
 	temp_Talk(tSay);
 end
 
@@ -188,7 +188,7 @@ function eyt_npc_get_succ_award()
 		{"LËp tøc nhËn th­ëng", "eyt_npc_get_succ_award_do"},
 		{"Thiªn Kiªu LÖnh nhËn th­ëng", "#eyt_npc_get_succ_award_do(1)"},
 		{"trë l¹i", "main_eyt_award"},
-		{"KÕt thóc ®èi tho¹i", "nothing"},	
+		{"End conversation", "nothing"},	
 	};
 	temp_Talk(tSay);
 end
@@ -209,7 +209,7 @@ function eyt_npc_get_succ_award_do(bUseIb)
 	if not bUseIb then --Ö±½ÓÁì½±
 		local nExp = 10000000 * (1 + EYT_AWARD_COEFFICIENT + GetVipCardParam());
 		gf_ModifyExp(nExp);
-		gf_AddItemEx2({2,1,30499,1}, "Hu©n ch­¬ng anh hïng", "Tû Vâ ¢n O¸n §µi", "PhÇn th­ëng th¾ng trËn ¢n O¸n §µi", 0, 1);
+		gf_AddItemEx2({2,1,30499,1}, "Hero's Medal", "Martial Duel Grudge Arena", "PhÇn th­ëng th¾ng trËn ¢n O¸n §µi", 0, 1);
 		CustomAwardGiveOne(CustomAwardSelectOne("EY_jinbaoxiang_2_free"));
 	else --Ìì½¾ÁîÁì½±
 		if DelItem(2, 97, 236, 1) ~= 1 then
@@ -217,7 +217,7 @@ function eyt_npc_get_succ_award_do(bUseIb)
 		end
 		local nExp = 20000000 * (1 + EYT_AWARD_COEFFICIENT + GetVipCardParam());
 		gf_ModifyExp(nExp);
-		gf_AddItemEx2({2,1,30499,2}, "Hu©n ch­¬ng anh hïng", "Tû Vâ ¢n O¸n §µi", "PhÇn th­ëng th¾ng trËn ¢n O¸n §µi (Thiªn Kiªu LÖnh)", 0, 1);
+		gf_AddItemEx2({2,1,30499,2}, "Hero's Medal", "Martial Duel Grudge Arena", "PhÇn th­ëng th¾ng trËn ¢n O¸n §µi (Thiªn Kiªu LÖnh)", 0, 1);
 		CustomAwardGiveOne(CustomAwardSelectOne("EY_jinbaoxiang_2_IB"));
 		--Observer:onEvent(SYSEVENT_GLOBAL_COST_IB, {2,97,236,1})
 		FireEvent("event_ib_cost", 2,97,236,1)
@@ -239,7 +239,7 @@ function eyt_npc_get_fail_award()
 		{"LËp tøc nhËn th­ëng", "eyt_npc_get_fail_award_do"},
 		{"Thiªn Kiªu LÖnh nhËn th­ëng", "#eyt_npc_get_fail_award_do(1)"},
 		{"trë l¹i", "main_eyt_award"},
-		{"KÕt thóc ®èi tho¹i", "nothing"},	
+		{"End conversation", "nothing"},	
 	};
 	temp_Talk(tSay);
 end
@@ -268,7 +268,7 @@ function eyt_npc_get_fail_award_do(bUseIb)
 		end
 		local nExp = 10000000 * (1 + EYT_AWARD_COEFFICIENT + GetVipCardParam());
 		gf_ModifyExp(nExp);
-		gf_AddItemEx2({2,1,30499,1}, "Hu©n ch­¬ng anh hïng", "Tû Vâ ¢n O¸n §µi", "PhÇn th­ëng b¹i trËn ¢n O¸n §µi (Thiªn Kiªu LÖnh)", 0, 1);
+		gf_AddItemEx2({2,1,30499,1}, "Hero's Medal", "Martial Duel Grudge Arena", "PhÇn th­ëng b¹i trËn ¢n O¸n §µi (Thiªn Kiªu LÖnh)", 0, 1);
 		CustomAwardGiveOne(CustomAwardSelectOne("EY_baoxiang_2_IB"));
 		--Observer:onEvent(SYSEVENT_GLOBAL_COST_IB, {2,97,236,1})
 		FireEvent("event_ib_cost", 2,97,236,1)

@@ -13,7 +13,7 @@ function _handle_use_item_taofaling(nIdx, bConfirm)
 		local szTitle = format("Sau khi sö dông Th¶o Ph¹t cã thÓ t¨ng nhËn ®­îc tèi ®a HiÖp NghÜa Chi Chøng ngµy ®ã :%d, cã hiÖu lùc trong ngµy.", MAX_DAILY_DROP_XYZZ_EXT)
         local tbSay = {}
         tinsert(tbSay, format("%s/#_handle_use_item_taofaling(%d, 1)", "§ång ý dïng", nIdx))
-        tinsert(tbSay, format("%s/nothing", "Ra khái"))
+        tinsert(tbSay, format("%s/nothing", "Exit"))
         
         Say(szTitle, getn(tbSay), tbSay)
         return 0
@@ -29,7 +29,7 @@ function _handle_use_item_taofaling(nIdx, bConfirm)
 		return 0
 	end
 	
-	local g,d,p,name= 2,1,30915,"Th¶o Ph¹t Lªnh "
+	local g,d,p,name= 2,1,30915,"Subjugation Order"
 	if DelItem(g,d,p, 1) == 1 then
 		set_ext_drop(1)
 		local szMsg = format("Chóc mõng sö dông thµnh c«ng Th¶o Ph¹t LÖnh, h«m nay nhËn ®­îc HiÖp NghÜa Chi Chøng t¨ng tèi ®a %d", MAX_DAILY_DROP_XYZZ_EXT)

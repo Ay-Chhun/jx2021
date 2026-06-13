@@ -16,7 +16,7 @@ function OnUse(bag_index)
 	--Ê¹ÓÃÈ·ÈÏÌáÊ¾
 	Say("<color=green>Gîi ı <color>: Sö dông <color=yellow>Tói S­ §å phï chØ<color>Cã thÓ ®æi lÊy <color=yellow>"..goods_num.."<color> <color=yellow>S­ §å phï chØ<color>, b¹n x¸c nhËn sö dông chø?",
 	2,
-	"§æi/goods_add",
+	"Exchange/goods_add",
 	"§Ó ta suy nghÜ l¹i/end_dialog"
 	)
 end

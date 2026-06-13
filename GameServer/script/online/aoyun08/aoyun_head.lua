@@ -56,48 +56,48 @@ TRIGER_AOYUN_TIME_ID = 300; --Ê±¼ä´¥·¢Æ÷ID
 TIME_TABLE_ID = 50; --±íÀïID
 
 tHuojuName = {
-	[1] = {"Th¸nh Háa §µi","§µi ®uèc 1"},
-	[2] = {"§µi ®uèc 1","§µi ®uèc 2"},
-	[3] = {"§µi ®uèc 2","§µi ®uèc 3"},
-	[4] = {"§µi ®uèc 3","§µi ®uèc 4"},
-	[5] = {"§µi ®uèc 4","§µi ®uèc 5"},
-	[6] = {"§µi ®uèc 5","§µi ®uèc 6"},
-	[7] = {"§µi ®uèc 6","§µi ®uèc 7"},
-	[8] = {"§µi ®uèc 7","§µi ®uèc 8"},
-	[9] = {"§µi ®uèc 8","§µi ®uèc 9"},
-	[10] = {"§µi ®uèc 9","§µi ®uèc 10"},
-	[11] = {"§µi ®uèc 10","§µi ®uèc 11"},
-	[12] = {"§µi ®uèc 11","§µi ®uèc 12"},
-	[13] = {"§µi ®uèc 12","§µi ®uèc 13"},
-	[14] = {"§µi ®uèc 13","§µi ®uèc 14"},
-	[15] = {"§µi ®uèc 14","§µi ®uèc 15"},
-	[16] = {"§µi ®uèc 15","§µi ®uèc 16"},
-	[17] = {"§µi ®uèc 16","§µi ®uèc 1-7"},
-	[18] = {"§µi ®uèc 1-7","§µi ®uèc 18"},
-	[19] = {"§µi ®uèc 18","§µi ®uèc 19"},
-	[20] = {"§µi ®uèc 19","§µi ®uèc 20"},
-	[21] = {"§µi ®uèc 20","§µi ®uèc 21"},
-	[22] = {"§µi ®uèc 21","§µi ®uèc 22"},
-	[23] = {"§µi ®uèc 22","§µi ®uèc 23"},
-	[24] = {"§µi ®uèc 23","§µi ®uèc 24"},
-	[25] = {"§µi ®uèc 24","§µi ®uèc 25"},
-	[26] = {"§µi ®uèc 25","§µi ®uèc 26"},
-	[27] = {"§µi ®uèc 26","§µi ®uèc 27"},
-	[28] = {"§µi ®uèc 27","§µi ®uèc 28"},
-	[29] = {"§µi ®uèc 28","§µi ®uèc 29"},
-	[30] = {"§µi ®uèc 29","Lß n­íng b¸nh"},
+	[1] = {"Th¸nh Háa §µi","Torch Platform 1"},
+	[2] = {"Torch Platform 1","Torch Platform 2"},
+	[3] = {"Torch Platform 2","Torch Platform 3"},
+	[4] = {"Torch Platform 3","Torch Platform 4"},
+	[5] = {"Torch Platform 4","Torch Platform 5"},
+	[6] = {"Torch Platform 5","Torch Platform 6"},
+	[7] = {"Torch Platform 6","Torch Platform 7"},
+	[8] = {"Torch Platform 7","Torch Platform 8"},
+	[9] = {"Torch Platform 8","Torch Platform 9"},
+	[10] = {"Torch Platform 9","Torch Platform 10"},
+	[11] = {"Torch Platform 10","Torch Platform 11"},
+	[12] = {"Torch Platform 11","Torch Platform 12"},
+	[13] = {"Torch Platform 12","Torch Platform 13"},
+	[14] = {"Torch Platform 13","Torch Platform 14"},
+	[15] = {"Torch Platform 14","Torch Platform 15"},
+	[16] = {"Torch Platform 15","Torch Platform 16"},
+	[17] = {"Torch Platform 16","Torch Platform 1-7"},
+	[18] = {"Torch Platform 1-7","Torch Platform 18"},
+	[19] = {"Torch Platform 18","Torch Platform 19"},
+	[20] = {"Torch Platform 19","Torch Platform 20"},
+	[21] = {"Torch Platform 20","Torch Platform 21"},
+	[22] = {"Torch Platform 21","Torch Platform 22"},
+	[23] = {"Torch Platform 22","Torch Platform 23"},
+	[24] = {"Torch Platform 23","Torch Platform 24"},
+	[25] = {"Torch Platform 24","Torch Platform 25"},
+	[26] = {"Torch Platform 25","Torch Platform 26"},
+	[27] = {"Torch Platform 26","Torch Platform 27"},
+	[28] = {"Torch Platform 27","Torch Platform 28"},
+	[29] = {"Torch Platform 28","Torch Platform 29"},
+	[30] = {"Torch Platform 29","Lß n­íng b¸nh"},
 	[31] = {"Lß n­íng b¸nh"}  --ÖúÍþÕß
 	}
 	
 --»ð¾æÌ¨pos	
 tHuoJuPos = {
-		{"Th¸nh Háa §µi","Th¸nh Háa §µi",500,1829,3065},{"§µi ®uèc","§µi ®uèc 1",500,1678,3214},{"§µi ®uèc","§µi ®uèc 2",500,1662,3099},{"§µi ®uèc","§µi ®uèc 3",500,1778,3203},
-		{"§µi ®uèc","§µi ®uèc 4",350,1538,2870},{"§µi ®uèc","§µi ®uèc 5",350,1417,2790},{"§µi ®uèc","§µi ®uèc 6",350,1346,2878},{"§µi ®uèc","§µi ®uèc 7",350,1366,3052},{"§µi ®uèc","§µi ®uèc 8",350,1514,3051},
-		{"§µi ®uèc","§µi ®uèc 9",300,1676,3676},{"§µi ®uèc","§µi ®uèc 10",300,1705,3487},{"§µi ®uèc","§µi ®uèc 11",300,1861,3490},{"§µi ®uèc","§µi ®uèc 12",300,1764,3553},{"§µi ®uèc","§µi ®uèc 13",300,1866,3632},
-		{"§µi ®uèc","§µi ®uèc 14",400,1534,2920},{"§µi ®uèc","§µi ®uèc 15",400,1431,2963},{"§µi ®uèc","§µi ®uèc 16",400,1451,3094},{"§µi ®uèc","§µi ®uèc 1-7",400,1560,3112},
-		{"§µi ®uèc","§µi ®uèc 18",100,1352,2894},{"§µi ®uèc","§µi ®uèc 19",100,1353,3051},{"§µi ®uèc","§µi ®uèc 20",100,1513,3053},{"§µi ®uèc","§µi ®uèc 21",100,1507,2899},
-		{"§µi ®uèc","§µi ®uèc 22",150,1625,3060},{"§µi ®uèc","§µi ®uèc 23",150,1626,3185},{"§µi ®uèc","§µi ®uèc 24",150,1747,3182},{"§µi ®uèc","§µi ®uèc 25",150,1736,3076},
-		{"§µi ®uèc","§µi ®uèc 26",200,1270,2974},{"§µi ®uèc","§µi ®uèc 27",200,1468,2946},{"§µi ®uèc","§µi ®uèc 28",200,1465,2783},{"§µi ®uèc","§µi ®uèc 29",200,1302,2755},{"Lß n­íng b¸nh","Lß n­íng b¸nh",200,1364,2875}}
+		{"Th¸nh Háa §µi","Th¸nh Háa §µi",500,1829,3065},{"§µi ®uèc","Torch Platform 1",500,1678,3214},{"§µi ®uèc","Torch Platform 2",500,1662,3099},{"§µi ®uèc","Torch Platform 3",500,1778,3203},
+		{"§µi ®uèc","Torch Platform 4",350,1538,2870},{"§µi ®uèc","Torch Platform 5",350,1417,2790},{"§µi ®uèc","Torch Platform 6",350,1346,2878},{"§µi ®uèc","Torch Platform 7",350,1366,3052},{"§µi ®uèc","Torch Platform 8",350,1514,3051},
+		{"§µi ®uèc","Torch Platform 9",300,1676,3676},{"§µi ®uèc","Torch Platform 10",300,1705,3487},{"§µi ®uèc","Torch Platform 11",300,1861,3490},{"§µi ®uèc","Torch Platform 12",300,1764,3553},{"§µi ®uèc","Torch Platform 13",300,1866,3632},
+		{"§µi ®uèc","Torch Platform 14",400,1534,2920},{"§µi ®uèc","Torch Platform 15",400,1431,2963},{"§µi ®uèc","Torch Platform 16",400,1451,3094},{"§µi ®uèc","Torch Platform 1-7",400,1560,3112},
+		{"§µi ®uèc","Torch Platform 18",100,1352,2894},{"§µi ®uèc","Torch Platform 19",100,1353,3051},{"§µi ®uèc","Torch Platform 20",100,1513,3053},{"§µi ®uèc","Torch Platform 21",100,1507,2899},
+		{"§µi ®uèc","Torch Platform 22",150,1625,3060},{"§µi ®uèc","Torch Platform 23",150,1626,3185},{"§µi ®uèc","Torch Platform 24",150,1747,3182},{"§µi ®uèc","Torch Platform 25",150,1736,3076},
+		{"§µi ®uèc","Torch Platform 26",200,1270,2974},{"§µi ®uèc","Torch Platform 27",200,1468,2946},{"§µi ®uèc","Torch Platform 28",200,1465,2783},{"§µi ®uèc","Torch Platform 29",200,1302,2755},{"Lß n­íng b¸nh","Lß n­íng b¸nh",200,1364,2875}}
 		
 			
 --»î¶¯Ê±¼ä Ö¸ÈÕ³£»î¶¯ ´«µÝ»î¶¯Ê±¼äÓÉreyal¿ØÖÆ
@@ -150,12 +150,12 @@ function aoyun_baoshi_prob()
 	elseif nRand <= 999 then
 		lspf_AddLingShiInBottle(6,1);
 		Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 Linh Th¹ch cÊp 6, ®· nhËp vµo Tô linh ®Ønh.");
-		Msg2Global("Ng­êi ch¬i"..GetName().."Tham gia ho¹t ®éng R­íc ®uèc nhËn ®­îc 1 Linh th¹ch cÊp 6");
+		Msg2Global("Player"..GetName().."Tham gia ho¹t ®éng R­íc ®uèc nhËn ®­îc 1 Linh th¹ch cÊp 6");
 		WriteLog("Ho¹t ®éng quèc tÕ lao ®éng 08: Ng­êi ch¬i"..GetName().."Tham gia ho¹t ®éng R­íc ®uèc nhËn ®­îc 1 Linh th¹ch cÊp 6.");		
 	else
 		lspf_AddLingShiInBottle(7,1);
 		Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 Linh Th¹ch cÊp 7, ®· nhËp vµo Tô linh ®Ønh.");		
-		Msg2Global("Ng­êi ch¬i"..GetName().."Tham gia ho¹t ®éng R­íc ®uèc nhËn ®­îc 1 Linh th¹ch cÊp 7");
+		Msg2Global("Player"..GetName().."Tham gia ho¹t ®éng R­íc ®uèc nhËn ®­îc 1 Linh th¹ch cÊp 7");
 		WriteLog("Ho¹t ®éng quèc tÕ lao ®éng 08: Ng­êi ch¬i"..GetName().."Tham gia ho¹t ®éng R­íc ®uèc nhËn ®­îc 1 Linh th¹ch cÊp 7.");
 	end
 end
@@ -178,7 +178,7 @@ function goto_huojutai()
 		nTask = GetTask(TASK_AOYUN_ZHUWEI_NUM);
 	end
 	if PrePay(5000)==0 then 
-		Talk(1,"","Cã tiÒn th× h·y ngåi xe!")
+		Talk(1,"","If you have money, then take the ride!")
 	else 
 		CleanInteractive();	
 		NewWorld(tHuoJuPos[nTask][3],tHuoJuPos[nTask][4],tHuoJuPos[nTask][5]);

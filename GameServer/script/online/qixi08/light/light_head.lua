@@ -63,22 +63,22 @@ tMapId = {
 	 {300,1776,3541}
 	}};
 tLightNpc = {
-	{"§µi ®uèc","§Ìn 1",1621,3141,"\\script\\online\\qixi08\\light\\light_npc.lua"},
-	{"§µi ®uèc","§Ìn 2",1607,3154,"\\script\\online\\qixi08\\light\\light_npc.lua"},
-	{"§µi ®uèc","§Ìn 3",1593,3167,"\\script\\online\\qixi08\\light\\light_npc.lua"},
-	{"§µi ®uèc","§Ìn 4",1579,3183,"\\script\\online\\qixi08\\light\\light_npc.lua"},
-	{"§µi ®uèc","§Ìn 5",1594,3198,"\\script\\online\\qixi08\\light\\light_npc.lua"},
-	{"§µi ®uèc","§Ìn 6",1608,3214,"\\script\\online\\qixi08\\light\\light_npc.lua"},
-	{"§µi ®uèc","§Ìn 7",1624,3228,"\\script\\online\\qixi08\\light\\light_npc.lua"},
-	{"§µi ®uèc","§Ìn 8",1640,3213,"\\script\\online\\qixi08\\light\\light_npc.lua"},
-	{"§µi ®uèc","§Ìn 9",1654,3200,"\\script\\online\\qixi08\\light\\light_npc.lua"},
-	{"§µi ®uèc","§Ìn 10",1667,3187,"\\script\\online\\qixi08\\light\\light_npc.lua"},
-	{"§µi ®uèc","§Ìn 11",1649,3170,"\\script\\online\\qixi08\\light\\light_npc.lua"},
-	{"§µi ®uèc","§Ìn 12",1636,3154,"\\script\\online\\qixi08\\light\\light_npc.lua"},
-	{"§µi ®uèc","§Ìn 13",1635,3168,"\\script\\online\\qixi08\\light\\light_npc.lua"},
-	{"§µi ®uèc","§Ìn 14",1609,3194,"\\script\\online\\qixi08\\light\\light_npc.lua"},
-	{"§µi ®uèc","§Ìn 15",1610,3169,"\\script\\online\\qixi08\\light\\light_npc.lua"},
-	{"§µi ®uèc","§Ìn 16",1638,3197,"\\script\\online\\qixi08\\light\\light_npc.lua"}
+	{"§µi ®uèc","Lantern 1",1621,3141,"\\script\\online\\qixi08\\light\\light_npc.lua"},
+	{"§µi ®uèc","Lantern 2",1607,3154,"\\script\\online\\qixi08\\light\\light_npc.lua"},
+	{"§µi ®uèc","Lantern 3",1593,3167,"\\script\\online\\qixi08\\light\\light_npc.lua"},
+	{"§µi ®uèc","Lantern 4",1579,3183,"\\script\\online\\qixi08\\light\\light_npc.lua"},
+	{"§µi ®uèc","Lantern 5",1594,3198,"\\script\\online\\qixi08\\light\\light_npc.lua"},
+	{"§µi ®uèc","Lantern 6",1608,3214,"\\script\\online\\qixi08\\light\\light_npc.lua"},
+	{"§µi ®uèc","Lantern 7",1624,3228,"\\script\\online\\qixi08\\light\\light_npc.lua"},
+	{"§µi ®uèc","Lantern 8",1640,3213,"\\script\\online\\qixi08\\light\\light_npc.lua"},
+	{"§µi ®uèc","Lantern 9",1654,3200,"\\script\\online\\qixi08\\light\\light_npc.lua"},
+	{"§µi ®uèc","Lantern 10",1667,3187,"\\script\\online\\qixi08\\light\\light_npc.lua"},
+	{"§µi ®uèc","Lantern 11",1649,3170,"\\script\\online\\qixi08\\light\\light_npc.lua"},
+	{"§µi ®uèc","Lantern 12",1636,3154,"\\script\\online\\qixi08\\light\\light_npc.lua"},
+	{"§µi ®uèc","Lantern 13",1635,3168,"\\script\\online\\qixi08\\light\\light_npc.lua"},
+	{"§µi ®uèc","Lantern 14",1609,3194,"\\script\\online\\qixi08\\light\\light_npc.lua"},
+	{"§µi ®uèc","Lantern 15",1610,3169,"\\script\\online\\qixi08\\light\\light_npc.lua"},
+	{"§µi ®uèc","Lantern 16",1638,3197,"\\script\\online\\qixi08\\light\\light_npc.lua"}
 	};
 
 AOYUN_LIGHT_CAMP = 1;							--µãµÆÕóÓª

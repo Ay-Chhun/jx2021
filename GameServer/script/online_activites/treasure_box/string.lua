@@ -15,8 +15,8 @@ tSTRING_TREASUER_BOX = {
 tSTRING_TREASUER_NPC = {
 	[1] = "Nh©n vËt ®· chuyÓn sinh míi cã thÓ mua B¶o R­¬ng",
 	[2] = "B¸n c¸c lo¹i b¶o r­¬ng",
-	[3] = "Mua Méc R­¬ng",
-	[4] = "Mua Tµng R­¬ng",
+	[3] = "Buy Wood Chest",
+	[4] = "Buy Storage Chest",
 	[5] = "H«m nay cã thÓ mua víi gi¸ <color=green>%d XU<color> (®¹o cô) cßn l¹i lµ: <color=green>%d<color>",
 	[6] = "H«m nay cã thÓ mua víi gi¸ <color=green>%d XU<color> (®¹o cô) cßn l¹i lµ: <color=green>kh«ng giíi h¹n<color>",
 	[7] = "Xu ®¹o cô mang theo kh«ng ®ñ<color=green>%d<color>",

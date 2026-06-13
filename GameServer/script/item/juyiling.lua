@@ -10,15 +10,15 @@
 Include("\\script\\lib\\globalfunctions.lua");
 
 g_tItem = {
-	tInfo	= {"Tô NghÜa LÖnh", 2, 95, 208},
+	tInfo	= {"Token of Righteousness", 2, 95, 208},
 	tAward	= {
-		tInfo	= {"Thiªn thÇn h¹ phµm", 2, "Duy tr× %d phót"},
+		tInfo	= {"Thiªn thÇn h¹ phµm", 2, "Lasts %d minutes"},
 		tState	= {
 			[1] = {9908, "state_p_attack_percent_add",	700,	"Ngo¹i c«ng t¨ng %d%%"},
 			[2] = {9909, "state_m_attack_percent_add",	700,	"Néi c«ng t¨ng %d%%"},
 			[3] = {9910, "state_life_max_percent_add",	300,	"Giíi h¹n m¸u t¨ng %d%%"},
-			[4] = {9911, "state_buff_resist",			14,		"MiÔn dÞch tr¹ng th¸i bÞ h¹i %d"},
-			[5] = {9912, "state_dispear",				100,	"", 30, "V« ®Þch trong %s gi©y"},
+			[4] = {9911, "state_buff_resist",			14,		"Immune to harmful status %d"},
+			[5] = {9912, "state_dispear",				100,	"", 30, "Invincible for %s seconds"},
 			},
 		},
 	tString = {

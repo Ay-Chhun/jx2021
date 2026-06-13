@@ -52,7 +52,7 @@ function KillFollower_OnTimer()
 	RemoveTrigger(GetRunningTrigger())
 	KillFollower()
 	SetTask(TASK_PET_BORN,0)
-	Msg2Player("Qu¸ thêi gian, thó c­ng rêi khái b¹n.")
+	Msg2Player("Time is up, the pet leaves you.")
 end
 
 function LeaveSnowMap()

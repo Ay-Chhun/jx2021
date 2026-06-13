@@ -162,7 +162,7 @@ function tmz_player_kill_npc(npcIndex)
 		SetNpcDeathScript(nEyeIndex,NPC_DEATH_SCRIPT);
 		SetCampToNpc(nEyeIndex,tCampType[nPlayerCamp]);	
 		local tEyeName = {"TrËn nh·n Sinh M«n","TrËn nh·n Tö M«n","TrËn nh·n C¶nh M«n","TrËn nh·n DiÖt M«n"};
-		Msg2MSAll(MISSION_ID,tCampName[nPlayerCamp].." ®· chiÕm ®­îc "..tEyeName[nEyePosition]);
+		Msg2MSAll(MISSION_ID,tCampName[nPlayerCamp].." has occupied"..tEyeName[nEyePosition]);
 		--Ð´ÈëÏÔÊ¾Êý¾Ý
 		local nCurN = GetMissionV(MV_TMZ_SHOWDATA_IDX);
 		local nKillNum1 = GetTask(TASKID_TMZ_KILL_PLAYER);

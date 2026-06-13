@@ -15,11 +15,11 @@ function Ws_RelayCallNpc(nRandomSeed)
 		return 0;
 	end
 	local tMapPos = {
-		{{200,1385,2890}, "BiÖn Kinh (173,180)"},
+		{{200,1385,2890}, "Bianjing (173,180)"},
 		{{150,1688,3127}, "D­¬ng Ch©u (211,195)"},
 		{{350,1440,2999}, "T­¬ng D­¬ng (180,187)"},
 		{{100,1447,2977}, "TuyÒn Ch©u (180,185)"},
-		{{400,1480,3028}, "§¹i Lý (185,189)"},
+		{{400,1480,3028}, "Dali (185,189)"},
 		{{300,1764,3540}, "Thµnh §« (220,221)"},
 		{{500,1740,3152}, "Phông T­êng (217,196)"},
 	}
@@ -31,7 +31,7 @@ function Ws_RelayCallNpc(nRandomSeed)
 	
 	local nHour = tonumber(date("%H"));
 	if SubWorldID2Idx(tMapPos[nIndex][1][1]) ~= -1 then
-		local npcIndex = CreateNpc("Wushi_NPC", "L©n S­", tMapPos[nIndex][1][1], tMapPos[nIndex][1][2], tMapPos[nIndex][1][3]);
+		local npcIndex = CreateNpc("Wushi_NPC", "Lion", tMapPos[nIndex][1][1], tMapPos[nIndex][1][2], tMapPos[nIndex][1][3]);
 		if npcIndex > 0 then
 			if nHour >= 11 and nHour <= 13 then
 				SetNpcLifeTime(npcIndex, 60*60);
@@ -71,7 +71,7 @@ end
 function ws_zhangua()
 	ws_daily_reset();
 	local tSay = {
-		"B¾t ®Çu ch¬i/ws_guess_number",
+		"Start playing/ws_guess_number",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	Say("<color=green>L©n S­:<color> N¨m míi ng­¬i cã muèn ta bãi cho ng­êi 1 quÎ ®Çu n¨m kh«ng, chØ cÇn 10 tiÒn lÎ th«i?", getn(tSay), tSay);
@@ -115,8 +115,8 @@ function ws_guess_number_input_do(nNum)
 		Talk(1,"",format("Chóc mõng c¸c h¹ ®· ®o¸n tróng råi!!!  \n Ch÷ sè may m¾n cña c¸c h¹ lµ<color=green>%d<color>, sè lÇn ®o¸n lµ<color=green>%d<color>",nTarget,nTimes));
 		--¸ø½±Àø
 		local tAward = {
-			{10000000, {2,1,30786,3}, "Bao l× x× may m¾n"},
-			{6000000, {2,1,30786,1}, "Bao l× x× may m¾n"},
+			{10000000, {2,1,30786,3}, "Lucky Money Bag"},
+			{6000000, {2,1,30786,1}, "Lucky Money Bag"},
 			{4000000, {2,1,30783,3}, "Sung"},
 			{2000000, {2,1,30783,2}, "Sung"},
 			{1000000, {2,1,30783,1}, "Sung"},
@@ -128,7 +128,7 @@ function ws_guess_number_input_do(nNum)
 			return 0;
 		end
 		gf_ModifyExp(tAward[nTimes][1]);
-		gf_AddItemEx2(tAward[nTimes][2], tAward[nTimes][3], "Mõng Xu©n Êt Mïi", "Bãi QuÎ §Çu N¨m", 0, 1)
+		gf_AddItemEx2(tAward[nTimes][2], tAward[nTimes][3], "Celebrating the Yiwei Spring", "Bãi QuÎ §Çu N¨m", 0, 1)
 	else
 		if nTimes >= 5 then
 			Talk(1,"",format("Sè lÇn ®o¸n sè ®· v­ît qu¸ <color=green>%d<color> lÇn, <color=red>®o¸n sè thÊt b¹i<color>, ngµy mai h·y quay l¹i! Con sè may m¾n cña b¹n lµ <color=red>%d<color>.",5,nTarget));
@@ -146,7 +146,7 @@ end
 function ws_guess()
 	ws_daily_reset();
 	local tSay = {
-		"B¾t ®Çu ch¬i/ws_guess_finger",
+		"Start playing/ws_guess_finger",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	Say("<color=green>L©n S­:<color> N¨m míi tÕt ®Õn ng­¬i cã muèn cïng ta lµm vµi v¸n may m¾n kh«ng, cÇn 10 tiÒn lÎ lµ cã thÓ tham gia víi ta.", getn(tSay), tSay);
@@ -171,13 +171,13 @@ function ws_guess_finger()
 		{600000, {2,1,30783,1}, "Sung"},
 		{1000000, {2,1,30783,2}, "Sung"},
 		{2000000, {2,1,30783,3}, "Sung"},
-		{4000000, {2,1,30784,1}, "M©m Ngò Qu¶"},
-		{6000000, {2,1,30786,1}, "Bao l× x× may m¾n"},
-		{10000000, {2,1,30786,3}, "Bao l× x× may m¾n"},
+		{4000000, {2,1,30784,1}, "Five-Fruit Tray"},
+		{6000000, {2,1,30786,1}, "Lucky Money Bag"},
+		{10000000, {2,1,30786,3}, "Lucky Money Bag"},
 	}
 	if nTimes >= 0 and nTimes < getn(tAward) then
-		tinsert(tSay, format("Ra Bóa/#ws_guess_finger_jugde(1)"))
-		tinsert(tSay, format("Ra KÐo/#ws_guess_finger_jugde(2)"))
+		tinsert(tSay, format("Throw Rock/#ws_guess_finger_jugde(1)"))
+		tinsert(tSay, format("Throw Scissors/#ws_guess_finger_jugde(2)"))
 		tinsert(tSay, format("Ra Bao/#ws_guess_finger_jugde(3)"))
 	end
 	if nTimes > 0 and nTimes <= getn(tAward) then
@@ -224,9 +224,9 @@ function ws_guess_finger_ib()
 		{600000, {2,1,30783,1}, "Sung"},
 		{1000000, {2,1,30783,2}, "Sung"},
 		{2000000, {2,1,30783,3}, "Sung"},
-		{4000000, {2,1,30784,1}, "M©m Ngò Qu¶"},
-		{6000000, {2,1,30786,1}, "Bao l× x× may m¾n"},
-		{10000000, {2,1,30786,3}, "Bao l× x× may m¾n"},
+		{4000000, {2,1,30784,1}, "Five-Fruit Tray"},
+		{6000000, {2,1,30786,1}, "Lucky Money Bag"},
+		{10000000, {2,1,30786,3}, "Lucky Money Bag"},
 	}
 	local msg = format("\nPhÇn th­ëng tÝch lòy hiÖn t¹i %d EXP, %s*%d", tAward[nTimes][1], tAward[nTimes][3], tAward[nTimes][2][4])
 	local nIbTimes = WS_TASK_GROUP:GetTask(WS_TASK_GROUP.IbTimes);
@@ -257,9 +257,9 @@ function ws_guess_finger_getaward()
 		{600000, {2,1,30783,1}, "Sung"},
 		{1000000, {2,1,30783,2}, "Sung"},
 		{2000000, {2,1,30783,3}, "Sung"},
-		{4000000, {2,1,30784,1}, "M©m Ngò Qu¶"},
-		{6000000, {2,1,30786,1}, "Bao l× x× may m¾n"},
-		{10000000, {2,1,30786,3}, "Bao l× x× may m¾n"},
+		{4000000, {2,1,30784,1}, "Five-Fruit Tray"},
+		{6000000, {2,1,30786,1}, "Lucky Money Bag"},
+		{10000000, {2,1,30786,3}, "Lucky Money Bag"},
 	}
 	if nTimes <= 0 or nTimes > getn(tAward) then
 		return 0;
@@ -268,7 +268,7 @@ function ws_guess_finger_getaward()
 		return 0;
 	end
 	gf_ModifyExp(tAward[nTimes][1]);
-	gf_AddItemEx2(tAward[nTimes][2], tAward[nTimes][3], "Mõng Xu©n Êt Mïi", "May M¾n §Çu N¨m", 0, 1);
+	gf_AddItemEx2(tAward[nTimes][2], tAward[nTimes][3], "Celebrating the Yiwei Spring", "May M¾n §Çu N¨m", 0, 1);
 	WS_TASK_GROUP:SetTask(WS_TASK_GROUP.GetAward, 1);
 end
 

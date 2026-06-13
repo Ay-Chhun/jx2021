@@ -16,16 +16,16 @@ VET_201003_TONGBAN_STR_MODE_NAME =  --Í¬°éNPCÄ£°åÃû
 };
 
 tPetInfo = {
-	[1] 	= {"Thó",{"§ùc","C¸i"}},
-	[2] 	= {"Thó",{"§ùc","C¸i"}},
-	[3] 	= {"Thó",{"§ùc","C¸i"}},
-	[4] 	= {"Ng­êi",{"Nam","N÷"}},
-	[5] 	= {"Ng­êi",{"Nam","N÷"}},
-	[6] 	= {"Ng­êi",{"Nam","N÷"}},
-	[7] 	= {"Linh Thó",{"D­¬ng","¢m"}},
-	[8] 	= {"Linh Thó",{"D­¬ng","¢m"}},
-	[9] 	= {"Linh Thó",{"D­¬ng","¢m"}},
-	[10] 	= {"Linh Thó",{"D­¬ng","¢m"}},	
+	[1] 	= {"Beast",{"Male","Female"}},
+	[2] 	= {"Beast",{"Male","Female"}},
+	[3] 	= {"Beast",{"Male","Female"}},
+	[4] 	= {"Person",{"Nam","Female"}},
+	[5] 	= {"Person",{"Nam","Female"}},
+	[6] 	= {"Person",{"Nam","Female"}},
+	[7] 	= {"Spirit Beast",{"D­¬ng","¢m"}},
+	[8] 	= {"Spirit Beast",{"D­¬ng","¢m"}},
+	[9] 	= {"Spirit Beast",{"D­¬ng","¢m"}},
+	[10] 	= {"Spirit Beast",{"D­¬ng","¢m"}},	
 }
 
 tRouteSkillInfo =
@@ -99,8 +99,8 @@ VET_201003_TONGBAN_STR_SHOW_MASSAGE =
     [12] = "B¹n ®ång hµnh cÇn cã søc kháe thËt tèt ®Ó tr­ëng thµnh, ®iÓm søc kháe cao nhÊt lµ <color=yellow>300<color>, b¹n ®ång hµnh dùa vµo ®iÓm søc kháe ®Ó lªn cÊp. \n<color=yellow>C¸ch n©ng cÊp: <color> ®iÓm søc kháe cña b¹n ®ång hµnh sÏ tù ®éng gi¶m, mçi lÇn gi¶m <color=yellow>10<color> ®iÓm søc kháe vµ t¨ng <color=yellow>1<color> ®iÓm n©ng cÊp. B¹n ®ång hµnh dùa vµo ®iÓm n©ng cÊp ®Ó lªn cÊp. CÊp 1  lªn cÊp 2 cÇn <color=yellow>600<color> ®iÓm n©ng cÊp vµ <color=yellow>1<color> long huyÕt hoµn.",
     [13] = "H·y mau t×m <color=yellow>%d<color> <color=yellow>%s<color> !",
     [14] = "CÊp 2 lªn cÊp 3 cÇn <color=yellow>3600<color> ®iÓm n©ng cÊp vµ <color=yellow>1<color> long huyÕt hoµn, <color=yellow>1<color> phông huyÕt hoµng, <color=yellow>1<color> kú l©n hoµn, <color=yellow>1<color> chiÕn thÇn hoµn. Mçi lÇn n©ng cÊp xong hÖ thèng sÏ tù ®éng ®Æt ®iÓm n©ng cÊp thµnh <color=yellow>0<color>. \n<color=yellow>C¸ch n©ng cÊp: <color> cã thÓ sö dông <color=yellow>tói thùc phÈm <color> ®Ó t¨ng ®iÓm søc kháe. B¹n ®ång hµnh cã cÊp cµng cao sÏ nhËn ®­îc tr¹ng th¸i hç trî cµng cao ®ã!",
-    [15] = "Trang kÕ",
-    [16] = "Trang tr­íc",
+    [15] = "Next page",
+    [16] = "Previous page",
     [17] = "trë l¹i",
     [18] = "Giao n¹p nhiÖm vô b¹n ®ång hµnh th­êng ngµy thµnh c«ng!",
     [19] = "N©ng cÊp thµnh c«ng, b¹n ®ång hµnh cã cÊp lµ <color=yellow>2<color>!",
@@ -115,17 +115,17 @@ VET_201003_TONGBAN_STR_YIN_DIALOG =             --ÃÅ»áÓ¡Ê¹ÓÃ¶Ô»°
     "TriÖu håi b¹n ®ång hµnh" .. "/vet_201003_tongban_call_partner",
     "NhiÖm vô b¹n ®ång hµnh th­êng ngµy" .. "/vet_201003_tongban_daily_task",
     "N©ng cÊp b¹n ®ång hµnh" .. "/vet_201003_tongban_upgrade_partner",
-    "NhËn tr¹ng th¸i hç trî" .. "/vet_201003_tongban_get_assist",
-    "Rêi khái" .. "/vet_201003_tongban_end_dialog",
+    "Receive support status" .. "/vet_201003_tongban_get_assist",
+    "Leave" .. "/vet_201003_tongban_end_dialog",
 }
 
 
 
 VET_201003_TONGBAN_STR_DAILY_TASK =             --Í¬°éÈÕ³£ÈÎÎñ½ÓÊÜ½»ÄÉ
 {
-    {"NhËn nhiÖm vô cÊp 1" .. "/vet_201003_tongban_get_task", "Néi nhiÖm vô cÊp 1" .. "/vet_201003_tongban_hand_task","HiÓn thŞ nhiÖm vô" .. "/vet_201003_tongban_show_task", "H­íng dÉn nhiÖm vô th­êng ngµy" .. "/vet_201003_tongban_task_explain", "Trë l¹i trang tr­íc" .. "/vet_201003_tongban_menghuiyin_in", "Rêi khái" .. "/vet_201003_tongban_end_dialog",},
-    {"NhËn nhiÖm vô cÊp 2" .. "/vet_201003_tongban_get_task", "Nép nhiÖm vô cÊp 2" .. "/vet_201003_tongban_hand_task","HiÓn thŞ nhiÖm vô" .. "/vet_201003_tongban_show_task", "H­íng dÉn nhiÖm vô th­êng ngµy" .. "/vet_201003_tongban_task_explain", "Trë l¹i trang tr­íc" .. "/vet_201003_tongban_menghuiyin_in", "Rêi khái" .. "/vet_201003_tongban_end_dialog",},
-    {"NhËn nhiÖm vô cÊp 3" .. "/vet_201003_tongban_get_task", "Nép nhiÖm vô cÊp 3" .. "/vet_201003_tongban_hand_task","HiÓn thŞ nhiÖm vô" .. "/vet_201003_tongban_show_task", "H­íng dÉn nhiÖm vô th­êng ngµy" .. "/vet_201003_tongban_task_explain", "Trë l¹i trang tr­íc" .. "/vet_201003_tongban_menghuiyin_in", "Rêi khái" .. "/vet_201003_tongban_end_dialog",},
+    {"NhËn nhiÖm vô cÊp 1" .. "/vet_201003_tongban_get_task", "Néi nhiÖm vô cÊp 1" .. "/vet_201003_tongban_hand_task","HiÓn thŞ nhiÖm vô" .. "/vet_201003_tongban_show_task", "H­íng dÉn nhiÖm vô th­êng ngµy" .. "/vet_201003_tongban_task_explain", "Trë l¹i trang tr­íc" .. "/vet_201003_tongban_menghuiyin_in", "Leave" .. "/vet_201003_tongban_end_dialog",},
+    {"NhËn nhiÖm vô cÊp 2" .. "/vet_201003_tongban_get_task", "Nép nhiÖm vô cÊp 2" .. "/vet_201003_tongban_hand_task","HiÓn thŞ nhiÖm vô" .. "/vet_201003_tongban_show_task", "H­íng dÉn nhiÖm vô th­êng ngµy" .. "/vet_201003_tongban_task_explain", "Trë l¹i trang tr­íc" .. "/vet_201003_tongban_menghuiyin_in", "Leave" .. "/vet_201003_tongban_end_dialog",},
+    {"NhËn nhiÖm vô cÊp 3" .. "/vet_201003_tongban_get_task", "Nép nhiÖm vô cÊp 3" .. "/vet_201003_tongban_hand_task","HiÓn thŞ nhiÖm vô" .. "/vet_201003_tongban_show_task", "H­íng dÉn nhiÖm vô th­êng ngµy" .. "/vet_201003_tongban_task_explain", "Trë l¹i trang tr­íc" .. "/vet_201003_tongban_menghuiyin_in", "Leave" .. "/vet_201003_tongban_end_dialog",},
 }
 
 VET_201003_TONGBAN_STR_UPGRADE_PARTNER = 
@@ -135,7 +135,7 @@ VET_201003_TONGBAN_STR_UPGRADE_PARTNER =
     [3] = "Xem ®iÓm n©ng cÊp vµ ®iÓm søc kháe b¹n ®ång hµnh" .. "/vet_201003_tongban_view_point",
     [4] = "§iÒu kiÖn n©ng cÊp" .. "/vet_201003_tongban_upgrade_condition",
     [5] = "Trë l¹i trang tr­íc" .. "/vet_201003_tongban_menghuiyin_in",
-    [6] = "Rêi khái" .. "/vet_201003_tongban_end_dialog",
+    [6] = "Leave" .. "/vet_201003_tongban_end_dialog",
 }
 
 VET_201003_TONGBAN_STR_DAILY_TASK_ERROR =        --Í¬°éÈÕ³£ÈÎÎñ´íÎóÌáÊ¾
@@ -212,11 +212,11 @@ PET_RANDOM_CHAT_DLG =
 	"C¸i nµy th× cßn tïy! Mµ ch¾c còng s¾p råi.",
 	"Cßn ch­a ®ñ tuæi ®Ó hái c©u nµy ®©u, ®õng liÒu!",
 	"Nãi chung lµ ®óng råi! §õng nghÜ g× n÷a.",
-	"§Ñp mµ sao hái khã qu¸ dzËy ?",
+	"You're nice, so why ask such a hard question?",
 	"ThËt vËy sao? NghÜ kü còng ®óng ®ã.",
 	"Còng ®­îc! nh­ng ®Õn mïa æi n¨m sau ch¾c míi ®­îc.",
 	"T©m tr¹ng kh«ng vui, l¸t bĞ tr¶ lêi!",
-	"Hái thÕ th× sao bĞ tr¶ lêi!",
+	"If you ask like that, how can I answer!",
 	"ChuÈn kh«ng cÇn chØnh!",
 	"BĞ cßn thİch n÷a nãi chi lµ ai!",
 }

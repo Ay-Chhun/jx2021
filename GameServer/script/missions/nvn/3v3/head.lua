@@ -135,7 +135,7 @@ function g_t3v3Data:Init(tData)
 		K3v3Hall.SetProgress(today:week(), self.nDay_Rest);
 	end
 	DebugOutput("===========================>")
-	DebugOutput("LÞch thi ®Êu:",Val2Str(self))
+	DebugOutput("Tournament schedule:",Val2Str(self))
 	DebugOutput("===========================<")
 
 	local nVersion,nCurGs = GetRealmType();
@@ -452,7 +452,7 @@ function update3v3MatchRankCB2(nRound, bAwarded, nCount, s)
 		local localSDB = SDB(SDBKEY_3V3, 2, 0);
 		localSDB["LocalMatchRound"] = {"dd", nGlbMatchRound, 1};
 		localSDB:reflash();
-		DebugOutput(format("Toµn cuéc ®Êu quý: %d", nGlbMatchRound));
+		DebugOutput(format("Global tournament value: %d", nGlbMatchRound));
 		_CrossMatchCopyDatabase(SDBKEY_RANK_LOCAL, SDBKEY_RANK_LOCAL_COPY);
 	end
 end

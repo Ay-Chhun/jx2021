@@ -56,8 +56,8 @@ end
 
 function trans_talk_02()
 	local tSay = 	{
-							"§­îc, v·n bèi sÏ ®i t×m cho tiÒn bèi/trans_talk_02_01",
-							"§Ó khi kh¸c nhÐ!/nothing",	
+							"Very well, this humble one will go find it for you, senior/trans_talk_02_01",
+							"Another time then!/nothing",	
 						}						
 	local strSay = "L·o phu nghe nãi töu lÇu ë BiÖn Kinh cã b¸n lo¹i r­îu <color=red>N÷ Nhi Hång th­îng h¹ng<color>, ng­¬i cã thÓ mang vÒ cho ta 1 b×nh ®Ó th­ëng thøc cïng víi ThÞt N­íng kh«ng ? NÕu cã r­îu ë ®©y kh«ng chõng l·o phu sÏ suy nghÜ ®Õn viÖc truyÒn thô Hçn Nguyªn C«ng cho ng­¬i."
 	Say(strSay,getn(tSay),tSay)
@@ -84,7 +84,7 @@ function trans_talk_03()
 		Talk(1,"",szNpcName.."H×nh nh­ c¸c h¹ ®· lÜnh héi vâ c«ng nµy råi!")
 		return
 	end
-	Talk(3,"trans_talk_03_01","Ta muèn mua 1 b×nh N÷ Nhi Hång th­îng h¹ng.",szNpcName.."Lo¹i r­îu ®ã lµ b¶o bèi cña Töu LÇu, gi¸ kh«ng rÎ. Kh¸ch quan thö hái «ng chñ xem!", "Xin ®a t¹!")
+	Talk(3,"trans_talk_03_01","Ta muèn mua 1 b×nh N÷ Nhi Hång th­îng h¹ng.",szNpcName.."Lo¹i r­îu ®ã lµ b¶o bèi cña Töu LÇu, gi¸ kh«ng rÎ. Kh¸ch quan thö hái «ng chñ xem!", "Many thanks!")
 end
 
 function trans_talk_03_01()
@@ -178,7 +178,7 @@ function trans_talk_06()
 	local str1 = "B×nh r­îu tiÒn bèi cÇn ®©y!"
 	local str2 = szNpcName.."Ha ha ha! Ng­¬i ®· tróng kÕ cña tiÓu tö kia råi, b×nh r­îu nµy chØ lµ lo¹i r­îu th«ng th­êng th«i. Xem ng­¬i vâ c«ng cao c­êng nh­ng kinh nghiÖm giang hå ng­¬i cßn non kÐm qu¸!"
 	local str3 = "(...ThËt kh«ng ngê ta b«n tÈu giang hå bÊy l©u nay chØ v× mét chót s¬ suÊt ®· bÞ tªn tiÓu tö kia qua mÆt, lÇn sau nÕu ®Ó ta gÆp l¹i ta sÏ sÏ lÊy m¹ng h¾n...)"
-	local str4 = "Xin tiÒn bèi thø lçi, v·n bèi sÏ ®i t×m b×nh r­îu kh¸c vÒ ®©y!"
+	local str4 = "Please forgive me, senior. This humble one will go find another bottle of wine and bring it here!"
 	local str5 = szNpcName.."Kh«ng sao! C¨n c¬ vâ häc cña ng­êi còng kh«ng tÖ nh­ng kinh nghiÖm giang hå vÉn cßn non kÐm, kh«ng tr¸ch ®­îc ng­¬i. Dï sao th× b×nh r­îu nµy ®èi víi ta còng rÊt cã ý nghÜa, ta sÏ truyÒn thô cho ng­¬i 2 thµnh c¬ b¶n cña Hçn Nguyªn C«ng."
 	SetTaskTrans()
 	Talk(5,"trans_talk_07",str1,str2,str3,str4,str5)
@@ -218,7 +218,7 @@ function trans_talk_08()
 		return
 	end	
 	local tSay = 	{
-							"§a t¹ l·o tiÒn bèi!/trans_talk_08_01",
+							"Many thanks, venerable senior!/trans_talk_08_01",
 							"V·n bèi suy nghÜ l¹i ®·./nothing",
 						}
 	Say(szNpcName.."Ng­¬i ®· luyÖn <color=yellow>Hîp T­íng Quy Nguyªn<color> thµnh th¹o råi sao? Qu¶ lµ kú tµi hiÕm thÊy! Ta kh«ng cßn g× ®Ó truyÒn d¹y ng­¬i n÷a. Ta nghe §¶o chñ §µo Hoa §¶o nãi <color=yellow>Minh Chñ Kim S¬n<color> ®· luyÖn thµnh c«ng thøc thø 2 cña Hçn Nguyªn C«ng <color=yellow>ThÇn H×nh Thñ ChÝnh<color>, h·y ®Õn b¸i kiÕn ®¹i nh©n Êy xem sao!",getn(tSay),tSay)
@@ -252,7 +252,7 @@ function trans_talk_09_01()
 		return
 	end
 	SetTaskTrans()
-	Talk(1,"","TiÓu bèi sÏ ®i ngay!")	
+	Talk(1,"","This junior will go at once!")	
 	TaskTip("Hoµn thµnh 2 nhiÖm vô Tèng Liªu Tµi Nguyªn ChiÕn råi quay l¹i gÆp Minh Chñ Kim S¬n.")
 end
 
@@ -347,7 +347,7 @@ function trans_talk_14()
 		return
 	end	
 	SetTaskTrans()
-	Talk(2,"",szNpcName.."§¶o Chñ §¶o §µo Hoa? Ta nghe nãi l·o Êy kh«ng cßn ë §¶o §µo Hoa n÷a. Ng­¬i t×m <color=yellow>ThuyÒn phu §«ng H¶i<color> hái th¨m chç ë cña l·o Êy xem. H¾n th­êng xuyªn ®i biÓn ch¾c biÕt n¬i ë cña l·o Êy!", "§a t¹ l·o tiÒn bèi, v·n bèi lªn ®­êng ngay!")
+	Talk(2,"",szNpcName.."§¶o Chñ §¶o §µo Hoa? Ta nghe nãi l·o Êy kh«ng cßn ë §¶o §µo Hoa n÷a. Ng­¬i t×m <color=yellow>ThuyÒn phu §«ng H¶i<color> hái th¨m chç ë cña l·o Êy xem. H¾n th­êng xuyªn ®i biÓn ch¾c biÕt n¬i ë cña l·o Êy!", "Many thanks, venerable senior, this humble one sets out at once!")
 	TaskTip("T×m ThuyÒn phu §«ng H¶i hái n¬i ë cña §¶o Chñ §¶o §µo Hoa")
 end
 
@@ -357,7 +357,7 @@ function trans_talk_15()
 		return
 	end	
 	local tSay = 	{
-							"Ta ®ång ý!/trans_talk_15_01",
+							"I agree!/trans_talk_15_01",
 							"§Ó ta suy nghÜ l¹i/nothing",
 						}
 	Say(szNpcName.."§¶o Chñ §µo Hoa §¶o? Ta cã biÕt vÞ cao nh©n nµy. NÕu ng­¬i cho ta <color=yellow>500 vµng<color> ta sÏ chØ n¬i ë cña «ng Êy cho ng­¬i!",getn(tSay),tSay)
@@ -375,7 +375,7 @@ function trans_talk_15_01()
 	if Pay(5000000) == 1 then
 		Talk(1,"",szNpcName.."Ha ha xin ®a t¹! Ng­¬i qu¶ lµ hµo phãng! §­îc, cao nh©n Êy hiÖn ®ang Èn c­ t¹i <color=yellow>C« §¶o<color>. Ng­¬i thö ®Õn ®ã hái th¨m tin tøc xem.")
 		SetTaskTrans()
-		TaskTip("§i thuyÒn ®Õn C« §¶o t×m gÆp §¶o Chñ §¶o §µo Hoa")	
+		TaskTip("Take a boat to Solitary Island to seek out the Island Master of Peach Blossom Island")	
 	end
 end
 
@@ -384,7 +384,7 @@ function trans_talk_16()
 		Talk(1,"",szNpcName.."Hçn Nguyªn C«ng tung hoµnh thiªn h¹, mÊy ai lÜnh héi ®­îc?")
 		return
 	end	
-	Talk(4,"trans_talk_16_01","V·n bèi m¹n phÐp hái l·o cao nh©n ®©y cã ph¶i §¶o Chñ §¶o §µo Hoa?",szNpcName.."Ng­¬i t×m ta cã viÖc g×?","V·n bèi nghe danh cao nh©n ®· l©u, nay muèn gÆp cao nh©n ®Ó thØnh gi¸o chiªu thøc thø 3 cña Hçn Nguyªn C«ng <color=yellow>Hçn Tôc Hßa Quang<color>. Xin cao nh©n truyÒn thô!",szNpcName.."...")	
+	Talk(4,"trans_talk_16_01","V·n bèi m¹n phÐp hái l·o cao nh©n ®©y cã ph¶i §¶o Chñ §¶o §µo Hoa?",szNpcName.."What business do you seek me for?","V·n bèi nghe danh cao nh©n ®· l©u, nay muèn gÆp cao nh©n ®Ó thØnh gi¸o chiªu thøc thø 3 cña Hçn Nguyªn C«ng <color=yellow>Hçn Tôc Hßa Quang<color>. Xin cao nh©n truyÒn thô!",szNpcName.."...")	
 end
 
 function trans_talk_16_01()
@@ -393,7 +393,7 @@ function trans_talk_16_01()
 		return
 	end
 	local tSay = 	{
-							"V·n bèi ®ång ý/trans_talk_16_02",
+							"This humble one agrees/trans_talk_16_02",
 							"V·n bèi suy nghÜ l¹i/nothing",
 						}
 	Say(szNpcName.."Th«i ®­îc råi, thÊy ng­¬i còng thµnh t©m ®Õn gÆp ta. Ta ®ång ý truyÒn thô thøc thø 3 cña Hçn Nguyªn C«ng cho ng­¬i. Nh­ng ng­¬i ph¶i hoµn thµnh c¸c yªu cÇu cña ta! Tr­íc hÕt h·y mang <color=yellow>B¾c Lôc L©m lÖnh, Trôc ¶nh th­¬ng vµ TuyÖt t×nh th¹ch<color> vÒ ®©y gÆp ta. NÕu ng­¬i ®ñ søc ®¸nh b¹i chóng th× ta sÏ truyÒn d¹y.",getn(tSay),tSay)
@@ -435,7 +435,7 @@ function trans_talk_18()
 		return
 	end
 	local tSay = 	{
-							"V·n bèi ®ång ý!/trans_talk_18_01",
+							"This junior agrees!/trans_talk_18_01",
 							"V·n bèi suy nghÜ l¹i/nothing",
 						}
 	Say(szNpcName.."H·y tiÕp tôc lµm cho ta c¸c nhiÖm vô sau ®©y:\nHoµn thµnh Tèng Liªu Tµi Nguyªn ChiÕn: <color=yellow>48 lÇn<color>\nTrång thµnh c«ng H¹t Gièng: <color=yellow>192 lÇn<color>\nTrång thµnh c«ng B¸t Nh· Nhá: <color=yellow>128 lÇn<color>\nTrång thµnh c«ng B¸t Nh· Lín: <color=yellow>64 lÇn<color>\n\nSau khi hoµn thµnh nhiÖm vô quay vÒ gÆp ta!",getn(tSay),tSay)
@@ -477,7 +477,7 @@ function trans_talk_20()
 		return
 	end
 	local tSay = 	{
-							"V·n bèi ®ång ý!/trans_talk_20_01",
+							"This junior agrees!/trans_talk_20_01",
 							"V·n bèi suy nghÜ l¹i/nothing",
 						}
 	Say(szNpcName.."Trªn C« §¶o nµy ta cã tæ chøc so tµi B¹n §ång Hµnh. Ng­¬i còng cã B¹n §ång Hµnh ph¶i kh«ng? H·y hç trî B¹n §ång Hµnh cña ng­¬i <color=yellow>chiÕn th¾ng 4 trËn so tµi<color> vµ rÌn luyÖn B¹n §ång Hµnh <color=yellow> 200 ®iÓm Linh Lùc<color> råi ®Õn gÆp ta.",getn(tSay),tSay)
@@ -606,8 +606,8 @@ function select_translife(nType)
 		ResetProperty()
 		SetLevel(90,0)
 		Msg2Player("§ang tu luyÖn Hçn Nguyªn C«ng chiªu thøc thø nhÊt...")
-		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> tu luyÖn theo h­íng <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 2 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
-		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." theo h­íng "..tb_translife_seal[nType][3])	
+		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> cultivated along the path <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 2 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
+		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." along the path"..tb_translife_seal[nType][3])	
 		DoWait(15,15,10)
 	elseif GetTranslifeCount() == 2 and GetTaskTrans() == 12  then		
 		local nTransCount = GetTranslifeCount()	
@@ -628,8 +628,8 @@ function select_translife(nType)
 		ResetProperty()
 		SetLevel(88,0)
 		Msg2Player("§ang tu luyÖn Hçn Nguyªn C«ng chiªu thøc thø hai...")
-		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> tu luyÖn theo h­íng <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 4 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
-		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." theo h­íng "..tb_translife_seal[nType][3])	
+		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> cultivated along the path <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 4 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
+		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." along the path"..tb_translife_seal[nType][3])	
 		DoWait(15,15,10)	
 	elseif GetTranslifeCount() ==3 and GetTaskTrans() == 22 then
 		local nTransCount = GetTranslifeCount()	
@@ -642,7 +642,7 @@ function select_translife(nType)
 			att3 = att3 or 0
 			BigDelItem(G,D,P,BigGetItemCount(G,D,P))
 			BigDelItem(G,D,Pnew,BigGetItemCount(G,D,Pnew))
-			gf_AddItemEx2({G, D, Pnew, nCount,4, lvatt1, att1, lvatt2, att2, lvatt3, att3},"V¨n Sö Trang","Chuyen Sinh","nhËn ngo¹i trang",120*24*3600,1)
+			gf_AddItemEx2({G, D, Pnew, nCount,4, lvatt1, att1, lvatt2, att2, lvatt3, att3},"Literary Manor","Chuyen Sinh","nhËn ngo¹i trang",120*24*3600,1)
 		end
 		RemoveTitle(tb_translife_tittle[nTransCount-1][nRoute][2], tb_translife_tittle[nTransCount-1][nRoute][3])
 		AddTitle(tb_translife_tittle[nTransCount][nRoute][2], tb_translife_tittle[nTransCount][nRoute][3])
@@ -652,8 +652,8 @@ function select_translife(nType)
 		ResetProperty()
 		SetLevel(86,0)
 		Msg2Player("§ang tu luyÖn Hçn Nguyªn C«ng chiªu thøc thø ba...")
-		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> tu luyÖn theo h­íng <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 6 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
-		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." theo h­íng "..tb_translife_seal[nType][3])	
+		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> cultivated along the path <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 6 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
+		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." along the path"..tb_translife_seal[nType][3])	
 		DoWait(15,15,10)	
 	elseif GetTranslifeCount() == 4 and GetTaskTrans() == 30 then
 		local nTransCount = GetTranslifeCount()	
@@ -676,8 +676,8 @@ function select_translife(nType)
 		ResetProperty()
 		SetLevel(84,0)
 		Msg2Player("§ang tu luyÖn Hçn Nguyªn C«ng chiªu thøc thø t­...")
-		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> tu luyÖn theo h­íng <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 8 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
-		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." theo h­íng "..tb_translife_seal[nType][3])	
+		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> cultivated along the path <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 8 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
+		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." along the path"..tb_translife_seal[nType][3])	
 		DoWait(15,15,10)
 	elseif  GetTranslifeCount() == 5 and GetTaskTrans() == 36 then
 		local nTransCount = GetTranslifeCount()	
@@ -690,7 +690,7 @@ function select_translife(nType)
 			att3 = att3 or 0
 			BigDelItem(G,D,P,BigGetItemCount(G,D,P))
 			BigDelItem(G,D,Pnew,BigGetItemCount(G,D,Pnew))
-			gf_AddItemEx2({G, D, (30000 + GetBody()), nCount,4, lvatt1, att1, lvatt2, att2, lvatt3, att3},"Tø Linh ViÖt Trang","Chuyen Sinh","nhËn ngo¹i trang",120*24*3600,1)
+			gf_AddItemEx2({G, D, (30000 + GetBody()), nCount,4, lvatt1, att1, lvatt2, att2, lvatt3, att3},"Four Spirits Yue Manor","Chuyen Sinh","nhËn ngo¹i trang",120*24*3600,1)
 		end
 		RemoveTitle(tb_translife_tittle[nTransCount-1][nRoute][2], tb_translife_tittle[nTransCount-1][nRoute][3])
 		AddTitle(tb_translife_tittle[nTransCount][nRoute][2], tb_translife_tittle[nTransCount][nRoute][3])
@@ -700,8 +700,8 @@ function select_translife(nType)
 		ResetProperty()
 		SetLevel(79,0)
 		Msg2Player("§ang tu luyÖn Hçn Nguyªn C«ng chiªu thøc thø t­...")
-		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> tu luyÖn theo h­íng <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 8 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
-		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." theo h­íng "..tb_translife_seal[nType][3])	
+		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> cultivated along the path <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 8 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
+		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." along the path"..tb_translife_seal[nType][3])	
 		DoWait(15,15,10)
 	else
 		Talk(1,"",szNpcName.."Hçn Nguyªn C«ng qu¶ lµ tuyÖt thÕ vâ c«ng cña trung nguyªn!")
@@ -714,7 +714,7 @@ function get_translife_item()
 		Talk(1,"",szNpcName.."Hçn Nguyªn C«ng tung hoµnh thiªn h¹, mÊy ai lÜnh héi ®­îc?")
 		return	
 	end	
-	Say(szNpcName.."Ng­¬i muèn lÊy l¹i Ên tÝn vµ ngo¹i trang ph¶i kh«ng?",2,"V·n bèi ®· lµm mÊt, xin tiÒn bèi giao l¹i!/confirm_get_translife_item","Kh«ng cã g×/nothing")	
+	Say(szNpcName.."Ng­¬i muèn lÊy l¹i Ên tÝn vµ ngo¹i trang ph¶i kh«ng?",2,"V·n bèi ®· lµm mÊt, xin tiÒn bèi giao l¹i!/confirm_get_translife_item","Nothing/nothing")	
 end
 
 function gf_PSAddNewItem(tbItemIds, strName, szLogTitle, szLogAction, nExpireTime, nMsg2Player)
@@ -723,7 +723,7 @@ function gf_PSAddNewItem(tbItemIds, strName, szLogTitle, szLogAction, nExpireTim
 	nMsg2Player = nMsg2Player or 0;
 	
 	if type(tbItemIds) ~= "table" or getn(tbItemIds) < 4 then
-		WriteLog("["..szLogTitle.."]\tgf_AddItemEx2:\t tham sè lçi!");
+		WriteLog("["..szLogTitle.."]\tgf_AddItemEx2:\t parameter error!");
 		return 0;
 	end
 	
@@ -956,7 +956,7 @@ function confirm_get_translife_item()
 	SetTask(336,GetTask(336) - 100)	
 	Msg2Player("B¹n bÞ trõ 100 ®iÓm s­ m«n.")	
 	Talk(1,"",szNpcName.."§©y lµ nh÷ng vËy quý gi¸, lÇn sau cÈn thËn ko ®Ó mÊt n÷a ®Êy!")	
-	WriteLogEx("Chuyen Sinh","nhËn l¹i Ên vµ ngo¹i trang chuyÓn sinh lÇn "..nTransCount.." theo h­íng "..tb_translife_seal[nType][3])	
+	WriteLogEx("Chuyen Sinh","nhËn l¹i Ên vµ ngo¹i trang chuyÓn sinh lÇn "..nTransCount.." along the path"..tb_translife_seal[nType][3])	
 end
 
 
@@ -973,7 +973,7 @@ function trans_talk_25()
 		return
 	end
 	local tSay = 	{
-							"V·n bèi ®ång ý!/trans_talk_25_01",
+							"This junior agrees!/trans_talk_25_01",
 							"§Ó v·n bèi suy nghÜ l¹i/nothing",
 						}
 	Say(szNpcName.."H·y lµm cho ta c¸c nhiÖm vô sau ®©y:\nHoµn thµnh Tèng Liªu Tµi Nguyªn ChiÕn: <color=yellow>80 lÇn<color>\nTrång thµnh c«ng H¹t Gièng: <color=yellow>480 lÇn<color>\nTrång thµnh c«ng B¸t Nh· Nhá: <color=yellow>320 lÇn<color>\nTrång thµnh c«ng B¸t Nh· Lín: <color=yellow>160 lÇn<color>\n\nSau khi hoµn thµnh nhiÖm vô quay vÒ gÆp ta!", getn(tSay), tSay)
@@ -1042,7 +1042,7 @@ function trans_talk_28()
 	
 	local szHeader = "§¹i hiÖp h·y khiªu chiÕn B¾c Lôc L©m Minh Chñ, Th­¬ng ThÇn Doanh Thiªn, L·nh H­¬ng L¨ng vµ mang vÒ cho ta 3 tÝn vËt B¾c Lôc L©m lÖnh, Trôc ¶nh th­¬ng vµ TuyÖt t×nh th¹ch."
 	local tSay = 	{
-							"Ta sÏ ®i ngay!/trans_talk_28_01",
+							"I shall go at once!/trans_talk_28_01",
 							"§Ó ta suy nghÜ l¹i/nothing",
 						}
 	Say(szNpcName..szHeader, getn(tSay), tSay)
@@ -1382,7 +1382,7 @@ function cs6_infor_nv_1()
 	local cCS6_TL = mod(GetTask(TSK_CS6_COUNTB),100)
 	local nCS6_LD = mod(floor(GetTask(TSK_CS6_COUNTB)/100),100)
 	
-	Talk(1,"","TiÕn ®é thùc hiÖn nhiÖm vô !!!! \nCóng TÕ: <color=red>"..nCS6_CT.."/30<color> \nTrÞ An: <color=red>"..nCS6_TA.."/30<color> \nThñy Lîi: <color=red>"..cCS6_TL.."/30<color> \nLuyÖn §¬n: <color=red>"..nCS6_LD.."/30<color>")
+	Talk(1,"","TiÕn ®é thùc hiÖn nhiÖm vô !!!! \nCóng TÕ: <color=red>"..nCS6_CT.."/30<color> \nKeeping Order: <color=red>"..nCS6_TA.."/30<color> \nThñy Lîi: <color=red>"..cCS6_TL.."/30<color> \nLuyÖn §¬n: <color=red>"..nCS6_LD.."/30<color>")
 end
 
 
@@ -1392,7 +1392,7 @@ function cs6_infor_nv_2()
 	local cCS6_TL =  mod(floor(GetTask(TSK_CS6_COUNTB)/10000),1000)		--Tø linh
 	local nCS6_NS =  mod(floor(GetTask(TSK_CS6_COUNTB)/10000000),1000)		--Ng«i sao
 	local nCS6_BH =  mod(floor(GetTask(TSK_CS6_GET1TIME)/1000),10000)		--N÷ oa b¶o h¹p
-	Talk(1,"","TiÕn ®é thùc hiÖn nhiÖm vô !!!! \nC©y B¸t Nh· nhá: <color=red>"..nCS6_BNN.."/150<color> \nH¹t Gièng: <color=red>"..nCS6_HG.."/150<color> \nTø Linh: <color=red>"..cCS6_TL.."/150<color> \nNg«i Sao: <color=red>"..nCS6_NS.."/160<color> \nN÷ Oa B¶o H¹p: <color=red>"..nCS6_BH.."/1000<color>")
+	Talk(1,"","TiÕn ®é thùc hiÖn nhiÖm vô !!!! \nC©y B¸t Nh· nhá: <color=red>"..nCS6_BNN.."/150<color> \nSeeds: <color=red>"..nCS6_HG.."/150<color> \nFour Spirits: <color=red>"..cCS6_TL.."/150<color> \nStar: <color=red>"..nCS6_NS.."/160<color> \nN÷ Oa B¶o H¹p: <color=red>"..nCS6_BH.."/1000<color>")
 end
 
 
@@ -1401,7 +1401,7 @@ function cs6_infor_nv_3()
 	local nCS6_TMT =  mod(floor(GetTask(TSK_CS6_COUNTC)/100),100)
 	local nCS6_LS =  mod(floor(GetTask(TSK_CS6_COUNTC)/10000),100)
 	
-	Talk(1,"","TiÕn ®é thùc hiÖn nhiÖm vô !!!! \nTµi Nguyªn ChiÕn: <color=red>"..nCS6_TNN.."/20<color> \nThiªn M«n TrËn: <color=red>"..nCS6_TMT.."/20<color> \nL­¬ng S¬n: <color=red>"..nCS6_LS.."/15<color>")
+	Talk(1,"","TiÕn ®é thùc hiÖn nhiÖm vô !!!! \nTµi Nguyªn ChiÕn: <color=red>"..nCS6_TNN.."/20<color> \nThiªn M«n TrËn: <color=red>"..nCS6_TMT.."/20<color> \nLiangshan: <color=red>"..nCS6_LS.."/15<color>")
 end
 
 
@@ -1414,7 +1414,7 @@ function cs6_infor_nv_4()
 	local nCS6_DichTien = mod(GetTask(TSK_CS6_KiemTien_DichTien),10000)
 	local nCS6_LiLong = mod(floor(GetTask(TSK_CS6_LiLong_HoaHo)/10000),10000)
 	local nCS6_HoaHo = mod(GetTask(TSK_CS6_LiLong_HoaHo),10000)
-	Talk(1,"","TiÕn ®é thùc hiÖn nhiÖm vô !!!! \nTiÓu Lam §ao Quû: <color=red>"..nCS6_DaoQuy.."/9999<color> \nTiÓu Lam Xoa Quû: <color=red>"..nCS6_XoaQuy.."/9999<color> \nSa M¹c Hµnh Nh©n: <color=red>"..nCS6_SaMac.."/9999<color>\nTÇm B¶o Nh©n: <color=red>"..nCS6_TamBao.."/9999<color>\nKiÕm Tiªn Tö: <color=red>"..nCS6_KiemTien.."/9999<color>\n§Þch Tiªn Tö: <color=red>"..nCS6_DichTien.."/9999<color>\nLiÖt Nhan Li Long: <color=red>"..nCS6_LiLong.."/9999<color>\nXÝch LuyÖn Háa Hå: <color=red>"..nCS6_HoaHo.."/9999<color>")
+	Talk(1,"","TiÕn ®é thùc hiÖn nhiÖm vô !!!! \nTiÓu Lam §ao Quû: <color=red>"..nCS6_DaoQuy.."/9999<color> \nLittle Blue Trident Demon: <color=red>"..nCS6_XoaQuy.."/9999<color> \nSa M¹c Hµnh Nh©n: <color=red>"..nCS6_SaMac.."/9999<color>\nTÇm B¶o Nh©n: <color=red>"..nCS6_TamBao.."/9999<color>\nKiÕm Tiªn Tö: <color=red>"..nCS6_KiemTien.."/9999<color>\n§Þch Tiªn Tö: <color=red>"..nCS6_DichTien.."/9999<color>\nFierce Visage Li Dragon: <color=red>"..nCS6_LiLong.."/9999<color>\nXÝch LuyÖn Háa Hå: <color=red>"..nCS6_HoaHo.."/9999<color>")
 end
 
 
@@ -1440,7 +1440,7 @@ function cs6_npc2_infor1()
 	end
 	if GetTask(TSK_CS6_TULINH) == 4 then 	
 		tinsert(tSay, "Hoµn thµnh nhiÖm vô §¸nh qu¸i/cs6_finish_danhquai")	
-		tinsert(tSay, "Gióp ®ì giÕt qu¸i/cs6_help_danhquai_infor")
+		tinsert(tSay, "Help slay monsters/cs6_help_danhquai_infor")
 		tinsert(tSay, "TiÕn ®é nhiÖm vô/cs6_infor_nv_4")		
 	end
 	tinsert(tSay, "Ta chØ ghÐ th¨m/nothing")
@@ -1482,7 +1482,7 @@ function cs6_infor_danhquai()
 	local tHeader = szNpcName.."§¹i hiÖp qu¶ lµ mét kú nh©n trong Vâ L©m vµ cã lßng nh©n ®øc, cøu gióp ®Êt n­íc"
 		
 	tinsert(tSay, "Hoµn thµnh nhiÖm vô §¸nh qu¸i/cs6_finish_danhquai")	
-	tinsert(tSay, "Gióp ®ì giÕt qu¸i/cs6_help_danhquai_infor")		
+	tinsert(tSay, "Help slay monsters/cs6_help_danhquai_infor")		
 	tinsert(tSay, "TiÕn ®é nhiÖm vô/cs6_infor_nv_4")	
 	tinsert(tSay, "Ta chØ ghÐ th¨m/nothing")
 	Say(tHeader, getn(tSay), tSay)
@@ -1493,7 +1493,7 @@ function cs6_help_danhquai_infor()
 	local tHeader = szNpcName.."NÕu ®¹i hiÖp bËn luyÖn c«ng, kh«ng cã thêi gian ®Ó giÕt qu¸i th× ta cã thÓ gióp ®¹i hiÖp. §éi qu©n tinh nhuÖ bÝ Èn cña ta hiÖn ®ang r¶nh, cã thÓ gióp ®­îc ®¹i hiÖp nh­ng ph¶i tèn phÝ !!!"
 		
 	for i = 1, getn(tbMobsList_cs6) do
-		tinsert(tSay,"Gióp ®ì giÕt qu¸i "..tbMobsList_cs6[i][1].."/#cs6_help_danhquai_kill("..i..")");
+		tinsert(tSay,"Help slay monsters"..tbMobsList_cs6[i][1].."/#cs6_help_danhquai_kill("..i..")");
 	end
 	tinsert(tSay, "Gióp tiªu diÖt toµn bé qu¸i nhiÖm vô/#cs6_help_danhquai_kill(9)")	
 	tinsert(tSay, "Ta chØ ghÐ th¨m/nothing")
@@ -1524,14 +1524,14 @@ function cs6_help_danhquai_kill(nType)
 			return		
 		end
 		DelItem(2,1,30230, 1000)	
-		gf_WriteLogEx("GIET QUAI NHANH", "thµnh c«ng", 1, "Qu¸i "..tbMobsList_cs6[nType][1])	
+		gf_WriteLogEx("GIET QUAI NHANH", "thµnh c«ng", 1, "Monster"..tbMobsList_cs6[nType][1])	
 		if GetTask(TSK_CS6_TULINH) == 4 and nMobCount < 9999 then
 			if nPosition == 1 then
 				SetTask(tbMobsList_cs6[nType][2], 99990000 + mod(GetTask(tbMobsList_cs6[nType][2]),10000))
 			else
 				SetTask(tbMobsList_cs6[nType][2], floor(GetTask(tbMobsList_cs6[nType][2])/10000)*10000 + 9999)		
 			end
-			Msg2Player("NhiÖm vô Tø Linh Phôc Sinh: §· giÕt ®­îc 9999 "..szMobName)
+			Msg2Player("Four Spirits Revival Quest: Slain 9999"..szMobName)
 		end			
 	else
 		local nCheck = 0
@@ -1553,7 +1553,7 @@ function cs6_help_danhquai_kill(nType)
 			return			
 		end
 		DelItem(2,1,30230, 6000)
-	 	gf_WriteLogEx("GIET QUAI NHANH", "thµnh c«ng", 1, "TÊt c¶ Qu¸i")		
+	 	gf_WriteLogEx("GIET QUAI NHANH", "thµnh c«ng", 1, "All Monsters")		
 		SetTask(TSK_CS6_DaoQuy_XoaQuy, 99999999)
 		SetTask(TSK_CS6_SaMac_TamBao, 99999999)
 		SetTask(TSK_CS6_KiemTien_DichTien, 99999999)
@@ -1583,10 +1583,10 @@ function cs6_finish_danhquai()
 	local tSay = {}
 	local tHeader = szNpcName.."§¹i hiÖp qu¶ lµ mét kú nh©n trong Vâ L©m, b¾t ®Çu lÜnh ngé bÝ kÝp <color=yellow>Tø Linh Phôc Sinh<color> ®Ó ®ét ph¸ b×nh c¶nh. LÜnh ngé thµnh c«ng cã thÓ kich thÝch tiÒm lùc cña b¶n th©n ®¹t c¶nh giíi míi trong §¶ Th«ng Kinh M¹ch. !!!"
 	--- b¾t ®iÒu kiÖn ë ®©y		
-	tinsert(tSay, "Phôc sinh theo h­íng Long Tö/#cs6_finish_confrim(1)")			
-	tinsert(tSay, "Phôc sinh theo h­íng Hæ Tö/#cs6_finish_confrim(2)")			
+	tinsert(tSay, "Revive along the Dragon Son path/#cs6_finish_confrim(1)")			
+	tinsert(tSay, "Revive along the Tiger Son path/#cs6_finish_confrim(2)")			
 	tinsert(tSay, "Phôc sinh theo h­íng Phông Tö/#cs6_finish_confrim(4)")			
-	tinsert(tSay, "Phôc sinh theo h­íng ¦ng Tö/#cs6_finish_confrim(3)")		
+	tinsert(tSay, "Revive along the Eagle Son path/#cs6_finish_confrim(3)")		
 	tinsert(tSay, "Ta ch­a muèn Phôc Sinh/nothing")		
 	Say(tHeader, getn(tSay), tSay)	
 end
@@ -1671,7 +1671,7 @@ function cs6_finish_confrim(nType)
 --			BigDelItem(G,D,P,BigGetItemCount(G,D,P))
 --			BigDelItem(G,D,Pnew,BigGetItemCount(G,D,Pnew))
 --	end	
-	local tbVanSu = {"V¨n Sö ngo¹i trang",0,108,570,188}
+	local tbVanSu = {"Scholar Outfit",0,108,570,188}
 	local nPVanSu = tbVanSu[4]  + GetBody() - 1
 	for i = 0, 2 do
 		BigDelItem(0, 108 + i, nPVanSu, BigGetItemCount(0, 108 + i, nPVanSu))	
@@ -1683,7 +1683,7 @@ function cs6_finish_confrim(nType)
 	SetTask(TSK_CS6_TULINH,5)		--hoµn thµnh nhÖm vô chuyÓn sinh
  	gf_WriteLogEx("CHUYEN SINH 6", "chuyÓn sinh thµnh c«ng", 1, "Finish nv chuyÓn Sinh 6 npc 2")	
 	Msg2Player("Chóc mõng ®¹i hiÖp ®· Phôc Sinh thµnh c«ng theo h­íng "..tbType[nType])
-	Say("Chóc mõng ®¹i hiÖp ®· lÜnh ngé thµnh c«ng bÝ kÝp gia truyÒn Tø Linh Phôc Tinh! H·y ®¨ng nhËp l¹i.",1,"Tho¸t!/go_exit")
+	Say("Chóc mõng ®¹i hiÖp ®· lÜnh ngé thµnh c«ng bÝ kÝp gia truyÒn Tø Linh Phôc Tinh! H·y ®¨ng nhËp l¹i.",1,"Exit!/go_exit")
 end
 
 

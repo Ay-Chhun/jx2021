@@ -50,7 +50,7 @@ function liu_qijin_add()
 	local add_flag = AddItem(2,1,563,1)
 	if add_flag == 1 then
 		Msg2Player("Chóc mõng b¹n nhËn ®­îc Kú Kim cña thî rÌn L­u!")
-		Msg2SubWorld("Chóc mõng:"..GetName().."NhiÖm vô t¨ng cÊp trang søc Th¸i H­, nÕu giÕt ®­îc thî rÌn L­u sÏ nhËn ®­îc Kú Kim!")
+		Msg2SubWorld("Congratulations:"..GetName().."NhiÖm vô t¨ng cÊp trang søc Th¸i H­, nÕu giÕt ®­îc thî rÌn L­u sÏ nhËn ®­îc Kú Kim!")
 		SetTask(taixu_jwl_taskID,4)
 	else
 		WriteLog("NhiÖm vô trang søc Th¸i H­_Ng­êi ch¬i:"..GetName().."T¨ng Kú Kim cña thî rÌn L­u thÊt b¹i, vŞ trİ thÊt b¹i:"..add_flag)

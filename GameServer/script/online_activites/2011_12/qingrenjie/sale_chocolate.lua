@@ -7,7 +7,7 @@ EVENT_LOG_TITLE = "Hoat dong thang 2 nam 2012"
 function main()
 	local nDate =  tonumber(date("%y%m%d"))
 	if nDate < 120210 or nDate > 120219 then
-		Talk(1, "", "§· hÕt h¹n mua S«c«la t×nh nh©n!")
+		Talk(1, "", "The time to buy Lover's Chocolate has expired!")
 		return
 	end
 	local szName = "La Sa"

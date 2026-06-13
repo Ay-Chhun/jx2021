@@ -41,7 +41,7 @@ end;
 
 -- Ê¦ÃÅÈÎÎñÏà¹Ø
 function about_faction_task()
-	Say("A Di §µ PhËt!",
+	Say("Amitabha Buddha!",
 		3,
 		"Ta muèn cèng hiÕn cho s­ m«n (nhiÖm vô s­ m«n)/start_faction_tasklink",
 		"Ta muèn tra xem ®é cèng hiÕn./check_query_faction_contri",
@@ -107,7 +107,7 @@ function no()
         return
     end;
     
-	Say("A Di §µ PhËt!");
+	Say("Amitabha Buddha!");
 end;
 
 function practice()
@@ -117,7 +117,7 @@ function practice()
         if GetItemCount(2, 0, 205) >= 1 then  --Ê¦ÃÅÁîÅÆ
             Say("Cã ph¶i vµo ®©y tu luyÖn?",
             	2,
-            	"§óng/practice_start",
+            	"Yes/practice_start",
             	"Sai/no_practice");
         else
             Talk(1, "", "Ng­¬i kh«ng cã <color=yellow>lÖnh bµi s­ m«n ThiÕu L©m<color>, kh«ng thÓ vµo tu luyÖn.");
@@ -126,7 +126,7 @@ function practice()
 end;
 
 function no_practice()
-	Say("A Di §µ PhËt!");
+	Say("Amitabha Buddha!");
 end;
 
 -- ÉÙÁÖÊ¦ÃÅÖØ¸´ÈÎÎñµÄÈë¿Ú

@@ -15,7 +15,7 @@ tRole ={
 	{"starletcute","ZzLordlyzZ",90},
 	{"ttttnmthtk","sitinh",91},
 	{"nhocconbuongbinh91","RRuouQuenSauu",88},
-	{"tappro120","BatS­Thóc",95},
+	{"tappro120","BatSuThuc",95},
 	{"hoaduongtathan10","CatherineLep",93},
 	{"lightpoison","AnhSoDocx",92},
 	{"macthienbinh","zTuyetTinhKhucz",92},
@@ -36,7 +36,7 @@ tRole ={
 	{"dudidudi2557","zxzCRYzxz",99},
 	{"83722884","xOxEdwardxOx",94},
 	{"xoaylovepe","zIzKeoCaoSuzIz",96},
-	{"trangiahunghanam1987","Vua§écBiÕnH×nh",78},
+	{"trangiahunghanam1987","KingPoisonShapeshifter",78},
 	{"caytienthuonghoi0","dt01684919893",90},
 	{"thinmeo88","zZzCuaHapBiazZz",95},
 	{"hoat6892","o0oVIRUSoOo",92},
@@ -44,13 +44,13 @@ tRole ={
 	{"shopluadong1","Back2theTOP",92},
 	{"anhvudp619","o0oTHAYCHUAo0o",92},
 	{"petrangiuiu","zTzBomNetzTz",98},
-	{"chuminhhungpro","o0Mr§inho0",81},
+	{"chuminhhungpro","o0Mr0inho0",81},
 	{"vyvy1203","ZxVitYeuHeoxZ",92},
 	{"nhtl027670","HanDoiXamLoDick",79},
 	{"leesanoc1986","o0ThiªnThÇn0o",82},
 	{"nhimcon2210","oOTrieuManOo",88},
-	{"binz246","TiÓuC¸i",83},
-	{"luckyboys9xftubn","HËnKÎB¹cT×nh0241",85},
+	{"binz246","LittleCai",83},
+	{"luckyboys9xftubn","HanKeBacTinh0241",85},
 	{"nhtl050949","TuyPhong",75},
 }
 
@@ -59,7 +59,7 @@ function main()
 	local t_dialog = {
 --		"NhËn buff hç trî néi c«ng/#Getfuzhu(1)",
 --		"NhËn buff hç trî ngo¹i c«ng/#Getfuzhu(2)",
-		"KÕt thóc ®èi tho¹i/viet_0909_nothing"
+		"End dialogue/viet_0909_nothing"
 	};
 	local nDate = tonumber(date("%Y%m%d"))
 	if nDate >= 20091001 and nDate <= 20091004 then

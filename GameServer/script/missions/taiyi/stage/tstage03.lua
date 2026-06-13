@@ -49,7 +49,7 @@ function tStage03_1.Init()
 	TY_ClearColdDown();
 	self:CreateNpcs();
 	this.msCamp:turnPlayer(0, TY_SetPlayerPos, tPlayerPos[self.father.nStageId][1]);
-	this.msCamp:turnPlayer(0, function() HeadMsg2Player("§éi tr­ëng vµ Méc QuÕ Anh ®èi tho¹i ®Ó tiÕp tôc ¶i!") end);
+	this.msCamp:turnPlayer(0, function() HeadMsg2Player("Team leader, talk to Mu Guiying to continue the stage!") end);
 end
 
 function tStage03_1.OnFinish()
@@ -66,7 +66,7 @@ end
 function tStage03_1.CheatMode()
 	local self = tStage03_1;
 	if GetItemCount(TYT_IB_ITEM[2], TYT_IB_ITEM[3], TYT_IB_ITEM[4]) < 1 then
-		Talk(1, "", "<color=green>Méc QuÕ Anh<color>: Trªn ng­êi b¹n"..TYT_IB_ITEM[1].."Kh«ng ®ñ.");
+		Talk(1, "", "<color=green>Méc QuÕ Anh<color>: Trªn ng­êi b¹n"..TYT_IB_ITEM[1].."Not enough.");
 		return 0;
 	end
 	if 1 ~= DelItem(TYT_IB_ITEM[2], TYT_IB_ITEM[3], TYT_IB_ITEM[4], 1) then return 0; end
@@ -112,18 +112,18 @@ function tStage03_1:NpcMain()
 		if not tStage03_1.sel_NORMAL then
 			tStage03_1.sel_NORMAL = {
 --				"½áÊøµÚ3¹Ø/#tStage03_1.EndStage03()",
-				"Më ¶i/#tStage03_1.OnFinish()",
+				"Open the stage/#tStage03_1.OnFinish()",
 				--"H×nh thøc sao chÐp (CÇn "..TYT_IB_ITEM[1].."*1)/#tStage03_1.CheatMode()",
 				"Ta muèn rêi khái ¶i/TY_ConfirmClose",
-				"Hñy bá/nothing",
+				"Cancel/nothing",
 			};
 		end
 		if not tStage03_1.sel_HARD then
 			tStage03_1.sel_HARD = {
 --				"½áÊøµÚ3¹Ø/#tStage03_1.EndStage03()",
-				"Më ¶i/#tStage03_1.OnFinish()",
+				"Open the stage/#tStage03_1.OnFinish()",
 				"Ta muèn rêi khái ¶i/TY_ConfirmClose",
-				"Hñy bá/nothing",
+				"Cancel/nothing",
 			};
 		end
 		local strTab = tStage03_1.sel_HARD;
@@ -268,7 +268,7 @@ function tStage03_2:CheckPos()
 		end
 	end
 	if 0 ~= nYzbIdx and 1 ~= IsNpcDeath(nYzbIdx) then	--÷ÈÄ§±ä¾«Ó¢
-		local tNpcIdx = TY_FindAllNpc("MÞ Ma");
+		local tNpcIdx = TY_FindAllNpc("Mi Mo");
 		local _, x, y = GetNpcWorldPos(nYzbIdx);
 		for i = 1, getn(tNpcIdx) do
 			local _, x1, y1 = GetNpcWorldPos(tNpcIdx[i]);
@@ -285,7 +285,7 @@ function tStage03_2:CheckPos()
 	
 	local nMgyIdx = TY_FindNpc(tNpcs.mgy_3[2]);
 	if 0 ~= nMgyIdx and 1 ~= IsNpcDeath(nMgyIdx) then	--÷ÈÄ§±¬Õ¨
-		local tNpcIdx = TY_FindAllNpc("MÞ Ma");
+		local tNpcIdx = TY_FindAllNpc("Mi Mo");
 		local _, x, y = GetNpcWorldPos(nMgyIdx);
 		for i = 1, getn(tNpcIdx) do
 			local _, x1, y1 = GetNpcWorldPos(tNpcIdx[i]);
@@ -304,7 +304,7 @@ function tStage03_2:CheckMeiMoNum()
 		return 0;
 	end
 	local self = tStage03_2;
-	local tNpcIdx = TY_FindAllNpc("MÞ Ma");
+	local tNpcIdx = TY_FindAllNpc("Mi Mo");
 	local szMsg = "Toµn b¶n ®å v­ît qu¸ 12 con MÞ Ma, v­ît ¶i thÊt b¹i!";
 	local nNum = 12
 	if eDifType.HARD == GetMissionV(this.mv_02) then
@@ -363,7 +363,7 @@ function tStage03_2:CallMeiMo()
 	local nMapId = this.msPosition:getMapID();
 	for i = 1, 3 do
 		local nIdx = random(1, getn(tNpcPos.mm[3]));
-		local nNpcIdx = CreateNpc("TYT_Hmeimo", "MÞ Ma", nMapId, tNpcPos.mm[3][nIdx][1], tNpcPos.mm[3][nIdx][2]);
+		local nNpcIdx = CreateNpc("TYT_Hmeimo", "Mi Mo", nMapId, tNpcPos.mm[3][nIdx][1], tNpcPos.mm[3][nIdx][2]);
 		SetNpcDeathScript(nNpcIdx, thisFile);
 		SetCampToNpc(nNpcIdx, CampEnemy);
 	end
@@ -385,7 +385,7 @@ function tStage03_2:CallTunYunShou()
 	local nMapId = this.msPosition:getMapID();
 	local nIdx = random(1, getn(tStage03_2.tPoints));
 	local x, y = tStage03_2.tPoints[nIdx][1], tStage03_2.tPoints[nIdx][2];
-	local nNpcIdx = CreateNpc("TYT_Hkuilei", "Con Rèi", nMapId, x, y);
+	local nNpcIdx = CreateNpc("TYT_Hkuilei", "Puppet", nMapId, x, y);
 	SetNpcLifeTime(nNpcIdx, 7);
 	SetNpcDeathScript(nNpcIdx, thisFile);
 	CastState2Npc(nNpcIdx, "state_attack_trans", 50, 18*60*60);
@@ -572,26 +572,26 @@ end
 
 function tStage03_3.GoToTYTower(nDifType, nType)
 	local self = tStage03_3;
-	if 1 ~= TY_EnterCondCheck("<color=green>Méc QuÕ Anh:<color>", eMSName.TOWER, nDifType) then
+	if 1 ~= TY_EnterCondCheck("<color=green>Mu Guiying:<color>", eMSName.TOWER, nDifType) then
 		return 0;
 	end
 	
-	if 0 == TY_CheckMapCountLimit("<color=green>Méc QuÕ Anh:<color>", eMSName.TOWER, nDifType) then
+	if 0 == TY_CheckMapCountLimit("<color=green>Mu Guiying:<color>", eMSName.TOWER, nDifType) then
 		return 0;
 	end
 	
 	if tonumber(nType) == 1 then
-		if 1 ~= TY_CheckAndCostJingLi("<color=green>Méc QuÕ Anh:<color>", eMSName.TOWER, nDifType, 1) then
+		if 1 ~= TY_CheckAndCostJingLi("<color=green>Mu Guiying:<color>", eMSName.TOWER, nDifType, 1) then
 			return 0;
 		end
-		if 1 ~= TY_CheckAndCostJingLi("<color=green>Méc QuÕ Anh:<color>", eMSName.TOWER, nDifType) then
+		if 1 ~= TY_CheckAndCostJingLi("<color=green>Mu Guiying:<color>", eMSName.TOWER, nDifType) then
 			return 0;
 		end
 	elseif tonumber(nType) == 2 then
-		if 1 ~= TY_CheckAndCostItem("<color=green>Méc QuÕ Anh:<color>", eMSName.TOWER, nDifType, 1) then
+		if 1 ~= TY_CheckAndCostItem("<color=green>Mu Guiying:<color>", eMSName.TOWER, nDifType, 1) then
 			return 0;
 		end
-		if 1 ~= TY_CheckAndCostItem("<color=green>Méc QuÕ Anh:<color>", eMSName.TOWER, nDifType) then
+		if 1 ~= TY_CheckAndCostItem("<color=green>Mu Guiying:<color>", eMSName.TOWER, nDifType) then
 			return 0;
 		end
 	end
@@ -615,7 +615,7 @@ function tStage03_3:NpcMain()
 			--format("ÎÒÒª²Î¼ÓÓ¢ÐÛÄÑ¶ÈµÄÌ«Ò»Ëþ(ÏûºÄ%s)/#tStage03_3.GoToTYTower(%d, %d)", "¾«Á¦*"..TYT_JOIN_COST_JINGLI[2][2], eDifType.HARD, 1),
 			--format("ÎÒÒª²Î¼ÓÓ¢ÐÛÄÑ¶ÈµÄÌ«Ò»Ëþ(¶Ó³¤ÏûºÄ%s)/#tStage03_3.GoToTYTower(%d, %d)", TYT_JOIN_COST_ITEM[2][2][2].."*"..TYT_JOIN_COST_ITEM[2][2][1][4], eDifType.HARD, 2),
 			"Ta muèn rêi khái ¶i/TY_ConfirmClose",
-			"Hñy bá/nothing",
+			"Cancel/nothing",
 		};
 		Say("<color=green>Méc QuÕ Anh<color>: §ång ý vµo ¶i tiÕp theo kh«ng?", getn(strTab), strTab);
 	end

@@ -61,7 +61,7 @@ function Talk_2()
 end
 
 function Talk_3()
-	SendScript2Client(format("Open([[EquipShop]], %d, [[%s]])", 3079, "Ti÷m danh v‰ng Chi’t Xung X∑"))
+	SendScript2Client(format("Open([[EquipShop]], %d, [[%s]])", 3079, "Zhechong She Reputation Shop"))
 end
 
 function Talk_4()
@@ -79,9 +79,9 @@ function Talk_5( )
 
 	if nPop < 2000 then strPop="S¨ xu t mao l≠" nLim=2000;
 	elseif nPop < 6000 then strPop="BÈc lÈ tµi n®ng" nLim=6000;
-	elseif nPop < 12000 then strPop="Danh ti’ng th≠Ìc khÎi" nLim=12000;
+	elseif nPop < 12000 then strPop="Make a name and rise to fame" nLim=12000;
 	elseif nPop < 20000 then strPop="C´ng danh hi”n h∏ch" nLim=20000;
-	elseif nPop < 40000 then strPop="C˘u phÙ thﬁnh danh" nLim=40000;
+	elseif nPop < 40000 then strPop="Restore the prosperous name of old" nLim=40000;
 	else strPop="Vπn ng≠Íi ng≠Ïng mÈ" nLim=40000; end 
 
 	local strTalk = g_szNpcName.."Trong cuÈc chi’n TrÙy Long S¨n, hi÷p s‹ anh dÚng h¨n ng≠Íi.\n"
@@ -89,6 +89,6 @@ function Talk_5( )
 	strTalk=strTalk..format("Danh v‰ng Chi’t Xung X∑ t›ch lÚy: %d/%d\n",nPop,nLim)
 	local tbSay = {}
 	tinsert(tbSay,"trÎ lπi/main")
-	tinsert(tbSay,"Ra kh·i/nothing")
+	tinsert(tbSay,"Leave/nothing")
 	Say(strTalk,getn(tbSay),tbSay)
 end

@@ -26,12 +26,12 @@ function battle_main()
 	local nLiaoPlayerMSCount = BT_GetPlayerCount(PRIMARY_MAINBATTLE_ID,LIAO_ID);
 	--ÐÂÑ¡ÏîÖ»ÄÜ¼ÓÔÚÏÂÃæµÚ2¸öÑ¡ÏîÖ®ºó
 	local selTab = {
-			"B¸o danh"..tBattleName[PRIMARY_MAINBATTLE_ID].."[Tèng "..nSongPlayerMSCount.." ng­êi]: [Liªu "..nLiaoPlayerMSCount.." ng­êi]/#sign_up("..PRIMARY_MAINBATTLE_ID..")",
+			"Register"..tBattleName[PRIMARY_MAINBATTLE_ID].."[Tèng "..nSongPlayerMSCount.." ng­êi]: [Liªu "..nLiaoPlayerMSCount.." ng­êi]/#sign_up("..PRIMARY_MAINBATTLE_ID..")",
 			"Ta muèn vµo"..tBattleName[nBattleType].."chiÕn tr­êng [Tèng "..nSongPlayerMSCount.." ng­êi]: [Liªu "..nLiaoPlayerMSCount.." ng­êi]/#join_battle("..nBattleType..")",
 			"Ta muèn nhËn phÇn th­ëng chiÕn tr­êng/get_battle_award",
 			"§æi phÇn th­ëng chiÕn tr­êng/battle_regular_award",
 			"Ta muèn ®­îc h­íng dÉn vÒ chiÕn tr­êng/get_battle_book",
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 			}
 	local nGlobalState = GetGlbValue(GLB_NEW_BATTLESTATE);
 	local nBattleSegment = mod(nGlobalState,10);	--»ñÈ¡Õ½³¡µ±Ç°´¦ÓÚÄÄ¸ö½×¶Î
@@ -197,7 +197,7 @@ function sign_up_confirm(nBattleType,nSignUpType)	--ÅÐ¶ÏÕ½³¡Ê±¼ä¡¢×î´óÈËÊý¡¢×î´ó
 	if nSignUpType == 1 then
 		if DelItem(2,1,9999,1) == 1 then
 			BT_SetData(PTNC_ENTER_USE_JUNGONGZHANG,nSignUpType);
-			WriteLog("[ChiÕn tr­êng]:"..GetName().." dïng 1 Qu©n C«ng Ch­¬ng b¸o danh tham gia chiÕn tr­êng");
+			WriteLog("[Battlefield]:"..GetName().." dïng 1 Qu©n C«ng Ch­¬ng b¸o danh tham gia chiÕn tr­êng");
 		else
 			Talk(1,"","<color=green>"..g_sNpcName.."<color>: B¹n cÇn <color=yellow>1 Qu©n C«ng Ch­¬ng<color> míi cã thÓ b¸o danh.");
 			return 0;
@@ -242,14 +242,14 @@ function join_battle(nBattleType)
 	if nCurRank < 4 and BT_GetData(PTNC_ENTER_USE_JUNGONGZHANG) == 0 then	--Èç¹û¾üÏÎÔÚÏÈ·æÒÔÏÂ²¢ÇÒÃ»ÓÃ¾ü¹¦ÕÂ²¹±¨µÄ¾ÍÐèÒª×÷ÈËÊýÉÏÏÞºÍÈËÊý²îÅÐ¶Ï
 		local selTab = {
 					"Ta muèn dïng Qu©n C«ng Ch­¬ng vµo chiÕn tr­êng/#join_battle_use_jungongzhang_confirm("..nBattleType..")",
-					"\n§Ó ta suy nghÜ thªm/nothing",
+					"\nLet me think it over/nothing",
 					}
 		if tPlayerCount[nCamp] >= nMaxPlayer then
-			Say("<color=green>"..g_sNpcName.."<color>: "..tCampNameZ[nCamp].." lµ <color=yellow>"..nMaxPlayer.."<color> ®· ®ñ, "..tSexName[GetSex()].."B¹n cã thÓ <color=yellow>sö dông Qu©n C«ng Ch­¬ng vµo chiÕn tr­êng<color> hoÆc ®îi ë bªn ngoµi.",getn(selTab),selTab);
+			Say("<color=green>"..g_sNpcName.."<color>: "..tCampNameZ[nCamp].." is <color=yellow>"..nMaxPlayer.."<color> is enough,"..tSexName[GetSex()].."B¹n cã thÓ <color=yellow>sö dông Qu©n C«ng Ch­¬ng vµo chiÕn tr­êng<color> hoÆc ®îi ë bªn ngoµi.",getn(selTab),selTab);
 			return 0;
 		end;
 		if tPlayerCount[nCamp] - tPlayerCount[SONGLIAO_ID-nCamp] >= nDiffPlayerCount then
-			Say("<color=green>"..g_sNpcName.."<color>: "..tCampNameZ[nCamp].."_ binh lùc ®· ®ñ, "..tSexName[GetSex()].."B¹n cã thÓ <color=yellow>sö dông Qu©n C«ng Ch­¬ng vµo chiÕn tr­êng<color> hoÆc ®îi bªn ngoµi, hiÖn sè ng­êi 2 phe trong chiÕn tr­êng lµ: <color=yellow>Tèng ["..nSongPlayerCount.."]:["..nLiaoPlayerCount.."] Liªu<color>.",getn(selTab),selTab);
+			Say("<color=green>"..g_sNpcName.."<color>: "..tCampNameZ[nCamp].."_ troop strength is enough,"..tSexName[GetSex()].."B¹n cã thÓ <color=yellow>sö dông Qu©n C«ng Ch­¬ng vµo chiÕn tr­êng<color> hoÆc ®îi bªn ngoµi, hiÖn sè ng­êi 2 phe trong chiÕn tr­êng lµ: <color=yellow>Tèng ["..nSongPlayerCount.."]:["..nLiaoPlayerCount.."] Liªu<color>.",getn(selTab),selTab);
 			Msg2Player("Sè ng­êi hiÖn t¹i kho¶ng "..nDiffPlayerCount);
 			return 0;
 		end;
@@ -260,8 +260,8 @@ end;
 
 function join_battle_use_jungongzhang_confirm(nBattleType)
 	local selTab = {
-				"§ång ý/#join_battle_use_jungongzhang("..nBattleType..")",
-				"Hñy bá/nothing",
+				"Agree/#join_battle_use_jungongzhang("..nBattleType..")",
+				"Cancel/nothing",
 				}
 	Say("<color=green>"..g_sNpcName.."<color>: B¹n muèn sö dông <color=yellow>Qu©n C«ng Ch­¬ng<color> vµo chiÕn tr­êng?",getn(selTab),selTab);
 end;
@@ -309,10 +309,10 @@ function get_battle_award()
 		szLastResult = "KÕt qu¶ 2 bªn Tèng Liªu hßa nhau."
 		nExpMul1,nExpMul2,nExpMul3 = 1.5,2,2.5;
 	elseif nLastCamp == nLastResult then
-		szLastResult = "KÕt qu¶"..tCampNameZ[nLastCamp].." ®· th¾ng.";
+		szLastResult = "KÕt qu¶"..tCampNameZ[nLastCamp].." has won.";
 		nExpMul1,nExpMul2,nExpMul3 = 1.5,2,2.5;
 	else
-		szLastResult = "KÕt qu¶"..tCampNameZ[SONGLIAO_ID-nLastCamp].." ®· th¾ng.";
+		szLastResult = "KÕt qu¶"..tCampNameZ[SONGLIAO_ID-nLastCamp].." has won.";
 		nExpMul1,nExpMul2,nExpMul3 = 2,2.8,3.5;
 	end;
 	local selTab = {
@@ -369,7 +369,7 @@ function get_battle_award_confirm(nType)
 		return 0;
 	end;
 	local selTab = {
-				format("§óng/#get_all_award(%d)",nType),
+				format("Confirm/#get_all_award(%d)",nType),
 				"Sai/nothing",
 				}
 	Say("<color=green>"..g_sNpcName.."<color>: Ng­¬i muèn sö dông <color=yellow>"..tbJUNGONGZHANG[nType][1].."<color>?",getn(selTab),selTab);
@@ -497,7 +497,7 @@ function get_all_award(nType)
 				BT_SetData(PT_RANKPOINT,nCurRankPoint+nJunGongAward);
 			end;
 			SetRankPoint(RANK_BATTLE_CONTRIBUTION,BATTLE_OFFSET+PT_RANKPOINT,1);
-			Msg2Player("B¹n nhËn ®­îc "..tCampNameZ[nCurCamp].."Ph­¬ng "..nJunGongAward.." ®iÓm c«ng tr¹ng");
+			Msg2Player("B¹n nhËn ®­îc "..tCampNameZ[nCurCamp].."Faction"..nJunGongAward.." ®iÓm c«ng tr¹ng");
 		else
 			if nLastCamp == SONG_ID then
 				BT_SetData(PT_RANKPOINT,nCurRankPoint+nJunGongAward);
@@ -505,7 +505,7 @@ function get_all_award(nType)
 				BT_SetData(PT_RANKPOINT,nCurRankPoint-nJunGongAward);
 			end;
 			SetRankPoint(RANK_BATTLE_CONTRIBUTION,BATTLE_OFFSET+PT_RANKPOINT,1);
-			Msg2Player("B¹n nhËn ®­îc "..tCampNameZ[nLastCamp].."Ph­¬ng "..nJunGongAward.." ®iÓm c«ng tr¹ng");
+			Msg2Player("B¹n nhËn ®­îc "..tCampNameZ[nLastCamp].."Faction"..nJunGongAward.." ®iÓm c«ng tr¹ng");
 		end;
 	else
 		Msg2Player("Qu©n c«ng cña b¹n ®· cao h¬n "..MAX_PRIMARY_JUNGONG.." ®iÓm, tham gia ChiÕn tr­êng Ngäc M«n quan kh«ng ®­îc nhËn qu©n c«ng vµ phÇn th­ëng ®iÓm tÝch lòy.");
@@ -531,8 +531,8 @@ function not_use_jungongzhang_confirm2()
 		return 0;
 	end;
 	local selTab = {
-				"§ång ý/#get_all_award(0)",
-				"Tho¸t/nothing",
+				"Agree/#get_all_award(0)",
+				"Exit/nothing",
 				}
 	if IB_VERSION == 1 then
 		Say("<color=green>"..g_sNpcName.."<color>: ChiÕn tr­êng b¹n tham gia lµ cña phe ®èi ph­¬ng, v× thÕ <color=red>kh«ng thÓ nhËn ®­îc phÇn th­ëng kinh nghiÖm<color> vµ trùc tiÕp nhËn phÇn th­ëng ®ång thêi trõ ®iÓm qu©n c«ng cña b¹n, cã thÓ dïng <color=yellow>Gi¸n §iÖp trang<color> ®Ó nhËn qu©n c«ng phe m×nh. NÕu b¹n vÉn muèn nhËn phÇn th­ëng h·y chän 'X¸c nhËn', nÕu b¹n muèn suy nghÜ thªm h·y chän 'Tho¸t khái'.",getn(selTab),selTab);	
@@ -549,7 +549,7 @@ function battle_regular_award()
 				"Ta muèni 1000 ®iÓm tÝch lòy lÊy ®iÓm kinh nghiÖm/want_exp_award",
 				"Ta muèn ®æi Tr¶m Tinh ThÇn Sa (100 ®iÓm tÝch lòy chiÕn tr­êng ®æi 1 c¸i)/want_zscs",
 				"Quay l¹i néi dung tr­íc./main",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"End dialogue/nothing",
 				}
 	if IB_VERSION == 1 then	--IB°æ±¾Ã»ÓÐ»ý·Ö»»×°±¸¡¢¾­Ñé¡¢»áÃËÁîÅÆ½±Àø
 		tremove(selTab,2);
@@ -584,13 +584,13 @@ function give_zscs(nCount)
 	BT_SetData(PT_TOTALPOINT,nCurPoint-nCount*1000);
 	AddItem(2,1,3334,nCount);
 	Msg2Player("B¹n ®æi "..(nCount*1000).." ®iÓm tÝch lòy ®æi lÊy "..nCount.." Tr¶m Tinh ThÇn Sa");
-	WriteLog("[phÇn th­ëng chiÕn trËn]:"..GetName().."®æi "..nCount.." Tr¶m Tinh ThÇn Sa");
+	WriteLog("[phÇn th­ëng chiÕn trËn]:"..GetName().."exchange"..nCount.." Tr¶m Tinh ThÇn Sa");
 end;
 
 function want_ling_pai()
 	local selTab = {
-			"§ång ý/give_ling_pai",
-			"Hñy bá/nothing",
+			"Agree/give_ling_pai",
+			"Cancel/nothing",
 			}
 	Say("<color=green>"..g_sNpcName.."<color>: §æi <color=yellow>LÖnh bµi bang héi<color> cÇn <color=yellow>30000 ®iÓm tÝch lòy<color>, b¹n x¸c nhËn muèn ®æi?",getn(selTab),selTab);
 end;
@@ -618,8 +618,8 @@ end;
 
 function want_cangjian_equip()
 	local selTab = {
-			"§ång ý/give_cangjian_equip",
-			"Hñy bá/nothing",
+			"Agree/give_cangjian_equip",
+			"Cancel/nothing",
 			}
 	Say("<color=green>"..g_sNpcName.."<color>: Muèn ®æi <color=yellow>H¹ y Tµng KiÕm cÊp 70<color> cÇn <color=yellow>100000 ®iÓm tÝch lòy<color>, b¹n x¸c nhËn muèn ®æi?",getn(selTab),selTab);
 end;

@@ -103,7 +103,7 @@ function OnUse(nItemIdx)
     		--------------   
     	--	if mod(GetTask(VET_201012_04_PLANT_4_SOUL_TREE_COUNT), 100) == 16 and nDate <= 130120 then   			
     	if nDate >= 130214 and nDate <= 130228 then	
-		gf_AddItemEx2({2,1,30357, 200}, "H¹t Ca Cao", "VALENTINE 2013", "H¹t ca cao")
+		gf_AddItemEx2({2,1,30357, 200}, "Cacao Seed", "VALENTINE 2013", "Cacao seed")
 		--gf_AddItemEx2({2,1,30030, 60}, "TiÓu Nh­ Y1", "NIEN THU NHU Y", "hoµn thµnh 16 c©y Tø Linh")
 	end	
         vaf_award_api("tPlant4LingTree") --2XU»î¶¯

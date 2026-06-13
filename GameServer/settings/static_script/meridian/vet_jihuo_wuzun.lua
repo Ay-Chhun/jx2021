@@ -82,7 +82,7 @@ function vjw_MerdianIBActivate()
 		return 0;
 	end
 	vjw_DailyReset();
-	local msg = "<color=green>Nh¹c BÊt QuÇn:<color>"..format("Sau khi hoµn thµnh nh÷ng nhiÖm vô h»ng ngµy sau, %s cã thÓ nhËn ®­îc %d c¬ héi th¨ng cÊp c¶nh giíi Vâ T«n.\n", gf_GetPlayerSexName(), 3);
+	local msg = "<color=green>Yue Buqun:<color>"..format("Sau khi hoµn thµnh nh÷ng nhiÖm vô h»ng ngµy sau, %s cã thÓ nhËn ®­îc %d c¬ héi th¨ng cÊp c¶nh giíi Vâ T«n.\n", gf_GetPlayerSexName(), 3);
 	local nFinish = 1;
 	local tColor = {
 		[1] = {"<color=green>", "<color>"},
@@ -123,25 +123,25 @@ function vjw_DailyReset()
 end
 
 function vjw_ActivateWZ()
-	local msg = "<color=green>Nh¹c BÊt QuÇn:<color>"..format("Nguyªn liÖu cÇn tiªu hao ®Ó kÝch ho¹t c¶nh giíi Vâ T«n: <color=gold>%d Bµn Long BÝch, %d XU ®¹o cô, %d N÷ Oa Tinh Th¹ch<color>, kÝch ho¹t cã x¸c suÊt thÊt b¹i, khi thÊt b¹i sÏ mÊt mét sè ®¹o cô", 8, 600, 3);
-	Say(msg, 2, "§ång ý/vjw_ActivateWZ_try", "Hñy bá/nothing");
+	local msg = "<color=green>Yue Buqun:<color>"..format("Nguyªn liÖu cÇn tiªu hao ®Ó kÝch ho¹t c¶nh giíi Vâ T«n: <color=gold>%d Bµn Long BÝch, %d XU ®¹o cô, %d N÷ Oa Tinh Th¹ch<color>, kÝch ho¹t cã x¸c suÊt thÊt b¹i, khi thÊt b¹i sÏ mÊt mét sè ®¹o cô", 8, 600, 3);
+	Say(msg, 2, "§ång ý/vjw_ActivateWZ_try", "Cancel/nothing");
 end
 
 function vjw_ActivateWZ_try()
 	if vjw_GetTimes() >= 3 then
-		Say("<color=green>Nh¹c BÊt QuÇn:<color>"..format("H«m nay ®· dïng hÕt sè lÇn kÝch ho¹t, ngµy mai h·y quay l¹i!"), 0);
+		Say("<color=green>Yue Buqun:<color>"..format("H«m nay ®· dïng hÕt sè lÇn kÝch ho¹t, ngµy mai h·y quay l¹i!"), 0);
 		return 0;
 	end
 	if GetItemCount(2, 1, 1000) < 8 then
-		Say("<color=green>Nh¹c BÊt QuÇn:<color>"..format("Hµnh trang kh«ng gian %s kh«ng ®ñ %d", "Bµn Long bÝch", 8), 0);
+		Say("<color=green>Yue Buqun:<color>"..format("Hµnh trang kh«ng gian %s kh«ng ®ñ %d", "Coiling Dragon Jade", 8), 0);
 		return 0;
 	end
 	if GetItemCount(2, 1, 30230) < 600 then
-		Say("<color=green>Nh¹c BÊt QuÇn:<color>"..format("Hµnh trang kh«ng gian %s kh«ng ®ñ %d", "XU ®¹o cô", 600), 0);
+		Say("<color=green>Yue Buqun:<color>"..format("Hµnh trang kh«ng gian %s kh«ng ®ñ %d", "XU ®¹o cô", 600), 0);
 		return 0;
 	end
 	if GetItemCount(2, 1, 504) < 3 then
-		Say("<color=green>Nh¹c BÊt QuÇn:<color>"..format("Hµnh trang kh«ng gian %s kh«ng ®ñ %d", "N÷ Oa Tinh Th¹ch", 3), 0);
+		Say("<color=green>Yue Buqun:<color>"..format("Hµnh trang kh«ng gian %s kh«ng ®ñ %d", "N÷ Oa Tinh Th¹ch", 3), 0);
 		return 0;
 	end
 	vjw_SetTimes();
@@ -163,7 +163,7 @@ function vjw_ActivateWZ_try()
 			SetCurrentNpcSFX(PIdx2NpcIdx(),901,0,0);
 		end
 		local str = format("Chóc mõng %s%s kÝch ho¹t Vâ T«n thµnh c«ng!", GetName(), gf_GetPlayerSexName());
-		Say("<color=green>Nh¹c BÊt QuÇn:<color>"..str, 0);
+		Say("<color=green>Yue Buqun:<color>"..str, 0);
 		Msg2Global(msg);
 	else
 		local tLost = {
@@ -174,6 +174,6 @@ function vjw_ActivateWZ_try()
 		local nIndex = gf_GetRandItemByTable(tLost, gf_SumRandBase(tLost), 1);
 		DelItem(gf_UnPack(tLost[nIndex][3]));
 		Msg2Player(format("KÝch ho¹t thÊt b¹i! MÊt ®i %s*%d", GetItemName(tLost[nIndex][3][1], tLost[nIndex][3][2], tLost[nIndex][3][3]), tLost[nIndex][3][4]));
-		Say("<color=green>Nh¹c BÊt QuÇn:<color>".."RÊt tiÕc, kÝch ho¹t thÊt b¹i! LÇn sau h·y quay l¹i", 0);
+		Say("<color=green>Yue Buqun:<color>".."RÊt tiÕc, kÝch ho¹t thÊt b¹i! LÇn sau h·y quay l¹i", 0);
 	end
 end

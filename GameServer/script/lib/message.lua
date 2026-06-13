@@ -104,11 +104,11 @@ function suSayCB(nPage)
 	end
 	local tArg = new(tMsg.sel);
 	if getn(tMsg.msg) > nPage then
-		tArg = { format("Trang kÕ/#suSayCB(%d)", nPage+1)};
-		tinsert(tArg,"KÕt thóc ®èi tho¹i/nothing")
+		tArg = { format("Next page/#suSayCB(%d)", nPage+1)};
+		tinsert(tArg,"End dialogue/nothing")
 	end
 	if nPage > 1 then
-		tinsert(tArg, 1, format("Trang tr­íc/#suSayCB(%d)", nPage-1));
+		tinsert(tArg, 1, format("Previous page/#suSayCB(%d)", nPage-1));
 	end
 
 	Say(tMsg.msg[nPage], getn(tArg), tArg);

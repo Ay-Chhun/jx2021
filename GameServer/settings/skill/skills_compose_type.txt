@@ -14,9 +14,9 @@ Type	Name
 1012	Ngò hµnh ThiÒn tr­îng
 16	¸m khÝ
 1016	Ngò hµnh ¸m khÝ
-17	CÇm
+17	Zither
 1017	Ngò hµnh cÇm
-18	Bót
+18	Brush
 1018	Ngò hµnh bót
 19	Cung
 1019	Ngò hµnh cung
@@ -25,11 +25,11 @@ Type	Name
 22	Nam tiªu chuÈn
 1020	Ngò hµnh
 1022	Nam tiªu chuÈn ngò hµnh
-23	Nam kh«i ng«
+23	Imposing man
 1023	Nam kh«i ng« ngò hµnh
-24	N÷ gîi c¶m
+24	Alluring woman
 1024	N÷ gîi c¶m gîi c¶m
-25	KiÒu n÷
+25	Graceful woman
 1025	KiÒu n÷ ngò hµnh
 29	Håi phôc sinh lùc
 30	Håi phôc néi lùc
@@ -41,11 +41,11 @@ Type	Name
 38	R­îu
 42	ChuyÓn tiÕp
 43	Gi¸m ®Þnh
-50	NhiÖm vô
+50	Mission
 26	ThÇn binh
 60	§Þch Tö
 61	Linh Chi
 62	Vò KhÝ Linh §å
 64	Linh §å M·o
-65	Linh §å Y
+65	Lingdao Garment
 66	Linh §å Trang

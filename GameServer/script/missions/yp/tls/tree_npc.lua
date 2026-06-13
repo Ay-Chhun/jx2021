@@ -128,7 +128,7 @@ function tree_talk_1(nType)
 		Talk(1,"",g_NpcName.."Tr™n ng≠Íi c∏c hπ kh´ng c„ hπt giËng!");
 		return 0;
 	end
-	tinsert(strtab,"\nK’t thÛc ÆËi thoπi/nothing");
+	tinsert(strtab,"\nEnd conversation/nothing");
 	Say(g_NpcName.."Gieo hπt giËng nµo?",
 		getn(strtab),
 		strtab);
@@ -168,7 +168,7 @@ function tree_talk_2(nType)
 	for i = 1,getn(tTreeSeed[nType][strName]) do
 		tinsert(strtab,format("\n%s/#tree_talk_2_1(%d,%d)",tTreeSeed[nType][strName][i][1],nType,i));
 	end
-	tinsert(strtab,"\nK’t thÛc ÆËi thoπi/nothing");
+	tinsert(strtab,"\nEnd conversation/nothing");
 	Say(g_NpcName.."Ch‰n hπt giËng c«n thao t∏c: ",
 		getn(strtab),
 		strtab);	
@@ -184,7 +184,7 @@ function tree_talk_2_1(nType,n)
 	local strMsg = "";
 	if nGetTime >= g_nFailTime then --∏Ø¿√¡À
 		strMsg = "Ng‰c Ph∏ch cÒa ng≠¨i do kh´ng dÔng trong thÍi gian dµi n™n Æ∑ mÙc n∏t.";
-		tinsert(strtab,format("\nLoπi b· tπp ch t/#tree_talk_2_4(%d,%d)",nType,n))
+		tinsert(strtab,format("\nRemove impurities/#tree_talk_2_4(%d,%d)",nType,n))
 	elseif nGetTime >= g_nGrownTime then --¥ÔµΩ ’ªÒ ±º‰
 		if tCurSeed[3] < g_nWaterCount then
 			tinsert(strtab,format("\nB· vµo Ng≠ng Tinh LÈ/#tree_talk_2_2_item(%d, %d, %d)", nType, n, g_nWaterCount-tCurSeed[3]))
@@ -192,15 +192,15 @@ function tree_talk_2_1(nType,n)
 		tCurSeed.yupo = tree_getYupo(tCurSeed[2],tCurSeed[5]); --∫œ≥…”Ò∆«
 		strMsg = format("%s,Æ∑ ch›n %d l«n.", tCurSeed[1], tCurSeed[3]);
 		if getn(tCurSeed.yupo) > 0 then
-			tinsert(strtab,format("\nThu hoπch/#tree_talk_2_3(%d,%d)",nType,n));
+			tinsert(strtab,format("\nHarvest/#tree_talk_2_3(%d,%d)",nType,n));
 		else
-			tinsert(strtab,format("\nLoπi b· tπp ch t/#tree_talk_2_4(%d,%d)",nType,n))
+			tinsert(strtab,format("\nRemove impurities/#tree_talk_2_4(%d,%d)",nType,n))
 		end
 	else
 		local nDisTime = nCurTime - tCurSeed[4];
 		if nDisTime >= g_nNeedTime and tCurSeed[3] < g_nWaterCount then --’˝≥£ΩΩÀÆ ±º‰
 			strMsg = format("%s, sË l«n Æ∑ ch›n: <color=yellow>%d<color>.",tCurSeed[1],tCurSeed[3]);
-			tinsert(strtab,format("\nT≠Ìi n≠Ìc/#tree_talk_2_2_plant(%d,%d)",nType,n))
+			tinsert(strtab,format("\nWater/#tree_talk_2_2_plant(%d,%d)",nType,n))
 		elseif tCurSeed[3] < g_nWaterCount then --ΩΩÀÆ ±º‰Œ¥µΩ«“Œ¥¬˙µƒ«Èøˆ
 			strMsg = format("%s, sË l«n Æ∑ ch›n: <color=yellow>%d<color>, kho∂ng c∏ch l«n ch›n ti’p theo <color=yellow>%s<color>.",tCurSeed[1],tCurSeed[3],Get_Time_String(g_nNeedTime-(GetTime()-tCurSeed[4]),"hms"));
 			tinsert(strtab,format("\nB· vµo Ng≠ng Tinh LÈ/#tree_talk_2_2_item(%d, %d, 1)", nType, n))
@@ -209,7 +209,7 @@ function tree_talk_2_1(nType,n)
 		end
 	end	
 	
-	tinsert(strtab,"\nK’t thÛc ÆËi thoπi/nothing");
+	tinsert(strtab,"\nEnd conversation/nothing");
 	Say(g_NpcName..strMsg,
 		getn(strtab),
 		strtab)
@@ -232,7 +232,7 @@ function tree_talk_2_2_item(nType, n, nNum)
 		return 0;
 	end
 	if GetItemCount(2, 1, 30804) < nNum then
-		Talk(1,"",format("trong tÛi %s sË l≠Óng kh´ng ÆÒ %d", "Ng≠ng Tinh LÈ", nNum));
+		Talk(1,"",format("trong tÛi %s sË l≠Óng kh´ng ÆÒ %d", "Ngung Tinh Lo", nNum));
 		return 0;
 	end
 	if DelItem(2, 1, 30804, nNum) == 1 then

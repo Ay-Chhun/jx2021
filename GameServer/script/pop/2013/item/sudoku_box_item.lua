@@ -83,8 +83,8 @@ function OnUse(nItemIdx)
 	end
 	szMsg = szMsg .. "NhËp mËt m· cña hép gÊm: ";
 	local tSel = {
-		"§ång ý/input_code",
-		"§ãng/close_box",
+		"Confirm/input_code",
+		"Close/close_box",
 	}
 	Say(szMsg, getn(tSel), tSel);
 end
@@ -135,9 +135,9 @@ function get_sudoku_info()
 	local tSudoku = g_tSudoku[nRand];
 	local tAnswer = {"", "", ""};
 	local tQuestion = {};
-	local tCode = {"Gi¶", "B", "C",};
-	local tChineseNum = {"mét", "hai", "ba", "bèn", "Ngò ", "s¸u", "b¶y", "t¸m", "chÝn"};
-	local tTChineseNum = {"1", "2", "3", "4", "5", "ê‘", "7", "8", "9"};
+	local tCode = {"Jia", "B", "C",};
+	local tChineseNum = {"mét", "hai", "ba", "ben", "Wu", "six", "seven", "eight", "nine"};
+	local tTChineseNum = {"1", "2", "3", "4", "5", "e", "7", "8", "9"};
 	for i = 1, getn(tSudoku) do
 		nRand = random(1, getn(tSudoku[i]));
 		tQuestion[i] = {};

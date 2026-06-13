@@ -19,14 +19,14 @@ g_tbPrizeItem =
 	[4] = {"M∑n Thi™n VÚ quy’t",		2,	6,	46,		1,		7,	},
 	[5] = {"ßπi Bi quy’t",	2,	6,	59,		1,		7,	},
 	[6] = {"M™ T©m KhÛc quy’t",	2,	6,	70,		1,		7,	},
-	[7] = {"TÛy Quy“n",			2,	6,	79,		1,		7,	},
+	[7] = {"Drunken Fist",			2,	6,	79,		1,		7,	},
 	[8] = {"ß∂ C»u quy’t",		2,	6,	88,		1,		7,	},
 	[9] = {"Th t Ti÷t Ki’m quy’t",	2,	6,	108,	1,		7,	},
 	[10] = {"Th≠Óng Thanh C´ng quy’t",	2,	6,	119,	1,		7,	},
 	[11] = {"B›ch Th≠¨ng quy’t",	2,	6,	130,	1,		7,	},
 	[12] = {"L≠u Tuy÷t Ti‘n quy’t",	2,	6,	141,	1,		8,	},
 	[13] = {"B› ki’p Thi Li÷t Ma C´ng",		2,	6,	154,	1,		7,	},
-	[14] = {"B› ki’p Tµm CÊ",			2,	6,	168,	1,		7,	},
+	[14] = {"Tam Co secret manual",			2,	6,	168,	1,		7,	},
 
 }
 

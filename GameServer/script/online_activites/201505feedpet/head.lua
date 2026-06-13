@@ -40,16 +40,16 @@ g_tFeedPet = {
 	nTaskIdx_ExpGetMulti=5,--»ñµÃ¾­Ñé±¶Êý
 	
 	tFood = {--ÑµÁ·³èÎïµÄµÀ¾ß
-		{1, "ThÞt C¸ T­¬i", {2,1,30837,1}, "C¸ ®Ó cho thó c­ng ¨n", "§é c­êng tr¸ng +2"},
-    	{2, "§ïi Heo Th¬m Ngon", {2,1,30838,1}, "ThÞt ®Ó cho thó c­ng ¨n", "§é c­êng tr¸ng +3"},
-    	{3, "Tó CÇu", {2,1,30839,1}, "§å ch¬i cña thó c­ng", "§é c­êng tr¸ng x2"},
-    	{4, "Thøc ¡n HÕt H¹n", {2,1,30840,1}, "Thøc ¨n cña thó c­ng nh­ng ®· hÕt h¹n", "§é c­êng tr¸ng -50%"},
+		{1, "Fresh Fish Meat", {2,1,30837,1}, "Fish to feed your pet", "§é c­êng tr¸ng +2"},
+    	{2, "Fragrant Delicious Ham", {2,1,30838,1}, "Meat to feed your pet", "§é c­êng tr¸ng +3"},
+    	{3, "Hydrangea", {2,1,30839,1}, "§å ch¬i cña thó c­ng", "§é c­êng tr¸ng x2"},
+    	{4, "Expired Food", {2,1,30840,1}, "Thøc ¨n cña thó c­ng nh­ng ®· hÕt h¹n", "§é c­êng tr¸ng -50%"},
     	{5, "Tiªn Qu¶", {2,1,30842,1}, "Cho thó c­ng sö dông Tiªn Qu¶", "Hoµn thµnh huÊn luyÖn"},
 	},
-	tDrink = {"R­îu Nho", {2,1,30841,1}},
+	tDrink = {"Grape Wine", {2,1,30841,1}},
 	tToolItem={
-		{1, "Cßi Thó C­ng-Th­êng", {2,1,30836,1}},
-		{2, "Cßi Thó C­ng-HiÕm", {2,1,30843,1}},
+		{1, "Pet Whistle-Common", {2,1,30836,1}},
+		{2, "Pet Whistle-Rare", {2,1,30843,1}},
 	},
 	tJiuXi = {--¾ÆÏ¯NPCList
 		{"hd_yanxi", "M©m cç", 200,1376,2894, "\\script\\online_activites\\201505feedpet\\npc\\npc_jiuxi.lua"},
@@ -66,15 +66,15 @@ g_tFeedPet = {
 		[1] = {
 			tAll = {
     			{38,5,1},--¾«Á¦
-    			{1,"R­îu Nho",{2,1,30841,1,4},0,1},
+    			{1,"Grape Wine",{2,1,30841,1,4},0,1},
 			},
 			tRand = {
 				{1, 50, "Thiªn Kiªu LÖnh", {2, 97, 236, 1, 4}, 0},
 				{1, 300, "CÊp 3 TÈy T©m Th¹ch", {2, 1, 30523, 1, 4}, 0},
 				{1, 300, "CÊp 3 LuyÖn L« ThiÕt", {2, 1, 30529, 1, 4}, 0},
-				{1, 300, "Hu©n ch­¬ng anh hïng", {2, 1, 30499, 1, 4}, 0},
-				{1, 200, "Hu©n ch­¬ng anh hïng", {2, 1, 30499, 2, 4}, 0},
-				{1, 10, "Hu©n ch­¬ng anh hïng", {2, 1, 30499, 5, 4}, 0, 0, 0, 1},
+				{1, 300, "Hero's Medal", {2, 1, 30499, 1, 4}, 0},
+				{1, 200, "Hero's Medal", {2, 1, 30499, 2, 4}, 0},
+				{1, 10, "Hero's Medal", {2, 1, 30499, 5, 4}, 0, 0, 0, 1},
 				{1, 600, "M¶nh Thiªn Cang", {2, 1, 30390, 5, 4}, 0},
 				{1, 600, "M¶nh Thiªn M«n", {2, 1, 30410, 5, 4}, 0},
 				{1, 800, "ThiÕt Tinh cÊp 1", {2, 1, 30533, 1, 4}, 0},
@@ -85,11 +85,11 @@ g_tFeedPet = {
 				{2,700,2500000},--exp
 				{2,330,3000000},--exp
 				{1, 200, "§¹i Nh©n s©m", {2, 0, 553, 1, 4}, 0},
-                {1, 100, "VÐ TiÕu Y B¹c", {2, 1, 30492, 1, 4}, 0},
-                {1, 200, "VÐ TiÕu Y §ång", {2, 1, 30493, 4, 4}, 0},
-                {1, 200, "C©y B¸t Nh· nhá", {2, 0, 504, 2, 4}, 0},
-                {1, 100, "C©y B¸t Nh·", {2, 0, 398, 1, 4}, 0},
-                {1, 10, "C©y Tø Linh", {2, 1, 30269, 1, 4}, 0},
+                {1, 100, "Silver Tieu Y Token", {2, 1, 30492, 1, 4}, 0},
+                {1, 200, "Bronze Tieu Y Token", {2, 1, 30493, 4, 4}, 0},
+                {1, 200, "Small Prajna Tree", {2, 0, 504, 2, 4}, 0},
+                {1, 100, "Prajna Tree", {2, 0, 398, 1, 4}, 0},
+                {1, 10, "Four Spirits Tree", {2, 1, 30269, 1, 4}, 0},
                 {1, 500, "TiÓu Nh©n s©m qu¶", {2, 0, 552, 1, 4}, 0},
                 {27,1000,100},--ÐÞÎª
                 {27,300,500},--ÐÞÎª
@@ -99,18 +99,18 @@ g_tFeedPet = {
 		[2] = {
 			tAll = {
 				{38,5,1},--¾«Á¦
-    			{1,"R­îu Nho",{2,1,30841,1,4},0,1},
+    			{1,"Grape Wine",{2,1,30841,1,4},0,1},
 			},
 			tRand = {
 				{1, 100, "Thiªn Kiªu LÖnh", {2, 97, 236, 2, 4}, 0},
 				{1, 10, "Thiªn Kiªu LÖnh", {2, 97, 236, 6, 4}, 0},
-				{1, 200, "Hu©n ch­¬ng anh hïng", {2, 1, 30499, 2, 4}, 0},
-				{1, 50, "Hu©n ch­¬ng anh hïng", {2, 1, 30499, 6, 4}, 0},
+				{1, 200, "Hero's Medal", {2, 1, 30499, 2, 4}, 0},
+				{1, 50, "Hero's Medal", {2, 1, 30499, 6, 4}, 0},
 				{1, 10, "Thiªn Cang LÖnh", {2, 95, 204, 1, 4}, 0, 0, 0,  1},
 				{1, 30, "Thiªn M«n Kim LÖnh", {2, 1, 30370, 2, 4}, 0, 0, 0,  1},
 				{1, 100, "Th¸i NhÊt LÖnh",{2,1,30687,2,4},0, 1},
 				{1, 200, "ThiÕt Tinh cÊp 3", {2, 1, 30535, 2, 4}, 0},
-				{1, 300, "VÐ TiÕu Y B¹c", {2, 1, 30492, 2, 4}, 0},
+				{1, 300, "Silver Tieu Y Token", {2, 1, 30492, 2, 4}, 0},
 				{1, 100, "VÐ TiÕu Y Vµng", {2, 1, 30491, 1, 4}, 0},
 				{3,2000,100000},--gold
 				{3,1000,200000},--gold
@@ -152,11 +152,11 @@ function rand_follower()
 	local nRand = random(1,100)
 	local szName,szTemp = "",""
 	if nRand <= 30 then
-		szName,szTemp = "Heo B«ng", "hd_xiaohuazhu"
+		szName,szTemp = "Cotton Pig", "hd_xiaohuazhu"
 	elseif nRand <= 65 then
 		szName,szTemp = "Dª Vµng", "hd_xiaohuangyang"
 	else
-		szName,szTemp = "GÊu X¸m", "hd_xiaohuixiong"
+		szName,szTemp = "Gray Bear", "hd_xiaohuixiong"
 	end
 	SummonNpc(szTemp, szName)
 end
@@ -165,7 +165,7 @@ function remove_follower()
 	local nNpcIdx = GetFollower()
 	if nNpcIdx > 0 then
 		local szName = GetNpcName(nNpcIdx)
-		if szName=="Heo B«ng" or szName=="Dª Vµng" or szName=="GÊu X¸m" then
+		if szName=="Cotton Pig" or szName=="Dª Vµng" or szName=="Gray Bear" then
 			KillFollower()
 		end
 	end

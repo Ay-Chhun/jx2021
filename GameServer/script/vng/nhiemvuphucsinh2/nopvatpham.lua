@@ -5,37 +5,37 @@ szNPCName = "<color=green>Long Quang Ch©n Nh©n:<color> "
 tbAllowItem = {
 	[2]	= {
 		[0] = {
-			[504] = {8,"C©y B¸t Nh· Nhá",10},	--	{QuestID, ItemName, ItemQty}
-			[398] = {10,"C©y B¸t Nh·",8},
+			[504] = {8,"Small Prajna Tree",10},	--	{QuestID, ItemName, ItemQty}
+			[398] = {10,"Prajna Tree",8},
 			[1084] = {32,"Thiªn Qu¸i Th¹ch",1},
 		},
 		[1] = {
-			[30087] = {6,"Tói H¹t Gièng",2},
-			[30269] = {12,"C©y Tø Linh",8},
-			[30270] = {14,"Thanh Long Qu¶",30},
+			[30087] = {6,"Bag of Seeds",2},
+			[30269] = {12,"Four Spirits Tree",8},
+			[30270] = {14,"Azure Dragon Fruit",30},
 			[30273] = {15,"HuyÒn Vò C¨n",30},
 			[30272] = {16,"B¹ch Hæ DiÖp",30},
 			[30271] = {17,"Háa Phông Hoa",30},
-			[30164] = {18,"Nh·n",29},
-			[30165] = {18,"Ch«m Ch«m",29},
+			[30164] = {18,"Longan",29},
+			[30165] = {18,"Rambutan",29},
 			[30166] = {18,"Cam",29},
-			[30167] = {18,"Dõa",29},
-			[30168] = {18,"M¨ng Côt",29},
-			[30169] = {18,"B­ëi",29},
-			[30170] = {18,"D©u",29},
-			[30171] = {18,"Chuèi",29},
-			[30172] = {18,"Xoµi",29},
-			[30173] = {18,"§µo",29},
-			[30174] = {18,"MËn",29},
-			[30175] = {18,"V¶i",29},
-			[30176] = {18,"T¸o",29},
-			[30177] = {18,"B¬",29},
-			[30178] = {18,"§u §ñ",29},
-			[30179] = {18,"M·ng CÇu",29},
-			[30180] = {18,"Khãm",29},
-			[30181] = {18,"Lª",29},
-			[30182] = {18,"Bßn Bon",29},
-			[30183] = {18,"KhÕ",29},
+			[30167] = {18,"Coconut",29},
+			[30168] = {18,"Mangosteen",29},
+			[30169] = {18,"Pomelo",29},
+			[30170] = {18,"Strawberry",29},
+			[30171] = {18,"Banana",29},
+			[30172] = {18,"Mango",29},
+			[30173] = {18,"Peach",29},
+			[30174] = {18,"Plum",29},
+			[30175] = {18,"Lychee",29},
+			[30176] = {18,"Apple",29},
+			[30177] = {18,"Avocado",29},
+			[30178] = {18,"Papaya",29},
+			[30179] = {18,"Soursop",29},
+			[30180] = {18,"Pineapple",29},
+			[30181] = {18,"Li",29},
+			[30182] = {18,"Langsat",29},
+			[30183] = {18,"Star Fruit",29},
 			[30132] = {26,"Vâ L©m B¶o H¹p",100},
 			[30135] = {27,"Ch×a khãa Thanh §ång",1},
 			[30134] = {28,"Ch×a kho¸ B¹ch Ng©n",1},
@@ -91,7 +91,7 @@ function OnPutinComplete(param)
 	local nG, nD, nP = tbItem[1][2], tbItem[1][3], tbItem[1][4]
 	
 	if GetItemCount(nG,nD,nP) < tbAllowItem[nG][nD][nP][3] then
-		Talk(1,"",szNPCName.."Ng­¬i kh«ng cã ®ñ "..tbAllowItem[nG][nD][nP][3].." "..tbAllowItem[nG][nD][nP][2]..", h·y chuÈn bÞ thªm.")
+		Talk(1,"",szNPCName.."Ng­¬i kh«ng cã ®ñ "..tbAllowItem[nG][nD][nP][3].." "..tbAllowItem[nG][nD][nP][2]..", please prepare more.")
 		return 0
 	end
 	

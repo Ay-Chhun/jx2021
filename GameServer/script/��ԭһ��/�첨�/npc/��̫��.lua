@@ -55,7 +55,7 @@ end;
 
 -- Ê¦ÃÅÈÎÎñÏà¹Ø
 function about_faction_task()
-	Say("Cã chuyÖn g× vËy?",
+	Say("What's the matter?",
 		3,
 		"Ta muèn cèng hiÕn cho s­ m«n (nhiÖm vô s­ m«n)/start_faction_tasklink",
 		"Ta muèn tra xem ®é cèng hiÕn./check_query_faction_contri",
@@ -210,7 +210,7 @@ function practice()
        Talk(1,"","Kh«ng ph¶i ®Ö tö D­¬ng M«n, chuyÖn cña D­¬ng gia xin chí xen vµo!");
     else
         if GetItemCount(2, 0, 350) >= 1 then  --Ê¦ÃÅÁîÅÆ
-            Say("Cã muèn vµo huÊn luyÖn kh«ng?",2,"§óng/practice_start","Sai/no");
+            Say("Cã muèn vµo huÊn luyÖn kh«ng?",2,"Yes/practice_start","Sai/no");
         else
             Talk(1,"","Ng­¬i kh«ng cã <color=yellow>lÖnh bµi cña D­¬ng M«n<color>, kh«ng thÓ vµo huÊn luyÖn.");
         end;

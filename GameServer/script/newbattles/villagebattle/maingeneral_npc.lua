@@ -4,7 +4,7 @@
 Include("\\script\\newbattles\\villagebattle\\villagebattle_head.lua");
 
 sSongGeneral = "Phan Nh©n Mü";
-sLiaoGeneral = "Gia LuËt Sa";
+sLiaoGeneral = "Yelu Sha";
 -- Bit quy ®Şnh tæng tÊn c«ng cña Th«n trang
 SONG_BIT = 1
 LIAO_BIT = 5
@@ -14,10 +14,10 @@ function main()
 		NpcChat(GetTargetNpc(),"Ch¹y th«i! Löa kĞo ®Õn n¬i råi!");
 	end;
 	local selTab = {			
-			"Bèi c¶nh/knowbackground",
+			"Background/knowbackground",
 			"Quy t¾c chiÕn tr­êng/knowbattlerule",
 			"Nguyªn So¸i ph¸t lÖnh tæng tÊn c«ng/battle_charge",
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 			}
 	local sNpcName = "";
 	if BT_GetCamp() == SONG_ID then
@@ -46,7 +46,7 @@ function knowbattlerule()
 	else
 		sNpcName = sLiaoGeneral;
 	end;
-	Talk(1,"main","<color=green>"..sNpcName.."<color>: <enter>1: Phe nµo t×m ®­îc Thñ lÜnh Thæ d©n tr­íc sÏ giµnh chiÕn th¾ng<enter>2: Thêi gian: 30 phót. NÕu 2 bªn ®Òu kh«ng t×m ®­îc Thæ d©n sÏ dùa theo b­íc ®Ó tİnh, bªn nµo cã sè b­íc hoµn thµnh nhiÒu h¬n sÏ giµnh th¾ng lîi <enter>3: NÕu sè b­íc nh­ nhau xem nh­ hßa<enter>4: Kh«ng giíi h¹n pk nh­ng khi tiªu diÖt t­íng sÜ ®èi ph­¬ng sÏ kh«ng nhËn ®­îc ®iÓm tİch lòy<enter>5: §iÓm tİch lòy cao nhÊt <color=yellow>"..POINT_LIMITED.."<color><enter>6: NhËn ®­îc phÇn th­ëng cña Hoµng ®Õ + ®iÓm tİch lòy<color=yellow>"..EMPEROR_AWARD_POINT.."<color> ®iÓm  ®iÓm tİch lòy, kinh nghiÖm <color=yellow>"..floor(EMPEROR_AWARD_EXP/10000).."<color>v¹n<enter>7: §­îc bÇu lµm ng«i sao chiÕn tr­êng+®iÓm tİch lòy<color=yellow>"..BATTLE_STAR_AWARD_POINT.."<color> ®iÓm  ®iÓm tİch lòy, kinh nghiÖm <color=yellow>"..floor(BATTLE_STAR_AWARD_EXP/10000).."<color> v¹n");
+	Talk(1,"main","<color=green>"..sNpcName.."<color>: <enter>1: Phe nµo t×m ®­îc Thñ lÜnh Thæ d©n tr­íc sÏ giµnh chiÕn th¾ng<enter>2: Thêi gian: 30 phót. NÕu 2 bªn ®Òu kh«ng t×m ®­îc Thæ d©n sÏ dùa theo b­íc ®Ó tİnh, bªn nµo cã sè b­íc hoµn thµnh nhiÒu h¬n sÏ giµnh th¾ng lîi <enter>3: NÕu sè b­íc nh­ nhau xem nh­ hßa<enter>4: Kh«ng giíi h¹n pk nh­ng khi tiªu diÖt t­íng sÜ ®èi ph­¬ng sÏ kh«ng nhËn ®­îc ®iÓm tİch lòy<enter>5: §iÓm tİch lòy cao nhÊt <color=yellow>"..POINT_LIMITED.."<color><enter>6: NhËn ®­îc phÇn th­ëng cña Hoµng ®Õ + ®iÓm tİch lòy<color=yellow>"..EMPEROR_AWARD_POINT.."<color> ®iÓm  ®iÓm tİch lòy, kinh nghiÖm <color=yellow>"..floor(EMPEROR_AWARD_EXP/10000).."<color>v¹n<enter>7: §­îc bÇu lµm ng«i sao chiÕn tr­êng+®iÓm tİch lòy<color=yellow>"..BATTLE_STAR_AWARD_POINT.."<color> ®iÓm  ®iÓm tİch lòy, kinh nghiÖm <color=yellow>"..floor(BATTLE_STAR_AWARD_EXP/10000).."<color> thousand");
 end;
 
 function wantaward()

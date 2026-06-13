@@ -13,7 +13,7 @@ function faction_buysell_main(nFactionId)
 		"Ta nghe nãi s­ m«n cã 1 bé thÇn binh b¶o gi¸p giµnh cho vâ l©m cao thñ? H·y cho ta xem!/#faction_buy("..nFactionId..",3)",
 		"Ta nghe nãi s­ m«n cã 1 bé thÇn binh b¶o gi¸p giµnh cho tuyÖt thÕ cao thñ? H·y cho ta xem!/#faction_buy("..nFactionId..",4)",
 		"Lµm thÕ nµo ®Ó nhËn ®­îc ®é cèng hiÕn s­ m«n./#contribution_get("..nFactionId..")",
-		"Rêi khái./cancel",
+		"Leave./cancel",
 	}
 end
 --ÆÕÍ¨¹ºÂò
@@ -38,7 +38,7 @@ function contribution_get(nFactionId)
 	Say(sDiaHead,
 		2,
 		"Trë l¹i./main",
-		"Rêi khái./cancel"
+		"Leave./cancel"
 	)
 end
 --½áÊø¶Ô»°

@@ -26,15 +26,15 @@ function task_000_00()
 
 local strTalk = {
 	"§¹i Lý Cùu ChÝ ®· bÞ H¾c Tinh Tinh c­íp ®i, cã thÓ gióp ta t×m chóng vÒ kh«ng?",
-	"{H¾c Tinh Tinh} ®ã ë ®©u?",
+	"Where are those {Black Apes}?",
 	"Chóng ë T©y Song B¶n N¹p, ng­¬i ®Õn ®ã t×m 10 tÊm §¹i Lý Cùu ChÝ nhÐ!",
 	}
 	TalkEx("",strTalk);
 	SetTask(TASK_DL_LV75_ID,5);
 	RemoveTrigger(GetTrigger(TALK_DL_BAIXIAOSHENG));--É¾µô°ÙÏþÉú¶Ô»°´¥·¢Æ÷
 	CreateTrigger(0,264,KILL_DL_JOCKO);
-	TaskTip("§Õn T©y Song B¶n N¹p thu thËp 10 tÊm §¹i Lý Cùu ChÝ");
-	Msg2Player("§Õn T©y Song B¶n N¹p thu thËp 10 tÊm §¹i Lý Cùu ChÝ");
+	TaskTip("Go to Xishuangbanna and collect 10 copies of the Dali Nine Records.");
+	Msg2Player("Go to Xishuangbanna and collect 10 copies of the Dali Nine Records.");
 	GivePlayerAward("Level_75","xn_step_1");
 	GivePlayerExp(SkeyDali,"dalirizi")
 	return
@@ -65,8 +65,8 @@ local strTalk = {
 	if GetTrigger(KILL_DL_JOCKO) == 0 then
 		TalkEx("",strTalk);
 		CreateTrigger(0,264,KILL_DL_JOCKO);
-		TaskTip("§Õn T©y Song B¶n N¹p thu thËp 10 tÊm §¹i Lý Cùu ChÝ");
-		Msg2Player("§Õn T©y Song B¶n N¹p thu thËp 10 tÊm §¹i Lý Cùu ChÝ");
+		TaskTip("Go to Xishuangbanna and collect 10 copies of the Dali Nine Records.");
+		Msg2Player("Go to Xishuangbanna and collect 10 copies of the Dali Nine Records.");
 		return
 	end
 		
@@ -84,7 +84,7 @@ local strTalk = {
 	"Cßn n÷a, TrÞnh Gia ®Æt tªn lu«n cã ch÷ Chi ®©y lµ ®Æt ®iÓm riªng cña B¹ch téc x­a nay. TrÞnh Qu¸n Chi ®Ých thùc thuéc gia téc hä TrÞnh råi.",
 	"C¸ch ®Æt tªn nµy t¹i h¹ cã nghe TriÖu Diªn Niªn nh¾c ®Õn. Nh­ng rèt cuéc c« ta ®Õn {§¹i Lý} ®Ó lµm g×?",
 	"Ta còng kh«ng râ, ng­¬i nªn gÆp c« Êy hái xem sao.",
-	"§­îc! T¹i h¹ sÏ ®i ngay!",
+	"Very well! I will go at once!",
 	}
 	TalkEx("",strTalk);
 	RemoveTrigger(GetTrigger(KILL_DL_JOCKO));

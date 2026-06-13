@@ -19,7 +19,7 @@ function main()
     local nTimeNow = GetTime()
     if nTimeNow - nLastTime < 30 then
     		local nDiff = 30 - (nTimeNow - nLastTime)
-    		Talk(1,"","Cßn "..nDiff.." gi©y n÷a míi cã thÓ lÊy b¸nh ra khái lß!")
+    		Talk(1,"","There are"..nDiff.." gi©y n÷a míi cã thÓ lÊy b¸nh ra khái lß!")
     		return
     end
     Say("B¸nh ®· chÝn võa ®ñ, mau lÊy ra kÎo khÐt b¸nh!",2,format("Mau lÊy b¸nh/#get_cake(%d)",nNpcIndex),"T¹m thêi ch­a lÊy/gf_DoNothing")

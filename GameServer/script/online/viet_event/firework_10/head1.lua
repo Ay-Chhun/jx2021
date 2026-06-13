@@ -104,7 +104,7 @@ function use_firework1()
 	SetTask(FIREWORK_IDOL_TIME, GetTime())
 	local nIndex = random(1, getn(YANHUO_TABLE))
 	DoFireworks(YANHUO_TABLE[nIndex][2], YANHUO_TABLE[nIndex][3])
-	StartTimeGuage("Ph∏o hoa th«n t≠Óng V‚ L©m 2", 30,0,1)
+	StartTimeGuage("Wulin 2 Idol Fireworks", 30,0,1)
 end
 
 function check_skill_55()

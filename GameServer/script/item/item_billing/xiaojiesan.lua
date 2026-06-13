@@ -14,7 +14,7 @@ CHANGE_PK_VALUE = -1
 function OnUse()
 	Say("Sau khi dïng <color=yellow>Tiªu KiÕp t¸n<color> cã thÓ gi¶m ®i 1 ®iÓm PK, dïng chø?",
 		2,
-		"§­îc/decrease_1_PK_points",
+		"Yes/decrease_1_PK_points",
 		"Ta kh«ng muèn dïng--Hñy bá/cancel_dialog")
 end;
 

@@ -16,8 +16,8 @@ TABLE_JIXIANG_RUYI = {
 };
 
 TABLE_XIAORUYI_AWARD  = {
-    {1, 2222, "Méc R­¬ng", {2, 1, 30340, 1}, 0},
-    {1, 279, "C¸t t­êng th¹ch", {2, 1, 30015, 1}, 0},
+    {1, 2222, "Wooden Chest", {2, 1, 30340, 1}, 0},
+    {1, 279, "Auspicious Stone", {2, 1, 30015, 1}, 0},
     {2, 1000, 100000, 1},
     {2, 1000, 200000, 1},
     {2, 1000, 500000, 1},
@@ -36,8 +36,8 @@ TABLE_JIXIANG_AWARD = {
 		{1, "C­êng hãa quyÓn 14", {2, 1, 30426, 1, 1}, 99, 30 * 24 * 3600, "(H¹n sö dông 30 ngµy, cã thÓ giao dÞch)"},
 		{1, "C­êng hãa quyÓn 15", {2, 1, 30427, 1, 1}, 79, 30 * 24 * 3600, "(H¹n sö dông 30 ngµy, cã thÓ giao dÞch)"},
 		{1, "b¸nh Ýt B¸c B¶o", {2, 1, 1125, 10, 4}, 66, 0, "(Kh«ng thÓ giao dÞch)"},
-		{2, "Niªn thó", {0, 105, 33, 1, 4, -1, -1, -1, -1, -1, -1}, 18, 7 * 24 * 3600, "(H¹n sö dông 7 ngµy, kh«ng thÓ giao dÞch)"},
-		{2, "Niªn thó", {0, 105, 33, 1, 3, -1, -1, -1, -1, -1, -1}, 888, 0, "(VÜnh viÔn, cã thÓ giao dÞch)"},
+		{2, "Year Beast", {0, 105, 33, 1, 4, -1, -1, -1, -1, -1, -1}, 18, 7 * 24 * 3600, "(H¹n sö dông 7 ngµy, kh«ng thÓ giao dÞch)"},
+		{2, "Year Beast", {0, 105, 33, 1, 3, -1, -1, -1, -1, -1, -1}, 888, 0, "(VÜnh viÔn, cã thÓ giao dÞch)"},
 		{3, "1.800.000.000Exp", 1800000000, 2003, 0, " "},
 		{4, "88.000 ®iÓm qu©n c«ng", 88000, 1989, 0, " "},
 };
@@ -45,7 +45,7 @@ TABLE_JIXIANG_AWARD = {
 function Buy_XiaoRuYi()
 		local nNum1 = GetItemCount(2, 1, 30230);
 		local nNum2 = GetFreeItemRoom() * 999;
-		AskClientForNumber("Buy_XiaoRuYi_Deal", 1, min(nNum1, nNum2), "NhËp sè l­îng","");
+		AskClientForNumber("Buy_XiaoRuYi_Deal", 1, min(nNum1, nNum2), "Enter quantity","");
 end
 
 function Buy_XiaoRuYi_Deal(nNum)
@@ -59,12 +59,12 @@ function Buy_XiaoRuYi_Deal(nNum)
 		end
 		if DelItem(2, 1, 30230, nNum) == 1 then
 			AddItem(2, 1, 30030, nNum);
-			gf_WriteLogEx("NIEN THU NHU Y", "mua  thµnh c«ng", nNum, "TiÓu Nh­ ý")
+			gf_WriteLogEx("NIEN THU NHU Y", "mua  thµnh c«ng", nNum, "Little Ruyi")
 		end
 end
 
 function Use_XiaoRuYi()
-	Say("X¸c ®Þnh dïng 10 TiÓu Nh­ ý vµ 3 Xu vËt phÈm ®æi th­ëng?", 2, "§ång ý/Use_XiaoRuYi_Deal", "T¹i h¹ chØ xem qua th«i/nothing");
+	Say("X¸c ®Þnh dïng 10 TiÓu Nh­ ý vµ 3 Xu vËt phÈm ®æi th­ëng?", 2, "Agree/Use_XiaoRuYi_Deal", "T¹i h¹ chØ xem qua th«i/nothing");
 end
 
 function Use_XiaoRuYi_Deal()

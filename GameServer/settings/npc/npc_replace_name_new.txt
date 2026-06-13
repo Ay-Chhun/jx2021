@@ -295,7 +295,7 @@ Thiªn binh	Thiªn Binh1
 C¸ sÊu biÓn	C¸ sÊu2
 Xa phu	Xa phu Trung Nguyªn
 Chñ T¹p hãa	Ch­ëng d­îc Trung Nguyªn
-M·nh Nham 	Chñ Vò khÝ Trung Nguyªn
+Manh Nham	Chñ Vò khÝ Trung Nguyªn
 H¹ HÇu Anh	§ång tö1
 H¹ HÇu Liªn	§ång n÷1
 Chñ l«i ®µi	Chñ Vò khÝ Trung Nguyªn
@@ -954,7 +954,7 @@ Hoa hång vµng	Hoa hång vµng
 Hoa hång tr¾ng	Hoa hång tr¾ng
 MÇm hoa hång	MÇm hoa hång
 MÇm Hoa hång	MÇm Hoa hång
- nh¸nh hoa hång	 nh¸nh hoa hång
+ rose branch	 rose branch
 Quû Vùc L·o L·o	Quû Vùc L·o L·o
 §æng Ca Minh	§æng Ca Minh
 M· TÆc §Çu Môc	M· TÆc §Çu Môc
@@ -1140,8 +1140,8 @@ Sa m¹c b¶o r­¬ng	Sa m¹c b¶o r­¬ng
 HuyÕt Ma Nh©nHoan T­îng 	HuyÕt Ma Nh©nHoan T­îng 
 Quû T­¬ng §ÇuHoan T­îng 	Quû T­¬ng §ÇuHoan T­îng 
 TrÊn mé T­íng qu©nHoan T­îng 	TrÊn mé T­íng qu©nHoan T­îng 
-Thèng lÜnh t­îng binhHoanT­îng 	Thèng lÜnh t­îng binhHoanT­îng 
-TrÊn Mé ThóHoan T­îng 	TrÊn Mé ThóHoan T­îng 
+Commander of Elephant SoldiersIllusion General	Commander of Elephant SoldiersIllusion General
+Tomb-Guarding BeastIllusion General	Tomb-Guarding BeastIllusion General
 Lý Nguyªn Kh¸nh	Lý Nguyªn Kh¸nh
 Nam hå yªu	Nam hå yªu
 N÷ hå yªu	N÷ hå yªu
@@ -1149,7 +1149,7 @@ Yªu c¬ Ba T­	T¶ hé ph¸p
 T©y Vùc H·n Phô	Hång bµo sø gi¶3
 XÝch LuyÖn Háa Hå	Yªu Hå3
 LiÖt Nhan Li Long	Phi Thiªn3
-¢m NhËt Sø 	H÷u hé ph¸p
+Am Nhat Su	H÷u hé ph¸p
 Minh NhËt Sø	H¾c bµo sø gi¶1
 Gian TÕ Minh gi¸o	Nam ®Ö tö1
 §Ö Tö Minh gi¸o	Nam ®Ö tö2

@@ -9,7 +9,7 @@ DebugOutput = nothing;
 HD_START = {2014, 09, 07, 0, 0, 0};
 HD_END = {2014, 09, 16, 0, 0, 0};
 
-HD_NPC_NAME = "§Ìn Hoa §¨ng"
+HD_NPC_NAME = "Lantern"
 
 HD_PK_STATE = {
 	[0] = {
@@ -31,11 +31,11 @@ HD_PK_STATE = {
 HD_NPC_POS = {
 	{303, 1548, 3247, "Nga My (193,202)"},
 	{305, 1563, 3005, "§­êng M«n (195,187)"},
-	{209, 1480, 3243, "C¸i Bang (185,202)"},
-	{312, 1760, 3433, "Vâ §ang (219,214)"},
-	{407, 1576, 3312, "Ngò §éc Gi¸o (197,206)"},
+	{209, 1480, 3243, "Beggars' Sect (185,202)"},
+	{312, 1760, 3433, "Wudang (219,214)"},
+	{407, 1576, 3312, "Five Poisons Sect (197,206)"},
 	{219, 1684, 3268, "Thiªn Ba D­¬ng Phñ (211,204)"},
-	{204, 1523, 3258, "ThiÕu L©m Ph¸i (190,203)"},
+	{204, 1523, 3258, "Shaolin Sect (190,203)"},
 	{404, 1403, 2929, "Thóy Yªn (175,183)"},
 }
 
@@ -104,7 +104,7 @@ end
 --»¨µÆ¶Ô»°
 function main()
 	if hd_IsActivityOpen() ~= 1 then
-		Say("Event ®· hÕt h¹n", 0);
+		Say("The event has expired", 0);
 		return 0;
 	end
 	if gf_CheckBaseCondition(90) ~= 1 then
@@ -117,7 +117,7 @@ function main()
 	if hd_IsActivate(targetNpc) ~= 1 then
 		--Ã»ÓÐ¼¤»î ½ðÉ«£¬×ÏÉ«£¬ÂÌÉ«pk£¬ ÍÀÉ±pk£¬°ïÅÉpk
 		local tSay = {};
-		local namePK = {"PK mµu vµng", "PK mµu tÝm", "PK mµu lôc", "PK ®å s¸t", "PK bang ph¸i"};
+		local namePK = {"Yellow PK", "Purple PK", "Green PK", "PK ®å s¸t", "PK bang ph¸i"};
 		local state = {
 			[0] = "Ch­a kÝch ho¹t", 
 			[1] = "§· kÝch ho¹t"
@@ -125,7 +125,7 @@ function main()
 		for i = 1, 5 do
 			tinsert(tSay, format("KÝch ho¹t %s(%s)/#hd_ActivatePK(%d)", namePK[i], state[GetNpcTempData(targetNpc, i - 1)], i))
 		end
-		tinsert(tSay, "§Ó ta suy nghÜ/nothing");
+		tinsert(tSay, "Let me think about it/nothing");
 		Say(format("<color=green>%s:<color>", HD_NPC_NAME).."<color=red>Ch­a kÝch ho¹t, kh«ng thÓ nhËn th­ëng!<color> (Sau khi kÝch ho¹t mçi 3 phót sÏ nhËn ®­îc 690000 EXP)", getn(tSay), tSay);
 	else
 		--ÒÑ¾­¼¤»î

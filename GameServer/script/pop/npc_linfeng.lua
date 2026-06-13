@@ -69,7 +69,7 @@ function OnRemove(nRemoveIdx)
 end
 
 function GiveKG()
-	Msg2Player("Nh薾 頲 kh萿 cung");
-	Talk(1, "", "Nh薾 頲 kh萿 cung");
+	Msg2Player("Received the confession");
+	Talk(1, "", "Received the confession");
 	gf_AddItemEx({2, 96, 26, 1}, "Kh萿 cung c馻 L﹎ Phong");  --获得口供
 end

@@ -18,7 +18,7 @@ function main()
 		if tLightNpc[i][2] == nNpcName then
 			sPlyLetter = sPlyLetter..tLetter[i];
 			SetMissionS(AOYUN_LIGHT_PLAYER_SEQ,sPlyLetter);
-			Msg2MSAll(AOYUN_LIGHT_MISSION_ID,GetName().." ®· th¾p §Ìn "..i..".");
+			Msg2MSAll(AOYUN_LIGHT_MISSION_ID,GetName().." has lit Lantern"..i..".");
 			break;
 		end
 	end
@@ -27,12 +27,12 @@ function main()
 			local nGuanType = GetMissionV(AOYUN_LIGHT_GUAN_TYPE);
 			aoyun_light_tongguan(nGuanType,1);
 			if nGuanType < 5 then
-				Msg2MSAll(AOYUN_LIGHT_MISSION_ID,"Chóc mõng b¹n v­ît qua ¶i thø "..nGuanType.." Héi th¾p ®Ìn. Sau 20 gi©y b¾t ®Çu ¶i kÕ tiÕp.");
+				Msg2MSAll(AOYUN_LIGHT_MISSION_ID,"Congratulations, you have cleared stage"..nGuanType.." Lantern Lighting Meet. The next stage begins in 20 seconds.");
 				SetMissionS(AOYUN_LIGHT_PLAYER_SEQ,"");
 				SetMissionV(AOYUN_LIGHT_GUAN_TYPE,GetMissionV(AOYUN_LIGHT_GUAN_TYPE)+1);
 				aoyun_light_ChangeMSState(AOYUN_LIGHT_STATE_READY);
 			else
-				Msg2MSAll(AOYUN_LIGHT_MISSION_ID,"Chóc mõng b¹n v­ît qua ¶i thø "..nGuanType.." Héi th¾p ®Ìn. Sau 20 gi©y dän khu thi ®Êu.");
+				Msg2MSAll(AOYUN_LIGHT_MISSION_ID,"Congratulations, you have cleared stage"..nGuanType.." Lantern Lighting Meet. The contest area will be cleared in 20 seconds.");
 				aoyun_light_ChangeMSState(AOYUN_LIGHT_STATE_ENDING);
 			end
 		else

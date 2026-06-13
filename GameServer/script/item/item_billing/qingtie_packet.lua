@@ -9,7 +9,7 @@ function OnUse(nItemIdx)
 	local task_para = GetTask(TASK_WEDDING_FIELD)
 	if nLeftTime > 2 or nLeftTime < 0 then
 		Talk(1,"","Sè liÖu b¸o lçi, xin liªn hÖ nhµ cung cÊp!");
-		WriteLog("[KÕt h«n b¸o lçi]:"..GetName().."Sö dông bao thiÖp mêi b¸o lçi, nLeftTime:"..nLeftTime);
+		WriteLog("[Marriage Error Report]:"..GetName().."Sö dông bao thiÖp mêi b¸o lçi, nLeftTime:"..nLeftTime);
 		return 0;
 	end;
 	add_invitation(10,task_date,task_para);

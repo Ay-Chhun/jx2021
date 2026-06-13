@@ -1,4 +1,4 @@
-C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­îng	Chän	Danh väng s­ m«n	 ®ång 	Ghi nhí giao ®Þch?	Tªn ®¹o cô (®Æt cuèi cïng, kh«ng ®äc theo tr×nh tù)
+C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Silver tael	Choose	Sect reputation	 copper	Ghi nhí giao ®Þch?	Tªn ®¹o cô (®Æt cuèi cïng, kh«ng ®äc theo tr×nh tù)
 0	0	1	0	1	8			0		HiÖp ThiÕu Hé UyÓn
 0	0	2	0	1	312			0		Tr¹m Ng©n Hé UyÓn
 0	0	3	0	1	1148			0		Phi Ng­ thñ
@@ -8,10 +8,10 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	0	7	0	1	6416			0		Thiªn Ng­u thñ
 0	0	8	0	1	9704			0		BÝch Xµ thñ
 0	0	9	0	1	14244			0		Kh¸ng Long thñ
-0	0	10	0	1	21472			0		T­êng Ph­îng
+0	0	10	0	1	21472			0		Phoenix Wall
 0	0	11	0	1	30868			0		Né Long
 0	0	12	0	1	41300			0		Ngò Ph­¬ng Quû Chóng
-0	0	13	0	1	56576			0		Nª Lª ®Þa ngôc
+0	0	13	0	1	56576			0		Niraya Hell
 0	2	14	0	1	8			0		HiÖp ThiÕu kiÕm
 0	2	15	0	1	296			0		Tïng V¨n kiÕm
 0	2	16	0	1	1092			0		Linh Xµ kiÕm
@@ -37,7 +37,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	5	36	0	1	21260			0		§¶ CÈu bæng
 0	5	37	0	1	30560			0		KhÈn Na La Bæng
 0	5	38	0	1	40888			0		Thiªn Xµ c«n
-0	5	39	0	1	56008			0		Thanh Long c«n
+0	5	39	0	1	56008			0		Azure Dragon Staff
 0	1	40	0	1	8			0		HiÖp ThiÕu ¸m KhÝ
 0	1	41	0	1	292			0		Ngò Quang th¹ch
 0	1	42	0	1	1080			0		LiÔu DiÖp ®ao
@@ -72,7 +72,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	10	71	0	1	20828			0		Cöu Tiªu Ngäc Béi
 0	10	72	0	1	29944			0		HiÖu Chung
 0	10	73	0	1	40064			0		Lôc Khëi
-0	10	74	0	1	54876			0		Tiªu VÜ
+0	10	74	0	1	54876			0		Tieu Vi
 0	9	75	0	1	1124			0		Ph¸n Quan bót
 0	9	76	0	1	2708			0		ChiÕt Xung bót
 0	9	77	0	1	3596			0		Xu©n Phong bót
@@ -81,7 +81,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	9	80	0	1	9508			0		Truy NguyÖt bót
 0	9	81	0	1	13960			0		ThÞ Hån bót
 0	9	82	0	1	21044			0		Long ThiÖt
-0	9	83	0	1	30252			0		R¨ng sãi
+0	9	83	0	1	30252			0		Wolf Tooth
 0	9	84	0	1	40476			0		Ph¸ Qu©n
 0	9	85	0	1	55444			0		Thiªn C¬
 0	8	86	0	1	1160			0		TÝch tr­îng
@@ -959,12 +959,12 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	102	17	0	1	12000			0		
 1	1	1	0	1	10			0		
 1	0	1	0	1	10			0		
-0	200	11	0	1	500			0		Cuèc chim
+0	200	11	0	1	500			0		Bird Hoe
 0	200	12	0	1	500			0		ChÕ B× ®ao
 0	200	13	0	1	500			0		Cuèc
-0	200	14	0	1	500			0		ThiÕt phñ
+0	200	14	0	1	500			0		Iron Mansion
 0	200	15	0	1	500			0		Con thoi
-0	200	16	0	1	500			0		Cuèc thuèc
+0	200	16	0	1	500			0		Medicine Hoe
 2	12	110	0	1	80			0		
 2	12	111	0	1	200			0		
 2	12	112	0	1	400			0		
@@ -1067,7 +1067,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	4	115	0	1	20616			0		Tö Kim
 0	4	116	0	1	29632			0		ThÇn Lùc
 0	4	117	0	1	39648			0		Xi Nha
-0	4	118	0	1	54312			0		Long KhÈu
+0	4	118	0	1	54312			0		Long Khau
 2	15	10	0	1	5	100		0		
 0	108	109	0	1	300000			0		
 0	108	110	0	1	300000			0		
@@ -1084,7 +1084,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 2	1	210	0	1	300000			0		
 2	1	211	0	1	300000			0		
 0	105	10	0	1	1000			0		
-2	3	219	0	1	100			0		TiÓu tuyÕt cÇu
+2	3	219	0	1	100			0		Small Snowball
 2	1	228	0	1	300000			0		ThiÖp xu©n
 2	1	229	0	1	300000			0		ThiÖp xu©n
 2	1	230	0	1	300000			0		ThiÖp xu©n
@@ -1113,7 +1113,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 2	1	342	0	1	300000			0		ThiÖp xu©n
 2	1	270	0	1	0			1		B¹ch C©u Hoµn
 2	1	270	0	1	0	10		8		B¹ch C©u Hoµn
-0	105	1	0	1	100000					XÝch Ký
+0	105	1	0	1	100000					Chiji
 0	105	2	0	1	100000					Hoµng Ký
 0	105	3	0	1	100000					H¾c Ký
 0	105	4	0	1	100000					B¹ch Ký
@@ -1121,16 +1121,16 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	105	6	0	1	1000000					Hoµng T«ng m·
 0	105	7	0	1	1000000					H¾c T«ng m·
 0	105	8	0	1	1000000					B¹ch T«ng m·
-0	105	9	0	1	10000000					XÝch Thè
+0	105	9	0	1	10000000					Red Hare
 0	105	11	0	1	10000000					Tr¶o Hoµng Phi §iÖn
 0	105	12	0	1	10000000					Hèt L«i B¸c
-0	105	13	0	1	10000000					Bé C¶nh
+0	105	13	0	1	10000000					Scenery Set
 0	11	1	0	1	287					H¾c ThiÕt tr¶o
 0	11	2	0	1	691					Tinh Cang tr¶o
 0	11	3	0	1	917					C¬ Quan tr¶o
 0	11	4	0	1	1162					Phi Hoµnh tr¶o
 0	11	5	0	1	1604					¸m thÝch
-0	11	6	0	1	2426					R¨ng sãi
+0	11	6	0	1	2426					Wolf Tooth
 0	11	7	0	1	3561					Né DiÖm
 0	11	8	0	1	5368					V¹n KiÕp
 0	11	9	0	1	7717					D­¬ng Qu©n
@@ -1144,7 +1144,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	7	6	0	1	2426					Né Hång
 0	7	7	0	1	3561					B¸o Hoa
 0	7	8	0	1	5368					Uyªn ¦¬ng Liªn Hoµn
-0	7	9	0	1	7717					HuyÕt Liªn Hoµn
+0	7	9	0	1	7717					Huyet Lien Hoan
 0	7	10	0	1	10325					T«i NguyÖt
 0	7	11	0	1	14144					§o¹n Tr­êng
 0	109	1	0	1				10		HiÖp ThiÕu bè y
@@ -1197,7 +1197,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	109	48	0	1				10		Hång Nghª Th­êng
 0	109	49	0	1				10		L©n Quang gi¸p
 0	109	50	0	1				10		Hå C¬ Vò y
-0	109	51	0	1				10		Minh Quang gi¸p
+0	109	51	0	1				10		Mingguang Armor
 0	109	52	0	1				10		Nghª Th­êng Vò y
 0	109	53	0	1				10		Thiªn y
 0	109	54	0	1				10		Phi Thiªn Th¸i Th­êng
@@ -1224,7 +1224,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	108	3	0	1				8		Anh Hïng C©n
 0	108	4	0	1				8		CÈm Bè c©n
 0	108	5	0	1				8		M·n NguyÖt L¹p
-0	108	6	0	1				8		Kim Phong Qu¸n
+0	108	6	0	1				8		Jinfeng Hall
 0	108	7	0	1				8		M«ng DiÖn C©n
 0	108	8	0	1				8		Hoa D­¬ng c©n
 0	108	9	0	1				8		ThiÕt TuyÕn L¹p
@@ -1272,7 +1272,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	108	51	0	1				8		NhËt MiÖn
 0	108	52	0	1				8		ThÇn ¤
 0	108	53	0	1				8		Tu La
-0	108	54	0	1				8		Chu T­íc
+0	108	54	0	1				8		Vermilion Bird
 0	108	55	0	1				8		§µo Méc thoa
 0	108	56	0	1				8		Th¸i V¨n Méc tr©m
 0	108	57	0	1				8		TrÇm Méc Thóc tr©m
@@ -1343,7 +1343,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	110	50	0	1				8		Thiªn M·
 0	110	51	0	1				8		Ph¸ TrËn
 0	110	52	0	1				8		PhÊt V©n
-0	110	53	0	1				8		Hæ TiÕu
+0	110	53	0	1				8		Tiger Roar
 0	110	54	0	1				8		Th¸i Thanh
 0	110	55	0	1				8		ThiÓn Th¶o Tó Trang
 0	110	56	0	1				8		Tö Hµ Tó Trang
@@ -1357,13 +1357,13 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	110	64	0	1				8		Khëi La Tó Trang
 0	110	65	0	1				8		Vâ ThÇn Tó Trang
 0	110	66	0	1				8		Linh Lung Tó Trang
-0	110	67	0	1				8		B¸ch ChiÕn
+0	110	67	0	1				8		Bach Chien
 0	110	68	0	1				8		ThÇn N÷
 0	110	69	0	1				8		Vò Linh
 0	110	70	0	1				8		T¶n Hoa
 0	110	71	0	1				8		Hång Ngäc
 0	110	72	0	1				8		XuÊt V©n
-0	109	121	0	1				15		VÖ quèc y
+0	109	121	0	1				15		Nation-Guarding Garment
 0	109	122	0	1				15		H¾c ThiÕt y
 0	109	123	0	1				15		Thóy Nh©n y
 0	109	124	0	1				15		Tö VËn y
@@ -1372,23 +1372,23 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 2	1	343	0	1		6		1		ThÇn N«ng §¬n
 1	5	6	0	1	500			0		Håi thµnh phï §¹i Lý
 0	105	23	0	1	5000000					T­íng qu©n chiÕn m·
-2	0	351	0	1	1000					Lé thñy
+2	0	351	0	1	1000					Dew Water
 0	3	201	0	4	50000					Hµnh Gi¶ Giíi ®ao
 0	3	202	0	4	50000					Hµnh Gi¶ Giíi ®ao
-0	3	211	0	6	90000		150			Hçn Nguyªn ®ao
-0	3	212	0	6	90000		150			Hçn Nguyªn ®ao
+0	3	211	0	6	90000		150			Hon Nguyen Saber
+0	3	212	0	6	90000		150			Hon Nguyen Saber
 0	5	201	0	4	50000					Hµnh Gi¶ Giíi c«n
 0	5	202	0	4	50000					Hµnh Gi¶ Giíi c«n
 0	5	211	0	6	90000		150			Hçn Nguyªn C«n
 0	5	212	0	6	90000		150			Hçn Nguyªn C«n
-0	8	301	0	4	50000					Khæ Hµnh Tr­îng
-0	8	302	0	4	50000					Khæ Hµnh Tr­îng
+0	8	301	0	4	50000					Ascetic Staff
+0	8	302	0	4	50000					Ascetic Staff
 0	8	311	0	6	90000		150			ThiÒn Tu Ph¸p Tr­îng
 0	8	312	0	6	90000		150			ThiÒn Tu Ph¸p Tr­îng
-0	0	401	0	4	50000					Sa Di Hé UyÓn
-0	0	402	0	4	50000					Sa Di Hé UyÓn
-0	0	411	0	6	90000		150			§Êu T¨ng QuyÒn S¸o
-0	0	412	0	6	90000		150			§Êu T¨ng QuyÒn S¸o
+0	0	401	0	4	50000					Sha Mi He Yuan
+0	0	402	0	4	50000					Sha Mi He Yuan
+0	0	411	0	6	90000		150			Dau Tang Quyen Sao
+0	0	412	0	6	90000		150			Dau Tang Quyen Sao
 0	1	601	0	4	50000					Trang Kh¸ch Phi §ao
 0	1	602	0	4	50000					Trang Kh¸ch Phi §ao
 0	1	603	0	4	50000					Trang Kh¸ch Phi §ao
@@ -1401,26 +1401,26 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	2	802	0	4	50000					Thanh T©m Tè KiÕm
 0	2	811	0	6	90000		150			ThÓ Vò Khinh KiÕm
 0	2	812	0	6	90000		150			ThÓ Vò Khinh KiÕm
-0	10	901	0	4	50000					T­ Khóc Tè CÇm
-0	10	902	0	4	50000					T­ Khóc Tè CÇm
-0	10	911	0	6	90000		150			Ph¹m ¢m CÇm
-0	10	912	0	6	90000		150			Ph¹m ¢m CÇm
-0	0	1101	0	4	50000					B¸t sø
-0	0	1102	0	4	50000					B¸t sø
-0	0	1103	0	4	50000					B¸t sø
-0	0	1104	0	4	50000					B¸t sø
-0	0	1111	0	6	90000		150			Trõ Gian QuyÒn
-0	0	1112	0	6	90000		150			Trõ Gian QuyÒn
-0	0	1113	0	6	90000		150			Trõ Gian QuyÒn
-0	0	1114	0	6	90000		150			Trõ Gian QuyÒn
-0	5	1201	0	4	50000					KhiÕu Hoa Bæng
-0	5	1202	0	4	50000					KhiÕu Hoa Bæng
-0	5	1203	0	4	50000					KhiÕu Hoa Bæng
-0	5	1204	0	4	50000					KhiÕu Hoa Bæng
-0	5	1211	0	6	90000		150			Trõng ¸c Bæng
-0	5	1212	0	6	90000		150			Trõng ¸c Bæng
-0	5	1213	0	6	90000		150			Trõng ¸c Bæng
-0	5	1214	0	6	90000		150			Trõng ¸c Bæng
+0	10	901	0	4	50000					Zi Ku Purple Zither
+0	10	902	0	4	50000					Zi Ku Purple Zither
+0	10	911	0	6	90000		150			Pham Am Cam
+0	10	912	0	6	90000		150			Pham Am Cam
+0	0	1101	0	4	50000					Ba boots
+0	0	1102	0	4	50000					Ba boots
+0	0	1103	0	4	50000					Ba boots
+0	0	1104	0	4	50000					Ba boots
+0	0	1111	0	6	90000		150			Tru Gian Quyen
+0	0	1112	0	6	90000		150			Tru Gian Quyen
+0	0	1113	0	6	90000		150			Tru Gian Quyen
+0	0	1114	0	6	90000		150			Tru Gian Quyen
+0	5	1201	0	4	50000					Xiao Hua staff
+0	5	1202	0	4	50000					Xiao Hua staff
+0	5	1203	0	4	50000					Xiao Hua staff
+0	5	1204	0	4	50000					Xiao Hua staff
+0	5	1211	0	6	90000		150			Trung Ac Bong
+0	5	1212	0	6	90000		150			Trung Ac Bong
+0	5	1213	0	6	90000		150			Trung Ac Bong
+0	5	1214	0	6	90000		150			Trung Ac Bong
 0	2	1401	0	4	50000					Thanh Tu KiÕm
 0	2	1402	0	4	50000					Thanh Tu KiÕm
 0	2	1403	0	4	50000					Thanh Tu KiÕm
@@ -1429,18 +1429,18 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	2	1412	0	6	90000		150			NhËp Quan Ph¸p KiÕm
 0	2	1413	0	6	90000		150			NhËp Quan Ph¸p KiÕm
 0	2	1414	0	6	90000		150			NhËp Quan Ph¸p KiÕm
-0	9	1501	0	4	50000					Thanh Phong ThÝch
-0	9	1502	0	4	50000					Thanh Phong ThÝch
-0	9	1503	0	4	50000					Thanh Phong ThÝch
-0	9	1504	0	4	50000					Thanh Phong ThÝch
+0	9	1501	0	4	50000					Qing Feng dagger
+0	9	1502	0	4	50000					Qing Feng dagger
+0	9	1503	0	4	50000					Qing Feng dagger
+0	9	1504	0	4	50000					Qing Feng dagger
 0	9	1511	0	6	90000		150			ThiÓu D­¬ng ThÝch
 0	9	1512	0	6	90000		150			ThiÓu D­¬ng ThÝch
 0	9	1513	0	6	90000		150			ThiÓu D­¬ng ThÝch
 0	9	1514	0	6	90000		150			ThiÓu D­¬ng ThÝch
-0	6	1701	0	4	50000					Khinh Kþ Th­¬ng
-0	6	1702	0	4	50000					Khinh Kþ Th­¬ng
-0	6	1703	0	4	50000					Khinh Kþ Th­¬ng
-0	6	1704	0	4	50000					Khinh Kþ Th­¬ng
+0	6	1701	0	4	50000					Light Cavalry spear
+0	6	1702	0	4	50000					Light Cavalry spear
+0	6	1703	0	4	50000					Light Cavalry spear
+0	6	1704	0	4	50000					Light Cavalry spear
 0	6	1711	0	6	90000		150			HiÖu óy Tr­êng Th­¬ng
 0	6	1712	0	6	90000		150			HiÖu óy Tr­êng Th­¬ng
 0	6	1713	0	6	90000		150			HiÖu óy Tr­êng Th­¬ng
@@ -1449,72 +1449,72 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	4	1802	0	4	50000					Nç Thñ Cung
 0	4	1803	0	4	50000					Nç Thñ Cung
 0	4	1804	0	4	50000					Nç Thñ Cung
-0	4	1811	0	6	90000		150			§« óy cung
-0	4	1812	0	6	90000		150			§« óy cung
-0	4	1813	0	6	90000		150			§« óy cung
-0	4	1814	0	6	90000		150			§« óy cung
-0	7	2001	0	4	50000					§o¹t Ph¸ch ®ao
-0	7	2002	0	4	50000					§o¹t Ph¸ch ®ao
-0	7	2003	0	4	50000					§o¹t Ph¸ch ®ao
-0	7	2004	0	4	50000					§o¹t Ph¸ch ®ao
-0	7	2011	0	6	90000		150			Th«i MÖnh §éc ®ao
-0	7	2012	0	6	90000		150			Th«i MÖnh §éc ®ao
-0	7	2013	0	6	90000		150			Th«i MÖnh §éc ®ao
-0	7	2014	0	6	90000		150			Th«i MÖnh §éc ®ao
-0	11	2101	0	4	50000					§éc Tµm Tr¶o
-0	11	2102	0	4	50000					§éc Tµm Tr¶o
-0	11	2103	0	4	50000					§éc Tµm Tr¶o
-0	11	2104	0	4	50000					§éc Tµm Tr¶o
+0	4	1811	0	6	90000		150			Do Uy Bow
+0	4	1812	0	6	90000		150			Do Uy Bow
+0	4	1813	0	6	90000		150			Do Uy Bow
+0	4	1814	0	6	90000		150			Do Uy Bow
+0	7	2001	0	4	50000					Duo Po blade
+0	7	2002	0	4	50000					Duo Po blade
+0	7	2003	0	4	50000					Duo Po blade
+0	7	2004	0	4	50000					Duo Po blade
+0	7	2011	0	6	90000		150			Thoi Menh Doc Saber
+0	7	2012	0	6	90000		150			Thoi Menh Doc Saber
+0	7	2013	0	6	90000		150			Thoi Menh Doc Saber
+0	7	2014	0	6	90000		150			Thoi Menh Doc Saber
+0	11	2101	0	4	50000					Du Can claw
+0	11	2102	0	4	50000					Du Can claw
+0	11	2103	0	4	50000					Du Can claw
+0	11	2104	0	4	50000					Du Can claw
 0	11	2111	0	6	90000		150			Thùc T©m §éc Tr¶o
 0	11	2112	0	6	90000		150			Thùc T©m §éc Tr¶o
 0	11	2113	0	6	90000		150			Thùc T©m §éc Tr¶o
 0	11	2114	0	6	90000		150			Thùc T©m §éc Tr¶o
-0	103	201	0	4	100000					Hµnh Gi¶ m·o
-0	103	202	0	4	100000					Hµnh Gi¶ m·o
-0	103	301	0	4	100000					Khæ Hµnh m·o
-0	103	302	0	4	100000					Khæ Hµnh m·o
-0	103	401	0	4	100000					Sa Di m·o
-0	103	402	0	4	100000					Sa Di m·o
-0	103	601	0	4	100000					Trang Kh¸ch m·o
-0	103	602	0	4	100000					Trang Kh¸ch m·o
-0	103	603	0	4	100000					Trang Kh¸ch m·o
-0	103	604	0	4	100000					Trang Kh¸ch m·o
+0	103	201	0	4	100000					Walker hat
+0	103	202	0	4	100000					Walker hat
+0	103	301	0	4	100000					Ascetic hat
+0	103	302	0	4	100000					Ascetic hat
+0	103	401	0	4	100000					Sramanera hat
+0	103	402	0	4	100000					Sramanera hat
+0	103	601	0	4	100000					Zhuang Ke headband
+0	103	602	0	4	100000					Zhuang Ke headband
+0	103	603	0	4	100000					Zhuang Ke headband
+0	103	604	0	4	100000					Zhuang Ke headband
 0	103	801	0	4	100000					Thanh T©m
 0	103	802	0	4	100000					Thanh T©m
-0	103	901	0	4	100000					T­ Khóc
-0	103	902	0	4	100000					T­ Khóc
-0	103	1101	0	4	100000					ChÊp B¸t c©n
-0	103	1102	0	4	100000					ChÊp B¸t c©n
-0	103	1103	0	4	100000					ChÊp B¸t c©n
-0	103	1104	0	4	100000					ChÊp B¸t c©n
-0	103	1201	0	4	100000					KhiÕu Hoa c©n
-0	103	1202	0	4	100000					KhiÕu Hoa c©n
-0	103	1203	0	4	100000					KhiÕu Hoa c©n
-0	103	1204	0	4	100000					KhiÕu Hoa c©n
-0	103	1401	0	4	100000					Thanh Tu c©n
-0	103	1402	0	4	100000					Thanh Tu c©n
-0	103	1403	0	4	100000					Thanh Tu c©n
-0	103	1404	0	4	100000					Thanh Tu c©n
-0	103	1501	0	4	100000					Thanh Phong c©n
-0	103	1502	0	4	100000					Thanh Phong c©n
-0	103	1503	0	4	100000					Thanh Phong c©n
-0	103	1504	0	4	100000					Thanh Phong c©n
-0	103	1701	0	4	100000					Khinh Kþ kh«i
-0	103	1702	0	4	100000					Khinh Kþ kh«i
-0	103	1703	0	4	100000					Khinh Kþ kh«i
-0	103	1704	0	4	100000					Khinh Kþ kh«i
+0	103	901	0	4	100000					Zi Ku
+0	103	902	0	4	100000					Zi Ku
+0	103	1101	0	4	100000					Zhi Ba sash
+0	103	1102	0	4	100000					Zhi Ba sash
+0	103	1103	0	4	100000					Zhi Ba sash
+0	103	1104	0	4	100000					Zhi Ba sash
+0	103	1201	0	4	100000					Xiao Hua sash
+0	103	1202	0	4	100000					Xiao Hua sash
+0	103	1203	0	4	100000					Xiao Hua sash
+0	103	1204	0	4	100000					Xiao Hua sash
+0	103	1401	0	4	100000					Qing Tu sash
+0	103	1402	0	4	100000					Qing Tu sash
+0	103	1403	0	4	100000					Qing Tu sash
+0	103	1404	0	4	100000					Qing Tu sash
+0	103	1501	0	4	100000					Qing Feng sash
+0	103	1502	0	4	100000					Qing Feng sash
+0	103	1503	0	4	100000					Qing Feng sash
+0	103	1504	0	4	100000					Qing Feng sash
+0	103	1701	0	4	100000					Light Cavalry helmet
+0	103	1702	0	4	100000					Light Cavalry helmet
+0	103	1703	0	4	100000					Light Cavalry helmet
+0	103	1704	0	4	100000					Light Cavalry helmet
 0	103	1801	0	4	100000					Nç Thñ kh«i
 0	103	1802	0	4	100000					Nç Thñ kh«i
 0	103	1803	0	4	100000					Nç Thñ kh«i
 0	103	1804	0	4	100000					Nç Thñ kh«i
-0	103	2001	0	4	100000					§o¹t Ph¸ch diÖn
-0	103	2002	0	4	100000					§o¹t Ph¸ch diÖn
-0	103	2003	0	4	100000					§o¹t Ph¸ch diÖn
-0	103	2004	0	4	100000					§o¹t Ph¸ch diÖn
-0	103	2101	0	4	100000					§éc Tµm diÖn
-0	103	2102	0	4	100000					§éc Tµm diÖn
-0	103	2103	0	4	100000					§éc Tµm diÖn
-0	103	2104	0	4	100000					§éc Tµm diÖn
+0	103	2001	0	4	100000					Duo Po mask
+0	103	2002	0	4	100000					Duo Po mask
+0	103	2003	0	4	100000					Duo Po mask
+0	103	2004	0	4	100000					Duo Po mask
+0	103	2101	0	4	100000					Du Can mask
+0	103	2102	0	4	100000					Du Can mask
+0	103	2103	0	4	100000					Du Can mask
+0	103	2104	0	4	100000					Du Can mask
 2	1	425	0	1	100000		200			C¸ch ghÐp Hµnh Gi¶ phôc
 2	1	426	0	1	800000		300			C¸ch ghÐp Hçn Nguyªn phôc
 2	1	427	0	1	6000000		4000			C¸ch ghÐp ChiÕn ý kh¶i gi¸p
@@ -1557,8 +1557,8 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 2	1	464	0	1	100000		200			C¸ch ghÐp §éc Tµm y
 2	1	465	0	1	800000		300			C¸ch ghÐp Thùc T©m y
 2	1	466	0	1	6000000		4000			C¸ch ghÐp B¹ch V« Th­êng Ngôy §éc y
-0	101	201	0	4	70000					Hµnh Gi¶ trang
-0	101	202	0	4	70000					Hµnh Gi¶ trang
+0	101	201	0	4	70000					Walker garb
+0	101	202	0	4	70000					Walker garb
 0	101	221	0	8	5000000		4000			ChiÕn ý phôc
 0	101	222	0	8	5000000		4000			ChiÕn ý phôc
 0	101	301	0	4	70000					Khæ Hµnh phôc
@@ -1573,10 +1573,10 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	101	602	0	4	70000					Trang Kh¸ch phôc
 0	101	603	0	4	70000					Trang Kh¸ch phôc
 0	101	604	0	4	70000					Trang Kh¸ch phôc
-0	101	621	0	8	5000000		4000			BÝ §éc trang
-0	101	622	0	8	5000000		4000			BÝ §éc trang
-0	101	623	0	8	5000000		4000			BÝ §éc trang
-0	101	624	0	8	5000000		4000			BÝ §éc trang
+0	101	621	0	8	5000000		4000			Secret Poison Outfit
+0	101	622	0	8	5000000		4000			Secret Poison Outfit
+0	101	623	0	8	5000000		4000			Secret Poison Outfit
+0	101	624	0	8	5000000		4000			Secret Poison Outfit
 0	101	801	0	4	70000					Thanh T©m tó trang
 0	101	802	0	4	70000					Thanh T©m tó trang
 0	101	821	0	8	5000000		4000			Ph¸p V©n phôc
@@ -1593,10 +1593,10 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	101	1122	0	8	5000000		4000			Hµo KhÝ phôc
 0	101	1123	0	8	5000000		4000			Hµo KhÝ phôc
 0	101	1124	0	8	5000000		4000			Hµo KhÝ phôc
-0	101	1201	0	4	70000					KhiÕu Hoa Khè
-0	101	1202	0	4	70000					KhiÕu Hoa Khè
-0	101	1203	0	4	70000					KhiÕu Hoa Khè
-0	101	1204	0	4	70000					KhiÕu Hoa Khè
+0	101	1201	0	4	70000					Xiao Hua trousers
+0	101	1202	0	4	70000					Xiao Hua trousers
+0	101	1203	0	4	70000					Xiao Hua trousers
+0	101	1204	0	4	70000					Xiao Hua trousers
 0	101	1221	0	8	5000000		4000			Tô NghÜa phôc
 0	101	1222	0	8	5000000		4000			Tô NghÜa phôc
 0	101	1223	0	8	5000000		4000			Tô NghÜa phôc
@@ -1637,10 +1637,10 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	101	2002	0	4	70000					§o¹t Ph¸ch phôc
 0	101	2003	0	4	70000					§o¹t Ph¸ch phôc
 0	101	2004	0	4	70000					§o¹t Ph¸ch phôc
-0	101	2021	0	8	5000000		4000			H¾c V« Th­êng M·nh §éc
-0	101	2022	0	8	5000000		4000			H¾c V« Th­êng M·nh §éc
-0	101	2023	0	8	5000000		4000			H¾c V« Th­êng M·nh §éc
-0	101	2024	0	8	5000000		4000			H¾c V« Th­êng M·nh §éc
+0	101	2021	0	8	5000000		4000			Black Impermanence Fierce Poison
+0	101	2022	0	8	5000000		4000			Black Impermanence Fierce Poison
+0	101	2023	0	8	5000000		4000			Black Impermanence Fierce Poison
+0	101	2024	0	8	5000000		4000			Black Impermanence Fierce Poison
 0	101	2101	0	4	70000					§éc Tµm phôc
 0	101	2102	0	4	70000					§éc Tµm phôc
 0	101	2103	0	4	70000					§éc Tµm phôc
@@ -1649,12 +1649,12 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	101	2122	0	8	5000000		4000			B¹ch V« Th­êng Ngôy §éc
 0	101	2123	0	8	5000000		4000			B¹ch V« Th­êng Ngôy §éc
 0	101	2124	0	8	5000000		4000			B¹ch V« Th­êng Ngôy §éc
-0	102	211	0	6	90000		150			Hçn Nguyªn Bµn ChØ
-0	102	212	0	6	90000		150			Hçn Nguyªn Bµn ChØ
-0	102	311	0	6	90000		150			ThiÒn Tu Bµn ChØ
-0	102	312	0	6	90000		150			ThiÒn Tu Bµn ChØ
-0	102	411	0	6	90000		150			§Êu T¨ng Bµn ChØ
-0	102	412	0	6	90000		150			§Êu T¨ng Bµn ChØ
+0	102	211	0	6	90000		150			Hon Nguyen Ban Chi
+0	102	212	0	6	90000		150			Hon Nguyen Ban Chi
+0	102	311	0	6	90000		150			Thien Tu Ban Chi
+0	102	312	0	6	90000		150			Thien Tu Ban Chi
+0	102	411	0	6	90000		150			Dau Tang Ban Chi
+0	102	412	0	6	90000		150			Dau Tang Ban Chi
 0	102	611	0	6	90000		150			Hé Ph¸p Bµi
 0	102	612	0	6	90000		150			Hé Ph¸p Bµi
 0	102	613	0	6	90000		150			Hé Ph¸p Bµi
@@ -1663,30 +1663,30 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	102	812	0	6	90000		150			Th¸i Vò Giíi ChØ
 0	102	911	0	6	90000		150			Ph¹n ¢m Giíi ChØ
 0	102	912	0	6	90000		150			Ph¹n ¢m Giíi ChØ
-0	102	1111	0	6	90000		150			Trõ Gian Béi
-0	102	1112	0	6	90000		150			Trõ Gian Béi
-0	102	1113	0	6	90000		150			Trõ Gian Béi
-0	102	1114	0	6	90000		150			Trõ Gian Béi
-0	102	1211	0	6	90000		150			Trõng ¸c Béi
-0	102	1212	0	6	90000		150			Trõng ¸c Béi
-0	102	1213	0	6	90000		150			Trõng ¸c Béi
-0	102	1214	0	6	90000		150			Trõng ¸c Béi
-0	102	1411	0	6	90000		150			NhËp Quan LÖnh
-0	102	1412	0	6	90000		150			NhËp Quan LÖnh
-0	102	1413	0	6	90000		150			NhËp Quan LÖnh
-0	102	1414	0	6	90000		150			NhËp Quan LÖnh
+0	102	1111	0	6	90000		150			Tru Gian Boi
+0	102	1112	0	6	90000		150			Tru Gian Boi
+0	102	1113	0	6	90000		150			Tru Gian Boi
+0	102	1114	0	6	90000		150			Tru Gian Boi
+0	102	1211	0	6	90000		150			Trung Ac Boi
+0	102	1212	0	6	90000		150			Trung Ac Boi
+0	102	1213	0	6	90000		150			Trung Ac Boi
+0	102	1214	0	6	90000		150			Trung Ac Boi
+0	102	1411	0	6	90000		150			Nhap Quan Lenh
+0	102	1412	0	6	90000		150			Nhap Quan Lenh
+0	102	1413	0	6	90000		150			Nhap Quan Lenh
+0	102	1414	0	6	90000		150			Nhap Quan Lenh
 0	102	1511	0	6	90000		150			ThiÓu D­¬ng Béi
 0	102	1512	0	6	90000		150			ThiÓu D­¬ng Béi
 0	102	1513	0	6	90000		150			ThiÓu D­¬ng Béi
 0	102	1514	0	6	90000		150			ThiÓu D­¬ng Béi
-0	102	1711	0	6	90000		150			HiÖu óy LÖnh
-0	102	1712	0	6	90000		150			HiÖu óy LÖnh
-0	102	1713	0	6	90000		150			HiÖu óy LÖnh
-0	102	1714	0	6	90000		150			HiÖu óy LÖnh
-0	102	1811	0	6	90000		150			§« óy LÖnh
-0	102	1812	0	6	90000		150			§« óy LÖnh
-0	102	1813	0	6	90000		150			§« óy LÖnh
-0	102	1814	0	6	90000		150			§« óy LÖnh
+0	102	1711	0	6	90000		150			Hieu Uy Lenh
+0	102	1712	0	6	90000		150			Hieu Uy Lenh
+0	102	1713	0	6	90000		150			Hieu Uy Lenh
+0	102	1714	0	6	90000		150			Hieu Uy Lenh
+0	102	1811	0	6	90000		150			Do Uy Lenh
+0	102	1812	0	6	90000		150			Do Uy Lenh
+0	102	1813	0	6	90000		150			Do Uy Lenh
+0	102	1814	0	6	90000		150			Do Uy Lenh
 0	102	2011	0	6	90000		150			Thóc MÖnh Ngäc Béi
 0	102	2012	0	6	90000		150			Thóc MÖnh Ngäc Béi
 0	102	2013	0	6	90000		150			Thóc MÖnh Ngäc Béi
@@ -1765,27 +1765,27 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	109	170	0	1				20		TiÖp Kh¸ch chiÕn bµo
 0	109	171	0	1				20		TiÖp Kh¸ch chiÕn bµo
 0	109	172	0	1				20		TiÖp Kh¸ch chiÕn bµo
-2	1	509	0	1	10000					KhÕ ¦íc Th­
-0	102	221	0	1	8000000		4000			Phôc Ma Kim Cang ChiÕn ý Bµn ChØ
-0	102	222	0	1	8000000		4000			Phôc Ma Kim Cang ChiÕn ý Bµn ChØ
+2	1	509	0	1	10000					Contract Letter
+0	102	221	0	1	8000000		4000			Vajra Demon-Subduing Battle Will Ring
+0	102	222	0	1	8000000		4000			Vajra Demon-Subduing Battle Will Ring
 0	102	223	0	1	8000000		4000			Phôc Ma Kim Cang ChiÕn ý Giíi ChØ
 0	102	224	0	1	8000000		4000			Phôc Ma Kim Cang ChiÕn ý Giíi ChØ
-0	102	321	0	1	8000000		4000			TruyÒn Kinh ThiÒn TÞnh Bµn ChØ
-0	102	322	0	1	8000000		4000			TruyÒn Kinh ThiÒn TÞnh Bµn ChØ
+0	102	321	0	1	8000000		4000			Sutra-Transmitting Meditation Ring
+0	102	322	0	1	8000000		4000			Sutra-Transmitting Meditation Ring
 0	102	323	0	1	8000000		4000			TruyÒn Kinh ThiÒn TÞnh Ngäc Giíi ChØ
 0	102	324	0	1	8000000		4000			TruyÒn Kinh ThiÒn TÞnh Ngäc Giíi ChØ
 0	102	421	0	1	8000000		4000			Hé Ph¸p La H¸n §Êu KhÝ Bµn ChØ
 0	102	422	0	1	8000000		4000			Hé Ph¸p La H¸n §Êu KhÝ Bµn ChØ
 0	102	423	0	1	8000000		4000			Hé Ph¸p La H¸n §Êu KhÝ Giíi ChØ
 0	102	424	0	1	8000000		4000			Hé Ph¸p La H¸n §Êu KhÝ Giíi ChØ
-0	102	621	0	1	8000000		4000			BÝ §éc Béi
-0	102	622	0	1	8000000		4000			BÝ §éc Béi
-0	102	623	0	1	8000000		4000			BÝ §éc Béi
-0	102	624	0	1	8000000		4000			BÝ §éc Béi
-0	102	625	0	1	8000000		4000			BÝ §éc ChØ Hoµn
-0	102	626	0	1	8000000		4000			BÝ §éc ChØ Hoµn
-0	102	627	0	1	8000000		4000			BÝ §éc ChØ Hoµn
-0	102	628	0	1	8000000		4000			BÝ §éc ChØ Hoµn
+0	102	621	0	1	8000000		4000			Secret Poison Pendant
+0	102	622	0	1	8000000		4000			Secret Poison Pendant
+0	102	623	0	1	8000000		4000			Secret Poison Pendant
+0	102	624	0	1	8000000		4000			Secret Poison Pendant
+0	102	625	0	1	8000000		4000			Secret Poison Ring
+0	102	626	0	1	8000000		4000			Secret Poison Ring
+0	102	627	0	1	8000000		4000			Secret Poison Ring
+0	102	628	0	1	8000000		4000			Secret Poison Ring
 0	102	821	0	1	8000000		4000			Tö Tróc Sø Ph¸p V©n Giíi
 0	102	822	0	1	8000000		4000			Tö Tróc Sø Ph¸p V©n Giíi
 0	102	823	0	1	8000000		4000			Tö Tróc Sø Ph¸p V©n Giíi
@@ -1814,10 +1814,10 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	102	1422	0	1	8000000		4000			V« Ng· Tø T­îng Giíi ChØ
 0	102	1423	0	1	8000000		4000			V« Ng· Tø T­îng Giíi ChØ
 0	102	1424	0	1	8000000		4000			V« Ng· Tø T­îng Giíi ChØ
-0	102	1425	0	1	8000000		4000			V« Ng· Tø T­îng ChØ Hoµn
-0	102	1426	0	1	8000000		4000			V« Ng· Tø T­îng ChØ Hoµn
-0	102	1427	0	1	8000000		4000			V« Ng· Tø T­îng ChØ Hoµn
-0	102	1428	0	1	8000000		4000			V« Ng· Tø T­îng ChØ Hoµn
+0	102	1425	0	1	8000000		4000			Selfless Four Symbols Ring
+0	102	1426	0	1	8000000		4000			Selfless Four Symbols Ring
+0	102	1427	0	1	8000000		4000			Selfless Four Symbols Ring
+0	102	1428	0	1	8000000		4000			Selfless Four Symbols Ring
 0	102	1521	0	1	8000000		4000			Nhµn V©n HiÖp §¹o Linh Phong ChØ
 0	102	1522	0	1	8000000		4000			Nhµn V©n HiÖp §¹o Linh Phong ChØ
 0	102	1523	0	1	8000000		4000			Nhµn V©n HiÖp §¹o Linh Phong ChØ
@@ -1826,34 +1826,34 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	102	1526	0	1	8000000		4000			Nhµn V©n HiÖp §¹o Linh Phong Hoµn
 0	102	1527	0	1	8000000		4000			Nhµn V©n HiÖp §¹o Linh Phong Hoµn
 0	102	1528	0	1	8000000		4000			Nhµn V©n HiÖp §¹o Linh Phong Hoµn
-0	102	1721	0	1	8000000		4000			PhÊn Vò T­íng Qu©n LÖnh Phï
-0	102	1722	0	1	8000000		4000			PhÊn Vò T­íng Qu©n LÖnh Phï
-0	102	1723	0	1	8000000		4000			PhÊn Vò T­íng Qu©n LÖnh Phï
-0	102	1724	0	1	8000000		4000			PhÊn Vò T­íng Qu©n LÖnh Phï
-0	102	1725	0	1	8000000		4000			PhÊn Vò T­íng Qu©n HiÖu Kú
-0	102	1726	0	1	8000000		4000			PhÊn Vò T­íng Qu©n HiÖu Kú
-0	102	1727	0	1	8000000		4000			PhÊn Vò T­íng Qu©n HiÖu Kú
-0	102	1728	0	1	8000000		4000			PhÊn Vò T­íng Qu©n HiÖu Kú
-0	102	1821	0	1	8000000		4000			PhÊn Oai T­íng Qu©n LÖnh Phï
-0	102	1822	0	1	8000000		4000			PhÊn Oai T­íng Qu©n LÖnh Phï
-0	102	1823	0	1	8000000		4000			PhÊn Oai T­íng Qu©n LÖnh Phï
-0	102	1824	0	1	8000000		4000			PhÊn Oai T­íng Qu©n LÖnh Phï
-0	102	1825	0	1	8000000		4000			PhÊn Oai T­íng Qu©n HiÖu Kú
-0	102	1826	0	1	8000000		4000			PhÊn Oai T­íng Qu©n HiÖu Kú
-0	102	1827	0	1	8000000		4000			PhÊn Oai T­íng Qu©n HiÖu Kú
-0	102	1828	0	1	8000000		4000			PhÊn Oai T­íng Qu©n HiÖu Kú
-0	102	2021	0	1	8000000		4000			H¾c V« Th­êng M·nh §éc HuyÕt Béi
-0	102	2022	0	1	8000000		4000			H¾c V« Th­êng M·nh §éc HuyÕt Béi
-0	102	2023	0	1	8000000		4000			H¾c V« Th­êng M·nh §éc HuyÕt Béi
-0	102	2024	0	1	8000000		4000			H¾c V« Th­êng M·nh §éc HuyÕt Béi
+0	102	1721	0	1	8000000		4000			Valor-Rousing General's Command Talisman
+0	102	1722	0	1	8000000		4000			Valor-Rousing General's Command Talisman
+0	102	1723	0	1	8000000		4000			Valor-Rousing General's Command Talisman
+0	102	1724	0	1	8000000		4000			Valor-Rousing General's Command Talisman
+0	102	1725	0	1	8000000		4000			Valor-Rousing General's Banner
+0	102	1726	0	1	8000000		4000			Valor-Rousing General's Banner
+0	102	1727	0	1	8000000		4000			Valor-Rousing General's Banner
+0	102	1728	0	1	8000000		4000			Valor-Rousing General's Banner
+0	102	1821	0	1	8000000		4000			Might-Rousing General's Command Talisman
+0	102	1822	0	1	8000000		4000			Might-Rousing General's Command Talisman
+0	102	1823	0	1	8000000		4000			Might-Rousing General's Command Talisman
+0	102	1824	0	1	8000000		4000			Might-Rousing General's Command Talisman
+0	102	1825	0	1	8000000		4000			Might-Rousing General's Banner
+0	102	1826	0	1	8000000		4000			Might-Rousing General's Banner
+0	102	1827	0	1	8000000		4000			Might-Rousing General's Banner
+0	102	1828	0	1	8000000		4000			Might-Rousing General's Banner
+0	102	2021	0	1	8000000		4000			Black Impermanence Fierce Poison Blood Pendant
+0	102	2022	0	1	8000000		4000			Black Impermanence Fierce Poison Blood Pendant
+0	102	2023	0	1	8000000		4000			Black Impermanence Fierce Poison Blood Pendant
+0	102	2024	0	1	8000000		4000			Black Impermanence Fierce Poison Blood Pendant
 0	102	2025	0	1	8000000		4000			H¾c V« Th­êng_M·nh §éc H¾c Giíi
 0	102	2026	0	1	8000000		4000			H¾c V« Th­êng_M·nh §éc H¾c Giíi
 0	102	2027	0	1	8000000		4000			H¾c V« Th­êng_M·nh §éc H¾c Giíi
 0	102	2028	0	1	8000000		4000			H¾c V« Th­êng_M·nh §éc H¾c Giíi
-0	102	2121	0	1	8000000		4000			Quû §éc HuyÕt Béi
-0	102	2122	0	1	8000000		4000			Quû §éc HuyÕt Béi
-0	102	2123	0	1	8000000		4000			Quû §éc HuyÕt Béi
-0	102	2124	0	1	8000000		4000			Quû §éc HuyÕt Béi
+0	102	2121	0	1	8000000		4000			Demon Poison Blood Pendant
+0	102	2122	0	1	8000000		4000			Demon Poison Blood Pendant
+0	102	2123	0	1	8000000		4000			Demon Poison Blood Pendant
+0	102	2124	0	1	8000000		4000			Demon Poison Blood Pendant
 0	102	2125	0	1	8000000		4000			B¹ch V« Th­êng_Quû §éc H¾c Giíi
 0	102	2126	0	1	8000000		4000			B¹ch V« Th­êng_Quû §éc H¾c Giíi
 0	102	2127	0	1	8000000		4000			B¹ch V« Th­êng_Quû §éc H¾c Giíi
@@ -1874,18 +1874,18 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 2	1	523	0	1	1			0		Kim Cang Nguyªn Th¹ch
 2	1	524	0	1	1			0		ThÞt l¹c ®µ
 2	1	525	0	1	1			0		Lôc Trô Nguyªn Th¹ch
-2	0	515	0	1	800000					Kh¸nh §iÓn diÖm háa
-2	0	519	0	1	50000					Ng.liÖu chÝnh 2
-2	0	520	0	1	50000					Ng.liÖu chÝnh 3
-2	0	521	0	1	1000					Ng.liÖu phô 1
-2	0	522	0	1	1000					Ng.liÖu phô 2
-2	0	523	0	1	1000					Ng.liÖu phô 3
-2	0	524	0	1	1000					Than nhiÖt ®é cao
+2	0	515	0	1	800000					Khanh Dien Flame
+2	0	519	0	1	50000					Main Material 2
+2	0	520	0	1	50000					Main Material 3
+2	0	521	0	1	1000					Secondary Material 1
+2	0	522	0	1	1000					Secondary Material 2
+2	0	523	0	1	1000					Secondary Material 3
+2	0	524	0	1	1000					High Temperature Charcoal
 2	0	525	0	1	1000					Than nhiÖt ®é thÊp
 0	200	36	0	1	500			0		Ph­¬ng sÜ khÝ
 0	200	37	0	1	5200			0		ThuËt sÜ khÝ
 2	17	1	0	1	100	100		0		Cæ trïng
-2	3	220	0	1	300			0		Trung tuyÕt cÇu
+2	3	220	0	1	300			0		Medium Snowball
 2	3	217	0	1	500			0		§¹n trung tuyÕt cÇu
 2	1	1071	0	1	10000000		4000			Phôc Ma Kim Cang ChiÕn ý §ao Phæ
 2	1	1072	0	1	10000000		4000			Phôc Ma Kim Cang ChiÕn ý C«n Phæ
@@ -2476,34 +2476,34 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 1	6	10000	0	1	100000					Phong thi phï ngÉu nhiªn
 0	103	221	0	8	8000000		4000			Phôc Ma Kim Cang chiÕn kh«i
 0	103	222	0	8	8000000		4000			Phôc Ma Kim Cang chiÕn kh«i
-0	103	321	0	8	8000000		4000			ThiÒn TÞnh m·o
-0	103	322	0	8	8000000		4000			ThiÒn TÞnh m·o
+0	103	321	0	8	8000000		4000			Meditation Hat
+0	103	322	0	8	8000000		4000			Meditation Hat
 0	103	421	0	8	8000000		4000			Hé Ph¸p La H¸n kh«i
 0	103	422	0	8	8000000		4000			Hé Ph¸p La H¸n kh«i
-0	103	621	0	8	8000000		4000			BÝ §éc c©n
-0	103	622	0	8	8000000		4000			BÝ §éc c©n
-0	103	623	0	8	8000000		4000			BÝ §éc c©n
-0	103	624	0	8	8000000		4000			BÝ §éc c©n
+0	103	621	0	8	8000000		4000			Hidden Poison Band
+0	103	622	0	8	8000000		4000			Hidden Poison Band
+0	103	623	0	8	8000000		4000			Hidden Poison Band
+0	103	624	0	8	8000000		4000			Hidden Poison Band
 0	103	821	0	8	8000000		4000			Ph¸p V©n tr©m
 0	103	822	0	8	8000000		4000			Ph¸p V©n tr©m
 0	103	921	0	8	8000000		4000			M·n NguyÖt tr©m
 0	103	922	0	8	8000000		4000			M·n NguyÖt tr©m
-0	103	1121	0	8	8000000		4000			Tø H¶i c©n
-0	103	1122	0	8	8000000		4000			Tø H¶i c©n
-0	103	1123	0	8	8000000		4000			Tø H¶i c©n
-0	103	1124	0	8	8000000		4000			Tø H¶i c©n
-0	103	1221	0	8	8000000		4000			Tô NghÜa c©n
-0	103	1222	0	8	8000000		4000			Tô NghÜa c©n
-0	103	1223	0	8	8000000		4000			Tô NghÜa c©n
-0	103	1224	0	8	8000000		4000			Tô NghÜa c©n
-0	103	1421	0	8	8000000		4000			Tø T­îng c©n
-0	103	1422	0	8	8000000		4000			Tø T­îng c©n
-0	103	1423	0	8	8000000		4000			Tø T­îng c©n
-0	103	1424	0	8	8000000		4000			Tø T­îng c©n
-0	103	1521	0	8	8000000		4000			Linh Phong c©n
-0	103	1522	0	8	8000000		4000			Linh Phong c©n
-0	103	1523	0	8	8000000		4000			Linh Phong c©n
-0	103	1524	0	8	8000000		4000			Linh Phong c©n
+0	103	1121	0	8	8000000		4000			Four Seas Headband
+0	103	1122	0	8	8000000		4000			Four Seas Headband
+0	103	1123	0	8	8000000		4000			Four Seas Headband
+0	103	1124	0	8	8000000		4000			Four Seas Headband
+0	103	1221	0	8	8000000		4000			Righteousness Headband
+0	103	1222	0	8	8000000		4000			Righteousness Headband
+0	103	1223	0	8	8000000		4000			Righteousness Headband
+0	103	1224	0	8	8000000		4000			Righteousness Headband
+0	103	1421	0	8	8000000		4000			Four Symbols Headband
+0	103	1422	0	8	8000000		4000			Four Symbols Headband
+0	103	1423	0	8	8000000		4000			Four Symbols Headband
+0	103	1424	0	8	8000000		4000			Four Symbols Headband
+0	103	1521	0	8	8000000		4000			Spirit Wind Headband
+0	103	1522	0	8	8000000		4000			Spirit Wind Headband
+0	103	1523	0	8	8000000		4000			Spirit Wind Headband
+0	103	1524	0	8	8000000		4000			Spirit Wind Headband
 0	103	1721	0	8	8000000		4000			Tinh Gi¸p kh«i
 0	103	1722	0	8	8000000		4000			Tinh Gi¸p kh«i
 0	103	1723	0	8	8000000		4000			Tinh Gi¸p kh«i
@@ -2512,22 +2512,22 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	103	1822	0	8	8000000		4000			Tinh Gi¸p kh«i
 0	103	1823	0	8	8000000		4000			Tinh Gi¸p kh«i
 0	103	1824	0	8	8000000		4000			Tinh Gi¸p kh«i
-0	103	2021	0	8	8000000		4000			M·nh §éc diÖn
-0	103	2022	0	8	8000000		4000			M·nh §éc diÖn
-0	103	2023	0	8	8000000		4000			M·nh §éc diÖn
-0	103	2024	0	8	8000000		4000			M·nh §éc diÖn
-0	103	2121	0	8	8000000		4000			Quû §éc diÖn
-0	103	2122	0	8	8000000		4000			Quû §éc diÖn
-0	103	2123	0	8	8000000		4000			Quû §éc diÖn
-0	103	2124	0	8	8000000		4000			Quû §éc diÖn
+0	103	2021	0	8	8000000		4000			Fierce Venom Mask
+0	103	2022	0	8	8000000		4000			Fierce Venom Mask
+0	103	2023	0	8	8000000		4000			Fierce Venom Mask
+0	103	2024	0	8	8000000		4000			Fierce Venom Mask
+0	103	2121	0	8	8000000		4000			Ghost Venom Mask
+0	103	2122	0	8	8000000		4000			Ghost Venom Mask
+0	103	2123	0	8	8000000		4000			Ghost Venom Mask
+0	103	2124	0	8	8000000		4000			Ghost Venom Mask
 2	1	1086	0	8	1000000		4000			B¶n vÏ ®óc t¹o thÇn khÝ
-2	1	3369	0	1	5000					L¸ gãi b¸nh
-2	1	3370	0	1	5000					§Ëu ®á
-2	1	3371	0	1	5000					G¹o tr¾ng
-2	1	3372	0	1	50000					L¸ ng¶i
-2	1	3374	0	1	220000					H¹t dÎ
-2	1	3373	0	1	300000					J¨m b«ng
-2	1	3365	0	1	500000					PhØ Thóy
+2	1	3369	0	1	5000					Wrapping Leaf
+2	1	3370	0	1	5000					Red Bean
+2	1	3371	0	1	5000					White Rice
+2	1	3372	0	1	50000					Mugwort Leaf
+2	1	3374	0	1	220000					Chestnut
+2	1	3373	0	1	300000					Cured Ham
+2	1	3365	0	1	500000					Jadeite
 2	1	3366	0	1	10000000					B¹ch Ngäc
 2	1	3367	0	1	32000000					M¶nh bÝ ph­¬ng ngù chÕ
 2	1	3368	0	1	1000					TrÈm HuyÕt Liªn
@@ -2536,16 +2536,16 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 2	0	1034	0	1	100000					LuyÖn ®¬n ®éng
 2	0	1033	0	1	200000					Hoµng L¨ng MËt thÊt
 2	0	1035	0	1	200000					Ngò hµnh trËn
-2	0	1036	0	1	300000					Cuèi Sa m¹c
+2	0	1036	0	1	300000					End of the Desert
 2	1	3379	0	1	500000					Hép trang phôc r­íc ®uèc t¹m thêi
 0	102	8840	0	7	999000000		 			Huy Hoµng Chi Thñy
 0	102	8841	0	7	999000000		 			Vinh Dù Chi Thñy
 0	102	8842	0	8	999000000		 			Huy Hoµng Chi KÕ
-0	102	8843	0	8	999000000		 			Vinh Dù Chi KÕ
+0	102	8843	0	8	999000000		 			Honor Plan
 0	102	8844	0	9	999000000		 			Huy Hoµng QuËt Khëi
-0	102	8845	0	9	999000000		 			Vinh Dù QuËt Khëi
+0	102	8845	0	9	999000000		 			Glory Rise
 0	102	8846	0	10	999000000		 			Huy Hoµng
-0	102	8847	0	10	999000000		 			Vinh Dù
+0	102	8847	0	10	999000000		 			Glory
 0	103	8055	0	10	999000000					Thiªn Chi Viªm §Õ kh«i
 0	100	8055	0	10	999000000					Thiªn Chi Viªm §Õ gi¸p
 0	101	8055	0	10	999000000					Thiªn Chi Viªm §Õ trang
@@ -2577,28 +2577,28 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	102	3084	0	10	999000000					§¹i Liªu Nguyªn So¸i HiÖu Kú
 0	103	3008	0	10	999000000					Ngù Long Nguyªn So¸i ChiÕn Kh«i
 0	100	3008	0	10	999000000					Ngù Long Nguyªn So¸i ChiÕn Gi¸p
-0	101	3008	0	10	999000000					Ngù Long Nguyªn So¸i ChiÕn Trang
-0	102	3088	0	10	999000000					Ngù Long Nguyªn So¸i Hæ Phï
-0	102	3092	0	10	999000000					Ngù Long Nguyªn So¸i LÖnh Kú
-0	102	3096	0	10	999000000					Ngù Long Nguyªn So¸i HiÖu Phï
-0	102	3100	0	10	999000000					Ngù Long Nguyªn So¸i HiÖu Kú
+0	101	3008	0	10	999000000					Imperial Dragon Marshal War Garb
+0	102	3088	0	10	999000000					Imperial Dragon Marshal Tiger Talisman
+0	102	3092	0	10	999000000					Imperial Dragon Marshal Command Banner
+0	102	3096	0	10	999000000					Imperial Dragon Marshal Effect Talisman
+0	102	3100	0	10	999000000					Imperial Dragon Marshal Effect Banner
 0	103	3012	0	10	999000000					Chiªu Th¸nh Nguyªn So¸i Kh«i
 0	100	3012	0	10	999000000					Chiªu Th¸nh Nguyªn So¸i ChiÕn Gi¸p
-0	101	3012	0	10	999000000					Chiªu Th¸nh Nguyªn So¸i ChiÕnTrang
-0	102	3104	0	10	999000000					Chiªu Th¸nh Nguyªn So¸i Hæ Phï
-0	102	3108	0	10	999000000					Chiªu Th¸nh Nguyªn So¸i LÖnh Kú
-0	102	3112	0	10	999000000					Chiªu Th¸nh Nguyªn So¸i HiÖu Phï
-0	102	3116	0	10	999000000					Chiªu Th¸nh Nguyªn So¸i HiÖu Kú
+0	101	3012	0	10	999000000					Chieu Thanh Marshal Battle Robe
+0	102	3104	0	10	999000000					Chieu Thanh Marshal Tiger Tally
+0	102	3108	0	10	999000000					Chieu Thanh Marshal Command Banner
+0	102	3112	0	10	999000000					Chieu Thanh Marshal Insignia Tally
+0	102	3116	0	10	999000000					Chieu Thanh Marshal Insignia Banner
 2	0	1092	0	1	10000					Xe th¶o méc
-2	1	3390	0	1	500000					ThÎ gi¸ng sinh-H¹nh phóc
-2	1	3391	0	1	500000					ThÎ gi¸ng sinh-Vui mõng
-2	1	3392	0	1	500000					ThÎ gi¸ng sinh-Vui vÎ
+2	1	3390	0	1	500000					Nativity Card - Happiness
+2	1	3391	0	1	500000					Nativity Card - Joy
+2	1	3392	0	1	500000					Nativity Card - Cheer
 2	1	3393	0	1	500000					ThÎ Gi¸ng Sinh-h¨ng h¸i
-2	1	3394	0	1	500000					ThÎ gi¸ng sinh-May m¾n
-2	1	3395	0	1	500000					ThÎ gi¸ng sinh-Nh­ ý
-2	1	3396	0	1	500000					ThÎ gi¸ng sinh-Thanh v©n
+2	1	3394	0	1	500000					Nativity Card - Luck
+2	1	3395	0	1	500000					Nativity Card - As You Wish
+2	1	3396	0	1	500000					Nativity Card - Thanh Van
 2	1	3397	0	1	500000					ThÎ gi¸ng sinh-ThÇn tµi
-2	1	3398	0	1	500000					ThÎ gi¸ng sinh-Kháe m¹nh
+2	1	3398	0	1	500000					Nativity Card - Health
 2	1	3399	0	1	500000					ThÎ Gi¸ng Sinh-Hßa gia
 2	0	1106	0	1	15000000					ËÄ¸é·Ø¼®Ï»×Ó
 0	200	41	0	2	2400					Bao c«ng cô thu thËp
@@ -2613,14 +2613,14 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 2	2	16	0	2	20000					Da hæ
 2	2	18	0	3	30000					Da r¾n
 2	2	17	0	4	40000					Da c¸o
-2	2	46	0	5	50000					Da hæ tr¾ng
+2	2	46	0	5	50000					White tiger hide
 2	2	20	0	6	60000					Da gÊu
 2	9	1	0	1	10000					L«ng thá
-2	9	2	0	2	20000					Tµm t¬
-2	9	3	0	3	30000					T¬ Ngò S¾c
-2	2	52	0	4	40000					Lang chu t¬
+2	9	2	0	2	20000					Silkworm silk
+2	9	3	0	3	30000					Five-Color Silk
+2	2	52	0	4	40000					Wolf-spider silk
 2	2	53	0	5	50000					Hång t¬
-2	2	54	0	6	60000					Linh Chu t¬
+2	2	54	0	6	60000					Spirit Pearl Silk
 2	2	1	0	1	10000					Tinh ThiÕt
 2	2	2	0	2	20000					B¸ch LuyÖn C­¬ng
 2	8	5	0	3	30000					¤ kim th¹ch
@@ -2632,7 +2632,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 2	2	43	0	3	30000					Sam Méc
 2	2	44	0	4	40000					ThiÕt Méc
 2	2	45	0	5	50000					Ng« §ång
-2	2	9	0	6	60000					Trïng Méc
+2	2	9	0	6	60000					Heavy wood
 1	2	8	0	1	10000					Ba ®Ëu
 1	2	1	0	2	20000					Tµng Hång Hoa
 1	2	2	0	3	30000					C¸t C¸nh
@@ -2649,8 +2649,8 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 1	3	8	0	2	20000					Muèi giÕng
 1	3	24	0	3	30000					C¶i xanh
 1	3	6	0	4	40000					G¹o th¬m
-1	3	21	0	4	40000					M¨ng
-1	3	19	0	5	50000					Méc nhÜ
+1	3	21	0	4	40000					Bamboo shoot
+1	3	19	0	5	50000					Wood ear
 1	3	25	0	5	50000					BÝ xanh
 1	3	26	0	6	60000					S¬n d­îc
 1	3	29	0	6	60000					Muèi tinh chÊt
@@ -3159,7 +3159,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 2	6	5	0	1	200000					Kim Chung Tr¸o quyÕt
 2	6	6	0	1	300000					Nhiªn Méc §ao quyÕt
 2	6	7	0	1	50000					V« Th­êng C«n quyÕt
-2	6	8	0	1	200000					X¶ Th©n QuyÕt
+2	6	8	0	1	200000					Body Forsaking Art
 2	6	9	0	1	300000					§¹i Nh­ Lai quyÕt
 2	6	10	0	1	500000					§¹t Ma Vò quyÕt
 2	6	11	0	1	400000					YÕu quyÕt ThÊt B¶o ThÇn Chiªu T©m Ph¸p (Vâ T¨ng)
@@ -3169,7 +3169,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 2	6	15	0	1	500000					Vi §µ quyÕt
 2	6	16	0	1	50000					V¨n V©n quyÕt
 2	6	17	0	1	50000					La H¸n TrËn quyÕt
-2	6	18	0	1	50000					§¹i Tu Di Ch­ëng
+2	6	18	0	1	50000					Great Sumeru Palm
 2	6	19	0	1	500000					V« ¶nh quyÕt
 2	6	20	0	1	50000					Long Tr¶o Thñ quyÕt
 2	6	21	0	1	100000					YÕu quyÕt Phôc Hæ KhÝ C«ng (ThiÒn T¨ng)
@@ -3180,7 +3180,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 2	6	26	0	1	300000					La L«i quyÕt
 2	6	27	0	1	50000					Phôc Ma ThÇn quyÕt
 2	6	28	0	1	50000					V« T­íng quyÕt
-2	6	29	0	1	500000					S­ Tö Hèng
+2	6	29	0	1	500000					Lion's Roar
 2	6	30	0	1	400000					Minh Chó quyÕt
 2	6	31	0	1	50000					Kim Cang ChØ quyÕt
 2	6	32	0	1	100000					YÕu quyÕt ThuËt t¹o ¸m khÝ (§­êng M«n)
@@ -3201,7 +3201,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 2	6	47	0	1	100000					YÕu quyÕt Quan ¢m QuyÕt (Nga Mi PhËt Gia)
 2	6	48	0	1	300000					Nga My PhËt quyÕt
 2	6	49	0	1	500000					Ngäc N÷ KiÕm quyÕt
-2	6	50	0	1	50000					§é Nguyªn QuyÕt
+2	6	50	0	1	50000					Origin Crossing Art
 2	6	51	0	1	50000					PhËt Phæ quyÕt
 2	6	52	0	1	200000					Liªn Hoa quyÕt
 2	6	53	0	1	50000					Thanh Ph¹n quyÕt
@@ -3229,8 +3229,8 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 2	6	75	0	1	300000					Táa HÇu Thñ quyÕt
 2	6	76	0	1	50000					Tiªu Dao Du quyÕt
 2	6	77	0	1	300000					Lôc Hîp yÕu quyÕt
-2	6	78	0	1	500000					Tóy §iÖp
-2	6	79	0	1	50000					Tóy QuyÒn
+2	6	78	0	1	500000					Drunken Butterfly
+2	6	79	0	1	50000					Drunken Fist
 2	6	80	0	1	50000					YÕu quyÕt C¸i Bang C«n Ph¸p (¤ Y)
 2	6	81	0	1	100000					Khu Xµ quyÕt
 2	6	82	0	1	50000					KhÊt Th¶o quyÕt
@@ -3266,10 +3266,10 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 2	6	112	0	1	300000					ThÕ V©n Tung quyÕt
 2	6	113	0	1	300000					ThÊt Tinh TrËn
 2	6	114	0	1	500000					ThiÕu D­¬ng QuyÕt
-2	6	115	0	1	100000					ThiÕu ¢m QuyÕt
+2	6	115	0	1	100000					Lesser Yin Art
 2	6	116	0	1	50000					B¾c §Èu TrËn quyÕt
-2	6	117	0	1	200000					Tµn ¶nh QuyÕt
-2	6	118	0	1	200000					Cµn Kh«n QuyÕt
+2	6	117	0	1	200000					Fading Shadow Art
+2	6	118	0	1	200000					Universe Art
 2	6	119	0	1	100000					Th­îng Thanh C«ng quyÕt
 2	6	120	0	1	300000					YÕu quyÕt D­¬ng Gia Th­¬ng (Th­¬ng Kþ)
 2	6	121	0	1	100000					Ph¸ Phong Th­¬ng quyÕt
@@ -3295,31 +3295,31 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 2	6	141	0	1	400000					L­u TuyÖt TiÔn quyÕt
 2	6	142	0	1	300000					YÕu quyÕt Ngò §éc §¹o Ph¸p (Tµ HiÖp)
 2	6	143	0	1	300000					BÝ kiÕp DÉn Hån Chó
-2	6	144	0	1	300000					BÝ kiÕp Thao Thi ThuËt
-2	6	145	0	1	50000					BÝ kiÕp Thi §éc ThuËt
+2	6	144	0	1	300000					Thao Thi Thuat secret manual
+2	6	145	0	1	50000					Thi Doc Thuat secret manual
 2	6	146	0	1	50000					BÝ kiÕp Thi Béc §¹i Ph¸p
-2	6	147	0	1	50000					BÝ kiÕp TËp Thi Tµ KhÝ
-2	6	148	0	1	300000					BÝ kiÕp Ngù Thi ThuËt
+2	6	147	0	1	50000					Tap Thi Ta Khi secret manual
+2	6	148	0	1	300000					Ngu Thi Thuat secret manual
 2	6	149	0	1	50000					BÝ kiÕp V¹n §éc §o¹t MÖnh §ao
 2	6	150	0	1	200000					BÝ kiÕp ¢m Tµ HÊp Hån KhÝ
-2	6	151	0	1	50000					BÝ kiÕp Th«i Thi Tµ KhÝ
+2	6	151	0	1	50000					Thoi Thi Ta Khi secret manual
 2	6	152	0	1	50000					BÝ kiÕp Tµ Linh §¹i Ph¸p
 2	6	153	0	1	50000					BÝ kiÕp Tµ §éc C«ng
 2	6	154	0	1	50000					BÝ kiÕp Thi LiÖt Ma C«ng
 2	6	155	0	1	400000					YÕu quyÕt H¹ Cæ BÝ Ph­¬ng (Cæ S­)
-2	6	156	0	1	50000					BÝ kiÕp Phong Cæ
-2	6	157	0	1	300000					BÝ kiÕp D­ìng Cæ BÝ ThuËt
+2	6	156	0	1	50000					Phong Co secret manual
+2	6	157	0	1	300000					Duong Co Bi Thuat secret manual
 2	6	158	0	1	50000					BÝ kiÕp Cuång Phong Tr¶o
-2	6	159	0	1	50000					BÝ kiÕp §éc Cæ
+2	6	159	0	1	50000					Doc Co secret manual
 2	6	160	0	1	200000					BÝ kiÕp HuyÕt §Ønh C«ng
-2	6	161	0	1	50000					BÝ kiÕp HuyÕt Cæ
-2	6	162	0	1	300000					BÝ kiÕp H­¬ng Cæ
-2	6	163	0	1	50000					BÝ kiÕp Thi Cæ
-2	6	164	0	1	50000					BÝ kiÕp Yªu Cæ
+2	6	161	0	1	50000					Huyet Co secret manual
+2	6	162	0	1	300000					Huong Co secret manual
+2	6	163	0	1	50000					Thi Co secret manual
+2	6	164	0	1	50000					Yeu Co secret manual
 2	6	165	0	1	50000					BÝ kiÕp T©m Cæ
 2	6	166	0	1	50000					BÝ kiÕp V¹n Cæ Thùc Thiªn
-2	6	167	0	1	50000					BÝ kiÕp HuyÔn Cæ
-2	6	168	0	1	400000					BÝ kiÕp Tµm Cæ
+2	6	167	0	1	50000					Huyen Co secret manual
+2	6	168	0	1	400000					Tam Co secret manual
 2	6	169	0	1	2000000					YÕu quyÕt L«i TÕ (C«n L«n Thiªn S­)
 2	6	170	0	1	2000000					Yªu quyÕt Ph«ng TÕ
 2	6	171	0	1	2000000					Yªu quyÕt Thiªn L«i Phï
@@ -3376,10 +3376,10 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	12	2	0	1	2652					Méc Tiªu
 0	100	201	0	1	4000					Hµnh gi¶ phôc (ThiÕu L©m th­îng trang 1)
 0	100	202	0	1	4000					Hµnh Gi¶ phôc
-0	100	301	0	1	4000					Khæ Hµnh bµo
-0	100	302	0	1	4000					Khæ Hµnh bµo
-0	100	401	0	1	4000					Sa Di Phôc
-0	100	402	0	1	4000					Sa Di Phôc
+0	100	301	0	1	4000					Ascetic robe
+0	100	302	0	1	4000					Ascetic robe
+0	100	401	0	1	4000					Sramanera robe
+0	100	402	0	1	4000					Sramanera robe
 0	100	211	0	1	90000		150			Hçn nguyªn phôc (ThiÕu L©m th­îng trang 2)
 0	100	212	0	1	90000		150			Hçn Nguyªn phôc
 0	100	311	0	1	90000		150			ThiÒn Tu bµo
@@ -3387,29 +3387,29 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	100	411	0	1	90000		150			§Êu T¨ng phôc
 0	100	412	0	1	90000		150			§Êu T¨ng phôc
 0	103	211	0	1	90000		150			Hçn nguyªn m·o (ThiÕu L©m m·o 2)
-0	103	212	0	1	90000		150			Hçn Nguyªn m·o
-0	103	311	0	1	90000		150			ThiÒn Tu m·o
-0	103	312	0	1	90000		150			ThiÒn Tu m·o
-0	103	411	0	1	90000		150			§Êu T¨ng m·o
-0	103	412	0	1	90000		150			§Êu T¨ng m·o
+0	103	212	0	1	90000		150			Hunyuan Hat
+0	103	311	0	1	90000		150			Chan Cultivation Hat
+0	103	312	0	1	90000		150			Chan Cultivation Hat
+0	103	411	0	1	90000		150			Battle Monk Hat
+0	103	412	0	1	90000		150			Battle Monk Hat
 0	101	211	0	1	90000		150			Hçn nguyªn trang (ThiÕu L©m h¹ trang 2)
-0	101	212	0	1	90000		150			Hçn Nguyªn trang
+0	101	212	0	1	90000		150			Hunyuan Robe
 0	101	311	0	1	90000		150			ThiÒn Tu phôc
 0	101	312	0	1	90000		150			ThiÒn Tu phôc
 0	101	411	0	1	90000		150			§Êu T¨ng phôc
 0	101	412	0	1	90000		150			§Êu T¨ng phôc
 0	100	221	0	1			1000			Phôc ma kim cang kh¶i (ThiÕu L©m th­îng trang 3)
-0	100	222	0	1			1000			ChiÕn ý kh¶i gi¸p
-0	100	321	0	1			1000			ThiÒn TÞnh bµo
-0	100	322	0	1			1000			ThiÒn TÞnh bµo
-0	100	421	0	1			1000			§Èu KhÝ ChiÕn y
-0	100	422	0	1			1000			§Èu KhÝ ChiÕn y
+0	100	222	0	1			1000			Battle Will Armor
+0	100	321	0	1			1000			Meditation Robe
+0	100	322	0	1			1000			Meditation Robe
+0	100	421	0	1			1000			Fighting Spirit Battle Garment
+0	100	422	0	1			1000			Fighting Spirit Battle Garment
 0	3	221	0	1			1000			Phôc ma kim cang ®ao (ThiÕu L©m vò khÝ 3)
-0	3	222	0	1			1000			§¹t Ma Kim Cang_ChiÕn ý ®ao
+0	3	222	0	1			1000			Damo Vajra_Battle Will Saber
 0	5	221	0	1			1000			§¹t Ma Kim Cang_ChiÕn ý C«n
 0	5	222	0	1			1000			§¹t Ma Kim Cang_ChiÕn ý C«n
-0	8	321	0	1			1000			TruyÒn Kinh  ThiÒn TÞnh Tr­îng
-0	8	322	0	1			1000			TruyÒn Kinh  ThiÒn TÞnh Tr­îng
+0	8	321	0	1			1000			Sutra-Transmitting  Meditation Staff
+0	8	322	0	1			1000			Sutra-Transmitting  Meditation Staff
 0	0	421	0	1			1000			Hé Ph¸p La H¸n_§Êu KhÝ Thñ
 0	0	422	0	1			1000			Hé Ph¸p La H¸n_§Êu KhÝ Thñ
 0	100	601	0	1	4000					Trang kh¸ch phôc (§­êng M«n th­îng trang 1)
@@ -3421,33 +3421,33 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	100	613	0	1	90000		150			Hé VÖ phôc
 0	100	614	0	1	90000		150			Hé VÖ phôc
 0	103	611	0	1	90000		150			Hé vÖ m·o (§­êng M«n m·o 2)
-0	103	612	0	1	90000		150			Hé VÖ m·o
-0	103	613	0	1	90000		150			Hé VÖ m·o
-0	103	614	0	1	90000		150			Hé VÖ m·o
+0	103	612	0	1	90000		150			Guardian Hat
+0	103	613	0	1	90000		150			Guardian Hat
+0	103	614	0	1	90000		150			Guardian Hat
 0	101	611	0	1	90000		150			Hé vÖ trang (§­êng M«n h¹ trang 2)
 0	101	612	0	1	90000		150			Hé VÖ phôc
 0	101	613	0	1	90000		150			Hé VÖ phôc
 0	101	614	0	1	90000		150			Hé VÖ phôc
 0	100	621	0	1			1000			BÝ §éc-Èn bÝ phôc (§­êng M«n th­îng trang 3)
-0	100	622	0	1			1000			BÝ §éc y
-0	100	623	0	1			1000			BÝ §éc y
-0	100	624	0	1			1000			BÝ §éc y
+0	100	622	0	1			1000			Secret Poison Garment
+0	100	623	0	1			1000			Secret Poison Garment
+0	100	624	0	1			1000			Secret Poison Garment
 0	1	621	0	1			1000			BÝ §éc-Èn bÝ tr©m (§­êng M«n vò khÝ 3)
-0	1	622	0	1			1000			BÝ ®éc Ch©m
-0	1	623	0	1			1000			BÝ ®éc Ch©m
-0	1	624	0	1			1000			BÝ ®éc Ch©m
+0	1	622	0	1			1000			Secret Poison Needle
+0	1	623	0	1			1000			Secret Poison Needle
+0	1	624	0	1			1000			Secret Poison Needle
 0	100	801	0	1	4000					Thanh t©m tè y (Nga Mi th­îng trang 1)
 0	100	802	0	1	4000					Thanh T©m tè y
-0	100	901	0	1	4000					T­ Khóc tè y
-0	100	902	0	1	4000					T­ Khóc tè y
+0	100	901	0	1	4000					Zi Ku belt
+0	100	902	0	1	4000					Zi Ku belt
 0	100	811	0	1	90000		150			Th¸i Vò tè y (Nga Mi th­îng trang 2)
 0	100	812	0	1	90000		150			Th¸i Vò tè y
 0	100	911	0	1	90000		150			Ph¹n ¢m tè y
 0	100	912	0	1	90000		150			Ph¹n ¢m tè y
 0	103	811	0	1	90000		150			Th¸i vò søc (Nga Mi m·o 2)
 0	103	812	0	1	90000		150			Th¸i Vò
-0	103	911	0	1	90000		150			Ph¹m ¢m
-0	103	912	0	1	90000		150			Ph¹m ¢m
+0	103	911	0	1	90000		150			Sanskrit Sound
+0	103	912	0	1	90000		150			Sanskrit Sound
 0	101	811	0	1	90000		150			Thai vò tó trang (Nga Mi h¹ trang 1)
 0	101	812	0	1	90000		150			Th¸i Vò Tó phôc
 0	101	911	0	1	90000		150			Ph¹n ¢m phôc
@@ -3461,13 +3461,13 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	10	921	0	1			1000			H¶i NguyÖt Sø Ph¸p ¢m CÇm
 0	10	922	0	1			1000			H¶i NguyÖt Sø Ph¸p ¢m CÇm
 0	100	1101	0	1	4000		0			ChÊp b¸t th­êng (C¸i Bang th­îng trang 1)
-0	100	1102	0	1	4000		0			ChÊp B¸t Th­êng
-0	100	1103	0	1	4000		0			ChÊp B¸t Th­êng
-0	100	1104	0	1	4000		0			ChÊp B¸t Th­êng
-0	100	1201	0	1	4000		0			KhiÕu Hoa y
-0	100	1202	0	1	4000		0			KhiÕu Hoa y
-0	100	1203	0	1	4000		0			KhiÕu Hoa y
-0	100	1204	0	1	4000		0			KhiÕu Hoa y
+0	100	1102	0	1	4000		0			Zhi Ba robe
+0	100	1103	0	1	4000		0			Zhi Ba robe
+0	100	1104	0	1	4000		0			Zhi Ba robe
+0	100	1201	0	1	4000		0			Xiao Hua robe
+0	100	1202	0	1	4000		0			Xiao Hua robe
+0	100	1203	0	1	4000		0			Xiao Hua robe
+0	100	1204	0	1	4000		0			Xiao Hua robe
 0	100	1111	0	1	90000		150			Tõ Hiªn Th­êng (C¸i Bang th­îng trang 2)
 0	100	1112	0	1	90000		150			Trõ Gian Th­êng
 0	100	1113	0	1	90000		150			Trõ Gian Th­êng
@@ -3477,13 +3477,13 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	100	1213	0	1	90000		150			Trõng ¸c Th­êng
 0	100	1214	0	1	90000		150			Trõng ¸c Th­êng
 0	103	1111	0	1	90000		150			Tõ Hiªn C©n (C¸i Bang m·o 2)
-0	103	1112	0	1	90000		150			Trõ Gian c©n
-0	103	1113	0	1	90000		150			Trõ Gian c©n
-0	103	1114	0	1	90000		150			Trõ Gian c©n
-0	103	1211	0	1	90000		150			Trõng ¸c c©n
-0	103	1212	0	1	90000		150			Trõng ¸c c©n
-0	103	1213	0	1	90000		150			Trõng ¸c c©n
-0	103	1214	0	1	90000		150			Trõng ¸c c©n
+0	103	1112	0	1	90000		150			Vice Removal Band
+0	103	1113	0	1	90000		150			Vice Removal Band
+0	103	1114	0	1	90000		150			Vice Removal Band
+0	103	1211	0	1	90000		150			Evil Punishment Band
+0	103	1212	0	1	90000		150			Evil Punishment Band
+0	103	1213	0	1	90000		150			Evil Punishment Band
+0	103	1214	0	1	90000		150			Evil Punishment Band
 0	101	1111	0	1	90000		150			Tõ Hiªn Trang (C¸i Bang h¹ trang 2)
 0	101	1112	0	1	90000		150			Trõ Gian phôc
 0	101	1113	0	1	90000		150			Trõ Gian phôc
@@ -3493,29 +3493,29 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	101	1213	0	1	90000		150			Trõng ¸c phôc
 0	101	1214	0	1	90000		150			Trõng ¸c phôc
 0	100	1121	0	1			1000			Tø H¶i-Hµo khÝ phôc (C¸i Bang th­îng trang3)
-0	100	1122	0	1			1000			Tø H¶i y
-0	100	1123	0	1			1000			Tø H¶i y
-0	100	1124	0	1			1000			Tø H¶i y
-0	100	1221	0	1			1000			Tô NghÜa Th­êng
-0	100	1222	0	1			1000			Tô NghÜa Th­êng
-0	100	1223	0	1			1000			Tô NghÜa Th­êng
-0	100	1224	0	1			1000			Tô NghÜa Th­êng
+0	100	1122	0	1			1000			Four Seas Garment
+0	100	1123	0	1			1000			Four Seas Garment
+0	100	1124	0	1			1000			Four Seas Garment
+0	100	1221	0	1			1000			To Nghia Thuong
+0	100	1222	0	1			1000			To Nghia Thuong
+0	100	1223	0	1			1000			To Nghia Thuong
+0	100	1224	0	1			1000			To Nghia Thuong
 0	0	1121	0	1			1000			Tø H¶i-Hµo khÝ thñ (C¸i Bang vò khÝ 3)
 0	0	1122	0	1			1000			Tø H¶i Y phôc
 0	0	1123	0	1			1000			Tø H¶i Y phôc
 0	0	1124	0	1			1000			Tø H¶i Y phôc
-0	5	1221	0	1			1000			Tô NghÜa Bæng
-0	5	1222	0	1			1000			Tô NghÜa Bæng
-0	5	1223	0	1			1000			Tô NghÜa Bæng
-0	5	1224	0	1			1000			Tô NghÜa Bæng
+0	5	1221	0	1			1000			Tu Nghia Bong
+0	5	1222	0	1			1000			Tu Nghia Bong
+0	5	1223	0	1			1000			Tu Nghia Bong
+0	5	1224	0	1			1000			Tu Nghia Bong
 0	100	1401	0	1	4000					Thanh tu bµo (Vâ §ang th­îng trang 1)
-0	100	1402	0	1	4000					Thanh Tu bµo
-0	100	1403	0	1	4000					Thanh Tu bµo
-0	100	1404	0	1	4000					Thanh Tu bµo
-0	100	1501	0	1	4000					Thanh Phong bµo
-0	100	1502	0	1	4000					Thanh Phong bµo
-0	100	1503	0	1	4000					Thanh Phong bµo
-0	100	1504	0	1	4000					Thanh Phong bµo
+0	100	1402	0	1	4000					Qing Tu gown
+0	100	1403	0	1	4000					Qing Tu gown
+0	100	1404	0	1	4000					Qing Tu gown
+0	100	1501	0	1	4000					Qing Feng gown
+0	100	1502	0	1	4000					Qing Feng gown
+0	100	1503	0	1	4000					Qing Feng gown
+0	100	1504	0	1	4000					Qing Feng gown
 0	100	1411	0	1	90000		150			NhËp quan ph¸p bµo (Vâ §ang th­îng trang 2)
 0	100	1412	0	1	90000		150			NhËp Qu¸n ph¸p bµo
 0	100	1413	0	1	90000		150			NhËp Qu¸n ph¸p bµo
@@ -3525,9 +3525,9 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	100	1513	0	1	90000		150			ThiÓu D­¬ng Th­êng
 0	100	1514	0	1	90000		150			ThiÓu D­¬ng Th­êng
 0	103	1411	0	1	90000		150			NhËp quan ph¸p c©n (Vâ §ang m·o 2)
-0	103	1412	0	1	90000		150			NhËp ThÊt c©n
-0	103	1413	0	1	90000		150			NhËp ThÊt c©n
-0	103	1414	0	1	90000		150			NhËp ThÊt c©n
+0	103	1412	0	1	90000		150			Inner Chamber Band
+0	103	1413	0	1	90000		150			Inner Chamber Band
+0	103	1414	0	1	90000		150			Inner Chamber Band
 0	103	1511	0	1	90000		150			ThiÓu D­¬ng c©n
 0	103	1512	0	1	90000		150			ThiÓu D­¬ng c©n
 0	103	1513	0	1	90000		150			ThiÓu D­¬ng c©n
@@ -3541,9 +3541,9 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	101	1513	0	1	90000		150			ThiÓu D­¬ng phôc
 0	101	1514	0	1	90000		150			ThiÓu D­¬ng phôc
 0	100	1421	0	1			1000			V« Ng·-Tø T­îng ph¸p bµo (Vâ §ang th­îng trang 3)
-0	100	1422	0	1			1000			Tø T­îng ph¸p bµo
-0	100	1423	0	1			1000			Tø T­îng ph¸p bµo
-0	100	1424	0	1			1000			Tø T­îng ph¸p bµo
+0	100	1422	0	1			1000			Four Symbols Dharma Robe
+0	100	1423	0	1			1000			Four Symbols Dharma Robe
+0	100	1424	0	1			1000			Four Symbols Dharma Robe
 0	100	1521	0	1			1000			Linh Phong phôc
 0	100	1522	0	1			1000			Linh Phong phôc
 0	100	1523	0	1			1000			Linh Phong phôc
@@ -3552,18 +3552,18 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	2	1422	0	1			1000			Tø T­îng Ph¸p KiÕm
 0	2	1423	0	1			1000			Tø T­îng Ph¸p KiÕm
 0	2	1424	0	1			1000			Tø T­îng Ph¸p KiÕm
-0	9	1521	0	1			1000			Linh Phong ThÝch
-0	9	1522	0	1			1000			Linh Phong ThÝch
-0	9	1523	0	1			1000			Linh Phong ThÝch
-0	9	1524	0	1			1000			Linh Phong ThÝch
+0	9	1521	0	1			1000			Linh Phong Thich
+0	9	1522	0	1			1000			Linh Phong Thich
+0	9	1523	0	1			1000			Linh Phong Thich
+0	9	1524	0	1			1000			Linh Phong Thich
 0	100	1701	0	1	4000					Khinh kþ gi¸p (D­¬n M«n th­îng trang 1)
-0	100	1702	0	1	4000					Khinh Kþ gi¸p
-0	100	1703	0	1	4000					Khinh Kþ gi¸p
-0	100	1704	0	1	4000					Khinh Kþ gi¸p
-0	100	1801	0	1	4000					Nâ thñ gi¸p
-0	100	1802	0	1	4000					Nâ thñ gi¸p
-0	100	1803	0	1	4000					Nâ thñ gi¸p
-0	100	1804	0	1	4000					Nâ thñ gi¸p
+0	100	1702	0	1	4000					Light Cavalry armor
+0	100	1703	0	1	4000					Light Cavalry armor
+0	100	1704	0	1	4000					Light Cavalry armor
+0	100	1801	0	1	4000					Crossbow guard armor
+0	100	1802	0	1	4000					Crossbow guard armor
+0	100	1803	0	1	4000					Crossbow guard armor
+0	100	1804	0	1	4000					Crossbow guard armor
 0	100	1711	0	1	90000		150			HiÖu óy thiÕt gi¸p (D­¬n M«n th­îng trang 2)
 0	100	1712	0	1	90000		150			HiÖu óy thiÕt gi¸p
 0	100	1713	0	1	90000		150			HiÖu óy thiÕt gi¸p
@@ -3573,13 +3573,13 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	100	1813	0	1	90000		150			§« óy thiÕt gi¸p
 0	100	1814	0	1	90000		150			§« óy thiÕt gi¸p
 0	103	1711	0	1	90000		150			HiÖu óy thiÕt kh«i (D­¬n M«n m·o 2)
-0	103	1712	0	1	90000		150			HiÖu óy kh«i
-0	103	1713	0	1	90000		150			HiÖu óy kh«i
-0	103	1714	0	1	90000		150			HiÖu óy kh«i
-0	103	1811	0	1	90000		150			§« óy kh«i
-0	103	1812	0	1	90000		150			§« óy kh«i
-0	103	1813	0	1	90000		150			§« óy kh«i
-0	103	1814	0	1	90000		150			§« óy kh«i
+0	103	1712	0	1	90000		150			Lieutenant Helm
+0	103	1713	0	1	90000		150			Lieutenant Helm
+0	103	1714	0	1	90000		150			Lieutenant Helm
+0	103	1811	0	1	90000		150			Commander Helm
+0	103	1812	0	1	90000		150			Commander Helm
+0	103	1813	0	1	90000		150			Commander Helm
+0	103	1814	0	1	90000		150			Commander Helm
 0	101	1711	0	1	90000		150			HiÖu óy thiÕt trang (D­¬n M«n h¹ trang 2)
 0	101	1712	0	1	90000		150			HiÖu óy ThiÕt phôc
 0	101	1713	0	1	90000		150			HiÖu óy ThiÕt phôc
@@ -3589,13 +3589,13 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	101	1813	0	1	90000		150			§« óy ThiÕt phôc
 0	101	1814	0	1	90000		150			§« óy ThiÕt phôc
 0	100	1721	0	1			1000			PhÊn Vâ-Tinh kh¶i (D­¬n M«n th­îng trang 3)
-0	100	1722	0	1			1000			Tinh Kh¶i gi¸p
-0	100	1723	0	1			1000			Tinh Kh¶i gi¸p
-0	100	1724	0	1			1000			Tinh Kh¶i gi¸p
-0	100	1821	0	1			1000			PhÊn Uy T­íng Qu©n kh¶i gi¸p
-0	100	1822	0	1			1000			PhÊn Uy T­íng Qu©n kh¶i gi¸p
-0	100	1823	0	1			1000			PhÊn Uy T­íng Qu©n kh¶i gi¸p
-0	100	1824	0	1			1000			PhÊn Uy T­íng Qu©n kh¶i gi¸p
+0	100	1722	0	1			1000			Essence Armor
+0	100	1723	0	1			1000			Essence Armor
+0	100	1724	0	1			1000			Essence Armor
+0	100	1821	0	1			1000			Awe-Rousing General Armor
+0	100	1822	0	1			1000			Awe-Rousing General Armor
+0	100	1823	0	1			1000			Awe-Rousing General Armor
+0	100	1824	0	1			1000			Awe-Rousing General Armor
 0	6	1721	0	1			1000			PhÊn Vâ-ThÊu gi¸p th­¬ng (D­¬n M«n vò khÝ 3)
 0	6	1722	0	1			1000			ThÊu Gi¸p Th­¬ng
 0	6	1723	0	1			1000			ThÊu Gi¸p Th­¬ng
@@ -3605,13 +3605,13 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	4	1823	0	1			1000			Xuyªn Gi¸p cung
 0	4	1824	0	1			1000			Xuyªn Gi¸p cung
 0	100	2001	0	1	4000					§o¹t ph¸ch y (Ngò §éc th­îng trang 1)
-0	100	2002	0	1	4000					§o¹t Ph¸ch y
-0	100	2003	0	1	4000					§o¹t Ph¸ch y
-0	100	2004	0	1	4000					§o¹t Ph¸ch y
-0	100	2101	0	1	4000					§éc Tµm Y
-0	100	2102	0	1	4000					§éc Tµm Y
-0	100	2103	0	1	4000					§éc Tµm Y
-0	100	2104	0	1	4000					§éc Tµm Y
+0	100	2002	0	1	4000					Duo Po robe
+0	100	2003	0	1	4000					Duo Po robe
+0	100	2004	0	1	4000					Duo Po robe
+0	100	2101	0	1	4000					Du Can robe
+0	100	2102	0	1	4000					Du Can robe
+0	100	2103	0	1	4000					Du Can robe
+0	100	2104	0	1	4000					Du Can robe
 0	100	2011	0	1	90000		150			Th«i mÖnh y (Ngò §éc th­îng trang 2)
 0	100	2012	0	1	90000		150			Th«i MÖnh y
 0	100	2013	0	1	90000		150			Th«i MÖnh y
@@ -3621,9 +3621,9 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	100	2113	0	1	90000		150			Thùc T©m Y
 0	100	2114	0	1	90000		150			Thùc T©m Y
 0	103	2011	0	1	90000		150			Th«i mÖnh diÖn (Ngò §éc m·o 2)
-0	103	2012	0	1	90000		150			Th«i MÖnh diÖn
-0	103	2013	0	1	90000		150			Th«i MÖnh diÖn
-0	103	2014	0	1	90000		150			Th«i MÖnh diÖn
+0	103	2012	0	1	90000		150			Life-Reaper Mask
+0	103	2013	0	1	90000		150			Life-Reaper Mask
+0	103	2014	0	1	90000		150			Life-Reaper Mask
 0	103	2111	0	1	90000		150			Thùc T©m diÖn
 0	103	2112	0	1	90000		150			Thùc T©m diÖn
 0	103	2113	0	1	90000		150			Thùc T©m diÖn
@@ -3637,17 +3637,17 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	101	2113	0	1	90000		150			Thùc T©m phôc
 0	101	2114	0	1	90000		150			Thùc T©m phôc
 0	100	2021	0	1			1000			H¾c V« Th­êng-M·nh y (Ngò §éc th­îng trang 3)
-0	100	2022	0	1			1000			H¾c V« Th­êng M·nh §éc y
-0	100	2023	0	1			1000			H¾c V« Th­êng M·nh §éc y
-0	100	2024	0	1			1000			H¾c V« Th­êng M·nh §éc y
+0	100	2022	0	1			1000			Black Impermanence Fierce Poison Garment
+0	100	2023	0	1			1000			Black Impermanence Fierce Poison Garment
+0	100	2024	0	1			1000			Black Impermanence Fierce Poison Garment
 0	100	2121	0	1			1000			B¹ch V« Th­êng Ngôy §éc Y
 0	100	2122	0	1			1000			B¹ch V« Th­êng Ngôy §éc Y
 0	100	2123	0	1			1000			B¹ch V« Th­êng Ngôy §éc Y
 0	100	2124	0	1			1000			B¹ch V« Th­êng Ngôy §éc Y
 0	7	2021	0	1			1000			H¾c V« Th­êng-M·nh ®ao (Ngò §éc vu khÝ 3)
-0	7	2022	0	1			1000			H¾c V« Th­êng M·nh §éc ®ao
-0	7	2023	0	1			1000			H¾c V« Th­êng M·nh §éc ®ao
-0	7	2024	0	1			1000			H¾c V« Th­êng M·nh §éc ®ao
+0	7	2022	0	1			1000			Black Impermanence Fierce Poison Saber
+0	7	2023	0	1			1000			Black Impermanence Fierce Poison Saber
+0	7	2024	0	1			1000			Black Impermanence Fierce Poison Saber
 0	11	2121	0	1			1000			B¹ch V« Th­êng Quû §éc Tr¶o
 0	11	2122	0	1			1000			B¹ch V« Th­êng Quû §éc Tr¶o
 0	11	2123	0	1			1000			B¹ch V« Th­êng Quû §éc Tr¶o
@@ -3660,21 +3660,21 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	105	2	0	1	100000					Hoµng T«ng m·
 0	105	3	0	1	100000					B¹ch T«ng m·
 0	105	4	0	1	100000					H¾c T«ng m·
-0	105	5	0	1	1000000					XÝch Ký
+0	105	5	0	1	1000000					Chiji
 0	105	6	0	1	1000000					Hoµng Ký
 0	105	7	0	1	1000000					B¹ch Ký
 0	105	8	0	1	1000000					H¾c Ký
 0	105	9	0	1	10000000					§Þch L­
 0	105	10	0	1	10000000					Tr¶o Hoµng Phi §iÖn
 0	105	11	0	1	10000000					TuyÖt ¶nh
-0	105	12	0	1	10000000					XÝch Thè
+0	105	12	0	1	10000000					Red Hare
 0	105	13	0	1	10000000					¤ §Ò §¹p TuyÕt
 0	105	14	0	1	10000000					ChiÕu D¹ Ngäc S­ Tö
 0	105	15	0	1	10000000					Kim Gi¸p B¹ch Dùc
 0	105	16	0	1	100000000					Kim Gi¸p ¤ Chuy
 0	111	1	0	1	100000000					Lôc §¹i Long Ch©u
-0	111	2	0	1	100000000					Niªn thó
-0	111	3	0	1	100000000					TuÇn Léc
+0	111	2	0	1	100000000					Year Beast
+0	111	3	0	1	100000000					Tuan Loc
 2	95	35	0	1	1000		30			Thiªn S­ LÖnh 1
 2	95	36	0	1	10000		120			Thiªn S­ LÖnh 2
 2	95	37	0	1	1000		30			B¸ch Hoa LÖnh 1
@@ -3730,7 +3730,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 2	1	556	0	1	300000					Tói kÑo
 2	1	538	0	1	1000000					Hoµng Kim §¹i Hång Bao (trèng)
 2	1	536	0	1	300000					Tö Kim Hång Bao (trèng)
-2	1	554	0	1	300000					Ph¸o hoa
+2	1	554	0	1	300000					Fireworks
 2	1	558	0	1	200000					Bao ph¸o
 2	1	557	0	1	900000					H«n kh¸nh lÔ hoa bao
 2	1	555	0	1	300000					XuÊt hån qu¶
@@ -3755,7 +3755,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	108	73	0	1	10000					ThiÒn §Þnh Ph¸p Bµo (ThiÕu L©m)
 0	109	73	0	1	10000					T¨ng Ca Gia
 0	108	77	0	1	10000					TuÖ §Þnh Giíi C« (ThiÕu L©m)
-0	109	77	0	1	10000					Sa Di Phôc
+0	109	77	0	1	10000					Sramanera robe
 0	108	74	0	1	10000					Thanh Phong Qu¸n (Vâ §ang)
 0	109	74	0	1	10000					B¸t Qu¸i §¹o y
 0	108	78	0	1	10000					Minh NguyÖt C©n (Vâ §ang)
@@ -3816,7 +3816,7 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	109	536	0	1	10000					L­u Ly Y
 0	108	537	0	1	10000					C¬ Hoa C©n (Minh Gi¸o)
 0	109	537	0	1	10000					Háa V©n Y
-2	1	2652	0	1	1500000					XÝch ThiÕt Tinh
+2	1	2652	0	1	1500000					Red Iron Essence
 2	1	547	0	1	300000					ThiÖp mêi
 2	1	508	0	1	1000000					Hång bao
 0	103	8013	0	10	999000000					Th¸i thó ChiÕn kh«i
@@ -3853,9 +3853,9 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	0	8873	0	8	999000000					Quy L©n Hé Thñ
 0	5	8899	0	8	999000000					TrÊn Ng¹o C«n
 0	2	8882	0	8	999000000					ThuÇn Phong KiÕm
-0	9	8911	0	8	999000000					Tinh §Èu ChuyÓn Bót
+0	9	8911	0	8	999000000					Star Dipper Rotating Brush
 0	6	8902	0	8	999000000					Ph¸ Qu©n TrËn Th­¬ng
-0	4	8896	0	8	999000000					Truy MÖnh Cung
+0	4	8896	0	8	999000000					Life-Chasing Bow
 0	7	8905	0	8	999000000					ThiÖp Cèt HuyÕt §ao
 0	11	8920	0	8	999000000					LuyÖn Hån HuyÕt Tr¶o
 0	2	8883	0	8	999000000					Ngù Thiªn Phong KiÕm
@@ -3879,16 +3879,16 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	0	8875	0	8	999000000					Tinh Kh¾c-Quy L©n Hé Thñ
 0	5	8900	0	8	999000000					Tinh Kh¾c-TrÊn Ng¹o C«n
 0	2	8885	0	8	999000000					Tinh Kh¾c-ThuÇn Phong KiÕm
-0	9	8913	0	8	999000000					Tinh Kh¾c-Tinh §Èu ChuyÓn Bót
+0	9	8913	0	8	999000000					Tinh Khac-Tinh Dau Chuyen Brush
 0	6	8903	0	8	999000000					Tinh Kh¾c-Ph¸ Qu©n TrËn Th­¬ng
-0	4	8897	0	8	999000000					Tinh Kh¾c-Truy MÖnh Cung
+0	4	8897	0	8	999000000					Tinh Khac-Truy Menh Bow
 0	7	8906	0	8	999000000					Tinh Kh¾c-ThiÖp Cèt HuyÕt §ao
 0	11	8922	0	8	999000000					Tinh Kh¾c-LuyÖn Hån HuyÕt Tr¶o
 0	2	8886	0	8	999000000					Tinh Kh¾c-Ngù Thiªn Phong KiÕm
 0	3	8893	0	8	999000000					Tinh Kh¾c-ThÇn DiÖm Thiªn §ao
 0	9	8914	0	8	999000000					Tinh Kh¾c-ThÇn Phong Ph¸n Bót
 0	11	8923	0	8	999000000					Tinh Kh¾c-ThÇn Linh Chó Tr¶o
-0	13	8930	0	8	999000000					Tinh Kh¾c-Linh Lung Chi
+0	13	8930	0	8	999000000					Tinh Khac-Linh Lung Chi
 0	12	8927	0	8	999000000					Tinh Kh¾c-Cöu Tiªu S¸o
 0	102	3120	0	8	999000000					Kim Ngäc
 0	102	3121	0	8	999000000					HuyÒn Th¹ch Kim Ngäc
@@ -3926,11 +3926,11 @@ C¸c lo¹i ®¹o cô	§¹o cô cô thÓ	Ph©n lo¹i chi tiÕt	Thuéc tÝnh ngò hµnh	CÊp	Ng©n l­
 0	100	3037	0	9	999000000					Thiªn NghÜa-Cöu ¢m Thñy Y
 0	101	3034	0	9	999000000					Thiªn NghÜa-Cöu D­¬ng Long Trang
 0	101	3037	0	9	999000000					Thiªn NghÜa-Cöu ¢m Phông Trang
-0	103	3056	0	9	999000000					Long §»ng Tø H¶i Qu¸n
+0	103	3056	0	9	999000000					Dragon Soaring Four Seas Pass
 0	103	3060	0	9	999000000					Phông Vò Cöu Thiªn Qu¸n
-0	100	3056	0	9	999000000					Long §»ng Tø H¶i Y
+0	100	3056	0	9	999000000					Long Dang Tu Hai Robe
 0	100	3060	0	9	999000000					Phông Vò Cöu Thiªn Y
-0	101	3056	0	9	999000000					Long §»ng Tø H¶i Trang
+0	101	3056	0	9	999000000					Long Dang Tu Hai Greaves
 0	3	8932	0	9	999000000					Cöu Ch©u-L­u Ly Giíi §ao
 0	0	8933	0	9	999000000					Cöu Ch©u-L«i ¢m Nang Thñ
 0	8	8934	0	9	999000000					Cöu Ch©u-Kinh L«i ThiÒn Tr­îng

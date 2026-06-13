@@ -10,7 +10,7 @@ tStage0 = {
 	},
 	resetPos = {1644, 3257},
 	npcMod = {
-		{"TuÇn La L©u §Şa", "L©u La Th¸m Tö"},
+		{"TuÇn La L©u §Şa", "Tower Patrol Scout"},
 	},
 }
 
@@ -54,7 +54,7 @@ function tStage0:onTimer(nStep)
 	end
 	local stepRun = GetMissionV(MV_STEP_XX_RUN)
 	if stepRun > 0 and nStep - stepRun == 5 then
-		local npcIdx = findNpc("L©u La Th¸m Tö");
+		local npcIdx = findNpc("Tower Patrol Scout");
 		self:onNpcDeath(npcIdx, 0);
 	end
 	if nStep >= self.stepLimit then
@@ -69,11 +69,11 @@ function tStage0:onTalk()
 		Talk(1, "", "Hõm! H¹ng ng­êi nh­ ng­¬i còng ®Õn ®©y ®Ó nãi chuyÖn víi L·o Gia ta sao! Noi th¸nh ®Şa nµy ®¸m ng­êi c¸c ng­¬i cßn d¸m ë l¹i ®©y, cßn kh«ng cót ®i th× ®õng tr¸ch ta ®éc ¸c!");
 		return
 	end
-	Say(format("<color=green> Thiªn ¢m Gi¸o L©u La cña TuÇn La <color>: ¸i chµ, %s nµy tr«ng còng rÊt ®­îc ®Êy? §em ®i cho Cung Chñ ¾t cã träng th­ëng, ha ha ha !", ((GetSex() == 1 and "TiÓu Ca") or "TiÓu TØ")),
+	Say(format("<color=green> Thiªn ¢m Gi¸o L©u La cña TuÇn La <color>: ¸i chµ, %s nµy tr«ng còng rÊt ®­îc ®Êy? §em ®i cho Cung Chñ ¾t cã träng th­ëng, ha ha ha !", ((GetSex() == 1 and "Young Brother") or "Young Sister")),
 		2,
 		--"´òÉÍÄã5¸öÍ¨ÌìÁî£¬´øÎÒÈ¥´óµî/tStage0_speEnter",
 		"Cã m¾t kh«ng trßng, tiÕp chiªu ®©y!/tStage0_norEnter",
-		"Th¨m dß tin tøc/tStage0_info");
+		"Gather information/tStage0_info");
 end
 
 function tStage0_speEnter()

@@ -13,23 +13,23 @@ function OnUse(goods_index)
 	)	
 end
 function chongk_att_route(conf_diff)
-	local way_name = {"ThiÕu L©m","Vâ §ang","Nga My","C¸i Bang","§­êng M«n","D­¬ng M«n","Ngò §éc"}
+	local way_name = {"Shaolin","Wudang","Nga My","Beggars' Sect","§­êng M«n","D­¬ng M«n","Five Poisons"}
 	local body_dialog = {}
 	if conf_diff ~= 1 and conf_diff ~= 3 then
-		body_dialog[1] = "Muèn"..way_name[conf_diff].."Trang bÞ Tr­êng Kh«ng-nam tiªu chuÈn/#changk_add(1,"..conf_diff..")"
-		body_dialog[2] = "Muèn"..way_name[conf_diff].."Trang bÞ Tr­êng Kh«ng-nam kh«i ng«/#changk_add(2,"..conf_diff..")"
-		body_dialog[3] = "Muèn"..way_name[conf_diff].."Trang bÞ Tr­êng Kh«ng-KiÒu n÷/#changk_add(4,"..conf_diff..")"
-		body_dialog[4] = "Muèn"..way_name[conf_diff].."Trang bÞ Tr­êng Kh«ng-n÷ gîi c¶m/#changk_add(3,"..conf_diff..")"
+		body_dialog[1] = "Want"..way_name[conf_diff].."Trang bÞ Tr­êng Kh«ng-nam tiªu chuÈn/#changk_add(1,"..conf_diff..")"
+		body_dialog[2] = "Want"..way_name[conf_diff].."Trang bÞ Tr­êng Kh«ng-nam kh«i ng«/#changk_add(2,"..conf_diff..")"
+		body_dialog[3] = "Want"..way_name[conf_diff].."Trang bÞ Tr­êng Kh«ng-KiÒu n÷/#changk_add(4,"..conf_diff..")"
+		body_dialog[4] = "Want"..way_name[conf_diff].."Trang bÞ Tr­êng Kh«ng-n÷ gîi c¶m/#changk_add(3,"..conf_diff..")"
 		body_dialog[5] = "Ta muèn chän l¹i m«n ph¸i/#OnUse(0)"
 		body_dialog[6] = "§Ó ta suy nghÜ l¹i/end_dialog"
 	elseif conf_diff == 1 then
-		body_dialog[1] = "Muèn"..way_name[conf_diff].."Trang bÞ Tr­êng Kh«ng-nam tiªu chuÈn/#changk_add(1,"..conf_diff..")"
-		body_dialog[2] = "Muèn"..way_name[conf_diff].."Trang bÞ Tr­êng Kh«ng-nam kh«i ng«/#changk_add(2,"..conf_diff..")"
+		body_dialog[1] = "Want"..way_name[conf_diff].."Trang bÞ Tr­êng Kh«ng-nam tiªu chuÈn/#changk_add(1,"..conf_diff..")"
+		body_dialog[2] = "Want"..way_name[conf_diff].."Trang bÞ Tr­êng Kh«ng-nam kh«i ng«/#changk_add(2,"..conf_diff..")"
 		body_dialog[3] = "Ta muèn chän l¹i m«n ph¸i/#OnUse(0)"
 		body_dialog[4] = "§Ó ta suy nghÜ l¹i/end_dialog"	
 	elseif conf_diff == 3 then
-		body_dialog[1] = "Muèn"..way_name[conf_diff].."Trang bÞ Tr­êng Kh«ng-KiÒu n÷/#changk_add(2,"..conf_diff..")"
-		body_dialog[2] = "Muèn"..way_name[conf_diff].."Trang bÞ Tr­êng Kh«ng-n÷ gîi c¶m/#changk_add(1,"..conf_diff..")"
+		body_dialog[1] = "Want"..way_name[conf_diff].."Trang bÞ Tr­êng Kh«ng-KiÒu n÷/#changk_add(2,"..conf_diff..")"
+		body_dialog[2] = "Want"..way_name[conf_diff].."Trang bÞ Tr­êng Kh«ng-n÷ gîi c¶m/#changk_add(1,"..conf_diff..")"
 		body_dialog[3] = "Ta muèn chän l¹i m«n ph¸i/#OnUse(0)"
 		body_dialog[4] = "§Ó ta suy nghÜ l¹i/end_dialog"	
 	end

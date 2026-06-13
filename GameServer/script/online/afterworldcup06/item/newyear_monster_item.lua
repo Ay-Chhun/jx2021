@@ -6,7 +6,7 @@ function OnUse()
 		return 0;
 	end;
 	local selTab = {
-				"§óng vËy!/confirm",
+				"That's right!/confirm",
 				"Sau nµy sö dông tiÕp/nothing",
 				}
 	Say("B¹n x¸c nhËn muèn dïng TiÓu Niªn Thó Phï? Sau khi nhÊn x¸c nhËn B¸ch BiÕn TiÓu ThÇn Th«ng hoÆc TiÓu Niªn Thó cña b¹n sÏ mÊt ®i.",getn(selTab),selTab);

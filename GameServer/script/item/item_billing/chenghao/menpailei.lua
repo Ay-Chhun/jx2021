@@ -6,24 +6,24 @@ tTab_chu =
 {
 	["index"] = 1,
 --ÎïÆ·´óÀà£¬¸±Àà£¬ÏêÏ¸Àà±ğ£¬Á÷ÅÉ£¬ĞèÒªÉùÍû£¬³ÆºÅÃû³Æ£¬¶ÔÓ¦³ÆºÅ±íÄÚµÄ´óÀà£¬¸±Àà£¬³ÖĞøÊ±¼ä(ÕæÊµÊ±¼ä)£¬Á÷ÅÉÃû
-	[2] = 	{80,	"Hµnh gi¶",		23,	1 ,	3600 * 24 * 30, "ThiÕu L©m tôc gia"	  },
+	[2] = 	{80,	"Pilgrim",		23,	1 ,	3600 * 24 * 30, "Shaolin Lay Branch"	  },
 	[4] = 	{80,	"Sa Di",		23,	2 ,	3600 * 24 * 30, "ThiÕu L©m vâ t¨ng"    },
-	[3] = 	{80,	"Khæ Hµnh T¨ng",	23,	3 ,	3600 * 24 * 30, "ThiÕu L©m thiÒn t¨ng"    },
-	[6] = 	{80,	"Trang Kh¸ch",		23,	4 ,	3600 * 24 * 30, "§­êng M«n"        },
-	[8] = 	{80,	"Thanh T©m Sø"  ,	23,	5 ,	3600 * 24 * 30, "Nga My phËt gia"    },
-	[9] = 	{80,	"T­ Khóc Sø"  ,	23,	6 ,	3600 * 24 * 30, "Nga My tôc gia"    },
-	[11] = 	{80,	"ChÊp B¸t §Ö Tö",	23,	7 ,	3600 * 24 * 30, "C¸i Bang TÜnh y"    },
-	[12] = 	{80,	"ChÊp Bæng §Ö Tö",	23,	8 ,	3600 * 24 * 30, "C¸i Bang ¤ Y"    },
-	[14] = 	{80,	"Thanh Tu ®¹o nh©n",	23,	9 ,	3600 * 24 * 30, "Vâ §ang ®¹o gia"    },
-	[15] = 	{80,	"Thanh Phong ®¹o nh©n",	23,	10,	3600 * 24 * 30, "Vâ §ang tôc gia"    },
-	[17] = 	{80,	"Khinh kş binh",	23,	11,	3600 * 24 * 30, "D­¬ng M«n th­¬ng Kş"    },
+	[3] = 	{80,	"Ascetic Monk",	23,	3 ,	3600 * 24 * 30, "ThiÕu L©m thiÒn t¨ng"    },
+	[6] = 	{80,	"Manor Guest",		23,	4 ,	3600 * 24 * 30, "§­êng M«n"        },
+	[8] = 	{80,	"Thanh T©m Sø"  ,	23,	5 ,	3600 * 24 * 30, "Emei Buddhist Branch"    },
+	[9] = 	{80,	"Music Tune Envoy"  ,	23,	6 ,	3600 * 24 * 30, "Emei Lay Branch"    },
+	[11] = 	{80,	"Eight Halberd Disciple",	23,	7 ,	3600 * 24 * 30, "Beggars' Guild Pure Robe"    },
+	[12] = 	{80,	"Staff Wielding Disciple",	23,	8 ,	3600 * 24 * 30, "Beggars' Guild Dirty Robe"    },
+	[14] = 	{80,	"Pure Cultivation Daoist",	23,	9 ,	3600 * 24 * 30, "Wudang Daoist Branch"    },
+	[15] = 	{80,	"Pure Wind Daoist",	23,	10,	3600 * 24 * 30, "Wudang Lay Branch"    },
+	[17] = 	{80,	"Light Cavalry",	23,	11,	3600 * 24 * 30, "D­¬ng M«n th­¬ng Kş"    },
 	[18] = 	{80,	"Xuyªn D­¬ng Thñ",	23,	12,	3600 * 24 * 30, "D­¬ng M«n Cung Kş"    },
-	[20] = 	{80,	"§o¹t Ph¸ch T¶n Nh©n",	23,	13,	3600 * 24 * 30, "HiÖp §éc"    },
-	[21] = 	{80,	"§éc Tµm T¶n Nh©n",	23,	14,	3600 * 24 * 30, "Tµ §éc"    },
+	[20] = 	{80,	"§o¹t Ph¸ch T¶n Nh©n",	23,	13,	3600 * 24 * 30, "Chivalrous Venom"    },
+	[21] = 	{80,	"§éc Tµm T¶n Nh©n",	23,	14,	3600 * 24 * 30, "Wicked Venom"    },
 	[23] = 	{30,	"Linh Phï §¹o Nh©n",	23,	15,	3600 * 24 * 30, "C«n L«n Thiªn S­"    },
-	[25] = 	{30,	"Kim L« Sø",	23,	16,	3600 * 24 * 30, "Minh Gi¸o Th¸nh ChiÕn"    },
+	[25] = 	{30,	"Golden Furnace Envoy",	23,	16,	3600 * 24 * 30, "Ming Cult Holy Warrior"    },
 	[26] = 	{30,	"TrËn Binh Sø",	23,	17,	3600 * 24 * 30, "Minh Gi¸o TrËn Binh"    },
-	[27] = 	{30,	"ƒm Tr¶o Sø",	23,	18,	3600 * 24 * 30, "Minh Gi¸o HuyÕt Nh©n"    },
+	[27] = 	{30,	"Dark Claw Envoy",	23,	18,	3600 * 24 * 30, "Minh Gi¸o HuyÕt Nh©n"    },
 	[29] = 	{30,	"§¹p V©n Tiªn Tö",	23,	19,	3600 * 24 * 30, "Thóy Yªn Vò Tiªn"    },
 	[30] = 	{30,	"TÇm H­¬ng Tiªn Tö",	23,	20,	3600 * 24 * 30, "Thóy Yªn Linh N÷"    },
 
@@ -33,23 +33,23 @@ tTab_zhong =
 {
 	["index"] = 2,
 --ÎïÆ·´óÀà£¬¸±Àà£¬ÏêÏ¸Àà±ğ£¬Á÷ÅÉ£¬ĞèÒªÉùÍû£¬³ÆºÅÃû³Æ£¬¶ÔÓ¦³ÆºÅ±íÄÚµÄ´óÀà£¬¸±Àà£¬³ÖĞøÊ±¼ä(ÕæÊµÊ±¼ä)£¬Á÷ÅÉÃû
-	[2] = 	{3000,	"Hçn Nguyªn T¨ng",	24,	1 ,	3600 * 24 * 30, "ThiÕu L©m tôc gia"	  },
-	[4] = 	{3000,	"§Êu T¨ng",		24,	2 ,	3600 * 24 * 30, "ThiÕu L©m vâ t¨ng"    },
-	[3] = 	{3000,	"ThiÒn Tu T¨ng",	24,	3 ,	3600 * 24 * 30, "ThiÕu L©m thiÒn t¨ng"    },
-	[6] = 	{3000,	"Hé VÖ",		24,	4 ,	3600 * 24 * 30, "§­êng M«n"        },
-	[8] = 	{3000,	"Vò Y Sø"  ,	24,	5 ,	3600 * 24 * 30, "Nga My phËt gia"    },
-	[9] = 	{3000,	"Ph¹n ¢m Sø"  ,	24,	6 ,	3600 * 24 * 30, "Nga My tôc gia"    },
-	[11] = 	{3000,	"Trõ Gian §Ö Tö",	24,	7 ,	3600 * 24 * 30, "C¸i Bang TÜnh y"    },
-	[12] = 	{3000,	"Trõng ¸c §Ö Tö",	24,	8 ,	3600 * 24 * 30, "C¸i Bang ¤ Y"    },
-	[14] = 	{3000,	"NhËp Quan ®¹o nh©n",	24,	9 ,	3600 * 24 * 30, "Vâ §ang ®¹o gia"    },
-	[15] = 	{3000,	"S¬n D­¬ng ®¹o nh©n",	24,	10,	3600 * 24 * 30, "Vâ §ang tôc gia"    },
-	[17] = 	{3000,	"HiÖu óy",		24,	11,	3600 * 24 * 30, "D­¬ng M«n th­¬ng Kş"    },
-	[18] = 	{3000,	"§« óy",		24,	12,	3600 * 24 * 30, "D­¬ng M«n Cung Kş"    },
-	[20] = 	{3000,	"Th«i MÖnh T¶n Nh©n",	24,	13,	3600 * 24 * 30, "HiÖp §éc"    },
-	[21] = 	{3000,	"Thùc T©m T¶n Nh©n",	24,	14,	3600 * 24 * 30, "Tµ §éc"    },
+	[2] = 	{3000,	"Primordial Unity Monk",	24,	1 ,	3600 * 24 * 30, "Shaolin Lay Branch"	  },
+	[4] = 	{3000,	"Battle Monk",		24,	2 ,	3600 * 24 * 30, "ThiÕu L©m vâ t¨ng"    },
+	[3] = 	{3000,	"Zen Cultivation Monk",	24,	3 ,	3600 * 24 * 30, "ThiÕu L©m thiÒn t¨ng"    },
+	[6] = 	{3000,	"Guardian",		24,	4 ,	3600 * 24 * 30, "§­êng M«n"        },
+	[8] = 	{3000,	"Feather Robe Envoy"  ,	24,	5 ,	3600 * 24 * 30, "Emei Buddhist Branch"    },
+	[9] = 	{3000,	"Sanskrit Chant Envoy"  ,	24,	6 ,	3600 * 24 * 30, "Emei Lay Branch"    },
+	[11] = 	{3000,	"Evil Purging Disciple",	24,	7 ,	3600 * 24 * 30, "Beggars' Guild Pure Robe"    },
+	[12] = 	{3000,	"Wicked Punishing Disciple",	24,	8 ,	3600 * 24 * 30, "Beggars' Guild Dirty Robe"    },
+	[14] = 	{3000,	"Pass Entering Daoist",	24,	9 ,	3600 * 24 * 30, "Wudang Daoist Branch"    },
+	[15] = 	{3000,	"S¬n D­¬ng ®¹o nh©n",	24,	10,	3600 * 24 * 30, "Wudang Lay Branch"    },
+	[17] = 	{3000,	"Lieutenant",		24,	11,	3600 * 24 * 30, "D­¬ng M«n th­¬ng Kş"    },
+	[18] = 	{3000,	"Commandant",		24,	12,	3600 * 24 * 30, "D­¬ng M«n Cung Kş"    },
+	[20] = 	{3000,	"Th«i MÖnh T¶n Nh©n",	24,	13,	3600 * 24 * 30, "Chivalrous Venom"    },
+	[21] = 	{3000,	"Thùc T©m T¶n Nh©n",	24,	14,	3600 * 24 * 30, "Wicked Venom"    },
 	[23] = 	{120,	"Bİ Ph¸p §¹o Nh©n",	24,	15,	3600 * 24 * 30, "C«n L«n Thiªn S­"    },
-	[25] = 	{120,	"B¹o S¸t Sø",	24,	16,	3600 * 24 * 30, "Minh Gi¸o Th¸nh ChiÕn"    },
-	[26] = 	{120,	"Tö SÜ Sø",	24,	17,	3600 * 24 * 30, "Minh Gi¸o TrËn Binh"    },
+	[25] = 	{120,	"Savage Slaughter Envoy",	24,	16,	3600 * 24 * 30, "Ming Cult Holy Warrior"    },
+	[26] = 	{120,	"Death Warrior Envoy",	24,	17,	3600 * 24 * 30, "Minh Gi¸o TrËn Binh"    },
 	[27] = 	{120,	"DiÖt Hån Sø",	24,	18,	3600 * 24 * 30, "Minh Gi¸o HuyÕt Nh©n"    },
 	[29] = 	{120,	"T©m Vò Tiªn Tö",	24,	19,	3600 * 24 * 30, "Thóy Yªn Vò Tiªn"    },
 	[30] = 	{120,	"Th¸m Ngäc Tiªn Tö",	24,	20,	3600 * 24 * 30, "Thóy Yªn Linh N÷"    },
@@ -60,26 +60,26 @@ tTab_gao =
 {
 	["index"] = 3,
 --ÎïÆ·´óÀà£¬¸±Àà£¬ÏêÏ¸Àà±ğ£¬Á÷ÅÉ£¬ĞèÒªÉùÍû£¬³ÆºÅÃû³Æ£¬¶ÔÓ¦³ÆºÅ±íÄÚµÄ´óÀà£¬¸±Àà£¬³ÖĞøÊ±¼ä(ÕæÊµÊ±¼ä)£¬Á÷ÅÉÃû
-	[2] = 	{6000,	"§¹t Ma Kim Cang",	25,	1 ,	3600 * 24 * 30, "ThiÕu L©m tôc gia"	  },
+	[2] = 	{6000,	"Damo Vajra",	25,	1 ,	3600 * 24 * 30, "Shaolin Lay Branch"	  },
 	[4] = 	{6000,	"La H¸n Hé Ph¸p",	25,	2 ,	3600 * 24 * 30, "ThiÕu L©m vâ t¨ng"    },
-	[3] = 	{6000,	"TruyÒn kinh ph¸p s­",	25,	3 ,	3600 * 24 * 30, "ThiÕu L©m thiÒn t¨ng"    },
+	[3] = 	{6000,	"Scripture Teaching Master",	25,	3 ,	3600 * 24 * 30, "ThiÕu L©m thiÒn t¨ng"    },
 	[6] = 	{6000,	"Bİ ®éc thİch kh¸ch",	25,	4 ,	3600 * 24 * 30, "§­êng M«n"        },
-	[8] = 	{6000,	"Tö Tróc sø"  ,	25,	5 ,	3600 * 24 * 30, "Nga My phËt gia"    },
-	[9] = 	{6000,	"H¶i NguyÖt sø"  ,	25,	6 ,	3600 * 24 * 30, "Nga My tôc gia"    },
-	[11] = 	{6000,	"Tø H¶i hiÖp"  ,	25,	7 ,	3600 * 24 * 30, "C¸i Bang TÜnh y"    },
-	[12] = 	{6000,	"§Ö tö t¸m tói",	25,	8 ,	3600 * 24 * 30, "C¸i Bang ¤ Y"    },
-	[14] = 	{6000,	"V« ng· ®¹o nh©n",	25,	9 ,	3600 * 24 * 30, "Vâ §ang ®¹o gia"    },
-	[15] = 	{6000,	"Nhµn V©n HiÖp §¹o",	25,	10,	3600 * 24 * 30, "Vâ §ang tôc gia"    },
+	[8] = 	{6000,	"Purple Bamboo Envoy"  ,	25,	5 ,	3600 * 24 * 30, "Emei Buddhist Branch"    },
+	[9] = 	{6000,	"H¶i NguyÖt sø"  ,	25,	6 ,	3600 * 24 * 30, "Emei Lay Branch"    },
+	[11] = 	{6000,	"Tø H¶i hiÖp"  ,	25,	7 ,	3600 * 24 * 30, "Beggars' Guild Pure Robe"    },
+	[12] = 	{6000,	"Eight Bag Disciple",	25,	8 ,	3600 * 24 * 30, "Beggars' Guild Dirty Robe"    },
+	[14] = 	{6000,	"Selfless Daoist",	25,	9 ,	3600 * 24 * 30, "Wudang Daoist Branch"    },
+	[15] = 	{6000,	"Nhµn V©n HiÖp §¹o",	25,	10,	3600 * 24 * 30, "Wudang Lay Branch"    },
 	[17] = 	{6000,	"PhÊn vò t­íng qu©n",	25,	11,	3600 * 24 * 30, "D­¬ng M«n th­¬ng Kş"    },
 	[18] = 	{6000,	"PhÊn uy t­íng qu©n",	25,	12,	3600 * 24 * 30, "D­¬ng M«n Cung Kş"    },
-	[20] = 	{6000,	"H¾c V« Th­êng"  ,	25,	13,	3600 * 24 * 30, "HiÖp §éc"    },
-	[21] = 	{6000,	"B¹ch V« Th­êng"  ,	25,	14,	3600 * 24 * 30, "Tµ §éc"    },
+	[20] = 	{6000,	"H¾c V« Th­êng"  ,	25,	13,	3600 * 24 * 30, "Chivalrous Venom"    },
+	[21] = 	{6000,	"B¹ch V« Th­êng"  ,	25,	14,	3600 * 24 * 30, "Wicked Venom"    },
 	[23] = 	{1000,	"TrÊn Yªu §¹o Nh©n",	25,	15,	3600 * 24 * 30, "C«n L«n Thiªn S­"    },
-	[25] = 	{1000,	"Hé Gi¸o Sø",	25,	16,	3600 * 24 * 30, "Minh Gi¸o Th¸nh ChiÕn"    },
+	[25] = 	{1000,	"Cult Guardian Envoy",	25,	16,	3600 * 24 * 30, "Ming Cult Holy Warrior"    },
 	[26] = 	{1000,	"Tr­êng Kú Sø",	25,	17,	3600 * 24 * 30, "Minh Gi¸o TrËn Binh"    },
-	[27] = 	{1000,	"Thanh Minh Sø",	25,	18,	3600 * 24 * 30, "Minh Gi¸o HuyÕt Nh©n"    },
+	[27] = 	{1000,	"Pure Bright Envoy",	25,	18,	3600 * 24 * 30, "Minh Gi¸o HuyÕt Nh©n"    },
 	[29] = 	{1000,	"Thu NguyÖt Sø",	25,	19,	3600 * 24 * 30, "Thóy Yªn Vò Tiªn"    },
-	[30] = 	{1000,	"Nghªnh H­¬ng Sø",	25,	20,	3600 * 24 * 30, "Thóy Yªn Linh N÷"    },
+	[30] = 	{1000,	"Welcoming Fragrance Envoy",	25,	20,	3600 * 24 * 30, "Thóy Yªn Linh N÷"    },
 
 }                                   
 
@@ -87,22 +87,22 @@ tTab_zuigao =
 {
 	["index"] = 4,
 --ÎïÆ·´óÀà£¬¸±Àà£¬ÏêÏ¸Àà±ğ£¬Á÷ÅÉ£¬ĞèÒªÉùÍû£¬³ÆºÅÃû³Æ£¬¶ÔÓ¦³ÆºÅ±íÄÚµÄ´óÀà£¬¸±Àà£¬³ÖĞøÊ±¼ä(ÕæÊµÊ±¼ä)£¬Á÷ÅÉÃû
-	[2] = 	{10000,	"B¸t Bé Thiªn Long",	26,	1 ,	3600 * 24 * 30, "ThiÕu L©m tôc gia"	  },
+	[2] = 	{10000,	"B¸t Bé Thiªn Long",	26,	1 ,	3600 * 24 * 30, "Shaolin Lay Branch"	  },
 	[4] = 	{10000,	"B¸t B¶o La H¸n",	26,	2 ,	3600 * 24 * 30, "ThiÕu L©m vâ t¨ng"    },
 	[3] = 	{10000,	"V« L­îng Ph¸p T«n",	26,	3 ,	3600 * 24 * 30, "ThiÕu L©m thiÒn t¨ng"    },
 	[6] = 	{10000,	"Thiªn C¬ Sø Gi¶",	26,	4 ,	3600 * 24 * 30, "§­êng M«n"        },
-	[8] = 	{10000,	"B¹ch Liªn Tiªn Tö",	26,	5 ,	3600 * 24 * 30, "Nga My phËt gia"    },
-	[9] = 	{10000,	"Ngäc VËn Tiªn Tö",	26,	6 ,	3600 * 24 * 30, "Nga My tôc gia"    },
-	[11] = 	{10000,	"Long §Çu ThÇn C¸i",	26,	7 ,	3600 * 24 * 30, "C¸i Bang TÜnh y"    },
-	[12] = 	{10000,	"KhÊt Thiªn ThÇn C¸i",	26,	8 ,	3600 * 24 * 30, "C¸i Bang ¤ Y"    },
-	[14] = 	{10000,	"Ch­ëng Kinh ®¹o nh©n",	26,	9 ,	3600 * 24 * 30, "Vâ §ang ®¹o gia"    },
-	[15] = 	{10000,	"Th¸i Êt T¶n Nh©n",	26,	10,	3600 * 24 * 30, "Vâ §ang tôc gia"    },
+	[8] = 	{10000,	"B¹ch Liªn Tiªn Tö",	26,	5 ,	3600 * 24 * 30, "Emei Buddhist Branch"    },
+	[9] = 	{10000,	"Ngäc VËn Tiªn Tö",	26,	6 ,	3600 * 24 * 30, "Emei Lay Branch"    },
+	[11] = 	{10000,	"Long §Çu ThÇn C¸i",	26,	7 ,	3600 * 24 * 30, "Beggars' Guild Pure Robe"    },
+	[12] = 	{10000,	"KhÊt Thiªn ThÇn C¸i",	26,	8 ,	3600 * 24 * 30, "Beggars' Guild Dirty Robe"    },
+	[14] = 	{10000,	"Scripture Mastering Daoist",	26,	9 ,	3600 * 24 * 30, "Wudang Daoist Branch"    },
+	[15] = 	{10000,	"Th¸i Êt T¶n Nh©n",	26,	10,	3600 * 24 * 30, "Wudang Lay Branch"    },
 	[17] = 	{10000,	"Long T­¬ng t­íng qu©n",	26,	11,	3600 * 24 * 30, "D­¬ng M«n th­¬ng Kş"    },
 	[18] = 	{10000,	"Hæ Dùc t­íng qu©n",	26,	12,	3600 * 24 * 30, "D­¬ng M«n Cung Kş"    },
-	[20] = 	{10000,	"U Minh Quû S¸t",	26,	13,	3600 * 24 * 30, "HiÖp §éc"    },
-	[21] = 	{10000,	"V« §æng La S¸t",	26,	14,	3600 * 24 * 30, "Tµ §éc"    },
+	[20] = 	{10000,	"Netherworld Ghost Slayer",	26,	13,	3600 * 24 * 30, "Chivalrous Venom"    },
+	[21] = 	{10000,	"Boundless Rakshasa",	26,	14,	3600 * 24 * 30, "Wicked Venom"    },
 	[23] = 	{3500,	"Tö Vi §¹o Nh©n",	26,	15,	3600 * 24 * 30, "C«n L«n Thiªn S­"    },
-	[25] = 	{3500,	"Tiªu Dao ThÇn Sø",	26,	16,	3600 * 24 * 30, "Minh Gi¸o Th¸nh ChiÕn"    },
+	[25] = 	{3500,	"Tiªu Dao ThÇn Sø",	26,	16,	3600 * 24 * 30, "Ming Cult Holy Warrior"    },
 	[26] = 	{3500,	"Thiªn Cuång §¹i T­íng",	26,	17,	3600 * 24 * 30, "Minh Gi¸o TrËn Binh"    },
 	[27] = 	{3500,	"NguyÖt nh Ma T«n",	26	18,	3600 * 24 * 30, "Minh Gi¸o HuyÕt Nh©n"    },
 	[29] = 	{3500,	"Cöu Thiªn Th¸i Ph­îng",	26,	19,	3600 * 24 * 30, "Thóy Yªn Vò Tiªn"    },
@@ -148,7 +148,7 @@ function OnUse(nidx)
 		Say("Ng­¬i ch­a gia nhËp m«n ph¸i, kh«ng thÓ sö dông vËt phÈm nµy", 0)
 		return
 	end
-	Say(tTab[nRoute][6].."§iÓm cèng hiÕn ®Ö tö s­ m«n ®¹t ®­îc <color=yellow>"..tTab[nRoute][1].."<color> lµ ®­îc phong <color=green> "..tTab[nRoute][2].." <color>, muèn dïng kh«ng?", 2, "§óng/yes_say", "Sai/no_say")
+	Say(tTab[nRoute][6].."The master sect contribution points your disciple has earned <color=yellow>"..tTab[nRoute][1].."<color> are enough to be appointed <color=green>"..tTab[nRoute][2].." <color>, muèn dïng kh«ng?", 2, "Yes/yes_say", "Sai/no_say")
 end
 
 function yes_say()
@@ -168,11 +168,11 @@ function yes_say()
 	if nIndex < nExist then
 		Say("§¼ng cÊp x­ng hiÖu s­ m«n cña b¹n lín h¬n ®¼ng cÊp x­ng hiÖu sö dông vËt phÈm, kh«ng cÇn dïng vËt phÈm nµy.", 0)
 	elseif nIndex == nExist then
-		Say("Ng­¬i ®· lµ <color=green> "..tTab[nRoute][2].." <color> råi.", 0)
+		Say("You are already <color=green>"..tTab[nRoute][2].." <color> råi.", 0)
 	elseif GetTask(336) < tTab[nRoute][1] then
 		Say(GetPlayerSex().."§é cèng hiÕn s­ m«n cña b¹n kh«ng ®ñ.", 0)
 	elseif nExist > 0 then
-		Say("HiÖn ng­¬i ®· cã danh hiÖu <color=red> "..tItem[nExist][4][nRoute][2].." <color>! Cã muèn ®æi thµnh <color=green> "..tTab[nRoute][2].." <color>?", 2, "§óng/#yes_change_title("..nIndex..")", "Sai/no_say")
+		Say("HiÖn ng­¬i ®· cã danh hiÖu <color=red> "..tItem[nExist][4][nRoute][2].." <color>! Cã muèn ®æi thµnh <color=green> "..tTab[nRoute][2].." <color>?", 2, "Yes/#yes_change_title("..nIndex..")", "Sai/no_say")
 	else
 		yes_change_title(nIndex)
 	end

@@ -2,12 +2,12 @@
 --Create Date:2007-6-13
 --Author:yanjun
 Include("\\script\\lib\\globalfunctions.lua");
-g_szInforHeader = "<color=green>Thanh Hoa Tˆ quang S¯ gi∂<color>: ";
+g_szInforHeader = "<color=green>Tsinghua Ziguang Envoy<color>:";
 function main()
 	local selTab = {
-			"GiÛp bπn h‰c tÀp tho∂i m∏i- Thanh Hoa Chi Tinh/talk1",
+			"Help you study with ease- Tsinghua Star/talk1",
 			"GiÛp gia Æ◊nh c„ kh´ng kh› vui vŒ- T©n Thﬁ tuy’n e/talk2",
-			"Mµu Æen kinh Æi”n- Laptop th’ h÷ H8/talk3",
+			"Classic black- H8 Generation Laptop/talk3",
 			"Ta th›ch m„n nµy qu∏!/choose_the_favour",
 			"L«n sau sœ quay lπi xem/nothing",
 			}
@@ -36,9 +36,9 @@ end;
 
 function choose_the_favour()
 	local selTab = {
-				"Ta th›ch Thanh Hoa Chi Tinh/select_one",
+				"I like the Tsinghua Star/select_one",
 				"Ta th›ch T©n Thﬁ tuy’n e/select_one",
-				"Ta th›ch Laptop th’ h÷ H8/select_one",
+				"I like the H8 Generation Laptop/select_one",
 				"Ta muËn xem giÌi thi÷u s∂n ph»m/main",
 				}
 	Say(g_szInforHeader.."Thi’u Hi÷p th›ch s∂n ph»m nµo?",getn(selTab),selTab);
@@ -63,7 +63,7 @@ function select_one()
 		return 0;
 	end;
 	SetTask(2357,1);
-	Talk(1,"",g_szInforHeader.."ß©y lµ chÛt quµ m‰n! Xin Æıng ch™!");
+	Talk(1,"",g_szInforHeader.."This is a small gift! Please don't scorn it!");
 	local nRand = random(1,1000);
 	if nRand <= 650 then
 		AddItem(2,1,1123,1);

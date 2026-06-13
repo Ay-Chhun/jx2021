@@ -182,7 +182,7 @@ function TopBangHoi_CongHien_Done(nOption)
 		end
 	end
 	Msg2Player("Bπn Æ∑ cËng hi’n "..tbCongHienBang_NguyenLieu[nOption][1].." cho bang hÈi.")
-	gf_WriteLogEx(LIB_Award.szLogTitle, LIB_Award.szLogaction, 1, "CËng hi’n "..tbCongHienBang_NguyenLieu[nOption][1].." Æi”m")
+	gf_WriteLogEx(LIB_Award.szLogTitle, LIB_Award.szLogaction, 1, "Contribute"..tbCongHienBang_NguyenLieu[nOption][1].." Æi”m")
 	TopBangHoi_CongHien_Menu()
 end
 

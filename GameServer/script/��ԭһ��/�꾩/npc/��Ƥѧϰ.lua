@@ -56,7 +56,7 @@ function main()
 		"§Õn Tö Tang s¬n (cao cÊp)/GotoWorld_Confirm3",
 		--"ÒÅÍüÖÆÆ¤¼¼ÄÜ/forget_life_skill",
 		"T×m hiÓu thuéc da/Info",
-		"Rêi khái/Main_Exit")
+		"Leave/Main_Exit")
 end;
 
 
@@ -159,19 +159,19 @@ function GotoWorld_Confirm1()
 	Say(strTitle.."Ng­¬i muèn ®Õn <color=yellow>Kh«ng Tang S¬n<color> thuéc da kh«ng? N¬i ®ã cã nhiÒu nhiÒu <color=yellow>Sãi<color>, <color=yellow>Hæ<color>, <color=yellow>R¾n<color> vµ <color=yellow>C¸o<color>, ng­¬i nªn sö dông <color=yellow>ThÇn N«ng §¬n<color> míi cã thÓ thuéc da.",
 		2,
 		"Ta muèn ®i/#GotoWorld(712,1472,2918)",
-		"Kh«ng ®i ®©u/Main_Exit")
+		"I'm not going anywhere/Main_Exit")
 end;
 function GotoWorld_Confirm2()
 	Say(strTitle.."Ng­¬i muèn ®Õn <color=yellow>C«n Ng« S¬n<color> thuéc da kh«ng? N¬i ®ã cã nhiÒu nhiÒu <color=yellow>B¹ch hæ<color>, <color=yellow>GÊu<color> vµ <color=yellow>Loan §iÓu<color>. Nhí mang theo <color=yellow>ThÇn N«ng §¬n<color>!",
 		2,
 		"Ta muèn ®i/#GotoWorld(717,1736,2906)",
-		"Kh«ng ®i ®©u/Main_Exit")
+		"I'm not going anywhere/Main_Exit")
 end;
 function GotoWorld_Confirm3()
 	Say(strTitle.."Ng­¬i muèn ®i <color=yellow>Tö Tang s¬n<color> thuéc da ph¶i kh«ng? ë ®ã cã rÊt nhiÒu <color=yellow>s­ tö<color>, <color=yellow>Chu T­íc<color> vµ <color=yellow>Linh Ngao<color> xuÊt hiÖn, nhí kü ng­¬i ph¶i sö dông <color=yellow>ThÇn N«ng ®¬n<color> míi cã thÓ thuéc da.",
 		2,
 		"Ta muèn ®i/#GotoWorld(722,1748,3420)",
-		"Kh«ng ®i ®©u/Main_Exit")
+		"I'm not going anywhere/Main_Exit")
 end;
 -- È¥ÏàÓ¦µÄ¹Ò»úµØµã
 function GotoWorld(MapID, x, y)
@@ -194,7 +194,7 @@ end;
 
 function update_max_skill_level()
 	Say(strTitle..format("Më réng cÊp kü n¨ng s¶n xuÊt cÇn kü n¨ng thu thËp ®¹t cÊp 79 ®ång thêi tiªu hao %d Vµng", 1000), 
-		2, "§ång ý/update_max_skill_level_ensure", "T¹i h¹ chØ xem qua th«i/Main_Exit")
+		2, "Agree/update_max_skill_level_ensure", "T¹i h¹ chØ xem qua th«i/Main_Exit")
 end
 
 function update_max_skill_level_ensure()

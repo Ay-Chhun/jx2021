@@ -55,7 +55,7 @@ t_sub_cfg = {
                 {"ThÇn §µn Thèng LÜnh"},
     		},
     	},
-    	{6100, "Quúnh KÕt", 
+    	{6100, "Qiong Jie", 
     		{
                 {"Bé téc ph¶n lo¹n"},
                 {"Th­¬ng ¦ng"},
@@ -65,7 +65,7 @@ t_sub_cfg = {
                 {"NguyÖt §µn ThuËt SÜ"},
     		},
     	},
-    	{6200, "H­ng Kh¸nh", 
+    	{6200, "Xing Qing", 
         	{
                 {"VÖ Thó Ph¶n Qu©n"},
                 {"ChÊt Tö Ph¶n Qu©n"},
@@ -91,7 +91,7 @@ t_sub_award.daily_nor.tConsume = {
 t_sub_award.daily_nor.tAward = {
 	{"Ch©n khÝ", -4, 0, 0, 2000},
 	{"Exp", -3, 0, 0, 150000000},
-	{"V« Tù Kinh Th­", 2, 1, 30785, 50, },
+	{"Wordless Scripture", 2, 1, 30785, 50, },
 }
 t_sub_award.daily_nor.tRoomWeight = {2, 100}
 t_sub_award.daily_nor.szName = "PhÇn th­ëng th­êng"
@@ -103,7 +103,7 @@ t_sub_award.daily_adv.tConsume = {
 t_sub_award.daily_adv.tAward = {
 	{"Ch©n khÝ", -4, 0, 0, 5000},
 	{"Exp", -3, 0, 0, 250000000},
-	{"V« Tù Kinh Th­", 2, 1, 30785, 100, },
+	{"Wordless Scripture", 2, 1, 30785, 100, },
 	{"Kinh M¹ch §ång Nh©n", 2, 1, 30730, 9, },
 }
 t_sub_award.daily_adv.tRoomWeight = {2, 100}
@@ -116,7 +116,7 @@ t_sub_award.weekly.tConsume = {
 t_sub_award.weekly.tAward = {
 	{"Ch©n khÝ", -4, 0, 0, 8000},
 	{"Exp", -3, 0, 0, 300000000},
-	{"V« Tù Kinh Th­", 2, 1, 30785, 100, },
+	{"Wordless Scripture", 2, 1, 30785, 100, },
 	{"Kinh M¹ch §ång Nh©n", 2, 1, 30730, 9, },
 }
 t_sub_award.weekly.tRoomWeight = {2, 100}
@@ -175,9 +175,9 @@ function sub_handle_on_npc_talk(nIndex)
     tinsert(tbSay, format("%s/#_task_talk(%d,%s)", "NhiÖm vô ngµy", nIndex, gVal2String("daily")))
     local w = tonumber(date("%w"))
 	if w == 6 or w == 0 then --ÖÜÄ©²ÅÄÜ´òboss
-		tinsert(tbSay, format("%s/#_task_talk(%d,%s)", "NhiÖm vô cuèi tuÇn", nIndex, gVal2String("weekly")))
+		tinsert(tbSay, format("%s/#_task_talk(%d,%s)", "Weekend mission", nIndex, gVal2String("weekly")))
 	end
-	tinsert(tbSay, format("%s/nothing", "KÕt thóc ®èi tho¹i"))
+	tinsert(tbSay, format("%s/nothing", "End conversation"))
     Say(szTitle, getn(tbSay), tbSay)
 end
 
@@ -200,7 +200,7 @@ function _task_talk(nIndex, szTask, bConfirm, szAward)
 		else
 			szTitle = format("%s%s,%s",szTitle,t.desc, "§ång ý nhËn nhiÖm vô kh«ng?")
 			tinsert(tbSay, format("%s/#_task_talk(%d,%s,1)", "§ång ý nhËn", nIndex, gVal2String(szTask)))
-			tinsert(tbSay, format("%s/nothing", "KÕt thóc ®èi tho¹i"))
+			tinsert(tbSay, format("%s/nothing", "End conversation"))
     		Say(szTitle, getn(tbSay), tbSay)
     		return
 		end
@@ -210,7 +210,7 @@ function _task_talk(nIndex, szTask, bConfirm, szAward)
 	if nKillCnt < t.kill_num then
 		local szProcess = format("TiÕn ®é nhiÖm vô %d/%d",nKillCnt, t.kill_num)
 		szTitle = format("%s%s%s,%s",szTitle,"NhiÖm cô ch­a hoµn thµnh",t.desc, szProcess)
-		tinsert(tbSay, format("%s/nothing", "KÕt thóc ®èi tho¹i"))
+		tinsert(tbSay, format("%s/nothing", "End conversation"))
     	Say(szTitle, getn(tbSay), tbSay)
     	return
 	end
@@ -238,7 +238,7 @@ function _task_talk(nIndex, szTask, bConfirm, szAward)
 				szTitle = format("%s%s,%s,%s",szTitle,"§· hoµn thµnh nhiÖm vô",t.desc, szDesc)
 				tinsert(tbSay, format("%s/#_task_talk(%d,%s,1,%s)", "X¸c nhËn", nIndex, gVal2String(szTask), gVal2String(szAward)))
 				tinsert(tbSay, format("%s/#_task_talk(%d,%s)", "trë l¹i", nIndex, gVal2String(szTask)))
-				tinsert(tbSay, format("%s/nothing", "KÕt thóc ®èi tho¹i"))
+				tinsert(tbSay, format("%s/nothing", "End conversation"))
 				Say(szTitle, getn(tbSay), tbSay)
 				return
 			end
@@ -249,7 +249,7 @@ function _task_talk(nIndex, szTask, bConfirm, szAward)
 				local award = tAward[i]
 				tinsert(tbSay, format("%s/#_task_talk(%d,%s,nil,%s)", t_sub_award[award].szName, nIndex, gVal2String(szTask), gVal2String(award)))
 			end
-			tinsert(tbSay, format("%s/nothing", "KÕt thóc ®èi tho¹i"))
+			tinsert(tbSay, format("%s/nothing", "End conversation"))
     		Say(szTitle, getn(tbSay), tbSay)
     		return
 		end

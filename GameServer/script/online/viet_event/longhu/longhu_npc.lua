@@ -8,7 +8,7 @@ Include("\\script\\vng\\lib\\vnglib_textdata.lua")
 Include("\\script\\vng\\lib\\vnglib_award.lua") 
 Include("\\script\\online\\viet_event\\vng_task_control.lua") 
 Include("\\script\\online\\chuyen_sinh\\translife_head.lua") 
-szNPCName = "<color=green>Long Hæ Sø<color>: "
+szNPCName = "<color=green>Dragon Tiger Envoy<color>:"
 TASKTEMP_BHTA9 = 118
 
 --tbExpBonusBHTA9 = {
@@ -22,30 +22,30 @@ TASKTEMP_BHTA9 = 118
 --}
 
 tTongList = {
-	[03] = {"•TÄM•."},
-	[62] = {"Ä0keBaBy"},
+	[03] = {"TAM."},
+	[62] = {"A0keBaBy"},
 	[16] = {"HångThÊt"},
-	[24] = {"-NgùLong"},
-	[01] = {"-°•Hotel"},
-	[11] = {"_.•°zN§z"},
-	[66] = {"-Héi*Tô"},
-	[20] = {"-Long•Hæ"},
+	[24] = {"-NguLong"},
+	[01] = {"-oHotel"},
+	[11] = {"_.ozNoz"},
+	[66] = {"-Hoi*Tu"},
+	[20] = {"-LongHo"},
 	[22] = {"Holywar"},
-	[25] = {"NghÖ Sü"},
-	[33] = {"•ÄMÊtTrÝ"},
+	[25] = {"Artist"},
+	[33] = {"AMatTri"},
 
 }
 
 tbBangHoiTA12 = {
-	[3] = {"LiªnMinh"},
+	[3] = {"LienMinh"},
 	[8] = {"Google"},
-	[9] = {"*Mª*"},
-	[15] = {"ÄQuy•¢nÄ"},
-	[24] = {"-NgùLong"},
-	[50] = {"-Héi*Tô"},
-	[11] = {"•Family"},
+	[9] = {"*Me*"},
+	[15] = {"AQuyenA"},
+	[24] = {"-NguLong"},
+	[50] = {"-Hoi*Tu"},
+	[11] = {"Family"},
 	[22] = {"Holywar"},
-	[33] = {"•ÄMÊtTrÝ"},
+	[33] = {"AMatTri"},
 }
 
 tbNguyenLieuVote = {
@@ -55,33 +55,33 @@ tbNguyenLieuVote = {
 }
 
 tbCCHH = {
-	{1,297, "TÈy Tñy §¬n",{2,0,136,2},30 * 24 *3600},
-	{1,200,"TÈy Tñy Linh §¬n",{2,0,137,1},30 * 24 *3600},
+	{1,297, "Marrow-Cleansing Pill",{2,0,136,2},30 * 24 *3600},
+	{1,200,"Marrow-Cleansing Spirit Pellet",{2,0,137,1},30 * 24 *3600},
 	{1,200,"B¸t B¶o TÈy Tñy §¬n",{2,0,138,1},30 * 24 *3600},
 	{1,1,"Thiªn th¹ch linh th¹ch",{2,1,1068,1},7 * 24 * 3600},
 	{1,1,"§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch",{2,1,1067,1},7 * 24 * 3600},
-	{1,1,"Tói thiªn th¹ch tinh th¹ch",{2,1,3356,1},7 * 24 * 3600},
+	{1,1,"Bag of meteorite spirit stone",{2,1,3356,1},7 * 24 * 3600},
 	{1,800,"Ngò Hoa Tô Nguyªn T¸n(søc m¹nh)",{1,0,261,2},0},
 	{1,800,"Ngò Hoa Tô Nguyªn T¸n (néi c«ng)",{1,0,262,2},0},
 	{1,800,"Ngò Hoa Tô Nguyªn T¸n (g©n cèt)",{1,0,263,2},0},
 	{1,800,"Ngò Hoa Tô Nguyªn T¸n (th©n ph¸p)",{1,0,264,2},0},
-	{1,800,"Ngò Hoa Tô Nguyªn T¸n (nhanh nhÑn)",{1,0,265,2},0},
-	{1,400,"ThÊt Hoa Tô Nguyªn T¸n (lùc c¨n)",{1,0,266,2},0},
-	{1,400,"ThÊt Hoa Tô Nguyªn T¸n (lùc th©n)",{1,0,267,2},0},
-	{1,400,"ThÊt Hoa Tô Nguyªn T¸n (lùc ®æng)",{1,0,268,2},0},
-	{1,400,"ThÊt Hoa Tô Nguyªn T¸n (lùc néi)",{1,0,269,2},0},
-	{1,400,"ThÊt Hoa Tô Nguyªn T¸n (néi c¨n)",{1,0,270,2},0},
-	{1,400,"ThÊt Hoa Tô Nguyªn T¸n (néi th©n)",{1,0,271,2},0},
-	{1,400,"ThÊt Hoa Tô Nguyªn T¸n (néi ®æng)",{1,0,272,2},0},
-	{1,400,"ThÊt Hoa Tô Nguyªn T¸n (th©n c¨n)",{1,0,273,2},0},
-	{1,400,"ThÊt Hoa Tô Nguyªn T¸n (th©n ®æng)",{1,0,274,2},0},
-	{1,400,"ThÊt Hoa Tô Nguyªn T¸n (®æng c¨n)",{1,0,275,2},0},
+	{1,800,"Five Flower Gathering Origin Powder (agility)",{1,0,265,2},0},
+	{1,400,"Seven Flower Origin-Gathering Powder (root power)",{1,0,266,2},0},
+	{1,400,"Seven Flower Origin-Gathering Powder (body power)",{1,0,267,2},0},
+	{1,400,"Seven Flower Origin-Gathering Powder (movement power)",{1,0,268,2},0},
+	{1,400,"Seven Flower Origin-Gathering Powder (internal power)",{1,0,269,2},0},
+	{1,400,"Seven Flower Origin-Gathering Powder (internal root)",{1,0,270,2},0},
+	{1,400,"Seven Flower Origin-Gathering Powder (internal body)",{1,0,271,2},0},
+	{1,400,"Seven Flower Origin-Gathering Powder (internal movement)",{1,0,272,2},0},
+	{1,400,"Seven Flower Origin-Gathering Powder (body root)",{1,0,273,2},0},
+	{1,400,"Seven Flower Origin-Gathering Powder (body movement)",{1,0,274,2},0},
+	{1,400,"Seven Flower Origin-Gathering Powder (movement root)",{1,0,275,2},0},
 	{1,300,"Minh NguyÖt D¹",{1,1,17,2},0},
-	{1,300,"T©y B¾c Väng",{1,1,19,2},0},
-	{1,300,"B¸nh Bét vµng",{1,1,15,2},0},
+	{1,300,"Northwest Gaze",{1,1,19,2},0},
+	{1,300,"Golden Flour Cake",{1,1,15,2},0},
 	{1,100,"B¸nh Ýt B¸t B¶o",{2,1,1123,2},0},
 	{1,100,"B¸nh Ýt ch©n gµ",{2,1,1124,2},0},
-	{1,100,"B¸nh Ýt H­¬ng Ng·i",{2,1,1125,2},0},	
+	{1,100,"Mugwort Cake",{2,1,1125,2},0},	
 }
 
 
@@ -113,8 +113,8 @@ function main()
 	
 	local tSel = {}
 	if nDate <= 20140905 then
- 		tinsert(tSel, "Nh¸nh miÒn B¾c - §¨ng ký thi ®Êu Long Tranh Hæ §Êu 3/FormDangKyTeamHN")
-		tinsert(tSel, "Nh¸nh miÒn Nam - §¨ng ký thi ®Êu Long Tranh Hæ §Êu 3/FormDangKyTeamHCM")
+ 		tinsert(tSel, "Northern Branch - Register for Dragon Tiger Tournament 3/FormDangKyTeamHN")
+		tinsert(tSel, "Southern Branch - Register for Dragon Tiger Tournament 3/FormDangKyTeamHCM")
  	end
 -- 	if nDate <= 20140815 then
 -- 		tinsert(tSel, "Ta muèn ®¨ng ký tranh tµi Long Tranh Hæ §Êu/ThiDauOffLine_DangKy_Form")
@@ -126,22 +126,22 @@ function main()
 	--========== Nép Tinh Anh LÖnh Kú ==========--
 	if nDate >= 20141008 and nDate <= 20141022 then
 		tinsert(tSel, "T×m hiÓu th«ng tin ®¨ng ký gi¶i ®Êu Bang Héi Tinh Anh	/#about(1)")
-		tinsert(tSel, "NhËn Tinh Anh LÖnh Kú/getFlags")
+		tinsert(tSel, "Receive Elite Token Flag/getFlags")
 		tinsert(tSel, "Nép Tinh Anh LÖnh Kú(thµnh viªn th­êng)/#giveFlag(1)")
 		tinsert(tSel, "Nép Tinh Anh LÖnh Kú(Nguyªn so¸i)/#giveFlag(2)")
-		tinsert(tSel, "Xem danh s¸ch ®¨ng ký thi ®Êu/viewList")
+		tinsert(tSel, "View tournament registration list/viewList")
 --		tinsert(tSel, "ÎÒÏëÁìÈ¡xxxx½±Àø/getAward")
 	end
 	
 	--========== B×nh chän BHTA 12 ==============--
 	if nDate >= 20141006 and nDate <= 20141012 then
-		tinsert(tSel,"B×nh chän Bang Héi Tinh Anh 12/BinhChonBHTA_CC_Form")
+		tinsert(tSel,"Vote Guild Elite 12/BinhChonBHTA_CC_Form")
 		tinsert(tSel,"Xem sè l­ît b×nh chän bang héi/ViewVote")
 		-- tinsert(tSel,"B×nh chän bang héi gi¶i Siªu CÊp/BinhChonBHTA_SC_Form")
 	end
 --================ §¨ng ký BHTA 12	
 	if nDate >= 20141003 and nDate <= 20141005 then
-		tinsert(tSel,"§¨ng ký tham gia Bang Héi Tinh Anh 12/DangKyThamGiaBHTA_Form")
+		tinsert(tSel,"Register to join Guild Elite 12/DangKyThamGiaBHTA_Form")
 		tinsert(tSel,"Ta muèn xem t×nh h×nh b¸o danh Bang Héi Tinh Anh 12/#DangKyThamGiaBHTA_view(1)")
 --		tinsert(tSel,"Ta muèn xem t×nh h×nh b¸o danh Bang héi Siªu CÊp/#DangKyThamGiaBHTA_view(2)")
 	end
@@ -331,7 +331,7 @@ function about(page)
 		"Bang chñ cã tr¸ch nhiÖm ph©n ph¸t <color=red>Tinh Anh LÖnh Kú<color>cho c¸c thµnh viªn tham gia gi¶i ®Êu Bang Héi Tinh Anh. C¸c thµnh viªn cña bang héi khi ®¨ng ký ph¶i cã Ýt nhÊt 1 <color=red>Tinh Anh LÖnh Kú<color> trong hµnh trang cña m×nh, vµ ph¶i gia nhËp Bang Ýt nhÊt 3 ngµy.\n",   
 		},
 		{
-		"Chó ý: \n",
+		"Note: \n",
 		" - ChØ cã bang chñ cña bang héi ®¹i diÖn cho mçi m¸y chñ míi cã thÓ nhËn Tinh Anh LÖnh Kú \n",                         
 		" - Mçi bang héi chØ cã thÓ nhËn tèi ®a 42 Tinh Anh LÖnh Kú tõ Long Hæ Sø.\n",
 		},                         
@@ -389,7 +389,7 @@ function getFlags()
 		return 0
 	end	
 	
-	gf_AddItemEx2({2,0,30000,1}, "Tinh Anh LÖnh Kú", "Bang Hoi Tinh Anh 12", "nhËn", 3 * 24 * 3600)
+	gf_AddItemEx2({2,0,30000,1}, "Elite Token", "Bang Hoi Tinh Anh 12", "nhËn", 3 * 24 * 3600)
 	gf_SetTaskByte(TASK_BHTA6, BYTE_BHTA6_GET_TALK, nCountTALK + 1)
 	main()
 end
@@ -567,7 +567,7 @@ function viewList()
 			szList = szList .. LIB_txtData.tbTextData[i][3] .. ", "
 			nCount = nCount + 1
 	end
-	Talk(1,"", szNPCName.."Bang héi <color=yellow>"..szTong.."<color> ®· ®¨ng ký <color=yellow>"..nCount.."<color> thµnh viªn gåm: "..szList)
+	Talk(1,"", szNPCName.."Bang héi <color=yellow>"..szTong.."<color> has registered for <color=yellow>"..nCount.."<color> thµnh viªn gåm: "..szList)
 end
 
 --======================== Binh chon giai cao cap ========================
@@ -586,7 +586,7 @@ function BinhChonBHTA_CC_Form()
 		
 	tbSay[0] = szNPCName.."C¸c h¹ h·y b×nh chän bang héi ®¹i diÖn quèc gia tham gia thi ®Êu."
 	if tbBangHoiTA12[nServerID] ~= nil then		
-		tinsert(tbSay,"B×nh chän cho bang "..tbBangHoiTA12[nServerID][1].."/#BinhChonBHTA_CC_Step2(1)")		
+		tinsert(tbSay,"Vote for guild"..tbBangHoiTA12[nServerID][1].."/#BinhChonBHTA_CC_Step2(1)")		
 	else
 		tinsert(tbSay,"Kh«ng cã bang héi nµo ®¨ng ký tham gia/gf_DoNothing")
 	end	
@@ -603,7 +603,7 @@ function ViewVote()
 	local nCount = LIB_txtData.tbTextData[1][2]
 	
 	if tbBangHoiTA12[nServerID] ~= nil then
-		Talk(1,"", szNPCName.."Bang héi "..tbBangHoiTA12[nServerID][1].." ®· cã "..nCount.." ®iÓm tÝch lòy ")
+		Talk(1,"", szNPCName.."Bang héi "..tbBangHoiTA12[nServerID][1].." already has"..nCount.." ®iÓm tÝch lòy ")
 	else	
 		Talk(1,"","Ch­a cã bang héi nµo ®­îc b×nh chän")
 	end	
@@ -656,7 +656,7 @@ function BinhChonBHTA_SC_Form()
 	tbSay[0] = szNPCName.."C¸c h¹ h·y b×nh chän bang héi ®¹i diÖn quèc gia tham gia thi ®Êu."
 	if tbBangSieuCap[nServerID] ~= nil then
 		for i=1,getn(tbBangSieuCap[nServerID]) do
-			tinsert(tbSay,"- "..tbBangSieuCap[nServerID][i]..": ".. LIB_txtData.tbTextData[i] .." l­ît/#BinhChonBHTA_SC_Step2("..i..")")
+			tinsert(tbSay,"- "..tbBangSieuCap[nServerID][i]..": ".. LIB_txtData.tbTextData[i] .." turns/#BinhChonBHTA_SC_Step2("..i..")")
 		end
 	end
 	gf_PageSay(tbSay, 1, 6);
@@ -853,7 +853,7 @@ function  FormDangKyTeamHN()
 	end	
 	-- Dang ky
 	if CheckRule() == 1 then
-		AskClientForString("KiemTraDangKyHN","Tªn ®éi.",2,32,"Tªn ®éi: (2-32 ký tù)");
+		AskClientForString("KiemTraDangKyHN","Team name.",2,32,"Team name: (2-32 characters)");
 	end
 end
 
@@ -870,7 +870,7 @@ function KiemTraDangKyHN(szTeamName)
 	
 	for i = 1, getn(LIB_txtData.tbTextData) do
 		if tostring(szTeamName) == tostring(LIB_txtData.tbTextData[i][2]) then
-			Talk(1,"","Tªn ®éi " .. szTeamName .. " ®· cã ng­êi ®¨ng ký.")
+			Talk(1,"","Team name" .. szTeamName .. " ®· cã ng­êi ®¨ng ký.")
 			return 0
 		end
 	end
@@ -932,7 +932,7 @@ function  FormDangKyTeamHCM()
 	end	
 	-- Dang ky
 	if CheckRule() == 1 then
-		AskClientForString("KiemTraDangKyHCM","Tªn ®éi.",2,32,"Tªn ®éi: (2-32 ký tù)");
+		AskClientForString("KiemTraDangKyHCM","Team name.",2,32,"Team name: (2-32 characters)");
 	end
 end
 
@@ -948,7 +948,7 @@ function KiemTraDangKyHCM(szTeamName)
 	
 	for i = 1, getn(LIB_txtData.tbTextData) do
 		if tostring(szTeamName) == tostring(LIB_txtData.tbTextData[i][2]) then
-			Talk(1,"","Tªn ®éi " .. szTeamName .. " ®· cã ng­êi ®¨ng ký.")
+			Talk(1,"","Team name" .. szTeamName .. " ®· cã ng­êi ®¨ng ký.")
 			return 0
 		end
 	end

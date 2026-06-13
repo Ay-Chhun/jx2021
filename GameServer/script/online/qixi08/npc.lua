@@ -83,16 +83,16 @@ function main()
 	local nYear2,nMonth2,nDay2 = QX08_GetDate(g_nGameEndDate);
 	local nYear3,nMonth3,nDay3 = QX08_GetDate(g_nAwardEndDate);
 	if nDate < g_nGameBeginDate then
-		Talk(1,"",g_szInfoHead.."Thêi gian ho¹t ®éng <color=yellow>"..nYear1.."niªn"..nMonth1.."NguyÖt"..nDay1.." ®Õn "..nYear2.."niªn"..nMonth2.."NguyÖt"..nDay2.."<color>, vŞ thiÕu hiÖp nµy ®Õn lóc nhí ghĞ l¹i xem.");
+		Talk(1,"",g_szInfoHead.."Thêi gian ho¹t ®éng <color=yellow>"..nYear1.."year"..nMonth1.."NguyÖt"..nDay1.." to"..nYear2.."year"..nMonth2.."NguyÖt"..nDay2.."<color>, vŞ thiÕu hiÖp nµy ®Õn lóc nhí ghĞ l¹i xem.");
 		return 0;
 	end;
 	if nDate > g_nGameEndDate then
 		local selTab2 = {};
 		if nDate <= g_nAwardEndDate then
-			tinsert(selTab2,"Dïng ®iÓm thi ®Êu ®æi phÇn th­ëng (Thêi h¹n: "..nYear3.."niªn"..nMonth3.."NguyÖt"..nDay3..")/point_award");
+			tinsert(selTab2,"Dïng ®iÓm thi ®Êu ®æi phÇn th­ëng (Thêi h¹n: "..nYear3.."year"..nMonth3.."NguyÖt"..nDay3..")/point_award");
 		end;
-		tinsert(selTab2,"KÕt thóc ®èi tho¹i/nothing");
-		Say(g_szInfoHead.."Thêi gian lÇn ho¹t ®éng nµy lµ <color=yellow>"..nYear1.."niªn"..nMonth1.."NguyÖt"..nDay1.." ®Õn "..nYear2.."niªn"..nMonth2.."NguyÖt"..nDay2.."<color>, hiÖn ®· qu¸ thêi gian ho¹t ®éng, xin lÇn sau quay l¹i.",getn(selTab2),selTab2);
+		tinsert(selTab2,"End dialogue/nothing");
+		Say(g_szInfoHead.."Thêi gian lÇn ho¹t ®éng nµy lµ <color=yellow>"..nYear1.."year"..nMonth1.."NguyÖt"..nDay1.." to"..nYear2.."year"..nMonth2.."NguyÖt"..nDay2.."<color>, hiÖn ®· qu¸ thêi gian ho¹t ®éng, xin lÇn sau quay l¹i.",getn(selTab2),selTab2);
 		return 0;
 	end;
 	local szGameName,nGameID = QX08_GetTodayGame();
@@ -100,32 +100,32 @@ function main()
 	local nYear5,nMonth5,nDay5 = QX08_GetDate(g_nQiXiEndDate);
 	local nYear6,nMonth6,nDay6 = QX08_GetDate(g_nYearsEndDate);
 	if nDate <= g_nQiXiEndDate then
-		tinsert(selTab,"LÔ thÊt tŞch cïng nhau cÇu nguyÖn (Thêi gian më: "..nYear4.."niªn"..nMonth4.."NguyÖt"..nDay4.." ®Õn "..nYear5.."niªn"..nMonth5.."NguyÖt"..nDay5..")/aoyun_star_main");
+		tinsert(selTab,"LÔ thÊt tŞch cïng nhau cÇu nguyÖn (Thêi gian më: "..nYear4.."year"..nMonth4.."NguyÖt"..nDay4.." to"..nYear5.."year"..nMonth5.."NguyÖt"..nDay5..")/aoyun_star_main");
 	end;
 	if nGameID == GAME_ID_GUESS then
 		tinsert(selTab,"Thi ®Êu Thiªn C¬ ThÇn To¸n (Thø 2, thø 4, thø 6)/#enter_aoyun_game(1)");
 	elseif nGameID == GAME_ID_BOX then
 		tinsert(selTab,"Thi ®Êu §o¹t B¶o Kú Binh (Thø 3, thø 5, thø 7)/#enter_aoyun_game(2)");
 	elseif nGameID == GAME_ID_LIGHT then
-		tinsert(selTab,"Héi th¾p ®Ìn (Chñ nhËt)/#enter_aoyun_game(3)");
+		tinsert(selTab,"Lantern Lighting Assembly (Sunday)/#enter_aoyun_game(3)");
 	end;
 	if nDate <= g_nAwardEndDate then
-		tinsert(selTab,"Dïng ®iÓm thi ®Êu ®æi phÇn th­ëng (Thêi h¹n: "..nYear3.."niªn"..nMonth3.."NguyÖt"..nDay3..")/point_award");
+		tinsert(selTab,"Dïng ®iÓm thi ®Êu ®æi phÇn th­ëng (Thêi h¹n: "..nYear3.."year"..nMonth3.."NguyÖt"..nDay3..")/point_award");
 	end;
 --	tinsert(selTab,"ÁìÈ¡¡°ÌìÏÂµÚÒ»±ÈÎäÑûÇëº¯¡±/get_ticket");
 	tinsert(selTab,"Xem thêi gian ho¹t ®éng/see_game_schedule");
 	tinsert(selTab,"NhËn h­íng dÉn ho¹t ®éng trßn 20 n¨m/get_book");
 	if nDate >= g_nYearsBeginDate and nDate <= g_nYearsEndDate then
-		tinsert(selTab,"NhËn danh hiÖu Mõng trßn 20 n¨m (Thêi h¹n nhËn: "..nYear6.."niªn"..nMonth6.."NguyÖt"..nDay6..")/get_years_title");
+		tinsert(selTab,"NhËn danh hiÖu Mõng trßn 20 n¨m (Thêi h¹n nhËn: "..nYear6.."year"..nMonth6.."NguyÖt"..nDay6..")/get_years_title");
 	end
 	if nDate <= 20080823 then
 		tinsert(selTab,"Ta muèn nhËn båi th­êng Héi th¾p ®Ìn chñ nhËt tr­íc (17/8). (Thêi h¹n: 23/8)/diandeng_buchang");
 	end 	
-	tinsert(selTab,"Ta ®Õn xem thö/nothing");
+	tinsert(selTab,"I'll come take a look/nothing");
 	if DEBUG_VERSION == 1 then
 		tinsert(selTab,"Lèi vµo kiÓm tra/test_entry");
 	end;
-	Say(g_szInfoHead.."N¨m 1988 «ng CÇu B¸ Qu©n viÕt ra wps, ®¸nh dÊu thµnh lËp cña c«ng ty Kingsoft, ®Õn nay ®· 20 n¨m, trong 20 n¨m ®ã, Kingsoft ®¾ng cay cã vinh quang cã nh­ng cho dï lóc nµo còng cã sù ñng hé cña mäi ng­êi. Tõ b©y giê ®Õn 23 giê 27/1/2009, sÏ më ho¹t ®éng Kû niÖm 20 n¨m Kingsoft, hoan nghªnh mäi ng­êi tham gia, ta ®· chuÈn rÊt nhiÒu trß ch¬i nhá hÊp dÉn. Mçi ngµy chØ cã thÓ tham gia mét trß ch¬i nhá. <color=yellow>H«m nay: ["..szGameName.."]. Thêi gian ho¹t ®éng: "..nYear1.."niªn"..nMonth1.."NguyÖt"..nDay1.." ®Õn "..nYear2.."niªn"..nMonth2.."NguyÖt"..nDay2.." mçi ngµy tõ 9:00 ®Õn 23:00<color>. Xin chó ı, mçi ng­êi nhiÒu nhÊt chØ cã thÓ tİch lòy 200 ®iÓm.",getn(selTab),selTab);
+	Say(g_szInfoHead.."N¨m 1988 «ng CÇu B¸ Qu©n viÕt ra wps, ®¸nh dÊu thµnh lËp cña c«ng ty Kingsoft, ®Õn nay ®· 20 n¨m, trong 20 n¨m ®ã, Kingsoft ®¾ng cay cã vinh quang cã nh­ng cho dï lóc nµo còng cã sù ñng hé cña mäi ng­êi. Tõ b©y giê ®Õn 23 giê 27/1/2009, sÏ më ho¹t ®éng Kû niÖm 20 n¨m Kingsoft, hoan nghªnh mäi ng­êi tham gia, ta ®· chuÈn rÊt nhiÒu trß ch¬i nhá hÊp dÉn. Mçi ngµy chØ cã thÓ tham gia mét trß ch¬i nhá. <color=yellow>H«m nay: ["..szGameName.."]. Thêi gian ho¹t ®éng: "..nYear1.."year"..nMonth1.."NguyÖt"..nDay1.." to"..nYear2.."year"..nMonth2.."NguyÖt"..nDay2.." mçi ngµy tõ 9:00 ®Õn 23:00<color>. Xin chó ı, mçi ng­êi nhiÒu nhÊt chØ cã thÓ tİch lòy 200 ®iÓm.",getn(selTab),selTab);
 end;
 
 function see_game_schedule()
@@ -136,8 +136,8 @@ function see_game_schedule()
 				"Thø n¨m: §o¹t B¶o Kú Binh/#know_game_detail(2)",
 				"Thø 6: Thiªn C¬ ThÇn To¸n/#know_game_detail(1)",
 				"Thø 7: §o¹t B¶o Kú Binh/#know_game_detail(2)",
-				"Chñ nhËt: Héi th¾p ®Ìn/#know_game_detail(3)",
-				"Ta ®· hiÓu/main",
+				"Sunday: Lantern Lighting Assembly/#know_game_detail(3)",
+				"I understand/main",
 				}
 	Say(g_szInfoHead.."Sau ®©y lµ s¾p xÕp cña thø 2:",getn(selTab),selTab);
 end;
@@ -171,10 +171,10 @@ function test_entry()
 	local selTab = {
 			"Thi ®Êu Thiªn C¬ ThÇn To¸n/aoyun_guess_main",
 			"Thi ®Êu §o¹t B¶o Kú Binh/aoyun_box_main",
-			"§iÓm §¨ng Héi/aoyun_light_main",
-			"Kh«ng cã g×/nothing",
+			"Lantern Festival Event/aoyun_light_main",
+			"Nothing/nothing",
 			}
-	Say(g_szInfoHead.."§Ó kiÓm tra",getn(selTab),selTab);
+	Say(g_szInfoHead.."For checking",getn(selTab),selTab);
 end;
 
 function use_point()
@@ -186,7 +186,7 @@ function use_point()
 	end;
 	local nPoint = GetTask(TSK_AOYUN_POINT);
 	local selTab = {
-				"Dïng ®iÓm ®æi trang bŞ linh khİ cao (Thêi h¹n: "..nYear.."niªn"..nMonth.."NguyÖt"..nDay..")/exchange_equipment",
+				"Dïng ®iÓm ®æi trang bŞ linh khİ cao (Thêi h¹n: "..nYear.."year"..nMonth.."NguyÖt"..nDay..")/exchange_equipment",
 				"Lµm sao ®æi trang bŞ linh khİ cao/know_how_to_get_point",
 				"T¹m kh«ng ®æi phÇn th­ëng/nothing",
 				}
@@ -202,11 +202,11 @@ function point_award()
 	end;
 	local nPoint = GetTask(TSK_AOYUN_POINT);
 	local strtab = {
-				"Dïng ®iÓm ®æi phÇn th­ëng (Thêi h¹n: "..nYear.."niªn"..nMonth.."NguyÖt"..nDay..")/exchange_award",
+				"Dïng ®iÓm ®æi phÇn th­ëng (Thêi h¹n: "..nYear.."year"..nMonth.."NguyÖt"..nDay..")/exchange_award",
 				"Lµm sao dïng ®iÓm ®æi phÇn th­ëng/know_how_to_get_point",
 				"T¹m kh«ng ®æi phÇn th­ëng/nothing"
 				};
-	Say(g_szInfoHead.."Ng­¬i cã thÓ dïng ®iÓm ®Ó ®æi c¸c lo¹i phÇn th­ëng t¹i ®©y, ®iÓm kh«ng ®ñ th× cã thÓ tham gia ho¹t ®éng thu thËp, nh­ vËy tuy kh«ng cã phÇn th­ëng b×nh th­êng, nh­ng cã phÇn th­ëng ®iÓm rÊt cao. §iÓm hiÖn t¹i lµ: <color=yellow>"..nPoint.."<color>, xin tr­íc 23 giê ngµy "..nYear.."niªn"..nMonth.."NguyÖt"..nDay.." nhËn phÇn th­ëng.",getn(strtab),strtab);
+	Say(g_szInfoHead.."Ng­¬i cã thÓ dïng ®iÓm ®Ó ®æi c¸c lo¹i phÇn th­ëng t¹i ®©y, ®iÓm kh«ng ®ñ th× cã thÓ tham gia ho¹t ®éng thu thËp, nh­ vËy tuy kh«ng cã phÇn th­ëng b×nh th­êng, nh­ng cã phÇn th­ëng ®iÓm rÊt cao. §iÓm hiÖn t¹i lµ: <color=yellow>"..nPoint.."<color>, xin tr­íc 23 giê ngµy "..nYear.."year"..nMonth.."NguyÖt"..nDay.." nhËn phÇn th­ëng.",getn(strtab),strtab);
 end
 
 function exchange_award()
@@ -231,7 +231,7 @@ function change_one_box()
 		Say(g_szInfoHead.."Muèn dïng 1 ®iÓm tİch lòy ®æi 1 R­¬ng kû niÖm 20 n¨m kh«ng?",
 			3,
 			"õ, ta muèn ®æi./input_box_num",
-			"Kh«ng, ta nhÇm!/exchange_award",
+			"No, I made a mistake!/exchange_award",
 			"Trë l¹i ®æi phÇn th­ëng sau/nothing")
 	end
 end
@@ -282,10 +282,10 @@ function ask_exchange_award(nJifen)
 	local nExpArg = nLv^3/80^3;
 	local nExp = floor(tJifenAward[nJifen][6]*nExpArg);
 	local nExpNum = GetTask(TSK_AOYUN_EXP_NUM);
-	Say(g_szInfoHead.."Muèn dïng "..nJifen.." ®iÓm tİch lòy ®æi "..tJifenAward[nJifen][5].."c¸i"..tJifenAward[nJifen][1].." vµ"..nExp.." kinh nghiÖm kh«ng? <color=red>Chó ı, cho dï ®æi phÇn th­ëng nµo, phÇn th­ëng kinh nghiÖm mçi tuÇn nhiÒu nhÊt chØ nhËn "..g_nExpNum.." lÇn, ®©y lµ lÇn "..(nExpNum+1).." nhËn phÇn th­ëng.<color>",
+	Say(g_szInfoHead.."Muèn dïng "..nJifen.." ®iÓm tİch lòy ®æi "..tJifenAward[nJifen][5].."c¸i"..tJifenAward[nJifen][1].." and"..nExp.." kinh nghiÖm kh«ng? <color=red>Chó ı, cho dï ®æi phÇn th­ëng nµo, phÇn th­ëng kinh nghiÖm mçi tuÇn nhiÒu nhÊt chØ nhËn "..g_nExpNum.." lÇn, ®©y lµ lÇn "..(nExpNum+1).." nhËn phÇn th­ëng.<color>",
 			3,
 			"õ, ta muèn ®æi./#confirm_exchange_award("..nJifen..")",
-			"Kh«ng, ta nhÇm!/exchange_award",
+			"No, I made a mistake!/exchange_award",
 			"Trë l¹i ®æi phÇn th­ëng sau/nothing")
 end
 
@@ -315,9 +315,9 @@ function confirm_exchange_award(nJifen)
 	SetTask(TSK_AOYUN_EXP_NUM,GetTask(TSK_AOYUN_EXP_NUM)+1);
 	AddItem(tJifenAward[nJifen][2],tJifenAward[nJifen][3],tJifenAward[nJifen][4],tJifenAward[nJifen][5]);
 	ModifyExp(nExp);
-	Msg2Player("B¹n nhËn ®­îc "..tJifenAward[nJifen][5].."c¸i"..tJifenAward[nJifen][1].." vµ"..nExp.." kinh nghiÖm.");
+	Msg2Player("B¹n nhËn ®­îc "..tJifenAward[nJifen][5].."c¸i"..tJifenAward[nJifen][1].." and"..nExp.." kinh nghiÖm.");
 	WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..nJifen.."§æi phÇn th­ëng.");
-	Talk(1,"exchange_award",g_szInfoHead.."Chóc mõng b¹n nhËn ®­îc "..tJifenAward[nJifen][5].."c¸i"..tJifenAward[nJifen][1].." vµ"..nExp.." kinh nghiÖm.");
+	Talk(1,"exchange_award",g_szInfoHead.."Chóc mõng b¹n nhËn ®­îc "..tJifenAward[nJifen][5].."c¸i"..tJifenAward[nJifen][1].." and"..nExp.." kinh nghiÖm.");
 end
 
 function exchange_miji()
@@ -337,10 +337,10 @@ function ask_change_miji(nType)
 		Talk(1,"",g_szInfoHead.."Xin lçi, ®iÓm kh«ng ®ñ ®Ó ®æi phÇn th­ëng, ®iÓm hiÖn lµ: <color=yellow>"..nPoint.."<color>.")
 		return 0;
 	end	
-	Say(g_szInfoHead.."Muèn dïng 200 ®iÓm tİch lòy ®æi <color=yellow>"..tMijiName[nType][1].."<color> chø?",
+	Say(g_szInfoHead.."Muèn dïng 200 ®iÓm tİch lòy ®æi <color=yellow>"..tMijiName[nType][1].."<color> ?",
 			3,
 			"õ, ta muèn ®æi./#confirm_exchange_miji("..nType..")",
-			"Kh«ng, ta nhÇm!/exchange_miji",
+			"No, I made a mistake!/exchange_miji",
 			"T¹m kh«ng ®æi phÇn th­ëng/nothing")	
 end
 
@@ -368,7 +368,7 @@ function exchange_equipment()
 	local selTab = {
 				"Trang søc/#exchange_equipment_1(1)",
 				"Ngo¹i trang/#exchange_equipment_1(2)",
-				"H¹ y/#exchange_equipment_1(3)",
+				"Lower garment/#exchange_equipment_1(3)",
 				"Vò khİ/#exchange_equipment_1(4)",
 				"T¹m thêi kh«ng ®æi/nothing",
 				}
@@ -426,7 +426,7 @@ end;
 
 function exchange_equipment_3(nEquipType,nLevel,nJO)
 	local selTab = {
-				"§ång ı ®æi /#exchange_equipment_4("..nEquipType..","..nLevel..","..nJO..")",
+				"Agree to exchange /#exchange_equipment_4("..nEquipType..","..nLevel..","..nJO..")",
 				"Chän l¹i/exchange_equipment",
 				"T¹m thêi kh«ng ®æi/nothing",
 				}
@@ -456,7 +456,7 @@ function exchange_equipment_4(nEquipType,nLevel,nJO)
 	SetTask(TSK_AOYUN_POINT,nPoint-g_nEquipPoint);
 	szEquipName = sf_RemoveTag(szEquipName,"<",">");
 	Msg2Player("B¹n ®æi "..g_nEquipPoint.." ®iÓm tİch luü ho¹t ®éng ®æi 1 "..szEquipName);
-	WriteLog("[Ho¹t ®éng Olympic]:"..GetName().." ®· ®æi 1 "..szEquipName..". Tİch luü cßn: "..(nPoint-g_nEquipPoint));
+	WriteLog("[Ho¹t ®éng Olympic]:"..GetName().." has exchanged for 1"..szEquipName..". Tİch luü cßn: "..(nPoint-g_nEquipPoint));
 end;
 
 function know_how_to_get_point()
@@ -464,7 +464,7 @@ function know_how_to_get_point()
 end;
 
 function get_equip_describe(nEquipType,nLevel,nJO)
-	local tbEquipName = {"Trang søc","Ngo¹i trang","QuÇn ","Vò khİ"};
+	local tbEquipName = {"Trang søc","Ngo¹i trang","Pants","Vò khİ"};
 	local szEquipName = "";
 	local szLingQi = "";
 	local tbEquipInfo = {};
@@ -553,7 +553,7 @@ function get_years_title()
 	local nYear6,nMonth6,nDay6 = QX08_GetDate(g_nYearsEndDate);
 	Say(g_szInfoHead.."Hai m­¬i n¨m tr­íc, CÇu B¸ Qu©n tiªn sinh ®· viÕt nªn phÇn mÒm xö lı wps, ®¸nh dÊu viÖc s¸ng lËp Kingsoft. Chíp m¾t ®· 20 n¨m tr«i qua, Kingsoft ®· tr¶i qua biÕt bao th¨ng trÇm, nh­ng kh«ng cã sù quan t©m ñng hé cña ng­êi dïng th× sÏ kh«ng cã Kingsoft ngµy h«m nay. Tõ 18/11 ®Õn 23h 24/11, nh©n dŞp kû niÖm 20 n¨m thµnh lËp Kingsoft, chóng t«i ®· chuÈn bŞ mét sè lÔ vËt, hy väng b¹n sÏ thİch!",
 			3,
-			"NhËn danh hiÖu Mõng trßn 20 n¨m (Thêi h¹n nhËn: "..nYear6.."niªn"..nMonth6.."NguyÖt"..nDay6..")/ask_get_title",
+			"NhËn danh hiÖu Mõng trßn 20 n¨m (Thêi h¹n nhËn: "..nYear6.."year"..nMonth6.."NguyÖt"..nDay6..")/ask_get_title",
 			"KiÓm tra thêi gian nhËn danh hiÖu vµ thêi gian hiÖu qu¶/check_title_time",
 			"Ta chØ ®Õn xem thö/nothing");
 end
@@ -598,11 +598,11 @@ function check_title_time()
 	local nBeginDate = GetTask(TSK_YEARS_BEGIN_DATE);
 	local nYear6,nMonth6,nDay6 = QX08_GetDate(g_nYearsEndDate);
 	if nBeginDate == 0 then
-		Talk(1,"get_years_title",g_szInfoHead.."Thêi gian hÕt h¹n nhËn danh hiÖu lµ: <color=yellow>"..nYear6.."niªn"..nMonth6.."NguyÖt"..nDay6.." ngµy<color>.");
+		Talk(1,"get_years_title",g_szInfoHead.."Thêi gian hÕt h¹n nhËn danh hiÖu lµ: <color=yellow>"..nYear6.."year"..nMonth6.."NguyÖt"..nDay6.." ngµy<color>.");
 	else
 		local nEndDate = GetTask(TSK_YEARS_END_DATE);
 		local nYear1,nMonth1,nDay1 = QX08_GetDate(nBeginDate);
 		local nYear2,nMonth2,nDay2 = QX08_GetDate(nEndDate);
-		Talk(1,"get_years_title",g_szInfoHead.."Thêi gian nhËn danh hiÖu cña b¹n lµ <color=yellow>"..nYear1.."niªn"..nMonth1.."NguyÖt"..nDay1.." ngµy<color>, thêi gian hÕt h¹n nhËn kinh nghiÖm lµ <color=yellow>"..nYear2.."niªn"..nMonth2.."NguyÖt"..nDay2.." ngµy<color>.");
+		Talk(1,"get_years_title",g_szInfoHead.."Thêi gian nhËn danh hiÖu cña b¹n lµ <color=yellow>"..nYear1.."year"..nMonth1.."NguyÖt"..nDay1.." ngµy<color>, thêi gian hÕt h¹n nhËn kinh nghiÖm lµ <color=yellow>"..nYear2.."year"..nMonth2.."NguyÖt"..nDay2.." ngµy<color>.");
 	end
 end

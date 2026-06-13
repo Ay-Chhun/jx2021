@@ -55,7 +55,7 @@ function OnProcessCallBack(wCurProcess, wMaxProcess, wCheckCode)
 		if wCurProcess ==  (wMaxProcess - 1) then
 			if _CheckMeridianCanUpdateToLevel2() == 1 then
 				if 1 == _DoMeridiaUpdateToLevel2() then
-					gf_WriteLogEx("KICK HOAT KINH MACH", "thµnh c«ng", 1, "Vâ Gi¶")					
+					gf_WriteLogEx("KICK HOAT KINH MACH", "thµnh c«ng", 1, "Martial Adept")					
 					SetCurrentNpcSFX(nPidxNpc,901,0,1); --µØÃæÌØÐ§
 				end
 			end

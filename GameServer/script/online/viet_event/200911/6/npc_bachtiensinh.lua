@@ -43,7 +43,7 @@ function main()
 		tinsert(tSay,"Söa ch÷a kü n¨ng trÊn ph¸i/OnNpcTalkRepairGreatSkill")		
 	end	
 	if PhucSinh2_CheckFinishMission() ~= 1 then
-		tinsert(tSay, "Thö th¸ch Phôc Sinh 2/NhiemVuPhucSinh2_Menu")
+		tinsert(tSay, "Revival Challenge 2/NhiemVuPhucSinh2_Menu")
 	end
 	if PhucSinh2_CheckFinishMission() == 1 then
 		tinsert(tSay,"Hoµn thµnh nhiÖm vô Phôc Sinh lÇn 2/PS2_finishTask")
@@ -51,7 +51,7 @@ function main()
 	tinsert(tSay,"NhiÖm vô ChuyÓn Sinh - C¶i L·o Hoµn §ång/translife_task")
 	tinsert(tSay,"T×m hiÓu c¸c h­íng tu luyÖn/view_info")
 	tinsert(tSay,"NhËn l¹i Ên vµ ngo¹i trang chuyÓn sinh/get_translife_item")
-	tinsert(tSay,"NhiÖm vô thu thËp ThÞt N­íng/accept_task_thonuong")	
+	tinsert(tSay,"Grilled Meat collection quest/accept_task_thonuong")	
 	tinsert(tSay,"T¹i h¹ chØ ghÐ qua!/nothing")
 	
 	local szSay = szNpcName.."L·o nghe nãi cã mãn <color=yellow>ThÞt N­íng<color> rÊt ngon. L·o nay ®· giµ, kh«ng tiÖn ®Õn nh÷ng n¬i xa x«i ®Ó t×m thÞt n­íng. Ng­¬i cã thÓ gióp ta t×m <color=yellow>20 phÇn ThÞt N­íng<color> ®­îc hay kh«ng?"
@@ -129,14 +129,14 @@ function give_tra()
 			if nRand == 1 then
 				Earn(300000)
 				Msg2Player("B¹n nhËn ®­îc 30 vµng.")
-				WriteLogEx(VIET_0911_LOG_TITLE,"tÆng quµ",30,"vµng")
+				WriteLogEx(VIET_0911_LOG_TITLE,"gift",30,"gold")
 			else
 				local nRetCode, nIndex = gf_AddItemEx(tbVIET_0911_TANGQUASUPHU[nRand][3], tbVIET_0911_TANGQUASUPHU[nRand][1]);					
 				if nRetCode == 1 and tbVIET_0911_TANGQUASUPHU[nRand][4] ~= 0 then
 					SetItemExpireTime(nIndex, tbVIET_0911_TANGQUASUPHU[nRand][4]);
 				end				
 				Msg2Player("B¹n nhËn ®­îc 1 "..tbVIET_0911_TANGQUASUPHU[nRand][1])
-				WriteLogEx(VIET_0911_LOG_TITLE,"tÆng quµ",1,tbVIET_0911_TANGQUASUPHU[nRand][1])
+				WriteLogEx(VIET_0911_LOG_TITLE,"gift",1,tbVIET_0911_TANGQUASUPHU[nRand][1])
 			end	
 			
 			local nRand = random(1,100)
@@ -152,7 +152,7 @@ function give_tra()
 				if tbVIET_0911_WEAPON[nRoute] ~= nil then
 					AddItem(tbVIET_0911_WEAPON[nRoute][2],tbVIET_0911_WEAPON[nRoute][3],tbVIET_0911_WEAPON[nRoute][4],1,1,0,0,0,0,0,0,0,0,nLingShi)
 					Msg2Player("B¹n nhËn ®­îc 1 "..tbVIET_0911_WEAPON[nRoute][1])
-					WriteLogEx(VIET_0911_LOG_TITLE,"tÆng quµ",1,tbVIET_0911_WEAPON[nRoute][1])
+					WriteLogEx(VIET_0911_LOG_TITLE,"gift",1,tbVIET_0911_WEAPON[nRoute][1])
 				end
 			end						
 		end
@@ -206,7 +206,7 @@ function take_tra_award()
 		SetTask(VIET_0911_TASK_JUHUACHA_COUNT,VIET_0911_JUHUACHA_MAX_COUNT + 1)		
 		local nRand = gf_GetRandItemByTable(tbVIET_0911_JUHUACHA_AWARD_FULL, 1000000, 6);
 		local nRetCode, nIndex = gf_AddItemEx(tbVIET_0911_JUHUACHA_AWARD_FULL[nRand][3], tbVIET_0911_JUHUACHA_AWARD_FULL[nRand][1]);
-		WriteLogEx(VIET_0911_LOG_TITLE,"Trµ Hoa Cóc full",1,tbVIET_0911_JUHUACHA_AWARD_FULL[nRand][1])
+		WriteLogEx(VIET_0911_LOG_TITLE,"Chrysanthemum Tea full",1,tbVIET_0911_JUHUACHA_AWARD_FULL[nRand][1])
 		Say(szNpcName.."Chóc mõng c¸c h¹ nhËn ®­îc 1 "..tbVIET_0911_JUHUACHA_AWARD_FULL[nRand][1],0)
 		if nRetCode == 1 and tbVIET_0911_JUHUACHA_AWARD_FULL[nRand][4] ~= 0 then
 			SetItemExpireTime(nIndex, tbVIET_0911_JUHUACHA_AWARD_FULL[nRand][4]);
@@ -297,7 +297,7 @@ function active_VIP()
 	end
 	DelItem(2,1,30230,10)
 	SetTask(TSK_ACTIVE_VIP_THONUONG,1)
-	gf_WriteLogEx("KICK HOAT VIP", "kick ho¹t thµnh c«ng", 1, "VIP thá n­íng")
+	gf_WriteLogEx("KICK HOAT VIP", "kick ho¹t thµnh c«ng", 1, "VIP grilled rabbit")
 end
 -- TiÕp nhËn nhiÖm vô thÞt n­íng
 function confirm_task_thonuong()
@@ -384,11 +384,11 @@ function finish_task_thonuong()
 			local nRand = random(1, 100)
 			local nDoneTimes = get_task_thonuong(BYTE_COUNT_FINISH)
 			if nRand <= 60 then
-				gf_AddItemEx2({1, 1, 19, 5}, "T©y B¾c Väng", "Nhiem vu Tho Nuong Bach Tien Sinh", "nhËn th­ëng nhiÖm vô lÇn thø "..nDoneTimes)
+				gf_AddItemEx2({1, 1, 19, 5}, "Northwest Gaze", "Nhiem vu Tho Nuong Bach Tien Sinh", "nhËn th­ëng nhiÖm vô lÇn thø "..nDoneTimes)
 			elseif nRand <= 80 then
 				gf_AddItemEx2({1, 1, 17, 5}, "Minh NguyÖt D¹", "Nhiem vu Tho Nuong Bach Tien Sinh", "nhËn th­ëng nhiÖm vô lÇn thø "..nDoneTimes)
 			else
-				gf_AddItemEx2({1, 1, 15, 5}, "B¸nh Bét vµng", "Nhiem vu Tho Nuong Bach Tien Sinh", "nhËn th­ëng nhiÖm vô lÇn thø "..nDoneTimes)
+				gf_AddItemEx2({1, 1, 15, 5}, "Golden Flour Cake", "Nhiem vu Tho Nuong Bach Tien Sinh", "nhËn th­ëng nhiÖm vô lÇn thø "..nDoneTimes)
 			end
 		end
 		-----------------------Chuçi nhiÖm vô §ång Hµnh
@@ -417,7 +417,7 @@ function finish_task_thonuong()
 		gf_WriteLogEx("DA THONG KINH MACH", "®æi thµnh c«ng", nExpChanKhi, "®iÓm ch©n khÝ thá n­íng")		
 						
 		if tonumber(date("%y%m%d")) >= 100129 and tonumber(date("%y%m%d")) <= 100228 then		
-			gf_AddItemEx2({2,1,30146,80},"Tói Ngò S¾c","Hoat dong thang 3 nam 2010","B¹ch Tiªn Sinh")
+			gf_AddItemEx2({2,1,30146,80},"Five Colors Bag","Hoat dong thang 3 nam 2010","B¹ch Tiªn Sinh")
 		end		
 		WriteLogEx(VIET_0911_LOG_TITLE,"hoµn thµnh nhiÖm vô ThÞt N­íng")
 	end	
@@ -539,7 +539,7 @@ function PS2_finishTask()
 	tinsert(tbSayDialog,"Ta ®¹t cÊp 99 vµ d­ 60 tû ®iÓm kinh nghiÖm/#confirm_finish_quest(1)")
 	tinsert(tbSayDialog,"Ta ®¹t cÊp 99 vµ d­ 40 tû ®iÓm kinh nghiÖm/#confirm_finish_quest(2)")
 	tinsert(tbSayDialog,"Ta ®¹t cÊp 99 vµ d­ 20 tû ®iÓm kinh nghiÖm/#confirm_finish_quest(3)")
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/nothing"	)
+	tinsert(tbSayDialog,"End dialogue/nothing"	)
 	
 	nSaySize = getn(tbSayDialog);
 	Say(szSayHead, nSaySize, tbSayDialog);	
@@ -553,40 +553,40 @@ function confirm_finish_quest(nType)
 	local tSay = {}
 	local tHeader = szNpcName.."§¹i hiÖp qu¶ lµ mét kú nh©n trong Vâ L©m, b¾t ®Çu lÜnh ngé bÝ kÝp <color=yellow>Tø Linh Phôc Sinh<color> ®Ó ®ét ph¸ b×nh c¶nh. LÜnh ngé thµnh c«ng cã thÓ kich thÝch tiÒm lùc cña b¶n th©n ®¹t c¶nh giíi míi trong §¶ Th«ng Kinh M¹ch. !!!"
 	
-	tinsert(tSay, "Phôc sinh theo h­íng Long Tö/#cs7_finish_confrim(1,"..nType..")")			
-	tinsert(tSay, "Phôc sinh theo h­íng Hæ Tö/#cs7_finish_confrim(2,"..nType..")")			
+	tinsert(tSay, "Revive in the Dragon Son direction/#cs7_finish_confrim(1,"..nType..")")			
+	tinsert(tSay, "Revive in the Tiger Son direction/#cs7_finish_confrim(2,"..nType..")")			
 	tinsert(tSay, "Phôc sinh theo h­íng Phông Tö/#cs7_finish_confrim(4,"..nType..")")			
-	tinsert(tSay, "Phôc sinh theo h­íng ¦ng Tö/#cs7_finish_confrim(3,"..nType..")")		
+	tinsert(tSay, "Revive in the Eagle Son direction/#cs7_finish_confrim(3,"..nType..")")		
 	tinsert(tSay, "Ta ch­a muèn Phôc Sinh/nothing")		
 	Say(tHeader, getn(tSay), tSay)	
 end
 function cs7_finish_confrim(nType, nCheck)
 		local tb_translife_seal_cs7 = {
-							{"Long Tö Ên",{2,0,30002,1,1}, "Long Tö"},
-							{"Hæ Tö Ên",{2,0,30003,1,1}, "Hæ Tö"},
-							{"¦ng Tö Ên",{2,0,30006,1,1}, "¦ng Tö"},
+							{"Dragon Seal",{2,0,30002,1,1}, "Long Tö"},
+							{"Tiger Seal",{2,0,30003,1,1}, "Hæ Tö"},
+							{"Eagle Seal",{2,0,30006,1,1}, "¦ng Tö"},
 							{"Phông Tö Ên",{2,0,30005,1,1}, "Phông Tö"},							
 					}
 		local tb_translife_cloth_PS = {
 										[1] = {
-													{"ChuyÓn Sinh Trang", {0,108,30005,1,4,5,639,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,342,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,110,30005,1,4,6,306,6,102}},
+													{"Rebirth Manor", {0,108,30005,1,4,5,639,6,102}}, 
+													{"Rebirth Manor", {0,109,30005,1,4,5,342,6,102}}, 
+													{"Rebirth Manor", {0,110,30005,1,4,6,306,6,102}},
 											},		
 										[2] = {
-													{"ChuyÓn Sinh Trang", {0,108,30005,1,4,6,302,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,409,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,110,30005,1,4,5,79,5,80,6,102}},
+													{"Rebirth Manor", {0,108,30005,1,4,6,302,6,102}}, 
+													{"Rebirth Manor", {0,109,30005,1,4,5,409,6,102}}, 
+													{"Rebirth Manor", {0,110,30005,1,4,5,79,5,80,6,102}},
 											},
 										[3] = {
-													 {"ChuyÓn Sinh Trang", {0,108,30005,1,4,2,13075,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,342,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,110,30005,1,4,6,306,6,102}},
+													 {"Rebirth Manor", {0,108,30005,1,4,2,13075,6,102}}, 
+													 {"Rebirth Manor", {0,109,30005,1,4,5,342,6,102}}, 
+													 {"Rebirth Manor", {0,110,30005,1,4,6,306,6,102}},
 											},	
 										[4] = {
-													 {"ChuyÓn Sinh Trang", {0,108,30005,1,4,5,27,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,342,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,110,30005,1,4,4,292,4,293,6,102}},
+													 {"Rebirth Manor", {0,108,30005,1,4,5,27,6,102}}, 
+													 {"Rebirth Manor", {0,109,30005,1,4,5,342,6,102}}, 
+													 {"Rebirth Manor", {0,110,30005,1,4,4,292,4,293,6,102}},
 											},
 									}
 	local nPhucSinh_Count = GetPlayerRebornParam(0) 
@@ -594,7 +594,7 @@ function cs7_finish_confrim(nType, nCheck)
 	local tbType = {"Long Tö", "Hæ Tö", "¦ng Tö", "Phông Tö"}
 	local nType_cs6 = GetPlayerRebornParam(1)
 	if nType_cs6 < 0 or nType_cs6 > 4 then
-		Msg2Player("§· x¶y ra lçi")
+		Msg2Player("An error has occurred")
 		gf_WriteLogEx("LOI API", "ghi nhËn thµnh c«ng", 1, "Lçi API chuyÓn sinh 7")	
 		return
 	end
@@ -626,20 +626,20 @@ function cs7_finish_confrim(nType, nCheck)
 
 --	RemoveTitle(tb_translife_tittle[nTransCount][nRoute][2], tb_translife_tittle[nTransCount][nRoute][3])	
 
-	local tbVanSu = {"V¨n Sö ngo¹i trang",0,108,570,188}
+	local tbVanSu = {"Scholar Outfit",0,108,570,188}
 	local nPVanSu = tbVanSu[4]  + GetBody() - 1
 	for i = 0, 2 do
 		BigDelItem(0, 108 + i, nPVanSu, BigGetItemCount(0, 108 + i, nPVanSu))	
 	end
 	gf_AddItemEx(tb_translife_seal_cs7[nType][2], tb_translife_seal_cs7[nType][1])
-	gf_AddItemEx2({0, 105, 10107, 1, 4, -1, -1, -1, -1, -1, -1},"ThÊt tinh kiÕm", "That tinh kiem","mien phi 7 ngay",7*24*3600)
+	gf_AddItemEx2({0, 105, 10107, 1, 4, -1, -1, -1, -1, -1, -1},"Seven Star Sword", "That tinh kiem","mien phi 7 ngay",7*24*3600)
 	PlayerReborn(2,nType) -- ChuyÓn Sinh 7 thµnh c«ng (Phôc Sinh 2)
 	RemoveTitle(61,05)
 	AddTitle(61,06)
 	PhucSinh2_Award_SetStatus()
  	gf_WriteLogEx("CHUYEN SINH 7", "chuyÓn sinh thµnh c«ng", 1, "Finish nv chuyÓn Sinh 6 npc 2")	
 	Msg2Player("Chóc mõng ®¹i hiÖp ®· Phôc Sinh thµnh c«ng theo h­íng "..tbType[nType])
-	Say("Chóc mõng ®¹i hiÖp ®· lÜnh ngé thµnh c«ng bÝ kÝp gia truyÒn Tø Linh Phôc Sinh lÇn 2 !!!!! H·y ®¨ng nhËp l¹i.",1,"Tho¸t!/go_exit")
+	Say("Chóc mõng ®¹i hiÖp ®· lÜnh ngé thµnh c«ng bÝ kÝp gia truyÒn Tø Linh Phôc Sinh lÇn 2 !!!!! H·y ®¨ng nhËp l¹i.",1,"Exit!/go_exit")
 end
 	tCheck_PS2 = {	--Level, kinh nghiÖm, Th¸i dÞch Hçn Nguyªn, ChuyÓn Sinh §¬n, B¹ch Kim Hång Bao, Thiªn Th¹ch Tinh Th¹ch, ThÇn Tµi b¶o r­¬ng, ChiÕn thÇn hoµn, Huy ch­¬ng anh hïng
 					[1] = {99, 60, 4, 2, 2 , 0, 0, 0, 0},

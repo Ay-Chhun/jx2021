@@ -520,8 +520,8 @@ end
 
 function kgm_SetThienChiTangKiem(nLevel)
     nLevel = nLevel or 7
-    KsgItem:AddSuitByBody(30001, nLevel, 'Receive Heaven's Will Hidden Sword Set')
-    KsgItem:AddJewelry(30001, 3, 'Receive Heaven's Will Hidden Sword Set_Jewelry')
+    KsgItem:AddSuitByBody(30001, nLevel, 'Receive Heaven\'s Will Hidden Sword Set')
+    KsgItem:AddJewelry(30001, 3, 'Receive Heaven\'s Will Hidden Sword Set_Jewelry')
 end
 
 function kgm_nhanNLTuongSoai()

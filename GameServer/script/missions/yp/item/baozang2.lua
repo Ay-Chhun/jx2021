@@ -4,7 +4,7 @@ Include("\\script\\missions\\yp\\award.lua")
 tItemInfo = {
 	{"Kho B¸u Minh M«n",	2,97,33},
 	{"Kho B¸u Thiªn Long Tù",	2,97,34},
-	{"Kho B¸u Quúnh KÕt",	2,97,35},
+	{"Treasure Trove of Quynh Ket",	2,97,35},
 }
 
 function OnUse(nItemIdx)

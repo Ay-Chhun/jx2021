@@ -12,11 +12,11 @@ Include("\\script\\task\\world\\task_trigger_list.lua");
 function four_00_00()
     local szTalk = {
         "GÇn ®©y §«ng H¶i H¶i T©n xuÊt hiÖn nhiÒu ng­ qu¸i, nhiÒu ng­ d©n kh«ng d¸m ra biÓn ®¸nh b¾t, nghe nãi hä ®· ph¹m th­îng víi Long V­¬ng gia, míi bÞ trõng ph¹t nh­ vËy.",
-        "ChuyÖn g× l¹ vËy?",
+        "What strange thing is happening?",
         "Phu qu©n ta mÊy ngµy tr­íc ra biÓn hiÖn ch­a trë vÒ, ta e ®· bÞ lò thñy téc giÕt h¹i. <sex> gióp tiÓu n÷ tr¶ thï ®­îc kh«ng?",
         "Tr¶ thï b»ng c¸ch nµo?",
         "Nghe nãi §«ng H¶i H¶i T©n cã loµi §Çu môc ng­ qu¸i, chØ cÇn giÕt chóng lµ cã thÓ tr¶ thï cho phu qu©n tiÓu n÷.",
-        "§­îc! Ta ®ång ý!"
+        "Very well! I agree!"
     };
     TalkEx("four_00_01", szTalk);
 end;
@@ -34,8 +34,8 @@ function four_02_00()
         "Ta ®· gióp c« n­¬ng h¹ §Çu môc ng­ qu¸i, ®©y lµ {Lang Nha ngäc béi}, cã thÓ lµ cña lÖnh c«ng...",
         "§a t¹ ©n nh©n! §óng lµ vËt ®Þnh t×nh cña chóng ta, chµng vÉn mang theo bªn m×nh, huhu…",
         "Ta muèn t×m hiÓu râ {§«ng H¶i h¶i téc}, c« n­¬ng cã thÓ gióp ta kh«ng?",
-        "Thö t×m Lý TiÕn Dòng xem!",
-        "LÇn sau sÏ ghÐ th¨m c« n­¬ng, xin c¸o tõ!"
+        "Try looking for Li Tien Dung!",
+        "I will visit you again next time; please excuse me!"
     };
     TalkEx("four_02_01", szTalk);
 end;
@@ -55,7 +55,7 @@ function four_03_00()
         "T×m ta cã chuyÖn g×?",
         "Ch¾c tiÒn bèi cã nghe qua §«ng H¶i h¶i téc, t¹i h¹ nghÜ kh«ng ph¶i Long V­¬ng l·o gia lµm, ng­êi cã cao kiÕn g× kh«ng?",
         "Ta chØ nghe nãi trªn ng­êi chóng cã mang mét sè ®å, ng­¬i gióp ta thu thËp th­îng y vµ h¹ y cña d©n lµng mçi thø 5 c¸i ®­îc kh«ng?",
-        "§­îc th«i!"
+        "Very well!"
     };
     TalkEx("four_03_01", szTalk);
 end;
@@ -76,7 +76,7 @@ function four_04_00()
         "NÕu nãi vËy th× d©n lµng ®· bÞ biÕn thµnh {§«ng H¶i thñy téc}.",
         "§óng råi!",
         "NÕu nãi vËy, thñy téc r¬i ra ngäc béi chÝnh lµ {phu qu©n} cña ViÔn Tinh. Ta ph¶i ®i b¸o ngay cho c« Êy biÕt!",
-        "T¹i h¹ xin c¸o tõ!"
+        "I take my leave!"
     };
     local szMsg = {
         "Ta chØ nghe nãi trªn ng­êi chóng cã mang mét sè ®å, ng­¬i gióp ta thu thËp th­îng y vµ h¹ y cña d©n lµng mçi thø 5 c¸i ®­îc kh«ng?"
@@ -109,7 +109,7 @@ end;
 
 function four_05_00()
     local szTalk = {
-        "<sex> ®Õn ®©y cã chuyÖn g×?"
+        "<sex> what business brings you here?"
     };
     TalkEx("four_05_01", szTalk);
 end;
@@ -117,8 +117,8 @@ end;
 function four_05_01()
     local szSay = {
         "Ta cã mét chuyÖn muèn nãi víi c« n­¬ng.",
-        "Nãi sù thËt/tell_true",
-        "G¹t c« ta/tell_false"
+        "Tell the truth/tell_true",
+        "Deceive her/tell_false"
     };
     SelectSay(szSay);
 end;
@@ -130,7 +130,7 @@ function tell_true()
         "V× vËy ng­êi ta giÕt chÝnh lµ {phu qu©n} c«, xin thø lçi!",
         "Huhu…Ta ®· giÕt chµng råi!",
         "§©y cã ph¶i sù thËt kh«ng!",
-        "Huhu……."
+        "Huhu."
     };
     TalkEx("four_05_02", szTalk);
 end;

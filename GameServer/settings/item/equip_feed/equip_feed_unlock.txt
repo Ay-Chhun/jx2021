@@ -34,7 +34,7 @@ ID	Name	EquipWorth	UnlockLv1	AttrGroup1	AttrLv1	UnlockLv2	AttrGroup2	AttrLv2	Unl
 24	Më khãa Tr­êng Hµi ThiÕt HuyÕt	3000	6	38		11	41					
 25	Më khãa §¹o Hµi V©n Du	3000	6	44		11	47					
 26	Linh §å §Çu	6000	1	63		6	67		10	71		
-27	Linh §å Y	6000	1	63		6	68		10	71		
+27	Lingdao Garment	6000	1	63		6	68		10	71		
 28	Linh §å Khè	6000	1	63		6	69		10	71		
 29	Vò KhÝ Linh §å	6000	1	64		6	65					
 30	Linh §å Giíi ChØ	6000	1	66		6	70		10	72		

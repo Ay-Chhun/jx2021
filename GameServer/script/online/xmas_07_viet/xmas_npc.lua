@@ -16,7 +16,7 @@ function main()
 			"nhËn quµ Gi¸ng sinh/xmas_give_gift",
 			"Xem néi dung ho¹t ®éng./xmas_help",
 			"T×m hiÓu c¸ch trång c©y th«ng vµ phÇn th­ëng/xmas_plant",
-			"T¹m biÖt!/nothing");
+			"Goodbye!/nothing");
 	else
 		Say(npc_name.."Sau Gi¸ng Sinh còng vui vÎ!", 0);
 	end

@@ -5,8 +5,8 @@ function OnUse()
 				"Xem cßn bao nhiªu thêi gian cã thÓ nhËn phÇn th­ëng/see_time2",
 				"Xem h«m bay cßn bao nhiªu c¬ héi nhËn thÎ/see_get_card_times",
 				"Xem thêi gian sinh tån cßn l¹i cña thó c­ng/see_pet_life",
-				"Bá thó c­ng/kill_follower",
-				"§ãng h­íng dÉn/nothing",
+				"Release the pet/kill_follower",
+				"Close the guide/nothing",
 				}
 	if Is_HandInHand_Open() == 1 then
 		Say("<color=green>H­íng dÉn ho¹t ®éng cóp thÕ giíi<color>: Ho¹t ®éng cóp thÕ giíi tiÕn hµnh tõ <color=yellow>ngµy 14 th¸ng 7 ®Õn 23 th¸ng 7<color>.",getn(selTab),selTab);
@@ -35,7 +35,7 @@ function see_pet_life()
 		end;
 		nMin = floor((mod(nSecLeft,3600))/60);
 		if nMin >= 1 then
-			sStrTime = sStrTime..nMin.." phót "..nSec.." Gi©y ";
+			sStrTime = sStrTime..nMin.." minutes"..nSec.." Gi©y ";
 		else
 			sStrTime = sStrTime..nSec.." Gi©y ";
 		end;
@@ -63,7 +63,7 @@ function see_time1()
 		local nSec = mod(nSecLeft,60);
 		local sStrTime = "";
 		if nMin >= 1 then
-			sStrTime = nMin.." phót "..nSec.." Gi©y ";
+			sStrTime = nMin.." minutes"..nSec.." Gi©y ";
 		else
 			sStrTime = nSec.." Gi©y ";
 		end;
@@ -83,7 +83,7 @@ function see_time2()
 		local nSec = mod(nSecLeft,60);
 		local sStrTime = "";
 		if nMin >= 1 then
-			sStrTime = nMin.." phót "..nSec.." Gi©y ";
+			sStrTime = nMin.." minutes"..nSec.." Gi©y ";
 		else
 			sStrTime = nSec.." Gi©y ";
 		end;
@@ -93,7 +93,7 @@ end;
 
 function kill_follower()
 	local selTab = {
-				"§óng vËy! PhiÒn phøc qu¸!/confirm_to_kill",
+				"That's right! How annoying!/confirm_to_kill",
 				"Kh«ng cÇn/nothing",
 				}
 	Say("B¹n muèn bá thó c­ng?",getn(selTab),selTab);

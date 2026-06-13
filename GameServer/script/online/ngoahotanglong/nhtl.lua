@@ -36,11 +36,11 @@ function ProcessIndex(nIndex)
 			if (nExtVal >= 1) then
 				if ((nFreeItemRoom >=  nExtVal*tEventGift[nIndex][2]) and (GetCurItemWeight() + nExtVal*tEventGift[nIndex][3] <= GetMaxItemWeight())) then
 					if PayExtPoint(tEventGift[nIndex][4], nExtVal) == 1 then
-						WriteLog("[Ngäa Hæ Tµng Long]\t"..GetAccount().."\t"..GetName().."\t ®· nhËn ®­îc "..nExtVal.." "..tEventGift[nIndex][1])				
+						WriteLog("[Crouching Tiger, Hidden Dragon]\t"..GetAccount().."\t"..GetName().."\t ®· nhËn ®­îc "..nExtVal.." "..tEventGift[nIndex][1])				
 					end
 				else
 					if ((nFreeItemRoom <  nExtVal*tEventGift[nIndex][2])  and (nFreeItemRoom > 0)) then
-						Say("Chóc mõng b»ng h÷u ®· tróng th­ëng "..nExtVal.." "..tEventGift[nIndex][1]..". Hµnh trang cña b»ng h÷u chØ cã <color=Gold>"..nFreeItemRoom.." « trèng<color> nªn chØ nhËn ®­îc <color=Gold>"..nFreeItemRoom.."<color> "..tEventGift[nIndex][1]..". Sau khi nhËn th­ëng h·y s¾p xÕp l¹i hµnh trang råi ®Õn gÆp ta.",2,"§ång ý/#SayYes("..nIndex..","..GetFreeItemRoom()..")","§Ó ta s¾p xÕp l¹i hµnh trang/SayNo")
+						Say("Chóc mõng b»ng h÷u ®· tróng th­ëng "..nExtVal.." "..tEventGift[nIndex][1]..". Hµnh trang cña b»ng h÷u chØ cã <color=Gold>"..nFreeItemRoom.." « trèng<color> nªn chØ nhËn ®­îc <color=Gold>"..nFreeItemRoom.."<color> "..tEventGift[nIndex][1]..". Sau khi nhËn th­ëng h·y s¾p xÕp l¹i hµnh trang råi ®Õn gÆp ta.",2,"Agree/#SayYes("..nIndex..","..GetFreeItemRoom()..")","§Ó ta s¾p xÕp l¹i hµnh trang/SayNo")
 					else
 						Say("Søc lùc hoÆc hµnh trang cña b»ng h÷u kh«ng ®ñ.",0)
 						Msg2Player("Søc lùc hoÆc hµnh trang cña b¹n kh«ng ®ñ.")
@@ -60,7 +60,7 @@ end
 
 function ProcessIndexItem(nIndex)	
 	if (CheckAccount() == 1) then	
-		local strTalk = "PhÇn th­ëng "..tEventFactionGift[nIndex][1].." bao gåm "..tEventFactionGift[nIndex][2].." . §Ó nhËn ®­îc phÇn th­ëng nµy b»ng h÷u ph¶i cã <color=Gold>tµi kho¶n Vâ L©m LÖnh Bµi<color> vµ <color=Gold>®¼ng cÊp nh©n vËt tõ cÊp "..tEventFactionGift[nIndex][3].." trë lªn<color>. Chó ý s¾p xÕp hµnh trang tr­íc khi nhËn th­ëng."		
+		local strTalk = "PhÇn th­ëng "..tEventFactionGift[nIndex][1].." includes"..tEventFactionGift[nIndex][2].." . §Ó nhËn ®­îc phÇn th­ëng nµy b»ng h÷u ph¶i cã <color=Gold>tµi kho¶n Vâ L©m LÖnh Bµi<color> vµ <color=Gold>®¼ng cÊp nh©n vËt tõ cÊp "..tEventFactionGift[nIndex][3].." trë lªn<color>. Chó ý s¾p xÕp hµnh trang tr­íc khi nhËn th­ëng."		
 		Say(strTalk, 2, "Ta muèn nhËn!/#GetGift("..nIndex..")", "§Ó ta s¾p xÕp l¹i hµnh trang/SayNo")	
 	else
 		Say("Tµi kho¶n cña b»ng h÷u kh«ng cã Vâ L©m LÖnh Bµi!",0)
@@ -98,7 +98,7 @@ function GetGift(nIndex)
 			Msg2Player("B¹n kh«ng ®ñ ®iÒu kiÖn nhËn th­ëng.")
 		end
 	else
-		WriteLog("[Ngäa Hæ Tµng Long]\t"..GetAccount().."\t"..GetName().."\t trÞ sè nIndex tr¶ vÒ sai.")
+		WriteLog("[Crouching Tiger, Hidden Dragon]\t"..GetAccount().."\t"..GetName().."\t the returned nIndex value is wrong.")
 	end
 end
 
@@ -106,7 +106,7 @@ end
 function SayYes(nIndex, nFreeItemRoom)
 	if ((GetFreeItemRoom() >=  nFreeItemRoom*tEventGift[nIndex][2]) and (GetCurItemWeight() + nFreeItemRoom*tEventGift[nIndex][3] <= GetMaxItemWeight())) then
 		if PayExtPoint(tEventGift[nIndex][4], nFreeItemRoom) == 1 then
-			WriteLog("[Ngäa Hæ Tµng Long]\t"..GetAccount().."\t"..GetName().."\t ®· nhËn ®­îc "..nFreeItemRoom.." "..tEventGift[nIndex][1])
+			WriteLog("[Crouching Tiger, Hidden Dragon]\t"..GetAccount().."\t"..GetName().."\t ®· nhËn ®­îc "..nFreeItemRoom.." "..tEventGift[nIndex][1])
 		end
 	else
 		Say("Søc lùc hoÆc hµnh trang cña b»ng h÷u kh«ng ®ñ.",0)

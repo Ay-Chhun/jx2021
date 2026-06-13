@@ -126,10 +126,10 @@ end;
 function BTA_AffirmEquip(nType,nEquipIndex)
 	local tEquip = tEquipInfo[nType][g_nNpcCamp][nEquipIndex][1];
 	local selTab = {
-				format("§ång ý ®æi /#BTA_AffirmEquipFinal(%d,%d)",nType,nEquipIndex),
+				format("Confirm exchange/#BTA_AffirmEquipFinal(%d,%d)",nType,nEquipIndex),
 				"§Ó ta suy nghÜ l¹i/nothing",
 				}
-	Say("<color=green>"..g_sNpcName.."<color>: Ng­¬i ®ång ý ®æi <color=yellow>"..tEquip[1].."<color> chø?",getn(selTab),selTab);
+	Say("<color=green>"..g_sNpcName.."<color>: You agreed to exchange <color=yellow>"..tEquip[1].."<color> ?",getn(selTab),selTab);
 end;
 
 function BTA_AffirmEquipFinal(nType,nEquipIndex)
@@ -141,7 +141,7 @@ function BTA_AffirmEquipFinal(nType,nEquipIndex)
 			Msg2Player("B¹n nhËn ®­îc 1 trang bÞ:"..tEquip[1]);
 			WriteLog("[phÇn th­ëng chiÕn trËn]:"..GetName().."nhËn ®­îc trang bÞ chiÕn tr­êng:"..tEquip[1]);
 		else
-			WriteLog("[phÇn th­ëng bÞ lçi]:"..GetName().."nhËn ®­îc trang bÞ ("..tEquip[1]..") lçi, nRetCode:"..nRetCode);
+			WriteLog("[phÇn th­ëng bÞ lçi]:"..GetName().."nhËn ®­îc trang bÞ ("..tEquip[1]..") error, nRetCode:"..nRetCode);
 		end;
 	end;
 end;
@@ -168,7 +168,7 @@ function BTA_CheckCondition(nType,nEquipIndex)
 			return 0;
 		end;
 		if nCurMoney < nNeedMoney*10000 then
-			Talk(1,"BTA_Main","<color=green>"..g_sNpcName.."<color>: TiÒn vµng kh«ng ®ñ, kh«ng thÓ ®æi <color=yellow>"..szEquipName.."<color>. B¹n cÇn cã thªm <color=red>"..nNeedMoney.."<color> vµng");
+			Talk(1,"BTA_Main","<color=green>"..g_sNpcName.."<color>: TiÒn vµng kh«ng ®ñ, kh«ng thÓ ®æi <color=yellow>"..szEquipName.."<color>. B¹n cÇn cã thªm <color=red>"..nNeedMoney.."<color> gold");
 			return 0;
 		end;
 		if nCurItemCount < nNeedItemCount then

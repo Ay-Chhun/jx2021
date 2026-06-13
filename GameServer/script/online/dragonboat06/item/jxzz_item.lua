@@ -8,7 +8,7 @@ function OnUse()
 		ModifyExp(500000)
 		Msg2Player("B¹n ¨n 1 b¸nh Ýt Gia H­ng nhËn ®­îc 50 v¹n kinh nghiÖm, lËp tøc håi phôc sinh lùc vµ néi lùc");
 		WriteLog(GetName().."®· ¨n 1 c¸i b¸nh Ýt gia h­ng");
-		Msg2_LeiTai("B¸nh Ýt Gia H­ng");
+		Msg2_LeiTai("Jiaxing zongzi");
 	end;
 end;
 

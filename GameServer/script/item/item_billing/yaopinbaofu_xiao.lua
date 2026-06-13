@@ -12,9 +12,9 @@
 function OnUse()
 	Say("B¹n muèn ®ãng gãi lo¹i bao d­îc phÈm nµo?",
 		4,
-		"Sinh lùc d­îc/pack_life_bottles",
+		"HP medicine/pack_life_bottles",
 		"Néi lùc d­îc/pack_energy_bottles",
-		"Song bæ d­îc/pack_both_bottles",
+		"Dual-restore medicine/pack_both_bottles",
 		"T¹m thêi kh«ng ®ãng gãi--Hñy bá/cancel_dialog")
 end;
 

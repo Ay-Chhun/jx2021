@@ -5,9 +5,9 @@
 --¿ª·¢Ê±¼ä£º2006-10-12
 --******************************************************
 prize_table = {
-	{"Hoµng Cóc",546,"R­îu hoa cóc",549,"ñ r­îu","b×nh"},
-	{"Tö Cóc",547,"B¸nh hoa cóc",550," chÕ thµnh "," phÇn"},
-	{"Thï du",548,"Bã thï du",551," chÕ thµnh ","Thóc"},
+	{"Hoµng Cóc",546,"Chrysanthemum wine",549,"brew wine","bottle"},
+	{"Purple Chrysanthemum",547,"Chrysanthemum cake",550," chÕ thµnh "," phÇn"},
+	{"Dogwood",548,"Bundle of dogwood",551," chÕ thµnh ","Bushel"},
 }
 change_num = 9			--¶Ò»»ÐèÒªµÄÔ­ÁÏÊýÁ¿
 map_id_min = 969
@@ -25,15 +25,15 @@ function main()
 		palyer_sex = "N÷ hiÖp "
 	end
 	if GetLevel() < 11 then
-		Say("VÞ "..palyer_sex.."NÕu muèn x­ng b¸ vâ l©m th× cÇn ph¶i rÌn luyÖn thªm.",
+		Say("Position"..palyer_sex.."NÕu muèn x­ng b¸ vâ l©m th× cÇn ph¶i rÌn luyÖn thªm.",
 		1,
 		"Ta biÕt råi/end_dialog")
 		return
 	end
 	local plant_talble = {
 	{"Hoµng Cóc",546},
-	{"Tö Cóc",547},
-	{"Thï du",548},	
+	{"Purple Chrysanthemum",547},
+	{"Dogwood",548},	
 	}
 	local npc_index = GetTargetNpc()
 	if npc_index == 0 then
@@ -68,7 +68,7 @@ function OnUse(id)
 		palyer_sex = "N÷ hiÖp "
 	end
 	if GetLevel() < 11 then
-		Say("VÞ "..palyer_sex.."NÕu muèn x­ng b¸ vâ l©m th× cÇn ph¶i rÌn luyÖn thªm.",
+		Say("Position"..palyer_sex.."NÕu muèn x­ng b¸ vâ l©m th× cÇn ph¶i rÌn luyÖn thªm.",
 		1,
 		"Ta biÕt råi/end_dialog")
 		return

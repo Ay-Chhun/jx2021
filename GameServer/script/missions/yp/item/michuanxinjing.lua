@@ -42,7 +42,7 @@ function OnUse(nItemIdx)
 		Say("",
 			2,
 			"\n NhËn phÇn th­ëng/#bk_getAward("..nType..",2)",
-			"\nKÕt thóc ®èi tho¹i/nothing")	
+			"\nEnd conversation/nothing")	
 		return 1;	
 	end
 	local nDistance = 0;
@@ -82,7 +82,7 @@ function OnUse(nItemIdx)
 		Say("",
 			2,
 			"\n NhËn phÇn th­ëng/#bk_getAward("..nType..",2)",
-			"\nKÕt thóc ®èi tho¹i/nothing")	
+			"\nEnd conversation/nothing")	
 		return 1;
 	elseif GetTaskTemp(TEMP_FIELD_PVP_READ_STATE) ~= 0 then
 		Talk(1,"","H·y kiªn nhÉn ®äc xong.");

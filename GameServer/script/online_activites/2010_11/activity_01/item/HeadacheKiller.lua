@@ -9,7 +9,7 @@ function XK_RemoveTitle(type1, type2, nItemIdx)
 		local szName = GetItemName(nItemIdx)
 		if 1 == DelItemByIndex(nItemIdx, 1) then
 			RemoveTitle(type1, type2);
-			Msg2Player("C¸c h¹ ®· sö dông "..szName..", bÖnh"..NT_GetTitleName(type1, type2).." ®· ch÷a khái");		
+			Msg2Player("C¸c h¹ ®· sö dông "..szName..", the illness"..NT_GetTitleName(type1, type2).." has been cured");		
 		end
 	end
 end

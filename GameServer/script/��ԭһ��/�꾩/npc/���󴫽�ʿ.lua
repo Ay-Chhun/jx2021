@@ -7,13 +7,13 @@ szNpcName = "<color=green>Gi¸o SÜ: <color>"
 szBang = {	
 	[1] = {"B¹ch Hæ","1:1.78"},
 	[2] = {"§¹i ¦ng","1:2"},
-	[3] = {"Kú Hæ","1:1.96"},
-	[4] = {"M·nh Hæ","1:1.96"},
-	[5] = {"Ngò Hæ","1:1.74"},
-	[6] = {"Phôc Hæ","1:1.97"},
+	[3] = {"Qi Tiger","1:1.96"},
+	[4] = {"Meng Tiger","1:1.96"},
+	[5] = {"Wu Tiger","1:1.74"},
+	[6] = {"Fu Tiger","1:1.97"},
 	[7] = {"ThÇn Long","1:1.66"},
 	[8] = {"Thiªn Long","1:1.96"},
-	[9] = {"XÝch Long","1:1.97"},
+	[9] = {"Chi Long","1:1.97"},
 }
 	
 function main()
@@ -40,7 +40,7 @@ function main()
 		end
 	end
 	
-	tinsert(tSay, "Tho¸t/nothing")
+	tinsert(tSay, "Exit/nothing")
 	Say("<color=green>Gi¸o SÜ:<color>Th­îng ®Õ chóc phóc cho b¹n!", getn(tSay), tSay);
 end
 
@@ -83,7 +83,7 @@ function DuDoan_02(nBang)
 	tinsert(tSay,format("Ta muèn ®Æt c­îc 15 Thiªn Kiªu LÖnh/#DuDoan_01(%d,%d)",nBang,15))
 	tinsert(tSay,format("Ta muèn ®Æt c­îc 20 Thiªn Kiªu LÖnh/#DuDoan_01(%d,%d)",nBang,20))
 	tinsert(tSay,format("Ta muèn ®Æt c­îc 50 Thiªn Kiªu LÖnh/#DuDoan_01(%d,%d)",nBang,50))
-	tinsert(tSay, "Tho¸t/nothing")
+	tinsert(tSay, "Exit/nothing")
 	Say(szNpcName.."C¸c h¹ muèn ®Æt c­îc thÕ nµo?", getn(tSay), tSay);
 end
 

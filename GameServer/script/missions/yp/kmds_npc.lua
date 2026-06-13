@@ -2,14 +2,14 @@
 
 Include("\\script\\missions\\yp\\award.lua");
 
-g_NpcName = "<color=green>Vâ L©m Minh-Kh« Méc §¹i S­<color>: ";
+g_NpcName = "<color=green>Wulin Alliance - Master Kho Moc<color>:";
 g_MaxRewardCount = 3;
 
 function main()
 	local strtab = {
 		"NhËn lÊy phÇn th­ëng./kmds_talk_2",
 		"Giíi thiÖu Thiªn ¢m Th¸m BÝ/kmds_talk_3",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 		};
 	local nCurState = yp_checkRewardTime();
 	if nCurState ~= 0 then
@@ -107,10 +107,10 @@ end
 
 function kmds_talk_3()
 	local strtab = {
-		"Bèi c¶nh/#kmds_talk_3_1(1)",
-		"Chó ý/#kmds_talk_3_1(2)",
+		"Background/#kmds_talk_3_1(1)",
+		"Note/#kmds_talk_3_1(2)",
 		"trë l¹i/main",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	};
 	Say(g_NpcName.."§¹i hiÖp muèn t×m hiÓu vÒ viÖc g×?",
 		getn(strtab),
@@ -123,7 +123,7 @@ function kmds_talk_3_1(nType)
 		format("%s\n%s\n%s",
 			"H»ng ngµy Thiªn ¢m Th¸nh §Þa bÞ bo phñ bëi s­¬ng ®éc, chØ tõ 16:00-16:30 hoÆc 22:00-22:30 th× s­¬ng ®éc míi tiªu tan vµ cã thÓ vµo.",
 			"    Khi vµo Thiªn ¢m Th¸nh §Þa cÇn mang theo Huy HiÖu Vâ L©m Minh ®Ó chøng tá th©n phËn, khi bÞ kÎ ®Þch ®¸nh träng th­¬ng sÏ r¬i ra mét nöa huy ch­¬ng. Mçi 10 phót th× ®Ö tö cña Kh« Méc §¹i S­ sÏ ®ãn ng­¬i ë n¬i chØ ®Þnh, ng­¬i chØ cÇn giao nép huy ch­¬ng lµ ®­îc.",
-			"    C¨n cø theo sè l­îng huy ch­¬ng giao nép th× Kh« Méc §¹i S­ sÏ bµy tá lßng biÕt ¬n."
+			"    Based on the number of badges handed in, Master Kho Moc will express his gratitude."
 			)
 		,
 		}

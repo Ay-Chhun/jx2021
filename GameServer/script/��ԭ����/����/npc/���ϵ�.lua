@@ -15,6 +15,6 @@ function main()
 	tinsert(tbSayDialog,"NhËn th­ëng mçi ngµy/Award_Daily_Menu")
 	tinsert(tbSayDialog,"NhËn th­ëng Th¨ng TiÕn (theo ®¼ng cÊp)/menu_award")
 	tinsert(tbSayDialog,"Xem thêi gian cßn l¹i ®Ó nhËn th­ëng/show_time")
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/gf_DoNothing"	)
+	tinsert(tbSayDialog,"End dialogue/gf_DoNothing"	)
 	Say(szSayHead, getn(tbSayDialog), tbSayDialog);
 end

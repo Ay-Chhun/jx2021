@@ -3,7 +3,7 @@ Include("\\script\\lib\\talktmp.lua")
 
 HTN_DIALOG = {
 	"Giíi thiÖu Bang Héi Vinh Danh/htn_Infomation",
-	"§¨ng ký tham gia Bang Héi Vinh Danh/htn_SignTong",
+	"Register to join the Guild Hall of Fame/htn_SignTong",
 	"Cèng hiÖn x©y dùng bang héi/htn_BuildTong",
 	"NhËn phÇn th­ëng xÕp h¹ng/htn_RankAward",
 	"Xem ®iÓm cèng hiÕn bang ph¸i vµ xÕp h¹ng/htn_TongRank",
@@ -14,7 +14,7 @@ HTN_TITLE = "V× danh dù cña bang héi, c¸c thµnh viªn h·y nhanh chãng hµnh ®éng n
 
 function htn_Infomation()
 	local tSay = {
-		"§iÒu kiÖn tham gia /htn_Info_JoinCondition",
+		"Conditions for joining/htn_Info_JoinCondition",
 		"Lµm sao cèng hiÕn x©y dùng bang héi/htn_Info_BuildTong",
 		"Lµm sao nhËn ®­îc nguyªn liÖu/htn_Info_GetMaterial",
 		"PhÇn th­ëng xÕp h¹ng bang héi/htn_Info_TongRank",
@@ -28,8 +28,8 @@ function htn_Info_JoinCondition()
 	local tbSay = {};
 	tbSay.msg = HT_NPC..tbBody;
 	tbSay.sel = {
-		{"\n Ph¶n håi", "htn_Infomation"},
-		{"Ra khái","nothing"},
+		{"\n Feedback", "htn_Infomation"},
+		{"Exit","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -39,8 +39,8 @@ function htn_Info_BuildTong()
 	local tbSay = {};
 	tbSay.msg = HT_NPC..tbBody;
 	tbSay.sel = {
-		{"\n Ph¶n håi", "htn_Infomation"},
-		{"Ra khái","nothing"},
+		{"\n Feedback", "htn_Infomation"},
+		{"Exit","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -57,7 +57,7 @@ function htn_Info_GetMaterial()
 		"¶i L­¬ng S¬n B¹c:  25% nhËn ®­îc 01 M¶nh LÖnh Bµi Bang Héi/htn_Info_GetMaterial",
 		"V­ît ¶i Tö Quang C¸c nhËn ®­îc 02 M¶nh LÖnh Bµi Bang Héi/htn_Info_GetMaterial",
 		"trë l¹i/htn_Infomation",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	}
 	Say(HT_NPC.."D­íi ®©y lµ nh÷ng c¸ch ®Ó nhËn ®­îc M¶nh LÖnh Bµi Bang Héi: ", getn(tDialog), tDialog);
 end
@@ -67,8 +67,8 @@ function htn_Info_TongRank()
 	local tbSay = {};
 	tbSay.msg = HT_NPC..tbBody;
 	tbSay.sel = {
-		{"\n Ph¶n håi", "htn_Infomation"},
-		{"Ra khái","nothing"},
+		{"\n Feedback", "htn_Infomation"},
+		{"Exit","nothing"},
 	};
 	temp_Talk(tbSay);
 end

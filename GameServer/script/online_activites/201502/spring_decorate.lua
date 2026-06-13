@@ -183,7 +183,7 @@ function sd_Ths_Exp()
 		{2, 20, 2000000, 1},
 		{2, 5, 20142015, 1},
 	}
-	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Event TÕt Kingsoft", "§µo Hoa thô");
+	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Kingsoft New Year Event", "§µo Hoa thô");
 end
 
 function sd_Ths_ZhenQi()
@@ -194,20 +194,20 @@ function sd_Ths_ZhenQi()
 		{31, 4, "AwardGenuineQi(500)", 1},
 		{31, 1, "AwardGenuineQi(1000)", 1},
 	}
-	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Event TÕt Kingsoft", "§µo Hoa thô");
+	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Kingsoft New Year Event", "§µo Hoa thô");
 end
 
 function sd_Ths_Xuanzhang()
 	local tAward = {
-		{1, 50, "Hu©n ch­¬ng anh hïng", {2, 1, 30499, 1}, 0},
-		{1, 40, "Hu©n ch­¬ng anh hïng", {2, 1, 30499, 2}, 0},
-		{1, 10, "Hu©n ch­¬ng anh hïng", {2, 1, 30499, 5}, 0},
+		{1, 50, "Hero's Medal", {2, 1, 30499, 1}, 0},
+		{1, 40, "Hero's Medal", {2, 1, 30499, 2}, 0},
+		{1, 10, "Hero's Medal", {2, 1, 30499, 5}, 0},
 	}
-	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Event TÕt Kingsoft", "§µo Hoa thô");
+	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Kingsoft New Year Event", "§µo Hoa thô");
 end
 
 function sd_Ths_dan()
-	gf_AddItemEx2({2,1,30787, 1}, "Trøng Bæn §iÓu", "Event TÕt Kingsoft", "§µo Hoa thô", 0, 1);
+	gf_AddItemEx2({2,1,30787, 1}, "Origin Bird Egg", "Kingsoft New Year Event", "§µo Hoa thô", 0, 1);
 	Msg2Global(format("Chóc mõng %s khi ng¾m hoa ®µo ®· nhËn ®­îc Trøng Chim Ngèc ®¸ng yªu, thËt lµ ng­ìng mé!", GetName()));
 end
 
@@ -222,7 +222,7 @@ function OnUse(nItem)
 	end
 	if DelItemByIndex(nItem, 1) == 1 then
 		AddPet(39);
-		Msg2Player(format("Ng­¬i nhËn ®­îc [%s] b¹n ®ång hµnh", "Bæn §iÓu"));
+		Msg2Player(format("Ng­¬i nhËn ®­îc [%s] b¹n ®ång hµnh", "Eight Birds"));
 	end
 end
 

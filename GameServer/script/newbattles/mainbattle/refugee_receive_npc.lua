@@ -15,10 +15,10 @@ function main()
 	end;
 	local selTab = {
 				"ß∑ lµm phi“n/give_refugee",
-				"ß” khi kh∏c vÀy/nothing",
+				"Maybe another time/nothing",
 				}
 	if BT_GetTempData(PTT_FOLLOWER) == 1 then
-		Say("<color=green>"..sNpcName.."<color>: "..tSexName[GetSex()].." v t v∂ qu∏! Giao hæn cho ta lµ Æ≠Óc!",getn(selTab),selTab);
+		Say("<color=green>"..sNpcName.."<color>: "..tSexName[GetSex()].." You've had a rough time! Just hand him over to me!",getn(selTab),selTab);
 	else
 		Talk(1,"","<color=green>"..sNpcName.."<color>: Chi’n tranh th≠Íng gieo tπi h‰a cho b∏ t∏nh v´ tÈi"..tSexName[GetSex()].."N’u g∆p nπn d©n, nhÍ bªng h˜u d…n h‰ Æ’n, ta sœ sæp x’p!");
 	end;

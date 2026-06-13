@@ -63,6 +63,6 @@ function OnUse(goods_index)
 	else
 		dia_use_num_remain = "Cßn sö dông ®­îc <color=yellow>"..(2-use_num_dealed).."<color> lÇn"
 	end
-	Talk(1,"","<color=green>Nh¾c nhë<color>: B¹n sö dông giÊy cóng tÕ thµnh c«ng, nhiÖm vô <color=yellow>h«m nay<color> ®­îc t¨ng thªm <color=yellow>1<color> lÇn, h«m nay b¹n"..dia_use_num_remain.." giÊy cóng tÕ!")
+	Talk(1,"","<color=green>Nh¾c nhë<color>: B¹n sö dông giÊy cóng tÕ thµnh c«ng, nhiÖm vô <color=yellow>h«m nay<color> ®­îc t¨ng thªm <color=yellow>1<color> lÇn, h«m nay b¹n"..dia_use_num_remain.." offering papers!")
 end
 

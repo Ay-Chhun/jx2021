@@ -29,7 +29,7 @@ function OnUse(nItem)
 	--print(LSB_LSMBX_AWARD_TB)
 	if DelItem(Item_Depends[1],Item_Depends[2],Item_Depends[3],Item_Depends[4]) and DelItem(Item_Used[1],Item_Used[2],Item_Used[3],Item_Used[4]) == 1 then
 		gf_Modify("Exp",300000);
-		gf_AddItemEx2({2,1,30390,1}, "M¶nh Thiªn Cang", "Boss L­¬ng S¬n ", "Më L­¬ng S¬n MËt B¶o R­¬ng ", 0, 1)
+		gf_AddItemEx2({2,1,30390,1}, "M¶nh Thiªn Cang", "Liangshan Boss", "Më L­¬ng S¬n MËt B¶o R­¬ng ", 0, 1)
 		gf_EventGiveRandAward(LSB_LSMBX_AWARD_TB,100000,1,"Ho¹t ®éng Boss L­¬ng S¬n","Më L­¬ng S¬n MËt B¶o R­¬ng ");
 	end
 	--ÈÎÎñ

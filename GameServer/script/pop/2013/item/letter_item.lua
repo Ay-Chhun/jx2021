@@ -10,5 +10,5 @@ function OnUse(nItemIdx)
 	local g,d,p = GetItemInfoByIndex(nItemIdx);
 	suSay(g_tLetterMsg[1],
 		1,
-		"KÕt thóc ®èi tho¹i/nothing")
+		"End dialogue/nothing")
 end

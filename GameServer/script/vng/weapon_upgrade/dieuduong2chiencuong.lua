@@ -74,8 +74,8 @@ function OnPutinComplete(param)
 	end
 	-------------------- Check material ----------------------------
 	local tbMaterial = {
-		[1] = {item={{gdp={2,95,204,1}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,1}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,1005,5}, name="ChiÕn ThÇn Hoµn"}, {gdp={2,1,30499,50}, name="Hu©n Ch­¬ng Anh Hïng"}}},
-		[2] = {item={{gdp={2,95,204,1}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,1}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,1005,7}, name="ChiÕn ThÇn Hoµn"}, {gdp={2,1,30499,50}, name="Hu©n Ch­¬ng Anh Hïng"}}},
+		[1] = {item={{gdp={2,95,204,1}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,1}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,1005,5}, name="ChiÕn ThÇn Hoµn"}, {gdp={2,1,30499,50}, name="Hero's Medal"}}},
+		[2] = {item={{gdp={2,95,204,1}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,1}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,1005,7}, name="ChiÕn ThÇn Hoµn"}, {gdp={2,1,30499,50}, name="Hero's Medal"}}},
 	}
 	local nNguyenlieu = 1
 	if nD ~= 100 and nD ~= 101 and nD ~= 103 then

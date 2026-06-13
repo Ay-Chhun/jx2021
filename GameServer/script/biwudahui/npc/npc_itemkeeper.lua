@@ -27,7 +27,7 @@ function main()
 			tremove(selTab,3);
 		end;
 	end;
-	tinsert(selTab,"Kh«ng cã g×/nothing");
+	tinsert(selTab,"Nothing/nothing");
 	Say(g_szInfoHead.."Cã cÇn gióp g× kh«ng?",getn(selTab),selTab);
 end;
 
@@ -85,14 +85,14 @@ function get_ready()
 		BWT_SetPlayerFightState(1,nPIdx1);
 		BWT_SetPlayerFightState(2,nPIdx2);
 --		Msg2MSAll(MISSION_ID,"×°±¸¼ì²éÊ±¼ä½áÊø£¬½ÓÏÂÀ´ÊÇ×¼±¸Ê±¼ä¡£");
-		Talk2SomeOne(nPIdx1,1,"","L­u ph¸i ®èi thñ lµ <color=yellow>"..BWT_GetPlayerRouteName(nPIdx2).."<color>. TiÕp theo lµ thêi gian chuÈn bÞ.");
-		Talk2SomeOne(nPIdx2,1,"","L­u ph¸i ®èi thñ lµ <color=yellow>"..BWT_GetPlayerRouteName(nPIdx1).."<color>. TiÕp theo lµ thêi gian chuÈn bÞ.");
-		Msg2SomeOne(nPIdx1,"L­u ph¸i ®èi thñ lµ :"..BWT_GetPlayerRouteName(nPIdx2)..". TiÕp theo lµ thêi gian chuÈn bÞ.");
-		Msg2SomeOne(nPIdx2,"L­u ph¸i ®èi thñ lµ :"..BWT_GetPlayerRouteName(nPIdx1)..". TiÕp theo lµ thêi gian chuÈn bÞ.");
+		Talk2SomeOne(nPIdx1,1,"","L­u ph¸i ®èi thñ lµ <color=yellow>"..BWT_GetPlayerRouteName(nPIdx2).."<color>. Next is the preparation time.");
+		Talk2SomeOne(nPIdx2,1,"","L­u ph¸i ®èi thñ lµ <color=yellow>"..BWT_GetPlayerRouteName(nPIdx1).."<color>. Next is the preparation time.");
+		Msg2SomeOne(nPIdx1,"L­u ph¸i ®èi thñ lµ :"..BWT_GetPlayerRouteName(nPIdx2)..". Next is the preparation time.");
+		Msg2SomeOne(nPIdx2,"L­u ph¸i ®èi thñ lµ :"..BWT_GetPlayerRouteName(nPIdx1)..". Next is the preparation time.");
 		BWT_ChangeMSState(MS_STATE_READY);
 	else
 		SetMissionV(MV_GET_READY,PlayerIndex);
 		Talk(1,"",g_szInfoHead.."§îi ®èi thñ chÈn bÞ hoµn tÊt.");
-		Msg2SomeOne(nOppIdx,"§èi thñ ®· chuÈn bÞ xong")
+		Msg2SomeOne(nOppIdx,"The opponent has finished preparing")
 	end;
 end;

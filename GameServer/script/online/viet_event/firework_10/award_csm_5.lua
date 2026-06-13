@@ -42,7 +42,7 @@ function award_CSM5()
 	if nDiff < 900 then
 		local nWaitMin = floor(nDiff / 60)
 		local nWaitSec = mod(nDiff, 60)
-		Say("ThiÕu hiÖp cÇn "..(14 - nWaitMin).." phót "..(60 - nWaitSec).." gi©y sau míi cã thÓ nhËn th­ëng", 1, "KÕt thóc ®èi tho¹i/nothing");
+		Say("ThiÕu hiÖp cÇn "..(14 - nWaitMin).." minutes"..(60 - nWaitSec).." gi©y sau míi cã thÓ nhËn th­ëng", 1, "End dialogue/nothing");
 		return 0;
 	end
 	

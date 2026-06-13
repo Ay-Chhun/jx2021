@@ -45,17 +45,17 @@ local strNpcMap      = tabNpcName:getCell(nRow, "NpcMap");  -- µÃµ½ÈÎÎñ NPC ËùÔÚ
 
 local nKillIndex = GetTask(TASKKILL_ID); -- »ñÈ¡É±¹Ö´¥·¢Æ÷µÄË÷Òı
 
-	Msg2Player("Ng­¬i ®· hoµn thµnh nhiÖm vô, mau vÒ"..strNpcMap.."t×m"..strNpcName.."NhËn phÇn th­ëng!");
+	Msg2Player("Ng­¬i ®· hoµn thµnh nhiÖm vô, mau vÒ"..strNpcMap.."find"..strNpcName.."NhËn phÇn th­ëng!");
 	
 	RemoveTrigger(GetRunningTrigger()); -- É¾³ıµ±Ç°ÕıÔÚÔËĞĞµÄ´¥·¢Æ÷
 	RemoveTrigger(nKillIndex); -- Îª·ÀÖ¹Ã»ÓĞÒÆ³ı³É¹¦ÔÙÉ¾Ò»´Î
 	
 	CreateTrigger(4, nNpcID, EVENT_NPC_ID); -- ´´½¨ĞÂ´¥·¢Æ÷ÈÃÍæ¼ÒÈ¥ÕÒÔ­À´µÄ NPC
 		
-	Say("Ng­¬i ®· hoµn thµnh nhiÖm vô, mau vÒ"..strNpcMap.."t×m"..strNpcName.."NhËn phÇn th­ëng!",
+	Say("Ng­¬i ®· hoµn thµnh nhiÖm vô, mau vÒ"..strNpcMap.."find"..strNpcName.."NhËn phÇn th­ëng!",
 		2,
-		"Mau ®­a ta vÒ!/#AcceptTask("..nNpcMapID..")",
-		"§Ó ta tù ®i!/Main_Exit");
+		"Hurry and take me back!/#AcceptTask("..nNpcMapID..")",
+		"I'll go myself!/Main_Exit");
 
 end;
 

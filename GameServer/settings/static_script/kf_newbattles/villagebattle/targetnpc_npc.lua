@@ -14,14 +14,14 @@ function main()
 	end;
 	local nCamp = BT_GetCamp();
 	if npcName ~= GetMissionS(MSTR_SONG_TARGETNAME-1+nCamp) then	--Õâ¸öÊÇµÐ·½µÄÄ¿±êNPC
-		Talk(1,"","<color=green>"..npcName.."<color>: Xin hái cã chuyÖn g×?");
+		Talk(1,"","<color=green>"..npcName.."<color>: May I ask what is the matter?");
 		return 0;
 	end;
 	if Is_The_Selected(nCamp) == 1 then	--Èç¹ûÊÇ±»Ñ¡ÖÐµÄÈËÖ®Ò»
 		Talk(1,"#reaction(\""..npcName.."\")","PhiÒn vÞ ®¹i ca cho biÕt tung tÝch thñ lÜnh, t¹i h¹ mu«n phÇn c¶m kÝch.");
 		BT_AddBattleActivity(BA_VILL_TALK_TARGET);
 	else
-		Talk(1,"","<color=green>"..npcName.."<color>: Xin hái cã chuyÖn g×?");
+		Talk(1,"","<color=green>"..npcName.."<color>: May I ask what is the matter?");
 	end;
 end;
 
@@ -91,11 +91,11 @@ function change_npc2fight(nCamp,sName,nType)
 	SetNpcScript(npcIndex,"");
 	SetNpcLifeTime(npcIndex,0)
 	if nType == SICK_NPC then
-		npcIndex = CreateNpc("Thæ d©n thï hËn","o¸n hËn"..sName,MapID,MapX,MapY);
+		npcIndex = CreateNpc("Thæ d©n thï hËn","Resentment"..sName,MapID,MapX,MapY);
 	elseif nType == ANGRY_NPC then
-		npcIndex = CreateNpc("Thæ d©n phÉn né","phÉn né"..sName,MapID,MapX,MapY);
+		npcIndex = CreateNpc("Thæ d©n phÉn né","Fury"..sName,MapID,MapX,MapY);
 	else
-		npcIndex = CreateNpc("Thæ d©n cuång b¹o","cuång b¹o"..sName,MapID,MapX,MapY);
+		npcIndex = CreateNpc("Thæ d©n cuång b¹o","frenzied"..sName,MapID,MapX,MapY);
 	end;
 	SetMissionV(MV_FIGHT_NPC_TYPE_SONG+nCamp-1,nType);
 	SetMissionV(MV_TASK_NPCINDEX_SONG-1+nCamp,npcIndex);

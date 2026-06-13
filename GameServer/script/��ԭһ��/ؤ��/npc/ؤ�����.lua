@@ -136,7 +136,7 @@ function practice()
        Talk(1,"","Kh«ng ph¶i ®Ö tö bæn bang, kh«ng thÓ vµo bang tu luyÖn!");
     else
         if GetItemCount(2, 0, 208) >= 1 then  --Ê¦ÃÅÁîÅÆ
-            Say("Vµo tu luyÖn ph¶i kh«ng?",2,"§óng/practice_start","Sai/no_practice");
+            Say("Vµo tu luyÖn ph¶i kh«ng?",2,"Yes/practice_start","Sai/no_practice");
         else
             Talk(1,"","Ng­¬i ch­a cã <color=yellow>C¸i Bang s­ m«n lÖnh bµi<color>, kh«ng thÓ bÕ quan tu luyÖn!");
         end;

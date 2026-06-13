@@ -3,7 +3,7 @@
 g_szInfoHeader = "<color=green>L©m TÞch<color>: ";
 
 function main()
-	Say(g_szInfoHeader.."T×m ta cã viÖc g× kh«ng?",2,"Ta muèn ®Õn Dao Tiªn ®éng/go_to_yaoxiandong","Kh«ng cã g×/nothing");
+	Say(g_szInfoHeader.."T×m ta cã viÖc g× kh«ng?",2,"Ta muèn ®Õn Dao Tiªn ®éng/go_to_yaoxiandong","Nothing/nothing");
 end;
 
 function go_to_yaoxiandong()

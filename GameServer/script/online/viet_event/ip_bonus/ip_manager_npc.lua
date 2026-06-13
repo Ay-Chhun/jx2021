@@ -10,7 +10,7 @@ Include("\\script\\vng\\lib\\vnglib_function.lua");
 Include("\\script\\vng\\chitonvuonglenh\\chitonvuonglenh.lua");
 Include("\\script\\vng\\all_trangbi.lua");
 
-szNpcName = "<color=green>Chñ Phßng M¸y: <color>"
+szNpcName = "<color=green>Server Room Master: <color>"
 
 --szLogTitle = "NHAN THUONG MOI BAN"
 --szLogTitle = "CHI TON VUONG LENH"
@@ -35,9 +35,9 @@ szNpcName = "<color=green>Chñ Phßng M¸y: <color>"
 	}
 tbVBonusItemShop = {
 		[1] = {"B¹ch CÇu Hoµn", {2,1,270,1,4}, 4, 2,5},
-		[2] = {"Tam Thanh Hoµn", {2,1,1097,1,4}, 2, 2,6},
+		[2] = {"Three Purities Pill", {2,1,1097,1,4}, 2, 2,6},
 		[3] = {"Lôc ThÇn Hoµn", {2,1,1064,1,4}, 2, 2,7},
-		[4] = {"Ng«i Sao May M¾n", {2,1,30191,1,4}, 16, 2,8},
+		[4] = {"Lucky Star", {2,1,30191,1,4}, 16, 2,8},
 --		[5] = {"Tô Linh Tiªn §¬n", {2,1,30460,1,4}, 50, 2, 9},
 	}
 	-- table define: {ItemName, {G,D,P}, Prize, Quanlity, Position in Task}
@@ -61,7 +61,7 @@ function npc_talk()
 			"NhËn th­ëng tÝch lòy online/IpBonus",
 			"NhËn th­ëng Vinh Danh T­íng SÜ/get_solider_glory",
 			"Nguyªn So¸i tuyªn bè chiÕm ®ãng thµnh thÞ nµy, ta muèn lµm nhiÖm vô qu©n ®éi/do_military_job",
-			"Thu håi CÈm Nang §¹i Sù KiÖn/get_camnang",
+			"Reclaim the Grand Event Handbook/get_camnang",
 			"Ta chØ ghÐ qua/nothing",
 	}
 	if CheckVbonus() == 1 then
@@ -260,7 +260,7 @@ function IpBonus()
 	local tSay = {}
 	tinsert(tSay, "NhËn hiÖu qu¶ hç trî h»ng ngµy/buff_award")
 	tinsert(tSay, "NhËn th­ëng mçi 1 giê trªn m¹ng/online_award")
-	tinsert(tSay, "Xem thêi gian tÝch lòy/show_time")
+	tinsert(tSay, "View accumulated time/show_time")
 	tinsert(tSay, "T×m hiÓu ho¹t ®éng/get_help")
 	tinsert(tSay, "Ta chØ ghÐ qua/nothing")	
 	Say(szNpcName.."Thêi gian trªn m¹ng cña c¸c h¹ sÏ ®­îc tÝch lòy ®Ó ®æi nh÷ng phÇn th­ëng hÊp dÉn. C¸c h¹ cÇn ta gióp ®ì viÖc g×?",getn(tSay),tSay)
@@ -556,12 +556,12 @@ function get_online_award(nType, nChosen)
 		if nType == 1 then
 			if nChosen == 0 then
 				SetTask(2501,nSmallBCH - 60)
-				gf_WriteLogEx("TICH LUY ONLINE NEW", "kick ho¹t thµnh c«ng", 1, "TÝch lòy online SCÊp exp ")							
+				gf_WriteLogEx("TICH LUY ONLINE NEW", "kick ho¹t thµnh c«ng", 1, "Accumulated online S-Rank exp")							
 			elseif nChosen == 3 then
 				SetTask(2501,nSmallBCH - 60)
 				EatLiushen(1,-60)
 				EatSanqin(1,-60)
-				gf_WriteLogEx("TICH LUY ONLINE NEW", "kick ho¹t thµnh c«ng", 1, "TÝch lòy online SCÊp all ")		
+				gf_WriteLogEx("TICH LUY ONLINE NEW", "kick ho¹t thµnh c«ng", 1, "Accumulated online S-Rank all")		
 			elseif nChosen == 4 then
 				SetTask(2501,nSmallBCH - 60)
 				EatLiushen(1,-60)
@@ -590,12 +590,12 @@ function get_online_award(nType, nChosen)
 		elseif nType == 3 then
 			if nChosen == 0 then
 				SetTask(2508,nExBigBCH - 60)
-				gf_WriteLogEx("TICH LUY ONLINE NEW", "kick ho¹t thµnh c«ng", 1, "TÝch lòy online Cao CÊp exp ")							
+				gf_WriteLogEx("TICH LUY ONLINE NEW", "kick ho¹t thµnh c«ng", 1, "Accumulated online time Advanced exp")							
 			elseif nChosen == 3 then
 				SetTask(2508,nExBigBCH - 60)
 				EatLiushen(3,-60)
 				EatSanqin(3,-60)
-				gf_WriteLogEx("TICH LUY ONLINE NEW", "kick ho¹t thµnh c«ng", 1, "TÝch lòy online Cao CÊp all ")	
+				gf_WriteLogEx("TICH LUY ONLINE NEW", "kick ho¹t thµnh c«ng", 1, "Accumulated online time Advanced all")	
 				if GetTask(701) >= 0 then
 					SetTask(701, GetTask(701) + tOnlineAward[nType][nChosen][4])
 					Msg2Player("B¹n nhËn ®­îc "..tOnlineAward[nType][nChosen][4].." ®iÓm c«ng tr¹ng.")				
@@ -745,21 +745,21 @@ tbMoiBanCungChoi = {
 				{"L­u Yªn c«n", {0, 5, 6009,1,1, -1,-1, -1, -1, -1, -1, -1,10}},
 				{"HuyÒn Yªn kiÕm", {0, 2, 6010,1,1, -1,-1, -1, -1, -1, -1, -1,10}},
 				{"Vò Yªn bót", {0, 9, 6011,1,1, -1,-1, -1, -1, -1, -1, -1,10}},
-				{"Hµ Tiªm Th­¬ng", {0, 6, 6012,1,1, -1,-1, -1, -1, -1, -1, -1,10}},
+				{"He Tian Spear", {0, 6, 6012,1,1, -1,-1, -1, -1, -1, -1, -1,10}},
 				{"Hµnh Yªn Cung", {0, 4, 6013,1,1, -1,-1, -1, -1, -1, -1, -1,10}},
 				{"Träc Yªn nhÉn", {0, 7, 6014,1,1, -1,-1, -1, -1, -1, -1, -1,10}},
 				{"Yªu Yªn tr¶o", {0, 11, 6015,1,1, -1,-1, -1, -1, -1, -1, -1,10}},
 			},
 	[3] = {{2,1,9977,8}, "Qu©n c«ng Huy Hoµng", 7*24*60*60},
 	[4] = {{2,1,9998,8}, "Qu©n c«ng §¹i", 7*24*60*60},
-	[5] = {{2,1,30087,5}, "Tói h¹t gièng", 7*24*60*60},
+	[5] = {{2,1,30087,5}, "Seed bag", 7*24*60*60},
 	[6] = {{2,1,1008,1}, "B¹ch C©u Tiªn ®¬n", 7*24*60*60},
 }
 tbMoRuongThanTai = {
 		[4] = {"Tói Thiªn Th¹ch Tinh Th¹ch",{2,1,3356,1}, 7*24*60*60 },
 		[5] = {"Qu©n C«ng Huy Hoµng",{2,1,9977,1}, 7*24*60*60 },
 		[6] = {"Thiªn Th¹ch Tinh Th¹ch",{2,1,1009,1}},
-		[7] = {"Chiªm Y Phæ",{0,107,66,1}},
+		[7] = {"Zhanyi Manual",{0,107,66,1}},
 	}
 
 function get_Invite()
@@ -773,7 +773,7 @@ function get_Invite()
 	tinsert(tbSayDialog, "- NhËn 1 tói Thiªn Th¹ch Tinh Th¹ch/#get_Award(4)")	
 	tinsert(tbSayDialog, "- NhËn 1 qu©n c«ng Huy Hoµng/#get_Award(5)")	
 	tinsert(tbSayDialog, "- NhËn 1 Thiªn Th¹ch Tinh Th¹ch/#get_Award(6)")	
-	tinsert(tbSayDialog, "- NhËn 1 Chiªm Y Phæ/#get_Award(7)")	
+	tinsert(tbSayDialog, "- Receive 1 Divination Cloak Manual/#get_Award(7)")	
 	
 	
 	--tinsert(tbSayDialog, "- NhËn 1 vò khÝ ViÖt Yªn [+10]/get_vukhi")
@@ -792,10 +792,10 @@ function get_TCVD()
 	local nSaySize = 0;
 	local szSayHead = "H·y chän phÇn th­ëng."
 	
-	tinsert(tbSayDialog, "- Nam Tiªu ChuÈn/#get_prize(1,1)")
+	tinsert(tbSayDialog, "- Standard Southern Mask/#get_prize(1,1)")
 	tinsert(tbSayDialog, "- Nam Kh«i Ng«/#get_prize(1,2)")
-	tinsert(tbSayDialog, "- N÷ Gîi C¶m/#get_prize(1,3)")
-	tinsert(tbSayDialog, "- KiÒu N÷/#get_prize(1,4)")
+	tinsert(tbSayDialog, "- Alluring Maiden/#get_prize(1,3)")
+	tinsert(tbSayDialog, "- Charming Maiden/#get_prize(1,4)")
 	tinsert(tbSayDialog, "Trë l¹i/get_Invite")
 	
 	nSaySize = getn(tbSayDialog);
@@ -819,7 +819,7 @@ function get_vukhi()
 	tinsert(tbSayDialog, "- L­u Yªn c«n/#get_prize(2,9)")
 	tinsert(tbSayDialog, "- HuyÒn Yªn kiÕm/#get_prize(2,10)")
 	tinsert(tbSayDialog, "- Vò Yªn bót/#get_prize(2,11)")
-	tinsert(tbSayDialog, "- Hµ Tiªm Th­¬ng/#get_prize(2,12)")
+	tinsert(tbSayDialog, "- Ha Spear Lance/#get_prize(2,12)")
 	tinsert(tbSayDialog, "- Hµnh Yªn Cung/#get_prize(2,13)")
 	tinsert(tbSayDialog, "- Träc Yªn nhÉn/#get_prize(2,14)")
 	tinsert(tbSayDialog, "- Yªu Yªn tr¶o/#get_prize(2,15)")
@@ -918,7 +918,7 @@ function get_VD(nLv)
 	{
 		{0,103,8000,"Viªm §Õ Kh«i"},
 		{0,100,8000,"Viªm §Õ Gi¸p"},
-		{0,101,8000,"Viªm §Õ Trang"},
+		{0,101,8000,"Viem De Trang"},
 	}
 	local nBody = GetBody()
 	local nCheck  = Check_Award()
@@ -1137,7 +1137,7 @@ function VBonusShop_Buy(nOption)
 	local nPos = tbVBonusItemShop[nOption][5]
 	local nQty = GetTaskPosition(TSK_VBONUS_SaleOff, nPos)
 	if nQty >= nMax then
-		Talk(1,"",szNpcName.."B»ng h÷u ®· mua ®ñ <color=red>"..nMax.."<color> <color=yellow>"..szName.."<color> trong ngµy, mai h·y quay l¹i nhÐ.");
+		Talk(1,"",szNpcName.."Friend, you have already bought enough <color=red>"..nMax.."<color> <color=yellow>"..szName.."<color> trong ngµy, mai h·y quay l¹i nhÐ.");
 		return 0
 	end
 	if GetItemCount(2,1,30230) < nPrize then
@@ -1182,14 +1182,14 @@ function NhanThuongVBonus(nOption)
 		[86] = {fn = "VBonus_NhanThuong86()", nChankhi = 10000},
 		[89] = {item={{gdp={0,105,10107,1,1,-1,-1,-1,-1,-1,-1,-1}, name = "ThiÕu D­¬ng KiÕm", nExpired = 14*24*60*60}}, fn = "VBonus_NhanThuong89()", nPetExp = 300, nChankhi = 15000},
 		[91] = {item={{gdp={2,1,1068,1,4}, name = "Thiªn Th¹ch Linh Th¹ch", nExpired = 30*24*60*60}}, nPetExp = 300, nPetLinhluc = 200, nChankhi = 15000},
-		[96] = {item={{gdp={2,1,1067,1,4}, name = "§Þnh hån thiªn th¹ch", nExpired = 30*24*60*60}},nPetExp = 300, nPetLinhluc = 200, nChankhi = 20000},
+		[96] = {item={{gdp={2,1,1067,1,4}, name = "Soul-Fixing Meteorite", nExpired = 30*24*60*60}},nPetExp = 300, nPetLinhluc = 200, nChankhi = 20000},
 		[98] = {item={
 								{gdp={2,0,1082,1000}, name = "M¶nh Th¸i DÞch"},
 								{gdp={2,1,9977,2,4}, name = "Qu©n C«ng Huy Hoµng", nExpired = 7*24*60*60},
 							}
 							, nChankhi = 20000, nGold = 10000000},
 		[99] = {item={
-					{gdp={2,1,30345,1,1}, name = "ChuyÓn Sinh §¬n", nExpired = 60*24*3600},
+					{gdp={2,1,30345,1,1}, name = "Rebirth Pill", nExpired = 60*24*3600},
 					{gdp={2,1,1113,1,4}, name = "§¹i §Þnh Hån", nExpired = 30*24*60*60},
 				},
 				fn = "VBonus_NhanThuong99()"}
@@ -1315,7 +1315,7 @@ function VBonus_NhanThuong86_old()	--Vbonus cò
 	local tbSay = {}
 	tinsert(tbSay,"Thiªn NghÜa Cöu D­¬ng/#NhanThuongThienNghia(1)")
 	tinsert(tbSay,"Thiªn NghÜa Cöu ¢m/#NhanThuongThienNghia(2)")
-	tinsert(tbSay,"§Ó ta suy nghÜ thªm/gf_DoNothing")
+	tinsert(tbSay,"Let me think it over more/gf_DoNothing")
 	Say(szNpcName .."Ng­¬i h·y chän cho m×nh bé trang bÞ thÝch hîp.", getn(tbSay), tbSay)
 end
 

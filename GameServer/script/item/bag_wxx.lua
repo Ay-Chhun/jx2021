@@ -28,5 +28,5 @@ function OnUse(nItem)
 		{1, 17, "ChiÕn Hµi Thæ ChÕ ngò hµnh", {0, 154, 8, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 15, "ChiÕn Hµi ¢m ChÕ ngò hµnh", {0, 154, 9, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 	}
-	gf_EventGiveRandAward(tFoot, gf_SumRandBase(tFoot), 1, "LÔ Bao Ngò Hµnh Hµi", "LÔ Bao Ngò Hµnh Hµi");
+	gf_EventGiveRandAward(tFoot, gf_SumRandBase(tFoot), 1, "Five Elements Embryo Gift Pack", "Five Elements Embryo Gift Pack");
 end

@@ -6,13 +6,13 @@ Include("\\script\\online\\3festival\\3festival_head.lua")
 
 function OnUse()
 	local selTab = {
-			"NhËn ®­îc b¸nh Trung Thu Mü VŞ/detail_1",
+			"Received the Delicious Mooncake /detail_1",
 			"NhËn th­ëng Vâ L©m Minh/detail_6",
 --			"ÁìÈ¡Á½ÖÜÄê½±Àø/detail_2",
 			"B¸nh Trung Thu, lÊy ®¹o cô ®æi phÇn th­ëng /detail_3",
 			"Lµm c¸c lo¹i b¸nh Trung Thu/detail_4",
 			"§æi thÎ kû niÖm nhËn phÇn th­ëng/detail_5",
-			"[-§ãng h­íng dÉn-]/nothing",
+			"[-Close guide-]/nothing",
 			}
 	Say("<color=green>H­íng dÉn<color>: B¹n muèn t×m hiÓu ph­¬ng diÖn nµo? §Ó biÕt tØ mØ c¬ cÊu gi¶i th­ëng mêi ®Õn tra hái ng­êi qu¶n lı t­¬ng øng.",getn(selTab),selTab);
 end;

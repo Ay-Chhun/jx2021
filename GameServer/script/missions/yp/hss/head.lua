@@ -4,7 +4,7 @@ Include("\\settings\\static_script\\missions\\base\\mission_head.lua")
 thisFile = "\\script\\missions\\yp\\hss\\mission.lua";
 
 tbTBHSS = { 
-	name = "Thæ Phån Hãa Sinh Tù",
+	name = "Tubo Huasheng Temple",
 --	timerID = 79,
 	missionID = 80,
 	realMapID = 6100,

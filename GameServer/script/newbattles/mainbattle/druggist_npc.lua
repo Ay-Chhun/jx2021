@@ -2,13 +2,13 @@
 --create date:2006-12-19
 --describe:÷˜’Ω≥°÷–’Ω≥°“©∆∑æ¸–ËπŸΩ≈±æ
 Include("\\script\\newbattles\\mainbattle\\mainbattle_head.lua");
-g_NpcName = "Qu©n nhu quan";
+g_NpcName = "Army Supply Officer";
 function main()
 	local nNpcIndex = GetTargetNpc();
 	local selTab = {
 				"NhÀn mi‘n ph› d≠Óc ph»m chi’n tr≠Íng/get_free_medicine",
 				"ßÊi Æi”m t›ch lÚy l y d≠Óc ph»m chi’n tr≠Íng/buy_medicine",
-				"K’t thÛc ÆËi thoπi/nothing",
+				"End dialogue/nothing",
 				}
 	local nPlayerCamp = BT_GetCamp();
 	local nResourceCamp = GetGlbValue(GLB_RESOURCE);

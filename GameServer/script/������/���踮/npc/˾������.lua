@@ -37,7 +37,7 @@ else
 end
 	tinsert(tbSayDialog, "Xem sè l­îng c¸c nhiÖm vô/get_CSD_infor")
 	tinsert(tbSayDialog,"§æi ChuyÓn Sinh §¬n (cã thÓ giao dÞch, cã h¹n sö dông 30 ngµy) - tiªu hao 2 C­u Thiªn V« Cùc §¬n/exchange_CSD"	)	
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/nothing"	)	
+	tinsert(tbSayDialog,"End dialogue/nothing"	)	
 nSaySize = getn(tbSayDialog);
 Say(szSayHead, nSaySize, tbSayDialog);
 	---------------------------------- Î÷±±ÈÎÎñ08Æå·êµÐÊÖ----------------------------------
@@ -203,7 +203,7 @@ function get_CSD()
 	local szSayHead = "Cã 'Thùc míi Vùc ®­îc §¹o', kh«ng cho ta ¨n no th× ta kh«ng cã sùc ®Ó chÕ t¹o ChuyÓn Sinh §¬n, h·y cho ta 333 B¸nh bét vµng ®Ó lãt d¹."
 	
 	tinsert(tbSayDialog, "Gióp ¨n no ®Ó chÕ t¹o ChuyÓn Sinh §¬n (tiªu hao 333 B¸nh bét vµng)/confirm_get_CSD")
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/nothing"	)
+	tinsert(tbSayDialog,"End dialogue/nothing"	)
 		
 	nSaySize = getn(tbSayDialog);
 	Say(szSayHead, nSaySize, tbSayDialog);
@@ -227,7 +227,7 @@ function confirm_get_CSD()
 	local szSayHead = "B©y giê ta sÏ chÕ t¹o ChuyÓn Sinh §¬n cho ®¹i hiÖp, nh­ng h·y cho ta thªm  333 B¸nh bét vµng ®Ó dù tr÷ nha !!!."
 	
 	tinsert(tbSayDialog, "ChÕ t¹o ChuyÓn Sinh §¬n (tiªu hao 333 B¸nh bét vµng)/get_confirm_get_CSD")
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/nothing"	)
+	tinsert(tbSayDialog,"End dialogue/nothing"	)
 		
 	nSaySize = getn(tbSayDialog);
 	Say(szSayHead, nSaySize, tbSayDialog);
@@ -273,7 +273,7 @@ function get_confirm_get_CSD()
     end
 	if DelItem(1,1,15, 333) == 1 and GetTask(TSK_CSD) == 3 then
 		SetTask(TSK_CSD,4)
-		gf_AddItemEx2({2,1,30345, 1,4}, "ChuyÓn Sinh §¬n", "CHUOI NHIEM VU CSD", "NHAN THANH CONG CSD")
+		gf_AddItemEx2({2,1,30345, 1,4}, "Rebirth Pill", "CHUOI NHIEM VU CSD", "NHAN THANH CONG CSD")
 	end
 end
 function exchange_CSD()
@@ -286,7 +286,7 @@ function exchange_CSD()
 		return
 	end
 	if DelItem(2,1,30345,1) == 1	and DelItem(2,1,1006,2) == 1 then
-		gf_AddItemEx2({2,1,30345, 1,1}, "ChuyÓn Sinh §¬n", "DOI CSD", "CSD THANH CONG", 30*24*60*60)		
+		gf_AddItemEx2({2,1,30345, 1,1}, "Rebirth Pill", "DOI CSD", "CSD THANH CONG", 30*24*60*60)		
 	end
 end
 function get_CSD_infor()

@@ -60,7 +60,7 @@ function ck_ActTilte()
 	--	tinsert(tSay,"Vâ L©m T©n Tó/ck_ActTilte_1");
 	--else
 		--tinsert(tSay,"L·o ChiÕn H÷u/ck_ActTilte_2");
-		tinsert(tSay,"Ng­êi N¨ng §éng/ck_ActTilte_3");
+		tinsert(tSay,"Active Player/ck_ActTilte_3");
 	--end
 	tinsert(tSay,"T«i chØ xem xem th«i/nothing");
 	local _start,_end_act,_end = isolate_get_dates()
@@ -74,14 +74,14 @@ function handle_npc_talk_huodongdashi(nNpcIndex)
     local tSay = {
     	"Giíi thiÖu ho¹t ®éng/ck_ActInfo",
     	"Kİch ho¹t danh hiÖu/ck_ActTilte",
-    	"NhiÖm vô Dòng C¶m TiÕn Tíi/ck_TaskForward",
+    	"Brave Advance Quest/ck_TaskForward",
     	"NhiÖm vô Tr¨m TrËn Tr¨m Th¾ng/ck_BaiZhanBuDai",
-    	format("%s/#ck_task_group_talk1(2)", "NhiÖm vô Tèc ChiÕn Tèc Th¾ng"), --"ËÙÕ½ËÙ¾öÈÎÎñ/ck_FastTask",
-    	"NhiÖm vô §¹i Phó ¤ng/ck_ZiloTask",
+    	format("%s/#ck_task_group_talk1(2)", "Swift Battle Swift Victory Quest"), --"ËÙÕ½ËÙ¾öÈÎÎñ/ck_FastTask",
+    	"Great Tycoon Quest/ck_ZiloTask",
     	"Xem ®iÓm n¨ng ®éng/ck_QueryScore",
     	"KiÓm tra thiªn kiªu lÖnh/cdk_QueryUseTianJiaoLingNum",
     	"§iÓm n¨ng ®éng ®æi phÇn th­ëng/ck_ScoreAward",
-    	format("%s/nothing", "Ra khái"),
+    	format("%s/nothing", "Exit"),
     }
     Say(szTitle, getn(tSay), tSay)
 end
@@ -187,10 +187,10 @@ function ck_ActInfo(nIndex)
 	if Msg then
 		tbSay.msg = CK_NPC_NAME..Msg;
 		tbSay.sel = {
-			{"\n rót lui", "nothing"},
+			{"\n withdraw", "nothing"},
 		};
 		if strTitle[nIndex + 1] then
-			tinsert(tbSay.sel, 1, {"Trang kÕ", format("#ck_ActInfo(%d)", nIndex + 1)})
+			tinsert(tbSay.sel, 1, {"Next page", format("#ck_ActInfo(%d)", nIndex + 1)})
 		end
 		temp_Talk(tbSay);
 	end
@@ -211,7 +211,7 @@ function ck_ActTilte_1()
 	--	return 0;
 	--end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task1, 3) ~= 0 then
-		Say(CK_NPC_NAME..format("§· nhËn danh hiÖu <color=gold>[%s]<color> råi", "Ng­êi N¨ng §éng"), 0)
+		Say(CK_NPC_NAME..format("§· nhËn danh hiÖu <color=gold>[%s]<color> råi", "Active Player"), 0)
 		return 0;
 	end
 	DebugOutput(GetExtPoint(1), GetExtPoint(2))
@@ -247,7 +247,7 @@ function ck_ActTilte_2()
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task1, 3) ~= 0 then
-		Say(CK_NPC_NAME..format("§· nhËn danh hiÖu <color=gold>[%s]<color> råi", "Ng­êi N¨ng §éng"), 0)
+		Say(CK_NPC_NAME..format("§· nhËn danh hiÖu <color=gold>[%s]<color> råi", "Active Player"), 0)
 		return 0;
 	end
 	DebugOutput(GetExtPoint(3), GetExtPoint(4))
@@ -279,7 +279,7 @@ function ck_ActTilte_3()
 	--	return 0;
 	--end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task1, 3) ~= 0 then
-		Say(CK_NPC_NAME..format("§· nhËn danh hiÖu <color=gold>[%s]<color> råi", "Ng­êi N¨ng §éng"), 0)
+		Say(CK_NPC_NAME..format("§· nhËn danh hiÖu <color=gold>[%s]<color> råi", "Active Player"), 0)
 		return 0;
 	end
 	DebugOutput(GetExtPoint(5), GetExtPoint(6))
@@ -288,8 +288,8 @@ function ck_ActTilte_3()
 		PayExtPoint(5, 1);
 		AddTitle(68, 3);
 		SetTitleTime(68, 3, GetTime() + (60 * 24 * 3600));
-		Msg2Player(format("NhËn ®­îc danh hiÖu [%s]", "Ng­êi N¨ng §éng"))
-		Say(CK_NPC_NAME..format("NhËn ®­îc danh hiÖu <color=gold>[%s]<color>", "Ng­êi N¨ng §éng"), 0)
+		Msg2Player(format("NhËn ®­îc danh hiÖu [%s]", "Active Player"))
+		Say(CK_NPC_NAME..format("NhËn ®­îc danh hiÖu <color=gold>[%s]<color>", "Active Player"), 0)
 		gf_WriteLogEx("CDKEY", "ck_ActTilte", "AddTitle(68, 3)");
 		isolate_enable_event_dispatch(PlayerIndex) --´ò¿ª¸ÃÍæ¼ÒµÄËùÓĞevent dispatch
 		return 1;
@@ -403,7 +403,7 @@ function ck_BaiZhanBuDai()
 		--"\nNhiÖm vô ®¸nh qu¸i/ck_BZBD_Kill",
 		format("\n%s/#ck_task_group_talk2(1,1)", "NhiÖm vô ThÕ Lùc Ba Phe"),
 		"\nNhiÖm vô phã b¶n/ck_BZBD_Raid",
-		"\nNhiÖm vô PVP/ck_BZBD_PVP",
+		"\nPVP quest/ck_BZBD_PVP",
 		"\nT«i chØ xem xem th«i/nothing",
 	}
 	Say(CK_NPC_NAME.."NhiÖm vô <color=gold>Tr¨m TrËn Tr¨m Th¾ng<color>, nhËn ngÉu nhiªn h»ng ngµy, nhËn ®­îc nhiÒu kinh nghiÖm vµ ®é n¨ng ®éng!", getn(tSay), tSay);
@@ -822,7 +822,7 @@ function ck_FastTask()
 	end
 	local tSay = {
 		"\nNhiÖm vô bang héi/ck_FastTask_Tong",
-		"\nNhiÖm vô h­íng dÉn/ck_FastTask_Guide",
+		"\nGuide quest/ck_FastTask_Guide",
 		"\nT«i chØ xem xem th«i/nothing",
 	}
 	Say(CK_NPC_NAME.."NhiÖm vô <color=gold>Tèc ChiÕn Tèc Th¾ng<color>, trong thêi gian ho¹t ®éng chØ ®­îc hoµn thµnh 1 lÇn, nhËn ®­îc nhiÒu kinh nghiÖm vµ ®é n¨ng ®éng!", getn(tSay), tSay);
@@ -925,13 +925,13 @@ end
 
 function ck_FastTask_Guide()
 	local tSay = {
-		"\nThÎ th¸ng/ck_FastTask_Guide_1",
-		"\nThuèc viªn/ck_FastTask_Guide_2",
-		"\nC©y B¸t Nh· Nhá/ck_FastTask_Guide_3",
+		"\nMonthly card/ck_FastTask_Guide_1",
+		"\nMedicinal pill/ck_FastTask_Guide_2",
+		"\nSmall Prajna Tree/ck_FastTask_Guide_3",
 		"\nN÷ Oa B¶o H¹p vµ Ng«i Sao May M¾n/ck_FastTask_Guide_4",
 		"\nT«i chØ xem xem th«i/nothing",
 	}
-	Say(CK_NPC_NAME.."<color=gold>Tèc ChiÕn Tèc Th¾ng<color>-NhiÖm vô h­íng dÉn!", getn(tSay), tSay);
+	Say(CK_NPC_NAME.."<color=gold>Swift Battle Swift Victory<color>-Guide quest!", getn(tSay), tSay);
 end
 
 --Task3£º20Î»ÊÇ·ñÍê³É
@@ -942,7 +942,7 @@ function ck_FastTask_Guide_1(nFlag)
 			"\nT«i chØ xem xem th«i/nothing",
 		}
 		local Msg = format("Tªn nhiÖm vô: <color=gold>%s<color>\n§iÒu kiÖn nhiÖm vô:\n  %s\nH­íng dÉn nhiÖm vô:\n  %s\nPhÇn th­ëng nhiÖm vô:\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",
-			"ThÎ Th¸ng", "Kİch ho¹t thÎ th¸ng VIP vâ l©m", "Kİch ho¹t thÎ th¸ng, ch¬i trß ch¬i nhÑ nhµng h¬n", 8000000, 1200);
+			"Monthly Card", "Kİch ho¹t thÎ th¸ng VIP vâ l©m", "Kİch ho¹t thÎ th¸ng, ch¬i trß ch¬i nhÑ nhµng h¬n", 8000000, 1200);
 		Say(CK_NPC_NAME..Msg, getn(tSay), tSay);
 		return 0;
 	end
@@ -969,7 +969,7 @@ function ck_FastTask_Guide_2(nFlag)
 			"\nT«i chØ xem xem th«i/nothing",
 		}
 		local Msg = format("Tªn nhiÖm vô: <color=gold>%s<color>\n§iÒu kiÖn nhiÖm vô:\n  %s\nH­íng dÉn nhiÖm vô:\n  %s\nPhÇn th­ëng nhiÖm vô:\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",
-			"Thuèc viªn", "Ph©n biÖt sö dông 1 lÇn B¹ch CÇu Hoµn, Tam Thanh Hoµn vµ Lôc ThÇn Hoµn", "Sö dông c¸c lo¹i thuèc sÏ gióp b¹n mét tay", 5000000, 300);
+			"Pill", "Ph©n biÖt sö dông 1 lÇn B¹ch CÇu Hoµn, Tam Thanh Hoµn vµ Lôc ThÇn Hoµn", "Sö dông c¸c lo¹i thuèc sÏ gióp b¹n mét tay", 5000000, 300);
 		Say(CK_NPC_NAME..Msg, getn(tSay), tSay);
 		return 0;
 	end
@@ -1037,7 +1037,7 @@ function ck_FastTask_Guide_3(nFlag)
 			"\nT«i chØ xem xem th«i/nothing",
 		}
 		local Msg = format("Tªn nhiÖm vô: <color=gold>%s<color>\n§iÒu kiÖn nhiÖm vô:\n  %s\nH­íng dÉn nhiÖm vô:\n  %s\nPhÇn th­ëng nhiÖm vô:\n§iÓm kinh nghiÖm: %d, ®é n¨ng ®éng: %d",
-			"C©y B¸t Nh· nhá", "Trång 1 C©y B¸t Nh· Nhá", "Trång C©y B¸t Nh· Nhá, nhËn ®­îc phÇn th­ëng kinh nghiÖm", 5000000, 600);
+			"Small Prajna Tree", "Plant 1 Small Prajna Tree", "Trång C©y B¸t Nh· Nhá, nhËn ®­îc phÇn th­ëng kinh nghiÖm", 5000000, 600);
 		Say(CK_NPC_NAME..Msg, getn(tSay), tSay);
 		return 0;
 	end
@@ -1046,7 +1046,7 @@ function ck_FastTask_Guide_3(nFlag)
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task3, 25) ~= 1 then
-		Say(CK_NPC_NAME..format("VÉn ch­a trång <color=red>%s<color>", "C©y B¸t Nh· nhá"), 0);
+		Say(CK_NPC_NAME..format("VÉn ch­a trång <color=red>%s<color>", "Small Prajna Tree"), 0);
 		return 0;
 	end
 	CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task3, 26, 1);
@@ -1088,7 +1088,7 @@ function ck_FastTask_Guide_4(nFlag)
 		return 0;
 	end
 	if CK_TASK_GROUP:GetTaskBit(CK_TASK_GROUP.Task3, 28) ~= 1 then
-		Say(CK_NPC_NAME..format("VÉn ch­a sö dông bÊt kú <color=red>%s<color>", "Ng«i sao may m¾n"), 0);
+		Say(CK_NPC_NAME..format("VÉn ch­a sö dông bÊt kú <color=red>%s<color>", "Lucky Star"), 0);
 		return 0;
 	end
 	CK_TASK_GROUP:SetTaskBit(CK_TASK_GROUP.Task3, 29, 1);

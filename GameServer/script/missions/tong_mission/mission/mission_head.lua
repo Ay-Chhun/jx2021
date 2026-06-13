@@ -55,7 +55,7 @@ function MS_LeaveMission()
 	gf_ShowDebugInfor("player count:"..GetMSPlayerCount(MISSION_ID,0));
 	if nPlayerCount < MIN_PLAYER_COUNT then
 		if GetMissionV(MV_MISSION_STATE) > MS_STATE_READY then
-			Msg2MSAll(MISSION_ID,"Ng­êi ch¬i trong ¶i Ýt h¬n "..MIN_PLAYER_COUNT.." ng­êi, cöa ¶i sÏ kÕt thóc.");
+			Msg2MSAll(MISSION_ID,"There are fewer than"..MIN_PLAYER_COUNT.." ng­êi, cöa ¶i sÏ kÕt thóc.");
 			CloseMission(MISSION_ID);
 		end;
 	end;
@@ -110,7 +110,7 @@ end;
 --µÇÂ½´¥·¢Æ÷º¯Êý
 function OnLogin()
 	MS_RestorePlayerState();
-	WriteLog("[¶i Bang Héi]: Ng­êi ch¬i "..GetName().." Rêi Mission kh«ng b×nh th­êng, ®ang trong qu¸ tr×nh xö lý ®¨ng nhËp.");
+	WriteLog("[Guild Stage]: Player"..GetName().." Rêi Mission kh«ng b×nh th­êng, ®ang trong qu¸ tr×nh xö lý ®¨ng nhËp.");
 end;
 --=====================================================================================
 --´´½¨Ò»¸öMSUID£¨µ±Ç°MissionÎ¨Ò»±êÊ¶£©

@@ -10,7 +10,7 @@ function OnUse(nIndex)
 		return 0;
 	end
 	if GetTask(Task_id_008) == 2 and tGtTask:check_cur_task(70) == 1 then
-		Say("B¹n cã muèn sö dông l¹i chiÕn kú kh«ng?",2,"§ång ı/done","Ta chØ ®Õn xem thö/do_nothing")
+		Say("B¹n cã muèn sö dông l¹i chiÕn kú kh«ng?",2,"Agree/done","Ta chØ ®Õn xem thö/do_nothing")
 		return 0;
 	end
 	--µØÍ¼Õ½ÆìÊıÁ¿²»ÄÜ³¬¹ı20¸ö

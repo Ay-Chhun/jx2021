@@ -7,18 +7,18 @@ Include("\\script\\lib\\globalfunctions.lua")
 Include("\\script\\online\\viet_event\\march_event_09\\march_event_func.lua")
 
 g_szLogTitle = "Event thang 3"			--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
-g_szInfoHead = "<color=green>".."Quúnh Nhi TiÓu Th­".."<color>: "
+g_szInfoHead = "<color=green>".."Lady Qiong'er".."<color>: "
 
 g_tbItem = 
 {
 	--		Ãû×Ö		ID1,ID2,	ID3,	ÊýÁ¿ ÆÚÏÞ
 	[1] = {"Hoa hång ®á",	0,	108,	117,	1,	14},
-	[2] = {"Hoa hång phÊn",	0,	108,	118,	1,	14},
+	[2] = {"Pink rose",	0,	108,	118,	1,	14},
 	[3] = {"Hoa hång vµng",	0,	108,	119,	1,	14},
 	[4] = {"Hoa hång ®á",	0,	108,	120,	1,	14},
-	[5] = {"Hoa hång phÊn",	0,	108,	121,	1,	14},
+	[5] = {"Pink rose",	0,	108,	121,	1,	14},
 	[6] = {"Hoa hång vµng",	0,	108,	122,	1,	14},
-	[7] = {"Tñ ¸o",		2,	1,		30070,	1,	14},
+	[7] = {"Wardrobe",		2,	1,		30070,	1,	14},
 }
 
 
@@ -36,7 +36,7 @@ end
 
 function want_award()
 	if GetSex() ~= 2 then
-		Say(g_szInfoHead.."ChØ cã nh©n vËt n÷ míi nhËn ®­îc phÇn th­ëng!",1,"KÕt thóc ®èi tho¹i/no");
+		Say(g_szInfoHead.."ChØ cã nh©n vËt n÷ míi nhËn ®­îc phÇn th­ëng!",1,"End dialogue/no");
 		return
 	end
 	if GetLevel() < 40 then
@@ -44,15 +44,15 @@ function want_award()
 		return
 	end
 	if GetPlayerRoute() == 0 then
-		Say(g_szInfoHead.."Ho¹t ®éng nµy yªu cÇu ng­êi ch¬i ph¶i gia nhËp vµo m«n ph¸i.",1,"KÕt thóc ®èi tho¹i/no");
+		Say(g_szInfoHead.."Ho¹t ®éng nµy yªu cÇu ng­êi ch¬i ph¶i gia nhËp vµo m«n ph¸i.",1,"End dialogue/no");
 		return
 	end
 	if GetTask(GAIN_AWARD_09_WOMEN_0308_VIET) == 1 then
-		Say(g_szInfoHead.."C« n­¬ng ®· nhËn phÇn th­ëng råi, kh«ng thÓ nhËn thªm ®­îc n÷a. HÑn gÆp l¹i nhÐ!",1,"KÕt thóc ®èi tho¹i/no");
+		Say(g_szInfoHead.."C« n­¬ng ®· nhËn phÇn th­ëng råi, kh«ng thÓ nhËn thªm ®­îc n÷a. HÑn gÆp l¹i nhÐ!",1,"End dialogue/no");
 		return
 	end
 	if gf_Judge_Room_Weight(2,20) == 0 then
-		Say(g_szInfoHead.."Kho¶ng trèng hµnh trang hoÆc søc lùc kh«ng ®ñ, xin kiÓm tra l¹i!",1,"KÕt thóc ®èi tho¹i/no");
+		Say(g_szInfoHead.."Kho¶ng trèng hµnh trang hoÆc søc lùc kh«ng ®ñ, xin kiÓm tra l¹i!",1,"End dialogue/no");
 		return
 	end
 	give_award();
@@ -82,7 +82,7 @@ function add_item_ex(tItem)
 			SetItemExpireTime(nItemIdx, tItem[6]*24*3600)
 		end
 		Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." c¸i "..szItemName);
-		WriteLogEx(g_szLogTitle, "Quúnh Nhi", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName() )
+		WriteLogEx(g_szLogTitle, "Qiong'er", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName() )
 	else
 		WriteLogEx(g_szLogTitle, "", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
 	end

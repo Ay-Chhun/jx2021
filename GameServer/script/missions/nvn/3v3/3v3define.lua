@@ -8,7 +8,7 @@ DebugOutput = nothing
 _3V3_EQUIP_BLACKLISTS = {
 		--G,D,P	
 }
-g_szInfoHead = "<color=green> §Æc Sø §¹i Héi TØ Vâ <color>:";
+g_szInfoHead = "<color=green> Special Grand Duel Tournament <color>:";
 
 _3V3_LAST_WEEK_AWARD = {
 	[1] = {

@@ -161,7 +161,7 @@ ID	EventType	TriggerType	TargetName	TargetMap	TotalCount	ScriptFile	ScriptFunc
 1221	0	1	T©y Vùc H·n Phô		1	\script\task\world\xibei\task_trigger.lua	xiyuhanfu_killed_1
 1222	0	1	NhÊt PhÈm §­êng MËt Sø		1	\script\task\world\xibei\task_trigger.lua	yipintangmishi_killed_1
 1223	0	1	T©y B¾c Tr¸ng H¸n		1	\script\task\world\xibei\task_trigger.lua	xibeizhuanghan_killed_1
-1224	0	1	¢m NhËt Sø 		1	\script\task\world\xibei\task_trigger.lua	anrishi_killed_1
+1224	0	1	Am Nhat Su		1	\script\task\world\xibei\task_trigger.lua	anrishi_killed_1
 1225	0	1	Minh NhËt Sø		1	\script\task\world\xibei\task_trigger.lua	mingyueshi_killed_1
 1226	0	1	T©y B¾c Yªn H¸n		1	\script\task\world\xibei\task_trigger.lua	xibeiyanhan_killed_1
 1227	0	1	Gian TÕ Minh gi¸o		1	\script\task\world\xibei\task_trigger.lua	mingjiaojianxi_killed_1
@@ -216,18 +216,18 @@ ID	EventType	TriggerType	TargetName	TargetMap	TotalCount	ScriptFile	ScriptFunc
 1278	0	1				\script\online\dazitie\dzt_head.lua	dzt_tmz_kill
 1279	0	1				\script\vng\kill_trigger.lua	Vng_Kill_Trigger
 1280	0	1	ThÇn bÝ cung tiÔn thñ		10	\script\task\global_task\trigger.lua	OnTrigger
-1281	0	1	ThuÇn NhÊt Ch­ëng		1	\script\task\global_task\trigger.lua	OnTrigger
+1281	0	1	Pure Unity Palm		1	\script\task\global_task\trigger.lua	OnTrigger
 1282	0	1	D· Mao T­îng		10	\script\task\global_task\trigger.lua	yemaoxiang
 1283	0	1	H¾c Tinh Tinh		10	\script\task\global_task\trigger.lua	heixingxing_101
 1284	0	1	Háa Kú L©n		10	\script\task\global_task\trigger.lua	huoqilin
-1285	0	1	ThiÕt Ch­ëng Èn SÜ		10	\script\task\global_task\trigger.lua	OnTrigger
-1286	0	1	Lý Nh­îc Phi		1	\script\task\global_task\trigger.lua	OnTrigger
+1285	0	1	Iron Palm Hermit		10	\script\task\global_task\trigger.lua	OnTrigger
+1286	0	1	Ly Nhuoc Phi		1	\script\task\global_task\trigger.lua	OnTrigger
 1287	0	1	Ma Hãa Tèng Binh		30	\script\task\global_task\trigger.lua	OnTrigger
 1288	0	1	Ma Hãa Liªu Tiªn Phong		1	\script\task\global_task\trigger.lua	OnTrigger
 1289	0	1	Ma Hãa Liªu Binh		30	\script\task\global_task\trigger.lua	OnTrigger
 1290	0	1	Ma Hãa Tèng Tiªn Phong		1	\script\task\global_task\trigger.lua	OnTrigger
 1293	0	1	Qu¸i vËt		1	\script\function\zq_battles\zq_head.lua	ZQ_ProtectSeal_Killer
-1294	0	1	Ng­ Qu¸i		1	\script\task\global_task\trigger.lua	OnTrigger
+1294	0	1	Soul Beast		1	\script\task\global_task\trigger.lua	OnTrigger
 1295	0	1	TiÓu Lam §ao Quû		10	\script\task\global_task\trigger.lua	OnTrigger
 1296	0	1	Yªu Hå		1	\script\task\global_task\trigger.lua	OnTrigger
 1297	0	1				\script\global\npcdeath_trigger.lua	OnNpcDeath
@@ -290,13 +290,13 @@ ID	EventType	TriggerType	TargetName	TargetMap	TotalCount	ScriptFile	ScriptFunc
 1354	0	1	Ma H« La Giµ		1	\script\task\global_task\trigger.lua	ck_mohuluojia
 1355	0	1	§oµn Thõa ¢n		1	\script\task\global_task\trigger.lua	ck_duanchengen
 1356	0	1	Xu©n ThËp Tam n­¬ng		1	\script\task\global_task\trigger.lua	ck_chunshisanniang
-1357	0	1	Di Tu §¹i h¸n		1	\script\task\global_task\trigger.lua	ck_zaxusahan
+1357	0	1	Yixu the Great Han		1	\script\task\global_task\trigger.lua	ck_zaxusahan
 1358	0	1	Xi Háa §ao Kh¸ch		20	\script\task\global_task\trigger.lua	chihuodaoke2
-1359	0	1	H¾c Y Tr¸ng SÜ		10	\script\task\global_task\trigger.lua	OnTrigger
+1359	0	1	Black-Clad Warrior		10	\script\task\global_task\trigger.lua	OnTrigger
 1360	0	1	§µo Hoa §¶o Chñ Hoµng Long		1	\script\task\global_task\trigger.lua	OnTrigger
 1361	0	1	T©y Vùc Th­¬ng Lang B¸ V­¬ng		1	\script\task\global_task\trigger.lua	OnTrigger
 1362	0	1	Ngäc S¬n Chi Linh Thiªn Cöu		1	\script\task\global_task\trigger.lua	OnTrigger
-1363	0	1	U Tr¹ch Chi ¶nh Minh Vâ		1	\script\task\global_task\trigger.lua	OnTrigger
+1363	0	1	You Ze Zhi Ying Ming Wu		1	\script\task\global_task\trigger.lua	OnTrigger
 1364	0	1	Ng« ViÖt L·o Tæ		1	\script\task\global_task\trigger.lua	OnTrigger
 1365	0	1	L«i KiÕp Thó		1	\script\task\global_task\trigger.lua	OnTrigger
 1366	0	1	Trïng Qu¸i V­¬ng		199	\script\task\global_task\trigger.lua	OnTrigger
@@ -327,7 +327,7 @@ ID	EventType	TriggerType	TargetName	TargetMap	TotalCount	ScriptFile	ScriptFunc
 1392	0	1	L«i §­êng Chñ		1	\script\task\global_task\trigger.lua	OnTrigger
 1393	0	1	Thiªn ¢m ¸c §å		1	\script\task\global_task\trigger.lua	OnTrigger
 1394	0	1	ThÇn §µn Hé Ph¸p		20	\script\task\global_task\trigger.lua	OnTrigger
-1395	0	1	Kh©m Ph¹m TriÒu §×nh		1	\script\task\global_task\trigger.lua	OnTrigger
+1395	0	1	Inlay the Imperial Court		1	\script\task\global_task\trigger.lua	OnTrigger
 1396	0	1	L­u Vong ¸c §å		20	\script\task\global_task\trigger.lua	OnTrigger
 1397	0	1	Tinh §µn ThuËt SÜ		20	\script\task\global_task\trigger.lua	OnTrigger
 1398	0	1	NguyÖt §µn ThuËt SÜ		20	\script\task\global_task\trigger.lua	OnTrigger
@@ -337,8 +337,8 @@ ID	EventType	TriggerType	TargetName	TargetMap	TotalCount	ScriptFile	ScriptFunc
 1402	0	1	S¸t thñ Thiªn ¢m Gi¸o		5	\script\task\global_task\trigger.lua	OnTrigger
 1403	0	1	Tiªn phong Thiªn D­¬ng Giao		3	\script\task\global_task\trigger.lua	OnTrigger
 1404	0	1	Tinh hoa Thiªn D­¬ng Giao		1	\script\task\global_task\trigger.lua	OnTrigger
-1405	0	1	Mao TÆc lo¹n nhËp		10	\script\task\global_task\trigger.lua	OnTrigger
-1406	0	1	Long Hæ §­êng C¬ Quan Thó		10	\script\task\global_task\trigger.lua	OnTrigger
+1405	0	1	Maozei Intruders		10	\script\task\global_task\trigger.lua	OnTrigger
+1406	0	1	Longhu Hall Mechanism Beast		10	\script\task\global_task\trigger.lua	OnTrigger
 1407	0	1	Hµnh Gi¶ Vâ Tßng		1	\script\task\global_task\trigger.lua	OnTrigger
 1408	0	1	Tiªu NhiÔm NguyÖt Thiªn ¢m Gi¸o		1	\script\task\global_task\trigger.lua	OnTrigger
 1409	0	1	Giang Hå Tiªu TiÓu		10	\script\task\global_task\trigger.lua	OnTrigger
@@ -366,7 +366,7 @@ ID	EventType	TriggerType	TargetName	TargetMap	TotalCount	ScriptFile	ScriptFunc
 1431	0	1	Th¶o Nguyªn Kh¾c H·n		1	\script\task\global_task\trigger.lua	OnTrigger
 1432	0	1	Con Rèi Thñ TrËn		1	\script\task\global_task\trigger.lua	OnTrigger
 1433	0	1	C¸c C¸ch C­¬ng		1	\script\task\global_task\trigger.lua	OnTrigger
-1434	0	1	Ng­êi thÇn bÝ		1	\script\task\global_task\trigger.lua	OnTrigger
+1434	0	1	Mysterious Person		1	\script\task\global_task\trigger.lua	OnTrigger
 1435	0	1	Hæ Y Nh©n		20	\script\task\global_task\trigger.lua	OnTrigger
 1436	0	1	Thiªn ¢m Gi¸o Ma Vùc Sø		1	\script\task\global_task\trigger.lua	OnTrigger
 1437	0	1	Thiªn ¢m Gi¸o §å träng th­¬ng		1	\script\task\global_task\trigger.lua	OnTrigger
@@ -398,7 +398,7 @@ ID	EventType	TriggerType	TargetName	TargetMap	TotalCount	ScriptFile	ScriptFunc
 1463	0	1	Tam ThiÕu Gia		1	\script\task\global_task\trigger.lua	OnTrigger
 1464	0	1	¢n V« Phóc		1	\script\task\global_task\trigger.lua	OnTrigger
 1465	0	1	Lam Bµo Kh¸ch		1	\script\task\global_task\trigger.lua	OnTrigger
-1466	0	1	D¹ Xoa		1	\script\task\global_task\trigger.lua	OnTrigger
+1466	0	1	Yaksha		1	\script\task\global_task\trigger.lua	OnTrigger
 1467	0	1	Phi T­íng Qu©n		1	\script\task\global_task\trigger.lua	OnTrigger
 1468	0	1	Ng« Lçi		1	\script\task\global_task\trigger.lua	OnTrigger
 1469	0	1	§oµn Vò Tr¹ch		1	\script\task\global_task\trigger.lua	OnTrigger
@@ -418,7 +418,7 @@ ID	EventType	TriggerType	TargetName	TargetMap	TotalCount	ScriptFile	ScriptFunc
 1483	0	1	Tam ThiÕu Gia		1	\script\task\global_task\trigger.lua	OnTrigger
 1484	0	1	¢n V« Phóc		1	\script\task\global_task\trigger.lua	OnTrigger
 1485	0	1	Lam Bµo Kh¸ch		1	\script\task\global_task\trigger.lua	OnTrigger
-1486	0	1	D¹ Xoa		1	\script\task\global_task\trigger.lua	OnTrigger
+1486	0	1	Yaksha		1	\script\task\global_task\trigger.lua	OnTrigger
 1487	0	1	Phi T­íng Qu©n		1	\script\task\global_task\trigger.lua	OnTrigger
 1488	0	1	Nhai Th­îng S¬n TÆc		20	\script\task\global_task\trigger.lua	OnTrigger
 1489	0	1	NguyÖt §µn Hé Ph¸p		20	\script\task\global_task\trigger.lua	OnTrigger

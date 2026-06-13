@@ -39,7 +39,7 @@ function OnNpcTalkRepairGreatSkill()
 	local szTitle = format("§iÒu kiÖn söa ch÷a kü n¨ng trÊn ph¸i: chuyÓn sinh 4 trë lªn, kh«ng cã phã mËt tŞch trang bŞ, kü n¨ng trÊn ph¸i kh«ng ®ñ 10 cÊp")
 	local tbSay = {}
 	tinsert(tbSay, format("%s/_On_Repair","Tháa ®ñ ®iÒu kiÖn ®Ó phôc håi kü n¨ng trÊn ph¸i"))
-	tinsert(tbSay, "Tõ bá/no")
+	tinsert(tbSay, "Goodbye/no")
 	Say(szTitle, getn(tbSay), tbSay)
 end
 

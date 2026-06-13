@@ -27,9 +27,9 @@ function OnUse(goods_index)
 			goods_diff = i
 		end
 	end
-	Say("<color=green>Gîi ý<color>: Sö dông"..Tb_ma_task_reel[goods_diff][2].." cã thÓ t¨ng täa ®é L­u tinh trong <color=yellow>Khiªn V©n Phi Tinh Phæ<color> <color=yellow>"..Tb_ma_task_reel[goods_diff][3].."<color>. Sao h¶?",
+	Say("<color=green>Gîi ý<color>: Sö dông"..Tb_ma_task_reel[goods_diff][2].." cã thÓ t¨ng täa ®é L­u tinh trong <color=yellow>Khiªn V©n Phi Tinh Phæ<color> <color=yellow>"..Tb_ma_task_reel[goods_diff][3].."<color>. Really?",
 	2,
-	"§æi/#use_dtm("..goods_diff..")",
+	"Exchange/#use_dtm("..goods_diff..")",
 	"§Ó ta suy nghÜ l¹i/end_dialog"
 	)
 end

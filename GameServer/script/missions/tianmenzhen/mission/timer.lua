@@ -26,8 +26,8 @@ function Process_Peace_Timer()
 	else
 		SetMissionV(MV_TIMER_LOOP,nLoop-1);
 		if mod(nLoop,3) == 0 then --15Ãë²¥·ÅÒ»´Î
-			Msg2MSAll(MISSION_ID,"TiÕn ®é thêi gian: ["..(PEACE_TIMER_LOOP-nLoop+1)..":"..(PEACE_TIMER_LOOP+1).."]");
-			Msg2MSAll(MISSION_ID,"Tû lÖ sè ng­êi 2 phe:"..CampOne_Name.."["..nPlayerOne.."]:["..nPlayerTwo.."]"..CameTwo_Name..". Khi c¶ 2 phe ®Òu ®¹t "..PLAYER_NEED_NUM.."Ng­êi, chiÕn tr­êng Thiªn M«n TrËn sÏ b¾t ®Çu");
+			Msg2MSAll(MISSION_ID,"Time progress: ["..(PEACE_TIMER_LOOP-nLoop+1)..":"..(PEACE_TIMER_LOOP+1).."]");
+			Msg2MSAll(MISSION_ID,"Tû lÖ sè ng­êi 2 phe:"..CampOne_Name.."["..nPlayerOne.."]:["..nPlayerTwo.."]"..CameTwo_Name..". When both sides reach"..PLAYER_NEED_NUM.."Ng­êi, chiÕn tr­êng Thiªn M«n TrËn sÏ b¾t ®Çu");
 		end
 		if nPlayerOne >= PLAYER_NEED_NUM and nPlayerTwo >= PLAYER_NEED_NUM then
 			StopMissionTimer(MISSION_ID,TIMER_ID);
@@ -130,7 +130,7 @@ function Process_Fight_Timer()
 			Msg2MSAll(MISSION_ID,"C¸c vÞ anh hïng chó ý, ChiÕn Kú ®· xuÊt hiÖn t¹i hËu ph­¬ng trËn doanh cña ®ich, chØ cÇn nhæ ®­îc ChiÕn Kú cña phe ®èi ®Þch lµ cã thÓ ®Èy nhanh tiÕn tr×nh ph¸ trËn."); 
 		end
 		if mod(nLoop,4) == 0 then
-			Msg2MSAll(MISSION_ID,"TiÕn ®é thêi gian: ["..(FIGHT_TIMER_LOOP-nLoop+1)..":"..(FIGHT_TIMER_LOOP+1).."]");
+			Msg2MSAll(MISSION_ID,"Time progress: ["..(FIGHT_TIMER_LOOP-nLoop+1)..":"..(FIGHT_TIMER_LOOP+1).."]");
 			Msg2MSAll(MISSION_ID,"§iÓm sè 2 bªn hiÖn t¹i lµ:"..CampOne_Name.."["..nPointOne.."]:["..nPointTwo.."]"..CameTwo_Name)
 			TMZ_OperateAllPlayer(TMZ_KickSleep,{},ALL_ID); --Ë¯ÃßµÄÇ¿ÐÐÌß³öÕ½³¡
 		end		

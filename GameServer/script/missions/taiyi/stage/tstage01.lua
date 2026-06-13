@@ -92,7 +92,7 @@ end
 function tStage01_1.CheatMode()
 	local self = tStage01_1;
 	if GetItemCount(TYT_IB_ITEM[2], TYT_IB_ITEM[3], TYT_IB_ITEM[4]) < 1 then
-		Talk(1, "", "<color=green>Méc QuÕ Anh<color>: Trªn ng­êi b¹n"..TYT_IB_ITEM[1].."Kh«ng ®ñ.");
+		Talk(1, "", "<color=green>Méc QuÕ Anh<color>: Trªn ng­êi b¹n"..TYT_IB_ITEM[1].."Not enough.");
 		return 0;
 	end
 	if 1 ~= DelItem(TYT_IB_ITEM[2], TYT_IB_ITEM[3], TYT_IB_ITEM[4], 1) then return 0; end
@@ -113,19 +113,19 @@ function tStage01_1:NpcMain()
 		if not tStage01_1.sel_NORMAL then
 			tStage01_1.sel_NORMAL = {
 --				"½áÊøµÚ1¹Ø/#tStage01_1.JumpStage()",
-				"Më ¶i/#tStage01_1.EndStage()",
+				"Open the stage/#tStage01_1.EndStage()",
 				--"H×nh thøc sao chÐp (CÇn "..TYT_IB_ITEM[1].."*1)/#tStage01_1.CheatMode()",
-				"Rêi khái/TY_ConfirmClose",
-				"Hñy bá/nothing",
+				"Leave/TY_ConfirmClose",
+				"Cancel/nothing",
 			};
 		end
 		
 		if not tStage01_1.sel_HARD then
 			tStage01_1.sel_HARD = {
 --				"½áÊøµÚ1¹Ø/#tStage01_1.JumpStage()",
-				"Më ¶i/#tStage01_1.EndStage()",
-				"Rêi khái/TY_ConfirmClose",
-				"Hñy bá/nothing",
+				"Open the stage/#tStage01_1.EndStage()",
+				"Leave/TY_ConfirmClose",
+				"Cancel/nothing",
 			};
 		end
 		
@@ -469,9 +469,9 @@ function tStage01_3:NpcMain()
 			return 0;
 		end
 		local strTab = {
-			"Më ¶i 2/#tStage01_3.GoToStage02()",
+			"Open Stage 2/#tStage01_3.GoToStage02()",
 			"Ta muèn rêi khái ¶i/TY_ConfirmClose",
-			"Hñy bá/nothing",
+			"Cancel/nothing",
 		};
 		Say("<color=green>Méc QuÕ Anh<color>: §ång ý vµo ¶i tiÕp theo kh«ng?", getn(strTab), strTab);
 	end

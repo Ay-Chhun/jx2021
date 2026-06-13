@@ -11,7 +11,7 @@ tAttriOne = {
 	{"T¨ng Néi c«ng 6%",369,4},
 	{"T¨ng tæn th­¬ng 78",372,5},
 	{"TiÕp tôc kĞo dµi thêi gian c«ng kİch hç trî 30%",41,6},
-	{"KĞo dµi thêi gian hç trî phßng ngù 30%",42,6}
+	{"Extend defensive support time by 30%",42,6}
 	}
 
 --ÊôĞÔ¶şºÍÊôĞÔÈıÁĞ±í
@@ -23,7 +23,7 @@ tAttriTwo = {--ÊôĞÔÃû  ÊôĞÔid  lv1-lv7µÄ¸ÅÂÊ
 	{"Ph¸ phßng thñ ®èi ph­¬ng",362,0,0,0,0,100,0,0},
 	{"TÊn c«ng t¨ng ",77,0,0,35,70,100,0,0},
 	{"Ph¸t huy c«ng kİch lín nhÊt",346,0,0,35,70,100,0,0},
-	{"Tû lÖ ®¸nh ph¹m vi",335,0,0,35,70,100,0,0},
+	{"Hit range rate",335,0,0,35,70,100,0,0},
 	{"Vò khİ ®¸nh ngo¹i lín nhÊt t¨ng ",65,0,0,35,70,100,0,0},
 	{"Vò khİ ®¸nh ngo¹i thÊp nhÊt t¨ng ",66,0,0,35,70,100,0,0},
 	{"Vò khİ ®¸nh néi lín nhÊt t¨ng",67,0,0,35,70,100,0,0},
@@ -56,37 +56,37 @@ tAttriTwo = {--ÊôĞÔÃû  ÊôĞÔid  lv1-lv7µÄ¸ÅÂÊ
 
 --76¼¶ÎäÆ÷table£¬ĞòºÅ¶ÔÓ¦Íæ¼ÒÂ·Ïß
 tWeapon = {
-	[2]= {"Cæ §İnh",0,3,64,200},
-	[3]= {"A La H¸n Tr­îng",0,8,97,100},
+	[2]= {"Guding",0,3,64,200},
+	[3]= {"Arhat Staff",0,8,97,100},
 	[4]= {"V¹n NhÉn",0,0,14,220},
 	[6]= {"M·n Thiªn Hoa Vò",0,1,53,130},	
 	[8]= {"Háa Tinh",0,2,36,90},	
 	[9]= {"Hi Nh©n CÇm",0,10,75,140},
 	[11]= {"V¹n NhÉn",0,0,14,220},
-	[12]= {"LiÖt DiÖm",0,5,40,200},
+	[12]= {"Lie Yan",0,5,40,200},
 	[14]= {"Háa Tinh",0,2,36,90},	
 	[15]= {"ThÇn Hµnh",0,9,86,130},	
 	[17]= {"§¹i Hµo L«i Th­¬ng",0,6,108,130},	
 	[18]= {"ThÇn Cung",0,4,119,130},
-	[20]= {"L¨ng Phong",0,7,12,200},
+	[20]= {"Lingfeng",0,7,12,200},
 	[21]= {"M·nh hæ",0,11,12,200},
 	};
 
 --¸øËæ»ú76¼¶ÎäÆ÷table
 tRandomW = {
-	[1]= {"Cæ §İnh",0,3,64,200},
-	[2]= {"A La H¸n Tr­îng",0,8,97,100},
+	[1]= {"Guding",0,3,64,200},
+	[2]= {"Arhat Staff",0,8,97,100},
 	[3]= {"V¹n NhÉn",0,0,14,220},
 	[4]= {"M·n Thiªn Hoa Vò",0,1,53,130},	
 	[5]= {"Háa Tinh",0,2,36,90},	
 	[6]= {"Hi Nh©n CÇm",0,10,75,140},
 	[7]= {"V¹n NhÉn",0,0,14,220},
-	[8]= {"LiÖt DiÖm",0,5,40,200},
+	[8]= {"Lie Yan",0,5,40,200},
 	[9]= {"Háa Tinh",0,2,36,90},	
 	[10]= {"ThÇn Hµnh",0,9,86,130},	
 	[11]= {"§¹i Hµo L«i Th­¬ng",0,6,108,130},	
 	[12]= {"ThÇn Cung",0,4,119,130},
-	[13]= {"L¨ng Phong",0,7,12,200},
+	[13]= {"Lingfeng",0,7,12,200},
 	[14]= {"M·nh hæ",0,11,12,200},
 	};
 
@@ -95,7 +95,7 @@ function GetPlayerSex()
 	if (GetSex() == 1) then
 		mySex = "ThiÕu hiÖp";
 	elseif (GetSex() == 2) then
-		mySex = "C« n­¬ng";
+		mySex = "Young lady";
 	end;
 	return mySex;
 end
@@ -129,7 +129,7 @@ function choose_attri()
 		tinsert(strtab,tAttriOne[i][1].."/#confirm_attri("..i..")");
 	end
 	tinsert(strtab,"§Ó ta suy nghÜ mét l¸t, sau ®ã sÏ më hép/nothing");
-	Say("<color=green>Hép §ång t©m<color>:"..GetPlayerSex().."Hy väng xuÊt hiÖn thuéc tİnh thÇn binh hµng thø nhÊt lµ",getn(strtab),strtab);
+	Say("<color=green>Heart-to-Heart Box<color>:"..GetPlayerSex().."Hy väng xuÊt hiÖn thuéc tİnh thÇn binh hµng thø nhÊt lµ",getn(strtab),strtab);
 end
 
 function confirm_attri(nAttri)
@@ -139,7 +139,7 @@ function confirm_attri(nAttri)
 		"Trêi, thÇn binh v« chñ, hay lµ ®Ó sau nµy h½ng më!/cancel"
 		}
 	SetTaskTemp(TT_TONGXIN_ATTRI,nAttri);
-	Say("<color=green>Hép §ång t©m<color>:"..GetPlayerSex().."Chän thuèc tİnh thø nhÊt lµ <color=yellow>"..tAttriOne[nAttri][1].."<color>. B¹n muèn thÇn binh ra khái hép kh«ng?",getn(strtab),strtab);
+	Say("<color=green>Heart-to-Heart Box<color>:"..GetPlayerSex().."Chän thuèc tİnh thø nhÊt lµ <color=yellow>"..tAttriOne[nAttri][1].."<color>. B¹n muèn thÇn binh ra khái hép kh«ng?",getn(strtab),strtab);
 end
 
 function attri_list(nPage)
@@ -154,10 +154,10 @@ function attri_list(nPage)
 		tinsert(dia_attri,tAttriTwo[(nPage*page_num)+i][1].."/#confirm_attri("..GetTaskTemp(TT_TONGXIN_ATTRI)..")");
 	end
 	if nPage ~= 0 then
-		tinsert(dia_attri,"Trang tr­íc/#attri_list("..(nPage-1)..")");
+		tinsert(dia_attri,"Previous page/#attri_list("..(nPage-1)..")");
 	end
 	if attri_remain_num > page_num then
-		tinsert(dia_attri,"Trang kÕ/#attri_list("..(nPage+1)..")");
+		tinsert(dia_attri,"Next page/#attri_list("..(nPage+1)..")");
 	end
 		tinsert(dia_attri,"trë l¹i/#confirm_attri("..GetTaskTemp(TT_TONGXIN_ATTRI)..")");
 		

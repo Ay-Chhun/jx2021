@@ -119,7 +119,7 @@ function Xmas_tree(tree_diff,goods_index)
 		SFX_seq = random(1,4)
 	end
 	
-	local Xmas_tree_name = GetName().." trång "..Conf_Xmas_tree_SQF_name[1][SFX_seq + 1].."c©y Gi¸ng sinh (nhá)"
+	local Xmas_tree_name = GetName().." plant"..Conf_Xmas_tree_SQF_name[1][SFX_seq + 1].."Christmas tree (small)"
 	local Xmas_tree_index = CreateNpc(Xms_tree_npc_name[1][tree_diff],Xmas_tree_name,MapID,Att_X,Att_Y,6,1,1,0)
 	SetNpcScript(Xmas_tree_index,"\\script\\online\\zgc_npc_dialog.lua")
 	--ÔÚ´Ë¼ÓÈëÌØÐ§
@@ -224,7 +224,7 @@ function ConfDataGetReturn_2(data_value)
 		local SFC_seq = floor(random(10,49)/10)					--ÌØÐ§ID
 		local conf_tree_diff = 10 + SFC_seq			--°ï»áÊ¥µ®Ê÷Àà±ð¼ÆËã
 		local map_ID,att_X,att_Y = GetWorldPos()
-		local conf_Xmas_tree_name = GetTongName().." trång "..Conf_Xmas_tree_SQF_name[1][SFC_seq +1 ].."-".."C©y Gi¸ng Sinh (nhá)"
+		local conf_Xmas_tree_name = GetTongName().." plant"..Conf_Xmas_tree_SQF_name[1][SFC_seq +1 ].."-".."C©y Gi¸ng Sinh (nhá)"
 		local conf_Xmas_tree_index = CreateNpc(Xms_tree_npc_name[1][4],conf_Xmas_tree_name,map_ID,att_X,att_Y,6,1,1,0)
 		SetNpcScript(conf_Xmas_tree_index,"\\script\\online\\zgc_npc_dialog.lua")
 		--½«Ê¥µ®Ê÷µÄ2¡¢3Î»Êý¾ÝÇå¿Õ
@@ -241,7 +241,7 @@ function ConfDataGetReturn_2(data_value)
 		--°ï»á¹«¸æ
 		local map_name = Zgc_pub_mapID_name_change(map_ID,1) 
 		if map_name ~= 0 then
-			SendTongMessage("T¹i"..map_name.."C©y Gi¸ng sinh bang héi ®· trång, mong c¸c vÞ bang chóng ®Õn trang trÝ!")
+			SendTongMessage("At"..map_name.."C©y Gi¸ng sinh bang héi ®· trång, mong c¸c vÞ bang chóng ®Õn trang trÝ!")
 		end
 		--ÌØÐ§¼ÓÈë
 		SetCurrentNpcSFX(conf_Xmas_tree_index,Xmas_tree_SFX_table[4][1][SFC_seq],1,1)					--ÌØÐ§ÉèÖÃ

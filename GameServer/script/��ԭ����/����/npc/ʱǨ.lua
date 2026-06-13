@@ -115,7 +115,7 @@ local strMain = {
 	"Hµnh tÈu giang hå ph¶i biÕt trõ giang diÖt ¸c, còng nh­ Thêi Thiªn ta thÊy chuyÖn ch­íng m¾t kh«ng nhóng tay vµo kh«ng ®­îc.",
 	"TiÒn bèi hiÓu s©u biÕt réng, xin chØ gi¸o thªm.",
 	"Ta cã mét huynh ®Ö <color=yellow>L©m Xung<color>, ë <color=yellow>NhŞ Long S¬n<color> chuyªn c­íp cña ng­êi giµu chia cho ng­êi nghÌo, thay trêi hµnh ®¹o. NÕu ng­¬i cã høng thó th× nªn ®Õn ®ã mét chuyÕn.",
-	"§a t¹ tiÒn bèi!",
+	"Many thanks, senior!",
 }
 	CTask:TalkEx("",strMain)
 	CTask:FinishTask("Thêi Thiªn T­¬ng D­¬ng (3 )")

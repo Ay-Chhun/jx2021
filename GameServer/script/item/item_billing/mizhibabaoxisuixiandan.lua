@@ -12,7 +12,7 @@
 function OnUse()
 	Say("Sau khi dïng <color=yellow>BÝ mËt chÕ B¸t B¶o TÈy Tñy Tiªn §¬n<color> cã thÓ t¹o l¹i toµn bé n¨ng lùc cña b¹n, b¹n x¸c nhËn muèn t¹o l¹i kh«ng?",
 		2,
-		"§­îc/change_all_points",
+		"Agree/change_all_points",
 		"Ta kh«ng muèn kh«i phôc--Hñy bá/cancel_dialog")
 end;
 
@@ -24,7 +24,7 @@ end;
 function change_all_points()
 	Say("Qu¸ tr×nh t¹o l¹i sÏ hao phÝ <color=yellow>BÝ mËt chÕ B¸t B¶o TÈy Tñy Tiªn §¬n<color> quÝ gi¸, b¹n muèn t¹o l¹i kh«ng?",
 		2,
-		"§­îc/confirm_change_all_points",
+		"Agree/confirm_change_all_points",
 		"Ta kh«ng muèn kh«i phôc--Hñy bá/cancel_dialog")
 end;
 

@@ -31,13 +31,13 @@ function OnUse(nItem)
 		{2, 1500, 15000000, 1},
 		{2, 1000, 20000000, 1},
 		{2, 384, 30000000, 1},
-		{1, 50, "Tµng R­¬ng", {2, 1, 30341, 1}, 0},
+		{1, 50, "Treasure Chest", {2, 1, 30341, 1}, 0},
 		{1, 25, "Thiªn Th¹ch linh th¹ch", {2, 1, 1068, 1}, 7 * 24 * 3600},
 		{1, 25, "§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", {2, 1, 1067, 1}, 7 * 24 * 3600},
 		{1, 50, "§¹i §Þnh Hån ", {2, 1, 1113, 1}, 7 * 24 * 3600},
 		{1, 100, "VÐ TiÕu Y Vµng", {2, 1, 30491, 1}, 7 * 24 * 3600},
-		{1, 500, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 1}, 0},
-		{1, 50, "ChuyÓn Sinh §¬n ", {2, 1, 30345, 1}, 7 * 24 * 3600},
+		{1, 500, "Xiu Zhen Yao Jue", {2, 0, 554, 1}, 0},
+		{1, 50, "Reincarnation Pill", {2, 1, 30345, 1}, 7 * 24 * 3600},
 		{33, 600, 500, 1},
 		{4, 1000, 200, 1},
 		{5, 1000, 200, 1},
@@ -47,9 +47,9 @@ function OnUse(nItem)
 		{1, 100, "M¶nh Thiªn th¹ch", {2, 2, 7, 1}, 0},
 		{1, 10, "Thiªn Th¹ch Tinh Th¹ch", {2, 1, 1009, 1}, 7 * 24 * 3600},
 		{1, 5, "ThÇn Tµi B¶o R­¬ng", {2, 1, 30344, 1}, 0},
-		{1, 10, "L¹c §µ Tr¾ng", {0, 105, 148, 1, 1, -1, -1, -1, -1, -1, -1}, 15 * 24 * 3600},
+		{1, 10, "White Camel", {0, 105, 148, 1, 1, -1, -1, -1, -1, -1, -1}, 15 * 24 * 3600},
 	}
-	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Ho¹t ®éng th¸ng 1 n¨m 2015", "B¸nh Ýt thËp cÈm");
+	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Ho¹t ®éng th¸ng 1 n¨m 2015", "Assorted zongzi");
 end
 
 function VET_201501_AdditionDialog(tbSayDialog, szSayHead)
@@ -74,16 +74,16 @@ function VET_201501_GetFinalAward()
 	end
 	SetTask(2849, 1);
 	gf_ModifyExp(2000000000);
-	gf_AddItemEx2({1, 1, 15, 111}, "B¸nh Bét vµng", "Ho¹t ®éng th¸ng 1 n¨m 2015", "B¸nh Ýt thËp cÈm", 0, 1);
-	gf_AddItemEx2({1, 1, 19, 111}, "T©y B¾c Väng", "Ho¹t ®éng th¸ng 1 n¨m 2015", "B¸nh Ýt thËp cÈm", 0, 1);
-	gf_AddItemEx2({1, 1, 17, 111}, "Minh NguyÖt D¹", "Ho¹t ®éng th¸ng 1 n¨m 2015", "B¸nh Ýt thËp cÈm", 0, 1);
-	gf_EventGiveCustomAward(31, 9999, 1, "Ho¹t ®éng th¸ng 1 n¨m 2015", "B¸nh Ýt thËp cÈm");
-	gf_EventGiveCustomAward(27, 9999, 1, "Ho¹t ®éng th¸ng 1 n¨m 2015", "B¸nh Ýt thËp cÈm");
-	gf_AddItemEx2({2, 1, 30344, 4}, "ThÇn Tµi B¶o R­¬ng", "Ho¹t ®éng th¸ng 1 n¨m 2015", "B¸nh Ýt thËp cÈm", 0, 1);
-	gf_AddItemEx2({0, 105, 30000, 1, 1, -1, -1, -1, -1, -1, -1}, "Kú l©n", "Ho¹t ®éng th¸ng 1 n¨m 2015", "B¸nh Ýt thËp cÈm", 0, 1);
+	gf_AddItemEx2({1, 1, 15, 111}, "Golden Flour Cake", "Ho¹t ®éng th¸ng 1 n¨m 2015", "Assorted zongzi", 0, 1);
+	gf_AddItemEx2({1, 1, 19, 111}, "Northwest Gaze", "Ho¹t ®éng th¸ng 1 n¨m 2015", "Assorted zongzi", 0, 1);
+	gf_AddItemEx2({1, 1, 17, 111}, "Minh NguyÖt D¹", "Ho¹t ®éng th¸ng 1 n¨m 2015", "Assorted zongzi", 0, 1);
+	gf_EventGiveCustomAward(31, 9999, 1, "Ho¹t ®éng th¸ng 1 n¨m 2015", "Assorted zongzi");
+	gf_EventGiveCustomAward(27, 9999, 1, "Ho¹t ®éng th¸ng 1 n¨m 2015", "Assorted zongzi");
+	gf_AddItemEx2({2, 1, 30344, 4}, "ThÇn Tµi B¶o R­¬ng", "Ho¹t ®éng th¸ng 1 n¨m 2015", "Assorted zongzi", 0, 1);
+	gf_AddItemEx2({0, 105, 30000, 1, 1, -1, -1, -1, -1, -1, -1}, "Kirin", "Ho¹t ®éng th¸ng 1 n¨m 2015", "Assorted zongzi", 0, 1);
 end
 
 function VET_201501_LookUsedNum()
-	local msg = format("HiÖn nay<color=green>%s<color>cña ng­¬i: sè l­îng sö dông lµ :%d/%d ", "B¸nh Ýt thËp cÈm", GetTask(2848), 2000);
-	Talk(1,"","<color=green>Nh¾c nhë<color>:"..msg)
+	local msg = format("HiÖn nay<color=green>%s<color>cña ng­¬i: sè l­îng sö dông lµ :%d/%d ", "Assorted zongzi", GetTask(2848), 2000);
+	Talk(1,"","<color=green>Reminder<color>:"..msg)
 end

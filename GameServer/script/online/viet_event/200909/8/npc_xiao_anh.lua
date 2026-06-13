@@ -4,7 +4,7 @@
 Include("\\script\\online\\viet_event\\200909\\8\\head.lua");
 
 XIAO_BYTE_ID = 3
-szNpcName = "<color=green>Ti”u Anh<color>: "
+szNpcName = "<color=green>Tieu Anh<color>:"
 
 function main()
 	npc_xiao_talk();

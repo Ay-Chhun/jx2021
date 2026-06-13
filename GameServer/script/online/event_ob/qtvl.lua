@@ -12,7 +12,7 @@ function take_gift_qtvl()
 			if (GetFreeItemRoom() >=  PRIZE_QTVL) then
 				PayExtPoint(EXT_POINT_QTVL, nExtVal)
 			else
-				Say("Hµnh trang b»ng h÷u kh«ng ®ñ "..PRIZE_QTVL.." chç trèng.",0)
+				Say("Hµnh trang b»ng h÷u kh«ng ®ñ "..PRIZE_QTVL.." empty slots.",0)
 				Msg2Player("Hµnh trang cña b¹n kh«ng ®ñ chç trèng.")
 				return
 			end		

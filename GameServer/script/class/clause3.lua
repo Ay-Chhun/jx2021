@@ -50,7 +50,7 @@ function Clause3:giveItem(Item)
 		end
 		gf_Modify(szType, nNum);
 		if szNotice then
-			local t = {Exp="Kinh nghiÖm",SchoolRep="Danh väng s­ m«n",Money="Vµng vâ l©m"};
+			local t = {Exp="Kinh nghiÖm",SchoolRep="Sect reputation",Money="Vµng vâ l©m"};
 			local szItemName = t[szType];
 			szNotice = gsub(szNotice,"%$i",format("[%s] x%d", szItemName,nNum));
 		end

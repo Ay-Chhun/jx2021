@@ -56,7 +56,7 @@ function task_3()
 end
 
 function return_status(nTaskID)
-	local strTab = {"C„ th” ti’p nhÀn","C„ th” giao","Ch≠a hoµn thµnh","Ngµy mai h∑y Æ’n"};
+	local strTab = {"C„ th” ti’p nhÀn","C„ th” giao","Ch≠a hoµn thµnh","Come back tomorrow"};
 	local nSerial = nTaskID - 87;
 	if gf_GetTaskByte(VET_LSB_MAIL_NUM,nSerial) == 0 then
 		return strTab[1];

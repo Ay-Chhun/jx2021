@@ -18,8 +18,8 @@ VET_201112_CHOCOLATE_TASK.TotalMaxExp = 6;
 VET_201112_AWARD_TABLE = {
    	{3, 200, 14020000, 1},
 	{1, 1420, "Thiªn Th¹ch Tinh Th¹ch", {2, 1, 1009, 1}, 0},
-   	{1, 1420, "NhÉn kim c­¬ng", {0, 102, 104, 1, 1}, 0},
-   	{1, 1420, "NhÉn kim c­¬ng", {0, 102, 105, 1, 1}, 0},
+   	{1, 1420, "Diamond Ring", {0, 102, 104, 1, 1}, 0},
+   	{1, 1420, "Diamond Ring", {0, 102, 105, 1, 1}, 0},
    	{1, 2100, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 2}, 0},
    	{31, 3440,"give_201112_award()",""},
 }
@@ -204,7 +204,7 @@ function OnUse(ItemIndex)
   	VET_201112_CHOCOLATE_TASK:SetTask(VET_201112_CHOCOLATE_TASK.Num,VET_201112_CHOCOLATE_TASK:GetTask(VET_201112_CHOCOLATE_TASK.Num)+1);
   	VET_201112_CHOCOLATE_TASK:SetTask(VET_201112_CHOCOLATE_TASK.TotalMaxExp,VET_201112_CHOCOLATE_TASK:GetTask(VET_201112_CHOCOLATE_TASK.TotalMaxExp)+1);
   	if VET_201112_CHOCOLATE_TASK:GetTask(VET_201112_CHOCOLATE_TASK.Num) == VET_201112_USED_MAX then
-	  	gf_EventGiveRandAward(VET_201112_AWARD_TABLE,10000,1,"LÔ valentine 2012","PhÇn th­ëng lÔ t×nh nh©n");
+	  	gf_EventGiveRandAward(VET_201112_AWARD_TABLE,10000,1,"Valentine's Day 2012","PhÇn th­ëng lÔ t×nh nh©n");
 	  end
 	end
 	PlayerIndex = nOldPlayer;

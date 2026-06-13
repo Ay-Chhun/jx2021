@@ -8,37 +8,37 @@ tNpcDir = {
 
 tCDZList = {
   [6000] = {
-	  {"§¹i Lý TruyÒn §¹o 1","§Ö NhÊt"},
-	  {"§¹i Lý TruyÒn §¹o 2","§Ö NhÞ"},
-	  {"§¹i Lý TruyÒn §¹o 3","§Ö Tam"},
-	  {"§¹i Lý TruyÒn §¹o 4","§Ö Tø"},
-	  {"§¹i Lý TruyÒn §¹o 5","§Ö Ngò"},
-	  {"§¹i Lý TruyÒn §¹o 6","§Ö Lôc"},
-	  {"§¹i Lý TruyÒn §¹o 7","§Ö ThÊt"},
-	  {"§¹i Lý TruyÒn §¹o 8","§Ö B¸t"},
-	  {"§¹i Lý TruyÒn §¹o 9","§Ö Cöu"},
+	  {"Dali Missionary 1","First"},
+	  {"Dali Missionary 2","Second"},
+	  {"Dali Missionary 3","Third"},
+	  {"Dali Missionary 4","Fourth"},
+	  {"Dali Missionary 5","Fifth"},
+	  {"Dali Missionary 6","Sixth"},
+	  {"Dali Missionary 7","Seventh"},
+	  {"Dali Missionary 8","Eighth"},
+	  {"Dali Missionary 9","§Ö Cöu"},
 	},
   [6100] = {
-	  {"Thæ Phån TruyÒn §¹o 1","§Ö NhÊt"},
-	  {"Thæ Phån TruyÒn §¹o 2","§Ö NhÞ"},
-	  {"Thæ Phån TruyÒn §¹o 3","§Ö Tam"},
-	  {"Thæ Phån TruyÒn §¹o 4","§Ö Tø"},
-	  {"Thæ Phån TruyÒn §¹o 5","§Ö Ngò"},
-	  {"Thæ Phån TruyÒn §¹o 6","§Ö Lôc"},
-	  {"Thæ Phån TruyÒn §¹o 7","§Ö ThÊt"},
-	  {"Thæ Phån TruyÒn §¹o 8","§Ö B¸t"},
-	  {"Thæ Phån TruyÒn §¹o 9","§Ö Cöu"},
+	  {"Tubo Missionary 1","First"},
+	  {"Tubo Missionary 2","Second"},
+	  {"Tubo Missionary 3","Third"},
+	  {"Tubo Missionary 4","Fourth"},
+	  {"Tubo Missionary 5","Fifth"},
+	  {"Tubo Missionary 6","Sixth"},
+	  {"Tubo Missionary 7","Seventh"},
+	  {"Tubo Missionary 8","Eighth"},
+	  {"Tubo Missionary 9","§Ö Cöu"},
 	},
   [6200] = {
-	  {"T©y H¹ TruyÒn §¹o 1","§Ö NhÊt"},
-	  {"T©y H¹ TruyÒn §¹o 2","§Ö NhÞ"},
-	  {"T©y H¹ TruyÒn §¹o 3","§Ö Tam"},
-	  {"T©y H¹ TruyÒn §¹o 4","§Ö Tø"},
-	  {"T©y H¹ TruyÒn §¹o 5","§Ö Ngò"},
-	  {"T©y H¹ TruyÒn §¹o 6","§Ö Lôc"},
-	  {"T©y H¹ TruyÒn §¹o 7","§Ö ThÊt"},
-	  {"T©y H¹ TruyÒn §¹o 8","§Ö B¸t"},
-	  {"T©y H¹ TruyÒn §¹o 9","§Ö Cöu"},
+	  {"Xixia Missionary 1","First"},
+	  {"Xixia Missionary 2","Second"},
+	  {"Xixia Missionary 3","Third"},
+	  {"Xixia Missionary 4","Fourth"},
+	  {"Xixia Missionary 5","Fifth"},
+	  {"Xixia Missionary 6","Sixth"},
+	  {"Xixia Missionary 7","Seventh"},
+	  {"Xixia Missionary 8","Eighth"},
+	  {"Xixia Missionary 9","§Ö Cöu"},
 	},
 }
 
@@ -154,9 +154,9 @@ function main()
 				SetNpcScript(nIdx,"\\script\\missions\\yp\\monster_npc.lua");
 				gf_SetTaskByte(TASK_FIELD_PVP_STEAL_STEP,1,gf_GetTaskByte(TASK_FIELD_PVP_STEAL_STEP,1)+1);
 				gf_SetTaskBit(TASK_FIELD_PVP_STEALED,nNpcNum,1);
-				Talk(1,"",g_NpcName.."Trªn ng­êi ta kh«ng cã Kim Cang Kinh, nh­ng ta thÊy ®­îc "..strMsg.." trong sè ng­êi truyÒn ®¹o, cã ng­êi mang theo "..nNum.." quyÓn.");
+				Talk(1,"",g_NpcName.."Trªn ng­êi ta kh«ng cã Kim Cang Kinh, nh­ng ta thÊy ®­îc "..strMsg.." trong sè ng­êi truyÒn ®¹o, cã ng­êi mang theo "..nNum.." scrolls.");
 			else
-				Talk(1,"",g_NpcName.."Trªn ng­êi ta kh«ng cã Kim Cang Kinh, nh­ng ta thÊy ®­îc "..strMsg.." trong sè ng­êi truyÒn ®¹o, cã ng­êi mang theo "..nNum.." quyÓn.");
+				Talk(1,"",g_NpcName.."Trªn ng­êi ta kh«ng cã Kim Cang Kinh, nh­ng ta thÊy ®­îc "..strMsg.." trong sè ng­êi truyÒn ®¹o, cã ng­êi mang theo "..nNum.." scrolls.");
 			end
 		else
 			if gf_Judge_Room_Weight(2,10,"") ~= 1 then
@@ -165,7 +165,7 @@ function main()
 			gf_SetTaskBit(TASK_FIELD_PVP_STEALED,nNpcNum,1);
 			gf_AddItemEx({2,95,825,1},"Kim Cang Kinh");
 			if random(1,100) <= 1 then
-				gf_AddItemEx({2,95,822,1},"Kim L¨ng Töu");
+				gf_AddItemEx({2,95,822,1},"Jinling Wine");
 			end
 			Talk(1,"",g_NpcName..tSomeFeihua[nMapID][2]);
 		end

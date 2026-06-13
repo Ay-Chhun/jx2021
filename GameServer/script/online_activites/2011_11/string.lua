@@ -3,7 +3,7 @@
 tSTRING_MR_WHITE_NPC = "<color=green>B¹ch tiªn sinh: <color>"
 
 tSTRING_201111_TABLE = {
-	[1] = "Event ®· hÕt h¹n",
+	[1] = "The event has expired",
 	[2] = "Nh©n vËt cÊp <color=green>79<color> trë lªn, ®· gia nhËp m«n ph¸i vµ häc ®­îc <color=green>1<color> kü n¨ng cÊp <color=green>55<color> míi cã thÓ tham gia",
 	[3] = "Hµnh trang kh«ng gian kh«ng ®ñ, kh«ng thÓ nhËn.",
 	[4] = "Tinh Th¹ch c¸c h¹ mang theo kh«ng ®ñ <color=green>200<color>",
@@ -11,14 +11,14 @@ tSTRING_201111_TABLE = {
 	[6] = "Hµnh trang thiÕu hiÖp mang theo kh«ng ®ñ<color=green>100<color> vµng",
 }
 
-tSTRING_MISSIONARIES_NPC = "<color=green>Gi¸o SÜ:<color>"
+tSTRING_MISSIONARIES_NPC = "<color=green>Priest:<color>"
 
 tSTRING_MISSIONARIES_TABLE = {
 	[1] = "Trong thêi gian diÔn ra event, ng­êi ch¬i ®· nhËn phÇn th­ëng Hép Quµ Gi¸ng Sinh tèi ®a t¹i cÈm nang ®¹i sù kiÖn míi cã thÓ nhËn ®­îc phÇn th­ëng cña ¤ng Giµ Noel. H·y nhí lµ mçi ng­êi chØ nhËn ®­îc phÇn th­ëng 1 lÇn, chØ <color=green>%d<color> phÇn cho ng­êi ®Õn sím nhÊt.",
 	[2] = "NhËn phÇn th­ëng cuèi cña ¤ng Giµ Noel",
 	[3] = "KiÓm tra sè quµ cßn l¹i",
-	[4] = "Lêi chóc phóc tõ thiªn chóa!",
-	[5] = "Tho¸t",
+	[4] = "Blessings from God!",
+	[5] = "Exit",
 	[6] = "PhÇn th­ëng ®· ph¸t hÕt <color=green>%d<color> phÇn, thËt ®¸ng tiÕc, b¹n ®· ®Õn trÔ.",
 	[7] = "ThiÕu hiÖp vÉn ch­a nhËn phÇn th­ëng cuèi t¹i cÈm nang ®¹i sù kiÖn, tiÕn ®é hiÖn t¹i lµ <color=green>%d<color>/<color=green>%d<color>#",
 	[8] = "Sè liÖu ghi nhËn ch­a ®Õn, h·y quay l¹i sau.",
@@ -28,7 +28,7 @@ tSTRING_MISSIONARIES_TABLE = {
 }
 
 tSTRING_DECORATETREE_TABLE = {
-	[1] = "B¸n c©y th«ng noel (1 c©y %d vµng)",
+	[1] = "Sell Christmas tree (1 tree %d gold)",
 	[2] = "ThiÕu hiÖp x¸c ®Şnh dïng <color=green>%d<color> vµng ®Ó mua c©y th«ng noel?",
 	[3] = "Ng©n l­îng c¸c h¹ mang theo kh«ng ®ñ <color=green>%d<color> vµng.",
 	[4] = "ChØ ®­îc trang trİ c©y th«ng noel t¹i thÊt ®¹i thµnh thŞ ",

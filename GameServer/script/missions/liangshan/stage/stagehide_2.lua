@@ -168,7 +168,7 @@ function tStageHide_2:GameOver()
 	end
 	--Observer:onTeamEvent(SYSEVENT_LIANGSHAN_STAGE_FINISH, nStage)
 	FireEvent("event_mission_stage_finish", "liangshan", nStage)
-	TriggerTeamMisEvent("event_mission_passstage", "Lng S琻", nStage);
+	TriggerTeamMisEvent("event_mission_passstage", "Liangshan", nStage);
 end
 --计时器调用
 function tStageHide_2:OnTimer()

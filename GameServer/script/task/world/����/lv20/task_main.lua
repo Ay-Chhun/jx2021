@@ -42,7 +42,7 @@ local strTalk = {
 	"Cã ph¶i liªn quan ®Õn vÞ Hoµng ®Õ míi nµy?",
 	"Còng cã thÓ! §¹i Lý cã mét sè thµnh phÇn ph¶n lo¹n ®· cÊu kÕt víi Xi Háa gi¸o nh­ng rÊt cã thÓ lµ Ngò §éc gi¸o, bëi gi¸o ph¸i nµy c¸ch §¹i Lý kh«ng xa, gi¸o ®å cña hä l¹i tinh th«ng ®éc thuËt.",
 	"NÕu vËy th× ta sÏ ®Õn {Ngò §éc} xem t×nh h×nh ë ®ã thÕ nµo.",
-	"<sex> nh©n tiÖn trõ lu«n 20 con rÕt ®éc nhÐ!",
+	"<sex>, while you are at it, get rid of 20 venomous centipedes too!",
 	"§Ö tö tu©n lÖnh!"
 	}
 	TalkEx("",strTalk);
@@ -59,8 +59,8 @@ function task_001_00()
 	--²¹·¢´¥·¢Æ÷
 	if GetTrigger(KILL_DL_POINSONSCO) == 0 then
 		CreateTrigger(0,251,KILL_DL_POINSONSCO);
-		TaskTip("Gióp TrÞnh Qu¸n Chi t×m d­îc liÖu.");
-		Msg2Player("Gióp TrÞnh Qu¸n Chi t×m d­îc liÖu.");
+		TaskTip("Help Trinh Quan Chi find the medicinal herbs.");
+		Msg2Player("Help Trinh Quan Chi find the medicinal herbs.");
 		return
 	end;
 	return
@@ -73,7 +73,7 @@ local strTalk = {
 			"<sex> vÒ råi ­? Cã ph¸t hiÖn g× kh«ng?",
 			"ë ®ã ®éc trïng rÊt nhiÒu, nh­ng kh«ng thÓ dùa vµo ®ã cho r»ng {Xi Háa gi¸o} vµ {Ngò §éc gi¸o} cã liªn quan víi nhau.",
 			"GÇn Ngò §éc gi¸o gÇn ®©y xuÊt hiÖn HuyÕt L©n §éc M·ng, qu¸i vËt nµy ®· lµm tæn h¹i biÕt bao nhiªu ng­êi. <sex> h·y mang theo D­îc HuyÕt nµy ®Õn ®ã ®Ó tiªu trõ nã!",
-			"Ta sÏ cè g¾ng."
+			"I will do my best."
 		}
 	TalkEx("",strTalk);
 	AddItem(2,0,365,1,1);--ÈÎÎñµÀ¾ßÒ©Ñª
@@ -145,15 +145,15 @@ local strTalk = {};
 		strTalk = {
 			"Cao Quèc c«ng cã kÕ s¸ch g× ch­a?",
 			"Ngò §éc gi¸o lµ m«n ph¸i thÇn bÝ nh­ng ®· cã tiÕng trong giíi vâ l©m, ta nghÜ gi¸o ph¸i nµy kh«ng liªn quan ®Õn viÖc chÝnh sù ë §¹i Lý. Nh­ng còng PhiÒn b»ng h÷u ®Õn Ngò §éc gi¸o gÆp B¹ch Doanh Doanh hái cho râ rµng viÖc nµy",
-			"Ta lËp tøc ®i ngay!",
-			"§a t¹ <sex>"
+			"I will set off at once!",
+			"Many thanks, <sex>."
 			}
 	else
 		strTalk = {
 			"Cao Quèc c«ng cã kÕ s¸ch g× ch­a?",
 			"Ngò §éc gi¸o tuy thuéc tµ ph¸i nh­ng x­a nay cã tiÕng trong giíi Vâ L©m, ta nghÜ viÖc nµy kh«ng liªn quan ®Õn hä. <sex> thö ®Õn hái B¹ch Doanh Doanh xem sao?",
-			"Ta lËp tøc ®i ngay!",
-			"§a t¹ <sex>"
+			"I will set off at once!",
+			"Many thanks, <sex>."
 			}
 	end
 	TalkEx("",strTalk);
@@ -168,7 +168,7 @@ end
 function task_006_00()
 
 local strTalk = {
-	"§a t¹ <sex>"
+	"Many thanks, <sex>."
 	}
 	TalkEx("",strTalk);
 	return
@@ -312,7 +312,7 @@ function task_011_00()
 
 local strTalk = {
 	"Cao Quèc C«ng! T¹i h¹ ®· ®¸nh b¹i chóng råi!",
-	"§a t¹ <sex>",
+	"Many thanks, <sex>.",
 	"LÇn nµy Xi Háa gi¸o t¸c lo¹n ph¶i ch¨ng cã liªn quan ®Õn vÞ hoµng ®Õ míi kÕ tôc?",
 	"Ta còng kh«ng râ l¾m!",
 	"Ta nghe nãi §¹i Lý cã ®Õn lôc ®¹i gia téc, cô thÓ nh­ thÕ nµo?",
@@ -325,8 +325,8 @@ local strTalk = {
 	RemoveTrigger(KILL_DL_CHIHUO_WHITE)
 	RemoveTrigger(KILL_DL_CHIHUO_BLACK)
 	RemoveTrigger(KILL_DL_CHIHUO_RED)
-	Msg2Player("§Õn BiÖn Kinh t×m B¸ch HiÓu Sinh.");
-	TaskTip("§Õn BiÖn Kinh t×m B¸ch HiÓu Sinh.");
+	Msg2Player("Go to Bianjing and find Bai Xiaosheng.");
+	TaskTip("Go to Bianjing and find Bai Xiaosheng.");
 	GivePlayerAward("Level_35", "xn_step_1", "weapon", "Level_40");
 	GivePlayerExp(SkeyDali,"wulingshanjiao")
 end
@@ -408,7 +408,7 @@ function task_014_00()
 			"PhiÒn <sex> ®em vËt phÈm nµy ®Õn T­¬ng D­¬ng t×m M¹c Tam ®Ó nhê chÕ t¹o Phông Hoµng Linh.",
 			"{Phông Hoµng Linh} cã t¸c dông g×?",
 			"<sex> dïng Phông Hoµng Linh ®Ó gäi Phông Hoµng",
-			"Th× ra lµ vËy! Ta ®Õn chç {M¹c Tam} ®©y.",
+			"So that is how it is! I will go to {Mo San}.",
 			"Ng­¬i nªn dïng bå c©u ®­a th­ th«ng b¸o cho «ng Êy tr­íc.",
 			"§­îc! T¹i h¹ lËp tøc lµm ngay!"
 			}
@@ -466,9 +466,9 @@ function task_016_00()
 
 local strTalk = {
 	"<sex> qu¶ lµ tuæi trÎ tµi cao, l¹i thªm mét nh©n tµi n÷a.",
-	"§a t¹ qu¸ khen!",
+	"Many thanks for your praise!",
 	"Quèc s­ §æng Giµ La ë §¹i Lý l¹i gÆp chuyÖn. <sex> mau ®Õn ®ã ®i!",
-	"T¹i h¹ ®i ngay!",
+	"This humble one goes now!",
 	}
 
 	TalkEx("",strTalk);

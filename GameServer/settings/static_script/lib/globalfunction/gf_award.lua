@@ -164,17 +164,17 @@ function gf_EventGiveCustomAward(nType, nValue, nMsg2Player, szLogTitle, szLogAc
         --szMsg2Player = format("Äã»ñµÃÁË%d¸öÍ­Ç®", nValue);
         szMsg2Player = "";
         szItemName = " Kim ";
-        szLogDefAction = "NhËn ®­îc tiÒn";
+        szLogDefAction = "Money received";
     elseif nType == 3 then
         ModifyReputation(nValue, 1);
         szMsg2Player = format("Thu ®­îc %d ®iÓm danh väng", nValue);
-        szItemName = "Danh väng";
-        szLogDefAction = "Thu ®­îc danh väng";
+        szItemName = "Reputation";
+        szLogDefAction = "Reputation received";
         nMsg2Player = 0;--Ôö¼ÓÉùÍûµÄÖ¸Áî±¾ÉíµÄÌáÊ¾ÏûÏ¢£¬ËùÒÔÕâÀï²»ÌáÊ¾
     elseif nType == 4 then
         SetTask(336, GetTask(336) + nValue);
         szMsg2Player = format("Thu ®­îc %d ®iÓm cèng hiÕn s­ m«n", nValue);
-        szItemName = "§iÓm s­ m«n";
+        szItemName = "Sect Points";
         szLogDefAction = "Thu ®­îc ®iÓm cèng hiÕn s­ m«n";
     elseif nType == 5 then
         SetTask(GLB_TASK_BAIJUWAN_SMALL, GetTask(GLB_TASK_BAIJUWAN_SMALL) + nValue);
@@ -188,14 +188,14 @@ function gf_EventGiveCustomAward(nType, nValue, nMsg2Player, szLogTitle, szLogAc
         szLogDefAction = "NhËn ®­îc thêi gian ñy th¸c ®¹i b¹ch c©u hoµn";
     elseif nType == 7 then
         SetTask(GLB_TASK_BAIJUXIANDAN, GetTask(GLB_TASK_BAIJUXIANDAN) + nValue);
-        szMsg2Player = format("NhËn ®­îc %d phót b¹ch c©u tiªn ®¬n", nValue);
+        szMsg2Player = format("Received %d minutes of White Steed Immortal Pill", nValue);
         szItemName = "Thêi gian ñy th¸c b¹ch c©u tiªn ®¬n";
-        szLogDefAction = "NhËn ®­îc thêi gian ñy th¸c b¹ch c©u tiªn ®¬n";
+        szLogDefAction = "Received White Steed Immortal Pill entrustment time";
     elseif nType == 8 then
         SetTask(GLB_TASK_SHENGNONGDAN, GetTask(GLB_TASK_SHENGNONGDAN) + nValue);
-        szMsg2Player = format("NhËn ®­îc %d phót thÇn n«ng ®¬n", nValue);
+        szMsg2Player = format("Received %d minutes of Shennong Pill", nValue);
         szItemName = "Thêi gian ñy th¸c thÇn n«ng ®¬n";
-        szLogDefAction = "NhËn ®­îc thêi gian ñy th¸c thÇn n«ng ®¬n";
+        szLogDefAction = "Received Shennong Pill entrustment time";
     elseif nType == 9 then
         EatLiushen(1, nValue);
         szMsg2Player = format("NhËn ®­îc %d phót lôc thÇn hoµn", nValue);
@@ -208,9 +208,9 @@ function gf_EventGiveCustomAward(nType, nValue, nMsg2Player, szLogTitle, szLogAc
         szLogDefAction = "NhËn ®­îc thêi gian ñy th¸c c­êng lôc thÇn hoµn";
     elseif nType == 11 then
         EatLiushen(3, nValue);
-        szMsg2Player = format("NhËn ®­îc %d phót lôc thÇn tiªn ®¬n", nValue);
+        szMsg2Player = format("Received %d minutes of Six Gods Immortal Pill", nValue);
         szItemName = "Thêi gian ñy th¸c lôc thÇn tiªn ®¬n";
-        szLogDefAction = "NhËn ®­îc thêi gian ñy th¸c lôc thÇn tiªn ®¬n";
+        szLogDefAction = "Received Six Gods Immortal Pill entrustment time";
     elseif nType == 12 then
         EatSanqin(1, nValue);
         szMsg2Player = format("NhËn ®­îc %d phót tam thanh hoµn", nValue);
@@ -223,9 +223,9 @@ function gf_EventGiveCustomAward(nType, nValue, nMsg2Player, szLogTitle, szLogAc
         szLogDefAction = "NhËn ®­îc thêi gian ñy th¸c c­êng tam thanh hoµn";
     elseif nType == 14 then
         EatSanqin(3, nValue);
-        szMsg2Player = format("NhËn ®­îc %d phót tam thanh tiªn ®¬n", nValue);
+        szMsg2Player = format("Received %d minutes of Three Pure Immortal Pill", nValue);
         szItemName = "Thêi gian ñy th¸c tam thanh tiªn ®¬n";
-        szLogDefAction = "NhËn ®­îc thêi gian ñy th¸c tam thanh tiªn ®¬n";
+        szLogDefAction = "Received Three Pure Immortal Pill entrustment time";
     elseif nType == 15 then
         EatXcl(1, nValue);
         szMsg2Player = format("§¹i hiÖp ®· nhËn ®­îc %d phót Bång Lai Tiªn Thñy", nValue/60);
@@ -255,7 +255,7 @@ function gf_EventGiveCustomAward(nType, nValue, nMsg2Player, szLogTitle, szLogAc
         ModifyPopur(nValue)
         szMsg2Player = format("C¸c h¹ ®· nhËn ®­îc %d ®iÓm tu luyÖn", nValue);
         szItemName = "LuyÖn";
-        szLogDefAction = "NhËn ®­îc tu luyÖn";
+        szLogDefAction = "Cultivation received";
     elseif nType == 27 then
     		nMsg2Player = 0;
     		if bZhenQiTag == 1 then
@@ -294,12 +294,12 @@ function gf_EventGiveCustomAward(nType, nValue, nMsg2Player, szLogTitle, szLogAc
     		SetTask(3105, GetTask(3105) + nValue, TASK_ACCESS_CODE_OFFLINELIVE);
     		szMsg2Player = format("C¸c h¹ ®· nhËn ®­îc %d phót Tô Linh Hoµn", nValue)
         szItemName = "Thêi gian Tô Linh Hoµn"
-        szLogDefAction = "NhËn ®­îc thêi gian Tô Linh Hoµn"   
+        szLogDefAction = "Received Spirit Gathering Ring time"   
     elseif nType == 34 then
     		SetTask(3106, GetTask(3106) + nValue, TASK_ACCESS_CODE_OFFLINELIVE);
     		szMsg2Player = format("C¸c h¹ nhËn ®­îc %d phót §¹i Tô Linh Hoµn", nValue)
         szItemName = "Thêi gian §¹i Tô Linh Hoµn"
-        szLogDefAction = "NhËn ®­îc thêi gian §¹i Tô Linh Hoµn"  
+        szLogDefAction = "Received Great Soul Ring duration"  
     elseif nType == 35 then
     		SetTask(3107, GetTask(3107) + nValue, TASK_ACCESS_CODE_OFFLINELIVE);
     		szMsg2Player = format("C¸c h¹ nhËn ®­îc %d phót Tô Linh Tiªn §¬n", nValue)
@@ -322,7 +322,7 @@ function gf_EventGiveCustomAward(nType, nValue, nMsg2Player, szLogTitle, szLogAc
     		ModifyEnergy(nValue, 1);
         nMsg2Player = 0;
         szItemName = "Tinh Lùc";
-        szLogDefAction = "NhËn ®­îc Tinh lùc";    
+        szLogDefAction = "Received Spirit Energy";    
     end
 
     if nMsg2Player ~= 0 then
@@ -345,7 +345,7 @@ function gf_AddItemEx2(tbItemIds, strName, szLogTitle, szLogAction, nExpireTime,
 	nMsg2Player = nMsg2Player or 0;
 	
 	if type(tbItemIds) ~= "table" or getn(tbItemIds) < 4 then
-		WriteLog("["..szLogTitle.."]\tgf_AddItemEx2:\t tham sè lçi!");
+		WriteLog("["..szLogTitle.."]\tgf_AddItemEx2:\t parameter error!");
 		return 0;
 	end
 	

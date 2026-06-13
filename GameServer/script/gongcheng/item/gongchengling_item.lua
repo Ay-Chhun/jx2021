@@ -25,12 +25,12 @@ function OnUse(nItemIdx)
 				format("Khiªu chiÕn"..tDoorName[1].."Thñ vÖ/#use(%d,%d)",nItemIdx,1),
 				format("Khiªu chiÕn"..tDoorName[2].."Thñ vÖ/#use(%d,%d)",nItemIdx,2),
 				format("Khiªu chiÕn"..tDoorName[3].."Thñ vÖ/#use(%d,%d)",nItemIdx,3),
-				"Hñy bá/nothing",
+				"Cancel/nothing",
 				}
 	local nEnemyCamp = GONGSHOU_ID - GCZ_GetPlayerCamp();
 	local szGEGuardName,szGSGuardName,szGWGuardName = GCZ_GetGuardName(GONG_ID,0);
 	local szSEGuardName,szSSGuardName,szSWGuardName = GCZ_GetGuardName(SHOU_ID,0);
-	Say("             "..gf_FormatStringLength("Phe c«ng",20)..gf_FormatStringLength("Phe thñ_",20).."<enter>"..gf_FormatStringLength(tDoorName[1],12,0)..":"..gf_FormatStringLength(szGEGuardName,20)..gf_FormatStringLength(szSEGuardName,20).."<enter>"..gf_FormatStringLength(tDoorName[2],12,0)..":"..gf_FormatStringLength(szGSGuardName,20)..gf_FormatStringLength(szSSGuardName,20).."<enter>"..gf_FormatStringLength(tDoorName[3],12,0)..":"..gf_FormatStringLength(szGWGuardName,20)..gf_FormatStringLength(szSWGuardName,20).."\n\nTrªn ®©y lµ t×nh h×nh thñ vÖ c¸c thµnh thÞ, c¸c h¹ muèn khiªu chiÕn Thñ vÖ thµnh m«n nµo?",getn(selTab),selTab);
+	Say("             "..gf_FormatStringLength("Phe c«ng",20)..gf_FormatStringLength("Defending side_",20).."<enter>"..gf_FormatStringLength(tDoorName[1],12,0)..":"..gf_FormatStringLength(szGEGuardName,20)..gf_FormatStringLength(szSEGuardName,20).."<enter>"..gf_FormatStringLength(tDoorName[2],12,0)..":"..gf_FormatStringLength(szGSGuardName,20)..gf_FormatStringLength(szSSGuardName,20).."<enter>"..gf_FormatStringLength(tDoorName[3],12,0)..":"..gf_FormatStringLength(szGWGuardName,20)..gf_FormatStringLength(szSWGuardName,20).."\n\nTrªn ®©y lµ t×nh h×nh thñ vÖ c¸c thµnh thÞ, c¸c h¹ muèn khiªu chiÕn Thñ vÖ thµnh m«n nµo?",getn(selTab),selTab);
 end;
 
 function use(nItemIdx,nDoorIdx)
@@ -80,7 +80,7 @@ function use(nItemIdx,nDoorIdx)
 				SetMissionV(MV_TRAP_EAST_DOOR+nDoorIdx-1,ALL_ID);
 			end;
 			SetTaskTemp(TEMP_GURAD_ID,nDoorIdx);
-			Msg2MSAll(MISSION_ID,tDoorName[nDoorIdx].." kh«ng ng­êi trÊn thñ, bÞ "..GetName().."("..tCampNameZ[nPlayerCamp]..") chiÕm lÜnh dÔ dµng");
+			Msg2MSAll(MISSION_ID,tDoorName[nDoorIdx].." kh«ng ng­êi trÊn thñ, bÞ "..GetName().."("..tCampNameZ[nPlayerCamp]..") easily occupied");
 			return 0;
 		end
 		if szFriendName == "Ch­a" and szEnemyName ~= "Ch­a" then	--Ä¿Ç°³ÇÃÅ±»µÐ·½Õ¼Áì
@@ -117,7 +117,7 @@ function OnAccept(nProposerIdx, nType)
 		Msg2Player("Thµnh m«n do b¹n thñ vÖ ®· bÞ ng­êi kh¸c chiÕm");
 		Talk(1,"","Thµnh m«n do b¹n thñ vÖ ®· bÞ ng­êi kh¸c chiÕm")
 		SetTaskTemp(TEMP_GURAD_ID,0);
-		GCZ_Msg2Camp(tDoorName[nDoorIdx].." ®· bÞ ®Þch chiÕm",nPlayerCamp);
+		GCZ_Msg2Camp(tDoorName[nDoorIdx].." has been captured by the enemy",nPlayerCamp);
 		return 0;
 	end;
 	set_fight_state(GCZ_GetPlayerCamp(),nDoorIdx);
@@ -145,8 +145,8 @@ function set_fight_state(nCamp,nDoorIdx)
 	RemvoeTempEffect();	--Çå³ýËùÓÐÁÙÊ±×´Ì¬
 	ClearColdDown();	--ÇåÒ©CD
 	CastState("imme_clear_skill_interval",-1,0);	--Ïû³ýËùÓÐ¼¼ÄÜµÄÀäÈ´Ê±¼ä
-	Say("§¬n ®Êu sau <color=yellow>30 gi©y<color> sÏ b¾t ®Çu!",0);
-	Msg2Player("§¬n ®Êu sau 30 gi©y sÏ b¾t ®Çu, ®«i bªn h·y chuÈn bÞ!");
+	Say("The duel will begin after <color=yellow>30 seconds<color>!",0);
+	Msg2Player("The duel will begin after 30 seconds, both sides please prepare!");
 	SetTaskTemp(TEMP_GURAD_ID,nDoorIdx);
 	SetTaskTemp(TEMP_ARENA_FIGHTING,nCamp);
 	SetTaskTemp(TEMP_FIGHT_STATE,ROOM_STATE_READY);

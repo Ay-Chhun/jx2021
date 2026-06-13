@@ -23,7 +23,7 @@ end
 
 function vc_GetMainTitle()
 --	fix_bug_20160601()
-	local szTitle = "ThÎ th¸ng VIP"
+	local szTitle = "Monthly VIP Card"
 	local nRemainTime = GetVipCardRemainTime();
 	local nState = -1;
 	if nRemainTime > 0 then
@@ -64,7 +64,7 @@ function vc_Activating()
 	local tSay = {
 		format("\nLËp tøc kÝch ho¹t %s/vc_ActivatingNow", szCardName),
 		format("\nXem phÇn th­ëng %s/vc_LookForAward", szCardName),
-		"\n rót lui/nothing"
+		"\n withdraw/nothing"
 	}
 	local szTitle = format("<color=green>%s:<color>", GetVipCardName(VC_CURRENT_ID))..format("Ng­¬i ch­a kÝch ho¹t %s.Gamer cÊp 80 trë lªn cã thÓ mua thÎ VIP vâ l©m vµ tiÕn hµnh kÝch ho¹t.", szCardName)
 	szTitle = format("%s %s", szTitle, format("Thêi gian kÝch ho¹t thÎ VIP nµy %s~%s", show_date(CUR_VIP_CARD_START_DATE), show_date(CUR_VIP_CARD_END_DATE)))
@@ -117,24 +117,24 @@ function vc_LookForAward()
 	local tSay = {};
 	tSay.msg = format("<color=green>%s:<color>", GetVipCardName(VC_CURRENT_ID))..format("Ng­êi ch¬i kÝch ho¹t %s, sÏ nhËn ®­îc phÇn th­ëng sau:\nKhi kÝch ho¹t sÏ nhËn ®­îc 1 ThÇn Hµnh B¶o §iÓn, phÇn th­ëng cña L­¬ng S¬n, §Þa HuyÒn Cung, V¹n KiÕm Tròng, chiÕn tr­êng lín nhá, Thiªn M«n TrËn, ChiÕn Tr­êng Liªn Server sÏ ®­îc céng thªm\nPhÇn th­ëng ®é cèng hiÕn: H»ng ngµy hoµn thµnh nhiÖm vô Vâ L©m Treo Th­ëng sÏ nhËn ®­îc ®é cèng hiÕn, ®¹t ®é cèng hiÕn nhÊt ®Þnh sÏ nhËn ®­îc Hu©n Ch­¬ng Anh Hïng vµ L«i Hæ Tinh Ph¸ch", szCardName).."\nThø 6, thø 7 vµ chñ nhËt, sau khi hoµn thµnh nhiÖm vô h»ng ngµy, sè l­îng EXP vµ vµng nhËn ®­îc ®Òu t¨ng 1.5 lÇn";
 	tSay.sel = {
-		{"Ra khái", "nothing"},
+		{"Exit", "nothing"},
 	};
 	temp_Talk(tSay);
 end
 
 function vc_JoinFunction()
 	local tMsg = {
-		[0] = "Ch­a l·nh ", 
-		[1] = "§· l·nh ",
+		[0] = "Not yet claimed", 
+		[1] = "Already claimed",
 	}
 	local msg = tMsg[gf_GetTaskBit(TASKID_VC_DAILY_TASK_FLAG, 31)] or tMsg[1];
 	local tSay = {
 		format("Xem phÇn th­ëng %s/vc_LookForAward", GetVipCardName(GetVipCardIndex())),
-		"NhiÖm vô h«m nay/vc_DailyTask",
+		"Today's quest/vc_DailyTask",
 		format("ThÓ lùc h«m nay (%s)/vc_DailyEnergy", msg),
 		"PhÇn th­ëng ®é cèng hiÕn/vc_GetValueAward",
-		"NhËn §ång TrÞ Chi NguyÖn/vc_GetItemTjzy",
-		"\n rót lui/nothing"
+		"Receive Tongzhi Zhiyuan/vc_GetItemTjzy",
+		"\n withdraw/nothing"
 	}
 	local nCurID = GetVipCardIndex();
 	if nCurID ~= VC_CURRENT_ID then
@@ -157,7 +157,7 @@ function vc_GetValueAward()
 	local tMsg = {
 		[1] = "§· nhËn",
 		[2] = "Ch­a nhËn",
-		[3] = "Ch­a ®¹t ®­îc",
+		[3] = "Not yet reached",
 	}
 	local tSay = {};
 	local nIndex = 0;
@@ -183,7 +183,7 @@ function vc_GetValueAward()
 			tinsert(tSay, format("%d %s(%s)/#vc_GetValueAwardFinish(%d, %d)", tAward[i][1], tAward[i][4], tMsg[nIndex], nIndex, i));
 		end
 	end
-	tinsert(tSay, "Ra khái/nothing");
+	tinsert(tSay, "Leave/nothing");
 	Say(format("<color=green>%s:<color>", GetVipCardName(GetVipCardIndex()))..format("§é cèng hiÖn hiÖn t¹i lµ <color=green>%d<color>. Mçi mèc cèng hiÕn chØ ®­îc nhËn th­ëng 1 lÇn. Sau khi dïng thÎ th¸ng míi sÏ kh«ng thÓ nhËn phÇn th­ëng ®é cèng hiÕn cña thÎ th¸ng cò. H·y nhËn kÞp thêi", nValue), getn(tSay), tSay)
 end
 
@@ -197,7 +197,7 @@ function vc_GetItemTjzy()
 		return 0;
 	end
 	SetTask(TASKID_VC_RECORD_WEEK, 1, TASK_ACCESS_CODE_VIP_CARD);
-	gf_AddItemEx2({2, 1, 30913, 7}, "§ång TÕ Chi NguyÖn", GetVipCardName(GetVipCardIndex()), "NhËn §ång TrÞ Chi NguyÖn", 0, 1)
+	gf_AddItemEx2({2, 1, 30913, 7}, "Vow of the Same Will", GetVipCardName(GetVipCardIndex()), "Receive Self-Governance Quest", 0, 1)
 end
 
 function vc_GetValueAwardFinish(nTag, nIndex)
@@ -300,7 +300,7 @@ function vc_DailyTask()
 		tinsert(tSay, format("%s(%d/%d)/#vc_DailyTaskDetail(%d, %d)", tCell.Content[cIndex][1], 
 			min(nFinishTimes, tCell.Content[cIndex][2]), tCell.Content[cIndex][2], i, cIndex));
 	end
-	tinsert(tSay, "Ra khái/nothing")
+	tinsert(tSay, "Leave/nothing")
 	Say(format("<color=green>%s:<color>", GetVipCardName(GetVipCardIndex())).."NhiÖm vô Vâ L©m Treo Th­ëng kh«ng cÇn nhËn, chØ cÇn trong ngµy hoµn thµnh ®iÒu kiÖn sÏ cã thÓ hoµn thµnh, nh­ng phÇn th­ëng ph¶i tù nhËn. Cã thÓ nép Thiªn Kiªu LÖnh ®Ó tù ®éng hoµn thµnh nhiÖm vô, mçi lÇn tù ®éng hoµn thµnh th× sè l­îng Thiªn Kiªu LÖnh tiªu hao ngµy cµng nhiÒu.", getn(tSay), tSay)
 end
 
@@ -326,7 +326,7 @@ function vc_DailyTaskDetail(nIndex, cIndex)
 			tinsert(tSay, format("\n NhËn phÇn th­ëng/#vc_DailyTaskDetail_GetTaskAward(%d)", nIndex));
 		end
 	end
-	tinsert(tSay, "\n rót lui/nothing");
+	tinsert(tSay, "\n withdraw/nothing");
 	Say(format("<color=green>%s:<color>", GetVipCardName(GetVipCardIndex()))..msg, getn(tSay), tSay);
 end
 
@@ -375,7 +375,7 @@ function vc_DailyTaskDetail_AotoFinish(nIndex)
 	Say(format("<color=green>%s:<color>", GetVipCardName(GetVipCardIndex()))..format("H«m nay ®· dïng <color=red>%d<color> lÇn tù ®éng hoµn thµnh, lÇn nµy cÇn tiªu hao <color=yellow>%s<color>*%d", 
 		nAutoFinishTimes, tCell.AutoFinish[5], nCostNum), 2, 
 		format("\nX¸c nhËn/#vc_DailyTaskDetail_AotoFinish_Ensure(%d, %d, %d, %d, %d)", tCell.AutoFinish[1], tCell.AutoFinish[2], 
-			tCell.AutoFinish[3], nCostNum, nIndex), "\n rót lui/nothing");
+			tCell.AutoFinish[3], nCostNum, nIndex), "\n withdraw/nothing");
 end
 
 function vc_DailyTaskDetail_AotoFinish_Ensure(nG, nD, nP, nNum, nIndex)
@@ -400,13 +400,13 @@ end
 function vc_DailyEnergy()
 	local nRet = gf_GetTaskBit(TASKID_VC_DAILY_TASK_FLAG, 31);
 	local tMsg = {
-		[0] = "Ch­a l·nh ", 
-		[1] = "§· l·nh ",
+		[0] = "Not yet claimed", 
+		[1] = "Already claimed",
 	}
 	local msg = tMsg[nRet];
 	local tMsg2 = {
-		[0] = "§óng",
-		[1] = "§ång ý",
+		[0] = "Confirm",
+		[1] = "Agree",
 	}
 	local tFunc = {
 		[0] = "vc_DailyEnergy_do",
@@ -414,7 +414,7 @@ function vc_DailyEnergy()
 	}
 	local tSay = {
 		format("%s/%s", tMsg2[nRet], tFunc[nRet]),
-		"\n rót lui/nothing",
+		"\n withdraw/nothing",
 	}
 	Say(format("<color=green>%s:<color>", GetVipCardName(GetVipCardIndex()))..format("H«m nay cã thÓ nhËn trùc tiÕp %d ®iÓm tinh lùc, ng­¬i h«m nay %s", 120, msg), getn(tSay), tSay);
 end
@@ -425,7 +425,7 @@ function vc_DailyEnergy_do()
 	end
 	local nCur, nMax = ModifyEnergy(0,1);
 	local nCanGive = nMax - nCur;
-	Say(format("<color=green>%s:<color>", GetVipCardName(GetVipCardIndex()))..format("HiÖn t¹i nhËn ®­îc %d ®iÓm tinh lùc, ®ång ý nhËn kh«ng?", min(nCanGive, 120)), 2, "\nX¸c nhËn/vc_DailyEnergy_do_ensure", "\n hñy bá/nothing");
+	Say(format("<color=green>%s:<color>", GetVipCardName(GetVipCardIndex()))..format("HiÖn t¹i nhËn ®­îc %d ®iÓm tinh lùc, ®ång ý nhËn kh«ng?", min(nCanGive, 120)), 2, "\nX¸c nhËn/vc_DailyEnergy_do_ensure", "\n Cancel/nothing");
 end
 
 function vc_DailyEnergy_do_ensure()
@@ -449,8 +449,8 @@ function vc_Rand_3_4_JS_badge()
 		{1, 2000, "Huy Ch­¬ng Háa ChÕ ngò hµnh", {0, 153, 7, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 2000, "Huy Ch­¬ng Thæ ChÕ ngò hµnh", {0, 153, 8, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 1900, "Huy Ch­¬ng ¢m ChÕ ngò hµnh", {0, 153, 9, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 35, "Huy Ch­¬ng Du HiÖp", {0, 153, 26, 1, 1, -1, -1, -1, -1, -1, -1}, 0, 0, 0, 1},
-		{1, 35, "Huy Ch­¬ng ThiÕt HuyÕt", {0, 153, 27, 1, 1, -1, -1, -1, -1, -1, -1}, 0, 0, 0, 1},
+		{1, 35, "Roaming Hero Medal", {0, 153, 26, 1, 1, -1, -1, -1, -1, -1, -1}, 0, 0, 0, 1},
+		{1, 35, "Iron Blood Medal", {0, 153, 27, 1, 1, -1, -1, -1, -1, -1, -1}, 0, 0, 0, 1},
 		{1, 30, "Huy Ch­¬ng V©n Du", {0, 153, 28, 1, 1, -1, -1, -1, -1, -1, -1}, 0, 0, 0, 1},
 	}
 	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, GetVipCardName(GetVipCardIndex()), "Huy ch­¬ng 3-4 sao ngÉu nhiªn")
@@ -476,7 +476,7 @@ end
 --Ëæ»ú3-4ÐÇÐ¬
 function vc_Rand_3_4_JS_foot()
 	local tAward = {
-		{1, 88000, "Bè ChÕ Cao §ång Ngoa", {0, 154, 3, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 88000, "Gao Tong Wa Recipe", {0, 154, 3, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 2000, "ChiÕn Hµi Kim ChÕ ngò hµnh", {0, 154, 4, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 2000, "ChiÕn Hµi Méc ChÕ ngò hµnh", {0, 154, 5, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 2000, "ChiÕn Hµi Thñy ChÕ ngò hµnh", {0, 154, 6, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
@@ -484,7 +484,7 @@ function vc_Rand_3_4_JS_foot()
 		{1, 2000, "ChiÕn Hµi Thæ ChÕ ngò hµnh", {0, 154, 8, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 1900, "ChiÕn Hµi ¢m ChÕ ngò hµnh", {0, 154, 9, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 35, "Tr­êng Hµi Du HiÖp", {0, 154, 26, 1, 1, -1, -1, -1, -1, -1, -1}, 0, 0, 0, 1},
-		{1, 35, "ChiÕn Hµi ThiÕt HuyÕt", {0, 154, 27, 1, 1, -1, -1, -1, -1, -1, -1}, 0, 0, 0, 1},
+		{1, 35, "Iron Blood Boots", {0, 154, 27, 1, 1, -1, -1, -1, -1, -1, -1}, 0, 0, 0, 1},
 		{1, 30, "§¹o Hµi V©n Du", {0, 154, 28, 1, 1, -1, -1, -1, -1, -1, -1}, 0, 0, 0, 1},
 	}
 	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, GetVipCardName(GetVipCardIndex()), "GiÇy 3-4 sao ngÉu nhiªn")
@@ -520,19 +520,19 @@ function vc_Rand_10_4_Gem(nNum)
 	local tAward = {
 		{1, 9,"Ch©n khÝ hé thÓ CÊp 4", {2, 150, 4,  1, 1}},
 		{1, 7,"Ých Thä Diªn D­¬ng CÊp 4", {2, 150, 8,  1, 1}},
-		{1, 7,"C­êng Th©n B¸ ThÓ CÊp 4", {2, 150, 12, 1, 1}},
-		{1, 7,"¢m Phong Thùc Cèt CÊp 4", {2, 150, 16, 1, 1}},
+		{1, 7,"Qiang Shen Ba Ti Level 4", {2, 150, 12, 1, 1}},
+		{1, 7,"Yin Feng Shi Gu Level 4", {2, 150, 16, 1, 1}},
 		{1, 7,"HuyÒn Vò V« Song CÊp 4", {2, 150, 20, 1, 1}},
-		{1, 7,"V« Hµnh V« T­¬ng CÊp 4", {2, 150, 24, 1, 1}},
-		{1, 7,"Kim Linh Phô ThÓ CÊp 4", {2, 150, 28, 1, 1}},
-		{1, 7,"Méc Linh Phô ThÓ CÊp 4", {2, 150, 32, 1, 1}},
-		{1, 7,"Thuû Linh Phô ThÓ CÊp 4", {2, 150, 36, 1, 1}},
-		{1, 7,"Ho¶ Linh Phô ThÓ CÊp 4", {2, 150, 40, 1, 1}},
-		{1, 7,"Thæ Linh Phô ThÓ CÊp 4", {2, 150, 44, 1, 1}},
-		{1, 6,"Ph¸ Kh«ng Tr¶m ¶nh CÊp 4", {2, 150, 48, 1, 1}},
+		{1, 7,"Wu Xing Wu Xiang Level 4", {2, 150, 24, 1, 1}},
+		{1, 7,"Jin Ling Fu Ti Level 4", {2, 150, 28, 1, 1}},
+		{1, 7,"Mu Ling Fu Ti Level 4", {2, 150, 32, 1, 1}},
+		{1, 7,"Shui Ling Fu Ti Level 4", {2, 150, 36, 1, 1}},
+		{1, 7,"Huo Ling Fu Ti Level 4", {2, 150, 40, 1, 1}},
+		{1, 7,"Tu Ling Fu Ti Level 4", {2, 150, 44, 1, 1}},
+		{1, 6,"Po Kong Zhan Ying Level 4", {2, 150, 48, 1, 1}},
 		{1, 6,"S¸t th­¬ng gia n©ng cÊp 4", {2, 150, 52, 1, 1}},
-		{1, 3,"Khinh Linh TÊn TËt  CÊp 4", {2, 150, 56, 1, 1}},
-		{1, 6,"V« H×nh Chi Cæ CÊp 4", {2, 150, 60, 1, 1}},
+		{1, 3,"Qing Ling Xun Ji Level 4", {2, 150, 56, 1, 1}},
+		{1, 6,"Wu Xing Zhi Gu Level 4", {2, 150, 60, 1, 1}},
 	}
 	local nIndex = gf_GetRandItemByTable(tAward, gf_SumRandBase(tAward), 1);
 	gf_AddItemEx2({tAward[nIndex][4][1], tAward[nIndex][4][2], tAward[nIndex][4][3], tonumber(nNum), tAward[nIndex][4][5]}, tAward[nIndex][3], "VipCard", "S¸ch Kü N¨ng §ång Hµnh cÊp 4", 0, 1);
@@ -566,54 +566,54 @@ end
 function vc_Rand_10_8_Gem(nNum)
 	nNum = nNum or 1;
 	local tAward = {
-		{1, 100, "H-LiÖt Nham-Lv5", {0, 148, 69, 1},},
-		{1, 100, "H-Ph¸ Kh«ng-Lv5", {0, 148, 70, 1},},
+		{1, 100, "H-Liet Nham-Lv5", {0, 148, 69, 1},},
+		{1, 100, "H-Pha Khong-Lv5", {0, 148, 70, 1},},
 		{1, 100, "H-Tóy KiÕm-Lv5", {0, 148, 71, 1},},
-		{1, 100, "H-TËt Phong-Lv5", {0, 148, 72, 1},},
-		{1, 100, "H-TÊn Vò-Lv5", {0, 148, 73, 1},},
-		{1, 100, "H-¦ng TËp-Lv5", {0, 148, 74, 1},},
+		{1, 100, "H-Tat Phong-Lv5", {0, 148, 72, 1},},
+		{1, 100, "H-Tan Vu-Lv5", {0, 148, 73, 1},},
+		{1, 100, "H-Ung Tap-Lv5", {0, 148, 74, 1},},
 		{1, 100, "H-Linh T©m-Lv5", {0, 148, 75, 1},},
 		{1, 100, "H-ThÇn Lùc-Lv5", {0, 148, 76, 1},},
 		{1, 100, "H-Ng­ng ThÇn-Lv5", {0, 148, 77, 1},},
-		{1, 100, "H-V« Gian-Lv5", {0, 148, 78, 1},},
-		{1, 100, "H-V« Cùc-Lv5", {0, 148, 79, 1},},
+		{1, 100, "H-Vo Gian-Lv5", {0, 148, 78, 1},},
+		{1, 100, "H-Vo Cuc-Lv5", {0, 148, 79, 1},},
 		{1, 100, "H-Cuång NhÉn-Lv5", {0, 148, 80, 1},},
-		{1, 100, "H-L¨ng NhuÖ-Lv5", {0, 148, 81, 1},},
+		{1, 100, "H-Lang Nhue-Lv5", {0, 148, 81, 1},},
 		{1, 100, "H-Linh Viªn-Lv5", {0, 148, 82, 1},},
-		{1, 100, "H-H¶i VËn-Lv5", {0, 148, 83, 1},},
+		{1, 100, "H-Hai Van-Lv5", {0, 148, 83, 1},},
 		{1, 100, "H-H¶i T©m-Lv5", {0, 148, 84, 1},},
-		{1, 100, "C-LiÖt Nham-Lv5", {0, 149, 70, 1},},
-		{1, 100, "C-Ph¸ Kh«ng-Lv5", {0, 149, 71, 1},},
+		{1, 100, "C-Liet Nham-Lv5", {0, 149, 70, 1},},
+		{1, 100, "C-Pha Khong-Lv5", {0, 149, 71, 1},},
 		{1, 100, "C-Tóy KiÕm-Lv5", {0, 149, 72, 1},},
-		{1, 100, "C-TËt Phong-Lv5", {0, 149, 73, 1},},
-		{1, 100, "C-TÊn Vò-Lv5", {0, 149, 74, 1},},
+		{1, 100, "C-Tat Phong-Lv5", {0, 149, 73, 1},},
+		{1, 100, "C-Tan Vu-Lv5", {0, 149, 74, 1},},
 		{1, 100, "C-Qu¸n Th¹ch-Lv5", {0, 149, 75, 1},},
-		{1, 100, "C-Né Ng©m-Lv5", {0, 149, 76, 1},},
+		{1, 100, "C-No Ngam-Lv5", {0, 149, 76, 1},},
 		{1, 100, "C-Xuyªn V©n-Lv5", {0, 149, 77, 1},},
 		{1, 100, "C-ThÇn Lùc-Lv5", {0, 149, 78, 1},},
 		{1, 100, "C-Ng­ng ThÇn-Lv5", {0, 149, 79, 1},},
-		{1, 100, "C-V« Gian-Lv5", {0, 149, 80, 1},},
-		{1, 100, "C-V« Cùc-Lv5", {0, 149, 81, 1},},
+		{1, 100, "C-Vo Gian-Lv5", {0, 149, 80, 1},},
+		{1, 100, "C-Vo Cuc-Lv5", {0, 149, 81, 1},},
 		{1, 100, "C-Cuång NhÉn-Lv5", {0, 149, 82, 1},},
-		{1, 100, "C-L¨ng NhuÖ-Lv5", {0, 149, 83, 1},},
+		{1, 100, "C-Lang Nhue-Lv5", {0, 149, 83, 1},},
 		{1, 100, "C-Linh Viªn-Lv5", {0, 149, 84, 1},},
-		{1, 100, "C-H¶i VËn-Lv5", {0, 149, 85, 1},},
+		{1, 100, "C-Hai Van-Lv5", {0, 149, 85, 1},},
 		{1, 100, "C-H¶i T©m-Lv5", {0, 149, 86, 1},},
-		{1, 100, "T-LiÖt Nham-Lv5", {0, 150, 69, 1},},
-		{1, 100, "T-Ph¸ Kh«ng-Lv5", {0, 150, 70, 1},},
+		{1, 100, "T-Liet Nham-Lv5", {0, 150, 69, 1},},
+		{1, 100, "T-Pha Khong-Lv5", {0, 150, 70, 1},},
 		{1, 100, "T-Tóy KiÕm-Lv5", {0, 150, 71, 1},},
-		{1, 100, "T-TËt Phong-Lv5", {0, 150, 72, 1},},
-		{1, 100, "T-TÊn Vò-Lv5", {0, 150, 73, 1},},
-		{1, 100, "T-V« L­îng-Lv5", {0, 150, 74, 1},},
-		{1, 100, "T-Môc Minh-Lv5", {0, 150, 75, 1},},
+		{1, 100, "T-Tat Phong-Lv5", {0, 150, 72, 1},},
+		{1, 100, "T-Tan Vu-Lv5", {0, 150, 73, 1},},
+		{1, 100, "T-Vo Luong-Lv5", {0, 150, 74, 1},},
+		{1, 100, "T-Muc Minh-Lv5", {0, 150, 75, 1},},
 		{1, 100, "T-ThÇn Lùc-Lv5", {0, 150, 76, 1},},
 		{1, 100, "T-Ng­ng ThÇn-Lv5", {0, 150, 77, 1},},
-		{1, 100, "T-V« Gian-Lv5", {0, 150, 78, 1},},
-		{1, 100, "T-V« Cùc-Lv5", {0, 150, 79, 1},},
+		{1, 100, "T-Vo Gian-Lv5", {0, 150, 78, 1},},
+		{1, 100, "T-Vo Cuc-Lv5", {0, 150, 79, 1},},
 		{1, 100, "T-Cuång NhÉn-Lv5", {0, 150, 80, 1},},
-		{1, 100, "T-L¨ng NhuÖ-Lv5", {0, 150, 81, 1},},
+		{1, 100, "T-Lang Nhue-Lv5", {0, 150, 81, 1},},
 		{1, 100, "T-Linh Viªn-Lv5", {0, 150, 82, 1},},
-		{1, 100, "T-H¶i VËn-Lv5", {0, 150, 83, 1},},
+		{1, 100, "T-Hai Van-Lv5", {0, 150, 83, 1},},
 		{1, 100, "T-H¶i T©m-Lv5", {0, 150, 84, 1},},
 	}
 	local nIndex = gf_GetRandItemByTable(tAward, gf_SumRandBase(tAward), 1);
@@ -664,21 +664,21 @@ function vc_Award_2_1()
 	AddVipCardValue(60);
 	Msg2Player(format("NhËn ®­îc %d ®iÓm [%s] cèng hiÕn", 60, GetVipCardName(GetVipCardIndex())));
 	gf_Modify("Exp", 6000000);
-	gf_AddItemEx2({2, 1, 30499, 1}, "Hu©n ch­¬ng anh hïng", "VipCard", GetVipCardName(GetVipCardIndex()), 0, 1);
+	gf_AddItemEx2({2, 1, 30499, 1}, "Hero's Medal", "VipCard", GetVipCardName(GetVipCardIndex()), 0, 1);
 end
 
 function vc_Award_2_2()
 	AddVipCardValue(40);
 	Msg2Player(format("NhËn ®­îc %d ®iÓm [%s] cèng hiÕn", 40, GetVipCardName(GetVipCardIndex())));
 	gf_Modify("Exp", 6000000);
-	gf_AddItemEx2({2, 1, 30499, 1}, "Hu©n ch­¬ng anh hïng", "VipCard", GetVipCardName(GetVipCardIndex()), 0, 1);
+	gf_AddItemEx2({2, 1, 30499, 1}, "Hero's Medal", "VipCard", GetVipCardName(GetVipCardIndex()), 0, 1);
 end
 
 function vc_Award_2_3()
 	AddVipCardValue(50);
 	Msg2Player(format("NhËn ®­îc %d ®iÓm [%s] cèng hiÕn", 50, GetVipCardName(GetVipCardIndex())));
 	gf_Modify("Exp", 6000000);
-	gf_AddItemEx2({2, 1, 30499, 1}, "Hu©n ch­¬ng anh hïng", "VipCard", GetVipCardName(GetVipCardIndex()), 0, 1);
+	gf_AddItemEx2({2, 1, 30499, 1}, "Hero's Medal", "VipCard", GetVipCardName(GetVipCardIndex()), 0, 1);
 end
 
 --°×Ñò¿¨
@@ -697,7 +697,7 @@ function vc_Award_10_1()
 	Msg2Player(format("NhËn ®­îc %d ®iÓm [%s] cèng hiÕn", 60, GetVipCardName(GetVipCardIndex())));
 	gf_Modify("Exp", floor(6000000*nScale));
 	gf_Modify("Money", floor(300000*nScale));
-	gf_AddItemEx2({2, 1, 30499, 1}, "Hu©n ch­¬ng anh hïng", "VipCard", GetVipCardName(GetVipCardIndex()), 0, 1);
+	gf_AddItemEx2({2, 1, 30499, 1}, "Hero's Medal", "VipCard", GetVipCardName(GetVipCardIndex()), 0, 1);
 end
 
 function vc_Award_10_2()
@@ -706,7 +706,7 @@ function vc_Award_10_2()
 	Msg2Player(format("NhËn ®­îc %d ®iÓm [%s] cèng hiÕn", 40, GetVipCardName(GetVipCardIndex())));
 	gf_Modify("Exp", floor(6000000*nScale));
 	gf_Modify("Money", floor(100000*nScale));
-	gf_AddItemEx2({2, 1, 30499, 1}, "Hu©n ch­¬ng anh hïng", "VipCard", GetVipCardName(GetVipCardIndex()), 0, 1);
+	gf_AddItemEx2({2, 1, 30499, 1}, "Hero's Medal", "VipCard", GetVipCardName(GetVipCardIndex()), 0, 1);
 end
 
 function vc_Award_10_3()
@@ -715,7 +715,7 @@ function vc_Award_10_3()
 	Msg2Player(format("NhËn ®­îc %d ®iÓm [%s] cèng hiÕn", 50, GetVipCardName(GetVipCardIndex())));
 	gf_Modify("Exp", floor(6000000*nScale));
 	gf_Modify("Money", floor(50000*nScale));
-	gf_AddItemEx2({2, 1, 30499, 1}, "Hu©n ch­¬ng anh hïng", "VipCard", GetVipCardName(GetVipCardIndex()), 0, 1);
+	gf_AddItemEx2({2, 1, 30499, 1}, "Hero's Medal", "VipCard", GetVipCardName(GetVipCardIndex()), 0, 1);
 end
 
 --¸÷¹¦ÄÜÊµÏÖ½Ó¿Ú---------------------------------------------

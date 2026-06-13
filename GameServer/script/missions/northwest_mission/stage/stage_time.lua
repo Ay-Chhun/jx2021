@@ -175,15 +175,15 @@ function OnDeath(npc_index)
 end
 -----------------------¸´ÔÓ¹Ø¿¨¶Ô»°ÐÅÏ¢------------------------
 Tb_Npc_dialog_info = {
-	{"Ngän ®uèc §«ng B¾c","stage3_bougie_use(1)"},
+	{"Northeast Torch","stage3_bougie_use(1)"},
 	{"Ngäc ®uèc §«ng Nam","stage3_bougie_use(2)"},
-	{"Ngän ®uèc T©y Nam","stage3_bougie_use(3)"},
+	{"Southwest Torch","stage3_bougie_use(3)"},
 	{"Ngäc ®uèc T©y B¾c","stage3_bougie_use(4)"},
-	{"Kim sø","stage5_5_element_dia()"},
+	{"Metal Envoy","stage5_5_element_dia()"},
 	{"Thñy sø","stage5_5_element_dia()"},
-	{"Méc sø","stage5_5_element_dia()"},
+	{"Wood Envoy","stage5_5_element_dia()"},
 	{"Háa sø","stage5_5_element_dia()"},
-	{"Thæ sø","stage5_5_element_dia()"},
+	{"Earth Envoy","stage5_5_element_dia()"},
 	{"Sa m¹c b¶o r­¬ng","stage6_box_dialog()"},
 	{"D­îc Nh©n Th¶o","stage4_grass_dia()"},
 }

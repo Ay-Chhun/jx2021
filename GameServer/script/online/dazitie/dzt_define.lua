@@ -13,13 +13,13 @@ DZT_SPECIAL_AWARD_TB = {
 
 DZT_ITEM_TABLE = {
 	{2, 1, 30447, "Hoa"},
-	{2, 1, 30448, "H¶o"},
+	{2, 1, 30448, "Good"},
 	{2, 1, 30449, "NguyÖt"},
 	{2, 1, 30450, "Viªn"},
 }
 
 DZT_AWARD_HHYY_TABLE  = {
-    {1, 3, "M¶nh Tinh NgÊn", {2, 1, 30299, 1}, 0},
+    {1, 3, "Star Silver Fragment", {2, 1, 30299, 1}, 0},
     {1, 11, "Ngò Hµnh HuyÒn Th¹ch", {2, 1, 30302, 1}, 0},
     {1, 3, "ThiªnNghÜa TinhThiÕt", {2, 1, 30300, 1}, 0},
     {1, 11, "Ngò Hµnh HuyÒn ThiÕt", {2, 1, 30303, 1}, 0},
@@ -27,7 +27,7 @@ DZT_AWARD_HHYY_TABLE  = {
     {1, 11, "Ngò Hµnh HuyÒn Kim", {2, 1, 30304, 1}, 0},
     {1, 3, "Thiªn Ngo¹i L­u TInh ", {2, 1, 30321, 1}, 0},
     {1, 11, "Ngò hµnh b¶o r­¬ng ", {2, 1, 30320, 1}, 0},
-    {1, 3, "Tói tiÒn", {2, 1, 30367, 1}, 0},
+    {1, 3, "Money Pouch", {2, 1, 30367, 1}, 0},
     {1, 10, "Cæ Linh Th¹ch", {2, 1, 30368, 1}, 0},
     {1, 4, "Cæ Linh Th¹ch", {2, 1, 30368, 2}, 0},
     {1, 3, "Cæ Linh Th¹ch", {2, 1, 30368, 5}, 0},
@@ -42,7 +42,7 @@ DZT_AWARD_HHYY_TABLE  = {
 
 DZT_AWARD_PTTQ_TABLE  = {
     {1, 4000, "H¾c Ngäc §o¹n Tôc Cao", {1, 0, 6, 1}, 0},
-    {1, 4000, "Sinh Sinh Hãa T¸n", {1, 0, 16, 1}, 0},
+    {1, 4000, "Life-Begetting Powder", {1, 0, 16, 1}, 0},
     {1, 4000, "V¹n VËt Quy Nguyªn §¬n", {1, 0, 11, 1}, 0},
     {1, 4000, "Cöu chuyÓn håi hån ®¬n", {1, 0, 32, 1}, 0},
     {1, 4000, "Kh¾c b¶n", {2, 1, 30373, 1}, 0},
@@ -51,7 +51,7 @@ DZT_AWARD_PTTQ_TABLE  = {
     {1, 3809, "Cæ Linh Th¹ch", {2, 1, 30368, 1}, 0},
     {1, 2000, "M¶nh Thiªn Cang", {2, 1, 30390, 1}, 0},
     {1, 1000, "Ma §ao Th¹ch cÊp 1", {2, 1, 30428, 1}, 0},
-    {1, 400, "M¶nh Tinh NgÊn", {2, 1, 30299, 1}, 0},
+    {1, 400, "Star Silver Fragment", {2, 1, 30299, 1}, 0},
     {1, 1600, "Ngò Hµnh HuyÒn ThiÕt", {2, 1, 30303, 1}, 0},
     {1, 500, "Thiªn Th¹ch Tinh Th¹ch", {2, 1, 1009, 1}, 0},
     {1, 500, "Ma §¹o Th¹ch cÊp 2", {2, 1, 30429, 1}, 0},
@@ -129,10 +129,10 @@ DZT_BOSS_POINT = {
 }
 
 DZT_BOSS_NPC = {
-	{1, 50, "zitiemaozei", "Mao tÆc"},
-	{2, 30, "zitiexiaotou", "§¹o tÆc"},
-	{3, 15, "zitiedadao", "C­êng tÆc"},
-	{4, 5, "zitieshentou", "§¹i ®¹o tÆc"},
+	{1, 50, "zitiemaozei", "Petty Bandit"},
+	{2, 30, "zitiexiaotou", "Robber"},
+	{3, 15, "zitiedadao", "Brigand"},
+	{4, 5, "zitieshentou", "Master Bandit"},
 }
 
 DZT_BOSS_DEATH_SCRIPT = {
@@ -143,11 +143,11 @@ DZT_BOSS_DEATH_SCRIPT = {
 }
 
 DZT_AWARD_1_TABLE  = {
-    {1, 500, "Tói tiÒn", {2, 1, 30367, 1}, 0},
-    {1, 200, "M¶nh Tinh NgÊn", {2, 1, 30299, 1}, 0},
+    {1, 500, "Money Pouch", {2, 1, 30367, 1}, 0},
+    {1, 200, "Star Silver Fragment", {2, 1, 30299, 1}, 0},
     {1, 800, "Ngò Hµnh HuyÒn Th¹ch", {2, 1, 30302, 1}, 0},
     {1, 1500, "Hoa", {2, 1, 30447, 2}, 0},
-    {1, 1500, "H¶o", {2, 1, 30448, 2}, 0},
+    {1, 1500, "Good", {2, 1, 30448, 2}, 0},
     {1, 1500, "NguyÖt", {2, 1, 30449, 2}, 0},
     {1, 1500, "Viªn", {2, 1, 30450, 2}, 0},
     {1, 100, "Phæ Thiªn §ång Kh¸nh", {2, 1, 30446, 1, 4}, 0},
@@ -158,14 +158,14 @@ DZT_AWARD_1_TABLE  = {
 };
 
 DZT_AWARD_2_TABLE  = {
-    {1, 500, "Tói tiÒn", {2, 1, 30367, 2}, 0},
+    {1, 500, "Money Pouch", {2, 1, 30367, 2}, 0},
     {1, 200, "ThiªnNghÜa TinhThiÕt", {2, 1, 30300, 1}, 0},
     {1, 800, "Ngò Hµnh HuyÒn ThiÕt", {2, 1, 30303, 1}, 0},
     {1, 200, "Linh Th¹ch Nguyªn Th¹ch cÊp 1", {2, 1, 30413, 1}, 0},
     {1, 150, "Linh Th¹ch Nguyªn Th¹ch cÊp 2", {2, 1, 30414, 1}, 0},
     {1, 50, "Linh Th¹ch Nguyªn Th¹ch cÊp 3", {2, 1, 30415, 1}, 0},
     {1, 1500, "Hoa", {2, 1, 30447, 4}, 0},
-    {1, 1500, "H¶o", {2, 1, 30448, 4}, 0},
+    {1, 1500, "Good", {2, 1, 30448, 4}, 0},
     {1, 1500, "NguyÖt", {2, 1, 30449, 4}, 0},
     {1, 1500, "Viªn", {2, 1, 30450, 4}, 0},
     {1, 75, "Phæ Thiªn §ång Kh¸nh", {2, 1, 30446, 1, 4}, 0},
@@ -177,14 +177,14 @@ DZT_AWARD_2_TABLE  = {
 };
 
 DZT_AWARD_3_TABLE  = {
-    {1, 500, "Tói tiÒn", {2, 1, 30367, 3}, 0},
+    {1, 500, "Money Pouch", {2, 1, 30367, 3}, 0},
     {1, 200, "Linh Th¹ch Nguyªn Th¹ch cÊp 3", {2, 1, 30415, 1}, 0},
     {1, 150, "Linh Th¹ch Nguyªn Th¹ch cÊp 4", {2, 1, 30416, 1}, 0},
     {1, 50, "Linh Th¹ch Nguyªn Th¹ch cÊp 5", {2, 1, 30417, 1}, 0},
     {1, 200, "H¹o NguyÖt HuyÒn Kim", {2, 1, 30301, 1}, 0},
     {1, 800, "Ngò Hµnh HuyÒn Kim", {2, 1, 30304, 1}, 0},
     {1, 1500, "Hoa", {2, 1, 30447, 6}, 0},
-    {1, 1500, "H¶o", {2, 1, 30448, 6}, 0},
+    {1, 1500, "Good", {2, 1, 30448, 6}, 0},
     {1, 1500, "NguyÖt", {2, 1, 30449, 6}, 0},
     {1, 1500, "Viªn", {2, 1, 30450, 6}, 0},
     {1, 60, "Phæ Thiªn §ång Kh¸nh", {2, 1, 30446, 1, 4}, 0},
@@ -197,14 +197,14 @@ DZT_AWARD_3_TABLE  = {
 };
 
 DZT_AWARD_4_TABLE  = {
-    {1, 500, "Tói tiÒn", {2, 1, 30367, 4}, 0},
+    {1, 500, "Money Pouch", {2, 1, 30367, 4}, 0},
     {1, 200, "Thiªn Ngo¹i L­u TInh ", {2, 1, 30321, 1}, 0},
     {1, 800, "Ngò hµnh b¶o r­¬ng ", {2, 1, 30320, 1}, 0},
     {1, 200, "Linh Th¹ch Nguyªn Th¹ch cÊp 4", {2, 1, 30416, 1}, 0},
     {1, 150, "Linh Th¹ch Nguyªn Th¹ch cÊp 5", {2, 1, 30417, 1}, 0},
     {1, 50, "Linh Th¹ch Nguyªn Th¹ch cÊp 6", {2, 1, 30418, 1}, 0},
     {1, 1500, "Hoa", {2, 1, 30447, 8}, 0},
-    {1, 1500, "H¶o", {2, 1, 30448, 8}, 0},
+    {1, 1500, "Good", {2, 1, 30448, 8}, 0},
     {1, 1500, "NguyÖt", {2, 1, 30449, 8}, 0},
     {1, 1500, "Viªn", {2, 1, 30450, 8}, 0},
     {1, 40, "Phæ Thiªn §ång Kh¸nh", {2, 1, 30446, 1, 4}, 0},

@@ -22,7 +22,7 @@ function main()
 		if GetCash() == 928 then
 			Say("Nh©n lÔ t×nh nh©n, chóc mäi ng­êi vui vÎ, chóc nh÷ng ®«i t×nh nh©n sím thµnh phu thª.",0)
 		else
-			Say("Ng­¬i lµ ai vËy?",0)
+			Say("Who are you?",0)
 		end
 	end
 	

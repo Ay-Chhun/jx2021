@@ -58,7 +58,7 @@ function page2()
 --	tinsert(tbSayDialog, "Ta muèn mua 1 B¶n vÏ ®óc t¹o thÇn binh (cÇn 12 lo¹i vò khÝ ch­a gi¸m ®Þnh cña 12 hÖ ph¸i kh¸c nhau + 1 §ång TiÒn Vµng + 1 S­ M«n T×nh NguyÖn Th­ + 99 Vµng)/get_weapon_fag")
 	tinsert(tbSayDialog, "Ta muèn mua 1 Kú Kim cña Thî rÌn L­u (CÇn 1 §ång TiÒn Vµng + 1000 vµng)/#get_item(10)")
 --	tinsert(tbSayDialog, "Ta muèn mua 1 YÕu QuyÕt (CÇn 1 §ång TiÒn Vµng + 1 MËt Hµm S­ M«n + 100 vµng)/#get_yue(1,10)")
-	tinsert(tbSayDialog, "Xem trang tr­íc/page1")
+	tinsert(tbSayDialog, "View previous page/page1")
 	tinsert(tbSayDialog, "T¹i h¹ chØ ghÐ ngang!/end_dialogover")
 	
 	nSaySize = getn(tbSayDialog)
@@ -72,7 +72,7 @@ function support_card()
 		return
 	end
 
-	if gf_Judge_Room_Weight(1,10, "D¹ Th¶o") == 0 then		
+	if gf_Judge_Room_Weight(1,10, "Da Thao") == 0 then		
 		Msg2Player("B¹n ch­a ®ñ ®iÒu kiÖn ®æi phÇn th­ëng.")
 		return
 	end
@@ -83,7 +83,7 @@ function support_card()
 			SetItemExpireTime(nItem,30*24*3600)
 			Say("D¹ Th¶o: Chóc mõng c¸c h¹ nhËn ®­îc 1 ThÎ bµi cæ ®éng viªn!",0)
 			Msg2Player("B¹n nhËn ®­îc 1 ThÎ bµi cæ ®éng viªn.")
-			WriteLogEx("Worldcup 2010","D¹ Th¶o",1,"ThÎ bµi cæ ®éng viªn");
+			WriteLogEx("Worldcup 2010","Da Thao",1,"ThÎ bµi cæ ®éng viªn");
 		end
 	else
 		WriteLogEx("Worldcup 2010","AddItem thÊt b¹i",1,"ThÎ bµi cæ ®éng viªn");
@@ -117,7 +117,7 @@ function get_yue(nPage,nStep)
 		tinsert(tSay,format("Xem trang sau/#get_yue(%d,%d)",nNextPage + 1,10))
 	end
 	if nPage > 1 then
-		tinsert(tSay,format("Xem trang tr­íc/#get_yue(%d,%d)",nPage - 1,-10))
+		tinsert(tSay,format("View previous page/#get_yue(%d,%d)",nPage - 1,-10))
 	end
 	
 	tinsert(tSay,"T¹i h¹ chØ ghÐ ngang!/end_dialogover")	
@@ -143,7 +143,7 @@ function buy_yue(nIndex)
 		return
 	end
 
-	if gf_Judge_Room_Weight(1,10, "D¹ Th¶o") == 0 then		
+	if gf_Judge_Room_Weight(1,10, "Da Thao") == 0 then		
 		Msg2Player("B¹n ch­a ®ñ ®iÒu kiÖn ®æi phÇn th­ëng")
 		return
 	end
@@ -153,7 +153,7 @@ function buy_yue(nIndex)
 		if nRetCode == 1 then		
 			Say("D¹ Th¶o: Chóc mõng c¸c h¹ nhËn ®­îc 1 "..tYue[nIndex][1],0)
 			Msg2Player("B¹n nhËn ®­îc 1 "..tYue[nIndex][1])
-			WriteLogEx("Hoat dong thang 8","D¹ Th¶o",1,tYue[nIndex][1]);
+			WriteLogEx("Hoat dong thang 8","Da Thao",1,tYue[nIndex][1]);
 		end
 	else
 		WriteLogEx("Hoat dong thang 8","AddItem thÊt b¹i",1,tYue[nIndex][1]);
@@ -191,7 +191,7 @@ function get_stone()
 		return
 	end
 
-	if gf_Judge_Room_Weight(tAwardItem[1][3], tAwardItem[1][4], "D¹ Th¶o") == 0 then		
+	if gf_Judge_Room_Weight(tAwardItem[1][3], tAwardItem[1][4], "Da Thao") == 0 then		
 		Msg2Player("B¹n ch­a ®ñ ®iÒu kiÖn ®æi phÇn th­ëng")
 		return
 	end
@@ -249,7 +249,7 @@ function get_weapon_fag()
 		return
 	end
 
-	if gf_Judge_Room_Weight(tAwardItem[2][3], tAwardItem[2][4], "D¹ Th¶o") == 0 then		
+	if gf_Judge_Room_Weight(tAwardItem[2][3], tAwardItem[2][4], "Da Thao") == 0 then		
 		Msg2Player("B¹n ch­a ®ñ ®iÒu kiÖn ®æi phÇn th­ëng")
 		return
 	end
@@ -352,7 +352,7 @@ function get_war_horse(nType)
 		end	
 	end
 
-	if gf_Judge_Room_Weight(tAwardItem[3][3], tAwardItem[3][4], "D¹ Th¶o") == 0 then		
+	if gf_Judge_Room_Weight(tAwardItem[3][3], tAwardItem[3][4], "Da Thao") == 0 then		
 		Msg2Player("B¹n ch­a ®ñ ®iÒu kiÖn ®æi phÇn th­ëng")
 		return
 	end
@@ -420,7 +420,7 @@ function get_horse()
 		return
 	end
 
-	if gf_Judge_Room_Weight(tAwardItem[4][3], tAwardItem[4][4], "D¹ Th¶o") == 0 then		
+	if gf_Judge_Room_Weight(tAwardItem[4][3], tAwardItem[4][4], "Da Thao") == 0 then		
 		Msg2Player("B¹n ch­a ®ñ ®iÒu kiÖn ®æi phÇn th­ëng")
 		return
 	end
@@ -479,7 +479,7 @@ function get_new_horse()
 		return
 	end
 
-	if gf_Judge_Room_Weight(tAwardItem[6][3], tAwardItem[6][4], "D¹ Th¶o") == 0 then		
+	if gf_Judge_Room_Weight(tAwardItem[6][3], tAwardItem[6][4], "Da Thao") == 0 then		
 		Msg2Player("B¹n ch­a ®ñ ®iÒu kiÖn ®æi phÇn th­ëng")
 		return
 	end
@@ -534,7 +534,7 @@ function get_new_horse_1()
 		return
 	end
 
-	if gf_Judge_Room_Weight(tAwardItem[7][3], tAwardItem[7][4], "D¹ Th¶o") == 0 then		
+	if gf_Judge_Room_Weight(tAwardItem[7][3], tAwardItem[7][4], "Da Thao") == 0 then		
 		Msg2Player("B¹n ch­a ®ñ ®iÒu kiÖn ®æi phÇn th­ëng")
 		return
 	end
@@ -589,7 +589,7 @@ function get_new_horse_2()
 		return
 	end
 
-	if gf_Judge_Room_Weight(tAwardItem[8][3], tAwardItem[8][4], "D¹ Th¶o") == 0 then		
+	if gf_Judge_Room_Weight(tAwardItem[8][3], tAwardItem[8][4], "Da Thao") == 0 then		
 		Msg2Player("B¹n ch­a ®ñ ®iÒu kiÖn ®æi phÇn th­ëng")
 		return
 	end
@@ -645,7 +645,7 @@ function get_new_horse_3()
 		return
 	end
 
-	if gf_Judge_Room_Weight(tAwardItem[8][3], tAwardItem[8][4], "D¹ Th¶o") == 0 then		
+	if gf_Judge_Room_Weight(tAwardItem[8][3], tAwardItem[8][4], "Da Thao") == 0 then		
 		Msg2Player("B¹n ch­a ®ñ ®iÒu kiÖn ®æi phÇn th­ëng")
 		return
 	end
@@ -700,7 +700,7 @@ function get_new_horse_4()
 		return
 	end
 
-	if gf_Judge_Room_Weight(tAwardItem[11][3], tAwardItem[11][4], "D¹ Th¶o") == 0 then		
+	if gf_Judge_Room_Weight(tAwardItem[11][3], tAwardItem[11][4], "Da Thao") == 0 then		
 		Msg2Player("B¹n ch­a ®ñ ®iÒu kiÖn ®æi phÇn th­ëng")
 		return
 	end
@@ -735,7 +735,7 @@ function get_item(nIndex)
 		return
 	end
 
-	if gf_Judge_Room_Weight(tNewAwardItem[nIndex][3], tNewAwardItem[nIndex][4], "D¹ Th¶o") == 0 then		
+	if gf_Judge_Room_Weight(tNewAwardItem[nIndex][3], tNewAwardItem[nIndex][4], "Da Thao") == 0 then		
 		Msg2Player("B¹n ch­a ®ñ ®iÒu kiÖn ®æi phÇn th­ëng")
 		return
 	end
@@ -753,7 +753,7 @@ function AddEventItem(nIndex, nExpireTime)
 				SetItemExpireTime(nItem, nExpireTime)
 			end
 			Say("D¹ Th¶o: Chóc mõng c¸c h¹ nhËn ®­îc 1 "..tAwardItem[nIndex][1],0)		
-			WriteLogEx("Hoat dong thang 8","D¹ Th¶o",tAwardItem[nIndex][2][4],tAwardItem[nIndex][1]);
+			WriteLogEx("Hoat dong thang 8","Da Thao",tAwardItem[nIndex][2][4],tAwardItem[nIndex][1]);
 		else
 			WriteLogEx("Hoat dong thang 8","AddItem thÊt b¹i",tAwardItem[nIndex][2][4],tAwardItem[nIndex][1]);
 		end
@@ -811,7 +811,7 @@ function AddNewEventItem(nIndex, nExpireTime)
 	if nRetCodeAll == 1 then	
 		Say("D¹ Th¶o: Chóc mõng c¸c h¹ nhËn ®­îc "..tNewAwardItem[nIndex][2][4].." "..tNewAwardItem[nIndex][1],0)
 		Msg2Player("B¹n nhËn ®­îc "..tNewAwardItem[nIndex][2][4].." "..tNewAwardItem[nIndex][1])
-		WriteLogEx("Hoat dong thang 8","D¹ Th¶o",tNewAwardItem[nIndex][2][4],tNewAwardItem[nIndex][1]);
+		WriteLogEx("Hoat dong thang 8","Da Thao",tNewAwardItem[nIndex][2][4],tNewAwardItem[nIndex][1]);
 --		if nIndex == 4  then
 --			SetTask(ITEM4_TASKID, GetTask(ITEM4_TASKID) + 1);
 --		end
@@ -880,16 +880,16 @@ function get_transport_scroll(nType)
 		return
 	end
 	if GetCash() < TB_TRANSPORT_SCROLL[nType][3] then
-		Talk(1,"",format("Kh«ng ®ñ tiÒn mua %s!", TB_TRANSPORT_SCROLL[nType][2]))
+		Talk(1,"",format("Not enough money to buy %s!", TB_TRANSPORT_SCROLL[nType][2]))
 		return
 	end
-	if gf_Judge_Room_Weight(2, 200, "D¹ Th¶o") == 0 then
+	if gf_Judge_Room_Weight(2, 200, "Da Thao") == 0 then
 		Talk(1,"","Hµnh trang kh«ng ®ñ chç trèng hoÆc qu¸ nÆng!")
 		return
 	end
 	
 	Pay(TB_TRANSPORT_SCROLL[nType][3])
-	nRet, nItemIdx = gf_AddItemEx2(TB_TRANSPORT_SCROLL[nType][1],TB_TRANSPORT_SCROLL[nType][2], "Hoat dong thang 6 nam 2010", "D¹ Th¶o")
+	nRet, nItemIdx = gf_AddItemEx2(TB_TRANSPORT_SCROLL[nType][1],TB_TRANSPORT_SCROLL[nType][2], "Hoat dong thang 6 nam 2010", "Da Thao")
 	if nRet == 1 then
 		SetItemExpireTime(nItemIdx,TB_TRANSPORT_SCROLL[nType][4])
 	end
@@ -909,7 +909,7 @@ function get_reindeer_2010()
 		return
 	end
 	
-	if gf_Judge_Room_Weight(2, 200, "D¹ Th¶o") == 0 then		
+	if gf_Judge_Room_Weight(2, 200, "Da Thao") == 0 then		
 		Msg2Player("Hµnh trang kh«ng ®ñ chç chøa hoÆc qu¸ nÆng!")
 		return
 	end
@@ -938,15 +938,15 @@ function get_reindeer_2010()
 end
 
 function buy_elephant(nStep)
-	local szNPC = "<color=green>D¹ Th¶o:<color> "
+	local szNPC = "<color=green>Ye Cao:<color>"
 	local nTichluy = 200000
 	local nXu = 2400
 	local nHSD = 90
 	local tSay = {}
 	if nStep == 0 then
-		tinsert(tSay, "Ta ®ång ý, h·y giao nã cho ta!/#buy_elephant(1)")
+		tinsert(tSay, "I agree, hand it over to me!/#buy_elephant(1)")
 		tinsert(tSay, "T¹i h¹ tµi hÌn søc män, kh«ng ®ñ kh¶ n¨ng/end_dialogover")
-		Say("§­a ta <color=yellow>" .. nTichluy .. "<color> tÝch lòy Tèng Liªu vµ <color=yellow>" .. nXu .. "<color> vËt phÈm xu, <color=green>ChiÕn T­îng Nguyªn So¸i<color> sÏ theo c¸c h¹ chinh chiÕn <color=red>" .. nHSD .. " ngµy<color>. C¸c h¹ ®ång ý chø?", getn(tSay), tSay)
+		Say("Give me <color=yellow>" .. nTichluy .. "<color> tÝch lòy Tèng Liªu vµ <color=yellow>" .. nXu .. "<color> vËt phÈm xu, <color=green>ChiÕn T­îng Nguyªn So¸i<color> sÏ theo c¸c h¹ chinh chiÕn <color=red>" .. nHSD .. " ngµy<color>. C¸c h¹ ®ång ý chø?", getn(tSay), tSay)
 		return 0
 	end
 	
@@ -966,7 +966,7 @@ function buy_elephant(nStep)
 	
 		LIB_Award.szLogTitle = "CHIEN TUONG"
 		LIB_Award.szLogAction = "mua"
-		local tbAward = {item = {{gdp = {0,105,30033,1,1,-1,-1,-1,-1,-1,-1,-1}, nExpired = (nHSD*24*60*60), name = "ChiÕn T­îng Nguyªn So¸i"}}}
+		local tbAward = {item = {{gdp = {0,105,30033,1,1,-1,-1,-1,-1,-1,-1,-1}, nExpired = (nHSD*24*60*60), name = "Marshal War Elephant"}}}
 		
 		if DelItem(2,1,30230,nXu) == 1 and GetTask(707) >= nTichluy then
 			SetTask(707, GetTask(707) - nTichluy)
@@ -979,7 +979,7 @@ end
 
 
 function change_elephant()
-	PutinItemBox("§æi ChiÕn T­îng" ,1 , "ChiÕn T­îng nµy ch¹y kh«ng nhanh, ta muèn ®æi ChiÕn T­îng Nguyªn So¸i kh¸c!", CHIENTUONG_FILE, 1)
+	PutinItemBox("Exchange War Elephant" ,1 , "ChiÕn T­îng nµy ch¹y kh«ng nhanh, ta muèn ®æi ChiÕn T­îng Nguyªn So¸i kh¸c!", CHIENTUONG_FILE, 1)
 end
 
 function end_dialogover()

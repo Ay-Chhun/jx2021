@@ -39,7 +39,7 @@ function main()
 		tinsert(strtab,4,"ChÛc Mıng l‘ Quang C´n, nhÀn ph«n th≠Îng chÛc mıng/request_singleman_award");
 	end;
 	if nDate >= 20080213 and nDate <= 20080215 then
-		tinsert(strtab,4,"H´m nay lµ L‘ T◊nh nh©n, b‰n ta Æ’n Æ©y Æ” Æ≠Óc chÛc phÛc/about_qingren");
+		tinsert(strtab,4,"Today is Valentine's Day, and we have come here to offer our blessings/about_qingren");
 	end
 	if nDate >= 20080308 and nDate <= 20080309 then
 		tinsert(strtab,4,"ChÛc mıng ngµy quËc t’ phÙ n˜ 8-3/about_sanba")
@@ -82,7 +82,7 @@ function get_seed()
 			if add_flog_one == 1 and add_flog_two == 1 then
 				Msg2Player("Bπn nhÀn Æ≠Óc 1 hπt giËng hoa hÂng vµ hπt giËng th«n k˙.");
 			else
-				WriteLog("Hoπt ÆÈng Th t Tﬁch: Ng≠Íi ch¨i"..GetName().."NhÀn l y hπt giËng hoa hÂng vµ hπt giËng th«n k˙ th t bπi. Vﬁ tr› th t bπi. Vﬁ tr› th t bπi:"..add_flog_one.." vµ"..add_flog_two);
+				WriteLog("Hoπt ÆÈng Th t Tﬁch: Ng≠Íi ch¨i"..GetName().."NhÀn l y hπt giËng hoa hÂng vµ hπt giËng th«n k˙ th t bπi. Vﬁ tr› th t bπi. Vﬁ tr› th t bπi:"..add_flog_one.." and"..add_flog_two);
 			end
 		else --≈Æµƒ
 			local add_flog_one = AddItem(2,0,1154,1);  --…Ò√ÿ÷÷◊”
@@ -342,7 +342,7 @@ function get_singleman_award()
 		end;
 		ModifyExp(nExp);
 		Msg2Player("Bπn nhÀn Æ≠Óc "..nExp.." Æi”m kinh nghi÷m");
-		Talk(1,"","C„ chÛt quµ m‰n cho bπn, chÛc bπn vui vŒ!");
+		Talk(1,"","Here is a small gift for you, may you be happy!");
 	else
 		Talk(1,"","V…n ch≠a Æ’n giÍ. Xin ÆÓi Æ’n <color=yellow>18:00##23:00<color>giÍ nhÀn");
 	end;
@@ -353,7 +353,7 @@ end
 
 function about_qingren()
 	local strtab = {
-			"Ta Æi cÔng ˝ trung nh©n/get_award_qingren",
+			"I will go together with my sweetheart/get_award_qingren",
 			"Thuy’t minh hoπt ÆÈng l‘ T◊nh nh©n/about_qingren_detail",
 			"Ta v…n ch≠a c„ ˝ trung nh©n/nothing"};
 			
@@ -494,7 +494,7 @@ function ask_use_tongxin(nNum)
 	elseif nNum == 2 then
 		Say("Sˆ dÙng ßÂng T©m Hoµn nhÀn ÆuÓc ph«n th≠Îng kinh nghi÷m g p 3 l«n, muËn sˆ dÙng kh´ng?",
 			3,
-			"ß≠Óc, ta ÆÂng ˝./#confirm_sanba_award(1)",
+			"Alright, I agree./#confirm_sanba_award(1)",
 			"Kh´ng c«n, tr˘c ti’p nhÀn l‘ ph»m/#confirm_sanba_award(2)",
 			"ßÓi Æ∑, ta v…n ch≠a chu»n bﬁ/nothing")
 	end
@@ -579,15 +579,15 @@ function give_them_award(nType)
 			nExpTwo = nExpTwo*3;
 			nNumOne = nNumOne*3;
 			nNumTwo = nNumTwo*3;
-			Msg2Global("ChÛc mıng "..sNameOne.."Trong hoπt ÆÈng mıng 8-3 nhÀn Æ≠Óc ph«n th≠Îng kinh nghi÷m g p 3 l«n");
-			Msg2Global("ChÛc mıng "..sNameTwo.."Trong hoπt ÆÈng mıng 8-3 nhÀn Æ≠Óc ph«n th≠Îng kinh nghi÷m g p 3 l«n");
+			Msg2Global("Congratulations"..sNameOne.."Trong hoπt ÆÈng mıng 8-3 nhÀn Æ≠Óc ph«n th≠Îng kinh nghi÷m g p 3 l«n");
+			Msg2Global("Congratulations"..sNameTwo.."Trong hoπt ÆÈng mıng 8-3 nhÀn Æ≠Óc ph«n th≠Îng kinh nghi÷m g p 3 l«n");
 		elseif nRandExp >= 96 then
 			nExpOne = nExpOne*2;
 			nExpTwo = nExpTwo*2;
 			nNumOne = nNumOne*2;
 			nNumTwo = nNumTwo*2;
-			Msg2Global("ChÛc mıng "..sNameOne.."Trong hoπt ÆÈng mıng 8-3 nhÀn Æ≠Óc ph«n th≠Îng kinh nghi÷m g p 2 l«n!");
-			Msg2Global("ChÛc mıng "..sNameTwo.."Trong hoπt ÆÈng mıng 8-3 nhÀn Æ≠Óc ph«n th≠Îng kinh nghi÷m g p 2 l«n!");			
+			Msg2Global("Congratulations"..sNameOne.."Trong hoπt ÆÈng mıng 8-3 nhÀn Æ≠Óc ph«n th≠Îng kinh nghi÷m g p 2 l«n!");
+			Msg2Global("Congratulations"..sNameTwo.."Trong hoπt ÆÈng mıng 8-3 nhÀn Æ≠Óc ph«n th≠Îng kinh nghi÷m g p 2 l«n!");			
 		end		
 		if nLvOne ~= 99 then		
 			ModifyExp(nExpOne);
@@ -679,11 +679,11 @@ function confirm_sanba_award(nType)
 	if nRandExp >= 99 then
 		nExp = nExp*3;
 		nLingshiNum = nLingshiNum*3;
-		Msg2Global("ChÛc mıng "..sName.."Trong hoπt ÆÈng mıng 8-3 nhÀn Æ≠Óc ph«n th≠Îng kinh nghi÷m g p 3 l«n");
+		Msg2Global("Congratulations"..sName.."Trong hoπt ÆÈng mıng 8-3 nhÀn Æ≠Óc ph«n th≠Îng kinh nghi÷m g p 3 l«n");
 	elseif nRandExp >= 96 then
 		nExp = nExp*2;
 		nLingshiNum = nLingshiNum*2;
-		Msg2Global("ChÛc mıng "..sName.."Trong hoπt ÆÈng mıng 8-3 nhÀn Æ≠Óc ph«n th≠Îng kinh nghi÷m g p 2 l«n!");	
+		Msg2Global("Congratulations"..sName.."Trong hoπt ÆÈng mıng 8-3 nhÀn Æ≠Óc ph«n th≠Îng kinh nghi÷m g p 2 l«n!");	
 	end	
 	if nLv ~= 99 then
 		ModifyExp(nExp);
@@ -726,7 +726,7 @@ function get_sanba_two()
 		return
 	end
 	if GetTime() - GetTask(TASK_SANBA_TIME) < SANBA_AWARD_TIME then
-		Talk(1,"","ßıng g p g∏p, d…n ti”u tr≠ Æi ch¨i Æi!");
+		Talk(1,"","Do not rush, take the little piglet out to play!");
 		return
 	end  
 	local nExp = floor(tSanbaAward[nType][nSex][3]*nLv^3/80^3);
@@ -739,11 +739,11 @@ function get_sanba_two()
 	if nRandExp >= 99 then
 		nExp = nExp*3;
 		nLingshiNum = nLingshiNum*3;
-		Msg2Global("ChÛc mıng "..sName.."Trong hoπt ÆÈng mıng 8-3 nhÀn Æ≠Óc ph«n th≠Îng kinh nghi÷m g p 3 l«n");
+		Msg2Global("Congratulations"..sName.."Trong hoπt ÆÈng mıng 8-3 nhÀn Æ≠Óc ph«n th≠Îng kinh nghi÷m g p 3 l«n");
 	elseif nRandExp >= 96 then
 		nExp = nExp*2;
 		nLingshiNum = nLingshiNum*2;
-		Msg2Global("ChÛc mıng "..sName.."Trong hoπt ÆÈng mıng 8-3 nhÀn Æ≠Óc ph«n th≠Îng kinh nghi÷m g p 2 l«n!");	
+		Msg2Global("Congratulations"..sName.."Trong hoπt ÆÈng mıng 8-3 nhÀn Æ≠Óc ph«n th≠Îng kinh nghi÷m g p 2 l«n!");	
 	end		
 	if nLv ~= 99 then
 		ModifyExp(nExp);

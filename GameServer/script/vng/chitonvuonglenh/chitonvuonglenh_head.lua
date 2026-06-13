@@ -8,7 +8,7 @@ TSK_CHITONNEW1 = 2667
 TSK_CHITONNEW2 = 2668
 TSK_CHITONNEW3 = 2669
 
-szNPCName = "<color=green>Anh/ChÞ Chñ Phßng M¸y: <color>"
+szNPCName = "<color=green>Machine Room Owner: <color>"
 szLogTitle = "CHI TON VUONG LENH"
 szLogTitle1 = "CHI TON VUONG LENH BK"
 DEFINE_30_DAYS = 2592000
@@ -327,20 +327,20 @@ tbMission = {
 }
 
 tbMissionPart = {
-	[1] = {{"Thu ho¹ch 1 b¸t nh· nhá", 1,1}, {"Thu ho¹ch 1 h¹t gièng",2,2}, {"Thu ho¹ch 1 c©y tø linh",3,3}, {"Sö dông 1 n÷ oa b¶o h¹p",4,4}, {"Sö dông 40 ph¸o hoa",6,5}, {"Hoµn thµnh 1 lÇn thñy lîi", 7,7}, {"Gia nhËp bang",8,8}, {"Häc khinh c«ng", 9,9}},
-	[2] = {{"Thu ho¹ch 3 b¸t nh· nhá", 1,1}, {"Thu ho¹ch 3 c©y tø linh",2,2}, {"Sö dông 40 ph¸o hoa",4,3}, {"Hoµn thµnh 1 lÇn cóng tÕ", 5,5}, {"Së h÷u b¹n ®ång hµnh cÊp 1",6,6}},
-	[3] = {{"Thu ho¹ch 8 h¹t gièng",1,1}, {"Thu ho¹ch 8 c©y tø linh",2,2}, {"Hoµn thµnh 1 lÇn cóng tÕ", 3,3}, {"Thùc hiÖn 1 tÇng d­ìng sinh thuËt",4,4}},
-	[4] = {{"Thu ho¹ch 16 b¸t nh· nhá", 2,1}, {"Thu ho¹ch 16 h¹t gièng",4,3}, {"Sö dông 9 n÷ oa b¶o h¹p",5,5}, {"Hoµn thµnh 3 lÇn thñy lîi", 6,6}, {"Tham gia 1 lÇn Th¸i h­ huyÔn c¶nh", 7,7},},
+	[1] = {{"Thu ho¹ch 1 b¸t nh· nhá", 1,1}, {"Harvest 1 seed",2,2}, {"Harvest 1 Four Spirits tree",3,3}, {"Sö dông 1 n÷ oa b¶o h¹p",4,4}, {"Sö dông 40 ph¸o hoa",6,5}, {"Hoµn thµnh 1 lÇn thñy lîi", 7,7}, {"Join a guild",8,8}, {"Häc khinh c«ng", 9,9}},
+	[2] = {{"Thu ho¹ch 3 b¸t nh· nhá", 1,1}, {"Harvest 3 Four Spirits trees",2,2}, {"Sö dông 40 ph¸o hoa",4,3}, {"Hoµn thµnh 1 lÇn cóng tÕ", 5,5}, {"Së h÷u b¹n ®ång hµnh cÊp 1",6,6}},
+	[3] = {{"Harvest 8 seeds",1,1}, {"Harvest 8 Four Spirits trees",2,2}, {"Hoµn thµnh 1 lÇn cóng tÕ", 3,3}, {"Thùc hiÖn 1 tÇng d­ìng sinh thuËt",4,4}},
+	[4] = {{"Thu ho¹ch 16 b¸t nh· nhá", 2,1}, {"Harvest 16 seeds",4,3}, {"Sö dông 9 n÷ oa b¶o h¹p",5,5}, {"Hoµn thµnh 3 lÇn thñy lîi", 6,6}, {"Tham gia 1 lÇn Th¸i h­ huyÔn c¶nh", 7,7},},
 	[5] = {{"Sö dông 9 n÷ oa b¶o h¹p",1,1}, {"Hoµn thµnh 4 nhiÖm vô Tµi nguyªn chiÕn",2,2}, {"Sö dông 2 ng«i sao may m¾n",3,3}},
 	[6] = {{"Hoµn thµnh 3 lÇn trÞ an", 1,1}},
-	[9] = {{"Thu ho¹ch 16 c©y tø linh",2,1}, {"Sö dông 3 ng«i sao may m¾n",3,3}},
+	[9] = {{"Harvest 16 Four Spirits trees",2,1}, {"Sö dông 3 ng«i sao may m¾n",3,3}},
 	[10] = {{"Thu ho¹ch 39 b¸t nh· nhá", 2,1}},
 	[12] = {{"Thùc hiÖn 10 lÇn d­ìng sinh thuËt",2,1}},
-	[13] = {{"Thu ho¹ch 16 c©y tø linh",2,1}, {"Sö dông 39 n÷ oa b¶o h¹p",4,3}, {"Hoµn thµnh 1 lÇn cóng tÕ", 5,5}},
+	[13] = {{"Harvest 16 Four Spirits trees",2,1}, {"Sö dông 39 n÷ oa b¶o h¹p",4,3}, {"Hoµn thµnh 1 lÇn cóng tÕ", 5,5}},
 	[14] = {{"Sö dông 16 ng«i sao may m¾n",2,1}},
-	[15] = {{"Thu ho¹ch 100 h¹t gièng",3,1}},
+	[15] = {{"Harvest 100 seeds",3,1}},
 	[16] = {{"Sö dông 100 n÷ oa b¶o h¹p",3,1}},
-	[17] = {{"Thu ho¹ch 50 h¹t gièng",2,1}, {"Sö dông 100 n÷ oa b¶o h¹p",5,3},{"Hoµn thµnh 15 nhiÖm vô Tµi nguyªn chiÕn",7,6}},
+	[17] = {{"Harvest 50 seeds",2,1}, {"Sö dông 100 n÷ oa b¶o h¹p",5,3},{"Hoµn thµnh 15 nhiÖm vô Tµi nguyªn chiÕn",7,6}},
 	[18] = {{"Thùc hiÖn 8 lÇn d­ìng sinh thuËt",1,1}},
 	[19] = {{"Sö dông 39 ng«i sao may m¾n",2,1}, {"NhËn nhiÖm vô Phôc Sinh",3,3}, {"Sö dông 10 tr¸i c©y mçi lo¹i",4,4}},
 --	[20] = {{"Sö dông 100 n÷ oa b¶o h¹p",3,1}, {"Sö dông 40 ph¸o hoa",5,4}},
@@ -365,7 +365,7 @@ function ChiTonNew_SetMissionPart(nSubPart)
 	if nPart == 0 then
 		TaskTip(tbMissionPart[nStepID][nSubPart][1]..": Hoµn thµnh.")
 	else
-		Msg2Player(tbMissionPart[nStepID][nSubPart][1]..": Cßn "..nPart.." lÇn.")
+		Msg2Player(tbMissionPart[nStepID][nSubPart][1]..": Remaining"..nPart.." lÇn.")
 	end
 end
 

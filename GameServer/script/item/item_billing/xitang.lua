@@ -13,8 +13,8 @@ function OnUse(nItemIdx)
 		SetTask(TASK_EAT_XITANG_DATE,nDate);
 	end;
 	local selTab = {
-				format("§ång ý/#eat(%d)",nItemIdx),
-				"Hñy bá",
+				format("Agree/#eat(%d)",nItemIdx),
+				"Cancel",
 				}
 	local nLevel = GetLevel();
 	local nExp = nLevel^2*15;
@@ -37,6 +37,6 @@ function eat(nItemIdx)
 	if DelItemByIndex(nItemIdx,1) == 1 then
 		ModifyExp(nExp);
 		SetTask(TASK_EAT_XITANG_COUNT,nEatedCount+1);
-		WriteLog("[KÕt h«n]:"..GetName().."Sö dông 1 viªn kÑo mõng, t¨ng"..nExp.." ®iÓm kinh nghiÖm")
+		WriteLog("[Marriage]:"..GetName().."Sö dông 1 viªn kÑo mõng, t¨ng"..nExp.." ®iÓm kinh nghiÖm")
 	end;
 end;

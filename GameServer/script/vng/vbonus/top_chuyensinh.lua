@@ -8,9 +8,9 @@ function main()
 	local tbSay ={}
 	if CheckVbonus() == 1 then
 		if tonumber(date("%Y%m%d")) <= 20130705 then
-			tinsert(tbSay,"Ghi tªn top 10 ChuyÓn sinh 1/Top_ChuyenSinh_Reg")
+			tinsert(tbSay,"Record top 10 Rebirth 1/Top_ChuyenSinh_Reg")
 		end
-		tinsert(tbSay, "Xem danh s¸ch top 10 ChuyÓn sinh 1/Top_ChuyenSinh_Show")
+		tinsert(tbSay, "View top 10 Rebirth list 1/Top_ChuyenSinh_Show")
 	end
 	tinsert(tbSay, "Ta chØ ghÐ xem/gf_DoNothing")
 	Say("Trong r­¬ng chøa 10 m¶nh giÊy da ghi tªn 10 vÞ cao thñ chuyÓn sinh ®Çu tiªn. H·y nhanh chãng ghi tªn nhËn th­ëng.", getn(tbSay), tbSay)

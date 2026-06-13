@@ -20,8 +20,8 @@ function OnUse(id)
     		local szMsg = format("Ng­¬i x¸c nhËn muèn l­u tr÷ ngo¹i trang [%s] kh«ng?", t[4])
     		local tSay = 
         	{
-        		format("§ång ý/#ye_use(%d)", p),
-        		"Rêi khái/no",
+        		format("Confirm/#ye_use(%d)", p),
+        		"Leave/no",
         	}
         	Say(szMsg, getn(tSay), tSay)
 		end

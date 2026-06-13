@@ -15,18 +15,18 @@ DATE_FRUIT_ITEM_VIET_END		= 2008080100;		-- Ë®¹ûÑç»á»î¶¯µÀ¾ßÊ¹ÓÃ½áÊøÈÕÆÚ
 g_tFruitItemList = 
 {
 	--		"Ãû³Æ",	G1,G2,G3,¾­Ñé,¸ÅÂÊ
-	[1] = {"Tói tr¸i c©y",2,1,30008},				--Éè¶¨¸ÃÏîµÄË÷Òý±ØÐëÎª1
+	[1] = {"Fruit Bag",2,1,30008},				--Éè¶¨¸ÃÏîµÄË÷Òý±ØÐëÎª1
 	[2] = {"Nho",	2,1,30009,8,	60},
-	[3] = {"M·ng cÇu",2,1,30010,80,	20},
-	[4] = {"M¨ng côt",	2,1,30011,800,	14},
-	[5] = {"Vó s÷a",2,1,30012,8000,	4},
-	[6] = {"SÇu riªng",	2,1,30013,80000,2},		--Éè¶¨¸ÃÏîµÄË÷Òý±ØÐëÎª6
+	[3] = {"Soursop",2,1,30010,80,	20},
+	[4] = {"Mangosteen",	2,1,30011,800,	14},
+	[5] = {"Star Apple",2,1,30012,8000,	4},
+	[6] = {"Durian",	2,1,30013,80000,2},		--Éè¶¨¸ÃÏîµÄË÷Òý±ØÐëÎª6
 }
 
 g_tPrizeItemList =
 {
 	--		"Ãû³Æ",		G1,	G2,		G3,	¸ÅÂÊ
-	[1] = {"Chiªm Y Phæ",	0,	107,	66,	10},
+	[1] = {"Zhanyi Manual",	0,	107,	66,	10},
 	[2] = {"Thiªn Hµ MËt tÞch",	0,	107,	64,	40},
 	[3] = {"Tö Hµ MËt tÞch",	0,	107,	65,	20},
 	[4] = {"Bæ Kim MËt tÞch",	0,	107,	61,	500},
@@ -34,11 +34,11 @@ g_tPrizeItemList =
 	[6] = {"Ngò Quû MËt tÞch",	0,	107,	63,	500},
 	[7] = {"M¶nh Thiªn th¹ch",	2,	2,		7,	500},
 	[8] = {"Thiªn th¹ch",		2,	2,		8,	2000},
-	[9] = {"M¶nh B¨ng th¹ch",	2,	1,		148,	8000},
-	[10] = {"B¨ng th¹ch",		2,	1,		149,	2500},
-	[11] = {"C©y B¸t Nh·",	2,	0,		398,	3000},
-	[12] = {"C©y B¸t Nh· nhá",2,	0,		504,	5000},
-	[13] = {"Lé thñy",		2,	0,		351,	10000},
+	[9] = {"Ice Stone Fragment",	2,	1,		148,	8000},
+	[10] = {"Ice Stone",		2,	1,		149,	2500},
+	[11] = {"Prajna Tree",	2,	0,		398,	3000},
+	[12] = {"Small Prajna Tree",2,	0,		504,	5000},
+	[13] = {"Dew Water",		2,	0,		351,	10000},
 }
 
 function OnUse(nItemIdx)
@@ -120,7 +120,7 @@ function use(nType)
 end;
 
 function add_item_ex(tItem)
-	local szLogTitle = "LÔ héi tr¸i c©y : ".."Tói tr¸i c©y";		--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
+	local szLogTitle = "LÔ héi tr¸i c©y : ".."Fruit Bag";		--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
 	local nRetCode = 0;
 	nRetCode = AddItem(tItem[2],tItem[3],tItem[4],1);
 	if nRetCode == 1 then

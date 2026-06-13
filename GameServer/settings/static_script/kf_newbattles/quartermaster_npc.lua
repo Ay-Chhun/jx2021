@@ -3,10 +3,10 @@ Include("\\settings\\static_script\\kf_newbattles\\functions.lua");
 function main()
 	local selTab = {
 				"Më r­¬ng chøa ®å/open_box",
-				"Söa ch÷a/repair",
+				"Repair/repair",
 				"NhËn d­îc phÈm chiÕn tr­êng/want_medicine",
 				"§æi ®iÓm tİch lòy lÊy d­îc phÈm/buy_medicine",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"End dialogue/nothing",
 				}
 	local szSaySth = "";
 	local nCurMapID = GetWorldPos();
@@ -21,7 +21,7 @@ function main()
 
 	end;
 	szSaySth = "Cã cÇn gióp g× kh«ng?";
-	Say("<color=green>Qu©n nhu quan<color>:"..szSaySth,getn(selTab),selTab);
+	Say("<color=green>Quartermaster Officer<color>:"..szSaySth,getn(selTab),selTab);
 end;
 
 function want_medicine()
@@ -85,7 +85,7 @@ function list_battle_medicine(nPageNum,nCount)
 	local nMaxIndex = GetMaxItemCountPerPage(nPageNum,nCount);
 	local nCurStartIndex = (nPageNum-1)*nItemPerPage+1
 	if nPageNum ~= 1 then
-		tinsert(selTab,format("Trang tr­íc \n /#list_battle_medicine(%d,%d)",nPageNum-1,nCount));
+		tinsert(selTab,format("Previous page \n /#list_battle_medicine(%d,%d)",nPageNum-1,nCount));
 	end;
 	for i=nCurStartIndex,nCurStartIndex+nMaxIndex-1 do
 		tinsert(selTab,tMedList[i]);
@@ -168,7 +168,7 @@ function list_pk_medicine(nPageNum,nCount)
 	local nMaxIndex = GetMaxItemCountPerPage(nPageNum,nCount);
 	local nCurStartIndex = (nPageNum-1)*nItemPerPage+1
 	if nPageNum ~= 1 then
-		tinsert(selTab,format("Trang tr­íc \n /#list_pk_medicine(%d,%d)",nPageNum-1,nCount));
+		tinsert(selTab,format("Previous page \n /#list_pk_medicine(%d,%d)",nPageNum-1,nCount));
 	end;
 	for i=nCurStartIndex,nCurStartIndex+nMaxIndex-1 do
 		tinsert(selTab,tMedList[i]);
@@ -242,9 +242,9 @@ end;
 
 function repair()
 	local selTab = {
-			"Söa miÔn ph?(®é bÒn tr­íc ®©y >0)/repair1",
+			"Free repair (previous durability >0)/repair1",
 			"T¨ng cÊp/repair2",
-			"Söa miÔn phİ (®é bÒn tr­íc ®©y =0)/repair3",
+			"Free repair (previous durability =0)/repair3",
 			"trë l¹i/main"
 			};
 	Say("Kh¸ch quan xem kü trang bŞ khi söa ch÷a.",getn(selTab),selTab)

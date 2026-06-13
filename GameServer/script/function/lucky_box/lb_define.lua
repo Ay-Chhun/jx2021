@@ -14,6 +14,6 @@ LB_FREE_USE_MAX = 8;
 LB_IB_ITEM_USE_MAX = 40;
 
 --免费消耗
-LB_FREE_COST_ITEM = {2, 1, 30499, 2, "Hu﹏ chng anh h飊g"};
+LB_FREE_COST_ITEM = {2, 1, 30499, 2, "Hero's Medal"};
 --收费消耗
-LB_IB_COST_ITEM = {2, 1, 30499, 4, "Hu﹏ chng anh h飊g"};
+LB_IB_COST_ITEM = {2, 1, 30499, 4, "Hero's Medal"};

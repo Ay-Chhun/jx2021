@@ -30,7 +30,7 @@ T_YinBoxScript={
 T_YIN_BOX_IDX = {}
 function remove_yin_box()
 	for i,v in T_YIN_BOX_IDX do
-		if GetNpcName(i) == "R­¬ng B¹c" then
+		if GetNpcName(i) == "Silver Chest" then
 			SetNpcLifeTime(i, 0);
 		end
 	end
@@ -43,7 +43,7 @@ function create_box_yin(m,x,y, nStage)
 	end
 	--local m, x, y = GetNpcWorldPos(nNpcIdx);
 	local x2, y2 = x + random(-5, 5), y + random(-5, 5);
-	local npc = CreateNpc("yinbaoxiang", "R­¬ng B¹c", m, x2, y2);
+	local npc = CreateNpc("yinbaoxiang", "Silver Chest", m, x2, y2);
 	if npc and npc > 0 then
 		T_YIN_BOX_IDX[npc] = 1
 		--SetNpcLifeTime(npc, 180);
@@ -56,23 +56,23 @@ end
 tAward = {
 	randMulti = 1,
 	subclauses = {
-        {{"C©y B¸t Nh· nhá",{2,0,504,1},nil,{7*24*3600}},6000},
-        {{"C©y B¸t Nh·",{2,0,398,1},nil,{7*24*3600}},6000},
-        {{"C©y Tø Linh",{2,1,30269,1},nil,{7*24*3600}},6000},
+        {{"Small Prajna Tree",{2,0,504,1},nil,{7*24*3600}},6000},
+        {{"Prajna Tree",{2,0,398,1},nil,{7*24*3600}},6000},
+        {{"Four Spirits Tree",{2,1,30269,1},nil,{7*24*3600}},6000},
         {{"B¹ch C©u Hoµn",{2,1,270,1},nil,{7*24*3600}},6000},
         {{"§¹i B¹ch C©u hoµn",{2,1,1007,1},nil,{7*24*3600}},6000},
         {{"B¹ch C©u Tiªn ®¬n",{2,1,1008,1},nil,{7*24*3600}},6000},
         {{"§¹i Nh©n s©m",{2,0,553,1},nil,{7*24*3600}},5000},
-        {{"Hu©n ch­¬ng anh hïng",{2,1,30499,1,4}},15060},
-        {{"Hu©n ch­¬ng anh hïng",{2,1,30499,2,4}},5000},
-        {{"Hu©n ch­¬ng anh hïng",{2,1,30499,4,4}},1000},
-        {{"Hu©n ch­¬ng anh hïng",{2,1,30499,10,4}},1230},
+        {{"Hero's Medal",{2,1,30499,1,4}},15060},
+        {{"Hero's Medal",{2,1,30499,2,4}},5000},
+        {{"Hero's Medal",{2,1,30499,4,4}},1000},
+        {{"Hero's Medal",{2,1,30499,10,4}},1230},
         {{"L«i Hæ Tinh Ph¸ch",{2,1,30614,1},msg},3000},
         {{"L«i Hæ Tinh Ph¸ch",{2,1,30614,2},msg},2000},
         {{"L«i Hæ Tinh Ph¸ch",{2,1,30614,4},msg},500},
-        {{"Giµy V¶i Th«",{0,154,1,1}},4000},
-        {{"Tinh TrÝ Bè Hµi",{0,154,2,1}},4000},
-        {{"Bè ChÕ Cao §ång Ngoa",{0,154,3,1}},3060},
+        {{"Coarse Cloth Shoes",{0,154,1,1}},4000},
+        {{"Refined Cloth Shoes",{0,154,2,1}},4000},
+        {{"Gao Tong Wa Recipe",{0,154,3,1}},3060},
         {{"ChiÕn Hµi Kim ChÕ ngò hµnh",{0,154,4,1}},1000},
         {{"ChiÕn Hµi Méc ChÕ ngò hµnh",{0,154,5,1}},1000},
         {{"ChiÕn Hµi Thñy ChÕ ngò hµnh",{0,154,6,1}},1000},
@@ -84,7 +84,7 @@ tAward = {
 				{{"M¶nh Thiªn M«n", {2,1,30410,20}}, 500},
 				{{"Thiªn M«n Kim LÖnh", {2,1,30370,1},msg}, 100},
         {{"Tr­êng Hµi Du HiÖp",{0,154,26,1},msg},300},
-        {{"ChiÕn Hµi ThiÕt HuyÕt",{0,154,27,1},msg},300},
+        {{"Iron Blood Boots",{0,154,27,1},msg},300},
         {{"§¹o Hµi V©n Du",{0,154,28,1},msg},300},
 				{{"Hoµng Kim §¹i Hång Bao (trèng)", {2,1,538,1},nil,{15*24*3600}}, 5000},
 				{{"B¹ch Kim §¹i Hång Bao (kh«ng)", {2,1,30228,1},nil,{15*24*3600}}, 650},
@@ -115,7 +115,7 @@ function main()
 		Say("Më [R­¬ng B¹c] cÇn 1 [Thiªn Kiªu LÖnh] (Ngù C¸c cã b¸n).",
 			2,
 			"\n x¸c nhËn më/#IamDaye("..npcIdx..")",
-			"\n hñy më/nothing");
+			"\n cancel opening/nothing");
 		return
 	else
 		speLoot(npcIdx);
@@ -180,7 +180,7 @@ function speLoot(npcIdx)
 		return 0;
 	end
 	local tSel = {
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 		}
 	local OldPlayerIndex = PlayerIndex;
 	if daye == PlayerIndex then

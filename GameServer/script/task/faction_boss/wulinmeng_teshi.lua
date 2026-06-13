@@ -78,7 +78,7 @@ function want_mask()
 	if DelItem(tFactionTokenRing[nFaction][1],tFactionTokenRing[nFaction][2],tFactionTokenRing[nFaction][3],2) == 1 then
 		SetTask(KH_TASK_GOT_MASK_DATE,nDate);
 		AddItem(tItemInfo[1][2],tItemInfo[1][3],tItemInfo[1][4],1)
-		Msg2Player("NhËn ®­îc 1"..tItemInfo[1][1]);
+		Msg2Player("Received 1"..tItemInfo[1][1]);
 	else
 		Talk(1,"","<color=green>§Æc sø Vâ L©m<color>: Sè lÖnh bµi s­ m«n mang theo kh«ng ®ñ, cÇn ph¶i cã ®ñ <color=yellow>2 lÖnh bµi s­ m«n<color> ®Ó chøng minh n¨ng lùc!");
 	end;

@@ -28,7 +28,7 @@ function CSTAGE3:OnCreateBoss()
 	Msg2MSAll(MISSION_ID,"NhiÖm vô cña ¶i: §¸nh b¹i Phong D­¬ng vµ V©n Thïy");
 	local tbPlayer = TM_GetPlayerTable();
 	TM_StartTimeGuage("Hai tay nh­ mét",2*60,0,1,tbPlayer);
-	TM_StartTimeGuage("VËt ®æi sao dêi",60,0,2,tbPlayer);
+	TM_StartTimeGuage("The stars shift and things change",60,0,2,tbPlayer);
 	TM_StartTimeGuage("Tø §¹i TiÖn Nh©n",2*60,0,3,tbPlayer);
 end;
 --¸ù¾ÝÀàÐÍ´´½¨BOSS
@@ -54,7 +54,7 @@ function CSTAGE3:CreateBossChild(tbArg)
 	PlayerIndex = 1;
 	local nMapID,nMapX,nMapY = GetNpcWorldPos(nBossIdx);
 	PlayerIndex = nil;
-	local tbNpcName = {"MÆt dµy","V« liªm sü","§ª tiÖn","H¹ l­u"};
+	local tbNpcName = {"Shameless","Brazen","Despicable","H¹ l­u"};
 	for i=1,tbArg[1] do
 		nNpcIdx = CreateNpc("TiÓu qu¸i ¶i 4",tbNpcName[i],nMapID,nMapX,nMapY,-1,1,1,100);
 		SetNpcDeathScript(nNpcIdx,"\\script\\missions\\tong_mission\\stage\\death_npc.lua");	
@@ -106,7 +106,7 @@ function CSTAGE3:CheckBossDistance(tbArg)
 	local tbPlayer = TM_GetPlayerTable();
 	if tbArg[1] == LARGE then
 		TM_StopTimeGuage(2);
-		TM_StartTimeGuage("VËt ®æi sao dêi",2*60,0,2,tbPlayer);	
+		TM_StartTimeGuage("The stars shift and things change",2*60,0,2,tbPlayer);	
 	else
 		TM_StopTimeGuage(1);
 		TM_StartTimeGuage("Hai tay nh­ mét",2*60,0,1,tbPlayer);
@@ -162,7 +162,7 @@ function CSTAGE3:OnProcessCheckPoint()
 			self:CreateBossByType(2);
 		end;
 	else
-		gf_ShowDebugInfor("Trong sè l­îng BOSS cã OnProcessCheckPoint lçi, nBossCount: "..nBossCount);
+		gf_ShowDebugInfor("Among the number of BOSSes there is an OnProcessCheckPoint error, nBossCount:"..nBossCount);
 	end;	
 end;
 --³õÊ¼»¯tbTimerEven

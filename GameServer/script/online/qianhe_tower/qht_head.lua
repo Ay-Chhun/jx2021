@@ -121,7 +121,7 @@ function qht_add_shengwang(nShengWang)
 		gf_EventGiveCustomAward(3,min(nShengWang,nRemainShengWang),1,1);
 		HeadMsg2Player(format("C¸c h¹ nhËn ®­îc %d ®iÓm danh väng",min(nShengWang,nRemainShengWang)));
 	else
-		Msg2Player(format("C¸c h¹ h«m nay nhËn ®­îc %s ®· ®¹t giíi h¹n %d, kh«ng thÓ nhËn thªm %s","Danh väng",QHT_SHENGWANG_MAX,"Danh väng"));
+		Msg2Player(format("C¸c h¹ h«m nay nhËn ®­îc %s ®· ®¹t giíi h¹n %d, kh«ng thÓ nhËn thªm %s","Reputation",QHT_SHENGWANG_MAX,"Reputation"));
 	end
 end
 
@@ -133,7 +133,7 @@ function qht_add_shimen(nShiMen)
 		gf_EventGiveCustomAward(4,min(nShiMen,nRemainShiMen),1,1);
 		HeadMsg2Player(format("C¸c h¹ nhËn ®­îc %d ®iÓm cèng hiÕn s­  m«n",min(nShiMen,nRemainShiMen)));
 	else
-		Msg2Player(format("C¸c h¹ h«m nay nhËn ®­îc %s ®· ®¹t giíi h¹n %d, kh«ng thÓ nhËn thªm %s","S­ m«n",QHT_SHIMENGXD_MAX,"S­ m«n"));
+		Msg2Player(format("C¸c h¹ h«m nay nhËn ®­îc %s ®· ®¹t giíi h¹n %d, kh«ng thÓ nhËn thªm %s","Sect",QHT_SHIMENGXD_MAX,"Sect"));
 	end
 end
 
@@ -715,7 +715,7 @@ end
 --¸ø½ğÎÄ»¢·û
 function qht_award_jinwenhufu(nNum, nProbability, nBaseMax, bBind)
 	if QHT_TASK_GROUP:GetTask(QHT_TASK_GROUP.NumJW) >= QHT_JWHF_MAX then
-		Msg2Player(format("C¸c h¹ h«m nay nhËn ®­îc %s ®· ®¹t giíi h¹n %d, kh«ng thÓ nhËn thªm %s","Kim Hæ Phï",QHT_JWHF_MAX,"Kim Hæ Phï"));
+		Msg2Player(format("C¸c h¹ h«m nay nhËn ®­îc %s ®· ®¹t giíi h¹n %d, kh«ng thÓ nhËn thªm %s","Golden Tiger Talisman",QHT_JWHF_MAX,"Golden Tiger Talisman"));
 		return 0;
 	end
 	if random(nBaseMax) <= nProbability then
@@ -775,13 +775,13 @@ function qht_throwdice_callback(dwID)
 	if type(t) ~= "table" then return end
 	for index, value in t do
 		bFlag = 0;
-		local str = value[1].."NĞm"..value[2].." ®iÓm"
+		local str = value[1].."Throw"..value[2].." ®iÓm"
 		if value[3] == 0 then
-			str = value[1].."Phãng"
+			str = value[1].."Cast"
 		elseif value[3] == 1 then
-			str = str.." (TuyÕt cÇu)"
+			str = str.." (Snowball)"
 			if value[4] == 1 then
-				str = str.." -§· nhÆt ®­îc"..szItem
+				str = str.." -Already picked up"..szItem
 				tbTemp[value[1]] = szItem;
 				gf_WriteLogEx("C«ng chiÕn Thiªn TÇm Th¸p", "qht_throwdice_callback", nil, szItem, nil, GetTongName());
 			end
@@ -789,7 +789,7 @@ function qht_throwdice_callback(dwID)
 		elseif value[3] == 2 then
 			str = str.." (Tham lam)"
 			if value[4] == 1 then
-				str = str.." -§· nhÆt ®­îc"..szItem
+				str = str.." -Already picked up"..szItem
 				tbTemp[value[1]] = szItem;
 				gf_WriteLogEx("C«ng chiÕn Thiªn TÇm Th¸p", "qht_throwdice_callback", nil, szItem, nil, GetTongName());
 			end
@@ -824,7 +824,7 @@ function qht_award_isnotice(sItemName)
 		"B¸o Tr¾ng B¶o B¶o",
 		"B¸o §en B¶o B¶o",
 		"B¸o Vµng B¶o B¶o",
-		"Tô NghÜa LÖnh",
+		"Token of Righteousness",
 		"Th«ng Thiªn LÖnh",
 		"ChiÕn Hµi Kim ChÕ ngò hµnh",
 		"ChiÕn Hµi Méc ChÕ ngò hµnh",
@@ -895,7 +895,7 @@ function qht_raid_award(tbAward)
 	if qht_check_condition(1) ~= 1 then
 		return 0;
 	end
-	gf_EventGiveRandAward(tbAward, gf_SumRandBase(tbAward), 1, "C«ng chiÕn Thiªn TÇm Th¸p", "R¬i ra trong ¶i");
+	gf_EventGiveRandAward(tbAward, gf_SumRandBase(tbAward), 1, "C«ng chiÕn Thiªn TÇm Th¸p", "Drops in the pass");
 end
 
 function qht_raid_ls_14()
@@ -1296,7 +1296,7 @@ function qht_award_tong_fight_flag()
 	qht_award_jinwenhufu(1,100,100);
 	gf_AddItemEx2({2,1,30368,20}, "Cæ Linh Th¹ch", "C«ng chiÕn Thiªn TÇm Th¸p", "", 0, 1);
 	gf_AddItemEx2({2,1,30369,1}, "Cæ Linh Ngäc", "C«ng chiÕn Thiªn TÇm Th¸p", "", 0, 1);
-	gf_WriteLogEx("C«ng chiÕn Thiªn TÇm Th¸p", "Bang Héi ChiÕn Kú");
+	gf_WriteLogEx("C«ng chiÕn Thiªn TÇm Th¸p", "Guild War Banner");
 end
 
 function qht_award_tong_fight_flag_tiexue()
@@ -1308,7 +1308,7 @@ function qht_award_tong_fight_flag_tiexue()
 	qht_award_jinwenhufu(2,100,100);
 	gf_AddItemEx2({2,1,30368,40}, "Cæ Linh Th¹ch", "C«ng chiÕn Thiªn TÇm Th¸p", "", 0, 1);
 	gf_AddItemEx2({2,1,30369,2}, "Cæ Linh Ngäc", "C«ng chiÕn Thiªn TÇm Th¸p", "", 0, 1);
-	gf_WriteLogEx("C«ng chiÕn Thiªn TÇm Th¸p", "ThiÕt HuyÕt Bang Héi ChiÕn Kú");
+	gf_WriteLogEx("C«ng chiÕn Thiªn TÇm Th¸p", "Iron Blood Guild War Banner");
 end
 
 function qht_relay_create_gold_boss(nRandSeed)

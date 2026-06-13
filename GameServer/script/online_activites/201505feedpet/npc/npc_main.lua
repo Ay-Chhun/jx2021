@@ -6,10 +6,10 @@ SZ_NPC_NAME="§¹i Sø ho¹t ®éng"
 SZ_NPC_TITLE_1505="Chµo mõng tham gia ho¹t ®éng HuÊn luyÖn thó mïa hÌ"
 T_MAIN_DIALOG_1505={
 	format("%s/do_desc", "Giíi thiÖu ho¹t ®éng"),
-	format("%s/do_get_tool", "NhËn Cßi Thó C­ng"),
+	format("%s/do_get_tool", "Receive Pet Horn"),
 	format("%s/#do_get_award(%d)", "NhËn th­ëng (HuÊn luyÖn thó c­ng th­êng)", 1),
 	format("%s/#do_get_award(%d)", "NhËn th­ëng (HuÊn luyÖn thó c­ng hiÕm)", 2),
-	format("%s/do_get_follower", "NhËn ®­îc 1 thó c­ng theo sau"),
+	format("%s/do_get_follower", "Received 1 pet to follow you"),
 }
 
 function npc_talk_main_1505()
@@ -19,13 +19,13 @@ function npc_talk_main_1505()
 	local szTitle = format("%s:%s", SZ_NPC_NAME, "Chµo mõng tham gia ho¹t ®éng HuÊn luyÖn thó mïa hÌ")
 	local tbSay = {}
 	tinsert(tbSay, format("%s/do_desc", "Giíi thiÖu ho¹t ®éng"))
-	tinsert(tbSay, format("%s/do_get_tool", "NhËn Cßi Thó C­ng"))
+	tinsert(tbSay, format("%s/do_get_tool", "Receive Pet Horn"))
 	
 	tinsert(tbSay, format("%s/#do_get_award(%d)", "NhËn th­ëng (HuÊn luyÖn thó c­ng th­êng)", 1))
 	tinsert(tbSay, format("%s/#do_get_award(%d)", "NhËn th­ëng (HuÊn luyÖn thó c­ng hiÕm)", 2))
 	
-	tinsert(tbSay, format("%s/do_get_follower", "NhËn ®­îc 1 thó c­ng theo sau"))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/do_get_follower", "Received 1 pet to follow you"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 	
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -40,7 +40,7 @@ function do_desc()
 	end
 	
 	tinsert(tbSay, format("%s/npc_talk_main_1505", "trë l¹i"))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 	
 	
 	Say(szTitle, getn(tbSay), tbSay)
@@ -51,7 +51,7 @@ function _desc1()
 	local tbSay = {}
 	
 	tinsert(tbSay, format("%s/do_desc", "trë l¹i"))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 	
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -61,7 +61,7 @@ function _desc2()
 	local tbSay = {}
 	
 	tinsert(tbSay, format("%s/do_desc", "trë l¹i"))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 	
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -77,7 +77,7 @@ function do_get_tool()
 	if BigGetItemCount(ti[1], ti[2], ti[3]) < 1 then
 		AddItem(ti[1], ti[2], ti[3], 1)
 	else
-		Talk(1, "", format("§· cã Cßi Thó C­ng"))
+		Talk(1, "", format("You already have a Pet Horn"))
 	end
 end
 

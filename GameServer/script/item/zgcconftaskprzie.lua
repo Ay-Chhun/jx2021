@@ -12,13 +12,13 @@ prize_att[1] = {
 -----------1--------------2-------------3--------4------------5--------6------------7-------8------9-----10--------------11
 	{102,	10, 	4,	357,	4,	358,	4,	0,	0,	0,	"MÆt Ngäc Ngäc Béi (nam)"},
 	{102,	10, 	4,	357,	4,	361,	4,	0, 	0,	0,	"MÆt Ngäc Ngäc Béi (nam)"},
-	{102,	5,  	4,	357,	4,	358,	4,	0,  0,	0,	"Long Diªn H­¬ng Nang (n÷)"},
-	{102,	5,  	4,	357,	4,	361,	4,	0,  0,	0,	"Long Diªn H­¬ng Nang (n÷)"},
+	{102,	5,  	4,	357,	4,	358,	4,	0,  0,	0,	"Long Yan Fragrance Pouch (female)"},
+	{102,	5,  	4,	357,	4,	361,	4,	0,  0,	0,	"Long Yan Fragrance Pouch (female)"},
 	{100,	14, 	4,	333,	4,	340,	5,	341,5,	0,	"XÝch Long Bµo (nam tiªu chuÈn)"},
 	{100,	32, 	4,	333,	4,	340,	5,	341,5,	0,	"L«i Ng©n Gi¸p (nam kh«i ng«)"},
-	{100,	50, 	4,	333,	4,	340,	5,	341,5,	0,	"Hå C¬ Vò Y (n÷ gîi c¶m)"},
+	{100,	50, 	4,	333,	4,	340,	5,	341,5,	0,	"Hu Ji Dance Robe (female alluring)"},
 	{100,	68, 	4,	333,	4,	340,	5,	341,5,	0,	"Th¸i Hoa Th­êng (KiÒu n÷)"},
-	{0,  	12, 	4,	333,	4,	65, 	6,	43,	7,	0,	"Ngò Ph­¬ng Quû Chóng (bao tay)"},
+	{0,  	12, 	4,	333,	4,	65, 	6,	43,	7,	0,	"Wu Fang Gui Zhong (gloves)"},
 	{1,  	51, 	4,	333,	4,	65, 	6,	43,	7,	0,	"ThÊt S¸t Thiªn La (¸m khÝ)"},
 	{4,  	117,	4,	333,	4,	65, 	6,	43,	7,	0,	"Xi Nha (cung)"},
 }
@@ -26,44 +26,44 @@ prize_att[2] = {
 -----------1--------------2-------------3--------4------------5--------6------------7-------8------9-----10--------------11
 	{102,	10,		4,	360,	4,	361,	4,	0,	0,	0,	"MÆt Ngäc Ngäc Béi (nam)"},
 	{102,	10,		4,	358,	4,	361,	4,	0,	0,	0,	"MÆt Ngäc Ngäc Béi (nam)"},
-	{102,	5,		4,	357,	4,	358,	4,	0,	0,	0,	"Long Diªn H­¬ng Nang (n÷)"},
-	{102,	5,		4,	357,	4,	361,	4,	0,	0,	0,	"Long Diªn H­¬ng Nang (n÷)"},
+	{102,	5,		4,	357,	4,	358,	4,	0,	0,	0,	"Long Yan Fragrance Pouch (female)"},
+	{102,	5,		4,	357,	4,	361,	4,	0,	0,	0,	"Long Yan Fragrance Pouch (female)"},
 	{101,	14,		4,	333,	4,	340,	5,	341,5,	0,	"Phi Ng­ Trang (nam tiªu chuÈn)"},
 	{101,	32,		4,	333,	4,	340,	5,	341,5,	0,	"Thiªn L«i Trang (nam kh«i ng«)"},
 	{101,	50,		4,	333,	4,	340,	5,	341,5,	0,	"Thiªn M· (n÷ gîi c¶m)"},
 	{101,	68,		4,	333,	4,	340,	5,	341,5,	0,	"ThÇn N÷ (KiÒu n÷)"},
-	{0,		12,		4,	333,	4,	67,		6,	43,	7,	0,	"Ngò Ph­¬ng Quû Chóng (bao tay)"},
+	{0,		12,		4,	333,	4,	67,		6,	43,	7,	0,	"Wu Fang Gui Zhong (gloves)"},
 	{3,		62,		4,	333,	4,	65,		6,	43,	7,	0,	"Thiªn S¸t (®ao)"},
-	{11,	10,		4,	333,	4,	65,		6,	43,	7,	0,	"Ng­ng S­¬ng (tr¶o)"},
+	{11,	10,		4,	333,	4,	65,		6,	43,	7,	0,	"Ning Shuang (claw)"},
 }
 prize_att[3] = {
 -----------1--------------2-------------3--------4------------5--------6------------7-------8------9-----10--------------11
 	{102,	10,		4,	358,	4,	359,	4,	0,	0,	0,	"MÆt Ngäc Ngäc Béi (nam)"},
 	{102,	10,		4,	358,	4,	360,	4,	0,	0,	0,	"MÆt Ngäc Ngäc Béi (nam)"},
 	{102,	10,		4,	357,	4,	359,	4,	0,	0,	0,	"MÆt Ngäc Ngäc Béi (nam)"},
-	{102,	5,		4,	358,	4,	359,	4,	0,	0,	0,	"Long Diªn H­¬ng Nang (n÷)"},
-	{102,	5,		4,	358,	4,	360,	4,	0,	0,	0,	"Long Diªn H­¬ng Nang (n÷)"},
-	{102,	5,		4,	357,	4,	359,	4,	0,	0,	0,	"Long Diªn H­¬ng Nang (n÷)"},
+	{102,	5,		4,	358,	4,	359,	4,	0,	0,	0,	"Long Yan Fragrance Pouch (female)"},
+	{102,	5,		4,	358,	4,	360,	4,	0,	0,	0,	"Long Yan Fragrance Pouch (female)"},
+	{102,	5,		4,	357,	4,	359,	4,	0,	0,	0,	"Long Yan Fragrance Pouch (female)"},
 	{103,	14,		4,	333,	4,	340,	5,	341,5,	0,	"XÝch Thanh Nh·n Tr¸o (nam tiªu chuÈn)"},
 	{103,	32,		4,	333,	4,	340,	5,	341,5,	0,	"Ngò Quû §Çu C©n (nam kh«i ng«)"},
 	{103,	50,		4,	333,	4,	340,	5,	341,5,	0,	"§o¹t Hån (n÷ gîi c¶m)"},
 	{103,	68,		4,	333,	4,	340,	5,	341,5,	0,	"Thiªn Nga (KiÒu n÷)"},
 	{5,		38,		4,	333,	4,	65,		6,	43,	7,	0,	"Thiªn Xµ c«n (c«n)"},
-	{10,	73,		4,	333,	4,	67,		6,	43,	7,	0,	"Lôc Khëi (cÇm)"},
-	{9,		84,		4,	333,	4,	65,		6,	43,	7,	0,	"Ph¸ Qu©n (bót)"},
+	{10,	73,		4,	333,	4,	67,		6,	43,	7,	0,	"Lu Qi (zither)"},
+	{9,		84,		4,	333,	4,	65,		6,	43,	7,	0,	"Po Jun (brush)"},
 }
 prize_att[4] = {
 -----------1--------------2-------------3--------4------------5--------6------------7-------8------9-----10--------------11
 	{102,	10,		4,	359,	4,	360,	4,	0,	0,	0,	"MÆt Ngäc Ngäc Béi (nam)"},
 	{102,	10,		4,	359,	4,	361,	4,	0,	0,	0,	"MÆt Ngäc Ngäc Béi (nam)"},
 	{102,	10,		4,	357,	4,	360,	4,	0,	0,	0,	"MÆt Ngäc Ngäc Béi (nam)"},
-	{102,	5,		4,	359,	4,	360,	4,	0,	0,	0,	"Long Diªn H­¬ng Nang (n÷)"},
-	{102,	5,		4,	359,	4,	361,	4,	0,	0,	0,	"Long Diªn H­¬ng Nang (n÷)"},
-	{102,	5,		4,	357,	4,	360,	4,	0,	0,	0,	"Long Diªn H­¬ng Nang (n÷)"},
+	{102,	5,		4,	359,	4,	360,	4,	0,	0,	0,	"Long Yan Fragrance Pouch (female)"},
+	{102,	5,		4,	359,	4,	361,	4,	0,	0,	0,	"Long Yan Fragrance Pouch (female)"},
+	{102,	5,		4,	357,	4,	360,	4,	0,	0,	0,	"Long Yan Fragrance Pouch (female)"},
 	{102,	8,		4,	333,	4,	340,	5,	341,5,	0,	"§µo Hoa Ngäc Béi (nam)"},
-	{102,	3,		4,	333,	4,	340,	5,	341,5,	0,	"TrÇm §µn H­¬ng Nang (n÷)"},
-	{2,		25,		4,	333,	4,	67,		6,	43,	7,	0,	"BÝch HuyÕt (kiÕm)"},
-	{8,		95,		4,	333,	4,	67,		6,	43,	7,	0,	"§¹i B¸t Nh· tr­îng (tr­îng)"},
+	{102,	3,		4,	333,	4,	340,	5,	341,5,	0,	"Chen Tan Fragrance Pouch (female)"},
+	{2,		25,		4,	333,	4,	67,		6,	43,	7,	0,	"Bi Xue (sword)"},
+	{8,		95,		4,	333,	4,	67,		6,	43,	7,	0,	"Da Banre Staff (staff)"},
 	{6,		106,	4,	333,	4,	65,		6,	43,	7,	0,	"Tr­îng B¸t Xµ m©u (th­¬ng)"},
 	{7,		10,		4,	333,	4,	65,		6,	43,	7,	0,	"T«i NguyÖt (song ®ao)"},
 }
@@ -72,8 +72,8 @@ prize_att[5] = {
 -------------1------------2-----3------4-------5-------------6--------7------------8--------9------------10-------11-----------12-------13----14-----15-----16------17----18-----19---------20
 	{100,	18,	4,	3,	18,		5,	19,		5,	372,	5,	79,		2,	41,	4,	80,	2,	42,	2,	0,	"Thiªn Gi¸ng Bµo (nam tiªu chuÈn)"},
 	{100,	18,	4,	3,	18,		5,	19,		5,	372,	5,	79,		2,	41,	4,	80,	2,	42,	2,	0,	"Thiªn Gi¸ng Bµo (nam tiªu chuÈn)"},
-	{100,	36,	4,	3,	18,		5,	19,		5,	372,	5,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Long B¸ ¤ kim Y (nam kh«i ng«)"},
-	{100,	36,	4,	3,	18,		5,	19,		5,	372,	5,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Long B¸ ¤ kim Y (nam kh«i ng«)"},
+	{100,	36,	4,	3,	18,		5,	19,		5,	372,	5,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Long Ba Wu Jin Garb (male majestic)"},
+	{100,	36,	4,	3,	18,		5,	19,		5,	372,	5,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Long Ba Wu Jin Garb (male majestic)"},
 	{100,	54,	4,	3,	18,		5,	19,		5,	372,	5,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Phi Thiªn Th¸i Th­êng (n÷ gîi c¶m)"},
 	{100,	54,	4,	3,	18,		5,	19,		5,	372,	5,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Phi Thiªn Th¸i Th­êng (n÷ gîi c¶m)"},
 	{100,	72,	4,	3,	18,		5,	19,		5,	372,	5,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Ngò Th¸i Nghª Th­êng (KiÒu n÷)"},
@@ -92,7 +92,7 @@ prize_att[5] = {
 	{101,	72,	4,	3,	357,	6,	360,	6,	361,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"XuÊt V©n (KiÒu n÷)"},
 	{103,	18,	4,	2,	371,	6,	357,	3,	360,	3,	361,	3,	0,	0,	0,	0,	0,	0,	0,	"BÝ ThÇn Qu¸n (nam tiªu chuÈn)"},
 	{103,	36,	4,	2,	371,	6,	357,	3,	360,	3,	361,	3,	0,	0,	0,	0,	0,	0,	0,	"Di ThÇn §Çu C©n (nam kh«i ng«)"},
-	{103,	54,	4,	2,	371,	6,	357,	3,	360,	3,	361,	3,	0,	0,	0,	0,	0,	0,	0,	"Chu T­íc (n÷ gîi c¶m)"},
+	{103,	54,	4,	2,	371,	6,	357,	3,	360,	3,	361,	3,	0,	0,	0,	0,	0,	0,	0,	"Vermilion Bird (female alluring)"},
 	{103,	72,	4,	2,	371,	6,	357,	3,	360,	3,	361,	3,	0,	0,	0,	0,	0,	0,	0,	"Tr­êng Sinh (KiÒu n÷)"},
 }
 prize_att[6] = {
@@ -103,24 +103,24 @@ prize_att[6] = {
 	{100,	35,	4,	3,	18,		5,	19,		5,	372,	5,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"HuyÕt Hµ Quû V­¬ng Kh¶i (nam kh«i ng«)"},
 	{100,	53,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Thiªn Y (n÷ gîi c¶m)"},
 	{100,	53,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Thiªn Y (n÷ gîi c¶m)"},
-	{100,	71,	4,	3,	18,		5,	19,		5,	372,	5,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"V« Song §Êu y (KiÒu n÷)"},
-	{100,	71,	4,	3,	18,		5,	19,		5,	372,	5,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"V« Song §Êu y (KiÒu n÷)"},
+	{100,	71,	4,	3,	18,		5,	19,		5,	372,	5,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Wu Shuang Battle Garb (graceful female)"},
+	{100,	71,	4,	3,	18,		5,	19,		5,	372,	5,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Wu Shuang Battle Garb (graceful female)"},
 	{101,	17,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"S¸t KiÕp Trang (nam tiªu chuÈn)"},
 	{101,	17,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"S¸t KiÕp Trang (nam tiªu chuÈn)"},
 	{101,	17,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"S¸t KiÕp Trang (nam tiªu chuÈn)"},
-	{101,	35,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"HuyÕt Hµ Trang (nam kh«i ng«)"},
-	{101,	35,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"HuyÕt Hµ Trang (nam kh«i ng«)"},
-	{101,	35,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"HuyÕt Hµ Trang (nam kh«i ng«)"},
-	{101,	53,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Hæ TiÕu (n÷ gîi c¶m)"},
-	{101,	53,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Hæ TiÕu (n÷ gîi c¶m)"},
-	{101,	53,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Hæ TiÕu (n÷ gîi c¶m)"},
+	{101,	35,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Xue He Garb (male majestic)"},
+	{101,	35,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Xue He Garb (male majestic)"},
+	{101,	35,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Xue He Garb (male majestic)"},
+	{101,	53,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Hu Xiao (female alluring)"},
+	{101,	53,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Hu Xiao (female alluring)"},
+	{101,	53,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Hu Xiao (female alluring)"},
 	{101,	71,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Hång Ngäc (KiÒu n÷)"},
 	{101,	71,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Hång Ngäc (KiÒu n÷)"},
 	{101,	71,	4,	3,	357,	6,	358,	6,	359,	6,	79,		2,	41,	4,	80,	2,	42,	4,	0,	"Hång Ngäc (KiÒu n÷)"},
 	{103,	17,	4,	2,	371,	6,	357,	3,	358,	3,	359,	3,	0,	0,	0,	0,	0,	0,	0,	"MÆt n¹ S¬n Quû (nam tiªu chuÈn)"},
-	{103,	35,	4,	2,	371,	6,	357,	3,	358,	3,	359,	3,	0,	0,	0,	0,	0,	0,	0,	"MÆt n¹ Chung Quú"},
-	{103,	53,	4,	2,	371,	6,	357,	3,	358,	3,	359,	3,	0,	0,	0,	0,	0,	0,	0,	"Tu La (n÷ gîi c¶m)"},
-	{103,	71,	4,	2,	371,	6,	357,	3,	358,	3,	359,	3,	0,	0,	0,	0,	0,	0,	0,	"Vu Hµm (KiÒu n÷)"},
+	{103,	35,	4,	2,	371,	6,	357,	3,	358,	3,	359,	3,	0,	0,	0,	0,	0,	0,	0,	"Zhong Kui Mask"},
+	{103,	53,	4,	2,	371,	6,	357,	3,	358,	3,	359,	3,	0,	0,	0,	0,	0,	0,	0,	"Tu Luo (female alluring)"},
+	{103,	71,	4,	2,	371,	6,	357,	3,	358,	3,	359,	3,	0,	0,	0,	0,	0,	0,	0,	"Wu Xian (graceful female)"},
 }
 --»Æ½ð×°±¸£ºÐèÒªÌîÈë1£º¸±Àà£¨×°±¸´óÀà¶¼Îª0Ê¡ÂÔ£©£¬2£ºÐ¡Àà£¬3ÊÇ·ñ¼ø¶¨£º( ÊýÁ¿¶¼Îª1Ê¡ÂÔ£»0Î´¼ø¶¨ £¬1ÒÑ¼ø¶¨£¬ 2Ê°È¡°ó¶¨ £¬3×°±¸°ó¶¨£¬ 4ÒÑ¾­°ó¶¨)£¬4£ºÃû³Æ£¬5£ºÊôÐÔ¡£
 prize_att[7] = {
@@ -135,7 +135,7 @@ prize_att[7] = {
 {5,		6009,	1,	0,	"L­u Yªn c«n"},
 {2,		6010,	1,	0,	"HuyÒn Yªn kiÕm"},
 {9,		6011,	1,	0,	"Vò Yªn bót"},
-{6,		6012,	1,	0,	"Hµ Tiªm Th­¬ng"},
+{6,		6012,	1,	0,	"He Tian Spear"},
 {4,		6013,	1,	0,	"Hµnh Yªn Cung"},
 {7,		6014,	1,	0,	"Träc Yªn nhÉn"},
 {11,	6015,	1,	0,	"Yªu Yªn tr¶o"},
@@ -143,7 +143,7 @@ prize_att[7] = {
 --×°±¸ÊôÐÔ¶ÔÓ¦½âÊÍ
 prize_att_string = {
 	"ThÓ lùc +",
-	"Ph¶n ®ßn",
+	"Counter blow",
 	"Ph¹m vi tÊn c«ng ¸m khÝ +",
 	"Hót néi miÔn dÞch",
 	"Hót huyÕt miÔn dÞch",
@@ -152,7 +152,7 @@ prize_att_string = {
 	"Khèng chÕ ®èi ph­¬ng phôc håi m¸u",
 	"Tû lÖ mµi mßn vò khÝ gi¶m",
 	"Mçi 10 gi©y ¸m khÝ t¨ng",
-	"Sinh lùc +",
+	"Vitality +",
 	"Néi lùc +",
 	"Mçi 10 gi©y néi lùc håi phôc",
 	"Mçi 10 gi©y sinh lùc håi phôc",
@@ -249,7 +249,7 @@ prize_att_string = {
 	"§¸nh néi-khãa kü n¨ng hç trî",
 	"Tû lÖ nhÊt ®Þnh tr¸nh bÉy",
 	"Tû lÖ nhÊt ®Þnh chÞu ®ßn gi¶m nöa",
-	"NÐ tr¸nh + ",
+	"Evasion +",
 	"yªu cÇu ®¼ng cÊp gi¶m ",
 	"Søc lùc t¨ng",
 	"§¸nh tËp trung t¨ng",
@@ -262,7 +262,7 @@ prize_att_string = {
 	"Tû lÖ ®¸nh ng· ®èi ph­¬ng",
 	"§¸nh chÆn ®èi ph­¬ng xuÊt chiªu",
 	"Tô khÝ tèi ®a t¨ng 1 «",
-	"MiÔn dÞch ®¸nh ng·",
+	"Immune to knockdown",
 	"Tû lÖ miÔn dÞch ®¸nh lui",
 	"Tû lÖ miÔn dÞch tª liÖt",
 	"Tû lÖ miÔn dÞch cho¸ng",
@@ -286,7 +286,7 @@ prize_att_string = {
 	"Lµm cho¸ng ®èi ph­¬ng",
 	"§iÓm huyÖt ®èi ph­¬ng",
 	"Lµm hçn lo¹n ®èi ph­¬ng",
-	"G©y ngñ",
+	"Induce sleep",
 	"Kh¶ n¨ng ®¸nh b¹i ®èi ph­¬ng",
 	"Kh¶ n¨ng ®Èy lïi ®èi ph­¬ng",
 	"§¸nh néi-khãa vËt phÈm",
@@ -298,7 +298,7 @@ prize_att_string = {
 	"Lµm cho¸ng ®èi ph­¬ng",
 	"§iÓm huyÖt ®èi ph­¬ng",
 	"Lµm hçn lo¹n ®èi ph­¬ng",
-	"G©y ngñ",
+	"Induce sleep",
 	"Kh¶ n¨ng ®¸nh b¹i ®èi ph­¬ng",
 	"Kh¶ n¨ng ®Èy lïi ®èi ph­¬ng",
 	"§¸nh néi-khãa vËt phÈm",
@@ -310,7 +310,7 @@ prize_att_string = {
 	"Lµm cho¸ng ®èi ph­¬ng",
 	"§iÓm huyÖt ®èi ph­¬ng",
 	"Lµm hçn lo¹n ®èi ph­¬ng",
-	"G©y ngñ",
+	"Induce sleep",
 	"Kh¶ n¨ng ®¸nh b¹i ®èi ph­¬ng",
 	"Kh¶ n¨ng ®Èy lïi ®èi ph­¬ng",
 	"§¸nh néi-khãa vËt phÈm",
@@ -322,7 +322,7 @@ prize_att_string = {
 	"Lµm cho¸ng ®èi ph­¬ng",
 	"§iÓm huyÖt ®èi ph­¬ng",
 	"Lµm hçn lo¹n ®èi ph­¬ng",
-	"G©y ngñ",
+	"Induce sleep",
 	"Kh¶ n¨ng ®¸nh b¹i ®èi ph­¬ng",
 	"Kh¶ n¨ng ®Èy lïi ®èi ph­¬ng",
 	"§¸nh néi-khãa vËt phÈm",
@@ -334,7 +334,7 @@ prize_att_string = {
 	"Lµm cho¸ng ®èi ph­¬ng",
 	"§iÓm huyÖt ®èi ph­¬ng",
 	"Lµm hçn lo¹n ®èi ph­¬ng",
-	"G©y ngñ",
+	"Induce sleep",
 	"Kh¶ n¨ng ®¸nh b¹i ®èi ph­¬ng",
 	"Kh¶ n¨ng ®Èy lïi ®èi ph­¬ng",
 	"§¸nh néi-khãa vËt phÈm",
@@ -346,7 +346,7 @@ prize_att_string = {
 	"Lµm cho¸ng ®èi ph­¬ng",
 	"§iÓm huyÖt ®èi ph­¬ng",
 	"Lµm hçn lo¹n ®èi ph­¬ng",
-	"G©y ngñ",
+	"Induce sleep",
 	"Kh¶ n¨ng ®¸nh b¹i ®èi ph­¬ng",
 	"Kh¶ n¨ng ®Èy lïi ®èi ph­¬ng",
 	"§¸nh néi-khãa vËt phÈm",
@@ -358,7 +358,7 @@ prize_att_string = {
 	"Lµm cho¸ng ®èi ph­¬ng",
 	"§iÓm huyÖt ®èi ph­¬ng",
 	"Lµm hçn lo¹n ®èi ph­¬ng",
-	"G©y ngñ",
+	"Induce sleep",
 	"Kh¶ n¨ng ®¸nh b¹i ®èi ph­¬ng",
 	"Kh¶ n¨ng ®Èy lïi ®èi ph­¬ng",
 	"§¸nh néi-khãa vËt phÈm",
@@ -370,7 +370,7 @@ prize_att_string = {
 	"Lµm cho¸ng ®èi ph­¬ng",
 	"§iÓm huyÖt ®èi ph­¬ng",
 	"Lµm hçn lo¹n ®èi ph­¬ng",
-	"G©y ngñ",
+	"Induce sleep",
 	"Kh¶ n¨ng ®¸nh b¹i ®èi ph­¬ng",
 	"Kh¶ n¨ng ®Èy lïi ®èi ph­¬ng",
 	"§¸nh néi-khãa vËt phÈm",
@@ -391,7 +391,7 @@ prize_att_string = {
 	"Th©n ph¸p t¨ng",
 	"Linh ho¹t t¨ng",
 	"Néi c«ng t¨ng ",
-	"Sinh lùc +",
+	"Vitality +",
 	"TÊn c«ng kÌm ®éc s¸t",
 	"Ph¸ phßng thñ ®èi ph­¬ng",
 	"Sinh lùc tèi ®a t¨ng",
@@ -437,13 +437,13 @@ prize_att_string = {
 	"Hç trî phßng thñ duy tr× ",
 	"Ngo¹i phßng gi¶m, ngo¹i kÝch t¨ng",
 	"Ngo¹i phßng gi¶m, Néi kÝch t¨ng",
-	"Kh¾c nÐ",
+	"Restraint counter",
 	"TÊn c«ng lµm søc m¹nh ®èi ph­¬ng gi¶m",
 	"TÊn c«ng lµm g©n cèt ®èi ph­¬ng gi¶m",
 	"TÊn c«ng lµm néi c«ng ®èi ph­¬ng gi¶m",
 	"KhiÕn ®èi ph­¬ng gi¶m Linh ho¹t ",
 	"TÊn c«ng lµm th©n ph¸p ®èi ph­¬ng gi¶m",
-	"Tû lÖ chÞu ®ßn gi¶m nöa",
+	"Rate of taking halved damage",
 	"Ph¸t huy c«ng kÝch lín nhÊt",
 	"Vâ c«ng hao néi gi¶m",
 	"D­îc hiÖu kÐo dµi",
@@ -476,11 +476,11 @@ prize_att_string = {
 	"§éc s¸t t¨ng",
 	"H¹ gôc ®èi ph­¬ng sinh lùc håi phôc ",
 	"yªu cÇu ®¼ng cÊp gi¶m ",
-	"Tû lÖ ®¸nh ph¹m vi",
+	"Hit range rate",
 	"ThÓ lùc tèi ®a t¨ng",
 	"ChÝnh x¸c t¨ng",
 	"NÐ tr¸nh t¨ng",
-	"Ph¶n ®ßn",
+	"Counter blow",
 	"Mçi 10 gi©y néi lùc håi phôc",
 	"Mçi 10 gi©y sinh lùc håi phôc",
 	"§¸nh tËp trung t¨ng",
@@ -505,7 +505,7 @@ prize_att_string = {
 	"Néi c«ng t¨ng ",
 	"Ph¸ phßng thñ ®èi ph­¬ng",
 	"TÊn c«ng kÌm ®éc s¸t",
-	"Kh¾c nÐ",
+	"Restraint counter",
 	"Tû lÖ nhÊt ®Þnh chÞu ®ßn gi¶m nöa",
 	"Kinh nghiÖm nhËn ®­îc t¨ng",
 	"TÊt c¶ thuéc tÝnh t¨ng",
@@ -561,7 +561,7 @@ function OnUse(id)
 			if prize_level == 7 and random(1000) <= prize_zhuangbei_jilv[7] then
 				local add_flag = AddItem(2,0,1082,50)
 				if add_flag == 1 then
-					AddGlobalNews("Ng­êi ch¬i"..GetName().."Dïng 'B¸ch B¶o r­¬ng Bé Phi Yªn' më 50 quyÓn 'Th¸i DÞch Hçn Nguyªn C«ng §å'!")
+					AddGlobalNews("Player"..GetName().."Dïng 'B¸ch B¶o r­¬ng Bé Phi Yªn' më 50 quyÓn 'Th¸i DÞch Hçn Nguyªn C«ng §å'!")
 					SendTongMessage(GetName().."Dïng 'B¸ch B¶o r­¬ng Bé Phi Yªn' më 50 quyÓn 'Th¸i DÞch Hçn Nguyªn C«ng §å'!")
 				else
 					WriteLog("Bé Phi Yªn: Ng­êi ch¬i["..GetName().."]dïng 'B¸ch B¶o r­¬ng Bé Phi Yªn' thªm 50 quyÓn 'Th¸i DÞch Hçn Nguyªn C«ng §å' thÊt b¹i, ®¸nh dÊu:  "..add_flag)
@@ -618,7 +618,7 @@ function OnUse(id)
 	elseif prize_level == 7 then
 		prize_jieshi_1 = "Trang bÞ Hoµng Kim:"..prize_att[7][prize_seq][5]
 		--°´ÍÃ×Ó½ã½ãÒªÇó¼ÓÉÏÊÀ½çÏûÏ¢
-		AddGlobalNews("Ng­êi ch¬i"..GetName().."Sö dông \'B¸ch B¸u R­¬ng cña Bé Phi Yªn\' më Hoµng Kim Vò KhÝ:"..prize_att[7][prize_seq][5])
+		AddGlobalNews("Player"..GetName().."Sö dông \'B¸ch B¸u R­¬ng cña Bé Phi Yªn\' më Hoµng Kim Vò KhÝ:"..prize_att[7][prize_seq][5])
 	else
 		prize_seq,att_seq_1,att_seq_2,att_seq_3 = Zgc_conf_task_att_dealout(prize_seq)				--ÊôÐÔ½âÎöÈ¡µ½ÊôÐÔÐòºÅ£¬¶ø²»ÊÇÊôÐÔ´úÂë
 		if prize_att[prize_level][prize_seq][4] == 3 then
@@ -660,7 +660,7 @@ function OnUse(id)
 					player_name = sf_Replace(player_name,"|","-")
 					player_name = sf_Replace(player_name,":","-")
 					local finish_condition = player_fini_cond()
-					teamer_dialog[team_seq] = player_name.." Vßng 3:"..finish_condition.."/#Prize_add("..i..")"
+					teamer_dialog[team_seq] = player_name.." Round 3:"..finish_condition.."/#Prize_add("..i..")"
 					team_seq = team_seq + 1
 				end
 			end
@@ -761,7 +761,7 @@ function Prize_add(player_seq)
 					add_flag = AddItem(0,prize_att[prize_level][prize_seq][1],prize_att[prize_level][prize_seq][2],1,prize_att[prize_level][prize_seq][3],att_level_1,att_1,att_level_2,att_2,att_level_3,att_3,prize_att[prize_level][prize_seq][19])
 				end
 				if add_flag ~= 0 then
-					SendTongMessage(GetName().."§em 1:"..prize_jieshi_1..prize_jieshi_2)
+					SendTongMessage(GetName().."Take 1:"..prize_jieshi_1..prize_jieshi_2)
 					SendTongMessage(" mÆc lªn m×nh, nhiÖm vô vßng 3:"..player_fini_cond())
 					if prize_level == 7 then												
 						WriteLogEx(strLogCaption, "trang bÞ Hoµng Kim" ,"1", prize_att[prize_level][prize_seq][5], "", GetTongName())				
@@ -817,9 +817,9 @@ function Prize_add(player_seq)
 						local name = GetName()
 						local task_fini_cond = player_fini_cond()
 						PlayerIndex = PlayerIndex_save
-						SendTongMessage(GetName().."§em 1:"..prize_jieshi_1..prize_jieshi_2)
-						SendTongMessage("ph©n bè cho "..name.." , nhiÖm vô vßng 3:"..task_fini_cond)
-						WriteLog("NhiÖm v?B?Phi Yªn: Ng­êi ch¬i ["..GetName().."] T¹i b¶n ®å ID"..GetWorldPos().."LÊy 1 "..prize_jieshi_1..prize_jieshi_2.."Cho "..name)
+						SendTongMessage(GetName().."Take 1:"..prize_jieshi_1..prize_jieshi_2)
+						SendTongMessage("assign to"..name.." , nhiÖm vô vßng 3:"..task_fini_cond)
+						WriteLog("NhiÖm v?B?Phi Yªn: Ng­êi ch¬i ["..GetName().."] T¹i b¶n ®å ID"..GetWorldPos().."Take 1"..prize_jieshi_1..prize_jieshi_2.."Cho "..name)
 						PlayerIndex = GetTeamMember(player_seq)
 						if prize_level == 7 then														
 							WriteLogEx(strLogCaption, "trang bÞ Hoµng Kim" ,"1", prize_att[prize_level][prize_seq][5], "", GetTongName())
@@ -915,7 +915,7 @@ function player_fini_cond()
 			turn_num_sum = turn_num_sum + 1
 		end
 	end
-	string_return = "("..turn_num_sum.." vßng,"..goods_num_count.." ®iÓm tÝch lòy)"
+	string_return = "("..turn_num_sum.." round,"..goods_num_count.." ®iÓm tÝch lòy)"
 	return string_return
 end
 --**************************ÊýÁ¿ºÍÈÕÆÚ·Ö×°º¯Êý*************************

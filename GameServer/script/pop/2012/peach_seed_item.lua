@@ -19,7 +19,7 @@ function OnUse(nItemIdx)
 	if DelItem(2,96,130,1) ~= 1 then  return 0 end;
 	local nMapId,nX,nY = GetWorldPos();
 	
-	local nNpcIdx = CreateNpc("§µo Hoa thô",GetName() .. "C©y ®µo ®· gieo trång",nMapId,nX,nY);
+	local nNpcIdx = CreateNpc("§µo Hoa thô",GetName() .. "The peach tree has been planted",nMapId,nX,nY);
 	SetNpcLifeTime(nNpcIdx,15);
 	SetTask(nTask,GetTask(nTask) + 1);
 end

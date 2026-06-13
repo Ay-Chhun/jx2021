@@ -2,14 +2,14 @@
 --by vivi
 --2009-04-09
 
-g_NpcName = "<color=green>D­ìng §iªu ChØ Nam<color>: "
+g_NpcName = "<color=green>Eagle Raising Guide<color>:"
 
 function OnUse()
 	local strtab = {
 		"Bİ quyÕt cho TiÓu §iªu ¨n no/yangdiao_talk_1",
-		"HuÊn luyÖn 1 TiÓu §iªu th«ng minh/yangdiao_talk_2",
+		"Train an intelligent Little Eagle/yangdiao_talk_2",
 		"Cho TiÓu §iªu häc mét kü n¨ng ®Æc biÖt/yangdiao_talk_3",
-		"Dõng/nothing"
+		"Stop/nothing"
 	};
 	Say(g_NpcName.."§©y lµ th­ tŞch ghi chĞp c¸ch nu«i §iªu cña ®Ö tö Thóy Yªn M«n, rÊt cã İch.",
 		getn(strtab),

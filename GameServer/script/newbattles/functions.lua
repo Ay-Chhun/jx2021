@@ -175,7 +175,7 @@ function BT_DecPersonalPoint(nPoint)
 
 	BT_AddPlayerCampPoint(-nPoint);
 	BT_AddTotalPoint(-nPoint);
-	Msg2Player(" §iÓm tÝch lòy c¸ nh©n bÞ trõ ®i"..nPoint.." ®iÓm");
+	Msg2Player(" Personal accumulated points deducted"..nPoint.." ®iÓm");
 	BT_AddContribution(-ceil(nPoint/3));	--Èç¹û±»µÐ·½É±ËÀ£¬ÔòÔö¼Ó×Ô¼ºÔÚµÐ·½µÄÕ½¹¦£¨×öÄÚ¼é£¿£©
 end;
 --Ôö¼Ó¾ü¹¦£ºËÎ·½µÄ¾ü¹¦ÎªÕýÊý£¬ÁÉ·½µÄ¾ü¹¦Îª¸ºÊý
@@ -239,7 +239,7 @@ function BT_EmperorAward(nProbability)
 		ModifyExp(EMPEROR_AWARD_EXP);
 		BT_AddPersonalPoint(EMPEROR_AWARD_POINT);
 		BT_SetData(PT_EMPEROR_AWARD_COUNT,BT_GetData(PT_EMPEROR_AWARD_COUNT)+1);
-		Msg2MSGroup(MISSION_ID,"Ng­êi ch¬i "..GetName().."  lËp ®­îc c«ng lín nªn ®­îc ban th­ëng ®iÓm tÝch lòy"..EMPEROR_AWARD_POINT.." ®iÓm, kinh nghiÖm"..EMPEROR_AWARD_EXP.." ®iÓm.",BT_GetCamp());
+		Msg2MSGroup(MISSION_ID,"Player"..GetName().."  lËp ®­îc c«ng lín nªn ®­îc ban th­ëng ®iÓm tÝch lòy"..EMPEROR_AWARD_POINT.." ®iÓm, kinh nghiÖm"..EMPEROR_AWARD_EXP.." ®iÓm.",BT_GetCamp());
 	end;
 end
 --Õ½µØÖ®ÐÇ
@@ -272,7 +272,7 @@ function BT_BattleStarAward()
 		strName = strsub(strName,1,strlen(strName)-2);
 	end;
 	if nStarCount > 1 then
-		sMul = "hä";
+		sMul = "surname";
 	end;
 	if nPlayerCount > 0 then
 		Msg2MSAll(MISSION_ID,tBattleName[BT_GetData(PT_BATTLE_TYPE)].." sau khi kÕt thóc, vinh dù ng«i sao chiÕn tr­êng trao cho: "..strName..", xem nh­ biÓu d­¬ng!"..sMul.."Trong chiÕn dÞch nµy ng­êi cã biÓu hiÖn kiÖt xuÊt lµ");
@@ -308,7 +308,7 @@ function BT_SetPlayerState(nCamp)
 	EnterChannel(tBattleChannel[nBattleType][1]);
 	EnterChannel(tCampChannel[(nBattleType-1)*2+nCamp][1]);
 	SetTempRevPos(ENTRANCE_POINT[nCamp][1],ENTRANCE_POINT[nCamp][2]*32,ENTRANCE_POINT[nCamp][3]*32);	--ÉèÖÃÖØÉúµã
-	BT_ShowDebugInfor("Tö vong:"..DEATH_SCRIPT);
+	BT_ShowDebugInfor("Deaths:"..DEATH_SCRIPT);
 	SetDeathScript(DEATH_SCRIPT);
 	BT_ClearCustomData();
 end;
@@ -339,9 +339,9 @@ function BT_ProcessBattleOver()
 		BT_SetData(nTaskIDWin,BT_GetData(nTaskIDWin)+1);	--»ñÊ¤
 	end;
 	local tType2Name = {
-		[VILLAGE_ID] = "Th«n L¹c Tranh §o¹t ChiÕn",
-		[RESOURCE_ID] = "Th¶o Cèc Tranh §o¹t ChiÕn",
-		[EMPLACEMENT_ID] = "Ph¸o §µi Tranh §o¹t ChiÕn",
+		[VILLAGE_ID] = "Village Seizure Battle",
+		[RESOURCE_ID] = "Grass Valley Seizure Battle",
+		[EMPLACEMENT_ID] = "Fortress Seizure Battle",
 		[MAINBATTLE_ID] = "ChiÕn tr­êng chÝnh-Nh¹n M«n Quan",
 	}
 	TriggerMisEvent("event_mission_joinonce", tType2Name[BATTLE_TYPE])
@@ -355,7 +355,7 @@ function BT_RestorePlayerState()
 			LeaveChannel(tBattleChannel[nBattleType][1]);
 			LeaveChannel(tCampChannel[(nBattleType-1)*2+nCamp][1]);
 		else
-			WriteLog("[ChiÕn tr­êng b¸o lçi]: TrÞ nCamp trong BT_RestorePlayerState b¸o lçi, trÞ b¸o lçi:"..nCamp);
+			WriteLog("[Battlefield error]: nCamp in BT_RestorePlayerState reports an error, error value:"..nCamp);
 		end;
 	end;
 	--==========================================================================
@@ -399,7 +399,7 @@ function BT_ReportFinalResult()
 	local nWhoWin = GetMissionV(MV_WINNER);
 	local sStrResult = "";
 	if nWhoWin == ALL_ID then
-		sStrResult = "T¹i <color=yellow>"..tBattleName[nBattleType].."<color> Tèng-Liªu hai bªn bÊt ph©n th¾ng b¹i.";
+		sStrResult = "At <color=yellow>"..tBattleName[nBattleType].."<color> Tèng-Liªu hai bªn bÊt ph©n th¾ng b¹i.";
 	else
 		if nWhoWin == SONG_ID then
 			sStrResult = "<color=yellow>Phe Tèng<color> giµnh ®­îc <color=yellow>"..tBattleName[nBattleType].."<color>.";
@@ -409,7 +409,7 @@ function BT_ReportFinalResult()
 	end;
 	local selTab = {
 				--"²é¿´±¾³¡Õ½³¡Í³¼ÆÐÅÏ¢/#BTS_ViewBattleStatistic(1)",
-				"§ãng/nothing",
+				"Close/nothing",
 				}
 	local nPointAward = BT_GetData(PT_POINT_AWARD);
 	local nJunGongAward = BT_GetData(PT_JUNGONG_AWARD);
@@ -446,7 +446,7 @@ function BT_OperateAllPlayer(func,tArg,nCamp)
 			if PlayerIndex > 0 then
 				func(tArg);
 			else
-				Write_Log("ChiÕn tr­êng b¸o lçi","BT_OperateAllPlayer(), h­íng dÉn ng­êi ch¬i trong IDTab nhá h¬n hoÆc b»ng 0");
+				Write_Log("Battlefield error","BT_OperateAllPlayer(), h­íng dÉn ng­êi ch¬i trong IDTab nhá h¬n hoÆc b»ng 0");
 			end;
 		end;
 	end;
@@ -543,7 +543,7 @@ function BT_GetMSPlayerIndex(nCamp)
 		end
 	end;
 	if nTotalPlayerNum ~= getn(tIndex) then
-		WriteLog("[ChiÕn tr­êng b¸o lçi]: Trong hµm sè ms_GetMSPlayerIndex nhËn ®­îc sè ng­êi cña phe nµo ®ã so víi getn(tIndex) kh«ng ®ång nhÊt. Sè ng­êi:"..nTotalPlayerNum..", getn(tIndex) chªnh lÖch lµ:"..getn(tIndex));
+		WriteLog("[ChiÕn tr­êng b¸o lçi]: Trong hµm sè ms_GetMSPlayerIndex nhËn ®­îc sè ng­êi cña phe nµo ®ã so víi getn(tIndex) kh«ng ®ång nhÊt. Sè ng­êi:"..nTotalPlayerNum..", getn(tIndex) difference is:"..getn(tIndex));
 	end;
 	return tIndex;
 end;
@@ -828,7 +828,7 @@ function BT_EndBattle()
 		PlayerIndex = IDTab[i];
 		BT_ReportFinalResult();
 		BT_ProcessBattleOver();
-		BT_ShowDebugInfor("Trong BT_EndBattle, xãa nh©n vËt:"..GetName()..", trÞ BT_GetData(PT_SIGN_UP):"..BT_GetData(PT_SIGN_UP));
+		BT_ShowDebugInfor("Trong BT_EndBattle, xãa nh©n vËt:"..GetName()..", value BT_GetData(PT_SIGN_UP):"..BT_GetData(PT_SIGN_UP));
 		DelMSPlayer(MISSION_ID,ALL_ID);
 		BT_SetData(PT_SIGN_UP,0);		--±¨ÃûÐÅÏ¢Çå¿Õ£¨µ¥³¡Õ½³¡²âÊÔ½×¶ÎÓÃ£©
 	end;
@@ -937,7 +937,7 @@ function BT_ShowDebugInfor(Arg,nType)
 		if nType == nil or nType == 0 then
 			print("\n §iÒu chØnh tin tøc:"..Arg.."\n")
 		elseif nType == 1 then
-			Msg2SubWorld("ChØnh tin tøc:"..Arg);
+			Msg2SubWorld("Edit information:"..Arg);
 		end;
 	end;
 end;
@@ -957,16 +957,16 @@ function BT_ShowBattleRank(nPlayerCount,bShowWorld)
 	local tbPlayer = mf_SortMSPlayerByTaskValue(MISSION_ID,PTNC_BATTLEPOINT+BATTLE_OFFSET,0);
 	local nOldPlayerIdx = PlayerIndex;
 	if bShowWorld == 1 then
-		Msg2Global(tostring(tBattleName[BATTLE_TYPE]).."TÝch lòy c¸ nh©n: "..nPlayerCount..":");
+		Msg2Global(tostring(tBattleName[BATTLE_TYPE]).."Personal accumulation:"..nPlayerCount..":");
 	else
-		Msg2MSAll(MISSION_ID,tostring(tBattleName[BATTLE_TYPE]).."TÝch lòy c¸ nh©n: "..nPlayerCount..":");
+		Msg2MSAll(MISSION_ID,tostring(tBattleName[BATTLE_TYPE]).."Personal accumulation:"..nPlayerCount..":");
 	end;
 	for i=1,min(getn(tbPlayer),nPlayerCount) do
 		PlayerIndex = tbPlayer[i];
 		if bShowWorld == 1 then
-			Msg2Global("thø"..i..": ("..tCampNameZ[BT_GetCamp()]..")"..GetName().." "..BT_GetData(PTNC_BATTLEPOINT).." Phót ");
+			Msg2Global("the"..i..": ("..tCampNameZ[BT_GetCamp()]..")"..GetName().." "..BT_GetData(PTNC_BATTLEPOINT).." minutes");
 		else
-			Msg2MSAll(MISSION_ID,"thø"..i..": ("..tCampNameZ[BT_GetCamp()]..")"..GetName().." "..BT_GetData(PTNC_BATTLEPOINT).." Phót ");
+			Msg2MSAll(MISSION_ID,"the"..i..": ("..tCampNameZ[BT_GetCamp()]..")"..GetName().." "..BT_GetData(PTNC_BATTLEPOINT).." minutes");
 		end;
 	end;
 	PlayerIndex = nOldPlayerIdx;
@@ -1072,7 +1072,7 @@ function confirm_god_of_war()
 	local nEnemyCamp = 3 - nCurCamp
 	BT_OperateAllPlayer(fTaskTip,{},nEnemyCamp);
 	Say("<color=green>"..sNpcName.."<color>: ChiÕn ThÇn sÏ xuÊt hiÖn sau 15 gi©y!",0)
-	WriteLogEx("Tong Lieu","Nguyªn So¸i triÖu gäi")		
+	WriteLogEx("Tong Lieu","Marshal's summon")		
 end
 
 function battle_charge()

@@ -6,14 +6,14 @@
 VET_201107_LOG_TITLE = "Event kem mua he";--±¾´Î»î¶¯ÈÕÖ¾±êÌâ
 
 VET_201107_TB_LOG_ACTION_LIST = {
-    [1] = "Mua mÇm hoa",
+    [1] = "Buy flower bud",
     [2] = "KÝch ho¹t trång hoa",
 };
 
 VET_201107_STRING_LIST = {
     [1] = "KÝch ho¹t trång hoa",
-    [2] = "Mua mÇm hoa (1 mÇm hoa = 30 vµng) ",
-    [3] = "KÕt thóc ®èi tho¹i",
+    [2] = "Buy flower seed (1 flower seed = 30 gold)",
+    [3] = "End conversation",
     [4] = "TiÒn vµng ®¹i hiÖp mang theo kh«ng ®ñ.",
     [5] = "ChØ ®éi tr­ëng míi cã thÓ kÝch ho¹t trång hoa ",
     [6] = "CÇn tæ ®éi trªn 2 ng­êi míi cã thÓ kÝch ho¹t trång hoa ",
@@ -27,7 +27,7 @@ VET_201107_STRING_LIST = {
 };
 
 VET_201107_TB_ITEM_LIST = {
-    [1] = {"MÇm hoa ",2,1,30322},
+    [1] = {"Flower seed",2,1,30322},
 };
 
 VET_201107_TB_MAPID = {

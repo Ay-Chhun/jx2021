@@ -22,5 +22,5 @@ function OpenGempag(nItem)
 		return 0;
 	end
 	AddItem(2, 22, nRet, 1, 4);
-	Msg2Player(format("NhËn ®­îc %s*%d", GetItemName(2, 22, nRet), 1));
+	Msg2Player(format("Received %s*%d", GetItemName(2, 22, nRet), 1));
 end

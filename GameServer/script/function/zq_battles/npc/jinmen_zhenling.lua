@@ -7,8 +7,8 @@ function main()
 		return 0;
 	end
 	local tSay = {
-		"B¾t ®Çu tu söa/begin_repair_real",
-		"\nTõ bá/give_up_exit",
+		"Begin the repair/begin_repair_real",
+		"\nGive up/give_up_exit",
 		"T¹i h¹ chØ xem qua th«i/do_nothing",
 	}
 	if GetTrigger(1523 * 2) ~= 0 then

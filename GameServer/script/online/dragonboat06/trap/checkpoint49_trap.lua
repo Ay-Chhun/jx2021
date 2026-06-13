@@ -28,9 +28,9 @@ function main()
 			FinishTime = FinishTime/18;
 			local nMin = floor(FinishTime/60);
 			local nSec = format("%.2f",FinishTime - nMin*60);	--Ð¡ÊýµãºóÁ½Î»¾Í¹»ÁË
-			local sResult = "Tæng thêi gian"..nMin.." phót "..nSec.." Gi©y "
+			local sResult = "Total time"..nMin.." minutes"..nSec.." Gi©y "
 
-			Msg2MSAll(MISSION_ID,GetName().."c¸n ®Ých."..sResult);
+			Msg2MSAll(MISSION_ID,GetName().."to finish."..sResult);
 			if GetMissionV(MV_COMPLETENUM) == GetMSPlayerCount(MISSION_ID,CAMP_PLAYER) then
 				StopMissionTimer(MISSION_ID,WAITSTOP_TIMER_ID);
 				Msg2MSAll(MISSION_ID,"TrËn ®Êu kÕt thóc, h·y xem thø h¹ng cña m×nh.");
@@ -47,7 +47,7 @@ function main()
 		else
 			NewWorld(MapID,2019,3291);
 			InteractiveEnable(0);
-			Msg2Player("Kh«ng ®­îc ®ua ng­îc chiÒu");
+			Msg2Player("You cannot race in the wrong direction");
 		end;
 	end;
 end;

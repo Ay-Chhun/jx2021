@@ -2,15 +2,15 @@ Include("\\script\\lib\\globalfunctions.lua")
 
 function OnUse(nItem)
 	local tAward = {
-		{1, 190, "Huy Ch≠¨ng ßÂng Ch’", {0, 153, 1, 1}, 0},
+		{1, 190, "Copper Medal", {0, 153, 1, 1}, 0},
 		{1, 190, "∏o Choµng Tπo BË", {0, 152, 1, 1}, 0},
-		{1, 190, "Giµy V∂i Th´", {0, 154, 1, 1}, 0},
-		{1, 100, "Huy Ch≠¨ng Thi’t Ch’", {0, 153, 2, 1}, 0},	
+		{1, 190, "Coarse Cloth Shoes", {0, 154, 1, 1}, 0},
+		{1, 100, "Iron Medal", {0, 153, 2, 1}, 0},	
 		{1, 100, "∏o Choµng C»m ßoπn", {0, 152, 2, 1}, 0},
-		{1, 100, "Tinh Tr› BË Hµi", {0, 154, 2, 1}, 0},
+		{1, 100, "Refined Cloth Shoes", {0, 154, 2, 1}, 0},
 		{1, 26, "Huy Ch≠¨ng Ng‰c Ch’", {0, 153, 3, 1}, 0},
 		{1, 26, "∏o Choµng H·a V©n", {0, 152, 3, 1}, 0},
-		{1, 30, "BË Ch’ Cao ßÂng Ngoa", {0, 154, 3, 1}, 0},
+		{1, 30, "Gao Tong Wa Recipe", {0, 154, 3, 1}, 0},
 		{1, 3, "Huy Ch≠¨ng Kim Ch’ ngÚ hµnh", {0, 153, 4, 1}, 0, 0, 0, 1},
 		{1, 3, "Huy Ch≠¨ng MÈc Ch’ ngÚ hµnh", {0, 153, 5, 1}, 0, 0, 0, 1},
 		{1, 3, "Huy Ch≠¨ng ThÒy Ch’ ngÚ hµnh", {0, 153, 6, 1}, 0, 0, 0, 1},

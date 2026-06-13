@@ -12,7 +12,7 @@ function task_one_00()
     local szTalk = {
         "T¸i h¹ thu lai phong c¶nh dÞ, Hµnh d­¬ng nh¹n khø v« l­u ý…",
         "Th¬ hay l¾m! Ph¹m tiªn sinh v¨n ch­¬ng xuÊt chóng, hËu sinh kh©m phôc.",
-        "<sex> qu¸ khen! Kh«ng biÕt <sex> t×m Ph¹m mç cã chuyÖn g×?",
+        "You flatter me, <sex>! What brings you to seek out old Fan?",
         "T¹i h¹ trong lóc ®iÒu tra Thanh Minh Th­îng Hµ ®å ph¸t hiÖn T« Hµng m­în danh vËn chuyÓn Hoa Th¹ch C­¬ng thùc chÊt vËn chuyÓn m¶nh S¬n Hµ X· T¾c vµo cung. §¸m ng­êi L­¬ng s¬n bµy m­u c­íp Hoa Th¹ch C­¬ng vµ S¬n Hµ X· T¾c. Sù viÖc träng ®¹i D· TÈu nhê ta hái ý kiÕn Ph¹m tiªn sinh.",
         "ChuyÖn nµy kh«ng ®¬n gi¶n! HiÖn Ph¹m mç cã chót chuyÖn muèn nhê <sex> gióp ®ì!",
         "Gióp ®­îc tiÒn bèi lµ vinh dù cña v·n bèi ®©y.",
@@ -44,7 +44,7 @@ function task_two_01()
         "<sex> ®Õn cã chuyÖn g× kh«ng?",
         "Ph¹m tiªn sinh b¶o ta ®Õn lÊy Lang Cèt töu.",
         "Do d¹o nµy §­êng phñ bËn nhiÒu viÖc quªn mÊt chuyÖn Lang Cèt töu, kh«ng biÕt <sex> cã thÓ gióp ta t×m {10 Thæ Lang cèt}, {10 Thanh Lang cèt} kh«ng?",
-        "§¬n gi¶n th«i, ®Ó ta t×m vÒ!"
+        "Simple enough, let me find them and bring them back!"
     };
     TalkEx("task_two_01_01", szTalk);
 end;
@@ -54,8 +54,8 @@ function task_two_01_01()
     
     CreateTrigger(0, 513, KILL_CD_TL); --É±Ð¡ÍÁÀÇ
     CreateTrigger(0, 514, KILL_CD_QL); --É±Ð¡ÇàÀÇ
-    Msg2Player("Thu thËp 10 Thæ Lang cèt vµ 10 Thanh Lang cèt");
-    TaskTip("Thu thËp 10 Thæ Lang cèt vµ 10 Thanh Lang cèt");
+    Msg2Player("Collect 10 Earth Wolf Bones and 10 Green Wolf Bones.");
+    TaskTip("Collect 10 Earth Wolf Bones and 10 Green Wolf Bones.");
 end;
 
 function task_two_02()
@@ -93,15 +93,15 @@ function task_two_02_01()
     SetTask(TASK_CD_TWO, 103);
     CreateTrigger(0,515,KILL_CD_BRJ);   --É±°ÙÈÕ¼ý
     
-    Msg2Player("Thu thËp 8 ®ãa Tö Tinh hoa");
-    TaskTip("Thu thËp 8 ®ãa Tö Tinh hoa");
+    Msg2Player("Collect 8 Purple Essence Flowers.");
+    TaskTip("Collect 8 Purple Essence Flowers.");
 end;
 
 function task_two_03()
     local szSay = {
         "B¸ch NhËt TiÔn tuy lîi h¹i nh­ng kh«ng ®¸nh l¹i <sex> ®©u.",
         "§­¬ng nhiªn! Ta ®· mang Tö Tinh hoa vÒ./task_two_03_yes",
-        "……/task_two_03_no"
+        "/task_two_03_no"
     };
     SelectSay(szSay);
 end;
@@ -133,8 +133,8 @@ function task_two_03_01()
     AddItem(2,0,77,1);  --ÀÇ¹Ç¾Æ
     SetTask(TASK_CD_TWO, 104);
     SetTask(TASK_CD_THREE, 1);
-    Msg2Player("Mang Lang Cèt töu vÒ cho Ph¹m Träng Yªm");
-    TaskTip("Mang Lang Cèt töu vÒ cho Ph¹m Träng Yªm");
+    Msg2Player("Bring the Wolf Bone Wine back to Fan Zhongyan.");
+    TaskTip("Bring the Wolf Bone Wine back to Fan Zhongyan.");
 end;
 
 function task_three_01()
@@ -160,14 +160,14 @@ end;
 function task_three_02()
     local szTalk = {
         "Th¸i thó t×m ta kh«ng biÕt cã chuyÖn g× kh«ng?",
-        "§Ó taÞ h¹ ®Õn ®ã xem sao"
+        "Let me go there and see."
     };
     TalkEx("", szTalk);
 end;
 
 function task_three_02_01()
     local szTalk = {
-        "Lµ ai vËy?",
+        "Who is that?",
         "T¹i h¹ phông mÖnh Ph¹m tiªn sinh ®Õn t×m th¸i thó, kh«ng biÕt ng­êi ®ang phiÒn muén chuyÖn g×?",
         "Haha! VÞ hËu bèi nµy cã muèn ra søc gióp triÒu ®×nh kh«ng?",
         "HiÖn ®Êt n­íc ®ang lo¹n trong giÆc ngoµi, ng­êi häc vâ nh­ t¹i h¹ ®©y sao cã thÓ ®øng lµm ng¬.",
@@ -206,14 +206,14 @@ function task_three_03_02()
     --RemoveTrigger(GetTrigger(153));
     SetTask(TASK_CD_FOUR, 1);
     SetTask(TASK_CD_THREE, 4);
-    Msg2Player("§Õn C¸i Bang dß la tin tøc");
-    TaskTip("§Õn C¸i Bang dß la tin tøc");
+    Msg2Player("Go to the Beggars' Sect to scout for news.");
+    TaskTip("Go to the Beggars' Sect to scout for news.");
 end;
 
 function task_three_03_01()
     local szTalk = {
         "<sex> ®æi ý ®Õn gióp bæn quan råi ­?",
-        "ChØ ngang qua th«i! C¸o tõ!"
+        "I'm only passing through! Farewell!"
     };
     TalkEx("", szTalk);
 end;
@@ -221,7 +221,7 @@ end;
 function task_three_04()
     local szTalk = {
         "C¸i Bang tai m¾t nhiÒu, kh«ng chõng ®· cã tin tøc.",
-        "T¹i h¹ ®Õn C¸i Bang ngay!"
+        "I will go to the Beggars' Sect at once!"
     };
     TalkEx("", szTalk);
 end;
@@ -300,7 +300,7 @@ function task_four_0607()
         "§ã lµ mét tæ chøc gi¸n ®iÖp cña n­íc T©y H¹, hä phô tr¸ch phÝa t©y ph¸ ho¹i vµ ng¨n c¶n ng­êi kh¸c. T©y H¹ mËt b¸o cho L­¬ng S¬n biÕt ©m m­u Hoa Th¹ch C­¬ng bªn trong chøa b¶n ®å S¬n Hµ X· T¾c.",
         "Nãi nh­ vËy gi÷a chóng cã mèi quan hÖ mËt thiÕt?",
         "L­¬ng S¬n tuy lµ S¬n tÆc nh­ng thñ lÜnh Tèng Giang chÝnh trùc, cã lßng yªu n­íc kh«ng thÓ nµo cÊu kÕt víi ®¸m ng­êi T©y H¹. Sù viÖc hÖ träng! Xin mang tÝn vËt nµy ®Õn Giang T©n Th«n t×m Gia C¸t Kú.",
-        "T¹i h¹ lËp tøc lªn ®­êng ngay!"
+        "I will set out at once!"
     };
     TalkEx("task_four_0607_01", szTalk);
 end;
@@ -318,7 +318,7 @@ end;
 
 function task_four_08()
     local szTalk = {
-        "Giang hå s¾p cã cuéc ®Ém m¸u n÷a."
+        "The martial world is about to see another bloody battle."
     };
     TalkEx("", szTalk);
 end;

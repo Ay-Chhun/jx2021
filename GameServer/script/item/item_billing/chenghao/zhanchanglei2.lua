@@ -6,7 +6,7 @@ TB_NEW_TITLE =
 {
 	[1] = 
 		{
-			{2,1,9961,"Hé lÖnh Ph¸ trËn ®èc","Ph¸ trËn ®èc hé"},
+			{2,1,9961,"Hé lÖnh Ph¸ trËn ®èc","Battle Breaking Captain"},
 			{--ÊÇ·ñĞèÓÀ¾ÃÔªË§¾üÏÎ£¬ÊôĞÔÃèÊö£¬¶ÔÓ¦³ÆºÅ±íÄÚµÄ´óÀà£¬¸±Àà£¬³ÖĞøÊ±¼ä(ÕæÊµÊ±¼ä)£¬ËùĞè¾ü¹¦£¨¾ø¶ÔÖµ£©
 				{1,"Thªm 15% néi, ngo¹i c«ng",	30,13,3600 * 24 * 30,	300000},
 				{1,"thªm 100 ®iÓm S¸t th­¬ng",	30,15,3600 * 24 * 30,	300000},
@@ -21,21 +21,21 @@ TB_NEW_TITLE =
 		},
 	[3] = 
 		{
-			{2,1,9962,"ThiÕt cæ long vÖ lÖnh","ThiÕt cæ long vÖ"},
+			{2,1,9962,"ThiÕt cæ long vÖ lÖnh","Iron Bone Dragon Guard"},
 			{
 				{0,"T¨ng 60 ®iÓm thuéc tİnh",30,19,3600 * 24 * 30,	400000},
 			},
 		},
 	[4] = 
 		{
-			{2,1,9964,"V« Song Phi T­íng lÖnh","V« Song Phi T­íng"},
+			{2,1,9964,"V« Song Phi T­íng lÖnh","Peerless Flying General"},
 			{
 				{0,"T¨ng 10000 ®iÓm sinh lùc tèi ®a",30,21,3600 * 24 * 30,	500000},
 			},
 		},
 	[5] = 
 		{
-			{2,1,9960,"Ngù ®Şch m·nh sÜ lÖnh","Ngù ®Şch m·nh sÜ"},
+			{2,1,9960,"Ngù ®Şch m·nh sÜ lÖnh","Enemy Subduing Warrior"},
 			{
 				{1,"T¨ng 40 ®iÓm thuéc tİnh",30,23,3600 * 24 * 30,	250000},
 			},
@@ -52,15 +52,15 @@ function OnUse(nItemIdx)
 	end;
 	if nType == 1 then	--ÌØÀı£ºÈç¹ûÊÇÆÆÕó¶½»¤Áî
 		local selTab = {
-					format("T¨ng 15##néi, ngo¹i lùc/#use_confirm(%d,%d)",nItemIdx,1),
+					format("Increase internal and external energy by 15##/#use_confirm(%d,%d)",nItemIdx,1),
 					format("thªm 100 ®iÓm S¸t th­¬ng/#use_confirm(%d,%d)",nItemIdx,2),
-					"Hñy bá/nothing",
+					"Cancel/nothing",
 					}
 		Say("sö dông <color=yellow>"..TB_NEW_TITLE[nType][1][4].."<color>B¹n sÏ nhËn ®­îc <color=yellow>®¹i"..tCampNameZ[nCurCamp]..TB_NEW_TITLE[nType][1][4].."<color>danh hiÖu, h·y chän thuéc tİnh b¹n cÇn: ",getn(selTab),selTab);
 	else
 		local selTab = {
-					format("§ång ı/#use_confirm(%d,%d)",nItemIdx,1),
-					"Hñy bá/nothing",
+					format("Confirm/#use_confirm(%d,%d)",nItemIdx,1),
+					"Cancel/nothing",
 					}
 		Say("sö dông <color=yellow>"..TB_NEW_TITLE[nType][1][4].."<color>B¹n sÏ nhËn ®­îc <color=yellow>®¹i"..tCampNameZ[nCurCamp]..TB_NEW_TITLE[nType][1][5].."<color>danh hiÖu, b¹n muèn sö dông ngay kh«ng?",getn(selTab),selTab);
 	end;

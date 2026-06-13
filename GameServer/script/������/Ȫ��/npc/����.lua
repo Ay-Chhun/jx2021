@@ -4,7 +4,7 @@
 function main()
 	Uworld1 = GetTask(1)
 	if ((Uworld1 == 1) and (HaveItem(0)>0)) then
-		Say("§a t¹ ng­¬i! Nµo ngê M¹nh c«ng tö còng bá Së Së. Ta c¶m thÊy qu¸ c« ®¬n, muèn cã ng­êi chia sÎ. Ng­¬i muèn biÕt c¸ch giao tÕ kh«ng?",2,"Muèn/yes","Kh«ng cÇn ®©u!/no")
+		Say("§a t¹ ng­¬i! Nµo ngê M¹nh c«ng tö còng bá Së Së. Ta c¶m thÊy qu¸ c« ®¬n, muèn cã ng­êi chia sÎ. Ng­¬i muèn biÕt c¸ch giao tÕ kh«ng?",2,"Yes/yes","Kh«ng cÇn ®©u!/no")
 	DelItem(0)
 	SetTask(1,2)
 	else

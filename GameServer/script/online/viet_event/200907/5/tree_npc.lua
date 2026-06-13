@@ -44,7 +44,7 @@ function main()
 	end
 	if bIsTree == 0 then
 		SetNpcScript(npcIdx, "");
-		WriteLog("[Hoat dong trong cay thang 8 loi] NPC:"..npcName.."Lçi files gèc");
+		WriteLog("[Hoat dong trong cay thang 8 loi] NPC:"..npcName.."Original file error");
 		return 0;
 	end
 	local npcTreeIndex = GetTargetNpc(); --»ñÈ¡Íæ¼ÒµÄ¶¯×÷¶ÔÏóNpc
@@ -70,10 +70,10 @@ function main()
 	--Èç¹ûÊÇ²»ËÀÊ÷
 	if GetTask(TASK_PLANT_TREE_TYPE) == 2 then
 		if nPlantTimePassed < 240 then
-			Talk(1, "", "C©y BÊt Tö vÉn ch­a tr­êng thµnh, b©y giê kh«ng thÓ thu ho¹ch ®­îc, ®îi <color=yellow>" .. 240 - nPlantTimePassed .. " gi©y<color> h·y tiÕp tôc thu ho¹ch");
+			Talk(1, "", "C©y BÊt Tö vÉn ch­a tr­êng thµnh, b©y giê kh«ng thÓ thu ho¹ch ®­îc, ®îi <color=yellow>" .. 240 - nPlantTimePassed .. " seconds<color> then continue harvesting");
 			return 0;
 		else
-			tinsert(selTab, "B©y giê thu ho¹ch /getTree");
+			tinsert(selTab, "Harvest now /getTree");
 			tinsert(selTab, "§îi mét lóc h·y thu ho¹ch tiÕp/nothing");
 			sSaySth = "C©y ®· tr­ëng thµnh, muèn thu ho¹ch b©y giê? NÕu nh­<color=yellow>" .. 300 - nPlantTimePassed .. "<color> gi©y sau kh«ng thu ho¹ch, c©y sÏ tù ®éng chÕt ®i";
 		end
@@ -102,10 +102,10 @@ function main()
 		end
 		if nTreeGrow == 6 then
 			if nPlantTimePassed < TREE_PARAM[nTreeGrow][3] then
-				Talk(1, "", TREE_TYPE[GetTask(TASK_PLANT_TREE_TYPE)][2] .. "VÉn ch­a tr­ëng thµnh, nªn kh«ng thÓ thu ho¹ch b©y giê ®­îc<color=yellow>" ..TREE_PARAM[nTreeGrow][3] - nPlantTimePassed .. " gi©y<color> h·y tiÕp tôc thu ho¹ch");
+				Talk(1, "", TREE_TYPE[GetTask(TASK_PLANT_TREE_TYPE)][2] .. "VÉn ch­a tr­ëng thµnh, nªn kh«ng thÓ thu ho¹ch b©y giê ®­îc<color=yellow>" ..TREE_PARAM[nTreeGrow][3] - nPlantTimePassed .. " seconds<color> then continue harvesting");
 				return 0;
 			end
-			tinsert(selTab, "B©y giê thu ho¹ch /getTree");
+			tinsert(selTab, "Harvest now /getTree");
 			tinsert(selTab, "§îi mét lóc h·y thu ho¹ch tiÕp/nothing");
 			sSaySth = "C©y ®· tr­ëng thµnh, muèn thu ho¹ch b©y giê? NÕu nh­<color=yellow>" .. getDateTimeString(TREE_PARAM[nTreeGrow][2] - nPlantTimePassed) .. "<color> gi©y sau kh«ng thu ho¹ch, c©y sÏ tù ®éng chÕt ®i";
 		else
@@ -156,7 +156,7 @@ function giveWater()
 	nPlantTimePassed = GetTime() - GetTask(TASK_PLANT_TREE_TIME);
 	nWaterTimePassed = GetTime() - GetTask(TASK_WATER_TREE_TIME);
 	if nTreeGrow < 6 and nTreeGrow ~= 1 then
-		StartTimeGuage("T­íi c©y",TREE_PARAM[nTreeGrow][3] - nPlantTimePassed,0,1)
+		StartTimeGuage("Water the tree",TREE_PARAM[nTreeGrow][3] - nPlantTimePassed,0,1)
 	end
 	if nTreeGrow == 6 then
 		StartTimeGuage("Thu ho¹ch",TREE_PARAM[nTreeGrow][3] - nPlantTimePassed,0,1)
@@ -239,7 +239,7 @@ function getTree()
 	
 	ModifyExp(nExp);
 	Msg2Player("B¹n nhËn ®­îc " .. nExp .. " Kinh nghiÖm");
-	WriteLog("[Hoat dong trong cay]:" .. GetName() .. "NhËn ®­îc " .. nExp .. " Kinh nghiÖm");
+	WriteLog("[Hoat dong trong cay]:" .. GetName() .. "Received" .. nExp .. " Kinh nghiÖm");
 	--function thªm phÇn th­ëng
 	ThuHoachHatGiong()
    --nhiÖm vô lµm giµu
@@ -316,10 +316,10 @@ function getTree()
 	if nTime >= 5 then
 		ModifyReputation(nRep,1)
 		Msg2Player("B¹n nhËn ®­îc "..nRep.." ®iÓm danh väng");
-		WriteLog("[Hoat dong trong cay]:" .. GetName() .. "NhËn ®­îc " .. nRep .. " ®iÓm danh väng");
+		WriteLog("[Hoat dong trong cay]:" .. GetName() .. "Received" .. nRep .. " ®iÓm danh väng");
 		SetTask(336, GetTask(336) + nSuMon)
 		Msg2Player("B¹n nhËn ®­îc "..nSuMon.." ®iÓm s­ m«n");
-		WriteLog("[Hoat dong trong cay]:" .. GetName() .. "NhËn ®­îc " .. nSuMon .. " ®iÓm s­ m«n");
+		WriteLog("[Hoat dong trong cay]:" .. GetName() .. "Received" .. nSuMon .. " ®iÓm s­ m«n");
 	end
 --	if nTime == 4 or nTime == 8 then
 --		local nReturn, nIndex = AddItem(SEED_AWARD_COUNT[1][2],SEED_AWARD_COUNT[1][3],SEED_AWARD_COUNT[1][4],1);
@@ -398,7 +398,7 @@ function getTree()
 		if nGroup == 0 then
 			nGroup = mod(random(0,1000),20) + 1
 		end
-		gf_AddItemEx2 ( tFruitAwardNov2010[nGroup][6],  tFruitAwardNov2010[nGroup][7],  "Hoat Dong Trai Cay", "Trång 24 h¹t gièng" )
+		gf_AddItemEx2 ( tFruitAwardNov2010[nGroup][6],  tFruitAwardNov2010[nGroup][7],  "Hoat Dong Trai Cay", "Plant 24 seeds" )
 	end	
 	-- **************************************************************************************************************************************
 	
@@ -407,17 +407,17 @@ function getTree()
 	if nDate >= 100416 and nDate <= 100516 then	
 		local tCakeCount = {40,40,40,40,40}
 		AddItem(2,1,30184,tCakeCount[nTreeType])
-		WriteLogEx("Hoat dong thang 4 nam 2010","trång c©y",tCakeCount[nTreeType],"Tói Nguyªn LiÖu")
+		WriteLogEx("Hoat dong thang 4 nam 2010","plant a tree",tCakeCount[nTreeType],"Material Pouch")
 	end
 	
 	if nDate >= 100528 and nDate <= 100704 then
-		gf_AddItemEx2({2,1,30192,40}, "M©m tr¸i c©y", "Hoat dong thang 6 nam 2010", "nhËn")	
+		gf_AddItemEx2({2,1,30192,40}, "Fruit Tray", "Hoat dong thang 6 nam 2010", "nhËn")	
 	elseif nDate >= 100709 and nDate <= 100808 then
-		gf_AddItemEx2({2,1,30205,40}, "Tói kho¸ng th¹ch", "Hoat dong thang 7 nam 2010", "nhËn")	
+		gf_AddItemEx2({2,1,30205,40}, "Mineral Bag", "Hoat dong thang 7 nam 2010", "nhËn")	
 	elseif nDate >= 100813 and nDate <= 100912 then
-		gf_AddItemEx2({ 2, 1, 30225, 80}, "Nguyªn LiÖu Lµm B¸nh", "Hoat dong thang 8 nam 2010", "nhËn")
+		gf_AddItemEx2({ 2, 1, 30225, 80}, "Cake Ingredients", "Hoat dong thang 8 nam 2010", "nhËn")
 	elseif nDate >= 100929 and nDate <= 101024 then
-		gf_AddItemEx2({ 2, 1, 30233, 75}, "Bét M×", "Hoat dong thang 9 nam 2010", "Trång H¹t Gièng")
+		gf_AddItemEx2({ 2, 1, 30233, 75}, "Flour", "Hoat dong thang 9 nam 2010", "Plant Seed")
 	end
 	nTreeType = 0
 -----¸øÎïÆ·½±Àø£¬Ö»ÓÐ°×ÒøÊ÷¡¢»Æ½ðÊ÷ºÍ°×½ðÊ÷²Å¸ø
@@ -499,9 +499,9 @@ function getTree()
 			end
 			Msg2Player("B¹n nhËn ®­îc " .. nCount .. " " .. sItemName);	
 			if nTreeType ==1  then	
-				WriteLogEx("Hoat dong trong cay", "C©y HÐo óa", nCount, sItemName);
+				WriteLogEx("Hoat dong trong cay", "Withered Tree", nCount, sItemName);
 			elseif nTreeType == 2 then	
-				WriteLogEx("Hoat dong trong cay", "C©y BÊt Tö", nCount, sItemName);
+				WriteLogEx("Hoat dong trong cay", "Immortal Tree", nCount, sItemName);
 			elseif nTreeType == 3 then	
 				WriteLogEx("Hoat dong trong cay", "C©y B¹ch Ng©n", nCount, sItemName);
 			elseif nTreeType == 4 then	

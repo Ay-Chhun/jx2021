@@ -4,7 +4,7 @@ Include("\\script\\online\\viet_event\\vng_task_control.lua");
 function main()
 	local nDate =  tonumber(date("%y%m%d"))
 	if nDate < 110519 or nDate > 110602 then
-		Talk(1, "", "§· hÕt h¹n b×nh chän!")
+		Talk(1, "", "The voting period has ended!")
 		return
 	end
 	local szName = "ThÇn T­îng Vâ L©m"
@@ -171,7 +171,7 @@ function main()
 	
 	local szHeader = "<color=green>"..szName.." :<color>Chµo mõng quý ®ång ®¹o tham gia  cuéc thi <color=red>B×nh chän ho¹t ®éng Karaoke Vâ L©m 2<color>. H·y b×nh chän cho thÝ sinh mµ ®ång ®¹o c¶m thÊy Ên t­îng nhÊt trong danh s¸ch d­íi ®©y:"
 	
-	tinsert(tSay, "Xem h­íng dÉn/do_guide")
+	tinsert(tSay, "View guide/do_guide")
 	tinsert(tSay, "Ta chØ ghÐ ngang./do_nothing")
 	
 	Say(szHeader, getn(tSay), tSay)
@@ -179,7 +179,7 @@ end
 
 function do_vote(nType)
 
-	local szLogTitle = "B×nh chän Karaoke"
+	local szLogTitle = "Karaoke Vote"
 	local szName = "<color=green>ThÇn T­îng Vâ L©m :<color>"
 	
 	if GetLevel() < 77 then
@@ -203,7 +203,7 @@ function do_guide()
 	local tSay = {}
 	local szHeader = "<color=green>"..szName.." :<color> Ch­¬ng tr×nh b×nh chän ho¹t ®éng Karaoke diÔn ra tõ ngµy 19/05/2011 ®Õn 2/06/2011. Trong thêi gian b×nh chän, ®ång ®¹o cã thÓ sö dông ®¹o cô bã hoa chiÕn th¾ng ®Ó b×nh chän cho nh©n vËt ThÇn T­îng cña m×nh. Tõ bã hoa thø 1.001 trë ®i, ng­êi ch¬i chØ nhËn ®­îc ®iÓm b×nh chän. "
 	
-	tinsert(tSay, "Xem th«ng tin kh¸c/main")
+	tinsert(tSay, "View other information/main")
 	
 	Say(szHeader, getn(tSay), tSay)
 end
@@ -216,17 +216,17 @@ function WinFlower( nCount)
 	
 	local tVoteName =
 	{
-		"047 - TrÇn Phó",
+		"047 - Tran Phu",
 		"007 - Ph¹m Thµnh Nh©n",
-		"090 - TrÇn ThÞ BÝch Ph­îng",
+		"090 - Tran Thi Bich Phuong",
 		"067 - Th¸i §ç ChÝ Minh",
 		"068 - T« HuyÒn Trinh",
-		"064 - Vâ Huy Vinh",
-		"093 - Lª M¹nh C­êng",
-		"033 - Lª TuÊn Anh",
-		"015 - Mai NguyÔn Minh Huy",
-		"038 - Ph¹m ViÖt Dòng",
-		"050 - Qu¸ch Minh C­êng",
+		"064 - Vo Huy Vinh",
+		"093 - Le Manh Cuong",
+		"033 - Le Tuan Anh",
+		"015 - Mai Nguyen Minh Huy",
+		"038 - Pham Viet Dung",
+		"050 - Quach Minh Cuong",
 	}
 	
 	if  nCount < 1 or nCount > 999  then
@@ -267,13 +267,13 @@ function WinFlower( nCount)
 			SetTask(TSK_KARAOKE, GetTask(TSK_KARAOKE) + nWinFlower)
 			local nExp = nExpCount * 250000
 			ModifyExp(nExp)
-			Msg2Player("NhËn ®­îc  "..nExp.." ®iÓm kinh nghiÖm!")
+			Msg2Player("Received"..nExp.." ®iÓm kinh nghiÖm!")
 		end
 	end
 	
 	local nType  = GetTaskTemp(TSK_KARAOKETEMP)
 	
-	gf_WriteLogEx(szLogTitle, "Tham gia b×nh chän", nMark, tVoteName[nType])
+	gf_WriteLogEx(szLogTitle, "Join the voting", nMark, tVoteName[nType])
 	
 	Talk(1,"","Sè ®iÓm b¹n b×nh chän cho "..tVoteName[nType] .. " " .. nMark)
 end

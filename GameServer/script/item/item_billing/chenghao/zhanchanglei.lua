@@ -19,11 +19,11 @@ tTab =
 tRank = {
 	[0] = "Binh sÜ",
 	[1] = "Binh sÜ",
-	[2] = "HiÖu óy",
-	[3] = "§« thèng",
+	[2] = "Lieutenant",
+	[3] = "Commander",
 	[4] = "Tiªn phong",
 	[5] = "T­íng qu©n",
-	[6] = "Nguyªn So¸i",
+	[6] = "Marshal",
 	}
 function OnUse(nItemIdx)
 	local nTitleIdx = get_title_index(nItemIdx);
@@ -32,7 +32,7 @@ function OnUse(nItemIdx)
 		return 0;
 	end;
 	local selTab = {
-				format("§ång ý/#use_confirm(%d,%d)",nItemIdx,nTitleIdx),
+				format("Confirm/#use_confirm(%d,%d)",nItemIdx,nTitleIdx),
 				"Ta suy nghÜ l¹i!/nothing",
 				}
 	if check_player_state(nTitleIdx) == 1 then

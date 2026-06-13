@@ -8,9 +8,9 @@ function OnDeath(nNpcIndex)
 	local strName = GetNpcName(nNpcIndex);
 	local index = GetNpcTempData(nNpcIndex, 1)
 	local tTemp = {
-		{"Tiªu Xa Th­êng",10},
-		{"Tiªu Xa Quan Träng",11},
-		{"Tiªu Xa Qu©n Dông",12},
+		{"Standard Escort Cart",10},
+		{"Important Escort Cart",11},
+		{"Military Escort Cart",12},
 		{"Tiªu Xa C¬ MËt",13},
 		{"Tiªu Xa Hoµng Gia",14},
 	};

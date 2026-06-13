@@ -79,8 +79,8 @@ t_meridian_level_condition =
 							--{2, 95,  204, 20, "Ììî¸Áî"	},
 							--{2, 1, 30370, 20, "ÌìÃÅ½ðÁî"	},
 							{2, 1, 30730, 20, "Kinh M¹ch §ång Nh©n"},
-							{2, 1, 30351, 10, "Båi Nguyªn §¬n"},
-							{2, 1, 30458, 10, "Tô Linh Hoµn"},
+							{2, 1, 30351, 10, "Replenishing Origin Pill"},
+							{2, 1, 30458, 10, "Spirit-Gathering Pill"},
 						},
 				},
 		},
@@ -105,7 +105,7 @@ t_meridian_level_condition =
 		},
 	[6] = 
 		{
-			sz_name = "Vâ Th¸nh",
+			sz_name = "Martial Saint",
 		},
 }
 

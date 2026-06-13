@@ -8,7 +8,7 @@ function main()
 	if get_spring_festival_state() == 1 then
 		local strtab = {
 			"N¨m míi chóc tÕt/wind_action",
-			"Thu thËp ®å cæ/guwan_collect",
+			"Collect antiques/guwan_collect",
 			"NhËn hång bao n¨m míi/about_hongbao",
 			"NhËn h­íng dÉn ho¹t ®éng/get_action_manual",
 			"Ta chØ ®Õn xem thö/nothing"
@@ -41,7 +41,7 @@ function battle_is_finish()
 	local nState = getwindstate();
 	local nLv = GetLevel();
 	if nState ~= 1 then
-		Talk(1,"","Ch­a hÕt thêi gian, ®õng n«n nãng!");
+		Talk(1,"","Time is not up yet, do not be impatient!");
 		return
 	end
 	if nLv <= 10 then
@@ -69,7 +69,7 @@ function get_wind_task()
 		return
 	end		 
 	if nState ~= 1 or nWindStep > nActionStep then
-		Talk(1,"","Ch­a hÕt thêi gian, ®õng n«n nãng!");
+		Talk(1,"","Time is not up yet, do not be impatient!");
 		return
 	end
 	if GetTask(TASK_WIND_ID) ~= 0 and GetTask(TASK_WIND_ID) < nActionStep then
@@ -89,7 +89,7 @@ function get_wind_task()
 	
 	local nRand = random(1,getn(tWindNpc[nMapId][2]));
 	if CreateTrigger(4,tWindNpc[nMapId][3][nRand],WIND_TRIGGER_ID) == 0 then
-		WriteLog("[Ho¹t ®éng n¨m míi 08, kÕt nèi npc bŞ lçi]: Ng­êi ch¬i"..GetName().."ThiÕt lËp kÕt nèi npc CreateTrigge (4,tWindNpc[nMapId][3][nRand],WIND_TRIGGER_ID) ®· thÊt b¹i, trŞ WIND_TRIGGER_ID:"..WIND_TRIGGER_ID..". TrŞ tWindNpc[nMapId][3][nRand]:"..tWindNpc[nMapId][3][nRand]);
+		WriteLog("[Ho¹t ®éng n¨m míi 08, kÕt nèi npc bŞ lçi]: Ng­êi ch¬i"..GetName().."ThiÕt lËp kÕt nèi npc CreateTrigge (4,tWindNpc[nMapId][3][nRand],WIND_TRIGGER_ID) ®· thÊt b¹i, trŞ WIND_TRIGGER_ID:"..WIND_TRIGGER_ID..". tWindNpc[nMapId][3][nRand] value:"..tWindNpc[nMapId][3][nRand]);
 		return 0;	--´´½¨Ê§°Ü
 	end;	
 	SetTask(TASK_WIND_ID,nActionStep);
@@ -97,7 +97,7 @@ function get_wind_task()
 	SetTask(TASK_WIND_STEP,1);
 	SetTask(TASK_WIND_TABLE_IDX,nRand); 
 	Talk(1,"","Tèt, ®©y lµ b­íc thø nhÊt, <color=yellow>"..tWindNpc[nMapId][1].."-"..tWindNpc[nMapId][2][nRand].."<color> n¨m nay ®ãn tÕt mét m×nh trong thµnh, ng­¬i ®i chóc tÕt huynh Êy ®i. TiÖn thÓ hái huynh Êy xem cßn ai ®ãn tÕt mét m×nh kh«ng, chóng ta cïng ®i chóc tÕt!")
-	Msg2Player("B¹n ®· nhËn 1 nhiÖm vô chóc tÕt, chóc "..tWindNpc[nMapId][1].."-"..tWindNpc[nMapId][2][nRand].."Chóc tÕt.");
+	Msg2Player("B¹n ®· nhËn 1 nhiÖm vô chóc tÕt, chóc "..tWindNpc[nMapId][1].."-"..tWindNpc[nMapId][2][nRand].."Happy New Year.");
 end
 
 function finish_wind_task()
@@ -331,7 +331,7 @@ function about_wind_task()
 	local strtab = {
 		"H­íng dÉn ho¹t ®éng/about_wind_action",
 		"ThuyÕt minh phÇn th­ëng/about_wind_award",
-		"ChØ xem thö!/nothing"
+		"Just taking a look!/nothing"
 		};
 	Say("Ng­¬i muèn biÕt vÒ vÊn ®Ò g×?",
 		getn(strtab),
@@ -352,9 +352,9 @@ end
 
 function who_is_hero()
 	local strtab = {
-		"NhËn b÷a ¨n tÊt niªn/get_hero_drink",
+		"Receive the year-end feast/get_hero_drink",
 		"H­íng dÉn ho¹t ®éng vµ phÇn th­ëng/about_hero_drink",
-		"ChØ xem thö!/nothing"
+		"Just taking a look!/nothing"
 		}
 	Say("Ta ®· ®Æt tiÖc chiªu ®·i ch­ vŞ anh hïng h¶o h¸n t¹i §Ö NhÊt LÇu vµo ®ªm giao thõa, mêi ch­ vŞ ®Õn tham gia.",
 		getn(strtab),
@@ -386,8 +386,8 @@ function guwan_collect()
 	local strtab = {
 				"Dïng nh÷ng m¶nh vì ghĞp l¹i thµnh ®å cæ/suipian_cube_guwan",
 				"Ta muèn dïng ®å cæ ®æi phÇn th­ëng víi ng­¬i/guwan_change_award",
-				"H­íng dÉn quy t¾c thu gom ®å cæ/about_guwan_collect",
-				"ChØ xem thö!/nothing"
+				"Guide to the rules for collecting antiques/about_guwan_collect",
+				"Just taking a look!/nothing"
 				};
 	Say("Ta muèn tÆng 1 mãn ®å cæ cho b»ng h÷u ta, nh­ng vÉn ch­a t×m ®­îc mãn ®å ­ng ı, nÕu ng­¬i cã, ta sÏ träng träng cã th­ëng. §å cæ kh«ng nh­ nh÷ng ®å vËt kh¸c, tuy chØ vµi m¶nh vôn nh­ng vÉn cã gi¸ trŞ rÊt cao, ng­¬i cã thÓ ®­a cho ta thµnh phÈm hoÆc b¸n thµnh phÈm còng ®­îc.",
 		getn(strtab),
@@ -449,7 +449,7 @@ function ask_is_cube(nType)
 		end
 		tinsert(strtab,"Chän sai råi, trë l¹i/suipian_cube_guwan");
 		tinsert(strtab,"Ta sÏ quay l¹i lµm sau/nothing");
-		Say("§æi quy t¾c thµnh <color=yellow>"..tTingTong[nType][2].."c¸i"..tTingTong[nType][1].." vµ"..tTingTong[nType][7].."c¸i"..tTingTong[nType][6].."<color> hîp thµnh <color=yellow>"..tTingTong[nType][12].."c¸i"..tTingTong[nType][11].."<color>. Mçi lÇn ®æi ng­¬i cã <color=yellow>"..tTingTong[nType][16].."%<color> x¸c suÊt thµnh c«ng, nÕu thÊt b¹i, ng­¬i sÏ mÊt tÊt c¶ ®å vËt. Ng­¬i muèn ®æi bao nhiªu?",
+		Say("§æi quy t¾c thµnh <color=yellow>"..tTingTong[nType][2].."c¸i"..tTingTong[nType][1].." and"..tTingTong[nType][7].."c¸i"..tTingTong[nType][6].."<color> hîp thµnh <color=yellow>"..tTingTong[nType][12].."c¸i"..tTingTong[nType][11].."<color>. Mçi lÇn ®æi ng­¬i cã <color=yellow>"..tTingTong[nType][16].."%<color> x¸c suÊt thµnh c«ng, nÕu thÊt b¹i, ng­¬i sÏ mÊt tÊt c¶ ®å vËt. Ng­¬i muèn ®æi bao nhiªu?",
 				getn(strtab),
 				strtab);
 	end
@@ -493,10 +493,10 @@ function confirm_cube(nNum,nType)
 			end
 			if nSuccNum ~= 0 then
 				if nNeedNum ~= 1 then
-					Msg2Player("Chóc mõng b¹n ®· ®æi "..tTingTong[nType][11].." thµnh c«ng!");
-					Talk(1,"","Chóc mõng ng­¬i nhËn ®­îc <color=yellow>"..(tTingTong[nType][12]*nSuccNum).."c¸i"..tTingTong[nType][11].."<color>. Ng­¬i ®æi "..tTingTong[nType][11].." thµnh c«ng <color=yellow>"..nSuccNum.."<color> lÇn, thÊt b¹i "..(nNeedNum-nSuccNum).." lÇn.");	
+					Msg2Player("Congratulations, you have exchanged"..tTingTong[nType][11].." thµnh c«ng!");
+					Talk(1,"","Chóc mõng ng­¬i nhËn ®­îc <color=yellow>"..(tTingTong[nType][12]*nSuccNum).."c¸i"..tTingTong[nType][11].."<color>. You exchanged"..tTingTong[nType][11].." thµnh c«ng <color=yellow>"..nSuccNum.."<color> lÇn, thÊt b¹i "..(nNeedNum-nSuccNum).." lÇn.");	
 				else
-					Msg2Player("Chóc mõng b¹n ®· ®æi "..tTingTong[nType][11].." thµnh c«ng!");
+					Msg2Player("Congratulations, you have exchanged"..tTingTong[nType][11].." thµnh c«ng!");
 					Talk(1,"","Chóc mõng ng­¬i ®· ®æi "..tTingTong[nType][11].."Thµnh c«ng.");					
 				end
 			else
@@ -537,39 +537,39 @@ function ask_is_change(nType)
 				3,
 				"Ta muèn ®æi 1 m¶nh ®ång cÊp 1/#change_yijisuipian(1)",
 				"Ta muèn ®æi 50 m¶nh ®ång cÊp 1/#change_yijisuipian(50)",
-				"Kh«ng, ta nhÇm!/guwan_change_award");
+				"No, I made a mistake!/guwan_change_award");
 		else	
 			Say("Dïng m¶nh ®ång cÊp 1 cã thÓ ®æi <color=yellow>"..nExp.."<color> kinh nghiÖm, ®æi kh«ng? Mçi ng­êi cã thÓ nhËn tæng céng 1000 lÇn. ",
 				3,
 				"Ta muèn ®æi 1 m¶nh ®ång cÊp 1/#change_yijisuipian(1)",
 				"Ta muèn ®æi 50 m¶nh ®ång cÊp 1/#change_yijisuipian(50)",
-				"Kh«ng, ta nhÇm!/guwan_change_award");
+				"No, I made a mistake!/guwan_change_award");
 		end
 	elseif nType == 2 then
 		Say("Dïng Thanh §ång ®Ønh cÊp 4 cã thÓ ®æi <color=yellow>1 Thiªn Thêi Chó Gi¶i<color>, ®æi kh«ng? Mçi ng­êi cã thÓ nhËn tæng céng 100 lÇn. ",
 			2,
 			"õ, ta muèn ®æi./change_sijiding",
-			"Kh«ng, ta nhÇm!/guwan_change_award");
+			"No, I made a mistake!/guwan_change_award");
 	elseif nType == 3 then
 		Say("Dïng Thanh §ång ®Ønh cÊp 3 cã thÓ ®æi <color=yellow>1 NguyÖt Hoa hoÆc tïy ı 1 quyÓn sinh ho¹t kü n¨ng th­îng h¹n<color>, ®æi kh«ng? ",
 			2,
 			"õ, ta muèn ®æi./change_sanjiding",
-			"Kh«ng, ta nhÇm!/guwan_change_award");
+			"No, I made a mistake!/guwan_change_award");
 	elseif nType == 4 then
 		Say("Dïng Thanh §ång ®Ønh cÊp 2 cã thÓ ®æi <color=yellow>1 tinh NguyÖt Hoa (120 linh khİ th­îng h¹n vËt phÈm) hoÆc tïy ı 1 quyÓn sinh ho¹t kü n¨ng phèi ph­¬ng<color>, ®æi kh«ng? ",
 			2,
 			"õ, ta muèn ®æi./#change_erjiding(0)",
-			"Kh«ng, ta nhÇm!/guwan_change_award");
+			"No, I made a mistake!/guwan_change_award");
 	elseif nType == 5 then
 		Say("Dïng Thanh §ång ®Ønh cÊp 1 cã thÓ ®æi <color=yellow>trang bŞ Thiªn §Şa HuyÒn Hoµng<color>, ®æi kh«ng? ",
 			2,
 			"õ, ta muèn ®æi./chang_yijiding",
-			"Kh«ng, ta nhÇm!/guwan_change_award");
+			"No, I made a mistake!/guwan_change_award");
 	elseif nType == 6 then
 		Say("Dïng 2000 m¶nh ®ång cã thÓ ®æi <color=yellow>trang bŞ Thiªn §Şa HuyÒn Hoµng<color>, ®æi kh«ng? ",
 			2,
 			"õ, ta muèn ®æi./chang_tongqisuipian",
-			"Kh«ng, ta nhÇm!/guwan_change_award");
+			"No, I made a mistake!/guwan_change_award");
 	end					
 end
 
@@ -585,7 +585,7 @@ function change_yijisuipian(nNum)
 			return
 		end
 		if GetTask(TASK_TONGQI_AWARD)+nNum > 1000 then
-			Talk(1,"","Mçi ng­êi cã thÓ ®æi tæng céng 1000 lÇn, ng­¬i kh«ng thÓ ®æi "..nNum.." n÷a. ");
+			Talk(1,"","Mçi ng­êi cã thÓ ®æi tæng céng 1000 lÇn, ng­¬i kh«ng thÓ ®æi "..nNum.." any more.");
 			return
 		end
 		if DelItem(2,1,3211,nNum) == 1 then
@@ -633,7 +633,7 @@ function change_sanjiding()
 			"Luy Tæ Tµm Kinh (sö dông cÊp 79 may h¹ y giíi h¹n t¨ng ®Õn cÊp 99)/#confirm_change_sanjiding(4)",
 			"¢u D· Tóy Chó Kinh (sö dông cÊp 79 chÕ t¹o vò khİ ng¾n giíi h¹n t¨ng ®Õn cÊp 99)/#confirm_change_sanjiding(5)",
 			"Can T­íng Chó Kinh (sö dông cÊp 79 chÕ t¹o binh khİ dµi giíi h¹n t¨ng ®Õn cÊp 99)/#confirm_change_sanjiding(6)",
-			"Trang kÕ/change_sanjiding2",
+			"Next page/change_sanjiding2",
 			"T¹m thêi kh«ng ®æi. /nothing"					
 					}
 		Say("Xin mêi chän phÇn th­ëng muèn ®æi. ",
@@ -652,7 +652,7 @@ function change_sanjiding2()
 			"V¹n Thó Phæ (sö dông cÊp 79 kü n¨ng Thuéc da giíi h¹n t¨ng ®Õn ca61p)/#confirm_change_sanjiding(9)",
 			"Ngò Tµng S¬n Kinh (sö dông cÊp 79 kü n¨ng ®µo kho¸ng giíi h¹n t¨ng ®Õn cÊp 99)/#confirm_change_sanjiding(10)",
 			"M« MÉu Tµm Kinh (sö dông cÊp 79 kü n¨ng kĞo t¬ giíi h¹n t¨ng ®Õn cÊp 99)/#confirm_change_sanjiding(11)",
-			"Trang tr­íc/change_sanjiding",
+			"Previous page/change_sanjiding",
 			"T¹m thêi kh«ng ®æi. /nothing"					
 					}
 		Say("Xin mêi chän phÇn th­ëng muèn ®æi. ",
@@ -688,10 +688,10 @@ function change_erjiding(nPage)
 		tinsert(strtab,tErjiAward[nPage*nPageNum+i][1].."/#confirm_change_erjiding("..(nPage*nPageNum+i)..")");
 	end
 	if nPage ~= 0 then
-		tinsert(strtab,"Trang tr­íc/#change_erjiding("..(nPage-1)..")");
+		tinsert(strtab,"Previous page/#change_erjiding("..(nPage-1)..")");
 	end
 	if nRemaidNum > nPageNum	then
-		tinsert(strtab,"Trang kÕ/#change_erjiding("..(nPage+1)..")");
+		tinsert(strtab,"Next page/#change_erjiding("..(nPage+1)..")");
 	end  
 	tinsert(strtab,"T¹m thêi kh«ng ®æi. /nothing");
 	if GetItemCount(2,1,3214) < 1 then
@@ -755,10 +755,10 @@ end
 
 function ask_is_duihuan(nType,nWp,nLingqi)
 	local tTiandiName = {"Thiªn §Şa HuyÒn Hoµng Kh«i","Thiªn §Şa HuyÒn Hoµng Gi¸p ","GiÇy Thiªn §Şa HuyÒn Hoµng","Vò khİ Thiªn §Şa HuyÒn Hoµng"};
-	Say("X¸c nhËn sö dông linh khİ Thanh §ång ®Ønh cÊp 1 ®æi <color=yellow>"..nLingqi.."-"..tTiandiName[nType].."<color> chø?",
+	Say("X¸c nhËn sö dông linh khİ Thanh §ång ®Ønh cÊp 1 ®æi <color=yellow>"..nLingqi.."-"..tTiandiName[nType].."<color> ?",
 		3,
 		"õ, ta muèn ®æi./#confirm_change_yijiding("..nType..","..nWp..","..nLingqi..")",
-		"Kh«ng, ta nhÇm!/chang_yijiding",
+		"No, I made a mistake!/chang_yijiding",
 		"T¹m thêi kh«ng ®æi. /nothing"
 		)
 end
@@ -855,10 +855,10 @@ end
 
 function ask_is_duihuan_suipian(nType,nWp,nLingqi)
 	local tTiandiName = {"Thiªn §Şa HuyÒn Hoµng Kh«i","Thiªn §Şa HuyÒn Hoµng Gi¸p ","GiÇy Thiªn §Şa HuyÒn Hoµng","Vò khİ Thiªn §Şa HuyÒn Hoµng"};
-	Say("<color=green>Sø gi¶ n¨m míi<color>: Muèn sö dông 2000 m¶nh ®ång ®æi Linh Khİ thµnh<color=yellow>"..nLingqi.."-"..tTiandiName[nType].."<color> chø?",
+	Say("<color=green>Sø gi¶ n¨m míi<color>: Muèn sö dông 2000 m¶nh ®ång ®æi Linh Khİ thµnh<color=yellow>"..nLingqi.."-"..tTiandiName[nType].."<color> ?",
 		3,
 		"õ, ta muèn ®æi./#confirm_change_yijiding_suipian("..nType..","..nWp..","..nLingqi..")",
-		"Kh«ng, ta nhÇm!/chang_tongqisuipian",
+		"No, I made a mistake!/chang_tongqisuipian",
 		"T¹m thêi kh«ng ®æi. /nothing"
 		)
 end
@@ -942,7 +942,7 @@ function about_hongbao()
 	if nNum >= HONGBAO_TOTAL_NUM or (nNum < HONGBAO_TOTAL_NUM and nLv < 70)then
 		Say("<color=green>Sø gi¶ n¨m míi<color>: Chµo ®ãn n¨m míi, ta ®· chuÈn bŞ rÊt nhiÒu hång bao tÆng cho nh©n sÜ. Mçi ngµy lóc 9h00, 13h00, 19h30, 21h30 sÏ ph¸t 50 §¹i hång bao, ai ®Õn tr­íc nhËn tr­íc. §¹i hång bao chØ ph¸t cho ai tõ cÊp70. Nh÷ng thêi gian cßn l¹i mäi ng­êi ®Òu cã thÓ tóy ı ®Õn nhËn TiÓu hång bao, ai còng cã phÇn!",
 			2,
-			"§­îc/get_xiao_hongbao",
+			"Receive/get_xiao_hongbao",
 			"Ta sÏ quay l¹i sau!/nothing")
 	elseif nNum < HONGBAO_TOTAL_NUM and nLv >= 70 then
 		AddItem(2,1,212,1);

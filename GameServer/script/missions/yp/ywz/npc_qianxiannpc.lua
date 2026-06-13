@@ -33,7 +33,7 @@ function qxn_main()
 end
 
 function qxn_leave()
-	Say("QuyÕt ®Þnh muèn rêi khái DiÔn Vâ ChiÕn Tr­êng ngay kh«ng?", 2, "Tho¸t ngay/qxn_leave_do", "\nT«i chØ xem xem th«i/nothing")
+	Say("QuyÕt ®Þnh muèn rêi khái DiÔn Vâ ChiÕn Tr­êng ngay kh«ng?", 2, "Exit now/qxn_leave_do", "\nT«i chØ xem xem th«i/nothing")
 end
 
 function qxn_leave_do()
@@ -63,12 +63,12 @@ function qxn_GetProtectBuff_CB(nCount, sdb)
 	else
 		nBuff = 100;
 	end
-	Say(format("§é x©y dùng thÕ lùc ®¹t %d, cã thÓ nhËn ®­îc %d ®iÓm BUFF thuéc tÝnh ph¸ ®Þch", nValue, nBuff), 2, format("NhËn /#qxn_GetProtectBuff_Do(%d)", nBuff), "Hñy bá/nothing");
+	Say(format("§é x©y dùng thÕ lùc ®¹t %d, cã thÓ nhËn ®­îc %d ®iÓm BUFF thuéc tÝnh ph¸ ®Þch", nValue, nBuff), 2, format("Receive /#qxn_GetProtectBuff_Do(%d)", nBuff), "Cancel/nothing");
 end
 
 function qxn_GetProtectBuff_Do(nValue)
 	CastState("state_destiny_attack_point_add", nValue, 3600*18, 1, 10001, 1);
-	SyncCustomState(1, 10001, 1, "Phe thñ céng thªm");
+	SyncCustomState(1, 10001, 1, "Defending faction bonus");
 	Msg2Player(format("Chóc mõng b¹n nhËn ®­îc %d ®iÓm thuéc tÝnh ph¸ ®Þch", nValue));
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
@@ -90,7 +90,7 @@ function qxn_ItemExchgBuff()
 	}
 	local tSay = {};
 	for i = 1, getn(tItem) do
-		local section = format("Nép %d c¸i %s (t¨ng %d ®iÓm thuéc tÝnh ph¸ ®Þch)/#qxn_ItemExchgBuffDo(%d, %d)", tItem[i][1], "Anh Dòng Chøng", tItem[i][2], tItem[i][1], tItem[i][2])
+		local section = format("Nép %d c¸i %s (t¨ng %d ®iÓm thuéc tÝnh ph¸ ®Þch)/#qxn_ItemExchgBuffDo(%d, %d)", tItem[i][1], "Heroic Token", tItem[i][2], tItem[i][1], tItem[i][2])
 		tinsert(tSay, section);
 	end
 	tinsert(tSay, "\nT«i chØ xem xem th«i/nothing");
@@ -99,14 +99,14 @@ end
 
 function qxn_ItemExchgBuffDo(nNum, nValue)
 	if GetItemCount(2, 1,30969) < nNum then
-		Talk(1,"",format("trong hµnh trang, sè l­îng cña %s kh«ng ®ñ %d", "Anh Dòng Chøng", nNum))
+		Talk(1,"",format("trong hµnh trang, sè l­îng cña %s kh«ng ®ñ %d", "Heroic Token", nNum))
 		return 0;
 	end
 	if DelItem(2, 1, 30969, nNum) ~= 1 then
 		return 0;
 	end
 	CastState("state_destiny_attack_point_add", nValue, 3600*18, 1, 10002, 1);
-	SyncCustomState(1, 10002, 1, "Anh dòng céng thªm");
+	SyncCustomState(1, 10002, 1, "Heroic bonus");
 	Msg2Player(format("Chóc mõng b¹n nhËn ®­îc %d ®iÓm thuéc tÝnh ph¸ ®Þch", nValue));
 	PlaySound("\\sound\\sound_i016.wav");
 	SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
@@ -140,8 +140,8 @@ function qxn_rule()
 	local msg = "\n1. §iÒu kiÖn tham gia: Trong giai ®o¹n 1, ng­êi ch¬i n»m trong TOP 100 ®iÓm x©y dùng cña thÕ lùc. Thêi gian ho¹t ®éng: 20:00-21:00 thø 7 h»ng tuÇn.\n2. Ng­êi ch¬i kh«ng thÓ tÊn c«ng cê cña phe m×nh, sau khi ng­êi ch¬i thÕ lùc kh¸c ®¸nh b¹i cê sÏ lËp tøc t¹o míi thµnh cê cña thÕ lùc kh¸c, ng­êi ch¬i ®¸nh b¹i cê sÏ nhËn ®­îc 50 ®iÓm diÔn vâ.\n3. Trong ph¹m vi cê cña thÕ lùc, chØ cã ng­êi ch¬i cßn sèng cïng phe víi cê míi nhËn ®­îc ®iÓm diÔn vâ, mçi 5 gi©y nhËn ®­îc 3 ®iÓm diÔn vâ.\n4. NÕu trong thêi gian giai ®o¹n 2 cña ho¹t ®éng tiÕn hµnh ®æi thÕ lùc, th× ®iÓm diÔn vâ cña ng­êi ch¬i nµy chØ gi÷ l¹i 20%.\n5. PhÇn th­ëng xÕp h¹ng thÕ lùc vµ xÕp h¹ng c¸ nh©n ®Òu cÇn ®iÓm diÔn vâ c¸ nh©n cña ng­êi ch¬i ®¹t 300 ®iÓm míi ®­îc nhËn.\n6. Trong giai ®o¹n 2 cña ho¹t ®éng, khi ng­êi ch¬i tiªu diÖt ng­êi ch¬i thÕ lùc kh¸c sÏ nhËn ®­îc 2 ®iÓm diÔn vâ, khi mît ng­êi ch¬i liªn tôc tö vong 2 lÇn, nÕu trong vßng 3 phót bÞ ®¸nh b¹i lÇn n÷a th× ng­êi ®¸nh b¹i ng­êi ch¬i nµy sÏ kh«ng nhËn ®­îc ®iÓm diÔn vâ.\n7. Sau khi giai ®o¹n 2 b¾t ®Çu 5 phót, ®ãng truyÒn tèng ®Õn tÝnh n¨ng Ch­íng KhÝ S¬n Cèc.";
 	tbSay.msg = msg;
 	tbSay.sel = {
-		{"\n Ph¶n håi","main"},
-		{"\n Tho¸t ", "nothing"},
+		{"\n Feedback","main"},
+		{"\n Exit", "nothing"},
 	};
 	temp_Talk(tbSay);
 end

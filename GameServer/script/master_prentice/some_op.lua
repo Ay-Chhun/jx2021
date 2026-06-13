@@ -164,7 +164,7 @@ function _CheckInvite(nTargetIndex, nPrenticeCount, nMaxPrenticeCount)
 		nMTime = mod(nMTime, 3600)
 		local nMin = floor(nMTime / 60)
 		local nSec = mod(nMTime, 60)
-		Say("B¹n cßn <color=red>"..nHour.."h "..nMin.." Phót "..nSec.." gi©y <color>míi cã thÓ th©u n¹p 1 ®å ®Ö .", 0)
+		Say("B¹n cßn <color=red>"..nHour.."h "..nMin.." minutes"..nSec.." gi©y <color>míi cã thÓ th©u n¹p 1 ®å ®Ö .", 0)
 		return 0
 	end
 	
@@ -218,7 +218,7 @@ function _CheckInvite(nTargetIndex, nPrenticeCount, nMaxPrenticeCount)
 		nPTime = mod(nPTime, 3600)
 		local nMin = floor(nPTime / 60)
 		local nSec = mod(nPTime, 60)
-		Say(szTarName.."cßn ph¶i <color=red>"..nHour.."h "..nMin.." Phót "..nSec.."gi©y <color>míi cã thÓ b¸i s­ ", 0)
+		Say(szTarName.."cßn ph¶i <color=red>"..nHour.."h "..nMin.." minutes"..nSec.."gi©y <color>míi cã thÓ b¸i s­ ", 0)
 		return 0
 	end
 	
@@ -239,13 +239,13 @@ function _add_temp_member(nRet, nParam1, nParam2, szParam)
 			nParam1 = mod(nParam1, 3600)
 			local nMin = floor(nParam1 / 60)
 			local nSec = mod(nParam1, 60)
-			Say("B¹n cßn "..nHour.."h "..nMin.." Phót "..nSec.." gi©y míi cã thÓ th©u n¹p 1 ®å ®Ö.", 0)
+			Say("B¹n cßn "..nHour.."h "..nMin.." minutes"..nSec.." gi©y míi cã thÓ th©u n¹p 1 ®å ®Ö.", 0)
 		elseif nParam2 > 0 and szParam == "p" then
 			local nHour = floor(nParam2 / 3600)
 			nParam2 = mod(nParam2, 3600)
 			local nMin = floor(nParam2 / 60)
 			local nSec = mod(nParam2, 60)
-			Say("B¹n cßn "..nHour.."h "..nMin.." Phót "..nSec.." gi©y míi cã thÓ b¸i s­. ", 0)
+			Say("B¹n cßn "..nHour.."h "..nMin.." minutes"..nSec.." gi©y míi cã thÓ b¸i s­. ", 0)
 		end
 	elseif nRet == 12 or nRet == 13 then
 		if szParam == "m" then
@@ -320,16 +320,16 @@ function _graduate(nRet, nParam, szParam)
 			if n == nil then
 				AddItem(2, 1, 593, 1, 1)
 				CustomDataSave("mp_p_award_final", "d", 1)
-				WriteLog("[S­ §å - XuÊt S­]:"..GetName().."NhËn ®­îc 1 tói S­ ¢n Khã quªn")
+				WriteLog("[Master-Disciple - Leave Master]:"..GetName().."Received 1 Unforgettable Master Bag")
 				SaveNow()
 			end
 			Say("B¹n ®· ®ñ n¨ng lùc ®Ó tù hoµnh tÈu giang hå, s­ phô <color=yellow>"..szOtherName.."<color> tuy kh«ng nì xa b¹n, nh­ng ®µnh chia tay ®Ó b¹n rÌn luyÖn mét phen. B¹n ®· XuÊt S­.", 0)
 		elseif szParam == "m" then
-			Say("§å ®Ö <color=yellow>"..szOtherName.."<color> ®· XuÊt S­, ©n ®øc d­ìng dôc c¶ ®êi khã quªn. ", 0)
+			Say("Disciple <color=yellow>"..szOtherName.."<color> has Left the Master, the kindness of being nurtured a whole lifetime is unforgettable.", 0)
 			if nParam > 0 then
 				AddItem(2, 1, 589, nParam, 1)
-				Msg2Player("B¹n nhËn ®­îc "..nParam.." bæng léc Quèc Tö Gi¸m")
-				WriteLog("[S­ §å - XuÊt S­]:"..GetName().."NhËn ®­îc"..nParam.." bæng léc Quèc Tö Gi¸m")
+				Msg2Player("B¹n nhËn ®­îc "..nParam.." Imperial Academy stipend")
+				WriteLog("[Master-Disciple - Leave Master]:"..GetName().."Received"..nParam.." Imperial Academy stipend")
 				SaveNow()
 			end
 		end
@@ -338,10 +338,10 @@ end
 
 function _buyfund(nRet, nParam, szParam)
 	if nRet == 0 and szParam ~= "" then		-- Ê¦¸¸
-		Say("C¸c h¹ ®· mua cho <color=yellow>"..szParam.."<color> <color=yellow>"..nParam.."<color> Hoa Hång. Xin h·y chó ı tin tøc trªn b¶ng, nhËn bæng léc còng tiÕn hµnh trªn giao diÖn S­ ®å, cã chç nµo kh«ng hiÓu th× t×m ta",0)
+		Say("Your Lordship has bought for <color=yellow>"..szParam.."<color> <color=yellow>"..nParam.."<color> Hoa Hång. Xin h·y chó ı tin tøc trªn b¶ng, nhËn bæng léc còng tiÕn hµnh trªn giao diÖn S­ ®å, cã chç nµo kh«ng hiÓu th× t×m ta",0)
 		WriteLog("[HÖ thèng S­ ®å]: Mua Hoa Hång thµnh c«ng (m) m="..GetName().." p="..szParam.." n="..nParam)
 	elseif nRet == 0 and szParam == "" then	-- Í½µÜ
-		Say("LÖnh s­ ®· mua cho b¹n <color=yellow>"..nParam.."<color> Hoa Hång.",0)
+		Say("The master's order has bought for you <color=yellow>"..nParam.."<color> Hoa Hång.",0)
 		WriteLog("[HÖ thèng S­ ®å]: Mua Hoa Hång thµnh c«ng (p) m="..GetName().." p="..szParam.." n="..nParam)
 	elseif nRet ~= 0 and szParam ~= "" then	-- Ê¦¸¸£¬¶øÇÒ¹ºÂòÊ§°ÜÁË
 		AddItem(2,1,594,nParam*10,1)
@@ -374,18 +374,18 @@ function _m_getfund(nRet, nParam1, nParam2, szParam)
 		end
 			
 		AddItem(2,1,589,nParam2)
-		Msg2Player("B¹n ®· nhËn "..nParam2.." bæng léc Quèc Tö Gi¸m. ")
+		Msg2Player("B¹n ®· nhËn "..nParam2.." Imperial Academy stipend.")
 		SaveNow()
-		WriteLog("[S­ §å - bæng léc s­ phô]"..GetName().."§· nhËn "..nParam2.." bæng léc Quèc Tö Gi¸m")
+		WriteLog("[Master-Disciple - master's stipend]"..GetName().."§· nhËn "..nParam2.." Imperial Academy stipend")
 	end
 end
 
 function _finnalfund(nRet, nParam)
 	if nRet == 0 then
 		AddItem(2,1,589,nParam)
-		Say("B¹n ®· nhËn "..nParam.." bæng léc Quèc Tö Gi¸m. ", 0)
+		Say("B¹n ®· nhËn "..nParam.." Imperial Academy stipend.", 0)
 		SaveNow()
-		WriteLog("[S­ §å - Thu nhËp cuèi cïng cña s­ phô]"..GetName().."§· nhËn "..nParam.." bæng léc Quèc Tö Gi¸m")
+		WriteLog("[S­ §å - Thu nhËp cuèi cïng cña s­ phô]"..GetName().."§· nhËn "..nParam.." Imperial Academy stipend")
 	elseif nRet == 17 then
 		local nDiffTime = nParam
 		local nDay = floor(nDiffTime / 86400)
@@ -400,7 +400,7 @@ function _finnalfund(nRet, nParam)
 end
 
 function _free_change_point(nRet, nType, nPoint)
-	WriteLog("[S­ §å free_change_point] : "..GetName()..";"..nRet..";"..nType..";"..nPoint)
+	WriteLog("[Master-Disciple free_change_point] :"..GetName()..";"..nRet..";"..nType..";"..nPoint)
 	if nRet == 20 then
 		Msg2Player("B¹n kh«ng ®ñ ®iÓm S­ §å")
 	elseif nRet == 21 then
@@ -410,9 +410,9 @@ function _free_change_point(nRet, nType, nPoint)
 			local nMoney = 38000 * nPoint
 			Earn(nMoney)
 		elseif nType == 2 then			-- ÉùÍû
-			Msg2Player("Danh väng")
+			Msg2Player("Reputation")
 		elseif nType == 3 then			-- Ê¦ÃÅ¹±Ï×¶È
-			Msg2Player("§iÓm s­ m«n")
+			Msg2Player("Sect Points")
 		elseif nType == 4 then			-- ¾ü¹¦
 			SetRankPoint(5, 701, 1)	-- Ë¥¼õ²Ù×÷ÔÚSetRankPointµÄÊ±ºò²Å½øĞĞ,ËùÒÔÒªÏÈË¥¼õ,ÔÙ¿Û
 			CalcBattleRank()
@@ -437,7 +437,7 @@ function _free_change_point(nRet, nType, nPoint)
 end
 
 function _change_point(nRet, nType, nPoint)
-	WriteLog("[S­ §å change_point] : "..GetName()..";"..nRet..";"..nType..";"..nPoint)
+	WriteLog("[Master-Disciple change_point] :"..GetName()..";"..nRet..";"..nType..";"..nPoint)
 	if nRet == 20 then
 		Msg2Player("B¹n kh«ng ®ñ ®iÓm S­ §å")
 		AddItem(tItem[1],tItem[2],tItem[3],nPoint)	-- °ÑÃ»ÓĞ³É¹¦¶Ò»»µÄÊ¦Í½·ûÖ½»¹¸øÍæ¼Ò
@@ -448,9 +448,9 @@ function _change_point(nRet, nType, nPoint)
 			local nMoney = 38000 * nPoint
 			Earn(nMoney)
 		elseif nType == 2 then			-- ÉùÍû
-			Msg2Player("Danh väng")
+			Msg2Player("Reputation")
 		elseif nType == 3 then			-- Ê¦ÃÅ¹±Ï×¶È
-			Msg2Player("§iÓm s­ m«n")
+			Msg2Player("Sect Points")
 		elseif nType == 4 then			-- ¾ü¹¦¹¦
 			SetRankPoint(5, 701, 1)	-- Ë¥¼õ²Ù×÷ÔÚSetRankPointµÄÊ±ºò²Å½øĞĞ,ËùÒÔÒªÏÈË¥¼õ,ÔÙ¿Û
 			CalcBattleRank()
@@ -591,7 +591,7 @@ function _master_lalala(szRoleName)
 		return
 	end
 	DoScriptByName(szRoleName,"\\script\\master_prentice\\some_op.lua","_master_want_la", GetName())
-	Talk(1,"","B¹n ®· göi tin mêi "..szRoleName.."§· göi yªu cÇu h« ho¸n.")
+	Talk(1,"","B¹n ®· göi tin mêi "..szRoleName.."The summon request has been sent.")
 end
 
 function _tansfer_yes(nMapID, nX, nY, nFightState, nParam)
@@ -641,11 +641,11 @@ function _master_want_la(szRoleName)
 		return
 	end
 	if IsPlayerDeath() == 1 then
-		DoScriptByName(szRoleName,"\\script\\master_prentice\\some_op.lua","_master_want_la_err", szName.."®· tö vong")
+		DoScriptByName(szRoleName,"\\script\\master_prentice\\some_op.lua","_master_want_la_err", szName.." has died")
 		return
 	end
 	if IsStalling() == 1 then
-		DoScriptByName(szRoleName,"\\script\\master_prentice\\some_op.lua","_master_want_la_err", szName.."®ang bµy b¸n")
+		DoScriptByName(szRoleName,"\\script\\master_prentice\\some_op.lua","_master_want_la_err", szName.."is vending")
 		return
 	end
 	if IsReading() == 1 then
@@ -805,7 +805,7 @@ function master_prentice()
 	-- ×ªÕı
 	PlayerIndex = nMasterIndex
 	SetPlayerScript("\\script\\master_prentice\\some_op.lua")
-	Say(szName.."Muèn chİnh thøc b¸i b¹n lµm s­, quy nhËp m«n h¹ cña ban, cã ph¶i thu n¹p ®Ö tö chİnh thøc kh«ng?", 2 , "§ång ı/yes_add_true", "§Ó ta suy nghÜ!/refuse_add_true")
+	Say(szName.."Muèn chİnh thøc b¸i b¹n lµm s­, quy nhËp m«n h¹ cña ban, cã ph¶i thu n¹p ®Ö tö chİnh thøc kh«ng?", 2 , "Agree/yes_add_true", "Let me think it over!/refuse_add_true")
 	return 1
 end
 
@@ -910,7 +910,7 @@ function buy_fund()
 	
 	local nAlreadyBuy = tPInfo["lovefund"]
 	if tPInfo["lovefund"] >= 10 then
-		Say("C¸c h¹ ®· mua cho "..szPrenticeName.." 10 Hoa Hång. ",0)
+		Say("Your Lordship has bought for"..szPrenticeName.." 10 Hoa Hång. ",0)
 		return
 	end
 	if nAlreadyBuy < 0 then
@@ -921,7 +921,7 @@ function buy_fund()
 	Say(" C¸c h¹ muèn mua hoa cho <color=yellow>"..szPrenticeName.."<color> ph¶i kh«ng? Tr­íc ®©y c¸c h¹ ®· mua cho"..szPrenticeName.."<color=red>"..nAlreadyBuy.."<color> råi. Tèi ®a cßn cã thÓ mua thªm <color=red>"..nMaxBuy.."<color> n÷a, mçi phÇn 10 Tèng Nguyªn Th«ng B¶o. Tèng Nguyªn Th«ng B¶o do Th¸i tæ ®óc khi ®¨ng c¬, hiÖn nay trong d©n gian hiÕm thÊy, c¸c h¹ cã thÓ vµo Ngù c¸c ®Ó mua",
 		2,
 		"X¸c nhËn mua/#yes_buy_fund("..nMaxBuy..")",
-		"§Ó ta suy nghÜ!/no_say")
+		"Let me think about it!/no_say")
 end
 
 function yes_buy_fund(nMaxBuy)
@@ -936,7 +936,7 @@ function yes_buy_fund(nMaxBuy)
 		nMax = nMaxCanBuy
 	end
 	SetTaskTemp(26, nMax)
-	AskClientForNumber("yes_buy_fund_cb", 1, nMax, "Mua bao nhiªu hoa hång?")
+	AskClientForNumber("yes_buy_fund_cb", 1, nMax, "How many roses to buy?")
 end
 
 function yes_buy_fund_cb(nN)
@@ -982,7 +982,7 @@ function yes_buy_fund_cb(nN)
 	end
 	if DelItem(2,1,594,nCount) == 1 then
 		BuyLovefund(szPrenticeName, nN)
-		WriteLog("[HÖ thèng S­ ®å]: mua hoa hång m="..szMasterName.." p="..szPrenticeName.." n="..nN)
+		WriteLog("[Master-Disciple System]: buy roses m="..szMasterName.." p="..szPrenticeName.." n="..nN)
 	end
 end
 
@@ -1000,7 +1000,7 @@ function get_graduate_item()
 		if nDiffTime > 0 then		-- 60·ÖÖÓ²ÅÄÜÁìÈ¡Ò»´Î
 			local nMin = floor(nDiffTime / 60)
 			local nSec = mod(nDiffTime, 60)
-			Say("B¹n cßn cÇn "..nMin.." Phót "..nSec.."(gi©y) míi ®­îc l·nh 1 'XuÊt s­ tiªu'.", 0)
+			Say("B¹n cßn cÇn "..nMin.." minutes"..nSec.."(gi©y) míi ®­îc l·nh 1 'XuÊt s­ tiªu'.", 0)
 			return
 		end
 		CustomDataSave("mp_m_get_graduate_item_time", "d", nNow)
@@ -1024,7 +1024,7 @@ function use_point_r2s()
 		"Ta muèn l·nh phÇn th­ëng triÒu ®×nh/use_point_award",
 		"Ta muèn dïng S­ ®å phï chØ chuyÓn ®iÓm s­ ®å thµnh phÇn th­ëng/use_point_award1",
 		"Ta muèn ghi l¹i §iÓm S­ ®å thµnh §iÓm s­ ®øc/use_point_point",
-		"Rêi khái/no_say")
+		"Leave/no_say")
 end
 
 function use_point_award()
@@ -1042,10 +1042,10 @@ function use_point_award()
 		return
 	end
 	
-	Say("C¸c h¹ cã <color=yellow>"..nPoint.."<color> §iÓm S­ ®å, c¨n cø theo ®¼ng cÊp thô nghiÖp, triÒu ®×nh sÏ chuyÓn miÔn phİ <color=yellow>"..nCanChangePoint.."<color> §iÓm S­ ®å lµm phÇn th­ëng. LÇn nµy ng­¬i ®· chuyÓn qu¸ <color=yellow>"..nChangePoint.."<color> §iÓm S­ ®å, cã thÓ miÔn phİ chuyÓn <color=yellow>"..(nCanChangePoint - nChangePoint).."<color> §iÓm S­ ®å. Cã muèn triÒu ®×nh chuyÓn §iÓm S­ ®å miÔn phİ kh«ng?",
+	Say("Your Lordship has <color=yellow>"..nPoint.."<color> §iÓm S­ ®å, c¨n cø theo ®¼ng cÊp thô nghiÖp, triÒu ®×nh sÏ chuyÓn miÔn phİ <color=yellow>"..nCanChangePoint.."<color> §iÓm S­ ®å lµm phÇn th­ëng. LÇn nµy ng­¬i ®· chuyÓn qu¸ <color=yellow>"..nChangePoint.."<color> §iÓm S­ ®å, cã thÓ miÔn phİ chuyÓn <color=yellow>"..(nCanChangePoint - nChangePoint).."<color> §iÓm S­ ®å. Cã muèn triÒu ®×nh chuyÓn §iÓm S­ ®å miÔn phİ kh«ng?",
 		2,
 		"§Ó xem cã thÓ chän phÇn th­ëng nµo?/see_award_type",
-		"§Ó ta suy nghÜ!/no_say"
+		"Let me think about it!/no_say"
 		)
 end
 
@@ -1059,7 +1059,7 @@ function see_award_type()
 		--"½¡¿µ¾­Ñé/#yes_use_point(5)",
 		"Kinh nghiÖm. Mçi 1 ®iÓm S­ ®å cã thÓ ®æi ®¼ng cÊp*®¼ng cÊp*10 kinh nghiÖm/#yes_use_point(6)",
 		--"½¡¿µ¾­Ñé×ª¾­Ñé/#yes_use_point(7)",
-		"§Ó ta suy nghÜ!/no_say")
+		"Let me think about it!/no_say")
 end
 
 function yes_use_point(nType)
@@ -1076,7 +1076,7 @@ function yes_use_point(nType)
 	if nDiffPoint > nPoint then
 		nDiffPoint = nPoint
 	end
-	AskClientForNumber("yes_use_point_award_cb", 1, nDiffPoint, "ChuyÓn bao nhiªu §iÓm S­ ®å?")
+	AskClientForNumber("yes_use_point_award_cb", 1, nDiffPoint, "How many Master-Disciple Points to convert?")
 	SetTaskTemp(10, nType)
 end
 
@@ -1113,10 +1113,10 @@ function use_point_award1()
 		return
 	end
 	
-	Say("C¸c h¹ cã <color=yellow>"..nPoint.."<color>®iÓm, mçi lÇn ®æi 1 ®iÓm S­ ®å ph¶i mÊt 1 S­ ®å phï chØ. Muèn ®æi kh«ng?",
+	Say("Your Lordship has <color=yellow>"..nPoint.."<color>®iÓm, mçi lÇn ®æi 1 ®iÓm S­ ®å ph¶i mÊt 1 S­ ®å phï chØ. Muèn ®æi kh«ng?",
 		2,
 		"Ta muèn xem phÇn th­ëng/see_award_type1",
-		"§Ó ta suy nghÜ!/no_say"
+		"Let me think about it!/no_say"
 		)
 end
 
@@ -1130,7 +1130,7 @@ function see_award_type1()
 		--"½¡¿µ¾­Ñé/#yes_use_point(5)",
 		"Kinh nghiÖm. Mçi 1 ®iÓm S­ ®å cã thÓ ®æi ®¼ng cÊp*®¼ng cÊp*10 kinh nghiÖm/#yes_use_point1(6)",
 		--"½¡¿µ¾­Ñé×ª¾­Ñé/#yes_use_point(7)",
-		"§Ó ta suy nghÜ!/no_say")
+		"Let me think about it!/no_say")
 end
 
 function yes_use_point1(nType)
@@ -1140,7 +1140,7 @@ function yes_use_point1(nType)
 	end
 	local tInfo = GetMPBaseInfo()
 	local nPoint = tInfo["taskpoint"]
-	AskClientForNumber("yes_use_point_award1_cb", 1, nPoint, "§æi bao nhiªu §iÓm S­ ®å?")
+	AskClientForNumber("yes_use_point_award1_cb", 1, nPoint, "How many Master-Disciple Points to exchange?")
 	SetTaskTemp(10, nType)
 end
 
@@ -1177,8 +1177,8 @@ function use_point_point()
 	
 	Say("Ghi §iÓm s­ ®øc thµnh §iÓm S­ ®å ph¶i mÊt S­ ®å phï chØ, mçi <color=yellow>1<color> §iÓm s­ ®øc cÇn <color=yellow>1<color> S­ ®å phï chØ. §iÓm S­ ®å hiÖn t¹i lµ <color=yellow>"..nPoint.."<color> ®iÓm, muèn ghi §iÓm s­ ®øc kh«ng?",
 		2,
-		"Muèn chø/#yes_use_point_point("..nPoint..")",
-		"§Ó ta suy nghÜ!/no_say")
+		"Want to wait/#yes_use_point_point("..nPoint..")",
+		"Let me think about it!/no_say")
 end
 
 function yes_use_point_point(nPoint)
@@ -1186,7 +1186,7 @@ function yes_use_point_point(nPoint)
 		Say("C¸c h¹ ch­a cã S­ ®å phï chØ, chuÈn bŞ mét sè S­ ®å phï chØ ®em ®Õn, cã thÓ mua ë Ngù c¸c.",0)
 		return
 	end
-	AskClientForNumber("yes_use_point_point_cb", 1, nPoint, "Ghi bao nhiªu §iÓm s­ ®øc?")
+	AskClientForNumber("yes_use_point_point_cb", 1, nPoint, "How many Master Virtue Points to record?")
 end
 
 function yes_use_point_point_cb(nCount)
@@ -1201,28 +1201,28 @@ end
 
 t_specail_item =
 {
-	{2,1,2000,"L­u Tinh lÖ"," T¨ng 100 ®iÓm khi Linh th¹ch hîp thµnh",1},
+	{2,1,2000,"Meteor Tears"," T¨ng 100 ®iÓm khi Linh th¹ch hîp thµnh",1},
 	{2,1,2001,"Ngäc Tóy"," T¨ng 200 ®iÓm khi Linh th¹ch hîp thµnh",10},
-	{2,0,554,"Tu Ch©n YÕu QuyÕt"," T¨ng 1000 ®iÓm tu luyÖn",1},
-	{2,0,141,"Tiªu KiÕp t¸n"," TÈy 1 ®iÓm PK",3},
+	{2,0,554,"Xiu Zhen Yao Jue"," T¨ng 1000 ®iÓm tu luyÖn",1},
+	{2,0,141,"Tribulation Dispel Powder"," TÈy 1 ®iÓm PK",3},
 	{2,1,1091,"Cñ c¶i Vµng"," chuyÓn vËn",3},
-	{2,1,9995,"Gi¸n §iÖp trang"," §æi phe tham gia chiÕn tr­êng",3},
-	{2,1,1157,"§Êu hån"," T¨ng TrŞ s¸t khİ",15},
+	{2,1,9995,"Spy Outfit"," §æi phe tham gia chiÕn tr­êng",3},
+	{2,1,1157,"Soul Duel"," T¨ng TrŞ s¸t khİ",15},
 	{2,1,1103,"Thùc chiÕn kinh nghiÖm tËp"," VËt phÈm cÇn cho ho¹t ®éng thi luyÖn s­ m«n",4},
 	{2,0,553,"§¹i Nh©n s©m"," Tèc ®é söa MËt tŞch t¨ng gÊp 4 ",5},
 	{2,1,1014,"Lôc L©m Lang Yªn"," Kªu gäi B¾c Lôc L©m Minh chñ",15},
 	{2,1,1047,"Thñy Hoµng Bİ ChiÕu"," Kªu gäi Th­¬ng ThÇn Doanh Thiªn",15},
 	{2,1,1024,"Ngù dông b¹ch ngäc th¹ch"," Kªu gäi Bé Phi Yªn",15},
-	{2,1,1048,"Uyªn ¦¬ng Kim Ti B¹c"," Kªu gäi L·nh H­¬ng L¨ng",20},
-	{2,1,1015,"Vâ L©m bİ lÖnh"," Kªu gäi BOSS S­ m«n bÊt kú",30},
+	{2,1,1048,"Yuanyang Gold Silver Thread"," Summon Linh Huong Lang",20},
+	{2,1,1015,"Vâ L©m bİ lÖnh"," Summon a random Sect BOSS",30},
 	{2,1,504,"N÷ Oa Tinh Th¹ch"," Gì 1 yÕu quyÕt trªn trang bŞ MËt tŞch",120},
-	{2,1,540,"LÔ r­¬ng"," 50 lÔ kim kÕt h«n",60},
-	{2,0,125,"Héi Minh LÖnh Bµi"," LËp bang",150},
+	{2,1,540,"LÔ r­¬ng"," 50 ceremonial gold marriage knots",60},
+	{2,0,125,"Héi Minh LÖnh Bµi"," Found a guild",150},
 	{2,1,1003,"Kú L©n hoµn"," _Trªn cÊp 31 Danh väng ch­a ®¹t 3000 trùc tiÕp th¨ng 3000 Danh väng",600},
 	{2,1,1002,"Long HuyÕt hoµn"," Ng­êi thÊp h¬n cÊp 73 trùc tiÕp t¨ng ®Õn cÊp 73",1000},
 	{2,1,1004,"Phông HuyÕt hoµn"," §¼ng cÊp 72 trë lªn trùc tiÕp ®¹t 4000 ®iÓm cèng hiÕn s­ m«n",1200},
 	{2,1,1005,"ChiÕn ThÇn hoµn"," Trùc tiÕp th¨ng ChiÕn c«ng §« thèng",1500},
-	{0,105,19,"Siªu Quang"," VÜnh cöu - 100 con H¾c M·",5000},
+	{0,105,19,"Sieu Quang"," Permanent - 100 Black Horses",5000},
 	{2,21,2016,"Phèi th¹ch cÊp 5 (ngo¹i c«ng)"," _15% Vò khİ ngo¹i c«ng",2000},
 	{2,21,2021,"Phèi th¹ch cÊp 5 (néi c«ng)"," _15% Vò khİ néi c«ng",2000},
 	{2,21,2117,"Phèi th¹ch cÊp 5 (tèc ®é xuÊt chiªu)"," _25% tèc ®é",3000},
@@ -1235,7 +1235,7 @@ function use_fenglu(nStartIndex)
 	local nTabIndex = 1
 	if nStartIndex > 6 then
 		local n = nStartIndex - 6
-		tSay[nTabIndex] = "Trang tr­íc/#use_fenglu("..n..")"
+		tSay[nTabIndex] = "Previous page/#use_fenglu("..n..")"
 		nTabIndex = nTabIndex + 1
 	end
 	
@@ -1250,10 +1250,10 @@ function use_fenglu(nStartIndex)
 	end
 	
 	if nEnd < getn(t_specail_item) then
-		tSay[nTabIndex] = "Trang kÕ/#use_fenglu("..(nEnd + 1)..")"
+		tSay[nTabIndex] = "Next page/#use_fenglu("..(nEnd + 1)..")"
 		nTabIndex = nTabIndex + 1
 	end
-	tSay[nTabIndex] = "Rêi khái/no_say"
+	tSay[nTabIndex] = "Leave/no_say"
 	
 	Say("VËt phÈm hiÖn b¸n: <color>", getn(tSay), tSay)
 end
@@ -1265,7 +1265,7 @@ function buy_specail_item(nIndex)
 		return
 	end
 	SetTaskTemp(1, nIndex)
-	AskClientForNumber("buy_specail_item_cb", 1, floor(nMaxCount/t_specail_item[nIndex][6]), "Muèn mua bao nhiªu?")
+	AskClientForNumber("buy_specail_item_cb", 1, floor(nMaxCount/t_specail_item[nIndex][6]), "How many do you want to buy?")
 end
 
 function buy_specail_item_cb(nCount)
@@ -1280,15 +1280,15 @@ function buy_specail_item_cb(nCount)
 			AddItem(t_specail_item[nIndex][1], t_specail_item[nIndex][2], t_specail_item[nIndex][3], nCount)
 		end
 		Msg2Player("B¹n ®· mua "..nCount.."c¸i"..t_specail_item[nIndex][4])
-		WriteLog("[S­ ®å-Bæng léc]:"..GetName().."§· mua "..nCount.."c¸i"..t_specail_item[nIndex][4])
+		WriteLog("[Master-Disciple - Stipend]:"..GetName().."Bought"..nCount.."c¸i"..t_specail_item[nIndex][4])
 	end
 end
 
 function disband_master()
 	Say("Hñy bá ®¨ng kı b¹n sÏ mÊt th©n phËn s­ phô, tù bá ®i bæng léc ch­a nhËn, mÊt ®iÓm s­ ®øc, ®¼ng cÊp thô nghiÖp. C¸c h¹ muèn hñy bá kh«ng?",
 		2,
-		"§ång ı/yes_disband_master",
-		"Hñy bá/no_say")
+		"Agree/yes_disband_master",
+		"Cancel/no_say")
 end
 
 function yes_disband_master()
@@ -1350,7 +1350,7 @@ function ask_create_task(nType)
 	elseif nType == 7 then
 		strConfirm = "NhiÖm vô s­ ®å s¾p c«ng bè lÇn nµy lµ: thi 5 lÇn L«i ®µi ®¬n ®Êu hoÆc hoµn thµnh NhiÖm vô th­¬ng héi 20 lÇn, phÇn th­ëng ®å ®Ö: kinh nghiÖm (®¼ng cÊp*®¼ng cÊp*100)."
 	end
-	Say(strConfirm.."X¸c nhËn c«ng bè?",2, "§ång ı/#yes_create_task("..nType..")", "Giê ch­a muèn c«ng bè nhiÖm vô/no_say")
+	Say(strConfirm.."X¸c nhËn c«ng bè?",2, "Agree/#yes_create_task("..nType..")", "Giê ch­a muèn c«ng bè nhiÖm vô/no_say")
 end
 
 function yes_create_task(nType)

@@ -19,7 +19,7 @@ function main()
 		--format("ÎÒÒª²Î¼ÓÓ¢ĞÛÄÑ¶ÈµÄÌ«Ò»Ëş(¶Ó³¤ÏûºÄ%s)/Talk_2_IB", TYT_JOIN_COST_ITEM[2][2][2].."*"..TYT_JOIN_COST_ITEM[2][2][1][4]),
 		--"Ì«Ò»ËşÏµÁĞ¹Ø¿¨Ó¢ĞÛÄÑ¶È²Î¼ÓÌõ¼ş/Talk_5",
 		"¶i Th¸i NhÊt Th¸p céng thªm s¸t th­¬ng/Talk_6",
-		"Hñy bá/nothing",
+		"Cancel/nothing",
 	};
 	
 	if GetSex() == 1 then
@@ -238,5 +238,5 @@ function Talk_6()
 end
 
 function Talk_5()
-	suSay(g_szNpcName.."Trong Th¸i NhÊt Th¸p ch¾c cã c¬ quan trïng trïng, rÊt nguy hiÓm, ®¹i hiÖp ®· chuÈn bŞ s½n sµng ch­a? §iÒu kiÖn ®i vµo cöa ¶i bao gåm: \n	  cÇn tæ ®éi ®i vµo, thµnh viªn tæ ®éi lµ 4-8 ng­êi; \n	  sè l­u ph¸i tæ ®éi >= 4; \n	  ®¼ng cÊp tÊt c¶ gamer trong tæ ®éi >=90; \n	  tÊt c¶ gamer trong tæ ®éi ®· gia nhËp m«n ph¸i;", 2, "trë l¹i/main", "KÕt thóc/nothing");
+	suSay(g_szNpcName.."Trong Th¸i NhÊt Th¸p ch¾c cã c¬ quan trïng trïng, rÊt nguy hiÓm, ®¹i hiÖp ®· chuÈn bŞ s½n sµng ch­a? §iÒu kiÖn ®i vµo cöa ¶i bao gåm: \n	  cÇn tæ ®éi ®i vµo, thµnh viªn tæ ®éi lµ 4-8 ng­êi; \n	  sè l­u ph¸i tæ ®éi >= 4; \n	  ®¼ng cÊp tÊt c¶ gamer trong tæ ®éi >=90; \n	  tÊt c¶ gamer trong tæ ®éi ®· gia nhËp m«n ph¸i;", 2, "trë l¹i/main", "End/nothing");
 end

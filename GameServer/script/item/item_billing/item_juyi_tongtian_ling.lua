@@ -1,7 +1,7 @@
 Include("\\script\\lib\\globalfunctions.lua")
 
 need_item={
-	[209500208] = {2,95,208,"Tô NghÜa LÖnh"},
+	[209500208] = {2,95,208,"Token of Righteousness"},
 	[200130409] = {2,1,30409,"Th«ng Thiªn LÖnh"},
 }
 target_item = {2,97,236, "Thiªn Kiªu LÖnh"}
@@ -19,7 +19,7 @@ function OnUse(nItemIdx)
 		local szTitle = format("%s ®· kh«ng thÓ dïng, nh­ng cã thÓ ®æi thµnh mét sè %s, ®ång ý ®æi kh«ng?",szItemName, target_item[4])
 		local tbSay = {
 			format("Ta muèn ®æi /#_on_exchange(%d,%d)", nKey, nCount),
-			"Tõ bá/no"
+			"Goodbye/no"
 			}
 		Say(szTitle, getn(tbSay), tbSay)
 	end

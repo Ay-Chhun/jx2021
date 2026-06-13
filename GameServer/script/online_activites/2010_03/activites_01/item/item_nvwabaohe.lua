@@ -127,7 +127,7 @@ function OnUse(nItemIdx)
 	end
 
      if GetTask(VET_201003_01_TASK_USE_BAOHE_COUNT) == 100 and nDate <= 130120 then
-  		gf_AddItemEx2({2,1,30030, 50}, "TiÓu Nh­ Y1", "NIEN THU NHU Y", "hoµn thµnh 100 N÷ oa ")
+  		gf_AddItemEx2({2,1,30030, 50}, "Tieu Nhu Y1", "NIEN THU NHU Y", "hoµn thµnh 100 N÷ oa ")
      end 		
         --cdkey
         SendScript2VM("\\script\\function\\cdkey\\ck_head.lua", "_ck_UseItemNvWa()");

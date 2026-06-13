@@ -44,7 +44,7 @@ function main()
 			return 1;
 		else
 			tinsert(selTab,"Ta sÏ nhËn th­ëng/get_award");
-			tinsert(selTab,"Kh«ng cã g×/nothing");
+			tinsert(selTab,"Nothing/nothing");
 			sSaySth = "HiÖn giê b¹n cã thÓ nhËn phÇn th­ëng Gi¸ng Sinh, nÕu sau <color=yellow>"..Get_Time_String(XMAS_TREELIFETIME-nTimePassed).."<color> kh«ng nhËn, c©y th«ng sÏ biÕn mÊt.";
 			Say( sSaySth, getn(selTab), selTab );
 			return 1;
@@ -159,18 +159,18 @@ function get_jh_award()
 	local nrnd = random(1,100);
 	if nrnd < 24 then	-- 1¸öÊ¥µ®×° & 1000 exp
 		local tAward = {
-			{ {0, 108, 109, 1, 1}, "Nãn gi¸ng sinh chuÈn"},		
-			{ {0, 109, 109, 1, 1}, "Th­îng y gi¸ng sinh chuÈn"},	
-			{ {0, 110, 73,  1, 1}, "H¹ y Gi¸ng sinh chuÈn"},	
-			{ {0, 108, 110, 1, 1}, "Nãn gi¸ng sinh kh«i ng«"},		
-			{ {0, 109, 110, 1, 1}, "Gi¸ng sinh kh«i ng«"},	
+			{ {0, 108, 109, 1, 1}, "Standard Christmas Hat"},		
+			{ {0, 109, 109, 1, 1}, "Standard Christmas Top"},	
+			{ {0, 110, 73,  1, 1}, "Standard Christmas Bottom"},	
+			{ {0, 108, 110, 1, 1}, "Imposing Christmas Hat"},		
+			{ {0, 109, 110, 1, 1}, "Imposing Christmas Outfit"},	
 			{ {0, 110, 74,  1, 1}, "Trang phôc gi¸ng sinh kh«i ng«"},	
-			{ {0, 108, 111, 1, 1}, "Nãn gi¸ng sinh nhá"},		
-			{ {0, 109, 111, 1, 1}, "Th­¬ng y gi¸ng sinh KiÒu n÷"},	
-			{ {0, 110, 75,  1, 1}, "Gi¸ng sinh KiÒu n÷"},	
-			{ {0, 108, 112, 1, 1}, "Nãn gi¸ng sinh gîi c¶m"},		
-			{ {0, 109, 112, 1, 1}, "Th­¬ng y gi¸ng sinh gîi c¶m"},	
-			{ {0, 110, 76,  1, 1}, "H¹ y gi¸ng sinh n÷ gîi c¶m"},	
+			{ {0, 108, 111, 1, 1}, "Small Christmas Hat"},		
+			{ {0, 109, 111, 1, 1}, "Charming Women's Christmas Top"},	
+			{ {0, 110, 75,  1, 1}, "Charming Women's Christmas"},	
+			{ {0, 108, 112, 1, 1}, "Alluring Christmas Hat"},		
+			{ {0, 109, 112, 1, 1}, "Alluring Christmas Top"},	
+			{ {0, 110, 76,  1, 1}, "Alluring Women's Christmas Bottom"},	
 		};
 		award = tAward[random(1, getn(tAward))];
 		gf_SetLogCaption("xmas_tree");
@@ -192,11 +192,11 @@ function get_ml_award()
 	end
 	SetNpcLifeTime(GetTargetNpc(), 0);
 	local tAward = {
-		{ {1, 0, 9  , 5, 1}, "§¹i Hoµn ®¬n"     , 3, 5},	
+		{ {1, 0, 9  , 5, 1}, "Grand Restoration Pill"     , 3, 5},	
 		{ {1, 0, 4  , 5, 1}, "B¹ch V©n t¸n"     , 6, 9},
 		{ {1, 0, 14 , 5, 1}, "Ngäc Linh t¸n"     , 10, 15},
 		{ {1, 5, 1  ,10, 1}, "BiÖn Kinh Håi phï" , 16, 18},
-		{ {2, 0, 141, 1, 1}, "Tiªu KiÕp t¸n"     , 19, 21},
+		{ {2, 0, 141, 1, 1}, "Tribulation Dispel Powder"     , 19, 21},
 		{ {2, 1, 343, 1, 1}, "ThÇn N«ng §¬n"     , 22, 24},
 	}
 	for i = 1, getn(tAward) do

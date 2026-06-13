@@ -75,7 +75,7 @@ function ThuHoachHatGiong()
 	nhiemvuVBonus(1) --nhiÖm vô VBonus 07/2014
 	local nDate = tonumber(date("%y%m%d"))
 	if nDate >= 130524 and nDate <=130613 then		
-			gf_AddItemEx2({2,1,30512 , 100}, "Nguyªn liÖu Event ", "MAT LANH NGAY HE THANG 5", "Thu ho¹ch h¹t gièng")
+			gf_AddItemEx2({2,1,30512 , 100}, "Event Ingredients", "MAT LANH NGAY HE THANG 5", "Harvest seeds")
 	end
 	--=============== Chuçi nhiÖm vô Phôc Sinh 2 ====================
 	if PhucSinh2_CheckActive() == 1 and PhucSinh2_GetDailyMission() == 7 and PhucSinh2_GetMissionPart() > 0 then
@@ -139,7 +139,7 @@ function ThuHoachCayTuLinh()
 	
 	do return 0 end		--khóc d­íi kh«ng ch¹y n÷a
 	if VietCheckEvent() == 1 then
-		gf_AddItemEx2({2,1,30661 ,200}, "Nguyªn liÖu Event", "Hoat dong thang 06 nam 2014", "hoµn thµnh trång c©y Tø Linh")
+		gf_AddItemEx2({2,1,30661 ,200}, "Event materials", "Hoat dong thang 06 nam 2014", "hoµn thµnh trång c©y Tø Linh")
 		Msg2Player("B¹n nhËn ®­îc 200 Nguyªn LiÖu Event")
 	end		
 	--=============== Chi Ton Vuong Lenh New=========================
@@ -178,7 +178,7 @@ function KichHoatCayTuLinh()
 	gf_WriteLogEx("KICH HOAT CAY TU LINH 13/5/2013", "kick ho¹t thµnh c«ng", 1, "Kİch ho¹t C©y Tø Linh")	
 	local nDate = tonumber(date("%y%m%d"))
 	if nDate >= 130919 and nDate <=131013 then		
-			gf_AddItemEx2({2,1,30567 , 60}, "Nguyªn liÖu Event ", "Hoat dong thang 07 nam 2013", "Kich hoat c©y Tø Linh")
+			gf_AddItemEx2({2,1,30567 , 60}, "Event Ingredients", "Hoat dong thang 07 nam 2013", "Activate Four Spirits tree")
 	end	
 	-- chuçi nhiÖm vô Phôc Sinh PET
 	local nActive_CTL_PET_PS = floor(GetTask(TSK_PET_PS_GIAIDOAN_A)/10000000) --lÊy sè lÇn kİch ho¹t b¸t nh· nhá cña Pet Phôc Sinh
@@ -251,7 +251,7 @@ function Use_Award_NuOa_100()
 	local tbAward = {item ={
 			{gdp={2, 0, 553, 3}, name="§¹i Nh©n S©m", nExpired = 7*24*60*60},
 			{gdp={2, 0, 552, 3}, name="TiÓu Nh©n S©m", nExpired = 7*24*60*60},
-			{gdp={2, 0, 554, 3}, name="Tu Ch©n YÕu QuyÕt", nExpired = 7*24*60*60},},
+			{gdp={2, 0, 554, 3}, name="Xiu Zhen Yao Jue", nExpired = 7*24*60*60},},
 		nGold = 300000,
 		nPetExp = 20,
 		nPetLinhluc = 10,
@@ -417,17 +417,17 @@ function ThienMonTran_NhanThuong(nType)
 	--Add nguyªn liÖu Event
 	if nType == 4 then
 		if VietCheckEvent() == 1 then
-			gf_AddItemEx2({2,1,30741 ,1000}, "Nguyªn liÖu Event VIP TMT", "Hoat dong thang 11 nam 2014", "hoµn thµnh nhiÖm vô Thiªn M«n TrËn VIP")
+			gf_AddItemEx2({2,1,30741 ,1000}, "VIP TMT Event Material", "Hoat dong thang 11 nam 2014", "hoµn thµnh nhiÖm vô Thiªn M«n TrËn VIP")
 			Msg2Player("B¹n nhËn ®­îc 1000 Nguyªn LiÖu Event")
 		end		
 	end
 	------------------
 	local tbBonus = {
-		[0] = {item={{gdp={2,1,30340,1}, name="Méc R­¬ng"}}},
-		[1] = {item={{gdp={2,1,30340,3}, name="Méc R­¬ng"}}},
-		[2] = {item={{gdp={2,1,30340,6}, name="Méc R­¬ng"}}},
-		[3] = {item={{gdp={2,1,30340,10}, name="Méc R­¬ng"}}},
-		[4] = {item={{gdp={2,1,30340,14}, name="Méc R­¬ng"}}},
+		[0] = {item={{gdp={2,1,30340,1}, name="Wooden Chest"}}},
+		[1] = {item={{gdp={2,1,30340,3}, name="Wooden Chest"}}},
+		[2] = {item={{gdp={2,1,30340,6}, name="Wooden Chest"}}},
+		[3] = {item={{gdp={2,1,30340,10}, name="Wooden Chest"}}},
+		[4] = {item={{gdp={2,1,30340,14}, name="Wooden Chest"}}},
 	}
 	LIB_Award:Award(tbBonus[nType])
 	--============= Chuçi nhiÖm vô Phôc Sinh 2 =====================
@@ -490,8 +490,8 @@ function TaiNguyenChien_NhanThuong(nType)
 			[4] = {50},  -- Kh«ng sö dông qu©n c«ng
 			[5] = {1000}, -- VIP
 		}
-		gf_AddItemEx2({2,1,30742 ,  tMaterialQuantity2013[nType][1]}, "Nguyªn liÖu Event", "Hoat dong thang 11 nam 2014", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn lo¹i"..nType)
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity2013[nType][1].." Nguyªn liÖu Event")
+		gf_AddItemEx2({2,1,30742 ,  tMaterialQuantity2013[nType][1]}, "Event materials", "Hoat dong thang 11 nam 2014", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn lo¹i"..nType)
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity2013[nType][1].." Event materials")
 	end						
 ------------PhÇn th­ëng Hu©n Ch­¬ng Anh Hïng
 	local tbHCAnhHung = 
@@ -502,16 +502,16 @@ function TaiNguyenChien_NhanThuong(nType)
 			[4] = {0},
 			[5] = {4},
 		}
-		gf_AddItemEx2({2,1,30499 ,  tbHCAnhHung[nType][1]}, "Hu©n Ch­¬ng Anh Hïng", "TAI NGUYEN CHIEN NEW LOG", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn nhËn th­ëng HCAH")
-		Msg2Player("B¹n nhËn ®­îc "..tbHCAnhHung[nType][1].." Hu©n Ch­¬ng Anh Hïng")
+		gf_AddItemEx2({2,1,30499 ,  tbHCAnhHung[nType][1]}, "Hero's Medal", "TAI NGUYEN CHIEN NEW LOG", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn nhËn th­ëng HCAH")
+		Msg2Player("B¹n nhËn ®­îc "..tbHCAnhHung[nType][1].." Hero Medal")
 ------------
 	local tbBonus = {
-		[0] = {item={{gdp={2,1,30340,1}, name="Méc R­¬ng"}}},
-		[1] = {item={{gdp={2,1,30340,2}, name="Méc R­¬ng"}}},
-		[2] = {item={{gdp={2,1,30340,4}, name="Méc R­¬ng"}}},
-		[3] = {item={{gdp={2,1,30340,6}, name="Méc R­¬ng"}}},
-		[4] = {item={{gdp={2,1,30340,1}, name="Méc R­¬ng"}}}, -- Kh«ng sö dông qu©n c«ng
-		[5] = {item={{gdp={2,1,30340,10}, name="Méc R­¬ng"}}}, -- VIP
+		[0] = {item={{gdp={2,1,30340,1}, name="Wooden Chest"}}},
+		[1] = {item={{gdp={2,1,30340,2}, name="Wooden Chest"}}},
+		[2] = {item={{gdp={2,1,30340,4}, name="Wooden Chest"}}},
+		[3] = {item={{gdp={2,1,30340,6}, name="Wooden Chest"}}},
+		[4] = {item={{gdp={2,1,30340,1}, name="Wooden Chest"}}}, -- Kh«ng sö dông qu©n c«ng
+		[5] = {item={{gdp={2,1,30340,10}, name="Wooden Chest"}}}, -- VIP
 	}
 	LIB_Award:Award(tbBonus[nType])
 	--============= Chuçi nhiÖm vô Phôc Sinh 2 =====================
@@ -616,7 +616,7 @@ end
 function TriQuocBinhThienHa_NhanThuong(nType)
 	--Add nguyªn liÖu Event
 	if VietCheckEvent() == 1 then
-		gf_AddItemEx2({2,1,30741 ,200}, "Nguyªn liÖu Event", "Hoat dong thang 11 nam 2014", "hoµn thµnh nhiÖm vô TrŞ Quèc B×nh Thiªn H¹ lo¹i"..nType)
+		gf_AddItemEx2({2,1,30741 ,200}, "Event materials", "Hoat dong thang 11 nam 2014", "hoµn thµnh nhiÖm vô TrŞ Quèc B×nh Thiªn H¹ lo¹i"..nType)
 		Msg2Player("B¹n nhËn ®­îc 200 Nguyªn LiÖu Event")
 	end		
 	
@@ -720,7 +720,7 @@ function ThitNuong_NhanThuong()
 	----------------------------------	
 	do return 0 end		--khóc d­íi kh«ng ch¹y n÷a	
 	if VietCheckEvent() == 1 then
-		gf_AddItemEx2({2,1,30660 ,50}, "Nguyªn liÖu Event", "Hoat dong thang 06 nam 2014", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2,1,30660 ,50}, "Event materials", "Hoat dong thang 06 nam 2014", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 50 Nguyªn LiÖu Event")
 	end			
     	-----------------------NhiÖm vô hµng ngµy CTVL
@@ -977,15 +977,15 @@ end
 
 function VBonus_BatNhaLon()
 	local tbFruite = {
-		[1] = {"Nh·n" , 30164},			[2] = {"Ch«m Ch«m", 30165},		[3] = {"Cam", 30165},		[4] = {"Dõa", 30167},
-		[5] = {"M¨ng Côt", 30168},		[6] = {"M·ng cÇu", 30179},			[7] = {"Khãm", 30180},	[8] = {"Lª", 30181},
-		[9] = {"Bßn Bon", 30182},		 [10] = {"KhÕ", 30183},				[11] = {"B­ëi", 30169},	[12] = {"D©u", 30170},
-		[13] = {"Chuèi", 30171},			[14] = {"Xoµi", 30172},				[15] = {"§µo", 30173},	[16] = {"MËn", 30174},
-		[17] = {"V¶i", 30175},				[18] = {"T¸o", 30176},				[19] = {"B¬", 30177},		[20] = {"§u §ñ", 30178},
+		[1] = {"Longan" , 30164},			[2] = {"Rambutan", 30165},		[3] = {"Cam", 30165},		[4] = {"Coconut", 30167},
+		[5] = {"Mangosteen", 30168},		[6] = {"Soursop", 30179},			[7] = {"Pineapple", 30180},	[8] = {"Li", 30181},
+		[9] = {"Langsat", 30182},		 [10] = {"Star Fruit", 30183},				[11] = {"Pomelo", 30169},	[12] = {"Strawberry", 30170},
+		[13] = {"Banana", 30171},			[14] = {"Mango", 30172},				[15] = {"Peach", 30173},	[16] = {"Plum", 30174},
+		[17] = {"Lychee", 30175},				[18] = {"Apple", 30176},				[19] = {"Avocado", 30177},		[20] = {"Papaya", 30178},
 		}
 	if CheckVbonus() == 1 then
 		local nIndex = random(1,20)
-		gf_AddItemEx2({2, 1, tbFruite[nIndex][2], 2}, tbFruite[nIndex][1], "NHAN THUONG VBONUS BK", "tr¸i c©y")
+		gf_AddItemEx2({2, 1, tbFruite[nIndex][2], 2}, tbFruite[nIndex][1], "NHAN THUONG VBONUS BK", "fruit")
 	end
 end
 

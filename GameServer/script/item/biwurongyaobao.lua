@@ -31,18 +31,18 @@ function get_item()
 	SetTask(336,GetTask(336)+20);--20µãÊ¦ÃÅ¹±Ï×¶È
 	Msg2Player("NhËn ®­îc 20 ®iÓm cèng hiÕn s­ m«n");
 	AddItem(2,1,2642,1);--1¸ö±¦Ê¯°ü¹ü
-	Msg2Player("NhËn ®­îc 1 Tói b¶o th¹ch");
+	Msg2Player("Received 1 Gemstone Bag");
 end;
 
 function get_random_item(nUseTime)
 	local nRand = random(1,100);
 	if nRand <= 10 then	--1¸öÏû½ÙÉ¢¡ª¡ª10%£¨Ã¿¿ª5¸ö°ü±ØµÃ£©
 		AddItem(2,0,141,1);
-		Msg2Player("NhËn ®­îc 1 Tiªu KiÕp T¸n");
+		Msg2Player("Received 1 Tieu Kiep Tan");
 	end;
 	if mod(nUseTime,5) == 0 then
 		AddItem(2,0,141,1);
-		Msg2Player("NhËn ®­îc 1 Tiªu KiÕp T¸n");
+		Msg2Player("Received 1 Tieu Kiep Tan");
 	end;
 	--================================================================
 	nRand = random(1,100);
@@ -80,7 +80,7 @@ function get_random_item(nUseTime)
 		Msg2Player("NhËn ®­îc 1 Linh th¹ch cÊp 7, ®· bá vµo Tô Linh ®Ønh");
 	end;
 	Msg2Player("§©y lµ lÇn thø "..nUseTime.." lÇn dïng Tói vinh dù §¹i héi tû vâ");
-	WriteLog("[Tói vinh dù §¹i héi tû vâ]:"..GetName().."thø"..nUseTime.." lÇn dïng Tói vinh dù §¹i héi tû vâ");
+	WriteLog("[Tói vinh dù §¹i héi tû vâ]:"..GetName().."the"..nUseTime.." lÇn dïng Tói vinh dù §¹i héi tû vâ");
 end;
 
 function nothing()

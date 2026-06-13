@@ -145,7 +145,7 @@ function main()
 	
 	local szHeader = "<color=green>"..szName.." :<color>Chµo mõng quý ®ång ®¹o tham gia b×nh chän cuéc thi <color=red>ThÇn t­îng ©m nh¹c Vâ L©m 2<color>. H·y b×nh chän cho thÝ sinh mµ ®ång ®¹o c¶m thÊy Ên t­îng nhÊt trong danh s¸ch d­íi ®©y:"
 	
-	tinsert(tSay, "Xem h­íng dÉn/do_guide")
+	tinsert(tSay, "View guide/do_guide")
 	tinsert(tSay, "Ta chØ ghÐ ngang./do_nothing")
 	
 	Say(szHeader, getn(tSay), tSay)
@@ -155,14 +155,14 @@ function do_vote(nType)
 	local tVoteName =
 	{
 		"62 - D­¬ng TuÊn Tó",
-		"17 - Vò ThÞ Thanh Nhµn",
-		"15 - NguyÔn H¶i An",
-		"48 - TrÇn H÷u Ph­íc",
+		"17 - Vo Thi Thanh Nhan",
+		"15 - Nguyen Hai An",
+		"48 - Tran Huu Phuoc",
 		"213 - Ph¹m Minh Ch©u",
-		"52 - Ng« §×nh Giang TriÒu",
-		"230 - NguyÔn Minh HiÒn",
+		"52 - Ngo Dinh Giang Trieu",
+		"230 - Nguyen Minh Hien",
 		"276 - Ph¹m Ngäc Thïy Dung",
-		"206 - TrÇn Kiªn",
+		"206 - Tran Kien",
 		"280 - Tr­¬ng NhÊt CÈm Thy",
 	}
 	local szLogTitle = "JX2 Idol"
@@ -209,8 +209,8 @@ function do_vote(nType)
 		SetTask(JX2_IDOL_TASK, GetTask(JX2_IDOL_TASK) + 1)
 		ModifyExp(1000000)
 		Msg2Player("NhËn ®­îc 1000000 ®iÓm kinh nghiÖm!")
-		Talk(1,"","B×nh chän cho "..tVoteName[nType])
-		gf_WriteLogEx(szLogTitle, "Tham gia b×nh chän", 1, tVoteName[nType])
+		Talk(1,"","Vote for"..tVoteName[nType])
+		gf_WriteLogEx(szLogTitle, "Join the voting", 1, tVoteName[nType])
 	end
 end
 
@@ -219,7 +219,7 @@ function do_guide()
 	local tSay = {}
 	local szHeader = "<color=green>"..szName.." :<color> Ch­¬ng tr×nh b×nh chän ThÇn T­îng Vâ L©m diÔn ra tõ ngµy 16/08/2010 ®Õn 29/08/2010. Trong thêi gian b×nh chän, ®ång ®¹o cã thÓ sö dông ®¹o cô Hoa Hång ®á ®Ó b×nh chän cho nh©n vËt ThÇn T­îng cña m×nh, mçi hoa hång sÏ mang vÒ 1 ®iÓm b×nh chän cho ThÇn T­îng, mçi ngµy cã thÓ b×nh chän ®­îc 10 lÇn. Mçi b×nh chän thµnh c«ng sÏ nhËn phÇn th­ëng kinh nghiÖm. \nHoa Hång cã thÓ thu thËp khi hoµn thµnh nhiÖm vô thu thËp tµi nguyªn chiÕn, trång h¹t gièng, trång c©y b¸t nh· nhá, sö dông N÷ Oa B¶o H¹p."
 	
-	tinsert(tSay, "Xem th«ng tin kh¸c/main")
+	tinsert(tSay, "View other information/main")
 	
 	Say(szHeader, getn(tSay), tSay)
 end

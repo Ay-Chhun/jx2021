@@ -4,7 +4,7 @@ Include("\\script\\online_activites\\task_values.lua");
 Include("\\script\\task_access_code_def.lua")
 
 CR_TEMPLATE = "Giang hÂ hµo ki÷t";
-CR_NAME = "Xa phu Æ u tr≠Íng tuy’t";
+CR_NAME = "Snow Battlefield Coachman";
 
 SB_START_TIME = {2014, 12, 17, 0, 0, 0}
 SB_END_TIME = {2015, 1, 1, 0, 0, 0}
@@ -71,10 +71,10 @@ SB_DIALOG_BOSS_NAME = "Thi™n S¨n Tuy’t Y™u";
 SB_ATTACK_BOSS_TEMPLATE = "BOSS tuy’t y™u chi’n Æ u";
 SB_ATTACK_BOSS_NAME = "Thi™n S¨n Tuy’t Y™u";
 SB_MONSTER1_TEMPLATE = "Tuy’t qu∏i 1";
-SB_MONSTER1_NAME = "Ti”u Tuy’t Qu∏i";
+SB_MONSTER1_NAME = "Small Snow Monster";
 SB_MONSTER1_COUNT = 20;
 SB_MONSTER2_TEMPLATE = "Tuy’t qu∏i 3";
-SB_MONSTER2_NAME = "ßπi Tuy’t Qu∏i";
+SB_MONSTER2_NAME = "Great Snow Monster";
 SB_MONSTER2_COUNT = 4;
 SB_MONSTER_COUNT_PER_WAVE = getn(SB_MonsterSpawnPointList) * (SB_MONSTER1_COUNT+SB_MONSTER2_COUNT)
 
@@ -180,24 +180,24 @@ function SB_HandleRandItem()
 		if gf_GetMyTaskByte(SB_TASK_ITEM_LIMIT, 1, 2) >= 200 then
 			return 0;
 		end
-		gf_AddItemEx2(tAward[nIndex][3], tAward[nIndex][4], "ß∏nh trÀn tuy’t", "Ti”u Tuy’t Qu∏i", 0, 1)
+		gf_AddItemEx2(tAward[nIndex][3], tAward[nIndex][4], "ß∏nh trÀn tuy’t", "Small Snow Monster", 0, 1)
 		gf_SetMyTaskByte(SB_TASK_ITEM_LIMIT, 1, 2, gf_GetMyTaskByte(SB_TASK_ITEM_LIMIT, 1, 2) + 1, TASK_ACCESS_CODE_CHRISTMASSNOWDOWN)
 	elseif nIndex == 2 then
 		if gf_GetMyTaskByte(SB_TASK_ITEM_LIMIT, 3, 4) >= 200 then
 			return 0;
 		end
-		gf_AddItemEx2(tAward[nIndex][3], tAward[nIndex][4], "ß∏nh trÀn tuy’t", "Ti”u Tuy’t Qu∏i", 0, 1)
+		gf_AddItemEx2(tAward[nIndex][3], tAward[nIndex][4], "ß∏nh trÀn tuy’t", "Small Snow Monster", 0, 1)
 		gf_SetMyTaskByte(SB_TASK_ITEM_LIMIT, 3, 3, gf_GetMyTaskByte(SB_TASK_ITEM_LIMIT, 3, 3) + 1, TASK_ACCESS_CODE_CHRISTMASSNOWDOWN)
 	end
 end
 
 function SB_HandleBothItem()
 	if gf_GetMyTaskByte(SB_TASK_ITEM_LIMIT, 1, 2) < 200 then
-		gf_AddItemEx2({2,1,30747,1}, "HÈp Trang Tr› Gi∏ng Sinh", "ß∏nh trÀn tuy’t", "Ti”u Tuy’t Qu∏i", 0, 1)
+		gf_AddItemEx2({2,1,30747,1}, "HÈp Trang Tr› Gi∏ng Sinh", "ß∏nh trÀn tuy’t", "Small Snow Monster", 0, 1)
 		gf_SetMyTaskByte(SB_TASK_ITEM_LIMIT, 1, 2, gf_GetMyTaskByte(SB_TASK_ITEM_LIMIT, 1, 2) + 1, TASK_ACCESS_CODE_CHRISTMASSNOWDOWN)
 	end
 	if gf_GetMyTaskByte(SB_TASK_ITEM_LIMIT, 3, 4) < 200 then
-		gf_AddItemEx2({2,1,30683,1}, "L´i Vi™m Thπch", "ß∏nh trÀn tuy’t", "Ti”u Tuy’t Qu∏i", 0, 1)
+		gf_AddItemEx2({2,1,30683,1}, "L´i Vi™m Thπch", "ß∏nh trÀn tuy’t", "Small Snow Monster", 0, 1)
 		gf_SetMyTaskByte(SB_TASK_ITEM_LIMIT, 3, 4, gf_GetMyTaskByte(SB_TASK_ITEM_LIMIT, 3, 4) + 1, TASK_ACCESS_CODE_CHRISTMASSNOWDOWN)
 	end
 end
@@ -522,7 +522,7 @@ function SB_TestKillAll()
 	local npcIndices = GetMapNpcIdx(SubWorldIdx2ID(SubWorld));
 	for i=1, getn(npcIndices) do
 		local npcName = GetNpcName(npcIndices[i]);
-		if npcName == "Ti”u Tuy’t Qu∏i" or npcName == "ßπi Tuy’t Qu∏i" then
+		if npcName == "Small Snow Monster" or npcName == "Great Snow Monster" then
 			Death(npcIndices[i]);
 		end
 	end

@@ -6,12 +6,12 @@ Include("\\script\\online\\viet_event\\200909\\2\\mission_head.lua");
 Include("\\script\\lib\\globalfunctions.lua");
 
 t_denglong_sets20101201 = {
-	[0] = {"ThiÕu L©m", {204, 1526, 3269}},--ÐÇÆÚÈÕ
+	[0] = {"Shaolin", {204, 1526, 3269}},--ÐÇÆÚÈÕ
 	[1] = {"Nga My", {303, 1552, 3232}},--ÐÇÆÚÒ»
 	[2] = {"§­êng M«n", {305, 1530, 2921}},--ÐÇÆÚ¶þ
-	[3] = {"C¸i Bang", {209, 1515, 3265}},--ÐÇÆÚÈý
-	[4] = {"Vâ §ang", {312, 1707, 3477}},--ÐÇÆÚËÄ
-	[5] = {"Ngò §éc", {407, 1555, 3286}},--ÐÇÆÚÎå
+	[3] = {"Beggars' Sect", {209, 1515, 3265}},--ÐÇÆÚÈý
+	[4] = {"Wudang", {312, 1707, 3477}},--ÐÇÆÚËÄ
+	[5] = {"Five Poisons", {407, 1555, 3286}},--ÐÇÆÚÎå
 	[6] = {"D­¬ng M«n", {219, 1655, 3301}},--ÐÇÆÚÁù
 };
 
@@ -22,7 +22,7 @@ function MS_InitMission()
 	MS_ChangeMSState(MS_STATE_STARTED);
 	local nMSUID = MS_CreateMSUID();	--´´½¨Ò»¸öMissionÎ¨Ò»ID
 	SetMissionV(MV_MISSION_UID,nMSUID);
-	gf_WriteLog(LOG_HEAD,"Mission ®· b¾t ®Çu, MSUID:"..nMSUID);
+	gf_WriteLog(LOG_HEAD,"Mission has started, MSUID:"..nMSUID);
 end;
 --Mission¿ªÊ¼
 function MS_StartMission()
@@ -34,7 +34,7 @@ function MS_EndMission()
 	local nMSUID = GetMissionV(MV_MISSION_UID);
 	mf_DelAllMSPlayer(MISSION_ID,CAMP_ALL);	--´ÓMissionÀïÃæÉ¾³ýËùÓÐµÄÍæ¼Ò
 	mf_ClearMissionData();
-	gf_WriteLog(LOG_HEAD,"Mission ®· kÕt thóc, MSUID:"..nMSUID);
+	gf_WriteLog(LOG_HEAD,"Mission has ended, MSUID:"..nMSUID);
 end;
 --Àë¿ªMission
 function MS_LeaveMission()	
@@ -80,9 +80,9 @@ function MS_ProcessStartedTimer()
 		-- tham sè 6: ®iÓm HP
 		local tBossParam = {
 			    [1] = {"Thá MËp", 25, "Thá MËp", "\\script\\online\\viet_event\\200909\\2\\death_pangtuzi.lua", 10, 600},   --24
-            	[2] = {"chicken_viet", 25, "Gµ MËp", "\\script\\online\\viet_event\\200909\\2\\death_ji.lua", 10, 600},  --24
-            	[3] = {"dark_viet",  25, "VÞt MËp", "\\script\\online\\viet_event\\200909\\2\\death_ya.lua", 10, 600},  --24
-            	[4] = {"ship_viet", 25, "Dª MËp", "\\script\\online\\viet_event\\200909\\2\\death_yang.lua", 10, 600},  --24
+            	[2] = {"chicken_viet", 25, "Fat Chicken", "\\script\\online\\viet_event\\200909\\2\\death_ji.lua", 10, 600},  --24
+            	[3] = {"dark_viet",  25, "Fat Duck", "\\script\\online\\viet_event\\200909\\2\\death_ya.lua", 10, 600},  --24
+            	[4] = {"ship_viet", 25, "Fat Goat", "\\script\\online\\viet_event\\200909\\2\\death_yang.lua", 10, 600},  --24
             	
             	-- [5] = {"§¹i Niªn Thó", 96, "§¹i Niªn Thó", "\\script\\online\\viet_event\\200909\\2\\death_niansou.lua", 1, 30 * 60}   	 -- 4
 		}		

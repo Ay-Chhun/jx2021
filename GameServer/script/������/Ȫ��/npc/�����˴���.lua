@@ -6,7 +6,7 @@ function main()
 		palyer_sex = "N÷ hiÖp "
 	end
 	if day_num_return() < prize_use_start_time or day_num_return() > prize_use_end_time then
-		Say("VŞ "..palyer_sex.."NÕu muèn x­ng b¸ vâ l©m th× cÇn ph¶i rÌn luyÖn thªm.",
+		Say("Position"..palyer_sex.."NÕu muèn x­ng b¸ vâ l©m th× cÇn ph¶i rÌn luyÖn thªm.",
 		1,
 		"Ta biÕt råi/end_dialog")
 	else
@@ -14,7 +14,7 @@ function main()
 	3,
 	"Ta muèn ®Õn Hoa S¬n/goto_huashan",
 	"T×m hiÓu vÒ ho¹t ®éng cña tÕt Trïng D­¬ng/double_nineth_con",
-	"KÕt thóc ®èi tho¹i/end_dialog"
+	"End dialogue/end_dialog"
 	)
 	end
 end

@@ -12,7 +12,7 @@ function Preliminary:addPlayer()
 		return Talk(1, "", format("Nh©n sè cïng tæ ®éi kh«ng qu¸ %d ng­êi tæ ®éi míi cã thÓ tham gia liªn ®Êu vßng lo¹i!",WARTEAM_SIZE));
 	end
 	if GetCaptainName() ~= GetName() then
-		Talk(1, "", "CÇn ®éi tr­ëng thao t¸c!");
+		Talk(1, "", "The team leader must perform the action!");
 		return 0;
 	end
 	local fightTeamID = GetFightTeamID() or 0;

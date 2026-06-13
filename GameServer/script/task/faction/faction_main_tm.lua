@@ -32,7 +32,7 @@ end
 function task_003()
 
 local strMain = {
-	"Mäi viÖc cø theo ı l·o l·o vËy.",
+	"I will do everything as the old one wishes.",
 	"§­îc råi! Ta sÏ s¾p xÕp mäi viÖc cho ng­¬i. Tæng qu¶n phßng thuèc <color=yellow>§­êng Xu©n<color> ®ang chÕ 1 lo¹i thuèc míi, cã thÓ sÏ cÇn ng­¬i. H·y ®Õn ®ã thö xem!"
 }
 
@@ -52,7 +52,7 @@ function task_005()
 
 local strMain = {
 	"Ng­¬i ®Õn lµm t¹p dŞch hay lµm thuèc?",
-	"Lµm T¹p dŞch/task_005_01",
+	"Do odd jobs/task_005_01",
 	"Ng­êi phèi d­îc/task_005_02",
 	"Kh«ng lµm/task_005_03"
 }
@@ -94,7 +94,7 @@ end
 
 -- ÓëÌÆ´º¶Ô»°½áÊøºó¸Ä±äÈÎÎñ±äÁ¿£º3
 function task_005_add()
-	TaskTip("§­êng Xu©n b¶o b¹n t×m R¨ng sãi x¸m!");
+	TaskTip("Tang Chun asks you to find Grey Wolf Fangs!");
 	SetTask(1005,3);
 end
 

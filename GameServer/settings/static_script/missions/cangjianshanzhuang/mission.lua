@@ -194,7 +194,7 @@ function stageFight0:onTalk()
 		local strtab = {
 			"\n më ¶i thø 1: S¸t thñ Binh M· Dòng/#stageFight0.gotoOne(1)",
 			"\n rêi ¶i/ttd_askClose",
-			"\nKÕt thóc ®èi tho¹i/nothing"
+			"\nEnd conversation/nothing"
 		};
 		Say("Giang BiÖt H¹c: C¸c vÞ ®ång ®¹o khëi hµnh ®­îc ch­a?",
 			getn(strtab),
@@ -484,7 +484,7 @@ function stageFight1_2:onTalk()
 		local strtab = {
 			"\n më ¶i thø 2: KiÕm Tròng C¬ Quan/#stageFight1_2.gotoTwo(1)",
 			"\n rêi ¶i/ttd_askClose",
-			"\nKÕt thóc ®èi tho¹i/nothing"
+			"\nEnd conversation/nothing"
 		};
 		Say("Giang BiÖt H¹c: chuÈn bÞ tÊn c«ng.",
 			getn(strtab),
@@ -781,7 +781,7 @@ function stageFight2_3:onTalk()
 		local strtab = {
 			"\n më ¶i thø 3: Hé KiÕm KiÕm Linh/#stageFight2_3.gotoThree(1)",
 			"\n rêi ¶i/ttd_askClose",
-			"\nKÕt thóc ®èi tho¹i/nothing"
+			"\nEnd conversation/nothing"
 		};
 		Say("Giang BiÖt H¹c: Ha… mau ph¸ hñy 2 Phong Ên ®i.",
 			getn(strtab),
@@ -1098,7 +1098,7 @@ function stageFight3_4:onTalk()
 		local strtab = {
 			"\n më ¶i thø 4: Ma KiÕm/#stageFight3_4.gotoFour(1)",
 			"\n rêi ¶i/ttd_askClose",
-			"\nKÕt thóc ®èi tho¹i/nothing"
+			"\nEnd conversation/nothing"
 		};
 		Say("Giang BiÖt H¹c: Ha…ha…chØ cßn l¹i B¹ch Hæ Phong Ên .",
 			getn(strtab),
@@ -1507,7 +1507,7 @@ function stageFight9:onTalk()
 	if strNpcName ==this.szNpc_renyingying and ttd_isCaption() == 1 then
 		local strtab = {
 				"\n rêi khái V¹n KiÕm Tròng/_all_pass_leave",
-				"\nKÕt thóc ®èi tho¹i/nothing"
+				"\nEnd conversation/nothing"
 			};
 		Say("<color=green>NhËm Doanh Doanh<color>: cha, con nhÊt ®Þnh cøu cha ra.",
 			getn(strtab),

@@ -112,7 +112,7 @@ local nFactionID = GetPlayerFaction();
 		if nFactionID ~= 0 then
 			myTitel = PlayerFactionTitle[nFactionID][2];
 		else
-			myTitel = "C´ n≠¨ng"
+			myTitel = "Young lady"
 		end;
 	end;
 	
@@ -147,24 +147,24 @@ PlayerFactionTitle = {
 	[2]={"ßπo tr≠Îng","ßπo tr≠Îng"},
 
 	-- ∂Î√º
-	[3]={"","C´ n≠¨ng"},
+	[3]={"","Young lady"},
 
 	-- ÿ§∞Ô
-	[4]={"Thi’u hi÷p","C´ n≠¨ng"},
+	[4]={"Thi’u hi÷p","Young lady"},
 	
 	-- Ã∆√≈
-	[5]={"Thi’u hi÷p","C´ n≠¨ng"},
+	[5]={"Thi’u hi÷p","Young lady"},
 	
 	-- —Ó√≈
 	[6]={"T≠Ìng qu©n","T≠Ìng qu©n"},
 	
 	-- ŒÂ∂æ
-	[7]={"Thi’u hi÷p","C´ n≠¨ng"},
+	[7]={"Thi’u hi÷p","Young lady"},
 	-- ¿•¬ÿ
 	[8]={"ßπo tr≠Îng",""},
 	-- √˜ΩÃ
-	[9]={"Thi’u hi÷p","C´ n≠¨ng"},
+	[9]={"Thi’u hi÷p","Young lady"},
 	-- ¥‰—Ã
-	[10]={"","C´ n≠¨ng"},
+	[10]={"","Young lady"},
 
 }

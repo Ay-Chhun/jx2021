@@ -39,8 +39,8 @@ function goods_add()
 	--ÎïÆ·Ôö¼ÓÒÔ¼°Ïà¹Ølog
 	local add_flag = AddItem(2,1,572,goods_num)
 	if add_flag == 1 then
-		Msg2Player("Chóc mõng b¹n ®· ®æi ®­îc råi."..goods_num.." Uyªn ¦¬ng KÕt!")
+		Msg2Player("Chóc mõng b¹n ®· ®æi ®­îc råi."..goods_num.." Yuanyang Knot!")
 	else
-		WriteLog("§æi Uyªn ¦¬ng KÕt: Ng­êi ch¬i ["..GetName().."] §æi Uyªn ¦¬ng KÕt thÊt b¹i, kı hiÖu thÊt b¹i: "..add_flag)
+		WriteLog("Exchange Yuanyang Knot: Player ["..GetName().."] §æi Uyªn ¦¬ng KÕt thÊt b¹i, kı hiÖu thÊt b¹i: "..add_flag)
 	end
 end

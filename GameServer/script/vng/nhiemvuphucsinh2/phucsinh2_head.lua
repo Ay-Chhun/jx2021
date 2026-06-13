@@ -53,13 +53,13 @@ tbPhucSinh2Name = {
 	[3] = {"Tiªu diÖt 200 Sa M¹c Hµnh Nh©n", 200, 2},
 	[4] = {"Tiªu diÖt 200 XÝch LuyÖn Háa Hå", 200, 2},
 	[5] = {"Tiªu diÖt 200 TiÓu Lam Xoa Quû", 200, 2},
-	[6] = {"Nép 02 Tói H¹t Gièng", 1,1},
+	[6] = {"Turn in 02 Bags of Seeds", 1,1},
 	[7] = {"Thu ho¹ch thµnh c«ng 10 H¹t Gièng", 10, 0},
 	[8] = {"Nép 10 b¸t nh· nhá", 1, 1},
 	[9] = {"Thu ho¹ch thµnh c«ng 10 b¸t nh· nhá", 10, 0},
 	[10] = {"Nép 08 b¸t nh· lín", 1, 1},
 	[11] = {"Thu ho¹ch thµnh c«ng 10 b¸t nh· lín", 10, 0},
-	[12] = {"Nép 08 c©y tø linh", 1, 1},
+	[12] = {"Turn in 08 Four Spirits Trees", 1, 1},
 	[13] = {" Thu ho¹ch thµnh c«ng 10 c©y tø linh", 10, 0},
 	[14] = {"Nép 30 Thanh long qu¶", 1, 1},
 	[15] = {"Nép 30 HuyÒn Vò C¨n", 1, 1},
@@ -92,14 +92,14 @@ tbPhucSinh2Name = {
 }
 
 tbNguyenLieuThuThap = {
-	[1] = {1,1,19,666, "T©y B¾c Väng", 17},		-- {nG, nD, nP, nQty, szItemName, nBit}
+	[1] = {1,1,19,666, "Northwest Gaze", 17},		-- {nG, nD, nP, nQty, szItemName, nBit}
 	[2] = {1,1,17,666, "Minh NguyÖt D¹", 18},
-	[3] = {1,1,15, 1999, "B¸nh Bét vµng", 19},
+	[3] = {1,1,15, 1999, "Golden Flour Cake", 19},
 	[4] = {2,2,8,3999, "Thiªn th¹ch", 20},
 	[5] = {2,2,7, 3999, "M¶nh Thiªn th¹ch", 21},
 --	[6] = {2,1,1009,299, "Thiªn Th¹ch Tinh Th¹ch", 22},
 	[6] = {2,1,1005,6, "ChiÕn ThÇn Hoµn", 22},
-	[7] = {2,1,30499,200, "Hu©n Ch­¬ng Anh Hïng", 23},
+	[7] = {2,1,30499,200, "Hero's Medal", 23},
 }
 	
 function PhucSinh2_CheckActive() -- KiÓm tra tr¹ng th¸i nhËn thö th¸ch: 1 = ®· nhËn

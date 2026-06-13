@@ -21,7 +21,7 @@ function OnUse()
 			"T¹i h¹ cÇn ghÐp Hång Kú víi Hoµng Kim Th¹ch (nhËn ®­îc Hoµng Kim Kú hoÆc B¹ch Kim Kú)/JQ_GroupRedAndStone",
 			"NhËn Ng«i Sao B¹c (nhËn tõ 18h – 19h, tõ thø hai ®Õn thø s¸u hµng tuÇn)./JQ_GetSilverStar",
 			"T×m hiÓu th«ng tin sù kiÖn/JQ_GetInfo",
-			"KÕt thóc ®èi tho¹i/JQ_DoNothing"
+			"End the conversation/JQ_DoNothing"
 		)
 end
 
@@ -69,7 +69,7 @@ function JQ_GetSilverStar()
 		end
 	
 	-----ÅÐ¶Ï±³°üºÍ¸ºÖØ------------------------
-	if gf_Judge_Room_Weight(1, 0, "Xin lçi, ") == 0 then
+	if gf_Judge_Room_Weight(1, 0, "Sorry,") == 0 then
 		return 0;
 	end
 	
@@ -77,8 +77,8 @@ function JQ_GetSilverStar()
 	local nSilverStarCount = GSSTARS_PARAM[floor(GetLevel() / 10)][2];
 	--¿ÉÒÔ¸øÒøÐÇÐÇÁË
 	if AddItem(2, 1, 30077, nSilverStarCount) == 1 then
-				Msg2Player("B¹n nhËn ®­îc " .. nSilverStarCount .. "c¸i" .. "Ng«i Sao b¹c");
-				WriteLog("[Ho¹t ®éng ng«i sao vµng ng«i sao b¹c th¸ng 4]:" .. GetName() .. "NhËn ®­îc" .. "!!" .. nSilverStarCount .. "c¸i" .. "Ng«i Sao b¹c");
+				Msg2Player("B¹n nhËn ®­îc " .. nSilverStarCount .. "c¸i" .. "Silver Star");
+				WriteLog("[Ho¹t ®éng ng«i sao vµng ng«i sao b¹c th¸ng 4]:" .. GetName() .. "Received" .. "!!" .. nSilverStarCount .. "c¸i" .. "Silver Star");
 			--¸øÍêÒøÐÇÐÇºó£¬¸üÐÂÏÂÁÐÖµ£º
 			SetTask(GSSTARS_TASK_GET_SSTARS_DATE, nDate);
 			SetTask(GSSTARS_TASK_GET_SSTARS_TIME, GetTime());
@@ -95,10 +95,10 @@ function JQ_GetInfo()
 	Say(
 			"Sù kiÖn 30/4 n¨m nay bao gåm c¸c ho¹t ®éng sau ®©y::",
 			4,
-			"Sù kiÖn 30 th¸ng 4/#JQ_EventDetail(1)",
-			"Trång c©y 1 th¸ng 5/#JQ_EventDetail(2)",
+			"April 30th Event/#JQ_EventDetail(1)",
+			"May 1st Tree Planting/#JQ_EventDetail(2)",
 			"Ng«i Sao Vµng/#JQ_EventDetail(3)",
-			"KÕt thóc ®èi tho¹i/JQ_DoNothing"
+			"End the conversation/JQ_DoNothing"
 		)
 end
 

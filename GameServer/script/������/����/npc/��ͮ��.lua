@@ -16,7 +16,7 @@ function main()
 		tSay = aah_GetSayDialog(tonumber(v));
 	end
 	if getn(tSay) > 0 then
-		tinsert(tSay, "Ra khái/nothing")
+		tinsert(tSay, "Leave/nothing")
 		Say("<color=green>Phïng §ång Nhi<color>: Ng­¬i cã nh×n thÊy ®oµn ng­êi ngùa ngoµi thµnh kh«ng? Ng­êi dÉn ®Çu tªn L«i Th¾ng, ng­¬i ®· nh×n thÊy ch­a?", getn(tSay), tSay);
 		return 
 	end

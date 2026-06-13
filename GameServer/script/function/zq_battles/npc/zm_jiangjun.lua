@@ -23,7 +23,7 @@ function main()
 end
 
 function leave_zq_battle()
-	Say(format("<color=green>%s:<color>",GetNpcName(GetTargetNpc())).."X¸c ®Þnh rêi khái n¬i nµy?", 2, "\nX¸c nhËn/leave_ensure", "\n rót lui/do_nothing");
+	Say(format("<color=green>%s:<color>",GetNpcName(GetTargetNpc())).."X¸c ®Þnh rêi khái n¬i nµy?", 2, "\nX¸c nhËn/leave_ensure", "\nWithdraw/do_nothing");
 end
 
 function leave_ensure()

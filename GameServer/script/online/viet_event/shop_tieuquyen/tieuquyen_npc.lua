@@ -61,7 +61,7 @@ function get_sliver_exp(nSelect)
 		end
 		if DelItem(2,1,198,tSilver_Exp[nSelect][1]) == 1 then
 			SetTask(TSK_SILVER_2_EXP,nCurExp + tSilver_Exp[nSelect][2])
-			gf_EventGiveCustomAward(1,tSilver_Exp[nSelect][2] * 1000,1,"Shop Tien Le","®æi")			
+			gf_EventGiveCustomAward(1,tSilver_Exp[nSelect][2] * 1000,1,"Shop Tien Le","exchange")			
 		end	
 	else	
 		Talk(1,"","§iÓm kinh nghiÖm tÝch lòy v­ît qu¸ 500000000 ®iÓm, h·y ®æi møc thÊp h¬n!")
@@ -112,7 +112,7 @@ function get_sliver_item(nSelect)
 		elseif nSelect == 7 then
 			gf_SetTaskByte(TSK_EXCHANGE_HONGBAO,BYTE_EXCHANGE_HONGBAO_BIG,gf_GetTaskByte(TSK_EXCHANGE_HONGBAO,BYTE_EXCHANGE_HONGBAO_BIG) + 1)		
 		end
-		gf_AddItemEx2(tSliver_Exchange[nSelect][3],tSliver_Exchange[nSelect][2],"Shop Tien Le","®æi",tSliver_Exchange[nSelect][4])	
+		gf_AddItemEx2(tSliver_Exchange[nSelect][3],tSliver_Exchange[nSelect][2],"Shop Tien Le","exchange",tSliver_Exchange[nSelect][4])	
 	end
 end
 
@@ -128,7 +128,7 @@ function exchange_sliver(nSelect)
 			return
 		end
 		if DelItem(2,0,1,1) ==1 then
-			gf_AddItemEx2({2,1,198,EXCHANGE_RATE},"TiÒn LÎ","Shop Tien Le","®æi")
+			gf_AddItemEx2({2,1,198,EXCHANGE_RATE},"TiÒn LÎ","Shop Tien Le","exchange")
 		end	
 	elseif nSelect == 2 then
 		if GetItemCount(2,1,199) < 1 then
@@ -136,7 +136,7 @@ function exchange_sliver(nSelect)
 			return
 		end
 		if DelItem(2,1,199,1) ==1 then
-			gf_AddItemEx2({2,1,198,BIG_EXCHANGE_RATE},"TiÒn LÎ","Shop Tien Le","®æi")
+			gf_AddItemEx2({2,1,198,BIG_EXCHANGE_RATE},"TiÒn LÎ","Shop Tien Le","exchange")
 		end	
 	else
 		return

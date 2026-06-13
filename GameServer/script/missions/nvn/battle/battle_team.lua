@@ -29,7 +29,7 @@ MV_TEAM_FIGHTER = {
 	MV_TEAM_FIGHTER_2,
 }
 
-CampName = {"§éi ®á", "§éi xanh"}
+CampName = {"Red Team", "Blue Team"}
 
 --======================================================================================
 -- ×¼±¸½×¶Î
@@ -37,7 +37,7 @@ CampName = {"§éi ®á", "§éi xanh"}
 phaseTeamFight_waiting = {
 	maxsecond = 60,
 	guage = {
-		msg = "§îi më", 
+		msg = "Waiting to open", 
 		time = 60, 
 		cyc = 0, 
 		id = 1,
@@ -138,11 +138,11 @@ function phaseTeamFight_fighting:onFinish(result)
 		result = checkTeamBattleResult();
 	end
 	if result == 0 then
-		this:Msg2MSAll("Hßa");
+		this:Msg2MSAll("Draw");
 	elseif result == 1 then
-		this:Msg2MSAll(CampName[1].."ChiÕn th¾ng!");
+		this:Msg2MSAll(CampName[1].."Victory!");
 	else
-		this:Msg2MSAll(CampName[2].."ChiÕn th¾ng!");
+		this:Msg2MSAll(CampName[2].."Victory!");
 	end
 	phaseBase.onFinish(self)
 	local nOldPlayer = PlayerIndex;
@@ -222,7 +222,7 @@ BattleMission_TeamFight.msOption.OnPlayerJoin = function(self, nCamp)
 	ClearStolenSkill();	--Çå³ýÒÑÍµÈ¡µÄ¼¼ÄÜ£¬Õë¶Ô¹÷×Ó
 	CastState("imme_clear_skill_interval",-1,0);	--Ïû³ýËùÓÐ¼¼ÄÜµÄÀäÈ´Ê±¼ä
 	--BWT_RemoveNonlicetState();
-	DebugOutput(format("%s gia nhËp [%s] phe",GetName(), CampName[nCamp]));
+	DebugOutput(format("%s joined the [%s] faction",GetName(), CampName[nCamp]));
 end
 
 BattleMission_TeamFight.msOption.OnPlayerLeave = function(self, nCamp)
@@ -231,7 +231,7 @@ BattleMission_TeamFight.msOption.OnPlayerLeave = function(self, nCamp)
 		for nCamp = 1, 2 do
 			for mv = mi[nCamp], ma[nCamp] do
 				if GetMissionV(mv) == PlayerIndex then
-					this:Msg2MSAll(format("%s rêi khái ¶i!",GetName()));
+					this:Msg2MSAll(format("%s left the pass!",GetName()));
 					SetMissionV(mv, 0);
 					SetMissionV(MV_TEAM_ALIVE[nCamp], GetMissionV(MV_TEAM_ALIVE[nCamp]) - 1);
 					return
@@ -239,7 +239,7 @@ BattleMission_TeamFight.msOption.OnPlayerLeave = function(self, nCamp)
 			end
 		end
 	end
-	DebugOutput(GetName().."Rêi cöa ¶i");
+	DebugOutput(GetName().."Leave the pass");
 end
 
 BattleMission_TeamFight.msPhases = {
@@ -305,7 +305,7 @@ function this.info(n,p)
 	DebugOutput(format("Ng­êi ch¬i ®èi chiÕn hiÖn t¹i: %s(%d) vs %s(%d)", GetName(f1), f1, GetName(f2), f2));
 	
 	for nCamp = 1, 2 do 
-		DebugOutput("§éi"..nCamp)
+		DebugOutput("Team"..nCamp)
 		for i = mi[nCamp], ma[nCamp] do
 			local p = GetMissionV(i)
 			DebugOutput(format("  %d : %s(%d)", i, GetName(p), p));
@@ -315,16 +315,16 @@ end
 
 
 g_tRankScore = {
-	{0		 ,"NhÊt Vâ Gi¶"},	
-	{2000    ,"NhÞ Vâ SÜ"},	
-	{6000    ,"Tam Vâ S­"},	
-	{10000   ,"Tø Vâ HiÖp"},	
+	{0		 ,"First Martial Apprentice"},	
+	{2000    ,"Second Martial Warrior"},	
+	{6000    ,"Third Martial Master"},	
+	{10000   ,"Fourth Martial Hero"},	
 	{14000   ,"Ngò Vâ T«ng"},	
-	{18000   ,"Lôc Vâ Linh"},	
+	{18000   ,"Sixth Martial Spirit"},	
 	{22000   ,"ThÊt Vâ Hoµng"},	
-	{28000   ,"B¸t Vâ Quû"},	
+	{28000   ,"Eighth Martial Demon"},	
 	{35000   ,"Cöu Vâ T«n"},	
-	{60000   ,"Vâ Th¸nh"},
+	{60000   ,"Martial Saint"},
 }
 function addNvnScore(nScore)
 	local newScore = GetTask(TASKID_NVN_SCORE) + nScore;

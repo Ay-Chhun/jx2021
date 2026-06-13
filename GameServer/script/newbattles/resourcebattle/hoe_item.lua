@@ -34,7 +34,7 @@ function OnUse(nItemIndex)
 	if GetBit(GetMissionV(MV_RESOURCE_POS_BEGIN+nGroup),nBit) == 0 then
 		if DoFireworks(DIGGING_ACTION_ID,1) == 1 then
 			SetMissionV(MV_RESOURCE_POS_BEGIN+nGroup,SetBit(GetMissionV(MV_RESOURCE_POS_BEGIN+nGroup),nBit,1));
-			Msg2Player("ßang thu thÀp l≠¨ng th∂oÖÖ......");
+			Msg2Player("Gathering grain forage......");
 			CastState("state_fetter",1,5*18)
 			ProgressSlot(5*18);	--5√Î
 			SetItemUseLapse(nItemIndex,5);	--¿‰»¥ ±º‰£∫5√Î

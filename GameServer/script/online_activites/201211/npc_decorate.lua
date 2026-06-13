@@ -1,8 +1,8 @@
 Include("\\script\\online_activites\\201211\\item_christmas_tree.lua")
 
 VET_201211_LASTTIME_AWARD = {
-	{1, 8, "Ví Noel thÇn kú", {2, 1, 30466, 10}, 0},
-	{1, 8, "Mò TuÇn Léc", {2, 1, 30467, 10}, 0},
+	{1, 8, "Magical Christmas Stocking", {2, 1, 30466, 10}, 0},
+	{1, 8, "Reindeer Hat", {2, 1, 30467, 10}, 0},
 	{4, 16, 10, 1},
 	{5, 16, 10, 1},
   	{27, 16, 1000, 1},
@@ -55,10 +55,10 @@ end
 
 function main()
 	if VET_201211_DECORATE_TREE_TASK:GetTask(VET_201211_DECORATE_TREE_TASK.npcIndex) ~= GetTargetNpc() then
-		Talk(1,"","<color=green>C©y Noel:<color>Gi¸ng sinh vui vÎ!");
+		Talk(1,"","<color=green>Christmas Tree:<color>Merry Christmas!");
 		return
 	end
-	Say("<color=green>C©y Noel:<color>Quµ gi¸ng sinh ®©u?", 3, "Ta cÇn trang trÝ c©y th«ng Noel/decorate_tree", "Ta muèn nhËn phÇn th­ëng/christmas_tree_award", "T¹i h¹ chØ xem qua th«i/nothing")	
+	Say("<color=green>Christmas Tree:<color>Where is the Christmas gift?", 3, "Ta cÇn trang trÝ c©y th«ng Noel/decorate_tree", "Ta muèn nhËn phÇn th­ëng/christmas_tree_award", "T¹i h¹ chØ xem qua th«i/nothing")	
 end
 
 function decorate_tree()
@@ -67,7 +67,7 @@ function decorate_tree()
 		return
 	end
 	if GetItemCount(2, 0, 351) < VET_201211_NEED_LUSHUI then
-		Talk(1,"","Kh«ng ®ñ lé thñy");
+		Talk(1,"","Not enough dew");
 		return
 	end
 	if VET_201211_DECORATE_TREE_TASK:GetTask(VET_201211_DECORATE_TREE_TASK.AwardTag) == 1 then
@@ -86,7 +86,7 @@ function decorate_tree()
 		VET_201211_DECORATE_TREE_TASK:SetTask(VET_201211_DECORATE_TREE_TASK.CreateTime, GetTime());
 		VET_201211_DECORATE_TREE_TASK:SetTask(VET_201211_DECORATE_TREE_TASK.AwardTag, 1);
 	else
-	 Talk(1,"","<color=green>C©y Noel:<color>Gi¸ng sinh vui vÎ!");
+	 Talk(1,"","<color=green>Christmas Tree:<color>Merry Christmas!");
 	end
 end
 

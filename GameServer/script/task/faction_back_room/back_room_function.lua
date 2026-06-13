@@ -102,7 +102,7 @@ function BR_NextStage()
 		SetTask(TSK_ENTER_TYPE,0, 0, nPIdx);	--½øÈëÀàÐÍÇåÎª0
 		SetMissionV(MV_TOTAL_TIME,0);	--ÀÛ¼ÆÊ±¼äÇå0
 	end;
-	Msg2MSAll(MISSION_ID,""..TB_DIFF_NAME[nCurDiff].."§é khã ¶i "..nCurStage.." b¾t ®Çu");
+	Msg2MSAll(MISSION_ID,""..TB_DIFF_NAME[nCurDiff].."Trial difficulty"..nCurStage.." starts");
 	if DEBUG_VERSION == 1 then
 		BR_CreateDisciple();
 	end;
@@ -124,23 +124,23 @@ function BR_EndStage()
 	SetMissionV(MV_TOTAL_TIME,nUseTime);
 	local nEnterType = GetTask(TSK_ENTER_TYPE,nPIdx);
 	if nEnterType == 1 then
-		Msg2MSAll(MISSION_ID,"B¹n ®· v­ît qua "..TB_DIFF_NAME[nCurDiff].."¶i "..nCurStage..", ®ang ®äc d÷ liÖu, ®é khã nµy kh«ng ghi l¹i thêi gian ");
+		Msg2MSAll(MISSION_ID,"B¹n ®· v­ît qua "..TB_DIFF_NAME[nCurDiff].."trial"..nCurStage..", ®ang ®äc d÷ liÖu, ®é khã nµy kh«ng ghi l¹i thêi gian ");
 	else
-		Msg2MSAll(MISSION_ID,"B¹n ®· v­ît qua "..TB_DIFF_NAME[nCurDiff].."¶i "..nCurStage..", thêi gian: "..tf_GetTimeString(nUseTime)..".");
+		Msg2MSAll(MISSION_ID,"B¹n ®· v­ît qua "..TB_DIFF_NAME[nCurDiff].."trial"..nCurStage..", time:"..tf_GetTimeString(nUseTime)..".");
 	end;
 	if nCurStage == MAX_STAGE then	--Èç¹ûÊÇÑ­»·ÄÚ×îºóÒ»¹Ø
 		nNextDiff = nCurDiff + 1;	--½øÈëÏÂÒ»Ñ­»·
 		nNextStage = 1;				--»Ø¹éµÚ1¹Ø
 		if nBeginTime ~= 0 then
 			if nEnterType == 1 then
-				Msg2MSAll(MISSION_ID,"Chóc mõng b¹n ®· v­ît qua ¶i "..TB_DIFF_NAME[nCurDiff]..", ®ang ®äc d÷ liÖu, ®é khã nµy kh«ng ghi l¹i thêi gian");
-				WriteLog(LOG_HEADER..", ®é khã: "..nCurDiff..", ¶i  "..nCurStage..". Tªn: "..GetName(nPIdx)..", cÊp:"..GetLevel(nPIdx)..","..GetMissionV(MV_ROUTE)..", thêi gian: §ang ®äc sè liÖu, kh«ng ghi l¹i thêi gian");			
+				Msg2MSAll(MISSION_ID,"Congratulations, you have passed trial"..TB_DIFF_NAME[nCurDiff]..", ®ang ®äc d÷ liÖu, ®é khã nµy kh«ng ghi l¹i thêi gian");
+				WriteLog(LOG_HEADER..", difficulty:"..nCurDiff..", trial"..nCurStage..". Name:"..GetName(nPIdx)..", cÊp:"..GetLevel(nPIdx)..","..GetMissionV(MV_ROUTE)..", thêi gian: §ang ®äc sè liÖu, kh«ng ghi l¹i thêi gian");			
 			else
-				Msg2MSAll(MISSION_ID,"Chóc mõng b¹n ®· v­ît qua ¶i "..TB_DIFF_NAME[nCurDiff]..", thêi gian: "..tf_GetTimeString(nUseTime));
+				Msg2MSAll(MISSION_ID,"Congratulations, you have passed trial"..TB_DIFF_NAME[nCurDiff]..", time:"..tf_GetTimeString(nUseTime));
 				if BR_UpDateTimeRecord(nCurDiff,nUseTime,nPIdx) == 1 then		--Ìá½»Ê±¼ä
 					Msg2MSAll(MISSION_ID,"Chóc mõng b¹n ®· chiÕn th¾ng b¶n th©n "..TB_DIFF_NAME[nCurDiff].."V­ît ¶i víi thµnh tÝch nhanh nhÊt");
 				end;
-				WriteLog(LOG_HEADER..", ®é khã: "..nCurDiff..", ¶i  "..nCurStage..". Tªn: "..GetName(nPIdx)..", cÊp:"..GetLevel(nPIdx)..","..GetMissionV(MV_ROUTE)..", thêi gian: "..nUseTime);			
+				WriteLog(LOG_HEADER..", difficulty:"..nCurDiff..", trial"..nCurStage..". Name:"..GetName(nPIdx)..", cÊp:"..GetLevel(nPIdx)..","..GetMissionV(MV_ROUTE)..", time:"..nUseTime);			
 			end;
 		end;
 	end;
@@ -176,7 +176,7 @@ function BR_CreateDisciple()
 	local nMapID = BR_GetCurMapID();
 	local nMapX = TB_ENTRY_POS[nFaction][1];
 	local nMapY = TB_ENTRY_POS[nFaction][2];
-	local nNpcIdx = CreateNpc("V­¬ng An Th¹ch","TiÕp dÉn ®Ö tö ",nMapID,nMapX,nMapY);
+	local nNpcIdx = CreateNpc("V­¬ng An Th¹ch","Receiving disciple",nMapID,nMapX,nMapY);
 	SetNpcScript(nNpcIdx,"\\script\\task\\faction_back_room\\npc_disciple.lua");
 end;
 --´´½¨¹Ø¿¨NPC
@@ -338,7 +338,7 @@ function BR_InitStage(nDiff,nStage)
 	local nLoop = BR_TransformTime2Loop(MS_STATE_STARTED,nTime);
 	BR_SetStageTimerLoop(nLoop);
 	BR_InitStageEven(nDiff,nStage);
-	BR_StartTimeGuage("Tæng thêi gian  ",nTime,0,0);
+	BR_StartTimeGuage("Total time",nTime,0,0);
 	SetMissionV(MV_NSC_NEED_KILL_NUMBER,nNpcCount);
 	Msg2MSAll(MISSION_ID,"Thêi h¹n: "..tf_GetTimeString(nTime)..". Sè thñ vÖ cÇn ph¶i ®¸nh b¹i ®Ó qua cöa: "..nNpcCount);
 end;
@@ -381,7 +381,7 @@ function BR_CreateAwardBox(nDiff,nStage,nPIdx)
 	local nOldPIdx = PlayerIndex;
 	PlayerIndex = nPIdx or PlayerIndex;
 	local nMapID,nMapX,nMapY = GetWorldPos();
-	local nNpcIdx = CreateNpc("R­¬ng tiÒn",""..TB_DIFF_NAME[nDiff].."§é khã ¶i "..nStage.."§ãng b¶o r­¬ng",nMapID,nMapX,nMapY);
+	local nNpcIdx = CreateNpc("R­¬ng tiÒn",""..TB_DIFF_NAME[nDiff].."Trial difficulty"..nStage.."§ãng b¶o r­¬ng",nMapID,nMapX,nMapY);
 	gf_SetUnitCurState(nNpcIdx,1,nDiff);
 	gf_SetUnitCurState(nNpcIdx,2,nStage);
 	gf_SetUnitCurState(nNpcIdx,3,0);	--ÉèÖÃÎªÎ´Ê°È¡
@@ -541,7 +541,7 @@ function BR_SaveRecord(nDiff,nStage,nPIdx)
 	end;
 	local nRecord = nDiff*100+nStage;
 	SetTask(TSK_WC_LAST_RECORD,nRecord);
-	Msg2MSAll(MISSION_ID,"TiÕn ®é ®· l­u: "..TB_DIFF_NAME[nDiff].."§é khã ¶i "..nStage..".");
+	Msg2MSAll(MISSION_ID,"TiÕn ®é ®· l­u: "..TB_DIFF_NAME[nDiff].."Trial difficulty"..nStage..".");
 	PlayerIndex = nOldPIdx;
 end;
 --»ñµÃ½ø¶È±£´æÐÅÏ¢
@@ -559,7 +559,7 @@ function BR_CloseStage()
 	if UNCOMPLETED_VERSION ~= 1 then
 		local nRetCode = FreeDynamicMap(nMapID,nMapIdx);	--FreeDynamicMapÒ²»áµ÷ÓÃCloseMisssion
 		if nRetCode ~= 0 then
-			WriteLog(LOG_ERR_HEADER.."FreeDynamicMap ph¸t sinh lçi, nRetCode:"..nRetCode);
+			WriteLog(LOG_ERR_HEADER.."FreeDynamicMap encountered an error, nRetCode:"..nRetCode);
 		end;
 	end;
 end;
@@ -681,8 +681,8 @@ function BR_GetBoxAward(nDiff,nStage)
 		SetTask(336,nCurGongXian+nGongXian);
 		Msg2Player("B¹n nhËn ®­îc "..nGongXian.." ®iÓm cèng hiÕn S­ M«n ");
 	end;
-	Msg2Player("B¹n ®· nhËn råi"..TB_DIFF_NAME[nDiff].."§é khã ¶i "..nStage.."R­¬ng cña ¶i");
-	WriteLog(LOG_HEADER..GetName().." nhËn ®é khã"..nDiff.."thø"..nStage..".	");
+	Msg2Player("B¹n ®· nhËn råi"..TB_DIFF_NAME[nDiff].."Trial difficulty"..nStage.."R­¬ng cña ¶i");
+	WriteLog(LOG_HEADER..GetName().." nhËn ®é khã"..nDiff.."the"..nStage..".	");
 end;
 --½øÈëÃ¿¹ØÇ°µÄ¼ì²â
 function BR_EnterNextStageCheck(nDiff,nStage,nPIdx)
@@ -965,7 +965,7 @@ function BR_KnowLimit()
 			". 6, 7 tuÇn hoµn (®Õn cÊp 70)/backroom_know_limit_2",
 			". 8, 9 tuÇn hoµn (®Õn cÊp 85)/backroom_know_limit_3",
 			"* Quay l¹i/main",
-			". KÕt thóc ®èi tho¹i/nothing",
+			". End dialogue/nothing",
 			}
 	Say(g_szInforHeader.."1, 2, 3, 4, 5 tuÇn hoµn, ®Õn cÊp 50 cã thÓ tham gia.",getn(selTab),selTab);
 end;

@@ -69,7 +69,7 @@ local strTalk = {
 		if GetPlayerFaction() == 7 then --Îå¶¾µÜ×Ó×¨ÓÐ¶Ô»°
 			strTalk = {
 				"Gi¸o chñ, vËt phÈm ng­êi cÇn ®· t×m ®ñ.",
-				"ThËt tèt qu¸!",
+				"Excellent!",
 				"VËy ng­êi nãi cho t¹i h¹ nghe vÒ Xi Háa gi¸o?",
 				"Ta sÏ nãi! Nh­ng cã viÖc nµy cßn gÊp h¬n! Ng­ §éc ¢m C¬ ®· ®Õn tÇng 2 Mª Cung ®éng thu thËp ®éc vËt, h¾n cßn b¾t mét sè d©n lµng ®Õn ®Ó luyÖn ®éc. Ng­¬i h·y ®i tiªu trõ tªn nµy gióp ta.",
 				"Tu©n lÖnh!"
@@ -77,12 +77,12 @@ local strTalk = {
 		else
 			strTalk = {
 				"Gi¸o chñ, vËt phÈm ng­êi cÇn ®· t×m ®ñ.",
-				"ThËt tèt qu¸!",
+				"Excellent!",
 				"VËy Xi Háa gi¸o cã liªn quan g× víi Ngò §éc gi¸o kh«ng?",
 				"GÇn ®©y Ng­ §éc ¢m C¬ ®Õn tÇng hai cña Mª Cung ®éng thu thËp ®éc vËt, cßn b¾t mét sè d©n lµng ®Õn ®Ó luyÖn ®éc. <sex> h·y ®i tiªu trõ tªn nµy gióp ta!",
 				"…………",
 				"§õng lµm mÊt thêi gian. <sex> mau ®i ®i. Hoµn thµnh nhiÖm vô ta sÏ nãi cho ng­¬i nghe.",
-				"T¹i h¹ ®i ngay!"
+				"This humble one goes now!"
 				}
 		end;
 		
@@ -179,7 +179,7 @@ local strTalk = {
 	"Sao? Cao Th¨ng TuyÒn kh«ng thõa nhËn µ?",
 	"T¹i h¹ ch­a tõng nghe qua, mong gi¸o chñ nãi râ.",
 	"Tèt nhÊt ng­¬i nªn ®Õn gÆp Cao Th¨ng TuyÒn ®Ó hái. Nãi víi «ng Êy lµ ta cßn rÊt nhiÒu viÖc kh«ng thÓ ®Õn §¹i Lý ®­îc.",
-	"T¹i h¹ ®i ngay!",
+	"This humble one goes now!",
 	"Cßn viÖc nµy n÷a, ph­¬ng ph¸p phèi chÕ ®éc d­îc cña Kh«i Lçi §éc Nh©n ®· bÞ Xi Háa gi¸o ®¸nh c¾p, ng­¬i b¸o l¹i víi Cao Th¨ng TuyÒn vËy nhÐ!",
 	"T¹i h¹ biÕt råi."
 }
@@ -210,7 +210,7 @@ local strTalk = {};
 		strTalk = {
 			"Gi¸o chñ cho gäi t¹i h¹ cã viÖc g× kh«ng?",
 			"Ng­¬i cã biÕt Kh«i Lçi §éc Nh©n ë Long Nh·n ®éng kh«ng?",
-			"T¹i h¹ biÕt, ®· tõng ®i qua n¬i ®ã.",
+			"This disciple knows, I have been there before.",
 			"Kh«i Lçi §éc Nh©n ®· bÞ ng­êi cña Xi Háa gi¸o Ðp buéc tiÕt lé ph­¬ng ph¸p phèi chÕ ®éc d­îc.HiÖn nay ng­êi cã thÓ theo ph­¬ng ph¸p nµy chÕ t¹o ra ®éc d­îc lµ §¹i Tr­ëng l·o Xi Háa gi¸o, ng­¬i mau gióp ta tiªu diÖt tªn nµy ®Ó b¶o toµn bÝ mËt.",
 			"Ng­êi nµy hiÖn ®ang ë ®©u?",
 			"H¾n ë tÇng 1 Long Nh·n ®éng. Mét m×nh ng­¬i kh«ng thÓ ®èi phã víi h¾n, nªn cã ®ång ®éi hç trî.",
@@ -219,7 +219,7 @@ local strTalk = {};
 		strTalk = {
 			"{B¹ch gi¸o chñ} cho t×m thuéc h¹?",
 			"<sex>ChuyÖn cã liªn quan ®Õn Kh«i Lçi §éc Nh©n ë Long Nh·n ®éng, ng­¬i biÕt råi chø?",
-			"Thuéc h¹ võa ®i qua n¬i ®ã.",
+			"This subordinate just passed through there.",
 			"Kh«i Lçi §éc Nh©n ®· bÞ ng­êi cña Xi Háa gi¸o Ðp buéc tiÕt lé ph­¬ng ph¸p phèi chÕ ®éc d­îc.HiÖn nay ng­êi cã thÓ theo ph­¬ng ph¸p nµy chÕ t¹o ra ®éc d­îc lµ §¹i Tr­ëng l·o Xi Háa gi¸o. <sex> cã thÓ gióp ta tiªu trõ h¾n kh«ng?",
 			"Tªn nµy thËt ®¸ng chÕt! Nh­ng sao {gi¸o chñ} kh«ng ®éng thñ?",
 			"Ta ®ang cã viÖc kh«ng thÓ ra ngoµi ®­îc. <sex> lÇn tr­íc nhê ta cung cÊp mét sè tin tøc cho <sex> råi lÏ nµo lÇn nµy ng­¬i kh«ng gióp ta ®­îc ­?",
@@ -301,14 +301,14 @@ local strTalk = {};
 			"…………",
 			"NÕu <sex> kh«ng tin nh÷ng lêi ta nãi. <sex> cã thÓ ®i hái ng­êi kh¸c vËy.",
 			"Thuéc h¹ tin råi! C¶m ¬n {gi¸o chñ}.",
-			"{Cã lÏ ®Õn {B¸ch HiÓu Sinh} hái xem, may ra biÕt thªm ®­îc g×.}",
+			"{Perhaps go ask {Bai Xiao Sheng}, you might learn something more.}",
 			}
 	end            
 	TalkEx("",strTalk);
 	SetTask(TASK_DL_LV75_ID,3);
 	CreateTrigger(4,203,TALK_DL_BAIXIAOSHENG);
-	Msg2Player("§Õn t×m B¸ch HiÓu Sinh.");
-	TaskTip("§Õn t×m B¸ch HiÓu Sinh.");
+	Msg2Player("Go find Bai Xiao Sheng.");
+	TaskTip("Go find Bai Xiao Sheng.");
 	GivePlayerAward("Level_65","xn_step_1","head","Level_65");
 	GivePlayerExp(SkeyDali,"fangongcihuo")
 	return
@@ -323,8 +323,8 @@ local strTalk = {
 	
 	if GetTrigger(TALK_DL_BAIXIAOSHENG) == 0 then
 		CreateTrigger(4,203,TALK_DL_BAIXIAOSHENG);
-		Msg2Player("§Õn t×m B¸ch HiÓu Sinh.");
-		TaskTip("§Õn t×m B¸ch HiÓu Sinh.");
+		Msg2Player("Go find Bai Xiao Sheng.");
+		TaskTip("Go find Bai Xiao Sheng.");
 	end;
 	TalkEx("",strTalk);
 end

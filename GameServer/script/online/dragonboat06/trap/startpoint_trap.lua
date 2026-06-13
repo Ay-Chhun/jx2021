@@ -20,7 +20,7 @@ function main()
 		if GetTask(POSITION) ~= 0 then
 			NewWorld(MapID,2019,3291);
 			InteractiveEnable(0);
-			Msg2Player("Trong khi thi ®Êu, h·y cè g¾ng ®i ®óng ®­êng ®ua!");
+			Msg2Player("During the race, try to follow the correct course!");
 			return 0;
 		end;
 		if GetMapTaskTemp(MapID,1) == 0 then
@@ -37,7 +37,7 @@ function main()
 		ForbidChangePK(1);	--½ûÖ¹¸Ä±äPK×´Ì¬
 	elseif RoomState == MS_STATE_WAITSIGNUP or RoomState == MS_STATE_WAITSTART then
 		if nGenre == 0 and nDetail == 0 and nParticular == 0 then
-			Msg2Player("Tr­íc khi trËn ®Êu b¾t ®Çu h·y lªn thuyÒn chuÈn bÞ.");
+			Msg2Player("Before the race begins, board the boat and prepare.");
 		end;
 		NewWorld(MapID,2038,3268);
 		InteractiveEnable(0);

@@ -16,9 +16,9 @@ function OnUse()
 	local nTask = GetTask(TASK_AOYUN_ZHUWEI_NUM);
 	local nStrtab = {
 		"T×m hiÓu phÇn th­ëng ng­êi cæ vò/zhuweizhe_award",
-		"§­a ta ®Õn §µi ®uèc t­¬ng øng (50 b¹c)/goto_huojutai",
+		"Take me to the corresponding torch stand (50 silver)/goto_huojutai",
 		"T×m täa ®é §µi ®uèc/huoju_zuobiao",
-		"Tho¸t/nothing"
+		"Exit/nothing"
 		};
 	if nTask == 1 then
 		Say("<color=green>Chøng nhËn quyÒn cæ vò<color>: Chóc mõng b¹n nhËn ®­îc quyÒn cæ vò t¹i <color=yellow>Th¸nh Háa §µi<color>, sau khi ®uèc ®­îc th¾p, b¹n cã thÓ nhËn phÇn th­ëng t¹i Th¸nh Háa §µi. (NhÊn phÝm ph¶i)",

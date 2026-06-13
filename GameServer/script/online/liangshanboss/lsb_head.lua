@@ -509,20 +509,20 @@ function LSB_CallBack_Roll(dwID)
 	if type(t) ~= "table" then return end
 	for index, value in t do
 		bFlag = 0;
-		local str = value[1].."N–m"..value[2].." Æi”m"
+		local str = value[1].."Throw"..value[2].." Æi”m"
 		if value[3] == 0 then
-			str = value[1].."Ph„ng"
+			str = value[1].."Cast"
 		elseif value[3] == 1 then
-			str = str.." (Tuy’t c«u)"
+			str = str.." (Snowball)"
 			if value[4] == 1 then
-				str = str.." -ß∑ nh∆t Æ≠Óc"..szItem
+				str = str.." -Already picked up"..szItem
 				tbTemp[value[1]] = szItem;
 			end
 			bAllGiveUp = 0
 		elseif value[3] == 2 then
 			str = str.." (Tham lam)"
 			if value[4] == 1 then
-				str = str.." -ß∑ nh∆t Æ≠Óc"..szItem
+				str = str.." -Already picked up"..szItem
 				tbTemp[value[1]] = szItem;
 			end
 			bAllGiveUp = 0

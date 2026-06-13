@@ -54,7 +54,7 @@ function main()
 		"§Õn Hiªn Viªn cèc (cao cÊp)/GotoWorld_Confirm3",
 		--"ÒÅÍü²ÉÒ©¼¼ÄÜ/forget_life_skill",
 		"Ta muèn t×m hiÓu tin tøc vÒ h¸i thuèc./Info",
-		"Rêi khái/Main_Exit");
+		"Leave/Main_Exit");
 end;
 
 -- ÒÅÍüÉú»î¼¼ÄÜ
@@ -155,18 +155,18 @@ function GotoWorld_Confirm1()
 	Say(strTitle.."Ng­¬i muèn ®Õn <color=yellow>Nam Hße Cèc<color> h¸i thuèc ­? N¬i ®ã cã <color=yellow>Ba ®Ëu<color>, <color=yellow>Tµng Hång Hoa<color>, <color=yellow>C¸t C¸nh<color> vµ <color=yellow>Hoµng liªn<color>. Nhí mang theo <color=yellow>ThÇn N«ng §¬n<color>!",
 		2,
 		"Ta muèn ®i/#GotoWorld(714, 1511, 3004)",
-		"Kh«ng ®i ®©u/Main_Exit");
+		"I'm not going anywhere/Main_Exit");
 end;
 function GotoWorld_Confirm2()
 	Say(strTitle.."Ng­¬i muèn ®Õn <color=yellow>Hµm U Cèc<color> h¸i thuèc ­? N¬i ®ã cã <color=yellow>X¸c ve<color>, <color=yellow>§iÒn thÊt<color> vµ <color=yellow>Xuyªn s¬n gi¸p<color>. Nhí mang theo <color=yellow>ThÇn N«ng §¬n<color>!",
 		2,
 		"Ta muèn ®i/#GotoWorld(719, 1708, 3396)",
-		"Kh«ng ®i ®©u/Main_Exit");
+		"I'm not going anywhere/Main_Exit");
 end;
 function GotoWorld_Confirm3()
 	Say(strTitle.."Ng­¬i muèn ®Õn <color=yellow>Hiªn Viªn Cèc<color> h¸i thuèc ­? N¬i ®ã cã <color=yellow>X¹ h­¬ng<color>, <color=yellow>MËt gÊu<color> vµ <color=yellow>Nh©n s©m<color>. Nhí mang theo <color=yellow>ThÇn N«ng §¬n<color>!",	2,
 		"Ta muèn ®i/#GotoWorld(724, 1721, 3386)",
-		"Kh«ng ®i ®©u/Main_Exit");
+		"I'm not going anywhere/Main_Exit");
 end;
 -- È¥ÏàÓ¦µÄ¹Ò»úµØµã
 function GotoWorld(MapID, x, y)

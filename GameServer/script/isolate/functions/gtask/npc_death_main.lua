@@ -15,15 +15,15 @@ tNpcDeathCfg = {
 																	}
 																} 
 	},
-	{418, "§o¹t Kim Tinh", {"Kim Linh ", 321}, fn_award_items, {1,100,{  {"Kim Tinh",{2,1,31091,1,4},1,100},   }}		},
+	{418, "Doat Kim Tinh", {"Kim Linh ", 321}, fn_award_items, {1,100,{  {"Kim Tinh",{2,1,31091,1,4},1,100},   }}		},
 	{430, "Phong V©n Kinh BiÕn", {"Tinh hoa Thiªn D­¬ng Giao", 6400}, fn_award_items, {1,100,{  {"MËt th­ Thiªn ¢m gi¸o",{2,1,31098,1,4},10,100},   }}		},
-	{436, "§o¹t l¹i Bóa", {"Tªn trém bÝ Èn", 208}, fn_award_items, {1,100,{  {"Bóa cña M¹c NhÞ",{2,1,31102,1,4},1,100},   }}		},
-	{446, "DiÖt ¸c quû", {"Vua ƒc Quû", 306}, fn_award_items, {1,100,{  {"Kh¨n Tay Cña Vua ƒc Quû",{2,1,31106,1,4},1,100},   }}		},
+	{436, "§o¹t l¹i Bóa", {"The hidden thief", 208}, fn_award_items, {1,100,{  {"Bóa cña M¹c NhÞ",{2,1,31102,1,4},1,100},   }}		},
+	{446, "Slay the evil demon", {"Vua c Quy", 306}, fn_award_items, {1,100,{  {"Handkerchief of Vua c Quy",{2,1,31106,1,4},1,100},   }}		},
 	{450, "Thö th¸ch cña Thõa T­íng", {"§¹i §ao Quan Th¾ng", 6007}, fn_award_items, {1,100,{  {"Th­ §Çu Hµng",{2,1,31108,1,4},1,50},   }}		},
 
 --		Õ½¿ñÉý¼¶µÚ¶þÆÚÐÂÔö
-	{469, "Khiªu chiÕn §­êng M«n L·o L·o (2)", {"Tiªu NhiÔm NguyÖt Thiªn ¢m Gi¸o", 7118}, fn_award_items, {1,100,{{"B¶n VÏ C¬ Quan", {2,1,31143,1,4}, 1, 100},}}},
-	{475, "Khiªu chiÕn C¸i Bang Bang Chñ (2)", {"Nhai Th­îng S¬n TÆc", 6300}, fn_award_items, {1,100,{{"Tµi S¶n BÞ C­íp", {2,1,31145,1,4}, 50, 50},}}},
+	{469, "Khiªu chiÕn §­êng M«n L·o L·o (2)", {"Tiªu NhiÔm NguyÖt Thiªn ¢m Gi¸o", 7118}, fn_award_items, {1,100,{{"Mechanism Blueprint", {2,1,31143,1,4}, 1, 100},}}},
+	{475, "Khiªu chiÕn C¸i Bang Bang Chñ (2)", {"Nhai Th­îng S¬n TÆc", 6300}, fn_award_items, {1,100,{{"Property Plundered", {2,1,31145,1,4}, 50, 50},}}},
 	
 }
 

@@ -90,7 +90,7 @@ function Zgc_pub_time_sec_change(sec_num,flag)
 		dialog_rtn = dialog_rtn..num_h.."h "
 	end
 	if num_m ~= 0 then
-		dialog_rtn = dialog_rtn..num_m.." phót "
+		dialog_rtn = dialog_rtn..num_m.." minutes"
 	end
 	if num_s ~= 0 then
 		dialog_rtn = dialog_rtn..num_s.." Gi©y "
@@ -143,7 +143,7 @@ end
 function Zgc_pub_action_level_chk()
 	local npc_name = GetNpcName(GetTaskTemp(164))
 	if npc_name == "" then
-		npc_name = "nh¾c nhë"
+		npc_name = "Reminder"
 	end
 	if GetLevel() < 11 then
 		Talk(1,"end_dialog","<color=green>"..npc_name.."<color>: "..Zgc_pub_sex_name().."cÇn rÌn luyÖn thªm mét thêi gian!")
@@ -179,7 +179,7 @@ end
 --¹¦        ÄÜ£º°ÑµØÍ¼IDºÍµØÍ¼Ãû³Æ½øÐÐÏà»¥×ª»»
 function Zgc_pub_money_name_change(money)
 	if money == 0 then
-		return "0 l­îng"
+		return "0 tael"
 	end
 	local money_gold = floor(money/10000)
 	local money_silver = floor((money-(money_gold*10000))/100)
@@ -189,10 +189,10 @@ function Zgc_pub_money_name_change(money)
 		money_name = money_gold.." Kim "
 	end
 	if money_silver ~= 0 then
-		money_name = money_name..money_silver.." b¹c "
+		money_name = money_name..money_silver.." silver"
 	end
 	if money_copper ~= 0 then
-		money_name = money_name..money_copper.." §ång "
+		money_name = money_name..money_copper.." Copper"
 	end
 	return money_name
 end
@@ -316,7 +316,7 @@ function zgc_pub_dialog_page_deal(tb_deal,page_seq,npp,fun_str,add_dia)
 		--end
 		--Ð´Èë¡±ÉÏÒ»Ò³¡°
 		if page_seq > 1 then
-			tinsert(tb_dia_rtn,"Trang tr­íc/#"..fun_str.."("..(page_seq-1)..")")
+			tinsert(tb_dia_rtn,"Previous page/#"..fun_str.."("..(page_seq-1)..")")
 		end
 		--Ð´ÈëÖ÷Ìâ
 		for i = 1,num_this_page do
@@ -324,7 +324,7 @@ function zgc_pub_dialog_page_deal(tb_deal,page_seq,npp,fun_str,add_dia)
 		end
 		--Ð´Èë¡±ÏÂÒ»Ò³¡±
 		if next_page_flag == 1 then
-			tinsert(tb_dia_rtn,"Trang kÕ/#"..fun_str.."("..(page_seq+1)..")")
+			tinsert(tb_dia_rtn,"Next page/#"..fun_str.."("..(page_seq+1)..")")
 		end
 		if add_dia ~= "" then
 			tinsert(tb_dia_rtn,add_dia)
@@ -445,9 +445,9 @@ function spring2007_spring_goods_add()
 		local TaskID_spring2007_coat = 974
 		local TaskID_spring2007_trou = 975
 		local coat_id_list = {
-		{{"Thu Thi qu¸n",0,108,195},{"§«ng Hµn m·o",0,108,196},{"H¹ Vinh kÕt",0,108,197},{"Xu©n No·n tr©m",0,108,198}},
-		{{"Thu Thi bµo",0,109,255},{"§«ng Hµn gi¸p",0,109,256},{"H¹ Vinh trang",0,109,257},{"Xu©n No·n th­êng",0,109,258}},
-		{{"Thu Thi ngoa",0,110,85},{"§«ng Hµn ngoa",0,110,86},{"H¹ Vinh quÇn",0,110,87},{"Xu©n No·n quÇn",0,110,88}},	
+		{{"Qiushi Hall",0,108,195},{"Donghan Hat",0,108,196},{"Xiarong Knot",0,108,197},{"Chunnuan Hairpin",0,108,198}},
+		{{"Qiushi Robe",0,109,255},{"Donghan Armor",0,109,256},{"Xiarong Outfit",0,109,257},{"Xu©n No·n th­êng",0,109,258}},
+		{{"Thu Thi ngoa",0,110,85},{"Donghan Boots",0,110,86},{"Xiarong Skirt",0,110,87},{"Chunnuan Skirt",0,110,88}},	
 		}
 		local not_get = {}
 		local not_get_num = 1
@@ -513,7 +513,7 @@ TaskID_up_book_diff = 1245
 TaskID_up_book_num = 1246
 TaskID_Temp_book_diff = 173
 Tb_teacher_name = {"<color=green>HuyÒn Tõ<color>:","<color=green>Tö H¹c Ch©n Nh©n<color>:","<color=green>Ch©n Nh­ S­ Th¸i<color>:","<color=green>Long T¹i Thiªn<color>:","<color=green>§­êng Së Hång<color>:","<color=green>Xa Th¸i Qu©n<color>:","<color=green>B¹ch Doanh Doanh<color>:",}
-Tb_teacher_name[0] = "<color=green>§Æc sø Vâ L©m<color>:"
+Tb_teacher_name[0] = "<color=green>Wulin Special Envoy<color>:"
 Tb_book = {	{75,"Thùc chiÕn t©m ®¾c",1101,20},
 			{10,"Quan chiÕn t©m ®¾c",1102,40},
 			{10,"Thùc chiÕn kinh nghiÖm tËp",1103,6},
@@ -523,7 +523,7 @@ function labor_07_dia_main(sver_flag)
 	do
 		Say(Tb_teacher_name[GetPlayerFaction()].."Ho¹t ®éng S­ m«n rÌn luyÖn hiÖn ch­a b¾t ®Çu!",
 		1,
-		"KÕt thóc ®èi tho¹i/end_dialog"
+		"End dialogue/end_dialog"
 		);
 		return
 	end
@@ -664,9 +664,9 @@ function finish_deal(book_diff,book_num)
 	end
 	local num_remain = (Tb_book[book_diff][4]-(book_uped_num+book_num))
 	if num_remain ~= 0 then
-		Talk(1,"",Tb_teacher_name[GetPlayerFaction()].."LÇn nµy ng­¬i ®· nép <color=yellow>"..book_num.."<color> quyÓn <color=yellow>"..Tb_book[book_diff][2].."<color>, tuÇn nµy ng­¬i cã thÓ nép <color=yellow>"..num_remain.."<color> quyÓn!")
+		Talk(1,"",Tb_teacher_name[GetPlayerFaction()].."LÇn nµy ng­¬i ®· nép <color=yellow>"..book_num.."<color> volumes of <color=yellow>"..Tb_book[book_diff][2].."<color>, tuÇn nµy ng­¬i cã thÓ nép <color=yellow>"..num_remain.."<color> volumes!")
 	else
-		Talk(1,"",Tb_teacher_name[GetPlayerFaction()].."LÇn nµy ng­¬i ®· nép <color=yellow>"..book_num.."<color> quyÓn <color=yellow>"..Tb_book[book_diff][2].."<color>, tuÇn nµy ng­¬i kh«ng thÓ nép n÷a!")
+		Talk(1,"",Tb_teacher_name[GetPlayerFaction()].."LÇn nµy ng­¬i ®· nép <color=yellow>"..book_num.."<color> volumes of <color=yellow>"..Tb_book[book_diff][2].."<color>, tuÇn nµy ng­¬i kh«ng thÓ nép n÷a!")
 	end
 end
 --*************************½±ÀøÁÐ±í*********************

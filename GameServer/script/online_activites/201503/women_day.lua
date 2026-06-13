@@ -21,7 +21,7 @@ function PlayerLogin(ExchangeComing, nStartTime, nEndTime)
 		return 0;
 	end
 	SetTask(WD_TASK_ID, 1);
-	gf_AddItemEx2({2, 1, 30798, 1, 4}, "Tói quµ 8/3", "Ho¹t ®éng chµo mõng 8/3 n¨m 2015", "Tói quµ 8/3", 7*24*3600, 1);
+	gf_AddItemEx2({2, 1, 30798, 1, 4}, "Gift Bag 8/3", "Ho¹t ®éng chµo mõng 8/3 n¨m 2015", "Gift Bag 8/3", 7*24*3600, 1);
 end
 
 function OnUse(nItem)
@@ -34,7 +34,7 @@ function OnUse(nItem)
 	gf_ModifyExp(10000000);
 	AwardGenuineQi(9999);
 	gf_EventGiveCustomAward(31, 9999, 1, "Ho¹t ®éng chµo mõng 8/3 n¨m 2015");
-	gf_AddItemEx2({2, 1, 30499, 10, 4}, "Hu©n ch­¬ng anh hïng", "Ho¹t ®éng chµo mõng 8/3 n¨m 2015", "Hu©n ch­¬ng anh hïng", 0, 1);
+	gf_AddItemEx2({2, 1, 30499, 10, 4}, "Hero's Medal", "Ho¹t ®éng chµo mõng 8/3 n¨m 2015", "Hero's Medal", 0, 1);
 	local tAward = {
 		{1, 14000, "Thá ®en", {0, 105, 30039, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
 		{1, 14000, "NguyÖt L­îng Thè", {0, 105, 30038, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
@@ -46,5 +46,5 @@ function OnUse(nItem)
 		{1, 1, "B¸o §en B¶o B¶o", {0, 105, 30045, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 1, "NguyÖt L­îng Thè", {0, 105, 30038, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
 	}
-	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Ho¹t ®éng chµo mõng 8/3 n¨m 2015", "Tói quµ 8/3");
+	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Ho¹t ®éng chµo mõng 8/3 n¨m 2015", "Gift Bag 8/3");
 end

@@ -315,7 +315,7 @@ end;
 
 function beforelearnskill(id)
 	if (id == 113) then	--½µÁúÊ®°ËÕÆ
-		if (GetSkillLevel("Gi¸ng Long ThËp B¸t Ch­ëng") <= 0) then
+		if (GetSkillLevel("Eighteen Dragon Subduing Palms") <= 0) then
 			return "“Gi¸ng Long ThËp B¸t Ch­ëng” lµ <color=red>tuyÖt häc trÊn ph¸i<color> cña bæn m«n, chØ truyÒn cho ng­êi tµi giái."
 		end
 	end
@@ -323,9 +323,9 @@ end
 
 function afterlearnskill(id)
 	if (id == 113) then	--½µÁúÊ®°ËÕÆ
-		if (GetSkillLevel("Gi¸ng Long ThËp B¸t Ch­ëng") == 1) then
+		if (GetSkillLevel("Eighteen Dragon Subduing Palms") == 1) then
 			Say("ThiÕu hiÖp qu¶ nhiªn tè chÊt kh«ng tÖ, b­íc ®Çu ®· lÜnh héi “Gi¸ng Long ThËp B¸t Ch­ëng” cña bæn m«n, thËt ®¸ng nÓ!<enter><color=green>Ng­êi ch¬i<color>: Nh­ng... th­a s­ phô, v× sao lóc ®Ö tö thi triÓn “Gi¸ng Long ThËp B¸t Ch­ëng”, néi khİ trong ng­êi bŞ ph©n t¸n? §· nghe danh Lôc M¹ch ThÇn KiÕm cña §¹i Lı §oµn ThŞ tõ l©u, nghÜ ®Õn còng kh«ng d¸m, h«m nay l¹i cã dŞp thö. <enter>ThiÕu hiÖp cßn ch­a biÕt ®iÒu nµy, “Gi¸ng Long ThËp B¸t Ch­ëng” rÊt m¹nh, cho dï may m¾n häc ®­îc, nh­ng ch­a ch¾c ®iÒu khiÓn ®­îc nã. Tinh khİ bªn trong c¬ thÓ kh«ng tİch tô thµnh “s¸t khİ”? (møc s¸t khİ), th× kh«ng thÓ thi triÓn vâ c«ng nµy, cÇn tiªu hao “s¸t khİ” bªn trong. “S¸t khİ” gåm 10 phÇn, t¨ng khi c«ng ph¸ s¸t th­¬ng, dÇn dÇn tİch tô l¹i.", 1, "§ång ı/GiveMomentum")
-		elseif (GetSkillLevel("Gi¸ng Long ThËp B¸t Ch­ëng") == 5) then
+		elseif (GetSkillLevel("Eighteen Dragon Subduing Palms") == 5) then
 			Say("ThiÕu hiÖp qu¶ nhiªn tè chÊt th«ng minh, “Gi¸ng Long ThËp B¸t Ch­ëng” ®· lÜnh héi ®­îc 5 phÇn. Vâ c«ng nµy cã 20 cÊp, tõ cÊp 5 trë ®i thiÕu hiÖp cÇn ra søc luyÖn c«ng, ®Õn mét møc nhÊt ®Şnh sÏ t¨ng thªm 1 cÊp. Tõ cÊp 10 trë ®i ph¶i lÜnh héi MËt tŞch trÊn ph¸i cña bæn m«n, míi cã thÓ häc ®­îc.", 0)
 		end
 	end

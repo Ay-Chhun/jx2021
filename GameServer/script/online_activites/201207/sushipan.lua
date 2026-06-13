@@ -6,7 +6,7 @@ Include("\\script\\meridian\\meridian_script_api.lua")
 
 VET_201207_ACITIVITY_ID = 69;
 
-VET_201207_NPC = "<color=green>Chñ Töu LÇu:<color>";
+VET_201207_NPC = "<color=green>Tavern Owner:<color>";
 
 VET_201207_Say_Tb = {
 	"Ta muèn th­ëng thøc Giß Chay (Tiªu hao 25 §ãa Hoa Vu Lan + 25 Vµng) /#exchange_one(1)",
@@ -33,21 +33,21 @@ Exp_Award_Normal2 = 24000000;
 Item_Count1 = 25;
 Item_Count2 = 25;
 Coin_Consume = 25;
-Item_table1 = {2,1,30423,"§ãa Hoa Vu Lan"};
-Item_table2 = {2,1,30422,"§ãa Hoa tÆng MÑ"};
+Item_table1 = {2,1,30423,"Vu Lan Flower"};
+Item_table2 = {2,1,30422,"Flower for Mother"};
 Acitivity_log1 = "HOAT DONG PHU THANG 8";
-Acitivity_log2 = "M©m Cç Chay";
+Acitivity_log2 = "Vegetarian Feast Tray";
 
-strMsg2Player1 = "Th­ëng thøc Giß Chay %d/%d";
-strMsg2Player2 = "Th­ëng thøc Nem %d/%d";
-strMsg2Player3 = "Th­ëng thøc Rau Xµo ThËp CÈm %d/%d";
-strMsg2Player4 = "Th­ëng thøc C¶i Th¶o TiÒm NÊm §«ng C« %d/%d";
-strMsg2Player5 = "Th­ëng thøc M©m Cç Vu Lan %d/%d";
+strMsg2Player1 = "Enjoy the Vegetarian Sausage %d/%d";
+strMsg2Player2 = "Enjoy the Spring Roll %d/%d";
+strMsg2Player3 = "Enjoy the Mixed Stir-Fried Vegetables %d/%d";
+strMsg2Player4 = "Enjoy the Braised Cabbage with Shiitake Mushrooms %d/%d";
+strMsg2Player5 = "Enjoy the Vu Lan Feast Tray %d/%d";
 
 --½±Àø±í
 Vet_201207_Award  = {
     {1, 1919, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 2}, 0},
-    {1, 1838, "§Êu hån", {2, 1, 1157, 1}, 7 * 24 * 3600},
+    {1, 1838, "Soul Duel", {2, 1, 1157, 1}, 7 * 24 * 3600},
     {1, 2525, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 7 * 24 * 3600},
     {1, 522, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
     {1, 200, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},

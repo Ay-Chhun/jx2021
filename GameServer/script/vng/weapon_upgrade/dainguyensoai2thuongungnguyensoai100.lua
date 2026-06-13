@@ -107,8 +107,8 @@ function OnPutinComplete(param)
 	
 	-------------------- Check material ----------------------------
 	local tbMaterial = {
-		[1] = {item={{gdp={2,1,504,9}, name="N÷ Oa Tinh Th¹ch"}, {gdp={2,95,204,19}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,29}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,30230,3900}, name="Xu VËt PhÈm"}}},
-		[2] = {item={{gdp={2,1,504,9}, name="N÷ Oa Tinh Th¹ch"}, {gdp={2,95,204,21}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,29}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,30230,7900}, name="Xu VËt PhÈm"}}},
+		[1] = {item={{gdp={2,1,504,9}, name="N÷ Oa Tinh Th¹ch"}, {gdp={2,95,204,19}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,29}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,30230,3900}, name="Item Token"}}},
+		[2] = {item={{gdp={2,1,504,9}, name="N÷ Oa Tinh Th¹ch"}, {gdp={2,95,204,21}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,29}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,30230,7900}, name="Item Token"}}},
 	}
 	local nIndex = tbNguyenSoai[nG][nD][nP][1]
 	local nCheck = LIB_Award:CheckMaterial(tbMaterial[nIndex])

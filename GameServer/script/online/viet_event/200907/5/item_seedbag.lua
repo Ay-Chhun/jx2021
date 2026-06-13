@@ -31,7 +31,7 @@ function OnUse(nItemIdx)
 		-- Bang héi tinh anh 6 , nguån ra hoa hång
 		local nDate = tonumber(date("%y%m%d"))
         	if nDate >= 110930 and nDate <= 111023 then
-        		gf_AddItemEx2({2, 0, 1164, 20, 1}, "Hoa Hång PhÊn", "Bang Hoi Tinh Anh 6", "më Tói H¹t Gièng")
+        		gf_AddItemEx2({2, 0, 1164, 20, 1}, "Hoa Hång PhÊn", "Bang Hoi Tinh Anh 6", "open Seed Pouch")
         	end
         	VietSeedBagAwards()
 		--gf_AddItemEx(seedtab, "H¹t gièng");

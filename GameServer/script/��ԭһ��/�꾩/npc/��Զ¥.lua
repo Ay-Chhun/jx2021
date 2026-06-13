@@ -21,7 +21,7 @@ function main()
 					tinsert(tbSay,"Ta muèn nhËn ®iÓm cña chiÕn tr­êng 6x/Denbu_NhanThuong6x")
 				end
 				
-				tinsert(tbSay,"Rêi khái/gf_DoNothing")
+				tinsert(tbSay,"Leave/gf_DoNothing")
 				Say(szNpcName.."§Ó cã thÓ bï ®¾p hÕt mäi lçi lÇm, c¸c h¹ h·y chän phÇn th­ëng cho m×nh. \n",getn(tbSay),tbSay)
 				return
 			-- else
@@ -43,7 +43,7 @@ function Denbu_NhanThuong4x()
 	tinsert(tbSay,"NhËn 3000 ®iÓm c«ng tr¹ng vµ 20.000.000 ®iÓm kinh nghiÖm(dïng qu©n c«ng ®¹i)/#Denbu_NhanThuong4x_01(3)")
 	tinsert(tbSay,"NhËn 6000 ®iÓm c«ng tr¹ng vµ 30.000.000 ®iÓm kinh nghiÖm(dïng qu©n c«ng huy hoµng)/#Denbu_NhanThuong4x_01(4)")
 	tinsert(tbSay,"NhËn 8400 ®iÓm c«ng tr¹ng vµ 45.000.000 ®iÓm kinh nghiÖm(dïng qu©n c«ng vinh dù)/#Denbu_NhanThuong4x_01(5)")
-	tinsert(tbSay,"Rêi khái/gf_DoNothing")
+	tinsert(tbSay,"Leave/gf_DoNothing")
 	Say(szNpcName.."C¸c h¹ muèn nhËn g× nµo? \n",getn(tbSay),tbSay)
 end
 
@@ -129,7 +129,7 @@ function Denbu_NhanThuong6x()
 	tinsert(tbSay,"NhËn 6000 ®iÓm c«ng tr¹ng vµ 40.000.000 ®iÓm kinh nghiÖm(dïng qu©n c«ng ®¹i)/#Denbu_NhanThuong6x_01(3)")
 	tinsert(tbSay,"NhËn 12000 ®iÓm c«ng tr¹ng vµ 60.000.000 ®iÓm kinh nghiÖm(dïng qu©n c«ng huy hoµng)/#Denbu_NhanThuong6x_01(4)")
 	tinsert(tbSay,"NhËn 16800 ®iÓm c«ng tr¹ng vµ 90.000.000 ®iÓm kinh nghiÖm(dïng qu©n c«ng vinh dù)/#Denbu_NhanThuong6x_01(5)")
-	tinsert(tbSay,"Rêi khái/gf_DoNothing")
+	tinsert(tbSay,"Leave/gf_DoNothing")
 	Say(szNpcName.."C¸c h¹ muèn nhËn g× nµo? \n",getn(tbSay),tbSay)
 end
 

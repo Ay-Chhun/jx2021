@@ -22,7 +22,7 @@ Include("\\script\\task\\teach\\teach_award.lua");
 function task_000_00()
 	local strMain = {
 		"<color=green>D· TÈu<color>: Chµo mõng ®Õn víi <color=yellow>Vâ L©m 2<color>, ta chİnh lµ D· TÈu trong truyÒn thuyÕn, <color=yellow>H­íng dÉn t©n thñ<color> cña trß ch¬i. Ng­¬i cã cÇn ta cho quyÓn <color=yellow>Giíi thiÖu trß ch¬i<color> vµ <color=yellow>Gióp ®ì nhiÖm vô<color> kh«ng? §©y lµ quyÓn Giang hå chØ nam do chİnh ta viÕt.",
-		"§a t¹ l·o tiÒn bèi!/task_000_okay", 
+		"Many thanks, venerable senior!/task_000_okay", 
 		"Ta ®Õn th¨m L·o tiÒn bèi th«i mµ!/task_000_01"
 	}
 	SetTask(1, 1);
@@ -40,7 +40,7 @@ function task_000_okay()
 		"Thao t¸c c¬ b¶n/Teach_Basic",
 		"T¨ng cÊp nh©n vËt/Teach_Level",
 		"Ph©n phèi tiÒm n¨ng/Teach_Point",
-		"Ph­¬ng ph¸p kiÕm tiÒn/Teach_Earn",
+		"How to make money/Teach_Earn",
 		"Gia nhËp m«n ph¸i/Teach_Faction",
 		"HiÖn cã thÓ lµm /Teach_Something",
 		"Ta ®· hiÓu råi/task_000_00"
@@ -192,7 +192,7 @@ function task_003_02()
 
 	TE_SetTeachAdd();
 	GivePlayerAward_Teach("Chñ Kim hoµn");
-	TaskTip("§Õn gÆp Chñ D­îc ®iÕm");
+	TaskTip("Go see the Pharmacy Owner");
 	TE_Talk("",strMain);
 
 end;
@@ -267,7 +267,7 @@ function task_005_02()
 	}
 	TE_SetTeachAdd();
 	GivePlayerAward_Teach("Chñ T¹p hãa");
-	TaskTip("Quay vÒ gÆp D· TÈu");
+	TaskTip("Return to see the Wild Wanderer");
 	TE_Talk("",strMain);
 
 end;
@@ -287,7 +287,7 @@ end;
 -- ÓëÒ°ÛÅ¶Ô»°½áÊøºó¸Ä±äÈÎÎñ±äÁ¿£º7
 function task_006_01()
 	TE_SetTeachAdd();
-	GivePlayerAward_Teach("§Õn gÆp D· TÈu");
+	GivePlayerAward_Teach("Go meet the Wanderer");
 	TaskTip("Ra ngoµi thµnh luyÖn c«ng, ®Õn cÊp 4 quay l¹i gÆp D· TÈu.");
 end;
 
@@ -295,8 +295,8 @@ end;
 function task_007_00()
 
 	local strMain = {
-		"Ng­¬i tiÕn bé nhanh vËy sao?",
-		"Kh«ng! Qu¸i bªn ngoµi m¹nh l¾m!",
+		"You progress so quickly?",
+		"No! The monsters out there are very strong!",
 		"<color=yellow>VÖ binh thµnh m«n<color> vµ <color=yellow>Vâ s­<color> ngoµi thµnh rÊt am hiÓu c¸ch chiÕn ®Êu vµ ph©n bè qu¸i, h·y ®Õn ®ã thØnh gi¸o ®i."
 	}
 	TE_Talk("task_007_01",strMain);
@@ -316,7 +316,7 @@ function task_008_00()
 		"Ng­¬i t×m ®óng ng­êi råi!",
 		"Qu¸i ®­îc ph©n bè bªn ngoµi thµnh hoÆc gÇn m«n ph¸i, cµng xa thµnh thŞ ®¼ng cÊp qu¸i cµng m¹nh, qu¸i m¹nh nhÊt kho¶ng <color=yellow>cÊp 50<color>.",
 		"Kh«ng nªn vµo c¸c s¬n ®éng v× n¬i ®ã qu¸i rÊt m¹nh.",
-		"Lµm sao ®Ó biÕt qu¸i n¬i ®ã nguy hiÓm?",
+		"How can I tell whether the monsters there are dangerous?",
 	}
 	TE_Talk("task_008_00_01",strMain);
 
@@ -350,7 +350,7 @@ function task_009_00()
 	local strMain = {
 		"D· TÈu b¶o ta ®Õn t×m tiÒn bèi häc <color=yellow>c¸ch chiÕn ®Êu<color>.",
 		"L·o phu ®©y rÊt thİch h­íng dÉn hËu bèi nh­ng tr­íc tiªn ph¶i hiÓu <color=yellow>kü n¨ng chiÕn ®Êu<color>. Ng­¬i ph©n biÖt ®­îc c«ng kİch tr¸i vµ c«ng kİch ph¶i kh«ng?",
-		"Kh«ng hiÓu l¾m!",
+		"I don't quite understand!",
 		"Bªn tr¸i chØ ®¸nh VËt lı, bªn ph¶i lµ ®¸nh vâ c«ng. Cã thÓ sö dông <color=yellow>vâ c«ng bªn ph¶i<color> ®¸nh qu¸i. Vâ c«ng m«n ph¸i, mËt tŞch hoÆc theo ta häc ®Òu sö dông ®­îc.",
 		"Kh«ng ngê bªn ph¶i h÷u hiÖu ®Õn nh­ vËy?",
 		"Ng­¬i muèn nhanh chãng h¹ ®­îc qu¸i cÇn ph¶i biÕt <color=yellow>thuéc tİnh cña chóng<color>.",
@@ -427,7 +427,7 @@ function task_011_00()
 		"Ch¼ng cã g× thó vŞ, tuy häc hái ®­îc rÊt nhiÒu tõ mÊy chñ tiÖm nh­ng hä ®Òu bËn. NÕu cã ng­êi <color=yellow>nãi chuyÖn<color> th× hay biÕt mÊy!",
 		"Kh«ng vui lµ ph¶i råi! Ng­¬i ph¶i th­êng xuyªn nãi chuyÖn víi hä.",
 		"ThÕ nµy vËy! H·y t×m <color=yellow>Chñ töu lÇu<color> vµ <color=yellow>Tiªu s­<color>, kh«ng chõng hä sÏ chØ d¹y ®­îc g× thªm!",
-		"Hay qu¸! VËy tiÓu bèi ®i t×m <color=yellow>Chñ töu lÇu<color> ®©y!"
+		"Wonderful! Then I'll go find the <color=yellow>Tavern Owner<color>!"
 	}
 	TE_Talk("task_011_01",strMain);
 end;
@@ -454,7 +454,7 @@ end;
 function task_012_00_01()
 	local strMain = {
 		"Khi muèn t¸n gÉu, nhÊn <color=yellow><Enter><color> hoÆc chän <color=yellow>TÇn sè t¸n gÉu <color>, nhËp tªn ng­êi ch¬i vµ néi dung muèn göi ®i, nhÊn <Enter> lµ ®­îc.",
-		"TÇn sè t¸n gÉu lµ sao?",
+		"What is a chat channel?",
 		"Cã nhiÒu tÇn sè ®Ó t¸n gÉu. <color=yellow>TÇn sè phô cËn<color> ng­êi ch¬i xung quanh nh×n thÊy. <color=yellow>TÇn sè c«ng céng<color> ng­êi ch¬i toµn server nh×n thÊy. <color=yellow>TÇn sè hÖ thèng<color> hiÓn thŞ th«ng b¸o cña hÖ thèng.",
 		"<color=yellow>TÇn sè ®éi ngò<color> chØ trong ®éi míi thÊy; <color=yellow>TÇn sè M«n ph¸i<color> chØ thuéc m«n ph¸i míi thÊy; <color=yellow>BÇn sè bang ph¸i<color> chØ ng­êi trong bang míi thÊy.",
 		"Sao cã lóc chän tÇn sè råi vÉn kh«ng t¸n gÉu ®­îc?",
@@ -469,7 +469,7 @@ function task_012_01()
 		"§Ó ®¶m b¶o cho chÊt l­îng t¸n gÉu, mçi tÇn sè ®Òu cã h¹n chÕ riªng. TÇn sè m«n ph¸i cÇn ng­êi ch¬i ph¶i gia nhËp m«n ph¸i, c¸ch nhau 1 phót. TÇn sè c«ng céng ®ßi hái ng­êi ch¬i trªn cÊp 30, c¸ch nhau 3 phót. TÇn sè bŞ h¹n chÕ sÏ hiÖn mµu ®á rÊt dÔ nh×n thÊy.",
 		"Ta hiÓu råi!",
 		"Muèn kÕt giao h¶o h÷u nªn t×m <color=yellow>Tiªu s­<color>, ng­êi nµy cã nhiÒu b»ng h÷u, nhÊt ®Şnh sÏ gióp ®­îc ng­¬i!",
-		"§a t¹ tiÒn bèi! Ta ®i t×m <color=yellow>Tiªu s­<color> ®©y!"
+		"Many thanks! I'll go find the <color=yellow>Escort Master<color>!"
 	}
 	TE_Talk("task_012_02",strMain);
 end;
@@ -497,7 +497,7 @@ function task_013_00_01()
 		"H¶o h÷u, kim lan hoÆc phu thª b×nh th­êng cïng tæ ®éi luyÖn c«ng sÏ ®­îc tİnh thªm kinh nghiÖm.",
 		"Th¶o nµo gÇn ®©y cã nhiÒu ng­êi xin ®­îc tæ ®éi.",
 		"R¶nh rçi nªn ®i gÆp <color=yellow>Vò N­¬ng<color>! B©y giê cã thÓ quay vÒ gÆp D· TÈu.",
-		"§a t¹! Ta ®i t×m <color=yellow>D· TÈu<color> ®©y!"
+		"Many thanks! I'll go find the <color=yellow>Wild Wanderer<color>!"
 	}
 	TE_Talk("task_013_01",strMain);
 end;
@@ -506,7 +506,7 @@ end;
 function task_013_01()
 	TE_SetTeachAdd();
 	GivePlayerAward_Teach("Tiªu s­");
-	TaskTip("Quay vÒ gÆp D· TÈu");
+	TaskTip("Return to see the Wild Wanderer");
 end;
 
 -- »ØÀ´ÓëÒ°ÛÅµÄ¶Ô»°
@@ -569,7 +569,7 @@ local strMain = {
 }
 
 	TE_SetTeachAdd();
-	GivePlayerAward_Teach("NhiÖm vô kÕt giao h¶o h÷u");
+	GivePlayerAward_Teach("Quest to make friends");
 	TaskTip("NhiÖm vô hoµn thµnh ®Õn cÊp 8 quay l¹i t×m D· TÈu!");
 	TE_Talk("",strMain);
 end;
@@ -579,7 +579,7 @@ function task_016_00()
 
 	local strMain = {
 		"Nhanh thËt! ChØ cßn 2 cÊp n÷a lµ b¹n trÎ cã thÓ gia nhËp m«n ph¸i råi!",
-		"Còng nhê tiÒn bèi h­íng dÉn tËn t×nh.",
+		"It's all thanks to your careful guidance, elder.",
 		"§õng kh¸ch s¸o, nhiÖm vô cña ta lµ h­íng dÉn T©n thñ mµ! Ng­¬i mau ®Õn c¸c m«n ph¸i t×m hiÓu nĞt <color=yellow>®Æc s¾c<color> ë ®ã.",
 		"Nh­ng tiÓu bèi cßn ch­a biÕt ph¶i b¾t ®Çu tõ ®©u!",
 		"Trong mçi thµnh thŞ ®Òu cã <color=yellow>Sø gi¶ m«n ph¸i<color>, h·y ®Õn ®ã thØnh gi¸o! LÇn tr­íc <color=yellow>B¸ch HiÓu Sinh<color> cã hái ta <color=yellow>6 c©u hái<color>, chuyÕn nµy trë vÒ gióp ta gi¶i ®¸p ®­îc kh«ng?"
@@ -596,7 +596,7 @@ end;
 
 -- ÔÙ´Î»ØÀ´ÓëÒ°ÛÅµÄ¶Ô»°
 function task_017_00()
-	Say("Ng­¬i hiÓu hÕt ®Æc s¾c cña c¸c m«n ph¸i ch­a?",2,"HiÓu råi!/Teach_Qustion_001","Ch­a hiÓu l¾m!/task_exit");
+	Say("Ng­¬i hiÓu hÕt ®Æc s¾c cña c¸c m«n ph¸i ch­a?",2,"HiÓu råi!/Teach_Qustion_001","Not quite yet!/task_exit");
 	return
 end;
 
@@ -650,7 +650,7 @@ function task_018_01()
 		"ThËt ra theo h­íng nµo còng cã ­u ®iÓm riªng cña nã, cÇn ph¶i chän lùa s­ phô sau khi gia nhËp m«n ph¸i.",
 		"NhiÒu m«n ph¸i vµ nhiÒu h­íng tu luyÖn, ta ph¶i lµm sao?",
 		"Tu hµnh tïy mçi ng­êi th«i!",
-		"§a t¹ tiªn sinh!",
+		"Many thanks, sir!",
 		"H·y quay vÒ gÆp <color=yellow>D· TÈu<color> ®i!"
 	}
 	TE_Talk("task_018_02",strMain);
@@ -662,7 +662,7 @@ function task_018_02()
     Earn(100);
 	ModifyReputation(4,0);
 	GivePlayerExp(SKeyXinShou,"baixiaosheng")
-	TaskTip("VÒ gÆp D· TÈu");
+	TaskTip("Return to see the Wild Wanderer");
 end;
 
 -- ÔÙ´Î»ØÀ´ÓëÒ°ÛÅµÄ¶Ô»°
@@ -698,7 +698,7 @@ end;
 -- ÓëÒ°ÛÅ¶Ô»°½áÊøºó¸Ä±äÈÎÎñ±äÁ¿£º21
 function task_020_01()
 	TE_SetTeachAdd();
-	TaskTip("D· TÈu nhê b¹n mang bøc th­ cho TriÖu Diªn Niªn ë BiÖn Kinh");
+	TaskTip("The Wild Wanderer asks you to deliver a letter to Zhao Yan Nian in Bianjing");
 	AddItem(2,0,48,1);
 	GivePlayerExp(SKeyXinShou,"yeshou3")
 	RestoreStamina()
@@ -709,15 +709,15 @@ end;
 function task_021_00()
 
 	local strMain = {
-		"VŞ "..GetPlayerSex().." ®Õn ®¸nh cê víi ta ch¨ng?",
-		"D· TÈu nhê ta mang bøc th­ cho tiÒn bèi!",
+		"Position"..GetPlayerSex().." ®Õn ®¸nh cê víi ta ch¨ng?",
+		"The Wild Wanderer asked me to deliver a letter to you, elder!",
 		"Ra lµ vËy! L¹i bŞ phiÒn phøc n÷a råi!",
-		"(TriÖu Diªn Niªn më th­ ra xem)",
+		"(Zhao Yan Nian opens the letter to read it)",
 		"Ta ®ãi qu¸, ng­¬i cã thÓ t×m cho ta 1 c¸i <color=yellow>b¸nh ng«<color> ®­îc kh«ng?",
-		"Móa kiÕm th× ®­îc, b¸nh ng« th×.....",
+		"I can do sword dances, but corn cakes...",
 		"B¸nh ng« ®¬n gi¶n thÕ còng kh«ng lµm ®­îc, sao hµnh tÈu giang hå!",
 		"Nhí kü! Ng­¬i më <color=yellow>giao diÖn kü n¨ng<color> chän <color=yellow>tuyÖt kü gia truyÒn<color> sau ®ã nhÊn <color=yellow>B¸nh ng«<color> råi <color=yellow>§ång ı<color> lµ ®­îc.",
-		"§Ó v·n bèi thö xem!",
+		"Let me give it a try!",
 	}
 
 	TE_Talk("task_021_01",strMain);
@@ -738,7 +738,7 @@ function task_022_00()
 
 	local strMain = {
 		"Ng­¬i qu¶ lµ ng­êi tèt bông, ®Ó l·o phu kÓ ng­¬i nghe c©u chuyÖn 30 n¨m vÒ tr­íc.",
-		"Lµm phiÒn tiÒn bèi!",
+		"Sorry to trouble you, senior!",
 		"30 n¨m tr­íc th¸i tæ TriÖu Khu«ng DÉn ®o¹t ®­îc <color=yellow>b¶n ®å S¬n Hµ X· T¾c<color> tõ tay Sµi Vinh, bİ mËt liªn l¹c c¸c m«n ph¸i cïng t×m b¶n ®å kho b¸u bªn trong ®ång thêi ph¸t ®éng binh biÕn TrÇn kiÒu, m­u ®å so¸i vŞ. Kh«ng ai biÕt ®ã chİnh lµ tÊm b¶n ®å cña Thiªn, §Şa, Nh©n <color=yellow>Tam Giíi chÊn phï<color>, long m¹ch cña Trung Nguyªn, b¸u vËt mµ Sµi Vinh ®em tİnh m¹ng ra giµnh lÊy. ViÖc lµm cña th¸i tæ dÉn ®Õn trêi ®Êt c¨m phÉn, trong ngµy ®¹i lÔ tÕ trêi, S¬n Hµ X· T¾c ®ét nhiªn hãa thµnh tro bôi, bay ®i kh¾p n¬i.",
 		"Th¸i tæ biÕt m×nh ®· lµm nghŞch ı trêi, ®¶o lén cµn kh«n tam giíi, yªu ma hiÖn thÕ, Trung Nguyªn s¾p l©m vµo ®¹i kiÕp. §Ó söa sai lÇm, mét bªn chÊn chØnh l¹i c¸c côc diÖn, mÆt kh¸c bè c¸o thiªn h¹, hy väng t×m ®­îc ng­êi kiÕm l¹i nh÷ng m¶nh b¶n ®å S¬n Hµ X· T¾c."
 	};
@@ -789,7 +789,7 @@ end;
 function task_023_01()
 	TE_SetTeachAdd();
 	AddItem(2,0,49,3);
-	TaskTip("TriÖu Diªn Niªn nhê mang 3 bøc th­ cho D· TÈu");
+	TaskTip("Zhao Yannian asks you to deliver 3 letters to Ye Sou");
 end;
 
 
@@ -799,9 +799,9 @@ function task_024_00()
 		"VÒ råi ­? Ng­¬i biÕt TriÖu Diªn Niªn lµ ai kh«ng?",
 		"V·n bèi kh«ng biÕt!",
 		"TriÖu Diªn Niªn vèn ng­êi hoµng téc, do ch¸n c¶nh tranh quyÒn chèn hoµng cung mµ quyÕt ®Şnh bá hÕt danh lîi, phiªu b¹t giang hå.",
-		"Th× ra lµ vËy!",
+		"So that's how it is!",
 		"<color=green>D· TÈu<color>: HiÖn t¹i ng­¬i ®· cã chót thµnh tùu, nÕu muèn tiÕp tôc h·y ®Õn ThËp §¹i <color=yellow>M«n Ph¸i<color> häc tËp lŞch luyÖn. Dï cã khã kh¨n thÕ nµo, h·y kiªn tr× tiÕp tôc.",
-		"§a t¹ tiÒn bèi!"
+		"Many thanks, senior!"
 	}
 	TE_Talk("task_024_01",strMain);
 end;
@@ -811,10 +811,10 @@ function task_024_01()
 
 	local strMain = {
 		"Ng­¬i gióp ta chuyÓn 3 bøc th­ cña TriÖu Diªn Niªn ®­îc kh«ng?",
-		"§­îc th«i! Nh­ng mang ®Õn cho ai vËy?",
+		"Of course! But who are they to be delivered to?",
 		"TriÖu Diªn Niªn lo c¸c ®Şa ph­¬ng x¶y ra <color=yellow>biÕn cè<color>, cho nªn muèn liªn l¹c c¸c vŞ sau. <color=yellow>KhÊu ChuÈn<color> ng­êi chİnh trùc hiÖn ®ang lµm quan ë <color=yellow>BiÖn Kinh<color>; <color=yellow>Ph¹m Träng Yªm<color> v¨n quan hiÖn ë <color=yellow>Nam Thµnh §«<color>; <color=yellow>V­¬ng NghiÖp VÜ<color> th­¬ng gia sµnh sø hiÖn ë <color=yellow>TuyÒn Ch©u<color>.",
 		"ChØ cÇn mang th­ ®Õn cho bän hä lµ §­îc! §©y ta cã chót quµ tÆng ng­¬i, ®i ®­êng cÈn thËn nhĞ!",
-		"Xin ®a t¹! V·n bèi ®i ®©y."
+		"Many thanks! This junior takes his leave."
 	}
 	TE_Talk("task_024_02",strMain);
 end
@@ -823,7 +823,7 @@ end
 -- ÓëÒ°ÛÅ¶Ô»°½áÊøºó¸Ä±äÈÎÎñ±äÁ¿£º25
 function task_024_02()
 	TE_SetTeachAdd();
-	GivePlayerAward_Teach("ChuyÖn giang hå");
+	GivePlayerAward_Teach("Tales of the martial world");
 	TaskTip("Hoµn thµnh nhiÖm vô T©n thñ cã thÓ phiªu b¹t giang hå!");
 	SetTask(130,1); --ÍõÒµÎ°
 	SetTask(131,1); --¿Ü×¼
@@ -921,27 +921,27 @@ function Teach_Qustion_001()
 end
 
 function Teach_Qustion_002()
-	Say("Tr¶ lêi tèt l¾m! C©u hái tiÕp theo: KiÕm ph¸p Vâ §ang xuÊt thÇn nhËp quû do ®Ö tö ®¹o gia hay ®Ö tö tôc gia luyÖn?",3,"§¹o gia ®Ö tö/Teach_Qustion_003","Tôc gia ®Ö tö/Teach_Qustion_Error","C¶ hai ®Òu ®óng/Teach_Qustion_Error");
+	Say("Tr¶ lêi tèt l¾m! C©u hái tiÕp theo: KiÕm ph¸p Vâ §ang xuÊt thÇn nhËp quû do ®Ö tö ®¹o gia hay ®Ö tö tôc gia luyÖn?",3,"Taoist disciples/Teach_Qustion_003","Secular disciples/Teach_Qustion_Error","Both are correct/Teach_Qustion_Error");
 	return
 end
 
 function Teach_Qustion_003()
-	Say("Kh¸ l¾m! C©u hái 3: §­êng M«n ®­îc xem lµ gia téc m«n ph¸i, vËy ng­êi phô tr¸ch m«n ph¸i lµ ai?",4,"M«n chñ/Teach_Qustion_Error","L·o l·o/Teach_Qustion_004","Ch­ëng m«n/Teach_Qustion_Error","Tæng qu¶n/Teach_Qustion_Error");
+	Say("Kh¸ l¾m! C©u hái 3: §­êng M«n ®­îc xem lµ gia téc m«n ph¸i, vËy ng­êi phô tr¸ch m«n ph¸i lµ ai?",4,"M«n chñ/Teach_Qustion_Error","L·o l·o/Teach_Qustion_004","The Sect Leader/Teach_Qustion_Error","Tæng qu¶n/Teach_Qustion_Error");
 	return
 end
 
 function Teach_Qustion_004()
-	Say("C©u hái tiÕp theo: §Ö tö tôc gia Nga My sö dông binh khİ nµo?",4,"Thİch/Teach_Qustion_Error","KiÕm/Teach_Qustion_Error","CÇm/Teach_Qustion_005","Bót/Teach_Qustion_Error");
+	Say("C©u hái tiÕp theo: §Ö tö tôc gia Nga My sö dông binh khİ nµo?",4,"Dagger/Teach_Qustion_Error","KiÕm/Teach_Qustion_Error","Zither/Teach_Qustion_005","Brush/Teach_Qustion_Error");
 	return
 end
 
 function Teach_Qustion_005()
-	Say("§óng råi! C©u hái 5: Vâ c«ng ThiÕu L©m tinh th©m khã ®o¸n, 72 tuyÖt kü danh chÊn thiªn h¹. VËy ThiÕu L©m cã mÊy h­íng tu luyÖn?",4,"Mét/Teach_Qustion_Error","Hai/Teach_Qustion_Error","Ba/Teach_Qustion_006","Bèn/Teach_Qustion_Error");
+	Say("§óng råi! C©u hái 5: Vâ c«ng ThiÕu L©m tinh th©m khã ®o¸n, 72 tuyÖt kü danh chÊn thiªn h¹. VËy ThiÕu L©m cã mÊy h­íng tu luyÖn?",4,"One/Teach_Qustion_Error","Hai/Teach_Qustion_Error","Ba/Teach_Qustion_006","Four/Teach_Qustion_Error");
 	return
 end
 
 function Teach_Qustion_006()
-	Say("C©u hái cuèi cïng: Nghe nãi ®Ö tö C¸i Bang cã ¤ Y, TŞnh Y, vËy ®Ö tö TŞnh Y tu luyÖn vâ c«ng nµo?",4,"C«n ph¸p/Teach_Qustion_Error","Ch­ëng ph¸p/task_017_01","ThuÇn d­ìng/Teach_Qustion_Error","BÉy/Teach_Qustion_Error");
+	Say("C©u hái cuèi cïng: Nghe nãi ®Ö tö C¸i Bang cã ¤ Y, TŞnh Y, vËy ®Ö tö TŞnh Y tu luyÖn vâ c«ng nµo?",4,"C«n ph¸p/Teach_Qustion_Error","Palm Techniques/task_017_01","Taming/Teach_Qustion_Error","Traps/Teach_Qustion_Error");
 	return
 end
 

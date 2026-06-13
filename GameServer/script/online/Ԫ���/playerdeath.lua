@@ -5,7 +5,7 @@ function OnDeath(Launcher)
 		KillFollower()
 		SetTaskTemp(TASK_FLAG_FOLLOW,0)
 		RemoveTitle(3,3)
-		local npcFlag = CreateNpc("Tiªu s­-®èi tho¹i","Tiªu kú",GetWorldPos())
+		local npcFlag = CreateNpc("Tiªu s­-®èi tho¹i","Banner",GetWorldPos())
 		SetNpcScript(npcFlag,"\\script\\online\\Ôªµ©»î¶¯\\Æì×Ó.lua")
 		SetDeathScript("")	
 	end

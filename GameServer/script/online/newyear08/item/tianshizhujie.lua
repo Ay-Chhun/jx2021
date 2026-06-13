@@ -5,10 +5,10 @@
 function OnUse()
 	Say("Sö dông Thiªn Thêi Chó Gi¶i sÏ t¨ng 1000 kinh nghiÖm thu thËp kü n¨ng, b¹n muèn t¨ng kü n¨ng kinh nghiÖm sèng nµo? <color=yellow>Chó ý: t¨ng kinh nghiÖm sÏ kh«ng v­ît qu¸ ®¼ng cÊp kü n¨ng sèng tr­íc ®©y.<color>",
 		5,
-		"§èn c©y/#get_lifeskill_exp(1)",
-		"Lµm da/#get_lifeskill_exp(2)",
-		"§µo kho¸ng/#get_lifeskill_exp(5)",
-		"KÐo t¬/#get_lifeskill_exp(6)",
+		"Lantern/#get_lifeskill_exp(1)",
+		"Tanning/#get_lifeskill_exp(2)",
+		"Mining/#get_lifeskill_exp(5)",
+		"Silk reeling/#get_lifeskill_exp(6)",
 		"Kh«ng sö dông/")
 end
 

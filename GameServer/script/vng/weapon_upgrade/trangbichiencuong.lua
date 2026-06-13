@@ -14,10 +14,10 @@ LIB_Award.szLogAction = "nhËn"
 tbRoute = {[2] = 1, [4] = 1, [3] = 1, [6] = 1, [8] = 1, [9] = 1, [11] = 1, [12] = 1, [14] = 1, [15] = 1, [17] = 1, [18] = 1, [20] = 1, [21] = 1, [23] = 1, [29] = 1,[30] = 1,}
 
 tbChienCuongNguyenLieu = {
-	[1] = {item={{gdp={2,95,204,2}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,2}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,1005,6}, name="ChiÕn ThÇn Hoµn"}, {gdp={2,1,30499,50}, name="Hu©n Ch­¬ng Anh Hïng"}}},
-	[2] = {item={{gdp={2,95,204,2}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,2}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,1005,6}, name="ChiÕn ThÇn Hoµn"}, {gdp={2,1,30499,50}, name="Hu©n Ch­¬ng Anh Hïng"}}},
-	[3] = {item={{gdp={2,95,204,2}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,2}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,1005,6}, name="ChiÕn ThÇn Hoµn"}, {gdp={2,1,30499,50}, name="Hu©n Ch­¬ng Anh Hïng"}}},
-	[4] = {item={{gdp={2,95,204,2}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,2}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,1005,9}, name="ChiÕn ThÇn Hoµn"}, {gdp={2,1,30499,50}, name="Hu©n Ch­¬ng Anh Hïng"}}},
+	[1] = {item={{gdp={2,95,204,2}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,2}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,1005,6}, name="ChiÕn ThÇn Hoµn"}, {gdp={2,1,30499,50}, name="Hero's Medal"}}},
+	[2] = {item={{gdp={2,95,204,2}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,2}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,1005,6}, name="ChiÕn ThÇn Hoµn"}, {gdp={2,1,30499,50}, name="Hero's Medal"}}},
+	[3] = {item={{gdp={2,95,204,2}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,2}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,1005,6}, name="ChiÕn ThÇn Hoµn"}, {gdp={2,1,30499,50}, name="Hero's Medal"}}},
+	[4] = {item={{gdp={2,95,204,2}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,2}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,1005,9}, name="ChiÕn ThÇn Hoµn"}, {gdp={2,1,30499,50}, name="Hero's Medal"}}},
 }
 
 function TrangBiChienCuong_Form()
@@ -41,7 +41,7 @@ function NguLong2ChienCuong_Form()
 	local szSay = "§æi trang bÞ ChiÕn Cuång +0 tõ trang bÞ Ngù Long T­íng Qu©n cÇn:\n"
 	szSay = szSay .. "+ Trang bÞ: Nãn, ¸o, quÇn Ngù Long T­íng Qu©n +11, 4 ChiÕn ThÇn Hoµn, 100 Huy Ch­¬ng Dòng SÜ.\n"
 	local tbSay = {}
-	tinsert(tbSay, "Ta ®ång ý ®æi/NguLong2ChienCuong")
+	tinsert(tbSay, "I agree to exchange/NguLong2ChienCuong")
 	tinsert(tbSay, "Ta muèn suy nghÜ thªm/gf_DoNothing")
 	Say(szSay, getn(tbSay), tbSay)
 end
@@ -59,7 +59,7 @@ function ThuongUng2ChienCuong_Form()
 	local szSay = "§æi trang bÞ ChiÕn Cuång +10 tõ trang bÞ Th­¬ng ¦ng T­íng Qu©n cÇn:\n"
 	szSay = szSay .. "+ Trang bÞ: Nãn, ¸o, quÇn Th­¬ng ¦ng T­íng Qu©n +11, 3 ChiÕn ThÇn Hoµn, 100 Huy Ch­¬ng Dòng SÜ.\n"
 	local tbSay = {}
-	tinsert(tbSay, "Ta ®ång ý ®æi/ThuongUng2ChienCuong")
+	tinsert(tbSay, "I agree to exchange/ThuongUng2ChienCuong")
 	tinsert(tbSay, "Ta muèn suy nghÜ thªm/gf_DoNothing")
 	Say(szSay, getn(tbSay), tbSay)
 end
@@ -80,7 +80,7 @@ function TrangBiChienCuong_CongThuc1()
 		"Ta muèn lÊy Th­îng Y/#ChienCuong_DoiTrangBi(2)",
 		"Ta muèn lÊy H¹ Trang/#ChienCuong_DoiTrangBi(3)",
 		"Ta muèn lÊy Vò KhÝ/#ChienCuong_DoiTrangBi(4)",
-		"Ta ®Õn xem th«i/gf_DoNothing",
+		"I am just here to look/gf_DoNothing",
 	}
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -134,7 +134,7 @@ function TrangBiChienCuong_CongThuc2_Form()
 	szSay = szSay .. "+ Trang bÞ: Nãn, ¸o, quÇn DiÖu D­¬ng +13 trë lªn, 1 Thiªn Cang LÖnh, 1 Thiªn M«n Kim LÖnh, 5 ChiÕn ThÇn Hoµn, 50 Hu©n Ch­¬ng Anh Hïng.\n"
 	szSay = szSay .. "+ Vò khÝ: Vò khÝ DiÖu D­¬ng +13 trë lªn, 1 Thiªn Cang LÖnh, 1 Thiªn M«n Kim LÖnh, 7 ChiÕn ThÇn Hoµn, 50 Hu©n Ch­¬ng Anh Hïng.\n"
 	local tbSay = {}
-	tinsert(tbSay, "Ta ®ång ý ®æi/TrangBiChienCuong_CongThuc2")
+	tinsert(tbSay, "I agree to exchange/TrangBiChienCuong_CongThuc2")
 	tinsert(tbSay, "Ta muèn suy nghÜ thªm/gf_DoNothing")
 	Say(szSay, getn(tbSay), tbSay)
 end
@@ -155,7 +155,7 @@ function TrangBiChienCuong_CongThuc3_Form()
 	szSay = szSay .. "+ Trang bÞ: Nãn, ¸o, quÇn DiÖu D­¬ng +13, 19 Thiªn Th¹ch Tinh Th¹ch, 19 Hu©n Ch­¬ng Anh Hïng, 6 ChiÕn ThÇn Hoµn.\n"
 	szSay = szSay .. "+ Vò khÝ: Vò khÝ DiÖu D­¬ng +13, 44 Thiªn Th¹ch Tinh Th¹ch, 44 Hu©n Ch­¬ng Anh Hïng, 11 ChiÕn ThÇn Hoµn.\n"
 	local tbSay = {}
-	tinsert(tbSay, "Ta ®ång ý ®æi/TrangBiChienCuong_CongThuc3")
+	tinsert(tbSay, "I agree to exchange/TrangBiChienCuong_CongThuc3")
 	tinsert(tbSay, "Ta muèn suy nghÜ thªm/gf_DoNothing")
 	Say(szSay, getn(tbSay), tbSay)
 end

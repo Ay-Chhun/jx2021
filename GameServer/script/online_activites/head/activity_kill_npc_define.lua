@@ -9,7 +9,7 @@ AKCD_TABLE = {
 		tAward = {
 			nAwardTag = 3, --Áì½±×´Ì¬0Î´ÁìÈ¡1ÁìÈ¡2ÒÑÁìÈ¡ÌØÊâ
 			tDialog = {
-				[1] = "phæ th«ng ( miÔn phÝ )",
+				[1] = "Common ( free )",
 				[2] = "¦u ®·i ( tiªu hao 89 tiªu dao ngäc)",
 				[3] = "Siªu cÊp ( tiªu hao 555 tiªu dao ngäc)",
 			},
@@ -28,7 +28,7 @@ AKCD_TABLE = {
 				bIsOpen = 1,
 				nRebornLimitUp = 6,
 				sTitle = "H¾c B¹ch Song Long Tiªn ThuËt ( tiªu hao 203 b¹ch kú + 203 h¾c kú + 203 tiªu dao ngäc + 203 xu +203 vµng)",
-				tCost = {{2,1, 30639, 203, " b¹ch kú "}, {2,1, 30640, 203, " h¾c kú "}, {2, 1, 30603, 203, "Tiªu Dao Ngäc"}, {2, 1, 30230, 203, "XU"}, {2030000}},
+				tCost = {{2,1, 30639, 203, " White Flag"}, {2,1, 30640, 203, " Black Flag"}, {2, 1, 30603, 203, "Tiªu Dao Ngäc"}, {2, 1, 30230, 203, "XU"}, {2030000}},
 				nFreeRoom = {1, 1},
 				sAwardFunc = "fakct_Award201404_GetSpecialAward()",
 			},
@@ -42,7 +42,7 @@ AKCD_TABLE = {
 				KillNpc = {
 					[1] = {
 						{333, "Ngäc phong", "Thóy Yªn"},
-						{333, "Mao Ng­u", "Miªu LÜnh"},
+						{333, "Mao Ng­u", "Miaoling"},
 					},
 					[2] = {
 						{666, "CÇm Tiªn Tö", "V­¬ng MÉu ®éng_2"},
@@ -53,14 +53,14 @@ AKCD_TABLE = {
 				},
 				DropItem = {
 					[1] = {
-						["Ngäc phong"] = {222, "Tæ ong", {2,1,13}, 30},
-						["Mao Ng­u"] = {222, "Mao Ng­u b×", {2,1,287}, 30},
+						["Ngäc phong"] = {222, "Beehive", {2,1,13}, 30},
+						["Mao Ng­u"] = {222, "Yak Hide", {2,1,287}, 30},
 					},
 					[2] = {
-						["§Þch tiªn Tö"] = {222, "Linh §Þch", {2,1,187}, 30},
+						["§Þch tiªn Tö"] = {222, "Spirit Flute", {2,1,187}, 30},
 					},
 					[3] = {
-						["Ng­êi c©y"] = {99, "RÔ c©y ngµn n¨m", {2,1,1422}, 30},
+						["Ng­êi c©y"] = {99, "Thousand-Year Tree Root", {2,1,1422}, 30},
 					},
 				},
 				tAward = {
@@ -70,36 +70,36 @@ AKCD_TABLE = {
 				}
 			},
 			[2] = {
-				szTargetNpcName = "Hé MÉn",
+				szTargetNpcName = "Hu Min",
 				szNpcPosName = "Thóy Yªn (199,172)",
 				szTargetNpcTitle = "tiªu diÖt ph¶n qu©n, thu thËp tµi nguyªn chÕ t¹o ®éc d­îc, vò khÝ  ",
 				tTaskIndex = {6, 7}, --Ê¹ÓÃµÄÈÎÎñ±äÁ¿Ë÷Òý¼ÇÂ¼É±¹Ö¸öÊý
 				KillNpc = {
 					[1] = {
-						{222, "Ph¶n Qu©n tuÇn la", "T©y Song B¶n N¹p Nam "},
-						{222, "VÖ sÜ ph¶n qu©n", "T©y Song B¶n N¹p Nam "},
+						{222, "Ph¶n Qu©n tuÇn la", "Xishuangbanna South"},
+						{222, "VÖ sÜ ph¶n qu©n", "Xishuangbanna South"},
 					},
 					[2] = {
-						{222, "Ph¶n Qu©n tuÇn la", "T©y Song B¶n N¹p Nam "},
-						{222, "VÖ sÜ ph¶n qu©n", "T©y Song B¶n N¹p Nam "},
+						{222, "Ph¶n Qu©n tuÇn la", "Xishuangbanna South"},
+						{222, "VÖ sÜ ph¶n qu©n", "Xishuangbanna South"},
 					},
 					[3] = {
-						{222, "Ph¶n Qu©n tuÇn la", "T©y Song B¶n N¹p Nam "},
-						{222, "VÖ sÜ ph¶n qu©n", "T©y Song B¶n N¹p Nam "},
+						{222, "Ph¶n Qu©n tuÇn la", "Xishuangbanna South"},
+						{222, "VÖ sÜ ph¶n qu©n", "Xishuangbanna South"},
 					},
 				},
 				DropItem = {
 					[1] = {
-						["Ph¶n Qu©n tuÇn la"] = {66, "Thuèc næ", {2,1,298}, 30},
-						["VÖ sÜ ph¶n qu©n"] = {66, "Tµn kiÕm", {2,1,299}, 30},
+						["Ph¶n Qu©n tuÇn la"] = {66, "Explosive Powder", {2,1,298}, 30},
+						["VÖ sÜ ph¶n qu©n"] = {66, "Worn Sword", {2,1,299}, 30},
 					},
 					[2] = {
-						["Ph¶n Qu©n tuÇn la"] = {66, "Thuèc næ", {2,1,298}, 30},
-						["VÖ sÜ ph¶n qu©n"] = {66, "Tµn kiÕm", {2,1,299}, 30},
+						["Ph¶n Qu©n tuÇn la"] = {66, "Explosive Powder", {2,1,298}, 30},
+						["VÖ sÜ ph¶n qu©n"] = {66, "Worn Sword", {2,1,299}, 30},
 					},
 					[3] = {
-						["Ph¶n Qu©n tuÇn la"] = {66, "Thuèc næ", {2,1,298}, 30},
-						["VÖ sÜ ph¶n qu©n"] = {66, "Tµn kiÕm", {2,1,299}, 30},
+						["Ph¶n Qu©n tuÇn la"] = {66, "Explosive Powder", {2,1,298}, 30},
+						["VÖ sÜ ph¶n qu©n"] = {66, "Worn Sword", {2,1,299}, 30},
 					},
 				},
 				tAward = {
@@ -201,7 +201,7 @@ AKCD_TABLE = {
 	[128] = {
 		nAcitvityID = 128,
 		tTaskGroup = {10, 9},
-		szTaskName = "B¸ch §éc BÊt X©m",
+		szTaskName = "Hundred Poisons Cannot Invade",
 		szStartName = "Th«n tr­ëng",
 		szSayWhat = "§¹i Liªu lín m¹nh, c¸c chiÕn sÜ trªn th¶o nguyªn ®ang cÇn sù gióp søc. §¹i hiÖp cã thÓ gióp ®ì kh«ng?",
 		nDaySeq = 1, --ÈÎÎñ±äÁ¿ÖØÖÃ±ê¼Ç
@@ -238,16 +238,16 @@ AKCD_TABLE = {
 				tTaskIndex = {4, 5}, --Ê¹ÓÃµÄÈÎÎñ±äÁ¿Ë÷Òý¼ÇÂ¼É±¹Ö¸öÊý
 				KillNpc = {
 					[1] = {
-						{399, "Vâ sÜ dÞ téc", "§¹i Th¶o Nguyªn 2"},
-						{399, "TiÔn thñ dÞ téc", "§¹i Th¶o Nguyªn 2"},
+						{399, "Vâ sÜ dÞ téc", "Great Grassland 2"},
+						{399, "TiÔn thñ dÞ téc", "Great Grassland 2"},
 					},
 					[2] = {
-						{399, "Vâ sÜ dÞ téc", "§¹i Th¶o Nguyªn 2"},
-						{399, "TiÔn thñ dÞ téc", "§¹i Th¶o Nguyªn 2"},
+						{399, "Vâ sÜ dÞ téc", "Great Grassland 2"},
+						{399, "TiÔn thñ dÞ téc", "Great Grassland 2"},
 					},
 					[3] = {
-						{399, "Vâ sÜ dÞ téc", "§¹i Th¶o Nguyªn 2"},
-						{399, "TiÔn thñ dÞ téc", "§¹i Th¶o Nguyªn 2"},
+						{399, "Vâ sÜ dÞ téc", "Great Grassland 2"},
+						{399, "TiÔn thñ dÞ téc", "Great Grassland 2"},
 					},
 				},
 				DropItem = {},
@@ -276,7 +276,7 @@ AKCD_TABLE = {
 			},
 			[3] = {
 				szTargetNpcName = "D­¬ng NguyÖt s­ th¸i",
-				szNpcPosName = "Nga Mi Ph¸i 205/192",
+				szNpcPosName = "Emei Sect 205/192",
 				szTargetNpcTitle = "§éc d­îc Nhiªu L©n chØ cã Thiªn Hoa T¸n míi cã thÓ ®iÒu trÞ, muèn cã Thiªn Hoa T¸n ph¶i tiªu diÖt Ho¶ Kú L©n vµ Trïng Qu¸i V­¬ng.",
 				tTaskIndex = {6, 7}, --Ê¹ÓÃµÄÈÎÎñ±äÁ¿Ë÷Òý¼ÇÂ¼É±¹Ö¸öÊý
 				KillNpc = {
@@ -313,12 +313,12 @@ AKCD_TABLE = {
 		tAward = {
 			nAwardTag = 3, --Áì½±×´Ì¬0Î´ÁìÈ¡1ÁìÈ¡2ÒÑÁìÈ¡ÌØÊâ
 			tDialog = {
-				[1] = "Phæ th«ng (Tiªu hao 1 Bµn Long BÝch)",
-				[2] = "¦u ®·i (Tiªu hao 3 Bµn Long BÝch)",
+				[1] = "Common (Consumes 1 Coiling Dragon Jade)",
+				[2] = "Discount (Consumes 3 Coiling Dragon Jade)",
 			},
 			tCost = {
-				[1] = {{2, 1, 1000, 1, "Bµn Long bÝch"}},
-				[2] = {{2, 1, 1000, 3, "Bµn Long bÝch"}},
+				[1] = {{2, 1, 1000, 1, "Coiling Dragon Jade"}},
+				[2] = {{2, 1, 1000, 3, "Coiling Dragon Jade"}},
 			},
 			tFreeRoom = {0, 2},
 			tAwardFunc = {
@@ -400,12 +400,12 @@ AKCD_TABLE = {
 		tAward = {
 			nAwardTag = 3, --Áì½±×´Ì¬0Î´ÁìÈ¡1ÁìÈ¡2ÒÑÁìÈ¡ÌØÊâ
 			tDialog = {
-				[1] = "Phæ th«ng (Tiªu hao 1 Bµn Long BÝch)",
-				[2] = "¦u ®·i (Tiªu hao 3 Bµn Long BÝch)",
+				[1] = "Common (Consumes 1 Coiling Dragon Jade)",
+				[2] = "Discount (Consumes 3 Coiling Dragon Jade)",
 			},
 			tCost = {
-				[1] = {{2, 1, 1000, 1, "Bµn Long bÝch"}},
-				[2] = {{2, 1, 1000, 3, "Bµn Long bÝch"}},
+				[1] = {{2, 1, 1000, 1, "Coiling Dragon Jade"}},
+				[2] = {{2, 1, 1000, 3, "Coiling Dragon Jade"}},
 			},
 			tFreeRoom = {0, 2},
 			tAwardFunc = {
@@ -507,21 +507,21 @@ AKCD_TABLE = {
 		tTaskStep = {
 			[1] = {
 				szTargetNpcName = "B¹ch Thiªn Thµnh",
-				szNpcPosName = "Mª Cung Sa M¹c 194/166",
+				szNpcPosName = "Desert Labyrinth 194/166",
 				szTargetNpcTitle = "Sa M¹c Hµnh Nh©n vµ TÇm B¶o Nh©n n¾m gi÷ bÝ mËt tµng b¶o ®å, h·y mau ®i t×m chóng!",
 				tTaskIndex = {4, 5}, --Ê¹ÓÃµÄÈÎÎñ±äÁ¿Ë÷Òý¼ÇÂ¼É±¹Ö¸öÊý
 				KillNpc = {
 					[1] = {
-						{690, "Sa M¹c Hµnh Nh©n", "Mª cung sa m¹c"},
-						{690, "TÇm B¶o Nh©n", "Mª cung sa m¹c"},
+						{690, "Sa M¹c Hµnh Nh©n", "Desert Demon Palace"},
+						{690, "TÇm B¶o Nh©n", "Desert Demon Palace"},
 					},
 					[2] = {
-						{690, "Sa M¹c Hµnh Nh©n", "Mª cung sa m¹c"},
-						{690, "TÇm B¶o Nh©n", "Mª cung sa m¹c"},
+						{690, "Sa M¹c Hµnh Nh©n", "Desert Demon Palace"},
+						{690, "TÇm B¶o Nh©n", "Desert Demon Palace"},
 					},
 					[3] = {
-						{690, "Sa M¹c Hµnh Nh©n", "Mª cung sa m¹c"},
-						{690, "TÇm B¶o Nh©n", "Mª cung sa m¹c"},
+						{690, "Sa M¹c Hµnh Nh©n", "Desert Demon Palace"},
+						{690, "TÇm B¶o Nh©n", "Desert Demon Palace"},
 					},
 				},
 				DropItem = {},
@@ -532,22 +532,22 @@ AKCD_TABLE = {
 				}
 			},
 			[2] = {
-				szTargetNpcName = "¢n Minh ",
-				szNpcPosName = "Quang Minh §Ønh 211/184",
+				szTargetNpcName = "Yin Ming",
+				szNpcPosName = "Brightness Peak 211/184",
 				szTargetNpcTitle = "H·y v­ît qua thö th¸ch cña ta, ta sÏ tiÕt lé!",
 				tTaskIndex = {6, 7}, --Ê¹ÓÃµÄÈÎÎñ±äÁ¿Ë÷Òý¼ÇÂ¼É±¹Ö¸öÊý
 				KillNpc = {
 					[1] = {
-						{399, "§Ö Tö Minh gi¸o", "Quang Minh ®Ønh"},
-						{399, "Gian TÕ Minh gi¸o", "Quang Minh ®Ønh"},
+						{399, "§Ö Tö Minh gi¸o", "Guangming Peak"},
+						{399, "Gian TÕ Minh gi¸o", "Guangming Peak"},
 					},
 					[2] = {
-						{399, "§Ö Tö Minh gi¸o", "Quang Minh ®Ønh"},
-						{399, "Gian TÕ Minh gi¸o", "Quang Minh ®Ønh"},
+						{399, "§Ö Tö Minh gi¸o", "Guangming Peak"},
+						{399, "Gian TÕ Minh gi¸o", "Guangming Peak"},
 					},
 					[3] = {
-						{399, "§Ö Tö Minh gi¸o", "Quang Minh ®Ønh"},
-						{399, "Gian TÕ Minh gi¸o", "Quang Minh ®Ønh"},
+						{399, "§Ö Tö Minh gi¸o", "Guangming Peak"},
+						{399, "Gian TÕ Minh gi¸o", "Guangming Peak"},
 					},
 				},
 				DropItem = {},

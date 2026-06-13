@@ -19,7 +19,7 @@ GH_TASK_GROUP.BoxAward = 6;
 function VET_201501_AddGouHuoDialog(tbSayDialog, szSayHead)
 	if gf_CheckEventDateEx(GH_ACITIVITY_ID) == 1 then
 		tinsert(tbSayDialog, "KÝch ho¹t Löa tr¹i/Gh_Acivite")
-		tinsert(tbSayDialog, "B¸n Cñi Kh«/Gh_Buy") 
+		tinsert(tbSayDialog, "Buy Dry Firewood/Gh_Buy") 
 	end
   return tbSayDialog, szSayHead 
 end
@@ -99,7 +99,7 @@ function Gh_Buy_Callback(nNum)
 	if DelItem(2, 1, 30230, nNum*GH_BUY_COST) ~= 1 then
 		return 0;
 	end
-	gf_AddItemEx2({2, 1, 30768, nNum}, "Cñi Kh«", "Ho¹t ®éng phô th¸ng 1 n¨m 2015", "Löa tr¹i", 24*3600, 1);
+	gf_AddItemEx2({2, 1, 30768, nNum}, "Dry Firewood", "Ho¹t ®éng phô th¸ng 1 n¨m 2015", "Löa tr¹i", 24*3600, 1);
 end
 
 function GH_DailyReset()
@@ -176,14 +176,14 @@ function Gh_RandBoss()
 		{"Cù Th¹ch Háa Nh©n", "jushihuoren"},
 		{"Toµn ChuyÓn C«n Nh©n", "xuanzhuangunren"},
 		{"Thiªn Niªn Háa Kú L©n", "qiannianhuoqilin"},
-		{"§¹i Ng­ Qu¸i", "dayuguai"},
+		{"Giant Fish Monster", "dayuguai"},
 		{"S¸t Ph¸ Lang", "S¸t Ph¸ Lang"}
 	};
 	local nRand = random(getn(tBoss));
 	local npcBoss = CreateNpc(tBoss[nRand][2], tBoss[nRand][1], GetWorldPos());
 	SetNpcLifeTime(npcBoss, 20*60);
 	SetNpcDeathScript(npcBoss, "\\script\\online_activites\\201501\\gouhuo.lua");
-	gf_Msg2Team(format("Tæ ®éi %s ®· chiªu gäi ra [%s] ", GetName(), tBoss[nRand][1]));
+	gf_Msg2Team(format("Team %s has summoned [%s]", GetName(), tBoss[nRand][1]));
 end
 
 function OnDeath(id, f, x)
@@ -222,10 +222,10 @@ function main()
 		{1, 400, "Qu©n C«ng §¹i", {2, 1, 9998, 1, 4}, 7 * 24 * 3600},
 		{1, 100, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1, 4}, 7 * 24 * 3600},
 		{1, 300, "Thiªn Kiªu LÖnh", {2, 97, 236, 1, 4}, 0},
-		{1, 1000, "B¨ng th¹ch", {2, 1, 149, 1}, 0},
+		{1, 1000, "Ice Stone", {2, 1, 149, 1}, 0},
 		{1, 100, "Thiªn Th¹ch Tinh Th¹ch", {2, 1, 1009, 1, 4}, 7 * 24 * 3600},
-		{1, 100, "Bµn Long bÝch", {2, 1, 1000, 1, 4}, 0},
-		{1, 100, "ChuyÓn Sinh §¬n ", {2, 1, 30345, 1}, 30 * 24 * 3600},
+		{1, 100, "Coiling Dragon Jade", {2, 1, 1000, 1, 4}, 0},
+		{1, 100, "Reincarnation Pill", {2, 1, 30345, 1}, 30 * 24 * 3600},
 		{1, 10, "Bao Thiªn Kiªu LÖnh Nhá", {2, 95, 2086, 1}, 0},
 		{31, 990, "ahf_GetLevel3JSEquip()", 1},
 	}

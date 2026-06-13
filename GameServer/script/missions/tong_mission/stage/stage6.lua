@@ -13,7 +13,7 @@ CSTAGE6.nMaxNpcCount = 24;
 CSTAGE6.tbBossInfo = 
 {
 	[1] = {"boss61","Háa Vò"},
-	[2] = {"boss62","L­u Quang"},
+	[2] = {"boss62","Liu Guang"},
 }
 --´´½¨BOSS
 function CSTAGE6:OnCreateBoss()
@@ -28,8 +28,8 @@ function CSTAGE6:OnCreateBoss()
 	end;
 	Msg2MSAll(MISSION_ID,"NhiÖm vô ¶i: §¸nh b¹i hai ®¹i thÇn thó Háa Vò vµ L­u Quang");
 	local tbPlayer = TM_GetPlayerTable();
-	TM_StartTimeGuage("Di Hoa TiÕp Méc",2*60,0,1,tbPlayer);
-	TM_StartTimeGuage("Bãng hé vÖ",90,0,2,tbPlayer);
+	TM_StartTimeGuage("Move flowers and graft trees",2*60,0,1,tbPlayer);
+	TM_StartTimeGuage("Guard",90,0,2,tbPlayer);
 end;
 --Ë¢Ð¡¹Ö
 function CSTAGE6:CreateOpposedNpc(tbArg)
@@ -65,7 +65,7 @@ function CSTAGE6:CreateOpposedNpc(tbArg)
 	end;
 	local tbPlayer = TM_GetPlayerTable();
 	TM_StopTimeGuage(2);
-	TM_StartTimeGuage("Bãng hé vÖ",90,0,2,tbPlayer);
+	TM_StartTimeGuage("Guard",90,0,2,tbPlayer);
 end;
 --ÐÞ¸ÄBOSSÑªÁ¿
 function CSTAGE6:ModifyBossLife(tbArg)
@@ -77,13 +77,13 @@ function CSTAGE6:ModifyBossLife(tbArg)
 				TM_ModifyNpcLife(nBossIdx1,1);
 				Msg2MSAll(MISSION_ID,self.tbBossInfo[1][2].."Sinh lùc håi phôc 1%");
 			else
-				WriteLog("[Tö Quang C¸c gÆp lçi]: BOSS1 ¶i 6 gÆp lçi, tªn lµ"..GetNpcName(nBossIdx1));
+				WriteLog("[Ziguang Pavilion error]: BOSS1 pass 6 encountered an error, the name is"..GetNpcName(nBossIdx1));
 			end;
 		end;
 		if nBossIdx2 ~= 0 then
 			if GetNpcName(nBossIdx2) == self.tbBossInfo[2][2] then
 				TM_ModifyNpcLife(nBossIdx2,-1);
-				Msg2MSAll(MISSION_ID,self.tbBossInfo[2][2].."Sinh lùc gi¶m 1%");	
+				Msg2MSAll(MISSION_ID,self.tbBossInfo[2][2].."Vitality reduced 1%");	
 			else
 				WriteLog("[Tö Quang C¸c gÆp lçi]: BOSS2 cña ¶i 6 gÆp lçi, tªn thµnh"..GetNpcName(nBossIdx1));
 			end;
@@ -92,9 +92,9 @@ function CSTAGE6:ModifyBossLife(tbArg)
 		if nBossIdx1 ~= 0 then
 			if GetNpcName(nBossIdx1) == self.tbBossInfo[1][2] then
 				TM_ModifyNpcLife(nBossIdx1,-6);
-				Msg2MSAll(MISSION_ID,self.tbBossInfo[1][2].."Sinh lùc gi¶m 6%");
+				Msg2MSAll(MISSION_ID,self.tbBossInfo[1][2].."Vitality reduced 6%");
 			else
-				WriteLog("[Tö Quang C¸c gÆp lçi]: BOSS1 ¶i 6 gÆp lçi, tªn lµ"..GetNpcName(nBossIdx1));
+				WriteLog("[Ziguang Pavilion error]: BOSS1 pass 6 encountered an error, the name is"..GetNpcName(nBossIdx1));
 			end;
 		end;
 		if nBossIdx2 ~= 0 then
@@ -107,7 +107,7 @@ function CSTAGE6:ModifyBossLife(tbArg)
 		end;
 		local tbPlayer = TM_GetPlayerTable();
 		TM_StopTimeGuage(1);
-		TM_StartTimeGuage("Di Hoa TiÕp Méc",2*60,0,1,tbPlayer);
+		TM_StartTimeGuage("Move flowers and graft trees",2*60,0,1,tbPlayer);
 	end;
 end;
 --¼ì²éBOSSÑªÁ¿

@@ -2,7 +2,7 @@
 
 function OnUse(nidx)
 	local nItemIndex = tonumber(nidx)
-	Say("B¹n muèn dïng c¬ quan nh©n? Nã cã thÓ gióp b¹n më mét sè chøc n¨ng trong 1 giê.", 2, "§óng/#yes_use("..nItemIndex..")", "Sai/no_say")
+	Say("B¹n muèn dïng c¬ quan nh©n? Nã cã thÓ gióp b¹n më mét sè chøc n¨ng trong 1 giê.", 2, "Yes/#yes_use("..nItemIndex..")", "Sai/no_say")
 end
 
 function yes_use(nItemIndex)

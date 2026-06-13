@@ -148,7 +148,7 @@ function vng_ungho(nType)
 			Msg2Player("B¹n nhËn ®­îc 15 m¶nh Th¸i DÞch Hçn Nguyªn C«ng")
 		else
 			local nAwardRand = mod(random(1,1000),20)
-			gf_AddItemEx2({2,1,(30164+nAwardRand),39}, "Item Tr¸i c©y", "UNG HO BIEN DAO BK", "nhËn thµnh c«ng")    
+			gf_AddItemEx2({2,1,(30164+nAwardRand),39}, "Fruit Item", "UNG HO BIEN DAO BK", "nhËn thµnh c«ng")    
 		end
 		gf_WriteLogEx("UNG HO BIEN DAO", "nhËn th­ëng thµnh c«ng", 1, "NhËn th­ëng lo¹i "..nType)		
 	end

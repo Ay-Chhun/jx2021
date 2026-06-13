@@ -10,7 +10,7 @@ function OnUse()
 				"Liªn quan ®Õn ho¹t ®éng nhËn hång bao n¨m míi/about_hongbao",
 				"Liªn quan ®Õn ho¹t ®éng §¹i C¶nh Kü ë TuyÒn Ch©u B¾c/about_pk",
 				"Täa ®é nh©n vËt ho¹t ®éng/about_npc",
-				"§ãng h­íng dÉn/nothing"
+				"Close the guide/nothing"
 				};
 	Say("C¸c h¹ muèn t×m hiÓu ph­¬ng diÖn nµo?",
 			getn(strtab),

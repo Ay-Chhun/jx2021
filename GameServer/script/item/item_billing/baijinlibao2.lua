@@ -1,8 +1,8 @@
 Include("\\script\\lib\\globalfunctions.lua");
 function OnUse(nItemIdx)
 	local selTab = {
-				format("§ång ý/#use_yes(%d)",nItemIdx),
-				"Hñy bá/nothing",
+				format("Agree/#use_yes(%d)",nItemIdx),
+				"Cancel/nothing",
 				}
 	Say("B¹n muèn më Bao kiÕm hiÖp ®¹i lÔ kh«ng?",getn(selTab),selTab);
 end;

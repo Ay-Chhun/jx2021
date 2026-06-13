@@ -55,11 +55,11 @@ collMode  = {
 -- ÌØÊâ½±ÀøµÄÊı×é
 speAward  = {
 
-	{"Kim Linh th¹ch", 2,13,1},
-	{"Méc Linh th¹ch", 2,13,2},
+	{"Metal Spirit Stone", 2,13,1},
+	{"Wood Spirit Stone", 2,13,2},
 	{"Thñy Linh th¹ch", 2,13,3},
 	{"Háa Linh th¹ch", 2,13,4},
-	{"Thæ Linh th¹ch", 2,13,5},
+	{"Earth Spirit Stone", 2,13,5},
 
 }
 
@@ -212,7 +212,7 @@ local strItemName = tabGoods:getCell(nItemRow, "Text");
 
 	--print ("Î»ÓÚ"..strMapName.."µÄ"..strNpcName.."ÌØÏò¹ã´óÍæ¼ÒÊÕ¼¯"..strItemName.."µÈÎïÆ·£¡");
 	
-		Msg2SubWorld("Giang hå x«n xao, "..strMapName.."-"..strNpcName.." mong c¸c hiÖp kh¸ch gióp thu thËp c¸c lo¹i "..strItemName..", nÕu hoµn thµnh trong 30 phót sÏ ®­îc "..strNpcName.." träng th­ëng!");
+		Msg2SubWorld("The martial world is in an uproar,"..strMapName.."-"..strNpcName.." mong c¸c hiÖp kh¸ch gióp thu thËp c¸c lo¹i "..strItemName..", nÕu hoµn thµnh trong 30 phót sÏ ®­îc "..strNpcName.." träng th­ëng!");
 		
 --	AddGlobalNews("ºÃÏûÏ¢£¬ºÃÏûÏ¢£¡Î»ÓÚ"..strMapName.."µÄ"..strNpcName.."ÌØÏò¹ã´óÍæ¼ÒÊÕ¼¯"..strItemName.."µÈÎïÆ·£¡");
 

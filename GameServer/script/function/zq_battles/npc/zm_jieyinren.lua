@@ -3,14 +3,14 @@ Include("\\script\\lib\\globalfunctions.lua")
 Include("\\script\\function\\zq_battles\\zq_head.lua")
 Include("\\script\\equip_shop\\equip_shop_head.lua")
 
-ZMJYR_NpcName = "<color=green>Ch©n Ma tiÕp dÉn sø: <color>";
+ZMJYR_NpcName = "<color=green>True Demon Guide Envoy: <color>";
 
 function main()
 	local tSay = {
 		format("\nTiÕn vµo Ma Hãa Thiªn M«n TrËn (tiªu hao: %d vµng)/join_zm_battle", ZQ_TICKET_CAST / 10000),
 		"\nT×m hiÓu Ch©n Ma Thiªn M«n TrËn/know_battle_situation",
-		"\nCöa hµng ®æi ma tinh/mojing_exchange_shop",
-		"\n rót lui/nothing",
+		"\nDemon Essence Exchange Shop/mojing_exchange_shop",
+		"\n withdraw/nothing",
 	};
 	Say(ZMJYR_NpcName..format("Thiªn M«n TrËn ®· bÞ ma hãa, ®¹i quan Tèng Liªu ®Òu bÞ v©y bªn trong, cÇn sù t­¬ng trî cña %s. Ng­êi t­¬ng trî sÏ c¨n cø vµo trËn doanh mµ ®­îc chuyÓn ®Õn doanh Tèng hoÆc Liªu (trËn doanh khi tham gia chiÕn tr­êng) trong Ma Hãa Thiªn M«n TrËn, nÕu ch­a cã trËn doanh cÇn chän trËn doanh tr­íc khi vµo.", gf_GetPlayerSexName()), getn(tSay), tSay);
 end
@@ -26,14 +26,14 @@ function join_zm_battle()
 	elseif nValue == LIAO_ID then
 		tinsert(tSay, "T­¬ng trî phe Liªu/join_liao_zm_battle");
 	end
-	tinsert(tSay, "\n Ph¶n håi/main")
+	tinsert(tSay, "\nBack/main")
 	tinsert(tSay, "Ra khi/nothing");
 	Say(ZMJYR_NpcName.."C¸c h¹ muèn t­¬ng trî phe nµo, chän phe t¹i ®©y còng sÏ quyÕt ®Þnh phe trËn doanh sau nµy cña c¸c h¹. C¸c h¹ còng cã thÓ ®Õn quan b¸o danh chiÕn tr­êng ®Ó t×m hiÓu thªm vµ quyÕt ®Þnh chän trËn doanh nµo.", getn(tSay), tSay);
 end
 
 function know_battle_situation()
 	local tSay = {}
-	tinsert(tSay, "\n Ph¶n håi/main")
+	tinsert(tSay, "\nBack/main")
 	tinsert(tSay, "Ra khi/nothing");
 	Say(ZMJYR_NpcName.."KÓ tõ khi NhËm Ng· Hµnh ®ét nhËp vµo Th­îng Cæ Thiªn M«n TrËn, s¬ xuÊt tÝ n÷a lµ bÞ Th«ng Linh L·o Tæ phï ma nhËp th©n, kÓ tõ ®ã Thiªn M«n TrËn trë nªn ma khÝ ngËp trêi, v« sè binh sÜ bÞ ma hãa, ®Þch ta kh«ng ph©n, giÕt ng­êi ®iªn d¹i. Qu©n ®éi Tèng Liªu 2 bªn ®Òu bÞ v©y khèn bªn trong.", getn(tSay), tSay);
 end
@@ -91,8 +91,8 @@ function mojing_exchange_shop()
 	local tSay = {
 		"Cöa hµng Ma Tinh Giíi ChØ cÊp 3/#show_equip_shop(3027)",
 		"Cöa hµng Ma Tinh Trang BÞ S­ M«n/mojing_shimen_shop",
-		"Cöa hµng Ma Tinh T¹p Hãa/#show_equip_shop(3026)",
-		"\n Ph¶n håi/main",
+		"Demon Essence General Goods Shop/#show_equip_shop(3026)",
+		"\nBack/main",
 		"Ra khi/nothing",
 	}
 	Say(ZMJYR_NpcName.."Tham gia chiÕn tr­êng ch©n khÝ, khiªu chiÕn cöa ¶i nhá cã tû lÖ nhÊt ®Þnh nhËn ®­îc Ma Tinh, tÝch lòy l­îng ma tinh cã thÓ ®æi ®­îc ®¹o cô t­¬ng øng.",getn(tSay), tSay);
@@ -101,9 +101,9 @@ end
 
 function mojing_shimen_shop()
 	local tSay = {
-		"Ma Tinh ®æi s­ m«n bé 4/#show_equip_shop(3)",
-		"Ma Tinh ®æi s­ m«n bé 5/#show_equip_shop(6)",
-		"\n Ph¶n håi/mojing_exchange_shop",
+		"Demon Essence sect set exchange 4/#show_equip_shop(3)",
+		"Demon Essence sect set exchange 5/#show_equip_shop(6)",
+		"\nBack/mojing_exchange_shop",
 		"Ra khi/nothing",
 	}
 	Say(ZMJYR_NpcName.."Tham gia chiÕn tr­êng ch©n khÝ, khiªu chiÕn cöa ¶i nhá cã tû lÖ nhÊt ®Þnh nhËn ®­îc Ma Tinh, tÝch lòy l­îng ma tinh cã thÓ ®æi ®­îc ®¹o cô t­¬ng øng.",getn(tSay), tSay);

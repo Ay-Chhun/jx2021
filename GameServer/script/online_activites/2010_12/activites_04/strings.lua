@@ -7,16 +7,16 @@ VET_201012_04_STR_LOG_TITLE = "Hoat dong trong cay giang sinh thang 12 nam 2010"
 
 VET_201012_04_TB_LOG_ACTION_LIST = {
     [1] = "§æi phÇn th­ëng Qu¶ Tø Linh",
-    [2] = "Trång c©y Tø Linh",
+    [2] = "Plant the Four Spirits Tree",
     [3] = "Trång c©y Tø Linh nhËn ®­îc phÇn th­ëng",
     [4] = "Trém c©y Tø Linh nhËn ®­îc phÇn th­ëng",
     [5] = "C©y Tø Linh bÞ trém nhËn ®­îc phÇn th­ëng",
-    [6] = "Mua ®¹o cô C©y Tø Linh"
+    [6] = "Buy Four Spirits Tree supplies"
 };
 
 VET_201012_04_NPC_TB = {
     [1] = {"NguyÖt L·o", "B¸ch Th¶o Tiªn"},
-    [2] = {"C©y Tø Linh 1", "C©y Tø Linh"}; --TODO Ìæ»»³ÉÏàÓ¦Ä£ÐÍ
+    [2] = {"C©y Tø Linh 1", "Four Spirits Tree"}; --TODO Ìæ»»³ÉÏàÓ¦Ä£ÐÍ
 };
 
 VET_201012_04_NPC_TALK_TITLE = "<color=yellow>B¸ch Th¶o Tiªn<color>: ".."C¸c h¹ cÇn g×?";
@@ -24,9 +24,9 @@ VET_201012_04_NPC_TALK_TITLE = "<color=yellow>B¸ch Th¶o Tiªn<color>: ".."C¸c h¹ 
 VET_201012_04_NPC_TALK_STRINGS = {
     [1] = "§æi c¸c lo¹i Tr¸i C©y Tø Linh nhËn th­ëng/ExChange_4_soul_award",
     [2] = "Mua c¸c lo¹i ®¹o cô trång vµ thu thËp c©y Tø Linh/buy_item_for_plant_4_soul",
-    [3] = "KÕt thóc ®èi tho¹i/gf_DoNothing",
+    [3] = "End dialogue/gf_DoNothing",
     [4] = "Giao nép %s ®æi phÇn th­ëng",
-    [5] = "KÕt thóc ®èi tho¹i",
+    [5] = "End conversation",
     [6] = "Sè l­îng Qu¶ Tø Linh kh«ng ®ñ",
     [7] = "C©y nµy ®· bÞ trém qua råi, h·y ®Ó l¹i cho chñ nh©n th«i",
     [8] = "C¸c h¹ cÇn g×",
@@ -34,27 +34,27 @@ VET_201012_04_NPC_TALK_STRINGS = {
     [10] = "HiÖn trong giai ®o¹n %s, c¸ch giai ®o¹n kÕ tiÕp cßn %d gi©y",
     [11] = "Nguyªn liÖu ch¨m sãc kh«ng ®ñ",
     [12] = "C©y ®· tr­ëng thµnh, c¸c h¹ muèn thu thËp kh«ng?",
-    [13] = "Thu thËp c©y",
+    [13] = "Harvest the tree",
     [14] = "§Þa ®iÓm trång c©y: T©y Thµnh §«, T©y BiÖn Kinh, B¾c TuyÒn Ch©u",
     [15] = "Nh©n vËt cÇn ®¹t trªn cÊp 73",	--®· gia nhËp m«n ph¸i, , danh väng = 3000, ®iÓm s­ m«n = 4000
     [16] = "Cßn %d gi©y n÷a míi cã thÓ thu thËp",
-    [17] = " trång ",
-    [18] = "ChØ ®­îc thu ho¹ch theo giai ®o¹n",
+    [17] = " plant",
+    [18] = "You can only harvest by stage",
     [19] = "Sè l­îng c©y b¹n trån h«m nay ®· ®¹t giíi h¹n, h·y trång tiÕp vµo ngµy mai",
     [20] = "Sè l­îng tr¸i c©y c¸c h¹ giao nép h«m nay ®· ®¹t giíi h¹n, h·y quay l¹i vµo ngµy mai",
     [21] = "H·y x¸c ®Þnh l¹i kh«ng gian hµnh trang",
-    [22] = "Mua C©y Tø Linh (15 xu)",
+    [22] = "Buy Four Spirits Tree (15 coins)",
     [23] = "Mua B×nh Tiªn Lé (t­íi c©y Tø Linh) (20 b¹c)",
-    [24] = "Mua B×nh Ph©n Bãn (bãn ph©n c©y Tø Linh) (20 b¹c)",
-    [25] = "Mua Thuèc Trõ S©u (20 b¹c)",
+    [24] = "Buy Fertilizer Bottle (fertilizes the Four Spirits Tree) (20 silver)",
+    [25] = "Buy Pesticide (20 silver)",
     [26] = "C¸c h¹ cÇn mua bao nhiªu?",
-    [27] = "Kh«ng ®ñ tiÒn",
-    [28] = "C©y Tø Linh",
+    [27] = "Not enough money",
+    [28] = "Four Spirits Tree",
     [29] = "Ho¹t ®éng nµy chØ h­íng ®Õn nh÷ng ng­êi ch¬i ®· tham gia m«n ph¸i th«i, t¹i h¹ ph¶i gia nhËp mét m«n ph¸i bÊt kú råi tham gia ho¹t ®éng nhÐ!",
 };
 
 VET_201012_04_TB_ITEM = {
-    [1] = {"Thanh Long Qu¶", {2, 1, 30270}},
+    [1] = {"Azure Dragon Fruit", {2, 1, 30270}},
     [2] = {"Háa Phông Hoa", {2, 1, 30271}},
     [3] = {"B¹ch Hæ DiÖp", {2, 1, 30272}},
     [4] = {"HuyÒn Vò C¨n", {2, 1, 30273}},
@@ -83,24 +83,24 @@ function is_2015_12_act_time()
 end
 if is_2015_12_act_time()== 1 then
 VET_201012_04_TB_TREE_GROW = {
-    [1] = {"C©y gièng", "C©y Gi¸ng sinh 3d",nil, 60},
-    [2] = {"Ph¸t triÓn (1)", "C©y Gi¸ng sinh 3d", {
+    [1] = {"Seedling", "C©y Gi¸ng sinh 3d",nil, 60},
+    [2] = {"Growth (1)", "C©y Gi¸ng sinh 3d", {
                                   {{2, 1, 30274}, 1}, 
                                   {{2, 1, 30275}, 1},
                                  }, 60},
-    [3] = {"Ph¸t triÓn (2)", "C©y Gi¸ng sinh 3c", {
+    [3] = {"Growth (2)", "C©y Gi¸ng sinh 3c", {
                                     {{2, 1, 30275}, 1}, 
                                     {{2, 1, 30276}, 1},
                                    }, 60},
-    [4] = {"Ph¸t triÓn (3)", "C©y Gi¸ng sinh 3c", {
+    [4] = {"Growth (3)", "C©y Gi¸ng sinh 3c", {
                                     {{2, 1, 30274}, 1}, 
                                     {{2, 1, 30276}, 1},
                                    }, 60},
-    [5] = {"Ph¸t triÓn (4)", "C©y Gi¸ng sinh 3c", {
+    [5] = {"Growth (4)", "C©y Gi¸ng sinh 3c", {
                                     {{2, 1, 30274}, 1}, 
                                     {{2, 1, 30275}, 1},
                                    }, 60},
-    [6] = {"Ph¸t triÓn (5)", "C©y Gi¸ng sinh 3c", {
+    [6] = {"Growth (5)", "C©y Gi¸ng sinh 3c", {
                                     {{2, 1, 30276}, 1}, 
                                     {{2, 1, 30275}, 1},
                                    }, 60},
@@ -108,24 +108,24 @@ VET_201012_04_TB_TREE_GROW = {
 };
 else
 VET_201012_04_TB_TREE_GROW = {
-    [1] = {"C©y gièng", "C©y Tø Linh 1",nil, 60},
-    [2] = {"Ph¸t triÓn (1)", "C©y Tø Linh 1", {
+    [1] = {"Seedling", "C©y Tø Linh 1",nil, 60},
+    [2] = {"Growth (1)", "C©y Tø Linh 1", {
                                   {{2, 1, 30274}, 1}, 
                                   {{2, 1, 30275}, 1},
                                  }, 60},
-    [3] = {"Ph¸t triÓn (2)", "C©y Tø Linh 2_1", {
+    [3] = {"Growth (2)", "C©y Tø Linh 2_1", {
                                     {{2, 1, 30275}, 1}, 
                                     {{2, 1, 30276}, 1},
                                    }, 60},
-    [4] = {"Ph¸t triÓn (3)", "C©y Tø Linh 2_2", {
+    [4] = {"Growth (3)", "C©y Tø Linh 2_2", {
                                     {{2, 1, 30274}, 1}, 
                                     {{2, 1, 30276}, 1},
                                    }, 60},
-    [5] = {"Ph¸t triÓn (4)", "C©y Tø Linh 3_1", {
+    [5] = {"Growth (4)", "C©y Tø Linh 3_1", {
                                     {{2, 1, 30274}, 1}, 
                                     {{2, 1, 30275}, 1},
                                    }, 60},
-    [6] = {"Ph¸t triÓn (5)", "C©y Tø Linh 3_2", {
+    [6] = {"Growth (5)", "C©y Tø Linh 3_2", {
                                     {{2, 1, 30276}, 1}, 
                                     {{2, 1, 30275}, 1},
                                    }, 60},
@@ -135,8 +135,8 @@ end
 
 --Ö»ÊÇ°ÑÏûºÄµÄµÀ¾ßºÍÏàÓ¦µÄ¶¯×÷Ãû³Æ¶ÔÓ¦Ò»ÏÂ,ÓÉITEM±íÀ©Õ¹£¬½áºÏÉÏ±í
 VET_201012_04_TREE_ITEM_TO_ACTION = {
-    [1] = {"B×nh tiªn lé", {2, 1, 30274}, "T­íi n­íc"},
-    [2] = {"Binh ph©n bãn", {2, 1, 30275}, "Bãn ph©n"},
-    [3] = {"Thuèc trõ s©u", {2, 1, 30276}, "Trõ s©u"},
+    [1] = {"Immortal Dew Bottle", {2, 1, 30274}, "Water"},
+    [2] = {"Fertilizer Bottle", {2, 1, 30275}, "Fertilize"},
+    [3] = {"Pesticide", {2, 1, 30276}, "Eliminate pests"},
 };
 

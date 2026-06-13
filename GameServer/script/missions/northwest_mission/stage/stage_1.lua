@@ -20,7 +20,7 @@
 		--Ä§·¨ÊôÐÔ×Ö·û´®-ÊôÐÔÖµ-Ê±¼ä£¨Ö¡£©-ÊÇ·ñÌæ»»-ÊôÐÔID
 		--{"state_shadow_run", 2565, 2160,0,19801227},
 	}
-	Npc_del_name = {"¢m NhËt Sø ","Minh NhËt Sø","LiÖt Nhan Li Long","XÝch LuyÖn Háa Hå"}
+	Npc_del_name = {"Am Nhat Su","Minh NhËt Sø","LiÖt Nhan Li Long","XÝch LuyÖn Háa Hå"}
 --µÚÒ»²½£ºboss´´½¨
 function stage1_boss_create()
 	local nMapID = SubWorldIdx2ID(SubWorld)
@@ -209,14 +209,14 @@ function stage1_boss_death()
 	local stage_seq = GetMissionV(MS_STATE_DIFF_ID)
 	PlayerIndex = GetTeamMember(0)
 	if PlayerIndex ~= 0 then
-		AddGlobalNews("T¹i"..GetName().."ChiÕn ®Êu gian khæ, cuèi cïng ®¸nh b¹i 'Cæ D­¬ng Thó', v­ît ¶i thµnh c«ng"..Stage_info[stage_seq].stage_name..".")
+		AddGlobalNews("At"..GetName().."ChiÕn ®Êu gian khæ, cuèi cïng ®¸nh b¹i 'Cæ D­¬ng Thó', v­ît ¶i thµnh c«ng"..Stage_info[stage_seq].stage_name..".")
 	end
 	
 	local nMapID = SubWorldIdx2ID(SubWorld)
 	ClearMapNpc(nMapID)
 	--×¼±¸¹Ø¿¨½áÊø
 	local mission_count = GetMapTaskTemp(nMapID,1)
-	WriteLog("[¶i T©y B¾c] thèng kª qua ¶i: ID ¶i	"..stage_seq..":"..nMapID..":"..mission_count.."	Thêi gian qua ¶i	"..Zgc_pub_time_sec_change(((189-GetMissionV(MS_TIMMER_LOOP_ID))* 10),1))
+	WriteLog("[Northwest Pass] pass clearing statistics: Pass ID"..stage_seq..":"..nMapID..":"..mission_count.."	Thêi gian qua ¶i	"..Zgc_pub_time_sec_change(((189-GetMissionV(MS_TIMMER_LOOP_ID))* 10),1))
 	Zgc_pub_mission_fun(MS_ID,"Ms_stage_prize()")
 	SetMissionV(MS_TIMMER_LOOP_ID,6)
 end

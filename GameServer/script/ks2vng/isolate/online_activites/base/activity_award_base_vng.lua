@@ -57,7 +57,7 @@ function Vet_Complete_Revive_OnePartner_SecondStage(nTaskId, nBitIdx)	--(nActivi
 --	gf_WriteLogEx(EVENT_LOG_TITLE, "фi ph莕 thng cu鑙 c飊g", 2500, "Ti猽 hao Ti猽 Dao Ng鋍 ho祅 th祅h giai 畂筺 2 c馻 ph鬰 sinh ng h祅h");		
 	--设置已领取标记
 --	Vet_Activity_SetItemUseInfo(nTaskGrouId,nTaskIDSeq,tbActivity.nGetBothFinalPrize,1);
-	local szNpcName = "<color=green>S?ki謓 Event th竛g 11<color>: "
+	local szNpcName = "<color=green>November Event<color>:"
 	local tSay = {}
 	local tHeader = szNpcName.." Чi hi謕 h穣 ch鋘 hng Ph鬰 Sinh cho B筺 уng H祅h c馻 m譶h."
 	tinsert(tSay, format("H?tr?h?N閕 C玭g/#add_buffEvent2(1,%d,%d)",nTaskId, nBitIdx))		
@@ -80,7 +80,7 @@ function add_buffEvent2(nWay,nTaskId, nBitIdx)
 						{"N閕 C玭g 6%", "state_m_attack_percent_add", 6},
 						{"Sinh L鵦 +6000", "state_life_max_point_add", 8000},
 						{"Sinh L鵦 6%", "state_life_max_percent_add", 6},
-						{"Kh竛g t蕋 c?+12", "state_add_allability", 12}, 
+						{"All Resistance +12", "state_add_allability", 12}, 
 					},
 			[2] = {
 						{"Ngo筰 C玭g 12%", "state_p_attack_percent_add", 12},
@@ -91,9 +91,9 @@ function add_buffEvent2(nWay,nTaskId, nBitIdx)
 					},
 				}
 	local t_pet_type = {
-									[1] = {"Th?tr緉g",3333,24},
-									[2] = {"Th?x竚",3333,25},
-									[3] = {"Th?甧n",3334,26},		
+									[1] = {"White Card",3333,24},
+									[2] = {"Gray Card",3333,25},
+									[3] = {"Black Card",3334,26},		
 								}	
 --	if GetItemCount(2,1,30603) < 999 then
 --		Talk(1,"","Ti猽 Dao Ng鋍 trong t骾 kh玭g  999 c竔")
@@ -111,7 +111,7 @@ function add_buffEvent2(nWay,nTaskId, nBitIdx)
 --	self:GiveItemPrize(tbPrizeInfo.tbFinalPrize,format(self.tbHintString[10][3],tbPrizeInfo.tbItemInfo[4]))
 	---------------
 	SetTask(TSK_PET_PS_GIAIDOAN_B, GetTask(TSK_PET_PS_GIAIDOAN_B) + 1) --t╪g bc nhi謒 v?l猲 gi?tr?3 l?ho祅 th祅h xong giai 畂筺 2
-	gf_WriteLogEx("PHUC SINH PET", "xong giai 畂筺 2", 1, "Ho祅 th祅h Giai 筺 2")												
+	gf_WriteLogEx("PHUC SINH PET", "Phase 2 finished", 1, "Ho祅 th祅h Giai 筺 2")												
 		local nIsPS = floor(GetTask(TSK_PET_PS_GIAIDOAN_B)/10) --mod 10 l?gi?tr?x竎 nh c?Ph鬰 Sinh PET 
 		nIsPS = (nIsPS +1) *10 + mod(GetTask(TSK_PET_PS_GIAIDOAN_B),10)
 		SetTask(TSK_PET_PS_GIAIDOAN_B, nIsPS) --set gi?tr?x竎 nh c?Ph鬰 Sinh PET
@@ -140,6 +140,6 @@ function add_buffEvent2(nWay,nTaskId, nBitIdx)
 		end
 		-------------
 		Msg2Player("Ch骳 m鮪g i hi謕  ho祅 th祅h nhi謒 v?Ph鬰 Sinh cho B筺 уng H祅h !!!!")		
-		gf_WriteLogEx("PHUC SINH PET BK", "xong giai 畂筺 2", 1, "Ho祅 th祅h Giai 筺 buff")		
+		gf_WriteLogEx("PHUC SINH PET BK", "Phase 2 finished", 1, "Ho祅 th祅h Giai 筺 buff")		
 	
 end

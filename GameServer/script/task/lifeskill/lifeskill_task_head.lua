@@ -34,57 +34,57 @@ PlayerFactionTitle = {
 	-- Îäµ±
 	[2]={"§¹o tr­ëng","§¹o tr­ëng"},
 	-- ¶ëÃ¼
-	[3]={"","C« n­¬ng"},
+	[3]={"","Young lady"},
 	-- Ø¤°ï
-	[4]={"ThiÕu hiÖp","C« n­¬ng"},	
+	[4]={"ThiÕu hiÖp","Young lady"},	
 	-- ÌÆÃÅ
-	[5]={"ThiÕu hiÖp","C« n­¬ng"},	
+	[5]={"ThiÕu hiÖp","Young lady"},	
 	-- ÑîÃÅ
 	[6]={"T­íng qu©n","T­íng qu©n"},	
 	-- Îå¶¾
-	[7]={"ThiÕu hiÖp","C« n­¬ng"},
-	[8]={"ThiÕu hiÖp","C« n­¬ng"},
-	[9]={"ThiÕu hiÖp","C« n­¬ng"},
-	[10]={"C« n­¬ng","C« n­¬ng"},
+	[7]={"ThiÕu hiÖp","Young lady"},
+	[8]={"ThiÕu hiÖp","Young lady"},
+	[9]={"ThiÕu hiÖp","Young lady"},
+	[10]={"Young lady","Young lady"},
 }
 
 --ËùĞèÉÏ½»ÎäÆ÷
 HANDIN_ITEM_DATA = {
 	[1] = {},
 	[2] = {{},--½­ºş¼¼ÒÕ
-				 {{0,5,39,1,"Thanh Long c«n"},{0,8,96,1,"Thiªn PhËt tr­îng"},{0,6,107,1,"Ph¸ Thiªn kİch"}},--³¤±øÆ÷
-				 {{0,0,13,1,"Nª Lª ®Şa ngôc"},{0,2,26,1,"HuyÒn thiÕt Träng KiÕm"},{0,3,63,1,"B¸ V­¬ng"},{0,7,11,1,"§o¹n Tr­êng"}},--¶Ì±øÆ÷
-				 {{0,1,52,1,"Thiªn ngo¹i phi tiªn"},{0,10,74,1,"Tiªu VÜ"},{0,9,85,1,"Thiªn C¬"},{0,4,118,1,"Long KhÈu"},{0,11,11,1,"Ngò T«n"}},--ÆæÃÅ±øÆ÷
+				 {{0,5,39,1,"Azure Dragon Staff"},{0,8,96,1,"Thiªn PhËt tr­îng"},{0,6,107,1,"Ph¸ Thiªn kİch"}},--³¤±øÆ÷
+				 {{0,0,13,1,"Niraya Hell"},{0,2,26,1,"HuyÒn thiÕt Träng KiÕm"},{0,3,63,1,"B¸ V­¬ng"},{0,7,11,1,"§o¹n Tr­êng"}},--¶Ì±øÆ÷
+				 {{0,1,52,1,"Thiªn ngo¹i phi tiªn"},{0,10,74,1,"Tieu Vi"},{0,9,85,1,"Thiªn C¬"},{0,4,118,1,"Long Khau"},{0,11,11,1,"Ngò T«n"}},--ÆæÃÅ±øÆ÷
 				 {{0,100,35,1,"HuyÕt Hµ Quû V­¬ng gi¸p"},{0,100,17,1,"S¬n Quû huyÕt y"},{0,100,36,1,"Long B¸ ¤ kim y"},{0,100,18,1,"Thiªn Gi¸ng bµo"}},--ÄĞ×°ÒÂ·ş
-				 {{1,0,6,10,"H¾c Ngäc §o¹n Tôc Cao"},{1,0,11,10,"V¹n VËt Quy Nguyªn §¬n"},{1,0,16,10,"Sinh Sinh Hãa T¸n"},{1,0,21,5,"B«n Tinh NguyÖt §¬n"},{1,0,26,5,"§¹i NhËt D­¬ng T¸n"}},--Ò©Æ·
-				 {{1,1,15,5,"B¸nh Bét vµng"},{1,1,14,5,"C¬m chiªn trøng"},{1,1,9,5,"C¶i xµo tái"},{1,1,13,5,"Tóy Méng Töu"}},--Åëâ¿
+				 {{1,0,6,10,"H¾c Ngäc §o¹n Tôc Cao"},{1,0,11,10,"V¹n VËt Quy Nguyªn §¬n"},{1,0,16,10,"Life-Begetting Powder"},{1,0,21,5,"B«n Tinh NguyÖt §¬n"},{1,0,26,5,"§¹i NhËt D­¬ng T¸n"}},--Ò©Æ·
+				 {{1,1,15,5,"Golden Flour Cake"},{1,1,14,5,"Fried egg rice"},{1,1,9,5,"Garlic Stir-fried Greens"},{1,1,13,5,"Tuy Mong Wine"}},--Åëâ¿
 				 {{0,100,53,1,"Thiªn y"},{0,100,54,1,"Phi Thiªn Th¸i Th­êng"},{0,100,71,1,"V« Song §Êu y"},{0,100,72,1,"Ngò S¾c Nghª Th­êng"}},--Å®×°ÒÂ·ş
 				}
 }
 
 --NpcÃû×Ö
 WEAPON_NPC_DATA = {
-	[1] = {"M¹c §¹i","BiÖn Kinh"},
+	[1] = {"M¹c §¹i","Bianjing"},
 	[2] = {"M¹c NhŞ","Thµnh §«"},
 	[3] = {"M¹c Tam","T­¬ng D­¬ng"},
 	[4] = {"CÈm n­¬ng","Thµnh §«"},
 	[5] = {"Du Ph­¬ng ®¹i phu","Thµnh §«"},
-	[6] = {"Ngù Trï","BiÖn Kinh"},
-	[7] = {"V©n Du §¹o Nh©n","BiÖn Kinh"},
+	[6] = {"Ngù Trï","Bianjing"},
+	[7] = {"V©n Du §¹o Nh©n","Bianjing"},
 }
 
 --Åä·½±í
 RECIPE_DATA = {
-	[1]  = 	{800,"Tr­îng","A La H¸n Tr­îng"},
-	[2]  = 	{795,"c«n bæng","LiÖt DiÖm"},
+	[1]  = 	{800,"Staff","Arhat Staff"},
+	[2]  = 	{795,"c«n bæng","Lie Yan"},
 	[3]  = 	{801,"Th­¬ng","§¹i Hµo L«i Th­¬ng"},
 	[4]  = 	{793,"Hé thñ","V¹n NhÉn"},
-	[5]  = 	{797,"§ao","Cæ §İnh"},
+	[5]  = 	{797,"§ao","Guding"},
 	[6]  = 	{794,"KiÕm","Háa Tinh"},
-	[7]  = 	{804,"Song ®ao","L¨ng Phong"},
+	[7]  = 	{804,"Song ®ao","Lingfeng"},
 	[8]  = 	{796,"¸m khİ","M·n Thiªn Hoa Vò"},
-	[9]  = 	{799,"Bót","ThÇn Hµnh"},
-	[10] = 	{798,"CÇm","Hi Nh©n CÇm"},
+	[9]  = 	{799,"Brush","ThÇn Hµnh"},
+	[10] = 	{798,"Zither","Hi Nh©n CÇm"},
 	[11] = 	{803,"Tr¶o","M·nh hæ"},
 	[12] = 	{802,"Cung","ThÇn Cung"},
 }
@@ -127,7 +127,7 @@ local i = 0;
 		WEAPON_NPC_DATA[nType][1]..": B¶n vÏ chÕ t¹o thÇn binh nµy lµ chi b¶o cña M¹c gia ta nh­ng ®Õn giê vÉn ch­a t×m ra c¸ch chÕ t¹o thİch hîp. B©y giê ®Şnh truyÒn l¹i cho ng­¬i, hy väng ng­¬i cã thÓ thµnh c«ng. Nh­ng tr­íc tiªn ph¶i kiÓm tra n¨ng lùc hiÖn t¹i cña ng­¬i.",
 		"S­ phô cø nãi!",
 		WEAPON_NPC_DATA[nType][1]..": ThÕ nµy vËy! Ng­¬i h·y lµm 1 "..str.."®Ó vi s­ xem tay nghÒ cña ng­¬i thÕ nµo.",
-		"Xin S­ phô chê chót.",
+		"Please wait a moment, Master.",
 		}
 		TalkEx("",strTalk);
 		SetTask(TASK_76WEAPON,1);
@@ -155,9 +155,9 @@ local strSay = "";
 
   strSay = {
 		WEAPON_NPC_DATA[nType][1]..": ThÕ nµy vËy! Ng­¬i h·y lµm 1 "..str.."®Ó vi s­ xem tay nghÒ cña ng­¬i thÕ nµo.(Tr­íc khi giao nép vò khi xin h·y cÊt vò khİ kh«ng muèn nép vµo r­¬ng chøa ®å)",
-		"Xin s­ phô xem qua!/#weapon_76_003("..nType..")",
+		"Please take a look, Master!/#weapon_76_003("..nType..")",
 		"§Ö tö ch­a häc qua c¸ch lµm/#ReLearnRecipe("..nType..")",--²¹Ñ§Ö®Ç°Ã»ÓĞÑ§Ï°µÄÅä·½
-		"Xin s­ phô chê chót!/nothing",
+		"Please wait a moment, Master!/nothing",
 		}
 		
 	SelectSay(strSay);
@@ -278,25 +278,25 @@ function weapon_76_choice(nType)
 local strSay = {
 	[1] = {     
 		WEAPON_NPC_DATA[nType][1]..": H·y chän lo¹i vò khİ b¹n muèn häc c¸ch chÕ t¹o (chän xong kh«ng thÓ thay ®æi lùa chän)",
-		"Tr­îng/#learn_weapon_76("..nType..",1)",   
-		"c«n bæng/#learn_weapon_76("..nType..",2)",  
-		"Th­¬ng/#learn_weapon_76("..nType..",3)",    
+		"Staff/#learn_weapon_76("..nType..",1)",   
+		"Cudgel/#learn_weapon_76("..nType..",2)",  
+		"Spear/#learn_weapon_76("..nType..",3)",    
 		"Ta suy nghÜ l¹i/nothing",     
 		},
 	[2] = {     
 		WEAPON_NPC_DATA[nType][1]..": H·y chän lo¹i vò khİ b¹n muèn häc c¸ch chÕ t¹o (chän xong kh«ng thÓ thay ®æi lùa chän)",
-		"Hé thñ/#learn_weapon_76("..nType..",4)",   
+		"Guard/#learn_weapon_76("..nType..",4)",   
 		"§ao/#learn_weapon_76("..nType..",5)",  
 		"KiÕm/#learn_weapon_76("..nType..",6)",    
-		"Song ®ao/#learn_weapon_76("..nType..",7)",
+		"Twin Blades/#learn_weapon_76("..nType..",7)",
 		"Ta suy nghÜ l¹i/nothing",     
 		},
 	[3] = {     
 		WEAPON_NPC_DATA[nType][1]..": H·y chän lo¹i vò khİ b¹n muèn häc c¸ch chÕ t¹o (chän xong kh«ng thÓ thay ®æi lùa chän)",
 		"¸m khİ/#learn_weapon_76("..nType..",8)",
-		"Bót/#learn_weapon_76("..nType..",9)",
-		"CÇm/#learn_weapon_76("..nType..",10)",
-		"Tr¶o/#learn_weapon_76("..nType..",11)",
+		"Brush/#learn_weapon_76("..nType..",9)",
+		"Zither/#learn_weapon_76("..nType..",10)",
+		"Claw/#learn_weapon_76("..nType..",11)",
 		"Cung/#learn_weapon_76("..nType..",12)",
 		"Ta suy nghÜ l¹i/nothing",
 		}
@@ -328,7 +328,7 @@ local strTalk = {
 	"GÇn ®©y ng­¬i kh«ng chó t©m luyÖn thuèc? Nªn biÕt linh ®¬n diÖu d­îc kh«ng ph¶i mét sím m«t chiÒu mµ luyÖn thµnh.",
 	"GÇn ®©y §Ö tö ph¸t hiÖn ®¬n d­îc luyÖn ra kh«ng cã c«ng hiÖu l¾m. Tuy luyÖn ®óng ph­¬ng ph¸p nh­ng hiÖu qu¶ kh«ng tèt nªn c¶m thÊy h¬i buån.",
 	"ThÕ nµy vËy! Ng­¬i h·y luyÖn H¾c Ngäc §o¹n Tôc Cao, V¹n VËt Quy Nguyªn §¬n, Sinh Sinh Hãa T¸n (mçi lo¹i 10 viªn), B«n Tinh NguyÖt §¬n, §¹i NhËt D­¬ng T¸n (mçi lo¹i 5 viªn) ®­a cho ta xem.",
-	"Xin S­ phô chê chót.",
+	"Please wait a moment, Master.",
 	}
 	TalkEx("",strTalk);
 	SetTask(TASK_MEDICINE_HEIWU,1);
@@ -342,7 +342,7 @@ local strSay = {
 	"10 H¾c Ngäc §o¹n Tôc Cao, V¹n VËt Quy Nguyªn §¬n, Sinh Sinh Hãa T¸n, 5 B«n Tinh NguyÖt §¬n, §¹i NhËt D­¬ng T¸n ®· lµm xong ch­a?",
 	"§· lµm xong råi!/medicine_heiwu_003",
 	"§Ö tö ch­a häc qua c¸ch lµm/#ReLearnRecipe(5)",--²¹Ñ§Ö®Ç°Ã»ÓĞÑ§Ï°µÄÅä·½
-	"Xin S­ phô chê chót!/nothing",
+	"Please wait a moment, Master!/nothing",
 	}
 	
 	SelectSay(strSay);
@@ -352,8 +352,8 @@ end
 function medicine_heiwu_003()
 
 local strTalk = {
-	"S­ phô! §©y lµ thuèc ®Ö tö ®· luyÖn. Xin s­ phô xem qua!",
-	"Kh¸ l¾m!",
+	"Master! Here is the medicine your disciple has refined. Please take a look, Master!",
+	"Quite good!",
 	"PhÊn mµu ®en ë bÒ mÆt kh«ng ph¶i lµ…",
 	"ViÖc nµy...®Ö tö còng kh«ng râ! GÇn ®©y trong lóc luyÖn d­îc ph¸t hiÖn thø nµy, ®Ö tö kh«ng biÕt nªn míi hái s­ phô.",
 	"§Ö tö h·y ®em bét phÊn ®en nµy ®Õn thµnh B¾c t×m {§¹i kho¸ng c«ng} hái thö, víi kinh nghiÖm ®µo kho¸ng nhiÒu n¨m kh«ng chõng «ng ta biÕt thø bét ®en nµy lµ g×.",
@@ -410,7 +410,7 @@ function medicine_heiwu_007()
 
 local strTalk = {
 	"M¹c §¹i: Ha ha! Cuèi cïng ng­¬i còng ®· luyÖn thµnh LiÖt DiÖm ThÇn C«n!",
-	"B¸i kiÕn M¹c s­ phô!",
+	"Greetings, Master Mac!",
 	"M¹c §¹i: Ng­¬i lµ ®Ö tö cña Du Lang Trung? T×m ta cã viÖc g×? H«m nay l·o phu rÊt vui, ®· luyÖn thµnh LiÖt DiÖm ThÇn C«n. Ng­¬i ®Õn ®©y xem thö ®i!",
 	"V·n bèi tµi th« häc thiÓn, nhÊt thêi kh«ng thÊy ®­îc sù ®Æc biÖt cña binh khİ nµy.",
 	"M¹c §¹i: Kh«ng ph¶i ng­¬i ®Õn xem thÇn binh ta luyÖn ­? VËy t×m ta cã chuyÖn g×?",
@@ -447,13 +447,13 @@ function medicine_heiwu_009()
 local strTalk = {
 	"§· vÒ råi µ? Cã hái ®­îc g× kh«ng?",
 	"§¹i s­ phô cho r»ng ®©y kh«ng ph¶i tinh th¹ch th­îng ®¼ng ®µo kho¸ng cã ®­îc, b¶o ®Ö tö ®i hái M¹c §¹i s­ phô. M¹c §¹i s­ phô nãi ®©y cã thÓ lµ nguyªn liÖu ®Ó chÕ t¹o thÇn binh th­îng ®¼ng, bëi v× mçi khi «ng ta luyÖn binh khİ còng ph¸t hiÖn trong lß luyÖn cã thø bét mµu ®en nµy, «ng ta cßn ®­a ®Ö tö mét İt HuyÒn Th¹ch, b¶o ®Ö tö ®em vÒ cho S­ phô.",
-	"§­a ta xem thö!",
+	"Let me take a look!",
 	"Ta hiÓu råi! Trong lóc ng­¬i luyÖn d­îc kh«ng ®Ó ı nªn nã s¶n sinh s¶n phÈm phô. §©y lµ ph­¬ng ph¸p chÕ H¾c ¤ Tinh Th¹ch, ng­¬i h·y nghiªn cøu kü.",
 	"VËy lµm sao ®Ó n¨ng lùc luyÖn ®¬n cña ®Ö tö t¨ng thªm mét bËc?",
 	"§õng hÊp tÊp! B©y giê ng­¬i ®ang ë giai ®o¹n b·o hßa mµ ta th­êng nãi. Nh÷ng lóc thÕ nµy th× khã mµ cã tiÕn triÓn míi.",
 	"Giai ®o¹n b·o hßa? VËy ®Ö tö ph¶i lµm sao? Xin S­ phô chØ gi¸o!",
 	"Dôc tèc bÊt ®¹t! Ng­¬i h·y nghiªn cøu ph­¬ng ph¸p chÕ H¾c ¤ Tinh Th¹ch, ta cßn mét İt HuyÒn Th¹ch, h·y cÇm lÊy!",
-	"§Ö tö hiÓu râ!",
+	"This disciple understands clearly!",
 	}
 
 	--¿Û³ı5¿ÅĞşÊ¯
@@ -475,7 +475,7 @@ local strTalk = {
 	"LÇn tr­íc Hoµng Th­îng uèng canh §­¬ng Quy hÇm r¾n xong tÊm t¾c khen ngon, nh­ng khÈu vŞ cña Hoµng Th­îng lu«n thay ®æi. NÕu lÇn sau ng­êi l¹i muèn ¨n mãn l¹ th× ta cã 10 c¸i ®Çu còng kh«ng ®ñ.",
 	"S­ phô l¹i hao t©m v× b÷a ¨n cña Hoµng Th­îng?",
 	"Chao «i! §õng nh¾c n÷a! Ng­¬i ®Õn ®óng lóc l¾m! Hai s­ ®å ta l©u råi kh«ng gÆp nhau, mau lµm vµi mãn ®Ó nh©m nhi ®i!",
-	"VËy……",
+	"Then",
 	"Ng­¬i thËt lµ! §Õn mãn {b¸nh Bét vµng}, {C¬m chiªn trøng }, {C¶i xµo tái}, {Tóy Méng Töu} s­ phô thİch ¨n còng quªn, thøc ¨n ngon kh«ng thÓ thiÕu r­îu! Ng­¬i mau lµm {5 phÇn} ®i!",
 	"Xin s­ phô chê chót! (Kh«ng ngê søc ¨n cña s­ phô còng kh¸ qu¸)",
 	}
@@ -489,9 +489,9 @@ function cooking_tieshan_002()
 
 local strSay = {
 	"Ng­¬i thËt lµ! §Õn mãn {b¸nh Bét vµng}, {C¬m chiªn trøng }, {C¶i xµo tái}, {Tóy Méng Töu} s­ phô thİch ¨n còng quªn, thøc ¨n ngon kh«ng thÓ thiÕu r­îu! Ng­¬i mau lµm {5 phÇn} ®i!",
-	"R­îu thŞt tíi ®©y!/cooking_tieshan_003",
+	"The wine and meat are here!/cooking_tieshan_003",
 	"§Ö tö ch­a häc qua c¸ch lµm/#ReLearnRecipe(6)",--²¹Ñ§Ö®Ç°Ã»ÓĞÑ§Ï°µÄÅä·½
-	"Xin S­ phô chê chót!/nothing",
+	"Please wait a moment, Master!/nothing",
 	}
 	
 	SelectSay(strSay);
@@ -501,9 +501,9 @@ end
 function cooking_tieshan_003()
 
 local strTalk = {
-	"S­ phô! R­îu thŞt c¶ ®©y!",
-	"Hay l¾m! §Ó ta nÕm thö xem!",
-	"å!!",
+	"Master! The wine and meat are all here!",
+	"Excellent! Let me have a taste!",
+	"Oh!!",
 	"Ch¼ng lÏ kh«ng hîp khÈu vŞ?",
 	"§­¬ng nhiªn råi! Ng­¬i dïng nguyªn liÖu g× vËy?",
 	"§Ö tö lµm theo lêi cña s­ phô, dïng Diªn Tinh M¹ch, Hå Tiªu, Dung tr¹ch cèc. Mïi vŞ thÕ nµo vËy s­ phô?",
@@ -523,7 +523,7 @@ function cooking_tieshan_003_01()
 
 local strTalk = {	
 	"VÊn ®Ò kh«ng ph¶i lµ nguyªn liÖu, ®Ó ta xem bÕp vµ ®Õ nåi.",
-	"§©y lµ…?",
+	"This is?",
 	"§©y chØ lµ lo¹i cñi th­êng, kh«ng thÊy cã g× ®Æc biÖt.",
 	"Ng­¬i ®Ó ı xem, lo¹i {cñi} nµy sau khi cho vµo lß löa lín vÉn cã tİnh ®µn håi nhÊt ®Şnh kh«ng nh­ c¸c lo¹i cñi kh¸c. Xem ra ®©y kh«ng ph¶i lµ lo¹i gç th­êng. ThÕ nµy vËy! Ng­¬i ®em chóng ®Õn {thµnh Nam} t×m {L­u NhÊt Phñ} hái thö xem. Víi kinh nghiÖm l©u n¨m cña y kh«ng chõng sÏ biÕt ®­îc nhiÒu ®iÒu vÒ lo¹i cñi nµy. §èi víi viÖc nÊu n­íng sau nµy sÏ cã lîi İch nhÊt ®Şnh.",
 	"{L­u s­ phô} ë {thµnh Nam} µ! §Ö tö xin ®i ngay!",
@@ -549,15 +549,15 @@ end
 function cooking_tieshan_005()
 
 local strTalk = {
-	"L­u s­ phô!",
+	"Master Luu!",
 	"Trêi nãng bøc thÕ nµy mµ cã ®­îc vµi hò Tóy Méng Töu th× cßn g× b»ng.",
 	"L­u s­ phô! T¹i h¹ cã mét chuyÖn muèn thØnh gi¸o ng­êi!",
 	"Trêi nãng bøc thÕ nµy mµ cã ®­îc vµi hò Tóy Méng Töu th× kh«ng cßn g× b»ng.",
-	"(Hay lµ ®i t×m {5 hò} {Tóy Méng Töu} vÒ……)",
+	"(Or go find {5 jars} of {Drunken Dream Wine})",
 	}
 	TalkEx("",strTalk);
 	SetTask(TASK_COOKING_TIESHAN,3);
-	TaskTip("§i t×m 5 hò Tóy Méng Töu cho L­u NhÊt Phñ.");
+	TaskTip("Go find 5 jars of Drunken Dream Wine for Luu Nhat Phu.");
 end
 
 function cooking_tieshan_006()
@@ -566,7 +566,7 @@ local strTalk = {
 	"L­u s­ phô! Nh×n ng­êi må h«i nhÔ nh¹i, ®èn c©y ch¾c rÊt vÊt v¶. T¹i h¹ cã ®em mét hò Tóy Méng Töu ®Õn, s­ phô h·y lµm vµi chĞn lÊy l¹i tinh thÇn.",
 	"Hay l¾m! Thanh niªn nh­ ng­¬i b©y giê hiÕm thÊy l¾m!",
 	"S­ phô t¹i h¹ nãi L­u s­ phô rÊt thİch uèng r­îu, lÇn nµy ®Õn ®©y t¹i h¹ ®· ®İch th©n ñ mét b×nh Tóy Méng Töu, mêi S­ phô nÕm thö.",
-	"Nhá tuæi vËy mµ ®· ñ ®­îc Tóy Méng Töu! Kh¸ l¾m!",
+	"So young yet already able to brew Drunken Dream Wine! Quite good!",
 	}
 	--ÉÏ½»5Æ¿×íÉúÃÎËÀ
 	if GetItemCount(1,1,13) >= 5 then
@@ -576,7 +576,7 @@ local strTalk = {
 		end 
 		TalkEx("cooking_tieshan_006_01",strTalk);
 	else
-		TalkEx("",{"Mau ®i t×m {5 b×nh Tóy Méng Töu} vÒ."});
+		TalkEx("",{"Quickly go find {5 bottles of Drunken Dream Wine}."});
 	end
 end
 
@@ -584,7 +584,7 @@ function cooking_tieshan_006_01()
 
 local strTalk = {	
 	"V·n bèi trong lóc nÊu ¨n ph¸t hiÖn sè cñi nµy, s­ phô nãi sè cñi nµy kh«ng nh­ lo¹i cñi b×nh th­êng. Kh«ng biÕt nã cã g× ®Æc biÖt nªn sai t¹i h¹ ®Õn thØnh gi¸o L­u s­ phô.",
-	"§Ó ta xem thö.",
+	"Let me take a look.",
 	"Lo¹i cñi nµy gÇn gièng ThiÕt TuyÕn méc nh­ng dÎo h¬n. Nh×n bÒ mÆt xem ra ®· tõng nung trong löa nh­ng vÉn gi÷ ®­îc nguyªn tr¹ng, nÕu dïng chóng ®Ó luyÖn binh khİ kh«ng chõng sÏ luyÖn ®­îc thÇn binh. ThÕ nµy vËy! Ta tÆng ng­¬i mét İt SuÊt Nhiªn Nguyªn B× vµ ThiÕt TuyÕn méc xem nh­ c¶m ¬n b×nh r­îu ngon ng­¬i mang ®Õn.",
 	"§a t¹ L­u s­ phô chØ ®iÓm!",
 	}
@@ -595,7 +595,7 @@ local strTalk = {
 		AddItem(2,2,11,5,1);--µÃµ½5ÌúÏßÄ¾
 		AddItem(2,10,2,5,1);--µÃµ½5ÂÊÈ»Ô­Æ¤
 	end
-	TaskTip("Quay vÒ gÆp Ngù Trï b¸o c¸o t×nh h×nh");
+	TaskTip("Return to meet the Imperial Chef and report the situation");
 
 end
 
@@ -615,8 +615,8 @@ local strTalk = {
 	"VÒ råi µ? Cã hái ®­îc g× kh«ng?",
 	"L­u s­ phô nãi ThiÕt TuyÕn Tinh Méc nµy lµ th­îng phÈm chÕ t¹o binh khİ, «ng ta cßn ®­a ®Ö tö SuÊt Nhiªn Nguyªn B× vµ ThiÕt TuyÕt ®Ó c¶m ¬n ®· mang r­îu ®Õn.",
 	"SuÊt Nhiªn Nguyªn B×? Da r¾n nµy rÊt hiÕm thÊy, 10 n¨m nã míi lét da mét lÇn, lµ mét trong nh÷ng mãn ¨n ngon. Ng­¬i chê chót! §îi vi s­ lµm mét chĞn ch¸o r¾n h¶o h¹ng! §¶m b¶o ng­¬i ¨n xong sÏ thİch ngay.",
-	" 1 giê sau……",
-	"S­ phô! Canh r¾n ®· nÊu xong?",
+	" 1 hour later",
+	"Master! Is the snake soup cooked?",
 	"¡n chĞn canh lµm tõ SuÊt Nhiªn B× ta thËt kh«ng ®µnh lßng! Vi s­ ®· kiÓm tra cñi trong lß l¹i cã lo¹i cñi ®ã kh«ng nh÷ng kh«ng thÓ c¶i thiÖn chÊt l­îng nÊu ¨n mµ löa ch¸y còng cã vÊn ®Ò, xem ra ph¶i tiÕp tôc lo nghÜ chuyÖn ¨n uèng cña Hoµng th­îng.",
 	"SuÊt Nhiªn Nguyªn B× nµy ng­¬i h·y lÊy ®i!"
 	}
@@ -640,7 +640,7 @@ function weave_shanshi_001()
 
 local strTalk = {
 	"Ng­¬i ®Õn ®óng lóc l¾m! LÇn tr­íc l¸i bu«n ë §¹i Lı cã ®em ®Õn cho ta İt trang phôc cña d©n téc thiÓu sè ë khu T©y Nam rÊt ®Ñp. Ta ®ang ®Şnh lµm vµi bé trang phôc míi, khæ nçi qu¸ İt trang phôc ®Ó tham kh¶o.ThÕ nµy vËy! Ng­¬i ®Õn §¹i Lı t×m Chñ tiÖm N÷ phôc lÊy vµi bé trang phôc vÒ ®Ó ta tham kh¶o.",
-	"§å nhi lËp tøc ®i ngay!",
+	"Disciple, go at once!",
 	"Chñ tiÖm N÷ phôc lµ ng­êi lµm ¨n, khã tr¸nh tİnh to¸n chi li. Ng­¬i h·y ®­a bµ ta vµi bé y phôc nÕu kh«ng bµ ta sÏ kh«ng chŞu ®­a ®å cho ng­¬i.",
 	}
   
@@ -767,7 +767,7 @@ local strTalk = {
 	"Yªn t©m råi! Trang phôc sÏ ®­îc chuyÓn ®Õn nhanh th«i! Bän hä lµ d©n lµm ¨n lu«n lÊy ch÷ tİn lµm ®Çu mµ.",
 	"VËy th× hay l¾m! Kh«ng biÕt hiÖn giê s­ phô ®· nghÜ ra trang phôc nµo míi ch­a?",
 	"ı t­ëng ®· cã, nh­ng cßn thiÕu nguyªn liÖu! S¬n S­ B× lÇn tr­íc Thî s¨n Tr­¬ng ®­a cho ta võa cøng võa dÎo nh­ng İt qu¸, trong lóc ta dÖt ®· thö thªm L·nh trïng t¬ vµo ®Ó t¨ng ®é dÎo nh­ng l¹i rÊt khã nhuém. Ng­¬i gióp ta hái th¨m Hoµng §¹i ThÈm lµm sao ®Ó nhuém vµ t¨ng tİnh dÎo dai cña S¬n S­ B×.",
-	"§Ö tö ®i ngay!",
+	"The disciple goes at once!",
 	}
 
 	TalkEx("",strTalk);
@@ -783,7 +783,7 @@ function weave_shanshi_008()
 
 local strTalk = {
 	"Ng­¬i gióp ta hái th¨m Hoµng §¹i ThÈm lµm sao ®Ó nhuém vµ t¨ng tİnh G©n cèt cña S¬n S­ B×.",
-	"§Ö tö ®i ngay!",
+	"The disciple goes at once!",
 	}
 
 	TalkEx("",strTalk);
@@ -793,7 +793,7 @@ end
 function weave_shanshi_009()
 
 local strTalk = {
-	"Xin chµo ®¹i thÈm !",
+	"Greetings, Magistrate!",
 	"Ng­¬i lµ ®Ö tö cña CÈm N­¬ng? Bµ ta th­êng khen mi tr­íc mÆt ta! H«m nay t×m ta cã viÖc g×?",
 	"S­ phô t¹i h¹ trong lóc may ¸o míi gÆp chót khã kh¨n. S­ phô muèn c¶i thiÖn ®é dÎo cña S¬n S­ B×. Ng­êi ®· thö thªm L·nh trïng t¬, ®é dÎo th× ®­îc c¶i thiÖn nh­ng mµu s¾c l¹i rÊt khã nhuém. Kh«ng biÕt Hoµng §¹i ThÈm cã thÓ gióp S­ phô gi¶i quyÕt vÊn ®Ò?",
 	"Mµu Tr¾ng lµ ­u ®iÓm cña ¤ Tµm Ti nh­ng v× nã qu¸ tr¾ng nªn kh«ng thÓ trén lÉn víi mµu kh¸c. ThÕ nµy vËy! Ta cã ¤ Tµm Ti do mét ng­êi b¹n tÆng. ¤ Tµm nµy sèng trong b¨ng tuyÕt l©u n¨m nªn t¬ nã nh¶ ra kh«ng nh÷ng ch¾c mµ cßn ®Ñp. H·y nhËn lÊy kh«ng chõng sÏ gióp ®­îc ng­¬i.",
@@ -829,10 +829,10 @@ function weave_shanshi_011()
 
 local strTalk = {
 	"§©y lµ ¤ Tµm Ti cña Hoµng §¹i ThÈm, xin s­ phô xem qua!",
-	"å! §Ó ta thö xem……",
-	" (1 giê sau…)",
+	"Oh! Let me try it out",
+	" (1 hour later)",
 	"T¬ t»m nµy qu¶ nhiªn lµ lo¹i th­îng ®¼ng. ë ®©y cã İt ¤ Tµm Ti vµ c¸ch chÕ t¹o S¬n S­ Tinh B×, ng­¬i h·y tõ tõ nghiªn cøu.",
-	"§a t¹ s­ phô!",
+	"Many thanks, master!",
 	}
 
 	--¿Û5·İÎÚ²ÏË¿
@@ -853,7 +853,7 @@ function juju_chiwu_001()
 
 local strTalk = {
 	"Ng­¬i ®Õn ®óng lóc l¾m! GÇn ®©y søc m¹nh cña O¸n Hån ë Phong §« cµng ngµy cµng m¹nh, gÇn ®©y chóng ®· tÊn c«ng Giang T©n th«n, vi s­ ®ang nghÜ c¸ch chÕ t¹o lo¹i phï míi. LÇn tr­íc {L­u NhÊt Phñ} ë {BiÖn Kinh} vµ {Thî má §¹i} ë {Thµnh §«} cã xin ta {Khu Ma linh phï} nh­ng vÉn ch­a ®­a cho hä, ng­¬i h·y thay ta ®i mét chuyÕn!",
-	"§Ö tö ®i ngay!",
+	"The disciple goes at once!",
 	}
 	TalkEx("",strTalk);
 	SetTask(TASK_JUJU_CHIWU,1);
@@ -865,7 +865,7 @@ function juju_chiwu_002()
 
 local strTalk = {
 	"LÇn tr­íc {L­u NhÊt Phñ} ë {BiÖn Kinh} vµ {§¹i kho¸ng c«ng} ë {Thµnh §«} cã xin ta {Khu Ma linh phï} nh­ng vÉn ch­a ®­a cho hä, ng­¬i h·y thay ta ®i mét chuyÕn!",
-	"§Ö tö ®i ngay!",
+	"The disciple goes at once!",
 	}
 	TalkEx("",strTalk);
 	
@@ -935,7 +935,7 @@ local strTalk = {
 		SetTask(TASK_JUJU_CHIWU,2);
 		TaskTip("§em Bå §Ò méc vµ H¾c « th¹ch cña L­u NhÊt Phñ vµ §¹i kho¸ng c«ng vÒ cho V©n Du ®¹o nh©n");
 	else
-		TaskTip("§­a 1 tÊm Khu Ma Linh Phï cho L­u NhÊt Phñ ë BiÖn Kinh");
+		TaskTip("Give 1 Khu Ma Linh Phu to Luu Nhat Phu at Bianjing");
 	end
 	
 end
@@ -954,9 +954,9 @@ function juju_chiwu_007()
 local strTalk = {
 	"§· ®­a linh phï cho L­u s­ phï vµ §¹i s­ phô? Bän hä th­êng ®èn c©y ®µo kho¸ng trong nói s©u, n¬i ®ã ©m khİ tÒ tô, tuy kh¶ n¨ng cña Khu Ma Linh Phï cã h¹n nh­ng gióp tho¸t th©n th× kh«ng vÊn ®Ò g×.",
 	"Hä cã göi cho s­ phô {H¾c « th¹ch} vµ {Bå §Ò méc}, hy väng h÷u İch vµ còng ®Ó ®¸p t¹ l¸ bïa cña ng­êi.",
-	"§Ó ta xem thö!",
+	"Let me take a look!",
 	"H¾c « th¹ch nµy cã tõ tİnh thÇn kú, Bå §Ò méc nµy còng Èn chøa thÇn lùc phï hé. Ng­¬i cÇm thö xem.",
-	" (1 giê sau…)",
+	" (1 hour later)",
 	}
 
 	--¿Û10·İºÚÎÙÊ¯ºÍÆĞÌáÄ¾
@@ -2048,7 +2048,7 @@ local nFactionID = GetPlayerFaction();
 		if nFactionID ~= 0 then
 			myTitel = PlayerFactionTitle[nFactionID][2];
 		else
-			myTitel = "C« n­¬ng"
+			myTitel = "Young lady"
 		end;
 	end;
 	

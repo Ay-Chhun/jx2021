@@ -6,7 +6,7 @@ Include("\\script\\meridian\\meridian_script_api.lua")
 
 VET_201209_ACITIVITY_ID = 73;
 
-VET_201209_NPC = "<color=green>Chñ Töu LÇu:<color>";
+VET_201209_NPC = "<color=green>Tavern Owner:<color>";
 
 VET_201209_Say_Tb = {
 	"T¹i h¹ muèn ®ãng gãp N­íc Hoa Kh« 1 cho chÞ em Phô N÷ (tiªu hao 25 N­íc Hoa Kh« 1 + 25 Vµng)/send_one_201209",
@@ -28,20 +28,20 @@ Zhenqi_Award2_201209 = 30;
 Item_Count1_201209 = 25;
 Item_Count2_201209 = 25;
 Coin_Consume_201209 = 25;
-Item_table1_201209 = {2,1,30444,"N­íc Hoa Kh« 1"};
-Item_table2_201209 = {2,1,30445,"N­íc Hoa Kh« 2"};
+Item_table1_201209 = {2,1,30444,"Dry Perfume 1"};
+Item_table2_201209 = {2,1,30445,"Dry Perfume 2"};
 Acitivity_log1_201209 = "Ho¹t ®éng phô TÕt Phô N÷";
-Acitivity_log2_201209 = "TÆng N­íc Hoa Kh«";
+Acitivity_log2_201209 = "Give Dry Perfume";
 
-strMsg2Player1_201209 = "TÆng N­íc Hoa Kh« 1 %d/%d";
-strMsg2Player2_201209 = "TÆng N­íc Hoa Kh«2 %d/%d";
-strMsg2Player3_201209 = "T¨ng N­íc Hoa Kh« 1 vµ N­íc Hoa Kh« 2 %d/%d";
+strMsg2Player1_201209 = "Give Dry Perfume 1 %d/%d";
+strMsg2Player2_201209 = "Give Dry Perfume 2 %d/%d";
+strMsg2Player3_201209 = "Give Dry Perfume 1 and Dry Perfume 2 %d/%d";
 
 
 --½±Àø±í
 Vet_201209_Award  = {
     {1, 1919, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 0},
-    {1, 1502, "§Êu hån", {2, 1, 1157, 1}, 7 * 24 * 3600},
+    {1, 1502, "Soul Duel", {2, 1, 1157, 1}, 7 * 24 * 3600},
     {1, 2918, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 7 * 24 * 3600},
     {1, 888, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
     {1, 111, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},
@@ -50,7 +50,7 @@ Vet_201209_Award  = {
 };
 Vet_201209_Award_Special  = {
     {1, 1919, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 2}, 0},
-    {1, 1838, "§Êu hån", {2, 1, 1157, 1}, 7 * 24 * 3600},
+    {1, 1838, "Soul Duel", {2, 1, 1157, 1}, 7 * 24 * 3600},
     {1, 2525, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 7 * 24 * 3600},
     {1, 522, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
     {1, 200, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},

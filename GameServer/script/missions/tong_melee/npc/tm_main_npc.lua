@@ -16,8 +16,8 @@ function tm_join_tong_melee()
 		"Lo¹n chiÕn bang héi lµ g×/tm_what_is_tong_melee",
 		"§iÒu kiÖn tham gia lo¹n chiÕn bang héi/tm_join_condition",
 		"Quy t¾c lo¹n chiÕn bang héi/tm_rule_tong_melee",
-		"\n Ph¶n håi/tm_dialog_return",
-		"Ra khái/nothing"
+		"\n Go back/tm_dialog_return",
+		"Leave/nothing"
 	}
 	local nRet = IsPlayerQueuing(1);
 	if not nRet  then return 0; end
@@ -86,8 +86,8 @@ function tm_what_is_tong_melee()
 	local tSay = {};
 	tSay.msg = TM_TONG_AD_NPC.."Tø Linh ThÇn Thó lµ ®Ó rÌn luyÖn t­ c¸ch cña hä, kiÓm tra lùc chiÕn ®Êu cña bang héi, c¸c bang héi lõng danh thiªn h¹ cã thÓ tham gia lo¹n chiÕn. Toµn bé ho¹t ®éng lµ c¸c bang héi tham gia, mçi bang héi sÏ chän ra 8 ng­êi tham gia, ho¹t ®éng diÔn ra vµo lóc 19:45 thø 6, thø 7, chñ nhËt tham gia b¸o danh, 20:00 chİnh thøc b¾t ®Çu.";
 	tSay.sel = {
-		{"\n Ph¶n håi", "tm_join_tong_melee"},
-		{"KÕt thóc ®èi tho¹i", "nothing"},
+		{"\n Feedback", "tm_join_tong_melee"},
+		{"End conversation", "nothing"},
 	};
 	temp_Talk(tSay);
 end
@@ -97,8 +97,8 @@ function tm_join_condition()
 	local tSay = {};
 	tSay.msg = TM_TONG_AD_NPC.."ChØ cÇn nh©n vËt ®¹t ®Õn cÊp 90 vµ häc hÕt kü n¨ng cÊp 55 , <color=red> ng­êi ch¬i ®· gia nhËp bang héi <color> th× cã thÓ tham gia. Nh­ng chØ cã <color=red> qu¶n lı bang héi <color> lµm ®éi tr­ëng ®­a tæ ®éi ®i vµo míi ®­îc!";
 	tSay.sel = {
-		{"\n Ph¶n håi", "tm_join_tong_melee"},
-		{"KÕt thóc ®èi tho¹i", "nothing"},
+		{"\n Feedback", "tm_join_tong_melee"},
+		{"End conversation", "nothing"},
 	};
 	temp_Talk(tSay);
 end
@@ -109,8 +109,8 @@ function tm_rule_tong_melee()
 	tSay.msg = TM_TONG_AD_NPC.."Sau khi lo¹n chiÕn bang héi b¾t ®Çu, ®éi tr­ëng cã thÓ ph©n phèi ThÇn Thó, giao cho 1 thµnh viªn b¶o vÖ. §¸nh b¹i thµnh viªn bang héi kh¸c sÏ nhËn ®­îc ®iÓm linh lùc thÇn thó, ®¸nh b¹i ng­êi b¶o vÖ thÇn thó, cã thÓ nhËn ®­îc cµng nhiÒu ®iÓm linh lùc thÇn thó. BŞ tö vong sÏ bŞ trõ ®iÓm linh lùc thÇn thó cña bang héi m×nh, khi ®iÓm linh lùc thÇn thó ®¹t ®Õn gi¸ trŞ nhÊt ®Şnh, thÇn thó sÏ th¨ng cÊp, mang ®Õn nhiÒu lîi İch cho bang héi. §ång thêi bŞ trõ qu¸ nhiÒu ®iÓm linh lùc thÇn thó sÏ lµm cho thÇn thó bŞ h¹ cÊp. Cuèi cïng c¨n cø vµo ®iÓm linh lùc bang héi ®Ó tiÕn hµnh xÕp h¹ng cao thÊp vµ lµm ®iÒu kiÖn ®Ó ph©n ®Şnh th¾ng b¹i.";
 	tSay.msg = tSay.msg..format("( mét bang héi nhiÒu nhÊt chØ ®­îc 3 thµnh viªn tham gia)",3);
 	tSay.sel = {
-		{"\n Ph¶n håi", "tm_join_tong_melee"},
-		{"KÕt thóc ®èi tho¹i", "nothing"},
+		{"\n Feedback", "tm_join_tong_melee"},
+		{"End conversation", "nothing"},
 	};
 	temp_Talk(tSay);
 end
@@ -320,7 +320,7 @@ function _tm_get_tong_award_now_cb(nSorce, nRank, nCount, sdb)
 	if TM_TONG_AWARD[nRank][2] == 2 then
 		gf_AddItemEx2({2,1,30618,1}, "ChiÕn kú tø linh bang héi cao cÊp", "Lo¹n chiÕn bang héi", "PhÇn th­ëng bang héi", 0, 1);
 	elseif TM_TONG_AWARD[nRank][2] == 1 then
-		gf_AddItemEx2({2,1,30617,1}, "ChiÕn Kú Tø Linh Bang Héi", "Lo¹n chiÕn bang héi", "PhÇn th­ëng bang héi", 0, 1);
+		gf_AddItemEx2({2,1,30617,1}, "Guild Four Spirit War Banner", "Lo¹n chiÕn bang héi", "PhÇn th­ëng bang héi", 0, 1);
 	end
 	return 1;
 end

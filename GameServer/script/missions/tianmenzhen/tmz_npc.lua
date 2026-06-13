@@ -22,7 +22,7 @@ Include("\\script\\vng\\award\\feature_award.lua")
 Include("\\script\\missions\\tianmenzhen\\runtime_data_stat.lua")
 
 g_szThisFile = "\\script\\missions\\tianmenzhen\\tmz_npc.lua";
-g_RealmNpcName = "<color=green>T­íng Gi¸o Qu¸ch Qu©n Di <color>: ";
+g_RealmNpcName = "<color=green>General Aide Guo Junyi <color>:";
 
 function main()
 	--==========ÌìÃÅÕóºóÐøÈÎÎñ===================
@@ -49,7 +49,7 @@ function main()
 			"NhËn phÇn th­ëng Thiªn M«n TrËn/tmz_get_award",
 			"Xem thuéc tÝnh trang bÞ míi/#Sale(147,100,1)",
 			"Giíi thiÖu Thiªn M«n TrËn/tmz_about_detail",
-			"Kh«ng cã g×!/gf_DoNothing"
+			"Nothing!/gf_DoNothing"
 			};
 		if GLB_TMZ_BiWuCheck() == 1 then
 			tinsert(strtab,4,"Tû vâ Thiªn M«n TrËn bang héi xuyªn server/tmz_about_tong");
@@ -68,11 +68,11 @@ function tmz_tong_callback_2(szkey, nkey1, nkey2, nCount,_szkey, _nkey1, _nkey2)
 	local strTongName = GetTongName();
 	local nHufu =  tbTmzTong[strTongName][8] or MAX_HUFU;
 	strtab = {
-		"B¸o danh tham gia/#tmz_tong_join(1)",
+		"Register to join/#tmz_tong_join(1)",
 		"Sö dông 20 Tiªu Dao Ngäc b¸o danh tham gia/#tmz_tong_join(2)",
 		"Giíi thiÖu ®èi trËn/tmz_tong_detail",
 		"§­a ta trë vÒ/tmz_tong_back",
-		"Kh«ng cã g×!/gf_DoNothing",	
+		"Nothing!/gf_DoNothing",	
 	};
 	local strMsg = "Quý bang cßn d­ Thiªn M«n Hæ Phï Ên lµ <color=yellow>"..nHufu.."<color>, mçi lÇn b¸o danh cÇu tiªu hao 1."
 	Say(g_RealmNpcName.."C¸c vÞ thiÕu hiÖp, khi ®· vµo ®Õn ®©y th× ph¶i nghe lÖnh ta! KÎ lµm tr¸i lÖnh, xö theo qu©n ph¸p!"..strMsg,
@@ -178,7 +178,7 @@ function tmz_single_join()
 				title = TMZ_ShowData.title,
 				szFormat = TMZ_ShowData.szFormat,
 				data = {},			
-				szMsg = format("Tû lÖ chiÕm trËn: <color=yellow>%s[%d]<color>: <color=pink>[%d]%s<color>",tCampName[1],0,0,tCampName[2]),
+				szMsg = format("Battle occupation ratio: <color=yellow>%s[%d]<color>: <color=pink>[%d]%s<color>",tCampName[1],0,0,tCampName[2]),
 			};
 			initTopScore(ShowTable);
 			TMZ_ShowData.CurN = TMZ_ShowData.CurN + 1;
@@ -302,7 +302,7 @@ function tmz_team_join()
 				title = TMZ_ShowData.title,
 				szFormat = TMZ_ShowData.szFormat,
 				data = {},			
-				szMsg = format("Tû lÖ chiÕm trËn: <color=yellow>%s[%d]<color>: <color=pink>[%d]%s<color>",tCampName[1],0,0,tCampName[2]),
+				szMsg = format("Battle occupation ratio: <color=yellow>%s[%d]<color>: <color=pink>[%d]%s<color>",tCampName[1],0,0,tCampName[2]),
 			};
 			initTopScore(ShowTable);
 			TMZ_ShowData.CurN = TMZ_ShowData.CurN + 1;
@@ -683,7 +683,7 @@ function tmz_confirm_award(nType)
 	
 	if bIsWin == 1 then
 		_MissionAward_RandAward(g_tWinExtraAward, "PhÇn th­ëng phe th¾ng Thiªn M«n TrËn")--Ê¤·½×¨Êô½±Àø
-		gf_EventGiveAllAward(g_tWinExtraAward2[nType].tbAward,"Thiªn M«n trËn",format("NhËn %s phÇn th­ëng tham gia","Phe th¾ng"),tAddRate);
+		gf_EventGiveAllAward(g_tWinExtraAward2[nType].tbAward,"Thiªn M«n trËn",format("NhËn %s phÇn th­ëng tham gia","Winning side"),tAddRate);
 		--NhËn qu©n c«ng cho server Háa Phông
 		-- if GetGlbValue(GLB_TSK_SERVER_ID) == 92 then
 			-- gf_Modify("JunGong",tbQuanCong_HP[nType][1])
@@ -769,7 +769,7 @@ function tmz_change_mark()
 		"10 ®iÓm tÝch lòy ®æi ®­îc 1 Thñy Tinh/#tmz_change_stone(3)",
 		"10 ®iÓm tÝch lòy ®æi ®­îc 1 Háa Tinh/#tmz_change_stone(4)",
 		"10 ®iÓm tÝch lòy ®æi ®­îc 1 Thæ Tinh/#tmz_change_stone(5)",
-		"Kh«ng cã g×!/gf_DoNothing",
+		"Nothing!/gf_DoNothing",
 	}
 	Say(g_NpcName.."§iÓm tÝch lòy Thiªn M«n TrËn cña c¸c h¹ lµ: <color=yellow>"..GetTask(TASKID_TMZ_AWARD_MARK).."/"..MAX_MARK.."<color>. §¹i hiÖp muèn ®æi tr¹ng bÞ g×?", getn(tSel), tSel)
 end
@@ -797,7 +797,7 @@ function tmz_change_weapon()
 	local nRoute = GetPlayerRoute();
 	Say(g_NpcName.."Vò khÝ [HÖ Thiªn M«n] cÇn ®¹t <color=yellow>cÊp 75<color> míi cã thÓ trang bÞ, ®æi <color=yellow>["..tAwardWeapon[nRoute][1][1].."]<color>cÇn <color=yellow>"..tAwardWeapon[nRoute][1][5].."<color> ®iÓm tÝch lòy Thiªn M«n TrËn, hiÖn t¹i c¸c h¹ ®· cã: <color=yellow>"..GetTask(TASKID_TMZ_AWARD_MARK).."/"..MAX_MARK.."<color> ®iÓm, cã muèn ®æi?",
 		2,
-		"\n§óng/tmz_change_weapon_confirm",
+		"\nYes/tmz_change_weapon_confirm",
 		"\nKh«ng cÇn/gf_DoNothing")
 end
 
@@ -816,7 +816,7 @@ function tmz_change_weapon_confirm()
 		Msg2Player("B¹n nhËn ®­îc ["..tAwardWeapon[nRoute][1][1].."]x1");
 	end
 	WriteLogEx(THIENMON_LOG_TITLE, "®æi ®iÓm tÝch lòy sö dông: "..tAwardWeapon[nRoute][1][1])
-	WriteLog("[§æi ®iÓm tÝch lòy Thiªn M«n TrËn]: tµi kho¶n: "..tostring(GetAccount()).."Nh©n vËt: "..tostring(GetName()).."Thêi gian: "..tonumber(date("%Y%m%d")).."[§æi 1 mãn: "..tAwardWeapon[nRoute][1][1].."]. Ký hiÖu: "..nAdd_flag);
+	WriteLog("[§æi ®iÓm tÝch lòy Thiªn M«n TrËn]: tµi kho¶n: "..tostring(GetAccount()).."Nh©n vËt: "..tostring(GetName()).."Thêi gian: "..tonumber(date("%Y%m%d")).."[Exchange 1 item:"..tAwardWeapon[nRoute][1][1].."]. Ký hiÖu: "..nAdd_flag);
 end
 
 function tmz_change_s2(nTbIDX)
@@ -834,7 +834,7 @@ function tmz_change_s2(nTbIDX)
 	format("[%s] n©ng cÊp thµnh [%s] (cÇn ®iÓm tÝch lòy Thiªn M«n TrËn %d)/#tmz_change_s2_ask(%d,3,1)",tAwardCloth[nTbIDX][3][1][1][1],tAwardCloth[nTbIDX+1][3][1][1][1],tAwardCloth[nTbIDX+1][3][1][1][5],nTbIDX),
 	format("[%s] n©ng cÊp thµnh [%s] (cÇn ®iÓm tÝch lòy Thiªn M«n TrËn %d)/#tmz_change_s2_ask(%d,3,2)",tAwardCloth[nTbIDX][3][2][1][1],tAwardCloth[nTbIDX+1][3][2][1][1],tAwardCloth[nTbIDX+1][3][2][1][5],nTbIDX),
 	format("[%s] n©ng cÊp thµnh [%s] (cÇn ®iÓm tÝch lòy Thiªn M«n TrËn %d)/#tmz_change_s2_ask(%d,4,1)",tAwardWeapon[nRoute][nTbIDX][1],tAwardWeapon[nRoute][nTbIDX+1][1],tAwardWeapon[nRoute][nTbIDX+1][5],nTbIDX),
-	"Kh«ng cã g×!/gf_DoNothing",
+	"Nothing!/gf_DoNothing",
 	};
 	local sTalk = "";
 	if nTbIDX == 1 then
@@ -859,7 +859,7 @@ function tmz_change_s2_ask(nTbIDX,nWz,nType)
 		3,
 		"\n x¸c ®Þnh, ta muèn n©ng cÊp/#tmz_change_s2_confirm("..nTbIDX..","..nWz..","..nType..")",
 		"\n kh«ng, ta chän sai råi/#tmz_change_s2("..nTbIDX..")",
-		"\n Tho¸t /gf_DoNothing")
+		"\n Exit /gf_DoNothing")
 end
 
 function tmz_change_s2_confirm(nTbIDX,nWz,nType)
@@ -948,8 +948,8 @@ end
 
 function tmz_about_detail()
 	local strtab = {
-		". Tham gia diÔn vâ/tmz_about_detail_1",
-		". Quy t¾c diÔn vâ/tmz_about_detail_2",
+		". Join the Martial Tournament/tmz_about_detail_1",
+		". Martial Tournament rules/tmz_about_detail_2",
 		". PhÇn th­ëng diÔn vâ/tmz_about_detail_3",
 		--"¡ô¶îÍâ½±Àø/tmz_about_detail_4",
 		". Trë l¹i/main"
@@ -980,7 +980,7 @@ function tmz_about_detail_3_3()
 end
 
 function tmz_about_detail_4()
-	Talk(1,"tmz_about_detail",g_NpcName.."Vµo 12: 00 -14: 00 vµ 18: 00 - 20: 00 mçi ngµy, ng­êi ch¬i ®¨ng ký tham gia ®Êu trËn vµ nhËn ®­îc phÇn th­ëng ®iÓm kinh nghiÖm sÏ ®­îc nh©n ®«i. HiÖu qu¶ nµy kh«ng t¸c dông víi"..tAwardItem[1][1].." vµ"..tAwardItem[2][1].."Céng dån.")
+	Talk(1,"tmz_about_detail",g_NpcName.."Vµo 12: 00 -14: 00 vµ 18: 00 - 20: 00 mçi ngµy, ng­êi ch¬i ®¨ng ký tham gia ®Êu trËn vµ nhËn ®­îc phÇn th­ëng ®iÓm kinh nghiÖm sÏ ®­îc nh©n ®«i. HiÖu qu¶ nµy kh«ng t¸c dông víi"..tAwardItem[1][1].." and"..tAwardItem[2][1].."Cumulative.")
 end
 
 function tmz_about_tong()
@@ -990,13 +990,13 @@ function tmz_about_tong()
 		return 0;
 	end		
 	local strtab = {
-		"§æi Xu Tiªu Dao/tmz_Change_Xoyo_Gold",
+		"Exchange Carefree Coin/tmz_Change_Xoyo_Gold",
 		"§æi Ngäc Tiªu Dao (1 Hßa ThÞ BÝch ®æi ®­îc 100 Ngäc Tiªu Dao)/tmz_Change_Xoyo_Yu",
 		"Tham gia bang héi Thiªn M«n TrËn xuyªn server (cÇn 200 Xu Tiªu Dao)/tmz_goto_realm",
 		"NhËn th­ëng Thiªn M«n TrËn xuyªn server/tmz_tong_award",
-		"Server ®èi trËn/tmz_Special_Service",
+		"Server battle/tmz_Special_Service",
 		"Giíi thiÖu ®èi trËn/tmz_tong_detail",
-		"KÕt thóc ®èi tho¹i/gf_DoNothing",
+		"End dialogue/gf_DoNothing",
 	};
 	Say(g_NpcName.."T×m ta cã viÖc g× kh«ng?",
 		getn(strtab),
@@ -1005,9 +1005,9 @@ end
 
 function tmz_Change_Xoyo_Gold()
 	local strtab = {
-		"Dïng vµng ®æi Xu Tiªu Dao (1 vµng ®æi 100 Xu Tiªu Dao)/tmz_Use_JXB",
+		"Use gold to exchange Xiaoyao Coins (1 gold exchanges 100 Xiaoyao Coins)/tmz_Use_JXB",
 		"trë l¹i/tmz_about_tong",
-		"KÕt thóc ®èi tho¹i/gf_DoNothing",
+		"End dialogue/gf_DoNothing",
 	};
 	Say(g_NpcName.."Sau khi v­ît server ngoµi <color=yellow>Xu Tiªu Dao<color> ra nh÷ng tiÒn tÖ kh¸c ®Òu kh«ng thÓ sö dông, ta cã thÓ gióp chuyÓn <color=yellow>vµng<color> thµnh Xu Tiªu Dao. ThiÕu hiÖp hiÖn ®ang së h÷u "..GetXYB().." Xu Tiªu Dao, vÒ sau cã thÓ kiÓm trang th«ng qua giao diÖn F2 (cã thÓ lµ sè ©m)",
 		getn(strtab),
@@ -1016,13 +1016,13 @@ end
 
 function tmz_Use_JXB()
 	local nJxb = floor(GetCash()/10000);
-	AskClientForNumber("tmz_Use_JXB_Confirm",1,nJxb*100,"§«i bao nhiªu Xu Tiªu Dao?");
+	AskClientForNumber("tmz_Use_JXB_Confirm",1,nJxb*100,"How much Tieu Dao Coin to exchange?");
 end
 
 function tmz_Use_JXB_Confirm(nCount)
 	local nJxb = floor(GetCash()/10000);
 	if nJxb < nCount/100 then
-		Talk(1,"",g_NpcName.."TiÒn vµng c¸c h¹ mang theo kh«ng ®ñ"..nCount.."Xu Tiªu Dao.");
+		Talk(1,"",g_NpcName.."TiÒn vµng c¸c h¹ mang theo kh«ng ®ñ"..nCount.."Tieu Dao Coin.");
 		return 0;
 	end
 	if Pay(nCount/100*10000) == 1 then
@@ -1035,7 +1035,7 @@ function tmz_Change_Xoyo_Yu()
 	Say(g_NpcName.."X¸c ®Þnh dïng 1 [Hßa ThÞ BÝch] ®æi 100 Ngäc Tiªu Dao?",
 		2,
 		"\nX¸c nhËn/tmz_Change_Yu_Confirm",
-		"\n Ph¶n håi/tmz_about_tong")
+		"\n Go back/tmz_about_tong")
 end
 
 function tmz_Change_Yu_Confirm()
@@ -1101,7 +1101,7 @@ function tmz_tong_AddCamp(nCurMapId,nCamp)
 			PlayerIndex = GetTeamMember(i); 
 			mf_JoinMission(MISSION_ID,nCamp,nCurMapId);
 			if GetName() == GetCaptainName() then
-				WriteLogEx(THIENMON_LOG_TITLE, "tæ ®éi tham gia L­¬ng S¬n B¹c")
+				WriteLogEx(THIENMON_LOG_TITLE, "form a team to join Liangshanbo")
 			end
 			WriteLogEx(THIENMON_LOG_TITLE, "tham gia")
 			TMZ_Write_TableData(nCurN,nCamp,0,0,0);
@@ -1186,7 +1186,7 @@ end
 
 function tmz_tong_detail()
 	local strtab = {
-		"Quy tr×nh ®èi trËn/#tmz_tong_detail_1(1)",
+		"Battle procedure/#tmz_tong_detail_1(1)",
 		"§iÓm bang héi ®èi trËn/#tmz_tong_detail_1(2)",
 		"CÊp ®é bang héi ®èi trËn/#tmz_tong_detail_1(3)",
 		"§é tÝch cùc bang héi/#tmz_tong_detail_1(4)",
@@ -1221,7 +1221,7 @@ function tmz_tong_back()
 	Say(g_RealmNpcName.."C¸c h¹ x¸c ®Þnh muèn trë vÒ?",
 		2,
 		"\nX¸c nhËn/tmz_tong_confirm_back",
-		"\nKÕt thóc ®èi tho¹i/gf_DoNothing")
+		"\nEnd conversation/gf_DoNothing")
 end
 
 function tmz_tong_confirm_back()
@@ -1254,7 +1254,7 @@ function tmz_tong_callback_sv_1(szkey, nkey1, nkey2, nCount,_szkey, _nkey1, _nke
 		"Sö dông "..tUpLvXoYoYu[1].." Ngäc tiªu dao gióp cÊp ®é bang héi n©ng thµnh cÊp 2/#tmz_Special_Service_1(1,"..nBattleLv..","..nTongScore..")",
 		"Sö dông "..tUpLvXoYoYu[2].." Ngäc tiªu dao gióp cÊp ®é bang héi n©ng thµnh cÊp 3/#tmz_Special_Service_1(2,"..nBattleLv..","..nTongScore..")",
 		"trë l¹i/tmz_about_tong",
-		"KÕt thóc ®èi tho¹i/gf_DoNothing"
+		"End dialogue/gf_DoNothing"
 	};
 	Say(g_NpcName.."CÊp ®é chiÕn ®Êu cña quý bang ph¸i lµ: <color=yellow>"..nBattleLv.."<color>",
 		getn(strtab),
@@ -1287,10 +1287,10 @@ function tmz_Special_Service_1(nType,nBattleLv,nTongScore)
 		Talk(1,"",g_NpcName.."N©ng cÊp cÇn"..tUpLvXoYoYu[nType].."Ngäc Tiªu Dao, c¸c h¹ mang theo kh«ng ®ñ.");
 		return 0;
 	end
-	Say(g_NpcName.."X¸c ®Þnh dïng<color>"..tUpLvXoYoYu[nType].."Ngäc Tiªu Dao gióp bang héi n©ng cÊp thµnh "..(nType+1).."Kh«ng?",
+	Say(g_NpcName.."X¸c ®Þnh dïng<color>"..tUpLvXoYoYu[nType].."Ngäc Tiªu Dao gióp bang héi n©ng cÊp thµnh "..(nType+1).."No?",
 		2,
 		"\nX¸c nhËn/#tmz_Special_Service_2("..nType..")",
-		"\n Ph¶n håi/tmz_Special_Service")
+		"\n Go back/tmz_Special_Service")
 end
 
 function tmz_Special_Service_2(nType)
@@ -1323,7 +1323,7 @@ function tmz_tong_callback_sv_2(szkey, nkey1, nkey2, nCount,_szkey, _nkey1, _nke
 	nBattleLv = tTongScoreLv[nType][2]+1;
 	if PayXYY(tUpLvXoYoYu[nType]) == 1 then		
 		tbTmzTong[strTongName] = {"dddddddd",nTongScore,nBattleLv,nWeekWin,nWeekLose,nTotalWin,nTotalLose,nLastWin,nHufu};
-		Talk(1,"","CÊp ®é bang héi Thiªn M«n TrËn cña c¸c h¹ lµ"..nBattleLv.."CÊp!")
+		Talk(1,"","CÊp ®é bang héi Thiªn M«n TrËn cña c¸c h¹ lµ"..nBattleLv.."level!")
 		WriteLogEx(THIENMON_LOG_TITLE, format("[N©ng cÊp bang héi Thiªn M«n TrËn][Bang héi: %s n©ng cÊp thµnh %d. §iÓm tÝch lòy tr­íc khi n©ng cÊp: %d, ®iÓm tÝch lòy sau khi n©ng cÊp: %d.]",strTongName,nBattleLv,nOldScore,nTongScore))
 		WriteLog(format("[N©ng cÊp bang héi Thiªn M«n TrËn][Bang héi: %s n©ng cÊp thµnh %d. §iÓm tÝch lòy tr­íc khi n©ng cÊp: %d, ®iÓm tÝch lòy sau khi n©ng cÊp: %d.]",strTongName,nBattleLv,nOldScore,nTongScore));
 	end
@@ -1339,9 +1339,9 @@ function tmz_tong_award()
 	local strtab = {
 		"NhËn phÇn th­ëng trËn tham gia tuÇn tr­íc/tmz_tong_award_1",
 		"NhËn phÇn th­ëng bang héi tham gian tuÇn tr­íc/tmz_tong_award_2",
-		"KÕt thóc ®èi tho¹i/gf_DoNothing",
+		"End dialogue/gf_DoNothing",
 	};
-	Say(g_NpcName.."Dùa trªn biÓu hiÖn tuÇn tr­íc cña c¸c h¹, cã thÓ nhËn ®­îc <color=yellow>"..nWeekWin.."<color>trËn th¾ng trËn hßa <color=yellow>"..nWeekLose.."<color>phÇn th­ëng trËn thua.",
+	Say(g_NpcName.."Dùa trªn biÓu hiÖn tuÇn tr­íc cña c¸c h¹, cã thÓ nhËn ®­îc <color=yellow>"..nWeekWin.."<color> reward for battles won and drawn, <color=yellow>"..nWeekLose.."<color>phÇn th­ëng trËn thua.",
 		getn(strtab),
 		strtab)
 end
@@ -1358,8 +1358,8 @@ function tmz_tong_award_1()
 	Say(g_NpcName.."Dùa trªn kÕt qu¶ biÓu hiÖn trong trËn Thiªn M«n TrËn tuÇn tr­íc, c¸c h¹ cã thÓ nhËn ®­îc <color=yellow>"..floor(nExp1*nWeekWin+nExp2*nWeekLose).."<color> ®iÓm kinh nghiÖm vµ <color=yellow>"..(nWeekWin*3+nWeekLose*1).."<color> DiÔn Vâ Bao, cã nhËn ngay kh«ng?",
 		4,
 		"Ta muèn nhËn (gÊp 2 lÇn kinh nghiÖm s½n cã)/#tmz_tong_award_1_1(0)",
-		"§ång ý"..(nWeekWin+nWeekLose).."C¸i ["..tAwardItem[1][1].."] nhËn (kinh nghiÖm b»ng "..tAwardItem[1][5].."LÇn)/#tmz_tong_award_1_1(1)",
-		"§ång ý"..(nWeekWin+nWeekLose).."C¸i ["..tAwardItem[2][1].."] nhËn (kinh nghiÖm b»ng "..tAwardItem[2][5].."LÇn)/#tmz_tong_award_1_1(2)",
+		"Agree"..(nWeekWin+nWeekLose).."The ["..tAwardItem[1][1].."] nhËn (kinh nghiÖm b»ng "..tAwardItem[1][5].."times)/#tmz_tong_award_1_1(1)",
+		"Agree"..(nWeekWin+nWeekLose).."The ["..tAwardItem[2][1].."] nhËn (kinh nghiÖm b»ng "..tAwardItem[2][5].."times)/#tmz_tong_award_1_1(2)",
 		"T¹m thêi kh«ng nhËn/gf_DoNothing")	
 end
 
@@ -1392,7 +1392,7 @@ function tmz_tong_award_1_2(nType)
 	if nType ~= 0 then
 		nItemArg = tAwardItem[nType][5];
 		if GetItemCount(tAwardItem[nType][2],tAwardItem[nType][3],tAwardItem[nType][4]) < nBagCount2 then
-			Talk(1,"",g_NpcName.."Mang theo trªn ng­êi"..tAwardItem[nType][1].."Kh«ng ®ñ"..nBagCount2..".");
+			Talk(1,"",g_NpcName.."Mang theo trªn ng­êi"..tAwardItem[nType][1].."Not enough"..nBagCount2..".");
 			return 0;
 		end
 	end
@@ -1413,13 +1413,13 @@ function tmz_tong_award_1_2(nType)
 	for i=1,nBagCount do
 		local nRand = random(1,100);
 		if nRand <= 2 then
-			gf_AddItemEx({2,95,692,1},"DiÔn Vâ Nguyªn So¸i Bao");
+			gf_AddItemEx({2,95,692,1},"Martial Tournament Marshal Bag");
 		elseif nRand <= 4 then
-			gf_AddItemEx({2,95,693,1},"DiÔn Vâ T­íng Qu©n Bao");
+			gf_AddItemEx({2,95,693,1},"Martial Tournament General Bag");
 		elseif nRand <= 14 then
 			gf_AddItemEx({2,95,694,1},"DiÔn Vâ Tiªn Phong Bao");
 		else
-			gf_AddItemEx({2,95,695,1},"DiÔn Vâ SÜ Binh Bao");
+			gf_AddItemEx({2,95,695,1},"Martial Tournament Soldier Bag");
 		end
 	end
 	local nDate = tonumber(date("%Y%m%d"));
@@ -1497,7 +1497,7 @@ function tmz_tong_award_callback_1(szkey, nkey1, nkey2, nCount,_szkey, _nkey1, _
 	SetTask(TASKID_TMZ_AWARD_MARK,GetTask(TASKID_TMZ_AWARD_MARK)+nTmzMark);
 	Msg2Player("B¹n nhËn ®­îc "..nTmzMark.."§iÓm tÝch lòy Thiªn M«n TrËn");
 	WriteLogEx(THIENMON_LOG_TITLE, "nhËn "..nTmzMark.." ®iÓm tÝch lòy Thiªn M«n TrËn")
-	WriteLog("[ChiÕn tr­êng Thiªn M«n TrËn]: tµi kho¶n: "..tostring(GetAccount())..", tªn: "..tostring(GetName())..", thêi gian: "..tonumber(date("%Y%m%d"))..", [®· nhËn "..nTmzMark.."§iÓm tÝch lòy Thiªn M«n TrËn]");
+	WriteLog("[ChiÕn tr­êng Thiªn M«n TrËn]: tµi kho¶n: "..tostring(GetAccount())..", name:"..tostring(GetName())..", time:"..tonumber(date("%Y%m%d"))..", [®· nhËn "..nTmzMark.."§iÓm tÝch lòy Thiªn M«n TrËn]");
 	if GetTask(TASKID_TMZ_AWARD_MARK) > MAX_MARK then
 		SetTask(TASKID_TMZ_AWARD_MARK,MAX_MARK);
 		Msg2Player("Giíi h¹n ®iÓm tÝch lòy Thiªn M«n TrËn lµ: "..MAX_MARK..", ®iÓm tÝch lòy cña c¸c h¹ ®· ®¹t giíi h¹n.");
@@ -1509,14 +1509,14 @@ function tmz_tong_award_callback_1(szkey, nkey1, nkey2, nCount,_szkey, _nkey1, _
 	local tStone = {
 		{
 			{"Kim Tinh",2,201,2},
-			{"Méc Tinh",2,201,4},
+			{"Wood Essence",2,201,4},
 			{"Thñy Tinh",2,201,6},
 			{"Háa Tinh",2,201,8},
-			{"Thæ Tinh",2,201,10}
+			{"Tho Tinh",2,201,10}
 		},
 		{
 			{"HuyÒn Th¹ch Kim Tinh",2,201,3,170,0},
-			{"PhØ Thóy Méc Tinh",2,201,5,170,0},
+			{"Jadeite Wood Essence",2,201,5,170,0},
 			{"NguyÖt Hoa Thñy Tinh",2,201,7,170,0},
 			{"Cöu HuyÒn Háa Tinh",2,201,9,170,0},
 			{"Ng­ng Ngäc Thæ Tinh",2,201,11,170,0},
@@ -1648,7 +1648,7 @@ function tmz_tong_callback_1(szkey, nkey1, nkey2, nCount,_szkey, _nkey1, _nkey2)
 				title = TMZ_ShowData.title,
 				szFormat = TMZ_ShowData.szFormat,
 				data = {},			
-				szMsg = format("Tû lÖ chiÕm trËn: <color=yellow>%s[%d]<color>: <color=pink>[%d]%s<color>",tCampName[1],0,0,tCampName[2]),
+				szMsg = format("Battle occupation ratio: <color=yellow>%s[%d]<color>: <color=pink>[%d]%s<color>",tCampName[1],0,0,tCampName[2]),
 			};
 			initTopScore(ShowTable);
 			TMZ_ShowData.CurN = TMZ_ShowData.CurN + 1;

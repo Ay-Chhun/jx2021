@@ -24,7 +24,7 @@ function OnUse()
 		SetTask(TASK_PLAN_BIGTREE_DATE,nDate);
 	end;
 	if GetTask(TASK_PLAN_BIGTREE_COUNT) >= PLANT_BIG_TREE_LIMIT then
-		Talk(1,"","H«m nay b¹n ®· trång <color=yellow>"..PLANT_BIG_TREE_LIMIT.."c©y<color> Th¸i H­ B¸t Nh·, ngµy mai h·y trång tiÕp!");
+		Talk(1,"","Today you have planted <color=yellow>"..PLANT_BIG_TREE_LIMIT.."c©y<color> Th¸i H­ B¸t Nh·, ngµy mai h·y trång tiÕp!");
 		return 0;
 	end;
 	local selTab = {
@@ -50,9 +50,9 @@ function plant()
 	end;
 	if DelItem(2,0,398,1) == 1 then
 		local MapID,MapX,MapY = GetWorldPos()
-		local npcTreeIndex = CreateNpc(TREETYPE[1][1],GetName().." trång "..TREETYPE[1][2],MapID,MapX,MapY)
+		local npcTreeIndex = CreateNpc(TREETYPE[1][1],GetName().." plant"..TREETYPE[1][2],MapID,MapX,MapY)
 		if npcTreeIndex == 0 then
-			WriteLog("[Lçi ho¹t ®éng trång c©y Th¸i H­]:"..GetName().."Lóc trång c©y, trÞ quay l¹i hµm sè CreateNpc lµ 0. Tham sè nhËp CreateNpc lµ:"..TREETYPE[1][1]..","..GetName().." trång "..TREETYPE[1][2]..","..MapID..","..MapX..","..MapY);
+			WriteLog("[Lçi ho¹t ®éng trång c©y Th¸i H­]:"..GetName().."Lóc trång c©y, trÞ quay l¹i hµm sè CreateNpc lµ 0. Tham sè nhËp CreateNpc lµ:"..TREETYPE[1][1]..","..GetName().." plant"..TREETYPE[1][2]..","..MapID..","..MapX..","..MapY);
 		end;
 		SetNpcLifeTime(npcTreeIndex,TREELIFETIME)
 		SetTask(TASK_TREEINDEX,npcTreeIndex);
@@ -63,7 +63,7 @@ function plant()
 		SetTask(TASK_PLAN_BIGTREE_DATE,nDate);
 		SetTask(TASK_PLAN_BIGTREE_COUNT,GetTask(TASK_PLAN_BIGTREE_COUNT)+1);
 		Say("C©y ch­a tr­ëng thµnh rêi khái chóng sÏ chÕt. H«m nay b¹n ®· trång <color=yellow>"..GetTask(TASK_PLAN_BIGTREE_COUNT).."<color> lÇn c©y Th¸i H­ B¸t Nh·, cßn trång ®­îc <color=yellow>"..(PLANT_BIG_TREE_LIMIT-GetTask(TASK_PLAN_BIGTREE_COUNT)).."<color> c©y Th¸i H­ B¸t Nh·.",0);
-		StartTimeGuage("T­íi c©y",TREETYPE[1][3],0,1)
+		StartTimeGuage("Water the tree",TREETYPE[1][3],0,1)
 		local nMapID = GetWorldPos();
 		if nMapID == 301 then
 			WriteLogEx("Trong cay Bat Nha", "Tay Thanh Do");

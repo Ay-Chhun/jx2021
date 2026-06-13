@@ -16,7 +16,7 @@ function gaoji_suc_call_back()
 		nCount = 4
 	end
 	if GetItemCount(2, 1, 30435) < nCount or GetCash() < 4000 then
-		Talk(1,"",format("Më b¶o r­¬ng cÇn tiªu hao %d M¶nh Hæ phï vµ %s, nÕu vµng kh«ng ®ñ th× kh«ng thÓ më ra.", nCount, "0.4 vµng").."(KÝch ho¹t thÎ th¸ng sÏ tiªu hao M¶nh Hæ Phï Ýt h¬n)");
+		Talk(1,"",format("Më b¶o r­¬ng cÇn tiªu hao %d M¶nh Hæ phï vµ %s, nÕu vµng kh«ng ®ñ th× kh«ng thÓ më ra.", nCount, "0.4 gold").."(KÝch ho¹t thÎ th¸ng sÏ tiªu hao M¶nh Hæ Phï Ýt h¬n)");
 		return 0;
 	end
 	if DelItem(2, 1, 30435, nCount) ~= 1 or Pay(4000) ~= 1 then

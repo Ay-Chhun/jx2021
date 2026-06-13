@@ -13,11 +13,11 @@ function main()
 	end;
 	local nPlayerCamp = GCZ_GetPlayerCamp();
 	if nPlayerCamp ~= g_NpcCamp then
-		Talk(1,"",g_InfoHeader.."Ng­êi ®©u! Cã gian tÕ!");
+		Talk(1,"",g_InfoHeader.."Who's there! There's a spy!");
 		return 0;
 	end;
 	local selTab = {
-		"*Xem t×nh h×nh phe ®Þch/view_enemy_info",
+		"*View enemy situation/view_enemy_info",
 		"* L·nh C«ng thµnh Tiªn phong lÖnh/get_attack_token",
 		"*Xem t×nh h×nh c¸c §¹i kú vµ thµnh m«n/see_flag_state",
 		"* L·nh chiÕn b¸o tiÒn tuyÕn/get_battle_report",
@@ -29,7 +29,7 @@ function main()
 end;
 
 function leave_battle()
-	AskClientForString("leave","NhÑ nhµng rêi khái...",1,32,"Sao ph¶i rêi khái?");
+	AskClientForString("leave","Gently leaving...",1,32,"Sao ph¶i rêi khái?");
 end;
 
 function leave(sLeaveMsg)
@@ -74,10 +74,10 @@ function see_flag_state()
 	--==============================================================================
 	for i=1,getn(tReviviFlagPos) do
 		if GetMissionV(MV_REVIVI_FLAG1_OWNER+i-1) == nPlayerCamp then
-			szStr = "Phe ta chiÕm lÜnh ";
+			szStr = "Our side has occupied";
 			szColorHeader = "<color=yellow>"
 		else
-			szStr = "®Þch chiÕm";
+			szStr = "the enemy occupies";
 			szColorHeader = "<color=red>"
 		end;
 		szContent = szContent..gf_FormatStringLength(tReviviFlagPos[i][3]..":",15,0)..szColorHeader..gf_FormatStringLength(szStr,10).."<color>";
@@ -93,7 +93,7 @@ function see_flag_state()
 	szContent = szContent.."\n\n";	--ÐÂµÄÄÚÈÝ£¬»»ÐÐ
 	for i=getn(tNormalFlagPos),1,-1 do
 		if GetMissionV(MV_DESTROY_FLAG1+i-1) == 1 then
-			szStr = "bÞ ph¸";
+			szStr = "destroyed";
 			if nPlayerCamp == GONG_ID then
 				szColorHeader = "<color=yellow>"
 			else

@@ -176,7 +176,7 @@ function vlbh_exchange_HCHH_xu()
 end
 
 function vlbh_exchange_HCDai_xu()
-	AskClientForNumber("confirm_vlbh_exchange_HCDai_xu", 1, 10, "Hu©n Ch­¬ng §¹i:")
+	AskClientForNumber("confirm_vlbh_exchange_HCDai_xu", 1, 10, "Great Medal:")
 end
 
 function vlbh_exchange_QCC_xu()
@@ -188,7 +188,7 @@ function vlbh_exchange_TLTDon_xu()
 end
 
 function vlbh_exchange_DaiNganPhieu_xu()
-	AskClientForNumber("confirm_vlbh_exchange_DaiNganPhieu_xu", 1, 10, "§¹i Ng©n PhiÕu:")
+	AskClientForNumber("confirm_vlbh_exchange_DaiNganPhieu_xu", 1, 10, "Great Silver Note:")
 end
 
 function confirm_exchange_bronzekey_xu(nCount)
@@ -262,7 +262,7 @@ function confirm_vlbh_exchange_HCDai_xu(nCount)
 		return 0
 	end
 	if DelItem(2, 1, 30132, 399 * nQuantity) == 1 and DelItem(2, 1, 30230, nXu * nQuantity) == 1 then
-		gf_AddItemEx2({2, 1, 9998, nQuantity}, "Hu©n Ch­¬ng §¹i ®æi = xu", "Vo Lam Bao Hap", "®æi Hu©n Ch­¬ng §¹i - xu",7*24*3600)
+		gf_AddItemEx2({2, 1, 9998, nQuantity}, "Great Medal exchange = coin", "Vo Lam Bao Hap", "exchange Great Medal - coin",7*24*3600)
 	end
 end
 
@@ -308,7 +308,7 @@ function confirm_vlbh_exchange_DaiNganPhieu_xu(nCount)
 		return 0
 	end
 	if DelItem(2, 1, 30132, 149 * nQuantity) == 1 and DelItem(2, 1, 30230, nXu * nQuantity) == 1 then
-		gf_AddItemEx2({2, 1, 199, nQuantity}, "§¹i Ng©n PhiÕu ®æi = xu", "Vo Lam Bao Hap", "®æi §¹i Ng©n PhiÕu - xu",7*24*3600)
+		gf_AddItemEx2({2, 1, 199, nQuantity}, "Great Silver Note exchange = coin", "Vo Lam Bao Hap", "exchange Great Silver Note - coin",7*24*3600)
 	end
 end
 
@@ -464,7 +464,7 @@ function Rec_VLBH()
  --Check delay nhËn b¶o h¹p (c¸ch 3 phót)
 	local nTimePoint = GetTask(TSK_VLBH_TIME)
 	if (GetTime()  - nTimePoint ) < 180 then
-		Talk(1,"","Cßn "..(2 - floor((GetTime()  - nTimePoint )/60)).." phót "..(60 - mod((GetTime()  - nTimePoint ),60)).." gi©y n÷a míi cã thÓ ®æi Vâ L©m B¶o H¹p tiÕp.")
+		Talk(1,"","There are"..(2 - floor((GetTime()  - nTimePoint )/60)).." minutes"..(60 - mod((GetTime()  - nTimePoint ),60)).." gi©y n÷a míi cã thÓ ®æi Vâ L©m B¶o H¹p tiÕp.")
 		return
 	end
 -- IP bonus
@@ -504,7 +504,7 @@ function Rec_VLBH()
 		gf_WriteLogEx("Vo Lam Bao Hap", "nhËn thµnh c«ng", 1, "NhËn Max VLBH trong ngµy")
 	end
 	if nTotalReceiveWeek == VLBH_MAX_WEEK then
-		gf_WriteLogEx("Vo Lam Bao Hap", "nhËn thµnh c«ng", 1, "NhËn Max VLBH trong tuÇn")
+		gf_WriteLogEx("Vo Lam Bao Hap", "nhËn thµnh c«ng", 1, "Receive Max VLBH for the week")
 	end
 	SetTask(TSK_VLBH_TIME,GetTime())
 	SetTask(TSK_VLBH_MARK, nCurrentDate*100 + nCurrentWeek)
@@ -551,7 +551,7 @@ function Rec_VLBH_2()
  --Check delay nhËn b¶o h¹p (c¸ch 15 phót)
 	local nTimePoint = GetTask(TSK_VLBH_TIME2)
 	if (GetTime()  - nTimePoint ) < (15*60) then
-		Talk(1,"","Cßn "..(14 - floor((GetTime()  - nTimePoint )/60)).." phót "..(60 - mod((GetTime()  - nTimePoint ),60)).." gi©y n÷a míi cã thÓ ®æi Vâ L©m B¶o H¹p tiÕp.")
+		Talk(1,"","There are"..(14 - floor((GetTime()  - nTimePoint )/60)).." minutes"..(60 - mod((GetTime()  - nTimePoint ),60)).." gi©y n÷a míi cã thÓ ®æi Vâ L©m B¶o H¹p tiÕp.")
 		return
 	end
 

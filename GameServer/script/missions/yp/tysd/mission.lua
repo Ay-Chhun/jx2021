@@ -143,7 +143,7 @@ function stageFight.OnTalk()
 	if strName == "Vâ L©m Minh-§Ö Tö Kh« Méc" then
 		local strtab = {
 				"\nñy th¸c b¶o qu¶n huy hiÖu/talk_1",
-				"\nKÕt thóc ®èi tho¹i/nothing",
+				"\nEnd conversation/nothing",
 			}
 		Say("Ha ha, t¹i h¹ phông lÖnh cña s­ phô ®Õn tô häp víi thiÕu hiÖp.",
 			getn(strtab),
@@ -160,7 +160,7 @@ function talk_1()
 	local nNum = nCount-8;
 	if BigDelItem(tPVPItemInfo[15][2],tPVPItemInfo[15][3],tPVPItemInfo[15][4],nNum) == 1 then
 		SetTask(TASK_FIELD_PVP_REWARD_HANDED,GetTask(TASK_FIELD_PVP_REWARD_HANDED)+nNum);
-		Msg2Player("Ng­¬i ®· nép "..nNum.."c¸i"..tPVPItemInfo[15][1]);
+		Msg2Player("You have turned in"..nNum.."c¸i"..tPVPItemInfo[15][1]);
 		Talk(1,"","NhiÒu h¬n 8 huy hiÖu sÏ do t¹i h¹ b¶o qu¶n gióp.");
 	end
 end
@@ -199,7 +199,7 @@ stageFight.triggers = {
 firePhases.phases = {stageFight};
 
 function firePhases:onTimeout()
-	Msg2MSAll(this.missionID, "KÕt thóc ¶i!");
+	Msg2MSAll(this.missionID, "The challenge has ended!");
 	CloseMission(this.missionID);
 end
 

@@ -76,7 +76,7 @@ function talk_five()
 
     local szMsg = {
         "H¹ HÇu CÇm nhê v·n bèi ®Õn th«ng b¸o vÒ m¶nh S¬n Hµ X· T¾c cã kh¶ n¨ng r¬i vµo tay Xi Háa gi¸o, xin tiÒn bèi xem qua th­ nµy!",
-        "§a t¹ anh hïng!",
+        "Many thanks, hero!",
         "Cßn nhiÒu ng­êi cÇn ph¶i th«ng b¸o n÷a, v·n bèi ®i ®©y!"
     };
     local nStep = 0;

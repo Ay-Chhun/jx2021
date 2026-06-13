@@ -39,7 +39,7 @@ TB_KILL_NPC =
 }
 MAP_DESC = 
 {
-	[MAP_1] = "TÇn L¨ng",
+	[MAP_1] = "Qin Mausoleum",
 	[MAP_2] = "Hoµng L¨ng mé thÊt tÇng 1",
 	[MAP_3] = "Hoµng L¨ng mé thÊt tÇng 2",
 }
@@ -71,7 +71,7 @@ tbKillNpcDaily.tbAward =
 		{
 			{"Exp", 39000000},
 			{2, 1, 30865, 1000, "Ch×a khãa vµng"},
-			{2, 1, 30785, 9, "V« Tù Kinh Th­"},
+			{2, 1, 30785, 9, "Wordless Scripture"},
 		}
 	},
 	[ADVANCED_TYPE] = 
@@ -86,7 +86,7 @@ tbKillNpcDaily.tbAward =
 		tbPrize = 
 		{
 			{"Exp", 99000000},
-			{2, 1, 30785, 19, "V« Tù Kinh Th­"},
+			{2, 1, 30785, 19, "Wordless Scripture"},
 			{2, 1, 30868, 99, "B¶o VËt V¹n Niªn"},
 		}
 	}

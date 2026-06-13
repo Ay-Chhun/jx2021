@@ -19,7 +19,7 @@ elseif ( UWorld1402  == 65  and ( GetItemCount(0,9,76) < 1 or GetItemCount(2,2,3
 		Talk(1,"","Ng­¬i h·y t×m <color=red>1 c©y ChiÕt Xung Bót<color> vµ <color=red>1 phÇn Chu Sa<color> vÒ ®©y, ta sÏ viÕt cho ng­¬i 1 l¸ §én Èn linh phï.")
 elseif ( UWorld1402  == 65 and GetItemCount(0,9,76) >=1 and GetItemCount(2,2,30) >= 1  ) then
 		if  ( DelItem(0,9,76,1) == 1 and  DelItem(2,2,30,1) == 1 )then
-					Talk(1,"","Ch©n nh©n! T¹i h¹ ®· t×m ®­îc råi!","Hay l¾m! H·y cÇm lÊy tÊm <color=red>§én Èn linh phï<color> nµy. Ng­¬i h×nh nh­ ®· cã <color=red>X¸ Lîi Kim §¬n<color> vµ <color=red>Thiªn PhËt Ch©u<color> cña Nga My vµ ThiÕu L©m, ph¶i mang theo 3 mãn ®ã bªn m×nh míi cã thÓ b×nh an ra vµo Phong §« Quû Thµnh, <color=yellow>thiÕu 1 mãn còng kh«ng ®­îc<color>, h·y nhí lÊy!","Ta ®· tõng vµo <color=red>Phong §« Quû Thµnh<color> mét lÇn, nªn trong rÊt lµ nguy hiÓm, ng­¬i <color=red>®iÒu tra<color> xong lËp tøc quay vÒ b¸o tin cho <color=red>D­¬ng NguyÖt S­ Th¸i<color> biÕt.","T¹i h¹ lËp tøc lªn ®­êng!") 
+					Talk(1,"","Ch©n nh©n! T¹i h¹ ®· t×m ®­îc råi!","Hay l¾m! H·y cÇm lÊy tÊm <color=red>§én Èn linh phï<color> nµy. Ng­¬i h×nh nh­ ®· cã <color=red>X¸ Lîi Kim §¬n<color> vµ <color=red>Thiªn PhËt Ch©u<color> cña Nga My vµ ThiÕu L©m, ph¶i mang theo 3 mãn ®ã bªn m×nh míi cã thÓ b×nh an ra vµo Phong §« Quû Thµnh, <color=yellow>thiÕu 1 mãn còng kh«ng ®­îc<color>, h·y nhí lÊy!","Ta ®· tõng vµo <color=red>Phong §« Quû Thµnh<color> mét lÇn, nªn trong rÊt lµ nguy hiÓm, ng­¬i <color=red>®iÒu tra<color> xong lËp tøc quay vÒ b¸o tin cho <color=red>D­¬ng NguyÖt S­ Th¸i<color> biÕt.","I'll set off at once!") 
 					SetTask(1402,70)
 					AddItem(2,1,150,1)
 					Earn(1000)

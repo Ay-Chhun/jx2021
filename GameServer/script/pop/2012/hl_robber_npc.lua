@@ -16,7 +16,7 @@ function give_money()
 			SetNpcDeathScript(nIdx,"\\script\\pop\\2012\\hl_robber_npc.lua");
 		else
 			Talk(1,"","Hång Liªn C­êng §¹o: Ng­¬i ®óng lµ ng­êi tèt! NhËn ®­îc 1 ThÎ Ng­êi Tèt.")
-			gf_AddItemEx({2,96,131,1,4},"ThÎ Ng­êi Tèt");
+			gf_AddItemEx({2,96,131,1,4},"Good Person Card");
 		end
 		SetTask(TASKID_SW_TASK948_FINISH,GetTask(TASKID_SW_TASK948_FINISH) + 1);
 	end

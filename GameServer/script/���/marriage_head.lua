@@ -10,7 +10,7 @@ GLB_CLOSE_FIELD	= 154;		--¹Ø±Õ´«ËÍÈËºÍ½á»é³¡µØ
 SetGlbValue(GLB_CLOSE_MARRIAGE,0);	--ÈçÐè¹Ø±ÕÃ½ÆÅºÍÔÂÀÏ£¬ÕâÀïÉèÖÃÎª1
 SetGlbValue(GLB_CLOSE_FIELD,0);	--ÈçÐè¹Ø±Õ³¡µØºÍ´«ËÍÈË£¬ÕâÀïÉèÖÃÎª1
 
-MARRIAGE_CHANNEL = "Khu vùc kÕt h«n"
+MARRIAGE_CHANNEL = "Marriage Zone"
 
 KEY_WEDDING				= "WEDDING_FIELD"	-- ¹²ÏíÊý¾Ý¼ÇÂ¼µÄÖ÷¼ü
 
@@ -96,7 +96,7 @@ map_RevPos	= {
 map_fieldinfo = {
 	-- Ãû³Æ			Æð±ê¼Û	Âò¶Ï¼Û	¸½ÇëÌûÊý  ×î´óÈËÊý   ¼Ó¼Û
 	{"YÕt chi tiÓu tróc",	20,		250,	3,			50,        10},
-	{"C« ®¶o",	40,		500,	5,			100,       20},
+	{"Lone Island",	40,		500,	5,			100,       20},
 	{"§éng phßng hoa chóc",	200,	2500,	5,			100,       100},
 	{"V©n S¬n ®Ønh",	800,	10000,	8,			100,       400}
 }
@@ -125,17 +125,17 @@ tFoods =
 	[5] = {1,1,6,"§Üa m¨ng xµo"},
 	[6] = {1,1,7," TøQuý ®Ëu"},
 	[7] = {1,1,8," §Ëu xµo"},
-	[8] = {1,1,9,"C¶i xµo tái"},
+	[8] = {1,1,9,"Garlic Stir-fried Greens"},
 	[9] = {1,1,10,"Thiªu §ao Tö"},
 	[10] = {1,1,11,"N÷ Nhi Hång"},
-	[11] = {1,1,12,"§¹o Hoa H­¬ng"},
-	[12] = {1,1,13,"Tóy Méng Töu"},
+	[11] = {1,1,12,"Peach Blossom Fragrance"},
+	[12] = {1,1,13,"Tuy Mong Wine"},
 	[13] = {1,1,14," C¬m chiªn trøng"},
 	[14] = {1,1,15," B¸nh Bét vµng"},
-	[15] = {1,1,16,"L¹c Mai"},
+	[15] = {1,1,16,"Plum Blossom"},
 	[16] = {1,1,17,"NhÞ thËp tø kiÒu Minh NguyÖt D¹"},
 	[17] = {1,1,18,"Méc Lan H­¬ng"},
-	[18] = {1,1,19,"T©y B¾c Väng"},
+	[18] = {1,1,19,"Northwest Gaze"},
 }
 
 ITEM_COMPERE	= {					-- Ö÷»éÈËÍâÒÂ
@@ -402,16 +402,16 @@ end
 
 -- ÃÅÅÉ
 map_faction = {
-	[1] = {"ThiÕu L©m","Tha"},
-	[2] = {"Vâ §ang","Tha"},
-	[3] = {"Nga My","Ng­êi ch¬i"},
-	[4] = {"C¸i Bang","Tha"},
-	[5] = {"§­êng M«n","Ng­êi ch¬i"},
-	[6] = {"D­¬ng M«n","Ng­êi ch¬i"},
-	[7] = {"Ngò §éc","Ng­êi ch¬i"},
+	[1] = {"Shaolin","Tha"},
+	[2] = {"Wudang","Tha"},
+	[3] = {"Nga My","Player"},
+	[4] = {"Beggars' Sect","Tha"},
+	[5] = {"§­êng M«n","Player"},
+	[6] = {"D­¬ng M«n","Player"},
+	[7] = {"Five Poisons","Player"},
 	[8] = {"C«n L«n", "Tha"},
 	[9] = {"Minh gi¸o", "Tha"},
-	[10] = {"Thóy Yªn", "Ng­êi ch¬i"},
+	[10] = {"Thóy Yªn", "Player"},
 }
 
 -- ³öÊ¦
@@ -546,7 +546,7 @@ function marriage_setting()
 	SetTask(TASK_MATESTYLE, GetBody(), 0, lover)
 	-- ½á»é
 	DoMarry(lover)
-	WriteLog("[KÕt h«n]:"..GetName().."kÕt h«n, b¹n ®êi lµ"..GetName(lover)..", ®é h¶o h÷u:"..friend_grade..", trÞ sè t×nh c¶m ban ®Çu lµ:"..love_grade)
+	WriteLog("[Marriage]:"..GetName().."kÕt h«n, b¹n ®êi lµ"..GetName(lover)..", ®é h¶o h÷u:"..friend_grade..", trÞ sè t×nh c¶m ban ®Çu lµ:"..love_grade)
 	SaveNow();
 	PlayerIndex = lover;
 	SaveNow();
@@ -563,7 +563,7 @@ function add_qingtie_packet(nCount)
 		if nRetCode ~= 0 then
 			SetItemParam(nItemIdx,0,2);
 		end;
-		WriteLog("[KÕt h«n]:"..GetName().." §· mua 1 thiÖp mêi ");
+		WriteLog("[Marriage]:"..GetName().." §· mua 1 thiÖp mêi ");
 	end;
 end;
 -- Çå³ýÔ¤¶©ÐÅÏ¢

@@ -10,7 +10,7 @@ Include("\\script\\lib\\writelog.lua")
 --------------------------------------
 function OnUse()
 	-----ÅĞ¶Ï±³°üºÍ¸ºÖØ------------------------
-	if gf_Judge_Room_Weight(1, 1, "Xin lçi, ") == 0 then
+	if gf_Judge_Room_Weight(1, 1, "Sorry,") == 0 then
 		return 0
 	end
 	local nID = 0;
@@ -19,14 +19,14 @@ function OnUse()
 		local nRand = random(1, 100);
 		if nRand > 0 and nRand <= 90 then
 			nID = 30081;
-			sItem = "Lam Kú";
+			sItem = "Blue Flag";
 		else
 			nID = 30080;
 			sItem = "Hång Kú";
 		end 
 		if AddItem(2, 1, nID, 1) == 1 then
-			Msg2Player("NhËn ®­îc 1 " .. sItem);
-			WriteLogEx("Hoat dong thang 4","R­¬ng HiÖu Kú",1,sItem)
+			Msg2Player("Received 1" .. sItem);
+			WriteLogEx("Hoat dong thang 4","Banner Flag Chest",1,sItem)
 		end
 	end
 end

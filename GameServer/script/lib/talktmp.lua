@@ -35,10 +35,10 @@ function temp_Talk(self, nPage)
 	end
 	local bReturn = 0;
 	if nPage > 0 then
-		tinsert(tSel, format("Trang tr­íc/#temp_Talk('%s', %d)", HashTable(self), nPage - 1));
+		tinsert(tSel, format("Previous page/#temp_Talk('%s', %d)", HashTable(self), nPage - 1));
 	end
 	if nMax < getn(self.sel) - commonSel then
-		tinsert(tSel, format("Trang kÕ/#temp_Talk('%s', %d)", HashTable(self), nPage + 1));
+		tinsert(tSel, format("Next page/#temp_Talk('%s', %d)", HashTable(self), nPage + 1));
 	end
 	for i = getn(self.sel) - commonSel + 1,  getn(self.sel) do
 		tinsert(tSel, format("%s/%s", self.sel[i][1], getcallback(self.sel[i][2], self)));

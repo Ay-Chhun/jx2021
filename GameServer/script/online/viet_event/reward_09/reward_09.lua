@@ -4,31 +4,31 @@ TASK_REWARD_HORSE = 2430;
 
 tRewardFaction =
 {
-	"ThiÕu L©m",
-	"Vâ §ang",
+	"Shaolin",
+	"Wudang",
 	"Nga My",
-	"C¸i Bang",
+	"Beggars' Sect",
 	"§­êng M«n",
 	"D­¬ng Gia",
-	"Ngò §éc",
+	"Five Poisons",
 }
 
 tRewardRoute =
 {
-	[2] 	=  {"ThiÕu L©m tôc gia", 0},
+	[2] 	=  {"Shaolin Lay Branch", 0},
 	[3] 	=  {"ThiÕu L©m thiÒn t¨ng", 2},
-	[4] 	=  {"ThiÕu L©m vâ t«ng", 1},
-	[14] 	=  {"Vâ §ang ®¹o gia", 8},
-	[15] 	=  {"Vâ §ang tôc gia", 9},
-	[8] 	=  {"Nga My phËt gia", 4},
-	[9] 	=  {"Nga My tôc gia", 5},
-	[11] 	=  {"C¸i Bang tÜnh y", 6},
-	[12] 	=  {"C¸i Bang « y", 7},
+	[4] 	=  {"Shaolin Martial Sect", 1},
+	[14] 	=  {"Wudang Daoist Branch", 8},
+	[15] 	=  {"Wudang Lay Branch", 9},
+	[8] 	=  {"Emei Buddhist Branch", 4},
+	[9] 	=  {"Emei Lay Branch", 5},
+	[11] 	=  {"Beggars' Sect Calm Robe", 6},
+	[12] 	=  {"Beggars' Sect Black Robe", 7},
 	[6] 	=  {"§­êng M«n", 3},
 	[17] 	=  {"D­¬ng Gia th­¬ng", 10},
 	[18] 	=  {"D­¬ng Gia cung", 11},
 	[20] 	= {"Ngò §éc hiÖp ®éc", 12},
-	[21] 	= {"Ngò §éc tµ ®éc", 13},
+	[21] 	= {"Five Poisons evil poison", 13},
 }
 
 function funcReward()
@@ -39,13 +39,13 @@ function funcReward()
 			"NhËn 20000 ®iÓm S­ m«n/funcReward_04",
 			"NhËn Trang bŞ S­ M«n cÊp 8/funcReward_05",
 			"NhËn Trang bŞ Vò khİ Bé Phi Yªn/funcReward_06",
-			"S¸ch/funcReward_07",
+			"Book/funcReward_07",
 			"YÕu quyÕt/funcReward_08",
 			"NhËn S¸ch Skill trÊn ph¸i/funcReward_09",
 			"NhËn D­îc phÈm/funcReward_10",
-			"NhËn S©u cæ/funcReward_11",
+			"Receive ancient worm/funcReward_11",
 			"NhËn c¸c vËt phÈm kh¸c/funcReward_12",
-			"KÕt thóc ®èi tho¹i/cancel")
+			"End dialogue/cancel")
 end
 
 function funcReward_01()
@@ -57,7 +57,7 @@ function funcReward_01()
 		WriteLog("[PhÇn th­ëng giang hå chØ nam]:"..GetName().." ®­îc t¨ng cÊp lªn 85 vµ nhËn ®­îc 1900000000 ®iÓm kinh nghiÖm.");
 		funcReward();
 	else
-		Say("C¸c h¹ ®· nhËn 1 lÇn råi, kh«ng thÓ nhËn thªm ®­îc n÷a!",1, "ThËt ng¹i qu¸./funcReward");
+		Say("C¸c h¹ ®· nhËn 1 lÇn råi, kh«ng thÓ nhËn thªm ®­îc n÷a!",1, "So sorry./funcReward");
 	end
 end
 
@@ -69,7 +69,7 @@ function funcReward_02()
 		WriteLog("[PhÇn th­ëng giang hå chØ nam]:"..GetName().." nhËn ®­îc 50000 vµng.");
 		funcReward();
 	else
-		Say("C¸c h¹ ®· nhËn 1 lÇn råi, kh«ng thÓ nhËn thªm ®­îc n÷a!",1, "ThËt ng¹i qu¸./funcReward");
+		Say("C¸c h¹ ®· nhËn 1 lÇn råi, kh«ng thÓ nhËn thªm ®­îc n÷a!",1, "So sorry./funcReward");
 	end
 end
 
@@ -124,7 +124,7 @@ function funcReward_05()
 		WriteLog("[PhÇn th­ëng giang hå chØ nam]:"..GetName().." ®· nhËn ®­îc 1 bé S­ m«n "..tRewardRoute[mRoute][1]);
 		funcReward();
 	else
-		Say("C¸c h¹ ch­a gia nhËp hÖ ph¸i!",1, "ThËt ng¹i qu¸./funcReward");
+		Say("C¸c h¹ ch­a gia nhËp hÖ ph¸i!",1, "So sorry./funcReward");
 	end	
 end
 
@@ -206,7 +206,7 @@ function funcReward_06()
 		end
 		funcReward();
 	else
-		Say("C¸c h¹ ch­a gia nhËp hÖ ph¸i!",1, "ThËt ng¹i qu¸./funcReward");
+		Say("C¸c h¹ ch­a gia nhËp hÖ ph¸i!",1, "So sorry./funcReward");
 	end	
 end
 
@@ -216,7 +216,7 @@ function funcReward_07()
 		"NhËn Tö Hµ MËt TŞch/funcReward_7_2",
 		"NhËn Chiªm Y MËt TŞch/funcReward_7_3",
 		"NhËn MËt tŞch M«n Ph¸i/funcReward_7_4",
-		"NhËn Tu Ch©n YÕu QuyÕt/funcReward_7_5",
+		"Receive Cultivation Essence Formula/funcReward_7_5",
 		"NhËn Nh©n S©m Qu¶/funcReward_7_6",
 		"LuyÖn nhanh mËt tŞch chİnh/funcReward_7_7",
 		"NhËn vËt phÈm kh¸c!/funcReward"
@@ -244,7 +244,7 @@ function funcReward_08()
 		WriteLog("[PhÇn th­ëng giang hå chØ nam]:"..GetName().." ®· nhËn ®­îc 1 tói bİ kiÕp "..tRewardFaction[GetPlayerFaction()]);
 		funcReward();
 	else
-		Say("C¸c h¹ ch­a gia nhËp hÖ ph¸i!",1, "ThËt ng¹i qu¸./funcReward");
+		Say("C¸c h¹ ch­a gia nhËp hÖ ph¸i!",1, "So sorry./funcReward");
 	end	
 end
 
@@ -260,7 +260,7 @@ function funcReward_09()
 		WriteLog("[PhÇn th­ëng giang hå chØ nam]:"..GetName().." ®· nhËn ®­îc 1 s¸ch skill trÊn ph¸i "..tRewardRoute[mRoute][1]);
 		funcReward();
 	else
-		Say("C¸c h¹ ch­a gia nhËp hÖ ph¸i!",1, "ThËt ng¹i qu¸./funcReward");
+		Say("C¸c h¹ ch­a gia nhËp hÖ ph¸i!",1, "So sorry./funcReward");
 	end	
 end
 
@@ -296,9 +296,9 @@ function funcReward_12()
 		"NhËn ngùa Phiªu Vò( chØ nhËn 1 lÇn)/funcReward_12_1",
 		"NhËn ThÇn Hµnh B¶o §iÓn/funcReward_12_2",
 		"NhËn Thiªn Th¹ch Linh Th¹ch/funcReward_12_3",
-		"NhËn MÆt n¹ S¸t thñ §­êng/funcReward_12_4",
+		"Receive Assassin Hall Mask/funcReward_12_4",
 		"NhËn Héi Minh LÖnh Bµi/funcReward_12_5",
-		"NhËn KÕt H«n LÔ Bao/funcReward_12_6",		
+		"Receive Marriage Gift Pack/funcReward_12_6",		
 		"NhËn Vâ L©m LÖnh Bµi/funcReward_12_8",
 		"NhËn vËt phÈm kh¸c!/funcReward"
 		)
@@ -316,7 +316,7 @@ function funcReward_12_1()
 		WriteLog("[PhÇn th­ëng giang hå chØ nam]:"..GetName().." ®· nhËn ®­îc ngùa Phiªu Vò.");
 		funcReward();
 	else
-		Say("C¸c h¹ ®· nhËn Ngùa råi, kh«ng thÓ nhËn thªm ®­îc n÷a!",1, "ThËt ng¹i qu¸./funcReward");
+		Say("C¸c h¹ ®· nhËn Ngùa råi, kh«ng thÓ nhËn thªm ®­îc n÷a!",1, "So sorry./funcReward");
 	end
 end
 
@@ -442,7 +442,7 @@ function funcReward_7_4()
 		WriteLog("[PhÇn th­ëng giang hå chØ nam]:"..GetName().." ®· nhËn ®­îc 1 MËt tŞch m«n ph¸i "..tRewardRoute[mRoute][1]);
 		funcReward();
 	else
-		Say("C¸c h¹ ch­a gia nhËp hÖ ph¸i!",1, "ThËt ng¹i qu¸./funcReward");
+		Say("C¸c h¹ ch­a gia nhËp hÖ ph¸i!",1, "So sorry./funcReward");
 	end	
 end
 

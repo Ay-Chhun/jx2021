@@ -43,9 +43,9 @@ function InitMission()
 		nNpcIdx = CreateNpc(tPositionFo[i][1],tPositionFo[i][2],nMapId,tPositionFo[i][5],tPositionFo[i][6]);
 		SetCampToNpc(nNpcIdx,CampTwo_Type);
 	end
-	nNpcIdx = CreateNpc("C«n L«n phã ch­ëng m«n",CampOne_Name.."Qu©n nhu quan",nMapId,tPositionCamp[1][3][1],tPositionCamp[1][3][2]);
+	nNpcIdx = CreateNpc("C«n L«n phã ch­ëng m«n",CampOne_Name.."Army Supply Officer",nMapId,tPositionCamp[1][3][1],tPositionCamp[1][3][2]);
 	SetNpcScript(nNpcIdx,"\\script\\missions\\tianmenzhen\\quartermaster_npc.lua");
-	nNpcIdx = CreateNpc("C«n L«n phã ch­ëng m«n",CameTwo_Name.."Qu©n nhu quan",nMapId,tPositionCamp[2][3][1],tPositionCamp[2][3][2]);
+	nNpcIdx = CreateNpc("C«n L«n phã ch­ëng m«n",CameTwo_Name.."Army Supply Officer",nMapId,tPositionCamp[2][3][1],tPositionCamp[2][3][2]);
 	SetNpcScript(nNpcIdx,"\\script\\missions\\tianmenzhen\\quartermaster_npc.lua");	
 	nNpcIdx = CreateNpc("Thiªn V­¬ng Bang §å","Binh sÜ hËu cÇn",nMapId,tPositionCamp[1][4][1],tPositionCamp[1][4][2]);
 	SetNpcScript(nNpcIdx,"\\script\\missions\\tianmenzhen\\soldier_npc.lua");

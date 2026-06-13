@@ -15,8 +15,8 @@ function npc_talk_main()
 	end
 	local szTitle = format("Ng­ Phñ: Trong Ng­ D©n Thæ Ph¸o bá cµng nhiÒu lo¹i ph¸o tèt, tû lÖ nhËn ®­îc h¶i s¶n hiÕm cã cµng cao. %s", szMsg)
 	local tbSay = {}
-	tinsert(tbSay, format("%s/combin_bomb", "GhÐp Ph¸o Nhá"))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/combin_bomb", "Combine Small Firecracker"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 	
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -24,12 +24,12 @@ end
 function combin_bomb()
 	local szTitle = format("%s\n%s", 
 		"Ng­ Phñ: Trªn ng­êi ng­ qu¸i ë §«ng H¶i H¶i Binh cã §¸ §¸nh Löa, nguyªn liÖu dïng ®Ó ghÐp Ph¸o Nhá.",
-		"1 Ph¸o Nhá = 10 Ngßi Ph¸o +10 èng Phãng + 10 Thuèc Næ + 10 §¸ §¸nh Löa"
+		"1 Small Firecracker = 10 Fuses + 10 Launch Tubes + 10 Gunpowder + 10 Flint Stones"
 		)
 	local tbSay = {}
-	tinsert(tbSay, format("%s/do_combin_bomb", "§ång ý ghÐp"))
+	tinsert(tbSay, format("%s/do_combin_bomb", "Agree to combine"))
 	tinsert(tbSay, format("%s/npc_talk_main", "Quay l¹i "))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 	
 	Say(szTitle, getn(tbSay), tbSay)
 end

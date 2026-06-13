@@ -21,7 +21,7 @@ function main()
 			nBossIndex = tbBoss[i];
 			nNpcIndex = CreateNpc(tBossInfo[nBossIndex][1],tBossInfo[nBossIndex][3],tBossPos[nBossIndex][2],tBossPos[nBossIndex][3],tBossPos[nBossIndex][4]);
 			SetNpcDeathScript(nNpcIndex,"\\script\\online\\3festival\\boss_death.lua");
-			Msg2Global("Giang hå ¸c nh©n"..tBossInfo[nBossIndex][3].."VËt h¾n yªu quý nhÊt ®· xuÊt hiÖn"..tBossPos[nBossIndex][1]..", mäi ng­êi mau ®Õn ®ã!");
+			Msg2Global("Villain of the Martial World"..tBossInfo[nBossIndex][3].."VËt h¾n yªu quý nhÊt ®· xuÊt hiÖn"..tBossPos[nBossIndex][1]..", mäi ng­êi mau ®Õn ®ã!");
 		end;
 	end;
 end;

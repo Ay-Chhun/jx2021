@@ -14,10 +14,10 @@ function stageFight:createSomeNpc()
 	local m = this.msPosition:getMapID();
 	local tNpcList = {
 		{"Xa phu Trung Nguyªn", "Xa phu", 1705, 3414},
-		{"Xa phu", "Xa phu B¾c Bé", 1705, 3254},
-		{"Xa phu", "Xa phu Nam Bé", 1674, 3548},
-		{"Xa phu", "Xa phu §«ng Bé", 1803, 3396},
-		{"Xa phu", "Xa phu T©y Bé", 1588, 3355},
+		{"Xa phu", "Northern Coachman", 1705, 3254},
+		{"Xa phu", "Southern Coachman", 1674, 3548},
+		{"Xa phu", "Eastern Coachman", 1803, 3396},
+		{"Xa phu", "Western Coachman", 1588, 3355},
 	}
 	mg_CreateNpcList(tNpcList, m);
 end
@@ -25,7 +25,7 @@ end
 function stageFight.init()
 	self = stageFight;
 	if this.debugVersion then
-		this:Msg2MSAll("B¶n ®å NPC...");
+		this:Msg2MSAll("NPC map...");
 	end
 	self:createSomeNpc();
 end
@@ -52,20 +52,20 @@ function stageFight:onTalk()
 	local msg = nil;
 	if strNpcName == "Xa phu" then
 		msg = "T«i sÏ phô tr¸ch tiÕp øng c¸c vÞ, hç trî mäi ng­êi trë vÒ ThÊt L¹c Nhai!";
-		tinsert(tSay, "Bèi c¶nh c©u chuyÖn/mg_BgStory");
+		tinsert(tSay, "Story Background/mg_BgStory");
 		tinsert(tSay, "Giíi thiÖu thêi gian gia nhËp/mg_TimeInfo");
 		tinsert(tSay, "Giíi thiÖu néi dung ho¹t ®éng/mg_FunctionInfo");
-		tinsert(tSay, format("\n Trë vÒ ThÊt L¹c Nhai/#DelMSPlayer(%d, 0)", this.missionID));
-	elseif strNpcName == "Xa phu B¾c Bé" then
+		tinsert(tSay, format("\n Return to Qilannai/#DelMSPlayer(%d, 0)", this.missionID));
+	elseif strNpcName == "Northern Coachman" then
 		msg = "T«i sÏ phô tr¸ch hç trî c¸c vÞ tiÕn vµo s¶nh B¾c ph©n ®µ Thiªn ¢m Gi¸o!";
 		tinsert(tSay, format("\n S¶nh B¾c Ph©n §µ Thiªn ¢m/#mg_GotoLevel1(%d)", 1));
-	elseif strNpcName == "Xa phu Nam Bé" then
+	elseif strNpcName == "Southern Coachman" then
 		msg = "T«i sÏ phô tr¸ch hç trî c¸c vÞ tiÕn vµo s¶nh Nam ph©n ®µ Thiªn ¢m Gi¸o!";
 		tinsert(tSay, format("\n S¶nh Nam Ph©n §µ Thiªn ¢m/#mg_GotoLevel1(%d)", 2));
-	elseif strNpcName == "Xa phu §«ng Bé" then
+	elseif strNpcName == "Eastern Coachman" then
 		msg = "T«i sÏ phô tr¸ch hç trî c¸c vÞ tiÕn vµo s¶nh §«ng ph©n ®µ Thiªn ¢m Gi¸o!";
 		tinsert(tSay, format("\n S¶nh §«ng Ph©n §µ Thiªn ¢m/#mg_GotoLevel1(%d)", 3));
-	elseif strNpcName == "Xa phu T©y Bé" then
+	elseif strNpcName == "Western Coachman" then
 		msg = "T«i sÏ phô tr¸ch hç trî c¸c vÞ tiÕn vµo s¶nh T©y ph©n ®µ Thiªn ¢m Gi¸o!";
 		tinsert(tSay, format("\n S¶nh T©y Ph©n §µ Thiªn ¢m/#mg_GotoLevel1(%d)", 4));
 	end
@@ -161,7 +161,7 @@ stageFight.triggers = {
 firePhases.phases = {stageFight};
 
 function firePhases:onTimeout()
-	Msg2MSAll(this.missionID, "KÕt thóc ¶i!");
+	Msg2MSAll(this.missionID, "The challenge has ended!");
 	CloseMission(this.missionID);
 end
 

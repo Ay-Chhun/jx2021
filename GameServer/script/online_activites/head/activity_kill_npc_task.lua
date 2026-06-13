@@ -35,7 +35,7 @@ function g_akct_ShowDialog(id, bTag)
 		format("\n t«i ph¶i gi¶i quyÕt nh÷ng viÖc kh¸c /#main(%d)", 1),
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
-	Say(format("<color=green>%s:<color> %s xin hái cã viÖc g×?",GetNpcName(GetTargetNpc()), gf_GetPlayerSexName()), getn(tSay), tSay)
+	Say(format("<color=green>%s:<color> %s, may I ask what is the matter?",GetNpcName(GetTargetNpc()), gf_GetPlayerSexName()), getn(tSay), tSay)
 	return 1
 end
 
@@ -473,7 +473,7 @@ end
 
 function fakct_Award201404_GetSpecialAward()
 	gf_Modify("Exp", 1789789789);
-	gf_AddItemEx2({2,1,30499,9}, "Hu©n ch­¬ng anh hïng", "ho¹t ®éng phô th¸ng 4 1", "", 0, 1);
+	gf_AddItemEx2({2,1,30499,9}, "Hero's Medal", "ho¹t ®éng phô th¸ng 4 1", "", 0, 1);
 	gf_WriteLogEx("Hoat dong phu 1 thang 4 nam 2014", "§æi phÇn th­ëng cuèi cïng", 1, "PhÇn th­ëng cuèi");	
 end
 
@@ -488,8 +488,8 @@ function fakct_Award201405_GetAward_1()
 	}
 	local index = gf_GetRandItemByTable(tExp, gf_SumRandBase(tExp), getn(tExp))
 	gf_Modify("Exp", tExp[index][3]);
-	gf_EventGiveCustomAward(3, 9, 1, "Event phô th¸ng 5");
-	gf_EventGiveCustomAward(4, 9, 1, "Event phô th¸ng 5");
+	gf_EventGiveCustomAward(3, 9, 1, "Assist event May");
+	gf_EventGiveCustomAward(4, 9, 1, "Assist event May");
 	AwardGenuineQi(19);
 	--pet value by vet
 	Vet_Update_Pet_DanhQuai(20)
@@ -498,8 +498,8 @@ end
 
 function fakct_Award201405_GetAward_2()
 	gf_Modify("Exp", 299000000);
-	gf_EventGiveCustomAward(3, 39, 1, "Event phô th¸ng 5");
-	gf_EventGiveCustomAward(4, 39, 1, "Event phô th¸ng 5");
+	gf_EventGiveCustomAward(3, 39, 1, "Assist event May");
+	gf_EventGiveCustomAward(4, 39, 1, "Assist event May");
 	AwardGenuineQi(39);
 	--pet value by vet
 	Vet_Update_Pet_DanhQuai(5)
@@ -564,8 +564,8 @@ function fakct_Award201406_GetAward_2()
 		{1, 5, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},
 		{31, 15, "ahf_GetGaojiZhenjuan(1, 4, 1)", 1},
 		{1, 15, "Minh NguyÖt D¹", {1, 1, 17, 10}, 0},
-		{1, 15, "B¸nh Bét vµng", {1, 1, 15, 10}, 0},
-		{1, 15, "T©y B¾c Väng", {1, 1, 19, 10}, 0},
+		{1, 15, "Golden Flour Cake", {1, 1, 15, 10}, 0},
+		{1, 15, "Northwest Gaze", {1, 1, 19, 10}, 0},
 	}
 	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Ho¹t ®éng phô th¸ng 6", "Ho¹t ®éng phô th¸ng 6")
 	gf_WriteLogEx("GIAI CUU DAI SOAI Thang 6/2014", "§æi phÇn th­ëng ­u ®·i", 1, "PhÇn th­ëng ­u ®·i");
@@ -581,14 +581,14 @@ function fakct_Award201411_GetAward_2()
 	gf_Modify("Exp", 399399399);
 	AwardGenuineQi(150);
 	local tAward = {
-		{1, 4, "Hu©n ch­¬ng anh hïng", {2, 1, 30499, 1}, 0},
+		{1, 4, "Hero's Medal", {2, 1, 30499, 1}, 0},
 		{1, 10, "Thiªn Kiªu LÖnh", {2, 97, 236, 1, 4}, 0},
 		{31, 10, "gf_VnGiveActivityPetGrowAward(50)", 1},
 		{31, 10, "gf_VnGiveActivityPetMpAward(10)", 1},
-		{1, 25, "Nghiªn Mùc", {2, 1, 30742, 2000}, 0},
+		{1, 25, "Ink Stone", {2, 1, 30742, 2000}, 0},
 		{1, 10, "Minh NguyÖt D¹", {1, 1, 17, 10}, 0},
-		{1, 10, "B¸nh Bét vµng", {1, 1, 15, 10}, 0},
-		{1, 10, "T©y B¾c Väng", {1, 1, 19, 10}, 0},
+		{1, 10, "Golden Flour Cake", {1, 1, 15, 10}, 0},
+		{1, 10, "Northwest Gaze", {1, 1, 19, 10}, 0},
 		{1, 10, "Cöu chuyÓn håi hån ®¬n", {1, 0, 32, 10}, 0},
 		{1, 1, "Thiªn Th¹ch Tinh Th¹ch", {2, 1, 1009, 1, 4}, 7 * 24 * 3600},
 	}
@@ -605,14 +605,14 @@ function fakct_Award201501_GetAward_2()
 	gf_Modify("Exp", 299299299);
 	AwardGenuineQi(150);
 	local tAward = {
-		{1, 4, "Hu©n ch­¬ng anh hïng", {2, 1, 30499, 1}, 0},
+		{1, 4, "Hero's Medal", {2, 1, 30499, 1}, 0},
 		{1, 10, "Thiªn Kiªu LÖnh", {2, 97, 236, 1, 4}, 0},
 		{31, 10, "gf_VnGiveActivityPetGrowAward(50)", 1},
 		{31, 10, "gf_VnGiveActivityPetMpAward(10)", 1},
-		{1, 25, "§Ëu xanh nh©n thÞt", {2, 1, 30764, 100}, 0},
+		{1, 25, "Meat-Stuffed Mung Bean", {2, 1, 30764, 100}, 0},
 		{1, 10, "Minh NguyÖt D¹", {1, 1, 17, 20}, 0},
-		{1, 10, "B¸nh Bét vµng", {1, 1, 15, 20}, 0},
-		{1, 10, "T©y B¾c Väng", {1, 1, 19, 20}, 0},
+		{1, 10, "Golden Flour Cake", {1, 1, 15, 20}, 0},
+		{1, 10, "Northwest Gaze", {1, 1, 19, 20}, 0},
 		{1, 10, "Cöu chuyÓn håi hån ®¬n", {1, 0, 32, 10}, 0},
 		{1, 1, "Thiªn Th¹ch Tinh Th¹ch", {2, 1, 1009, 1, 4}, 7 * 24 * 3600},
 	}
@@ -621,18 +621,18 @@ end
 
 function fakct_Award201503_GetAward()
 	gf_Modify("Exp", 345600000);
-	gf_AddItemEx2({2, 1, 30785, 39}, "V« Tù Kinh Th­", "Ho¹t ®éng th¸ng 3/2015", "Ho¹t ®éng th¸ng 3/2015", 0, 1)
+	gf_AddItemEx2({2, 1, 30785, 39}, "Wordless Scripture", "Ho¹t ®éng th¸ng 3/2015", "Ho¹t ®éng th¸ng 3/2015", 0, 1)
 	gf_AddItemEx2({2, 1, 30796, 1, 4}, "Tµng B¶o §å", "Ho¹t ®éng th¸ng 3/2015", "Ho¹t ®éng th¸ng 3/2015", 0, 1)
 end
 
 function fakct_Award201503_GetAward_normal_daily()	
 	gf_Modify("Exp", 39000000);
-	gf_AddItemEx2({2, 1, 30785, 19}, "V« Tù Kinh Th­", "Ho¹t ®éng th¸ng 04/2015", "Ho¹t ®éng th¸ng 04/2015", 0, 1)
-	gf_AddItemEx2({2, 1, 30802, 99}, "Thuèc Næ", "Ho¹t ®éng th¸ng 04/2015", "Ho¹t ®éng th¸ng 04/2015", 0, 1)
+	gf_AddItemEx2({2, 1, 30785, 19}, "Wordless Scripture", "Ho¹t ®éng th¸ng 04/2015", "Ho¹t ®éng th¸ng 04/2015", 0, 1)
+	gf_AddItemEx2({2, 1, 30802, 99}, "Explosive Powder", "Ho¹t ®éng th¸ng 04/2015", "Ho¹t ®éng th¸ng 04/2015", 0, 1)
 end
 
 function fakct_Award201503_GetAward_advanced_daily()
 	gf_Modify("Exp", 99000000);
-	gf_AddItemEx2({2, 1, 30785, 19}, "V« Tù Kinh Th­", "Ho¹t ®éng th¸ng 04/2015", "Ho¹t ®éng th¸ng 04/2015", 0, 1)
-	gf_AddItemEx2({2, 1, 30805, 99}, "Ph¸o Hoa Vinh Dù", "Ho¹t ®éng th¸ng 04/2015", "Ho¹t ®éng th¸ng 04/2015", 0, 1)
+	gf_AddItemEx2({2, 1, 30785, 19}, "Wordless Scripture", "Ho¹t ®éng th¸ng 04/2015", "Ho¹t ®éng th¸ng 04/2015", 0, 1)
+	gf_AddItemEx2({2, 1, 30805, 99}, "Glory Fireworks", "Ho¹t ®éng th¸ng 04/2015", "Ho¹t ®éng th¸ng 04/2015", 0, 1)
 end

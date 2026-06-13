@@ -45,8 +45,8 @@ function Process_Peace_Timer()
 		--º∆ ˝ºı“ª
 		SetMissionV(MV_TIMER_LOOP,nLoop-1)
 		if mod(nLoop,3) == 0 then --5*3√Î≤•∑≈“ª¥Œ
-			Msg2MSAll(MISSIONID,"Ti’n ÆÈ thÍi gian: ["..(PEACE_TIMER_LOOP-nLoop+1).."/"..(PEACE_TIMER_LOOP+1).."]")
-			Msg2MSAll(MISSIONID,"T˚ l÷ sË ng≠Íi 2 phe:"..tCampName[1].."["..nPlayerOne.."]:["..nPlayerTwo.."]"..tCampName[2]..". Khi c∂ 2 phe Æ“u Æπt "..PLAYER_NEED_NUM.." ng≠Íi, H∂i Chi’n Long Ch©u sœ bæt Æ«u")
+			Msg2MSAll(MISSIONID,"Time progress: ["..(PEACE_TIMER_LOOP-nLoop+1).."/"..(PEACE_TIMER_LOOP+1).."]")
+			Msg2MSAll(MISSIONID,"T˚ l÷ sË ng≠Íi 2 phe:"..tCampName[1].."["..nPlayerOne.."]:["..nPlayerTwo.."]"..tCampName[2]..". When both sides reach"..PLAYER_NEED_NUM.." ng≠Íi, H∂i Chi’n Long Ch©u sœ bæt Æ«u")
 		end
 		if nPlayerOne >= PLAYER_NEED_NUM and nPlayerTwo >= PLAYER_NEED_NUM then
 			StopMissionTimer(MISSIONID,TIMERID)
@@ -209,7 +209,7 @@ function Process_Fight_Timer()
 		end		
 		--15*4√Îπ„≤•“ª¥Œ
 		if mod(nLoop,4) == 0 then
-			Msg2MSAll(MISSIONID,"Ti’n ÆÈ thÍi gian: ["..(FIGHT_TIMER_LOOP-nLoop+1).."/"..(FIGHT_TIMER_LOOP+1).."]")
+			Msg2MSAll(MISSIONID,"Time progress: ["..(FIGHT_TIMER_LOOP-nLoop+1).."/"..(FIGHT_TIMER_LOOP+1).."]")
 			Msg2MSAll(MISSIONID,"ßi”m chi’n Æ u 2 qu©n hi÷n tπi: "..tCampName[1].."["..OVER_GAME_POINT-nPointTwo.."]:["..OVER_GAME_POINT-nPointOne.."]"..tCampName[2])
 		end		
 		--15*10√Îπ„≤•“ª¥Œ

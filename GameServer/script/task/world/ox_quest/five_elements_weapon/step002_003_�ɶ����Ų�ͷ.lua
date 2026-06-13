@@ -11,7 +11,7 @@
 Include("\\script\\task\\world\\ox_common\\common.lua");
 
 quest_giver = cf_ox_SetColor("Bé ®Çu", "green")..":"
-quest_title = cf_ox_SetColor("B¾t cãc", "yellow").."\n"
+quest_title = cf_ox_SetColor("Kidnapping", "yellow").."\n"
 quest_detail = cf_ox_SetColor("§i t×m bän L­u manh ngoµi thµnh th¨m dß tin tøc.", "gray").."\n\n"
 quest_description_1 = quest_giver.."Bän chóng cÇn chÝnh lµ miÕng ngäc nµy, xem ra còng ®¸ng gi¸ ®ã, cã lÏ ta nhê quan phñ gi÷ hé th× tèt h¬n. HiÖn giê bän l­u manh bªn ngoµi Thµnh §« ®ang n¸o lo¹n. Chóng ta h·y ®i b¾t vµi tªn ®em vÒ lÊy khÈu cung ®Ó t×m ra manh mèi."
 quest_confirm = ""

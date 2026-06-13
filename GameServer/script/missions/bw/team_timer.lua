@@ -19,7 +19,7 @@ local nTimeState = 0;
 		ReportBattleState(nTimeState);
 	--±ÈÈü½áÊø
 	elseif nMapState == 3 then 
-		Msg2MSAll(TEAM_MISSION_ID,"Thi ®Êu kÕt thóc!");
+		Msg2MSAll(TEAM_MISSION_ID,"The match is over!");
 		--StopMissionTimer(TEAM_MISSION_ID,TEAM_TIME_ID1);
 	end
 end
@@ -74,7 +74,7 @@ local nTeamNum = GetGameTeamNum();
 				for j=1,gf_GetTeamSize() do
 					if gf_GetTeamMember(j) > 0 then
 						PlayerIndex = gf_GetTeamMember(j);
-						Talk(1,"","Thi ®Êu chÝnh thøc b¾t ®Çu, sè ®éi trong trËn hiÖn lµ <color=yellow>"..nTeamNum.."<color> ®éi!")
+						Talk(1,"","Thi ®Êu chÝnh thøc b¾t ®Çu, sè ®éi trong trËn hiÖn lµ <color=yellow>"..nTeamNum.."<color> teams!")
 					end
 				end
 			end
@@ -82,7 +82,7 @@ local nTeamNum = GetGameTeamNum();
 		
 		PlayerIndex = OldPlayer
 		
-		news_str = "Thi ®Êu chÝnh thøc b¾t ®Çu!";
+		news_str = "The match officially begins!";
 		Msg2MSAll(TEAM_MISSION_ID,news_str);             
 		RunMission(TEAM_MISSION_ID);
 		return
@@ -306,7 +306,7 @@ local TeamMember = {};
 	if (nMin == 0) then
 		Msg2MSAll(TEAM_MISSION_ID, "Giai ®o¹n thi ®Êu: Thi ®Êu ®ang tiÕn hµnh, trong L«i ®µi hiÖn cã"..nTeamNum.." ®éi, thêi gian thi ®Êu cßn l¹i "..nSec.." gi©y.");
 	elseif (nSec == 0) then
-		Msg2MSAll(TEAM_MISSION_ID, "Giai ®o¹n thi ®Êu: Thi ®Êu ®ang tiÕn hµnh, trong L«i ®µi hiÖn cã"..nTeamNum.." ®éi, thêi gian thi ®Êu cßn l¹i "..nMin.." phót.");
+		Msg2MSAll(TEAM_MISSION_ID, "Giai ®o¹n thi ®Êu: Thi ®Êu ®ang tiÕn hµnh, trong L«i ®µi hiÖn cã"..nTeamNum.." ®éi, thêi gian thi ®Êu cßn l¹i "..nMin.." minutes.");
 	end
 	
 end

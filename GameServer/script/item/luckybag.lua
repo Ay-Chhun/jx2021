@@ -11,8 +11,8 @@ function OnUse()
 	
 	Say("Tr­íc khi më quµ, vui lßng x¸c nhËn ®ñ kho¶ng trèng vµ søc lùc cña hµnh trang, tr¸nh r¬i rít vËt phÈm ra ngoµi!",
 			2,
-			"§ång ý/ConfirmUse",
-			"L¸t sau sÏ më/CancelUse");
+			"Agree/ConfirmUse",
+			"I will open it later/CancelUse");
 	
 end;
 

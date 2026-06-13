@@ -14,18 +14,18 @@ function main()
 	end
 	local selTab = {
 				"T×m hiÓu c¸ch thøc ®æi tr¸i c©y./fruit_event",
-				"KÕt thóc ®èi tho¹i/no",
+				"End dialogue/no",
 				}
-	Say("<color=green>Th­¬ng nh©n tr¸i c©y<color>: ".."Tõ 04-07-2008 ®Õn 24:00 27-07-2008, ".."Trong thêi gian LÔ héi tr¸i c©y, ng­êi ch¬i cã thÓ th«ng qua tham gia NhiÖm vô s­ m«n, Tµng kiÕm s¬n trang vµ trång c©y B¸t nh· ®Ó thu thËp Tói tr¸i c©y. Sau khi më Tói tr¸i c©y sÏ nhËn ®­îc 1 trong 5 lo¹i tr¸i c©y, nh­: Nho, M·ng cÇu, M¨ng côt, Vó s÷a, SÇu riªng. Sau khi sö dông tr¸i c©y sÏ nhËn ®­îc phÇn th­ëng ®iÓm kinh nghiÖm vµ vËt phÈm quý b¸u.",getn(selTab),selTab);
+	Say("<color=green>Fruit Merchant<color>:".."From 04-07-2008 to 24:00 27-07-2008,".."Trong thêi gian LÔ héi tr¸i c©y, ng­êi ch¬i cã thÓ th«ng qua tham gia NhiÖm vô s­ m«n, Tµng kiÕm s¬n trang vµ trång c©y B¸t nh· ®Ó thu thËp Tói tr¸i c©y. Sau khi më Tói tr¸i c©y sÏ nhËn ®­îc 1 trong 5 lo¹i tr¸i c©y, nh­: Nho, M·ng cÇu, M¨ng côt, Vó s÷a, SÇu riªng. Sau khi sö dông tr¸i c©y sÏ nhËn ®­îc phÇn th­ëng ®iÓm kinh nghiÖm vµ vËt phÈm quý b¸u.",getn(selTab),selTab);
 end
 
 function fruit_event()
 		local selTab = {
-					"§æi tr¸i c©y theo h×nh thøc 1/#exchange_fruit(1)",
-					"§æi tr¸i c©y theo h×nh thøc 2/#exchange_fruit(2)",
-					"§æi tr¸i c©y theo h×nh thøc 3/#exchange_fruit(3)",
-					"§æi tr¸i c©y theo h×nh thøc 4/#exchange_fruit(4)",
-					"KÕt thóc ®èi tho¹i/no",
+					"Exchange fruit by method 1/#exchange_fruit(1)",
+					"Exchange fruit by method 2/#exchange_fruit(2)",
+					"Exchange fruit by method 3/#exchange_fruit(3)",
+					"Exchange fruit by method 4/#exchange_fruit(4)",
+					"End dialogue/no",
 					}
 		Say("<color=green>Th­¬ng nh©n tr¸i c©y<color>: Cã 4 c¸ch ®æi:\n<color=yellow>C¸ch thøc 1<color>: 3 Nho = 1 M·ng cÇu.\n<color=yellow>C¸ch thøc 2<color>: 3 M·ng cÇu + 1 Nho = 1 M¨ng côt.\n<color=yellow>C¸ch thøc 3<color>: 3 M¨ng côt + 1 M·ng cÇu + 1 Nho + 10 B¹c = 1 Vó s÷a.\n<color=yellow>C¸ch thøc 4<color>: 3 Vó s÷a + 1 M¨ng côt + 1 M·ng cÇu + 1 Nho + 80 B¹c = 1 SÇu riªng.",getn(selTab),selTab);
 end
@@ -42,7 +42,7 @@ function exchange_fruit(nType)
 				return
 			end;
 			if del_item_ex("Nho",2,1,30009,3) == 1 then
-				add_item_ex("M·ng cÇu",2,1,30010,1)
+				add_item_ex("Soursop",2,1,30010,1)
 			else
 				Say("<color=green>Th­¬ng nh©n tr¸i c©y<color>: Nguyªn liÖu mang theo kh«ng ®ñ.",1,"ThËt ng¹i qu¸, ®Ó ta kiÓm tra l¹i!/no");
 				return
@@ -57,8 +57,8 @@ function exchange_fruit(nType)
 				Talk(1,"","<color=green>Th­¬ng nh©n tr¸i c©y<color>: H·y ®¶m b¶o hµnh trang ®ñ chç trèng vµ träng l­îng ®Ó tr¸nh l·ng phÝ kh«ng cÇn thiÕt.");
 				return
 			end;
-			if del_item_ex("Nho",2,1,30009,1) == 1 and del_item_ex("M·ng cÇu",2,1,30010,3) then
-				add_item_ex("M¨ng côt",2,1,30011,1)
+			if del_item_ex("Nho",2,1,30009,1) == 1 and del_item_ex("Soursop",2,1,30010,3) then
+				add_item_ex("Mangosteen",2,1,30011,1)
 			else
 				Say("<color=green>Th­¬ng nh©n tr¸i c©y<color>: Nguyªn liÖu mang theo kh«ng ®ñ.",1,"ThËt ng¹i qu¸, ®Ó ta kiÓm tra l¹i!/no");
 				return
@@ -73,8 +73,8 @@ function exchange_fruit(nType)
 				Talk(1,"","<color=green>Th­¬ng nh©n tr¸i c©y<color>: H·y ®¶m b¶o hµnh trang ®ñ chç trèng vµ träng l­îng ®Ó tr¸nh l·ng phÝ kh«ng cÇn thiÕt.");
 				return
 			end;
-			if del_item_ex("Nho",2,1,30009,1) == 1 and del_item_ex("M·ng cÇu",2,1,30010,1) and del_item_ex("M¨ng côt",2,1,30011,3) and pay_ex(1000) then
-				add_item_ex("Vó s÷a",2,1,30012,1)
+			if del_item_ex("Nho",2,1,30009,1) == 1 and del_item_ex("Soursop",2,1,30010,1) and del_item_ex("Mangosteen",2,1,30011,3) and pay_ex(1000) then
+				add_item_ex("Star Apple",2,1,30012,1)
 			else
 				Say("<color=green>Th­¬ng nh©n tr¸i c©y<color>: Nguyªn liÖu mang theo kh«ng ®ñ.",1,"ThËt ng¹i qu¸, ®Ó ta kiÓm tra l¹i!/no");
 				return
@@ -89,8 +89,8 @@ function exchange_fruit(nType)
 				Talk(1,"","<color=green>Th­¬ng nh©n tr¸i c©y<color>: H·y ®¶m b¶o hµnh trang ®ñ chç trèng vµ träng l­îng ®Ó tr¸nh l·ng phÝ kh«ng cÇn thiÕt.");
 				return
 			end;
-			if del_item_ex("Nho",2,1,30009,1) == 1 and del_item_ex("M·ng cÇu",2,1,30010,1) and del_item_ex("M¨ng côt",2,1,30011,1) and del_item_ex("Vó s÷a",2,1,30012,3) and pay_ex(8000) then
-				add_item_ex("SÇu riªng",2,1,30013,1)
+			if del_item_ex("Nho",2,1,30009,1) == 1 and del_item_ex("Soursop",2,1,30010,1) and del_item_ex("Mangosteen",2,1,30011,1) and del_item_ex("Star Apple",2,1,30012,3) and pay_ex(8000) then
+				add_item_ex("Durian",2,1,30013,1)
 			else
 				Say("<color=green>Th­¬ng nh©n tr¸i c©y<color>: Nguyªn liÖu mang theo kh«ng ®ñ.",1,"ThËt ng¹i qu¸, ®Ó ta kiÓm tra l¹i!/no");
 				return

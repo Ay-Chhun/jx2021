@@ -22,7 +22,7 @@ function OnUse(nItem)
 	
 	local strTab = {
 		format("Ta muèn më lÔ bao n©ng cÊp/#OnUse_1(%d)", nItem),
-		"§Ó ta suy nghÜ/nothing",
+		"Let me think about it/nothing",
 	};
 	Say("<color=green> LÔ Bao N©ng CÊp: <color> x¸c nhËn më LÔ Bao N©ng CÊp nµy kh«ng?", getn(strTab), strTab);
 end
@@ -45,9 +45,9 @@ end
 
 function exchange_new_equip()
 	local tAward = {
-		{1, 60, "Giµy V¶i Th«", {0, 154, 1, 1}, 0},
-		{1, 30, "Tinh TrÝ Bè Hµi", {0, 154, 2, 1}, 0},
-		{1, 10, "Bè ChÕ Cao §ång Ngoa", {0, 154, 3, 1}, 0},
+		{1, 60, "Coarse Cloth Shoes", {0, 154, 1, 1}, 0},
+		{1, 30, "Refined Cloth Shoes", {0, 154, 2, 1}, 0},
+		{1, 10, "Gao Tong Wa Recipe", {0, 154, 3, 1}, 0},
 	}
 	if GetFreeItemRoom() < 1 then
 		Talk(1,"","Kh«ng gian hµnh trang kh«ng ®ñ");

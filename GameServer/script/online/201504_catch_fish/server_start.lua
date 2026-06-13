@@ -17,13 +17,13 @@ function on_server_start()
 	
 	CreateNpcList({
 		{"ChÒ c«m ÆÂ T©y Nam", "Th≠¨ng Nh©n H∂i S∂n", 100, 1527, 2868, "\\script\\online\\201504_catch_fish\\npc\\npc_seller.lua"},
-		{"Ng≠ d©n", "Ng≠ PhÒ", 103, 1817, 3350, "\\script\\online\\201504_catch_fish\\npc\\npc_fisher.lua"},
-		{"Ti”u Hi÷u Ph∏o ßµi", "Ng≠ D©n ThÊ Ph∏o", 103, 1804, 3441, "\\script\\online\\201504_catch_fish\\npc\\npc_bomb.lua"},
-		{"Ti”u Hi÷u Ph∏o ßµi", "Ng≠ D©n ThÊ Ph∏o", 103, 1814, 3463, "\\script\\online\\201504_catch_fish\\npc\\npc_bomb.lua"},
-		{"Ti”u Hi÷u Ph∏o ßµi", "Ng≠ D©n ThÊ Ph∏o", 103, 1830, 3492, "\\script\\online\\201504_catch_fish\\npc\\npc_bomb.lua"},
-		{"Ti”u Hi÷u Ph∏o ßµi", "Ng≠ D©n ThÊ Ph∏o", 103, 1857, 3480, "\\script\\online\\201504_catch_fish\\npc\\npc_bomb.lua"},
-		{"Ti”u Hi÷u Ph∏o ßµi", "Ng≠ D©n ThÊ Ph∏o", 103, 1866, 3447, "\\script\\online\\201504_catch_fish\\npc\\npc_bomb.lua"},
-		{"Ti”u Hi÷u Ph∏o ßµi", "Ng≠ D©n ThÊ Ph∏o", 103, 1873, 3415, "\\script\\online\\201504_catch_fish\\npc\\npc_bomb.lua"},
+		{"Ng≠ d©n", "Fishery Master", 103, 1817, 3350, "\\script\\online\\201504_catch_fish\\npc\\npc_fisher.lua"},
+		{"Ti”u Hi÷u Ph∏o ßµi", "Fisherman's Earth Cannon", 103, 1804, 3441, "\\script\\online\\201504_catch_fish\\npc\\npc_bomb.lua"},
+		{"Ti”u Hi÷u Ph∏o ßµi", "Fisherman's Earth Cannon", 103, 1814, 3463, "\\script\\online\\201504_catch_fish\\npc\\npc_bomb.lua"},
+		{"Ti”u Hi÷u Ph∏o ßµi", "Fisherman's Earth Cannon", 103, 1830, 3492, "\\script\\online\\201504_catch_fish\\npc\\npc_bomb.lua"},
+		{"Ti”u Hi÷u Ph∏o ßµi", "Fisherman's Earth Cannon", 103, 1857, 3480, "\\script\\online\\201504_catch_fish\\npc\\npc_bomb.lua"},
+		{"Ti”u Hi÷u Ph∏o ßµi", "Fisherman's Earth Cannon", 103, 1866, 3447, "\\script\\online\\201504_catch_fish\\npc\\npc_bomb.lua"},
+		{"Ti”u Hi÷u Ph∏o ßµi", "Fisherman's Earth Cannon", 103, 1873, 3415, "\\script\\online\\201504_catch_fish\\npc\\npc_bomb.lua"},
 	});
 	apply_server_counter()--∏¸–¬∑˛ŒÒ∆˜º∆ ˝∆˜
 end

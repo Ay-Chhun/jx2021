@@ -12,7 +12,7 @@ function OnUse(nItemIdx)
 		gf_SetLogCaption(VIET_0909_LOG_TITLE);
 		local nRand = gf_GetRandItemByTable(tb_VIET_0909_WENZIBAO, 100, 10);
 		local nRetCode, nIndex = gf_AddItemEx(tb_VIET_0909_WENZIBAO[nRand][3], tb_VIET_0909_WENZIBAO[nRand][1]);
-		WriteLogEx("Hoat dong trung thu","Tói V¨n Tö",1,tb_VIET_0909_WENZIBAO[nRand][1])
+		WriteLogEx("Hoat dong trung thu","Scholar Bag",1,tb_VIET_0909_WENZIBAO[nRand][1])
 		if nRetCode == 1 and tb_VIET_0909_WENZIBAO[nRand][4] > 0 then
 			SetItemExpireTime(nIndex, tb_VIET_0909_WENZIBAO[nRand][4]);
 		end

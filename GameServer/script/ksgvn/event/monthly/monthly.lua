@@ -255,7 +255,7 @@ function _monthlyEvent_GetNpcName()
     if GetTargetNpcName() then
         return GetTargetNpcName()
     end
-    return "CÈm Nang §¹i Sù KiÖn"
+    return "Grand Event Handbook"
 end
 
 function _monthlyEvent_OnLogin()

@@ -1,7 +1,7 @@
 Include("\\script\\lib\\globalfunctions.lua")
 
 function OnUse(nItem)
-	Say("Cã muèn më ra kh«ng?",2,"§ång ý/ensure","Hñy bá/nothing")
+	Say("Cã muèn më ra kh«ng?",2,"Agree/ensure","Cancel/nothing")
 end
 
 function ensure()

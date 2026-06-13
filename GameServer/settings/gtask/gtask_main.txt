@@ -21,9 +21,9 @@ Tham gia §¹i Héi Vâ L©m	16	0	V« Danh T¨ng	Nh¹n Kha	30002			30035	1;0	1;0	-1	-1
 Tra hái D­¬ng Liªn §×nh	19	0	D­¬ng Liªn §×nh	V« Danh T¨ng	30002			30038	1;0	1;0	-1	-1		
 CÇu cøu V« Danh T¨ng	20	0	V« Danh T¨ng	Nh¹c BÊt QuÇn	30002			30039	1;0	1;0	-1	-1		
 T×m ®­îc manh mèi míi	21	0	Nh¹c BÊt QuÇn	H­íng VÊn Thiªn	30002			30040	1;0	1;0	-1	-1		
-Th¨m hái H­íng VÊn Thiªn	22	0	H­íng VÊn Thiªn	Téc tr­ëng Miªu LÜnh	30002			30041	1;0	1;0	-1	-1		
-Tiªu diÖt H¾c Tr­	23	0	Téc tr­ëng Miªu LÜnh	Téc tr­ëng Miªu LÜnh	30002	30011	30111	30042	1;0	1;0	-1	-1		
-§o¹t lÊy r­îu ngon	24	0	Téc tr­ëng Miªu LÜnh	H­íng VÊn Thiªn	30002	30012	30007	30043	1;0	1;0	-1	-1		
+Th¨m hái H­íng VÊn Thiªn	22	0	H­íng VÊn Thiªn	Miaoling Chieftain	30002			30041	1;0	1;0	-1	-1		
+Tiªu diÖt H¾c Tr­	23	0	Miaoling Chieftain	Miaoling Chieftain	30002	30011	30111	30042	1;0	1;0	-1	-1		
+§o¹t lÊy r­îu ngon	24	0	Miaoling Chieftain	H­íng VÊn Thiªn	30002	30012	30007	30043	1;0	1;0	-1	-1		
 BiÕt ®­îc ch©n t­íng	25	0	H­íng VÊn Thiªn	§an Thanh Sinh	30002		30008	30044	1;0	1;0	-1	-1		
 Th¨m hái §an Thanh Sinh	26	0	§an Thanh Sinh	§an Thanh Sinh	30002			30045	1;0	1;0	-1	-1		
 Thö th¸ch cña §an Thanh Sinh	27	0	§an Thanh Sinh	¢u D­¬ng Häa 	30002			30046	1;0	1;0	-1	-1		
@@ -73,15 +73,15 @@ Kiªn thñ ph¶n ph¸c	70	0	NhËm Ng· Hµnh	NhËm Ng· Hµnh	30002	30116&30117	30102	3009
 Chiªu dô §«ng Ph­¬ng BÊt B¹i	71	0	NhËm Ng· Hµnh	D­¬ng Liªn §×nh	30002			30092	1;0	1;0	-1	-1		
 §¸nh b¹i §«ng Ph­¬ng BÊt B¹i	72	0	D­¬ng Liªn §×nh	NhËm Ng· Hµnh	30002	30118		30093	1;0	1;0	1	-1		
 <Quú Hoa B¶o §iÓn> D­¬ng Bé	73	0	NhËm Ng· Hµnh	NhËm Ng· Hµnh	30002	30137	30132	30094	1;0	1;0	-1	-1		
-Th¨m Giang BiÖt H¹c	74	0		Giang BiÖt H¹c	30138	30149		30157	1;0	1;0	-1	-1		
-§¸nh b¹i H¸m S¬n ®¹i v­¬ng	75	0	Giang BiÖt H¹c	Giang BiÖt H¹c	30002	30139	30138	30158	1;0	1;0	-1	-1		
-Th¨m L­u T­ Anh	76	0	Giang BiÖt H¹c	L­u T­ Anh	30002	30157	30133	30159	1;0	1;0	-1	-1		
-ChØnh söa UÈn Linh	77	0	L­u T­ Anh	Giang BiÖt H¹c	30002		30166	30160	1;0	1;0	-1	-1		
-Thanh Long Gi¸c	78	0	Giang BiÖt H¹c	Giang BiÖt H¹c	30002	30140&30141&30142	30134	30161&30167	1;0	1;0	1	-1		
-Th­¬ng ¦ng Tr¸c	79	0	Giang BiÖt H¹c	Giang BiÖt H¹c	30002	30143&30144&30145	30135	30162	1;0	1;0	1	-1		
-Tø Linh DiÖt Ph¸p TrËn	80	0	Giang BiÖt H¹c	Giang BiÖt H¹c	30002	30146&30147	30136	30163&30168	1;0	1;0	1	-1		
-§­a th­	81	0	Giang BiÖt H¹c	ThÇn gi¸o H¾c Tæng Qu¶n	30002	30148	30137	30164	1;0	1;0	-1	-1		
-BÈm b¸o t×nh h×nh	82	0	ThÇn gi¸o H¾c Tæng Qu¶n	Giang BiÖt H¹c	30002			30165	1;0	1;0	-1	-1		
+Th¨m Giang BiÖt H¹c	74	0		Jiang Biehe	30138	30149		30157	1;0	1;0	-1	-1		
+§¸nh b¹i H¸m S¬n ®¹i v­¬ng	75	0	Jiang Biehe	Jiang Biehe	30002	30139	30138	30158	1;0	1;0	-1	-1		
+Th¨m L­u T­ Anh	76	0	Jiang Biehe	Liu Siying	30002	30157	30133	30159	1;0	1;0	-1	-1		
+ChØnh söa UÈn Linh	77	0	Liu Siying	Jiang Biehe	30002		30166	30160	1;0	1;0	-1	-1		
+Thanh Long Gi¸c	78	0	Jiang Biehe	Jiang Biehe	30002	30140&30141&30142	30134	30161&30167	1;0	1;0	1	-1		
+Th­¬ng ¦ng Tr¸c	79	0	Jiang Biehe	Jiang Biehe	30002	30143&30144&30145	30135	30162	1;0	1;0	1	-1		
+Tø Linh DiÖt Ph¸p TrËn	80	0	Jiang Biehe	Jiang Biehe	30002	30146&30147	30136	30163&30168	1;0	1;0	1	-1		
+§­a th­	81	0	Jiang Biehe	ThÇn gi¸o H¾c Tæng Qu¶n	30002	30148	30137	30164	1;0	1;0	-1	-1		
+BÈm b¸o t×nh h×nh	82	0	ThÇn gi¸o H¾c Tæng Qu¶n	Jiang Biehe	30002			30165	1;0	1;0	-1	-1		
 V­ît Th«ng Thiªn HuyÔn C¶nh 1 lÇn	83	1			30138	30151		30139&30143	1;0	1;0	1	-1		
 V­ît Th«ng Thiªn HuyÔn C¶nh 4 lÇn	84	1			30138	30152		30141&30145	1;0	1;0	1	-1		
 V­ît V¹n KiÕm Tròng 1 lÇn	85	1			30150	30153		30148&30150	1;0	1;0	-1	-1		
@@ -92,53 +92,53 @@ NhÆt §¹i B¶o R­¬ng Boss Hoµng Kim	89	1			30138	30158		30169	1;0	1;0	-1	-1
 TriÖu gäi 5 lÇn L­¬ng S¬n hµo kiÖt	90	1			30138	30159		30170	1;0	1;0	-1	-1		
 Më 1 L­¬ng S¬n MËt B¶o R­¬ng 	91	1			30138	30160		30171	1;0	1;0	-1	-1		
 TËp kÝch	92	0	Nh¹c BÊt QuÇn	Nh¹c BÊt QuÇn	30161&30178	30162	30172	30182&30201	1;0	1;0	-1	-1		
-Th¨m dß	93	0	Nh¹c BÊt QuÇn	Nh¹c Linh San	30002			30183&30202	1;0	1;0	-1	-1		
-TiÓu Phi Tö	94	0	Nh¹c Linh San	ThuÇn NhÊt Ch­ëng	30002			30184&30203	1;0	1;0	-1	-1		
-T×m r­îu	95	0	ThuÇn NhÊt Ch­ëng	ThuÇn NhÊt Ch­ëng	30002	30163		30185&30204	1;0	1;0	1	-1		
-Ch©n t­íng	96	0	ThuÇn NhÊt Ch­ëng	Nh¹c BÊt QuÇn	30002			30186&30205	1;0	1;0	-1	-1		
-Hç thÑn	97	0	Nh¹c BÊt QuÇn	ThuÇn NhÊt Ch­ëng	30002	30164	30173	30187&30206	1;0	1;0	1	-1		
-Thï hËn	98	0	ThuÇn NhÊt Ch­ëng	ThuÇn NhÊt Ch­ëng	30002	30165	30176&30175	30188&30207	1;0	1;0	1	-1		
-Khuyªn nh¾n	99	0	ThuÇn NhÊt Ch­ëng	Nh¹c BÊt QuÇn	30002			30189&30208	1;0	1;0	-1	-1		
-B¾t cãc	100	0	Nh¹c BÊt QuÇn	Tr×nh Phong	30002			30190&30209	1;0	1;0	-1	-1		
-V©n Bang Chñ	101	0	Tr×nh Phong	Tr×nh Phong	30002	30166&30167&30168	30178&30177	30191&30210	1;0	1;0	1	-1		
-Lôc bang chñ	102	0	Tr×nh Phong	Tr×nh Phong	30002	30169&30170	30179	30192&30211	1;0	1;0	1	-1		
-Khu vùc	103	0	Tr×nh Phong	Nh¹c BÊt QuÇn	30002	30171	30174	30193&30212	1;0	1;0	1	-1		
-Héi hîp	104	0	Nh¹c BÊt QuÇn	(Nh¹c BÊt QuÇn)	30002			30194&30213	1;0	1;0	-1	-1		
-Cù XÝ Hæ	105	0	(Nh¹c BÊt QuÇn)	(Nh¹c BÊt QuÇn)	30002	30172&30176		30195&30214	1;0	1;0	1	-1		
-Thñ vÖ	106	0	(Nh¹c BÊt QuÇn)	(Nh¹c BÊt QuÇn)	30002	30173&30177		30196&30215	1;0	1;0	1	-1		
-ThÇn ®iÖn	107	0	(Nh¹c BÊt QuÇn)	(Nh¹c Linh San)	30002			30197&30216	1;0	1;0	-1	-1		
-ThiÕt Ch­ëng Èn SÜ	108	0	(Nh¹c Linh San)	(Nh¹c Linh San)	30002	30174	30180	30198&30217	1;0	1;0	1	-1		
-QuyÕt chiÕn sinh tö	109	0	(Nh¹c Linh San)	(Nh¹c Linh San)	30002	30175	30181&30220	30199&30218	1;0	1;0	1	-1		
-§¸p t¹	110	0	(Nh¹c Linh San)	Nh¹c BÊt QuÇn	30002			30200&30219	1;0	1;0	-1	-1		
+Investigate	93	0	Nh¹c BÊt QuÇn	Nh¹c Linh San	30002			30183&30202	1;0	1;0	-1	-1		
+TiÓu Phi Tö	94	0	Nh¹c Linh San	Pure Unity Palm	30002			30184&30203	1;0	1;0	-1	-1		
+T×m r­îu	95	0	Pure Unity Palm	Pure Unity Palm	30002	30163		30185&30204	1;0	1;0	1	-1		
+Ch©n t­íng	96	0	Pure Unity Palm	Nh¹c BÊt QuÇn	30002			30186&30205	1;0	1;0	-1	-1		
+Hç thÑn	97	0	Nh¹c BÊt QuÇn	Pure Unity Palm	30002	30164	30173	30187&30206	1;0	1;0	1	-1		
+Thï hËn	98	0	Pure Unity Palm	Pure Unity Palm	30002	30165	30176&30175	30188&30207	1;0	1;0	1	-1		
+Khuyªn nh¾n	99	0	Pure Unity Palm	Nh¹c BÊt QuÇn	30002			30189&30208	1;0	1;0	-1	-1		
+Kidnapping	100	0	Nh¹c BÊt QuÇn	Cheng Feng	30002			30190&30209	1;0	1;0	-1	-1		
+V©n Bang Chñ	101	0	Cheng Feng	Cheng Feng	30002	30166&30167&30168	30178&30177	30191&30210	1;0	1;0	1	-1		
+Lôc bang chñ	102	0	Cheng Feng	Cheng Feng	30002	30169&30170	30179	30192&30211	1;0	1;0	1	-1		
+Khu vùc	103	0	Cheng Feng	Nh¹c BÊt QuÇn	30002	30171	30174	30193&30212	1;0	1;0	1	-1		
+Héi hîp	104	0	Nh¹c BÊt QuÇn	(Yue Buqun)	30002			30194&30213	1;0	1;0	-1	-1		
+Qu Chihu	105	0	(Yue Buqun)	(Yue Buqun)	30002	30172&30176		30195&30214	1;0	1;0	1	-1		
+Thñ vÖ	106	0	(Yue Buqun)	(Yue Buqun)	30002	30173&30177		30196&30215	1;0	1;0	1	-1		
+ThÇn ®iÖn	107	0	(Yue Buqun)	(Yue Lingshan)	30002			30197&30216	1;0	1;0	-1	-1		
+Iron Palm Hermit	108	0	(Yue Lingshan)	(Yue Lingshan)	30002	30174	30180	30198&30217	1;0	1;0	1	-1		
+QuyÕt chiÕn sinh tö	109	0	(Yue Lingshan)	(Yue Lingshan)	30002	30175	30181&30220	30199&30218	1;0	1;0	1	-1		
+§¸p t¹	110	0	(Yue Lingshan)	Nh¹c BÊt QuÇn	30002			30200&30219	1;0	1;0	-1	-1		
 An Ninh	111	1			30161&30178	30179	30265	30222&30223	1;0	1;0	1	200000		
 Tiªu nh­îc qu©n Liªu	112	1			30161&30178	30180		30222&30225	1;0	1;0	1	200000		
-GÆp ma	113	1			30161&30178	30181	30266	30222&30227	1;0	1;0	1	200000		
+Encounter a demon	113	1			30161&30178	30181	30266	30222&30227	1;0	1;0	1	200000		
 Thanh trõ c¶n trë	114	1			30161&30178	30182	30267	30222&30229	1;0	1;0	1	200000		
 T«n nghiªm cña ng­êi chÕt	115	1			30161&30178	30183	30268	30222&30231	1;0	1;0	1	200000		
 QuÐt dän c¶n trë	116	1			30161&30178	30184	30265	30222&30233	1;0	1;0	1	200000		
 QuyÕt diÖt qu©n Tèng	117	1			30161&30178	30185		30222&30235	1;0	1;0	1	200000		
-ThÊt thÕ	118	1			30161&30178	30186	30268	30222&30237	1;0	1;0	1	200000		
+Lose advantage	118	1			30161&30178	30186	30268	30222&30237	1;0	1;0	1	200000		
 NiÒm vinh dù cña thÞ téc	119	1			30161&30178	30187	30267	30222&30239	1;0	1;0	1	200000		
-SØ nhôc	120	1			30161&30178	30188	30266	30222&30241	1;0	1;0	1	200000		
+Disgrace	120	1			30161&30178	30188	30266	30222&30241	1;0	1;0	1	200000		
 Hån Quy Cè H­¬ng	121	1			30161&30178	30189		30222&30243	1;0	1;0	1	200000		
 L­¬ng d­îc phèi ph­¬ng 1	122	1			30161&30178	30190		30222&30245	1;0	1;0	1	200000		
 L­¬ng d­îc phèi ph­¬ng 2	123	1			30161&30178	30191		30222&30247	1;0	1;0	1	200000		
 Cøu trÞ th­¬ng binh	124	1			30161&30178	30192&30200	30271	30222&30249	1;0	1;0	1	200000		
-Siªu ®é vong hån	125	1			30161&30178	30193		30222&30251	1;0	1;0	1	200000		
-Nguyªn liÖu ®¬n d­îc 1 	126	1			30161&30178	30194		30222&30253	1;0	1;0	1	200000		
-Nguyªn liÖu ®¬n d­îc 2	127	1			30161&30178	30195		30222&30255	1;0	1;0	1	200000		
-Dòng gi¶ bÊt tö	128	1			30161&30178	30196&30201	30272	30222&30257	1;0	1;0	1	200000		
-ThÊt tinh hoa	129	1			30161&30178	30197&30202		30222&30259&30260	1;0	1;0	1	-1		
-Tö Kim Méc	130	1			30161&30178	30198&30203		30222&30261&30262	1;0	1;0	1	-1		
+Deliver the souls	125	1			30161&30178	30193		30222&30251	1;0	1;0	1	200000		
+Pill ingredient 1	126	1			30161&30178	30194		30222&30253	1;0	1;0	1	200000		
+Pill ingredient 2	127	1			30161&30178	30195		30222&30255	1;0	1;0	1	200000		
+Immortal hero	128	1			30161&30178	30196&30201	30272	30222&30257	1;0	1;0	1	200000		
+Seven essences	129	1			30161&30178	30197&30202		30222&30259&30260	1;0	1;0	1	-1		
+Zi Jin Mu	130	1			30161&30178	30198&30203		30222&30261&30262	1;0	1;0	1	-1		
 Kho¸n tinh thiÕt	131	1			30161&30178	30199&30204		30222&30263&30264	1;0	1;0	1	-1		
 NhiÖm vô nhËp m«n C«n L«n(1)	132	0	Chu BÊt HoÆc	M· BÊt TiÒn	30205&30213&30215			30276	1;0	1;0	-1	-1		
 NhiÖm vô nhËp m«n C«n L«n(2)	133	0	M· BÊt TiÒn	TÇn BÊt Tri	30002			30277	1;0	1;0	-1	-1		
 NhiÖm vô nhËp m«n C«n L«n(3)	134	0	TÇn BÊt Tri	TÇn BÊt Tri	30002	30206&30207		30278	1;0	1;0	-1	-1		
 NhiÖm vô nhËp m«n C«n L«n(4)	135	0	TÇn BÊt Tri	M· BÊt TiÒn	30002	30211&30212	30273	30279&30286	1;0	1;0	-1	-1		
-NhiÖm vô nhËp m«n Thóy Yªn(1)	136	0	Sµi Hoµng Nhi	Chu Tö V¨n	30205&30214&30215			30280	1;0	1;0	-1	-1		
-NhiÖm vô nhËp m«n Thóy Yªn(2)	137	0	Chu Tö V¨n	Tö Quyªn	30002	30208	30274	30281	1;0	1;0	-1	-1		
-NhiÖm vô nhËp m«n Thóy Yªn(3)	138	0	Tö Quyªn	Chu Tö V¨n	30002	30209	30275	30282	1;0	1;0	-1	-1		
-NhiÖm vô nhËp m«n Thóy Yªn(4)	139	0	Chu Tö V¨n	Hå Man Thµnh	30002			30283	1;0	1;0	-1	-1		
+NhiÖm vô nhËp m«n Thóy Yªn(1)	136	0	Sµi Hoµng Nhi	Zhou Ziwen	30205&30214&30215			30280	1;0	1;0	-1	-1		
+NhiÖm vô nhËp m«n Thóy Yªn(2)	137	0	Zhou Ziwen	Zijuan	30002	30208	30274	30281	1;0	1;0	-1	-1		
+NhiÖm vô nhËp m«n Thóy Yªn(3)	138	0	Zijuan	Zhou Ziwen	30002	30209	30275	30282	1;0	1;0	-1	-1		
+NhiÖm vô nhËp m«n Thóy Yªn(4)	139	0	Zhou Ziwen	Hå Man Thµnh	30002			30283	1;0	1;0	-1	-1		
 NhiÖm vô nhËp m«n Thóy Yªn(5)	140	0	Hå Man Thµnh	Hå Man Thµnh	30002	30210		30284	1;0	1;0	-1	-1		
 NhiÖm vô nhËp m«n Thóy Yªn(6)	141	0	Hå Man Thµnh	Sµi Hoµng Nhi	30002			30285&30287	1;0	1;0	-1	-1		
 T×m LiÖp Hé	142	0	Nh¹c BÊt QuÇn	LiÖp Hé	30161&30216			30289&30290	1;0	1;0	1	-1		
@@ -219,7 +219,7 @@ Thu thËp Minh Quang Gi¸p	216	1			30001	30285		30328&30367	1;0	1;0	-1	1
 L­¬ng S¬n H¶o H¸n	217	1			30001	30286		30327&30368	1;0	1;0	-1	1		
 Gi¸o huÊn C«n §å	218	1			30001	30287	30364	30325&30326	1;0	1;0	-1	1		
 Thu thËp NhÊt Nguyªn Phôc Thñy §¬n	219	1			30001	30288		30328&30367	1;0	1;0	-1	1		
-Tö Quang C¸c	220	1			30001	30289		30327&30368	1;0	1;0	-1	1		
+Purple Light Pavilion	220	1			30001	30289		30327&30368	1;0	1;0	-1	1		
 Tiªu diÖt Th­¬ng Viªn	221	1			30001	30290	30365	30325&30326	1;0	1;0	-1	1		
 Thu thËp B¸nh Bao ThÞt	222	1			30001	30291		30328&30367	1;0	1;0	-1	1		
 Th¸i H­ MËt Th¸m	223	1			30001	30292		30327&30368	1;0	1;0	-1	1		
@@ -233,20 +233,20 @@ Tiªu diÖt Miªu LÜnh Thæ Ty	230	1			30319	30300	30380	30373	1;0	1;0	-1	-1
 Tiªu diÖt Ba T­ Yªu C¬	231	1			30319	30301	30381	30374	1;0	1;0	-1	-1		
 Tiªu diÖt Oa Quèc §ao Kh¸ch	232	1			30319	30302	30382	30375	1;0	1;0	-1	-1		
 Tiªu diÖt Tú Bµ Tiªn Tö	233	1			30319	30303	30383	30376	1;0	1;0	-1	-1		
-Quay VÒ Chèn Cò	234	1			30319	30304&30305&30306	30384&30385&30386	30399	1;0	1;0	-1	-1		
-Quay VÒ Chèn Cò	235	1			30319	30307&30308&30309	30387&30388&30389	30399	1;0	1;0	-1	-1		
-Quay VÒ Chèn Cò	236	1			30319	30310&30311&30312	30390&30391&30392	30399	1;0	1;0	-1	-1		
-Quay VÒ Chèn Cò	237	1			30319	30313&30314&30315&30316	30393&30394&30395&30396	30399	1;0	1;0	-1	-1		
-Quay VÒ Chèn Cò	238	1			30319	30317&30318	30397&30398	30399	1;0	1;0	-1	-1		
-T×m §æng Giµ La	239	0	B¾c §Èu L·o Nh©n	§æng Giµ La	30341			30401	1;0	1;0	10	-1		
-Tiªu diÖt Xi Háa §ao Kh¸ch	240	0	§æng Giµ La	§æng Giµ La	30002	30321	30424	30402	1;0	1;0	10	-1		
-Tiªu diÖt Kh«i Lçi §éc Nh©n	241	0	§æng Giµ La	§æng Giµ La	30002	30322&30340	30436	30403	1;0	1;0	10	-1		
-T×m Th­¬ng ¦ng	242	0	§æng Giµ La	Th­¬ng ¦ng	30002			30404	1;0	1;0	10	-1		
+Return to the Old Place	234	1			30319	30304&30305&30306	30384&30385&30386	30399	1;0	1;0	-1	-1		
+Return to the Old Place	235	1			30319	30307&30308&30309	30387&30388&30389	30399	1;0	1;0	-1	-1		
+Return to the Old Place	236	1			30319	30310&30311&30312	30390&30391&30392	30399	1;0	1;0	-1	-1		
+Return to the Old Place	237	1			30319	30313&30314&30315&30316	30393&30394&30395&30396	30399	1;0	1;0	-1	-1		
+Return to the Old Place	238	1			30319	30317&30318	30397&30398	30399	1;0	1;0	-1	-1		
+T×m §æng Giµ La	239	0	B¾c §Èu L·o Nh©n	Dong Jia La	30341			30401	1;0	1;0	10	-1		
+Tiªu diÖt Xi Háa §ao Kh¸ch	240	0	Dong Jia La	Dong Jia La	30002	30321	30424	30402	1;0	1;0	10	-1		
+Tiªu diÖt Kh«i Lçi §éc Nh©n	241	0	Dong Jia La	Dong Jia La	30002	30322&30340	30436	30403	1;0	1;0	10	-1		
+T×m Th­¬ng ¦ng	242	0	Dong Jia La	Th­¬ng ¦ng	30002			30404	1;0	1;0	10	-1		
 T×m B¾c §Èu L·o Nh©n	243	0	Th­¬ng ¦ng	B¾c §Èu L·o Nh©n	30002			30405&30400	1;0	1;0	10	-1		
 Gi¶i cøu Th­¬ng ¦ng	244	0	B¾c §Èu L·o Nh©n	Th­¬ng ¦ng	30002			30406	1;0	1;0	10	-1		
 §¸nh b¹i Xi Háa Gi¸o Chñ	245	0	Th­¬ng ¦ng	Th­¬ng ¦ng	30002	30324	30425	30407	1;0	1;0	10	-1		
-Trë vÒ §¹i Lý	246	0	Th­¬ng ¦ng	§æng Giµ La	30002		30438	30408	1;0	1;0	10	-1		
-Tr¶ lêi B¾c §Èu L·o Nh©n	247	0	§æng Giµ La	B¾c §Èu L·o Nh©n	30002		30439	30409&30410&30437	1;0	1;0	10	-1		
+Trë vÒ §¹i Lý	246	0	Th­¬ng ¦ng	Dong Jia La	30002		30438	30408	1;0	1;0	10	-1		
+Tr¶ lêi B¾c §Èu L·o Nh©n	247	0	Dong Jia La	B¾c §Èu L·o Nh©n	30002		30439	30409&30410&30437	1;0	1;0	10	-1		
 T×m Xa Th¸i Qu©n	248	0	Nh¹c BÊt QuÇn	Xa Th¸i Qu©n	30341&30337			30415	1;0	1;0	10	-1		
 §¸nh b¹i H¾c Y Tr¸ng SÜ	249	0	Xa Th¸i Qu©n	Xa Th¸i Qu©n	30002	30326	30426	30416	1;0	1;0	10	-1		
 T×m Tèng Qu©n Tr­ëng Hé VÖ	250	0	Xa Th¸i Qu©n	Tèng qu©n tr­ëng hé vÖ	30002			30417	1;0	1;0	10	-1		
@@ -270,8 +270,8 @@ Thu thËp Ma KiÕm Tinh Ph¸ch	267	0	Háa Phông Tö	Háa Phông Tö	30002	30353		30450	1
 Tiªu diÖt Hoang Háa L­u Kim	268	0	Háa Phông Tö	Háa Phông Tö	30002	30354		30451&30454	1;0	1;0	10	-1		
 HuyÕt tÕ 2	269	0	Háa Phông Tö	Háa Phông Tö	30002	30355&30356		30452&30454	1;0	1;0	10	2;97;236;250		
 Thu thËp Tø Linh Ch©u	270	0	Háa Phông Tö	Yªu Hå	30002	30357&30358&30359&30360		30453	1;0	1;0	10	-1		
-Tin xÊu	271	0	Tr­ëng l·o B¸ch HiÓu Sinh	Tr­ëng l·o B¸ch HiÓu Sinh	30409			30480	3;50	3;50	10	-1		
-ñy th¸c träng tr¸ch	272	0	Tr­ëng l·o B¸ch HiÓu Sinh	TÞnh Th«ng	30002	30368	30464	30480	3;50	3;50	10	-1		
+Tin xÊu	271	0	Elder Bai Xiaosheng	Elder Bai Xiaosheng	30409			30480	3;50	3;50	10	-1		
+ñy th¸c träng tr¸ch	272	0	Elder Bai Xiaosheng	TÞnh Th«ng	30002	30368	30464	30480	3;50	3;50	10	-1		
 TËp kÝch Phôc Ng­u S¬n	273	0	TÞnh Th«ng	Thi thÓ ThiÕu L©m chÊp sù	30002			30480	3;50	3;50	10	-1		
 §ét kÝch ®ªm khuya	274	0	Thi thÓ ThiÕu L©m chÊp sù	Hµnh trang bÞ thÊt l¹c	30002			30480	3;50	3;50	10	-1		
 Kh«ng cã manh mèi	275	0	Hµnh trang bÞ thÊt l¹c	Du ChÊn Sinh	30002	30369	30465	30480	3;50	3;50	10	-1		
@@ -282,37 +282,37 @@ Bãng ng­êi thÊp tho¸ng	279	0	Thi thÓ ®Ö tö C¸i Bang	Tèng Nguyªn An	30002	30370&3
 Tróng ®éc	280	0	Tèng Nguyªn An	Tèng Nguyªn An	30002			30480	3;50	3;50	10	-1		
 Ph­¬ng ph¸p gi¶i ®éc	281	0	Tèng Nguyªn An	Tèng Nguyªn An	30002	30374&30375	30470	30480	3;50	3;50	10	-1		
 X«ng ®Õn Miªu C­¬ng	282	0	Tèng Nguyªn An	LiÔu T©n Tróc	30002			30480	3;50	3;50	10	-1		
-BiÕn hãa	283	0	LiÔu T©n Tróc	Téc tr­ëng Miªu LÜnh	30002			30480	3;50	3;50	10	-1		
-Mét tia hy väng	284	0	Téc tr­ëng Miªu LÜnh	NguyÖt Bµ Bµ	30002			30480	3;50	3;50	10	-1		
+BiÕn hãa	283	0	LiÔu T©n Tróc	Miaoling Chieftain	30002			30480	3;50	3;50	10	-1		
+Mét tia hy väng	284	0	Miaoling Chieftain	NguyÖt Bµ Bµ	30002			30480	3;50	3;50	10	-1		
 §éc gµ trèng	285	0	NguyÖt Bµ Bµ	NguyÖt Bµ Bµ	30002	30376	30472	30480	3;50	3;50	10	-1		
-Ch©n t­íng tróng ®éc	286	0	NguyÖt Bµ Bµ	Téc tr­ëng Miªu LÜnh	30002			30480	3;50	3;50	10	-1		
-H¾c y nh©n thÇn bÝ	287	0	Téc tr­ëng Miªu LÜnh	Tr­ëng l·o B¸ch HiÓu Sinh	30002			30480	3;50	3;50	10	-1		
-Thiªn ¢m Gi¸o ph¶n c«ng	288	0	Tr­ëng l·o B¸ch HiÓu Sinh	Tr­ëng l·o B¸ch HiÓu Sinh	30002			30480	3;50	3;50	10	-1		
-Nga My chi n¹n	289	0	Tr­ëng l·o B¸ch HiÓu Sinh	Nghi Thanh	30002			30480	3;50	3;50	10	-1		
+Ch©n t­íng tróng ®éc	286	0	NguyÖt Bµ Bµ	Miaoling Chieftain	30002			30480	3;50	3;50	10	-1		
+H¾c y nh©n thÇn bÝ	287	0	Miaoling Chieftain	Elder Bai Xiaosheng	30002			30480	3;50	3;50	10	-1		
+Thiªn ¢m Gi¸o ph¶n c«ng	288	0	Elder Bai Xiaosheng	Elder Bai Xiaosheng	30002			30480	3;50	3;50	10	-1		
+Nga My chi n¹n	289	0	Elder Bai Xiaosheng	Nghi Thanh	30002			30480	3;50	3;50	10	-1		
 Cøu viÖn khÈn cÊp	290	0	Nghi Thanh	Nga Mi tiÓu s­ muéi	30002			30480	3;50	3;50	10	-1		
 Thêi kh¾c nguy cÊp	291	0	Nga Mi tiÓu s­ muéi	Nga Mi ®¹i s­ tû	30002			30480	3;50	3;50	10	-1		
 Håi øc vÜnh h»ng	292	0	Nga Mi ®¹i s­ tû	Yªn Nh­	30002	30378&30379&30380&30385	30473&30474&30475	30480	3;50	3;50	10	-1		
-Toµn diÖn øng chiÕn	293	0	Yªn Nh­	Tr­ëng l·o B¸ch HiÓu Sinh	30002			30480	3;50	3;50	10	-1		
-Lùc chän cuèi cïng	294	0	Tr­ëng l·o B¸ch HiÓu Sinh	Tr­ëng l·o B¸ch HiÓu Sinh	30002	30381		30480&30481	3;50	3;50	10	-1		
-§i sø Thiªn Long Tù	295	0	Tr­ëng l·o B¸ch HiÓu Sinh	Thèng Qu©n Hoµng Téc §¹i Lý	30364&30365			30480	3;50	3;50	10	-1		
+Toµn diÖn øng chiÕn	293	0	Yªn Nh­	Elder Bai Xiaosheng	30002			30480	3;50	3;50	10	-1		
+Lùc chän cuèi cïng	294	0	Elder Bai Xiaosheng	Elder Bai Xiaosheng	30002	30381		30480&30481	3;50	3;50	10	-1		
+§i sø Thiªn Long Tù	295	0	Elder Bai Xiaosheng	Thèng Qu©n Hoµng Téc §¹i Lý	30364&30365			30480	3;50	3;50	10	-1		
 Sù quÊy nhiÔu cña Thiªn Long Tù	296	0	Thèng Qu©n Hoµng Téc §¹i Lý	Thèng Qu©n Hoµng Téc §¹i Lý	30002	30382	30476	30480	3;50	3;50	10	-1		
 B¸i kiÕn th©n v­¬ng	297	0	Thèng Qu©n Hoµng Téc §¹i Lý	§o¹n Khinh HÇu	30002			30480	3;50	3;50	10	-1		
 Cöu C«ng Tö	298	0	§o¹n Khinh HÇu	§oµn Ngäc Nhi	30002			30480	3;50	3;50	10	-1		
 ThiÖt h¹i cña Thiªn ¢m Gi¸o	299	0	§oµn Ngäc Nhi	§oµn Ngäc Nhi	30002	30383	30477	30480	3;50	3;50	10	-1		
 B¸i biÖt th©n v­¬ng	300	0	§oµn Ngäc Nhi	§o¹n Khinh HÇu	30002			30480	3;50	3;50	10	-1		
-Tin tèt	301	0	§o¹n Khinh HÇu	Tr­ëng l·o B¸ch HiÓu Sinh	30002			30480	3;50	3;50	10	-1		
-T©y H¹ chi chiÕn	302	0	Tr­ëng l·o B¸ch HiÓu Sinh	Lý §øc Dôc	30364&30366			30480	3;50	3;50	10	-1		
+Tin tèt	301	0	§o¹n Khinh HÇu	Elder Bai Xiaosheng	30002			30480	3;50	3;50	10	-1		
+T©y H¹ chi chiÕn	302	0	Elder Bai Xiaosheng	Lý §øc Dôc	30364&30366			30480	3;50	3;50	10	-1		
 Ngang nhiªn khiªu khÝch	303	0	Lý §øc Dôc	ThiÕu M«n Chñ	30002			30480	3;50	3;50	10	-1		
 Tho¸t khái ma ®éng	304	0	ThiÕu M«n Chñ	Lý §øc Dôc	30002		30478	30480&30482	3;50	3;50	10	-1		
 N¸o kÞch	305	0	Lý §øc Dôc	Lý §øc Dôc	30002			30480	3;50	3;50	10	-1		
-Tin tèt	306	0	Lý §øc Dôc	Tr­ëng l·o B¸ch HiÓu Sinh	30002			30480	3;50	3;50	10	-1		
-Th©n ®Õn Thæ Phån	307	0	Tr­ëng l·o B¸ch HiÓu Sinh	T¸n Phæ Kham Bè	30364&30367			30480	3;50	3;50	10	-1		
+Tin tèt	306	0	Lý §øc Dôc	Elder Bai Xiaosheng	30002			30480	3;50	3;50	10	-1		
+Th©n ®Õn Thæ Phån	307	0	Elder Bai Xiaosheng	T¸n Phæ Kham Bè	30364&30367			30480	3;50	3;50	10	-1		
 Thu håi v¨n th­	308	0	T¸n Phæ Kham Bè	T¸n Phæ Kham Bè	30002	30384	30479	30480	3;50	3;50	10	-1		
 Uyªn ­¬ng m¹ng khæ	309	0	T¸n Phæ Kham Bè	Lý Nguyªn Tr©n	30002			30480	3;50	3;50	10	-1		
 ChuyÓn lêi trong lßng	310	0	Lý Nguyªn Tr©n	Sa Ca Ninh Bè	30002			30480	3;50	3;50	10	-1		
 B¸i biÖt XÝch Ba	311	0	Sa Ca Ninh Bè	T¸n Phæ Kham Bè	30002			30480	3;50	3;50	10	-1		
-Tin tèt	312	0	T¸n Phæ Kham Bè	Tr­ëng l·o B¸ch HiÓu Sinh	30002			30480	3;50	3;50	10	-1		
-T×m T¸n Phæ Kham Bè Quèc V­¬ng	313	0	Tr­ëng l·o B¸ch HiÓu Sinh	T¸n Phæ Kham Bè Quèc V­¬ng	30386			30486	3;50	3;50	10	-1		
+Tin tèt	312	0	T¸n Phæ Kham Bè	Elder Bai Xiaosheng	30002			30480	3;50	3;50	10	-1		
+T×m T¸n Phæ Kham Bè Quèc V­¬ng	313	0	Elder Bai Xiaosheng	T¸n Phæ Kham Bè Quèc V­¬ng	30386			30486	3;50	3;50	10	-1		
 Tiªu diÖt Bé Téc Ph¶n Lo¹n	314	0	T¸n Phæ Kham Bè Quèc V­¬ng	T¸n Phæ Kham Bè Quèc V­¬ng	30002	30387	30511	30487	3;50	3;50	10	2;1;30370;1		
 Thu thËp BÝch Ngäc Linh Lung	315	0	T¸n Phæ Kham Bè Quèc V­¬ng	Lý §øc Dùc Quèc V­¬ng	30002	30388		30488	3;50	3;50	10	2;1;30370;2		
 Thu thËp Tiªn Ngäc Linh Hoµn	316	0	Lý §øc Dùc Quèc V­¬ng	Lý Nguyªn Tr©n C«ng Chóa	30002	30389		30489	3;50	3;50	10	2;1;30370;4		
@@ -320,36 +320,36 @@ Håi b¸o T¸n Phæ Kham Bè Quèc V­¬ng	317	0	Lý Nguyªn Tr©n C«ng Chóa	T¸n Phæ Kham B
 T×m §oµn Khinh HÇu Quèc V­¬ng	318	0	T¸n Phæ Kham Bè Quèc V­¬ng	§oµn Khinh HÇu Quèc V­¬ng	30002			30491	3;50	3;50	10	-1		
 Tiªu diÖt Ph¶n Qu©n Hoµng Téc	319	0	§oµn Khinh HÇu Quèc V­¬ng	§oµn Khinh HÇu Quèc V­¬ng	30002	30390	30512	30492	3;50	3;50	10	2;1;30370;1		
 T×m §oµn Ngäc Nhi C«ng Chóa	320	0	§oµn Khinh HÇu Quèc V­¬ng	§oµn Ngäc Nhi C«ng Chóa	30002			30493	3;50	3;50	10	-1		
-Thu thËp Kim Hoa	321	0	§oµn Ngäc Nhi C«ng Chóa	Sa Ca Ninh Bè V­¬ng Tö	30002	30391		30494	3;50	3;50	10	2;1;30370;4		
+Collect Golden Flower	321	0	§oµn Ngäc Nhi C«ng Chóa	Sa Ca Ninh Bè V­¬ng Tö	30002	30391		30494	3;50	3;50	10	2;1;30370;4		
 Håi b¸o §oµn Ngäc Nhi C«ng Chóa	322	0	Sa Ca Ninh Bè V­¬ng Tö	§oµn Ngäc Nhi C«ng Chóa	30002			30495	3;50	3;50	10	-1		
-Håi b¸o B¸ch HiÓu Sinh	323	0	§oµn Ngäc Nhi C«ng Chóa	Tr­ëng l·o B¸ch HiÓu Sinh	30002			30496	3;50	3;50	10	-1		
-Tiªu diÖt kÎ ®Þch	324	0	Tr­ëng l·o B¸ch HiÓu Sinh	Tr­ëng l·o B¸ch HiÓu Sinh	30002	30392&30393	30513&30514	30497	3;50	3;50	10	2;1;30370;1		
-Thu thËp Néi C«ng T©m Kinh	325	0	Tr­ëng l·o B¸ch HiÓu Sinh	Sa Ca Ninh Bè V­¬ng Tö	30002	30394		30498	3;50	3;50	10	2;1;30370;4		
+Håi b¸o B¸ch HiÓu Sinh	323	0	§oµn Ngäc Nhi C«ng Chóa	Elder Bai Xiaosheng	30002			30496	3;50	3;50	10	-1		
+Tiªu diÖt kÎ ®Þch	324	0	Elder Bai Xiaosheng	Elder Bai Xiaosheng	30002	30392&30393	30513&30514	30497	3;50	3;50	10	2;1;30370;1		
+Thu thËp Néi C«ng T©m Kinh	325	0	Elder Bai Xiaosheng	Sa Ca Ninh Bè V­¬ng Tö	30002	30394		30498	3;50	3;50	10	2;1;30370;4		
 T×nh hiÓu t×nh h×nh	326	0	Sa Ca Ninh Bè V­¬ng Tö	§oµn Ngäc Nhi C«ng Chóa	30002			30499	3;50	3;50	10	-1		
 Thu thËp Tæ YÕn B¹ch TuyÕt	327	0	§oµn Ngäc Nhi C«ng Chóa	Sa Ca Ninh Bè V­¬ng Tö	30002	30395		30500	3;50	3;50	10	2;1;30370;2		
 §­a th­	328	0	Sa Ca Ninh Bè V­¬ng Tö	Lý §øc Dùc Quèc V­¬ng	30002	30396	30483	30501	3;50	3;50	10	-1		
-TÆng quµ	329	0	Lý §øc Dùc Quèc V­¬ng	§oµn Khinh HÇu Quèc V­¬ng	30002	30397		30502	3;50	3;50	10	2;1;30370;4		
-Håi øc	330	0	§oµn Khinh HÇu Quèc V­¬ng	Tr­ëng l·o B¸ch HiÓu Sinh	30002			30503	3;50	3;50	10	-1		
-Thu thËp M¶nh B¶n §å-Tr¸i	331	0	Tr­ëng l·o B¸ch HiÓu Sinh	Tr­ëng l·o B¸ch HiÓu Sinh	30002	30398		30504	3;50	3;50	10	2;1;30370;2		
-Thu thËp M¶nh B¶n §å-Ph¶i	332	0	Tr­ëng l·o B¸ch HiÓu Sinh	Tr­ëng l·o B¸ch HiÓu Sinh	30002	30399		30505	3;50	3;50	10	2;1;30370;2		
-Thu thËp Ngò Hµnh T©m Hån §¬n	333	0	Tr­ëng l·o B¸ch HiÓu Sinh	Tr­ëng l·o B¸ch HiÓu Sinh	30002	30400&30401&30402&30403&30404		30506	3;50	3;50	10	2;1;30370;4		
-ThÝ luyÖn	334	0	Tr­ëng l·o B¸ch HiÓu Sinh	Tr­ëng l·o B¸ch HiÓu Sinh	30002	30405		30507	3;50	3;50	10	2;1;30370;2		
-Thiªn ¢m LÖnh Bµi	335	0	Tr­ëng l·o B¸ch HiÓu Sinh	Tr­ëng l·o B¸ch HiÓu Sinh	30002	30406		30508&30484	3;50	3;50	10	2;1;30370;4		
-Thiªn ¢m Gi¸o Thñ M«n Nh©n	336	0	Tr­ëng l·o B¸ch HiÓu Sinh	B¸ch HiÓu Sinh Tr­ëng L·o	30002			30509	3;50	3;50	10	-1		
+Give gift	329	0	Lý §øc Dùc Quèc V­¬ng	§oµn Khinh HÇu Quèc V­¬ng	30002	30397		30502	3;50	3;50	10	2;1;30370;4		
+Håi øc	330	0	§oµn Khinh HÇu Quèc V­¬ng	Elder Bai Xiaosheng	30002			30503	3;50	3;50	10	-1		
+Thu thËp M¶nh B¶n §å-Tr¸i	331	0	Elder Bai Xiaosheng	Elder Bai Xiaosheng	30002	30398		30504	3;50	3;50	10	2;1;30370;2		
+Thu thËp M¶nh B¶n §å-Ph¶i	332	0	Elder Bai Xiaosheng	Elder Bai Xiaosheng	30002	30399		30505	3;50	3;50	10	2;1;30370;2		
+Thu thËp Ngò Hµnh T©m Hån §¬n	333	0	Elder Bai Xiaosheng	Elder Bai Xiaosheng	30002	30400&30401&30402&30403&30404		30506	3;50	3;50	10	2;1;30370;4		
+Trial	334	0	Elder Bai Xiaosheng	Elder Bai Xiaosheng	30002	30405		30507	3;50	3;50	10	2;1;30370;2		
+Thiªn ¢m LÖnh Bµi	335	0	Elder Bai Xiaosheng	Elder Bai Xiaosheng	30002	30406		30508&30484	3;50	3;50	10	2;1;30370;4		
+Thiªn ¢m Gi¸o Thñ M«n Nh©n	336	0	Elder Bai Xiaosheng	B¸ch HiÓu Sinh Tr­ëng L·o	30002			30509	3;50	3;50	10	-1		
 Tiªu diÖt L«i §­êng Chñ	337	0	B¸ch HiÓu Sinh Tr­ëng L·o	B¸ch HiÓu Sinh Tr­ëng L·o	30002	30407&30408	30515&30516	30510&30485	3;50	3;50	10	2;1;30370;4		
-B¸i kiÕn B¸ch HiÓu Sinh	338	0	Nh¹c BÊt QuÇn	Tr­ëng l·o B¸ch HiÓu Sinh	30434&30410			30517	1;0	1;0	10	-1		
-ThÕ Lùc Ba Phe Héi Anh Hïng	339	0	Tr­ëng l·o B¸ch HiÓu Sinh	Tr­ëng l·o B¸ch HiÓu Sinh	30002	30411		30518	1;0	1;0	10	-1		
-Khiªu chiÕn ¢n O¸n §µi	340	0	Tr­ëng l·o B¸ch HiÓu Sinh	Tr­ëng l·o B¸ch HiÓu Sinh	30002	30412		30519	1;0	1;0	10	-1		
-QuyÕt ChiÕn ThÕ Lùc Ba Phe-DiÔn Vâ ChiÕn	341	0	Tr­ëng l·o B¸ch HiÓu Sinh	Tr­ëng l·o B¸ch HiÓu Sinh	30002	30413		30520	1;0	1;0	10	-1		
-Ch©n Nguyªn Tiªn §¬n	342	0	Tr­ëng l·o B¸ch HiÓu Sinh	Nh¹c BÊt QuÇn	30002			30521&30522	1;0	1;0	10	-1		
+B¸i kiÕn B¸ch HiÓu Sinh	338	0	Nh¹c BÊt QuÇn	Elder Bai Xiaosheng	30434&30410			30517	1;0	1;0	10	-1		
+ThÕ Lùc Ba Phe Héi Anh Hïng	339	0	Elder Bai Xiaosheng	Elder Bai Xiaosheng	30002	30411		30518	1;0	1;0	10	-1		
+Khiªu chiÕn ¢n O¸n §µi	340	0	Elder Bai Xiaosheng	Elder Bai Xiaosheng	30002	30412		30519	1;0	1;0	10	-1		
+QuyÕt ChiÕn ThÕ Lùc Ba Phe-DiÔn Vâ ChiÕn	341	0	Elder Bai Xiaosheng	Elder Bai Xiaosheng	30002	30413		30520	1;0	1;0	10	-1		
+Ch©n Nguyªn Tiªn §¬n	342	0	Elder Bai Xiaosheng	Nh¹c BÊt QuÇn	30002			30521&30522	1;0	1;0	10	-1		
 Tiªn ®¬n trî lùc hãa thiªn kiÕp	343	0	Nh¹c BÊt QuÇn	Nh¹c BÊt QuÇn	30002	30414&30434		30523&30524	1;0	1;0	10	-1		
 Míi ®Õn	344	0	Thiªn Kh¶i-Tiªu §Çu	Thiªn Kh¶i-Tiªu §Çu	30001			30531	1;0	1;0	10	-1		
-§¹i diªn tø ph­¬ng	345	0	Thiªn Kh¶i-Tiªu §Çu	Tr­ëng l·o B¸ch HiÓu Sinh	30002			30531	1;0	1;0	10	-1		
-Håi b¸o tiªu ®Çu	346	0	Tr­ëng l·o B¸ch HiÓu Sinh	Thiªn Kh¶i-Tiªu §Çu	30002			30531	1;0	1;0	10	-1		
+§¹i diªn tø ph­¬ng	345	0	Thiªn Kh¶i-Tiªu §Çu	Elder Bai Xiaosheng	30002			30531	1;0	1;0	10	-1		
+Håi b¸o tiªu ®Çu	346	0	Elder Bai Xiaosheng	Thiªn Kh¶i-Tiªu §Çu	30002			30531	1;0	1;0	10	-1		
 Gië thñ ®o¹n	347	0	Thiªn Kh¶i-Tiªu §Çu	Thiªn Kh¶i-Tiªu §Çu	30002	30415	30525	30531	1;0	1;0	10	-1		
 Chç ®øng	348	0	Thiªn Kh¶i-Tiªu §Çu	Thiªn Kh¶i-Tiªu §Çu	30002			30526	1;0	1;0	10	-1		
-Th¸m thÝnh	349	0	§¹p v©n-Lôc PhiÕn M«n	Tr­ëng l·o B¸ch HiÓu Sinh	30001			30531	1;0	1;0	10	-1		
-Håi b¸o	350	0	Tr­ëng l·o B¸ch HiÓu Sinh	§¹p v©n-Lôc PhiÕn M«n	30002	30416	30527	30531	1;0	1;0	10	-1		
+Th¸m thÝnh	349	0	§¹p v©n-Lôc PhiÕn M«n	Elder Bai Xiaosheng	30001			30531	1;0	1;0	10	-1		
+Håi b¸o	350	0	Elder Bai Xiaosheng	§¹p v©n-Lôc PhiÕn M«n	30002	30416	30527	30531	1;0	1;0	10	-1		
 B¾t gi÷	351	0	§¹p v©n-Lôc PhiÕn M«n	§¹p v©n-Lôc PhiÕn M«n	30002	30417	30528&30529	30531	1;0	1;0	10	-1		
 TiÕp tôc	352	0	§¹p v©n-Lôc PhiÕn M«n	§¹p v©n-Lôc PhiÕn M«n	30002			30530	1;0	1;0	10	-1		
 Thiªn lý tÇm ph­¬ng	353	0	L©m Gia Thµnh-ng­êi giµu	L©m Gia Thµnh-ng­êi giµu	30001	30418		30531	1;0	1;0	10	-1		
@@ -413,26 +413,26 @@ NhiÖm vô nhËp m«n Minh gi¸o (5)	410	0	T­ Hµnh Ph­¬ng	LÖ Thiªn NhuËn	30002	30457	
 NhiÖm vô nhËp m«n Minh gi¸o (6)	411	0	LÖ Thiªn NhuËn	§Æng Nguyªn GÝ¸c	30002	30460&30461&30462&30463		30285	3;50	3;50	-1	-1		
 NhiÖm vô nhËp m«n Minh gi¸o (7)	412	0	§Æng Nguyªn GÝ¸c	Ph­¬ng L¹p	30002			30278	3;50	3;50	-1	-1		
 NhiÖm vô nhËp m«n Minh gi¸o (8)	413	0	Ph­¬ng L¹p	Ph­¬ng L¹p	30002			30279&30633	3;50	3;50	-1	-1		
-Th¨m dß tung tøc	414	0	Tr­ëng l·o B¸ch HiÓu Sinh	Tr­ëng l·o B¸ch HiÓu Sinh	30409	30464	30628	30581	1;0	1;0	10	-1		
-LÊy l¹i vËt phÈm	415	0	Tr­ëng l·o B¸ch HiÓu Sinh	Tr­ëng l·o B¸ch HiÓu Sinh	30002	30472&30473&30474&30475&30476	30629	30581	1;0	5;50	10	-1		
-S¬ nhËp Ngò hµnh	416	0	Tr­ëng l·o B¸ch HiÓu Sinh	Minh S­ Phã	30002			30581	1;0	1;0	10	-1		
-C¸ch söa ch÷a	417	0	Minh S­ Phã	Chu ThiÖn Nh©n	30002			30581	1;0	1;0	10	-1		
-§o¹t Kim Tinh	418	0	Chu ThiÖn Nh©n	Minh S­ Phã	30002	30466		30572	1;0	1;10	10	-1		
-§Õn Thµnh §«	419	0	Minh S­ Phã	CÈm n­¬ng	30002			30581	1;0	1;0	10	-1		
+Th¨m dß tung tøc	414	0	Elder Bai Xiaosheng	Elder Bai Xiaosheng	30409	30464	30628	30581	1;0	1;0	10	-1		
+LÊy l¹i vËt phÈm	415	0	Elder Bai Xiaosheng	Elder Bai Xiaosheng	30002	30472&30473&30474&30475&30476	30629	30581	1;0	5;50	10	-1		
+S¬ nhËp Ngò hµnh	416	0	Elder Bai Xiaosheng	Deputy Instructor	30002			30581	1;0	1;0	10	-1		
+C¸ch söa ch÷a	417	0	Deputy Instructor	Chu ThiÖn Nh©n	30002			30581	1;0	1;0	10	-1		
+Doat Kim Tinh	418	0	Chu ThiÖn Nh©n	Deputy Instructor	30002	30466		30572	1;0	1;10	10	-1		
+§Õn Thµnh §«	419	0	Deputy Instructor	CÈm n­¬ng	30002			30581	1;0	1;0	10	-1		
 C¸ch söa ch÷a 2	420	0	CÈm n­¬ng	DiÖp L·o	30002			30581	1;0	1;0	10	-1		
-Cã ®­îc Méc Tinh	421	0	DiÖp L·o	DiÖp L·o	30002	30467		30573&30581	1;0	1;10	10	-1		
+Obtained Moc Tinh	421	0	DiÖp L·o	DiÖp L·o	30002	30467		30573&30581	1;0	1;10	10	-1		
 Trë l¹i Thµnh §«	422	0	DiÖp L·o	CÈm n­¬ng	30002	30468		30574	1;0	1;10	10	-1		
-§Õn §¹i Lý	423	0	CÈm n­¬ng	Tö Quyªn	30002			30581	1;0	1;0	10	-1		
-C¸ch söa ch÷a 3	424	0	Tö Quyªn	Tö Quyªn	30002	30469		30575	1;0	1;10	10	-1		
-Trë vÒ T­¬ng D­¬ng	425	0	Tö Quyªn	Thî rÌn L­u	30002			30581	1;0	1;0	10	-1		
-C¸ch söa ch÷a 4	426	0	Thî rÌn L­u	Thî rÌn L­u	30002	30470&30471		30576&30577	1;0	2;20	10	-1		
+§Õn §¹i Lý	423	0	CÈm n­¬ng	Zijuan	30002			30581	1;0	1;0	10	-1		
+Repair method 3	424	0	Zijuan	Zijuan	30002	30469		30575	1;0	1;10	10	-1		
+Trë vÒ T­¬ng D­¬ng	425	0	Zijuan	Thî rÌn L­u	30002			30581	1;0	1;0	10	-1		
+Repair method 4	426	0	Thî rÌn L­u	Thî rÌn L­u	30002	30470&30471		30576&30577	1;0	2;20	10	-1		
 T×m Thiªn c«ng x¶o thñ	427	0	Thî rÌn L­u	Thiªn c«ng x¶o thñ L­u Thi Anh	30002			30581	1;0	1;0	10	-1		
 C¸ch t¨ng phÈm chÊt	428	0	Thiªn c«ng x¶o thñ L­u Thi Anh	Thiªn c«ng x¶o thñ L­u Thi Anh	30002			30578	1;0	1;10	10	-1		
 C¸ch c­êng hãa	429	0	Thiªn c«ng x¶o thñ L­u Thi Anh	Thiªn c«ng x¶o thñ L­u Thi Anh	30002			30579&30580	1;0	2;20	10	-1		
-Phong V©n Kinh BiÕn	430	0	Tr­ëng l·o B¸ch HiÓu Sinh	Tr­ëng l·o B¸ch HiÓu Sinh	30477	30478		30582	1;0	1;0	10	2;97;236;6		
-§Õn tiÒn tuyÕn	431	0	Tr­ëng l·o B¸ch HiÓu Sinh	Hoa Th¸nh L¹c Phi	30002			30583	1;0	1;0	10	-1		
+Phong V©n Kinh BiÕn	430	0	Elder Bai Xiaosheng	Elder Bai Xiaosheng	30477	30478		30582	1;0	1;0	10	2;97;236;6		
+§Õn tiÒn tuyÕn	431	0	Elder Bai Xiaosheng	Hoa Th¸nh L¹c Phi	30002			30583	1;0	1;0	10	-1		
 ChuÈn bÞ binh khÝ	432	0	Hoa Th¸nh L¹c Phi	M¹c §¹i	30002			30584	1;0	1;0	10	-1		
-M¹c §¹i khÈn cÇu	433	0	M¹c §¹i	M¹c §¹i	30002	30479		30585	1;0	1;0	10	-1		
+Mac Dai's urgent plea	433	0	M¹c §¹i	M¹c §¹i	30002	30479		30585	1;0	1;0	10	-1		
 NhËn ®­îc binh khÝ (1)	434	0	M¹c §¹i	M¹c §¹i	30002			30586&30619	1;10	1;10	10	-1		
 §Õn Thµnh §«	435	0	M¹c §¹i	M¹c NhÞ	30002			30587	1;0	1;0	10	-1		
 §o¹t l¹i Bóa	436	0	M¹c NhÞ	M¹c NhÞ	30002	30484	30620	30588	1;10	1;10	10	2;97;236;14		
@@ -442,21 +442,21 @@ T×m hiÓu Binh KhÝ Sö	439	0	M¹c Tam	M¹c Tam	30002			30591&30622	1;10	1;10	10	-1
 Håi b¸o L¹c Phi	440	0	M¹c Tam	Hoa Th¸nh L¹c Phi	30002	30480&30481&30482		30592	1;0	1;0	10	-1		
 M­în l­¬ng th¶o (1)	441	0	Hoa Th¸nh L¹c Phi	Th¸i thó	30002			30593	1;0	1;0	10	-1		
 Nçi lo Th¸i Thó	442	0	Th¸i thó	Th¸i thó	30002			30594	1;0	1;0	10	-1		
-§iÒu tra hiÖn tr­êng	443	0	Th¸i thó	Xa phu Xe vËn l­¬ng	30002			30595	1;0	1;0	10	-1		
-Hái xa phu	444	0	Xa phu Xe vËn l­¬ng	V©n Du §¹o Nh©n	30002			30596	1;0	1;0	10	-1		
+§iÒu tra hiÖn tr­êng	443	0	Th¸i thó	Carter Supply Cart	30002			30595	1;0	1;0	10	-1		
+Hái xa phu	444	0	Carter Supply Cart	V©n Du §¹o Nh©n	30002			30596	1;0	1;0	10	-1		
 §­îc ph¸p khÝ	445	0	V©n Du §¹o Nh©n	V©n Du §¹o Nh©n	30002	30504		30597&30632	1;0	1;0	10	-1		
-DiÖt ¸c quû	446	0	V©n Du §¹o Nh©n	Th¸i thó	30002	30486&30504		30598	1;0	1;0	-1	2;1;30370;2		
+Slay the evil demon	446	0	V©n Du §¹o Nh©n	Th¸i thó	30002	30486&30504		30598	1;0	1;0	-1	2;1;30370;2		
 Håi b¸o Th¸i Thó	447	0	Th¸i thó	Th¸i thó	30002			30599&30623	1;10	1;10	10	-1		
 M­în l­¬ng th¶o (2)	448	0	Th¸i thó	Binh Bé ThÞ Lang	30002			30600	1;0	1;0	10	-1		
 §îi lÖnh Thõa T­íng	449	0	Binh Bé ThÞ Lang	TriÖu Phæ	30002			30601	1;0	1;0	10	-1		
 Thö th¸ch cña Thõa T­íng	450	0	TriÖu Phæ	TriÖu Phæ	30002	30488		30602	1;0	1;0	10	2;1;30370;1		
 Håi b¸o Binh Bé ThÞ Lang	451	0	TriÖu Phæ	Binh Bé ThÞ Lang	30002	30489	30624	30603&30623	1;10	1;10	10	-1		
 M­în l­¬ng th¶o (3)	452	0	Binh Bé ThÞ Lang	Tæng binh	30002			30604	1;0	1;0	10	-1		
-Uèng 3 ly	453	0	Tæng binh	Tæng binh	30002	30490	30625	30605&30623	1;10	1;10	10	-1		
+Drink 3 cups	453	0	Tæng binh	Tæng binh	30002	30490	30625	30605&30623	1;10	1;10	10	-1		
 Quay vÒ phôc mÖnh	454	0	Tæng binh	Hoa Th¸nh L¹c Phi	30002	30487		30606	1;0	1;0	10	-1		
-§­îc vËt t­ V¨n Søc	455	0	Hoa Th¸nh L¹c Phi	Tr­ëng l·o B¸ch HiÓu Sinh	30002			30607	1;0	1;0	10	-1		
-Th­ §iÒu §éng VËt T­	456	0	Tr­ëng l·o B¸ch HiÓu Sinh	Tr­ëng l·o B¸ch HiÓu Sinh	30002	30491		30608&30626	1;10	1;10	10	2;1;30370;3		
-Quay vÒ phôc mÖnh	457	0	Tr­ëng l·o B¸ch HiÓu Sinh	Hoa Th¸nh L¹c Phi	30002	30492		30609	1;0	1;0	10	-1		
+§­îc vËt t­ V¨n Søc	455	0	Hoa Th¸nh L¹c Phi	Elder Bai Xiaosheng	30002			30607	1;0	1;0	10	-1		
+Th­ §iÒu §éng VËt T­	456	0	Elder Bai Xiaosheng	Elder Bai Xiaosheng	30002	30491		30608&30626	1;10	1;10	10	2;1;30370;3		
+Quay vÒ phôc mÖnh	457	0	Elder Bai Xiaosheng	Hoa Th¸nh L¹c Phi	30002	30492		30609	1;0	1;0	10	-1		
 Th¨m dß lËp tr­êng	458	0	Hoa Th¸nh L¹c Phi	Ph­¬ng L¹p	30002			30610	1;0	1;0	10	-1		
 Thö th¸ch cña gi¸o chñ	459	0	Ph­¬ng L¹p	Ph­¬ng L¹p	30002	30493&30494	30630&30631	30611	1;0	1;0	10	2;97;236;9		
 LËp tr­êng Minh gi¸o	460	0	Ph­¬ng L¹p	Ph­¬ng L¹p	30002	30505		30612	1;0	1;0	10	-1		
@@ -524,7 +524,7 @@ Xu©n míi tÇm b¶o-Tæ MÉu Lôc Giíi ChØ	521	1				30571		30670&30672	1;0	1;0	10	-1
 Xu©n míi tÇm b¶o-Thiªn Nguyªn Th¹ch-Trung	522	1				30572		30670&30672	1;0	1;0	10	-1		
 Xu©n míi tÇm b¶o-§Þa Nguyªn Th¹ch-Trung	523	1				30573		30670&30672	1;0	1;0	10	-1		
 Xu©n míi tÇm b¶o-Nh©n Nguyªn Th¹ch-Trung	524	1				30574		30670&30672	1;0	1;0	10	-1		
-Nguy hiÓm chùc chê	525	0	Tr­ëng l·o B¸ch HiÓu Sinh	CÊm qu©n	30575&30411		30690	30696	1;0	1;0	10	-1		
+Nguy hiÓm chùc chê	525	0	Elder Bai Xiaosheng	CÊm qu©n	30575&30411		30690	30696	1;0	1;0	10	-1		
 û m¹nh hiÕp yÕu	526	0	CÊm qu©n	CÊm qu©n	30002	30576		30697	1;0	1;0	10	-1		
 LÇn ®Çu gÆp Thèng LÜnh CÊm Qu©n	527	0	CÊm qu©n	Thèng LÜnh CÊm Qu©n	30002			30698	1;0	1;0	10	-1		
 B¾t ®Çu ®iÒu tra	528	0	Thèng LÜnh CÊm Qu©n	D­¬ng NghiÖp	30002			30699	1;0	1;0	10	-1		
@@ -575,7 +575,7 @@ DiÖt T­îng Ng­êi (Viªm Th­îng)	572	0	Vui mõng	Vui mõng		30599	30748	30743&30755	
 DiÖt T­îng Ng­êi (Khóc Trùc)	573	0	Vui mõng	Vui mõng		30600	30749	30743&30756	1;0	1;10	-1	-1		
 DiÖt T­îng Ng­êi (Tßng C¸ch)	574	0	Vui mõng	Vui mõng		30601	30750	30743&30757	1;0	1;10	-1	-1		
 DiÖt T­îng Ng­êi (Gi¸ S¾c)	575	0	Vui mõng	Vui mõng		30602	30751	30743&30758	1;0	1;10	-1	-1		
-Cùc H¹n Vâ §¹o	576	0	Tr­ëng l·o B¸ch HiÓu Sinh	ThÇy bãi	30614			30762	1;0	1;0	-1	-1		
+Cùc H¹n Vâ §¹o	576	0	Elder Bai Xiaosheng	ThÇy bãi	30614			30762	1;0	1;0	-1	-1		
 Bãi QuÎ	577	0	ThÇy bãi	ThÇy bãi	30002			30762	1;0	1;0	-1	-1		
 T×m Ng­êi	578	0	ThÇy bãi	Kim Kha	30002			30762	1;0	1;0	-1	-1		
 V­ît ¶i	579	0	Kim Kha	Kim Kha	30002	30604&30605		30762	1;0	1;0	-1	2;95;204;1		
@@ -583,18 +583,18 @@ RÌn luyÖn	580	0	Kim Kha	Kim Kha	30002	30607&30608&30609		30762	1;0	1;0	-1	2;95;2
 §å Ma	581	0	Kim Kha	Kim Kha	30002	30610		30762	1;0	1;0	-1	2;95;204;1		
 Tr¶m Tiªn	582	0	Kim Kha	Kim Kha	30002	30611		30762	1;0	1;0	-1	2;95;204;1		
 T×m Lß	583	0	Kim Kha	Kim Kha	30002	30612		30762	1;0	1;0	-1	2;95;204;1		
-ChÕ thuèc	584	0	Kim Kha	Kim Kha	30002	30613	30761	30759	2;0	2;0	-1	-1		
-Ban Mai	585	0	Kim Kha	Tr­ëng l·o B¸ch HiÓu Sinh	30002			30759	1;0	1;0	-1	-1		
-§¹p Xu©n	586	0		X¶o n÷	30622&30213			30763	1;0	1;0				
-T×nh Cê (Nh©n vËt nam nhËn)	587	0	X¶o n÷	X¶o n÷	30002	30616		30763	1;0	1;0	10	-1		
-§o¹t S¸ch Thanh ¢m	588	0	X¶o n÷	X¶o n÷	30002	30618		30763	1;0	1;0	10	-1		
-T×m S¸ch §«ng H¶i	589	0	X¶o n÷	X¶o n÷	30002	30620		30763&30772	1;0	1;0	10	-1		
-§¹p Xu©n	590	0		X¶o n÷	30622&30214			30763	1;0	1;0				
-T×nh Cê (Nh©n vËt n÷ nhËn)	591	0	X¶o n÷	X¶o n÷	30002	30617		30763	1;0	1;0	10	-1		
-§o¹t S¸ch Thanh ¢m	592	0	X¶o n÷	X¶o n÷	30002	30619		30763	1;0	1;0	10	-1		
-T×m S¸ch §«ng H¶i	593	0	X¶o n÷	X¶o n÷	30002	30621		30763&30773	1;0	1;0	10	-1		
-Qu¸n Trä Long M«n (1)	594	0	Th­¬ng nh©n Ba T­	TiÓu Thóy				30777	1;0	1;0	-1	2;97;236;10		
-Qu¸n Trä Long M«n (2)	595	0	TiÓu Thóy	D­¬ng Chiªu	30002			30777	1;0	1;0	-1	2;97;236;10		
+Medicine Crafting	584	0	Kim Kha	Kim Kha	30002	30613	30761	30759	2;0	2;0	-1	-1		
+Ban Mai	585	0	Kim Kha	Elder Bai Xiaosheng	30002			30759	1;0	1;0	-1	-1		
+§¹p Xu©n	586	0		Cunning Woman	30622&30213			30763	1;0	1;0				
+T×nh Cê (Nh©n vËt nam nhËn)	587	0	Cunning Woman	Cunning Woman	30002	30616		30763	1;0	1;0	10	-1		
+§o¹t S¸ch Thanh ¢m	588	0	Cunning Woman	Cunning Woman	30002	30618		30763	1;0	1;0	10	-1		
+T×m S¸ch §«ng H¶i	589	0	Cunning Woman	Cunning Woman	30002	30620		30763&30772	1;0	1;0	10	-1		
+§¹p Xu©n	590	0		Cunning Woman	30622&30214			30763	1;0	1;0				
+T×nh Cê (Nh©n vËt n÷ nhËn)	591	0	Cunning Woman	Cunning Woman	30002	30617		30763	1;0	1;0	10	-1		
+§o¹t S¸ch Thanh ¢m	592	0	Cunning Woman	Cunning Woman	30002	30619		30763	1;0	1;0	10	-1		
+T×m S¸ch §«ng H¶i	593	0	Cunning Woman	Cunning Woman	30002	30621		30763&30773	1;0	1;0	10	-1		
+Qu¸n Trä Long M«n (1)	594	0	Th­¬ng nh©n Ba T­	Tieu Thuy				30777	1;0	1;0	-1	2;97;236;10		
+Qu¸n Trä Long M«n (2)	595	0	Tieu Thuy	D­¬ng Chiªu	30002			30777	1;0	1;0	-1	2;97;236;10		
 Qu¸n Trä Long M«n (3)	596	0	D­¬ng Chiªu	D­¬ng Chiªu	30002	30623	30774	30777	1;0	1;0	-1	2;97;236;10		
 Qu¸n Trä Long M«n (4)	597	0	D­¬ng Chiªu	TiÓu nhÞ	30002			30777	1;0	1;0	-1	2;97;236;10		
 Qu¸n Trä Long M«n (5)	598	0	TiÓu nhÞ	TiÓu nhÞ	30002	30624		30777	1;0	1;0	-1	2;97;236;10		
@@ -652,32 +652,32 @@ Th¸m HiÓm 3 (TuÇn)	649	0		T«n NhÞ Liªn	30702	30672		30798	1;0	1;0	-1	1000000
 Th¸m HiÓm 4 (TuÇn)	650	0		T«n NhÞ Liªn	30702	30673		30798	1;0	1;0	-1	1000000		
 Th¸m HiÓm 5 (TuÇn)	651	0		T«n NhÞ Liªn	30702	30674		30798	1;0	1;0	-1	1000000		
 Th¸m HiÓm 6 (TuÇn)	652	0		T«n NhÞ Liªn	30702	30675		30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 1 (Ngµy)	653	0		Lý Hoa	30702	30676	30799	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 2 (Ngµy)	654	0		Lý Hoa	30702	30677	30800	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 3 (Ngµy)	655	0		Lý Hoa	30702	30678	30801	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 4 (Ngµy)	656	0		Lý Hoa	30702	30679	30802	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 5 (Ngµy)	657	0		Lý Hoa	30702	30680	30803	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 6 (Ngµy)	658	0		Lý Hoa	30702	30681	30804	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 7 (Ngµy)	659	0		Lý Hoa	30702	30682	30805	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 8 (Ngµy)	660	0		Lý Hoa	30702	30683	30806	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 9 (Ngµy)	661	0		Lý Hoa	30702	30684	30807	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 10 (Ngµy)	662	0		Lý Hoa	30702	30685	30808	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 11 (Ngµy)	663	0		Lý Hoa	30702	30686	30809	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 12 (Ngµy)	664	0		Lý Hoa	30702	30687	30810	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 13 (Ngµy)	665	0		Lý Hoa	30702	30688	30811	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 14 (Ngµy)	666	0		Lý Hoa	30702	30689	30812	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 15 (Ngµy)	667	0		Lý Hoa	30702	30690	30813	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 16 (Ngµy)	668	0		Lý Hoa	30702	30691	30814	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 17 (Ngµy)	669	0		Lý Hoa	30702	30692	30815	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 18 (Ngµy)	670	0		Lý Hoa	30702	30693	30816	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 19 (Ngµy)	671	0		Lý Hoa	30702	30694	30817	30798	1;0	1;0	-1	1000000		
-DiÖt §Þch 20 (Ngµy)	672	0		Lý Hoa	30702	30695	30818	30798	1;0	1;0	-1	1000000		
-Th¸m HiÓm 1 (Ngµy)	673	0		Lý Hoa	30702	30696		30798	1;0	1;0	-1	1000000		
-Th¸m HiÓm 2 (Ngµy)	674	0		Lý Hoa	30702	30697		30798	1;0	1;0	-1	1000000		
-Th¸m HiÓm 3 (Ngµy)	675	0		Lý Hoa	30702	30698		30798	1;0	1;0	-1	1000000		
-Th¸m HiÓm 4 (Ngµy)	676	0		Lý Hoa	30702	30699		30798	1;0	1;0	-1	1000000		
-Th¸m HiÓm 5 (Ngµy)	677	0		Lý Hoa	30702	30700		30798	1;0	1;0	-1	1000000		
-Th¸m HiÓm 6 (Ngµy)	678	0		Lý Hoa	30702	30701		30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 1 (Ngµy)	653	0		Ly Hoa	30702	30676	30799	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 2 (Ngµy)	654	0		Ly Hoa	30702	30677	30800	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 3 (Ngµy)	655	0		Ly Hoa	30702	30678	30801	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 4 (Ngµy)	656	0		Ly Hoa	30702	30679	30802	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 5 (Ngµy)	657	0		Ly Hoa	30702	30680	30803	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 6 (Ngµy)	658	0		Ly Hoa	30702	30681	30804	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 7 (Ngµy)	659	0		Ly Hoa	30702	30682	30805	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 8 (Ngµy)	660	0		Ly Hoa	30702	30683	30806	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 9 (Ngµy)	661	0		Ly Hoa	30702	30684	30807	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 10 (Ngµy)	662	0		Ly Hoa	30702	30685	30808	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 11 (Ngµy)	663	0		Ly Hoa	30702	30686	30809	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 12 (Ngµy)	664	0		Ly Hoa	30702	30687	30810	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 13 (Ngµy)	665	0		Ly Hoa	30702	30688	30811	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 14 (Ngµy)	666	0		Ly Hoa	30702	30689	30812	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 15 (Ngµy)	667	0		Ly Hoa	30702	30690	30813	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 16 (Ngµy)	668	0		Ly Hoa	30702	30691	30814	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 17 (Ngµy)	669	0		Ly Hoa	30702	30692	30815	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 18 (Ngµy)	670	0		Ly Hoa	30702	30693	30816	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 19 (Ngµy)	671	0		Ly Hoa	30702	30694	30817	30798	1;0	1;0	-1	1000000		
+DiÖt §Þch 20 (Ngµy)	672	0		Ly Hoa	30702	30695	30818	30798	1;0	1;0	-1	1000000		
+Th¸m HiÓm 1 (Ngµy)	673	0		Ly Hoa	30702	30696		30798	1;0	1;0	-1	1000000		
+Th¸m HiÓm 2 (Ngµy)	674	0		Ly Hoa	30702	30697		30798	1;0	1;0	-1	1000000		
+Th¸m HiÓm 3 (Ngµy)	675	0		Ly Hoa	30702	30698		30798	1;0	1;0	-1	1000000		
+Th¸m HiÓm 4 (Ngµy)	676	0		Ly Hoa	30702	30699		30798	1;0	1;0	-1	1000000		
+Th¸m HiÓm 5 (Ngµy)	677	0		Ly Hoa	30702	30700		30798	1;0	1;0	-1	1000000		
+Th¸m HiÓm 6 (Ngµy)	678	0		Ly Hoa	30702	30701		30798	1;0	1;0	-1	1000000		
 NhiÖm Vô S­ M«n Míi-ThÝ LuyÖn	679	1				30703	30820	30777&30819	1;0	2;0	-1	-1		
 NhiÖm Vô S­ M«n Míi-ThÝ LuyÖn	680	1				30704	30821	30777&30819	1;0	2;0	-1	-1		
 NhiÖm Vô S­ M«n Míi-ThÝ LuyÖn	681	1				30705	30822	30777&30819	1;0	2;0	-1	-1		

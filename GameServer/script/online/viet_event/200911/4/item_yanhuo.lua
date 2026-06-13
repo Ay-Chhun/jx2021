@@ -36,11 +36,11 @@ function OnUse(nItemIdx)
 		if nDate < 091109 then
 			ModifyExp(1000000);
 			Msg2Player("B¹n nhËn ®­îc 1000000 ®iÓm kinh nghiÖm.")
-			WriteLogEx(VIET_0911_LOG_TITLE,"Ph¸o hoa",1000000,"®iÓm kinh nghiÖm")
+			WriteLogEx(VIET_0911_LOG_TITLE,"Fireworks",1000000,"®iÓm kinh nghiÖm")
 		else
 			ModifyExp(100000);
 			Msg2Player("B¹n nhËn ®­îc 100000 ®iÓm kinh nghiÖm.")
-			WriteLogEx(VIET_0911_LOG_TITLE,"Ph¸o hoa",100000,"®iÓm kinh nghiÖm")
+			WriteLogEx(VIET_0911_LOG_TITLE,"Fireworks",100000,"®iÓm kinh nghiÖm")
 		end
 		ModifyReputation(10, 0);
 		
@@ -58,6 +58,6 @@ function OnUse(nItemIdx)
 		SetTask(VIET_0911_TASK_YANHUO_NUM, GetTask(VIET_0911_TASK_YANHUO_NUM) + 1);
 		SetTask(VIET_0911_TASK_YANHUO_DATE, nDate);
 		SetTask(VIET_0911_TASK_LAST_USE_TIME, GetTime());		
-		WriteLogEx(VIET_0911_LOG_TITLE,"Ph¸o hoa",10,"®iÓm danh väng")
+		WriteLogEx(VIET_0911_LOG_TITLE,"Fireworks",10,"®iÓm danh väng")
 	end
 end

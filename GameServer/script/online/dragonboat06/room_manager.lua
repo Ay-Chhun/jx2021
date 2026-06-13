@@ -35,11 +35,11 @@ function main()
 	local selTab = {
 			"Ta muèn tham gia thi ®Êu/selectroom",
 			"Ta muèn ®ãng thuyÒn Rång/wantboat",
-			"Thi ®Êu nªn biÕt/knowdetail",
+			"What you should know about the competition/knowdetail",
 --			"ÎÒÒªÁìÈ¡ôÕ×ÓºÍ½­ºşĞÄµÃ/wantzongzi",
 			"Ta muèn l·nh chØ nam thi thuyÒn Rång/wantzhinan",
 --			"ÎÒÒªÓÃ»ı·Ö»»½±Àø/seebonus",
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 			};
 	if Get_DragonBoatDay_State() == 0 then
 		Talk(1,"","TÕt §oan Ngä ®· ®Õn. Chóc mäi ng­êi mét c¸i TÕt vui vÎ.");
@@ -97,7 +97,7 @@ end;
 function selectroom()
 	local nHour = tonumber(date("%H"));
 	if nHour < 19 or nHour > 22 and nHour ~= 12 and nHour ~= 13 then
-		Talk(1,"main","Khu vùc thi ®Êu ®ang chuÈn bŞ, tõ <color=yellow>12h ®Õn 14h<color> vµ <color=yellow>19h ®Õn 23h<color> sÏ më. Nhí ®Õn tham gia nhĞ!");
+		Talk(1,"main","The competition area is preparing; it will open from <color=yellow>12:00 to 14:00<color> and <color=yellow>19:00 to 23:00<color>. Remember to come join in!");
 		return 0;
 	end;
 	local MapID = GetWorldPos();
@@ -160,14 +160,14 @@ function selectroom()
 		end;	
 	end;
 	selTab[getn(selTab)+1] = "Quay l¹i ®èi tho¹i chİnh./main";
-	selTab[getn(selTab)+1] = "Rêi khái/nothing";
+	selTab[getn(selTab)+1] = "Leave/nothing";
 	Say("B¹n muèn vµo tr­êng ®Êu nµo?",getn(selTab),selTab);
 end;
 
 function joinconfirm(RoomID)
 	if GetPlayerRoute() == 20 then --Îå¶¾Ğ°ÏÀ
 		local selTab = {
-				"§óng vËy!/#join("..RoomID..")",
+				"That's right!/#join("..RoomID..")",
 				"§Ó ta suy nghÜ l¹i/main",
 				}
 		Say("B¹n muèn vµo thi ®Êu?",getn(selTab),selTab)
@@ -203,9 +203,9 @@ function join(RoomID)
 	local RoomTab = Init_Room();
 	if RoomTab[RoomID]:GetRoomState() <= MS_STATE_WAITSIGNUP then
 		RoomTab[RoomID]:AddPlayer();
-		WriteLog("[Ho¹t ®éng tÕt §oan Ngä]\t"..GetAccount().."\t"..GetName().."\t tham gia ®ua thuyÒn Rång.")
+		WriteLog("[Ho¹t ®éng tÕt §oan Ngä]\t"..GetAccount().."\t"..GetName().."\t join the Dragon Boat race.")
 	else
-		Talk(1,"selectroom","Xin lçi! §­êng ®ua b¹n chän <color=yellow>"..RoomName[RoomID+RoomIndex].."<color>®· chuÈn bŞ b¾t ®Çu thi ®Êu hoÆc ®ang thi ®Êu kh«ng thÓ vµo ®­îc.");
+		Talk(1,"selectroom","Sorry! The lane you chose <color=yellow>"..RoomName[RoomID+RoomIndex].."<color>®· chuÈn bŞ b¾t ®Çu thi ®Êu hoÆc ®ang thi ®Êu kh«ng thÓ vµo ®­îc.");
 	end;
 end;
 
@@ -214,7 +214,7 @@ function seebonus()
 			"Ta muèn dïng ®iÓm ®æi th­ëng/wantaward",
 			"ThuyÕt minh ®æi th­ëng/knowaward",
 			"Quay l¹i ®èi tho¹i chİnh./main",
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 			}
 	Say("<enter>Sè lÇn tham gia thi ®Êu cña b¹n lµ:<color=yellow>"..GetTask(ATTENDCOUNT).."<color><enter>§iÓm tİch lòy cña b¹n:<color=yellow>"..GetTask(BONUSPOINT).."<color>",getn(selTab),selTab);
 end;
@@ -229,7 +229,7 @@ function wantaward()
 			--"ÓÃ15»ı·Ö»»È¡ÊÔÁ¶¹û×Ó/#askfornum(6)",--Ã¿Ìì×î¶à3´Î,×¢ÊÍÔ­Òò£ºIBÃ»ÓĞÊÔÁ·¹û
 			"Xem trang sau/wantaward1",
 			"Quay l¹i ®èi tho¹i chİnh./main",
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 			}
 	Say("§iÓm tİch lòy thi ®Êu thuyÒn Rång cña b¹n lµ <color=yellow>"..GetTask(BONUSPOINT).."<color> ®iÓm, b¹n muèn ®æi phÇn th­ëng nµo?",getn(selTab),selTab);
 end;
@@ -242,25 +242,25 @@ function wantaward1()
 			"Dïng 1000 ®iÓm tİch lòy ®æi thñ th­ chÕ t¹o vò khİ/#askfornum(10)",--×î¶à2´Î£¬Ã¿Ìì×î¶à1´Î
 			"§ïng 1500 ®iÓm tİch lòy ®æi Hèt L«i B¸c/#askfornum(11)",--×î¶à2´Î£¬Ã¿Ìì×î¶à1´Î
 			"§æi 2000 ®iÓm tİch lòy lÊy KhuÊt Nguyªn Ngäc Béi/#askfornum(12)",--×î¶à1´Î
-			"Xem trang tr­íc/wantaward",
+			"View previous page/wantaward",
 			--"²é¿´ÏÂÒ»Ò³/wantaward2",
 			"Quay l¹i ®èi tho¹i chİnh./main",
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 			}
 	Say("§iÓm tİch lòy thi ®Êu thuyÒn Rång cña b¹n lµ <color=yellow>"..GetTask(BONUSPOINT).."<color> ®iÓm, b¹n muèn ®æi phÇn th­ëng nµo?",getn(selTab),selTab);
 end;
 
 function askfornum(nType)
 	local selTab = {
-				"1 nhãm/#giveaward("..nType..",1)",
-				"2 nhãm/#giveaward("..nType..",2)",
-				"5 nhãm/#giveaward("..nType..",5)",
-				"10 nhãm/#giveaward("..nType..",10)",
-				"20 nhãm/#giveaward("..nType..",20)",
-				" 50 nhãm/#giveaward("..nType..",50)",
-				"100 nhãm/#giveaward("..nType..",100)",
+				"1 group/#giveaward("..nType..",1)",
+				"2 groups/#giveaward("..nType..",2)",
+				"5 groups/#giveaward("..nType..",5)",
+				"10 groups/#giveaward("..nType..",10)",
+				"20 groups/#giveaward("..nType..",20)",
+				" 50 groups/#giveaward("..nType..",50)",
+				"100 groups/#giveaward("..nType..",100)",
 				"Ta suy nghÜ l¹i!/wantaward",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"End dialogue/nothing",
 				};
 	if nType > 6 then
 		for i=1,6 do 
@@ -306,19 +306,19 @@ function giveaward(nType,nNum)
 		SetTask(AWARD_CSZZ2,nDate);
 		nRetCode = AddItem(2,1,965,nNum)
 		if nRetCode == 1 then
-			Msg2Player("B¹n nhËn ®­îc "..nNum.." B¸nh İt x¸ xİu");
+			Msg2Player("B¹n nhËn ®­îc "..nNum.." char siu zongzi");
 		end;
 	elseif nType == 4 then
 		SetTask(BONUSPOINT,GetTask(BONUSPOINT)-DecBonusTab[nType]*nNum);
 		nRetCode = AddItem(2,1,391,nNum)
 		if nRetCode == 1 then
-			Msg2Player("B¹n nhËn ®­îc "..nNum.." b¸nh İt thËp cÈm");
+			Msg2Player("B¹n nhËn ®­îc "..nNum.." assorted zongzi");
 		end;
 	elseif nType == 5 then
 		SetTask(BONUSPOINT,GetTask(BONUSPOINT)-DecBonusTab[nType]*nNum);
 		nRetCode = AddItem(2,1,389,nNum)
 		if nRetCode == 1 then
-			Msg2Player("B¹n nhËn ®­îc "..nNum.." B¸nh nh©n møt");
+			Msg2Player("B¹n nhËn ®­îc "..nNum.." sweet filling zongzi");
 		end;
 	elseif nType == 6 then
 --		if GetTask(AWARD_SLGZ2) < nDate then
@@ -351,8 +351,8 @@ function giveaward(nType,nNum)
 		SetTask(AWARD_JXZZ2,nDate);
 		nRetCode = AddItem(2,1,392,nNum)
 		if nRetCode == 1 then
-			Msg2Player("B¹n nhËn ®­îc "..nNum.." b¸nh İt Gia H­ng");
-			Write_Log("®iÓm tİch lòy ®ua thuyÒn ®æi phÇn th­ëng",GetName().."NhËn ®­îc b¸nh İt Gia H­ng")
+			Msg2Player("B¹n nhËn ®­îc "..nNum.." Jiaxing zongzi");
+			Write_Log("®iÓm tİch lòy ®ua thuyÒn ®æi phÇn th­ëng",GetName().."Received Jiaxing zongzi")
 		else
 			Write_Log("®iÓm tİch lòy ®ua thuyÒn ®æi phÇn th­ëng cã sai sãt",GetName().."AddItem(2,1,392,nNum) trŞ quay l¹i:"..nRetCode)
 		end;	
@@ -368,7 +368,7 @@ function giveaward(nType,nNum)
 		SetTask(AWARD_ZZLB,nDate);
 		nRetCode = AddItem(2,1,966,nNum)
 		if nRetCode == 1 then
-			Msg2Player("B¹n nhËn ®­îc "..nNum.." tói b¸nh");
+			Msg2Player("B¹n nhËn ®­îc "..nNum.." bag of zongzi");
 		end;
 	elseif nType == 9 then	--ôÕ×Ó´óÀñ°ü
 		if GetTask(AWARD_ZZDLB3) < nDate then
@@ -388,8 +388,8 @@ function giveaward(nType,nNum)
 		SetTask(AWARD_ZZDLB3,nDate);
 		nRetCode = AddItem(2,1,393,nNum)
 		if nRetCode == 1 then
-			Msg2Player("B¹n nhËn ®­îc "..nNum.." tói b¸nh lín");
-			Write_Log("®iÓm tİch lòy ®ua thuyÒn ®æi phÇn th­ëng",GetName().."NhËn ®­îc bao l× x× b¸nh İt");
+			Msg2Player("B¹n nhËn ®­îc "..nNum.." large bag of zongzi");
+			Write_Log("®iÓm tİch lòy ®ua thuyÒn ®æi phÇn th­ëng",GetName().."Received lucky pouch of zongzi");
 		else
 			Write_Log("®iÓm tİch lòy ®ua thuyÒn ®æi phÇn th­ëng cã sai sãt",GetName().."AddItem(2,1,393,nNum) trŞ quay l¹i:"..nRetCode)
 		end;	
@@ -466,7 +466,7 @@ function knowaward()
 	local selTab = {
 			"sè lÇn giíi h¹n §æi phÇn th­ëng /seerestriction1",
 			"Quay l¹i ®èi tho¹i trªn/seebonus",
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 			}
 	Say("B¹n cã thÓ tham gia thi ®Êu thuyÒn Rång ®Ó nhËn ®iÓm tİch lòy, sau ®ã b¹n cã thÓ lÊy ®iÓm th­ëng ®æi phÇn th­ëng. Chó ı! Cã mét sè phÇn th­ëng kh«ng cã h¹n chÕ sè lÇn ®æi vµ ng­îc l¹i, còng cã mét sè phÇn th­ëng chØ cho ®æi tæng céng vµi lÇn, chi tiÕt xin tham kh¶o <color=yellow>sè lÇn h¹n chÕ ®æi phÇn th­ëng<color>.",getn(selTab),selTab);
 end;
@@ -529,7 +529,7 @@ function wantboat()
 			"ChÕ t¹o thuyÒn Rång/makeboat",
 			"Giíi thiÖu thuyÒn Rång/knowboat",
 			"Quay l¹i/main",
-			"KÕt thóc ®èi tho¹i/nothing"
+			"End dialogue/nothing"
 			}
 	Say("Ng­¬i h·y gióp ta thu thËp <color=yellow>10 Chu Sa vµ 10 ®u«i Thá<color>, ta sÏ chÕ t¹o gióp ng­¬i 1 chiÕc thuyÒn Rång.",getn(selTab),selTab);
 end;
@@ -557,7 +557,7 @@ function knowboat()
 		selTab[i] = BoatInfo[i][1].."/#knowboatdetail("..i..")";
 	end;
 	selTab[getn(selTab)+1] = "Quay l¹i ®èi tho¹i trªn/wantboat";
-	selTab[getn(selTab)+1] = "KÕt thóc ®èi tho¹i/nothing";
+	selTab[getn(selTab)+1] = "End dialogue/nothing";
 	Say("Kh¸ch quan muèn t×m hiÓu lo¹i thuyÒn Rång nµo?",getn(selTab),selTab);
 end;
 
@@ -575,11 +575,11 @@ function wantzongzi()
 	local selTab = {
 				"Ta muèn l·nh b¸nh İt trøng Æn/givexdzz",
 				"Ta muèn l·nh b¸nh İt g¹o nÕp/givenmzz",
-				"NhËn t©m ®¾c giang hå/givediary",
+				"Receive Jianghu Insight /givediary",
 				"Ta sÏ quay l¹i sau/main",
 				};
 	local nCount = GetTask(ATTENDCOUNTPERDAY1);
-	Say("Tæng céng b¹n ®· tham gia <color=yellow>"..GetTask(ATTENDCOUNT).."<color> trËn thi ®Êu, nhËn ®­îc <color=yellow>"..GetTask(GETXDZZCOUNT).."c¸i<color> b¸nh İt muèi mÆn, cßn cã thÓ l·nh <color=yellow>"..(GetTask(ATTENDCOUNT)-GetTask(GETXDZZCOUNT)).."<color> c¸i. H«m nay b¹n ®· tham gia thi ®Êu thuyÒn Rång <color=yellow>"..nCount.."<color> lÇn ®Êu thuyÒn rång, chØ cÇn <color=yellow>tham gia 3 trËn hoÆc nhiÒu h¬n<color> lµ cã thÓ nhËn b¸nh İt nÕp, <color=yellow>1 ngµy chØ nhËn ®­îc 1 lÇn<color>! Mçi lÇn tham gia ®Òu nhËn ®­îc 1 quyÓn t©m ®¾c giang hå, tèi ®a 4 quyÓn, nhËn chø?",getn(selTab),selTab);
+	Say("In total you have joined <color=yellow>"..GetTask(ATTENDCOUNT).."<color> trËn thi ®Êu, nhËn ®­îc <color=yellow>"..GetTask(GETXDZZCOUNT).."c¸i<color> b¸nh İt muèi mÆn, cßn cã thÓ l·nh <color=yellow>"..(GetTask(ATTENDCOUNT)-GetTask(GETXDZZCOUNT)).."<color> c¸i. H«m nay b¹n ®· tham gia thi ®Êu thuyÒn Rång <color=yellow>"..nCount.."<color> lÇn ®Êu thuyÒn rång, chØ cÇn <color=yellow>tham gia 3 trËn hoÆc nhiÒu h¬n<color> lµ cã thÓ nhËn b¸nh İt nÕp, <color=yellow>1 ngµy chØ nhËn ®­îc 1 lÇn<color>! Mçi lÇn tham gia ®Òu nhËn ®­îc 1 quyÓn t©m ®¾c giang hå, tèi ®a 4 quyÓn, nhËn chø?",getn(selTab),selTab);
 end;
 
 function givediary()
@@ -616,7 +616,7 @@ function givexdzz()
 	local selTab = {
 			"Ta muèn l·nh 1 b¸nh İt muèi mÆn/giveonexdzz",
 			"Ta muèn l·nh toµn bé ("..nZzLeft.." c¸i) b¸nh İt muèi mÆn/giveallxdzz",
-			"LÇn sau h·y l·nh/main",
+			"Claim it next time /main",
 			}
 	Say("B¹n muèn l·nh bao nhiªu b¸nh İt muèi mÆn?",getn(selTab),selTab);
 end;
@@ -640,7 +640,7 @@ function giveallxdzz()
 	end;
 	SetTask(GETXDZZCOUNT,GetTask(ATTENDCOUNT));
 	if AddItem(2,1,390,nZzLeft) == 1 then
-		Msg2Player("B¹n nhËn ®­îc "..nZzLeft.." B¸nh İt muèi mÆn");
+		Msg2Player("B¹n nhËn ®­îc "..nZzLeft.." Salted zongzi");
 	end;
 end;
 
@@ -658,10 +658,10 @@ function givenmzz()
 		local nRetCode = AddItem(2,1,394,1);
 		if nRetCode == 1 then
 			Msg2Player("B¹n nhËn ®­îc 1 b¸nh İt g¹o nÕp");
-			Write_Log("NhËn b¸nh İt g¹o nÕp",GetName().."®· nhËn 1 b¸nh İt g¹o nÕp");
+			Write_Log("Receive sticky-rice zongzi",GetName().."®· nhËn 1 b¸nh İt g¹o nÕp");
 			Talk(1,"main","b¸nh İt g¹o nÕp míi ra lß ®©y, ®¹i hiÖp h·y nhËn lÊy.");
 		elseif nRetCode == 2 then
-			Write_Log("NhËn b¸nh İt g¹o nÕp",GetName().."Khi nhËn b¸nh İt g¹o nÕp, b¸nh İt g¹o nÕp r¬i xuèng ®Êt, cßn ¨n ®­îc kh«ng?");
+			Write_Log("Receive sticky-rice zongzi",GetName().."Khi nhËn b¸nh İt g¹o nÕp, b¸nh İt g¹o nÕp r¬i xuèng ®Êt, cßn ¨n ®­îc kh«ng?");
 		else
 			Write_Log("Lçi nhËn b¸nh İt g¹o nÕp",GetName().."NhËn b¸nh İt g¹o nÕp thÊt b¹i");
 		end;

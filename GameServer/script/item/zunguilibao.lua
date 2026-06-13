@@ -1,8 +1,8 @@
 Include("\\script\\lib\\globalfunctions.lua");
 function OnUse(nItemIdx)
 	local selTab = {
-				format("§ång ý/#use_yes(%d)",nItemIdx),
-				"Hñy bá/nothing",
+				format("Agree/#use_yes(%d)",nItemIdx),
+				"Cancel/nothing",
 				}
 	Say("HiÖn giê ng­¬i cã muèn më T«n Quý LÔ Bao kh«ng? Cã thÓ ng­¬i sÏ nhËn ®­îc nh÷ng vËt phÈm sau: 200 danh väng, tói nhá Ngò Hoa Ngäc Lé hoµn, tói nhá Sinh Sinh Hãa T¸n, ngùa cao cÊp (thêi h¹n 7 ngµy), 10 b¹ch c©u hoµn, 10 ®¹i b¹ch c©u hoµn, bao m¶nh Thiªn Th¹ch, Kú L©n hoµn<, Long HuyÕt hoµn, tñ nhá (thêi h¹n 7 ngµy), Trang bÞ Hoµng Kim míi. Chóc ng­¬i may m¾n!",
 		getn(selTab),

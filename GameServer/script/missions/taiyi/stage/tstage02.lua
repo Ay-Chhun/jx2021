@@ -48,7 +48,7 @@ function tStage02_1:Init()
 	TY_ClearColdDown();
 	self:CreateNpcs();
 	this.msCamp:turnPlayer(0, TY_SetPlayerPos, tPlayerPos[self.father.nStageId][1]);
-	this.msCamp:turnPlayer(0, function() HeadMsg2Player("§éi tr­ëng vµ Méc QuÕ Anh ®èi tho¹i ®Ó tiÕp tôc ¶i!") end);
+	this.msCamp:turnPlayer(0, function() HeadMsg2Player("Team leader, talk to Mu Guiying to continue the stage!") end);
 end
 
 function tStage02_1:EndStage02()
@@ -78,7 +78,7 @@ end
 function tStage02_1:CheatMode()
 	local self = tStage02_1;
 	if GetItemCount(TYT_IB_ITEM[2], TYT_IB_ITEM[3], TYT_IB_ITEM[4]) < 1 then
-		Talk(1, "", "<color=green>Méc QuÕ Anh<color>: Trªn ng­êi b¹n"..TYT_IB_ITEM[1].."Kh«ng ®ñ.");
+		Talk(1, "", "<color=green>Méc QuÕ Anh<color>: Trªn ng­êi b¹n"..TYT_IB_ITEM[1].."Not enough.");
 		return 0;
 	end
 	if 1 ~= DelItem(TYT_IB_ITEM[2], TYT_IB_ITEM[3], TYT_IB_ITEM[4], 1) then return 0; end
@@ -101,19 +101,19 @@ function tStage02_1:NpcMain()
 	if not tStage02_1.sel_NORMAL then
 		tStage02_1.sel_NORMAL = {
 --			"½áÊøµÚ2¹Ø/#tStage02_1.EndStage02()",
-			"Më ¶i 2/#tStage02_1.OnFinish()",
+			"Open Stage 2/#tStage02_1.OnFinish()",
 			--"H×nh thøc sao chÐp (CÇn "..TYT_IB_ITEM[1].."*1)/#tStage02_1.CheatMode()",
 			"Ta muèn rêi khái ¶i/TY_ConfirmClose",
-			"Hñy bá/nothing",
+			"Cancel/nothing",
 		};
 	end
 	
 	if not tStage02_1.sel_HARD then
 		tStage02_1.sel_HARD = {
 --			"½áÊøµÚ2¹Ø/#tStage02_1.EndStage02()",
-			"Më ¶i 2/#tStage02_1.OnFinish()",
+			"Open Stage 2/#tStage02_1.OnFinish()",
 			"Ta muèn rêi khái ¶i/TY_ConfirmClose",
-			"Hñy bá/nothing",
+			"Cancel/nothing",
 		};
 	end
 	
@@ -627,9 +627,9 @@ function tStage02_3:NpcMain()
 		end
 		if not tStage02_3.sel then
 			tStage02_3.sel = {
-				"Më ¶i 3/#tStage02_3.GoToStage03()",
+				"Open Stage 3/#tStage02_3.GoToStage03()",
 				"Ta muèn rêi khái ¶i/TY_ConfirmClose",
-				"Hñy bá/nothing",
+				"Cancel/nothing",
 			};
 		end
 		Say("<color=green>Méc QuÕ Anh<color>: §ång ý vµo ¶i tiÕp theo kh«ng?", getn(tStage02_3.sel), tStage02_3.sel);

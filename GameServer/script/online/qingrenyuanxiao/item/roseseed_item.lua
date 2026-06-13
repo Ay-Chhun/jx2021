@@ -28,7 +28,7 @@ function plant()
 				if DelItem(2,0,351,1) == 1 then
 					local nameMale,nameFemale = GetLoversName()		
 					local MapID,MapX,MapY = GetWorldPos()
-					local npcRoseIndex = CreateNpc("MÇm hoa hång","®Ó"..nameFemale.." cho ra hoa hång non",MapID,MapX,MapY)
+					local npcRoseIndex = CreateNpc("MÇm hoa hång","de"..nameFemale.." produces a young rose",MapID,MapX,MapY)
 					SetNpcLifeTime(npcRoseIndex,ROSELIFE)
 					for i=1,2 do
 						PlayerIndex = GetTeamMember(i)

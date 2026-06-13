@@ -2,7 +2,7 @@
 --date:06-12-13
 --describe:Óü×ä½Å±¾
 Include("\\script\\task\\prison\\jail_head.lua");
-g_NpcName = " Ngôc tèt"
+g_NpcName = "Jailer"
 function main()
 	local selTab = {};
 	local sString = "";
@@ -11,14 +11,14 @@ function main()
 	else
 		tinsert(selTab,"Ta ®Õn th¨m b»ng h÷u, mau ®­a ta ®i/#go_outside(2)");
 	end;
-	tinsert(selTab,"Kh«ng cã g×/nothing");
+	tinsert(selTab,"Nothing/nothing");
 	Say("<color=green>"..g_NpcName.."<color>: §i hay ë, ng­¬i quyÕt ®Þnh ®i.",getn(selTab),selTab);
 end;
 
 function want_bail()
 	local selTab = {
-				"§ång ý/#go_outside(1)",
-				"Hñy bá/nothing",
+				"Agree/#go_outside(1)",
+				"Cancel/nothing",
 				}
 	Say("<color=green>"..g_NpcName.."<color>: Hèi lé cÇn <color=yellow>10 tiÒn vµng<color>, cã tiÒn kh«ng?",getn(selTab),selTab);
 end;

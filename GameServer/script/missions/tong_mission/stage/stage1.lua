@@ -24,8 +24,8 @@ function CSTAGE1:OnCreateBoss()
 	SetMissionV(MV_BOSS1,nNpcIdx);
 	Msg2MSAll(MISSION_ID,"NhiÖm vô cña ¶i: §¸nh b¹i "..szName);
 	local tbPlayer = TM_GetPlayerTable();
-	TM_StartTimeGuage("Bãng hé vÖ",60,0,1,tbPlayer);
-	TM_StartTimeGuage("Li Phñ N÷ T­íng",30,0,2,tbPlayer);
+	TM_StartTimeGuage("Guard",60,0,1,tbPlayer);
+	TM_StartTimeGuage("Lady General of the Li Manor",30,0,2,tbPlayer);
 end;
 --ÔÚËÄ¸öË¢¹ÖµãË¢Ëæ»úÖÖÀàµÄ¹Ö
 function CSTAGE1:CreateOpposedNpc(tbArg)	
@@ -69,7 +69,7 @@ function CSTAGE1:CreateOpposedNpc(tbArg)
 	NpcChat(nBossIdx,tbChat[random(1,getn(tbChat))]);
 	local tbPlayer = TM_GetPlayerTable();
 	TM_StopTimeGuage(1);
-	TM_StartTimeGuage("Bãng hé vÖ",90,0,1,tbPlayer);
+	TM_StartTimeGuage("Guard",90,0,1,tbPlayer);
 end;
 --BOSSÉúÐ¡º¢
 function CSTAGE1:CreateBossChild(tbArg)
@@ -84,7 +84,7 @@ function CSTAGE1:CreateBossChild(tbArg)
 	PlayerIndex = nil;
 	local nNpcIdx = 0;
 	for i=1,tbArg[1] do
-		nNpcIdx = CreateNpc("TiÓu qu¸i ¶i 2","Li Phñ N÷ Vâ T­íng",nMapID,nMapX,nMapY,-1,1,1,100);
+		nNpcIdx = CreateNpc("TiÓu qu¸i ¶i 2","Lady Martial General of the Li Manor",nMapID,nMapX,nMapY,-1,1,1,100);
 		SetNpcDeathScript(nNpcIdx,"\\script\\missions\\tong_mission\\stage\\death_npc.lua");
 		AddGroupUnit(NPC_GROUP_ID,nNpcIdx);
 	end;
@@ -96,7 +96,7 @@ function CSTAGE1:CreateBossChild(tbArg)
 	NpcChat(nBossIdx,tbChat[random(1,getn(tbChat))]);
 	local tbPlayer = TM_GetPlayerTable();
 	TM_StopTimeGuage(2);
-	TM_StartTimeGuage("Li Phñ N÷ T­íng",60,0,2,tbPlayer);
+	TM_StartTimeGuage("Lady General of the Li Manor",60,0,2,tbPlayer);
 end;
 --BOSSµÄËÀÍö½Å±¾Ö´ÐÐº¯Êý
 function CSTAGE1:OnBossDeath(szNpcIdx)

@@ -65,7 +65,7 @@ function TestEat(nIndex)
 		elseif tItemInfo[nIndex][5] == nSpeed then
 			ConfirmEat(nIndex)
 		elseif tItemInfo[nIndex][5] > nSpeed then
-			Say("HiÖn b¹n b¹n cã "..tItemInfo[nType][6]..", muèn ®æi thµnh"..tItemInfo[nIndex][6].."?\n<color=red>Chó ý: Sau khi thay ®æi thêi gian hiÖu qu¶ ban ®Çu sÏ trë vÒ 0<color>", 2, "§óng/#ConfirmEat("..nIndex..")", "Sai/no_say")
+			Say("You currently have"..tItemInfo[nType][6]..", muèn ®æi thµnh"..tItemInfo[nIndex][6].."?\n<color=red>Chó ý: Sau khi thay ®æi thêi gian hiÖu qu¶ ban ®Çu sÏ trë vÒ 0<color>", 2, "Confirm/#ConfirmEat("..nIndex..")", "Sai/no_say")
 		end
 	else
 		ConfirmEat(nIndex)

@@ -14,7 +14,7 @@ TSK_USE = 1540
 function OnUse()
 	Say("B¹n muèn dïng <color=yellow>Cöu Thiªn V« Cùc ®¬n<color>? Nã cã thÓ gióp b¹n ®¹t ®Õn cÊp 73, danh väng 3000, ®é cèng hiÕn s­ m«n 4000 vµ qu©n c«ng chiÕn tr­êng.",
 		2,
-		"§­îc/use_jiutianwuji_dan",
+		"Confirm/use_jiutianwuji_dan",
 		"Kh«ng sö dông/cancel_dialog")
 end;
 

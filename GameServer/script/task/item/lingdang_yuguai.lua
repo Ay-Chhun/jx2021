@@ -11,7 +11,7 @@ function OnUse(nItem)
 		return 0;
 	end
 	SetItemUseLapse(nItem, 10*60*18);
-	local npcIndex = CreateNpc("qiannianyuguai", "Ng­ Qu¸i", GetWorldPos());
+	local npcIndex = CreateNpc("qiannianyuguai", "Soul Beast", GetWorldPos());
 	SetNpcLifeTime(npcIndex, 10*60);
 	SetNpcDeathScript(npcIndex, "\\script\\task\\npc\\yuguai_death.lua");
 	Msg2Player("Ng­ Qu¸i xuÊt hiÖn råi , h·y nhanh chãng tiªu diÖt nã ®i !");

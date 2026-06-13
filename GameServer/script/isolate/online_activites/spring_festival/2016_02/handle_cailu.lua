@@ -10,16 +10,16 @@ Include("\\settings\\static_script\\lib\\globalfunction\\gf_room_weight.lua")
 function refresh_taoshu()     																		-- ÔÚ·þÎñ¿ªÊ¼Ê±´´½¨ÌÒ»¨Ê÷NPC
 	for i=1,getn(tb_taoshu_refresh) do
 		local pos = tb_taoshu_refresh[i];
-		local npcid = CreateNpc("§µo Hoa thô","Nh¸nh §µo C¸t T­êng",pos[1],pos[2],pos[3]);
+		local npcid = CreateNpc("§µo Hoa thô","Auspicious Peach Branch",pos[1],pos[2],pos[3]);
 	end
 end
 
 function handle_on_npc_talk_jxts()   -- ÓëÌÒ»¨Ëµ¶Ô»°
-	local mainStr = format("Mét nh¸nh ®µo trªn ®ã në ®Çy hoa ®µo th¬m.") 
+	local mainStr = format("A peach branch covered in fragrant peach blossoms.") 
 	local tb_list={};
 	local already = get_task("id_caiji_count")
-	tinsert(tb_list,format("H¸i 1 Nh¸nh §µo T­¬i (%d/10)/#do_get_taohua(%d)",already,already))
-	tinsert(tb_list,"Kh«ng cã g×/nothing")
+	tinsert(tb_list,format("Pick 1 Fresh Peach Branch (%d/10)/#do_get_taohua(%d)",already,already))
+	tinsert(tb_list,"Nothing/nothing")
 	Say(mainStr,getn(tb_list),tb_list)
 end
 

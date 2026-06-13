@@ -57,7 +57,7 @@ BuTouMapData = {
 	
 	[1]={100,"TuyÒn Ch©u"},
 	[2]={150,"D­¬ng Ch©u"},
-	[3]={200,"BiÖn Kinh"},
+	[3]={200,"Bianjing"},
 	[4]={300,"Thµnh §«"},
 	[5]={350,"T­¬ng D­¬ng"},
 	 
@@ -281,7 +281,7 @@ function CreateKiller()
 local nSurnameID = GetTask(TASK_KILLER_SURNAME_ID);
 local	nFirstnameID = GetTask(TASK_KILLER_FIRSTNAME_ID);
 --»ñÈ¡É±ÊÖÐÕÃû
-local nKillerName = "S¸t thñ "..getKillerName(nSurnameID,nFirstnameID);	
+local nKillerName = "Assassin"..getKillerName(nSurnameID,nFirstnameID);	
 
 --»ñÈ¡É±ÊÖÄ£°åID
 local nKillerModeID = GetTask(TASK_KILLER_NPCMODE_ID);			
@@ -466,9 +466,9 @@ function GetTopKillerData()
 	local nTopKillerName = getKillerName(nSurnameID,nFirstnameID);
 	
 	if nTopKillerName ~= nil then
-		nTopKillerName = "S¸t thñ ®Çu môc"..nTopKillerName;
+		nTopKillerName = "Assassin Leader"..nTopKillerName;
 	else
-		nTopKillerName = "S¸t thñ ®Çu môc"
+		nTopKillerName = "Assassin Leader"
 	end
 
 	--»ñÈ¡Íæ¼ÒµÈ¼¶ÇøÓò

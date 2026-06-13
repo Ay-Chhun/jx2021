@@ -46,9 +46,9 @@ tShashou = {
 
 --Ñ×µÛ×°±¸
 tYandi = {
-	{"Viªm §Õ kh«i",0,103,8000},
-	{"Viªm §Õ gi¸p",0,100,8000},
-	{"Viªm §Õ trang",0,101,8000}
+	{"Yandi Helm",0,103,8000},
+	{"Yandi Armor",0,100,8000},
+	{"Yandi Garb",0,101,8000}
 };
 
 tXuanyuanZhan = 
@@ -160,13 +160,13 @@ tTiandi = {
 
 --´«ËÍÖÁÕÆÃÅ´¦
 tShifu	=	{
-		{"ThiÕu L©m",204,1599,3182,"<color=green>HuyÒn Tõ<color>:"},
-		{"Vâ §ang",312,1825,3323,"<color=green>Tö H¹c Ch©n Nh©n<color>:"},
+		{"Shaolin",204,1599,3182,"<color=green>HuyÒn Tõ<color>:"},
+		{"Wudang",312,1825,3323,"<color=green>Tö H¹c Ch©n Nh©n<color>:"},
 		{"Nga My",303,1645,3159,"<color=green>Ch©n Nh­ S­ Th¸i<color>:"},
-		{"C¸i Bang",209,1547,3183,"<color=green>Long T¹i Thiªn<color>:"},
+		{"Beggars' Sect",209,1547,3183,"<color=green>Long T¹i Thiªn<color>:"},
 		{"§­êng M«n",305,1598,2824,"<color=green>§­êng Së Hång<color>:"},
 		{"D­¬ng M«n",219,1538,3151,"<color=green>Xa Th¸i Qu©n<color>:"},
-		{"Ngò §éc",407,1609,3193,"<color=green>B¹ch Doanh Doanh<color>:"}
+		{"Five Poisons",407,1609,3193,"<color=green>B¹ch Doanh Doanh<color>:"}
 };
 
 --º¯ÊýÃû³Æ£ºÖÜ¼¸¼ÆËãº¯Êý
@@ -394,8 +394,8 @@ function tiandi_choujiang()
 			AddItem(tXuanyuanDou[nRoute][nRandOne][2],tXuanyuanDou[nRoute][nRandOne][3],tXuanyuanDou[nRoute][nRandOne][4],1,1,-1,-1,-1,-1,-1,-1);
 			AddItem(tHuangDiWeapon[nRoute][nRandOne][2],tHuangDiWeapon[nRoute][nRandOne][3],tHuangDiWeapon[nRoute][nRandOne][4],1,1,-1,-1,-1,-1,-1,-1);
 			Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 bé trang bÞ Viªm Hoµng!");
-			Msg2Global("Ng­êi ch¬i"..GetName().."Tham gia rót th¨m may m¾n Vâ l©m tranh b¸ nhËn ®­îc 1 bé Viªm Hoµng!");
-			AddGlobalCountNews("Ng­êi ch¬i"..GetName().."Tham gia rót th¨m may m¾n Vâ l©m tranh b¸ nhËn ®­îc 1 bé Viªm Hoµng!",2);
+			Msg2Global("Player"..GetName().."Tham gia rót th¨m may m¾n Vâ l©m tranh b¸ nhËn ®­îc 1 bé Viªm Hoµng!");
+			AddGlobalCountNews("Player"..GetName().."Tham gia rót th¨m may m¾n Vâ l©m tranh b¸ nhËn ®­îc 1 bé Viªm Hoµng!",2);
 			WriteLog("[Vâ l©m tranh b¸]: Ng­êi ch¬i"..GetName().."Tham gia rót th¨m may m¾n Vâ l©m tranh b¸ nhËn ®­îc 1 bé Viªm Hoµng!");
 		elseif nRand <= 2 then
 			AddItem(2,0,1055,1);
@@ -403,8 +403,8 @@ function tiandi_choujiang()
 			AddItem(2,0,1057,1);
 			AddItem(2,0,1058,1);
 			Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 bé Thiªn §Þa HuyÒn Hoµng!");
-			Msg2Global("Ng­êi ch¬i"..GetName().."Tham gia rót th¨m may m¾n Vâ l©m tranh b¸ nhËn ®­îc 1 bé Thiªn §Þa HuyÒn Hoµng!");
-			AddGlobalCountNews("Ng­êi ch¬i"..GetName().."Tham gia rót th¨m may m¾n Vâ l©m tranh b¸ nhËn ®­îc 1 bé Thiªn §Þa HuyÒn Hoµng!",2);
+			Msg2Global("Player"..GetName().."Tham gia rót th¨m may m¾n Vâ l©m tranh b¸ nhËn ®­îc 1 bé Thiªn §Þa HuyÒn Hoµng!");
+			AddGlobalCountNews("Player"..GetName().."Tham gia rót th¨m may m¾n Vâ l©m tranh b¸ nhËn ®­îc 1 bé Thiªn §Þa HuyÒn Hoµng!",2);
 			WriteLog("[Vâ l©m tranh b¸]: Ng­êi ch¬i"..GetName().."Tham gia rót th¨m may m¾n Vâ l©m tranh b¸ nhËn ®­îc 1 bé Thiªn §Þa HuyÒn Hoµng!");			
 		else
 			AddItem(2,0,109,2,4); 
@@ -519,7 +519,7 @@ function wulin_zhengba()
 		"Ta muèn xem thµnh tÝch bæn m«n, nhËn phÇn th­ëng tranh b¸/#get_wulin_award(1)",
 		"Ta muèn nhËn phÇn th­ëng m«n ph¸i tuÇn nµy/#get_wulin_award(2)",
 		"T×m hiÓu chi tiÕt Vâ l©m tranh b¸/about_wulin_zhengba",
-		"Kh«ng vÊn ®Ò g×/nothing"
+		"No problem/nothing"
 		}
 	local nPos = GetWorldPos();
 	local nIdx = 0;
@@ -647,7 +647,7 @@ function get_wulin_award(nType)
 				end
 			end
 		else
-			Talk(1,"",tShifu[nIdx][5].."Bæn m«n ®· cã <color=yellow>"..GetUnitCurStates(nNpcIdx,5).."<color> ®Ö tö dµnh th¾ng lîi khi tû vâ víi ®Ö tö m«n ph¸i kh¸c. BÊt luËn th¾ng thua còng nªn thö søc mét phen! Cø thö xem sao, thö th¸ch vµi lÇn!");
+			Talk(1,"",tShifu[nIdx][5].."Our sect has <color=yellow>"..GetUnitCurStates(nNpcIdx,5).."<color> ®Ö tö dµnh th¾ng lîi khi tû vâ víi ®Ö tö m«n ph¸i kh¸c. BÊt luËn th¾ng thua còng nªn thö søc mét phen! Cø thö xem sao, thö th¸ch vµi lÇn!");
 		end
 	elseif nType == 2 then
 		if GetTask(TASK_MENPAI_AWARD) == nWeek then
@@ -663,21 +663,21 @@ function get_wulin_award(nType)
 		end
 		if GetUnitCurStates(nNpcIdx,4) >= 100 then
 			local tItem = {	
-			[1] = {2,0,448,"Phæ HiÒn X¸ Lîi"},	--ÉÙÁÖ
+			[1] = {2,0,448,"Puxian Relic"},	--ÉÙÁÖ
 			[2] = {2,0,469,"Thiªn C¬ Méc"},--Îäµ±
-			[3] = {2,0,457,"Kim Liªn Hoa"},--¶ëáÒ
-			[4] = {2,0,466,"Tö Kim B¸t"},--Ø¤°ï
+			[3] = {2,0,457,"Golden Lotus Flower"},--¶ëáÒ
+			[4] = {2,0,466,"Purple Gold Bowl"},--Ø¤°ï
 			[5] = {2,0,454,"BÝ §éc ph­¬ng"},--ÌÆÃÅ	
-			[6] = {2,0,477,"Tinh B× TiÔn §¹i"},	--ÑîÃÅ
+			[6] = {2,0,477,"Star Hide Arrow Grand"},	--ÑîÃÅ
 			[7] = {2,0,484,"RÕt ®éc"},--Îå¶¾
-			[8] = {2,0,491,"Mai QuÕ Lé"},--´äÑÌ
-			[9] = {2,0,495,"Khu Ma H­¬ng"},--À¥ÂØ
+			[8] = {2,0,491,"Plum Osmanthus Road"},--´äÑÌ
+			[9] = {2,0,495,"Demon Quelling Incense"},--À¥ÂØ
 			[10] = {2,0,499,"Th¸nh Háa LÖnh"}--Ã÷½Ì
 			};			
 			SetTask(TASK_MENPAI_AWARD,nWeek);
 			AddItem(2,0,141,2,4);
 			AddItem(tItem[nFaction][1],tItem[nFaction][2],tItem[nFaction][3],20);
-			Talk(1,"",tShifu[nIdx][5].."Bæn m«n ®· cã <color=yellow>"..GetUnitCurStates(nNpcIdx,5).."<color> ®Ö tö dµnh th¾ng lîi khi tû vâ víi ®Ö tö m«n ph¸i kh¸c. Ch­ëng  m«n rÊt h·nh diÖn, quyÕt ®Þnh cho mçi ®Ö tö 2 Tiªu KiÕp t¸n vµ 20 tÝn vËt trang bÞ S­ M«n 4, hy väng mäi ng­êi tiÕp tôc cè g¾ng!");
+			Talk(1,"",tShifu[nIdx][5].."Our sect has <color=yellow>"..GetUnitCurStates(nNpcIdx,5).."<color> ®Ö tö dµnh th¾ng lîi khi tû vâ víi ®Ö tö m«n ph¸i kh¸c. Ch­ëng  m«n rÊt h·nh diÖn, quyÕt ®Þnh cho mçi ®Ö tö 2 Tiªu KiÕp t¸n vµ 20 tÝn vËt trang bÞ S­ M«n 4, hy väng mäi ng­êi tiÕp tôc cè g¾ng!");
 		else
 			Talk(1,"",tShifu[nIdx][5].."MÆc dï ng­¬i ®· cè g¾ng, nh­ng vâ häc bæn m«n nÕu chØ dùa vµo n¨ng lùc c¸ nh©n th× kh«ng ®ñ. Nh÷ng ®Ö tö håi b¸o chiÕn tÝch cña m×nh, sÏ ®­îc ch­ëng m«n ban th­ëng!");
 		end

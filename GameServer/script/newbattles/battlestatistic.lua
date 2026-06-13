@@ -17,13 +17,13 @@ BTS_TYPE_DEATH_COUNT = 4;		--±»É±´ÎÊýÅÅÐÐÐÅÏ¢
 --Í³¼ÆÄ£¿éÈë¿Ú
 function BTS_ViewBattleStatistic()
 	local selTab = {
-				"ChiÕn tr­êng Gi¶i Cøu N«ng Trang/BTS_ViewVillageBattle",
-				"ChiÕn tr­êng Thu ThËp L­¬ng Th¶o/BTS_ViewResourceBattle",
+				"Rescue the Farm Battlefield/BTS_ViewVillageBattle",
+				"Gather Provisions Battlefield/BTS_ViewResourceBattle",
 				"ChiÕn tr­êng B¶o VÖ Thµnh Tr×/BTS_ViewEmplacementBattle",
 				"ChiÕn tr­êng Nh¹n M«n Rùc Löa/BTS_ViewMainBattle",
 				"LÞch sö chiÕn tr­êng/BTS_ViewBattleHistory",
 				--"»ØÖ÷¶Ô»°/main",
-				"KÕt thóc/nothing",
+				"End/nothing",
 				}
 	Say("B¹n muèn xem tin tøc chiÕn tr­êng nµo?",getn(selTab),selTab);
 end;
@@ -33,7 +33,7 @@ function BTS_ViewVillageBattle()
 				"KÕt qu¶ cuèi cïng/#BTS_Battle_Final_Result(1)",
 				--"¸öÈË»ý·ÖÅÅÃû/#BTS_Public_Rank(1,2)",
 				"Quay l¹i néi dung tr­íc./BTS_ViewBattleStatistic",
-				"KÕt thóc/nothing",
+				"End/nothing",
 				}
 	Say("B¹n muèn xem néi dung nµo trong ChiÕn tr­êng Th«n trang:",getn(selTab),selTab);
 end;
@@ -43,7 +43,7 @@ function BTS_ViewResourceBattle()
 				"KÕt qu¶ cuèi cïng/#BTS_Battle_Final_Result(2)",
 				--"¸öÈË»ý·ÖÅÅÃû/#BTS_Public_Rank(2,2)",
 				"Quay l¹i néi dung tr­íc./BTS_ViewBattleStatistic",
-				"KÕt thóc/nothing",
+				"End/nothing",
 				}
 	Say("B¹n muèn xem néi dung nµo trong ChiÕn tr­êng Th¶o cèc:",getn(selTab),selTab);
 end;
@@ -55,7 +55,7 @@ function BTS_ViewEmplacementBattle()
 				--"±¾³¡»÷µ¹µÐÈË´ÎÊýÅÅÐÐ/#BTS_Public_Rank(3,3)",
 				--"±¾³¡±»»÷µ¹´ÎÊýÅÅÐÐ/#BTS_Public_Rank(3,4)",
 				"Quay l¹i néi dung tr­íc./BTS_ViewBattleStatistic",
-				"KÕt thóc/nothing",
+				"End/nothing",
 				}
 	Say("B¹n muèn xem néi dung nµo trong ChiÕn tr­êng ph¸o ®µi:",getn(selTab),selTab);
 end;
@@ -68,7 +68,7 @@ function BTS_ViewMainBattle()
 				--"±¾³¡±»»÷µ¹´ÎÊýÅÅÐÐ/#BTS_Public_Rank(4,4)",
 				--"Óª¾ÈÄÑÃñ´ÎÊýÅÅÐÐ/BTS_Main_Help_Refugee_Rank",
 				"Quay l¹i néi dung tr­íc./BTS_ViewBattleStatistic",
-				"KÕt thóc/nothing",
+				"End/nothing",
 				}
 	Say("B¹n muèn xem néi dung nµo trong Nh¹n M«n Quan:",getn(selTab),selTab);
 end;
@@ -96,11 +96,11 @@ function BTS_CB_Village_Final_Result(szKey,nBattleType,nRecordType,nRecordCount)
 	local _,nResult,nStepSong,nStepLiao,nYear,nMonth,nDay,nHour = GetRelayShareDataByIndex(szKey,nBattleType,nRecordType,0);
 	local sResultStr = "";
 	if nResult == 0 then
-		sResultStr = "2 phe hßa nhau";
+		sResultStr = "The two factions tied";
 	else
-		sResultStr = "<color=yellow>"..tCampNameZ[nResult].."<color> nhËn ®­îc"..tBattleName[nBattleType].." th¾ng lîi cuèi cïng";
+		sResultStr = "<color=yellow>"..tCampNameZ[nResult].."<color> nhËn ®­îc"..tBattleName[nBattleType].." the final victory";
 	end;
-	Talk(1,"BTS_ViewVillageBattle","T¹i"..nYear.."niªn"..nMonth.."NguyÖt"..nDay.."NhËt"..nHour.."kÕt qu¶ trËn ®Êu:"..sResultStr.."<enter>Phe Tèng t×m ®­îc: <color=yellow>"..nStepSong.."<color><enter>Phe Liªu t×m ®­îc: <color=yellow>"..nStepLiao.."<color>");
+	Talk(1,"BTS_ViewVillageBattle","At"..nYear.."year"..nMonth.."NguyÖt"..nDay.."day"..nHour.."kÕt qu¶ trËn ®Êu:"..sResultStr.."<enter>Phe Tèng t×m ®­îc: <color=yellow>"..nStepSong.."<color><enter>Phe Liªu t×m ®­îc: <color=yellow>"..nStepLiao.."<color>");
 end;
 --²Ý¹È³¡Õ½³¡×îÖÕ½á¹ûÍ³¼ÆÐÅÏ¢»Øµ÷º¯Êý
 function BTS_CB_Resource_Final_Result(szKey,nBattleType,nRecordType,nRecordCount)
@@ -111,11 +111,11 @@ function BTS_CB_Resource_Final_Result(szKey,nBattleType,nRecordType,nRecordCount
 	local _,nResult,nResSong,nResLiao,nYear,nMonth,nDay,nHour = GetRelayShareDataByIndex(szKey,nBattleType,nRecordType,0);
 	local sResultStr = "";
 	if nResult == 0 then
-		sResultStr = "2 phe hßa nhau";
+		sResultStr = "The two factions tied";
 	else
-		sResultStr = "<color=yellow>"..tCampNameZ[nResult].."<color> nhËn ®­îc"..tBattleName[nBattleType].." th¾ng lîi cuèi cïng";
+		sResultStr = "<color=yellow>"..tCampNameZ[nResult].."<color> nhËn ®­îc"..tBattleName[nBattleType].." the final victory";
 	end;
-	Talk(1,"BTS_ViewResourceBattle","T¹i"..nYear.."niªn"..nMonth.."NguyÖt"..nDay.."NhËt"..nHour.."kÕt qu¶ trËn ®Êu:"..sResultStr.."<enter>Sè l­¬ng th¶o phe Tèng: <color=yellow>"..nResSong.."<color><enter>Sè l­¬ng th¶o phe Liªu: <color=yellow>"..nResLiao.."<color>");
+	Talk(1,"BTS_ViewResourceBattle","At"..nYear.."year"..nMonth.."NguyÖt"..nDay.."day"..nHour.."kÕt qu¶ trËn ®Êu:"..sResultStr.."<enter>Sè l­¬ng th¶o phe Tèng: <color=yellow>"..nResSong.."<color><enter>Sè l­¬ng th¶o phe Liªu: <color=yellow>"..nResLiao.."<color>");
 end;
 --ÅÚÌ¨Õ½³¡×îÖÕ½á¹ûÍ³¼ÆÐÅÏ¢»Øµ÷º¯Êý
 function BTS_CB_Emplacement_Final_Result(szKey,nBattleType,nRecordType,nRecordCount)
@@ -126,11 +126,11 @@ function BTS_CB_Emplacement_Final_Result(szKey,nBattleType,nRecordType,nRecordCo
 	local _,nResult,nTimeSong,nTimeLiao,nPubPointSong,nPubPointLiao,nDeathSong,nDeathLiao,nYear,nMonth,nDay,nHour = GetRelayShareDataByIndex(szKey,nBattleType,nRecordType,0);
 	local sResultStr = "";
 	if nResult == 0 then
-		sResultStr = "2 phe hßa nhau";
+		sResultStr = "The two factions tied";
 	else
-		sResultStr = "<color=yellow>"..tCampNameZ[nResult].."<color> nhËn ®­îc"..tBattleName[nBattleType].." th¾ng lîi cuèi cïng";
+		sResultStr = "<color=yellow>"..tCampNameZ[nResult].."<color> nhËn ®­îc"..tBattleName[nBattleType].." the final victory";
 	end;
-	Talk(1,"BTS_ViewEmplacementBattle","T¹i"..nYear.."niªn"..nMonth.."NguyÖt"..nDay.."NhËt"..nHour.."kÕt qu¶ trËn ®Êu:"..sResultStr.."<enter>Thêi gian chiÕm lÜnh ph¸o ®µi cña phe Tèng: <color=yellow>"..nTimeSong.." gi©y<color> Thêi gian chiÕm lÜnh ph¸o ®µi cña phe Liªu: <color=yellow>"..nTimeLiao.." gi©y<color><enter>§iÓm tÝch lòy phe Tèng: <color=yellow>"..nPubPointSong.."<color>§iÓm tÝch lòy phe Liªu: <color=yellow>"..nPubPointLiao.."<color><enter>Sè ng­êi th­¬ng vong phe Tèng: <color=yellow>"..nDeathSong.."<color> Sè ng­êi th­¬ng vong phe Liªu: <color=yellow>"..nDeathLiao.."<color>");
+	Talk(1,"BTS_ViewEmplacementBattle","At"..nYear.."year"..nMonth.."NguyÖt"..nDay.."day"..nHour.."kÕt qu¶ trËn ®Êu:"..sResultStr.."<enter>Thêi gian chiÕm lÜnh ph¸o ®µi cña phe Tèng: <color=yellow>"..nTimeSong.." gi©y<color> Thêi gian chiÕm lÜnh ph¸o ®µi cña phe Liªu: <color=yellow>"..nTimeLiao.." gi©y<color><enter>§iÓm tÝch lòy phe Tèng: <color=yellow>"..nPubPointSong.."<color>§iÓm tÝch lòy phe Liªu: <color=yellow>"..nPubPointLiao.."<color><enter>Sè ng­êi th­¬ng vong phe Tèng: <color=yellow>"..nDeathSong.."<color> Sè ng­êi th­¬ng vong phe Liªu: <color=yellow>"..nDeathLiao.."<color>");
 end;
 --ÑãÃÅ¹ØÕ½³¡×îÖÕ½á¹ûÍ³¼ÆÐÅÏ¢»Øµ÷º¯Êý
 function BTS_CB_Main_Final_Result(szKey,nBattleType,nRecordType,nRecordCount)
@@ -141,15 +141,15 @@ function BTS_CB_Main_Final_Result(szKey,nBattleType,nRecordType,nRecordCount)
 	local _,nResult,nPubPointSong,nPubPointLiao,nHelpRefugeeSong,nHelpRefugeeLiao,nDeathSong,nDeathLiao,nYear,nMonth,nDay,nHour = GetRelayShareDataByIndex(szKey,nBattleType,nRecordType,0);
 	local sResultStr = "";
 	if nResult == 0 then
-		sResultStr = "2 phe hßa nhau";
+		sResultStr = "The two factions tied";
 	else
-		sResultStr = "<color=yellow>"..tCampNameZ[nResult].."<color> nhËn ®­îc"..tBattleName[nBattleType].." th¾ng lîi cuèi cïng";
+		sResultStr = "<color=yellow>"..tCampNameZ[nResult].."<color> nhËn ®­îc"..tBattleName[nBattleType].." the final victory";
 	end;
-	Talk(1,"BTS_ViewMainBattle","T¹i"..nYear.."niªn"..nMonth.."NguyÖt"..nDay.."NhËt"..nHour.."kÕt qu¶ trËn ®Êu:"..sResultStr.."<enter>§iÓm tÝch lòy phe Tèng: <color=yellow>"..nPubPointSong.."<color>§iÓm tÝch lòy phe Liªu: <color=yellow>"..nPubPointLiao.."<color><enter>Sè n¹n d©n phe Tèng cøu: <color=yellow>"..nHelpRefugeeSong.."<color> Sè n¹n d©n phe Liªu cøu: <color=yellow>"..nHelpRefugeeLiao.."<color><enter>Sè ng­êi th­¬ng vong phe Tèng: <color=yellow>"..nDeathSong.."<color> Sè ng­êi th­¬ng vong phe Liªu: <color=yellow>"..nDeathLiao.."<color>");
+	Talk(1,"BTS_ViewMainBattle","At"..nYear.."year"..nMonth.."NguyÖt"..nDay.."day"..nHour.."kÕt qu¶ trËn ®Êu:"..sResultStr.."<enter>§iÓm tÝch lòy phe Tèng: <color=yellow>"..nPubPointSong.."<color>§iÓm tÝch lòy phe Liªu: <color=yellow>"..nPubPointLiao.."<color><enter>Sè n¹n d©n phe Tèng cøu: <color=yellow>"..nHelpRefugeeSong.."<color> Sè n¹n d©n phe Liªu cøu: <color=yellow>"..nHelpRefugeeLiao.."<color><enter>Sè ng­êi th­¬ng vong phe Tèng: <color=yellow>"..nDeathSong.."<color> Sè ng­êi th­¬ng vong phe Liªu: <color=yellow>"..nDeathLiao.."<color>");
 end;
 --Õ½³¡¸öÈË»ý·ÖÅÅÐÐÍ³¼ÆÐÅÏ¢»Øµ÷º¯Êý£¬Ö»ÊÊÓÃÓÚËùÓÐÕ½³¡¹²Í¬µÄÄÇÐ©ÅÅÃû
 function BTS_CB_Show_Pub_Rank(szKey,nBattleType,nRecordType,nRecordCount)
-	local tTitle = {""," TÝch lòy c¸ nh©n","Sè lÇn giÕt ®Þch ","Sè lÇn bÞ giÕt"};	--µÚÒ»¸ö±»ÓÃ×÷Í³¼Æ×îÖÕ½á¹ûÁË¡£ÕâÑùÉè¼ÆºÃÏñ²»Ì«Í×£¬ÔÝÊ±²»¹Ü°É
+	local tTitle = {""," Personal accumulation","Sè lÇn giÕt ®Þch ","Sè lÇn bÞ giÕt"};	--µÚÒ»¸ö±»ÓÃ×÷Í³¼Æ×îÖÕ½á¹ûÁË¡£ÕâÑùÉè¼ÆºÃÏñ²»Ì«Í×£¬ÔÝÊ±²»¹Ü°É
 	local tReturnFunc = {"BTS_ViewVillageBattle","BTS_ViewResourceBattle","BTS_ViewEmplacementBattle","BTS_ViewMainBattle"};
 	if nRecordCount == 0 then
 		Talk(1,tReturnFunc[BT_GetTempData(PTT_SNAPSHOOT)],"HiÖn kh«ng cã tin tøc");
@@ -175,7 +175,7 @@ function BTS_Show_Rank_Page(sTitle,nPageNum,szKey,nBattleType,nRecordType,nRecor
 	local nMaxIndex = GetMaxItemCountPerPage(nPageNum,nRecordCount);
 	local nCurStartIndex = (nPageNum-1)*BTS_MAX_ITEM_COUNT
 	local sName,nData,nRoute,nLevel,nCamp = "",0,0,0,0;
-	local sContent = gf_FormatStringLength("H¹ng",6)..gf_FormatStringLength("Tªn",18)..gf_FormatStringLength("M«n ph¸i",10)..gf_FormatStringLength("CÊp",6)..gf_FormatStringLength(sTitle,strlen(sTitle)+2)..gf_FormatStringLength("Phe",4).."<enter>";
+	local sContent = gf_FormatStringLength("Rank",6)..gf_FormatStringLength("Name",18)..gf_FormatStringLength("M«n ph¸i",10)..gf_FormatStringLength("CÊp",6)..gf_FormatStringLength(sTitle,strlen(sTitle)+2)..gf_FormatStringLength("Phe",4).."<enter>";
 	for i=nCurStartIndex,nCurStartIndex+nMaxIndex-1 do
 		sName,nData,nRoute,nLevel,nCamp = GetRelayShareDataByIndex(szKey,nBattleType,nRecordType,i)
 		sContent = sContent..gf_FormatStringLength(i+1,6)..gf_FormatStringLength(sName,18)..gf_FormatStringLength(tRoute[nRoute],10)..gf_FormatStringLength(nLevel,6)..gf_FormatStringLength(nData,strlen(sTitle)+2)..gf_FormatStringLength(tCampNameZ[nCamp],4).."<enter>"
@@ -268,9 +268,9 @@ function BTS_CB_History_Record_M(szKey, nKey1, nKey2, nRecordCount)
 	BT_ShowDebugInfor("nSongWinM:"..nSongWinM..", nLiaoWinM:"..nLiaoWinM..", nDrawM:"..nDrawM);
 	Talk(1,"BTS_ViewBattleStatistic","LÞch sö chiÕn tr­êng Tèng-Liªu: <enter>"
 		..gf_FormatStringLength(" ",20).."<color=yellow>"..gf_FormatStringLength("Sè lÇn phe Tèng th¾ng",11).."<color=green>"..gf_FormatStringLength("Sè lÇn phe Liªu th¾ng",11).."<color=red>"..gf_FormatStringLength("Sè lÇn ®«i bªn hßa",11).."\n"
-		..gf_FormatStringLength("ChiÕn tr­êng Th«n trang",25).."<color=yellow>"..gf_FormatStringLength(nSongWinV,11).."<color=green>"..gf_FormatStringLength(nLiaoWinV,11).."<color=red>"..gf_FormatStringLength(nDrawV,11).."<color>\n"
-		..gf_FormatStringLength("ChiÕn tr­êng Th¶o cèc",25).."<color=yellow>"..gf_FormatStringLength(nSongWinR,11).."<color=green>"..gf_FormatStringLength(nLiaoWinR,11).."<color=red>"..gf_FormatStringLength(nDrawR,11).."<color>\n"
-		..gf_FormatStringLength("ChiÕn tr­êng ph¸o ®µi",25).."<color=yellow>"..gf_FormatStringLength(nSongWinE,11).."<color=green>"..gf_FormatStringLength(nLiaoWinE,11).."<color=red>"..gf_FormatStringLength(nDrawE,11).."<color>\n"
+		..gf_FormatStringLength("Farm Battlefield",25).."<color=yellow>"..gf_FormatStringLength(nSongWinV,11).."<color=green>"..gf_FormatStringLength(nLiaoWinV,11).."<color=red>"..gf_FormatStringLength(nDrawV,11).."<color>\n"
+		..gf_FormatStringLength("Provisions Battlefield",25).."<color=yellow>"..gf_FormatStringLength(nSongWinR,11).."<color=green>"..gf_FormatStringLength(nLiaoWinR,11).."<color=red>"..gf_FormatStringLength(nDrawR,11).."<color>\n"
+		..gf_FormatStringLength("Emplacement Battlefield",25).."<color=yellow>"..gf_FormatStringLength(nSongWinE,11).."<color=green>"..gf_FormatStringLength(nLiaoWinE,11).."<color=red>"..gf_FormatStringLength(nDrawE,11).."<color>\n"
 		..gf_FormatStringLength("ChiÕn tr­êng Nh¹n M«n quan",25).."<color=yellow>"..gf_FormatStringLength(nSongWinM,11).."<color=green>"..gf_FormatStringLength(nLiaoWinM,11).."<color=red>"..gf_FormatStringLength(nDrawM,11).."<color>\n"
 		..gf_FormatStringLength("tæng céng",25).."<color=yellow>"..gf_FormatStringLength(nTotalSongWin,11).."<color=green>"..gf_FormatStringLength(nTotalLiaoWin,11).."<color=red>"..gf_FormatStringLength(nTotalDraw,11).."<color>");
 end;

@@ -13,11 +13,11 @@ function main()
 	end
 	if tGtTask:check_cur_task(917) == 1 then
 		if gf_GetTaskByte(TASKID_SW_CHECK_DOUBTFUL_GOODS,1) == 1 then return 0; end; 
-		local nNpcIdx = CreateNpc("TuyÖt t×nh","H¾c y nh©n",604,1482,2831); 
+		local nNpcIdx = CreateNpc("Heartless","Black-clad man",604,1482,2831); 
 		SetNpcLifeTime(nNpcIdx,15);        
-		nNpcIdx = CreateNpc("TuyÖt t×nh","H¾c y nh©n",604,1481,2824);
+		nNpcIdx = CreateNpc("Heartless","Black-clad man",604,1481,2824);
 		SetNpcLifeTime(nNpcIdx,15);
-		local nNpcIdx = CreateNpc("TuyÖt t×nh","H¾c y nh©n",604,1484,2823);
+		local nNpcIdx = CreateNpc("Heartless","Black-clad man",604,1484,2823);
 		SetNpcLifeTime(nNpcIdx,15);
 		CastState("state_lost_life_per18",150,18*30,0,1); --Íæ¼ÒÃ¿ÃëµôÑª10%
 		gf_AddItemEx({2,96,111,1,4},"Thuèc gi¶i cña h¾c nh©n");
@@ -27,7 +27,7 @@ function main()
 	end
 	if tGtTask:check_cur_task(918) == 1 then
 		if gf_GetTaskByte(TASKID_SW_CHECK_DOUBTFUL_GOODS,2) == 1 then return 0; end;
-		gf_AddItemEx({2,96,112,1,4},"ChiÕc hép ®· bÞ më ra");
+		gf_AddItemEx({2,96,112,1,4},"The box has been opened");
 		gf_SetTaskByte(TASKID_SW_CHECK_DOUBTFUL_GOODS,2,1)
 	end
 end

@@ -31,7 +31,7 @@ end
 	Tb_quipment_part = {
 		{0,"§Çu kh«i"},
 		{1,"Ngo¹i trang"},
-		{3,"QuÇn "},
+		{3,"Pants"},
 	}
 --=========================================
 function qianghua()
@@ -100,7 +100,7 @@ function bagua()
 	"Lµm thÕ nµo kh¶m linh th¹ch vµo trang bÞ/Xiangqian",
 	"Lµm sao kh¶m linh th¹ch míi cã thÓ h×nh thµnh trang bÞ b¸t qu¸i/Xiangbagua",
 	"Trang bÞ b¸t qu¸i cã c­êng hãa kh«ng/Baguaqianghua",
-	"§Õn hái th¨m th«i mµ!/SayHello"
+	"Just dropping by to say hello!/SayHello"
 	)
 end
 function SayHello()

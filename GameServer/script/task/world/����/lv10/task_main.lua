@@ -35,15 +35,15 @@ function Accept_Task_000()
 local strTalk = {
 	"NÕu vËy phiÒn b»ng h÷u mét chuyÕn nhÐ!",
 	"TiÓu n÷ lµ TrÞnh Qu¸n Chi lÇn nµy ®Õn §¹i Lý bu«n b¸n, kh«ng may bÞ ng­êi cña Xi Háa gi¸o c­íp mÊt d­îc liÖu. Cã thÓ gióp ta ®Õn Thóy Yªn M«n ®em 15 d­îc liÖu vÒ kh«ng?",
-	"ChuyÖn nhá th«i mµ!"
+	"It's a small matter!"
 };
 	if (GetCash() >= 150000) then
 		Pay(150000)
 		TalkEx("",strTalk);
 		SetTask(TASK_DL_LV10_ID,1);
 		CreateTrigger(0,250,KILL_DL_POINSONBEE);
-		TaskTip("Gióp TrÞnh Qu¸n Chi t×m d­îc liÖu.");
-		Msg2Player("Gióp TrÞnh Qu¸n Chi t×m d­îc liÖu.");
+		TaskTip("Help Trinh Quan Chi find the medicinal herbs.");
+		Msg2Player("Help Trinh Quan Chi find the medicinal herbs.");
 	elseif ( GetCash() < 150000  ) then
 			Talk(1,"","Trêi! Xem bé d¹ng ng­¬i mét xu dÝnh tói còng kh«ng cã µ?")		
 	end
@@ -57,7 +57,7 @@ local strTalk_1 = {
 	"§a t¹! PhiÒn <sex> gióp ta t×m 15 d­îc liÖu."
 };
 local strTalk_2 = {
-	"Ta ®· t×m ®ñ {15 d­îc liÖu}",
+	"I have found all of the {15 medicinal herbs}",
 	"Nhanh nh­ vËy ®· vÒ råi ­? Nh­ng ta võa ph¸t hiÖn hãa ®¬n mua hµng ®· bÞ Xi Háa Yªu N÷ lÊy ®i. <sex> cã thÓ gióp ta ®em vÒ ®­îc kh«ng?",
 	"§Ö tö tu©n lÖnh!"
 };
@@ -76,8 +76,8 @@ local strTalk_2 = {
 	elseif GetTrigger(KILL_DL_POINSONBEE) == 0 then
 		CreateTrigger(0,250,KILL_DL_POINSONBEE);
 		TalkEx("",strTalk_1);
-		TaskTip("Gióp TrÞnh Qu¸n Chi t×m d­îc liÖu.");
-		Msg2Player("Gióp TrÞnh Qu¸n Chi t×m d­îc liÖu.");
+		TaskTip("Help Trinh Quan Chi find the medicinal herbs.");
+		Msg2Player("Help Trinh Quan Chi find the medicinal herbs.");
 		return
 	else
 		TalkEx("",strTalk_1);
@@ -105,7 +105,7 @@ local strTalk = {
 	"NghÜ còng kú l¹, Xi Háa gi¸o c­íp d­îc liÖu cña ta ®Ó lµm g× chø?",
 	"C« còng kh«ng biÕt nguyªn nh©n v× sao ­?",
 	"Ta lµ ng­êi H¸n, míi ®Õn §¹i Lý lµm ¨n nªn còng kh«ng hiÓu t×nh h×nh ë ®©y l¾m. Nh­ng nghe nãi nÕu cã g× liªn quan ®Õn Xi Háa gi¸o th× cã thÓ t×m Quèc c«ng Cao Th¨ng TuyÒn ®Ó hái.",
-	"§­îc! §Ó ta ®i hái xem."
+	"Very well! Let me go and ask."
 };
 	DelItem(2,0,363,1);
 	SetTask(TASK_DL_LV10_ID,4);
@@ -147,7 +147,7 @@ local strTalk = {
 	"Muèn t×m hiÓu mèi quan hÖ gi÷a Miªu LÜnh vµ Xi Háa gi¸o chØ cßn c¸ch lµ c­íp th­, nh­ng nhí lµ ®õng lµm tæn h¹i ®Õn tÝnh mÖnh chóng.",
 	"VËy còng ®­îc! Nh­ng lµm sao ®Ó t×m chóng?",
 	"Tr­íc tiªn h·y ®Õn YÕn Tö ®éng tÇng 1 t×m 10 tÊm Da h­¬u, ta sÏ gióp ng­¬i lµm tÝn hiÖu cña Miªu LÜnh. Sau ®ã quay l¹i YÕn Tö ®éng tÇng 1, chØ cÇn ng­¬i thæi lªn th× Miªu LÜnh Lùc SÜ sÏ xuÊt hiÖn.",
-	"Ta ®i ngay ®©y.",
+	"I will go right now.",
 	}
 	TalkEx("",strTalk);
 	SetTask(TASK_DL_LV40_ID,7);
@@ -167,7 +167,7 @@ local strTalk = {
 	if GetItemCount(2,0,366) >= 10 then
 		strTalk = {
 			"<sex> ®· t×m ®ñ råi ­?",
-			"{10 tÊm Da h­¬u} ®©y!",
+			"Here are the {10 deer hides}!",
 			"Tèt qu¸! Ta lËp tøc lµm TÝn tiªu ®©y. <sex> ®îi ta mét l¸t nhÐ!.",
 			"…",
 			"Xong råi. <sex> h·y ®Õn YÕn Tö ®éng dïng TÝn tiªu nµy thæi lªn lµm tÝn hiÖu lËp tøc TÝn sø Miªu LÜnh sÏ xuÊt hiÖn. Nh­ng <sex> ph¶i cÈn thËn!",
@@ -246,9 +246,9 @@ function task_008_00()
 		local strTalk = {
 			"TrÞnh c« n­¬ng, bøc th­ Êy thÕ nµo r«×?",
 			"<sex> yªn t©m, tuy lµ xem kh«ng hiÓu, nh­ng ta cã biÕt mét ng­êi cã thÓ ®äc ®­îc th­ nµy.",
-			"Lµ ai vËy?",
+			"Who is that?",
 			"Lµ TrÇn LËp Hoµnh, gèc lµ ng­êi H¸n nh­ng do ®Õn §¹i Lý còng ®· l©u nªn hiÓu ®­îc ng«n ng÷ ë ®ã.",
-			"Tèt qu¸, ta lËp tøc ®i t×m «ng Êy!",
+			"Excellent, I will go find him at once!",
 			}
 		TalkEx("",strTalk);
 		SetTask(TASK_DL_LV45_ID,5);
@@ -281,14 +281,14 @@ local strTalk = {
 	"<sex> vÒ råi ­?",
 	"Ta nghÜ Xi Háa Gi¸o v× ©n o¸n cña bé téc mµ t¸c lo¹n, môc ®Ých lµ ®Ó g©y ¸p lùc phÕ ng«i ®­¬ng kim Hoµng ®Õ. Ta nghe Téc tr­ëng Miªu LÜnh nãi §o¹n ThÞ chÝnh lµ ¤ Man cã liªn quan huyÕt thèng víi B¹ch Téc. V× vËy Xi Háa gi¸o kh«ng nh÷ng ph¶n ®èi mµ cßn ñng hé §o¹n ThÞ.",
 	"Hä cßn nãi g× n÷a?",
-	"Hä b¶o ta ®Õn gÆp {Cao Qu¶n Quý Téc} ®Ó hái.",
+	"They told me to go and ask the {Cao Quan Quy Toc}.",
 	"VËy ng­¬i mau ®i hái ®i. Ng­êi mµ Miªu LÜnh nh¾c ®Õn ®ã ng­¬i cã quen kh«ng?",
 	"Ph¶i hái {Cao Qu¶n Quý Téc} ®·, ta cßn ch­a biÕt {Quèc C«ng Cao Th¨ng TuyÒn} n÷a k×a.",
 	}
 	TalkEx("",strTalk);
 	SetTask(TASK_DL_LV50_ID,7);
-	TaskTip("§Õn gÆp Cao Th¨ng TuyÒn");	
-	Msg2Player("§Õn gÆp Cao Th¨ng TuyÒn");
+	TaskTip("Go meet Cao Thang Tuyen");	
+	Msg2Player("Go meet Cao Thang Tuyen");
 	GivePlayerAward("Level_50","xn_step_4");
 	GivePlayerWeapon("Level_52",1);
 	GivePlayerExp(SkeyDali,"wujikeshi")
@@ -314,13 +314,13 @@ local strTalk = {};
 			
 		strTalk = {
 			"TrÞnh c« n­¬ng, {§æng Quèc S­} nhê ta chuyÓn {tiÒn hµng} cho c«.",
-			"§¹ t¹ <sex>.",
+			"Thank you, <sex>.",
 			"Ng­¬i võa míi ®¸nh b¹i D¹ Xoa µ? VÊt v¶ cho ng­¬i qu¸!",
 			"Sao c« n­¬ng biÕt chuyÖn nµy? Ta võa ®i gÆp {§æng Quèc S­}",
 			"<sex> cã thÓ gióp ta ®­îc kh«ng?",
 			"Xin cø nãi",
 			"Vò n­¬ng ë Thµnh §« vµ BiÖn Kinh cßn nî ta mét mãn tiÒn, ng­¬i cã thÓ ®i lÊy vÒ gióp ta kh«ng?",
-			"§­îc! Ta sÏ ®i ngay!",
+			"Very well! I will go at once!",
 			"Mçi ng­¬i cßn nî ta 10 l­îng, phiÒn b»ng h÷u nhÐ!",
 			}
 		TalkEx("",strTalk);
@@ -419,7 +419,7 @@ local strTalk = {
 	"Ng­¬i ®Õn gióp {TrÞnh Qu¸n Chi} ®ßi nî.",
 	"§óng vËy, c« n­¬ng cã thÓ tr¶ nî chø?",
 	"ThÕ nµy vËy, ta ®ang muèn may bé trang phôc míi nh­ng cßn thiÕu {10 HuyÕt Nha Vò}, cã thÓ gióp ta kh«ng?",
-	"§­îc th«i.",
+	"Very well.",
 	"§Õn {B¹ch Thñy ®éng tÇng 2} ®¸nh {¸c lµ} cã thÓ t×m ®­îc {HuyÕt Nha Vò}.",
 	}
 	TalkEx("",strTalk);
@@ -441,7 +441,7 @@ local strTalk = {
 	if GetItemCount(2,1,285) >= 10 then
 		DelItem(2,1,285,10);
 		strTalk = {
-			"Ta ®· t×m ®ñ {10 HuyÕt Nha Vò}",
+			"I have found all of the {10 Blood Fang Feathers}",
 			"Tèt qu¸, 10 l­îng ®©y, xin nhËn lÊy!",
 			}
 --		Earn(100000);
@@ -608,7 +608,7 @@ end
 function task_022_00()
 
 local strTalk = {
-	"<sex> vÊt v¶ qu¸!",
+	"<sex>, you have worked so hard!",
 	"Kh«ng cÇn kh¸ch s¸o, ta cã vµi ®Òu muèn nãi víi c« n­¬ng.",
 	"<sex> nãi ®i.",
 	"Sao c« n­¬ng quan t©m ®Õn {Xi Háa gi¸o} ®Õn vËy?",
@@ -640,7 +640,7 @@ function task_022_02()
 
 local strTalk = {
 	"Vò Di s¬n thuéc B¾c TuyÒn Ch©u cã L­ìng Thñy ®éng. Xi Háa gi¸o ®å th­êng xuÊt hiÖn ë ®ã, hái ra míi biÕt chóng cã quan hÖ víi Ma H« La Ca.",
-	"{Ma H« La Ca}?",	
+	"{Ma Ho La Ca}?",	
 	"Con ng­êi nµy h×nh d¸ng kú dÞ, ®Çu ng­êi th©n r¾n. Ma H« La Ca lµ tªn mäi ng­êi gäi ®Ó x­ng tông h¾n. Thùc chÊt h¾n lµ mét trong nh÷ng hung thñ giÕt gia téc hä TrÞnh ta.",
 	"Ch¶ tr¸ch gia téc c« n­¬ng l¹i l­u t©m ®Õn hä nh­ vËy.",
 	}
@@ -662,7 +662,7 @@ end
 function task_022_04()
 
 local strTalk = {
-	"...Cã!",
+	"...I have!",
 	"Qu¸i vËt ®ã hiÖn giê ë ®©u?",
 	"Ha M« La Ca rÊt cã kh¶ n¨ng h¾n ®ang ë phÝa b¾c T©y Song B¶n N¹p. H¾n ®­îc Xi Háa gi¸o gäi ®Õn ®ã ®Ó phôc håi søc m¹nh. HiÖn giê søc lùc cña h¾n håi phôc ch­a ®­îc nhiÒu. <sex> h·y tranh thñ thêi gian ®Õn ®ã ®¸nh b¹i h¾n. Tiªu trõ ®­îc tªn qu¸i vËt nµy c¶ gia téc hä TrÞnh ta suèt ®êi ghi ¬n ng­¬i.",
 	"Qu¸i vËt ®ã nguy hiÓm nh­ vËy, ta nhÊt ®Þnh ph¶i gióp c« n­¬ng råi.",
@@ -672,8 +672,8 @@ local strTalk = {
 	TalkEx("",strTalk);
 	SetTask(TASK_DL_LV75_ID,7);
 	GivePlayerExp(SkeyDali,"zhengshihouren")
-	Msg2Player("§Õn t©y Song B¶n N¹p giÕt Ma H« La Ca.");
-	TaskTip("§Õn t©y Song B¶n N¹p giÕt Ma H« La Ca.");
+	Msg2Player("Go to Xishuangbanna and kill Hama Laka.");
+	TaskTip("Go to Xishuangbanna and kill Hama Laka.");
 	return
 end
 
@@ -693,7 +693,7 @@ function task_024_00()
 
 local strTalk = {
 	"Ng­¬i ®· diÖt ®­îc Ma H« La Ca råi ­?",
-	"§óng vËy.",
+	"That is right.",
 	"Ng­¬i qu¶ lµ h¶o h¸n, c¶ TrÞnh téc ta mang ¬n <sex>.",
 	}
 	

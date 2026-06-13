@@ -11,8 +11,8 @@ Include("\\script\\lib\\message.lua");
 Include("\\script\\lib\\define.lua");
 Include("\\script\\global\\skill_app.lua")
 
-g_szLogCaption		= "CÈm Nang §¸ Kü N¨ng";
-g_szTitle			= "<color=green>CÈm Nang §¸ Kü N¨ng<color>";
+g_szLogCaption		= "Skill Stone Manual";
+g_szTitle			= "<color=green>Skill Stone Manual<color>";
 g_tCheckOutPlayer	= {};
 g_tComposePlayer	= {};
 g_tDecomposePlayer	= {};
@@ -34,7 +34,7 @@ function OnUse_SKillAppBox()
 		"Ta muèn rót §¸ Kü N¨ng			/CheckOutSkillAppMenu",
 		"Ta muèn ghÐp §¸ Kü N¨ng			/ComposeSkillAppMenu",
 		"Ta muèn t¸ch §¸ Kü N¨ng			/DecomposeSkillAppMenu",
-		"Ra khái	/nothing",
+		"Exit	/nothing",
 	};
 	suSay(szMsg, getn(tMenu), tMenu);
 	return 1;
@@ -83,7 +83,7 @@ function CheckOutSkillAppMenu()
 		item_lv, item_count, 
 		item_lv, item_count));
 	end
-	tinsert(tMenu, "Ra khái	/nothing");
+	tinsert(tMenu, "Exit	/nothing");
 	
 	suSay(szMsg, getn(tMenu), tMenu);
 end
@@ -96,7 +96,7 @@ function CheckOutSkillApp(nItemLevel, nItemMaxCount)
 	end
 	
 	g_tCheckOutPlayer[GetName()] = nItemLevel;
-	AskClientForNumber("CheckOutSkillAppCallBack", 0, nItemMaxCount, "Muèn rót bao nhiªu?");
+	AskClientForNumber("CheckOutSkillAppCallBack", 0, nItemMaxCount, "How many do you want to take out?");
 end
 
 function CheckOutSkillAppCallBack(nCount)
@@ -109,7 +109,7 @@ function CheckOutSkillAppCallBack(nCount)
 	
 	gf_SetLogCaption(g_szLogCaption);
 	if 1 == DelSkillAppCount(nItemLevel, nCount, 1) then
-		gf_AddItemEx({item_other, enumOD_SKILL_APP, nItemLevel}, format("§¸ Kü N¨ng CÊp %d", nItemLevel), nCount);
+		gf_AddItemEx({item_other, enumOD_SKILL_APP, nItemLevel}, format("Level %d Skill Stone", nItemLevel), nCount);
 	end
 	gf_SetLogCaption("");
 end
@@ -127,7 +127,7 @@ function ComposeSkillAppMenu()
 			item_lv, nComposeCount));
 		end
 	end
-	tinsert(tMenu, "Ra khái	/nothing");
+	tinsert(tMenu, "Exit	/nothing");
 	
 	suSay(szMsg, getn(tMenu), tMenu);
 end
@@ -140,7 +140,7 @@ function ComposeSkillApp(nItemSrcLevel, nComposeMaxCount)
 	end
 	
 	g_tComposePlayer[GetName()] = nItemSrcLevel;
-	AskClientForNumber("ComposeSkillAppCallBack", 0, nComposeMaxCount, "Muèn ghÐp bao nhiªu?");
+	AskClientForNumber("ComposeSkillAppCallBack", 0, nComposeMaxCount, "How many do you want to combine?");
 end
 
 function ComposeSkillAppCallBack(nCount)
@@ -184,7 +184,7 @@ function DecomposeSkillAppMenu()
 				item_lv, g_nComposeNeedCount, item_lv - 1, item_count, item_lv, item_count));
 		end
 	end
-	tinsert(tMenu, "Ra khái	/nothing");
+	tinsert(tMenu, "Exit	/nothing");
 	
 	suSay(szMsg, getn(tMenu), tMenu);
 end
@@ -196,7 +196,7 @@ function DecomposeSkillApp(nItemSrcLevel, nItemCount)
 		return 0;
 	end
 	g_tDecomposePlayer[GetName()] = nItemSrcLevel;
-	AskClientForNumber("DecomposeSkillAppCallBack", 0, nItemCount, "Muèn t¸ch bao nhiªu?");
+	AskClientForNumber("DecomposeSkillAppCallBack", 0, nItemCount, "How many do you want to split?");
 end
 
 function DecomposeSkillAppCallBack(nCount)
@@ -224,7 +224,7 @@ function DecomposeSkillAppCallBack(nCount)
 		return 0;
 	end
 	
-	WriteLog(format("[T¸ch §¸ Kü N¨ng][acc:%s role:%s][T¸ch §¸ Kü N¨ng CÊp %dx%d][Thªm §¸ Kü N¨ng CÊp %d x%d]",
+	WriteLog(format("[Split Skill Stone][acc:%s role:%s][Split Level %d Skill Stone x%d][Add Level %d Skill Stone x%d]",
 		GetAccount(), GetName(), nLevel, nCount, nLevel - 1, nCount * g_nComposeNeedCount));
 		
 	Talk(1, "", format("%s: LÇn nµy t¸ch thµnh c«ng %d §¸ Kü N¨ng CÊp %d, nhËn ®­îc %d §¸ Kü N¨ng CÊp %d",

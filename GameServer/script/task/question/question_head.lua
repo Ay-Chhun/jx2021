@@ -54,7 +54,7 @@ QA_RowRate = {};
 -- »Ø´ðÎÊÌâ¶ÔÓë´íµÄ¹ý³ÌÃû£¬ÓÃÓÚ×éºÏ×Ö·ûÊý×é
 QA_RightFunction = "/AnswerRight";
 QA_ErrorFunction = "/AnswerError";
-QA_ExitFunction = "Cho ta suy nghÜ chót ®·!/MainExit";
+QA_ExitFunction = "Let me think it over a moment!/MainExit";
 -- 
 QA_TitleText = "<enter>";
 
@@ -93,7 +93,7 @@ local strMain = {""}; -- ×îÖÕÊä³ö³É SAY º¯ÊýµÄ×Ö·û´®Êý×é
 local i,j = 0,0;
 
 
-	strMain[1] = QA_TitleText.."Tæng céng ng­¬i tr¶ lêi ®óng "..GetTask(QA_RIGHTSTATE).."  c©u hái! ".."§©y lµ c©u hái thø  "..(GetTask(QA_FINISHNUM) + 1).." :"..strTitle;
+	strMain[1] = QA_TitleText.."Tæng céng ng­¬i tr¶ lêi ®óng "..GetTask(QA_RIGHTSTATE).."  questions!".."This is question number"..(GetTask(QA_FINISHNUM) + 1).." :"..strTitle;
 
 	for i=1, nKeyNum do
 		strRead = tabFile:getCell(nRow, "Key"..i);

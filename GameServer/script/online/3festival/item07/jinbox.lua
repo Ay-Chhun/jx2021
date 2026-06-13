@@ -25,8 +25,8 @@ SYS_TSK_PEIFANG_SEVEN = 2334;  --7¼¶Åä·½µÄÊýÁ¿
 function OnUse()
 	Say("Më r­¬ng vµng ThÞnh ThÕ ph¶i cã ch×a khãa vµng ThÞnh ThÕ, më kh«ng? ",
 		2,
-		"§ång ý/choose_weapon",
-		"Kh«ng cã g×/nothing")
+		"Agree/choose_weapon",
+		"Nothing/nothing")
 end
 
 function choose_weapon()
@@ -46,12 +46,12 @@ function want_weapon(nType)
 	if nType == 1 then
 		Say("NÕu më ra Hoµng §Õ vò khÝ, b¹n chän Hiªn Viªn To¸i Vò §ao, b¹n x¸c nhËn kh«ng? ",
 			2,
-			"§ång ý/#confirm_open(1)",
+			"Agree/#confirm_open(1)",
 			"Ta chän nhÇm råi./choose_weapon");
 	elseif nType == 2 then
 		Say("NÕu më ra Hoµng §Õ vò khÝ ,b¹n chän Hiªn Viªn To¸i Vò C«n, b¹n x¸c nhËn kh«ng? ",
 			2,
-			"§ång ý/#confirm_open(2)",
+			"Agree/#confirm_open(2)",
 			"Ta chän nhÇm råi./choose_weapon");	
 	end	
 end
@@ -86,7 +86,7 @@ function confirm_open(nType)
 			if nRandTwo <= tBoxAward[4][3][6] then
 				AddItem(tBoxAward[4][3][2],tBoxAward[4][3][3],tBoxAward[4][3][4],tBoxAward[4][3][5],1);
 				Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tBoxAward[4][3][1]..tBoxAward[4][3][5].."!");
-				Msg2Global("Ng­êi ch¬i"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc "..tBoxAward[4][3][1]..tBoxAward[4][3][5].."!");
+				Msg2Global("Player"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc "..tBoxAward[4][3][1]..tBoxAward[4][3][5].."!");
 			end
 			if nRandThree <= tBoxAward[4][4][2] then
 				local nRoute = GetPlayerRoute();
@@ -94,10 +94,10 @@ function confirm_open(nType)
 				local nRetCode = AddItem(tbHuangDiRing1[nRoute][nRand][2],tbHuangDiRing1[nRoute][nRand][3],tbHuangDiRing1[nRoute][nRand][4],1,1,-1,-1,-1,-1,-1,-1);
 				if nRetCode == 1 then
 					Msg2Player("Chóc mõng b¹n nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing1[nRoute][nRand][1]);
-					Msg2Global("Ng­êi ch¬i"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing1[nRoute][nRand][1].."!");
+					Msg2Global("Player"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing1[nRoute][nRand][1].."!");
 					WriteLog("[07 Tam tiÕt liªn th«ng]:"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing1[nRoute][nRand][1]);
 				else
-					WriteLog("[B¸o lçi Tam tiÕt liªn th«ng 07]:"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing1[nRoute][nRand][1].."B¸o lçi khi AddItem, nRetCode:"..nRetCode);
+					WriteLog("[B¸o lçi Tam tiÕt liªn th«ng 07]:"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing1[nRoute][nRand][1].."Error on AddItem, nRetCode:"..nRetCode);
 				end	
 			elseif nRandThree <= tBoxAward[4][4][4] then
 				local nRoute = GetPlayerRoute();
@@ -105,10 +105,10 @@ function confirm_open(nType)
 				local nRetCode = AddItem(tbHuangDiRing2[nRoute][nRand][2],tbHuangDiRing2[nRoute][nRand][3],tbHuangDiRing2[nRoute][nRand][4],1,1,-1,-1,-1,-1,-1,-1);
 				if nRetCode == 1 then
 					Msg2Player("Chóc mõng b¹n nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing2[nRoute][nRand][1]);
-					Msg2Global("Ng­êi ch¬i"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing2[nRoute][nRand][1].."!");
+					Msg2Global("Player"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing2[nRoute][nRand][1].."!");
 					WriteLog("[07 Tam tiÕt liªn th«ng]:"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing2[nRoute][nRand][1]);
 				else
-					WriteLog("[B¸o lçi Tam tiÕt liªn th«ng 07]:"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing2[nRoute][nRand][1].."B¸o lçi khi AddItem, nRetCode:"..nRetCode);
+					WriteLog("[B¸o lçi Tam tiÕt liªn th«ng 07]:"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing2[nRoute][nRand][1].."Error on AddItem, nRetCode:"..nRetCode);
 				end							
 			elseif nRandThree <= tBoxAward[4][4][6] then --»ÆµÛÎäÆ÷
 				local nRoute = GetPlayerRoute();
@@ -116,20 +116,20 @@ function confirm_open(nType)
 					local nRetCode = AddItem(tHuangDiWeapon[nRoute][nType][2],tHuangDiWeapon[nRoute][nType][3],tHuangDiWeapon[nRoute][nType][4],1,1,-1,-1,-1,-1,-1,-1);
 					if nRetCode == 1 then
 						Msg2Player("Chóc mõng b¹n nhËn ®­îc trang bÞ Hoµng §Õ "..tHuangDiWeapon[nRoute][nType][1]);
-						Msg2Global("Ng­êi ch¬i"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tHuangDiWeapon[nRoute][nType][1].."!");
+						Msg2Global("Player"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tHuangDiWeapon[nRoute][nType][1].."!");
 						WriteLog("[07 Tam tiÕt liªn th«ng]:"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tHuangDiWeapon[nRoute][nType][1]);
 					else
-						WriteLog("[B¸o lçi Tam tiÕt liªn th«ng 07]:"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tHuangDiWeapon[nRoute][nType][1].."B¸o lçi khi AddItem, nRetCode:"..nRetCode);
+						WriteLog("[B¸o lçi Tam tiÕt liªn th«ng 07]:"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tHuangDiWeapon[nRoute][nType][1].."Error on AddItem, nRetCode:"..nRetCode);
 					end	
 				else
 					local nRand = random(1,getn(tHuangDiWeapon[nRoute]));
 					local nRetCode = AddItem(tHuangDiWeapon[nRoute][nRand][2],tHuangDiWeapon[nRoute][nRand][3],tHuangDiWeapon[nRoute][nRand][4],1,1,-1,-1,-1,-1,-1,-1);
 					if nRetCode == 1 then
 						Msg2Player("Chóc mõng b¹n nhËn ®­îc trang bÞ Hoµng §Õ "..tHuangDiWeapon[nRoute][nRand][1]);
-						Msg2Global("Ng­êi ch¬i"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tHuangDiWeapon[nRoute][nRand][1].."!");
+						Msg2Global("Player"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tHuangDiWeapon[nRoute][nRand][1].."!");
 						WriteLog("[07 Tam tiÕt liªn th«ng]:"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tHuangDiWeapon[nRoute][nRand][1]);
 					else
-						WriteLog("[B¸o lçi Tam tiÕt liªn th«ng 07]:"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tHuangDiWeapon[nRoute][nRand][1].."B¸o lçi khi AddItem, nRetCode:"..nRetCode);
+						WriteLog("[B¸o lçi Tam tiÕt liªn th«ng 07]:"..GetName().."Më r­¬ng vµng ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tHuangDiWeapon[nRoute][nRand][1].."Error on AddItem, nRetCode:"..nRetCode);
 					end					
 				end				
 			end

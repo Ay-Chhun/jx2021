@@ -2,9 +2,9 @@ Include("\\script\\vng\\lib\\vnglib_award.lua");
 Include("\\script\\vng\\lib\\vnglib_textdata.lua");
 szLogTitle = "EVENT TRANG BI KIM XA"
 tbBanhTrungThu = {
-	[1] = {item={{gdp={2,1,30569,1}, name="B¸nh Trung Cam"}}},
-	[2] = {item={{gdp={2,1,30570,1}, name="B¸nh Trung D©u"}}},
-	[3] = {item={{gdp={2,1,30571,1}, name="B¸nh Trung S« c« la"}}},
+	[1] = {item={{gdp={2,1,30569,1}, name="Orange Mooncake"}}},
+	[2] = {item={{gdp={2,1,30570,1}, name="Yogurt Cake"}}},
+	[3] = {item={{gdp={2,1,30571,1}, name="Chocolate Cake"}}},
 }
 
 tbKimXaTuongQuan = {
@@ -68,7 +68,7 @@ tbKimXa3sao = {
 	[12] = {item={{gdp={0,153,7,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Huy Ch­¬ng Háa ChÕ ngò hµnh"}}},
 	[13] = {item={{gdp={0,153,8,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Huy Ch­¬ng Thæ ChÕ ngò hµnh"}}},
 	[14] = {item={{gdp={0,153,9,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Huy Ch­¬ng ¢m ChÕ ngò hµnh"}}},
-	[15] = {item={{gdp={0,154,3,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Bè ChÕ Cao §ång Ngoa"}}},
+	[15] = {item={{gdp={0,154,3,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Gao Tong Wa Recipe"}}},
 	[16] = {item={{gdp={0,154,4,1,1,-1,-1,-1,-1,-1,-1,-1}, name="ChiÕn Hµi Kim ChÕ ngò hµnh"}}},
 	[17] = {item={{gdp={0,154,5,1,1,-1,-1,-1,-1,-1,-1,-1}, name="ChiÕn Hµi Méc ChÕ ngò hµnh"}}},
 	[18] = {item={{gdp={0,154,6,1,1,-1,-1,-1,-1,-1,-1,-1}, name="ChiÕn Hµi Thñy ChÕ ngò hµnh"}}},
@@ -136,7 +136,7 @@ end
 
 function HoTroNguyenLieu_Done(nOption)
 	local tbNguyenLieu = {
-		[1] = {item={{gdp={2,1,30230,39}, name="Xu VËt PhÈm"}}},	
+		[1] = {item={{gdp={2,1,30230,39}, name="Item Token"}}},	
 		[2] = {item={{gdp={2,1,30132,99}, name="Vâ L©m B¶o H¹p"}}, nGold = 990000},
 	}
 	if gf_Judge_Room_Weight(1, 100) == 0 then
@@ -153,7 +153,7 @@ function HoTroNguyenLieu_Done(nOption)
 	if nOption == 1 then
 		gf_WriteLogEx(szLogTitle, "nhËn", 1, "Mua 1000 bét th¹ch rau c©u (39 xu vËt phÈm)")
 	else
-		gf_WriteLogEx(szLogTitle, "nhËn", 1, "Mua 1000 bét th¹ch rau c©u (99 vµng + VLBH)")
+		gf_WriteLogEx(szLogTitle, "nhËn", 1, "Buy 1000 jelly powder for grass jelly (99 gold + Wulin protection chest)")
 	end
 end
 
@@ -187,9 +187,9 @@ function NopBanh_Done(nOption)
 	end
 	LIB_Award:PayMaterial(tbBanhTrungThu[nOption])
 	LIB_Award:Award(tbAward)
-	gf_WriteLogEx(szLogTitle, "nép", 1, "Nép"..tbBanhTrungThu[nOption]["item"][1]["name"])
+	gf_WriteLogEx(szLogTitle, "submit", 1, "Submit"..tbBanhTrungThu[nOption]["item"][1]["name"])
 	if GetTask(TSK_EVENTKIMXA) == 1000 then
-		gf_WriteLogEx(szLogTitle, "nép", 1, "Nép 1000 b¸nh c¸c lo¹i")
+		gf_WriteLogEx(szLogTitle, "submit", 1, "Nép 1000 b¸nh c¸c lo¹i")
 	end
 	NopBanh_Menu()	
 end
@@ -243,7 +243,7 @@ function EventKimXa_XemXepHang()
 	local szResult = ""
 	if nRank >=2 and nRank <= 99 then
 		szResult = "\nHiÖn t¹i ng­¬i ®ang ®øng h¹ng <color=red>"..nRank.."<color> trong danh s¸ch, víi sè ®iÓm lµ <color=yellow>"..LIB_txtData.tbTextData[nRank][1].."<color>\n"
-		szResult = szResult .. "Ng­¬i ®ang b¸m theo <color=green>"..LIB_txtData.tbTextData[(nRank-1)][2].."<color> víi <color=yellow>"..LIB_txtData.tbTextData[(nRank-1)][1].."<color>\n"
+		szResult = szResult .. "You are currently chasing <color=green>"..LIB_txtData.tbTextData[(nRank-1)][2].."<color> víi <color=yellow>"..LIB_txtData.tbTextData[(nRank-1)][1].."<color>\n"
 		szResult = szResult .. "<color=green>"..LIB_txtData.tbTextData[(nRank+1)][2].."<color> b¸m s¸t ng­íi víi sè ®iÓm lµ <color=yellow>"..LIB_txtData.tbTextData[(nRank+1)][1].."<color>"
 	else
 		szResult = "HiÖn t¹i ng­¬i ®ang ®øng h¹ng <color=yellow>"..nRank.."<color> trong danh s¸ch, víi sè ®iÓm lµ "..LIB_txtData.tbTextData[nRank][1]

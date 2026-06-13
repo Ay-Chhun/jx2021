@@ -17,7 +17,7 @@ function main()
 		--format("ÎÒÒª²Î¼ÓÆÕÍ¨ÄÑ¶ÈµÄÌ«Ò»Ëş(ÏûºÄ%s)/Talk_1_2", "¾«Á¦*"..TYT_JOIN_COST_JINGLI[2][1]),
 		--format("ÎÒÒª²Î¼ÓÆÕÍ¨ÄÑ¶ÈµÄÌ«Ò»Ëş(¶Ó³¤ÏûºÄ%s)/Talk_1_2_IB", TYT_JOIN_COST_ITEM[2][1][2].."*"..TYT_JOIN_COST_ITEM[2][1][1][4]),
 		--"¹Ø¿¨Ê×Í¨½±ÀøÁìÈ¡/Talk_1_6",
-		"Hñy bá/nothing",
+		"Cancel/nothing",
 	};
 	
 	if GetSex() == 1 then
@@ -207,7 +207,7 @@ end
 function Talk_1_6()
 	local strTab = {
 		"NhËn lÊy phÇn th­ëng./Talk_1_6_1",
-		"Hñy bá/nothing",
+		"Cancel/nothing",
 	};
 	local msg = "§Ó bµy tá lßng biÕt ¬n ®èi víi nh÷ng hiÖp sÜ ®Çu tiªn v­ît qua Th¸i NhÊt Th¸p-Anh Hïng ®Ó ®o¹t l¹i tro cèt cña Gia Gia, tÊt c¶ ng­êi ch¬i trªn cÊp 80 ®Òu nhËn ®­îc 1 phÇn th­ëng LÇn §Çu Qua ¶i";
 	msg = msg..""

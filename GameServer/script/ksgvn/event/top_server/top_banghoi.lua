@@ -145,7 +145,7 @@ function contribute(nOption)
         end
     end
     KsgPlayer:Msg("B¹n ®· cèng hiÕn " .. nAddPoint .. " ®iÓm cho bang héi.")
-    gf_WriteLogEx(g_szLogTitle, "thªm", 1, "Cèng hiÕn " .. nAddPoint .. " ®iÓm")
+    gf_WriteLogEx(g_szLogTitle, "thªm", 1, "Contribute" .. nAddPoint .. " ®iÓm")
     showMenuContribute()
 end
 

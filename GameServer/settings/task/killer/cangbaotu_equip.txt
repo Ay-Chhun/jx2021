@@ -2,10 +2,10 @@ Genre	Detail	Particular	Text
 Lo¹i lín	Lo¹i phô	Lo¹i nhá	Tªn vËt phÈm
 0	0	8	BÝch Xµ thñ
 0	0	9	Kh¸ng Long thñ
-0	0	10	T­êng Ph­îng
+0	0	10	Phoenix Wall
 0	0	11	Né Long
 0	0	12	Ngò Ph­¬ng Quû Chóng
-0	0	13	Nª Lª ®Þa ngôc
+0	0	13	Niraya Hell
 0	2	21	TÝch D­¬ng
 0	2	22	HuyÒn §iÖn
 0	2	23	Thanh S­¬ng
@@ -17,7 +17,7 @@ Lo¹i lín	Lo¹i phô	Lo¹i nhá	Tªn vËt phÈm
 0	5	36	§¶ CÈu bæng
 0	5	37	KhÈn Na La Bæng
 0	5	38	Thiªn Xµ c«n
-0	5	39	Thanh Long c«n
+0	5	39	Azure Dragon Staff
 0	1	47	Ngäc Phong ch©m
 0	1	48	Tô Lý Cµn Kh«n
 0	1	49	Hµm Sa X¹ ¶nh
@@ -35,11 +35,11 @@ Lo¹i lín	Lo¹i phô	Lo¹i nhá	Tªn vËt phÈm
 0	10	71	Cöu Tiªu Ngäc Béi
 0	10	72	HiÖu Chung
 0	10	73	Lôc Khëi
-0	10	74	Tiªu VÜ
+0	10	74	Tieu Vi
 0	9	80	Truy NguyÖt bót
 0	9	81	ThÞ Hån bót
 0	9	82	Long ThiÖt
-0	9	83	R¨ng sãi
+0	9	83	Wolf Tooth
 0	9	84	Ph¸ Qu©n
 0	9	85	Thiªn C¬
 0	8	91	NguyÖt Lu©n tr­îng
@@ -59,7 +59,7 @@ Lo¹i lín	Lo¹i phô	Lo¹i nhá	Tªn vËt phÈm
 0	4	115	Tö Kim
 0	4	116	ThÇn Lùc
 0	4	117	Xi Nha
-0	4	118	Long KhÈu
+0	4	118	Long Khau
 0	103	10	DËt Èn Qu¸n
 0	103	11	Hång L¨ng C©n
 0	103	12	Hµng V©n Thóc ®¸i
@@ -86,7 +86,7 @@ Lo¹i lín	Lo¹i phô	Lo¹i nhá	Tªn vËt phÈm
 0	103	51	NhËt MiÖn
 0	103	52	ThÇn ¤
 0	103	53	Tu La
-0	103	54	Chu T­íc
+0	103	54	Vermilion Bird
 0	103	64	Thiªn La Thoa
 0	103	65	Thiªn Phong Thóc tr©m
 0	103	66	V©n Méng Thoa
@@ -116,7 +116,7 @@ Lo¹i lín	Lo¹i phô	Lo¹i nhá	Tªn vËt phÈm
 0	100	48	Hång Nghª Th­êng
 0	100	49	L©n Quang gi¸p
 0	100	50	Hå C¬ Vò y
-0	100	51	Minh Quang gi¸p
+0	100	51	Mingguang Armor
 0	100	52	Nghª Th­êng Vò y
 0	100	53	Thiªn y
 0	100	54	Phi Thiªn Th¸i Th­êng
@@ -164,13 +164,13 @@ Lo¹i lín	Lo¹i phô	Lo¹i nhá	Tªn vËt phÈm
 0	101	50	Thiªn M·
 0	101	51	Ph¸ TrËn
 0	101	52	PhÊt V©n
-0	101	53	Hæ TiÕu
+0	101	53	Tiger Roar
 0	101	54	Th¸i Thanh
 0	101	63	Thiªn Tµm Tó Trang
 0	101	64	Khëi La Tó Trang
 0	101	65	Vâ ThÇn Tó Trang
 0	101	66	Linh Lung Tó Trang
-0	101	67	B¸ch ChiÕn
+0	101	67	Bach Chien
 0	101	68	ThÇn N÷
 0	101	69	Vò Linh
 0	101	70	T¶n Hoa

@@ -5,7 +5,7 @@ Include("\\script\\online\\zgc_public_fun.lua")
 
 VET_201401_SPRING1_ACTIVITYID = 109;
 
-VET_201401_SPRING1_MAIN = "TÕt Cæ TruyÒn/Vet_201401_sprint1_main";
+VET_201401_SPRING1_MAIN = "Traditional New Year/Vet_201401_sprint1_main";
 
 VET_201401_SPRING1_TASK = TaskManager:Create(10, 7)
 VET_201401_SPRING1_TASK.DaySeq = 1;
@@ -41,7 +41,7 @@ function Vet_201401_AcceptSprintTask(bTag)
 	local nKillWildPig = VET_201401_SPRING1_TASK:GetTask(VET_201401_SPRING1_TASK.KILLWILDPIG);
 	if not bTag then
 		Say(format("1: Tiªu hao 100 L¸ Dong + 100 §Ëu Xanh ThÞt Heo + 10 Vµng\n2: §¸nh b¹i 100 con Heo Rõng (%d/%d)", nKillWildPig, 100),
-			 2, "§ång ý/#Vet_201401_AcceptSprintTask(1)", "trë l¹i/Vet_201401_sprint1_main");
+			 2, "Agree/#Vet_201401_AcceptSprintTask(1)", "trë l¹i/Vet_201401_sprint1_main");
 		return 0;
 	end
 	if VET_201401_SPRING1_TASK:GetTask(VET_201401_SPRING1_TASK.ACCEPT) ~= 0 then
@@ -49,11 +49,11 @@ function Vet_201401_AcceptSprintTask(bTag)
 		return 0;
 	end
 	if GetItemCount(2, 1, 30619) < 100 then
-		Talk(1,"",format("Hµnh trang kh«ng gian %s kh«ng ®ñ %d", "L¸ Dong", 100));
+		Talk(1,"",format("Hµnh trang kh«ng gian %s kh«ng ®ñ %d", "Dong Leaf", 100));
 		return 0;
 	end
 	if GetItemCount(2, 1, 30620) < 100 then
-		Talk(1,"",format("Hµnh trang kh«ng gian %s kh«ng ®ñ %d", "§Ëu Xanh ThÞt Heo", 100));
+		Talk(1,"",format("Hµnh trang kh«ng gian %s kh«ng ®ñ %d", "Pork Mung Bean", 100));
 		return 0;
 	end
 	if GetCash() < 10*10000 then
@@ -64,8 +64,8 @@ function Vet_201401_AcceptSprintTask(bTag)
 		return 0;
 	end
 	VET_201401_SPRING1_TASK:SetTask(VET_201401_SPRING1_TASK.ACCEPT, 1);
-	Msg2Player(format("Tiªu hao %s*%d", "L¸ Dong", 100));
-	Msg2Player(format("Tiªu hao %s*%d", "§Ëu Xanh ThÞt Heo", 100));
+	Msg2Player(format("Consume %s*%d", "Dong Leaf", 100));
+	Msg2Player(format("Consume %s*%d", "Pork Mung Bean", 100));
 	if nKillWildPig < 100 then
 		Msg2Player("§¹i hiÖp nhanh chãng ®i t×m Heo Rõng vµ tiªu diÖt nã!");
 	else
@@ -108,9 +108,9 @@ function Vet_201401_GetAward()
 	end
 	VET_201401_SPRING1_TASK:SetTask(VET_201401_SPRING1_TASK.AWARD, 1);
 	gf_Modify("Exp", 20142014);
-  gf_AddItemEx2({2,95,208,1,4}, "Tô NghÜa LÖnh", "Event phô 2 th¸ng 1", "", 0, 1);
-  gf_AddItemEx2({2,1,30409,1,4}, "Th«ng Thiªn LÖnh", "Event phô 2 th¸ng 1", "", 0, 1);
-  gf_AddItemEx2({2,1,30623,1,4}, "Bao L× X× n¨m 2014", "Event phô 2 th¸ng 1", "", 24*3600, 1);
+  gf_AddItemEx2({2,95,208,1,4}, "Token of Righteousness", "Side Event 2 January", "", 0, 1);
+  gf_AddItemEx2({2,1,30409,1,4}, "Th«ng Thiªn LÖnh", "Side Event 2 January", "", 0, 1);
+  gf_AddItemEx2({2,1,30623,1,4}, "Lucky Money Bag 2014", "Side Event 2 January", "", 24*3600, 1);
 end
 
 function Vet_201401_OpenTeamAward()

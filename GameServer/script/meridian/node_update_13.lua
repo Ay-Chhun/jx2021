@@ -2,7 +2,7 @@
 
 --°ÙÀïÑ¨Î»ÌØÊâÌõ¼þ£ºÐèÒª×°±¸8¼¶Áè²¨Î¢²½¼¼ÄÜ
 
-SZ_NEED_SKILL_NAME = "L¨ng Ba Vi Bé"
+SZ_NEED_SKILL_NAME = "Lingbo Microstep"
 N_NEED_SKILL_LEVEL = 8
 N_NEED_SKILL_ID = 477
 

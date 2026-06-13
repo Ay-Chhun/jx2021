@@ -8,7 +8,7 @@ Include("\\script\\online_activites\\reborn\\tongban\\head.lua")
 VET_ITEM_COUNT = 5 --所需露水的数量
 
 VET_DECOTREE_AWARD = {
-	{1, 6, " я", {2, 1, 30178, 2}, 0},
+	{1, 6, "Papaya", {2, 1, 30178, 2}, 0},
 	{4, 19, 10, 1},
 	{5, 19, 10, 1},
 	{31, 25, "get_popur_value()", ""},

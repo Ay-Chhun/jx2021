@@ -16,11 +16,11 @@ VET_201112_LILISHISHI.DaySeq = 1
 VET_201112_LILISHISHI.Times = 2
 
 VET_201112_LILISHISHI_AWARD = {
-	  {1, 1250, "C©y Tø Linh", {2, 1, 30269, 1}, 7 * 24 * 3600},
-    {1, 1250, "C©y B¸t Nh·", {2, 0, 398, 1}, 7 * 24 * 3600},
-    {1, 2000, "C©y B¸t Nh· nhá", {2, 0, 504, 1}, 7 * 24 * 3600},
-    {1, 1000, "§u §ñ", {2, 1, 30178, 10}, 0},
-    {1, 1000, "Xoµi", {2, 1, 30172, 10}, 0},
+	  {1, 1250, "Four Spirits Tree", {2, 1, 30269, 1}, 7 * 24 * 3600},
+    {1, 1250, "Prajna Tree", {2, 0, 398, 1}, 7 * 24 * 3600},
+    {1, 2000, "Small Prajna Tree", {2, 0, 504, 1}, 7 * 24 * 3600},
+    {1, 1000, "Papaya", {2, 1, 30178, 10}, 0},
+    {1, 1000, "Mango", {2, 1, 30172, 10}, 0},
     {3, 3500, 680000, 1},
 }
 
@@ -46,7 +46,7 @@ function send_gift()
 	local szSayHead = "L× X× n¨m míi"
 	local nDate = tonumber(date("%Y%m%d"))
  	if nDate >= 20120123 and nDate <= 20120201 then
-		tinsert(tbSay,"§ång ı/send_gift_accept");
+		tinsert(tbSay,"Accept/send_gift_accept");
 		tinsert(tbSay,VET_201112_SENDGIFT_EXIT);		--[Optional]
 	end
 	nSaySize = getn(tbSay);
@@ -58,7 +58,7 @@ end
 
 function send_gift_accept()
 	if gf_CheckEventDateEx(VET_201112_LILISHISHI_ID) ~= 1 then
-		Talk(1,"","Event ®· hÕt h¹n!")
+		Talk(1,"","The event has expired!")
 		return 0;
 	end
 	local nLevel = GetLevel()

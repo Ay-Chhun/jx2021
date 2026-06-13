@@ -21,7 +21,7 @@ sTitle_201206 = "Hoan nghªnh tham gia ho¹t ®éng chµo mõng Phiªn B¶n míi. PhÇn th
 
 function introduce_201206()
 	if LSB_IsActivityOpen() ~= 1 then
-		Talk(1,"",Activity_Npc_Name.."Event ®· hÕt h¹n");
+		Talk(1,"",Activity_Npc_Name.."The event has expired");
 		return 0;
 	end
 	local tbSay = {
@@ -60,7 +60,7 @@ end
 
 function daily_task_201206()
 	if LSB_IsActivityOpen() ~= 1 then
-		Talk(1,"",Activity_Npc_Name.."Event ®· hÕt h¹n");
+		Talk(1,"",Activity_Npc_Name.."The event has expired");
 		return 0;
 	end
 	local tbSay = {
@@ -78,7 +78,7 @@ end
 
 function exchange_201206()
 	if LSB_IsActivityOpen() ~= 1 then
-		Talk(1,"",Activity_Npc_Name.."Event ®· hÕt h¹n");
+		Talk(1,"",Activity_Npc_Name.."The event has expired");
 		return 0;
 	end
 	local tbSay = {
@@ -92,7 +92,7 @@ end
 function deal_exchange_201206()
 	local nCount1 = floor(GetCash() / Coin_cost*10000);
 	local nCount2 = floor(GetItemCount(Item_table1[1],Item_table1[2],Item_table1[3]) / Item_cost);--ÁºÉ½ÃÜ±¦ÏäÊýÄ¿
-	AskClientForNumber("call_exchage_201206",0,min(nCount1,nCount2),"NhËp sè l­îng ®æi","");
+	AskClientForNumber("call_exchage_201206",0,min(nCount1,nCount2),"Enter the amount to exchange","");
 end
 
 function call_exchage_201206(nNum)

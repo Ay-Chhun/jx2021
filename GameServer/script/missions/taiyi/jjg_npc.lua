@@ -2,7 +2,7 @@ Include("\\script\\missions\\taiyi\\head.lua");
 Include("\\script\\missions\\taiyi\\tyfunctions.lua");
 --Include("\\script\\misc\\observer\\observer_head.lua")
 
-g_NpcName = "<color=green>Thanh Thanh C« N­¬ng:<color>";
+g_NpcName = "<color=green>Qingqing the Maiden:<color>";
 
 tNonsense = {
 	"Hi hi, cuèi cïng còng ®· ®uæi ®­îc huynh ®Ö nhµ hä Ng« ®i råi, tõ nay ®©y sÏ lµ ®Þa bµn cña ta!",
@@ -15,9 +15,9 @@ tNonsense = {
 
 function main()
 	local strTab = {
-		"\n rêi ¶i/JJG_ConfirmLeave",
+		"\nLeave/JJG_ConfirmLeave",
 		"\nTa muèn quay l¹i chiÕn tr­êng (CÇn ["..TYT_IB_ITEM[1].."]x1)/JJG_Back2Fight",
-		"\nKÕt thóc ®èi tho¹i/nothing",
+		"\nEnd conversation/nothing",
 	};
 	local nIdx = random(1, getn(tNonsense));
 	Say(g_NpcName..tNonsense[nIdx], getn(strTab), strTab);
@@ -65,7 +65,7 @@ function JJG_Back2Fight()
 	end
 	
 	if 1 ~= DelItem(TYT_IB_ITEM[2],TYT_IB_ITEM[3],TYT_IB_ITEM[4], 1) then
-		Talk(1, "", g_NpcName.."Mang theo trªn ng­êi"..TYT_IB_ITEM[1].."Kh«ng ®ñ!");
+		Talk(1, "", g_NpcName.."Mang theo trªn ng­êi"..TYT_IB_ITEM[1].."Not enough!");
 		return 0;
 	end
 	SetFightState(1);

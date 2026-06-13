@@ -7,7 +7,7 @@ function OnDeath(id, f, x)
 		cc_daily_clear();
 		local nTimes= CC_ACTIVITY_TASK_GROUP:GetTask(CC_ACTIVITY_TASK_GROUP.BOX_AWARD_CARD);
 		if nTimes < CC_BOX_MAX_LM_CARD then
-			gf_AddItemEx2({2,1,30507,1}, "ThÎ Linh Miªu VËn", "Ho¹t ®éng m«n ph¸i míi", "ThÎ Tù BOSS", 0, 1);
+			gf_AddItemEx2({2,1,30507,1}, "Spirit Cat Fortune Card", "Ho¹t ®éng m«n ph¸i míi", "BOSS Card", 0, 1);
 			CC_ACTIVITY_TASK_GROUP:SetTask(CC_ACTIVITY_TASK_GROUP.BOX_AWARD_CARD, nTimes + 1);
 		else
 			Msg2Player("ThÎ Tù Linh Miªu VËn ®· ®¹t ®Õn giíi h¹n sè lÇn nhËn mçi ngµy");

@@ -33,10 +33,10 @@ GT_sunflowerCount = 50;
 
 GT_exchangeTable = 
 {
-	{{2, 1, 30263}, 300, GT_sunflowerID, GT_sunflowerCount, "Gç"},
-	{{2, 1, 30261}, 300, GT_sunflowerID, GT_sunflowerCount, "§¸"},
-	{{2, 1, 30262}, 180, GT_sunflowerID, GT_sunflowerCount, "Lóa"},
-	{{2, 1, 30260}, 180, GT_sunflowerID, GT_sunflowerCount, "S¾t"},
+	{{2, 1, 30263}, 300, GT_sunflowerID, GT_sunflowerCount, "Wood"},
+	{{2, 1, 30261}, 300, GT_sunflowerID, GT_sunflowerCount, "Stone"},
+	{{2, 1, 30262}, 180, GT_sunflowerID, GT_sunflowerCount, "Rice"},
+	{{2, 1, 30260}, 180, GT_sunflowerID, GT_sunflowerCount, "Iron"},
 }
 
 GT_limitTable = 

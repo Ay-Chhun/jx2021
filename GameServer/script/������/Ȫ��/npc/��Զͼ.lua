@@ -4,7 +4,7 @@
 function main()
 	Uworld1 = GetTask(1)
 	if Uworld1 == 3  then
-		Say("Dï chİnh hay tµ, chØ cÇn cã lßng ®Òu cã thÓ kÕt lµm b»ng h÷u. KÕt giao nhiÒu b»ng h÷u, hßa khİ ¾t sinh tµi. Ng­êi b¹n trÎ muèn biÕt lµm sao ®Ó kÕt giao b»ng h÷u kh«ng?",2,"Muèn/yes","Kh«ng cÇn ®©u!/no")
+		Say("Dï chİnh hay tµ, chØ cÇn cã lßng ®Òu cã thÓ kÕt lµm b»ng h÷u. KÕt giao nhiÒu b»ng h÷u, hßa khİ ¾t sinh tµi. Ng­êi b¹n trÎ muèn biÕt lµm sao ®Ó kÕt giao b»ng h÷u kh«ng?",2,"Yes/yes","Kh«ng cÇn ®©u!/no")
 	SetTask(1,4)
 	else
 		Say("CÇn ta ®­a ng­¬i ®Õn Nam BiÖn Kinh kh«ng?",2,"CÇn/gotomap53","Kh«ng cÇn/noneed")

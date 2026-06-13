@@ -1,8 +1,8 @@
 Include("\\script\\½á»é\\marriage_head.lua");
 function OnUse(nItemIdx)
 	local selTab = {
-			format("Më/#open(%d)",nItemIdx),
-			"LÇn sau h·y më!/nothing",
+			format("Open/#open(%d)",nItemIdx),
+			"Open next time!/nothing",
 			}
 	Say("B¹n muèn më LÔ r­¬ng lín? Cã thÓ nhËn ®­îc <color=yellow>500<color> lÔ kim.",getn(selTab),selTab);
 end;
@@ -16,9 +16,9 @@ function open(nItemIdx)
 		local nRetCode = AddItem(ITEM_COIN[1],ITEM_COIN[2],ITEM_COIN[3],500)
 		if nRetCode == 1 then
 			Msg2Player("B¹n nhËn ®­îc 500 lÔ kim");
-			WriteLog("[KÕt h«n]:"..GetName().."Më mét LÔ r­¬ng lín");
+			WriteLog("[Marriage]:"..GetName().."Më mét LÔ r­¬ng lín");
 		else
-			WriteLog("[KÕt h«n b¸o lçi]:"..GetName().."Më LÔ r­¬ng lín b¸o lçi, AddItem trÞ ph¶n håi:"..nRetCode);
+			WriteLog("[Marriage Error Report]:"..GetName().."Më LÔ r­¬ng lín b¸o lçi, AddItem trÞ ph¶n håi:"..nRetCode);
 		end;
 	end;
 end;

@@ -358,7 +358,7 @@ function do_skill_finish(nSkillID, nSkillType,nSkillLevel)
 			return
 		end
 		if nWeddingCandyNum <= 0 then
-			Msg2Player("Kh«ng cã kÑo mõng")
+			Msg2Player("You have no celebration candy")
 		end
 		local nScatterNum
 		if nWeddingCandyNum >= 10 then
@@ -388,7 +388,7 @@ function goto_mate(SkillLevel)
 	if SkillLevel == 1 then
 		ma_trans_dia = "Khu vùc hiÖn t¹i"
 	else
-		ma_trans_dia = "{c¹nh}"
+		ma_trans_dia = "{edge}"
 	end
 	Say("Sö dông kü n¨ng <color=yellow>T­¬ng t­<color> ®¼ng cÊp nµy, chuyÓn ®Õn chç phèi ngÉu <color=yellow>"..ma_trans_dia.."<color>. B¹n muèn chuyÓn kh«ng?",
 	2,
@@ -439,7 +439,7 @@ function ma_goto_trans(map_att_info)
 	end
 	--É¾³ý¼¼ÄÜÏûºÄÆ·
 	if DelItem(2,1,572,1) ~= 1 then
-		Msg2Player("Kh«ng ®ñ sè l­îng Uyªn ­¬ng kÕt!")
+		Msg2Player("You do not have enough Lovebird Knots!")
 		return
 	end
 	local skill_level = tonumber(strsub(map_att_info,1,1))
@@ -471,7 +471,7 @@ function ask_mate(SkillLevel)
 	if SkillLevel == 2 then
 		ma_trans_dia = "Khu vùc hiÖn t¹i"
 	else
-		ma_trans_dia = " bªn c¹nh"
+		ma_trans_dia = " nearby"
 	end
 	Say("Sö dông kü n¨ng <color=yellow>t­¬ng t­<color> gäi phèi ngÉu ®Õn <color=yellow>"..ma_trans_dia.."<color>. B¹n muèn chuyÓn kh«ng?",
 	2,
@@ -487,7 +487,7 @@ end
 function ask_mate_tip_callback(SkillLevel)
 	--°ÚÌ¯×´Ì¬ÎÞ·¨´«ËÍ
 	if IsStalling() == 1 then
-		DoScriptByName(GetMateName(),"\\script\\global\\skill_process_callback_s.lua","trans_err", "§ång ®éi ë tr¹ng th¸i bµy b¸n!")
+		DoScriptByName(GetMateName(),"\\script\\global\\skill_process_callback_s.lua","trans_err", "Your teammate is in vendor stall state!")
 		return
 	end
 	--µ±Ç°µØÍ¼ÊÇ·ñ¿ÉÒÔ´«ËÍÅÐ¶Ï
@@ -501,15 +501,15 @@ function ask_mate_tip_callback(SkillLevel)
 	if tonumber(SkillLevel) == 2 then
 		ma_trans_dia = "Khu vùc hiÖn t¹i "
 	else
-		ma_trans_dia = "{c¹nh}"
+		ma_trans_dia = "{edge}"
 	end	
 	local mate_sex = ""
 	if GetSex() == 1 then
-		mate_sex = "Ng­êi ch¬i"
+		mate_sex = "Player"
 	else
 		mate_sex = "Tha"
 	end
-	RandomTaskTipEx("§ång ®éi yªu cÇu b¹n ®Õn "..mate_sex..ma_trans_dia.."!","ma_trans_dia")
+	RandomTaskTipEx("Your teammate is asking you to come"..mate_sex..ma_trans_dia.."!","ma_trans_dia")
 end
 function ask_mate_callback(SkillLevel)
 	local map_ID_me = GetWorldPos()
@@ -532,7 +532,7 @@ function ask_mate_callback(SkillLevel)
 	end
 	--É¾³ý¼¼ÄÜÏûºÄÆ·
 	if DelItem(2,1,572,1) ~= 1 then
-		Msg2Player("Kh«ng ®ñ sè l­îng Uyªn ­¬ng kÕt!")
+		Msg2Player("You do not have enough Lovebird Knots!")
 		return
 	end
 	DoScriptByName(GetMateName(),"\\script\\global\\skill_process_callback_s.lua","ma_ask_trans", trans_att)

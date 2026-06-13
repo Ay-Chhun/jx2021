@@ -18,7 +18,7 @@ File_name = "\\script\\item\\item_billing\\jueshigaoshou.lua"
 function Zgc_pub_getwrdtask(id,fun_id)
 	SetTaskTemp(158,id)
 	SetTaskTemp(160,fun_id)
-	ApplyRelayShareData("Sè liÖu ID thÕ giíi",0,0,File_name,"CallBackGetWrdTask")
+	ApplyRelayShareData("World ID data",0,0,File_name,"CallBackGetWrdTask")
 end
 function CallBackGetWrdTask(szKey, nKey1, nKey2, nCount)
 	local id = (GetTaskTemp(158)-1)
@@ -39,7 +39,7 @@ function Zgc_pub_setwrdtask(id,value,fun_id)
 	SetTaskTemp(158,id)
 	SetTaskTemp(159,value)
 	SetTaskTemp(160,fun_id)
-	ApplyRelayShareData("Sè liÖu ID thÕ giíi",0,0,File_name,"CallBackSetWrdTask")
+	ApplyRelayShareData("World ID data",0,0,File_name,"CallBackSetWrdTask")
 end
 function CallBackSetWrdTask(szKey, nKey1, nKey2, nCount)
 	local id =(GetTaskTemp(158) - 1)
@@ -56,15 +56,15 @@ function CallBackSetWrdTask(szKey, nKey1, nKey2, nCount)
 	end
 	local save_id = (id - (floor(id/10)*10))
 	wrd_data[save_id] = value
-	local rtn_flag = AddRelayShareData("Sè liÖu ID thÕ giíi",0,0, File_name, "end_dialog", 0,suit_id, "dddddddddd", wrd_data[0],wrd_data[1],wrd_data[2],wrd_data[3],wrd_data[4],wrd_data[5],wrd_data[6],wrd_data[7],wrd_data[8],wrd_data[9])
+	local rtn_flag = AddRelayShareData("World ID data",0,0, File_name, "end_dialog", 0,suit_id, "dddddddddd", wrd_data[0],wrd_data[1],wrd_data[2],wrd_data[3],wrd_data[4],wrd_data[5],wrd_data[6],wrd_data[7],wrd_data[8],wrd_data[9])
 	local return_fun = "WrdDataSetReturn_"..fun_id.."()"
 	dostring(return_fun)
 end
 --=============================¹«¹²±äÁ¿¶¨Òå======================
 	boss_list = {
-		{"S¬n TÆc §Çu Môc", "B¾c Lôc L©m Minh Chñ", 1014, "Lôc L©m Lang Yªn", 3, "\\script\\task\\boss\\boss_ondeath.lua"},			--bossÃû³Æ£¬Ä£°åÃû£¬¶ÔÓ¦ÎïÆ·ID£¬¶ÔÓ¦ÎïÆ·Ãû³Æ£¬Ã¿Ìì¿ÉÒÔÕÙ»½µÄ×î´óÊıÁ¿£¬NPC¹ÒµÄË÷Òı½Å±¾
+		{"S¬n TÆc §Çu Môc", "Northern Greenwood Alliance Leader", 1014, "Lôc L©m Lang Yªn", 3, "\\script\\task\\boss\\boss_ondeath.lua"},			--bossÃû³Æ£¬Ä£°åÃû£¬¶ÔÓ¦ÎïÆ·ID£¬¶ÔÓ¦ÎïÆ·Ãû³Æ£¬Ã¿Ìì¿ÉÒÔÕÙ»½µÄ×î´óÊıÁ¿£¬NPC¹ÒµÄË÷Òı½Å±¾
 		{"HuyÒn Vâ Th­ong", "Th­¬ng ThÇn Doanh Thiªn", 1047, "Thñy Hoµng Bİ ChiÕu", 3, "\\script\\task\\boss\\boss_ondeath.lua"},
-		{"NghiÖt Hån", "L·nh H­¬ng L¨ng", 1048, "Uyªn ¦¬ng Kim Ti B¹c", 3, "\\script\\task\\boss\\boss_ondeath.lua"},
+		{"NghiÖt Hån", "L·nh H­¬ng L¨ng", 1048, "Yuanyang Gold Silver Thread", 3, "\\script\\task\\boss\\boss_ondeath.lua"},
 	}
 --================================Ö÷Âß¼­=========================
 --**************************ÎïÆ·Ê¹ÓÃÖ÷º¯Êı************************
@@ -123,7 +123,7 @@ end
 --*********************************bossÊıÁ¿»ØÖÃ********************************
 function boss_num_set(boss_diff)
 	SetTaskTemp(158,boss_diff)
-	ApplyRelayShareData("Sè liÖu ID thÕ giíi",0,0,File_name,"CallBackBossNumSet")
+	ApplyRelayShareData("World ID data",0,0,File_name,"CallBackBossNumSet")
 end
 function CallBackBossNumSet(szKey, nKey1, nKey2, nCount)			--bossÊıÁ¿ÉèÖÃ»Øµ÷
 	DelRelayShareDataCopy(szKey,nKey1,nKey2)
@@ -136,7 +136,7 @@ function CallBackBossNumSet(szKey, nKey1, nKey2, nCount)			--bossÊıÁ¿ÉèÖÃ»Øµ÷
 			boss_num[i] = 0
 		end
 	end
-	AddRelayShareData("Sè liÖu ID thÕ giíi",0,0,File_name,"end_dialog",0,1,"dddddddddd",boss_num[1],boss_num[2],boss_num[3],boss_num[4],boss_num[5],boss_num[6],boss_num[7],boss_num[8],boss_num[9],boss_num[10])
+	AddRelayShareData("World ID data",0,0,File_name,"end_dialog",0,1,"dddddddddd",boss_num[1],boss_num[2],boss_num[3],boss_num[4],boss_num[5],boss_num[6],boss_num[7],boss_num[8],boss_num[9],boss_num[10])
 	boss_crt_finish(boss_diff,0)
 end
 --*******************************Ò°ÍâbossÊıÁ¿ÅĞ¶Ï*******************************

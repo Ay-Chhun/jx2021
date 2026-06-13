@@ -39,10 +39,10 @@ tXiaoyao_cloth = {
 			{{"Ngo¹i trang tiªu dao (n©u)",482},{"Ngo¹i trang tiªu dao (lôc)",480},{"Ngo¹i trang tiªu dao (tÝm)",476},{"Ngo¹i trang tiªu dao (lam)",478},{"Ngo¹i trang tiªu dao (®en)",474}}, --ÎÞÃÅÎÞÅÉ
 		},
 		{  --ÐÔ¸ÐÅ®
-			{"Tö Hµ Lôc (sen lôc)",408,408,208},{"La Lan Tö (tÝm than)",409,409,209},{"B¨ng H¶i Lam (xanh biÓn)",410,410,210},{"Méng C¶nh PhÊn (hång)",411,411,211},{"Mai Quý Hång (®á)",412,412,212}
+			{"Purple River Green (lotus green)",408,408,208},{"Luolan Purple (purple)",409,409,209},{"Ice Sea Blue (sea blue)",410,410,210},{"Dream Realm Powder (pink)",411,411,211},{"Mai Quý Hång (®á)",412,412,212}
 		},
 		{  --½¿Ð¡Å®
-		  {"NgÉu Hµ Lôc (sen lôc)",398,398,198},{"La Lan Tö (tÝm than)",399,399,199},{"B¨ng H¶i Lam (xanh biÓn)",400,400,200},{"Méng C¶nh PhÊn (hång)",401,401,201},{"Mai Quý Hång (®á)",402,402,202}
+		  {"Ox River Green (lotus green)",398,398,198},{"Luolan Purple (purple)",399,399,199},{"Ice Sea Blue (sea blue)",400,400,200},{"Dream Realm Powder (pink)",401,401,201},{"Mai Quý Hång (®á)",402,402,202}
 		}
 }
 
@@ -53,13 +53,13 @@ function OnUse(nItemIdx)
 			Say("<color=green>Tiªu Dao Hép<color>: §¹i hiÖp cÇn ngo¹i trang g×?",3,
 		"Ta cÇn V¨n CÈm Bµo/#give_wenkui("..nItemIdx..")",
 		"Ta cÇn ngo¹i trang Tiªu Dao/#give_xiaoyao("..nItemIdx..")",
-		"Ta sÏ chän ngo¹i trang sau/leave"
+		"I will choose an outfit later/leave"
 					)
 	else
 		Say("<color=green>Tiªu Dao Hép<color>: §¹i hiÖp cÇn ngo¹i trang g×?",3,
 			"Ta cÇn ngo¹i trang Tiªu Dao/#give_xiaoyao("..nItemIdx..")",
 			"Ta cÇn ngo¹i trang T©n Niªn/#give_tannien("..nItemIdx..")",
-			"Ta sÏ chän ngo¹i trang sau/leave"
+			"I will choose an outfit later/leave"
 				)
 	end
 end
@@ -94,7 +94,7 @@ function give_wenkui(nItemIdx)
 	for i = 1,getn(tWenkui_cloth[player_sex]) do
 		tinsert(tSay,tWenkui_cloth[player_sex][i][1].."/#wk_give_cloth("..tWenkui_cloth[player_sex][i][2]..", "..nItemIdx..")")
 	end
-	tinsert(tSay,"Trë vÒ trang tr­íc/#end_say("..nItemIdx..")")
+	tinsert(tSay,"Return to the previous page/#end_say("..nItemIdx..")")
 	Say("<color=green>Tiªu Dao Hép<color>: §¹i hiÖp cÇn lo¹i ngo¹i trang nµo?",getn(tSay),tSay)
 end
 
@@ -133,13 +133,13 @@ function give_xiaoyao(nItemIdx)
 		for i = 1,5 do
 			tinsert(tSay,tXiaoyao_cloth[player_sex][1][i][1].."/#xy_give_cloth("..tXiaoyao_cloth[player_sex][choice][i][2]..", "..nItemIdx..")")
 		end
-		tinsert(tSay,"Trë vÒ trang tr­íc/#end_say("..nItemIdx..")")
+		tinsert(tSay,"Return to the previous page/#end_say("..nItemIdx..")")
 		Say("<color=green>Tiªu Dao Hép<color>: §¹i hiÖp cÇn lo¹i ngo¹i trang nµo?",getn(tSay),tSay)
 	else 
 		for i = 1,5 do
 			tinsert(tSay,tXiaoyao_cloth[player_sex][i][1].."/#xy_give_cloth1("..tXiaoyao_cloth[player_sex][i][2]..", "..nItemIdx..")")
 		end
-		tinsert(tSay,"Trë vÒ trang tr­íc/#end_say("..nItemIdx..")")
+		tinsert(tSay,"Return to the previous page/#end_say("..nItemIdx..")")
 		Say("<color=green>Tiªu Dao Hép<color>: §¹i hiÖp cÇn lo¹i ngo¹i trang nµo?",getn(tSay),tSay)
 	end
 end

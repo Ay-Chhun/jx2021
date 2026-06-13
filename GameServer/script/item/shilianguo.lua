@@ -1,6 +1,6 @@
 function OnUse()
 	local selTab = {
-				"Dïng th«i! KÎo h­ mÊt!/use",
+				"Use it now! Don't let it go to waste!/use",
 				"§Ó dµnh sau nµy dïng/nothing",
 				}
 	Say("Dïng Thİ LuyÖn Qu¶ cã thÓ t¨ng 100 v¹n ®iÓm søc kháe! Vui lßng kh«ng dïng qu¸ nhiÒu kÎo v­ît qu¸ møc tèi ®a!",getn(selTab),selTab);

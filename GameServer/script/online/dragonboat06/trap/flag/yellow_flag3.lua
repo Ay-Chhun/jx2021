@@ -38,7 +38,7 @@ function dizzyfront()
 	PlayerIndex = Get_Player_By_Rank(nRank);
 	if PlayerIndex > 0 and GetTask(POSITION) ~= TRAPCOUNT and PlayerIndex ~= tempPI then
 		CastState("state_vertigo",1,4*18);
-		Msg2Player("Ng­êi xÕp sau  "..sName.." Liªn tiÕp v­ît qua cê ®á vµ cê vµng, b¹n bÞ cho¸ng.");
+		Msg2Player("The player ranked behind"..sName.." Passing the red and yellow flags in a row, you get stunned.");
 	else
 		PlayerIndex = tempPI;
 		Msg2Player("lµm cho¸ng tuyÓn thñ xÕp trªn thÊt b¹i");
@@ -57,7 +57,7 @@ function moveself()
 		PlayerIndex = tempPI;
 		NewWorld(MapID,MapX,MapY);
 		SetTask(POSITION,nPos);
-		Msg2MSAll(MISSION_ID,GetName().."V­ît qua 2 lÇn cê vµng, di chuyÓn ®Õn bªn c¹nh "..sName.." {c¹nh}");
+		Msg2MSAll(MISSION_ID,GetName().."V­ît qua 2 lÇn cê vµng, di chuyÓn ®Õn bªn c¹nh "..sName.." {side}");
 	else
 		PlayerIndex = tempPI;
 		Msg2Player("Di chuyÓn thÊt b¹i!");

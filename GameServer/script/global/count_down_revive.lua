@@ -42,7 +42,7 @@ function OnRevive(nReviveID)
 
 	local tSay = {
 		format("\nX¸c nhËn/#dr_item_tjl_do(%d)", nReviveID),
-		"\n hñy bá/nothing",
+		"\n Cancel/nothing",
 	}
 	Say(format("§ång ý tiªu hao <color=gold>%s<color>*%d lËp tøc håi sinh kh«ng?", tItem[5], tItem[4]), getn(tSay), tSay);
 end

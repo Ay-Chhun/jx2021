@@ -1,5 +1,5 @@
 Index	Level	TaskID	TaskValue	TaskInfo
-H­íng dÉn	§¼ng cÊp	Sè hiÖu thay ®æi nhiÖm vô	Gi¸ trŞ thay ®æi nhiÖm vô	ThuyÕt minh nhiÖm vô
+Guide	§¼ng cÊp	Sè hiÖu thay ®æi nhiÖm vô	Gi¸ trŞ thay ®æi nhiÖm vô	ThuyÕt minh nhiÖm vô
 1	1	1	100	<color=green>Nh.vô S¬ nhËp<color>: B»ng h÷u h·y ®Õn gÆp <color=yellow>D· TÈu<color> häc 1 sè kinh nghiÖm giang hå, sÏ rÊt h÷u İch ®ã.
 2	10	1	100	<color=green>Nh.vô S¬ nhËp<color>: B»ng h÷u vÉn ch­a gÆp D· TÈu µ? <color=yellow>KhÊu ®¹i nh©n<color> ë BiÖn Kinh, <color=yellow>Ph¹m §¹i Nh©n<color> ë Thµnh §«, vµ <color=yellow>¤ng chñ V­¬ng<color> ë TuyÒn Ch©u lµ chç quen biÕt víi «ng Êy, muèn hiÓu râ giang hå h·y mau ®i hái D· TÈu.
 3	1	1	1	<color=green>Nh.vô S¬ nhËp<color>: B»ng h÷u ch­a gÆp Thî rÌn µ? Cã thÓ xem trªn <color=yellow>B¶n ®å nhá<color>!

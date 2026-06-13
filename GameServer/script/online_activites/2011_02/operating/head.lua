@@ -65,7 +65,7 @@ function VET_201102_Operating_ExchangeChocolate(nType)
 end
 
 function VET_201102_Operating_MassExchangeChocolate()
-	AskClientForNumber("ConfirmMassExchangeChocolate", 1, 999, "Sè S«c«la?")
+	AskClientForNumber("ConfirmMassExchangeChocolate", 1, 999, "How many Chocolates?")
 end
 
 function ConfirmMassExchangeChocolate(nCount)
@@ -293,7 +293,7 @@ function VET_201102_give_dahongbao()
 	end
 	
 	if nDate > 110421 then
-		Talk(1,"","§· hÕt thêi h¹n sù kiÖn!")
+		Talk(1,"","The event has expired!")
 		return
 	end
 	
@@ -308,9 +308,9 @@ function VET_201102_give_dahongbao()
 		return
 	end
 	
-	gf_AddItemEx2({2, 1, 30280, 40, 4}, "LÔ Bao §¹i C¸t", VET_201101_01_STR_LOG_TITLE, "nhËn 40 bao l× x×")
+	gf_AddItemEx2({2, 1, 30280, 40, 4}, "Great Fortune Gift Pack", VET_201101_01_STR_LOG_TITLE, "nhËn 40 bao l× x×")
 
-	Msg2Player("NhËn ®­îc 40 bao l× x×!")
+	Msg2Player("You received 40 lucky envelopes!")
 	SetTask(TSK_DAHONGBAO_201101, GetTask(TSK_DAHONGBAO_201101) + 100)
 end
 
@@ -319,7 +319,7 @@ function VET_201102_give_chocolate()
 	local nDate = tonumber(date("%y%m%d"))
 	
 	if nDate < 110304 or nDate > 110410 then
-		Talk(1,"","§· hÕt thêi h¹n sù kiÖn!")
+		Talk(1,"","The event has expired!")
 		return
 	end
 	

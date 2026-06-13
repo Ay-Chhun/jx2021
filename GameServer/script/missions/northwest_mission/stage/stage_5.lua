@@ -25,24 +25,24 @@ Tb_effect_id = {955,956,957,958,959}
 --npcÐÅÏ¢
 	Tb_5_element_coordinate = {
 	--ÖÐÐÄx×ø±ê-ÖÐÐÄY×ø±ê-ÏàÉúÐÐ-Ïà¿ËÐÐ-NPCÄ£°å-NPCÃû³Æ-Ë÷Òý´æ·ÅÎ»ÖÃ-Ð¡¹ÖÄ£°åÃû-Ð¡¹ÖnpcÃû
-	{1613,3204,2,3,"¶i Ngò Hµnh Kim Sø","Kim sø",MS_boss_index_gold,		"Kim Kú Sø",	"Kim Kú Sø"},		--½ð
+	{1613,3204,2,3,"¶i Ngò Hµnh Kim Sø","Metal Envoy",MS_boss_index_gold,		"Kim Kú Sø",	"Kim Kú Sø"},		--½ð
 	{1626,3230,3,4,"¶i Ngò Hµnh Thñy Sø","Thñy sø",MS_boss_index_water,	"Thñy Kú Sø",	"Thñy Kú Sø"},		--Ë®
-	{1602,3258,4,5,"¶i Ngò Hµnh Méc Sø","Méc sø",MS_boss_index_wood,	"Méc Kú Sø",	"Méc Kú Sø"},		--Ä¾
+	{1602,3258,4,5,"¶i Ngò Hµnh Méc Sø","Wood Envoy",MS_boss_index_wood,	"Méc Kú Sø",	"Méc Kú Sø"},		--Ä¾
 	{1577,3230,5,1,"¶i Ngò Hµnh Háa Sø","Háa sø",MS_boss_index_fire,		"Háa Kú Sø",	"Háa Kú Sø"},		--»ð
-	{1592,3202,1,2,"¶i Ngò Hµnh Thæ Sø","Thæ sø",MS_boss_index_soil,		"Thæ Kú Sø",	"Thæ Kú Sø"},		--ÍÁ
+	{1592,3202,1,2,"¶i Ngò Hµnh Thæ Sø","Earth Envoy",MS_boss_index_soil,		"Thæ Kú Sø",	"Thæ Kú Sø"},		--ÍÁ
 }
 	--npcº°»°ÄÚÈÝ
 stage5_npc_chat_alive = {
 	"Cho ng­¬i biÕt thÕ nµo lµ trËn ph¸p m¹nh nhÊt! Ngò Hµnh Lu©n Håi-Sinh!",
 	"HËu qu¶ xem th­êng Ngò Hµnh TrËn! Ngò Hµnh Lu©n Håi-Sinh!",
 	"Nçi sî h·i ®ang bao trïm lªn c¸c ng­¬i! Ngò Hµnh Lu©n Håi-Sinh!",
-	"H÷u dòng v« m­u, thËt ®¸ng tiÕc! Ngò Hµnh Lu©n Håi-Sinh!",
+	"Brave but witless, what a pity! Five Elements Cycle of Rebirth!",
 }
 stage5_npc_chat_death = {
 	"Cho ng­¬i biÕt thÕ nµo lµ trËn ph¸p m¹nh nhÊt! Ngò Hµnh Lu©n Håi-Kh¾c!",
 	"HËu qu¶ xem th­êng Ngò Hµnh TrËn! Ngò Hµnh Lu©n Håi-Kh¾c!",
 	"Nçi sî h·i ®ang bao trïm lªn c¸c ng­¬i! Ngò Hµnh Lu©n Håi-Kh¾c!",
-	"H÷u dòng v« m­u, thËt ®¸ng tiÕc! Ngò Hµnh Lu©n Håi-Kh¾c!?",
+	"Brave but witless, what a pity! Five Elements Cycle of Destruction!?",
 }
 --ÎåÐÐÉúÊ±bossÔö¼ÓµÄÑªÁ¿£¨°Ù·Ö±È£©
 Boss_life_reduce_percent = 30
@@ -257,7 +257,7 @@ function element_crt()
 	if npc_num > 1 then
 		for i = 1,npc_num do
 			local npc_name = GetNpcName(npc_total_index[i])
-			if strsub(npc_name,3,6) == "Kú sø" then
+			if strsub(npc_name,3,6) == "Banner Envoy" then
 				SetNpcLifeTime(npc_total_index[i],0)
 			end		
 		end
@@ -293,7 +293,7 @@ function stage5_element_death(element_seq)
 		local stage_seq = GetMissionV(MS_STATE_DIFF_ID)
 		PlayerIndex = GetTeamMember(0)
 		if PlayerIndex ~= 0 then
-			AddGlobalNews("T¹i"..GetName().."ChiÕn ®Êu gian khæ, cuèi cïng ®¸nh b¹i 'Ngò Hµnh TrËn Sø', v­ît ¶i thµnh c«ng"..Stage_info[stage_seq].stage_name..".")
+			AddGlobalNews("At"..GetName().."ChiÕn ®Êu gian khæ, cuèi cïng ®¸nh b¹i 'Ngò Hµnh TrËn Sø', v­ît ¶i thµnh c«ng"..Stage_info[stage_seq].stage_name..".")
 		end
 		
 		local nMapID = SubWorldIdx2ID(SubWorld)
@@ -301,7 +301,7 @@ function stage5_element_death(element_seq)
 		--×¼±¸¹Ø½áÊø
 		--test
 		local mission_count = GetMapTaskTemp(nMapID,1)
-		WriteLog("[¶i T©y B¾c] thèng kª qua ¶i: ID ¶i	"..stage_seq..":"..nMapID..":"..mission_count.."	Thêi gian qua ¶i	"..Zgc_pub_time_sec_change(((189-GetMissionV(MS_TIMMER_LOOP_ID))* 10),1))
+		WriteLog("[Northwest Pass] pass clearing statistics: Pass ID"..stage_seq..":"..nMapID..":"..mission_count.."	Thêi gian qua ¶i	"..Zgc_pub_time_sec_change(((189-GetMissionV(MS_TIMMER_LOOP_ID))* 10),1))
 		Zgc_pub_mission_fun(MS_ID,"Ms_stage_prize()")
 		SetMissionV(MS_TIMMER_LOOP_ID,6)
 		--stage_mission_fail(5)

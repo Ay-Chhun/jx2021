@@ -17,7 +17,7 @@ end
 end;
 
 function  say1401_12()
-	Say("Th× ra lµ vËy!",2,"Quay vÒ gÆp Nhiªu L©n nghÜ c¸ch/yes1401_12","Dïng 50 l­îng hèi lé./grease1401_12")
+	Say("So that's how it is!",2,"Quay vÒ gÆp Nhiªu L©n nghÜ c¸ch/yes1401_12","Dïng 50 l­îng hèi lé./grease1401_12")
 end;
 
 

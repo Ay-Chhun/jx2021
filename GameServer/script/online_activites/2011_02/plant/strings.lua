@@ -20,7 +20,7 @@ VET_TB_201102_PLANT_NPC_TEMPLATE =
 
 VET_TB_201102_PLANT_NPC_NAME = 
 {
-	"Hoa hång",
+	"Rose",
 	"Hoa hång ®á",
 	"Hoa hång vµng",
 }

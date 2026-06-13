@@ -1,8 +1,8 @@
 Include("\\script\\lib\\globalfunctions.lua");
 function OnUse(nItemIdx)
 	local selTab = {
-				format("§ång ý/#use_yes(%d)",nItemIdx),
-				"Hñy bá/nothing",
+				format("Agree/#use_yes(%d)",nItemIdx),
+				"Cancel/nothing",
 				}
 	Say("B¹n muèn më lÔ bao b¹ch kim?",getn(selTab),selTab);
 end;
@@ -44,7 +44,7 @@ function use_yes(nItemIdx)
 			AddItem(2,1,1002,1,4);
 			Msg2Player("B¹n nhËn ®­îc Long HuyÕt hoµn");
 		end;
-		WriteLog("[LÔ bao b¹ch kim]:"..GetName().."§· sö dông 1 lÔ bao b¹ch kim ")
+		WriteLog("[Platinum Gift Pack]:"..GetName().."§· sö dông 1 lÔ bao b¹ch kim ")
 	end;
 end;
 

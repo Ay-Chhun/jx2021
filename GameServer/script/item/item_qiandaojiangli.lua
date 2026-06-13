@@ -1,5 +1,5 @@
 function OnUse(nItem)
-	Say(format("§ång ý më ngay %s kh«ng?", GetItemName(nItem)), 2, format("Më ngay/#OnUseQianDaoBox(%d)", nItem), "T¹i h¹ chØ xem qua th«i/nothing");
+	Say(format("§ång ý më ngay %s kh«ng?", GetItemName(nItem)), 2, format("Open now/#OnUseQianDaoBox(%d)", nItem), "T¹i h¹ chØ xem qua th«i/nothing");
 end
 
 function OnUseQianDaoBox(nItem)

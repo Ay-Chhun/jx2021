@@ -12,7 +12,7 @@ function OnUse()
 	Say("Dïng ®¹i Nh©n s©m tèc ®é tu luyÖn mËt tŞch gÊp 4 lÇn trong 4 giê, hiÖn b¹n cßn "..nHour.."h "..nMin.." phót, muèn sö dông?",
 		2,
 		"§óng råi./yes_use",
-		"Hñy bá./no_use"
+		"Cancel./no_use"
 		)
 end
 
@@ -28,7 +28,7 @@ function use_cb(nCount)
 		local nTime = floor(GetTask(TASK_ID) / 18 / 60)
 		local nHour = floor(nTime / 60)
 		local nMin = floor(mod(nTime, 60))
-		Msg2Player("B¹n ®· dïng ®¹i Nh©n s©m, thêi gian cho tèc ®é tu luyÖn mÊt tŞch gÊp 4 lÇn lµ"..nHour.."h "..nMin.." phót ")
+		Msg2Player("B¹n ®· dïng ®¹i Nh©n s©m, thêi gian cho tèc ®é tu luyÖn mÊt tŞch gÊp 4 lÇn lµ"..nHour.."h "..nMin.." minutes")
 	end
 end
 

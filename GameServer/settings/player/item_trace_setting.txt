@@ -1,7 +1,7 @@
 Genre	Detail	Particular	func	comments
 0	102	24;43		Lo¹i trang søc
 0	102	8801;8828		Lo¹i trang søc
-0	105	13;20		M·
+0	105	13;20		Horse
 0	112	78;158		TrÊn ph¸i
 2	0	600;613		Chøng th­/b¶o r­¬ng NguyÖt L­îng Thè/tói quyÕt yÕu
 2	1	563		Kú Kim
@@ -19,7 +19,7 @@ Genre	Detail	Particular	func	comments
 0	5	6009		L­u Yªn c«n
 0	2	6010		HuyÒn Yªn kiÕm
 0	9	6011		Vò Yªn bót
-0	6	6012		Hµ Tiªm Th­¬ng
+0	6	6012		He Tian Spear
 0	4	6013		Hµnh Yªn Cung
 0	7	6014		Träc Yªn nhÉn
 0	11	6015		Yªu Yªn tr¶o
@@ -58,7 +58,7 @@ Genre	Detail	Particular	func	comments
 0	100	85;88		Thiªn §Þa HuyÒn Hoµng Gi¸p 
 0	101	85;88		Thiªn §Þa HuyÒn Hoµng Trang
 0	103	95;98		Tµng KiÕm Tö Kim m·o
-0	100	95;98		Kim Lò Th­êng
+0	100	95;98		Gold-Inlaid Robe
 0	101	95;98		Tµng KiÕm ¤ kim phôc
 2	1	1146		Viªm Hoµng ThiÕt Hån
 2	1	1067		§Þnh Hån Thiªn Th¹ch Linh Th¹ch

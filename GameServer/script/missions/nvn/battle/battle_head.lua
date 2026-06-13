@@ -31,7 +31,7 @@ MV_TEAM_FIGHTER = {
 	MV_TEAM_FIGHTER_2,
 }
 
-CampName = {"§éi ®á", "§éi xanh"}
+CampName = {"Red Team", "Blue Team"}
 
 BattleMission_TeamFight = {
 	missionID = 64,

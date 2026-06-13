@@ -8,15 +8,15 @@ function OnUse(nItemIdx)
 	local nCurCount = GetTask(TSK_COUNTER)+1;
 	local selTab = {
 				format("§­îc råi. B¾t ®Çu më th«i!/#open(%d)",nItemIdx),
-				format("Xem bªn trong cã g× ®·!/#see_item(%d)",nItemIdx),
+				format("Let's see what's inside!/#see_item(%d)",nItemIdx),
 				"T¹m thêi kh«ng më/nothing",
 				}
-	Say("§©y lµ lÇn thø <color=yellow>"..nCurCount.."<color> ng­¬i më <color=yellow>"..g_ItemName.."<color>. Xin l­u ý: mçi khi më 4 tói ph¶i cho 1 linh th¹ch cÊp 5 bÊt kú, 10 tói th× 1 linh th¹ch phèi ph­¬ng bÊt kú, 15 tói th× 1 nguyÖt hoa, 20 tói th× 1 linh th¹ch cÊp 6, 40 tói th× 1 Ngò Hµnh MËt TÞch, 80 tói th× 1 ThÇn Hµnh B¶o §iÓn, 120 tói th× 1 kú kim, 160 tói: 1 Vâ L©m B¶o §iÓn, 300 tói: 1 quyÓn L¨ng Ba Vi Bé. B¹n x¸c nhËn më <color=yellow>"..g_ItemName.."<color> chø? <color=red>Chó ý <color>: B¹n cÇn ph¶i cã "..g_NeedRoom.." chç trèng vµ "..g_NeedWeight.." søc lùc. Linh th¹ch vµ Linh th¹ch phèi ph­¬ng cho vµo Tô Linh §Ünh. ",getn(selTab),selTab);
+	Say("§©y lµ lÇn thø <color=yellow>"..nCurCount.."<color> ng­¬i më <color=yellow>"..g_ItemName.."<color>. Xin l­u ý: mçi khi më 4 tói ph¶i cho 1 linh th¹ch cÊp 5 bÊt kú, 10 tói th× 1 linh th¹ch phèi ph­¬ng bÊt kú, 15 tói th× 1 nguyÖt hoa, 20 tói th× 1 linh th¹ch cÊp 6, 40 tói th× 1 Ngò Hµnh MËt TÞch, 80 tói th× 1 ThÇn Hµnh B¶o §iÓn, 120 tói th× 1 kú kim, 160 tói: 1 Vâ L©m B¶o §iÓn, 300 tói: 1 quyÓn L¨ng Ba Vi Bé. B¹n x¸c nhËn më <color=yellow>"..g_ItemName.."<color> chø? <color=red>Chó ý <color>: B¹n cÇn ph¶i cã "..g_NeedRoom.." empty slots and"..g_NeedWeight.." søc lùc. Linh th¹ch vµ Linh th¹ch phèi ph­¬ng cho vµo Tô Linh §Ünh. ",getn(selTab),selTab);
 end;
 
 function see_item(nItemIdx)
 	local szItems = "1 Bµn Long BÝch, 1 XÝch ThiÕt Tinh, danh väng 50, møc ®é ®ãng gãp s­ m«n 2? (ph¶i gia nhËp m«n ph¸i), 1 cñ c¶i ®á, 1 Sinh ®å chøng th­, 3 Tó tµi chøng th­, 3 Cö nh©n chøng th­, 1 linh th¹ch cÊp 5 ngÉu nhiªn, 1 ph«i ph­¬ng linh th¹ch cÊp 6 ngÉu nhiªn, 1 nguyÖt hoa, 1 linh th¹ch cÊp 6 ngÉu nhiªn, 1 Ngò Hµnh MËt TÞch, 1 ThÇn Hµnh B¶o §iÓn, kú kim, 1 Vâ L©m B¶o §iÓn, 1 L¨ng Ba Vi Bé.";
-	Talk(1,"#OnUse("..nItemIdx..")","Mçi '"..g_ItemName.." cã thÓ më ®­îc c¸c vËt phÈm: "..szItems..". Chóc b¹n may m¾n!");
+	Talk(1,"#OnUse("..nItemIdx..")","Mçi '"..g_ItemName.." cã thÓ më ®­îc c¸c vËt phÈm: "..szItems..". Good luck!");
 end;
 
 function open(nItemIdx)
@@ -53,14 +53,14 @@ function open(nItemIdx)
 			add_lingshi(5,1,100,4,0);	--Ëæ»ú5¼¶ÁéÊ¯1¿Å,10%ÇÒÃ¿¿ª4¸ö°ü±Ø¸ø1¸ö
 			--ÒÔÏÂÐèÒª·¢È«·þ¹«¸æ
 			add_peifang(6,1,50,10,1);	--Ëæ»ú6¼¶ÁéÊ¯Åä·½1ÕÅ,5%ÇÒÃ¿¿ª10¸ö°ü±Ø¸ø1¸ö
-			give_item(2,1,2002,1,"1 th¸ng ",50,15,1);	--ÔÂ»ª1¸ö,5%ÇÒÃ¿¿ª15¸ö°ü±Ø¸ø1¸ö
+			give_item(2,1,2002,1,"1 month",50,15,1);	--ÔÂ»ª1¸ö,5%ÇÒÃ¿¿ª15¸ö°ü±Ø¸ø1¸ö
 			add_lingshi(6,1,50,20,1);	--Ëæ»ú6¼¶ÁéÊ¯1¿Å,5%ÇÒÃ¿¿ª20¸ö°ü±Ø¸ø1¸ö
 			give_item(0,107,155,1,"1 quyÓn Ngò Hµnh MËt TÞch",10,40,1);--ÎåÐÐÃØ¼®1±¾,1%ÇÒÃ¿¿ª40¸ö°ü±Ø¸ø1¸ö
 			give_item(0,200,40,1,"1 quyÓn ThÇn Hµnh B¶o §iÓn",5,80,1);	--ÉñÐÐ±¦µä1±¾,0.5%ÇÒÃ¿¿ª80¸ö°ü±Ø¸ø1¸ö
-			give_item(2,1,563,1,"1 Kú Kim",2,120,1);	--Ææ½ð,0.2%ÇÒÃ¿¿ª120¸ö°ü±Ø¸øÒ»¸ö
-			give_item(2,1,3206,1,"1Vâ L©m b¶o ®iÓn",1,160,1);--ÎäÁÖ±¦µä1±¾,0.1%ÇÒÃ¿¿ª160¸ö°ü±Ø¸ø1¸ö
-			give_item(0,112,78,1,"1 quyÓn L¨ng Ba Vi Bé",1,300,1);--Áè²¨Î¢²½1±¾,0.1%ÇÒÃ¿¿ª300¸ö°ü±Ø¸ø1¸ö
-			WriteLog("["..g_ItemName.."]:"..GetName().."thø"..nCurCount.." më "..g_ItemName);
+			give_item(2,1,563,1,"1 Marvelous Gold",2,120,1);	--Ææ½ð,0.2%ÇÒÃ¿¿ª120¸ö°ü±Ø¸øÒ»¸ö
+			give_item(2,1,3206,1,"1 Wulin Treasure Manual",1,160,1);--ÎäÁÖ±¦µä1±¾,0.1%ÇÒÃ¿¿ª160¸ö°ü±Ø¸ø1¸ö
+			give_item(0,112,78,1,"1 volume of Lingbo Microstep",1,300,1);--Áè²¨Î¢²½1±¾,0.1%ÇÒÃ¿¿ª300¸ö°ü±Ø¸ø1¸ö
+			WriteLog("["..g_ItemName.."]:"..GetName().."the"..nCurCount.." to open"..g_ItemName);
 		end;
 	else
 		Talk(1,"","Kho¶ng trèng hoÆcsøc lùccña b¹n kh«ng ®ñ. Xin kiÓm tra l¹i hµnh trang tr­íc!"..g_ItemName.."!");
@@ -70,9 +70,9 @@ end;
 function show_msg(szItemName,bGlobalMsg)
 	Msg2Player("B¹n nhËn ®­îc "..szItemName);
 	if bGlobalMsg == 1 then
-		Msg2Global(GetName().."Më '"..g_ItemName.." nhËn ®­îc "..szItemName);
+		Msg2Global(GetName().."Open '"..g_ItemName.." nhËn ®­îc "..szItemName);
 	end;
-	WriteLog("["..g_ItemName.."]:"..GetName().."NhËn ®­îc"..szItemName);	
+	WriteLog("["..g_ItemName.."]:"..GetName().."Received"..szItemName);	
 end;
 --¸øÕòÅÉ²ÐÆªµÄº¯Êý
 function give_zpcp(tbZPCP,nCount)
@@ -161,7 +161,7 @@ function add_horse(nP,nModCount)
 			AddItem(0,105,16,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,1)
 		else
-			szItemName = "1 §»ng Vô";
+			szItemName = "1 Deng Wu";
 			AddItem(0,105,20,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,1)
 		end;
@@ -172,7 +172,7 @@ function add_horse(nP,nModCount)
 			AddItem(0,105,16,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,1)
 		else
-			szItemName = "1 §»ng Vô";
+			szItemName = "1 Deng Wu";
 			AddItem(0,105,20,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,1)
 		end;			

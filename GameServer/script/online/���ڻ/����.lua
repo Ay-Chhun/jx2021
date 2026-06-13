@@ -15,7 +15,7 @@ function main()
 	if MapID == 961 then
 		MapName = "B¶n ®å tuyÕt Thµnh §«"
 	elseif MapID == 962 then
-		MapName = "B¶n ®å tuyÕt BiÖn Kinh"
+		MapName = "Snow map of Bianjing"
 	elseif MapID == 963 then
 		MapName = "B¶n ®å tuyÕt TuyÒn Ch©u"	
 	elseif MapID == 964 then

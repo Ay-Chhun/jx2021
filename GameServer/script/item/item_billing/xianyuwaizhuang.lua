@@ -5,9 +5,9 @@
 
 tb_prize = {
 	[1] = {1,0,109,505,"Tiªm vò trang (nam tiªu chuÈn)"},
-	[2] = {1,0,109,506,"Tiªm vò trang (nam kh«i ng«)"},
-	[3] = {3,0,108,485,"Tiªm vò tr©m (n÷ gîi c¶m)",0,109,503,"Tiªm vò th­êng (n÷ gîi c¶m)",0,110,225,"Tiªm vò quÇn (n÷ gîi c¶m)"},
-	[4] = {3,0,108,486,"Tiªm vò tr©m (kiÒu n÷)",0,109,504,"Tiªm vò th­êng (kiÒu n÷)",0,110,226,"Tiªm vò quÇn (kiÒu n÷)"}	
+	[2] = {1,0,109,506,"Dye clothing (male, valiant)"},
+	[3] = {3,0,108,485,"Dye hairpin (female, alluring)",0,109,503,"Tiªm vò th­êng (n÷ gîi c¶m)",0,110,225,"Dye skirt (female, alluring)"},
+	[4] = {3,0,108,486,"Dye hairpin (female, graceful)",0,109,504,"Tiªm vò th­êng (kiÒu n÷)",0,110,226,"Dye skirt (female, graceful)"}	
 	
 }
 

@@ -8,6 +8,6 @@ function main()
 --			--	SetTask(Task_id_004,GetTask(Task_id_004)+1);
 --			--end
 --		else
-			Talk(1,"","Chµo mõng ®Õn nhµ ta ch¬i!");
+			Talk(1,"","Welcome to my home for a visit!");
 		--end
 end

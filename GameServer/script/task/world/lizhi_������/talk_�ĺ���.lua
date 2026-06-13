@@ -11,7 +11,7 @@ function talk_one()
 
     local szTalk = {
         "Ta phông mÖnh TriÖu Diªn Niªn tiÒn bèi th«ng b¸o cho c« n­¬ng cÇn ®Ò phßng bän dÞ téc vâ sÜ",
-        "§a t¹ <sex>, ta sÏ ®Ò phßng."
+        "Many thanks, <sex>, I will be on guard."
     }
     
     RemoveTrigger(GetRunningTrigger());
@@ -54,7 +54,7 @@ function talk_five()
     };
     local szTaskFiveTalk = {
         "Hy väng <sex> cã thÓ gióp ta th«ng b¸o cho nh÷ng ng­êi liªn l¹c kh¸c trong {Tr­êng Ca M«n}, lµ {C«ng T«n Th­} (T­¬ng D­¬ng), {TriÖu Diªn Niªn} (BiÖn Kinh), {Gia C¸t Kú} (Giang T©n Th«n).",
-        "Ta sÏ ®i ngay!"
+        "I will go at once!"
     };
     local szTaskFiveFinished = {
         "Ta ®· hoµn thµnh nhiÖm vô c« n­¬ng yªu cÇu!",
@@ -108,7 +108,7 @@ end;
 function task_four_01()
     local szTalkFourTalk2 = {
         "Th©n phËn ta ®· bÞ ng­êi {Xi Háa gi¸o} ph¸t hiÖn, ng­¬i mau gióp ta ®Õn {Long TuyÒn Th«n} giÕt 20 con {hå ly} vÒ ®©y!",
-        "§­îc! Ta ®i ngay!"
+        "Alright! I will go at once!"
     };
     TalkEx("task_four_02", szTalkFourTalk2);
 end;
@@ -117,8 +117,8 @@ function task_four_02()
     SetTask(TASK_FOUR, 2);
     RemoveTrigger(GetTrigger(99));
     CreateTrigger(0,506,99);
-    Msg2Player("GiÕt 20 con hå ly ë Long TuyÒn Th«n");
-    TaskTip("GiÕt 20 con hå ly ë Long TuyÒn Th«n");
+    Msg2Player("Kill 20 foxes at Longquan Village.");
+    TaskTip("Kill 20 foxes at Longquan Village.");
 end;
 
 function task_four_03()

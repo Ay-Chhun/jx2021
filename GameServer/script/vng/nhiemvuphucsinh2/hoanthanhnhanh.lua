@@ -36,12 +36,12 @@ function OnPutinComplete(param)
 	local nG, nD, nP = tbItem[1][2], tbItem[1][3], tbItem[1][4]
 	
 	if GetItemCount(nG,nD,nP) < nTraiCay then
-		Talk(1,"",szNPCName.."Ng­¬i kh«ng cã ®ñ <color=yellow>"..nTraiCay.." "..GetItemName(nG,nD,nP).."<color>, h·y chuÈn bÞ thªm.")
+		Talk(1,"",szNPCName.."Ng­¬i kh«ng cã ®ñ <color=yellow>"..nTraiCay.." "..GetItemName(nG,nD,nP).."<color>, please prepare more.")
 		return 0
 	end
 	
 	if GetItemCount(2,1,30230) < nXu then
-		Talk(1,"",szNPCName.."Ng­¬i kh«ng cã ®ñ <color=yellow>"..nXu.." "..GetItemName(2,1,30230).."<color>, h·y chuÈn bÞ thªm.")
+		Talk(1,"",szNPCName.."Ng­¬i kh«ng cã ®ñ <color=yellow>"..nXu.." "..GetItemName(2,1,30230).."<color>, please prepare more.")
 		return 0
 	end
 	

@@ -1,7 +1,7 @@
 
 t_tile_cfg =
 {
-	[30560] = {65, 1, 7, "Du HiÖp"},
+	[30560] = {65, 1, 7, "Wandering Hero"},
 	[30561] = {65, 2, 7, "¦ng D­¬ng"},
 	[30562] = {65, 3, 7, "ChiÕn Cuång"},
 }
@@ -18,8 +18,8 @@ function OnUse(id)
     		local szMsg = format("Ng­¬i x¸c nhËn muèn ®æi %d ngµy gia h¹n thêi gian [%s] danh hiÖu kh«ng?", t[3], t[4])
     		local tSay = 
         	{
-        		format("§ång ý/#ye_use(%d)", p),
-        		"Rêi khái/no",
+        		format("Confirm/#ye_use(%d)", p),
+        		"Leave/no",
         	}
         	Say(szMsg, getn(tSay), tSay)
 		end

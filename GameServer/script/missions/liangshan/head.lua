@@ -104,21 +104,21 @@ returnPos = {
 --¾ÅÖÝ×°±¸
 TJiuzhouHead = {
 	{
-		{"Long §»ng Tø H¶i Qu¸n",0,103,3056,0},{"Long §»ng Tø H¶i Qu¸n",0,103,3057,0},{"Long §»ng Tø H¶i Qu¸n",0,103,3058,0},{"Long §»ng Tø H¶i Qu¸n",0,103,3059,0}
+		{"Dragon Soaring Four Seas Pass",0,103,3056,0},{"Dragon Soaring Four Seas Pass",0,103,3057,0},{"Dragon Soaring Four Seas Pass",0,103,3058,0},{"Dragon Soaring Four Seas Pass",0,103,3059,0}
 	},{
 		{"Phông Vò Cöu Thiªn Qu¸n",0,103,3060,0},{"Phông Vò Cöu Thiªn Qu¸n",0,103,3061,0},{"Phông Vò Cöu Thiªn Qu¸n",0,103,3062,0},{"Phông Vò Cöu Thiªn Qu¸n",0,103,3063,0}
 	}
 }
 TJiuzhouCloth = {
 	{
-		{"Long §»ng Tø H¶i Y",0,100,3056,0},{"Long §»ng Tø H¶i Y",0,100,3057,0},{"Long §»ng Tø H¶i Y",0,100,3058,0},{"Long §»ng Tø H¶i Y",0,100,3059,0}
+		{"Long Dang Tu Hai Robe",0,100,3056,0},{"Long Dang Tu Hai Robe",0,100,3057,0},{"Long Dang Tu Hai Robe",0,100,3058,0},{"Long Dang Tu Hai Robe",0,100,3059,0}
 	},{
 		{"Phông Vò Cöu Thiªn Y",0,100,3060,0},{"Phông Vò Cöu Thiªn Y",0,100,3061,0},{"Phông Vò Cöu Thiªn Y",0,100,3062,0},{"Phông Vò Cöu Thiªn Y",0,100,3063,0}
 	}
 }
 TJiuzhouShoes = {
 	{
-		{"Long §»ng Tø H¶i Trang",0,101,3056,0},{"Long §»ng Tø H¶i Trang",0,101,3057,0},{"Long §»ng Tø H¶i Trang",0,101,3058,0},{"Long §»ng Tø H¶i Trang",0,101,3059,0}
+		{"Long Dang Tu Hai Greaves",0,101,3056,0},{"Long Dang Tu Hai Greaves",0,101,3057,0},{"Long Dang Tu Hai Greaves",0,101,3058,0},{"Long Dang Tu Hai Greaves",0,101,3059,0}
 	},{
 		{"Phông Vò Cöu Thiªn Trang",0,101,3060,0},{"Phông Vò Cöu Thiªn Trang",0,101,3061,0},{"Phông Vò Cöu Thiªn Trang",0,101,3062,0},{"Phông Vò Cöu Thiªn Trang",0,101,3063,0}
 	}
@@ -676,10 +676,10 @@ function temp_Talk(self, nPage)
 	end
 	local bReturn = 0;
 	if nPage > 0 then
-		tinsert(tSel, format("Trang tr­íc".."/#temp_Talk('%s', %d)", HashTable(self), nPage - 1));
+		tinsert(tSel, format("Previous page".."/#temp_Talk('%s', %d)", HashTable(self), nPage - 1));
 	end
 	if nMax < getn(self.sel) - commonSel then
-		tinsert(tSel, format("Trang kÕ".."/#temp_Talk('%s', %d)", HashTable(self), nPage + 1));
+		tinsert(tSel, format("Next page".."/#temp_Talk('%s', %d)", HashTable(self), nPage + 1));
 	end
 	for i = getn(self.sel) - commonSel + 1,  getn(self.sel) do
 		tinsert(tSel, format("%s/%s", self.sel[i][1], getcallback(self.sel[i][2], self)));
@@ -734,10 +734,10 @@ function suSayCB(nPage)
 	end
 	local tArg = new(tMsg.sel);
 	if getn(tMsg.msg) > nPage then
-		tArg = { format("Trang kÕ/#suSayCB(%d)", nPage+1)};
+		tArg = { format("Next page/#suSayCB(%d)", nPage+1)};
 	end
 	if nPage > 1 then
-		tinsert(tArg, 1, format("Trang tr­íc/#suSayCB(%d)", nPage-1));
+		tinsert(tArg, 1, format("Previous page/#suSayCB(%d)", nPage-1));
 	end
 
 	Say(tMsg.msg[nPage], getn(tArg), tArg);

@@ -51,7 +51,7 @@ function Confirm(nSel,nItemIndex)
 		end
 		if enouth == 1 then
 			tMenu = {
-				format("%s/#Award(%d,%d)", "§ång ý", nSel, nItemIndex),
+				format("%s/#Award(%d,%d)", "Agree", nSel, nItemIndex),
 				"§Ó ta nghÜ l¹i	/nothing",
 			};
 		else
@@ -61,7 +61,7 @@ function Confirm(nSel,nItemIndex)
 		end
 	else
 		tMenu = {
-			format("%s/#Award(%d,%d)", "§ång ý", nSel, nItemIndex),
+			format("%s/#Award(%d,%d)", "Agree", nSel, nItemIndex),
 			"§Ó ta nghÜ l¹i	/nothing",
 		};
 	end

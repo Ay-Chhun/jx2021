@@ -3,13 +3,13 @@ Include("\\script\\vng\\lib\\vnglib_function.lua");
 szNpcName = "<color=green>Cæ L·o Ta<color>:"
 
 tbSTVNconfig = { --TaskID, mission name, mission qty, TaskPosStart, TaskPosEnd
-	[1] = {TSK_SINHTUVONGA1, "trång c©y Tø Linh", 16,2,1},
-	[2] = {TSK_SINHTUVONGA1, "trång c©y B¸t Nh· nhá", 16,4,3},
-	[3] = {TSK_SINHTUVONGA1, "trång h¹t gièng", 24,6,5},
-	[4] = {TSK_SINHTUVONGA1, "L­¬ng S¬n B¹c", 3,7,7},
+	[1] = {TSK_SINHTUVONGA1, "plant a Tu Linh tree", 16,2,1},
+	[2] = {TSK_SINHTUVONGA1, "plant a small Bat Nha tree", 16,4,3},
+	[3] = {TSK_SINHTUVONGA1, "plant a seed", 24,6,5},
+	[4] = {TSK_SINHTUVONGA1, "Liang Son Bac", 3,7,7},
 	[5] = {TSK_SINHTUVONGA1, "Thiªn M«n TrËn", 3,8,8},
 	[6] = {TSK_SINHTUVONGA1, "Thñy Lîi", 3,9,9},
-	[7] = {TSK_SINHTUVONGA3, "Cóng TÕ", 3,1,1},
+	[7] = {TSK_SINHTUVONGA3, "Sacrifice", 3,1,1},
 }
 
 tbSTVNDailyMissionConfig = { --TaskID, mission name, mission qty, TaskPosStart, TaskPosEnd
@@ -31,24 +31,24 @@ tbActiveFee = {
 
 tb_translife_cloth_PS = {
 										[1] = {
-													{"ChuyÓn Sinh Trang", {0,108,30005,1,4,5,639,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,342,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,110,30005,1,4,6,306,6,102}},
+													{"Rebirth Manor", {0,108,30005,1,4,5,639,6,102}}, 
+													{"Rebirth Manor", {0,109,30005,1,4,5,342,6,102}}, 
+													{"Rebirth Manor", {0,110,30005,1,4,6,306,6,102}},
 											},		
 										[2] = {
-													{"ChuyÓn Sinh Trang", {0,108,30005,1,4,6,302,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,409,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,110,30005,1,4,5,79,5,80,6,102}},
+													{"Rebirth Manor", {0,108,30005,1,4,6,302,6,102}}, 
+													{"Rebirth Manor", {0,109,30005,1,4,5,409,6,102}}, 
+													{"Rebirth Manor", {0,110,30005,1,4,5,79,5,80,6,102}},
 											},
 										[3] = {
-													 {"ChuyÓn Sinh Trang", {0,108,30005,1,4,2,13075,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,342,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,110,30005,1,4,6,306,6,102}},
+													 {"Rebirth Manor", {0,108,30005,1,4,2,13075,6,102}}, 
+													 {"Rebirth Manor", {0,109,30005,1,4,5,342,6,102}}, 
+													 {"Rebirth Manor", {0,110,30005,1,4,6,306,6,102}},
 											},	
 										[4] = {
-													 {"ChuyÓn Sinh Trang", {0,108,30005,1,4,5,27,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,342,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,110,30005,1,4,4,292,4,293,6,102}},
+													 {"Rebirth Manor", {0,108,30005,1,4,5,27,6,102}}, 
+													 {"Rebirth Manor", {0,109,30005,1,4,5,342,6,102}}, 
+													 {"Rebirth Manor", {0,110,30005,1,4,4,292,4,293,6,102}},
 											},
 									}
 									
@@ -72,9 +72,9 @@ function STVN_MissionAccept()
 		SetTask(TSK_SINHTUVONGA1,33241616)
 		VNG_SetTaskPos(TSK_SINHTUVONGA3,0,1,1)
 		local szTalk = szNpcName.."C¸c h¹ ®· nhËn nhiÖm vô Sinh Tö V« Ng·. H·y nhanh chãng hoµn thµnh c¸c thö th¸ch sau ®Ó kÝch ho¹t:\n"
-		szTalk = szTalk .. "- Trång 16 c©y Tø Linh\n"
-		szTalk = szTalk .. "- Trång 16 c©y B¸t Nh· nhá\n"
-		szTalk = szTalk .. "- Trång 24 h¹t gièng\n"
+		szTalk = szTalk .. "- Plant 16 Tu Linh trees\n"
+		szTalk = szTalk .. "- Plant 16 small Bat Nha trees\n"
+		szTalk = szTalk .. "- Plant 24 seeds\n"
 		szTalk = szTalk .. "- Hoµn thµnh 3 nhiÖm vô L­¬ng S¬n B¹c\n"
 		szTalk = szTalk .. "- NhËn th­ëng 3 lÇn Thiªn M«n TrËn"
 		Talk(1,"",szTalk)
@@ -82,9 +82,9 @@ function STVN_MissionAccept()
 		SetTask(TSK_SINHTUVONGA1,333241616)
 		VNG_SetTaskPos(TSK_SINHTUVONGA3,3,1,1)
 		local szTalk = szNpcName.."C¸c h¹ ®· nhËn nhiÖm vô Sinh Tö V« Ng·. H·y nhanh chãng hoµn thµnh c¸c thö th¸ch sau ®Ó kÝch ho¹t:\n"
-		szTalk = szTalk .. "- Trång 16 c©y Tø Linh\n"
-		szTalk = szTalk .. "- Trång 16 c©y B¸t Nh· nhá\n"
-		szTalk = szTalk .. "- Trång 24 h¹t gièng\n"
+		szTalk = szTalk .. "- Plant 16 Tu Linh trees\n"
+		szTalk = szTalk .. "- Plant 16 small Bat Nha trees\n"
+		szTalk = szTalk .. "- Plant 24 seeds\n"
 		szTalk = szTalk .. "- Hoµn thµnh 3 nhiÖm vô L­¬ng S¬n B¹c\n"
 		szTalk = szTalk .. "- NhËn th­ëng 3 lÇn Thiªn M«n TrËn\n"
 		szTalk = szTalk .. "- Hoµn thµnh 3 lÇn nhiÖm vô Thñy Lîi\n"

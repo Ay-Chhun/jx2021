@@ -110,7 +110,7 @@ function handle_on_npc_talk(nNpcIndex)
     local tbSay = {}
     tinsert(tbSay, format("%s/_npc_talk_personal_award", "NhËn phÇn th­ëng c¸ nh©n "))
     tinsert(tbSay, format("%s/_npc_talk_shili_award", "NhËn phÇn th­ëng thÕ lùc"))
-    tinsert(tbSay, format("%s/nothing", "Ra khái"))
+    tinsert(tbSay, format("%s/nothing", "Exit"))
     Say(szTitle, getn(tbSay), tbSay)
 end
 
@@ -183,7 +183,7 @@ function _npc_talk_shili_award(bConfirm)
 			szTitle = format("%s\n rÊt tiÕc HiÖp sÜ h«m nay kh«ng thÓ nhËn phÇn th­ëng thÕ lùc theo xÕp h¹ng", szTitle, nMyRank)
 		end
         tinsert(tbSay, format("%s/handle_on_npc_talk", "trë l¹i"))
-        tinsert(tbSay, format("%s/nothing", "Ra khái"))
+        tinsert(tbSay, format("%s/nothing", "Exit"))
         Say(szTitle, getn(tbSay), tbSay)
         return
 	end

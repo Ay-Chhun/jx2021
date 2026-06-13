@@ -6,7 +6,7 @@
 --reason:雪仗改版
 --mender:yanjun
 Include("\\script\\online\\春节活动\\snowwar\\snowwar_worker_npc.lua");
-g_sNpcName = "Xa phu_n衜 tuy誸";
+g_sNpcName = "Coachman_Snowball Fight";
 g_CurMapID = 0;
 function main()
 	g_CurMapID = GetWorldPos();

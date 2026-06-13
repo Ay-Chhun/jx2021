@@ -159,7 +159,7 @@ function use_firework(nItemIndex, nType)
 		nExp = nExp * 2
 	end
 	ModifyExp(nExp)
-	Msg2Player("NhËn ®­îc "..nExp.." ®iÓm kinh nghiÖm")
+	Msg2Player("Received"..nExp.." ®iÓm kinh nghiÖm")
 	--- §iÓm VËn May
 --	local nPointVM = gf_GetTaskByte(TSK_LUCKY_DAOHUU_NEW_THANG4, BYTE_POINT_LUCKY)	
 --	local nExpVM = (nPointVM - 100)/100*nExp
@@ -210,5 +210,5 @@ function use_firework(nItemIndex, nType)
 	DoFireworks ( YANHUO_TABLE[nIndex][2], YANHUO_TABLE[nIndex][3] )
 	
 	-- HiÖn thanh progress bar 1 phót 30 gi©y sau khi sö dông ph¸o hoa míi cã thÓ sö dông l¹i lÇn n÷a
-	StartTimeGuage ("Ph¸o hoa", 90,0,1 )
+	StartTimeGuage ("Fireworks", 90,0,1 )
 end

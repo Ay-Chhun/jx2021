@@ -1,5 +1,5 @@
 lv	exp
-C p 	Kinh nghi÷m
+Level	Kinh nghi÷m
 10	1000
 11	1000
 12	1500

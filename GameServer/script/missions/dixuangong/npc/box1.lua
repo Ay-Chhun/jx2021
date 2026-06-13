@@ -15,8 +15,8 @@ tJingLiAward = {
 	{31, 1000, "rand_start_equip()", 1},
 	{1, 600, "ThiÕt Tinh cÊp 2", {2, 1, 30534, 1, 4}, 0},
 	{1, 200, "ThiÕt Tinh cÊp 3", {2, 1, 30535, 1, 4}, 0},
-	{1, 100, "BÝ Ng©n To¶n", {2, 1, 30538, 1, 4}, 0},
-	{1, 100, "BÝ Ng©n Chïy", {2, 1, 30539, 1, 4}, 0},
+	{1, 100, "Hidden Silver Plate", {2, 1, 30538, 1, 4}, 0},
+	{1, 100, "Hidden Silver Mallet", {2, 1, 30539, 1, 4}, 0},
 	{1, 500, "B¨ng Tinh Th¹ch", {2, 1, 30554, 1, 4}, 0},
 	{1, 250, "M¶nh Thiªn th¹ch", {2, 2, 7, 1, 4}, 0},
 	{1, 525, "Thiªn th¹ch", {2, 2, 8, 1, 4}, 0},
@@ -35,9 +35,9 @@ tJingLiAward = {
 	{1, 200, "Ngò Hoa Tô Nguyªn T¸n (néi c«ng)", {1, 0, 262, 1, 1}, 0},
 	{1, 200, "Ngò Hoa Tô Nguyªn T¸n (g©n cèt)", {1, 0, 263, 1, 1}, 0},
 	{1, 200, "Ngò Hoa Tô Nguyªn T¸n (th©n ph¸p)", {1, 0, 264, 1, 1}, 0},
-	{1, 200, "Ngò Hoa Tô Nguyªn T¸n (nhanh nhÑn)", {1, 0, 265, 1, 1}, 0},
+	{1, 200, "Five Flower Gathering Origin Powder (agility)", {1, 0, 265, 1, 1}, 0},
 	{1, 600, "H¾c Ngäc §o¹n Tôc Cao", {1, 0, 6, 1, 4}, 0},
-	{1, 600, "Sinh Sinh Hãa T¸n", {1, 0, 16, 1, 4}, 0},
+	{1, 600, "Life-Begetting Powder", {1, 0, 16, 1, 4}, 0},
 	{1, 600, "V¹n VËt Quy Nguyªn §¬n", {1, 0, 11, 1, 4}, 0},
 	{1, 400, "Cöu chuyÓn håi hån ®¬n", {1, 0, 32, 1, 4}, 0},
 }
@@ -63,9 +63,9 @@ function ensure_openBox()
 				AddRuntimeStat(1,16,0,tJingLiAward[nRandIndex][4][4]);
 			elseif tJingLiAward[nRandIndex][3] == "CÊp 3 TÈy T©m Th¹ch" then
 				AddRuntimeStat(1,17,0,tJingLiAward[nRandIndex][4][4]);
-			elseif tJingLiAward[nRandIndex][3] == "BÝ Ng©n To¶n" then
+			elseif tJingLiAward[nRandIndex][3] == "Hidden Silver Plate" then
 				AddRuntimeStat(1,18,0,tJingLiAward[nRandIndex][4][4]);
-			elseif tJingLiAward[nRandIndex][3] == "BÝ Ng©n Chïy" then
+			elseif tJingLiAward[nRandIndex][3] == "Hidden Silver Mallet" then
 				AddRuntimeStat(1,19,0,tJingLiAward[nRandIndex][4][4]);
 			end
 		end

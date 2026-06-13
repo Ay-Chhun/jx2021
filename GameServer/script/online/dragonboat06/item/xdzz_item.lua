@@ -36,7 +36,7 @@ function OnUse()
 			CastState("state_life_max_percent_add",30,10*60*18,1,1013);
 			Msg2Player("B¹n ®· ¨n 1 c¸i b¸nh Ýt nh©n trøng, t¨ng 30% l­îng m¸u trong vßng 10 phót.");
 		end;
-		Msg2_LeiTai("B¸nh Ýt trøng muèi");
+		Msg2_LeiTai("Salted egg zongzi");
 	end;
 end;
 

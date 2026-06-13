@@ -32,7 +32,7 @@ function Vet_201401_Valentine_Main()
 		"NhËn th­ëng LÔ T×nh Nh©n/Vet_201401_Valentine_Award",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
-	Say("NguyÖn cho thÕ gian h÷u t×nh nh©n duyªn!", getn(tSay), tSay);
+	Say("May the world's affectionate ones be bound in love!", getn(tSay), tSay);
 end
 
 function Vet_201401_Valentine_Task(bAccept)
@@ -102,7 +102,7 @@ function Vet_201401_Valentine_Award()
 		"Ta muèn nhËn phÇn th­ëng LÔ T×nh Nh©n 2014/Vet_201401_Valentine_Award_deal",
 		"T¹i h¹ chØ xem qua th«i/nothing"
 	}
-	Say("NguyÖn cho thÕ gian h÷u t×nh nh©n duyªn!", getn(tSay), tSay);
+	Say("May the world's affectionate ones be bound in love!", getn(tSay), tSay);
 end
 
 function Vet_201401_Valentine_Present(nUseTime)
@@ -166,9 +166,9 @@ function Vet_201401_Valentine_Present(nUseTime)
 	PlayerIndex = malePlayerIdx;
 	VET_201401_VALENTINE_TASK:SetTask(VET_201401_VALENTINE_TASK.MaleTimes, 1);
 	gf_ModifyExp(520520520);
-	gf_EventGiveCustomAward(4, 520, 1, "Event phô 3 th¸ng 1");
-  gf_EventGiveCustomAward(3, 520, 1, "Event phô 3 th¸ng 1");
-  gf_EventGiveCustomAward(31, 520, 1, "Event phô 3 th¸ng 1");
+	gf_EventGiveCustomAward(4, 520, 1, "Side Event 3 January");
+  gf_EventGiveCustomAward(3, 520, 1, "Side Event 3 January");
+  gf_EventGiveCustomAward(31, 520, 1, "Side Event 3 January");
   AwardGenuineQi(520);
   PlayerIndex = oldPlayerIdx;
   ----------------------------------------------
@@ -193,26 +193,26 @@ function Vet_201401_Valentine_Award_deal()
 	gf_ModifyExp(25251325);
 	AwardGenuineQi(1402);
 	local tAward = {
-		{"Nh·n", 2,	1,	30164},
-		{"Ch«m Ch«m", 2,	1,	30165},
+		{"Longan", 2,	1,	30164},
+		{"Rambutan", 2,	1,	30165},
 		{"Cam", 2,	1,	30166},
-		{"Dõa", 2,	1,	30167},
-		{"M¨ng côt", 2,	1,	30168},
-		{"B­ëi", 2,	1,	30169},
-		{"D©u", 2,	1,	30170},
-		{"Chuèi", 2,	1,	30171},
-		{"Xoµi", 2,	1,	30172},
-		{"§µo", 2,	1,	30173},
-		{"MËn", 2,	1,	30174},
-		{"V¶i", 2,	1,	30175},
-		{"T¸o", 2,	1,	30176},
-		{"B¬", 2,	1,	30177},
-		{"§u §ñ", 2,	1,	30178},
-		{"M·ng CÇu", 2,	1,	30179},
-		{"Khãm", 2,	1,	30180},
-		{"Lª", 2,	1,	30181},
-		{"Bßn Bon", 2,	1,	30182},
-		{"KhÕ", 2,	1,	30183},		
+		{"Coconut", 2,	1,	30167},
+		{"Mangosteen", 2,	1,	30168},
+		{"Pomelo", 2,	1,	30169},
+		{"Strawberry", 2,	1,	30170},
+		{"Banana", 2,	1,	30171},
+		{"Mango", 2,	1,	30172},
+		{"Peach", 2,	1,	30173},
+		{"Plum", 2,	1,	30174},
+		{"Lychee", 2,	1,	30175},
+		{"Apple", 2,	1,	30176},
+		{"Avocado", 2,	1,	30177},
+		{"Papaya", 2,	1,	30178},
+		{"Soursop", 2,	1,	30179},
+		{"Pineapple", 2,	1,	30180},
+		{"Li", 2,	1,	30181},
+		{"Langsat", 2,	1,	30182},
+		{"Star Fruit", 2,	1,	30183},		
 	}
 --	for i = 1, 87 do
 --		local nRand = random(getn(tAward));

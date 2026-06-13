@@ -53,7 +53,7 @@ function main()
 	-- Èç¹ûÍæ¼Ò¿ÉÒÔÍÚÕâ¸öÒ©Æ·£¬½øÈëÏÂÃæÖ´ĞĞ¶Î
 	if (nCanDig == 1 and nCanDigTool == 1) then
 		if (DoFireworks(890, 1) == 1) then
-			Msg2Player("Thu thËp......");
+			Msg2Player("Collecting......");
 			CastState("state_fetter", 1, 5 * 18)
 			ProgressSlot(5 * 18)
 			
@@ -101,7 +101,7 @@ function OnProgressCallback()
 	if (nChoice == 1) then
 		Say("VËt liÖu linh phï nµy cã thÓ dïng, ng­¬i t×m ®­îc"..nSelCount.." Chu Sa!", 0)
 	elseif (nChoice == 2) then
-		Say("Kh«ng ngê bªn trong cßn mét sè ®å, b¹n nhËn ®­îc "..nSelCount.." H¾c KhuyÓn Linh HuyÕt!", 0)
+		Say("Kh«ng ngê bªn trong cßn mét sè ®å, b¹n nhËn ®­îc "..nSelCount.." Hac Khuyen Linh Blood!", 0)
 	elseif (nChoice == 3) then
 		Say("Kh«ng ngê bªn trong cßn mét sè ®å, b¹n nhËn ®­îc "..nSelCount.." §én Gi¸p Th­!", 0)
 	else

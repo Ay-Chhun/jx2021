@@ -7,7 +7,7 @@ Include("\\script\\vng\\chitonvuonglenh\\chitonvuonglenh_head.lua");
 -- Task 2667, 2668, 2669
 IP_TIME_LIMIT = 7246800--2592000
 IP_ONLINE_TIME = 2536
-szNPCName = "<color=green>Anh/ChÞ Chñ Phßng M¸y: <color>"
+szNPCName = "<color=green>Machine Room Owner: <color>"
 szLogTitle = "CHI TON VUONG LENH"
 szLogTitle1 = "CHI TON VUONG LENH BK"
 LIB_Award.szLogTitle = szLogTitle .. " NEW SERVER"
@@ -29,9 +29,9 @@ tbChiTonPhanThuong = {
 	[13] = {nCheckExp = 0, item={{gdp={2,1,1068,1}, name="Thiªn Th¹ch Linh Th¹ch", nExpired=7*24*3600}}, nChankhi = 10000, nExp = 200000000},
 	[14] = {nCheckExp = 0, nExp = 200000000, fn="ChiTonNew_QuanDieuDuong()"},
 	[15] = {nCheckExp = 0, item={{gdp={2,1,1113,1}, name="§¹i §Þnh Hån", nExpired=7*24*3600}}, nChankhi = 10000, nExp = 300000000},
-	[16] = {nCheckExp = 0, item={{gdp={0,112,78,1}, name="L¨ng Ba Vi Bé"}}, nChankhi = 20000, nExp = 500000000, fn="ChiTonNew_ThuongTraiCay()"},
+	[16] = {nCheckExp = 0, item={{gdp={0,112,78,1}, name="Lingbo Microstep"}}, nChankhi = 20000, nExp = 500000000, fn="ChiTonNew_ThuongTraiCay()"},
 	[17] = {nCheckExp = 0, nChankhi = 30000, nExp = 500000000, fn="ChiTonNew_MatTichMonPhai70(10)"},
-	[18] = {nCheckExp = 0, item={{gdp={0,112,158,1}, name="L¨ng Ba Vi Bé toµn tËp"}}, nExp = 500000000},
+	[18] = {nCheckExp = 0, item={{gdp={0,112,158,1}, name="Lingbo Microstep Complete Edition"}}, nExp = 500000000},
 	[19] = {item={{gdp={2,1,30497,500}, name="Ma Tinh"}, {gdp={2,1,1113,1}, name="§¹i §Þnh Hån", nExpired = 7*24*3600}}, nChankhi = 100000, fn="ChiTonNew_VuKhiDieuDuong(); ChiTonNew_HoanThanhPS1Part1()"},
 --	[20] = {nCheckExp = 0, nExp = 3000000000, fn="ChiTonNew_KichHoatKinhMach(3)"},
 --	[21] = {nCheckExp = 0, item={{gdp={2,1,30497,2}, name="Ma Tinh"}, {gdp={2,1,30132,500}, name="Vâ L©m B¶o H¹p"}}, nExp = 690000000},
@@ -81,7 +81,7 @@ tbHoTroPhaiMoi = {
 	[3] = {88, {item={{gdp={2,1,30497,100}, name="Ma Tinh"}}, nQuancong = 30000}, 2,250},
 	[4] = {90, {item={{gdp={2,1,30071,200}, name="Nh©n S©m V¹n N¨m"}}, fn="ChiTonNew_KichHoatKinhMach(1)"}, 2,250},
 	[5] = {96, {nChankhi = 100000}, 2,250},
-	[6] = {99, {nCheckExp = 0, item={{gdp={2,1,30345,1}, name="ChuyÓn Sinh §¬n", nExpired = 60*24*3600}}, nExp=1600000000, fn="ChiTonNew_KichHoatKinhMach(2)"}, 2, 250},
+	[6] = {99, {nCheckExp = 0, item={{gdp={2,1,30345,1}, name="Rebirth Pill", nExpired = 60*24*3600}}, nExp=1600000000, fn="ChiTonNew_KichHoatKinhMach(2)"}, 2, 250},
 }
 
 tbRoute = {[2] = 1, [4] = 1, [3] = 1, [6] = 1, [8] = 1, [9] = 1, [11] = 1, [12] = 1, [14] = 1, [15] = 1, [17] = 1, [18] = 1, [20] = 1, [21] = 1, [23] = 1, [29] = 1,[30] = 1,}
@@ -227,7 +227,7 @@ function ChiTonNew_NhanThuongTheoLevel()
 		return 0
 	end
 	if gf_JudgeRoomWeight(tbHanhTrang[nIndex][1],tbHanhTrang[nIndex][2],"") == 0 then
-		Talk(1,"","Hµnh trang cÇn <color=yellow>".. tbHanhTrang[nIndex][1] .."<color> « trèng, <color=yellow>".. tbHanhTrang[nIndex][2] .."<color> ®é nÆng, vui lßng s¾p xÕp l¹i")
+		Talk(1,"","Hµnh trang cÇn <color=yellow>".. tbHanhTrang[nIndex][1] .."<color> empty slots, <color=yellow>".. tbHanhTrang[nIndex][2] .."<color> ®é nÆng, vui lßng s¾p xÕp l¹i")
 		return 0
 	end
 	LIB_Award:Award(tbChiTonPhanThuong[nIndex])
@@ -240,7 +240,7 @@ end
 
 function ChiTonNew_PhanThuong99()
 	local tbAward = {nCheckExp = 0, 
-			item={{gdp={0,105,15,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Phiªu Vò", nExpired = 30*24*3600}, 
+			item={{gdp={0,105,15,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Piao Wu", nExpired = 30*24*3600}, 
 				{gdp={2,0,138,2}, name="B¸t B¶o TÈy Tñy Tiªn §¬n", nExpired = 30*24*3600}, 
 				{gdp={2,1,503,4}, name="V« NgÊn Thñy", nExpired = 30*24*3600}},
 			nExp = 500000000,
@@ -295,17 +295,17 @@ end
 --========================
 function ChiTonNew_MatTichMonPhai70(nQty)
 	local tbMatTich = {
-		[2] = {item={{gdp={0,107,204, nQty}, name="Kim Cang B¸t Nh· Ch©n QuyÓn"}}},
-		[4] = {item={{gdp={0,107,205, nQty}, name="TiÒm Long Tóc DiÖt Ch©n QuyÓn"}}},
-		[3] = {item={{gdp={0,107,206, nQty}, name="V« TrÇn Bå §Ò Ch©n QuyÓn"}}},
+		[2] = {item={{gdp={0,107,204, nQty}, name="Vajra Prajna True Scroll"}}},
+		[4] = {item={{gdp={0,107,205, nQty}, name="Hidden Dragon Annihilation True Manual"}}},
+		[3] = {item={{gdp={0,107,206, nQty}, name="Dustless Bodhi True Manual"}}},
 		[6] = {item={{gdp={0,107,207, nQty}, name="Thiªn La Liªn Ch©u Ch©n QuyÓn"}}},
-		[8] = {item={{gdp={0,107,208, nQty}, name="Nh­ ý Kim §Ønh Ch©n QuyÓn"}}},
-		[9] = {item={{gdp={0,107,209, nQty}, name="BÝch H¶i TuyÖt ¢m Ch©n QuyÓn"}}},
-		[11] = {item={{gdp={0,107,210, nQty}, name="Hçn §én TrÊn Nh¹c Ch©n QuyÓn"}}},
+		[8] = {item={{gdp={0,107,208, nQty}, name="Wishful Golden Top True Manual"}}},
+		[9] = {item={{gdp={0,107,209, nQty}, name="Azure Sea Silent Sound True Manual"}}},
+		[11] = {item={{gdp={0,107,210, nQty}, name="Chaos Town Mountain True Manual"}}},
 		[12] = {item={{gdp={0,107,211, nQty}, name="Quú Thiªn Du Long Ch©n QuyÓn"}}},
 		[14] = {item={{gdp={0,107,212, nQty}, name="HuyÒn ¶nh Mª T«ng Ch©n QuyÓn"}}},
-		[15] = {item={{gdp={0,107,213, nQty}, name="Qu©n Tö §íi Phong Ch©n QuyÓn"}}},
-		[17] = {item={{gdp={0,107,214, nQty}, name="TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn"}}},
+		[15] = {item={{gdp={0,107,213, nQty}, name="Gentleman Welcomes the Wind True Manual"}}},
+		[17] = {item={{gdp={0,107,214, nQty}, name="Town Army Flying Dragon Spear True Manual"}}},
 		[18] = {item={{gdp={0,107,215, nQty}, name="Xuyªn V©n L¹c Hång Ch©n QuyÓn"}}},
 		[20] = {item={{gdp={0,107,216, nQty}, name="HuyÒn Minh Phong Ma Ch©n QuyÓn"}}},
 		[21] = {item={{gdp={0,107,217, nQty}, name="Linh Cæ HuyÒn Tµ Ch©n QuyÓn"}}},
@@ -349,17 +349,17 @@ end
 
 function ChiTonNew_MatTichTranPhai()
 	local tbTranPhai = {
-		[2] = {item={{gdp={0, 112, 101, 1}, name= "DÞch C©n Kinh"}}},
+		[2] = {item={{gdp={0, 112, 101, 1}, name= "Sinew Transformation Classic"}}},
 		[4] = {item={{gdp={0, 112, 102, 1},name= "Nh­ Lai ThÇn Ch­ëng"}}},
-		[3] = {item={{gdp={0, 112, 103, 1},name= "TÈy Tñy Kinh"}}},
+		[3] = {item={{gdp={0, 112, 103, 1},name= "Marrow Cleansing Classic"}}},
 		[6] = {item={{gdp={0, 112, 104, 1},name= "HÊp Tinh TrËn"}}},
 		[8] = {item={{gdp={0, 112, 105, 1},name= "V¹n T­íng ThÇn C«ng"}}},
 		[9] = {item={{gdp={0, 112, 106, 1},name= "Thiªn ¢m TrÊn Hån Khóc"}}},
-		[11] = {item={{gdp={0, 112, 107, 1},name= "Gi¸ng Long ThËp B¸t Ch­ëng"}}},
+		[11] = {item={{gdp={0, 112, 107, 1},name= "Eighteen Dragon Subduing Palms"}}},
 		[12] = {item={{gdp={0, 112, 108, 1},name= "§¶ CÈu C«n TrËn"}}},
 		[14] = {item={{gdp={0, 112, 109, 1},name= "V« Th­îng Th¸i Cùc KiÕm"}}},
 		[15] = {item={{gdp={0, 112, 110, 1},name= "Th¸i Cùc ThÇn C«ng"}}},
-		[17] = {item={{gdp={0, 112, 111, 1},name= "Liªn Hoµn Toµn Long Th­¬ng"}}},
+		[17] = {item={{gdp={0, 112, 111, 1},name= "Linked Coiling Dragon Spear"}}},
 		[18] = {item={{gdp={0, 112, 112, 1},name= "B¸ V­¬ng T­êng Phông TiÔn"}}},
 		[20] = {item={{gdp={0, 112, 113, 1},name= "V« Thiªn Ma C«ng"}}},
 		[21] = {item={{gdp={0, 112, 114, 1},name= "V« ¶nh Ma Cæ"}}},
@@ -577,8 +577,8 @@ function ChiTonNew_ChuyenSinh(nType, nStep)
 		ResetProperty()
 		SetLevel(90,0)
 		Msg2Player("§ang tu luyÖn Hçn Nguyªn C«ng chiªu thøc thø nhÊt...")
-		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> tu luyÖn theo h­íng <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 2 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
-		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." theo h­íng "..tb_translife_seal[nType][3])	
+		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> cultivated along the path <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 2 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
+		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." along the path"..tb_translife_seal[nType][3])	
 		DoWait(15,15,10)
 --	elseif GetTranslifeCount() == 2 then		
 	elseif nTransCount  == 2 then		
@@ -600,8 +600,8 @@ function ChiTonNew_ChuyenSinh(nType, nStep)
 		ResetProperty()
 		SetLevel(88,0)
 		Msg2Player("§ang tu luyÖn Hçn Nguyªn C«ng chiªu thøc thø hai...")
-		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> tu luyÖn theo h­íng <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 4 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
-		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." theo h­íng "..tb_translife_seal[nType][3])	
+		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> cultivated along the path <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 4 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
+		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." along the path"..tb_translife_seal[nType][3])	
 		DoWait(15,15,10)	
 --	elseif GetTranslifeCount() ==3 then
 	elseif nTransCount  ==3 then
@@ -615,7 +615,7 @@ function ChiTonNew_ChuyenSinh(nType, nStep)
 			att3 = att3 or 0
 			BigDelItem(G,D,P,BigGetItemCount(G,D,P))
 			BigDelItem(G,D,Pnew,BigGetItemCount(G,D,Pnew))
-			gf_AddItemEx2({G, D, Pnew, nCount,4, lvatt1, att1, lvatt2, att2, lvatt3, att3},"V¨n Sö Trang","Chuyen Sinh","nhËn ngo¹i trang",120*24*3600,1)
+			gf_AddItemEx2({G, D, Pnew, nCount,4, lvatt1, att1, lvatt2, att2, lvatt3, att3},"Literary Manor","Chuyen Sinh","nhËn ngo¹i trang",120*24*3600,1)
 		end
 		RemoveTitle(tb_translife_tittle[nTransCount-1][nRoute][2], tb_translife_tittle[nTransCount-1][nRoute][3])
 		AddTitle(tb_translife_tittle[nTransCount][nRoute][2], tb_translife_tittle[nTransCount][nRoute][3])
@@ -625,8 +625,8 @@ function ChiTonNew_ChuyenSinh(nType, nStep)
 		ResetProperty()
 		SetLevel(86,0)
 		Msg2Player("§ang tu luyÖn Hçn Nguyªn C«ng chiªu thøc thø ba...")
-		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> tu luyÖn theo h­íng <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 6 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
-		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." theo h­íng "..tb_translife_seal[nType][3])	
+		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> cultivated along the path <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 6 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
+		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." along the path"..tb_translife_seal[nType][3])	
 		DoWait(15,15,10)	
 --	elseif GetTranslifeCount() == 4 then
 	elseif nTransCount == 4 then
@@ -649,8 +649,8 @@ function ChiTonNew_ChuyenSinh(nType, nStep)
 		ResetProperty()
 		SetLevel(84,0)
 		Msg2Player("§ang tu luyÖn Hçn Nguyªn C«ng chiªu thøc thø t­...")
-		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> tu luyÖn theo h­íng <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 8 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
-		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." theo h­íng "..tb_translife_seal[nType][3])	
+		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> cultivated along the path <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 8 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
+		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." along the path"..tb_translife_seal[nType][3])	
 		DoWait(15,15,10)
 --	elseif  GetTranslifeCount() == 5 and GetTaskTrans() == 36 then
 	elseif  nTransCount == 5 then
@@ -664,7 +664,7 @@ function ChiTonNew_ChuyenSinh(nType, nStep)
 			att3 = att3 or 0
 			BigDelItem(G,D,P,BigGetItemCount(G,D,P))
 			BigDelItem(G,D,Pnew,BigGetItemCount(G,D,Pnew))
-			gf_AddItemEx2({G, D, (30000 + GetBody()), nCount,4, lvatt1, att1, lvatt2, att2, lvatt3, att3},"Tø Linh ViÖt Trang","Chuyen Sinh","nhËn ngo¹i trang",120*24*3600,1)
+			gf_AddItemEx2({G, D, (30000 + GetBody()), nCount,4, lvatt1, att1, lvatt2, att2, lvatt3, att3},"Four Spirits Yue Manor","Chuyen Sinh","nhËn ngo¹i trang",120*24*3600,1)
 		end
 		RemoveTitle(tb_translife_tittle[nTransCount-1][nRoute][2], tb_translife_tittle[nTransCount-1][nRoute][3])
 		AddTitle(tb_translife_tittle[nTransCount][nRoute][2], tb_translife_tittle[nTransCount][nRoute][3])
@@ -674,8 +674,8 @@ function ChiTonNew_ChuyenSinh(nType, nStep)
 		ResetProperty()
 		SetLevel(79,0)
 		Msg2Player("§ang tu luyÖn Hçn Nguyªn C«ng chiªu thøc thø t­...")
-		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> tu luyÖn theo h­íng <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 8 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
-		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." theo h­íng "..tb_translife_seal[nType][3])	
+		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> cultivated along the path <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 8 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
+		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." along the path"..tb_translife_seal[nType][3])	
 		DoWait(15,15,10)
 	else
 		Talk(1,"",szNpcName.."Hçn Nguyªn C«ng qu¶ lµ tuyÖt thÕ vâ c«ng cña trung nguyªn!")

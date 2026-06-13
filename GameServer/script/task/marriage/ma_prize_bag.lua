@@ -6,11 +6,11 @@
 --´úÂëÐÞ¸Ä¼ÇÂ¼£º
 Include("\\script\\online\\zgc_public_fun.lua")		--´å³¤µÄ¹«¹²º¯Êý
 Tb_prize_bag = {
-	{"GÊm lam",2,1,15,10},
-	{"§¹o Hoa H­¬ng",1,1,12,36},
-	{"B¸nh Bét vµng",1,1,15,36},
-	{"GÊm vµng",2,1,54,36},
-	{"T¬ Ngò S¾c",2,9,3,36},
+	{"Blue Brocade",2,1,15,10},
+	{"Peach Blossom Fragrance",1,1,12,36},
+	{"Golden Flour Cake",1,1,15,36},
+	{"Gold Brocade",2,1,54,36},
+	{"Five-Color Silk",2,9,3,36},
 	{"D¹ Minh Ch©u",2,1,39,5},
 }
 function OnUse()

@@ -23,7 +23,7 @@ function OnUse_Real(id)
 		tinsert(tbSay, "Ta chØ ghĞ ch¬i/no")
 	else
 		szTitle = format("HiÖn t¹i c¸c h¹ vÉn ch­a kİch ho¹t c¶nh giíi, rÊt tiÕc ta kh«ng thÓ gióp ng­¬i dŞch c©n tÈy tñy.")
-		tinsert(tbSay, "Ra khái/no")
+		tinsert(tbSay, "Leave/no")
 	end
 	
 	Say(szTitle, getn(tbSay), tbSay)

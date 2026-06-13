@@ -3,7 +3,7 @@
 Include("\\script\\task\\WeekEnd\\task_head.lua");
 
 function main()
-	Say("Cã viÖc g× kh«ng?",2,"Tiªu diÖt 50 tªn Oa KhÊu/start_wk", "Rêi khái/leave_map")
+	Say("Cã viÖc g× kh«ng?",2,"Tiªu diÖt 50 tªn Oa KhÊu/start_wk", "Leave/leave_map")
 	--Talk(1,"start_wk", "<color=green>Ç°Ïß½«Áì<color>£ºÇë¾¡¿ÉÄÜ¿ìµÄÔÚ°ë¸öĞ¡Ê±µÄÊ±¼äÄÚÏûÃğ50ÃûÙÁ¿Ü°É£¡");
 end;
 

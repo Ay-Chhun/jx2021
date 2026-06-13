@@ -12,13 +12,13 @@ taixu_jwl_taskID = 998
 
 --°ËØÔ»»È¡ÊýÁ¿ ¶ÔÓ¦GetEquipBaGua()·µ»ØÖµ£¬×¢Òâ·µ»Ø5ÎªÌ«¼«
 tBaguaNum = {--µÚ2£¬3£¬4ÎªÎïÆ·id£¬µÚ5Î»ÎªÁéÆøÖµ81-120ÐèÒªµÄÊýÁ¿  µÚÁùÎ»ÁéÆøÖµ61-80ÐèÒªµÄÊýÁ¿
-	[1]={"Kh¶m",2,1,471,10,10},
-	[2]={"Kh«n",2,1,470,10,10},
-	[3]={"ChÊn",2,1,474,9,2},
-	[4]={"Tèn",2,1,476,9,2},
-	[6]={"Cµn",2,1,469,10,10},
-	[7]={"§oµi",2,1,472,10,10},
-	[8]={"CÊn",2,1,475,9,3},
+	[1]={"Kan",2,1,471,10,10},
+	[2]={"Kun",2,1,470,10,10},
+	[3]={"Zhen",2,1,474,9,2},
+	[4]={"Xun",2,1,476,9,2},
+	[6]={"Qian",2,1,469,10,10},
+	[7]={"Dui",2,1,472,10,10},
+	[8]={"Gen",2,1,475,9,3},
 	[9]={"Ly",2,1,473,9,3}
 	}
 tWood = {
@@ -44,7 +44,7 @@ function main()
 	if GetLevel() >= 70 then
 		tinsert(tbSay, "Ta muèn kÝch ho¹t lùc b¸t qu¸i cña trang bÞ/choose_lingqi");
 	end
-	tinsert(tbSay,"KÕt thóc ®èi tho¹i/do_nothing");
+	tinsert(tbSay,"End conversation/do_nothing");
 	Say("BÇn ®¹o phông mÖnh Cöu Thiªn HuyÒn N÷ ®Õn nh©n gian ®é hãa mäi ng­êi ®Õn Th¸i H­ HuyÔn C¶nh. ThÝ chñ xem ra ng­êi h÷u duyªn ®Õn ®©y cã chuyÖn g× kh«ng?",
 		getn(tbSay),tbSay)
 end
@@ -128,7 +128,7 @@ function taixu_jwl_up_inf()
 			Talk(1,"","VÒ <color=yellow>Trang søc Th¸i H­<color>,"..Zgc_pub_sex_name().."nªn ®Õn <color=yellow>T­¬ng D­¬ng <color> t×m <color=yellow>M¹c Tam<color> hái nhÐ, «ng Êy cã thÓ gióp ®­îc ng­¬i!")
 		else
 		Talk(4,"taixu_jwl_up_inf_2",
-			"VÞ "..Zgc_pub_sex_name().."còng ®Ó ý ®Õn ­?",
+			"Position"..Zgc_pub_sex_name().."còng ®Ó ý ®Õn ­?",
 			"Kú thùc nh÷ng lo¹i <color=yellow>Trang søc Th¸i H­<color> mµ ng­¬i mang ®Õn c«ng hiÖu cña chóng kh«ng cao.",
 			"<color=yellow>Trang søc Th¸i H­<color> kh«ng ph¸t huy c«ng lùc.",
 			"Ch¼ng lÏ kh«ng cßn c¸ch nµo ®Ó ph¸t huy hiÖu qu¶ cña chóng sao? Nh÷ng trang søc nµy ta ph¶i vÊt v¶ l¾m míi cã ®­îc chóng.")
@@ -244,7 +244,7 @@ function mianfei_jihuo_weizhi(nWz)
 		end
 	end
 	if nLingqi > 0 and nLingqi <= 60 and GetEquipBaGuaJiHuo(nIndex) == 0 then
-		local tZhuangBei = {"§Çu","Y phôc","Vò khÝ","H¹ y"};
+		local tZhuangBei = {"§Çu","Y phôc","Vò khÝ","Lower Garment"};
 		SetEquipBaGuaJiHuo(nIndex,1);
 		Msg2Player("Chóc mõng b¹n ®· kÝch ho¹t."..tZhuangBei[nWz+1].."Trang bÞ thuéc tÝnh b¸t qu¸i");
 	end
@@ -326,7 +326,7 @@ function jihuo_bagua2(nType)
 end
 
 function item_jihuo(nIndex,nLqType,nType)
-	local tZhuangBei = {"§Çu","Y phôc","Vò khÝ","H¹ y"};
+	local tZhuangBei = {"§Çu","Y phôc","Vò khÝ","Lower Garment"};
 	local nLingqi = GetItemMaxLingQi(nIndex);
 	if nLqType == 1 then
 		if nLingqi < 80 or nLingqi > 120 then
@@ -378,7 +378,7 @@ end
 function jihuo_zhengua(nType,nWz)
 	local nIndex = GetPlayerEquipIndex(nWz);
 	if DelItem(tBaguaNum[nType][2],tBaguaNum[nType][3],tBaguaNum[nType][4],1) == 1 then
-		local tZhuangBei = {"§Çu","Y phôc","Vò khÝ","H¹ y"};
+		local tZhuangBei = {"§Çu","Y phôc","Vò khÝ","Lower Garment"};
 		SetEquipBaGuaJiHuo(nIndex,1);
 		Msg2Player("Chóc mõng b¹n ®· kÝch ho¹t."..tZhuangBei[nWz+1].."Trang bÞ thuéc tÝnh b¸t qu¸i");
 	end

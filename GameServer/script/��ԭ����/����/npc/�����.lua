@@ -2,11 +2,11 @@ function main()
 	if (GetSex()==2 and GetPlayerFaction() == 5) then
 		Say("S­ muéi muèn rêi khái ®©y?",2,"Lµm phiÒn s­ tû!/outtangmen","Ta ®Õn th¨m S­ tû th«i mµ!/no")
 	elseif	(GetSex()==2 and GetPlayerFaction() ~= 5) then
-		Say("C« n­¬ng t×m ta cã viÖc g×?",2,"PhiÒn tû tû ®­a ta rêi §­êng M«n/outtangmen","Kh«ng cã g×/no")
+		Say("C« n­¬ng t×m ta cã viÖc g×?",2,"PhiÒn tû tû ®­a ta rêi §­êng M«n/outtangmen","Nothing/no")
 	elseif	(GetSex()~=2 and GetPlayerFaction() == 5) then
-		Say("S­ ®Ö l¹i muèn trèn ra ngoµi ch¬i µ?",2,"§Ö phông mÖnh h¹ s¬n/outtangmen","Kh«ng cã viÖc g×/no")
+		Say("S­ ®Ö l¹i muèn trèn ra ngoµi ch¬i µ?",2,"§Ö phông mÖnh h¹ s¬n/outtangmen","Nothing/no")
 	else
-		Say("C«ng tö! Ta cã thÓ gióp g×?",2,"PhiÒn c« n­¬ng ®­a ta mét ®o¹n/outtangmen","Kh«ng cã g×/no")
+		Say("C«ng tö! Ta cã thÓ gióp g×?",2,"PhiÒn c« n­¬ng ®­a ta mét ®o¹n/outtangmen","Nothing/no")
 	end
 end;
 

@@ -123,22 +123,22 @@ function AddCloth(sex)   --Ôö¼ÓÒÂ·þ
      for i=1,18 do AddItem(0,100,i,1) end
      for i=1,18 do AddItem(0,101,i,1) end
      for i=1,18 do AddItem(0,103,i,1) end
-     elseif (sex=="Nam kh«i ng«") then
+     elseif (sex=="Imposing man") then
      for i=19,36 do AddItem(0,100,i,1) end
      for i=19,36 do AddItem(0,101,i,1) end
      for i=19,36 do AddItem(0,103,i,1) end
-     elseif (sex=="N÷ gîi c¶m") then
+     elseif (sex=="Alluring woman") then
      for i=37,54 do AddItem(0,100,i,1) end
      for i=37,54 do AddItem(0,101,i,1) end
      for i=37,54 do AddItem(0,103,i,1) end
-     elseif (sex=="KiÒu n÷") then
+     elseif (sex=="Graceful woman") then
      for i=55,72 do AddItem(0,100,i,1) end
      for i=55,72 do AddItem(0,101,i,1) end
      for i=55,72 do AddItem(0,103,i,1) end
      end
 end
 function AddWeapon(tp)   ---Ôö¼ÓÎäÆ÷
-    if(tp=="Hé uyÓn") then
+    if(tp=="Slender woman") then
     	for i=1,13 do AddItem(0,0,i,1) end
     elseif(tp=="KiÕm") then
     	for i=14,26 do AddItem(0,2,i,1) end
@@ -148,11 +148,11 @@ function AddWeapon(tp)   ---Ôö¼ÓÎäÆ÷
     	for i=40,52 do AddItem(0,1,i,1) end
     elseif(tp=="§ao") then
     	for i=53,63 do AddItem(0,3,i,1) end
-    elseif(tp=="CÇm") then
+    elseif(tp=="Zither") then
     	for i=64,74 do AddItem(0,10,i,1) end
-    elseif(tp=="Bót") then
+    elseif(tp=="Brush") then
     	for i=75,85 do AddItem(0,9,i,1) end
-    elseif(tp=="Tr­îng") then
+    elseif(tp=="Staff") then
     	for i=86,96 do AddItem(0,8,i,1) end
     end
 end
@@ -351,7 +351,7 @@ function ShinyNight_Start(system, multiple, szVoteName)
 	SetGlbValue(GAMESVRGLB_MULTIPLE, multiple)
 	WriteLog(format("ShinyNight start: %s(%1.1f)", map_sysnames[system], multiple / 100))
 
-	local strTaskName = {"ChiÕn tr­êng", "Th­¬ng héi", "NhiÖm vô s­ m«n - ngÉu nhiªn", "NhiÖm vô s­ m«n tuÇn hoµn", "NhiÖm vô s¸t thñ", "§Êu thuyÒn rång"}
+	local strTaskName = {"Battlefield", "Th­¬ng héi", "NhiÖm vô s­ m«n - ngÉu nhiªn", "NhiÖm vô s­ m«n tuÇn hoµn", "NhiÖm vô s¸t thñ", "Dragon Boat Duel"}
 	local msg = ""
 	if (szVoteName ~= "" and szVoteName ~= nil) then
 		msg = "§ªm huy hoµng h«m nay do "..szVoteName.."  quyÕt ®Þnh! Néi dung cô thÓ:"..strTaskName[system]
@@ -373,7 +373,7 @@ end
 
 -- Ëæ»úcall³öÒ»¸öÉÌ»áÂô¶«Î÷µÄnpc
 function random_shop(nWorld, nX, nY)
-	local nNpcIndex = CreateNpc("Chñ cÇm ®å T©y Nam", "Th­¬ng nh©n T©y Vùc", nWorld, nX, nY)
+	local nNpcIndex = CreateNpc("Chñ cÇm ®å T©y Nam", "Merchant of the Western Regions", nWorld, nX, nY)
 
 	-- ÉèÖÃnpcÉú´æÊ±¼ä£º°ë¸öÐ¡Ê±
 	SetNpcLifeTime(nNpcIndex, 1800)
@@ -749,7 +749,7 @@ function create_lanhua_boss_viet(nIndex)
 	local nNpcIndex = CreateNpc("lanhua_viet","Lan Hoa",tbMapID[nIndex][1],tbMapID[nIndex][2],tbMapID[nIndex][3])
 	SetNpcScript(nNpcIndex,"\\script\\online\\viet_event\\lanhua_boss\\lanhua_boss.lua")
 	SetNpcLifeTime(nNpcIndex,3*60*60)
-	nNpcIndex = CreateNpc("yingzi_viet","Anh Tö",tbMapID[nIndex][1],tbMapID[nIndex][2],tbMapID[nIndex][3])
+	nNpcIndex = CreateNpc("yingzi_viet","Ying Zi",tbMapID[nIndex][1],tbMapID[nIndex][2],tbMapID[nIndex][3])
 	SetNpcScript(nNpcIndex,"\\script\\online\\viet_event\\lanhua_boss\\lanhua_boss.lua")
 	SetNpcLifeTime(nNpcIndex,3*60*60)
 	if SubWorldID2Idx(tbMapID[nIndex][1]) > 0 then
@@ -763,12 +763,12 @@ function create_npcs(nDay)
 	--	end
 	
 	local	t_denglong_sets = {
-		[0] = {"ThiÕu L©m", {204, 1526, 3269}},--ÐÇÆÚÈÕ
+		[0] = {"Shaolin", {204, 1526, 3269}},--ÐÇÆÚÈÕ
 		[1] = {"Nga My", {303, 1552, 3232}},--ÐÇÆÚÒ»
 		[2] = {"§­êng M«n", {305, 1530, 2921}},--ÐÇÆÚ¶þ
-		[3] = {"C¸i Bang", {209, 1515, 3265}},--ÐÇÆÚÈý
-		[4] = {"Vâ §ang", {312, 1707, 3477}},--ÐÇÆÚËÄ
-		[5] = {"Ngò §éc", {407, 1555, 3286}},--ÐÇÆÚÎå
+		[3] = {"Beggars' Sect", {209, 1515, 3265}},--ÐÇÆÚÈý
+		[4] = {"Wudang", {312, 1707, 3477}},--ÐÇÆÚËÄ
+		[5] = {"Five Poisons", {407, 1555, 3286}},--ÐÇÆÚÎå
 		[6] = {"D­¬ng M«n", {219, 1655, 3301}},--ÐÇÆÚÁù
 	};
 	local nDate = tonumber(date("%y%m%d"));
@@ -777,22 +777,22 @@ function create_npcs(nDay)
 --	end
 	local nNpcIndex = 0;
 	local nNpcLifeTime = 57 * 60;--ÒòÎªsystemtimetask.txtÀïÃæÓÐÐ©ÕûµãµÄÊ±¼äÒÑ¾­±»Õ¼ÓÃ£¬ËùÒÔ±»ÆÈÎ¢µ÷¼¸·ÖÖÓÊ±¼ä
-	nNpcIndex = CreateNpc("Lß n­íng b¸nh", "Lß N­íng", gf_UnPack(t_denglong_sets[nDay][2]));
+	nNpcIndex = CreateNpc("Lß n­íng b¸nh", "Roasting Oven", gf_UnPack(t_denglong_sets[nDay][2]));
 	SetNpcLifeTime(nNpcIndex, nNpcLifeTime);
 	SetNpcScript(nNpcIndex, "\\script\\online\\viet_event\\200909\\2\\npc_zoujundenglong.lua");
 	AddUnitStates(nNpcIndex, 6, GetTime());--¼ÇÂ¼NPC´´½¨µÄÊ±¼ä
-	AddGlobalNews("YÕn tiÖc ThÞt N­íng ®­îc chiªu ®·i t¹i ["..t_denglong_sets[nDay][1].."]. Mêi ®ång ®¹o ®Õn tham dù!");
+	AddGlobalNews("YÕn tiÖc ThÞt N­íng ®­îc chiªu ®·i t¹i ["..t_denglong_sets[nDay][1].."]. Fellow comrades are invited to attend!");
 end
 
 function call_faction_boss(nTime)	
 	do return end
 	local tBossMapPos = {
-										[0] = {"ThiÕu L©m", {204, 1526, 3269}},
+										[0] = {"Shaolin", {204, 1526, 3269}},
 										[1] = {"Nga My", {303, 1554, 3235}},
 										[2] = {"§­êng M«n", {305, 1530, 2921}},
-										[3] = {"C¸i Bang", {209, 1515, 3265}},
-										[4] = {"Vâ §ang", {312, 1707, 3477}},
-										[5] = {"Ngò §éc", {407, 1555, 3286}},
+										[3] = {"Beggars' Sect", {209, 1515, 3265}},
+										[4] = {"Wudang", {312, 1707, 3477}},
+										[5] = {"Five Poisons", {407, 1555, 3286}},
 										[6] = {"D­¬ng M«n", {219, 1655, 3301}},
 									}
 	local nDay = tonumber(date("%w"));
@@ -804,12 +804,12 @@ end
 
 function call_niansou()
 	local	t_niansou_set = {
-		[0] = {"ThiÕu L©m", {204, 1526, 3269}},--ÐÇÆÚÈÕ
+		[0] = {"Shaolin", {204, 1526, 3269}},--ÐÇÆÚÈÕ
 		[1] = {"Nga My", {303, 1552, 3232}},--ÐÇÆÚÒ»
 		[2] = {"§­êng M«n", {305, 1530, 2921}},--ÐÇÆÚ¶þ
-		[3] = {"C¸i Bang", {209, 1515, 3265}},--ÐÇÆÚÈý
-		[4] = {"Vâ §ang", {312, 1707, 3477}},--ÐÇÆÚËÄ
-		[5] = {"Ngò §éc", {407, 1555, 3286}},--ÐÇÆÚÎå
+		[3] = {"Beggars' Sect", {209, 1515, 3265}},--ÐÇÆÚÈý
+		[4] = {"Wudang", {312, 1707, 3477}},--ÐÇÆÚËÄ
+		[5] = {"Five Poisons", {407, 1555, 3286}},--ÐÇÆÚÎå
 		[6] = {"D­¬ng M«n", {219, 1655, 3301}},--ÐÇÆÚÁù
 	};
 	local nDate = tonumber(date("%y%m%d"));
@@ -827,7 +827,7 @@ function call_niansou()
 	
 	local nNpcIndex = 0;
 	local nNpcLifeTime = 30 * 60;  --------------
-	nNpcIndex = CreateNpc("§¹i Niªn Thó", "Niªn Thó", gf_UnPack(t_niansou_set[nDay][2]));
+	nNpcIndex = CreateNpc("§¹i Niªn Thó", "New Year Beast", gf_UnPack(t_niansou_set[nDay][2]));
 	SetNpcLifeTime(nNpcIndex, nNpcLifeTime);
 	SetNpcDeathScript(nNpcIndex, "\\script\\online\\viet_event\\200909\\2\\death_niansou.lua");	
 	local szMsg = "Cã ng­êi thÊy Niªn Thó xuÊt hiÖn t¹i ["..t_niansou_set[nDay][1].."]. C¸c vÞ b»ng h÷u h·y mau thu phôc!"

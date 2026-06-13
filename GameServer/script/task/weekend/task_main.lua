@@ -64,7 +64,7 @@ function deliver_goods_end()
     local szSay = {
         "§a t¹ <sex> gióp chuyÓn vËt phÈm! Nh­ng hiÖn Oa KhÊu xua qu©n tiÕn vµo H¶i T©n, kh«ng biÕt <sex>gióp ®uæi lò giÆc ®i ®­îc kh«ng?",
         "Quèc gia l©m nguy sao cã thÓ ®øng nh×n/kill_enemy",
-        "Ta ®ang bËn!/end_say"
+        "I am busy!/end_say"
     };
     SelectSay(szSay);
 end;
@@ -182,7 +182,7 @@ function kill_enemy()
 			local nMinCD = floor(nCoolDown / 60);
 			local nSecCD = mod(nCoolDown, 60);
 			local szTalk = {
-				"<sex> TËn lùc cho ®Êt n­íc còng kh«ng nªn lµm qu¸ søc, kho¶ng"..nMinCD.." Phót "..nSecCD.." gi©y quay l¹i."
+				"<sex> TËn lùc cho ®Êt n­íc còng kh«ng nªn lµm qu¸ søc, kho¶ng"..nMinCD.." minutes"..nSecCD.." gi©y quay l¹i."
 			};
 			TalkEx("", szTalk);
 			return
@@ -190,8 +190,8 @@ function kill_enemy()
 	end;
 	local szSay = {
 		"<sex> Sau khi vµo ®iÓm ®¨ng nhËp Oa KhÊu mêi ®Õn t­íng lÜnh tiÒn tuyÕn b¸o danh gióp ®¸nh ®uæi Oa KhÊu",
-		"Ta ®· chuÈn bŞ!/kill_enemy_start",
-		"Ta ®ang bËn!/end_say"
+		"I am ready!/kill_enemy_start",
+		"I am busy!/end_say"
 	};
 	SelectSay(szSay);
 end;
@@ -434,7 +434,7 @@ function supply_material_ok(index)
     	"10 /#once("..index..", 10)",
     	"50/#once("..index..", 50)",
     	"100 /#once("..index..", 100)",
-    	"Nép hÕt/#once_all("..index..")",
+    	"Submit all/#once_all("..index..")",
     	"Ta ch­a muèn giao/end_say"
     };
     SelectSay(szSay);
@@ -557,9 +557,9 @@ function introduce_detail()
     szSay = {
         "Sø gi¶ ho¹t ®éng: §¹i Tèng tuy lín m¹nh thùc chÊt lo¹n trong giÆc ngoµi. Tõ lóc S¬n Hµ X· T¾c xuÊt hiÖn, c¸c thÕ lùc ngÊm ngÇm næi dËy. ChiÕn sù ph­¬ng b¾c liªn miªn, Oa KhÊu nh©n c¬ héi x©m nhËp vïng biÓn. Binh lùc §¹i Tèng kh«ng ®ñ chèng tr¶! Cã thÓ gióp ®¸nh ®uæi bän chóng kh«ng?",
         "Thø 6: Trang bŞ qu©n lùc/introduce_5",
-        "Thø 7: Anh dòng giÕt ®Şch/introduce_6",
-        "Chñ NhËt: Tinh vâ kh¸ng ®Şch/introduce_7",
-        "Chó ı/introduce_inportant",
+        "Saturday: Heroic enemy slaying/introduce_6",
+        "Sunday: Refined martial enemy resistance/introduce_7",
+        "Note/introduce_inportant",
         "PhÇn th­ëng ho¹t ®éng/introduce_award",
         "HÖ thèng x­ng hiÖu/introduce_title",
         "HiÓu råi!/end_say"

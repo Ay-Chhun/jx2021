@@ -63,7 +63,7 @@ function main()
 --	Talk(1, "",  "<color=green>"..szName.." :<color> §iÓm may m¾n h«m nay cña ®¹i hiÖp lµ <color=green>"..nPointVM.."<color> ®iÓm.\n §¹i hiÖp cã muèn ta xem thªm 1 quÎ kh¸c kh«ng ???? 	")		
 	local tbSayDialog = {};
 	local nSaySize = 0;
-	local szName = "ThÇy Bãi Siªu H¹ng"	
+	local szName = "Master Fortune Teller"	
 	local szHeader = "<color=green>"..szName.." :<color> Mçi ngµy mçi ng­êi ®Òu mang 1 vËn mÖnh kh¸c nhau, cã lóc may m¾n, cã lóc kh«ng may, mäi chuyÖn ®Òu do ý trêi vµ c¬ duyªn. C«ng thøc tÝnh ®iÓm kinh nghiÖm khi cã ®iÓm vËn may: §iÓm KN + [(®iÓm vËn may - 100)/100 x §iÓm KN].\n§iÓm may m¾n h«m nay cña ®¹i hiÖp lµ <color=green>"..nPointVM.."<color> ®iÓm. §¹i hiÖp cã muèn ta xem thªm 1 quÎ kh¸c kh«ng ???? "
 
 	tinsert(tbSayDialog, "Xem vËn may h«m nay cña ta/vanmay_show")
@@ -76,7 +76,7 @@ function main()
 end
 function vanmay_show()
 	local nPointVM = gf_GetTaskByte(TSK_LUCKY_DAOHUU_NEW_THANG4, BYTE_POINT_LUCKY)	
-	local szName = "ThÇy Bãi Siªu H¹ng"		
+	local szName = "Master Fortune Teller"		
 	if nPointVM <= 96 then
 		Talk(1, "", "<color=green>"..szName.." :<color> §iÓm may m¾n h«m nay cña ®¹i hiÖp lµ <color=green>"..nPointVM.."<color> ®iÓm.\nH«m nay kh«ng ph¶i lµ ngµy may m¾n ®Ó lµm mäi viÖc, ®¸nh ®©u thua ®ã, lµm ¨n thÊt b¸t. Ph¶i bãi 1 quÎ ®Ó gi¶i vËn th«i")
 	elseif nPointVM == 250 then
@@ -93,7 +93,7 @@ function vanmay_list()
 	end
 	local tbSayDialog = {};
 	local nSaySize = 0;
-	local szName = "ThÇy Bãi Siªu H¹ng"	
+	local szName = "Master Fortune Teller"	
 	local szHeader = "<color=green>"..szName.." :<color> Thay ®æi vËn mÖnh ®Ó ®¹t ®­îc nhiÒu thµnh tùu trong Vâ L©m"
 
 --	tinsert(tbSayDialog, "VËn khÝ b×nh b×nh (tèn1 xu vËt phÈm, ®iÓm vËn may ngÉu nhiªn tõ 101 ®Õn 120)/#vanmay_change(1)")
@@ -113,7 +113,7 @@ end
 function vanmay_change()
 	--local tbItem = {1, 6, 9, 39, 79, 179}
 	local tbItem = {1, 11}
-	local szName = "ThÇy Bãi Siªu H¹ng"
+	local szName = "Master Fortune Teller"
 	local nPointVM = 0
 	if GetCash() < 20000 then
 		Talk(1, "", "<color=green>"..szName.."<color>: §¹i hiÖp kh«ng ®ñ 2 vµng ®Ó thay ®æi vËn mÖnh.");
@@ -202,19 +202,19 @@ function vanmay_daohuu()
 	local nPointVM = gf_GetTaskByte(TSK_LUCKY_DAOHUU_NEW_THANG4, BYTE_POINT_LUCKY)	
 	gf_WriteLogEx("VAN MAY DAO HUU","nhËn thµnh c«ng", 1, "NhËn ®iÓm vËn may")
 	--Msg2Player("Diem VM 1 = Diem VM: "..nPointVM)	--------------------------------------------------------------------------
-	local szName = "VËn May §¹o H÷u"
+	local szName = "Friend's Luck"
 
 	local tbSayDialog = {};
 	local nSaySize = 0;
 	local szHeader = ""
 	if nPointVM <= 96 then
 		szHeader = "<color=green>"..szName.." :<color> §iÓm may m¾n h«m nay cña ®¹i hiÖp lµ <color=green>"..nPointVM.."<color> ®iÓm.\nH«m nay kh«ng ph¶i lµ ngµy may m¾n ®Ó lµm mäi viÖc, ®¸nh ®©u thua ®ã, lµm ¨n thÊt b¸t. Ph¶i ®i t×m ThÇy Bãi Siªu H¹ng ®Ó gi¶i vËn xui míi ®­îc."
-		tinsert(tbSayDialog, "§i ®Õn ThÇy Bãi Siªu H¹ng gi¶i vËn/goThayBoi")
+		tinsert(tbSayDialog, "Go to the Master Fortune Teller to dispel luck/goThayBoi")
 	elseif nPointVM == 250 then
 		szHeader = "<color=green>"..szName.." :<color> §iÓm may m¾n h«m nay cña ®¹i hiÖp lµ <color=green>"..nPointVM.."<color> ®iÓm.\nH«m nay lµ ngµy §¹i C¸t ®Ó lµm mäi viÖc, ®¸nh ®©u th¾ng ®ã, ph¶i tham gia c¸c ho¹t ®éng ngay míi ®­îc. NiÒm vui ®­îc nh©n ®«i."
 	else
 		szHeader = "<color=green>"..szName.." :<color> §iÓm may m¾n h«m nay cña ®¹i hiÖp lµ <color=green>"..nPointVM.."<color> ®iÓm.\nMét ngµy nh­ mäi ngµy, lao ®éng nhiÒu th× niÒm vui ®Õn nhiÒu.Hay lµ ®Õn gËp ThÇy Bãi Siªu H¹ng ®Ó xem thö 1 quÎ coi nh­ thÕ nµo. BiÕt ®©u ThÇn Tµi l¹i mØm c­êi víi m×nh."
-		tinsert(tbSayDialog, "§i ®Õn ThÇy Bãi Siªu H¹ng gi¶i vËn/goThayBoi")
+		tinsert(tbSayDialog, "Go to the Master Fortune Teller to dispel luck/goThayBoi")
 	end
 	tinsert(tbSayDialog, "Ta lu«n thuËn theo tù nhiªn/do_nothing")
 	
@@ -236,7 +236,7 @@ function get_random_vanmay(tVanMay, nMaxPE, nDefault)
 end
 
 function vanmay_daohuu_denbu()
-	local szName = "VËn May §¹o H÷u"
+	local szName = "Friend's Luck"
 	local nFlag = gf_GetTaskByte(TSK_LUCKY_DAOHUU_NEW_THANG4, BYTE_ACCEPT_LUCKY)	
  	if nFlag == 1 then
  		return

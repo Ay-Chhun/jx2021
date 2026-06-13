@@ -53,7 +53,7 @@ function main()
 	tinsert(tSay,"Ta biÕt råi/dlgover")	
 	
 	if nDate >= TOP_START_DATE then
-		local strSay = strNpcName.."Ho¹t ®éng <color=yellow>Truy C«ng L·nh Th­ëng<color> diÔn ra tõ ngµy<color=red> "..szStartDate.." ®Õn 24:00 "..szEndDate.."<color>. Trong thêi gian nµy, quý ®ång ®¹o cã thÓ ®Õn gÆp ta ®Ó nhËn c¸c phÇn th­ëng hÊp dÉn. Th«ng tin chi tiÕt quý ®ång ®¹o vui lßng xem t¹i <color=blue>http://volam2.zing.vn<color>"
+		local strSay = strNpcName.."Ho¹t ®éng <color=yellow>Truy C«ng L·nh Th­ëng<color> diÔn ra tõ ngµy<color=red> "..szStartDate.." to 24:00"..szEndDate.."<color>. Trong thêi gian nµy, quý ®ång ®¹o cã thÓ ®Õn gÆp ta ®Ó nhËn c¸c phÇn th­ëng hÊp dÉn. Th«ng tin chi tiÕt quý ®ång ®¹o vui lßng xem t¹i <color=blue>http://volam2.zing.vn<color>"
 		Say(strSay,getn(tSay),tSay)
 	end
 end
@@ -111,16 +111,16 @@ function get_award_top3_minhgiaocs7()
 		local nItemLevel = 0
 		
 		TraoMatTichCaoCap20(1,nRoute)
-		gf_AddItemEx2({2, 1, 30814, 1, 4},"Phôc Sinh §¬n","Top nv cs7 cap 97 Minh Giao","nhËn")
+		gf_AddItemEx2({2, 1, 30814, 1, 4},"Resurrection Pill","Top nv cs7 cap 97 Minh Giao","nhËn")
 		AwardGenuineQi(100000)
-		gf_AddItemEx2({2,1,30970,1,1},"Trøng B¸ Ng¹c","Top nv cs7 cap 97 Minh Giao","nhËn")
+		gf_AddItemEx2({2,1,30970,1,1},"Treasure Overlord Jade","Top nv cs7 cap 97 Minh Giao","nhËn")
 	end
 end
 
 
 function get_award_minhgiao()
 	local tSay = {}
-	tSay[0] = strNpcName.."Trong thêi gian tõ ngµy<color=red> "..szStartDate.." ®Õn 24:00 "..szEndDate.."<color>, khi ®¹t ®­îc c¸c mèc ®iÒu kiÖn nhËn th­ëng (xem thªm trªn trang chñ), ®ång ®¹o cã thÓ ®Õn gÆp ta ®Ó nhËn phÇn th­ëng."
+	tSay[0] = strNpcName.."Trong thêi gian tõ ngµy<color=red> "..szStartDate.." to 24:00"..szEndDate.."<color>, khi ®¹t ®­îc c¸c mèc ®iÒu kiÖn nhËn th­ëng (xem thªm trªn trang chñ), ®ång ®¹o cã thÓ ®Õn gÆp ta ®Ó nhËn phÇn th­ëng."
 	--for i=1,getn(tb_topserver_award_limit_minhgiao) do
 	--	if tb_topserver_award_limit_minhgiao[i] ~= nil then
 			if GetBit(GetTask(TSK_TOP_AWARD),TSK_TOP_MG_CAP595) < 1  then
@@ -400,7 +400,7 @@ end
 
 function get_award_by_level()
 	local tSay = {}
-	tSay[0] = strNpcName.."Trong thêi gian tõ ngµy<color=red> "..szStartDate.." ®Õn 24:00 "..szEndDate.."<color>, khi ®¹t ®­îc c¸c mèc ®iÒu kiÖn nhËn th­ëng (xem thªm trªn trang chñ), ®ång ®¹o cã thÓ ®Õn gÆp ta ®Ó nhËn phÇn th­ëng."
+	tSay[0] = strNpcName.."Trong thêi gian tõ ngµy<color=red> "..szStartDate.." to 24:00"..szEndDate.."<color>, khi ®¹t ®­îc c¸c mèc ®iÒu kiÖn nhËn th­ëng (xem thªm trªn trang chñ), ®ång ®¹o cã thÓ ®Õn gÆp ta ®Ó nhËn phÇn th­ëng."
 	for i=1,getn(tb_topserver_award_limit) do
 		if tb_topserver_award_limit[i] ~= nil then
 			if tb_topserver_award_limit[i][4] >= gf_GetTaskByte(TSK_TOP_LEVEL,1)  then
@@ -771,7 +771,7 @@ function receive_DieuDuong_Top1_faction_01(nType,nReceive)
 	tinsert(tbSay,format("Ta muèn nhËn trang søc DiÖu D­¬ng(Néi C«ng)/#receive_DieuDuong_Top1_faction_02(%d,%d,%d)",3,nType,nReceive))
 	tinsert(tbSay,format("Ta muèn nhËn trang søc DiÖu D­¬ng(Linh Ho¹t)/#receive_DieuDuong_Top1_faction_02(%d,%d,%d)",4,nType,nReceive))
 	tinsert(tbSay,format("Ta muèn nhËn trang søc DiÖu D­¬ng(G©n Cèt)/#receive_DieuDuong_Top1_faction_02(%d,%d,%d)",5,nType,nReceive))
-	Say("C¸c h¹ h·y lùa chän 2 trong 5 mãn sau: ",getn(tbSay),tbSay)
+	Say("Please choose 2 of the following 5 items:",getn(tbSay),tbSay)
 end
 
 function receive_DieuDuong_Top1_faction_02(nChoice,nType,nReceive)
@@ -1037,7 +1037,7 @@ function confirm_get_1mil_Hornor_award()
 --		for i=1,39 do
 		--	LIB_Award:Award(tbAward)
 --		end
-		gf_AddItemEx2({2,1,30787,1,1},"Trøng Bæn §iÓu","Top 3.500.000 QC","nhËn")
+		gf_AddItemEx2({2,1,30787,1,1},"Origin Bird Egg","Top 3.500.000 QC","nhËn")
 		award_random_gem3_32()
 		award_random_gem4_32()
 		award_random_gem5_16()
@@ -1057,7 +1057,7 @@ function get_top100_award_info()
 	local szList2 = szList
 	local i = 0
 	for i=1, getn(LIB_txtData.tbTextData) do
-		szList = szList.."ChuyÓn sinh "..i..": "..LIB_txtData.tbTextData[i].."/100\n"
+		szList = szList.."Rebirth"..i..": "..LIB_txtData.tbTextData[i].."/100\n"
 	end
 	Talk(1,"",szList)	
 end
@@ -1073,9 +1073,9 @@ function get_top_faction_info()
 	for i=1, getn(LIB_txtData.tbTextData) do
 		if tb_Route_Name[i] ~= "" then
 			if i < 14 then
-				szList = szList.."Cao thñ <color=green>"..tb_Route_Name[i].."<color>: "..LIB_txtData.tbTextData[i].."\n"
+				szList = szList.."Expert <color=green>"..tb_Route_Name[i].."<color>: "..LIB_txtData.tbTextData[i].."\n"
 			else
-				szList2 = szList2.."Cao thñ <color=green>"..tb_Route_Name[i].."<color>: "..LIB_txtData.tbTextData[i].."\n"
+				szList2 = szList2.."Expert <color=green>"..tb_Route_Name[i].."<color>: "..LIB_txtData.tbTextData[i].."\n"
 			end
 		end
 	end
@@ -1092,7 +1092,7 @@ function get_top_nation_info()
 	local szList = "Th«ng tin phÇn th­ëng top 3 vinh dù chiÕn tr­êng: \n"	
 	local i = 0
 	for i=1, getn(LIB_txtData.tbTextData) do		
-		szList = szList.."Cao thñ phe <color=green>"..tb_Nation_Name[i].."<color>: "..LIB_txtData.tbTextData[i].."\n"
+		szList = szList.."Faction expert <color=green>"..tb_Nation_Name[i].."<color>: "..LIB_txtData.tbTextData[i].."\n"
 	end
 	Talk(1,"",szList)	
 end
@@ -1101,12 +1101,12 @@ end
 function Say_NhanUuDai()
 	local nNation = GetGlbValue(GLB_TSK_SERVER_ID)
 	if nNation~=TOP_SERVER_ID then
-		Talk(1,"","ChØ cã server " .. szServerName .. " míi nhËn ®­îc phÇn th­ëng")
+		Talk(1,"","Only the server" .. szServerName .. " míi nhËn ®­îc phÇn th­ëng")
 		return
 	end
 	tbSay = {"Ta chØ ghÐ ngang/dlgover"}
 	for i=getn(tbDieuKienUuDai),1,-1 do
-		tinsert(tbSay,1,"CÊp "..tbDieuKienUuDai[i]["nLevel"]..": "..tbDieuKienUuDai[i]["name"].." cÇn "..tbDieuKienUuDai[i]["tbitem"][4].." "..tbDieuKienUuDai[i]["tbitem"][5].."/#UuDaiServerMoi("..i..")")
+		tinsert(tbSay,1,"Level"..tbDieuKienUuDai[i]["nLevel"]..": "..tbDieuKienUuDai[i]["name"].." cÇn "..tbDieuKienUuDai[i]["tbitem"][4].." "..tbDieuKienUuDai[i]["tbitem"][5].."/#UuDaiServerMoi("..i..")")
 	end
 	Say("Mêi c¸c h¹ nhËn phÇn t­ëng t­¬ng xøng",getn(tbSay), unpack(tbSay))
 end
@@ -1167,10 +1167,10 @@ function UuDaiServerMoi(nOrder)
 				local tbUuDai = {item = {{gdp = {0,102,24,1,1,-1,-1,-1,-1,-1,-1,-1},  name = "§«ng Ph­¬ng Long Ch©u"}}}
 				LIB_Award:Award(tbUuDai)
 			elseif nOrder == 5 then
-				local tbUuDai = {item = {{gdp={2,1,30164+(mod(random(1,10000),20)),1000}, name = "tr¸i c©y"}}}
+				local tbUuDai = {item = {{gdp={2,1,30164+(mod(random(1,10000),20)),1000}, name = "fruit"}}}
 				LIB_Award:Award(tbUuDai)
 			elseif nOrder == 6 then
-				local tbUuDai = {item = {{gdp={2,1,30164+(mod(random(1,10000),20)),1000}, name = "tr¸i c©y"}}}
+				local tbUuDai = {item = {{gdp={2,1,30164+(mod(random(1,10000),20)),1000}, name = "fruit"}}}
 				LIB_Award:Award(tbUuDai)
 			elseif nOrder == 7 then
 				local tbUuDai = {item = {{gdp={2,1,30368,500}, name = "Cæ Linh Th¹ch"}, {gdp={2,1,30369,1000}, name = "Cæ Linh Ngäc"}}}
@@ -1302,10 +1302,10 @@ function PhatThuongBangHoi()
 	LIB_Award.szLogAction = "nhËn"
 	gf_SetTaskBit(TSK_TOP_LEVEL, 21, 1)
 	local tbThuongBangHoi = {item = {
-		{gdp={2,0,189,2003,1}, name = "QuÕ Hoa Töu"},
+		{gdp={2,0,189,2003,1}, name = "Osmanthus Wine"},
 		{gdp={2,1,1208,2,1}, name = "P_th­ëng C«ng Thµnh (th¾ng)"},
 		{gdp={2,1,1210,20,1}, name = "B¶o r­¬ng Tµi nguyªn"},
-		{gdp={0,105,33,1,4,-1,-1,-1,-1,-1,-1,-1}, name = "Niªn Thó", nExpired = 90*24*60*60}
+		{gdp={0,105,33,1,4,-1,-1,-1,-1,-1,-1,-1}, name = "New Year Beast", nExpired = 90*24*60*60}
 	}}
 	LIB_Award:Award(tbThuongBangHoi)
 end
@@ -1416,7 +1416,7 @@ function get_route_award_by_level_done(nOption)
 			[94] = {fn="TraoNguLongTuongQuan_TrangSuc()"},
 			[96] = {fn="ThuongVuKhi_ThuyYenLinhNu()"},
 			[99] = {item={
-						{gdp={2,1,30345,1,1}, name = "ChuyÓn Sinh §¬n"}, 
+						{gdp={2,1,30345,1,1}, name = "Rebirth Pill"}, 
 						{gdp={2,0,1083,3,1}, name = "Th¸i DÞch Hçn Nguyªn C«ng Phæ"}, 
 						{gdp={2,95,204,4,1}, name = "Thiªn Cang LÖnh"}},
 					nChankhi = 150000,
@@ -1461,7 +1461,7 @@ function get_route_award_by_level_done(nOption)
 	end
 	
 	if gf_Judge_Room_Weight(tbDieuKien[nOption]["Slot"],500) ~= 1 then
-		Talk(1,"",strNpcName.."CÇn ".. tbDieuKien[nOption]["Slot"] .." hµnh trang , 500 søc lùc. Vui lßng s¾p xÕp l¹i.")
+		Talk(1,"",strNpcName.."You need".. tbDieuKien[nOption]["Slot"] .." hµnh trang , 500 søc lùc. Vui lßng s¾p xÕp l¹i.")
 		return
 	end
 	

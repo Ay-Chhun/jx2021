@@ -5,8 +5,8 @@ BOOK_BAG_D=1
 BOOK_BAG_P=30627
 function OnUse(nItem)
 	local tSay = {
-		format("%s/%s","§ång ý","onUse_Confirm"),
-		format("%s/%s","Ra khái","nothing"),
+		format("%s/%s","Agree","onUse_Confirm"),
+		format("%s/%s","Exit","nothing"),
 	}
 
 	Say("Tói mËt tÞch s­ m«n cao cÊp: më ra ngÉu nhiªn nhËn ®­îc mét mËt tÞch s­ m«n cao cÊp, cã x¸c nhËn më kh«ng?", getn(tSay), tSay);

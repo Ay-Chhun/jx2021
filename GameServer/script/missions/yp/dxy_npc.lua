@@ -4,8 +4,8 @@ Include("\\script\\missions\\yp\\award.lua");
 
 tNpcName = {
 	{"<color=green>§o¹n T©m Di<color>: ","Trªn ng­êi mËt th¸m cña Thiªn ¢m Gi¸o võa b¾t ®­îc, chóng t«i ph¸t hiÖn ®­îc b¶n ®å chØ n¬i ch«n kho b¸u, quèc khè cña bæn téc ®ang trèng rçng, ®¹i hiÖp cã thÓ ®­a ta ®Õn ®ã kh«ng?","§¹i hiÖp h·y mang theo Tµng B¶o §å ®Õn <color=yellow>Quúnh KÕt hoÆc H­ng Kh¸nh<color>, xem thö cã t×m ®­îc g× kh«ng!","§¹i hiÖp cã t×m ®­îc vËt phÈm quý ë <color=yellow>Quúnh KÕt hoÆc H­ng Kh¸nh<color> kh«ng?"},
-	{"<color=green>§¹t T©y ¤ng T¾c<color>: ","Trªn ng­êi mËt th¸m cña Thiªn ¢m Gi¸o võa b¾t ®­îc, chóng t«i ph¸t hiÖn ®­îc b¶n ®å chØ n¬i ch«n kho b¸u, quèc khè cña bæn téc ®ang trèng rçng, ®¹i hiÖp cã thÓ ®­a bÇn t¨ng ®Õn ®ã kh«ng?","§¹i hiÖp h·y mang theo Tµng B¶o §å ®Õn <color=yellow>H­ng Kh¸nh hoÆc Thiªn Long Tù<color>, xem thö cã t×m ®­îc g× kh«ng!","§¹i hiÖp cã t×m ®­îc vËt phÈm quý ë <color=yellow>H­ng Kh¸nh hoÆc Thiªn Long Tù<color> kh«ng?"},	
-	{"<color=green>Lý Nguyªn L­îng<color>:","Trªn ng­êi mËt th¸m cña Thiªn ¢m Gi¸o võa b¾t ®­îc, chóng t«i ph¸t hiÖn ®­îc b¶n ®å chØ n¬i ch«n kho b¸u, quèc khè cña bæn téc ®ang trèng rçng, ®¹i hiÖp cã thÓ ®­a bæn t­íng qu©n ®Õn ®ã kh«ng?","§¹i hiÖp h·y mang theo Tµng B¶o §å ®Õn <color=yellow>Quúnh KÕt hoÆc Thiªn Long Tù<color>, xem thö cã t×m ®­îc g× kh«ng!","§¹i hiÖp cã t×m ®­îc vËt phÈm quý ë <color=yellow>Quúnh KÕt hoÆc Thiªn Long Tù<color> kh«ng?"},
+	{"<color=green>Dat Tay Ong Tac<color>:","Trªn ng­êi mËt th¸m cña Thiªn ¢m Gi¸o võa b¾t ®­îc, chóng t«i ph¸t hiÖn ®­îc b¶n ®å chØ n¬i ch«n kho b¸u, quèc khè cña bæn téc ®ang trèng rçng, ®¹i hiÖp cã thÓ ®­a bÇn t¨ng ®Õn ®ã kh«ng?","§¹i hiÖp h·y mang theo Tµng B¶o §å ®Õn <color=yellow>H­ng Kh¸nh hoÆc Thiªn Long Tù<color>, xem thö cã t×m ®­îc g× kh«ng!","§¹i hiÖp cã t×m ®­îc vËt phÈm quý ë <color=yellow>H­ng Kh¸nh hoÆc Thiªn Long Tù<color> kh«ng?"},	
+	{"<color=green>Ly Nguyen Luong<color>:","Trªn ng­êi mËt th¸m cña Thiªn ¢m Gi¸o võa b¾t ®­îc, chóng t«i ph¸t hiÖn ®­îc b¶n ®å chØ n¬i ch«n kho b¸u, quèc khè cña bæn téc ®ang trèng rçng, ®¹i hiÖp cã thÓ ®­a bæn t­íng qu©n ®Õn ®ã kh«ng?","§¹i hiÖp h·y mang theo Tµng B¶o §å ®Õn <color=yellow>Quúnh KÕt hoÆc Thiªn Long Tù<color>, xem thö cã t×m ®­îc g× kh«ng!","§¹i hiÖp cã t×m ®­îc vËt phÈm quý ë <color=yellow>Quúnh KÕt hoÆc Thiªn Long Tù<color> kh«ng?"},
 };
 
 function main()
@@ -29,7 +29,7 @@ function main()
 	local strtab = {
 		"Kho b¸u bÝ mËt (Tiªu hao 10 ®iÓm tinh lùc)/#dxy_talk_1("..nType..")",
 		"Giíi thiÖu chi tiÕt/#dxy_talk_2("..nType..")",
-		"Kh«ng cã viÖc g×!/nothing",
+		"Nothing to do!/nothing",
 	}
 	Say(g_NpcName..tNpcName[nType][2],
 		getn(strtab),
@@ -50,7 +50,7 @@ function dxy_talk_1(nType)
 			gf_AddItemEx({tPVPItemInfo[8][2],tPVPItemInfo[8][3],tPVPItemInfo[8][4],1},tPVPItemInfo[8][1]);
 		end
 		Say(g_NpcName..tNpcName[nType][4], 2, 
-			format("*Bá qua nhiÖm vô/#dxy_talk_1_1(%d)", nType), "KÕt thóc ®èi tho¹i/nothing");
+			format("*Bá qua nhiÖm vô/#dxy_talk_1_1(%d)", nType), "End dialogue/nothing");
 	else
 		if gf_Judge_Room_Weight(1,10,g_NpcName) ~= 1 then
 			return 0;
@@ -71,7 +71,7 @@ function dxy_talk_1_1(nType)
 	local g_NpcName = tNpcName[nType][1];
 	local tSay = {
 		format("\nX¸c nhËn/#dxy_talk_1_2(%d)", nType),
-		"§Ó ta suy nghÜ/nothing",
+		"Let me think about it/nothing",
 	}
 	local szCardName = "ThÎ th¸ng hoÆc ThÎ ho¹t ®éng"
 	if IsActivatedVipCard() ~= 0 then

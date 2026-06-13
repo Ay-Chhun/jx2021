@@ -1,7 +1,7 @@
 --Ä¥µ¶Ê¯
 
 function OnUse()
-	Say("Sö dông Ma §ao Th¹ch ngÉu nhiªn ®iÒu chØnh søc c«ng kİch trong ph¹m vi nhÊt ®Şnh.",2,"B¾t ®Çu/StartKnife","Kh«ng cÇn ®©u/do_nothing")
+	Say("Sö dông Ma §ao Th¹ch ngÉu nhiªn ®iÒu chØnh søc c«ng kİch trong ph¹m vi nhÊt ®Şnh.",2,"Start/StartKnife","Kh«ng cÇn ®©u/do_nothing")
 end
 
 function StartKnife()

@@ -115,7 +115,7 @@ function actor_deldialog()
 	Say("<color=green>"..GetNpcName(GetTaskTemp(164)).."<color>: ThÕ giíi giang hå còng cã ng­êi muèn tung hoµnh, l¹i còng cã ng­êi muèn Èn c­,"..Zgc_pub_sex_name()..", cã lÏ còng hiÓu ®­îc ®iÒu nµy?",
 	2,
 	"§óng vËy, ta ch¸n c¶nh b«n ba nµy råi!/actor_del_con_chk",
-	"ChØ lµ nh©n tiÖn ghÐ qua th«i!/end_dialog")
+	"I'm just passing by!/end_dialog")
 end
 function actor_del_con_chk()
 	if IsTongMember() == 1 or IsTongMember() == 2 or IsTongMember() == 3 then
@@ -123,14 +123,14 @@ function actor_del_con_chk()
 		if IsTongMember() == 1 then
 			conf_att = "Bang chñ"
 		elseif IsTongMember() == 2 then
-			conf_att = "Phã bang"
+			conf_att = "Deputy Guild Leader"
 		else
 			conf_att = "Tr­ëng l·o"
 		end
 		Talk(1,"end_dialog","Ng­¬i thËt sù ®­îc bang chóng ng­ìng mé"..conf_att..", chuyÖn ®¹i sù nh­ thÕ nµy sao kh«ng cïng bang chóng th­¬ng l­îng. §i héi ý bang chóng råi h·y quay l¹i.")
 		return
 	elseif (GetYinPiao(1) + GetYinPiao(2) + GetItemCount(2,1,198)) ~= 0 then
-		Say("<color=green>"..GetNpcName(GetTaskTemp(164)).."<color>: VÞ "..Zgc_pub_sex_name().." ®em nhiÒu ng©n l­îng nh­ thÕ nµy (<color=red>Ng©n phiÕu lín, Ng©n phiÕu nhá, b¹c lÎ<color>), lÏ nµo kh«ng dïng sao?",
+		Say("<color=green>"..GetNpcName(GetTaskTemp(164)).."<color>: Esteemed"..Zgc_pub_sex_name().." ®em nhiÒu ng©n l­îng nh­ thÕ nµy (<color=red>Ng©n phiÕu lín, Ng©n phiÕu nhá, b¹c lÎ<color>), lÏ nµo kh«ng dïng sao?",
 		2,
 		"Ta ®· cã quyÕt ®Þnh råi/#actor_del_dem_1(3)",
 		"Ta muèn suy nghÜ l¹i/end_dialog"
@@ -170,7 +170,7 @@ function actor_del_dem_1(actor_flag)
 	}
 	Say("<color=green>"..GetNpcName(GetTaskTemp(164)).."<color>: "..actor_dialog[actor_flag],
 		2,
-		"§ång ý xãa/#actor_del_dem_2("..actor_flag..")",
+		"Agree to delete/#actor_del_dem_2("..actor_flag..")",
 		"Ta muèn suy nghÜ l¹i/end_dialog"
 	)	
 end
@@ -189,7 +189,7 @@ function actor_del(del_flag)
 		EnableDeleteWaitFlag(1)
 		EnableDeleteImmedFlag(1)
 		ExitGame()		--t
-		WriteLog(GetName().."Xãa tr¾ng.")
+		WriteLog(GetName().."Delete completely.")
 	else
 		--Ôö¼ÓÉ¾³ý½ÇÉ«±êÖ¾
 		EnableDeleteWaitFlag(1)
@@ -202,11 +202,11 @@ end
 --------------------------------------------------------------Ö÷¶Ô»°------------------------------------------------------
 function Xmas_bishop_dialog()
 	if zgc_pub_day_turn(1) >= Xmas_start_day and zgc_pub_day_turn(1) <= Xmas_end_day and IsTongMaster() ~= 1 then
-		Say("<color=green>"..GetNpcName(GetTaskTemp(164))..": <color>Gi¸ng sinh vui vÎ!!",
+		Say("<color=green>"..GetNpcName(GetTaskTemp(164))..": <color>Merry Christmas!!",
 		3,
 		"nhËn quµ Gi¸ng sinh/get_Xmas_goods",
 		"T×m hiÓu ho¹t ®éng Gi¸ng sinh/about_Xmas_feast",
-		"KÕt thóc ®èi tho¹i/end_dialog"
+		"End dialogue/end_dialog"
 		)
 		return
 	elseif zgc_pub_day_turn(1) >= Xmas_start_day and zgc_pub_day_turn(1) <= Xmas_end_day and IsTongMaster() == 1 then
@@ -224,7 +224,7 @@ function Xmas_bishop_dialog()
 		else
 			Say("<color=green>"..GetNpcName(GetTaskTemp(164))..": <color>Trêi phï hé cho ng­¬i!",
 				1,
-				"KÕt thóc ®èi tho¹i/end_dialog")
+				"End dialogue/end_dialog")
 		end
 	end
 end
@@ -295,32 +295,32 @@ function Xmas_Tree_A()
 		end
 	elseif Zgc_pub_num_apart(Tree_diff,3) == 1 then			--²»ÐèÒª´«ÈëÊý¾Ý£¬Ê÷µÄË÷ÒýÒÑ¾­´æÈëTaskID
 		if Tree_diff < 140 then
-			Say("NÕu b¹n ®ang"..tree_time_remian_str.."kh«ng tiÕp tôc ch¨m sãc, c©y sÏ biÕn mÊt!",
+			Say("If you are"..tree_time_remian_str.."kh«ng tiÕp tôc ch¨m sãc, c©y sÏ biÕn mÊt!",
 				3,
 				"Ta ph¶i trang trÝ/#Xmas_acc_select_A()",
 				"Ta sÏ nhËn th­ëng/Xmas_prize_get",
-				"Rêi khái/end_dialog"
+				"Leave/end_dialog"
 			)
 		else
-			Say("NÕu b¹n ®ang"..tree_time_remian_str.."kh«ng tiÕp tôc ch¨m sãc, c©y sÏ biÕn mÊt!",
+			Say("If you are"..tree_time_remian_str.."kh«ng tiÕp tôc ch¨m sãc, c©y sÏ biÕn mÊt!",
 				2,
 				"Ta sÏ nhËn th­ëng/Xmas_prize_get",
-				"Rêi khái/end_dialog"
+				"Leave/end_dialog"
 			)			
 		end
 	else
 		if Zgc_pub_num_apart(Tree_diff,2) ~= 4 then
-			Say("NÕu b¹n ®ang"..tree_time_remian_str.."kh«ng tiÕp tôc ch¨m sãc, c©y sÏ biÕn mÊt!",
+			Say("If you are"..tree_time_remian_str.."kh«ng tiÕp tôc ch¨m sãc, c©y sÏ biÕn mÊt!",
 				3,
 				"Ta ph¶i trang trÝ/#Xmas_acc_select(0)",
 				"Ta sÏ nhËn th­ëng/Xmas_prize_get",
-				"Rêi khái/end_dialog"
+				"Leave/end_dialog"
 			)
 		else
-			Say("NÕu b¹n ®ang"..tree_time_remian_str.."kh«ng tiÕp tôc ch¨m sãc, c©y sÏ biÕn mÊt!",
+			Say("If you are"..tree_time_remian_str.."kh«ng tiÕp tôc ch¨m sãc, c©y sÏ biÕn mÊt!",
 				2,
 				"Ta sÏ nhËn th­ëng/Xmas_prize_get",
-				"Rêi khái/end_dialog"
+				"Leave/end_dialog"
 			)
 			
 		end
@@ -352,7 +352,7 @@ function Xmas_acc_select (page_num)
 		Talk(1,"end_dialog","B¹n kh«ng cã vËt phÈm trang trÝ c©y Gi¸ng sinh")
 		return
 	else
-		dialog_table[goods_num + 1] = "§Ó ta nghÜ xem/end_dialog"
+		dialog_table[goods_num + 1] = "Let me think about it/end_dialog"
 		Say("    Treo thªm vËt phÈm trang trÝ sÏ gióp c©y Gi¸ng sinh mau t¨ng cÊp, <color=red>nh­ng treo nhiÒu qu¸ sÏ lµm c©y bÞ ng·<color>. Ng­¬i muèn chän vËt phÈm trang trÝ lo¹i nµo?",--
 			getn(dialog_table),
 			dialog_table
@@ -411,7 +411,7 @@ function Xmas_tree_grow_A()
 			local SFX_seq = Zgc_pub_num_apart(tree_grow_way[i][2+random_num],1)
 			local tree_level = Zgc_pub_num_apart(tree_grow_way[i][2+random_num],2)
 			
-			local Xmas_tree_name = GetName().." trång "..Conf_Xmas_tree_SQF_name[1][SFX_seq + 1].."-"..Conf_Xmas_tree_SQF_name[2][tree_grow_way[i][5]+1].."C©y th«ng gi¸o héi"
+			local Xmas_tree_name = GetName().." plant"..Conf_Xmas_tree_SQF_name[1][SFX_seq + 1].."-"..Conf_Xmas_tree_SQF_name[2][tree_grow_way[i][5]+1].."C©y th«ng gi¸o héi"
 			local new_tree_index = CreateNpc(tree_grow_way[i][4],Xmas_tree_name,MapID,att_X,att_Y,-1,1,0,0)
 			SetNpcLifeTime(new_tree_index,900)
 			--ÔÚ´Ë¼ÓÈëÌØÐ§
@@ -465,7 +465,7 @@ function Xmas_tree_grow_other(acc_id)
 	local new_tree_SFC = Zgc_pub_num_apart(new_tree_diff,1)					--ÌØÐ§
 	local new_tree_level = Zgc_pub_num_apart(new_tree_diff,2)				--Ê÷µÄµÈ¼¶
 	local new_tree_sign = Zgc_pub_num_apart(new_tree_diff,3)				--Ê÷µÄÀàÐÍ
-	local Xmas_tree_name = GetName().." trång "..Conf_Xmas_tree_SQF_name[1][new_tree_SFC + 1].."-"..Conf_Xmas_tree_SQF_name[2][new_tree_level].."C©y th«ng gi¸o héi"
+	local Xmas_tree_name = GetName().." plant"..Conf_Xmas_tree_SQF_name[1][new_tree_SFC + 1].."-"..Conf_Xmas_tree_SQF_name[2][new_tree_level].."C©y th«ng gi¸o héi"
 	local new_tree_index = CreateNpc(Xms_tree_npc_name[new_tree_level][new_tree_sign],Xmas_tree_name,MapID,att_X,att_Y,-1,1,0,0)
 	SetNpcLifeTime(new_tree_index,900)
 	--ÔÚ´Ë¼ÓÈëÌØÐ§
@@ -508,10 +508,10 @@ function Xmas_prize_get()
 		Msg2Player("B¹n nhËn ®­îc "..num.." ®iÓm kinh nghiÖm!")
 		----------------------------------------½Ì»áÊ¥µ®Ê÷ÌØÊâ½±Àø---------------------------------------
 		local Xmas_tree_prize_A = {
-			{{0,108,109,"Nãn gi¸ng sinh chuÈn"},{0,108,139,"TuÕ Thñ qu¸n"},{0,109,109,"Th­îng y gi¸ng sinh chuÈn"},{0,109,185,"TuÕ Thñ bµo"},{0,110,73,"H¹ y Gi¸ng sinh chuÈn"},{0,110,81,"TuÕ Thñ ngoa"}},  
-			{{0,108,110,"Nãn gi¸ng sinh kh«i ng«"},{0,108,140,"ChÝnh Sãc m·o"},{0,109,110,"Gi¸ng sinh kh«i ng«"},{0,109,186,"ChÝnh Sãc gi¸p"},{0,110,74,"Trang phôc gi¸ng sinh kh«i ng«"},{0,110,82,"ChÝnh Sãc ngoa"}},
-			{{0,108,112,"Nãn gi¸ng sinh gîi c¶m"},{0,108,141,"T©n ChÝnh kÕt"},{0,109,112,"Th­¬ng y gi¸ng sinh gîi c¶m"},{0,109,187,"T©n ChÝnh th­êng"},{0,110,76,"H¹ y gi¸ng sinh n÷ gîi c¶m"},{0,110,83,"T©n ChÝnh quÇn"}},
-			{{0,108,111,"Nãn gi¸ng sinh nhá"},{0,108,142,"Nguyªn ChÝnh tr©m"},{0,109,111,"Th­¬ng y gi¸ng sinh KiÒu n÷"},{0,109,188,"Nguyªn ChÝnh th­êng"},{0,110,75,"Gi¸ng sinh KiÒu n÷"},{0,110,84,"Nguyªn ChÝnh quÇn"}}	
+			{{0,108,109,"Standard Christmas Hat"},{0,108,139,"TuÕ Thñ qu¸n"},{0,109,109,"Standard Christmas Top"},{0,109,185,"TuÕ Thñ bµo"},{0,110,73,"Standard Christmas Bottom"},{0,110,81,"TuÕ Thñ ngoa"}},  
+			{{0,108,110,"Imposing Christmas Hat"},{0,108,140,"Main Plow Cap"},{0,109,110,"Imposing Christmas Outfit"},{0,109,186,"Main Plow Armor"},{0,110,74,"Trang phôc gi¸ng sinh kh«i ng«"},{0,110,82,"Main Plow Boots"}},
+			{{0,108,112,"Alluring Christmas Hat"},{0,108,141,"T©n ChÝnh kÕt"},{0,109,112,"Alluring Christmas Top"},{0,109,187,"T©n ChÝnh th­êng"},{0,110,76,"Alluring Women's Christmas Bottom"},{0,110,83,"T©n ChÝnh quÇn"}},
+			{{0,108,111,"Small Christmas Hat"},{0,108,142,"Primal Main Hairpin"},{0,109,111,"Charming Women's Christmas Top"},{0,109,188,"Nguyªn ChÝnh th­êng"},{0,110,75,"Charming Women's Christmas"},{0,110,84,"Primal Main Skirt"}}	
 			}
 		local player_model = GetBody()
 		if GetTask(968) ~= 0 and random(1,10) == 7 then
@@ -615,21 +615,21 @@ function conf_Xmas_tree_dialog()
 end
 function ConfDataGetReturn_1(data_value)
 	if data_value >= zgc_pub_day_turn(1) then
-		Say("<color=green>"..GetNpcName(GetTaskTemp(164))..": <color>Gi¸ng sinh vui vÎ!!",
+		Say("<color=green>"..GetNpcName(GetTaskTemp(164))..": <color>Merry Christmas!!",
 			3,
 			"nhËn quµ Gi¸ng sinh/get_Xmas_goods",
 			"T×m hiÓu ho¹t ®éng Gi¸ng sinh/about_Xmas_feast",
 			--"Ê²Ã´ÊÇÊ¥µ®Ñ½£¿/about_Xmas",
-			"Rêi khái/end_dialog"
+			"Leave/end_dialog"
 		)
 	else
-		Say("<color=green>"..GetNpcName(GetTaskTemp(164))..": <color>Gi¸ng sinh vui vÎ!!",
+		Say("<color=green>"..GetNpcName(GetTaskTemp(164))..": <color>Merry Christmas!!",
 			4,
 			"NhËn c©y Gi¸ng sinh bang héi/get_conf_Xmas_tree",
 			"nhËn quµ Gi¸ng sinh/get_Xmas_goods",
 			"T×m hiÓu ho¹t ®éng Gi¸ng sinh/about_Xmas_feast",
 			--"Ê²Ã´ÊÇÊ¥µ®Ñ½£¿/about_Xmas",
-			"Rêi khái/end_dialog"
+			"Leave/end_dialog"
 			)
 	end
 end
@@ -695,12 +695,12 @@ function conf_Xmas_tree(conf_Xmas_tree_index)
 			3,
 			"Ta cÇn ph¶i gióp c©y Gi¸ng sinh cña bang héi t¨ng cÊp (cÇn mét phÇn Lé thñy)/cong_Xmas_tree_up",
 			"Ta ph¶i trang trÝ/conf_Xmas_tree_hang_acc",
-			"Rêi khái/end_dialog")
+			"Leave/end_dialog")
 		else
 			Say(conf_Xmas_update_dialog,
 			2,
 			"Ta ph¶i trang trÝ/conf_Xmas_tree_hang_acc",
-			"Rêi khái/end_dialog")		
+			"Leave/end_dialog")		
 		end
 	else
 		local conf_Xmas_tree_life_time_lv4 = 1800 - conf_Xmas_time_distance
@@ -708,7 +708,7 @@ function conf_Xmas_tree(conf_Xmas_tree_index)
 		Say("C©y Gi¸ng sinh cña quý bang ®· ®¹t ®Õn ®¼ng cÊp cao nhÊt, cã thÓ ®Õn <color=yellow>"..Zgc_pub_time_sec_change(conf_Xmas_tree_life_time_lv4,0).."<color> nhËn phÇn th­ëng.",
 		2,
 		"Ta sÏ nhËn th­ëng/conf_Xmas_tree_get_prize",
-		"Rêi khái/end_dialog")
+		"Leave/end_dialog")
 	end	
 end
 ----------------------------------------------°ï»áÊ¥µ®Ê÷ÊÎÎïÑ¡Ôñ---------------------------------------------
@@ -721,7 +721,7 @@ function conf_Xmas_tree_hang_acc()
 			dialog_table[acc_num] = Conf_acc_table[i][4].."/#conf_acc_select("..Conf_acc_table[i][3]..")"
 		end
 	end	
-	dialog_table[acc_num + 1] = "§Ó ta nghÜ xem/end_dialog"
+	dialog_table[acc_num + 1] = "Let me think about it/end_dialog"
 	if acc_num == 0 then
 		Talk(1,"end_dialog","B¹n kh«ng cã vËt phÈm trang trÝ phï hîp!")
 		return
@@ -799,7 +799,7 @@ function cong_Xmas_tree_up()
 		end
 	end
 	local map_ID,att_X,att_Y = GetNpcWorldPos(conf_tree_index)
-	local conf_Xmas_tree_name = GetTongName().." trång "..Conf_Xmas_tree_SQF_name[1][New_conf_tree_SQF_seq+1].."-"..Conf_Xmas_tree_SQF_name[2][New_conf_tree_level].."C©y th«ng gi¸o héi"
+	local conf_Xmas_tree_name = GetTongName().." plant"..Conf_Xmas_tree_SQF_name[1][New_conf_tree_SQF_seq+1].."-"..Conf_Xmas_tree_SQF_name[2][New_conf_tree_level].."C©y th«ng gi¸o héi"
 	local new_conf_Xmas_tree_index = CreateNpc(Xms_tree_npc_name[New_conf_tree_level][4],conf_Xmas_tree_name,map_ID,att_X,att_Y,6,1,1,0)
 	SetNpcLifeTime(conf_tree_index,0)
 	SetNpcScript(new_conf_Xmas_tree_index,"\\script\\online\\zgc_npc_dialog.lua")
@@ -814,7 +814,7 @@ function cong_Xmas_tree_up()
 		--°ï»á¹«¸æ
 		local map_name = Zgc_pub_mapID_name_change(map_ID,1) 
 		if map_name ~= 0 then
-			SendTongMessage("T¹i"..map_name.."C©y Gi¸ng sinh cña quý bang ®· th¨ng lªn cÊp 4, cã thÓ nhËn phÇn th­ëng.")
+			SendTongMessage("At"..map_name.."C©y Gi¸ng sinh cña quý bang ®· th¨ng lªn cÊp 4, cã thÓ nhËn phÇn th­ëng.")
 		end
 	else
 		SetNpcLifeTime(new_conf_Xmas_tree_index,600)													--´æ»îÊ±¼ä10·ÖÖÓ
@@ -832,7 +832,7 @@ function cong_Xmas_tree_up()
 	local new_conf_tree_diff = (New_conf_tree_level * 10) + New_conf_tree_SQF_seq
 	SetUnitCurStates(new_conf_Xmas_tree_index,4, new_conf_tree_diff)					--Ð´ÈëÊ÷µÄÀàÐÍ
 	SetUnitCurStates(new_conf_Xmas_tree_index,1, GetTime())								--Ð´ÈëÖÖÊýµÄÊ±¼ä		
-	WriteLog ("Bang héi"..GetTongName().."CÊp:"..New_conf_tree_level.."§¼ng cÊp hiÖu qu¶ ®Æc biÖt:"..New_conf_tree_SQF_seq)
+	WriteLog ("Bang héi"..GetTongName().."Level:"..New_conf_tree_level.."§¼ng cÊp hiÖu qu¶ ®Æc biÖt:"..New_conf_tree_SQF_seq)
 end
 --------------------------------------------------------°ï»áÊ¥µ®Ê÷½±Àø»ñµÃ-------------------------------------------------------------
 function conf_Xmas_tree_get_prize()
@@ -870,11 +870,11 @@ function conf_Xmas_tree_get_prize()
 	if conf_Xmas_acc_up_flag == 1 then
 		ModifyExp((conf_Xmas_tree_prize[conf_Xmas_tree_SQF][1] + conf_Xmas_tree_prize[conf_Xmas_tree_SQF][2]) * Player_level_diff)
 		Msg2Player("Chóc mõng b¹n nhËn ®­îc "..((conf_Xmas_tree_prize[conf_Xmas_tree_SQF][1] + conf_Xmas_tree_prize[conf_Xmas_tree_SQF][2])*Player_level_diff).." ®iÓm kinh nghiÖm!")
-		WriteLog (GetName().."§óng"..((conf_Xmas_tree_prize[conf_Xmas_tree_SQF][1] + conf_Xmas_tree_prize[conf_Xmas_tree_SQF][2]) * Player_level_diff).." ®iÓm kinh nghiÖm!")
+		WriteLog (GetName().."Confirm"..((conf_Xmas_tree_prize[conf_Xmas_tree_SQF][1] + conf_Xmas_tree_prize[conf_Xmas_tree_SQF][2]) * Player_level_diff).." ®iÓm kinh nghiÖm!")
 	else
 		ModifyExp((conf_Xmas_tree_prize[conf_Xmas_tree_SQF][1])*Player_level_diff)
 		Msg2Player("Chóc mõng b¹n nhËn ®­îc "..((conf_Xmas_tree_prize[conf_Xmas_tree_SQF][1])*Player_level_diff).." ®iÓm kinh nghiÖm!")
-		WriteLog (GetName().."§óng"..((conf_Xmas_tree_prize[conf_Xmas_tree_SQF][1])*Player_level_diff).." ®iÓm kinh nghiÖm!")
+		WriteLog (GetName().."Confirm"..((conf_Xmas_tree_prize[conf_Xmas_tree_SQF][1])*Player_level_diff).." ®iÓm kinh nghiÖm!")
 	end
 	SetTask(975,zgc_pub_day_turn(1))
 	if IsTongMaster() == 1 and GetUnitCurStates(conf_Xmas_tree_index,5) ~= 37 then

@@ -11,8 +11,8 @@ Include("\\script\\task\\world\\task_trigger_list.lua");
 
 function task_01_00()
     local szTalk = {
-        "ThËt lµ xui xÎo!",
-        "ChuyÖn g× vËy?",
+        "What rotten luck!",
+        "What is the matter?",
         "MÊy ngµy tr­íc con trai ta tĞ bŞ th­¬ng ë ch©n, ta ®Şnh lªn {Vò Di s¬n} h¸i İt D­îc th¶o vÒ kÕt qu¶ bŞ ®¸m v­în tr¾ng, hå ly tÊn c«ng, ng­¬i gióp ta ®Õn ®ã mang {tay n¶i} vÒ ®­îc kh«ng?",
         "ChuyÖn nµy ®Ó t¹i h¹ lo liÖu!"
     };
@@ -53,8 +53,8 @@ function task_02_01()
     RemoveTrigger(GetTrigger(KILL_YZ_BG));
     SetTask(TASK_YZ_THREE, 3);
     DelItem(2,0,144,1);
-    Msg2Player("Hái Lı TiÕn Dòng chuyÖn Vò Di S¬n");
-    TaskTip("Hái Lı TiÕn Dòng chuyÖn Vò Di S¬n");
+    Msg2Player("Ask Li Tien Dung about the matter of Wuyi Mountain");
+    TaskTip("Ask Li Tien Dung about the matter of Wuyi Mountain");
     GivePlayerAward("Level_45", "hard");
 	GivePlayerExp(SkeyYZxiahouqin,"yishouxianshi1")		--ÒìÊŞÏÖÊÀ1
 end;
@@ -65,7 +65,7 @@ function task_03_00()
         "Cã chuyÖn nµy n÷a sao? Th­¬ng Viªn xuÊt hiÖn b¸o hiÖu ®iÒm xÊu b¾t ®Çu.",
         "VËy ph¶i lµm sao?",
         "PhiÒn <sex> ®Õn Vò Di s¬n t×m tÊm da Th­¬ng Viªn vÒ!",
-        "T¹i h¹ ®i ngay!"
+        "This humble one goes now!"
     };
     TalkEx("task_03_01", szTalk);
 end;
@@ -82,7 +82,7 @@ end;
 function task_04_00()
     local szTalk = {
         "§óng lµ tÊm da nµy råi! ë ®©y muèn nãi s¾p cã th¶m häa chiÕn tranh, kÕt qu¶ th×……",
-        "Rèt cuéc lµ g×?",
+        "What in the end is it?",
         "Lµ…Mµ ng­¬i nãi Vò Di s¬n cã Th­¬ng Viªn vµ Ng©n Hå ph¶i kh«ng?",
         "§óng råi! Cã ng©n hå n÷a!",
         "Th«i vËy ®i phiÒn <sex> ®Õn Vò Di s¬n mét chuyÕn lÊy l«ng ng©n hå vÒ ®©y!",
@@ -118,11 +118,11 @@ end;
 function task_05_00()
     local szTalk = {
         "§óng lµ lo¹i l«ng nµy! ë ®©y chØ ®iÒm may, ng­¬i cã thÓ yªn t©m.",
-        "Rèt cuéc lµ sao, tèt hay xÊu?",
+        "What in the end is it, good or bad?",
         "C¸i nµy th×……ta kh«ng tiÖn nãi ra, ng­¬i thö t×m ng­êi b¹n L­u HuyÒn Thanh cña ta xem!",
         "Sao ph¶i hái anh ta?",
         "Phong thñy ë Vò Di s¬n ®Òu tËp trung ë L­ìng Thñy ®éng, ta nghi dŞ thó xuÊt hiÖn cã liªn quan ®Õn viÖc nµy mµ L­u HuyÒn Thanh ngµy ngµy ®Òu vµo ®éng luyÖn ®¬n, ng­¬i thö ®Õn D­¬ng Ch©u t×m anh ta xem!",
-        "§Ó ta ®i hái thö xem!"
+        "Let me go and ask!"
     };
     local szMsg = {
         "PhiÒn <sex> ®Õn Vò Di s¬n mang l«ng ng©n hå vÒ!"
@@ -186,7 +186,7 @@ function task_08_00()
     local szTalk = {
         "T¹i h¹ ®· lµm xong viÖc tiÒn bèi giao.",
         "<sex> qu¶ nhiªn th©n thñ bÊt phµm, nãi vÒ L­ìng Thñy ®éng th× kh«ng ai hiÓu b»ng ta, n¬i ®ã chİnh lµ ®iÓm tİch tô linh khİ cña Vò Di s¬n. 30 n¨m tr­íc ta vµ phu nh©n ngµy ngµy ®Òu ®Õn ®ã luyÖn ®¬n mong t×m ®­îc tr­êng sinh ®¬n. Kh«ng ngê ®· 10 n¨m.....",
-        "10 n¨m tr­íc ®· x¶y ra chuyÖn g×?",
+        "What happened 10 years ago?",
         "10 n¨m tr­íc trong mét lÇn luyÖn ®¬n gÆp sù cè do liÒu l­îng thuèc qu¸ nhiÒu dÉn ®Õn lß luyÖn næ tung ta may m¾n tho¸t chÕt nh­ng phu nh©n ta ®· kh«ng qua khái."
     };
     TalkEx("task_08_00_00", szTalk);
@@ -250,9 +250,9 @@ function task_10_00()
         "Ha! Ha! Sao ta ph¶i nãi cho ng­¬i nghe?",
         "T¹i h¹ gióp ®­îc g× cho c« n­¬ng kh«ng?",
         "Tóy Xu©n lÇu ta nÕu cã lo¹i phÊn ®ã th× kh¸ch sÏ ®Õn n­êm n­îp.",
-        "Lo¹i phÊn ®ã tªn g×? Mua ë ®©u vËy?",
+        "What is that powder called? Where is it bought?",
         "NÕu dÔ vËy ta mua tõ l©u råi, lo¹i phÊn ®ã tªn Thiªn H­¬ng phÊn chØ tiÖm phÊn T­ëng Duy ë D­¬ng Ch©u míi cã, ta ®Õn vµi lÇn nh­ng kh«ng mua ®­îc, ng­¬i gióp ta t×m mét c¸i ®­îc kh«ng?",
-        "§­îc th«i!"
+        "Very well!"
     };
     TalkEx("task_10_01", szTalk);
 end;
@@ -287,7 +287,7 @@ function task_12_00()
         "§óng lµ sè nguyªn liÖu nµy råi! §îi ta mét l¸t!",
         "……",
         "Thiªn H­¬ng phÊn ®©y! <sex> cÇm lÊy!",
-        "§a t¹!"
+        "Many thanks!"
     };
     local szMsg = {
         "Nh÷ng nguyªn liÖu nµy h¬i kh?nh? ph¶i ®Õn Giang T©n Th«n t×m khãi ©m trªn ng­êi ¢m hån, chu sa trªn m×nh Heo rõng, t?ong trªn ong vµng v?l­îc trang søc trªn ng­êi N?KiÕm hµo, t×m ®ñ nguyªn liÖu ta s?gióp ng­¬i lµm."
@@ -334,7 +334,7 @@ function task_13_jw_00()
         "§óng lµ sè nguyªn liÖu nµy råi! §îi ta mét l¸t!",
         "……",
         "Thiªn H­¬ng phÊn ®©y! <sex> cÇm lÊy!",
-        "§a t¹!"
+        "Many thanks!"
     };
     if GetItemCount(2,0,149) >= 1 then
         TalkEx("", szElse);
@@ -356,7 +356,7 @@ function task_13_qr_00()
         "C« n­¬ng cø nãi!",
         "Yªn t©m! ViÖc nµy lµ lÇn cuèi ta nhê ng­¬i, lÇn tr­íc bän ng­êi Xi Háa gi¸o ®Õn ®©y ®· lÊy c¾p Tö Phông kim thoa cña ta.",
         "§ã lµ vËt ®Şnh t×nh, ng­¬i gióp ta ®Õn L­ìng Thñy ®éng tÇng 2 ®¸nh Xi Háa gi¸o ®å lÊy Tö Phông kim thoa vÒ.",
-        "T¹i h¹ lªn ®­êng ngay!"
+        "This humble one sets out at once!"
     };
     if GetItemCount(2,0,149) >= 1 then
         TalkEx("task_13_qr_01", szTalk);
@@ -410,8 +410,8 @@ end;
 function task_16_00()
     local szTalk = {
         "T¹i h¹ ®· ®¸nh b¹i háa kú l©n tr­íc thêi h¹n, c« n­¬ng cã thÓ yªn t©m!",
-        "Nguy hiÓm l¾m! ChuyÖn lµ…",
-        "Hay qu¸! Hay qu¸!",
+        "So dangerous! The matter is",
+        "Wonderful! Wonderful!",
         "Nh­ng m¶nh S¬n Hµ X· T¾c cßn trong tay Tr­êng Ca M«n sao l¹i r¬i vµo tay Xi Háa gi¸o? §óng råi! Ph¶i vÒ {§­êng M«n} gÆp {§­êng Xu©n} xem cã kÕt qu¶ gi¸m ®Şnh ¸m khİ ch­a!"
     };
     TalkEx("task_16_01", szTalk);

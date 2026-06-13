@@ -3,15 +3,15 @@ Include("\\script\\lib\\globalfunctions.lua")
 
 function main()
 	local selTab = {				
-				"Söa ch÷a/repair",
-				"KÕt thóc ®èi tho¹i/gf_DoNothing",
+				"Repair/repair",
+				"End dialogue/gf_DoNothing",
 				}
 	local szSaySth = "Cã cÇn gióp g× kh«ng?";
 	if GLB_TMZ_RealmCheck() ~= 1 then
 		tinsert(selTab,1,"Më r­¬ng chøa ®å/open_box");
-		tinsert(selTab,3,"Mua thuèc/#Sale(30)");
+		tinsert(selTab,3,"Buy medicine/#Sale(30)");
 	end
-	Say("<color=green>Qu©n nhu quan<color>:"..szSaySth,getn(selTab),selTab);
+	Say("<color=green>Quartermaster Officer<color>:"..szSaySth,getn(selTab),selTab);
 end;
 
 function want_medicine()
@@ -48,9 +48,9 @@ end;
 
 function repair()
 	local selTab = {
-			"Söa miÔn ph?(®é bÒn tr­íc ®©y >0)/repair1",
+			"Free repair (previous durability >0)/repair1",
 			"T¨ng cÊp/repair2",
-			"Söa miÔn phÝ (®é bÒn tr­íc ®©y =0)/repair3",
+			"Free repair (previous durability =0)/repair3",
 			"trë l¹i/main"
 			};
 	Say("Kh¸ch quan xem kü trang bÞ khi söa ch÷a.",getn(selTab),selTab)

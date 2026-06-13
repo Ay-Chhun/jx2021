@@ -23,10 +23,10 @@ function main()
 		return 0;
 	end
 	local selTab = {
-				"Mau theo ta ®Õn n¬i an toµn/get_refugee",
+				"Quickly follow me to a safe place/get_refugee",
 				"§îi gi©y l¸t sÏ cã ng­êi ®Õn cøu/nothing",
 				}
-	Say("<color=green>N¹n d©n<color>:"..tSexName[GetSex()].."Xin cøu m¹ng!",getn(selTab),selTab);
+	Say("<color=green>Refugee<color>:"..tSexName[GetSex()].."Save me!",getn(selTab),selTab);
 end;
 
 function get_refugee()

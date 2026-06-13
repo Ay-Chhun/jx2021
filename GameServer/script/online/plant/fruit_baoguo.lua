@@ -121,28 +121,28 @@ end
 
 function ConfirmExchange(nType1, nType2)
 	local tList1 = {
-		[1] = {{2,1,30181,10}, "Lª"},
-		[2] = {{2,1,30182,10}, "Bßn Bon"},
-		[3] = {{2,1,30183,10}, "KhÕ"},
-		[4] = {{2,1,30180,10}, "Khãm"},
-		[5] = {{2,1,30177,10}, "B¬"},		
+		[1] = {{2,1,30181,10}, "Li"},
+		[2] = {{2,1,30182,10}, "Langsat"},
+		[3] = {{2,1,30183,10}, "Star Fruit"},
+		[4] = {{2,1,30180,10}, "Pineapple"},
+		[5] = {{2,1,30177,10}, "Avocado"},		
 	}
 	
 	local tList2 = {
-		[1] = {{2,1,30168,10}, "M¨ng Côt"},
-		[2] = {{2,1,30173,10}, "§µo"},
-		[3] = {{2,1,30174,10}, "MËn"},
-		[4] = {{2,1,30175,10}, "V¶i"},
-		[5] = {{2,1,30177,10}, "B¬"},
-		[6] = {{2,1,30164,10}, "Nh·n"},		
+		[1] = {{2,1,30168,10}, "Mangosteen"},
+		[2] = {{2,1,30173,10}, "Peach"},
+		[3] = {{2,1,30174,10}, "Plum"},
+		[4] = {{2,1,30175,10}, "Lychee"},
+		[5] = {{2,1,30177,10}, "Avocado"},
+		[6] = {{2,1,30164,10}, "Longan"},		
 	}
 	
 	if GetCash() < 140000 then
-		Talk(1, "", "Kh«ng ®ñ 14 vµng ®Ó ®æi tr¸i c©y!")
+		Talk(1, "", "Not enough 14 gold to exchange fruit!")
 		return
 	end
 	if GetItemCount(tList1[nType1][1][1], tList1[nType1][1][2], tList1[nType1][1][3]) < 10 then
-		Talk(1, "", "Kh«ng ®ñ 10 "..tList1[nType1][2].." ®Ó ®æi!")
+		Talk(1, "", "Not enough 10"..tList1[nType1][2].." to exchange!")
 		return
 	end
 	

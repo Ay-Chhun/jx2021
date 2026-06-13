@@ -309,9 +309,9 @@ function give_viet20090607_miben()
 	if tonumber(date("%y%m%d%H")) >= 09061900 and tonumber(date("%y%m%d%H")) < 09071924 then
 		local nRand = random(1, 100);
 		if nRand <= 10 then
-			gf_SetLogCaption("Truy t×m tr­êng sinh phæ");
-			gf_AddItemEx({2, 1, 30088, 1}, "Bİ Phæ Cò N¸t");
-			WriteLogEx("Hoat dong thang 6","Th¸i H­",1,"Bİ Phæ Cò N¸t");
+			gf_SetLogCaption("Search for the Longevity Manual");
+			gf_AddItemEx({2, 1, 30088, 1}, "Worn Old Manual");
+			WriteLogEx("Hoat dong thang 6","Th¸i H­",1,"Worn Old Manual");
 			gf_SetLogCaption("");
 		end
 	end
@@ -324,7 +324,7 @@ function give_viet200908_shuiguodai()
 		local nRand = random(1, 100);
 		if nRand <= 10 then
 			gf_SetLogCaption("[Hoat dong thang 8]");
-			nRet = gf_AddItemEx({2, 1, 30097, 1}, "Tói Tr¸i C©y");
+			nRet = gf_AddItemEx({2, 1, 30097, 1}, "Bag of Fruit");
 			if nRet == 1 then
 				WriteLogEx("Hoat dong thang 8","Nhan tui trai cay",1,"Danh quai Thai Hu");
 			end;
@@ -338,7 +338,7 @@ function give_viet200912_shengdantangguo()
     local nDate = tonumber(date("%y%m%d"));
     if nDate >= 091218 and nDate < 100117 then
         local szFullLog = VIET_0912_STR_EVENT_LOG_TITLE.."- V­ît ¶i th¸i h­ thu ®­îc kÑo gi¸ng sinh"
-        gf_AddItemEx2({2, 1, 30138, 10}, "C©y KÑo Gi¸ng Sinh", szFullLog, 0, 1, 10, 1);
+        gf_AddItemEx2({2, 1, 30138, 10}, "Christmas Candy Cane Tree", szFullLog, 0, 1, 10, 1);
     end
 end
 

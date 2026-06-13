@@ -38,7 +38,7 @@ function process_npc_kill_npc(npcIndex)
 			BT_AddMissionPoint(SONGLIAO_ID-nVillageCamp,2);
 		end;
 		return 0;
-	elseif sNpcName == "Kú nh©n dÞ sÜ" then	--Õâ¸öÊÇÖÐÁ¢NPC
+	elseif sNpcName == "Extraordinary Master" then	--Õâ¸öÊÇÖÐÁ¢NPC
 		SetMissionV(MV_HERO_DEATH,1);
 		return 0;
 	elseif sNpcName == "TiÔn th¸p-Tèng" or sNpcName == "TiÔn th¸p-Liªu" then	--Õâ¸öNPCÊÇÓÃÀ´°ÚÉèµÄ
@@ -64,13 +64,13 @@ function process_player_kill_npc(npcIndex)
 		nNpcType = TYPE_HEADER;
 		SetMissionV(MV_HEADER_DEATH,1);
 		BT_AddBattleActivity(BA_MAIN_KILL_HEADER);
-		Msg2MSGroup(MISSION_ID,"Ng­êi ch¬i:"..GetName().."  ®· giÕt "..sNpcName..", binh sÜ phÊn chÊn h¼n lªn",nPlayerCamp);
+		Msg2MSGroup(MISSION_ID,"Ng­êi ch¬i:"..GetName().."  has killed"..sNpcName..", the soldiers are greatly heartened",nPlayerCamp);
 		BT_OperateAllPlayer(BoxEffectFunc,{},nPlayerCamp);
-	elseif sNpcName == "Kú nh©n dÞ sÜ" then
+	elseif sNpcName == "Extraordinary Master" then
 		nNpcType = TYPE_HERO;
 		SetMissionV(MV_HERO_DEATH,1);
 		BT_AddBattleActivity(BA_MAIN_KILL_HEADER);
-		Msg2MSGroup(MISSION_ID,"Ng­êi ch¬i:"..GetName().."  ®· giÕt "..sNpcName..", binh sÜ phÊn chÊn h¼n lªn",nPlayerCamp);
+		Msg2MSGroup(MISSION_ID,"Ng­êi ch¬i:"..GetName().."  has killed"..sNpcName..", the soldiers are greatly heartened",nPlayerCamp);
 		BT_OperateAllPlayer(BoxEffectFunc,{},nPlayerCamp);
 	else
 		nNpcType = process_camp_fight_camp(nPlayerCamp,sNpcName,npcIndex)
@@ -111,7 +111,7 @@ function process_camp_fight_camp(nPlayerCamp,sNpcName,nNpcIndex)
 	local sNpcTypeName = get_npc_type(sNpcName);
 	local _,nNpcPos_X,nNpcPos_Y = GetNpcWorldPos(nNpcIndex);
 	local nEnemyNpcType = GetMissionV(MV_NPC_TYPE_SONG+nEnemyCamp-1);
-	if sNpcTypeName == "Ph¸o ®µi" then
+	if sNpcTypeName == "Fortress" then
 		local nEmplacementPosIndex = get_emplacement_pos_index(nNpcPos_X,nNpcPos_Y);
 		Create_Emplacement(nEmplacementPosIndex,nPlayerCamp)
 		if GetMissionV(MV_EMPLACEMENT0_POSSESSION) == GetMissionV(MV_EMPLACEMENT1_POSSESSION) and GetMissionV(MV_EMPLACEMENT0_POSSESSION) == GetMissionV(MV_EMPLACEMENT2_POSSESSION) then
@@ -119,11 +119,11 @@ function process_camp_fight_camp(nPlayerCamp,sNpcName,nNpcIndex)
 		end;
 		SetNpcLifeTime(nNpcIndex,0);	--ÅÚÌ¨ÊÇÁ¢¼´ÏûÊ§µÄ
 		nNpcType = TYPE_EMPLACEMENT;
-	elseif sNpcTypeName == "Binh tinh nhuÖ" or sNpcTypeName == "C­êng nâ binh" or sNpcTypeName == "Dòng sÜ" or sNpcTypeName == "Ng¹nh tiÔn binh" then
+	elseif sNpcTypeName == "Elite Troops" or sNpcTypeName == "Heavy Crossbowman" or sNpcTypeName == "Warrior" or sNpcTypeName == "Hard Arrow Troops" then
 		nNpcType = TYPE_SOLDIER;
-	elseif sNpcTypeName == "TiÔn th¸p" then
+	elseif sNpcTypeName == "Arrow Tower" then
 		nNpcType = TYPE_ARROWBUILDING;
-	elseif sNpcTypeName == "HiÖu óy" then
+	elseif sNpcTypeName == "Lieutenant" then
 		nNpcType = TYPE_LOOEY;
 		SetMissionV(MV_KILL_SONG_LOOEY_COUNT+nEnemyCamp-1,GetMissionV(MV_KILL_SONG_LOOEY_COUNT+nEnemyCamp-1)+1);
 		if GetMissionV(MV_KILL_SONG_LOOEY_COUNT+nEnemyCamp-1) == LOOEY_COUNT then
@@ -138,7 +138,7 @@ function process_camp_fight_camp(nPlayerCamp,sNpcName,nNpcIndex)
 				Try_To_Create_FightNPC("Tiªn phong",nEnemyCamp);	--¶Ô·½Ð£Î¾¶¼Í³±»ÍÀÂ¾´ù¾¡£¬¶Ô·½ÏÈ·æ³ö
 			end;
 		end;
-	elseif sNpcTypeName == "§« thèng" then
+	elseif sNpcTypeName == "Commander" then
 		nNpcType = TYPE_CAPTAIN;
 		SetMissionV(MV_KILL_SONG_CAPTAIN_COUNT+nEnemyCamp-1,GetMissionV(MV_KILL_SONG_CAPTAIN_COUNT+nEnemyCamp-1)+1);
 		if GetMissionV(MV_KILL_SONG_CAPTAIN_COUNT+nEnemyCamp-1) == CAPTAIN_COUNT then
@@ -175,7 +175,7 @@ function process_camp_fight_camp(nPlayerCamp,sNpcName,nNpcIndex)
 						Msg2MSAll(MISSION_ID,"§¹i t­íng vµ tiªn phong cña phe Liªu bÞ ®¸nh b¹i, Liªu nguyªn so¸i ®· xuÊt hiÖn.");
 					end;
 				end;
-				Try_To_Create_FightNPC("Nguyªn So¸i",nEnemyCamp);	--¶Ô·½´ó½«ºÍÏÈ·æ¶¼±»Ãð£¬Ôò¶Ô·½ÔªË§³ö
+				Try_To_Create_FightNPC("Marshal",nEnemyCamp);	--¶Ô·½´ó½«ºÍÏÈ·æ¶¼±»Ãð£¬Ôò¶Ô·½ÔªË§³ö
 			end;
 			if GetMissionV(MV_KILL_SONG_CAPTAIN_COUNT+nEnemyCamp-1) == CAPTAIN_COUNT then
 				if nEnemyNpcType == 1 then
@@ -200,10 +200,10 @@ function process_camp_fight_camp(nPlayerCamp,sNpcName,nNpcIndex)
 						Msg2MSAll(MISSION_ID,"§¹i t­íng tiªn phong cña phe Liªu bÞ ®¸nh b¹i, Liªu nguyªn so¸i ®· xuÊt hiÖn.");
 					end;
 				end;
-				Try_To_Create_FightNPC("Nguyªn So¸i",nEnemyCamp);	--¶Ô·½´ó½«ÏÈ·æ±»ÍÀÂ¾´ù¾¡£¬¶Ô·½ÔªË§³ö
+				Try_To_Create_FightNPC("Marshal",nEnemyCamp);	--¶Ô·½´ó½«ÏÈ·æ±»ÍÀÂ¾´ù¾¡£¬¶Ô·½ÔªË§³ö
 			end;
 		end;
-	elseif sNpcTypeName == "Nguyªn So¸i" then
+	elseif sNpcTypeName == "Marshal" then
 		nNpcType = TYPE_MARSHAL;
 		if nEnemyCamp == SONG_ID then
 			if PlayerIndex > 0 then
@@ -254,21 +254,21 @@ end;
 function get_npc_type(szNpcName)
 	local sNpcTypeName = "";
 	if szNpcName == "Tèng qu©n tinh binh" or szNpcName == "Tèng qu©n c­êng nâ binh" or szNpcName == "Liªu qu©n dòng sÜ" or szNpcName == "Liªu qu©n ng¹nh tiÔn binh" then
-		sNpcTypeName = "Binh tinh nhuÖ";
+		sNpcTypeName = "Elite Troops";
 	elseif szNpcName == "Tèng hiÖu óy" or szNpcName == "Liªu hiÖu óy" then
-		sNpcTypeName = "HiÖu óy";
+		sNpcTypeName = "Lieutenant";
 	elseif szNpcName == "Tèng §« thèng" or szNpcName == "Liªu §« thèng" then
-		sNpcTypeName = "§« thèng";
+		sNpcTypeName = "Commander";
 	elseif szNpcName == "Tèng tiªn phong" or szNpcName == "Liªu tiªn phong" then
 		sNpcTypeName = "Tiªn phong";
 	elseif szNpcName == "T­íng qu©n (Tèng)" or szNpcName == "T­íng qu©n (Liªu) " then
 		sNpcTypeName = "T­íng qu©n";
 	elseif szNpcName == "Tèng nguyªn so¸i" or szNpcName == "Liªu nguyªn so¸i" then
-		sNpcTypeName = "Nguyªn So¸i";
-	elseif szNpcName == "Ph¸o ®µi trung lËp" or szNpcName == "Ph¸o ®µi Liªu" or szNpcName == "Ph¸o ®µi Tèng" then
-		sNpcTypeName = "Ph¸o ®µi";
+		sNpcTypeName = "Marshal";
+	elseif szNpcName == "Neutral Fortress" or szNpcName == "Ph¸o ®µi Liªu" or szNpcName == "Ph¸o ®µi Tèng" then
+		sNpcTypeName = "Fortress";
 	elseif szNpcName == "TiÔn th¸p-Tèng" or szNpcName == "TiÔn th¸p-Liªu" then
-		sNpcTypeName = "TiÔn th¸p";
+		sNpcTypeName = "Arrow Tower";
 	end;
 	return sNpcTypeName;
 end;

@@ -37,7 +37,7 @@ function spths_Exp()
 		{2, 20, 100000, 1},
 		{2, 5, 20132014, 1},
 	}
-	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Event TÕt Kingsoft", "§µo Hoa thô");
+	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Kingsoft New Year Event", "§µo Hoa thô");
 end
 
 function spths_ZhenQi()
@@ -48,7 +48,7 @@ function spths_ZhenQi()
 		{31, 4, "AwardGenuineQi(500)", 1},
 		{31, 1, "AwardGenuineQi(1000)", 1},
 	}
-	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Event TÕt Kingsoft", "§µo Hoa thô");
+	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Kingsoft New Year Event", "§µo Hoa thô");
 end
 
 function spths_YinJuan()
@@ -57,5 +57,5 @@ function spths_YinJuan()
 		{31, 40, "ModifyYinJuan(100, 1)", 1},
 		{31, 10, "ModifyYinJuan(1000, 1)", 1},
 	}
-	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Event TÕt Kingsoft", "§µo Hoa thô");
+	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Kingsoft New Year Event", "§µo Hoa thô");
 end

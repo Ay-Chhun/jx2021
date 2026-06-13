@@ -18,7 +18,7 @@ function main()
 		"T×m hiÓu vŞ trİ ng­êi chØ ®Şnh./Chaxunnpc",
 		"T×m hiÓu thêi gian hiÖn t¹i./Timechaxun",
 		"Ta muèn cã 1 quyÓn Giang hå chØ nam./yaoshu",		
-		"Rêi khái./cancel")
+		"Leave./cancel")
 end
 
 function cancel()
@@ -97,7 +97,7 @@ end
 function GetNpcName()
 	
 	Msg2Player("Xin nhËp täa ®é Npc muèn t×m.");
-	AskClientForString("SearchNpcName","",1,14,"Xin nhËp tªn Npc");
+	AskClientForString("SearchNpcName","",1,14,"Please enter the Npc name");
 	
 end
 
@@ -133,7 +133,7 @@ local PosRowNumTab = {};
 	end
 	
 	if getn(PosRowNumTab) >= 1 then
-		tinsert(strSay,"Täa ®é Npc \n");
+		tinsert(strSay,"Npc coordinates \n");
 	else
 		--²éÕÒº¬ÓĞÃû×Ö¹Ø¼ü×ÖÈËÃû
 		for i=1,strlen(nNpcName) do
@@ -177,7 +177,7 @@ local PosRowNumTab = {};
 			nNum = nNum - 4;
 			tinsert(strSay,"Trang tr­íc/#SearchNpcName(\""..nNpcName.."\","..nNum..")");
 		end
-		tinsert(strSay,"Rêi khái/main");
+		tinsert(strSay,"Leave/main");
 		SelectSay(strSay)
 		return
 	else	
@@ -199,7 +199,7 @@ local PosRowNumTab = {};
 			nNum = nNum + 4;
 		end
 		tinsert(strSay,"Trang kÕ/#SearchNpcName(\""..nNpcName.."\","..nNum..")");	
-		tinsert(strSay,"Rêi khái/main");
+		tinsert(strSay,"Leave/main");
 		SelectSay(strSay)
 		return
 	end
@@ -239,9 +239,9 @@ local nMapID = GetWorldPos();
 		end
 		if getn(PosRowNumTab) - nNum < nNum - 1 then
 			nNum = nNum - 4;
-			tinsert(strSay,"Trang tr­íc/#ShowMapNpcPos("..nNum..")");
+			tinsert(strSay,"Previous page/#ShowMapNpcPos("..nNum..")");
 		end
-		tinsert(strSay,"Rêi khái/main");
+		tinsert(strSay,"Leave/main");
 		SelectSay(strSay)
 	else
 		tinsert(strSay,"Täa ®é Npc ë khu vùc nµy \n \n");
@@ -257,13 +257,13 @@ local nMapID = GetWorldPos();
 		end
 		if nNum >= 5 then
 			nNum = nNum - 4;
-			tinsert(strSay,"Trang tr­íc/#ShowMapNpcPos("..nNum..")");
+			tinsert(strSay,"Previous page/#ShowMapNpcPos("..nNum..")");
 			nNum = nNum + 8;
 		else
 			nNum = nNum + 4;
 		end
-		tinsert(strSay,"Trang kÕ/#ShowMapNpcPos("..nNum..")");
-		tinsert(strSay,"Rêi khái/main");
+		tinsert(strSay,"Next page/#ShowMapNpcPos("..nNum..")");
+		tinsert(strSay,"Leave/main");
 		SelectSay(strSay)
 	end
 end
@@ -289,7 +289,7 @@ function Timechaxun()
 	local sTimeLeft = "";
 	local nHour = tonumber(date("%H"))
 	local nMin = tonumber(date("%M"));
-	sTimeLeft = nHour.." giê "..nMin.." Phót "
+	sTimeLeft = nHour.." hours"..nMin.." minutes"
 	Talk(1,"main","Thêi gian hiÖn t¹i <color=yellow>"..sTimeLeft.."<color>. C¸c vŞ ®¹i hiÖp nhí n¾m b¾t thêi gian!");
 end;
 
@@ -319,7 +319,7 @@ end;
 function xuanzewugongdengji()
 		Say("\n Muèn sö dông vâ c«ng kh¸c, ph¶i qua thao t¸c sau. \n Tr­íc tiªn nhÊn chiªu thøc m«n ph¸i hoÆc F5. \n Sau ®ã chän vâ c«ng chñ ®éng (vâ c«ng bŞ ®éng kh«ng thÓ chän ®¼ng cÊp) sÏ hiÖn giao diÖn chän vâ c«ng. \n Cuèi cïng chän kü n¨ng thİch hîp, nhÊn phİm t¾t sè lµ ®­îc.",
 		1,
-		"Trang kÕ/xuanzewugongdengji2")
+		"Next page/xuanzewugongdengji2")
 end
 
 function xuanzewugongdengji2()
@@ -333,7 +333,7 @@ end;
 function bianjikuaijie()
 		Say("\n Thanh phİm t¾t sè gåm 4 tæ cho ng­êi ch¬i sö dông \n NhÊn mòi tªn bªn ph¶i thanh phİm t¾t sè sÏ thÊy ®­îc giao diÖn S¾p xÕp, b¹n cã thÓ ®­a vâ c«ng, trang bŞ, mËt tŞch, ®¹o cô vµo thanh phİm t¾t. \n S¾p xÕp xong thanh phİm t¾t bªn ph¶i cã h×nh khãa mÆc ®Şnh, khãa l¹i lµ kh«ng thÓ thay ®æi. \nTa cã thÓ dïng mòi tªn lªn xuèng thay ®æi thanh phİm t¾t, hoÆc dïng dÊu ~.",
 		1,
-		"Trang kÕ/bianjikuaijie2")
+		"Next page/bianjikuaijie2")
 end
 		
 function bianjikuaijie2()		
@@ -349,10 +349,10 @@ function Mijishuoming()		--ÃØ¼®ËµÃ÷
 			7,
 		"MËt tŞch dïng ®Ó lµm g×?/mijizuoyong",
 		"§Ó t¨ng c­êng vâ c«ng nªn dïng mËt tŞch g×?/jinengqianghua",
-		"Ph­¬ng thøc tu luyÖn./xiuweishuoming",		
+		"Methods of cultivation./xiuweishuoming",		
 		"Ta dïng bao nhiªu quyÕt yÕu, mËt tŞch ®©y?/qitashuoming",
 		"Lµm c¸ch nµo ®Ó häc mËt tŞch?/mijixiulian",		
-		"Sao ph©n biÖt mËt tŞch?/haohuaipanduan",	
+		"How do I tell manuals apart?/haohuaipanduan",	
 		"Kh«ng cÇn ®©u!/main")	
 end
 
@@ -363,7 +363,7 @@ end;
 function jinengqianghua()
 		Say("\n Mçi mËt tŞch cã 4 gi¸ trŞ ph©n biÖt Thªm hÖ ®¸nh chñ ®éng ngo¹i c«ng; Thªm hÖ ®¸nh chñ ®éng néi c«ng; Thªm ®¸nh hç trî; Thªm phßng thñ. \n Mçi quyÕt yÕu t­¬ng øng víi 1 vâ c«ng vµ mang 1 trong 4 lo¹i trªn. Khi g¾n quyÕt yÕu vµo mËt tŞch sÏ c¨n cø trŞ sè vµ lo¹i h×nh tõ ®ã céng thªm cho vâ c«ng. \n NhÊn chuét ph¶i lªn quyÕt yÕu ®Ó g¾n vµo mËt tŞch. ",
 		1,
-		"Trang kÕ/xiuweishuoming2")
+		"Next page/xiuweishuoming2")
 end
 
 function jinengqianghua2()
@@ -381,7 +381,7 @@ end;
 function mijixiulian()
 		Say("\n Tr­íc tiªn trang bŞ mét quyÓn mËt tŞch, nhÊn nót chiªu thøc m«n ph¸i hoÆc F5 më giao diÔn vâ c«ng, sau ®ã nhÊn nót ph©n trang. NhÊn tiÕp tu luyÖn nhËp trŞ tu luyÒn cÇn tèn, x¸c ®Şnh ®Ó luyÖn mËt tŞch. \n \n Thao t¸c: \n NhÊn F5 më giao diÖn vâ c«ng - nhÊn ph©n trang mËt tŞch - nhÊn tu luyÖn - nhËp sè nhÊn *§ång ı* lµ ®­îc.",	
 		1,
-		"Trang kÕ/mijixiulian2")
+		"Next page/mijixiulian2")
 end
 
 function mijixiulian2()
@@ -408,13 +408,13 @@ end
 function mapkaiqi2()		--µØÍ¼¿ªÆô²éÑ¯
 	Say("Ng­¬i kh«ng vµo ®­îc n¬i nµo?",
 			8,
-		"§µo Hoa ®¶o ë ngoµi biÓn./taohuadao",
+		"Peach Blossom Island out at sea./taohuadao",
 		"Thanh Khª ®éng ë Long TuyÒn Th«n./qingxidong",
 		"L­ìng Thñy ®éng ë Vò Di s¬n./liangshuidong",		
 		"Thiªn TÇm th¸p ë §¹i Lı./qianxunta",
 		"T©y Song B¶n N¹p ë phİa nam §iÓm Th­¬ng s¬n./xishuangbanna",		
 		"Long Nh·n ®éng ë §iÓm Th­¬ng s¬n./longyandong",
-		"Trang tr­íc./mapkaiqi",				
+		"Previous page./mapkaiqi",				
 		"Ta kh«ng cã b¶n ®å ®Ó vµo trong./main")	
 end
 

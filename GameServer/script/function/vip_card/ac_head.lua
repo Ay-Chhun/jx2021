@@ -42,8 +42,8 @@ function handle_on_item_talk_jndsj(nIndex)--½õÄÒ´óÊÂ¼þ¶Ô»°
 	ac_MainDialog(nIndex)
 end
 t_isolate_user_batch_watch_list = {--{szEventId, {event_para...}, pfn_elem_handler(tEvent, data, para), {task_name, nAwardPoint, MaxUseCount}}
-	{"event_player_login", {}, 								handle_elem,	{"§¨ng nhËp trß ch¬i", 1},  },
-	{"event_player_daily_online_minute", {60}, 				handle_elem,	{"Online 60 phót", 5},  },
+	{"event_player_login", {}, 								handle_elem,	{"Log in to the game", 1},  },
+	{"event_player_daily_online_minute", {60}, 				handle_elem,	{"Online for 60 minutes", 5},  },
 	{"event_mission_stage_finish", {"liangshan", 4}, 		handle_elem,	{"Hoµn thµnh ¶i 4 L­¬ng S¬n B¹c", 6},  },
 	{"event_mission_stage_finish", {"liangshan", 8}, 		handle_elem,	{"Hoµn thµnh ¶i 8 L­¬ng S¬n B¹c", 15},  },
 	{"event_mission_stage_finish", {"wanjianzhong", 4}, 	handle_elem,	{"Hoµn thµnh ¶i 4 V¹n KiÕm Gia", 6},  },
@@ -108,10 +108,10 @@ AC_DAILY_AWARD = {
 AC_MONTH_AWARD = {
 	--{¹±Ï×Öµ£¬ËµÃ÷ÄÚÈÝ£¬µÀ¾ß»òº¯Êý×Ö·û´®£¬ÊýÁ¿£¬¿Õ¼ä}
 	{1400, "ThiÕt tinh cÊp 4", {2, 1, 30612}, 20, 1},
-	{2100, "Hu©n ch­¬ng anh hïng", {2, 1, 30499}, 100, 1},
+	{2100, "Hero's Medal", {2, 1, 30499}, 100, 1},
 	{2800, "Qu©n C«ng Huy Hoµng", {2, 1, 9977}, 4, 1},
 	{3600, "b¸nh Ýt B¸c B¶o", {2, 1, 1125}, 20, 1},
-	{4800, "Tinh Hoa UÈn Linh CÊp 6", {2, 1, 30668}, 3, 1},
+	{4800, "Spirit Essence Gathering Level 6", {2, 1, 30668}, 3, 1},
 	{5600, "B¶o Th¹ch cÊp 3,4,5", "ac_Gem345()", 3, 3},
 };
 
@@ -310,7 +310,7 @@ function ac_MainDialog(nIndex)
 		tinsert(tSay,	"Xem nhiÖm vô hµng ngµy/ac_DailyTaskList");
 		tinsert(tSay,	"PhÇn th­ëng ®iÓm cèng hiÕn ngµy/ac_DailyAward");
 		tinsert(tSay,	"PhÇn th­ëng ®iÓm cèng hiÕn th¸ng/ac_MonthAward");
-		tinsert(tSay,	"TiÖm Ng©n PhiÕu/ac_IBShop");
+		tinsert(tSay,	"Bank Note Shop/ac_IBShop");
 	end
 	tinsert(tSay, "\nT«i chØ xem xem th«i/nothing");
 	Say(msg, getn(tSay), tSay);
@@ -328,8 +328,8 @@ function ac_DailyTaskList()
 			format("%s (%d ®iÓm cèng hiÕn) (%s)", AC_TASK_LIST[i][1], AC_TASK_LIST[i][2], szResult[ac_GetEventTag(i) + 1]),
 			 "ac_DailyTaskList"});
 	end
-	tinsert(tSay.sel, {"\n Ph¶n håi", "ac_MainDialog"});
-	tinsert(tSay.sel, {"Ra khái", "nothing"});
+	tinsert(tSay.sel, {"\n Feedback", "ac_MainDialog"});
+	tinsert(tSay.sel, {"Exit", "nothing"});
 	temp_Talk(tSay);
 end
 
@@ -347,8 +347,8 @@ function ac_DailyAward()
 				AC_DAILY_AWARD[i][2], AC_DAILY_AWARD[i][3], AC_DAILY_AWARD[i][4], AC_DAILY_AWARD[i][1]),
 			 format("#ac_GetDailyAward(%d)", i)});
 	end
-	tinsert(tSay.sel, {"\n Ph¶n håi", "ac_MainDialog"});
-	tinsert(tSay.sel, {"Ra khái", "nothing"});
+	tinsert(tSay.sel, {"\n Feedback", "ac_MainDialog"});
+	tinsert(tSay.sel, {"Exit", "nothing"});
 	temp_Talk(tSay);
 end
 
@@ -364,8 +364,8 @@ function ac_MonthAward()
 				AC_MONTH_AWARD[i][2], AC_MONTH_AWARD[i][4], AC_MONTH_AWARD[i][1], szResult[ac_GetMonthTag(i) + 1]),
 			 format("#ac_GetMonthAward(%d)", i)});
 	end
-	tinsert(tSay.sel, {"\n Ph¶n håi", "ac_MainDialog"});
-	tinsert(tSay.sel, {"Ra khái", "nothing"});
+	tinsert(tSay.sel, {"\n Feedback", "ac_MainDialog"});
+	tinsert(tSay.sel, {"Exit", "nothing"});
 	temp_Talk(tSay);
 end
 

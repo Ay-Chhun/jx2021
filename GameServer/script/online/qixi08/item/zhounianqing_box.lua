@@ -27,7 +27,7 @@ function OnUse()
 				};
 	if nDate <= g_nAwardEndDate then
 		tinsert(strtab,1,"Ta kh«ng dïng bÊt cø vËt phÈm nµo ®Ó më r­¬ng (chØ nhËn ®­îc phÇn th­ëng kinh nghiÖm)/ask_give_exp");
-		Say(g_szBoxInfo.."Tr­íc "..nYear3.."niªn"..nMonth3.."NguyÖt"..nDay3.." më r­¬ng, tû lÖ cã ®­îc cùc phÈm cßn tïy thuéc vµo ng­¬i dïng vËt g× ®Ó më r­¬ng.",getn(strtab),strtab);
+		Say(g_szBoxInfo.."Before"..nYear3.."year"..nMonth3.."NguyÖt"..nDay3.." më r­¬ng, tû lÖ cã ®­îc cùc phÈm cßn tïy thuéc vµo ng­¬i dïng vËt g× ®Ó më r­¬ng.",getn(strtab),strtab);
 	else
 		Say(g_szBoxInfo.."Thêi gian ho¹t ®éng ®· hÕt, hÖ thèng sÏ kh«ng thu l¹i r­¬ng. NÕu b¹n kh«ng cã ch×a khãa, ®Ó kh«ng mÊt thêi gian cña m×nh, cã thÓ t×m bÊt kú npc mua b¸n nµo ®ã ®Ó b¸n.",getn(strtab),strtab);
 	end
@@ -77,7 +77,7 @@ function ask_open_box(nType,nTbIdx)
 			Say(g_szBoxInfo.."B¹n x¸c nhËn dïng "..tItemName[nType+6][1].." më r­¬ng ®Ó cã "..tGiveNameIB[nTbIdx].." chø? H·y chän mµu ngùa.",
 				4,
 				"B¹ch NghÜa (tr¾ng)/#ask_choose_horse("..nType..","..nTbIdx..",1)",
-				"HiÖp Dùc (®en)/#ask_choose_horse("..nType..","..nTbIdx..",2)",
+				"Hero Wing (black)/#ask_choose_horse("..nType..","..nTbIdx..",2)",
 				"Ta chän nhÇm råi./#use_key_open("..nType..")",
 				"Sau nµy h½n më/nothing")		
 		end
@@ -101,7 +101,7 @@ end
 function ask_choose_horse(nType,nTbIdx,nChoose)
 	Say(g_szBoxInfo.."B¹n x¸c nhËn dïng "..tItemName[nType+6][1].." më r­¬ng ®Ó cã "..tItemName[nChoose][1].."?",
 		3,
-		"§­îc/#confirm_open_box("..nType..","..nTbIdx..","..nChoose..")",
+		"Yes/#confirm_open_box("..nType..","..nTbIdx..","..nChoose..")",
 		"Ta chän nhÇm råi./#ask_open_box("..nType..","..nTbIdx..")",
 		"Sau nµy h½n më/nothing")
 end
@@ -130,54 +130,54 @@ function confirm_open_box(nType,nTbIdx,nChoose)
 				nAddFlag = AddItem(tItemName[nChoose][2],tItemName[nChoose][3],tItemName[nChoose][4],1,1,-1,-1,-1,-1,-1,-1);
 				Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tItemName[nChoose][1]);
 				if nAddFlag == 1 then
-					Msg2Global("§¹i hiÖp"..GetName().."Sö dông "..tItemName[nType+6][1].."Më"..tItemName[6][1].."NhËn ®­îc"..tItemName[nChoose][1]);
-					WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Më"..tItemName[6][1].."NhËn ®­îc"..tItemName[nChoose][1].." thµnh c«ng ");
+					Msg2Global("§¹i hiÖp"..GetName().."Sö dông "..tItemName[nType+6][1].."Open"..tItemName[6][1].."Received"..tItemName[nChoose][1]);
+					WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Open"..tItemName[6][1].."Received"..tItemName[nChoose][1].." thµnh c«ng ");
 				else
-					WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Më"..tItemName[6][1].."NhËn ®­îc"..tItemName[nChoose][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
+					WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Open"..tItemName[6][1].."Received"..tItemName[nChoose][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
 				end				
 			elseif nTbIdx == 2 then
 				local nRandMiji = random(1,getn(tGaojiMiji[nRoute]));
 				nAddFlag = AddItem(tGaojiMiji[nRoute][nRandMiji][2],tGaojiMiji[nRoute][nRandMiji][3],tGaojiMiji[nRoute][nRandMiji][4],1);
 				Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tGaojiMiji[nRoute][nRandMiji][1]);
 				if nAddFlag == 1 then
-					Msg2Global("§¹i hiÖp"..GetName().."Sö dông "..tItemName[nType+6][1].."Më"..tItemName[6][1].."NhËn ®­îc"..tGaojiMiji[nRoute][nRandMiji][1]);
-					WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Më"..tItemName[6][1].."NhËn ®­îc"..tGaojiMiji[nRoute][nRandMiji][1].." thµnh c«ng ");
+					Msg2Global("§¹i hiÖp"..GetName().."Sö dông "..tItemName[nType+6][1].."Open"..tItemName[6][1].."Received"..tGaojiMiji[nRoute][nRandMiji][1]);
+					WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Open"..tItemName[6][1].."Received"..tGaojiMiji[nRoute][nRandMiji][1].." thµnh c«ng ");
 				else
-					WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Më"..tItemName[6][1].."NhËn ®­îc"..tGaojiMiji[nRoute][nRandMiji][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
+					WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Open"..tItemName[6][1].."Received"..tGaojiMiji[nRoute][nRandMiji][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
 				end				
 			elseif nTbIdx == 3 then
 				SetTask(TSK_AOYUN_YI_EXP,1);
 				ModifyExp(100000000);
 				Msg2Player("Chóc mõng b¹n ®· nhËn ®­îc 100 triÖu kinh nghiÖm");
-				Msg2Global("§¹i hiÖp"..GetName().."Sö dông "..tItemName[nType+6][1].."Më"..tItemName[6][1].." nhËn ®­îc 100 triÖu kinh nghiÖm.");
-				WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Dïng thÎ"..tItemName[nType+6][1].."Më r­¬ng nhËn ®­îc 100 triÖu kinh nghiÖm.");
+				Msg2Global("§¹i hiÖp"..GetName().."Sö dông "..tItemName[nType+6][1].."Open"..tItemName[6][1].." nhËn ®­îc 100 triÖu kinh nghiÖm.");
+				WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Use card"..tItemName[nType+6][1].."Më r­¬ng nhËn ®­îc 100 triÖu kinh nghiÖm.");
 			elseif nTbIdx == 4 then
 				nAddFlag = AddItem(tItemName[5][2],tItemName[5][3],tItemName[5][4],1);
 				Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tItemName[5][1]);
 				if nAddFlag == 1 then
-					Msg2Global("§¹i hiÖp"..GetName().."Sö dông "..tItemName[nType+6][1].."Më"..tItemName[6][1].."NhËn ®­îc"..tItemName[5][1]);
-					WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Më"..tItemName[6][1].."NhËn ®­îc"..tItemName[5][1].." thµnh c«ng ");
+					Msg2Global("§¹i hiÖp"..GetName().."Sö dông "..tItemName[nType+6][1].."Open"..tItemName[6][1].."Received"..tItemName[5][1]);
+					WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Open"..tItemName[6][1].."Received"..tItemName[5][1].." thµnh c«ng ");
 				else
-					WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Më"..tItemName[6][1].."NhËn ®­îc"..tItemName[5][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
+					WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Open"..tItemName[6][1].."Received"..tItemName[5][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
 				end					
 			elseif nTbIdx == 5 then
 				if IB_VERSION == 1 then
 					nAddFlag = AddItem(tItemName[12][2],tItemName[12][3],tItemName[12][4],1);
 					Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tItemName[12][1]);	
 					if nAddFlag == 1 then
-						Msg2Global("§¹i hiÖp"..GetName().."Sö dông "..tItemName[nType+6][1].."Më"..tItemName[6][1].."NhËn ®­îc"..tItemName[12][1]);
-						WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Më"..tItemName[6][1].."NhËn ®­îc"..tItemName[12][1].." thµnh c«ng ");
+						Msg2Global("§¹i hiÖp"..GetName().."Sö dông "..tItemName[nType+6][1].."Open"..tItemName[6][1].."Received"..tItemName[12][1]);
+						WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Open"..tItemName[6][1].."Received"..tItemName[12][1].." thµnh c«ng ");
 					else
-						WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Më"..tItemName[6][1].."NhËn ®­îc"..tItemName[12][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
+						WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Open"..tItemName[6][1].."Received"..tItemName[12][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
 					end															
 				else
 					nAddFlag = AddItem(tItemName[13][2],tItemName[13][3],tItemName[13][4],1);
 					Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tItemName[13][1]);	
 					if nAddFlag == 1 then
-						Msg2Global("§¹i hiÖp"..GetName().."Sö dông "..tItemName[nType+6][1].."Më"..tItemName[6][1].."NhËn ®­îc"..tItemName[13][1]);
-						WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Më"..tItemName[6][1].."NhËn ®­îc"..tItemName[13][1].." thµnh c«ng ");
+						Msg2Global("§¹i hiÖp"..GetName().."Sö dông "..tItemName[nType+6][1].."Open"..tItemName[6][1].."Received"..tItemName[13][1]);
+						WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Open"..tItemName[6][1].."Received"..tItemName[13][1].." thµnh c«ng ");
 					else
-						WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Më"..tItemName[6][1].."NhËn ®­îc"..tItemName[13][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
+						WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Open"..tItemName[6][1].."Received"..tItemName[13][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
 					end										
 				end
 			elseif nTbIdx == 6 then
@@ -188,17 +188,17 @@ function confirm_open_box(nType,nTbIdx,nChoose)
 					nAddFlag = 2;
 				end
 				if nAddFlag == 2 then
-					Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tItemName[16][1].." vµ"..tItemName[17][1]);
-					Msg2Global("§¹i hiÖp"..GetName().."Sö dông "..tItemName[nType+6][1].."B¾t ®Çu"..tItemName[6][1].."NhËn ®­îc"..tItemName[16][1].." vµ"..tItemName[17][1]);
-					WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."B¾t ®Çu"..tItemName[6][1].."NhËn ®­îc"..tItemName[16][1].." vµ"..tItemName[17][1]);
+					Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tItemName[16][1].." and"..tItemName[17][1]);
+					Msg2Global("§¹i hiÖp"..GetName().."Sö dông "..tItemName[nType+6][1].."B¾t ®Çu"..tItemName[6][1].."Received"..tItemName[16][1].." and"..tItemName[17][1]);
+					WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."B¾t ®Çu"..tItemName[6][1].."Received"..tItemName[16][1].." and"..tItemName[17][1]);
 				else
-					WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."B¾t ®Çu"..tItemName[6][1].."NhËn ®­îc"..tItemName[16][1].." vµ"..tItemName[17][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
+					WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."B¾t ®Çu"..tItemName[6][1].."Received"..tItemName[16][1].." and"..tItemName[17][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
 				end				
 			end
 		else
 			AddItem(tBoxGiveItem[IB_VERSION][nType][2],tBoxGiveItem[IB_VERSION][nType][3],tBoxGiveItem[IB_VERSION][nType][4],tBoxGiveItem[IB_VERSION][nType][5]);
 			Msg2Player("B¹n nhËn ®­îc "..tBoxGiveItem[IB_VERSION][nType][1]..tBoxGiveItem[IB_VERSION][nType][5]..".");
-			WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Më"..tItemName[6][1].."NhËn ®­îc"..tBoxGiveItem[IB_VERSION][nType][1]..tBoxGiveItem[IB_VERSION][nType][5]..".");
+			WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Sö dông "..tItemName[nType+6][1].."Open"..tItemName[6][1].."Received"..tBoxGiveItem[IB_VERSION][nType][1]..tBoxGiveItem[IB_VERSION][nType][5]..".");
 		end
 	end
 end
@@ -214,7 +214,7 @@ function ask_give_exp()
 	Say(g_szBoxInfo.."B¹n kh«ng dïng ch×a khãa më r­¬ng, nªn chØ nhËn ®­îc <color=yellow>"..nExp.."<color> kinh nghiÖm, b¹n x¸c nhËn muèn më r­¬ng chø? <color=red>PhÇn th­ëng kinh nghiÖm nµy, mçi ng­êi nhiÒu nhÊt cã thÓ nhËn "..g_nBoxNum.." lÇn, hiÖn giê b¹n ®· nhËn "..nExpNum.." lÇn.<color>",
 			3,
 			"§­îc, ta muèn ®æi kinh nghiÖm/give_exp_num",
-			"Kh«ng, ta nhÇm!/OnUse",
+			"No, I made a mistake!/OnUse",
 			"Sau nµy h½n më/nothing");
 end
 
@@ -248,7 +248,7 @@ end
 function use_manykey_open()
 	Say(g_szBoxInfo.."B¹n chän dïng 6 ch×a khãa vµng ®Ó më r­¬ng, b¹n sÏ nhËn ®­îc 1 <color=yellow>Thiªn Qu¸i Th¹ch<color>, b¹n ch¾c ch¾n muèn më chø?",
 			3,
-			"§­îc/confirm_give_stone",
+			"Yes/confirm_give_stone",
 			"Ta chän nhÇm råi./OnUse",
 			"Sau nµy h½n më/nothing")
 end
@@ -265,10 +265,10 @@ function confirm_give_stone()
 		local nAddFlag = AddItem(tItemName[5][2],tItemName[5][3],tItemName[5][4],1);
 		if nAddFlag == 1 then
 			Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 "..tItemName[5][1]);
-			Msg2Global("§¹i hiÖp"..GetName().." dïng 6 "..tItemName[9][1].."B¾t ®Çu"..tItemName[6][1].." ®­îc 1 "..tItemName[5][1]);
-			WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().." dïng 6 "..tItemName[9][1].."B¾t ®Çu"..tItemName[6][1].." ®­îc 1 "..tItemName[5][1]);
+			Msg2Global("§¹i hiÖp"..GetName().." dïng 6 "..tItemName[9][1].."B¾t ®Çu"..tItemName[6][1].." received 1"..tItemName[5][1]);
+			WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().." dïng 6 "..tItemName[9][1].."B¾t ®Çu"..tItemName[6][1].." received 1"..tItemName[5][1]);
 		else
-			WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().." dïng 6 "..tItemName[9][1].."B¾t ®Çu"..tItemName[6][1].." ®­îc 1 "..tItemName[5][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
+			WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().." dïng 6 "..tItemName[9][1].."B¾t ®Çu"..tItemName[6][1].." received 1"..tItemName[5][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
 		end
 	end
 end
@@ -284,7 +284,7 @@ end
 function use_manykey_6()
 	Say(g_szBoxInfo.."B¹n chän dïng 6 ch×a khãa vµng më r­¬ng, sÏ nhËn ®­îc <color=yellow>Ngùa di chuyÓn 120%, ®é bÒn 200 ®iÓm (D­¬ng M«n ®­îc chiÕn m· di chuyÓn 35%, ®é bÒn 1000 ®iÓm)<color>, b¹n ch¾c ch¾n muèn më chø?",
 			3,
-			"§­îc/choose_give_horse",
+			"Yes/choose_give_horse",
 			"Ta chän nhÇm råi./OnUse",
 			"Sau nµy h½n më/nothing")		
 end
@@ -302,7 +302,7 @@ function choose_give_horse()
 		Say(g_szBoxInfo.."B¹n x¸c nhËn dïng 6 "..tItemName[9][1].." më r­¬ng ®Ó ®­îc ngùa di chuyÓn 120% chø? H·y chän mµu cho ngùa.",
 			4,
 			"B¹ch NghÜa (tr¾ng)/#ask_give_horse(1)",
-			"HiÖp Dùc (®en)/#ask_give_horse(2)",
+			"Hero Wing (black)/#ask_give_horse(2)",
 			"Ta chän nhÇm råi./OnUse",
 			"Sau nµy h½n më/nothing")		
 	end	
@@ -311,7 +311,7 @@ end
 function ask_give_horse(nType)
 	Say(g_szBoxInfo.."B¹n x¸c nhËn dïng 6 "..tItemName[9][1].." më r­¬ng ®Ó cã "..tItemName[nType][1].."?",
 			3,
-			"§­îc/#confirm_give_horse("..nType..")",
+			"Yes/#confirm_give_horse("..nType..")",
 			"Ta chän nhÇm råi./choose_give_horse",
 			"Sau nµy h½n më/nothing")
 end
@@ -328,10 +328,10 @@ function confirm_give_horse(nType)
 		local nAddFlag = AddItem(tItemName[nType][2],tItemName[nType][3],tItemName[nType][4],1,1,-1,-1,-1,-1,-1,-1);
 		if nAddFlag == 1 then
 			Msg2Player("Chóc mõng b¹n nhËn ®­îc 1  "..tItemName[nType][1]);
-			Msg2Global("§¹i hiÖp"..GetName().." dïng 6 "..tItemName[9][1].."B¾t ®Çu"..tItemName[6][1].."NhËn ®­îc 1 "..tItemName[nType][1]);
-			WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().." dïng 6 "..tItemName[9][1].."B¾t ®Çu"..tItemName[6][1].."NhËn ®­îc 1 "..tItemName[nType][1]);
+			Msg2Global("§¹i hiÖp"..GetName().." dïng 6 "..tItemName[9][1].."B¾t ®Çu"..tItemName[6][1].."Received 1"..tItemName[nType][1]);
+			WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().." dïng 6 "..tItemName[9][1].."B¾t ®Çu"..tItemName[6][1].."Received 1"..tItemName[nType][1]);
 		else
-			WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().." dïng 6 "..tItemName[9][1].."B¾t ®Çu"..tItemName[6][1].."NhËn ®­îc 1 "..tItemName[nType][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
+			WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().." dïng 6 "..tItemName[9][1].."B¾t ®Çu"..tItemName[6][1].."Received 1"..tItemName[nType][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
 		end
 	end	
 end
@@ -339,7 +339,7 @@ end
 function use_manykey_10()
 	Say(g_szBoxInfo.."B¹n ®· chän dïng 10 Ch×a khãa vµng kû niÖm ®Ó më b¶o r­¬ng vµ sÏ nhËn ®­îc <color=yellow>Huy Hoµng Chi Thñy vµ Vinh Dù Chi Thñy<color>, muèn më kh«ng?",
 			3,
-			"§­îc/confirm_give_ring",
+			"Yes/confirm_give_ring",
 			"Ta chän nhÇm råi./OnUse",
 			"Sau nµy h½n më/nothing")	
 end
@@ -361,11 +361,11 @@ function confirm_give_ring()
 			nAddFlag = 2;
 		end
 		if nAddFlag == 2 then
-			Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tItemName[16][1].." vµ"..tItemName[17][1]);
-			Msg2Global("§¹i hiÖp"..GetName().."Dïng 10 "..tItemName[9][1].."B¾t ®Çu"..tItemName[6][1].."NhËn ®­îc"..tItemName[16][1].." vµ"..tItemName[17][1]);
-			WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Dïng 10 "..tItemName[9][1].."B¾t ®Çu"..tItemName[6][1].."NhËn ®­îc"..tItemName[16][1].." vµ"..tItemName[17][1]);
+			Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tItemName[16][1].." and"..tItemName[17][1]);
+			Msg2Global("§¹i hiÖp"..GetName().."Use 10"..tItemName[9][1].."B¾t ®Çu"..tItemName[6][1].."Received"..tItemName[16][1].." and"..tItemName[17][1]);
+			WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Use 10"..tItemName[9][1].."B¾t ®Çu"..tItemName[6][1].."Received"..tItemName[16][1].." and"..tItemName[17][1]);
 		else
-			WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Dïng 10 "..tItemName[9][1].."B¾t ®Çu"..tItemName[6][1].."NhËn ®­îc"..tItemName[16][1].." vµ"..tItemName[17][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
+			WriteLog("[Ho¹t ®éng Kû niÖm 20 n¨m]: Ng­êi ch¬i "..GetName().."Use 10"..tItemName[9][1].."B¾t ®Çu"..tItemName[6][1].."Received"..tItemName[16][1].." and"..tItemName[17][1].." thÊt b¹i, ký hiÖu:"..nAddFlag);
 		end							
 	end
 end

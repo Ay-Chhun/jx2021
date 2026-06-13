@@ -5,7 +5,7 @@ function OnUse(nItemIdx)
 		return 0;
 	end;
 	local selTab = {
-				"§­îc/#set_up_fireworks("..nItemIdx..")",
+				"Confirm/#set_up_fireworks("..nItemIdx..")",
 				"§Ó ta nghÜ l¹i/nothing",
 				}
 	Say("B¹n muèn ®èt ph¸o hoa ë ®©y kh«ng?",getn(selTab),selTab);

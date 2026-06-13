@@ -6,7 +6,7 @@ PROMOTION_EVERYDAY = "Khuyen Mai Moi Ngay"
 
 tb_Saleoff =
 {
-	[1] = {"baothienthach","Hßa ThÞ BÝch"},
+	[1] = {"baothienthach","Heshi Jade"},
 }
 
 proday =
@@ -77,7 +77,7 @@ function main()
 	local szSayHead = "Ch­¬ng tr×nh khuyÕn m·i gi¸ rÎ, vËt phÈm ®ang gi¶m gi¸ <color=green>Hßa ThÞ BÝch<color> gi¸ <color=yellow>500 VËt phÈm Xu (h¹n sö dông 7 ngµy)<color> ."
 	local nDate = tonumber(date("%Y%m%d"))
 	if nDate >= 20120425 and nDate <=20120502 then
-		tinsert(tbSayDialog, "Mua Hßa ThÞ BÝch /get_selloff")
+		tinsert(tbSayDialog, "Buy He Shi Bi /get_selloff")
 		tinsert(tbSayDialog, "Xem sè l­îng cßn l¹i trong ngµy /get_infor")
 	end
 	tinsert(tbSayDialog, "Ta chØ ghÐ ngang /do_nothing")
@@ -93,9 +93,9 @@ function get_selloff()
 		return
 	end
 	local tbSayDialog = {};
-	tinsert(tbSayDialog, "§ång ý /confirm_buy")
+	tinsert(tbSayDialog, "Agree /confirm_buy")
 	tinsert(tbSayDialog, "Ta chØ ghÐ ngang /do_nothing")	
-	Say("Ch­¬ng tr×nh khuyÕn m·i gi¸ rÎ", getn(tbSayDialog), tbSayDialog);
+	Say("Cheap promotion program", getn(tbSayDialog), tbSayDialog);
 end
 function get_infor()
 	proday:load()
@@ -121,7 +121,7 @@ function confirm_buy()
 	
 	if nTime < (GetGlbValue(GLB_TASK_PROMOTION) + 6) then
 		local nTimeRemain = (GetGlbValue(GLB_TASK_PROMOTION) + 6) - GetTime()
-		Talk(1,"","NhiÒu ng­êi mua qu¸, cho ta nghØ mÖt mét tÝ. H·y quay l¹i sau "..nTimeRemain.." gi©y n÷a !!!")
+		Talk(1,"","NhiÒu ng­êi mua qu¸, cho ta nghØ mÖt mét tÝ. H·y quay l¹i sau "..nTimeRemain.." more seconds !!!")
 		return
 	end
 	---------------------------------
@@ -146,7 +146,7 @@ function confirm_buy()
 	proday:register()
 	if DelItem(2, 1, 30230, 500) == 1  then
 --		gf_WriteLogEx("THAM GIA KHUYEN MAI", "mua thµnh c«ng")
-		gf_AddItemEx2({2, 1, 1001, 1}, "Hoa Thi Bich", PROMOTION_EVERYDAY, "mua Hßa ThÞ BÝch", 7*24*60*60)
+		gf_AddItemEx2({2, 1, 1001, 1}, "Hoa Thi Bich", PROMOTION_EVERYDAY, "Buy Huo Shi Bi", 7*24*60*60)
 		Talk(1,"","C¸c h¹ ®· mua thµnh c«ng 1 Hßa ThÞ BÝch")
 		Msg2Player("C¸c h¹ ®· mua thµnh c«ng 1 Hßa ThÞ BÝch")
 	--	AddGlobalNews("Chóc mõng ®¹i hiÖp <color=yellow>"..GetName().."<color> ®· mua thµnh c«ng 1 Bao Thiªn Th¹ch Tinh Th¹ch víi gi¸ rÎ.")

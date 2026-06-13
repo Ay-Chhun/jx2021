@@ -12,7 +12,7 @@ function DayMatch:addPlayer()
 			return 0;
 		end
 		if GetCaptainName() ~= GetName() then
-			Talk(1, "", "CÇn ®éi tr­ëng thao t¸c");
+			Talk(1, "", "The team leader must perform the action");
 			return 0;
 		end
 		local bAllow = 1;

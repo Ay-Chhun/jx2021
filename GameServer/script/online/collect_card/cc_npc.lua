@@ -5,8 +5,8 @@ CC_TITLE = format("M«n ph¸i míi ®· s¾p ra m¾t råi, c¸c ch­ vÞ ®¹i hiÖp ®· lùa ch
 
 CC_MAIN_DIALOG = {
 	"Giíi thiÖu ho¹t ®éng/cc_introduce",	
-	"KiÕn thøc vÊn ®¸p/cc_knowledge",
-	"Giao nép ThÎ Tù/cc_reveive_award",
+	"Knowledge Q&A/cc_knowledge",
+	"Submit Word Card/cc_reveive_award",
 }
 
 function cc_introduce()
@@ -17,7 +17,7 @@ function cc_introduce()
 		{"Chñng lo¹i vµ nguån gèc ThÎ Tù", "cc_introduce_card"},
 		{"T¸c dông ThÎ Tù", "cc_card_uesd"},
 		{"Khiªu chiÕn BOSS hoang d·", "cc_fight_boss"},
-		{"\n rót lui","nothing"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -29,7 +29,7 @@ function cc_introduce_card()
 	tbSay.msg = CC_NPC..strTitle..strInfo;
 	tbSay.sel = {
 		{"Trë l¹i trang tr­íc", "cc_introduce"},
-		{"\n rót lui","nothing"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -41,7 +41,7 @@ function cc_card_uesd()
 	tbSay.msg = CC_NPC..strTitle..strInfo;
 	tbSay.sel = {
 		{"Trë l¹i trang tr­íc", "cc_introduce"},
-		{"\n rót lui","nothing"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -53,7 +53,7 @@ function cc_fight_boss()
 	tbSay.msg = CC_NPC..strTitle..strInfo;
 	tbSay.sel = {
 		{"Trë l¹i trang tr­íc", "cc_introduce"},
-		{"\n rót lui","nothing"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -64,10 +64,10 @@ function cc_knowledge()
 	local tbSay = {};
 	tbSay.msg = CC_NPC..strTitle;
 	tbSay.sel = {
-		{"Quy t¾c ®¸p ¸n", "cc_knowledge_info"},
+		{"Answer Rules", "cc_knowledge_info"},
 		{"PhÇn th­ëng ®¸p ¸n", "cc_knowledge_award"},
-		{"B¾t ®Çu ®¸p ¸n", "cc_knowledge_start"},
-		{"\n rót lui","nothing"},
+		{"Start Answering", "cc_knowledge_start"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -79,7 +79,7 @@ function cc_knowledge_info()
 	tbSay.msg = CC_NPC..strTitle..strInfo;
 	tbSay.sel = {
 		{"Trë l¹i trang tr­íc", "cc_knowledge"},
-		{"\n rót lui","nothing"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -91,7 +91,7 @@ function cc_knowledge_award()
 	tbSay.msg = CC_NPC..strTitle..strInfo;
 	tbSay.sel = {
 		{"Trë l¹i trang tr­íc", "cc_knowledge"},
-		{"\n rót lui","nothing"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -108,7 +108,7 @@ function cc_reveive_award()
 		--{"ÉÏ½»À×¼À¿¨Áì½±", "cc_reveive_award_1"},
 		{"Giao nép ThÎ L«i TÕ + ThÎ L¹c Hoa QuyÕt", "cc_reveive_award_2"},
 		{"Giao nép ThÎ L«i TÕ + ThÎ Linh Miªu VËn ", "cc_reveive_award_3"},
-		{"\n rót lui","nothing"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);	
 end

@@ -92,12 +92,12 @@ tbJZMY = {
 --	szNpc_neiyuanzongguan = "ÄÚÔº×Ü¹Ü",
 --	szNpc_zhanglao = "²Ø½£³¤ÀÏ",
 --	szNpc_xiaojie = "²Ø½£Ð¡½ã",
-	szNpc_jiangbiehe = "Giang BiÖt H¹c",
+	szNpc_jiangbiehe = "Jiang Biehe",
 	--szNpc_yeziqiu = "Ò¶×ÓÇð",
 	szNpc_renwoxing = "NhËm Ng· Hµnh",
 	szNpc_renyingying = "NhËm Doanh Doanh",
 
-	szNpc_tongling = "Thèng lÜnh t­îng binh m·",
+	szNpc_tongling = "Terracotta commander",
 
 	szNpc_jiguanzhu = "C¬ Quan Bµn Long Trô",
 
@@ -125,7 +125,7 @@ firePhases = gf_CopyInherit(phaseBase,firePhases)
 tNpcCfg = {
 	[1] = {
 --		wrx = {"ÎâÈÊÐÓ","ÕóÁé","\\settings\\static_script\\missions\\cangjianshanzhuang\\wrx_npc.lua",nil, CampPlayer,0},
-    	jtyl = {"V¹n KiÕm Giang BiÖt H¹c","Giang BiÖt H¹c",thisFile,nil,CampPlayer,0},
+    	jtyl = {"V¹n KiÕm Giang BiÖt H¹c","Jiang Biehe",thisFile,nil,CampPlayer,0},
     	qrs = {"V¹n KiÕm NhËm Doanh Doanh", "NhËm Doanh Doanh", thisFile, nil, CampPlayer, 0},
     	lf = {"V¹n KiÕm NhËm Ng· Hµnh", "NhËm Ng· Hµnh", nil, nil, CampPlayer, 0},
 --    	--yzq = {"Ò¶×ÓÇð½£Ú£", "Ò¶×ÓÇð", thisFile, nil, CampPlayer, 0},
@@ -152,7 +152,7 @@ tNpcCfg = {
     	fish1_1 = {"V¹n KiÕm Binh M· Dòng", "Binh M· Dòng", thisFile,nil,CampEnemy,0},
     	fish1_2 = {"V¹n KiÕm Binh M· Dòng X¹ Thñ", "X¹ thñ Binh M· Dòng", thisFile,nil,CampEnemy,0},
     	fish1_3 = {"V¹n KiÕm Binh M· Dòng X¹ Thñ", "Binh M· B¸ch Phu Tr­ëng", thisFile,nil,CampEnemy,0},
-    	boss1 = {"V¹n KiÕm Binh M· Thèng LÜnh","Thèng lÜnh t­îng binh m·", thisFile, nil, CampEnemy, 0},--
+    	boss1 = {"V¹n KiÕm Binh M· Thèng LÜnh","Terracotta commander", thisFile, nil, CampEnemy, 0},--
     	boss1_1 = {"V¹n KiÕm Thèng LÜnh ph©n th©n","Thèng LÜnh T­îng (Ph©n th©n)", nil, 30, CampEnemy, 0},--
     	
     	fish2_1 = {"Th¹ch Nh©n Quü Khæi Lçi", "Th¹ch Nh©n Quü Khæi Lçi", thisFile,nil,CampEnemy,0},
@@ -164,7 +164,7 @@ tNpcCfg = {
 	},
 	[2] = {
 --		wrx = {"ÎâÈÊÐÓ","ÕóÁé","\\settings\\static_script\\missions\\cangjianshanzhuang\\wrx_npc.lua",nil, CampPlayer,0},
-    	jtyl = {"V¹n KiÕm Giang BiÖt H¹c","Giang BiÖt H¹c",thisFile,nil,CampPlayer,0},
+    	jtyl = {"V¹n KiÕm Giang BiÖt H¹c","Jiang Biehe",thisFile,nil,CampPlayer,0},
     	qrs = {"V¹n KiÕm NhËm Doanh Doanh", "NhËm Doanh Doanh", thisFile, nil, CampPlayer, 0},
     	lf = {"V¹n KiÕm NhËm Ng· Hµnh", "NhËm Ng· Hµnh", nil, nil, CampPlayer, 0},
 --    	--yzq = {"Ò¶×ÓÇð½£Ú£", "Ò¶×ÓÇð", thisFile, nil, CampPlayer, 0},
@@ -229,10 +229,10 @@ tNpcs = {
 	qlfy = {"Long Trô", "Thanh Long Phong Ên", nil, nil, CampEnemy, 0},
 	hffy = {"Ph­îng Trô", "Háa Ph­îng Phong Ên", nil, nil, CampEnemy, 0},
 	bhfy = {"Hæ Trô", "B¹ch Hæ Phong Ên", nil, nil, CampEnemy, 0},
-	yl = {"pozhenying", "¦ng Linh", nil, nil, CampPlayer, 0},
+	yl = {"pozhenying", "Eagle Spirit", nil, nil, CampPlayer, 0},
 	ll = {"pozhenlong", "Long Linh", nil, nil, CampPlayer, 0},
-	fl = {"pozhenfeng", "Ph­îng Linh", nil, nil, CampPlayer, 0},
-	hl = {"pozhenhu", "Hæ Linh", nil, nil, CampPlayer, 0},
+	fl = {"pozhenfeng", "Phoenix Spirit", nil, nil, CampPlayer, 0},
+	hl = {"pozhenhu", "Tiger Spirit", nil, nil, CampPlayer, 0},
 
 --	boss1 = {"Íò½£±øÂíÙ¸Í³Áì","±øÂíÙ¸Í³Áì", thisFile, nil, CampEnemy, 0},
 --	boss2 = {"»ú¹ØÅÌÁúÖù","»ú¹ØÅÌÁúÖù", thisFile, nil, CampEnemy, 0},
@@ -294,7 +294,7 @@ tFildPos = {
 };
 
 tRealGod	= {
-	tInfo	= {"T¨ng c­êng n¨ng lùc ", 5, "Duy tr× %d phót"},
+	tInfo	= {"T¨ng c­êng n¨ng lùc ", 5, "Lasts %d minutes"},
 	tBuff	= {
 		[2] = {200,4,0,0,0,4},
 		[3] = {100,0,0,4,0,4},
@@ -592,7 +592,7 @@ function ttd_passStage(nStage,strBossName)
 	--¸øÏä×Ó
 	local nNpcIndex = 0
 	if nStage == 4 then
-		nNpcIndex = CreateNpc("jinbaoxiang",format("Kim R­¬ng"),m,1699,3163);
+		nNpcIndex = CreateNpc("jinbaoxiang",format("Gold Chest"),m,1699,3163);
 		SetNpcScript(nNpcIndex,"\\settings\\static_script\\missions\\cangjianshanzhuang\\head.lua");
 	else
 		create_box_tong(m,1699,3163,nCurStage)
@@ -708,7 +708,7 @@ function ttd_askClose()
 	Say("Cã rêi khái ¶i kh«ng? ",
 		2,
 		"\nX¸c nhËn/ttd_confirmClose",
-		"\nKÕt thóc ®èi tho¹i/nothing")
+		"\nEnd conversation/nothing")
 end
 
 function ttd_confirmClose()
@@ -816,14 +816,14 @@ end
 
 function ttd_AddItemMail(sItemIds, strName, nRoom, nWeight, szTitle)
 	if type(sItemIds) ~= "table" then
-		WriteLog(format("[%s] [AddItemEx Tham sè sai!] [Role:%s (acc:%s)] [Item:%s]",
+		WriteLog(format("[%s] [AddItemEx wrong parameter!] [Role:%s (acc:%s)] [Item:%s]",
 			strLog, GetName(), GetAccount(), strName));
 		return 0;
 	end
 	local nCount = sItemIds[4];
 	local nAmg = (nCount and 3) or 4;
 	if getn(sItemIds) < nAmg then
-		WriteLog(format("[%s] [AddItemEx Tham sè sai!] [Role:%s (acc:%s)] [Item:%s]",
+		WriteLog(format("[%s] [AddItemEx wrong parameter!] [Role:%s (acc:%s)] [Item:%s]",
 			strLog, GetName(), GetAccount(), strName));
 		return 0;
 	end
@@ -846,7 +846,7 @@ function ttd_AddItemMail(sItemIds, strName, nRoom, nWeight, szTitle)
 			WriteLog(format("[%s] [AddItemEx:nhËn vËt phÈm] [Role:%s (acc:%s)] [Item:%s (%d,%d,%d,%d)]",
 				strLog or "", GetName(),GetAccount(),strName,sItemIds[1],sItemIds[2],sItemIds[3],nCount));
 		elseif nRet == 2 then
-			Msg2Player("C¸c h¹ ®· r¬i["..strName.."]x"..nCount);
+			Msg2Player("You dropped["..strName.."]x"..nCount);
 			WriteLog(format("[%s] [AddItemEx:®¸nh r¬i phÇn th­ëng] [Role:%s (acc:%s)] [Item:%s (%d,%d,%d,%d)]",
 				strLog, GetName(),GetAccount(),strName,sItemIds[1],sItemIds[2],sItemIds[3],nCount));
 		end

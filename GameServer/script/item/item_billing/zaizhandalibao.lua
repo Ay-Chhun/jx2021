@@ -2,8 +2,8 @@ Include("\\script\\lib\\globalfunctions.lua");
 function OnUse(nItemIdx)
 	if gf_CheckPlayerRoute() == 1 then
 		local selTab = {
-					format("§ång ý/#use_yes(%d)",nItemIdx),
-					"Hñy bá/nothing",
+					format("Agree/#use_yes(%d)",nItemIdx),
+					"Cancel/nothing",
 					}
 		Say("B¹n muèn më T¸i chiÕn giang hå-®¹i lÔ bao?",getn(selTab),selTab);
 	else

@@ -9,7 +9,7 @@ function Award_Daily_Menu()
 	tinsert(tbSay,"NhËn nhiÖm vô h»ng ngµy/STVNdailymission")
 	tinsert(tbSay,"Xem t×nh h×nh nhiÖm vô h»ng ngµy/STVN_DailyMissionView")
 	tinsert(tbSay,"NhËn th­ëng nhiÖm vô h»ng ngµy/Award_Daily")
-	tinsert(tbSay,"Tho¸t/gf_DoNothing")
+	tinsert(tbSay,"Exit/gf_DoNothing")
 	Say(szNpcName.."NÕu hoµn thµnh tÊt c¶ c¸c thö th¸ch mçi ngµy cña ta, ta sÏ cã phÇn th­ëng cho c¸c h¹.",getn(tbSay),tbSay)
 end
 
@@ -47,7 +47,7 @@ function menu_award()
 	tinsert(tbSayDialog,"NhËn th­ëng chuyÓn sinh 5, ®¼ng cÊp 98/#Level_Award(598)")
 	tinsert(tbSayDialog,"NhËn th­ëng chuyÓn sinh 5, ®¼ng cÊp 99/#Level_Award(599)")
 	tinsert(tbSayDialog,"Trang sau/menu_award2")
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/dialog_over"	)
+	tinsert(tbSayDialog,"End conversation/dialog_over"	)
 	Say(szSayHead, getn(tbSayDialog), tbSayDialog);
 end
 
@@ -62,7 +62,7 @@ function menu_award2()
 	tinsert(tbSayDialog,"NhËn th­ëng Phôc sinh, ®¼ng cÊp 95/#Level_Award(695)")
 	tinsert(tbSayDialog,"NhËn th­ëng Phôc sinh, ®¼ng cÊp 96/#Level_Award(696)")
 	tinsert(tbSayDialog,"Quay l¹i/menu_award")
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/dialog_over"	)
+	tinsert(tbSayDialog,"End conversation/dialog_over"	)
 	Say(szSayHead, getn(tbSayDialog), tbSayDialog);
 end
 
@@ -79,7 +79,7 @@ function menu_point()
 	tinsert(tbSayDialog,"NhËn 10 ®iÓm tÝch cùc (tiªu hao 50.000.000 ®iÓm kinh nghiÖm + 30 xu + 99 vµng)/#get_point(10)")
 	
 	tinsert(tbSayDialog,"Xem ®iÓm tÝch lòy/show_point")
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/dialog_over"	)
+	tinsert(tbSayDialog,"End conversation/dialog_over"	)
 	Say(szSayHead, getn(tbSayDialog), tbSayDialog);
 end
 
@@ -88,7 +88,7 @@ function show_point()
 	local nPoint = mod(GetTask(TSK_SINHTUVONGA1),1000)
 	local nTodayPoint = mod(floor(GetTask(TSK_SINHTUVONGA1)/1000),100)
 	local szText = "§iÓm tÝch cùc hiÖn t¹i: <color=yellow>"..nPoint.."<color>\n"
-	szText = szText .. "§iÓm tÝch cùc ®· nép h«m nay: <color=yellow>"..nTodayPoint.."<color>\n"
+	szText = szText .. "Activity points submitted today: <color=yellow>"..nTodayPoint.."<color>\n"
 	Talk(1,"",szText)
 end
 
@@ -192,7 +192,7 @@ function Award_Daily()
 	STVN_SetDailyAwardStatus(3)
 	MatTichCaoCap70(2)
 	local nAwardRand = mod(random(1,1000),20)
-	gf_AddItemEx2({2,1,(30164+nAwardRand),19}, "Tr¸i c©y", szLogTitle, szLogAction)
+	gf_AddItemEx2({2,1,(30164+nAwardRand),19}, "Fruit", szLogTitle, szLogAction)
 
 	--3 diem tich luy
 	local nCurrentPoint = VNG_GetTaskPos(TSK_SINHTUVONGA1,3,1)
@@ -205,7 +205,7 @@ function Award_Daily()
 	Msg2Player("§iÓm tÝch cùc t¨ng "..nPoint)
 	gf_WriteLogEx(szLogTitle, szLogAction, 1, nPoint.." ®iÓm tÝch cùc")
 	
-	local tbAward = {item = {{gdp={2,95,208,1,4}, name = "Tô NghÜa LÖnh"},{gdp={2,1,30409,1,4}, name = "Th«ng Thiªn LÖnh"}}} 
+	local tbAward = {item = {{gdp={2,95,208,1,4}, name = "Token of Righteousness"},{gdp={2,1,30409,1,4}, name = "Th«ng Thiªn LÖnh"}}} 
 	LIB_Award:Award(tbAward)
 	Talk(1,"","NhËn hç trî mçi ngµy thµnh c«ng.")
 end
@@ -249,14 +249,14 @@ function Level_Award(nIndex)
 		 	nPetLinhluc = 100, 
 		 	nChankhi = 30000,
 	}
-	local tbAward94 = {item = {{gdp={0,112,78,1,1}, name = "L¨ng Ba Vi Bé"}}, 
+	local tbAward94 = {item = {{gdp={0,112,78,1,1}, name = "Lingbo Microstep"}}, 
 			nChankhi = 30000,
 			nPetExp = 300,
 			nPetLinhluc = 200, 
 			fn = "Trao1NguLongTuongQuan_TrangBi(10,103)",
 	}
 	local tbAward95 = {item = {
-			{gdp={0,112,78,1,1}, name = "L¨ng Ba Vi Bé"}},
+			{gdp={0,112,78,1,1}, name = "Lingbo Microstep"}},
 			nPetExp = 300,
 			nPetLinhluc = 200,
 			nChankhi = 30000,
@@ -491,17 +491,17 @@ end
 
 function MatTichCaoCap70(nSoluong)
 	local tbMatTich = {
-		[2] = {item={{gdp={0,107,204, nSoluong}, name ="Kim Cang B¸t Nh· Ch©n QuyÓn"}}},
-		[4] = {item={{gdp={0,107,205, nSoluong}, name ="TiÒm Long Tóc DiÖt Ch©n QuyÓn"}}},
-		[3] = {item={{gdp={0,107,206, nSoluong}, name ="V« TrÇn Bå §Ò Ch©n QuyÓn"}}},
+		[2] = {item={{gdp={0,107,204, nSoluong}, name ="Vajra Prajna True Scroll"}}},
+		[4] = {item={{gdp={0,107,205, nSoluong}, name ="Hidden Dragon Annihilation True Manual"}}},
+		[3] = {item={{gdp={0,107,206, nSoluong}, name ="Dustless Bodhi True Manual"}}},
 		[6] = {item={{gdp={0,107,207, nSoluong}, name ="Thiªn La Liªn Ch©u Ch©n QuyÓn"}}},
-		[8] = {item={{gdp={0,107,208, nSoluong}, name ="Nh­ ý Kim §Ønh Ch©n QuyÓn"}}},
-		[9] = {item={{gdp={0,107,209, nSoluong}, name ="BÝch H¶i TuyÖt ¢m Ch©n QuyÓn"}}},
-		[11] = {item={{gdp={0,107,210, nSoluong}, name ="Hçn §én TrÊn Nh¹c Ch©n QuyÓn"}}},
+		[8] = {item={{gdp={0,107,208, nSoluong}, name ="Wishful Golden Top True Manual"}}},
+		[9] = {item={{gdp={0,107,209, nSoluong}, name ="Azure Sea Silent Sound True Manual"}}},
+		[11] = {item={{gdp={0,107,210, nSoluong}, name ="Chaos Town Mountain True Manual"}}},
 		[12] = {item={{gdp={0,107,211, nSoluong}, name ="Quú Thiªn Du Long Ch©n QuyÓn"}}},
 		[14] = {item={{gdp={0,107,212, nSoluong}, name ="HuyÒn ¶nh Mª T«ng Ch©n QuyÓn"}}},
-		[15] = {item={{gdp={0,107,213, nSoluong}, name ="Qu©n Tö §íi Phong Ch©n QuyÓn"}}},
-		[17] = {item={{gdp={0,107,214, nSoluong}, name ="TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn"}}},
+		[15] = {item={{gdp={0,107,213, nSoluong}, name ="Gentleman Welcomes the Wind True Manual"}}},
+		[17] = {item={{gdp={0,107,214, nSoluong}, name ="Town Army Flying Dragon Spear True Manual"}}},
 		[18] = {item={{gdp={0,107,215, nSoluong}, name ="Xuyªn V©n L¹c Hång Ch©n QuyÓn"}}},
 		[20] = {item={{gdp={0,107,216, nSoluong}, name ="HuyÒn Minh Phong Ma Ch©n QuyÓn"}}},
 		[21] = {item={{gdp={0,107,217, nSoluong}, name ="Linh Cæ HuyÒn Tµ Ch©n QuyÓn"}}},
@@ -1460,7 +1460,7 @@ end
 
 function STVN_Active()
 	if STVN_GetStatus() == 3 then
-		Talk(1,"",szNpcName.."NhiÖm vô Sinh Tö V« Ng· ®· hÕt h¹n.")
+		Talk(1,"",szNpcName.."The Life-Death Selfless quest has expired.")
 		return 0
 	end
 	if STVN_GetStatus() == 2 then
@@ -1647,7 +1647,7 @@ function SinhTu_select_translife(nType, nPhe)
 				P = P + GetBody() - 1
 				BigDelItem(G,D,P,BigGetItemCount(G,D,P))
 			end
-			local tbVanSu = {"V¨n Sö ngo¹i trang",0,108,570,188}
+			local tbVanSu = {"Scholar Outfit",0,108,570,188}
 			local nPVanSu = tbVanSu[4]  + GetBody() - 1
 			for i = 0, 2 do
 				BigDelItem(0, 108 + i, nPVanSu, BigGetItemCount(0, 108 + i, nPVanSu))	
@@ -1672,7 +1672,7 @@ function SinhTu_select_translife(nType, nPhe)
 			end
 			RemoveTitle(tb_translife_tittle[nTransCount][nRoute][2], tb_translife_tittle[nTransCount][nRoute][3])	
 			AddTitle(61,05)
-			local tbVanSu = {"V¨n Sö ngo¹i trang",0,108,570,188}
+			local tbVanSu = {"Scholar Outfit",0,108,570,188}
 			local nPVanSu = tbVanSu[4]  + GetBody() - 1
 			for i = 0, 2 do
 				BigDelItem(0, 108 + i, nPVanSu, BigGetItemCount(0, 108 + i, nPVanSu))	
@@ -1698,7 +1698,7 @@ function SinhTu_select_translife(nType, nPhe)
 			att3 = att3 or 0
 			BigDelItem(G,D,P,BigGetItemCount(G,D,P))
 			BigDelItem(G,D,Pnew,BigGetItemCount(G,D,Pnew))
-			gf_AddItemEx2({G, D, (30000 + GetBody()), nCount,4, lvatt1, att1, lvatt2, att2, lvatt3, att3},"Tø Linh ViÖt Trang","Chuyen Sinh","nhËn ngo¹i trang",120*24*3600,1)
+			gf_AddItemEx2({G, D, (30000 + GetBody()), nCount,4, lvatt1, att1, lvatt2, att2, lvatt3, att3},"Four Spirits Yue Manor","Chuyen Sinh","nhËn ngo¹i trang",120*24*3600,1)
 		end
 		RemoveTitle(tb_translife_tittle[nTransCount-1][nRoute][2], tb_translife_tittle[nTransCount-1][nRoute][3])
 		AddTitle(tb_translife_tittle[nTransCount][nRoute][2], tb_translife_tittle[nTransCount][nRoute][3])

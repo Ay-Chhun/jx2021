@@ -11,7 +11,7 @@ function MS_InitMission()
 	MS_ChangeMSState(MS_STATE_STARTED);
 	local nMSUID = MS_CreateMSUID();	--´´½¨Ò»¸öMissionÎ¨Ò»ID
 	SetMissionV(MV_MISSION_UID,nMSUID);
-	gf_WriteLog(LOG_HEAD,"Mission ®· b¾t ®Çu, MSUID:"..nMSUID);
+	gf_WriteLog(LOG_HEAD,"Mission has started, MSUID:"..nMSUID);
 end;
 --Mission¿ªÊ¼
 function MS_StartMission()
@@ -25,7 +25,7 @@ function MS_EndMission()
 	local nMSUID = GetMissionV(MV_MISSION_UID);
 	mf_DelAllMSPlayer(MISSION_ID,CAMP_ALL);	--´ÓMissionÀïÃæÉ¾³ýËùÓÐµÄÍæ¼Ò
 	mf_ClearMissionData();
-	gf_WriteLog(LOG_HEAD,"Mission ®· kÕt thóc, MSUID:"..nMSUID);
+	gf_WriteLog(LOG_HEAD,"Mission has ended, MSUID:"..nMSUID);
 end;
 --Àë¿ªMission
 function MS_LeaveMission()	
@@ -57,7 +57,7 @@ function MS_ProcessStartedTimer()
 		local nShengDanShuIndex = GetGlbValue(1026);
 		local nMapId, nMapX, nMapY = GetNpcWorldPos(nShengDanShuIndex);
 		for i = 1, 50 do
-      local nNewNpcIndex = CreateNpc("Event gi¸ng sinh VN", "Hép Quµ ThÞnh H¹", nMapId, nMapX + random(-10, 10), nMapY + random(-10, 10));
+      local nNewNpcIndex = CreateNpc("Event gi¸ng sinh VN", "Midsummer Gift Box", nMapId, nMapX + random(-10, 10), nMapY + random(-10, 10));
       SetNpcLifeTime(nNewNpcIndex, 30);
       SetNpcScript(nNewNpcIndex, "\\script\\online\\viet_event\\200912\\3\\npc_shengdanlihe.lua");
 		end

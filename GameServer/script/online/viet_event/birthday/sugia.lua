@@ -2,7 +2,7 @@ Include("\\script\\lib\\globalfunctions.lua")
 
 BIRTHDAY2010_LOG_TITLE = "Sinh Nhat VL2 2010"
 
-szNpcName = "<color=green>Sø Gi¶ Sù KiÖn :<color>"
+szNpcName = "<color=green>Event Envoy :<color>"
 
 function main()
 	local nDate = tonumber(date("%y%m%d"))
@@ -34,13 +34,13 @@ function receive_birthday_award_2010()
 		local nRand = random(1, 10000)
 		if nRand <= 9835 then
 			gf_AddItemEx2({2,1,1009,1}, "Thiªn Th¹ch Tinh Th¹ch", BIRTHDAY2010_LOG_TITLE, "nhËn th­ëng")
-			Msg2SubWorld("Chóc mõng nh©n sÜ "..GetName().." ®· nhËn ®­îc phÇn th­ëng 1 Thiªn Th¹ch Tinh Th¹ch mõng sinh nhËt VLTK II trßn 3 tuæi!")
+			Msg2SubWorld("Congratulations, warrior"..GetName().." ®· nhËn ®­îc phÇn th­ëng 1 Thiªn Th¹ch Tinh Th¹ch mõng sinh nhËt VLTK II trßn 3 tuæi!")
 		elseif nRand <= 9985 then
 			gf_AddItemEx2({2,1,1068,1,4}, "Thiªn Th¹ch Linh Th¹ch", BIRTHDAY2010_LOG_TITLE, "nhËn th­ëng", 7 * 24 * 3600)
-			Msg2SubWorld("Chóc mõng nh©n sÜ "..GetName().." ®· nhËn ®­îc phÇn th­ëng 1Thiªn Th¹ch Linh Th¹ch mõng sinh nhËt VLTK II trßn 3 tuæi!")
+			Msg2SubWorld("Congratulations, warrior"..GetName().." ®· nhËn ®­îc phÇn th­ëng 1Thiªn Th¹ch Linh Th¹ch mõng sinh nhËt VLTK II trßn 3 tuæi!")
 		else
 			gf_AddItemEx2({2,1,1067,1,4}, "§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", BIRTHDAY2010_LOG_TITLE, "nhËn th­ëng", 7 * 24 * 3600)
-			Msg2SubWorld("Chóc mõng nh©n sÜ "..GetName().." ®· nhËn ®­îc phÇn th­ëng 1 §Þnh Hån Thiªn Th¹ch ThÇn Th¹ch mõng sinh nhËt VLTK II trßn 3 tuæi!")
+			Msg2SubWorld("Congratulations, warrior"..GetName().." ®· nhËn ®­îc phÇn th­ëng 1 §Þnh Hån Thiªn Th¹ch ThÇn Th¹ch mõng sinh nhËt VLTK II trßn 3 tuæi!")
 		end
 		AddExtPoint(6, 1)
 		gf_SetTaskBit(TSK_BIRTHDAY_AWARD, 1)

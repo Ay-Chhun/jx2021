@@ -97,13 +97,13 @@ function exchang_chip()
 		gf_AddItemEx2({2,1,30335,1},"T«n", "Ton Su Trong Dao", "nhan Ton")
 	elseif mod(num,4) == 2 then
 		--gf_AddItemEx({2,1,30336,1},"S­",1)
-		gf_AddItemEx2({2,1,30336,1},"S­", "Ton Su Trong Dao", "nhan Su")
+		gf_AddItemEx2({2,1,30336,1},"Teacher", "Ton Su Trong Dao", "nhan Su")
 	elseif mod(num,4) == 3 then
 		--gf_AddItemEx({2,1,30337,1},"Träng",1)
-		gf_AddItemEx2({2,1,30337,1},"Träng", "Ton Su Trong Dao", "nhan Trong")
+		gf_AddItemEx2({2,1,30337,1},"Respect", "Ton Su Trong Dao", "nhan Trong")
 	elseif mod(num,4) == 0 then
 		--gf_AddItemEx({2,1,30338,1},"§¹o",1)
-		gf_AddItemEx2({2,1,30338,1},"§¹o", "Ton Su Trong Dao", "nhan Dao")
+		gf_AddItemEx2({2,1,30338,1},"Way", "Ton Su Trong Dao", "nhan Dao")
 	else
 		WriteLog(VET_201111_TEACHER_DAY_STRING[7])
 	end

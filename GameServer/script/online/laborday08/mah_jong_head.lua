@@ -62,39 +62,39 @@ BAIJU_TOTAL_NUM = 120; --¹Ò°×¾Ô×î¶à¿É»ñµÃÂé½«ÊýÁ¿
 
 --table
 tMahJong = {--Âé½«Ãû id
-	{"NhÊt ®ång",2,0,630},	
-	{"NhÞ ®ång",2,0,631},	
-	{"Tam ®ång",2,0,632},	
-	{"Tø ®ång",2,0,633},	
-	{"Ngò ®ång",2,0,634},	
-	{"Lôc ®ång",2,0,635},	
-	{"ThÊt ®ång",2,0,636},	
-	{"B¸t ®ång",2,0,637},	
+	{"One Copper",2,0,630},	
+	{"Two Copper",2,0,631},	
+	{"Three Copper",2,0,632},	
+	{"Four Copper",2,0,633},	
+	{"Five Copper",2,0,634},	
+	{"Six Copper",2,0,635},	
+	{"Seven Copper",2,0,636},	
+	{"Eight Copper",2,0,637},	
 	{"Cöu ®ång",2,0,638},	
-	{"Mét",2,0,639},	
-	{"NhÞ ®iÒu",2,0,640},	
+	{"One",2,0,639},	
+	{"Two Bars",2,0,640},	
 	{"Ba",2,0,641},	
-	{"Bèn",2,0,642},	
-	{"Ngò ®iÒu",2,0,643},	
-	{"Lôc ®iÒu",2,0,644},	
-	{"ThÊt ®iÒu",2,0,645},	
-	{"B¸t ®iÒu",2,0,646},	
+	{"Four",2,0,642},	
+	{"Five Bars",2,0,643},	
+	{"Six Bars",2,0,644},	
+	{"Seven Bars",2,0,645},	
+	{"Eight Bars",2,0,646},	
 	{"Cöu ®iÒu",2,0,647},	
-	{"NhÊt v¹n",2,0,648},	
-	{"NhÞ v¹n",2,0,649},	
-	{"Tam v¹n",2,0,650},	
-	{"Tø v¹n",2,0,651},	
-	{"Ngò v¹n",2,0,652},	
-	{"Lôc v¹n",2,0,653},	
-	{"ThÊt v¹n",2,0,654},	
-	{"B¸t v¹n",2,0,655},	
+	{"Ten Thousand",2,0,648},	
+	{"Twenty Thousand",2,0,649},	
+	{"Thirty Thousand",2,0,650},	
+	{"Forty Thousand",2,0,651},	
+	{"Fifty Thousand",2,0,652},	
+	{"Sixty Thousand",2,0,653},	
+	{"Seventy Thousand",2,0,654},	
+	{"Eighty Thousand",2,0,655},	
 	{"Cöu v¹n",2,0,656},	
-	{"§«ng phong",2,0,657},	
+	{"East Wind",2,0,657},	
 	{"Nam phong",2,0,658},	
-	{"T©y phong",2,0,659},	
-	{"B¾c phong",2,0,660},	
+	{"West Wind",2,0,659},	
+	{"North Wind",2,0,660},	
 	{"Hång trung",2,0,661},	
-	{"ph¸t tµi",2,0,662},	
+	{"Riches",2,0,662},	
 	{"B¹ch ban",2,0,663}	
 	};
 	
@@ -172,12 +172,12 @@ function laborday08_baoshi_prob(sName)
 	elseif nRand <= 999 then
 		lspf_AddLingShiInBottle(6,1);
 		Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 Linh Th¹ch cÊp 6, ®· nhËp vµo Tô linh ®Ønh.");
-		Msg2Global("Ng­êi ch¬i"..GetName().."Trong cuéc thi ThÇn bµi"..sName.."NhËn ®­îc 1 viªn Linh th¹ch cÊp 6");
+		Msg2Global("Player"..GetName().."Trong cuéc thi ThÇn bµi"..sName.."NhËn ®­îc 1 viªn Linh th¹ch cÊp 6");
 		WriteLog("Ho¹t ®éng quèc tÕ lao ®éng 08: Ng­êi ch¬i"..GetName().."Trong cuéc thi ThÇn bµi"..sName.."NhËn ®­îc 1 viªn Linh th¹ch cÊp 6");		
 	else
 		lspf_AddLingShiInBottle(7,1);
 		Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 Linh Th¹ch cÊp 7, ®· nhËp vµo Tô linh ®Ønh.");		
-		Msg2Global("Ng­êi ch¬i"..GetName().."Trong cuéc thi ThÇn bµi"..sName.."NhËn ®­îc 1 viªn Linh th¹ch cÊp 7");
+		Msg2Global("Player"..GetName().."Trong cuéc thi ThÇn bµi"..sName.."NhËn ®­îc 1 viªn Linh th¹ch cÊp 7");
 		WriteLog("Ho¹t ®éng quèc tÕ lao ®éng 08: Ng­êi ch¬i"..GetName().."Trong cuéc thi ThÇn bµi"..sName.."NhËn ®­îc 1 viªn Linh th¹ch cÊp 7");
 	end
 end

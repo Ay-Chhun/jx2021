@@ -59,8 +59,8 @@ tomb_sweep_2007_start_goodsID = 675
 	task_att_seq_TaskID = 1218
 	Tb_frag = {}
 	Tb_frag[568] = "Gi∏p MÈc d≠¨ng"
-	Tb_frag[569] = " t MÈc ©m"
-	Tb_frag[570] = "B›nh h·a d≠¨ng"
+	Tb_frag[569] = "Yi Wood Yin"
+	Tb_frag[570] = "Bing Fire Yang"
 	Tb_frag[571] = "ßinh H·a ©m"
 	--Ω·ªÈ∂˛∆⁄π÷ŒÔ Ù–‘
 	Monster_attr = {}
@@ -348,14 +348,14 @@ function kotow_tomb_sweep_2007()
 	if Plyaer_level < 40 then
 		Say("Ng≠¨i muËn nhÀn loπi nhi÷m vÙ nµo: ß¨n gi∂n, h¨i kh„?",
 		3,
-		"ß¨n gi∂n/#task_teel_add(2)",
-		"Kh„/#task_teel_add(5)",
+		"Simple/#task_teel_add(2)",
+		"Hard/#task_teel_add(5)",
 		"Sao cÚng Æ≠Óc/#task_teel_add(9)"
 		)
 	elseif Plyaer_level >= 40 and Plyaer_level <= 60 then
 		Say("Ng≠¨i muËn nhÀn loπi nhi÷m vÙ nµo: ß¨n gi∂n, h¨i kh„?",
 		2,
-		"ß¨n gi∂n/#task_teel_add(5)",
+		"Simple/#task_teel_add(5)",
 		"Sao cÚng Æ≠Óc/#task_teel_add(9)"
 		)
 	else
@@ -485,20 +485,20 @@ function kotow_tomb_sweep_2008()
 			Msg2Player("Bπn nhÀn Æ≠Óc "..lvLingShi.."(c p) Linh Thπch!")
 		end--for
 		nTemp = n99times*2
-		Msg2Player("Bπn nhÀn Æ≠Óc Thi™n ThÍi ChÛ Gi∂i "..nTemp.." quy”n!")
+		Msg2Player("Bπn nhÀn Æ≠Óc Thi™n ThÍi ChÛ Gi∂i "..nTemp.." volumes!")
 	end--if_lv_99
 	--‘ˆº”»ŒŒÒæÌ÷·
 	if Player_level < 80 then
 		Say("Ng≠¨i muËn nhÀn loπi nhi÷m vÙ nµo: ß¨n gi∂n, h¨i kh„?",
 		3,
-		"ß¨n gi∂n/#task_teel_add(random(1,3))",
-		"Kh„/#task_teel_add(random(1,6))",
+		"Simple/#task_teel_add(random(1,3))",
+		"Hard/#task_teel_add(random(1,6))",
 		"Sao cÚng Æ≠Óc/#task_teel_add(random(1,10))"
 		)
 	elseif Player_level >= 80 and Player_level <= 90 then
 		Say("Ng≠¨i muËn nhÀn loπi nhi÷m vÙ nµo: ß¨n gi∂n, h¨i kh„?",
 		2,
-		"ß¨n gi∂n/#task_teel_add(random(1,6))",
+		"Simple/#task_teel_add(random(1,6))",
 		"Sao cÚng Æ≠Óc/#task_teel_add(random(1,10))"
 		)
 	else

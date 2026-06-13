@@ -29,12 +29,12 @@ end
 function main()
 	local nNpcIdx = GetTargetNpc();
 	local strtab = {
-	"Kh¾c ch÷ trªn mÆt/#kill(" ..nNpcIdx ..",1)",
-	"C¾t ®øt ngãn tay/#kill(" ..nNpcIdx ..",2)",
-	"BÎ g·y x­¬ng khíp/#kill(" ..nNpcIdx ..",3)",
-	"§¸nh g·y g©n m¹ch/#kill(" ..nNpcIdx ..",4)",
-	"L¨ng tr×/#kill(" ..nNpcIdx ..",5)",
-	"Hñy bá/nothing",
+	"Carve characters on the face/#kill(" ..nNpcIdx ..",1)",
+	"Cut off the finger/#kill(" ..nNpcIdx ..",2)",
+	"Break the bones and joints/#kill(" ..nNpcIdx ..",3)",
+	"Break the tendons and meridians/#kill(" ..nNpcIdx ..",4)",
+	"Slow slicing/#kill(" ..nNpcIdx ..",5)",
+	"Cancel/nothing",
 		}
 	Say("Tï Binh Thiªn ¢m Gi¸o :",
 		getn(strtab),

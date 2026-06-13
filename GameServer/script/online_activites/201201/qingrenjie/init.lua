@@ -14,7 +14,7 @@ function get_award_liangshan_qingrenjie(nNum)
     Talk(1,"","Kh«ng gian hµnh trang kh«ng ®ñ")
 		return 0
   end
-	gf_AddItemEx2({2,1,30357,50},"Qu¶ Ca Cao",EVENT_LOG_TITLE,"L­¬ng S¬n v­ît ¶i nhiÖm vô h»ng ngµy",0,1)
+	gf_AddItemEx2({2,1,30357,50},"Cocoa Fruit",EVENT_LOG_TITLE,"L­¬ng S¬n v­ît ¶i nhiÖm vô h»ng ngµy",0,1)
 end
 --ÁºÉ½¿ªÆô¾ÛÒå±¦Ïä»ñµÃ½±Àø
 function get_award_juyibox_qingrenjie()
@@ -25,7 +25,7 @@ function get_award_juyibox_qingrenjie()
     Talk(1,"","Kh«ng gian hµnh trang kh«ng ®ñ")
 		return 0
   end
-	gf_AddItemEx2({2,1,30357,10},"Qu¶ Ca Cao",EVENT_LOG_TITLE,"L­¬ng S¬n Tô NghÜa B¶o R­¬ng",0,1)
+	gf_AddItemEx2({2,1,30357,10},"Cocoa Fruit",EVENT_LOG_TITLE,"L­¬ng S¬n Tô NghÜa B¶o R­¬ng",0,1)
 end
 
 --²Î¼ÓÒ»³¡ÌìÃÅÕó
@@ -39,13 +39,13 @@ function get_award_tianmenzhen_qingrenjie(nType)
 		return 0
   end
 	if nType == 1 then
-		gf_AddItemEx2({2,1,30357,50},"Qu¶ Ca Cao",EVENT_LOG_TITLE,"Thiªn M«n trËn",0,1)
+		gf_AddItemEx2({2,1,30357,50},"Cocoa Fruit",EVENT_LOG_TITLE,"Thiªn M«n trËn",0,1)
 	elseif nType == 2 then
-		gf_AddItemEx2({2,1,30357,100},"Qu¶ Ca Cao",EVENT_LOG_TITLE,"Thiªn M«n trËn",0,1)
+		gf_AddItemEx2({2,1,30357,100},"Cocoa Fruit",EVENT_LOG_TITLE,"Thiªn M«n trËn",0,1)
 	elseif nType == 3 then
-		gf_AddItemEx2({2,1,30357,300},"Qu¶ Ca Cao",EVENT_LOG_TITLE,"Thiªn M«n trËn",0,1)
+		gf_AddItemEx2({2,1,30357,300},"Cocoa Fruit",EVENT_LOG_TITLE,"Thiªn M«n trËn",0,1)
 	else
-		gf_AddItemEx2({2,1,30357,30},"Qu¶ Ca Cao",EVENT_LOG_TITLE,"Thiªn M«n trËn",0,1)
+		gf_AddItemEx2({2,1,30357,30},"Cocoa Fruit",EVENT_LOG_TITLE,"Thiªn M«n trËn",0,1)
 	end
 end
 

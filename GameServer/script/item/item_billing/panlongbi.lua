@@ -17,7 +17,7 @@ TSK_USE_HSB = 599
 function OnUse()
 	Say("B¹n cã muèn lÊy <color=yellow>Bµn Long bİch<color> ®æi thµnh tiÒn game kh«ng? Cã thÓ ®æi ®­îc <color=yellow>35<color> tiÒn.",
 		2,
-		"§­îc/open_panlongbi",
+		"Confirm/open_panlongbi",
 		"T¹m thêi kh«ng më/cancel_dialog")
 end;
 
@@ -33,7 +33,7 @@ function open_panlongbi()
 	end;
 	local nCurUseTime = GetTask(TSK_USE_PLB);
 	if nCurUseTime >= nLimitTime and nLimitTime ~= 0 then
-		Talk(1,"","Dùa vµo ®¼ng cÊp hiÖn t¹i, h«m nay b¹n chØ cã thÓ dïng <color=yellow>"..nLimitTime.."<color> Bµn Long bİch.");
+		Talk(1,"","Dùa vµo ®¼ng cÊp hiÖn t¹i, h«m nay b¹n chØ cã thÓ dïng <color=yellow>"..nLimitTime.."<color> Coiling Dragon Jade.");
 		return 0;
 	end;
 	if (DelItem(2, 1, 1000, 1) == 1) then
@@ -43,10 +43,10 @@ function open_panlongbi()
 		if nLimitTime == 0 then
 			Say("B¹n nhËn ®­îc <color=yellow>35 tiÒn game<color>!",0);
 		else
-			Say("B¹n nhËn ®­îc <color=yellow>35 tiÒn game<color>! H«m nay b¹n ®· dïng Bµn Long bİch lÇn thø <color=yellow>"..(nCurUseTime+1).."<color>. Dùa vµo ®¼ng cÊp hiÖn t¹i, h«m nay b¹n cã thÓ dïng <color=yellow>"..nLimitTime.."<color> Bµn Long bİch.", 0)
-			Msg2Player("H«m nay b¹n ®øng thø"..(nCurUseTime+1).." lÇn");
+			Say("B¹n nhËn ®­îc <color=yellow>35 tiÒn game<color>! H«m nay b¹n ®· dïng Bµn Long bİch lÇn thø <color=yellow>"..(nCurUseTime+1).."<color>. Dùa vµo ®¼ng cÊp hiÖn t¹i, h«m nay b¹n cã thÓ dïng <color=yellow>"..nLimitTime.."<color> Coiling Dragon Jade.", 0)
+			Msg2Player("Today you rank"..(nCurUseTime+1).." lÇn");
 		end;
-		WriteLog("[Bµn Long bİch]:"..GetName().."H«m ®ã lÇn "..(nCurUseTime+1).." lÇn");
+		WriteLog("[Coiling Dragon Jade]:"..GetName().."H«m ®ã lÇn "..(nCurUseTime+1).." lÇn");
 	else
 		Say("B¹n kh«ng hÒ cã<color=yellow>Bµn long bİch<color>!", 0)
 	end

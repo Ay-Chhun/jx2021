@@ -216,7 +216,7 @@ function _ht_GetRankAward(nCount, sdb)
 			RemoveTitle(69, 2);
 			AddTitle(69, 2);
 			SetTitleTime(69, 2, GetTime() + 7*24*3600 - 40*60);
-			Msg2Player(format("Chóc mõng %s nhËn ®­îc danh hiÖu %q", gf_GetPlayerSexName(), "Bang Héi Vinh Danh"));
+			Msg2Player(format("Chóc mõng %s nhËn ®­îc danh hiÖu %q", gf_GetPlayerSexName(), "Guild Hall of Fame"));
 		end
 	else
 		--°ïÖ÷
@@ -234,7 +234,7 @@ function _ht_GetRankAward(nCount, sdb)
 		gf_SafeSetTaskByte(HT_TASK_1, 4, mod(gf_GetWeekly(), 255) + 1, TASK_ACCESS_CODE_HONOR_TONG);
 		--¸ø½±Àø
 		gf_ModifyExp(tTongInfo[3]*1000000);
-		gf_AddItemEx2({2,1,30760,1,4}, "Vâ L©m TriÖu TËp LÖnh", "Bang Héi Vinh Danh", "Gi¶i th­ëng xÕp h¹ng", 6*24*3600, 1);
+		gf_AddItemEx2({2,1,30760,1,4}, "Wulin Summoning Order", "Guild Hall of Fame", "Gi¶i th­ëng xÕp h¹ng", 6*24*3600, 1);
 		--cdkey»î¶¯
     	gf_TeamOperateEX(function () 
     		SendScript2VM("\\script\\function\\cdkey\\ck_head.lua", "ck_global_set_task_finish(2104)");	
@@ -245,7 +245,7 @@ function _ht_GetRankAward(nCount, sdb)
 			RemoveTitle(69, 1);
 			AddTitle(69, 1);
 			SetTitleTime(69, 1, GetTime() + 7*24*3600 - 40*60);
-			local msg = format("Chóc mõng bang [%s] xÕp h¹ng 1 trong Bang Héi Vinh Danh, bang chñ [%s] vinh dù nhËn ®­îc danh hiÖu %q!", szTongName, GetName(), "Bang Chñ Vinh Dù");
+			local msg = format("Chóc mõng bang [%s] xÕp h¹ng 1 trong Bang Héi Vinh Danh, bang chñ [%s] vinh dù nhËn ®­îc danh hiÖu %q!", szTongName, GetName(), "Honored Guild Leader");
 			Msg2Global(msg);
 			AddLocalNews(msg);
 			Msg2Tong(msg)
@@ -332,7 +332,7 @@ function ht_GetTongChip(nProp, nNum)
 	if random(100) > nProp then
 		return 0;
 	end
-	gf_AddItemEx2({2,1,30588,nNum}, "M¶nh LÖnh Bµi Bang Héi", "Bang Héi Vinh Danh", "TÝnh n¨ng sinh ra", 0, 1);	
+	gf_AddItemEx2({2,1,30588,nNum}, "M¶nh LÖnh Bµi Bang Héi", "Guild Hall of Fame", "TÝnh n¨ng sinh ra", 0, 1);	
 end
 
 --function ht_SignGongcheng()

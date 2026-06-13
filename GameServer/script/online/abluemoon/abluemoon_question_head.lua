@@ -50,20 +50,20 @@ function OQ_Item_Sect()
 	local answer;
 	local temp;
 	if select == 1 then -- 物品&描述
-		riddle = "描述"
-		answer = "物品"
+		riddle = "Description"
+		answer = "Item"
 	elseif select == 2 then -- 诗 上句&下句
-		riddle = "上句"
-		answer = "下句"
+		riddle = "Previous Line"
+		answer = "Next Line"
 	elseif select == 3 then -- 根据NPC名字猜坐标
-		riddle = "NPC名字"
-		answer = "坐标"
+		riddle = "NPC Name"
+		answer = "Coordinates"
 	elseif select == 4 then -- 根据文字猜读音
-		riddle = "文字"
-		answer = "读音"
+		riddle = "Text"
+		answer = "Pronunciation"
 	elseif select == 5 then -- 根据文字猜字义
-		riddle = "文字"
-		answer = "字义"
+		riddle = "Text"
+		answer = "Meaning"
 	end
 	local Quest;		-- 问题
 	local Sels = {};	-- 选择
@@ -96,7 +96,7 @@ function OQ_Item_Sect()
 		Sels[nRow] = Sels[2];
 		Sels[2] = temp;
 	end
-	Sels[1] = "请根据<color=gold>"..riddle.."<color>选择对应的<color=gold>"..answer.."<color>.\n<color=green>"..riddle..":"..Quest.."<color>\n请选择:\n";
+	Sels[1] = "Please according to <color=gold>"..riddle.."<color>select the corresponding <color=gold>"..answer.."<color>.\n<color=green>"..riddle..":"..Quest.."<color>\nPlease select:\n";
 	Sels[6] = nRow;
 	return Sels;
 end
@@ -114,19 +114,19 @@ function OQ_OutSuit()
 	local tSels = {};
 	
 	local nRow = random(2, nMaxRow);
-	tSels[1] = "请从下列选项中选择相配的<color=gold>一套外装<color>\n"
-	local head = tabOQOutSuit:getCell(nRow,"头");
-	local cloth = tabOQOutSuit:getCell(nRow,"身");
-	local shoe = tabOQOutSuit:getCell(nRow,"脚")
+	tSels[1] = "Please choose a matching <color=gold>outfit set<color> from the options below\n"
+	local head = tabOQOutSuit:getCell(nRow,"Head");
+	local cloth = tabOQOutSuit:getCell(nRow,"Body");
+	local shoe = tabOQOutSuit:getCell(nRow,"Feet")
 	tSels[2] = head..","..cloth..","..shoe;
 	local temp = 0;
 	temp = random(2,nMaxRow)
 	if nRow - temp == 0 then		-- 防止取到一样的
 		temp = nMaxRow - temp/2 
 	end
-	tSels[3] = tabOQOutSuit:getCell(temp,"头")..","..cloth..","..shoe;
-	tSels[4] = head..","..tabOQOutSuit:getCell(temp,"身")..","..shoe;
-	tSels[5] = head..","..cloth..","..tabOQOutSuit:getCell(temp,"脚");
+	tSels[3] = tabOQOutSuit:getCell(temp,"Head")..","..cloth..","..shoe;
+	tSels[4] = head..","..tabOQOutSuit:getCell(temp,"Body")..","..shoe;
+	tSels[5] = head..","..cloth..","..tabOQOutSuit:getCell(temp,"Feet");
 	--交换3,4,5选项
 	for i=3,4 do
 		temp = random(3,5)

@@ -63,8 +63,8 @@ function single_man_enter()
 			local nDate = tonumber(date("%y%m%d"));
 			SetTask(KH_QUEST_TSK, floor(GetTask(KH_QUEST_TSK) / 10) * 10)
 			if tonumber(date("%y%m%d")) >= 091106 and tonumber(date("%y%m%d")) <= 091206 then		
-				gf_AddItemEx({2, 1, 30118, 150}, "Hoa Cóc");
-				WriteLogEx("Hoat dong thang 11","S¸t Thñ §­êng",150,"Hoa Cóc");		
+				gf_AddItemEx({2, 1, 30118, 150}, "Chrysanthemum");
+				WriteLogEx("Hoat dong thang 11","S¸t Thñ §­êng",150,"Chrysanthemum");		
 			end
 			if tonumber(date("%y%m%d")) >= 100716 and tonumber(date("%y%m%d")) <= 100815 then
 				Give1stTimeExp()
@@ -199,8 +199,8 @@ function transmit_team()
 		if abs(GetTask(KH_TASK_MSUID) - mf_GetMissionV(MISSION_ID,MV_MISSION_UID,MAP_ID)) > 1 then	--Ö®Ç°Ã»½øÈ¥¹ı\
 			SetTask(KH_QUEST_TSK, floor(GetTask(KH_QUEST_TSK) / 10) * 10)
 			if tonumber(date("%y%m%d")) >= 091106 and tonumber(date("%y%m%d")) <= 091206 then		
-				gf_AddItemEx({2, 1, 30118, 150}, "Hoa Cóc");
-				WriteLogEx("Hoat dong thang 11","S¸t Thñ §­êng",150,"Hoa Cóc");		
+				gf_AddItemEx({2, 1, 30118, 150}, "Chrysanthemum");
+				WriteLogEx("Hoat dong thang 11","S¸t Thñ §­êng",150,"Chrysanthemum");		
 			end
 			if tonumber(date("%y%m%d")) >= 100716 and tonumber(date("%y%m%d")) <= 100815 then
 				Give1stTimeExp()

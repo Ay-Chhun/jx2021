@@ -28,7 +28,7 @@ TaskID_exp_get_date_seq = 1298 --½±ÀøÁìÈ¡ÈÕÆÚĞòÊı
 TaskID_exp_get_times = 1299 --½±ÀøÁìÈ¡´ÎÊı
 Tb_zongzi_use_num = {
 	{"B¸nh İt B¹ch Ngäc",TaskID_baiyu_use_num,Baiyu_use_num_max},
-	{"B¸nh İt Ngù PhÈm",TaskID_yupin_use_num,Yupin_use_num_max},
+	{"Imperial Grade Zongzi",TaskID_yupin_use_num,Yupin_use_num_max},
 }
 --°¬ÏãôÕ×ÓĞÅÏ¢£¨ÊÕ·ÑºÍÃâ·Ñ²»Í¬£©
 Tb_zongzi_08_aixiang = {"50 v¹n ®iÓm søc kháe chuyÓn thµnh kinh nghiÖm",	"NhËn ®­îc 100000 ®iÓm kinh nghiÖm",}
@@ -37,22 +37,22 @@ Tb_zongzi_08_yupin = {"§æi 1 Viªm Hoµng ThiÕt Hån hoÆc 12 viªn Linh th¹ch cÊp 7"
 --ôÕ×ÓĞÅÏ¢
 Tb_zongzi_08 = {
 	--Ãû³Æ-ID×îºóÒ»Î»-ºÏ³É³É¹¦ÂÊ-Íâ×°¼¸ÂÊ-ºÏ³É²ÄÁÏ-ôÕ×ÓÃèÊö-¶ÔÓ¦½±ÀøÃèÊö-Ê¹ÓÃ¶ÔÓ¦º¯Êı--ÊÇ·ñÖ±½ÓÊ¹ÓÃ--Ê¹ÓÃÀäÈ´Ê±¼ä
-	{"B¸nh İt g¹o th¬m",3359,100,	5,		{{3370,1,"§Ëu ®á"},	{3371,1,"G¹o tr¾ng"},			{3369,1,"L¸ gãi b¸nh"},},"Trong vßng 3 phót ngo¹i c«ng t¨ng 5%, s¸t th­¬ng t¨ng 30",						"zongzi_xiangmi",	1,	(3*60*18)},
-	{"b¸nh İt ng¶i h­¬ng",1123,100,	10,	{{3359,1,"B¸nh İt g¹o th¬m"},	{3372,1,"L¸ ng¶i"},			{3369,1,"L¸ gãi b¸nh"},},"PhÇn th­ëng 10 v¹n*b×nh ph­¬ng ®¼ng cÊp/6400 ®iÓm kinh nghiÖm",				"zongzi_aixiang",0,	0},
-	{"B¸nh İt h¹t dÎ",3360,100,	20,	{{1123,1,"b¸nh İt ng¶i h­¬ng"},	{3374,1,"H¹t dÎ"},			{3369,1,"L¸ gãi b¸nh"},},"NgÉu nhiªn nhËn ®­îc 1 vĞ th¸m hiÓm T©y Vùc (4-6 ¶i)",	"zongzi_lizi",			0,	0},
-	{"B¸nh İt ngò h­¬ng",3361,100,	30,	{{3360,1,"B¸nh İt h¹t dÎ"},	{3373,1,"J¨m b«ng"},			{3369,1,"L¸ gãi b¸nh"},},"Trong vßng 10 phót, sinh lùc t¨ng 30%",							"zongzi_wuxiang",	1,	(10*60*18)},
-	{"B¸nh İt PhØ Thóy",3362,50,		50,	{{3361,1,"B¸nh İt ngò h­¬ng"},	{3365,1,"PhØ Thóy"},					{3369,1,"L¸ gãi b¸nh"},},"Trong vßng 3 phót, tÊt c¶ n¨ng lùc t¨ng 20%",					"zongzi_feicui",		1,	(3*60*18)},
-	{"B¸nh İt PhØ Thóy",3362,100,	100,	{{3361,1,"B¸nh İt ngò h­¬ng"},	{3365,3,"PhØ Thóy"},					{3369,1,"L¸ gãi b¸nh"},},"Trong vßng 3 phót, tÊt c¶ n¨ng lùc t¨ng 20%",					"zongzi_feicui",		1,	(3*60*18)},
-	{"B¸nh İt B¹ch Ngäc",3363,25,		100,	{{3362,1,"B¸nh İt PhØ Thóy"},	{3366,1,"B¹ch Ngäc"},					{3369,1,"L¸ gãi b¸nh"},},"NgÉu nhiªn ®æi 2 viªn Linh th¹ch cÊp 7 hoÆc 1 Tµng KiÕm Hoµng Kim trang",	"zongzi_baiyu",		0,	0},
-	{"B¸nh İt B¹ch Ngäc",3363,100,	500,	{{3362,1,"B¸nh İt PhØ Thóy"},	{3366,5,"B¹ch Ngäc"},					{3369,1,"L¸ gãi b¸nh"},},"NgÉu nhiªn ®æi 2 viªn Linh th¹ch cÊp 7 hoÆc 1 Tµng KiÕm Hoµng Kim trang",	"zongzi_baiyu",		0,	0},
-	{"B¸nh İt Ngù PhÈm",3364,26,		500,	{{3363,1,"B¸nh İt B¹ch Ngäc"},	{3367,1,"M¶nh bİ ph­¬ng ngù chÕ"},	{3369,1,"L¸ gãi b¸nh"},},Tb_zongzi_08_yupin[Sever_diff],						"zongzi_yupin",		0,	0},
-	{"B¸nh İt Ngù PhÈm",3364,100,	1000,	{{3363,1,"B¸nh İt B¹ch Ngäc"},	{3367,9,"M¶nh bİ ph­¬ng ngù chÕ"},	{3369,1,"L¸ gãi b¸nh"},},Tb_zongzi_08_yupin[Sever_diff],					"zongzi_yupin",		0,	0},
+	{"Fragrant Rice Zongzi",3359,100,	5,		{{3370,1,"Red Bean"},	{3371,1,"White Rice"},			{3369,1,"Wrapping Leaf"},},"Trong vßng 3 phót ngo¹i c«ng t¨ng 5%, s¸t th­¬ng t¨ng 30",						"zongzi_xiangmi",	1,	(3*60*18)},
+	{"a few wormwood cakes",1123,100,	10,	{{3359,1,"Fragrant Rice Zongzi"},	{3372,1,"Mugwort Leaf"},			{3369,1,"Wrapping Leaf"},},"PhÇn th­ëng 10 v¹n*b×nh ph­¬ng ®¼ng cÊp/6400 ®iÓm kinh nghiÖm",				"zongzi_aixiang",0,	0},
+	{"Chestnut Zongzi",3360,100,	20,	{{1123,1,"a few wormwood cakes"},	{3374,1,"Chestnut"},			{3369,1,"Wrapping Leaf"},},"NgÉu nhiªn nhËn ®­îc 1 vĞ th¸m hiÓm T©y Vùc (4-6 ¶i)",	"zongzi_lizi",			0,	0},
+	{"B¸nh İt ngò h­¬ng",3361,100,	30,	{{3360,1,"Chestnut Zongzi"},	{3373,1,"Cured Ham"},			{3369,1,"Wrapping Leaf"},},"Trong vßng 10 phót, sinh lùc t¨ng 30%",							"zongzi_wuxiang",	1,	(10*60*18)},
+	{"Jadeite Zongzi",3362,50,		50,	{{3361,1,"B¸nh İt ngò h­¬ng"},	{3365,1,"Jadeite"},					{3369,1,"Wrapping Leaf"},},"Trong vßng 3 phót, tÊt c¶ n¨ng lùc t¨ng 20%",					"zongzi_feicui",		1,	(3*60*18)},
+	{"Jadeite Zongzi",3362,100,	100,	{{3361,1,"B¸nh İt ngò h­¬ng"},	{3365,3,"Jadeite"},					{3369,1,"Wrapping Leaf"},},"Trong vßng 3 phót, tÊt c¶ n¨ng lùc t¨ng 20%",					"zongzi_feicui",		1,	(3*60*18)},
+	{"B¸nh İt B¹ch Ngäc",3363,25,		100,	{{3362,1,"Jadeite Zongzi"},	{3366,1,"B¹ch Ngäc"},					{3369,1,"Wrapping Leaf"},},"NgÉu nhiªn ®æi 2 viªn Linh th¹ch cÊp 7 hoÆc 1 Tµng KiÕm Hoµng Kim trang",	"zongzi_baiyu",		0,	0},
+	{"B¸nh İt B¹ch Ngäc",3363,100,	500,	{{3362,1,"Jadeite Zongzi"},	{3366,5,"B¹ch Ngäc"},					{3369,1,"Wrapping Leaf"},},"NgÉu nhiªn ®æi 2 viªn Linh th¹ch cÊp 7 hoÆc 1 Tµng KiÕm Hoµng Kim trang",	"zongzi_baiyu",		0,	0},
+	{"Imperial Grade Zongzi",3364,26,		500,	{{3363,1,"B¸nh İt B¹ch Ngäc"},	{3367,1,"M¶nh bİ ph­¬ng ngù chÕ"},	{3369,1,"Wrapping Leaf"},},Tb_zongzi_08_yupin[Sever_diff],						"zongzi_yupin",		0,	0},
+	{"Imperial Grade Zongzi",3364,100,	1000,	{{3363,1,"B¸nh İt B¹ch Ngäc"},	{3367,9,"M¶nh bİ ph­¬ng ngù chÕ"},	{3369,1,"Wrapping Leaf"},},Tb_zongzi_08_yupin[Sever_diff],					"zongzi_yupin",		0,	0},
 }
 --ÃÅÆ±ĞÅÏ¢
 Tb_nw_tickets = {
 	{40,2,0,1034,"Tİch D­¬ng Tinh Hoa"},
-	{80,2,0,1035,"Ngò Hµnh Kú Phiªn"},
-	{100,2,0,1036,"La bµn"},
+	{80,2,0,1035,"Five Elements Banner"},
+	{100,2,0,1036,"Compass"},
 }
 --°×ÓñôÕ×Ó½±ÀøĞÅÏ¢
 Tb_baiyu_prize = {
@@ -72,7 +72,7 @@ Tb_baiyu_prize = {
 			{0,100,97},
 			{0,100,98},
 		},
-	"Kim Lò Th­êng"
+	"Gold-Inlaid Robe"
 	},
 	{15,
 		{
@@ -90,29 +90,29 @@ Tb_baiyu_prize = {
 --ÓùÆ·ôÕ×Ó½±ÀøĞÅÏ¢
 Tb_yupin_prize = {
 	{2,1,1146,"Viªm Hoµng ThiÕt Hån"},
-	{0,105,15,"Phiªn Vò (vÜnh viÔn)"},
-	{0,105,19,"Siªu Quang (vÜnh viÔn)"},
+	{0,105,15,"Fanyu (permanent)"},
+	{0,105,19,"Superlight (permanent)"},
 	{"12 viªn Linh th¹ch cÊp 7"},
 }
 --Íâ×°ĞÅÏ¢
 Tb_suit_prize = {
 	{
 		{"Nam B¸t B¸t ®Çu_tiªu chuÈn ",0,108,510},
-		{"Nam B¸t B¸t ®Çu_kh«i ng«",0,108,511},
-		{"N÷ B¸t B¸t ®Çu_gîi c¶m",0,108,513},
-		{"N÷ B¸t B¸t ®Çu_kiÒu n÷",0,108,512},
+		{"Male Babi Headwear_heroic",0,108,511},
+		{"Female Babi Headwear_alluring",0,108,513},
+		{"Female Babi Headwear_graceful",0,108,512},
 	},
 	{
 		{"Nam B¸t B¸t y_tiªu chuÈn",0,109,510},
-		{"Nam B¸t B¸t y_kh«i ng«",0,109,511},
-		{"N÷ B¸t B¸t y_gîi c¶m",0,109,513},
-		{"N÷ B¸t B¸t y_kiÒu n÷",0,109,512},
+		{"Male Babi Top_heroic",0,109,511},
+		{"Female Babi Top_alluring",0,109,513},
+		{"Female Babi Top_graceful",0,109,512},
 	},
 	{
 		{"Nam B¸t B¸t khè_tiªu chuÈn ",0,110,510},
-		{"Nam B¸t B¸t khè_kh«i ng«",0,110,511},
-		{"N÷ B¸t B¸t khè_gîi c¶m",0,110,513},
-		{"N÷ B¸t B¸t khè_kiÒu n÷",0,110,512},
+		{"Male Babi Pants_heroic",0,110,511},
+		{"Female Babi Pants_alluring",0,110,513},
+		{"Female Babi Pants_graceful",0,110,512},
 	},
 }
 ----------------¹«¹²º¯ÊıÇø
@@ -150,7 +150,7 @@ function OnUse(goods_index)
 	--Ê¹ÓÃÈ·ÈÏ¶Ô»°Õ¹¿ª
 	Say("<color=green>"..Tb_zongzi_08[goods_diff][1].."<color>: HiÖu qu¶ sö dông <color=yellow>"..Tb_zongzi_08[goods_diff][6].."<color>, b¹n x¸c nhËn muèn sö dông chø?",
 	2,
-	"§æi/#"..Tb_zongzi_08[goods_diff][7].."("..goods_diff..")",
+	"Exchange/#"..Tb_zongzi_08[goods_diff][7].."("..goods_diff..")",
 	"§Ó ta suy nghÜ l¹i/end_dialog"
 	)
 end
@@ -210,7 +210,7 @@ function zongzi_aixiang(goods_diff)
 				else
 					Say("<color=yellow>Nh¾c nhë<color>: <color=yellow>B¸nh İt ng¶i h­¬ng<color> cã thÓ chuyÓn <color=yellow>"..Tb_zongzi_aixong_exp_num[Sever_diff].."<color> ®iÓm søc kháe thµnh kinh nghiÖm, ®iÓm søc kháe hiÖn giê cña b¹n lµ <color=yellow>"..golden_exp.."<color>, b¹n x¸c nhËn muèn sö dông chø?",
 						2,
-						"§æi/#aixiang_exp_chg("..goods_diff..")",
+						"Exchange/#aixiang_exp_chg("..goods_diff..")",
 						"§Ó ta suy nghÜ l¹i/end_dialog"
 					)
 				end
@@ -237,7 +237,7 @@ function zongzi_lizi(goods_diff)
 			if add_flag == 1 then
 				Msg2Player("Chóc mõng b¹n ®· dïng 'B¸nh İt h¹t dÎ' ®æi 1 vĞ vµo 'Cöa ¶i T©y B¾c' sè"..(i+3).." : "..Tb_nw_tickets[i][5].."!")
 			else
-				WriteLog("[TÕt §oan Ngä 08] ng­êi ch¬i	"..GetName().."	T¨ng"..Tb_nw_tickets[i][5].." thÊt b¹i, kı hiÖu:"..add_flag)
+				WriteLog("[TÕt §oan Ngä 08] ng­êi ch¬i	"..GetName().."	Reward"..Tb_nw_tickets[i][5].." thÊt b¹i, kı hiÖu:"..add_flag)
 			end
 			break
 		end
@@ -306,12 +306,12 @@ function laborday08_baoshi_prob()
 	elseif nRand <= 999 then
 		lspf_AddLingShiInBottle(6,1);
 		Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 Linh Th¹ch cÊp 6, ®· nhËp vµo Tô linh ®Ønh.");
-		Msg2Global("Ng­êi ch¬i"..player_name.."NhËn ®­îc 1 viªn Linh th¹ch cÊp 6 trong ho¹t ®éng TÕt §oan Ngä");
+		Msg2Global("Player"..player_name.."NhËn ®­îc 1 viªn Linh th¹ch cÊp 6 trong ho¹t ®éng TÕt §oan Ngä");
 		WriteLog("Ho¹t ®éng quèc tÕ lao ®éng 08: Ng­êi ch¬i"..player_name.."NhËn ®­îc 1 viªn Linh th¹ch cÊp 6 trong ho¹t ®éng TÕt §oan Ngä.");		
 	else
 		lspf_AddLingShiInBottle(7,1);
 		Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 Linh Th¹ch cÊp 7, ®· nhËp vµo Tô linh ®Ønh.");		
-		Msg2Global("Ng­êi ch¬i"..player_name.."NhËn ®­îc 1 viªn Linh th¹ch cÊp 7 trong ho¹t ®éng TÕt §oan Ngä");
+		Msg2Global("Player"..player_name.."NhËn ®­îc 1 viªn Linh th¹ch cÊp 7 trong ho¹t ®éng TÕt §oan Ngä");
 		WriteLog("Ho¹t ®éng quèc tÕ lao ®éng 08: Ng­êi ch¬i"..player_name.."NhËn ®­îc 1 viªn Linh th¹ch cÊp 7 trong ho¹t ®éng TÕt §oan Ngä.");
 	end
 end

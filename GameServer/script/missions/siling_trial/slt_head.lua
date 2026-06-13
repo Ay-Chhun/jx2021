@@ -609,17 +609,17 @@ end
 function slt_intro_npc(npcIndex, nStep)
 	if 0 == nStep then
 		Say(format("<color=green>%s:<color> ThÝ LuyÖn Tø Linh!", SLT_NPC_NAME), 3,
-			"\nMë v­ît ¶i/#slt_StartGame("..npcIndex..")",
-			"\n rêi ¶i/#slt_EndGame("..npcIndex..")",
+			"\nStart Challenge/#slt_StartGame("..npcIndex..")",
+			"\nLeave/#slt_EndGame("..npcIndex..")",
 			"\nT«i chØ xem xem th«i/nothing");
 	elseif nStep >= 1 and nStep < 4 then
 		Say(format("<color=green>%s:<color> ThÝ LuyÖn Tø Linh!", SLT_NPC_NAME), 3,
 			"\nB­íc vµo l­ît tiÕp theo/#slt_NextStep("..npcIndex..")",
-			"\n rêi ¶i/#slt_EndGame("..npcIndex..")",
+			"\nLeave/#slt_EndGame("..npcIndex..")",
 			"\nT«i chØ xem xem th«i/nothing");
 	else
 		Say(format("<color=green>%s:<color> ThÝ LuyÖn Tø Linh!", SLT_NPC_NAME), 2,
-			"\n rêi ¶i/#slt_EndGame("..npcIndex..")",
+			"\nLeave/#slt_EndGame("..npcIndex..")",
 			"\nT«i chØ xem xem th«i/nothing");
 	end
 end
@@ -661,7 +661,7 @@ function slt_yin_box(npcIndex)
 		Say("Më [R­¬ng B¹c] cÇn 2 [Thiªn Kiªu LÖnh] (Ngù C¸c cã b¸n).",
 			2, 
 			"\n x¸c nhËn më/#slt_IamDaye("..npcIndex..")",	
-			"\n hñy më/nothing")
+			"\n cancel opening/nothing")
 			--"\nÉ¾³ý±¦Ïä/#slt_RemoveBox("..npcIndex..")")
 		return
 	else
@@ -699,7 +699,7 @@ function slt_speLoot(npcIdx)
 		return 0;
 	end
 	local tSel = {
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	}
 	local OldPlayerIndex = PlayerIndex;
 	if daye == PlayerIndex then
@@ -797,7 +797,7 @@ function slt_jin_box(npcIndex)
 	--10Ãë½áÊø
 	gf_TeamOperateEX(function ()
 		SetTask(SLT_TASKID_2, SLT_MISSION_STEP_MAX - 3, TASK_ACCESS_CODE_SLT);
-		Msg2Player(format("%d gi©y sau sÏ kÕt thóc ¶i!", 10));
+		Msg2Player(format("The challenge will end in %d seconds!", 10));
 	end);
 end
 
@@ -823,7 +823,7 @@ function slt_jin_box_card(id)
 	else
 		local tItem = MA_GetRequire(id);
 		if DelItem(tItem[1], tItem[2], tItem[3], tItem[4]) ~= 1 then
-			Talk(1, "", "Mang theo trªn ng­êi"..SLT_OPEN_NEED[1].."Kh«ng ®ñ!");
+			Talk(1, "", "Mang theo trªn ng­êi"..SLT_OPEN_NEED[1].."Not enough!");
 			return 0;
 		end
 		--Observer:onEvent(SYSEVENT_GLOBAL_COST_IB, {tItem[1], tItem[2], tItem[3], tItem[4]})

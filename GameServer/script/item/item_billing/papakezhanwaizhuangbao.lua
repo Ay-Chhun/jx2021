@@ -5,9 +5,9 @@
 
 tb_prize = {
 	[1] = {3,0,108,510,"C­íc ®iÕm ®Çu (nam tiªu chuÈn)",0,109,510,"C­íc ®iÕm y (nam tiªu chuÈn)",0,110,510,"C­íc ®iÕm trang (nam tiªu chuÈn)"},
-	[2] = {3,0,108,511,"C­íc ®iÕm ®Çu (nam kh«i ng«)",0,109,511,"C­íc ®iÕm y (nam kh«i ng«)",0,110,511,"C­íc ®iÕm trang (nam kh«i ng«)"},
-	[3] = {3,0,108,513,"C­íc ®iÕm ®Çu (n÷ gîi c¶m)",0,109,513,"C­íc ®iÕm y (n÷ gîi c¶m)",0,110,513,"C­íc ®iÕm trang (n÷ gîi c¶m)"},
-	[4] = {3,0,108,512,"C­íc ®iÕm ®Çu (kiÒu n÷)",0,109,512,"C­íc ®iÕm y (kiÒu n÷)",0,110,512,"C­íc ®iÕm trang (kiÒu n÷)"}	
+	[2] = {3,0,108,511,"Hairstyle Point Head (male handsome)",0,109,511,"Hairstyle Point Clothing (male handsome)",0,110,511,"Hairstyle Point Outfit (male handsome)"},
+	[3] = {3,0,108,513,"Hairstyle Point Head (female sexy)",0,109,513,"Hairstyle Point Clothing (female sexy)",0,110,513,"Hairstyle Point Outfit (female sexy)"},
+	[4] = {3,0,108,512,"Hairstyle Point Head (charming female)",0,109,512,"Hairstyle Point Clothing (charming female)",0,110,512,"Hairstyle Point Outfit (charming female)"}	
 	
 }
 

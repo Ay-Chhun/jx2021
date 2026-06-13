@@ -166,7 +166,7 @@ QHT_MAP_FLASH_POINT = {
 }
 
 QHT_MAP_NAME = {
-	[200] = "BiÖn Kinh", 
+	[200] = "Bianjing", 
 	[300] = "Thµnh §«", 
 	[350] = "T­¬ng D­¬ng", 
 	[100] = "TuyÒn Ch©u", 
@@ -176,7 +176,7 @@ QHT_MAP_NAME = {
 
 QHT_TONG_FLAG = {
 	[1] = "Bang Héi §¹i Kú",
-	[2] = "ThiÕt HuyÕt Bang Héi ChiÕn Kú",
+	[2] = "Iron Blood Guild War Banner",
 }
 
 

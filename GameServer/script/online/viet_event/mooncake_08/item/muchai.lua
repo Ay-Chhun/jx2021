@@ -6,7 +6,7 @@
 
 Include("\\script\\online\\viet_event\\mooncake_08\\mooncake_head.lua")
 
-g_szLogTitle = "Ho¹t ®éng trung thu : ".."Lß n­íng b¸nh Trung Thu"		--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
+g_szLogTitle = "Ho¹t ®éng trung thu : ".."Mid-Autumn Mooncake Oven"		--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
 
 g_VietMoonCake08End = 2008100600				--Ä¾²ñµÄÊ¹ÓÃ½ØÖ¹ÈÕÆÚ
 
@@ -23,7 +23,7 @@ function OnUse(nItemIdx)
 	local selTab = {
 				"N­íng 8 c¸i B¸nh trung thu lo¹i th­êng/#make_mooncake(1)",
 				"N­íng 8 c¸i B¸nh trung thu lo¹i ®Æc biÖt/#make_mooncake(2)",
-				"KÕt thóc ®èi tho¹i/no",
+				"End dialogue/no",
 				}
 	Say("C¸c h¹ muèn n­íng lo¹i B¸nh trung thu nµo??",getn(selTab),selTab);
 end
@@ -34,7 +34,7 @@ function make_mooncake(nType)
 			Say("Sè l­îng b¸nh trung thu cña ®¹i hiÖp vÉn ch­a ®ñ, kh«ng thÓ tiÕn hµnh n­íng b¸nh.",0);
 			return
 		end
-		if del_item_ex("B¸nh ch­a n­íng lo¹i th­êng",2,1,30023,8) == 1 and del_item_ex("Cñi",2,1,30022,1) == 1 then
+		if del_item_ex("B¸nh ch­a n­íng lo¹i th­êng",2,1,30023,8) == 1 and del_item_ex("Firewood",2,1,30022,1) == 1 then
 			SetTask(CAKE_TYPE_08_MOONCAKE_VIET, 1)
 			create_burner()
 		end
@@ -43,7 +43,7 @@ function make_mooncake(nType)
 			Say("Sè l­îng b¸nh trung thu cña ®¹i hiÖp vÉn ch­a ®ñ, kh«ng thÓ tiÕn hµnh n­íng b¸nh.",0);
 			return
 		end
-		if del_item_ex("B¸nh ch­a n­íng lo¹i ®Æc biÖt",2,1,30024,8) == 1 and del_item_ex("Cñi",2,1,30022,1) == 1 then
+		if del_item_ex("B¸nh ch­a n­íng lo¹i ®Æc biÖt",2,1,30024,8) == 1 and del_item_ex("Firewood",2,1,30022,1) == 1 then
 			SetTask(CAKE_TYPE_08_MOONCAKE_VIET, 2)
 			create_burner()
 		end
@@ -51,7 +51,7 @@ function make_mooncake(nType)
 end
 
 function create_burner()
-	local nNpcIdx = CreateNpc("Lß n­íng b¸nh", "Lß n­íng b¸nh Trung Thu", GetWorldPos());
+	local nNpcIdx = CreateNpc("Lß n­íng b¸nh", "Mid-Autumn Mooncake Oven", GetWorldPos());
 	SetNpcScript(nNpcIdx, "\\script\\online\\viet_event\\mooncake_08\\npc\\burner.lua")
 	SetNpcLifeTime(nNpcIdx, g_nTime_MoonCakeViet)
 	SetTask(FIRE_TIME_08_MOONCAKE_VIET, GetTime())

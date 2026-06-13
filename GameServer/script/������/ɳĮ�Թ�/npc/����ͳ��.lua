@@ -24,7 +24,7 @@ local t=0;
 	SetNpcLifeTime(index,15);--Ê¹µÃÊ¬ÌåÏûÊ§
 	
 	if nMemCount == 0 then -- Íæ¼ÒÎ´×é¶Ó
-		nNpcIndex = CreateNpc("Hoan T­îng (Cæ D­¬ng Thó)","TrÊn Mé ThóHoan T­îng ",nMapId, nX, nY);
+		nNpcIndex = CreateNpc("Hoan T­îng (Cæ D­¬ng Thó)","Tomb-Guarding BeastIllusion General",nMapId, nX, nY);
 		SetNpcLifeTime(nNpcIndex,1800);
 		SetNpcScript(nNpcIndex,"\\script\\Î÷±±Çø\\É³Ä®ÃÔ¹¬\\npc\\»ÃÏó¹ÅÑôÊŞ.lua");
 		TaskTip("Khi ®· tiªu diÖt ¶o ¶nh Thèng lÜnh t­îng binh m·, Hoan T­îng biÕn hãa thµnh TrÊn Mé Thó!");
@@ -38,7 +38,7 @@ local t=0;
 				TaskTip("Khi ®· tiªu diÖt ¶o ¶nh Thèng lÜnh t­îng binh m·, Hoan T­îng biÕn hãa thµnh TrÊn Mé Thó!");
 				Msg2Player("Khi ®· tiªu diÖt ¶o ¶nh Thèng lÜnh t­îng binh m·, Hoan T­îng biÕn hãa thµnh TrÊn Mé Thó!");
 				if t == 0 then
-					nNpcIndex = CreateNpc("Hoan T­îng (Cæ D­¬ng Thó)","TrÊn Mé ThóHoan T­îng ",nMapId, nX, nY);
+					nNpcIndex = CreateNpc("Hoan T­îng (Cæ D­¬ng Thó)","Tomb-Guarding BeastIllusion General",nMapId, nX, nY);
 					SetNpcLifeTime(nNpcIndex,1800);
 					SetNpcScript(nNpcIndex,"\\script\\Î÷±±Çø\\É³Ä®ÃÔ¹¬\\npc\\»ÃÏó¹ÅÑôÊŞ.lua");
 					t=1;

@@ -17,7 +17,7 @@ function OnNpcTalkToRestore()
 		tinsert(tbSay, "Ta chØ ghĞ ch¬i/no")
 	else
 		szTitle = format("HiÖn t¹i c¸c h¹ vÉn ch­a kİch ho¹t c¶nh giíi, rÊt tiÕc ta kh«ng thÓ gióp ng­¬i dŞch c©n tÈy tñy.")
-		tinsert(tbSay, "Tho¸t/no")
+		tinsert(tbSay, "Exit/no")
 	end
 	
 	Say(szTitle, getn(tbSay), tbSay)

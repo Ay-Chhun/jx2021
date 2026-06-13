@@ -8,7 +8,7 @@ function main()
 		NpcChat(GetTargetNpc(),"X«ng pha trËn m¹c, tèc ®é rÊt quan träng!");
 	end;
 	if GetMissionV(MV_BATTLE_STATE) ~= MS_STATE_FIGHT then
-		Talk(1,"","<color=green>H­íng ®¹o<color>:............");
+		Talk(1,"","<color=green>Guide<color>:............");
 		return 0;
 	end;
 	local sContent = "";
@@ -24,7 +24,7 @@ function main()
 		Go_To_Next_Step(nCamp);	--¿ªÊ¼µÚÒ»²½
 	end;
 	sName = GetMissionS(MSTR_SONG_TARGETNAME+nCamp-1);
-	sContent = "Qua ®iÒu tra, ®­îc biÕt thæ d©n <color=yellow>"..sName.."<color> cã thÓ biÕt tung tÝch cña thñ lÜnh, mêi t­íng sÜ <color=yellow>";
+	sContent = "Through investigation, it is known the local <color=yellow>"..sName.."<color> cã thÓ biÕt tung tÝch cña thñ lÜnh, mêi t­íng sÜ <color=yellow>";
 	if GetMissionS(MSTR_SONG_ONE+nCamp-1) ~= "" then
 		sContent = sContent..GetMissionS(MSTR_SONG_ONE+nCamp-1)..", ";
 	end;
@@ -38,9 +38,9 @@ function main()
 	sContent = sContent.."<color> mau ®Õn ®ã t×m B¸ch Sù Th«ng cã liªn quan ®Ó t×m ra t«ng tÝch <color=yellow>"..sName.."<color>.";
 	local selTab = {
 					--"·µ»Ø"..tCampNameZ[nCamp].."·½ºóÓª/back_to_home",
-					"KÕt thóc ®èi tho¹i/nothing",
+					"End dialogue/nothing",
 					}
-	Say("<color=green>H­íng ®¹o<color>:"..sContent,0);
+	Say("<color=green>Guide<color>:"..sContent,0);
 end;
 
 function back_to_home()

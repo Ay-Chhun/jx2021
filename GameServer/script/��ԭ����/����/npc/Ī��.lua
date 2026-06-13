@@ -26,7 +26,7 @@ taixu_jwl_list = {
 	{"Th¸i H­ HuyÔn Th¹ch",35,"Cöu Thiªn HuyÒn Th¹ch",135}
 }
 mystery_goods_list = {
-	{"Ch©n thá",2,1,112},
+	{"Real Rabbit",2,1,112},
 	{"T¬ kh¸ng Thñy",2,1,114},
 	{"Ph¸ Thiªn Cung",2,1,115},
 	{"X­¬ng rång",2,1,116},
@@ -44,13 +44,13 @@ mystery_goods_list = {
 	{"MËt S¸t LÖnh",2,1,129},
 	{"ChÊn Thiªn TuyÕt",2,1,130},
 	{"DiÒu",2,1,132},
-	{"Con rèi",2,1,133},
+	{"Puppet",2,1,133},
 	{"Tµo Ng©n",2,1,134},
 	{"Hoa Th¹ch C­¬ng",2,1,135},
 	{"DÇu ®en",2,1,136},
 	{"Tr­êng Thµnh Kİnh",2,1,137},
 	{"B¶n ch÷ TÊt Th¨ng",2,1,138},
-	{"Khª S¬n chİ",2,1,140},
+	{"Khe Son Mark",2,1,140},
 	{"L«i Viªm Kim Sa",2,1,146},
 	{"Thiªn Y V« Phong",2,1,147}
 }
@@ -117,7 +117,7 @@ function main()
 			if GetLifeSkillMaxLevel(1, 4) == 79 then
 				tinsert(strtab, "Muèn häckü n¨ng cao cÊp h¬n/update_max_skill_level");
 			end 
-			tinsert(strtab,"Rêi khái/SayHello");  		    	
+			tinsert(strtab,"Leave/SayHello");  		    	
 	    Say(strTitle.."Dßng hä ta næi tiÕng bëi nghÒ ®óc kiÕm, ng­¬i cã cÇn ta gióp g× kh«ng?",
 	    	getn(strtab),
 	    	strtab)
@@ -147,7 +147,7 @@ function main()
 			if GetLifeSkillMaxLevel(1, 4) == 79 then
 				tinsert(strtab, "Muèn häckü n¨ng cao cÊp h¬n/update_max_skill_level");
 			end 
-			tinsert(strtab,"Rêi khái/SayHello");  	    	  	  
+			tinsert(strtab,"Leave/SayHello");  	    	  	  
 	    Say(strTitle.."Dßng hä ta næi tiÕng bëi nghÒ ®óc kiÕm, ng­¬i cã cÇn ta gióp g× kh«ng?",
 	    	getn(strtab),
 	    	strtab);		
@@ -166,7 +166,7 @@ function learn_all_recipe()
 		"Xem nhËn ®­îc nhiÖm vô vò khİ cÊp 76 kh«ng/get_76_task",
 		"Häc c¸ch phèi chÕ cÊp 76/relearn_76_recipe",
 		"Phèi ghĞp Bæ Häc Tr¶o/luaLearnRecipeZhua",
-		"Rêi khái/SayHello")
+		"Leave/SayHello")
 end;
 
 
@@ -698,7 +698,7 @@ function learnCyEquip()
     AddRecipe(1104)
     Msg2Player(format("§· häc phèi chÕ míi: %s", "Bİch Ngäc"))
     AddRecipe(1105)
-    Msg2Player(format("§· häc phèi chÕ míi: %s", "Hoa hång"))    
+    Msg2Player(format("§· häc phèi chÕ míi: %s", "Rose"))    
   end
 	if nLevel >= 20 then
 		AddRecipe(1094)
@@ -740,7 +740,7 @@ function learnCyEquip()
   end  
 	if nLevel >= 79 then
 		AddRecipe(1101)
-    Msg2Player(format("§· häc phèi chÕ míi: %s", "Minh B¨ng"))
+    Msg2Player(format("§· häc phèi chÕ míi: %s", "Ice Brightness"))
     AddRecipe(1113)
     Msg2Player(format("§· häc phèi chÕ míi: %s", "Ngäc Doanh"))    
 	end
@@ -915,7 +915,7 @@ function taixu_jwl_up_iron()
 end
 --*************************************ÌáÁ¶È·ÈÏ½çÃæ*********************************
 function taixu_jwl_up_dtm(up_diff)
-	Say("Thİ luyÖn"..taixu_jwl_up_met_table[up_diff][12].."CÇn <color=yellow>1<color>B¨ng Th¹ch tinh luyÖn, <color=yellow>"..taixu_jwl_up_met_table[2][6].."<color> m¶nh Thiªn th¹ch vµ <color=yellow>"..taixu_jwl_up_met_table[2][6].."<color> hoµng kim, <color=yellow>vµ còng cã thÓ thÊt b¹i<color>, b¹n cã ch¾c muèn tinh luyÖn?",
+	Say("Trial"..taixu_jwl_up_met_table[up_diff][12].."CÇn <color=yellow>1<color>B¨ng Th¹ch tinh luyÖn, <color=yellow>"..taixu_jwl_up_met_table[2][6].."<color> m¶nh Thiªn th¹ch vµ <color=yellow>"..taixu_jwl_up_met_table[2][6].."<color> hoµng kim, <color=yellow>vµ còng cã thÓ thÊt b¹i<color>, b¹n cã ch¾c muèn tinh luyÖn?",
 	2,
 	"Ta ®ång ı thİ luyÖn"..taixu_jwl_up_met_table[up_diff][12].."/#taixu_jwl_up("..up_diff..")",
 	"§Ó ta suy nghÜ l¹i/end_dialog"
@@ -925,7 +925,7 @@ function taixu_jwl_up_needs()
 	Say("Ng­¬i cã thÓ chän thİ luyÖn 1 lÇn hoÆc chia lµm 3 lÇn. Thİ luyÖn 1 lÇn cÇn <color=yellow>"..taixu_jwl_up_met_table[1][5].."<color> hoµng kim vµ <color=yellow>"..taixu_jwl_up_met_table[1][6].."<color> m¶nh Thiªn th¹ch. Thİ luyÖn 3 lÇn cÇn <color=yellow>"..taixu_jwl_up_met_table[2][5].."<color> hoµng kim vµ <color=yellow>"..taixu_jwl_up_met_table[2][6].."<color> Thiªn th¹ch.",
 	2,
 	"Ta muèn thİ luyÖn/taixu_jwl_up_iron",
-	"Tho¸t/end_dialog")
+	"Exit/end_dialog")
 end
 --******************************Ò»´ÎĞÔÌáÁ¶****************************
 function taixu_jwl_up_one_time()
@@ -1021,7 +1021,7 @@ function taixu_jwl_up(up_step)
 				return
 			end
 		else
-			WriteLog("NhiÖm vô trang søc Th¸i H­_Ng­êi ch¬i:"..GetName().."NhËn ®­îc"..taixu_jwl_up_met_table[up_step][12].."ThÊt b¹i, thÊt b¹i ë:"..add_flag)
+			WriteLog("NhiÖm vô trang søc Th¸i H­_Ng­êi ch¬i:"..GetName().."Received"..taixu_jwl_up_met_table[up_step][12].."ThÊt b¹i, thÊt b¹i ë:"..add_flag)
 		end
 	else
 		Talk(1,"","§¸ng tiÕc, lÇn nµy luyÖn kh«ng thµnh,"..taixu_jwl_up_met_table[up_step][4].."ph¶i luyÖn l¹i th«i.")
@@ -1095,7 +1095,7 @@ function taixu_jwl_chk(jwl_diff)
 	end
 	--Ì«ĞéÊ×ÊÎĞ¯´ø¼ì²â
 	if GetItemCount(0,102,taixu_jwl_list[jwl_diff][2]) == 0 then
-		Talk(1,"","Ng­¬i kh«ng mang theo <color=yellow>"..taixu_jwl_list[jwl_diff][1].."<color> µ!!")
+		Talk(1,"","Ng­¬i kh«ng mang theo <color=yellow>"..taixu_jwl_list[jwl_diff][1].."<color> ah!!")
 		return
 	end
 	--Ç¿»¯¾«½ğĞ¯´ø¼ì²â
@@ -1123,21 +1123,21 @@ function taixu_jwl_chk(jwl_diff)
 	--Ì«ĞéÊ×ÊÎÉ¾³ı¼ì²â
 	del_flag = DelItem(0,102,taixu_jwl_list[jwl_diff][2],1)
 	if del_flag ~= 1 then
-		Talk(1,"","Ng­¬i kh«ng mang theo <color=yellow>"..taixu_jwl_list[jwl_diff][1].."<color> µ!!")
+		Talk(1,"","Ng­¬i kh«ng mang theo <color=yellow>"..taixu_jwl_list[jwl_diff][1].."<color> ah!!")
 		return	
 	end
 	--×°±¸Ôö¼Ó
 	local add_flag = AddItem(0,102,taixu_jwl_list[jwl_diff][4],1,1,-1,-1,-1,-1,-1,-1)
 	if add_flag == 1 then
 		SetTask(taixu_jwl_taskID,0)
-		Msg2SubWorld("Chóc mõng:"..GetName().." Hoµn thµnh nhiÖm vô Trang søc Th¸i H­, sÏ"..taixu_jwl_list[jwl_diff][1].."T¨ng cÊp thµnh "..taixu_jwl_list[jwl_diff][3].."!")
+		Msg2SubWorld("Congratulations:"..GetName().." Hoµn thµnh nhiÖm vô Trang søc Th¸i H­, sÏ"..taixu_jwl_list[jwl_diff][1].."T¨ng cÊp thµnh "..taixu_jwl_list[jwl_diff][3].."!")
 		Talk(4,"",
 			"Thµnh c«ng råi!",
 			"…"..Zgc_pub_sex_name()..", ®©y míi ®óng lµ <color=yellow>Trang søc Th¸i H­<color>! Qu¶ lµ tuyÖt diÖu!",
 			"§a t¹ M¹c tiÒn bèi, lÇn nµy nÕu kh«ng cã tiÒn bèi gióp ®ì thËt kh«ng biÕt lµm sao.",
 			"§Òu lµ mét nhµ"..Zgc_pub_sex_name().."kh¸ch khİ lµm g×. CÇm lÊy! Nhí ®õng lµm h­ ®ã!"
 		)
-		WriteLog("NhiÖm vô trang søc Th¸i H­_Ng­êi ch¬i:"..GetName().."NhËn ®­îc "..taixu_jwl_list[jwl_diff][2].."!")
+		WriteLog("NhiÖm vô trang søc Th¸i H­_Ng­êi ch¬i:"..GetName().."Received"..taixu_jwl_list[jwl_diff][2].."!")
 	else
 		WriteLog("NhiÖm vô trang søc Th¸i H­_Ng­êi ch¬i:"..GetName().."T¨ng"..taixu_jwl_list[jwl_diff][2].." thÊt b¹i, kı hiÖu:"..add_flag)
 	end	
@@ -1154,7 +1154,7 @@ function bagua()
 	"Lµm sao chÕ t¹o trang bŞ cã lç kh¶m n¹m/kongzhuangbeizhizuo",
 	"VËt phÈm thªm vµo cã t¸c dông g×/tianjiawu",
 	"Lµm sao trang bŞ ®­îc chÕ t¹o thµnh trang bŞ B¸t Qu¸i/xiangqianzhuyi",
-	"§Õn hái th¨m th«i mµ!/SayHello"
+	"Just dropping by to say hello!/SayHello"
 	)
 end
 
@@ -1189,7 +1189,7 @@ end
 
 function update_max_skill_level()
 	Say(strTitle..format("Më réng cÊp kü n¨ng s¶n xuÊt cÇn kü n¨ng thu thËp ®¹t cÊp 79 ®ång thêi tiªu hao %d Vµng", 1000), 
-		2, "§ång ı/update_max_skill_level_ensure", "T¹i h¹ chØ xem qua th«i/SayHello")
+		2, "Agree/update_max_skill_level_ensure", "T¹i h¹ chØ xem qua th«i/SayHello")
 end
 
 function update_max_skill_level_ensure()

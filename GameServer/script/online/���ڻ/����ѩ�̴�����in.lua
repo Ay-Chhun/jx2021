@@ -10,7 +10,7 @@ function main()
 	if GetSex() == 1 then
 		strSex = "ThiÕu hiÖp"
 	elseif GetSex() == 2 then
-		strSex = "C« n­¬ng"
+		strSex = "Young lady"
 	else
 		strSex = "ThiÕu hiÖp/N÷ hiÖp"
 	end
@@ -29,7 +29,7 @@ function main()
 					"T×m hiÓu ho¹t ®éng./know_detail",
 					"Ta ®· qua tuæi nµy råi ­!/nothing"
 					}
-		Say("VŞ "..strSex.."lÏ nµo kh«ng muèn nh©n c¬ héi ch¬i ®ïa tháa thİch mét lÇn hay sao?",3,selTab)
+		Say("Position"..strSex.."lÏ nµo kh«ng muèn nh©n c¬ héi ch¬i ®ïa tháa thİch mét lÇn hay sao?",3,selTab)
 	else
 		Say("MÊy h«m nay tuyÕt ch­a r¬i nªn khu nĞm tuyÕt ch­a thÓ më, mêi"..strSex.."lÇn sau quay l¹i nhĞ!",0)
 	end

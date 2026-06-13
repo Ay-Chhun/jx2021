@@ -1,11 +1,11 @@
 Index	Level	Genre	Detail	Particular	Text
-H­íng dÉn	CÊp	Lo¹i lín	Lo¹i phô	Lo¹i nhá	Tªn vËt phÈm
+Guide	CÊp	Lo¹i lín	Lo¹i phô	Lo¹i nhá	Tªn vËt phÈm
 1000	40	0	0	8	BÝch Xµ thñ
 1001	40	0	0	9	Kh¸ng Long thñ
-1002	50	0	0	10	T­êng Ph­îng
+1002	50	0	0	10	Phoenix Wall
 1003	50	0	0	11	Né Long
 1004	60	0	0	12	Ngò Ph­¬ng Quû Chóng
-1005	70	0	0	13	Nª Lª ®Þa ngôc
+1005	70	0	0	13	Niraya Hell
 1006	40	0	2	21	TÝch D­¬ng
 1007	40	0	2	22	HuyÒn §iÖn
 1008	50	0	2	23	Thanh S­¬ng
@@ -17,7 +17,7 @@ H­íng dÉn	CÊp	Lo¹i lín	Lo¹i phô	Lo¹i nhá	Tªn vËt phÈm
 1014	50	0	5	36	§¶ CÈu bæng
 1015	50	0	5	37	KhÈn Na La Bæng
 1016	60	0	5	38	Thiªn Xµ c«n
-1017	70	0	5	39	Thanh Long c«n
+1017	70	0	5	39	Azure Dragon Staff
 1018	40	0	1	47	Ngäc Phong ch©m
 1019	40	0	1	48	Tô Lý Cµn Kh«n
 1020	50	0	1	49	Hµm Sa X¹ ¶nh
@@ -35,11 +35,11 @@ H­íng dÉn	CÊp	Lo¹i lín	Lo¹i phô	Lo¹i nhá	Tªn vËt phÈm
 1032	50	0	10	71	Cöu Tiªu Ngäc Béi
 1033	50	0	10	72	HiÖu Chung
 1034	60	0	10	73	Lôc Khëi
-1035	70	0	10	74	Tiªu VÜ
+1035	70	0	10	74	Tieu Vi
 1036	40	0	9	80	Truy NguyÖt bót
 1037	40	0	9	81	ThÞ Hån bót
 1038	50	0	9	82	Long ThiÖt
-1039	50	0	9	83	R¨ng sãi
+1039	50	0	9	83	Wolf Tooth
 1040	60	0	9	84	Ph¸ Qu©n
 1041	70	0	9	85	Thiªn C¬
 1042	40	0	8	91	NguyÖt Lu©n tr­îng
@@ -77,7 +77,7 @@ H­íng dÉn	CÊp	Lo¹i lín	Lo¹i phô	Lo¹i nhá	Tªn vËt phÈm
 1074	60	0	103	51	NhËt MiÖn
 1075	60	0	103	52	ThÇn ¤
 1076	70	0	103	53	Tu La
-1077	70	0	103	54	Chu T­íc
+1077	70	0	103	54	Vermilion Bird
 1078	40	0	103	63	Thiªn C¬ Thóc tr©m
 1079	40	0	103	64	Thiªn La Thoa
 1080	40	0	103	65	Thiªn Phong Thóc tr©m
@@ -108,7 +108,7 @@ H­íng dÉn	CÊp	Lo¹i lín	Lo¹i phô	Lo¹i nhá	Tªn vËt phÈm
 1105	40	0	100	48	Hång Nghª Th­êng
 1106	50	0	100	49	L©n Quang gi¸p
 1107	50	0	100	50	Hå C¬ Vò y
-1108	60	0	100	51	Minh Quang gi¸p
+1108	60	0	100	51	Mingguang Armor
 1109	60	0	100	52	Nghª Th­êng Vò y
 1110	70	0	100	53	Thiªn y
 1111	70	0	100	54	Phi Thiªn Th¸i Th­êng
@@ -145,12 +145,12 @@ H­íng dÉn	CÊp	Lo¹i lín	Lo¹i phô	Lo¹i nhá	Tªn vËt phÈm
 1142	50	0	101	50	Thiªn M·
 1143	60	0	101	51	Ph¸ TrËn
 1144	60	0	101	52	PhÊt V©n
-1145	70	0	101	53	Hæ TiÕu
+1145	70	0	101	53	Tiger Roar
 1146	70	0	101	54	Th¸i Thanh
 1147	40	0	101	64	Khëi La Tó Trang
 1148	40	0	101	65	Vâ ThÇn Tó Trang
 1149	50	0	101	66	Linh Lung Tó Trang
-1150	50	0	101	67	B¸ch ChiÕn
+1150	50	0	101	67	Bach Chien
 1151	50	0	101	68	ThÇn N÷
 1152	60	0	101	69	Vò Linh
 1153	60	0	101	70	T¶n Hoa

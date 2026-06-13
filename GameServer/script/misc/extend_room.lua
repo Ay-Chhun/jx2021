@@ -102,7 +102,7 @@ function onExtendRoom(nRoom, nConfirm)
 		local szMsg = format("Dïng <color=yellow>[%s] x %d<color> sÏ t¨ng giíi h¹n <color=yellow>%s<color> ®Õn <color=yellow>%d<color> «, ®ång ý?", tEx[3], tEx[2][4], tInfo.Name, tEx[4]);
 		local tSel = {
 			format("\n§ång ý/#onExtendRoom(%d, 1)", nRoom),
-			"Hñy bá/nothing",
+			"Cancel/nothing",
 		};
 		Say(szMsg, getn(tSel), tSel);
 		return

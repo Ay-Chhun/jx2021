@@ -37,7 +37,7 @@ function ItemCreate.giveCangJianGoldenCap()
 	gf_AddItemEx({0,103,94+GetBody(),1,1,-1,-1,-1,-1,-1,-1}, "Tµng KiÕm Tö Kim m·o");
 end
 function ItemCreate.giveCangJianGoldenCloth()
-	gf_AddItemEx({0,100,94+GetBody(),1,1,-1,-1,-1,-1,-1,-1}, "Kim Lò Th­êng");
+	gf_AddItemEx({0,100,94+GetBody(),1,1,-1,-1,-1,-1,-1,-1}, "Gold-Inlaid Robe");
 end
 function ItemCreate.giveCangJianGoldenPants()
 	gf_AddItemEx({0,101,94+GetBody(),1,1,-1,-1,-1,-1,-1,-1}, "Tµng KiÕm ¤ kim phôc");
@@ -185,7 +185,7 @@ ItemCreate.tItemList = {
 	["Hiªn Viªn §Êu"] = ItemCreate.giveXYDou,
 	["Hiªn Viªn vò khÝ"] = ItemCreate.giveXYWeapen,
 	["Tµng KiÕm Tö Kim m·o"] = ItemCreate.giveCangJianGoldenCap,
-	["Kim Lò Th­êng"] = ItemCreate.giveCangJianGoldenCloth,
+	["Gold-Inlaid Robe"] = ItemCreate.giveCangJianGoldenCloth,
 	["Tµng KiÕm ¤ kim phôc"] = ItemCreate.giveCangJianGoldenPants,
 	["Thiªn §Þa HuyÒn Hoµng Kh«i"] = ItemCreate.giveTiandi1,
 	["Thiªn §Þa HuyÒn Hoµng Gi¸p "] = ItemCreate.giveTiandi2,
@@ -234,11 +234,11 @@ function rollTimeOver(dwID)
 	local bAllGiveUp = 1
 	if type(t) ~= "table" then return end
 	for index, value in t do
-		local str = value[1].."NÐm"..value[2].." ®iÓm"
+		local str = value[1].."Throw"..value[2].." ®iÓm"
 		if value[3] == 0 then
-			str = value[1].."Phãng"
+			str = value[1].."Cast"
 		elseif value[3] == 1 then
-			str = str.." (TuyÕt cÇu)"
+			str = str.." (Snowball)"
 			if value[4] == 1 then
 				str = str.." -- Ê°È¡ÁË"..szItem
 			end

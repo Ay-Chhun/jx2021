@@ -11,7 +11,7 @@ function main()
 		"Ho¹t ®éng thİ luyÖn s­ m«n, h¶o h÷u thi ®Êu l«i ®µi so vâ nghÖ/techer",
 		"Tµng KiÕm s¬n trang ®iÒu chØnh t¨ng tû lÖ r¬i trang bŞ Hoµng Kim/cangjian",
 		"Cuéc thi §ç thÇn tranh b¸, c¸c lo¹i phÇn th­ëng/mah_jong",
-		"Tho¸t/end_dialog"
+		"Exit/end_dialog"
 		)
 end
 --****************************Ê¦ÃÅÀúÁ·************************

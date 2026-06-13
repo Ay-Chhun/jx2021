@@ -28,7 +28,7 @@ function Confirm()
 			if (nFreeItemRoom >=  nExtVal) then
 				PayExtPoint(EXT_POINT_DLTC, nExtVal)
 			else
-				Say("Hµnh trang cña b»ng h÷u chØ cã <color=Gold>"..nFreeItemRoom.." « trèng<color> nªn chØ nhËn ®­îc <color=Gold>"..nFreeItemRoom.."<color> ThÇn N«ng §¬n. Sau khi nhËn th­ëng h·y s¾p xÕp l¹i hµnh trang råi ®Õn gÆp ta.",2,"§ång ý/#SayYes("..nFreeItemRoom..")","§Ó ta s¾p xÕp l¹i hµnh trang/SayNo")					
+				Say("Hµnh trang cña b»ng h÷u chØ cã <color=Gold>"..nFreeItemRoom.." « trèng<color> nªn chØ nhËn ®­îc <color=Gold>"..nFreeItemRoom.."<color> ThÇn N«ng §¬n. Sau khi nhËn th­ëng h·y s¾p xÕp l¹i hµnh trang råi ®Õn gÆp ta.",2,"Agree/#SayYes("..nFreeItemRoom..")","§Ó ta s¾p xÕp l¹i hµnh trang/SayNo")					
 			end		
 		else
 			Say("ChØ cã ng­êi tróng th­ëng míi nhËn ®­îc quµ!",0)
@@ -44,7 +44,7 @@ function SayYes(nFreeItemRoom)
 	if (GetFreeItemRoom() >= nFreeItemRoom) then		
 		PayExtPoint(EXT_POINT_DLTC, nFreeItemRoom)
 	else	
-		Say("Hµnh trang cña b»ng h÷u kh«ng ®ñ "..nFreeItemRoom.." « trèng.",0)
+		Say("Hµnh trang cña b»ng h÷u kh«ng ®ñ "..nFreeItemRoom.." empty slots.",0)
 		Msg2Player("Hµnh trang cña b¹n kh«ng ®ñ « trèng.")
 		return
 	end	

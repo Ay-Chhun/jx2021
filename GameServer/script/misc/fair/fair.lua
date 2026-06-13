@@ -209,7 +209,7 @@ function FairNeedDesc(nFairLv, nLingpo, nHuixian, bConfirm)
         szTitle = format("%s\nMë ngay?", szTitle)
         tinsert(tbSay, format("§ång ý/#SetFairLevelConfirm(%d,%d)", nLingpo, nHuixian))
     end
-    tinsert(tbSay, "Hñy bá/nothing")
+    tinsert(tbSay, "Cancel/nothing")
     Say(szTitle, getn(tbSay), tbSay)
 end
 

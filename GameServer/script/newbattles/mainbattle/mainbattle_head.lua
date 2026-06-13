@@ -42,7 +42,7 @@ TYPE_HERO = 11;			--ÆæÈËÒìÊ¿
 --ÌîÐ´¸ñÊ½£º{ËÎ·½Î»ÖÃtable,ÁÉ·½Î»ÖÃtable,{{ËÎ·½NPCÃû×Ö,ËÎ·½Ä£¿éÃû},...},{{ÁÉ·½NPCÃû×Ö,ÁÉ·½Ä£¿éÃû}},...}
 tNpcInfo = {									--NPCÃû×Ö¡¡¡¡Ä£°åÃû
 	[TYPE_SOLDIER] = {tSoldierSong,tSoldierLiao,{{"Tèng qu©n tinh binh","Tinh binh-Tèng"},{"Tèng qu©n c­êng nâ binh","C­êng nâ binh: Tèng"}},{{"Liªu qu©n dòng sÜ","Dòng sÜ-Liªu"},{"Liªu qu©n ng¹nh tiÔn binh","Ng¹nh tiÔn binh-Liªu"}}},
-	[TYPE_ARROWBUILDING] = {tArrowBuildingSong,tArrowBuildingLiao,{{"TiÔn th¸p-Tèng","TiÔn th¸p"}},{{"TiÔn th¸p-Liªu","TiÔn th¸p"}}},
+	[TYPE_ARROWBUILDING] = {tArrowBuildingSong,tArrowBuildingLiao,{{"TiÔn th¸p-Tèng","Arrow Tower"}},{{"TiÔn th¸p-Liªu","Arrow Tower"}}},
 	[TYPE_LOOEY] = {tLooeySong,tLooeyLiao,{{"Tèng hiÖu óy","Tèng ®« óy"}},{{"Liªu hiÖu óy","Liªu ®« óy"}}},
 	[TYPE_CAPTAIN] = {tCaptainSong,tCaptainLiao,{{"Tèng §« thèng","Tèng §« thèng"}},{{"Liªu §« thèng","Liªu §« thèng"}}},
 	[TYPE_PIONEER] = {tPioneerSong,tPioneerLiao,{{"Tèng tiªn phong","Tèng tiªn phong"}},{{"Liªu tiªn phong","Liªu tiªn phong"}}},
@@ -50,8 +50,8 @@ tNpcInfo = {									--NPCÃû×Ö¡¡¡¡Ä£°åÃû
 	[TYPE_MARSHAL] = {tMarshalSong,tMarshalLiao,{{"Tèng nguyªn so¸i","Tèng nguyªn so¸i"}},{{"Liªu nguyªn so¸i","Liªu nguyªn so¸i"}}},
 	[TYPE_HEADER] = {tVillagerHeaderPos,tVillagerHeaderPos,{{"Thñ lÜnh thæ d©n","Thñ lÜnh thæ d©n"}},{{"Thñ lÜnh thæ d©n","Thñ lÜnh thæ d©n"}}},
 	[TYPE_REFUGEE] = {tVillagerPos,tVillagerPos,{{"Thæ d©n","Thæ d©n"},{"Thæ d©n","Cung tiÔn thñ-thæ d©n"}},{{"Thæ d©n","Thæ d©n"},{"Thæ d©n","Cung tiÔn thñ-thæ d©n"}}},
-	[TYPE_EMPLACEMENT] = {tEmplacementPos,tEmplacementPos,{{"Ph¸o ®µi","Háa ph¸o trung qu©n"}},{{"Ph¸o ®µi","Háa ph¸o trung qu©n"}}},
-	[TYPE_HERO] = {tNonalignedHeroPos,tNonalignedHeroPos,{{"Vâ t­íng trung lËp","Kú nh©n dÞ sÜ"}},{{"Vâ t­íng trung lËp","Kú nh©n dÞ sÜ"}}}
+	[TYPE_EMPLACEMENT] = {tEmplacementPos,tEmplacementPos,{{"Fortress","Háa ph¸o trung qu©n"}},{{"Fortress","Háa ph¸o trung qu©n"}}},
+	[TYPE_HERO] = {tNonalignedHeroPos,tNonalignedHeroPos,{{"Vâ t­íng trung lËp","Extraordinary Master"}},{{"Vâ t­íng trung lËp","Extraordinary Master"}}}
 	}
 
 FIGHT_TIMER_ID = 1108;
@@ -190,7 +190,7 @@ function Create_Emplacement(nPosition,nCamp)
 	local nNpcIndex = 0;
 	local sNpcName = "";
 	if nCamp == ALL_ID then
-		sNpcName = "Ph¸o ®µi trung lËp";
+		sNpcName = "Neutral Fortress";
 	elseif nCamp == SONG_ID then
 		sNpcName = "Ph¸o ®µi Tèng";
 	else
@@ -244,7 +244,7 @@ end;
 function Create_Nonaligned_Hero()
 	if GetMissionV(MV_HERO_DEATH) == 1 then
 		for i=1,getn(tNonalignedHeroPos) do 
-			local nNpcIndex = CreateNpc("Vâ t­íng trung lËp","Kú nh©n dÞ sÜ",MAPID,tNonalignedHeroPos[i][1],tNonalignedHeroPos[i][2])
+			local nNpcIndex = CreateNpc("Vâ t­íng trung lËp","Extraordinary Master",MAPID,tNonalignedHeroPos[i][1],tNonalignedHeroPos[i][2])
 			SetNpcDeathScript(nNpcIndex,"\\script\\newbattles\\mainbattle\\npc_death.lua");
 			SetCampToNpc(nNpcIndex,tCampNameP[ALL_ID]);
 		end;
@@ -312,11 +312,11 @@ end;
 --´´½¨Ð¡Â·ÉÏµÄÁ©¼ýËþ
 function Create_ArrowBuilding()
 	for i=1,ARROWBUILDING_COUNT do
-		local nNpcIndex = CreateNpc("TiÔn th¸p-Tèng","TiÔn th¸p",MAPID,tArrowBuildingSong[i][1],tArrowBuildingSong[i][2]);
+		local nNpcIndex = CreateNpc("TiÔn th¸p-Tèng","Arrow Tower",MAPID,tArrowBuildingSong[i][1],tArrowBuildingSong[i][2]);
 		AddGroupUnit(ARROWBUILDING_GROUP_SONG,nNpcIndex);
 	end;
 	for i=1,ARROWBUILDING_COUNT do
-		local nNpcIndex = CreateNpc("TiÔn th¸p-Liªu","TiÔn th¸p",MAPID,tArrowBuildingLiao[i][1],tArrowBuildingLiao[i][2]);
+		local nNpcIndex = CreateNpc("TiÔn th¸p-Liªu","Arrow Tower",MAPID,tArrowBuildingLiao[i][1],tArrowBuildingLiao[i][2]);
 		AddGroupUnit(ARROWBUILDING_GROUP_LIAO,nNpcIndex);
 	end;
 end;
@@ -375,7 +375,7 @@ function Try_To_Create_FightNPC(sName,nEnemyCamp)
 			Destroy_ArrowBuilding(nEnemyCamp);	--Çå³ý¼ýËþ
 			return 2;
 		end;		
-	elseif sName == "Nguyªn So¸i" then
+	elseif sName == "Marshal" then
 		if nEnemyNpcType == 2  then	--ÔªË§³öÀ´À²
 			Create_Fight_NPC(TYPE_MARSHAL,MARSHAL_COUNT,nEnemyCamp);
 			if nPlayerCamp == SONG_ID then
@@ -412,7 +412,7 @@ function Judge_State_By_Point(nCamp)
 	BT_ShowDebugInfor("nMissionPoint:"..nMissionPoint)
 	BT_ShowDebugInfor("nEnemyCount:"..nEnemyCount)
 	if nEnemyNpcType == 0 and nMissionPoint >= nEnemyCount*100 then
-		BT_ShowDebugInfor("LËp tiªn phong");
+		BT_ShowDebugInfor("Set Vanguard");
 		if Try_To_Create_FightNPC("Tiªn phong",nEnemyCamp) ~= 0 then		--µÐ·½¹«¹²»ý·Ö³¬¹ýÒ»¶¨ÊýÖµ£º±¾·½×ÜÈËÊý*100£¬¶Ô·½ÏÈ·æ³ö
 			if nPlayerCamp == SONG_ID then
 				Msg2MSAll(MISSION_ID,"TÝch lòy phe Tèng v­ît qu¸ "..(nEnemyCount*100)..", buéc tiªn phong phe Liªu xuÊt hiÖn.");
@@ -431,7 +431,7 @@ function Judge_State_By_Point(nCamp)
 		end;
 	elseif nEnemyNpcType == 2 and nMissionPoint >= nEnemyCount*400 then
 		BT_ShowDebugInfor("LËp nguyªn so¸i");
-		if Try_To_Create_FightNPC("Nguyªn So¸i",nEnemyCamp) ~= 0 then	--µÐ·½¹«¹²»ý·Ö³¬¹ýÒ»¶¨ÊýÖµ£º±¾·½×ÜÈËÊý*400£¬¶Ô·½ÔªË§³ö
+		if Try_To_Create_FightNPC("Marshal",nEnemyCamp) ~= 0 then	--µÐ·½¹«¹²»ý·Ö³¬¹ýÒ»¶¨ÊýÖµ£º±¾·½×ÜÈËÊý*400£¬¶Ô·½ÔªË§³ö
 			if nPlayerCamp == SONG_ID then
 				Msg2MSAll(MISSION_ID,"TÝch lòy phe Tèng v­ît qu¸ "..(nEnemyCount*400)..", buéc nguyªn so¸i phe Liªu xuÊt hiÖn.");
 			else
@@ -439,6 +439,6 @@ function Judge_State_By_Point(nCamp)
 			end;		
 		end;
 	else
-		BT_ShowDebugInfor("Kh«ng cã g× ®Ó lËp");
+		BT_ShowDebugInfor("Nothing to set");
 	end;
 end;

@@ -39,7 +39,7 @@ function get_item()
 	SetTask(336,GetTask(336)+20);--20µãÊ¦ÃÅ¹±Ï×¶È
 	Msg2Player("NhËn ®­îc 20 ®iÓm cèng hiÕn s­ m«n");
 	AddItem(2,1,2642,1);--1¸ö±¦Ê¯°ü¹ü
-	Msg2Player("NhËn ®­îc 1 Tói b¶o th¹ch");
+	Msg2Player("Received 1 Gemstone Bag");
 end;
 
 function get_random_item(nUseTime)
@@ -47,11 +47,11 @@ function get_random_item(nUseTime)
 	local nRand = random(1,100);
 	if nRand <= 10 then	--1¸öÏû½ÙÉ¢¡ª¡ª10%£¨Ã¿¿ª5¸ö°ü±ØµÃ£©
 		AddItem(2,0,141,1);
-		Msg2Player("NhËn ®­îc 1 Tiªu KiÕp T¸n");
+		Msg2Player("Received 1 Tieu Kiep Tan");
 	end;
 	if mod(nUseTime,5) == 0 then
 		AddItem(2,0,141,1);
-		Msg2Player("NhËn ®­îc 1 Tiªu KiÕp T¸n");
+		Msg2Player("Received 1 Tieu Kiep Tan");
 	end;
 	--================================================================
 	nRand = random(1,100);
@@ -98,25 +98,25 @@ function get_random_item(nUseTime)
 		Msg2Player("NhËn ®­îc 1 Viªm Hoµng ThiÕt Hån");
 	end;
 	Msg2Player("§©y lµ lÇn thø "..nUseTime.." lÇn dïng Tói vinh dù §¹i héi tû vâ");
-	WriteLog("[Tói vinh dù §¹i héi tû vâ lÇn 2]:"..GetName().."thø"..nUseTime.." lÇn dïng Tói vinh dù §¹i héi tû vâ");
+	WriteLog("[Tói vinh dù §¹i héi tû vâ lÇn 2]:"..GetName().."the"..nUseTime.." lÇn dïng Tói vinh dù §¹i héi tû vâ");
 end;
 
 g_tbBook = 
 {
-	[2] = {"Kim Cang B¸t Nh· Kinh",0,107,166},	--ÉÙÁÖË×¼Ò
+	[2] = {"Kim Cang Bat Nha Kinh",0,107,166},	--ÉÙÁÖË×¼Ò
 	[4] = {"TiÒm Long TÞch DiÖt Kinh",0,107,167}, --ÉÙÁÖÎäÉ®
-	[3] = {"V« TrÇn Bå §Ò Kinh",0,107,168}, --ÉÙÁÖìøÉ®
+	[3] = {"Vo Tran Bo De Kinh",0,107,168}, --ÉÙÁÖìøÉ®
 	[6] = {"Thiªn La Liªn Ch©u Lôc",0,107,169}, --ÌÆÃÅ
 	[8] = {"Nh­ ý Kim §Ønh MËt TÞch",0,107,170}, --¶ëáÒ·ð¼Ò
-	[9] = {"BÝch H¶i TuyÖt ¢m Phæ ",0,107,171}, --¶ëáÒË×¼Ò
+	[9] = {"Bich Hai Tuyet Am Manual",0,107,171}, --¶ëáÒË×¼Ò
 	[11] = {"Hçn §én TrÊn Nh¹c MËt TÞch",0,107,172}, --Ø¤°ï¾»ÒÂ
 	[12] = {"Quü Thiªn Du Long MËt TÞch",0,107,173}, --Ø¤°ïÎÛÒÂ
 	[14] = {"HuyÔn ¶nh Mª Tung MËt TÞch",0,107,174}, --Îäµ±µÀ¼Ò
 	[15] = {"Qu©n Tö TiÖt Phong MËt TÞch",0,107,175}, --Îäµ±Ë×¼Ò
-	[17] = {"TrÊn Qu©n Phi Long Th­¬ng Phæ",0,107,176}, --ÑîÃÅÇ¹Æï
+	[17] = {"Tran Quan Phi Long Thuong Manual",0,107,176}, --ÑîÃÅÇ¹Æï
 	[18] = {"Xuyªn V©n L¹c Hång MËt TÞch",0,107,177}, --ÑîÃÅ¹­Æï
-	[20] = {"U Minh Phong Ma Lôc",0,107,178}, --Îå¶¾Ð°ÏÀ
-	[21] = {"Linh Cæ HuyÔn Tµ Lôc",0,107,179}, --Îå¶¾¹ÆÊ¦
+	[20] = {"U Minh Phong Ma Manual",0,107,178}, --Îå¶¾Ð°ÏÀ
+	[21] = {"Linh Co Huyen Ta Manual",0,107,179}, --Îå¶¾¹ÆÊ¦
 	[23] = {"Cöu Thiªn Phong L«i QuyÕt",0,107,198},	
 	[29] = {"Hång TrÇn Tóy Méng Phæ",0,107,202},
 	[30] = {"Phong Hoa Thiªn DiÖp Phæ",0,107,203},	
@@ -131,7 +131,7 @@ function give_book(nNum)
 	local nID1,nID2,nID3 = tbBook[2],tbBook[3],tbBook[4];
 	local szName = tbBook[1];
 	AddItem(nID1,nID2,nID3,nNum,4);
-	Msg2Player(format("NhËn ®­îc %d quyÓn %s",nNum,szName));
+	Msg2Player(format("Received %d volumes of %s",nNum,szName));
 end;
 
 function nothing()

@@ -24,7 +24,7 @@ end;
 
 
 function no_shaolin()
-	Say("§a t¹!",0)
+	Say("Many thanks!",0)
 end;
 
 function no_other()

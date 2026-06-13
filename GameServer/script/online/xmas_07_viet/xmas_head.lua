@@ -42,9 +42,9 @@ xmas_items =
 	["VÀt trang tr› 2"] =		{2,	0,	579},
 	["VÀt trang tr› 3"] =		{2,	0,	580},
 	["VÀt trang tr› 4"] =		{2,	0,	581},
-	["Nh∏nh th´ng m¸ l÷"] =		{2,	0,	574},
-	["Nh∏nh th´ng Æ—p"] =		{2,	0,	575},
-	["Nh∏nh th´ng BH"] =			{2,	0,	576},
+	["Lovely Pine Branch"] =		{2,	0,	574},
+	["Pretty Pine Branch"] =		{2,	0,	575},
+	["BH Branch"] =			{2,	0,	576},
 	["VÀt tr.tr› th´ng BH 1"] =	{2,	0,	582},
 	["VÀt tr.tr› th´ng BH 2"] =	{2,	0,	583},
 	["VÀt tr.tr› th´ng BH 3"] =	{2,	0,	584},
@@ -101,7 +101,7 @@ function setup_global_value(ntype)
 		TASKID_XMAS_TREEINDEX	= 1556
 		TASKID_XMAS_PLANTTIME	= 1557
 		
-		XMAS_TREE_NAME			= "C©y th´ng m¸ l÷"
+		XMAS_TREE_NAME			= "Beautiful Pine Tree"
 		XMAS_PLANT_TREE_LIMIT	= 4;
 		XMAS_GATHER_TIME		= 16;
 		XMAS_GATHER_SCORE_LIMIT	= 3;
@@ -138,7 +138,7 @@ function Get_Time_String(nSecond)
 	end;
 	nMin = floor(mod(nSecond/60,60));
 	if nMin > 0 then
-		sTime = sTime..nMin.." phÛt ";
+		sTime = sTime..nMin.." minutes";
 	end;
 	nSec = mod(nSecond,60);
 	if nSec >= 0 then
@@ -162,7 +162,7 @@ end
 function is_jh_xmas_tree()
 	local nNpcIdx = GetTargetNpc();
 	if nNpcIdx == 0 or nNpcIdx == nil then 
-		WriteLog("[xmas_head]:"..GetName().."GetTargetNpc trﬁ tr∂ v“ sai");
+		WriteLog("[xmas_head]:"..GetName().."GetTargetNpc returned the wrong value");
 		return -1;
 	end
 	if nNpcIdx ~= GetTask(TASKID_XMAS_TREEINDEX) then
@@ -191,7 +191,7 @@ end
 
 function give_work_award()
 	local taward = {
-		{ {2,	0,	574, 1, 1}, "Nh∏nh th´ng m¸ l÷",},
+		{ {2,	0,	574, 1, 1}, "Lovely Pine Branch",},
 		{ {2,	0,	578, 1, 1}, "VÀt trang tr› 1",},
 		{ {2,	0,	579, 1, 1}, "VÀt trang tr› 2",},
 		{ {2,	0,	580, 1, 1}, "VÀt trang tr› 3",},

@@ -66,8 +66,8 @@ local nMapId, nX, nY = GetWorldPos();
 	if nMemCount == 0 then -- Íæ¼ÒÎ´×é¶Ó
 		if GetTask(TASK_DL_LV20_ID) == 3 then
 			SetTask(TASK_DL_LV20_ID,4);
-			TaskTip("DiÖt ®­îc HuyÕt L©n §éc m·ng, quay vÒ gÆp Cao Th¨ng TuyÒn.");
-			Msg2Player("DiÖt ®­îc HuyÕt L©n §éc m·ng, quay vÒ gÆp Cao Th¨ng TuyÒn.");
+			TaskTip("Having destroyed the Blood Scale Venomous Python, return to meet Cao Shengquan.");
+			Msg2Player("Having destroyed the Blood Scale Venomous Python, return to meet Cao Shengquan.");
 		end;	
   else
     for i=1,nMemCount do
@@ -76,8 +76,8 @@ local nMapId, nX, nY = GetWorldPos();
        local nDist = DistanceBetweenPoints(nMapId, nX, nY, nTeamMapId, nTeamX, nTeamY);
        if GetTask(TASK_DL_LV20_ID) == 3 and nDist >= 0 and nDist <= 50 then
        	SetTask(TASK_DL_LV20_ID, 4);
-       	Msg2Player("DiÖt ®­îc HuyÕt L©n §éc m·ng, quay vÒ gÆp Cao Th¨ng TuyÒn.");
-       	TaskTip("DiÖt ®­îc HuyÕt L©n §éc m·ng, quay vÒ gÆp Cao Th¨ng TuyÒn.");
+       	Msg2Player("Having destroyed the Blood Scale Venomous Python, return to meet Cao Shengquan.");
+       	TaskTip("Having destroyed the Blood Scale Venomous Python, return to meet Cao Shengquan.");
        end;
 		end;
 	PlayerIndex = nPreservedPlayerIndex; -- ÖØÖÃÖ®Ç°´¢´æµÄÍæ¼Ò±àºÅ

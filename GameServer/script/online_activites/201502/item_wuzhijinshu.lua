@@ -15,7 +15,7 @@ end
 
 function wzjs_exchange_1()
 	if GetItemCount(2,1,30785) < 999 then
-		Talk(1,"",format("Trong hµnh trang %s sè l­îng kh«ng ®ñ %d", "V« Tù Kinh Th­", 999))
+		Talk(1,"",format("Trong hµnh trang %s sè l­îng kh«ng ®ñ %d", "Wordless Scripture", 999))
 		return 0;
 	end
 	if DelItem(2,1,30785,999) ~= 1 then
@@ -26,7 +26,7 @@ end
 
 function wzjs_exchange_2()
 	if GetItemCount(2,1,30785) < 999 then
-		Talk(1,"",format("Trong hµnh trang %s sè l­îng kh«ng ®ñ %d", "V« Tù Kinh Th­", 999))
+		Talk(1,"",format("Trong hµnh trang %s sè l­îng kh«ng ®ñ %d", "Wordless Scripture", 999))
 		return 0;
 	end
 	if GetItemCount(2,1,30230) < 100 then

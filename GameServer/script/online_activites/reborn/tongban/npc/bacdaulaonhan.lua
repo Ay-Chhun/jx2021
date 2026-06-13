@@ -24,7 +24,7 @@ function main()
 --	tinsert(tSay,"Ta muèn tÈy toµn bé huyÖt ®¹o ch©n khÝ/vng_restore_Meridian");	
 	if nDate >= 20140213 and nDate <= 20140220 then
 		if  gf_GetTaskBit(TSK_XOA_KHUATNGUYENBOI,1) == 1 and gf_GetTaskBit(TSK_XOA_KHUATNGUYENBOI,2) == 0 and nChuyenSinh >= 5 then
-			tinsert(tSay, "NhËn KhuÊt Nguyªn Béi miÔn phÝ/NhanKhuatNguyenBoi_Free")
+			tinsert(tSay, "Receive the free Qu Yuan Pendant/NhanKhuatNguyenBoi_Free")
 		end
 	end
 	if nDate >= 20161105 and nDate <= 20161125 then
@@ -97,7 +97,7 @@ function phucsinh_lan4()
 	tinsert(tbSayDialog,"Ta ®¹t cÊp 99/#confirm_phucsinh4(1)")
 	tinsert(tbSayDialog,"Ta ®¹t cÊp 98/#confirm_phucsinh4(2)")
 	tinsert(tbSayDialog,"Ta ®¹t cÊp 97/#confirm_phucsinh4(3)")
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/nothing"	)
+	tinsert(tbSayDialog,"End dialogue/nothing"	)
 	
 	nSaySize = getn(tbSayDialog);
 	Say(szSayHead, nSaySize, tbSayDialog);	
@@ -112,41 +112,41 @@ function confirm_phucsinh4(nType)
 	local tSay = {}
 	local tHeader = szNpcName.."§¹i hiÖp qu¶ lµ mét kú nh©n trong Vâ L©m, b¾t ®Çu lÜnh ngé bÝ kÝp <color=yellow>Tø Linh Phôc Sinh 4<color> ®Ó ®ét ph¸ b×nh c¶nh. LÜnh ngé thµnh c«ng cã thÓ kich thÝch tiÒm lùc cña b¶n th©n ®¹t c¶nh giíi míi trong §¶ Th«ng Kinh M¹ch. !!!"
 	
-	tinsert(tSay, "Phôc sinh theo h­íng Long Tö/#cs9_finish_confrim(1,"..nType..")")			
-	tinsert(tSay, "Phôc sinh theo h­íng Hæ Tö/#cs9_finish_confrim(2,"..nType..")")			
+	tinsert(tSay, "Resurrect along the Dragon Son path/#cs9_finish_confrim(1,"..nType..")")			
+	tinsert(tSay, "Resurrect along the Tiger Son path/#cs9_finish_confrim(2,"..nType..")")			
 	tinsert(tSay, "Phôc sinh theo h­íng Phông Tö/#cs9_finish_confrim(4,"..nType..")")			
-	tinsert(tSay, "Phôc sinh theo h­íng ¦ng Tö/#cs9_finish_confrim(3,"..nType..")")		
+	tinsert(tSay, "Resurrect along the Eagle Son path/#cs9_finish_confrim(3,"..nType..")")		
 	tinsert(tSay, "Ta ch­a muèn Phôc Sinh/nothing")		
 	Say(tHeader, getn(tSay), tSay)	
 end
 
 function cs9_finish_confrim(nType, nCheck)
 		local tb_translife_seal_cs9 = {
-							{"Long Tö Ên",{2,0,30002,1,1}, "Long Tö"},
-							{"Hæ Tö Ên",{2,0,30003,1,1}, "Hæ Tö"},
-							{"¦ng Tö Ên",{2,0,30006,1,1}, "¦ng Tö"},
+							{"Dragon Seal",{2,0,30002,1,1}, "Long Tö"},
+							{"Tiger Seal",{2,0,30003,1,1}, "Hæ Tö"},
+							{"Eagle Seal",{2,0,30006,1,1}, "¦ng Tö"},
 							{"Phông Tö Ên",{2,0,30005,1,1}, "Phông Tö"},							
 					}
 		local tb_translife_cloth_PS = {
 										[1] = {
-													{"ChuyÓn Sinh Trang", {0,108,30005,1,4,5,639,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,342,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,110,30005,1,4,6,306,6,102}},
+													{"Rebirth Manor", {0,108,30005,1,4,5,639,6,102}}, 
+													{"Rebirth Manor", {0,109,30005,1,4,5,342,6,102}}, 
+													{"Rebirth Manor", {0,110,30005,1,4,6,306,6,102}},
 											},		
 										[2] = {
-													{"ChuyÓn Sinh Trang", {0,108,30005,1,4,6,302,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,409,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,110,30005,1,4,5,79,5,80,6,102}},
+													{"Rebirth Manor", {0,108,30005,1,4,6,302,6,102}}, 
+													{"Rebirth Manor", {0,109,30005,1,4,5,409,6,102}}, 
+													{"Rebirth Manor", {0,110,30005,1,4,5,79,5,80,6,102}},
 											},
 										[3] = {
-													 {"ChuyÓn Sinh Trang", {0,108,30005,1,4,2,13075,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,342,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,110,30005,1,4,6,306,6,102}},
+													 {"Rebirth Manor", {0,108,30005,1,4,2,13075,6,102}}, 
+													 {"Rebirth Manor", {0,109,30005,1,4,5,342,6,102}}, 
+													 {"Rebirth Manor", {0,110,30005,1,4,6,306,6,102}},
 											},	
 										[4] = {
-													 {"ChuyÓn Sinh Trang", {0,108,30005,1,4,5,27,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,342,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,110,30005,1,4,4,292,4,293,6,102}},
+													 {"Rebirth Manor", {0,108,30005,1,4,5,27,6,102}}, 
+													 {"Rebirth Manor", {0,109,30005,1,4,5,342,6,102}}, 
+													 {"Rebirth Manor", {0,110,30005,1,4,4,292,4,293,6,102}},
 											},
 									}
 	local nPhucSinh_Count = GetPlayerRebornParam(0) 
@@ -154,7 +154,7 @@ function cs9_finish_confrim(nType, nCheck)
 	local tbType = {"Long Tö", "Hæ Tö", "¦ng Tö", "Phông Tö"}
 	local nType_cs8 = GetPlayerRebornParam(2)
 	if nType_cs8 < 0 or nType_cs8 > 4 then
-		Msg2Player("§· x¶y ra lçi")
+		Msg2Player("An error has occurred")
 		gf_WriteLogEx("LOI API", "ghi nhËn thµnh c«ng", 1, "Lçi API chuyÓn sinh 9")	
 		return
 	end
@@ -203,20 +203,20 @@ function cs9_finish_confrim(nType, nCheck)
 	end
 --	RemoveTitle(tb_translife_tittle[nTransCount][nRoute][2], tb_translife_tittle[nTransCount][nRoute][3])	
 
-	local tbVanSu = {"V¨n Sö ngo¹i trang",0,108,570,188}
+	local tbVanSu = {"Scholar Outfit",0,108,570,188}
 	local nPVanSu = tbVanSu[4]  + GetBody() - 1
 	for i = 0, 2 do
 		BigDelItem(0, 108 + i, nPVanSu, BigGetItemCount(0, 108 + i, nPVanSu))	
 	end
 	gf_AddItemEx(tb_translife_seal_cs9[nType][2], tb_translife_seal_cs9[nType][1])
-	gf_AddItemEx2({0, 105, 30056, 1, 4, -1, -1, -1, -1, -1, -1},"Long M·", "Long Ma","mien phi 30 ngay",30*24*3600)
+	gf_AddItemEx2({0, 105, 30056, 1, 4, -1, -1, -1, -1, -1, -1},"Dragon Horse", "Long Ma","mien phi 30 ngay",30*24*3600)
 	PlayerReborn(4,nType) -- ChuyÓn Sinh 9 thµnh c«ng (Phôc Sinh 4)
 	RemoveTitle(71,01)
 	AddTitle(73,01)
 	--PhucSinh2_Award_SetStatus()
  	gf_WriteLogEx("CHUYEN SINH 9", "chuyÓn sinh thµnh c«ng", 1, "Finish nv chuyÓn Sinh 9 npc 4")	
 	Msg2Player("Chóc mõng ®¹i hiÖp ®· Phôc Sinh thµnh c«ng theo h­íng "..tbType[nType])
-	Say("Chóc mõng ®¹i hiÖp ®· lÜnh ngé thµnh c«ng bÝ kÝp gia truyÒn Tø Linh Phôc Sinh lÇn 4 !!!!! H·y ®¨ng nhËp l¹i.",1,"Tho¸t!/go_exit")
+	Say("Chóc mõng ®¹i hiÖp ®· lÜnh ngé thµnh c«ng bÝ kÝp gia truyÒn Tø Linh Phôc Sinh lÇn 4 !!!!! H·y ®¨ng nhËp l¹i.",1,"Exit!/go_exit")
 end
 	tCheck_PS4 = {	--Level, kinh nghiÖm, Th¸i dÞch Hçn Nguyªn, Th­ tiÕn cö, Phôc Sinh §¥n, ThÇn Tµi b¶o r­¬ng
 					[1] = {99, 20, 6, 1, 0 , 0},
@@ -317,7 +317,7 @@ function phucsinh_lan3()
 	tinsert(tbSayDialog,"Ta ®¹t cÊp 99/#confirm_phucsinh3(1)")
 	tinsert(tbSayDialog,"Ta ®¹t cÊp 98/#confirm_phucsinh3(2)")
 	tinsert(tbSayDialog,"Ta ®¹t cÊp 97/#confirm_phucsinh3(3)")
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/nothing"	)
+	tinsert(tbSayDialog,"End dialogue/nothing"	)
 	
 	nSaySize = getn(tbSayDialog);
 	Say(szSayHead, nSaySize, tbSayDialog);	
@@ -332,41 +332,41 @@ function confirm_phucsinh3(nType)
 	local tSay = {}
 	local tHeader = szNpcName.."§¹i hiÖp qu¶ lµ mét kú nh©n trong Vâ L©m, b¾t ®Çu lÜnh ngé bÝ kÝp <color=yellow>Tø Linh Phôc Sinh 3<color> ®Ó ®ét ph¸ b×nh c¶nh. LÜnh ngé thµnh c«ng cã thÓ kich thÝch tiÒm lùc cña b¶n th©n ®¹t c¶nh giíi míi trong §¶ Th«ng Kinh M¹ch. !!!"
 	
-	tinsert(tSay, "Phôc sinh theo h­íng Long Tö/#cs8_finish_confrim(1,"..nType..")")			
-	tinsert(tSay, "Phôc sinh theo h­íng Hæ Tö/#cs8_finish_confrim(2,"..nType..")")			
+	tinsert(tSay, "Resurrect along the Dragon Son path/#cs8_finish_confrim(1,"..nType..")")			
+	tinsert(tSay, "Resurrect along the Tiger Son path/#cs8_finish_confrim(2,"..nType..")")			
 	tinsert(tSay, "Phôc sinh theo h­íng Phông Tö/#cs8_finish_confrim(4,"..nType..")")			
-	tinsert(tSay, "Phôc sinh theo h­íng ¦ng Tö/#cs8_finish_confrim(3,"..nType..")")		
+	tinsert(tSay, "Resurrect along the Eagle Son path/#cs8_finish_confrim(3,"..nType..")")		
 	tinsert(tSay, "Ta ch­a muèn Phôc Sinh/nothing")		
 	Say(tHeader, getn(tSay), tSay)	
 end
 
 function cs8_finish_confrim(nType, nCheck)
 		local tb_translife_seal_cs8 = {
-							{"Long Tö Ên",{2,0,30002,1,1}, "Long Tö"},
-							{"Hæ Tö Ên",{2,0,30003,1,1}, "Hæ Tö"},
-							{"¦ng Tö Ên",{2,0,30006,1,1}, "¦ng Tö"},
+							{"Dragon Seal",{2,0,30002,1,1}, "Long Tö"},
+							{"Tiger Seal",{2,0,30003,1,1}, "Hæ Tö"},
+							{"Eagle Seal",{2,0,30006,1,1}, "¦ng Tö"},
 							{"Phông Tö Ên",{2,0,30005,1,1}, "Phông Tö"},							
 					}
 		local tb_translife_cloth_PS = {
 										[1] = {
-													{"ChuyÓn Sinh Trang", {0,108,30005,1,4,5,639,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,342,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,110,30005,1,4,6,306,6,102}},
+													{"Rebirth Manor", {0,108,30005,1,4,5,639,6,102}}, 
+													{"Rebirth Manor", {0,109,30005,1,4,5,342,6,102}}, 
+													{"Rebirth Manor", {0,110,30005,1,4,6,306,6,102}},
 											},		
 										[2] = {
-													{"ChuyÓn Sinh Trang", {0,108,30005,1,4,6,302,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,409,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,110,30005,1,4,5,79,5,80,6,102}},
+													{"Rebirth Manor", {0,108,30005,1,4,6,302,6,102}}, 
+													{"Rebirth Manor", {0,109,30005,1,4,5,409,6,102}}, 
+													{"Rebirth Manor", {0,110,30005,1,4,5,79,5,80,6,102}},
 											},
 										[3] = {
-													 {"ChuyÓn Sinh Trang", {0,108,30005,1,4,2,13075,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,342,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,110,30005,1,4,6,306,6,102}},
+													 {"Rebirth Manor", {0,108,30005,1,4,2,13075,6,102}}, 
+													 {"Rebirth Manor", {0,109,30005,1,4,5,342,6,102}}, 
+													 {"Rebirth Manor", {0,110,30005,1,4,6,306,6,102}},
 											},	
 										[4] = {
-													 {"ChuyÓn Sinh Trang", {0,108,30005,1,4,5,27,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,342,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,110,30005,1,4,4,292,4,293,6,102}},
+													 {"Rebirth Manor", {0,108,30005,1,4,5,27,6,102}}, 
+													 {"Rebirth Manor", {0,109,30005,1,4,5,342,6,102}}, 
+													 {"Rebirth Manor", {0,110,30005,1,4,4,292,4,293,6,102}},
 											},
 									}
 	local nPhucSinh_Count = GetPlayerRebornParam(0) 
@@ -374,7 +374,7 @@ function cs8_finish_confrim(nType, nCheck)
 	local tbType = {"Long Tö", "Hæ Tö", "¦ng Tö", "Phông Tö"}
 	local nType_cs7 = GetPlayerRebornParam(1)
 	if nType_cs7 < 0 or nType_cs7 > 4 then
-		Msg2Player("§· x¶y ra lçi")
+		Msg2Player("An error has occurred")
 		gf_WriteLogEx("LOI API", "ghi nhËn thµnh c«ng", 1, "Lçi API chuyÓn sinh 8")	
 		return
 	end
@@ -424,20 +424,20 @@ function cs8_finish_confrim(nType, nCheck)
 
 --	RemoveTitle(tb_translife_tittle[nTransCount][nRoute][2], tb_translife_tittle[nTransCount][nRoute][3])	
 
-	local tbVanSu = {"V¨n Sö ngo¹i trang",0,108,570,188}
+	local tbVanSu = {"Scholar Outfit",0,108,570,188}
 	local nPVanSu = tbVanSu[4]  + GetBody() - 1
 	for i = 0, 2 do
 		BigDelItem(0, 108 + i, nPVanSu, BigGetItemCount(0, 108 + i, nPVanSu))	
 	end
 	gf_AddItemEx(tb_translife_seal_cs8[nType][2], tb_translife_seal_cs8[nType][1])
-	gf_AddItemEx2({0, 105, 10107, 1, 4, -1, -1, -1, -1, -1, -1},"ThÊt tinh kiÕm", "That tinh kiem","mien phi 7 ngay",7*24*3600)
+	gf_AddItemEx2({0, 105, 10107, 1, 4, -1, -1, -1, -1, -1, -1},"Seven Star Sword", "That tinh kiem","mien phi 7 ngay",7*24*3600)
 	PlayerReborn(3,nType) -- ChuyÓn Sinh 8 thµnh c«ng (Phôc Sinh 3)
 	RemoveTitle(61,06)
 	AddTitle(71,01)
 	--PhucSinh2_Award_SetStatus()
  	gf_WriteLogEx("CHUYEN SINH 8", "chuyÓn sinh thµnh c«ng", 1, "Finish nv chuyÓn Sinh 8 npc 3")	
 	Msg2Player("Chóc mõng ®¹i hiÖp ®· Phôc Sinh thµnh c«ng theo h­íng "..tbType[nType])
-	Say("Chóc mõng ®¹i hiÖp ®· lÜnh ngé thµnh c«ng bÝ kÝp gia truyÒn Tø Linh Phôc Sinh lÇn 3 !!!!! H·y ®¨ng nhËp l¹i.",1,"Tho¸t!/go_exit")
+	Say("Chóc mõng ®¹i hiÖp ®· lÜnh ngé thµnh c«ng bÝ kÝp gia truyÒn Tø Linh Phôc Sinh lÇn 3 !!!!! H·y ®¨ng nhËp l¹i.",1,"Exit!/go_exit")
 end
 
 	tCheck_PS3 = {	--Level, kinh nghiÖm, Th¸i dÞch Hçn Nguyªn, Th­ tiÕn cö, Phôc Sinh §¥n, ThÇn Tµi b¶o r­¬ng
@@ -556,17 +556,17 @@ function way_change_chuyensinh(nType)
 	local tSay = {}
 	local tHeader = szNpcName.."§¹i hiÖp muèn thay ®æi ChuyÓn Sinh theo h­íng nµo ????."
 	if nType == 1 then
-		tinsert(tSay, "H­íng Long Tö/#confirm_change_chuyensinh("..nType..", 1)")
-		tinsert(tSay, "H­íng Hæ Tö/#confirm_change_chuyensinh("..nType..", 2)")
-		tinsert(tSay, "H­íng ¦ng Tö/#confirm_change_chuyensinh("..nType..", 3)")
+		tinsert(tSay, "Dragon Son path/#confirm_change_chuyensinh("..nType..", 1)")
+		tinsert(tSay, "Tiger Son path/#confirm_change_chuyensinh("..nType..", 2)")
+		tinsert(tSay, "Eagle Son path/#confirm_change_chuyensinh("..nType..", 3)")
 		tinsert(tSay, "H­íng Phông Tö/#confirm_change_chuyensinh("..nType..", 4)")
 		tinsert(tSay, "T¹m thêi ta ch­a muèn thay ®æi/do_nothing")
 		Say(tHeader, getn(tSay), tSay)		
 	elseif nType == 2 then
 		tHeader = szNpcName.."§¹i hiÖp muèn thay ®æi theo h­íng nµo. §èi víi Phôc Sinh, sau khi thay ®æi sÏ bÞ vÒ level 10, h·y ®Õn g¾p B¹ch Tiªn Sinh (TuyÒn Ch©u) ®Ó nhËn l¹i level !!!!."		
-		tinsert(tSay, "H­íng Long Tö/#confirm_change_chuyensinh("..nType..", 1)")
-		tinsert(tSay, "H­íng Hæ Tö/#confirm_change_chuyensinh("..nType..", 2)")
-		tinsert(tSay, "H­íng ¦ng Tö/#confirm_change_chuyensinh("..nType..", 3)")		
+		tinsert(tSay, "Dragon Son path/#confirm_change_chuyensinh("..nType..", 1)")
+		tinsert(tSay, "Tiger Son path/#confirm_change_chuyensinh("..nType..", 2)")
+		tinsert(tSay, "Eagle Son path/#confirm_change_chuyensinh("..nType..", 3)")		
 		tinsert(tSay, "H­íng Phông Tö/#confirm_change_chuyensinh("..nType..", 4)")
 		tinsert(tSay, "T¹m thêi ta ch­a muèn thay ®æi/do_nothing")
 		Say(tHeader, getn(tSay), tSay)			
@@ -662,7 +662,7 @@ function confirm_change_chuyensinh(nType, nWay)
 		gf_SetTaskByte(TRANSLIFE_TASK_ID, TRANSLIFE_BYTE_FACTION, nWay)	
 		Talk(1,"", "Chóc mõng ®¹i hiÖp ®· thay ®æi h­íng ChuyÓn Sinh thµnh c«ng, h·y ®Õn gÆp B¹ch Tiªn Sinh ®Ó nhËn l¹i trang bÞ ChuyÓn Sinh míi !!!!")		
 		Msg2Player("Chóc mõng ®¹i hiÖp ®· thay ®æi h­íng ChuyÓn Sinh thµnh c«ng, h·y ®Õn gÆp B¹ch Tiªn Sinh ®Ó nhËn l¹i trang bÞ ChuyÓn Sinh míi !!!!")
-		gf_WriteLogEx("THAY DOI HUONG CHUYEN SINH", "thay ®æi thµnh c«ng", 1, "ChuyÓn Sinh ®æi h­íng "..nWay)
+		gf_WriteLogEx("THAY DOI HUONG CHUYEN SINH", "thay ®æi thµnh c«ng", 1, "Rebirth path change"..nWay)
 	end	
 	if nType == 2 then
 --		local nNum_cs6 = GetPlayerRebornParam(0)	--¸p dông thay ®æi h­íng Phôc sinh lu«n cho c¸c Phôc sinh 2, 3, 4...
@@ -674,7 +674,7 @@ function confirm_change_chuyensinh(nType, nWay)
 		PlayerReborn(nNum_cs6,nWay) -- Thay ®æi h­íng chuyÓn Sinh 6 thµnh c«ng		
 		Talk(1,"", "Chóc mõng ®¹i hiÖp ®· thay ®æi h­íng Phôc Sinh thµnh c«ng, h·y ®Õn gÆp B¹ch Tiªn Sinh ®Ó nhËn l¹i trang bÞ Phôc Sinh míi !!!!")		
 		Msg2Player("Chóc mõng ®¹i hiÖp ®· thay ®æi h­íng Phôc Sinh thµnh c«ng, h·y ®Õn gÆp B¹ch Tiªn Sinh ®Ó nhËn l¹i trang bÞ Phôc Sinh míi !!!!")
-		gf_WriteLogEx("THAY DOI HUONG CHUYEN SINH", "thay ®æi thµnh c«ng", 1, "Phôc Sinh ®æi h­íng "..nWay)
+		gf_WriteLogEx("THAY DOI HUONG CHUYEN SINH", "thay ®æi thµnh c«ng", 1, "Resurrection path change"..nWay)
 		NewWorld(200,1353, 2876)
 	end
 end
@@ -707,8 +707,8 @@ function NopTraiCayNhanChanKhi_Form()
 		return 0
 	end
 	local tbFruitList = {
-		[1] = "Nh·n", [2] = "Ch«m Ch«m", [3] = "Cam", [4] = "Dõa", [5] = "M¨ng côt", [6] = "B­ëi", [7] = "D©u", [8] = "Chuèi", [9] = "Xoµi", [10] = "§µo", 
-		[11] = "MËn", [12] = "V¶i", [13] = "T¸o", [14] = "B¬", [15] = "§u ®ñ", [16] = "M·ng cÇu", [17] = "Khãm", [18] = "Lª", [19] = "Bßn bon", [20] = "KhÕ",
+		[1] = "Longan", [2] = "Rambutan", [3] = "Cam", [4] = "Coconut", [5] = "Mangosteen", [6] = "Pomelo", [7] = "Strawberry", [8] = "Banana", [9] = "Mango", [10] = "Peach", 
+		[11] = "Plum", [12] = "Lychee", [13] = "Apple", [14] = "Avocado", [15] = "Sufficient enough", [16] = "Soursop", [17] = "Pineapple", [18] = "Li", [19] = "Langsat", [20] = "Star Fruit",
 	}
 	local tSay = {}
 	tSay[0] =  szNpcName.."C¸c h¹ muèn ®­a ta lo¹i tr¸i c©y nµo?"
@@ -836,31 +836,31 @@ end
 
 function cs7_xacnhan(nType)
 		local tb_translife_seal_cs7 = {
-							{"Long Tö Ên",{2,0,30002,1,1}, "Long Tö"},
-							{"Hæ Tö Ên",{2,0,30003,1,1}, "Hæ Tö"},
-							{"¦ng Tö Ên",{2,0,30006,1,1}, "¦ng Tö"},
+							{"Dragon Seal",{2,0,30002,1,1}, "Long Tö"},
+							{"Tiger Seal",{2,0,30003,1,1}, "Hæ Tö"},
+							{"Eagle Seal",{2,0,30006,1,1}, "¦ng Tö"},
 							{"Phông Tö Ên",{2,0,30005,1,1}, "Phông Tö"},							
 					}
 		local tb_translife_cloth_PS = {
 										[1] = {
-													{"ChuyÓn Sinh Trang", {0,108,30005,1,4,5,639,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,342,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,110,30005,1,4,6,306,6,102}},
+													{"Rebirth Manor", {0,108,30005,1,4,5,639,6,102}}, 
+													{"Rebirth Manor", {0,109,30005,1,4,5,342,6,102}}, 
+													{"Rebirth Manor", {0,110,30005,1,4,6,306,6,102}},
 											},		
 										[2] = {
-													{"ChuyÓn Sinh Trang", {0,108,30005,1,4,6,302,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,409,6,102}}, 
-													{"ChuyÓn Sinh Trang", {0,110,30005,1,4,5,79,5,80,6,102}},
+													{"Rebirth Manor", {0,108,30005,1,4,6,302,6,102}}, 
+													{"Rebirth Manor", {0,109,30005,1,4,5,409,6,102}}, 
+													{"Rebirth Manor", {0,110,30005,1,4,5,79,5,80,6,102}},
 											},
 										[3] = {
-													 {"ChuyÓn Sinh Trang", {0,108,30005,1,4,2,13075,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,342,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,110,30005,1,4,6,306,6,102}},
+													 {"Rebirth Manor", {0,108,30005,1,4,2,13075,6,102}}, 
+													 {"Rebirth Manor", {0,109,30005,1,4,5,342,6,102}}, 
+													 {"Rebirth Manor", {0,110,30005,1,4,6,306,6,102}},
 											},	
 										[4] = {
-													 {"ChuyÓn Sinh Trang", {0,108,30005,1,4,5,27,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,109,30005,1,4,5,342,6,102}}, 
-													 {"ChuyÓn Sinh Trang", {0,110,30005,1,4,4,292,4,293,6,102}},
+													 {"Rebirth Manor", {0,108,30005,1,4,5,27,6,102}}, 
+													 {"Rebirth Manor", {0,109,30005,1,4,5,342,6,102}}, 
+													 {"Rebirth Manor", {0,110,30005,1,4,4,292,4,293,6,102}},
 											},
 									}
 	local nPhucSinh_Count = GetPlayerRebornParam(0) 
@@ -868,7 +868,7 @@ function cs7_xacnhan(nType)
 	local tbType = {"Long Tö", "Hæ Tö", "¦ng Tö", "Phông Tö"}
 	local nType_cs6 = GetPlayerRebornParam(1)
 	if nType_cs6 < 0 or nType_cs6 > 4 then
-		Msg2Player("§· x¶y ra lçi")
+		Msg2Player("An error has occurred")
 		gf_WriteLogEx("LOI API", "ghi nhËn thµnh c«ng", 1, "Lçi API chuyÓn sinh 7")	
 		return
 	end
@@ -894,20 +894,20 @@ function cs7_xacnhan(nType)
 		end
 
 
-	local tbVanSu = {"V¨n Sö ngo¹i trang",0,108,570,188}
+	local tbVanSu = {"Scholar Outfit",0,108,570,188}
 	local nPVanSu = tbVanSu[4]  + GetBody() - 1
 	for i = 0, 2 do
 		BigDelItem(0, 108 + i, nPVanSu, BigGetItemCount(0, 108 + i, nPVanSu))	
 	end
 	gf_AddItemEx(tb_translife_seal_cs7[nType][2], tb_translife_seal_cs7[nType][1])
-	gf_AddItemEx2({0, 105, 10107, 1, 4, -1, -1, -1, -1, -1, -1},"ThÊt tinh kiÕm", "That tinh kiem","mien phi 7 ngay",7*24*3600)
+	gf_AddItemEx2({0, 105, 10107, 1, 4, -1, -1, -1, -1, -1, -1},"Seven Star Sword", "That tinh kiem","mien phi 7 ngay",7*24*3600)
 	PlayerReborn(2,nType) -- ChuyÓn Sinh 7 thµnh c«ng (Phôc Sinh 2)
 	RemoveTitle(61,05)
 	AddTitle(61,06)
 	--PhucSinh2_Award_SetStatus()
  	gf_WriteLogEx("CHUYEN SINH 7", "chuyÓn sinh thµnh c«ng", 1, "Finish nv chuyÓn Sinh 6 npc 2")	
 	Msg2Player("Chóc mõng ®¹i hiÖp ®· Phôc Sinh thµnh c«ng theo h­íng "..tbType[nType])
-	Say("Chóc mõng ®¹i hiÖp ®· lÜnh ngé thµnh c«ng bÝ kÝp gia truyÒn Tø Linh Phôc Sinh lÇn 2 !!!!! H·y ®¨ng nhËp l¹i.",1,"Tho¸t!/go_exit")
+	Say("Chóc mõng ®¹i hiÖp ®· lÜnh ngé thµnh c«ng bÝ kÝp gia truyÒn Tø Linh Phôc Sinh lÇn 2 !!!!! H·y ®¨ng nhËp l¹i.",1,"Exit!/go_exit")
 end
 
 --end function
@@ -961,11 +961,11 @@ local tRequireElement =
 	end
 	
 	local tSay = {}
-	tinsert(tSay, "§ång ý luyÖn/confirm_learn_subskill_1_active")
+	tinsert(tSay, "Agree to train/confirm_learn_subskill_1_active")
 	tinsert(tSay, "§Ó ta suy nghÜ l¹i/do_nothing")
 	
 	local nGold = tRequireElement[1][3] / 10000
-	Say(szNpcName..": LuyÖn B¾c §Èu Ngù Linh ThÇn ThuËt cÇn cã <color=yellow>"..tRequireElement[1][2].." ®iÓm tu luyÖn, "..nGold.." vµng vµ "..tRequireElement[1][4].." m¶nh Th¸i DÞch Hçn Nguyªn C«ng §å<color>, c¸c h¹ cã ®ång ý luyÖn kh«ng?", 2, tSay)
+	Say(szNpcName..": LuyÖn B¾c §Èu Ngù Linh ThÇn ThuËt cÇn cã <color=yellow>"..tRequireElement[1][2].." ®iÓm tu luyÖn, "..nGold.." gold and"..tRequireElement[1][4].." m¶nh Th¸i DÞch Hçn Nguyªn C«ng §å<color>, c¸c h¹ cã ®ång ý luyÖn kh«ng?", 2, tSay)
 end
 
 function confirm_learn_subskill_1_active()
@@ -1024,7 +1024,7 @@ function levelup_subskill_1(nSkillLevel)
 		tinsert(tSay, "§Ó ta suy nghÜ l¹i/do_nothing")
 		
 		local nGold = tRequireElement[nSkillLevel][3] / 10000
-		Say("§Ó n©ng cÊp B¾c §Èu Ngù Linh ThÇn ThuËt lªn cÊp "..nSkillLevel.."cÇn cã <color=yellow>"..tRequireElement[nSkillLevel][1].." ®iÓm N©ng CÊp, "..tRequireElement[nSkillLevel][5].." ®iÓm Linh Lùc, "..tRequireElement[nSkillLevel][2].." ®iÓm tu luyÖn, "..nGold.." vµng vµ "..tRequireElement[nSkillLevel][4].." m¶nh Th¸i DÞch Hçn Nguyªn C«ng §å<color>, c¸c h¹ cã ®ång ý n©ng cÊp kh«ng?", 2, tSay)
+		Say("§Ó n©ng cÊp B¾c §Èu Ngù Linh ThÇn ThuËt lªn cÊp "..nSkillLevel.."cÇn cã <color=yellow>"..tRequireElement[nSkillLevel][1].." ®iÓm N©ng CÊp, "..tRequireElement[nSkillLevel][5].." ®iÓm Linh Lùc, "..tRequireElement[nSkillLevel][2].." ®iÓm tu luyÖn, "..nGold.." gold and"..tRequireElement[nSkillLevel][4].." m¶nh Th¸i DÞch Hçn Nguyªn C«ng §å<color>, c¸c h¹ cã ®ång ý n©ng cÊp kh«ng?", 2, tSay)
 	end
 end
 
@@ -1125,7 +1125,7 @@ function check_skill_55()
 end
 
 function exchange_chankhi()
-	AskClientForNumber("Confirm_Exchange_chankhi", 1, 100, "§iÓm tÝch lòy")
+	AskClientForNumber("Confirm_Exchange_chankhi", 1, 100, "Accumulated points")
 end
 
 function Confirm_Exchange_chankhi(nCount)
@@ -1177,10 +1177,10 @@ function exchange_chankhi_bygold(nTypeCK)
 	local nCurdate = floor(GetTask(2728)/10000)
 	local tb_check_CK_gold = {
 		[1] = {100, 2500000, 30000000, "250 vang + exp"},
-		[2] = {1000, 25000000, 300000000, "2500 vµng + exp"},
+		[2] = {1000, 25000000, 300000000, "2500 gold + exp"},
 		[3] = {100, 69, 30000000, "69 xu + exp"},
 		[4] = {1000, 690, 300000000, "690 xu + exp"},
-		[5] = {100, 10000000, 0, "1000 vµng"},
+		[5] = {100, 10000000, 0, "1000 gold"},
 	}
 	if nDate ~= nCurdate then
 		SetTask(2728 , nDate*10000)
@@ -1328,8 +1328,8 @@ function select_translife(nType, nLoai)
 		ResetProperty()
 		SetLevel(88,0)
 		Msg2Player("§ang tu luyÖn Hçn Nguyªn C«ng chiªu thøc thø hai...")
-		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> tu luyÖn theo h­íng <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 4 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
-		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." theo h­íng "..tb_translife_seal[nType][3])	
+		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> cultivated along the path <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 4 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
+		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." along the path"..tb_translife_seal[nType][3])	
 		DoWait(15,15,10)	
 	elseif nLoai == 2 then
 		local nTransCount = GetTranslifeCount()	
@@ -1342,7 +1342,7 @@ function select_translife(nType, nLoai)
 			att3 = att3 or 0
 			BigDelItem(G,D,P,BigGetItemCount(G,D,P))
 			BigDelItem(G,D,Pnew,BigGetItemCount(G,D,Pnew))
-			gf_AddItemEx2({G, D, Pnew, nCount,4, lvatt1, att1, lvatt2, att2, lvatt3, att3},"V¨n Sö Trang","Chuyen Sinh","nhËn ngo¹i trang",120*24*3600,1)
+			gf_AddItemEx2({G, D, Pnew, nCount,4, lvatt1, att1, lvatt2, att2, lvatt3, att3},"Literary Manor","Chuyen Sinh","nhËn ngo¹i trang",120*24*3600,1)
 		end
 		RemoveTitle(tb_translife_tittle[nTransCount-1][nRoute][2], tb_translife_tittle[nTransCount-1][nRoute][3])
 		AddTitle(tb_translife_tittle[nTransCount][nRoute][2], tb_translife_tittle[nTransCount][nRoute][3])
@@ -1353,8 +1353,8 @@ function select_translife(nType, nLoai)
 		ResetProperty()
 		SetLevel(86,0)
 		Msg2Player("§ang tu luyÖn Hçn Nguyªn C«ng chiªu thøc thø ba...")
-		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> tu luyÖn theo h­íng <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 6 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
-		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." theo h­íng "..tb_translife_seal[nType][3])	
+		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> cultivated along the path <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 6 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
+		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." along the path"..tb_translife_seal[nType][3])	
 		DoWait(15,15,10)		
 	elseif nLoai == 3 then
 		local nTransCount = GetTranslifeCount()	
@@ -1378,8 +1378,8 @@ function select_translife(nType, nLoai)
 		ResetProperty()
 		SetLevel(84,0)
 		Msg2Player("§ang tu luyÖn Hçn Nguyªn C«ng chiªu thøc thø t­...")
-		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> tu luyÖn theo h­íng <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 8 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
-		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." theo h­íng "..tb_translife_seal[nType][3])	
+		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> cultivated along the path <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 8 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
+		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." along the path"..tb_translife_seal[nType][3])	
 		DoWait(15,15,10)	
 	elseif nLoai == 4 then
 		local nTransCount = GetTranslifeCount()	
@@ -1392,7 +1392,7 @@ function select_translife(nType, nLoai)
 			att3 = att3 or 0
 			BigDelItem(G,D,P,BigGetItemCount(G,D,P))
 			BigDelItem(G,D,Pnew,BigGetItemCount(G,D,Pnew))
-			gf_AddItemEx2({G, D, (30000 + GetBody()), nCount,4, lvatt1, att1, lvatt2, att2, lvatt3, att3},"Tø Linh ViÖt Trang","Chuyen Sinh","nhËn ngo¹i trang",120*24*3600,1)
+			gf_AddItemEx2({G, D, (30000 + GetBody()), nCount,4, lvatt1, att1, lvatt2, att2, lvatt3, att3},"Four Spirits Yue Manor","Chuyen Sinh","nhËn ngo¹i trang",120*24*3600,1)
 		end
 		RemoveTitle(tb_translife_tittle[nTransCount-1][nRoute][2], tb_translife_tittle[nTransCount-1][nRoute][3])
 		AddTitle(tb_translife_tittle[nTransCount][nRoute][2], tb_translife_tittle[nTransCount][nRoute][3])
@@ -1403,8 +1403,8 @@ function select_translife(nType, nLoai)
 		ResetProperty()
 		SetLevel(79,0)
 		Msg2Player("§ang tu luyÖn Hçn Nguyªn C«ng chiªu thøc thø t­...")
-		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> tu luyÖn theo h­íng <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 8 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
-		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." theo h­íng "..tb_translife_seal[nType][3])	
+		AddGlobalNews("Tin ®ån chÊn ®éng giang hå: nghe nãi Cao Thñ Vâ L©m <color=green>"..GetName().."<color> cultivated along the path <color=yellow>"..tb_translife_seal[nType][3].."<color> ®· lÜnh héi ®­îc 8 thµnh <color=green>Hçn Nguyªn C«ng<color>!")	
+		WriteLogEx("Chuyen Sinh","thµnh c«ng lÇn "..nTransCount.." along the path"..tb_translife_seal[nType][3])	
 		DoWait(15,15,10)	
 	end
 
@@ -1414,7 +1414,7 @@ function get_item_kinhmach()
 	local tSay = {}
 	local tHeader = szNpcName.."Ta cã thÓ gióp c¸c h¹ kÝch ho¹t thµnh c«ng c¶nh giíi Vâ HiÒn cña Kinh M¹ch. C¸c h¹ cã muèn kh«ng ?"
 	
-	tinsert(tSay, "§ång ý/confirm_get_item_kinhmach")
+	tinsert(tSay, "Agree/confirm_get_item_kinhmach")
 	tinsert(tSay, "T¹m thêi ta ch­a muèn lµm/do_nothing")
 	
 	Say(tHeader, getn(tSay), tSay)
@@ -1424,7 +1424,7 @@ function get_item_tulinh()
 	local tSay = {}
 	local tHeader = szNpcName.."Ta cho c¸c h¹ vËt phÈm Tø Linh DiÖt Ph¸p TrËn Bµn ®Ó lµm tiÕp nhiÖm vô Tø Linh DiÖt Ph¸p TrËn. C¸c h¹ cã muèn nhËn kh«ng ?"
 	
-	tinsert(tSay, "§ång ý/confirm_get_item_tulinh")
+	tinsert(tSay, "Agree/confirm_get_item_tulinh")
 	tinsert(tSay, "T¹m thêi ta ch­a muèn lµm/do_nothing")
 	
 	Say(tHeader, getn(tSay), tSay)
@@ -1451,10 +1451,10 @@ function confirm_get_item_kinhmach()
 	--print("MeridianGetLevel")
 		local tSex = gf_GetPlayerSexName();
 		if MeridianUpdateLevel() == 1 then
-			Msg2Player("Chóc mõng "..tSex.."Nghiªn cøu <Quú Hoa B¶o §iÓn> thµnh c«ng vµ ®¹t ®Õn c¶nh giíi Vâ Gi¶.");
+			Msg2Player("Congratulations"..tSex.."Nghiªn cøu <Quú Hoa B¶o §iÓn> thµnh c«ng vµ ®¹t ®Õn c¶nh giíi Vâ Gi¶.");
 			if MeridianGetLevel() == 1 then
-				gf_WriteLogEx("KICK HOAT KINH MACH", "thµnh c«ng", 1, "Vâ HiÒn 27/7")
-		  		Msg2Player("Chóc mõng "..tSex.."So bé l·nh ngé <Quú Hoa B¶o §iÓn>");
+				gf_WriteLogEx("KICK HOAT KINH MACH", "thµnh c«ng", 1, "Martial Sage 27/7")
+		  		Msg2Player("Congratulations"..tSex.."So bé l·nh ngé <Quú Hoa B¶o §iÓn>");
 		  		Talk(2,"",format("Chóc mõng <color=green>%s<color>®· ®äc'Quú Hoa B¶o §iÓn'thµnh c«ng vµ ®Æt  ®Õn c¹nh giíi vâ gi¶",tSex),format("Chóc mõng %s s¬ bé lÜnh ngé ®­îc'Quú Hoa B¶o §iÓn',(bÊm nót J®Ó xem kinh m¹ch)",tSex));
 			end
 		end
@@ -1519,7 +1519,7 @@ function NguyenLieu1(nCount)
 		return 0
 	end
 	if GetItemCount(2,2,7) < 1 * nCount then
-		Talk(1,"","§¹i hiÖp kh«ng mang ®ñ "..1 * nCount.." M¶nh thiªn th¹ch ®Ó ®æi !")
+		Talk(1,"","§¹i hiÖp kh«ng mang ®ñ "..1 * nCount.." meteorite shards to exchange!")
 		return 0		
 	end	
 	DelItem(2,1,30230,1 * nCount)
@@ -1549,7 +1549,7 @@ function NguyenLieu3(nCount)
 		return 0
 	end
 	if GetItemCount(2,1,30299) < 20 * nCount then
-		Talk(1,"","§¹i hiÖp kh«ng mang ®ñ "..20 * nCount.." M¶nh tinh ngÊn ®Ó ®æi !")
+		Talk(1,"","§¹i hiÖp kh«ng mang ®ñ "..20 * nCount.." star silver shards to exchange!")
 		return 0		
 	end	
 	DelItem(2,1,30230,1 * nCount)
@@ -1621,7 +1621,7 @@ function NguyenLieu7(nCount)
 	end
 	--check_exchange_to_exp(nCount)
 	if GetItemCount(2,1,30030) < 1 * nCount then
-		Talk(1,"","§¹i hiÖp kh«ng mang ®ñ "..1 * nCount.." TiÓu Nh­ ý ®Ó ®æi !")
+		Talk(1,"","§¹i hiÖp kh«ng mang ®ñ "..1 * nCount.." small Ruyi to exchange!")
 		return 0		
 	end	
 	Pay(10000 * nCount)
@@ -1650,13 +1650,13 @@ end
 
 function confirm_exchange_to_exp_BK(nType)
 	local tCheck = {
-					[1] = {2,2,7,390000, 1, " M¶nh thiªn th¹ch"},
+					[1] = {2,2,7,390000, 1, " meteorite shard"},
 					[2] = {2,2,8,390000, 2, " Thiªn th¹ch"},
-					[3] = {2,1,30299,390000, 20, " M¶nh tinh ngÊn"},	
+					[3] = {2,1,30299,390000, 20, " star silver shard"},	
 					[4] = {2,1,30302,390000, 20, " Ngò hµnh huyÒn th¹ch"},
 					[5] = {2,1,30300,390000, 8, " Thiªn nghÜa tinh thiÕt"},
 					[6] = {2,1,30303,390000, 8, " Ngò hµnh huyÒn thiÕt"},
-					[7] = {2,1,30030,100000, 1, " TiÓu Nh­ ý"},
+					[7] = {2,1,30030,100000, 1, " Small Ruyi"},
 			}
 	if IsPlayerDeath() ~= 0 then 
 		Talk(1, "", "HiÖn t¹i kh«ng thÓ ®æi ®iÓm kinh nghiÖm !!!")
@@ -1761,7 +1761,7 @@ function get_quest_PhucSinh_BDH()
 	local nGetQuest = mod(GetTask(TSK_PET_PS_GIAIDOAN_B),10)
 	if nGetQuest == 0 then
 		SetTask(TSK_PET_PS_GIAIDOAN_B,1) --t¨ng b­íc nhiÖm vô lªn gi¸ trÞ 1 lµ nhËn nhiÖm vô
-		gf_WriteLogEx("PHUC SINH PET", "nhËn giai ®o¹n 1", 1, "NhËn Giai §o¹n 1")
+		gf_WriteLogEx("PHUC SINH PET", "nhËn giai ®o¹n 1", 1, "Receive Stage 1")
 		Msg2Player("§¹i hiÖp ®· nhËn nhiÖm vô Phôc Sinh Giai ®o¹n 1 cho B¹n §ång Hµnh !!!!")
 	end
 	nGetQuest = mod(GetTask(TSK_PET_PS_GIAIDOAN_B),10)
@@ -1795,7 +1795,7 @@ function finish_quest1_PhucSinh_BDH()
 	local nGetQuest = mod(GetTask(TSK_PET_PS_GIAIDOAN_B),10)
 	if nGetQuest == 1 then 
 		SetTask(TSK_PET_PS_GIAIDOAN_B, GetTask(TSK_PET_PS_GIAIDOAN_B) + 1) --t¨ng b­íc nhiÖm vô lªn gi¸ trÞ 2 lµ hoµn thµnh xong giai ®o¹n 1
-		gf_WriteLogEx("PHUC SINH PET", "xong giai ®o¹n 1", 1, "Hoµn thµnh Giai §o¹n 1")
+		gf_WriteLogEx("PHUC SINH PET", "finish stage 1", 1, "Hoµn thµnh Giai §o¹n 1")
 		Msg2Player("§¹i hiÖp ®· nhËn nhiÖm vô Phôc Sinh Giai ®o¹n 2 cho B¹n §ång Hµnh !!!!")
 	end
 	local szNpcName = "<color=green>B¾c §Èu L·o Nh©n<color>: "
@@ -1834,7 +1834,7 @@ function way_change_PET(nType, nWay)
 									[3]	= {"Thiªn Th¹ch TInh Th¹ch", 20 ,2,1,1009},
 									[4]	= {"B¨ng Th¹ch", 20, 2,1,149},
 									[5]	= {"Hoµng Kim §¹i Ng©n PhiÕu", 2, 2,1,30490},
-									[6]	= {"Hßa ThÞ BÝch", 2, 2,1,1001},
+									[6]	= {"Heshi Jade", 2, 2,1,1001},
 								}
 
 	for i = 1, getn(tCheck_item) do
@@ -1868,7 +1868,7 @@ function add_buff(nType, nWay)
 									[3]	= {"Thiªn Th¹ch TInh Th¹ch", 20 ,2,1,1009},
 									[4]	= {"B¨ng Th¹ch", 20, 2,1,149},
 									[5]	= {"Hoµng Kim §¹i Ng©n PhiÕu", 2, 2,1,30490},
-									[6]	= {"Hßa ThÞ BÝch", 2, 2,1,1001},
+									[6]	= {"Heshi Jade", 2, 2,1,1001},
 								}
 
 	local t_pet_type = {
@@ -1893,7 +1893,7 @@ function add_buff(nType, nWay)
 				local nGetQuest = mod(GetTask(TSK_PET_PS_GIAIDOAN_B),10) --task nhiÖm vô giai ®o¹n 1
 				if nGetQuest == 2 then 
 					SetTask(TSK_PET_PS_GIAIDOAN_B, GetTask(TSK_PET_PS_GIAIDOAN_B) + 1) --t¨ng b­íc nhiÖm vô lªn gi¸ trÞ 3 lµ hoµn thµnh xong giai ®o¹n 2
-					gf_WriteLogEx("PHUC SINH PET", "xong giai ®o¹n 2", 1, "Hoµn thµnh Giai §o¹n 2")
+					gf_WriteLogEx("PHUC SINH PET", "Phase 2 finished", 1, "Hoµn thµnh Giai §o¹n 2")
 				end
 		end
 		if nType == 2 then
@@ -1909,7 +1909,7 @@ function add_buff(nType, nWay)
 						gf_WriteLogEx("PHUC SINH PET", "Xãa thÊt b¹i", 1, "Xãa thÊt b¹i khi hç trî nhanh")
 						return 0
 				end
-				gf_WriteLogEx("PHUC SINH PET", "hoµn thµnh nhanh", 1, "Hç trî nhanh")	
+				gf_WriteLogEx("PHUC SINH PET", "hoµn thµnh nhanh", 1, "Quick support")	
 				Pay(39000000)		
 			SetTask(TSK_PET_PS_GIAIDOAN_A, 1601600000)
 			SetTask(TSK_PET_PS_GIAIDOAN_B, 330303013)
@@ -1942,7 +1942,7 @@ function add_buff(nType, nWay)
 		end
 		-------------
 		Msg2Player("Chóc mõng ®¹i hiÖp ®· hoµn thµnh nhiÖm vô Phôc Sinh cho B¹n §ång Hµnh !!!!")		
-		gf_WriteLogEx("PHUC SINH PET BK", "xong giai ®o¹n 2", 1, "Hoµn thµnh Giai §o¹n buff")			
+		gf_WriteLogEx("PHUC SINH PET BK", "Phase 2 finished", 1, "Hoµn thµnh Giai §o¹n buff")			
 end
 function support_finish_quest_PhucSinh_BDH()
 	if GetItemCount(2,1,30490) < 39 then
@@ -2020,7 +2020,7 @@ function show_quest1_PhucSinh_BDH()
 	local nActive_LD_PET_PS = mod(floor(GetTask(TSK_PET_PS_GIAIDOAN_B)/100000000),100)
 	local nActive_BNN_PET_PS = mod(floor(GetTask(TSK_PET_PS_GIAIDOAN_A)/10000),1000)
 	local nActive_CTL_PET_PS = mod(floor(GetTask(TSK_PET_PS_GIAIDOAN_A)/10000000),1000)
-	Talk(1,"","TiÕn ®é thùc hiÖn nhiÖm vô !!!! \nC©y Tø Linh: <color=red>"..nActive_CTL_PET_PS.."/160<color> \nB¸t Nh· Nhá: <color=red>"..nActive_BNN_PET_PS.."/160<color> \nCóng TÕ: <color=red>"..nActive_CT_PET_PS.."/30<color> \nTrÞ An: <color=red>"..nActive_TA_PET_PS.."/30<color> \nThñy Lîi: <color=red>"..nActive_TL_PET_PS.."/30<color> \nLuyÖn §¬n: <color=red>"..nActive_LD_PET_PS.."/3<color>")
+	Talk(1,"","TiÕn ®é thùc hiÖn nhiÖm vô !!!! \nC©y Tø Linh: <color=red>"..nActive_CTL_PET_PS.."/160<color> \nSmall Prajna: <color=red>"..nActive_BNN_PET_PS.."/160<color> \nOffering: <color=red>"..nActive_CT_PET_PS.."/30<color> \nKeeping Order: <color=red>"..nActive_TA_PET_PS.."/30<color> \nThñy Lîi: <color=red>"..nActive_TL_PET_PS.."/30<color> \nLuyÖn §¬n: <color=red>"..nActive_LD_PET_PS.."/3<color>")
 end
 
 
@@ -2040,7 +2040,7 @@ function NhanKhuatNguyenBoi_Free()
 	end
 	
 	gf_SetTaskBit(TSK_XOA_KHUATNGUYENBOI, 2, 1, 0)
-	gf_AddItemEx2({0,102,27,1,4,-1,-1,-1,-1,-1,-1},"KhuÊt Nguyªn Béi","NHAN LAI KHUAT NGUYEN BOI","nhËn",30*24*3600,1)
+	gf_AddItemEx2({0,102,27,1,4,-1,-1,-1,-1,-1,-1},"Qu Yuan Pendant","NHAN LAI KHUAT NGUYEN BOI","nhËn",30*24*3600,1)
 end
 
 

@@ -17,7 +17,7 @@ function get_award_liangshan(nNum)
         Talk(1,"",tSTRING_201111_TABLE[3])
 		return 0
     end
-	gf_AddItemEx2({2,1,30347,50},"KÑo Que","Hoat dong thang 12 nam 2011","L­¬ng S¬n v­ît ¶i nhiÖm vô h»ng ngµy",0,1)
+	gf_AddItemEx2({2,1,30347,50},"Candy Stick","Hoat dong thang 12 nam 2011","L­¬ng S¬n v­ît ¶i nhiÖm vô h»ng ngµy",0,1)
 end
 --ÁºÉ½¿ªÆô¾ÛÒå±¦Ïä»ñµÃ½±Àø
 function get_award_juyibox()
@@ -28,7 +28,7 @@ function get_award_juyibox()
         Talk(1,"",tSTRING_201111_TABLE[3])
 		return 0
     end
-	gf_AddItemEx2({2,1,30347,10},"KÑo Que","Hoat dong thang 12 nam 2011","L­¬ng S¬n Tô NghÜa B¶o R­¬ng",0,1)
+	gf_AddItemEx2({2,1,30347,10},"Candy Stick","Hoat dong thang 12 nam 2011","L­¬ng S¬n Tô NghÜa B¶o R­¬ng",0,1)
 end
 
 --ÖÖÏÂÒ»¿ÅÖÖ×Ó
@@ -62,13 +62,13 @@ function get_award_tianmenzhen(nType)
 		return 0
     end
 	if nType == 1 then
-		gf_AddItemEx2({2,1,30347,50},"KÑo Que","Event noel n¨m 2011","Thiªn M«n trËn",0,1)
+		gf_AddItemEx2({2,1,30347,50},"Candy Stick","Christmas event 2011","Thiªn M«n trËn",0,1)
 	elseif nType == 2 then
-		gf_AddItemEx2({2,1,30347,100},"KÑo Que","Event noel n¨m 2011","Thiªn M«n trËn",0,1)
+		gf_AddItemEx2({2,1,30347,100},"Candy Stick","Christmas event 2011","Thiªn M«n trËn",0,1)
 	elseif nType == 3 then
-		gf_AddItemEx2({2,1,30347,300},"KÑo Que","Event noel n¨m 2011","Thiªn M«n trËn",0,1)
+		gf_AddItemEx2({2,1,30347,300},"Candy Stick","Christmas event 2011","Thiªn M«n trËn",0,1)
 	else
-		gf_AddItemEx2({2,1,30347,30},"KÑo Que","Event noel n¨m 2011","Thiªn M«n trËn",0,1)
+		gf_AddItemEx2({2,1,30347,30},"Candy Stick","Christmas event 2011","Thiªn M«n trËn",0,1)
 	end
 end
 

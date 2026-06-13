@@ -11,21 +11,21 @@ function handle_on_npc_talk_hdds()
 	local talk_tb = {}
 	local state = nil;
 	if get_task("id_get_lishi")==1 then 
-		state= "§· l·nh "
+		state= "Already claimed"
 	else 
 		state="Ch­a nhËn" 
 	end
 	tinsert(talk_tb,format("%s/do_introduce", "Giíi thiÖu ho¹t ®éng"))
-	tinsert(talk_tb,format("%s(%s)/do_get_award", "L× X× §¹i C¸t",state))
-	tinsert(talk_tb,format("%s/fenghua_point", "H­íng dÉn §iÓm Phong Hoa"))
-	tinsert(talk_tb,format("%s/nothing","Kh«ng cã g×"))
+	tinsert(talk_tb,format("%s(%s)/do_get_award", "Lucky Money of Great Fortune",state))
+	tinsert(talk_tb,format("%s/fenghua_point", "Fenghua Points Guide"))
+	tinsert(talk_tb,format("%s/nothing","Nothing"))
 	Say(talk_str,getn(talk_tb), talk_tb)
 end
 function do_introduce( )
 	local Title = ""
 	local tbSay = {}
-	tinsert(tbSay,format("%s/do_introduce_taozhi", "Nh¸nh §µo C¸t T­êng"))
-	tinsert(tbSay,format("%s/do_introduce_hongbao", "L× X× §¹i C¸t"))
+	tinsert(tbSay,format("%s/do_introduce_taozhi", "Auspicious Peach Branch"))
+	tinsert(tbSay,format("%s/do_introduce_hongbao", "Lucky Money of Great Fortune"))
 	tinsert(tbSay,format("%s/do_introduce_box", "R­¬ng ThÇn Tµi"))
 	tinsert(tbSay,format("%s/do_introduce_jbp", "Tô B¶o Bån"))
 	tinsert(tbSay,format("%s/handle_on_npc_talk_hdds", "trë l¹i"))

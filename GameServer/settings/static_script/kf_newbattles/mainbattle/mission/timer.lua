@@ -59,7 +59,7 @@ function Process_Fight_Timer()
 		SetMissionV(MV_TIMER_LOOP,WAITOUT_TIMER_LOOP);
 		SetMissionV(MV_BATTLE_STATE,MS_STATE_COMPLETE);
 		BT_ClearRelayData();
-		Msg2MSAll(MISSION_ID,tBattleName[BATTLE_TYPE].." ®· kÕt thóc.");
+		Msg2MSAll(MISSION_ID,tBattleName[BATTLE_TYPE].." has ended.");
 		
 		local szScript = format("pco_uninitialize()")
 		SetPlayerScript(SZ_BF_CHEAT_OP_SCRIPT);
@@ -76,7 +76,7 @@ function Process_Fight_Timer()
 	else
 		local nVillageResult = GetGlbValue(GLB_VILLAGE);
 		SetMissionV(MV_TIMER_LOOP,nLoop-1)
-		Msg2MSAll(MISSION_ID,"TiÕn ®é thêi gian: ["..(FIGHT_TIMER_LOOP-nLoop+1)..":"..(FIGHT_TIMER_LOOP+1).."]");
+		Msg2MSAll(MISSION_ID,"Time progress: ["..(FIGHT_TIMER_LOOP-nLoop+1)..":"..(FIGHT_TIMER_LOOP+1).."]");
 		if mod(nLoop,2) == 0 then
 			BT_OperateAllPlayer(BT_KickSleeper,{},ALL_ID);
 		end;

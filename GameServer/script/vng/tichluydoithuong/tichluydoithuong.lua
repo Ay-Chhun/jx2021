@@ -31,7 +31,7 @@ function DoiThuongTichLuy()
 	
 	local nTichLuyDiem = GetTask(TASK_TICH_LUY_DIEM_THUONG);
 	if nTichLuyDiem < 0 then
-		WriteLog("[DoiThuongTichLuy]\t"..GetAccount().."\t"..GetName().."\tbÞ ©m"..nTichLuyDiem.."  ®iÓm tÝch lòy.CÇn kiÓm tra l¹i")		
+		WriteLog("[DoiThuongTichLuy]\t"..GetAccount().."\t"..GetName().."\tdamaged"..nTichLuyDiem.."  ®iÓm tÝch lòy.CÇn kiÓm tra l¹i")		
 		SetTask(TASK_TICH_LUY_DIEM_THUONG,0);
 	end
 	local nLevel = GetLevel();
@@ -84,23 +84,23 @@ function nop_vatpham(nType)
 end
 
 function JX2VN_DoiEvent_Form1()
-	AskClientForNumber("JX2VN_DoiEvent_Kieu1", 1, 20, "Sè l­îng (1-20)")
+	AskClientForNumber("JX2VN_DoiEvent_Kieu1", 1, 20, "Quantity (1-20)")
 end
 
 function JX2VN_DoiEvent_Form2()
-	AskClientForNumber("JX2VN_DoiEvent_Kieu2", 1, 20, "Sè l­îng (1-20)")
+	AskClientForNumber("JX2VN_DoiEvent_Kieu2", 1, 20, "Quantity (1-20)")
 end
 
 function JX2VN_DoiEvent_Form3()
-	AskClientForNumber("JX2VN_DoiEvent_Kieu3", 1, 20, "Sè l­îng (1-20)")
+	AskClientForNumber("JX2VN_DoiEvent_Kieu3", 1, 20, "Quantity (1-20)")
 end
 
 function JX2VN_DoiEvent_Form4()
-	AskClientForNumber("JX2VN_DoiEvent_Kieu4", 1, 20, "Sè l­îng (1-20)")
+	AskClientForNumber("JX2VN_DoiEvent_Kieu4", 1, 20, "Quantity (1-20)")
 end
 
 function JX2VN_DoiEvent_Form5()
-	AskClientForNumber("JX2VN_DoiEvent_Kieu5", 1, 20, "Sè l­îng (1-20)")
+	AskClientForNumber("JX2VN_DoiEvent_Kieu5", 1, 20, "Quantity (1-20)")
 end
 
 
@@ -243,7 +243,7 @@ function tichluy_doiphanthuong_new(nType)
 		local nCurPoint = GetTask(TASK_TICH_LUY_DIEM_THUONG)
 		SetTask(TASK_TICH_LUY_DIEM_THUONG,nCurPoint - 5000)
 		gf_AddItemEx2({0,102,8844, 1, 4, -1, -1, -1, -1, -1, -1}, "Huy Hoµng QuËt Khëi ", EVENT_LOG_TITLE , "nhËn")
-		gf_AddItemEx2({0,102,8845, 1, 4, -1, -1, -1, -1, -1, -1}, "Vinh Dù QuËt Khëi ", EVENT_LOG_TITLE , "nhËn")
+		gf_AddItemEx2({0,102,8845, 1, 4, -1, -1, -1, -1, -1, -1}, "Vinh Du Quat Khoi", EVENT_LOG_TITLE , "nhËn")
 		Msg2Player("C¸c h¹ ®· nhËn CÆp nhÉn hç trî mËt tÞch 7% thµnh c«ng!")
 		Msg2Player("B¹n ®· tiªu hao 5000  ®iÓm")
 	elseif nType == 2 then
@@ -259,9 +259,9 @@ function tichluy_doiphanthuong_new(nType)
 		
 		local nCurPoint = GetTask(TASK_TICH_LUY_DIEM_THUONG)
 		SetTask(TASK_TICH_LUY_DIEM_THUONG,nCurPoint - 6000)
-		gf_AddItemEx2({0,120,120, 1, 4}, "BÝch H¶i Lam Phong", EVENT_LOG_TITLE , "nhËn", 30*24*3600)
-		gf_AddItemEx2({0,121,84, 1, 4}, "BÝch H¶i Lam Phong-Ch©n", EVENT_LOG_TITLE , "nhËn", 30*24*3600)
-		gf_AddItemEx2({0,119,96, 1, 4}, "BÝch H¶i Lam Phong-Vai", EVENT_LOG_TITLE , "nhËn", 30*24*3600)
+		gf_AddItemEx2({0,120,120, 1, 4}, "Bich Hai Lam Phong", EVENT_LOG_TITLE , "nhËn", 30*24*3600)
+		gf_AddItemEx2({0,121,84, 1, 4}, "Bich Hai Lam Phong-Foot", EVENT_LOG_TITLE , "nhËn", 30*24*3600)
+		gf_AddItemEx2({0,119,96, 1, 4}, "Bich Hai Lam Phong-Shoulder", EVENT_LOG_TITLE , "nhËn", 30*24*3600)
 		Msg2Player("C¸c h¹ ®· nhËn Bé trang søc BÝch H¶i thµnh c«ng!")
 		Msg2Player("B¹n ®· tiªu hao 6000  ®iÓm")
 	elseif nType == 3 then
@@ -277,9 +277,9 @@ function tichluy_doiphanthuong_new(nType)
 		
 		local nCurPoint = GetTask(TASK_TICH_LUY_DIEM_THUONG)
 		SetTask(TASK_TICH_LUY_DIEM_THUONG,nCurPoint - 6000)
-		gf_AddItemEx2({0,120,121, 1, 4}, "Vâ T­¬ng Kim Lu©n", EVENT_LOG_TITLE , "nhËn", 30*24*3600)
-		gf_AddItemEx2({0,121,85, 1, 4}, "Vâ T­¬ng Kim Lu©n-Ch©n", EVENT_LOG_TITLE , "nhËn", 30*24*3600)
-		gf_AddItemEx2({0,119,97, 1, 4}, "Vâ T­¬ng Kim Lu©n-Vai", EVENT_LOG_TITLE , "nhËn", 30*24*3600)
+		gf_AddItemEx2({0,120,121, 1, 4}, "Vo Tuong Kim Luan", EVENT_LOG_TITLE , "nhËn", 30*24*3600)
+		gf_AddItemEx2({0,121,85, 1, 4}, "Vo Tuong Kim Luan-Foot", EVENT_LOG_TITLE , "nhËn", 30*24*3600)
+		gf_AddItemEx2({0,119,97, 1, 4}, "Vo Tuong Kim Luan-Shoulder", EVENT_LOG_TITLE , "nhËn", 30*24*3600)
 		Msg2Player("C¸c h¹ ®· nhËn Bé trang søc Vâ T­¬ng thµnh c«ng!")
 		Msg2Player("B¹n ®· tiªu hao 6000  ®iÓm")
 	elseif nType == 4 then
@@ -514,7 +514,7 @@ function tichluy_doiphanthuong_thucuoi(nType)
 		
 		local nCurPoint = GetTask(TASK_TICH_LUY_DIEM_THUONG)
 		SetTask(TASK_TICH_LUY_DIEM_THUONG,nCurPoint - 6000)
-		gf_AddItemEx2({0,105,30059, 1, 4, -1, -1, -1, -1, -1, -1}, "Tö Liªn Hoa", EVENT_LOG_TITLE , "nhËn", 30*24*3600)
+		gf_AddItemEx2({0,105,30059, 1, 4, -1, -1, -1, -1, -1, -1}, "Purple Lotus", EVENT_LOG_TITLE , "nhËn", 30*24*3600)
 		Msg2Player("C¸c h¹ ®· nhËn Tö Liªn Hoa (30 ngµy) thµnh c«ng!")
 		Msg2Player("B¹n ®· tiªu hao 6000  ®iÓm")
 	else
@@ -570,7 +570,7 @@ function tichluy_doiphanthuong(nType)
 		
 		local nCurPoint = GetTask(TASK_TICH_LUY_DIEM_THUONG)
 		SetTask(TASK_TICH_LUY_DIEM_THUONG,nCurPoint - 500)
-		gf_AddItemEx2({2,1,30681,50}, " Linh ThiÕt", EVENT_LOG_TITLE , "nhËn")
+		gf_AddItemEx2({2,1,30681,50}, " Spirit Iron", EVENT_LOG_TITLE , "nhËn")
 		Msg2Player("C¸c h¹ ®· nhËn 50 x Linh ThiÕt thµnh c«ng!")
 		Msg2Player("B¹n ®· tiªu hao 500 ®iÓm")
 	elseif nType == 4 then
@@ -601,7 +601,7 @@ function tichluy_doiphanthuong(nType)
 		end
 		
 		local szName = "Chñ TiÒn Trang"
-		local szHeader = "<color=green>"..szName.." :<color> C¸c h¹ h·y chän 1 trong 3 Phèi Ph­¬ng :"
+		local szHeader = "<color=green>"..szName.." :<color> Please choose 1 of 3 Formulas:"
 		local tbSayDialog = {};
 		local nSaySize = 0;
 		tinsert(tbSayDialog, "Ta muèn ®æi Phèi ph­¬ng V« H¹(Nãn)/#doi_haohiepvoha(1)")
@@ -674,7 +674,7 @@ function tichluy_doiphanthuong(nType)
 		
 		local nCurPoint = GetTask(TASK_TICH_LUY_DIEM_THUONG)
 		SetTask(TASK_TICH_LUY_DIEM_THUONG,nCurPoint - 1220)
-		gf_AddItemEx2({2,1,30676,1}, " Viªm Linh Bè", EVENT_LOG_TITLE , "nhËn")
+		gf_AddItemEx2({2,1,30676,1}, " Flame Spirit Cloth", EVENT_LOG_TITLE , "nhËn")
 		Msg2Player("C¸c h¹ ®· nhËn 1 x Viªm Linh Bè thµnh c«ng!")
 		Msg2Player("B¹n ®· tiªu hao 1220  ®iÓm")
 	elseif nType == 10 then
@@ -722,7 +722,7 @@ function tichluy_doiphanthuong(nType)
 		
 		local nCurPoint = GetTask(TASK_TICH_LUY_DIEM_THUONG)
 		SetTask(TASK_TICH_LUY_DIEM_THUONG,nCurPoint - 6000)
-		gf_AddItemEx2({2,1,30814,1}, " Phôc Sinh §¬n", EVENT_LOG_TITLE , "nhËn")
+		gf_AddItemEx2({2,1,30814,1}, " Resurrection Pill", EVENT_LOG_TITLE , "nhËn")
 		Msg2Player("C¸c h¹ ®· nhËn 1 x Phôc Sinh §¬n 100/100 thµnh c«ng!")
 		Msg2Player("B¹n ®· tiªu hao 6000  ®iÓm")
 	elseif nType == 13 then
@@ -771,22 +771,22 @@ end
 function TraoMatTichSieuCap20(nRoute)
 
 	local tbMatTich = {
-		[2] = {0,107,204, 2,"Kim Cang B¸t Nh· Ch©n QuyÓn"},
-		[4] = {0,107,205, 1,"TiÒm Long Tóc DiÖt Ch©n QuyÓn"},
-		[3] = {0,107,206, 1,"V« TrÇn Bå §Ò Ch©n QuyÓn"},
+		[2] = {0,107,204, 2,"Vajra Prajna True Scroll"},
+		[4] = {0,107,205, 1,"Hidden Dragon Annihilation True Manual"},
+		[3] = {0,107,206, 1,"Dustless Bodhi True Manual"},
 		[6] = {0,107,207, 2,"Thiªn La Liªn Ch©u Ch©n QuyÓn"},
-		[8] = {0,107,208, 1,"Nh­ ý Kim §Ønh Ch©n QuyÓn"},
-		[9] = {0,107,209, 1,"BÝch H¶i TuyÖt ¢m Ch©n QuyÓn"},
-		[11] = {0,107,210, 2,"Hçn §én TrÊn Nh¹c Ch©n QuyÓn"},
+		[8] = {0,107,208, 1,"Wishful Golden Top True Manual"},
+		[9] = {0,107,209, 1,"Azure Sea Silent Sound True Manual"},
+		[11] = {0,107,210, 2,"Chaos Town Mountain True Manual"},
 		[12] = {0,107,211, 2,"Quú Thiªn Du Long Ch©n QuyÓn"},
 		[14] = {0,107,212, 1,"HuyÒn ¶nh Mª T«ng Ch©n QuyÓn"},
-		[15] = {0,107,213, 2,"Qu©n Tö §íi Phong Ch©n QuyÓn"},
-		[17] = {0,107,214, 2,"TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn"},
+		[15] = {0,107,213, 2,"Gentleman Welcomes the Wind True Manual"},
+		[17] = {0,107,214, 2,"Town Army Flying Dragon Spear True Manual"},
 		[18] = {0,107,215, 2,"Xuyªn V©n L¹c Hång Ch©n QuyÓn"},
 		[20] = {0,107,216, 2,"HuyÒn Minh Phong Ma Ch©n QuyÓn"},
 		[21] = {0,107,217, 1,"Linh Cæ HuyÒn Tµ Ch©n QuyÓn"},
 		[23] = {0,107,218,1,"Cöu Thiªn Phong L«i Ch©n QuyÓn"},
-		[25] = {0,107,219,2,"Håi Phong Tr¶m NhËt Ch©n QuyÓn"},
+		[25] = {0,107,219,2,"Returning Wind Slashing Sun Fist Manual"},
 		[26] = {0,107,220,2,"Phô Kú Hµnh TrËn Ch©n QuyÓn"},
 		[27] = {0,107,221,1,"Ng­ng HuyÕt Phong Hån Ch©n QuyÓn"},
 		[29] = {0,107,222,2,"Hång TrÇn Tóy Méng Ch©n QuyÓn"},
@@ -840,17 +840,17 @@ tbKimXaVanDu = {
 	
 tbKimXaThietHuyet = {
 	item = {
-		{gdp={0,153,27,1,4,-1,-1,-1,-1,-1,-1,-1}, name="Huy Ch­¬ng ThiÕt HuyÕt"},
+		{gdp={0,153,27,1,4,-1,-1,-1,-1,-1,-1,-1}, name="Iron Blood Medal"},
 		{gdp={0,152,27,1,4,-1,-1,-1,-1,-1,-1,-1}, name="¸o Choµng ThiÕt HuyÕt"},
-		{gdp={0,154,27,1,4,-1,-1,-1,-1,-1,-1,-1}, name="§¹o Hµi ThiÕt HuyÕt"},
+		{gdp={0,154,27,1,4,-1,-1,-1,-1,-1,-1,-1}, name="Iron Blood Boots"},
 	}
 }
 	
 tbKimXaDuHiep = {
 	item = {
-		{gdp={0,153,26,1,4,-1,-1,-1,-1,-1,-1,-1}, name="Huy Ch­¬ng Du HiÖp"},
+		{gdp={0,153,26,1,4,-1,-1,-1,-1,-1,-1,-1}, name="Roaming Hero Medal"},
 		{gdp={0,152,26,1,4,-1,-1,-1,-1,-1,-1,-1}, name="¸o Choµng Du HiÖp"},
-		{gdp={0,154,26,1,4,-1,-1,-1,-1,-1,-1,-1}, name="§¹o Hµi Du HiÖp"},
+		{gdp={0,154,26,1,4,-1,-1,-1,-1,-1,-1,-1}, name="Wandering Chivalry Boots"},
 	}
 }
 
@@ -959,17 +959,17 @@ end
 
 tbKimXaHC = {
 	item = {
-		{gdp={0,153,29,1,4,-1,-1,-1,-1,-1,-1,-1}, name="Huy Ch­¬ng HiÖp Cèt"},
+		{gdp={0,153,29,1,4,-1,-1,-1,-1,-1,-1,-1}, name="Hero Bone Medal"},
 		{gdp={0,152,29,1,4,-1,-1,-1,-1,-1,-1,-1}, name="¸o Choµng HiÖp Cèt"},
-		{gdp={0,154,29,1,4,-1,-1,-1,-1,-1,-1,-1}, name="§¹o Hµi HiÖp Cèt"},
+		{gdp={0,154,29,1,4,-1,-1,-1,-1,-1,-1,-1}, name="Hero Bone Boots"},
 	}
 }
 	
 tbKimXaQP = {
 	item = {
-		{gdp={0,153,30,1,4,-1,-1,-1,-1,-1,-1,-1}, name="Huy Ch­¬ng Quû Phï"},
+		{gdp={0,153,30,1,4,-1,-1,-1,-1,-1,-1,-1}, name="Ghost Talisman Medal"},
 		{gdp={0,152,30,1,4,-1,-1,-1,-1,-1,-1,-1}, name="¸o Choµng Quû Phï"},
-		{gdp={0,154,30,1,4,-1,-1,-1,-1,-1,-1,-1}, name="§¹o Hµi Quû Phï"},
+		{gdp={0,154,30,1,4,-1,-1,-1,-1,-1,-1,-1}, name="Ghost Talisman Boots"},
 	}
 }
 	

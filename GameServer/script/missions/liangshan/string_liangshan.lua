@@ -69,7 +69,7 @@ NpcName={
 	[55] = {"XuÊt L©m Long Tr©u Uyªn","XuÊt L©m Long Tr©u Uyªn"},
 	--¹ý¹Ø±¦Ïä
 	[56] = {"R­¬ng tiÒn","L­¬ng S¬n b¶o r­¬ng"},
-	[57] = {"IBbaoxiang","R­¬ng H¶o H¸n"},
+	[57] = {"IBbaoxiang","Hero Chest"},
 	[58] = {"R­¬ng tiÒn","Tô NghÜa B¶o R­¬ng"},
 	--Fish NpcÐÅÏ¢
 	[59] = {"Bang chóng Thanh Long §­êng","Bang chóng Thanh Long §­êng"},
@@ -96,8 +96,8 @@ NpcName={
 	--µÚÈý¹ØNPC
 	[78] = {"TiÓu kª","Gµ"},
 	[79] = {"TiÓu ¸p","VÞt"},
-	[80] = {"TiÓu nga","Ngçng"},
-	[81] = {"TiÓu d­¬ng","Dª"},
+	[80] = {"TiÓu nga","Goose"},
+	[81] = {"TiÓu d­¬ng","Goat"},
 	[82] = {"V« Vò TiÔn Tr­¬ng Thanh", "V« Vò TiÔn Tr­¬ng Thanh"},
 	[83] = {"TiÓu Lý Qu¶ng Hoa VInh", "TiÓu Lý Qu¶ng Hoa VInh",},
 	--µÚËÄ¹ØNPC
@@ -126,12 +126,12 @@ NpcName={
 --¹Ø¿¨Ãû³Æ
 LSStageName = {
 	[1] = "Thñy B¸ch §×nh",
-	[2] = "Kho¸i Ho¹t L©m",
-	[3] = "Kho¸i M· §¹o",
-	[4] = "H¾c Phong Tr¹i",
-	[5] = "H¾c Phong Tr¹i",
-	[6] = "Tô NghÜa §­êng",
-	[7] = "Gi¶i ®Êu o¼n tï t×",
+	[2] = "Khoai Hoat Lam",
+	[3] = "Khoai Ma Dao",
+	[4] = "Hac Phong Stronghold",
+	[5] = "Hac Phong Stronghold",
+	[6] = "Tu Nghia Hall",
+	[7] = "Prison Yard Arena Duel",
 	[8] = "Khiªu chiÕn cña hiÖp sÜ",
 }
 --ÈÎÎñÐÅÏ¢
@@ -152,17 +152,17 @@ LSTaskInfo = {
 }
 --Íæ¼Ò¸öÈËÏûÏ¢
 LSMsgToPlayer = {
-	[1] = "Kh«ng biÕt ®­êng ®i",
+	[1] = "You do not know the way",
 	[2] = "§ang gi¸m ®Þnh thuéc tÝnh vËt phÈm!",
 	[3] = "Kh«ng gian hµnh trang kh«ng ®ñ, kh«ng thÓ nhËn vËt phÈm",
-	[4] = "NhÆt ®­îc ",
+	[4] = "Picked up",
 	[5] = "Kh«ng cßn vËt phÈm trong r­¬ng",
 	[6] = "TÊt c¶ ng­êi ch¬i ®· bá cuéc",
 	[7] = "Nh÷ng ng­êi ch¬i kh¸c ®· v­ît qu¸ thêi gian, xem nh­ bá cuéc",
 	[8] = "NÐm ra %d ®iÓm",
-	[9] = "Phãng",
-	[10] = "CÇn",
-	[11] = "NhÆt ®­îc ",
+	[9] = "Cast",
+	[10] = "Requires",
+	[11] = "Picked up",
 	[12] = "Tham lam",
 	[13] = "C¸c h¹ mang theo %s kh«ng ®ñ",
 	[14] = "C¸c h¹ ®· hoµn thµnh “%s”, h·y t×m [%s] nhËn th­ëng.",
@@ -179,10 +179,10 @@ LSMsgToTeam = {
 	[3] = "%s kh«ng thÓ vµo QuÇn Anh Héi (hiÖn ®ang nghÜ ng¬i)",
 	[4] = "%s kh«ng thÓ vµo QuÇn Anh Héi (kh«ng cïng thµnh thÞ)",
 	[5] = "%s kh«ng thÓ vµo QuÇn Anh Héi (ch­a gia nhËp m«n ph¸i)",
-	[6] = "Vµo cöa ¶i L­¬ng S¬n QuÇn Anh Héi ",
+	[6] = "Enter the Liangshan Heroes Gathering pass",
 	[7] = "§ang ®îi khëi ®éng cöa ¶i, tiÕn ®é",
 	[8] = "Cöa ¶i ®ang tiÕn hµnh, tiÕn ®é",
-	[9] = "Cöa ¶i ®ang ®îi kÕt thóc, tiÕn ®é",
+	[9] = "The pass is waiting to end, progress",
 	[10] = "§· xuÊt hiÖn, khiªu chiÕn ®ang b¾t ®Çu!",
 	[11] = "V­ît ¶i thÊt b¹i, chuÈn bÞ rêi khái cöa ¶i",
 	[12] = "§· bÞ ®¸nh b¹i.",
@@ -193,7 +193,7 @@ LSMsgToTeam = {
 		[3] = "ThÝ luyÖn Kho¸i M· §¹o ®· kÕt thóc, däc theo con ®­êng phÝa t©y b¾c sÏ gÆp ®­îc Kim TiÒn B¸o Tö Thang Long, ®éi tr­ëng cã thÓ ®Õn t×m anh ta th¸m thÝnh t×nh h×nh nh­ thÕ nµo.",
 		[4] = "ThÝ luyÖn H¾c Phong Tr¹i ®· kÕt thóc, däc theo con ®­êng phÝa t©y chÝnh lµ Tô NghÜ §­êng, ta sÏ ®îi c¸c ng­êi trªn ®ã, chuÈn bÞ xong h·y ®Õn t×m ta.",
 		[5] = "ThÝ luyÖn H¾c Phong Tr¹i ®· kÕt thóc, däc theo con ®­êng phÝa t©y chÝnh lµ Tô NghÜ §­êng, ta sÏ ®îi c¸c ng­êi trªn ®ã, chuÈn bÞ xong h·y ®Õn t×m ta.",
-		[6] = "Cöa ¶i Èn “Gi¶i ®Êu o¼n tï t×” ®· kÕt thóc",
+		[6] = "The hidden pass Prisoner's Game has ended",
 		[7] = "Cöa ¶i Èn “Khiªu chiÕn hiÖp sÜ” ®· kÕt thóc",
 	},
 	--¹Ø¿¨½øÈëÊ±»¶Ó­¶ÓÎéÏûÏ¢
@@ -239,14 +239,14 @@ LSMsgToTeam = {
 	[24] = "§· bÞ ®¸nh b¹i.",
 	[25] = "Chóc mõng c¸c vÞ ®¹i hiÖp ®· v­ît qua tÊt c¶ cöa ¶i",
 	[26] = "C¸c h¹ ®· vµo cöa ¶i Ên “%s”",
-	[27] = {"Bóa","KÐo","Bè"},
+	[27] = {"Rock","Scissors","Paper"},
 	--²ÂÈ­½á¹ûÐÅÏ¢
 	[28] = {"Bao","! Thi o¼n tï t× chíi chÞ Na ta h¶, vÉn cßn non l¾m, vÒ luyÖn thªm 2 n¨m n÷a ®i.","! C¸c h¹ qu¶ lÇn thÇn c¬, tiÓu n÷ xin phôc."},
-	[29] = {"KÕt thóc trËn ®Êu.","ChiÕn th¾ng!","B¹i trËn!"},
+	[29] = {"The match is over.","Victory!","Defeat!"},
 	--Òþ²Ø¹Ø¿¨µÚ¶þ¹Ø
 	[30] = "%s ®· bÞ träng th­¬ng.",
 	
-	[31] = "NhËn ®­îc tr¹ng th¸i [%s], %d gi©y%s"
+	[31] = "Received status [%s], %d seconds %s"
 }
 --Ê±¼ä½ø¶ÈÌõ
 LSTimeGuageString = {
@@ -254,15 +254,15 @@ LSTimeGuageString = {
 	[2] = "C¬ quan lËp l¹i",
 	[3] = "Thêi gian håi sinh",
 	[4] = "Thêi gian v« ®Þch",
-	[5] = "Th¬i gian o¼n tï t×",
+	[5] = "Prisoner's Game time",
 	[6] = "Thêi gian sinh tån",
 }
 --´³¹ØÌõ¼þ¶Ô»°Õ¹¿ª
 LSLoginQuanli = {
-	"CÇn tæ ®éi",
+	"Need to form a team",
 	"Ýt nhÊt %d",
-	"CÊp ®é ®Òu #%d",
-	"§ång thêi",
+	"Level even #%d",
+	"At the same time",
 	"Do ®éi tr­ëng <color>®¨ng ký, míi cã thÓ tham gia L­¬ng S¬n QuÇn Hïng Héi. (Ch÷ ®á lµ ®iÒu kiÖn ®éi ngò ch­a ®¹t ®­îc)",
 }
 --talk¶Ô»°
@@ -274,17 +274,17 @@ LSSysTalk = {
 	[5] = {
 		"Gia nhËp giang hå tr­íc sau gi còng ph¶i tr¶ !",
 		"L­íi trêi lång léng, th­a mµ kh«ng lät",
-		"Qu©n tö ¸i tµi ®o¹t chi h÷u ®¹o",
+		"A gentleman who loves talent takes it by proper means",
 		"§a hµnh bÊt nghÜa tÊt tù b¹i!",
 		"§õng v× tiÓu ¸c mµ lµm, ®õng v× tiÓu thiÖn mµ bá",
 	},
 	[6] = "Tr¹ng th¸i Boss: (Mµu ®á = ®· ®ông ®é, mµu xanh = ch­a ®ông ®é)",
-	[7] = ": vui lßng ®îi trong chèc l¸t...",
+	[7] = ": please wait a moment...",
 	[8] = "<color=green>th«ng b¸o<color>: §éi ngò cña c¸c h¹ ®· ph¸t ®éng khiªu chiÕn ®Õn %s vµ %s <color=green>nÕu trong vßng 3 phót tiªu diÖt ®­îc ®­îc vËt s¨n b¾t nhiÒu h¬n 2 ng­êi hä b¾t ®­îc, th× ®éi ngò cña c¸c h¹ sÏ giµnh ®­îc chiÕn th¾ng<color>. Hä ®· b¾t ®Çu tiÕn hµnh s¨n b¾t råi. Cuéc s¨n b¾t ®Çu.",
 	[9] = "Trong trËn chiÕn, tÊt c¶ ng­êi ch¬i tham gia ®Òu nhËn ®­îc tr¹ng th¸i “Thiªn ThÇn H¹ Phµm”, tr¹ng th¸i duy tr× ®Òn khi trËn chiÕn kÕt thóc. Mçi c¸ch 30 gi©y håi sinh tÊt c¶ ng­êi ch¬i trong khu vùc, håi phôc tÊt c¶ tr¹ng th¸i, ®ång thêi v« ®Þch trong 10 gi©y. Sau khi tiªu diÖt tÊt c¶ c¸c boss ng­êi ch¬i cã thÓ tiÕn vµo cöa ¶i tiÕp theo (Tô NghÜa §­êng). \n hiÖu qu¶<color=yellow>“%s”<color>: \n<color=green>%s<color>",
 	[10] = "C¸c h¹ kh«ng mang theo [%s], kh«ng thÓ tiÕp tôc khiªu chiÕn c¸c vÞ anh hïng L­¬ng S¬n n÷a. [%s] cã thÓ th«ng qua <color=yellow>ngù c¸c <color> mua ®­îc",
 	[11] = "H·y nhÆt r­¬ng phÇn th­ëng tr­íc khi rêi khái cöa ¶i",
-	[12] = {"Ng­êi ch¬i %s ®· thua!","Ng­êi ch¬i %s ®· th¾ng!","Tæng ®iÓm hiÖn nay lµ %d víi %d. C¸c vÞ ®· th¾ng ®­îc %d v¸n"},
+	[12] = {"Player %s has lost!","Player %s has won!","Tæng ®iÓm hiÖn nay lµ %d víi %d. C¸c vÞ ®· th¾ng ®­îc %d v¸n"},
 	--Òþ²Ø¹Ø¿¨µÚ¶þ¹ØµÄÏà¹Ø½áÊøÐÅÏ¢
 	[13] = {
 		"Chóc mõng! Sau nh÷ng kh¶o nghiÖm giang khæ ®éi ngò cña c¸c h¹ cuèi cïng ®· giµnh ®­îc chiÕn th¾ng “Sù khiªu chiÕn cña hµo kiÖt”.",
@@ -316,7 +316,7 @@ LSNpcChat = {
 		[NpcName[20][2]] = {"H·y xem ®©y!","C¸c ng­¬i h·y xem sù lîi h¹i cña ta!"},
 		[NpcName[23][2]] = {"C¸c ng­êi ®Õn khiªu chiÕn ta ®©y sao? §Ó xem c¸c ng­¬i cã bao nhiªu c©n l­îng!"},
 		[NpcName[26][2]] = {"§©u ra ®¸m tiÓu mao tÆc nµy, c¶ gan léng ng«n hçn x­îc thÕ nµy!","H·y b¸o lªn danh tÝnh, lì khi bÞ ta ®¸nh chÕt th× trªn bia mé còng cã c¸i tªn!"},
-		[NpcName[29][2]] = {"Nãi nhiÒu v« Ých, h·y so tµi quyÒn c­íc.","TiÕp chiªu, v« ®Þch uyªn ­¬ng c­íc!"},
+		[NpcName[29][2]] = {"Nãi nhiÒu v« Ých, h·y so tµi quyÒn c­íc.","Take this move, the invincible Mandarin Duck Kick!"},
 		[NpcName[32][2]] = {"Muèn khiªu chiÕn ta, vËy th× ph¶i tr¶ mét c¸i gi¸ rÊt lín!","L·o ®©y kh«ng ph¸t uy mµ chóng ng­¬i t­ëng ta lµ con mÌo bÖnh sao!!"},
 		[NpcName[35][2]] = {"§õng cã ®ïa, muèn ®¸nh víi ta th× chØ cã ch¸n sèng th«i!","C¸c ng­¬i ¨n kh«ng næi, h·y v¸c nhau mµ vÒ ®i!"},
 		[NpcName[38][2]] = {"TiÕp chiªu, h·y xem sù lîi h¹i cña l·o n­¬ng ®©y!","Cho c¸c ng­êi biÕt thÕ nµo lµ kh«ng nªn chäc giËn nh÷ng ng­êi ®Ñp!"},
@@ -354,18 +354,18 @@ NpcSayInfo = {
 	[1] = {
 		"<color=green>"..NpcName[1][2].."<color>: hµo kiÖt hÔ cã ®­îc Thiªn Cang LÖnh, ®Òu cã thÓ ®Õn t×m ta ®æi th­ëng.",
 		". Trë l¹i",
-		". Tho¸t",
+		". Exit",
 		". %s (cÇn %d Thiªn Cang LÖnh)",		--test:ÎïÆ·Ãû
 		"Kh«ng thÓ giao dÞch",
 	},
 	[2] = {
 		"<color=green>"..NpcName[1][2].."<color>: c¸c h¹ x¸c ®Þnh dïng %d Thiªn Cang LÖnh ®æi lÊy %s kh«ng?",
-		"§ång ý",
-		"Hñy bá",
+		"Agree",
+		"Cancel",
 	},
 	[3] = {
 		"PhÝa T©y b¾c cã 1 trµ ®×nh, ®éi tr­ëng cã thÓ t×m bµ chñ T«n NhÞ N­¬ng hái th¨m t×nh h×nh cña L­¬ng S¬n QuÇn Hïng Héi.",
-		"KÕt thóc ®èi tho¹i",
+		"End conversation",
 	},
 	[4] = {
 		"Cöa ¶i L­¬ng S¬n quÇn hïng héi ®· kÕt thóc.",
@@ -373,8 +373,8 @@ NpcSayInfo = {
 	--´³¹Ø½ÓÒýNPC¶Ô»°Ñ¡Ïî
 	[5] = {
 		[1] = "TiÕn vµo cöa ¶i tiÕp theo",
-		[2] = "KiÓm tra t×nh tr¹ng gÆp Boss",
-		[3] = "KÕt thóc ®èi tho¹i",
+		[2] = "Check the boss encounter status",
+		[3] = "End conversation",
 		[4] = ":Nh÷ng vÞ huynh ®Ö L­¬ng S¬n chóng t«i, ai nÊy ®Òu th©n mang tuyÖt kü vâ nghÖ cao c­êng. C¸c vÞ hiÖp sÜ nªn dïng toµn lùc ra øng phã, chí nªn khinh ®Þch mµ mÊt ®i sinh m¹ng. ~",
 	},
 	--¹Ø¿¨µÚÒ»¹ØµÄÏà¹Ø¶Ô»°
@@ -382,14 +382,14 @@ NpcSayInfo = {
 		[1] = {
 			"PhÝa T©y b¾c cã 1 trµ ®×nh, ®éi tr­ëng cã thÓ t×m bµ chñ T«n NhÞ N­¬ng hái th¨m t×nh h×nh cña L­¬ng S¬n QuÇn Hïng Héi.",
 			{
-				"KÕt thóc ®èi tho¹i/nothing",
+				"End dialogue/nothing",
 			},
 		},
 		[2] = {
 			": c¸c vÞ ®· cã gan khiªu chiÕn L­¬ng S¬n huynh ®Ö chóng t«i, ch¾c sÏ kh«ng ph¶i lµ h¹ng tiÓu bèi tÇm th­êng, c¸c vÞ huynh ®Ö ®· chuÈn bÞ ch­a?",
 			{
 				"Ta chÊp nhËn khiªu chiÕn/start",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"End dialogue/nothing",
 			},
 		},
 		[3] = {
@@ -413,14 +413,14 @@ NpcSayInfo = {
 			": c¸c vÞ ®Õn khiªu chiÕn víi ch­ vÞ anh hïng L­¬ng S¬n ta sao? Hä ®Òu mang trªn ng­êi vâ nghÖ cao c­êng, th©n mang tuyÖt kü, h·y nhí chí nªn khinh ®Þch. NÕu c¶m thÊy qu¸ søc, ®éi tr­ëng cã thÓ t×m ta chän trî thñ thÝch hîp .",
 			{
 				"Ta chÊp nhËn khiªu chiÕn/start",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"End dialogue/nothing",
 			}
 		},
 		[2] = {
 			": c¸c vÞ ®Õn khiªu chiÕn víi ch­ vÞ anh hïng L­¬ng S¬n ta sao? Hä ®Òu mang trªn ng­êi vâ nghÖ cao c­êng, th©n mang tuyÖt kü, h·y nhí chí nªn khinh ®Þch. NÕu c¶m thÊy qu¸ søc, ®éi tr­ëng cã thÓ t×m ta chän trî thñ thÝch hîp .",
 			{
 				"Ta muèn xin hç trî/#tStage_2:getAid()",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"End dialogue/nothing",
 			}
 		},
 		[3] = {
@@ -492,7 +492,7 @@ NpcSayInfo = {
 		[1] = {
 			": vµo Tô NghÜa §­êng cÇn ®¸nh b¹i 4 vÞ L­¬ng S¬n h¶o h¸n trÊn thñ t¹i ®ay, c¸c vÞ ®· chuÈn bÞ s½n sµng ch­a.",
 			{
-				"Ta ®· s½n sµng /start",
+				"I am ready /start",
 				"Ta cÇn chuÈn bÞ l¹i./nothing",
 			}
 		},
@@ -504,16 +504,16 @@ NpcSayInfo = {
 			": thËt kh«ng dÔ dµng tÝ nµo, kh«ng ngê c¸c vÞ ®¹i hiÖp cã thÓ ®Õn ®­îc Tô NghÜa §­êng, t¹i ®©y tËp hîp nh÷ng tinh anh cña L­¬ng S¬n, c¸c vÞ sÏ kinh ng¹c tr­íc phong th¸i cña L­¬ng S¬n h¶o h¸n.",
 			{
 				"Ta muèn tiÕp nhËn khiªu chiÕn ( tiªu hao 1 Thiªn Kiªu LÖnh)/preStart",
-				"KiÓm tra t×nh tr¹ng gÆp Boss/#tMission:showBossState()",
+				"Check the boss encounter status/#tMission:showBossState()",
 				"Kh«ng ch¬i n÷a, ta muèn vÒ nhµ/preClose",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"End dialogue/nothing",
 			},
 		},
 		[2] = {
 			": thËt kh«ng dÔ chót nµo, kh«ng ngê c¸c vÞ ®¹i hiÖp l¹i lîi hai nh­ thÕ",
 			{
-				"Ta ®· ®¹i th¾ng /preClose",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"I have triumphed /preClose",
+				"End dialogue/nothing",
 			},
 		},
 	},
@@ -575,7 +575,7 @@ NpcSayInfo = {
 	[14] = {
 		[1] = ": lo¹i nhiÖm vô nµy mçi ngµy chØ ®­îc nhËn 1 lÇn.",
 		[2] = ". Trë l¹i",
-		[3] = ". Tho¸t",
+		[3] = ". Exit",
 		[4] = "C¸c h¹ ®· nhËn nhiÖm vô nµy råi!",
 		[5] = "#KiÓm tra nhiÖm vô",
 		[6] = "NhiÖm vô nµy ®· hoµn thµnh!",
@@ -600,7 +600,7 @@ NpcSayInfo = {
 LSBuffInfo = {
 	[1] = {
 		{
-			"Duy tr× håi m¸u",
+			"Maintain HP recovery",
 			{
 				{"state_life_per_per8f",  1000, 15*18, 1, 9922 }
 			},
@@ -614,7 +614,7 @@ LSBuffInfo = {
 			"Thang khÝ håi t­êng"
 		},
 		{
-			"N©ng cao néi ngo¹i phßng",
+			"Increase internal and external defense",
 			{
 				{"state_magic_parmor_per_add", 50, 15*18, 1, 9924, },
 				{"state_physical_parmor_per_add", 50, 15*18, 1, 9925, },
@@ -627,17 +627,17 @@ LSBuffInfo = {
 				{"state_m_attack_percent_add", 200, 15*18, 1, 9926, },
 				{"state_p_attack_percent_add", 200, 15*18, 1, 9927, },
 			},
-			"Né ph¸t xung qu¸n",
+			"Fury burst charge",
 		},
 	},
 	--µÚÎå¹ØµÄbuff
 	[2] = {
-		[1] = {"Thiªn thÇn h¹ phµm", 60, "Duy tr× %d phót"},
+		[1] = {"Thiªn thÇn h¹ phµm", 60, "Lasts %d minutes"},
 		[2] = {
 			[1] = {9908, "state_p_attack_percent_add",	700,	"Ngo¹i c«ng t¨ng %d%%"},
 			[2] = {9909, "state_m_attack_percent_add",	700,	"Néi c«ng t¨ng %d%%"},
 			[3] = {9910, "state_life_max_percent_add",	300,	"Giíi h¹n m¸u t¨ng %d%%"},
-			[4] = {9911, "state_buff_resist",			14,		"MiÔn dÞch tr¹ng th¸i bÞ h¹i %d"},
+			[4] = {9911, "state_buff_resist",			14,		"Immune to harmful status %d"},
 		},
 	},
 }
@@ -665,66 +665,66 @@ T.msg = format("%s\nV­ît ¶i th­êng: Mçi thµnh viªn cÇn tiªu hao <color=yellow>%d
 	, T.msg, N_JOIN_ENERGY_NEED, N_JOIN_TIANJIAOLING_NEED, T_TIANJIAOLING[4])
 T.sel =
 {
-	{". Bèi c¶nh L­¬ng S¬n QuÇn Hïng Héi", T1, },
-	{". §iÒu kiÖn tham gia", T2, },
+	{". Background of the Liangshan Heroes Assembly", T1, },
+	{". Participation requirements", T2, },
 	{". Giíi thiÖu v­ît ¶i", T3, },
 	{". V­ît ¶i th­êng", "entry_jingli", },
 	{". V­ît ¶i Thiªn Kiªu", "entry_tianjiaoling", },
 	{". Ta muèn ®æi th­ëng", "exchange", },
 	{". Ta ®Õn nhËn nhiÖm vô h»ng ngµy", "DailyTasksMenu", },
-	{". Tho¸t", "nothing", },
+	{". Exit", "nothing", },
 	};
 T1.msg = "<color=green>"..NpcName[1][2].."<color>: c¸c vÞ anh hïng hµo kiÖt tû vâ L­¬ng S¬n giµnh ®­îc chiÕn th¾ngcã thÓ nhËn ®­îc tÝn vËt——Thiªn Cang LÖnh, dïng Thiªn Cang LÖnh cã thÓ t×m ta ®æi lÊy kú binh dÞ b¶o trong thiªn h¹.";
 T1.sel =
 {
 	{". Trë l¹i", T, },
-	{". Tho¸t", "nothing", }, };
+	{". Exit", "nothing", }, };
 T2.msg = "<color=green>"..NpcName[1][2].."<color>: Ýt nhÊt cÇn 3 ng­êi ch¬i ®»ng vÊp >=80 tæ ®éi, vµ do ®éi tr­ëng dÉn, míi ®­îc tham gia L­¬ng S¬n QuÇn Hïng Héi. Gamer kh«ng gia nhËp l­u ph¸i sÏ kh«ng thÓ ®i vµo.";
 T2.msg = format("%s\nV­ît ¶i th­êng: Mçi thµnh viªn cÇn tiªu hao <color=yellow>%d ®iÓm tinh lùc<color>\nV­ît ¶i Thiªn Kiªu: §éi tr­ëng cÇn tiªu hao <color=yellow>%d c¸i %s<color>"
 	, T2.msg, N_JOIN_ENERGY_NEED, N_JOIN_TIANJIAOLING_NEED, T_TIANJIAOLING[4])
 T2.sel =
 {
 	{". Trë l¹i", T, },
-	{". Tho¸t", "nothing", }, };
+	{". Exit", "nothing", }, };
 T3.msg = "<color=green>"..NpcName[1][2].."<color>: L­¬ng S¬n quÇn hïng héi tæng céng cã 5 ¶i, vµ 8 nhãm h¶o h¸n L­¬ng S¬n (chän ngÉu nhiªn trong danh s¸ch 18 nhãm). Cña ¶i 1~4 mçi ¶i khiªu chiÕn 1 nhãm, ¶i thø 5 khiªu chiÕn 4 nhãm h¶o h¸n cßn l¹i.";
 T3.sel =
 {
 	{". Thñy B¸ch §×nh", T3_1, },
-	{". kho¸i Ho¹t L©m", T3_2, },
-	{". Phi M· §¹o", T3_3, },
-	{". H¾c Phong Tr¹i", T3_4, },
-	{". Tô NghÜa §­êng", T3_5, },
-	{". ¶i bÝ mËt", T3_6, },
+	{". Kuai Huo Lin", T3_2, },
+	{". Fei Ma Dao", T3_3, },
+	{". Heifeng Stronghold", T3_4, },
+	{". Hall of Loyalty", T3_5, },
+	{". Secret pass", T3_6, },
 	{". Trë l¹i", T, },
-	{". Tho¸t", "nothing", }, };
+	{". Exit", "nothing", }, };
 T3_1.msg = "<color=green>"..NpcName[1][2].."<color>: xung quanh Thñy B¸ch §×nh ®Æt s½n nhiÒu r­¬ng, ph¸ vì r­¬ng cã thÓ kÝch ho¹t nhiÒu hiÖu qu¶ kh¸c nhau, cã hiÖu qu¶ tr¹ng th¸i t¨ng hç trî cho ®éi ngò, biÕt n¾m b¾t vµ sö dông tèt hiÖu qu¶ mang l¹i cã thÓ gióp Ých cho ®éi ngò v­ît ¶i dÔ dµng h¬n.";
 T3_1.sel =
 {
 	{". Trë l¹i", T3, },
-	{". Tho¸t", "nothing", }, };
+	{". Exit", "nothing", }, };
 T3_2.msg = "<color=green>"..NpcName[1][2].."<color>: Lç TuÊn trong Kho¸i Ho¹t L©m sÏ hç trî hÕt m×nh cho ®éi ngò trong v­ît ¶i, chØ cÇn ®èi tho¹i víi anh ta lµ cã thÓ m­în ®­îc søc m¹nh hç trî.";
 T3_2.sel =
 {
 	{". Trë l¹i", T3, },
-	{". Tho¸t", "nothing", }, };
+	{". Exit", "nothing", }, };
 T3_3.msg = "<color=green>"..NpcName[1][2].."<color>: Hoa Vinh vµ Tr­¬ng Thanh x¶y ra tranh chÊp cao thÊp trong Kho¸i M· §¹o, c¸c h¹ cÇn chän mét trong 2 ®Ó thi tµi, trong thêi gian quy ®Þnh tiªu diÖt ®­îc d· thó nhiÒu h¬n sÏ chiÕn th¾ng vµ nhËn ®­îc “KhÝ Nguyªn ThÇn C«ng”";
 T3_3.sel =
 {
 	{". Trë l¹i", T3, },
-	{". Tho¸t", "nothing", }, };
+	{". Exit", "nothing", }, };
 T3_4.msg = "<color=green>"..NpcName[1][2].."<color>: H¾c Phong Tr¹i cã dùng s½n 4 lo¹i c¬ quan, khëi ®éng nh÷ng c¬ quan kh¸c nhau cã thÓ gi¶i phãng kü n¨ng kh¸c nhau. Mét lîi thÕ dïng ®Ó chèng l¹i kÎ thï khi v­ît ¶i.";
 T3_4.sel =
 {
 	{". Trë l¹i", T3, },
-	{". Tho¸t", "nothing", }, };
+	{". Exit", "nothing", }, };
 T3_5.msg = "<color=green>"..NpcName[1][2].."<color>: nÕu thµnh c«ng ®i qua H¾c Phong Tr¹i, mét ng­êi trong tæ ®éi c¸c b¹n nép 1 Thiªn Kiªu LÖnh cho §íi T«ng míi ®­îc ®i vµo Tô NghÜa §­êng khiªu chiÕn c¸c h¶o h¸n kh¸c ( Thiªn Kiªu LÖnh cã thÓ mua t¹i Ngù C¸c), sau khi khiªu chiÕn, nh©n vËt t­¬ng øng trong tô nghÜa ®­êng sÏ ®æi thµnh nh©n vËt chiÕn ®Êu vµ tû vâ víi tæ ®éi ng­¬i.";
 T3_5.sel =
 {
 	{". Trë l¹i", T3, },
-	{". Tho¸t", "nothing", }, };
+	{". Exit", "nothing", }, };
 T3_6.msg = "<color=green>"..NpcName[1][2].."<color>: ®©y lµ mét bÝ mËt."
 T3_6.sel =
 {
 	{". Trë l¹i", T3, },
-	{". Tho¸t", "nothing", }, 
+	{". Exit", "nothing", }, 
 }

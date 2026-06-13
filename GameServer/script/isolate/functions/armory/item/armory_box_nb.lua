@@ -8,7 +8,7 @@
 Import("\\script\\lib\\globalfunctions.lua");
 Include("\\script\\isolate\\functions\\armory\\item\\armory_head.lua")
 
-g_szLogCaption = "V¨n Søc HuyÔn BiÕn Kh¾c B¶n";
+g_szLogCaption = "Van Suc Mystic Transformation Engraving";
 g_tPlayerData  = {};
 
 function OnUse(idx)
@@ -41,7 +41,7 @@ function Confirm(nSel, nItemIndex)
 
 	local szTitle	= format("<color=green>[%s]<color>: Dïng sÏ nhËn ®­îc ngò hµnh vµ 1 V¨n Søc thuéc tÝnh <color=yellow>[%s][+%d][%s]<color>.\n\n", tItem[1], g_tStringTable.tLevel[tItem[5]], tItem[6], g_tStringTable.tQuality[tItem[7]]);
 	local tMenu	= {
-		format("%s/#Award(%d, %d)", "§ång ý", nSel, nItemIndex),
+		format("%s/#Award(%d, %d)", "Agree", nSel, nItemIndex),
 		"§Ó ta nghÜ l¹i	/nothing",
 	};
 	Say(szTitle, getn(tMenu), tMenu);
@@ -183,8 +183,8 @@ function MakeArmory_Series(nSel, nStep, nValue)
 	if not nValue then
 		local szMsg = format("<color=green>[%s]<color>: H·y chän ngò hµnh.\n\n", tItem[1]);
 		local tMenu = {
-			format("\n Ph¶n håi	/#MakeArmory(%d, %d)", nSel, nStep - 1),
-			"Ra khái	/nothing",
+			format("\n Back	/#MakeArmory(%d, %d)", nSel, nStep - 1),
+			"Exit	/nothing",
 		};
 		for k, v in g_tStringTable.tSeries do
 			tinsert(tMenu, 1, format("Ngò hµnh - %s /#MakeArmory_Series(%d, %d, %d)", v, nSel, nStep, k));
@@ -214,16 +214,16 @@ function MakeArmory_MagicAttribute(nSel, nStep, nAttrIdx, nPageIdx, nValue)
 	if not nValue then
 		local szMsg = format("<color=green>[%s]<color>: H·y chän dßng thuéc tÝnh %d.\n\n", tItem[1], nAttrIdx);
 		local tMenu = {
-			format("\n Ph¶n håi	/#MakeArmory(%d, %d)", nSel, nStep - 1),
-			"Ra khái	/nothing",
+			format("\n Back	/#MakeArmory(%d, %d)", nSel, nStep - 1),
+			"Exit	/nothing",
 		};
 
 		if getn(tItem[8][nAttrIdx]) > (nPageIdx + 1) * nLinePerPage then
-			tinsert(tMenu, 1, format("%s/#MakeArmory_MagicAttribute(%d, %d, %d, %d)", "Trang kÕ", nSel, nStep, nAttrIdx, nPageIdx + 1));
+			tinsert(tMenu, 1, format("%s/#MakeArmory_MagicAttribute(%d, %d, %d, %d)", "Next page", nSel, nStep, nAttrIdx, nPageIdx + 1));
 		end
 
 		if 0 < nPageIdx then
-			tinsert(tMenu, 1, format("%s/#MakeArmory_MagicAttribute(%d, %d, %d, %d)", "Trang tr­íc", nSel, nStep, nAttrIdx, nPageIdx - 1));
+			tinsert(tMenu, 1, format("%s/#MakeArmory_MagicAttribute(%d, %d, %d, %d)", "Previous page", nSel, nStep, nAttrIdx, nPageIdx - 1));
 		end
 
 		for i = 1, nLinePerPage do
@@ -263,7 +263,7 @@ function MakeArmory_Confirm(nSel, nStep, nValue)
 	end
 
 	if not nValue then
-		local szMsg = format("<color=green>[%s]<color>: §· chän\n", tItem[1]);
+		local szMsg = format("<color=green>[%s]<color>: Chosen\n", tItem[1]);
 
 		if not tData.nArmory or not g_tStringTable.tArmoryEx[tData.nArmory] then
 			return 0;
@@ -284,8 +284,8 @@ function MakeArmory_Confirm(nSel, nStep, nValue)
 
 		local tMenu = {
 			format("\nX¸c nhËn	/#MakeArmory_Confirm(%d,%d,%d)", nSel, nStep, 1),
-			format("\n Ph¶n håi	/#MakeArmory(%d, %d)", nSel, nStep - 1),
-			"Ra khái	/nothing",
+			format("\n Back	/#MakeArmory(%d, %d)", nSel, nStep - 1),
+			"Exit	/nothing",
 		};
 
 		Say(szMsg, getn(tMenu), tMenu);

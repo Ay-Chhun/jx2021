@@ -6,7 +6,7 @@ Include("\\script\\online\\qingrenyuanxiao\\qryx_head.lua")
 
 function main()
 	local selTab = {
-				"Ta ®ång ı/ok",
+				"I agree/ok",
 				"§Ó ta suy nghÜ l¹i/nothing"
 				}
 	if NoTaskBegin() == 1 then
@@ -24,7 +24,7 @@ function ok()
 				"ChuyÖn g× lµm c« n­¬ng buån phiÒn vËy?",
 				"Ta muèn ra ngoµi ®i häc, nªn ph¶i gi¶ d¹ng nam nhi. MÊy h«m tr­íc ta ®· giÆt mÊy bé nam trang, giê kh«ng cã ¸o mÆc, l¹i kh«ng tiÖn ®Õn TiÖm Nam phôc, «ng chñ sÏ hiÓu lÇm.",
 				"DÔ th«i, ta sÏ gióp c« n­¬ng mua 1 bé nam trang <color=red>HiÖp ThiÕu Bè Y<color>, <color=red>HiÖp ThiÕu Bè Trang<color>, <color=red>HiÖp ThiÕu c©n<color>.",
-				"TiÖn n÷ xin ®a t¹.")
+				"This humble maiden thanks you.")
 		local OldPlayerIndex = PlayerIndex
 		local maleIndex,femaleIndex = GetLoversIndex()
 		local teamIndex = CreateTeamIndex(maleIndex,femaleIndex)
@@ -36,7 +36,7 @@ function ok()
 			PlayerIndex = GetTeamMember(i)
 			SetTask(TASK_LOVESTORY1,2)
 			SetTask(TASK_TEAM_INDEX,teamIndex)
-			TaskTip("Mua cho Chóc Anh §µi 1 bé HiÖp ThiÕu Bè Y, HiÖp ThiÕu Bè Trang, HiÖp ThiÕu c©n.")
+			TaskTip("Buy Zhu Yingtai a set of Hero's Plain Robe, Hero's Plain Garb, and Hero's Sash.")
 		end
 		PlayerIndex = OldPlayerIndex
 	elseif CanAcceptTask(TASK_LOVESTORY1,2) == 1 then
@@ -45,7 +45,7 @@ function ok()
 					"§a t¹! LÇn nµy ta cã thÓ gi¶ nam trang ra ngoµi råi, nh­ng tiÖn n÷ vÉn cßn 1 viÖc muèn nhê.",
 					"Cã viÖc g× cø nãi ®õng ng¹i, ta sÏ gióp cho.",
 					"ThËt ra còng kh«ng cã g×, nh­ng thËt khã nãi, ta vµ <color=yellow>L­¬ng S¬n B¸<color> l©u råi ch­a gÆp, l¹i kh«ng tiÖn ®i xa. Muèn nhê c¸c vŞ thay ta ®Õn th¨m huynh Êy, hiÖn ®ang ë <color=red>D­¬ng Ch©u<color>.",
-					"§­îc! Ta lËp tøc ®Õn ®ã.")
+					"Alright! I'll go there at once.")
 			local OldPlayerIndex = PlayerIndex
 			if GetItemCount(0,100,1) >= 1 and GetItemCount(0,101,1) >= 1 and GetItemCount(0,103,19) >= 1 then
 				DelItem(0,100,1,1)
@@ -78,7 +78,7 @@ function ok()
 				for i=1,2 do
 					PlayerIndex = GetTeamMember(i)
 					SetTask(TASK_LOVESTORY1,8)
-					TaskTip("§­a tr©m cµi tãc vµ nh¾n cho L­¬ng S¬n B¸")
+					TaskTip("Deliver the hairpin and the message to Liang Shanbo")
 				end
 				PlayerIndex = OldPlayerIndex
 			end

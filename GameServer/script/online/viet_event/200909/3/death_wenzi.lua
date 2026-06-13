@@ -9,7 +9,7 @@ function OnDeath(npcIndex)
 	local nRetCode, nIndex = AddItem(2, 1, 30110, 1);
 	if nRetCode == 1 then
 		SetItemExpireTime(nIndex, 30 * 24 * 3600);
-		WriteLogEx("Hoat dong trung thu","Boss Con Muçi",1,"Tói V¨n Tö")
+		WriteLogEx("Hoat dong trung thu","Mosquito Boss",1,"Scholar Bag")
 	end
 	
 	local nMapID, nWx, nWy = GetNpcWorldPos(npcIndex)
@@ -20,7 +20,7 @@ function OnDeath(npcIndex)
 	for i = 1, 10 do
 		nAddX = random(-30, 30)
 		nAddY = random(-30, 30)		
-		nTargetNpc = CreateNpc("Tói cao thñ", "V¨n Tö Bao", nMapID, nWx + nAddX, nWy + nAddY)
+		nTargetNpc = CreateNpc("Tói cao thñ", "Scholar Wrap", nMapID, nWx + nAddX, nWy + nAddY)
 		SetNpcLifeTime(nTargetNpc, 300)
 		SetNpcScript(nTargetNpc, "\\script\\online\\viet_event\\200909\\3\\wenzi_baoguo.lua")
 	end	

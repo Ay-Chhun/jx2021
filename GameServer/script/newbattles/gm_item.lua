@@ -8,13 +8,13 @@ function OnUse()
 --	end;
 	local selTab = {
 		"Ta muèn cã b×nh m¸u/SetCustomPlayHour",
-		"Hñy bá/nothing"
+		"Cancel/nothing"
 	};
 	Say("", getn(selTab), selTab);
 end;
 
 function SetCustomPlayHour()
-	AskClientForNumber("SetPlayHour",0,999,"NhËp sè b×nh m¸u")
+	AskClientForNumber("SetPlayHour",0,999,"Enter the number of healing potions")
 end;
 
 function SetPlayHour(szHour)
@@ -67,12 +67,12 @@ function open_mission()
 	end
 	for k,v in tLonghuBattle[nMapId] do 
 		if v[1] ~= 0 and v[2] ~= 0 then
-			local msg = format(v[3].."(§éi %d vs §éi %d)", v[1],v[2]);
+			local msg = format(v[3].."(Team %d vs Team %d)", v[1],v[2]);
 			tinsert(tbSel,msg.."/#open_mission_comfirm("..k..")");
 		end
 	end;
 	tinsert(tbSel,"T¹m thêi kh«ng khëi ®éng/nothing")
-	Say(tMapInfo[nMapId].." Danh s¸ch trËn ®Êu:", getn(tbSel), tbSel);
+	Say(tMapInfo[nMapId].." List of battles:", getn(tbSel), tbSel);
 end;
 
 function open_mission_comfirm(nBattle)
@@ -133,7 +133,7 @@ function close_mission()
 		return
 	end
 	local v = tLonghuBattle[nMapId][nMatchNo];
-	local msg = format(v[3].."(§éi %d vs §éi %d)", v[1],v[2]);
+	local msg = format(v[3].."(Team %d vs Team %d)", v[1],v[2]);
 	Say("HiÖn t¹i ®ang thi ®Êu: :"..msg.."\nX¸c nhËn ®ãng?", getn(tbSel), tbSel);
 end;
 
@@ -146,7 +146,7 @@ end;
 function translate()
 	local tbSel = {};
 	for k,v in tMapInfo do
-		tinsert(tbSel,"ChuyÓn ®Õn"..tMapInfo[k].."/#translate_comfirm("..k..")");
+		tinsert(tbSel,"Move to"..tMapInfo[k].."/#translate_comfirm("..k..")");
 	end;
 	tinsert(tbSel,"T¹m thêi kh«ng chuyÓn ®Õn /nothing");
 	Say("Xin mêi chän b¶n ®å thi ®Êu ®Ó ®i vµo:", getn(tbSel), tbSel);

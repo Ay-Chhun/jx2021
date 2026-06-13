@@ -13,12 +13,12 @@ function main()
 
 local npcName = GetTargetNpcName();
 
-	if npcName==nil or npcName=="" then npcName = "S¸t thñ "; end;	
+	if npcName==nil or npcName=="" then npcName = "Assassin"; end;	
 
-	Say("<color=green>"..npcName.."<color>:……",
+	Say("<color=green>"..npcName.."<color>:",
 		2,
 		"Cuèi cïng còng ®Ó ta b¾t ®­îc ng­¬i!/Killer_Fight",
-		"Kh«ng cã g×/Killer_Exit");
+		"It is nothing/Killer_Exit");
 	
 end;
 

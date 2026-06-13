@@ -14,7 +14,7 @@ MAXNUM_SKILL_APP_COUNT	= 99999;
 Include("\\script\\lib\\globalfunctions.lua");
 Include("\\script\\lib\\define.lua");
 
-g_szLogCaption		= "§¸ Kü N¨ng";
+g_szLogCaption		= "Skill Gem";
 
 function unequip_all_skill_app()
 	local tItemList			= GetEquipedSkillAppList();

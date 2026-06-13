@@ -17,7 +17,7 @@ function main()
 	local tbSay = {}
 	tinsert(tbSay, format("%s/#do_eat(%d)", "Ta muèn uèng r­îu", 1))
 	tinsert(tbSay, format("%s/#do_eat(%d)", "Ta kh«ng uèng r­îu", 0))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 	
 	Say(szTitle, getn(tbSay), tbSay)
 end

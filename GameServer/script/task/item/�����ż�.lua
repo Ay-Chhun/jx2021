@@ -1,7 +1,7 @@
 Include("\\script\\task\\global_task\\gtask_data.lua")
 Include("\\script\\task\\global_task\\task_id.lua")
 function OnUse(nItemIndex)
-	SendScript2Client("Open([[LargeMsg]], 2, [[hép th­ thÇn bİ ]]);");
+	SendScript2Client("Open([[LargeMsg]], 2, [[mysterious mailbox ]]);");
 	--Talk(1,"get_new_task","<color=green>¸÷Î»½­ºşÏÀ¿Í£º<color>\n\n   ÄãÃÇºÃ£¡ÔÚÏÂÃû½Ğ½­±ğº×£¬×î½üÓöµ½Ò»¼ş¼¬ÊÖÊÂÇé£¬µ¥Æ¾ÎÒ¸öÈËÁ¦Á¿ºÜÄÑÍê³É´ËÊÂ£¬Òò´Ë¿ÏÇë¸÷Î»ÎäÁÖ¸ßÊÖ°ïÃ¦£¬Èô¸÷Î»ÏÀ¿ÍÔ¸ÒâÓëÔÚÏÂÒ»Í¬Íê³É´ËÊÂ£¬ÔÚÏÂ¶¨µ±²»»á¿÷´ıÄãÃÇ¡£ÄãÃÇ¿ÉÀ´·ïÏè¸®ÕÒÎÒ£¬ÎÒ»áÏêÏ¸ËµÃ÷´ËÊÂ¡£¸ĞĞ»¸÷Î»ÏÀ¿Í£¡\n\n                                                                    <color=green> ½­±ğº×<color>")
 	--SetItemUseLapse(nItemIndex,18*60*3);
 	get_new_task();

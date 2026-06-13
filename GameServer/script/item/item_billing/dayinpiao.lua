@@ -7,7 +7,7 @@ t_item_index =
 t_itemconfig = 
 {
 	--szName,g,d,p,nAddXu
-	{"§¹i ng©n phiÕu",2, 1, 199, 100},
+	{"Great Silver Note",2, 1, 199, 100},
 	{"Hoµng Kim §¹i Ng©n PhiÕu", 2, 1, 30490, 1000},
 }
 
@@ -19,7 +19,7 @@ function OnUse(nItemIndex)
 		local nType = t_item_index[p] or 0
 		local t = t_itemconfig[nType]
 		if t then
-			Say(format("X¸c ®Þnh dïng 1 %s ®æi %d Xu ?",t[1],t[5]), 2, format("§ång ý/#ensure(%d)", nItemIndex), "Hñy bá/do_nothing");
+			Say(format("X¸c ®Þnh dïng 1 %s ®æi %d Xu ?",t[1],t[5]), 2, format("Confirm/#ensure(%d)", nItemIndex), "Cancel/do_nothing");
 		end
 	end
 	

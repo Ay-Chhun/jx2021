@@ -202,7 +202,7 @@ function dzt_get_award_1()
 	else
 		tbAward = DZT_AWARD_1_TABLE;
 	end
-	gf_EventGiveRandAward(tbAward, 10000, 1, "§¹i t¸c chiÕn truy t×m l¹i ch÷ viÕt", "Mao tÆc", nRand);
+	gf_EventGiveRandAward(tbAward, 10000, 1, "§¹i t¸c chiÕn truy t×m l¹i ch÷ viÕt", "Petty Bandit", nRand);
 end
 
 function dzt_get_award_2()
@@ -225,7 +225,7 @@ function dzt_get_award_2()
 	else
 		tbAward = DZT_AWARD_2_TABLE;
 	end
-	gf_EventGiveRandAward(tbAward, 10000, 1, "§¹i t¸c chiÕn truy t×m l¹i ch÷ viÕt", "§¹o tÆc", nRand);
+	gf_EventGiveRandAward(tbAward, 10000, 1, "§¹i t¸c chiÕn truy t×m l¹i ch÷ viÕt", "Robber", nRand);
 end
 
 function dzt_get_award_3()
@@ -248,7 +248,7 @@ function dzt_get_award_3()
 	else
 		tbAward = DZT_AWARD_3_TABLE;
 	end
-	gf_EventGiveRandAward(tbAward, 10000, 1, "§¹i t¸c chiÕn truy t×m l¹i ch÷ viÕt", "C­êng tÆc", nRand);
+	gf_EventGiveRandAward(tbAward, 10000, 1, "§¹i t¸c chiÕn truy t×m l¹i ch÷ viÕt", "Brigand", nRand);
 end
 
 function dzt_get_award_4()
@@ -271,7 +271,7 @@ function dzt_get_award_4()
 	else
 		tbAward = DZT_AWARD_4_TABLE;
 	end
-	gf_EventGiveRandAward(tbAward, 10000, 1, "§¹i t¸c chiÕn truy t×m l¹i ch÷ viÕt", "§¹i ®¹o tÆc", nRand);
+	gf_EventGiveRandAward(tbAward, 10000, 1, "§¹i t¸c chiÕn truy t×m l¹i ch÷ viÕt", "Master Bandit", nRand);
 end
 
 function dzt_ls_14()
@@ -280,11 +280,11 @@ function dzt_ls_14()
 	end
 	local tbAward = {
 		{1, 40, "Hoa", {2, 1, 30447, 2}, 0},
-    {1, 20, "H¶o", {2, 1, 30448, 2}, 0},
+    {1, 20, "Good", {2, 1, 30448, 2}, 0},
     {1, 20, "NguyÖt", {2, 1, 30449, 2}, 0},
     {1, 20, "Viªn", {2, 1, 30450, 2}, 0},
 	}
-	gf_EventGiveRandAward(tbAward, 100, 1, "§¹i t¸c chiÕn truy t×m l¹i ch÷ viÕt", "Sinh ra tõ L­¬ng S¬n")
+	gf_EventGiveRandAward(tbAward, 100, 1, "§¹i t¸c chiÕn truy t×m l¹i ch÷ viÕt", "Born from Liangshan")
 end
 
 function dzt_ls_58()
@@ -293,11 +293,11 @@ function dzt_ls_58()
 	end
 	local tbAward = {
 		{1, 40, "Hoa", {2, 1, 30447, 4}, 0},
-    {1, 20, "H¶o", {2, 1, 30448, 4}, 0},
+    {1, 20, "Good", {2, 1, 30448, 4}, 0},
     {1, 20, "NguyÖt", {2, 1, 30449, 4}, 0},
     {1, 20, "Viªn", {2, 1, 30450, 4}, 0},
 	}
-	gf_EventGiveRandAward(tbAward, 100, 1, "§¹i t¸c chiÕn truy t×m l¹i ch÷ viÕt", "Sinh ra tõ L­¬ng S¬n")
+	gf_EventGiveRandAward(tbAward, 100, 1, "§¹i t¸c chiÕn truy t×m l¹i ch÷ viÕt", "Born from Liangshan")
 end
 
 function dzt_wj_13()
@@ -306,7 +306,7 @@ function dzt_wj_13()
 	end
 	local tbAward = {
 		{1, 20, "Hoa", {2, 1, 30447, 2}, 0},
-    {1, 40, "H¶o", {2, 1, 30448, 2}, 0},
+    {1, 40, "Good", {2, 1, 30448, 2}, 0},
     {1, 20, "NguyÖt", {2, 1, 30449, 2}, 0},
     {1, 20, "Viªn", {2, 1, 30450, 2}, 0},
 	}
@@ -319,7 +319,7 @@ function dzt_wj_4()
 	end
 	local tbAward = {
 		{1, 20, "Hoa", {2, 1, 30447, 4}, 0},
-    {1, 40, "H¶o", {2, 1, 30448, 4}, 0},
+    {1, 40, "Good", {2, 1, 30448, 4}, 0},
     {1, 20, "NguyÖt", {2, 1, 30449, 4}, 0},
     {1, 20, "Viªn", {2, 1, 30450, 4}, 0},
 	}
@@ -332,7 +332,7 @@ function dzt_ttd_13()
 	end
 	local tbAward = {
 		{1, 20, "Hoa", {2, 1, 30447, 2}, 0},
-    {1, 20, "H¶o", {2, 1, 30448, 2}, 0},
+    {1, 20, "Good", {2, 1, 30448, 2}, 0},
     {1, 40, "NguyÖt", {2, 1, 30449, 2}, 0},
     {1, 20, "Viªn", {2, 1, 30450, 2}, 0},
 	}
@@ -345,7 +345,7 @@ function dzt_ttd_47()
 	end
 	local tbAward = {
 		{1, 20, "Hoa", {2, 1, 30447, 4}, 0},
-    {1, 20, "H¶o", {2, 1, 30448, 4}, 0},
+    {1, 20, "Good", {2, 1, 30448, 4}, 0},
     {1, 40, "NguyÖt", {2, 1, 30449, 4}, 0},
     {1, 20, "Viªn", {2, 1, 30450, 4}, 0},
 	}
@@ -358,7 +358,7 @@ function dzt_tmz_fail()
 	end
 	local tbAward = {
 		{1, 20, "Hoa", {2, 1, 30447, 3}, 0},
-    {1, 20, "H¶o", {2, 1, 30448, 3}, 0},
+    {1, 20, "Good", {2, 1, 30448, 3}, 0},
     {1, 20, "NguyÖt", {2, 1, 30449, 3}, 0},
     {1, 40, "Viªn", {2, 1, 30450, 3}, 0},
 	}
@@ -376,7 +376,7 @@ function dzt_tmz_succ()
 	end
 	local tbAward = {
 		{1, 20, "Hoa", {2, 1, 30447, 9}, 0},
-    {1, 20, "H¶o", {2, 1, 30448, 9}, 0},
+    {1, 20, "Good", {2, 1, 30448, 9}, 0},
     {1, 20, "NguyÖt", {2, 1, 30449, 9}, 0},
     {1, 40, "Viªn", {2, 1, 30450, 9}, 0},
 	}
@@ -398,7 +398,7 @@ function dzt_tmz_kill()
 	end
 	local	tbAward = {
 			{1, 6, "Hoa", {2, 1, 30447, 1}, 0},
-	    {1, 6, "H¶o", {2, 1, 30448, 1}, 0},
+	    {1, 6, "Good", {2, 1, 30448, 1}, 0},
 	    {1, 6, "NguyÖt", {2, 1, 30449, 1}, 0},
 	    {1, 12, "Viªn", {2, 1, 30450, 1}, 0},
 	    {31, 70, "nothing()", 0},
@@ -412,7 +412,7 @@ function dzt_tmz_kill_player()
 	end
 	local tbAward = {
 			{1, 12, "Hoa", {2, 1, 30447, 1}, 0},
-	    {1, 12, "H¶o", {2, 1, 30448, 1}, 0},
+	    {1, 12, "Good", {2, 1, 30448, 1}, 0},
 	    {1, 12, "NguyÖt", {2, 1, 30449, 1}, 0},
 	    {1, 24, "Viªn", {2, 1, 30450, 1}, 0},
 	    {31, 40, "nothing()", 0},

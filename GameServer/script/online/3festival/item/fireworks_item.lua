@@ -17,9 +17,9 @@ function OnUse()
 		return 0;
 	end;
 	local selTab = {
-				"§èt ph¸o hoa/confirm",
-				"Xem thuyÕt minh/know_detail",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"Light fireworks/confirm",
+				"View explanation/know_detail",
+				"End dialogue/nothing",
 				}
 	Say("Thêi gian sö dông ph¸o hoa lµ <color=yellow>28/9-8/10<color>. B¹n muèn lµm g×?",getn(selTab),selTab);
 end;
@@ -27,7 +27,7 @@ end;
 function confirm()
 	if DelItem(tItemInfo[10][2],tItemInfo[10][3],tItemInfo[10][4],1) == 1 then
 		local nMapID,nMapX,nMapY = GetWorldPos();
-		local nNpcIndex = CreateNpc("Ng­êi V« h×nh",GetName().." ph¸o hoa",nMapID,nMapX,nMapY);
+		local nNpcIndex = CreateNpc("Ng­êi V« h×nh",GetName().." fireworks",nMapID,nMapX,nMapY);
 		SetNpcLifeTime(nNpcIndex,15*60);	--15·ÖÖÓ£¬±È10·ÖÖÓ³¤Ò»µã
 		SetCurrentNpcSFX(nNpcIndex,936,1,1);
 		SetTaskTemp(TT_FIREWORKS_MAPID,nMapID);

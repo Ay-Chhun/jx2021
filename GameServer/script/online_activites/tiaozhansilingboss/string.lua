@@ -7,21 +7,21 @@ VET_201008_02_STR_LOG_TITLE = "Ho¹t ®éng khiªu chiÕn tø linh";--±¾´Î»î¶¯ÈÕÖ¾±êÌâ
 
 VET_201008_02_TB_LOG_ACTION_LIST = {
     [1] = "Nép ®µn h­¬ng méc ®Ó nhËn th­ëng",
-    [2] = "NhËn ®µn h­¬ng méc",
+    [2] = "Submit sandalwood",
     [3] = "NhËn phÇn th­ëng tiÖc mõng c«ng",
     [4] = "Sö dông tø linh lÖnh nhËn ®­îc phÇn th­ëng",
     [5] = "§¸nh b¹i boss nhËn ®­îc tø linh lÖnh",
 };
 
 VET_201008_02_TB_ITEM_LIST = {
-    [1] = {"§µn H­¬ng Méc",2,1,30231},
-    [2] = {"Tø Linh LÖnh",2,1,30232},
+    [1] = {"Sandalwood",2,1,30231},
+    [2] = {"Four Spirits Token",2,1,30232},
 };
 
 
 VET_201008_02_TB_NPC_LIST = {
-    [1] = {"Lß n­íng b¸nh","Tø Linh §Ønh","\\script\\online_activites\\tiaozhansilingboss\\npc\\npc_silingding.lua"},
-    [2] = {"R­¬ng tiÒn","§µn H­¬ng R­¬ng","\\script\\online_activites\\tiaozhansilingboss\\npc\\npc_tanmuxiang.lua"},
+    [1] = {"Lß n­íng b¸nh","Four Spirits Cauldron","\\script\\online_activites\\tiaozhansilingboss\\npc\\npc_silingding.lua"},
+    [2] = {"R­¬ng tiÒn","Sandalwood Chest","\\script\\online_activites\\tiaozhansilingboss\\npc\\npc_tanmuxiang.lua"},
     [3] = {"M©m cç","TiÖc mõng c«ng cña %s","\\script\\online_activites\\tiaozhansilingboss\\npc\\npc_qinggongyan.lua"},
 };
 
@@ -39,8 +39,8 @@ VET_201008_02_TB_STR_LIST = {
     [2] = "Nép sè l­îng ®µn h­¬ng méc kh«ng ®ñ 200 c¸i, v× vËy kh«ng thÓ kÝch ho¹t ®­îc BOSS tø linh. Xin h·y cè g¾ng lÇn sau",
     [3] = "Cuèi cïng còng nép ®ñ 200 ®µn h­¬ng méc, BOSS tø linh ®· bÞ kÝch ho¹t. Mäi ng­êi h·y chuÈn bÞ nghªnh chiÕn nhÐ.",
     [4] = "Ta muèn nép ®µn h­¬ng méc",
-    [5] = "KÕt thóc ®èi tho¹i",
-    [6] = "§· nép <color=red>%d/200<color> ®µn h­¬ng méc.",
+    [5] = "End conversation",
+    [6] = "Submitted <color=red>%d/200<color> sandalwood.",
     [7] = "Mçi ngµy mçi ng­êi chØ cã thÓ nép 80 ®µn h­¬ng méc. c¸c h¹ ®· nép ®ñ 80 c¸i råi v× vËy kh«ng thÓ nép thªm ®­îc n÷a.",
     [8] = "§· nép ®ñ 200 ®µn h­¬ng méc, kh«ng cÇn ph¶i nép thªm n÷a. Xin h·y ®îi boss xuÊt hiÖn!!!",
     [9] = "Trªn hµnh trang cña c¸c h¹ ®· cã 1 ®µn h­¬ng méc råi, kh«ng thÓ mang thªm ®µn h­¬ng méc n÷a.",
@@ -50,39 +50,39 @@ VET_201008_02_TB_STR_LIST = {
     [13] = "H«m nay c¸c h¹ ®· sö dông 9 lÇn tiÖc mõng c«ng, v× vËy kh«ng thÓ tiÕp tôc sö dông.",
     [14] = "CÇn thªm %d gi©y míi cã thÓ sö dông tiÕp tiÖc mõng c«ng",
     [15] = "Trong tø linh lÖnh Èn ch­a huyÒn c¬, x¸c nhËn muèn sö dông tø linh lÖnh??",
-    [16] = "§óng vËy!",
+    [16] = "That is right!",
     [17] = "Hµnh trang kh«ng ®ñ ®µn h­¬ng méc",
     [18] = "CÊp 77 trë lªn vµ ®· tham gia m«n ph¸i míi cã thÓ sö dông tø linh ®Ønh",
     [19] = "R­¬ng ®µn méc xuÊt hiÖn råi.",
-    [20] = "Tø linh ®Ønh cã chøa %d ®µn h­¬ng méc",
+    [20] = "The Four Spirits Cauldron holds %d sandalwood",
     [21] = "ThÇn thó tø linh xuÊt hiÖn, xin h·y nhanh chãng b¾t lÊy.",
     [22] = "Chóc mõng ch­ vÞ ®· ®¶ b¹i thÇn thó tø linh, xin h·y nhanh chãng chuÈn bÞ",
 };
 
 VET_201008_02_TB_GIVE_QINGGONGYAN_AWARD = {
-    {1, 1514, "C¬m chiªn trøng", {1, 1, 14, 1}, 0},
+    {1, 1514, "Fried egg rice", {1, 1, 14, 1}, 0},
     {1, 518, "Thiªn th¹ch", {2, 2, 8, 1}, 0},
     {1, 500, "M¶nh Thiªn th¹ch", {2, 2, 7, 1}, 0},
-    {1, 140, "B¨ng th¹ch", {2, 1, 149, 1}, 0},
-    {1, 10, "TÈy Tñy linh ®¬n", {2, 0, 137, 1}, 15 * 24 * 3600},
-    {1, 50, "R­¬ng BÝ KÝp", {2, 1, 30093, 1}, 30 * 24 * 3600},
+    {1, 140, "Ice Stone", {2, 1, 149, 1}, 0},
+    {1, 10, "Marrow-Cleansing Spirit Pill", {2, 0, 137, 1}, 15 * 24 * 3600},
+    {1, 50, "Secret Manual Chest", {2, 1, 30093, 1}, 30 * 24 * 3600},
     {1, 50, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 0},
-    {1, 200, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 15 * 24 * 3600},
-    {1, 6, "R­¬ng TrÊn Ph¸i", {2, 1, 30113, 1}, 30 * 24 * 3600},
+    {1, 200, "Tribulation Dispel Powder", {2, 0, 141, 1}, 15 * 24 * 3600},
+    {1, 6, "Town Sect Chest", {2, 1, 30113, 1}, 30 * 24 * 3600},
     {1, 12, "Tö Quang Bµi", {2, 0, 762, 1}, 15 * 24 * 3600},
-    {1, 1400, "B¸nh Bét vµng", {1, 1, 15, 1}, 15 * 24 * 3600},
-    {1, 1400, "Méc Lan Xu©n", {1, 1, 18, 1}, 0},
-    {1, 1400, "T©y B¾c Väng", {1, 1, 19, 1}, 0},
-    {1, 1400, "L¹c Mai", {1, 1, 16, 1}, 0},
+    {1, 1400, "Golden Flour Cake", {1, 1, 15, 1}, 15 * 24 * 3600},
+    {1, 1400, "Magnolia Spring", {1, 1, 18, 1}, 0},
+    {1, 1400, "Northwest Gaze", {1, 1, 19, 1}, 0},
+    {1, 1400, "Plum Blossom", {1, 1, 16, 1}, 0},
     {1, 1400, "Minh NguyÖt D¹", {1, 1, 17, 1}, 0},
 };
 
 VET_201008_02_TB_GIVE_SILINGLING_AWARD = {
     {2, 73, 500000, 1},
-    {1, 6, "TÈy Tñy ®¬n", {2, 0, 136, 1}, 15 * 24 * 3600},
-    {1, 6, "R­¬ng BÝ KÝp", {2, 1, 30093, 1}, 30 * 24 * 3600},
-    {1, 1, "R­¬ng YÕu QuyÕt_Cao CÊp", {2, 1, 30112, 1}, 30 * 24 * 3600},
-    {1, 6, "R­¬ng TrÊn Ph¸i", {2, 1, 30113, 1}, 30 * 24 * 3600},
+    {1, 6, "Marrow-Cleansing Pill", {2, 0, 136, 1}, 15 * 24 * 3600},
+    {1, 6, "Secret Manual Chest", {2, 1, 30093, 1}, 30 * 24 * 3600},
+    {1, 1, "Essential Formula Chest_High Grade", {2, 1, 30112, 1}, 30 * 24 * 3600},
+    {1, 6, "Town Sect Chest", {2, 1, 30113, 1}, 30 * 24 * 3600},
     {1, 6, "NguyÖt Hoa Chi Tinh", {2, 1, 3219, 1}, 0},
     {1, 1, "Thiªn Th¹ch linh th¹ch", {2, 1, 1068, 1}, 15 * 24 * 3600},
     {3, 1, 10000000, 1},
@@ -97,9 +97,9 @@ VET_201008_02_TB_GIVE_TANXIANGMU_AWARD = {
 };
 
 VET_201008_02_STR_CITY_NAME = {
-    [1] = "Long TuyÒn Th«n",
+    [1] = "Long Tuyen Village",
     [2] = "V©n Méng Tr¹ch",
-    [3] = "§«ng BiÖn Kinh",
+    [3] = "East Bianjing",
     [4] = "T©y TuyÒn Ch©u",
     [5] = "B¾c TuyÒn Ch©u",
 };

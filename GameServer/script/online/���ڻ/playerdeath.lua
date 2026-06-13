@@ -12,7 +12,7 @@ function OnDeath(Launcher)
 	SetTask(PT_KILL_COUNT,GetTask(PT_KILL_COUNT,KillerIndex)+1, 0, KillerIndex);
 	if GetTask(PT_POINT,KillerIndex) > LIMIT_POINT then
 		SetTask(PT_POINT,LIMIT_POINT, 0, KillerIndex);
-		Msg2SomeOne(KillerIndex,"§iÓm tÝch lòy cña b¹n ®¹t møc tèi ®a:"..LIMIT_POINT.." Phót ");
+		Msg2SomeOne(KillerIndex,"§iÓm tÝch lòy cña b¹n ®¹t møc tèi ®a:"..LIMIT_POINT.." minutes");
 	end;
 	Msg2SomeOne(KillerIndex,"B¹n dïng TuyÕt cÇu ®¸nh ng·"..GetName(PlayerIndex)..", nhËn ®­îc mét ®iÓm tÝch lòy nÐm tuyÕt. HiÖn sè ®iÓm tÝch lòy cña b¹n lµ:"..GetTask(PT_POINT,KillerIndex));
 	if GetTask(PT_POINT,KillerIndex) > LIMIT_POINT then

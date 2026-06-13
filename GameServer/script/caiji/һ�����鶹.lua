@@ -53,7 +53,7 @@ function main()
 	-- Èç¹ûÍæ¼Ò¿ÉÒÔÍÚÕâ¸öÒ©Æ·£¬½øÈëÏÂÃæÖ´ĞĞ¶Î
 	if (nCanDig == 1 and nCanDigTool == 1) then
 		if (DoFireworks(890, 1) == 1) then
-			Msg2Player("Thu thËp......");
+			Msg2Player("Collecting......");
 			CastState("state_fetter", 1, 5 * 18)
 			ProgressSlot(5 * 18)
 			
@@ -99,7 +99,7 @@ function OnProgressCallback()
 	
 	-- ÌáÊ¾
 	if (nChoice == 1) then
-		Say("Khuynh ly ®Ëu nµy rÊt tèt, b¹n t×m ®­îc "..nSelCount.." Khuynh ly ®Ëu!", 0)
+		Say("Khuynh ly ®Ëu nµy rÊt tèt, b¹n t×m ®­îc "..nSelCount.." Khuynh Ly bean!", 0)
 	elseif (nChoice == 2) then
 		Say("Kh«ng ngê bªn trong cßn mét sè ®å, b¹n nhËn ®­îc "..nSelCount.." Th¹ch khuÈn!", 0)
 	else

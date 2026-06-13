@@ -24,7 +24,7 @@ function offline_exchange_talk_main()
 		"Ta muèn dïng thêi gian rêi m¹ng ñy th¸c ®æi lÊy danh väng ñy th¸c cña Lôc ThÇn Hoµn/get_offline_liushen",
 		"Ta muèn dïng thêi gian rêi m¹ng ñy th¸c ®æi lÊy ®é cèng hiÕn s­ m«n ñy th¸c cña Tam Thanh Hoµn./get_offline_sanqing",
 		"Ta muèn sö dông thêi gian ñy th¸c ®æi lÊy Tô Linh Hoµn Ch©n KhÝ ñy th¸c/get_offline_juling_talk",
-		"Rêi khái/no"
+		"Leave/no"
 		};
 	Say("C¸c h¹ muèn dïng thêi gian ñy th¸c quy ®æi phÇn th­ëng g×?", getn(tbDialog), tbDialog)
 end
@@ -60,17 +60,17 @@ function get_offline_baiju()
 		"Dïng thêi gian §¹i B¹ch C©u hoµn ®Ó ®æi kinh nghiÖm/#confirm_use_baiju(1)",
 		"Dïng thêi gian ñy th¸c B¹ch C©u Tiªn ®¬n ®Ó ®æi kinh nghiÖm/#confirm_use_baiju(2)",
 		"trë l¹i/offline_exchange_talk_main",
-		"Rêi khái/no"
+		"Leave/no"
 		)
 end
 
 function confirm_use_baiju(BaijuType)
 	if BaijuType == 0 then
-		Say("X¸c ®Þnh sö dông <color=yellow>B¹ch CÇu Hoµn<color> quy ®æi thµnh ®iÓm kinh nghiÖm?", 3, "§ång ý/yes_get_offline_baiju", "trë l¹i/get_offline_baiju", "Rêi khái/no")
+		Say("X¸c ®Þnh sö dông <color=yellow>B¹ch CÇu Hoµn<color> quy ®æi thµnh ®iÓm kinh nghiÖm?", 3, "Agree/yes_get_offline_baiju", "trë l¹i/get_offline_baiju", "Leave/no")
 	elseif BaijuType == 1 then
-		Say("X¸c ®Þnh sö dông <color=yellow>§¹i B¹ch CÇu Hoµn<color> quy ®æi thµnh ®iÓm kinh nghiÖm?", 3, "§ång ý/yes_get_offline_baiju1", "trë l¹i/get_offline_baiju", "Rêi khái/no")
+		Say("X¸c ®Þnh sö dông <color=yellow>§¹i B¹ch CÇu Hoµn<color> quy ®æi thµnh ®iÓm kinh nghiÖm?", 3, "Agree/yes_get_offline_baiju1", "trë l¹i/get_offline_baiju", "Leave/no")
 	elseif BaijuType == 2 then
-		Say("X¸c ®Þnh sö dông <color=yellow>B¹ch CÇu Tiªn §¬n<color> quy ®æi thµnh ®iÓm kinh nghiÖm?", 3, "§ång ý/yes_get_offline_baiju2", "trë l¹i/get_offline_baiju", "Rêi khái/no")
+		Say("X¸c ®Þnh sö dông <color=yellow>B¹ch CÇu Tiªn §¬n<color> quy ®æi thµnh ®iÓm kinh nghiÖm?", 3, "Agree/yes_get_offline_baiju2", "trë l¹i/get_offline_baiju", "Leave/no")
 	end
 end
 
@@ -199,23 +199,23 @@ function get_offline_liushen()
 	local Liushen1 = min(EatLiushen(2, 0), OfflineLiushenTime)
 	local Liushen2 = min(EatLiushen(3, 0), OfflineLiushenTime)
 	
-	Say("Thêi gian Lôc ThÇn Hoµn cã thÓ quy ®æi lµ<color=yellow>"..GetTask(TASKVAL_LIUSHEN_OFFLINE_TIME).." phót (dïng Lôc ThÇn Hoµn ®æi lÊy danh väng"..floor(OfflineLiushenTime/6)..", dïng C­êng Lôc ThÇn Hoµn ®æi lÊy 2 lÇn danh väng, Lôc ThÇn Tiªn ®¬n lµ 3 lÇn) <color><enter>Thêi gian ñy th¸c Lôc ThÇn Hoµn dïng ®Ó ®æi lµ <color=yellow>"..Liushen.." phót (danh väng:"..floor(Liushen / 6).." )<color><enter>Thêi gian ñy th¸c cña C­êng Lôc ThÇn Hoµn lµ <color=yellow>"..Liushen1.." phót (danh väng:"..floor(Liushen1 / 3).." )<color><enter>Thêi gian ñy th¸c cña Lôc ThÇn Tiªn ®¬n lµ <color=yellow>"..Liushen2.." phót (danh väng:"..floor(Liushen2 / 2).." )<color><enter>Thao t¸c ®æi sÏ khÊu trõ thêi gian ñy th¸c t­¬ng øng cña ng­¬i (nÕu ch­a ®æi xong, cã thÓ ®æi l¹i sau khi dïng Lôc ThÇn Hoµn/C­êng Lôc ThÇn Hoµn/Lôc ThÇn Tiªn ®¬n)",
+	Say("Thêi gian Lôc ThÇn Hoµn cã thÓ quy ®æi lµ<color=yellow>"..GetTask(TASKVAL_LIUSHEN_OFFLINE_TIME).." phót (dïng Lôc ThÇn Hoµn ®æi lÊy danh väng"..floor(OfflineLiushenTime/6)..", dïng C­êng Lôc ThÇn Hoµn ®æi lÊy 2 lÇn danh väng, Lôc ThÇn Tiªn ®¬n lµ 3 lÇn) <color><enter>Thêi gian ñy th¸c Lôc ThÇn Hoµn dïng ®Ó ®æi lµ <color=yellow>"..Liushen.." minutes (reputation:"..floor(Liushen / 6).." )<color><enter>Thêi gian ñy th¸c cña C­êng Lôc ThÇn Hoµn lµ <color=yellow>"..Liushen1.." minutes (reputation:"..floor(Liushen1 / 3).." )<color><enter>Thêi gian ñy th¸c cña Lôc ThÇn Tiªn ®¬n lµ <color=yellow>"..Liushen2.." minutes (reputation:"..floor(Liushen2 / 2).." )<color><enter>Thao t¸c ®æi sÏ khÊu trõ thêi gian ñy th¸c t­¬ng øng cña ng­¬i (nÕu ch­a ®æi xong, cã thÓ ®æi l¹i sau khi dïng Lôc ThÇn Hoµn/C­êng Lôc ThÇn Hoµn/Lôc ThÇn Tiªn ®¬n)",
 		5,
 		"Dïng thêi gian ñy th¸c Lôc ThÇn Hoµn ®Ó ®æi danh väng/#confirm_use_liushen(0)",
 		"Dïng thêi gian ñy th¸c C­êng Lôc ThÇn Hoµn ®Ó ®æi danh väng/#confirm_use_liushen(1)",
 		"Dïng thêi gian Lôc ThÇn Tiªn ®¬n ®Ó ®æi danh väng/#confirm_use_liushen(2)",
 		"trë l¹i/offline_exchange_talk_main",
-		"Rêi khái/no"
+		"Leave/no"
 		)
 end
 
 function confirm_use_liushen(LiushenType)
 	if LiushenType == 0 then
-		Say("X¸c ®Þnh sö dông <color=yellow>Lôc ThÇn Hoµn<color> quy ®æi thµnh ®iÓm danh väng?", 3, "§ång ý/yes_get_offline_liushen", "trë l¹i/get_offline_liushen", "Rêi khái/no")
+		Say("X¸c ®Þnh sö dông <color=yellow>Lôc ThÇn Hoµn<color> quy ®æi thµnh ®iÓm danh väng?", 3, "Agree/yes_get_offline_liushen", "trë l¹i/get_offline_liushen", "Leave/no")
 	elseif LiushenType == 1 then
-		Say("X¸c ®Þnh sö dông <color=yellow>C­êng HiÖu Lôc ThÇn Hoµn<color> quy ®æi thµnh ®iÓm danh väng?", 3, "§ång ý/yes_get_offline_liushen1", "trë l¹i/get_offline_liushen", "Rêi khái/no")
+		Say("X¸c ®Þnh sö dông <color=yellow>C­êng HiÖu Lôc ThÇn Hoµn<color> quy ®æi thµnh ®iÓm danh väng?", 3, "Agree/yes_get_offline_liushen1", "trë l¹i/get_offline_liushen", "Leave/no")
 	elseif LiushenType == 2 then
-		Say("X¸c ®Þnh sö dông <color=yellow>Lôc ThÇn Tiªn §¬n<color> quy ®æi thµnh ®iÓm danh väng?", 3, "§ång ý/yes_get_offline_liushen2", "trë l¹i/get_offline_liushen", "Rêi khái/no")
+		Say("X¸c ®Þnh sö dông <color=yellow>Lôc ThÇn Tiªn §¬n<color> quy ®æi thµnh ®iÓm danh väng?", 3, "Agree/yes_get_offline_liushen2", "trë l¹i/get_offline_liushen", "Leave/no")
 	end
 end
 
@@ -326,23 +326,23 @@ function get_offline_sanqing()
 	local Sanqing1 = min(EatSanqin(2, 0), OfflineSanqingTime)
 	local Sanqing2 = min(EatSanqin(3, 0), OfflineSanqingTime)
 	
-	Say("Thêi gian Tam Thanh Hoµn cã thÓ quy ®æi hiÖn cã lµ <color=yellow>"..GetTask(TASKVAL_SANQING_OFFLINE_TIME).." phót (dïng Tam Thanh Hoµn ®æi ®é cèng hiÕn s­ m«n"..floor(OfflineSanqingTime/20)..", C­êng Tam Thanh lµ gÊp ®«i, Tam Thanh Tiªn ®¬n lµ gÊp 3) <color><enter>Thêi gian ñy th¸c Tam Thanh Hoµn dïng ®Ó ®æi lµ <color=yellow>"..Sanqing.." phót (®é cèng hiÕn s­ m«n: "..floor(Sanqing / 20).." )<color><enter>Thêi gian ñy th¸c C­êng Tam Thanh Hoµn lµ <color=yellow>"..Sanqing1.." phót (®é cèng hiÕn s­ m«n: "..floor(Sanqing1 / 10).." )<color><enter>Thêi gian ñy th¸c Tam Thanh Tiªn ®¬n lµ <color=yellow>"..Sanqing2.." phót (®é cèng hiÕn s­ m«n: "..floor(Sanqing2 * 3 / 20).." )<color><enter>Thao t¸c ®æi sÏ khÊu trõ thêi gian ñy th¸c t­¬ng øng cña ng­¬i (nÕu ch­a ®æi xong, cã thÓ ®æi l¹i sau khi dïng Tam Thanh Hoµn/C­êng Tam Thanh Hoµn/Tam Thanh Tiªn ®¬n)",
+	Say("Thêi gian Tam Thanh Hoµn cã thÓ quy ®æi hiÖn cã lµ <color=yellow>"..GetTask(TASKVAL_SANQING_OFFLINE_TIME).." phót (dïng Tam Thanh Hoµn ®æi ®é cèng hiÕn s­ m«n"..floor(OfflineSanqingTime/20)..", C­êng Tam Thanh lµ gÊp ®«i, Tam Thanh Tiªn ®¬n lµ gÊp 3) <color><enter>Thêi gian ñy th¸c Tam Thanh Hoµn dïng ®Ó ®æi lµ <color=yellow>"..Sanqing.." minutes (sect contribution:"..floor(Sanqing / 20).." )<color><enter>Thêi gian ñy th¸c C­êng Tam Thanh Hoµn lµ <color=yellow>"..Sanqing1.." minutes (sect contribution:"..floor(Sanqing1 / 10).." )<color><enter>Thêi gian ñy th¸c Tam Thanh Tiªn ®¬n lµ <color=yellow>"..Sanqing2.." minutes (sect contribution:"..floor(Sanqing2 * 3 / 20).." )<color><enter>Thao t¸c ®æi sÏ khÊu trõ thêi gian ñy th¸c t­¬ng øng cña ng­¬i (nÕu ch­a ®æi xong, cã thÓ ®æi l¹i sau khi dïng Tam Thanh Hoµn/C­êng Tam Thanh Hoµn/Tam Thanh Tiªn ®¬n)",
 		5,
-		"Dïng thêi gian ñy th¸c Tam Thanh Hoµn ®Ó ®æi ®é cèng hiÕn s­ m«n/#confirm_use_sanqing(0)",
-		"Dïng thêi gian ñy th¸c C­êng Tam Thanh Hoµn ®Ó ®æi ®é cèng hiÕn s­ m«n/#confirm_use_sanqing(1)",
+		"Use offline time of Three Pure Pill to exchange for sect contribution/#confirm_use_sanqing(0)",
+		"Use offline time of Enhanced Three Pure Pill to exchange for sect contribution/#confirm_use_sanqing(1)",
 		"Dïng thêi gian ñy th¸c Tam Thanh Tiªn ®¬n ®Ó ®æi ®é cèng hiÕn s­ m«n/#confirm_use_sanqing(2)",
 		"trë l¹i/offline_exchange_talk_main",
-		"Rêi khái/no"
+		"Leave/no"
 		)
 end
 
 function confirm_use_sanqing(SanqingType)
 	if SanqingType == 0 then
-		Say("X¸c ®Þnh sö dông <color=yellow>Tam Thanh Hoµn<color> ®æi ®iÓm Cèng HiÕn S­ M«n?", 3, "§ång ý/yes_get_offline_sanqing", "trë l¹i/get_offline_sanqing", "Rêi khái/no")
+		Say("X¸c ®Þnh sö dông <color=yellow>Tam Thanh Hoµn<color> ®æi ®iÓm Cèng HiÕn S­ M«n?", 3, "Agree/yes_get_offline_sanqing", "trë l¹i/get_offline_sanqing", "Leave/no")
 	elseif SanqingType == 1 then
-		Say("X¸c ®Þnh sö dông <color=yellow>C­êng HiÖu Tam Thanh Hoµn<color> ®æi ®iÓm Cèng HiÕn S­ M«n?", 3, "§ång ý/yes_get_offline_sanqing1", "trë l¹i/get_offline_sanqing", "Rêi khái/no")
+		Say("X¸c ®Þnh sö dông <color=yellow>C­êng HiÖu Tam Thanh Hoµn<color> ®æi ®iÓm Cèng HiÕn S­ M«n?", 3, "Agree/yes_get_offline_sanqing1", "trë l¹i/get_offline_sanqing", "Leave/no")
 	elseif SanqingType == 2 then
-		Say("X¸c ®Þnh sö dông <color=yellow>Tam Thanh Tiªn §¬n<color> ®æi ®iÓm Cèng HiÕn S­ M«n?", 3, "§ång ý/yes_get_offline_sanqing2", "trë l¹i/get_offline_sanqing", "Rêi khái/no")
+		Say("X¸c ®Þnh sö dông <color=yellow>Tam Thanh Tiªn §¬n<color> ®æi ®iÓm Cèng HiÕn S­ M«n?", 3, "Agree/yes_get_offline_sanqing2", "trë l¹i/get_offline_sanqing", "Leave/no")
 	end
 end
 

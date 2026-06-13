@@ -27,7 +27,7 @@ function main()
 		SetTaskTemp(KH_TASK_TEMP_BOX_INDEX,nNpcIdx)
 		DoWait(3,4,10)				--½øÈëµ÷ÓÃ
 	else
-		Talk(1,"","§· cã ng­êi ch¬i tõng sö dông <color=red>"..sNpcName.."<color>(Thêi gian cßn l¹i: <color=yellow>"..(60-nTimeDiff).." gi©y<color>).")
+		Talk(1,"","§· cã ng­êi ch¬i tõng sö dông <color=red>"..sNpcName.."<color>(Thêi gian cßn l¹i: <color=yellow>"..(60-nTimeDiff).." seconds<color>).")
 		return
 	end
 end;

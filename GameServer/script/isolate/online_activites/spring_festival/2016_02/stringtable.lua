@@ -23,7 +23,7 @@ tb_box_refresh = {
 
 tb_jbp_refresh = {
 	{300,1769,3550,"Thµnh §«-Trung"},	{300,1703,3484,"T©y m«n Thµnh §«"},	{300,1877,3476,"B¾c m«n Thµnh §«"},	{300,1862,3625,"§«ng m«n Thµnh §«"},	{300,1681,3669,"Nam m«n Thµnh §«"},
-	{200,1378,2892,"BiÖn Kinh-Trung"},	{200,1258,2736,"T©y m«n BiÖn Kinh"},	{200,1470,2778,"BiÖn Kinh-Cöa B¾c"},	{200,1468,2945,"§«ng m«n BiÖn Kinh"},	{200,1296,2947,"Nam m«n BiÖn Kinh"},	
+	{200,1378,2892,"Bianjing - Center"},	{200,1258,2736,"Bianjing West Gate"},	{200,1470,2778,"Bianjing North Gate"},	{200,1468,2945,"Bianjing East Gate"},	{200,1296,2947,"Bianjing South Gate"},	
 	{100,1403,2978,"TuyÒn Ch©u-Trung"},	{100,1358,2895,"T©y m«n TuyÒn Ch©u"},	{100,1524,2885,"B¾c m«n TuyÒn Ch©u"},	{100,1507,3047,"§«ng m«n TuyÒn Ch©u"},	{100,1353,3049,"TuyÒn Ch©u-Cöa Nam"},
 	{350,1464,2946,"T­¬ng D­¬ng-Trung"},	{350,1345,2872,"T©y m«n T­¬ng D­¬ng"},	{350,1533,2873,"B¾c m«n T­¬ng D­¬ng"},	{350,1490,3028,"§«ng m«n T­¬ng D­¬ng"},	{350,1371,3047,"Nam m«n T­¬ng D­¬ng"},
 }
@@ -106,52 +106,52 @@ tb_taoshu_refresh = {
 tb_pt_award = {
 	{
 	--	{name,g,d,p,n,bind,expiredays}
-		{ {"Nh¸nh §µo T­¬i",0,120,134,1,4,7} },
-		{ {"Nh¸nh §µo T­¬i",0,120,135,1,4,7} },
-		{ {"Nh¸nh §µo T­¬i",0,120,136,1,4,7} },
-		{ {"Nh¸nh §µo T­¬i",0,120,137,1,4,7} },
+		{ {"Fresh Peach Branch",0,120,134,1,4,7} },
+		{ {"Fresh Peach Branch",0,120,135,1,4,7} },
+		{ {"Fresh Peach Branch",0,120,136,1,4,7} },
+		{ {"Fresh Peach Branch",0,120,137,1,4,7} },
 	},
 	{
-		{ {"Con C¸-Eo (§á)",0,120,126,1,4,7} },
-		{ {"Con C¸-Eo (§á)",0,120,127,1,4,7} },
-		{ {"Con C¸-Eo (§á)",0,120,128,1,4,7} },
-		{ {"Con C¸-Eo (§á)",0,120,129,1,4,7} },
+		{ {"Fish Pendant (Red)",0,120,126,1,4,7} },
+		{ {"Fish Pendant (Red)",0,120,127,1,4,7} },
+		{ {"Fish Pendant (Red)",0,120,128,1,4,7} },
+		{ {"Fish Pendant (Red)",0,120,129,1,4,7} },
 	},
 	{
-		{ {"Con C¸-L­ng (§á)",0,120,130,1,4,7} },
-		{ {"Con C¸-L­ng (§á)",0,120,131,1,4,7} },
-		{ {"Con C¸-L­ng (§á)",0,120,132,1,4,7} },
-		{ {"Con C¸-L­ng (§á)",0,120,133,1,4,7} },
+		{ {"Fish Charm (Red)",0,120,130,1,4,7} },
+		{ {"Fish Charm (Red)",0,120,131,1,4,7} },
+		{ {"Fish Charm (Red)",0,120,132,1,4,7} },
+		{ {"Fish Charm (Red)",0,120,133,1,4,7} },
 	},
 	
 	-------------------------------hh_pt_award
 	{
 	--	{name,g,d,p,n,bind,expiredays}
-		{ {"Nh­ ý (Lam)",0,119,1,1,4,7} },
-		{ {"Nh­ ý (Lam)",0,119,2,1,4,7} },
-		{ {"Nh­ ý (Lam)",0,119,3,1,4,7} },
-		{ {"Nh­ ý (Lam)",0,119,4,1,4,7} },
+		{ {"Ruyi (Blue)",0,119,1,1,4,7} },
+		{ {"Ruyi (Blue)",0,119,2,1,4,7} },
+		{ {"Ruyi (Blue)",0,119,3,1,4,7} },
+		{ {"Ruyi (Blue)",0,119,4,1,4,7} },
 	},
 	{
 	--	{name,g,d,p,n,bind,expiredays}
-		{ {"Siªu Phong (Lam)",0,121,1,1,4,7} },
-		{ {"Siªu Phong (Lam)",0,121,2,1,4,7} },
-		{ {"Siªu Phong (Lam)",0,121,3,1,4,7} },
-		{ {"Siªu Phong (Lam)",0,121,4,1,4,7} },
+		{ {"Soaring Wind (Blue)",0,121,1,1,4,7} },
+		{ {"Soaring Wind (Blue)",0,121,2,1,4,7} },
+		{ {"Soaring Wind (Blue)",0,121,3,1,4,7} },
+		{ {"Soaring Wind (Blue)",0,121,4,1,4,7} },
 	},
 	{
 	--	{name,g,d,p,n,bind,expiredays}
-		{ {"Oanh TrÇn Vò (Lam)",0,120,1,1,4,7} },
-		{ {"Oanh TrÇn Vò (Lam)",0,120,2,1,4,7} },
-		{ {"Oanh TrÇn Vò (Lam)",0,120,3,1,4,7} },
-		{ {"Oanh TrÇn Vò (Lam)",0,120,4,1,4,7} },
+		{ {"Thundering Dance (Blue)",0,120,1,1,4,7} },
+		{ {"Thundering Dance (Blue)",0,120,2,1,4,7} },
+		{ {"Thundering Dance (Blue)",0,120,3,1,4,7} },
+		{ {"Thundering Dance (Blue)",0,120,4,1,4,7} },
 	},
 	{
 	--	{name,g,d,p,n,bind,expiredays}
-		{ {"Nh¸nh §µo T­¬i",0,120,134,1,4,30} },
-		{ {"Nh¸nh §µo T­¬i",0,120,135,1,4,30} },
-		{ {"Nh¸nh §µo T­¬i",0,120,136,1,4,30} },
-		{ {"Nh¸nh §µo T­¬i",0,120,137,1,4,30} },
+		{ {"Fresh Peach Branch",0,120,134,1,4,30} },
+		{ {"Fresh Peach Branch",0,120,135,1,4,30} },
+		{ {"Fresh Peach Branch",0,120,136,1,4,30} },
+		{ {"Fresh Peach Branch",0,120,137,1,4,30} },
 	},
 }
 

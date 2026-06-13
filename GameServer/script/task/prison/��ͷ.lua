@@ -6,10 +6,10 @@ Include("\\script\\task\\world\\task_head.lua");
 function main()
         local szSay = {
             "Thiªn lao träng ®Þa, kh«ng ®­îc ®i l¹i lung tung!",
-            "Gióp dïm ®i mµ!/bribe",
-            "Rêi khái thiªn lao/leave_prison",
+            "Help me out, please!/bribe",
+            "Leave the prison/leave_prison",
             "Xem ngµy chÞu ph¹t/inquire",
-            "KÕt thóc ®èi tho¹i/end_say"
+            "End conversation/end_say"
         }
         SelectSay(szSay)
 end
@@ -27,15 +27,15 @@ function bribe()
 			if (nMoney >= nNeedMoney) then
 			      local szSay = {
             "Ng­¬i ë ®©y mÊy ngµy råi, nÕu cã ng©n l­îng"..nGold.."ta sÏ gióp ng­¬i rêi khái ®©y!",
-            "Ta ®ång ý!/#leave_by_paymoney("..nNeedMoney..")",
-            "ThËt kinh tëm!/end_say"
+            "I agree!/#leave_by_paymoney("..nNeedMoney..")",
+            "How disgusting!/end_say"
             }
            SelectSay(szSay)
 			elseif (nMoney + nSaveMoney >= nNeedMoney) then
 						local szSay = {
             "Ng­¬i ë ®©y mÊy ngµy råi, nÕu cã ng©n l­îng"..nGold.."ta sÏ gióp ng­¬i rêi khái ®©y!",
-            "Ta ®ång ý!/#leave_by_paysavemoney("..nNeedMoney..")",
-            "ThËt kinh tëm!/end_say"
+            "I agree!/#leave_by_paysavemoney("..nNeedMoney..")",
+            "How disgusting!/end_say"
             }
            SelectSay(szSay)
 			else
@@ -44,7 +44,7 @@ function bribe()
 	 else
 	 	    local szSay = {
         "Hõm! Míi v« ®· muèn ra råi, vÒ suy nghÜ l¹i ®i!",
-        "KÕt thóc ®èi tho¹i/end_say"
+        "End conversation/end_say"
         }
         SelectSay(szSay)
 	 end	 
@@ -56,7 +56,7 @@ function leave_prison()
     if (nLeftPrisonTime > 0) then
     	  local szSay = {
         "Ch­a hÕt ngµy thä h×nh, kh«ng ®­îc rêi khái thiªn lao!",
-        "KÕt thóc ®èi tho¹i/end_say"
+        "End conversation/end_say"
         }
         SelectSay(szSay)
     else 
@@ -71,7 +71,7 @@ end
 function leave_say()
   local szSay = {
   "Ch¬i game ®Ó gi¶i trÝ, kh«ng nªn sö auto!",
-  "Rêi khái thiªn lao/leave"
+  "Leave the prison/leave"
   }
   SelectSay(szSay)	
 end
@@ -88,7 +88,7 @@ end
 function laugh()
   local szSay = {
   "Hõm! ChØ Ýt ái ng©n l­îng vÇy mµ còng muèn qua ¶i µ, vÒ suy nghÜ l¹i ®i!",
-  "KÕt thóc ®èi tho¹i/end_say"
+  "End conversation/end_say"
   }
   SelectSay(szSay)
 end
@@ -96,7 +96,7 @@ end
 function NoSin()
 	local szSay = {
   "Ng­¬i ®©u cã téi, t×m ta lµm chi vËy!",
-  "KÕt thóc ®èi tho¹i/end_say"
+  "End conversation/end_say"
   }
   SelectSay(szSay)
 end
@@ -129,14 +129,14 @@ function inquire()
 	
 	if nLeftPrisonTime > 0 then
 	  local szSay = {
-	  "Theo luËt §¹i Tèng ng­¬i ®· bÞ b¾t"..nNeedPrisonTime.." phót, thêi gian rêi thiªn lao cßn "..nLeftPrisonTime.." phót!",
-	  "KÕt thóc ®èi tho¹i/end_say"
+	  "Theo luËt §¹i Tèng ng­¬i ®· bÞ b¾t"..nNeedPrisonTime.." phót, thêi gian rêi thiªn lao cßn "..nLeftPrisonTime.." minutes!",
+	  "End conversation/end_say"
 	  }
 	  SelectSay(szSay)
   else
 	  local szSay = {
-	  "Ng­¬i ®· ®­îc tha, mau rêi khái ®©y!",
-	  "KÕt thóc ®èi tho¹i/end_say"
+	  "You have been pardoned, hurry and leave here!",
+	  "End conversation/end_say"
 	  }
 	  SelectSay(szSay)
   end

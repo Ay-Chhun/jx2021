@@ -2,9 +2,9 @@ Tªn m« pháng	C«ng-Kim	C«ng-Méc	C«ng-Thñy	C«ng-Háa	C«ng-Thæ	Phßng-Kim	Phßng-Méc	P
 Cäc gç						0	0	0	0	0
 Cäc gç 2						0	0	0	0	0
 Nam tiªu chuÈn	0	0	0	0	0	0	0	0	0	0
-Nam kh«i ng«	0	0	0	0	0	0	0	0	0	0
-N÷ gîi c¶m	0	0	0	0	0	0	0	0	0	0
-KiÒu n÷	0	0	0	0	0	0	0	0	0	0
+Imposing man	0	0	0	0	0	0	0	0	0	0
+Alluring woman	0	0	0	0	0	0	0	0	0	0
+Graceful woman	0	0	0	0	0	0	0	0	0	0
 STR_G_MAN_STD	0	0	0	0	0	0	0	0	0	0
 STR_G_MAN_STRONG	0	0	0	0	0	0	0	0	0	0
 STR_G_WOMAN_SEXY	0	0	0	0	0	0	0	0	0	0

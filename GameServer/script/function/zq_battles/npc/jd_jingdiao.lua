@@ -6,7 +6,7 @@ function main()
 	end
 	local tSay = {
 		"H·y ®­a vµo Tèng doanh/slip_into_song",
-		"\nL½ng lÆng rêi khái/do_nothing",
+		"\nQuietly leave/do_nothing",
 	}
 	Say("<color=green>Gi¸n ®iÖp Kim §iªu: <color>CÈn thËn c¸i miÖng cña ng­êi, nÕu kh«ng th× h·y cÈn thËn sau l­ng ng­¬i.", getn(tSay), tSay);
 end

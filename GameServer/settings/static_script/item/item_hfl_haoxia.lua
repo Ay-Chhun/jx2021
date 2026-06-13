@@ -85,7 +85,7 @@ g_ItemFeedDialog = {
 				["V« H¹ Hµo HiÖp §Þch (Thóy Yªn §Þch)"] = g_WeaponDialog,
 			},
 		},
-		["Hé gi¸p"] = {
+		["Armor"] = {
 			title = "H·y chän lo¹i hé gi¸p:",
 			dialog = {
 				["Nãn Hµo HiÖp-V« H¹"] = g_CapDialog,
@@ -123,7 +123,7 @@ g_ItemFeedAward = {
 		["V« H¹ Hµo HiÖp PhiÕn (Thóy Yªn PhiÕn)"] = 	 {0,	13, 30762, 1, 4, -1, -1, -1, -1, -1, -1},
 		["V« H¹ Hµo HiÖp §Þch (Thóy Yªn §Þch)"] = 	 {0,	12, 30763, 1, 4, -1, -1, -1, -1, -1, -1},
 	},
-	["Hé gi¸p"] = {
+	["Armor"] = {
 		["Nãn Hµo HiÖp-V« H¹"] = {0, 103, 30569, 1, 4, -1, -1, -1, -1, -1, -1},
 		["¸o Hµo HiÖp-V« H¹"] = {0, 100, 30569, 1, 4, -1, -1, -1, -1, -1, -1},
 		["QuÇn Hµo HiÖp-V« H¹"] = {0, 101, 30569, 1, 4, -1, -1, -1, -1, -1, -1},
@@ -182,7 +182,7 @@ function ChoiceUnLockAttr(nItem, nLineID)
 			tinsert(tbSay.sel, {GetItemFeedAttiDesc(tCurrList[i]), 
 				format("#ChoiceUnLockAttr(%d, %d)", nItem, tCurrList[i])});
 		end
-		tinsert(tbSay.sel, {"\n rót lui", "nothing"});
+		tinsert(tbSay.sel, {"\n withdraw", "nothing"});
 		temp_Talk(tbSay);
 		return 0;
 	end
@@ -194,7 +194,7 @@ function ChoiceUnLockAttr(nItem, nLineID)
 	msg = msg..format("QuyÕt ®Þnh dïng <color=gold>%s<color> ghÐp thµnh <color=gold>%s<color> kh«ng?", GetItemName(nItem), tRet[2]);
 	Say(msg, 2, 
 		format("§ång ý/#ComposeFeedItem(%d)", nItem),
-		"§Ó ta suy nghÜ/nothing");
+		"Let me think about it/nothing");
 end
 
 --Ñ¡Ôñ»ù´¡ÊôÐÔ
@@ -214,7 +214,7 @@ function ChoiceBaseAttr(nItem, szKey, nTempID)
 				for k, v in base do
 					tinsert(tSay, format("%s/#ChoiceBaseAttr(%d, '%s')", k, nItem, k));
 				end
-				tinsert(tSay, "\n rót lui/nothing");
+				tinsert(tSay, "\n withdraw/nothing");
 				Say("H·y chän thuéc tÝnh vò khÝ yªu thÝch:", getn(tSay), tSay);
 				return 0;
 			elseif not nTempID then
@@ -223,7 +223,7 @@ function ChoiceBaseAttr(nItem, szKey, nTempID)
 					Say("H·y chän thuéc tÝnh vò khÝ yªu thÝch:", 3, 
 						format("\n%s/#ChoiceBaseAttr(%d, '%s', %d)", GetItemFeedAttrDesc(t[1][1]), nItem, szKey, t[1][1]),
 						format("\n%s/#ChoiceBaseAttr(%d, '%s', %d)", GetItemFeedAttrDesc(t[1][2]), nItem, szKey, t[1][2]),
-					"\n rót lui/nothing")			
+					"\n withdraw/nothing")			
 					return 0;
 				end
 				ChoiceBaseAttr(nItem, szKey, t[1]);
@@ -257,7 +257,7 @@ function ChoiceEquip(nItem, sKey)
 		for k, v in tDialog.dialog do
 			tinsert(tbSay.sel, {k, format("#ChoiceEquip(%d, %s)", nItem, Val2Str(k))});
 		end
-		tinsert(tbSay.sel, {"\n rót lui", "nothing"});
+		tinsert(tbSay.sel, {"\n withdraw", "nothing"});
 		temp_Talk(tbSay);
 		return 0;
 	end

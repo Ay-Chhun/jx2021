@@ -19,7 +19,7 @@ function main()
     local nStartDate = KsgLib:GetSrvCfg('tbTimeTop').nStartDate
     local nEndDate = KsgLib:GetSrvCfg('tbTimeTop').nEndDate
     local tSay = {
-        g_szNpcName .. "Ho¹t ®éng <color=yellow>§ua Top NhËn Th­ëng<color> diÔn ra tõ ngµy <color=gold>" .. KsgDate:ToString(nStartDate) .. " ®Õn 24:00 " .. KsgDate:ToString(nEndDate) .. "<color>. Trong thêi gian nµy, quý ®ång ®¹o cã thÓ ®Õn gÆp ta ®Ó nhËn c¸c phÇn th­ëng hÊp dÉn. Th«ng tin chi tiÕt quý ®ång ®¹o vui lßng xem t¹i <color=gold>https://volam2.zing.vn<color>"
+        g_szNpcName .. "Ho¹t ®éng <color=yellow>§ua Top NhËn Th­ëng<color> diÔn ra tõ ngµy <color=gold>" .. KsgDate:ToString(nStartDate) .. " to 24:00" .. KsgDate:ToString(nEndDate) .. "<color>. Trong thêi gian nµy, quý ®ång ®¹o cã thÓ ®Õn gÆp ta ®Ó nhËn c¸c phÇn th­ëng hÊp dÉn. Th«ng tin chi tiÕt quý ®ång ®¹o vui lßng xem t¹i <color=gold>https://volam2.zing.vn<color>"
     }
 
     if KsgLib:IsInDualTopTime() then

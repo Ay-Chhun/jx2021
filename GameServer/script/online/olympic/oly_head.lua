@@ -142,7 +142,7 @@ function begin_combining_1_callback(nNum)
 	end
 	--DelItem(g,d,p,num)
 	if DelItem(Flame_Table[nKind][1],Flame_Table[nKind][2],Flame_Table[nKind][3],nNum * Compose_ShengHuo_Num_1) == 1 and DelItem(WuCai_Shenshi[1],WuCai_Shenshi[2],WuCai_Shenshi[3],nNum * Compose_ShenShi_Num_1) == 1 then
-		gf_AddItemEx2({WuCai_ShenHuoZhong[1],WuCai_ShenHuoZhong[2],WuCai_ShenHuoZhong[3],nNum}, WuCai_ShenHuoZhong[5], szLogTitle, format("GhÐp %s", HuoZhongName), 0, 1);
+		gf_AddItemEx2({WuCai_ShenHuoZhong[1],WuCai_ShenHuoZhong[2],WuCai_ShenHuoZhong[3],nNum}, WuCai_ShenHuoZhong[5], szLogTitle, format("Combine %s", HuoZhongName), 0, 1);
 	end
 end
 
@@ -182,7 +182,7 @@ function begin_combining_2_callback(nNum)
 	end
 	--DelItem(g,d,p,num)
 	if DelItem(Flame_Table[nKind][1],Flame_Table[nKind][2],Flame_Table[nKind][3],nNum * Compose_ShengHuo_Num_2) == 1 and Pay(Compose_Coin_Num_2 * 10000 * nNum) == 1 then
-		gf_AddItemEx2({WuCai_ShenHuoZhong[1],WuCai_ShenHuoZhong[2],WuCai_ShenHuoZhong[3],nNum}, WuCai_ShenHuoZhong[5], szLogTitle, format("GhÐp %s", HuoZhongName), 0, 1);
+		gf_AddItemEx2({WuCai_ShenHuoZhong[1],WuCai_ShenHuoZhong[2],WuCai_ShenHuoZhong[3],nNum}, WuCai_ShenHuoZhong[5], szLogTitle, format("Combine %s", HuoZhongName), 0, 1);
 	end
 end
 
@@ -370,7 +370,7 @@ function oly_CreateDlgTable()
 	end
 	--22:00-24:00
 	if nDayTime >= OLY_TIME_END then
-		tinsert(tbSay,"Ngµy mai h·y ®Õn/do_nothing");
+		tinsert(tbSay,"Please come back tomorrow/do_nothing");
 	end
 
 	return tbSay;

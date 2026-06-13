@@ -25,8 +25,8 @@ g_szFileName = "common_xmas_box.lua"			--ÎÄ¼þÃû
 g_tbItem = 
 {
 	--		ÀàÐÍ	   ¸ÅÂÊ		ÊýÁ¿ Ãû×Ö		ID1,ID2,ID3
-	[1]  = {TYPE_ITEM,	60,		1,	"Ví Gi¸ng Sinh",	2,	1,	30041},
-	[2]  = {TYPE_ITEM,	30,		1,	"Chu«ng Gi¸ng Sinh",	2,	1,	30042},
+	[1]  = {TYPE_ITEM,	60,		1,	"Christmas Sock",	2,	1,	30041},
+	[2]  = {TYPE_ITEM,	30,		1,	"Christmas Bell",	2,	1,	30042},
 	[3]  = {TYPE_ITEM,	10,		1,	"Nh¸nh Th«ng Gi¸ng Sinh",	2,	1,	30040},
 }
 
@@ -77,9 +77,9 @@ function use_it()
 		else
 			Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." "..szItemName)
 		end
-		WriteLogEx(g_szLogTitle, "Hép quµ Gi¸ng Sinh", nItemNum, szItemName, szInfoDescribe, GetTongName() )
+		WriteLogEx(g_szLogTitle, "Christmas Gift Box", nItemNum, szItemName, szInfoDescribe, GetTongName() )
 	else
-		WriteLogEx(g_szLogTitle, "Hép quµ Gi¸ng Sinh", "", "", "", "", "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
+		WriteLogEx(g_szLogTitle, "Christmas Gift Box", "", "", "", "", "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
 	end
 end
 

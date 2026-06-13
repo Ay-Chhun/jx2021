@@ -18,7 +18,7 @@ function main()
             "Qu¶ lµ b»ng h÷u tèt! Xem ra c¸c huynh vÉn cßn nhí ®Õn ta!",
             "[V­¬ng NghiÖp VÜ nhËn lÊy bøc th­]",
             "Xin ®a t¹ <sex>!",
-            "Kh«ng cã chi."
+            "Don't mention it."
         };
         SetTask(130, 2);
         if GetTask(131) == 2 and GetTask(132) == 2 then

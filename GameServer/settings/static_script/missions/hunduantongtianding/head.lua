@@ -218,7 +218,7 @@ tTtdBoxAward = {
 	{1672,3124},{1620,3007},{1603,2969},{1588,2946},{1547,2788},{1611,2698},{1643,2661},{1643,2661},
 };
 tRealGod	= {
-	tInfo	= {"Thiªn thÇn h¹ phµm", 5, "Duy tr× %d phót"},
+	tInfo	= {"Thiªn thÇn h¹ phµm", 5, "Lasts %d minutes"},
 	tState	= {
 		[1] = {9920, "state_life_max_percent_add",	400,	"Sinh lùc t¨ng tèi ®a 400%"},
 		[2] = {9921, "state_immune",			100,		"Tr¹ng th¸i miÔn dÞch  "},
@@ -584,7 +584,7 @@ function ttd_askClose()
 	Say("Cã rêi khái ¶i kh«ng? ",
 		2,
 		"\nX¸c nhËn/ttd_confirmClose",
-		"\nKÕt thóc ®èi tho¹i/nothing")
+		"\nEnd conversation/nothing")
 end
 
 function ttd_confirmClose()
@@ -676,14 +676,14 @@ end
 
 function ttd_AddItemMail(sItemIds, strName, nRoom, nWeight, szTitle)
 	if type(sItemIds) ~= "table" then
-		WriteLog(format("[%s] [AddItemEx Tham sè sai!] [Role:%s (acc:%s)] [Item:%s]",
+		WriteLog(format("[%s] [AddItemEx wrong parameter!] [Role:%s (acc:%s)] [Item:%s]",
 			strLog, GetName(), GetAccount(), strName));
 		return 0;
 	end
 	local nCount = sItemIds[4];
 	local nAmg = (nCount and 3) or 4;
 	if getn(sItemIds) < nAmg then
-		WriteLog(format("[%s] [AddItemEx Tham sè sai!] [Role:%s (acc:%s)] [Item:%s]",
+		WriteLog(format("[%s] [AddItemEx wrong parameter!] [Role:%s (acc:%s)] [Item:%s]",
 			strLog, GetName(), GetAccount(), strName));
 		return 0;
 	end
@@ -706,7 +706,7 @@ function ttd_AddItemMail(sItemIds, strName, nRoom, nWeight, szTitle)
 			WriteLog(format("[%s] [AddItemEx:nhËn vËt phÈm] [Role:%s (acc:%s)] [Item:%s (%d,%d,%d,%d)]",
 				strLog or "", GetName(),GetAccount(),strName,sItemIds[1],sItemIds[2],sItemIds[3],nCount));
 		elseif nRet == 2 then
-			Msg2Player("C¸c h¹ ®· r¬i["..strName.."]x"..nCount);
+			Msg2Player("You dropped["..strName.."]x"..nCount);
 			WriteLog(format("[%s] [AddItemEx:®¸nh r¬i phÇn th­ëng] [Role:%s (acc:%s)] [Item:%s (%d,%d,%d,%d)]",
 				strLog, GetName(),GetAccount(),strName,sItemIds[1],sItemIds[2],sItemIds[3],nCount));
 		end

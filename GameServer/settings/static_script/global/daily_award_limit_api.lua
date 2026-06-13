@@ -20,7 +20,7 @@ t_type_daily_award_limit_para =
 	[DAILY_AWARD_LIMMIT_TYPE_QENUINEQI_ACTIVITY] 		= {3, 65535 , 2, 0, "Ho¹t ®éng"},
 	[DAILY_AWARD_LIMMIT_TYPE_QENUINEQI_IB] 			= {4, 65535, 2, 1, "Chøc n¨ng tiªu phÝ"},
 	[DAILY_AWARD_LIMMIT_TYPE_YINQUAN] 		= {5, 4000, 5, 0, "Ng©n phiÕu"},
-	[DAILY_AWARD_LIMMIT_TYPE_RESERVE] 		= {6, 4000, 5, 1, "L­u"},
+	[DAILY_AWARD_LIMMIT_TYPE_RESERVE] 		= {6, 4000, 5, 1, "Liu"},
 }
 
 

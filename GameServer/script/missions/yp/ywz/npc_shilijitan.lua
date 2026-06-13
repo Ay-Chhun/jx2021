@@ -33,9 +33,9 @@ function main_CB(npcName, nCount, sdb)
 		SetGlbValue(GLV_YWZ_PROTECT_CAMP, 0);
 	end
 	local tNpc2Shili = {
-		["TÕ §µn §¹i Lı"] = 1,
-		["TÕ §µn Thæ Phån"] = 2,
-		["TÕ §µn T©y H¹"] = 3,
+		["Dali Altar"] = 1,
+		["Tubo Altar"] = 2,
+		["Xixia Altar"] = 3,
 	}
 	local msg = format(NPC_FORMAT, npcName);
 	local nCamp = GetTask(TASK_FIELD_PVP_CAMP);
@@ -53,9 +53,9 @@ function main_CB(npcName, nCount, sdb)
 	end
 	local tSay = {
 		"\n Giíi thiÖu ho¹t ®éng/sljt_info",
-		"\nLiªn quan x©y dùng tÕ ®µn thÕ lùc/sljt_func",
+		"\nAbout faction altar construction/sljt_func",
 		"\nQuy t¾c ho¹t ®éng/sljt_rule",
-		"\n Tho¸t /nothing",
+		"\n Exit /nothing",
 	}
 	Say(msg..format("%s, ta cã thÓ gióp ®­îc g× ®©y?", gf_GetPlayerSexName()), getn(tSay), tSay);
 end
@@ -65,8 +65,8 @@ function sljt_info()
 	local npcName = GetNpcName(GetTargetNpc());
 	tSay.msg = format(NPC_FORMAT, npcName)..format("ThÕ lùc Thiªn ¢m Gi¸o dÇn lui khái trung nguyªn, kh«i phôc nguyªn khİ. TriÒu ®×nh nh»m muèn ng¨n chÆn sù ph¶n c«ng cña Thiªn ¢m Gi¸o, quyÕt ®Şnh t¨ng c­êng søc m¹nh cña vâ l©m, ban th­ëng lín cho ThÕ Lùc Ba Phe tiÕn hµnh diÔn vâ, ®Ó xÕp h¹ng cho 3 thÕ lùc; ThÕ Lùc Ba Phe-DiÔn Vâ ChiÕn chia thµnh 2 giai ®o¹n: X©y dùng tÕ ®µn thÕ lùc vµ ThÕ Lùc Ba Phe DiÔn Vâ; trong ThÕ Lùc Ba Phe-DiÔn Vâ ChiÕn, ®¹i hiÖp cã biÓu hiÖn kiÖt xuÊt sÏ nhËn ®­îc thªm phÇn th­ëng. Hy väng cã thÓ gióp ®ì mäi ng­êi.");
 	tSay.sel = {
-		{"\n Ph¶n håi", "main"},
-		{"\n Tho¸t ", "nothing"},
+		{"\n Feedback", "main"},
+		{"\n Exit", "nothing"},
 	};
 	temp_Talk(tSay);
 end
@@ -78,10 +78,10 @@ function sljt_func()
 	local tSay = {
 		format("NhiÖm vô tuÇn (TuÇn nµy cßn ®­îc hoµn thµnh %d lÇn)/#sljt_WeekTask(%d)", lastWeekTaskCount, lastWeekTaskCount),
 		format("Cèng hiÕn Thiªn Kiªu LÖnh (TuÇn nµy cßn %d lÇn nhËn th­ëng thªm)/#sljt_IBTask(%d)", lastExAwardCount, lastExAwardCount),
-		"Xem ®é x©y dùng tÕ ®µn thÕ lùc/sljt_ShowShiLiRank",
+		"View faction altar construction level/sljt_ShowShiLiRank",
 		format("Xem xÕp h¹ng ®iÓm x©y dùng cña thÕ lùc/sljt_ShowPlayerRank"),
-		"\n Ph¶n håi/main",
-		"Rêi khái/nothing",
+		"\nBack/main",
+		"Leave/nothing",
 	}
 	Say(format(NPC_FORMAT, npcName)..format("§iÓm x©y dùng hiÖn t¹i lµ %d ®iÓm.", ywz_GetScore()), getn(tSay), tSay);
 end
@@ -104,8 +104,8 @@ function sljt_WeekTask(nTime, bCost)
 			local npcName = GetNpcName(GetTargetNpc());
 			local tSay = {
 				format("NhËn nhiÖm vô (Tiªu hao %d ®iÓm cèng hiÕn bang)/#sljt_WeekTask(%d, 1)", 4, nTime),
-				"\n Ph¶n håi/sljt_func",
-				"Rêi khái/nothing",
+				"\n Back/sljt_func",
+				"Leave/nothing",
 			}
 			Say(format(NPC_FORMAT, npcName)..format("§iÓm x©y dùng hiÖn t¹i lµ %d ®iÓm.", ywz_GetScore()), getn(tSay), tSay);
 			return 0;
@@ -183,12 +183,12 @@ function sljt_WeekTask_Finish_CB(nCount, sdb)
 	local lastCount = ywz_GetWeekTaskCount();
 	for i = 1, getn(tLimit) do
 		if tLimit[i] == lastCount then
-			gf_AddItemEx2({2, 1, 30969, 1}, "Anh Dòng Chøng", "ThÕ Lùc Ba Phe-DiÔn Vâ ChiÕn", "NhiÖm vô tuÇn", 0, 1);
+			gf_AddItemEx2({2, 1, 30969, 1}, "Heroic Token", "ThÕ Lùc Ba Phe-DiÔn Vâ ChiÕn", "Weekly quest", 0, 1);
 			AddRuntimeStat(36, 5, 0, 1);
 		end
 	end
 	AddRuntimeStat(36, 1, 0, 1);
-	TriggerMisEvent("event_ywz_taskfinish", "NhiÖm vô tuÇn", YWZ_WEEK_TASK_LIMIT-lastCount);
+	TriggerMisEvent("event_ywz_taskfinish", "Weekly quest", YWZ_WEEK_TASK_LIMIT-lastCount);
 end
 
 function sljt_IBTask(nTimes, bEnsure)
@@ -256,9 +256,9 @@ function sljt_ShowShiLiRank_SB(nCount, sdb)
 	local npcName = format(NPC_FORMAT, GetNpcName(GetTargetNpc()));
 	local tSay = {};
 	local tCamp2Name = {
-		[1] = "TÕ §µn §¹i Lı",
-		[2] = "TÕ §µn Thæ Phån",
-		[3] = "TÕ §µn T©y H¹",
+		[1] = "Dali Altar",
+		[2] = "Tubo Altar",
+		[3] = "Xixia Altar",
 	}
 	local nRank = 1;
 	for i = 1, nCount do
@@ -270,9 +270,9 @@ function sljt_ShowShiLiRank_SB(nCount, sdb)
 		if lastData and getn(lastData) == 2 and nScore < tonumber(lastData[2]) then
 			nRank = nRank + 1;
 		end
-		tinsert(tSay, format("H¹ng %d [%s] (§é x©y dùng %d)", nRank, tCamp2Name[nCamp], nScore));
+		tinsert(tSay, format("Rank %d [%s] (Construction level %d)", nRank, tCamp2Name[nCamp], nScore));
 	end
-	tinsert(tSay, "\n Ph¶n håi/main");
+	tinsert(tSay, "\nBack/main");
 	Say(npcName.."ThÕ Lùc Ba Phe-H¹ng ®é x©y dùng hiÖn t¹i:", getn(tSay), tSay);
 end
 
@@ -305,10 +305,10 @@ function sljt_ShowPlayerRank_SB(nCount, sdb)
 			end
 		end
 		if nRank <= 5 then
-			tinsert(tSay.sel, {format("H¹ng %d [%s](§iÓm x©y dùng %d)", nRank, tData[1], nScore), "nothing"});
+			tinsert(tSay.sel, {format("Rank %d [%s](Construction points %d)", nRank, tData[1], nScore), "nothing"});
 		end
 	end
-	tinsert(tSay.sel, {"\n Ph¶n håi", "main"});
+	tinsert(tSay.sel, {"\n Feedback", "main"});
 	tSay.msg = format(NPC_FORMAT, npcName)..format("§iÓm x©y dùng hiÖn t¹i lµ <color=green>%d<color>, h¹ng <color=green>%d<color>.", nMyScore, nMyRank);
 	temp_Talk(tSay);
 end
@@ -318,8 +318,8 @@ function sljt_rule()
 	local npcName = GetNpcName(GetTargetNpc());
 	tSay.msg = format(NPC_FORMAT, npcName).."1. Thêi gian giai ®o¹n 1 cña ho¹t ®éng lµ 00:00 thø 2 ®Õn 23:00 thø 6 h»ng tuÇn\n2. §iÒu kiÖn tham gia: Ng­êi ch¬i ®· gia nhËp thÕ lùc.\n3. H»ng tuÇn ng­êi ch¬i tèi ®a chØ ®­îc hoµn thµnh 50 nhiÖm vô tuÇn, mçi lÇn nhËn 1 nhiÖm vô tuÇn cÇn tiªu hao Hµo HiÖp LÖnh.\n4. NÕu trong giai ®o¹n 1 cña ho¹t ®éng ng­êi ch¬i tiÕn hµnh ®æi thÕ lùc, th× ®iÓm x©y dùng cña ng­êi ch¬i ®ã chØ gi÷ l¹i 50%, vµ sè lÇn nhiÖm vô tuÇn ®· hoµn thµnh vµ sè lÇn cèng hiÕn Thiªn Kiªu LÖnh (tr­íc 15 lÇn) kh«ng bŞ ¶nh h­ëng.\n5. Trong giai ®o¹n 1 cña ho¹t ®éng, ng­êi ch¬i cÇn ®¹t 120 ®iÓm x©y dùng míi ®­îc nhËn th­ëng xÕp h¹ng thÕ lùc; ®¹t 300 ®iÓm x©y dùng míi ®­îc nhËn th­ëng n¨ng ®éng x©y dùng thÕ lùc; ®¹t 950 ®iÓm x©y dùng vµ tháa ®iÒu kiÖn xÕp h¹ng míi nhËn ®­îc phÇn th­ëng h¹ng 1-h¹ng 3.\n6. Trong giai ®o¹n 1, ®iÓm x©y dùng thÕ lùc cña ng­êi ch¬i n»m trong TOP 100 míi ®­îc vµo giai ®o¹n 2 cña ho¹t ®éng.\n7. NÕu ng­êi ch¬i trong kho¶ng thêi gian kÕt thóc giai ®o¹n 1 vµ ch­a b¾t ®Çu giai ®o¹n 2 tiÕn hµnh chuyÓn thÕ lùc, th× ng­êi ch¬i sÏ mÊt t­ c¸ch tham gia giai ®o¹n 2 cña ho¹t ®éng.\n8. Trong giai ®o¹n 1, ng­êi ch¬i nhËn ®­îc Anh Dòng Chøng cã thÓ ®æi d­îc phÈm trong tiÖm d­îc phÈm Ba Phe DiÔn Vâ t¹i b¶n ®é thÕ lùc m×nh, npc tiÖm d­îc phÈm ®ã c¶u ba phe lµ: lı Nguyªn Hóc, §o¹n Bİch, T¸n Phæ Kham Bé.T¸n Phæ Kham Bé.";
 	tSay.sel = {
-		{"\n Ph¶n håi", "main"},
-		{"\n Tho¸t ", "nothing"},
+		{"\n Feedback", "main"},
+		{"\n Exit", "nothing"},
 	};
 	temp_Talk(tSay);
 end

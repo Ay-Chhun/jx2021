@@ -6,8 +6,8 @@
 VET_201012_01_STR_LOG_TITLE = "Hoat dong thang 12 nam 2010";--±¾´Î»î¶¯ÈÕÖ¾±êÌâ
 
 VET_201012_01_TB_LOG_ACTION_LIST = {
-    [1] = "§æi Hép Quµ Gi¸ng Sinh",
-    [2] = "§æi ®ång tiÒn vµng",
+    [1] = "Exchange Christmas Gift Box",
+    [2] = "Exchange gold coins",
     [3] = "PhÇn th­ëng kinh nghiÖm t¨ng thªm tõ Hép Quµ Gi¸ng Sinh",
     [4] = "PhÇn th­ëng vËt phÈm tõ Hép Quµ Gi¸ng Sinh",
     [5] = "PhÇn th­ëng vËt phÈm ®Æc thï tõ Hép Quµ Gi¸ng Sinh",
@@ -22,14 +22,14 @@ VET_201012_01_TB_STRING_LIST = {
     [4] = "Chän h×nh thøc nhËn th­ëng",
     [5] = "§æi 100 vËt phÈm xu (cÇn 1 §¹i Ng©n PhiÕu)",
     [6] = "KÝch ho¹t löa tr¹i s­ëi Êm",
-    [7] = "Mua cñi (20 vµng)",
+    [7] = "Buy firewood (20 gold)",
     [8] = "Nguyªn liÖu mang theo kh«ng ®ñ",
     [9] = "Sè l­îng Hép Quµ Gi¸ng Sinh ®· sö dông: <color=red>[%d/%d]<color>",
     [10] = "C¸c h¹ ®· nhËn phÇn th­ëng nµy råi",
     [11] = "Vui lßng chän h×nh thøc nhËn th­ëng",
     [12] = "KÝch ho¹t nhËn th­ëng kh«ng nhËn vËt phÈm (t¨ng thªm 25% kinh nghiÖm)",
     [13] = "KÝch ho¹t nhËn th­ëng nhËn vËt phÈm",
-    [14] = "KÕt thóc ®èi tho¹i",
+    [14] = "End conversation",
     [15] = "HiÖn ®ang kÝch ho¹t nhËn th­ëng kh«ng vËt phÈm (t¨ng 25% kinh nghiÖm)",
     [16] = "HiÖn ®ang kÝch ho¹t KÝch ho¹t nhËn th­ëng nhËn vËt phÈm",
     [17] = "C¸c h¹ kh«ng mang theo §¹i Ng©n PhiÕu",
@@ -43,16 +43,16 @@ VET_201012_01_TB_STRING_LIST = {
 };
 
 VET_201012_01_TB_ITEM_LIST = {
-    [1] = {"Chu«ng Gi¸ng Sinh", 2, 1, 30265},
-    [2] = {"Hép quµ gi¸ng sinh", 2, 1, 30266},
+    [1] = {"Christmas Bell", 2, 1, 30265},
+    [2] = {"Christmas gift box", 2, 1, 30266},
     [3] = {"H¹t Gièng B¹ch Kim", 2, 1, 30268},
     [4] = {"CÈm nang ho¹t ®éng", 2, 1, 30267},
     [5] = {"Xu", 2, 1, 30230},
-    [6] = {"§¹i ng©n phiÕu", 2, 1, 199},
+    [6] = {"Great Silver Note", 2, 1, 199},
 };
 
 VET_201012_01_TB_ITEM_LOGINGIVE_LIST = {
-    [1] = {"CÈm Nang §¹i Sù KiÖn", 2, 1, 30045},
+    [1] = {"Grand Event Handbook", 2, 1, 30045},
 };
 
 -- Phan thuong tung hop qua giang sinh
@@ -60,17 +60,17 @@ VET_201012_TB_XMAS_BOX_NOMAL_AWARD = {
     {1, 100, "Thiªn th¹ch", {2, 2, 8, 1}, 0},
     {1, 60, "M¶nh Thiªn th¹ch", {2, 2, 7, 1}, 0},
     {1, 5, "ThÕ Th©n phï", {2, 0, 556, 1}, 7 * 24 * 3600},
-    {1, 20, "B¸t Nh· Chøng Th­", {2, 1, 30114, 1}, 7 * 24 * 3600},
-    {1, 20, "C©y B¸t Nh· nhá", {2, 0, 504, 1}, 7 * 24 * 3600},
-    {1, 10, "C©y B¸t Nh·", {2, 0, 398, 1}, 7 * 24 * 3600},
+    {1, 20, "Prajna Certificate", {2, 1, 30114, 1}, 7 * 24 * 3600},
+    {1, 20, "Small Prajna Tree", {2, 0, 504, 1}, 7 * 24 * 3600},
+    {1, 10, "Prajna Tree", {2, 0, 398, 1}, 7 * 24 * 3600},
     {1, 5, "Thiªn Hµ MËt tÞch", {0, 107, 64, 1}, 0},
     {1, 5, "Tö Hµ MËt tÞch", {0, 107, 65, 1}, 0},
-    {1, 5, "Chiªm Y Phæ", {0, 107, 66, 1}, 0},
-    {1, 20, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 1}, 7 * 24 * 3600},   -- xac xuat 2% - 7 ngµy
+    {1, 5, "Zhanyi Manual", {0, 107, 66, 1}, 0},
+    {1, 20, "Xiu Zhen Yao Jue", {2, 0, 554, 1}, 7 * 24 * 3600},   -- xac xuat 2% - 7 ngµy
     {1, 10, "TiÓu Nh©n s©m qu¶", {2, 0, 552, 1}, 7 * 24 * 3600},
     {1, 5, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
     {1, 10, "§é NguyÖt ThÇn Sa", {2, 1, 3332, 1}, 0},
-    {1, 130, "XÝch ThiÕt Tinh", {2, 1, 2652, 1}, 0},
+    {1, 130, "Red Iron Essence", {2, 1, 2652, 1}, 0},
     {3, 255, 10000, 1}, -- 1 vang 25.5%
     {4, 200, 10, 1},  -- diem danh vong 20%
     {5, 140, 10, 1},  -- diem su mon  14%
@@ -79,13 +79,13 @@ VET_201012_TB_XMAS_BOX_NOMAL_AWARD = {
 -- su dung hop qua giang sinh tai cac moc 20,40,60,80
 VET_201012_TB_XMAS_BOX_SP_AWARD = {
     {1, 600, "TiÓu Nh©n s©m qu¶", {2, 0, 552, 1}, 7 * 24 * 3600},
-    {1, 300, "Sæ tay sèng", {2, 19, 1, 1}, 7 * 24 * 3600},
-    {1, 300, "C¬ quan nh©n", {2, 1, 1011, 1}, 7 * 24 * 3600},
+    {1, 300, "Living Notebook", {2, 19, 1, 1}, 7 * 24 * 3600},
+    {1, 300, "Mechanism Man", {2, 1, 1011, 1}, 7 * 24 * 3600},
     {1, 500, "V« NgÊn Thñy", {2, 1, 503, 1}, 7 * 24 * 3600},
-    {1, 500, "TÈy Tñy ®¬n", {2, 0, 136, 1}, 7 * 24 * 3600},
-    {1, 100, "TÈy Tñy linh ®¬n", {2, 0, 137, 1}, 7 * 24 * 3600},
-    {1, 2149, "§Êu hån", {2, 1, 1157, 1}, 7 * 24 * 3600},						-- 21.49%
-    {1, 2000, "§ång tiÒn vµng", { 2, 1, 30094, 1 }, 0},				-- dong tien vang 20 %
+    {1, 500, "Marrow-Cleansing Pill", {2, 0, 136, 1}, 7 * 24 * 3600},
+    {1, 100, "Marrow-Cleansing Spirit Pill", {2, 0, 137, 1}, 7 * 24 * 3600},
+    {1, 2149, "Soul Duel", {2, 1, 1157, 1}, 7 * 24 * 3600},						-- 21.49%
+    {1, 2000, "Gold coin", { 2, 1, 30094, 1 }, 0},				-- dong tien vang 20 %
     
     --{1, 1000, "Th¸i H­ §a MËt Qu¶ ", {2, 1, 387, 1}, 7 * 24 * 3600},
     --{1, 1009, "Tµng KiÕm anh hïng thiÕp", {2, 0, 31, 1}, 7 * 24 * 3600},
@@ -112,7 +112,7 @@ VET_201012_01_BFY_WEAPON = {
 				[8] = {675, "L­u Yªn c«n",{0,5,6009, 1,1,-1,-1,-1,-1,-1,-1}},
 				[9] = {675, "HuyÒn Yªn kiÕm",{0,2,6010, 1,1,-1,-1,-1,-1,-1,-1}},
 				[10] = {675, "Vò Yªn bót",{0,9,6011, 1,1,-1,-1,-1,-1,-1,-1}},
-				[11] = {675, "Hµ Tiªm Th­¬ng",{0,6,6012, 1,1,-1,-1,-1,-1,-1,-1}},
+				[11] = {675, "He Tian Spear",{0,6,6012, 1,1,-1,-1,-1,-1,-1,-1}},
 				[12] = {675, "Hµnh Yªn Cung",{0,4,6013, 1,1,-1,-1,-1,-1,-1,-1}},
 				[13] = {625, "Träc Yªn nhÉn",{0,7,6014, 1,1,-1,-1,-1,-1,-1,-1}},
 				[14] = {600, "Yªu Yªn tr¶o",{0,11,6015, 1,1,-1,-1,-1,-1,-1,-1}},
@@ -135,12 +135,12 @@ VET_201012_TB_XMAS_BOX_FINAL_AWARD = {
     {1, 1, "§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", {2, 1, 1067, 1}, 7 * 24 * 3600},    
     {1, 20, "Thiªn Th¹ch Tinh Th¹ch", {2, 1, 1009, 1}, 0},			-- 2%
     {1, 5, "Thiªn Th¹ch Linh Th¹ch", {2, 1, 1068, 1}, 7 * 24 * 3600},
-    {1, 1, "L¨ng Ba Vi Bé", {0, 112, 78, 1}, 0},
-    {1, 10, "R­¬ng YÕu QuyÕt Cao CÊp", {2,1,30112, 1}, 7 * 24 * 3600},        
+    {1, 1, "Lingbo Microstep", {0, 112, 78, 1}, 0},
+    {1, 10, "Advanced Secret Manual Chest", {2,1,30112, 1}, 7 * 24 * 3600},        
     {32, 382, 7000, 1},	-- 7000 diem quan cong
-    {1, 10, "Long Tö Bèi", { 2, 1, 30155, 1 }, 0 },
+    {1, 10, "Dragon Pendant", { 2, 1, 30155, 1 }, 0 },
     {1, 10, "Phông Tö Bèi", { 2, 1, 30156, 1 }, 0 },
-    {1, 10, "¦ng Tö Bèi", { 2, 1, 30158, 1 }, 0 },
+    {1, 10, "Eagle Pendant", { 2, 1, 30158, 1 }, 0 },
     {31, 5, "get_bpy_weapon_201012()" },
     {31, 5, "get_faction_armor_201012()" },   -- lat xem lai
 };
@@ -157,8 +157,8 @@ VET_201012_08_EQUIP  = {
 	{"V« l­îng ph¸p t«n thiÒn ®Þnh bµo", 2, {0, 100, 331, 1, 1, -1, -1, -1, -1, -1, -1}},
 	{"V« l­îng ph¸p t«n thiÒn ®Þnh bµo", 2, {0, 100, 332, 1, 1, -1, -1, -1, -1, -1, -1}},
 	
-	{"B¸t b¶o la h¸n ®¹i thõa kh¶i gi¸p", 2, {0, 100, 431, 1, 1, -1, -1, -1, -1, -1, -1}},
-	{"B¸t b¶o la h¸n ®¹i thõa kh¶i gi¸p", 2, {0, 100, 432, 1, 1, -1, -1, -1, -1, -1, -1}},
+	{"Eight Treasures Arhat Mahayana Armor", 2, {0, 100, 431, 1, 1, -1, -1, -1, -1, -1, -1}},
+	{"Eight Treasures Arhat Mahayana Armor", 2, {0, 100, 432, 1, 1, -1, -1, -1, -1, -1, -1}},
 	
 	{"Thiªn c¬ sø gi¶ thÇn triÖu c©n", 2, {0, 100, 631, 1, 1, -1, -1, -1, -1, -1, -1}},
 	{"Thiªn c¬ sø gi¶ thÇn triÖu c©n", 2, {0, 100, 632, 1, 1, -1, -1, -1, -1, -1, -1}},
@@ -181,10 +181,10 @@ VET_201012_08_EQUIP  = {
 	{"KhÊt thiªn thÇn c¸i v©n du y", 2, {0, 100, 1233, 1, 1, -1, -1, -1, -1, -1, -1}},	
 	{"KhÊt thiªn thÇn c¸i v©n du y", 2, {0, 100, 1234, 1, 1, -1, -1, -1, -1, -1, -1}},	
 	
-	{"Chuëng kinh thanh quang bµo", 2, {0, 100, 1431, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{"Chuëng kinh thanh quang bµo", 2, {0, 100, 1432, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{"Chuëng kinh thanh quang bµo", 2, {0, 100, 1433, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{"Chuëng kinh thanh quang bµo", 2, {0, 100, 1434, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{"Palm Sutra Pure Light Robe", 2, {0, 100, 1431, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{"Palm Sutra Pure Light Robe", 2, {0, 100, 1432, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{"Palm Sutra Pure Light Robe", 2, {0, 100, 1433, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{"Palm Sutra Pure Light Robe", 2, {0, 100, 1434, 1, 1, -1, -1, -1, -1, -1, -1}},	
 	
 	{"Th¸i Êt t¶n nh©n h¹o nhiªn phôc", 2, {0, 100, 1531, 1, 1, -1, -1, -1, -1, -1, -1}},	
 	{"Th¸i Êt t¶n nh©n h¹o nhiªn phôc", 2, {0, 100, 1532, 1, 1, -1, -1, -1, -1, -1, -1}},	

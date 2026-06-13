@@ -23,7 +23,7 @@ t_dxg_task={
 	[2] = {
 		Name = "§¹i ph¸ §Þa HuyÒn Cung",
 		TaskByte = 2,
-		Desc = "Toµn bé th«ng ¶i",
+		Desc = "Clear all stages",
 	},
 	[3] = {
 		Name = "Truy hung §Þa HuyÒn Cung",
@@ -49,14 +49,14 @@ t_dixuangong_daily_task_award={
 		nBagLimit = 2,
     	nWeightLimit = 100,
 		fix_award={
-    		{1,"Hu©n ch­¬ng anh hïng",{2,1,30499,1},0,1},
+    		{1,"Hero's Medal",{2,1,30499,1},0,1},
     		{2,3000000},--¾­Ñé
     		{28,100},--ÕæÆø
 		},
 		rand_award={
 			{ {"Ma §ao Th¹ch cÊp 1", {2,1,30428,1,4}, nil,nil, {1, 100}}, 1500},
         	{ {"ThiÕt Tinh cÊp 1", {2,1,30533,1,4}, nil,nil, {1, 100}}, 3000},
-        	{ {"Båi Nguyªn §¬n", {2,1,30351,1, 4}, nil,nil,{1, 100} }, 4500},
+        	{ {"Replenishing Origin Pill", {2,1,30351,1, 4}, nil,nil,{1, 100} }, 4500},
 			{ {"Thiªn Lý TruyÒn ¢m Phï ChØ", {2,1,3508,1, 4}, nil,nil,{1, 100} }, 500},
 			{ {"ThiÕt Tinh cÊp 2", {2,1,30534,1, 4}, nil,nil,{1, 100} }, 500},
 		},
@@ -65,7 +65,7 @@ t_dixuangong_daily_task_award={
 		nBagLimit = 2,
     	nWeightLimit = 100,
 		fix_award={
-			{1,"Hu©n ch­¬ng anh hïng",{2,1,30499,1},0,1},
+			{1,"Hero's Medal",{2,1,30499,1},0,1},
     		{2,4000000},--¾­Ñé
     		{28,200},--ÕæÆø
 		},
@@ -77,14 +77,14 @@ t_dixuangong_daily_task_award={
         	{ {"ThiÕt Tinh cÊp 2", {2,1,30534,1,4}, nil,nil, {1, 100}}, 2500},
         	{ {"Thiªn th¹ch", {2,2,8,1,4}, nil,nil, {1, 100}}, 700},
         	{ {"b¸nh Ýt B¸c B¶o", {2,1,1125,1, 4}, nil,nil,{1, 100} }, 300},
-			{ {"C©y B¸t Nh· nhá", {2,0,504,1, 4}, nil,nil,{1, 100} }, 600},
+			{ {"Small Prajna Tree", {2,0,504,1, 4}, nil,nil,{1, 100} }, 600},
 		},
 	},
 	[3] = {
 		nBagLimit = 2,
     	nWeightLimit = 100,
 		fix_award={
-			{1,"Hu©n ch­¬ng anh hïng",{2,1,30499,1},0,1},
+			{1,"Hero's Medal",{2,1,30499,1},0,1},
     		{2,6000000},--¾­Ñé
     		{28,300},--ÕæÆø
 		},
@@ -94,8 +94,8 @@ t_dixuangong_daily_task_award={
 			{{MA_GivePopur, {4000}}, 500},
 			{ {"Ma §ao Th¹ch cÊp 3", {2,1,30430,1,4}, nil,nil, {1, 100}}, 500},
         	{ {"ThiÕt Tinh cÊp 3", {2,1,30535,1,4}, nil,nil, {1, 100}}, 1500},
-        	{ {"Tø Linh Quy Nguyªn §¬n", {2,1,30352,1, 4}, nil,nil,{1, 100} }, 1000},
-			{ {"C©y B¸t Nh·", {2,0,398,1, 4}, nil,nil,{1, 100} }, 500},
+        	{ {"Four Spirits Return to Origin Pill", {2,1,30352,1, 4}, nil,nil,{1, 100} }, 1000},
+			{ {"Prajna Tree", {2,0,398,1, 4}, nil,nil,{1, 100} }, 500},
 			{ {"B¨ng Tinh Th¹ch", {2,1,30554,1, 4}, nil,nil,{1, 100} }, 1000},
 		},
 	},
@@ -109,7 +109,7 @@ function dxg_daily_task_menu()
 		local szStep = task_step(i)
 		tinsert(tbSay, format("%s(%s)/#dxg_daily_task_talk(%d)",szName, szStep, i))
 	end
-	tinsert(tbSay, "Ra khái/nothing")
+	tinsert(tbSay, "Leave/nothing")
 	Say(szTitle, getn(tbSay), tbSay)
 end
 
@@ -117,7 +117,7 @@ function dxg_daily_task_msg_to_menu(szMsg)
 	local tbSay = {}
 	local szTitle = format("NhiÖm vô hµng ngµy §Þa HuyÒn Cung :\n<color=yellow>%s<color>", szMsg)
 	tinsert(tbSay, format("%s/%s","trë l¹i","dxg_daily_task_menu"))
-	tinsert(tbSay, "Ra khái/nothing")
+	tinsert(tbSay, "Leave/nothing")
 	Say(szTitle, getn(tbSay), tbSay)
 end
 

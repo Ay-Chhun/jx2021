@@ -1,5 +1,5 @@
 function OnUse(nItem)
-	Say(format("C¸c h¹ ®ång ý më %s nhËn%d c¸i %s kh«ng?","Bao bót l«ng nhá",10,"Bót l«ng"),2,"§ång ý/ensure","Hñy bá/do_nothing")
+	Say(format("C¸c h¹ ®ång ý më %s nhËn%d c¸i %s kh«ng?","Small feather brush box",10,"Feather brush"),2,"Agree/ensure","Cancel/do_nothing")
 end
 
 function ensure()

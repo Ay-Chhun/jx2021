@@ -6,33 +6,33 @@
 Include("\\script\\online\\viet_event\\mooncake_08\\mooncake_head.lua")
 Include("\\script\\lib\\globalfunctions.lua")
 
-g_szLogTitle = "Ho¹t ®éng trung thu : ".."TÇn §¹i Thóc"		--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
-g_szInfoHead = "<color=green>TÇn ®¹i thóc<color>: "
+g_szLogTitle = "Ho¹t ®éng trung thu : ".."Uncle Qin"		--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
+g_szInfoHead = "<color=green>Uncle Qin<color>:"
 
 
 g_tbItem = 
 {
 	--		Ãû³Æ		G1	G2	G3		ÊýÁ¿
-	[1] = {" §éc Phong thÝch",	2,	1,	176,	8	},
+	[1] = {" Du Feng Thorn",	2,	1,	176,	8	},
 	[2] = {" Gi¸p x¸c phiÕn",	2,	1,	177,	8	},
-	[3] = {" Khª S¬n chÝ",2,	1,	98,	8	},
-	[4] = {" Vâ sÜ yªu ®¸i",	2,	1,	174,	8	},
-	[5] = {" ¢m d­¬ng kÝnh",	2,	1,	294,	8	},
+	[3] = {" Xi Shan Annal",2,	1,	98,	8	},
+	[4] = {" Warrior's Favorite",	2,	1,	174,	8	},
+	[5] = {" Yin Yang Mirror",	2,	1,	294,	8	},
 	[6] = {" Nh©m Méc Bµi",	2,	1,	83,		8	},
-	[7] = {" Vâ sÜ ®ao",	2,	1,	173,	8	},
-	[8] = {" §¹i Cang ®ao",	2,	1,	295,	6	},
-	[9] = {" R¨ng Tinh Tinh",	2,	1,	296,	6	},
-	[10] = {" V¶y Kú L©n",	2,	1,	106,	6	},
-	[11] = {" Phï Ên",		2,	1,	302,	6	},
-	[12] = {" Thuèc næ",	2,	1,	298,	6	},
+	[7] = {" Warrior's Blade",	2,	1,	173,	8	},
+	[8] = {" Da Gang Blade",	2,	1,	295,	6	},
+	[9] = {" Beast Fang",	2,	1,	296,	6	},
+	[10] = {" Qilin Scale",	2,	1,	106,	6	},
+	[11] = {" Talisman Seal",		2,	1,	302,	6	},
+	[12] = {" Explosive Powder",	2,	1,	298,	6	},
 	[13] = {" Háa ¶nh ThÇn ®ao",	2,	1,	178,	6	},
-	[14] = {" G¨ng tay",	2,	1,	303,	6	},
-	[15] = {" Tµn kiÕm",		2,	1,	299,	6	},
-	[16] = {" Linh T¶n",		2,	1,	185,	6	},
-	[17] = {" §µ La tr­îng",	2,	1,	305,	6	},
-	[18] = {" Linh CÇm",		2,	1,	186,	6	},
-	[19] = {" PhËt Kinh",		2,	1,	304,	6	},
-	[20] = {" Linh §Þch",		2,	1,	187,	6	},
+	[14] = {" Gauntlet",	2,	1,	303,	6	},
+	[15] = {" Broken Sword",		2,	1,	299,	6	},
+	[16] = {" Spirit Tray",		2,	1,	185,	6	},
+	[17] = {" Tuo Luo Staff",	2,	1,	305,	6	},
+	[18] = {" Spirit Qin",		2,	1,	186,	6	},
+	[19] = {" Buddhist Scripture",		2,	1,	304,	6	},
+	[20] = {" Spirit Flute",		2,	1,	187,	6	},
 }
 
 g_tbOption = {}
@@ -70,7 +70,7 @@ function exchange_talk()
 				g_tbOption[5],
 				g_tbOption[6],
 				"Xem trang sau/exchange_talk_2",
-				"KÕt thóc ®èi tho¹i/no",
+				"End dialogue/no",
 				}
 	Say(g_szInfoHead.."Tõ 05-09-2008 ®Õn 24:00 ngµy 05-10-2008, ng­êi ch¬i cã thÓ ®¸nh qu¸i ®Ó thu thËp nguyªn liÖu lµm b¸nh trung thu (xem chi tiÕt trªn trang chñ).",getn(selTab),selTab);
 end
@@ -82,9 +82,9 @@ function exchange_talk_2()
 				g_tbOption[9],
 				g_tbOption[10],
 				g_tbOption[11],
-				"Xem trang tr­íc/exchange_talk",
+				"View previous page/exchange_talk",
 				"Xem trang sau/exchange_talk_3",
-				"KÕt thóc ®èi tho¹i/no",
+				"End dialogue/no",
 				}
 	Say(g_szInfoHead.."Tõ 05-09-2008 ®Õn 24:00 ngµy 05-10-2008, ng­êi ch¬i cã thÓ ®¸nh qu¸i ®Ó thu thËp nguyªn liÖu lµm b¸nh trung thu (xem chi tiÕt trªn trang chñ).",getn(selTab),selTab);
 end
@@ -96,9 +96,9 @@ function exchange_talk_3()
 				g_tbOption[14],
 				g_tbOption[15],
 				g_tbOption[16],
-				"Xem trang tr­íc/exchange_talk_2",
+				"View previous page/exchange_talk_2",
 				"Xem trang sau/exchange_talk_4",
-				"KÕt thóc ®èi tho¹i/no",
+				"End dialogue/no",
 				}
 	Say(g_szInfoHead.."Tõ 05-09-2008 ®Õn 24:00 ngµy 05-10-2008, ng­êi ch¬i cã thÓ ®¸nh qu¸i ®Ó thu thËp nguyªn liÖu lµm b¸nh trung thu (xem chi tiÕt trªn trang chñ).",getn(selTab),selTab);
 end
@@ -109,8 +109,8 @@ function exchange_talk_4()
 				g_tbOption[18],
 				g_tbOption[19],
 				g_tbOption[20],
-				"Xem trang tr­íc/exchange_talk_3",
-				"KÕt thóc ®èi tho¹i/no",
+				"View previous page/exchange_talk_3",
+				"End dialogue/no",
 				}
 	Say(g_szInfoHead.."Tõ 05-09-2008 ®Õn 24:00 ngµy 05-10-2008, ng­êi ch¬i cã thÓ ®¸nh qu¸i ®Ó thu thËp nguyªn liÖu lµm b¸nh trung thu (xem chi tiÕt trªn trang chñ).",getn(selTab),selTab);
 end

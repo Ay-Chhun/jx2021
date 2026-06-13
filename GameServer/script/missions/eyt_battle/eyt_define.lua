@@ -24,8 +24,8 @@ EYT_CAMP_STRING = {
 	["camp_enemy"] = EYT_CAMP_BLUE,
 }
 EYT_CAMP_NAME = {
-	[EYT_CAMP_RED] = "§éi ®á",
-	[EYT_CAMP_BLUE] = "§éi xanh",
+	[EYT_CAMP_RED] = "Red Team",
+	[EYT_CAMP_BLUE] = "Blue Team",
 }
 --==============³£Á¿£ºÕ½³¡µÄ×´Ì¬===================
 EYT_STATE_PEACE = 1;				--µÈ´ıÈËÊı½×¶Î
@@ -47,7 +47,7 @@ EYT_REV_POS = {
 	},
 }
 
-EYT_NPC_FLAG = "ChiÕn Kú ¢n O¸n §µi";
+EYT_NPC_FLAG = "Battle Flag Grudge Arena";
 
 --TASK-==========================
 EYT_TASK_1 = 3271; --1,2byteÎ´Ê¹ÓÃ,3byteÊ¤³¡£¬4byte°Ü³¡
@@ -71,10 +71,10 @@ EYT_XUEHEN = {--²î¾àÊı ¹¥»÷Ìá¸ßÊıÖµ ÉúÃüÉÏÏŞÌá¸ßÊıÖµ ÃâÒß¸ºÃæ´ÎÊı
 
 --°Ë¸ö·ğµÄÎ»ÖÃ
 EYT_FO_POS = {
-	{"Nga Mi tiÓu s­ tû 1", "Nga Mi tiÓu s­ tû ", 1634, 3163, "camp_player"},
-	{"Nga Mi tiÓu s­ tû 2", "Nga Mi tiÓu s­ tû ", 1630, 3167, "camp_player"},
-	{"Nga Mi tiÓu s­ tû 3", "Nga Mi tiÓu s­ tû ", 1645, 3173, "camp_player"},
-	{"Nga Mi tiÓu s­ tû 4", "Nga Mi tiÓu s­ tû ", 1642, 3180, "camp_player"},
+	{"Nga Mi tiÓu s­ tû 1", "Emei junior martial sister", 1634, 3163, "camp_player"},
+	{"Nga Mi tiÓu s­ tû 2", "Emei junior martial sister", 1630, 3167, "camp_player"},
+	{"Nga Mi tiÓu s­ tû 3", "Emei junior martial sister", 1645, 3173, "camp_player"},
+	{"Nga Mi tiÓu s­ tû 4", "Emei junior martial sister", 1642, 3180, "camp_player"},
 	{"Nga Mi tiÓu s­ tû 1", "Nga Mi tiÓu s­ muéi", 1572, 3247, "camp_enemy"},
 	{"Nga Mi tiÓu s­ tû 2", "Nga Mi tiÓu s­ muéi", 1575, 3243, "camp_enemy"},
 	{"Nga Mi tiÓu s­ tû 3", "Nga Mi tiÓu s­ muéi", 1588, 3256, "camp_enemy"},

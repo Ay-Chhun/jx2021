@@ -7,7 +7,7 @@ Include("\\script\\function\\siege_qualification\\tm_head.lua")
 phaseTeamFight_waiting = {
 	maxsecond = 20 * 60,
 	guage = {
-		msg = "Giai ®o¹n chuÈn bÞ",
+		msg = "Preparation phase",
 		time = 20 * 60,
 		cyc = 0,
 		id = 1,
@@ -19,7 +19,7 @@ function phaseTeamFight_waiting.Init()
 	self = phaseTeamFight_waiting;
 	DebugOutput("phaseTeamFight_waiting.Init()")
 	DebugOutput("tbTONGMELEE.onMissionInit", this.msPosition:getMapID())
-	local nNpcIndex = CreateNpc("Tèng T­íng Qu©n", "§Æc Sø Bang Héi", this.msPosition:getMapID(), 1870, 4372);
+	local nNpcIndex = CreateNpc("Tèng T­íng Qu©n", "Guild Special Envoy", this.msPosition:getMapID(), 1870, 4372);
 	SetNpcScript(nNpcIndex, "\\script\\function\\siege_qualification\\npc\\tm_mssion_npc.lua");
 end
 
@@ -109,7 +109,7 @@ function phaseTeamFight_fighting:onNpcDeath(event, tParam)
 		tm_set_tongsorce(1);
 	elseif sNpcName == "NhiÕp Hån Ng­u §Çu" then
 		tm_set_tongsorce(5);
-	elseif sNpcName == "Hé Linh Næ Binh" then
+	elseif sNpcName == "Spirit Guard Slave Soldier" then
 		gf_TeamOperateEX(function ()
 			CastState("state_shelter_new", 100, 60*18, 0);
 			Msg2Player("Trong 60 gi©y cung cÊp 1 lÇn hiÖu qu¶ bÊt tö, cã hiÖu qu¶ ®èi víi bang héi");
@@ -124,7 +124,7 @@ function phaseTeamFight_fighting:onNpcDeath(event, tParam)
 			end
 			Msg2Player(format("Ng­¬i nhËn ®­îc hiÖu qu¶ %s", tBuffInfo.Msg));
 		end, tBuffInfo);
-	elseif sNpcName == "Hçn §én Chi Linh" then
+	elseif sNpcName == "Spirit of Chaos" then
 		tm_set_tongsorce(250);
 	end
 	SetNpcLifeTime(deathNpcIndex, 0);
@@ -135,7 +135,7 @@ function phaseTeamFight_fighting:onTalk(event)
 	local talkNpcIndex = GetTargetNpc()
 	tm_ResetEventPoint(talkNpcIndex);
 	local sNpcName = GetNpcName(talkNpcIndex);
-	if sNpcName == "Tø Linh Chóc Phóc TÕ §µn" then
+	if sNpcName == "Four Spirits Blessing Altar" then
 		local nCurTime = GetTime();
 		gf_TeamOperateEX(function (nCurTime)
 			SetTaskTemp(TMP_TASK_TONG_MELEE_DOUBLESORCE, nCurTime);
@@ -172,7 +172,7 @@ function phaseTeamFight_fighting.Event1()
 end
 
 function phaseTeamFight_fighting.CallBoss()
-	local npcIndex = CreateNpc("TF_boss", "Hçn §én Chi Linh", this.msPosition:getMapID(), 1873, 4388);
+	local npcIndex = CreateNpc("TF_boss", "Spirit of Chaos", this.msPosition:getMapID(), 1873, 4388);
 	SetNpcDeathScript(npcIndex, thisFile);
 	this:Msg2MSAll("BOSS ®· xuÊt hiÖn, sau khi tiªu diÖt sÏ nhËn ®­îc rÊt nhiÒu linh lùc, c¸c ®¹i hiÖp nhanh chãng ®Õn ®ã!");
 end

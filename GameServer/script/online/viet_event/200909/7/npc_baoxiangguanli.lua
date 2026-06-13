@@ -8,7 +8,7 @@ function main()
 	local tb_dialog = {
 		"T¹i h¹ muèn nhËn B¸ch B¶o R­¬ng/get_baibaoxiang",
 		"T¹i h¹ muèn nhËn 1 CÈm nang ®¹i sù kiÖn/get_jinnang",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	};
 	Say("<color=green>Qu¶n lı b¶o r­¬ng: <color>Sù kiÖn B¸ch B¶o R­¬ng diÔn ra tõ 19-09-2009 ®Õn 24:00 25-10-2009. Trong thêi gian ho¹t ®éng, mçi ngµy c¸c h¹ cã thÓ nhËn miÔn phİ 1 B¸ch B¶o R­¬ng. R­¬ng th× cã thÓ mua thªm tõ Ngù C¸c . B¸ch B¶o R­¬ng lµ n¬i cÊt gi÷ tßan bé nh÷ng vËt phÈm cña vâ l©m tõ nguyªn liÖu, vËt phÈm thu thËp, d­îc phÈm, trang bŞ, vò khİ …<enter>L­u ı lµ mçi nh©n vËt chØ cã thÓ nhËn miÔn phİ 1 B¸ch B¶o R­¬ng trong 1 ngµy vµ mçi ngµy chØ cã thÓ më tèi ®a 8 B¸ch B¶o R­¬ng", getn(tb_dialog), tb_dialog);
 end
@@ -41,7 +41,7 @@ function get_jinnang()
 	if gf_Judge_Room_Weight(1, 1, "<color=green>Qu¶n lı b¶o r­¬ng: <color>") ~= 1 then 
 		return 0;
 	end
-	gf_AddItemEx({2, 1, 30045, 1}, "CÈm Nang §¹i Sù KiÖn");
+	gf_AddItemEx({2, 1, 30045, 1}, "Grand Event Handbook");
 end
 
 function nothing()

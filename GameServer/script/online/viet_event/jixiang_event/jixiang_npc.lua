@@ -6,23 +6,23 @@
 Include("\\script\\online\\viet_event\\jixiang_event\\jixiang_head.lua");
 Include("\\script\\lib\\globalfunctions.lua")
 
-g_LogTitle = "C¸t t­êng th¹ch : ".."§æi";		--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
+g_LogTitle = "Auspicious Stone:".."§æi";		--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
 
 g_tBookList =
 {
-	[2] = {"Kim Cang Phôc Ma kinh",0,	107,	1,	1},
+	[2] = {"Vajra Demon-Subduing Sutra",0,	107,	1,	1},
 	[3] = {"V« TrÇn MËt tÞch",	0,	107,	5,	1},
 	[4] = {"TiÒm Long MËt tÞch",	0,	107,	3,	1},
 	[6] = {"Thiªn La MËt TÞch",	0,	107,	7,	1},
 	[8] = {"Nh­ ý MËt TÞch",	0,	107,	9,	1},
-	[9] = {"BÝch H¶i Phæ",	0,	107,	11,	1},
+	[9] = {"Azure Sea Score",	0,	107,	11,	1},
 	[11] = {"Hçn §én MËt tÞch",	0,	107,	13,	1},
 	[12] = {"Quý Thiªn MËt tÞch",	0,	107,	15,	1},
 	[14] = {"HuyÒn ¶nh MËt tÞch",	0,	107,	17,	1},
 	[15] = {"Qu©n Tö MËt tÞch",	0,	107,	19,	1},
 	[17] = {"TrÊn Qu©n MËt tÞch",	0,	107,	21,	1},
 	[18] = {"Xuyªn V©n MËt tÞch",	0,	107,	23,	1},
-	[20] = {"U Minh Quû Lôc",	0,	107,	25,	1},
+	[20] = {"Nether Ghost Record",	0,	107,	25,	1},
 	[21] = {"Linh Cæ MËt tÞch",	0,	107,	27,	1},
 }
 
@@ -32,7 +32,7 @@ g_tItemList =
 	[1] = {"Tam Thanh hoµn",		2,	1,	1097,	1,	1,		1},
 	[2] = {"B¶o r­¬ng Tµng KiÕm y gi¸p",	2,	1,	1060,	1,	10,		1},
 	[3] = {"B¶o r­¬ng Tµng KiÕm vò khÝ",	2,	1,	1063,	1,	20,		1},
-	[4] = {"Phiªu Vò",			0,	105,15,		1,	30,		10},
+	[4] = {"Piao Wu",			0,	105,15,		1,	30,		10},
 	[5] = {"B¶o r­¬ng Tµng KiÕm trang søc",	2,	1,	1062,	1,	80,		1},
 	[6] = {"Huy hiÖu chiÕn c«ng (huy hoµng)",	2,	1,	9977,	1,	100,	1},
 	[7] = {"B¶o r­¬ng Tµng KiÕm hoa khè",	2,	1,	1061,	1,	150,	1},
@@ -57,9 +57,9 @@ function exchange_talk()
 				"80 C¸t T­êng Th¹ch = 1 B¶o r­¬ng tµng kiÕm trang søc/#exchange_prize(5)",
 				"100 C¸t T­êng Th¹ch = 1 Huy hiÖu chiÕn c«ng (huy hoµng)/#exchange_prize(6)",
 				"Xem trang sau/exchange_talk_2",
-				"KÕt thóc ®èi tho¹i/no",
+				"End dialogue/no",
 				}
-	Say("<color=green>D¹ Th¶o<color>: ".."Tõ 01-08-2008 ®Õn 24:00 10-08-2008, c¸c vÞ ®¹i hiÖp cã thÓ dïng C¸t T­êng Th¹ch ®Ó ®æi nh÷ng phÇn th­ëng d­íi ®©y, cã muèn ®æi phÇn th­ëng b©y giê hay kh«ng?",getn(selTab),selTab);
+	Say("<color=green>Wild Grass<color>:".."Tõ 01-08-2008 ®Õn 24:00 10-08-2008, c¸c vÞ ®¹i hiÖp cã thÓ dïng C¸t T­êng Th¹ch ®Ó ®æi nh÷ng phÇn th­ëng d­íi ®©y, cã muèn ®æi phÇn th­ëng b©y giê hay kh«ng?",getn(selTab),selTab);
 end
 
 function exchange_talk_2()
@@ -69,10 +69,10 @@ function exchange_talk_2()
 				"400 C¸t T­êng Th¹ch = 1 Thiªn th¹ch linh th¹ch/#exchange_prize(9)",
 				"500 C¸t T­êng Th¹ch = 1 §Çu thµnh biÓu/#exchange_prize(10)",
 				"900 C¸t T­êng Th¹ch = 1 MËt tÞch m«n ph¸i/#exchange_prize(11)",
-				"Xem trang tr­íc/exchange_talk",
-				"KÕt thóc ®èi tho¹i/no",
+				"View previous page/exchange_talk",
+				"End dialogue/no",
 				}
-	Say("<color=green>D¹ Th¶o<color>: ".."Tõ 01-08-2008 ®Õn 24:00 10-08-2008, c¸c vÞ ®¹i hiÖp cã thÓ dïng C¸t T­êng Th¹ch ®Ó ®æi nh÷ng phÇn th­ëng d­íi ®©y, cã muèn ®æi phÇn th­ëng b©y giê hay kh«ng?",getn(selTab),selTab);
+	Say("<color=green>Wild Grass<color>:".."Tõ 01-08-2008 ®Õn 24:00 10-08-2008, c¸c vÞ ®¹i hiÖp cã thÓ dïng C¸t T­êng Th¹ch ®Ó ®æi nh÷ng phÇn th­ëng d­íi ®©y, cã muèn ®æi phÇn th­ëng b©y giê hay kh«ng?",getn(selTab),selTab);
 end
 
 function exchange_prize(nType)

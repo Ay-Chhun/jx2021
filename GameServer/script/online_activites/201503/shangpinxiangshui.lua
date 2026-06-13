@@ -2,10 +2,10 @@ Include("\\script\\online_activites\\head\\activity_normal_head.lua")
 
 VET_201503_ID = 149
 VET_201503_USE_MAX = 2000
-VET_201503_ITEM_NAME = "N­íc Hoa §Æc BiÖt"
+VET_201503_ITEM_NAME = "Special Perfume"
 VET_201503_LOG = "Ho¹t ®éng th¸ng 3/2015"
-VET_201503_ITEM_PRE1 = "N­íc Hoa Kh«"
-VET_201503_ITEM_PRE2 = "N­íc Hoa Tinh ChÊt"
+VET_201503_ITEM_PRE1 = "Dry Perfume"
+VET_201503_ITEM_PRE2 = "Perfume Essence"
 VET_201503_TASK_PRE1 = 2846
 VET_201503_TASK_PRE2 = 2847
 VET_201503_TASK_TIMES = 2848
@@ -43,11 +43,11 @@ function OnUse(nItem)
 		{2, 1000, 15000000, 1},
 		{2, 500, 20000000, 1},
 		{2, 100, 30000000, 1},
-		{1, 50, "Tµng R­¬ng", {2, 1, 30341, 1}, 0},
+		{1, 50, "Treasure Chest", {2, 1, 30341, 1}, 0},
 		{1, 20, "Thiªn Th¹ch linh th¹ch", {2, 1, 1068, 1}, 7 * 24 * 3600},
 		{1, 20, "§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", {2, 1, 1067, 1}, 7 * 24 * 3600},
-		{1, 500, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 1}, 0},
-		{1, 30, "ChuyÓn Sinh §¬n ", {2, 1, 30345, 1}, 7 * 24 * 3600},
+		{1, 500, "Xiu Zhen Yao Jue", {2, 0, 554, 1}, 0},
+		{1, 30, "Reincarnation Pill", {2, 1, 30345, 1}, 7 * 24 * 3600},
 		{33, 600, 500, 1},
 		{4, 1000, 200, 1},
 		{5, 1000, 200, 1},
@@ -83,8 +83,8 @@ function VET_201503_GetFinalAward()
 	end
 	SetTask(VET_201503_TASK_AWARD, 1);
 	gf_ModifyExp(2000000000);
-	gf_AddItemEx2({1, 1, 15, 222}, "B¸nh Bét vµng", VET_201503_LOG, VET_201503_ITEM_NAME, 0, 1);
-	gf_AddItemEx2({1, 1, 19, 222}, "T©y B¾c Väng", VET_201503_LOG, VET_201503_ITEM_NAME, 0, 1);
+	gf_AddItemEx2({1, 1, 15, 222}, "Golden Flour Cake", VET_201503_LOG, VET_201503_ITEM_NAME, 0, 1);
+	gf_AddItemEx2({1, 1, 19, 222}, "Northwest Gaze", VET_201503_LOG, VET_201503_ITEM_NAME, 0, 1);
 	gf_AddItemEx2({1, 1, 17, 222}, "Minh NguyÖt D¹", VET_201503_LOG, VET_201503_ITEM_NAME, 0, 1);
 	gf_EventGiveCustomAward(31, 9999, 1, VET_201503_LOG, VET_201503_ITEM_NAME);
 	gf_EventGiveCustomAward(27, 9999, 1, VET_201503_LOG, VET_201503_ITEM_NAME);
@@ -93,5 +93,5 @@ end
 
 function VET_201503_LookUsedNum()
 	local msg = format("HiÖn nay<color=green>%s<color>cña ng­¬i: sè l­îng sö dông lµ :%d/%d ", VET_201503_ITEM_NAME, GetTask(2848), VET_201503_USE_MAX);
-	Talk(1,"","<color=green>Nh¾c nhë<color>:"..msg)
+	Talk(1,"","<color=green>Reminder<color>:"..msg)
 end

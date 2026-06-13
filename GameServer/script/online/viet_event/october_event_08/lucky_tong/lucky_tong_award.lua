@@ -52,7 +52,7 @@ function draw_prize_cb(szKey, nKey1, nKey2, nCount)
 				nPrizeType = i
 				AddRelayShareData(RELAY_DB_08_OCT_EVENT_VIET, 0, 0, "", "", 0, szTongName, "dddd", nWishType, nPrizeType, nPrizeFlag, nDateFlag)
 				AddRelayShareData(RELAY_DB_08_OCT_EVENT_VIET, 0, 1, "", "", 0, tostring(nPrizeType), "ds", nDateFlag, szTongName)
-				WriteLogEx("Hoat Dong Thang 10","tróng gi¶i "..nPrizeType,"","","",szTongName)
+				WriteLogEx("Hoat Dong Thang 10","won the prize"..nPrizeType,"","","",szTongName)
 				i = i + 1
 			end
 		end
@@ -75,7 +75,7 @@ function draw_prize_cb(szKey, nKey1, nKey2, nCount)
 				nPrizeType = i
 				AddRelayShareData(RELAY_DB_08_OCT_EVENT_VIET, 0, 0, "", "", 0, szTongName, "dddd", nWishType, nPrizeType, nPrizeFlag, nDateFlag)
 				AddRelayShareData(RELAY_DB_08_OCT_EVENT_VIET, 0, 1, "", "", 0, tostring(nPrizeType), "ds", nDateFlag, szTongName)
-				WriteLogEx("Hoat Dong Thang 10","tróng gi¶i "..nPrizeType,"","","",szTongName)
+				WriteLogEx("Hoat Dong Thang 10","won the prize"..nPrizeType,"","","",szTongName)
 				i = i + 1
 			end
 		else
@@ -87,7 +87,7 @@ function draw_prize_cb(szKey, nKey1, nKey2, nCount)
 				nPrizeType = i
 				AddRelayShareData(RELAY_DB_08_OCT_EVENT_VIET, 0, 0, "", "", 0, szTongName, "dddd", nWishType, nPrizeType, nPrizeFlag, nDateFlag)
 				AddRelayShareData(RELAY_DB_08_OCT_EVENT_VIET, 0, 1, "", "", 0, tostring(nPrizeType), "ds", nDateFlag, szTongName)
-				WriteLogEx("Hoat Dong Thang 10","tróng gi¶i "..nPrizeType,"","","",szTongName)
+				WriteLogEx("Hoat Dong Thang 10","won the prize"..nPrizeType,"","","",szTongName)
 				i = i + 1
 			end
 		end

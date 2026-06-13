@@ -11,7 +11,7 @@ function OnUse(nItem)
 	end
 	local npcIndex = GetTargetNpc();
 	local sNpcName = GetNpcName(npcIndex);
-	if sNpcName ~= "Niªn thó" then
+	if sNpcName ~= "Year Beast" then
 		Talk(1,"","Ph¸o n¨m míi chØ cã thÓ sö dông ®èi víi Niªn Thó");
 		return 0;
 	end
@@ -51,13 +51,13 @@ function OnUse(nItem)
 	local bIsDropBox = SP_TASK_GROUP:GetTask(SP_TASK_GROUP.DropBox);
 	if bIsDropBox == 0 and nCount + 1 > 5 then
 		if nCount + 1 >= 20 then
-			gf_AddItemEx2({2,1,30626,1}, "B¶o R­¬ng Niªn Thó", "Event TÕt Kingsoft", "Ho¹t ®éng §¸nh Niªn Thó", 0, 1);
+			gf_AddItemEx2({2,1,30626,1}, "B¶o R­¬ng Niªn Thó", "Kingsoft New Year Event", "Ho¹t ®éng §¸nh Niªn Thó", 0, 1);
 			SP_TASK_GROUP:SetTask(SP_TASK_GROUP.DropBox, 1);
 			SetCurrentNpcSFX(npcIndex, 944, 2, 0, 6*18);
 			NpcChat(npcIndex, SP_NIANSHOU_TALK[random(getn(SP_NIANSHOU_TALK))]);
 		else
 			if 5 + random(15) == nCount + 1 then
-				gf_AddItemEx2({2,1,30626,1}, "B¶o R­¬ng Niªn Thó", "Event TÕt Kingsoft", "Ho¹t ®éng §¸nh Niªn Thó", 0, 1);
+				gf_AddItemEx2({2,1,30626,1}, "B¶o R­¬ng Niªn Thó", "Kingsoft New Year Event", "Ho¹t ®éng §¸nh Niªn Thó", 0, 1);
 				SP_TASK_GROUP:SetTask(SP_TASK_GROUP.DropBox, 1);
 				SetCurrentNpcSFX(npcIndex, 944, 2, 0, 6*18);
 				NpcChat(npcIndex, SP_NIANSHOU_TALK[random(getn(SP_NIANSHOU_TALK))]);

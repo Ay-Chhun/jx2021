@@ -3,9 +3,9 @@ Include("\\script\\lib\\globalfunctions.lua");
 --Ìá¹©³èÎï¼¼ÄÜµÄÎïÆ·ÅäÖÃ±í
 g_PetSkillTable = {
 	--1´óÀà	2¸±Àà	3Ï¸Àà	4¼¼ÄÜID	5¼¼ÄÜÃû³Æ
-	{2,	97,	8,	1257,	"§Ønh Phóc"},
-	{2,	97,	7,	1258,	"T­ Gi¶o"},
-	{2,	97,	6,	1260,	"Uy NhiÕp"},
+	{2,	97,	8,	1257,	"Dinh Phuc"},
+	{2,	97,	7,	1258,	"Tu Giao"},
+	{2,	97,	6,	1260,	"Uy Nhiep"},
 }
 
 function GetPetSkillConfig(nItemIdx)
@@ -59,7 +59,7 @@ function OnUse(nItemIdx)
 		return
 	else
 		Say("Thó c­ng ®· häc 1 kü n¨ng, häc kü n¨ng míi sÏ thay thÕ cho kü n¨ng hiÖn t¹i. §ång ı thay thÕ?", 
-			2, "§óng/#yes(".. nConfigIdx ..")", "Sai/no")
+			2, "Agree/#yes(".. nConfigIdx ..")", "Sai/no")
 	end;
 end;
 

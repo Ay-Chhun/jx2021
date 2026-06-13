@@ -3,7 +3,7 @@ Include("\\script\\online_activites\\2010_11\\activity_03\\head.lua");
 
 RK_results =
 {
-	"Rêi khái/gf_DoNothing",
+	"Leave/gf_DoNothing",
 	"Thêi gian kh«ng cßn nhiÒu n÷a, h·y nhanh chãng thu thËp nh÷ng nguyªn liÖu ®ã cho ta",
 	"H«m nay c¸c h¹ ®· ®æi vËt phÈm nµy råi"
 }
@@ -55,13 +55,13 @@ function RK_buyItem(index)
 end
 
 function RK_showItemList()
-	local head = "Mua ®¹o cô thu thËp";
+	local head = "Buy collection tools";
 	local menu = {
-		"Mua ThiÕt Phñ (5 b¹c)/#RK_buyItem(1)",
-		"Mua Cuèc (5 b¹c)/#RK_buyItem(2)",
-		"Mua Cuèc Chim (5 b¹c)/#RK_buyItem(3)",
-		"Mua Cuèc Thuèc (5 b¹c)/#RK_buyItem(4)",
-		"Tho¸t/gf_DoNothing"
+		"Buy Iron Hatchet (5 silver)/#RK_buyItem(1)",
+		"Buy Hoe (5 silver)/#RK_buyItem(2)",
+		"Buy Pickaxe (5 silver)/#RK_buyItem(3)",
+		"Buy Medicine Hoe (5 silver)/#RK_buyItem(4)",
+		"Exit/gf_DoNothing"
 	};
 	Say(head, getn(menu), menu);
 end
@@ -74,7 +74,7 @@ function main()
 		"Ta muèn nép 300 Lóa/#RK_exchange(2)",
 		"Ta muèn nép 180 §¸/#RK_exchange(3)",
 		"Ta muèn nép 180 S¾t/#RK_exchange(4)",
-		"Mua ®¹o cô thu thËp/RK_showItemList",
+		"Buy collection tools/RK_showItemList",
 		"Ta chØ ghÐ ngang/gf_DoNothing"
 		};
 	Say(head, getn(menu), menu);

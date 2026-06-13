@@ -34,7 +34,7 @@ end;
 function talk_five()
     local szMsg = {
         "H¹ HÇu CÇm b¶o v·n bèi ®Õn th«ng b¸o vÒ m¶nh S¬n Hµ X· T¾c cã kh¶ n¨ng r¬i vµo tay Xi Háa gi¸o, ®©y lµ th­ cña «ng ta, mêi tiÒn bèi xem qua!",
-        "§a t¹ tiÓu huynh ®Ö!",
+        "Many thanks, young brother!",
         "Cßn nhiÒu ng­êi cÇn ph¶i th«ng b¸o n÷a, v·n bèi ®i ®©y!"
     };
     local nStep = 0;

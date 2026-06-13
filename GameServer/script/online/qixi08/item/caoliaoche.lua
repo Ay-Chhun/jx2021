@@ -18,7 +18,7 @@ function check_the_horse()
 		Talk(1,"",g_NpcInfo.."Cho ngùa ¨n no cÇn cã <color=yellow>3000 vµng<color>, trªn ng­êi ng­¬i hiÖn giê kh«ng ®ñ.");
 		return 0;
 	end
-	local tHorseId = {{"B¹ch NghÜa",0,105,49},{"HiÖp Dùc",0,105,50},{"ChiÕn M· Nguyªn So¸i cao cÊp (tr¾ng)",0,105,51},{"ChiÕn M· Nguyªn So¸i cao cÊp (®en)",0,105,52}};
+	local tHorseId = {{"B¹ch NghÜa",0,105,49},{"Heroic Spirit",0,105,50},{"ChiÕn M· Nguyªn So¸i cao cÊp (tr¾ng)",0,105,51},{"ChiÕn M· Nguyªn So¸i cao cÊp (®en)",0,105,52}};
 	local nId1,nId2,nId3 = GetPlayerEquipInfo(10);
 	local nCheck = 0;
 	for i=1,getn(tHorseId) do

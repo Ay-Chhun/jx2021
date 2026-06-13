@@ -21,7 +21,7 @@ function talk_to_npc()
 --			Say("<color=green>Chñ l«i ®µi<color>: Lo¹i h×nh tranh ®o¹t t­ c¸ch c«ng thµnh tuÇn nµy lµ "..szMethod..", thø 6 h·y quay l¹i ®©y tham gia.",0);
 --		else
 			local tb_dialog = {
-				"Rêi khái/no_say",
+				"Leave/no_say",
 			};
 			if nHour < 19 or (nHour == 19 and nMin < 30) then
 				Say("<color=green> Chñ l«i ®µi<color>: §Ó cã t­ c¸ch c«ng thµnh vµo tuÇn nµy, quı bang ph¶i tham gia <color=green>"..szMethod.."<color>. Xin mêi quı bang héi mau mau chuÈn bŞ.!",0);
@@ -70,27 +70,27 @@ end
 function kan_shuoming()
 	Say("Bªn d­íi lµ thuyÕt minh L«i ®µi C«ng thµnh chiÕn.",
 		5,
-		"§iÒu kiÖn b¸o danh/baoming_shuoming",
-		"Vµo l«i ®µi/jinru_shuoming",
+		"Registration conditions/baoming_shuoming",
+		"Enter the arena/jinru_shuoming",
 		"Thêi h¹n L«i ®µi/shixian_shuoming",
 		"Quy t¾c ph©n th¾ng b¹i L«i ®µi/shengfu_shuoming",
-		"Rêi khái/no_say")
+		"Leave/no_say")
 end
 
 function baoming_shuoming()
-	Say("ChØ cã bang chñ nhËn chøc 7 ngµy trë lªn, tæ ®éi ®ñ 8 ng­êi nhËp bang trong 7 ngµy trë lªn vµ ®éi viªn ph¶i ®¹t cÊp 80 trë lªn míi ®­îc b¸o danh, ®ång thêi ph¶i cã th­ tiÕn cö lÊy ë Thµnh §« Chu ThiÖn Nh©n, tham kh¶o thêi gian b¸o danh trong Quy tr×nh L«i §µi.", 2, "trë l¹i/kan_shuoming", "Rêi khái/no_say")
+	Say("ChØ cã bang chñ nhËn chøc 7 ngµy trë lªn, tæ ®éi ®ñ 8 ng­êi nhËp bang trong 7 ngµy trë lªn vµ ®éi viªn ph¶i ®¹t cÊp 80 trë lªn míi ®­îc b¸o danh, ®ång thêi ph¶i cã th­ tiÕn cö lÊy ë Thµnh §« Chu ThiÖn Nh©n, tham kh¶o thêi gian b¸o danh trong Quy tr×nh L«i §µi.", 2, "trë l¹i/kan_shuoming", "Leave/no_say")
 end
 
 function jinru_shuoming()
-	Say("Tham gia trËn ®Êu ph¶i do Bang chñ, phã bang chñ hoÆc Tr­ëng l·o dÉn d¾t ®éi, tÊt c¶ thµnh viªn bæn bang ph¶i tõ cÊp 80 trë lªn, vµ ph¶i nhËp bang tõ 7 ngµy trë lªn? (kh«ng h¹n chÕ mét nhãm ®ñ 8 ng­êi vµo L«i ®µi)", 2, "trë l¹i/kan_shuoming", "Rêi khái/no_say")
+	Say("Tham gia trËn ®Êu ph¶i do Bang chñ, phã bang chñ hoÆc Tr­ëng l·o dÉn d¾t ®éi, tÊt c¶ thµnh viªn bæn bang ph¶i tõ cÊp 80 trë lªn, vµ ph¶i nhËp bang tõ 7 ngµy trë lªn? (kh«ng h¹n chÕ mét nhãm ®ñ 8 ng­êi vµo L«i ®µi)", 2, "trë l¹i/kan_shuoming", "Leave/no_say")
 end
 
 function shixian_shuoming()
-	Say("Thêi h¹n L«i ®µi ®¬n trËn lµ 7 phót, sau ®ã cã 3 phót nghØ. Trong 3 phót, ®éi th¾ng trËn ph¶i chuÈn bŞ tiÕp tôc vµo khu vùc, ®éi míi khiªu chiÕn trong 3 phót ph¶i vµo khu vùc, nÕu kh«ng xem nh­ tõ bá quyÒn lîi. TÊt nhiªn sÏ cã hÖ thèng th«ng b¸o thêi gian vµo khu vùc.", 2, "trë l¹i/kan_shuoming", "Rêi khái/no_say")
+	Say("Thêi h¹n L«i ®µi ®¬n trËn lµ 7 phót, sau ®ã cã 3 phót nghØ. Trong 3 phót, ®éi th¾ng trËn ph¶i chuÈn bŞ tiÕp tôc vµo khu vùc, ®éi míi khiªu chiÕn trong 3 phót ph¶i vµo khu vùc, nÕu kh«ng xem nh­ tõ bá quyÒn lîi. TÊt nhiªn sÏ cã hÖ thèng th«ng b¸o thêi gian vµo khu vùc.", 2, "trë l¹i/kan_shuoming", "Leave/no_say")
 end
 
 function shengfu_shuoming()
-	Say("Quy t¾c duy nhÊt cña L«i ®µi lµ khi toµn bé thµnh viªn tiÒu ®éi bŞ ®¸nh b¹i, L«i ®µi buéc ph¶i kÕt thóc. NÕu trong thêi h¹n kh«ng ph©n th¾ng b¹i, thµnh viªn ®éi nµo cßn l¹i nhiÒu h¬n sÏ th¾ng trËn, sè thµnh viªn cßn l¹i cña hai ®éi t­¬ng ®­¬ng th× ®éi cã tæng ®iÓm kinh nghiÖm cao h¬n sÏ th¾ng, nÕu ®iÓn kinh nghiÖm còng t­¬ng ®­¬ng th× sÏ chän ngÉu nhiªn quyÕt ®Şnh ®éi nµo sÏ nhËn ®uîc t­ c¸ch C«ng thµnh.", 2, "trë l¹i/kan_shuoming", "Rêi khái/no_say")
+	Say("Quy t¾c duy nhÊt cña L«i ®µi lµ khi toµn bé thµnh viªn tiÒu ®éi bŞ ®¸nh b¹i, L«i ®µi buéc ph¶i kÕt thóc. NÕu trong thêi h¹n kh«ng ph©n th¾ng b¹i, thµnh viªn ®éi nµo cßn l¹i nhiÒu h¬n sÏ th¾ng trËn, sè thµnh viªn cßn l¹i cña hai ®éi t­¬ng ®­¬ng th× ®éi cã tæng ®iÓm kinh nghiÖm cao h¬n sÏ th¾ng, nÕu ®iÓn kinh nghiÖm còng t­¬ng ®­¬ng th× sÏ chän ngÉu nhiªn quyÕt ®Şnh ®éi nµo sÏ nhËn ®uîc t­ c¸ch C«ng thµnh.", 2, "trë l¹i/kan_shuoming", "Leave/no_say")
 end
 
 
@@ -103,7 +103,7 @@ function canjia_leitai()
 		local nMin = 0
 		local nSec = 0
 		nMin, nSec = KMissionRecordRoom:GetSignLeftTime(CITY_SIGNUP_MAP_ID)
-		Say("B©y giê lµ thêi gian b¸o danh C«ng thµnh L«i ®µi, b¹n muèn tham gia?\rThêi gian b¸o danh cßn <color=yellow>"..nMin.." Phót "..nSec.." gi©y<color>", 3, "B¸o danh/signup_yes", "KiÓm tra c¸c ®éi b¸o danh/view_sign_team", "Ta chØ ghĞ ngang qua th«i./no_say")
+		Say("B©y giê lµ thêi gian b¸o danh C«ng thµnh L«i ®µi, b¹n muèn tham gia?\rThêi gian b¸o danh cßn <color=yellow>"..nMin.." minutes"..nSec.." seconds<color>", 3, "Register/signup_yes", "KiÓm tra c¸c ®éi b¸o danh/view_sign_team", "Ta chØ ghĞ ngang qua th«i./no_say")
 	elseif nState == VIEW_TIME then
 		Talk(1,"","§ang s¾p xÕp b¶ng thi ®Êu ngÉu nhiªn. Xin ®îi trong gi©y l¸t....")
 	elseif nState == PREPARE_TIME then
@@ -172,7 +172,7 @@ function ViewFightState()
 	local nSec = 0
 	nMin, nSec = KMissionRecordRoom:GetPrepareLeftTime(CITY_SIGNUP_MAP_ID)
 	szMsg = replace(szMsg, "|" ,"-")
-	Say("G©y giê lµ thêi gian chuÈn bŞ cho c¸c ®éi tham gia C«ng thµnh L«i ®µi, mêi hai ®éi tham gia thi ®Êu tiÕn vµo L«i ®µi, ®éi kh«ng tham gia xin nhÊp vµo quan s¸t trËn ®Êu ®Ó vµo L«i ®µi. Thêi gian chuÈn bŞ cßn <color=green>"..nMin.." Phót "..nSec.."gi©y<color>\n<color=red>kh«ng cã ®éi bá trËn, qu¸ thêi gian chuÈn bŞ vÉn ch­a vµo thi ®Êu xem nh­ bá cuéc<color>\n"..szMsg, 
+	Say("G©y giê lµ thêi gian chuÈn bŞ cho c¸c ®éi tham gia C«ng thµnh L«i ®µi, mêi hai ®éi tham gia thi ®Êu tiÕn vµo L«i ®µi, ®éi kh«ng tham gia xin nhÊp vµo quan s¸t trËn ®Êu ®Ó vµo L«i ®µi. Thêi gian chuÈn bŞ cßn <color=green>"..nMin.." minutes"..nSec.."gi©y<color>\n<color=red>kh«ng cã ®éi bá trËn, qu¸ thêi gian chuÈn bŞ vÉn ch­a vµo thi ®Êu xem nh­ bá cuéc<color>\n"..szMsg, 
 		2, 
 		"\nTiÕn vµo L«i ®µi/EnterFight", 
 --		"ÎÒÒª¹ÛÕ½/EnterView", 
@@ -243,7 +243,7 @@ function EnterFight()
 	end
 	-- ¼ÆËã½øÈëÄÇ¸ö³¡µØ
 	local nPlaceIdx = ceil(nTeamIdx / 2)
-	Say("§èi thñ cña ng­¬i lµ "..szFightTeam..", Muèn vµo trËn kh«ng??", 2, "Vµo/enter_yes", "Ta ®ang chuÈn bŞ/no_say")
+	Say("§èi thñ cña ng­¬i lµ "..szFightTeam..", Muèn vµo trËn kh«ng??", 2, "Enter/enter_yes", "I am preparing/no_say")
 end
 
 function enter_yes()
@@ -426,7 +426,7 @@ function CanEnter()
 		return 0
 	end
 	if nTeamSize + nJoinCount > 8 then
-		Talk(1,"","Quı bang ®· cã <color=yellow>"..nJoinCount.." <color> ®éi viªn trong L«i ®µi råi, sè thµnh viªn ®éi b¹n hiÖn lµ <color=yellow>"..nTeamSize.."ng­êi<color>, L«i ®µi C«ng thµnh chiÕn cho phĞp nhiÒu nhÊt <color=yellow>8 ng­êi<color> vµo.")
+		Talk(1,"","The elite guild already has <color=yellow>"..nJoinCount.." <color> ®éi viªn trong L«i ®µi råi, sè thµnh viªn ®éi b¹n hiÖn lµ <color=yellow>"..nTeamSize.."ng­êi<color>, L«i ®µi C«ng thµnh chiÕn cho phĞp nhiÒu nhÊt <color=yellow>8 ng­êi<color> vµo.")
 		return 0
 	end
 	
@@ -587,7 +587,7 @@ function get_type(szKey, nKey1, nKey2, nCount)
 --	else
 		szMethod = tSignMethod[nType];
 		local tb_dialog = {
-			"Rêi khái/no_say",
+			"Leave/no_say",
 		};
 		if nHour < 19 or (nHour == 19 and nMin < 30) then
 			Say("<color=green> Chñ l«i ®µi<color>: §Ó cã t­ c¸ch c«ng thµnh vµo tuÇn nµy, quı bang ph¶i tham gia <color=green>"..szMethod.."<color>. Xin mêi quı bang héi mau mau chuÈn bŞ.!",0);
@@ -599,7 +599,7 @@ function get_type(szKey, nKey1, nKey2, nCount)
 			Say("L«i ®µi C«ng thµnh chiÕn lµ trËn ®Êu giµnh t­ c¸ch C«ng thµnh chiÕn gi÷a c¸c bang héi.", getn(tb_dialog), tb_dialog);
 		else--
 			if nHour == 19 and nMin < 40 then
-				tinsert(tb_dialog, 1, "B¸o danh/baobing_jingtoutiaozhanling");
+				tinsert(tb_dialog, 1, "Register/baobing_jingtoutiaozhanling");
 				Say("<color=green> Chñ l«i ®µi<color>: HiÖn t¹i lµ thêi gian ®Êu gi¸ khiªu chiÕn lÖnh, ng­¬i muèn tham gia?", getn(tb_dialog), tb_dialog);
 			elseif nHour == 19 or (nHour == 20 and nMin < 10) then
 				tinsert(tb_dialog, 1, "Ta muèn ®Êu gi¸ khiªu chiÕn lÖnh/jingtou_tiaozhanling");
@@ -610,9 +610,9 @@ function get_type(szKey, nKey1, nKey2, nCount)
 				if szGong == "" then	--Èç¹ûÃ»ÓĞ¹¥³Ç·½
 					if SubWorldID2Idx(CITY_ID_CD) >= 0 then	--Ö»ÔÚÄ¿±ê³ÇÊĞµØÍ¼Ëù´¦µÄ·şÎñÆ÷ÉÏ·¢ÏûÏ¢
 						if szShou ~= "" then
-							Say("<color=green> Chñ l«i ®µi<color>: Do v×"..tSignUpCityName[CITY_ID_CD].." C«ng thµnh chiÕn kh«ng cã phe c«ng"..tSignUpCityName[CITY_ID_CD].."Thµnh tiÕp tôc do "..szShou.." bang héi chiÕm lÜnh", 0);
+							Say("<color=green> Arena Master<color>: Because"..tSignUpCityName[CITY_ID_CD].." C«ng thµnh chiÕn kh«ng cã phe c«ng"..tSignUpCityName[CITY_ID_CD].."Thµnh tiÕp tôc do "..szShou.." bang héi chiÕm lÜnh", 0);
 						else
-							Say("<color=green> Chñ l«i ®µi<color>: Do v×"..tSignUpCityName[CITY_ID_CD].." C«ng thµnh chiÕn kh«ng cã phe c«ng vµ phe thñ, v× vËy "..tSignUpCityName[CITY_ID_CD].." C«ng thµnh chiÕn t¹m dõng 1 trËn", 0);
+							Say("<color=green> Arena Master<color>: Because"..tSignUpCityName[CITY_ID_CD].." C«ng thµnh chiÕn kh«ng cã phe c«ng vµ phe thñ, v× vËy "..tSignUpCityName[CITY_ID_CD].." C«ng thµnh chiÕn t¹m dõng 1 trËn", 0);
 						end
 					end
 				else

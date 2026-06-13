@@ -27,7 +27,7 @@ function FinishDoll()
 	-- É±ËÀÌæÉíÍÞÍÞ
 	KillFollower()
 	if type > 2 or type <= 0 then
-		WriteLog("[KÕt h«n b¸o lçi]:"..GetName().."Tr¹ng th¸i bÞ lçi. GetTask(2013):"..GetTask(TASKVAR_DOLLTIME));
+		WriteLog("[Marriage Error Report]:"..GetName().."Status error. GetTask(2013):"..GetTask(TASKVAR_DOLLTIME));
 		return 0;
 	end;
 	local doll_exp = floor( nDollExp/CHUNHUNGUO_TYPE_SCALE[type])
@@ -44,7 +44,7 @@ function FinishDoll()
 			SetItemParam(item, 2, self_code)	-- ×Ô¼ºÃû×Ö±àÂë
 		end
 	end
-	WriteLog("[KÕt h«n]:"..GetName().."1 Liªn Lý qu¶ chøa:"..doll_exp);
+	WriteLog("[Marriage]:"..GetName().."1 Liªn Lý qu¶ chøa:"..doll_exp);
 end
 
 -- ¼ì²éÌæÉíÍÞÍÞÊ±¼äÊÇ·ñµ½»òÕßÅäÅ¼ÊÇ·ñÉÏÏß£¬Èç¹ûÊÇÔòÐÞ¸ÄÌæÉí×´Ì¬±äÁ¿¡¢Éú³É¾­ÑéÎïÆ·²¢É±ËÀÌæÉíÍÞÍÞ

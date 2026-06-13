@@ -38,13 +38,13 @@ function OnDeath(index)
 	--¿ªÊ¼Ôö¼ÓÎïÆ·
 	local ash_num = Tb_ma_monster_prize[monster_diff][prize_level][4]
 	if AddItem(2,1,584,ash_num) == 1 then
-		Msg2Player("B¹n nhËn ®­îc "..ash_num.." L­u tinh Chi Sa!")
+		Msg2Player("B¹n nhËn ®­îc "..ash_num.." Meteor Sand!")
 	end
 	local frag_num = Tb_ma_monster_prize[monster_diff][prize_level][5]
 	for i = 1,frag_num do
 		AddItem(2,1,random(568,571),1)
 	end
-	Msg2Player("B¹n nhËn ®­îc "..frag_num.." m¶nh vì!")
+	Msg2Player("B¹n nhËn ®­îc "..frag_num.." fragments!")
 
 	--Ôö¼Ó¾­Ñé
 	local exp_base_num = 1

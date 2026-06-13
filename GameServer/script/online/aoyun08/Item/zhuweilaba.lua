@@ -18,7 +18,7 @@ function OnUse()
 				"Chóc ®¹i héi thµnh c«ng tèt ®Ñp!/#aoyun_zhuwei(1)",
 				"Chóc Vâ L©m ngµy cµng ph¸t triÓn!/#aoyun_zhuwei(2)",
 				"Th¸nh Háa m·i bÊt diÖt!/#aoyun_zhuwei(3)",
-				"§Ó ph¸t sau/nothing")
+				"Shout later/nothing")
 		else
 			Talk(1,"","<color=green>Loa cæ vò<color>: §uèc vÉn ch­a chuyÓn ®Õn ®©y.")
 		end

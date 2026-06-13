@@ -19,7 +19,7 @@ local nTimeState = 0;
 		ReportBattleState(nTimeState);
 	--±»»¸Ω· ¯
 	elseif nMapState == 3 then 
-		Msg2MSAll(MULIT_MISSION_ID, "Thi Æ u k’t thÛc!");
+		Msg2MSAll(MULIT_MISSION_ID, "The match is over!");
 		StopMissionTimer(MULIT_MISSION_ID, MULTI_TIME_ID1);
 	end;
 end;
@@ -86,7 +86,7 @@ local PlayerIndexTab = {};
 		
 		PlayerIndex = OldPlayer
 		
-		news_str = "Thi Æ u ch›nh th¯c bæt Æ«u!";
+		news_str = "The match officially begins!";
 		Msg2MSAll(MULIT_MISSION_ID,news_str);             
 		RunMission(MULIT_MISSION_ID);
 		return
@@ -229,7 +229,7 @@ local Winner_News = {};
 	if (nMin == 0) then
 		Msg2MSAll(MULIT_MISSION_ID, "Giai Æoπn chi’n Æ u: Thi Æ u Æang ti’n hµnh, trong trÀn hi÷n c„"..nTotalFigtherNum.." Æ u thÒ, thÍi gian thi Æ u cﬂn"..nSec.." gi©y.");
 	elseif (nSec == 0) then
-		Msg2MSAll(MULIT_MISSION_ID, "Giai Æoπn chi’n Æ u: Thi Æ u Æang ti’n hµnh, trong trÀn hi÷n c„"..nTotalFigtherNum.." Æ u thÒ, thÍi gian thi Æ u cﬂn"..nMin.." phÛt.");
+		Msg2MSAll(MULIT_MISSION_ID, "Giai Æoπn chi’n Æ u: Thi Æ u Æang ti’n hµnh, trong trÀn hi÷n c„"..nTotalFigtherNum.." Æ u thÒ, thÍi gian thi Æ u cﬂn"..nMin.." minutes.");
 	--else
 		--Msg2MSAll(MULIT_MISSION_ID, "’Ω∂∑Ω◊∂Œ£∫±»»¸Ω¯––÷–£¨≥°µÿ…œ…–”–"..nTotalFigtherNum.."√˚Ω«…´£¨¿Î±»»¸Ω· ¯ªπ”–"..nMin.."∑÷"..nSec.."√Î°£");
 	end;

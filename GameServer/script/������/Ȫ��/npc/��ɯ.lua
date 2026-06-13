@@ -25,7 +25,7 @@ tbVoteMaterials = {
 function main()
 	local nDate = tonumber(date("%Y%m%d"))
 	if gf_CheckEventDateEx(53) == 1 then
-		Say("#<color=green>Lasa<color>: b¸n Socola lÔ t×nh nh©n",2,"Ta ®Õn mua Socola lÔ t×nh nh©n/buy_chocolate","Ta chØ ghÐ ch¬i/do_nothing");
+		Say("#<color=green>Lasa<color>: sells Valentine's Day Chocolate",2,"I have come to buy Valentine's Day Chocolate/buy_chocolate","Ta chØ ghÐ ch¬i/do_nothing");
 		return 1;
 	end
 	if gf_CheckEventDateEx(57) == 1 then
@@ -33,7 +33,7 @@ function main()
 		return 1;
 	end
 	if gf_CheckEventDateEx(VET_ACTIVITY_JIXIANG_RUYI) == 1 then
-		Say("<color=green>La Sa<color>: Gi¸ng sinh vui vÎ!", getn(TABLE_JIXIANG_RUYI), TABLE_JIXIANG_RUYI);
+		Say("<color=green>La Sa<color>: Merry Christmas!", getn(TABLE_JIXIANG_RUYI), TABLE_JIXIANG_RUYI);
 		return 1;
 	end
 	if gf_CheckEventDateEx(147) == 1 then
@@ -145,7 +145,7 @@ function DuaTop_NhanThuong(nRank)
 		TraoMatTichCaoCap(5,nRoute,15)
 		LIB_Award:Award({item = {{gdp={2,1,1051,3}, name="Bao Thiªn Th¹ch Tinh Th¹ch"}}})
 		LIB_Award:Award({item = {{gdp={2,1,1051,500}, name="Thiªn Kiªu LÖnh"}}})
-		LIB_Award:Award({item = {{gdp={2,1,1001,10}, name="Hßa ThÞ BÝch"}}})
+		LIB_Award:Award({item = {{gdp={2,1,1001,10}, name="Heshi Jade"}}})
 		LIB_Award:Award({item = {{gdp={0,105,30014,2}, name="B¸o Vµng"}}})
 	elseif nRank == 2 then
 		TraoChienCuong(13)
@@ -155,8 +155,8 @@ function DuaTop_NhanThuong(nRank)
 		TraoMatTichCaoCap(5,nRoute,15)
 		LIB_Award:Award({item = {{gdp={2,1,1051,1}, name="Bao Thiªn Th¹ch Tinh Th¹ch"}}})
 		LIB_Award:Award({item = {{gdp={2,1,1051,200}, name="Thiªn Kiªu LÖnh"}}})
-		LIB_Award:Award({item = {{gdp={2,1,1001,5}, name="Hßa ThÞ BÝch"}}})
-		LIB_Award:Award({item = {{gdp={0,105,30013,1}, name="B¸o §en"}}})
+		LIB_Award:Award({item = {{gdp={2,1,1001,5}, name="Heshi Jade"}}})
+		LIB_Award:Award({item = {{gdp={0,105,30013,1}, name="Black Leopard"}}})
 	elseif nRank == 3 then
 		TraoChienCuong(10)
 		receive_DieuDuong_Top1_faction_01(0,1)
@@ -165,8 +165,8 @@ function DuaTop_NhanThuong(nRank)
 		TraoMatTichCaoCap(5,nRoute,15)
 		LIB_Award:Award({item = {{gdp={2,1,3356,1}, name="Tói Thiªn Th¹ch Tinh Th¹ch"}}})
 		LIB_Award:Award({item = {{gdp={2,1,1051,100}, name="Thiªn Kiªu LÖnh"}}})
-		LIB_Award:Award({item = {{gdp={2,1,1001,2}, name="Hßa ThÞ BÝch"}}})
-		LIB_Award:Award({item = {{gdp={0,105,30039,1}, name="Thá §en"}}})
+		LIB_Award:Award({item = {{gdp={2,1,1001,2}, name="Heshi Jade"}}})
+		LIB_Award:Award({item = {{gdp={0,105,30039,1}, name="Black Rabbit"}}})
 	end
 	gf_SetTaskByte(TSK_DUATOPSERVERCANHAN,2,1)
 	Msg2Player("C¸c h¹ ®· nhËn th­ëng thµnh c«ng")
@@ -270,7 +270,7 @@ function DuaTop_UngHo_01(nBang)
 	for i = 1, 5 do
 		tinsert(tbSay,format(tbVoteMaterials[i][3].."/#DuaTop_UngHo_02(%d,%d)",i,nBang))
 	end
-	tinsert(tbSay,"Rêi Khái/gf_DoNothing")
+	tinsert(tbSay,"Leave/gf_DoNothing")
 	Say(szNpcName.."C¸c h¹ muèn b×nh chän b»ng h×nh thøc nµo?",getn(tbSay),tbSay)
 end
 
@@ -294,7 +294,7 @@ function DuaTop_UngHo_02(nType,nBang)
 	LIB_txtData:SaveMultiColumn()
 	LIB_Award:PayMaterial(tbVoteMaterials[nType][2])
 	Msg2Player("C¸c h¹ ®· b×nh chän thµnh c«ng cho bang héi "..LIB_txtData.tbTextData[nBang][1])
-	AddGlobalNews("Sù kiÖn §ua Top Bang Héi Liªn Server: Bang Héi "..LIB_txtData.tbTextData[nBang][1].." ®· ®­îc b×nh chän "..tbVoteMaterials[nType][1].." ®iÓm!")
+	AddGlobalNews("Cross-Server Top Guild Event: Guild"..LIB_txtData.tbTextData[nBang][1].." has been voted"..tbVoteMaterials[nType][1].." ®iÓm!")
 	DuaTop_UngHo_01(nBang)
 end
 

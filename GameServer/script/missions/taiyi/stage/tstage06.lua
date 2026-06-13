@@ -5,7 +5,7 @@ Include("\\script\\online\\qianhe_tower\\qht_head.lua")
 --µÚ6¹Ø£º¿ºÁúÓÐ»Ú
 -----------------------------------------------------------------
 tStage06 = {
-	name = "Kh¸ng Long H÷u Hèi",
+	name = "Subduing the Dragon Has Regret",
 	nStageId = 6,
 	maxsecond = 120 * 60,
 	actionsType = "second",
@@ -20,12 +20,12 @@ end
 
 -----------------------------------------------------------------
 tStage06_1 = {
-	name = "Hµng Long H÷u Hèi-Khu chuÈn bÞ",
+	name = "Subduing the Dragon Has Regret - Preparation area",
 	nStageId = TOTAL_STAGE + tStage06.nStageId*3 + 1,
 	maxsecond = 5*60,
 	actionsType = "second",
 	guage = {
-		msg = "Hµng Long H÷u Hèi-Khu chuÈn bÞ",
+		msg = "Subduing the Dragon Has Regret - Preparation area",
 		time = 5 * 60,
 		cyc = 0,
 		id = 2,
@@ -55,7 +55,7 @@ end
 function tStage06_1:CheatMode()
 	local self = tStage06_1;
 	if GetItemCount(TYT_IB_ITEM[2], TYT_IB_ITEM[3], TYT_IB_ITEM[4]) < 1 then
-		Talk(1, "", "<color=green>Méc QuÕ Anh<color>: Trªn ng­êi b¹n"..TYT_IB_ITEM[1].."Kh«ng ®ñ.");
+		Talk(1, "", "<color=green>Méc QuÕ Anh<color>: Trªn ng­êi b¹n"..TYT_IB_ITEM[1].."Not enough.");
 		return 0;
 	end
 	if 1 ~= DelItem(TYT_IB_ITEM[2], TYT_IB_ITEM[3], TYT_IB_ITEM[4], 1) then return 0; end
@@ -73,18 +73,18 @@ function tStage06_1:NpcMain()
 	
 	if not tStage06_1.sel_NORMAL then
 		tStage06_1.sel_NORMAL = {
-			"Më ¶i 3: Hµng Long H÷u Hèi/#tStage06_1.BeginFight()",
+			"Open Gate 3: Subduing the Dragon Has Regret/#tStage06_1.BeginFight()",
 			--"H×nh thøc sao chÐp (CÇn "..TYT_IB_ITEM[1].."*1)/#tStage06_1.CheatMode()",
 			"Ta muèn rêi khái ¶i/TY_ConfirmClose",
-			"Hñy bá/nothing",
+			"Cancel/nothing",
 		};
 	end
 	
 	if not tStage06_1.sel_HARD then
 		tStage06_1.sel_HARD = {
-			"Më ¶i 3: Hµng Long H÷u Hèi/#tStage06_1.BeginFight()",
+			"Open Gate 3: Subduing the Dragon Has Regret/#tStage06_1.BeginFight()",
 			"Ta muèn rêi khái ¶i/TY_ConfirmClose",
-			"Hñy bá/nothing",
+			"Cancel/nothing",
 		};
 	end
 	
@@ -110,7 +110,7 @@ function tStage06_1:Init()
 	TY_ClearColdDown();
 	self:CreateNpcs();
 	this.msCamp:turnPlayer(0, TY_SetPlayerPos, tPlayerPos[self.father.nStageId][1]);
-	this.msCamp:turnPlayer(0, function() HeadMsg2Player("§éi tr­ëng vµ Méc QuÕ Anh ®èi tho¹i ®Ó tiÕp tôc ¶i!") end);
+	this.msCamp:turnPlayer(0, function() HeadMsg2Player("Team leader, talk to Mu Guiying to continue the stage!") end);
 end
 
 function tStage06_1:OnPlayerDeath()
@@ -139,12 +139,12 @@ tStage06_1.triggers = {
 --¿ºÁúÓÐ»Ú-¿ªÆô
 -------------------------------------------------------------------
 tStage06_2 = {
-	name = "Kh¸ng Long H÷u Hèi",
+	name = "Subduing the Dragon Has Regret",
 	nStageId = TOTAL_STAGE + tStage06.nStageId*3 + 2,
 	maxsecond = 5*60,
 	actionsType = "second",
 	guage = {
-		msg = "Kh¸ng Long H÷u Hèi",
+		msg = "Subduing the Dragon Has Regret",
 		time = 5 * 60,
 		cyc = 0,
 		id = 2,
@@ -560,12 +560,12 @@ tStage06_2.triggers = {
 --½áÊø
 -----------------------------------------------------------------
 tStage06_3 = {
-	name = "KÕt thóc",
+	name = "End",
 	nStageId = TOTAL_STAGE + tStage06.nStageId*3 + 3,
 	maxsecond = 5*60,
 	actionsType = "second",
 	guage = {
-		msg = "Khu kÕt thóc",
+		msg = "End area",
 		time = 5 * 60,
 		cyc = 0,
 		id = 2,
@@ -608,7 +608,7 @@ function tStage06_3:NpcTalk()
 			{nYlfhIdx, "D­¬ng huynh, ng­êi lµ trô cét cña nam triÒu nh­ng l¹i bÞ gian thÇn h·m h¹i, nguyÖn dïng c¸i chÕt ®Ó chøng tá. NÕu nh­ tr­íc ®©y ng­êi quy thuËn §¹i Liªu ta th× sÏ kh«ng ra n«ng nçi nµy!"},
 			{nYzbIdx, "Gia LuËt Phi Hång! Kh«ng cÇn ng­¬i nãi nh÷ng lêi gi¶ dèi ®ã! H·y mau giao nép hµi cèt cña Gia Gia ra ®©y!"},
 			{nYlfhIdx, "C¸i g×? C¸c ng­¬i ®õng hßng c­íp hµi cèt cña D­¬ng huynh ®i! Tªn ranh con, ng­¬i t­ëng r»ng ta sî c¸c ng­¬i µ?"},
-			{tNpcs.yy[2], "Dõng... tay"},
+			{tNpcs.yy[2], "Stop... your hand"},
 			{nYlfhIdx, "Ch¼ng lÏ lµ D­¬ng huynh?"},
 			{tNpcs.yy[2], "ChÝnh x¸c, ®ã lµ cè nh©n."},
 			{{nYzbIdx, nMgyIdx}, "Gia Gia!"},
@@ -662,9 +662,9 @@ function tStage06_3:NpcMain()
 		end
 		local strTab = {
 			"Ta muèn rêi khái ¶i/TY_CloseMission",
-			"Hñy bá/nothing",
+			"Cancel/nothing",
 		};
-		Say("<color=green>Méc QuÕ Anh<color>: KÕt thóc ¶i.", getn(strTab), strTab);
+		Say("<color=green>Muc Que Anh<color>: End the gate.", getn(strTab), strTab);
 	end
 end
 

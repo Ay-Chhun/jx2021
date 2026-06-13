@@ -14,38 +14,38 @@ tNpcName = {
 		};
 
 tNumTab = {	--Òª²»ÒªÓÃ´óÐ´ÄØ£¿Ò¼·¡ÈþËÁÎéÂ½Æâ°ÆéN
-		"ThËp",
-		"chÝn",
-		"t¸m",
-		"b¶y",
-		"s¸u",
-		"Ngò ",
-		"bèn",
+		"Ten",
+		"nine",
+		"eight",
+		"seven",
+		"six",
+		"Wu",
+		"ben",
 		"ba",
 		"hai",
 		"mét",
 		};
 
 ItemTab = {
-	{2,1,322,1,"C¸nh A Tu La"},--1
+	{2,1,322,1,"Asura Wing"},--1
 	{2,1,26,20,"¸m Yªn"},--2
-	{2,1,82,1,"Quy Hoa KÝnh"},--3
+	{2,1,82,1,"Demon Flower Mirror"},--3
 	{2,1,156,1,"Trøng B¹ch §iªu"},--4
 	{2,1,314,1,"B¹ch L©n"},--5
 	{2,1,170,20,"B¹ch Ng­ L©n"},--6
 	{2,1,93,20,"Vßng B¹ch Ngäc"},--7
 	{2,1,81,20,"B¹ch V©n b«i"},--8
-	{2,1,40,20,"Th­¬ng g·y"},--9
+	{2,1,40,20,"Broken Spear"},--9
 	{2,1,29,20,"B¶o B×nh"},--10
 	{2,1,326,1,"BÝch Ngäc giíi chØ"},--11
-	{2,1,18,1,"C¸nh d¬i"},--12
+	{2,1,18,1,"Bat Wing"},--12
 	{2,1,46,20,"BÝnh Méc Bµi"},--13
-	{2,1,303,20,"G¨ng tay"},--14
-	{2,1,299,20,"Tµn kiÕm"},--15
+	{2,1,303,20,"Glove"},--14
+	{2,1,299,20,"Worn Sword"},--15
 	{2,1,301,20,"Tµn th­¬ng"},--16
 	{2,1,166,20,"da Th­¬ng Viªn"},--17
-	{2,1,43,20,"Th¶o hµi"},--18
-	{2,1,55,20,"B×nh trµ"},--19
+	{2,1,43,20,"Grass Sandals"},--18
+	{2,1,55,20,"Tea Vase"},--19
 	{2,1,288,20,"Tr­êng ®ao"},--20
 	{2,1,193,1,"Tranh M¹c Háa DiÖm"},--21
 	{2,1,189,1,"Tranh S¾c Yªn Hoa"},--22
@@ -55,181 +55,181 @@ ItemTab = {
 	{2,1,321,1,"Xi Háa Th¸nh Ên"},--26
 	{2,1,313,1,"Xi Háa Ên"},--27
 	{2,1,191,1,"XÝch M¹c Háa DiÖm"},--28
-	{2,1,6,20,"No·n trïng"},--29
+	{2,1,6,20,"Egg Worm"},--29
 	{2,1,317,1,"Th« bè Tr­êng Bµo"},--30
-	{2,1,295,20,"§¹i Cang ®ao"},--31
+	{2,1,295,20,"Great Steel Saber"},--31
 	{2,1,67,20,"§¹i Tèng ®Þa chÝ"},--32
-	{2,1,312,1,"§¹i ThiÕt Ba"},--33
+	{2,1,312,1,"Great Iron Rake"},--33
 	{2,1,297,20,"Da voi"},--34
 	{2,1,330,1,"§¹i Tu Viªn KÝnh"},--35
-	{2,1,21,20,"Bao ®ao"},--36
+	{2,1,21,20,"Sheath Saber"},--36
 	{2,1,59,20,"§inh Méc Bµi"},--37
-	{2,1,73,20,"§inh Ba"},--38
-	{2,1,100,1,"§«ng L¨ng"},--39
-	{2,1,162,20,"D·i cãc"},--40
-	{2,1,176,20,"§éc Phong thÝch"},--41
-	{2,1,324,1,"§oµn Thõa ¢n thñ th­"},--42
-	{2,1,161,20,"Ng¹c vÜ cèt"},--43
-	{2,1,180,1,"Ng¹c Ng­ Nh·n CÇu"},--44
-	{2,1,13,20,"Tæ ong"},--45
-	{2,1,304,20,"PhËt Kinh"},--46
-	{2,1,302,20,"Phï Ên"},--47
-	{2,1,308,1,"Hñ Cèt"},--48
-	{2,1,315,1,"L­¬ng kh«"},--49
-	{2,1,327,1,"D©y thÐp"},--50
+	{2,1,73,20,"Trident"},--38
+	{2,1,100,1,"Eastern Tomb"},--39
+	{2,1,162,20,"Toad Skin"},--40
+	{2,1,176,20,"Venomous Wind Dart"},--41
+	{2,1,324,1,"Duan Cheng En Hand Scroll"},--42
+	{2,1,161,20,"Whale Tail Bone"},--43
+	{2,1,180,1,"Whale Fish Eyeball"},--44
+	{2,1,13,20,"Beehive"},--45
+	{2,1,304,20,"Buddhist Scripture"},--46
+	{2,1,302,20,"Talisman Seal"},--47
+	{2,1,308,1,"Decayed Bone"},--48
+	{2,1,315,1,"Dry Rations"},--49
+	{2,1,327,1,"Steel Wire"},--50
 	{2,1,70,20,"Canh Méc Bµi"},--51
 	{2,1,56,10,"C«ng V¨n"},--52
-	{2,1,63,20,"Mãc C©u"},--53
-	{2,1,290,20,"Tranh ch÷"},--54
-	{2,1,160,1,"Qu¸i dÞ th¹ch"},--55
+	{2,1,63,20,"Hook"},--53
+	{2,1,290,20,"Lettered Painting"},--54
+	{2,1,160,1,"Strange Monster Stone"},--55
 	{2,1,34,20,"Quan phôc"},--56
 	{2,1,92,20,"Quû Hån"},--57
 	{2,1,179,1,"Quû §Çu Tr­îng"},--58
 	{2,1,32,1,"Hång Tinh"},--59
-	{2,1,300,20,"Tö ®µn"},--60
+	{2,1,300,20,"Purple Sandalwood"},--60
 	{2,1,171,20,"Hång ng­ l©n"},--61
-	{2,1,16,20,"HÇu Nhi Qu¶"},--62
-	{2,1,155,20,"L«ng c¸o"},--63
+	{2,1,16,20,"Hou'er Fruit"},--62
+	{2,1,155,20,"Fox Fur"},--63
 	{2,1,104,1,"Hæ phï"},--64
 	{2,1,292,20,"Da hæ"},--65
-	{2,1,19,20,"Hæ vÜ"},--66
-	{2,1,84,1,"Hæ Ph¸ch"},--67
+	{2,1,19,20,"Tiger Tail"},--66
+	{2,1,84,1,"Amber"},--67
 	{2,1,284,20,"Hé Ph¸p LÖnh Bµi"},--68
-	{2,1,90,1,"NhÉn Hé PhËt"},--69
-	{2,1,310,1,"Hoa Ban Hå §iÖp"},--70
-	{2,1,99,1,"HuyÔn Quang"},--71
+	{2,1,90,1,"Buddha Guardian Ring"},--69
+	{2,1,310,1,"Flower Spotted Butterfly"},--70
+	{2,1,99,1,"Mysterious Light"},--71
 	{2,1,107,1,"Hoµng §Õ Néi Kinh"},--72
-	{2,1,48,1,"§u«i Hæ vµng"},--73
+	{2,1,48,1,"Golden Tiger Tail"},--73
 	{2,1,69,20,"Hoµng Kim Ban ChØ"},--74
-	{2,1,318,1,"Cån"},--75
+	{2,1,318,1,"Cudgel"},--75
 	{2,1,178,10,"Háa ¶nh ThÇn ®ao"},--76
 	{2,1,319,1,"C¸nh Phông Hoµng"},--77
 	{2,1,36,20,"Gia Ph¸p bæng"},--78
-	{2,1,272,20,"X¸c gi¸p trïng"},--79
+	{2,1,272,20,"Armor Shell Worm"},--79
 	{2,1,177,20,"Gi¸p x¸c phiÕn"},--80
 	{2,1,25,20,"Gi¸p Méc Bµi"},--81
 	{2,1,80,20,"KiÕm Hån"},--82
 	{2,1,41,20,"Kim Thoa"},--83
-	{2,1,79,1,"Kim Xøng Xµ"},--84
+	{2,1,79,1,"Golden Scale Snake"},--84
 	{2,1,86,1,"Kim Cang"},--85
 	{2,1,329,1,"§Çu l©u KhÈn Na La"},--86
-	{2,1,44,20,"Töu B«i"},--87
+	{2,1,44,20,"Wine Cup"},--87
 	{2,1,85,20,"Quý Méc Bµi"},--88
 	{2,1,192,1,"Lam M¹c Háa DiÖm"},--89
 	{2,1,190,1,"Lam S¾c Yªn Hoa"},--90
 	{2,1,37,1,"Lang Hån"},--91
-	{2,1,5,20,"L«ng sãi"},--92
-	{2,1,187,10,"Linh §Þch"},--93
-	{2,1,184,10,"Linh Qu¶"},--94
-	{2,1,186,10,"Linh CÇm"},--95
-	{2,1,185,10,"Linh T¶n"},--96
-	{2,1,183,10,"Linh Tiªu"},--97
-	{2,1,74,1,"Bao tay Da h­¬u"},--98
-	{2,1,62,20,"Lôc Ph¸ch"},--99
-	{2,1,91,1,"Lôc Trô"},--100
-	{2,1,287,20,"Mao Ng­u b×"},--101
+	{2,1,5,20,"Wolf Fur"},--92
+	{2,1,187,10,"Spirit Flute"},--93
+	{2,1,184,10,"Spirit Fruit"},--94
+	{2,1,186,10,"Spirit Lute"},--95
+	{2,1,185,10,"Spirit Cymbal"},--96
+	{2,1,183,10,"Spirit Flute"},--97
+	{2,1,74,1,"Deerskin Glove"},--98
+	{2,1,62,20,"Land Soul"},--99
+	{2,1,91,1,"Land Pillar"},--100
+	{2,1,287,20,"Yak Hide"},--101
 	{2,1,311,1,"Minh Háa Phï"},--102
 	{2,1,323,1,"§Çu l©u Ma H« La Ca"},--103
-	{2,1,76,20,"MÉu §¬n"},--104
+	{2,1,76,20,"Peony"},--104
 	{2,1,31,20,"Méc Thñ"},--105
 	{2,1,75,20,"Môc L«i V¨n §ao"},--106
-	{2,1,28,20,"Trøng chim"},--107
-	{2,1,65,20,"BÇu r­îu da dª"},--108
+	{2,1,28,20,"Bird Egg"},--107
+	{2,1,65,20,"Goatskin Wine Gourd"},--108
 	{2,1,279,20,"Ch×a khãa s¾t"},--109
 	{2,1,278,20,"Ch×a khãa ®ång"},--110
 	{2,1,280,20,"Ch×a khãa b¹c"},--111
 	{2,1,172,1,"D¹ §ao"},--112
 	{2,1,154,1,"Ngäc KhÝ"},--113
 	{2,1,157,20,"Cung"},--114
-	{2,1,106,10,"V¶y Kú L©n"},--115
+	{2,1,106,10,"Qilin Scale"},--115
 	{2,1,17,20,"Thanh Kim"},--116
 	{2,1,102,1,"Nh©n §å Phñ"},--117
 	{2,1,83,20,"Nh©m Méc Bµi"},--118
 	{2,1,195,1,"S¸t Thñ LÖnh"},--119
-	{2,1,97,20,"Th­¬ng Hµn luËn"},--120
+	{2,1,97,20,"Treatise on Cold Damage"},--120
 	{2,1,38,20,"Hµng hãa"},--121
-	{2,1,8,1,"L«ng sãi th­îng ®¼ng"},--122
-	{2,1,14,1,"Nanh heo th­îng h¹ng"},--123
-	{2,1,35,20,"B¸nh n­íng"},--124
-	{2,1,12,20,"Thiªu töu"},--125
+	{2,1,8,1,"Superior Wolf Fur"},--122
+	{2,1,14,1,"Premium Boar Tusk"},--123
+	{2,1,35,20,"Roasted Cake"},--124
+	{2,1,12,20,"Burnt Wine"},--125
 	{2,1,194,1,"ThÇn bÝ Yªn Hoa"},--126
 	{2,1,181,1,"ThÇn bÝ phñ"},--127
 	{2,1,182,1,"KiÕm thÇn bÝ"},--128
 	{2,1,49,20,"ThÇn Ma chÝ"},--129
-	{2,1,298,20,"Thuèc næ"},--130
-	{2,1,276,20,"MÇm Thùc nh©n th¶o"},--131
+	{2,1,298,20,"Explosive Powder"},--130
+	{2,1,276,20,"Sprout of Man-Eating Grass"},--131
 	{2,1,50,20,"Thñ Cèt"},--132
 	{2,1,57,20,"Hép trang søc"},--133
 	{2,1,24,20,"S­u ThÇn Ký"},--134
-	{2,1,293,20,"To¸i cèt"},--135
-	{2,1,316,1,"To¸i th¹ch"},--136
+	{2,1,293,20,"Shattered Bone"},--135
+	{2,1,316,1,"Shattered Stone"},--136
 	{2,1,168,20,"Ng©n th­¬ng háng"},--137
 	{2,1,101,1,"MÆt n¹ Thiªn V­¬ng"},--138
 	{2,1,158,20,"M¶nh b¶n ®å Thiªn ¢m gi¸o"},--139
 	{2,1,159,20,"Thiªn ¢m MËt TÝn"},--140
-	{2,1,71,20,"ThiÕt B¸t Qu¸i"},--141
-	{2,1,10,20,"ThiÕt Ban ChØ"},--142
-	{2,1,47,20,"ThiÕt Xoa"},--143
-	{2,1,61,20,"D©y xÝch"},--144
+	{2,1,71,20,"Iron Bagua"},--141
+	{2,1,10,20,"Iron Thumb Ring"},--142
+	{2,1,47,20,"Iron Fork"},--143
+	{2,1,61,20,"Iron Chain"},--144
 	{2,1,20,20,"ThiÕt Th­¬ng §Çu"},--145
-	{2,1,30,20,"§ång kiÕm"},--146
-	{2,1,42,20,"MiÕng ®ång"},--147
-	{2,1,3,20,"R¨ng sãi"},--148
-	{2,1,4,1,"Thè Nhi Qu¶"},--149
-	{2,1,2,20,"§u«i thá"},--150
-	{2,1,23,20,"Thèi Cèt"},--151
-	{2,1,305,20,"§µ La tr­îng"},--152
-	{2,1,103,1,"B×nh ¤n dÞch"},--153
-	{2,1,274,20,"C¸nh muçi"},--154
-	{2,1,9,20,"VÊn Lé th¹ch"},--155
-	{2,1,273,20,"Ch©n rÕt"},--156
-	{2,1,105,1,"Vâ Kinh Tæng YÕu"},--157
-	{2,1,173,20,"Vâ sÜ ®ao"},--158
-	{2,1,175,20,"MÆt n¹ Vâ sÜ"},--159
-	{2,1,174,20,"Vâ sÜ yªu ®¸i"},--160
+	{2,1,30,20,"Bronze Sword"},--146
+	{2,1,42,20,"Bronze Piece"},--147
+	{2,1,3,20,"Wolf Tooth"},--148
+	{2,1,4,1,"Tu'er Fruit"},--149
+	{2,1,2,20,"Rabbit Tail"},--150
+	{2,1,23,20,"Rotten Bone"},--151
+	{2,1,305,20,"Tuoluo Staff"},--152
+	{2,1,103,1,"Plague Vase"},--153
+	{2,1,274,20,"Mosquito Wing"},--154
+	{2,1,9,20,"Wenlu Stone"},--155
+	{2,1,273,20,"Centipede Leg"},--156
+	{2,1,105,1,"Martial Scripture Essentials"},--157
+	{2,1,173,20,"Warrior Saber"},--158
+	{2,1,175,20,"Warrior Mask"},--159
+	{2,1,174,20,"Warrior Belt"},--160
 	{2,1,64,20,"MËu Méc Bµi"},--161
-	{2,1,58,20,"C¸nh d¬i"},--162
-	{2,1,89,20,"Tª Ng­u Cung"},--163
-	{2,1,98,20,"Khª S¬n chÝ"},--164
-	{2,1,277,20,"§u«i §éc tÝch"},--165
-	{2,1,309,1,"TiÓu §éc Nang"},--166
-	{2,1,289,20,"Kh¨n tay"},--167
-	{2,1,163,20,"H¹t Ch©m"},--168
-	{2,1,94,20,"Tµ PhËt Ban ChØ"},--169
+	{2,1,58,20,"Bat Wing"},--162
+	{2,1,89,20,"Te Nguu Bow"},--163
+	{2,1,98,20,"Khe Son Mark"},--164
+	{2,1,277,20,"Du Doc Tich Tail"},--165
+	{2,1,309,1,"Small Poison Pouch"},--166
+	{2,1,289,20,"Handkerchief"},--167
+	{2,1,163,20,"Needle Seed"},--168
+	{2,1,94,20,"Ta Phat Thumb Ring"},--169
 	{2,1,77,20,"T©n Méc Bµi"},--170
-	{2,1,296,20,"R¨ng Tinh Tinh"},--171
-	{2,1,15,20,"GÊm lam"},--172
-	{2,1,78,1,"Hïng V¨n"},--173
-	{2,1,54,20,"GÊm vµng"},--174
-	{2,1,11,20,"Tó hoa hµi"},--175
+	{2,1,296,20,"Chimpanzee Tooth"},--171
+	{2,1,15,20,"Blue Brocade"},--172
+	{2,1,78,1,"Hung Van"},--173
+	{2,1,54,20,"Gold Brocade"},--174
+	{2,1,11,20,"Embroidered Flower Shoes"},--175
 	{2,1,95,1,"TuyÕt Hoa Giíi C¬"},--176
-	{2,1,22,20,"TuyÕt Tinh"},--177
-	{2,1,45,20,"TuyÕt Ph¸ch"},--178
-	{2,1,286,20,"HuyÕt bao"},--179
-	{2,1,307,1,"HuyÕt L©n"},--180
-	{2,1,285,20,"HuyÕt Nha vò"},--181
+	{2,1,22,20,"Snow Crystal"},--177
+	{2,1,45,20,"Snow Soul"},--178
+	{2,1,286,20,"Blood Sack"},--179
+	{2,1,307,1,"Blood Scale"},--180
+	{2,1,285,20,"Blood Fang Feather"},--181
 	{2,1,306,1,"Hép trang ®iÓm"},--182
-	{2,1,60,20,"BÇu r­îu da dª"},--183
-	{2,1,7,20,"Nanh heo rõng"},--184
+	{2,1,60,20,"Goatskin Wine Gourd"},--183
+	{2,1,7,20,"Wild Boar Tusk"},--184
 	{2,1,39,1,"D¹ Minh Ch©u"},--185
-	{2,1,328,1,"Trµng h¹t"},--186
+	{2,1,328,1,"Prayer Beads"},--186
 	{2,1,331,1,"NhÊt D­¬ng ChØ Tµn ch­¬ng 2"},--187
-	{2,1,53,20,"Di T¾c Chung"},--188
+	{2,1,53,20,"Di Tac Bell"},--188
 	{2,1,33,20,"Êt Méc Bµi"},--189
 	{2,1,66,20,"DÜ Méc Bµi"},--190
-	{2,1,164,20,"DÞ Téc Qu¶i Liªn"},--191
-	{2,1,165,1,"DÞ Téc b× ngoa"},--192
-	{2,1,27,20,"¢m Ph¸ch"},--193
-	{2,1,294,20,"¢m d­¬ng kÝnh"},--194
-	{2,1,167,20,"Ng©n Hå ®¬n"},--195
+	{2,1,164,20,"Foreign Race Strange Chain"},--191
+	{2,1,165,1,"Alien Tribe Leather Boots"},--192
+	{2,1,27,20,"Yin Spirit"},--193
+	{2,1,294,20,"Yin-Yang Mirror"},--194
+	{2,1,167,20,"Silver Lake Pill"},--195
 	{2,1,72,1,"Ên Th¹ch"},--196
 	{2,1,51,20,"U Hån"},--197
-	{2,1,291,20,"Vò nhung"},--198
+	{2,1,291,20,"Feather Velvet"},--198
 	{2,1,88,20,"B×nh Ngäc"},--199
 	{2,1,87,20,"Ngäc Nh­ ý"},--200
-	{2,1,68,20,"Ch©m cøu ®ång nh©n"},--201
-	{2,1,52,20,"Tr·m Töu"},--202
-	{2,1,96,20,"ChØ Nam Ng­"},--203
+	{2,1,68,20,"Acupuncture Bronze Figure"},--201
+	{2,1,52,20,"Tram Wine"},--202
+	{2,1,96,20,"Compass Fish"},--203
 }
 g_TotalItemNum = getn(ItemTab);
 
@@ -249,13 +249,13 @@ PrizeTab = {	--½±ÀøÄÚÈÝ
 BookTab = {
 	{0,107,57,"Tô NguyÖn C«ng Phæ"},--1
 	{0,107,58,"HuyÒn Th¹ch C«ng Phæ"},--2
-	{0,107,59,"Kim ThiÒn Phæ"},--3
+	{0,107,59,"Golden Cicada Manual"},--3
 	{0,107,61,"Bæ Kim MËt tÞch"},--4
 	{0,107,62,"Bæ Th¹ch MËt tÞch"},--5
 	{0,107,63,"Ngò Quû MËt tÞch"},--6
 	{0,107,64,"Thiªn Hµ MËt tÞch"},--7
 	{0,107,65,"Tö Hµ MËt tÞch"},--8
-	{0,107,66,"Chiªm y phæ"},--9
+	{0,107,66,"Chiem Y Manual"},--9
 	{0,107,155,"Ngò Hµnh MËt tÞch"},--10
 	}
 
@@ -370,7 +370,7 @@ function GetPlayerSex()
 	if (GetSex() == 1) then
 		mySex = "ThiÕu hiÖp";
 	elseif (GetSex() == 2) then
-		mySex = "C« n­¬ng";
+		mySex = "Young lady";
 	end;
 	return mySex;
 end;
@@ -400,9 +400,9 @@ function knowrule(npcNo)
 		sCmd = "OnUse";
 	end;
 	local selTab = {
-			"Trang kÕ/#nextrule1("..npcNo..")",
+			"Next page/#nextrule1("..npcNo..")",
 			"Quay l¹i ®èi tho¹i chÝnh./"..sCmd,
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 			};
 	local sContent = "";
 	local rule10 = "<color=green>PhÇn th­ëng 10<color>: Nép 7 lo¹i cã thÓ ®æi "..tPrizeJifen[10][2].." ®iÓm tÝch lòy, mçi tuÇn cã thÓ ®æi "..tPrizeJifen[10][1].." lÇn<enter>";
@@ -419,9 +419,9 @@ function nextrule1(npcNo)
 		sCmd = "OnUse";
 	end;
 	local selTab = {
-			"Trang tr­íc/#knowrule("..npcNo..")",
+			"Previous page/#knowrule("..npcNo..")",
 			"Quay l¹i ®èi tho¹i chÝnh./"..sCmd,
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 			};
 	local rule5 = "<color=green>PhÇn th­ëng 5<color>: Nép 106 lo¹i cã thÓ ®æi "..tPrizeJifen[5][2].." ®iÓm tÝch lòy, mçi tuÇn cã thÓ ®æi "..tPrizeJifen[5][1].." lÇn<enter>";
 	local rule4 = "<color=green>PhÇn th­ëng 4<color>: Nép 125 lo¹i cã thÓ ®æi "..tPrizeJifen[4][2].." ®iÓm tÝch lòy, mçi tuÇn cã thÓ ®æi "..tPrizeJifen[4][1].." lÇn<enter>";
@@ -438,8 +438,8 @@ function queryinfor(npcNo)
 				"Tra xem vËt phÈm ®· giao./#seemoreinfo("..npcNo..",1)",
 				"Tra xem nh÷ng vËt phÈm ch­a giao nép./#seemoreinfo("..npcNo..",0)",
 				"Tra theo sè hiÖu vËt phÈm./requestno",
-				"Trang tr­íc./main",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"Previous page./main",
+				"End dialogue/nothing",
 				}
 	Say("<color=green>"..tNpcName[npcNo]..":<color> B¹n ®· giao nép"..g_TotalItemNum.."<color=yellow>"..GetTask(ITEMNUM).."<color> lo¹i vËt thu thËp.",getn(selTab),selTab);
 end;
@@ -477,7 +477,7 @@ end;
 function searchbyno(sItemNo)
 	local nItemNo = tonumber(sItemNo);	
 	if not nItemNo or nItemNo <= 0 or nItemNo > g_TotalItemNum then
-		Talk(1,"main","<color=green>Gîi ý<color>: H·y nhËp sè <color=yellow>tõ 1 ®Õn"..g_TotalItemNum.."<color> (sè trung gian)");
+		Talk(1,"main","<color=green>Gîi ý<color>: H·y nhËp sè <color=yellow>tõ 1 ®Õn"..g_TotalItemNum.."<color> (intermediate number)");
 		return FALSE;
 	end;	
 	nItemNo = nItemNo - 1;
@@ -486,17 +486,17 @@ function searchbyno(sItemNo)
 	nGroup = floor(nItemNo/30);
 	nBit = mod(nItemNo,30)+1;
 	if GetBit(GetTask(LABORDAY_ITEM_BEGIN+nGroup),nBit) == 1 then
-		Talk(1,"main","VËt phÈm b¹n muèn xem lµ: <color=green>"..ItemTab[nGroup*30+nBit][5].."<color>. Tr¹ng th¸i: <color=yellow>§· giao nép<color>.");
+		Talk(1,"main","VËt phÈm b¹n muèn xem lµ: <color=green>"..ItemTab[nGroup*30+nBit][5].."<color>. Status: <color=yellow>Submitted<color>.");
 		return 1;
 	else
-		Talk(1,"main","VËt phÈm b¹n muèn xem lµ: <color=green>"..ItemTab[nGroup*30+nBit][5].."<color>. Tr¹ng th¸i: <color=red>Ch­a giao nép<color>.");
+		Talk(1,"main","VËt phÈm b¹n muèn xem lµ: <color=green>"..ItemTab[nGroup*30+nBit][5].."<color>. Status: <color=red>Not yet submitted<color>.");
 		return 1;
 	end;
 end;
 --ÁìÈ¡¡¶¾Û±¦Õ«¹¦ÀÍ²á¡·
 function getbook(npcNo)
 	if GetItemCount(2,0,391) >=1 then
-		Talk(1,"","<color=green>"..tNpcName[npcNo]..":<color> VÞ "..GetPlayerSex().."cã s¸ch c«ng lao Tô B¶o Trai sao?");
+		Talk(1,"","<color=green>"..tNpcName[npcNo]..":<color> Master"..GetPlayerSex().."cã s¸ch c«ng lao Tô B¶o Trai sao?");
 		return FALSE;
 	end;
 	if AddItem(2,0,391,1) == 1 then
@@ -505,7 +505,7 @@ function getbook(npcNo)
 end;
 --°ä½±
 function giveprize(nPrizeType)
-	local sContent = "Ng­¬i ®æi ®­îc <color=yellow>";
+	local sContent = "You exchanged for <color=yellow>";
 	ModifyExp(PrizeTab[nPrizeType][2]);
 	sContent = sContent..PrizeTab[nPrizeType][2].." ®iÓm kinh nghiÖm,";
 	Msg2Player("B¹n nhËn ®­îc "..PrizeTab[nPrizeType][2].." ®iÓm kinh nghiÖm");
@@ -543,7 +543,7 @@ function giveprize(nPrizeType)
 		if GetSex() == 1 then
 			sSex = "Tha";
 		elseif GetSex() == 2 then
-			sSex = "Ng­êi ch¬i";
+			sSex = "Player";
 		end;
 		AddGlobalNews(GetName().." ®· nhËn ®­îc gi¶i nhÊt, xin chóc mõng!"..sSex.."!");
 		Msg2SubWorld(GetName().." ®· nhËn ®­îc gi¶i nhÊt, xin chóc mõng!"..sSex.."!");
@@ -592,7 +592,7 @@ function giverandomhat()
 		};
 	local nRandomNum = random(1,getn(HatTab));
 	if AddItem(HatTab[nRandomNum][1],HatTab[nRandomNum][2],HatTab[nRandomNum][3],1,1,2,random(131,132),2,102,-1,-1) == 1 then
-		Write_Log("§æi phÇn th­ëng tÕt lao ®éng","NhËn ®­îc nãn, ID lµ:"..nRandomNum);
+		Write_Log("§æi phÇn th­ëng tÕt lao ®éng","Received a hat, ID is:"..nRandomNum);
 	end;
 end;
 --¸øËæ»ú¿ã×Ó
@@ -609,7 +609,7 @@ function giverandomtrousers()
 		};
 	local nRandomNum = random(1,getn(TrousersTab));
 	if AddItem(TrousersTab[nRandomNum][1],TrousersTab[nRandomNum][2],TrousersTab[nRandomNum][3],1,1,3,random(131,132),2,102,-1,-1) == 1 then
-		Write_Log("§æi phÇn th­ëng tÕt lao ®éng","NhËn ®­îc quÇn, ID lµ:"..nRandomNum);
+		Write_Log("§æi phÇn th­ëng tÕt lao ®éng","Received pants, ID is:"..nRandomNum);
 	end;
 end;
 --¸øËæ»úÎäÆ÷

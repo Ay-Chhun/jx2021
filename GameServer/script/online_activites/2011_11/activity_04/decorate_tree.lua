@@ -37,7 +37,7 @@ function VET_201111_DecorateTreeDialog(tbSayDialog, szSayHead)
 end
 
 function sale_christmas_tree()
-	Say(format(tSTRING_DECORATETREE_TABLE[2],VET_201111_TREE_VALUE),2,"§ång ý/ensure","Kh«ng cÇn ®©u/do_nothing")
+	Say(format(tSTRING_DECORATETREE_TABLE[2],VET_201111_TREE_VALUE),2,"Agree/ensure","Kh«ng cÇn ®©u/do_nothing")
 end
 
 function ensure()
@@ -47,7 +47,7 @@ function ensure()
 		return 0
 	end
 	if Pay(VET_201111_TREE_VALUE*10000) == 1 then
-		gf_AddItemEx2({2,1,30350,1},"C©y th«ng gi¸o héi","Event trang trÝ c©y th«ng noel","Mua c©y th«ng noel",24*60*60,1)
+		gf_AddItemEx2({2,1,30350,1},"C©y th«ng gi¸o héi","Event trang trÝ c©y th«ng noel","Buy a Christmas tree",24*60*60,1)
 	else
 		Talk(1,"",format(tSTRING_DECORATETREE_TABLE[3],VET_201111_TREE_VALUE))
 	end

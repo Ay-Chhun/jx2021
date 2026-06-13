@@ -12,7 +12,7 @@ function main()
 	elseif GetPlayerFaction() == 4 then
 		Talk(1,"","ThËt kh«ng ngê 1 ®¸m ¨n mµy còng cã thÓ danh vang 1 câi, bæn m«n thËt lµ béi phôc!")
 	else
-		Say("T×m ta cã viÖc chi?",2,"Ta muèn tham quan §­êng M«n/gototangmen","Kh«ng cã g×!/no")
+		Say("T×m ta cã viÖc chi?",2,"Ta muèn tham quan §­êng M«n/gototangmen","Nothing at all!/no")
 	end
 end
 

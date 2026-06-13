@@ -18,29 +18,29 @@ Include("\\script\\online\\dragon_boat_07\\dragon_boat_08_head.lua")
 	keepsake_date_TaskID = 1241
 	dragon_boat_07_join_TaskID = 1242
 	Tb_keepsake_chg_way = {
-		{"L¸ gãi b¸nh",800,1130},
-		{"Tóc MÔ",320,1129},
-		{"Tróc ®ång",320,1131},
+		{"Wrapping Leaf",800,1130},
+		{"Millet",320,1129},
+		{"Bamboo Tube",320,1131},
 		{"Hµm Thñy",200,1132},
 		{"Ých TrÝ Nh©n",160,1133},
-		{"§Ëu ®á",96,1134},
-		{"g¹o tr¾ng",64,1135},
-		{"Ng·i diÖp",32,1136},
-		{"§ïi n­íng",16,1137},
-		{"Tóc tö",8,1138},
+		{"Red Bean",96,1134},
+		{"white rice",64,1135},
+		{"mugwort leaf",32,1136},
+		{"Roasted Drumstick",16,1137},
+		{"Millet Seed",8,1138},
 	}
 	Tb_zong_zi_info = {}
-	Tb_zong_zi_info[1118] = {{"§ång tèng","Nguyªn liÖu hîp thµnh c¬ b¶n v« hiÖu","",70,1000,"delete_all","toµn bé nguyªn liÖu sÏ biÕn mÊt"},{"L¸ gãi b¸nh",1130,1,0},{"Tóc MÔ",1129,1,1},{"Tróc ®ång",1131,1,2}}
-	Tb_zong_zi_info[1119] = {{"Bµnh Ýt Hµm Thñy","Nguyªn liÖu hîp thµnh c¬ b¶n v« hiÖu","",70,1000,"delete_all","toµn bé nguyªn liÖu sÏ biÕn mÊt"},{"L¸ gãi b¸nh",1130,1,0},{"Hµm Thñy",1132,1,3},{"§ång tèng",1118,1}}
-	Tb_zong_zi_info[1120] = {{"Ých TrÝ Tèng","Lo¹i b¸nh nµy kh«ng cã g× ®Æc biÖt","",70,1500,"delete_all","toµn bé nguyªn liÖu sÏ biÕn mÊt"},{"L¸ gãi b¸nh",1130,1,0},{"Ých TrÝ Nh©n",1133,1,4},{"Bµnh Ýt Hµm Thñy",1119,1}}
-	Tb_zong_zi_info[1121] = {{"B¸nh Ýt §Ëu ®á","Lo¹i b¸nh nµy kh«ng cã g× ®Æc biÖt","",60,2000,"delete_all","toµn bé nguyªn liÖu sÏ biÕn mÊt"},{"L¸ gãi b¸nh",1130,1,0},{"§Ëu ®á",1134,1,5},{"Ých TrÝ Tèng",1120,1}}
-	Tb_zong_zi_info[1122] = {{"b¸nh Ýt g¹o tr¾ng","Lo¹i b¸nh nµy kh«ng cã g× ®Æc biÖt","",50,4000,"delete_all","toµn bé nguyªn liÖu sÏ biÕn mÊt"},{"L¸ gãi b¸nh",1130,1,0},{"g¹o tr¾ng",1135,1,6},{"B¸nh Ýt §Ëu ®á",1121,1}}
-	Tb_zong_zi_info[1123] = {{"B¸nh Ýt Ng·i h­¬ng","Sau khi sö dông cã thÓ ®æi <color=yellow>50 v¹n*®¼ng cÊp*®¼ng cÊp/6400<color> ®iÓm søc kháe thµnh kinh nghiÖm","returngolden_exp_chg(500000)",50,6000,"delete_all","toµn bé nguyªn liÖu sÏ biÕn mÊt"},{"L¸ gãi b¸nh",1130,1,0},{"Ng·i diÖp",1136,1,7},{"b¸nh Ýt g¹o tr¾ng",1122,1}}
-	Tb_zong_zi_info[1124] = {{"b¸nh Ýt ch©n gµ","Néi <color=yellow>10<color> phót sau khi sö dông, Sinh lùc t¨ng thªm <color=yellow>30##<color>","returnlife_improve()",50,10000,"delete_all","toµn bé nguyªn liÖu sÏ biÕn mÊt"},{"L¸ gãi b¸nh",1130,1,0},{"§ïi n­íng",1137,1,8},{"B¸nh Ýt Ng·i h­¬ng",1123,1}}
-	Tb_zong_zi_info[1125] = {{"b¸nh Ýt B¸c B¶o","Néi <color=yellow>3<color> phót sau khi sö dông, toµn bé n¨ng lùc t¨ng thªm <color=yellow>60<color> ®iÓm","returnability_improve()",33,40000,"delete_all","toµn bé nguyªn liÖu sÏ biÕn mÊt"},{"L¸ gãi b¸nh",1130,1,0},{"Tóc tö",1138,1,9},{"b¸nh Ýt ch©n gµ",1124,1}}
-	Tb_zong_zi_info[1126] = {{"b¸nh Ýt vui vÎ","Cã thÓ ®æi 1 quyÓn <color=yellow>S­ M«n lÖnh th­<color> ë ®©y hoÆc nhËn <color=yellow>100-200<color> ®iÓm danh väng ngÉu nhiªn","returnbook_renation_add()",33,80000,"1125","Tæn thÊt 1 c¸i B¸nh Ýt b¸t b¶o"},{"b¸nh Ýt B¸c B¶o",1125,3}}
-	Tb_zong_zi_info[1127] = {{"b¸nh Ýt may m¾n","Cã thÓ ®Õn gÆp ta ®Ó ®æi 1 quyÓn <color=yellow>MËt TÞch S­ m«n<color>","returniron_stone_add()",33,100000,"1126"," sÏ tæn thÊt 1 B¸nh Ýt Vui vÎ"},{"b¸nh Ýt vui vÎ",1126,3}}
-	Tb_zong_zi_info[1128] = {{"b¸nh Ýt th¹ch anh","Cã thÓ ®æi 1 quyÓn mËt tÞch <color=red>L¨ng Ba Vi Bé<color>","returnsecret_book_add()",20,400000,"1127"," sÏ tæn thÊt 1 B¸nh Ýt May m¾n"},{"b¸nh Ýt may m¾n",1127,3}}
+	Tb_zong_zi_info[1118] = {{"Bronze Bucket","Nguyªn liÖu hîp thµnh c¬ b¶n v« hiÖu","",70,1000,"delete_all","toµn bé nguyªn liÖu sÏ biÕn mÊt"},{"Wrapping Leaf",1130,1,0},{"Millet",1129,1,1},{"Bamboo Tube",1131,1,2}}
+	Tb_zong_zi_info[1119] = {{"Bµnh Ýt Hµm Thñy","Nguyªn liÖu hîp thµnh c¬ b¶n v« hiÖu","",70,1000,"delete_all","toµn bé nguyªn liÖu sÏ biÕn mÊt"},{"Wrapping Leaf",1130,1,0},{"Hµm Thñy",1132,1,3},{"Bronze Bucket",1118,1}}
+	Tb_zong_zi_info[1120] = {{"Ých TrÝ Tèng","Lo¹i b¸nh nµy kh«ng cã g× ®Æc biÖt","",70,1500,"delete_all","toµn bé nguyªn liÖu sÏ biÕn mÊt"},{"Wrapping Leaf",1130,1,0},{"Ých TrÝ Nh©n",1133,1,4},{"Bµnh Ýt Hµm Thñy",1119,1}}
+	Tb_zong_zi_info[1121] = {{"Red Bean Zongzi","Lo¹i b¸nh nµy kh«ng cã g× ®Æc biÖt","",60,2000,"delete_all","toµn bé nguyªn liÖu sÏ biÕn mÊt"},{"Wrapping Leaf",1130,1,0},{"Red Bean",1134,1,5},{"Ých TrÝ Tèng",1120,1}}
+	Tb_zong_zi_info[1122] = {{"white rice cake","Lo¹i b¸nh nµy kh«ng cã g× ®Æc biÖt","",50,4000,"delete_all","toµn bé nguyªn liÖu sÏ biÕn mÊt"},{"Wrapping Leaf",1130,1,0},{"white rice",1135,1,6},{"Red Bean Zongzi",1121,1}}
+	Tb_zong_zi_info[1123] = {{"Mugwort Zongzi","Sau khi sö dông cã thÓ ®æi <color=yellow>50 v¹n*®¼ng cÊp*®¼ng cÊp/6400<color> ®iÓm søc kháe thµnh kinh nghiÖm","returngolden_exp_chg(500000)",50,6000,"delete_all","toµn bé nguyªn liÖu sÏ biÕn mÊt"},{"Wrapping Leaf",1130,1,0},{"mugwort leaf",1136,1,7},{"white rice cake",1122,1}}
+	Tb_zong_zi_info[1124] = {{"b¸nh Ýt ch©n gµ","Néi <color=yellow>10<color> phót sau khi sö dông, Sinh lùc t¨ng thªm <color=yellow>30##<color>","returnlife_improve()",50,10000,"delete_all","toµn bé nguyªn liÖu sÏ biÕn mÊt"},{"Wrapping Leaf",1130,1,0},{"Roasted Drumstick",1137,1,8},{"Mugwort Zongzi",1123,1}}
+	Tb_zong_zi_info[1125] = {{"b¸nh Ýt B¸c B¶o","Néi <color=yellow>3<color> phót sau khi sö dông, toµn bé n¨ng lùc t¨ng thªm <color=yellow>60<color> ®iÓm","returnability_improve()",33,40000,"delete_all","toµn bé nguyªn liÖu sÏ biÕn mÊt"},{"Wrapping Leaf",1130,1,0},{"Millet Seed",1138,1,9},{"b¸nh Ýt ch©n gµ",1124,1}}
+	Tb_zong_zi_info[1126] = {{"joyful cake","Cã thÓ ®æi 1 quyÓn <color=yellow>S­ M«n lÖnh th­<color> ë ®©y hoÆc nhËn <color=yellow>100-200<color> ®iÓm danh väng ngÉu nhiªn","returnbook_renation_add()",33,80000,"1125","Tæn thÊt 1 c¸i B¸nh Ýt b¸t b¶o"},{"b¸nh Ýt B¸c B¶o",1125,3}}
+	Tb_zong_zi_info[1127] = {{"lucky cake","Cã thÓ ®Õn gÆp ta ®Ó ®æi 1 quyÓn <color=yellow>MËt TÞch S­ m«n<color>","returniron_stone_add()",33,100000,"1126"," sÏ tæn thÊt 1 B¸nh Ýt Vui vÎ"},{"joyful cake",1126,3}}
+	Tb_zong_zi_info[1128] = {{"quartz cake","Cã thÓ ®æi 1 quyÓn mËt tÞch <color=red>L¨ng Ba Vi Bé<color>","returnsecret_book_add()",20,400000,"1127"," sÏ tæn thÊt 1 B¸nh Ýt May m¾n"},{"lucky cake",1127,3}}
 	Tb_zong_zi_num_restrict = {}
 	Tb_zong_zi_num_restrict[1126] = {1,3,5,7}
 	Tb_zong_zi_num_restrict[1127] = {2,3,6,7}
@@ -56,7 +56,7 @@ Include("\\script\\online\\dragon_boat_07\\dragon_boat_08_head.lua")
 								}
 	Tb_zong_zi_chg_dia[1127].say = "Th× ra lµ <color=yellow>B¸nh Ýt May m¾n<color>, l·o phu ta cã c¸c <color=yellow>BÝ kiÕp<color> mËt truyÒn cña c¸c m«n ph¸i. NÕu ng­¬i gia nhËp m«n ph¸i ta sÏ tÆng ng­¬i 1 quyÓn. NÕu ch­a gia nhËp th× cßn ph¶i xem vËn khÝ cña ng­¬i ®·. Muèn b¸i tæ kh«ng?"
 	Tb_zongzi_teach_book = {}
-	Tb_zongzi_teach_book[21]={"Kim Cang Phôc Ma kinh",0,107,1}
+	Tb_zongzi_teach_book[21]={"Vajra Demon-Subduing Sutra",0,107,1}
 	Tb_zongzi_teach_book[22]={"Kim Cang Phôc Ma T©m Ph¸p",0,107,2}
 	Tb_zongzi_teach_book[41]={"TiÒm Long MËt tÞch",0,107,3}
 	Tb_zongzi_teach_book[42]={"TiÒm Long T©m Ph¸p",0,107,4}
@@ -66,7 +66,7 @@ Include("\\script\\online\\dragon_boat_07\\dragon_boat_08_head.lua")
 	Tb_zongzi_teach_book[62]={"Thiªn La T©m Ph¸p",0,107,8}
 	Tb_zongzi_teach_book[81]={"Nh­ ý MËt TÞch",0,107,9}
 	Tb_zongzi_teach_book[82]={"Nh­ ý T©m Ph¸p",0,107,10}
-	Tb_zongzi_teach_book[91]={"BÝch H¶i Phæ",0,107,11}
+	Tb_zongzi_teach_book[91]={"Azure Sea Score",0,107,11}
 	Tb_zongzi_teach_book[92]={"BÝch H¶i T©m Ph¸p",0,107,12}
 	Tb_zongzi_teach_book[111]={"Hçn §én MËt tÞch",0,107,13}
 	Tb_zongzi_teach_book[112]={"Hçn §én T©m Ph¸p",0,107,14}
@@ -80,7 +80,7 @@ Include("\\script\\online\\dragon_boat_07\\dragon_boat_08_head.lua")
 	Tb_zongzi_teach_book[172]={"TrÊn Qu©n T©m Ph¸p",0,107,22}
 	Tb_zongzi_teach_book[181]={"Xuyªn V©n MËt tÞch",0,107,23}
 	Tb_zongzi_teach_book[182]={"Xuyªn V©n T©m Ph¸p",0,107,24}
-	Tb_zongzi_teach_book[201]={"U Minh Quû Lôc",0,107,25}
+	Tb_zongzi_teach_book[201]={"Nether Ghost Record",0,107,25}
 	Tb_zongzi_teach_book[202]={"U Minh T©m Ph¸p",0,107,26}
 	Tb_zongzi_teach_book[211]={"Linh Cæ MËt tÞch",0,107,27}
 	Tb_zongzi_teach_book[212]={"Linh Cæ T©m Ph¸p",0,107,28}
@@ -100,11 +100,11 @@ Tb_dialog_main = {
 --======================================º¯ÊýÖ÷Âß¼­Çø=============================
 function main()
 	if GetLevel() < 10 then
-		Talk(1,"","<color=green>Di téc Së quèc<color>: <color=yellow>"..Zgc_pub_sex_name().."<color> n¨ng lùc cßn yÕu, hay lµ quay l¹i sau vËy!")
+		Talk(1,"","<color=green>Native of the State of Chu<color>: <color=yellow>"..Zgc_pub_sex_name().."<color> n¨ng lùc cßn yÕu, hay lµ quay l¹i sau vËy!")
 		return
 	end
 	if dragon_boat_08_time_chk() == 0 then
-		Talk(1,"","<color=green>Di téc Së quèc<color>: <color=yellow>"..Zgc_pub_sex_name().."<color> ®õng nãng véi, ®îi ®Õn tr­íc ®ªm §oan Ngä (<color=yellow>mïng 5 th¸ng 5<color>) chóng ta sÏ më ho¹t ®éng §oan Ngä hoµn toµn míi, mäi ng­êi cïng nhau cóng tÕ KhuÊt Nguyªn ®¹i phu.")
+		Talk(1,"","<color=green>Native of the State of Chu<color>: <color=yellow>"..Zgc_pub_sex_name().."<color> ®õng nãng véi, ®îi ®Õn tr­íc ®ªm §oan Ngä (<color=yellow>mïng 5 th¸ng 5<color>) chóng ta sÏ më ho¹t ®éng §oan Ngä hoµn toµn míi, mäi ng­êi cïng nhau cóng tÕ KhuÊt Nguyªn ®¹i phu.")
 		return
 	else
 		Say("<color=green>TruyÒn nh©n n­íc Së<color>: å, l¹i s¾p ®Õn <color=yellow>TÕt §oan Ngä<color> råi, mçi n¨m cø ®Õn ngµy nµy TruyÒn nh©n n­íc Së cña chóng ta rÊt th­¬ng t©m. TÊt c¶ con ch¸u cña ®¹i nh©n KhuÊt Nguyªn v× ®Ó t­ëng nhí ®Õn «ng ®· t¹o mét c¸i lÒu lµm b¸nh Ýt, ®Ó phôc vô gãi b¸nh cho mäi ng­êi, chØ cÇn b¹n mang nguyªn liÖu ®Õn lµ ®­îc.",
@@ -136,7 +136,7 @@ function zongzi_cook()
 end
 --ÖÆ×÷ôÕ×ÓÈ·ÈÏ¶Ô»°
 function zongzi_cook_chk(zongzi_diff)
-	Say("<color=green>Di téc Së quèc<color>: <color=yellow>"..Tb_zongzi_08[zongzi_diff][1].."<color>, c«ng dông: <color=yellow>"..Tb_zongzi_08[zongzi_diff][6].."<color>; nguyªn liÖu: <color=yellow>"..Tb_zongzi_08[zongzi_diff][5][1][3].."("..Tb_zongzi_08[zongzi_diff][5][1][2].."),"..Tb_zongzi_08[zongzi_diff][5][2][3].."("..Tb_zongzi_08[zongzi_diff][5][2][2].."),"..Tb_zongzi_08[zongzi_diff][5][3][3].."("..Tb_zongzi_08[zongzi_diff][5][3][2]..")<color>, tû lÖ thµnh c«ng: <color=yellow>"..Tb_zongzi_08[zongzi_diff][3].."%<color>. Ng­¬i x¸c nhËn muèn lµm chø?",
+	Say("<color=green>Native of the State of Chu<color>: <color=yellow>"..Tb_zongzi_08[zongzi_diff][1].."<color>, c«ng dông: <color=yellow>"..Tb_zongzi_08[zongzi_diff][6].."<color>; nguyªn liÖu: <color=yellow>"..Tb_zongzi_08[zongzi_diff][5][1][3].."("..Tb_zongzi_08[zongzi_diff][5][1][2].."),"..Tb_zongzi_08[zongzi_diff][5][2][3].."("..Tb_zongzi_08[zongzi_diff][5][2][2].."),"..Tb_zongzi_08[zongzi_diff][5][3][3].."("..Tb_zongzi_08[zongzi_diff][5][3][2]..")<color>, tû lÖ thµnh c«ng: <color=yellow>"..Tb_zongzi_08[zongzi_diff][3].."%<color>. Ng­¬i x¸c nhËn muèn lµm chø?",
 	2,
 	"Ta x¸c nhËn/#zongzi_cook_dtm("..zongzi_diff..")",
 	"§Ó ta suy nghÜ l¹i/zongzi_cook"
@@ -146,7 +146,7 @@ end
 function zongzi_cook_dtm(zongzi_diff)
 	local zongzi_num_min = min(floor(GetItemCount(2,1,Tb_zongzi_08[zongzi_diff][5][1][1])/Tb_zongzi_08[zongzi_diff][5][1][2]),floor(GetItemCount(2,1,Tb_zongzi_08[zongzi_diff][5][2][1])/Tb_zongzi_08[zongzi_diff][5][2][2]),floor(GetItemCount(2,1,Tb_zongzi_08[zongzi_diff][5][3][1])/Tb_zongzi_08[zongzi_diff][5][3][2]))
 	if zongzi_num_min == 0 then
-		Talk(1,"","<color=green>Di téc Së quèc<color>: <color=yellow>"..Tb_zongzi_08[zongzi_diff][1].."<color> nguyªn liÖu gåm <color=yellow>"..Tb_zongzi_08[zongzi_diff][5][1][3].."("..Tb_zongzi_08[zongzi_diff][5][1][2].."),"..Tb_zongzi_08[zongzi_diff][5][2][3].."("..Tb_zongzi_08[zongzi_diff][5][2][2].."),"..Tb_zongzi_08[zongzi_diff][5][3][3].."("..Tb_zongzi_08[zongzi_diff][5][3][2]..")<color>, cã thÓ <color=yellow>"..Zgc_pub_sex_name().."<color> ngay c¶ nguyªn liÖu lµm 1 c¸i <color=yellow>"..Tb_zongzi_08[zongzi_diff][1].."<color> còng kh«ng ®ñ, cã ph¶i ®Ó quªn trong r­¬ng kh«ng?")
+		Talk(1,"","<color=green>Native of the State of Chu<color>: <color=yellow>"..Tb_zongzi_08[zongzi_diff][1].."<color> nguyªn liÖu gåm <color=yellow>"..Tb_zongzi_08[zongzi_diff][5][1][3].."("..Tb_zongzi_08[zongzi_diff][5][1][2].."),"..Tb_zongzi_08[zongzi_diff][5][2][3].."("..Tb_zongzi_08[zongzi_diff][5][2][2].."),"..Tb_zongzi_08[zongzi_diff][5][3][3].."("..Tb_zongzi_08[zongzi_diff][5][3][2]..")<color>, cã thÓ <color=yellow>"..Zgc_pub_sex_name().."<color> ngay c¶ nguyªn liÖu lµm 1 c¸i <color=yellow>"..Tb_zongzi_08[zongzi_diff][1].."<color> còng kh«ng ®ñ, cã ph¶i ®Ó quªn trong r­¬ng kh«ng?")
 		return
 	end
 	SetTaskTemp(chg_mertiral_TaskTempID,zongzi_diff)
@@ -184,7 +184,7 @@ function zongzi_get(zongzi_num)
 		end
 	end
 	if zongzi_num == 0 then
-		Talk(1,"","<color=green>TruyÒn nh©n n­íc Së<color>: ThËt ®¸ng tiÕc, "..Tb_zongzi_08[zongzi_diff][1].."ThÊt b¹i råi!")
+		Talk(1,"","<color=green>Heir of the State of Chu<color>: What a pity,"..Tb_zongzi_08[zongzi_diff][1].."ThÊt b¹i råi!")
 		return
 	end
 	--ôÕ×ÓÔö¼Ó
@@ -192,7 +192,7 @@ function zongzi_get(zongzi_num)
 	if add_flag == 1 then
 		Msg2Player("Chóc mõng b¹n ®· chÕ t¹o thµnh c«ng"..zongzi_num.."c¸i"..Tb_zongzi_08[zongzi_diff][1].."!")
 	else
-		WriteLog("[TÕt §oan Ngä 08] ng­êi ch¬i	"..GetName().."	T¨ng"..zongzi_num.."c¸i"..Tb_zongzi_08[zongzi_diff][1].." thÊt b¹i, ký hiÖu:"..add_flag)
+		WriteLog("[TÕt §oan Ngä 08] ng­êi ch¬i	"..GetName().."	Reward"..zongzi_num.."c¸i"..Tb_zongzi_08[zongzi_diff][1].." thÊt b¹i, ký hiÖu:"..add_flag)
 	end
 	--ÆäËü½±ÀøÔö¼Ó
 	--Íâ×°ºÍÍâ×°Ôö¼Ó
@@ -241,7 +241,7 @@ function suit_add(zongzi_diff)
 				if add_flag == 1 then
 					Msg2Player("Chøc mõng! B¹n nhËn ®­îc 1 "..Tb_suit_prize[add_seq][player_body][1].."!")
 				else
-					WriteLog("[TÕt §oan Ngä 08] ng­êi ch¬i	"..GetName().."	T¨ng"..Tb_suit_prize[add_seq][player_body][1].." thÊt b¹i, ký hiÖu:"..add_flag)
+					WriteLog("[TÕt §oan Ngä 08] ng­êi ch¬i	"..GetName().."	Reward"..Tb_suit_prize[add_seq][player_body][1].." thÊt b¹i, ký hiÖu:"..add_flag)
 				end
 				--¼ÇÂ¼Êý¾Ý
 				SetTask(TaskID_suit_prize,(suit_got * 10 + add_seq))
@@ -355,7 +355,7 @@ function baiyu_use_dtm()
 					Msg2Player("Chóng mõng b¹n ®· dïng 'B¸nh Ýt B¹ch Ngäc' ®æi ®­îc 1 '"..Tb_baiyu_prize[i][3].."!")
 					Msg2SubWorld("Ng­êi ch¬i:"..GetName().." dïng B¸nh Ýt B¹ch Ngäc' ®æi thµnh c«ng 1 '"..Tb_baiyu_prize[i][3].."!")
 				else
-					WriteLog("[TÕt §oan Ngä 08] ng­êi ch¬i	"..GetName().."	T¨ng"..Tb_baiyu_prize[i][3].." thÊt b¹i, ký hiÖu:"..add_flag)
+					WriteLog("[TÕt §oan Ngä 08] ng­êi ch¬i	"..GetName().."	Reward"..Tb_baiyu_prize[i][3].." thÊt b¹i, ký hiÖu:"..add_flag)
 				end
 				break
 			end
@@ -410,18 +410,18 @@ function yupin_chg(prize_diff)
 	if prize_diff == 1 then
 		add_flag = AddItem(Tb_yupin_prize[prize_diff][1],Tb_yupin_prize[prize_diff][2],Tb_yupin_prize[prize_diff][3],1)
 		Msg2Player("Chóc mõng b¹n nhËn ®­îc 1"..Tb_yupin_prize[prize_diff][4].."!")
-		Msg2Player("Ng­êi ch¬i '"..GetName().." t¹i TruyÒn nh©n n­íc Së' dïng 1 B¸nh Ýt Ngù PhÈm ®æi 1 "..Tb_yupin_prize[prize_diff][4].."!")
+		Msg2Player("Player '"..GetName().." t¹i TruyÒn nh©n n­íc Së' dïng 1 B¸nh Ýt Ngù PhÈm ®æi 1 "..Tb_yupin_prize[prize_diff][4].."!")
 	elseif prize_diff == 2 or prize_diff == 3 then
 		add_flag = AddItem(Tb_yupin_prize[prize_diff][1],Tb_yupin_prize[prize_diff][2],Tb_yupin_prize[prize_diff][3],1,1,-1,-1,-1,-1,-1,-1)
 		Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 "..Tb_yupin_prize[prize_diff][4].."!")
-		Msg2Player("Ng­êi ch¬i '"..GetName().." t¹i TruyÒn nh©n n­íc Së' dïng 1 B¸nh Ýt Ngù PhÈm ®æi 1 "..Tb_yupin_prize[prize_diff][4].."!")
+		Msg2Player("Player '"..GetName().." t¹i TruyÒn nh©n n­íc Së' dïng 1 B¸nh Ýt Ngù PhÈm ®æi 1 "..Tb_yupin_prize[prize_diff][4].."!")
 	else
 		lspf_AddLingShiInBottle(7,12)
-		Msg2Player("Ng­êi ch¬i '"..GetName().." t¹i TruyÒn nh©n n­íc Së' dïng 1 B¸nh Ýt Ngù PhÈm ®æi "..Tb_yupin_prize[prize_diff][1].."!")
+		Msg2Player("Player '"..GetName().." t¹i TruyÒn nh©n n­íc Së' dïng 1 B¸nh Ýt Ngù PhÈm ®æi "..Tb_yupin_prize[prize_diff][1].."!")
 		add_flag = 1
 	end
 	if add_flag ~= 1 then
-		WriteLog("[TÕt §oan Ngä 08] ng­êi ch¬i	"..GetName().."	T¨ng"..Tb_yupin_prize[prize_diff][4].." thÊt b¹i, ký hiÖu:"..add_flag)
+		WriteLog("[TÕt §oan Ngä 08] ng­êi ch¬i	"..GetName().."	Reward"..Tb_yupin_prize[prize_diff][4].." thÊt b¹i, ký hiÖu:"..add_flag)
 	end
 	zongzi_chg_astrict(2,2)
 end
@@ -435,7 +435,7 @@ function zongzi_chg_astrict(zongzi_diff,deal_diff)
 	else
 		local zongzi_chg_times = GetTask(Tb_zongzi_use_num[zongzi_diff][2])
 		SetTask(Tb_zongzi_use_num[zongzi_diff][2],(zongzi_chg_times+1))
-		Talk(1,"","<color=green>TruyÒn nh©n n­íc Së<color>: Ng­¬i ®· ®æi <color=yellow>"..(zongzi_chg_times+1).."<color> lÇn <color=yellow>"..Tb_zongzi_use_num[zongzi_diff][1].."<color>, cßn cã thÓ ®æi <color=red>"..(Tb_zongzi_use_num[zongzi_diff][3] - (zongzi_chg_times+1)).."<color> lÇn!")
+		Talk(1,"","<color=green>Heir of Chu State<color>: You have exchanged <color=yellow>"..(zongzi_chg_times+1).."<color> lÇn <color=yellow>"..Tb_zongzi_use_num[zongzi_diff][1].."<color>, cßn cã thÓ ®æi <color=red>"..(Tb_zongzi_use_num[zongzi_diff][3] - (zongzi_chg_times+1)).."<color> lÇn!")
 	end
 	return 1
 end
@@ -478,7 +478,7 @@ end
 				Msg2Player("Chóc mõng b¹n sö dông ' "..Tb_zong_zi_info[zong_zi_id][1][1].." ®æi phÇn th­ëng thµnh c«ng")
 			end
 		end
-		WriteLog("07 ®oan ngä- "..GetName().."Sö dông "..Tb_zong_zi_info[zong_zi_id][1][1].." ®æi phÇn th­ëng thµnh c«ng")
+		WriteLog("07 Dragon Boat Festival-"..GetName().."Sö dông "..Tb_zong_zi_info[zong_zi_id][1][1].." ®æi phÇn th­ëng thµnh c«ng")
 	end
 	--¿ìÀÖôÕ×ÓÏà¹Ø
 	function happy_zongzi_prize(prize_diff)
@@ -491,13 +491,13 @@ end
 			return
 		end
 		--¿ªÊ¼¶Ô»°
-		local prize_dia = "<color=green>Di téc Së quèc<color>: <color=yellow>B¸nh Ýt Vui vÎ<color> ®æi <color=yellow>"..Tb_happy_zong_zi_prize_name[prize_diff].."<color> tû lÖ vµ trÞ sè nh­ sau!"
+		local prize_dia = "<color=green>Chu State Survivor<color>: <color=yellow>Joyful Rice Cake<color> exchanges for <color=yellow>"..Tb_happy_zong_zi_prize_name[prize_diff].."<color> tû lÖ vµ trÞ sè nh­ sau!"
 		for i = 1,5 do		--Îå¼¶½±Àø
-			prize_dia = prize_dia.."\n Tû lÖ: <color=yellow>"..Tb_happy_zong_zi_probility[1][i].."  <color> nhËn ®­îc :"
+			prize_dia = prize_dia.."\n Ratio: <color=yellow>"..Tb_happy_zong_zi_probility[1][i].."  <color> nhËn ®­îc :"
 			if prize_diff == 4 then
-				prize_dia = prize_dia.."<color=yellow>"..Zgc_pub_money_name_change(Tb_happy_zong_zi_prize[4][i][1]).." ®Õn "..Zgc_pub_money_name_change(Tb_happy_zong_zi_prize[4][i][2]).."<color>"
+				prize_dia = prize_dia.."<color=yellow>"..Zgc_pub_money_name_change(Tb_happy_zong_zi_prize[4][i][1]).." to"..Zgc_pub_money_name_change(Tb_happy_zong_zi_prize[4][i][2]).."<color>"
 			else
-				prize_dia = prize_dia.."<color=yellow>"..Tb_happy_zong_zi_prize[prize_diff][i][1].." ®Õn "..Tb_happy_zong_zi_prize[prize_diff][i][2].."<color> ®iÓm"
+				prize_dia = prize_dia.."<color=yellow>"..Tb_happy_zong_zi_prize[prize_diff][i][1].." to"..Tb_happy_zong_zi_prize[prize_diff][i][2].."<color> ®iÓm"
 			end
 		end
 		Say(prize_dia,
@@ -509,7 +509,7 @@ end
 	--¿ìÀÖôÕ×Ó½±Àø¸øÓÚ
 	function prize_get_dtm(prize_diff)
 		if GetPlayerFaction() == 0 and prize_diff == 3 then
-			Talk(1,"","<color=green>Di téc Së quèc<color>: <color=yellow>"..Zgc_pub_sex_name().."<color> nÕu muèn t¨ng ®é cèng hiÕn S­ m«n, tèt nhÊt nªn gia nhËp m«n ph¸i råi quay l¹i ®©y!")
+			Talk(1,"","<color=green>Native of the State of Chu<color>: <color=yellow>"..Zgc_pub_sex_name().."<color> nÕu muèn t¨ng ®é cèng hiÕn S­ m«n, tèt nhÊt nªn gia nhËp m«n ph¸i råi quay l¹i ®©y!")
 			return
 		end
 		if GetItemCount(2,1,1126) == 0 then
@@ -552,7 +552,7 @@ end
 		else
 			SetTask(happy_zong_zi_num_TaskID,(num_save + 1))
 		end
-		Talk(1,"","<color=green>Di téc Së quèc<color>: <color=yellow>B¸nh Ýt Vui vÎ<color> mçi ngµy chØ cã thÓ ®æi <color=yellow>"..happy_zong_zi_restrict_num.."<color> lÇn, ®©y lµ lÇn ®æi thø <color=yellow>"..(num_save+1).."<color> trong h«m nay!")
+		Talk(1,"","<color=green>Di téc Së quèc<color>: <color=yellow>B¸nh Ýt Vui vÎ<color> mçi ngµy chØ cã thÓ ®æi <color=yellow>"..happy_zong_zi_restrict_num.."<color> lÇn, ®©y lµ lÇn ®æi thø <color=yellow>"..(num_save+1).."<color> for today!")
 		WriteLog("Ho¹t ®éng §oan Ngä: Ng­êi ch¬i sö dông 'B¸nh Ýt Vui vÎ' ®æi "..Tb_happy_zong_zi_prize_name[prize_diff].."("..prize_num..")")
 	end
 	--ÉùÍû¶Ò»»
@@ -617,7 +617,7 @@ function zongzi_info()
 		"Ta ph¶i lµm sao míi cã thÓ b¸i tÕ cïng c¸c ng­êi/how_2_cook",
 		"Ta cã thÓ dïng b¸nh Ýt g× ®Ó b¸i tÕ/which_2_use",
 		"Ta muèn t×m hiÓu c¸ch lµm b¸nh Ýt/cook_info",
-		"Ta ®· hiÓu/end_dialog"
+		"I understand/end_dialog"
 	)
 end
 --ÈçºÎ¼À°Ý

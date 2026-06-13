@@ -166,15 +166,15 @@ KF_TALK_NPC = {
 
 --°Ë¸ö·ðµÄÎ»ÖÃ
 KF_tPositionFo = {
-	{"Nga Mi tiÓu s­ tû 1", "Nga Mi tiÓu s­ tû ", 1582, 3711, KF_CampOne_Type},
-	{"Nga Mi tiÓu s­ tû 2", "Nga Mi tiÓu s­ tû ", 1592, 3711, KF_CampOne_Type},
-	{"Nga Mi tiÓu s­ tû 3", "Nga Mi tiÓu s­ tû ", 1588, 3725, KF_CampOne_Type},
-	{"Nga Mi tiÓu s­ tû 4", "Nga Mi tiÓu s­ tû ", 1573, 3718, KF_CampOne_Type},
+	{"Nga Mi tiÓu s­ tû 1", "Emei junior martial sister", 1582, 3711, KF_CampOne_Type},
+	{"Nga Mi tiÓu s­ tû 2", "Emei junior martial sister", 1592, 3711, KF_CampOne_Type},
+	{"Nga Mi tiÓu s­ tû 3", "Emei junior martial sister", 1588, 3725, KF_CampOne_Type},
+	{"Nga Mi tiÓu s­ tû 4", "Emei junior martial sister", 1573, 3718, KF_CampOne_Type},
 	
-	{"Nga Mi tiÓu s­ tû 1", "Nga Mi tiÓu s­ tû ", 1901, 3356, KF_CampTwo_Type},
-	{"Nga Mi tiÓu s­ tû 2", "Nga Mi tiÓu s­ tû ", 1910, 3350, KF_CampTwo_Type},
-	{"Nga Mi tiÓu s­ tû 3", "Nga Mi tiÓu s­ tû ", 1919, 3360, KF_CampTwo_Type},
-	{"Nga Mi tiÓu s­ tû 4", "Nga Mi tiÓu s­ tû ", 1907, 3371, KF_CampTwo_Type},
+	{"Nga Mi tiÓu s­ tû 1", "Emei junior martial sister", 1901, 3356, KF_CampTwo_Type},
+	{"Nga Mi tiÓu s­ tû 2", "Emei junior martial sister", 1910, 3350, KF_CampTwo_Type},
+	{"Nga Mi tiÓu s­ tû 3", "Emei junior martial sister", 1919, 3360, KF_CampTwo_Type},
+	{"Nga Mi tiÓu s­ tû 4", "Emei junior martial sister", 1907, 3371, KF_CampTwo_Type},
 }
 
 KF_MONSTER_NPC = {
@@ -436,14 +436,14 @@ KF_PARK_AWARD_PT = {
 	{27, 100, 1000, 1},
 	{34, 75, 60, 1},
 	{35, 25, 60, 1},
-	{1, 150, "VÐ TiÕu Y §ång", {2, 1, 30493, 1}, 0},
-	{1, 100, "VÐ TiÕu Y §ång", {2, 1, 30493, 2}, 0},
-	{1, 50, "VÐ TiÕu Y §ång", {2, 1, 30493, 4}, 0},
+	{1, 150, "Bronze Tieu Y Token", {2, 1, 30493, 1}, 0},
+	{1, 100, "Bronze Tieu Y Token", {2, 1, 30493, 2}, 0},
+	{1, 50, "Bronze Tieu Y Token", {2, 1, 30493, 4}, 0},
 	{1, 100, "ThiÕt Tinh cÊp 1", {2, 1, 30533, 4}, 0},
 }
 
 KF_PARK_AWARD_PT_ADD = {
-	{1, "Hu©n ch­¬ng anh hïng", {2, 1, 30499, 1}, 0},
+	{1, "Hero's Medal", {2, 1, 30499, 1}, 0},
 	{28, 300, 1},--ÕæÆø
 }
 
@@ -457,9 +457,9 @@ KF_PARK_AWARD_GJ = {
 	{27, 100, 1500, 1},
 	{34, 40, 60, 1},
 	{35, 10, 60, 1},
-	{1, 200, "VÐ TiÕu Y §ång", {2, 1, 30493, 2}, 0},
-	{1, 100, "VÐ TiÕu Y §ång", {2, 1, 30493, 4}, 0},
-	{1, 50, "VÐ TiÕu Y B¹c", {2, 1, 30492, 1}, 0},
+	{1, 200, "Bronze Tieu Y Token", {2, 1, 30493, 2}, 0},
+	{1, 100, "Bronze Tieu Y Token", {2, 1, 30493, 4}, 0},
+	{1, 50, "Silver Tieu Y Token", {2, 1, 30492, 1}, 0},
 	
 	{1, 120, "ThiÕt Tinh cÊp 1", {2, 1, 30533, 4}, 0},
 	{1, 100, "ThiÕt Tinh cÊp 2", {2, 1, 30534, 4}, 0},
@@ -467,7 +467,7 @@ KF_PARK_AWARD_GJ = {
 }
 
 KF_PARK_AWARD_GJ_ADD = {
-	{1, "Hu©n ch­¬ng anh hïng", {2, 1, 30499, 2}, 0},
+	{1, "Hero's Medal", {2, 1, 30499, 2}, 0},
 	{28, 400, 1},--ÕæÆø
 }
 
@@ -480,9 +480,9 @@ KF_PARK_AWARD_JY = {
 	{27, 100, 2500, 1},
 	{35, 75, 60, 1},
 	{36, 25, 60, 1},
-	{1, 100, "VÐ TiÕu Y B¹c", {2, 1, 30493, 1}, 0},
-	{1, 100, "VÐ TiÕu Y B¹c", {2, 1, 30493, 2}, 0},
-	{1, 50, "VÐ TiÕu Y B¹c", {2, 1, 30492, 4}, 0},
+	{1, 100, "Silver Tieu Y Token", {2, 1, 30493, 1}, 0},
+	{1, 100, "Silver Tieu Y Token", {2, 1, 30493, 2}, 0},
+	{1, 50, "Silver Tieu Y Token", {2, 1, 30492, 4}, 0},
 	
 	{1, 50, "ThiÕt Tinh cÊp 1", {2, 1, 30533, 4}, 0},
 	{1, 50, "ThiÕt Tinh cÊp 2", {2, 1, 30534, 4}, 0},
@@ -490,32 +490,32 @@ KF_PARK_AWARD_JY = {
 }
 
 KF_PARK_AWARD_JY_ADD = {
-	{1, "Hu©n ch­¬ng anh hïng", {2, 1, 30499, 6}, 0},
+	{1, "Hero's Medal", {2, 1, 30499, 6}, 0},
 	{28, 500, 1},--ÕæÆø
 }
 
 KF_NB_WEAPON_TABLE = {
 	--Á÷ÅÉ={ÎäÆ÷}
 	[2] = {0,	3,	30052, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma §ao"},
-	[4] = {0,	0,	30053, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma Tr­îng"},
+	[4] = {0,	0,	30053, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "True Demon Staff"},
 	[3] = {0,	8,	30054, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma Thñ"},
-	[6] = {0,	1,	30055, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma Ch©m"},
+	[6] = {0,	1,	30055, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "True Demon Needle"},
 	[8] = {0,	2,	30056, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma KiÕm"},
-	[9] = {0,	10,	30057, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma CÇm"},
+	[9] = {0,	10,	30057, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "True Demon Zither"},
 	[11] = {0,	0,	30058, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma Thñ"},
 	[12] = {0,	5,	30059, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma C«n"},
 	[14] = {0,	2,	30060, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma KiÕm"},
-	[15] = {0,	9,	30061, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma Bót"},
-	[17] = {0,	6,	30062, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma Th­¬ng"},
-	[18] = {0,	4,	30063, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma Cung"},
-	[20] = {0,	7,	30064, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma NhÉn"},
-	[21] = {0,	11,	30065, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma Tr¶o"},
+	[15] = {0,	9,	30061, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "True Demon Brush"},
+	[17] = {0,	6,	30062, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "True Demon Spear"},
+	[18] = {0,	4,	30063, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "True Demon Bow"},
+	[20] = {0,	7,	30064, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "True Demon Ring"},
+	[21] = {0,	11,	30065, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "True Demon Claw"},
 	[23] = {0,	2,	30066, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma KiÕm"},
 	[25] = {0,	3,	30067, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma §ao"},
-	[26] = {0,	9,	30068, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma Bót"},
-	[27] = {0,	11,	30069, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma Tr¶o"},
-	[29] = {0,	13,	30070, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma PhiÕn"},
-	[30] = {0,	12,	30071, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "Ch©n Ma Tiªu"},
+	[26] = {0,	9,	30068, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "True Demon Brush"},
+	[27] = {0,	11,	30069, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "True Demon Claw"},
+	[29] = {0,	13,	30070, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "True Demon Fan"},
+	[30] = {0,	12,	30071, 1, 1, -1, -1, -1, -1, -1, -1, 0, 15, "True Demon Dart"},
 }
 
 KF_WEAPON_EXIST_TIME = 10 * 60;

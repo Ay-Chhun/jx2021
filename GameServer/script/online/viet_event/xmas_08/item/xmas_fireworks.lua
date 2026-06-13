@@ -65,7 +65,7 @@ function OnUse(nItemIdx)
 	end
 
 	if GetLevel() < 73 then
-		Say("Nh©n vËt cã ®¼ng cÊp 73 trë lªn míi cã thÓ sö dông ph¸o hoa",1,"KÕt thóc ®èi tho¹i/no_talk")
+		Say("Nh©n vËt cã ®¼ng cÊp 73 trë lªn míi cã thÓ sö dông ph¸o hoa",1,"End dialogue/no_talk")
 		return
 	end
 
@@ -81,7 +81,7 @@ function OnUse(nItemIdx)
 
 	if (GetTime() - GetTask(FIREWORKS_TIME_08_XMAS_VIET)) < 60 then
 		local nRemainTime = 60 - (GetTime() - GetTask(FIREWORKS_TIME_08_XMAS_VIET))
-		Msg2Player("Cßn "..nRemainTime.." gi©y n÷a míi cã thÓ ®èt ph¸o hoa tiÕp.")
+		Msg2Player("There are"..nRemainTime.." gi©y n÷a míi cã thÓ ®èt ph¸o hoa tiÕp.")
 		return
 	end
 

@@ -23,7 +23,7 @@ function main()
 		tSay = aah_GetSayDialog(tonumber(v));
 	end
 	if getn(tSay) > 0 then
-		tinsert(tSay, "Tho¸t/nothing")
+		tinsert(tSay, "Exit/nothing")
 		Say("Lµm ng­êi, tr­íc khi nh¾m m¾t xu«i tay, cã thÓ cèng hiÕn cho Quèc gia còng lµ viÖc nªn lµm!", getn(tSay), tSay);
 		return 
 	end
@@ -48,7 +48,7 @@ function main()
 	        {
 		        "H·y nhËp cd-key kÝch ho¹t tµi kho¶n/gsp_input_cdkey",
 		        "NhËn phÇn th­ëng giai ®o¹n./gsp_phase_prize",
-		        "Liªn quan Sø gi¶.../gsp_about",
+		        "About the Envoy.../gsp_about",
 		        "ChØ ghÐ qua th«i./gsp_cancel"
 	        };
 
@@ -63,7 +63,7 @@ function gsp_input_cdkey()
 	
 	if (nValue == GSP_ACCOUNT_TYPE_CDKEY) then
 		szError = "Tµi kho¶n nµy ®· kÝch ho¹t, kh«ng cÇn nhËp l¹i cd-key."
-		Talk(1, "", "<color=green>Sø gi¶<color>:"..szError);
+		Talk(1, "", "<color=green>Envoy<color>:"..szError);
 		return
 	end
 	

@@ -3,36 +3,36 @@ GBL_SERVER_COUNT = 0
 TASK_STATUS_FINISH=255
 tTasks = {
 	[1] = {
-        {"TuyÕt Ph¸ch", {2,1,45,50}, "B¨ng Qu¸i", "B¨ng T©m ®éng_2" },
+        {"Snow Soul", {2,1,45,50}, "B¨ng Qu¸i", "B¨ng T©m ®éng_2" },
         {"Ngäc Nh­ ý", {2,1,87,50}, "B¨ng T©m N÷", "B¨ng T©m ®éng_2" },
-        {"DÞ Téc Qu¶i Liªn", {2,1,164,50}, "Xi Háa §ao Kh¸ch", "V©n Méng Tr¹ch" },
-        {"MÉu §¬n", {2,1,76,50}, "H¾c Phong KiÕm Kh¸ch", "H¾c Phong ®éng" },
+        {"Foreign Race Strange Chain", {2,1,164,50}, "Xi Háa §ao Kh¸ch", "V©n Méng Tr¹ch" },
+        {"Peony", {2,1,76,50}, "H¾c Phong KiÕm Kh¸ch", "H¾c Phong ®éng" },
         {"da Th­¬ng Viªn", {2,1,166,50}, "Th­¬ng Viªn", "Vò Di s¬n" },
-        {"Töu B«i", {2,1,44,50}, "§ao V­¬ng", "D­¬ng Trung ®éng-3" },
+        {"Wine Cup", {2,1,44,50}, "§ao V­¬ng", "D­¬ng Trung ®éng-3" },
 	},
 	[2] = {
-        {"TuyÕt Tinh", {2,1,22,3}, "TuyÕt Qu¸i", "B¨ng T©m ®éng_1" },
+        {"Snow Crystal", {2,1,22,3}, "TuyÕt Qu¸i", "B¨ng T©m ®éng_1" },
         {"D¹ Minh Ch©u", {2,1,39,3}, "N÷ HiÖp Kh¸ch", "Tróc Ty ®éng_1" },
-        {"Hæ Ph¸ch", {2,1,84,3}, "Trïng Qu¸i", "Thiªn S­ ®éng-1" },
-        {"HuyÔn Quang", {2,1,99,3}, "Trïng Qu¸i V­¬ng", "Thiªn S­ ®éng-2" },
-        {"DÞ Téc Qu¶i Liªn", {2,1,164,50}, "Xi Háa §ao Kh¸ch", "V©n Méng Tr¹ch" },
-        {"Töu B«i", {2,1,44,50}, "§ao V­¬ng", "D­¬ng Trung ®éng-3" },
+        {"Amber", {2,1,84,3}, "Trïng Qu¸i", "Thiªn S­ ®éng-1" },
+        {"Mysterious Light", {2,1,99,3}, "Trïng Qu¸i V­¬ng", "Thiªn S­ ®éng-2" },
+        {"Foreign Race Strange Chain", {2,1,164,50}, "Xi Háa §ao Kh¸ch", "V©n Méng Tr¹ch" },
+        {"Wine Cup", {2,1,44,50}, "§ao V­¬ng", "D­¬ng Trung ®éng-3" },
 	},
 	[3] = {
-        {"TuyÕt Tinh", {2,1,22,3}, "TuyÕt Qu¸i", "B¨ng T©m ®éng_1" },
+        {"Snow Crystal", {2,1,22,3}, "TuyÕt Qu¸i", "B¨ng T©m ®éng_1" },
         {"D¹ Minh Ch©u", {2,1,39,3}, "N÷ HiÖp Kh¸ch", "Tróc Ty ®éng_1" },
-        {"Hæ Ph¸ch", {2,1,84,3}, "Trïng Qu¸i", "Thiªn S­ ®éng-1" },
-        {"HuyÔn Quang", {2,1,99,3}, "Trïng Qu¸i V­¬ng", "Thiªn S­ ®éng-2" },
-        {"MÉu §¬n", {2,1,76,50}, "H¾c Phong KiÕm Kh¸ch", "H¾c Phong ®éng" },
-        {"Ch©n thá", {2,1,112,1}, "Thá rõng", "B¶n ®å chu vi thµnh chÝnh" },
+        {"Amber", {2,1,84,3}, "Trïng Qu¸i", "Thiªn S­ ®éng-1" },
+        {"Mysterious Light", {2,1,99,3}, "Trïng Qu¸i V­¬ng", "Thiªn S­ ®éng-2" },
+        {"Peony", {2,1,76,50}, "H¾c Phong KiÕm Kh¸ch", "H¾c Phong ®éng" },
+        {"Real Rabbit", {2,1,112,1}, "Thá rõng", "B¶n ®å chu vi thµnh chÝnh" },
 	},
 	[4] = {
         {"D¹ Minh Ch©u", {2,1,39,3}, "N÷ HiÖp Kh¸ch", "Tróc Ty ®éng_1" },
-        {"Hæ Ph¸ch", {2,1,84,3}, "Trïng Qu¸i", "Thiªn S­ ®éng-1" },
-        {"TuyÕt Ph¸ch", {2,1,45,50}, "B¨ng Qu¸i", "B¨ng T©m ®éng_2" },
+        {"Amber", {2,1,84,3}, "Trïng Qu¸i", "Thiªn S­ ®éng-1" },
+        {"Snow Soul", {2,1,45,50}, "B¨ng Qu¸i", "B¨ng T©m ®éng_2" },
         {"Ngäc Nh­ ý", {2,1,87,50}, "B¨ng T©m N÷", "B¨ng T©m ®éng_2" },
         {"da Th­¬ng Viªn", {2,1,166,50}, "Th­¬ng Viªn", "Vò Di s¬n" },
-        {"Töu B«i", {2,1,44,50}, "§ao V­¬ng", "D­¬ng Trung ®éng-3" },
+        {"Wine Cup", {2,1,44,50}, "§ao V­¬ng", "D­¬ng Trung ®éng-3" },
 	},
 }
 
@@ -78,7 +78,7 @@ tTaskAward = {
 	},
 }
 tItemBox = {
-	{"Quµ Song §¸n-Th­êng",2,1,30971},
+	{"Double Holiday Gift-Standard",2,1,30971},
 	{"Quµ Song §¸n-Hµo Hoa",2,1,30972},
 }
 
@@ -102,7 +102,7 @@ function get_cur_task(nType, bGen)
 				local szTitle = format("<color=green>%s:<color> Më C©y Noel-Hµo Hoa cÇn tiªu hao %d Vµng, ®ång ý?", GetTargetNpcName(), OPEN_IB_TREE_GOLD)
             	local tSay = {}
             	tinsert(tSay, format("%s/#get_cur_task(%d,2)", "X¸c ®Þnh më", nType))
-            	tinsert(tSay, format("%s/nothing", "Rêi khái"))
+            	tinsert(tSay, format("%s/nothing", "Leave"))
             	Say(szTitle, getn(tSay), tSay)
             	return 0
 			else
@@ -183,7 +183,7 @@ function get_task_award(nType, nStep)
 	local nLevel = GetLevel()
 	local nExp = floor(tAward[1] * (nLevel^3)/(80^3))
 	ModifyExp(nExp)
-	Msg2Player(format("NhËn ®­îc %d Exp", nExp))
+	Msg2Player(format("You received %d Exp", nExp))
 	if tAward[2] > 0 then
 		add_task("id_score", tAward[2])
 		Msg2Player(format("Chóc mõng b¹n ®· nhËn ®­îc %d ®iÓm trang trÝ", tAward[2]))
@@ -191,7 +191,7 @@ function get_task_award(nType, nStep)
 	if tAward[3] > 0 then
 		local tItem = tItemBox[nType]
 		AddItem(tItem[2],tItem[3],tItem[4],tAward[3])
-		Msg2Player(format("NhËn ®­îc %d %s", tAward[3], tItem[1]))
+		Msg2Player(format("You received %d %s", tAward[3], tItem[1]))
 	end
 	add_task_byte(szTask, "byte_step", 1)
 	set_task_byte(szTask, "byte_task", 0)

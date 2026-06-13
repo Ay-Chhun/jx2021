@@ -12,9 +12,9 @@ POPID_JBZ = 5;
 POP_TASK_FLAG = 3412; --ÈÎÎñÍê³É±ê¼Ç
 
 tPopDailyTask = {
-	[1] = {{"§o¹t vÒ tiªu kú bÞ mÊt", 358, 1}, {"B¸o b×nh an", 359, 2}, {"Thiªn Hµnh Tiªu Côc-Uy tÝn", 360, 3},},
+	[1] = {{"§o¹t vÒ tiªu kú bÞ mÊt", 358, 1}, {"Report safe arrival", 359, 2}, {"Thiªn Hµnh Tiªu Côc-Uy tÝn", 360, 3},},
 	[2] = {{"Tiªu diÖt tËn gèc (H­ng Kh¸nh)", 362, 4}, {"Tiªu diÖt tËn gèc (Quúnh KÕt)", 363, 5}, {"Tiªu diÖt tËn gèc (Thiªn Long Tù)", 364, 6},},
-	[3] = {{"Mçi ngµy mét ®ãa hoa", 366, 7}, {"Thøc ¨n cña Tr­ TiÓu B¹ch", 367, 8}, {"D¹ yÕn phong phó", 368, 9},},	
+	[3] = {{"Mçi ngµy mét ®ãa hoa", 366, 7}, {"Thøc ¨n cña Tr­ TiÓu B¹ch", 367, 8}, {"A lavish night banquet", 368, 9},},	
 }
 
 tPopWeeklyTask = {
@@ -30,18 +30,18 @@ function Init()
 	AddMisEvent("event_talk_npc", "L©m Gia Thµnh-ng­êi giµu", 6300, thisFile, "pop_npc_talk3", "Danh väng Tô B¶o Trai");
 	--Clean
 	AddMisEvent("event_daily_clean", "Xö lý h»ng ngµy", 0, thisFile, "pop_daily_clean");
-	AddMisEvent("event_weekly_clean", "Xö lý h»ng tuÇn", 0, thisFile, "pop_weekly_clean");
+	AddMisEvent("event_weekly_clean", "Weekly processing", 0, thisFile, "pop_weekly_clean");
 	--Task
 	AddMisEvent("event_talk_npc", "Hµng xãm Hµn TrÝ Nh­îng",  200, thisFile, "_task_npctalk", "Ta ®Õn lÊy D©y BÇu");
 	AddMisEvent("event_talk_npc", "§¹i ChÝ C­êng", 100, thisFile, "_task_npctalk", "Ta ®Õn lÊy Qu¶ V¶i");
 	AddMisEvent("event_talk_npc", "Chu UÊt Ly", 300, thisFile, "_task_npctalk", "Ta ®Õn lÊy ThÞt L¹p");
-	AddMisEvent("event_talk_npc", "§ång M· Qu¸n", 6400, thisFile, "_task_package", "Hé tèng gãi hµng");
-	AddMisEvent("event_talk_npc", "Qu¸ch TÜnh An", 6400, thisFile, "_task_package", "Hé tèng gãi hµng");
-	AddMisEvent("event_talk_npc", "Viªn Th«ng §¹i S­", 6400, thisFile, "_task_package", "Hé tèng gãi hµng");
-	AddMisEvent("event_talk_npc", "Tiªu Thiªn Hùu", 600, thisFile, "_task_package1", "Hé tèng gãi hµng");
+	AddMisEvent("event_talk_npc", "Dong Ma Quan", 6400, thisFile, "_task_package", "Escort the cargo package");
+	AddMisEvent("event_talk_npc", "Quach Tinh An", 6400, thisFile, "_task_package", "Escort the cargo package");
+	AddMisEvent("event_talk_npc", "Viªn Th«ng §¹i S­", 6400, thisFile, "_task_package", "Escort the cargo package");
+	AddMisEvent("event_talk_npc", "Tiªu Thiªn Hùu", 600, thisFile, "_task_package1", "Escort the cargo package");
 	AddMisEvent("event_talk_npc", "Tiªu s­", 200, thisFile, "_task_talk2bs", "Th«ng b¸o t×nh h×nh tiªu côc");
 	--UseItem
-	AddMisEvent("event_use_item", format("%d%d%d", 2, 1, 31052), 0, thisFile, "pop_use_item", "LÖnh Kú Tiªu Côc");
+	AddMisEvent("event_use_item", format("%d%d%d", 2, 1, 31052), 0, thisFile, "pop_use_item", "Escort Agency Banner Order");
 	AddMisEvent("event_use_item", format("%d%d%d", 2, 1, 31053), 0, thisFile, "pop_use_item", "LÖnh Bµi Lôc PhiÕn M«n");
 	AddMisEvent("event_use_item", format("%d%d%d", 2, 1, 31054), 0, thisFile, "pop_use_item", "TÝn VËt Tô B¶o Trai");
 	AddMisEvent("event_use_item", format("%d%d%d", 2, 1, 31055), 0, thisFile, "pop_use_item", "§én KiÕm Tiªu S­");
@@ -79,9 +79,9 @@ function pop_npc_talk(nNpcIndex, nIndex)
 	local tLevelName = {
 		[0] = "S¬ xuÊt mao l­",
 		[1] = "Béc lé tµi n¨ng",
-		[2] = "Danh tiÕng th­íc khëi",
+		[2] = "Make a name and rise to fame",
 		[3] = "C«ng danh lín lao",
-		[4] = "Cùu phô thÞnh danh",
+		[4] = "Restore the prosperous name of old",
 		[5] = "V¹n ng­êi ng­ìng mé",
 	}
 	local szMsg = format("(HiÖn t¹i %s lµ <color=green>%s<color> cÊp)", tIndex2Pop[nIndex], tLevelName[GetPopLevel(nPop)]);
@@ -89,7 +89,7 @@ function pop_npc_talk(nNpcIndex, nIndex)
 		format("%s giíi thiÖu/#pop_info_msg(%d, %d)", tIndex2Pop[nIndex], nNpcIndex, nIndex),
 		format("NhiÖm vô h»ng ngµy/#pop_daily_task(%d)", nPop),
 		format("NhiÖm vô tuÇn hoµn h»ng tuÇn/#pop_weekly_task(%d)", nPop),
-		format("Cöa Hµng %s/#show_equip_shop(%d)", tIndex2Pop[nIndex], tIndex2ShopID[nIndex]),
+		format("%s Shop/#show_equip_shop(%d)", tIndex2Pop[nIndex], tIndex2ShopID[nIndex]),
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	Say(format("<color=gold>%s<color>:%s%s", szNpcName, tInfo[nIndex], szMsg), getn(tSay), tSay);
@@ -114,7 +114,7 @@ function pop_get_state(nTaskID, nBit)
 				if DirectIsTaskFinish(nTaskID) ~= 1 then
 					return "(ch­a hoµn thµnh)";
 				else
-					return "(§­îc giao)";
+					return "(Delivered)";
 				end
 			end
 		else
@@ -133,7 +133,7 @@ function pop_get_state(nTaskID, nBit)
 				if DirectIsTaskFinish(nTaskID) ~= 1 then
 					return szRet.."(ch­a hoµn thµnh)";
 				else
-					return szRet.."(§­îc giao)";
+					return szRet.."(Delivered)";
 				end
 			end
 		else
@@ -274,8 +274,8 @@ end
 function _task_package(nNpcIndex)
 	local szNpcName = GetNpcName(nNpcIndex);
 	local tTask = {
-		["§ång M· Qu¸n"] = 3414,
-		["Qu¸ch TÜnh An"] = 3415,
+		["Dong Ma Quan"] = 3414,
+		["Quach Tinh An"] = 3415,
 		["Viªn Th«ng §¹i S­"] = 3416,
 	}
 	if tGtTask:check_cur_task(360) ~= 1 then

@@ -28,7 +28,7 @@ function getaward()
 	local selTab = {
 			"L·nh phÇn th­ëng tÝch lòy/#getweekaward(0)",
 			"L·nh phÇn th­ëng dù ®o¸n kÕt qu¶ chung cuéc/getfinalaward",
-			"Ta sÏ l·nh sau/main"
+			"I will claim it later/main"
 			}
 	Say("Ho¹t ®éng lÇn nµy chuÈn bÞ cho b¹n nh÷ng gi¶i th­ëng phong phó, b¹n muèn l·nh phÇn th­ëng nµo?",getn(selTab),selTab);
 end;
@@ -39,14 +39,14 @@ function getweekaward(nType)
 	if nType == 0 then
 		local selTab = {
 				"NhËn phÇn th­ëng tÝch lòy tr¶ lêi c©u hái/#getweekaward(1)",
-				"Ta sÏ l·nh sau/main",
+				"I will claim it later/main",
 				}
 		Say("B¹n muèn l·nh phÇn th­ëng tÝch lòy nµo?",getn(selTab),selTab);
 	elseif nType == 1 then
 		local nWeekTag = GetTask(AWARD_WEEK1);
 		if nWeekTag < 0 or nWeekTag > 4 then
 			Talk(1,"main","Xin lçi! HÖ thèng b¸o lçi, xin liªn hÖ phôc vô kh¸ch hµng.");
-			WriteLog("[Lçi hái ®¸p cóp thÕ giíi cã th­ëng]: Lçi trÞ GetTask(AWARD_WEEK1), AWARD_WEEK1 lµ:"..AWARD_WEEK1..". TrÞ b¸o lçi:"..nWeekTag);
+			WriteLog("[Lçi hái ®¸p cóp thÕ giíi cã th­ëng]: Lçi trÞ GetTask(AWARD_WEEK1), AWARD_WEEK1 lµ:"..AWARD_WEEK1..". Error value:"..nWeekTag);
 			return 0;			
 		end;
 		if nWeekTag == WEEK1 then
@@ -75,7 +75,7 @@ function getweekaward(nType)
 		local nWeekTag = GetTask(AWARD_WEEK2);
 		if nWeekTag < 0 or nWeekTag > 2 then
 			Talk(1,"main","Xin lçi! HÖ thèng b¸o lçi, xin liªn hÖ phôc vô kh¸ch hµng.");
-			WriteLog("[Lçi hái ®¸p cóp thÕ giíi cã th­ëng]: Lçi trÞ sè GetTask(AWARD_WEEK2), trÞ sè AWARD_WEEK2:"..AWARD_WEEK2..". TrÞ b¸o lçi:"..nWeekTag);
+			WriteLog("[Lçi hái ®¸p cóp thÕ giíi cã th­ëng]: Lçi trÞ sè GetTask(AWARD_WEEK2), trÞ sè AWARD_WEEK2:"..AWARD_WEEK2..". Error value:"..nWeekTag);
 			return 0;			
 		end;
 		if nWeekTag == WEEK2 then
@@ -135,7 +135,7 @@ function getweekaward_confirm(nType,nCount)
 		if AddItem(1,0,32,3*nCount) == 1 then
 			Msg2Player("B¹n nhËn ®­îc "..3*nCount.." Cöu ChuyÓn Hoµn Hån §¬n");
 		end;
-		WriteLog("[Hái ®¸p cóp thÕ giíi cã th­ëng]:"..GetName().."T¹i cóp thÕ giíi tuÇn thø"..WEEK1.."nhËn ®­îc phÇn th­ëng tÝch lòy tr¶ lêi c©u hái. Sè l­îng phÇn th­ëng lµ"..nCount..".");
+		WriteLog("[Hái ®¸p cóp thÕ giíi cã th­ëng]:"..GetName().."At the World Cup in week"..WEEK1.."nhËn ®­îc phÇn th­ëng tÝch lòy tr¶ lêi c©u hái. Sè l­îng phÇn th­ëng lµ"..nCount..".");
 		Talk(1,"main","§©y lµ phÇn th­ëng tÝch lòy tr¶ lêi c©u hái! Xin h·y nhËn lÊy.");
 	else
 		SetTask(AWARD_WEEK2,WEEK2);
@@ -151,7 +151,7 @@ function getweekaward_confirm(nType,nCount)
 				end;
 			end;	
 		end;
-		WriteLog("[Hái ®¸p cóp thÕ giíi cã th­ëng]:"..GetName().."T¹i cóp thÕ giíi tuÇn thø"..WEEK2.."nhËn ®­îc phÇn th­ëng tÝch lòy tr¶ lêi c©u hái. Sè l­îng phÇn th­ëng lµ"..nCount..".");
+		WriteLog("[Hái ®¸p cóp thÕ giíi cã th­ëng]:"..GetName().."At the World Cup in week"..WEEK2.."nhËn ®­îc phÇn th­ëng tÝch lòy tr¶ lêi c©u hái. Sè l­îng phÇn th­ëng lµ"..nCount..".");
 		Talk(1,"main","§©y lµ phÇn th­ëng tÝch lòy dù ®o¸n bãng ®¸! Xin h·y nhËn lÊy.");
 	end;
 end;
@@ -199,12 +199,12 @@ function getfinalaward()
 	end;
 	local sContent = "B¹n ®· tham dù "
 	local tTable = {
-			{"","<color=yellow>Dù ®o¸n 4 ®éi cuèi cïng<color>,",""},
+			{"","<color=yellow>Predict the final 4 teams<color>,",""},
 			{"","<color=yellow>Dù ®o¸n ®éi vµo chung kÕt<color>,",""},
-			{"","<color=yellow>Dù ®o¸n ®éi v« ®Þch<color>,",""},
+			{"","<color=yellow>Predict the champion team<color>,",""},
 			}
 	local tAward = {
-			{"","<color=yellow>1 quyÓn mËt tÞch s­ m«n<color>,",""},
+			{"","<color=yellow>1 sect manual<color>,",""},
 			{"","<color=yellow>1 quyÓn sæ tay chÕ t¹o vò khÝ<color>,",""},
 			{"","<color=yellow>1 bé trang phôc ®éi bãng v« ®Þch<color>,",""},
 			}
@@ -212,7 +212,7 @@ function getfinalaward()
 	local nResult2 = judge_team2();
 	local nResult3 = judge_team_champion();
 	if nResult1 == 3 and nResult2 == 3 and nResult3 == 3 then
-		Talk(1,"getaward","<color=green>§øa bÐ<color>:"..sContent..tTable[1][nResult1-1]..tTable[2][nResult2-1]..tTable[3][nResult3-1].."KÕt qu¶ b¹n dù ®o¸n ®· sai, hy väng b¹n sÏ may m¾n h¬n.");
+		Talk(1,"getaward","<color=green>Kid<color>:"..sContent..tTable[1][nResult1-1]..tTable[2][nResult2-1]..tTable[3][nResult3-1].."KÕt qu¶ b¹n dù ®o¸n ®· sai, hy väng b¹n sÏ may m¾n h¬n.");
 		return 0;
 	elseif nResult1 == 2 or nResult2 == 2 or nResult3 == 2 then
 		local selTab = {
@@ -334,7 +334,7 @@ function give_book(tBook1,tBook2)
 		nRetCode = AddItem(tBook1[1],tBook1[2],tBook1[3],1,1);
 		if nRetCode == 1 then
 			Msg2Player("B¹n nhËn ®­îc 1 quyÓn mËt tÞch");
-			WriteLog("[Hái ®¸p cóp thÕ giíi cã th­ëng]:"..GetName().."NhËn ®­îc quyÓn mËt tÞch");
+			WriteLog("[Hái ®¸p cóp thÕ giíi cã th­ëng]:"..GetName().."Received a manual");
 		else
 			WriteLog("[Lçi hái ®¸p cóp thÕ giíi cã th­ëng]:"..GetName().."Trong hµm sè give_book trÞ quay l¹i AddItem lµ:"..nRetCode);
 		end;
@@ -342,7 +342,7 @@ function give_book(tBook1,tBook2)
 		nRetCode = AddItem(tBook2[1],tBook2[2],tBook2[3],1,1);
 		if nRetCode == 1 then
 			Msg2Player("B¹n nhËn ®­îc 1 quyÓn mËt tÞch");
-			WriteLog("[Hái ®¸p cóp thÕ giíi cã th­ëng]:"..GetName().."NhËn ®­îc quyÓn mËt tÞch");
+			WriteLog("[Hái ®¸p cóp thÕ giíi cã th­ëng]:"..GetName().."Received a manual");
 		else
 			WriteLog("[Lçi hái ®¸p cóp thÕ giíi cã th­ëng]:"..GetName().."Trong hµm sè give_book trÞ quay l¹i AddItem lµ:"..nRetCode);
 		end;
@@ -412,8 +412,8 @@ end;
 
 function knowdetail()
 	local selTab = {
-			"Lµm sao tr¶ lêi c©u hái?/howtoanswer",
-			"Lµm sao dù ®o¸n c©u hái?/howtoforecast",
+			"How to answer questions?/howtoanswer",
+			"How to predict questions?/howtoforecast",
 			"Lµm sao nhËn phÇn th­ëng?/howtogetaward",
 			"Ta ®· hiÓu råi/main",
 			}
@@ -433,12 +433,12 @@ end;
 function howtogetaward()
 	local selTab = {
 	"Gi¶i tham gia mçi ngµy/#awarddetail(1)",
-	"Gi¶i tr¶ lêi c©u hái tÝch lòy/#awarddetail(2)",
+	"Cumulative quiz answer prize/#awarddetail(2)",
 	"Gi¶i dù ®o¸n kÕt qu¶ thi ®Êu tÝch lòy/#awarddetail(3)",
 	"Gi¶i dù ®o¸n 4 ®éi vµo b¸n kÕt/#awarddetail(4)",
 	"Gi¶i dù ®o¸n ®éi vµo chung kÕt/#awarddetail(5)",
-	"Gi¶i dù ®o¸n ®éi v« ®Þch/#awarddetail(6)",
-	"Gi¶i ®Æc biÖt/#awarddetail(7)",
+	"Prize for predicting the champion team/#awarddetail(6)",
+	"Special prize/#awarddetail(7)",
 	"Ta hiÓu råi!/knowdetail",
 	};
 	Say("Gi¶i th­ëng ho¹t ®éng nµy rÊt phong phó, chØ cÇn tham gia lµ cã th­ëng. Gi¶i th­ëng chia lµm nhiÒu d¹ng: gi¶i tham gia mçi ngµy, gi¶i tr¶ lêi c©u hái tÝch lòy, gi¶i dù ®o¸n kÕt qu¶ tÝch lòy, gi¶i dù ®o¸n 4 ®éi vµo b¸n kÕt, gi¶i",getn(selTab),selTab);
@@ -479,7 +479,7 @@ function seefinalforecast()
 	else
 		str3 = "B¹n dù ®o¸n ®éi v« ®Þch lµ: <color=yellow>"..tTeam16[GetTask(TEAM_CHAMPION)].."<color>";
 	end;
-	Talk(1,"main","<color=green>§øa bÐ<color>:<enter>"..str1.."<enter>"..str2.."<enter>"..str3);
+	Talk(1,"main","<color=green>Kid<color>:<enter>"..str1.."<enter>"..str2.."<enter>"..str3);
 end;
 
 function nothing()

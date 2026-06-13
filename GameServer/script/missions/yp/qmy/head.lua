@@ -6,7 +6,7 @@ Include("\\script\\missions\\yp\\yp_head.lua")
 thisFile = "\\script\\missions\\yp\\qmy\\mission.lua";
 
 tbSLY = { 
-	name = "Th t Lπc Nhai",
+	name = "That Lac Nhai",
 --	timerID = 79,
 	missionID = 81,
 	realMapID = 6300,

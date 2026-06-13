@@ -158,7 +158,7 @@ function UseAllGetAward_new()
 	nChance = nChance + 1
 
 	local tbAward = {
-		item = {{gdp={2,1,30341,2}, name="Tµng R­¬ng"}},
+		item = {{gdp={2,1,30341,2}, name="Treasure Chest"}},
 		--nExp = 10000000,
 		nQuancong = 200,
 		nChankhi = 200,

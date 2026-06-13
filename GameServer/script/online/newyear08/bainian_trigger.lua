@@ -20,13 +20,13 @@ function main()
 	if nStep <= WIND_STEP_TOTAL then
 		local nRand = randomx(1,getn(tWindNpc[nMapId][2]),nIdx);
 		if CreateTrigger(4,tWindNpc[nMapId][3][nRand],WIND_TRIGGER_ID) == 0 then
-			WriteLog("[Ho¹t ®éng n¨m míi 08, kÕt nèi npc bÞ lçi]: Ng­êi ch¬i"..GetName().."ThiÕt lËp kÕt nèi npc CreateTrigge (4,tWindNpc[nMapId][3][nRand],WIND_TRIGGER_ID) ®· thÊt b¹i, trÞ WIND_TRIGGER_ID:"..WIND_TRIGGER_ID..". TrÞ tWindNpc[nMapId][3][nRand]:"..tWindNpc[nMapId][3][nRand]);
+			WriteLog("[Ho¹t ®éng n¨m míi 08, kÕt nèi npc bÞ lçi]: Ng­êi ch¬i"..GetName().."ThiÕt lËp kÕt nèi npc CreateTrigge (4,tWindNpc[nMapId][3][nRand],WIND_TRIGGER_ID) ®· thÊt b¹i, trÞ WIND_TRIGGER_ID:"..WIND_TRIGGER_ID..". tWindNpc[nMapId][3][nRand] value:"..tWindNpc[nMapId][3][nRand]);
 			return 0;	--´´½¨Ê§°Ü
 		end	 
 		SetTask(TASK_WIND_TABLE_IDX,nRand);
 		SetTask(TASK_WIND_STEP,GetTask(TASK_WIND_STEP)+1);
 		Talk(1,"","§a t¹. Ta nghe nãi <color=yellow>"..tWindNpc[nMapId][1].."-"..tWindNpc[nMapId][2][nRand].." <color> còng c« ®¬n, ng­¬i nªn ®i chóc tÕt h¾n.");
-		Msg2Player("t×m"..tWindNpc[nMapId][1].."-"..tWindNpc[nMapId][2][nRand].."Chóc tÕt.");
+		Msg2Player("find"..tWindNpc[nMapId][1].."-"..tWindNpc[nMapId][2][nRand].."Happy New Year.");
 	else
 		SetTask(TASK_WIND_STEP,GetTask(TASK_WIND_STEP)+1);
 		Talk(1,"","§a t¹ ®· chót tÕt mäi ng­êi, trë vÒ t×m Niªn Sø.");

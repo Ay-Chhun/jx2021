@@ -16,24 +16,24 @@ Include("Script\\Lib\\lingshi_head.lua")
 		{657,663},
 		}
 	--Âé½«°ü
-	mah_jong_bag = {{665,8,"Tói M¹c Ch­îc (tiÓu)"},{666,14,"Tói M¹c Ch­îc (®¹i)"}} --ID£¬ÕÅÊı
+	mah_jong_bag = {{665,8,"Mahjong Bag (small)"},{666,14,"Mahjong Bag (large)"}} --ID£¬ÕÅÊı
 	--Âé½«»î¶¯½±Àø°ü
 	--mah_jong_prize_bag = {{667,200,"¶ÄÏÀÒ»½±°ü"},{668,200,"¶ÄÏÀ¶ş½±°ü"},{669,200,"¶ÄÏÀÈı½±°ü"},{670,200,"¶ÄÏÀËÄ½±°ü"}}
 	--Âé½«½±Àø°ü¶ÔÓ¦½±Àø
 	Tb_mah_jong_bag_prize = {
 		--Ãû³Æ----------------------ID---¿Õ¼ä-¸ºÖØ-ÉùÍû-´ó½³Ê¦ÊÖÊé-76ÎäÆ÷-Å©É£¼­Òª-Ñ×µÛ¿ø¼×Ñ¥-Ê¦ÃÅËéÆ¬-´ò°üÔÉÌú-ÂÜ²·ÀñºĞ-´«ĞÅÑÌ»ğ-Ìú±¦Ïä
 		-------------1---------------2------3-------4----5-----6------7----8---------9-----10---11-------12----13--14--------15--16------------17-18---19-20--------21-
-		{"Con bµi ®em c­îc",667,25,700,200,300,5,10,	10,	50,	100,100,50,60,	3,50,	1095,2,0,25,"\n 100%: 10 mãn vò khİ cÊp 76, danh väng 200-300 ®iÓm, 5 quyÓn mËt tŞch, 2 hép quµ cñ c¶i lín \n 60%: 1-3 tÊm b¶n vÏ vò khİ m«n ph¸i\n 50%: Gãi Thiªn Th¹ch, N«ng Tang phæ\n 25%: <color=red>R­¬ng s¾t NguyÖt L­îng Thè<color>\n 10%: <color=red>Viªm §Õ Gi¸p<color>\n 10%: <color=red>Viªm §Õ Kh«i<color>\n  5%: <color=red>Viªm §Õ Trang<color>"},
-		{"Con bµi 2 ®em c­îc",668,20,600,100,200,4,8,	8,	30,	30,	30,	0,30,	3,25,	1095,1,3,10,"\n 100%: 8 mãn vò khİ cÊp 76, danh väng 100-200 ®iÓm, 4 quyÓn mËt tŞch, 1 hép quµ cñ c¶i lín, 3 Ph¸o hoa ®­a tin\n 30%: 1-3 tÊm b¶n vÏ vò khİ m«n ph¸i, N«ng Tang phæ\n 25%: Gãi Thiªn Th¹ch\n 10%: <color=red>R­¬ng s¾t NguyÖt L­îng Thè<color>\n  3%: <color=red>Viªm §Õ Gi¸p<color>\n  3%: <color=red>Viªm §Õ Kh«i<color>"},
-		{"Con bµi 3 ®em c­îc",669,15,400,50,80,	2,4,	4,	20,	0,	6,	0,5,	2,10,	1094,8,2,0,"\n 100%: 4 mãn vò khİ cÊp 76, danh väng 50-80 ®iÓm, 2 quyÓn mËt tŞch, 8 hép quµ cñ c¶i nhá, 2 Ph¸o hoa ®­a tin\n 10%: Gãi Thiªn Th¹ch, N«ng Tang phæ\n 5%: 1-2 tÊm b¶n vÏ vò khİ m«n ph¸i \n   0.6%: <color=red>Viªm §Õ Gi¸p<color>"},
-		{"Con bµi 4 ®em c­îc",670,11,300,20,30,	1,2,	2,	5,	0,	3,	0,1,	1,5,	1094,5,1,0,"\n 100%: 2 mãn vò khİ cÊp 76, danh väng 20-30 ®iÓm, 1 quyÓn mËt tŞch, 5 hép quµ cñ c¶i nhá, 1 Ph¸o hoa ®­a tin\n  5%: Gãi Thiªn Th¹ch, N«ng Tang phæ\n  1%: b¶n vÏ vò khİ m«n ph¸i\n 0.3%: <color=red>Viªm §Õ Gi¸p<color>"},
+		{"Betting Tile",667,25,700,200,300,5,10,	10,	50,	100,100,50,60,	3,50,	1095,2,0,25,"\n 100%: 10 mãn vò khİ cÊp 76, danh väng 200-300 ®iÓm, 5 quyÓn mËt tŞch, 2 hép quµ cñ c¶i lín \n 60%: 1-3 tÊm b¶n vÏ vò khİ m«n ph¸i\n 50%: Gãi Thiªn Th¹ch, N«ng Tang phæ\n 25%: <color=red>R­¬ng s¾t NguyÖt L­îng Thè<color>\n 10%: <color=red>Viªm §Õ Gi¸p<color>\n 10%: <color=red>Viªm §Õ Kh«i<color>\n  5%: <color=red>Viªm §Õ Trang<color>"},
+		{"Betting Tile 2",668,20,600,100,200,4,8,	8,	30,	30,	30,	0,30,	3,25,	1095,1,3,10,"\n 100%: 8 mãn vò khİ cÊp 76, danh väng 100-200 ®iÓm, 4 quyÓn mËt tŞch, 1 hép quµ cñ c¶i lín, 3 Ph¸o hoa ®­a tin\n 30%: 1-3 tÊm b¶n vÏ vò khİ m«n ph¸i, N«ng Tang phæ\n 25%: Gãi Thiªn Th¹ch\n 10%: <color=red>R­¬ng s¾t NguyÖt L­îng Thè<color>\n  3%: <color=red>Viªm §Õ Gi¸p<color>\n  3%: <color=red>Viªm §Õ Kh«i<color>"},
+		{"Betting Tile 3",669,15,400,50,80,	2,4,	4,	20,	0,	6,	0,5,	2,10,	1094,8,2,0,"\n 100%: 4 mãn vò khİ cÊp 76, danh väng 50-80 ®iÓm, 2 quyÓn mËt tŞch, 8 hép quµ cñ c¶i nhá, 2 Ph¸o hoa ®­a tin\n 10%: Gãi Thiªn Th¹ch, N«ng Tang phæ\n 5%: 1-2 tÊm b¶n vÏ vò khİ m«n ph¸i \n   0.6%: <color=red>Viªm §Õ Gi¸p<color>"},
+		{"Betting Tile 4",670,11,300,20,30,	1,2,	2,	5,	0,	3,	0,1,	1,5,	1094,5,1,0,"\n 100%: 2 mãn vò khİ cÊp 76, danh väng 20-30 ®iÓm, 1 quyÓn mËt tŞch, 5 hép quµ cñ c¶i nhá, 1 Ph¸o hoa ®­a tin\n  5%: Gãi Thiªn Th¹ch, N«ng Tang phæ\n  1%: b¶n vÏ vò khİ m«n ph¸i\n 0.3%: <color=red>Viªm §Õ Gi¸p<color>"},
 	}
 	--ËùÓĞÂé½«³õÊ¼»¯
 	mah_jong = {
-			"NhÊt ®ång","NhŞ ®ång","Tam ®ång","Tø ®ång","Ngò ®ång","Lôc ®ång","ThÊt ®ång","B¸t ®ång","Cöu ®ång",
-			"Mét","NhŞ ®iÒu","Ba","Bèn","Ngò ®iÒu","Lôc ®iÒu","ThÊt ®iÒu","B¸t ®iÒu","Cöu ®iÒu",
-			"NhÊt v¹n","NhŞ v¹n","Tam v¹n","Tø v¹n","Ngò v¹n","Lôc v¹n","ThÊt v¹n","B¸t v¹n","Cöu v¹n",
-			"§«ng phong","Nam phong","T©y phong","B¾c phong","Hång trung","ph¸t tµi","B¹ch ban"}
+			"One Copper","Two Copper","Three Copper","Four Copper","Five Copper","Six Copper","Seven Copper","Eight Copper","Cöu ®ång",
+			"One","Two Bars","Ba","Four","Five Bars","Six Bars","Seven Bars","Eight Bars","Cöu ®iÒu",
+			"Ten Thousand","Twenty Thousand","Thirty Thousand","Forty Thousand","Fifty Thousand","Sixty Thousand","Seventy Thousand","Eighty Thousand","Cöu v¹n",
+			"East Wind","Nam phong","West Wind","North Wind","Hång trung","Riches","B¹ch ban"}
 	--ÌØÊâÂé½«ID
 	spec_mahj_id_start = 1108
 	spec_mahj_id_end = 1111
@@ -67,9 +67,9 @@ function OnUse(goods_index)
 	--Âé½«°ü¶Ò»»½±Àø
 	elseif goods_id == mah_jong_bag[1][1] or goods_id == mah_jong_bag[2][1] then
 		local bag_diff = (goods_id + 1) - mah_jong_bag[1][1]
-		Say("<color=green>Nh¾c nhë<color>: B¹n x¸c nhËn muèn sö dông: <color=green>".. mah_jong_bag[bag_diff][3].."<color> ®æi <color=green>".. mah_jong_bag[bag_diff][2].."<color> M¹c ch­îc ­?",
+		Say("<color=green>Nh¾c nhë<color>: B¹n x¸c nhËn muèn sö dông: <color=green>".. mah_jong_bag[bag_diff][3].."<color> to exchange <color=green>".. mah_jong_bag[bag_diff][2].."<color> Mahjong tiles?",
 		2,
-		"§æi/#mah_jong_bag_chg("..bag_diff..")",
+		"Exchange/#mah_jong_bag_chg("..bag_diff..")",
 		"§Ó ta suy nghÜ l¹i/end_dialog")
 	--Âé½«½±Àø°ü»»È¡½±Àø
 	elseif goods_id >= Tb_mah_jong_bag_prize[1][2] and goods_id <= Tb_mah_jong_bag_prize[4][2] then  	
@@ -96,7 +96,7 @@ function OnUse(goods_index)
 	elseif goods_id == mahj_prize_5th[1] then
 		Say("<color=green>Nh¾c nhë<color>: B¹n x¸c nhËn muèn sö dông <color=yellow>§æ HiÖp Ngò Th­ëng Bao<color>!\n"..mahj_prize_5th[2],
 		2,
-		"§æi/mah_jong_przie_5",
+		"Exchange/mah_jong_przie_5",
 		"§Ó ta suy nghÜ l¹i/end_dialog"
 		)
 	end
@@ -172,7 +172,7 @@ function mah_jong_add(goods_id,color_diff)
 			if add_flag == 1 then
 				Msg2Player("Chóc mõng b¹n ®æi ®­îc 1 qu©n bµi ®Æc biÖt"..mah_jong[goods_id - start_seq[1][1] +1].."!")
 			else
-				WriteLog ("Ng­êi ch¬i:"..GetName().."Dïng con bµi ®Æc biÖt ®æi"..mah_jong[goods_id - start_seq[1][1] +1].."ThÊt b¹i!")
+				WriteLog ("Ng­êi ch¬i:"..GetName().."Use the special tile to exchange"..mah_jong[goods_id - start_seq[1][1] +1].."ThÊt b¹i!")
 			end
 		end
 	end
@@ -238,8 +238,8 @@ function mah_jong_prize(prize_diff)
 		if add_flag == 1 then
 			SetTask(mah_jong_prize_shoe,1)
 			Msg2Player("Chóc mõng b¹n nhËn ®­îc Viªm §Õ Trang!")
-			Msg2SubWorld("Chóc mõng ng­êi ch¬i:"..GetName().."sö dông"..Tb_mah_jong_bag_prize[prize_diff][1].."NhËn ®­îc Viªm §Õ Trang!")
-			WriteLog("Ng­êi ch¬i:"..GetName().."sö dông"..Tb_mah_jong_bag_prize[prize_diff][1].."NhËn ®­îc Viªm §Õ Trang!")
+			Msg2SubWorld("Chóc mõng ng­êi ch¬i:"..GetName().."sö dông"..Tb_mah_jong_bag_prize[prize_diff][1].."Received the Yan Di Set!")
+			WriteLog("Ng­êi ch¬i:"..GetName().."sö dông"..Tb_mah_jong_bag_prize[prize_diff][1].."Received the Yan Di Set!")
 		else
 			WriteLog("Ho¹t ®éng 1/5: Ng­êi ch¬i "..GetName().."T¨ng thªm Viªm §Õ Trang thÊt b¹i, kı hiÖu:"..add_flag)
 		end
@@ -251,7 +251,7 @@ function mah_jong_prize(prize_diff)
 		local add_flag = AddItem(2,1,1056,1)
 		if add_flag == 1 then
 			Msg2Player("Chóc mõng b¹n nhËn ®­îc N«ng Tang phæ!")
-			Msg2SubWorld("Chóc mõng ng­êi ch¬i:"..GetName().."sö dông"..Tb_mah_jong_bag_prize[prize_diff][1].."NhËn ®­îc N«ng Tang phæ!")
+			Msg2SubWorld("Chóc mõng ng­êi ch¬i:"..GetName().."sö dông"..Tb_mah_jong_bag_prize[prize_diff][1].."Received the Nong Tang Manual!")
 		else
 			WriteLog("Ho¹t ®éng 1/5: Ng­êi ch¬i "..GetName().."T¨ng thªm N«ng Tang phæ thÊt b¹i, kı hiÖu:"..add_flag)
 		end	
@@ -262,7 +262,7 @@ function mah_jong_prize(prize_diff)
 		local add_flag = AddItem(2,1,1086,add_ran_num)
 		if add_flag == 1 then
 			Msg2Player("Chóc mõng b¹n nhËn ®­îc "..add_ran_num.." B¶n vÏ ®óc t¹o thÇn khİ!")
-			Msg2SubWorld("Chóc mõng ng­êi ch¬i:"..GetName().."sö dông"..Tb_mah_jong_bag_prize[prize_diff][1].."NhËn ®­îc "..add_ran_num.." B¶n vÏ ®óc t¹o thÇn khİ!")
+			Msg2SubWorld("Chóc mõng ng­êi ch¬i:"..GetName().."sö dông"..Tb_mah_jong_bag_prize[prize_diff][1].."Received"..add_ran_num.." B¶n vÏ ®óc t¹o thÇn khİ!")
 		else
 			WriteLog("Ho¹t ®éng 1/5: Ng­êi ch¬i "..GetName().."T¨ng"..add_ran_num.." B¶n vÏ ®óc t¹o thÇn khİ  thÊt b¹i, kı hiÖu:"..add_flag)
 		end

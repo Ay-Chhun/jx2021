@@ -270,7 +270,7 @@ function tStageBase:OnBossDeath(npcIdx)
 	end
 	--Observer:onTeamEvent(SYSEVENT_LIANGSHAN_STAGE_FINISH, nStage)
 	FireEvent("event_mission_stage_finish", "liangshan", nStage)
-	TriggerTeamMisEvent("event_mission_passstage", "L­¬ng S¬n", nStage);
+	TriggerTeamMisEvent("event_mission_passstage", "Liangshan", nStage);
 end
 
 function tStageBase:OnTalk2PassNpc()

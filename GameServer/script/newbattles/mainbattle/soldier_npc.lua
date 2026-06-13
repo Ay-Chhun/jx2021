@@ -9,7 +9,7 @@ function main()
 	local selTab = {
 				" ®· tiÕn vµo hËu doanh/enter_back_camp",						
 				"Rêi khái chiÕn tr­êng/ask_reason",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"End dialogue/nothing",
 				}
 	local nCamp = BT_GetCamp()
 	if nCamp == SONG_ID and GetMissionV(MV_MID_TRAP_SONG) == 1 then
@@ -28,7 +28,7 @@ function main()
 end;
 
 function ask_reason()
-	AskClientForString("leave","NhÑ nhµng rêi khái...",1,32,"Sao ph¶i rêi khái?");
+	AskClientForString("leave","Gently leaving...",1,32,"Sao ph¶i rêi khái?");
 end;	
 
 function leave(sLeaveMsg)

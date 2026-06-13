@@ -14,7 +14,7 @@ function OnUse()
 		if DelItem(tBattleItem[7][2],tBattleItem[7][3],tBattleItem[7][4],1) == 1 then
 			local nCamp = BT_GetCamp();
 			local nEnemyCamp = 3 - nCamp;
-			local nNpcIndex = CreateNpc("S¨n t∆c l©u la","S¨n t∆c l©u la ("..tCampNameZ[nCamp]..")",GetWorldPos())
+			local nNpcIndex = CreateNpc("S¨n t∆c l©u la","Mountain Bandit Minion ("..tCampNameZ[nCamp]..")",GetWorldPos())
 			SetNpcDeathScript(nNpcIndex,"\\settings\\static_script\\kf_newbattles\\resourcebattle\\cateran_louluo_death.lua");
 			SetNpcLifeTime(nNpcIndex,15);
 			Dec_Resource(nEnemyCamp,15);	--ø€∂‘∑Ωµƒ¡∏≤›

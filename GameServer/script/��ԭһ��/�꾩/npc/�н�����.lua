@@ -19,7 +19,7 @@ Zgc_com_jue_table = {
 	{4,"Phong C«n quyÕt"},
 	{6,"Nhiªn Méc §ao quyÕt"},
 	{7,"V« Th­êng C«n quyÕt"},
-	{8,"X¶ Th©n QuyÕt"},
+	{8,"Body Forsaking Art"},
 	{9,"§¹i Nh­ Lai quyÕt"},
 	{11,"ThÊt B¶o ChiÕu quyÕt"},
 	{12,"La H¸n QuyÒn quyÕt"},
@@ -27,7 +27,7 @@ Zgc_com_jue_table = {
 	{15,"Vi §µ quyÕt"},
 	{16,"V¨n V©n quyÕt"},
 	{17,"La H¸n TrËn quyÕt"},
-	{18,"§¹i Tu Di Ch­ëng"},
+	{18,"Great Sumeru Palm"},
 	{19,"V« ¶nh quyÕt"},
 	{21,"Phôc Hæ quyÕt"},
 	{22,"Tu T©m quyÕt"},
@@ -52,10 +52,10 @@ Zgc_com_jue_table = {
 	{43,"B¹o Ch©m quyÕt"},
 	{44,"Hµm Xa quyÕt"},
 	{45,"Táa MÖnh Ch©m quyÕt"},
-	{47,"Quan ¢m QuyÕt"},
+	{47,"Guanyin Art"},
 	{48,"Nga My PhËt quyÕt"},
 	{49,"Ngäc N÷ KiÕm quyÕt"},
-	{50,"§é Nguyªn QuyÕt"},
+	{50,"Origin Crossing Art"},
 	{51,"PhËt Phæ quyÕt"},
 	{52,"Liªn Hoa quyÕt"},
 	{54,"L­u Thñy yÕu quyÕt"},
@@ -109,10 +109,10 @@ Zgc_com_jue_table = {
 	{111,"Lôc Hãa C«ng quyÕt"},
 	{112,"ThÕ V©n Tung quyÕt"},
 	{113,"ThÊt Tinh TrËn"},
-	{115,"ThiÕu ¢m QuyÕt"},
+	{115,"Lesser Yin Art"},
 	{116,"B¾c §Èu TrËn quyÕt"},
-	{117,"Tµn ¶nh QuyÕt"},
-	{118,"Cµn Kh«n QuyÕt"},
+	{117,"Fading Shadow Art"},
+	{118,"Universe Art"},
 	{120,"Th­¬ng Ph¸p quyÕt"},
 	{121,"Ph¸ Phong Th­¬ng quyÕt"},
 	{122,"Ngù M· quyÕt"},
@@ -133,25 +133,25 @@ Zgc_com_jue_table = {
 	{140,"Tôc MÖnh quyÕt"},
 	{142,"Bİ kiÕp Ngò §éc §ao Ph¸p"},
 	{143,"Bİ kiÕp DÉn Hån Chó"},
-	{144,"Bİ kiÕp Thao Thi ThuËt"},
-	{145,"Bİ kiÕp Thi §éc ThuËt"},
+	{144,"Thao Thi Thuat secret manual"},
+	{145,"Thi Doc Thuat secret manual"},
 	{146,"Bİ kiÕp Thi Béc §¹i Ph¸p"},
-	{147,"Bİ kiÕp TËp Thi Tµ Khİ"},
-	{148,"Bİ kiÕp Ngù Thi ThuËt"},
+	{147,"Tap Thi Ta Khi secret manual"},
+	{148,"Ngu Thi Thuat secret manual"},
 	{149,"Bİ kiÕp V¹n §éc §o¹t MÖnh §ao"},
 	{150,"Bİ kiÕp ¢m Tµ HÊp Hån Khİ"},
 	{152,"Bİ kiÕp Tµ Linh §¹i Ph¸p"},
 	{153,"Bİ kiÕp Tµ §éc C«ng"},
 	{155,"Bİ kiÕp H¹ Cæ MËt Ph­¬ng"},
-	{156,"Bİ kiÕp Phong Cæ"},
-	{157,"Bİ kiÕp D­ìng Cæ Bİ ThuËt"},
+	{156,"Phong Co secret manual"},
+	{157,"Duong Co Bi Thuat secret manual"},
 	{158,"Bİ kiÕp Cuång Phong Tr¶o"},
-	{159,"Bİ kiÕp §éc Cæ"},
+	{159,"Doc Co secret manual"},
 	{160,"Bİ kiÕp HuyÕt §Ønh C«ng"},
-	{161,"Bİ kiÕp HuyÕt Cæ"},
-	{162,"Bİ kiÕp H­¬ng Cæ"},
-	{163,"Bİ kiÕp Thi Cæ"},
-	{164,"Bİ kiÕp Yªu Cæ"},
+	{161,"Huyet Co secret manual"},
+	{162,"Huong Co secret manual"},
+	{163,"Thi Co secret manual"},
+	{164,"Yeu Co secret manual"},
 	{165,"Bİ kiÕp T©m Cæ"},
 	{166,"Bİ kiÕp V¹n Cæ Thùc Thiªn"},			
 }
@@ -160,15 +160,15 @@ Zgc_adv_jue_talbe = {
 	{10,"§¹t Ma Vò quyÕt"},
 	{14,"HuÖ Nh·n quyÕt"},
 	{20,"Long Tr¶o Thñ quyÕt"},
-	{29,"S­ Tö Hèng"},
+	{29,"Lion's Roar"},
 	{31,"Kim Cang ChØ quyÕt"},
 	{46,"M·n Thiªn Vò quyÕt"},
 	{53,"Thanh Ph¹n quyÕt"},
 	{59,"§¹i Bi quyÕt"},
 	{67,"Phóc Thñy ph¸p"},
 	{70,"Mª T©m Khóc quyÕt"},
-	{78,"Tóy §iÖp"},
-	{79,"Tóy QuyÒn"},
+	{78,"Drunken Butterfly"},
+	{79,"Drunken Fist"},
 	{83,"Nª Thu quyÕt"},
 	{88,"§¶ CÈu quyÕt"},
 	{99,"Tİch D­¬ng KiÕm quyÕt"},
@@ -179,10 +179,10 @@ Zgc_adv_jue_talbe = {
 	{130,"Bİch Th­¬ng quyÕt"},
 	{138,"To¸i TiÔn quyÕt"},
 	{141,"L­u TuyÖt TiÔn quyÕt"},
-	{151,"Bİ kiÕp Th«i Thi Tµ Khİ"},
+	{151,"Thoi Thi Ta Khi secret manual"},
 	{154,"Bİ kiÕp Thi LiÖt Ma C«ng"},
-	{168,"Bİ kiÕp Tµm Cæ"},
-	{167,"Bİ kiÕp HuyÔn Cæ"}
+	{168,"Tam Co secret manual"},
+	{167,"Huyen Co secret manual"}
 }
 Zgc_master_com_id = {
 	205,206,207,208,209,350,390
@@ -198,8 +198,8 @@ function main()
 		Say("§õng hái ta sao cø b«n ba kh¾p n¬i! Tuy ta kh«ng ph¶i lµ ng­êi xuÊt gia nh­ng lóc nµo còng tiªu diªu tù t¹i, kÎ phµm phu tôc tö sao cã thÓ hiÓu ®­îc?",
 			3,
 			"Ta ®Õn nhËn nhiÖm vô thu thËp/#createCollectTalk(\"Hµnh C­íc Th­¬ng Nh©n\")",
-			"Ta ®Õn ®æi Bİ kiÕp/Dialog_main",
-			"Rêi khái/Zgc_dialog_end"
+			"I've come to exchange the Secret Manual/Dialog_main",
+			"Leave/Zgc_dialog_end"
 		)
 		elseif checkCollectNpc(nMap, strName) ==1 then
 			createCollectTalk(strName)
@@ -220,7 +220,7 @@ function Dialog_main()
 		"H«m nay cßn bao nhiªu lÇn ®æi/Zgc_jue_change_time_inq",
 		--"ÎÒÒª¿´¿´ÄÄĞ©ÊÇÏ¡ÊÀ¾÷Òª/Zgc_jue_change_com_jue_inq",
 		"T×m hiÓu quy t¾c ®æi/Zgc_jue_change_rule_inq",
-		"KÕt thóc/Zgc_dialog_end"
+		"End/Zgc_dialog_end"
 	)
 end
 ------------------------------------------¶Ò»»¶Ô»°----------------------------------------
@@ -231,7 +231,7 @@ function Zgc_jue_change_main()
 		"Ng­¬i muèn ®æi lÖnh bµi s­ m«n lÊy 1 bİ kiÕp (cÇn 2 tiÒn Vµng vµ 2 lÖnh bµi s­ m«n)/#Zgc_jue_chg_cond_chk(1)",
 		"Ng­¬i muèn ®æi lÖnh bµi s­ m«n lÊy 5 bİ kiÕp (cÇn 10 tiÒn Vµng vµ 10 lÖnh bµi s­ m«n)/#Zgc_jue_chg_cond_chk(5)",
 		"Ng­¬i muèn ®æi lÖnh bµi s­ m«n lÊy 10 bİ kiÕp (cÇn 20 tiÒn Vµng vµ 20 lÖnh bµi s­ m«n)/#Zgc_jue_chg_cond_chk(10)",
-		"KÕt thóc/Zgc_dialog_end"		
+		"End/Zgc_dialog_end"		
 	)
 end
 
@@ -245,7 +245,7 @@ function Zgc_jue_chg_cond_chk(change_num)
 			"Ta biÕt råi!/Zgc_dialog_end"
 		)
 	elseif GetItemCount(2,0,Zgc_master_com_id[Actor_function]) < (2 * change_num) or GetCash() < (20000 * change_num) then		--ÅĞ¶Ï¶Ò»»ÎïÆ·Ìõ¼şÊÇ·ñ·ûºÏ
-		Say ("§¹i hiÖp ®õng ®ïa víi l·o phu! H·y xem lÖnh bµi vµ ng©n l­îng trong hµnh trang cã ®ñ kh«ng? Nhí kü! NhÊt ®Şnh ph¶i cã"..(2*change_num).." lÖnh bµi vµ "..(2*change_num).." Xu míi cã thÓ ®æi"..change_num.." Bİ kiÕp.",
+		Say ("§¹i hiÖp ®õng ®ïa víi l·o phu! H·y xem lÖnh bµi vµ ng©n l­îng trong hµnh trang cã ®ñ kh«ng? Nhí kü! NhÊt ®Şnh ph¶i cã"..(2*change_num).." lÖnh bµi vµ "..(2*change_num).." Xu míi cã thÓ ®æi"..change_num.." Secret Manual.",
 			1,
 			"Ta biÕt råi!/Zgc_dialog_end"
 		)
@@ -296,20 +296,20 @@ YUE_EXCHANGE = 5
 
 tRouteYue =
 {
-		{"ThiÕu L©m Tôc Gia", 1, {1,8}, {1,2}},
+		{"Shaolin Lay Disciple", 1, {1,8}, {1,2}},
 		{"ThiÕu L©m ThiÒn T«ng", 2, {17,25}, {5,6}},
 		{"ThiÕu L©m Vâ T«ng", 3, {9,16}, {3,4}},
 		{"§­êng M«n", 4, {26,39}, {7,7}},
-		{"Nga My PhËt Gia", 5, {40,50}, {8,9}},
-		{"Nga My Tôc Gia", 6, {51,59}, {10,11}},
-		{"C¸i Bang TÜnh Y", 7, {60,66}, {12,13}},
-		{"C¸i Bang ¤ Y", 8, {67,73}, {14,15}},
-		{"Vâ §ang §¹o Gia", 9, {74,91}, {16,17}},
-		{"Vâ §ang Tôc Gia",10, {92,100}, {18,19}},	
+		{"Emei Buddhist", 5, {40,50}, {8,9}},
+		{"Emei Lay Disciple", 6, {51,59}, {10,11}},
+		{"Beggars' Sect Pure Robe", 7, {60,66}, {12,13}},
+		{"Beggars' Guild Dirty Robe", 8, {67,73}, {14,15}},
+		{"Wudang Daoist", 9, {74,91}, {16,17}},
+		{"Wudang Lay Disciple",10, {92,100}, {18,19}},	
 		{"D­¬ng Gia Th­¬ng Kş", 11, {101,109}, {20,21}},
 		{"D­¬ng Gia Cung Kş",12, {110,118}, {22,23}},
-		{"Ngò §éc HiÖp §éc", 13, {119,129}, {24,25}},
-		{"Ngò §éc Tµ §éc", 14, {130,141}, {26,27}},
+		{"Five Venoms Hero Venom", 13, {119,129}, {24,25}},
+		{"Five Venoms Evil Venom", 14, {130,141}, {26,27}},
 }
 
 function exchange_yue()	
@@ -343,7 +343,7 @@ function do_exchange(nSelected)
 	end	
 	SetTaskTemp(TSK_TMP_SELECT_YUE,nSelected)	
 	local nSlot = YUE_EXCHANGE	
-	PutinItemBox("§æi YÕu QuyÕt" ,nSlot , "X¸c nhËn muèn thùc hiÖn?", FILE_NAME, 1)
+	PutinItemBox("Exchange Essential Formula" ,nSlot , "X¸c nhËn muèn thùc hiÖn?", FILE_NAME, 1)
 end
 
 function OnPutinCheck(param, idx, genre, detail, particular)
@@ -478,13 +478,13 @@ function Zgc_jue_pay(adv_flag)
 				Msg2Player("Chóc mõng! B¹n nhËn ®­îc 1 quyÓn"..change_jue_name..", ngµy mai h·y quay l¹i ®©y.")
 			end
 			--AddGlobalNews("[ĞĞ½ÅÉÌÈË]:"..GetName().."ÏÀÊ¿»ñµÃÁËÏ¡ÊÀ¾÷Òª"..change_jue_name.."Ò»±¾£¬×£ËûÔçÈÕÁìÎòÎäÑ§ÕæÚĞ¡£")
-			WriteLog("Ng­êi ch¬i:"..GetName().."§æi 1 quyÓn "..change_jue_name.."Bİ kiÕp cao cÊp.")
+			WriteLog("Ng­êi ch¬i:"..GetName().."Exchange 1 volume"..change_jue_name.."Bİ kiÕp cao cÊp.")
 			SetTask(Zgc_change_date_id,date_now)
 			SetTask(Zgc_change_date_num_id,change_jue_times_now)		
 			SetTask(Zgc_adv_jue_remain_day_id,date_now)
 			SetTask(Zgc_adv_jue_remain_times_id,0)
 		else
-			WriteLog("Ng­êi ch¬i:"..GetName().."§æi 1 quyÓn "..change_jue_name.." thÊt b¹i! TrŞ quay l¹i:"..add_flag..".")
+			WriteLog("Ng­êi ch¬i:"..GetName().."Exchange 1 volume"..change_jue_name.." thÊt b¹i! TrŞ quay l¹i:"..add_flag..".")
 		end
 	else
 		change_jue_seq = random (1,getn(Zgc_com_jue_table))
@@ -502,7 +502,7 @@ function Zgc_jue_pay(adv_flag)
 			local adv_jue_times = GetTask(Zgc_adv_jue_remain_times_id) + 1
 			SetTask(Zgc_adv_jue_remain_times_id,adv_jue_times)
 		else
-			WriteLog("Ng­êi ch¬i:"..GetName().."§æi bİ kiÕp phæ th«ng"..change_jue_name.." thÊt b¹i, trŞ quay l¹i:"..add_flag..".")
+			WriteLog("Ng­êi ch¬i:"..GetName().."Exchange common secret manual"..change_jue_name.." thÊt b¹i, trŞ quay l¹i:"..add_flag..".")
 		end
 	end
 end

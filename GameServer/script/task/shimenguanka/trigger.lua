@@ -151,7 +151,7 @@ function OnTimer()
 		end
 		if GetTask(2508) < nMinRequired then
 			StopTransfer()
-			Talk(1,"","Thêi gian ñy th¸c B¹ch C©u Tiªn §¬n kh«ng ®ñ "..nMinRequired.." phót!")	
+			Talk(1,"","Thêi gian ñy th¸c B¹ch C©u Tiªn §¬n kh«ng ®ñ "..nMinRequired.." minutes!")	
 			return
 		end
 		local nDate, nTotal = TransNeiliGetTask(nTaskGetExp)
@@ -195,7 +195,7 @@ function OnTimer()
 										if nSkillType == 3 then
 											szLogTitle = szLogTitle.." Di Hoa Tiep Ngoc"
 										end
-										WriteLogEx(szLogTitle,"mÊt", nExpLose,"®iÓm kinh nghiÖm")
+										WriteLogEx(szLogTitle,"lost", nExpLose,"®iÓm kinh nghiÖm")
 									else
 										SetCurrentNpcSFX(PIdx2NpcIdx(),917,1,1)
 										Msg2Player("§iÓm kinh nghiÖm cña b¹n kh«ng ®ñ.")
@@ -209,7 +209,7 @@ function OnTimer()
 								if nSkillType == 1 then
 									nMinRequired = 1
 								end
-								Msg2Player("Thêi gian ñy th¸c B¹ch C©u Hoµn kh«ng ®ñ "..nMinRequired.." phót!")
+								Msg2Player("Thêi gian ñy th¸c B¹ch C©u Hoµn kh«ng ®ñ "..nMinRequired.." minutes!")
 							end
 						else
 							SetCurrentNpcSFX(PIdx2NpcIdx(),917,1,1)
@@ -289,7 +289,7 @@ function OnTimer()
 			SetTaskTemp(TSK_TMP_PRACTICE_NEILI,0)
 			SetTaskTemp(TSK_TMP_NEILI_TYPE_SP,0)
 			SetCurrentNpcSFX(PIdx2NpcIdx(),917,1,1)
-			Talk(1,"","Thêi gian ñy th¸c kh«ng ®ñ "..nMinRequired.." phót!")			
+			Talk(1,"","Thêi gian ñy th¸c kh«ng ®ñ "..nMinRequired.." minutes!")			
 			return
 		end
 		local nTaskID = tb_TASKID_TYPE[nType]		
@@ -454,7 +454,7 @@ function activate_transfer_neili(nSkillType)
 		return
 	end
 	if GetTask(2508) < nMinRequired then
-		Talk(1,"","Thêi gian ñy th¸c B¹ch C©u Tiªn §¬n kh«ng ®ñ "..nMinRequired.." phót!")	
+		Talk(1,"","Thêi gian ñy th¸c B¹ch C©u Tiªn §¬n kh«ng ®ñ "..nMinRequired.." minutes!")	
 		return
 	end	
 	local nDate, nTotal = TransNeiliGetTask(nTaskGetExp)
@@ -494,7 +494,7 @@ function activate_transfer_neili(nSkillType)
 				break
 			end
 			if GetTask(2501) < nMinRequired then
-				Msg2Player("Thêi gian ñy th¸c B¹ch C©u Hoµn kh«ng ®ñ "..nMinRequired.." phót.")
+				Msg2Player("Thêi gian ñy th¸c B¹ch C©u Hoµn kh«ng ®ñ "..nMinRequired.." minutes.")
 				nCheck = 0
 				break
 			end
@@ -526,7 +526,7 @@ function activate_transfer_neili(nSkillType)
 		SetTaskTemp(TSK_TMP_NEILI_TYPE_SP, nSkillType)
 		if PlayerIndex ~= PlayerIdx then
 			SetPlayerScript(CALL_BACK_FILE,PlayerTeamIdx)			
-			Say2SomeOne(PlayerTeamIdx,"§éi tr­ëng kÝch ho¹t <color=yellow>B¾c §Èu TruyÒn C«ng ThuËt<color>, b¹n x¸c nhËn muèn tham gia?",2,"§ång ý!/#confirm_trans_neili("..nSkillType..")","Ta kh«ng muèn/nothing")
+			Say2SomeOne(PlayerTeamIdx,"§éi tr­ëng kÝch ho¹t <color=yellow>B¾c §Èu TruyÒn C«ng ThuËt<color>, b¹n x¸c nhËn muèn tham gia?",2,"Agree!/#confirm_trans_neili("..nSkillType..")","Ta kh«ng muèn/nothing")
 		end
 	end
 	CreateTrigger(1, 1107, 2509);
@@ -628,7 +628,7 @@ function confirm_active_pratice(nType,nSkillType,nSelect)
 	local nMed = GetTask(2507)
 	local nBig = GetTask(2508)
 	if nSmall < tb_Practice[nSelect][2] or nMed < tb_Practice[nSelect][3] or nBig < tb_Practice[nSelect][4] then	
-		Talk(1,"","Thêi gian ñy th¸c kh«ng ®ñ "..nMinRequired.." phót!")	
+		Talk(1,"","Thêi gian ñy th¸c kh«ng ®ñ "..nMinRequired.." minutes!")	
 		return
 	end
 	local nTaskID = tb_TASKID_TYPE[nType]		

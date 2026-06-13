@@ -8,15 +8,15 @@ function OnUse(nItemIdx)
 	local nCurCount = GetTask(TSK_COUNTER)+1;
 	local selTab = {
 				format("§­îc råi. B¾t ®Çu më th«i!/#open(%d)",nItemIdx),
-				format("Xem bªn trong cã g× ®·!/#see_item(%d)",nItemIdx),
+				format("Let's see what's inside!/#see_item(%d)",nItemIdx),
 				"T¹m thêi kh«ng më/nothing",
 				}
-	Say("§©y lµ lÇn thø <color=yellow>"..nCurCount.."<color> ng­¬i më <color=yellow>"..g_ItemName.."<color>. Xin l­u ý: Më 2 tói sÏ nhËn ®­îc 1 ThÇn N«ng §¬n, 4 tói sÏ nhËn ®­îc ngÉu nhiªn Linh Th¹ch cÊp 5, më 4 tói sÏ nhËn ®­îc ngÉu nhiªn 1 §¹o cô Hoµng Kim, më 10 tói sÏ nhËn ®­îc ngÉu nhiªn 1 Linh Th¹ch cÊp 6, më 30 tói sÏ nhËn ®­îc t­¬ng øng L­u Ph¸i TrÊn Ph¸i quyÓn - h¹, më 40 tói sÏ nhËn ®­îc 1 N«ng Tang phæ, më 60 tói sÏ nhËn ®­îc 1 Linh Th¹ch cÊp 7 ngÉu nhiªn, më 120 tói sÏ nhËn ®­îc t­¬ng øng L­u Ph¸i TrÊn Ph¸i quyÓn Tµn cña L­u Ph¸i - h¹, më 200 tói sÏ nhËn ®­îc ngÉu nhiªn 1 B«n Tiªu hoÆc §»ng Vô. B¹n x¸c nhËn më <color=yellow>"..g_ItemName.."<color> chø? <color=red>Chó ý <color>: B¹n cÇn ph¶i cã "..g_NeedRoom.." chç trèng vµ "..g_NeedWeight.." Søc lùc. Ng­êi ch­a gia nhËp L­u Ph¸i sÏ nhËn ®­îc ngÉu nhiªn L­u Ph¸i 1 TrÊn Ph¸i quyÓn",getn(selTab),selTab);
+	Say("§©y lµ lÇn thø <color=yellow>"..nCurCount.."<color> ng­¬i më <color=yellow>"..g_ItemName.."<color>. Xin l­u ý: Më 2 tói sÏ nhËn ®­îc 1 ThÇn N«ng §¬n, 4 tói sÏ nhËn ®­îc ngÉu nhiªn Linh Th¹ch cÊp 5, më 4 tói sÏ nhËn ®­îc ngÉu nhiªn 1 §¹o cô Hoµng Kim, më 10 tói sÏ nhËn ®­îc ngÉu nhiªn 1 Linh Th¹ch cÊp 6, më 30 tói sÏ nhËn ®­îc t­¬ng øng L­u Ph¸i TrÊn Ph¸i quyÓn - h¹, më 40 tói sÏ nhËn ®­îc 1 N«ng Tang phæ, më 60 tói sÏ nhËn ®­îc 1 Linh Th¹ch cÊp 7 ngÉu nhiªn, më 120 tói sÏ nhËn ®­îc t­¬ng øng L­u Ph¸i TrÊn Ph¸i quyÓn Tµn cña L­u Ph¸i - h¹, më 200 tói sÏ nhËn ®­îc ngÉu nhiªn 1 B«n Tiªu hoÆc §»ng Vô. B¹n x¸c nhËn më <color=yellow>"..g_ItemName.."<color> chø? <color=red>Chó ý <color>: B¹n cÇn ph¶i cã "..g_NeedRoom.." empty slots and"..g_NeedWeight.." Søc lùc. Ng­êi ch­a gia nhËp L­u Ph¸i sÏ nhËn ®­îc ngÉu nhiªn L­u Ph¸i 1 TrÊn Ph¸i quyÓn",getn(selTab),selTab);
 end;
 
 function see_item(nItemIdx)
 	local szItems = " 1 Bµn Long BÝch, 1 XÝch ThiÕt Tinh, Danh Väng ngÉu nhiªn 50-100 ®iÓm, cèng hiÕn S­ M«n 50 ®iÓm (CÇn ph¶i gia nhËp M«n Ph¸i), ngÉu nhiªn 1 Linh Th¹ch cÊp 1 - 4, 3 Sinh ®å chøng th­, 3 Tó tµi chøng th­, 3 Cö nh©n chøng th­, 1 ThÇn N«ng §¬n, ngÉu nhiªn 1 Linh Th¹ch cÊp 5, ngÉu nhiªn 1 §¹o cô Hoµng Kim, ngÉu nhiªn 1 Linh Th¹ch cÊp 6, t­¬ng øng L­u Ph¸i TrÊn Ph¸i quyÓn - h¹, N«ng Tang phæ, 1 Linh Th¹ch cÊp 7 ngÉu nhiªn, t­¬ng øng L­u Ph¸i TrÊn Ph¸i quyÓn - h¹, ngÉu nhiªn 1 B«n Tiªu hoÆc §»ng Vô";
-	Talk(1,"#OnUse("..nItemIdx..")","Mçi '"..g_ItemName.." cã thÓ më ®­îc c¸c vËt phÈm: "..szItems..". Chóc b¹n may m¾n!");
+	Talk(1,"#OnUse("..nItemIdx..")","Mçi '"..g_ItemName.." cã thÓ më ®­îc c¸c vËt phÈm: "..szItems..". Good luck!");
 end;
 
 tZJCP = 
@@ -47,28 +47,28 @@ tZJCP =
 
 tXJCP = 
 {
-	[0]  = {{"DÞch C©n Kinh-h¹ ",2,1,918},{"TÈy Tñy Kinh-h¹ ",2,1,924},{"Nh­ Lai ThÇn Ch­ëng-h¹ ",2,1,921},{"HÊp Tinh TrËn-h¹ ",2,1,927},{"V¹n T­íng ThÇn C«ng-h¹ ",2,1,930},{"Thiªn ¢m TrÊn Hån Khóc-h¹ ",2,1,933},{"Gi¸ng Long ThËp B¸t Ch­ëng-h¹ ",2,1,936},{"§¶ CÈu C«n TrËn-h¹ ",2,1,939},{"V« Th­îng Th¸i Cùc KiÕm-h¹ ",2,1,942},{"Th¸i Cùc ThÇn C«ng-h¹ ",2,1,945},{"Liªn Hoµn Toµn Long Th­¬ng-h¹ ",2,1,948},{"B¸ V­¬ng T­êng Phông TiÔn-h¹ ",2,1,951},{"V« ¶nh Ma Cæ-h¹ ",2,1,954},{"V« Thiªn Ma C«ng-h¹ ",2,1,957}},
-	[1]  = {{"DÞch C©n Kinh-h¹ ",2,1,918},{"TÈy Tñy Kinh-h¹ ",2,1,924},{"Nh­ Lai ThÇn Ch­ëng-h¹ ",2,1,921}},
-	[2]  = {{"DÞch C©n Kinh-h¹ ",2,1,918}},
-	[3]  = {{"TÈy Tñy Kinh-h¹ ",2,1,924}},
+	[0]  = {{"Yi Jin Jing - lower",2,1,918},{"Xi Sui Jing - lower",2,1,924},{"Nh­ Lai ThÇn Ch­ëng-h¹ ",2,1,921},{"HÊp Tinh TrËn-h¹ ",2,1,927},{"V¹n T­íng ThÇn C«ng-h¹ ",2,1,930},{"Thiªn ¢m TrÊn Hån Khóc-h¹ ",2,1,933},{"Eighteen Dragon-Subduing Palms - lower",2,1,936},{"§¶ CÈu C«n TrËn-h¹ ",2,1,939},{"V« Th­îng Th¸i Cùc KiÕm-h¹ ",2,1,942},{"Th¸i Cùc ThÇn C«ng-h¹ ",2,1,945},{"Continuous Coiling Dragon Spear - lower",2,1,948},{"B¸ V­¬ng T­êng Phông TiÔn-h¹ ",2,1,951},{"Shadowless Demon Drum - lower",2,1,954},{"V« Thiªn Ma C«ng-h¹ ",2,1,957}},
+	[1]  = {{"Yi Jin Jing - lower",2,1,918},{"Xi Sui Jing - lower",2,1,924},{"Nh­ Lai ThÇn Ch­ëng-h¹ ",2,1,921}},
+	[2]  = {{"Yi Jin Jing - lower",2,1,918}},
+	[3]  = {{"Xi Sui Jing - lower",2,1,924}},
 	[4]  = {{"Nh­ Lai ThÇn Ch­ëng-h¹ ",2,1,921}},
 	[5]  = {{"HÊp Tinh TrËn-h¹ ",2,1,927}},
 	[6]  = {{"HÊp Tinh TrËn-h¹ ",2,1,927}},
 	[7]  = {{"V¹n T­íng ThÇn C«ng-h¹ ",2,1,930},{"Thiªn ¢m TrÊn Hån Khóc-h¹ ",2,1,933}},
 	[8]  = {{"V¹n T­íng ThÇn C«ng-h¹ ",2,1,930}},
 	[9]  = {{"Thiªn ¢m TrÊn Hån Khóc-h¹ ",2,1,933}},
-	[10] = {{"Gi¸ng Long ThËp B¸t Ch­ëng-h¹ ",2,1,936},{"§¶ CÈu C«n TrËn-h¹ ",2,1,939}},
-	[11] = {{"Gi¸ng Long ThËp B¸t Ch­ëng-h¹ ",2,1,936}},
+	[10] = {{"Eighteen Dragon-Subduing Palms - lower",2,1,936},{"§¶ CÈu C«n TrËn-h¹ ",2,1,939}},
+	[11] = {{"Eighteen Dragon-Subduing Palms - lower",2,1,936}},
 	[12] = {{"§¶ CÈu C«n TrËn-h¹ ",2,1,939}},
 	[13] = {{"V« Th­îng Th¸i Cùc KiÕm-h¹ ",2,1,942},{"Th¸i Cùc ThÇn C«ng-h¹ ",2,1,945}},
 	[14] = {{"V« Th­îng Th¸i Cùc KiÕm-h¹ ",2,1,942}},
 	[15] = {{"Th¸i Cùc ThÇn C«ng-h¹ ",2,1,945}},
-	[16] = {{"Liªn Hoµn Toµn Long Th­¬ng-h¹ ",2,1,948},{"B¸ V­¬ng T­êng Phông TiÔn-h¹ ",2,1,951}},
-	[17] = {{"Liªn Hoµn Toµn Long Th­¬ng-h¹ ",2,1,948}},
+	[16] = {{"Continuous Coiling Dragon Spear - lower",2,1,948},{"B¸ V­¬ng T­êng Phông TiÔn-h¹ ",2,1,951}},
+	[17] = {{"Continuous Coiling Dragon Spear - lower",2,1,948}},
 	[18] = {{"B¸ V­¬ng T­êng Phông TiÔn-h¹ ",2,1,951}},
-	[19] = {{"V« ¶nh Ma Cæ-h¹ ",2,1,954},{"V« Thiªn Ma C«ng-h¹ ",2,1,957}},
+	[19] = {{"Shadowless Demon Drum - lower",2,1,954},{"V« Thiªn Ma C«ng-h¹ ",2,1,957}},
 	[20] = {{"V« Thiªn Ma C«ng-h¹ ",2,1,957}},
-	[21] = {{"V« ¶nh Ma Cæ-h¹ ",2,1,954}},
+	[21] = {{"Shadowless Demon Drum - lower",2,1,954}},
 }
 
 function open(nItemIdx)
@@ -113,7 +113,7 @@ function open(nItemIdx)
 			add_lingshi(7,1,2,60);	--Ëæ»ú7¼¶ÁéÊ¯1¿Å,0.2%ÇÒÃ¿¿ª60¸ö°ü±Ø¸ø1¸ö
 			add_zpcp(tXJCP,1,2,120);	--¶ÔÓ¦Á÷ÅÉÕòÅÉ²Ð¾íÏÂ²á,0.2%ÇÒÃ¿¿ª120¸ö°ü±Ø¸ø1¸ö
 			add_horse(2,200);	--±¼Ïü»òÌÚÎíËæ»ú1Æ¥£¬0.2%ÇÒÃ¿¿ª200¸ö°ü±Ø¸ø1¸ö
-			WriteLog("["..g_ItemName.."]:"..GetName().."thø"..nCurCount.." më "..g_ItemName);
+			WriteLog("["..g_ItemName.."]:"..GetName().."the"..nCurCount.." to open"..g_ItemName);
 		end;
 	else
 		Talk(1,"","Kho¶ng trèng hoÆcsøc lùccña b¹n kh«ng ®ñ. Xin kiÓm tra l¹i hµnh trang tr­íc!"..g_ItemName.."!");
@@ -123,9 +123,9 @@ end;
 function show_msg(szItemName,bGlobalMsg)
 	Msg2Player("B¹n nhËn ®­îc "..szItemName);
 	if bGlobalMsg == 1 then
-		Msg2Global(GetName().."Më '"..g_ItemName.." nhËn ®­îc "..szItemName);
+		Msg2Global(GetName().."Open '"..g_ItemName.." nhËn ®­îc "..szItemName);
 	end;
-	WriteLog("["..g_ItemName.."]:"..GetName().."NhËn ®­îc"..szItemName);	
+	WriteLog("["..g_ItemName.."]:"..GetName().."Received"..szItemName);	
 end;
 --¸øÕòÅÉ²ÐÆªµÄº¯Êý
 function give_zpcp(tbZPCP,nCount)
@@ -214,7 +214,7 @@ function add_horse(nP,nModCount)
 			AddItem(0,105,16,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,1)
 		else
-			szItemName = "1 §»ng Vô";
+			szItemName = "1 Deng Wu";
 			AddItem(0,105,20,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,1)
 		end;
@@ -225,7 +225,7 @@ function add_horse(nP,nModCount)
 			AddItem(0,105,16,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,1)
 		else
-			szItemName = "1 §»ng Vô";
+			szItemName = "1 Deng Wu";
 			AddItem(0,105,20,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,1)
 		end;			

@@ -11,7 +11,7 @@ function Zgc_pub_mission_team_chk(captain_flag,member_min,memeber_max,npc_name)
 	--∂”ŒÈ≥…‘± ˝¡øºÏ≤‚
 	local team_member = GetTeamSize()
 	if team_member < member_min or team_member > memeber_max then
-		Talk(1,"",npc_name.."SË l≠Óng ng≠Íi ch¨i quy Æﬁnh: <color=yellow>"..member_min.."<color> Æ’n <color=yellow>"..memeber_max.."<color> ng≠Íi!")
+		Talk(1,"",npc_name.."SË l≠Óng ng≠Íi ch¨i quy Æﬁnh: <color=yellow>"..member_min.."<color> to <color=yellow>"..memeber_max.."<color> ng≠Íi!")
 		return 0
 	end
 	--∂”≥§ºÏ≤‚

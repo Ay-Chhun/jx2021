@@ -12,7 +12,7 @@ function OnUse(nItem)
 		return 0;
 	end
 	if GetItemCount(2,1,30539) < 1 then
-		Talk(1,"",format("Trong hµnh trang kh«ng cã <color=red>%s<color>, kh«ng thÓ më %s", "BÝ Ng©n Chïy", "LuyÖn L« ThiÕt Kho¸ng"));
+		Talk(1,"",format("Trong hµnh trang kh«ng cã <color=red>%s<color>, kh«ng thÓ më %s", "Hidden Silver Mallet", "LuyÖn L« ThiÕt Kho¸ng"));
 		return 0;
 	end
 	if DelItemByIndex(nItem, 1) == 1 and DelItem(2, 1, 30539, 1) ==  1 then

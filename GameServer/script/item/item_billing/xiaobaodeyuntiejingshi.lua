@@ -6,8 +6,8 @@ dabaoyuntiejingshi_id = 3356
 function OnUse(goods_index)
 	Say("B¹n cã muèn dïng Thiªn Th¹ch Tinh Th¹ch bao §æi Thiªn Th¹ch Tinh Th¹ch"..goods_num.."?",
 	2,
-	"§æi/use_determine",
-	"§Ó suy nghÜ/end_dialog")
+	"Exchange/use_determine",
+	"To reconsider/end_dialog")
 end
 function use_determine()
 	if GetItemCount(2,1,dabaoyuntiejingshi_id) == 0 then

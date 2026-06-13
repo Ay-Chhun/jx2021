@@ -80,7 +80,7 @@ function confirm_xiulian()
 	AddProp(XUANGONG_QIANNENG);
 	Talk(1,"","<color=green>Tr­ëng l·o Vâ L©m<color>: Chóc mõng ng­¬i ®· luyÖn thµnh c«ng Tiªn Thiªn Th¸i DÞch Hçn Nguyªn C«ng, t¨ng "..XUANGONG_QIANNENG.." ®iÓm tiÒm n¨ng.");	 
 	Msg2Global("§¹i hiÖp"..GetName().."§­îc sù chØ dÉn cña Tr­ëng l·o Vâ L©m, ®· luyÖn ®Õn c¶nh giíi Tiªn Thiªn, nhËn ®­îc ®iÓm tiÒm n¨ng, luyÖn thµnh c«ng Tiªn Thiªn Th¸i DÞch Hçn Nguyªn C«ng!");
-	WriteLog("Ng­êi ch¬i"..GetName().."§· luyÖn 1 lÇn Tiªn Thiªn Th¸i DÞch Hçn Nguyªn C«ng.");
+	WriteLog("Player"..GetName().."§· luyÖn 1 lÇn Tiªn Thiªn Th¸i DÞch Hçn Nguyªn C«ng.");
 end
 
 function GetTimeZoneInfo()

@@ -7,7 +7,7 @@ function OnUse(nItemIdx)
 	szTitle = format("%s\n%s",szTitle, "Xin chó ı:<color=red>gi¶i khãa trang bŞ sÏ xãa ®¸ quı kh¶m trªn trang bŞ.<color>")
 	tinsert(tbSay, format("Ta muèn gi¶i khãa/#_OnUse_confirm(%d)", nItemIdx))
 	tinsert(tbSay, format("Tra xem trang bŞ cã thÓ gi¶i khãa/#_view_detail(%d)", nItemIdx))
-	tinsert(tbSay, "Ra khái/no")
+	tinsert(tbSay, "Leave/no")
 	Say(szTitle, getn(tbSay), tbSay)
 end
 
@@ -18,7 +18,7 @@ function _view_detail(nItemIdx)
 	szTitle = szTitle.."\n HÖ thèng trang bŞ ChiÕn Cuång"..", Trang bŞ Thiªn H¹ V« Song"
 	szTitle = szTitle.."\n Vò khİ cÊp 96"
 	tinsert(tbSay, format("trë l¹i/#OnUse(%d)", nItemIdx))
-	tinsert(tbSay, "Ra khái/no")
+	tinsert(tbSay, "Leave/no")
 	Say(szTitle, getn(tbSay), tbSay)
 end
 

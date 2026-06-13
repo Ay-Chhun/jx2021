@@ -1,12 +1,12 @@
 
 VET_SILING_MOUNT_ACTIVITY_ID = 26
 
-VET_STR_SILING_LOG_TITLE = "Thó c­ìi Tø Linh"
+VET_STR_SILING_LOG_TITLE = "Four Spirits Mount"
 
 VET_TB_SILING_LOG_ACTION = 
 {
  	"Hîp thµnh thó c­ìi Tø Linh thµnh c«ng",
- 	"§æi ChiÕn T­îng",
+ 	"Exchange War Elephant",
  	"Êp thµnh c«ng Linh Thó B¶o B¶o",
  	"Vâ l©m sø gi¶ c¸ nh©n",
  	"Vâ l©m sø gi¶ tæ ®éi",
@@ -31,13 +31,13 @@ VET_TB_SILING_MSG =
 	"Ta ®· gióp <color=yellow>%s<color> cña c¸c h¹ nu«i d­ìng thµnh <color=yellow>%s<color>.",
 	"Yªu cÇu cÇn Ýt nhÊt <color=green>%d<color> ®iÓm qu©n c«ng cïng víi qu©n hµm <color=yellow>%s<color> míi cã thÓ sö dông.",
 	"Nh©n vËt ®· chuyÓn sinh míi cã thÓ sö dông",
-	"Nguyªn So¸i",
+	"Marshal",
 }
 
 VET_TB_SILING_ITEM_TITLE = 
 {
-	"Trøng Linh Thó",
-	"ChiÕn T­îng",
+	"Spirit Beast Egg",
+	"War General",
 }
 
 VET_TB_SILING_NPC_TEMPLATE = 
@@ -57,8 +57,8 @@ VET_TB_SILING_NPC_NAME =
 VET_TB_SILING_NPC_DLG = 
 {
 	"NÕu c¸c h¹ ®· ®¹t qu©n hµm Nguyªn So¸i, lµ cã thÓ ®Õn t×m ta ®æi lÊy thó c­ìi Nguyªn So¸i chuyªn dông ChiÕn T­îng!",
-	"§æi ChiÕn T­îng",
-	"Tho¸t",
+	"Exchange War Elephant",
+	"Exit",
 	"Mua ChiÕn T­îng cÇn  <color=green>%d<color> Hßa ThÞ BÝch, <color=green>%d<color> ®iÓm tÝch lòy chiÕn tr­êng. <enter><color=red>Chó ý: ®iÓm qu©n c«ng ph¶i cao h¬n <color=green>%d<color> ®ång thêi së h÷u qu©n hµm <color=yellow>%s<color> míi cã thÓ sö dông ChiÕn T­îng. <color>",
 	"Ta muèn ®æi.",
 	"Qua bao n¨m nghiªn cøu, l·o phu ®· ngé ra ®­îc Thiªn C¬, biÕt ®­îc lµm thÕ nµo ®Ó Êp trøng Linh Thó vµ nu«i d­ìng Linh Thó.",
@@ -77,42 +77,42 @@ VET_TB_SILING_NPC_DLG =
 --10000
 VET_TB_SILING_COMPOSE_MOUNT_LIST = 
 {
-    {1, 25, "Kim Kú L©n", {0, 105, 30001, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
+    {1, 25, "Golden Qilin", {0, 105, 30001, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
     {1, 50, "Thñy Kú LÇn", {0, 105, 30002, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
     {1, 100, "Ngäc Kú L©n", {0, 105, 30003, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
     {1, 125, "Háa Kú L©n", {0, 105, 30004, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
     {1, 200, "Cæ D­¬ng Thó", {0, 105, 30005, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
-    {1, 300, "Kim Mao Ng­u", {0, 105, 30006, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
+    {1, 300, "Golden Mane Ox", {0, 105, 30006, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
     {1, 500, "Hång Mao Ng­u", {0, 105, 30007, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
-    {1, 700, "Lam Mao Ng­u", {0, 105, 30008, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
+    {1, 700, "Blue Mane Ox", {0, 105, 30008, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
     {1, 500, "B¹ch Hæ", {0, 105, 30009, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
     {1, 1000, "Hoµng Hæ", {0, 105, 30010, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
-    {1, 1500, "H¾c Hæ", {0, 105, 30011, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
-    {1, 500, "B¸o Tr¾ng", {0, 105, 30012, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
-    {1, 1500, "B¸o §en", {0, 105, 30013, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
+    {1, 1500, "Black Tiger", {0, 105, 30011, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
+    {1, 500, "White Leopard", {0, 105, 30012, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
+    {1, 1500, "Black Leopard", {0, 105, 30013, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
     {1, 1000, "B¸o Vµng", {0, 105, 30014, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
     {1, 1000, "¤ V©n §¹p TuyÕt", {0, 105, 30015, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
-    {1, 1000, "§éc Gi¸c Thó", {0, 105, 30016, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
+    {1, 1000, "Single-Horned Beast", {0, 105, 30016, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
 };
 
 VET_TB_SILING_RESTORE_MOUNT_COST = 
 {
-	["Kim Kú L©n"] = 40000000,
+	["Golden Qilin"] = 40000000,
 	["Thñy Kú LÇn"] = 40000000,
 	["Ngäc Kú L©n"] = 40000000,
 	["Háa Kú L©n"] = 40000000,
 	["Cæ D­¬ng Thó"] = 30000000,
-	["Kim Mao Ng­u"] = 15000000,
+	["Golden Mane Ox"] = 15000000,
 	["Hång Mao Ng­u"] = 15000000,
-	["Lam Mao Ng­u"] = 15000000,
+	["Blue Mane Ox"] = 15000000,
 	["B¹ch Hæ"] = 15000000,
 	["Hoµng Hæ"] = 15000000,
-	["H¾c Hæ"] = 15000000,
-	["B¸o Tr¾ng"] = 15000000,
-	["B¸o §en"] = 15000000,
+	["Black Tiger"] = 15000000,
+	["White Leopard"] = 15000000,
+	["Black Leopard"] = 15000000,
 	["B¸o Vµng"] = 15000000,
 	["¤ V©n §¹p TuyÕt"] = 15000000,
-	["§éc Gi¸c Thó"] = 15000000,
+	["Single-Horned Beast"] = 15000000,
 	["Kim Kú L©n B¶o B¶o"] = 50000000,
 	["Thñy Kú L©n  B¶o B¶o"] = 50000000,
 	["Ngäc Kú L©n  B¶o B¶o"] = 50000000,

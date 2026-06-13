@@ -65,7 +65,7 @@ function upgrade_nltq_clothes()
 end
 
 function Upgrade_NLTQ(nCloth)
-	if gf_JudgeRoomWeight(2,500,"<color=green>§Ö tö thî rÌn L­u: <color>") == 0 then
+	if gf_JudgeRoomWeight(2,500,"<color=green>Blacksmith Disciple Liu: <color>") == 0 then
 		return 0;
 	end
 	

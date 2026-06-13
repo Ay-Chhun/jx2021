@@ -1,7 +1,7 @@
 Include("\\script\\missions\\jiandangyanyun\\head.lua");
 Include("\\script\\missions\\jiandangyanyun\\jdyyfunctions.lua");
 
-g_NpcName = "<color=green>Thanh Thanh C« N­¬ng:<color>";
+g_NpcName = "<color=green>Qingqing the Maiden:<color>";
 
 tNonsense = {
 	"Hi hi, cuèi cïng còng ®· ®uæi ®­îc huynh ®Ö nhµ hä Ng« ®i råi, tõ nay ®©y sÏ lµ ®Þa bµn cña ta!",
@@ -13,9 +13,9 @@ tNonsense = {
 
 function main()
 	local strTab = {
-		"\n rêi ¶i/JJG_ConfirmLeave",
+		"\nLeave/JJG_ConfirmLeave",
 		"\nMuèn trë vÒ chiÕn tr­êng (CÇn Thiªn Kiªu LÖnh x2)/JJG_Back2Fight",
-		"\nKÕt thóc ®èi tho¹i/nothing",
+		"\nEnd conversation/nothing",
 	};
 	local nIdx = random(1, getn(tNonsense));
 	Say(g_NpcName..tNonsense[nIdx], getn(strTab), strTab);

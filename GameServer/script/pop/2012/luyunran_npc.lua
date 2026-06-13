@@ -2,8 +2,8 @@
 Include("\\script\\task\\global_task\\gtask_head.lua")
 Include("\\script\\lib\\define.lua")
 tInfo = {
-	["Tr¹i B¾c Song ¦ng Lôc Nhiªn Phong"]	= {923,"Tr¹i B¾c Song ¦ng Lôc Nhiªn Phong",	"Tr¹i B¾c Song ¦ng Lôc Nhiªn Phong",TASKID_SW_USE_ANTIDOTE,1},--ÈÎÎñ±àºÅ£¬Ä£°æÃû£¬ÏÔÊ¾Ãû£¬TASKID£¨ÐèÒªÉèÎª1£©
-	["ChiÕn M· Ch¹y Xa"]			= {945,"ChiÕn M· Ch¹y Xa",			"ChiÕn M· Ch¹y Xa",nil,nil,{"CÇm d©y c­¬ng cña chiÕn m·/#get_horse(×ßÔ¶µÄÕ½Âí)"}},
+	["North Camp Twin Eagles Luc Nhien Phong"]	= {923,"North Camp Twin Eagles Luc Nhien Phong",	"North Camp Twin Eagles Luc Nhien Phong",TASKID_SW_USE_ANTIDOTE,1},--ÈÎÎñ±àºÅ£¬Ä£°æÃû£¬ÏÔÊ¾Ãû£¬TASKID£¨ÐèÒªÉèÎª1£©
+	["Swift War Horse"]			= {945,"Swift War Horse",			"Swift War Horse",nil,nil,{"CÇm d©y c­¬ng cña chiÕn m·/#get_horse(×ßÔ¶µÄÕ½Âí)"}},
 	}
 function get_horse(nNpcName)
 	if not tInfo[nNpcName] then
@@ -37,7 +37,7 @@ function main()
 	end
 	if tFollow[1] and tFollow[2] and 1 == tGtTask:check_cur_task(tFollow[1]) then
 		if  tFollow[6] then
-			Say("ChiÕn M· Ch¹y Xa:",getn(tFollow[6]),tFollow[6]);
+			Say("Swift War Horse:",getn(tFollow[6]),tFollow[6]);
 			return 0;
 		else
 			get_horse(nNpcName)

@@ -23,7 +23,7 @@ function OnUse(idx)
 	end
 	local nMapID = GetWorldPos()
 	if nItemMapID ~= nMapID then
-		Say("ChØ ë "..tCityName[nItemMapID].." míi sö dông vËt phÈm nµy ", 0)
+		Say("Only in"..tCityName[nItemMapID].." míi sö dông vËt phÈm nµy ", 0)
 		return
 	end
 	local szTongName = GetCityWarInfo(nItemMapID, "base")
@@ -62,10 +62,10 @@ function OnUse(idx)
 			
 			AddTitle(tMapTitleID[nItemMapID][1], tMapTitleID[nItemMapID][2])
 			SetCurTitle(tMapTitleID[nItemMapID][1], tMapTitleID[nItemMapID][2])
-			Say("b¹n ®­îc bæ nhiÖm lµ "..tCityName[nItemMapID].."Qu©n s­", 0)
+			Say("b¹n ®­îc bæ nhiÖm lµ "..tCityName[nItemMapID].."Army Advisor", 0)
 			SetTask(2546, 1);--ÉèÖÃ¾üÊ¦ÁìÈ¡½±ÀøµÄ±ê¼Ç
 			SendTongMessage(GetName().."Sö dông qu©n s­ tiÕn cö trë thµnh qu©n s­.")
-			WriteLog("C«ng thµnh chiÕn-Qu¶n lý:"..szTongName.."-"..GetName().." trë thµnh "..tCityName[nItemMapID].."Qu©n s­")
+			WriteLog("C«ng thµnh chiÕn-Qu¶n lý:"..szTongName.."-"..GetName().." trë thµnh "..tCityName[nItemMapID].."Army Advisor")
 			SaveNow()
 		end
 	end

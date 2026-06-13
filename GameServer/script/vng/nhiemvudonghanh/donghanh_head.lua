@@ -52,9 +52,9 @@ tbDongHanhName = {
 	[19] = {"Trång thµnh c«ng 01 c©y B¸t Nh· Lín", 1},
 	[20] = {"Trång thµnh c«ng 01 c©y Tø Linh", 1},
 	[21] = {"Sö dông thµnh c«ng 20 Ph¸o Hoa", 20},
-	[22] = {"TÆng ta 02 cuèn mËt tÞch bÊt kú", 1},
-	[23] = {"TÆng ta 03 cuèn mËt tÞch bÊt kú", 1},
-	[24] = {"TÆng ta 20 tr¸i c©y bÊt kú", 1},
+	[22] = {"Give me 02 secret manuals of any kind", 1},
+	[23] = {"Give me 03 secret manuals of any kind", 1},
+	[24] = {"Give me 20 fruits of any kind", 1},
 	[25] = {"TÆng ta 08 vµng vµ 08 xu vËt phÈm", 1},
 	[26] = {"Hoµn thµnh 02 nhiÖm vô L­¬ng S¬n B¹c", 2},
 }
@@ -93,7 +93,7 @@ function DongHanh_SetMission()	-- Set nhiÖm vô ®ang thùc hiÖn
 	gf_SetTaskByte(TSK_DONGHANH, 3, nMissionID)
 	gf_SetTaskByte(TSK_DONGHANH_COUNT,1, gf_GetTaskByte(TSK_DONGHANH_COUNT,1) + 1)
 	gf_SetTaskByte(TSK_DONGHANH_COUNT, 2, tbDongHanhName[nMissionID][2])
-	Talk(1,"", szNPCName.."Hõm... §Ó xem h«m nay cho ng­¬i lµm viÖc g×...\nPh¶i råi, h·y <color=yellow>"..tbDongHanhName[nMissionID][1].."<color> nhÐ!")
+	Talk(1,"", szNPCName.."Hõm... §Ó xem h«m nay cho ng­¬i lµm viÖc g×...\nPh¶i råi, h·y <color=yellow>"..tbDongHanhName[nMissionID][1].."<color> okay!")
 	TaskTip("NhËn nhiÖm vô ®ång hµnh.")
 	gf_WriteLogEx(szLogTitle, "nhËn", 1, "NhËn nhiÖm vô lÇn "..gf_GetTaskByte(TSK_DONGHANH_COUNT,1))
 end

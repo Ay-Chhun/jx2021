@@ -32,9 +32,9 @@ tVIET_SHIMEN_PUTAO = {
 };
 
 tVIET_0908_HECHENG = {
-	{{{"Nho", 4, 2, 1, 30098}, {"Tói H­¬ng LiÖu", 1, 2, 1, 30101}}, {"KÑo Nho", {2, 1, 30102, 1}, "Keo Nho"}},
-	{{{"M·ng cÇu", 4, 2, 1, 30099}, {"Tói H­¬ng LiÖu", 1, 2, 1, 30101}}, {"KÑo M·ng CÇu", {2, 1, 30103, 1}, "Keo Mang Cau"}},
-	{{{"SÇu riªng", 4, 2, 1, 30100}, {"Tói H­¬ng LiÖu", 1, 2, 1, 30101}}, {"KÑo SÇu Riªng", {2, 1, 30104, 1}, "Keo Sau Rieng"}},
+	{{{"Nho", 4, 2, 1, 30098}, {"Spice Bag", 1, 2, 1, 30101}}, {"Grape Candy", {2, 1, 30102, 1}, "Keo Nho"}},
+	{{{"Soursop", 4, 2, 1, 30099}, {"Spice Bag", 1, 2, 1, 30101}}, {"Soursop Candy", {2, 1, 30103, 1}, "Keo Mang Cau"}},
+	{{{"Durian", 4, 2, 1, 30100}, {"Spice Bag", 1, 2, 1, 30101}}, {"Durian Candy", {2, 1, 30104, 1}, "Keo Sau Rieng"}},
 };
 
 str_VIET_0908_LOG_TITLE = "[Hoat dong thang 8]";
@@ -83,9 +83,9 @@ tbViet_0908_SkillID =
 	
 tVIET_0908_MIJI = {
 	{"Tø Linh Thiªn ý Phæ", 30, {0, 107, 160, 1}},
-	{"Tø Linh Tö ý Phæ", 30, {0, 107, 161, 1}},
-	{"Tø Linh ChiÕn ý Phæ", 30, {0, 107, 159, 1}},
-	{"B¸ch Th¶o mËt tÞch", 10, {0, 107, 156, 1}},
+	{"Four Spirits Earth Intent Manual", 30, {0, 107, 161, 1}},
+	{"Four Spirits Battle Intent Manual", 30, {0, 107, 159, 1}},
+	{"Hundred Herbs Secret Manual", 10, {0, 107, 156, 1}},
 };
 
 tVIET_0908_MIJI_EXCHANGE = {
@@ -100,42 +100,42 @@ tVIET_0908_MIJI_EXCHANGE = {
 --ÃüÁî£ºÃüÁîÖÖÀà£¬¸ÅÂÊ£¬ÃüÁî±í´ïÊ½£¬ÃüÁî²ÎÊý£¬0
 --ÀàÐÍ>0ÃüÁî£¬=0ÎïÆ·
 tVIET_0908_TANG_AWARD = {
-	{"Bµn Long bÝch", 625000, {2, 1, 1000, 1}, 0, 7 * 24 * 3600},
+	{"Coiling Dragon Jade", 625000, {2, 1, 1000, 1}, 0, 7 * 24 * 3600},
 	{"M¶nh Thiªn th¹ch", 1250000, {2, 2, 7, 1}, 0, 0},
 	{"Thiªn th¹ch", 1250000, {2, 2, 8, 1}, 0, 0},
-	{"M¶nh B¨ng th¹ch", 2187500, {2, 1, 148, 1}, 0, 0},
-	{"B¨ng th¹ch", 2187500, {2, 1, 149, 1}, 0, 0},
-	{"TÈy Tñy ®¬n", 125000, {2, 0, 136, 1}, 0, 7 * 24 * 60 * 60},
+	{"Ice Stone Fragment", 2187500, {2, 1, 148, 1}, 0, 0},
+	{"Ice Stone", 2187500, {2, 1, 149, 1}, 0, 0},
+	{"Marrow-Cleansing Pill", 125000, {2, 0, 136, 1}, 0, 7 * 24 * 60 * 60},
 	{"B¸t B¶o TÈy Tñy Tiªn §¬n", 630, {2, 0, 138, 1}, 0, 7 * 24 * 60 * 60},
-	{"Tiªu KiÕp t¸n", 1250000, {2, 0, 141, 1}, 0, 7 * 24 * 60 * 60},
+	{"Tribulation Dispel Powder", 1250000, {2, 0, 141, 1}, 0, 7 * 24 * 60 * 60},
 	{"Tµng KiÕm anh hïng thiÕp", 1250000, {2, 0, 31, 1}, 0, 7 * 24 * 60 * 60},
 	{"B¶o r­¬ng Tµng KiÕm ®Çu qu¸n", 12500, {2, 1, 1059, 1}, 0, 30 * 24 * 60 * 60},
 	{"B¶o r­¬ng Tµng KiÕm y gi¸p", 12500, {2, 1, 1060, 1}, 0, 30 * 24 * 60 * 60},
 	{"B¶o r­¬ng Tµng KiÕm hoa khè", 12500, {2, 1, 1061, 1}, 0, 30 * 24 * 60 * 60},
 	{"B¶o r­¬ng Tµng KiÕm trang søc", 12500, {2, 1, 1062, 1}, 0, 30 * 24 * 60 * 60},
 	{"B¶o r­¬ng Tµng KiÕm vò khÝ", 12500, {2, 1, 1063, 1}, 0, 30 * 24 * 60 * 60},
-	{"B«n Tiªu", 100, {0, 105, 16, 1, 1, -1, -1, -1, -1, -1, -1}, 0, 30 * 24 * 60 * 60},
-	{"Phiªu Vò", 100, {0, 105, 15, 1, 1, -1, -1, -1, -1, -1, -1}, 0, 30 * 24 * 60 * 60},
-	{"§»ng Vô", 100, {0, 105, 20, 1, 1, -1, -1, -1, -1, -1, -1}, 0, 30 * 24 * 60 * 60},
-	{"Siªu Quang", 100, {0, 105, 19, 1, 1, -1, -1, -1, -1, -1, -1}, 0, 30 * 24 * 60 * 60},
+	{"Bon Tieu", 100, {0, 105, 16, 1, 1, -1, -1, -1, -1, -1, -1}, 0, 30 * 24 * 60 * 60},
+	{"Piao Wu", 100, {0, 105, 15, 1, 1, -1, -1, -1, -1, -1, -1}, 0, 30 * 24 * 60 * 60},
+	{"Dang Vu", 100, {0, 105, 20, 1, 1, -1, -1, -1, -1, -1, -1}, 0, 30 * 24 * 60 * 60},
+	{"Sieu Quang", 100, {0, 105, 19, 1, 1, -1, -1, -1, -1, -1, -1}, 0, 30 * 24 * 60 * 60},
 	{"§ång TiÒn Vµng", 625000, {2, 1, 30094, 1}, 0, 0},
-	{"Lé thñy", 17822712, {2, 0, 351, 1}, 0, 0},
-	{"Danh väng", 625000, "ModifyReputation(%d, 1)", 10, 0},
-	{"Danh väng", 1250000, "ModifyReputation(%d, 1)", 5, 0},
-	{"Danh väng", 2500000, "ModifyReputation(%d, 1)", 3, 0},
-	{"Danh väng", 3125000, "ModifyReputation(%d, 1)", 2, 0},
-	{"Danh väng", 28765160, "ModifyReputation(%d, 1)", 1, 0},
-	{"§iÓm s­ m«n", 21379660, "SetTask(336, GetTask(336) + %d)", 1, 0},
-	{"§iÓm s­ m«n", 3125000, "SetTask(336, GetTask(336) + %d)", 3, 0},
-	{"§iÓm s­ m«n", 1875000, "SetTask(336, GetTask(336) + %d)", 5, 0},
+	{"Dew Water", 17822712, {2, 0, 351, 1}, 0, 0},
+	{"Reputation", 625000, "ModifyReputation(%d, 1)", 10, 0},
+	{"Reputation", 1250000, "ModifyReputation(%d, 1)", 5, 0},
+	{"Reputation", 2500000, "ModifyReputation(%d, 1)", 3, 0},
+	{"Reputation", 3125000, "ModifyReputation(%d, 1)", 2, 0},
+	{"Reputation", 28765160, "ModifyReputation(%d, 1)", 1, 0},
+	{"Sect Points", 21379660, "SetTask(336, GetTask(336) + %d)", 1, 0},
+	{"Sect Points", 3125000, "SetTask(336, GetTask(336) + %d)", 3, 0},
+	{"Sect Points", 1875000, "SetTask(336, GetTask(336) + %d)", 5, 0},
 	{"Thiªn Hµ MËt tÞch", 1000000, {0, 107, 64, 1}, 0, 0},
 	{"Tö Hµ MËt tÞch", 1000000, {0, 107, 65, 1}, 0, 0},
-	{"Chiªm Y Phæ", 31250, {0, 107, 66, 1}, 0, 0},
+	{"Zhanyi Manual", 31250, {0, 107, 66, 1}, 0, 0},
 	{"TiÓu Nh©n s©m qu¶", 1000000, {2, 0, 552, 1}, 0, 7 * 24 * 60 * 60},
-	{"Linh Xµ HuyÕt", 125000, {2, 1, 30105, 1}, 0, 0},
-	{"R­¬ng BÝ KÝp", 62500, {2, 1, 30093, 1}, 0, 30 * 24 * 60 * 60},
+	{"Spirit Snake Blood", 125000, {2, 1, 30105, 1}, 0, 0},
+	{"Secret Manual Chest", 62500, {2, 1, 30093, 1}, 0, 30 * 24 * 60 * 60},
 	{"B¶o R­¬ng §Æc BiÖt", 188, {2, 1, 30091, 1}, 0, 30 * 24 * 60 * 60},
-	{"Tu Ch©n YÕu QuyÕt", 5000000, {2, 0, 554, 1}, 0, 7 * 24 * 60 * 60},
+	{"Xiu Zhen Yao Jue", 5000000, {2, 0, 554, 1}, 0, 7 * 24 * 60 * 60},
 	{"ThÇn N«ng §¬n", 500000, {2, 1, 343, 1}, 0, 7 * 24 * 60 * 60}
 };
 
@@ -347,7 +347,7 @@ function regainDialog()
 			"Ta muèn nhËn phÇn th­ëng ®iÓm kinh nghiÖm./Viet0908_Give_ShangXian_Aword",
 			"T¨ng 5 trÞ s¸t khÝ./Viet0908_Add_ShaQi",
 			"Mua 1 Lé Thñy (1 Lé Thñy = 10 b¹c)/BuyWater",
-			"KÕt thóc ®èi tho¹i/dialog_over"
+			"End conversation/dialog_over"
 		);
 end
 
@@ -360,7 +360,7 @@ function BuyWater()
 		Talk(1, "", "Ng©n l­îng cña b¹n kh«ng ®ñ!");
 		return
 	end
-	gf_AddItemEx({2, 0, 351, 1}, "Lé thñy");
+	gf_AddItemEx({2, 0, 351, 1}, "Dew Water");
 end
 
 function dialog_over()

@@ -5,7 +5,7 @@ function main()
 			"Mua Ngò Hµnh Thiªn NghÜa Bµn/buy_wuxingpan",
 			"Mua Ngò Hµnh LuyÖn Hãa Thªm VËt/buy_lianhuawu",
 			"ChÕ t¹o §¸ Ngò Hµnh/#show_equip_shop(46)",
-			"KÕt thóc ®èi tho¹i/nothing"
+			"End dialogue/nothing"
 		};
 	Say("<color=green>T­ M· Thanh Thanh<color>: Ta ®ang gióp gia gia ph©n lo¹i nguyªn liÖu ngò hµnh, ®¹i ca/®¹i tû, cÇn gióp g× vËy?",
 		getn(strtab),

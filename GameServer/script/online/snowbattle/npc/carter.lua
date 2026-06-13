@@ -6,15 +6,15 @@ CR_Head = "<color=green>Xa Phu Æ u tr≠Íng Tuy’t: <color>Hoπt ÆÈng ß u Tr≠Íng Tuy
 function main()
 	local CR_Menu1 = {
 		"Vµo Khu n–m tuy’t (Ti™u hao 10 vµng t∆ng 10 Ti”u Tuy’t C«u)/CR_DoEnter",
-		"Mua Æπn tuy’t c«u/CR_DoShowSaleList",
+		"Buy snowball ammo/CR_DoShowSaleList",
 		"Gi∂i th›ch hoπt ÆÈng/CR_Information",
-		"RÍi kh·i/gf_DoNothing"
+		"Leave/gf_DoNothing"
 	}
 	local CR_Menu2 = {
-		"RÍi kh·i Æ u tr≠Íng tuy’t/CR_DoExit",
-		"Mua Æπn tuy’t c«u/CR_DoShowSaleList",
+		"Leave the Snow Arena/CR_DoExit",
+		"Buy snowball ammo/CR_DoShowSaleList",
 		"Gi∂i th›ch hoπt ÆÈng/CR_Information",
-		"RÍi kh·i/gf_DoNothing"
+		"Leave/gf_DoNothing"
 	}
 	if 0 == SB_IsInSnowMap() then
 		Say(CR_Head, getn(CR_Menu1), CR_Menu1);
@@ -50,7 +50,7 @@ function CR_DoEnter()
 		return
 	end	
 	local itemID = {2, 3, 219, 10};
-	local itemName = "Ti”u tuy’t c«u";
+	local itemName = "Small Snowball";
 	gf_AddItemEx2(itemID, itemName, "ß∏nh trÀn tuy’t", "application gift");
 	mf_JoinMission(SB_MISSION_ID, SB_CAMP_ID, mapID);
 end
@@ -71,9 +71,9 @@ end
 
 function CR_DoBuy(index)
 	local CR_SaleList = {
-		{{2, 3, 221}, "ßπi tuy’t c«u", 10, 300000},
-		{{2, 3, 220}, "Trung tuy’t c«u", 10, 200000},
-		{{2, 3, 219}, "Ti”u tuy’t c«u", 10, 100000},
+		{{2, 3, 221}, "Large Snowball", 10, 300000},
+		{{2, 3, 220}, "Medium Snowball", 10, 200000},
+		{{2, 3, 219}, "Small Snowball", 10, 100000},
 	}
 	local itemID = CR_SaleList[index][1];
 	local itemName = CR_SaleList[index][2];
@@ -86,7 +86,7 @@ function CR_DoBuy(index)
 	if 1 == gf_Judge_Room_Weight(1, itemCount, "") then
 		if 1 == Pay(cost) then
 			local tmpItemID = {itemID[1], itemID[2], itemID[3], itemCount};
-			gf_AddItemEx2(tmpItemID, itemName, "ß∏nh trÀn tuy’t", "Mua Æπn tuy’t c«u");
+			gf_AddItemEx2(tmpItemID, itemName, "ß∏nh trÀn tuy’t", "Buy snowball ammo");
 		end
 	end
 	CR_DoShowSaleList();	

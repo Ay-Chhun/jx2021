@@ -5,7 +5,7 @@ function main()
 	if 1 == nCamp then
 		if ywzm_GetMissionState() ~= 1 then
 			SetPos(1739, 3210);
-			Talk(1,"","Hi÷n Æang lµ giai Æoπn chu»n bﬁ, xin vui lﬂng ÆÓi.");
+			Talk(1,"","It is currently the preparation phase, please wait.");
 			return 1;
 		end
 		SetFightState(1);

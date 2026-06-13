@@ -92,7 +92,7 @@ local mySex -- ÓÃÒÔÏÔÊ¾ÈËÎïĞÔ±ğµÄ×Ö·û
 	if (GetSex() == 1) then
 		mySex = "ThiÕu hiÖp"
 	elseif (GetSex() == 2) then
-		mySex = "C« n­¬ng"
+		mySex = "Young lady"
 	end
 	
 	return mySex

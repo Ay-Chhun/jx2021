@@ -4,8 +4,8 @@ function main()
 	local tSay = {}
 	local szHeader = "Chóc mõng n¨m míi T©n M·o."
 	
-	tinsert(tSay, "Nép M©m Ngò Qu¶./PB_give_5fruit")
-	tinsert(tSay, "C©y nªu ®Ñp thËt./do_nothing")
+	tinsert(tSay, "Submit Five-Fruit Trays./PB_give_5fruit")
+	tinsert(tSay, "The Tet pole is truly beautiful./do_nothing")
 	
 	Say(szHeader, getn(tSay), tSay)
 end

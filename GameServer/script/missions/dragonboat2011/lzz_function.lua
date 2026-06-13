@@ -200,7 +200,7 @@ function LZZ_GetMSPlayerIndex(nCamp)
 		end
 	end
 	if nTotalPlayerNum ~= getn(tIndex) then
-		WriteLog(tSTRING_MISSION_LOG[3]..nTotalPlayerNum..", getn(tIndex) chªnh lÖch lµ:"..getn(tIndex)) 
+		WriteLog(tSTRING_MISSION_LOG[3]..nTotalPlayerNum..", getn(tIndex) difference is:"..getn(tIndex)) 
 	end
 	return tIndex
 end
@@ -322,7 +322,7 @@ function LZZ_JoinBattle(nCamp)
 	local nCampPlace = nCamp 
 	local nMapID = gf_GetCurMapID() 
 	if NewWorld(nMapID,tMsLogInPos[nCampPlace][1],tMsLogInPos[nCampPlace][2]) == 1 then
-		Msg2MSAll(MISSIONID,GetName().." ®· gia nhËp "..tCampName[nCamp]) 
+		Msg2MSAll(MISSIONID,GetName().." has joined"..tCampName[nCamp]) 
 		Msg2Player("C¸c h¹ ®· gia nhËp råi"..tCampName[nCamp]) 
 		LZZ_SetPlayerState(nCamp) 
 		AddMSPlayer(MISSIONID,nCamp) 
@@ -386,7 +386,7 @@ function LZZ_Get_Game_Loop()
 		StartMissionTimer(MISSIONID,TIMERID,tTimeDiff[nState]) 
 		SetMissionV(MV_LZZ_GAME_LOOP,GetGameLoop()) 
 		SetMissionV(MV_LZZ_ERROR_NUM,GetMissionV(MV_LZZ_ERROR_NUM)+1) 
-		WriteLog("[H¶i ChiÕn Long Ch©u]: "..GetMissionV(MV_LZZ_LOG_TIME).."Mission thø"..GetMissionV(MV_LZZ_ERROR_NUM).."T¹o míi thêi gian vµ giai ®o¹n chiÕn tr­êng: "..(nState-1)) 
+		WriteLog("[H¶i ChiÕn Long Ch©u]: "..GetMissionV(MV_LZZ_LOG_TIME).."Mission number"..GetMissionV(MV_LZZ_ERROR_NUM).."T¹o míi thêi gian vµ giai ®o¹n chiÕn tr­êng: "..(nState-1)) 
 	end
 end
 
@@ -420,7 +420,7 @@ function lzz_tell_end()
 		szResult = tCampName[nWhoWin].."Giµnh chiÕn th¾ng"
 		Say(format(tSTRING_MISSION[10],tCampName[nWhoWin]),0) 
 	else
-		szResult = "hai phe hßa nhau" 
+		szResult = "both sides drew" 
 		Say(tSTRING_MISSION[11],0) 
 	end 
 	SetTask(VET_LZZ_PLAYER_TAG2,1)
@@ -434,7 +434,7 @@ function lzz_kicksleep()
 		Talk(1,"",sNpcNameEntrance..tSTRING_MISSION[12]) 
 		DelMSPlayer(MISSIONID,nCmap)  
 		Msg2MSAll(MISSIONID,GetName().."Rêi khái chiÕn tr­êng.") 
-		WriteLogEx(LONGCHAU_LOG_TITLE,GetName().." bÞ kick v× ngñ gËt")		
+		WriteLogEx(LONGCHAU_LOG_TITLE,GetName().." was kicked for dozing off")		
 		return 1 
 	end 
 	return 0 
@@ -577,13 +577,13 @@ function LZZ_Drifting_Box()
 	nIndex = CreateNpc("Gi¸ vò khÝ","Gi¸ vò khÝ",nMapID,tFourBox[1][1],tFourBox[1][2],0)
 	SetNpcDeathScript(nIndex,"\\script\\missions\\dragonboat2011\\npc\\box\\weapon_npc.lua")
 	SetNpcLifeTime(nIndex,nCount*90)
-	nIndex = CreateNpc("Gi¸ khiªn","Hé gi¸p",nMapID,tFourBox[2][1],tFourBox[2][2],0)
+	nIndex = CreateNpc("Gi¸ khiªn","Armor",nMapID,tFourBox[2][1],tFourBox[2][2],0)
 	SetNpcDeathScript(nIndex,"\\script\\missions\\dragonboat2011\\npc\\box\\armor_npc.lua")
 	SetNpcLifeTime(nIndex,nCount*90)
 	nIndex = CreateNpc("Giµy giã","Giµy t¨ng tèc",nMapID,tFourBox[3][1],tFourBox[3][2],0)
 	SetNpcDeathScript(nIndex,"\\script\\missions\\dragonboat2011\\npc\\box\\speedboots_npx.lua")
 	SetNpcLifeTime(nIndex,nCount*90)
-	nIndex = CreateNpc("L¸ th¶o d­îc","S­¬ng mï",nMapID,tFourBox[4][1],tFourBox[4][2],0)
+	nIndex = CreateNpc("L¸ th¶o d­îc","Mist",nMapID,tFourBox[4][1],tFourBox[4][2],0)
 	SetNpcDeathScript(nIndex,"\\script\\missions\\dragonboat2011\\npc\\box\\densefog_npc.lua")
 	SetNpcLifeTime(nIndex,nCount*90)
 	Msg2MSAll(MISSIONID,tSTRING_MISSION[21])
@@ -655,7 +655,7 @@ function LZZ_Panel_Show()
 	local str1,str2,num1,num2,fight1,fight2
 	local nLoop,nSecond
 	if GetMissionV(MV_LZZ_STATE) == MS_STATE_PEACE then
-		str1 = "Hßa b×nh"
+		str1 = "Peace"
 		nLoop = GetMissionV(MV_TIMER_LOOP)
 		nSecond = 5*(PEACE_TIMER_LOOP - nLoop + 1)
 		str2 = lzz_second_format(nSecond)
@@ -672,7 +672,7 @@ function LZZ_Panel_Show()
 		--print(format(tSRING_SYS_MSG[4],str1,str2,num1,num2,fight1,fight2))
 		LZZ_OperateAllPlayer(FloatMsg2Player,format(tSRING_SYS_MSG[4],str1,str2,num1,num2,fight1,fight2),ALL_ID)
 	elseif GetMissionV(MV_LZZ_STATE) == MS_STATE_READY then
-		str1 = "ChuÈn bÞ"
+		str1 = "Preparation"
 		nLoop = GetMissionV(MV_TIMER_LOOP)
 		nSecond = 5*(READY_TIMER_LOOP - nLoop + 1)
 		str2 = lzz_second_format(nSecond)
@@ -689,7 +689,7 @@ function LZZ_Panel_Show()
 		LZZ_OperateAllPlayer(FloatMsg2Player,format(tSRING_SYS_MSG[4],str1,str2,num1,num2,fight1,fight2),ALL_ID)
 		--print(format(tSRING_SYS_MSG[4],str1,str2,num1,num2,fight1,fight2))
 	elseif GetMissionV(MV_LZZ_STATE) == MS_STATE_FIGHT then
-		str1 = "ChiÕn ®Êu"
+		str1 = "Battle"
 		nLoop = GetMissionV(MV_TIMER_LOOP)
 		nSecond = 15*(FIGHT_TIMER_LOOP - nLoop + 1)
 		str2 = lzz_second_format(nSecond)
@@ -706,7 +706,7 @@ function LZZ_Panel_Show()
 		LZZ_OperateAllPlayer(FloatMsg2Player,format(tSRING_SYS_MSG[4],str1,str2,num1,num2,fight1,fight2),ALL_ID)
 		--print(format(tSRING_SYS_MSG[4],str1,str2,num1,num2,fight1,fight2))
 	elseif GetMissionV(MV_LZZ_STATE) == MS_STATE_COMPLETE then
-		str1 = "KÕt thóc"
+		str1 = "End"
 		nLoop = GetMissionV(MV_TIMER_LOOP)
 		nSecond = 5*(WAITOUT_TIMER_LOOP - nLoop + 1)
 		str2 = lzz_second_format(nSecond)

@@ -15,7 +15,7 @@ end
 function ask_number()
 	local nItemNum = GetItemCount(2,1,343);
 	if nItemNum < 1 then
-		Say("HiÖn b¹n kh«ng cã ®ñ ThÇn N«ng §¬n!",1,"§ång ý/OnUse");
+		Say("HiÖn b¹n kh«ng cã ®ñ ThÇn N«ng §¬n!",1,"Agree/OnUse");
 		return
 	elseif nItemNum > 100 then
 		nItemNum = 100;
@@ -24,16 +24,16 @@ function ask_number()
 end
 function UseShennongdan(nCount)
 	if GetTask(TASKVAL_SHENNONGDAN) + SHENNONGDAN_TIME * nCount > 200000000 then--³¬¹ý2ÒÚÉÏÏÞ
-		Say("V­ît qu¸ thêi gian giíi h¹n!",1,"§ång ý/no");
+		Say("Exceeded the time limit!",1,"Agree/no");
 		return
 	end
 	if DelItem(2,1,343,nCount) == 1 then
 		local value = GetTask(TASKVAL_SHENNONGDAN) + SHENNONGDAN_TIME * nCount
 		SetTask(TASKVAL_SHENNONGDAN, value)
-		Say("Thêi gian ThÇn N«ng ®¬n cña b¹n lµ <color=yellow>" .. value .. "<color> phót !", 0)
+		Say("Thêi gian ThÇn N«ng ®¬n cña b¹n lµ <color=yellow>" .. value .. "<color> minutes!", 0)
 	else
 		WriteLog("Dïng ThÇn N«ng §¬n:"..GetName().."Hñy bá ThÇn N«ng §¬n thÊt b¹i!");
-		Say("HiÖn b¹n kh«ng cã ®ñ ThÇn N«ng §¬n!",1,"§ång ý/OnUse");
+		Say("HiÖn b¹n kh«ng cã ®ñ ThÇn N«ng §¬n!",1,"Agree/OnUse");
 		return
 	end
 end

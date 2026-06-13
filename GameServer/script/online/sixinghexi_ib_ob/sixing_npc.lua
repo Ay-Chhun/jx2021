@@ -15,11 +15,11 @@ function get_npc_type(szNpcName)
 	local nNpcType = 0;
 	if szNpcName == "Phóc ThÇn" then
 		nNpcType = 1;
-	elseif szNpcName == "Tµi thÇn" then
+	elseif szNpcName == "God of Wealth" then
 		nNpcType = 2;
-	elseif szNpcName == "ChiÕn thÇn" then
+	elseif szNpcName == "God of War" then
 		nNpcType = 3;
-	elseif szNpcName == "Thùc thÇn" then
+	elseif szNpcName == "God of Food" then
 		nNpcType = 4;
 	end;
 	return nNpcType;
@@ -37,7 +37,7 @@ end;
 
 function dlg_main(nType)
 	local selTab = {
-				"Tèt qu¸! Xin ®a t¹"..tbNpcInfo_ib_ob[nType][2].."!!/#get_present("..nType..")",
+				"Excellent! Many thanks"..tbNpcInfo_ib_ob[nType][2].."!!/#get_present("..nType..")",
 				"§a t¹, sè vËt phÈm nµy ®Ó dµnh tÆng cho b»ng h÷u./nothing",
 				}
 	Say("<color=green>"..tbNpcInfo_ib_ob[nType][2].."<color>: "..tbNpcInfo_ib_ob[nType][3],getn(selTab),selTab);
@@ -92,20 +92,20 @@ function get_present(nType)
 		ModifyReputation(30,0);
 		AddItem(2,5,7,5);
 		Msg2Player("B¹n nhËn ®­îc 5 tÊm Gi¸m §Þnh phï cÊp 7.");
-		Msg2Global("Ng­êi ch¬i"..szPlayerName.."T¹i"..szMapName.."GÆp ®­îc Phóc ThÇn nhËn v« sè quµ, thËt khiÕn cho ng­êi kh¸c ph¶i ganh tþ!")
+		Msg2Global("Player"..szPlayerName.."At"..szMapName.."GÆp ®­îc Phóc ThÇn nhËn v« sè quµ, thËt khiÕn cho ng­êi kh¸c ph¶i ganh tþ!")
 	elseif nType == 2 then
 		nRand = random(1,100)
 		if nRand <= 75 then
 			Earn(80000);
-			szPresent = "8 vµng";
+			szPresent = "8 gold";
 		elseif nRand <= 95 then
 			Earn(180000);
-			szPresent = "18 tiÒn vµng";
+			szPresent = "18 gold coins";
 		else
 			Earn(280000);
-			szPresent = "28 tiÒn vµng";
+			szPresent = "28 gold coins";
 		end;
-		Msg2Global("Ng­êi ch¬i"..szPlayerName.."T¹i"..szMapName.."GÆp ThÇn tµi nhËn ®­îc v« sè ng©n l­îng"..szPresent..", thËt khiÕn ng­êi kh¸c ph¶i ganh tþ!");
+		Msg2Global("Player"..szPlayerName.."At"..szMapName.."GÆp ThÇn tµi nhËn ®­îc v« sè ng©n l­îng"..szPresent..", thËt khiÕn ng­êi kh¸c ph¶i ganh tþ!");
 	elseif nType == 3 then
 		nRand = random(1,100)
 		if nRand <= 85 then
@@ -115,7 +115,7 @@ function get_present(nType)
 		elseif nRand <= 90 then
 			AddItem(2,1,483,1);
 			Msg2Player("B¹n nhËn ®­îc mét tói Sinh Sinh Hãa T¸n");
-			szPresent = "Sinh Sinh Hãa T¸n (tiÓu)";
+			szPresent = "Sheng Sheng Hua San (small)";
 		elseif nRand <= 95 then
 			AddItem(2,1,489,1);
 			Msg2Player("B¹n nhËn ®­îc mét tói Ngäc Cao T¸n");
@@ -125,7 +125,7 @@ function get_present(nType)
 			Msg2Player("B¹n nhËn ®­îc mét tói V¹n VËt Quy Nguyªn ®¬n");
 			szPresent = "V¹n VËt Quy Nguyªn §¬n (tiÓu)";
 		end;
-		Msg2Global("Ng­êi ch¬i"..szPlayerName.."T¹i"..szMapName.."GÆp ®­îc ChiÕn thÇn nhËn ®­îc v« sè vËt phÈm"..szPresent..", khiÕn ng­êi kh¸c ph¶i ®è kþ!");
+		Msg2Global("Player"..szPlayerName.."At"..szMapName.."GÆp ®­îc ChiÕn thÇn nhËn ®­îc v« sè vËt phÈm"..szPresent..", khiÕn ng­êi kh¸c ph¶i ®è kþ!");
 	elseif nType == 4 then
 		nRand = random(1,100)
 		if nRand <= 25 then
@@ -135,15 +135,15 @@ function get_present(nType)
 		elseif nRand <= 50 then
 			AddItem(1,1,9,30);
 			Msg2Player("B¹n nhËn ®­îc 30 C¶i xµo tái");
-			szPresent = "30 C¶i xµo tái";
+			szPresent = "30 Garlic Stir-Fried Greens";
 		elseif nRand <= 75 then
 			AddItem(1,1,13,30);
 			Msg2Player("B¹n nhËn ®­îc 30 Tóy Méng Töu");
-			szPresent = "30 Tóy Méng Töu";
+			szPresent = "30 Drunken Dream Wine";
 		elseif nRand <= 83 then
 			AddItem(1,1,15,20);
 			Msg2Player("B¹n nhËn ®­îc 20 b¸nh Bét vµng");		
-			szPresent = "20 b¸nh Bét vµng";
+			szPresent = "20 Gold Powder Cakes";
 		elseif nRand <= 91 then
 			AddItem(1,1,17,20);
 			Msg2Player("B¹n nhËn ®­îc 20 NhÞ thËp tø kiÒu Minh NguyÖt D¹");
@@ -151,9 +151,9 @@ function get_present(nType)
 		else
 			AddItem(1,1,19,20);
 			Msg2Player("B¹n nhËn ®­îc 20 T©y B¾c Väng");	
-			szPresent = "20 T©y B¾c Väng";	
+			szPresent = "20 Northwest Gaze";	
 		end;
-		Msg2Global("Ng­êi ch¬i"..szPlayerName.."T¹i"..szMapName.."GÆp ®­îc Thùc thÇn, nhËn ®­îc v« sè thùc phÈm"..szPresent..", khiÕn ng­êi kh¸c ph¶i ganh tþ!");
+		Msg2Global("Player"..szPlayerName.."At"..szMapName.."GÆp ®­îc Thùc thÇn, nhËn ®­îc v« sè thùc phÈm"..szPresent..", khiÕn ng­êi kh¸c ph¶i ganh tþ!");
 	end;
 	Talk(1,"","<color=green>"..tbNpcInfo_ib_ob[nType][2].."<color>: PhÇn th­ëng cña ng­¬i ®©y, chóc vui vÎ!");
 end;

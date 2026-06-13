@@ -6,7 +6,7 @@
 
 Include("\\script\\online\\´º½Ú»î¶¯\\fushen_npc.lua")	
 
-g_sPlace = "BiÖn Kinh"
+g_sPlace = "Bianjing"
 GLB_PRESENT_NUM = 4580
 
 function main(npcIndex)

@@ -7,7 +7,7 @@ Include("\\script\\online\\viet_event\\xmas_08\\xmas_func.lua")
 Include("\\script\\lib\\globalfunctions.lua")
 
 g_szLogTitle = "Giang Sinh 2008"			--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
-g_szInfoHead = "<color=green>".."B¨ng Nhi".."<color>: "
+g_szInfoHead = "<color=green>".."Bing Er".."<color>: "
 
 g_szFileName = "girl_npc.lua"			--ÎÄ¼þÃû
 
@@ -15,18 +15,18 @@ g_szFileName = "girl_npc.lua"			--ÎÄ¼þÃû
 g_tbOldItem = 
 {
 	--		Ãû×Ö		ID1,ID2,ID3,	ÊýÁ¿
-	[1] = {"Ví Gi¸ng Sinh",	2,	1,	30041,	6,	},
-	[2] = {"Chu«ng Gi¸ng Sinh",	2,	1,	30042,	3,	},
+	[1] = {"Christmas Sock",	2,	1,	30041,	6,	},
+	[2] = {"Christmas Bell",	2,	1,	30042,	3,	},
 	[3] = {"Nh¸nh Th«ng Gi¸ng Sinh",	2,	1,	30040,	1,	},
-	[4] = {"C©y KÑo Gi¸ng Sinh",	2,	1,	30043,	1,	},
-	[5] = {"Ng«i Sao Gi¸ng Sinh",	2,	1,	30044,	1,	},
+	[4] = {"Christmas Candy Cane Tree",	2,	1,	30043,	1,	},
+	[5] = {"Christmas Star",	2,	1,	30044,	1,	},
 }
 
 g_tbNewItem = 
 {
 	--		Ãû×Ö		ID1,ID2,ID3,	ÊýÁ¿
-	[1] = {"Hép Quµ Xanh",	2,	1,	30033,	1,	},
-	[2] = {"Hép Quµ §á",	2,	1,	30034,	1,	},
+	[1] = {"Green Gift Box",	2,	1,	30033,	1,	},
+	[2] = {"Red Gift Box",	2,	1,	30034,	1,	},
 }
 
 function main()
@@ -34,9 +34,9 @@ function main()
 		return
 	end
 	local selTab = {
-				"§æi 1 Hép Quµ Xanh/#want_exchange(1)",
-				"§æi 1 Hép Quµ §á/#want_exchange(2)",
-				"Mua C©y KÑo Gi¸ng Sinh (1 c©y kÑo = 50 b¹c)/bug_sugar",
+				"Exchange 1 Green Gift Box/#want_exchange(1)",
+				"Exchange 1 Red Gift Box/#want_exchange(2)",
+				"Buy Christmas Candy Cane (1 candy cane = 50 silver)/bug_sugar",
 				"NhËn vËt phÈm cÈm nang ®¹i sù kiÖn/give_pouch",
 				"Ta chØ ®Õn xem thö/no",
 				}
@@ -45,7 +45,7 @@ end
 
 function bug_sugar()
 	if GetCash() < 5000 then
-		Say(g_szInfoHead.."§¹i hiÖp kh«ng ®ñ ng©n l­îng trªn ng­êi råi!",1,"ThËt lµ ng¹i qu¸! T¹i h¹ xin c¸o tõ./no")
+		Say(g_szInfoHead.."§¹i hiÖp kh«ng ®ñ ng©n l­îng trªn ng­êi råi!",1,"This is too much trouble! I take my leave./no")
 		return
 	end
 	if gf_Judge_Room_Weight(1,20) == 0 then
@@ -55,7 +55,7 @@ function bug_sugar()
 	if pay_ex(5000) == 1 then
 		add_item_ex(g_tbOldItem[4])
 	else
-		Say(g_szInfoHead.."§¹i hiÖp kh«ng ®ñ ng©n l­îng trªn ng­êi råi!",1,"ThËt lµ ng¹i qu¸! T¹i h¹ xin c¸o tõ./no")
+		Say(g_szInfoHead.."§¹i hiÖp kh«ng ®ñ ng©n l­îng trªn ng­êi råi!",1,"This is too much trouble! I take my leave./no")
 		return
 	end
 	main()
@@ -63,19 +63,19 @@ end
 
 function give_pouch()
 	if GetItemCount(2, 1, 30045) > 0 then
-		Say(g_szInfoHead.."§¹i hiÖp ®· cã mét c¸i råi, kh«ng thÓ nhËn tiÕp ®­îc n÷a!",1,"KÕt thóc ®èi tho¹i/no")
+		Say(g_szInfoHead.."§¹i hiÖp ®· cã mét c¸i råi, kh«ng thÓ nhËn tiÕp ®­îc n÷a!",1,"End dialogue/no")
 		return
 	end
 	if gf_Judge_Room_Weight(1,20) == 0 then
 		Talk(1,"",g_szInfoHead.."Kho¶ng trèng hµnh trang hoÆc søc lùc kh«ng ®ñ, xin kiÓm tra l¹i!")
 		return
 	end
-	add_item_ex( {"CÈm Nang §¹i Sù KiÖn",	2,	1,	30045,	1} )
+	add_item_ex( {"Grand Event Handbook",	2,	1,	30045,	1} )
 end
 
 function want_exchange(nType)
 	local selTab = {
-				format("§ång ý ®æi /#exchange_box(%d)", nType),
+				format("Agree to exchange /#exchange_box(%d)", nType),
 				"Ta chØ ®Õn xem thö/no",
 				}
 	if nType == 1 then
@@ -90,7 +90,7 @@ end
 function exchange_box(nType)
 	if nType == 1 then
 		if check_item_count(g_tbOldItem[1]) == 0 or check_item_count(g_tbOldItem[2]) == 0 or check_item_count(g_tbOldItem[3]) == 0 or check_item_count(g_tbOldItem[4]) == 0 then
-			Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"ThËt lµ ng¹i qu¸! T¹i h¹ xin c¸o tõ./no");
+			Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"This is too much trouble! I take my leave./no");
 			return
 		else
 			if gf_Judge_Room_Weight(1,20) == 0 then
@@ -100,13 +100,13 @@ function exchange_box(nType)
 			if del_item_ex(g_tbOldItem[1]) == 1 and del_item_ex(g_tbOldItem[2]) == 1 and del_item_ex(g_tbOldItem[3]) == 1 and del_item_ex(g_tbOldItem[4]) == 1 then
 				add_item_ex(g_tbNewItem[1])
 			else
-				Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"ThËt lµ ng¹i qu¸! T¹i h¹ xin c¸o tõ./no");
+				Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"This is too much trouble! I take my leave./no");
 				return
 			end
 		end
 	elseif nType == 2 then
 		if check_item_count(g_tbOldItem[1]) == 0 or check_item_count(g_tbOldItem[2]) == 0 or check_item_count(g_tbOldItem[3]) == 0 or check_item_count(g_tbOldItem[5]) == 0 then
-			Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"ThËt lµ ng¹i qu¸! T¹i h¹ xin c¸o tõ./no");
+			Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"This is too much trouble! I take my leave./no");
 			return
 		else
 			if gf_Judge_Room_Weight(1,20) == 0 then
@@ -116,7 +116,7 @@ function exchange_box(nType)
 			if del_item_ex(g_tbOldItem[1]) == 1 and del_item_ex(g_tbOldItem[2]) == 1 and del_item_ex(g_tbOldItem[3]) == 1 and del_item_ex(g_tbOldItem[5]) == 1 then
 				add_item_ex(g_tbNewItem[2])
 			else
-				Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"ThËt lµ ng¹i qu¸! T¹i h¹ xin c¸o tõ./no");
+				Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"This is too much trouble! I take my leave./no");
 				return
 			end
 		end
@@ -136,9 +136,9 @@ function add_item_ex(tItem)
 	nRetCode = AddItem(G, D, P, nItemNum)
 	if nRetCode == 1 then
 		Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." c¸i "..szItemName);
-		WriteLogEx(g_szLogTitle, "B¨ng Nhi", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName() )
+		WriteLogEx(g_szLogTitle, "Bing Er", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName() )
 	else
-		WriteLogEx(g_szLogTitle, "B¨ng Nhi", "", "", "", "", "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
+		WriteLogEx(g_szLogTitle, "Bing Er", "", "", "", "", "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
 	end
 end
 

@@ -30,7 +30,7 @@ function OnUse(nItemIdx)
 		SetTask(TASK_USE_YANHUA_TIME, 0);
 	end
 	if GetTask(TASK_TODAY_USE_COUNT) >= CONST_MAX_USE_COUNT then
-		Talk(1, "", "Mçi ngµy chØ ®­îc sö dông "..CONST_MAX_USE_COUNT.." ph¸o hoa");
+		Talk(1, "", "Mçi ngµy chØ ®­îc sö dông "..CONST_MAX_USE_COUNT.." fireworks");
 		return
 	end
 	

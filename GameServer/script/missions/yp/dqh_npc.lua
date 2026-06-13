@@ -3,9 +3,9 @@
 Include("\\script\\missions\\yp\\award.lua")
 
 tNpcName = {
-	{"<color=green>§o¹n Khinh HÇu<color>: ","GÇn ®©y Th©n V­¬ng say mª phËt häc nh­ng s¸ch trong tµng kinh c¸c ®· bŞ mÊt hÕt, ®¹i hiÖp h·y ®Õn chç hai thÕ lùc kh¸c ®Ó m­în.","Lµm phiÒn ®¹i hiÖp ®· thay bæn v­¬ng ®Õn <color=yellow>Quúnh KÕt<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh.","§¹i hiÖp ®· ®Õn <color=yellow>Quúnh KÕt<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh ch­a?","Lµm phiÒn ®¹i hiÖp ®· thay bæn v­¬ng ®Õn <color=yellow>H­ng Kh¸nh<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh.","§¹i hiÖp ®· ®Õn <color=yellow>H­ng Kh¸nh<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh ch­a?"},
-	{"<color=green>§¹t T©y ¤ng T¾c<color>: ","¤i, ba quyÓn kinh th­ quan träng trong Tµng Kinh C¸c cña bæn tù ®· kh«ng c¸nh mµ bay, theo nh­ ®Ö tö cña Thanh Méc Nhai th× rÊt cã thÓ ®· bŞ c¸c thÕ lùc kh¸c lÊy ®i, ®¹i hiÖp cã thÓ gióp ®ì bæn tù viÖc nµy kh«ng?","Lµm phiÒn ®¹i hiÖp thay bÇn t¨ng ®Õn <color=yellow>Thiªn Long Tù<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh.","§¹i hiÖp ®· ®Õn <color=yellow>Thiªn Long Tù<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh ch­a?","Lµm phiÒn ®¹i hiÖp thay bÇn t¨ng ®Õn <color=yellow>H­ng Kh¸nh<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh.","§¹i hiÖp ®· ®Õn <color=yellow>H­ng Kh¸nh<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh ch­a?"},	
-	{"<color=green>Lı §øc Kh¸nh<color>: ","GÇn ®©y Lı t­íng qu©n m­în vµi quyÓn kinh th­ xem, kh«ng ngê bŞ ng­êi kh¸c lµm h­ h¹i. Ha Ha, ®¹i hiÖp cã thÓ gióp ta ®Õn chç hai thÕ lùc cßn l¹i ®Ó trém kh«ng? T¹i h¹ v« cïng c¶m kİch!","Lµm phiÒn ®¹i hiÖp thay ta ®Õn <color=yellow>Thiªn Long Tù<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh.","§¹i hiÖp ®· ®Õn <color=yellow>Thiªn Long Tù<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh ch­a?","Lµm phiÒn ®¹i hiÖp thay ta ®Õn <color=yellow>Quúnh KÕt<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh.","§¹i hiÖp ®· ®Õn <color=yellow>Quúnh KÕt<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh ch­a?"},
+	{"<color=green>Duan Khinh Hau<color>:","GÇn ®©y Th©n V­¬ng say mª phËt häc nh­ng s¸ch trong tµng kinh c¸c ®· bŞ mÊt hÕt, ®¹i hiÖp h·y ®Õn chç hai thÕ lùc kh¸c ®Ó m­în.","Lµm phiÒn ®¹i hiÖp ®· thay bæn v­¬ng ®Õn <color=yellow>Quúnh KÕt<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh.","§¹i hiÖp ®· ®Õn <color=yellow>Quúnh KÕt<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh ch­a?","Lµm phiÒn ®¹i hiÖp ®· thay bæn v­¬ng ®Õn <color=yellow>H­ng Kh¸nh<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh.","§¹i hiÖp ®· ®Õn <color=yellow>H­ng Kh¸nh<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh ch­a?"},
+	{"<color=green>Dat Tay Ong Tac<color>:","¤i, ba quyÓn kinh th­ quan träng trong Tµng Kinh C¸c cña bæn tù ®· kh«ng c¸nh mµ bay, theo nh­ ®Ö tö cña Thanh Méc Nhai th× rÊt cã thÓ ®· bŞ c¸c thÕ lùc kh¸c lÊy ®i, ®¹i hiÖp cã thÓ gióp ®ì bæn tù viÖc nµy kh«ng?","Lµm phiÒn ®¹i hiÖp thay bÇn t¨ng ®Õn <color=yellow>Thiªn Long Tù<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh.","§¹i hiÖp ®· ®Õn <color=yellow>Thiªn Long Tù<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh ch­a?","Lµm phiÒn ®¹i hiÖp thay bÇn t¨ng ®Õn <color=yellow>H­ng Kh¸nh<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh.","§¹i hiÖp ®· ®Õn <color=yellow>H­ng Kh¸nh<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh ch­a?"},	
+	{"<color=green>Ly Duc Khanh<color>:","GÇn ®©y Lı t­íng qu©n m­în vµi quyÓn kinh th­ xem, kh«ng ngê bŞ ng­êi kh¸c lµm h­ h¹i. Ha Ha, ®¹i hiÖp cã thÓ gióp ta ®Õn chç hai thÕ lùc cßn l¹i ®Ó trém kh«ng? T¹i h¹ v« cïng c¶m kİch!","Lµm phiÒn ®¹i hiÖp thay ta ®Õn <color=yellow>Thiªn Long Tù<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh.","§¹i hiÖp ®· ®Õn <color=yellow>Thiªn Long Tù<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh ch­a?","Lµm phiÒn ®¹i hiÖp thay ta ®Õn <color=yellow>Quúnh KÕt<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh.","§¹i hiÖp ®· ®Õn <color=yellow>Quúnh KÕt<color> ®o¹t vÒ 3 quyÓn Kim Cang Kinh ch­a?"},
 };
 
 function main()
@@ -29,7 +29,7 @@ function main()
 	local strtab = {
 		"Trİ ®o¹t kinh th­ (Tiªu hao 5 ®iÓm tinh lùc)/#dqh_talk_1("..nType..")",
 		"Giíi thiÖu chi tiÕt/#dqh_talk_2("..nType..")",
-		"Kh«ng cã viÖc g×!/nothing",
+		"Nothing to do!/nothing",
 	}
 	Say(g_NpcName..tNpcName[nType][2],
 		getn(strtab),
@@ -76,14 +76,14 @@ function dqh_talk_1(nType)
 				3,
 				"\nHoµn thµnh nhiÖm vô [Trİ ®o¹t kinh th­]/#dqh_talk_1_2("..nType..")",
 				"\nHñy bá nhiÖm vô [Trİ ®o¹t kinh th­]/#dqh_talk_1_1("..nType..")",
-				"\nKÕt thóc ®èi tho¹i/nothing");
+				"\nEnd conversation/nothing");
 		end
 	else
 		Say(g_NpcName.."§¹i hiÖp muèn nhËn nhiÖm vô [Trİ ®o¹t kinh th­] kh«ng?",
 				3,
 				"\nNhËn nhiÖm vô [Trİ ®o¹t kinh th­]/#dqh_talk_1_4("..nType..")",
 				"\n*Bá qua nhiÖm vô [Trİ ®o¹t kinh th­]/#dqh_talk_1_3("..nType..")",
-				"\nKÕt thóc ®èi tho¹i/nothing");
+				"\nEnd conversation/nothing");
 	end
 end
 
@@ -115,7 +115,7 @@ function dqh_talk_1_3(nType)
 	local g_NpcName = tNpcName[nType][1];
 	local tSay = {
 		format("\nX¸c nhËn/#dqh_talk_1_3_1(%d)", nType),
-		"§Ó ta suy nghÜ/nothing",
+		"Let me think about it/nothing",
 	}
 	local szCardName = "ThÎ th¸ng hoÆc ThÎ ho¹t ®éng"
 	if IsActivatedVipCard() ~= 0 then

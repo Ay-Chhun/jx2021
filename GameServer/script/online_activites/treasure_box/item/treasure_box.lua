@@ -7,7 +7,7 @@ Include("\\script\\vng\\config\\newserver.lua");
 VET_TREASUER_BOX_AWARD = {
  	{2, 5050, 5000000, 1},
  	{3, 1000, 450000, 1},
-     {1, 3000, "Kim R≠¨ng", {2, 1, 30342, 1}, 0},
+     {1, 3000, "Gold Chest", {2, 1, 30342, 1}, 0},
      {1, 900, "Bπch Kim R≠¨ng", {2, 1, 30343, 1}, 0},
      {1, 50, "Th«n Tµi B∂o R≠¨ng", {2, 1, 30344, 1}, 0},
 }

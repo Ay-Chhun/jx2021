@@ -67,7 +67,7 @@ function OnUse(nParticular)
 			Msg2Player("NhËn ®­îc 1 BÝch Dao Thanh T©m §¬n.");
 		elseif nNum <= 53 then
 			AddItem(2,0,1032,1);
-			Msg2Player("NhËn ®­îc 1 Håi Long S¸ch.");			
+			Msg2Player("Received 1 Hoi Long Sach.");			
 		elseif nNum <= 80 then
 			AddItem(2,0,1034,1);
 			Msg2Player("NhËn ®­îc 1 TÝch D­¬ng Tinh Hoa.");
@@ -76,13 +76,13 @@ function OnUse(nParticular)
 			Msg2Player("NhËn ®­îc 1 To¸i Th¹ch ChÊn.");
 		elseif nNum <= 90 then
 			AddItem(2,0,1035,1);
-			Msg2Player("NhËn ®­îc 1 Ngò Hµnh Kú Phiªn");
+			Msg2Player("Received 1 Ngu Hanh Ky Phien");
 		elseif nNum <= 95 then
 			AddItem(2,0,1036,1);
-			Msg2Player("NhËn ®­îc 1 la bµn");
+			Msg2Player("Received 1 compass");
 		else
 			AddItem(2,0,1037,1);
-			Msg2Player("NhËn ®­îc th­ mêi Long m«n tiÖc.");
+			Msg2Player("Received an invitation to the Dragon Gate banquet.");
 		end
 		
 	else

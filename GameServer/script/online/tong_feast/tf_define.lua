@@ -7,19 +7,19 @@ TF_SWITH = 1;
 
 TF_NPC_POS = {
 	[1] = {
-		[1] = {205, 1643, 2947, "§«ng BiÖn Kinh (229,188)"},
-		[2] = {205, 1609, 2992, "§«ng BiÖn Kinh (201,18B¶y)"},
-		[3] = {205, 1705, 2914, "§«ng BiÖn Kinh (213,181)"},	
+		[1] = {205, 1643, 2947, "East Bianjing (229,188)"},
+		[2] = {205, 1609, 2992, "East Bianjing (201,187)"},
+		[3] = {205, 1705, 2914, "East Bianjing (213,181)"},	
 	},                      
 	[2] = {                 
-		[1] = {201, 1587, 3015, "Nam BiÖn Kinh (198,188)"},
-		[2] = {201, 1512, 3024, "Nam BiÖn Kinh (189,189)"},
-		[3] = {201, 1535, 2934, "Nam BiÖn Kinh (191,183)"},	
+		[1] = {201, 1587, 3015, "South Bianjing (198,188)"},
+		[2] = {201, 1512, 3024, "South Bianjing (189,189)"},
+		[3] = {201, 1535, 2934, "South Bianjing (191,183)"},	
 	},                       
 	[3] = {                 
-		[1] = {203, 1520, 2945, "T©y BiÖn Kinh (190,184)"},
-		[2] = {203, 1555, 2959, "T©y BiÖn Kinh (194,184)"},
-		[3] = {203, 1497, 3054, "T©y BiÖn Kinh (18B¶y,190)"},	
+		[1] = {203, 1520, 2945, "West Bianjing (190,184)"},
+		[2] = {203, 1555, 2959, "West Bianjing (194,184)"},
+		[3] = {203, 1497, 3054, "West Bianjing (187,190)"},	
 	},                      
 	[4] = {                 
 		[1] = {105, 1560, 3108, "T©y TuyÒn Ch©u (183,18B¶y)"},
@@ -99,14 +99,14 @@ TF_TASK_9 = 3195 --»ñµÃBUFFµÄÊ±¼ä
 ---------------------------------------
 
 ------item-----------------------------
-TF_ITEM_PIG = {2, 1, 30583, "Lîn C¾p N¸ch"};
-TF_ITEM_COW = {2, 1, 30584, "Bß KoBe"};
-TF_ITEM_SHEEP = {2, 1, 30585, "Dª B¶y Në"};
-TF_ITEM_BACON = {2, 1, 30586, "ThÞt Nguéi"};
-TF_ITEM_TC = {2, 1, 30590, "Bµn TiÖc"};
-TF_ITEM_COOKER = {2, 1, 30591, "Bé NÊu BÕp"};
-TF_ITEM_WINE = {2, 1, 30587, "Minh M¹ng Chi Töu"};
-TF_ITEM_TABLEWARE = {2, 1, 30592, "Bé §å ¡n"};
+TF_ITEM_PIG = {2, 1, 30583, "Pork Belly"};
+TF_ITEM_COW = {2, 1, 30584, "Kobe Beef"};
+TF_ITEM_SHEEP = {2, 1, 30585, "Spring Lamb"};
+TF_ITEM_BACON = {2, 1, 30586, "Cold Cuts"};
+TF_ITEM_TC = {2, 1, 30590, "Banquet Table"};
+TF_ITEM_COOKER = {2, 1, 30591, "Cookware Set"};
+TF_ITEM_WINE = {2, 1, 30587, "Mingming Wine"};
+TF_ITEM_TABLEWARE = {2, 1, 30592, "Dish Set"};
 TF_ITEM_TONG_TOKEN_CHIP = {2, 1, 30588, "M¶nh LÖnh Bµi Bang Héi"};
 TF_ITEM_TONG_TOKEN = {2, 1, 30589, "LÖnh Bµi Bang Héi"};
 ---------------------------------------

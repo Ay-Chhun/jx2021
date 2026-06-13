@@ -2,7 +2,7 @@ Include("\\script\\lib\\globalfunctions.lua");
 Include("\\script\\task\\faction\\faction_equipment.lua");
 --=========================================================================================
 MAX_SEL_PER_PAGE = 5;	--Ò»Ò³×î´óÏÔÊ¾ÊýÁ¿
-g_szPacketName = "Tói ¢n S­ khã quªn";	--°üµÄÃû×Ö
+g_szPacketName = "Bag of Master's Unforgettable Grace";	--°üµÄÃû×Ö
 g_nNeedRoom = 4;
 g_nNeedWeight = 400;	
 g_tbItem = 
@@ -10,15 +10,15 @@ g_tbItem =
 	[1]  = {0,2,2501,"KiÕm ¢n s­","S­ ¢n KiÕm (ch­a nhËp ph¸i, Nga Mi, Vâ §ang cã thÓ dïng)"},
 	[2]  = {0,5,2501,"C«n ¢n s­","S­ ¢n C«n (ch­a nhËp ph¸i, ThiÕu l©m tôc gia, C¸i Bang « y cã thÓ dïng)"},
 	[3]  = {0,0,2501,"¢n s­ Thñ","S­ ¢n Thñ (ch­a nhËp ph¸i, vâ t¨ng ThiÕu L©m, C¸i Bang TÜnh Y cã thÓ dïng)"},
-	[4]  = {0,1,2501,"Ch©m ¢n s­","S­ ¢n Ch©m (ch­a nhËp ph¸i, §­êng M«n cã thÓ dïng)"},
+	[4]  = {0,1,2501,"Needle Master's Grace","S­ ¢n Ch©m (ch­a nhËp ph¸i, §­êng M«n cã thÓ dïng)"},
 	[5]  = {0,3,2501,"§ao ¢n s­","S­ ¢n §ao (tôc gia thiÕu l©m cã thÓ dïng)"},
-	[6]  = {0,8,2501,"Tr­îng ¢n s­","S­ ¢n Tr­îng (ThiÕu L©m ThiÒu T¨ng cã thÓ sö dông)"},
-	[7]  = {0,10,2501,"S­ ¢n CÇm ","S­ ¢n CÇm (Nga Mi Tôc Gia (cã thÓ sö dông)"},
-	[8]  = {0,9,2501,"S­ ¢n Bót","S­ ¢n Bót (Vâ §ang Tôc Gia cã thÓ sö dông)"},
-	[9]  = {0,6,2501,"S­ ¢n Th­¬ng","S­ ¢n Th­¬ng (D­¬ng M«n Th­¬ng Kþ cã thÓ sö dông)"},
-	[10]  = {0,4,2501,"S­ ¢n Cung ","S­ ¢n Cung (D­¬ng M«n Cung Kþ cã thÓ sö dông)"},
-	[11]  = {0,7,2501,"S­ ¢n NhÉn","S­ ¢n NhÉn (Ngò §éc Tµ HiÖp cã thÓ sö dông)"},
-	[12]  = {0,11,2501,"S­ ¢n Tr¶o ","S­ ¢n Tr¶o (Ngò §éc Cç S­ cã thÓ sö dông)"},
+	[6]  = {0,8,2501,"Staff Master's Grace","S­ ¢n Tr­îng (ThiÕu L©m ThiÒu T¨ng cã thÓ sö dông)"},
+	[7]  = {0,10,2501,"Master's Grace Zither","S­ ¢n CÇm (Nga Mi Tôc Gia (cã thÓ sö dông)"},
+	[8]  = {0,9,2501,"Master's Grace Pen","S­ ¢n Bót (Vâ §ang Tôc Gia cã thÓ sö dông)"},
+	[9]  = {0,6,2501,"Master's Grace Spear","S­ ¢n Th­¬ng (D­¬ng M«n Th­¬ng Kþ cã thÓ sö dông)"},
+	[10]  = {0,4,2501,"Master's Grace Bow","S­ ¢n Cung (D­¬ng M«n Cung Kþ cã thÓ sö dông)"},
+	[11]  = {0,7,2501,"Master's Grace Ring","S­ ¢n NhÉn (Ngò §éc Tµ HiÖp cã thÓ sö dông)"},
+	[12]  = {0,11,2501,"Master's Grace Claw","S­ ¢n Tr¶o (Ngò §éc Cç S­ cã thÓ sö dông)"},
 }
 --=========ÒÔÏÂ´úÂëÎÞÐë¸Ä¶¯================================================================
 function OnUse(nItemIdx)
@@ -42,12 +42,12 @@ function list_item(nPageNum,nRecordCount,nItemIdx)
 		tinsert(selTab,tbItemTab[i]);
 	end;
 	if nPageNum ~= 1 then
-		tinsert(selTab,format("\n Trang tr­íc/#list_item(%d,%d,%d)",nPageNum-1,nRecordCount,nItemIdx));
+		tinsert(selTab,format("\n Previous page/#list_item(%d,%d,%d)",nPageNum-1,nRecordCount,nItemIdx));
 	end;
 	if nPageNum ~= ceil(nRecordCount/MAX_SEL_PER_PAGE) then
 		tinsert(selTab,format("\n Trang sau/#list_item(%d,%d,%d)",nPageNum+1,nRecordCount,nItemIdx));	
 	end;
-	tinsert(selTab,"\n §ãng");
+	tinsert(selTab,"\n Close");
 	Say("B¹n muèn më <color=yellow>"..g_szPacketName.."<color> kh«ng? H·y lùa chän vò khÝ b¹n cÇn theo m«n ph¸i",getn(selTab),selTab);
 end
 
@@ -61,7 +61,7 @@ end;
 
 function add_item(nIdx,nItemIdx)
 	local selTab = {
-				format("§ång ý/#add_item_confirm(%d,%d)",nIdx,nItemIdx),
+				format("Confirm/#add_item_confirm(%d,%d)",nIdx,nItemIdx),
 				"nghÜ l¹i xem/nothing",
 				}
 	Say("B¹n muèn chän <color=yellow>"..g_tbItem[nIdx][4].."<color> vò khÝ nµy kh«ng?",getn(selTab),selTab);
@@ -75,7 +75,7 @@ function add_item_confirm(nIdx,nItemIdx)
 	local nRetCode = 0;
 	if DelItemByIndex(nItemIdx,1) == 1 then
 		give_equip(nIdx);
-		WriteLog("["..g_szPacketName.."]:"..GetName().."Më 1 tói ");
+		WriteLog("["..g_szPacketName.."]:"..GetName().."Open 1 bag");
 	end;
 end;
 
@@ -86,24 +86,24 @@ function give_equip(nIdx)
 	if nRetCode == 1 then
 		Msg2Player("B¹n nhËn ®­îc 1 S­ ¢n M·o");
 	else
-		WriteLog("["..g_szPacketName.."Lçi]:"..GetName().."NhËn S­ ¢n M¹o bÞ lçi, nRetCode:"..nRetCode)
+		WriteLog("["..g_szPacketName.."Error]:"..GetName().."Receiving Master's Grace Hat failed, nRetCode:"..nRetCode)
 	end;
 	nRetCode = AddItem(0,100,2504+nBody-1,1,1,-1,-1,-1,-1,-1,-1);
 	if nRetCode == 1 then
 		Msg2Player("B¹n nhËn ®­îc 1 S­ ¢n Y");
 	else
-		WriteLog("["..g_szPacketName.."Lçi]:"..GetName().."NhËn ®­îc S­ ¢n Y XuÊt Th¸c, nRetCode:"..nRetCode)
+		WriteLog("["..g_szPacketName.."Error]:"..GetName().."Received Master's Grace Robe Issue, nRetCode:"..nRetCode)
 	end;
 	nRetCode = AddItem(0,101,2504+nBody-1,1,1,-1,-1,-1,-1,-1,-1);
 	if nRetCode == 1 then
 		Msg2Player("B¹n nhËn ®­îc 1 S­ ¢n Trang ");
 	else
-		WriteLog("["..g_szPacketName.."Lçi]:"..GetName().."NhËn ®­îc S­ ¢n Trang XuÊt Th¸c, nRetCode:"..nRetCode)
+		WriteLog("["..g_szPacketName.."Error]:"..GetName().."Received Master's Grace Outfit Issue, nRetCode:"..nRetCode)
 	end;
 	nRetCode = AddItem(g_tbItem[nIdx][1],g_tbItem[nIdx][2],g_tbItem[nIdx][3],1,1,-1,-1,-1,-1,-1,-1)
 	if nRetCode == 1 then
 		Msg2Player("B¹n nhËn ®­îc "..g_tbItem[nIdx][4]);
 	else
-		WriteLog("["..g_szPacketName.."Lçi]:"..GetName().."NhËn ®­îc"..g_tbItem[nIdx][4].."cã lçi, nRetCode:"..nRetCode)
+		WriteLog("["..g_szPacketName.."Error]:"..GetName().."Received"..g_tbItem[nIdx][4].."Error, nRetCode:"..nRetCode)
 	end;
 end;

@@ -12,19 +12,19 @@ if GetGlbValue(GLB_AOYUN_TIME_STATE) == 1 then
 		SetGlbValue(GLB_AOYUN_HUOJUTAI_NUM,nNpcNum+1);
 		if nNpcName == tHuojuName[1][1] then
 			SetCurrentNpcSFX(nNpcIdx,910,2,1);--µ„»º
-			Msg2Global(tHuojuName[1][1].."ß∑ thæp.");
+			Msg2Global(tHuojuName[1][1].."Already lit.");
 		end
 	elseif nNpcNum < 30 then
 		SetGlbValue(GLB_AOYUN_HUOJUTAI_NUM,nNpcNum+1);
 		if nNpcName == tHuojuName[nNpcNum][2] then
 			SetCurrentNpcSFX(nNpcIdx,909,2,1);--µ„»º
-			Msg2Global(tHuojuName[nNpcNum][2].."ß∑ thæp.");	
+			Msg2Global(tHuojuName[nNpcNum][2].."Already lit.");	
 		end		
 	elseif nNpcNum == 30 then
 		SetGlbValue(GLB_AOYUN_HUOJUTAI_NUM,nNpcNum+1);
 		if nNpcName == tHuojuName[nNpcNum][2] then
 			SetCurrentNpcSFX(nNpcIdx,913,2,1);--µ„»º
-			Msg2Global(tHuojuName[nNpcNum][2].."ß∑ thæp.");
+			Msg2Global(tHuojuName[nNpcNum][2].."Already lit.");
 		end			
 	end
 end

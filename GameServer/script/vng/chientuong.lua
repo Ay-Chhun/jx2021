@@ -21,8 +21,8 @@ function OnPutinComplete(param)
 	DelItemByIndex(tbChangeList[1][1],-1)
 	
 	LIB_Award.szLogTitle = "CHIEN TUONG"
-	LIB_Award.szLogAction = "®æi"
-	local tbAward = {item = {{gdp = {0,105,30033,1,4,-1,-1,-1,-1,-1,-1,-1}, nExpired = (90*24*60*60), name = "ChiÕn T­îng Nguyªn So¸i"}}}
+	LIB_Award.szLogAction = "exchange"
+	local tbAward = {item = {{gdp = {0,105,30033,1,4,-1,-1,-1,-1,-1,-1,-1}, nExpired = (90*24*60*60), name = "Marshal War Elephant"}}}
 	LIB_Award:Award(tbAward)
 	Talk(1,"","Trao ®æi thµnh c«ng, c¸c h¹ h·y kiÓm tra ChiÕn T­îng míi.")
 end

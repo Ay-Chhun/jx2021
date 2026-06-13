@@ -8,8 +8,8 @@ Include("\\script\\lib\\globalfunctions.lua");
 function main()
 	local nDate = tonumber(date("%y%m%d"));
 	local tb_dialog = {
-		"§ång ý mua/open_shop",
-		"Ng­¬i ®· ®i nh÷ng n¬i ®©u?/query_pos",
+		"Agree to buy/open_shop",
+		"Where have you been?/query_pos",
 		"LÇn sau l¹i ®Õn nhÐ!/exit_dialog"
 	};
 --	if nDate >= 091218 and nDate < 100117 then
@@ -43,7 +43,7 @@ function buy_yanhuo()
 	end
 	if Pay(1) == 1 then
 		AddItem(2, 1, 30137, 1);
-		WriteLogEx("Giang Sinh","mua ph¸o hoa")
+		WriteLogEx("Giang Sinh","buy fireworks")
 	else
 		Talk(1, "", "<color=green>Th­¬ng Nh©n T©y Vùc<color>: Trªn hµnh trang kh«ng ®ñ tiÒn.");
 	end

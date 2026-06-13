@@ -306,7 +306,7 @@ function bhta_About(page)
             "Bang chñ cã tr¸ch nhiÖm ph©n ph¸t Tinh Anh LÖnh Kú cho c¸c thµnh viªn tham gia gi¶i ®Êu Bang Héi Tinh Anh. C¸c thµnh viªn cña bang héi khi ®¨ng ký ph¶i cã Ýt nhÊt <color=red>1 Tinh Anh LÖnh Kú<color> trong hµnh trang cña m×nh, vµ ph¶i gia nhËp Bang Ýt nhÊt <color=red>3 ngµy<color>\n",
         },
         {
-            "Chó ý: \n",
+            "Note: \n",
             " - ChØ cã bang chñ cña bang héi ®¹i diÖn cho mçi bang míi cã thÓ nhËn Tinh Anh LÖnh Kú.\n",
             format(" - Mçi bang héi chØ cã thÓ nhËn tèi ®a <color=red>%d Tinh Anh LÖnh Kú<color> tõ Long Hæ Sø.\n", BHTA_MAX_FLAG_NUM),
             format(" - Mçi bang héi chØ ®­îc ®¨ng ký tèi ®a <color=red>%d<color> nh©n vËt cã qu©n hµm <color=red>Nguyªn So¸i.<color>\n", BHTA_MAX_NGUYENSOAI_NUMBER)

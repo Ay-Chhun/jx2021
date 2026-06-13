@@ -18,7 +18,7 @@ local nTimeState = 0;
 		ReportBattleState(nTimeState);
 	--±»»¸Ω· ¯
 	elseif nMapState == 3 then  
-		Msg2MSAll(MULIT_MISSION_ID, "Chi’n Æ u k’t thÛc!");
+		Msg2MSAll(MULIT_MISSION_ID, "Battle over!");
 		StopMissionTimer(MULIT_MISSION_ID, MULTI_TIME_ID2);		
 	end;
 end;
@@ -148,7 +148,7 @@ local Bonus_str = "";
 				--Say("<color=green>¥˙÷æ«ø<color>£∫ƒ„“—æ≠ §≥ˆ∏√≥°∞Ÿ»À”¢–€¥Û¿ﬁ±»»¸£¨∞¥’’πÊ‘ÚΩ´ªÒµ√"..Bonus_str.."◊˜Œ™Ω±¿¯£°",0);
 					Earn(nBonus);
 				end
-				WriteLog("[Qu«n hÔng chi’n] Ng≠Íi ch¨i "..GetName().." Thæng trÀn"..GetMissionV(START_TIME).."nhÀn Æ≠Óc ph«n th≠Îng:"..nBonus.." TÊng ph› vµo trÀn lµ:"..GetMissionV(MULTIMAP_BONUS).." Tµi kho∂n: "..GetAccount());
+				WriteLog("[Qu«n hÔng chi’n] Ng≠Íi ch¨i "..GetName().." wins the battle"..GetMissionV(START_TIME).."nhÀn Æ≠Óc ph«n th≠Îng:"..nBonus.." TÊng ph› vµo trÀn lµ:"..GetMissionV(MULTIMAP_BONUS).." Account:"..GetAccount());
 				PlayerIndex = OldPlayer;
 			end
 			
@@ -208,7 +208,7 @@ local Bonus_str = "";
 				tinsert(Winner_info,GetName());
 				tinsert(Winner_info,GetTaskTemp(TOTAL_KILL_NUM));
 				tinsert(Winner_News,Winner_info);
-				WriteLog("[Qu«n hÔng chi’n] Ng≠Íi ch¨i "..GetName().." Thæng trÀn"..GetMissionV(START_TIME).."nhÀn Æ≠Óc ph«n th≠Îng:"..nBonus.." TÊng ph› vµo trÀn lµ:"..GetMissionV(MULTIMAP_BONUS).." Tµi kho∂n: "..GetAccount());
+				WriteLog("[Qu«n hÔng chi’n] Ng≠Íi ch¨i "..GetName().." wins the battle"..GetMissionV(START_TIME).."nhÀn Æ≠Óc ph«n th≠Îng:"..nBonus.." TÊng ph› vµo trÀn lµ:"..GetMissionV(MULTIMAP_BONUS).." Account:"..GetAccount());
 				PlayerIndex = OldPlayer
 				Winner_info = {}
 			end
@@ -295,7 +295,7 @@ local Bonus_str = "";
 	if nMin == 0 then
 		Msg2MSAll(MULIT_MISSION_ID, "Giai Æoπn chi’n Æ u: Thi Æ u Æang ti’n hµnh, trong trÀn hi÷n c„"..nTotalFigtherNum.." Æ u thÒ, thÍi gian thi Æ u cﬂn"..nSec.." gi©y.");
 	elseif nSec == 0 then
-		Msg2MSAll(MULIT_MISSION_ID, "Giai Æoπn chi’n Æ u: Thi Æ u Æang ti’n hµnh, trong trÀn hi÷n c„"..nTotalFigtherNum.." Æ u thÒ, thÍi gian thi Æ u cﬂn"..nMin.." phÛt.");
+		Msg2MSAll(MULIT_MISSION_ID, "Giai Æoπn chi’n Æ u: Thi Æ u Æang ti’n hµnh, trong trÀn hi÷n c„"..nTotalFigtherNum.." Æ u thÒ, thÍi gian thi Æ u cﬂn"..nMin.." minutes.");
 	end
 	
 end;

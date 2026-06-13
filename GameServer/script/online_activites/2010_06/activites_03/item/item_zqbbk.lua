@@ -8,7 +8,7 @@ Include("\\script\\online_activites\\2010_06\\activites_03\\head.lua");--»î¶¯Í·Î
 function OnUse(nItemIdx)
 	KillFollower();
     local tbSay = {};
-    tinsert(tbSay,  format("%s/vet_201006_03_create_pet_2", "B¸o Zakumi"));
+    tinsert(tbSay,  format("%s/vet_201006_03_create_pet_2", "Leopard Zakumi"));
     for i=1,getn(VET_201006_03_TB_NPC_LIST) do
     		tinsert(tbSay,  format("%s/#vet_201006_03_use(%d)", "Cæ ®éng viªn bãng ®¸ "..VET_201006_03_TB_NPC_LIST[i][2],i));
     end    

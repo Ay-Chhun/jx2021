@@ -18,7 +18,7 @@ function OnDeath()
         	
         	--ÕÙ»½ÖÓÊÏNPC
         	if GetTask(TASK_LEV_18_ID) == 1 then
-        	    SummonNpc("B¸t Phô Hµ §«ng S­","Chung ThÞ");
+        	    SummonNpc("B¸t Phô Hµ §«ng S­","Zhong Shi");
         	    CreateTrigger(1, 195, 86);
                 ContinueTimer(GetTrigger(86));
                 
@@ -48,7 +48,7 @@ function OnDeath()
             if GetTask(TASK_LEV_18_ID) == 1 and nDist >= 0 and nDist <= 50 then
             	--ÕÙ»½ÖÓÊÏNPC
             	if GetTask(TASK_LEV_18_ID) == 1 then
-            	    SummonNpc("B¸t Phô Hµ §«ng S­","Chung ThÞ");
+            	    SummonNpc("B¸t Phô Hµ §«ng S­","Zhong Shi");
             	    CreateTrigger(1, 195, 86);
                     ContinueTimer(GetTrigger(86));
                     

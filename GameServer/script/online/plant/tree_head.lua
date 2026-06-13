@@ -50,7 +50,7 @@ else
 TREETYPE = {	--Ä£°åÃû£¬NPCÃû×Ö£¬¼ä¸ôÊ±¼ä£¬ËùÐèÂ¶Ë®
 		{"MÇm hoa hång","MÇm c©y Th¸i H­ B¸t Nh· ",90,1},
 		{"MÇm Hoa hång","MÇm c©y Th¸i H­ B¸t Nh· ",90,1},
-		{" nh¸nh hoa hång","C©y Th¸i H­ B¸t Nh· nhá ",90,1},
+		{" rose branch","C©y Th¸i H­ B¸t Nh· nhá ",90,1},
 		{"c©y §a MËt Hoa Qu¶ nhá","C©y Th¸i H­ B¸t Nh· lín ",90,1},
 		{"c©y §a MËt Hoa Qu¶ trung","C©y hoa Th¸i H­ B¸t Nh· ",90,2},
 		{"c©y §a MËt Hoa Qu¶ lín","C©y Th¸i H­ B¸t Nh· ",90,2},
@@ -58,7 +58,7 @@ TREETYPE = {	--Ä£°åÃû£¬NPCÃû×Ö£¬¼ä¸ôÊ±¼ä£¬ËùÐèÂ¶Ë®
 SMALLTREETYPE = {	--Ä£°åÃû£¬NPCÃû×Ö£¬¼ä¸ôÊ±¼ä£¬ËùÐèÂ¶Ë®
 		{"MÇm hoa hång","MÇm c©y Th¸i H­ nhá ",120,1},
 		{"MÇm Hoa hång","MÇm c©y Th¸i H­ nhá ",120,1},
-		{" nh¸nh hoa hång","C©y Th¸i H­ nhá ",120,1},
+		{" rose branch","C©y Th¸i H­ nhá ",120,1},
 		}
 end
 
@@ -129,7 +129,7 @@ function Get_Time_String(nSecond)
 	end;
 	nMin = floor(mod(nSecond/60,60));
 	if nMin > 0 then
-		sTime = sTime..nMin.." phót ";
+		sTime = sTime..nMin.." minutes";
 	end;
 	nSec = mod(nSecond,60);
 	if nSec >= 0 then
@@ -178,15 +178,15 @@ function Give_YuanXiao_Award(nType)
 		nRand = random(1,100);
 		if nRand <= 5 then
 			nExp = nExp*2;
-			Msg2Global("Chóc mõng "..GetName().."Trong dÞp TÕt trång c©y tham gia ho¹t ®éng trång c©y nhËn ®­îc phÇn th­ëng gÊp 2 lÇn!");
+			Msg2Global("Congratulations"..GetName().."Trong dÞp TÕt trång c©y tham gia ho¹t ®éng trång c©y nhËn ®­îc phÇn th­ëng gÊp 2 lÇn!");
 		elseif nRand <= 7 then
 			nExp = nExp*3;
-			Msg2Global("Chóc mõng "..GetName().."Trong dÞp TÕt trång c©y tham gia ho¹t ®éng trång c©y nhËn ®­îc phÇn th­ëng gÊp 3 lÇn!");
+			Msg2Global("Congratulations"..GetName().."Trong dÞp TÕt trång c©y tham gia ho¹t ®éng trång c©y nhËn ®­îc phÇn th­ëng gÊp 3 lÇn!");
 		end;
 		nExp = floor(nExp*0.8);	--Ãâ·ÑÇø¡Á0.8
 		ModifyExp(nExp);
 		Msg2Player("Chóc mõng b¹n nhËn ®­îc "..nExp.." ®iÓm kinh nghiÖm, ®©y lµ lÇn ®æi ®iÓm kinh nghiÖm thø "..nTimes.." (lÇn) nhËn thªm phÇn th­ëng,mçi ng­êi mét ngµy ®­îc nhËn thªm phÇn th­ëng 4 lÇn");
-		WriteLog("[08TÕt trång c©y]:"..GetName().."thø"..nTimes.." (lÇn) nhËn thªm phÇn th­ëng, trÞ kinh nghiÖm:"..nExp..". §¼ng cÊp ng­êi ch¬i:"..nLevel);
+		WriteLog("[08 New Year tree planting]:"..GetName().."the"..nTimes.." (lÇn) nhËn thªm phÇn th­ëng, trÞ kinh nghiÖm:"..nExp..". §¼ng cÊp ng­êi ch¬i:"..nLevel);
 	elseif nLevel == 99 then	--99¼¶»ñµÃ5¿Å1ÖÁ6¼¶µÄËæ»úÁéÊ¯
 		local nLSLevel = 0;
 		for i=1,tbLSCount[nTimes] do
@@ -194,8 +194,8 @@ function Give_YuanXiao_Award(nType)
 			lspf_AddLingShiInBottle(nLSLevel,1);
 			Msg2Player("B¹n nhËn ®­îc 1 "..nLSLevel.." (cÊp) Linh th¹ch, ®· cho vµo Tô Linh ®Ønh");
 		end;
-		Msg2Player("H«m nay b¹n ®øng thø"..nTimes.." (lÇn) nhËn thªm phÇn th­ëng,mçi ng­êi mét ngµy ®­îc nhËn thªm phÇn th­ëng 4 lÇn")
-		WriteLog("[08TÕt trång c©y]:"..GetName().."thø"..nTimes.." (lÇn) nhËn thªm phÇn th­ëng, ®­îc"..tbLSCount[nTimes].." Linh th¹ch");
+		Msg2Player("Today you rank"..nTimes.." (lÇn) nhËn thªm phÇn th­ëng,mçi ng­êi mét ngµy ®­îc nhËn thªm phÇn th­ëng 4 lÇn")
+		WriteLog("[08 New Year tree planting]:"..GetName().."the"..nTimes.." (lÇn) nhËn thªm phÇn th­ëng, ®­îc"..tbLSCount[nTimes].." Spirit Stone");
 	end;
 end;
 

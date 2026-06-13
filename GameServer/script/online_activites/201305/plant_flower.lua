@@ -27,7 +27,7 @@ VET_EXP_TABLE = {
 
 VET_BUY_FLOWER_DIALOG = {
 	"KÝch ho¹t trång hoa/vet_plant_flower",
-	format("Mua mÇm hoa (%d vµng/c©y)/vet_201305_sale_flower", VET_BUY_COST),
+	format("Buy a flower seedling (%d gold/plant)/vet_201305_sale_flower", VET_BUY_COST),
 };
 
 VET_201305_ROSE_TaskGroup = TaskManager:Create(8,5)
@@ -51,7 +51,7 @@ function VET_201305_AdditionDialog()
 			tinsert(tbSayDialog, VET_BUY_FLOWER_DIALOG[i]);
 		end
 	end
-	tinsert(tbSayDialog, "Tho¸t/do_nothing");
+	tinsert(tbSayDialog, "Exit/do_nothing");
 	nSaySize = getn(tbSayDialog);
 	Say(szSayHead, nSaySize, tbSayDialog);
 end
@@ -65,7 +65,7 @@ end
 function sale_flower(nNum)
 	if nNum <= 0 then return 0; end
 	if Pay(nNum * VET_BUY_COST * 10000) ==  1 then
-		gf_AddItemEx2({2, 1, 30519, nNum}, "MÇm hoa ", "HOA HONG THANG 5", "Mua mÇm hoa", 24 *3600, 1);
+		gf_AddItemEx2({2, 1, 30519, nNum}, "Flower seed", "HOA HONG THANG 5", "Buy flower bud", 24 *3600, 1);
 	end
 end
 

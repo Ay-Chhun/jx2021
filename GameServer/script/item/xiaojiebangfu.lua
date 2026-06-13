@@ -7,7 +7,7 @@ t_award =
 	n_room_need = 2,
 	n_weight_need = 50,
 	t_item = {
-		{2,1,30470,1,"Cµng Kh«n Phï"},
+		{2,1,30470,1,"Strength Refine Pill"},
 		{2,2,7,40,"M¶nh Thiªn th¹ch"},
 		},
 }

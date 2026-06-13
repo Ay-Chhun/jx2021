@@ -16,7 +16,7 @@ Include("\\script\\task\\world\\task_award.lua")
 Teach_Award_List = {
 
 	Award_01 = {
-		strAwardType = "§Õn gÆp D· TÈu",
+		strAwardType = "Go meet the Wanderer",
 		funAwardGive = function()
 			Earn(100);
 			ModifyExp(20);
@@ -131,7 +131,7 @@ Teach_Award_List = {
 	},
 	
 	Award_12 = {
-		strAwardType = "NhiÖm vô kÕt giao h¶o h÷u",
+		strAwardType = "Quest to make friends",
 		funAwardGive = function()
 			local nPreservedPlayerIndex = PlayerIndex
 			local nMemCount = GetTeamSize()
@@ -208,7 +208,7 @@ Teach_Award_List = {
 	},
 
 	Award_15 = {
-		strAwardType = "ChuyÖn giang hå",
+		strAwardType = "Tales of the martial world",
 		funAwardGive = function()
 		    
 		    local i=GetBody();

@@ -30,7 +30,7 @@ Tb_yunling_consume = {
 --Íâ×°Ãû³Æ
 Tb_coat_name = {
 	[6] = "Ngo¹i trang",
-	[7] = "Th­îng y",
+	[7] = "Upper Garment",
 	[8] = "Ngo¹i trang",
 }
 --ÔÌÁéÊôĞÔ±í
@@ -105,7 +105,7 @@ Tb_yunling_att = {
 		id_level = {1,5,5},		
 	},
 	{
-		name = "T¨ng Sinh lùc",
+		name = "Increase vitality",
 		level  = {4},
 		num = {25},
 		id = {329},
@@ -189,9 +189,9 @@ function yunling_add_main()
 	Say(Npc_name.."Ng­¬i muèn g¾n linh tİnh cho ngo¹i trang nµo? CÇn l­u ı, hiÖn giê mçi lo¹i ngo¹i trang chØ cã thÓ g¾n 1 thuéc tİnh, thuéc tİnh cao cÊp míi sÏ thay thÕ thuéc tİnh cò, g¾n linh tİnh sÏ khiÕn cho ngo¹i trang cña b¹n v« thêi h¹n, nh­ng sÏ kh«ng thÓ ®Æt vµo tñ ¸o vµ hép. <color=red>G¾n linh tİnh kh«ng lµm thay ®æi thuéc tİnh giao dŞch<color>.",
 		4,
 		"Ngo¹i trang/#yunling_add(6)",
-		"Th­îng y/#yunling_add(7)",
+		"Discuss/#yunling_add(7)",
 		"Ngo¹i trang/#yunling_add(8)",
-		"§Ó ta suy nghÜ/end_dialog"
+		"Let me think it over/end_dialog"
 	)
 end
 --ÔÌÁéÍâ×°¼ì²â
@@ -234,7 +234,7 @@ end
 function yunling_level_sel(part_seq,attr_seq)
 	local tb_dia_sel = {}
 	for i = 1,getn(Tb_yunling_att[attr_seq].level) do
-		tinsert(tb_dia_sel,"Ta muèn g¾n linh tİnh"..Tb_yunling_att[attr_seq].level[i].."CÊp "..Tb_yunling_att[attr_seq].name.."("..Tb_yunling_att[attr_seq].num[i]..")/#yunlinged_chk("..part_seq..","..attr_seq..","..i..")")
+		tinsert(tb_dia_sel,"Ta muèn g¾n linh tİnh"..Tb_yunling_att[attr_seq].level[i].."Level"..Tb_yunling_att[attr_seq].name.."("..Tb_yunling_att[attr_seq].num[i]..")/#yunlinged_chk("..part_seq..","..attr_seq..","..i..")")
 	end
 	tinsert(tb_dia_sel,"§Ó ta suy nghÜ l¹i/yunling_add_main")
 	Say(Npc_name.."Ng­¬i muèn g¾n cho <color=yellow>"..Tb_coat_name[part_seq].."<color> g¾n linh tİnh thuéc tİnh <color=yellow>"..Tb_yunling_att[attr_seq].name.."<color> ®¼ng cÊp nµo?",
@@ -258,7 +258,7 @@ function yunlinged_chk(part_seq,attr_seq,level_seq)
 			end
 		end
 		if Tb_yunling_att[attr_seq_had].level[level_seq_had] > Tb_yunling_att[attr_seq].level[level_seq] then
-			Talk(1,"",Npc_name.."<color=yellow>"..Tb_coat_name[part_seq].."<color> ®· g¾n linh tİnh thuéc tİnh <color=yellow>"..Tb_yunling_att[attr_seq_had].level[level_seq_had].."CÊp "..Tb_yunling_att[attr_seq_had].name.."<color>, kh«ng thÓ g¾n thÊp h¬n ®¼ng cÊp nµy!")
+			Talk(1,"",Npc_name.."<color=yellow>"..Tb_coat_name[part_seq].."<color> ®· g¾n linh tİnh thuéc tİnh <color=yellow>"..Tb_yunling_att[attr_seq_had].level[level_seq_had].."Level"..Tb_yunling_att[attr_seq_had].name.."<color>, kh«ng thÓ g¾n thÊp h¬n ®¼ng cÊp nµy!")
 			return
 		else
 			Say(Npc_name.."<color=yellow>"..Tb_coat_name[part_seq].."<color> g¾n linh tİnh, x¸c nhËn dïng thuéc tİnh míi thay thÕ chø?",
@@ -275,7 +275,7 @@ end
 function yunling_add_deal(part_seq,attr_seq,level_seq)
 	local attr_level = Tb_yunling_att[attr_seq].level[level_seq]
 	--ÊôĞÔÉú³É
-	local	main_dia = Npc_name.."Ng­¬i ®ång ı ®em <color=yellow>"..Tb_coat_name[part_seq].."<color> g¾n linh tİnh cÊp <color=yellow>"..attr_level.."<color> cho <color=yellow>"..Tb_yunling_att[attr_seq].name.."<color><color=red>"..Tb_yunling_att[attr_seq].num[level_seq].."<color>?\n Dïng: \n     <color=yellow> "
+	local	main_dia = Npc_name.."You agree to bring <color=yellow>"..Tb_coat_name[part_seq].."<color> g¾n linh tİnh cÊp <color=yellow>"..attr_level.."<color> cho <color=yellow>"..Tb_yunling_att[attr_seq].name.."<color><color=red>"..Tb_yunling_att[attr_seq].num[level_seq].."<color>?\n Use: \n     <color=yellow>"
 	--ÏûºÄÉú³É	
 	local tb_consume = Tb_yunling_consume[Sever_diff][attr_level]
 	for i = 1,getn(tb_consume) do
@@ -391,24 +391,24 @@ function yunling_mertiral_chk(yunling_level,chk_flag)
 		elseif i == 1 then		--ÌØĞ§²ÄÁÏ¼ì²â
 			if chk_flag == 1 then
 				if GetItemCount(Tb_add_mertiral[tb_consume[i][2]][1],Tb_add_mertiral[tb_consume[i][2]][2],Tb_add_mertiral[tb_consume[i][2]][3]) < tb_consume[i][1] then
-					Talk(1,"",Npc_name.."Ng­¬i mang <color=yellow>"..Tb_add_mertiral[tb_consume[i][2]][4].."<color> kh«ng ®ñ <color=yellow>"..tb_consume[i][1].."<color>, cã ph¶i ®Ó quªn ë thñ khè kh«ng? ")
+					Talk(1,"",Npc_name.."You are carrying <color=yellow>"..Tb_add_mertiral[tb_consume[i][2]][4].."<color> kh«ng ®ñ <color=yellow>"..tb_consume[i][1].."<color>, cã ph¶i ®Ó quªn ë thñ khè kh«ng? ")
 					return 0
 				end
 			elseif chk_flag == 2 then
 				if DelItem(Tb_add_mertiral[tb_consume[i][2]][1],Tb_add_mertiral[tb_consume[i][2]][2],Tb_add_mertiral[tb_consume[i][2]][3],tb_consume[i][1]) ~= 1  then
-					Talk(1,"",Npc_name.."Ng­¬i mang <color=yellow>"..Tb_add_mertiral[tb_consume[i][2]][4].."<color> kh«ng ®ñ <color=yellow>"..tb_consume[i][1].."<color>, cã ph¶i ®Ó quªn ë thñ khè kh«ng? ")
+					Talk(1,"",Npc_name.."You are carrying <color=yellow>"..Tb_add_mertiral[tb_consume[i][2]][4].."<color> kh«ng ®ñ <color=yellow>"..tb_consume[i][1].."<color>, cã ph¶i ®Ó quªn ë thñ khè kh«ng? ")
 					return 0
 				end
 			end
 		else			--ÌØÊâÏûºÄ¼ì²â
 			if chk_flag == 1 then
 				if GetItemCount(Tb_special_mertiral[tb_consume[i][2]][1],Tb_special_mertiral[tb_consume[i][2]][2],Tb_special_mertiral[tb_consume[i][2]][3]) < tb_consume[i][1] then
-					Talk(1,"",Npc_name.."Ng­¬i mang <color=yellow>"..Tb_special_mertiral[tb_consume[i][2]][4].."<color> kh«ng ®ñ <color=yellow>"..tb_consume[i][1].."<color>"..Tb_special_mertiral[tb_consume[i][2]][5]..", cã ph¶i ®Ó quªn ë thñ khè kh«ng? ")
+					Talk(1,"",Npc_name.."You are carrying <color=yellow>"..Tb_special_mertiral[tb_consume[i][2]][4].."<color> kh«ng ®ñ <color=yellow>"..tb_consume[i][1].."<color>"..Tb_special_mertiral[tb_consume[i][2]][5]..", cã ph¶i ®Ó quªn ë thñ khè kh«ng? ")
 					return 0
 				end
 			elseif chk_flag == 2 then
 				if DelItem(Tb_special_mertiral[tb_consume[i][2]][1],Tb_special_mertiral[tb_consume[i][2]][2],Tb_special_mertiral[tb_consume[i][2]][3],tb_consume[i][1]) ~= 1  then
-					Talk(1,"",Npc_name.."Ng­¬i mang <color=yellow>"..Tb_special_mertiral[tb_consume[i][2]][4].."<color> kh«ng ®ñ <color=yellow>"..tb_consume[i][1].."<color>"..Tb_special_mertiral[tb_consume[i][2]][5]..", cã ph¶i ®Ó quªn ë thñ khè kh«ng? ")
+					Talk(1,"",Npc_name.."You are carrying <color=yellow>"..Tb_special_mertiral[tb_consume[i][2]][4].."<color> kh«ng ®ñ <color=yellow>"..tb_consume[i][1].."<color>"..Tb_special_mertiral[tb_consume[i][2]][5]..", cã ph¶i ®Ó quªn ë thñ khè kh«ng? ")
 					return 0
 				end
 			end
@@ -444,7 +444,7 @@ function yunling_sort(print_seq)
 			end
 		end
 		--×éºÏ
-		dia_main = dia_main.."§¼ng cÊp: <color=yellow>"..attr_level.."<color> trŞ sè ®èi øng: <color=yellow>"..attr_num.."<color>\n"
+		dia_main = dia_main.."§¼ng cÊp: <color=yellow>"..attr_level.."<color> corresponding value: <color=yellow>"..attr_num.."<color>\n"
 	end
 	if print_seq ~= nil then
 		Talk(1,"yunling_main",dia_main)
@@ -459,7 +459,7 @@ function mertiral_info()
 		dialog_main = dialog_main.."<color=red>"..i.."<color> cÇn: "
 		for j =1, getn(Tb_yunling_consume[Sever_diff][i]) do
 			if type(Tb_yunling_consume[Sever_diff][i][j]) =="number" then		--½ğÇ®¼ì²â
-				dialog_main = dialog_main.."<color=yellow>"..floor(Tb_yunling_consume[Sever_diff][i][j]/10000).." vµng<color>    "
+				dialog_main = dialog_main.."<color=yellow>"..floor(Tb_yunling_consume[Sever_diff][i][j]/10000).." gold<color>"
 			elseif j == 1 then
 				dialog_main = dialog_main.."<color=yellow>"..Tb_yunling_consume[Sever_diff][i][j][1].."c¸i"..Tb_add_mertiral[Tb_yunling_consume[Sever_diff][i][j][2]][4].."<color>    "
 			else

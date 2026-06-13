@@ -55,8 +55,8 @@ function main()
 	end		
 		
 	local selTab = {
-			"LËp tøc nhÆt lªn!/#pickup("..npcIndex..","..nTaskValue..")",
-			"§Ó ta suy nghÜ!/nothing",
+			"Pick it up at once!/#pickup("..npcIndex..","..nTaskValue..")",
+			"Let me think it over!/nothing",
 			}
 	Say("§©y lµ thø s­ phô muèn ta ®em vÒ sao??",getn(selTab),selTab);
 end;

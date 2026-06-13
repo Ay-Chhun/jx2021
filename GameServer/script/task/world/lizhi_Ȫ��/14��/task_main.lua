@@ -13,7 +13,7 @@ Include("\\script\\task\\world\\task_award.lua");
 
 function can_not_accept_task()
     local szTalk = {
-        "Canh g¸c nghiªm ngÆt vËy sao mÊt trém ®­îc?"
+        "With such strict guarding, how could it be stolen?"
     };
     TalkEx("", szTalk);
 end;
@@ -23,7 +23,7 @@ function task_000_00()
     local szTalk = {
         "Nghe nãi kho b¸u cña ®¹i nh©n bÞ trém, ta ®ang ®iÒu tra chuyÖn nµy, xin nãi râ h¬n ®­îc kh«ng?",
         "H«m ®ã, khi ta thøc dËy, gäi c¶ nöa ngµy mµ kh«ng thÊy L­u qu¶n gia ®©u, ®Õn phßng «ng ta th× thÊy ®å ®¹c ®· dän ®i.",
-        "Råi sao n÷a?",
+        "And then what?",
         "Võa lóc ®ã, a hoµn TiÒn T­¬ng hèt ho¶ng ch¹y ®Õn b¸o cöa khè phßng ®· bÞ më, n¬i ®ã chØ cã ta míi cã ch×a khãa ra vµo.",
         "Chung quy lµ mÊt nh÷ng thø g×? Cã ph¶i L­u qu¶n gia lÊy c¾p kh«ng?"
     };
@@ -64,7 +64,7 @@ function task_001_02()
     local szTalk = {
         "T¹i h¹ cã bøc th­ kh«ng may thÊm n­íc kh«ng biÕt ®¹i nh©n gióp kh«i phôc l¹i ®­îc kh«ng?",
         "ViÖc nµy kh«ng khã, nh­ng cÇn cã: 1 Linh phï chØ, 1 Chu sa, 1 D· Tr­ mao.",
-        "§Ó ta ®i t×m."
+        "Let me go find them."
     };
     
     TalkEx("task_002_00",szTalk);
@@ -85,12 +85,12 @@ function task_002_01()
     };
     local szMaleFinished = {
         "§óng råi! §îi ta mét l¸t!",
-        "….",
+        ".",
         "Bøc th­ ®· ®­îc kh«i phôc. Hihi…Bøc th­ nµy ch¾c c«ng tö viÕt cho vÞ hång nhan nµo ®©y? Trong ®ã ghi Phñ t©y TuyÒn Ch©u, gÆp ë chç cò. Thêi gian kh«ng cßn sím, c«ng tö mau ®i kÎo bá lì c¬ héi."
     };
     local szFemaleFinished = {
         "§óng råi! §îi ta mét l¸t!",
-        "….",
+        ".",
         "Bøc th­ ®· ®­îc kh«i phôc. Hihi…Bøc th­ nµy ch¾c c«ng tö viÕt cho vÞ hång nhan nµo ®©y? Trong ®ã ghi Phñ t©y TuyÒn Ch©u, gÆp ë chç cò. Thêi gian kh«ng cßn sím, c«ng tö mau ®i kÎo bá lì c¬ héi."
     };
         
@@ -147,7 +147,7 @@ function task_003_02()
     local szTalk = {
         "L­u qu¶n gia! T­ëng lÊy c¾p ®å xong tho¸t ®­îc µ? Khai mau chuyÕn hµng cña §¹i ChÝ C­êng ®Ó ®©u? Ai sai ng­¬i lµm?",
         "§¹i nh©n, xin tha m¹ng! §Ó ta nãi!",
-        "Nãi mau!",
+        "Speak quickly!",
         "Lµ….thî rÌn Chung Phãng ë phñ TuyÒn Ch©u b¶o ta lÊy c¾p, h¾n nãi lóc tr­íc lµm ch×a khãa cho §íi l·o gia lÐn lót lµm thªm mét ch×a, nãi sau khi thµnh c«ng sÏ chia cho ta nhiÒu h¬n. HiÖn h¾n mang chuyÕn hµng ®ã ®i råi, ng­¬i t×m h¾n hái xem, xin tha m¹ng!",
         "H«m nay ta t¹m tha cho ng­¬i!"
     };

@@ -32,7 +32,7 @@ function main()
 	end;
 	if bIsTree == 0 then
 		SetNpcScript(npcIdx,"");
-		WriteLog("[Lçi ho¹t ®éng trång c©y Th¸i H­]:NPC:"..npcName.."Lçi files gèc");
+		WriteLog("[Lçi ho¹t ®éng trång c©y Th¸i H­]:NPC:"..npcName.."Original file error");
 		return 0;
 	end;
 	local npcTreeIndex = GetTargetNpc();
@@ -58,7 +58,7 @@ function main()
 	local selTab = {};
 	if nTreeGrow == 3 then
 		if nTimePassed < SMALLTREETYPE[nTreeGrow][3] then
-			Talk(1,"",SMALLTREETYPE[nTreeGrow][2].." võa míi ph¸t triÓn, kh«ng nªn nhæ c©y, sau <color=yellow>"..Get_Time_String(SMALLTREETYPE[nTreeGrow][3]-nTimePassed).."<color> h·y nhæ.");
+			Talk(1,"",SMALLTREETYPE[nTreeGrow][2].." võa míi ph¸t triÓn, kh«ng nªn nhæ c©y, sau <color=yellow>"..Get_Time_String(SMALLTREETYPE[nTreeGrow][3]-nTimePassed).."<color> then uproot it.");
 			return 0;
 		end;
 		tinsert(selTab,"H·y nhæ c©y ®i! Trång tiÕp nã còng kh«ng ph¸t triÓn./getfruit");
@@ -87,9 +87,9 @@ function givewater()
 	local MapID,MapX,MapY = GetNpcWorldPos(npcTreeIndex)
 	SetNpcLifeTime(npcTreeIndex,0);
 	SetNpcScript(npcTreeIndex,"");
-	npcTreeIndex = CreateNpc(SMALLTREETYPE[nTreeGrow+1][1],GetName().." trång "..SMALLTREETYPE[nTreeGrow+1][2],MapID,MapX,MapY);
+	npcTreeIndex = CreateNpc(SMALLTREETYPE[nTreeGrow+1][1],GetName().." plant"..SMALLTREETYPE[nTreeGrow+1][2],MapID,MapX,MapY);
 	if npcTreeIndex == 0 then
-		WriteLog("[Lçi ho¹t ®éng trång c©y Th¸i H­]:"..GetName().."Lóc t­íi c©y, trÞ quay l¹i hµm sè CreateNpc lµ 0. Tham sè nhËp CreateNpc:"..SMALLTREETYPE[nTreeGrow+1][1]..","..GetName().." trång "..SMALLTREETYPE[nTreeGrow+1][2]..","..MapID..","..MapX..","..MapY);
+		WriteLog("[Lçi ho¹t ®éng trång c©y Th¸i H­]:"..GetName().."Lóc t­íi c©y, trÞ quay l¹i hµm sè CreateNpc lµ 0. Tham sè nhËp CreateNpc:"..SMALLTREETYPE[nTreeGrow+1][1]..","..GetName().." plant"..SMALLTREETYPE[nTreeGrow+1][2]..","..MapID..","..MapX..","..MapY);
 	end;
 	SetNpcLifeTime(npcTreeIndex,TREELIFETIME);
 	SetNpcScript(npcTreeIndex,"\\script\\online\\plant\\small_tree_npc.lua")
@@ -101,7 +101,7 @@ function givewater()
 	if nTreeGrow ==3 then
 		StartTimeGuage("Thu ho¹ch",SMALLTREETYPE[nTreeGrow][3]-nTimePassed,0,1)			
 	else
-		StartTimeGuage("T­íi c©y",SMALLTREETYPE[nTreeGrow][3]-nTimePassed,0,1)	
+		StartTimeGuage("Water the tree",SMALLTREETYPE[nTreeGrow][3]-nTimePassed,0,1)	
 	end
 end;
 
@@ -143,7 +143,7 @@ function getfruit()
 				end;		
 			end;
 		else
-			local nRetCode, nIndex = gf_AddItemEx({2, 1, 30114, 1}, "B¸t Nh· Chøng Th­");
+			local nRetCode, nIndex = gf_AddItemEx({2, 1, 30114, 1}, "Prajna Certificate");
 			if nRetCode == 1 then
 				SetItemExpireTime(nIndex, 15 * 24 * 3600);
 				WriteLogEx("Uy thac trong cay", "Trong cay Bat Nha nho", 1, "Bat Nha Chung Thu");
@@ -175,7 +175,7 @@ function getfruit()
            
            --Bang héi tinh anh 6 , nguån ra hoa hång
            if (GetTask(TASK_PLAN_SMALLTREE_COUNT) == 8 or GetTask(TASK_PLAN_SMALLTREE_COUNT) == 16) and tonumber(date("%Y%m%d")) >= 20110930 and tonumber(date("%Y%m%d")) <= 20111023 then
-           	gf_AddItemEx2({2, 0, 1164, 20, 1}, "Hoa Hång PhÊn", "Bang Hoi Tinh Anh 6", "trång B¸t Nh· Nhá")
+           	gf_AddItemEx2({2, 0, 1164, 20, 1}, "Hoa Hång PhÊn", "Bang Hoi Tinh Anh 6", "plant Small Prajna")
            end
 	     --nhiÖm vô lµm giµu
 	     if CFG_NhiemVuLamGiau == 1 then
@@ -238,11 +238,11 @@ function getfruit()
 	           if nLastLingshuDate == nDate then
 	           	local nBonusExp = nMultiCount * nSMPoint
 	           	SetTask(336, GetTask(336) + nBonusExp)
-	           	Msg2Player("NhËn ®­îc "..nBonusExp.." ®iÓm cèng hiÕn S­ M«n.")
+	           	Msg2Player("Received"..nBonusExp.." ®iÓm cèng hiÕn S­ M«n.")
 	           else
 				SetTask(86, 1)
 				SetTask(336, GetTask(336) + nSMPoint)
-	           	Msg2Player("NhËn ®­îc "..nSMPoint.." ®iÓm cèng hiÕn S­ M«n.")
+	           	Msg2Player("Received"..nSMPoint.." ®iÓm cèng hiÕn S­ M«n.")
 			end
 		end
 	end;
@@ -269,9 +269,9 @@ function give_viet20090607_miben()
 		return
 	end
 	if tonumber(date("%y%m%d%H")) >= 09061900 and tonumber(date("%y%m%d%H")) < 09071924 then
-		gf_SetLogCaption("Truy t×m tr­êng sinh phæ");
-		gf_AddItemEx({2, 1, 30088, 100}, "BÝ Phæ Cò N¸t");
-		WriteLogEx("Hoat dong thang 6","B¸t Nh· Nhá",100,"BÝ Phæ Cò N¸t");
+		gf_SetLogCaption("Search for the Longevity Manual");
+		gf_AddItemEx({2, 1, 30088, 100}, "Worn Old Manual");
+		WriteLogEx("Hoat dong thang 6","Small Prajna",100,"Worn Old Manual");
 		gf_SetLogCaption("");
 	end
 end
@@ -280,7 +280,7 @@ end
 function give_viet200908_shuiguodai()
 	if tonumber(date("%y%m%d")) >= 090807 and tonumber(date("%y%m%d")) < 090907 then
 		gf_SetLogCaption("[Hoat dong thang 8]");
-		nRet = gf_AddItemEx({2, 1, 30097, 100}, "Tói Tr¸i C©y");
+		nRet = gf_AddItemEx({2, 1, 30097, 100}, "Bag of Fruit");
 		if nRet == 1 then
 			WriteLogEx("Hoat dong thang 8","Nhan tui trai cay",100,"Trong cay bat nha nho");
 		end
@@ -292,16 +292,16 @@ end
 function give_viet200909_baimianbao()
 	if tonumber(date("%y%m%d")) >= 090918 and tonumber(date("%y%m%d")) < 091026 then
 		gf_SetLogCaption("[Hoat dong trung thu 2009]");
-		gf_AddItemEx({2, 1, 30106, 100}, "Bét M×");
-		WriteLogEx("Hoat dong trung thu","B¸t Nh· Nhá",100,"Bét M×");
+		gf_AddItemEx({2, 1, 30106, 100}, "Flour");
+		WriteLogEx("Hoat dong trung thu","Small Prajna",100,"Flour");
 		gf_SetLogCaption("");
 	end
 end
 
 function give_viet200911_hoacuc()
 	if tonumber(date("%y%m%d")) >= 091106 and tonumber(date("%y%m%d")) <= 091206 then		
-		gf_AddItemEx({2, 1, 30118, 20}, "Hoa Cóc");
-		WriteLogEx("Hoat dong thang 11","B¸t Nh· Nhá",20,"Hoa Cóc");		
+		gf_AddItemEx({2, 1, 30118, 20}, "Chrysanthemum");
+		WriteLogEx("Hoat dong thang 11","Small Prajna",20,"Chrysanthemum");		
 	end
 end
 
@@ -309,7 +309,7 @@ end
 function give_viet200912_shengdantangguo()
 	if tonumber(date("%y%m%d")) >= 091218 and tonumber(date("%y%m%d")) <= 100117 then
 	    local szFullLog = VIET_0912_STR_EVENT_LOG_TITLE
-	    gf_AddItemEx2({2, 1, 30138, 40}, "C©y KÑo Gi¸ng Sinh", szFullLog, 0, 1, 10, 1,"B¸t Nh· nhá");
+	    gf_AddItemEx2({2, 1, 30138, 40}, "Christmas Candy Cane Tree", szFullLog, 0, 1, 10, 1,"small Prajna");
 	end
 end
 

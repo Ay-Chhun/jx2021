@@ -11,16 +11,16 @@ Include("\\script\\task\\marriage\\map_att_head.lua")					--½á»é¶þÆÚÍ·ÎÄ¼þ
 	task_att_seq_TaskID = 1218
 	Frag_att_num_TaskID = 1220
 	Tb_goods_compose = {}
-	Tb_goods_compose[583] = {{573,"§ång T©m Hoµn","Sö dông trÞ §ång t©m t¨ng <color=yellow>125<color> ®iÓm!","trÞ §ång t©m t¨ng 125 ®iÓm"},{568,6,"Gi¸p Méc d­¬ng"},{569,2,"Êt Méc ©m"},{570,1,"BÝnh háa d­¬ng"}}
-	Tb_goods_compose[584] = {{574,"§¹i §ång T©m Hoµn","Sö dông trÞ §ång t©m t¨ng <color=yellow>300<color> ®iÓm!","trÞ §ång t©m t¨ng 300 ®iÓm"},{568,9,"Gi¸p Méc d­¬ng"},{569,5,"Êt Méc ©m"},{570,2,"BÝnh háa d­¬ng"}}
-	Tb_goods_compose[585] = {{575,"§ång T©m ®¬n","Sö dông trÞ §ång t©m t¨ng <color=yellow>125<color> ®iÓm!","TrÞ §ång T©m t¨ng tèi ®a 125 ®iÓm"},{568,3,"Gi¸p Méc d­¬ng"},{569,4,"Êt Méc ©m"},{570,2,"BÝnh háa d­¬ng"}}
-	Tb_goods_compose[586] = {{576,"§¹i §ång T©m ®¬n","Sö dông trÞ §ång t©m t¨ng <color=yellow>300<color> ®iÓm!","TrÞ §ång T©m t¨ng tèi ®a 300 ®iÓm"},{568,4,"Gi¸p Méc d­¬ng"},{569,8,"Êt Méc ©m"},{570,4,"BÝnh háa d­¬ng"}}
-	Tb_goods_compose[587] = {{577,"T­ t­ëng b¶n quyÓn","Sö dông sÏ <color=red>häc ®­îc<color>: <color=yellow>kü n¨ng TruyÒn tèng<color>!","Häc ®­îc phu thª truyÒn tèng"},{568,4,"Gi¸p Méc d­¬ng"},{569,4,"Êt Méc ©m"},{570,8,"BÝnh háa d­¬ng"}}
-	Tb_goods_compose[588] = {{578,"T­ t­ëng tµn quyÓn","Sö dông sÏ <color=red>th¨ng cÊp<color>: <color=yellow>kü n¨ng TruyÒn tèng<color>!","Th¨ng cÊp kü n¨ng phu thª truyÒn tèng"},{568,5,"Gi¸p Méc d­¬ng"},{569,2,"Êt Méc ©m"},{570,8,"BÝnh háa d­¬ng"},{571,5,"§inh Háa ©m"}}
-	Tb_goods_compose[589] = {{579,"Hãa §iÖp b¶n quyÓn","Sö dông sÏ <color=red>häc ®­îc<color>: <color=yellow>kü n¨ng håi sinh<color>!","Häc ®­îc kü n¨ng phu thª håi sinh"},{568,2,"Gi¸p Méc d­¬ng"},{569,5,"Êt Méc ©m"},{570,9,"BÝnh háa d­¬ng"}}
-	Tb_goods_compose[590] = {{580,"Hãa §iÖp tµn quyÓn","Sö dông sÏ <color=red>th¨ng cÊp<color>: <color=yellow>kü n¨ng håi sinh<color>!","Th¨ng cÊp kü n¨ng phu thª håi sinh"},{568,2,"Gi¸p Méc d­¬ng"},{569,5,"Êt Méc ©m"},{570,8,"BÝnh háa d­¬ng"},{571,5,"§inh Háa ©m"}}
-	Tb_goods_compose[591] = {{581,"§iÖp LuyÕn b¶n quyÓn","Sö dông sÏ <color=red>häc ®­îc<color>: <color=yellow>kü n¨ng Hç trî<color>!","Häc ®­îc kü n¨ng phu thª c­êng hãa"},{568,5,"Gi¸p Méc d­¬ng"},{569,3,"Êt Méc ©m"},{570,6,"BÝnh háa d­¬ng"},{571,9,"§inh Háa ©m"}}
-	Tb_goods_compose[592] = {{582,"§iÖp LuyÕn tµn quyÓn","Sö dông sÏ <color=red>th¨ng cÊp<color>: <color=yellow>kü n¨ng Hç trî<color>!","Th¨ng cÊp kü n¨ng phu thª c­êng hãa"},{568,3,"Gi¸p Méc d­¬ng"},{569,5,"Êt Méc ©m"},{570,5,"BÝnh háa d­¬ng"},{571,10,"§inh Háa ©m"}}
+	Tb_goods_compose[583] = {{573,"§ång T©m Hoµn","Sö dông trÞ §ång t©m t¨ng <color=yellow>125<color> ®iÓm!","trÞ §ång t©m t¨ng 125 ®iÓm"},{568,6,"Gi¸p Méc d­¬ng"},{569,2,"Yi Wood Yin"},{570,1,"Bing Fire Yang"}}
+	Tb_goods_compose[584] = {{574,"§¹i §ång T©m Hoµn","Sö dông trÞ §ång t©m t¨ng <color=yellow>300<color> ®iÓm!","trÞ §ång t©m t¨ng 300 ®iÓm"},{568,9,"Gi¸p Méc d­¬ng"},{569,5,"Yi Wood Yin"},{570,2,"Bing Fire Yang"}}
+	Tb_goods_compose[585] = {{575,"§ång T©m ®¬n","Sö dông trÞ §ång t©m t¨ng <color=yellow>125<color> ®iÓm!","TrÞ §ång T©m t¨ng tèi ®a 125 ®iÓm"},{568,3,"Gi¸p Méc d­¬ng"},{569,4,"Yi Wood Yin"},{570,2,"Bing Fire Yang"}}
+	Tb_goods_compose[586] = {{576,"§¹i §ång T©m ®¬n","Sö dông trÞ §ång t©m t¨ng <color=yellow>300<color> ®iÓm!","TrÞ §ång T©m t¨ng tèi ®a 300 ®iÓm"},{568,4,"Gi¸p Méc d­¬ng"},{569,8,"Yi Wood Yin"},{570,4,"Bing Fire Yang"}}
+	Tb_goods_compose[587] = {{577,"T­ t­ëng b¶n quyÓn","Sö dông sÏ <color=red>häc ®­îc<color>: <color=yellow>kü n¨ng TruyÒn tèng<color>!","Häc ®­îc phu thª truyÒn tèng"},{568,4,"Gi¸p Méc d­¬ng"},{569,4,"Yi Wood Yin"},{570,8,"Bing Fire Yang"}}
+	Tb_goods_compose[588] = {{578,"Tu Tuong Remnant Volume","Sö dông sÏ <color=red>th¨ng cÊp<color>: <color=yellow>kü n¨ng TruyÒn tèng<color>!","Th¨ng cÊp kü n¨ng phu thª truyÒn tèng"},{568,5,"Gi¸p Méc d­¬ng"},{569,2,"Yi Wood Yin"},{570,8,"Bing Fire Yang"},{571,5,"§inh Háa ©m"}}
+	Tb_goods_compose[589] = {{579,"Hãa §iÖp b¶n quyÓn","Sö dông sÏ <color=red>häc ®­îc<color>: <color=yellow>kü n¨ng håi sinh<color>!","Häc ®­îc kü n¨ng phu thª håi sinh"},{568,2,"Gi¸p Méc d­¬ng"},{569,5,"Yi Wood Yin"},{570,9,"Bing Fire Yang"}}
+	Tb_goods_compose[590] = {{580,"Hua Die remnant volume","Sö dông sÏ <color=red>th¨ng cÊp<color>: <color=yellow>kü n¨ng håi sinh<color>!","Th¨ng cÊp kü n¨ng phu thª håi sinh"},{568,2,"Gi¸p Méc d­¬ng"},{569,5,"Yi Wood Yin"},{570,8,"Bing Fire Yang"},{571,5,"§inh Háa ©m"}}
+	Tb_goods_compose[591] = {{581,"§iÖp LuyÕn b¶n quyÓn","Sö dông sÏ <color=red>häc ®­îc<color>: <color=yellow>kü n¨ng Hç trî<color>!","Häc ®­îc kü n¨ng phu thª c­êng hãa"},{568,5,"Gi¸p Méc d­¬ng"},{569,3,"Yi Wood Yin"},{570,6,"Bing Fire Yang"},{571,9,"§inh Háa ©m"}}
+	Tb_goods_compose[592] = {{582,"Die Lian remnant volume","Sö dông sÏ <color=red>th¨ng cÊp<color>: <color=yellow>kü n¨ng Hç trî<color>!","Th¨ng cÊp kü n¨ng phu thª c­êng hãa"},{568,3,"Gi¸p Méc d­¬ng"},{569,5,"Yi Wood Yin"},{570,5,"Bing Fire Yang"},{571,10,"§inh Háa ©m"}}
 	Tb_player_sex_att = {
 		{"X","Y"},
 		{"Y","X"},
@@ -28,8 +28,8 @@ Include("\\script\\task\\marriage\\map_att_head.lua")					--½á»é¶þÆÚÍ·ÎÄ¼þ
 	goods_id_tasktempID = 167
 	Tb_frag = {}
 	Tb_frag[568] = "Gi¸p Méc d­¬ng"
-	Tb_frag[569] = "Êt Méc ©m"
-	Tb_frag[570] = "BÝnh háa d­¬ng"
+	Tb_frag[569] = "Yi Wood Yin"
+	Tb_frag[570] = "Bing Fire Yang"
 	Tb_frag[571] = "§inh Háa ©m"
 --===============================Ö÷Âß¼­Çø============================
 function OnUse()
@@ -39,14 +39,14 @@ function OnUse()
 	end
 	Say("<color=green>Chó ý<color>: <color=yellow>Khiªn V©n Phi Tinh phæ<color> lµ B¶o vËt ph¶i t×m trong <color=yellow>B¶o VËt phu thª<color>, nã sÏ chØ ra <color=yellow>täa ®é L­u tinh ®Ó ®Õn ®ã t×m L­u tinh to¸i phiÕn<color>, còng cã thÓ dïng nã ®Ó t×m L­u tinh to¸i phiÕn<color=yellow> hîp thµnh B¶o VËt phu thª<color>. C¸c h¹ muèn <color=yellow>t×m to¸i phiÕn<color> hay <color=yellow>hîp thµnh B¶o vËt<color>",
 	8,
-	"NhiÖm vô Phu thª/get_att_dia",
+	"Couple Mission/get_att_dia",
 	"Hîp thµnh b¶o vËt/#cowry_comp_dia(583)",
-	"LÊy ra To¸i phiÕn /ma_frag_get_out",
-	"Tra xem sè to¸i phiÕn phæ/get_frag_num",
+	"Take out Fragment/ma_frag_get_out",
+	"Check number of manual fragments/get_frag_num",
 	"Tra xem sè lÇn nhiÖm vô cßn d­/get_att_num",
-	"ThuyÕt minh NhiÖm vô Phu thª/get_att_info",
-	"ThuyÕt minh trÞ §ång t©m/same_heart_value_info",
-	"Tho¸t/end_dialog"
+	"Couple Mission description/get_att_info",
+	"Concentric Value description/same_heart_value_info",
+	"Exit/end_dialog"
 	)
 end
 --**********************»ñÈ¡Á÷ÐÇ×ø±ê¶Ô»°***********************
@@ -62,15 +62,15 @@ function get_att_dia()
 	if map_ID_save == nil or map_ID_save == 0 then
 		Say("<color=green>Chó ý<color>: B¹n x¸c ®Þnh sö dông <color=yellow>Khiªn V©n Phi Tinh phæ<color> ®Ó nhËn ®­îc <color=yellow>täa ®é to¸i phiÕn<color>. LÇn nµy sÏ khiÕn sè lÇn täa ®é trong Khiªn V©n Phi Tinh phæ <color=green>gi¶m xuèng 1 lÇn<color>. B¹n sÏ nhËn ®­îc täa ®é <color=red>"..Tb_player_sex_att[GetSex()][1].."<color>, ý trung nh©n cña b¹n sÏ nhËn ®­îc täa ®é <color=red>"..Tb_player_sex_att[GetSex()][2].."<color>",
 		2,
-		"§ång ý/get_att",
-		"Hñy bá/end_dialog"
+		"Agree/get_att",
+		"Cancel/end_dialog"
 		)
 	else
 		Say("<color=green>Chó ý<color>: <color=yellow>Khiªn V©n Phi Tinh phæ<color> mçi lÇn chØ chØ ra 1 täa ®é, nÕu nh­ quªn täa ®é, cã thÓ tra l¹i t¹i ®©y. Còng cã thÓ sö dông <color=yellow>Khiªn V©n Phi Tinh phæ<color> ®Ó nhËn ®­îc <color=yellow>täa ®é L­u tinh<color> míi! Nh­ng sÏ khiÕn cho täa ®é cña to¸i phiÕn lÇn tr­íc mÊt t¸c dông",
 		3,
 		"Ta muèn nhËn ®­îc täa ®é L­u tinh míi/get_att",
 		"Ta muèn t×m l¹i täa ®é L­u tinh lÇn tr­íc/star_att_inq",
-		"Hñy bá/end_dialog"
+		"Cancel/end_dialog"
 		)
 	end
 end
@@ -119,10 +119,10 @@ function star_att_inq()
 		return
 	end
 	local player_sex = GetSex()
-	Talk(1,"","<color=green>Chó ý<color>: HiÖn t¹i <color=yellow>Khiªn V©n Phi Tinh phæ<color>-täa ®é L­u tinh lµ:? (<color=red>"..Tb_task_reel_att[map_ID_save].map_att[1].."<color>,<color=yellow>"..Tb_player_sex_att[player_sex][1].."<color> täa ®é lµ <color=red>"..Tb_task_reel_att[map_ID_save][att_seq_save][player_sex].."<color>),<color=yellow>"..Tb_player_sex_att[player_sex][2].."<color>, ®i hái l¹i ý trung nh©n th«i! §Õn ®­îc täa ®é th× hai ng­êi lµm 1 ®éng t¸c t×nh tø, sÏ nhËn ®­îc to¸i phiÕn!")
+	Talk(1,"","<color=green>Chó ý<color>: HiÖn t¹i <color=yellow>Khiªn V©n Phi Tinh phæ<color>-täa ®é L­u tinh lµ:? (<color=red>"..Tb_task_reel_att[map_ID_save].map_att[1].."<color>,<color=yellow>"..Tb_player_sex_att[player_sex][1].."<color> the coordinate is <color=red>"..Tb_task_reel_att[map_ID_save][att_seq_save][player_sex].."<color>),<color=yellow>"..Tb_player_sex_att[player_sex][2].."<color>, ®i hái l¹i ý trung nh©n th«i! §Õn ®­îc täa ®é th× hai ng­êi lµm 1 ®éng t¸c t×nh tø, sÏ nhËn ®­îc to¸i phiÕn!")
 	PlayerIndex = player_mate_index
 	player_sex = GetSex()
-	Talk(1,"","<color=green>Chó ý<color>: ý trung nh©n cña b¹n sö dông <color=yellow>Khiªn V©n Phi Tinh phæ<color> t×m thÊy 1 täa ®é L­u tinh: <color=yellow>"..Tb_player_sex_att[player_sex][1].."<color> täa ®é lµ <color=red>"..Tb_task_reel_att[map_ID_save][att_seq_save][player_sex].."<color>. §Õn ®­îc täa ®é nhí nh¾c ý trung nh©n lµm 1 ®éng t¸c t×nh tø, sÏ nhËn ®­îc to¸i phiÕn!")
+	Talk(1,"","<color=green>Chó ý<color>: ý trung nh©n cña b¹n sö dông <color=yellow>Khiªn V©n Phi Tinh phæ<color> t×m thÊy 1 täa ®é L­u tinh: <color=yellow>"..Tb_player_sex_att[player_sex][1].."<color> the coordinate is <color=red>"..Tb_task_reel_att[map_ID_save][att_seq_save][player_sex].."<color>. §Õn ®­îc täa ®é nhí nh¾c ý trung nh©n lµm 1 ®éng t¸c t×nh tø, sÏ nhËn ®­îc to¸i phiÕn!")
 	PlayerIndex = player_index_save	
 end
 --*************************ËéÆ¬È¡³ö****************************
@@ -130,7 +130,7 @@ function ma_frag_get_out()
 	Say("<color=green>Chó ý<color>: B¹n cã thÓ lÊy <color=yellow>to¸i phiÕn<color> trong <color=yellow>Khiªn V©n Phi Tinh phæ<color> ®Æt trong ng­êi. Xin hái muèn lÊy ra <color=yellow>to¸i phiÕn<color> nµo?",
 	5,
 	"LÊy ra Gi¸p Méc D­¬ng/#get_out_num_in(568)",
-	"LÊy ra Êt Méc ¢m/#get_out_num_in(569)",
+	"Take out Yi Mu Yin/#get_out_num_in(569)",
 	"LÊy ra BÝnh Háa D­¬ng/#get_out_num_in(570)",
 	"LÊy ra §inh Háa ¢m/#get_out_num_in(571)",
 	"§Ó ta suy nghÜ l¹i/end_dialog"
@@ -222,13 +222,13 @@ function get_att()
 	SetTask(task_map_id_TaskID,map_id)
 	SetTask(task_att_seq_TaskID,att_seq)
 	local player_sex = GetSex()
-	TaskTip("NhËn ®­îc täa ®é 2 viªn L­u Tinh"..Tb_player_sex_att[player_sex][1].." täa ®é lµ: "..Tb_task_reel_att[map_id][att_seq][player_sex])
-	Talk(1,"","<color=green>Chó ý<color>: HiÖn t¹i täa ®é L­u tinh trong <color=yellow>Khiªn V©n Phi Tinh phæ<color> sè l­îng cßn <color=yellow>"..fra_att_num.."<color>, lÇn nµy t×m thÊy to¸i phiÕn <color=yellow>"..Tb_player_sex_att[player_sex][1].." (täa ®é) <color> lµ <color=red>"..Tb_task_reel_att[map_id][att_seq][player_sex].."<color>,<color=yellow>"..Tb_player_sex_att[player_sex][2].."<color>, ®i hái l¹i ý trung nh©n th«i! §Õn ®­îc täa ®é th× hai ng­êi lµm 1 ®éng t¸c t×nh tø, sÏ nhËn ®­îc to¸i phiÕn!")
-	Msg2Player("NhiÖm vô lÇn nµy-"..Tb_player_sex_att[player_sex][1].." täa ®é lµ: "..Tb_task_reel_att[map_id][att_seq][player_sex].."§Õn ®­îc täa ®é th× lµm 1 ®éng t¸c t×nh tø, sÏ nhËn ®­îc to¸i phiÕn!")
+	TaskTip("Received coordinates of 2 Meteor stones"..Tb_player_sex_att[player_sex][1].." the coordinate is:"..Tb_task_reel_att[map_id][att_seq][player_sex])
+	Talk(1,"","<color=green>Chó ý<color>: HiÖn t¹i täa ®é L­u tinh trong <color=yellow>Khiªn V©n Phi Tinh phæ<color> sè l­îng cßn <color=yellow>"..fra_att_num.."<color>, lÇn nµy t×m thÊy to¸i phiÕn <color=yellow>"..Tb_player_sex_att[player_sex][1].." (coordinate) <color> is <color=red>"..Tb_task_reel_att[map_id][att_seq][player_sex].."<color>,<color=yellow>"..Tb_player_sex_att[player_sex][2].."<color>, ®i hái l¹i ý trung nh©n th«i! §Õn ®­îc täa ®é th× hai ng­êi lµm 1 ®éng t¸c t×nh tø, sÏ nhËn ®­îc to¸i phiÕn!")
+	Msg2Player("NhiÖm vô lÇn nµy-"..Tb_player_sex_att[player_sex][1].." the coordinate is:"..Tb_task_reel_att[map_id][att_seq][player_sex].."§Õn ®­îc täa ®é th× lµm 1 ®éng t¸c t×nh tø, sÏ nhËn ®­îc to¸i phiÕn!")
 	PlayerIndex = player_mate_index
 	player_sex = GetSex()
-	Talk(1,"","<color=green>Chó ý<color>: ý trung nh©n cña b¹n sö dông <color=yellow>Khiªn V©n Phi Tinh phæ<color>, nhËn ®­îc 1 täa ®é to¸i phiÕn, <color=yellow>"..Tb_player_sex_att[player_sex][1].."<color> täa ®é lµ <color=yellow>"..Tb_task_reel_att[map_id][att_seq][player_sex].."<color> §Õn ®­îc täa ®é xin nh¾c ý trung nh©n cña b¹n <color=yellow>lµm 1 ®éng t¸c t×nh tø bÊt kú<color> sÏ <color=yellow> nhËn ®­îc To¸i phiÕn<color>")
-	Msg2Player("ý trung nh©n cña b¹n sö dông Khiªn V©n Phi Tinh phæ, nhËn ®­îc 1 täa ®é to¸i phiÕn, "..Tb_player_sex_att[player_sex][1].." täa ®é lµ "..Tb_task_reel_att[map_id][att_seq][player_sex].."§Õn ®­îc täa ®é nhí nh¾c ý trung nh©n lµm 1 ®éng t¸c t×nh tø, sÏ nhËn ®­îc to¸i phiÕn!")
+	Talk(1,"","<color=green>Chó ý<color>: ý trung nh©n cña b¹n sö dông <color=yellow>Khiªn V©n Phi Tinh phæ<color>, nhËn ®­îc 1 täa ®é to¸i phiÕn, <color=yellow>"..Tb_player_sex_att[player_sex][1].."<color> the coordinate is <color=yellow>"..Tb_task_reel_att[map_id][att_seq][player_sex].."<color> §Õn ®­îc täa ®é xin nh¾c ý trung nh©n cña b¹n <color=yellow>lµm 1 ®éng t¸c t×nh tø bÊt kú<color> sÏ <color=yellow> nhËn ®­îc To¸i phiÕn<color>")
+	Msg2Player("ý trung nh©n cña b¹n sö dông Khiªn V©n Phi Tinh phæ, nhËn ®­îc 1 täa ®é to¸i phiÕn, "..Tb_player_sex_att[player_sex][1].." the coordinate is"..Tb_task_reel_att[map_id][att_seq][player_sex].."§Õn ®­îc täa ®é nhí nh¾c ý trung nh©n lµm 1 ®éng t¸c t×nh tø, sÏ nhËn ®­îc to¸i phiÕn!")
 	PlayerIndex = player_index_save	
 end
 --***********************±¦ÎïºÏ³É¶Ô»°**************************
@@ -242,11 +242,11 @@ function cowry_comp_dia(page_diff)
 		tinsert(tb_dia,Tb_goods_compose[i][1][2].."("..Tb_goods_compose[i][1][4]..")/#cowry_comp_dtm("..i..")")
 	end
 	if page_diff == 583 then
-		tinsert(tb_dia,"Trang kÕ/#cowry_comp_dia(587)")
+		tinsert(tb_dia,"Next page/#cowry_comp_dia(587)")
 	else
-		tinsert(tb_dia,"Trang tr­íc/#cowry_comp_dia(583)")
+		tinsert(tb_dia,"Previous page/#cowry_comp_dia(583)")
 	end
-		tinsert(tb_dia,"Tho¸t/end_dialog")
+		tinsert(tb_dia,"Exit/end_dialog")
 	Say("<color=green>Gîi ý<color>: Mçi lo¹i b¶o vËt sÏ tiªu hao sè l­îng <color=yellow>m¶nh nhÊt ®Þnh<color>, chän chuét ph¶i <color=yellow>m¶nh<color> ®Ó cho vµo <color=yellow>Khiªn V©n Phi Tinh Phæ<color>. B¹n muèn hîp thµnh b¶o vËt nµo?",
 		getn(tb_dia),
 		tb_dia
@@ -300,7 +300,7 @@ function cowry_comp(goods_id)
 end
 --*****************************Æ×ÄÚÔªËØ²éÑ¯********************
 function get_frag_num()
-	Talk(1,"OnUse","<color=green>Gîi ý<color>: T×nh tr¹ng hiÖn t¹i m¶nh vì trong <color=yellow>Khiªn V©n Phi Tinh Phæ<color> lµ: \n sè l­îng <color=yellow>Gi¸p Méc D­¬ng<color> <color=yellow>"..GetTask(1221).."<color>\n sè l­îng <color=yellow>Êt Méc ¢m<color>: <color=yellow>"..GetTask(1222).."<color>\n sè l­îng <color=yellow>BÝnh Háa D­¬ng<color> <color=yellow>"..GetTask(1223).."<color>\n sè l­îng <color=yellow>§inh Háa D­¬ng<color>: <color=yellow>"..GetTask(1224).."<color>")
+	Talk(1,"OnUse","<color=green>Gîi ý<color>: T×nh tr¹ng hiÖn t¹i m¶nh vì trong <color=yellow>Khiªn V©n Phi Tinh Phæ<color> lµ: \n sè l­îng <color=yellow>Gi¸p Méc D­¬ng<color> <color=yellow>"..GetTask(1221).."<color>\n quantity of <color=yellow>Yi Mu Yin<color>: <color=yellow>"..GetTask(1222).."<color>\n sè l­îng <color=yellow>BÝnh Háa D­¬ng<color> <color=yellow>"..GetTask(1223).."<color>\n sè l­îng <color=yellow>§inh Háa D­¬ng<color>: <color=yellow>"..GetTask(1224).."<color>")
 end
 --**************************Á÷ÐÇÆ×Ê£ÓàÊýÁ¿²éÑ¯*****************
 function get_att_num()

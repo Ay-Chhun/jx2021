@@ -18,7 +18,7 @@ File_name = "\\script\\item\\item_billing\\wulinmiling.lua"
 function Zgc_pub_getwrdtask(id,fun_id)
 	SetTaskTemp(158,id)
 	SetTaskTemp(160,fun_id)
-	ApplyRelayShareData("SË li÷u ID th’ giÌi",0,0,File_name,"CallBackGetWrdTask")
+	ApplyRelayShareData("World ID data",0,0,File_name,"CallBackGetWrdTask")
 end
 function CallBackGetWrdTask(szKey, nKey1, nKey2, nCount)
 	local id = (GetTaskTemp(158)-1)
@@ -39,7 +39,7 @@ function Zgc_pub_setwrdtask(id,value,fun_id)
 	SetTaskTemp(158,id)
 	SetTaskTemp(159,value)
 	SetTaskTemp(160,fun_id)
-	ApplyRelayShareData("SË li÷u ID th’ giÌi",0,0,File_name,"CallBackSetWrdTask")
+	ApplyRelayShareData("World ID data",0,0,File_name,"CallBackSetWrdTask")
 end
 function CallBackSetWrdTask(szKey, nKey1, nKey2, nCount)
 	local id =(GetTaskTemp(158)-1)
@@ -56,7 +56,7 @@ function CallBackSetWrdTask(szKey, nKey1, nKey2, nCount)
 	end
 	local save_id = (id - (floor(id/10)*10))
 	wrd_data[save_id] = value
-	local rtn_flag = AddRelayShareData("SË li÷u ID th’ giÌi",0,0, File_name, "end_dialog", 0,suit_id, "dddddddddd", wrd_data[0],wrd_data[1],wrd_data[2],wrd_data[3],wrd_data[4],wrd_data[5],wrd_data[6],wrd_data[7],wrd_data[8],wrd_data[9])
+	local rtn_flag = AddRelayShareData("World ID data",0,0, File_name, "end_dialog", 0,suit_id, "dddddddddd", wrd_data[0],wrd_data[1],wrd_data[2],wrd_data[3],wrd_data[4],wrd_data[5],wrd_data[6],wrd_data[7],wrd_data[8],wrd_data[9])
 	local return_fun = "WrdDataSetReturn_"..fun_id.."()"
 	dostring(return_fun)
 end
@@ -129,7 +129,7 @@ end
 --*********************************boss ˝¡øªÿ÷√********************************
 function boss_num_set(boss_diff)
 	SetTaskTemp(158,boss_diff)
-	ApplyRelayShareData("SË li÷u ID th’ giÌi",0,0,File_name,"CallBackBossNumSet")
+	ApplyRelayShareData("World ID data",0,0,File_name,"CallBackBossNumSet")
 end
 function CallBackBossNumSet(szKey, nKey1, nKey2, nCount)			--boss ˝¡ø…Ë÷√ªÿµ˜
 	DelRelayShareDataCopy(szKey,nKey1,nKey2)
@@ -142,7 +142,7 @@ function CallBackBossNumSet(szKey, nKey1, nKey2, nCount)			--boss ˝¡ø…Ë÷√ªÿµ˜
 			boss_num[i] = 0
 		end
 	end
-	AddRelayShareData("SË li÷u ID th’ giÌi",0,0,File_name,"end_dialog",0,1,"dddddddddd",boss_num[1],boss_num[2],boss_num[3],boss_num[4],boss_num[5],boss_num[6],boss_num[7],boss_num[8],boss_num[9],boss_num[10])
+	AddRelayShareData("World ID data",0,0,File_name,"end_dialog",0,1,"dddddddddd",boss_num[1],boss_num[2],boss_num[3],boss_num[4],boss_num[5],boss_num[6],boss_num[7],boss_num[8],boss_num[9],boss_num[10])
 	boss_crt_finish(boss_diff,0)
 end
 --*******************************“∞Õ‚boss ˝¡ø≈–∂œ*******************************

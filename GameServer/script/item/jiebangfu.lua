@@ -7,7 +7,7 @@ t_award =
 	n_room_need = 2,
 	n_weight_need = 50,
 	t_item = {
-		{2,1,30470,1,"Cµng Kh«n Phï"},
+		{2,1,30470,1,"Strength Refine Pill"},
 		{2,1,1009,10,"Thiªn Th¹ch Tinh Th¹ch"},
 		},
 }
@@ -49,7 +49,7 @@ function _get_award_desc(_t_award)
 	local t = _t_award
 	if t then
 		if t.n_gold then
-			szDesc = format("%d vµng", t.n_gold)
+			szDesc = format("%d gold", t.n_gold)
 		end
 		if t.t_item then
     		for i = 1, getn(t.t_item) do

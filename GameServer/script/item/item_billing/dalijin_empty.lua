@@ -1,7 +1,7 @@
 
 function OnUse(nItemIdx)
 	local selTab = {
-			"§ång ý/#confirm("..nItemIdx..")",
+			"Confirm/#confirm("..nItemIdx..")",
 			"Ta suy nghÜ l¹i!/nothing",
 			}
 	Say("B¹n muèn ®Æt <color=yellow>999 l­îng<color> vµo trong bao l× x× hoµng kim?",getn(selTab),selTab);

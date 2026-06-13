@@ -5,7 +5,7 @@
 Include("\\script\\newbattles\\newresourcebattle\\npc\\newres_song_liao_npc.lua");
 
 nCurCamp = 1
-szNpcName = "<color=green>TriÖu Tè Quyªn<color>: "
+szNpcName = "<color=green>Zhao Suquan<color>:"
 
 function main()
 	newres_general()	

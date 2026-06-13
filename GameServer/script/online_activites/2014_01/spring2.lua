@@ -6,7 +6,7 @@ Include("\\script\\online\\viet_event\\ip_bonus\\ip_head.lua")
 
 VET_201401_SPRING2_ACTIVITYID = 111;
 
-VET_201401_SPRING2_MAIN = "TÕt n¨m 2014/Vet_201401_sprint2_main";
+VET_201401_SPRING2_MAIN = "New Year 2014/Vet_201401_sprint2_main";
 
 VET_201401_SPRING2_TASK = TaskManager:Create(2, 14)
 VET_201401_SPRING2_TASK.DaySeq = 1
@@ -27,9 +27,9 @@ function Vet_201401_sprint2_main()
 	end
 	local tTask = {
 		[1] = "Tiªu hao 1 Vµng + 1 giê ®ång hå lªn m¹ng",
-		[2] = "Giao nép 240 Gç Qu©n Dông",
-		[3] = "Giao nép 240 L¸ Dong",
-		[4] = "Tr¶ lêi 3 c©u hái",
+		[2] = "Submit 240 Army Supply Wood",
+		[3] = "Submit 240 Dong Leaves",
+		[4] = "Answer 3 questions",
 		[5] = "§¸nh b¹i 240 con Heo Rõng",
 		[6] = "Hoµn thµnh nhiÖm vô",
 	}
@@ -39,7 +39,7 @@ function Vet_201401_sprint2_main()
 		"NhËn phÇn th­ëng nhiÖm vô/Vet_201401_sprint2_award",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
-	Say("Chóc Mõng N¨m Míi ! ! !", getn(tSay), tSay);
+	Say("Happy New Year! ! !", getn(tSay), tSay);
 end
 
 function Vet_201401_sprint2_task(nStep, nTalk, nAns)
@@ -74,7 +74,7 @@ function Vet_201401_sprint2_task(nStep, nTalk, nAns)
 	end
 	if nStep == 2 then
 		if GetItemCount(2, 1, 30619) < 240 then
-			Talk(1,"",format("Hµnh trang kh«ng gian %s kh«ng ®ñ %d", "L¸ Dong", 240));
+			Talk(1,"",format("Hµnh trang kh«ng gian %s kh«ng ®ñ %d", "Dong Leaf", 240));
 			return 0;
 		end
 		if DelItem(2, 1, 30619, 240) ~= 1 then
@@ -83,43 +83,43 @@ function Vet_201401_sprint2_task(nStep, nTalk, nAns)
 	end
 	if nStep == 3 then
 		if nTalk == nil then
-			Say("Mång 1 TÕt __, Mång 3 TÕt __.", 4, 
-				format("MÑ, Cha/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 1, 1),
-				format("Cha, MÑ/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 1, 2),
-				format("Cha, ThÇy/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 1, 3),
-				format("¤ng, Bµ/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 1, 4)
+			Say("1st day of New Year __, 3rd day of New Year __.", 4, 
+				format("Mother, Father/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 1, 1),
+				format("Father, Mother/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 1, 2),
+				format("Father, Teacher/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 1, 3),
+				format("Grandfather, Grandmother/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 1, 4)
 			)
 			return 0;
 		end
 		if nTalk == 1 then
 			if nAns ~= 3 then
-				Talk(1,"","Tr¶ lêi sai!");
+				Talk(1,"","Wrong answer!");
 				return 0;
 			end 
 			Say("M«n §a Kh¸ch §¸o Thiªn Tµi §¸o, Gia H÷u Nh©n Lai V¹n VËt Lai ( c©u ®èi nµy d¸n ë ®©u trong nhµ ?)", 4, 
-				format("T­êng nhµ/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 2, 1),
-				format("Sµn nhµ/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 2, 2),
-				format("S©n Nhµ/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 2, 3),
+				format("House wall/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 2, 1),
+				format("House floor/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 2, 2),
+				format("House yard/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 2, 3),
 				format("D¸n ®©u còng ®­îc/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 2, 4)
 			)
 			return 0;
 		end
 		if nTalk == 2 then
 			if nAns ~= 3 then
-				Talk(1,"","Tr¶ lêi sai!");
+				Talk(1,"","Wrong answer!");
 				return 0;
 			end 
-			Say("Phóc Nh­ __,Thä TØ Nam S¬n.", 4, 
-				format("Nam H¶i/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 3, 1),
-				format("B¾c H¶i/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 3, 2),
-				format("§«ng H¶i/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 3, 3),
-				format("Long H¶i/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 3, 4)
+			Say("Fortune like __, longevity as Mount Nanshan.", 4, 
+				format("South Sea/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 3, 1),
+				format("North Sea/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 3, 2),
+				format("East Sea/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 3, 3),
+				format("Dragon Sea/#Vet_201401_sprint2_task(%d, %d, %d)", nStep, 3, 4)
 			)
 			return 0;
 		end
 		if nTalk == 3 then
 			if nAns ~= 3 then
-				Talk(1,"","Tr¶ lêi sai!");
+				Talk(1,"","Wrong answer!");
 				return 0;
 			end 
 		end
@@ -179,10 +179,10 @@ function Vet_201401_sprint2_award()
 	end
 	VET_201401_SPRING2_TASK:SetTask(VET_201401_SPRING2_TASK.Award, 1);
 	gf_ModifyExp(20142014);
-	gf_AddItemEx2({2, 1, 30167, 39}, "Dõa", "Event phu 4 thang 1");
-	gf_AddItemEx2({2, 1, 30172, 39}, "Xoµi", "Event phu 4 thang 1");
-	gf_AddItemEx2({2, 1, 30178, 39}, "§u §ñ", "Event phu 4 thang 1");
-	gf_AddItemEx2({2, 1, 30179, 39}, "M·ng CÇu", "Event phu 4 thang 1");
+	gf_AddItemEx2({2, 1, 30167, 39}, "Coconut", "Event phu 4 thang 1");
+	gf_AddItemEx2({2, 1, 30172, 39}, "Mango", "Event phu 4 thang 1");
+	gf_AddItemEx2({2, 1, 30178, 39}, "Papaya", "Event phu 4 thang 1");
+	gf_AddItemEx2({2, 1, 30179, 39}, "Soursop", "Event phu 4 thang 1");
 	-------------------------------------------------
 	--Complete By Veit
 	--Update Value of Pet : 100 point

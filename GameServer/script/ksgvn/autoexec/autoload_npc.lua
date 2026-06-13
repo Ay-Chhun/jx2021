@@ -6,7 +6,7 @@ g_tbKsgNpcList = {
     { 200, 1332, 2794, "\\script\\ksgvn\\npc\\npc_lienchi.lua", "Chñ qu¶n Háa KhÝ phßng", "Liªn Chi", },
     { 509, 1506, 3518, "\\script\\ksgvn\\npc\\npc_caonhanoan.lua", "Cô giµ", "Cao Nh©n ë Èn", },
     { 200, 1469, 2752, "\\script\\function\\rename\\rename_npc.lua", "Quan sø-trung niªn1", "Hé Bé ThÞ Lang", }, -- rename NPC
-    { 100, 1416, 3023, "\\script\\ksgvn\\npc\\npc_longhosu.lua", "Vâ L©m Minh Chñ1", "Long Hæ Sø", }, -- BHTA
+    { 100, 1416, 3023, "\\script\\ksgvn\\npc\\npc_longhosu.lua", "Vâ L©m Minh Chñ1", "Dragon Tiger Envoy", }, -- BHTA
 }
 
 g_tbKsgNpcTopList = {

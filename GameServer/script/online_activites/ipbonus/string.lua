@@ -31,7 +31,7 @@ VET_TB_IPBONUS_JINANG_DLG =
 {
 	"NhÀn ph«n th≠Îng online",
 	"K›ch hoπt hi÷u qu∂ hÁ trÓ mÁi ngµy",
-	"Tho∏t",
+	"Exit",
 	"¶u Æ∑i dµnh cho ng≠Íi ch¨i phﬂng net Æ∆c thÔ",
 	"Ng≠Íi ch¨i Æ®ng nhÀp game V‚ L©m 2 tπi phﬂng net Æ∆c thÔ chÿ Æﬁnh (th´ng tin chi ti’t vui lﬂng xem tπi http://volam2.zing.vn) vÌi ph«n th≠Îng Æ∆c bi÷t t®ng th™m cho Nhi÷m VÙ Th≠¨ng HÈi, TrÂng Hπt GiËng, Nhi÷m VÙ V‚ L©m S¯ Gi∂ ngoµi ra cﬂn c„ th” nhÀn Æ≠Óc ph«n quµ th≠Îng sau.",
 }
@@ -50,10 +50,10 @@ VET_TB_IPBONUS_ONLINE_EXP =
 
 VET_TB_IPBONUS_BUFF = 
 {
-	[1] = {"%s t®ng %d Æi”m", "S¯c mπnh", "state_add_strength", 10},
+	[1] = {"%s t®ng %d Æi”m", "Strength", "state_add_strength", 10},
 	[2] = {"%s t®ng %d Æi”m", "NÈi c´ng ", "state_add_energy", 10},
-	[3] = {"%s t®ng %d Æi”m", "G©n cËt", "state_add_vitality", 10},
-	[4] = {"%s t®ng %d Æi”m", "Th©n ph∏p", "state_add_dexterity", 10},
+	[3] = {"%s t®ng %d Æi”m", "Sinews and Bones", "state_add_vitality", 10},
+	[4] = {"%s t®ng %d Æi”m", "Agility", "state_add_dexterity", 10},
 	[5] = {"%s t®ng %d Æi”m", "Linh hoπt", "state_add_observe", 10},
 };
 

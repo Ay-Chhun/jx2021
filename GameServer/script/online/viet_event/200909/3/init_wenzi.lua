@@ -5,7 +5,7 @@
 Include("\\script\\lib\\globalfunctions.lua");
 --Ë¢ÐÂÎÃ×ÓµÄ×ø±ê
 t_wenzi_sets = {
-	[0] = {"T©y BiÖn Kinh", {203, 1522, 3053}},--ÐÇÆÚÈÕ
+	[0] = {"West Bianjing", {203, 1522, 3053}},--ÐÇÆÚÈÕ
 	[1] = {"B¾c Phông T­êng", {504, 1363, 3081}},--ÐÇÆÚÒ»
 	[4] = {"B¾c TuyÒn Ch©u", {108, 1459, 3141}},--ÐÇÆÚËÄ
 	[5] = {"T©y Thµnh §«", {301, 1492, 2986}},--ÐÇÆÚÎå
@@ -21,13 +21,13 @@ function main()
 	local nNpcLifeTime = 120 * 60;
 	local nNpcIndex = 0;
 	if t_wenzi_sets[nDay] ~= nil then
-		nNpcIndex = CreateNpc("V¨n Tö V­¬ng", "§¹i v¨n tö", gf_UnPack(t_wenzi_sets[nDay][2]));
+		nNpcIndex = CreateNpc("V¨n Tö V­¬ng", "Great Scholar", gf_UnPack(t_wenzi_sets[nDay][2]));
 		SetNpcDeathScript(nNpcIndex, "\\script\\online\\viet_event\\200909\\3\\death_wenzi.lua");
 		SetNpcLifeTime(nNpcIndex, nNpcLifeTime);
-		nNpcIndex = CreateNpc("V¨n Tö V­¬ng", "NhÞ v¨n tö", gf_UnPack(t_wenzi_sets[nDay][2]));
+		nNpcIndex = CreateNpc("V¨n Tö V­¬ng", "Second Scholar", gf_UnPack(t_wenzi_sets[nDay][2]));
 		SetNpcDeathScript(nNpcIndex, "\\script\\online\\viet_event\\200909\\3\\death_wenzi.lua");
 		SetNpcLifeTime(nNpcIndex, nNpcLifeTime);
-		nNpcIndex = CreateNpc("V¨n Tö V­¬ng", "Tam v¨n tö", gf_UnPack(t_wenzi_sets[nDay][2]));
+		nNpcIndex = CreateNpc("V¨n Tö V­¬ng", "Third Scholar", gf_UnPack(t_wenzi_sets[nDay][2]));
 		SetNpcDeathScript(nNpcIndex, "\\script\\online\\viet_event\\200909\\3\\death_wenzi.lua");
 		SetNpcLifeTime(nNpcIndex, nNpcLifeTime);
 		Msg2Global("Cã ng­êi thÊy ®µn Muçi Tr©u xuÊt hiÖn t¹i "..t_wenzi_sets[nDay][1]..". C¸c h¹ h·y mau mau ®i thu phôc chóng.");

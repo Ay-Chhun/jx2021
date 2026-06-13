@@ -8,7 +8,7 @@ Include("\\script\\lib\\lingshi_head.lua")
 function OnUse()
 	Say("Dïng B¶o th¹ch Bao cã thÓ nhËn ®­îc 1 Linh th¹ch, b¹n muèn dïng kh«ng? Thu thËp 1000 m¶nh Linh th¹ch cã thÓ dïng [Hoan Linh Sa] chuyÓn thµnh 1 Linh th¹ch cÊp 6 bÊt kú\nM¶nh Linh th¹ch (khãa) 100%\nLinh th¹ch cÊp 1-4: 93.9%\nLinh th¹ch cÊp 5: 5%\nLinh th¹ch cÊp 6: 1%\nLinh th¹ch cÊp 7: 0.1%",
 		2,
-		"§ång ı/confirm_get",
+		"Agree/confirm_get",
 		"Kh«ng sö dông/nothing")
 end
 
@@ -36,12 +36,12 @@ function confirm_get()
 		elseif nRand <= 999 then
 			lspf_AddLingShiInBottle(6,1);
 			Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 Linh Th¹ch cÊp 6, ®· nhËp vµo Tô linh ®Ønh.");
-			Msg2Global("Ng­êi ch¬i"..GetName().."Më bao B¶o th¹ch nhËn ®­îc 1 Linh Th¹ch cÊp 6");
+			Msg2Global("Player"..GetName().."Më bao B¶o th¹ch nhËn ®­îc 1 Linh Th¹ch cÊp 6");
 			WriteLog("Bao B¶o th¹ch: ng­êi ch¬i "..GetName().."Më bao B¶o th¹ch nhËn ®­îc 1 Linh Th¹ch cÊp 6");		
 		else
 			lspf_AddLingShiInBottle(7,1);
 			Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 Linh Th¹ch cÊp 7, ®· nhËp vµo Tô linh ®Ønh.");		
-			Msg2Global("Ng­êi ch¬i"..GetName().."Më bao B¶o th¹ch nhËn ®­îc 1 Linh Th¹ch cÊp 7");
+			Msg2Global("Player"..GetName().."Më bao B¶o th¹ch nhËn ®­îc 1 Linh Th¹ch cÊp 7");
 			WriteLog("Bao B¶o th¹ch: ng­êi ch¬i "..GetName().."Më bao B¶o th¹ch nhËn ®­îc 1 Linh Th¹ch cÊp 7");
 		end
 		AddItem(2,1,2646,1,1);

@@ -1,6 +1,6 @@
 Include("\\script\\lib\\globalfunctions.lua");
 
-tBoat = {"ThuyÒn Rång Thñy L«i","ThuyÒn Rång Thñy L·ng","ThuyÒn rång §o¶n Binh","ThuyÒn Rång Liªn X¹","ThuyÒn rång TiÒm Hµnh"};
+tBoat = {"ThuyÒn Rång Thñy L«i","ThuyÒn Rång Thñy L·ng","Dragon Boat Short Soldier","Dragon Boat Volley","Dragon Boat Stealth"};
 function OnUse(nItemIdx)
 	local selTab = {
 				"Thñy L«i Long Chu (sö dông ®­îc 1 lÇn)/#select_boat(1,"..nItemIdx..")",
@@ -17,8 +17,8 @@ tBoadType = {
 	[1] = {27,"ThuyÒn Rång Thñy L«i"},
 	[2] = {28,"ThuyÒn Rång Thñy L·ng"},
 	[3] = {26,"ThuyÒn Rång Thñy Ph¸o"},
-	[4] = {30,"ThuyÒn Rång Liªn X¹"},
-	[5] = {31,"ThuyÒn rång TiÒm Hµnh"},
+	[4] = {30,"Dragon Boat Volley"},
+	[5] = {31,"Dragon Boat Stealth"},
 	}
 
 function select_boat(nType,nItemIdx)

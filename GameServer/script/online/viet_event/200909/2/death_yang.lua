@@ -8,7 +8,7 @@ function OnDeath(nNpcIndex)
 	SetNpcLifeTime(nNpcIndex, 30);
 	if random(1,100) <= 25 then
 		AddItem(2, 1, 30129, 1);
-		WriteLogEx("Hoat dong thang 12","nhËn",1,"ThÞt dª");
+		WriteLogEx("Hoat dong thang 12","nhËn",1,"Goat Meat");
 	end
 	
 	local nMapID, nWx, nWy = GetNpcWorldPos(nNpcIndex)
@@ -19,7 +19,7 @@ function OnDeath(nNpcIndex)
 	for i = 1, 20 do
 		nAddX = random(-70, 70)
 		nAddY = random(-70, 70)		
-		nTargetNpc = CreateNpc("M©m cç", "ThÞt N­íng", nMapID, nWx + nAddX, nWy + nAddY)
+		nTargetNpc = CreateNpc("M©m cç", "Roasted Meat", nMapID, nWx + nAddX, nWy + nAddY)
 		SetNpcLifeTime(nTargetNpc, 130)
 		SetNpcScript(nTargetNpc, "\\script\\online\\viet_event\\200909\\2\\pangtuzi_baoguo.lua")
 	end	

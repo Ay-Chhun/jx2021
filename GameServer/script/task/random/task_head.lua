@@ -53,11 +53,11 @@ EVENT_TIMER_ID  = 101; -- 15 ·ÖÖÓÆÚÏŞµÄ¼ÆËã ID
 speAward1 = {
 
 	{"Tr­êng QuyÒn Phæ", 0,	107, 51},		
-  {"T­îng H×nh Phæ", 0, 107, 52},		
-  {"Trung B×nh Phæ", 0,	107, 53},		
-  {"Khai S¬n Phæ", 0,	107, 54},		
-  {"Khİ LiÖu ThuËt", 0,	107, 55},		
-  {"To¸i DiÖp Phæ", 0,	107, 56},		
+  {"Pictograph Manual", 0, 107, 52},		
+  {"Balanced Manual", 0,	107, 53},		
+  {"Mountain-Opening Manual", 0,	107, 54},		
+  {"Weapon Forging Technique", 0,	107, 55},		
+  {"Suiye Manual", 0,	107, 56},		
   {"Tô NguyÖn C«ng Phæ", 0,	107, 57},		
   {"HuyÒn Th¹ch C«ng Phæ", 0,	107, 58},
   
@@ -65,14 +65,14 @@ speAward1 = {
   
 speAward2 = {
   {"Tr­êng QuyÒn Phæ", 0,	107, 51},		
-  {"T­îng H×nh Phæ", 0, 107, 52},		
-  {"Trung B×nh Phæ", 0,	107, 53},		
-  {"Khai S¬n Phæ", 0,	107, 54},		
-  {"Khİ LiÖu ThuËt", 0,	107, 55},		
-  {"To¸i DiÖp Phæ", 0,	107, 56},		
+  {"Pictograph Manual", 0, 107, 52},		
+  {"Balanced Manual", 0,	107, 53},		
+  {"Mountain-Opening Manual", 0,	107, 54},		
+  {"Weapon Forging Technique", 0,	107, 55},		
+  {"Suiye Manual", 0,	107, 56},		
   {"Tô NguyÖn C«ng Phæ", 0,	107, 57},		
   {"HuyÒn Th¹ch C«ng Phæ", 0,	107, 58},
-  {"Kim ThiÒn Phæ", 0,	107, 59},
+  {"Golden Cicada Manual", 0,	107, 59},
   {"Tu La MËt tŞch", 0,	107, 60},
   {"Bæ Kim MËt tŞch", 0,	107, 61},
   {"Bæ Th¹ch MËt tŞch", 0,	107, 62},
@@ -82,32 +82,32 @@ speAward2 = {
   
 speAward3 = {
   {"Tr­êng QuyÒn Phæ", 0,	107, 51},		
-  {"T­îng H×nh Phæ", 0, 107, 52},		
-  {"Trung B×nh Phæ", 0,	107, 53},		
-  {"Khai S¬n Phæ", 0,	107, 54},		
-  {"Khİ LiÖu ThuËt", 0,	107, 55},		
-  {"To¸i DiÖp Phæ", 0,	107, 56},		
+  {"Pictograph Manual", 0, 107, 52},		
+  {"Balanced Manual", 0,	107, 53},		
+  {"Mountain-Opening Manual", 0,	107, 54},		
+  {"Weapon Forging Technique", 0,	107, 55},		
+  {"Suiye Manual", 0,	107, 56},		
   {"Tô NguyÖn C«ng Phæ", 0,	107, 57},		
   {"HuyÒn Th¹ch C«ng Phæ", 0,	107, 58},
-  {"Kim ThiÒn Phæ", 0,	107, 59},
+  {"Golden Cicada Manual", 0,	107, 59},
   {"Tu La MËt tŞch", 0,	107, 60},
   {"Bæ Kim MËt tŞch", 0,	107, 61},
   {"Bæ Th¹ch MËt tŞch", 0,	107, 62},
   {"Ngò Quû MËt tŞch", 0,	107, 63},
   {"Thiªn Hµ MËt tŞch", 0,	107, 64},
   {"Tö Hµ MËt tŞch", 0,	107, 65},
-  {"Chiªm Y Phæ", 0,	107, 66},
+  {"Zhanyi Manual", 0,	107, 66},
   
 }
 
 --Ê¦ÃÅÃØóÅ£¬ĞÄ·¨
 FactionBook = {
 	--½ğ¸Õ·üÄ§¾­,½ğ¸Õ·üÄ§ĞÄ·¨,ÉÙÁÖÁîÅÆ
-	[2] = {{0,107,1},{0,107,2},{2,0,205},"ThiÕu L©m"},
+	[2] = {{0,107,1},{0,107,2},{2,0,205},"Shaolin"},
 	--ÎŞ³¾ÃØ¼®,ÎŞ³¾ĞÄ·¨,ÉÙÁÖÁîÅÆ    
-	[3] = {{0,107,5},{0,107,6},{2,0,205},"ThiÕu L©m"},
+	[3] = {{0,107,5},{0,107,6},{2,0,205},"Shaolin"},
 	--Ç±ÁúÃØ¼®,Ç±ÁúĞÄ·¨,ÉÙÁÖÁîÅÆ
-	[4] = {{0,107,3},{0,107,4},{2,0,205},"ThiÕu L©m"},
+	[4] = {{0,107,3},{0,107,4},{2,0,205},"Shaolin"},
 	--ÌìÂŞÃØ¼®,ÌìÂŞĞÄ·¨,ÌÆÃÅÁîÅÆ
 	[6] = {{0,107,7},{0,107,8},{2,0,209},"§­êng M«n"},
 	--ÈçÒâÃØ¼®,ÈçÒâĞÄ·¨,¶ëáÒÁîÅÆ
@@ -115,21 +115,21 @@ FactionBook = {
 	--±Ìº£Æ×,±Ìº£ĞÄ·¨,¶ëáÒÁîÅÆ
 	[9] = {{0,107,11},{0,107,12},{2,0,207},"Nga My"},
 	--»ìãçÃØ¼®,»ìãçĞÄ·¨,Ø¤°ïÁîÅÆ
-	[11] = {{0,107,13},{0,107,14},{2,0,208},"C¸i Bang"},
+	[11] = {{0,107,13},{0,107,14},{2,0,208},"Beggars' Sect"},
 	--ŞñÌìÃØ¼®,ŞñÌìĞÄ·¨,Ø¤°ïÁîÅÆ
-	[12] = {{0,107,15},{0,107,16},{2,0,208},"C¸i Bang"},
+	[12] = {{0,107,15},{0,107,16},{2,0,208},"Beggars' Sect"},
 	--»ÃÓ°ÃØ¼®,»ÃÓ°ĞÄ·¨,Îäµ±ÁîÅÆ
-	[14] = {{0,107,17},{0,107,18},{2,0,206},"Vâ §ang"},
+	[14] = {{0,107,17},{0,107,18},{2,0,206},"Wudang"},
 	--¾ı×ÓÃØ¼®,¾ı×ÓĞÄ·¨,Îäµ±ÁîÅÆ
-	[15] = {{0,107,19},{0,107,20},{2,0,206},"Vâ §ang"},
+	[15] = {{0,107,19},{0,107,20},{2,0,206},"Wudang"},
 	--Ç¹ÆïÃØ¼®,Ç¹ÆïĞÄ·¨,ÑîÃÅÁîÅÆ
 	[17] = {{0,107,21},{0,107,22},{2,0,350},"D­¬ng M«n"},
 	--¹­ÆïÃØ¼®,¹­ÆïĞÄ·¨,ÑîÃÅÁîÅÆ
 	[18] = {{0,107,23},{0,107,24},{2,0,350},"D­¬ng M«n"},
 	--Ğ°ÏÀÃØ¼®£¬Ğ°ÏÀĞÄ·¨,Îå¶¾ÁîÅÆ
-	[20] = {{0,107,25},{0,107,26},{2,0,390},"Ngò §éc"},
+	[20] = {{0,107,25},{0,107,26},{2,0,390},"Five Poisons"},
 	--¹ÆÊ¦ÃØ¼®£¬¹ÆÊ¦ĞÄ·¨,Îå¶¾ÁîÅÆ
-	[21] = {{0,107,27},{0,107,28},{2,0,390},"Ngò §éc"},
+	[21] = {{0,107,27},{0,107,28},{2,0,390},"Five Poisons"},
 }
 
 -- ´ÓÈÎÎñÀàĞÍ±íÖĞ¸ù¾İÈ¨ÖØÑ¡ÔñÒ»¸öÈÎÎñÀàĞÍ
@@ -188,7 +188,7 @@ function CreateTask()
 	
 	CDebug:MessageOut("Lo¹i nhiÖm vô:"..nTaskType.."  Sè hµng nhiÖm vô:"..nRow);
 	if CreateTrigger(4, nNpcID, EVENT_NPC_ID) == 0 then
-		WriteLog("[Lçi nhiÖm vô s­ m«n]:task_head.lua Lçi CreateTask ë hµm sè, CreateTrigger(4. nNpcID, EVENT_NPC_ID), trŞ nNpcID:"..nNpcID..". Tªn:"..GetName());
+		WriteLog("[Lçi nhiÖm vô s­ m«n]:task_head.lua Lçi CreateTask ë hµm sè, CreateTrigger(4. nNpcID, EVENT_NPC_ID), trŞ nNpcID:"..nNpcID..". Name:"..GetName());
 		return 0;	--´´½¨Ê§°Ü
 	end;
 	CDebug:MessageOut("B¾t ®Çu xuÊt hiÖn: Npc ID:"..nNpcID);
@@ -227,7 +227,7 @@ local strNpcMap      = tabNpcName:getCell(nRow, "NpcMap");  -- µÃµ½ÈÎÎñ NPC ËùÔÚ
 local strBossName    = FactionBossName[GetPlayerFaction()];
 local strBossTitle   = FactionBossTitle[GetPlayerFaction()];
 
-	Say("B¹n nhËn ®­îc bå c©u ®­a th­ cña"..strBossTitle.."{bå c©u ®­a th­}"..strBossName.."nhê b¹n ®Õn <color=yellow>"..strNpcMap.."<color> t×m <color=yellow>"..strNpcName.."<color>, ng­êi nµy cÇn sù gióp ®ì cña b¹n, ®ång thêi dÆn b¹n dï thÕ nµo còng ph¶i hoµn thµnh nhiÖm vô ®­îc giao!",
+	Say("B¹n nhËn ®­îc bå c©u ®­a th­ cña"..strBossTitle.."{messenger pigeon}"..strBossName.."asks you to go to <color=yellow>"..strNpcMap.."<color> to find <color=yellow>"..strNpcName.."<color>, ng­êi nµy cÇn sù gióp ®ì cña b¹n, ®ång thêi dÆn b¹n dï thÕ nµo còng ph¶i hoµn thµnh nhiÖm vô ®­îc giao!",
 		3,
 		"TiÕp nhËn nhiÖm vô vµ ®i ®Õn n¬i ®ã/#AcceptTask("..nNpcMapID..")",
 		"Ta cã viÖc råi, §Ó khi kh¸c ®i!/Main_Exit",
@@ -313,7 +313,7 @@ local strBossTitle   = FactionBossTitle[GetPlayerFaction()];
 
 	Say("B¹n ®ång ı hñy nhiÖm vô"..strBossTitle.."nµy? NÕu liªn tôc hñy 2 lÇn b¹n sÏ mÊt <color=yellow>1<color> ®iÓm danh väng!",
 		2,
-		"§­îc/CancelTask",
+		"OK/CancelTask",
 		"§Ó xem l¹i!/ShowTaskNpc");
 
 end;
@@ -496,19 +496,19 @@ function PayAward(multiple, times)
 		Say("<color=green>"..strName.."<color>: Kh¸ l¾m! Ng­¬i ®· hoµn thµnh nhiÖm vô cña"..strBossTitle..", ®©y lµ phÇn th­ëng! <enter><enter>Kinh nghiÖm:"..nValue,0);		
 	elseif a==1 and b==0 then 
 		Say("<color=green>"..strName.."<color>: Kh¸ l¾m! Ng­¬i ®· hoµn thµnh nhiÖm vô cña"..strBossTitle..", ®©y lµ phÇn th­ëng! <enter><enter>Kinh nghiÖm:"..nValue.."<enter>VËt phÈm ®Æc biÖt: m¶nh B¨ng th¹ch",0);
-		Msg2Faction(FactionBook[nRoute][4], "§Ö tö"..GetName().." Hoµn thµnh nhiÖm vô s­ m«n nhËn ®­îc m¶nh B¨ng th¹ch");
+		Msg2Faction(FactionBook[nRoute][4], "Disciple"..GetName().." Hoµn thµnh nhiÖm vô s­ m«n nhËn ®­îc m¶nh B¨ng th¹ch");
 	elseif a==2 and b==0 then
 		Say("<color=green>"..strName.."<color>: Kh¸ l¾m! Ng­¬i ®· hoµn thµnh nhiÖm vô cña"..strBossTitle..", ®©y lµ phÇn th­ëng! <enter><enter>Kinh nghiÖm:"..nValue.."<enter>VËt phÈm ®Æc biÖt: MËt tŞch",0);
-		Msg2Faction(FactionBook[nRoute][4], "§Ö tö"..GetName().." Hoµn thµnh nhiÖm vô s­ m«n nhËn ®­îc MËt tŞch");
+		Msg2Faction(FactionBook[nRoute][4], "Disciple"..GetName().." Hoµn thµnh nhiÖm vô s­ m«n nhËn ®­îc MËt tŞch");
 	elseif a==0 and b==1 then
 		Say("<color=green>"..strName.."<color>: Kh¸ l¾m! Ng­¬i ®· hoµn thµnh nhiÖm vô cña"..strBossTitle..", ®©y lµ phÇn th­ëng! <enter><enter>Kinh nghiÖm:"..nValue.."<enter>VËt phÈm ®Æc biÖt: LÖnh bµi s­ m«n",0);
-		Msg2Faction(FactionBook[nRoute][4], "§Ö tö"..GetName().." Hoµn thµnh nhiÖm vô s­ m«n nhËn ®­îc LÖnh bµi s­ m«n");
+		Msg2Faction(FactionBook[nRoute][4], "Disciple"..GetName().." Hoµn thµnh nhiÖm vô s­ m«n nhËn ®­îc LÖnh bµi s­ m«n");
 	elseif a==1 and b==1 then
 		Say("<color=green>"..strName.."<color>: Kh¸ l¾m! Ng­¬i ®· hoµn thµnh nhiÖm vô cña"..strBossTitle..", ®©y lµ phÇn th­ëng! <enter><enter>Kinh nghiÖm:"..nValue.."<enter>VËt phÈm ®Æc biÖt: LÖnh bµi s­ m«n vµ m¶nh B¨ng th¹ch",0);
-		Msg2Faction(FactionBook[nRoute][4], "§Ö tö"..GetName().." Hoµn thµnh nhiÖm vô s­ m«n nhËn ®­îc LÖnh bµi s­ m«n vµ m¶nh B¨ng th¹ch");
+		Msg2Faction(FactionBook[nRoute][4], "Disciple"..GetName().." Hoµn thµnh nhiÖm vô s­ m«n nhËn ®­îc LÖnh bµi s­ m«n vµ m¶nh B¨ng th¹ch");
 	elseif a==2 and b==1 then
 		Say("<color=green>"..strName.."<color>: Kh¸ l¾m! Ng­¬i ®· hoµn thµnh nhiÖm vô cña"..strBossTitle..", ®©y lµ phÇn th­ëng! <enter><enter>Kinh nghiÖm:"..nValue.."<enter>VËt phÈm ®Æc biÖt: LÖnh bµi s­ m«n vµ MËt tŞch",0);
-		Msg2Faction(FactionBook[nRoute][4], "§Ö tö"..GetName().." Hoµn thµnh nhiÖm vô s­ m«n nhËn ®­îc LÖnh bµi s­ m«n vµ MËt tŞch");
+		Msg2Faction(FactionBook[nRoute][4], "Disciple"..GetName().." Hoµn thµnh nhiÖm vô s­ m«n nhËn ®­îc LÖnh bµi s­ m«n vµ MËt tŞch");
 	end;
 	
 	-- Ôö¼Ó 2 µãÉùÍû
@@ -529,10 +529,10 @@ local strMain   = "";
 
 	if (nTaskType==2) then
 		strInfo = tabTask:getCell(nRow, "GoodsName");
-		strMain = "§i thu thËp <color=yellow> "..strInfo.." <color>.";
+		strMain = "Go collect <color=yellow>"..strInfo.." <color>.";
 	elseif (nTaskType==3) then
 		strInfo = tabTask:getCell(nRow, "KillNpc");
-		strMain = "§i giÕt <color=yellow> "..strInfo.." <color>.";	
+		strMain = "Go kill <color=yellow>"..strInfo.." <color>.";	
 	end;
 	
 	return strMain;

@@ -120,7 +120,7 @@ function tStage_5:OnBossDeath(npcIdx)
 	end
 	--Observer:onTeamEvent(SYSEVENT_LIANGSHAN_STAGE_FINISH, nBossCount)
 	FireEvent("event_mission_stage_finish", "liangshan", nBossCount)
-	TriggerTeamMisEvent("event_mission_passstage", "L­¬ng S¬n", nBossCount);
+	TriggerTeamMisEvent("event_mission_passstage", "Liangshan", nBossCount);
 end
 
 function tStage_5:GameOver()

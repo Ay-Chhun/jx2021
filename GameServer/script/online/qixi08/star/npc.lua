@@ -10,11 +10,11 @@ function aoyun_star_main()
 	local nYear1,nMonth1,nDay1 = QX08_GetDate(g_nQiXiBeginDate);
 	local nYear2,nMonth2,nDay2 = QX08_GetDate(g_nQiXiEndDate);
 	if nDate < g_nQiXiBeginDate then
-		Talk(1,"",g_szInfoHead.."Thêi gian ho¹t ®éng <color=yellow>"..nYear1.."niªn"..nMonth1.."NguyÖt"..nDay1.." ®Õn "..nYear2.."niªn"..nMonth2.."NguyÖt"..nDay2.."<color>, vŞ thiÕu hiÖp nµy ®Õn lóc nhí ghĞ l¹i xem.");
+		Talk(1,"",g_szInfoHead.."Thêi gian ho¹t ®éng <color=yellow>"..nYear1.."year"..nMonth1.."NguyÖt"..nDay1.." to"..nYear2.."year"..nMonth2.."NguyÖt"..nDay2.."<color>, vŞ thiÕu hiÖp nµy ®Õn lóc nhí ghĞ l¹i xem.");
 		return 0;
 	end;
 	if nDate > g_nQiXiEndDate then
-		Talk(1,"",g_szInfoHead.."Thêi gian lÇn ho¹t ®éng nµy lµ <color=yellow>"..nYear1.."niªn"..nMonth1.."NguyÖt"..nDay1.." ®Õn "..nYear2.."niªn"..nMonth2.."NguyÖt"..nDay2.."<color>, hiÖn ®· qu¸ thêi gian ho¹t ®éng, xin lÇn sau quay l¹i.");
+		Talk(1,"",g_szInfoHead.."Thêi gian lÇn ho¹t ®éng nµy lµ <color=yellow>"..nYear1.."year"..nMonth1.."NguyÖt"..nDay1.." to"..nYear2.."year"..nMonth2.."NguyÖt"..nDay2.."<color>, hiÖn ®· qu¸ thêi gian ho¹t ®éng, xin lÇn sau quay l¹i.");
 		return 0;
 	end;
 	local selTab = {
@@ -32,7 +32,7 @@ function aoyun_star_get_star_map()
 	local nDate = tonumber(date("%Y%m%d"));
 	if nDate > GetTask(TSK_AOYUN_STAR_DATE) then
 		local selTab = {
-					"§­îc!/aoyun_star_get_star_map_1",
+					"Yes!/aoyun_star_get_star_map_1",
 					"L¸t n÷a ta sÏ quay l¹i nhËn/nothing",
 					}
 		Say(g_szInfoHead.."Ng­êi h÷u t©m cã thÓ dùa vµo ®Şa ®å ®Ó t×m ra ng«i sao b¨ng cña m×nh. §©y chİnh lµ 'Tinh Tinh §Şa §å' trong truyÒn thuyÕt, xin c¸c h¹ nhËn lÊy.",getn(selTab),selTab);
@@ -54,7 +54,7 @@ end;
 
 function aoyun_star_compose_big_star()
 	local selTab = {
-				"§­îc/aoyun_star_compose_big_star_1",
+				"Yes/aoyun_star_compose_big_star_1",
 				"Tinh Tinh Chi V­¬ng lµ g× vËy/aoyun_star_know_big_star",
 				"Ta ®îi c¸c h¹ quay l¹i/nothing",
 				}

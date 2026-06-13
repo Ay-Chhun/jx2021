@@ -19,7 +19,7 @@ function MS_InitMission()
 	GCZ_CreateTrap(nBattleMapID);
 	GCZ_InitTrap();	--Èý¸ö³ÇÃÅË«·½¾ù¿ÉÍ¨¹ýÖ±µ½Ä³Ò»·½ÅÉÈË×¤ÊØºó
 	GCZ_CreateNpc(nBattleMapID);
-	WriteLog("[C«ng thµnh C«ng thµnh chiÕn]: 1 trËn Mission ®· b¾t®Çu, MSUID lµ: "..nMSUID..". Phe c«ng: "..szGongName.."; Phe thñ: "..szShouName);
+	WriteLog("[C«ng thµnh C«ng thµnh chiÕn]: 1 trËn Mission ®· b¾t®Çu, MSUID lµ: "..nMSUID..". Phe c«ng: "..szGongName.."; Defending faction:"..szShouName);
 end;
 --Mission¿ªÊ¼
 function MS_StartMission()
@@ -101,7 +101,7 @@ function MS_JoinMission(nCamp)
 	else
 		AddMSPlayer(MISSION_ID,nCamp);
 	end;
-	Msg2MSAll(MISSION_ID,"§¹i hiÖp"..GetName().." ®· gia nhËp "..tCampNameZ[nCamp]);
+	Msg2MSAll(MISSION_ID,"§¹i hiÖp"..GetName().." has joined"..tCampNameZ[nCamp]);
 	MS_SetPlayerState();
 	if nCamp == GONG_ID then
 		SetTask(TNC_CAMP_TIME, 0);
@@ -120,7 +120,7 @@ function MS_ProcessReadyTimer()
 		RunMission(MISSION_ID);
 	else
 		SetMissionV(MV_TIMER_LOOP,nLoop-1);
-		Msg2MSAll(MISSION_ID,GetMissionS(MS_CITY_NAME).." chiÕn sù cßn "..(nLoop*READY_TIMER_INTERVAL).." phót n÷a sÏ b¾t ®Çu ");
+		Msg2MSAll(MISSION_ID,GetMissionS(MS_CITY_NAME).." chiÕn sù cßn "..(nLoop*READY_TIMER_INTERVAL).." minutes more before it begins");
 	end;
 end;
 --¹¥ÃÅ½×¶Î¼ÆÊ±Æ÷
@@ -140,7 +140,7 @@ function MS_ProcessGongMenTimer()
 		GCZ_Msg2Camp("C«ng thµnh ®¹i ph¸o ®­îc khai háa, thµnh m«n bÞ ph¸ hñy hoµn toµn",ALL_ID);
 	else
 		SetMissionV(MV_TIMER_LOOP,nLoop-1);
-		Msg2MSAll(MISSION_ID,"C¸ch thêi gian C«ng thµnh ®¹i ph¸o cßn "..(nLoop*GONGMEN_TIMER_INTERVAL).." phót ");
+		Msg2MSAll(MISSION_ID,"C¸ch thêi gian C«ng thµnh ®¹i ph¸o cßn "..(nLoop*GONGMEN_TIMER_INTERVAL).." minutes");
 	end;
 end;
 --¹¥³Ç½×¶Î¼ÆÊ±Æ÷
@@ -156,7 +156,7 @@ function MS_ProcessGongChengTimer()
 		local _,nCityMapID = GCZ_GetCityInfo(nBattleMapID);
 		if GetMissionV(MV_LONGZHU_FLAG) == 2 then	--¹¥³Ç·½Ó®ÁË
 			SetCityWarWinner(nCityMapID,GetMissionS(MS_GONG_TONG_NAME));
-			szResult = "C«ng thµnh chiÕn ®· kÕt thóc, cuèi cïng bang héi <color=yellow>"..GetMissionS(MS_GONG_TONG_NAME).."<color> chiÕm lÜnh thµnh c«ng (do bang héi <color=red>"..GetMissionS(MS_SHOU_TONG_NAME).."<color> thñ vÖ) <color=green>"..GetMissionS(MS_CITY_NAME).."<color>.";
+			szResult = "C«ng thµnh chiÕn ®· kÕt thóc, cuèi cïng bang héi <color=yellow>"..GetMissionS(MS_GONG_TONG_NAME).."<color> chiÕm lÜnh thµnh c«ng (do bang héi <color=red>"..GetMissionS(MS_SHOU_TONG_NAME).."<color>) <color=green>"..GetMissionS(MS_CITY_NAME).."<color>.";
 			GCZ_PlaySound(GONG_ID,"¹¥³ÇÕ½Ê¤Àû.wav");
 			GCZ_PlaySound(SHOU_ID,"¹¥³ÇÕ½Ê§°Ü.wav");
 			SetMissionV(MV_WAR_RESULT,GONG_ID);	--ÉèÖÃ½á¹û
@@ -187,10 +187,10 @@ function MS_ProcessGongChengTimer()
 		Msg2Global(sf_RemoveTag(szResult,"<",">"));
 		PlayMusic("\\music\\themusicisnotexist.mp3",1);
 		Msg2MSAll(MISSION_ID,"C«ng thµnh chiÕn ®· kÕt thóc, mäi ng­êi rêi khái chiÕn tr­êng th«i");
-		WriteLog("[c«ng thµnh C«ng thµnh chiÕn]:"..sf_RemoveTag(szResult,"<",">").."MSUID lµ "..GetMissionV(MV_MISSION_UID));
+		WriteLog("[c«ng thµnh C«ng thµnh chiÕn]:"..sf_RemoveTag(szResult,"<",">").."MSUID is"..GetMissionV(MV_MISSION_UID));
 	else
 		SetMissionV(MV_TIMER_LOOP,nLoop-1);
-		Msg2MSAll(MISSION_ID,"Thêi gian c«ng thµnh cßn "..(nLoop*GONGMEN_TIMER_INTERVAL).." phót ");
+		Msg2MSAll(MISSION_ID,"Thêi gian c«ng thµnh cßn "..(nLoop*GONGMEN_TIMER_INTERVAL).." minutes");
 	end;
 end;
 --´¦ÀíµÈ´ý½áÊøµÄ¼ÆÊ±Æ÷º¯Êý
@@ -200,7 +200,7 @@ function MS_ProcessEndingTimer()
 		CloseMission(MISSION_ID);
 	else
 		SetMissionV(MV_TIMER_LOOP,nLoop-1);
-		Msg2MSAll(MISSION_ID,"H«n lÔ s¾p kÕt thóc, chØ cßn"..(nLoop*ENDING_TIMER_INTERVAL).." phót ");
+		Msg2MSAll(MISSION_ID,"H«n lÔ s¾p kÕt thóc, chØ cßn"..(nLoop*ENDING_TIMER_INTERVAL).." minutes");
 	end;
 end;
 --µÇÂ½´¥·¢Æ÷º¯Êý

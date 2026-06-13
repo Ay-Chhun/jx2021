@@ -12,11 +12,11 @@ g_szFileName = "lantern.lua"					--ÎÄ¼þÃû
 g_tbItem = 
 {
 	--		"Ãû³Æ",		G1,	G2,	G3,		¸ÅÂÊ
-	[1] = {"Lé thñy",		2,	0,	351,	30	},
-	[2] = {"C©y B¸t Nh·",	2,	0,	398,	5	},
-	[3] = {"C©y B¸t Nh· nhá",2,	0,	504,	10	},
-	[4] = {"M¶nh B¨ng th¹ch",	2,	1,	148,	2	},
-	[5] = {"B¨ng th¹ch",		2,	1,	149,	5	},
+	[1] = {"Dew Water",		2,	0,	351,	30	},
+	[2] = {"Prajna Tree",	2,	0,	398,	5	},
+	[3] = {"Small Prajna Tree",2,	0,	504,	10	},
+	[4] = {"Ice Stone Fragment",	2,	1,	148,	2	},
+	[5] = {"Ice Stone",		2,	1,	149,	5	},
 	[6] = {"M¶nh Thiªn th¹ch",	2,	2,	7,		2	},
 	[7] = {"Thiªn th¹ch",		2,	2,	8,		5	},
 }

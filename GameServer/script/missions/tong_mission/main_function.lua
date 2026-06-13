@@ -11,7 +11,7 @@ function TM_GetFieldInfo(nAreaIdx,nFieldIdx)
 	local nFieldMapID = TM_GetFieldMapID(nMapID,nAreaIdx,nFieldIdx);
 	local nMisstionState = mf_GetMissionV(MISSION_ID,MV_MISSION_STATE,nFieldMapID);
 	if nMisstionState == MS_STATE_IDEL then
-		return nMisstionState,0,"R¶nh rçi";
+		return nMisstionState,0,"Idle";
 	else
 		szTongName = mf_GetMissionS(MISSION_ID,MS_TONG_NAME,nFieldMapID);
 		nStage = mf_GetMissionV(MISSION_ID,MV_STAGE,nFieldMapID);
@@ -24,9 +24,9 @@ function TM_GetFieldMapID(nCurMapID,nAreaIdx,nFieldIdx)
 end;
 --´´½¨³¡µØNPC
 function TM_CreateFieldNpc(nMapID)
-	local nNpcIdx = CreateNpc("V­¬ng An Th¹ch","Qu¶n lı ngo¹i ®­êng Tö Quang C¸c",nMapID,tPos_Out_Room[1],tPos_Out_Room[2]);
+	local nNpcIdx = CreateNpc("V­¬ng An Th¹ch","Manager of the Outer Hall of Purple Light Pavilion",nMapID,tPos_Out_Room[1],tPos_Out_Room[2]);
 	SetNpcScript(nNpcIdx,"\\script\\missions\\tong_mission\\npc\\npc_stage_manager.lua");
-	nNpcIdx = CreateNpc("V­¬ng An Th¹ch","Qu¶n lı néi ®­êng Tö Quang C¸c",nMapID,tPos_In_Room[1],tPos_In_Room[2]);
+	nNpcIdx = CreateNpc("V­¬ng An Th¹ch","Manager of the Inner Hall of Purple Light Pavilion",nMapID,tPos_In_Room[1],tPos_In_Room[2]);
 	SetNpcScript(nNpcIdx,"\\script\\missions\\tong_mission\\npc\\npc_stage_manager.lua");
 end;
 --»ñÈ¡ÕıÑ¡¡¢Ìæ²¹¡¢ÕıÑ¡ÖĞ°ï»áÁìµ¼µÄË÷Òıtable
@@ -125,7 +125,7 @@ end;
 --Çå³ıÄ¿±ê³ÇÊĞµÄËùÓĞ³¡µØĞÅÏ¢
 function TM_ClearFieldState(nCityMapID)
 	if SubWorldID2Idx(nCityMapID) >= 0 then
-		gf_ShowDebugInfor("B¶n ®å:"..nCityMapID.."TÊt c¶ nh÷ng th«ng tin liªn quan vÒ ¶i");
+		gf_ShowDebugInfor("Map:"..nCityMapID.."TÊt c¶ nh÷ng th«ng tin liªn quan vÒ ¶i");
 		for i,v in FTB_CITY[nCityMapID] do
 			for j=1,getn(v) do
 				SetMissionExValue(TONG_MISSIONEX,v[j],0);
@@ -148,7 +148,7 @@ end;
 --´´½¨Ò»¸ö¶Ô»°Ïä×Ó
 function TM_CreateBox(nStage)
 	local nMapID = SubWorldIdx2ID(SubWorld);
-	local nNpcIdx = CreateNpc("R­¬ng tiÒn","thø"..nStage.."R­¬ng cña ¶i",nMapID,1569,3175);
+	local nNpcIdx = CreateNpc("R­¬ng tiÒn","the"..nStage.."R­¬ng cña ¶i",nMapID,1569,3175);
 	TM_SetUnitCurStates(nNpcIdx,1,nStage);	--±ê¼ÇÕâ¸öÏä×ÓÊÇµÚ¼¸¹ØµÄ
 	SetNpcScript(nNpcIdx,"\\script\\missions\\tong_mission\\npc\\npc_box.lua");
 	SetMissionV(MV_GET_BOX,1);
@@ -157,7 +157,7 @@ end;
 --¹¦        ÄÜ£ºÖ±½ÓÉè¶¨NPCË÷ÒıÎ»ÖÃµÄÖµ
 function TM_SetUnitCurStates(Npc_index,att_seq,number)
 	if number > 99 and att_seq ~= 1 and att_seq ~= 4 and att_seq ~= 5 and att_seq ~= 6 then
-		print("ThiÕt lËp trŞ sè NPC nhÇm: VŞ trİ:"..att_seq.."TrŞ:"..number)
+		print("ThiÕt lËp trŞ sè NPC nhÇm: VŞ trİ:"..att_seq.."Value:"..number)
 		return 0
 	end
 	local num_save = GetUnitCurStates(Npc_index,att_seq)
@@ -170,7 +170,7 @@ function TM_CreateSubNpc(nCount)
 	local nNpcIdx = 0;
 	local nMapID = SubWorldIdx2ID(SubWorld);
 	for i=1,nCount do
-		nNpcIdx = CreateNpc("TiÓu qu¸i ë khu vùc bæ sung","VÖ binh ngo¹i ®­êng",nMapID,1536,3253,-1,1,1,200);
+		nNpcIdx = CreateNpc("TiÓu qu¸i ë khu vùc bæ sung","Outer Hall Guard",nMapID,1536,3253,-1,1,1,200);
 		SetNpcDeathScript(nNpcIdx,"\\script\\missions\\tong_mission\\stage\\death_sub_npc.lua");
 	end;
 end;
@@ -230,7 +230,7 @@ function TM_AddPoint(nPoint,nCurStage,tbPlayer)
         SetTask(VET_201009_00_TASK_TONGGUAN_ZIGUANG,1)
     end
 		SetTask(TSK_POINT,GetTask(TSK_POINT)+nP);
-		Msg2Player("Trong tuÇn nµy ®¹i hiÖp ®©y lµ lÇn thø "..nPassTimes.." v­ît ¶i "..%nCurStage..", cã thÓ thu ®­îc "..%nPoint.." ®iÓm quan ¶i, sau khi trõ xong cã sè ®iÓm thùc tÕ lµ "..nP.." ®iÓm quan ¶i");
+		Msg2Player("Trong tuÇn nµy ®¹i hiÖp ®©y lµ lÇn thø "..nPassTimes.." cleared"..%nCurStage..", cã thÓ thu ®­îc "..%nPoint.." ®iÓm quan ¶i, sau khi trõ xong cã sè ®iÓm thùc tÕ lµ "..nP.." ®iÓm quan ¶i");
 	end;
 	gf_OperatePlayers(tbPlayer,funAddPoint,{});
 end;
@@ -257,7 +257,7 @@ function TM_AddExpAward(nCurStage,tbPlayer)
 			local nExp = floor(GetLevel()^3*4);
 			local nExp2 = floor(nX*nExp);
 			ModifyExp(nExp2);
-			Msg2Player("Trong tuÇn nµy ®¹i hiÖp ®©y lµ lÇn thø "..nPassTimes.." v­ît ¶i "..%nCurStage..", cã thÓ thu ®­îc "..nExp.." kinh nghiÖm, sau khi trõ xong cã sè ®iÓm thùc tÕ lµ "..nExp2.." ®iÓm kinh nghiÖm");
+			Msg2Player("Trong tuÇn nµy ®¹i hiÖp ®©y lµ lÇn thø "..nPassTimes.." cleared"..%nCurStage..", cã thÓ thu ®­îc "..nExp.." kinh nghiÖm, sau khi trõ xong cã sè ®iÓm thùc tÕ lµ "..nExp2.." ®iÓm kinh nghiÖm");
 		end;
 	end;
 	gf_OperatePlayers(tbPlayer,funAddExp,{});
@@ -270,8 +270,8 @@ function TM_AddExpAward(nCurStage,tbPlayer)
 		if PlayerIndex == nArg then
 			nSuc = AddItem(2,1,31120,1)
 			if nSuc == 1 then
-				Msg2Global("Chóc mõng b¹n"..GetName().."nhËn ®­îc 1 §«n Hoµng HuyÒn Tinh ë Tö Quang C¸c.")
-				Msg2All("Chóc mõng b¹n"..GetName().."nhËn ®­îc 1 §«n Hoµng HuyÒn Tinh ë Tö Quang C¸c.")
+				Msg2Global("Congratulations"..GetName().."nhËn ®­îc 1 §«n Hoµng HuyÒn Tinh ë Tö Quang C¸c.")
+				Msg2All("Congratulations"..GetName().."nhËn ®­îc 1 §«n Hoµng HuyÒn Tinh ë Tö Quang C¸c.")
 			end
 		end
 	end
@@ -304,7 +304,7 @@ function TM_GetNpcFaction(nNpcIdx)
 		return 7;
 	elseif szPreName == "C«n L«n ¶nh Tö Hé VÖ" then
 		return 8;
-	elseif szPreName == "nh Tö Hé VÖ Minh Gi¸o" then
+	elseif szPreName == "Anh Shadow Guardian Ming Cult" then
 		return 9;
 	elseif szPreName == "Thóy Yªn ¶nh Tö Hé VÖ" then
 		return 10;

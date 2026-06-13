@@ -15,15 +15,15 @@ function OnUse()
 	4,
 	"Xem tiÕn triÓn ho¹t ®éng/player_step_inq",
 	"Xem néi dung ho¹t ®éng./tomb_sweep_2007_inf",
-	"TiÕt Thanh Minh/tomb_sweep_story",
-	"§ãng h­íng dÉn/end_dialog"
+	"Qingming Festival/tomb_sweep_story",
+	"Close guide/end_dialog"
 	)
 end
 --************************»î¶¯½øÕ¹²éÑ¯***************************
 function player_step_inq()
-	local kotowl_today_chk = "Ch­a b¸i tÕ!"
+	local kotowl_today_chk = "Not yet worshipped!"
 	if GetTask(tomb_sweep_2007_date_seq) >= zgc_pub_day_turn(1) then
-		kotowl_today_chk = "§· b¸i tÕ"
+		kotowl_today_chk = "Already worshipped"
 	end
 	local totowl_times_count = GetTask(tomb_sweep_2007_times_count)
 	if totowl_times_count == nil then
@@ -46,7 +46,7 @@ function player_step_inq()
 			"    <color=yellow>NhiÖm vô<color>: T×m 1 chu«i <color=yellow>HuyÒn thiÕt träng kiÕm<color> vµ 1 chu«i <color=yellow>Ph¸ Thiªn kİch<color> sau ®ã quay vÒ Hµn gia nh©n phôc mÖnh. \n <color=yellow>PhÇn th­ëng: 35% x¸c suÊt nh©n ®«i<color> ®iÓm søc kháe chuyÓn thµnh kinh nghiÖm hoÆc <color=yellow>65% x¸c suÊt<color> gÊp <color=yellow>1.75<color> lÇn ®iÓm søc kháe chuyÓn thµnh kinh nghiÖm. ",
 			"    <color=yellow>Néi dung nhiÖm vô: Tiªu Tiªn Tö<color> ë <color=yellow>Thanh ¢m ®éng<color> mª hoÆc kh«ng İt nh©n sÜ vâ l©m, ®i ®¸nh b¹i mét trong <color=yellow>30<color> ng­êi sau ®ã quay vÒ <color=yellow>Hµn gia nh©n<color> phôc mÖnh. \n <color=yellow>PhÇn th­ëng: 100%<color> gÊp <color=yellow>1.5<color> ®iÓm søc kháe chuyÓn thµnh kinh nghiÖm."
 			}
-		Talk(1,"","NhiÖm vô hiÖn t¹i: \n H«m nay b¹n"..kotowl_today_chk.."HiÖp Chñng. \nHiÖn b¹n nhËn mËt ®å nhiÖm vô thø <color=yellow>"..task_diff.."<color>, tin tøc: \n"..task_reel_table[task_diff])
+		Talk(1,"","NhiÖm vô hiÖn t¹i: \n H«m nay b¹n"..kotowl_today_chk.."HiÖp Chñng. \nHiÖn b¹n nhËn mËt ®å nhiÖm vô thø <color=yellow>"..task_diff.."<color>, news: \n"..task_reel_table[task_diff])
 	else
 		Talk(1,"","NhiÖm vô hiÖn t¹i: \n H«m nay b¹n"..kotowl_today_chk.."HiÖp Chñng. \nHiÖn b¹n ch­a nhËn mËt ®å nhiÖm vô TiÕt Thanh Minh!")
 	end

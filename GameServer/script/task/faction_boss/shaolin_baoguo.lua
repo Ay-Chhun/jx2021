@@ -21,8 +21,8 @@ function OnUse()
 
 	Say("B¹n x¸c ®Þnh më tói quµ nµy chø?",
 		2,
-		"§ång ý/confirm_get",
-		"Hñy bá/cancel_dialog")
+		"Agree/confirm_get",
+		"Cancel/cancel_dialog")
 end;
 
 -- ÍË³ö¶Ô»°

@@ -1,6 +1,6 @@
 DebugOutput = nothing;
 ------------------------------------------------------
-TM_TONG_AD_NPC = "<color=green> §¹i Sø Bang Héi: <color>";
+TM_TONG_AD_NPC = "<color=green> Guild Grand Envoy: <color>";
 
 SIEGE_MAP_ID = 300		-- ³É¶¼
 SIEGE_MAP_NAME = "Thµnh §«"
@@ -130,8 +130,8 @@ TM_RANDOM_EVENT_POS = {
 TM_RANMDOM_EVEN_NPC = {
 	[1] = {"TF_qiangkuang", "V« óy Th­¬ng Cuång", 0},
 	[2] = {"TF_niutou", "NhiÕp Hån Ng­u §Çu", 0},
-	[3] = {"TF_nubing", "Hé Linh Næ Binh", 0},
-	[4] = {"TF_zhufujitan", "Tø Linh Chóc Phóc TÕ §µn", 1},
+	[3] = {"TF_nubing", "Spirit Guard Slave Soldier", 0},
+	[4] = {"TF_zhufujitan", "Four Spirits Blessing Altar", 1},
 	[5] = {"TF_shouhujitan", "Tø Linh Thñ Hé TÕ §µn", 1},
 	[6] = {"Gi¸ vò khÝ", "Gi¸ vò khÝ", 0},
 	[7] = {"Gi¸ khiªn", "Gi¸ khiªn", 0},
@@ -164,7 +164,7 @@ TM_TMZ_BUFF = {
 		tbuff = {
 			{"state_illusion_latent", 100, 60}, 
 		},                                 
-		Msg = "Tµng h×nh, kÐo dµi 60 gi©y",	
+		Msg = "Invisibility, lasts 60 seconds",	
 	},					  			  
 };
 --

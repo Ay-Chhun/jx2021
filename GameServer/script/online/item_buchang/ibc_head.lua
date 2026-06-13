@@ -42,7 +42,7 @@ function ibc_PlayerLogin()
 		return 0;
 	end
 	IBC_TASK_MANAGE:SetTask(IBC_TASK_MANAGE.AwardTag, 1);
-	gf_AddItemEx2({2, 1, 30733, 1, 4}, "Tói quµ ®Òn bï", "§Òn bï hack item", "Tói quµ ®Òn bï", 7 * 24 * 3600, 1);
+	gf_AddItemEx2({2, 1, 30733, 1, 4}, "Compensation gift bag", "Compensation hack item", "Compensation gift bag", 7 * 24 * 3600, 1);
 end
 
 function ibc_RelayCallBoss(nRandomSeed)
@@ -52,7 +52,7 @@ function ibc_RelayCallBoss(nRandomSeed)
 
 	Msg2Global("¤ng Chñ TrÇn mang ®Õn rÊt nhiÒu phÇn quµ,ë B¾c TuyÒn Ch©u (189,197) ®Ó ®Òn bï cho c¸c b¹n.")
 	if SubWorldID2Idx(IBC_MAPID) ~= -1 then
-		local npcIndex = CreateNpc("BC_huanglaoban", "¤ng Chñ TrÇn", IBC_MAPID, IBC_MAP_X, IBC_MAP_Y);
+		local npcIndex = CreateNpc("BC_huanglaoban", "Boss Tran", IBC_MAPID, IBC_MAP_X, IBC_MAP_Y);
 		if npcIndex > 0 then
 			SetNpcDeathScript(npcIndex, "\\script\\online\\item_buchang\\boss_death.lua");
 			SetNpcLifeTime(npcIndex, 30 * 60);

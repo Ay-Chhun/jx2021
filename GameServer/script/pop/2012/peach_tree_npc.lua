@@ -4,12 +4,12 @@ Include("\\script\\task\\global_task\\gtask_head.lua");
 
 tInfo = {--¡¾NPC name¡¿={{taskid,},[{item info}],"item name",[sTalkMsg]} 
 	["ThuËn theo tù nhiªn"] = {{927},			{2,96,122,1,4},	"ThuËn theo tù nhiªn",	"Nh©n ph¸p ®Şa, ®Şa ph¸p thiªn, thiªn ph¸p ®¹o, ®¹o ph¸p tù nhiªn. V¹n vËt ®Òu cã ®¹o, chóng ta nªn thuËn theo tù nhiªn, mäi thø ®Òu cã nh©n qu¶, kh«ng nªn nghŞch theo ı trêi. <color=yellow>Ng­¬i chän ®óng råi, ®©y chİnh lµ gi¸o lı cña §¹o Gia<color>.",},
-	["Kiªm tÕ thiªn h¹"] = {{927},			nil,						"",					"Xem ra ng­¬i vÉn ch­a hiÓu râ gi¸o lı cña chóng ta, <color=red>®©y kh«ng ph¶i lµ gi¸o lı cña §¹o Gia<color>.",},
+	["Save the world"] = {{927},			nil,						"",					"Xem ra ng­¬i vÉn ch­a hiÓu râ gi¸o lı cña chóng ta, <color=red>®©y kh«ng ph¶i lµ gi¸o lı cña §¹o Gia<color>.",},
 	["Tõ bi lµm ®Çu"] = {{927},			nil,						"",					"Xem ra ng­¬i vÉn ch­a hiÓu râ gi¸o lı cña chóng ta, <color=red>®©y kh«ng ph¶i lµ gi¸o lı cña §¹o Gia<color>.",},
 	["Tr­êng sinh bÊt l·o"] = {{927},			{2,96,125,1,4},	"Tr­êng sinh bÊt l·o",	"Tr­êng sinh bÊt l·o chi ®¹o, cè trİ gi¶ d­ìng sinh d·. Th©n thÓ lµ vèn cña t©m linh, qu©n tö d­ìng sinh, kĞo dµi tuæi thä.<color=yellow>Ng­¬i chän ®óng råi, ®©y chİnh lµ gi¸o lı cña §¹o Gia<color>.",},
-	["Thanh tŞnh v« vi"] = {{927},			{2,96,126,1,4},	"Thanh tŞnh v« vi",	"Tù c­ vu v« tri, nhi dÜ chóng nh©n chi së tri vi tri; tù xö vu v« n¨ng, nhi dÜ chóng nh©n chi së n¨ng vi n¨ng; tù an vu v« vi, nhi dÜ chóng nh©n chi së vi vi vi. Phµm s¸t s¸t dÜ vi minh, táa táa dÜ vi n¨ng, ®« bÊt thŞ chİ minh chi ®¹o. <color=yellow>Ng­¬i chän ®óng råi, ®©y chİnh lµ gi¸o lı cña §¹o Gia<color>.",},
-	["Trİ h­ thñ tÜnh"] = {{927},			{2,96,127,1,4},	"Trİ h­ thñ tÜnh",	"V¹n vËt tŞnh t¸c, ng« dÜ quan phôc. Phu vËt v©n v©n, c¸c phôc quy tÒ c¨n. Quy c¨n viÕt tÜnh, thŞ viÕt phôc mÖnh. Phôc mÖnh viÕt th­êng, tri th­êng viÕt minh. <color=yellow>Ng­¬i chän ®óng råi, ®©y chİnh lµ gi¸o lı cña §¹o Gia<color>.",},
-	["NiÕt bµn trïng sinh"] = {{927},			nil,						"",					"Xem ra ng­¬i vÉn ch­a hiÓu râ gi¸o lı cña chóng ta, <color=red>®©y kh«ng ph¶i lµ gi¸o lı cña §¹o Gia<color>.",},
+	["Purity and non-action"] = {{927},			{2,96,126,1,4},	"Purity and non-action",	"Tù c­ vu v« tri, nhi dÜ chóng nh©n chi së tri vi tri; tù xö vu v« n¨ng, nhi dÜ chóng nh©n chi së n¨ng vi n¨ng; tù an vu v« vi, nhi dÜ chóng nh©n chi së vi vi vi. Phµm s¸t s¸t dÜ vi minh, táa táa dÜ vi n¨ng, ®« bÊt thŞ chİ minh chi ®¹o. <color=yellow>Ng­¬i chän ®óng råi, ®©y chİnh lµ gi¸o lı cña §¹o Gia<color>.",},
+	["Empty the mind, keep stillness"] = {{927},			{2,96,127,1,4},	"Empty the mind, keep stillness",	"V¹n vËt tŞnh t¸c, ng« dÜ quan phôc. Phu vËt v©n v©n, c¸c phôc quy tÒ c¨n. Quy c¨n viÕt tÜnh, thŞ viÕt phôc mÖnh. Phôc mÖnh viÕt th­êng, tri th­êng viÕt minh. <color=yellow>Ng­¬i chän ®óng råi, ®©y chİnh lµ gi¸o lı cña §¹o Gia<color>.",},
+	["Nirvana and rebirth"] = {{927},			nil,						"",					"Xem ra ng­¬i vÉn ch­a hiÓu râ gi¸o lı cña chóng ta, <color=red>®©y kh«ng ph¶i lµ gi¸o lı cña §¹o Gia<color>.",},
 	}
 function main()
 	local nNpcIdx = GetTargetNpc();

@@ -19,7 +19,7 @@ function OnTimer()
 			StartMissionTimer(MISSION_ID,WAITSTOP_TIMER_ID,WAITSTOP_TIME);
 			SetMissionV(MV_TIMELEFT,timeleft-1);
 			timeleft = timeleft*WAITSTOP_TIME/18;
-			Msg2MSAll(MISSION_ID," cﬂn "..timeleft.." gi©y trÀn Æ u k’t thÛc.");		
+			Msg2MSAll(MISSION_ID," cﬂn "..timeleft.." seconds until the race ends.");		
 		end;
 	else
 		StopMissionTimer(MISSION_ID,WAITSTOP_TIMER_ID);

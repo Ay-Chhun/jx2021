@@ -55,14 +55,14 @@ function is_get_award()
 	if fl_grow <= 30 and GetBit(GetTask(TASK_AWARD_ONE),fl_grow) == 0 then
 		str="ch­a";
 	elseif fl_grow <= 30 and GetBit(GetTask(TASK_AWARD_ONE),fl_grow) ~= 0 then
-		str="®· ";
+		str="already";
 	elseif fl_grow > 30 then
 		for i = 31,getn(tGrowAward) do
 			if fl_grow <= tGrowAward[i][1] and GetBit(GetTask(TASK_AWARD_TWO),i-30) == 0 then
 				str="ch­a";
 				break
 			elseif fl_grow <=tGrowAward[i][1] and GetBit(GetTask(TASK_AWARD_TWO),i-30) ~= 0 then 
-				str="®· ";
+				str="already";
 				break
 			end
 		end

@@ -9,8 +9,8 @@ function OnUse(nItemIdx)
 	local nLastTime = BT_GetData(PT_SPYCLOTH_TIME)
 	local nTimePassed = GetTime() - nLastTime;
 	local selTab = {
-				format("§ång ý/#use(%d)",nItemIdx),
-				"Hñy bá",
+				format("Agree/#use(%d)",nItemIdx),
+				"Cancel",
 				}
 	local sString = "";
 	if nTimePassed >= ITEM_SPYCLOTH_TIME then

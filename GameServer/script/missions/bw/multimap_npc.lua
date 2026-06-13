@@ -8,23 +8,23 @@ local strSay = {};
 	if GetMissionV(GAME_TYPE) == 1 then
 		strSay = {
 							"Thi ®Êu ®ang tæ chøc lµ QuÇn hïng chiÕn (trËn thø 1), ng­êi ch¬i tham gia thi ®Êu ®Òu cã thÓ nhËn ®­îc phÇn th­ëng ®iÓm søc kháe t­¬ng øng sau khi thi ®Êu kÕt thóc.",
-							"Rêi khái trËn ®Şa/LeaveTalk",
+							"Leave the battlefield/LeaveTalk",
 							"T×m hiÓu quy t¾c l«i ®µi/#Rule_Hundred(2)",
-							"Kh«ng cã g×/no"
+							"Nothing/no"
 							}
 	elseif GetMissionV(GAME_TYPE) == 2 then
 		strSay = 	{
 							"Thi ®Êu ®ang tæ chøc lµ QuÇn hïng chiÕn (trËn thø 2), ng­êi ch¬i tham gia thi ®Êu mçi lÇn ®¸nh b¹i ®èi thñ cã thÓ nhËn ®­îc phÇn th­ëng tiÒn nhÊt ®Şnh. §Êu thñ chiÕn th¾ng sau cïng sÏ nhËn ®­îc phÇn th­ëng phong phó.",
-							"Rêi khái trËn ®Şa/LeaveTalk",
+							"Leave the battlefield/LeaveTalk",
 							"T×m hiÓu quy t¾c l«i ®µi/#Rule_Hundred(3)",
-							"Kh«ng cã g×/no"
+							"Nothing/no"
 							}
 	else
 		strSay = {
 							"HiÕm khi cã dŞp ®Ó xem c¸c ®¹i hiÖp trªn giang hå biÓu diÔn vâ nghÖ, ®«i khi hä ph¶i ®¸nh ®æi c¶ gia tµi míi luyÖn thµnh. LÇn nµy ®óng dŞp may! Ch¼ng hay"..GetPlayerSex().."Cã cÇn g× kh«ng?",
-							"Rêi khái trËn ®Şa/LeaveTalk",
+							"Leave the battlefield/LeaveTalk",
 							"T×m hiÓu quy t¾c l«i ®µi/#Rule_Hundred(1)",
-							"Kh«ng cã g×/no"
+							"Nothing/no"
 							}
 	end
 
@@ -49,7 +49,7 @@ local nCamp = GetTaskTemp(PLAYER_CAMP)
 		DelMSPlayer(MULIT_MISSION_ID,MULIT_AUDIENCE_CAMP);		
 	--Ñ¡ÊÖÀë³¡	
 	elseif nCamp == 1 then
-		Msg2MSAll(GetName().." ®· rêi khái trËn ®Şa.");
+		Msg2MSAll(GetName().." has left the battlefield.");
 		DelMSPlayer(MULIT_MISSION_ID,MULIT_FIGTHER_CAMP);
 	end
 	

@@ -59,7 +59,7 @@ function soul_add()
 	--ÅĞ¶ÏÊÇ·ñÒÑ¾­¸½¼ÓÁËÁéÆÇ
 	local aptitude_name = GetBindedWeaponEffectName()
 	if aptitude_name  ~= "" then
-		Talk(1,"",Npc_name.."  "..weapon_nume.."§· cã <color=yellow>"..aptitude_name.."<color> Linh Ph¸ch, th¸o tr­íc råi h·y kİch ho¹t <color=yellow>Linh Ph¸ch<color>!")
+		Talk(1,"",Npc_name.."  "..weapon_nume.."Already have <color=yellow>"..aptitude_name.."<color> Linh Ph¸ch, th¸o tr­íc råi h·y kİch ho¹t <color=yellow>Linh Ph¸ch<color>!")
 		return
 	end
 	--³õÊ¼½øÈëÊı¾İÇåÀí
@@ -75,7 +75,7 @@ function aptitude_sel(aptitue_count,page_seq)
 	--Ö÷¶Ô»°ÄÚÈİÉú³É
 	local dia_main = Npc_name.."ChØ cã t­ chÊt t­¬ng øng míi cã thÓ kİch ho¹t <color=yellow>Linh Ph¸ch<color> t­¬ng øng. Sau khi bÇn ®¹o kİch ho¹t <color=yellow>Linh Ph¸ch<color>, nÕu muèn gäi hån chØ cÇn nhÊn 2 ch÷ <color=yellow>kİch ho¹t<color> trªn ch©n dung vò khİ lµ ®­îc. Ng­¬i cã t­ chÊt nµo? Sau khi chän xong nhí b¸o cho bÇn ®¹o mét tiÕng."
 	if aptitue_count ~= 0 then
-		dia_main = Npc_name.."Ta biÕt råi"..Zgc_pub_sex_name().." bÇn ®¹o ®· ghi nhí,  "..Zgc_pub_sex_name().."VÉn cßn t­ chÊt kh¸c sao? (Tæng linh lùc hiÖn t¹i lµ: <color=red>"..GetTaskTemp(Aptitue_cent_TasktempID).."<color>)"
+		dia_main = Npc_name.."Ta biÕt råi"..Zgc_pub_sex_name().." I have made a note of it,"..Zgc_pub_sex_name().."VÉn cßn t­ chÊt kh¸c sao? (Tæng linh lùc hiÖn t¹i lµ: <color=red>"..GetTaskTemp(Aptitue_cent_TasktempID).."<color>)"
 	end
 	--Ñ¡ÏîÉú³É
 	local dia_sel = {}
@@ -88,13 +88,13 @@ function aptitude_sel(aptitue_count,page_seq)
 		page_end = getn(Tb_aptitude_info)
 	end
 	if page_seq ~= 0 then
-		tinsert(dia_sel,"Trang tr­íc/#aptitude_sel("..aptitue_count..",0)")
+		tinsert(dia_sel,"Previous page/#aptitude_sel("..aptitue_count..",0)")
 	end
 	for i = page_start,page_end do
 		tinsert(dia_sel,Tb_aptitude_info[i][1].."/#aptitude_chk("..aptitue_count..","..i..")")
 	end
 	if page_seq == 0 then
-		tinsert(dia_sel,"Trang kÕ/#aptitude_sel("..aptitue_count..",1)")
+		tinsert(dia_sel,"Next page/#aptitude_sel("..aptitue_count..",1)")
 	end
 	tinsert(dia_sel,"Ta chän råi, t­ chÊt cña ta cã nhiªu ®©y th«i/#aptitude_dtm(0)")
 	tinsert(dia_sel,"§Ó ta suy nghÜ l¹i/end_dilaog")
@@ -165,7 +165,7 @@ function aptitude_dtm(page_seq)
 	local dia_sel = {}
 	local dia_sel_num = getn(magic_dia_sel)
 	if page_seq ~= 0 then
-		tinsert(dia_sel,"Trang tr­íc/#aptitude_dtm("..(page_seq - 1)..")")
+		tinsert(dia_sel,"Previous page/#aptitude_dtm("..(page_seq - 1)..")")
 	end
 	for i = (1+num_per_page * page_seq),min((num_per_page * (1 +page_seq)),dia_sel_num) do
 		tinsert(dia_sel,magic_dia_sel[i])
@@ -174,7 +174,7 @@ function aptitude_dtm(page_seq)
 	if dia_sel_num == (num_per_page + 1) then
 		tinsert(dia_sel,magic_dia_sel[dia_sel_num])
 	elseif dia_sel_num > (num_per_page + 1 + (num_per_page * page_seq)) then
-		tinsert(dia_sel,"Trang kÕ/#aptitude_dtm("..(page_seq + 1)..")")
+		tinsert(dia_sel,"Next page/#aptitude_dtm("..(page_seq + 1)..")")
 	end
 	tinsert(dia_sel,"§Ó ta suy nghÜ l¹i/end_dialog")
 	--¶Ô»°Õ¹¿ª
@@ -190,7 +190,7 @@ function magic_add(aptitude_seq)
 		3,
 		"§ång ı, ta ®· nghe râ lêi khuyÕn khİch cña ng­¬i/#magic_add_dtm("..aptitude_seq..")",
 		"Ta kh«ng cã vËt liÖu còng muèn kİch ho¹t Hµo M«n Linh Ph¸ch/use_money_consume",
-		"Kh«ng, ®Ó ta suy nghÜ ®·/end_dialog"
+		"No, let me think about it first/end_dialog"
 	)
 end
 --2208-5-20:Ôö¼ÓÓÃÇ®»½ĞÑºÀÃÅµÄ´¦Àí
@@ -202,7 +202,7 @@ function use_money_consume()
 	end
 	Say(Npc_name.."Kh«ng cã vËt liÖu còng ®­îc, nh­ng chi phİ kh¸ cao. CÇn tiªu hao <color=yellow>"..Tb_consume_money[Sever_diff].."<color> vµng, ®ång ı kİch ho¹t kh«ng?",
 		2,
-		"§ång ı!/use_money_dtm",
+		"Agreed!/use_money_dtm",
 		"Kh«ng, ta muèn suy nghÜ/end_dialog"
 	)
 end
@@ -240,7 +240,7 @@ function use_money_dtm()
 		end
 		return
 	else
-		WriteLog("HiÖu øng vò khİ: Ng­êi ch¬i["..GetName().."]g¾n thªm "..Tb_aptitude_info[aptitude_seq][7].."hiÖu øng thÊt b¹i!")
+		WriteLog("HiÖu øng vò khİ: Ng­êi ch¬i["..GetName().."]attached"..Tb_aptitude_info[aptitude_seq][7].."hiÖu øng thÊt b¹i!")
 	end
 end
 --Ôö¼Ó²Ù×÷
@@ -272,7 +272,7 @@ function magic_add_dtm(aptitude_seq)
 		end
 		return
 	else
-		WriteLog("HiÖu øng vò khİ: Ng­êi ch¬i["..GetName().."]g¾n thªm "..Tb_aptitude_info[aptitude_seq][7].."hiÖu øng thÊt b¹i!")
+		WriteLog("HiÖu øng vò khİ: Ng­êi ch¬i["..GetName().."]attached"..Tb_aptitude_info[aptitude_seq][7].."hiÖu øng thÊt b¹i!")
 	end
 end
 ------------------------------º³ÌìÏà¹Ø---------------------
@@ -293,7 +293,7 @@ function break_sky_dia()
 	Say(Npc_name.."Linh Ph¸ch ng­¬i muèn kİch ho¹t lµ: <color=red>H¸m Thiªn<color>; T­ chÊt cÇn lµ: <color=red>Ch­a râ<color>; Tiªu hao cÇn: "..aptitude_cost_string_build(5)..". Thêi gian Linh Ph¸ch tån t¹i: <color=yellow>30<color> ngµy. Ng­¬i cã thÓ nhÊn ch÷ 'Linh' trªn ch©n dung vò khhİ ®Ó kİch ho¹t Linh Ph¸ch. Chó ı: NÕu t­ chÊt kh«ng ®ñ ®iÒu kiÖn th× kh«ng thÓ kİch ho¹t, chØ khi ®ñ míi ®­îc. Ngoµi ra ph¶i yªu th­¬ng ThÇn binh cña ng­¬i, mét khi ®é bÒn lµ 0, Linh Ph¸ch sÏ biÕn mÊt, ph¶i ®Õn chç ta kİch ho¹t l¹i. Muèn kİch ho¹t Linh Ph¸ch nµy kh«ng?",
 		2,
 		"§ång ı, ta ®· nghe râ lêi khuyÕn khİch cña ng­¬i/break_sky_dtm",
-		"Kh«ng, ®Ó ta suy nghÜ ®·/end_dialog"
+		"No, let me think about it first/end_dialog"
 	)
 end
 --º³Ìì´¦Àí
@@ -325,7 +325,7 @@ end
 function aptitude_cost_string_build(aptitude_level)
 	local string_rtn = "<color=yellow>Kh«ng tiªu hao g×<color>"
 	if Tb_aptitude_cost_info[Sever_diff][aptitude_level][1] ~= 0 then
-		string_rtn ="<color=yellow>"..Tb_aptitude_cost_info[Sever_diff][aptitude_level][1].."<color> vµng; "
+		string_rtn ="<color=yellow>"..Tb_aptitude_cost_info[Sever_diff][aptitude_level][1].."<color> gold;"
 	end
 	if Tb_aptitude_cost_info[Sever_diff][aptitude_level][2]  ~= 0 then
 		string_rtn = string_rtn.."<color=yellow>"..Tb_aptitude_cost_info[Sever_diff][aptitude_level][2].."<color> <color=yellow>"..Tb_add_mertiral[Tb_aptitude_cost_info[Sever_diff][aptitude_level][3]][4].."<color>;"
@@ -364,7 +364,7 @@ function aptitude_cost_deal(deal_flag,aptitude_level)
 			end
 		end
 		if chk_flag == 0 then
-			Talk(1,"",Npc_name.."Ng­¬i mang <color=yellow>"..Tb_add_mertiral[Tb_aptitude_cost_info[Sever_diff][aptitude_level][3]][4].."<color> kh«ng ®ñ <color=yellow>"..Tb_aptitude_cost_info[Sever_diff][aptitude_level][2] .."<color> c¸i, ®Ó quªn trong r­¬ng µ?")
+			Talk(1,"",Npc_name.."You are carrying <color=yellow>"..Tb_add_mertiral[Tb_aptitude_cost_info[Sever_diff][aptitude_level][3]][4].."<color> kh«ng ®ñ <color=yellow>"..Tb_aptitude_cost_info[Sever_diff][aptitude_level][2] .."<color> c¸i, ®Ó quªn trong r­¬ng µ?")
 			return 0
 		end
 	end
@@ -446,7 +446,7 @@ function add_ability_dtm(point_diff)
 		Talk(1,"",Npc_name.."Chóc mõng kİch ho¹t Linh tİnh thµnh c«ng!")
 		return
 	else
-		WriteLog("HiÖu øng vò khİ: Ng­êi ch¬i["..GetName().."]g¾n thªm "..aptitude_level.."CÊp "..aptitude_diff.."T¨ng Linh tİnh thÊt b¹i!")
+		WriteLog("HiÖu øng vò khİ: Ng­êi ch¬i["..GetName().."]attached"..aptitude_level.."Level"..aptitude_diff.."T¨ng Linh tİnh thÊt b¹i!")
 	end
 end
 --ÁéÆÇµÈ¼¶»Øµ÷
@@ -485,7 +485,7 @@ function ability_cost_string_rtn(deal_diff)
 		attribute_level_real =  attribute_level_real - 4
 	end
 	local cost_string_rtn ="<color=yellow>"..Tb_lin_ability_info[deal_diff][1]..(Tb_lin_ability_info[deal_diff][2] + (Tb_lin_ability_info[deal_diff][3] * (attribute_level_real - 1))).."<color> ®iÓm, cÇn tiªu hao: "
-	cost_string_rtn = cost_string_rtn.."<color=yellow>"..Tb_ability_cost_num[Sever_diff][aptitude_level][deal_diff].."<color> vµng; "
+	cost_string_rtn = cost_string_rtn.."<color=yellow>"..Tb_ability_cost_num[Sever_diff][aptitude_level][deal_diff].."<color> gold;"
 	local mertiral_seq = 3
 	if deal_diff == 2 then
 		mertiral_seq = 5
@@ -515,20 +515,20 @@ function ability_cost_deal(deal_flag,deal_diff)
 	--²ÄÁÏĞ¯´ø¼ì²â
 	if deal_flag == 1 then
 		if GetCash() < (Tb_ability_cost_num[Sever_diff][aptitude_level][deal_diff]*10000)  then
-			Talk(1,"", Npc_name.."Ng­¬i mang <color=yellow>tiÒn vµng<color> kh«ng ®ñ <color=yellow>"..Tb_ability_cost_num[Sever_diff][aptitude_level][deal_diff].."<color> vµng")
+			Talk(1,"", Npc_name.."Ng­¬i mang <color=yellow>tiÒn vµng<color> kh«ng ®ñ <color=yellow>"..Tb_ability_cost_num[Sever_diff][aptitude_level][deal_diff].."<color> gold")
 			return 0
 		end
 		if GetItemCount(Tb_add_mertiral[mertiral_seq][1],Tb_add_mertiral[mertiral_seq][2],Tb_add_mertiral[mertiral_seq][3]) < Tb_ability_magic_goods_cost_num[Sever_diff][mertiral_seq][aptitude_level] then
-			Talk(1,"",Npc_name.."Ng­¬i mang <color=yellow>"..Tb_add_mertiral[mertiral_seq][4].."<color> kh«ng ®ñ <color=yellow>"..Tb_ability_magic_goods_cost_num[Sever_diff][mertiral_seq][aptitude_level].."<color>.")
+			Talk(1,"",Npc_name.."You are carrying <color=yellow>"..Tb_add_mertiral[mertiral_seq][4].."<color> kh«ng ®ñ <color=yellow>"..Tb_ability_magic_goods_cost_num[Sever_diff][mertiral_seq][aptitude_level].."<color>.")
 			return 0
 		end
 	else
 		if Pay(Tb_ability_cost_num[Sever_diff][aptitude_level][deal_diff]*10000) ~= 1  then
-			Talk(1,"", Npc_name.."Ng­¬i mang <color=yellow>tiÒn vµng<color> kh«ng ®ñ <color=yellow>"..Tb_ability_cost_num[Sever_diff][aptitude_level][deal_diff].."<color> vµng")
+			Talk(1,"", Npc_name.."Ng­¬i mang <color=yellow>tiÒn vµng<color> kh«ng ®ñ <color=yellow>"..Tb_ability_cost_num[Sever_diff][aptitude_level][deal_diff].."<color> gold")
 			return 0
 		end
 		if DelItem(Tb_add_mertiral[mertiral_seq][1],Tb_add_mertiral[mertiral_seq][2],Tb_add_mertiral[mertiral_seq][3],Tb_ability_magic_goods_cost_num[Sever_diff][mertiral_seq][aptitude_level]) ~= 1 then
-			Talk(1,"",Npc_name.."Ng­¬i mang <color=yellow>"..Tb_add_mertiral[mertiral_seq][4].."<color> kh«ng ®ñ <color=yellow>"..Tb_ability_magic_goods_cost_num[Sever_diff][mertiral_seq][aptitude_level].."<color>.")
+			Talk(1,"",Npc_name.."You are carrying <color=yellow>"..Tb_add_mertiral[mertiral_seq][4].."<color> kh«ng ®ñ <color=yellow>"..Tb_ability_magic_goods_cost_num[Sever_diff][mertiral_seq][aptitude_level].."<color>.")
 			return 0
 		end
 	end
@@ -552,7 +552,7 @@ function soul_del()
 		Talk(1,"main",Npc_name.."<color=yellow>Vò khİ<color> cña b¹n ®· bŞ khãa, më khãa tr­íc råi míi ®Õn bÇn ®¹o th­¬ng l­îng xãa bá Linh Ph¸ch!")
 		return
 	end
-	Say(Npc_name.."Muèn xáa bá Linh Ph¸ch <color=yellow>"..aptitude_name.."<color> kh«ng? NÕu xãa Linh tİnh còng mÊt theo! Ng­¬i cã thÓ suy nghÜ kü!",
+	Say(Npc_name.."Do you want to remove the Spirit Aura <color=yellow>"..aptitude_name.."<color> kh«ng? NÕu xãa Linh tİnh còng mÊt theo! Ng­¬i cã thÓ suy nghÜ kü!",
 		2,
 		"Ta suy nghÜ råi/soul_del_dtm",
 		"Kh«ng, ta muèn nghÜ l¹i/end_dialog"
@@ -619,7 +619,7 @@ function ability_del_dtm()
 	local ability_num,tb_ability_id = GetWeaponEffectAttributes()
 	for i = 1 ,getn(tb_ability_id)  do
 		RemoveWeaponEffectAttribute(tb_ability_id[i].id)
-		WriteLog("Linh tİnh kÌm theo: Ng­êi ch¬i["..GetName().."]®· xãa "..tb_ability_id[i].id.."Linh Ph¸ch!")
+		WriteLog("Linh tİnh kÌm theo: Ng­êi ch¬i["..GetName().."]has removed"..tb_ability_id[i].id.."Spirit Aura!")
 	end
 	Msg2Player("B¹n ®· xãa thµnh c«ng Linh tİnh trªn vò khİ hiÖn t¹i!")
 end
@@ -632,7 +632,7 @@ function soul_info()
 		"TrŞ sè, thuéc tİnh, ®¼ng cÊp Linh tİnh/Say1_4_4",
 		"VËt liÖu cÇn ®Ó kİch ho¹t Linh tİnh/Say1_4_5",
 		"Ta muèn tra ®iÓm tİch lòy tiªu dïng cña m×nh/Say_1_4_6",
-		"Kh«ng t×m hiÓu/main"
+		"Do not want to learn/main"
 	}
 	Say(Npc_name.."Ng­¬i muèn t×m hiÓu g×?",
 		getn(tb_dia),
@@ -648,7 +648,7 @@ function Say1_4_2(att_seq)
 	local for_num_min = ((att_seq -1) * 5 +1)
 	local for_num_max = min((for_num_min + 4),getn(Tb_aptitude_info))
 	for i = for_num_min ,for_num_max do
-		attitude_string =attitude_string.. "\n<color=yellow>"..Tb_aptitude_info[i][3].."<color>: Linh lùc "..Tb_aptitude_info[i][5].." ®iÓm, ®iÒu kiÖn "..Tb_aptitude_info[i][6]..", thêi h¹n "..Tb_aptitude_info[i][8].." ngµy."
+		attitude_string =attitude_string.. "\n<color=yellow>"..Tb_aptitude_info[i][3].."<color>: Spirit power"..Tb_aptitude_info[i][5].." ®iÓm, ®iÒu kiÖn "..Tb_aptitude_info[i][6]..", valid until"..Tb_aptitude_info[i][8].." ngµy."
 	end
 	if for_num_max == getn(Tb_aptitude_info) then
 		attitude_string = attitude_string.."\n<color=red>H¸m Thiªn, chïm s¸ng sÊm sĞt tİm lam (Linh Ph¸ch cÊp 5)<color>: Yªu cÇu trŞ cung cÊp cho Linh Ph¸ch ®¹t ®Õn hoÆc v­ît qua <color=red>26<color>, thêi h¹n 30 ngµy!"
@@ -1217,11 +1217,11 @@ function confirm_soul_upgrade(nType)
 	
 	local tSoulType =
 	{
-		[1] = "Danh Tóc",
-		[2] = "§µo Lı",
-		[3] = "TuÊn DËt",
-		[4] = "Ch­íc NhËt",
-		[5] = "B¸ch ChiÕn",
+		[1] = "Danh Tuc",
+		[2] = "Dao Ly",
+		[3] = "Tuan Dat",
+		[4] = "Chuoc Nhat",
+		[5] = "Bach Chien",
 	}
 	
 	if DelItem(2,1,30230, 70) == 1 and Pay(2000000) == 1 then

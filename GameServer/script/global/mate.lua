@@ -38,7 +38,7 @@ function UpdateLove(interval)	--“ª∑÷÷”µ˜”√“ª¥Œ
 				return
 			end
 			-- DEBUG
-			print(format("T®ng [%s] trﬁ ÆÂng t©m: %d", GetName(), love))
+			print(format("Increase [%s] concentration value: %d", GetName(), love))
 			SetTask(TASK_LOVEGRADE, love)
 			SetTask(TASK_INCLOVE_TIME, 0)
 		else

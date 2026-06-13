@@ -19,14 +19,14 @@ tbKillNpcWeekly.tbAward =
 	tbCost = 
 	{
 		{2, 1, 30926, 3000, "X¹ h­¬ng"},
-		{2, 1, 30927, 3000, "tói th¬m"},
+		{2, 1, 30927, 3000, "Scented Pouch"},
 		{2, 1, 30603, 223, "Tiªu Dao Ngäc"},
 	},
 	tbPrize = 
 	{
 		{"Exp", 150000000},
-		{2, 1, 30931, 50, "n­íc hoa nång nµn"},
-		{2, 1, 30785, 111, "V« Tù Kinh Th­"},
+		{2, 1, 30931, 50, "Intense Perfume"},
+		{2, 1, 30785, 111, "Wordless Scripture"},
 	}
 }
 

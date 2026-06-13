@@ -81,12 +81,12 @@ function use_real_1(nCount)
 				return
 			else
 		
-				Say("X¸c nhËn b¹n cã ®ñ Thùc ChiÕn T©m §¾c kh«ng!",1,"§ång ý/nothing");
+				Say("X¸c nhËn b¹n cã ®ñ Thùc ChiÕn T©m §¾c kh«ng!",1,"Agree/nothing");
 				
 				return
 			end;
 		elseif floor(nGoldenExp/2)*nCount > GetGoldenExp() then
-			Say("§iÓm søc kháe cña b¹n <color=yellow>"..GetGoldenExp().."<color> kh«ng ®ñ <color=yellow>"..(floor(nGoldenExp/2)*nCount).."<color>, cã muèn ®æi kh«ng?",2,"§ång ý/#use_shoufei("..nCount..",1)","Hñy bá/nothing");
+			Say("§iÓm søc kháe cña b¹n <color=yellow>"..GetGoldenExp().."<color> kh«ng ®ñ <color=yellow>"..(floor(nGoldenExp/2)*nCount).."<color>, cã muèn ®æi kh«ng?",2,"Agree/#use_shoufei("..nCount..",1)","Cancel/nothing");
 			return
 		else
 			use_shoufei(nCount,1);
@@ -107,7 +107,7 @@ function use_real_1(nCount)
 			end;
 		else
 		
-			Say("X¸c nhËn b¹n cã ®ñ Thùc ChiÕn T©m §¾c kh«ng!",1,"§ång ý/nothing");
+			Say("X¸c nhËn b¹n cã ®ñ Thùc ChiÕn T©m §¾c kh«ng!",1,"Agree/nothing");
 		
 			return
 		end;
@@ -126,7 +126,7 @@ function use_real_2(nCount)
 	--ÊÕ·ÑÇø½¡¿µ¾­ÑéÅÐ¶Ï
 	if IB_VERSION == 0 then
 		if nGoldenExp*nCount > GetGoldenExp() then
-			Say("§iÓm søc kháe cña b¹n <color=yellow>"..GetGoldenExp().."<color> kh«ng ®ñ <color=yellow>"..(nGoldenExp*nCount).."<color>, cã muèn ®æi kh«ng?",2,"§ång ý/#use_shoufei("..nCount..",2)","Hñy bá/nothing");
+			Say("§iÓm søc kháe cña b¹n <color=yellow>"..GetGoldenExp().."<color> kh«ng ®ñ <color=yellow>"..(nGoldenExp*nCount).."<color>, cã muèn ®æi kh«ng?",2,"Agree/#use_shoufei("..nCount..",2)","Cancel/nothing");
 			return
 		else
 			use_shoufei(nCount,2);
@@ -140,7 +140,7 @@ function use_real_2(nCount)
 		end;
 	else
 		WriteLog("Dïng Thùc ChiÕn T©m §¾c:"..GetName().."Hñy Thùc ChiÕn T©m §¾c thÊt b¹i!");
-		Say("X¸c nhËn b¹n cã ®ñ Thùc ChiÕn T©m §¾c kh«ng!",1,"§ång ý/nothing")
+		Say("X¸c nhËn b¹n cã ®ñ Thùc ChiÕn T©m §¾c kh«ng!",1,"Agree/nothing")
 		
 		return
 	end;

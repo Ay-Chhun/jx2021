@@ -11,7 +11,7 @@ function battle_kill_player_callback(nDeathIndex)
 	local nWeaponLevel = get_weapon_level()
 	local nNeed = 0
 	local nType = 0
-	local szCap = "Ng­êi ch¬i"
+	local szCap = "Player"
 	if tGtTask:check_cur_task(265)==1 then
 		nNeed = 40
 		nType = 1
@@ -86,7 +86,7 @@ function battle_kill_npc_callback(npcIndex)
 	elseif tGtTask:check_cur_task(269)==1 and (szNpcName == "Tèng nguyªn so¸i" or szNpcName == "Liªu nguyªn so¸i") then
 		nNeed = 1
 		nType = 2
-		szCap = "Nguyªn So¸i"
+		szCap = "Marshal"
 	end
 	if nType > 0 and GetTask(VEIT_BATTLE_KILL_BOSS_COUNTER) < nNeed and nWeaponLevel==2 then
 		SetTask(VEIT_BATTLE_KILL_BOSS_COUNTER,GetTask(VEIT_BATTLE_KILL_BOSS_COUNTER) + 1)

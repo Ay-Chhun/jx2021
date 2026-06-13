@@ -93,7 +93,7 @@ function FinishTask003()
 local strMain = {
 	"§¹i ca, Long T¹i Thiªn sÏ ®­a ®Ö tö ®Õn trî gióp.",
 	"C¸i Bang qu¶ lµ nghÜa khÝ h¬n ng­êi, ®­îc sù trî gióp cña hä th× yªn t©m råi. Qu©n triÒu ®×nh ®· kÐp ®Õn ch©n nói, ng­¬i mau t×m thªm ®ång ®éi tiªu diÖt bän chóng.",
-	"Ta ®i ngay!",
+	"I will go at once!",
 	"DÉn ®Çu ®¸m qu©n Êy lµ Cao CÇu, chØ cÇn ng­¬i ®¸nh b¹i h¾n ®o¹t ®­îc cê lÖnh lµ ®­îc råi!",
 }
 	CTask:TalkEx(strMain)

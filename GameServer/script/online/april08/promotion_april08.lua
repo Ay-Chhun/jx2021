@@ -4,9 +4,9 @@
 tPromotionGift=
 {
 	[1] = {"B¸t B¶o TÈy Tñy Tiªn ®¬n",1,1,0}, -- Gi¶i t­
-	[2] = {"TÈy Tñy linh ®¬n",1,1,1}, -- Gi¶i n¨m
-	[3] = {"Sæ tay sèng",1,1,2}, -- Gi¶i s¸u
-	[4] = {"B«n Tiªu",1,10,3}, -- Gi¶i b¶y
+	[2] = {"Marrow-Cleansing Spirit Pill",1,1,1}, -- Gi¶i n¨m
+	[3] = {"Living Notebook",1,1,2}, -- Gi¶i s¸u
+	[4] = {"Bon Tieu",1,10,3}, -- Gi¶i b¶y
 	[5] = {"ThÇn N«ng §¬n",1,1,4}, -- Gi¶i t¸m
 	[6] = {"B¹ch C©u Hoµn",1,1,5}, -- Gi¶i chÝn
 }
@@ -37,7 +37,7 @@ function processIndex(nIndex)
 			PayExtPoint(tPromotionGift[nIndex][4], nExtVal)
 		else
 			if ((nFreeItemRoom <  nExtVal*tPromotionGift[nIndex][2])  and (nFreeItemRoom > 0)) then
-				Say("Chóc mõng b»ng h÷u ®· tróng th­ëng "..nExtVal.." "..tPromotionGift[nIndex][1]..". Hµnh trang cña b»ng h÷u chØ cã <color=Gold>"..nFreeItemRoom.." « trèng<color> nªn chØ nhËn ®­îc <color=Gold>"..nFreeItemRoom.."<color> "..tPromotionGift[nIndex][1]..". Sau khi nhËn th­ëng h·y s¾p xÕp l¹i hµnh trang råi ®Õn gÆp ta.",2,"§ång ý/#SayYes("..nIndex..","..GetFreeItemRoom()..")","§Ó ta s¾p xÕp l¹i hµnh trang/SayNo")
+				Say("Chóc mõng b»ng h÷u ®· tróng th­ëng "..nExtVal.." "..tPromotionGift[nIndex][1]..". Hµnh trang cña b»ng h÷u chØ cã <color=Gold>"..nFreeItemRoom.." « trèng<color> nªn chØ nhËn ®­îc <color=Gold>"..nFreeItemRoom.."<color> "..tPromotionGift[nIndex][1]..". Sau khi nhËn th­ëng h·y s¾p xÕp l¹i hµnh trang råi ®Õn gÆp ta.",2,"Agree/#SayYes("..nIndex..","..GetFreeItemRoom()..")","§Ó ta s¾p xÕp l¹i hµnh trang/SayNo")
 			else
 				Say("Søc lùc hoÆc hµnh trang cña b»ng h÷u kh«ng ®ñ.",0)
 				Msg2Player("Søc lùc hoÆc hµnh trang cña b¹n kh«ng ®ñ.")

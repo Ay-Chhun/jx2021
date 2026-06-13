@@ -1,8 +1,8 @@
 Danh s¸ch npc	®øng yªn chiÕn ®Êu	®øng yªn c¶nh giíi	®øng yªn b×nh th­êng	®i	ch¹y	bÞ tÊn c«ng	Ng¨n c¶n	NÐ tr¸nh	§¸nh lui	§¸nh ng·	Tö vong	bß dËy	tÊn c«ng 1	tÊn c«ng 2	§¸nh m¹nh 
 Nam tiªu chuÈn				rol_ma2_w1.wav	rol_ma2_r1.wav						rol_ma2_d1.wav		rol_ma2_a1.wav	rol_ma2_a2.wav	
-Nam kh«i ng«				rol_ma1_w1.WAV	rol_ma1_r1.WAV						rol_ma1_d1.wav		rol_ma1_a1.wav	rol_ma1_a2.wav	
-N÷ gîi c¶m				rol_fm2_w1.wav	rol_fm2_r1.wav						rol_fm2_d1.WAV		rol_fm2_a1.wav	rol_fm2_a2.wav	
-KiÒu n÷				rol_fm1_w1.WAV	rol_fm1_r1.wav						rol_fm1_d1.WAV		rol_fm1_a1.wav	rol_fm1_a2.wav	
+Imposing man				rol_ma1_w1.WAV	rol_ma1_r1.WAV						rol_ma1_d1.wav		rol_ma1_a1.wav	rol_ma1_a2.wav	
+Alluring woman				rol_fm2_w1.wav	rol_fm2_r1.wav						rol_fm2_d1.WAV		rol_fm2_a1.wav	rol_fm2_a2.wav	
+Graceful woman				rol_fm1_w1.WAV	rol_fm1_r1.wav						rol_fm1_d1.WAV		rol_fm1_a1.wav	rol_fm1_a2.wav	
 Cäc gç						mon_001a.wav									
 Cäc gç 2						mon_001b.wav									
 Ong vµng											mon_002a_d1.wav		mon_002a_a1.wav		

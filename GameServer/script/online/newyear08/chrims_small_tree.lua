@@ -10,7 +10,7 @@ function OnUse()
 		return
 	end
 	local strtab = {
-		"§Æt c©y th«ng xuèng /drop_plant",
+		"Put the pine tree down /drop_plant",
 		"Kh«ng ph¶i, ®Æt chËm l¹i./nothing"}
 	Say("Ng­¬i muèn ®Ó c©y th«ng xuèng?",
 		getn(strtab),
@@ -35,7 +35,7 @@ function drop_plant()
 	end 	
 	local nDate = tonumber(date("%Y%m%d")); 
 	if GetTask(TASK_FINAL_AWARD) >= nDate then
-		Talk(1,"","Mçi ngµy mét ng­êi chØ cã thÓ trång"..PLANT_TREE_NUM.." c©y th«ng.");
+		Talk(1,"","Mçi ngµy mét ng­êi chØ cã thÓ trång"..PLANT_TREE_NUM.." the pine tree.");
 		return
 	end
 	local nTime = GetTime();

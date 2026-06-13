@@ -11,7 +11,7 @@ tbTWLXItemString = {
 	[4] = "<color=green>Th«ng b¸o<color>: më %s cã thÓ nhËn ®­îc<color=green>%d<color> <color=green>%s<color> <color=red>%s<color>, x¸c ®Þnh muèn më?",
 	[5] = "(Khãa)",
 	[6] = "X¸c nhËn më",
-	[7] = "Tho¸t",
+	[7] = "Exit",
 }
 function OnUse(nItemIndex)
 	Say(format(tbTWLXItemString[4],tbTWLXItemString[1],tbTWLXItemString[2][4],tbTWLXItemString[2][5],tbTWLXItemString[5]),

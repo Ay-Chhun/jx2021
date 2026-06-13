@@ -17,37 +17,37 @@ tb_ying_award = {
 };
 
 tb_ying_yue = {
-				[2] = {"Tói bÝ kiÕp ThiÕu L©m", {2, 0, 607, 1, 4}},
-				[3] = {"Tói bÝ kiÕp ThiÕu L©m", {2, 0, 607, 1, 4}},
-				[4] = {"Tói bÝ kiÕp ThiÕu L©m", {2, 0, 607, 1, 4}},
+				[2] = {"Shaolin secret manual bag", {2, 0, 607, 1, 4}},
+				[3] = {"Shaolin secret manual bag", {2, 0, 607, 1, 4}},
+				[4] = {"Shaolin secret manual bag", {2, 0, 607, 1, 4}},
 				[6] = {"Tói bÝ kiÕp §­êng M«n", {2, 0, 608, 1, 4}},
-				[8] = {"Tói bÝ kiÕp Nga My", {2, 0, 609, 1, 4}},
-				[9] = {"Tói bÝ kiÕp Nga My", {2, 0, 609, 1, 4}},
-				[11] = {"Tói bÝ kiÕp C¸i Bang", {2, 0, 610, 1, 4}},
-				[12] = {"Tói bÝ kiÕp C¸i Bang", {2, 0, 610, 1, 4}},
-				[14] = {"Tói bÝ kiÕp Vâ §ang", {2, 0, 611, 1, 4}},
-				[15] = {"Tói bÝ kiÕp Vâ §ang", {2, 0, 611, 1, 4}},
+				[8] = {"Emei secret manual bag", {2, 0, 609, 1, 4}},
+				[9] = {"Emei secret manual bag", {2, 0, 609, 1, 4}},
+				[11] = {"Beggars' Sect secret manual bag", {2, 0, 610, 1, 4}},
+				[12] = {"Beggars' Sect secret manual bag", {2, 0, 610, 1, 4}},
+				[14] = {"Wudang secret manual bag", {2, 0, 611, 1, 4}},
+				[15] = {"Wudang secret manual bag", {2, 0, 611, 1, 4}},
 				[17] = {"Tói bÝ kiÕp D­¬ng M«n", {2, 0, 612, 1, 4}},
 				[18] = {"Tói bÝ kiÕp D­¬ng M«n", {2, 0, 612, 1, 4}},
-				[20] = {"Tói bÝ kiÕp Ngò §éc", {2, 0, 613, 1, 4}},
-				[21] = {"Tói bÝ kiÕp Ngò §éc", {2, 0, 613, 1, 4}}
+				[20] = {"Five Poisons secret manual bag", {2, 0, 613, 1, 4}},
+				[21] = {"Five Poisons secret manual bag", {2, 0, 613, 1, 4}}
 };
 
 tb_ying_book_high = {
-				[2] = {"DÞch C©n Kinh-th­îng", {2, 1, 916, 1}},
+				[2] = {"Tendon-Changing Classic - upper", {2, 1, 916, 1}},
 				[4] = {"Nh­ Lai ThÇn Ch­ëng-th­îng", {2, 1, 919, 1}},
-				[3] = {"TÈy Tñy Kinh-th­îng", {2, 1, 922, 1}},
+				[3] = {"Marrow-Cleansing Classic - upper", {2, 1, 922, 1}},
 				[6] = {"HÊp Tinh TrËn-th­îng", {2, 1, 925, 1}},
 				[8] = {"V¹n T­íng ThÇn C«ng-th­îng", {2, 1, 928, 1}},
 				[9] = {"Thiªn ¢m TrÊn Hån Khóc-th­îng", {2, 1, 931, 1}},
-				[11] = {"Gi¸ng Long ThËp B¸t Ch­ëng-th­îng", {2, 1, 934, 1}},
+				[11] = {"Eighteen Dragon-Subduing Palms - upper", {2, 1, 934, 1}},
 				[12] = {"§¶ CÈu C«n TrËn-th­îng", {2, 1, 937, 1}},
 				[14] = {"V« Th­îng Th¸i Cùc KiÕm-th­îng", {2, 1, 940, 1}},
 				[15] = {"Th¸i Cùc ThÇn C«ng-th­îng", {2, 1, 943, 1}},
-				[17] = {"Liªn Hoµn Toµn Long Th­¬ng-th­îng", {2, 1, 946, 1}},
+				[17] = {"Chained Coiling Dragon Spear - upper", {2, 1, 946, 1}},
 				[18] = {"B¸ V­¬ng T­êng Phông TiÔn-th­îng", {2, 1, 949, 1}},
 				[20] = {"V« Thiªn Ma C«ng-th­îng", {2, 1, 955, 1}},
-				[21] = {"V« ¶nh Ma Cæ-th­îng", {2, 1, 952, 1}},
+				[21] = {"Shadowless Demon Drum - upper", {2, 1, 952, 1}},
 };
 
 tb_ying_book_med = {
@@ -68,26 +68,26 @@ tb_ying_book_med = {
 };
 
 tb_ying_book_low = {
-				[2] = {"DÞch C©n Kinh-h¹ ", {2, 1, 918, 1}},		
+				[2] = {"Yi Jin Jing - lower", {2, 1, 918, 1}},		
 				[4] = {"Nh­ Lai ThÇn Ch­ëng-h¹ ", {2, 1, 921, 1}},		
-				[3] = {"TÈy Tñy Kinh-h¹ ", {2, 1, 924, 1}},		
+				[3] = {"Xi Sui Jing - lower", {2, 1, 924, 1}},		
 				[6] = {"HÊp Tinh TrËn-h¹ ", {2, 1, 927, 1}},		
 				[8] = {"V¹n T­íng ThÇn C«ng-h¹ ", {2, 1, 930, 1}},		
 				[9] = {"Thiªn ¢m TrÊn Hån Khóc-h¹ ", {2, 1, 933, 1}},		
-				[11] = {"Gi¸ng Long ThËp B¸t Ch­ëng-h¹ ", {2, 1, 936, 1}},		
+				[11] = {"Eighteen Dragon-Subduing Palms - lower", {2, 1, 936, 1}},		
 				[12] = {"§¶ CÈu C«n TrËn-h¹ ", {2, 1, 939, 1}},		
 				[14] = {"V« Th­îng Th¸i Cùc KiÕm-h¹ ", {2, 1, 942, 1}},		
 				[15] = {"Th¸i Cùc ThÇn C«ng-h¹ ", {2, 1, 945, 1}},		
-				[17] = {"Liªn Hoµn Toµn Long Th­¬ng-h¹ ", {2, 1, 948, 1}},		
+				[17] = {"Continuous Coiling Dragon Spear - lower", {2, 1, 948, 1}},		
 				[18] = {"B¸ V­¬ng T­êng Phông TiÔn-h¹ ", {2, 1, 951, 1}},		
 				[20] = {"V« Thiªn Ma C«ng-h¹ ", {2, 1, 957, 1}},
-				[21] = {"V« ¶nh Ma Cæ-h¹ ", {2, 1, 954, 1}},
+				[21] = {"Shadowless Demon Drum - lower", {2, 1, 954, 1}},
 };
 
 tb_ying_item = {				
 				[1] = {"Thiªn Th¹ch Linh Th¹ch",{2,1,1068}, 20 * 24 * 3600},
 				[2] = {"B¶n vÏ ®óc t¹o thÇn khÝ",{2,1,1086},0},			
-				[3] = {"Kim Lò Th­êng", {0, 100, 95},0},				
+				[3] = {"Gold-Inlaid Robe", {0, 100, 95},0},				
 				[4] = {"Tµng KiÕm ¤ kim phôc", {0, 101, 95},0},
 }
 

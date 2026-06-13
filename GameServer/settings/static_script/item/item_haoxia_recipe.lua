@@ -3,11 +3,11 @@ Include("\\script\\lib\\globalfunctions.lua")
 Include("\\script\\lib\\talktmp.lua")
 
 tHaoXiaRecipe = {
-	[30799] = {{"Viªm Linh Bè", {2, 1, 30676, 10}}, {"Linh ThiÕt", {2, 1, 30681, 20}},	{"Hµo HiÖp LÖnh", {2, 95, 2084, 200}},	{" Kim ", 100}},
-	[30800] = {{"Ma Lang Gi¸p", {2, 1, 30677, 10}}, {"Linh ThiÕt", {2, 1, 30681, 20}},	{"Hµo HiÖp LÖnh", {2, 95, 2084, 200}},	{" Kim ", 100}},
-	[30801] = {{"§Þa Long Gi¸p", {2, 1, 30678, 10}}, {"Linh ThiÕt", {2, 1, 30681, 20}},	{"Hµo HiÖp LÖnh", {2, 95, 2084, 200}},	{" Kim ", 100}},
-	[30802] = {{"HuyÒn Viªm C­¬ng", {2, 1, 30675, 10}}, {"Linh ThiÕt", {2, 1, 30681, 20}},	{"Hµo HiÖp LÖnh", {2, 95, 2084, 200}},	{" Kim ", 100}},
-	[30878] = {{"L­u Li Kim", {2, 1, 30684, 10}}, {"Linh ThiÕt", {2, 1, 30681, 20}},	{"Hµo HiÖp LÖnh", {2, 95, 2084, 200}},	{" Kim ", 100}},		
+	[30799] = {{"Yanling Cloth", {2, 1, 30676, 10}}, {"Spirit Iron", {2, 1, 30681, 20}},	{"Hµo HiÖp LÖnh", {2, 95, 2084, 200}},	{" Kim ", 100}},
+	[30800] = {{"Ma Lang Gi¸p", {2, 1, 30677, 10}}, {"Spirit Iron", {2, 1, 30681, 20}},	{"Hµo HiÖp LÖnh", {2, 95, 2084, 200}},	{" Kim ", 100}},
+	[30801] = {{"§Þa Long Gi¸p", {2, 1, 30678, 10}}, {"Spirit Iron", {2, 1, 30681, 20}},	{"Hµo HiÖp LÖnh", {2, 95, 2084, 200}},	{" Kim ", 100}},
+	[30802] = {{"HuyÒn Viªm C­¬ng", {2, 1, 30675, 10}}, {"Spirit Iron", {2, 1, 30681, 20}},	{"Hµo HiÖp LÖnh", {2, 95, 2084, 200}},	{" Kim ", 100}},
+	[30878] = {{"L­u Li Kim", {2, 1, 30684, 10}}, {"Spirit Iron", {2, 1, 30681, 20}},	{"Hµo HiÖp LÖnh", {2, 95, 2084, 200}},	{" Kim ", 100}},		
 };
 
 function ComposeCap(szItem)
@@ -79,7 +79,7 @@ function ComposeWeapon(nItem, nIndex)
 			end
 			tinsert(tbSay.sel, {content, format("#ComposeWeapon(%d, %d)", nItem, k)});
 		end
-		tinsert(tbSay.sel, {"\n rót lui", "nothing"});
+		tinsert(tbSay.sel, {"\n withdraw", "nothing"});
 		temp_Talk(tbSay);
 		return 0;
 	end
@@ -101,7 +101,7 @@ function ComposeRing(nItem, nIndex)
 		for k, v in tRing do
 			tinsert(tSay, format("\nGhÐp %s/#ComposeRing(%d, %d)", v[1], nItem, k))
 		end
-		tinsert(tSay, "\n rót lui/nothing");
+		tinsert(tSay, "\n withdraw/nothing");
 		Say("H·y chän trang søc cÇn ®æi:", getn(tSay), tSay);
 		return 0;
 	end
@@ -169,6 +169,6 @@ function OnUse(nItem)
 	if bCan then
 		tinsert(tSay, format(tSection[detail], nItem));
 	end
-	tinsert(tSay, "\n hñy bá/nothing");
+	tinsert(tSay, "\n Cancel/nothing");
 	Say(format("Sö dông <color=gold>%s<color> ®Ó ghÐp cÇn tiªu hao nguyªn liÖu bªn d­íi:\n\t%s ®ång ý ghÐp kh«ng?", szItem, msg), getn(tSay), tSay);	
 end

@@ -29,7 +29,7 @@ THUONGUNGNGUYENSOAI100_FILE = "\\script\\vng\\weapon_upgrade\\dainguyensoai2thuo
 THUONGUNGTUONGQUAN2LOIHOTUONGQUAN_FILE = "\\script\\vng\\weapon_upgrade\\tuongquan_thuongung2loiho.lua";
 THUONGUNGNGUYENSOAI2LOIHONGUYENSOAI_FILE = "\\script\\vng\\weapon_upgrade\\nguyensoai_thuongung2loiho.lua";
 
-g_szNpcName = "<color=green>§Ö tö thî rÌn L­u: <color>";
+g_szNpcName = "<color=green>Blacksmith Disciple Liu: <color>";
 
 function npc_upgrade_talk()
 	local nDate = tonumber(date("%Y%m%d"))
@@ -297,7 +297,7 @@ function select_bpy_2()
 	for i=9, getn(tb_upgrade_weapon_bpy_low) do
 		tinsert(tSay,format("ChÕ t¹o %s/#do_upgrade(%d,%d)",tb_upgrade_weapon_bpy_low[i][1],2,i))
 	end
-	tinsert(tSay,"Trang tr­íc/select_bpy_1")
+	tinsert(tSay,"Previous page/select_bpy_1")
 	tinsert(tSay,"T¹i h¹ chØ tiÖn ghÐ ngang/gf_DoNothing")
 	Say(g_szNpcName.."C¸c h¹ muèn ta chÕ t¹o lo¹i vò khÝ nµo?",getn(tSay),tSay)
 end
@@ -325,10 +325,10 @@ end
 
 function do_upgrade_tq_type(nType)
 	local tSay = {
-		format("Nam Tiªu ChuÈn/#do_upgrade(%d,1)",nType),
+		format("Male Standard/#do_upgrade(%d,1)",nType),
 		format("Nam Kh«i Ng«/#do_upgrade(%d,2)",nType),
-		format("N÷ Gîi C¶m/#do_upgrade(%d,3)",nType),
-		format("KiÒu N÷/#do_upgrade(%d,4)",nType),		
+		format("Female Alluring/#do_upgrade(%d,3)",nType),
+		format("Female Charming/#do_upgrade(%d,4)",nType),		
 		"T¹i h¹ chØ tiÖn ghÐ ngang/gf_DoNothing"
 	}
 	Say(g_szNpcName.."C¸c h¹ muèn ta n©ng cÊp lo¹i trang bÞ nµo? <color=red>L­u ý: Tû lÖ thµnh c«ng phô thuéc vµo møc c­êng hãa cña vËt phÈm.<color>",getn(tSay),tSay)
@@ -346,10 +346,10 @@ end
 
 function change_cangjiang_type(nType)
 	local tSay = {
-		format("Nam Tiªu ChuÈn/#do_upgrade(%d,1)",nType),
+		format("Male Standard/#do_upgrade(%d,1)",nType),
 		format("Nam Kh«i Ng«/#do_upgrade(%d,2)",nType),
-		format("N÷ Gîi C¶m/#do_upgrade(%d,3)",nType),
-		format("KiÒu N÷/#do_upgrade(%d,4)",nType),		
+		format("Female Alluring/#do_upgrade(%d,3)",nType),
+		format("Female Charming/#do_upgrade(%d,4)",nType),		
 		"T¹i h¹ chØ tiÖn ghÐ ngang/gf_DoNothing"
 	}
 	Say(g_szNpcName.."C¸c h¹ muèn ta chuyÓn ®æi lo¹i trang bÞ nµo? <color=red>L­u ý: tû lÖ thµnh c«ng 100%.<color>",getn(tSay),tSay)
@@ -1255,7 +1255,7 @@ function OnPutinComplete(param)
 							szType = "Tö Quang Viªm §Õ Gi¸p"
 						elseif nUpgradeType == 34 then
 							nGenre = 101
-							szType = "Tö Quang Viªm §Õ Trang"
+							szType = "Ziguang Yandi Garb"
 						end
 						gf_AddItemEx2({0, nGenre, 8050 + nBody, 1, 1, -1,-1,-1,-1,-1,-1, 0, 6})
 						Talk(1,"",g_szNpcName.."C¶i t¹o trang bÞ míi thµnh c«ng!")
@@ -1725,10 +1725,10 @@ end
 
 function do_upgrade_type(nType)
 	local tSay = {
-		format("Nam Tiªu ChuÈn/#do_upgrade(%d,1)",nType),
+		format("Male Standard/#do_upgrade(%d,1)",nType),
 		format("Nam Kh«i Ng«/#do_upgrade(%d,2)",nType),
-		format("N÷ Gîi C¶m/#do_upgrade(%d,3)",nType),
-		format("KiÒu N÷/#do_upgrade(%d,4)",nType),		
+		format("Female Alluring/#do_upgrade(%d,3)",nType),
+		format("Female Charming/#do_upgrade(%d,4)",nType),		
 		"T¹i h¹ chØ tiÖn ghÐ ngang/gf_DoNothing"
 	}
 	Say(g_szNpcName.."C¸c h¹ muèn ta c¶i t¹o lo¹i trang bÞ nµo? <color=red>L­u ý: tû lÖ thµnh c«ng 100%.<color>",getn(tSay),tSay)
@@ -1768,20 +1768,20 @@ function confirm_make_shimen_tier4(nUpgradeType)
 	-- ChØ sè base cña c¸c trang bÞ theo m«n ph¸i
 	local tbShimen4Equip =
 	{
-		[2] =  {"ThiÕu L©m tôc gia", 230}, 
+		[2] =  {"Shaolin Lay Branch", 230}, 
 		[3] =  {"ThiÕu L©m thiÒn t¨ng", 330}, 
-		[4] =  {"ThiÕu L©m vâ t«ng", 430}, 
-		[14] =  {"Vâ §ang ®¹o gia", 1430}, 
-		[15] =  {"Vâ §ang tôc gia", 1530}, 
-		[8] =  {"Nga My phËt gia", 830}, 
-		[9] =  {"Nga My tôc gia", 930}, 
-		[11] =  {"C¸i Bang tÜnh y", 1130}, 
-		[12] =  {"C¸i Bang « y", 1230}, 
+		[4] =  {"Shaolin Martial Sect", 430}, 
+		[14] =  {"Wudang Daoist Branch", 1430}, 
+		[15] =  {"Wudang Lay Branch", 1530}, 
+		[8] =  {"Emei Buddhist Branch", 830}, 
+		[9] =  {"Emei Lay Branch", 930}, 
+		[11] =  {"Beggars' Sect Calm Robe", 1130}, 
+		[12] =  {"Beggars' Sect Black Robe", 1230}, 
 		[6] =  {"§­êng M«n", 630}, 
 		[17] =  {"D­¬ng Gia th­¬ng", 1730}, 
 		[18] =  {"D­¬ng Gia cung", 1830}, 
 		[20] = {"Ngò §éc hiÖp ®éc", 2030}, 
-		[21] = {"Ngò §éc tµ ®éc", 2130}, 
+		[21] = {"Five Poisons evil poison", 2130}, 
 	}
 	
 	local tbUpgradeTypes =
@@ -1907,7 +1907,7 @@ function RenLaiVuKhi_Form()
 	szSay = szSay .. "+ Vò khÝ 86 (c­êng hãa 11)  thµnh  vò khÝ 96 (c­êng hãa 0): 390 Thiªn Th¹ch, 290 M¶nh Thiªn Th¹ch, 99 Thiªn Th¹ch Tinh Th¹ch\n"
 	szSay = szSay .. "<color=red>L­u ý: Sau khi rÌn l¹i, thuéc tÝnh vò khÝ sÏ kh«ng thay ®æi.<color>"
 	tbSay = {
-		"B¾t ®Çu rÌn/RenLaiVuKhi_Done",
+		"Begin forging/RenLaiVuKhi_Done",
 		"Ta chØ xem th«i/gf_DoNothing",	
 	}
 	Say(g_szNpcName..szSay,getn(tbSay),tbSay)
@@ -2037,7 +2037,7 @@ function VoSong_Menu()
 	szTalkStr = szTalkStr .. "3. Nguyªn bé Vâ L©m B¸ Chñ <color=yellow>+13<color>, <color=red>44<color> Cöu Thiªn V« Cùc §¬n, <color=red>44<color> ThÇn Tµi B¶o R­¬ng."
 	local tbSay = {
 		"Ta muèn Thiªn H¹ V« Song/VoSong_Upgrade",
-		"Ta ®Õn xem th«i/gf_DoNothing",
+		"I am just here to look/gf_DoNothing",
 	}
 	Say(szTalkStr, getn(tbSay), tbSay)
 end

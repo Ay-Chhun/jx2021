@@ -74,30 +74,30 @@ GENRE	DETAIL_TYPE	CONTENT	UNREPLACABLE	UNREMOVABLE	VERSION	EXPIRE	TYPE	SCRIPTFIL
 4	18	Hîp gia ®oµn viªn	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 4	19	§oµn ®oµn viªn viªn	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 5	1	Tiªu dao v¨n khóc tinh	0	0	0	20060311	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr	X­ng hiÖu 5 dïng cho ho¹t ®éng thŞ tr­êng				
-6	1	Hµnh gi¶	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-6	2	Hçn Nguyªn T¨ng	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+6	1	Pilgrim	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+6	2	Primordial Unity Monk	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 7	1	Sa Di	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-7	2	§Êu T¨ng	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-8	1	Khæ Hµnh T¨ng	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-8	2	ThiÒn Tu T¨ng	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-9	1	Trang Kh¸ch	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-9	2	Hé VÖ	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+7	2	Battle Monk	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+8	1	Ascetic Monk	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+8	2	Zen Cultivation Monk	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+9	1	Manor Guest	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+9	2	Guardian	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 10	1	Thanh T©m Sø	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-10	2	Vò Y Sø	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-11	1	T­ Khóc Sø	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-11	2	Ph¹n ¢m Sø	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-12	1	ChÊp B¸t §Ö Tö	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-12	2	Trõ Gian §Ö Tö	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-13	1	ChÊp Bæng §Ö Tö	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-13	2	Trõng ¸c §Ö Tö	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-14	1	Thanh Tu ®¹o nh©n	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-14	2	NhËp Quan ®¹o nh©n	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-15	1	Thanh Phong ®¹o nh©n	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+10	2	Feather Robe Envoy	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+11	1	Music Tune Envoy	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+11	2	Sanskrit Chant Envoy	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+12	1	Eight Halberd Disciple	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+12	2	Evil Purging Disciple	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+13	1	Staff Wielding Disciple	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+13	2	Wicked Punishing Disciple	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+14	1	Pure Cultivation Daoist	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+14	2	Pass Entering Daoist	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+15	1	Pure Wind Daoist	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 15	2	S¬n D­¬ng ®¹o nh©n	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-16	1	Khinh kş binh	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-16	2	HiÖu óy	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+16	1	Light Cavalry	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+16	2	Lieutenant	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 17	1	Xuyªn D­¬ng Thñ	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-17	2	§« óy	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+17	2	Commandant	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 18	1	§o¹t Ph¸ch T¶n Nh©n	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 18	2	Th«i MÖnh T¶n Nh©n	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 19	1	§éc Tµm T¶n Nh©n	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
@@ -119,75 +119,75 @@ GENRE	DETAIL_TYPE	CONTENT	UNREPLACABLE	UNREMOVABLE	VERSION	EXPIRE	TYPE	SCRIPTFIL
 22	5	TiÓu hiÖp ®Şa ph­¬ng	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 22	6	NghÜa sÜ ®Şa ph­¬ng	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 22	7	Giang hå thiÕu hiÖp	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-22	8	Giang hå h¶o h¸n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+22	8	Martial World Brave Hero	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 22	9	Vâ l©m hµo kiÖt	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 22	10	Vâ l©m cao thñ	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 22	11	Mét thêi ®¹i hiÖp	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-22	12	C¸i thÕ anh hµo	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-22	13	NhÊt ®¹i t«n s­	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+22	12	Unrivaled Hero of the Age	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+22	13	Foremost Grand Master of a Generation	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 22	14	Vâ l©m ®Ö nhÊt	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-22	15	TuyÖt thÕ cao nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+22	15	Peerless Expert of the Age	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 22	16	Vâ l©m thÇn tho¹i	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-23	1	Hµnh gi¶	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+23	1	Pilgrim	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 23	2	Sa Di	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-23	3	Khæ Hµnh T¨ng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-23	4	Trang Kh¸ch	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+23	3	Ascetic Monk	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+23	4	Manor Guest	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 23	5	Thanh T©m Sø  	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 23	6	T­ Khóc Sø  	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-23	7	ChÊp B¸t §Ö Tö	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-23	8	ChÊp Bæng §Ö Tö	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-23	9	Thanh Tu ®¹o nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-23	10	Thanh Phong ®¹o nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-23	11	Khinh kş binh	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+23	7	Eight Halberd Disciple	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+23	8	Staff Wielding Disciple	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+23	9	Pure Cultivation Daoist	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+23	10	Pure Wind Daoist	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+23	11	Light Cavalry	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 23	12	Xuyªn D­¬ng Thñ	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 23	13	§o¹t Ph¸ch T¶n Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 23	14	§éc Tµm T¶n Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 23	15	Linh Phï §¹o Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Néi c«ng t¨ng 5 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Néi c«ng t¨ng 3 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu s¬ cÊp Thiªn S­	1	Néi c«ng t¨ng 5 ®iÓm	Néi c«ng t¨ng 3 ®iÓm
-23	16	Kim L« Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Søc m¹ng t¨ng 5 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Søc m¹ng t¨ng 3 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu s¬ cÊp Th¸nh ChiÕn	1	Søc m¹ng t¨ng 5 ®iÓm	Søc m¹ng t¨ng 3 ®iÓm
+23	16	Golden Furnace Envoy	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Søc m¹ng t¨ng 5 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Søc m¹ng t¨ng 3 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu s¬ cÊp Th¸nh ChiÕn	1	Søc m¹ng t¨ng 5 ®iÓm	Søc m¹ng t¨ng 3 ®iÓm
 23	17	TrËn Binh Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 5 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 3 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu s¬ cÊp TrËn Binh	1	Linh ho¹t t¨ng 5 ®iÓm	Linh ho¹t t¨ng 3 ®iÓm
 23	18	¸m Tr¶o Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 5 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 3 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu s¬ cÊp HuyÕt Nh©n	1	Th©n ph¸p t¨ng 5 ®iÓm	Th©n ph¸p t¨ng 3 ®iÓm
 23	19	§¹p V©n Tiªn Tö	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 5 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 3 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu s¬ cÊp Vò Tiªn	1	Th©n ph¸p t¨ng 5 ®iÓm	Th©n ph¸p t¨ng 3 ®iÓm
 23	20	TÇm H­¬ng Tiªn Tö	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 5 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 3 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu s¬ cÊp Linh N÷	1	Linh ho¹t t¨ng 5 ®iÓm	Linh ho¹t t¨ng 3 ®iÓm
-24	1	Hçn Nguyªn T¨ng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-24	2	§Êu T¨ng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-24	3	ThiÒn Tu T¨ng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-24	4	Hé VÖ	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+24	1	Primordial Unity Monk	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+24	2	Battle Monk	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+24	3	Zen Cultivation Monk	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+24	4	Guardian	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 24	5	Vò Y Sø  	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 24	6	Ph¹n ¢m Sø  	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-24	7	Trõ Gian §Ö Tö	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-24	8	Trõng ¸c §Ö Tö	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-24	9	NhËp Quan ®¹o nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+24	7	Evil Purging Disciple	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+24	8	Wicked Punishing Disciple	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+24	9	Pass Entering Daoist	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 24	10	S¬n D­¬ng ®¹o nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-24	11	HiÖu óy	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-24	12	§« óy	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+24	11	Lieutenant	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+24	12	Commandant	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 24	13	Th«i MÖnh T¶n Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 24	14	Thùc T©m T¶n Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 24	15	Bİ Ph¸p §¹o Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Néi c«ng t¨ng 10 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Néi c«ng t¨ng 6 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (2) Thiªn S­	1	Néi c«ng t¨ng 10 ®iÓm	Néi c«ng t¨ng 6 ®iÓm
-24	16	B¹o S¸t Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Søc m¹ng t¨ng 10 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Søc m¹ng t¨ng 6 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (2) Th¸nh ChiÕn	1	Søc m¹ng t¨ng 10 ®iÓm	Søc m¹ng t¨ng 6 ®iÓm
-24	17	Tö SÜ Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 10 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 6 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (2) TrËn Binh	1	Linh ho¹t t¨ng 10 ®iÓm	Linh ho¹t t¨ng 6 ®iÓm
+24	16	Savage Slaughter Envoy	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Søc m¹ng t¨ng 10 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Søc m¹ng t¨ng 6 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (2) Th¸nh ChiÕn	1	Søc m¹ng t¨ng 10 ®iÓm	Søc m¹ng t¨ng 6 ®iÓm
+24	17	Death Warrior Envoy	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 10 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 6 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (2) TrËn Binh	1	Linh ho¹t t¨ng 10 ®iÓm	Linh ho¹t t¨ng 6 ®iÓm
 24	18	DiÖt Hån Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 10 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 6 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (2) HuyÕt Nh©n	1	Th©n ph¸p t¨ng 10 ®iÓm	Th©n ph¸p t¨ng 6 ®iÓm
 24	19	T©m Vò Tiªn Tö	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 10 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 6 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (2) Vò Tiªn	1	Th©n ph¸p t¨ng 10 ®iÓm	Th©n ph¸p t¨ng 6 ®iÓm
 24	20	Th¸m Ngäc Tiªn Tö	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 10 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 6 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (2) Linh N÷	1	Linh ho¹t t¨ng 10 ®iÓm	Linh ho¹t t¨ng 6 ®iÓm
-25	1	§¹t Ma Kim Cang	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+25	1	Damo Vajra	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 25	2	La H¸n Hé Ph¸p	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-25	3	TruyÒn kinh ph¸p s­	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+25	3	Scripture Teaching Master	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 25	4	Bİ ®éc thİch kh¸ch	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-25	5	Tö Tróc sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+25	5	Purple Bamboo Envoy	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 25	6	H¶i NguyÖt sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 25	7	Tø H¶i hiÖp	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-25	8	§Ö tö t¸m tói	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-25	9	V« ng· ®¹o nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+25	8	Eight Bag Disciple	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+25	9	Selfless Daoist	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 25	10	Nhµn V©n HiÖp §¹o	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 25	11	PhÊn vò t­íng qu©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 25	12	PhÊn uy t­íng qu©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 25	13	H¾c V« Th­êng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 25	14	B¹ch V« Th­êng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 25	15	TrÊn Yªu §¹o Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Néi c«ng t¨ng 20 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Néi c«ng t¨ng 12 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (3) Thiªn S­	1	Néi c«ng t¨ng 20 ®iÓm	Néi c«ng t¨ng 12 ®iÓm
-25	16	Hé Gi¸o Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Søc m¹ng t¨ng 20 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Søc m¹ng t¨ng 12 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (3) Th¸nh ChiÕn	1	Søc m¹ng t¨ng 20 ®iÓm	Søc m¹ng t¨ng 12 ®iÓm
+25	16	Cult Guardian Envoy	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Søc m¹ng t¨ng 20 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Søc m¹ng t¨ng 12 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (3) Th¸nh ChiÕn	1	Søc m¹ng t¨ng 20 ®iÓm	Søc m¹ng t¨ng 12 ®iÓm
 25	17	Tr­êng Kú Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 20 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 12 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (3) TrËn Binh	1	Linh ho¹t t¨ng 20 ®iÓm	Linh ho¹t t¨ng 12 ®iÓm
-25	18	Thanh Minh Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 20 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 12 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (3) HuyÕt Nh©n	1	Th©n ph¸p t¨ng 20 ®iÓm	Th©n ph¸p t¨ng 12 ®iÓm
+25	18	Pure Bright Envoy	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 20 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 12 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (3) HuyÕt Nh©n	1	Th©n ph¸p t¨ng 20 ®iÓm	Th©n ph¸p t¨ng 12 ®iÓm
 25	19	Thu NguyÖt Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 20 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 12 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (3) Vò Tiªn	1	Th©n ph¸p t¨ng 20 ®iÓm	Th©n ph¸p t¨ng 12 ®iÓm
-25	20	Nghªnh H­¬ng Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 20 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 12 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (3) Linh N÷	1	Linh ho¹t t¨ng 20 ®iÓm	Linh ho¹t t¨ng 12 ®iÓm
+25	20	Welcoming Fragrance Envoy	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 20 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 12 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (3) Linh N÷	1	Linh ho¹t t¨ng 20 ®iÓm	Linh ho¹t t¨ng 12 ®iÓm
 26	1	B¸t Bé Thiªn Long	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 26	2	B¸t B¶o La H¸n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 26	3	V« L­îng Ph¸p T«n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
@@ -196,21 +196,21 @@ GENRE	DETAIL_TYPE	CONTENT	UNREPLACABLE	UNREMOVABLE	VERSION	EXPIRE	TYPE	SCRIPTFIL
 26	6	Ngäc VËn Tiªn Tö	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 26	7	Long §Çu ThÇn C¸i	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 26	8	KhÊt Thiªn ThÇn C¸i	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-26	9	Ch­ëng Kinh ®¹o nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+26	9	Scripture Mastering Daoist	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 26	10	Th¸i Êt T¶n Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 26	11	Long T­¬ng t­íng qu©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 26	12	Hæ Dùc t­íng qu©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-26	13	U Minh Quû S¸t	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-26	14	V« §æng La S¸t	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+26	13	Netherworld Ghost Slayer	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+26	14	Boundless Rakshasa	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 26	15	Tö Vi §¹o Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Néi c«ng t¨ng 30 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Néi c«ng t¨ng 18 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (4) Thiªn S­	1	Néi c«ng t¨ng 30 ®iÓm	Néi c«ng t¨ng 18 ®iÓm
 26	16	Tiªu Dao ThÇn Sø	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Søc m¹ng t¨ng 30 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Søc m¹ng t¨ng 18 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (4) Th¸nh ChiÕn	1	Søc m¹ng t¨ng 30 ®iÓm	Søc m¹ng t¨ng 18 ®iÓm
 26	17	Thiªn Cuång §¹i T­íng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 30 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 18 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (4) TrËn Binh	1	Linh ho¹t t¨ng 30 ®iÓm	Linh ho¹t t¨ng 18 ®iÓm
 26	18	NguyÖt ¶nh Ma T«n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 30 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 18 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (4) HuyÕt Nh©n	1	Th©n ph¸p t¨ng 30 ®iÓm	Th©n ph¸p t¨ng 18 ®iÓm
 26	19	Cöu Thiªn Th¸i Ph­îng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Th©n ph¸p t¨ng 30 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Th©n ph¸p t¨ng 18 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (4) Vò Tiªn	1	Th©n ph¸p t¨ng 30 ®iÓm	Th©n ph¸p t¨ng 18 ®iÓm
 26	20	B¨ng T©m Ngäc N÷	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 30 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 18 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (4) Linh N÷	1	Linh ho¹t t¨ng 30 ®iÓm	Linh ho¹t t¨ng 18 ®iÓm
-27	1	Tr­ëng l·o §¹t Ma §­êng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-27	2	Tr­ëng l·o La H¸n §­êng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-27	3	Tr­ëng l·o Tµng Kinh C¸c	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+27	1	Elder of the Bodhidharma Hall	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+27	2	Elder of the Arhat Hall	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+27	3	Elder of the Sutra Pavilion	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 27	4	Thiªn Thñ Sø Gi¶	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 27	5	Kim Quang Tiªn Tö	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 27	6	Thiªn ¢m Tiªn Tö	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
@@ -218,10 +218,10 @@ GENRE	DETAIL_TYPE	CONTENT	UNREPLACABLE	UNREMOVABLE	VERSION	EXPIRE	TYPE	SCRIPTFIL
 27	8	Ch­ëng Bæng ThÇn C¸i	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 27	9	Th­îng Thanh §¹o Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 27	10	Tö Hµ T¶n Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-27	11	TrÊn Qu©n T­íng Qu©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-27	12	Chinh Lç T­íng Qu©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-27	13	Diªm La Quû S¸t	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-27	14	Cæ §éc La S¸t	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+27	11	Zhenjun General	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+27	12	Zhenglu General	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+27	13	Yama Ghost Slayer	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+27	14	Solitary Poison Rakshasa	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 27	15	Hång M«ng §¹o Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Néi c«ng t¨ng 35 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Néi c«ng t¨ng 21 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (5) Thiªn S­	1	Néi c«ng t¨ng 35 ®iÓm	Néi c«ng t¨ng 21 ®iÓm
 27	16	Kim Mao S­ V­¬ng Hé Ph¸p	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Søc m¹ng t¨ng 35 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Søc m¹ng t¨ng 21 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (5) Th¸nh ChiÕn	1	Søc m¹ng t¨ng 35 ®iÓm	Søc m¹ng t¨ng 21 ®iÓm
 27	17	B¹ch Mi ¦ng V­¬ng Hé Ph¸p	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 35 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 21 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (5) TrËn Binh	1	Linh ho¹t t¨ng 35 ®iÓm	Linh ho¹t t¨ng 21 ®iÓm
@@ -232,16 +232,16 @@ GENRE	DETAIL_TYPE	CONTENT	UNREPLACABLE	UNREMOVABLE	VERSION	EXPIRE	TYPE	SCRIPTFIL
 28	2	Thñ täa La H¸n §­êng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 28	3	Thñ täa Tµng Kinh C¸c	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 28	4	Thiªn Thñ ThÇn VÖ	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-28	5	Kim Quang th¸nh n÷	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+28	5	Golden Light Holy Maiden	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 28	6	Thiªn ¢m th¸nh n÷	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 28	7	ChÊp Ph¸p tr­ëng l·o	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-28	8	Ch­ëng Bæng tr­ëng l·o	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+28	8	Staff-Wielding Elder	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 28	9	Th­îng Thanh ch©n nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-28	10	Tö Tiªu th­îng nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+28	10	Purple Empyrean Supreme Man	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 28	11	TrÊn Qu©n nguyªn so¸i	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 28	12	Chinh Lç nguyªn so¸i	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-28	13	Diªm La t«n gi¶	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-28	14	Cæ §éc t«n gi¶	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+28	13	Yama Venerable	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+28	14	Solitary Poison Venerable	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 28	15	Hång M«ng Ch©n Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Néi c«ng t¨ng 40 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Néi c«ng t¨ng 24 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (6) Thiªn S­	1	Néi c«ng t¨ng 40 ®iÓm	Néi c«ng t¨ng 24 ®iÓm
 28	16	Kim Mao S­ V­¬ng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Søc m¹ng t¨ng 40 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Søc m¹ng t¨ng 24 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (6) Th¸nh ChiÕn	1	Søc m¹ng t¨ng 40 ®iÓm	Søc m¹ng t¨ng 24 ®iÓm
 28	17	B¹ch MŞ ¦ng V­¬ng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color>Linh ho¹t t¨ng 40 ®iÓm<enter/><color=yellow>HiÖu qu¶ Èn:<color>Linh ho¹t t¨ng 24 ®iÓm<enter/><color=yellow>M« t¶ danh hiÖu:<color>Danh hiÖu (6) TrËn Binh	1	Linh ho¹t t¨ng 40 ®iÓm	Linh ho¹t t¨ng 24 ®iÓm
@@ -308,13 +308,13 @@ GENRE	DETAIL_TYPE	CONTENT	UNREPLACABLE	UNREMOVABLE	VERSION	EXPIRE	TYPE	SCRIPTFIL
 52	10	Quèc Tö gi¸m TÕ Töu	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 53	1	Thiªn C¬ ThÇn To¸n	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 53	2	§o¹t B¶o Kú Binh	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-53	3	Hoa ®¨ng v­¬ng	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+53	3	Lantern King	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 60	1	NhÊt PhÈm §­êng-T©n BŞ	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-60	2	NhÊt PhÈm §­êng-Thİch Kh¸ch	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-60	3	NhÊt PhÈm §­êng-Phi Hé	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-60	4	NhÊt PhÈm §­êng-Hæ Dùc	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-60	5	NhÊt PhÈm §­êng-Vò VÖ	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-60	6	NhÊt PhÈm §­êng-Gian TÕ	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+60	2	First Grade Hall-Assassin	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+60	3	First Grade Hall-Flying Guard	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+60	4	First Grade Hall-Tiger Wing	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+60	5	First Grade Hall-Martial Guard	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+60	6	First Grade Hall-Spy	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 60	7	§iÖp ¶nh kú hiÖp	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 60	8	Tung hoµnh T©y H¹	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 60	11	Duy tr× gi¶m sinh lùc	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
@@ -342,41 +342,41 @@ GENRE	DETAIL_TYPE	CONTENT	UNREPLACABLE	UNREMOVABLE	VERSION	EXPIRE	TYPE	SCRIPTFIL
 62	4	Siªu Nh©n M× Gµ	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 62	5	Siªu Nh©n M× T«m	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 62	6	Sèng kh«ng yªu!	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-62	7	HËn §êi V« §èi	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-62	8	Xinh Kh«ng Kiªu	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+62	7	Peerless Resentment of Life	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+62	8	Beautiful Without Pride	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 62	9	Võa Kiªu Võa §iªu	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-62	10	Xinh G¸i Ngang Tr¸i	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-62	11	XÊu KÕt CÊu §Ñp	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-62	12	Teen Vâ L©m	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-62	13	Buån V× §Ñp Trai	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-62	14	BĞ Kháe BĞ §Ñp	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-62	15	Bóp Bª Vâ L©m	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+62	10	A Pretty Girl Against the Grain	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+62	11	Ugly Build, Pretty Structure	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+62	12	Teen of the Martial World	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+62	13	Sad Because of Being Handsome	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+62	14	Small, Healthy and Pretty	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+62	15	Doll of the Martial World	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 62	16	Mü Nh©n Vâ L©m	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-62	17	Mü N÷ Vâ L©m	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+62	17	Beauty of the Martial World	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 62	18	KiÒu N÷ Vâ L©m	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 62	19	Mü Nam Vâ L©m	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 62	20	Hoa Hång Vâ L©m	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-62	21	Vâ L©m TruyÒn Kú 2	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+62	21	Swordsman Online 2	0	0	0	0	0				\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 63	1	Vâ L©m B¸ch HiÓu Sinh	0	0	0	0	0	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 64	1	Vâ HiÒn	0	0	0	0	4				\UImage\ÎåĞĞÍ¼±ê\ÎäÕß.spr					
 64	2	Vâ T­íng	0	0	0	0	4				\UImage\ÎåĞĞÍ¼±ê\Îä½«.spr					
 64	3	Vâ V­¬ng	0	0	0	0	4				\UImage\ÎåĞĞÍ¼±ê\ÎäÍõ.spr					
 64	4	Vâ T«n	0	0	0	0	4				\UImage\ÎåĞĞÍ¼±ê\Îä×ğ.spr					
 64	5	Vâ Hoµng	0	0	0	0	4				\UImage\ÎåĞĞÍ¼±ê\Îä»Ê.spr					
-64	6	Vâ Th¸nh	0	0	0	0	4				\UImage\ÎåĞĞÍ¼±ê\ÎäÊ¥.spr					
-65	1	Du HiÖp	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\ÓÎÏÀ.spr					
+64	6	Martial Saint	0	0	0	0	4				\UImage\ÎåĞĞÍ¼±ê\ÎäÊ¥.spr					
+65	1	Wandering Hero	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\ÓÎÏÀ.spr					
 65	2	¦ng D­¬ng	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\Ó¥Ñï.spr					
 65	3	ChiÕn Cuång	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\Õ½¿ñ.spr					
 66	1	Chİ T«n V­¬ng Gi¶	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\wÎä»ê¶·ÆÇ\ÎäÊ¥.spr					
 66	2	§éc Bé Thiªn H¹	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\wÎä»ê¶·ÆÇ\°ÔÍõ.spr					
 66	3	Vâ l©m hµo kiÖt	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\wÎä»ê¶·ÆÇ\Ì©¶·.spr					
-66	4	Giang Hå Tinh Anh	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\wÎä»ê¶·ÆÇ\èÉĞÛ.spr					
-67	1	§¹i S­ Tû	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-67	2	NhŞ S­ Tû	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-67	3	Tam S­ Tû	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-67	11	§¹i S­ Huynh	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-67	12	NhŞ S­ Huynh	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-67	13	Tam S­ Huynh	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+66	4	Jianghu Elite	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\wÎä»ê¶·ÆÇ\èÉĞÛ.spr					
+67	1	Senior Martial Sister	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+67	2	Second Martial Sister	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+67	3	Third Martial Sister	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+67	11	Senior Martial Brother	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+67	12	Second Martial Brother	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+67	13	Third Martial Brother	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 67	14	Vâ HiÒn-T©n Tó	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color> T¨ng tÊn c«ng ngò hµnh tÊt c¶ thuéc tİnh 2<enter/>Kh¸ng ngò hµnh tÊt c¶ thuéc tİnh 2<enter/><color=yellow>HiÖu qu¶ Èn:<color> T¨ng tÊn c«ng ngò hµnh tÊt c¶ thuéc tİnh 2<enter/>Kh¸ng ngò hµnh tÊt c¶ thuéc tİnh 2	1	T¨ng tÊn c«ng ngò hµnh tÊt c¶ thuéc tİnh 2<enter/>Kh¸ng ngò hµnh tÊt c¶ thuéc tİnh 2	T¨ng tÊn c«ng ngò hµnh tÊt c¶ thuéc tİnh 2<enter/>Kh¸ng ngò hµnh tÊt c¶ thuéc tİnh 2
 67	15	Vâ SÜ-T©n Tó	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color> T¨ng tÊn c«ng ngò hµnh tÊt c¶ thuéc tİnh 4<enter/>Kh¸ng ngò hµnh tÊt c¶ thuéc tİnh 4<enter/><color=yellow>HiÖu qu¶ Èn:<color> T¨ng tÊn c«ng ngò hµnh tÊt c¶ thuéc tİnh 4<enter/>Kh¸ng ngò hµnh tÊt c¶ thuéc tİnh 4	1	T¨ng tÊn c«ng ngò hµnh tÊt c¶ thuéc tİnh 4<enter/>Kh¸ng ngò hµnh tÊt c¶ thuéc tİnh 4	T¨ng tÊn c«ng ngò hµnh tÊt c¶ thuéc tİnh 4<enter/>Kh¸ng ngò hµnh tÊt c¶ thuéc tİnh 4
 67	16	Vâ S­-T©n Tó	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color> T¨ng tÊn c«ng ngò hµnh tÊt c¶ thuéc tİnh 6<enter/>Kh¸ng ngò hµnh tÊt c¶ thuéc tİnh 6<enter/><color=yellow>HiÖu qu¶ Èn:<color> T¨ng tÊn c«ng ngò hµnh tÊt c¶ thuéc tİnh 6<enter/>Kh¸ng ngò hµnh tÊt c¶ thuéc tİnh 6	1	T¨ng tÊn c«ng ngò hµnh tÊt c¶ thuéc tİnh 6<enter/>Kh¸ng ngò hµnh tÊt c¶ thuéc tİnh 6	T¨ng tÊn c«ng ngò hµnh tÊt c¶ thuéc tİnh 6<enter/>Kh¸ng ngò hµnh tÊt c¶ thuéc tİnh 6
@@ -399,22 +399,22 @@ GENRE	DETAIL_TYPE	CONTENT	UNREPLACABLE	UNREMOVABLE	VERSION	EXPIRE	TYPE	SCRIPTFIL
 67	33	Vâ Th¸nh-§¹i HiÖp	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color> T¨ng tÊn c«ng ngò hµnh tÊt c¶ thuéc tİnh 22<enter/>Kh¸ng ngò hµnh tÊt c¶ thuéc tİnh 22<enter/><color=yellow>HiÖu qu¶ Èn:<color> T¨ng tÊn c«ng ngò hµnh tÊt c¶ thuéc tİnh 22<enter/>Kh¸ng ngò hµnh tÊt c¶ thuéc tİnh 22	1	T¨ng tÊn c«ng ngò hµnh tÊt c¶ thuéc tİnh 22<enter/>Kh¸ng ngò hµnh tÊt c¶ thuéc tİnh 22	T¨ng tÊn c«ng ngò hµnh tÊt c¶ thuéc tİnh 22<enter/>Kh¸ng ngò hµnh tÊt c¶ thuéc tİnh 22
 68	1	Vâ L©m T©n Tó	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 68	2	L·o ChiÕn H÷u	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-68	3	Ng­êi N¨ng §éng	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
+68	3	Active Player	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 68	4	NhiÖm Vô §¹t Nh©n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-69	1	Bang Chñ Vinh Dù	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\ÈÙÓş°ïÖ÷.spr					
-69	2	Bang Héi Vinh Danh	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\ÈÙÒ«°ïÅÉ.spr					
+69	1	Honored Guild Leader	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\ÈÙÓş°ïÖ÷.spr					
+69	2	Guild Hall of Fame	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\ÈÙÒ«°ïÅÉ.spr					
 70	1	Ph¸ Qu©n	0	0	0	0	5	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\wÎä»ê¶·ÆÇ\ÆÆ¾ü.spr	B¸n trong Ngù C¸c				
 71	1	Cöu Ngò Chİ T«n	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
-72	1	KÕt nghÜa	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\01½áÒå.spr					
+72	1	Sworn brotherhood	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\01½áÒå.spr					
 72	2	HuÒ Thñ	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\02Ğ¯ÊÖ.spr					
 72	3	Kim Lan	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\03½ğÀ¼.spr					
 72	4	TÒ T©m	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\04ÆëĞÄ.spr					
-72	5	§ång h­ëng	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\05Í¬Ïí.spr					
+72	5	Same homeland	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\05Í¬Ïí.spr					
 72	6	Phã Háa	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\06¸°»ğ.spr					
-72	7	QuÇn Hïng	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\07ÈºĞÛ.spr					
-72	8	Hîp m­u	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\08ºÏÄ±.spr					
-72	9	Chİ Khİ	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\09×³Ö¾.spr					
-72	10	§ång Cõu	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\10Í¬³ğ.spr					
+72	7	Heroic Throng	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\07ÈºĞÛ.spr					
+72	8	Joint Scheme	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\08ºÏÄ±.spr					
+72	9	Resolve	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\09×³Ö¾.spr					
+72	10	Same Vengeance	0	0	0	0	7	\script\global\playertitle.lua	Equip	UnEquip	\UImage\µÚÈı°æ\b°ï»á³ÆºÅ\10Í¬³ğ.spr					
 73	1	C¸i ThÕ Hµo KiÖt	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr					
 74	1	Thiªn Xu	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color> V« cô +50<enter/>TØ lÖ bŞ chÆn xuÊt chiªu -10%<enter/><color=yellow>HiÖu qu¶ Èn:<color> V« cô +50<enter/>TØ lÖ bŞ chÆn xuÊt chiªu -10%<enter/>	1	V« cô +50<enter/>TØ lÖ bŞ chÆn xuÊt chiªu -10%	V« cô +50<enter/>TØ lÖ bŞ chÆn xuÊt chiªu -10%
 74	2	Thiªn Toµn	0	0	0	0	3	\script\global\playertitle.lua	Equip	UnEquip	\UImage\ÎåĞĞÍ¼±ê\³ÆºÅ.spr		<color=yellow>HiÖu qu¶ danh hiÖu:<color> TØ lÖ ph¸t huy c«ng kİch lín nhÊt +10%<enter/>B¹o kİch +10<enter/><color=yellow>HiÖu qu¶ Èn:<color> TØ lÖ ph¸t huy c«ng kİch lín nhÊt +10%<enter/>B¹o kİch +10<enter/>	1	TØ lÖ ph¸t huy c«ng kİch lín nhÊt +10%<enter/>B¹o kİch +10	TØ lÖ ph¸t huy c«ng kİch lín nhÊt +10%<enter/>B¹o kİch +10

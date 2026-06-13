@@ -101,19 +101,19 @@ function process_fight_timeout(nCamp)
 		local nBeginTime = GetMissionV(MV_NPC_FIGHT_BEGIN_SONG+nCamp-1);
 		if nNpcType == SICK_NPC then
 			if nBeginTime - nLoop >= FIGHT_NPC_TIMEOUT1 then
-				BT_ShowDebugInfor("Qu¸ giê thï hËn NPC");
+				BT_ShowDebugInfor("Past hour hatred NPC");
 				Modify_Task_Step(nCamp,-2);
 				nTaskFailed = 1;
 			end;
 		elseif nNpcType == ANGRY_NPC then
 			if nBeginTime - nLoop >= FIGHT_NPC_TIMEOUT2 then
-				BT_ShowDebugInfor("Qu¸ giê phÉn né NPC");
+				BT_ShowDebugInfor("Past hour rage NPC");
 				Modify_Task_Step(nCamp,-3);
 				nTaskFailed = 1;
 			end;		
 		else
 			if nBeginTime - nLoop >= FIGHT_NPC_TIMEOUT3 then
-				BT_ShowDebugInfor("Qu¸ giê cuång b¹o NPC");
+				BT_ShowDebugInfor("Past hour frenzy NPC");
 				Modify_Task_Step(nCamp,-5);
 				nTaskFailed = 1;
 			end;		

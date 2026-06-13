@@ -19,7 +19,7 @@ function OnTimer()
 		if nLoop <= 6 then
 			SetTimerTime(GetTrigger(FIGHT_TRIGGER_ID),70);	--Ò»ÖùÏãÊ±¼ä
 			SetTaskTemp(TEMP_FIGHT_TIMER_LOOP,nLoop+1);
-			Msg2Player("Thêi gian §¬n ®Êu cßn: "..(7-nLoop).." nÐn nhang");
+			Msg2Player("Thêi gian §¬n ®Êu cßn: "..(7-nLoop).." incense sticks");
 			return 0;
 		end;
 		SetTaskTemp(TEMP_FIGHT_STATE,ROOM_STATE_END);

@@ -78,7 +78,7 @@ function newres_general()
 		"Bæn So¸i muèn kİch ho¹t nh©n ®«i kinh nghiÖm/double_exp_kick_off",
 		"Ta muèn quay vÒ T­¬ng D­¬ng (tèn 10 b¹c)/ask_reason",
 		"Ta muèn tiÕn vµo khu vùc thu thËp (tèn 5 b¹c)/go_gather",
-		"Kh«ng cã g×/gf_DoNothing",	
+		"Nothing/gf_DoNothing",	
 	}
 	Say(szNpcName..szSay,getn(tSay),tSay);
 end
@@ -267,7 +267,7 @@ function use_VIP_tainguyenchien()
 	gf_WriteLogEx("TAI NGUYEN CHIEN NEW LOG", "nhËn th­ëng thµnh c«ng", 1, "NhËn th­ëng lo¹i VIP")
 	local nDate = tonumber(date("%y%m%d"))
 	if nDate >= 130919 and nDate <=131013 then	
-		gf_AddItemEx2({2,1,30567 ,500}, "Nguyªn liÖu Event VIP TNC", "Hoat dong thang 08 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn VIP")
+		gf_AddItemEx2({2,1,30567 ,500}, "Resource Battle VIP Event Material", "Hoat dong thang 08 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn VIP")
 		Msg2Player("B¹n nhËn ®­îc 500 Nguyªn LiÖu Event")
 	end
 	gf_SetTaskByte(TSK_NEWRES_FINISH,BYTE_NEWRES_STATE,0)	
@@ -284,7 +284,7 @@ function use_jungong(nType)
 	elseif nType == 3 then
 		szType = "Qu©n C«ng Huy Hoµng"
 	end
-	Say(szNpcName.."Ng­¬i muèn sö dông <color=yellow>"..szType.." nhËn phÇn th­ëng. NÕu hoµn thµnh nhiÖm vô trong thêi gian Nguyªn So¸i kİch ho¹t thu thËp tµi nguyªn sÏ ®­îc nh©n ®«i kinh nghiÖm.",2,format("§ång ı/#confirm_use_jungong(%d)",nType),"Ta ch­a muèn nhËn th­ëng/gf_DoNothing")
+	Say(szNpcName.."Ng­¬i muèn sö dông <color=yellow>"..szType.." nhËn phÇn th­ëng. NÕu hoµn thµnh nhiÖm vô trong thêi gian Nguyªn So¸i kİch ho¹t thu thËp tµi nguyªn sÏ ®­îc nh©n ®«i kinh nghiÖm.",2,format("Agree/#confirm_use_jungong(%d)",nType),"Ta ch­a muèn nhËn th­ëng/gf_DoNothing")
 end
 
 function no_jungong()
@@ -529,7 +529,7 @@ function double_exp_kick_off()
 end
 
 function ask_reason()	
-	AskClientForString("leave","NhÑ nhµng rêi khái...",1,32,"Sao ph¶i rêi khái?");
+	AskClientForString("leave","Gently leaving...",1,32,"Sao ph¶i rêi khái?");
 end;	
 
 function leave(sLeaveMsg)
@@ -578,7 +578,7 @@ function AddMonthlyEventResourceAward(nType)
 	}
 	
 	if nDate >= 110225 and nDate <= 110327 then
-		gf_AddItemEx2({2, 1, 30287, tb_jun_gong_num[nType] * 10}, "Nguyªn liÖu ", "Hoat dong thang 3 nam 2011", "Tµi Nguyªn ChiÕn")
+		gf_AddItemEx2({2, 1, 30287, tb_jun_gong_num[nType] * 10}, "Material", "Hoat dong thang 3 nam 2011", "Resource Battle")
 	end
 end
 
@@ -589,7 +589,7 @@ function support_daotainguyen()
 	tinsert(tbSayDialog,"Xem thêi gian hç trî cßn l¹i/showTimeRemain")
 	tinsert(tbSayDialog,"N©ng cao tèc ®é (x2) thu thËp tµi nguyªn (tiªu hao 29 xu vËt phÈm)/#collect_res(1)")
 	tinsert(tbSayDialog,"N©ng cao tèc ®é (x3) thu thËp tµi nguyªn (tiªu hao 59 xu vËt phÈm)/#collect_res(2)")
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/gf_DoNothing")
+	tinsert(tbSayDialog,"End dialogue/gf_DoNothing")
 	
 	nSaySize = getn(tbSayDialog);
 	Say(szSayHead, nSaySize, tbSayDialog);		
@@ -602,7 +602,7 @@ function showTimeRemain()
 	if nRemain <= 0 then
 		Talk(1,"","B¹n ch­a thùc hiÖn kİch ho¹t hç trî ®µo tµi nguyªn")
 	else
-		Talk(1,"","Thêi gian hç trî cßn l¹i lµ: "..nRemain.." phót")
+		Talk(1,"","Thêi gian hç trî cßn l¹i lµ: "..nRemain.." minutes")
 	end
 	
 end
@@ -618,7 +618,7 @@ function collect_res(nType)
 --	local nRemain = GetTime - nTimeBegin
 
 	tinsert(tbSayDialog,"§ång ı kİch ho¹t/#confirm_collect_res("..nType..")"	)
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/gf_DoNothing")
+	tinsert(tbSayDialog,"End dialogue/gf_DoNothing")
 	
 	nSaySize = getn(tbSayDialog);
 	Say(szSayHead, nSaySize, tbSayDialog);

@@ -85,26 +85,26 @@ end
 -- ÉñÃØÉÌÈË¶Ô»°
 function viet_2008_51_gem_talk()
 	if is_viet_51_opened(1) == 0 then
-		Say("Ha ha, cuéc ®êi vÉn ®Ñp sao...", 0);
+		Say("Ha ha, life is still beautiful...", 0);
 		return
 	end
 	Say("Chóc mõng ngµy lÔ 30 th¸ng 4 vµ Quèc tÕ lao ®éng.",
 		3,
 		"\n§æi phÇn th­ëng/talk_award",
 		"\nNéi dung ho¹t ®éng/talk_help_1",
-		"Rêi khái/nothing");
+		"Leave/nothing");
 end
 function talk_help_1()
 	Say( "Trong thêi gian ho¹t ®éng, tham gia ho¹t ®éng th­¬ng héi, nhiÖm vô s­ m«n hoÆc Tµng KiÕm S¬n Trang cã thÓ nhËn ®­îc R­¬ng b¶o th¹ch, bªn trong cã chøa 1 viªn Ngò Linh Th¹ch, Lam Tinh Th¹ch hoÆc Hoµng B¶o Th¹ch, cã thÓ dïng c¸c lo¹i b¶o th¹ch nµy ®Ó ®æi phÇn th­ëng t¹i ®©y.",
 		2,
 		"PhÇn th­ëng gåm nh÷ng g×?/talk_help_2",
-		"Ch¼ng cã g× vui c¶/nothing()");
+		"There is nothing fun at all/nothing()");
 end
 function talk_help_2()
 	Say( " 2 Lam Tinh Th¹ch + 2 Hoµng B¶o Thach + 10 b¹c = 20.000 ®iÓm kinh nghiÖm\n 1 Ngò Linh Th¹ch + 2 Lam Tinh Th¹ch + 2Hoµng B¶o Th¹ch + 50 b¹c = 80.000 ®iÓm kinh nghiÖm, cã kh¶ n¨ng nhËn ®­îc phÇn th­ëng kh¸c.\nNg­êi ch¬i <color=red>cÊp 20<color> trë lªn míi cã thÓ tham gia ho¹t ®éng nµy, thêi gian ho¹t ®éng tõ <color=red>26-04-2008 ®Õn 24h00 18-05-2008<color>..",
 		1,
 		"Ta ®· hiÓu råi./viet_2008_51_gem_talk",
-		"Rêi khái/nothing");
+		"Leave/nothing");
 end
 function talk_award()
 	if GetLevel() < 20 then
@@ -119,7 +119,7 @@ function talk_award()
 		3,
 		"\n2 Lam Tinh Th¹ch + 2 Hoµng B¶o Th¹ch + 10 b¹c = 20.000 ®iÓm kinh nghiÖm./talk_award_1",
 		"\n1 Ngò Linh Th¹ch + 2 Lam Tinh Th¹ch + 2 Hoµng B¶o Th¹ch + 50 b¹c = 80.000 ®iÓm kinh nghiÖm, ngoµi ra cã kh¶ n¨ng nhËn ®­îc phÇn th­ëng kh¸c../talk_award_2",
-		"Rêi khái/nothing");
+		"Leave/nothing");
 end
 
 function talk_award_1()
@@ -131,7 +131,7 @@ function talk_award_1()
 	end
 	Say(msg,
 		2,
-		"Ta ®ång ý ®æi./talk_award_1_yes",
+		"I agree to exchange./talk_award_1_yes",
 		"Ta suy nghÜ l¹i!/talk_award");
 end
 
@@ -145,7 +145,7 @@ function talk_award_1_yes()
 		return
 	end
 	if GetCash() < 1000 then
-		Say("Kh«ng ®ñ ng©n l­îng..", 0);
+		Say("Not enough silver taels..", 0);
 		return
 	end
 	local gem_exp = GetTask(TASK_ID_VIET_2008_51_GEM_EXP);
@@ -171,12 +171,12 @@ function talk_award_2()
 	end
 	Say(msg,
 		2,
-		"Ta ®ång ý ®æi./talk_award_2_yes",
+		"I agree to exchange./talk_award_2_yes",
 		"Ta suy nghÜ l¹i!/talk_award");
 end
 t_gem_item_award = {
 	{68489,         "Ch­a", {0,0,0,1,1} },
-	{    1,     "Chiªm Y Phæ", {0,107,66,1,1} },
+	{    1,     "Zhanyi Manual", {0,107,66,1,1} },
 	{    5,   "Thiªn Hµ MËt tÞch", {0,107,64,1,1} },
 	{    5,   "Tö Hµ MËt tÞch", {0,107,65,1,1} },
 	{  500,   "Bæ Kim MËt tÞch", {0,107,61,1,1} },
@@ -184,11 +184,11 @@ t_gem_item_award = {
 	{  500,   "Ngò Quû MËt tÞch", {0,107,63,1,1} },
 	{  500,   "M¶nh Thiªn th¹ch", {2,2,7,1,1} },
 	{  500,       "Thiªn th¹ch", {2,2,8,1,1} },
-	{ 5000,       "B¨ng th¹ch", {2,1,149,1,1} },
-	{ 5000,   "M¶nh B¨ng th¹ch", {2,1,148,1,1} },
-	{ 3500,   "C©y B¸t Nh·", {2,0,398,1,1} },
-	{ 5500, "C©y B¸t Nh· nhá", {2,0,504,1,1} },
-	{10000,       "Lé thñy", {2,0,351,1,1} },
+	{ 5000,       "Ice Stone", {2,1,149,1,1} },
+	{ 5000,   "Ice Stone Fragment", {2,1,148,1,1} },
+	{ 3500,   "Prajna Tree", {2,0,398,1,1} },
+	{ 5500, "Small Prajna Tree", {2,0,504,1,1} },
+	{10000,       "Dew Water", {2,0,351,1,1} },
 }
 function talk_award_2_yes()
 	if GetItemCount(2, 1, 30005) < 1 then
@@ -204,7 +204,7 @@ function talk_award_2_yes()
 		return
 	end
 	if GetCash() < 5000 then
-		Say("Kh«ng ®ñ ng©n l­îng..", 0);
+		Say("Not enough silver taels..", 0);
 		return
 	end
 

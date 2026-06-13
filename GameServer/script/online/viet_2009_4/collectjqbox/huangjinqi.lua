@@ -14,7 +14,7 @@ function OnUse()
 	end
 	
 	-----ÅÐ¶Ï±³°üºÍ¸ºÖØ------------------------
-	if gf_Judge_Room_Weight(5, 50, "Xin lçi, ") == 0 then
+	if gf_Judge_Room_Weight(5, 50, "Sorry,") == 0 then
 		return 0
 	end
 	
@@ -34,7 +34,7 @@ function OnUse()
 		ModifyExp(JQ_GOLDEN_FLAG_EACH_EXP);
 		SetTask(JQ_TASK_GOLDEN_FLAG_EXP_MAX, GetTask(JQ_TASK_GOLDEN_FLAG_EXP_MAX) + JQ_GOLDEN_FLAG_EACH_EXP);
 		Msg2Player("B¹n nhËn ®­îc " .. JQ_GOLDEN_FLAG_EACH_EXP .. "Kinh nghiÖm");
-		WriteLog("[Ho¹t ®éng thu thËp hiÖu kú th¸ng 4]:" .. GetName() .. "NhËn ®­îc" .. JQ_GOLDEN_FLAG_EACH_EXP .. "Kinh nghiÖm");
+		WriteLog("[Ho¹t ®éng thu thËp hiÖu kú th¸ng 4]:" .. GetName() .. "Received" .. JQ_GOLDEN_FLAG_EACH_EXP .. "Kinh nghiÖm");
 	else
 		Msg2Player("H«m nay ®· sö dông Hoµng Kim Kú ®¹t ®Õn kinh nghiÖm cao nhÊt råi!");
 	end
@@ -45,7 +45,7 @@ function OnUse()
 	--»ñµÃÉùÍû
 	if nItem >= 8 and nItem <= 11 then 
 		ModifyReputation(JQ_YG_FLAG_ITEM_PARAM[nItem][7], 0);
-		Msg2Player("B¹n nhËn ®­îc " .. JQ_YG_FLAG_ITEM_PARAM[nItem][7] .. " ®iÓm" .. "Danh väng");		
+		Msg2Player("B¹n nhËn ®­îc " .. JQ_YG_FLAG_ITEM_PARAM[nItem][7] .. " ®iÓm" .. "Reputation");		
 		WriteLogEx("Hoat dong thang 4","Hoµng Kim Kú",JQ_YG_FLAG_ITEM_PARAM[nItem][7],JQ_YG_FLAG_ITEM_PARAM[nItem][1]);		
 		return 1;
 	end

@@ -31,7 +31,7 @@ function OnUse()
 		SetTask(TASK_PLAN_SMALLTREE_COUNT,0);	--Ã¿ÌìÖÖÐ¡Ê÷ÊýÇå¿Õ
 	end;
 	if GetTask(TASK_PLAN_SMALLTREE_COUNT) >= PLANT_SMALL_TREE_LIMIT then
-		Talk(1,"","H«m nay b¹n ®· trång <color=yellow>"..PLANT_SMALL_TREE_LIMIT.."c©y<color> Th¸i H­ B¸t Nh·, h¹t gièng cßn l¹i ®Ó ngµy mai trång tiÕp.");
+		Talk(1,"","Today you have planted <color=yellow>"..PLANT_SMALL_TREE_LIMIT.."c©y<color> Th¸i H­ B¸t Nh·, h¹t gièng cßn l¹i ®Ó ngµy mai trång tiÕp.");
 		return 0;
 	end;
 	local selTab = {
@@ -58,9 +58,9 @@ function plant()
 	DelItem(2,0,351,1);	--ÖÖÏÂµÄÊ±ºòÒ²ÐèÒªÒ»¸öÂ¶Ë®£¬Õâ¸öºÍÖÖ´óÊ÷²»Ò»Ñù£¬ÖÖ´óÊ÷Ê±ÖÖÏÂµÄÊ±ºò²»ÐèÒªÂ¶Ë®£¬Ò²ÊÇÒ»¸öbug°É£¬²»¹ýÓÃ£·¸öÂ¶Ë®¾Í¿ÉÒÔÖÖ´óÊ÷ÒÑ¾­ÉîÈëÃñÐÄ£¬ÏÖÔÚÒ²²»ºÃ¸ÄÁË¡£
 	if DelItem(2,0,504,1) == 1 then
 		local MapID,MapX,MapY = GetWorldPos()
-		local npcTreeIndex = CreateNpc(SMALLTREETYPE[1][1],GetName().." trång "..SMALLTREETYPE[1][2],MapID,MapX,MapY)
+		local npcTreeIndex = CreateNpc(SMALLTREETYPE[1][1],GetName().." plant"..SMALLTREETYPE[1][2],MapID,MapX,MapY)
 		if npcTreeIndex == 0 then
-			WriteLog("[Lçi ho¹t ®éng trång c©y Th¸i H­]:"..GetName().."Lóc trång c©y, trÞ quay l¹i hµm sè CreateNpc lµ 0. Tham sè nhËp CreateNpc lµ:"..SMALLTREETYPE[1][1]..","..GetName().." trång "..SMALLTREETYPE[1][2]..","..MapID..","..MapX..","..MapY);
+			WriteLog("[Lçi ho¹t ®éng trång c©y Th¸i H­]:"..GetName().."Lóc trång c©y, trÞ quay l¹i hµm sè CreateNpc lµ 0. Tham sè nhËp CreateNpc lµ:"..SMALLTREETYPE[1][1]..","..GetName().." plant"..SMALLTREETYPE[1][2]..","..MapID..","..MapX..","..MapY);
 		end;
 		SetNpcLifeTime(npcTreeIndex,TREELIFETIME)
 		SetTask(TASK_TREEINDEX_SMALL,npcTreeIndex);
@@ -95,10 +95,10 @@ function plant()
 --		end
 --	-----------------------------
 		Say("H«m nay, ®©y lµ lÇn thø <color=yellow>"..GetTask(TASK_PLAN_SMALLTREE_COUNT).."<color> b¹n trång c©y Th¸i H­ B¸t Nh· nhá, h«m nay b¹n vÉn cã thÓ trång <color=yellow>"..(PLANT_SMALL_TREE_LIMIT-GetTask(TASK_PLAN_SMALLTREE_COUNT)).."<color> c©y Th¸i H­ B¸t Nh· nhá.",0);		
-		StartTimeGuage("T­íi c©y",SMALLTREETYPE[1][3],0,1)
+		StartTimeGuage("Water the tree",SMALLTREETYPE[1][3],0,1)
 
 		if GetTask(TASK_PLAN_SMALLTREE_COUNT) == 16 and nDate <= 130120 then	
-			gf_AddItemEx2({2,1,30030, 20}, "TiÓu Nh­ Y1", "NIEN THU NHU Y", "hoµn thµnh 16 trång c©y")
+			gf_AddItemEx2({2,1,30030, 20}, "Tieu Nhu Y1", "NIEN THU NHU Y", "hoµn thµnh 16 trång c©y")
 		end
 		--ÎäÁÖvipÁî
 		_vc_PlantSmallBanRuo();

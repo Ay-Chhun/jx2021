@@ -56,7 +56,7 @@ function GetPlayerSex()
 	if (GetSex() == 1) then
 		mySex = "ThiÕu hiÖp";
 	elseif (GetSex() == 2) then
-		mySex = "C« n­¬ng";
+		mySex = "Young lady";
 	end;
 	return mySex;
 end;

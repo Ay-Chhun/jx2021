@@ -7,9 +7,9 @@ Include("\\script\\online\\viet_event\\200907\\event_head.lua");
 g_viet0908_event_title = "Hoat dong trong cay thang 8 (viet nam):";
 
 TREE_TYPE = {									--Ä£°åÃû£¬NPCÃû×Ö£¬³öÏÖ¸ÅÂÊ
-				{"MÇm hoa hång", "C©y HÐo óa",  5, "C©y HÐo óa"},
-				{"MÇm Hoa hång", "C©y BÊt Tö", 10, "C©y BÊt Tö"},
-				{" nh¸nh hoa hång", "C©y B¹ch Ng©n", 80, "C©y B¹ch Ng©n"},
+				{"MÇm hoa hång", "Withered Tree",  5, "Withered Tree"},
+				{"MÇm Hoa hång", "Immortal Tree", 10, "Immortal Tree"},
+				{" rose branch", "C©y B¹ch Ng©n", 80, "C©y B¹ch Ng©n"},
 				{"c©y §a MËt Hoa Qu¶ nhá", "C©y Hoµng Kim", 4, "C©y Hoµng Kim"},
 				{"c©y §a MËt Hoa Qu¶ lín", "C©y B¹ch Kim", 1, "C©y B¹ch Kim"},
 			}
@@ -38,27 +38,27 @@ CITY_NAME_ID =
 				{
 					[100] = "TuyÒn Ch©u",
 					[150] = "D­¬ng Ch©u",
-					[200] = "BiÖn Kinh",
+					[200] = "Bianjing",
 					[300] = "Thµnh §«",
 					[350] = "T­¬ng D­¬ng",
-					[400] = "§¹i Lý",
-					[500] = "Ph­îng T­êng"
+					[400] = "Da Li",
+					[500] = "Phoenix Soaring"
 				}
 
 SMALLEST_TREE_REWARD_ITEM_PARAM = {
-									{"§éc Cæ", 300,2, 17, 2, 0*24*60*60,20,0},
-									{"M·nh §éc Cæ", 50,2, 17, 3, 0*24*60*60,10,0},
-									{"§éc Yªu Cæ", 20, 2, 17, 4, 0*24*60*60,5,0},
-									{"HuyÕt Cæ", 300, 2, 17, 5, 0*24*60*60,20,0},
-									{"Thi HuyÕt Cæ", 50, 2, 17, 6, 0*24*60*60,10,0},
-									{"HuyÕt Tinh Cæ", 20, 2, 17, 7, 0*24*60*60,5,0},
-									{"H­¬ng Cæ", 1500, 2, 17, 8, 0*24*60*60,20,0},
-									{"Mª H­¬ng Cæ", 200, 2, 17, 9, 0*24*60*60,10,0},
-									{"§Ò H« Cæ", 20, 2, 17, 10, 0*24*60*60,5,0},
-									{"Thi Cæ", 300, 2, 17, 11, 0*24*60*60,20,0},
-									{"Tam Thi Cæ", 50,2, 17, 12, 0*24*60*60,10,0},
+									{"Poison Gu", 300,2, 17, 2, 0*24*60*60,20,0},
+									{"Fierce Poison Gu", 50,2, 17, 3, 0*24*60*60,10,0},
+									{"Poison Demon Gu", 20, 2, 17, 4, 0*24*60*60,5,0},
+									{"Blood Gu", 300, 2, 17, 5, 0*24*60*60,20,0},
+									{"Corpse Blood Gu", 50, 2, 17, 6, 0*24*60*60,10,0},
+									{"Blood Essence Gu", 20, 2, 17, 7, 0*24*60*60,5,0},
+									{"Fragrance Gu", 1500, 2, 17, 8, 0*24*60*60,20,0},
+									{"Enchanting Fragrance Gu", 200, 2, 17, 9, 0*24*60*60,10,0},
+									{"Summoning Gu", 20, 2, 17, 10, 0*24*60*60,5,0},
+									{"Corpse Gu", 300, 2, 17, 11, 0*24*60*60,20,0},
+									{"Three Corpses Gu", 50,2, 17, 12, 0*24*60*60,10,0},
 									{"Quú V­¬ng Cæ", 20,2, 17, 13, 0*24*60*60,5,0},
-									{"Yªu Cæ", 3800,2, 17, 14, 0*24*60*60,20,0},
+									{"Demon Gu", 3800,2, 17, 14, 0*24*60*60,20,0},
 									{"Thùc Yªu Cæ", 1000,2, 17, 15, 0*24*60*60,10,0},
 									{"Yªu Hoµng Cæ", 20,2, 17, 16, 0*24*60*60,5,0},
 									{"T©m Cæ", 300, 2, 17, 17, 0*24*60*60,20,0},
@@ -67,14 +67,14 @@ SMALLEST_TREE_REWARD_ITEM_PARAM = {
 									{"HuyÔn Cæ", 1000,2, 17, 20, 0*24*60*60,20,0},
 									{"B¨ng HuyÔn Cæ", 50,2, 17, 21, 0*24*60*60,10,0},
 									{"Vong Tiªn Cæ", 20,2, 17, 22, 0*24*60*60,5,0},
-									{"Tµm Cæ", 300,2, 17, 23, 0*24*60*60,20,0},
-									{"HuyÕt Tµm Cæ", 50,2, 17, 24, 0*24*60*60,10,0},
-									{"Kim Tµm Cæ", 20,2, 17, 25, 0*24*60*60,5,0},
-									{"Linh Cæ", 300,2, 17, 26, 0*24*60*60,20,0},
-									{"Linh Lung Cæ", 50,2, 17, 27, 0*24*60*60,10,0},
+									{"Silkworm Gu", 300,2, 17, 23, 0*24*60*60,20,0},
+									{"Blood Silkworm Gu", 50,2, 17, 24, 0*24*60*60,10,0},
+									{"Gold Silkworm Gu", 20,2, 17, 25, 0*24*60*60,5,0},
+									{"Spirit Gu", 300,2, 17, 26, 0*24*60*60,20,0},
+									{"Exquisite Gu", 50,2, 17, 27, 0*24*60*60,10,0},
 									{"ThÊt Th¸i TiÓu Thiªn Cæ", 20,2, 17, 28,0*24*60*60,5,0},
-									{"Ma Cæ", 100,2, 17, 29, 0*24*60*60,20,0},
-									{"U ¶nh Cæ", 50,2, 17, 30, 0*24*60*60,10,0},
+									{"Demon Gu", 100,2, 17, 29, 0*24*60*60,20,0},
+									{"Shadow Gu", 50,2, 17, 30, 0*24*60*60,10,0},
 									{"V« ¶nh Ma Cæ", 20,2, 17, 31, 0*24*60*60,5,0},
 	};
 
@@ -95,25 +95,25 @@ ETERNAL_TREE_REWARD_ITEM_PARAM = {
 	};
 --»Æ½ðÊ÷½±ÀøÎïÆ·£ºÎïÆ·Ãû£¬³öÏÖ¸ÅÂÊ£¬Ö÷ÀàÐÍ£¬¸±ÀàÐÍ£¬ÏêÏ¸ÀàÐÍ£¬Ê¹ÓÃÆÚÏÞ£¬·¢·ÅÊýÁ¿
 GOLDEN_TREE_REWARD_ITEM_PARAM = {
-									{"Tiªu KiÕp t¸n", 5000, 2, 0, 141, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1,0},
+									{"Tribulation Dispel Powder", 5000, 2, 0, 141, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1,0},
 									{"ThÇn hµnh bÝ phæ", 2295, 0, 200, 39, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1,0},
-									{"Tu Ch©n YÕu QuyÕt", 2500, 2, 0, 554, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1,0},
+									{"Xiu Zhen Yao Jue", 2500, 2, 0, 554, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1,0},
 									{"Tö Kim Hång Bao", 200, 2, 1, 537, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1,0},
 									{"§¹i hång bao hoµng kim", 5, 2, 1, 539, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1,0}
 	};
 
 --°×½ðÊ÷½±ÀøÎïÆ·£ºÎïÆ·Ãû£¬³öÏÖ¸ÅÂÊ£¬Ö÷ÀàÐÍ£¬¸±ÀàÐÍ£¬ÏêÏ¸ÀàÐÍ£¬Ê¹ÓÃÆÚÏÞ£¬·¢·ÅÊýÁ¿
 WHITE_TREE_REWARD_ITEM_PARAM = {
-									{"Bé C¶nh", 500, 0, 105, 13, PLANT_TREE_REWARD_ITEM_TIME_LIMIT1, 1,1},
+									{"Scenery Set", 500, 0, 105, 13, PLANT_TREE_REWARD_ITEM_TIME_LIMIT1, 1,1},
 									{"Hèt L«i B¸c", 500, 0, 105, 12, PLANT_TREE_REWARD_ITEM_TIME_LIMIT1, 1,1},
-									{"XÝch Thè", 500, 0, 105, 9, PLANT_TREE_REWARD_ITEM_TIME_LIMIT1, 1,1},
+									{"Red Hare", 500, 0, 105, 9, PLANT_TREE_REWARD_ITEM_TIME_LIMIT1, 1,1},
 									{"Tr¶o Hoµng Phi §iÖn", 500, 0, 105, 11, PLANT_TREE_REWARD_ITEM_TIME_LIMIT1, 1,1},
-									{"Phiªu Vò", 500, 0, 105, 15, PLANT_TREE_REWARD_ITEM_TIME_LIMIT1, 1,1},
-									{"Bµn Long bÝch", 5499, 2, 1, 1000, PLANT_TREE_REWARD_ITEM_TIME_LIMIT1, 1,0},
+									{"Piao Wu", 500, 0, 105, 15, PLANT_TREE_REWARD_ITEM_TIME_LIMIT1, 1,1},
+									{"Coiling Dragon Jade", 5499, 2, 1, 1000, PLANT_TREE_REWARD_ITEM_TIME_LIMIT1, 1,0},
 									{"V« NgÊn Thñy", 500, 2, 1, 503, PLANT_TREE_REWARD_ITEM_TIME_LIMIT1, 1,0},
-									{"Sæ tay sèng", 700, 2, 19, 1, PLANT_TREE_REWARD_ITEM_TIME_LIMIT1, 1,0},
+									{"Living Notebook", 700, 2, 19, 1, PLANT_TREE_REWARD_ITEM_TIME_LIMIT1, 1,0},
 									{"Nh©n S©m V¹n N¨m", 699, 2, 1, 30071, PLANT_TREE_REWARD_ITEM_TIME_LIMIT1, 1,0},
-									{"TÈy Tñy linh ®¬n", 100, 2, 0, 137, PLANT_TREE_REWARD_ITEM_TIME_LIMIT1, 1,0},
+									{"Marrow-Cleansing Spirit Pill", 100, 2, 0, 137, PLANT_TREE_REWARD_ITEM_TIME_LIMIT1, 1,0},
 									{"B¶o R­¬ng §Æc BiÖt", 1, 2, 1, 30091, PLANT_TREE_REWARD_ITEM_TIME_LIMIT1, 1,0},
 									{"Ngò Hµnh MËt tÞch", 1, 0, 107, 155, 0, 1,0},
 	};
@@ -122,9 +122,9 @@ WHITE_TREE_REWARD_ITEM_PARAM = {
 SILVER_TREE_REWARD_ITEM_PARAM = {
 									{"B¨ng Th¹ch", 6000, 2, 1, 149, 0*24*60*60, 1,0},
 									{"ThÕ Th©n Phï", 200, 2, 0, 556, 15*24*60*60, 1,0},
-									{"B¸t Nh· Lín", 190, 2, 0, 398, 15*24*60*60, 1,0},
+									{"Large Prajna", 190, 2, 0, 398, 15*24*60*60, 1,0},
 									{"Th¸i DÞch Hçn Nguyªn C«ng §å", 10, 2, 0, 1082,  0*24*60*60, 1,0},
-									{"Kh«ng tróng g×", 3600, 0, 0, 0, 0, 0, 0},
+									{"Hit nothing", 3600, 0, 0, 0, 0, 0, 0},
 	};
 
 --°×ÒøÊ÷µÄ¾­Ñé½±Àø£º¾­ÑéÖµ£¬¸ÅÂÊ
@@ -149,7 +149,7 @@ WHITE_GOLDEN_TREE_EXP_REWARD_PARAM = {
 };
 
 SEED_AWARD_COUNT = {
-									{"B¸t Nh· Chøng Th­", 2, 1, 30114, 15 * 24 * 3600, 1,0},
+									{"Prajna Certificate", 2, 1, 30114, 15 * 24 * 3600, 1,0},
 									{"§Êu Hån", 2, 1, 1157, 15 * 24 * 3600, 1,0},									
 									{"Qu©n C«ng Ch­¬ng", 2, 1, 9999, 15 * 24 * 3600, 1,0},
 									{"Qu©n C«ng §¹i", 2, 1, 9998, 15 * 24 * 3600, 1,0},
@@ -227,7 +227,7 @@ function getDateTimeString(nSecond)
 		sTime = sTime .. nHour .. "h ";
 	end
 	if nMin > 0 then
-		sTime = sTime .. nMin .. " phót ";
+		sTime = sTime .. nMin .. " minutes";
 	end
 	if nSec >= 0 then
 		sTime = sTime .. nSec .. " Gi©y ";

@@ -4,7 +4,7 @@ Include("\\script\\online_activites\\task_values.lua");
 Include("\\script\\task_access_code_def.lua")
 
 CR_TEMPLATE = "Giang hå hµo kiÖt";
-CR_NAME = "Xa phu ®Êu tr­êng tuyÕt";
+CR_NAME = "Snow Battlefield Coachman";
 
 SB_ACTIVITY_ID = 23;
 SB_COST = 50000; --201301ÖØ¿ª»î¶¯ÐÞ¸Ä
@@ -67,10 +67,10 @@ SB_DIALOG_BOSS_NAME = "Thiªn S¬n TuyÕt Yªu (®èi tho¹i)";
 SB_ATTACK_BOSS_TEMPLATE = "BOSS tuyÕt yªu chiÕn ®Êu";
 SB_ATTACK_BOSS_NAME = "Thiªn S¬n TuyÕt Yªu (boss)";
 SB_MONSTER1_TEMPLATE = "TuyÕt qu¸i 1";
-SB_MONSTER1_NAME = "TiÓu TuyÕt Qu¸i";
+SB_MONSTER1_NAME = "Small Snow Monster";
 SB_MONSTER1_COUNT = 20;
 SB_MONSTER2_TEMPLATE = "TuyÕt qu¸i 3";
-SB_MONSTER2_NAME = "§¹i TuyÕt Qu¸i";
+SB_MONSTER2_NAME = "Great Snow Monster";
 SB_MONSTER2_COUNT = 4;
 SB_MONSTER_COUNT_PER_WAVE = getn(SB_MonsterSpawnPointList) * (SB_MONSTER1_COUNT+SB_MONSTER2_COUNT)
 
@@ -263,7 +263,7 @@ function SB_OnEntered()
 	SB_SetState();
 	SB_LearnSkill();
 	SB_LockEquipment(1);	
-	gf_WriteLogEx("NEM TUYET 022013bk", "kick ho¹t thµnh c«ng", 1, "B¸o danh tham gia ®¸nh tuyÕt")
+	gf_WriteLogEx("NEM TUYET 022013bk", "kick ho¹t thµnh c«ng", 1, "Register to take part in the snow battle")
 end
 
 function SB_Join()
@@ -461,7 +461,7 @@ function SB_TestKillAll()
 	local npcIndices = GetMapNpcIdx(SubWorldIdx2ID(SubWorld));
 	for i=1, getn(npcIndices) do
 		local npcName = GetNpcName(npcIndices[i]);
-		if npcName == "TiÓu TuyÕt Qu¸i" or npcName == "§¹i TuyÕt Qu¸i" then
+		if npcName == "Small Snow Monster" or npcName == "Great Snow Monster" then
 			Death(npcIndices[i]);
 		end
 	end

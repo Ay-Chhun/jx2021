@@ -21,31 +21,31 @@ end
 
 tTask = {
     {"Nép 1 c¸i ®¸ quý cÊp 1", del_gem_lv1, 1 },
-    {"Nép 1 §æi Tiªu LÖnh", {2,95,918,1}},
-    {"Nép 1 Ng­ng Tinh Lé", {2,1,30804,1}},
+    {"Submit 1 Doi Tieu Token", {2,95,918,1}},
+    {"Submit 1 Ngung Tinh Lo", {2,1,30804,1}},
     {"Nép 1 ThiÕt Tinh cÊp 1", {2,1,30533,1}},
-    {"Nép 1 Tiªu KiÕp T¸n", {2,0,141,1}},
-    {"Nép 1 Huy Ch­¬ng §ång ChÕ", {0,153,1,1}},
-    {"Nép 1 Giµy V¶i Th«", {0,154,1,1}},
+    {"Submit 1 Tieu Kiep Tan", {2,0,141,1}},
+    {"Submit 1 Copper-Made Medal", {0,153,1,1}},
+    {"Submit 1 Coarse Cloth Shoes", {0,154,1,1}},
     {"Nép 1 ¸o Choµng T¹o Bè", {0,152,1,1}},
-    {"Nép 1 Huy Ch­¬ng Anh Hïng", {2,1,30499,1}},
+    {"Submit 1 Hero Medal", {2,1,30499,1}},
     {"Nép 1 LuyÖn L« ThiÕt Kho¸ng", {2,1,30537,1}},
     {"Nép 1 TÈy T©m Th¹ch Kho¸ng", {2,1,30536,1}},
     {"Nép 1 H¾c Ngäc §o¹n Tôc Cao", {1,0,6,1}},
-    {"Nép 1 ChØ HuyÕt T¸n", {1,0,3,1}},
+    {"Submit 1 Chi Huyet Tan", {1,0,3,1}},
     {"Nép 1 Ngò Hoa Ngäc Lé Hoµn", {1,0,15,1}},
     {"Nép 1 V¹n VËt Quy Nguyªn §¬n", {1,0,11,1}},
-    {"Nép 1 TiÓu Hoµn ®¬n", {1,0,7,1}},
-    {"Nép 1 Ých KhÝ T¸n", {1,0,13,1}},
+    {"Submit 1 Small Restoration Pill", {1,0,7,1}},
+    {"Submit 1 Ich Khi Tan", {1,0,13,1}},
     {"Nép 1 Hµo HiÖp LÖnh", {2,95,2084,1}},
     {"Nép 1 L«i Viªm Th¹ch", {2,1,30683,1}},
-    {"Nép 1 Viªm Linh Ti", {2,1,30671,1}},
-    {"Nép 1 Da Ma Lang", {2,1,30672,1}},
+    {"Submit 1 Viem Linh Ti", {2,1,30671,1}},
+    {"Submit 1 Da Ma Lang", {2,1,30672,1}},
     {"Nép 1 HuyÒn Viªm ThiÕt", {2,1,30670,1}},
-    {"Nép 1 Da §Þa Long", {2,1,30673,1}},
-    {"Nép 1 Huy Ch­¬ng ThiÕt ChÕ", {0,153,2,1}},
+    {"Submit 1 Da Dia Long", {2,1,30673,1}},
+    {"Submit 1 Iron-Made Medal", {0,153,2,1}},
     {"Nép 1 ¸o Choµng CÈm §o¹n", {0,152,2,1}},
-    {"Nép 1 Kim L¨ng Töu", {2,95,822,1}},
+    {"Submit 1 Kim Lang Wine", {2,95,822,1}},
 }
 
 function check_condition(bNotify)
@@ -146,7 +146,7 @@ function npc_talk_finish_rand_task(bConfirm)
             
             tinsert(tbSay, format("%s/#npc_talk_finish_rand_task(1)", "Ch¾c ch¾n hoµn thµnh"))
             tinsert(tbSay, format("%s/pass_task", "Bá qua nhiÖm vô"))
-            tinsert(tbSay, format("%s/nothing", "Ra khái"))
+            tinsert(tbSay, format("%s/nothing", "Exit"))
             
             Say(szTitle, getn(tbSay), tbSay)
 			return 0
@@ -164,7 +164,7 @@ function pass_task(bConfirm)
 		local szTitle = format("<color=gold>%s:<color>%s", GetTargetNpcName(), szTip)
 		local tbSay = {}
         tinsert(tbSay, format("%s/#pass_task(1)", "XÊc nhËn bá qua"))
-        tinsert(tbSay, format("%s/nothing", "Ra khái"))
+        tinsert(tbSay, format("%s/nothing", "Exit"))
         
         Say(szTitle, getn(tbSay), tbSay)
 		return 0

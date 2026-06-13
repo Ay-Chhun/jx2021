@@ -65,7 +65,7 @@ function main()
 	if tbKillNpcWeekly:CheckCondition(tbKillNpcWeekly.nActivityID) == 1 then
 		tbKillNpcWeekly:NpcShowMainDialog(tbSay)
 	end
-	tinsert(tbSay, "Ra khái/nothing")
+	tinsert(tbSay, "Leave/nothing")
 	Say("Muèn th­ëng thøc ®iÖu móa cña ta xin ®îi ®Õn tèi h·y quay l¹i!",getn(tbSay),tbSay);
 	
 end;

@@ -106,7 +106,7 @@ t_can_use_map =
 }
 
 function OnUse(idx)
-	Say("Sö dông XuÊt S­ Tiªu ®Ó gäi ra s¸t h¹ch viªn cña Quèc Tö Gi¸m, S­ ®å hîp søc ®Ó tiªu diÖt. Chó ı ®å ®Ö ph¶i tÊn c«ng cuèi cïng. B¹n quyÕt ®Şnh dïng chø? \n<color=red>Xin x¸c nhËn b¹n ®· nhËn ®­îc toµn bé bæng léc, ®å ®Ö mét khi xuÊt s­, nh÷ng bæng léc ch­a nhËn th× kh«ng thÓ nhËn n÷a.<color>", 2, "§óng/yes_use", "Sai/no_say")
+	Say("Sö dông XuÊt S­ Tiªu ®Ó gäi ra s¸t h¹ch viªn cña Quèc Tö Gi¸m, S­ ®å hîp søc ®Ó tiªu diÖt. Chó ı ®å ®Ö ph¶i tÊn c«ng cuèi cïng. B¹n quyÕt ®Şnh dïng chø? \n<color=red>Xin x¸c nhËn b¹n ®· nhËn ®­îc toµn bé bæng léc, ®å ®Ö mét khi xuÊt s­, nh÷ng bæng léc ch­a nhËn th× kh«ng thÓ nhËn n÷a.<color>", 2, "Yes/yes_use", "Sai/no_say")
 end
 
 function yes_use()

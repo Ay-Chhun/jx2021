@@ -397,7 +397,7 @@ end
 
 function JDYY_ConfirmClose(szNpcName)
 	local szMsg = format("<color=green>%s:<color> ®ång ý rêi ¶i?", szNpcName);
-	suSay(szMsg, 2, "Rêi khái/JDYY_CloseMission", "Hñy bá/nothing");
+	suSay(szMsg, 2, "Rêi khái/JDYY_CloseMission", "Cancel/nothing");
 end
 
 function JDYY_CloseMission()
@@ -514,7 +514,7 @@ function JDYY_Msg2Player(nPlayerIndex, szMsg)
 end
 
 function JDYY_GivePrize(szStageId)
-	local szDifType = (GetMissionV(this.mv_02) == eDifType.NORMAL and "Th­êng") or "Anh Hïng";
+	local szDifType = (GetMissionV(this.mv_02) == eDifType.NORMAL and "Common") or "Hero";
 	WriteLog(format("[KiÕm §·ng YÕn V©n.%s] [Qua ¶i %s] [§éi tr­ëng RoleName:%s Account:%s]", szDifType, szStageId, JDYY_GetCaptainName(), JDYY_GetCaptainAccount()));
 	local nDifType = GetMissionV(this.mv_02);
 	
@@ -557,8 +557,8 @@ end
 
 function JDYY_GiveKillBossPop(szDifType)     -- JDYYÃ¿É±ËÀÒ»¸öBOSS»ñµÃµÄÉùÍû
 	local popVar=0;
-	if szDifType =="Th­êng" then popVar = 4
-	elseif szDifType =="Anh Hïng" then popVar = 4 
+	if szDifType =="Common" then popVar = 4
+	elseif szDifType =="Hero" then popVar = 4 
 	end
 	AddPop(6,popVar);
 
@@ -722,7 +722,7 @@ function JDYY_RollCardCallBack(id)
 	end
 	local szStageId = GetMissionS(this.MS_STAGE);
 	local nDifType = GetMissionV(this.mv_02);
-	local szDiyType = (nDifType == eDifType.NORMAL and "Th­êng") or "Anh Hïng";
+	local szDiyType = (nDifType == eDifType.NORMAL and "Common") or "Hero";
 	
  	local szAwardFree = tAward[nDifType][1]
  	local szAwardIB   = tAward[nDifType][2]

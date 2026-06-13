@@ -48,10 +48,10 @@ LOC_G_S_EARTH	HÖ Thæ
 LOC_G_S_NONE	Ch­a
 LOC_G_LUCKSTAR	AddGlobalNews([[Chóc mõng %s ®· trë thµnh Ng«i sao may m¾n ngµy h«m nay!]]);
 LOC_G_MASKED_MAN1	V« Danh ThÞ
-LOC_G_MASKED_MAN2	Ng­êi thÇn bÝ
+LOC_G_MASKED_MAN2	Mysterious Person
 LOC_G_MASKED_MAN3	H¾c y hiÖp
 LOC_G_MASKED_MAN4	Giang hå kh¸ch
-LOC_G_FACTION_NEW	Gia nhËp giang hå
+LOC_G_FACTION_NEW	Join the martial world
 LOC_G_FACTION_OLD	HiÖp kh¸ch giang hå
 LOC_G_PLAYERTONG_0	Trong thêi gian l«i ®µi, thao t¸c trôc xuÊt ng­êi kh¸c bÞ v« hiÖu hãa!
 LOC_G_PLAYERTONG_1	Trong thêi gian c«ng thµnh, thao t¸c trôc xuÊt ng­êi kh¸c bÞ v« hiÖu hãa!
@@ -76,7 +76,7 @@ LOC_G_NPC_2	B¨ng
 LOC_G_NPC_3	§éc
 LOC_G_NPC_4	Lo¹n
 LOC_G_NPC_5	MÖt 
-LOC_G_TEAM_1	Tæ
+LOC_G_TEAM_1	Team
 LOC_G_PLAYER_0	WriteLog([[PlayerIndex Error:%s:%s]])
 LOC_G_PLAYER_1	Kh«ng thÓ sö dông ®iÓm kü n¨ng ®Ó t¨ng cÊp kü n¨ng %s cña b¹n
 LOC_G_PLAYER_2	Tin tøc t¨ng cÊp kü n¨ng.
@@ -104,8 +104,8 @@ LOC_G_PLAYERSET_3	Qu¶n gia Ng« phñ
 LOC_G_PlayerStall_0	Mua ®å
 LOC_G_PlayerStall_2	Mai mèt sÏ ®Õn
 LOC_G_ITEM_0	<color=White>VËt phÈm hiÖn cã:
-LOC_G_ITEM_1	CÊp:
-LOC_G_ITEM_2	 ®ång 
+LOC_G_ITEM_1	Level:
+LOC_G_ITEM_2	 copper
 LOC_G_ITEM_3	<color=White>Thuéc tÝnh ngò hµnh:<color=Metal> Kim
 LOC_G_ITEM_4	<color=White>Thuéc tÝnh ngò hµnh:<color=Wood> Méc
 LOC_G_ITEM_5	<color=White>Thuéc tÝnh ngò hµnh:<color=Water> Thñy
@@ -113,17 +113,17 @@ LOC_G_ITEM_6	<color=White>Thuéc tÝnh ngò hµnh:<color=Fire> Háa
 LOC_G_ITEM_7	<color=White>Thuéc tÝnh ngò hµnh:<color=Earth> Thæ
 LOC_G_ITEM_8	<color=White>Kh«ng bÞ mµi mßn<color>
 LOC_G_ITEM_9	§é bÒn:
-LOC_G_ITEM_10	M·o
+LOC_G_ITEM_10	Helmet
 LOC_G_ITEM_11	Y phôc
 LOC_G_ITEM_12	D©y l­ng
 LOC_G_ITEM_13	Vò khÝ
-LOC_G_ITEM_14	§«i giµy
-LOC_G_ITEM_15	Hé uyÓn
+LOC_G_ITEM_14	Pair of Boots
+LOC_G_ITEM_15	Slender woman
 LOC_G_ITEM_16	H¹ng liªn
 LOC_G_ITEM_17	NhÉn ph¶i (trªn)
 LOC_G_ITEM_18	NhÉn tr¸i (d­íi)
 LOC_G_ITEM_19	D©y l­ng
-LOC_G_ITEM_20	Thó c­ìi
+LOC_G_ITEM_20	Mounts
 LOC_G_ITEM_21	CÇn %s cña %s vµ %s ®Ó kÝch ho¹t thuéc tÝnh ¢m
 LOC_G_ITEM_22	Ngo¹i c«ng:
 LOC_G_ITEM_23	Néi kÝch :
@@ -243,20 +243,20 @@ LOC_G_WEAPON_EFFECT_20	B¹n ®ang c­ìi ngùa, kh«ng thÓ gäi hån khi ë trªn ngùa.
 LOC_G_WEAPON_EFFECT_21	Linh ph¸ch cña %s ®· bÞ hñy diÖt.
 LOC_G_LIFE_SKILL_0_1	§èn c©y
 LOC_G_LIFE_SKILL_0_2	Lµm da
-LOC_G_LIFE_SKILL_0_3	Canh t¸c
+LOC_G_LIFE_SKILL_0_3	Farm
 LOC_G_LIFE_SKILL_0_4	H¸i thuèc
 LOC_G_LIFE_SKILL_0_5	§µo kho¸ng
 LOC_G_LIFE_SKILL_0_6	KÐo t¬
 LOC_G_LIFE_SKILL_0_7	TËp linh
-LOC_G_LIFE_SKILL_1_1	Kü nghÖ gia truyÒn
+LOC_G_LIFE_SKILL_1_1	Family Heirloom Craft
 LOC_G_LIFE_SKILL_1_2	ChÕ t¹o binh khÝ dµi
 LOC_G_LIFE_SKILL_1_3	ChÕ t¹o binh khÝ ng¾n
 LOC_G_LIFE_SKILL_1_4	ChÕ t¹o kú m«n binh khÝ
-LOC_G_LIFE_SKILL_1_5	Lµm hé gi¸p
-LOC_G_LIFE_SKILL_1_6	ChÕ thuèc
-LOC_G_LIFE_SKILL_1_7	NÊu n­íng
+LOC_G_LIFE_SKILL_1_5	Make armor
+LOC_G_LIFE_SKILL_1_6	Medicine Crafting
+LOC_G_LIFE_SKILL_1_7	Cooking
 LOC_G_LIFE_SKILL_1_8	ChÕ phï
-LOC_G_LIFE_SKILL_1_9	H¹ trang
+LOC_G_LIFE_SKILL_1_9	Lower garment
 LOC_G_LIFE_SKILL_1_10	§Çu qu¸n
 LOC_G_STALL_ITEM_CANNOT_DROP	VËt phÈm nµy kh«ng thÓ bµy b¸n!
 LOC_G_STORE_ITEM_CANNOT_DROP	VËt phÈm nµy kh«ng thÓ ®Æt vµo cöa hiÖu!
@@ -418,9 +418,9 @@ LOC_G_WAR_HORSE_DESC	D­¬ng M«n chiÕn m·
 LOC_G_PROGRESS_DESC_1	Tô khÝ
 LOC_G_PROGRESS_DESC_2	Nghiªn cøu
 LOC_G_PROGRESS_DESC_3	T¨ng c­êng
-LOC_G_PROGRESS_DESC_4	Thu thËp
+LOC_G_PROGRESS_DESC_4	Collect
 LOC_G_PROGRESS_DESC_5	ChuyÓn tiÕp
-LOC_G_PROGRESS_DESC_6	Thó c­ìi
+LOC_G_PROGRESS_DESC_6	Mounts
 LOC_G_PROGRESS_DESC_7	TiÕn ®é
 LOC_G_PROGRESS_DESC_8	Tu luyÖn
 LOC_G_PROGRESS_DESC_9	Né khÝ
@@ -490,7 +490,7 @@ LOC_G_Skills_26	VËt lý
 LOC_G_Skills_27	L©n cËn 
 LOC_G_Skills_28	Ch¾c ch¾n 
 LOC_G_Skills_29	§éi h÷u
-LOC_G_Skills_30	KÎ thï
+LOC_G_Skills_30	Enemy
 LOC_G_Skills_31	VËt thÓ
 LOC_G_Skills_32	Ta
 LOC_G_Skills_33	§é chÝnh x¸c 
@@ -584,7 +584,7 @@ LOC_G_PlayerPK_1	Kinh nghiÖm ©m cña b¹n qu¸ nhiÒu, kh«ng thÓ tiÕn hµnh cõu s¸t!
 LOC_G_PlayerPK_2	§èi ph­¬ng tõ chèi yªu cÇu cña b¹n!
 LOC_G_ProtocolProcess_0	Cã ng­êi 
 LOC_G_ProtocolProcess_1	l­îng
-LOC_G_ProtocolProcess_2	Ng©n l­îng
+LOC_G_ProtocolProcess_2	Silver tael
 LOC_G_ProtocolProcess_3	Cã ng­êi
 LOC_G_ProtocolProcess_4	Bang chñ ®· ph¸t tiÒn cho b¹n: %d!
 LOC_G_ProtocolProcess_5	Ch­a bËt chøc n¨ng chuyÓn ph¸t tin tøc khi rêi m¹ng!
@@ -622,22 +622,22 @@ LOC_G_ScriptFuns_17	Danh väng cña b¹n t¨ng thªm %d ®iÓm!
 LOC_G_MagicDesc_0	Néi lùc 
 LOC_G_MagicDesc_1	Sinh lùc
 LOC_G_MagicDesc_2	ThÓ lùc
-LOC_G_MagicDesc_3	Ng©n l­îng
+LOC_G_MagicDesc_3	Silver tael
 LOC_G_MagicDesc_4	T¨ng
-LOC_G_MagicDesc_5	Gi¶m
-LOC_G_MagicDesc_6	N÷
+LOC_G_MagicDesc_5	Decrease
+LOC_G_MagicDesc_6	Female
 LOC_G_MagicDesc_7	Nam
 LOC_G_MagicDesc_8	KiÕm
 LOC_G_MagicDesc_9	§¬n ®ao
 LOC_G_MagicDesc_10	c«n bæng
 LOC_G_MagicDesc_11	Th­¬ng
-LOC_G_MagicDesc_12	Chïy
+LOC_G_MagicDesc_12	Chui
 LOC_G_MagicDesc_13	Song ®ao
 LOC_G_MagicDesc_14	TÊt c¶
 LOC_G_MagicDesc_15	¸m khÝ
 LOC_G_MagicDesc_16	L©n cËn
 LOC_G_MagicDesc_17	Tay kh«ng
-LOC_G_MagicDesc_18	VÞ Tri
+LOC_G_MagicDesc_18	Position
 LOC_G_KDiceGame_0	B¹n kh«ng ®ñ ng©n l­îng ®Ó ch¬i tiÕp!
 LOC_G_KDiceGame_1	Trß ch¬i
 LOC_G_KDiceGame_2	AddGlobalNews([[§Æc biÖt chóc mõng!%s tróng th­ëng ®Æc biÖt, nhËn ®­îc %d l­îng!]])
@@ -647,7 +647,7 @@ LOC_G_STRING_AUTOHANGMSG_2	ChØ cã ch¸o L¹p B¸t míi cã thÓ hót thô ®Þa khÝ n¬i nµ
 LOC_G_STRING_AUTOHANGMSG_3	B¹n ®· dïng hÕt ch¸o L¹p B¸t, h·y ®Õn §µo hoa Èn sü ®Ó mua thªm ®Ó cã thÓ tiÕp tôc luyÖn c«ng!
 LOC_G_STRING_AUTOHANGMSG_4	B¹n nhËn ®­îc %d ®iÓm kinh nghiÖm!
 LOC_G_TONG_FIGURE_CALL_MARSHAL	Bang chñ
-LOC_G_TONG_FIGURE_CALL_QUEEN	Phã bang
+LOC_G_TONG_FIGURE_CALL_QUEEN	Deputy Guild Leader
 LOC_G_TONG_FIGURE_CALL_GENERAL	Tr­ëng l·o
 LOC_G_TONG_FIGURE_CALL_CAPTAIN	§­êng chñ
 LOC_G_TONG_FIGURE_CALL_SERGEANT	H­¬ng chñ
@@ -671,14 +671,14 @@ LOC_G_STRING_LEAVE_CHANNEL	B¹n võa rêi khái kªnh %s!
 LOC_K_C_BEGIN	T©n thñ
 LOC_K_C_JUSTICE	ChÝnh ph¸i
 LOC_K_C_EVIL	Tµ ph¸i
-LOC_K_C_BALANCE	Trung lËp
-LOC_K_C_FREE	S¸t thñ 
+LOC_K_C_BALANCE	Neutral
+LOC_K_C_FREE	Assassin
 LOC_K_C_ANIMAL	D· thó
 LOC_K_C_EVENT	Lé Nh©n
 LOC_K_NPCRESNODE_0	§Ønh ®Çu
 LOC_K_NPCRESNODE_1	D­íi ch©n
 LOC_K_NPCRESNODE_2	TuÇn hoµn
-LOC_K_NPC_0	Tªn
+LOC_K_NPC_0	Name
 LOC_K_CHAT_TEAM_DEFAULT_NAME	B¹n
 LOC_K_MATE_UNITNAME	Phèi ngÉu\n
 LOC_K_BROTHER_UNITNAME	Th©n nh©n\n
@@ -1141,8 +1141,8 @@ LOC_MSG_COMPOSE_CLEW_3	ChÕ t¹o thÊt b¹i! LÇn sau thö l¹i nhÐ!
 LOC_MSG_COMPOSE_CLEW_4	B¹n ®· dõng viÖc chÕ t¹o!
 LOC_MSG_MULTY_COMPOSE_CLEW	ChÕ t¹o hoµn tÊt!
 LOC_MSG_GOLD	 Kim 
-LOC_MSG_SILVER	 b¹c 
-LOC_MSG_COPPER	 §ång 
+LOC_MSG_SILVER	 silver
+LOC_MSG_COPPER	 Copper
 LOC_MSG_CANCEL_DELETE_WAIT	lêi xin xãa nh©n vËt nµy ®· hñy.
 LOC_MSG_LAST_LOGIN_TIME	LÇn ®¨ng nhËp tr­íc: th¸ng %d ngµy %d  %d giê %d phót, lÇn tho¸t th¸ng %d ngµy %d %d giê %d phót, ®· sö dông hÕt %d giê %d phót
 LOC_MSG_LAST_LOGIN_IP	IP ®¨ng nhËp lÇn tr­íc %s
@@ -1150,10 +1150,10 @@ LOC_G_ANTI_PLUG_CLEW	  T×m mét lùa chän khíp víi hµng thø <color=red>%d<color>, 
 LOC_G_ANTI_PLUG_CLEW2	  HiÖn tai b¹n cßn <color=red>%d<color> c¬ héi tr¶ lêi c©u hái chèng autoplay, trong vßng <color=red>%d<color> gi©y ph¶i hoµn thµnh, c¸m ¬n b¹n ®· hîp t¸c!
 LOC_G_ANTI_PLUG_CLEW3	  H·y chän 1 ký tù khíp víi <color=red>ký tù thø %d<color> bªn tr¸i h×nh trªn vµ nhÊp x¸c nhËn!.
 LOC_G_FRIENDLINESS	H¶o c¶m %d
-LOC_G_CONFIRM_WORD	§ång ý
-LOC_G_CANCEL_WORD	Hñy bá
+LOC_G_CONFIRM_WORD	Agree
+LOC_G_CANCEL_WORD	Cancel
 LOC_G_NO_WORD	Ch­a
-LOC_G_ACCEPT_WORD	§ång ý
+LOC_G_ACCEPT_WORD	Agree
 LOC_G_ACCEPT1_WORD	TiÕp nhËn
 LOC_G_REFUSE_WORD	Cù tuyÖt
 LOC_G_EXIT_GAME_NOW	Tho¸t ngay
@@ -1184,7 +1184,7 @@ LOC_G_UiChatPhrase_1	Tù ®éng tr¶ lêi
 LOC_G_UiChatPhrase_2	Hñy bá tù ®éng tr¶ lêi
 LOC_G_UiChatPhrase_3	Kinh nghiÖm %d/%d
 LOC_G_UiChatPhrase_4	LuyÖn c«ng
-LOC_G_UiChatPhrase_5	ChiÕn ®Êu
+LOC_G_UiChatPhrase_5	Battle
 LOC_G_UiChatPhrase_6	§å s¸t
 LOC_G_Ui_INTERACTION_APPLY_NO	HiÖn t¹i b¹n kh«ng thÓ mêi ng­êi kh¸c tham gia
 LOC_G_Ui_INTERACTION_END	B¹n vµ ®èi ph­¬ng hñy bá ®éng t¸c biÓu c¶m!
@@ -1196,7 +1196,7 @@ LOC_G_UiChatCentre_0	LËp nhãm
 LOC_G_UiChatCentre_1	§æi tªn nhãm
 LOC_G_UiChatCentre_2	Gi¶i t¸n nhãm
 LOC_G_UiChatCentre_3	Gëi tin
-LOC_G_UiChatCentre_4	Hñy bá
+LOC_G_UiChatCentre_4	Cancel
 LOC_G_UiChatCentre_5	ChuyÓn ®Õn nhãm kh¸c
 LOC_G_UiChatCentre_6	Kh¸c
 LOC_G_UiChatCentre_7	NhËp vµo tªn nhãm thay ®æi
@@ -1215,9 +1215,9 @@ LOC_G_UIGAME_10	Tõ khãa kªnh c«ng céng
 LOC_G_UIGAME_11	BÈm b¸o
 LOC_G_UIGAME_12	ThÕ giíi
 LOC_G_TIME_0	D¹ b¸n
-LOC_G_TIME_1	Söu
+LOC_G_TIME_1	Chou
 LOC_G_TIME_2	DÇn
-LOC_G_TIME_3	M·o
+LOC_G_TIME_3	Helmet
 LOC_G_TIME_4	Th×n
 LOC_G_TIME_5	Tþ
 LOC_G_TIME_6	Ngä
@@ -1226,10 +1226,10 @@ LOC_G_TIME_8	Th©n
 LOC_G_TIME_9	DËu
 LOC_G_TIME_10	Hoµng h«n
 LOC_G_TIME_11	Hîi
-LOC_G_TIME_12	Tö
-LOC_G_TIME_13	Söu
+LOC_G_TIME_12	Seed
+LOC_G_TIME_13	Chou
 LOC_G_TIME_14	DÇn
-LOC_G_TIME_15	M·o
+LOC_G_TIME_15	Helmet
 LOC_G_TIME_16	Th×n
 LOC_G_TIME_17	TÞ
 LOC_G_TIME_18	Ngä
@@ -1241,7 +1241,7 @@ LOC_G_TIME_23	Hîi
 LOC_G_NUMBER_1	mét
 LOC_G_NUMBER_2	hai
 LOC_G_NUMBER_3	ba
-LOC_G_NUMBER_4	bèn
+LOC_G_NUMBER_4	ben
 LOC_G_PLAYERBAR_0	%s%s giê %s kh¾c
 LOC_G_PLAYERBAR_1	Th¸ng %d ngµy %d  %d:%02d
 LOC_G_PLAYERBAR_2	Xin chó ý chän ng«n tõ t¸n gÉu!
@@ -1289,18 +1289,18 @@ LOC_G_KillerAllTask_6	Xin lçi, b¹n kh«ng ®ñ tiÒn!
 LOC_G_KillerAllTask_7	!!
 LOC_G_KillerAllTask_8	Ta biÕt råi.....
 LOC_G_MSGCENTREPAD_0	HÖ thèng
-LOC_G_MSGCENTREPAD_1	Më
-LOC_G_MSGCENTREPAD_2	§ãng
+LOC_G_MSGCENTREPAD_1	Open
+LOC_G_MSGCENTREPAD_2	Close
 LOC_G_SYSTEM_TASK_ROOT_NAME	NhiÖm vô ThÕ giíi
 LOC_G_FINISH_TASK_ROOT_NAME	NhiÖm vô ®· hoµn thµnh.
 LOC_G_CHAIN_TASK_ROOT_NAME	NhiÖm vô tuÇn hoµn
-LOC_G_UiMsgSel_0	KÕt thóc ®èi tho¹i
+LOC_G_UiMsgSel_0	End conversation
 LOC_G_UiMsgSel_1	Script (hoÆc qu¸ tr×nh xö lý script) bÞ lçi!
 LOC_G_UiMsgSel_2	ViÖt Tö nãi víi b¹n:
 LOC_G_MSG_RECONNECTING	§ang kÕt nèi lÇn thø <color=red>%d<color>.\%s...
 LOC_G_MSG_WAIT_TO_RECONNECT	%d gi©y sau sÏ tiÕn hµnh kÕt nèi lÇn thø <color=red>%d<color>.
 LOC_G_MSG_WAIT_NEXT_GROUP_RECONNECT	%d gi©y sau míi cã thÓ kÕt nèi l¹i.
-LOC_G_RECONNECT_QUIT_BTN_LABEL	Tho¸t
+LOC_G_RECONNECT_QUIT_BTN_LABEL	Exit
 LOC_G_RECONNECT_START_AT_ONCE	LËp tøc kÕt nèi.
 LOC_G_RECONNETMSG_0	KÕt nèi thÊt b¹i.
 LOC_G_RECONNETMSG_1	§ang kiÓm chøng tµi kho¶n vµ mËt khÈu!
@@ -1314,7 +1314,7 @@ LOC_G_C_S_WATER	Thñy
 LOC_G_C_S_FIRE	Háa
 LOC_G_C_S_EARTH	Thæ
 LOC_G_SEX_MALE	Nam
-LOC_G_SEX_FEMALE	N÷
+LOC_G_SEX_FEMALE	Female
 LOC_G_STALL_0	Ng«n tõ kh«ng thÝch hîp, xin h·y chØnh söa!
 LOC_G_MSG_RENASCENCE	B¹n ®· bÞ träng th­¬ng!
 LOC_G_MSG_BACK_TO_TOWN	Phôc sinh
@@ -1330,7 +1330,7 @@ LOC_G_SysMsgCentre_7	Cã chÊp nhËn lêi ngá ý cña %s kh«ng?
 LOC_G_SysMsgCentre_8	%s[CÊp:%d, cÊp thô nghiÖp:%d, kÌm ®å ®Ö:%d, nhiÒu nhÊt cã thÓ kÌm ®å ®Ö: %d] thu nhËn ng­¬i lµm ®å ®Ö, cã chËp nhËn kh«ng?
 LOC_G_SysMsgCentre_9	%s muèn cïng tû vâ víi b¹n, ®ång ý kh«ng?
 LOC_G_TONG_0	Tr­ëng l·o
-LOC_G_TONG_1	§éi tr­ëng
+LOC_G_TONG_1	Team Leader
 LOC_G_TONG_2	Bang chóng
 LOC_G_TONG_3	Xin lùa chän chøc vÞ
 LOC_G_TONG_4	Xin lùa chän chøc vÞ cô thÓ.
@@ -1346,7 +1346,7 @@ LOC_G_TONG_13	Minh chñ: %s
 LOC_G_TONG_14	Thµnh viªn: %s
 LOC_G_TONG_15	  <khuyÕt>         
 LOC_G_TONG_16	Nam
-LOC_G_TONG_17	N÷
+LOC_G_TONG_17	Female
 LOC_G_TONG_18	ChØ cã thÓ ph¸t cho thuéc h¹ trªn m¹ng.
 LOC_G_TONG_19	Tr­ëng l·o :%d, §éi tr­ëng :%d, Bang chóng :%d. Tæng ng©n l­îng ph©n ph¸t: %d l­îng.
 LOC_G_TONG_20	(Ng©n quü bang héi kh«ng ®ñ)
@@ -1365,7 +1365,7 @@ LOC_G_TREMBLEITEM_4	Xin ®Æt vµo 1 Hµo Th¹ch ©m
 LOC_G_TREMBLEITEM_5	Xin ®Æt vµo 1 Hµo Th¹ch d­¬ng
 LOC_G_TREMBLEITEM_6	Xin ®Æt vµo 1 Hµo Th¹ch ©m hoÆc d­¬ng
 LOC_G_TREMBLEITEM_7	NhÊp §ång ý ®Ó b¾t ®Çu kh¶m n¹m
-LOC_G_TREMBLEITEM_8	 hoÆc 
+LOC_G_TREMBLEITEM_8	 or
 LOC_G_TREMBLEITEM_9	VËt phÈm nµy kh«ng thÓ kh¶m n¹m
 LOC_G_TREMBLEITEM_10	%s bÞ tæn h¹i khi tiÕn hµnh ph©n m¶nh.
 LOC_G_TREMBLEITEM_11	ph©n m¶nh trang bÞ hoµn tÊt.
@@ -1412,8 +1412,8 @@ LOC_G_UI_ERROR_POS	Täa ®é kh«ng n»m trong khu vùc nµy!
 LOC_G_UI_ADD_PRACTICE	NhËp trÞ sè
 LOC_G_UI_NET_RELAY	M¹ng bÞ chËm trÔ %d ms (cµng nhá cµng tèt)
 LOC_G_UI_HOUR	h 
-LOC_G_UI_MINITUE	 phót 
-LOC_G_UI_STORE_NAME	Tªn
+LOC_G_UI_MINITUE	 minutes
+LOC_G_UI_STORE_NAME	Name
 LOC_G_UI_STORE_OWNER	Ng­êi b¸n
 LOC_G_UI_STORE_CURPAGE	Trang hiÖn t¹i
 LOC_G_UI_STORE_INPUT_STORE_NAME_TITLE	LËp cöa hiÖu
@@ -1461,7 +1461,7 @@ LOC_K_SERVER_NAME_PRIFIX	Vâ L©m 2
 LOC_K_AUTO_UPDATE_EXE	jxonline2.exe
 LOC_K_UIGAME_0	Tõ khãa (phÝm c¸ch)
 LOC_K_SHOT_FOLDER	\\ScreenShot\\
-LOC_K_CHANNEL_TEAM	Tæ
+LOC_K_CHANNEL_TEAM	Team
 LOC_K_CHANNEL_NEARBY	CËn
 LOC_K_SYSTEM_MSG_SENDER_NAME	Chó ý
 LOC_U_ERR_CODE_0	Lçi ch­a x¸c ®Þnh (Lçi sè: %d)
@@ -1584,7 +1584,7 @@ LOC_OBJ_PLAYER_ENEMY	 Thï
 LOC_OBJ_NPC_ENEMY	 Qu¸i vËt 
 LOC_OBJ_YIN_ENEMY	 Yªu Ma 
 LOC_ROUTE_NONE	V« m«n ph¸i
-LOC_ROUTE_SL	ThiÕu L©m
+LOC_ROUTE_SL	Shaolin
 LOC_ROUTE_SLS	ThiÕu L©m §ao
 LOC_ROUTE_SLC	ThiÕu L©m Tr­îng
 LOC_ROUTE_SLW	ThiÕu L©m QuyÒn
@@ -1593,28 +1593,28 @@ LOC_ROUTE_TM_YES	§­êng M«n Ch©m
 LOC_ROUTE_EM	Nga My
 LOC_ROUTE_EMF	Nga Mi KiÕm
 LOC_ROUTE_EMS	Nga Mi §µn
-LOC_ROUTE_GB	C¸i Bang
+LOC_ROUTE_GB	Beggars' Sect
 LOC_ROUTE_GBJ	C¸i Bang QuyÒn
 LOC_ROUTE_GBW	C¸i Bang Bæng
-LOC_ROUTE_WD	Vâ §ang
+LOC_ROUTE_WD	Wudang
 LOC_ROUTE_WDD	Vâ §ang KiÕm
 LOC_ROUTE_WDS	Vâ §ang Bót
 LOC_ROUTE_YM	D­¬ng M«n
 LOC_ROUTE_YMQ	D­¬ng Gia Th­¬ng
 LOC_ROUTE_YMG	D­¬ng Gia Cung
-LOC_ROUTE_WUDU	Ngò §éc
-LOC_ROUTE_WUDU_XIE	Ngò §éc Tµ HiÖp
-LOC_ROUTE_WUDU_GU	Ngò §éc Cæ S­
+LOC_ROUTE_WUDU	Five Poisons
+LOC_ROUTE_WUDU_XIE	Five Poison Heretic Hero
+LOC_ROUTE_WUDU_GU	Five Poison Gu Master
 LOC_ROUTE_KUNLUN	C«n L«n
 LOC_ROUTE_KUNLUN_TIANSHI	C«n L«n
 LOC_ROUTE_MINGJIAO	Minh gi¸o
-LOC_ROUTE_MINGJIAO_SHENGZHAN	Th¸nh ChiÕn
+LOC_ROUTE_MINGJIAO_SHENGZHAN	Holy War
 LOC_ROUTE_MINGJIAO_ZHENBING	TrËn Binh
 LOC_ROUTE_MINGJIAO_XUEREN	HuyÕt Nh©n
 LOC_ROUTE_CUIYAN	Thóy Yªn
 LOC_ROUTE_CUIYAN_DANCER	Vò Tiªn
-LOC_ROUTE_CUIYAN_LINGNV	Linh N÷
-LOC_ROUTE_TANGMEN_RENXIA	NhËm HiÖp
+LOC_ROUTE_CUIYAN_LINGNV	Spirit Maiden
+LOC_ROUTE_TANGMEN_RENXIA	Wandering Hero
 LOC_ROUTE_KUNLUN_JIANZUN	KiÕm T«n
 LOC_ROUTE_END	
 LOC_SM_BEGIN	
@@ -1863,7 +1863,7 @@ LOC_SM_HUNLUAN_IMMU	MiÔn dÞch hçn lo¹n
 LOC_SM_HUNSHUI_IMMU	MiÔn dÞch mª man
 LOC_SM_CHIHUAN_IMMU	MiÔn dÞch lµm chËm 
 LOC_SM_JIANSU_IMMU	MiÔn dÞch gi¶m tèc
-LOC_SM_JIDAO_IMMU	MiÔn dÞch ®¸nh ng·
+LOC_SM_JIDAO_IMMU	Immune to knockdown
 LOC_SM_JITUI_IMMU	MiÔn dÞch ®Èy lui
 	
 	
@@ -2082,32 +2082,32 @@ LOC_SERIES_EARTH	Thæ
 LOC_SERIES_GHOST	¢m
 LOC_SERIES_BY_WEAPON	Phô thuécVò khÝ
 LOC_FACTION_NONE	
-LOC_FACTION_SL	ThiÕu L©m
-LOC_FACTION_WD	Vâ §ang
+LOC_FACTION_SL	Shaolin
+LOC_FACTION_WD	Wudang
 LOC_FACTION_EM	Nga My
-LOC_FACTION_GB	C¸i Bang
+LOC_FACTION_GB	Beggars' Sect
 LOC_FACTION_TM	§­êng M«n
 LOC_FACTION_YM	D­¬ng M«n
-LOC_FACTION_WUDU	Ngò §éc
+LOC_FACTION_WUDU	Five Poisons
 LOC_FACTION_KUNLUN	C«n L«n
 LOC_FACTION_MINGJIAO	Minh gi¸o
 LOC_FACTION_CUIYAN	Thóy Yªn
 LOC_ED_NONE	Ch­a
-LOC_ED_KAN	Kh¶m
-LOC_ED_KUN	Kh«n
-LOC_ED_ZHEN	ChÊn
-LOC_ED_XUN	Tèn
+LOC_ED_KAN	Kan
+LOC_ED_KUN	Kun
+LOC_ED_ZHEN	Zhen
+LOC_ED_XUN	Xun
 LOC_ED_CENTER	Cùc
-LOC_ED_QIAN	Cµn
-LOC_ED_DUI	§oµi
-LOC_ED_GEN	CÊn
+LOC_ED_QIAN	Qian
+LOC_ED_DUI	Dui
+LOC_ED_GEN	Gen
 LOC_ED_LI	Ly
 LOC_ED_TIAN	Thiªn
 LOC_ED_DI	cña 
-LOC_ITEM_PART_HEAD	M·o
+LOC_ITEM_PART_HEAD	Helmet
 LOC_ITEM_PART_CLOTH	Y phôc
 LOC_ITEM_PART_WEAPON	Vò khÝ
-LOC_ITEM_PART_SHOES	H¹ y
+LOC_ITEM_PART_SHOES	Lower Garment
 LOC_GATHER_1	Thu thËp 1
 LOC_GATHER_2	Thu thËp 2
 LOC_COMPOSE_JH	Giang hå
@@ -2116,39 +2116,39 @@ LOC_COMPOSE_DUAN	ChÕ t¹o vò khÝ ng¾n
 LOC_COMPOSE_QIMEN	ChÕ t¹o kú m«n binh khÝ
 LOC_COMPOSE_ZHI	Thªu thïa
 LOC_COMPOSE_DAN	LuyÖn thuèc
-LOC_COMPOSE_COOK	NÊu n­íng
+LOC_COMPOSE_COOK	Cooking
 LOC_COMPOSE_FU	LuyÖn bïa
 LOC_BODY_MALE_STANDARD	Nam tiªu chuÈn
-LOC_BODY_MALE_STRONG	Nam kh«i ng«
-LOC_BODY_FEMALE_SEXY	N÷ gîi c¶m
-LOC_BODY_FEMALE_STANDARD	KiÒu n÷
+LOC_BODY_MALE_STRONG	Imposing man
+LOC_BODY_FEMALE_SEXY	Alluring woman
+LOC_BODY_FEMALE_STANDARD	Graceful woman
 LOC_SS_01	Phi ph¸p
 LOC_SS_02	Ch­a ph©n phèi
 LOC_SS_03	§ang kiÕn t¹o
 LOC_SS_04	§ang bu«n b¸n
-LOC_SS_05	§ãng
+LOC_SS_05	Close
 LOC_SS_06	Bµy b¸n
 LOC_SS_07	§ãng l¹i
 LOC_SST_01	Cöa hiÖu ®å cæ
 LOC_SST_02	TÊt c¶ c¸c lo¹i
 LOC_SST_03	Phßng thñ
 LOC_SST_04	Sinh ho¹t
-LOC_SST_05	Thu thËp
+LOC_SST_05	Collect
 LOC_SST_06	Kh¸c
 LOC_LST_01	Kü nghÖ giang hå
 LOC_LST_02	ChÕ t¹o
-LOC_LST_03	Thu thËp
+LOC_LST_03	Collect
 LOC_CS_01	Kü nghÖ giang hå
 LOC_CS_02	ChÕ t¹o vò khÝ dµi
 LOC_CS_03	ChÕ t¹o vò khÝ ng¾n
 LOC_CS_04	ChÕ t¹o kú m«n binh khÝ
 LOC_CS_05	Thªu thïa
 LOC_CS_06	LuyÖn ®¬n
-LOC_CS_07	NÊu n­íng
+LOC_CS_07	Cooking
 LOC_CS_08	LuyÖn bïa
 LOC_GS_01	§èn c©y
 LOC_GS_02	Thuéc da
-LOC_GS_03	Canh t¸c
+LOC_GS_03	Farm
 LOC_GS_04	H¸i thuèc
 LOC_GS_05	Khai kho¸ng
 LOC_GS_06	KÐo t¬
@@ -2158,7 +2158,7 @@ LOC_SSP_03	Ngñ
 LOC_SSP_04	Tª liÖt
 LOC_SSP_05	§Þnh th©n
 LOC_SSP_06	Tróng ®éc
-LOC_SSP_07	Gi¶m tèc
+LOC_SSP_07	Reduce speed
 LOC_SSP_08	Lµm chËm
 LOC_SSP_09	XÐt râ ngän ngµnh
 LOC_SSP_10	Kim Chung Tr¸o
@@ -2172,8 +2172,8 @@ LOC_SSP_17	BÊt §éng Minh V­¬ng Chó
 LOC_SSP_18	T©m Nh·n
 LOC_SSP_19	Thèi §éc ThuËt
 LOC_SSP_20	Hµm Sa X¹ ¶nh
-LOC_SSP_21	Quan ¢m QuyÕt
-LOC_SSP_22	§é Nguyªn QuyÕt
+LOC_SSP_21	Guanyin Art
+LOC_SSP_22	Origin Crossing Art
 LOC_SSP_23	PhËt Quang Phæ ChiÕu
 LOC_SSP_24	Liªn Hoa T©m Kinh
 LOC_SSP_25	L­u Thñy QuyÕt
@@ -2184,8 +2184,8 @@ LOC_SSP_29	Th«ng Tý QuyÒn
 LOC_SSP_30	Thiªn C©n H¹p
 LOC_SSP_31	Táa HÇu CÇm N· Thñ
 LOC_SSP_32	Tiªu Dao Du
-LOC_SSP_33	Tóy §iÖp
-LOC_SSP_34	Tóy QuyÒn
+LOC_SSP_33	Drunken Butterfly
+LOC_SSP_34	Drunken Fist
 LOC_SSP_35	Nª Thu C«ng
 LOC_SSP_36	Th©u Thiªn Ho¸n NhËt
 LOC_SSP_37	V« Ng· T©m Ph¸p
@@ -2239,7 +2239,7 @@ LOC_SSP_84	Thiªn KiÕp PhÇn
 LOC_SSP_85	Ng­ng Háa BÝch
 LOC_SSP_86	KhÝ Hãa Du Long
 LOC_SSP_87	B¹o S¸t K×nh
-LOC_SSP_88	Cµn Kh«n §¹i Na Di
+LOC_SSP_88	Heaven and Earth Great Shift
 LOC_SSP_89	Håi Phong LiÖt DiÖm
 LOC_SSP_90	Quang Minh Bót Ph¸p
 LOC_SSP_91	Kim Táa TrËn
@@ -2252,7 +2252,7 @@ LOC_SSP_97	NghiÖp Háa TrËn
 LOC_SSP_98	Thæ Lao TrËn
 LOC_SSP_99	Ngò Linh Quy Nguyªn
 LOC_SSP_100	Quang Minh Ngò Hµnh TrËn
-LOC_SSP_101	§o¹n Cèt Tr¶o
+LOC_SSP_101	Bone-Severing Claw
 LOC_SSP_102	Hñ Th­¬ng Ên
 LOC_SSP_103	B¨ng HuyÕt Ên
 LOC_SSP_104	HÊp HuyÕt Ên
@@ -2263,10 +2263,10 @@ LOC_SSP_108	ThÝ C¶nh Tr¶o
 LOC_SSP_109	Hµn B¨ng HuyÕt Ch­íng
 LOC_SSP_110	Hãa HuyÕt Ên
 LOC_SSP_111	VÉn Th­¬ng Ên
-LOC_SSP_112	Hµn B¨ng Miªn Ch­ëng
+LOC_SSP_112	Frost Cotton Palm
 LOC_SSP_113	Hµn B¨ng Ng­ng HuyÕt Ên
-LOC_SSP_114	Khëi Vò
-LOC_SSP_115	Linh Miªu VËn
+LOC_SSP_114	Rising Dance
+LOC_SSP_115	Spirit Cat Fortune
 LOC_SSP_116	MÞ Hoa
 LOC_SSP_117	§o¹n V©n QuyÕt 
 LOC_SSP_118	Thu NguyÖt Phó
@@ -2275,7 +2275,7 @@ LOC_SSP_120	Thiªn Háa DiÔm D­¬ng
 LOC_SSP_121	Méng Xµ
 LOC_SSP_122	Loan Phông Cöu Thiªn
 LOC_SSP_123	Tóy Méng Ng©m
-LOC_SSP_124	L¹c Hoa QuyÕt
+LOC_SSP_124	Falling Flower Art
 LOC_SSP_125	§µo hoa ch­¬ng
 LOC_SSP_126	Táa T©m QuyÕt
 LOC_SSP_127	Linh §éng QuyÕt
@@ -2306,7 +2306,7 @@ LOC_SSP_151	Bång Lai Tiªn Thñy
 LOC_SSP_152	Bång Lai Tiªn Lé
 LOC_SSP_153	Bång Lai Tiªn §¬n
 LOC_SSP_154	Bång Lai Lé Thñy
-LOC_SSP_155	§iÖp LuyÕn
+LOC_SSP_155	Die Lian
 LOC_SSP_156	Custom0
 LOC_SSP_157	Custom1
 LOC_SSP_158	Custom2
@@ -2376,16 +2376,16 @@ LOC_A_G_UIGAME_8	Tû vâ
 LOC_A_G_UIGAME_9	Gëi tiÒn
 LOC_A_G_UIGAME_10	Tõ khãa kªnh c«ng céng
 LOC_A_G_UIGAME_11	BÈm b¸o
-LOC_A_G_UIGAME_12	Truy  n·
+LOC_A_G_UIGAME_12	Pursue
 LOC_A_G_UIGAME_13	NhËn lµm ®å ®Ö
-LOC_C_CHANNEL_TEAM	Tæ
+LOC_C_CHANNEL_TEAM	Team
 LOC_C_FACTION	Faction#
 LOC_C_TONG	Bang héi
 LOC_C_CHANNEL_NEARBY	CËn
 LOC_C_GM	GM
 LOC_C_TONG_UNION	TongUnion#
-LOC_FAVORITE_NPC_MENU_COLLECT	Thu thËp
-LOC_FAVORITE_NPC_MENU_DELETE	Hñy bá
+LOC_FAVORITE_NPC_MENU_COLLECT	Collect
+LOC_FAVORITE_NPC_MENU_DELETE	Cancel
 LOC_SKILL_VALID_ENEMY_PLAYER	Thï
 LOC_SKILL_VALID_ENEMY_NPC	Qu¸i vËt
 LOC_SKILL_VALID_ENEMY_YIN	Yªu Ma
@@ -2399,7 +2399,7 @@ LOC_SKILL_VALID_REVIVAL_ENEMY	§èi t­îng phôc sinh phe ®Þch
 LOC_RELATION_NONE	
 LOC_RELATION_SELF	Ta
 LOC_RELATION_ALLY	B¹n
-LOC_RELATION_ENEMY	KÎ thï
+LOC_RELATION_ENEMY	Enemy
 LOC_RELATION_CORPSE_NONENEMY	Thi thÓ phi cõu nh©n 
 LOC_RELATION_CORPSE_ENEMY	Thi thÓ 
 LOC_RELATION_DIALOG	
@@ -2422,7 +2422,7 @@ LOC_ACTION_NAME_4	¤m
 LOC_ACTION_NAME_5	H«n
 LOC_ACTION_NAME_6	An ñi
 LOC_TM_TITLE_LEADER	Bang chñ
-LOC_TM_TITLE_VICE_LEADER	Phã bang
+LOC_TM_TITLE_VICE_LEADER	Deputy Guild Leader
 LOC_TM_TITLE_ELDER_LEADER	Tr­ëng l·o
 LOC_TM_TITLE_SECTION_LEADER	§­êng chñ
 LOC_TM_TITLE_CHILD_SECTION_LEADER	H­¬ng chñ
@@ -2437,13 +2437,13 @@ LOC_GRUP_MENU_3	Gi¶i t¸n nhãm
 LOC_FRIEND_MENU_1	NhËn ®­îc täa ®é (tiªu hao %d ®iÓm thÇn hµnh)
 LOC_FRIEND_MENU_2	Gëi tin
 LOC_FRIEND_MENU_3	ChuyÓn ®Õn nhãm kh¸c
-LOC_FRIEND_MENU_4	Hñy bá
+LOC_FRIEND_MENU_4	Cancel
 LOC_SAY_TOO_FAST	Kh«ng thÓ ph¸t tin liªn tôc! Xin ®îi gi©y l¸t!
 LOC_CANNOT_ADDPROPERTY	B¹n ®· rÊt mÖt mái, kh«ng thÓ thùc hiÖn thao t¸c nµy!
 LOC_CANNOT_OFFLINE	HiÖn t¹i ng­êi ch¬i qu¸ ®«ng, h·y ®îi lóc kh¸c míi cã thÓ ñy th¸c rêi m¹ng.!
 LOC_A_TREASURE_DESC_BAGUA_ITEM	Bé b¸t qu¸i
 LOC_A_TREASURE_DESC_MONEY	TiÒn vâ l©m
-LOC_A_TREASURE_DESC_BIG_YINGPIAO	§¹i ng©n phiÕu
+LOC_A_TREASURE_DESC_BIG_YINGPIAO	Great Silver Note
 LOC_A_TREASURE_DESC_SMALL_YINPIAO	tiÓu ng©n phiÕu
 LOC_A_TREASURE_DESC_SCRIPT	KÞch b¶n
 LOC_A_TREASURE_DESC_GOLDCOIN	Xu
@@ -2455,8 +2455,8 @@ LOC_ITEM_EXPIRE	%s cña b¹n ®· qu¸ h¹n sö dông.
 LOC_TRADE_SERVER_BUSY	Khi m¸y chñ bËn, ®Ó tr¸nh tæn thÊt ngoµi ý muèn, xin ®îi lóc kh¸c h·y giao dÞch.
 LOC_G_AUTOPATH_SEARCH_MAP	T×m vÞ trÝ
 LOG_G_AUTOPATH_SEARCH_NPC	T×m NPC
-LOG_G_AUTOPATH_NAME	Tªn
-LOG_G_AUTOPATH_TIP	nh¾c nhë
+LOG_G_AUTOPATH_NAME	Name
+LOG_G_AUTOPATH_TIP	Reminder
 LOG_G_AUTOPATH_WORLDMAP	B¶n ®å thÕ giíi
 LOG_G_AUTOPATH_IS_OBSTACLE	Môc tiªu bÞ chÆn
 LOG_G_AUTOPATH_CANNOT_TOUTH	Môc tiªu lçi
@@ -2464,7 +2464,7 @@ LOG_G_AUTOPATH_CANNOT_START	Tr¹ng th¸i hiÖn t¹i kh«ng thÓ b¾t ®Çu tù t×m ®­êng.
 LOG_G_AUTOPATH_FAIL	Tù ®éng t×m ®­êng thÊt b¹i
 LOG_G_AUTOPATH_RIGHTCLICK	Sö dông chuét ph¶i tù ®éng t×m ®­êng
 LOC_TONG_MSG_PROMOTION	Tin tøc
-LOC_REBORN_MENHUI_0	Kh«ng
+LOC_REBORN_MENHUI_0	None
 LOC_REBORN_MENHUI_1	Long Tö
 LOC_REBORN_MENHUI_2	Hæ Tö
 LOC_REBORN_MENHUI_3	¦ng Tö
@@ -2525,7 +2525,7 @@ LOC_MERIDIAN_NODE_NEED_PRE_LEVEL	Yªu cÇu huyÖt vÞ tr­íc tÇng
 LOC_MERIDIAN_NODE_NEED_OTHER	Yªu cÇu kh¸c
 LOC_MERIDIAN_NODE_NEXT_EFFECT	HiÖu qu¶ kÝch ho¹t
 LOC_MERIDIAN_NODE_CAN_ACTIVE	Cã thÓ kÝch ho¹t
-LOC_MERIDIAN_NODE_CANNOT_ACTIVE	Ch­a ®¹t ®­îc
+LOC_MERIDIAN_NODE_CANNOT_ACTIVE	Not yet reached
 LOC_MERIDIAN_NODE_CUR_LEVEL	TÇng sè hiÖn t¹i
 LOC_MERIDIAN_NODE_NO_EFFECT	Kh«ng hiÖu qu¶
 LOC_MERIDIAN_MAX_ZHENQI	Giíi h¹n ch©n khÝ
@@ -2585,14 +2585,14 @@ LOC_MERIDIAN_LEVEL_2	Vâ T­íng
 LOC_MERIDIAN_LEVEL_3	Vâ V­¬ng
 LOC_MERIDIAN_LEVEL_4	Vâ T«n
 LOC_MERIDIAN_LEVEL_5	Vâ Hoµng
-LOC_MERIDIAN_LEVEL_6	Vâ Th¸nh
+LOC_MERIDIAN_LEVEL_6	Martial Saint
 LOC_ARMY_LEVEL_0	Ch­a
 LOC_ARMY_LEVEL_1	Binh sÜ
-LOC_ARMY_LEVEL_2	HiÖu óy
-LOC_ARMY_LEVEL_3	§« thèng
+LOC_ARMY_LEVEL_2	Lieutenant
+LOC_ARMY_LEVEL_3	Commander
 LOC_ARMY_LEVEL_4	Tiªn phong
 LOC_ARMY_LEVEL_5	T­íng qu©n
-LOC_ARMY_LEVEL_6	Nguyªn So¸i
+LOC_ARMY_LEVEL_6	Marshal
 LOC_ARMY_LEVEL_7	Nguyªn so¸i vÜnh viÔn
 LOC_NEWTASK_MERIDIAN_STTRING	Ch©n khi: %d
 LOC_NEWTASK_SHIMENWEIWANG_STTRING	Danh Väng S­ M«n: %d
@@ -2603,8 +2603,8 @@ LOC_COLLECTION_T_HORSE	L­u tr÷ thó c­ìi"
 LOC_COLLECTION_T_FOLLOWER	L­u tr÷ thó nu«i
 LOC_COLLECTION_T_ORNAMENT	L­u tr÷ trang søc treo h«ng
 LOC_COLLECTION_OT_SELL	B¸n
-LOC_COLLECTION_OT_GIFT	TÆng quµ
-LOC_COLLECTION_OT_POP	LÊy
+LOC_COLLECTION_OT_GIFT	Give gift
+LOC_COLLECTION_OT_POP	Take
 LOC_COLLECTION_OT_PUSH	NhËp vµo
 LOC_MSG_COLLECTIONCOIN_NOT_ENOUGH	§iÓm TiÕu Y Ph­¬ng cña c¸c h¹ kh«ng ®ñ %u
 LOC_MSG_COLLECTIONCOIN_ADD	C¸c h¹ nhËn ®­îc %u ®iÓm TiÕu Y Ph­¬ng
@@ -2746,8 +2746,8 @@ LOC_EQUIP_RECYCLE_MSG7	T¸ch cÇn tiªu hao ®¹o cô [%s]*%d
 LOC_EQUIP_RECYCLE_MSG8	T¸ch trang bÞ nhËn ®­îc [%s]*%d
 LOC_EQUIP_RECYCLE_BOOK_LEVEL_ERR	MËt tÞch cÊp 99 míi ®­îc t¸ch
 LOC_G_EQUIP_GEM_HOLE_IDX	Sè lç
-LOC_G_EQUIP_GEM_HOLE	§ôc lç trang bÞ
-LOC_G_EQUIP_GEM_INSERT	Kh¶m ®¸ quý
+LOC_G_EQUIP_GEM_HOLE	Punch Hole in Equipment
+LOC_G_EQUIP_GEM_INSERT	Inlay Gem
 LOC_G_EQUIP_GEM_REMOVE	Th¸o ®¸ quý
 LOC_G_EQUIP_GEM_HOLE_DESC	Trang bÞ ®ôc lç cã thÓ nhËn ®­îc 1 « kh¶m ®¸ quý
 LOC_G_EQUIP_GEM_INSERT_DESC	Kh¶m ®¸ quý cã thÓ kh¶m trªn trang bÞ ®· ®ôc lç
@@ -2771,7 +2771,7 @@ LOC_ITEM_TIPS_2	Giao dÞch
 LOC_ITEM_TIPS_3	Vøt bá
 LOC_ITEM_TIPS_4	T¸ch
 LOC_G_ROOM_OR_WEIGHT_LACK	Hµnh trang kh«ng ®ñ %d, hoÆc søc chøa kh«ng ®ñ %d
-LOC_G_SOMETHING_LACK	Kh«ng ®ñ
+LOC_G_SOMETHING_LACK	Not enough
 LOC_G_CUSTOM_AWARD_GBL_MSG	Chóc mõng [%s] tõ trong [%s] nhËn ®­îc [%d %s]
 LOC_PLAYER_DEATH_TIME	Thiªn Kiªu LÖnh phôc sinh
 LOC_MERIDIAN_NODE_UPDATE_INFO	Tiªu hao %d ®iÓm ch©n khÝ gióp %s kÝch huyÖt vÞ, kÝch huyÖt thÊt b¹i sÏ kh«ng tr¶ l¹i vËt phÈm tiªu hao. §ång ý kh«ng?
@@ -2781,7 +2781,7 @@ LOC_G_LACK_LINGLI	Linh lùc kh«ng ®ñ
 LOC_G_GEM_STATUS	Tr¹ng th¸i
 LOC_G_GEM_KEEP	Gi÷
 LOC_G_GEM_REMOVE	Th¸o
-LOC_G_GEM_CONSUME	Tiªu hao 
+LOC_G_GEM_CONSUME	Consume
 LOC_G_GEM_SEL_REMOVE	H·y chän ®¸ quý cÇn th¸o ra
 LOC_G_CANNOT_DO_WHEN_CHANGEING_MODEL	Tr¹ng th¸i biÕn th©n kh«ng thÓ thùc hiÖn thao t¸c nµy
 LOC_G_FORBIT_CHANGE_MODEL	CÊm thay ®æi tr¹ng th¸i biÕn th©n
@@ -2803,11 +2803,11 @@ LOC_G_BOOK_APP_ATTR_KEEP_LV	HiÖu qu¶ tu luyÖn lÇn nµy kh«ng tèt, gi÷ l¹i cÊp ban
 LOC_G_BOOK_APP_ATTR_LV_UP	Tu luyÖn lÇn nµy cã hiÖu qu¶ cao, thuéc tÝnh ®­îc n©ng cao
 LOC_G_BOOK_APP_LV_8_DESC	Tïy sè tÇng ®¹t cÊp tèi ®a ë 7 tÇng tr­íc ®Ó tù kÝch ho¹t cÊp t­¬ng øng
 LOC_G_BOOK_APP_LV_8_NOTIFY	Chóc mõng [%s] ®· n©ng cÊp Ch©n Vâ B¶o §iÓn tÇng %d lªn cÊp %d, ®óng lµ qu¸ lîi h¹i
-LOC_ARMORY_QUALITY_1	Vì
-LOC_ARMORY_QUALITY_2	Th­êng
-LOC_ARMORY_QUALITY_3	V« H¹
-LOC_ARMORY_QUALITY_4	Hoµn mü
-LOC_ARMORY_QUALITY_5	Hoµn mü
+LOC_ARMORY_QUALITY_1	Broken
+LOC_ARMORY_QUALITY_2	Common
+LOC_ARMORY_QUALITY_3	Boundless
+LOC_ARMORY_QUALITY_4	Perfect
+LOC_ARMORY_QUALITY_5	Perfect
 LOC_ENHANCE2_ET_UNKNOWN	Ch­a biÕt lçi
 LOC_ENHANCE2_ET_SUCCESS	Cã thÓ b¾t ®Çu thao t¸c nµy
 LOC_ENHANCE2_ET_ITEM	VËt phÈm nµy kh«ng thÓ tiÕn hµnh thao t¸c nµy
@@ -2874,7 +2874,7 @@ LOC_STR_ZHUJIUYIN	Chóc Cöu ¢m
 LOC_STR_JIALOULUO	Phông Hoµng
 LOC_STR_FENGXI	Phong Hi
 LOC_STR_BAIZE	B¹ch Tr¹ch
-LOC_STR_WUSHENG	Vâ Th¸nh
+LOC_STR_WUSHENG	Martial Saint
 LOC_STR_KILLED_TOTEM_LV_LOW	Bang héi ch­a hµng phôc §å §»ng Thó!
 LOC_STR_BATTLEFIELD_NOT_START	ChiÕn tr­êng ch­a b¾t ®Çu
 LOC_IE2_PSL_EFFECT_SUCCESS	"T¨ng ®Õn cÊp %d %s"

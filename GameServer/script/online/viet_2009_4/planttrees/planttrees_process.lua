@@ -38,7 +38,7 @@ function OnUse()
 	else
 -----¼ì²é½ñÌìÖÖµÄÊ÷ÊÇ·ñÒÑ¾­µ½ÔÊÐíµÄ×î´óÊýÁ¿--------------------------------------
 		if GetTask(TASK_PLANT_TREE_COUNT) >= PLANT_TREE_LIMIT then
-			Talk(1, "", "H«m nay b¹n ®· trång <color=yellow>".. GetTask(TASK_PLANT_TREE_COUNT) .."<color> c©y råi, ®îi ngay mai h·y tiÕp tôc nhÐ.");
+			Talk(1, "", "Today you have planted <color=yellow>".. GetTask(TASK_PLANT_TREE_COUNT) .."<color> c©y råi, ®îi ngay mai h·y tiÕp tôc nhÐ.");
 			return 0;
 		end
 -----¼ì²éÊÇ·ñÒÑ¾­ÖÖÏÂÒ»¿ÃÊ÷ÁË----------------------------------------------------
@@ -94,19 +94,19 @@ function plantTree()
 			nMin = nMin + TREE_TYPE[i][3]
 		end
 		
-		local npcTreeIndex = CreateNpc(TREE_TYPE[nTreeType][1], GetName().." trång "..TREE_TYPE[nTreeType][2], nMapID, nMapX, nMapY);
-		WriteLogEx("Hoat dong thang 4","trång c©y",1,TREE_TYPE[nTreeType][2])
+		local npcTreeIndex = CreateNpc(TREE_TYPE[nTreeType][1], GetName().." plant"..TREE_TYPE[nTreeType][2], nMapID, nMapX, nMapY);
+		WriteLogEx("Hoat dong thang 4","plant a tree",1,TREE_TYPE[nTreeType][2])
 		if npcTreeIndex == 0 then
 			WriteLog("[Ho¹t ®éng trång c©y th¸ng 4  sai sãt]:"
 								..GetName..
 								"Trong lóc trång c©y, CreatNpc hµm sè trë vÒ 0. NhËp tham sè CreateNPC lµ:"
-								 ..TREE_TYPE[nTreeType][1]..", " ..GetName().. " trång "
+								 ..TREE_TYPE[nTreeType][1]..", " ..GetName().. " plant"
 								  ..TREE_TYPE[nTreeType][2].. ", " ..nMapID.. "," ..nMapX.. "," ..nMapY);
 		end
 
 -----Èç¹û»ñµÃ°×½ðÊ÷£¬ÔòÏòÈ«ÊÀ½ç·¢¹«¸æ
 		if nTreeType == 5 then
-			AddGlobalNews("Chóc mõng  "..GetName().." §· nhËn ®­îc." .. "C©y B¹ch Kim" .. "T¹i".. CITY_NAME_ID[GetWorldPos()]);
+			AddGlobalNews("Congratulations"..GetName().." §· nhËn ®­îc." .. "C©y B¹ch Kim" .. "At".. CITY_NAME_ID[GetWorldPos()]);
 		end
 		
 -----ÉèÖÃÊ÷µÄ´æ»îÊ±¼ä----------------------------------------------------------------------------		

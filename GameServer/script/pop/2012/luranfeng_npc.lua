@@ -13,14 +13,14 @@ Talk_1_1 = {};
 Talk_1_2 = {};
 Talk_1_3 = {};
 Talk_1_4 = {};
-TMain.msg = "<color=green>Tr¹i B¾c Song ¦ng Lôc Nhiªn Phong<color>:";
+TMain.msg = "<color=green>North Camp Twin Eagles Luc Nhien Phong<color>:";
 TMain.sel = {
 	{"Lµm sao nhËn ®­îc danh väng §¹i Danh Phñ?", Talk_1_1},
 	{"Lµm sao xem danh väng §¹i Danh Phñ cña ta?", Talk_1_2},
 	{"Lµm sao ®æi th­ëng danh väng §¹i Danh Phñ?", Talk_1_3},
 	{"Ta muèn xem sè lÇn hoµn thµnh nhiÖm vô danh väng tuÇn hoµn cña tuÇn nµy",Talk_1_4},
 	{"trë l¹i", TMain},
-	{"Ra khái", "nothing"}
+	{"Exit", "nothing"}
 };
 
 
@@ -28,24 +28,24 @@ TMain.sel = {
 Talk_1_1.msg = "<color=green>Tr¹i B¾c Song ¦ng Lôc Nhiªn Phong<color>: Hoµn thµnh nhiÖm vô ban ®Çu §¹i Danh Phñ ë chç <color=green>C¸o ThŞ TriÒu §×nh<color> vµ nhiÖm vô h»ng ngµy ë chç Tr¹i B¾c Song ¦ng Ngu MÆc S¬n vµ nhiÖm vô tuÇn hoµn (TuÇn), ®Òu cã thÓ t¨ng danh väng §¹i Danh Phñ.";
 Talk_1_1.sel = {
 	{"trë l¹i", TMain},
-	{"Ra khái", "nothing"}
+	{"Exit", "nothing"}
 }
 
 Talk_1_2.msg = "<color=green>Tr¹i B¾c Song ¦ng Lôc Nhiªn Phong<color>: NhÊp <color=yellow>phİm t¾t I<color> cã thÓ më giao diÖn danh väng, trong giao diÖn sÏ thÊy ®­îc tÊt c¶ danh väng hiÖn t¹i cña b¶n th©n.";
 Talk_1_2.sel = {
 	{"trë l¹i", TMain},
-	{"Ra khái", "nothing"}
+	{"Exit", "nothing"}
 }
 
 Talk_1_3.msg = "<color=green>Tr¹i B¾c Song ¦ng Lôc Nhiªn Phong<color>: NhÊp <color=yellow>phİm t¾t I<color> cã thÓ më giao diÖn danh väng, trong giao diÖn nhÊp nót PhÇn th­ëng danh väng liªn minh th­¬ng héi, sÏ xuÊt hiÖn giao diÖn phÇn th­ëng danh väng, chän khung danh väng §¹i Danh Phñ, sau ®ã chän vËt phÈm muèn ®æi, nhÊp nót ta muèn ®æi lµ ®­îc.";
 Talk_1_3.sel = {
 	{"trë l¹i", TMain},
-	{"Ra khái", "nothing"}
+	{"Exit", "nothing"}
 }
 
 Talk_1_4.sel = {
 	{"trë l¹i", TMain},
-	{"Ra khái", "nothing"}
+	{"Exit", "nothing"}
 }
 
 function main()

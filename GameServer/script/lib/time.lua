@@ -83,7 +83,7 @@ end;
 function Get_Time_String(nSecond,sFormat)
 	nSecond = floor(nSecond);	--保证是整数
 	if nSecond <= 0 then
-		return "0 gi﹜ ";	--小于等于0的都返回0秒
+		return "0 seconds";	--小于等于0的都返回0秒
 	end;
 	if sFormat == nil then
 		sFormat = "dhms";
@@ -127,7 +127,7 @@ function Get_Time_String(nSecond,sFormat)
 		if nMinTag == 0 then
 			nSec = 60*nMin;
 		else
-			sTime = sTime..nMin.." ph髏 ";
+			sTime = sTime..nMin.." minutes";
 		end;
 	end;
 	nSec = mod(nSecond,60) + nSec;

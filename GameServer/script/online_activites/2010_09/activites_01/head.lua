@@ -77,7 +77,7 @@ function vet_201009_01_jihuokaolu()
     SetTask(VET_201009_01_TASK_KAOLU_PHASE,1) --³õÊ¼»¯npcËù´¦½×¶Î
     SetTask(VET_201009_01_TASK_KAOLU_TIME,nTimeNow) --³õÊ¼»¯ÐÂµÄ½×¶Î¿ªÊ¼Ê±¼ä
     SetTask(VET_201009_01_TASK_MUCAI_NUM, 0) --³õÊ¼»¯³É¹¦·ÅÈë¿¾Â¯µÄÄ¾²ñÊý
-    StartTimeGuage("Lß n­íng", 30,0,1)
+    StartTimeGuage("Oven", 30,0,1)
 end
 
 
@@ -188,7 +188,7 @@ function confirm_method(nType)
 end
 
 function make_cake_201009_01()
-	AskClientForNumber("confirm_make_cake_201009_01", 1, 999, "Sè b¸nh Trung Thu?")
+	AskClientForNumber("confirm_make_cake_201009_01", 1, 999, "How many Mooncakes?")
 end
 
 function confirm_make_cake_201009_01(nCount)
@@ -208,7 +208,7 @@ function confirm_make_cake_201009_01(nCount)
 		return
 	end
 	if DelItem(2, 1, 30233, 5 * nQuantity) == 1 and DelItem(2,1,30230, 2 * nQuantity) == 1 then
-		gf_AddItemEx2({2, 1, 30236, nQuantity}, "B¸nh trung thu", "Hoat dong thang 9 nam 2010", "lµm b¸nh b»ng vËt phÈm Xu")
+		gf_AddItemEx2({2, 1, 30236, nQuantity}, "Mooncake", "Hoat dong thang 9 nam 2010", "lµm b¸nh b»ng vËt phÈm Xu")
 	end
 	SelectSay()
 end
@@ -241,11 +241,11 @@ function rabbit_make_cake()
         return
     end
     if DelItem(2, 1, 30230, 16) == 1 and DelItem(VET_201009_01_TB_ITEM_LIST[3][2],VET_201009_01_TB_ITEM_LIST[3][3],VET_201009_01_TB_ITEM_LIST[3][4], 100) == 1 and DelItem(VET_201009_01_TB_ITEM_LIST[6][2], VET_201009_01_TB_ITEM_LIST[6][3], VET_201009_01_TB_ITEM_LIST[6][4], 1) == 1 then
-    		local nNpcIndex = CreateNpc("Th¸nh Háa §µi", GetName().." Lß n­íng", GetWorldPos())
+    		local nNpcIndex = CreateNpc("Th¸nh Háa §µi", GetName().." Oven", GetWorldPos())
     		SetTask(VET_201009_01_TASK_FLAG_KAOLU,nNpcIndex)
 		SetNpcScript(nNpcIndex, "\\script\\online_activites\\2010_09\\activites_01\\npc\\npc_new_kaolu.lua")
 		SetNpcLifeTime(nNpcIndex, 90)
-		StartTimeGuage("N­íng b¸nh", 30,0,1)
+		StartTimeGuage("Bake cakes", 30,0,1)
     		SetTask(VET_201009_01_TAKS_TIME_LAST_KAOLU,nTimeNow)
    		SetTask(VET_201009_01_TASK_KAOLU_TIME,nTimeNow) --³õÊ¼»¯ÐÂµÄ½×¶Î¿ªÊ¼Ê±¼ä
    		SetTask(VET_201009_01_TASK_MUCAI_NUM, 0) --³õÊ¼»¯³É¹¦·ÅÈë¿¾Â¯µÄÄ¾²ñÊý

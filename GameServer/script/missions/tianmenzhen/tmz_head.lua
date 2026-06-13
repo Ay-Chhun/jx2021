@@ -167,19 +167,19 @@ tPositionNpcA = {
 	{"Sãi c¸i","Sãi c¸i",1780,3341},
 	{"Sãi con","Sãi con",1786,3349},
 	{"Sãi con","Sãi con",1781,3352},
-	{"TiÓu tÆc ","TiÓu tÆc ",1770,3656},
-	{"TiÓu tÆc ","TiÓu tÆc ",1765,3658},
-	{"TiÓu tÆc ","TiÓu tÆc ",1772,3657},
+	{"Little Bandit","Little Bandit",1770,3656},
+	{"Little Bandit","Little Bandit",1765,3658},
+	{"Little Bandit","Little Bandit",1772,3657},
 	{"Lý Quû","Lý Quû",1767,3416},
 	{"Th¸i TuÊn","Th¸i TuÊn",1768,3423},
 	{"La Kinh","La Kinh",1759,3419},
-	{{50,150,250,350},{"§Êu khÝ",2,1,3849},{"D©y buéc ngùa",2,1,3850},{"B×nh nhiªn liÖu",2,1,3849},{"Vá chuèi",2,1,3850}},
+	{{50,150,250,350},{"§Êu khÝ",2,1,3849},{"Horse-Tethering Rope",2,1,3850},{"B×nh nhiªn liÖu",2,1,3849},{"Banana Peel",2,1,3850}},
 };
 
 tPositionNpcB = {
 	{"Ng­êi gç","Ng­êi gç",1863,3419},
 	{"Ng­êi gç","Ng­êi gç",1691,3636},
-	{{200,400,600,800},{"BÉy kÑp",2,1,3851},{"D©y buéc ngùa",2,1,3850},{"B×nh nhiªn liÖu",2,1,3849},{"Vá chuèi",2,1,3850}}	
+	{{200,400,600,800},{"Trap Clamp",2,1,3851},{"Horse-Tethering Rope",2,1,3850},{"B×nh nhiªn liÖu",2,1,3849},{"Banana Peel",2,1,3850}}	
 };
 
 tPositionNpcC = {
@@ -207,12 +207,12 @@ tPositionNpcBOSS = { -- ±ð³¬¹ýËÄ¸ö
 
 --µÀ¾ßÐ§¹û
 tPositionBox = {--Ä£°åÃû npcÃû ×´Ì¬Ãû³Æ Ð§¹ûÃèÊö Ä§·¨ÊôÐÔ×Ö·û´® ÊýÖµ ³ÖÐøÊ±¼ä
-	{"Gi¸ vò khÝ","Gi¸ vò khÝ",1787,3508,"Dòng M·nh","t¨ng lùc c«ng kÝch 100%, duy tr× 30 gi©y","state_p_attack_percent_add",100,30,"state_m_attack_percent_add",100,30},
-	{"Gi¸ vò khÝ","Gi¸ vò khÝ",1754,3543,"Dòng M·nh","t¨ng lùc c«ng kÝch 100%, duy tr× 30 gi©y","state_p_attack_percent_add",100,30,"state_m_attack_percent_add",100,30},
-	{"Gi¸ khiªn","Gi¸ khiªn",1775,3411,"Hung h·n","T¨ng lùc phßng ngù 100%, duy tr× 30 gi©y","state_receive_half_damage",100,30},
+	{"Gi¸ vò khÝ","Gi¸ vò khÝ",1787,3508,"Brave and Fierce","t¨ng lùc c«ng kÝch 100%, duy tr× 30 gi©y","state_p_attack_percent_add",100,30,"state_m_attack_percent_add",100,30},
+	{"Gi¸ vò khÝ","Gi¸ vò khÝ",1754,3543,"Brave and Fierce","t¨ng lùc c«ng kÝch 100%, duy tr× 30 gi©y","state_p_attack_percent_add",100,30,"state_m_attack_percent_add",100,30},
+	{"Gi¸ khiªn","Gi¸ khiªn",1775,3411,"Ferocious","Increase defense power 100%, lasts 30 seconds","state_receive_half_damage",100,30},
 	{"L¸ th¶o d­îc","L¸ th¶o d­îc",1775,3666,"TrÞ th­¬ng","Mçi gi©y håi phôc 10% sinh mÖnh, duy tr× 30 gi©y","state_life_per_per8f",500,30},
-	{"Giµy giã","Giµy giã",1851,3527,"Ngôy bé","Èn th©n, duy tr× 30 gi©y","state_illusion_latent",0,30},
-	{"Giµy giã","Giµy giã",1686,3528,"Ngôy bé","Èn th©n, duy tr× 30 gi©y","state_illusion_latent",0,30},
+	{"Giµy giã","Giµy giã",1851,3527,"Fake Step","Stealth, lasts 30 seconds","state_illusion_latent",0,30},
+	{"Giµy giã","Giµy giã",1686,3528,"Fake Step","Stealth, lasts 30 seconds","state_illusion_latent",0,30},
 };
 
 tPositionNpcEye = {--Ä£°åÃû¡¢npcÃû¡¢×ø±êµã
@@ -238,21 +238,21 @@ tPositionNpcEye = {--Ä£°åÃû¡¢npcÃû¡¢×ø±êµã
 
 tPositionNpcFlag = {--Ä£°åÃû¡¢npcÃû¡¢×ø±êµã 
 	[1] = {
-		{"TrËn kú tÝm","§¹i trËn kú ("..CampOne_Name..")",1820,3347},
+		{"TrËn kú tÝm","Grand battle flag ("..CampOne_Name..")",1820,3347},
 		{"B¹i kú tÝm","TrËn Kú h­ tæn ("..CampOne_Name..")",1820,3347},		
 	},
 	[2] = {
-		{"TrËn kú lam","§¹i trËn kú ("..CameTwo_Name..")",1737,3726},
+		{"TrËn kú lam","Grand battle flag ("..CameTwo_Name..")",1737,3726},
 		{"B¹i kú lam","TrËn Kú h­ tæn ("..CameTwo_Name..")",1737,3726},		
 	},
 };
 
 --°Ë¸ö·ðµÄÎ»ÖÃ
 tPositionFo = {
-	{"Nga Mi tiÓu s­ tû 1","Nga Mi tiÓu s­ tû ",1907,3367,1645,3666},
-	{"Nga Mi tiÓu s­ tû 2","Nga Mi tiÓu s­ tû ",1913,3367,1652,3665},
-	{"Nga Mi tiÓu s­ tû 3","Nga Mi tiÓu s­ tû ",1908,3390,1652,3689},
-	{"Nga Mi tiÓu s­ tû 4","Nga Mi tiÓu s­ tû ",1914,3389,1642,3687}
+	{"Nga Mi tiÓu s­ tû 1","Emei junior martial sister",1907,3367,1645,3666},
+	{"Nga Mi tiÓu s­ tû 2","Emei junior martial sister",1913,3367,1652,3665},
+	{"Nga Mi tiÓu s­ tû 3","Emei junior martial sister",1908,3390,1652,3689},
+	{"Nga Mi tiÓu s­ tû 4","Emei junior martial sister",1914,3389,1642,3687}
 }
 
 tPositionCamp = { --ºóÓª¸´»îµã Ç°ÓªÕ½³¡µã ²Ö¿â¹ÜÀíÔ± Àë¿ªnpc ÉÏÕónpc
@@ -280,7 +280,7 @@ tAwardItem =
 };
 tMocRuong = 
 {
-	[0] = {"Kh«ng", 1},
+	[0] = {"None", 1},
 	[1] = {"Qu©n C«ng Ch­¬ng", 3},
 	[2] = {"Qu©n C«ng §¹i", 6},
 	[3] = {"Qu©n C«ng Huy Hoµng", 10},
@@ -321,7 +321,7 @@ g_tWinExtraAward2 = {
 		tbAward =
 		{
 			{32,400,1},--¾ü¹¦
-			{1,"Hu©n ch­¬ng anh hïng",{2,1,30499,2},0,1},
+			{1,"Hero's Medal",{2,1,30499,2},0,1},
 			--{1,"ÓÂÊ¿»ÕÕÂ",{2,1,30498,1},0,1},
 		},
 	},
@@ -332,7 +332,7 @@ g_tWinExtraAward2 = {
 		tbAward =
 		{
 			{32,800,1},--¾ü¹¦
-			{1,"Hu©n ch­¬ng anh hïng",{2,1,30499,3},0,1},
+			{1,"Hero's Medal",{2,1,30499,3},0,1},
 			--{1,"ÓÂÊ¿»ÕÕÂ",{2,1,30498,1},0,1},
 		},
 	},
@@ -343,7 +343,7 @@ g_tWinExtraAward2 = {
 		tbAward =
 		{
 			{32,2000,1},--¾ü¹¦
-			{1,"Hu©n ch­¬ng anh hïng",{2,1,30499,4},0,1},
+			{1,"Hero's Medal",{2,1,30499,4},0,1},
 			--{1,"ÓÂÊ¿»ÕÕÂ",{2,1,30498,1},0,1},
 		},
 	},
@@ -354,7 +354,7 @@ g_tWinExtraAward2 = {
 		tbAward =
 		{
 			{32,4000,1},--¾ü¹¦
-			{1,"Hu©n ch­¬ng anh hïng",{2,1,30499,5},0,1},
+			{1,"Hero's Medal",{2,1,30499,5},0,1},
 			--{1,"ÓÂÊ¿»ÕÕÂ",{2,1,30498,1},0,1},
 		},
 	},
@@ -365,7 +365,7 @@ g_tWinExtraAward2 = {
 		tbAward =
 		{
 			{32,4800,1},--¾ü¹¦
-			{1,"Hu©n ch­¬ng anh hïng",{2,1,30499,6},0,1},
+			{1,"Hero's Medal",{2,1,30499,6},0,1},
 			--{1,"ÓÂÊ¿»ÕÕÂ",{2,1,30498,1},0,1},
 		},
 	},
@@ -389,7 +389,7 @@ g_tLoseExtraAward2 = {
 		{
 			{32,400,1},--¾ü¹¦
 			--{1,"ÓÂÊ¿»ÕÕÂ",{2,1,30498,2},0,1},
-			{1,"Hu©n ch­¬ng anh hïng",{2,1,30499,1},0,1},
+			{1,"Hero's Medal",{2,1,30499,1},0,1},
 		},
 	},
 	[2] = 
@@ -400,7 +400,7 @@ g_tLoseExtraAward2 = {
 		{
 			{32,900,1},--¾ü¹¦
 			--{1,"ÓÂÊ¿»ÕÕÂ",{2,1,30498,3},0,1},
-			{1,"Hu©n ch­¬ng anh hïng",{2,1,30499,2},0,1},
+			{1,"Hero's Medal",{2,1,30499,2},0,1},
 		},
 	},
 	[3] = 
@@ -411,7 +411,7 @@ g_tLoseExtraAward2 = {
 		{
 			{32,1800,1},--¾ü¹¦
 			--{1,"ÓÂÊ¿»ÕÕÂ",{2,1,30498,4},0,1},
-			{1,"Hu©n ch­¬ng anh hïng",{2,1,30499,3},0,1},
+			{1,"Hero's Medal",{2,1,30499,3},0,1},
 		},
 	},
 	[4] = 
@@ -422,7 +422,7 @@ g_tLoseExtraAward2 = {
 		{
 			{32,2400,1},--¾ü¹¦
 			--{1,"ÓÂÊ¿»ÕÕÂ",{2,1,30498,5},0,1},
-			{1,"Hu©n ch­¬ng anh hïng",{2,1,30499,4},0,1},
+			{1,"Hero's Medal",{2,1,30499,4},0,1},
 		},
 	},
 };
@@ -487,12 +487,12 @@ tbNormalAward =
 }
  tbAcvtiveDesc = 
 {
-	{"<color=green>CÊp thÊp<color>", "<color=green>TÇm th­êng<color>",},
-	{"<color=green>CÊp h¹ trung<color>", "<color=green>B×nh th­êng<color>",},
-	{"<color=yellow>CÊp trung<color>", "<color=yellow>T­¬ng ®èi tèt<color>",},
-	{"<color=yellow>CÊp th­îng trung<color>", "<color=yellow>Dòng m·nh<color>",},
-	{"<color=red>CÊp cao<color>", "<color=red>LÊy 1 chäi 10<color>",},
-	{"<color=red>CÊp siªu cao<color>", "<color=red>LÊp l¸nh s¸ng ngêi<color>",},
+	{"<color=green>Low grade<color>", "<color=green>TÇm th­êng<color>",},
+	{"<color=green>Lower-mid grade<color>", "<color=green>B×nh th­êng<color>",},
+	{"<color=yellow>Mid grade<color>", "<color=yellow>Fairly good<color>",},
+	{"<color=yellow>Upper-mid grade<color>", "<color=yellow>Powerful<color>",},
+	{"<color=red>High grade<color>", "<color=red>One against ten<color>",},
+	{"<color=red>Superior grade<color>", "<color=red>Brilliant and shining<color>",},
 }
 
 tbAcvtiveWinAward = 
@@ -653,9 +653,9 @@ tAwardCloth = {
 		{{{"Thiªn NghÜa-Cöu D­¬ng Long Trang",0,101,3034,1600,0},{"Thiªn NghÜa-Cöu D­¬ng Long Trang",0,101,3040,1600,0},{"Thiªn NghÜa-Cöu D­¬ng Long Trang",0,101,3046,1600,0},{"Thiªn NghÜa-Cöu D­¬ng Long Trang",0,101,3052,1600,0}},{{"Thiªn NghÜa-Cöu ¢m Phông Trang",0,101,3037,1600,0},{"Thiªn NghÜa-Cöu ¢m Phông Trang",0,101,3043,1600,0},{"Thiªn NghÜa-Cöu ¢m Phông Trang",0,101,3049,1600,0},{"Thiªn NghÜa-Cöu ¢m Phông Trang",0,101,3055,1600,0}}},
 	},
 	[4] = {
-		{{{"Long §»ng Tø H¶i Qu¸n",0,103,3056,0},{"Long §»ng Tø H¶i Qu¸n",0,103,3057,0},{"Long §»ng Tø H¶i Qu¸n",0,103,3058,0},{"Long §»ng Tø H¶i Qu¸n",0,103,3059,0}},{{"Phông Vò Cöu Thiªn Qu¸n",0,103,3060,0},{"Phông Vò Cöu Thiªn Qu¸n",0,103,3061,0},{"Phông Vò Cöu Thiªn Qu¸n",0,103,3062,0},{"Phông Vò Cöu Thiªn Qu¸n",0,103,3063,0}}},
-		{{{"Long §»ng Tø H¶i Y",0,100,3056,0},{"Long §»ng Tø H¶i Y",0,100,3057,0},{"Long §»ng Tø H¶i Y",0,100,3058,0},{"Long §»ng Tø H¶i Y",0,100,3059,0}},{{"Phông Vò Cöu Thiªn Y",0,100,3060,0},{"Phông Vò Cöu Thiªn Y",0,100,3061,0},{"Phông Vò Cöu Thiªn Y",0,100,3062,0},{"Phông Vò Cöu Thiªn Y",0,100,3063,0}}},
-		{{{"Long §»ng Tø H¶i Trang",0,101,3056,0},{"Long §»ng Tø H¶i Trang",0,101,3057,0},{"Long §»ng Tø H¶i Trang",0,101,3058,0},{"Long §»ng Tø H¶i Trang",0,101,3059,0}},{{"Phông Vò Cöu Thiªn Trang",0,101,3060,0},{"Phông Vò Cöu Thiªn Trang",0,101,3061,0},{"Phông Vò Cöu Thiªn Trang",0,101,3062,0},{"Phông Vò Cöu Thiªn Trang",0,101,3063,0}}},
+		{{{"Dragon Soaring Four Seas Pass",0,103,3056,0},{"Dragon Soaring Four Seas Pass",0,103,3057,0},{"Dragon Soaring Four Seas Pass",0,103,3058,0},{"Dragon Soaring Four Seas Pass",0,103,3059,0}},{{"Phông Vò Cöu Thiªn Qu¸n",0,103,3060,0},{"Phông Vò Cöu Thiªn Qu¸n",0,103,3061,0},{"Phông Vò Cöu Thiªn Qu¸n",0,103,3062,0},{"Phông Vò Cöu Thiªn Qu¸n",0,103,3063,0}}},
+		{{{"Long Dang Tu Hai Robe",0,100,3056,0},{"Long Dang Tu Hai Robe",0,100,3057,0},{"Long Dang Tu Hai Robe",0,100,3058,0},{"Long Dang Tu Hai Robe",0,100,3059,0}},{{"Phông Vò Cöu Thiªn Y",0,100,3060,0},{"Phông Vò Cöu Thiªn Y",0,100,3061,0},{"Phông Vò Cöu Thiªn Y",0,100,3062,0},{"Phông Vò Cöu Thiªn Y",0,100,3063,0}}},
+		{{{"Long Dang Tu Hai Greaves",0,101,3056,0},{"Long Dang Tu Hai Greaves",0,101,3057,0},{"Long Dang Tu Hai Greaves",0,101,3058,0},{"Long Dang Tu Hai Greaves",0,101,3059,0}},{{"Phông Vò Cöu Thiªn Trang",0,101,3060,0},{"Phông Vò Cöu Thiªn Trang",0,101,3061,0},{"Phông Vò Cöu Thiªn Trang",0,101,3062,0},{"Phông Vò Cöu Thiªn Trang",0,101,3063,0}}},
 	},
 };
 
@@ -669,16 +669,16 @@ tAwardWeapon = {
 	[11] = {{"Quy L©n Hé Thñ",0,0,8873,800,5200},{"Tinh Kh¾c-Quy L©n Hé Thñ",0,0,8875,2600,2600},{"Thiªn NghÜa-Quy L©n Hé Thñ",0,0,8877,2600,0},{"Cöu Ch©u-Quy L©n Hé Thñ",0,0,8938,0,670,1}},
 	[12] = {{"TrÊn Ng¹o C«n",0,5,8899,800,5200},{"Tinh Kh¾c-TrÊn Ng¹o C«n",0,5,8900,2600,2600},{"Thiªn NghÜa-TrÊn Ng¹o C«n",0,5,8901,2600,0},{"Cöu Ch©u-TrÊn Ng¹o C«n",0,5,8939,0,671,1}},
 	[14] = {{"ThuÇn Phong KiÕm",0,2,8882,800,5200},{"Tinh Kh¾c-ThuÇn Phong KiÕm",0,2,8885,2600,2600},{"Thiªn NghÜa-ThuÇn Phong KiÕm",0,2,8888,2600,0},{"Cöu Ch©u-ThuÇn Phong KiÕm",0,2,8940,0,672,1}},
-	[15] = {{"Tinh §Èu ChuyÓn Bót",0,9,8911,800,5200},{"Tinh Kh¾c-Tinh §Èu ChuyÓn Bót",0,9,8913,2600,2600},{"Thiªn NghÜa-Tinh §Èu ChuyÓn Bót",0,9,8915,2600,0},{"Cöu Ch©u-Tinh §Èu ChuyÓn Bót",0,9,8941,0,673,1}},
+	[15] = {{"Star Dipper Rotating Brush",0,9,8911,800,5200},{"Tinh Khac-Tinh Dau Chuyen Brush",0,9,8913,2600,2600},{"Thiªn NghÜa-Tinh §Èu ChuyÓn Bót",0,9,8915,2600,0},{"Cöu Ch©u-Tinh §Èu ChuyÓn Bót",0,9,8941,0,673,1}},
 	[17] = {{"Ph¸ Qu©n TrËn Th­¬ng",0,6,8902,800,5200},{"Tinh Kh¾c-Ph¸ Qu©n TrËn Th­¬ng",0,6,8903,2600,2600},{"Thiªn NghÜa-Ph¸ Qu©n TrËn Th­¬ng",0,6,8904,2600,0},{"Cöu Ch©u-Ph¸ Qu©n TrËn Th­¬ng",0,6,8942,0,670,1}},
-	[18] = {{"Truy MÖnh Cung",0,4,8896,800,5200},{"Tinh Kh¾c-Truy MÖnh Cung",0,4,8897,2600,2600},{"Thiªn NghÜa-Truy MÖnh Cung",0,4,8898,2600,0},{"Cöu Ch©u-Truy MÖnh Cung",0,4,8943,0,671,1}},
+	[18] = {{"Life-Chasing Bow",0,4,8896,800,5200},{"Tinh Khac-Truy Menh Bow",0,4,8897,2600,2600},{"Thiªn NghÜa-Truy MÖnh Cung",0,4,8898,2600,0},{"Cöu Ch©u-Truy MÖnh Cung",0,4,8943,0,671,1}},
 	[20] = {{"ThiÖp Cèt HuyÕt §ao",0,7,8905,800,5200},{"Tinh Kh¾c-ThiÖp Cèt HuyÕt §ao",0,7,8906,2600,2600},{"Thiªn NghÜa-ThiÖp Cèt HuyÕt §ao",0,7,8907,2600,0},{"Cöu Ch©u-ThiÖp Cèt HuyÕt §ao",0,7,8944,0,671,1}},
 	[21] = {{"LuyÖn Hån HuyÕt Tr¶o",0,11,8920,800,5200},{"Tinh Kh¾c-LuyÖn Hån HuyÕt Tr¶o",0,11,8922,2600,2600},{"Thiªn NghÜa-LuyÖn Hån HuyÕt Tr¶o",0,11,8924,2600,0},{"Cöu Ch©u-LuyÖn Hån HuyÕt Tr¶o",0,11,8945,0,673,1}},
 	[23] = {{"Ngù Thiªn Phong KiÕm",0,2,8883,800,5200},{"Tinh Kh¾c-Ngù Thiªn Phong KiÕm",0,2,8886,2600,2600},{"Thiªn NghÜa-Ngù Thiªn Phong KiÕm",0,2,8889,2600,0},{"Cöu Ch©u-Ngù Thiªn Phong KiÕm",0,2,8946,0,672,1}},
 	[25] = {{"ThÇn DiÖm Thiªn §ao",0,3,8891,800,5200},{"Tinh Kh¾c-ThÇn DiÖm Thiªn §ao",0,3,8893,2600,2600},{"Thiªn NghÜa-ThÇn DiÖm Thiªn §ao",0,3,8895,2600,0},{"Cöu Ch©u-ThÇn DiÖm Thiªn §ao",0,3,8947,0,670,1,1}},
 	[26] = {{"ThÇn Phong Ph¸n Bót",0,9,8912,800,5200},{"Tinh Kh¾c-ThÇn Phong Ph¸n Bót",0,9,8914,2600,2600},{"Thiªn NghÜa-ThÇn Phong Ph¸n Bót",0,9,8916,2600,0},{"Cöu Ch©u-ThÇn Phong Ph¸n Bót",0,9,8948,0,673,1}},
 	[27] = {{"ThÇn Linh Chó Tr¶o",0,11,8921,800,5200},{"Tinh Kh¾c-ThÇn Linh Chó Tr¶o",0,11,8923,2600,2600},{"Thiªn NghÜa-ThÇn Linh Chó Tr¶o",0,11,8925,2600,0},{"Cöu Ch©u-ThÇn Linh Chó Tr¶o",0,11,8949,0,671,1}},
-	[29] = {{"Linh Lung Chi",0,13,8929,800,5200},{"Tinh Kh¾c-Linh Lung Chi",0,13,8930,2600,2600},{"Thiªn NghÜa-Linh Lung Chi",0,13,8931,2600,0},{"Cöu Ch©u-Linh Lung Chi",0,13,8950,0,671,1}},
+	[29] = {{"Linh Lung Chi",0,13,8929,800,5200},{"Tinh Khac-Linh Lung Chi",0,13,8930,2600,2600},{"Thiªn NghÜa-Linh Lung Chi",0,13,8931,2600,0},{"Cöu Ch©u-Linh Lung Chi",0,13,8950,0,671,1}},
 	[30] = {{"Cöu Tiªu S¸o",0,12,8926,800,5200},{"Tinh Kh¾c-Cöu Tiªu S¸o",0,12,8927,2600,2600},{"Thiªn NghÜa-Cöu Tiªu S¸o",0,12,8928,2600,0},{"Cöu Ch©u-Cöu Tiªu S¸o",0,12,8951,0,673,1}},
 };
 

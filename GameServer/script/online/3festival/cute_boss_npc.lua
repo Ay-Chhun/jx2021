@@ -24,7 +24,7 @@ function main()
 	end;
 	if GetTask(TASK_GOT_ITEM_TIME) ~= 0 and GetTime() - GetTask(TASK_GOT_ITEM_TIME) <= 60*60 then	--Èç¹ûÏà¸ôÁ½´ÎµÃµ½ÎïÆ·µÄÊ±¼äÏà²îĞ¡ÓÚ60·ÖÖÓ
 		if random(1,50) == 11 then
-			Talk(1,"","<color=green>"..sNpcName.."<color>: Cã nhiªu ®ã th«i sao?");
+			Talk(1,"","<color=green>"..sNpcName.."<color>: Is that all there is?");
 		else
 			Talk(1,"","<color=green>"..sNpcName.."<color>: Ng­¬i ®· lÊy 1 b¶o vËt, mçi tiÕng mét ng­êi chØ ®­îc lÊy 1 b¶o vËt mµ th«i.");
 		end;
@@ -71,7 +71,7 @@ end;
 
 function setunit_curstates(Npc_index,att_seq,number)
 	if number > 99 and att_seq ~= 1 and att_seq ~= 4 and att_seq ~= 5 and att_seq ~= 6 then
-		print("ThiÕt lËp trŞ sè NPC nhÇm: VŞ trİ:"..att_seq.."TrŞ:"..number)
+		print("ThiÕt lËp trŞ sè NPC nhÇm: VŞ trİ:"..att_seq.."Value:"..number)
 		return 0
 	end
 	local num_save = GetUnitCurStates(Npc_index,att_seq)
@@ -83,8 +83,8 @@ end
 tRandString = {
 			"Sî qu¸! Sau nµy kh«ng d¸m ®Õn ph¸ n÷a!",
 			"VLTK2 chóc b¹n n¨m míi vui vÎ!",
-			"Quèc Kh¸nh vui vÎ!",
-			"Trung Thu vui vÎ!",
+			"Happy National Day!",
+			"Happy Mid-Autumn Festival!",
 			"Sî qu¸! Sau nµy kh«ng d¸m ®Õn ph¸ n÷a!",
 			"Sî qu¸! Sau nµy kh«ng d¸m ®Õn ph¸ n÷a!",
 			"Sî qu¸! Sau nµy kh«ng d¸m ®Õn ph¸ n÷a!",

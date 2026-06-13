@@ -6,7 +6,7 @@
 Include("\\script\\lib\\globalfunctions.lua")
 Include("\\script\\online\\viet_event\\march_event_09\\march_event_func.lua")
 
-g_szLogTitle = "Event th¸ng 3"				--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
+g_szLogTitle = "March Event"				--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
 g_szInfoHead = "<color=green>".."B¶o r­¬ng ThÇn bÝ".."<color>: "
 
 g_tbItem = 
@@ -31,11 +31,11 @@ end
 
 function open_box()
 	if check_item_count(g_tbItem[2]) == 0 then
-		Say(g_szInfoHead.."C¸c h¹ kh«ng mang theo Ch×a Khãa Vµng trªn hµnh trang, h·y kiÓm tra l¹i hµnh trang cña m×nh xem!",1,"KÕt thóc ®èi tho¹i/no");
+		Say(g_szInfoHead.."C¸c h¹ kh«ng mang theo Ch×a Khãa Vµng trªn hµnh trang, h·y kiÓm tra l¹i hµnh trang cña m×nh xem!",1,"End dialogue/no");
 		return
 	end
 	if gf_Judge_Room_Weight(1,20) == 0 then
-		Say(g_szInfoHead.."Kho¶ng trèng hµnh trang hoÆc søc lùc kh«ng ®ñ, xin kiÓm tra l¹i!",1,"KÕt thóc ®èi tho¹i/no");
+		Say(g_szInfoHead.."Kho¶ng trèng hµnh trang hoÆc søc lùc kh«ng ®ñ, xin kiÓm tra l¹i!",1,"End dialogue/no");
 		return
 	end
 	if del_item_ex(g_tbItem[2]) == 1 then

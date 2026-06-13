@@ -42,10 +42,10 @@ function choose_peifang(nPage)
 		end
 	end
 	if nPage ~= 0 then		
-		tinsert(strtab,"Trang tr­íc/#choose_peifang("..(nPage-1)..")");
+		tinsert(strtab,"Previous page/#choose_peifang("..(nPage-1)..")");
 	end
 	if nRemaidNum > nPageNum then
-		tinsert(strtab,"Trang kÕ/#choose_peifang("..(nPage+1)..")");
+		tinsert(strtab,"Next page/#choose_peifang("..(nPage+1)..")");
 	end
 		tinsert(strtab,"Bá ®i, t¹m thêi kh«ng ®æi/nothing");	
 		Say("Xin chän Linh Th¹ch phèi ph­¬ng cÊp 7 b¹n muèn ®æi",

@@ -25,7 +25,7 @@ function main()
 	if ht_IsOpen() == 1 then
 		g_Act_Count = g_Act_Count + 1;
 		g_Act_Dialog[g_Act_Count] = {};
-		g_Act_Select[g_Act_Count] = "Bang Héi Vinh Danh";
+		g_Act_Select[g_Act_Count] = "Guild Hall of Fame";
 		for i=1,getn(HTN_DIALOG) do 
 			tinsert(g_Act_Dialog[g_Act_Count], HTN_DIALOG[i]);
 		end
@@ -36,7 +36,7 @@ function main()
 	if LSB_IsActivityOpen(LSB_ACTIVITY_ID) == 1 then
 		g_Act_Count = g_Act_Count + 1;
 		g_Act_Dialog[g_Act_Count] = {};
-		g_Act_Select[g_Act_Count] = "BOSS L­¬ng S¬n";
+		g_Act_Select[g_Act_Count] = "Liangshan BOSS";
 		for i=1,getn(tbSay_201206) do 
 			tinsert(g_Act_Dialog[g_Act_Count], tbSay_201206[i]);
 		end
@@ -69,7 +69,7 @@ function main()
 	if dzt_activity_isopen() == 1 then
 		g_Act_Count = g_Act_Count + 1;
 		g_Act_Dialog[g_Act_Count] = {};
-		g_Act_Select[g_Act_Count] = "Tù ThiÕp §¹i T¸c ChiÕn";
+		g_Act_Select[g_Act_Count] = "Self-Posted Grand Operation";
 		for i=1, getn(DZT_DIALOG_TABLE) do 
 			tinsert(g_Act_Dialog[g_Act_Count], DZT_DIALOG_TABLE[i]);
 		end
@@ -102,7 +102,7 @@ function main()
 	if lb_IsOpen() == 1 then
 		g_Act_Count = g_Act_Count + 1;
 		g_Act_Dialog[g_Act_Count] = {};
-		g_Act_Select[g_Act_Count] = "R­¬ng May M¾n Lín";
+		g_Act_Select[g_Act_Count] = "Great Lucky Chest";
 		for i = 1, getn(LB_NPC_DIALOG) do 
 			tinsert(g_Act_Dialog[g_Act_Count], LB_NPC_DIALOG[i]);
 		end

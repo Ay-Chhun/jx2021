@@ -7,10 +7,10 @@ function OnUse(nItem)
 	local	tMapName = {
 		[100] = "TuyÒn Ch©u",
 		[150] = "D­¬ng Ch©u",
-		[200] = "BiÖn Kinh",
+		[200] = "Bianjing",
 		[300] = "Thµnh §«",
 		[350] = "T­¬ng D­¬ng",
-		[400] = "§¹i Lý",
+		[400] = "Da Li",
 		[500] = "Phông T­êng",
 	}
 	local nMapId, nX, nY = GetWorldPos();
@@ -58,7 +58,7 @@ function main()
 	end
 	if GetTongName() == sTongName then
 		tinsert(tSay, "NhËn th­ëng ngay/get_award_now");
-		tinsert(tSay, "§Ó ta suy nghÜ/nothing");
+		tinsert(tSay, "Let me think about it/nothing");
 		Say(msg, getn(tSay), tSay);
 		return 0;
 	end

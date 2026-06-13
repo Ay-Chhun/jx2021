@@ -10,8 +10,8 @@ function OnUse()
 	end
 	Say("Sö dông cã thÓ t¨ng <color=yellow>30 ®iÓm<color> tinh lùc, ®ång ý dïng kh«ng?",
 		2,
-		"\n§óng/confirm_use_final",
-		"\nKÕt thóc ®èi tho¹i/nothing")
+		"\nConfirm/confirm_use_final",
+		"\nEnd conversation/nothing")
 end
 
 function confirm_use_final()

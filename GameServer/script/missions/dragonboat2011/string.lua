@@ -4,9 +4,9 @@
 --π¶ƒ‹≤‚ ‘£∫–°–‹°¢∑πΩ„
 --ø™∑¢ ±º‰£∫2011-8-23
 --–ﬁ∏ƒº«¬º£∫
-sNpcNameEntrance="<color=green>Ti’p D…n S¯<color>:"
-sNpcNameNeeder="<color=green>Qu©n Nhu Quan<color>:"
-sNpcNamePilot="<color=green>H≠Ìng d…n vi™n<color>: "
+sNpcNameEntrance="<color=green>Guide Messenger<color>:"
+sNpcNameNeeder="<color=green>Army Quartermaster<color>:"
+sNpcNamePilot="<color=green>Guide<color>:"
 tSTRING_NPC_SAY = {
 	--Ω”“˝NPC∂‘ª∞
 	[1] = {
@@ -16,18 +16,18 @@ tSTRING_NPC_SAY = {
 				"B∏o danh H∂i Chi’n Long Ch©u (Ph› b∏o danh 6 vµng)/join_mission",
 				"NhÀn ph«n th≠Îng H∂i Chi’n Long Ch©u trÀn tr≠Ìc/get_award_infor",				
 				"GiÌi thi÷u H∂i Chi’n Long Ch©u/mision_info",
-				"Kh´ng c„ g◊!/nothing",
+				"Nothing!/nothing",
 			},
 		},
 		[2] = {
 			sNpcNameEntrance.."L∑o phu r t t©m huy’t trÀn H∂i Chi’n Long Ch©u nµy, hy v‰ng c∏c vﬁ Æπi hi÷p c„ th” thi tri”n tµi ngh÷ si™u vi÷t cÒa m◊nh",
 			{
-				"ßi“u ki÷n tham gia/mission_condition",
+				"Participation conditions/mission_condition",
 				"ThÍi gian mÎ/mission_open_time",
 				"Quy tæc H∂i Chi’n Long Ch©u/mission_rule",
 				"Ph«n th≠Îng H∂i Chi’n Long Ch©u/mission_prize",
 				"TrÎ lπi/main",
-				"RÍi kh·i/nothing",
+				"Leave/nothing",
 			},
 		},
 		
@@ -70,7 +70,7 @@ tSRING_SYS_MSG = {
 tSTRING_NEEDER_DLG = {
 	[1] = "GiÌi thi÷u c∏ch ch¨i Long Ch©u Chi’n/introduce",
 	[2] = "GiÌi thi÷u Æ∆c Æi”m Long Ch©u/drag_specialty",
-	[3] = "NhÀn thuy“n rÂng/get_drag",
+	[3] = "Receive a dragon boat/get_drag",
 	[4] = "RÍi kh·i chi’n tr≠Íng/exit_battle",
 	[5] = "Ta chÿ Æ’n xem thˆ/do_nothing",
 }
@@ -102,7 +102,7 @@ tSTRING_DRAG_NPC = {
 --========’Ω≥°πÊ‘Ú
 tSTRING_BATTLE_RULE = {
 	[1] = "Quy tæc chi’n Æ u/fight_rule",
-	[2] = "Quy tæc h·a thuy“n/firedrag_rule",
+	[2] = "Fire boat rules/firedrag_rule",
 	[3] = "Quy tæc chi’n thæng/sf_rule",
 	[4] = "TrÎ lπi/main",
 }

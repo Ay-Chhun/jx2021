@@ -9,10 +9,10 @@ Include("\\script\\task\\world\\task_head.lua")
 nTaskTempId_Item_HashCode = 249
 SClew = "<color=green>Th«ng b¸o<color>:"
 tEquipSeriesName = {
-	"Tinh Kh¾c","Thiªn NghÜa","Cöu Ch©u","H¹o NguyÖt","DiÖu D­¬ng"
+	"Refined Carving","Thiªn NghÜa","Cöu Ch©u","H¹o NguyÖt","DiÖu D­¬ng"
 }
 tEquipPosName = {
-	"§Çu","Th­îng y","H¹ y","Vò khÝ","Trang søc"
+	"§Çu","Upper Garment","Lower Garment","Vò khÝ","Trang søc"
 }
 --===×°±¸·¢·Å½ûÖ¹±í
 tReleaseForbiddenList = {
@@ -29,7 +29,7 @@ tReleaseForbiddenList = {
 	},
 }
 tMetiralInfo = {
-	["M¶nh Tinh NgÊn"] = {
+	["Star Silver Fragment"] = {
 		{2,1,30299},
 		"Tham gia diÔn vâ Thiªn M«n TrËn cã thÓ nhËn ®­îc ",
 	},
@@ -65,7 +65,7 @@ tMetiralInfo = {
 tItemSynthInfo = {
 	["ThiªnNghÜa TinhThiÕt"] = {
 		{
-			{"M¶nh Tinh NgÊn",2},
+			{"Star Silver Fragment",2},
 			{" Kim ",2},
 		},
 		2
@@ -127,13 +127,13 @@ tArmIdInfo = {
 		},
 		[3] = {
 			{
-				{"Long §»ng Tø H¶i Qu¸n",0,103,3056},{"Phông Vò Cöu Thiªn Qu¸n",0,103,3060}
+				{"Dragon Soaring Four Seas Pass",0,103,3056},{"Phông Vò Cöu Thiªn Qu¸n",0,103,3060}
 			},{
-				{"Long §»ng Tø H¶i Qu¸n",0,103,3057},{"Phông Vò Cöu Thiªn Qu¸n",0,103,3061}
+				{"Dragon Soaring Four Seas Pass",0,103,3057},{"Phông Vò Cöu Thiªn Qu¸n",0,103,3061}
 			},{
-				{"Long §»ng Tø H¶i Qu¸n",0,103,3058},{"Phông Vò Cöu Thiªn Qu¸n",0,103,3062}
+				{"Dragon Soaring Four Seas Pass",0,103,3058},{"Phông Vò Cöu Thiªn Qu¸n",0,103,3062}
 			},{
-				{"Long §»ng Tø H¶i Qu¸n",0,103,3059},{"Phông Vò Cöu Thiªn Qu¸n",0,103,3063}
+				{"Dragon Soaring Four Seas Pass",0,103,3059},{"Phông Vò Cöu Thiªn Qu¸n",0,103,3063}
 			},
 		},
 		[4] = {
@@ -200,13 +200,13 @@ tArmIdInfo = {
 		},
 		[3] = {
 			{
-				{"Long §»ng Tø H¶i Y",0,100,3056},{"Phông Vò Cöu Thiªn Y",0,100,3060},
+				{"Long Dang Tu Hai Robe",0,100,3056},{"Phông Vò Cöu Thiªn Y",0,100,3060},
 			},{
-				{"Long §»ng Tø H¶i Y",0,100,3057},{"Phông Vò Cöu Thiªn Y",0,100,3061},
+				{"Long Dang Tu Hai Robe",0,100,3057},{"Phông Vò Cöu Thiªn Y",0,100,3061},
 			},{
-				{"Long §»ng Tø H¶i Y",0,100,3058},{"Phông Vò Cöu Thiªn Y",0,100,3062},
+				{"Long Dang Tu Hai Robe",0,100,3058},{"Phông Vò Cöu Thiªn Y",0,100,3062},
 			},{
-				{"Long §»ng Tø H¶i Y",0,100,3059},{"Phông Vò Cöu Thiªn Y",0,100,3063},
+				{"Long Dang Tu Hai Robe",0,100,3059},{"Phông Vò Cöu Thiªn Y",0,100,3063},
 			},
 		},
 		[4] = {
@@ -273,13 +273,13 @@ tArmIdInfo = {
 		},
 		[3] = {
 			{
-				{"Long §»ng Tø H¶i Trang",0,101,3056},{"Phông Vò Cöu Thiªn Trang",0,101,3060},
+				{"Long Dang Tu Hai Greaves",0,101,3056},{"Phông Vò Cöu Thiªn Trang",0,101,3060},
 			},{
-				{"Long §»ng Tø H¶i Trang",0,101,3057},{"Phông Vò Cöu Thiªn Trang",0,101,3061},
+				{"Long Dang Tu Hai Greaves",0,101,3057},{"Phông Vò Cöu Thiªn Trang",0,101,3061},
 			},{
-				{"Long §»ng Tø H¶i Trang",0,101,3058},{"Phông Vò Cöu Thiªn Trang",0,101,3062},
+				{"Long Dang Tu Hai Greaves",0,101,3058},{"Phông Vò Cöu Thiªn Trang",0,101,3062},
 			},{
-				{"Long §»ng Tø H¶i Trang",0,101,3059},{"Phông Vò Cöu Thiªn Trang",0,101,3063},
+				{"Long Dang Tu Hai Greaves",0,101,3059},{"Phông Vò Cöu Thiªn Trang",0,101,3063},
 			},
 		},
 		[4] = {
@@ -433,13 +433,13 @@ tWeaponIdInfo = {
 		[11]={"Tinh Kh¾c-Quy L©n Hé Thñ",0,0,8875},
 		[12]={"Tinh Kh¾c-TrÊn Ng¹o C«n",0,5,8900},
 		[14]={"Tinh Kh¾c-ThuÇn Phong KiÕm",0,2,8885},
-		[15]={"Tinh Kh¾c-Tinh §Èu ChuyÓn Bót",0,9,8913},
+		[15]={"Tinh Khac-Tinh Dau Chuyen Brush",0,9,8913},
 		[17]={"Tinh Kh¾c-Ph¸ Qu©n TrËn Th­¬ng",0,6,8903},
-		[18]={"Tinh Kh¾c-Truy MÖnh Cung",0,4,8897},
+		[18]={"Tinh Khac-Truy Menh Bow",0,4,8897},
 		[20]={"Tinh Kh¾c-ThiÖp Cèt HuyÕt §ao",0,7,8906},
 		[21]={"Tinh Kh¾c-LuyÖn Hån HuyÕt Tr¶o",0,11,8922},
 		[23]={"Tinh Kh¾c-Ngù Thiªn Phong KiÕm",	0,	2,	8886},
-		[29]={"Tinh Kh¾c-Linh Lung Chi",	0,	13,	8930},
+		[29]={"Tinh Khac-Linh Lung Chi",	0,	13,	8930},
 		[30]={"Tinh Kh¾c-Cöu Tiªu S¸o",	0,	12,	8927},
 	},
 	[2] = {
@@ -534,7 +534,7 @@ tEquipSynthInfo = {
 			tTableStructure = {"Body"},
 			--ÏûºÄ±í
 			tEquipConsum = {
-				{"M¶nh Tinh NgÊn",300},
+				{"Star Silver Fragment",300},
 				{" Kim ",300},
 			}
 		},
@@ -546,7 +546,7 @@ tEquipSynthInfo = {
 			tTableStructure = {"Body"},
 			--ÏûºÄ±í
 			tEquipConsum = {
-				{"M¶nh Tinh NgÊn",360},
+				{"Star Silver Fragment",360},
 				{" Kim ",200},
 			}
 		},
@@ -558,7 +558,7 @@ tEquipSynthInfo = {
 			tTableStructure = {"Body"},
 			--ÏûºÄ±í
 			tEquipConsum = {
-				{"M¶nh Tinh NgÊn",180},
+				{"Star Silver Fragment",180},
 				{" Kim ",100},
 			}
 		},
@@ -569,7 +569,7 @@ tEquipSynthInfo = {
 			tTableStructure = {"Route"},
 			--ÏûºÄ±í
 			tEquipConsum = {
-				{"M¶nh Tinh NgÊn",420},
+				{"Star Silver Fragment",420},
 				{"Ngò Hµnh HuyÒn Th¹ch",420},
 				{" Kim ",400},
 			}
@@ -849,7 +849,7 @@ function OnUse(nItemIndex)
 		"Ta muèn xem phèi ph­¬ng ghÐp trang bÞ /equip_chg_rule",
 		"Ta muèn n©ng cÊp ®¹o cô /#dia_metiral_chg_main("..nItemIndex..")",
 		"Ta muèn xem phèi ph­¬ng n©ng cÊp /metiral_chg_rule",
-		"Tho¸t/nothing"
+		"Exit/nothing"
 	)
 end
 --×°±¸¶Ò»»×Ü±í
@@ -887,7 +887,7 @@ function equip_chg_main(nItemIndex)
 		tSay = {SClew.."Nguyªn liÖu hoÆc tiÒn vµng kh«ng ®ñ! "}
 		tinsert(tSay,"Ta muèn xem phèi ph­¬ng ghÐp trang bÞ /equip_chg_rule")
 	end
-	tinsert(tSay,"Tho¸t/nothing")
+	tinsert(tSay,"Exit/nothing")
 	SelectSay(tSay)
 end
 function equip_chg_dtm(...)
@@ -912,7 +912,7 @@ function equip_chg_dtm(...)
 		else
 			tinsert(tSay,"X¸c ®Þnh /#equip_chg_deal("..nEuiqpSerial..","..nEuipPos..")")
 		end
-		tinsert(tSay,"Tho¸t/nothing")
+		tinsert(tSay,"Exit/nothing")
 		SelectSay(tSay)
 	end
 end
@@ -931,7 +931,7 @@ function equip_chg_rule(...)
 	for i = 1,getn(tEquipSeriesName) do
 		tinsert(tSay,format("Ta muèn xem hÖ %s /#equip_series_sel(%d)",tEquipSeriesName[i],i))
 	end
-	tinsert(tSay,"Tho¸t/nothing")
+	tinsert(tSay,"Exit/nothing")
 	SelectSay(tSay)
 end
 --¼ÌÐø²é¿´ºÏ³ÉÅä·½
@@ -940,7 +940,7 @@ function equip_series_sel(nEuiqpSerial)
 	for i = 1,getn(tEquipPosName) do
 		tinsert(tSay,format("Ta muèn xem %s trang bÞ %s/#equip_chg_view(%d,%d)",tEquipSeriesName[nEuiqpSerial],tEquipPosName[i],nEuiqpSerial,i))
 	end
-	tinsert(tSay,"Tho¸t/nothing")
+	tinsert(tSay,"Exit/nothing")
 	SelectSay(tSay)
 end
 function equip_chg_view(nEuiqpSerial,nEuipPos)
@@ -949,7 +949,7 @@ function equip_chg_view(nEuiqpSerial,nEuipPos)
 	for i = 1,getn(tChkResult) do
 		tSay[1] = tSay[1].."\n    "..tChkResult[i][2]
 	end
-	tinsert(tSay,"Tho¸t/nothing")
+	tinsert(tSay,"Exit/nothing")
 	SelectSay(tSay)
 end
 --»ñÈ¡×°±¸Ãû³Æ
@@ -988,7 +988,7 @@ function dia_metiral_chg_main(nItemIndex)
 			end
 		end
 	end
-	if sMetrialName == "M¶nh Tinh NgÊn" then
+	if sMetrialName == "Star Silver Fragment" then
 		tinsert(tSay,"Ta cÇn n©ng cÊp H¹o NguyÖt HuyÒn Kim/haonguyethk")
 	elseif sMetrialName == "Ngò Hµnh HuyÒn Th¹ch" then
 		tinsert(tSay,"Ta cÇn n©ng cÊp Ngò Hµnh HuyÒn Kim/nguhanhhk")
@@ -998,7 +998,7 @@ function dia_metiral_chg_main(nItemIndex)
 		Talk(1,"",SClew.."<color=green>"..sMetrialName.."<color> t¹m thêi kh«ng thÓ n©ng cÊp!")
 		return
 	else
-		tinsert(tSay,"Tho¸t/nothing")
+		tinsert(tSay,"Exit/nothing")
 		SelectSay(tSay)
 	end
 end
@@ -1009,7 +1009,7 @@ function say_metiral_chg_sel(sItemName)
 		metiral_chg_dtm(sItemName,nChgNum)
 	elseif nChgNum > 1 then
 		SetTaskTemp(nTaskTempId_Item_HashCode,Hash(sItemName))
-		AskClientForNumber("metiral_chg_num_enter",1,nChgNum,format("§æi %s sè l­îng",sItemName))
+		AskClientForNumber("metiral_chg_num_enter",1,nChgNum,format("Exchange %s quantity",sItemName))
 	else
 		metiral_chg_view(sItemName)
 	end
@@ -1044,7 +1044,7 @@ function metiral_chg_dtm(sItemName,nChgNum)
 		end
 		tSay[1] = tSay[1].."\n X¸c ®Þnh muèn ®æi?"
 		tinsert(tSay,"X¸c ®Þnh /#metiral_chg_main(\""..sItemName.."\","..nChgNum..")")
-		tinsert(tSay,"Tho¸t/nothing")
+		tinsert(tSay,"Exit/nothing")
 		SelectSay(tSay)
 	end
 end
@@ -1091,7 +1091,7 @@ function metiral_chg_rule()
 			tinsert(tSay,format("Ta muèn xem nguyªn liÖu n©ng cÊp %s /#metiral_chg_view(\"%s\")",sItemName,sItemName))
 		end
 	end
-	tinsert(tSay,"Tho¸t/nothing")
+	tinsert(tSay,"Exit/nothing")
 	SelectSay(tSay)
 end
 --µÀ¾ßÉý¼¶·½·¨²é¿´
@@ -1114,7 +1114,7 @@ function metiral_chg_view(sItemName,nChgNum)
 		end
 	end
 	tinsert(tSay,"trë l¹i/metiral_chg_rule")
-	tinsert(tSay,"Tho¸t/nothing")
+	tinsert(tSay,"Exit/nothing")
 	SelectSay(tSay)
 end
 --²ÄÁÏ×ã¹»¼ì²â
@@ -1200,7 +1200,7 @@ end
 
 -- §æi Ngò Hµnh HuyÒn Kim
 function nguhanhhk()
-		AskClientForNumber("ConfirmNumNHHK", 1, 100, "Ngò Hµnh")
+		AskClientForNumber("ConfirmNumNHHK", 1, 100, "Five Elements")
 end
 
 function ConfirmNumNHHK(nCount)

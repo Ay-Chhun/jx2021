@@ -1,14 +1,14 @@
 function OnUse()
 	local selTab = {
-			"Online tÆng quµ/#spring_info(1)",
+			"Online gift giving/#spring_info(1)",
 			"Phóc ThÇn ph¸t hång bao/#spring_info(2)",
-			"Móa l©n/#spring_info(3)",
+			"Lion dance/#spring_info(3)",
 			"§o¹t b¶o r­¬ng/#spring_info(4)",
-			"Heo vµng ®em ®Õn c¸t t­êng/#spring_info(5)",
-			"Chóc tÕt/#spring_info(6)",
+			"The golden pig brings good fortune/#spring_info(5)",
+			"New Year greetings/#spring_info(6)",
 			"N¨m míi mÆc ®å míi./#spring_info(7)",
 			"Niªn thó lµm thó c­ìi/#spring_info(8)",
-			"Rêi khái/nothing"
+			"Leave/nothing"
 			}
 	
 	Say("N¨m míi l¹i ®Õn, cã rÊt nhiÒu ho¹t ®éng cho mäi ng­êi tham gia. NhÊp chuét vµo tªn ho¹t ®éng ®Ó xem chi tiÕt.",getn(selTab),selTab);
@@ -50,7 +50,7 @@ local selTab = {
 	};
 
 	Say("N¨m míi l¹i ®Õn, cã rÊt nhiÒu ho¹t ®éng cho mäi ng­êi tham gia. NhÊp chuét vµo tªn ho¹t ®éng t­¬ng øng ®Ó xem chi tiÕt!  \n"..selTab[nType][1],2,	"trë l¹i/OnUse",
-	"Rêi khái/nothing");
+	"Leave/nothing");
 
 end
 function nothing()

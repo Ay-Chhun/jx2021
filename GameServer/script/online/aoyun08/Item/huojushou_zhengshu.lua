@@ -12,9 +12,9 @@ function OnUse()
 	local nTask = GetTask(TASK_AOYUN_HUOJU_NUM);
 	local nStrtab = {
 		"T×m hiÓu phÇn th­ëng/huojushou_award",
-		"§­a ta ®Õn §µi ®uèc t­¬ng øng (50 b¹c)/goto_huojutai",
+		"Take me to the corresponding torch stand (50 silver)/goto_huojutai",
 		"T×m täa ®é §µi ®uèc/huoju_zuobiao",
-		"Tho¸t/nothing"
+		"Exit/nothing"
 		};
 	if nTask == 1 then
 		Say("<color=green>Chøng nhËn quyÒn r­íc ®uèc<color>: Chóc mõng, b¹n ®· tõ <color=yellow>Th¸nh Háa §µi<color> nhËn ®­îc Th¸nh Háa, chuyÓn ®Õn <color=yellow>§µi ®uèc 1<color>, xin chuÈn bÞ trong ngµy r­íc ®uèc, chuyÓn ngän thø nhÊt! <color=yellow>Tr­íc khi Th¸nh Háa §µi bèc ch¸y<color> chuyÓn ®Õn §µi ®uèc 1, nÕu kh«ng ®Õn ®óng giê th× sÏ kh«ng nhËn ®­îc phÇn th­ëng.",

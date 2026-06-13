@@ -32,7 +32,7 @@ VET_201112_CHUNJIE_AWARD = {
  	{1, 345, "Ngo¹i trang tÕt xu©n",{
  			{{"Trang phôc xu©n chuÈn",{0,109,113,1}},{"Trang phôc xu©n kh«i ng«",{0,109,114,1}},{"Trang phôc xu©n KiÒu n÷",{0,109,116,1}},{"Trang phôc xu©n gîi c¶m",{0,109,115,1}},}, --1Ïî
  			}, 0, 1},
- 	{1, 345, "Niªn thó", {0, 105, 33, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
+ 	{1, 345, "Year Beast", {0, 105, 33, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
   {1, 39, "Thiªn Cang LÖnh", {2, 95, 204, 1}, 0},
   {1, 47, "§«ng Ph­¬ng Long Ch©u", {0, 102, 24, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
 }
@@ -42,8 +42,8 @@ tSTRING_TABLE = {
 	[1] = "Trong thêi gian event, ng­êi ch¬i ®· nhËn phÇn th­ëng cuèi trong ho¹t ®éng mõng tÕt xu©n cã thÓ nhËn ®­îc phÇn th­ëng N¨m Míi C¸t T­êng t¹i B¹ch Tiªn Sinh. PhÇn th­ëng N¨m Míi C¸t T­ëng chØ giíi h¹n trong <color=green>%d<color> phÇn.",
 	[2] = "NhËn phÇn th­ëng n¨m míi c¸t t­êng",
 	[3] = "KiÓm tra sè quµ cßn l¹i",
-	[4] = "Lêi chóc phóc tõ thiªn chóa!",
-	[5] = "Tho¸t",
+	[4] = "Blessings from God!",
+	[5] = "Exit",
 	[6] = "PhÇn th­ëng ®· ph¸t hÕt <color=green>%d<color> phÇn, thËt ®¸ng tiÕc, b¹n ®· ®Õn trÔ.",
 	[7] = "ThiÕu hiÖp vÉn ch­a nhËn phÇn th­ëng cuèi cña ho¹t ®éng tÕt xu©n, sè l­îng hiÖn t¹i ®· sö dông ®­îc <color=green>%d<color>/<color=green>%d<color>",
 	[8] = "Sè liÖu ghi nhËn ch­a ®Õn, h·y quay l¹i sau.",
@@ -87,14 +87,14 @@ end
 ----------------------------------
 function get_201112_final_award()
 	if gf_CheckEventDateEx(51) ~= 1 then
-		Talk(1,"","Event ®· hÕt h¹n!")
+		Talk(1,"","The event has expired!")
 		return 0;
 	end
 	local nStart = MkTime(2012,1,13,0,0,0);
 	local nEnd = MkTime(2012,1,16,0,0,0);
 	local nNowTime = GetTime();
 	if nNowTime < nStart or nNowTime > nEnd then
-		Talk(1,"","Event ®· hÕt h¹n!")
+		Talk(1,"","The event has expired!")
 		return 0;
 	end	
 	--·ÃÎÊ¹²ÏíÊý¾Ý¿â
@@ -134,14 +134,14 @@ end
 
 function get_201112_usable_num()
 	if gf_CheckEventDateEx(51) ~= 1 then
-		Talk(1,"","Event ®· hÕt h¹n!")
+		Talk(1,"","The event has expired!")
 		return 0;
 	end
 	local nStart = MkTime(2012,1,13,0,0,0);
 	local nEnd = MkTime(2012,1,16,0,0,0);
 	local nNowTime = GetTime();
 	if nNowTime < nStart or nNowTime > nEnd then
-		Talk(1,"","Event ®· hÕt h¹n!")
+		Talk(1,"","The event has expired!")
 		return 0;
 	end
 	--·ÃÎÊ¹²ÏíÊý¾Ý¿â

@@ -34,7 +34,7 @@ function main()
 --		return 0;
 --	end;
 	if DoFireworks(DIGGING_ACTION_ID,1) == 1 then
-		Msg2Player("§ang thu thËp l­¬ng th¶o……......");
+		Msg2Player("Gathering grain forage......");
 		CastState("state_fetter",1,5*18)
 		ProgressSlot(5*18);	--5Ãë
 		SetNpcLifeTime(nNpcIndex,0);
@@ -49,8 +49,8 @@ end;
 function OnProgressCallback()
 	local nCamp = BT_GetCamp();
 	if random(1,100) <= 50 then
-		Msg2MSGroup(MISSION_ID,"Ng­êi ch¬i"..GetName().."t¹i Nh¹n M«n Quan-Th¶o cèc chiÕn ®µo bíi bõa b·i ¶nh h­ëng ®Õn m«i tr­êng nªn bÞ thæ d©n truy ®uæi, chê ng­êi ch¬i ®Õn gi¶i cøu",nCamp);
-		local npcIndex = CreateNpc("Hoµn tr­êng Thæ d©n","Thæ d©n giËn d÷",GetWorldPos());
+		Msg2MSGroup(MISSION_ID,"Player"..GetName().."t¹i Nh¹n M«n Quan-Th¶o cèc chiÕn ®µo bíi bõa b·i ¶nh h­ëng ®Õn m«i tr­êng nªn bÞ thæ d©n truy ®uæi, chê ng­êi ch¬i ®Õn gi¶i cøu",nCamp);
+		local npcIndex = CreateNpc("Hoµn tr­êng Thæ d©n","Enraged Local",GetWorldPos());
 		SetNpcDeathScript(npcIndex,"\\settings\\static_script\\kf_newbattles\\resourcebattle\\angryvillager_death.lua");	
 	else
 		AddItem(tBattleItem[3][2],tBattleItem[3][3],tBattleItem[3][4],3);

@@ -1,15 +1,15 @@
 Include("\\script\\online\\abluemoon\\abluemoon_head.lua")
 tNpcWords = {
-	"真是英雄出少年啊，文武双全，啧啧啧……",
-	"今天天气真好啊！是个好兆头。",
-	"真想到处走一走，老是站在同一个地方跳来跳去太累了。",
-	"想做状元吗？快来考试吧！",
-	"今天你考试了吗？",
-	"小白兔，白又白，两只耳朵竖起来，蹦蹦跳跳真可爱～",
-	"都给我老老实实考，不许作弊！",
-	"萝卜真好吃，又能美容，真是个好东西！",
-	"如果不幸遇到对话框消失，还是可以接着考的哦！",
-	"每天都要背一大堆的证书出来发 ，累死我了……",
+	"Truly a hero emerges in youth, skilled in both literary and martial arts, heh heh heh......",
+	"The weather is really nice today! It's a good omen.",
+	"I'd really love to wander around. Always standing in the same spot hopping back and forth is too tiring.",
+	"Want to become the top scholar? Come take the exam quickly!",
+	"Did you take the exam today?",
+	"Little white rabbit, white and white again, two ears standing up, hopping and bouncing, truly adorable~",
+	"Everyone test honestly for me, no cheating allowed!",
+	"Radishes taste great and are good for the complexion too, truly a good thing!",
+	"If you're unlucky enough to have the dialog box disappear, you can still continue the exam!",
+	"Every day I have to recite a huge pile of certificates to hand out, it's exhausting me......",
 }
 
 function OnTimer()
@@ -21,9 +21,9 @@ function OnTimer()
 	end
 	if GetMissionV(MV_TIMER_TIME) == (TIMER_TOTAL_TIME - 15*60) then  --NPC消失15分钟前停止答题
 		SetMissionV(MV_TIMER_IDEL,1)
-		Msg2SubWorld("兔小丫还有15分钟就要更换考场啦，现在已经停止接受科考报名，请大家抓紧下次机会！")
+		Msg2SubWorld("Rabbit Yaya will change the exam hall in 15 minutes. Registration for the exam has now stopped. Everyone, seize the next opportunity!")
 	elseif GetMissionV(MV_TIMER_TIME) >= TIMER_TOTAL_TIME then
-		WriteLog("[科考统计]这个小时内参加高经验考试的人数为"..GetMissionV(MV_COUNT_PAY).."人,消耗红萝卜总数为"..GetMissionV(MV_COUNT_LUOBO).."个!")
+		WriteLog("[Exam Statistics] The number of people who took the high-EXP exam this hour is"..GetMissionV(MV_COUNT_PAY).."people, total radishes consumed is"..GetMissionV(MV_COUNT_LUOBO).."carrots!")
 		CloseMission(MISSION_ID)
 	else
 		local idx = 0;
@@ -35,12 +35,12 @@ function OnTimer()
 						local RestTime = ABLUEMOON_TIME - (GetGameTime() - GetTask(ABLUEMOON_TIMER))
 						if RestTime > 10 then
 							if mod(RestTime,10) == 0 then
-								Msg2Player("["..RestTime.."/60]--倒计时")
+								Msg2Player("["..RestTime.."/60]--countdown")
 							end
 						elseif RestTime > 0 then
-							Msg2Player("["..RestTime.."/60]--倒计时")
+							Msg2Player("["..RestTime.."/60]--countdown")
 						else
-							Msg2Player("答题时间到！")
+							Msg2Player("Time to answer is up!")
 							SetTask(ABLUEMOON_STATE,3) --答题失败
 						end
 					end

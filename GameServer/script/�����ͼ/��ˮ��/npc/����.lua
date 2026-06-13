@@ -16,7 +16,7 @@ function main()
 				"Rêi khái khu vùc thu thËp/leave",
 				"§Õn L©m Nh¹c Th«n (cao cÊp)/#NewWorld(723,1700,3448)",
 				"§Õn Doanh D©n Th«n (trung cÊp)/#NewWorld(718,1708,3405)",
-				"KÕt thóc ®èi tho¹i/no",
+				"End dialogue/no",
 				}
 	Say("Muèn canh t¸c ­? ChØ cÇn dïng ThÇn N«ng §¬n ®­a ®Õn khu vùc t­¬ng øng sau ®ã dïng kü n¨ng canh t¸c",getn(selTab),selTab)
 end;

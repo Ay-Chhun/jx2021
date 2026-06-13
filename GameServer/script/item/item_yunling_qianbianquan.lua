@@ -12,8 +12,8 @@ t_itemconfig =
 {
 	--g,d,p,szName,nAward,MaxUseNum
 	{2, 1, 30491, "V– Ti’u Y Vµng", 1000, 9999},
-	{2, 1, 30492,"V– Ti’u Y Bπc", 100, 9999},
-	{2, 1, 30493,"V– Ti’u Y ßÂng", 10, 9999},
+	{2, 1, 30492,"Silver Tieu Y Token", 100, 9999},
+	{2, 1, 30493,"Bronze Tieu Y Token", 10, 9999},
 }
 
 function OnUse(nItemIndex)

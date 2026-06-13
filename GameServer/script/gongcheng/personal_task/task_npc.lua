@@ -13,10 +13,10 @@ function main()
 	Say("Th©n lµ vâ l©m nh©n sÜ kh«ng thÓ chèi bá tr¸ch nhiÖm chèng giÆc ngo¹i x©m, gióp b¸ch tİnh sinh sèng yªn b×nh!",
 		5,
 		"Giíi thiÖu Håi Phong tr¹i/hui_jieshao",
-		"Ng¨n c¶n tiÕp viÖn/start_task",
+		"Block Reinforcements/start_task",
 		"Hoµn thµnh nhiÖm vô/complete_task",
-		"Rêi khái Håi Phong tr¹i/leave_task",
-		"KÕt thóc ®èi tho¹i/no_say")
+		"Leave Huifeng Camp/leave_task",
+		"End conversation/no_say")
 	init_fight()
 end
 
@@ -27,9 +27,9 @@ end
 function complete_task()
 	Say("Th©n lµ vâ l©m nh©n sÜ kh«ng thÓ chèi bá tr¸ch nhiÖm chèng giÆc ngo¹i x©m, gióp b¸ch tİnh sinh sèng yªn b×nh!",
 		3,
-		"Ng¨n c¶n tiÕp viÖn-tr¹i ngùa vµ kho l­¬ng/complete_task_1",
-		"Ng¨n c¶n tiÕp viÖn-Kho¸ng tr­êng vµ khi ®èn gç/complete_task_2",
-		"Cø hái/no_say")
+		"Block Reinforcements - Horse Camp and Granary/complete_task_1",
+		"Block Reinforcements - Mine Field and Lumber Yard/complete_task_2",
+		"Just asking/no_say")
 end
 
 function complete_task_1()
@@ -99,9 +99,9 @@ function start_task()
 
 	Say("Th©n lµ vâ l©m nh©n sÜ kh«ng thÓ chèi bá tr¸ch nhiÖm chèng giÆc ngo¹i x©m, gióp b¸ch tİnh sinh sèng yªn b×nh!",
 		3,
-		"Ng¨n c¶n tiÕp viÖn-tr¹i ngùa vµ kho l­¬ng/get_task_1",
-		"Ng¨n c¶n tiÕp viÖn-Kho¸ng tr­êng vµ khi ®èn gç/get_task_2",
-		"Cø hái/no_say")
+		"Block Reinforcements - Horse Camp and Granary/get_task_1",
+		"Block Reinforcements - Mine Field and Lumber Yard/get_task_2",
+		"Just asking/no_say")
 end
 
 function get_task_1()
@@ -114,7 +114,7 @@ function get_task_1()
 	Say("Ngùa vµ l­¬ng th¶o chİnh lµ nÒn t¶ng c¬ b¶n ®Ó chiÕn ®Êu, h·y ®i ®èt s¹ch kho l­¬ng vµ tr¹i ngùa cña ®Şch!",
 		2,
 		"TiÕp nhËn nhiÖm vô/get_task_1_yes",
-		"Cø hái/no_say")
+		"Just asking/no_say")
 end
 
 function get_task_2()
@@ -127,7 +127,7 @@ function get_task_2()
 	Say("Giê h·y ®i tiªu diÖt bän lİnh canh g¸c Kho¸ng tr­êng vµ Méc tr­êng.",
 		2,
 		"TiÕp nhËn nhiÖm vô/get_task_2_yes",
-		"Cø hái/no_say")
+		"Just asking/no_say")
 end
 
 function get_task_1_yes()

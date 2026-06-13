@@ -13,7 +13,7 @@ function aoyun_box_main()
 		"\nTa muèn t×m hiÓu ho¹t ®éng '§o¹t B¶o Kú Binh'/box_info",
 		"\nTa muèn biÕt phÇn th­ëng ho¹t ®éng '§o¹t B¶o Kú Binh'/prize_list",
 		"\nTa ®Õn nhËn phÇn th­ëng '§o¹t B¶o Kú Binh'/box_prize",
-		"\nChØ ®Õn xem/end_dialog"
+		"\nJust looking/end_dialog"
 	)
 end
 --²Î¼Ó»î¶¯
@@ -50,7 +50,7 @@ function box_log_in()
 			return
 		end
 	else
-		Talk(1,"",Npc_name.."Khu thi ®Êu ®· ®Çy, ®îi chót!")
+		Talk(1,"",Npc_name.."The arena is full, wait a bit!")
 		return
 	end
 end

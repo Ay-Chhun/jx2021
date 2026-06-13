@@ -23,9 +23,9 @@ function OnUse(nItemIdx)
 		--给物品奖励
 		local szFullLogTitle = VIET_0912_STR_EVENT_LOG_TITLE
 		if mod(GetTask(VIET_0912_TASK_XIANGCAODANGAO_COUNT),50) == 0 then
-			gf_EventGiveRandAward(VIET_0912_XIANGCAODANGAO_AWARD_50, 100, 1, szFullLogTitle, "B竛h Kem Vani");
+			gf_EventGiveRandAward(VIET_0912_XIANGCAODANGAO_AWARD_50, 100, 1, szFullLogTitle, "Vanilla Cream Cake");
 		else
-			gf_EventGiveRandAward(VIET_0912_XIANGCAODANGAO_AWARD, 100, 7, szFullLogTitle, "B竛h Kem Vani");
+			gf_EventGiveRandAward(VIET_0912_XIANGCAODANGAO_AWARD, 100, 7, szFullLogTitle, "Vanilla Cream Cake");
 		end
 		--给经验        
 		ModifyExp(150000);		  

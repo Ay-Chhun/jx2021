@@ -4,7 +4,7 @@ Include("\\script\\lib\\globalfunctions.lua");
 
 --TSK_TC_BK_VD = 2707		--0987654321: 1-nhËn nv vd2tcvd; 2-nhËn nv tcvd2bkvd
 	--3-3BNL;4-4TL;5-9HG;6-8TMT;7-8TMT;8-1BNL;9-1TL;0-1HG
-szNPCName = "<color=green>Chñ Töu LÇu:<color> "
+szNPCName = "<color=green>Tavern Master:<color>"
 NV_THIENCHIVIEMDE100_FILE = "\\script\\vng\\weapon_upgrade\\change_viemde2thienchiviemde.lua";
 
 function get_VD2TCVD()

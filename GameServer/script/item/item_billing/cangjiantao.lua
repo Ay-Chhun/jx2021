@@ -41,30 +41,30 @@ function use_cangjian_bag_det(bag_diff)
 	local canjiantao={
 		{},
 		{--²Ø½£Ã±×ÓÃû×Ö-----------------²Ø½£ÒÂ·þÃû×Ö------------²Ø½£¿ã/Ð¬Ãû×Ö-----------²Ø½£ÓñÅåÃû×Ö---------²Ø½£ÎäÆ÷-¸±Àà£ºÃ±×Ó¡¢ÒÂ·þ¡¢¿ã/Ð¬¡¢ÓñÅä-Ð¡Àà-ÎäÆ÷¸±Àà-Ð¡Àà
-		{"Kim Cang Dao Qu¸n","Kim Cang Dao Th­êng","Kim Cang Dao Trang","Kim Cang Dao Béi","Kim Cang Dao §ao",103,100,101,102,3,271},
-		{"Kim Cang Dao Qu¸n","Kim Cang Dao Th­êng","Kim Cang Dao Trang","Kim Cang Dao Béi","Kim Cang Dao §ao",103,100,101,102,3,272}
+		{"Vajra Saber, headgear","Vajra Saber, common","Kim Cang Dao Trang","Vajra Saber, belt","Kim Cang Dao §ao",103,100,101,102,3,271},
+		{"Vajra Saber, headgear","Vajra Saber, common","Kim Cang Dao Trang","Vajra Saber, belt","Kim Cang Dao §ao",103,100,101,102,3,272}
 		},
 		{
-		{"Nh­ Lai Dao Qu¸n","Nh­ Lai Dao Th­êng","Nh­ Lai Dao Trang","Nh­ Lai Dao Béi","Nh­ Lai Dao Tr­îng",103,100,101,102,8,371},
-		{"Nh­ Lai Dao Qu¸n","Nh­ Lai Dao Th­êng","Nh­ Lai Dao Trang","Nh­ Lai Dao Béi","Nh­ Lai Dao Tr­îng",103,100,101,102,8,372}
+		{"Tathagata Saber, headgear","Tathagata Saber, common","Tathagata Saber, attire","Tathagata Saber, belt","Tathagata Saber, staff",103,100,101,102,8,371},
+		{"Tathagata Saber, headgear","Tathagata Saber, common","Tathagata Saber, attire","Tathagata Saber, belt","Tathagata Saber, staff",103,100,101,102,8,372}
 		},
 		{
-		{"La H¸n Dao Qu¸n","La H¸n Dao Th­êng","La H¸n Dao Trang","La H¸n Dao Béi","La H¸n Dao Thñ",103,100,101,102,0,471},
-		{"La H¸n Dao Qu¸n","La H¸n Dao Th­êng","La H¸n Dao Trang","La H¸n Dao Béi","La H¸n Dao Thñ",103,100,101,102,0,472}
-		},
-		{},
-		{
-		{"HiÖp Kh¸ch Dao Qu¸n","HiÖp Kh¸ch Dao Th­êng","HiÖp Kh¸ch Dao Trang","HiÖp Kh¸ch Dao Béi","HiÖp Kh¸ch Dao Ch©m",103,100,101,102,1,671},
-		{"HiÖp Kh¸ch Dao Qu¸n","HiÖp Kh¸ch Dao Th­êng","HiÖp Kh¸ch Dao Trang","HiÖp Kh¸ch Dao Béi","HiÖp Kh¸ch Dao Ch©m",103,100,101,102,1,672},
-		{"HiÖp Kh¸ch Dao Qu¸n","HiÖp Kh¸ch Dao Th­êng","HiÖp Kh¸ch Dao Trang","HiÖp Kh¸ch Dao Béi","HiÖp Kh¸ch Dao Ch©m",103,100,101,102,1,673},
-		{"HiÖp Kh¸ch Dao Qu¸n","HiÖp Kh¸ch Dao Th­êng","HiÖp Kh¸ch Dao Trang","HiÖp Kh¸ch Dao Béi","HiÖp Kh¸ch Dao Ch©m",103,100,101,102,1,674}
+		{"Arhat Saber, headgear","Arhat Saber, common","Arhat Saber, attire","Arhat Saber, belt","La H¸n Dao Thñ",103,100,101,102,0,471},
+		{"Arhat Saber, headgear","Arhat Saber, common","Arhat Saber, attire","Arhat Saber, belt","La H¸n Dao Thñ",103,100,101,102,0,472}
 		},
 		{},
 		{
+		{"Knight-Errant Saber, headgear","Knight-Errant Saber, common","Knight-Errant Saber, attire","Knight-Errant Saber, belt","Knight-Errant Saber, needle",103,100,101,102,1,671},
+		{"Knight-Errant Saber, headgear","Knight-Errant Saber, common","Knight-Errant Saber, attire","Knight-Errant Saber, belt","Knight-Errant Saber, needle",103,100,101,102,1,672},
+		{"Knight-Errant Saber, headgear","Knight-Errant Saber, common","Knight-Errant Saber, attire","Knight-Errant Saber, belt","Knight-Errant Saber, needle",103,100,101,102,1,673},
+		{"Knight-Errant Saber, headgear","Knight-Errant Saber, common","Knight-Errant Saber, attire","Knight-Errant Saber, belt","Knight-Errant Saber, needle",103,100,101,102,1,674}
+		},
+		{},
+		{
 		{},
 		{},
-		{"Quan ¢m Dao Qu¸n","Quan ¢m Dao Th­êng","Quan ¢m Dao Trang","Quan ¢m Dao Béi","Quan ¢m Dao KiÕm",103,100,101,102,2,873},
-		{"Quan ¢m Dao Qu¸n","Quan ¢m Dao Th­êng","Quan ¢m Dao Trang","Quan ¢m Dao Béi","Quan ¢m Dao KiÕm",103,100,101,102,2,874},
+		{"Guanyin Saber, headgear","Guanyin Saber, common","Guanyin Saber, attire","Guanyin Saber, belt","Quan ¢m Dao KiÕm",103,100,101,102,2,873},
+		{"Guanyin Saber, headgear","Guanyin Saber, common","Guanyin Saber, attire","Guanyin Saber, belt","Quan ¢m Dao KiÕm",103,100,101,102,2,874},
 		},
 		{
 		{},
@@ -74,23 +74,23 @@ function use_cangjian_bag_det(bag_diff)
 		},
 		{},
 		{
-		{"Gi¸ng Long Dao Qu¸n","Gi¸ng Long Dao Th­êng","Gi¸ng Long Dao Trang","Gi¸ng Long Dao Béi","Gi¸ng Long Dao Thñ",103,100,101,102,0,1171},
-		{"Gi¸ng Long Dao Qu¸n","Gi¸ng Long Dao Th­êng","Gi¸ng Long Dao Trang","Gi¸ng Long Dao Béi","Gi¸ng Long Dao Thñ",103,100,101,102,0,1172},
-		{"Gi¸ng Long Dao Qu¸n","Gi¸ng Long Dao Th­êng","Gi¸ng Long Dao Trang","Gi¸ng Long Dao Béi","Gi¸ng Long Dao Thñ",103,100,101,102,0,1173},
-		{"Gi¸ng Long Dao Qu¸n","Gi¸ng Long Dao Th­êng","Gi¸ng Long Dao Trang","Gi¸ng Long Dao Béi","Gi¸ng Long Dao Thñ",103,100,101,102,0,1174}
+		{"Subduing Dragon Saber, headgear","Subduing Dragon Saber, common","Subduing Dragon Saber, attire","Subduing Dragon Saber, belt","Gi¸ng Long Dao Thñ",103,100,101,102,0,1171},
+		{"Subduing Dragon Saber, headgear","Subduing Dragon Saber, common","Subduing Dragon Saber, attire","Subduing Dragon Saber, belt","Gi¸ng Long Dao Thñ",103,100,101,102,0,1172},
+		{"Subduing Dragon Saber, headgear","Subduing Dragon Saber, common","Subduing Dragon Saber, attire","Subduing Dragon Saber, belt","Gi¸ng Long Dao Thñ",103,100,101,102,0,1173},
+		{"Subduing Dragon Saber, headgear","Subduing Dragon Saber, common","Subduing Dragon Saber, attire","Subduing Dragon Saber, belt","Gi¸ng Long Dao Thñ",103,100,101,102,0,1174}
 		},
 		{
-		{"Phong Ma Dao Qu¸n","Phong Ma Dao Th­êng","Phong Ma Dao Trang","Phong Ma Dao Béi","Phong Ma Dao C«n",103,100,101,102,5,1271},
-		{"Phong Ma Dao Qu¸n","Phong Ma Dao Th­êng","Phong Ma Dao Trang","Phong Ma Dao Béi","Phong Ma Dao C«n",103,100,101,102,5,1272},
-		{"Phong Ma Dao Qu¸n","Phong Ma Dao Th­êng","Phong Ma Dao Trang","Phong Ma Dao Béi","Phong Ma Dao C«n",103,100,101,102,5,1273},
-		{"Phong Ma Dao Qu¸n","Phong Ma Dao Th­êng","Phong Ma Dao Trang","Phong Ma Dao Béi","Phong Ma Dao C«n",103,100,101,102,5,1274}
+		{"Wind Demon Saber, headgear","Wind Demon Saber, common","Phong Ma Dao Trang","Wind Demon Saber, belt","Phong Ma Dao C«n",103,100,101,102,5,1271},
+		{"Wind Demon Saber, headgear","Wind Demon Saber, common","Phong Ma Dao Trang","Wind Demon Saber, belt","Phong Ma Dao C«n",103,100,101,102,5,1272},
+		{"Wind Demon Saber, headgear","Wind Demon Saber, common","Phong Ma Dao Trang","Wind Demon Saber, belt","Phong Ma Dao C«n",103,100,101,102,5,1273},
+		{"Wind Demon Saber, headgear","Wind Demon Saber, common","Phong Ma Dao Trang","Wind Demon Saber, belt","Phong Ma Dao C«n",103,100,101,102,5,1274}
 		},
 		{},
 		{
-		{"Ch©n Vò Dao Qu¸n","Ch©n Vò Dao Th­êng","Ch©n Vò Dao Trang","Ch©n Vò Dao Béi","Ch©n Vò Dao KiÕm",103,100,101,102,2,1471},
-		{"Ch©n Vò Dao Qu¸n","Ch©n Vò Dao Th­êng","Ch©n Vò Dao Trang","Ch©n Vò Dao Béi","Ch©n Vò Dao KiÕm",103,100,101,102,2,1472},
-		{"Ch©n Vò Dao Qu¸n","Ch©n Vò Dao Th­êng","Ch©n Vò Dao Trang","Ch©n Vò Dao Béi","Ch©n Vò Dao KiÕm",103,100,101,102,2,1473},
-		{"Ch©n Vò Dao Qu¸n","Ch©n Vò Dao Th­êng","Ch©n Vò Dao Trang","Ch©n Vò Dao Béi","Ch©n Vò Dao KiÕm",103,100,101,102,2,1474}
+		{"True Martial Saber, headgear","True Martial Saber, common","True Martial Saber, attire","True Martial Saber, belt","Ch©n Vò Dao KiÕm",103,100,101,102,2,1471},
+		{"True Martial Saber, headgear","True Martial Saber, common","True Martial Saber, attire","True Martial Saber, belt","Ch©n Vò Dao KiÕm",103,100,101,102,2,1472},
+		{"True Martial Saber, headgear","True Martial Saber, common","True Martial Saber, attire","True Martial Saber, belt","Ch©n Vò Dao KiÕm",103,100,101,102,2,1473},
+		{"True Martial Saber, headgear","True Martial Saber, common","True Martial Saber, attire","True Martial Saber, belt","Ch©n Vò Dao KiÕm",103,100,101,102,2,1474}
 		},
 		{
 		{"NhÊt D­¬ng Dao Qu¸n","NhÊt D­¬ng Dao Th­êng","NhÊt D­¬ng Dao Trang","NhÊt D­¬ng Dao Béi","NhÊt D­¬ng Dao Bót",103,100,101,102,9,1571},
@@ -100,10 +100,10 @@ function use_cangjian_bag_det(bag_diff)
 		},
 		{},
 		{
-		{"Xa Kþ T­íng Qu©n Qu¸n","Xa Kþ T­íng Qu©n Th­êng","Xa Kþ T­íng Qu©n Trang","Xa Kþ T­íng Qu©n Béi","Xa Kþ T­íng Qu©n Th­¬ng",103,100,101,102,6,1771},
-		{"Xa Kþ T­íng Qu©n Qu¸n","Xa Kþ T­íng Qu©n Th­êng","Xa Kþ T­íng Qu©n Trang","Xa Kþ T­íng Qu©n Béi","Xa Kþ T­íng Qu©n Th­¬ng",103,100,101,102,6,1772},
-		{"Xa Kþ T­íng Qu©n Qu¸n","Xa Kþ T­íng Qu©n Th­êng","Xa Kþ T­íng Qu©n Trang","Xa Kþ T­íng Qu©n Béi","Xa Kþ T­íng Qu©n Th­¬ng",103,100,101,102,6,1773},
-		{"Xa Kþ T­íng Qu©n Qu¸n","Xa Kþ T­íng Qu©n Th­êng","Xa Kþ T­íng Qu©n Trang","Xa Kþ T­íng Qu©n Béi","Xa Kþ T­íng Qu©n Th­¬ng",103,100,101,102,6,1774}
+		{"Cavalry General Helmet","Cavalry General Robe","Cavalry General Armor","Cavalry General Pendant","Cavalry General Spear",103,100,101,102,6,1771},
+		{"Cavalry General Helmet","Cavalry General Robe","Cavalry General Armor","Cavalry General Pendant","Cavalry General Spear",103,100,101,102,6,1772},
+		{"Cavalry General Helmet","Cavalry General Robe","Cavalry General Armor","Cavalry General Pendant","Cavalry General Spear",103,100,101,102,6,1773},
+		{"Cavalry General Helmet","Cavalry General Robe","Cavalry General Armor","Cavalry General Pendant","Cavalry General Spear",103,100,101,102,6,1774}
 		},
 		{
 		{"D­¬ng An Qu¸n","D­¬ng An Th­êng","D­¬ng An Trang","D­¬ng An Béi","D­¬ng An Cung",103,100,101,102,4,1871},

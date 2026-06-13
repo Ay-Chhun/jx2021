@@ -71,15 +71,15 @@ tStage3 = {
 	},
 	resetPos = {1721, 3168},
 	npcMod = {
-		{"Minh Gi¸o Th¸m Tù §Þa", "Minh Gi¸o Th¸m Tö", 100},
+		{"Minh Gi¸o Th¸m Tù §Þa", "Ming Sect Scout", 100},
 		{"§Þa HuyÒn Cung Cung Chñ §Þa", "Cung Chñ §Þa HuyÒn Cung "},
-		{"Ng­êi gç1", "Ng­êi Gç", 120},
-		{"Ng­êi gç1", "Ng­êi Gç", 120},
+		{"Ng­êi gç1", "Wooden Man", 120},
+		{"Ng­êi gç1", "Wooden Man", 120},
 		{"Cø Hån 1", "Cø Hån"},
 		{"K×nh L«i 1", "Kinh L«i"},
 		{"KÎ Cuång Thiªn ¢m ", "KÎ Cuång Thiªn ¢m "},
-		{"yinbaoxiang", "R­¬ng B¹c", 180},
-		{"tongbaoxiang", "R­¬ng §ång", 180},
+		{"yinbaoxiang", "Silver Chest", 180},
+		{"tongbaoxiang", "Copper Chest", 180},
 		--{"Ïä×ÓÇ®", "ÌìÒõ¾«Á¦Ïä", 180},
 	},
 --	stepLimit = 600,
@@ -142,7 +142,7 @@ function tStage3:createFish(npc)
 	local count = 5 + COUNT_RUNNER - GetMissionV(MV_KILLED_NPC) - GetMissionV(MV_LIVED_RUNNER);
 	for i = 1, count do
 		local xx, yy = x + random(-5, 5), y + random(-5, 5)
-		local npc = CreateNpc("Giam CÇm Nh©n SÜ §Þa"..random(1,10),"§Ö tö bÞ giam cÇm", m, xx, yy);
+		local npc = CreateNpc("Giam CÇm Nh©n SÜ §Þa"..random(1,10),"Imprisoned disciple", m, xx, yy);
 		SetCampToNpc(npc, CampPlayer);
 		SetNpcScript(npc, g_theMS.fileName);
 		ModifyNpcData(npc, 0, 1000,0);
@@ -236,31 +236,31 @@ function phase3_1:onTimer(nStep)
 	elseif nStep == 3 then
 		local npc = findNpc("Cung Chñ §Þa HuyÒn Cung ");
 		NpcChat(npc, "H©y h©y h©y! NPC mª ®å, ph¸t ra chÝnh lo¹n, Hång Ên Gi¸o Chñ!");
-		local npc2 = findNpc("Nga My LiÔu Hiªn")
+		local npc2 = findNpc("Emei Liu Xian")
 		local pos = getStage().resetPos;
 		SetNpcPos(npc2, pos[1], pos[2]);
 	elseif nStep == 4 then
 		local npc = findNpc("Cung Chñ §Þa HuyÒn Cung ");
 		NpcChat(npc, "LÊy danh nghÜa cña Hång Ên Gi¸o Chñ ph¶i chê tr¹ng th¸i ®Ó phôc sinh l¹i !");
 		NpcCommand(npc, NPCCOMMAND.do_skill,1732*32,3160*32,65536*1+693);
-		local npc2 = findNpc("Nga My LiÔu Hiªn")
+		local npc2 = findNpc("Emei Liu Xian")
 		NpcCommand(npc2, NPCCOMMAND.do_beatdown, 8, 5 * 18);
 		NpcChat(npc2, "A…Ta l¹i ~~~");
 	elseif nStep == 6 then
 		local npc = findNpc("Cung Chñ §Þa HuyÒn Cung ");
 		NpcChat(npc, "Tin Hång Ên ®¾c b¨ng sinh!");
 		ChangeNpc2Talk(npc);
-		local npc2 = findNpc("Nga My LiÔu Hiªn")
+		local npc2 = findNpc("Emei Liu Xian")
 		SetNpcLifeTime(npc2, 0);
 	end
 end
 
 function phase3_1:onNpcDeath(npcIdx)
 	local npcName = GetNpcName(npcIdx)
-	if npcName == "§Ö tö bÞ giam cÇm" or npcName == "Vâ L©m Tinh Anh" then
+	if npcName == "Imprisoned disciple" or npcName == "Martial World Elites" then
 		local m, x, y = GetNpcWorldPos(npcIdx);
 		SetNpcLifeTime(npcIdx, 0);
-		local npc = CreateNpc("C­¬ng Thi §Þa"..random(1,3), "C­¬ng Thi", m, x, y);
+		local npc = CreateNpc("Stiff Corpse Land"..random(1,3), "Stiff Corpse", m, x, y);
 		SetCampToNpc(npc, CampEnemy);
 	end
 end
@@ -272,7 +272,7 @@ function phase3_1:onTalk(npcIdx)
 	end
 	SetMissionV(MV_DXG_ROUTE_CNT, getRouteCount())
 	local tSel = {
-		"Nãi Ýt th«i, xem ®©y!/#stageAction('p1')",
+		"Wait a moment, watch this!/#stageAction('p1')",
 	}
 	Say("Tuæi cßn trÎ nh­ vËy sao l¹i tù s¸t chø, ta thÊy g©n cèt cña ng­¬i kú l¹ l¹i ®i hîp søc víi minh m«n chÝnh ®¹o, ®¸ng tiÕc ®¸ng tiÕc!, chi b»ng nhËn lÊy mËt tÞch nµy, b¸i ta lµm s­ phô ®i!", getn(tSel), tSel);
 end
@@ -299,7 +299,7 @@ function phase3_2:onInit()
 
 	g_theMS.msTimer:setInterval(self.stepInterval);
 	g_theMS:onTimer();
-	g_theMS.msCamp[1]:turnPlayer(StartTimeGuage,"Thanh tr­ît thêi gian", self.stepLimit, 0);
+	g_theMS.msCamp[1]:turnPlayer(StartTimeGuage,"Time slider", self.stepLimit, 0);
 	local pos = getStage().resetPos;
 	g_theMS.msCamp[1]:turnPlayer(SetPos, pos[1], pos[2]);
 	local nMapID = g_theMS:GetMissionV(MV_MAP_ID);
@@ -323,10 +323,10 @@ function phase3_2:onNpcDeath(npcIdx)
 		g_theMS.msCamp[1]:turnPlayer(StopTimeGuage, -2);
 		getStage():giveAward(npcIdx, nBossCount);
 		stageAction('p2');
-	elseif npcName == "§Ö tö bÞ giam cÇm" or npcName == "Vâ L©m Tinh Anh" then
+	elseif npcName == "Imprisoned disciple" or npcName == "Martial World Elites" then
 		local m, x, y = GetNpcWorldPos(npcIdx);
 		SetNpcLifeTime(npcIdx, 0);
-		local npc = CreateNpc("C­¬ng Thi §Þa"..random(1,3), "C­¬ng Thi", m, x, y);
+		local npc = CreateNpc("Stiff Corpse Land"..random(1,3), "Stiff Corpse", m, x, y);
 		SetCampToNpc(npc, CampEnemy);
 	end
 end

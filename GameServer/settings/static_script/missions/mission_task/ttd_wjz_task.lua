@@ -240,7 +240,7 @@ end
 
 
 function return_status(nSerial)
-	local strTab = {"C„ th” ti’p nhÀn","C„ th” giao","Ch≠a hoµn thµnh","Ngµy mai h∑y Æ’n"};
+	local strTab = {"C„ th” ti’p nhÀn","C„ th” giao","Ch≠a hoµn thµnh","Come back tomorrow"};
 	local nNum1,nNum2,nNum3;
 	if nSerial < 1 or nSerial > 6 then 
 		return ""; 

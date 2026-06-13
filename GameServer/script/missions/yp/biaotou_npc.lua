@@ -22,8 +22,8 @@ T1.sel = {
 	{"NhËn Tiªu Xa (Ngµy 3 lÇn)",T3},
 	{"Ta muèn mua b¶o hiÓm",T4},
 	{"NhiÖm vô c­íp tiªu (Ngµy 1 lÇn)",T5},
-	{"Mua TrÊn ViÔn §æi Tiªu LÖnh ",T6},
-	{"KÕt thóc ®èi tho¹i","nothing"},
+	{"Buy Zhenyuan Cart Exchange Token",T6},
+	{"End conversation","nothing"},
 };
 
 T2.msg = g_NpcName.."§¹i hiÖp muèn t×m hiÓu th«ng tin g×?";
@@ -34,7 +34,7 @@ T2.sel = {
 	{"NhiÖm vô c­íp tiªu","#bt_Talk_1(4)"},
 	{"PhÇn th­ëng Tiªu Xa","bt_Talk_8"},
 	{"trë l¹i",T1},
-	{"KÕt thóc ®èi tho¹i","nothing"},
+	{"End conversation","nothing"},
 };
 
 T3.msg = g_NpcName.."§¹i hiÖp cã thÓ nhËn Tiªu Xa vËn chuyÓn ®Õn ThÊt L¹c Nhai ë chç cña ta, vËn tiªu cÇn giao nép tiÒn thÕ chÊp nhÊt ®Şnh, sau khi thµnh c«ng hoµn thµnh vËn tiªu sÏ tr¶ l¹i tiÒn thÕ chÊp. Ng­¬i muèn nhËn Tiªu Xa ngay b©y giê kh«ng?"
@@ -43,14 +43,14 @@ T3.sel = {
 	{"*Trùc tiÕp hoµn thµnh vËn tiªu", "bt_Talk_9"},
 	--{"ÎÒÒª¸ü»»ïÚ³µ","bt_Talk_7"},
 	{"trë l¹i",T1},
-	{"KÕt thóc ®èi tho¹i","nothing"},		
+	{"End conversation","nothing"},		
 }
 
 T4.msg = g_NpcName.."VËn tiªu cã thÓ gÆp nguy hiÓm, ®¹i hiÖp muèn mua b¶o hiÓm cho Tiªu Xa ph¶i kh«ng? Sau khi mua b¶o hiÓm, nÕu Tiªu Xa v× nguyªn nh©n nµo ®ã mµ bŞ mÊt sÏ nhËn ®­îc phÇn th­ëng nhÊt ®Şnh."
 T4.sel = {
 	{"Ta muèn mua b¶o hiÓm","bt_Talk_3"},
 	{"trë l¹i",T1},
-	{"KÕt thóc ®èi tho¹i","nothing"},
+	{"End conversation","nothing"},
 }
 
 T5.msg = g_NpcName.."Mçi ngµy chØ ®­îc hoµn thµnh 1 lÇn nhiÖm vô c­íp tiªu, khi hoµn thµnh nhiÖm vô sÏ c¨n cø theo tİn vËt cao cÊp nhÊt ®Ó ph¸t phÇn th­ëng!";
@@ -58,14 +58,14 @@ T5.sel = {
 	{format("NhËn nhiÖm vô c­íp tiªu (Tiªu hao %d ®iÓm tinh lùc)", 15),"bt_Talk_4_1"},
 	{"Hoµn thµnh nhiÖm vô c­íp tiªu","bt_Talk_5"},
 	{"trë l¹i",T1},
-	{"KÕt thóc ®èi tho¹i","nothing"},
+	{"End conversation","nothing"},
 }
 
 T6.msg = g_NpcName..format("N¨m x­a khi ta cßn ch­a gia nhËp TrÊn ViÔn Tiªu Côc, trong tay cã rÊt nhiÒu TrÊn ViÔn §æi Tiªu LÖnh, hiÖn t¹i nh÷ng vËt nµy kh«ng cßn gi¸ trŞ ®èi víi ta n÷a, ta sÏ b¸n rÎ cho ®¹i hiÖp, %d c¸i chØ tèn %d vµng th«i! <color=red>Nh­ng mçi ngµy chØ cã thÓ mua 1 lÇn! <color>", 5, 15);
 T6.sel = {
 	{"Ta muèn mua 5 c¸i TrÊn ViÔn §æi Tiªu LÖnh","bt_Talk_6"},
 	{"trë l¹i",T1},
-	{"KÕt thóc ®èi tho¹i","nothing"},
+	{"End conversation","nothing"},
 }
 
 T_TouBaoMoney = {10000,20000,30000,60000,120000};--Í¶±£ÏûºÄ
@@ -157,7 +157,7 @@ function bt_Talk_2_1()
 				end
 			end
 		end
-		Msg2Player(format("§· tiªu hao %s#%d", "§æi Tiªu LÖnh", 1))
+		Msg2Player(format("§· tiªu hao %s#%d", "Exchange Token", 1))
 	else
 		Talk(1,"",g_NpcName.."TrÊn ViÔn §æi Tiªu LÖnh trªn ng­êi kh«ng ®ñ!");
 	end
@@ -225,7 +225,7 @@ function bt_create_biaoche()
 			SetTask(TASK_FIELD_PVP_CAR_PSEUDORAND,0);
 			local strGlb = ""
 			if g_nDebugVersion == 1 then
-				strGlb = "ThÊt L¹c Nhai";
+				strGlb = "That Lac Nhai";
 			else
 				strGlb = tMainMapID[nCamp][2];
 			end
@@ -247,8 +247,8 @@ function bt_Talk_3()
 	local tMoney = T_TouBaoMoney
 	Say(g_NpcName.."HiÖn t¹i cÊp Tiªu Xa cña ®¹i hiÖp lµ <color=yellow>"..nType.."<color>, mua b¶o hiÓm cÇn tiªu hao "..gf_GetMoneyString(tMoney[nType])..".",
 		2,
-		"\n§ång ı mua b¶o hiÓm/bt_Talk_3_1",
-		"\nKh«ng mua b¶o hiÓm/nothing")
+		"\nAgree to buy insurance/bt_Talk_3_1",
+		"\nDo not buy insurance/nothing")
 end
 
 function bt_Talk_3_1()
@@ -286,7 +286,7 @@ function bt_Talk_4()
 		3,
 		"NhËn nhiÖm vô c­íp tiªu/bt_Talk_4_1",
 		"trë l¹i/main",
-		"KÕt thóc ®èi tho¹i/nothing")
+		"End dialogue/nothing")
 end
 
 function bt_Talk_4_1()
@@ -366,9 +366,9 @@ end
 
 function bt_Talk_8()
 	local tSay = {
-		"Tiªu Xa Th­êng/#bt_Talk_8_1(1)",
-		"Tiªu Xa Quan Träng/#bt_Talk_8_1(2)",
-		"Tiªu Xa Qu©n Dông/#bt_Talk_8_1(3)",
+		"Standard Escort Cart/#bt_Talk_8_1(1)",
+		"Important Escort Cart/#bt_Talk_8_1(2)",
+		"Military Escort Cart/#bt_Talk_8_1(3)",
 		"Tiªu Xa C¬ MËt/#bt_Talk_8_1(4)",
 		"Tiªu Xa Hoµng Gia/#bt_Talk_8_1(5)",
 		"trë l¹i/t2_main",
@@ -380,9 +380,9 @@ end
 function bt_Talk_8_1(nType)
 	local tAward = {
 		--Ãû×Ö£¬¾­Ñé£¬½ğÇ®G£¬ÊÆÁ¦ÉùÍû£¬ĞŞÎª£¬»»ïÚÁî£¬ºÀÏÀÁî£¬Ìì½¾Áî
-		[1] = {"Tiªu Xa Th­êng", 10000000, 4, 20, 0, 1, 0, 0},
-		[2] = {"Tiªu Xa Quan Träng", 20000000, 8, 30, 0, 2, 1, 0},
-		[3] = {"Tiªu Xa Qu©n Dông", 35000000, 12, 40, 0, 3, 2, 0},
+		[1] = {"Standard Escort Cart", 10000000, 4, 20, 0, 1, 0, 0},
+		[2] = {"Important Escort Cart", 20000000, 8, 30, 0, 2, 1, 0},
+		[3] = {"Military Escort Cart", 35000000, 12, 40, 0, 3, 2, 0},
 		[4] = {"Tiªu Xa C¬ MËt", 60000000, 24, 50, 0, 4, 3, 0},
 		[5] = {"Tiªu Xa Hoµng Gia", 100000000, 48, 60, 0, 5, 4, 1},
 	}
@@ -399,7 +399,7 @@ end
 function bt_Talk_9()
 	local tSay = {
 		"\nX¸c nhËn/bt_Talk_9_1",
-		"§Ó ta suy nghÜ/nothing",
+		"Let me think about it/nothing",
 	}
 	local szCardName = "ThÎ th¸ng hoÆc ThÎ ho¹t ®éng"
 	if IsActivatedVipCard() ~= 0 then

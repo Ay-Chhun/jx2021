@@ -79,7 +79,7 @@ function process_killer_death(nNpcIdx)
 		if nRand <= 30 then
 			if AddItem(tItemInfo[2][2],tItemInfo[2][3],tItemInfo[2][4],1) == 1 then--ÃØ¼®ËéÆ¬
 				Msg2Player("B¹n ®­îc 1 "..tItemInfo[2][1]);
-				WriteLog("[S¸t Thñ §­êng]:"..GetName().."NhËn ®­îc"..tItemInfo[2][1]);
+				WriteLog("[S¸t Thñ §­êng]:"..GetName().."Received"..tItemInfo[2][1]);
 			end;
 		end
 	end;

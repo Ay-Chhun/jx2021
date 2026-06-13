@@ -65,9 +65,9 @@ end;
 
 function give_present()
 	local selTab = {
-			"TÆng "..ITEM_HONGBAO[1][4].."1/#give_present_confirm(1)",
-			"TÆng "..ITEM_HONGBAO[2][4].."1/#give_present_confirm(2)",
-			"TÆng "..ITEM_HONGBAO[3][4].."1/#give_present_confirm(3)",
+			"Give"..ITEM_HONGBAO[1][4].."1/#give_present_confirm(1)",
+			"Give"..ITEM_HONGBAO[2][4].."1/#give_present_confirm(2)",
+			"Give"..ITEM_HONGBAO[3][4].."1/#give_present_confirm(3)",
 			"§Ó ta xem/cancel",
 			}
 	Say(g_InfoHeader.."Kh«ng biÕt ®¹i hiÖp muèn tÆng lo¹i Hång bao nµo?",getn(selTab),selTab);
@@ -83,7 +83,7 @@ function give_present_confirm(nType)
 		Msg2MSAll(MISSION_ID,GetName().."Göi cho ®«i uyªn ­¬ng"..ITEM_HONGBAO[nType][4].."1");
 		local nCurrHongBao = GetMissionV(MV_DAHONGBAO_COUNT+nType-1);
 		SetMissionV(MV_DAHONGBAO_COUNT+nType-1,nCurrHongBao+1)
-		WriteLog("[KÕt h«n]:"..GetName().."Hång bao, lo¹i:"..nType);
+		WriteLog("[Marriage]:"..GetName().."Hång bao, lo¹i:"..nType);
 	else
 		Talk(1,"",g_InfoHeader.."Ng­¬i kh«ng mang theo"..ITEM_HONGBAO[nType][4].."? Hay lµ bÊt cÈn lµm r¬i ®©u råi?");
 	end;
@@ -131,17 +131,17 @@ function get_present_confirm()
 	SetMissionV(MV_XIAOHONGBAO_COUNT,0);
 	if nDaHongBao > 0 then
 		AddItem(ITEM_HONGBAO[1][1],ITEM_HONGBAO[1][2],ITEM_HONGBAO[1][3],nDaHongBao);
-		WriteLog("[KÕt h«n]:"..GetName().."NhËn ®­îc"..nDaHongBao.." §¹i hång bao Hoµng Kim");
+		WriteLog("[Marriage]:"..GetName().."Received"..nDaHongBao.." §¹i hång bao Hoµng Kim");
 		Msg2Player("B¹n nhËn ®­îc "..nDaHongBao.."c¸i"..ITEM_HONGBAO[1][4]);
 	end;
 	if nZhongHongBao > 0 then
 		AddItem(ITEM_HONGBAO[2][1],ITEM_HONGBAO[2][2],ITEM_HONGBAO[2][3],nZhongHongBao);
-		WriteLog("[KÕt h«n]:"..GetName().."NhËn ®­îc"..nZhongHongBao.." §¹i hång bao Tö Kim");
+		WriteLog("[Marriage]:"..GetName().."Received"..nZhongHongBao.." §¹i hång bao Tö Kim");
 		Msg2Player("B¹n nhËn ®­îc "..nZhongHongBao.."c¸i"..ITEM_HONGBAO[2][4]);
 	end;
 	if nXiaoHongBao > 0 then
 		AddItem(ITEM_HONGBAO[3][1],ITEM_HONGBAO[3][2],ITEM_HONGBAO[3][3],nXiaoHongBao);
-		WriteLog("[KÕt h«n]:"..GetName().."NhËn ®­îc"..nXiaoHongBao.." TiÓu hång bao");
+		WriteLog("[Marriage]:"..GetName().."Received"..nXiaoHongBao.." TiÓu hång bao");
 		Msg2Player("B¹n nhËn ®­îc "..nXiaoHongBao.."c¸i"..ITEM_HONGBAO[3][4]);
 	end;
 end;
@@ -229,14 +229,14 @@ function have_wedding()
 		"TÆng vµng/#wedding_process(6)",
 		"§éng phßng/#wedding_process(7)",
 		"ThuyÕt minh/wedding_process_info",
-		"Trang tr­íc./main")
+		"Previous page./main")
 end
 
 function wedding_process(step)
 	Say(g_InfoHeader..map_talk[step][1],
 		2,
 		format("§ång ý/#confirm(%d)", step),
-		"Hñy bá/cancel")
+		"Cancel/cancel")
 end
 
 function confirm(step)

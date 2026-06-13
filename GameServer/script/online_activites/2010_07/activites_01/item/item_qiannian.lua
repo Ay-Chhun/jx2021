@@ -16,7 +16,7 @@ tb_list_1000_chat =
 	[4] = "Cßn %d ngµy n÷a th«i, chê ®îi lµ h¹nh phóc!",
 	[5] = "Chóc c¸c b¹n 1 ngµy lÔ vui vÎ!",
 	[6] = "Kû niÖm 1000 n¨m Th¨ng Long chóng ta ®i ch¬i nµo!",
-	[7] = "Chóc mõng §¹i LÔ kû niÖm 1000 n¨m Th¨ng Long!",
+	[7] = "Congratulations on the 1000th Anniversary Grand Ceremony of Thang Long!",
 }
 
 function OnUse(nItemIdx)
@@ -65,9 +65,9 @@ function OnUse(nItemIdx)
 	        	NpcChat(PIdx2NpcIdx(), tb_list_1000_chat[random(5,7)])
 	        end
 	        VET_201007_01_get_exp(nExp)
-	        Msg2Player("NhËn ®­îc "..nExp.." ®iÓm kinh nghiÖm.")
+	        Msg2Player("Received"..nExp.." ®iÓm kinh nghiÖm.")
 	        SetTask(VET_1000_THANGLONG_TIME, GetTime())
-	        StartTimeGuage("1000 n¨m Th¨ng Long", 30,0,1)
+	        StartTimeGuage("1000 Years of Thang Long", 30,0,1)
 	        gf_WriteLogEx("Hoat dong thang 9 nam 2010", "Sö dông 1000 n¨m Th¨ng Long nhËn "..nExp.." ®iÓm kinh nghiÖm")
 	    end
 	else
@@ -94,6 +94,6 @@ function get_1000_tl()
     	   Talk(1,"","Mçi ngµy chØ cã thÓ nhËn vËt phÈm nµy 1 lÇn!")
         return
     end
-    gf_AddItemEx2({2,1,30219,40}, "Kû NiÖm 1000 n¨m Th¨ng Long", "Hoat dong thang 9 nam 2010", "nhËn")
+    gf_AddItemEx2({2,1,30219,40}, "1000th Anniversary of Thang Long Commemoration", "Hoat dong thang 9 nam 2010", "nhËn")
     SetTask(VET_201007_01_TASK_SHENGLONGQIANNIAN_NUM, GetTask(VET_201007_01_TASK_SHENGLONGQIANNIAN_NUM) + 100)
 end

@@ -12,7 +12,7 @@ function main()
 	for k, v in tActivityID do
 		tSay = aah_GetSayDialog(tonumber(v));
 		if getn(tSay) > 0 then
-			tinsert(tSay, "\nKÕt thóc ®èi tho¹i/nothing");	
+			tinsert(tSay, "\nEnd conversation/nothing");	
 			Say(format("<color=green>H¹ HÇu Anh:<color> %s cÇn gióp ®ì g×?",gf_GetPlayerSexName()), getn(tSay), tSay);
 			return 1;
 		end

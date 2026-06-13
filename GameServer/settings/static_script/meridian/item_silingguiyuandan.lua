@@ -9,7 +9,7 @@ N_THIS_CALL_BACK_CODE=18 --╦ц▒у╡─╥╗╕Ў╩¤╓╡ ╙├╙┌╨г╤щ╡─(<100▒э╩╛╥к╝ь▓щ╒ц╞°╚▌┴┐)
 
 N_ADD_ZHENQI_TYPE = AWARD_QENUINEQI_IB
 
-SZ_ITEM_NAME="T° Linh Quy Nguyкn змn"
+SZ_ITEM_NAME="Four Spirits Return to Origin Pill"
 N_ONE_CALL_BACK_SEC = 5
 N_ONE_CALL_BACK_CNT = 3
 N_ONE_AWARD_ZHENQI = 4

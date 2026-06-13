@@ -10,12 +10,12 @@
 	Ma_skill_level_max = 5					--»éÒö¼¼ÄÜÉÏÏŞ
 	--±¦Îï¶ÔÓ¦¼¼ÄÜĞÅÏ¢
 	Tb_ma_skill = {}
-	Tb_ma_skill[581] = {867,5,"§iÖp LuyÕn"}		--¼¼ÄÜ´úºÅ¡¢Ãû³Æ£¬ÔİÊ±Ìæ´ú
-	Tb_ma_skill[582] = {867,5,"§iÖp LuyÕn"}		--¼¼ÄÜ´úºÅ¡¢Ãû³Æ£¬ÔİÊ±Ìæ´ú
-	Tb_ma_skill[577] = {865,4,"T­¬ng T­"}			--¼¼ÄÜ´úºÅ¡¢Ãû³Æ£¬ÔİÊ±Ìæ´ú
-	Tb_ma_skill[578] = {865,4,"T­¬ng T­"}			--¼¼ÄÜ´úºÅ¡¢Ãû³Æ£¬ÔİÊ±Ìæ´ú
-	Tb_ma_skill[579] = {866,5,"Hãa ®iÖp"}			--¼¼ÄÜ´úºÅ¡¢Ãû³Æ£¬ÔİÊ±Ìæ´ú
-	Tb_ma_skill[580] = {866,5,"Hãa ®iÖp"}			--¼¼ÄÜ´úºÅ¡¢Ãû³Æ£¬ÔİÊ±Ìæ´ú
+	Tb_ma_skill[581] = {867,5,"Die Lian"}		--¼¼ÄÜ´úºÅ¡¢Ãû³Æ£¬ÔİÊ±Ìæ´ú
+	Tb_ma_skill[582] = {867,5,"Die Lian"}		--¼¼ÄÜ´úºÅ¡¢Ãû³Æ£¬ÔİÊ±Ìæ´ú
+	Tb_ma_skill[577] = {865,4,"Xiang Si"}			--¼¼ÄÜ´úºÅ¡¢Ãû³Æ£¬ÔİÊ±Ìæ´ú
+	Tb_ma_skill[578] = {865,4,"Xiang Si"}			--¼¼ÄÜ´úºÅ¡¢Ãû³Æ£¬ÔİÊ±Ìæ´ú
+	Tb_ma_skill[579] = {866,5,"Hua Die"}			--¼¼ÄÜ´úºÅ¡¢Ãû³Æ£¬ÔİÊ±Ìæ´ú
+	Tb_ma_skill[580] = {866,5,"Hua Die"}			--¼¼ÄÜ´úºÅ¡¢Ãû³Æ£¬ÔİÊ±Ìæ´ú
 	--±¦ÎïĞÅÏ¢
 	Tb_goods_compose = {}
 	Tb_goods_compose[573] = {"§ång T©m Hoµn","Sö dông trŞ §ång t©m t¨ng <color=yellow>125<color> ®iÓm!"}
@@ -23,11 +23,11 @@
 	Tb_goods_compose[575] = {"§ång T©m ®¬n","Ng­êi sö dông TrŞ sè ®ång t©m tèi ®a t¨ng <color=yellow>125<color> ®iÓm!"}
 	Tb_goods_compose[576] = {"§¹i §ång T©m ®¬n","Ng­êi sö dông TrŞ sè ®ång t©m tèi ®a t¨ng <color=yellow>300<color> ®iÓm!"}
 	Tb_goods_compose[577] = {"T­ t­ëng b¶n quyÓn","Ng­êi sö dông cã thÓ <color=yellow>häc hái: kü n¨ng truyÒn tèng<color>!"}
-	Tb_goods_compose[578] = {"T­ t­ëng tµn quyÓn","Ng­êi sö dông cã thÓ <color=yellow>t¨ng cÊp: kü n¨ng truyÒn tèng<color>!"}
+	Tb_goods_compose[578] = {"Tu Tuong Remnant Volume","Ng­êi sö dông cã thÓ <color=yellow>t¨ng cÊp: kü n¨ng truyÒn tèng<color>!"}
 	Tb_goods_compose[579] = {"Hãa §iÖp b¶n quyÓn","MËt ®å L­u tinh"}
-	Tb_goods_compose[580] = {"Hãa §iÖp tµn quyÓn","Ng­êi sö dông cã thÓ <color=yellow>t¨ng cÊp kü n¨ng håi sinh<color>!"}
+	Tb_goods_compose[580] = {"Hua Die remnant volume","Ng­êi sö dông cã thÓ <color=yellow>t¨ng cÊp kü n¨ng håi sinh<color>!"}
 	Tb_goods_compose[581] = {"§iÖp LuyÕn b¶n quyÓn","Ng­êi sö dông cã thÓ <color=yellow>häc hái kü n¨ng gióp ®ì<color>!"}
-	Tb_goods_compose[582] = {"§iÖp LuyÕn tµn quyÓn","Ng­êi sö dông cã thÓ <color=yellow>th¨ng cÊp kü n¨ng gióp ®ì<color>!"}
+	Tb_goods_compose[582] = {"Die Lian remnant volume","Ng­êi sö dông cã thÓ <color=yellow>th¨ng cÊp kü n¨ng gióp ®ì<color>!"}
 
 --==================================º¯ÊıÖ÷Âß¼­ÇøÓò==================================
 function OnUse(goods_index)
@@ -39,7 +39,7 @@ function OnUse(goods_index)
 	local goods_id = GetItemParticular(goods_index)
 	Say("<color=green>Gîi ı <color>: Sö dông <color=yellow>"..Tb_goods_compose[goods_id][1].."<color> cã thÓ ®Ó"..Tb_goods_compose[goods_id][2],
 	2,
-	"§æi/#use_deal("..goods_id..")",
+	"Exchange/#use_deal("..goods_id..")",
 	"§Ó ta suy nghÜ l¹i/end_dialog"
 	)
 end
@@ -80,12 +80,12 @@ function use_deal(goods_id)
 			end
 		--Í¬ĞÄÖµ´ïµ½ÉÏÏŞÖ±½Ó·µ»Ø
 		elseif same_heart_value_dis == 0 then
-			Talk(1,"","<color=green>Gîi ı<color>: TrŞ sè ®ång t©m ®· ®¹t tíi : <color=red>"..same_heart_value_max.."<color>®iÓm, kh«ng thÓ sö dông<color=yellow>"..Tb_goods_compose[goods_id][1].."<color>!")
+			Talk(1,"","<color=green>Hint<color>: The Concentric Value has reached: <color=red>"..same_heart_value_max.."<color>®iÓm, kh«ng thÓ sö dông<color=yellow>"..Tb_goods_compose[goods_id][1].."<color>!")
 			return
 		else
 			Say("<color=green>Gîi ı<color>: Giíi h¹n TrŞ sè ®ång t©m hiÖn t¹i lµ <color=red>"..same_heart_value_max.."<color> ®iÓm, sö dông <color=yellow>"..Tb_goods_compose[goods_id][1].."<color> chØ t¨ng <color=yellow>"..same_heart_value_dis.."<color> ®iÓm, sö dông chø?",
 			2,
-			"§æi/#use_dtm("..goods_id..","..same_heart_value_dis..")",
+			"Exchange/#use_dtm("..goods_id..","..same_heart_value_dis..")",
 			"§Ó ta suy nghÜ l¹i/end_dialog"
 			)
 		end
@@ -117,14 +117,14 @@ function use_deal(goods_id)
 		else
 			Say("<color=green>Gîi ı<color>: giíi h¹n TrŞ sè ®ång t©m hiÖn t¹i, trŞ cao nhÊt lµ <color=red>"..same_heart_max_value_now.."<color> ®iÓm, sö dông <color=yellow>"..Tb_goods_compose[goods_id][1].."<color> chØ t¨ng <color=yellow>"..same_heart_max_dis_value.."<color> ®iÓm TrŞ sè ®ång t©m, sö dông chø?",
 			2,
-			"§æi/#use_dtm("..goods_id..","..same_heart_max_dis_value..")",
+			"Exchange/#use_dtm("..goods_id..","..same_heart_max_dis_value..")",
 			"§Ó ta suy nghÜ l¹i/end_dialog"
 			)
 		end
 	--¼¼ÄÜÑ§Ï°ÎïÆ·
 	elseif goods_id == 577 or goods_id == 579 or goods_id == 581 then
 		if HaveLearnedSkill(Tb_ma_skill[goods_id][1]) == 1 then
-			Talk(1,"","<color=green>Gîi ı<color>: b¹n ®· häc ®­îc: <color=yellow>"..Tb_ma_skill[goods_id][3].."<color>, kh«ng thÓ sö dông mËt ®å nµy!")
+			Talk(1,"","<color=green>Hint<color>: You have learned: <color=yellow>"..Tb_ma_skill[goods_id][3].."<color>, kh«ng thÓ sö dông mËt ®å nµy!")
 			return
 		else
 			if DelItem(2,1,goods_id,1) ~= 1 then
@@ -132,7 +132,7 @@ function use_deal(goods_id)
 				return
 			end
 			if LearnSkill(Tb_ma_skill[goods_id][1]) == 1 then
-				Talk(1,"","<color=green>Gîi ı<color>: Chóc mõng b¹n häc ®­îc '<color=yellow>"..Tb_ma_skill[goods_id][3].."<color>', nhÊn' <color=yellow>F3<color>' më giao diÖn<color=yellow>H«n Nh©n<color> míi cã thÓ sö dông kü n¨ng nµy!")
+				Talk(1,"","<color=green>Hint<color>: Congratulations, you have learned '<color=yellow>"..Tb_ma_skill[goods_id][3].."<color>', nhÊn' <color=yellow>F3<color>' më giao diÖn<color=yellow>H«n Nh©n<color> míi cã thÓ sö dông kü n¨ng nµy!")
 			else
 				WriteLog("Kü n¨ng H«n Nh©n: ng­êi ch¬i ("..GetName()..") sö dông "..Tb_goods_compose[goods_id][1].."häc hái thÊt b¹i!")
 			end

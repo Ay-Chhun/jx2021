@@ -5,10 +5,10 @@ Include("\\script\\class\\clause3.lua")
 --Include("\\script\\lib\\xoyobi.lua")
 
 tItems = {
-	{"Di‘n V‚ Nguy™n So∏i Bao",2,95,692},
-	{"Di‘n V‚ T≠Ìng Qu©n Bao",2,95,693},
+	{"Martial Tournament Marshal Bag",2,95,692},
+	{"Martial Tournament General Bag",2,95,693},
 	{"Di‘n V‚ Ti™n Phong Bao",2,95,694},
-	{"Di‘n V‚ S‹ Binh Bao",2,95,695},
+	{"Martial Tournament Soldier Bag",2,95,695},
 }
 
 tClause = {
@@ -44,7 +44,7 @@ tClause = {
 --		{{"ª√ŒË¡·ÁÁ÷¶", {0,13,8929,1,1,-1,-1,-1,-1,-1,-1},}, 25},
 --		{{"ª√“Ùæ≈œˆµ—", {0,12,8926,1,1,-1,-1,-1,-1,-1,-1},}, 25},			
 		{{"Huy“n Thπch Kim Tinh", {2,201,3,1},}, 2000},
-		{{"Phÿ ThÛy MÈc Tinh", {2,201,5,1},}, 2000},
+		{{"Jadeite Wood Essence", {2,201,5,1},}, 2000},
 		{{"Nguy÷t Hoa ThÒy Tinh", {2,201,7,1},}, 2000},
 		{{"Cˆu Huy“n H·a Tinh", {2,201,9,1},}, 2000},
 		{{"Ng≠ng Ng‰c ThÊ Tinh", {2,201,11,1},}, 2000},
@@ -53,19 +53,19 @@ tClause = {
 	},
 	{
 		subclauses = {
-		{{"Xu Ti™u Dao 300";giveClause = function() EarnXYB(300) end}, 5000},
-		{{"2 vµng";giveClause = function() gf_Modify("Money",20000) end}, 4500},
-		{{"Ti”u Ti”u Kim HÊ", {2,95,696,1},}, 500},
+		{{"Roaming Sky 300";giveClause = function() EarnXYB(300) end}, 5000},
+		{{"2 gold";giveClause = function() gf_Modify("Money",20000) end}, 4500},
+		{{"Little Little Golden Tiger", {2,95,696,1},}, 500},
 		},			
 		giveClause = ClauseRandom.giveClause,
 	},
 	{
 		subclauses = {
 		{{"Kim Tinh", {2,201,2,1},}, 2000},
-		{{"MÈc Tinh", {2,201,4,1},}, 2000},
+		{{"Wood Essence", {2,201,4,1},}, 2000},
 		{{"ThÒy Tinh", {2,201,6,1},}, 2000},
 		{{"H·a Tinh", {2,201,8,1},}, 2000},
-		{{"ThÊ Tinh", {2,201,10,1},}, 2000},
+		{{"Tho Tinh", {2,201,10,1},}, 2000},
 		},			
 		giveClause = ClauseRandom.giveClause,
 	},	
@@ -85,7 +85,7 @@ function OnUse(nItemIdx)
 		return 0;
 	end
 	if DelItemByIndex(nItemIdx,1) == 1 then
-		gf_SetLogCaption("Di‘n V‚ Bao");
+		gf_SetLogCaption("Arena Treasure");
 		ClauseRandom.giveClause(tClause[nType]);
 		gf_SetLogCaption("")
 	end	

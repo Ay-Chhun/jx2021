@@ -12,7 +12,7 @@ function npc_talk_main()
 		tinsert(tbSay, format("%s/update_lv3", "Th¨ng cÊp vò khİ")) 
 	end
 	tinsert(tbSay, format("%s/iwant_leave", "Rêi khái V¹n Linh §µi"))
-	tinsert(tbSay, format("%s/no", "KÕt thóc ®èi tho¹i"))
+	tinsert(tbSay, format("%s/no", "End conversation"))
 	local szMsg = format("%s:%s", "<color=green>Háa Phông Tö<color>", "Chµo mõng ®Õn víi V¹n Linh §µi. Chóc b¹n n©ng cÊp vò khİ thµnh c«ng.")
 	Say(szMsg,getn(tbSay),tbSay)
 end
@@ -28,7 +28,7 @@ function update_lv3()
 	tinsert(tbSay, format("%s/about_huanghuoliujin", "Nguån gèc cña Hoang Háa L­u Kim"))
 	tinsert(tbSay, format("%s/iwant_update_lv2", "Ta muèn n©ng cÊp vò khİ Háa Phông cÊp 2 "))
 	tinsert(tbSay, format("%s/iwant_update_lv3", "Ta muèn n©ng cÊp vò khİ Háa Phông cÊp 3 "))
-	tinsert(tbSay, format("%s/no", "KÕt thóc ®èi tho¹i"))
+	tinsert(tbSay, format("%s/no", "End conversation"))
 	local szMsg = format("%s:%s", "<color=green>Háa Phông Tö<color>", "Chµo mõng ®Õn víi V¹n Linh §µi. Chóc b¹n n©ng cÊp vò khİ thµnh c«ng.")
 	Say(szMsg,getn(tbSay),tbSay)
 end
@@ -36,7 +36,7 @@ end
 function about_update_lv3()
 	local tbSay = {}
 	tinsert(tbSay, format("%s/npc_talk_main", "trë l¹i"))
-	tinsert(tbSay, format("%s/no", "KÕt thóc ®èi tho¹i"))
+	tinsert(tbSay, format("%s/no", "End conversation"))
 	local szTemp = "N©ng cÊp vò khİ Háa Phông cÊp 2 thµnh vò khİ Háa Phông cÊp 3,cÇn trang bŞ vò khİ Háa Phông +7 trë lªn cÊp 2 trªn ng­êi"
 	--szTemp = format("%s\n%s", szTemp, "½«¾üÎäÆ÷£ºÏûºÄ10Ììî¸Áî£¬20ÌìÃÅ½ğÁî£¬200À×»¢¾«ÆÇ£¬3»Ä»ğÖ®ĞÄ")
 	--szTemp = format("%s\n%s", szTemp, "ÔªË§ÎäÆ÷£ºÏûºÄ30Ììî¸Áî£¬60ÌìÃÅ½ğÁî£¬600À×»¢¾«ÆÇ£¬9»Ä»ğÖ®ĞÄ")
@@ -46,9 +46,9 @@ end
 
 function iwant_leave()
 	local tbSay = {}
-	tinsert(tbSay, format("%s/sure_leave", "Rêi khái"))
+	tinsert(tbSay, format("%s/sure_leave", "Leave"))
 	tinsert(tbSay, format("%s/npc_talk_main", "trë l¹i"))
-	tinsert(tbSay, format("%s/no", "KÕt thóc ®èi tho¹i"))
+	tinsert(tbSay, format("%s/no", "End conversation"))
 	local szTemp = "X¸c nhËn rêi khái V¹n Linh §µi quay vÒ C«n L«n kh«ng??"
 	local szMsg = format("%s:%s", "<color=green>Háa Phông Tö<color>", szTemp)
 	Say(szMsg,getn(tbSay),tbSay)
@@ -72,7 +72,7 @@ end
 function about_huanghuozhixin()
 	local tbSay = {}
 	tinsert(tbSay, format("%s/npc_talk_main", "trë l¹i"))
-	tinsert(tbSay, format("%s/no", "KÕt thóc ®èi tho¹i"))
+	tinsert(tbSay, format("%s/no", "End conversation"))
 	local szTemp = "Mçi nh©n vËt cÇn hoµn thµnh nhiÖm vô sö thi vò khİ Háa Phông tr­íc, sao ®ã vµo V¹n Linh §µi sö dông ®¹o cô Hoang Háa L­u Kim, triÖu håi boss Hoang Háa L­u Kim (Ch©n th©n). Sau khi ®¸nh b¹i Hoang Háa L­u Kim (Ch©n th©n), sÏ nhËn ®­îc 1 Hoang Háa Chi T©m. Mçi nh©n vËt trong vßng 1 tuÇn tiªu diÖt Hoang Háa L­u Kim (Ch©n th©n) sÏ nhËn ®­îc 1 Hoang Háa Chi T©m, tuÇn ®ã sÏ kh«ng thÓ nhËn ®­îc Hoang Háa Chi T©m n÷a."
 	local szMsg = format("%s:%s", "<color=green>Háa Phông Tö<color>", szTemp)
 	Say(szMsg,getn(tbSay),tbSay)
@@ -81,7 +81,7 @@ end
 function about_huanghuoliujin()
 	local tbSay = {}
 	tinsert(tbSay, format("%s/npc_talk_main", "trë l¹i"))
-	tinsert(tbSay, format("%s/no", "KÕt thóc ®èi tho¹i"))
+	tinsert(tbSay, format("%s/no", "End conversation"))
 	local szTemp = "Tham gia Th¸i NhÊt Th¸p-Th­êng hoÆc Anh Hïng, tiªu diÖt boss Hoang Háa L­u Kim sÏ cã c¬ héi nhËn ®­îc ®¹o cô Hoang Háa L­u Kim."
 	local szMsg = format("%s:%s", "<color=green>Háa Phông Tö<color>", szTemp)
 	Say(szMsg,getn(tbSay),tbSay)
@@ -93,7 +93,7 @@ function iwant_update_lv2()
 	local tbSay = {}
 	tinsert(tbSay, format("%s/confirm_update_lv2", "Ta muèn n©ng cÊp"))
 	tinsert(tbSay, format("%s/npc_talk_main", "trë l¹i"))
-	tinsert(tbSay, format("%s/no", "KÕt thóc ®èi tho¹i"))
+	tinsert(tbSay, format("%s/no", "End conversation"))
 	local szMsg = format("%s:%s", "<color=green>Háa Phông Tö<color>", "N©ng cÊp vò khİ háa phông cÊp 1 thµnh vò khİ háa phông cÊp 2, cÇn trang bŞ vò khİ háa phông cÊp 1 trªn ng­êi.")
 	Say(szMsg,getn(tbSay),tbSay)
 end
@@ -108,7 +108,7 @@ function iwant_update_lv3()
 	local tbSay = {}
 	tinsert(tbSay, format("%s/confirm_update_lv3", "Ta muèn n©ng cÊp"))
 	tinsert(tbSay, format("%s/npc_talk_main", "trë l¹i"))
-	tinsert(tbSay, format("%s/no", "KÕt thóc ®èi tho¹i"))
+	tinsert(tbSay, format("%s/no", "End conversation"))
 	local szMsg = format("%s:%s", "<color=green>Háa Phông Tö<color>", "Chóc b¹n chÕ t¹o vò khİ thµnh c«ng.")
 	Say(szMsg,getn(tbSay),tbSay)
 end

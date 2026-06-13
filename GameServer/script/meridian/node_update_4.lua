@@ -19,7 +19,7 @@ t_node_id_list = {4}
 t_require_node_list =
 {
 	--require node id, require node name, require node level function
-	{65, "Khİ Xung", _get_require_level}
+	{65, "Qichong", _get_require_level}
 }
 
 --Ö¸¶¨Ñ¨Î»Ö¸¶¨µÈ¼¶µÄÌØÊâĞèÇóÌõ¼şÊÇ·ñ´ï³É

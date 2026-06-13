@@ -34,9 +34,9 @@ ZQ_BATTLE_CHANNEL = {
 
 --²É¼¯µÀ¾ß
 ZQ_CAIJI_ITEM = {
-	{0, 200, 14, "ThiÕt phñ", 5000},
-	{0, 200, 11, "Cuèc chim", 5000},
-	{0, 200, 16, "Cuèc thuèc", 5000},
+	{0, 200, 14, "Iron Mansion", 5000},
+	{0, 200, 11, "Bird Hoe", 5000},
+	{0, 200, 16, "Medicine Hoe", 5000},
 }
 
 --log
@@ -61,7 +61,7 @@ ZQ_TASK_LIST = {
 		--{ÈÎÎñID£¬ÈÎÎñ±äÁ¿£¬ÊÇ·ñ¿ª·Å£¬ÊÇ·ñÒÑ½Ó}
 		[1] = {111, ZQ_BATTLE_TASK1, 9, 10, "An Ninh"},
 		[2] = {112, ZQ_BATTLE_TASK1, 11, 12, "Tiªu nh­îc qu©n Liªu"},
-		[3] = {113, ZQ_BATTLE_TASK1, 13, 14, "GÆp ma"},
+		[3] = {113, ZQ_BATTLE_TASK1, 13, 14, "Encounter a demon"},
 		[4] = {114, ZQ_BATTLE_TASK1, 15, 16, "Thanh trõ c¶n trë"},
 		[5] = {115, ZQ_BATTLE_TASK1, 17, 18, "T«n nghiªm cña ng­êi chÕt"},
 	},
@@ -69,9 +69,9 @@ ZQ_TASK_LIST = {
 	[2] = {
 		[1] = {116, ZQ_BATTLE_TASK1, 19, 20, "QuÐt dän c¶n trë"},
 		[2] = {117, ZQ_BATTLE_TASK1, 21, 22, "QuyÕt diÖt qu©n Tèng"},
-		[3] = {118, ZQ_BATTLE_TASK1, 23, 24, "ThÊt thÕ"},
+		[3] = {118, ZQ_BATTLE_TASK1, 23, 24, "Lose advantage"},
 		[4] = {119, ZQ_BATTLE_TASK1, 25, 26, "NiÒm vinh dù cña thÞ téc"},
-		[5] = {120, ZQ_BATTLE_TASK1, 27, 28, "SØ nhôc"},	
+		[5] = {120, ZQ_BATTLE_TASK1, 27, 28, "Disgrace"},	
 	},
 
 	[3] = {
@@ -82,15 +82,15 @@ ZQ_TASK_LIST = {
 	},
 
 	[4] = {
-		[1] = {125, ZQ_BATTLE_TASK2, 7, 8, "Siªu ®é vong hån"},	
-		[2] = {126, ZQ_BATTLE_TASK2, 9, 10, "Nguyªn liÖu ®¬n d­îc 1 "},
-		[3] = {127, ZQ_BATTLE_TASK2, 11, 12, "Nguyªn liÖu ®¬n d­îc 2"},
-		[4] = {128, ZQ_BATTLE_TASK2, 13, 14, "Dòng gi¶ bÊt tö"},
+		[1] = {125, ZQ_BATTLE_TASK2, 7, 8, "Deliver the souls"},	
+		[2] = {126, ZQ_BATTLE_TASK2, 9, 10, "Pill ingredient 1"},
+		[3] = {127, ZQ_BATTLE_TASK2, 11, 12, "Pill ingredient 2"},
+		[4] = {128, ZQ_BATTLE_TASK2, 13, 14, "Immortal hero"},
 	},
 
 	[5] = {
-		[1] = {129, ZQ_BATTLE_TASK2, 15, 16, "ThÊt tinh hoa"},	
-		[2] = {130, ZQ_BATTLE_TASK2, 17, 18, "Tö Kim Méc"},
+		[1] = {129, ZQ_BATTLE_TASK2, 15, 16, "Seven essences"},	
+		[2] = {130, ZQ_BATTLE_TASK2, 17, 18, "Zi Jin Mu"},
 		[3] = {131, ZQ_BATTLE_TASK2, 19, 20, "Kho¸n tinh thiÕt"},
 	},
 }
@@ -124,9 +124,9 @@ ZQ_TASK_KILLPLAYER_AWARD = 5;
 --²É¼¯±í
 ZQ_GATHER_LIST = {
 		--{"¹¤¾ß", "ÈÎÎñ", "ÐèÏûºÄµÄÄÍ¾Ã", "»ñµÃµÄÎïÆ·", "ÏûºÄÄÍ¾ÃµÄµÀ¾ß", "²É¼¯ÌØÐ§"£¬"²É¼¯´ÎÊýÈÎÎñ±äÁ¿¼ÇÂ¼"}
-		["Tö Kim Méc"] = {"ThiÕt phñ", 130, 10, {2, 1, 30461, 1}, {0, 200, 14}, 1, ZQ_TASK_ZJM},
-		["Kho¸n tinh thiÕt"] = {"Cuèc chim", 131, 10, {2, 1, 30462, 1}, {0, 200, 11}, 3, ZQ_TASK_JTK},
-		["ThÊt tinh hoa"] = {"Cuèc thuèc", 129, 10, {2, 1, 30463, 1}, {0, 200, 16}, 4, ZQ_TASK_QXH},	
+		["Zi Jin Mu"] = {"Iron Mansion", 130, 10, {2, 1, 30461, 1}, {0, 200, 14}, 1, ZQ_TASK_ZJM},
+		["Kho¸n tinh thiÕt"] = {"Bird Hoe", 131, 10, {2, 1, 30462, 1}, {0, 200, 11}, 3, ZQ_TASK_JTK},
+		["Seven essences"] = {"Medicine Hoe", 129, 10, {2, 1, 30463, 1}, {0, 200, 16}, 4, ZQ_TASK_QXH},	
 }
 
 --²É¼¯¶ÁÌõµÄÊ±¼äs
@@ -215,21 +215,21 @@ ZQ_REPAIRREAL_NPC = {
 	{"Kim V­¬ng Gi¸p", "ZM_jinwangjia",	1610, 3266},
 	{"Th¸i S¬ MÖnh Th¹ch", "ZM_taichumingshi",	1578, 3290},
 	{"Hång TrÇn T¬", "ZM_hongchensi",	1577, 3325},
-	{"¢m TrÇm Méc", "ZM_chenyinmu",	1628, 3284},
+	{"Yin Chen Mu", "ZM_chenyinmu",	1628, 3284},
 	{"Lam BÝch Th¹ch", "ZM_lanbishi",	1606, 3271},
-	{"Hæ Sa B×", "ZM_hushapi",	1574, 3294},
+	{"Hu Sha Pi", "ZM_hushapi",	1574, 3294},
 	{"Kª HuyÕt Th¹ch", "ZM_jixueshi",	1581, 3329},
-	{"§¹i La Tinh Kim", "ZM_dalujinjin",	1629, 3279},
-	{"TuyÕt Tinh", "ZM_xuejing",	1602, 3274},
+	{"Da Luo Jing Jin", "ZM_dalujinjin",	1629, 3279},
+	{"Snow Crystal", "ZM_xuejing",	1602, 3274},
 	{"K×nh V­¬ng §an", "ZM_jingwangdan",	1570, 3298},
-	{"H¾c V¨n Long Kim", "ZM_heiwenlongjin",	1584, 3333},
+	{"Hei Wen Long Jin", "ZM_heiwenlongjin",	1584, 3333},
 	{"B¨ng Tinh Th¹ch", "ZM_binjingshi",	1633, 3282},
-	{"V« Cùc ThiÕt", "ZM_wujitie",	1607, 3276},
-	{"Yªu Hãa Cèt", "ZM_yaohuagu",	1574, 3301},
+	{"Wu Ji Tie", "ZM_wujitie",	1607, 3276},
+	{"Yao Hua Gu", "ZM_yaohuagu",	1574, 3301},
 	{"Tiªn Lôc LÖ Tinh", "ZM_xianlvleijing",	1585, 3323},
 	{"Tö Linh Thñy Tinh", "ZM_zilingshuijin",	1635, 3285},
 	{"Linh Cèt Ngäc", "ZM_lingguyu",	1611, 3273},
-	{"V« C¨n §»ng", "ZM_wugenteng",	1578, 3296},
+	{"Wu Gen Teng", "ZM_wugenteng",	1578, 3296},
 	{"V¹n Niªn Yªu §¬n", "ZM_wannianyaodan",	1582, 3321},
 }
 
@@ -276,57 +276,57 @@ ZQ_EVILBET_AWARD = {
 --ÖØÆô·âÓ¡
 ZQ_RESTART_REAL_NPC = {
 	--1
-	[1] = {"Kh¶m", "ZM_fengyinkan", 1580, 3465},
-	[2] = {"CÊn", "ZM_fengyinken", 1566, 3492},
-	[3] = {"Kh«n", "ZM_fengyinshen", 1545, 3501},
+	[1] = {"Kan", "ZM_fengyinkan", 1580, 3465},
+	[2] = {"Gen", "ZM_fengyinken", 1566, 3492},
+	[3] = {"Kun", "ZM_fengyinshen", 1545, 3501},
 	--2
-	[4] = {"§oµi", "ZM_fengyindui", 1532, 3450},
-	[5] = {"Cµn", "ZM_fengyinqian", 1551, 3434},
-	[6] = {"Tèn", "ZM_fengyinyi", 1571, 3441},
+	[4] = {"Dui", "ZM_fengyindui", 1532, 3450},
+	[5] = {"Qian", "ZM_fengyinqian", 1551, 3434},
+	[6] = {"Xun", "ZM_fengyinyi", 1571, 3441},
 	--3
-	[7] = {"ChÊn", "ZM_fengyinzhen", 1523, 3494},
+	[7] = {"Zhen", "ZM_fengyinzhen", 1523, 3494},
 	[8] = {"Ly", "ZM_fengyinli", 1517, 3470},	
 }
 
 ZQ_RESTART_JIGUAN_NPC = {
-	{"C¬ quan", "ZM_jiguan1", 1572, 3490},
-	{"C¬ quan", "ZM_jiguan2", 1580, 3491},
-	{"C¬ quan", "ZM_jiguan1", 1584, 3477},
-	{"C¬ quan", "ZM_jiguan2", 1593, 3475},
-	{"C¬ quan", "ZM_jiguan1", 1590, 3464},
-	{"C¬ quan", "ZM_jiguan2", 1582, 3448},
-	{"C¬ quan", "ZM_jiguan1", 1577, 3434},
-	{"C¬ quan", "ZM_jiguan2", 1566, 3427},
-	{"C¬ quan", "ZM_jiguan1", 1559, 3439},
-	{"C¬ quan", "ZM_jiguan2", 1561, 3453},
-	{"C¬ quan", "ZM_jiguan1", 1573, 3456},
-	{"C¬ quan", "ZM_jiguan2", 1574, 3471},
-	{"C¬ quan", "ZM_jiguan1", 1566, 3467},
-	{"C¬ quan", "ZM_jiguan2", 1601, 3458},
-	{"C¬ quan", "ZM_jiguan3", 1543, 3431},
-	{"C¬ quan", "ZM_jiguan1", 1542, 3455},
-	{"C¬ quan", "ZM_jiguan4", 1528, 3443},
-	{"C¬ quan", "ZM_jiguan2", 1524, 3454},
-	{"C¬ quan", "ZM_jiguan1", 1530, 3462},
-	{"C¬ quan", "ZM_jiguan2", 1536, 3467},
-	{"C¬ quan", "ZM_jiguan1", 1533, 3477},
-	{"C¬ quan", "ZM_jiguan2", 1524, 3468},
-	{"C¬ quan", "ZM_jiguan1", 1515, 3460},
-	{"C¬ quan", "ZM_jiguan3", 1508, 3473},
-	{"C¬ quan", "ZM_jiguan2", 1515, 3486},
-	{"C¬ quan", "ZM_jiguan3", 1525, 3481},
-	{"C¬ quan", "ZM_jiguan4", 1542, 3479},
-	{"C¬ quan", "ZM_jiguan3", 1532, 3490},
-	{"C¬ quan", "ZM_jiguan4", 1514, 3501},
-	{"C¬ quan", "ZM_jiguan3", 1521, 3511},
-	{"C¬ quan", "ZM_jiguan4", 1532, 3519},
-	{"C¬ quan", "ZM_jiguan1", 1541, 3506},
-	{"C¬ quan", "ZM_jiguan2", 1541, 3494},
-	{"C¬ quan", "ZM_jiguan1", 1548, 3520},
-	{"C¬ quan", "ZM_jiguan2", 1556, 3505},
-	{"C¬ quan", "ZM_jiguan1", 1553, 3493},
-	{"C¬ quan", "ZM_jiguan2", 1551, 3485},
-	{"C¬ quan", "ZM_jiguan1", 1559, 3479},
+	{"Mechanism", "ZM_jiguan1", 1572, 3490},
+	{"Mechanism", "ZM_jiguan2", 1580, 3491},
+	{"Mechanism", "ZM_jiguan1", 1584, 3477},
+	{"Mechanism", "ZM_jiguan2", 1593, 3475},
+	{"Mechanism", "ZM_jiguan1", 1590, 3464},
+	{"Mechanism", "ZM_jiguan2", 1582, 3448},
+	{"Mechanism", "ZM_jiguan1", 1577, 3434},
+	{"Mechanism", "ZM_jiguan2", 1566, 3427},
+	{"Mechanism", "ZM_jiguan1", 1559, 3439},
+	{"Mechanism", "ZM_jiguan2", 1561, 3453},
+	{"Mechanism", "ZM_jiguan1", 1573, 3456},
+	{"Mechanism", "ZM_jiguan2", 1574, 3471},
+	{"Mechanism", "ZM_jiguan1", 1566, 3467},
+	{"Mechanism", "ZM_jiguan2", 1601, 3458},
+	{"Mechanism", "ZM_jiguan3", 1543, 3431},
+	{"Mechanism", "ZM_jiguan1", 1542, 3455},
+	{"Mechanism", "ZM_jiguan4", 1528, 3443},
+	{"Mechanism", "ZM_jiguan2", 1524, 3454},
+	{"Mechanism", "ZM_jiguan1", 1530, 3462},
+	{"Mechanism", "ZM_jiguan2", 1536, 3467},
+	{"Mechanism", "ZM_jiguan1", 1533, 3477},
+	{"Mechanism", "ZM_jiguan2", 1524, 3468},
+	{"Mechanism", "ZM_jiguan1", 1515, 3460},
+	{"Mechanism", "ZM_jiguan3", 1508, 3473},
+	{"Mechanism", "ZM_jiguan2", 1515, 3486},
+	{"Mechanism", "ZM_jiguan3", 1525, 3481},
+	{"Mechanism", "ZM_jiguan4", 1542, 3479},
+	{"Mechanism", "ZM_jiguan3", 1532, 3490},
+	{"Mechanism", "ZM_jiguan4", 1514, 3501},
+	{"Mechanism", "ZM_jiguan3", 1521, 3511},
+	{"Mechanism", "ZM_jiguan4", 1532, 3519},
+	{"Mechanism", "ZM_jiguan1", 1541, 3506},
+	{"Mechanism", "ZM_jiguan2", 1541, 3494},
+	{"Mechanism", "ZM_jiguan1", 1548, 3520},
+	{"Mechanism", "ZM_jiguan2", 1556, 3505},
+	{"Mechanism", "ZM_jiguan1", 1553, 3493},
+	{"Mechanism", "ZM_jiguan2", 1551, 3485},
+	{"Mechanism", "ZM_jiguan1", 1559, 3479},
 }
 
 ZQ_SMZL_NPC_NAME = "<color=green>Tö M«n TrËn Linh: <color>";
@@ -335,7 +335,7 @@ ZQ_RESTARTSEAL_DIS_MAX = 50; --Ó¦¸Ã±£³ÖµÄ×î´ó¾àÀë
 
 ZQ_RESTARTSEAL_PROGRESS_TIME = 10 * 18;  --ÖØÆô·âÓ¡Ê±¼ä10s
 
-ZQ_RESTARTSEAL_ITEM = {2, 1, 30496, "Tö Linh LÖnh"};
+ZQ_RESTARTSEAL_ITEM = {2, 1, 30496, "Death Spirit Token"};
 
 ZQ_RESTARTSEAL_COUNT_MAX = 3; --×î´óÖØÆôÊýÄ¿
 

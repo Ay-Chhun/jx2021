@@ -8,7 +8,7 @@ Include("\\script\\lib\\lingshi_head.lua")
 function OnUse()
 	Say("Sö dông V¹n B¶o C¸c V¹n B¶o §å cã thÓ nhËn ®­îc 1 Linh Th¹ch phèi ph­¬ng nh­ sau, b¹n muèn sö dông kh«ng?\n 50% Linh Th¹ch phèi ph­¬ng cÊp 4\n25% Linh Th¹ch phèi ph­¬ng cÊp 5\n20% Linh Th¹ch phèi ph­¬ng cÊp 6\n5% Linh Th¹ch phèi ph­¬ng cÊp 7",
 		2,
-		"§ång ý/confirm_get",
+		"Agree/confirm_get",
 		"Kh«ng sö dông/nothing")
 end
 
@@ -27,12 +27,12 @@ function confirm_get()
 		elseif nRand <= 95 then
 			lspf_AddPeiFangInBottle(6,1)
 			Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 Linh Th¹ch phèi ph­¬ng cÊp 6, ®· nhËp vµo Tô linh ®Ønh.");
-			Msg2Global("Ng­êi ch¬i"..GetName().."Më V¹n B¶o C¸c V¹n B¶o §å nhËn ®uîc 1 Linh Th¹ch phèi ph­¬ng cÊp 6"); 	
+			Msg2Global("Player"..GetName().."Më V¹n B¶o C¸c V¹n B¶o §å nhËn ®uîc 1 Linh Th¹ch phèi ph­¬ng cÊp 6"); 	
 			WriteLog("V¹n B¶o C¸c V¹n B¶o §å: ng­êi ch¬i "..GetName().."Më V¹n B¶o C¸c V¹n B¶o §å nhËn ®uîc 1 Linh Th¹ch phèi ph­¬ng cÊp 6");
 		else
 			lspf_AddPeiFangInBottle(7,1)
 			Msg2Player("Chóc mõng b¹n ®· ®¹t ®­îc 1 linh th¹ch phèi ph­¬ng cÊp 7 ®· cho vµo Tô Linh §Ønh. ");
-			Msg2Global("Ng­êi ch¬i"..GetName().."Më V¹n B¶o C¸c V¹n B¶o ®å nhËn ®­îc nhËn ®­îc 1 Linh th¹ch phèi ph­¬ng cÊp 7.");	
+			Msg2Global("Player"..GetName().."Më V¹n B¶o C¸c V¹n B¶o ®å nhËn ®­îc nhËn ®­îc 1 Linh th¹ch phèi ph­¬ng cÊp 7.");	
 			WriteLog("V¹n B¶o C¸c V¹n B¶o §å: ng­êi ch¬i "..GetName().."Më V¹n B¶o C¸c V¹n B¶o ®å nhËn ®­îc nhËn ®­îc 1 Linh th¹ch phèi ph­¬ng cÊp 7.");		
 		end
 		AddItem(2,1,2641,1,1);

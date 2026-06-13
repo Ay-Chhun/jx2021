@@ -37,7 +37,7 @@ function main()
 	local nCanDigTool = 1
 	if (nCanDig == 1 and nCanDigTool == 1) then
 		if (DoFireworks(890, 1) == 1) then
-			Msg2Player("Thu thËp......");
+			Msg2Player("Collecting......");
 			CastState("state_fetter", 1, 4 * 18)
 			ProgressSlot(4 * 18)
 			
@@ -78,7 +78,7 @@ function _produce_material(nNpcIndex)
 	if tNpc then
 		local _award = tNpc[4]
 		AddItem(_award[2],_award[3],_award[4],_award[5])
-		local szMsg = format("NhËn ®­îc %d %s",_award[5],_award[1])
+		local szMsg = format("You received %d %s",_award[5],_award[1])
 		Talk(1,"",szMsg)
 		Msg2Player(szMsg)
 		return 1

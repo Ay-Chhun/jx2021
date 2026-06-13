@@ -172,7 +172,7 @@ function tCampBase:ClearTaskID()
 	for i = 1,getn(tbCampTaskList) do
 		local nCurValue = self:GetCampTask(i);
 		self:SetCampTask(i,0);
-		WriteLog(format("[TaskID Clear] [Acc:%s name:%s] [Nhi÷m vÙ bi’n l≠Óng: %d x„a, trﬁ tr≠Ìc khi x„a: %d]",GetAccount(),GetName(),tbCampTaskList[i],nCurValue));
+		WriteLog(format("[TaskID Clear] [Acc:%s name:%s] [Task variable: %d cleared, value before clearing: %d]",GetAccount(),GetName(),tbCampTaskList[i],nCurValue));
 	end	
 end
 

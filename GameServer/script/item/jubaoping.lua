@@ -23,9 +23,9 @@ tRandNum ={--ÊôĞÔÃû	id	Î»ÖÃ	×îµÍµÈ¼¶	ÊÇ·ñËæ»ú	ÏûºÄËæ»ú´ÎÊı	µÈ¼¶1-7È¨Öµ
 {"Søc lùc t¨ng",110,0,1,0,1,1,1,1,1,2,2,2},
 {"Søc lùc t¨ng",110,1,1,0,1,1,1,1,1,2,2,2},
 {"Søc lùc t¨ng",110,3,1,0,1,1,1,1,1,2,2,2},
-{"Sinh lùc +",11,0,1,0,3,1,1,1,1,2,2,2},
-{"Sinh lùc +",11,1,1,0,3,1,1,1,1,2,2,2},
-{"Sinh lùc +",11,3,1,0,3,1,1,1,1,2,2,2},
+{"Vitality +",11,0,1,0,3,1,1,1,1,2,2,2},
+{"Vitality +",11,1,1,0,3,1,1,1,1,2,2,2},
+{"Vitality +",11,3,1,0,3,1,1,1,1,2,2,2},
 {"H¹ gôc ®èi ph­¬ng sinh lùc håi phôc " ,333,2,1,0,2,1,1,1,1,2,2,2},
 {"600 gi©y ®é bÒn vò khİ håi phôc",43,2,1,1,2,1,1,1,1,2,2,2},
 {"600 gi©y ®é bÒn th­îng y håi phôc ",112,1,1,1,2,1,1,1,1,2,2,2},
@@ -34,7 +34,7 @@ tRandNum ={--ÊôĞÔÃû	id	Î»ÖÃ	×îµÍµÈ¼¶	ÊÇ·ñËæ»ú	ÏûºÄËæ»ú´ÎÊı	µÈ¼¶1-7È¨Öµ
 {"yªu cÇu ®¼ng cÊp gi¶m ",334,0,6,1,3,1,1,1,1,2,2,2},
 {"yªu cÇu ®¼ng cÊp gi¶m "	,334,1,6,1,3,1,1,1,1,2,2,2},
 {"yªu cÇu ®¼ng cÊp gi¶m "	,334,3,6,1,3,1,1,1,1,2,2,2},
-{"Tû lÖ ®¸nh ph¹m vi",335,2,1,0,3,1,1,1,1,2,2,2},
+{"Hit range rate",335,2,1,0,3,1,1,1,1,2,2,2},
 {"Vò khİ ®¸nh ngo¹i lín nhÊt t¨ng ",65,2,1,0,3,1,1,1,1,2,2,2},
 {"Vò khİ ®¸nh ngo¹i thÊp nhÊt t¨ng "	,66,2,1,0,3,1,1,1,1,2,2,2},
 {"Vò khİ ®¸nh néi lín nhÊt t¨ng"	,67,2,1,0,3,1,1,1,1,2,2,2},
@@ -44,7 +44,7 @@ tRandNum ={--ÊôĞÔÃû	id	Î»ÖÃ	×îµÍµÈ¼¶	ÊÇ·ñËæ»ú	ÏûºÄËæ»ú´ÎÊı	µÈ¼¶1-7È¨Öµ
 {"TÊn c«ng t¨ng ",77,2,1,1,3,1,1,2,2,3,3,4},
 {"Chİnh x¸c t¨ng",337,2,1,0,4,1,1,2,2,3,3,4},
 {"NĞ tr¸nh t¨ng",338,3,1,0,5,1,1,2,2,3,3,4},
-{"Ph¶n ®ßn",339,1,1,0,5,1,1,2,2,3,3,4},
+{"Counter blow",339,1,1,0,5,1,1,2,2,3,3,4},
 {"Mçi 10 gi©y néi lùc håi phôc",340,0,5,1,5,1,1,2,2,3,3,4},
 {"Mçi 10 gi©y néi lùc håi phôc",340,1,5,1,5,1,1,2,2,3,3,4},
 {"Mçi 10 gi©y néi lùc håi phôc",340,3,5,1,5,1,1,2,2,3,3,4},
@@ -94,9 +94,9 @@ tRandNum ={--ÊôĞÔÃû	id	Î»ÖÃ	×îµÍµÈ¼¶	ÊÇ·ñËæ»ú	ÏûºÄËæ»ú´ÎÊı	µÈ¼¶1-7È¨Öµ
 {"Néi c«ng t¨ng ",361,0,1,0,5,1,1,2,2,3,3,4},
 {"Néi c«ng t¨ng ",361,1,1,0,5,1,1,2,2,3,3,4},
 {"Néi c«ng t¨ng ",361,3,1,0,5,1,1,2,2,3,3,4},
-{"Kh¸ng ®éc",100,0,1,0,6,1,1,2,2,3,3,4},
-{"Kh¸ng ®éc",100,1,1,0,6,1,1,2,2,3,3,4},
-{"Kh¸ng ®éc",100,3,1,0,6,1,1,2,2,3,3,4},
+{"Poison resistance",100,0,1,0,6,1,1,2,2,3,3,4},
+{"Poison resistance",100,1,1,0,6,1,1,2,2,3,3,4},
+{"Poison resistance",100,3,1,0,6,1,1,2,2,3,3,4},
 {"ChuyÓn hãa s¸t th­¬ng thµnh néi lùc",46,0,5,1,6,1,1,2,2,3,3,4},
 {"ChuyÓn hãa s¸t th­¬ng thµnh néi lùc",46,1,5,1,6,1,1,2,2,3,3,4},
 {"TÊn c«ng lµm ®èi ph­¬ng hao tæn néi lùc",49,2,5,0,6,1,2,2,3,3,4,5},
@@ -110,7 +110,7 @@ tRandNum ={--ÊôĞÔÃû	id	Î»ÖÃ	×îµÍµÈ¼¶	ÊÇ·ñËæ»ú	ÏûºÄËæ»ú´ÎÊı	µÈ¼¶1-7È¨Öµ
 {"Néi lùc tèi ®a t¨ng-%",80,0,1,0,6,1,2,2,3,3,4,5},
 {"Néi lùc tèi ®a t¨ng-%",80,1,1,0,6,1,2,2,3,3,4,5},
 {"Néi lùc tèi ®a t¨ng-%",80,3,1,0,6,1,2,2,3,3,4,5},
-{"Kh¾c nĞ",364,1,3,0,6,1,2,2,3,3,4,5},
+{"Restraint counter",364,1,3,0,6,1,2,2,3,3,4,5},
 {"Hç trî tÊn c«ng  duy tr× ",41,0,1,0,7,1,2,2,3,3,4,5},
 {"Hç trî tÊn c«ng  duy tr× ",41,2,1,0,7,1,2,2,3,3,4,5},
 {"Hç trî tÊn c«ng  duy tr× ",41,1,1,0,7,1,2,2,3,3,4,5},
@@ -121,22 +121,22 @@ tRandNum ={--ÊôĞÔÃû	id	Î»ÖÃ	×îµÍµÈ¼¶	ÊÇ·ñËæ»ú	ÏûºÄËæ»ú´ÎÊı	µÈ¼¶1-7È¨Öµ
 {"Hç trî phßng thñ duy tr× ",42,3,1,0,7,1,2,2,3,3,4,5},
 {"C«ng kİch khiÕn ngo¹i phßng cña ®èi ph­¬ng gi¶m",382,2,1,0,7,1,2,2,3,3,4,5},
 {"C«ng kİch khiÕn néi lùc cña ®èi ph­¬ng gi¶m ",383,2,1,0,7,1,2,2,3,3,4,5},
-{"Tû lÖ chŞu ®ßn gi¶m nöa	",365,0,5,0,7,1,2,2,3,3,4,5},
-{"Tû lÖ chŞu ®ßn gi¶m nöa	",365,1,5,0,7,1,2,2,3,3,4,5},
-{"Tû lÖ chŞu ®ßn gi¶m nöa	",365,3,5,0,7,1,2,2,3,3,4,5},
+{"Rate of damage taken halved",365,0,5,0,7,1,2,2,3,3,4,5},
+{"Rate of damage taken halved",365,1,5,0,7,1,2,2,3,3,4,5},
+{"Rate of damage taken halved",365,3,5,0,7,1,2,2,3,3,4,5},
 {"Kinh nghiÖm nhËn ®­îc t¨ng",366,2,5,1,5,2,2,3,3,3,4,5},
 {"Kinh nghiÖm nhËn ®­îc t¨ng",366,0,5,1,5,2,2,3,3,3,4,5},
 {"Kinh nghiÖm nhËn ®­îc t¨ng",366,1,5,1,5,2,2,3,3,3,4,5},
 {"Kinh nghiÖm nhËn ®­îc t¨ng",366,3,5,1,5,2,2,3,3,3,4,5},
 {"Lµm gi¶m nĞ tr¸nh cña ®èi ph­¬ng",373,3,4,0,8,2,2,3,3,3,4,5},
 {"Lµm chËm nĞ tr¸nh cña ®èi ph­¬ng",374,3,4,0,8,2,2,3,3,3,4,5},
-{"Tû lÖ nĞ tr¸nh ®¸nh lui",375,3,4,0,8,2,2,3,3,3,4,5},
-{"Tû lÖ nĞ tr¸nh ®¸nh ng·",376,3,4,0,8,2,2,3,3,3,4,5},
+{"Rate of evasion knockback",375,3,4,0,8,2,2,3,3,3,4,5},
+{"Rate of evasion knockdown",376,3,4,0,8,2,2,3,3,3,4,5},
 {"Bá qua nĞ tr¸nh ®èi ph­¬ng",377,0,4,0,8,2,2,3,3,3,4,5},
-{"G©y mª",378,0,4,0,8,2,2,3,3,3,4,5},
-{"G©y cho¸ng",379,0,4,0,8,2,2,3,3,3,4,5},
-{"G©y hçn lo¹n nĞ tr¸nh",380,1,4,0,8,2,2,3,3,3,4,5},
-{"G©y ngñ mª gi¶m nĞ tr¸nh",381,1,4,0,8,2,2,3,3,3,4,5},
+{"Cause confusion",378,0,4,0,8,2,2,3,3,3,4,5},
+{"Cause stun",379,0,4,0,8,2,2,3,3,3,4,5},
+{"Cause evasion chaos",380,1,4,0,8,2,2,3,3,3,4,5},
+{"Cause sleep and reduce evasion",381,1,4,0,8,2,2,3,3,3,4,5},
 {"Ngo¹i phßng gi¶m, ngo¹i kİch t¨ng",18,1,1,0,8,2,2,3,3,3,4,5},
 {"Néi phßng gi¶m, Néi c«ng t¨ng",19,1,1,0,8,2,2,3,3,3,4,5},
 {"S¸t th­¬ng t¨ng ",372,2,3,0,7,2,2,3,3,3,4,5},
@@ -155,7 +155,7 @@ function OnUse()
 		"T«i cã Linh th¹ch phèi ph­¬ng nµo/which_lingshi_pf",
 		"Chän Linh th¹ch phèi ph­¬ng ®Ó ®æi /zhiding_main",
 		"C¸ch ®æi nh­ thÕ nµo /how_change",
-		"Kh«ng cã g×/nothing"}
+		"Nothing/nothing"}
 	Say("VËt tiªn c¶nh nµy hÊp thô linh khİ trêi ®Êt, b¹n muèn biÕt ®iÒu g×? ",
 		getn(strtab),
 		strtab)
@@ -196,7 +196,7 @@ function quchu_lingshi(nLv)
 	Say("B¹n chÊp nhËn t¸ch linh th¹ch cÊp "..nLv.." ??",
 		2,
 		"Ph¶i, ta muèn t¸ch /#lingshi_num("..nLv..")",
-		"Kh«ng, ta nhÇm!/which_lingshi")
+		"No, I was mistaken!/which_lingshi")
 end
 
 function lingshi_num(nLv)
@@ -204,7 +204,7 @@ function lingshi_num(nLv)
 												SYS_TSK_LINGSHI_FIVE,SYS_TSK_LINGSHI_SIX,SYS_TSK_LINGSHI_SEVEN}	
 	local nNum = GetTask(tLingshiTask[nLv]);
 	SetTaskTemp(TT_LINGSHI_LV,nLv);
-	AskClientForNumber("confirm_give_lingshi", 1, tonumber(nNum), "T¸ch ra bao nhiªu "..nLv.." Linh th¹ch?");
+	AskClientForNumber("confirm_give_lingshi", 1, tonumber(nNum), "How many to extract"..nLv.." Spirit Stones?");
 end
 
 function confirm_give_lingshi(nCount)
@@ -222,7 +222,7 @@ function confirm_give_lingshi(nCount)
 		end
 		Msg2Player("B¹n lÊy ra "..nLv.." (cÊp) Linh Th¹ch"..nCount.." ");
 		if nLv >= 6 then
-			WriteLog("Ng­êi ch¬i"..GetName().."LÊy"..nLv.." (cÊp) Linh Th¹ch"..nCount.." ");
+			WriteLog("Player"..GetName().."Take"..nLv.." (cÊp) Linh Th¹ch"..nCount.." ");
 		end
 		SetTask(tLingshiTask[nLv],GetTask(tLingshiTask[nLv])-nCount);
 		SetTaskTemp(TT_LINGSHI_LV,0);
@@ -241,7 +241,7 @@ function which_lingshi_pf()
 		for i=1,getn(tPeifangTask) do
 			if GetTask(tPeifangTask[i]) == -1 then
 				SetTask(tPeifangTask[i],1);
-				WriteLog("Tô Linh §Ünh bŞ lçi: Ng­êi ch¬i"..GetName().." -Sè l­îng 1"..i.." (cÊp) Linh th¹ch phèi ph­¬ng trë thµnh sè l­îng 1")
+				WriteLog("Spirit Gathering Cauldron error: Player"..GetName().." -Quantity 1"..i.." (cÊp) Linh th¹ch phèi ph­¬ng trë thµnh sè l­îng 1")
 			end
 		end		
 		for j=1,getn(tPeifangTask) do
@@ -270,7 +270,7 @@ function quchu_peifang(nLv)
 	Say("B¹n chÊp nhËn t¸ch linh th¹ch cÊp "..nLv.." (cÊp) Linh th¹ch phèi ph­¬ng?",
 		2,
 		"Ph¶i, ta muèn t¸ch /#peifang_num("..nLv..")",
-		"Kh«ng, ta nhÇm!/which_lingshi_pf")	
+		"No, I was mistaken!/which_lingshi_pf")	
 end
 
 function peifang_num(nLv)
@@ -296,7 +296,7 @@ function confirm_give_peifang(nCount)
 		end
 		Msg2Player("B¹n lÊy ra "..nLv.." (cÊp)-linh th¹ch phèi ph­¬ng."..nCount.."Tr­¬ng");
 		if nLv >= 6 then
-			WriteLog("Ng­êi ch¬i"..GetName().."LÊy"..nLv.." (cÊp)-linh th¹ch phèi ph­¬ng."..nCount.." ");
+			WriteLog("Player"..GetName().."Take"..nLv.." (cÊp)-linh th¹ch phèi ph­¬ng."..nCount.." ");
 		end		
 		SetTask(tPeifangTask[nLv],GetTask(tPeifangTask[nLv])-nCount);
 		SetTaskTemp(TT_LINGSHI_PF_LV,0);															
@@ -336,10 +336,10 @@ end
 
 function lingshi_zhiding_lv(nLv)
 	local strtab = {
-		"M·o/#lingshi_zhiding_wz("..nLv..",0,0)",
+		"Helmet/#lingshi_zhiding_wz("..nLv..",0,0)",
 		"Y phôc/#lingshi_zhiding_wz("..nLv..",1,0)",
 		"Vò khİ/#lingshi_zhiding_wz("..nLv..",2,0)",
-		"QuÇn /#lingshi_zhiding_wz("..nLv..",3,0)",
+		"Pants /#lingshi_zhiding_wz("..nLv..",3,0)",
 		"trë l¹i/zhiding_lingshi",
 		"T¹m thêi kh«ng ®æi. /nothing"
 		}
@@ -368,10 +368,10 @@ function lingshi_zhiding_wz(nLv,nWz,nPage)
 		tinsert(strtab,tAttri[nPage*nPageNum+i][1].."/#confirm_lingshi_zhiding("..tAttri[nPage*nPageNum+i][2]..","..nLv..","..nWz..","..tIdx[nPage*nPageNum+i]..")");
 	end
 	if nPage > 0 then
-		tinsert(strtab,"Trang tr­íc/#lingshi_zhiding_wz("..nLv..","..nWz..","..(nPage-1)..")");
+		tinsert(strtab,"Previous page/#lingshi_zhiding_wz("..nLv..","..nWz..","..(nPage-1)..")");
 	end
 	if nRemaid > 6 then
-		tinsert(strtab,"Trang kÕ/#lingshi_zhiding_wz("..nLv..","..nWz..","..(nPage+1)..")");
+		tinsert(strtab,"Next page/#lingshi_zhiding_wz("..nLv..","..nWz..","..(nPage+1)..")");
 	end
 	tinsert(strtab,"trë l¹i/#lingshi_zhiding_lv("..nLv..")");
 	tinsert(strtab,"T¹m thêi kh«ng ®æi. /nothing");
@@ -381,7 +381,7 @@ function lingshi_zhiding_wz(nLv,nWz,nPage)
 end
 
 function confirm_lingshi_zhiding(nId,nLv,nWz,nIdx)
-	local tWz = {"M·o","Y phôc","Vò khİ","QuÇn "};
+	local tWz = {"Helmet","Y phôc","Vò khİ","Pants"};
 	Say("Sè lÇn b¹n tiªu hao <color=yellow>"..nLv*tRandNum[nIdx][nLv+6].."<color> lÇn"..nLv.." (cÊp) Linh th¹ch ngÉu nhiªn ®Ó ®æi thuéc tİnh Linh th¹ch lµ <color=yellow>"..tRandNum[nIdx][1].."<color>, vŞ trİ kh¶m lµ 1 <color=yellow> "..tWz[nWz+1].."<color> "..nLv.." (cÊp) Linh th¹ch, ®ång ı chø?",
 		2,
 		"õ, ta muèn ®æi./#give_lingshi_zhiding("..nId..","..nLv..","..nWz..","..nIdx..")",
@@ -403,7 +403,7 @@ function give_lingshi_zhiding(nId,nLv,nWz,nIdx)
 	AddLingShi(nId,nWz,nLv);
 	Msg2Player("B¹n nhËn ®­îc "..nLv.."(cÊp) Linh Th¹ch!");
 	if nLv >= 6 then
-		WriteLog("Ng­êi ch¬i"..GetName().."Sè lÇn ngÉu nhiªn tiªu hao "..nNum.." lÇn nhËn ®­îc "..nLv.."(cÊp) Linh Th¹ch!");
+		WriteLog("Player"..GetName().."Sè lÇn ngÉu nhiªn tiªu hao "..nNum.." lÇn nhËn ®­îc "..nLv.."(cÊp) Linh Th¹ch!");
 	end
 end
 
@@ -424,10 +424,10 @@ end
 
 function lspf_zhiding_lv(nLv)
 	local strtab = {
-		"M·o/#lspf_zhiding_wz("..nLv..",0,0)",
+		"Helmet/#lspf_zhiding_wz("..nLv..",0,0)",
 		"Y phôc/#lspf_zhiding_wz("..nLv..",1,0)",
 		"Vò khİ/#lspf_zhiding_wz("..nLv..",2,0)",
-		"QuÇn /#lspf_zhiding_wz("..nLv..",3,0)",
+		"Armor/#lspf_zhiding_wz("..nLv..",3,0)",
 		"trë l¹i/zhiding_peifang",
 		"T¹m thêi kh«ng ®æi. /nothing"
 		}
@@ -456,10 +456,10 @@ function lspf_zhiding_wz(nLv,nWz,nPage)
 		tinsert(strtab,tAttri[nPage*nPageNum+i][1].."/#confirm_lspf_zhiding("..tAttri[nPage*nPageNum+i][2]..","..nLv..","..nWz..","..tIdx[nPage*nPageNum+i]..")");
 	end
 	if nPage > 0 then
-		tinsert(strtab,"Trang tr­íc/#lspf_zhiding_wz("..nLv..","..nWz..","..(nPage-1)..")");
+		tinsert(strtab,"Previous page/#lspf_zhiding_wz("..nLv..","..nWz..","..(nPage-1)..")");
 	end
 	if nRemaid > 6 then
-		tinsert(strtab,"Trang kÕ/#lspf_zhiding_wz("..nLv..","..nWz..","..(nPage+1)..")");
+		tinsert(strtab,"Next page/#lspf_zhiding_wz("..nLv..","..nWz..","..(nPage+1)..")");
 	end
 	tinsert(strtab,"trë l¹i/#lspf_zhiding_lv("..nLv..")");
 	tinsert(strtab,"T¹m thêi kh«ng ®æi. /nothing");
@@ -469,7 +469,7 @@ function lspf_zhiding_wz(nLv,nWz,nPage)
 end
 
 function confirm_lspf_zhiding(nId,nLv,nWz,nIdx)
-	local tWz = {"M·o","Y phôc","Vò khİ","QuÇn "};
+	local tWz = {"Helmet","Y phôc","Vò khİ","Pants"};
 	Say("Sè lÇn b¹n tiªu hao <color=yellow>"..nLv*tRandNum[nIdx][nLv+6].."<color> lÇn"..nLv.." (cÊp) Linh th¹ch phèi ph­¬ng ngÉu nhiªn ®æi thµnh <color=yellow>1"..tRandNum[nIdx][1].."<color>, vŞ trİ kh¶m lµ 1 <color=yellow> "..tWz[nWz+1].."<color> "..nLv.." (cÊp) Linh th¹ch phèi ph­¬ng, b¹n chÊp nhËn?",
 		2,
 		"õ, ta muèn ®æi./#give_lspf_zhiding("..nId..","..nLv..","..nWz..","..nIdx..")",
@@ -502,10 +502,10 @@ function give_lspf_zhiding(nId,nLv,nWz,nIdx)
 	if AddItem(nPfid1,nPfid2,nPfid3,1) == 1 then
 		Msg2Player("B¹n nhËn ®­îc "..nLv.."(cÊp)thuéc tİnh Linh th¹ch phèi ph­¬ng");
 		if nLv >= 6 then
-			WriteLog("Ng­êi ch¬i"..GetName().."tiªu hao "..nNum.." lÇn ngÉu nhiªn, nhËn ®­îc 1 "..nLv.." (cÊp)thuéc tİnh Linh th¹ch phèi ph­¬ng");
+			WriteLog("Player"..GetName().."tiªu hao "..nNum.." lÇn ngÉu nhiªn, nhËn ®­îc 1 "..nLv.." (cÊp)thuéc tİnh Linh th¹ch phèi ph­¬ng");
 		end
 	else
-		WriteLog("Ng­êi ch¬i"..GetName().."tiªu hao "..nNum.." lÇn ngÉu nhiªn, nhËn ®­îc 1 "..nLv.." (cÊp)thuéc tİnh Linh th¹ch phèi ph­¬ng ®· thÊt b¹i! ")
+		WriteLog("Player"..GetName().."tiªu hao "..nNum.." lÇn ngÉu nhiªn, nhËn ®­îc 1 "..nLv.." (cÊp)thuéc tİnh Linh th¹ch phèi ph­¬ng ®· thÊt b¹i! ")
 	end
 end
 
@@ -554,8 +554,8 @@ function confirm_ls_change_high(nCount)
 	local nNum = tNum[nLv]*nCount;
 	Say("B¹n chÊp nhËn tiªu hao "..nNum.." lÇn"..nLv.." (cÊp) Linh th¹ch ngÉu nhiªn ®Ó ®æi lÊy"..nCount.." "..(nLv+1).." (cÊp) Linh th¹ch?",
 		3,
-		"§ång ı/#give_ls_change_high("..nLv..","..nNum..","..nCount..")",
-		"Chän sai. Trë vÒ/zhiding_lingshi_gaoji",
+		"Agree/#give_ls_change_high("..nLv..","..nNum..","..nCount..")",
+		"Wrong choice. Go back/zhiding_lingshi_gaoji",
 		"T¹m thêi kh«ng ®æi. /nothing")
 end
 
@@ -605,8 +605,8 @@ function confirm_lspf_change_high(nCount)
 	local nNum = tNum[nLv]*nCount;
 	Say("B¹n chÊp nhËn tiªu hao "..nNum.." lÇn"..nLv.." (cÊp) Linh th¹ch phèi ph­¬ng ngÉu nhiªn ®æi lÊy "..nCount.."Tr­¬ng"..(nLv+1).." (cÊp) Linh th¹ch phèi ph­¬ng? ",
 		3,
-		"§ång ı/#give_lspf_change_high("..nLv..","..nNum..","..nCount..")",
-		"Chän sai. Trë vÒ/zhiding_lspf_gaoji",
+		"Agree/#give_lspf_change_high("..nLv..","..nNum..","..nCount..")",
+		"Wrong choice. Go back/zhiding_lspf_gaoji",
 		"T¹m thêi kh«ng ®æi. /nothing")
 end
 
@@ -637,7 +637,7 @@ end
 function lingshi_change_yuehua()
 	Say("B¹n chÊp nhËn tiªu hao 5 lÇn Linh th¹ch cÊp 5 ngÉu nhiªn ®æi lÊy NguyÖt Hoa?",
 		3,
-		"§ång ı/confirm_lingshi_yuehua",
+		"Agree/confirm_lingshi_yuehua",
 		"trë l¹i/zhiding_yuehua",
 		"T¹m thêi kh«ng ®æi. /nothing")
 end
@@ -661,7 +661,7 @@ end
 function lspf_change_stone()
 	Say("B¹n chÊp nhËn tiªu hao 5 lÇn Linh th¹ch phèi ph­¬ng cÊp 5 ngÉu nhiªn ®æi lÊy 1 HuyÒn Hoµng Th¹ch? ",
 		3,
-		"§ång ı/confirm_lspf_stone",
+		"Agree/confirm_lspf_stone",
 		"trë l¹i/zhiding_yuehua",
 		"T¹m thêi kh«ng ®æi. /nothing")
 end

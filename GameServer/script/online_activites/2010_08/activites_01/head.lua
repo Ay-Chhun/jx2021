@@ -157,7 +157,7 @@ function give_cake_201008()
 		nCountMax = 10
 	end
 	if nGiveCount >= nCountMax then
-		Talk(1,"","H«m nay ®· tÆng b¸nh ®ñ "..nCountMax.." lÇn råi, kh«ng thÓ tÆng thªm n÷a, ngµy mai h·y quay l¹i!")
+		Talk(1,"","You have already given enough cakes today."..nCountMax.." lÇn råi, kh«ng thÓ tÆng thªm n÷a, ngµy mai h·y quay l¹i!")
 		return
 	end
 	
@@ -165,6 +165,6 @@ function give_cake_201008()
 		VET_201008_01_get_exp(2000000)
 		Msg2Player("NhËn ®­îc 2000000 ®iÓm kinh nghiÖm!")
 		SetTask(EVENT201008_GIVE_CAKE, GetTask(EVENT201008_GIVE_CAKE) + 1)
-		gf_WriteLogEx("VET_201008_01_STR_LOG_TITLE", "tÆng b¸nh Socola")
+		gf_WriteLogEx("VET_201008_01_STR_LOG_TITLE", "give chocolate cake")
 	end
 end

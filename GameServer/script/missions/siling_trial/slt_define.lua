@@ -102,7 +102,7 @@ SLT_NPC_TEMPLATE_2 = {
 	{"sl_elang", "Sãi ®iªn"},
 	{"sl_heiya", "Qu¹ §en"},
 	{"sl_shirene", "C¸ sÊu"},
-	{"sl_chanchu", "C¸p M«"},
+	{"sl_chanchu", "Toad"},
 	{"sl_xixuebianfu", "D¬i hót m¸u"},
 	{"sl_tianxie", "Bß c¹p"},
 	{"sl_yinhu", "Ng©n Hå"},
@@ -124,22 +124,22 @@ SLT_NPC_TEMPLATE_3 = {
 };
 SLT_BOSS_TEMPLATE = {
 	{"sl_longling", "Long Linh"},
-	{"sl_yingling", "¦ng Linh"},
-	{"sl_huling", "Hæ Linh"},
-	{"sl_fengling", "Ph­îng Linh"},
+	{"sl_yingling", "Eagle Spirit"},
+	{"sl_huling", "Tiger Spirit"},
+	{"sl_fengling", "Phoenix Spirit"},
 	{"sl_qitiandasheng", "TÒ Thiªn §¹i Th¸nh "},
 };
 SLT_PARTNER_TEMPLATE = {
 	{"sl_huoqiling", "Háa Kú L©n"},
 	{"sl_baitoudiao", "B¹ch §Çu §iªu"},
 	{"sl_huwang", "Hæ V­¬ng"},
-	{"sl_luanniao", "Loan §iÓu"},
+	{"sl_luanniao", "Phoenix Bird"},
 	{"sl_juyuan", "V­în to"},
 };
 
-SLT_TONG_BOX = "R­¬ng §ång"
-SLT_YING_BOX = "R­¬ng B¹c"
-SLT_JING_BOX = "Kim R­¬ng"
+SLT_TONG_BOX = "Copper Chest"
+SLT_YING_BOX = "Silver Chest"
+SLT_JING_BOX = "Gold Chest"
 
 SLT_AWARD = {
 	[1] = {

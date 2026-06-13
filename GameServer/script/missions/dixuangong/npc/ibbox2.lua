@@ -8,8 +8,8 @@ msg = "Chóc mõng $n më B¶o R­¬ng §Þa HuyÒn Cung  nhËn ®­îc $i";
 
 --¾«Ó¢±¦Ïä
 tClause1 = {
-    {{"Tø Linh Quy Nguyªn §¬n", {2,1,30352,1,4}}, 500},
-    {{"Båi Nguyªn §¬n", {2,1,30351,1,4}}, 1000},
+    {{"Four Spirits Return to Origin Pill", {2,1,30352,1,4}}, 500},
+    {{"Replenishing Origin Pill", {2,1,30351,1,4}}, 1000},
     --{{"´«¹¦µ¤", {2,1,30313,1,4}}, 1000},
     --{{"ÐÞÕæÒª¾÷²ÐÒ³", {2,1,30315,1,4}}, 500},
     {{"ThiÕt Tinh cÊp 1", {2,1,30533,1,4}}, 1400},
@@ -43,17 +43,17 @@ tClause2 = {
 
 --ÈýÌÃ±¦Ïä
 tClause3 = {
-    {{"C©y B¸t Nh· nhá", {2,0,504,1},nil,{7*24*3600}}, 600},
-    {{"C©y B¸t Nh·", {2,0,398,1},nil,{7*24*3600}}, 600},
-    {{"C©y Tø Linh", {2,1,30269,1},nil,{7*24*3600}}, 600},
+    {{"Small Prajna Tree", {2,0,504,1},nil,{7*24*3600}}, 600},
+    {{"Prajna Tree", {2,0,398,1},nil,{7*24*3600}}, 600},
+    {{"Four Spirits Tree", {2,1,30269,1},nil,{7*24*3600}}, 600},
     {{"B¹ch C©u Hoµn", {2,1,270,1},nil,{7*24*3600}}, 600},
     {{"§¹i B¹ch C©u hoµn", {2,1,1007,1},nil,{7*24*3600}}, 800},
     {{"B¹ch C©u Tiªn ®¬n", {2,1,1008,1},nil,{7*24*3600}}, 600},
     {{"§¹i Nh©n s©m", {2,0,553,1},nil,{7*24*3600}}, 500},
-    {{"Hu©n ch­¬ng anh hïng", {2,1,30499,1,4}}, 1000},
-    {{"Hu©n ch­¬ng anh hïng", {2,1,30499,2,4}}, 600},
-    {{"Hu©n ch­¬ng anh hïng", {2,1,30499,4,4}}, 200},
-    {{"Hu©n ch­¬ng anh hïng", {2,1,30499,10,4}}, 50},
+    {{"Hero's Medal", {2,1,30499,1,4}}, 1000},
+    {{"Hero's Medal", {2,1,30499,2,4}}, 600},
+    {{"Hero's Medal", {2,1,30499,4,4}}, 200},
+    {{"Hero's Medal", {2,1,30499,10,4}}, 50},
     {{"M¶nh Thiªn M«n", {2,1,30410,2}}, 500},
     {{"M¶nh Thiªn M«n", {2,1,30410,4}}, 360},
     {{"M¶nh Thiªn M«n", {2,1,30410,20}}, 40},
@@ -96,12 +96,12 @@ function main()
 	if not tItem then return end
 
 	local Daye = GetMissionV(MV_SP_DAYE)
-	local tSel = {"KÕt thóc ®èi tho¹i/nothing"}
+	local tSel = {"End dialogue/nothing"}
 	if PlayerIndex == Daye then
 		tSel = {
 			format("Thu thËp vËt phÈm/#lootAwardOther(%d, %d)",PlayerIndex, GetTargetNpc()),
-			format("Ph©n chia cho tæ ®éi/#giveOther(%d)",GetTargetNpc()),
-			"KÕt thóc ®èi tho¹i/nothing",
+			format("Distribute to party/#giveOther(%d)",GetTargetNpc()),
+			"End dialogue/nothing",
 		}
 	end
 	local msg = format("Trong b¶o r­¬ng cã [%s *%d]",tItem[1], tItem[2][4]);
@@ -143,9 +143,9 @@ function getLootItem()
 			AddRuntimeStat(1,16,0,tItem[2][4]);
 		elseif tItem[1] == "CÊp 3 TÈy T©m Th¹ch" then
 			AddRuntimeStat(1,17,0,tItem[2][4]);
-		elseif tItem[1] == "BÝ Ng©n To¶n" then
+		elseif tItem[1] == "Hidden Silver Plate" then
 			AddRuntimeStat(1,18,0,tItem[2][4]);
-		elseif tItem[1] == "BÝ Ng©n Chïy" then
+		elseif tItem[1] == "Hidden Silver Mallet" then
 			AddRuntimeStat(1,19,0,tItem[2][4]);
 		end
 		--2Xu
@@ -168,7 +168,7 @@ function giveOther(npcId)
 			tinsert(tSel, 1, "Ta cÇn mang phÇn th­ëng ph©n cho   "..player_name.."/#lootAwardOther("..PlayerIndex..","..npcId..")");
 		end
 	end
-	tinsert(tSel, "KÕt thóc ®èi tho¹i/nothing");
+	tinsert(tSel, "End dialogue/nothing");
 	PlayerIndex = oldPidx;
 	local tLootItem = getLootItem();
 	local nCount = (tLootItem[2] and tLootItem[2][4]) or 1;

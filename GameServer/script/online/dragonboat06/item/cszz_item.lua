@@ -4,7 +4,7 @@ function OnUse(nItemIndex)
 		CastState("state_m_attack_percent_add",20,120*60*18,1,1010);	--120·ÖÖÓÌá¸ßÄÚÍâ¹¥20£¥
 		CastState("state_move_speed_percent_add",10,120*60*18,1,1001);	--120·ÖÖÓÌá¸ßÒÆ¶¯ËÙ¶È10%
 		Msg2Player("Lùc ®¸nh t¨ng 20%, tèc ®é di chuyÓn t¨ng 10% duy tr× 2h")
-		Msg2_LeiTai("B¸nh İt n­íng");
+		Msg2_LeiTai("Grilled zongzi");
 	end;
 end;
 

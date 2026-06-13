@@ -95,7 +95,7 @@ function cc_answer_question()
 			tinsert(tSay, tSubTable[2][i].."/cc_answer_question_fail")
 		end
 	end
-	tinsert(tSay, "\n rót lui/nothing");
+	tinsert(tSay, "\n withdraw/nothing");
 	Say(CC_NPC..tSubTable[1]..format("<color=red> ( hiÖn t¹i ®ang tr¶ lêi lÇn thø %d) <color>", nIndex), getn(tSay), tSay);
 end
 
@@ -135,7 +135,7 @@ function cc_answer_question_fail()
 	--Ê§°Ü½±Àø
 	gf_Modify("Exp", 2500);
 	--¼ÌÐø´ðÌâ
-	Say(CC_NPC.."<color=red> thËt ®¸ng tiÕc, ng­¬i tr¶ lêi sai råi ! <color>", 2, "TiÕp tôc tr¶ lêi/#cc_answer_continue("..nAnswerTimes..")", "§îi mét l¸t råi nãi nhÐ/nothing");
+	Say(CC_NPC.."<color=red> thËt ®¸ng tiÕc, ng­¬i tr¶ lêi sai råi ! <color>", 2, "Continue answering/#cc_answer_continue("..nAnswerTimes..")", "§îi mét l¸t råi nãi nhÐ/nothing");
 end
 
 function cc_answer_continue(nAnswerTimes)
@@ -150,19 +150,19 @@ function cc_answer_item_award(nKind)
 	local tAward = {
 		[1] = {
 			{1, 85, "L«i TÕ", {2, 1, 30505, 1}, 0},
-			{1, 15, "L¹c Hoa QuyÕt", {2, 1, 30506, 1}, 0},
+			{1, 15, "Falling Flower Art", {2, 1, 30506, 1}, 0},
 		},	
 		[2] = {
 			{1, 75, "L«i TÕ", {2, 1, 30505, 1}, 0},
-			{1, 25, "L¹c Hoa QuyÕt", {2, 1, 30506, 1}, 0},
+			{1, 25, "Falling Flower Art", {2, 1, 30506, 1}, 0},
 		},	
 		[3] = {
 			{1, 70, "L«i TÕ", {2, 1, 30505, 1}, 0},
-			{1, 25, "L¹c Hoa QuyÕt", {2, 1, 30506, 1}, 0},
-			{1, 5, "Linh Miªu VËn", {2, 1, 30507, 1}, 0},
+			{1, 25, "Falling Flower Art", {2, 1, 30506, 1}, 0},
+			{1, 5, "Spirit Cat Fortune", {2, 1, 30507, 1}, 0},
 		},
 	}
-	cc_card_award_func({tAward, nKind, nKind, "KiÕn thøc vÊn ®¸p"});
+	cc_card_award_func({tAward, nKind, nKind, "Knowledge Q&A"});
 end
 
 function cc_get_award(nKind)
@@ -193,11 +193,11 @@ function cc_get_award(nKind)
 		},
 		[2] = {
 			{2,	1, 30505, 1, "L«i TÕ"},
-			{2,	1, 30506, 1, "L¹c Hoa QuyÕt"},
+			{2,	1, 30506, 1, "Falling Flower Art"},
 		},
 		[3] = {
 			{2,	1, 30505, 1, "L«i TÕ"},
-			{2,	1, 30507, 1, "Linh Miªu VËn"},
+			{2,	1, 30507, 1, "Spirit Cat Fortune"},
 		},
 	}
 	for i = 1, getn(tItemDel[nKind]) do 
@@ -228,7 +228,7 @@ function cc_get_award(nKind)
 		--¸øÒ»¸ö×ÊÁÏÀñ°ü
 		local nCount = CC_ACTIVITY_TASK_GROUP:GetTask(CC_ACTIVITY_TASK_GROUP.ZLPPARK_COUNT);
 		if mod(nCard2Times, 100) == 0 and nCount < CC_ZLP_PARK_MAX then
-			gf_AddItemEx2({2, 1, 30540, 1}, "LÔ Bao Phiªn B¶n Míi", CC_LOG_TITLE, "Giao nép ThÎ L«i TÕ + ThÎ L¹c Hoa QuyÕt nhËn th­ëng ", 0, 1);
+			gf_AddItemEx2({2, 1, 30540, 1}, "New Version Gift Pack", CC_LOG_TITLE, "Giao nép ThÎ L«i TÕ + ThÎ L¹c Hoa QuyÕt nhËn th­ëng ", 0, 1);
 			CC_ACTIVITY_TASK_GROUP:SetTask(CC_ACTIVITY_TASK_GROUP.ZLPPARK_COUNT, nCount+1);
 		end
 		 gf_WriteLogEx(CC_LOG_TITLE, "nép thµnh c«ng", 1, "Nép L«i TÕ + Hoa QuyÕt lÇn thø "..nCard2Times)
@@ -238,7 +238,7 @@ function cc_get_award(nKind)
 		CC_ACTIVITY_TASK_GROUP:SetTask(CC_ACTIVITY_TASK_GROUP.CARD3_TIMES, nCard3Times)
 		--¸øÒ»¸öÐÂ×ÊÁÏÆ¬Àñ°ü
 		if mod(nCard3Times, 100) == 0 then
-			gf_AddItemEx2({2, 1, 30540, 1}, "LÔ Bao Phiªn B¶n Míi", CC_LOG_TITLE, "Giao nép ThÎ L«i TÕ + ThÎ Linh Miªu VËn nhËn th­ëng", 0, 1);
+			gf_AddItemEx2({2, 1, 30540, 1}, "New Version Gift Pack", CC_LOG_TITLE, "Giao nép ThÎ L«i TÕ + ThÎ Linh Miªu VËn nhËn th­ëng", 0, 1);
 		end
 		--¸øÒ»¸öÌìî¸Àñ°ü
 		if mod(nCard3Times, 100) == 0 and mod(nCard3Times / 100, 2) == 0 then
@@ -260,8 +260,8 @@ function cc_tmz_award_succ()
 	local tAward = {
 		[1] = {
 			{1, 80, "L«i TÕ", {2, 1, 30505, 1}, 0},
-			{1, 15, "L¹c Hoa QuyÕt", {2, 1, 30506, 1}, 0},
-			{1, 5, "Linh Miªu VËn", {2, 1, 30507, 1}, 0},
+			{1, 15, "Falling Flower Art", {2, 1, 30506, 1}, 0},
+			{1, 5, "Spirit Cat Fortune", {2, 1, 30507, 1}, 0},
 		},
 	}
 	cc_card_award_func({tAward, 1, 3, "Thiªn M«n trËn"});
@@ -272,7 +272,7 @@ function cc_tmz_award_fail()
 	local tAward = {
 		[1] = {
 			{1, 80, "L«i TÕ", {2, 1, 30505, 1}, 0},
-			{1, 20, "L¹c Hoa QuyÕt", {2, 1, 30506, 1}, 0},
+			{1, 20, "Falling Flower Art", {2, 1, 30506, 1}, 0},
 		},
 	}
 	cc_card_award_func({tAward, 1, 1, "Thiªn M«n trËn"});
@@ -293,7 +293,7 @@ end
 function cc_ls_award(nStep)
 	local tTemp = {1,1,1,1,1,1};
 	if not tTemp or not tTemp[nStep] then return 0; end
-	cc_card_award_func({CC_COPY_AWARD[3], nStep, tTemp[nStep], "Cöa ¶i L­¬ng S¬n "});
+	cc_card_award_func({CC_COPY_AWARD[3], nStep, tTemp[nStep], "Liangshan Pass"});
 end
 -------------------------------------------------------
 --RelayË¢¹Ö
@@ -380,7 +380,7 @@ function cc_box_award()
 		gf_Modify("Exp", 100000);
 		--Item
 		local nIndex = gf_GetRandItemByTable(CC_BOX_AWARD, gf_SumRandBase(CC_BOX_AWARD), 1);
-		if tostring(CC_BOX_AWARD[nIndex][3]) == "Linh Miªu VËn" then
+		if tostring(CC_BOX_AWARD[nIndex][3]) == "Spirit Cat Fortune" then
 			local nTimes= CC_ACTIVITY_TASK_GROUP:GetTask(CC_ACTIVITY_TASK_GROUP.BOX_AWARD_CARD);
 			if nTimes >= CC_BOX_MAX_LM_CARD then
 				nIndex = random(1, max(1, nIndex-1));
@@ -419,7 +419,7 @@ function cc_card_award_func(t)
 		end	
 		
 		local nIndex = gf_GetRandItemByTable(tAwardSub, gf_SumRandBase(tAwardSub), 1);
-		if tostring(tAwardSub[nIndex][3]) == "Linh Miªu VËn" then
+		if tostring(tAwardSub[nIndex][3]) == "Spirit Cat Fortune" then
 			local nTimes= CC_ACTIVITY_TASK_GROUP:GetTask(CC_ACTIVITY_TASK_GROUP.BOX_AWARD_CARD);
 			if nTimes >= CC_BOX_MAX_LM_CARD then
 				nIndex = random(1, max(1, nIndex - 1));

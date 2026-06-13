@@ -12,7 +12,7 @@ g_nDebugVersion = 0;   --debug∞Ê±æ
 FIELD_PVP_RELAY_KEY = "FIELD_PVP_CAMP_CHARM"; --»À∆¯÷µ
 
 --»˝∏ˆ ∆¡¶µÿÕºID
-tMainMapID = {{6000,"ßπi L˝ Thi™n Long T˘"},{6100,"ThÊ PhÂn Qu˙nh K’t"},{6200,"T©y Hπ H≠ng Kh∏nh"},{6300,"Th t Lπc Nhai"},{6400,"Thi™n ¢m Th∏nh ßﬁa"}};
+tMainMapID = {{6000,"ßπi L˝ Thi™n Long T˘"},{6100,"Tho Phon Quynh Ket"},{6200,"Tay Ha Hung Khanh"},{6300,"That Lac Nhai"},{6400,"Thi™n ¢m Th∏nh ßﬁa"}};
 --’Û”™
 CampOne = "yp_dali"; 		--’Û”™1¿‡–Õ£¨∞¸¿®npc
 CampTwo = "yp_xx";  		--’Û”™2¿‡–Õ£¨∞¸¿®npc
@@ -62,15 +62,15 @@ tTempRev = {
 
 tNpcs = {
 	[6000] = {
-		cdz1 = {"DaLi_CDZ", "ßπi L˝ Truy“n ßπo 1", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampOne, 0},
-		cdz2 = {"DaLi_CDZ", "ßπi L˝ Truy“n ßπo 2", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampOne, 0},
-		cdz3 = {"DaLi_CDZ", "ßπi L˝ Truy“n ßπo 3", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampOne, 0},
-		cdz4 = {"DaLi_CDZ", "ßπi L˝ Truy“n ßπo 4", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampOne, 0},
-		cdz5 = {"DaLi_CDZ", "ßπi L˝ Truy“n ßπo 5", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampOne, 0},
-		cdz6 = {"DaLi_CDZ", "ßπi L˝ Truy“n ßπo 6", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampOne, 0},
-		cdz7 = {"DaLi_CDZ", "ßπi L˝ Truy“n ßπo 7", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampOne, 0},
-		cdz8 = {"DaLi_CDZ", "ßπi L˝ Truy“n ßπo 8", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampOne, 0},
-		cdz9 = {"DaLi_CDZ", "ßπi L˝ Truy“n ßπo 9", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampOne, 0},
+		cdz1 = {"DaLi_CDZ", "Dali Missionary 1", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampOne, 0},
+		cdz2 = {"DaLi_CDZ", "Dali Missionary 2", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampOne, 0},
+		cdz3 = {"DaLi_CDZ", "Dali Missionary 3", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampOne, 0},
+		cdz4 = {"DaLi_CDZ", "Dali Missionary 4", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampOne, 0},
+		cdz5 = {"DaLi_CDZ", "Dali Missionary 5", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampOne, 0},
+		cdz6 = {"DaLi_CDZ", "Dali Missionary 6", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampOne, 0},
+		cdz7 = {"DaLi_CDZ", "Dali Missionary 7", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampOne, 0},
+		cdz8 = {"DaLi_CDZ", "Dali Missionary 8", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampOne, 0},
+		cdz9 = {"DaLi_CDZ", "Dali Missionary 9", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampOne, 0},
 		chd = {"ßi”m CÒi Lˆa", "ßi”m CÒi Lˆa", nil,910, CampPlayer, 0},
 		army1 = {"TrÙ Tr◊ Thi™n Long T˘", "TrÙ Tr◊ Thi™n Long T˘", "\\script\\missions\\yp\\tls\\mission.lua", 900, CampOne, 0, "\\script\\missions\\yp\\tls\\mission.lua"},
 		army2 = {"Ch p S˘ Thi™n Long T˘ 1", "Ch p S˘ Thi™n Long T˘", "\\script\\missions\\yp\\army_npc.lua", 900, CampOne, 0},
@@ -98,19 +98,19 @@ tNpcs = {
 		cf = {"Xa phu","Xa phu","\\script\\missions\\yp\\cf_npc.lua", nil, CampOne, 0},
 	},
 	[6100] = {
-		cdz1 = {"TuBo_CDZ", "ThÊ PhÂn Truy“n ßπo 1", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampTwo, 0},
-		cdz2 = {"TuBo_CDZ", "ThÊ PhÂn Truy“n ßπo 2", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampTwo, 0},
-		cdz3 = {"TuBo_CDZ", "ThÊ PhÂn Truy“n ßπo 3", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampTwo, 0},
-		cdz4 = {"TuBo_CDZ", "ThÊ PhÂn Truy“n ßπo 4", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampTwo, 0},
-		cdz5 = {"TuBo_CDZ", "ThÊ PhÂn Truy“n ßπo 5", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampTwo, 0},
-		cdz6 = {"TuBo_CDZ", "ThÊ PhÂn Truy“n ßπo 6", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampTwo, 0},
-		cdz7 = {"TuBo_CDZ", "ThÊ PhÂn Truy“n ßπo 7", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampTwo, 0},
-		cdz8 = {"TuBo_CDZ", "ThÊ PhÂn Truy“n ßπo 8", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampTwo, 0},
-		cdz9 = {"TuBo_CDZ", "ThÊ PhÂn Truy“n ßπo 9", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampTwo, 0},
+		cdz1 = {"TuBo_CDZ", "Tubo Missionary 1", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampTwo, 0},
+		cdz2 = {"TuBo_CDZ", "Tubo Missionary 2", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampTwo, 0},
+		cdz3 = {"TuBo_CDZ", "Tubo Missionary 3", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampTwo, 0},
+		cdz4 = {"TuBo_CDZ", "Tubo Missionary 4", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampTwo, 0},
+		cdz5 = {"TuBo_CDZ", "Tubo Missionary 5", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampTwo, 0},
+		cdz6 = {"TuBo_CDZ", "Tubo Missionary 6", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampTwo, 0},
+		cdz7 = {"TuBo_CDZ", "Tubo Missionary 7", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampTwo, 0},
+		cdz8 = {"TuBo_CDZ", "Tubo Missionary 8", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampTwo, 0},
+		cdz9 = {"TuBo_CDZ", "Tubo Missionary 9", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampTwo, 0},
 		chd = {"ßi”m CÒi Lˆa", "ßi”m CÒi Lˆa", nil,910, CampPlayer, 0},
 		army1 = {"TrÙ Tr◊ H„a Sinh T˘", "TrÙ Tr◊ H„a Sinh T˘", "\\script\\missions\\yp\\hss\\mission.lua", 900, CampTwo, 0, "\\script\\missions\\yp\\hss\\mission.lua"},
-		army2 = {"Ch p S˘ H„a Sinh T˘ 1", "Ch p S˘ H„a Sinh T˘", "\\script\\missions\\yp\\army_npc.lua", 900, CampTwo, 0},
-		army3 = {"Ch p S˘ H„a Sinh T˘ 2", "Ch p S˘ H„a Sinh T˘", "\\script\\missions\\yp\\army_npc.lua", 900, CampTwo, 0},
+		army2 = {"Ch p S˘ H„a Sinh T˘ 1", "Steward of Hoa Sinh Temple", "\\script\\missions\\yp\\army_npc.lua", 900, CampTwo, 0},
+		army3 = {"Ch p S˘ H„a Sinh T˘ 2", "Steward of Hoa Sinh Temple", "\\script\\missions\\yp\\army_npc.lua", 900, CampTwo, 0},
 				
 		bt = {"Ti™u ß«u Tr n Vi‘n Ti™u CÙc","Ti™u ß«u Tr n Vi‘n Ti™u CÙc","\\script\\missions\\yp\\biaotou_npc.lua",nil,CampTwo,0},
 --		qhys = {"«‡∫£—Œ…Ã","«‡∫£—Œ…Ã","\\script\\missions\\yp\\qhys_npc.lua",nil,CampTwo,0},
@@ -133,19 +133,19 @@ tNpcs = {
 		cf = {"Xa phu","Xa phu","\\script\\missions\\yp\\cf_npc.lua", nil, CampTwo, 0},
 	},	
 	[6200] = {
-		cdz1 = {"Mm_CDZ", "T©y Hπ Truy“n ßπo 1", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampThree, 0},
-		cdz2 = {"Mm_CDZ", "T©y Hπ Truy“n ßπo 2", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampThree, 0},
-		cdz3 = {"Mm_CDZ", "T©y Hπ Truy“n ßπo 3", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampThree, 0},
-		cdz4 = {"Mm_CDZ", "T©y Hπ Truy“n ßπo 4", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampThree, 0},
-		cdz5 = {"Mm_CDZ", "T©y Hπ Truy“n ßπo 5", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampThree, 0},
-		cdz6 = {"Mm_CDZ", "T©y Hπ Truy“n ßπo 6", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampThree, 0},
-		cdz7 = {"Mm_CDZ", "T©y Hπ Truy“n ßπo 7", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampThree, 0},
-		cdz8 = {"Mm_CDZ", "T©y Hπ Truy“n ßπo 8", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampThree, 0},
-		cdz9 = {"Mm_CDZ", "T©y Hπ Truy“n ßπo 9", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampThree, 0},
+		cdz1 = {"Mm_CDZ", "Xixia Missionary 1", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampThree, 0},
+		cdz2 = {"Mm_CDZ", "Xixia Missionary 2", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampThree, 0},
+		cdz3 = {"Mm_CDZ", "Xixia Missionary 3", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampThree, 0},
+		cdz4 = {"Mm_CDZ", "Xixia Missionary 4", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampThree, 0},
+		cdz5 = {"Mm_CDZ", "Xixia Missionary 5", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampThree, 0},
+		cdz6 = {"Mm_CDZ", "Xixia Missionary 6", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampThree, 0},
+		cdz7 = {"Mm_CDZ", "Xixia Missionary 7", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampThree, 0},
+		cdz8 = {"Mm_CDZ", "Xixia Missionary 8", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampThree, 0},
+		cdz9 = {"Mm_CDZ", "Xixia Missionary 9", "\\script\\missions\\yp\\cdz_npc.lua", nil, CampThree, 0},
 		chd = {"ßi”m CÒi Lˆa", "ßi”m CÒi Lˆa", nil,910, CampPlayer, 0},
 		army1 = {"T©y Hπ Chinh Nam T≠Ìng Qu©n", "T©y Hπ Chinh Nam T≠Ìng Qu©n", "\\script\\missions\\yp\\mm\\mission.lua", 900, CampThree, 0, "\\script\\missions\\yp\\mm\\mission.lua"},
-		army2 = {"T©y Hπ Chinh Nam Qu©n S‹ 1", "T©y Hπ Chinh Nam Qu©n S‹ ", "\\script\\missions\\yp\\army_npc.lua", 900, CampThree, 0},
-		army3 = {"T©y Hπ Chinh Nam Qu©n S‹ 2", "T©y Hπ Chinh Nam Qu©n S‹ ", "\\script\\missions\\yp\\army_npc.lua", 900, CampThree, 0},
+		army2 = {"T©y Hπ Chinh Nam Qu©n S‹ 1", "Tay Ha Southern Expedition Soldier", "\\script\\missions\\yp\\army_npc.lua", 900, CampThree, 0},
+		army3 = {"T©y Hπ Chinh Nam Qu©n S‹ 2", "Tay Ha Southern Expedition Soldier", "\\script\\missions\\yp\\army_npc.lua", 900, CampThree, 0},
 				
 		bt = {"Ti™u ß«u Tr n Vi‘n Ti™u CÙc","Ti™u ß«u Tr n Vi‘n Ti™u CÙc","\\script\\missions\\yp\\biaotou_npc.lua",nil,CampThree,0},
 --		qhys = {"«‡∫£—Œ…Ã","«‡∫£—Œ…Ã","\\script\\missions\\yp\\qhys_npc.lua",nil,CampThree,0},
@@ -376,18 +376,18 @@ tBzPos = { --±¶≤ÿµƒÀÊª˙µ„
 tBCRand = {48,72,88,96,100}; --Ô⁄≥µ∏≈¬ 
 
 tBiaoChe = {
-	{"Ti™u Xa 1","Ti™u Xa Th≠Íng"},
-	{"Ti™u Xa 2","Ti™u Xa Quan Tr‰ng"},
-	{"Ti™u Xa 3","Ti™u Xa Qu©n DÙng"},
+	{"Ti™u Xa 1","Standard Escort Cart"},
+	{"Ti™u Xa 2","Important Escort Cart"},
+	{"Ti™u Xa 3","Military Escort Cart"},
 	{"Ti™u Xa 4","Ti™u Xa C¨ MÀt"},
 	{"Ti™u Xa 5","Ti™u Xa Hoµng Gia"},
 };
 
 tSeedName = { -- ˜÷÷
 	--√˚◊÷ id ∆∑÷ ÀÊª˙∑∂Œß ΩΩÀÆΩ±¿¯
-	[1] = {{"V´ Hoa Tˆ_Loπi 1",{2,95,908},{40,50}, "tree_bodhi1"},{"BÂ ß“ Tˆ_Loπi 1",{2,95,909},{40,50}, "tree_fig1"}},
+	[1] = {{"Vo Hoa Tu_Type 1",{2,95,908},{40,50}, "tree_bodhi1"},{"Bo De Tu_Type 1",{2,95,909},{40,50}, "tree_fig1"}},
 	[2] = {{"Tˆ ßµn Ti™n ChÒng_Loπi 2",{2,95,904},{21,35},"tree_PurpleSandalwood2"},{"Hoµng ßµn Ti™n ChÒng_Loπi 2",{2,95,905},{21,35},"tree_YellowSandalwood2"},{"Tˆ ßªng Ti™n ChÒng_Loπi 2",{2,95,906},{21,35},"tree_wisteria2"},{"Ng©n Hπnh Ti™n ChÒng_Loπi 2",{2,95,907},{21,35}, "tree_ginkgo2"}},
-	[3] = {{"Hπt GiËng Anh ßµo_Loπi 3",{2,95,900},{11,30},"tree_cherry3"},{"Hπt GiËng C©y ßµo_Loπi 3",{2,95,901},{11,30},"tree_peach3"},{"Hπt GiËng Hoa Ti™u_Loπi 3",{2,95,902},{11,30}, "tree_pepper3"},{"Hπt GiËng ThÒy Sam_Loπi 3",{2,95,903},{11,30}, "tree_metasequoia3"}},
+	[3] = {{"Cherry Seed_Type 3",{2,95,900},{11,30},"tree_cherry3"},{"Peach Tree Seed_Type 3",{2,95,901},{11,30},"tree_peach3"},{"Hoa Tieu Seed_Type 3",{2,95,902},{11,30}, "tree_pepper3"},{"Hπt GiËng ThÒy Sam_Loπi 3",{2,95,903},{11,30}, "tree_metasequoia3"}},
 }
 
 tYupoName = {
@@ -400,36 +400,36 @@ tYupoName = {
 tPlantInfo = {}; --ÕÊº“µƒÃ´–È ˜infoª∫¥Ê
 
 tPVPItemInfo = {
-	{"Kim L®ng Tˆu",2,95,822},      --1
+	{"Jinling Wine",2,95,822},      --1
 	{"Tµng Ki’m B› Truy“n T©m Kinh",2,95,823},--2
 	{"B∏ch Hi”u Sinh B› Ph∏p",2,95,824},	--3
 	{"Kim Cang Kinh",2,95,825},			--4
-	{"V‚ L©m Minh T›n VÀt",2,95,935},--5
+	{"Wulin Alliance Token",2,95,935},--5
 	{"Th∏i H≠ H„a H◊nh ß¨n",2,95,914},	--6
 	{"PhÙng Tinh ß¨n",2,95,916},	--7
 	{"Tµng B∂o ßÂ",2,95,917},	--8
-	{"Tr n Vi‘n ßÊi Ti™u L÷nh",2,95,918}, --9	
-	{"Ti™u Xa Th≠Íng-Ti™u K˙",2,95,919},	--10
-	{"Ti™u Xa Quan Tr‰ng-Ti™u K˙",2,95,920},	--11
-	{"Ti™u Xa Qu©n DÙng-Ti™u K˙",2,95,921},	--12
+	{"Tran Vien Escort Exchange Order",2,95,918}, --9	
+	{"Escort Cart Common - Escort Flag",2,95,919},	--10
+	{"Escort Cart Important - Escort Flag",2,95,920},	--11
+	{"Escort Cart Military - Escort Flag",2,95,921},	--12
 	{"Ti™u Xa C¨ MÀt-Ti™u K˙",2,95,922},	--13
 	{"Ti™u Xa Hoµng Gia-Ti™u K˙",2,95,923},	--14
-	{"Huy Hi÷u V‚ L©m Minh",2,95,924},	--15
-	{"Ngh‹a Kh› Tˆu",2,95,925},		--16
+	{"Wulin Alliance Badge",2,95,924},	--15
+	{"Brotherhood Wine",2,95,925},		--16
 	{"Tµng B∂o ßÂ",	2,95,926},  --17
-	{"XŒng Kho B∏u",	2,95,927},	--18
+	{"Treasure Shovel",	2,95,927},	--18
 	{"Ch©u B∏u T©y Hπ",	2,95,928},  --19
-	{"T¨ LÙa ßπi L˝",	2,95,929},	--20
-	{"Da L´ng ThÊ PhÂn",	2,95,930},	--21
-	{"Kho B∏u Tr©n Ph»m",	2,95,931},	--22
-	{"Kho B∏u T◊ H≠u",	2,95,932},	--23
-	{"Kho B∏u Di VÀt",	2,95,933},	--24
+	{"Dai Ly Silk",	2,95,929},	--20
+	{"Tho Phon Fur",	2,95,930},	--21
+	{"Treasure Trove Rare Item",	2,95,931},	--22
+	{"Treasure Trove Pixiu",	2,95,932},	--23
+	{"Treasure Trove Relic",	2,95,933},	--24
 	{"Kho B∏u Kinh Th’",	2,95,934},	--25
 	{"V‚ L©m Minh Th≠ Bi”u D≠¨ng",	2,95,936}, --26
 	{"Kho B∏u Minh M´n",	2,97,33},	--27
 	{"Kho B∏u Thi™n Long T˘",	2,97,34},	--28
-	{"Kho B∏u Qu˙nh K’t",	2,97,35},	--29	
-	{"Ng≠ng Tinh LÈ", 2,1,30804}, --30
+	{"Treasure Trove of Quynh Ket",	2,97,35},	--29	
+	{"Ngung Tinh Lo", 2,1,30804}, --30
 };
 
 tRewardTime = { --…ÕΩ ±º‰
@@ -438,10 +438,10 @@ tRewardTime = { --…ÕΩ ±º‰
 
 --…ÕΩµ¿æﬂ–ßπ˚
 tRewardBox = {--ƒ£∞Â√˚ npc√˚ ◊¥Ã¨√˚≥∆ –ßπ˚√Ë ˆ ƒß∑® Ù–‘◊÷∑˚¥Æ  ˝÷µ ≥÷–¯ ±º‰
-	{"Gi∏ vÚ kh›_Ngoµi thµnh","Gi∏ vÚ kh›",1787,3508,"DÚng M∑nh","t®ng l˘c c´ng k›ch 100%, duy tr◊ 30 gi©y","state_p_attack_percent_add",100,30,"state_m_attack_percent_add",100,30},
-	{"Gi∏ khi™n_Ngoµi thµnh","Gi∏ khi™n",1775,3411,"Hung h∑n","T®ng l˘c phﬂng ng˘ 100%, duy tr◊ 30 gi©y","state_receive_half_damage",100,30},
+	{"Gi∏ vÚ kh›_Ngoµi thµnh","Gi∏ vÚ kh›",1787,3508,"Brave and Fierce","t®ng l˘c c´ng k›ch 100%, duy tr◊ 30 gi©y","state_p_attack_percent_add",100,30,"state_m_attack_percent_add",100,30},
+	{"Gi∏ khi™n_Ngoµi thµnh","Gi∏ khi™n",1775,3411,"Ferocious","Increase defense power 100%, lasts 30 seconds","state_receive_half_damage",100,30},
 	{"L∏ th∂o d≠Óc_Ngoµi thµnh","L∏ th∂o d≠Óc",1775,3666,"Trﬁ th≠¨ng","MÁi gi©y hÂi phÙc 10% sinh m÷nh, duy tr◊ 30 gi©y","state_life_per_per8f",500,30},
-	{"Giµy gi„_Ngoµi thµnh","Giµy gi„",1851,3527,"NgÙy bÈ","»n th©n, duy tr◊ 30 gi©y","state_illusion_latent",0,30},
+	{"Giµy gi„_Ngoµi thµnh","Giµy gi„",1851,3527,"Fake Step","Stealth, lasts 30 seconds","state_illusion_latent",0,30},
 };
 
 -----------------------------------π´π≤∫Ø ˝------------------------------------------
@@ -539,7 +539,7 @@ end
 function yp_setValue(nType,Value)
 	yp_clearPlayerData();
 	local tTaskID = {TASK_FIELD_PVP_GXD, TASK_FIELD_PVP_COUNT, 12345678};
-	local strMsg = {"ßÈ cËng hi’n th’ l˘c","ßi”m PVP","Trﬁ tinh l˘c","Kinh nghi÷m ÆËi chi’n ","Danh v‰ng V‚ L©m Minh"};
+	local strMsg = {"Faction Contribution Level","PVP Points","Spirit Power Value","Kinh nghi÷m ÆËi chi’n ","Wulin Alliance Reputation"};
 	if nType == 5 then
 		--≥Ã–ÚΩ”ø⁄
 		local nCamp = GetTask(TASK_FIELD_PVP_CAMP);
@@ -562,7 +562,7 @@ function yp_setValue(nType,Value)
 			if Value > 0 then
 				Msg2Player("Ng≠¨i nhÀn Æ≠Óc ["..strMsg[nType].."]"..Value.." Æi”m!");
 			elseif Value < 0 then
-				Msg2Player("Ng≠¨i m t Æi ["..strMsg[nType].."]"..abs(Value).." Æi”m!");
+				Msg2Player("You lose ["..strMsg[nType].."]"..abs(Value).." Æi”m!");
 			end
 		end
 	end
@@ -675,11 +675,11 @@ end
 function yp_c2s_detail()
 	local strtab = {
 		"Truy“n Æπo thÙ nghi÷p/#yp_c2s_detail2(1)",
-		"Th t Lπc Nhai-T«m b∂o/#yp_c2s_detail2(2)",
-		"Th t Lπc Nhai-ßoπt th≠/#yp_c2s_detail2(3)",
+		"That Lac Nhai - Treasure Hunt/#yp_c2s_detail2(2)",
+		"That Lac Nhai - Seize Letter/#yp_c2s_detail2(3)",
 		"Th«n Du Ch©n Nh©n/#yp_c2s_detail2(4)",
 		"Thi™n ¢m Th∏m B›/#yp_c2s_detail2(5)",
-		"K’t thÛc ÆËi thoπi/nothing"	
+		"End dialogue/nothing"	
 	};
 	Say("Trong th’ l˘c T©y V˘c, ngoπi trı cung c p nhi÷m vÙ th’ l˘c cÒa m◊nh, cﬂn sœ ph∏t sinh mÈt sË s˘ ki÷n ng…u nhi™n.",
 		getn(strtab),

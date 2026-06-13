@@ -71,8 +71,8 @@ function bhta4:vote(nID, nQuantity, nType)
 	else
 		gf_WriteLogEx(BHTA4_LOG_TITLE, szNation.." - b×nh chän Hoa Hång PhÊn", nQuantity, szTongName)
 	end
-	Talk(1,"","C¸c h¹ ®· b×nh chän "..nQuantity.." ®iÓm Hoa Hång cho bang héi "..szTongName)
-	Msg2Player("B×nh chän "..nQuantity.." ®iÓm Hoa Hång cho bang héi "..szTongName)
+	Talk(1,"","You have voted"..nQuantity.." ®iÓm Hoa Hång cho bang héi "..szTongName)
+	Msg2Player("Vote"..nQuantity.." ®iÓm Hoa Hång cho bang héi "..szTongName)
 end
 
 function show_list()
@@ -240,7 +240,7 @@ function bhta4_confirm_exchange_rose(nCount)
 		return
 	end
 	if DelItem(2, 0, 1162, nQuantity * 5) == 1 and DelItem(2, 1, 30230, nQuantity * 2) == 1 then
-		gf_AddItemEx2({2, 0, 1164, nQuantity}, "Hoa Hång phÊn", BHTA4_LOG_TITLE, "®æi hoa hång")
+		gf_AddItemEx2({2, 0, 1164, nQuantity}, "Hoa Hång phÊn", BHTA4_LOG_TITLE, "exchange roses")
 	end
 end
 

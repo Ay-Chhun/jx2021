@@ -23,13 +23,13 @@ function OnDeath(nNpcIdx)
 	if nPlayerCamp == GONG_ID then
 		SetMissionV(MV_FLAG_OWN_COUNT,nFlagCount+1);
 		nFlagCount = GetMissionV(MV_FLAG_OWN_COUNT);
-		GCZ_Msg2Camp("Phe ta ®· chiÕm lÜnh "..tReviviFlagPos[nFlagIdx][3]..", chó ý phßng ®Þch nh©n ph¶n kÝch! HiÖn t¹i tiÕn ®é c«ng thµnh phe ta lµ "..nFlagCount.."Thµnh",nPlayerCamp);
-		GCZ_Msg2Camp("Phe ®Þch ®· chiÕm lÜnh "..tReviviFlagPos[nFlagIdx][3]..", nÕu kh«ng lËp tøc hµnh ®éng tæn thÊt sÏ ngµy mét lín. HiÖn t¹i tiÕn ®é c«ng thµnh phe ®Þch lµ "..nFlagCount.."Thµnh",nEnemyCamp)
+		GCZ_Msg2Camp("Our faction has occupied"..tReviviFlagPos[nFlagIdx][3]..", chó ý phßng ®Þch nh©n ph¶n kÝch! HiÖn t¹i tiÕn ®é c«ng thµnh phe ta lµ "..nFlagCount.."Thµnh",nPlayerCamp);
+		GCZ_Msg2Camp("The enemy faction has occupied"..tReviviFlagPos[nFlagIdx][3]..", nÕu kh«ng lËp tøc hµnh ®éng tæn thÊt sÏ ngµy mét lín. HiÖn t¹i tiÕn ®é c«ng thµnh phe ®Þch lµ "..nFlagCount.."Thµnh",nEnemyCamp)
 	else
 		SetMissionV(MV_FLAG_OWN_COUNT,nFlagCount-1);
 		nFlagCount = GetMissionV(MV_FLAG_OWN_COUNT);
-		GCZ_Msg2Camp("Phe ta ®· chiÕm lÜnh "..tReviviFlagPos[nFlagIdx][3]..", chó ý phßng ®Þch nh©n ph¶n kÝch! HiÖn t¹i tiÕn ®é c«ng thµnh phe ®Þch lµ "..nFlagCount.."Thµnh",nPlayerCamp);
-		GCZ_Msg2Camp("Phe ®Þch ®· chiÕm lÜnh "..tReviviFlagPos[nFlagIdx][3]..", nÕu kh«ng lËp tøc hµnh ®éng tæn thÊt sÏ ngµy mét lín. HiÖn t¹i tiÕn ®é c«ng thµnh phe ta lµ "..nFlagCount.."Thµnh",nEnemyCamp)
+		GCZ_Msg2Camp("Our faction has occupied"..tReviviFlagPos[nFlagIdx][3]..", chó ý phßng ®Þch nh©n ph¶n kÝch! HiÖn t¹i tiÕn ®é c«ng thµnh phe ®Þch lµ "..nFlagCount.."Thµnh",nPlayerCamp);
+		GCZ_Msg2Camp("The enemy faction has occupied"..tReviviFlagPos[nFlagIdx][3]..", nÕu kh«ng lËp tøc hµnh ®éng tæn thÊt sÏ ngµy mét lín. HiÖn t¹i tiÕn ®é c«ng thµnh phe ta lµ "..nFlagCount.."Thµnh",nEnemyCamp)
 	end;
 	local nMusicState = GCZ_SetMusicState();
 	GCZ_PlayBackGroundMusic(nMusicState);

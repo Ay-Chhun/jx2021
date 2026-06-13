@@ -15,8 +15,8 @@ function npc_talk_exchg_meat()
 --		return
 --	end
 	local tSay = {
-		"§­îc/_confirm_exchg",
-		"Hñy bá/nothing",
+		"Confirm/_confirm_exchg",
+		"Cancel/nothing",
 	}
 	Say("Cã thÓ sö dông 1 thÞt lîn, 1 thÞt bß, 1 thÞt hun khãi ®æi 3 thÞt dª, muèn ®æi kh«ng?", getn(tSay), tSay);
 end
@@ -37,7 +37,7 @@ function _confirm_exchg_num(nNum)
 	end
 	for i= 2, getn(T_EXCHG_ITEM) do
 		if DelItem(T_EXCHG_ITEM[i][1], T_EXCHG_ITEM[i][2], T_EXCHG_ITEM[i][3], nNum) ~= 1 then
-			Talk(1, "", format("Kh«ng ®ñ %s",T_EXCHG_ITEM[i][4]));
+			Talk(1, "", format("Not enough %s",T_EXCHG_ITEM[i][4]));
 			return 0;
 		end
 	end

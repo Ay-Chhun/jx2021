@@ -33,7 +33,7 @@ function main()
 	if nDate >= SALEOFF_START_DATE and nDate <= SALEOFF_END_DATE then
 		local tbSay = {}
 		for i=1, getn(tbThuCuoi) do
-			tinsert(tbSay, "Mua "..tbThuCuoi[i][1].." gi¸ rÎ (999 vµng)/#MuaThuCuoi("..i..")")
+			tinsert(tbSay, "Mua "..tbThuCuoi[i][1].." cheap price (999 gold)/#MuaThuCuoi("..i..")")
 		end
 		tinsert(tbSay,"Ta chØ ghÐ xem/gf_Nothing")
 		Say("Ta cã vµi con kú tr©n dÞ thó, ng­¬i cã muèn mua lµm thó c­ìi kh«ng?", getn(tbSay), tbSay)

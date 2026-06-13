@@ -19,9 +19,9 @@ function MS_StartMission()
 	local nPos1 = BWT_SetRandomPos(nPIdx1,nil);
 	BWT_SetRandomPos(nPIdx2, nPos1);
 	BWT_ChangeMSState(MS_STATE_STARTED);
-	Talk2SomeOne(nPIdx1,1,"","Tû vâ chÝnh thøc b¾t ®Çu!");
-	Talk2SomeOne(nPIdx2,1,"","Tû vâ chÝnh thøc b¾t ®Çu!");
-	Msg2MSAll(MISSION_ID,"Tû vâ chÝnh thøc b¾t ®Çu!");
+	Talk2SomeOne(nPIdx1,1,"","The official duel has begun!");
+	Talk2SomeOne(nPIdx2,1,"","The official duel has begun!");
+	Msg2MSAll(MISSION_ID,"The official duel has begun!");
 end;
 --Mission½áÊø
 function MS_EndMission()
@@ -45,7 +45,7 @@ function MS_LeaveMission()
 		local nOppIdx = BWT_GetOpponentIndex();
 		local szOppName = BWT_GetName(nOppIdx);
 		BWT_ChangeMSState(MS_STATE_ENDING);
-		Msg2MSAll(MISSION_ID,szName.." rêi khái trËn ®Êu,"..szOppName.." chiÕn th¾ng ë trËn so tµi nµy");
+		Msg2MSAll(MISSION_ID,szName.." left the battle,"..szOppName.." chiÕn th¾ng ë trËn so tµi nµy");
 		BWT_ReportResult(nOppIdx,PlayerIndex);
 	end;
 	PlayerIndex = nOldIdx;
@@ -103,10 +103,10 @@ function MS_ProcessCheckEquipmentTimer()
 		BWT_SetPlayerFightState(1,nPIdx1);
 		BWT_SetPlayerFightState(2,nPIdx2);
 --		Msg2MSAll(MISSION_ID,"×°±¸¼ì²éÊ±¼ä½áÊø£¬½ÓÏÂÀ´ÊÇ×¼±¸Ê±¼ä¡£");
-		Talk2SomeOne(nPIdx1,1,"","L­u ph¸i ®èi thñ lµ <color=yellow>"..BWT_GetPlayerRouteName(nPIdx2).."<color>. TiÕp theo lµ thêi gian chuÈn bÞ.");
-		Talk2SomeOne(nPIdx2,1,"","L­u ph¸i ®èi thñ lµ <color=yellow>"..BWT_GetPlayerRouteName(nPIdx1).."<color>. TiÕp theo lµ thêi gian chuÈn bÞ.");
-		Msg2SomeOne(nPIdx1,"L­u ph¸i ®èi thñ lµ :"..BWT_GetPlayerRouteName(nPIdx2)..". TiÕp theo lµ thêi gian chuÈn bÞ.");
-		Msg2SomeOne(nPIdx2,"L­u ph¸i ®èi thñ lµ :"..BWT_GetPlayerRouteName(nPIdx1)..". TiÕp theo lµ thêi gian chuÈn bÞ.");
+		Talk2SomeOne(nPIdx1,1,"","L­u ph¸i ®èi thñ lµ <color=yellow>"..BWT_GetPlayerRouteName(nPIdx2).."<color>. Next is the preparation time.");
+		Talk2SomeOne(nPIdx2,1,"","L­u ph¸i ®èi thñ lµ <color=yellow>"..BWT_GetPlayerRouteName(nPIdx1).."<color>. Next is the preparation time.");
+		Msg2SomeOne(nPIdx1,"L­u ph¸i ®èi thñ lµ :"..BWT_GetPlayerRouteName(nPIdx2)..". Next is the preparation time.");
+		Msg2SomeOne(nPIdx2,"L­u ph¸i ®èi thñ lµ :"..BWT_GetPlayerRouteName(nPIdx1)..". Next is the preparation time.");
 		--SetTask(1429, 1);--¸Ä±ä³É²»¿ÉÒÔÇÐ»»ÎåÐÐÅÌµÄ×´Ì¬
 		BWT_ChangeMSState(MS_STATE_READY);
 	else
@@ -172,7 +172,7 @@ end;
 --µÇÂ½´¥·¢Æ÷º¯Êý
 function OnLogin()
 	MS_RestorePlayerState(0);
-	WriteLog("["..LOG_HEAD.."]: Ng­êi ch¬i "..GetName().." Rêi Mission kh«ng b×nh th­êng, ®ang trong qu¸ tr×nh xö lý ®¨ng nhËp.");
+	WriteLog("["..LOG_HEAD.."]: Player"..GetName().." Rêi Mission kh«ng b×nh th­êng, ®ang trong qu¸ tr×nh xö lý ®¨ng nhËp.");
 end;
 --=====================================================================================
 --´´½¨Ò»¸öMSUID£¨µ±Ç°MissionÎ¨Ò»±êÊ¶£©
@@ -185,7 +185,7 @@ function MS_SetPlayerState(nCamp)
 	local nCityID = GetMissionV(MV_CITY_ID);
 	local nDirection = GetMissionV(MV_FIELD_DIRECTION);
 	local nFieldNum = GetMissionV(MV_FIELD_NUM);
-	local tbDirection = {"H­íng ®«ng","H­íng nam","H­íng T©y","H­íng B¾c"};
+	local tbDirection = {"East direction","South direction","West direction","North direction"};
 	local nMapID = gf_GetCurMapID();
 	local szTips = "";
 	BWT_WeeklyClear();

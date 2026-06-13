@@ -29,7 +29,7 @@ function DenBuThang4()
 			{50, 'trieulongphi037374', 'TrungSieuCuiChuoi'},
 			{62, 'coolnt0317', 'oLangTuMienTay'},
 			{16, 'hoangkim721', 'jZoThanhLongNhi'},
-			{32, 'slowlove0407', 's2TÝmB»ngL¨ng'},
+			{32, 'slowlove0407', 's2TimBangLang'},
 			{24, 'hoithegiantienlagi12', 'ChienthanNo1'},
 			{10, 'volam2192620', 'oMightyMouse'},
 			{17, 'danhvahuy95', 'RuuQuenSau'},
@@ -59,14 +59,14 @@ function DenBuThang4()
 			{43, 'vietnamno1', 'IzoBeDep'},
 			{16, 'vl2thanhtv01', 'xxAljsa'},
 			{16, 'vanminh8318', 'jzoshina'},
-			{16, 'hòangkiml?nh721', 'jzoThanhLong Nhi'},
+			{16, 'hoangkimlnh721', 'jzoThanhLong Nhi'},
 			{16, 'volam2126707', 'izPechandai1m20'},
 			{16, 'denis7', 'oVuaBoCap'},
 			{50, 'thientv108406', 'AzPhatxjtzAz'},
 			{16, 'hoangkimlenh', 'YogoWolves'},
 			{16, 'letuyetnhi10', 'mrsonglong'},
-			{28, 'phanthanhhuong22485', 'PhanThanhH­¬ng'},
-			{28, 'koluadoiphunu', 'BïiThÞThanhNhµn'},
+			{28, 'phanthanhhuong22485', 'PhanThanhHuong'},
+			{28, 'koluadoiphunu', 'BuiThiThanhNhan'},
 			{28, 'drhoangky', 'hoangky'},
 			{14, 'volam2361483', 'xXxBachYenxXx'},
 			{50, 'anhtunhtq1', 'iLacThan'},
@@ -75,7 +75,7 @@ function DenBuThang4()
 			{50, 'nltl004830', 'onggiahamzui'},
 			{43, 'ngocnhu', 'zIzEiveMsTrang'},
 			{22, 'nambep85', 'z7zHungThanz7z'},
-			{43, 'haclonghoangkim', '§øcKhènN¹n'},
+			{43, 'haclonghoangkim', 'DucKhonNan'},
 			{26, 'subakhatmau1405', 'iiPessSj'},
 			{12, 'thienbao2192', 'oS2oPeMioX3oo'},
 			{32, 'colam2061632206', 'oooNgheTiengGio'},
@@ -85,10 +85,10 @@ function DenBuThang4()
 			{6, 'congtan', '011087'},
 			{6, 'tieuthienlum', '080HyoYeon'},
 			{6, 'longuy191179', 'longuy'},
-			{6, 'dulichle', 'thiêndi'},
+			{6, 'dulichle', 'thiendi'},
 			{22, 'tieumai768 ', 'x0xMrHAOCUTEx0x'},
 			{22, 'canhcut88', 'canhcut88'},
-			{22, 'nhutnam4', 'TiªuCh¸nhNam'},
+			{22, 'nhutnam4', 'TieuChanhNam'},
 			{13, 'elnino779', 'mrskasekell'},
 			{13, 'xyzphongthancueczyx', 'joophoykk'},
 			{13, 'handoivodolithu91', 'oLongHoTanSat'},
@@ -121,11 +121,11 @@ function DenBuThang4()
 
 	-- Danh sach nhan den bu trang bi Viem De
 	local tbNhanViemDe = {
-				{serverid = 32, account = 'anchau9454', role = 'zKiÕpCÇmCaz', item = {{0, 100, 8057}, {0 ,101, 8057}, {0, 103, 8057}}, nLevel = 10, nDinhhon = 0},
+				{serverid = 32, account = 'anchau9454', role = 'zKiepCamCaz', item = {{0, 100, 8057}, {0 ,101, 8057}, {0, 103, 8057}}, nLevel = 10, nDinhhon = 0},
 				{serverid = 70, account = 'motcuocdoituoidep', role = 'VangBãngMétThêi', item = {{0, 100, 8055}, {0, 101, 8055}, {0, 103, 8055}}, nLevel =12, nDinhhon = 1},
 				{serverid = 70, account = 'soemden007', role = 'xIPhuDuIx',  item = {{0, 100, 8055}, {0, 101, 8055}, {0, 103, 8055}}, nLevel =7, nDinhhon = 1},
 				{serverid = 70, account = 'legiahienyeudau', role = '1stOneOne', item = {{0, 100, 8001}, {0, 101, 8001}, {0, 103, 8001}}, nLevel = 14, nDinhhon = 1},
-				{serverid = 70, account = 'hisumit', role = 'zGiangHåBÊtB¹iz', item = {{0, 100, 8001}, {0, 101, 8001}, {0, 103, 8001}}, nLevel = 12, nDinhhon = 1},
+				{serverid = 70, account = 'hisumit', role = 'zGiangHoBatBaiz', item = {{0, 100, 8001}, {0, 101, 8001}, {0, 103, 8001}}, nLevel = 12, nDinhhon = 1},
 				{serverid = 70, account = 'duytan93cz', role = 'ThiÕuTiÒn', item = {{0, 100, 8055}, {0, 101, 8055}, {0, 103, 8055}}, nLevel = 7, nDinhhon = 1},
 				{serverid = 70, account = 'tuoitrecuoi3008', role = 'KetGiao', item = {{0, 100, 8001}, {0, 101, 8001}, {0, 103, 8001}}, nLevel = 0, nDinhhon = 0}
 		}
@@ -133,11 +133,11 @@ function DenBuThang4()
 	-- Danh sach nhan den bu trang suc mon phai
 	local tbNhanTrangSuc = {
 			{serverid = 55, account = '123chivianhyeuem', role = 'ooS2oDionysus'},
-			{serverid = 29, account = 'htvqa1718', role = 'OoQuúnhAnhoO'},
+			{serverid = 29, account = 'htvqa1718', role = 'OoQuynhAnhoO'},
 			{serverid = 38, account = 'vanthichnmdnhe', role = 'iIIMusicStyle'},
-			{serverid = 14, account = 'procailaytgvt', role = 'iiiR­îuQuªnSÇu'},
-			{serverid = 63, account = 'lekhaihung2012', role = 'o§iªuThuyÒno'},
-			{serverid = 7, account = 'dinhthiluyen102', role = '§ÑpTõngDecimet'},
+			{serverid = 14, account = 'procailaytgvt', role = 'iiiRuouQuenSau'},
+			{serverid = 63, account = 'lekhaihung2012', role = 'oDieuThuyeno'},
+			{serverid = 7, account = 'dinhthiluyen102', role = 'DepTungDecimet'},
 			{serverid = 5, account = 'mrnguyenkgvn', role = 'oLanAnh'},
 			{serverid = 3, account = 'aslong113vn', role = 'TonyTran'}
 		}
@@ -219,14 +219,14 @@ function DenBuThang4()
 	end
 	
 	-- Truong hop rieng
-	if nServerID==14 and szAccount=="procailaytgvt" and szRole=="iiiR­îuQuªnSÇu" then
+	if nServerID==14 and szAccount=="procailaytgvt" and szRole=="iiiRuouQuenSau" then
 		local tbTangKiemKyThach = {[1] = 30002, [2] = 30005, [3] = 30008, [4] = 30011}
 		AddItem(0, 102, tbTangKiemKyThach[GetBody()], 1,1,-1,-1,-1,-1,-1,-1,-1,0);
-		gf_WriteLogEx("DENBUTHANG4", "nhËn thµnh c«ng", 1, "Tµng kiÕm kú th¹ch")
+		gf_WriteLogEx("DENBUTHANG4", "nhËn thµnh c«ng", 1, "Tang Sword Crystal Stone")
 		nDenbu = 1
 	end
 	
-	if nServerID==29 and szAccount=="htvqa1718" and szRole=="OoQuúnhAnhoO" then
+	if nServerID==29 and szAccount=="htvqa1718" and szRole=="OoQuynhAnhoO" then
 		nDenbu = DenBu_TrangSuc()
 	end
 	
@@ -239,17 +239,17 @@ end
 function DenBu_NhanMatTich()
 	local nFaction = GetPlayerRoute()
 	local tblMatTichCaoCap = {
-			[2] = {item = {0, 107, 204, 1}, name ="Kim Cang B¸t Nh· Ch©n QuyÓn"},
-			[3] = {item = {0, 107, 206, 1}, name ="V« TrÇn Bå §Ò Ch©n QuyÓn"},
-			[4] = {item = {0, 107, 205, 1}, name ="TiÒm Long Tóc DiÖt Ch©n QuyÓn"},
+			[2] = {item = {0, 107, 204, 1}, name ="Vajra Prajna True Scroll"},
+			[3] = {item = {0, 107, 206, 1}, name ="Dustless Bodhi True Manual"},
+			[4] = {item = {0, 107, 205, 1}, name ="Hidden Dragon Annihilation True Manual"},
 			[6] = {item = {0, 107, 207, 1}, name ="Thiªn La Liªn Ch©u Ch©n QuyÓn"},
-			[8] = {item = {0, 107, 208, 1}, name ="Nh­ ý Kim §Ønh Ch©n QuyÓn"},
-			[9] = {item = {0, 107, 209, 1}, name ="BÝch H¶i TuyÖt ¢m Ch©n QuyÓn"},
-			[11] = {item = {0, 107, 210, 1}, name ="Hçn §én TrÊn Nh¹c Ch©n QuyÓn"},
+			[8] = {item = {0, 107, 208, 1}, name ="Wishful Golden Top True Manual"},
+			[9] = {item = {0, 107, 209, 1}, name ="Azure Sea Silent Sound True Manual"},
+			[11] = {item = {0, 107, 210, 1}, name ="Chaos Town Mountain True Manual"},
 			[12] = {item = {0, 107, 211, 1}, name ="Quú Thiªn Du Long Ch©n QuyÓn"},
 			[14] = {item = {0, 107, 212, 1}, name ="HuyÒn ¶nh Mª T«ng Ch©n QuyÓn"},
-			[15] = {item = {0, 107, 213, 1}, name ="Qu©n Tö §íi Phong Ch©n QuyÓn"},
-			[17] = {item = {0, 107, 214, 1}, name ="TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn"},
+			[15] = {item = {0, 107, 213, 1}, name ="Gentleman Welcomes the Wind True Manual"},
+			[17] = {item = {0, 107, 214, 1}, name ="Town Army Flying Dragon Spear True Manual"},
 			[18] = {item = {0, 107, 215, 1}, name ="Xuyªn V©n L¹c Hång Ch©n QuyÓn"},
 			[20] = {item = {0, 107, 216, 1}, name ="HuyÒn Minh Phong Ma Ch©n QuyÓn"},
 			[21] = {item = {0, 107, 217, 1}, name ="Linh Cæ HuyÒn Tµ Ch©n QuyÓn"},
@@ -300,7 +300,7 @@ function DenBu_ViemDe(tbdenbu)
 			SetItemSpecialAttr(nItemIdx, "DING7", 1)
 		end
 	end
-	gf_WriteLogEx("DENBUTHANG4", "nhËn thµnh c«ng", 1, "bé Viªm §Õ")
+	gf_WriteLogEx("DENBUTHANG4", "nhËn thµnh c«ng", 1, "Yan Di set")
 	return 1
 end
 

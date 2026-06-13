@@ -7,8 +7,8 @@ Include("\\script\\online\\3festival\\3festival_head.lua")
 function OnUse()
 	Say("Më Hép Ng©n Bµi Vinh Dù ph¶i cã Ch×a Khãa B¹c Vinh Dù, b¹n muèn më chø?",
 		2,
-		"§ång ý/confirm_open",
-		"Kh«ng cã g×/nothing")
+		"Agree/confirm_open",
+		"Nothing/nothing")
 end
 
 function confirm_open()
@@ -21,7 +21,7 @@ function confirm_open()
 		end	
 		if DelItem(2,0,1078,1) == 1 and DelItem(2,0,1074,1) == 1 then
 			AddItem(tItemInfo[19][2],tItemInfo[19][3],tItemInfo[19][4],50);
-			Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tItemInfo[19][1].."50 tÊm!");
+			Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tItemInfo[19][1].."50 plaques!");
 			
 			local nRandOne = random(1,1000000);
 			local nTimes = GetTask(TASK_USE_YIN_BOX);
@@ -38,10 +38,10 @@ function confirm_open()
 					if nRetCode == 1 then
 						SetTask(TASK_USE_YIN_BOX,0);
 						Msg2Player("Chóc mõng b¹n nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing1[nRoute][nRandRing][1]);
-						Msg2Global("Ng­êi ch¬i"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc trang bÞ Hoµng §Õ"..tbHuangDiRing1[nRoute][nRandRing][1].."!");
+						Msg2Global("Player"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc trang bÞ Hoµng §Õ"..tbHuangDiRing1[nRoute][nRandRing][1].."!");
 						WriteLog("[08 Tam tiÕt liªn th«ng]:"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc trang bÞ Hoµng §Õ"..tbHuangDiRing1[nRoute][nRandRing][1]);
 					else
-						WriteLog("[Lçi 08 Tam tiÕt liªn th«ng]:"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc trang bÞ Hoµng §Õ"..tbHuangDiRing1[nRoute][nRandRing][1].."B¸o lçi khi AddItem, nRetCode:"..nRetCode);
+						WriteLog("[Lçi 08 Tam tiÕt liªn th«ng]:"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc trang bÞ Hoµng §Õ"..tbHuangDiRing1[nRoute][nRandRing][1].."Error on AddItem, nRetCode:"..nRetCode);
 					end				
 				elseif nRandTT <= 60 then
 					local nRoute = GetPlayerRoute();
@@ -50,17 +50,17 @@ function confirm_open()
 					if nRetCode == 1 then
 						SetTask(TASK_USE_YIN_BOX,0);
 						Msg2Player("Chóc mõng b¹n nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing2[nRoute][nRandRing][1]);
-						Msg2Global("Ng­êi ch¬i"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc trang bÞ Hoµng §Õ"..tbHuangDiRing2[nRoute][nRandRing][1].."!");
+						Msg2Global("Player"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc trang bÞ Hoµng §Õ"..tbHuangDiRing2[nRoute][nRandRing][1].."!");
 						WriteLog("[08 Tam tiÕt liªn th«ng]:"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc trang bÞ Hoµng §Õ"..tbHuangDiRing2[nRoute][nRandRing][1]);
 					else
-						WriteLog("[Lçi 08 Tam tiÕt liªn th«ng]:"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc trang bÞ Hoµng §Õ"..tbHuangDiRing2[nRoute][nRandRing][1].."B¸o lçi khi AddItem, nRetCode:"..nRetCode);
+						WriteLog("[Lçi 08 Tam tiÕt liªn th«ng]:"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc trang bÞ Hoµng §Õ"..tbHuangDiRing2[nRoute][nRandRing][1].."Error on AddItem, nRetCode:"..nRetCode);
 					end									
 				else
 					nRetCode = AddItem(tItemInfo[25][2],tItemInfo[25][3],tItemInfo[25][4],1);
 					if nRetCode == 1 then
 						SetTask(TASK_USE_YIN_BOX,0);
 						Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 "..tItemInfo[25][1]);
-						Msg2Global("Ng­êi ch¬i"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc 1 "..tItemInfo[25][1]);
+						Msg2Global("Player"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc 1 "..tItemInfo[25][1]);
 						WriteLog("[08 Tam tiÕt liªn th«ng]:"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc 1 "..tItemInfo[25][1]);
 					else
 						WriteLog("[Lçi 08 Tam tiÕt liªn th«ng]:"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc 1 "..tItemInfo[25][1].." thÊt b¹i, ký hiÖu:"..nRetCode);
@@ -84,7 +84,7 @@ function confirm_open()
 					nRetCode = AddItem(tItemInfo[30][2],tItemInfo[30][3],tItemInfo[30][4],1);
 					if nRetCode == 1 then
 						Msg2Player("B¹n nhËn ®­îc 1 quyÓn "..tItemInfo[30][1]);
-						Msg2Global("Ng­êi ch¬i"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc 1 quyÓn "..tItemInfo[30][1]);
+						Msg2Global("Player"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc 1 quyÓn "..tItemInfo[30][1]);
 						SetTask(TASK_USE_YIN_BOX,GetTask(TASK_USE_YIN_BOX)+1);
 						local nProbShow = format("%.4f",(20000/10000)*GetTask(TASK_USE_YIN_BOX)*BOX_PROB_INCREASE);
 						Talk(1,"","§©y lµ lÇn thø "..GetTask(TASK_USE_YIN_BOX).." lÇn më Hép Ng©n Bµi Vinh Dù, tû lÖ nhËn ®­îc cùc phÈm (Hiªn Viªn chiÕn, Hiªn Viªn ®Êu, Viªm Hoµng ThiÕt Hån) t¨ng lªn <color=yellow>"..nProbShow.." %<color>. Khi nhËn ®­îc cùc phÈm, sè lÇn tÝnh x¸c suÊt sÏ ®­îc tÝnh l¹i tõ ®Çu.");											
@@ -96,13 +96,13 @@ function confirm_open()
 						nRetCode = AddItem(tItemInfo[38][2],tItemInfo[38][3],tItemInfo[38][4],1);
 						if nRetCode == 1 then
 							Msg2Player("B¹n nhËn ®­îc 1 "..tItemInfo[38][1]);
-							Msg2Global("Ng­êi ch¬i"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc 1 "..tItemInfo[38][1]);
+							Msg2Global("Player"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc 1 "..tItemInfo[38][1]);
 						end
 					else
 						nRetCode = AddItem(tItemInfo[39][2],tItemInfo[39][3],tItemInfo[39][4],1);
 						if nRetCode == 1 then
 							Msg2Player("B¹n nhËn ®­îc 1 "..tItemInfo[39][1]);
-							Msg2Global("Ng­êi ch¬i"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc 1 "..tItemInfo[39][1]);
+							Msg2Global("Player"..GetName().."Më Hép Ng©n Bµi Vinh Dù nhËn ®­îc 1 "..tItemInfo[39][1]);
 						end
 					end
 					if nRetCode == 1 then

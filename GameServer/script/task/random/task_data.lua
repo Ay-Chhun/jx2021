@@ -46,13 +46,13 @@ FactionBossName = {
 FactionBossTitle = {
 
 	-- ÉÙÁÖ
-	[1]="Ph­¬ng Tr­îng",
+	[1]="Abbot",
 	
 	-- Îäµ±
-	[2]="Ch­ëng m«n",
+	[2]="Sect Leader",
 
 	-- ¶ëÃ¼
-	[3]="Ch­ëng m«n",
+	[3]="Sect Leader",
 
 	-- Ø¤°ï
 	[4]="Bang chñ",
@@ -61,7 +61,7 @@ FactionBossTitle = {
 	[5]="L·o l·o",
 	
 	-- ÑîÃÅ
-	[6]="Ch­ëng m«n",
+	[6]="Sect Leader",
 	
 	-- Îå¶¾
 	[7]="Gi¸o chñ",

@@ -4,17 +4,17 @@
 Include("\\script\\newbattles\\mainbattle\\mainbattle_head.lua");
 
 sSongGeneral = "D≠¨ng Nghi÷p";
-sLiaoGeneral = "Gia LuÀt H≠u C∏ch";
+sLiaoGeneral = "Yelu Xiuge";
 
 function main()
 	if random(1,100) == 1 then
 		NpcChat(GetTargetNpc(),"Chπy th´i! Lˆa k–o Æ’n n¨i rÂi!");
 	end;
 	local selTab = {
-			"BËi c∂nh/knowbackground",
+			"Background/knowbackground",
 			"Quy tæc chi’n tr≠Íng/knowbattlerule",
 			"BÊn So∏i muËn tri÷u tÀp chi’n th«n ph∏ vﬂng v©y qu©n Æﬁch/summon_god_of_war",
-			"K’t thÛc ÆËi thoπi/nothing",
+			"End dialogue/nothing",
 			}
 	local sNpcName = "";
 	if BT_GetCamp() == SONG_ID then
@@ -45,5 +45,5 @@ function knowbattlerule()
 	else
 		sNpcName = sLiaoGeneral;
 	end;
-	Talk(1,"main","<color=green>"..sNpcName.."<color>: <enter>1: Trong thÍi gian chi’n Æ u gi’t Æ≠Óc chÒ so∏i xem nh≠ chi’n thæng; <enter>2: H’t thÍi gian, ch≠a gi’t Æ≠Óc sœ d˘a vµo Æi”m t›ch lÚy c´ng cÈng quy’t Æﬁnh, sË Æi”m bªng nhau xem nh≠ hﬂa.<enter>3: T›ch lÚy tËi Æa <color=yellow>"..POINT_LIMITED.."<color><enter>4: NhÀn Æ≠Óc <color=yellow>"..EMPEROR_AWARD_POINT.."<color> Æi”m  Æi”m t›ch lÚy, kinh nghi÷m <color=yellow>"..floor(EMPEROR_AWARD_EXP/10000).."<color>vπn<enter>5: ß≠Óc b«u lµm Ng´i sao chi’n tr≠Íng+Æi”m t›ch lÚy <color=yellow>"..BATTLE_STAR_AWARD_POINT.."<color> Æi”m  Æi”m t›ch lÚy, kinh nghi÷m <color=yellow>"..floor(BATTLE_STAR_AWARD_EXP/10000).."<color> vπn");
+	Talk(1,"main","<color=green>"..sNpcName.."<color>: <enter>1: Trong thÍi gian chi’n Æ u gi’t Æ≠Óc chÒ so∏i xem nh≠ chi’n thæng; <enter>2: H’t thÍi gian, ch≠a gi’t Æ≠Óc sœ d˘a vµo Æi”m t›ch lÚy c´ng cÈng quy’t Æﬁnh, sË Æi”m bªng nhau xem nh≠ hﬂa.<enter>3: T›ch lÚy tËi Æa <color=yellow>"..POINT_LIMITED.."<color><enter>4: You receive <color=yellow>"..EMPEROR_AWARD_POINT.."<color> Æi”m  Æi”m t›ch lÚy, kinh nghi÷m <color=yellow>"..floor(EMPEROR_AWARD_EXP/10000).."<color>vπn<enter>5: ß≠Óc b«u lµm Ng´i sao chi’n tr≠Íng+Æi”m t›ch lÚy <color=yellow>"..BATTLE_STAR_AWARD_POINT.."<color> Æi”m  Æi”m t›ch lÚy, kinh nghi÷m <color=yellow>"..floor(BATTLE_STAR_AWARD_EXP/10000).."<color> thousand");
 end;

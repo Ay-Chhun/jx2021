@@ -26,7 +26,7 @@ local strTalk = {
 	"Ng­¬i lµ ai? T×m ta cã viÖc g×?",
 	"Cao Quèc C«ng ph¸i thuéc h¹ ®Õn hái th¨m vÒ t×nh h×nh cña {Xi Háa gi¸o}.",
 	"Ta biÕt rÊt râ vÒ gi¸o ph¸i nµy! Nh­ng xem ng­¬i cã b¶n lÜnh g× ®·! NÕu th¾ng ®­îc Miªu LÜnh ®Ö nhÊt dòng sÜ ë ®©y ta sÏ nãi cho ng­¬i nghe!",
-	"T¹i h¹ ®i ngay!",
+	"This humble one goes now!",
 	}
 
 	TalkEx("",strTalk);
@@ -41,7 +41,7 @@ end
 function task_001_00()
 
 local strTalk = {
-	"Miªu LÜnh Dòng SÜ ë gÇn Miªu LÜnh tr¹i.",
+	"The Miao Ling Warrior is near Miao Ling camp.",
 	}
 	TalkEx("",strTalk);
 	return
@@ -60,8 +60,8 @@ local strTalk = {
 	}
 	TalkEx("",strTalk);
 	CreateTrigger(4,200,TALK_DL_ZHAOYANNIAN);--ÕÔÑÓÄêÎ÷ÄÏÇøÈÎÎñ¶Ô»°´¥·¢Æ÷
-	Msg2Player("Quay vÒ BiÖn Kinh gÆp TriÖu Diªn Niªn");
-	TaskTip("Quay vÒ BiÖn Kinh gÆp TriÖu Diªn Niªn");
+	Msg2Player("Return to Bianjing to meet Zhao Yan Nian.");
+	TaskTip("Return to Bianjing to meet Zhao Yan Nian.");
 	SetTask(TASK_DL_LV40_ID,5);
 	GivePlayerAward("Level_40","xn_step_3");
 	GivePlayerExp(SkeyDali,"miaolingyongshi")
@@ -78,8 +78,8 @@ local strTalk = {
 	TalkEx("",strTalk);
 	if GetTrigger(Talk_DL_ZHAOYANNIAN) == 0 then
 		CreateTrigger(4,200,TALK_DL_ZHAOYANNIAN);--ÕÔÑÓÄêÎ÷ÄÏÇøÈÎÎñ¶Ô»°´¥·¢Æ÷
-		Msg2Player("Quay vÒ BiÖn Kinh gÆp TriÖu Diªn Niªn");
-		TaskTip("Quay vÒ BiÖn Kinh gÆp TriÖu Diªn Niªn");
+		Msg2Player("Return to Bianjing to meet Zhao Yan Nian.");
+		TaskTip("Return to Bianjing to meet Zhao Yan Nian.");
 	end;
 	return
 end
@@ -92,9 +92,9 @@ local strTalk = {
 	"Ch¼ng ph¶i lÇn tr­íc ng­¬i ®· ®¸nh b¹i Miªu LÜnh Dòng SÜ råi ®ã sao, sao cßn quay l¹i?",
 	"LÇn tr­íc do véi qu¸ nªn cã nhiÒu viÖc ch­a kŞp hái téc tr­ëng, lÇn nµy quay l¹i muèn nghe téc tr­ëng nãi râ h¬n vÒ t×nh h×nh cña {Xi Háa gi¸o}.",
 	"L¹i hái vÒ Xi Háa gi¸o? §­îc th«i, nh­ng tr­íc tiªn ng­¬i ph¶i gióp ta vµi viÖc ®·.",
-	"Thuéc h¹ s½n sµng!",
+	"This subordinate is ready!",
 	"Tr­íc ®©y mÊy ngµy bän Thæ Ty ®Õn ®©y lµm lo¹n, chóng ®· c­íp mÊt Miªu LÜnh lÖnh bµi cña ta. Ng­¬i mau ®Õn YÕn Tö ®éng tÇng 2 ®¸nh b¹i tªn ®Çu lÜnh ®em lÖnh bµi vÒ ®©y.",
-	"Thuéc h¹ ®i ngay!",
+	"This subordinate goes at once!",
 	}
 	TalkEx("",strTalk);
 	SetTask(TASK_DL_LV50_ID,4);
@@ -137,14 +137,14 @@ local strTalk = {
 	"Kh«ng ph¶i lµ lËt ®æ mµ ng­îc l¹i cßn ñng hé.",
 	"ChuyÖn nµy lµ sao?",
 	"Ng­¬i ®Õn §¹i Lı t×m Cao qu¶n hái th× kh¾c biÕt.",
-	"§a t¹ téc tr­ëng.",
+	"Many thanks, clan chief.",
 	"(NghÜ thÇm) (Xem ra l·o còng ch¼ng biÕt thªm g× n÷a råi, ph¶i vÒ hái {TrŞnh c« n­¬ng th«i}).",
 	}
 	TalkEx("",strTalk);
 	DelItem(2,0,370,1);
 	SetTask(TASK_DL_LV50_ID,6);
-	Msg2Player("Quay vÒ §¹i Lı t×m TrŞnh Qu¸n Chi.");
-	TaskTip("Quay vÒ §¹i Lı t×m TrŞnh Qu¸n Chi.");
+	Msg2Player("Return to Dali and find Zheng Guan Zhi.");
+	TaskTip("Return to Dali and find Zheng Guan Zhi.");
 	GivePlayerAward("Level_50","xn_step_3");
 	GivePlayerExp(SkeyDali,"miaolinglingpai")
 	return
@@ -191,20 +191,20 @@ function task_101_01()
 local strTalk = {
 	"A Ch©u ta thËt lµ bÊt h¹nh…!",
 	"C« n­¬ng ®õng qu¸ ®au lßng, ®Ó ta ®Õn gÆp Méng ca hái nguyªn nh©n ra sao.",
-	"Méng ca ë phñ ®«ng §¹i Lı, mÉu th©n huynh Êy lµ TriÖu N­¬ng.",
-	"C« n­¬ng ®õng qu¸ ®au lßng, ®Ó ta ®Õn §¹i Lı gÆp TriÖu N­¬ng hái xem."
+	"Brother Meng lives in the eastern manor of Dali, his mother is Zhao Niang.",
+	"Don't grieve too much, miss. Let me go to Dali to meet Zhao Niang and ask."
 }
 	TalkEx("",strTalk);
 	SetTask(TASK_DL_LV40_ZX_ID,1);
-	Msg2Player("§Õn §¹i Lı gÆp TriÖu N­¬ng.");
-	TaskTip("§Õn §¹i Lı gÆp TriÖu N­¬ng.");
+	Msg2Player("Go to Dali to meet Zhao Niang.");
+	TaskTip("Go to Dali to meet Zhao Niang.");
 end	
 
 --Î´ÓëÕÔÄï¶Ô»°
 function task_102_00()
 
 local strTalk = {
-	"Méng ca ë phñ ®«ng §¹i Lı, v« cïng c¶m ¬n <sex>."
+	"Brother Meng lives in the eastern manor of Dali, deeply grateful, <sex>."
 }
 	TalkEx("",strTalk);
 end
@@ -246,7 +246,7 @@ local strTalk = {
 	"Tr­íc ®ã 3 ngµy, huynh Êy hÑn ta ®Õn ch©n nói Vò L¨ng ®îi trêi tèi råi cïng bá trèn.",
 	"§Ó ta ®Õn {ch©n nói Vò L¨ng} hái t×nh h×nh cña Méng ca.",
 	"§a t¹ <sex>, nÕu Méng ca ®· thay ®æi ı ®Şnh bá trèn còng kh«ng sao, ta chØ mong cho huynh Êy b×nh an.",
-	"C« n­¬ng yªn t©m, ta sÏ mau ®i chãng vÒ."
+	"Rest assured, miss, I will hurry there and back."
 	}
 	TalkEx("",strTalk);
 	SetTask(TASK_DL_LV40_ZX_ID,3);
@@ -273,7 +273,7 @@ local strTalk = {
 	"Tr­íc ®©y mÊy ngµy ta cã thÊy mét ng­êi bŞ gi¸o ®å cña Xi Háa gi¸o b¾t ®i. Bän chóng qu¸ hung d÷ ta còng kh«ng d¸m nh×n râ n÷a.",
 	"VËy hiÖn giê bän chóng ë ®©u?",
 	"Bän chóng ë trªn nói, nh­ng nÕu kh«ng cã g× th× tèt nhÊt ®õng va vµo chóng.",
-	"§a t¹ ®¹i thóc.",
+	"Many thanks, uncle.",
 	"§õng kh¸ch s¸o!"
 	}
 	TalkEx("",strTalk);
@@ -287,10 +287,10 @@ function task_108_00()
 
 local strTalk = {
 	"Lêi cña tiÓu tö nµy nãi kh«ng biÕt cã ®¸ng tin kh«ng, h¾n nãi ®Õn ®©y ®Ó ®îi mét ng­êi.",
-	"VËy µ?",
+	"Is that so?",
 	"TiÓu tö cã ph¶i chóng muèn nh¾c ®Õn Méng ca?",
 	"Trêi! L¹i thªm mét tªn n÷a ®Õn! Ta chÕt mÊt th«i!!",
-	"Huynh ®Ö, x«ng lªn!"
+	"Brothers, charge!"
 	}
 local nMapID,nXpos,nYpos = GetWorldPos();
 	
@@ -305,8 +305,8 @@ end
 function task_109_00()
 
 local strTalk = {
-	"Tªn kia lµ ai?",
-	"Huynh ®Ö, x«ng lªn!"
+	"Who is that fellow?",
+	"Brothers, charge!"
 	};
 
 	if GetTrigger(KILL_DL_CHIHUO_DAOKE) == 0 then

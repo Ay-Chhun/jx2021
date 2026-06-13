@@ -48,7 +48,7 @@ function VET_201103_Operating_JingNangDaShiJiangDialog(tbSayDialog, szSayHead)
 end
 
 function VET_201103_Operating_ExchangeZongzi1()
-	AskClientForNumber("ConfirmMassExchangeZongzi", 1, 999, "Sè B¸nh Ch­ng?")
+	AskClientForNumber("ConfirmMassExchangeZongzi", 1, 999, "How many Sticky Rice Cakes?")
 end
 
 function ConfirmMassExchangeZongzi(nCount)

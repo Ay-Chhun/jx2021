@@ -2,7 +2,7 @@ Include("\\script\\vng\\lib\\vnglib_award.lua");
 Include("\\script\\vng\\lib\\vnglib_function.lua");
 Include("\\script\\vng\\config\\vng_feature.lua");
 
-szNPCname = "<color=green>Ng≠Íi VÀn Chuy”n:<color> "
+szNPCname = "<color=green>Transporter:<color>"
 tbConfig = {
 	[1] = {"Thi’t tinh c p 3 (kh„a)", TSK_123PAY1, 50,2,1, {item={{gdp={2,1,30535,1,4}}}}},
 	[2] = {"S∏ch k¸ n®ng Pet c p 1", TSK_123PAY1, 8,3,3, {fn="PetBookAward(1);"}},

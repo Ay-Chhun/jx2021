@@ -5,7 +5,7 @@ function OnUse()
 		Msg2Player("B¹n nhËn ®­îc1 ®iÓm kinh nghiÖm");
 		local nRand = random(1,100);
 		CastState("state_damage_life_max",99,30*18,1,214000);	--ÉúÃüÉÏÏŞ½µµÍ99%³ÖĞø30Ãë
-		Msg2Player("Sinh lùc tèi ®a gi¶m 99% trong 30 gi©y");
+		Msg2Player("Maximum health reduced by 99% for 30 seconds.");
 		if nRand <= 75 then
 			CastState("state_m_attack_percent_add",100,10*18,1,197000);
 			CastState("state_p_attack_percent_add",100,10*18,1,196000);
@@ -19,6 +19,6 @@ function OnUse()
 			CastState("state_p_attack_percent_add",500,10*18,1,196000);
 			Msg2Player("C«ng kİch 500%, duy tr× 10 gi©y");	
 		end;
-		Msg2_LeiTai("B¸nh trung thu khĞt");
+		Msg2_LeiTai("Burnt Mooncake");
 	end;
 end;

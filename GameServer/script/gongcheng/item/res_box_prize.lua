@@ -8,9 +8,9 @@ Include("\\script\\online\\zgc_public_fun.lua")		--´å³¤µÄ¹«¹²º¯Êý
 Include("\\script\\lib\\globalfunctions.lua");
 
 	Tb_box_prize_money = {			--½ðÇ®½±Àø¸ÅÂÊ¡¢½ð¶î¡¢ËµÃ÷
-		{80,300000,"30 vµng"},
-		{19,500000,"50 vµng"},
-		{1,5000000,"500 l­îng"}
+		{80,300000,"30 gold"},
+		{19,500000,"50 gold"},
+		{1,5000000,"500 taels"}
 	}
 	Tb_prize_cloth = {
 		{				--¾üÊ¦Íâ×°
@@ -80,8 +80,8 @@ Include("\\script\\lib\\globalfunctions.lua");
 	}
 	Suit_be_date_num = 7
 	tb_box_award = {
-		[1] = {"Bµn Long BÝch", 90, {2, 1, 1000,1,1},30*24*60*60},
-		[2] = {"Hßa ThÞ BÝch", 250, {2, 1, 1001,1,1}, 30*24*60*60},				
+		[1] = {"Panlong Bi", 90, {2, 1, 1000,1,1},30*24*60*60},
+		[2] = {"Heshi Jade", 250, {2, 1, 1001,1,1}, 30*24*60*60},				
 		[3] = {"Bao M¶nh Thiªn Th¹ch", 250, {2, 1, 1049,1,1}, 30*24*60*60},
 		[4] = {"Bao Thiªn Th¹ch", 250, {2, 1, 1050,1,1}, 30*24*60*60},			
 		[5] = {"Huy Ch­¬ng ChiÕn C«ng (Huy Hoµng)", 100, {2, 1, 9977,1,1}, 30*24*60*60},		
@@ -126,6 +126,6 @@ function open_dtm()
 			SetItemExpireTime(nItemIdx, tb_box_award[rand_num][4])
 		end
 	end
-	Msg2Global("Ng­êi ch¬i: "..GetName().." më b¶o r­¬ng tµi nguyªn nhËn ®­îc "..tb_box_award[rand_num][1])
+	Msg2Global("Player:"..GetName().." më b¶o r­¬ng tµi nguyªn nhËn ®­îc "..tb_box_award[rand_num][1])
 	WriteLogEx("Cong Thanh Chien","më r­¬ng tµi nguyªn",1,tb_box_award[rand_num][1] )
 end

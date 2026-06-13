@@ -27,10 +27,10 @@ DAILY_TASK_0912_NPC = "<color=green>Vâ l©m sø gi¶: <color>";
 
 --¸öÈËÈÕ³£ÈÎÎñ½±Àø
 DALIY_TASK_0912_PERSONAL_TASK_AWARD_LIST = {
-        {1, 250, "§Êu hån", {2, 1, 1157, 1}, 15 * 24 * 3600},
-        {1, 500, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 15 * 24 * 3600},
+        {1, 250, "Soul Duel", {2, 1, 1157, 1}, 15 * 24 * 3600},
+        {1, 500, "Tribulation Dispel Powder", {2, 0, 141, 1}, 15 * 24 * 3600},
         {1, 90, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 15 * 24 * 3600},
-        {1, 115, "B¸t Nh· Chøng Th­", {2, 1, 30114, 1}, 15 * 24 * 3600},
+        {1, 115, "Prajna Certificate", {2, 1, 30114, 1}, 15 * 24 * 3600},
         {1, 5, "Ngù dông b¹ch ngäc th¹ch", {2, 1, 1024, 1}, 15 * 24 * 3600},
         {4, 40, 5, 1},--5µãÉùÍû
 }
@@ -38,10 +38,10 @@ DALIY_TASK_0912_PERSONAL_TASK_AWARD_EXP = 1000000;
 
 --ÍÅ¶ÓÈÕ³£ÈÎÎñ½±Àø
 DALIY_TASK_0912_TEAM_TASK_AWARD_LIST = {
-        {1, 250, "§Êu hån", {2, 1, 1157, 1}, 15 * 24 * 3600},
-        {1, 500, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 15 * 24 * 3600},
+        {1, 250, "Soul Duel", {2, 1, 1157, 1}, 15 * 24 * 3600},
+        {1, 500, "Tribulation Dispel Powder", {2, 0, 141, 1}, 15 * 24 * 3600},
         {1, 90, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 15 * 24 * 3600},
-        {1, 115, "B¸t Nh· Chøng Th­", {2, 1, 30114, 1}, 15 * 24 * 3600},
+        {1, 115, "Prajna Certificate", {2, 1, 30114, 1}, 15 * 24 * 3600},
         {1, 5, "Ngù dông b¹ch ngäc th¹ch", {2, 1, 1024, 1}, 15 * 24 * 3600},
         {4, 40, 5, 1},--5µãÉùÍû
 }
@@ -78,7 +78,7 @@ function DaliyTask0912About()
         "Hñy nhiÖm vô th­êng nhËt tæ ®éi/cancel_team_task",
         "Nép vµ nhËn th­ëng nhiÖm vô th­êng nhËt c¸ nh©n/finish_daliy_personal_task_dlg",
         "Nép vµ nhËn th­ëng nhiÖm vô th­êng nhËt tæ ®éi/finish_daliy_team_task_dlg",
-        "KÕt thóc ®èi tho¹i/dialog_over",
+        "End conversation/dialog_over",
     };
 
     Say(DAILY_TASK_0912_NPC .. format("H«m nay nhiÖm vô th­êng nhËt c¸ nh©n lµ <color=yellow>%s<color>, nhiÖm vô th­êng nhËt tæ ®éi lµ <color=yellow>%s<color>",DALIY_TASK_0912_PERSONAL_TASK_LIST[nPersonalTask][1], DALIY_TASK_0912_TEAM_TASK_LIST[nTeamTask][1]), getn(tb_main_dialog), tb_main_dialog);
@@ -89,7 +89,7 @@ function finish_daliy_personal_task_dlg()
 	 {
 	        format("%s/%s", "NhËn phÇn th­ëng nhiÖm vô", "finish_daliy_personal_task"),
 	        format("%s/#%s", format("Sö dông %d %s ®æi phÇn th­ëng",2,"Xu"), "finish_daliy_personal_task(1)"),
-	        "KÕt thóc ®èi tho¹i/dialog_over",
+	        "End conversation/dialog_over",
     	};
 	Say(DAILY_TASK_0912_NPC .. format("LÖnh tõ Minh Chñ, nay hoµn thµnh nhiÖm vô vâ l©m h»ng ngµy ®Òu ®­îc nhËn thªm <color=yellow>%s<color>, víi lÖnh bµi nµy cã thÓ ®Õn t×m ThÇn Binh C¸c Tr­ëng L·o (T­¬ng D­¬ng:183, 175) ®æi lÊy trang bÞ S­ M«n Hoµng Kim bé 4. <enter>NÕu nh­ sö dông <color=yellow>%s<color> ®Ó nhËn th­ëng th× sÏ nhËn ®­îc <color=yellow>%s<color> sè l­îng gÊp <color=green>%d<color> lÇn, phÇn th­ëng kinh nghiÖm t¨ng cao <color=green>%s<color>.","Vâ L©m Hoµng Kim LÖnh","Xu","Vâ L©m Hoµng Kim LÖnh",2,"30%"), getn(tb_sub_dialog), tb_sub_dialog);
 end
@@ -99,7 +99,7 @@ function finish_daliy_team_task_dlg()
 	 {
 	        format("%s/%s", "NhËn phÇn th­ëng nhiÖm vô", "finish_daliy_team_task"),
 	        format("%s/#%s", format("Sö dông %d %s ®æi phÇn th­ëng",2,"Xu"), "finish_daliy_team_task(1)"),
-	        "KÕt thóc ®èi tho¹i/dialog_over",
+	        "End conversation/dialog_over",
     	};
 	Say(DAILY_TASK_0912_NPC .. format("LÖnh tõ Minh Chñ, nay hoµn thµnh nhiÖm vô vâ l©m h»ng ngµy ®Òu ®­îc nhËn thªm <color=yellow>%s<color>, víi lÖnh bµi nµy cã thÓ ®Õn t×m ThÇn Binh C¸c Tr­ëng L·o (T­¬ng D­¬ng:183, 175) ®æi lÊy trang bÞ S­ M«n Hoµng Kim bé 4. <enter>NÕu nh­ sö dông <color=yellow>%s<color> ®Ó nhËn th­ëng th× sÏ nhËn ®­îc <color=yellow>%s<color> sè l­îng gÊp <color=green>%d<color> lÇn, phÇn th­ëng kinh nghiÖm t¨ng cao <color=green>%s<color>.","Vâ L©m Hoµng Kim LÖnh","Xu","Vâ L©m Hoµng Kim LÖnh",2,"30%"), getn(tb_sub_dialog), tb_sub_dialog);
 end
@@ -317,7 +317,7 @@ function cancel_personal_task()
     if nPersonalTask == 0 then
         Say(DAILY_TASK_0912_NPC.."C¸c h¹ vÉn ch­a nhËn nhiÖm vô th­êng nhËt c¸ nh©n, v× vËy kh«ng thÓ hñy bá ®­îc.", 0);
     else
-        Say(DAILY_TASK_0912_NPC.."X¸c nhËn muèn bá nhiÖm vô th­êng nhËt c¸ nh©n?", 2, "§ång ý/confirm_cancel_persional_task", "trë l¹i/DaliyTask0912About");
+        Say(DAILY_TASK_0912_NPC.."X¸c nhËn muèn bá nhiÖm vô th­êng nhËt c¸ nh©n?", 2, "Agree/confirm_cancel_persional_task", "trë l¹i/DaliyTask0912About");
     end
 end
 function confirm_cancel_persional_task()
@@ -331,7 +331,7 @@ function cancel_team_task()
     if nTeamTask == 0 then
         Say(DAILY_TASK_0912_NPC.."C¸c h¹ vÉn ch­a nhËn nhiÖm vô th­êng nhËt tæ ®éi, v× vËy kh«ng thÓ hñy bá ®­îc.", 0);
     else
-        Say(DAILY_TASK_0912_NPC.."X¸c nhËn muèn bá nhiÖm vô th­êng nhËt tæ ®éi!", 2, "§ång ý/confirm_cancel_team_task", "trë l¹i/DaliyTask0912About");
+        Say(DAILY_TASK_0912_NPC.."X¸c nhËn muèn bá nhiÖm vô th­êng nhËt tæ ®éi!", 2, "Agree/confirm_cancel_team_task", "trë l¹i/DaliyTask0912About");
     end
 end
 function confirm_cancel_team_task()

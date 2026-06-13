@@ -4,7 +4,7 @@
 Include("\\script\\lib\\globalfunctions.lua");
 
 TSK_USE_DATE = 2358;
-g_szItemName = "Tói Long §»ng Tø H¶i";
+g_szItemName = "Long Dang Tu Hai Bag";
 IB_VERSION = 1;
 g_tbSkillID = {820,823,832,835,838,841,871};
 
@@ -18,11 +18,11 @@ function OnUse(nItemIdx)
 			if IB_VERSION == 1 then
 				szExp = "<color=yellow>"..floor(5000000*(nLevel^3)/(80^3)).." kinh nghiÖm <color>. ";
 			else
-				szExp = "ChuyÓn <color=yellow>"..floor(10000000*(nLevel^3)/(80^3)).." ®iÓm <color>. ";
+				szExp = "Convert <color=yellow>"..floor(10000000*(nLevel^3)/(80^3)).." ®iÓm <color>. ";
 			end;
 			local selTab = {
-						"§ång ý/#get_reward("..nItemIdx..","..nDate..")",
-						"Hñy bá/nothing",
+						"Agree/#get_reward("..nItemIdx..","..nDate..")",
+						"Cancel/nothing",
 						}
 			Say("H«m nay b¹n më ra lÇn ®Çu tiªn <color=yellow>"..g_szItemName.."<color>B¹n nhËn ®­îc 1 ph¸o, 1 Ph¸o hoa mµu cam, 1 Ph¸o hoa mµu xanh, 1 XÝch M¹c Háa DiÖm, 1 Lam M¹c Háa DiÖm, 1 Tranh M¹c Háa DiÖm, 1 ThÇn MËt Yªn Hoa"..szExp.."B¹n muèn më nã ra b©y giê?",getn(selTab),selTab);
 		else

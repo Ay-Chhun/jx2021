@@ -89,7 +89,7 @@ function PhucSinh2_LamMoiNhiemVu()
 		return 0
 	end
 	local tbSay = {}
-	tinsert(tbSay, "Tiªu hao 69 vµng/#PhucSinh2_LamMoiNhiemVu_Done(1)")
+	tinsert(tbSay, "Consumes 69 gold/#PhucSinh2_LamMoiNhiemVu_Done(1)")
 	tinsert(tbSay, "Tiªu hao 19 xu vËt phÈm/#PhucSinh2_LamMoiNhiemVu_Done(2)")
 	tinsert(tbSay, "Ta muèn suy nghÜ thªm/gf_DoNothong")
 	Say(szNPCName.."Ng­¬i cã thÓ bá ra Ýt lÖ phÝ ®Ó ®æi nhiÖm vô kh¸c nÕu cÇn.", getn(tbSay), tbSay)
@@ -99,7 +99,7 @@ end
 function PhucSinh2_LamMoiNhiemVu_Done(nOption)
 	local tbNguyenLieu = {
 		[1] = {nGold = 690000},
-		[2] = {item={{gdp={2,1,30230,19}, name="Xu VËt PhÈm"}}},
+		[2] = {item={{gdp={2,1,30230,19}, name="Item Token"}}},
 	}
 	local nCheck = 0
 	nCheck = LIB_Award:CheckMaterial(tbNguyenLieu[nOption])
@@ -124,7 +124,7 @@ end
 
 function PhucSinh2_TienDoPhucSinh2()
 	local nCount = PhucSinh2_GetCount()
-	Talk(1,"",szNPCName.."Ng­¬i ®· hoµn thµnh <color=yellow>"..nCount.."/"..nMISSION_QTY.."<color> thö th¸ch Phôc Sinh 2.")
+	Talk(1,"",szNPCName.."Ng­¬i ®· hoµn thµnh <color=yellow>"..nCount.."/"..nMISSION_QTY.."<color> Revival 2 trials.")
 end
 
 function PhucSinh2_NopItem()
@@ -137,7 +137,7 @@ function PhucSinh2_NopNguyenLieu_Menu()
 	local tbSay = {}
 	for i=1, getn(tbNguyenLieuThuThap) do
 		if gf_GetTaskBit(TSK_PHUCSINH2, tbNguyenLieuThuThap[i][6]) == 0 then
-			tinsert(tbSay, "Nép "..tbNguyenLieuThuThap[i][4].." "..tbNguyenLieuThuThap[i][5].."/#PhucSinh2_ThuThapNguyenLieu("..i..")")
+			tinsert(tbSay, "Turn in"..tbNguyenLieuThuThap[i][4].." "..tbNguyenLieuThuThap[i][5].."/#PhucSinh2_ThuThapNguyenLieu("..i..")")
 		end
 	end
 	tinsert(tbSay, "Ta cÇn chuÈn bÞ thªm/gf_DoNothing")

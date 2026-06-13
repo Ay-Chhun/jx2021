@@ -2,7 +2,7 @@
 --author:yanjun
 --describe:ÊðÃûµÄ¼Ì³ÐÊé£¬Ê¹ÓÃÔö¼Ó×Ô¼º100µã×Ï¹â¸ó»ý·Ö
 Include("\\script\\missions\\tong_mission\\main_head.lua");
-g_szItemName = "Tö Quang LÖnh";
+g_szItemName = "Purple Light Token";
 function OnUse(nItemIdx)
 	if DelItemByIndex(nItemIdx,1) == 1 then
 		SetTask(TSK_POINT,GetTask(TSK_POINT)+100);

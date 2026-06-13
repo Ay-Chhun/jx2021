@@ -29,7 +29,7 @@ function OnUse(nItemIdx)
 			end
 		else
 			Earn(tb_pangtuzi_aword[nRandItem][3] * 100 * 100);
-			WriteLogEx("Hoat dong thang 6","nhËn ®­îc",tb_pangtuzi_aword[nRandItem][3], "vµng");
+			WriteLogEx("Hoat dong thang 6","nhËn ®­îc",tb_pangtuzi_aword[nRandItem][3], "gold");
 		end
 		gf_SetLogCaption("");
 	end
@@ -41,8 +41,8 @@ function task_trigger()
 		return
 	end
 	gf_SetLogCaption("Hoat dong tho map");
-	gf_AddItemEx({2, 1, 30095, 1}, "R­¬ng thá mËp");
-	WriteLogEx("Hoat dong thang 6","Thá MËp",1,"R­¬ng Thá MËp");
+	gf_AddItemEx({2, 1, 30095, 1}, "Fat Rabbit Chest");
+	WriteLogEx("Hoat dong thang 6","Thá MËp",1,"Fat Rabbit Chest");
 	gf_SetLogCaption("");
 	
 end

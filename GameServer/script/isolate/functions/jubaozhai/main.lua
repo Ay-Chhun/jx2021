@@ -12,16 +12,16 @@ t_isolate_base_cfg = {
   nEndDate 				= 20230305,
 }
 
-NPC_NAME = "<color=green>Chñ Th­¬ng Héi<color>:"
+NPC_NAME = "<color=green>Merchant Guild Master<color>:"
 
 TASK_JBZ_PERIOD = 3404;
 TASK_JBZ_FLAG = 3405; --1,2byteÀÛ¼Æ´ÎÊý£¬3byteÀÛ¼Æ½±ÀøÁìÈ¡±ê¼Ç£¬4byteÔÂ¿¨ÁìÈ¡ÐüÊ¯±ê¼Ç
 
 JBZ_ACC_TABLE = {
 	{100, "Qu©n C«ng Huy Hoµng", {2,1,9977,1}, 30},
-	{500, format("Tói §¸ Quý CÊp 5*%d", 1), {2,1,31024,1}, 0},
+	{500, format("Bag of Gems Grade 5*%d", 1), {2,1,31024,1}, 0},
 	{1000, "Háa Phông Linh", {2,1,30769,1}, 0},
-	{2000, format("Tói §¸ Quý CÊp 5*%d", 2), {2,1,31024,2}, 0},
+	{2000, format("Bag of Gems Grade 5*%d", 2), {2,1,31024,2}, 0},
 	{3000, format("Bao ®¸ quý cÊp 6*%d", 1), {2,1,31123,1}, 0},
 	{5000, "Tói trang bÞ Tam D­¬ng Khai Th¸i", {2,1,30911,1}, 0},
 }
@@ -104,7 +104,7 @@ function get_acc_award_deal(index)
 		return 0;
 	end
 	gf_SetTaskBit(TASK_JBZ_FLAG, 16 + index, 1, TASK_ACCESS_CODE_JBZ);
-	gf_AddItemEx2(t[3], GetItemName(t[3][1], t[3][2], t[3][3]), "Tô B¶o Trai", "Th­ëng tÝch lòy", t[4] * 24 * 3600, 1);
+	gf_AddItemEx2(t[3], GetItemName(t[3][1], t[3][2], t[3][3]), "Tô B¶o Trai", "Accumulated reward", t[4] * 24 * 3600, 1);
 	local bFlag = nil
 	local nCount = getn(JBZ_ACC_TABLE);
 	for i = 1, nCount do

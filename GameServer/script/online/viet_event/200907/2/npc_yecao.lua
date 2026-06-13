@@ -13,7 +13,7 @@ function main()
 				"1 C­êng HiÖu Lôc ThÇn Hoµn – (cÇn 1 §ång TiÒn Vµng)/#duihuan_aword(3)",
 				"1 Cöu ChuyÓn Håi Hån §¬n – (cÇn 1 §ång TiÒn Vµng)/#duihuan_aword(4)",
 				"1 Thiªn H­¬ng CÈm Tôc_Tói Nhá – (cÇn 1 §ång TiÒn Vµng)/#duihuan_aword(5)",
-				"Trang kÕ/#NextPage(2)",
+				"Next Page/#NextPage(2)",
 				"T¹i h¹ chØ ghĞ ngang!/end_dialogover");
 	else
 		Say("Ho¹t ®éng nµy ®· kÕt thóc!",0)
@@ -30,8 +30,8 @@ function NextPage(nPage)
 				"1 Bång Lai Tiªn §¬n – (cÇn 2 §ång TiÒn Vµng)/#duihuan_aword(8)",
 				"1 V¹n vËt quy nguyªn ®¬n (TiÓu) – (cÇn 2 §ång TiÒn Vµng)/#duihuan_aword(9)",
 				"1 TiÓu ThÇn Th«ng Phï – (cÇn 2 §ång TiÒn Vµng)/#duihuan_aword(10)",
-				"Trang tr­íc/main",
-				"Trang kÕ/#NextPage(3)");
+				"Previous Page/main",
+				"Next Page/#NextPage(3)");
 		elseif nPage == 3 then
 				Say("D¹ Th¶o: Tõ  <color=red>19-06-2009 ®Õn 24:00 19-07-2009<red>, ®ång ®¹o cã thÓ dïng §ång TiÒn Vµng ®Ó ®æi lÊy c¸c phÇn th­ëng hÊp dÉn sau ®©y::",
 				8,
@@ -40,8 +40,8 @@ function NextPage(nPage)
 				"1 B¹ch C©u Tiªn §¬n – (cÇn 4 §ång TiÒn Vµng)/#duihuan_aword(13)",
 				"1 Tam Thanh Tiªn §¬n – (cÇn 4 §ång TiÒn Vµng)/#duihuan_aword(14)",
 				"1 Lôc ThÇn Tiªn §¬n – (cÇn 4 §ång TiÒn Vµng)/#duihuan_aword(15)",
-				"Trang tr­íc/#NextPage(2)",
-				"Trang kÕ/#NextPage(4)",
+				"Previous Page/#NextPage(2)",
+				"Next Page/#NextPage(4)",
 				"trë l¹i/main");
 		elseif nPage == 4 then
 				Say("D¹ Th¶o: Tõ  <color=red>19-06-2009 ®Õn 24:00 19-07-2009<red>, ®ång ®¹o cã thÓ dïng §ång TiÒn Vµng ®Ó ®æi lÊy c¸c phÇn th­ëng hÊp dÉn sau ®©y::",
@@ -51,8 +51,8 @@ function NextPage(nPage)
 				"1 Thñy hoµng bİ chiÕu – (cÇn 5 §ång TiÒn Vµng)/#duihuan_aword(18)",
 				"1 Uyªn ­¬ng kim ti b¹c – (cÇn 7 §ång TiÒn Vµng)/#duihuan_aword(19)",
 				"1 Sæ tay sèng – (cÇn 20 §ång TiÒn Vµng)/#duihuan_aword(20)",
-				"Trang tr­íc/#NextPage(3)",
-				"Trang kÕ/#NextPage(5)",
+				"Previous Page/#NextPage(3)",
+				"Next Page/#NextPage(5)",
 				"trë l¹i/main");
 		elseif nPage == 5 then
 				Say("D¹ Th¶o: Tõ  <color=red>19-06-2009 ®Õn 24:00 19-07-2009<red>, ®ång ®¹o cã thÓ dïng §ång TiÒn Vµng ®Ó ®æi lÊy c¸c phÇn th­ëng hÊp dÉn sau ®©y::",
@@ -62,7 +62,7 @@ function NextPage(nPage)
 				"1 TÈy Tñy Linh §¬n – (cÇn 80 §ång TiÒn Vµng)/#duihuan_aword(23)",
 				"1 B¸t B¶o TÈy Tñy Tiªn §¬n – (cÇn 100 §ång TiÒn Vµng)/#duihuan_aword(24)",
 				"1 Phiªu Vò – (cÇn 250 §ång TiÒn Vµng) /#duihuan_aword(25)",
-				"Trang tr­íc/#NextPage(4)",
+				"Previous Page/#NextPage(4)",
 				"trë l¹i/main",
 				"T¹i h¹ chØ ghĞ ngang!/end_dialogover");
 		end

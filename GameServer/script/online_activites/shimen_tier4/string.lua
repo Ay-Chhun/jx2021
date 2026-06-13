@@ -9,7 +9,7 @@ VET_TB_TIER4_LOG_ACTION =
 	"Mang %s chuyÓn thµnh %s(%d:%d)",
 	"Vâ  L©m Sø Gi¶ c¸ nh©n (t¨ng %d)",
 	"Vâ L©m Sø Gi¶ tæ ®éi (t¨ng %d)",
-	"§æi %s",
+	"Exchange %s",
 }
 
 VET_TB_TIER4_MSG =
@@ -20,7 +20,7 @@ VET_TB_TIER4_MSG =
 
 VET_TB_TIER4_NPC_DLG = 
 {
-	"Tho¸t",
+	"Exit",
 	"C¸c h¹ muèn ®æi <color=yellow>%s<color> thµnh g×?",
 	"Mang %d - %s chuyÓn thµnh %d ®iÓm tu luyÖn",
 	"Mang %d - %s chuyÓn thµnh %d - %s",
@@ -29,14 +29,14 @@ VET_TB_TIER4_NPC_DLG =
 	"C¸c h¹ muèn ®æi thµnh bao nhiªu %s?",
 	"ThÇn Binh C¸c ®­îc kiÕn lËp tõ H¸n TriÒu, bªn trong l­u gi÷ v« sè thÇn binh lîi khÝ. Ta phông mÖnh ®­¬ng kim Vâ L©m Minh Chñ khai th«ng ThÇn Binh C¸c mang thÇn binh tÆng cho thiªn h¹ Hao KiÖt cïng chèng Th¸t Lç. <enter>NÕu c¸c h¹ m¹ng theo <color=yellow>%s<color>lµ cã thÓ ®Õn t×m ta ®æi trang bÞ råi. HiÖn t¹i mãn trang bÞ ®­îc trao ®æi lµ<color=yellow>%s<color>#",
 	"Xem thuéc tÝnh %s cña t«i",
-	"§æi %s",
+	"Exchange %s",
 	"NÕu nhËn ®­îc %s",
 	"Th«ng qua v­ît ¶i S¸t Thñ §­êng vµ nhiÖm vô Vâ L©m Sø Gi¶ mçi ngµy cã thÓ nhËn ®­îc <color=yellow>%s<color>.",
 	"C¸c h¹ muèn ®æi trang bÞ bé phËn nµo? <enter>Chó ý, trang bÞ ®­îc ®æi sÏ phï hîp v¬i thÓ h×nh cïng hÖ ph¸i cña c¸c h¹ vµ ®Òu ®­îc khãa, nÕu muèn gi¶i khãa cã thÓ sö dông <color=yellow>Cµn Kh«n Phï<color> tiÕn hµnh gi¶i khãa.",
 	"Vò khÝ",
-	"M·o",
+	"Helmet",
 	"Y phôc",
-	"QuÇn ",
+	"Pants",
 	"Trang søc",
 	"H¹ng liªn",
 	"Kh«ng cã trang bÞ thÝch hîp!",
@@ -54,7 +54,7 @@ VET_TB_TIER4_ITEM_NAME =
 	"LuyÖn",
 	"Trang bÞ S­ M«n Hoµng Kim bé 4",
 	"Vµng",
-	"Danh väng s­ m«n",
+	"Sect reputation",
 }
 
 VET_TB_TIER4_NPC_TEMPLATE = 
@@ -73,7 +73,7 @@ VET_TB_TIER4_BOSS_NAME =
 {
 	--["ÍâÔº×Ü¹Ü"] = 1,
 	["Tæng qu¶n néi viÖn"] = 1,
-	["§¹i tiÓu th­"] = 1,
+	["Eldest Young Lady"] = 1,
 	["§¹i trang chñ"] = 1,
 	["Tr­ëng l·o Tµng KiÕm C¸c"] = 1,
 	["Cöu TuyÖt KiÕm Ma"] = 1,

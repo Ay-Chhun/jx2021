@@ -13,14 +13,14 @@ CSTAGE2.nStage = 2;
 CSTAGE2.tbTimerEven = {};
 CSTAGE2.nMaxDeath = 4;	--µÚ4´ÎËÀÍöºó¹ý¹Ø
 CSTAGE2.nMaxNpcCount = 12;
-CSTAGE2.tbBossInfo = {"boss3","B¸ KiÒu"};
+CSTAGE2.tbBossInfo = {"boss3","Ba Qiao"};
 --´´½¨BOSS
 function CSTAGE2:OnCreateBoss()
 	self:CreateBossByLevel(1);
 	local szName = self.tbBossInfo[2];
 	Msg2MSAll(MISSION_ID,"NhiÖm vô cña ¶i: §¸nh b¹i "..szName);
 	local tbPlayer = TM_GetPlayerTable();
-	TM_StartTimeGuage("Bãng hé vÖ",45,0,1,tbPlayer);
+	TM_StartTimeGuage("Guard",45,0,1,tbPlayer);
 end;
 --ÔÚËÄ¸öË¢¹ÖµãË¢Ëæ»úÖÖÀàµÄ¹Ö
 function CSTAGE2:CreateOpposedNpc(tbArg)
@@ -65,7 +65,7 @@ function CSTAGE2:CreateOpposedNpc(tbArg)
 	end;
 	local tbPlayer = TM_GetPlayerTable();
 	TM_StopTimeGuage(1);
-	TM_StartTimeGuage("Bãng hé vÖ",90,0,1,tbPlayer);
+	TM_StartTimeGuage("Guard",90,0,1,tbPlayer);
 end;
 --BOSSÉúÐ¡º¢
 function CSTAGE2:CreateBossChild(tbArg)
@@ -80,7 +80,7 @@ function CSTAGE2:CreateBossChild(tbArg)
 	PlayerIndex = nil;
 	local nNpcIdx = 0;
 	for i=1,tbArg[1] do
-		nNpcIdx = CreateNpc("TiÓu qu¸i ¶i 3","CÊm vÖ binh",nMapID,nMapX,nMapY,-1,1,1,100);
+		nNpcIdx = CreateNpc("TiÓu qu¸i ¶i 3","Forbidden Guards",nMapID,nMapX,nMapY,-1,1,1,100);
 		SetNpcDeathScript(nNpcIdx,"\\script\\missions\\tong_mission\\stage\\death_npc.lua");
 	end;
 end;

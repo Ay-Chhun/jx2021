@@ -23,7 +23,7 @@ function OnUse(nItem)
 			SetNpcScript(npcIndex, "\\script\\online\\qianhe_tower\\npc\\tong_fight_flag_npc.lua");
 			SetNpcLifeTime(npcIndex, 6*3600);
 			AddUnitStates(npcIndex, 0, 1);
-			Msg2Player("Vµo 1")
+			Msg2Player("Enter 1")
 		end
 		local strMsg = format("%s Bang ph¸i %s khëi chiÕn kú bang ph¸i, thµnh viªn nµy cã thÓ nhËn th­ëng, %s bang ph¸i trËn rÊt lîi h¹i.", GetTongName(), QHT_MAP_NAME[nMapID], GetTongName());
 		Msg2Global(strMsg);

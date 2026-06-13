@@ -52,7 +52,7 @@ function task_005()
 
 local strMain = {
 	"Xin Thİ chñ bè thİ 50 ®ång tiÒn nhang ®Ìn råi h·y tÈy trÇn tŞnh th©n.",
-	"§­a 50 ®ång/task_005_okay",
+	"Give 50 coins/task_005_okay",
 	"Ta kh«ng mang theo tiÒn/task_005_no"
 	}
 
@@ -164,7 +164,7 @@ end;
 function task_012()
 
 local strMain = {
-	"A Di §µ PhËt!",
+	"Amitabha Buddha!",
 	"Thİ chñ tÈy trÇn xong, cã thÓ ®i t×m <color=yellow>Ph­¬ng Tr­îng §¹i S­<color> ®Ó gia nhËp ThiÕu L©m!"
 	}
 
@@ -189,8 +189,8 @@ function task_014()
 
 local strMain = {
 	"Muèn gia nhËp PhËt m«n ta ph¶i hµnh thiÖn tİch ®øc, kh«ng ®­îc lo¹n s¸t v« cí, thİ chñ cã thÓ lµm ®­îc kh«ng?",
-	"§ång ı/task_015",
-	"Kh«ng ®ång ı/task_no"
+	"Agree/task_015",
+	"Disagree/task_no"
 	}
 
 Say(strMain[1],2,strMain[2],strMain[3]);
@@ -202,8 +202,8 @@ function task_015()
 
 local strMain = {
 	"Gia nhËp PhËt m«n ph¶i tŞnh t©m tu hµnh, thİ chñ cã lµm ®­îc kh«ng?",
-	"§ång ı/task_016",
-	"Kh«ng ®ång ı/task_no"
+	"Agree/task_016",
+	"Disagree/task_no"
 	}
 
 Say(strMain[1],2,strMain[2],strMain[3]);
@@ -215,8 +215,8 @@ function task_016()
 
 local strMain = {
 	"Gia nhËp PhËt m«n lôc c¨n thanh tŞnh, kh«ng ®­îc cã tµ niÖm, d©m «! Thİ chñ cã lµm ®­îc kh«ng?",
-	"§ång ı/task_017",
-	"Kh«ng ®ång ı/task_no"
+	"Agree/task_017",
+	"Disagree/task_no"
 	}
 
 Say(strMain[1],2,strMain[2],strMain[3]);

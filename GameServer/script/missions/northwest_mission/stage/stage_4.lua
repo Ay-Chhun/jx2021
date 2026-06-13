@@ -83,7 +83,7 @@ function stage4_boss_death()
 	local stage_seq = GetMissionV(MS_STATE_DIFF_ID)
 	PlayerIndex = GetTeamMember(0)
 	if PlayerIndex ~= 0 then
-		AddGlobalNews("T¹i"..GetName().."ChiÕn ®Êu gian khæ, cuèi cïng ®¸nh b¹i 'D­îc V­¬ng', v­ît ¶i thµnh c«ng"..Stage_info[stage_seq].stage_name..".")
+		AddGlobalNews("At"..GetName().."ChiÕn ®Êu gian khæ, cuèi cïng ®¸nh b¹i 'D­îc V­¬ng', v­ît ¶i thµnh c«ng"..Stage_info[stage_seq].stage_name..".")
 	end
 	
 	--°ÎÒ©²ÝÊýÁ¿Çå0
@@ -99,7 +99,7 @@ function stage4_boss_death()
 	ClearMapNpc(nMapID)
 	--test
 	local mission_count = GetMapTaskTemp(nMapID,1)
-	WriteLog("[¶i T©y B¾c] thèng kª qua ¶i: ID ¶i	"..stage_seq..":"..nMapID..":"..mission_count.."	Thêi gian qua ¶i	"..Zgc_pub_time_sec_change(((189-GetMissionV(MS_TIMMER_LOOP_ID))* 10),1))
+	WriteLog("[Northwest Pass] pass clearing statistics: Pass ID"..stage_seq..":"..nMapID..":"..mission_count.."	Thêi gian qua ¶i	"..Zgc_pub_time_sec_change(((189-GetMissionV(MS_TIMMER_LOOP_ID))* 10),1))
 	Zgc_pub_mission_fun(MS_ID,"Ms_stage_prize()")
 	SetMissionV(MS_TIMMER_LOOP_ID,6)
 	--stage_mission_fail(4)

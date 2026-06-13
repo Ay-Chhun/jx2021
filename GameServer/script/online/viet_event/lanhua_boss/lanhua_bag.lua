@@ -12,7 +12,7 @@ TYPE_EQUIP 	= 2;	--´øÊôÐÔ×°±¸ÀàÎïÆ·
 TYPE_CMD 	= 3;	--ÃüÁî
 
 --=========================================================================================
-g_szLogTitle = "Tói Hµnh Trang".."(2, 1, 30072)"
+g_szLogTitle = "Inventory Bag".."(2, 1, 30072)"
 g_nNeedRoom = 1
 g_nNeedWeight = 20
 g_nDenominator = 100							--·ÖÄ¸£¬±íÊ¾¸ÅÂÊµÄµ¥Î»ÊÇx·ÖÖ®1
@@ -23,8 +23,8 @@ g_tbItem =
 {
 	--		ÀàÐÍ	   ¸ÅÂÊ	ÊýÁ¿ Ãû×Ö	ID1,ID2,ID3
 	[1] = {TYPE_EQUIP,	50,	1,	"§«ng Ph­¬ng Long Ch©u",	0,	102,	24,	},
-	[2] = {TYPE_EQUIP,	25,	1,	"Nh­ ý",		0,	102,	23,	},
-	[3] = {TYPE_EQUIP,	25,	1,	"C¸t T­êng",		0,	102,	22,	},
+	[2] = {TYPE_EQUIP,	25,	1,	"As You Wish",		0,	102,	23,	},
+	[3] = {TYPE_EQUIP,	25,	1,	"Auspicious",		0,	102,	22,	},
 }
 
 
@@ -56,9 +56,9 @@ function use_it()
 
 	if nRetCode == 1 then
 		Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." "..szItemName)
-		WriteLogEx("Hoat dong thang 6", "NhËn ®­îc", nItemNum, szItemName, szInfoDescribe, GetTongName() )
+		WriteLogEx("Hoat dong thang 6", "Received", nItemNum, szItemName, szInfoDescribe, GetTongName() )
 	else
-		WriteLogEx("Hoat dong thang 6", "NhËn ®­îc", nItemNum, szItemName, szInfoDescribe, GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
+		WriteLogEx("Hoat dong thang 6", "Received", nItemNum, szItemName, szInfoDescribe, GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
 	end
 end
 

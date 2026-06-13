@@ -19,7 +19,7 @@ function OnUse()
 			Msg2Player("Chóc mõng b¹n ®¹t ®­îc 1 Linh th¹ch phèi ph­¬ng ");
 			Msg2Player("Chóc mõng b¹n ®¹t ®­îc 1 Linh th¹ch phèi ph­¬ng r¸ch");
 		else
-			WriteLog("Hép V¹n B¶o C¸c phèi ph­¬ng: Ng­êi ch¬i "..GetName().."Phèi ph­¬ng thªm vµo thÊt b¹i, id thÊt b¹i lµ: "..add_flog_one.." vµ"..add_flog_two);
+			WriteLog("Hép V¹n B¶o C¸c phèi ph­¬ng: Ng­êi ch¬i "..GetName().."Phèi ph­¬ng thªm vµo thÊt b¹i, id thÊt b¹i lµ: "..add_flog_one.." and"..add_flog_two);
 		end
 	end
 end

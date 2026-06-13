@@ -69,8 +69,8 @@ end
 function CLASS_ACTIVITY:CreateActivityHead()
 	local sStartTime = GetEventStartDate(self.nActivityID)
 	local nEndTime = GetEventEndDate(self.nActivityID)
-	local sTimString = "ngµy "..tostring(tonumber(strsub(sStartTime,7,8))).." th¸ng "..tostring(tonumber(strsub(sStartTime,5,6))).." n¨m "..tostring(strsub(sStartTime,1,4))
-	sTimString = sTimString.." ®Õn 24:00".." ngµy "..tostring(tonumber(strsub(nEndTime,7,8)) - 1).." th¸ng "..tostring(tonumber(strsub(nEndTime,5,6))).." n¨m "..tostring(strsub(nEndTime,1,4))
+	local sTimString = "ngµy "..tostring(tonumber(strsub(sStartTime,7,8))).." month"..tostring(tonumber(strsub(sStartTime,5,6))).." year"..tostring(strsub(sStartTime,1,4))
+	sTimString = sTimString.." until 24:00".." ngµy "..tostring(tonumber(strsub(nEndTime,7,8)) - 1).." month"..tostring(tonumber(strsub(nEndTime,5,6))).." year"..tostring(strsub(nEndTime,1,4))
 --	if strsub(sStartTime,1,4) ~= strsub(nEndTime,1,4) then
 --		sTimString = sTimString.." n¨m "..tostring(strsub(sStartTime,1,4))
 --	end
@@ -172,7 +172,7 @@ function CLASS_ACTIVITY:ItemPrizeOnUse(nItemIndex,nItemSeq)
 				msg = msg..format(self.tbHintString[11][1],tbPrizeItemInfo.tbItemInfo[4],(nUseTimes + 1),tbPrizeItemInfo.nItemUseTimesMax)
 			end
 			if self.nPrizeMode == 1 then
-				msg = msg..","..format("§iÓm tÝch lòy lµ <color=green>%d<color>", Vet_Activity_GetItemUseInfo(self.tbTaskGroup[1], self.tbTaskGroup[2], tbPrizeItemInfo.nPmAccPoint))
+				msg = msg..","..format("Accumulated points are <color=green>%d<color>", Vet_Activity_GetItemUseInfo(self.tbTaskGroup[1], self.tbTaskGroup[2], tbPrizeItemInfo.nPmAccPoint))
 			end
 --			Talk(1,"",msg)
 		end
@@ -486,7 +486,7 @@ function Vet_Activity_GetCapsValuePrize(nTaskGrouId, nTaskIDSeq, nItemSeq)
 			end
 		end
 	end
-	tinsert(tbSay, {"\nKÕt thóc ®èi tho¹i", "nothing"})
+	tinsert(tbSay, {"\nEnd conversation", "nothing"})
 	local tempSay = {};
 	tempSay.msg = format("VËt dông hiÖn t¹i <color=gold>%s<color> ®iÓm tÝch lòy lµ <color=green>%d<color> , %s b¹n muèn nhËn phÇn th­ëng nµo ?", tbActivity.tbPrizeItemInfo[nItemSeq].tbItemInfo[4], nPmAccPoint, gf_GetPlayerSexName())
 	tempSay.sel = tbSay
@@ -576,7 +576,7 @@ function Vet_ItemExchangePrize_Deal(nTaskGrouId, nTaskIDSeq, i, nSeq)
 	local v = tAward[tonumber(i)]
 	if v[2] == "item" or v[2] == "function" then
 		if gf_Judge_Room_Weight(v[6], v[6]) ~= 1 then
-			Talk(1,"",format("tói ®· ®Çy %d", v[6]))
+			Talk(1,"",format("Your bag is already full %d", v[6]))
 			return
 		end
 	end
@@ -706,28 +706,28 @@ function vaf_ZhanChang_Award_Api(nType)
 			if type(tPrizeInfo[1]) == "table" then
 				for i = 1,getn(tPrizeInfo) do
 					if nType == 1 then
-						gf_Add2XUAward({tPrizeInfo[i][1],tPrizeInfo[i][2],tPrizeInfo[i][3],tPrizeInfo[i][5]},tPrizeInfo[i][9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "ChiÕn tr­êng")
+						gf_Add2XUAward({tPrizeInfo[i][1],tPrizeInfo[i][2],tPrizeInfo[i][3],tPrizeInfo[i][5]},tPrizeInfo[i][9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "Battlefield")
 					elseif nType == 2 then
-						gf_Add2XUAward({tPrizeInfo[i][1],tPrizeInfo[i][2],tPrizeInfo[i][3],tPrizeInfo[i][6]},tPrizeInfo[i][9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "ChiÕn tr­êng")
+						gf_Add2XUAward({tPrizeInfo[i][1],tPrizeInfo[i][2],tPrizeInfo[i][3],tPrizeInfo[i][6]},tPrizeInfo[i][9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "Battlefield")
 					elseif nType == 3 then
-						gf_Add2XUAward({tPrizeInfo[i][1],tPrizeInfo[i][2],tPrizeInfo[i][3],tPrizeInfo[i][7]},tPrizeInfo[i][9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "ChiÕn tr­êng")
+						gf_Add2XUAward({tPrizeInfo[i][1],tPrizeInfo[i][2],tPrizeInfo[i][3],tPrizeInfo[i][7]},tPrizeInfo[i][9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "Battlefield")
 					elseif nType == 4 then
-						gf_Add2XUAward({tPrizeInfo[i][1],tPrizeInfo[i][2],tPrizeInfo[i][3],tPrizeInfo[i][8]},tPrizeInfo[i][9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "ChiÕn tr­êng")
+						gf_Add2XUAward({tPrizeInfo[i][1],tPrizeInfo[i][2],tPrizeInfo[i][3],tPrizeInfo[i][8]},tPrizeInfo[i][9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "Battlefield")
 					else
-						gf_Add2XUAward({tPrizeInfo[i][1],tPrizeInfo[i][2],tPrizeInfo[i][3],tPrizeInfo[i][4]},tPrizeInfo[i][9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "ChiÕn tr­êng")
+						gf_Add2XUAward({tPrizeInfo[i][1],tPrizeInfo[i][2],tPrizeInfo[i][3],tPrizeInfo[i][4]},tPrizeInfo[i][9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "Battlefield")
 					end
 				end
 			else
 				if nType == 1 then
-					gf_Add2XUAward({tPrizeInfo[1],tPrizeInfo[2],tPrizeInfo[3],tPrizeInfo[5]},tPrizeInfo[9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "ChiÕn tr­êng")
+					gf_Add2XUAward({tPrizeInfo[1],tPrizeInfo[2],tPrizeInfo[3],tPrizeInfo[5]},tPrizeInfo[9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "Battlefield")
 				elseif nType == 2 then
-					gf_Add2XUAward({tPrizeInfo[1],tPrizeInfo[2],tPrizeInfo[3],tPrizeInfo[6]},tPrizeInfo[9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "ChiÕn tr­êng")
+					gf_Add2XUAward({tPrizeInfo[1],tPrizeInfo[2],tPrizeInfo[3],tPrizeInfo[6]},tPrizeInfo[9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "Battlefield")
 				elseif nType == 3 then
-					gf_Add2XUAward({tPrizeInfo[1],tPrizeInfo[2],tPrizeInfo[3],tPrizeInfo[7]},tPrizeInfo[9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "ChiÕn tr­êng")
+					gf_Add2XUAward({tPrizeInfo[1],tPrizeInfo[2],tPrizeInfo[3],tPrizeInfo[7]},tPrizeInfo[9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "Battlefield")
 				elseif nType == 4 then
-					gf_Add2XUAward({tPrizeInfo[1],tPrizeInfo[2],tPrizeInfo[3],tPrizeInfo[8]},tPrizeInfo[9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "ChiÕn tr­êng")
+					gf_Add2XUAward({tPrizeInfo[1],tPrizeInfo[2],tPrizeInfo[3],tPrizeInfo[8]},tPrizeInfo[9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "Battlefield")
 				else
-					gf_Add2XUAward({tPrizeInfo[1],tPrizeInfo[2],tPrizeInfo[3],tPrizeInfo[4]},tPrizeInfo[9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "ChiÕn tr­êng")
+					gf_Add2XUAward({tPrizeInfo[1],tPrizeInfo[2],tPrizeInfo[3],tPrizeInfo[4]},tPrizeInfo[9],TB_VN_ACTIVITY_MAIN[nActivityID].sActivityName, "Battlefield")
 				end
 			end
 		end
@@ -735,18 +735,18 @@ function vaf_ZhanChang_Award_Api(nType)
 end
 
 VAF_AWARD_API_TABLE = {
-	["tPlantSmallTreePrize"] = "Trång C©y B¸t Nh· Nhá",   
-	["tPlantBigTreePrize"] = "Trång C©y B¸t Nh· Lín", 
-	["tOpenSeedBagPrize"] = "Më Tói H¹t Gièng", 
+	["tPlantSmallTreePrize"] = "Plant Small Prajna Tree",   
+	["tPlantBigTreePrize"] = "Plant the Great Prajna Tree", 
+	["tOpenSeedBagPrize"] = "Open Seed Bag", 
 	["tLiangShanKillBoss"] = "L­¬ng S¬n tiªu diÖt BOSS", 
 	["tLiangShanDailyTask"] = "L­¬ng S¬n v­ît ¶i nhiÖm vô h»ng ngµy", 
 	["tWanJianZhong"] = "Qua ¶i V¹n KiÕm Tròng", 
 	["tTongTianHuanJing"] = "Qua ¶i Th«ng Thiªn", 
-	["tPlant4LingTree"] = "Trång C©y Tø Linh", 
-	["tPlantSeedTree"] = "Trång C©y H¹t Gièng",
+	["tPlant4LingTree"] = "Plant the Four Spirits Tree", 
+	["tPlantSeedTree"] = "Plant the Seed Tree",
 	["tLiangShanJinBox"] = "L­¬ng S¬n-R­¬ng Vµng",
-	["tLiangShanYinBox"] = "L­¬ng S¬n-R­¬ng B¹c",
-	["tLiangShanTongBox"] = "L­¬ng S¬n-R­¬ng §ång",
+	["tLiangShanYinBox"] = "Liangshan-Silver Chest",
+	["tLiangShanTongBox"] = "Liangshan-Copper Chest",
 	["tWjzDailyTask"] = "NhiÖm vô V¹n KiÕm Tròng",
 	["tWjzJinBox"] = "V¹n KiÕm Tròng-R­¬ng Vµng",
 	["tWjzYinBox"] = "V¹n KiÕm Tròng-R­¬ng B¹c",
@@ -775,7 +775,7 @@ VAF_AWARD_API_TABLE = {
 	["tYMGBattle200"] = "Tham gia chiÕn tr­êng Nh¹n M«n Quan, ®iÓm tÝch lòy ®¹t 200 ®iÓm",
 	["tProtectCity100"] = "ChiÕn tr­êng B¶o VÖ Thµnh Tr× ®¹t 100 ®iÓm",
 	["tTMZattackflag"] = "Vµo Thiªn M«n TrËn tiªu hñy 1 ChiÕn Kú",
-	["tJoinZhanChang"] = "ChiÕn tr­êng",
+	["tJoinZhanChang"] = "Battlefield",
 	
 }
 
@@ -823,7 +823,7 @@ function vaf_201203_GiveJunGong()
 	gf_EventGiveCustomAward(31,1000,1,"Më tiÖc khao qu©n","100 lÇn gi¶i th­ëng")
 end
 function vaf_201204_GiveJunGong()
-	gf_EventGiveCustomAward(31,100,1,"Mïa HÌ M¸t L¹nh","100 lÇn gi¶i th­ëng")
+	gf_EventGiveCustomAward(31,100,1,"Cool Summer","100 lÇn gi¶i th­ëng")
 end
 
 function gf_VnGetPrizeRandomSeed(tbPrize)
@@ -982,7 +982,7 @@ for nGlbId = 1, ActivityMaxCount do
 				elseif nPrizeDiff == 13 then
 					--¸ø²Ø±¦Ïä
 					AddItem(2,1,30341,nOrder);
-					gf_WriteLogEx(EVENT_LOG_TITLE, "§æi phÇn th­ëng cuèi cïng", nOrder, "Tµng R­¬ng");
+					gf_WriteLogEx(EVENT_LOG_TITLE, "§æi phÇn th­ëng cuèi cïng", nOrder, "Treasure Chest");
 				elseif nPrizeDiff == 14 then
 					--¸ø½ð×Ó
 					Earn(nOrder*10000);
@@ -991,7 +991,7 @@ for nGlbId = 1, ActivityMaxCount do
 					--¸øÄ¾Ïä+XU
 					AddItem(2,1,30340,nOrder);
 					AddItem(2,1,30230,66);
-					gf_WriteLogEx(EVENT_LOG_TITLE, "§æi phÇn th­ëng cuèi cïng", nOrder, "Méc R­¬ng + XU");
+					gf_WriteLogEx(EVENT_LOG_TITLE, "§æi phÇn th­ëng cuèi cïng", nOrder, "Wooden Chest + Coins");
 				elseif nPrizeDiff == 16 then
 					--²ÆÉñ±¦Ïä
 					AddItem(2,1,30344,nOrder);
@@ -1057,7 +1057,7 @@ for nGlbId = 1, ActivityMaxCount do
 				elseif nPrizeDiff == 30 then
 					gf_ModifyExp(1000000000);
 					AwardGenuineQi(74000);
-       	 			gf_WriteLogEx(EVENT_LOG_TITLE, "§æi phÇn th­ëng cuèi cïng", nOrder, "74000 Ch©n KhÝ + 1000000000 Kinh NghiÖm");
+       	 			gf_WriteLogEx(EVENT_LOG_TITLE, "§æi phÇn th­ëng cuèi cïng", nOrder, "74000 True Qi + 1000000000 Experience");
 				elseif nPrizeDiff == 31 then
 					gf_ModifyExp(2000000000);
 					ModifyReputation(3900,0);
@@ -1125,7 +1125,7 @@ for nGlbId = 1, ActivityMaxCount do
 					gf_AddItemEx2({2, 1, 1067, 1}, "§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", "Ho¹t ®éng ViÖt Nam", "1000000000 EXP + 01 §Þnh Hån Thiªn Th¹ch ThÇn Th¹ch (30 ngµy)", 30 * 24 * 3600, 1);
 				elseif nPrizeDiff == 43 then
 					gf_ModifyExp(1000000000);
-					gf_AddItemEx2({2, 1, 30345, 1}, "ChuyÓn Sinh §¬n ", "Ho¹t ®éng ViÖt Nam", "1000000000 EXP + 01 ChuyÓn Sinh §¬n", 0, 1);
+					gf_AddItemEx2({2, 1, 30345, 1}, "Reincarnation Pill", "Ho¹t ®éng ViÖt Nam", "1000000000 EXP + 01 Rebirth Pill", 0, 1);
 				elseif nPrizeDiff == 44 then
 					gf_ModifyExp(1000000000);
 					if GetTask(701) >= 0 then
@@ -1148,7 +1148,7 @@ for nGlbId = 1, ActivityMaxCount do
 					gf_WriteLogEx("Ho¹t ®éng ViÖt Nam", "§æi phÇn th­ëng cuèi cïng", nOrder, "1000000000 EXP + 5000 ®iÓm danh väng + 5000 ®iÓm s­ m«n");
 				elseif nPrizeDiff == 48 then
 					gf_ModifyExp(1000000000);
-					gf_AddItemEx2({2, 1, 30345, 1}, "ChuyÓn Sinh §¬n ", "Ho¹t ®éng ViÖt Nam", "1000000000 EXP + 01 ChuyÓn Sinh §¬n (60 ngµy, cã thÓ giao dÞch)", 60 * 24 * 3600, 1);
+					gf_AddItemEx2({2, 1, 30345, 1}, "Reincarnation Pill", "Ho¹t ®éng ViÖt Nam", "1000000000 EXP + 01 ChuyÓn Sinh §¬n (60 ngµy, cã thÓ giao dÞch)", 60 * 24 * 3600, 1);
 				elseif nPrizeDiff == 49 then
 					Event_PhucSinhPET()
 				elseif nPrizeDiff == 50 then
@@ -1215,8 +1215,8 @@ for nGlbId = 1, ActivityMaxCount do
 					gf_WriteLogEx("Ho¹t ®éng ViÖt Nam", "§æi phÇn th­ëng cña ho¹t ®éng th¸ng 04/2015", nOrder, "PhÇn th­ëng dïng Ph¸o Hoa Huy Hoµng ®¹t giíi h¹n 3");
 				elseif nPrizeDiff == 65 then
 					gf_ModifyExp(2000000000)
-					gf_AddItemEx2({1, 1, 15, 222}, "B¸nh Bét vµng", "Ho¹t ®éng ViÖt Nam", "PhÇn th­ëng phong phó cña Ph¸o Hoa Vinh Dù", 0, 1);
-					gf_AddItemEx2({1, 1, 19, 222}, "T©y B¾c Väng", "Ho¹t ®éng ViÖt Nam", "PhÇn th­ëng phong phó cña Ph¸o Hoa Vinh Dù", 0, 1);
+					gf_AddItemEx2({1, 1, 15, 222}, "Golden Flour Cake", "Ho¹t ®éng ViÖt Nam", "PhÇn th­ëng phong phó cña Ph¸o Hoa Vinh Dù", 0, 1);
+					gf_AddItemEx2({1, 1, 19, 222}, "Northwest Gaze", "Ho¹t ®éng ViÖt Nam", "PhÇn th­ëng phong phó cña Ph¸o Hoa Vinh Dù", 0, 1);
 					gf_AddItemEx2({1, 1, 17, 222}, "Minh NguyÖt D¹", "Ho¹t ®éng ViÖt Nam", "PhÇn th­ëng phong phó cña Ph¸o Hoa Vinh Dù", 0, 1);
 					gf_AddItemEx2({2, 1, 30344, 4}, "ThÇn Tµi B¶o R­¬ng", "Ho¹t ®éng ViÖt Nam", "PhÇn th­ëng phong phó cña Ph¸o Hoa Vinh Dù", 0, 1);
 					ahf_GetGaojiZhenjuan(0, 1, 1, 2)
@@ -1270,37 +1270,37 @@ function Vet_Activity_GetLastPrizeBoth(nTaskGrouId,nTaskIDSeq)
 	if tbActivity.nFlag == 1 then
 		--70Îª9ÔÂ»î¶¯
 		if tbActivity.nActivityID == 70 then
-			Say("Tiªu hao <color=red>500<color> Xu vËt phÈm nhËn ®­îc mét thó c­ìi míi \n <color=green> Thá Ngäc  \n Tèc ®é di chuyÓn 120%\n §é bÒn 888/888\n h¹n sö dông 60 ngµy cã thÓ giao dÞch b»ng Cµn Kh«n Phï <color>\n",2,"§ång ý/#Vet_Activity_GetAdditionPrize("..tbActivity.nActivityID..","..nTaskGrouId..","..nTaskIDSeq..")","T¹i h¹ chØ xem qua th«i/nothing");
+			Say("Tiªu hao <color=red>500<color> Xu vËt phÈm nhËn ®­îc mét thó c­ìi míi \n <color=green> Thá Ngäc  \n Tèc ®é di chuyÓn 120%\n §é bÒn 888/888\n h¹n sö dông 60 ngµy cã thÓ giao dÞch b»ng Cµn Kh«n Phï <color>\n",2,"Agree/#Vet_Activity_GetAdditionPrize("..tbActivity.nActivityID..","..nTaskGrouId..","..nTaskIDSeq..")","T¹i h¹ chØ xem qua th«i/nothing");
 			return
 		end
 		--76ÎªÊ¥µ®»î¶¯
 		if tbActivity.nActivityID == 76 then
-			Say(format("Tiªu hao <color=red>%dXU<color> nhËn ®­îc 1 <color=green>Xe TuÇn Léc<color> (h¹n sö dông 45 ngµy) vµ <color=green>Bé ngo¹i trang Noel<color> (cã thÓ giao dÞch)", 888), 2, "§ång ý/#Vet_Activity_GetAdditionPrize_76("..tbActivity.nActivityID..","..nTaskGrouId..","..nTaskIDSeq..")", "T¹i h¹ chØ xem qua th«i/nothing");
+			Say(format("Tiªu hao <color=red>%dXU<color> nhËn ®­îc 1 <color=green>Xe TuÇn Léc<color> (h¹n sö dông 45 ngµy) vµ <color=green>Bé ngo¹i trang Noel<color> (cã thÓ giao dÞch)", 888), 2, "Agree/#Vet_Activity_GetAdditionPrize_76("..tbActivity.nActivityID..","..nTaskGrouId..","..nTaskIDSeq..")", "T¹i h¹ chØ xem qua th«i/nothing");
 			return
 		end
 		--103,11ÔÂ»î¶¯
 		if tbActivity.nActivityID == 103 then
-			Say("NhËn tÊt c¶ phÇn th­ëng 2.000.000.000 kinh nghiÖm vµ 2 Trïng Sinh §¬n ( 30 ngµy)", 2, "§ång ý/#Vet_Activity_GetAdditionPrize_103("..tbActivity.nActivityID..","..nTaskGrouId..","..nTaskIDSeq..")", "T¹i h¹ chØ xem qua th«i/nothing")
+			Say("NhËn tÊt c¶ phÇn th­ëng 2.000.000.000 kinh nghiÖm vµ 2 Trïng Sinh §¬n ( 30 ngµy)", 2, "Agree/#Vet_Activity_GetAdditionPrize_103("..tbActivity.nActivityID..","..nTaskGrouId..","..nTaskIDSeq..")", "T¹i h¹ chØ xem qua th«i/nothing")
 			return
 		end
 		--107,1ÔÂ»î¶¯
 		if tbActivity.nActivityID == 107 then
-			Say("PhÇn th­ëng sö dông B¸nh Ch­ng vµ B¸nh TÐt ®¹t ®Õn giíi h¹n", 2, "§ång ý/#Vet_Activity_GetAdditionPrize_107("..tbActivity.nActivityID..","..nTaskGrouId..","..nTaskIDSeq..")", "T¹i h¹ chØ xem qua th«i/nothing")
+			Say("PhÇn th­ëng sö dông B¸nh Ch­ng vµ B¸nh TÐt ®¹t ®Õn giíi h¹n", 2, "Agree/#Vet_Activity_GetAdditionPrize_107("..tbActivity.nActivityID..","..nTaskGrouId..","..nTaskIDSeq..")", "T¹i h¹ chØ xem qua th«i/nothing")
 			return
 		end
 		--112,2ÔÂ»î¶¯
 		if tbActivity.nActivityID == 112 then
-			Say("PhÇn th­ëng sö dông Chocolare Chips Muffin vµ  Dark Chocolate tèi ®a ", 2, "§ång ý/#Vet_Activity_GetAdditionPrize_112("..tbActivity.nActivityID..","..nTaskGrouId..","..nTaskIDSeq..")", "T¹i h¹ chØ xem qua th«i/nothing")
+			Say("PhÇn th­ëng sö dông Chocolare Chips Muffin vµ  Dark Chocolate tèi ®a ", 2, "Agree/#Vet_Activity_GetAdditionPrize_112("..tbActivity.nActivityID..","..nTaskGrouId..","..nTaskIDSeq..")", "T¹i h¹ chØ xem qua th«i/nothing")
 			return
 		end
 		--123,5ÔÂ»î¶¯
 		if tbActivity.nActivityID == 123 then
-			Say("2000000000 ®iÓm kinh nghiÖm +01 chuyÓn sinh ®¬n (30 ngµy )+200®iÓm linh lùc pet ", 2, "§ång ý/#Vet_Activity_GetAdditionPrize_123("..tbActivity.nActivityID..","..nTaskGrouId..","..nTaskIDSeq..")", "T¹i h¹ chØ xem qua th«i/nothing")
+			Say("2000000000 ®iÓm kinh nghiÖm +01 chuyÓn sinh ®¬n (30 ngµy )+200®iÓm linh lùc pet ", 2, "Agree/#Vet_Activity_GetAdditionPrize_123("..tbActivity.nActivityID..","..nTaskGrouId..","..nTaskIDSeq..")", "T¹i h¹ chØ xem qua th«i/nothing")
 			return
 		end
 		--135,10ÔÂ»î¶¯
 		if tbActivity.nActivityID == 135 then
-			Say("Hoµn thµnh giai ®o¹n 2 cña phôc sinh ®ång hµnh (Tiªu hao 2500 Tiªu Dao Ngäc) (Nh©n vËt cÇn hoµn thµnh giai ®o¹n 1 cña phôc sinh ®ång hµnh míi cã thÓ nhËn th­ëng)", 2, "§ång ý/#Vet_Activity_GetAdditionPrize_135("..tbActivity.nActivityID..","..nTaskGrouId..","..nTaskIDSeq..")", "T¹i h¹ chØ xem qua th«i/nothing")
+			Say("Hoµn thµnh giai ®o¹n 2 cña phôc sinh ®ång hµnh (Tiªu hao 2500 Tiªu Dao Ngäc) (Nh©n vËt cÇn hoµn thµnh giai ®o¹n 1 cña phôc sinh ®ång hµnh míi cã thÓ nhËn th­ëng)", 2, "Agree/#Vet_Activity_GetAdditionPrize_135("..tbActivity.nActivityID..","..nTaskGrouId..","..nTaskIDSeq..")", "T¹i h¹ chØ xem qua th«i/nothing")
 --			Say("Chän phÇn th­ëng sö dông tèi ®a c¶ 2 lo¹i", 3, "Hoµn thµnh giai ®o¹n 2 nhiÖm vô Phôc sinh B¹n §ång Hµnh (tiªu hao 2500 tiªu dao ngäc)/#Vet_Activity_GetAdditionPrize_135("..tbActivity.nActivityID..","..nTaskGrouId..","..nTaskIDSeq..")", "Chän phÇn th­ëng 2 tû ®iÓm kinh nghiÖm/#Vet_Activity_GetAdditionPrize_135a("..tbActivity.nActivityID..","..nTaskGrouId..","..nTaskIDSeq..")", "T¹i h¹ chØ xem qua th«i/nothing")
 --			Say("Hoµn thµnh giai ®o¹n 2 cña phôc sinh ®ång hµnh (Tiªu hao 2500 Tiªu Dao Ngäc) (Nh©n vËt cÇn hoµn thµnh giai ®o¹n 1 cña phôc sinh ®ång hµnh míi cã thÓ nhËn th­ëng)", 2, "§ång ý/#Vet_Activity_GetAdditionPrize_135("..tbActivity.nActivityID..","..nTaskGrouId..","..nTaskIDSeq..")", "T¹i h¹ chØ xem qua th«i/nothing")
 			return
@@ -1328,7 +1328,7 @@ end
 
 -- Mo rong doi event
 function VNG_DoiEvent_Form1()
-	AskClientForNumber("VNG_DoiEvent_Kieu1", 1, 999, "Sè l­îng (1-999)")
+	AskClientForNumber("VNG_DoiEvent_Kieu1", 1, 999, "Quantity (1-999)")
 end
 
 function VNG_DoiEvent_Kieu1(nCount)
@@ -1366,7 +1366,7 @@ function VNG_DoiEvent_Kieu1(nCount)
 	end
 end
 function VNG_DoiEvent_Form2()
-	AskClientForNumber("VNG_DoiEvent_Kieu2", 1, 999, "Sè l­îng (1-999)")
+	AskClientForNumber("VNG_DoiEvent_Kieu2", 1, 999, "Quantity (1-999)")
 end
 
 function VNG_DoiEvent_Kieu2(nCount)
@@ -1405,7 +1405,7 @@ function VNG_DoiEvent_Kieu2(nCount)
 end
 
 function VNG_DoiEvent_Form3()
-	AskClientForNumber("VNG_DoiEvent_Kieu3", 1, 999, "Sè l­îng (1-999)")
+	AskClientForNumber("VNG_DoiEvent_Kieu3", 1, 999, "Quantity (1-999)")
 end
 
 function VNG_DoiEvent_Kieu3(nCount)
@@ -1419,12 +1419,12 @@ function VNG_DoiEvent_Kieu3(nCount)
 	end
 
 	if DelItem(2,1,30512, 5 * nCount) == 1 and DelItem(2,1,30603, 2 * nCount) == 1 then
-		gf_AddItemEx2({2, 1, 30514, nCount}, "MÇm C©y", EVENT_LOG_TITLE , "nhËn")
+		gf_AddItemEx2({2, 1, 30514, nCount}, "Tree Sprout", EVENT_LOG_TITLE , "nhËn")
 	end
 end
 
 function VNG_DoiEvent_Form4()
-	AskClientForNumber("VNG_DoiEvent_Kieu4", 1, 999, "Sè l­îng (1-999)")
+	AskClientForNumber("VNG_DoiEvent_Kieu4", 1, 999, "Quantity (1-999)")
 end
 
 function VNG_DoiEvent_Kieu4(nCount)
@@ -1438,7 +1438,7 @@ function VNG_DoiEvent_Kieu4(nCount)
 	end
 
 	if DelItem(2,1,30512, 5 * nCount) == 1 and DelItem(2,1,30513, 1 * nCount) == 1 then
-		gf_AddItemEx2({2, 1, 30514, nCount}, "MÇm C©y", EVENT_LOG_TITLE , "nhËn")
+		gf_AddItemEx2({2, 1, 30514, nCount}, "Tree Sprout", EVENT_LOG_TITLE , "nhËn")
 	end
 end
 
@@ -1461,9 +1461,9 @@ function Vet_Activity_GetAdditionPrize_76(nActivityID,nTaskGrouId,nTaskIDSeq)
 		SetItemExpireTime(nItemIndex, 45 * 24 * 3600);
 		--¸øÊ¥µ®Ì××°
 		local tChrismas = {
-			{{"Nãn gi¸ng sinh chuÈn", {0,108,109,1}}, {"Nãn gi¸ng sinh kh«i ng«", {0,108,110,1}}, {"Nãn gi¸ng sinh gîi c¶m", {0,108,112,1}}, {"Nãn gi¸ng sinh nhá", {0,108,111,1}}},
-			{{"Th­îng y gi¸ng sinh chuÈn", {0,109,109,1}}, {"Gi¸ng sinh kh«i ng«", {0,109,110,1}}, {"Th­¬ng y gi¸ng sinh gîi c¶m", {0,109,112,1}}, {"Th­¬ng y gi¸ng sinh KiÒu n÷", {0,109,111,1}}},
-			{{"H¹ y Gi¸ng sinh chuÈn", {0,110,73,1}}, {"Trang phôc gi¸ng sinh kh«i ng«", {0,110,74,1}}, {"H¹ y gi¸ng sinh n÷ gîi c¶m", {0,110,76,1}}, {"Gi¸ng sinh KiÒu n÷", {0,110,75,1}}},
+			{{"Standard Christmas Hat", {0,108,109,1}}, {"Imposing Christmas Hat", {0,108,110,1}}, {"Alluring Christmas Hat", {0,108,112,1}}, {"Small Christmas Hat", {0,108,111,1}}},
+			{{"Standard Christmas Top", {0,109,109,1}}, {"Imposing Christmas Outfit", {0,109,110,1}}, {"Alluring Christmas Top", {0,109,112,1}}, {"Charming Women's Christmas Top", {0,109,111,1}}},
+			{{"Standard Christmas Bottom", {0,110,73,1}}, {"Trang phôc gi¸ng sinh kh«i ng«", {0,110,74,1}}, {"Alluring Women's Christmas Bottom", {0,110,76,1}}, {"Charming Women's Christmas", {0,110,75,1}}},
 		};
 		local nBody = GetBody();
 		local nSize = getn(tChrismas);
@@ -1511,7 +1511,7 @@ function Vet_Activity_GetAdditionPrize_103(nActivityID,nTaskGrouId,nTaskIDSeq)
 	--ÉèÖÃÒÑÁìÈ¡±ê¼Ç
 	Vet_Activity_SetItemUseInfo(nTaskGrouId,nTaskIDSeq,tbActivity.nGetBothFinalPrize,1);
 	gf_ModifyExp(2000000000);
-	gf_AddItemEx2({2,1,30345,2}, "ChuyÓn Sinh §¬n ", EVENT_LOG_TITLE, "§æi phÇn phÇn th­ëng cuèi", 30*24*3600, 1);
+	gf_AddItemEx2({2,1,30345,2}, "Reincarnation Pill", EVENT_LOG_TITLE, "§æi phÇn phÇn th­ëng cuèi", 30*24*3600, 1);
 end
 
 --need to complete by VET-----------------------------------
@@ -1650,7 +1650,7 @@ function Vet_Complete_Revive_OnePartner_SecondStage()	--(nActivityID,nTaskGrouId
 --	gf_WriteLogEx(EVENT_LOG_TITLE, "§æi phÇn th­ëng cuèi cïng", 2500, "Tiªu hao Tiªu Dao Ngäc hoµn thµnh giai ®o¹n 2 cña phôc sinh ®ång hµnh");		
 	--ÉèÖÃÒÑÁìÈ¡±ê¼Ç
 --	Vet_Activity_SetItemUseInfo(nTaskGrouId,nTaskIDSeq,tbActivity.nGetBothFinalPrize,1);
-	local szNpcName = "<color=green>Sù kiÖn Event th¸ng 11<color>: "
+	local szNpcName = "<color=green>November Event<color>:"
 	local tSay = {}
 	local tHeader = szNpcName.." §¹i hiÖp h·y chän h­íng Phôc Sinh cho B¹n §ång Hµnh cña m×nh."
 	tinsert(tSay, format("Hç trî hÖ Néi C«ng/#add_buffEvent2(1)"))		
@@ -1714,7 +1714,7 @@ function Vet_Activity_GetAdditionPrize_123(nActivityID,nTaskGrouId,nTaskIDSeq)
 	--ÉèÖÃÒÑÁìÈ¡±ê¼Ç
 	Vet_Activity_SetItemUseInfo(nTaskGrouId,nTaskIDSeq,tbActivity.nGetBothFinalPrize,1);
 	gf_ModifyExp(2000000000);
-	gf_AddItemEx2({2, 1, 30345, 1}, "ChuyÓn Sinh §¬n ", "Ho¹t ®éng ViÖt Nam", "Sö dông  sero d©u t­¬i vµ sero b¹c hµ  ®¹t ®­îc phÇn th­ëng cao nhÊt", 30 * 24 * 3600, 1)
+	gf_AddItemEx2({2, 1, 30345, 1}, "Reincarnation Pill", "Ho¹t ®éng ViÖt Nam", "Sö dông  sero d©u t­¬i vµ sero b¹c hµ  ®¹t ®­îc phÇn th­ëng cao nhÊt", 30 * 24 * 3600, 1)
 	Pet_AddGP(200)
 	Msg2Player("B¹n nhËn ®­îc 200 §iÓm Linh Lùc B¹n §ång Hµnh")
 	gf_WriteLogEx(EVENT_LOG_TITLE, "PhÇn th­ëng sö dông tèi ®a", "PhÇn th­ëng sö dông tèi ®a 2 lo¹i");
@@ -1765,7 +1765,7 @@ function Vet_201404_UseItemAward()
   	{5, 1},
   }
   local nIndex = gf_GetRandItemByTable(tItem, gf_SumRandBase(tItem), 1)
-  gf_AddItemEx2({2,1,30641, tItem[nIndex][1]}, "tö s¾c b¶o th¹ch ", "2XU", "Sö dông item nhËn th­ëng ", 0, 1)
+  gf_AddItemEx2({2,1,30641, tItem[nIndex][1]}, "Four-color gemstone", "2XU", "Sö dông item nhËn th­ëng ", 0, 1)
 end
 
 function Pet_AddGP(nPoint)
@@ -1831,7 +1831,7 @@ function Vet_Activity_GetAdditionPrize_135(nActivityID,nTaskGrouId,nTaskIDSeq)
 --	gf_WriteLogEx(EVENT_LOG_TITLE, "§æi phÇn th­ëng cuèi cïng", 2500, "Tiªu hao Tiªu Dao Ngäc hoµn thµnh giai ®o¹n 2 cña phôc sinh ®ång hµnh");		
 	--ÉèÖÃÒÑÁìÈ¡±ê¼Ç
 --	Vet_Activity_SetItemUseInfo(nTaskGrouId,nTaskIDSeq,tbActivity.nGetBothFinalPrize,1);
-	local szNpcName = "<color=green>Sù kiÖn Event th¸ng 11<color>: "
+	local szNpcName = "<color=green>November Event<color>:"
 	local tSay = {}
 	local tHeader = szNpcName.." §¹i hiÖp h·y chän h­íng Phôc Sinh cho B¹n §ång Hµnh cña m×nh."
 	tinsert(tSay, format("Hç trî hÖ Néi C«ng/#add_buffEvent(1,%s%s%s)",tbActivity.nActivityID,nTaskGrouId,nTaskIDSeq))		
@@ -1871,7 +1871,7 @@ function add_buffEvent(nWay,nActivityID,nTaskGrouId,nTaskIDSeq)
 	--Vet_Activity_SetItemUseInfo(nTaskGrouId,nTaskIDSeq,tbActivity.nGetBothFinalPrize,1);		
 	SetTask(2788,1)	--nhËn phÇn th­ëng cuèi khi sö dông tèi ®a 2 vËt phÈm
 	SetTask(TSK_PET_PS_GIAIDOAN_B, GetTask(TSK_PET_PS_GIAIDOAN_B) + 1) --t¨ng b­íc nhiÖm vô lªn gi¸ trÞ 3 lµ hoµn thµnh xong giai ®o¹n 2
-	gf_WriteLogEx("PHUC SINH PET", "xong giai ®o¹n 2", 1, "Hoµn thµnh Giai §o¹n 2")												
+	gf_WriteLogEx("PHUC SINH PET", "Phase 2 finished", 1, "Hoµn thµnh Giai §o¹n 2")												
 		local nIsPS = floor(GetTask(TSK_PET_PS_GIAIDOAN_B)/10) --mod 10 lµ gi¸ trÞ x¸c ®Þnh cã Phôc Sinh PET 
 		nIsPS = (nIsPS +1) *10 + mod(GetTask(TSK_PET_PS_GIAIDOAN_B),10)
 		SetTask(TSK_PET_PS_GIAIDOAN_B, nIsPS) --set gi¸ trÞ x¸c ®Þnh cã Phôc Sinh PET
@@ -1899,7 +1899,7 @@ function add_buffEvent(nWay,nActivityID,nTaskGrouId,nTaskIDSeq)
 		end
 		-------------
 		Msg2Player("Chóc mõng ®¹i hiÖp ®· hoµn thµnh nhiÖm vô Phôc Sinh cho B¹n §ång Hµnh !!!!")		
-		gf_WriteLogEx("PHUC SINH PET BK", "xong giai ®o¹n 2", 1, "Hoµn thµnh Giai §o¹n buff")			
+		gf_WriteLogEx("PHUC SINH PET BK", "Phase 2 finished", 1, "Hoµn thµnh Giai §o¹n buff")			
 	
 end
 
@@ -1942,7 +1942,7 @@ function add_buffEvent2(nWay)
 --	self:GiveItemPrize(tbPrizeInfo.tbFinalPrize,format(self.tbHintString[10][3],tbPrizeInfo.tbItemInfo[4]))
 	---------------
 	SetTask(TSK_PET_PS_GIAIDOAN_B, GetTask(TSK_PET_PS_GIAIDOAN_B) + 1) --t¨ng b­íc nhiÖm vô lªn gi¸ trÞ 3 lµ hoµn thµnh xong giai ®o¹n 2
-	gf_WriteLogEx("PHUC SINH PET", "xong giai ®o¹n 2", 1, "Hoµn thµnh Giai §o¹n 2")												
+	gf_WriteLogEx("PHUC SINH PET", "Phase 2 finished", 1, "Hoµn thµnh Giai §o¹n 2")												
 		local nIsPS = floor(GetTask(TSK_PET_PS_GIAIDOAN_B)/10) --mod 10 lµ gi¸ trÞ x¸c ®Þnh cã Phôc Sinh PET 
 		nIsPS = (nIsPS +1) *10 + mod(GetTask(TSK_PET_PS_GIAIDOAN_B),10)
 		SetTask(TSK_PET_PS_GIAIDOAN_B, nIsPS) --set gi¸ trÞ x¸c ®Þnh cã Phôc Sinh PET
@@ -1970,7 +1970,7 @@ function add_buffEvent2(nWay)
 		end
 		-------------
 		Msg2Player("Chóc mõng ®¹i hiÖp ®· hoµn thµnh nhiÖm vô Phôc Sinh cho B¹n §ång Hµnh !!!!")		
-		gf_WriteLogEx("PHUC SINH PET BK", "xong giai ®o¹n 2", 1, "Hoµn thµnh Giai §o¹n buff")			
+		gf_WriteLogEx("PHUC SINH PET BK", "Phase 2 finished", 1, "Hoµn thµnh Giai §o¹n buff")			
 	
 end
 

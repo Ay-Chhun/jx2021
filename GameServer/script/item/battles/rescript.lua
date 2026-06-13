@@ -38,9 +38,9 @@ CleanInteractive()	--¶Ï¿ª½»»¥
 	end
 
 	if( HEROCARD == 1 ) then
-		Say ( "                             <color=red>§¹i Tèng anh hïng lÖnh<color><enter><enter><enter> Phe cã ng­êi ®«ng sÏ chiÕm ­u thÕ nh­ng ®iÓm chiÕn c«ng nhËn ®­îc sÏ İt ®i.<enter> B¹n muèn ®Õn b¸o danh phe nµo?", 3, "                           Vµo ®iÓm b¸o danh phe Tèng/ToSong", "                           T×m hiÓu Nh¹n M«n quan/bt_onbattleinfo", "                           Xuşt...Ta lµ ®µo binh./Cancel" );
+		Say ( "                             <color=red>§¹i Tèng anh hïng lÖnh<color><enter><enter><enter> Phe cã ng­êi ®«ng sÏ chiÕm ­u thÕ nh­ng ®iÓm chiÕn c«ng nhËn ®­îc sÏ İt ®i.<enter> B¹n muèn ®Õn b¸o danh phe nµo?", 3, "                           Vµo ®iÓm b¸o danh phe Tèng/ToSong", "                           T×m hiÓu Nh¹n M«n quan/bt_onbattleinfo", "                           Leave...I am a deserter./Cancel" );
 	else
-		Say ( "                             <color=red>§¹i Liªu anh hïng lÖnh<color><enter><enter><enter> Phe cã ng­êi ®«ng sÏ chiÕm ­u thÕ nh­ng ®iÓm chiÕn c«ng nhËn ®­îc sÏ İt ®i.<enter> B¹n muèn ®Õn b¸o danh phe nµo?", 3, "                           Vµo ®iÓm b¸o danh phe Liªu/ToLiao",  "                           T×m hiÓu Nh¹n M«n quan/bt_onbattleinfo", "                           Xuşt...Ta lµ ®µo binh./Cancel" );
+		Say ( "                             <color=red>§¹i Liªu anh hïng lÖnh<color><enter><enter><enter> Phe cã ng­êi ®«ng sÏ chiÕm ­u thÕ nh­ng ®iÓm chiÕn c«ng nhËn ®­îc sÏ İt ®i.<enter> B¹n muèn ®Õn b¸o danh phe nµo?", 3, "                           Vµo ®iÓm b¸o danh phe Liªu/ToLiao",  "                           T×m hiÓu Nh¹n M«n quan/bt_onbattleinfo", "                           Leave...I am a deserter./Cancel" );
 	end
 	-- ¿Õ¸ñ²»Òª¸ÄÁË£¬ÎªÁË¾ÓÖĞÏÔÊ¾
 	return 1;

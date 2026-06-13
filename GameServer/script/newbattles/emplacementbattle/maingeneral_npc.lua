@@ -4,7 +4,7 @@
 Include("\\script\\newbattles\\emplacementbattle\\emplacementbattle_head.lua");
 
 sSongGeneral = "D≠¨ng T∏i H≠ng";
-sLiaoGeneral = "Ti™u Vi‘n S¨n";
+sLiaoGeneral = "Xiao Yuan Shan";
 -- Bit quy Æﬁnh tÊng t n c´ng cÒa Ph∏o Æµi
 SONG_BIT = 3
 LIAO_BIT = 7
@@ -19,10 +19,10 @@ function main()
 		NpcChat(GetTargetNpc(),"Chπy th´i! Lˆa k–o Æ’n n¨i rÂi!");
 	end;
 	local selTab = {			
-			"BËi c∂nh/knowbackground",
+			"Background/knowbackground",
 			"Quy tæc chi’n tr≠Íng/knowbattlerule",
 			"Nguy™n So∏i ph∏t l÷nh tÊng t n c´ng/battle_charge",
-			"K’t thÛc ÆËi thoπi/nothing",
+			"End dialogue/nothing",
 			}
 	local sNpcName = "";
 	if BT_GetCamp() == SONG_ID then
@@ -51,5 +51,5 @@ function knowbattlerule()
 	else
 		sNpcName = sLiaoGeneral;
 	end;
-	Talk(1,"main","<color=green>"..sNpcName.."<color>: <enter>1: Phe nµo chi’m l‹nh ph∏o Æµi Nhπn M´n Quan l©u nh t sœ chi’n thæng<enter>2: Khu v˘c chi’n Æ u, kh´ng hπn ch’ pk<enter>3: ßi”m t›ch lÚy tËi Æa <color=yellow>"..POINT_LIMITED.."<color><enter>4: NhÀn Æ≠Óc <color=yellow>"..EMPEROR_AWARD_POINT.."<color> Æi”m  Æi”m t›ch lÚy, kinh nghi÷m <color=yellow>"..floor(EMPEROR_AWARD_EXP/10000).."<color>vπn<enter>5: ß≠Óc b«u lµm Ng´i sao chi’n tr≠Íng+Æi”m t›ch lÚy <color=yellow>"..BATTLE_STAR_AWARD_POINT.."<color> Æi”m  Æi”m t›ch lÚy, kinh nghi÷m <color=yellow>"..floor(BATTLE_STAR_AWARD_EXP/10000).."<color> vπn");
+	Talk(1,"main","<color=green>"..sNpcName.."<color>: <enter>1: Phe nµo chi’m l‹nh ph∏o Æµi Nhπn M´n Quan l©u nh t sœ chi’n thæng<enter>2: Khu v˘c chi’n Æ u, kh´ng hπn ch’ pk<enter>3: ßi”m t›ch lÚy tËi Æa <color=yellow>"..POINT_LIMITED.."<color><enter>4: You receive <color=yellow>"..EMPEROR_AWARD_POINT.."<color> Æi”m  Æi”m t›ch lÚy, kinh nghi÷m <color=yellow>"..floor(EMPEROR_AWARD_EXP/10000).."<color>vπn<enter>5: ß≠Óc b«u lµm Ng´i sao chi’n tr≠Íng+Æi”m t›ch lÚy <color=yellow>"..BATTLE_STAR_AWARD_POINT.."<color> Æi”m  Æi”m t›ch lÚy, kinh nghi÷m <color=yellow>"..floor(BATTLE_STAR_AWARD_EXP/10000).."<color> thousand");
 end;

@@ -5,17 +5,17 @@ Tra c¯u vÀt ph»m	ßºng c p vÀt ph»m	Loπi lÌn	Loπi phÙ	Loπi nh·	T™n vÀt ph»m
 1002	50	0	101	252	Kim Cang D≠¨ng Trang			
 1003	70	0	101	272	Kim Cang Dao Trang			
 1004	50	0	103	251	Kim Cang D≠¨ng Qu∏n			
-1005	70	0	103	271	Kim Cang Dao Qu∏n			
+1005	70	0	103	271	Vajra Saber, headgear			
 1006	50	0	103	252	Kim Cang D≠¨ng Qu∏n			
-1007	70	0	103	272	Kim Cang Dao Qu∏n			
+1007	70	0	103	272	Vajra Saber, headgear			
 1008	50	0	100	251	Kim Cang D≠¨ng Th≠Íng			
-1009	70	0	100	271	Kim Cang Dao Th≠Íng			
+1009	70	0	100	271	Vajra Saber, common			
 1010	50	0	100	252	Kim Cang D≠¨ng Th≠Íng			
-1011	70	0	100	272	Kim Cang Dao Th≠Íng			
+1011	70	0	100	272	Vajra Saber, common			
 1012	50	0	102	251	Kim Cang D≠¨ng BÈi			
-1013	70	0	102	271	Kim Cang Dao BÈi			
+1013	70	0	102	271	Vajra Saber, belt			
 1014	50	0	102	252	Kim Cang D≠¨ng BÈi			
-1015	70	0	102	272	Kim Cang Dao BÈi			
+1015	70	0	102	272	Vajra Saber, belt			
 1016	50	0	3	251	Kim Cang D≠¨ng ßao			
 1017	70	0	3	271	Kim Cang Dao ßao			
 1018	50	0	3	252	Kim Cang D≠¨ng ßao			
@@ -25,101 +25,101 @@ Tra c¯u vÀt ph»m	ßºng c p vÀt ph»m	Loπi lÌn	Loπi phÙ	Loπi nh·	T™n vÀt ph»m
 1022	50	0	5	252	Kim Cang D≠¨ng C´n			
 1023	70	0	5	272	Kim Cang Dao C´n			
 1024	50	0	101	351	Nh≠ Lai D≠¨ng Trang			
-1025	70	0	101	371	Nh≠ Lai Dao Trang			
+1025	70	0	101	371	Tathagata Saber, attire			
 1026	50	0	101	352	Nh≠ Lai D≠¨ng Trang			
-1027	70	0	101	372	Nh≠ Lai Dao Trang			
+1027	70	0	101	372	Tathagata Saber, attire			
 1028	50	0	103	351	Nh≠ Lai D≠¨ng Qu∏n			
-1029	70	0	103	371	Nh≠ Lai Dao Qu∏n			
+1029	70	0	103	371	Tathagata Saber, headgear			
 1030	50	0	103	352	Nh≠ Lai D≠¨ng Qu∏n			
-1031	70	0	103	372	Nh≠ Lai Dao Qu∏n			
+1031	70	0	103	372	Tathagata Saber, headgear			
 1032	50	0	100	351	Nh≠ Lai D≠¨ng Th≠Íng			
-1033	70	0	100	371	Nh≠ Lai Dao Th≠Íng			
+1033	70	0	100	371	Tathagata Saber, common			
 1034	50	0	100	352	Nh≠ Lai D≠¨ng Th≠Íng			
-1035	70	0	100	372	Nh≠ Lai Dao Th≠Íng			
+1035	70	0	100	372	Tathagata Saber, common			
 1036	50	0	102	351	Nh≠ Lai D≠¨ng BÈi			
-1037	70	0	102	371	Nh≠ Lai Dao BÈi			
+1037	70	0	102	371	Tathagata Saber, belt			
 1038	50	0	102	352	Nh≠ Lai D≠¨ng BÈi			
-1039	70	0	102	372	Nh≠ Lai Dao BÈi			
+1039	70	0	102	372	Tathagata Saber, belt			
 1040	50	0	8	351	Nh≠ Lai D≠¨ng Tr≠Óng			
-1041	70	0	8	371	Nh≠ Lai Dao Tr≠Óng			
+1041	70	0	8	371	Tathagata Saber, staff			
 1042	50	0	8	352	Nh≠ Lai D≠¨ng Tr≠Óng			
-1043	70	0	8	372	Nh≠ Lai Dao Tr≠Óng			
+1043	70	0	8	372	Tathagata Saber, staff			
 1044	50	0	101	451	La H∏n D≠¨ng Trang			
-1045	70	0	101	471	La H∏n Dao Trang			
+1045	70	0	101	471	Arhat Saber, attire			
 1046	50	0	101	452	La H∏n D≠¨ng Trang			
-1047	70	0	101	472	La H∏n Dao Trang			
+1047	70	0	101	472	Arhat Saber, attire			
 1048	50	0	103	451	La H∏n D≠¨ng Qu∏n			
-1049	70	0	103	471	La H∏n Dao Qu∏n			
+1049	70	0	103	471	Arhat Saber, headgear			
 1050	50	0	103	452	La H∏n D≠¨ng Qu∏n			
-1051	70	0	103	472	La H∏n Dao Qu∏n			
+1051	70	0	103	472	Arhat Saber, headgear			
 1052	50	0	100	451	La H∏n D≠¨ng Th≠Íng			
-1053	70	0	100	471	La H∏n Dao Th≠Íng			
+1053	70	0	100	471	Arhat Saber, common			
 1054	50	0	100	452	La H∏n D≠¨ng Th≠Íng			
-1055	70	0	100	472	La H∏n Dao Th≠Íng			
+1055	70	0	100	472	Arhat Saber, common			
 1056	50	0	102	451	La H∏n D≠¨ng BÈi			
-1057	70	0	102	471	La H∏n Dao BÈi			
+1057	70	0	102	471	Arhat Saber, belt			
 1058	50	0	102	452	La H∏n D≠¨ng BÈi			
-1059	70	0	102	472	La H∏n Dao BÈi			
+1059	70	0	102	472	Arhat Saber, belt			
 1060	50	0	0	451	La H∏n D≠¨ng ThÒ			
 1061	70	0	0	471	La H∏n Dao ThÒ			
 1062	50	0	0	452	La H∏n D≠¨ng ThÒ			
 1063	70	0	0	472	La H∏n Dao ThÒ			
 1064	50	0	101	651	Hi÷p Kh∏ch D≠¨ng Trang			
-1065	70	0	101	671	Hi÷p Kh∏ch Dao Trang			
+1065	70	0	101	671	Knight-Errant Saber, attire			
 1066	50	0	101	652	Hi÷p Kh∏ch D≠¨ng Trang			
-1067	70	0	101	672	Hi÷p Kh∏ch Dao Trang			
+1067	70	0	101	672	Knight-Errant Saber, attire			
 1068	50	0	101	653	Hi÷p Kh∏ch D≠¨ng Trang			
-1069	70	0	101	673	Hi÷p Kh∏ch Dao Trang			
+1069	70	0	101	673	Knight-Errant Saber, attire			
 1070	50	0	101	654	Hi÷p Kh∏ch D≠¨ng Trang			
-1071	70	0	101	674	Hi÷p Kh∏ch Dao Trang			
+1071	70	0	101	674	Knight-Errant Saber, attire			
 1072	50	0	103	651	Hi÷p Kh∏ch D≠¨ng Qu∏n			
-1073	70	0	103	671	Hi÷p Kh∏ch Dao Qu∏n			
+1073	70	0	103	671	Knight-Errant Saber, headgear			
 1074	50	0	103	652	Hi÷p Kh∏ch D≠¨ng Qu∏n			
-1075	70	0	103	672	Hi÷p Kh∏ch Dao Qu∏n			
+1075	70	0	103	672	Knight-Errant Saber, headgear			
 1076	50	0	103	653	Hi÷p Kh∏ch D≠¨ng Qu∏n			
-1077	70	0	103	673	Hi÷p Kh∏ch Dao Qu∏n			
+1077	70	0	103	673	Knight-Errant Saber, headgear			
 1078	50	0	103	654	Hi÷p Kh∏ch D≠¨ng Qu∏n			
-1079	70	0	103	674	Hi÷p Kh∏ch Dao Qu∏n			
+1079	70	0	103	674	Knight-Errant Saber, headgear			
 1080	50	0	100	651	Hi÷p Kh∏ch D≠¨ng Th≠Íng			
-1081	70	0	100	671	Hi÷p Kh∏ch Dao Th≠Íng			
+1081	70	0	100	671	Knight-Errant Saber, common			
 1082	50	0	100	652	Hi÷p Kh∏ch D≠¨ng Th≠Íng			
-1083	70	0	100	672	Hi÷p Kh∏ch Dao Th≠Íng			
+1083	70	0	100	672	Knight-Errant Saber, common			
 1084	50	0	100	653	Hi÷p Kh∏ch D≠¨ng Th≠Íng			
-1085	70	0	100	673	Hi÷p Kh∏ch Dao Th≠Íng			
+1085	70	0	100	673	Knight-Errant Saber, common			
 1086	50	0	100	654	Hi÷p Kh∏ch D≠¨ng Th≠Íng			
-1087	70	0	100	674	Hi÷p Kh∏ch Dao Th≠Íng			
+1087	70	0	100	674	Knight-Errant Saber, common			
 1088	50	0	102	651	Hi÷p Kh∏ch D≠¨ng BÈi			
-1089	70	0	102	671	Hi÷p Kh∏ch Dao BÈi			
+1089	70	0	102	671	Knight-Errant Saber, belt			
 1090	50	0	102	652	Hi÷p Kh∏ch D≠¨ng BÈi			
-1091	70	0	102	672	Hi÷p Kh∏ch Dao BÈi			
+1091	70	0	102	672	Knight-Errant Saber, belt			
 1092	50	0	102	653	Hi÷p Kh∏ch D≠¨ng BÈi			
-1093	70	0	102	673	Hi÷p Kh∏ch Dao BÈi			
+1093	70	0	102	673	Knight-Errant Saber, belt			
 1094	50	0	102	654	Hi÷p Kh∏ch D≠¨ng BÈi			
-1095	70	0	102	674	Hi÷p Kh∏ch Dao BÈi			
+1095	70	0	102	674	Knight-Errant Saber, belt			
 1096	50	0	1	651	Hi÷p Kh∏ch D≠¨ng Ch©m			
-1097	70	0	1	671	Hi÷p Kh∏ch Dao Ch©m			
+1097	70	0	1	671	Knight-Errant Saber, needle			
 1098	50	0	1	652	Hi÷p Kh∏ch D≠¨ng Ch©m			
-1099	70	0	1	672	Hi÷p Kh∏ch Dao Ch©m			
+1099	70	0	1	672	Knight-Errant Saber, needle			
 1100	50	0	1	653	Hi÷p Kh∏ch D≠¨ng Ch©m			
-1101	70	0	1	673	Hi÷p Kh∏ch Dao Ch©m			
+1101	70	0	1	673	Knight-Errant Saber, needle			
 1102	50	0	1	654	Hi÷p Kh∏ch D≠¨ng Ch©m			
-1103	70	0	1	674	Hi÷p Kh∏ch Dao Ch©m			
+1103	70	0	1	674	Knight-Errant Saber, needle			
 1104	50	0	101	853	Quan ¢m D≠¨ng Trang			
-1105	70	0	101	873	Quan ¢m Dao Trang			
+1105	70	0	101	873	Guanyin Saber, attire			
 1106	50	0	101	854	Quan ¢m D≠¨ng Trang			
-1107	70	0	101	874	Quan ¢m Dao Trang			
+1107	70	0	101	874	Guanyin Saber, attire			
 1108	50	0	103	853	Quan ¢m D≠¨ng Qu∏n			
-1109	70	0	103	873	Quan ¢m Dao Qu∏n			
+1109	70	0	103	873	Guanyin Saber, headgear			
 1110	50	0	103	854	Quan ¢m D≠¨ng Qu∏n			
-1111	70	0	103	874	Quan ¢m Dao Qu∏n			
+1111	70	0	103	874	Guanyin Saber, headgear			
 1112	50	0	100	853	Quan ¢m D≠¨ng Th≠Íng			
-1113	70	0	100	873	Quan ¢m Dao Th≠Íng			
+1113	70	0	100	873	Guanyin Saber, common			
 1114	50	0	100	854	Quan ¢m D≠¨ng Th≠Íng			
-1115	70	0	100	874	Quan ¢m Dao Th≠Íng			
+1115	70	0	100	874	Guanyin Saber, common			
 1116	50	0	102	853	Quan ¢m D≠¨ng BÈi			
-1117	70	0	102	873	Quan ¢m Dao BÈi			
+1117	70	0	102	873	Guanyin Saber, belt			
 1118	50	0	102	854	Quan ¢m D≠¨ng BÈi			
-1119	70	0	102	874	Quan ¢m Dao BÈi			
+1119	70	0	102	874	Guanyin Saber, belt			
 1120	50	0	2	853	Quan ¢m D≠¨ng Ki’m			
 1121	70	0	2	873	Quan ¢m Dao Ki’m			
 1122	50	0	2	854	Quan ¢m D≠¨ng Ki’m			
@@ -145,37 +145,37 @@ Tra c¯u vÀt ph»m	ßºng c p vÀt ph»m	Loπi lÌn	Loπi phÙ	Loπi nh·	T™n vÀt ph»m
 1142	50	0	10	954	Ng‰c N˜ D≠¨ng  C«m			
 1143	70	0	10	974	Ng‰c N˜ Dao C«m			
 1144	50	0	101	1151	Gi∏ng Long D≠¨ng Trang			
-1145	70	0	101	1171	Gi∏ng Long Dao Trang			
+1145	70	0	101	1171	Subduing Dragon Saber, attire			
 1146	50	0	101	1152	Gi∏ng Long D≠¨ng Trang			
-1147	70	0	101	1172	Gi∏ng Long Dao Trang			
+1147	70	0	101	1172	Subduing Dragon Saber, attire			
 1148	50	0	101	1153	Gi∏ng Long D≠¨ng Trang			
-1149	70	0	101	1173	Gi∏ng Long Dao Trang			
+1149	70	0	101	1173	Subduing Dragon Saber, attire			
 1150	50	0	101	1154	Gi∏ng Long D≠¨ng Trang			
-1151	70	0	101	1174	Gi∏ng Long Dao Trang			
+1151	70	0	101	1174	Subduing Dragon Saber, attire			
 1152	50	0	103	1151	Gi∏ng Long D≠¨ng Qu∏n			
-1153	70	0	103	1171	Gi∏ng Long Dao Qu∏n			
+1153	70	0	103	1171	Subduing Dragon Saber, headgear			
 1154	50	0	103	1152	Gi∏ng Long D≠¨ng Qu∏n			
-1155	70	0	103	1172	Gi∏ng Long Dao Qu∏n			
+1155	70	0	103	1172	Subduing Dragon Saber, headgear			
 1156	50	0	103	1153	Gi∏ng Long D≠¨ng Qu∏n			
-1157	70	0	103	1173	Gi∏ng Long Dao Qu∏n			
+1157	70	0	103	1173	Subduing Dragon Saber, headgear			
 1158	50	0	103	1154	Gi∏ng Long D≠¨ng Qu∏n			
-1159	70	0	103	1174	Gi∏ng Long Dao Qu∏n			
+1159	70	0	103	1174	Subduing Dragon Saber, headgear			
 1160	50	0	100	1151	Gi∏ng Long D≠¨ng Th≠Íng			
-1161	70	0	100	1171	Gi∏ng Long Dao Th≠Íng			
+1161	70	0	100	1171	Subduing Dragon Saber, common			
 1162	50	0	100	1152	Gi∏ng Long D≠¨ng Th≠Íng			
-1163	70	0	100	1172	Gi∏ng Long Dao Th≠Íng			
+1163	70	0	100	1172	Subduing Dragon Saber, common			
 1164	50	0	100	1153	Gi∏ng Long D≠¨ng Th≠Íng			
-1165	70	0	100	1173	Gi∏ng Long Dao Th≠Íng			
+1165	70	0	100	1173	Subduing Dragon Saber, common			
 1166	50	0	100	1154	Gi∏ng Long D≠¨ng Th≠Íng			
-1167	70	0	100	1174	Gi∏ng Long Dao Th≠Íng			
+1167	70	0	100	1174	Subduing Dragon Saber, common			
 1168	50	0	102	1151	Gi∏ng Long D≠¨ng BÈi			
-1169	70	0	102	1171	Gi∏ng Long Dao BÈi			
+1169	70	0	102	1171	Subduing Dragon Saber, belt			
 1170	50	0	102	1152	Gi∏ng Long D≠¨ng BÈi			
-1171	70	0	102	1172	Gi∏ng Long Dao BÈi			
+1171	70	0	102	1172	Subduing Dragon Saber, belt			
 1172	50	0	102	1153	Gi∏ng Long D≠¨ng BÈi			
-1173	70	0	102	1173	Gi∏ng Long Dao BÈi			
+1173	70	0	102	1173	Subduing Dragon Saber, belt			
 1174	50	0	102	1154	Gi∏ng Long D≠¨ng BÈi			
-1175	70	0	102	1174	Gi∏ng Long Dao BÈi			
+1175	70	0	102	1174	Subduing Dragon Saber, belt			
 1176	50	0	0	1151	Gi∏ng Long D≠¨ng ThÒ			
 1177	70	0	0	1171	Gi∏ng Long Dao ThÒ			
 1178	50	0	0	1152	Gi∏ng Long D≠¨ng ThÒ			
@@ -193,29 +193,29 @@ Tra c¯u vÀt ph»m	ßºng c p vÀt ph»m	Loπi lÌn	Loπi phÙ	Loπi nh·	T™n vÀt ph»m
 1190	50	0	101	1254	Phong Ma D≠¨ng Trang			
 1191	70	0	101	1274	Phong Ma Dao Trang			
 1192	50	0	103	1251	Phong Ma D≠¨ng Qu∏n			
-1193	70	0	103	1271	Phong Ma Dao Qu∏n			
+1193	70	0	103	1271	Wind Demon Saber, headgear			
 1194	50	0	103	1252	Phong Ma D≠¨ng Qu∏n			
-1195	70	0	103	1272	Phong Ma Dao Qu∏n			
+1195	70	0	103	1272	Wind Demon Saber, headgear			
 1196	50	0	103	1253	Phong Ma D≠¨ng Qu∏n			
-1197	70	0	103	1273	Phong Ma Dao Qu∏n			
+1197	70	0	103	1273	Wind Demon Saber, headgear			
 1198	50	0	103	1254	Phong Ma D≠¨ng Qu∏n			
-1199	70	0	103	1274	Phong Ma Dao Qu∏n			
+1199	70	0	103	1274	Wind Demon Saber, headgear			
 1200	50	0	100	1251	Phong Ma D≠¨ng Th≠Íng			
-1201	70	0	100	1271	Phong Ma Dao Th≠Íng			
+1201	70	0	100	1271	Wind Demon Saber, common			
 1202	50	0	100	1252	Phong Ma D≠¨ng Th≠Íng			
-1203	70	0	100	1272	Phong Ma Dao Th≠Íng			
+1203	70	0	100	1272	Wind Demon Saber, common			
 1204	50	0	100	1253	Phong Ma D≠¨ng Th≠Íng			
-1205	70	0	100	1273	Phong Ma Dao Th≠Íng			
+1205	70	0	100	1273	Wind Demon Saber, common			
 1206	50	0	100	1254	Phong Ma D≠¨ng Th≠Íng			
-1207	70	0	100	1274	Phong Ma Dao Th≠Íng			
+1207	70	0	100	1274	Wind Demon Saber, common			
 1208	50	0	102	1251	Phong Ma D≠¨ng BÈi			
-1209	70	0	102	1271	Phong Ma Dao BÈi			
+1209	70	0	102	1271	Wind Demon Saber, belt			
 1210	50	0	102	1252	Phong Ma D≠¨ng BÈi			
-1211	70	0	102	1272	Phong Ma Dao BÈi			
+1211	70	0	102	1272	Wind Demon Saber, belt			
 1212	50	0	102	1253	Phong Ma D≠¨ng BÈi			
-1213	70	0	102	1273	Phong Ma Dao BÈi			
+1213	70	0	102	1273	Wind Demon Saber, belt			
 1214	50	0	102	1254	Phong Ma D≠¨ng BÈi			
-1215	70	0	102	1274	Phong Ma Dao BÈi			
+1215	70	0	102	1274	Wind Demon Saber, belt			
 1216	50	0	5	1251	Phong Ma D≠¨ng C´n			
 1217	70	0	5	1271	Phong Ma Dao C´n			
 1218	50	0	5	1252	Phong Ma D≠¨ng C´n			
@@ -225,37 +225,37 @@ Tra c¯u vÀt ph»m	ßºng c p vÀt ph»m	Loπi lÌn	Loπi phÙ	Loπi nh·	T™n vÀt ph»m
 1222	50	0	5	1254	Phong Ma D≠¨ng C´n			
 1223	70	0	5	1274	Phong Ma Dao C´n			
 1224	50	0	101	1451	Ch©n VÚ D≠¨ng Trang			
-1225	70	0	101	1471	Ch©n VÚ Dao Trang			
+1225	70	0	101	1471	True Martial Saber, attire			
 1226	50	0	101	1452	Ch©n VÚ D≠¨ng Trang			
-1227	70	0	101	1472	Ch©n VÚ Dao Trang			
+1227	70	0	101	1472	True Martial Saber, attire			
 1228	50	0	101	1453	Ch©n VÚ D≠¨ng Trang			
-1229	70	0	101	1473	Ch©n VÚ Dao Trang			
+1229	70	0	101	1473	True Martial Saber, attire			
 1230	50	0	101	1454	Ch©n VÚ D≠¨ng Trang			
-1231	70	0	101	1474	Ch©n VÚ Dao Trang			
+1231	70	0	101	1474	True Martial Saber, attire			
 1232	50	0	103	1451	Ch©n VÚ D≠¨ng Qu∏n			
-1233	70	0	103	1471	Ch©n VÚ Dao Qu∏n			
+1233	70	0	103	1471	True Martial Saber, headgear			
 1234	50	0	103	1452	Ch©n VÚ D≠¨ng Qu∏n			
-1235	70	0	103	1472	Ch©n VÚ Dao Qu∏n			
+1235	70	0	103	1472	True Martial Saber, headgear			
 1236	50	0	103	1453	Ch©n VÚ D≠¨ng Qu∏n			
-1237	70	0	103	1473	Ch©n VÚ Dao Qu∏n			
+1237	70	0	103	1473	True Martial Saber, headgear			
 1238	50	0	103	1454	Ch©n VÚ D≠¨ng Qu∏n			
-1239	70	0	103	1474	Ch©n VÚ Dao Qu∏n			
+1239	70	0	103	1474	True Martial Saber, headgear			
 1240	50	0	100	1451	Ch©n VÚ D≠¨ng Th≠Íng			
-1241	70	0	100	1471	Ch©n VÚ Dao Th≠Íng			
+1241	70	0	100	1471	True Martial Saber, common			
 1242	50	0	100	1452	Ch©n VÚ D≠¨ng Th≠Íng			
-1243	70	0	100	1472	Ch©n VÚ Dao Th≠Íng			
+1243	70	0	100	1472	True Martial Saber, common			
 1244	50	0	100	1453	Ch©n VÚ D≠¨ng Th≠Íng			
-1245	70	0	100	1473	Ch©n VÚ Dao Th≠Íng			
+1245	70	0	100	1473	True Martial Saber, common			
 1246	50	0	100	1454	Ch©n VÚ D≠¨ng Th≠Íng			
-1247	70	0	100	1474	Ch©n VÚ Dao Th≠Íng			
+1247	70	0	100	1474	True Martial Saber, common			
 1248	50	0	102	1451	Ch©n VÚ D≠¨ng BÈi			
-1249	70	0	102	1471	Ch©n VÚ Dao BÈi			
+1249	70	0	102	1471	True Martial Saber, belt			
 1250	50	0	102	1452	Ch©n VÚ D≠¨ng BÈi			
-1251	70	0	102	1472	Ch©n VÚ Dao BÈi			
+1251	70	0	102	1472	True Martial Saber, belt			
 1252	50	0	102	1453	Ch©n VÚ D≠¨ng BÈi			
-1253	70	0	102	1473	Ch©n VÚ Dao BÈi			
+1253	70	0	102	1473	True Martial Saber, belt			
 1254	50	0	102	1454	Ch©n VÚ D≠¨ng BÈi			
-1255	70	0	102	1474	Ch©n VÚ Dao BÈi			
+1255	70	0	102	1474	True Martial Saber, belt			
 1256	50	0	2	1451	Ch©n VÚ D≠¨ng Ki’m			
 1257	70	0	2	1471	Ch©n VÚ Dao Ki’m			
 1258	50	0	2	1452	Ch©n VÚ D≠¨ng Ki’m			

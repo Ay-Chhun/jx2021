@@ -12,7 +12,7 @@ TYPE_EQUIP 	= 2;	--´øÊôÐÔ×°±¸ÀàÎïÆ·
 TYPE_CMD 	= 3;	--ÃüÁî
 
 g_szLogTitle = "Hoat dong Tet 2009"				--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
-g_szInfoHead = "<color=green>".."TiÓu Söu".."<color>: "
+g_szInfoHead = "<color=green>".."Tieu Suu".."<color>: "
 
 g_nDenominator = 10000								--·ÖÄ¸£¬±íÊ¾¸ÅÂÊµÄµ¥Î»ÊÇx·ÖÖ®1
 g_nExpNum = 100000									--Ê¹ÓÃÃ·¨CÀ¼¨C¾Õ¨CÖñ»ñµÃµÄ¾­ÑéÖµ
@@ -23,27 +23,27 @@ g_szFileName = "jester_npc.lua"						--ÎÄ¼þÃû
 g_tbOldItem = 
 {
 	--		Ãû×Ö		ID1,ID2,ID3,	ÊýÁ¿
-	[1] = {"N­íc Tinh KhiÕt",		2,	1,	30047,	5,	},
-	[2] = {"B×nh Hoa",		2,	1,	30048,	1,	},
-	[3] = {"D­ìng ChÊt",		2,	1,	30049,	4,	},
-	[4] = {"Nh¸nh §µo",	2,	1,	30050,	1,	},
-	[5] = {"Nh¸nh hoa Mai",	2,	1,	30051,	1,	},
+	[1] = {"Pure Water",		2,	1,	30047,	5,	},
+	[2] = {"Flower Vase",		2,	1,	30048,	1,	},
+	[3] = {"Nutrient",		2,	1,	30049,	4,	},
+	[4] = {"Peach Branch",	2,	1,	30050,	1,	},
+	[5] = {"Plum Blossom Branch",	2,	1,	30051,	1,	},
 }
 
 g_tbNewItem = 
 {
 	--		Ãû×Ö		ID1,ID2,ID3,	ÊýÁ¿
-	[1] = {"Hoa §µo",	2,	1,	30052,	1,	},
+	[1] = {"Peach Blossom",	2,	1,	30052,	1,	},
 	[2] = {"Hoa Mai",	2,	1,	30053,	1,	},
 }
 
 g_tbWord =
 {
 	--		Ãû×Ö		ID1,ID2,ID3,	ÊýÁ¿
-	[1] = {"Ch÷ Mai",	2,	1,	30054,	1,	},
-	[2] = {"Ch÷ Lan",	2,	1,	30055,	1,	},
-	[3] = {"Ch÷ Tróc",	2,	1,	30056,	1,	},
-	[4] = {"Ch÷ Cóc",	2,	1,	30057,	1,	},
+	[1] = {"Plum Character",	2,	1,	30054,	1,	},
+	[2] = {"Orchid Character",	2,	1,	30055,	1,	},
+	[3] = {"Bamboo Character",	2,	1,	30056,	1,	},
+	[4] = {"Chrysanthemum Character",	2,	1,	30057,	1,	},
 }
 
 g_tbWordAward = 
@@ -51,18 +51,18 @@ g_tbWordAward =
 	--		ÀàÐÍ	   ¸ÅÂÊ		ÊýÁ¿ Ãû×Ö		ID1,ID2,ID3
 	[1] = {TYPE_NULL,	9545,	},
 	[2] = {TYPE_EQUIP,	10,		1,	"TiÓu Th­ Giíi ChØ",		0,	102,	36,	},
-	[3] = {TYPE_EQUIP,	10,		1,	"Trang Chñ m·o",		0,	103,	91,	},
-	[4] = {TYPE_EQUIP,	10,		1,	"Trang Chñ m·o",		0,	103,	92,	},
-	[5] = {TYPE_EQUIP,	10,		1,	"Trang Chñ m·o",		0,	103,	93,	},
-	[6] = {TYPE_EQUIP,	10,		1,	"Trang Chñ m·o",		0,	103,	94,	},
+	[3] = {TYPE_EQUIP,	10,		1,	"Manor Master hat",		0,	103,	91,	},
+	[4] = {TYPE_EQUIP,	10,		1,	"Manor Master hat",		0,	103,	92,	},
+	[5] = {TYPE_EQUIP,	10,		1,	"Manor Master hat",		0,	103,	93,	},
+	[6] = {TYPE_EQUIP,	10,		1,	"Manor Master hat",		0,	103,	94,	},
 	[7] = {TYPE_EQUIP,	50,		1,	"Tæng Qu¶n Ngo¹i trang",		0,	100,	91,	},
 	[8] = {TYPE_EQUIP,	50,		1,	"Tæng Qu¶n Ngo¹i trang",		0,	100,	92,	},
 	[9] = {TYPE_EQUIP,	50,		1,	"Tæng Qu¶n Ngo¹i trang",		0,	100,	93,	},
 	[10] = {TYPE_EQUIP,	50,		1,	"Tæng Qu¶n Ngo¹i trang",		0,	100,	94,	},
-	[11] = {TYPE_EQUIP,	50,		1,	"Tæng Qu¶n khè",		0,	101,	91,	},
-	[12] = {TYPE_EQUIP,	50,		1,	"Tæng Qu¶n khè",		0,	101,	92,	},
-	[13] = {TYPE_EQUIP,	50,		1,	"Tæng Qu¶n khè",		0,	101,	93,	},
-	[14] = {TYPE_EQUIP,	50,		1,	"Tæng Qu¶n khè",		0,	101,	94,	},
+	[11] = {TYPE_EQUIP,	50,		1,	"Chief Steward Warehouse",		0,	101,	91,	},
+	[12] = {TYPE_EQUIP,	50,		1,	"Chief Steward Warehouse",		0,	101,	92,	},
+	[13] = {TYPE_EQUIP,	50,		1,	"Chief Steward Warehouse",		0,	101,	93,	},
+	[14] = {TYPE_EQUIP,	50,		1,	"Chief Steward Warehouse",		0,	101,	94,	},
 	[15] = {TYPE_EQUIP,	5,		1,	"Tr­ëng L·o ChØ Hoµn",		0,	102,	37,	},
 }
 
@@ -72,10 +72,10 @@ function main()
 		return
 	end
 	local selTab = {
-				"§æi 1 hoa §µo/#want_exchange(1)",
-				"§æi 1 hoa Mai/#want_exchange(2)",
-				"Mua nh¸nh hoa ®µo (1 vµng 50 b¹c)/bug_peach",
-				"Ta ®· thu thËp ®ñ bé ch÷ [Mai-Lan-Tróc-Cóc]/exchange_word",
+				"Exchange 1 peach blossom/#want_exchange(1)",
+				"Exchange 1 plum blossom/#want_exchange(2)",
+				"Buy a peach blossom branch (1 gold 50 silver)/bug_peach",
+				"I have collected the full character set [Plum-Orchid-Bamboo-Chrysanthemum]/exchange_word",
 				"NhËn vËt phÈm cÈm nang ®¹i sù kiÖn/give_pouch",
 				"Ta chØ ®Õn xem thö/no",
 				}
@@ -84,7 +84,7 @@ end
 
 function bug_peach()
 	if GetCash() < 15000 then
-		Say(g_szInfoHead.."§¹i hiÖp kh«ng ®ñ ng©n l­îng trªn ng­êi råi!",1,"ThËt lµ ng¹i qu¸! T¹i h¹ xin c¸o tõ./no")
+		Say(g_szInfoHead.."§¹i hiÖp kh«ng ®ñ ng©n l­îng trªn ng­êi råi!",1,"This is too much trouble! I take my leave./no")
 		return
 	end
 	if gf_Judge_Room_Weight(1,20) == 0 then
@@ -94,7 +94,7 @@ function bug_peach()
 	if pay_ex(15000) == 1 then
 		add_item_ex(g_tbOldItem[4])
 	else
-		Say(g_szInfoHead.."§¹i hiÖp kh«ng ®ñ ng©n l­îng trªn ng­êi råi!",1,"ThËt lµ ng¹i qu¸! T¹i h¹ xin c¸o tõ./no")
+		Say(g_szInfoHead.."§¹i hiÖp kh«ng ®ñ ng©n l­îng trªn ng­êi råi!",1,"This is too much trouble! I take my leave./no")
 		return
 	end
 	main()
@@ -102,19 +102,19 @@ end
 
 function give_pouch()
 	if GetItemCount(2, 1, 30045) > 0 then
-		Say(g_szInfoHead.."§¹i hiÖp ®· cã mét c¸i råi, kh«ng thÓ nhËn tiÕp ®­îc n÷a!",1,"KÕt thóc ®èi tho¹i/no")
+		Say(g_szInfoHead.."§¹i hiÖp ®· cã mét c¸i råi, kh«ng thÓ nhËn tiÕp ®­îc n÷a!",1,"End dialogue/no")
 		return
 	end
 	if gf_Judge_Room_Weight(1,20) == 0 then
 		Talk(1,"",g_szInfoHead.."Kho¶ng trèng hµnh trang hoÆc søc lùc kh«ng ®ñ, xin kiÓm tra l¹i!")
 		return
 	end
-	add_item_ex( {"CÈm Nang §¹i Sù KiÖn",	2,	1,	30045,	1} )
+	add_item_ex( {"Grand Event Handbook",	2,	1,	30045,	1} )
 end
 
 function want_exchange(nType)
 	local selTab = {
-				format("§ång ý ®æi /#exchange_box(%d)", nType),
+				format("Agree to exchange /#exchange_box(%d)", nType),
 				"Ta chØ ®Õn xem thö/no",
 				}
 	if nType == 1 then
@@ -129,7 +129,7 @@ end
 function exchange_box(nType)
 	if nType == 1 then
 		if check_item_count(g_tbOldItem[1]) == 0 or check_item_count(g_tbOldItem[2]) == 0 or check_item_count(g_tbOldItem[3]) == 0 or check_item_count(g_tbOldItem[4]) == 0 then
-			Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"ThËt lµ ng¹i qu¸! T¹i h¹ xin c¸o tõ./no");
+			Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"This is too much trouble! I take my leave./no");
 			return
 		else
 			if gf_Judge_Room_Weight(1,20) == 0 then
@@ -139,13 +139,13 @@ function exchange_box(nType)
 			if del_item_ex(g_tbOldItem[1]) == 1 and del_item_ex(g_tbOldItem[2]) == 1 and del_item_ex(g_tbOldItem[3]) == 1 and del_item_ex(g_tbOldItem[4]) == 1 then
 				add_item_ex(g_tbNewItem[1])
 			else
-				Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"ThËt lµ ng¹i qu¸! T¹i h¹ xin c¸o tõ./no");
+				Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"This is too much trouble! I take my leave./no");
 				return
 			end
 		end
 	elseif nType == 2 then
 		if check_item_count(g_tbOldItem[1]) == 0 or check_item_count(g_tbOldItem[2]) == 0 or check_item_count(g_tbOldItem[3]) == 0 or check_item_count(g_tbOldItem[5]) == 0 then
-			Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"ThËt lµ ng¹i qu¸! T¹i h¹ xin c¸o tõ./no");
+			Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"This is too much trouble! I take my leave./no");
 			return
 		else
 			if gf_Judge_Room_Weight(1,20) == 0 then
@@ -155,7 +155,7 @@ function exchange_box(nType)
 			if del_item_ex(g_tbOldItem[1]) == 1 and del_item_ex(g_tbOldItem[2]) == 1 and del_item_ex(g_tbOldItem[3]) == 1 and del_item_ex(g_tbOldItem[5]) == 1 then
 				add_item_ex(g_tbNewItem[2])
 			else
-				Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"ThËt lµ ng¹i qu¸! T¹i h¹ xin c¸o tõ./no");
+				Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"This is too much trouble! I take my leave./no");
 				return
 			end
 		end
@@ -167,7 +167,7 @@ end
 
 function exchange_word()
 	if check_item_count(g_tbWord[1]) == 0 or check_item_count(g_tbWord[2]) == 0 or check_item_count(g_tbWord[3]) == 0 or check_item_count(g_tbWord[4]) == 0 then
-		Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"ThËt lµ ng¹i qu¸! T¹i h¹ xin c¸o tõ./no");
+		Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"This is too much trouble! I take my leave./no");
 		return
 	else
 		if gf_Judge_Room_Weight(1,100) == 0 then
@@ -177,7 +177,7 @@ function exchange_word()
 		if del_item_ex(g_tbWord[1]) == 1 and del_item_ex(g_tbWord[2]) == 1 and del_item_ex(g_tbWord[3]) == 1 and del_item_ex(g_tbWord[4]) == 1 then
 			give_word_award()
 		else
-			Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"ThËt lµ ng¹i qu¸! T¹i h¹ xin c¸o tõ./no");
+			Say(g_szInfoHead.."Kh«ng ®ñ nguyªn liÖu cÇn thiÕt.",1,"This is too much trouble! I take my leave./no");
 			return
 		end
 	end
@@ -201,7 +201,7 @@ function give_word_award()
 		local szItemName = "®iÓm kinh nghiÖm"
 		local nItemNum = nExp
 		local szInfoDescribe = format("ModifyExp(%d)", nItemNum)
-		WriteLogEx(g_szLogTitle, "NhËn ®­îc", nItemNum, szItemName, szInfoDescribe, GetTongName() )
+		WriteLogEx(g_szLogTitle, "Received", nItemNum, szItemName, szInfoDescribe, GetTongName() )
 	end
 	--ÎïÆ·½±Àø²¿·Ö
 	local nRandIdx = get_random_item(g_tbWordAward)
@@ -234,9 +234,9 @@ function give_word_award()
 		else
 			Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." "..szItemName)
 		end
-		WriteLogEx(g_szLogTitle, "NhËn ®­îc", nItemNum, szItemName, szInfoDescribe, GetTongName() )
+		WriteLogEx(g_szLogTitle, "Received", nItemNum, szItemName, szInfoDescribe, GetTongName() )
 	else
-		WriteLogEx(g_szLogTitle, "NhËn ®­îc", "", "", szInfoDescribe, GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
+		WriteLogEx(g_szLogTitle, "Received", "", "", szInfoDescribe, GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
 	end
 	main()
 end
@@ -281,9 +281,9 @@ function add_item_ex(tItem)
 	nRetCode = AddItem(G, D, P, nItemNum)
 	if nRetCode == 1 then
 		Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." c¸i "..szItemName);
-		WriteLogEx(g_szLogTitle, "NhËn ®­îc", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName() )
+		WriteLogEx(g_szLogTitle, "Received", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName() )
 	else
-		WriteLogEx(g_szLogTitle, "NhËn ®­îc", "", "", format("(%d,%d,%d)", G, D, P), GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
+		WriteLogEx(g_szLogTitle, "Received", "", "", format("(%d,%d,%d)", G, D, P), GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
 	end
 end
 

@@ -10,7 +10,7 @@ BWDH_OPEN_IN_MATCH_FIELD = 1
 --=========================================================================================
 g_nBWAwardBeginDate = 2014051210;	--·¢½±¿ªÊ¼Ê±¼ä
 g_nBWAwardDate = 2014051822;	--½×¶ÎĞÔ·¢½±µÄ½áÊøÈÕÆÚ
-g_szGloryAwardName = "§¹i Héi Tû Vâ-Tói Tinh Vâ";
+g_szGloryAwardName = "Grand Martial Contest-Martial Essence Pouch";
 g_tbGloryAwardItem = {2,95,170};	--ÈÙÒ«°üµÄID
 g_nBWBeginTime = MkTime(2014,5,12,0,0,0); --2014Äê5ÔÂ12ºÅ£¨ÖÜÒ»£©¿ªÊ¼ĞÂÈü¼¾ 1260115200 --2009Äê12ÔÂ7ºÅ£¨ÖÜÒ»£©¿ªÊ¼ĞÂÈü¼¾ 1260115200
 g_nBWWeeks = 4;  --4ÖÜÎªÒ»Èü¼¾
@@ -207,7 +207,7 @@ if g_nCurGs == 0 then
 	TB_MAPID =
 	{		--×¼±¸Çø£¬±ÈÎäÇø
 		[100] = {974,971,"TuyÒn Ch©u"},
-		[200] = {975,972,"BiÖn Kinh"},
+		[200] = {975,972,"Bianjing"},
 		[300] = {976,973,"Thµnh §«"},
 	}
 elseif g_nCurGs == 1 then
@@ -464,16 +464,16 @@ TB_QUALI_POINT = {100,90,85,80,75,70,65,60,55,50};
 TB_TOTEM_INFO =
 {	--{{»ÕÕÂ1ĞÅÏ¢},{»ÕÕÂ2ĞÅÏ¢},{»ÕÕÂ3ĞÅÏ¢}}
 	[0] = {},
-	[1] = {{2,0,447,"V¨n Thï X¸ Lîi"},{2,0,448,"Phæ HiÒn X¸ Lîi"},{2,0,449,"§¹i Minh V­¬ng X¸ Lîi"}},	--ÉÙÁÖ
+	[1] = {{2,0,447,"Wenshu Relic"},{2,0,448,"Puxian Relic"},{2,0,449,"§¹i Minh V­¬ng X¸ Lîi"}},	--ÉÙÁÖ
 	[2] = {{2,0,468,"Thiªn Toµn Méc"},{2,0,469,"Thiªn C¬ Méc"},{2,0,470,"Thiªn Khu Méc"}},	--Îäµ±
-	[3] = {{2,0,456,"Hoa sen"},{2,0,457,"Kim Liªn Hoa"},{2,0,461,"TŞnh B×nh Tiªn LiÔu"}},	--¶ëáÒ
-	[4] = {{2,0,463,"Long §Çu §¹i"},{2,0,466,"Tö Kim B¸t"},{2,0,467,"Lôc Ngäc Tr­îng"}},	--Ø¤°ï
-	[5] = {{2,0,453,"B¹ch Háa th¹ch"},{2,0,454,"Bİ §éc ph­¬ng"},{2,0,455,"C¬ quan bİ lôc"}}, 	--ÌÆÃÅ
-	[6] = {{2,0,476,"M· §¸ng"},{2,0,477,"Tinh B× TiÔn §¹i"},{2,0,478,"Kim Cang ThuÉn"}},	--ÑîÃÅ
-	[7] = {{2,0,483,"NhÖn ®éc"},{2,0,484,"RÕt ®éc"},{2,0,485,"Thi ®éc"}},	--Îå¶¾
-	[8] = {{2,0,493,"Thiªn C­¬ng Phï"},{2,0,495,"Khu Ma H­¬ng"},{2,0,496,"TrÊn Yªu Linh"}},	--À¥ÂØ
+	[3] = {{2,0,456,"Hoa sen"},{2,0,457,"Golden Lotus Flower"},{2,0,461,"TŞnh B×nh Tiªn LiÔu"}},	--¶ëáÒ
+	[4] = {{2,0,463,"Long §Çu §¹i"},{2,0,466,"Purple Gold Bowl"},{2,0,467,"Lôc Ngäc Tr­îng"}},	--Ø¤°ï
+	[5] = {{2,0,453,"B¹ch Háa th¹ch"},{2,0,454,"Bİ §éc ph­¬ng"},{2,0,455,"Mechanism Secret Manual"}}, 	--ÌÆÃÅ
+	[6] = {{2,0,476,"Stone Horse"},{2,0,477,"Star Hide Arrow Grand"},{2,0,478,"Vajra Shield"}},	--ÑîÃÅ
+	[7] = {{2,0,483,"NhÖn ®éc"},{2,0,484,"RÕt ®éc"},{2,0,485,"Corpse Poison"}},	--Îå¶¾
+	[8] = {{2,0,493,"Thiªn C­¬ng Phï"},{2,0,495,"Demon Quelling Incense"},{2,0,496,"Demon Suppressing Spirit"}},	--À¥ÂØ
 	[9] = {{2,0,498,"Xİch Háa LÖnh"},{2,0,499,"Th¸nh Háa LÖnh"},{2,0,500,"Ngò hµnh Kú"}},	--Ã÷½Ì
-	[10] = {{2,0,490,"MÉu §¬n Lé"},{2,0,491,"Mai QuÕ Lé"},{2,0,487,"Cöu Th¸i Hoa BiÖn"}},	--´äÑÌ
+	[10] = {{2,0,490,"Peony Road"},{2,0,491,"Plum Osmanthus Road"},{2,0,487,"Cöu Th¸i Hoa BiÖn"}},	--´äÑÌ
 }
 --±ÈÎä´ó»áÏà¹ØÎïÆ·
 TB_BW_ITEM =
@@ -481,7 +481,7 @@ TB_BW_ITEM =
 	[1] = {2,0,1064,"Tû vâ ®¹i héi bµi"},
 }
 
-TB_EquipPosName = {"§Çu","Ngo¹i trang","Vò khİ","H¹ y","Trang søc 1","Trang søc 2","Ngo¹i trang ®Çu","Th­îng y","Ngo¹i trang","Phã MËt tŞch","M·","MËt tŞch"};
+TB_EquipPosName = {"§Çu","Ngo¹i trang","Vò khİ","Lower Garment","Trang søc 1","Trang søc 2","Ngo¹i trang ®Çu","Upper Garment","Ngo¹i trang","Phã MËt tŞch","Horse","MËt tŞch"};
 
 ------------------------ÔöÖµ·şÎñ--------------------------
 --ÆÁ±ÎÁ÷ÅÉ

@@ -32,7 +32,7 @@ EQUIP_SHOP_EXCHANGE_LIEU_HVS_PHONGCU = 1022
 EQUIP_SHOP_EXCHANGE_LIEU_HVS_TRANGSUC = 1023
 
 g_tbEquipShop = {
-    [EQUIP_SHOP_EXCHANGE_NGANPHIEU] = "Ti÷m Ng©n Phi’u",
+    [EQUIP_SHOP_EXCHANGE_NGANPHIEU] = "Silver Note Shop",
     [EQUIP_SHOP_AWARD_SPEND_MONEY] = "Th≠Îng ti™u ph›",
     [EQUIP_SHOP_YEUQUYET_CAOCAP] = "ßÊi Y’u Quy’t th t truy“n",
     [EQUIP_SHOP_EXCHANGE_TTLL] = "Gh–p T»y T©m Luy÷n L´ Thπch",

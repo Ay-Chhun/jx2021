@@ -12,7 +12,7 @@ function give_horse()
 		return 0;
 	end
 	local sName, sTemplateName = GetNpcName(nFollowIdx);
-	if sName == "ChiÕn M· Ch¹y Xa" and sTemplateName == "ChiÕn M· Ch¹y Xa" then
+	if sName == "Swift War Horse" and sTemplateName == "Swift War Horse" then
 		KillFollower();
 		SetTask(TASKID_SW_USE_ANTIDOTE,GetTask(TASKID_SW_USE_ANTIDOTE) + 1);
 		Talk(1,"","Ng­êi Canh Chuång: §a t¹, ®¹i hiÖp ®· gióp ta t×m ®­îc chiÕn m·.");
@@ -69,8 +69,8 @@ end
 
 	
 tInfo = {
-	["Ng­êi Canh Chuång"]			= {{945},		"Ta muèn giao nép ChiÕn M· Ch¹y Xa/give_horse",},
-	["§¹i Danh Phñ DiÔn Vâ Quan"]	= {{76},	"Ta muèn tiÕn hµnh luyÖn tËp diÔn vâ!/go_to_exercise","Ta chØ tiÖn ®­êng ghĞ ngang/nothing",},
+	["Stable Keeper"]			= {{945},		"Ta muèn giao nép ChiÕn M· Ch¹y Xa/give_horse",},
+	["Great Mansion Martial Drill Officer"]	= {{76},	"Ta muèn tiÕn hµnh luyÖn tËp diÔn vâ!/go_to_exercise","Ta chØ tiÖn ®­êng ghĞ ngang/nothing",},
 	["VÖ Binh DiÔn Vâ Tr­êng"]		= {nil,		"Ta muèn rêi khái diÔn vâ tr­êng!/leave_dmf","Ta chØ tiÖn ®­êng ghĞ ngang/nothing",},
 	["V« T­¬ng T«ng-Ph¸p Tr­êng Kh¸n Thñ"] = {{78},	"Ta muèn vµo Ph¸p Tr­êng V« T­¬ng T«ng!/go_to_execution_ground","Ta chØ tiÖn ®­êng ghĞ ngang/nothing",},
 	["§ao Phñ Ph¸p Tr­êng"]		= {nil,		"Ta muèn rêi khái Ph¸p Tr­êng V« T­¬ng T«ng!/leave_execution_ground","Ta chØ tiÖn ®­êng ghĞ ngang/nothing",},

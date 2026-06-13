@@ -43,7 +43,7 @@ function OnUse(nIdx)
 		SetTask(TASKID_XMAS_PLANT_COUNT,0);	--Ã¿ÌìÖÖÐ¡Ê÷ÊýÇå¿Õ
 	end;
 	if GetTask(TASKID_XMAS_PLANT_COUNT) >= XMAS_PLANT_TREE_LIMIT then
-		Talk(1,"","H«m nay b¹n ®· trång <color=yellow>"..XMAS_PLANT_TREE_LIMIT.." c©y <color>"..XMAS_TREE_NAME..", ngµy mai míi cã thÓ sö dông tiÕp.");
+		Talk(1,"","Today you have planted <color=yellow>"..XMAS_PLANT_TREE_LIMIT.." tree <color>"..XMAS_TREE_NAME..", ngµy mai míi cã thÓ sö dông tiÕp.");
 		return 0;
 	end;
 	local selTab = {
@@ -64,7 +64,7 @@ function plant(nIdx)
 		local MapID,MapX,MapY = GetWorldPos()
 		local npcTreeIndex = CreateNpc(txmas_tree_mode[1], GetName().."-"..XMAS_TREE_NAME,MapID,MapX,MapY)
 		if npcTreeIndex == 0 then
-			WriteLog("[xmas seed]:"..GetName().."Lóc trång c©y, trÞ quay l¹i hµm sè CreateNpc lµ 0. Tham sè nhËp CreateNpc lµ:"..txmas_tree_mode[1]..","..GetName().." trång "..XMAS_TREE_NAME..","..MapID..","..MapX..","..MapY);
+			WriteLog("[xmas seed]:"..GetName().."Lóc trång c©y, trÞ quay l¹i hµm sè CreateNpc lµ 0. Tham sè nhËp CreateNpc lµ:"..txmas_tree_mode[1]..","..GetName().." plant"..XMAS_TREE_NAME..","..MapID..","..MapX..","..MapY);
 		end;
 		SetNpcLifeTime(npcTreeIndex,XMAS_TREELIFETIME)
 		
@@ -77,7 +77,7 @@ function plant(nIdx)
 		SetTask(TASKID_XMAS_PLANT_DATE,nDate);
 		SetNpcScript(npcTreeIndex,"\\script\\online\\xmas_07_viet\\xmas_tree.lua");
 		SetTask(TASKID_XMAS_PLANT_COUNT,GetTask(TASKID_XMAS_PLANT_COUNT)+1);
-		Say("H«m nay, ®©y lµ lÇn thø <color=yellow>"..GetTask(TASKID_XMAS_PLANT_COUNT).."<color> lÇn"..XMAS_TREE_NAME..", h«m nay b¹n cßn cã thÓ trång <color=yellow>"..(XMAS_PLANT_TREE_LIMIT-GetTask(TASKID_XMAS_PLANT_COUNT)).."<color> c©y"..XMAS_TREE_NAME..".",0);
+		Say("H«m nay, ®©y lµ lÇn thø <color=yellow>"..GetTask(TASKID_XMAS_PLANT_COUNT).."<color> lÇn"..XMAS_TREE_NAME..", h«m nay b¹n cßn cã thÓ trång <color=yellow>"..(XMAS_PLANT_TREE_LIMIT-GetTask(TASKID_XMAS_PLANT_COUNT)).."<color> trees"..XMAS_TREE_NAME..".",0);
 	end;
 end;
 

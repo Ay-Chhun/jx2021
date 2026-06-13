@@ -14,13 +14,13 @@ CALLBACK_FILE = "\\script\\task\\marriage\\qiao_girl.lua";
 
 	Tb_frag = {}
 	Tb_frag[568] = "Gi¸p Méc d­¬ng"
-	Tb_frag[569] = "Êt Méc ©m"
-	Tb_frag[570] = "Bİnh háa d­¬ng"
+	Tb_frag[569] = "Yi Wood Yin"
+	Tb_frag[570] = "Bing Fire Yang"
 	Tb_frag[571] = "§inh Háa ©m"
 
 	Tb_ring_up_info = {
 	{104,105,"NhÉn kim c­¬ng th­êng"},
-	{106,107,"NhÉn kim c­¬ng"}
+	{106,107,"Diamond Ring"}
 	}
 
 	Tb_ring_attr = {
@@ -34,7 +34,7 @@ function main()
 		3,
 		"T«i muèn dem theo khi chÕt/kill_follower",
 		"Ta muèn söa vÊn ®Ò kÕt h«n/repair_marriage",
-		"Rêi khái/end_dialog")
+		"Leave/end_dialog")
 	else
 		if BigGetItemCount(2,1,583) == 0 then
 			if Zgc_pub_goods_add_chk(1,1) ~= 1 then
@@ -48,19 +48,19 @@ function main()
 		"T«i muèn nhËn NhiÖm vô Phu thª tuÇn nµy/get_task_dtm",
 		"T«i muèn trao ®æi m¶nh vë phİa trªn/ma_frag_chg",
 		"T«i muèn ®æi thuéc tİnh nhÉn/up_diamand_ring",
-		"ThuyÕt minh NhiÖm vô Phu thª/get_att_info",
+		"Couple Mission description/get_att_info",
 		"ThuyÕt minh kü n¨ng Phu thª/ma_skill_info",
 		"T«i muèn dem theo khi chÕt/kill_follower",
 		"Ta muèn söa vÊn ®Ò kÕt h«n/repair_marriage",
-		"Rêi khái/end_dialog"
+		"Leave/end_dialog"
 	)
 	end
 end
 
 function kill_follower()
 	local selTab = {
-				"§ång ı/kill_follower_confirm",
-				"Hñy bá/end_dialog",
+				"Agree/kill_follower_confirm",
+				"Cancel/end_dialog",
 				}
 	Say("<color=green> <color>: NÕu b¹n cho r»ng qu¶ XuÊt Hån cã vÊn ®Ò, chän 'X¸c ®Şnh' hñy bá vËt ®i theo, nÕu kh«ng cã th× ®õng chän.",getn(selTab),selTab);
 end;
@@ -72,7 +72,7 @@ end;
 function up_diamand_ring()
 	Say("<color=yellow> nµy"..Zgc_pub_sex_name().."<color>, c¸c ng­¬i cßn yªu nhau kh«ng? H·y mang <color=yellow>nhÉn kim c­¬ng<color> t­îng tr­ng cho lêi thÒ t×nh yªu ®Õn, ta sÏ dïng tiªn thuËt lµm t¨ng t×nh yªu cña c¸c ng­¬i. Nh­ng <color=yellow>nhÉn kim c­¬ng<color> sau khi th¨ng cÊp sÏ theo ng­¬i suèt ®êi, <color=red>kh«ng ®­îc giao dŞch n÷a<color>. SÏ tiªu hao <color=yellow>10<color> viªn <color=yellow>L­u tinh chi sa<color> vµ <color=yellow>5<color> viªn <color=yellow>Bµn long bİch<color>. Cã muèn thªm thuéc tİnh cho nhÉn kim c­¬ng kh«ng?",
 	3,
-	"§ång ı/ring_up_way",
+	"Agree/ring_up_way",
 	"Lµm sao cã ®­îc l­u tinh chi sa/star_ash_inf",
 	"§Ó ta suy nghÜ l¹i/end_dialog"
 	)
@@ -94,7 +94,7 @@ end
 function ring_reup_dtm()
 	Say("Tuy ta cã thÓ <color=yellow>ban<color> thuéc tİnh, nh­ng do thuéc tİnh céng thªm xuÊt hiÖn ngÉu nhiªn, ta kh«ng thÓ b¶o ®¶m thuéc tİnh lÇn nµy sÏ tèt h¬n lÇn tr­íc. Ng­¬i cßn muèn <color=yellow>thªm l¹i thuéc tİnh<color> kh«ng?",
 		2,
-		"§ång ı/#ring_up(2)",
+		"Agree/#ring_up(2)",
 		"§Ó ta suy nghÜ l¹i/end_dialog"
 	)
 end
@@ -108,7 +108,7 @@ function ring_up(up_diff)
 		return
 	end
 	if up_diff == 2 and ring_num ~= 1 then
-		Talk(1,"","<color=yellow> nµy"..Zgc_pub_sex_name().."<color> ®· mang <color=red>"..ring_num.."<color> chiÕc <color=yellow>nhÉn kim c­¬ng<color>, ta biÕt chän c¸i nµo? H·y s¾p xÕp l¹i.")
+		Talk(1,"","<color=yellow> nµy"..Zgc_pub_sex_name().."<color> has brought <color=red>"..ring_num.."<color> chiÕc <color=yellow>nhÉn kim c­¬ng<color>, ta biÕt chän c¸i nµo? H·y s¾p xÕp l¹i.")
 		return
 	end
 	--ÅÍÁúèµĞ¯´ø¼ì²â
@@ -164,7 +164,7 @@ function ring_up(up_diff)
 			Talk(1,"","Ta ®· nh×n thÊy biÓu hiÖn t×nh yªu cña c¸c ng­¬i, ®©y lµ phÇn th­ëng cho sù chung thñy cña c¸c ng­¬i, chóc c¸c ng­¬i sèng ®Õn ®Çu b¹c r¨ng long, lóc nµo còng gi÷ chÆt lêi thÒ s¾c son trªn chiÕc nhÉn nµy. NÕu kh«ng hµi lßng vÒ thuéc tİnh cña <color=yellow>nhÉn kim c­¬ng<color>, cã thÓ thu thËp thªm <color=yellow>10<color> m¶nh <color=yellow>L­u tinh chi sa<color> råi ®Õn t×m ta, ta cã thÓ <color=yellow>thªm<color> thuéc tİnh gióp ng­¬i.")
 			return
 		else
-			WriteLog("KÕt h«n kú hai-Ng­êi ch¬i:"..GetName().."Th¨ng cÊp nhÉn bŞ lçi, log lµ:"..add_flag)
+			WriteLog("Second marriage period-Player:"..GetName().."Th¨ng cÊp nhÉn bŞ lçi, log lµ:"..add_flag)
 		end
 end
 --*******************************ËéÆ¬½»»»**************************
@@ -258,8 +258,8 @@ end
 function get_task_dtm()
 	Say("Nh©n gian kÕt duyªn, trêi ban ®iÒm lµnh. C¸c ng­¬i ®· se sîi chØ hång, kÕt thµnh phu thª, cã thÓ t×m dÊu vÕt L­u tinh r¬i xuèng ®Êt. ë ®©y tuÇn nµo ta còng ghi l¹i vŞ trİ L­u tinh r¬i vµo quyÓn Khiªn V©n Phi Tinh phæ. Ng­¬i cã ch¾c muèn ghi vŞ trİ <color=yellow>tuÇn nµy<color> vµo <color=yellow>Khiªn V©n Phi Tinh phæ<color>?",
 	2,
-	"§ång ı/get_task",
-	"Hñy bá/end_dialog"
+	"Agree/get_task",
+	"Cancel/end_dialog"
 	)
 end
 function get_task()
@@ -283,7 +283,7 @@ function get_task()
 	end
 	SetTask(Frag_att_num_TaskID,(GetTask(Frag_att_num_TaskID)+task_num))
 	SetTask(get_task_reel_TaskID,Zgc_pub_week_seq())
-	Talk(1,"","Ng­¬i ®· cã ®­îc"..task_num.." vŞ trİ L­u tinh, ta ®· ghi nã vµo trong <color=yellow>Khiªn V©n Phi Tinh phæ<color> cña ng­¬i . NhÊp vµo vËt phÈm nµy sÏ cã ®­îc täa ®é L­u tinh!")
+	Talk(1,"","You have obtained"..task_num.." vŞ trİ L­u tinh, ta ®· ghi nã vµo trong <color=yellow>Khiªn V©n Phi Tinh phæ<color> cña ng­¬i . NhÊp vµo vËt phÈm nµy sÏ cã ®­îc täa ®é L­u tinh!")
 end
 --**************************Á÷ĞÇ²É¼¯ËµÃ÷************************
 function get_att_info()
@@ -329,7 +329,7 @@ function repair_marriage_confirm_1()
 		szTaskInfo = szTaskInfo.."("..i..":"..GetTask(i)..");"
 		SetTask(i,0);
 	end;
-	WriteLog("[Söa]:"..GetName().."Thay ®æi biÕn l­îng, th«ng tin biÕn l­îng nhiÖm vô kÕt h«n tr­íc khi thay ®æi:"..szTaskInfo);
+	WriteLog("[Fix]:"..GetName().."Thay ®æi biÕn l­îng, th«ng tin biÕn l­îng nhiÖm vô kÕt h«n tr­íc khi thay ®æi:"..szTaskInfo);
 	Msg2Player("VÊn ®Ò kÕt h«n cña b¹n ®· söa xong, h·y thö l¹i xem");
 	Say("<color=green>X¶o n÷<color>: VÊn ®Ò kÕt h«n cña b¹n ®· söa xong. Xin c¸o lçi v× g©y nh÷ng phiÒn phøc víi b¹n tr­íc ®©y ®ång thêi c¶m ¬n sù ñng hé cña b¹n ®èi víi c«ng viÖc cña t«i.",0);
 end;

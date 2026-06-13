@@ -53,7 +53,7 @@ end;
 function Create_Emplacement(nCamp)
 	local tbNpcName = 
 				{
-				[0] = "Ph¸o ®µi",
+				[0] = "Fortress",
 				[1] = "Ph¸o ®µi: Tèng",
 				[2] = "Ph¸o ®µi: Liªu"
 				};

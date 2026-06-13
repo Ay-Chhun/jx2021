@@ -4,7 +4,7 @@ tItem = {
 	[200130832] = {
 		--pet id,pet name
 		{40, "Thó C­ng Gi¸o Chóng Tinh §µn (Thñy)"},
-		{43, "Thó C­ng Gi¸o Chóng Tinh §µn (Thæ)"},
+		{43, "Pet Cult Follower Star Altar (Earth)"},
 	},
 	[200130833] = {
 		{41, "Thó C­ng Gi¸o Chóng NguyÖt §µn (Thñy)"},

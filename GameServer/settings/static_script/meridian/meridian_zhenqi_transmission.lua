@@ -38,8 +38,8 @@ TASK_IMPORT_LIMIT_WORD_IDX = 2--¼ÇÂ¼ÊäÈëµÄword
 t_jiqishu_para = 
 {
 	--×î´ó×é¶ÓÈËÊý£¬Ã¿´Î´ÓÃ¿Î»¶ÓÔ±»ñµÃÕæÆøÊý£¬{¶Ó³¤ÏûºÄ}£¬ÏûºÄÃèÊö
-	{2, 4, {{ZHENQIWAN_TYPE0, 4, "Tô Linh Hoµn"},}, "4 phót Tô Linh Hoµn"},
-	{3, 5, {{ZHENQIWAN_TYPE1, 4, "§¹i Tô Linh Hoµn"},}, "4 phót §¹i Tô Linh Hoµn"},
+	{2, 4, {{ZHENQIWAN_TYPE0, 4, "Spirit-Gathering Pill"},}, "4 phót Tô Linh Hoµn"},
+	{3, 5, {{ZHENQIWAN_TYPE1, 4, "Grand Spirit-Gathering Pill"},}, "4 phót §¹i Tô Linh Hoµn"},
 	{4, 6, {{ZHENQIWAN_TYPE2, 4, "Tô Linh Tiªn §¬n"},}, "4 phót Tô Linh Tiªn §¬n"},
 	{5, 8, {{ZHENQIWAN_TYPE2, 8, "Tô Linh Tiªn §¬n"},}, "8 phót Tô Linh Tiªn §¬n"},
 }

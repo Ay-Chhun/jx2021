@@ -6,19 +6,19 @@ function yb_RelayCallBoss(nRandomSeed)
 	end
 	local tMapPos = {
 		{{218,1834,3436}, "Linh B¶o S¬n (229,213)"},
-		{{312,1722,3776}, "Vâ §ang (215,235)"},
+		{{312,1722,3776}, "Wudang (215,235)"},
 		{{108,1485,3026}, "B¾c TuyÒn Ch©u (185,189)"},
 		{{105,1462,3071}, "T©y TuyÒn Ch©u (182,191)"},
-		{{401,1692,2988}, "§iÓm Th­¬ng S¬n (211,186)"},
-		{{203,1524,3034}, "T©y BiÖn Kinh (190,189)"},
-		{{201,1548,3048}, "Nam BiÖn Kinh (193,190)"},
+		{{401,1692,2988}, "Diancang Mountain (211,186)"},
+		{{203,1524,3034}, "West Bianjing (190,189)"},
+		{{201,1548,3048}, "South Bianjing (193,190)"},
 		{{301,1513,2972}, "T©y Thµnh §« (189,185)"},
 		{{308,1519,3180}, "B¾c Thµnh §« (189,198)"},
 		{{507,1658,3352}, "Long M«n TrÊn (207,209)"},
 	}
 	local NpcTemplate = {
 		{"SF15_DFBB", "§«ng Ph­¬ng BÊt B¹i"},
-		{"SF15_Wushi", "L©n S­"},
+		{"SF15_Wushi", "Lion"},
 		{"SF15_LYQ", "Lı Nguyªn Kh¸nh"},
 	}
 	local nSize = getn(tMapPos);
@@ -85,13 +85,13 @@ function OnDeath(id, x, f)
 			{1, 60, "Bao Thiªn Kiªu LÖnh Nhá", {2, 95, 2086, 1}, 0},
 		}
 		if YB_GLOBLE_TAG == 0 then
-			if GetNpcName(id) == "L©n S­" then
+			if GetNpcName(id) == "Lion" then
 				tinsert(tAward, {31, 1, format("yb_randhorse(%d, %d)", 1, id), 1});
 			else
 				tinsert(tAward, {31, 1, format("yb_randhorse(%d, %d)", 1, id), 1});
 			end
 		end
-		local nRand = gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "BOSS N¨m Míi", "PhÇn th­ëng BOSS");
+		local nRand = gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "New Year BOSS", "PhÇn th­ëng BOSS");
 		if nRand >= 1 and nRand <= 4 then
 			Msg2Global(format("Chóc mõng %s ®· ®¸nh b¹i BOSS %s nhËn ®­îc phÇn th­ëng %s*%d!", GetName(), GetNpcName(id), tAward[nRand][3], 1));
 		end
@@ -118,18 +118,18 @@ function OnDeath(id, x, f)
 		}
 		if YB_GLOBLE_TAG == 0 then
 			tinsert(tAward, {45, {"ThÇn Thó TŞch Tµ", {0, 105, 30048, 1, 1, -1, -1, -1, -1, -1, -1}}});
-	    tinsert(tAward, {50, {"Kú l©n", {0, 105, 30049, 1, 1, -1, -1, -1, -1, -1, -1}}});
+	    tinsert(tAward, {50, {"Kirin", {0, 105, 30049, 1, 1, -1, -1, -1, -1, -1, -1}}});
 	    tinsert(tAward, {3, {"B¸o Tr¾ng B¶o B¶o", {0, 105, 30047, 1, 1, -1, -1, -1, -1, -1, -1}}});
 	    tinsert(tAward, {1, {"B¸o Vµng B¶o B¶o", {0, 105, 30046, 1, 1, -1, -1, -1, -1, -1, -1}}});
-			if GetNpcName(id) == "L©n S­" then
-				tinsert(tAward, {1, {"L©n S­", {0, 105, 30044, 1, 1, -1, -1, -1, -1, -1, -1}}});
+			if GetNpcName(id) == "Lion" then
+				tinsert(tAward, {1, {"Lion", {0, 105, 30044, 1, 1, -1, -1, -1, -1, -1, -1}}});
 			end
 		end
 		local tItem = gf_RandRate(tAward)[2];
 		gf_ThrowDice(tItem[2], nil, nil, nil, nil, id);		
 		Msg2Global(format("Chóc mõng tæ ®éi %s ®· ®¸nh b¹i BOSS %s nhËn ®­îc phÇn th­ëng %s*%d!", GetName(), GetNpcName(id), tItem[1], 1));
-		if tItem[1] == "ThÇn Thó TŞch Tµ" or tItem[1] == "Kú l©n" or 
-		tItem[1] == "B¸o Tr¾ng B¶o B¶o" or tItem[1] == "B¸o Vµng B¶o B¶o" or tItem[1] == "L©n S­" then
+		if tItem[1] == "ThÇn Thó TŞch Tµ" or tItem[1] == "Kirin" or 
+		tItem[1] == "B¸o Tr¾ng B¶o B¶o" or tItem[1] == "B¸o Vµng B¶o B¶o" or tItem[1] == "Lion" then
 			YB_GLOBLE_TAG = 1;
 		end
 	end
@@ -138,14 +138,14 @@ end
 function yb_randhorse(nTag, id)
 	local tAward = {
 		{1, 45, "ThÇn Thó TŞch Tµ", {0, 105, 30048, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 50, "Kú l©n", {0, 105, 30049, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 50, "Kirin", {0, 105, 30049, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 3, "B¸o Tr¾ng B¶o B¶o", {0, 105, 30047, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 1, "B¸o Vµng B¶o B¶o", {0, 105, 30046, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
 	}
 	if nTag == 1 then
-		tinsert(tAward, {1, 1, "L©n S­", {0, 105, 30044, 1, 1, -1, -1, -1, -1, -1, -1}, 0});
+		tinsert(tAward, {1, 1, "Lion", {0, 105, 30044, 1, 1, -1, -1, -1, -1, -1, -1}, 0});
 	end
-	local nRand = gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "BOSS N¨m Míi", "PhÇn th­ëng BOSS");
+	local nRand = gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "New Year BOSS", "PhÇn th­ëng BOSS");
 	YB_GLOBLE_TAG = 1;
 	Msg2Global(format("Chóc mõng %s ®· ®¸nh b¹i BOSS %s nhËn ®­îc phÇn th­ëng %s*%d!", GetName(), GetNpcName(id), tAward[nRand][3], 1));
 end

@@ -7,7 +7,7 @@ Include("\\script\\online\\newyear08\\newyear08_head.lua");
 function OnUse()
 	Say("Sö dông ®¹i hång bao sÏ nhËn ®­îc mét sè b¸nh n¨m míi, 1 Kú L©n, ,3 TiÓu ThÇn Th«ng Phï, x¸c suÊt 40% nhËn ®­îc 1 sñi c¶o, ngÉu nhiªn 1-2 §¹i Néi Thanh §ång. Sao h¶?",
 		2,
-		"§­îc/confirm_get_da",
+		"Receive/confirm_get_da",
 		"Kh«ng cÇn/nothing")
 end
 

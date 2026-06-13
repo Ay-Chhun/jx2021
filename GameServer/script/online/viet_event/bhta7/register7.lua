@@ -236,7 +236,7 @@ function bhta7_confirm_vote(nID, nType)
 	SetTaskTemp(TSK_TMP_BHTA6_VOTE, 0)
 	SetTaskTemp(TSK_TMP_BHTA6_VOTE, GetTaskTemp(TSK_TMP_BHTA6_VOTE)+ nType)
 	SetTaskTemp(TSK_TMP_BHTA6_VOTE, GetTaskTemp(TSK_TMP_BHTA6_VOTE) + (nID * 10))
-	AskClientForNumber("do_vote", 1, 999, "Sè l­îng Vote")
+	AskClientForNumber("do_vote", 1, 999, "Number of Votes")
 end
 
 function do_vote(nCount)

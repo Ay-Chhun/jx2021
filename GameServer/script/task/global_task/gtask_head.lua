@@ -296,10 +296,10 @@ function UpdateMeridia_73()
 	--print("MeridianGetLevel")
 		local tSex = gf_GetPlayerSexName();
 		if MeridianUpdateLevel() == 1 then
-			Msg2Player("Chóc mõng "..tSex.."Nghiªn cøu <Quú Hoa B¶o §iÓn> thµnh c«ng vµ ®¹t ®Õn c¶nh giíi Vâ Gi¶.");
+			Msg2Player("Congratulations"..tSex.."Nghiªn cøu <Quú Hoa B¶o §iÓn> thµnh c«ng vµ ®¹t ®Õn c¶nh giíi Vâ Gi¶.");
 			if MeridianGetLevel() == 1 then
 				AwardGenuineQi(30000);
-	  		Msg2Player("Chóc mõng "..tSex.."So bé l·nh ngé <Quú Hoa B¶o §iÓn>, nhËn ®­îc 30000 ®iÓm ch©n khÝ");
+	  		Msg2Player("Congratulations"..tSex.."So bé l·nh ngé <Quú Hoa B¶o §iÓn>, nhËn ®­îc 30000 ®iÓm ch©n khÝ");
 	  		Talk(2,"",format("Chóc mõng <color=green>%s<color>®· ®äc'Quú Hoa B¶o §iÓn'thµnh c«ng vµ ®Æt  ®Õn c¹nh giíi vâ gi¶",tSex),format("Chóc mõng %s s¬ bé lÜnh ngé ®­îc'Quú Hoa B¶o §iÓn',nhËn ®­îc<color=green>30000<color>®iÓm Ch©n KhÝ (bÊm nót J®Ó xem kinh m¹ch)",tSex));
 			end
 		end
@@ -791,25 +791,25 @@ function tGtNpcMain:dialog_string_deal(dialog_str,sNpcName)
 	if GetSex() == 1 then
 		strSex = "Tha";
 	elseif GetSex() == 2 then
-		strSex = "Ng­êi ch¬i";
+		strSex = "Player";
 	else
 		strSex = "¶nh/chØ";
 	end;
 	dialog_str = gsub(dialog_str,"<person>",strSex);
 	if GetSex() == 1 then
-		strSex = "Huynh ®Ö";
+		strSex = "Martial brother";
 	elseif GetSex() == 2 then
-		strSex = "Huynh muéi";
+		strSex = "Martial brother and sister";
 	else
-		strSex = "Huynh ®Ö/Huynh muéi";
+		strSex = "Martial brother/Martial sister";
 	end;
 	dialog_str = gsub(dialog_str,"<bro_sis>",strSex);
 	if GetSex() == 1 then
-		strSex = "S­ huynh ®Ö";
+		strSex = "Senior martial brother";
 	elseif GetSex() == 2 then
-		strSex = "S­ huynh muéi";
+		strSex = "Senior martial sister";
 	else
-		strSex = "S­ huynh ®Ö/ S­ huynh muéi";
+		strSex = "Senior martial brother/ Senior martial sister";
 	end;
 	dialog_str = gsub(dialog_str,"<tbro_tsis>",strSex);
 	return dialog_str
@@ -976,7 +976,7 @@ function tGtNpcMain:cancel_task_talk(nTaskID,nMoney)
 	Say("Hñy nhiÖm vô nµy cÇn tiªu hao<color=yellow>"..strMoney.."<color>, x¸c ®Þnh muèn hñy?",
 		2,
 		"\n§óng råi, ta muèn hñy/#tGtNpcMain:cancel_task_confirm("..nTaskID..","..nMoney..")",
-		"\nKÕt thóc ®èi tho¹i/nothing")
+		"\nEnd conversation/nothing")
 end
 
 --È·¶¨È¡ÏûÈÎÎñ
@@ -1071,7 +1071,7 @@ function tGtNpcMain:skip_task_talk(nTaskID, value)
 		Say("Bá qua nhiÖm vô nµy cÇn tiªu hao <color=yellow>"..strMoney.."<color>, x¸c ®Þnh muèn bá chø?",
 			2,
 			"\n§óng, ta muèn bá qua/#tGtNpcMain:skip_task_confirm("..nTaskID..","..tRet[1]..")",
-			"\nKÕt thóc ®èi tho¹i/nothing")
+			"\nEnd conversation/nothing")
 	end
 	if getn(tRet) == 4 then
 		local nG = tonumber(tRet[1])
@@ -1086,7 +1086,7 @@ function tGtNpcMain:skip_task_talk(nTaskID, value)
 		Say(format("Bá qua nhiÖm vô nµy cÇn tèn <color=yellow>%s<color>, x¸c ®Þnh bá qua?", szItemName),
 			2,
 			format("\n§óng, ta muèn bá qua/#tGtNpcMain:skip_task_confirm2(%d, %d, %d, %d, %d)", nTaskID, nG, nD, nP, num),
-			"\nKÕt thóc ®èi tho¹i/nothing")
+			"\nEnd conversation/nothing")
 	end
 end
 
@@ -1222,10 +1222,10 @@ function tGtNpcMain:ShowAward(nTaskID)
 				end
 			end
 			if not cIndex then
-				msg = msg..format("§¹o cô: %s", g_GtPrize[nConditionID][3]).."\n"
+				msg = msg..format("Item: %s", g_GtPrize[nConditionID][3]).."\n"
 			else
 				local nNum = tonumber(strsub(strItem, cIndex + 1, strlen(strItem)))
-				msg = msg..format("§¹o cô: %s*%d", g_GtPrize[nConditionID][3], nNum).."\n"
+				msg = msg..format("Item: %s*%d", g_GtPrize[nConditionID][3], nNum).."\n"
 			end
 		elseif	g_GtPrize[nConditionID][1] == "Money" then
 			msg = msg..format("Vµng: %d vµng", tonumber(g_GtPrize[nConditionID][2])/10000).."\n"

@@ -4,100 +4,100 @@ _g_monthlyEvent_BaseCfg = {
     [1] = {
         szName = "Vui TÕt §oµn Viªn",
         tbItems = {
-            { "L¸ Dong", { 2, 200, 55 } },
+            { "Dong Leaf", { 2, 200, 55 } },
             { "G¹o nÕp", { 2, 200, 56 } },
-            { "§Ëu Xanh ThÞt Heo", { 2, 200, 57 } },
-            { "B¸nh TÐt", { 2, 200, 58 } },
-            { "B¸nh Ch­ng", { 2, 200, 59 } },
+            { "Pork Mung Bean", { 2, 200, 57 } },
+            { "Banh Tet", { 2, 200, 58 } },
+            { "Banh Chung", { 2, 200, 59 } },
             { "B¸nh Ch­ng ThËp CÈm", { 2, 200, 60 } },
         }
     },
     [2] = {
         szName = "Phóc Léc §Çu Xu©n",
         tbItems = {
-            { "Tr¸i c©y", { 2, 200, 74 } },
+            { "Fruit", { 2, 200, 74 } },
             { "Bót Nghiªn GiÊy Mùc", { 2, 200, 75 } },
             { "Hång bao", { 2, 200, 76 } },
-            { "M©m Ngò Qu¶", { 2, 200, 77 } },
+            { "Five-Fruit Tray", { 2, 200, 77 } },
             { "C©u §èi §á", { 2, 200, 78 } },
-            { "L× X× §¹i C¸t", { 2, 200, 79 } },
+            { "Lucky Money of Great Fortune", { 2, 200, 79 } },
         }
     },
     [3] = {
         szName = "Quèc S¾c Thiªn H­¬ng",
         tbItems = {
-            { "Hæ Ph¸ch", { 2, 200, 80 } },
+            { "Amber", { 2, 200, 80 } },
             { "Tói X¹ H­¬ng", { 2, 200, 81 } },
             { "Phông HuyÕt H­¬ng", { 2, 200, 82 } },
-            { "N­íc Hoa Kh«", { 2, 200, 83 } },
-            { "N­íc Hoa Tinh ChÊt", { 2, 200, 84 } },
+            { "Dry Perfume", { 2, 200, 83 } },
+            { "Perfume Essence", { 2, 200, 84 } },
             { "Quèc S¾c Thiªn H­¬ng", { 2, 200, 85 } },
         }
     },
     [4] = {
         szName = "§¹i LÔ Ph¸o Hoa",
         tbItems = {
-            { "Ngßi Ph¸o", { 2, 200, 1 } },
-            { "èng Phãng", { 2, 200, 2 } },
-            { "Thuèc Næ", { 2, 200, 3 } },
+            { "Fuse", { 2, 200, 1 } },
+            { "Launch Tube", { 2, 200, 2 } },
+            { "Explosive Powder", { 2, 200, 3 } },
             { "Ph¸o Hoa Huy Hoµng", { 2, 200, 4 } },
-            { "Ph¸o Hoa Rùc Rì", { 2, 200, 5 } },
-            { "Ph¸o Hoa §¹i LÔ", { 2, 200, 6 } },
+            { "Dazzling Fireworks", { 2, 200, 5 } },
+            { "Grand Ceremony Fireworks", { 2, 200, 6 } },
         }
     },
     [5] = {
         szName = "Gi¶i NhiÖt Ngµy HÌ",
         tbItems = {
             { "C¸c lo¹i ®Ëu", { 2, 200, 7 } },
-            { "§­êng PhÌn", { 2, 200, 8 } },
-            { "H¹t Sen", { 2, 200, 9 } },
-            { "ChÌ ba mµu", { 2, 200, 10 } },
-            { "ChÌ ThËp CÈm", { 2, 200, 11 } },
-            { "ChÌ Sen", { 2, 200, 12 } },
+            { "Rock Sugar", { 2, 200, 8 } },
+            { "Lotus Seed", { 2, 200, 9 } },
+            { "Three-color sweet soup", { 2, 200, 10 } },
+            { "Assorted sweet soup", { 2, 200, 11 } },
+            { "Lotus sweet soup", { 2, 200, 12 } },
         }
     },
     [6] = {
         szName = "Trë VÒ Tuæi Th¬",
         tbItems = {
-            { "DiÒu GiÊy", { 2, 200, 13 } },
+            { "Paper Kite", { 2, 200, 13 } },
             { "Con Quay", { 2, 200, 14 } },
             { "Robot", { 2, 200, 15 } },
-            { "Hép §å Ch¬i Nhá", { 2, 200, 16 } },
-            { "Hép §å Ch¬i Lín", { 2, 200, 17 } },
-            { "Thïng §å Ch¬i", { 2, 200, 18 } },
+            { "Small Toy Box", { 2, 200, 16 } },
+            { "Large Toy Box", { 2, 200, 17 } },
+            { "Toy Crate", { 2, 200, 18 } },
         }
     },
     [7] = {
         szName = "Tuæi Häc Trß",
         tbItems = {
-            { "Bót Mùc", { 2, 200, 19 } },
-            { "TËp Vë", { 2, 200, 20 } },
+            { "Ink Pen", { 2, 200, 19 } },
+            { "Notebook", { 2, 200, 20 } },
             { "Hoa Phông Hoµng", { 2, 200, 21 } },
-            { "Kû YÕu", { 2, 200, 22 } },
-            { "L­u Bót", { 2, 200, 23 } },
-            { "Sæ Tay Kû NiÖm", { 2, 200, 24 } },
+            { "Yearbook", { 2, 200, 22 } },
+            { "Autograph", { 2, 200, 23 } },
+            { "Memory Notebook", { 2, 200, 24 } },
         }
     },
     [8] = {
         szName = "ThÊt TÞch CÇu Duyªn",
         tbItems = {
-            { "N­íc M¾t Chøc N÷", { 2, 200, 25 } },
-            { "§ãa Hoa Ng­u Lang", { 2, 200, 26 } },
-            { "CÇu ¤ Th­íc", { 2, 200, 27 } },
-            { "Hép Quµ Ng­u Lang", { 2, 200, 28 } },
-            { "Hép Quµ Chøc N÷", { 2, 200, 29 } },
-            { "Hép Quµ Uyªn ¦¬ng", { 2, 200, 30 } },
+            { "Weaver Girl's Tears", { 2, 200, 25 } },
+            { "Cowherd's Flower", { 2, 200, 26 } },
+            { "Magpie Bridge", { 2, 200, 27 } },
+            { "Cowherd Gift Box", { 2, 200, 28 } },
+            { "Weaver Girl Gift Box", { 2, 200, 29 } },
+            { "Mandarin Duck Gift Box", { 2, 200, 30 } },
         }
     },
     [9] = {
         szName = "Vui Héi §ªm Tr¨ng",
         tbItems = {
-            { "Bét m×", { 2, 200, 31 } },
+            { "Flour", { 2, 200, 31 } },
             { "Nh©n B¸nh", { 2, 200, 32 } },
             { "Nh©n B¸nh ThËp CÈm", { 2, 200, 33 } },
-            { "B¸nh trung thu", { 2, 200, 34 } },
-            { "B¸nh ®Æc biÖt", { 2, 200, 35 } },
-            { "B¸nh thËp cÈm", { 2, 200, 36 } },
+            { "Mooncake", { 2, 200, 34 } },
+            { "Special cake", { 2, 200, 35 } },
+            { "Assorted cake", { 2, 200, 36 } },
         }
     },
     [10] = {
@@ -107,7 +107,7 @@ _g_monthlyEvent_BaseCfg = {
             { "Tói Th¬m", { 2, 200, 38 } },
             { "Tói Th¬m §Æc BiÖt", { 2, 200, 39 } },
             { "N­íc hoa th­êng ", { 2, 200, 40 } },
-            { "N­íc Hoa Kh«", { 2, 200, 41 } },
+            { "Dry Perfume", { 2, 200, 41 } },
             { "N­íc Hoa Nång Nµn", { 2, 200, 42 } },
         }
     },
@@ -127,7 +127,7 @@ _g_monthlyEvent_BaseCfg = {
         tbItems = {
             { "C©y th«ng gi¸o héi", { 2, 200, 49 } },
             { "VËt Trang TrÝ", { 2, 200, 50 } },
-            { "Ng«i Sao Gi¸ng Sinh", { 2, 200, 51 } },
+            { "Christmas Star", { 2, 200, 51 } },
             { "C©y Th«ng An Lµnh", { 2, 200, 52 } },
             { "C©y Th«ng Êm ¸p", { 2, 200, 53 } },
             { "C©y Th«ng Gi¸ng Sinh", { 2, 200, 54 } },

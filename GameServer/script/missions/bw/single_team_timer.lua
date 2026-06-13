@@ -69,7 +69,7 @@ local news_str = "";
 			end
 		end
 
-		news_str = "Thi ®Êu chÝnh thøc b¾t ®Çu!";
+		news_str = "The match officially begins!";
 		Msg2MSAll(SINGLE_TEAM_MISSION_ID,news_str);             
 		RunMission(SINGLE_TEAM_MISSION_ID);
 		return
@@ -82,7 +82,7 @@ local news_str = "";
 	nSec = mod((TEAM_READY_TIME - nTimeState),3) * 20;
 	
 	if nMin > 0 and nSec == 0 then
-		news_str = "C¸ch giê khai chiÕn l«i ®µi cßn:"..nMin.." phót.";
+		news_str = "C¸ch giê khai chiÕn l«i ®µi cßn:"..nMin.." minutes.";
 		Msg2MSAll(SINGLE_TEAM_MISSION_ID,news_str);
 	elseif nMin == 0 then
 		news_str = "C¸ch giê khai chiÕn l«i ®µi cßn:" ..nSec.. " gi©y.";
@@ -124,7 +124,7 @@ local TeamMemberTab = {};
 				end
 				for j=1,getn(TeamMemberTab) do
 					PlayerIndex = TeamMemberTab[j];
-					Talk(1,"","Thi ®Êu kÕt thóc, hai bªn hßa nhau!");
+					Talk(1,"","The match is over, the two sides drew!");
 					DelMSPlayer(SINGLE_TEAM_MISSION_ID,0);
 				end
 			end
@@ -163,7 +163,7 @@ local TeamMemberTab = {};
 					end
 				end
 				SetMissionV(MS_WIN_CAMP,2);
-				news_str = "Thi ®Êu kÕt thóc, ng­êi chiÕn th¾ng thuéc ®éi ngò "..gf_GetCaptainName().." dÉn d¾t!";
+				news_str = "Thi ®Êu kÕt thóc, ng­êi chiÕn th¾ng thuéc ®éi ngò "..gf_GetCaptainName().."!";
 				Msg2MSAll(SINGLE_TEAM_MISSION_ID,news_str);
 			else
 				for i=1,GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,2) do
@@ -188,7 +188,7 @@ local TeamMemberTab = {};
 					end
 				end
 				SetMissionV(MS_WIN_CAMP,1);
-				news_str = "Thi ®Êu kÕt thóc, ng­êi chiÕn th¾ng thuéc ®éi ngò "..gf_GetCaptainName().." dÉn d¾t!";
+				news_str = "Thi ®Êu kÕt thóc, ng­êi chiÕn th¾ng thuéc ®éi ngò "..gf_GetCaptainName().."!";
 				Msg2MSAll(SINGLE_TEAM_MISSION_ID,news_str);
 			end		
 			PlayerIndex = OldPlayer;
@@ -227,7 +227,7 @@ local TeamMemberTab = {};
  		
  		PlayerIndex = OldPlayer;
  		
-		news_str = "Thi ®Êu kÕt thóc, hai phe hßa nhau!"
+		news_str = "The match is over, the two sides drew!"
 		Msg2MSAll(SINGLE_TEAM_MISSION_ID, news_str);
 		SetMissionV(TEAM_GAME_STATE,3);
  		SetMissionV(DELAY_STATE,1);
@@ -240,7 +240,7 @@ local TeamMemberTab = {};
 	if nMin == 0 then
 		Msg2MSAll(SINGLE_TEAM_MISSION_ID, "Giai ®o¹n thi ®Êu: Thi ®Êu ®ang tiÕn hµnh, thêi gian thi ®Êu cßn"..nSec.." gi©y.");
 	elseif nSec == 0 then
-		Msg2MSAll(SINGLE_TEAM_MISSION_ID, "Giai ®o¹n thi ®Êu: Thi ®Êu ®ang tiÕn hµnh, thêi gian thi ®Êu cßn"..nMin.." phót.");
+		Msg2MSAll(SINGLE_TEAM_MISSION_ID, "Giai ®o¹n thi ®Êu: Thi ®Êu ®ang tiÕn hµnh, thêi gian thi ®Êu cßn"..nMin.." minutes.");
 	end
 	
 end

@@ -19,14 +19,14 @@ tbKillNpcWeekly.tbAward =
 	tbCost = 
 	{
 		{2, 1, 30603, 299, "Tiªu Dao Ngäc"},
-		{2, 1, 30825, 2000, "D©u"},
-		{2, 1, 30826, 2000, "L¸ Trµ Xanh"},
+		{2, 1, 30825, 2000, "Strawberry"},
+		{2, 1, 30826, 2000, "Green Tea Leaf"},
 	},
 	tbPrize = 
 	{
 		{"Exp", 150000000},
-		{2, 1, 30785, 19, "V« Tù Kinh Th­"},
-		{2, 1, 30830, 99, "Siro Tr¸i C©y "},
+		{2, 1, 30785, 19, "Wordless Scripture"},
+		{2, 1, 30830, 99, "Fruit Syrup"},
 	}
 }
 
@@ -36,7 +36,7 @@ tbKillNpcWeekly.nTargetKillNpcNum = 1
 
 tbKillNpcWeekly.tbLang = 
 {
-	szTaskName = "Thu thËp Siro Tr¸i C©y (Cuèi tuÇn)",
+	szTaskName = "Collect Fruit Syrup (Weekend)",
 	szOpenDateTimeError = "HiÖn t¹i kh«ng ph¶i thêi gian më tÝnh n¨ng, xin vui lßng ®îi.",
 	szOpenWeekTimeError = "TÝnh n¨ng nµy chØ më vµo %s, xin vui lßng ®îi.",
 	szAcceptTask = "\nNhËn nhiÖm vô %s/KillNpcWeekGetTask",

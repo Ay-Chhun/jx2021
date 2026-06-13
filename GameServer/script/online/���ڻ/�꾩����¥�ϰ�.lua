@@ -12,27 +12,27 @@ function main()
 	if GetSex() == 1 then
 		strSex = "ThiÕu hiÖp"
 	elseif GetSex() == 2 then
-		strSex = "C« n­¬ng"
+		strSex = "Young lady"
 	else
 		strSex = "ThiÕu hiÖp/N÷ hiÖp"
 	end
 	local nDate = tonumber(date("%Y%m%d"))
 	if nDate < 20060216 then
-		Say("Chóc mäi ng­êi n¨m míi vui vÎ, vµo <color=red>ngµy 16/02/2008<color> bæn tiÖm sÏ chİnh thøc më cöa, c¸c vŞ"..strSex.."nhí ghĞ nhĞ!",0)
+		Say("Chóc mäi ng­êi n¨m míi vui vÎ, vµo <color=red>ngµy 16/02/2008<color> bæn tiÖm sÏ chİnh thøc më cöa, c¸c vŞ"..strSex.."remember to drop by!",0)
 		return 0
 	end
 	if nDate > 20060221 then
-		Say("TÕt qua råi, bæn tiÖm xin phĞp ®ãng cöa nghØ! C¸c vŞ"..strSex.."Nhí tÕt n¨m sau ®Õn ñng hé bæn tiÖm nhĞ!",0)
+		Say("TÕt qua råi, bæn tiÖm xin phĞp ®ãng cöa nghØ! C¸c vŞ"..strSex.."remember to come support our shop next New Year!",0)
 		return 0
 	end
 	if NEWYEAR_SWITCH == 1 then
 		local selTab = {
-					"ChÕ biÕn sñi c¶o./make_dumpling",
+					"Make dumplings./make_dumpling",
 					"§æi phÇn th­ëng/request_award",
-					"TiÖm sñi c¶o/know_detail",
+					"Dumpling shop/know_detail",
 					"Ta chØ ghĞ ngang qua th«i./nothing"
 					}
-		Say("ói chµ!"..strSex.."mêi vµo trong, h·y gióp ®ì qu¸n nhá!",4,selTab)
+		Say("Oh my!"..strSex.."mêi vµo trong, h·y gióp ®ì qu¸n nhá!",4,selTab)
 	else
 		Say("Bæn tiÖm ch­a më cöa,"..strSex.."h·y ®îi vµi ngµy.",0)
 		return 0
@@ -41,11 +41,11 @@ end
 
 function make_dumpling()
 	local selTab = {
-		"Sñi c¶o b¾p c¶i/select_baicai",
-		"Sñi c¶o cµ rèt/select_luobo",
+		"Cabbage dumplings/select_baicai",
+		"Carrot dumplings/select_luobo",
 		"Sñi c¶o rau cÇn/select_qincai",
-		"Sñi c¶o kim chi/select_suancai",
-		"Sñi c¶o rau hÑ/select_jiucai",
+		"Kimchi dumplings/select_suancai",
+		"Chive dumplings/select_jiucai",
 		"Trang sau./see_nextpage",
 		"Ta ch­a muèn ¨n!/nothing"
 		}
@@ -54,13 +54,13 @@ end
 
 function see_nextpage()
 	local selTab = {
-		"Sñi c¶o thŞt heo/select_zhurou",
-		"Sñi c¶o thŞt bß/select_niurou",
-		"Sñi c¶o t«m/select_xiaren",
+		"Pork dumplings/select_zhurou",
+		"Beef dumplings/select_niurou",
+		"Shrimp dumplings/select_xiaren",
 		"Tam Tiªn sñi c¶o/select_sanxian",
-		"Sñi c¶o may m¾n/select_xingyun",
-		"Sñi c¶o thñy tinh/select_shuijing",
-		"Trang tr­íc./see_prepage",
+		"Lucky dumplings/select_xingyun",
+		"Crystal dumplings/select_shuijing",
+		"Previous page./see_prepage",
 		"Ta ch­a muèn ¨n!/nothing"
 		}
 	Say("Kh¸ch quan muèn ¨n sñi c¶o lo¹i nµo?",8,selTab)
@@ -75,7 +75,7 @@ function request_award()
 	if GetSex() == 1 then
 		strSex = "ThiÕu hiÖp"
 	elseif GetSex() == 2 then
-		strSex = "C« n­¬ng"
+		strSex = "Young lady"
 	else
 		strSex = "ThiÕu hiÖp/N÷ hiÖp"
 	end
@@ -92,7 +92,7 @@ function know_detail()
 	if GetSex() == 1 then
 		strSex = "ThiÕu hiÖp"
 	elseif GetSex() == 2 then
-		strSex = "C« n­¬ng"
+		strSex = "Young lady"
 	else
 		strSex = "ThiÕu hiÖp/N÷ hiÖp"
 	end
@@ -108,7 +108,7 @@ function want_miji()
 	if GetSex() == 1 then
 		strSex = "ThiÕu hiÖp"
 	elseif GetSex() == 2 then
-		strSex = "C« n­¬ng"
+		strSex = "Young lady"
 	else
 		strSex = "ThiÕu hiÖp/N÷ hiÖp"
 	end
@@ -129,7 +129,7 @@ function want_shipin()
 	if GetSex() == 1 then
 		strSex = "ThiÕu hiÖp"
 	elseif GetSex() == 2 then
-		strSex = "C« n­¬ng"
+		strSex = "Young lady"
 	else
 		strSex = "ThiÕu hiÖp/N÷ hiÖp"
 	end
@@ -143,11 +143,11 @@ function want_shipin()
 				RING_COUNTER = RING_COUNTER + 1
 				WriteLog("[Ho¹t ®éng mïa xu©n dïng sñi c¶o ®æi phÇn th­ëng]:"..GetName().."dïng sñi c¶o thñy tinh vµ Long cèt ®æi §«ng Ph­¬ng Long Ch©u.")
 				Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 mãn trang søc.")
-				AddGlobalNews("Chóc mõng"..GetName().."NhËn ®­îc §«ng Ph­¬ng Long Ch©u.")
+				AddGlobalNews("Congratulations"..GetName().."NhËn ®­îc §«ng Ph­¬ng Long Ch©u.")
 			end
 		end
 	else
-		Say("D­êng nh­"..strSex..", quªn mang theo µ?",0)
+		Say("D­êng nh­"..strSex..", did you forget to bring it?",0)
 	end
 end
 --===========================================================================
@@ -250,7 +250,7 @@ function make_niurou()
 	if GetSex() == 1 then
 		strSex = "ThiÕu hiÖp"
 	elseif GetSex() == 2 then
-		strSex = "C« n­¬ng"
+		strSex = "Young lady"
 	else
 		strSex = "ThiÕu hiÖp/N÷ hiÖp"
 	end
@@ -283,7 +283,7 @@ function make_zhurou()
 	if GetSex() == 1 then
 		strSex = "ThiÕu hiÖp"
 	elseif GetSex() == 2 then
-		strSex = "C« n­¬ng"
+		strSex = "Young lady"
 	else
 		strSex = "ThiÕu hiÖp/N÷ hiÖp"
 	end
@@ -316,7 +316,7 @@ function make_xiaren()
 	if GetSex() == 1 then
 		strSex = "ThiÕu hiÖp"
 	elseif GetSex() == 2 then
-		strSex = "C« n­¬ng"
+		strSex = "Young lady"
 	else
 		strSex = "ThiÕu hiÖp/N÷ hiÖp"
 	end
@@ -349,7 +349,7 @@ function make_luobo()
 	if GetSex() == 1 then
 		strSex = "ThiÕu hiÖp"
 	elseif GetSex() == 2 then
-		strSex = "C« n­¬ng"
+		strSex = "Young lady"
 	else
 		strSex = "ThiÕu hiÖp/N÷ hiÖp"
 	end
@@ -381,7 +381,7 @@ function make_suancai()
 	if GetSex() == 1 then
 		strSex = "ThiÕu hiÖp"
 	elseif GetSex() == 2 then
-		strSex = "C« n­¬ng"
+		strSex = "Young lady"
 	else
 		strSex = "ThiÕu hiÖp/N÷ hiÖp"
 	end
@@ -413,7 +413,7 @@ function make_baicai()
 	if GetSex() == 1 then
 		strSex = "ThiÕu hiÖp"
 	elseif GetSex() == 2 then
-		strSex = "C« n­¬ng"
+		strSex = "Young lady"
 	else
 		strSex = "ThiÕu hiÖp/N÷ hiÖp"
 	end
@@ -445,7 +445,7 @@ function make_qincai()
 	if GetSex() == 1 then
 		strSex = "ThiÕu hiÖp"
 	elseif GetSex() == 2 then
-		strSex = "C« n­¬ng"
+		strSex = "Young lady"
 	else
 		strSex = "ThiÕu hiÖp/N÷ hiÖp"
 	end
@@ -477,7 +477,7 @@ function make_jiucai()
 	if GetSex() == 1 then
 		strSex = "ThiÕu hiÖp"
 	elseif GetSex() == 2 then
-		strSex = "C« n­¬ng"
+		strSex = "Young lady"
 	else
 		strSex = "ThiÕu hiÖp/N÷ hiÖp"
 	end
@@ -509,7 +509,7 @@ function make_sanxian()
 	if GetSex() == 1 then
 		strSex = "ThiÕu hiÖp"
 	elseif GetSex() == 2 then
-		strSex = "C« n­¬ng"
+		strSex = "Young lady"
 	else
 		strSex = "ThiÕu hiÖp/N÷ hiÖp"
 	end
@@ -544,7 +544,7 @@ function make_xingyun()
 	if GetSex() == 1 then
 		strSex = "ThiÕu hiÖp"
 	elseif GetSex() == 2 then
-		strSex = "C« n­¬ng"
+		strSex = "Young lady"
 	else
 		strSex = "ThiÕu hiÖp/N÷ hiÖp"
 	end
@@ -579,7 +579,7 @@ function make_shuijing()
 	if GetSex() == 1 then
 		strSex = "ThiÕu hiÖp"
 	elseif GetSex() == 2 then
-		strSex = "C« n­¬ng"
+		strSex = "Young lady"
 	else
 		strSex = "ThiÕu hiÖp/N÷ hiÖp"
 	end

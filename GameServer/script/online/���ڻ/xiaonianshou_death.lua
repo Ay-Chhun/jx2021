@@ -16,7 +16,7 @@ function main()
 			SetTask(TASK_GOT_NIANSHOU,nTimeNow);
 			
 			local nRet, nItem = 0, 0;
-			nRet, nItem = gf_AddItemEx( {2,1,30002,1,1}, "MËu tý ®¹i hång bao" );
+			nRet, nItem = gf_AddItemEx( {2,1,30002,1,1}, "Wuzi Great Red Envelope" );
 			if nRet ~= 0 and nItem ~= nil then
 				nRet = gf_setItemExpireDate(nItem, 2008, 2, 29, 24);
 				if nRet ~= 1 then

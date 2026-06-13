@@ -47,6 +47,6 @@ function use_fruit(item)
 		ModifyExp(exp)
 		DelItemByIndex(item, 1)
 		Msg2Player(format("B¹n dïng 1 Liªn Lı qu¶, nhËn ®­îc %d ®iÓm kinh nghiÖm", exp))
-		WriteLog("[KÕt h«n]:"..GetName().." ®· dïng 1 Liªn Lı qu¶, nhËn ®­îc"..exp.." ®iÓm kinh nghiÖm");
+		WriteLog("[Marriage]:"..GetName().." ®· dïng 1 Liªn Lı qu¶, nhËn ®­îc"..exp.." ®iÓm kinh nghiÖm");
 	end	
 end

@@ -41,7 +41,7 @@ CBASE_STAGE =
 		TM_StopTimeGuage(-2);
 		self:OnCreateBoss();
 		TM_CreateSubNpc(SUB_NPC_COUNT);
-		TM_StartTimeGuage("T鎛g th阨 gian  ",30*60,0,0);
+		TM_StartTimeGuage("Total time",30*60,0,0);
 	end,
 	--执行时间点事件，nStartSec表示从关卡开始后的哪一秒开始执行,nIntervalSec表示执行的间隔时间
 	--fEven是要执行的操作函数
@@ -80,7 +80,7 @@ CBASE_STAGE =
 			TM_AddPoint(250,self.nStage);	--所有人加250过关积分，额外积分在TM_AddPoint函数里面判断
 			TM_AddExpAward(self.nStage);	--经验奖励
 			TM_CreateBox(self.nStage);	--在BOSS区中间创建一个箱子NPC
-			Msg2MSAll(MISSION_ID,"Ch骳 m鮪g  vt 秈 "..self.nStage..".");
+			Msg2MSAll(MISSION_ID,"Congratulations on clearing the pass"..self.nStage..".");
 			self:SaveTongStage();	--保存关卡进度
 			--产出帮派令牌碎片
 			SendScript2VM("\\script\\function\\honor_tong\\ht_head.lua", "ht_GetTongChip(100, 2)")

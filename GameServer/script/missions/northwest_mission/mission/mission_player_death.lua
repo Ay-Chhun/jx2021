@@ -26,7 +26,7 @@ function OnDeath()
 	--Èç¹ûÈ«ÌåËÀÍö
 	if death_chk_flag == 1 then
 		local mission_count = GetMapTaskTemp(nMapID,1)
-		WriteLog("[¶i T©y B¾c]thèng kª thÊt b¹i: ID ¶i	"..GetMissionV(MS_STATE_DIFF_ID)..":"..nMapID..":"..mission_count.."	Sè ng­êi ch¬i	"..GetTeamSize().."	thêi gian tr¶i qua	"..Zgc_pub_time_sec_change(((189-GetMissionV(MS_TIMMER_LOOP_ID))* 10),1))
+		WriteLog("[¶i T©y B¾c]thèng kª thÊt b¹i: ID ¶i	"..GetMissionV(MS_STATE_DIFF_ID)..":"..nMapID..":"..mission_count.."	Sè ng­êi ch¬i	"..GetTeamSize().."	Time elapsed"..Zgc_pub_time_sec_change(((189-GetMissionV(MS_TIMMER_LOOP_ID))* 10),1))
 		SetMissionV(MS_TIMMER_LOOP_ID,6)
 		stage_mission_fail(GetMissionV(MS_STATE_DIFF_ID))
 		ClearMapNpc(nMapID)

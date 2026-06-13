@@ -62,9 +62,9 @@ function main()
 		Say("§· t×m ®­îc b¹n h÷u råi µ?",
 			4,
 			"§óng råi/teach_team_001",
-			"Ch­a t×m ®­îc ai thİch hîp!/teach_team_004",
-			"Lµm sao mang tíi ®©y/teach_team_002",
-			"Ch­a cã!/teach_team_003");
+			"Haven't found anyone suitable yet!/teach_team_004",
+			"How do I bring them here/teach_team_002",
+			"Don't have one yet!/teach_team_003");
 		return
 		
 	elseif (nState==16) then
@@ -121,7 +121,7 @@ function main()
 			if attr_point_readd_date_chk() ~= 1 then
 				local strtab = {
 					"NhËn phÇn th­ëng/callback_talk",
-					"§Õn th¨m D· TÈu/main_exit"
+					"Visit the Wanderer/main_exit"
 				};
 				if callback_date_check() == 1 then
 					tinsert(strtab,2,"Ta muèn trŞ th­¬ng/restore_all");
@@ -139,7 +139,7 @@ function main()
 				"TrŞ th­¬ng./main_restore",
 				"NhËn phÇn th­ëng/callback_talk",
 				--"ÎÒÒª½«ÉíÉÏ×°±¸µÄÃØóÅËù²åÈëµÄ¾÷ÒªÈ¡³ö/remove_addendar",
-				"§Õn th¨m D· TÈu/main_exit"			
+				"Visit the Wanderer/main_exit"			
 				};
 			if callback_date_check() == 1 then
 				tinsert(strtab,4,"Ta muèn trŞ th­¬ng/restore_all");
@@ -155,7 +155,7 @@ function main()
 		if attr_point_readd_date_chk() ~= 1 then
 			local strtab = {
 				"NhËn phÇn th­ëng/callback_talk",
-				"§Õn th¨m D· TÈu/main_exit"
+				"Visit the Wanderer/main_exit"
 			};
 			if callback_date_check() == 1 then
 				tinsert(strtab,2,"Ta muèn trŞ th­¬ng/restore_all");
@@ -173,7 +173,7 @@ function main()
 			"TrŞ th­¬ng./main_restore",
 			"NhËn phÇn th­ëng/callback_talk",
 			--"ÎÒÒª½«ÉíÉÏ×°±¸µÄÃØóÅËù²åÈëµÄ¾÷ÒªÈ¡³ö/remove_addendar",
-			"§Õn th¨m D· TÈu/main_exit"			
+			"Visit the Wanderer/main_exit"			
 			};
 		if callback_date_check() == 1 then
 			tinsert(strtab,4,"Ta muèn trŞ th­¬ng/restore_all");
@@ -192,7 +192,7 @@ function attr_point_readd_dia()
 		2,
 --		"ÎÒÒª½«ÉíÉÏ×°±¸µÄÃØóÅËù²åÈëµÄ¾÷ÒªÈ¡³ö/remove_addendar",
 		"§· më kü n¨ng míi råi, ta muèn tÈy ®iÓm /attr_point_readd",
-		"§Õn th¨m D· TÈu/nothing"
+		"Visit the Wanderer/nothing"
 		)
 
 end
@@ -268,8 +268,8 @@ function remove_addendar_confirm()
 		return 0;
 	end;
 	local selTab = {
-				"§­îc/remove_addendar_confirm_final",
-				"§Ó ta suy nghÜ/nothing",
+				"Agreed/remove_addendar_confirm_final",
+				"Let me think about it/nothing",
 				}
 	Say("<color=green>D· TÈu<color>: §­îc, thiÕu hiÖp nh×n kü ®©y, bİ kİp nµy cã thÓ th¸o <color=yellow>"..strPages.."<color><color=yellow>"..nAddendarCount.."<color> yÕu quyÕt, ng­¬i muèn nhËn nh÷ng yÕu quyÕt nµy chø?",getn(selTab),selTab);
 end;
@@ -307,13 +307,13 @@ function remove_addendar_confirm_final()
 			nRetCode = AddItem(2, 6, nID, 1);
 			if nRetCode == 1 then
 				Msg2Player("B¹n ®· th¸o thµnh c«ng"..strName);
-				WriteLog("[NhËn yÕu quyÕt D· TÈu]"..GetName().."§· th¸o"..strName);
+				WriteLog("[NhËn yÕu quyÕt D· TÈu]"..GetName().."Removed"..strName);
 			else
-				WriteLog("[D· TÈu th¸o yÕu quyÕt bŞ lçi]"..GetName().." th¸o "..strName.." bŞ lçi, nRetCode:"..nRetCode);
+				WriteLog("[D· TÈu th¸o yÕu quyÕt bŞ lçi]"..GetName().." removing"..strName.." has an error, nRetCode:"..nRetCode);
 			end;
 		end;
 	end;
-	WriteLog("[NhËn yÕu quyÕt D· TÈu]:"..GetName().."thø"..(nCurCount+1).." lÇn yÕu quyÕt");
+	WriteLog("[NhËn yÕu quyÕt D· TÈu]:"..GetName().."the"..(nCurCount+1).." lÇn yÕu quyÕt");
 end;
 
 -- Ãâ·ÑÏ´Ç±ÄÜµãµÄº¯Êı

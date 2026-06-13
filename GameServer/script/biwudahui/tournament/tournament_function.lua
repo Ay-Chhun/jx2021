@@ -111,7 +111,7 @@ function BWT_GetOpponentIndex()
 	elseif PlayerIndex == nIdx2 then
 		return nIdx1;
 	else
-		gf_ShowDebugInfor("PlayerIndex trong hµm sè BWT_GetOpponentIndex bÞ lçi");
+		gf_ShowDebugInfor("PlayerIndex in function BWT_GetOpponentIndex is invalid");
 	end;
 end;
 --Çå³ýÁÙÊ±ÈÎÎñ±äÁ¿
@@ -208,8 +208,8 @@ function BWT_ReportResult(nWinnerIdx,nLoserIdx,nResultType)
 	nResultType = nResultType or 0;
 	local tbDamageInfo1,tbDamageInfo2 = BWT_GetDamageValue(nWinnerIdx,nLoserIdx);
 	Msg2MSAll(MISSION_ID,"Th«ng tin s¸t th­¬ng: ");
-	Msg2MSAll(MISSION_ID,"Ng­êi ch¬i "..BWT_GetName(nWinnerIdx).."  g©y ra:"..tbDamageInfo2[2]..",% s¸t th­¬ng:"..tbDamageInfo2[1].."%");
-	Msg2MSAll(MISSION_ID,"Ng­êi ch¬i "..BWT_GetName(nLoserIdx).."  g©y ra:"..tbDamageInfo1[2]..",% s¸t th­¬ng:"..tbDamageInfo1[1].."%");
+	Msg2MSAll(MISSION_ID,"Player"..BWT_GetName(nWinnerIdx).."  caused by:"..tbDamageInfo2[2]..",% s¸t th­¬ng:"..tbDamageInfo2[1].."%");
+	Msg2MSAll(MISSION_ID,"Player"..BWT_GetName(nLoserIdx).."  caused by:"..tbDamageInfo1[2]..",% s¸t th­¬ng:"..tbDamageInfo1[1].."%");
 	local nOldPIdx = PlayerIndex
 	if nResultType == 1 then	--´òÆ½ÁË
 		PlayerIndex = nWinnerIdx;
@@ -247,10 +247,10 @@ function BWT_ReportResult(nWinnerIdx,nLoserIdx,nResultType)
 		local nLoseRoute = GetPlayerRoute()--¸º·½Á÷ÅÉ
 		BWT_AddPoint(-nPoint);
 		merit_1V1(0, nLostMerit - nWinMerit, nLostLevel - nWinLevel, 0); --¹¦Ñ«ºÍ½£ÏÀ
-		Say("B¹n ®· thua <color=yellow>"..BWT_GetName(nWinnerIdx).."<color>, bÞ gi¶m <color=yellow>"..nPoint.."<color> ®iÓm so tµi, ®iÓm so tµi tuÇn nµy lµ "..GetTask(TSK_CURREALRESULT)..".",0);
+		Say("B¹n ®· thua <color=yellow>"..BWT_GetName(nWinnerIdx).."<color>, losing <color=yellow>"..nPoint.."<color> ®iÓm so tµi, ®iÓm so tµi tuÇn nµy lµ "..GetTask(TSK_CURREALRESULT)..".",0);
 		Msg2Player("B¹n ®· bÞ gi¶m "..nPoint.." ®iÓm so tµi");
 		PlayerIndex = nOldPIdx;
-		Msg2MSAll(MISSION_ID,BWT_GetName(nWinnerIdx).."ChiÕn th¾ng råi "..BWT_GetName(nLoserIdx)..", giµnh ®­îc th¾ng lîi.");
+		Msg2MSAll(MISSION_ID,BWT_GetName(nWinnerIdx).."ChiÕn th¾ng råi "..BWT_GetName(nLoserIdx)..", achieving victory.");
 		
 		--PKÊ¤ÀûÍ³¼Æ
 		local nPKStatWinKey = nWinRoute*100+nLoseRoute
@@ -675,7 +675,7 @@ function BWT_CloseField()
 	CloseMission(MISSION_ID);
 	local nRetCode = FreeDynamicMap(nMapID,nMapIdx);	--FreeDynamicMapÒ²»áµ÷ÓÃCloseMisssion
 	if nRetCode == 0 then
-		WriteLog("["..LOG_ERROR_HEAD.."]:FreeDynamicMap bÞ lçi, nRetCode:"..nRetCode);
+		WriteLog("["..LOG_ERROR_HEAD.."]:FreeDynamicMap error, nRetCode:"..nRetCode);
 	end;
 	WriteLog(format("[§¹i Héi Tû Vâ kÕt thóc] [Th«ng tin trËn ®Êu: %d,%d]",nMapID,nMapIdx))
 end;
@@ -1004,7 +1004,7 @@ function BWT_ProcessTrap(nDirection)
 		for i=1,8 do
 			nPIdx1,nPIdx2,nState,bAllow = BWT_GetMatchInfo(nCityID,nDirection,i);
 			if nState > MS_STATE_IDEL then
-				tinsert(selTab,format("Ta muèn vµo"..i.." - (khu thi ®Êu)/#BWT_AudienceJoin(%d,%d,%d,%d)",nCityID,nDirection,i,bAllow));
+				tinsert(selTab,format("Ta muèn vµo"..i.." - (match area)/#BWT_AudienceJoin(%d,%d,%d,%d)",nCityID,nDirection,i,bAllow));
 			end;
 		end;
 		if getn(selTab) == 0 then
@@ -1012,7 +1012,7 @@ function BWT_ProcessTrap(nDirection)
 			return 0;
 		end;
 		tinsert(selTab,"Kh«ng vµo xem/nothing");
-		local tbDirection = {"H­íng ®«ng","H­íng nam","H­íng T©y","H­íng B¾c"};
+		local tbDirection = {"East direction","South direction","West direction","North direction"};
 		Say("B¹n muèn vµo khu vùc nµo trong <color=yellow>"..tbDirection[nDirection].."<color>?",getn(selTab),selTab);
 	else	--³¡ÄÚTrapµã´¦Àí
 		DelMSPlayer(MISSION_ID,AUDIENCE_CAMP);
@@ -1218,7 +1218,7 @@ function BWT_PointAttenuation()
 	local nWeekElapse = nWeekNum - nBodyWeek;
 	local nAttenPoint = BWT_GetPointAttenuation(nCurPoint,nWeekElapse);
 	if nCurPoint-nAttenPoint > 0 then
-		Msg2Player("§iÓm tÝch lòy tû vâ gi¶m"..(nCurPoint-nAttenPoint).." ®iÓm");
+		Msg2Player("Accumulated duel points decreased"..(nCurPoint-nAttenPoint).." ®iÓm");
 	end;
 	BWDH_SetTask(TSK_CURREALRESULT,nAttenPoint);
 	BWDH_SetTask(TSK_BODY_WEEK,nWeekNum);	--¼ÇÂ¼Ë¥¼õµÄÖÜÊý
@@ -1230,7 +1230,7 @@ function BWT_PointAttenuation()
 			BWDH_SetTask(TSK_HIGHESTWEEKLADDER,nBWRank);	--×î¸ßÖÜÅÅÃû
 		end;
 	end;
-	WriteLog("["..LOG_HEAD.."]:"..GetName().."§iÓm tÝch lòy tû vâ gi¶m. Tr­íc lóc gi¶m: "..nCurPoint..", sau khi gi¶m: "..nAttenPoint);
+	WriteLog("["..LOG_HEAD.."]:"..GetName().."Accumulated duel points decreased. Before the decrease:"..nCurPoint..", after the decrease:"..nAttenPoint);
 end;
 --·â×°µÄQuitGestConvention
 function BWT_QuitGestConvention(nPIdx)
@@ -1343,9 +1343,9 @@ end;
 function know_detail()
 	local selTab = {
 				"§¹i héi tû vâ/know_detail_1",
-				"So tµi/know_detail_2",
-				"h¹ng/know_detail_3",
-				"§iÓm/know_detail_4",
+				"Dueling/know_detail_2",
+				"Ranking/know_detail_3",
+				"Points/know_detail_4",
 				--"½±Àø/know_detail_5",
 				"Kh«ng cÇn/nothing",
 				}
@@ -1398,7 +1398,7 @@ function BWT_GetAward()
 		"NhËn th­ëng tû vâ tuÇn nµy/BWT_GetWeekAward",
 		"NhËn th­ëng xÕp h¹ng tuÇn tr­íc/BWT_GetRankAward",
 --		"ÁìÈ¡Çø·þ½±Àø/BWT_GetGlobalAward",
-		"KÕt thóc ®èi tho¹i/nothing"
+		"End dialogue/nothing"
 	};
 	Say(g_szInfoHead.."B¹n muèn nhËn th­ëng lo¹i nµo?",
 		getn(strtab),
@@ -1410,7 +1410,7 @@ function BWT_GetWeekAward()
 		"NhËn th­ëng trËn tham gia/BWT_GetWeekAward_Win",
 		--"ÁìÈ¡±ÈÎä»ý·ÖµÄ½±Àø/BWT_GetWeekAward_Point",
 		--"ÁìÈ¡½£ÏÀ±Ò½±Àø/BWT_GetWeekAward_Gold",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	}
 	local nDate = tonumber(date("%Y%m%d"));
 --	if nDate <= 20101010 then
@@ -1465,8 +1465,8 @@ function BWT_GetWeekAward_Win()
 		--gf_Modify("Pvp",2400);
 		--gf_Modify("Dzjy",2400);
 		gf_Modify("Exp",nExp);
-		gf_AddItemEx({2,1,30499,2},"Hu©n ch­¬ng anh hïng");
-		gf_AddItemEx({2,1,30692,10},"R­¬ng §¹i Héi Tû Vâ");
+		gf_AddItemEx({2,1,30499,2},"Hero's Medal");
+		gf_AddItemEx({2,1,30692,10},"Grand Martial Arts Tournament Chest");
 		AddRuntimeStat(20, 1, 0, 1)
 		AddRuntimeStat(20, 4, 0, 10)
 		gf_SetLogCaption("");
@@ -1518,21 +1518,21 @@ function BWT_GetWeekAward_Point()
 	local szString1,szString2,szString3 = "","","";
 	local nGetXinDeState = GetTask(TSK_GET_XINDE_STATE);
 	if nGetXinDeState == 30 then
-		szString1 = "<color=red>§· l·nh<color>";
-		szString2 = "<color=red>§· l·nh<color>";
-		szString3 = "<color=red>§· l·nh<color>";
+		szString1 = "<color=red>Claimed<color>";
+		szString2 = "<color=red>Claimed<color>";
+		szString3 = "<color=red>Claimed<color>";
 	elseif nGetXinDeState == 20 then
-		szString1 = "<color=red>§· l·nh<color>";
-		szString2 = "<color=red>§· l·nh<color>";
-		szString3 = "<color=yellow>Ch­a l·nh<color>";
+		szString1 = "<color=red>Claimed<color>";
+		szString2 = "<color=red>Claimed<color>";
+		szString3 = "<color=yellow>Not yet claimed<color>";
 	elseif nGetXinDeState == 10 then
-		szString1 = "<color=red>§· l·nh<color>";
-		szString2 = "<color=yellow>Ch­a l·nh<color>";
-		szString3 = "<color=yellow>Ch­a l·nh<color>";
+		szString1 = "<color=red>Claimed<color>";
+		szString2 = "<color=yellow>Not yet claimed<color>";
+		szString3 = "<color=yellow>Not yet claimed<color>";
 	else
-		szString1 = "<color=yellow>Ch­a l·nh<color>";
-		szString2 = "<color=yellow>Ch­a l·nh<color>";
-		szString3 = "<color=yellow>Ch­a l·nh<color>";
+		szString1 = "<color=yellow>Not yet claimed<color>";
+		szString2 = "<color=yellow>Not yet claimed<color>";
+		szString3 = "<color=yellow>Not yet claimed<color>";
 	end;
 
 	if nCount > 0 then
@@ -1575,8 +1575,8 @@ function BWT_GetRankAward_Exp(nBWRank)
 		gf_SetLogCaption("Gi¶i th­ëng xÕp h¹ng mçi tuÇn §¹i Héi Tû Vâ")
 		BWDH_SetTask(TSK_GET_AWARD_WEEK,nWeekNum);
 		gf_Modify("Exp",nExp);
-		gf_AddItemEx({2,1,30499,6},"Hu©n ch­¬ng anh hïng");
-		gf_AddItemEx({2,1,30692,30},"R­¬ng §¹i Héi Tû Vâ");
+		gf_AddItemEx({2,1,30499,6},"Hero's Medal");
+		gf_AddItemEx({2,1,30692,30},"Grand Martial Arts Tournament Chest");
 		AddRuntimeStat(20, 2, 0, 1)
 		AddRuntimeStat(20, 4, 0, 30)
 		
@@ -1614,8 +1614,8 @@ function BWT_GetWeaponEffectAward()
 		nType = 2;
 	end;
 	local selTab = {
-				"§ång ý/#BWT_AddWeaponEffect("..nType..")",
-				"Hñy bá/nothing",
+				"Agree/#BWT_AddWeaponEffect("..nType..")",
+				"Cancel/nothing",
 				}
 	Say(g_szInfoHead.."NhËn danh hiÖu ®¹i héi tû vâ sÏ <color=yellow>che mÊt danh hiÖu s­ m«n hoÆc danh hiÖu ®¹i héi vâ l©m cïng lo¹i cña b¹n<color>, b¹n x¸c nhËn muèn nhËn phÇn th­ëng danh hiÖu cña ®¹i héi tû vâ?",getn(selTab),selTab);
 end;
@@ -1678,8 +1678,8 @@ function BWT_GetTitleAward()
 		nTitleGenre = 25;
 	end;
 	local selTab = {
-				"§ång ý/#BWT_AddBiWuTitle("..nTitleGenre..","..nRoutePos..")",
-				"Hñy bá/nothing",
+				"Agree/#BWT_AddBiWuTitle("..nTitleGenre..","..nRoutePos..")",
+				"Cancel/nothing",
 				}
 	Say(g_szInfoHead.."NhËn danh hiÖu ®¹i héi tû vâ sÏ <color=yellow>che mÊt danh hiÖu s­ m«n hoÆc danh hiÖu ®¹i héi vâ l©m cïng lo¹i cña b¹n<color>, b¹n x¸c nhËn muèn nhËn phÇn th­ëng danh hiÖu cña ®¹i héi tû vâ?",getn(selTab),selTab);
 end;
@@ -1721,13 +1721,13 @@ function BWT_GetHorseAward()
 	end;
 	local selTab = {};
 	if nBWLevel == 0 then
-		tinsert(selTab,"Thuª XÝch Ký (Tèc ®é 30, phÝ thuª 10 vµng)/#BWT_BuyHorse(1)");
+		tinsert(selTab,"Rent Chiji (Speed 30, rental fee 10 gold)/#BWT_BuyHorse(1)");
 		tinsert(selTab,"Thuª Hoµng Ký (Tèc ®é 30, phÝ thuª 10 vµng)/#BWT_BuyHorse(2)");
 	else
 		tinsert(selTab,"Thuª Tr¶o Hoµng Phi §iÖn (Tèc ®é 40, phÝ thuª 20 vµng)/#BWT_BuyHorse(3)");
-		tinsert(selTab,"Thuª XÝch Thè (Tèc ®é 40, phÝ thuª 20 vµng)/#BWT_BuyHorse(4)");
+		tinsert(selTab,"Rent Red Hare (Speed 40, rental fee 20 gold)/#BWT_BuyHorse(4)");
 	end;
-	tinsert(selTab,"Kh«ng thuª/nothing");
+	tinsert(selTab,"Do not rent/nothing");
 	if nBWRank > 0 and nBWRank <= 3 then
 		Say(g_szInfoHead.."XÕp h¹ng tÝch lòy tuÇn tr­íc cña b¹n n»m trong 3 h¹ng ®Çu, xÕp thø <color=yellow>"..nBWRank.."<color>, b¹n cã thÓ thuª nh­ng lo¹i thó c­ìi ë bªn trªn. B¹n muèn thuª lo¹i nµo? <color=red>Chó ý: H¹n sö dông lµ 7 ngµy, yªu cÇu nh©n vËt cÊp 80 míi ®­îc dïng<color>. <color=yellow>NÕu b¹n h¹ng 1 l­u ph¸i th× ®­îc thuª thó c­ìi miÔn phÝ.<color>",getn(selTab),selTab);
 	else
@@ -1737,10 +1737,10 @@ end;
 
 g_tbHorseInfo =
 {	--IDÐÅÏ¢£¬¼Û¸ñ£¬³ÖÐøÌìÊý
-	[1] = {{0,105,5,"XÝch Ký"},10,7},
+	[1] = {{0,105,5,"Chiji"},10,7},
 	[2] = {{0,105,6,"Hoµng Ký"},10,7},
 	[3] = {{0,105,10,"Tr¶o Hoµng Phi §iÖn"},20,7},
-	[4] = {{0,105,12,"XÝch Thè"},20,7},
+	[4] = {{0,105,12,"Red Hare"},20,7},
 }
 
 function BWT_BuyHorse(nType)
@@ -1770,9 +1770,9 @@ function BWT_BuyHorse(nType)
 	local nLastDay = g_tbHorseInfo[nType][3];
 	_,nItemIdx = AddItem(nID1,nID2,nID3,1,1,-1,-1,-1,-1,-1,-1);
 	SetItemExpireTime(nItemIdx,nLastDay*24*3600);
-	Msg2Player("B¹n nhËn ®­îc 1 "..szHorseName..", thêi h¹n "..nLastDay.."Thiªn");
+	Msg2Player("B¹n nhËn ®­îc 1 "..szHorseName..", valid until"..nLastDay.."Thiªn");
 	BWDH_SetTask(TSK_BUY_HORSE,1);
-	WriteLog("["..LOG_HEAD.."]:"..GetName().."Thuª 1 con ngùa: "..szHorseName);
+	WriteLog("["..LOG_HEAD.."]:"..GetName().."Rent 1 horse:"..szHorseName);
 end;
 --»ñµÃÄ³¸öÍæ¼ÒµÄÖ°ÒµÃû×Ö
 function BWT_GetPlayerRouteName(nPIdx)
@@ -1803,7 +1803,7 @@ function BWT_GetName(nPIdx)
 	local szName = "";
 	PlayerIndex = nPIdx;
 	if GetMaskStatus() == 1 then
-		szName = "Ng­êi thÇn bÝ";
+		szName = "Mysterious Person";
 	else
 		szName = GetName();
 	end;
@@ -1852,14 +1852,14 @@ g_TempItemName = "Kinh nghiÖm ®èi chiÕn ";
 function GLB_BW_ChangeItem()
 	local strtab = {};
 	for i = 1,getn(tBwChangeItem) do
-		tinsert(strtab,"§ång ý"..tBwChangeItem[i][1]..g_TempItemName.."§æi"..tBwChangeItem[i][2][2].."/#GLB_BW_AskChange("..i..")");
+		tinsert(strtab,"Agree"..tBwChangeItem[i][1]..g_TempItemName.."§æi"..tBwChangeItem[i][2][2].."/#GLB_BW_AskChange("..i..")");
 	end
 --	tinsert(strtab, "ÎÒÒªÁìÈ¡Ò«ÑôÁî»òð©ÔÂÁî	/GLB_BW_Award_Ling");
 --	tinsert(strtab, "ÎÒÒªÊ¹ÓÃÒ«ÑôÁî»òð©ÔÂÁî¶Ò»»Åû·ç»ò»ÕÕÂ		/#GLB_BW_ChangeItem2(2)");
 --	tinsert(strtab, "ÎÒÒªÊ¹ÓÃð©ÔÂËéÆ¬»òÒ«ÑôËéÆ¬¶Ò»»Åû·ç»ò»ÕÕÂ	/#GLB_BW_ChangeItem2(1)");
 	tinsert(strtab, "§æi th­ëng PVP	/#show_equip_shop(48)");
 
-	tinsert(strtab,"KÕt thóc ®èi tho¹i/nothing");
+	tinsert(strtab,"End dialogue/nothing");
 	Say("B¹n muèn ®æi phÇn th­ëng nµo?",
 		getn(strtab),
 		strtab)
@@ -1867,19 +1867,19 @@ end
 
 function GLB_BW_AskChange(nType)
 	if GetTask(TASK_BIWU_DUIZHAN_JINGYAN) < tBwChangeItem[nType][1] then
-		Talk(1,"","  "..g_TempItemName.."Kh«ng ®ñ."..g_TempItemName.."Tham gia §¹i Héi Tû Vâ liªn server sÏ nhËn ®­îc.");
+		Talk(1,"","  "..g_TempItemName.."Not enough."..g_TempItemName.."Tham gia §¹i Héi Tû Vâ liªn server sÏ nhËn ®­îc.");
 		return 0;
 	end
-	Say("QuyÕt ®Þnh dïng <color=yellow>"..tBwChangeItem[nType][1].." ®iÓm<color>"..g_TempItemName.."§æi <color=yellow>"..tBwChangeItem[nType][2][2].."<color> chø?",
+	Say("QuyÕt ®Þnh dïng <color=yellow>"..tBwChangeItem[nType][1].." ®iÓm<color>"..g_TempItemName.."Exchange <color=yellow>"..tBwChangeItem[nType][2][2].."<color> ?",
 		3,
-		"§ång ý/#GLB_BW_ConfirmChange("..nType..")",
+		"Agree/#GLB_BW_ConfirmChange("..nType..")",
 		"trë l¹i/GLB_BW_ChangeItem",
-		"KÕt thóc ®èi tho¹i/nothing")
+		"End dialogue/nothing")
 end
 
 function GLB_BW_ConfirmChange(nType)
 	if GetTask(TASK_BIWU_DUIZHAN_JINGYAN) < tBwChangeItem[nType][1] then
-		Talk(1,"","  "..g_TempItemName.."Kh«ng ®ñ."..g_TempItemName.."Tham gia §¹i Héi Tû Vâ liªn server sÏ nhËn ®­îc.");
+		Talk(1,"","  "..g_TempItemName.."Not enough."..g_TempItemName.."Tham gia §¹i Héi Tû Vâ liªn server sÏ nhËn ®­îc.");
 		return 0;
 	end
 	if gf_Judge_Room_Weight(1,100,"") ~= 1 then
@@ -1898,7 +1898,7 @@ function GLB_BW_Award_Ling(bConfirm)
 		Say("Trong Thiªn M«n TrËn Liªn Server, ng­êi ch¬i cuèi cïng ®¸nh tróng boss Cuång T­íng Minh NhËt, sÏ cã t­ c¸ch ®Õn chç cña ta nhËn 1 DiÖu D­¬ng LÖnh. (Cuång T­íng Minh NhËt chØ xuÊt hiÖn trong Thiªn M«n TrËn cña bang héi cÊp 3, ®ång thêi mçi côm server liªn th«ng chØ xuÊt hiÖn 1 con boss) Trong Thiªn M«n TrËn Liªn Server, ng­êi ch¬i cuèi cïng ®¸nh tróng boss Ngôy T­íng ¸m NguyÖt, sÏ cã t­ c¸ch ®Õn chç cña ta nhËn 1 H¹o NguyÖt LÖnh.",
 		2,
 		"Ta muèn nhËn!	/#GLB_BW_Award_Ling(1)",
-		"KÕt thóc ®èi tho¹i	/nothing");
+		"End dialogue	/nothing");
 		return
 	end
 
@@ -1964,21 +1964,21 @@ function GLB_BW_ChangeItem2(nIndex)
 
 	local tMenu = {};
 	for nElemIdx, tElemInfo in tChange.tInfo do
-		local szInfo = "Dïng thÎ";
+		local szInfo = "Use card";
 		for idx, count in tElemInfo[1] do
 			if 0 < count then
 				szInfo = szInfo .. format("%d %s,", count, g_TempItemName2[idx][1]);
 			end
 		end
 		if 0 < tElemInfo[2] then
-			szInfo = szInfo .. format("%d vµng,", tElemInfo[2]);
+			szInfo = szInfo .. format("%d gold,", tElemInfo[2]);
 		end
 		szInfo = strsub(szInfo, 1, strlen(szInfo) - 2); -- È¥µô×îºóµÄ¡°£¬¡±ºÅ »òÕß ¡°ÓÃ¡±×Ö
-		szInfo = szInfo .. format("§æi %s	/#GLB_BW_ConfirmChange2(%d, %d)", tElemInfo[3][2], nIndex, nElemIdx);
+		szInfo = szInfo .. format("Exchange %s	/#GLB_BW_ConfirmChange2(%d, %d)", tElemInfo[3][2], nIndex, nElemIdx);
 		tinsert(tMenu, szInfo);
 	end
 
-	tinsert(tMenu, "KÕt thóc ®èi tho¹i	/nothing");
+	tinsert(tMenu, "End dialogue	/nothing");
 
 	Say(tChange.szMsg, getn(tMenu), tMenu);
 end
@@ -2000,7 +2000,7 @@ function GLB_BW_ConfirmChange2(nIndex, nElemIdx)
 
 	for idx, count in tElem[1] do
 		if count > GetItemCount(g_TempItemName2[idx][2], g_TempItemName2[idx][3], g_TempItemName2[idx][4]) then
-			Talk(1, "", "Mang theo trªn ng­êi" .. g_TempItemName2[idx][1] .. "Kh«ng ®ñ" .. count .. ".");
+			Talk(1, "", "Mang theo trªn ng­êi" .. g_TempItemName2[idx][1] .. "Not enough" .. count .. ".");
 			return 0;
 		end
 	end
@@ -2017,7 +2017,7 @@ function GLB_BW_ConfirmChange2(nIndex, nElemIdx)
 	for idx, count in tElem[1] do
 		if 0 < count then
 			if 1 ~= DelItem(g_TempItemName2[idx][2], g_TempItemName2[idx][3], g_TempItemName2[idx][4], count) then
-				WriteLog(format(" ®æi %s [DeleteItem] [Failed] [Acc:%s] [Role:%s] [Item:%sx%d,%d,%d,%d]", tElem[3][2], GetAccount(), GetName(), g_TempItemName2[idx][1], count, g_TempItemName2[idx][2], g_TempItemName2[idx][3], g_TempItemName2[idx][4]));
+				WriteLog(format(" exchange %s [DeleteItem] [Failed] [Acc:%s] [Role:%s] [Item:%sx%d,%d,%d,%d]", tElem[3][2], GetAccount(), GetName(), g_TempItemName2[idx][1], count, g_TempItemName2[idx][2], g_TempItemName2[idx][3], g_TempItemName2[idx][4]));
 				return 0;
 			end
 		end
@@ -2027,7 +2027,7 @@ function GLB_BW_ConfirmChange2(nIndex, nElemIdx)
 	gf_AddItemEx(tElem[3][1], tElem[3][2]);
 	gf_SetLogCaption("");
 
-	Msg2Global(format("Ng­êi ch¬i %s ®· ®æi 1 %s", GetName(), tElem[3][2]));
+	Msg2Global(format("Player %s has exchanged 1 %s", GetName(), tElem[3][2]));
 
 	return 1;
 end
@@ -2218,14 +2218,14 @@ function OnWant(nPIdx,nOppIdx)
 	end;
 	if nCheckMapCode2 == 0 then	--2ºÅÑ¡ÊÖ¼ì²éÃ»Í¨¹ý
 		if nCheckTag == 0 then	--Èç¹û1ºÅ¼ì²éÍ¨¹ýÁË
-			gf_ShowMsg("§èi thñ kh­íc tõ tû vâ!");	--¸ø1ºÅ·¢ÏûÏ¢
+			gf_ShowMsg("Your opponent declined the duel!");	--¸ø1ºÅ·¢ÏûÏ¢
 		end;
 		gf_ShowMsg("Kh­íc tõ tû vâ (kh«ng cã trong b¶n ®å quy ®Þnh), trõ 2 ®iÓm! B¹n ®· rêi khái so tµi.",1,nOppIdx);
 		BWT_AddPoint(-2,nOppIdx)
 		nCheckTag = 1;
 	else	--Èç¹û2ºÅÑ¡ÊÖ¼ì²éÍ¨¹ý
 		if nCheckTag == 1 then	--2ºÅÍ¨¹ý£¬1ºÅÃ»Í¨¹ý
-			gf_ShowMsg("§èi thñ kh­íc tõ tû vâ!",1,nOppIdx);	--¸ø2ºÅ·¢ÏûÏ¢
+			gf_ShowMsg("Your opponent declined the duel!",1,nOppIdx);	--¸ø2ºÅ·¢ÏûÏ¢
 		end;
 	end;
 	if nCheckTag == 1 then	--Èç¹ûÓÐÈËÃ»Í¨¹ý¼ì²é

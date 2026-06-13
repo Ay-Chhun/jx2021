@@ -19,7 +19,7 @@ function OnUse(nItemIdx)
 	end
 	Say("Sö dôngThanh Phong Bao thu ®­îc 48000000 kinh nghiÖm, ®¹i hiÖp cã ch¾c muèn sö dông??",
 		2,
-		"§­îc/#onOpen("..nItemIdx..")",
+		"Agree/#onOpen("..nItemIdx..")",
 		"Kh«ng cÇn ®©u/nothing");
 end
 

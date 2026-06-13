@@ -4,15 +4,15 @@ Include("\\script\\missions\\yp\\yp_head.lua")
 tAward = {
 	--ÉùÍû ½±Àø×Ö·û´®
 	{"Béc lé tµi n¨ng", 2000, "Faction_Reputation_2000"},
-	{"Danh tiÕng th­íc khëi", 8000, "Faction_Reputation_6000"},
+	{"Make a name and rise to fame", 8000, "Faction_Reputation_6000"},
 	{"C«ng danh lín lao", 20000, "Faction_Reputation_12000"},
-	{"Cùu phô thÞnh danh", 40000, "Faction_Reputation_20000"},
+	{"Restore the prosperous name of old", 40000, "Faction_Reputation_20000"},
 	{"V¹n ng­êi ng­ìng mé", 80000, "Faction_Reputation_40000"},
 }
 
 function shengwang_award_main()
 	if yp_get_camp()<=0 then
-		Talk(1,"","Ch­a gia nhËp thÕ lùc bÊt kú")
+		Talk(1,"","Has not joined any faction")
 		return
 	end
 	local tSay = {}
@@ -22,7 +22,7 @@ function shengwang_award_main()
 			tinsert(tSay, format("%s/#_do_award(%d)", format("NhËn th­ëng %s", tt[1]), i))
 		end
 	end
-	tinsert(tSay, format("%s/nothing", "Ra khái"))
+	tinsert(tSay, format("%s/nothing", "Exit"))
 	Say(szTitle, getn(tSay), tSay)
 end
 

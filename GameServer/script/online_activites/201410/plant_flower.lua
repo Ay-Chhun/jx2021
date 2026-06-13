@@ -6,18 +6,18 @@ Include("\\script\\online_activites\\activity_head.lua")
 VET_201410_LOG_TITLE = "Hoat Dong Hoa Hong";
 
 VET_201410_TB_LOG_ACTION_LIST = {
-    [1] = "Mua MÇm Hoa",
+    [1] = "Buy Flower Seedling",
     [2] = "KÝch ho¹t trång hoa",
 };
 
 VET_201410_STRING_LIST = {
     [1] = "KÝch ho¹t trång hoa",
     [2] = "Mua MÇm Hoa (1 MÇm Hoa = 29 xu vËt phÈm)",
-    [3] = "KÕt thóc ®èi tho¹i",
+    [3] = "End conversation",
     [4] = "XU cña ®¹i hiÖp kh«ng ®ñ.",
     [5] = "ChØ cã ®éi tr­ëng míi cã thÓ kÝch ho¹t trång hoa.",
     [6] = "CÇn tæ ®éi trªn 2 ng­êi, míi cã thÓ kÝch ho¹t trång hoa.",
-    [7] = "§iÒu kiÖn trång hoa lçi.",
+    [7] = "Flower planting conditions failed.",
     [8] = "Tæ ®éi thµnh viªn mçi ng­êi cÇn mang theo 1 mÇm hoa míi cã thÓ kÝch ho¹t trång hoa.",
     [9] = "Mçi ngµy mçi ng­êi ch¬i giíi h¹n mua 1 mÇm hoa.",
     [10] = "Nh©n vËt cÊp 77 trë lªn, ®· gia nhËp m«n ph¸i vµ luyÖn ®­îc kü n¨ng cÊp 55 míi cã thÓ tham gia ho¹t ®éng",
@@ -28,7 +28,7 @@ VET_201410_STRING_LIST = {
 };
 
 VET_201410_TB_ITEM_LIST = {
-    [1] = {"MÇm hoa ",2,1,30739},
+    [1] = {"Flower seed",2,1,30739},
 };
 
 VET_201410_TB_MAPID = {
@@ -62,7 +62,7 @@ VET_201410_BOSS_NPC = {
 	{"jushihuoren", "Cù Th¹ch Háa Nh©n"},
 	{"xuanzhuangunren", "Toµn ChuyÓn C«n Nh©n"},
 	{"qiannianhuoqilin", "Thiªn Niªn Háa Kú L©n"},
-	{"dayuguai", "§¹i Ng­ Qu¸i"},
+	{"dayuguai", "Giant Fish Monster"},
 }
 VET_201410_GOLD_BOX = "R­¬ng Hoµng Kim B¶o Bèi";
 VET_201410_PICK_BOX = 1;
@@ -344,18 +344,18 @@ function main()
 	VET_201410_ROSE_TaskGroup:SetTask(VET_201410_ROSE_TaskGroup.PickBox, VET_201410_ROSE_TaskGroup:GetTask(VET_201410_ROSE_TaskGroup.PickBox) + 1)
 	SetNpcTempData(npcIndex, 2, pickedTimes + 1);
 	local tAward = {
-		{1, 250, "Hoa hång", {2, 1, 30736, 1000}, 0},
+		{1, 250, "Rose", {2, 1, 30736, 1000}, 0},
 		{1, 70, "B¹ch C©u Tiªn ®¬n", {2, 1, 1008, 1, 4}, 7 * 24 * 3600},
 		{1, 70, "Tam Thanh Tiªn ®¬n", {2, 1, 1099, 1, 4}, 7 * 24 * 3600},
 		{1, 70, "Lôc ThÇn Tiªn ®¬n", {2, 1, 1066, 1, 4}, 7 * 24 * 3600},
 		{1, 70, "ThÇn N«ng §¬n", {2, 1, 343, 1, 4}, 7 * 24 * 3600},
-		{1, 70, "Bµn Long bÝch", {2, 1, 1000, 1, 4}, 7 * 24 * 3600},
+		{1, 70, "Coiling Dragon Jade", {2, 1, 1000, 1, 4}, 7 * 24 * 3600},
 		{1, 100, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1, 4}, 7 * 24 * 3600},
 		{1, 40, "Qu©n C«ng §¹i", {2, 1, 9998, 1, 4}, 7 * 24 * 3600},
 		{1, 30, "Thiªn Kiªu LÖnh", {2, 97, 236, 1, 4}, 0},
-		{1, 10, "L¨ng Ba Vi Bé", {0, 112, 78, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "L¨ng Ba Vi Bé toµn tËp", {0, 112, 158, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 109, "B¨ng th¹ch", {2, 1, 149, 1}, 0},
+		{1, 10, "Lingbo Microstep", {0, 112, 78, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Lingbo Microstep Complete Edition", {0, 112, 158, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 109, "Ice Stone", {2, 1, 149, 1}, 0},
 		{1, 10, "Thiªn Th¹ch Tinh Th¹ch", {2, 1, 1009, 1, 4}, 7 * 24 * 3600},
 		{31, 100, "ahf_GetLevel3JSEquip()", 1},
 	}

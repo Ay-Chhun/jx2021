@@ -7,7 +7,7 @@ tNpcTalk = {
 	"N­¬ng tö ë nhµ cã nhí ta kh«ng,… ",
 	"ChØ cÇn qu©n quan ®ã chÕt trªn chiÕn tr­êng lµ ta cã c¬ héi th¨ng chøc råi!",
 	"ThËt muèn vøt bá vò khİ trªn tay, phiªu b¹c giang hå!..",
-	"Qu©n Nhi muéi muéi thËt lµ xinh, ha ha!",
+	"Sister Quan'er is truly beautiful, ha ha!",
 	"Bªn kia ®¹i Tèng lµ ®©u thÕ?",
 }
 

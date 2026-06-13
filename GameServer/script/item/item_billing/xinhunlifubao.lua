@@ -5,8 +5,8 @@ function OnUse(nItemIdx)
 		return 0;
 	end;
 	local selTab = {
-			format("Më/#open(%d)",nItemIdx),
-			"LÇn sau h·y më!/nothing",
+			format("Open/#open(%d)",nItemIdx),
+			"Open next time!/nothing",
 			}
 	Say("B¹n muèn më lÔ bao t©n h«n? Bªn trong chøa lÔ phôc t©n h«n.",getn(selTab),selTab);
 end;
@@ -29,6 +29,6 @@ function open(nItemIdx)
 	if DelItemByIndex(nItemIdx,1) == 1 then
 		AddItem(0,109,tCloth_Faction[nFaction][4]+nBody-1,1)
 		Msg2Player("B¹n nhËn ®­îc 1 lÔ phôc t©n h«n");
-		WriteLog("[KÕt h«n]:"..GetName().."®· më mét c¸i lÔ bao t©n h«n");
+		WriteLog("[Marriage]:"..GetName().."®· më mét c¸i lÔ bao t©n h«n");
 	end;
 end;

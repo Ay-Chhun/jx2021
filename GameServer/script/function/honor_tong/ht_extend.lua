@@ -59,29 +59,29 @@ function main()
 		end
 		gf_SafeSetTaskByte(HT_TASK_1, 3, 1, TASK_ACCESS_CODE_HONOR_TONG);
 		gf_ModifyExp(10000000);
-		gf_AddItemEx2({2, 1, 1210, 3}, "B¶o r­¬ng Tµi nguyªn", "Bang Héi Vinh Danh", "R­¬ng Vµng Bang Ph¸i", 0, 1);
+		gf_AddItemEx2({2, 1, 1210, 3}, "B¶o r­¬ng Tµi nguyªn", "Guild Hall of Fame", "R­¬ng Vµng Bang Ph¸i", 0, 1);
 		hte_RandBook();
-		gf_AddItemEx2({2, 1, 30844, 1, 4}, "R­¬ng Háa Phông", "Bang Héi Vinh Danh", "R­¬ng Vµng Bang Ph¸i", 0, 1);
+		gf_AddItemEx2({2, 1, 30844, 1, 4}, "R­¬ng Háa Phông", "Guild Hall of Fame", "R­¬ng Vµng Bang Ph¸i", 0, 1);
 		if nRankone == 1 then --ÈÙÓþ°ïÖ÷
-			gf_AddItemEx2({0, 105, 10112, 1, 4, -1, -1, -1, -1, -1, -1}, "Tö Ngäc Tr­êng Phong", "Bang Héi Vinh Danh", "R­¬ng Vµng Bang Ph¸i", 7*24*3600, 1);
-			gf_AddItemEx2({2, 1, 1210, 5}, "B¶o r­¬ng Tµi nguyªn", "Bang Héi Vinh Danh", "R­¬ng Vµng Bang Ph¸i", 0, 1);
+			gf_AddItemEx2({0, 105, 10112, 1, 4, -1, -1, -1, -1, -1, -1}, "Tö Ngäc Tr­êng Phong", "Guild Hall of Fame", "R­¬ng Vµng Bang Ph¸i", 7*24*3600, 1);
+			gf_AddItemEx2({2, 1, 1210, 5}, "B¶o r­¬ng Tµi nguyªn", "Guild Hall of Fame", "R­¬ng Vµng Bang Ph¸i", 0, 1);
 			for i = 1, 2 do
 				hte_RandBook();
 			end
-			gf_AddItemEx2({2, 1, 30844, 2, 4}, "R­¬ng Háa Phông", "Bang Héi Vinh Danh", "R­¬ng Vµng Bang Ph¸i", 0, 1);
+			gf_AddItemEx2({2, 1, 30844, 2, 4}, "R­¬ng Háa Phông", "Guild Hall of Fame", "R­¬ng Vµng Bang Ph¸i", 0, 1);
 		end
 		SetNpcTempData(nTargetNpc, 3, 1); --±ê¼Ç°ïÖ÷ÒÑÁì
 	else --°ïÖÚ
 		gf_SafeSetTaskByte(HT_TASK_1, 3, 1, TASK_ACCESS_CODE_HONOR_TONG);
 		gf_ModifyExp(10000000);
-		gf_EventGiveCustomAward(5, 4*60, 1, "Bang Héi Vinh Danh", "R­¬ng Vµng Bang Ph¸i");
-		gf_EventGiveCustomAward(9, 4*60, 1, "Bang Héi Vinh Danh", "R­¬ng Vµng Bang Ph¸i");
-		gf_EventGiveCustomAward(12, 4*60, 1, "Bang Héi Vinh Danh", "R­¬ng Vµng Bang Ph¸i");
+		gf_EventGiveCustomAward(5, 4*60, 1, "Guild Hall of Fame", "R­¬ng Vµng Bang Ph¸i");
+		gf_EventGiveCustomAward(9, 4*60, 1, "Guild Hall of Fame", "R­¬ng Vµng Bang Ph¸i");
+		gf_EventGiveCustomAward(12, 4*60, 1, "Guild Hall of Fame", "R­¬ng Vµng Bang Ph¸i");
 		if nRankone == 1 then --ÈÙÓþ°ïÖÚ
 			gf_ModifyExp(10000000);
-			gf_EventGiveCustomAward(5, 4*60, 1, "Bang Héi Vinh Danh", "R­¬ng Vµng Bang Ph¸i");
-			gf_EventGiveCustomAward(9, 4*60, 1, "Bang Héi Vinh Danh", "R­¬ng Vµng Bang Ph¸i");
-			gf_EventGiveCustomAward(12, 4*60, 1, "Bang Héi Vinh Danh", "R­¬ng Vµng Bang Ph¸i");
+			gf_EventGiveCustomAward(5, 4*60, 1, "Guild Hall of Fame", "R­¬ng Vµng Bang Ph¸i");
+			gf_EventGiveCustomAward(9, 4*60, 1, "Guild Hall of Fame", "R­¬ng Vµng Bang Ph¸i");
+			gf_EventGiveCustomAward(12, 4*60, 1, "Guild Hall of Fame", "R­¬ng Vµng Bang Ph¸i");
 		end
 	end
 end
@@ -107,5 +107,5 @@ function hte_RandBook()
 		{0, 107, 30017, "Phong Hoa Thiªn DiÖp Ch©n QuyÓn (Cao cÊp)"},
 	}
 	local nIndex = random(getn(tAward));
-	gf_AddItemEx2({tAward[nIndex][1], tAward[nIndex][2], tAward[nIndex][3], 1}, tAward[nIndex][4], "Bang Héi Vinh Danh", "R­¬ng Vµng Bang Ph¸i", 0, 1);
+	gf_AddItemEx2({tAward[nIndex][1], tAward[nIndex][2], tAward[nIndex][3], 1}, tAward[nIndex][4], "Guild Hall of Fame", "R­¬ng Vµng Bang Ph¸i", 0, 1);
 end

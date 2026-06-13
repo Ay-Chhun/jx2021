@@ -474,59 +474,59 @@ tb_topserver_book45_1 = {
 }
 
 tb_topserver_book45_2 = {
-			[2] =  {"Kim Cang Phôc Ma kinh", {0,107,1,1}}, 
+			[2] =  {"Vajra Demon-Subduing Sutra", {0,107,1,1}}, 
 			[3] =  {"V« TrÇn MËt tÞch", {0,107,5,1}}, 
 			[4] =  {"TiÒm Long MËt tÞch", {0,107,3,1}}, 
 			[14] =  {"HuyÒn ¶nh MËt tÞch", {0,107,17,1}}, 
 			[15] =  {"Qu©n Tö MËt tÞch", {0,107,19,1}}, 
 			[8] =  {"Nh­ ý MËt TÞch", {0,107,9,1}}, 
-			[9] =  {"BÝch H¶i Phæ", {0,107,11,1}}, 
+			[9] =  {"Azure Sea Score", {0,107,11,1}}, 
 			[11] =  {"Hçn §én MËt tÞch", {0,107,13,1}}, 
 			[12] =  {"Quý Thiªn MËt tÞch", {0,107,15,1}}, 
 			[6] =  {"Thiªn La MËt TÞch", {0,107,7,1}}, 
 			[17] =  {"TrÊn Qu©n MËt tÞch", {0,107,21,1}}, 
 			[18] =  {"Xuyªn V©n MËt tÞch", {0,107,23,1}}, 
-			[20] = {"U Minh Quû Lôc", {0,107,25,1}}, 
+			[20] = {"Nether Ghost Record", {0,107,25,1}}, 
 			[21] = {"Linh Cæ MËt tÞch", {0,107,27,1}}, 
 			[23] = {"Kinh Phong MËt tÞch", {0,107,180,1}}, 
 			[29] = {"Tóy Méng  MËt tÞch", {0,107,188,1}}, 
 			[30] = {"Phån Hoa MËt tÞch", {0,107,190,1}}, 
 }
 tb_topserver_book70_1 ={
-			[2] = {"Kim Cang B¸t Nh· Kinh", {0,107,166,1}},
-			[3] = {"V« TrÇn Bå §Ò Kinh",{0,107,168,1}},
+			[2] = {"Kim Cang Bat Nha Kinh", {0,107,166,1}},
+			[3] = {"Vo Tran Bo De Kinh",{0,107,168,1}},
 			[4] = {"TiÒm Long TÞch DiÖt Kinh",{0,107,167,1}},
 			[6] = {"Thiªn La Liªn Ch©u Lôc",{0,107,169,1}},
 			[8] = {"Nh­ ý Kim §Ønh MËt TÞch",{0,107,170,1}},
-			[9] = {"BÝch H¶i TuyÖt ¢m Phæ",{0,107,171,1}},
+			[9] = {"Azure Sea Silent Sound Score",{0,107,171,1}},
 			[11] = {"Hçn §én TrÊn Nh¹c MËt TÞch"	,{0,107,172,1}},
 			[12] = {"Quü Thiªn Du Long MËt TÞch",{0,107,173,1}},
 			[14] = {"HuyÔn ¶nh Mª Tung MËt TÞch",{0,107,174,1}},
 			[15] = {"Qu©n Tö TiÖt Phong MËt TÞch",{0,107,175,1}},
-			[17] = {"TrÊn Qu©n Phi Long Th­¬ng Phæ"	,{0,107,176,1}},
+			[17] = {"Tran Quan Phi Long Thuong Manual"	,{0,107,176,1}},
 			[18] = {"Xuyªn V©n L¹c Hång MËt TÞch",{0,107,177,1}},
-			[20] = {"U Minh Phong Ma Lôc",{0,107,178,1}},
-			[21] = {"Linh Cæ HuyÔn Tµ Lôc",{0,107,179,1}},
+			[20] = {"U Minh Phong Ma Manual",{0,107,178,1}},
+			[21] = {"Linh Co Huyen Ta Manual",{0,107,179,1}},
 			[23] = {"Cöu Thiªn Phong L«i QuyÓn",{0,107,198,1}},
 			[29] = {"Hång TrÇn Tóy Méng Phæ",{0,107,202,1}},
 			[30] = {"Phong Hoa Thiªn DiÖp QuyÓn",{0,107,203,1}},
 }
 
 tb_topserver_yue = {
-				[2] = {"Tói bÝ kiÕp ThiÕu L©m", {2, 0, 607, 1, 4}},
-				[3] = {"Tói bÝ kiÕp ThiÕu L©m", {2, 0, 607, 1, 4}},
-				[4] = {"Tói bÝ kiÕp ThiÕu L©m", {2, 0, 607, 1, 4}},
+				[2] = {"Shaolin secret manual bag", {2, 0, 607, 1, 4}},
+				[3] = {"Shaolin secret manual bag", {2, 0, 607, 1, 4}},
+				[4] = {"Shaolin secret manual bag", {2, 0, 607, 1, 4}},
 				[6] = {"Tói bÝ kiÕp §­êng M«n", {2, 0, 608, 1, 4}},
-				[8] = {"Tói bÝ kiÕp Nga My", {2, 0, 609, 1, 4}},
-				[9] = {"Tói bÝ kiÕp Nga My", {2, 0, 609, 1, 4}},
-				[11] = {"Tói bÝ kiÕp C¸i Bang", {2, 0, 610, 1, 4}},
-				[12] = {"Tói bÝ kiÕp C¸i Bang", {2, 0, 610, 1, 4}},
-				[14] = {"Tói bÝ kiÕp Vâ §ang", {2, 0, 611, 1, 4}},
-				[15] = {"Tói bÝ kiÕp Vâ §ang", {2, 0, 611, 1, 4}},
+				[8] = {"Emei secret manual bag", {2, 0, 609, 1, 4}},
+				[9] = {"Emei secret manual bag", {2, 0, 609, 1, 4}},
+				[11] = {"Beggars' Sect secret manual bag", {2, 0, 610, 1, 4}},
+				[12] = {"Beggars' Sect secret manual bag", {2, 0, 610, 1, 4}},
+				[14] = {"Wudang secret manual bag", {2, 0, 611, 1, 4}},
+				[15] = {"Wudang secret manual bag", {2, 0, 611, 1, 4}},
 				[17] = {"Tói bÝ kiÕp D­¬ng M«n", {2, 0, 612, 1, 4}},
 				[18] = {"Tói bÝ kiÕp D­¬ng M«n", {2, 0, 612, 1, 4}},
-				[20] = {"Tói bÝ kiÕp Ngò §éc", {2, 0, 613, 1, 4}},
-				[21] = {"Tói bÝ kiÕp Ngò §éc", {2, 0, 613, 1, 4}}
+				[20] = {"Five Poisons secret manual bag", {2, 0, 613, 1, 4}},
+				[21] = {"Five Poisons secret manual bag", {2, 0, 613, 1, 4}}
 };
 
 tb_topserver_jew = {
@@ -536,20 +536,20 @@ tb_topserver_jew = {
 };
 
 tb_topserver_book_high = {
-				[2] = {"DÞch C©n Kinh-th­îng", {2, 1, 916, 1}},
+				[2] = {"Tendon-Changing Classic - upper", {2, 1, 916, 1}},
 				[4] = {"Nh­ Lai ThÇn Ch­ëng-th­îng", {2, 1, 919, 1}},
-				[3] = {"TÈy Tñy Kinh-th­îng", {2, 1, 922, 1}},
+				[3] = {"Marrow-Cleansing Classic - upper", {2, 1, 922, 1}},
 				[6] = {"HÊp Tinh TrËn-th­îng", {2, 1, 925, 1}},
 				[8] = {"V¹n T­íng ThÇn C«ng-th­îng", {2, 1, 928, 1}},
 				[9] = {"Thiªn ¢m TrÊn Hån Khóc-th­îng", {2, 1, 931, 1}},
-				[11] = {"Gi¸ng Long ThËp B¸t Ch­ëng-th­îng", {2, 1, 934, 1}},
+				[11] = {"Eighteen Dragon-Subduing Palms - upper", {2, 1, 934, 1}},
 				[12] = {"§¶ CÈu C«n TrËn-th­îng", {2, 1, 937, 1}},
 				[14] = {"V« Th­îng Th¸i Cùc KiÕm-th­îng", {2, 1, 940, 1}},
 				[15] = {"Th¸i Cùc ThÇn C«ng-th­îng", {2, 1, 943, 1}},
-				[17] = {"Liªn Hoµn Toµn Long Th­¬ng-th­îng", {2, 1, 946, 1}},
+				[17] = {"Chained Coiling Dragon Spear - upper", {2, 1, 946, 1}},
 				[18] = {"B¸ V­¬ng T­êng Phông TiÔn-th­îng", {2, 1, 949, 1}},
 				[20] = {"V« Thiªn Ma C«ng-th­îng", {2, 1, 955, 1}},
-				[21] = {"V« ¶nh Ma Cæ-th­îng", {2, 1, 952, 1}},
+				[21] = {"Shadowless Demon Drum - upper", {2, 1, 952, 1}},
 };
 
 tb_topserver_book_med = {
@@ -570,34 +570,34 @@ tb_topserver_book_med = {
 };
 
 tb_topserver_book_low = {
-				[2] = {"DÞch C©n Kinh-h¹ ", {2, 1, 918, 1}},		
+				[2] = {"Yi Jin Jing - lower", {2, 1, 918, 1}},		
 				[4] = {"Nh­ Lai ThÇn Ch­ëng-h¹ ", {2, 1, 921, 1}},		
-				[3] = {"TÈy Tñy Kinh-h¹ ", {2, 1, 924, 1}},		
+				[3] = {"Xi Sui Jing - lower", {2, 1, 924, 1}},		
 				[6] = {"HÊp Tinh TrËn-h¹ ", {2, 1, 927, 1}},		
 				[8] = {"V¹n T­íng ThÇn C«ng-h¹ ", {2, 1, 930, 1}},		
 				[9] = {"Thiªn ¢m TrÊn Hån Khóc-h¹ ", {2, 1, 933, 1}},		
-				[11] = {"Gi¸ng Long ThËp B¸t Ch­ëng-h¹ ", {2, 1, 936, 1}},		
+				[11] = {"Eighteen Dragon-Subduing Palms - lower", {2, 1, 936, 1}},		
 				[12] = {"§¶ CÈu C«n TrËn-h¹ ", {2, 1, 939, 1}},		
 				[14] = {"V« Th­îng Th¸i Cùc KiÕm-h¹ ", {2, 1, 942, 1}},		
 				[15] = {"Th¸i Cùc ThÇn C«ng-h¹ ", {2, 1, 945, 1}},		
-				[17] = {"Liªn Hoµn Toµn Long Th­¬ng-h¹ ", {2, 1, 948, 1}},		
+				[17] = {"Continuous Coiling Dragon Spear - lower", {2, 1, 948, 1}},		
 				[18] = {"B¸ V­¬ng T­êng Phông TiÔn-h¹ ", {2, 1, 951, 1}},		
 				[20] = {"V« Thiªn Ma C«ng-h¹ ", {2, 1, 957, 1}},
-				[21] = {"V« ¶nh Ma Cæ-h¹ ", {2, 1, 954, 1}},
+				[21] = {"Shadowless Demon Drum - lower", {2, 1, 954, 1}},
 };
 
 tb_golden_book_all = {
-				[2] = {"DÞch C©n Kinh", {0, 112, 101, 1}},		
+				[2] = {"Sinew Transformation Classic", {0, 112, 101, 1}},		
 				[4] = {"Nh­ Lai ThÇn Ch­ëng", {0, 112, 102, 1}},		
-				[3] = {"TÈy Tñy Kinh", {0, 112, 103, 1}},		
+				[3] = {"Marrow Cleansing Classic", {0, 112, 103, 1}},		
 				[6] = {"HÊp Tinh TrËn", {0, 112, 104, 1}},		
 				[8] = {"V¹n T­íng ThÇn C«ng", {0, 112, 105, 1}},		
 				[9] = {"Thiªn ¢m TrÊn Hån Khóc", {0, 112, 106, 1}},		
-				[11] = {"Gi¸ng Long ThËp B¸t Ch­ëng", {0, 112, 107, 1}},		
+				[11] = {"Eighteen Dragon Subduing Palms", {0, 112, 107, 1}},		
 				[12] = {"§¶ CÈu C«n TrËn", {0, 112, 108, 1}},		
 				[14] = {"V« Th­îng Th¸i Cùc KiÕm", {0, 112, 109, 1}},		
 				[15] = {"Th¸i Cùc ThÇn C«ng", {0, 112, 110, 1}},		
-				[17] = {"Liªn Hoµn Toµn Long Th­¬ng", {0, 112, 111, 1}},		
+				[17] = {"Linked Coiling Dragon Spear", {0, 112, 111, 1}},		
 				[18] = {"B¸ V­¬ng T­êng Phông TiÔn", {0, 112, 112, 1}},		
 				[20] = {"V« Thiªn Ma C«ng", {0, 112, 113, 1}},		
 				[21] = {"V« ¶nh Ma Cæ", {0, 112, 114, 1}},
@@ -608,17 +608,17 @@ tb_golden_book_all = {
 
 tbMatTich70caocap  =
 {	
-		[2] =  {item={{gdp={0, 107, 204,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Kim Cang B¸t Nh· Ch©n QuyÓn"}}}, 
-		[3] =  {item={{gdp={0, 107, 206,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="V« TrÇn Bå §Ò Ch©n QuyÓn"}}},
-		[4] =  {item={{gdp={0, 107, 205,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="TiÒm Long Tóc DiÖt Ch©n QuyÓn"}}},
+		[2] =  {item={{gdp={0, 107, 204,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Vajra Prajna True Scroll"}}}, 
+		[3] =  {item={{gdp={0, 107, 206,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Dustless Bodhi True Manual"}}},
+		[4] =  {item={{gdp={0, 107, 205,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Hidden Dragon Annihilation True Manual"}}},
 		[6] =  {item={{gdp={0, 107, 207,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Thiªn La Liªn Ch©u Ch©n QuyÓn"}}},
-		[8] =  {item={{gdp={0, 107, 208,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Nh­ ý Kim §Ønh Ch©n QuyÓn"}}},
-		[9] =  {item={{gdp={0, 107, 209,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="BÝch H¶i TuyÖt ¢m Ch©n QuyÓn"}}},
+		[8] =  {item={{gdp={0, 107, 208,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Wishful Golden Top True Manual"}}},
+		[9] =  {item={{gdp={0, 107, 209,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Azure Sea Silent Sound True Manual"}}},
 		[14] =  {item={{gdp={0, 107, 212,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="HuyÒn ¶nh Mª T«ng Ch©n QuyÓn"}}},
-		[15] =  {item={{gdp={0, 107, 213,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Qu©n Tö §íi Phong Ch©n QuyÓn"}}},		
-		[11] =  {item={{gdp={0, 107, 210,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Hçn §én TrÊn Nh¹c Ch©n QuyÓn"}}},
+		[15] =  {item={{gdp={0, 107, 213,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Gentleman Welcomes the Wind True Manual"}}},		
+		[11] =  {item={{gdp={0, 107, 210,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Chaos Town Mountain True Manual"}}},
 		[12] =  {item={{gdp={0, 107, 211,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Quú Thiªn Du Long Ch©n QuyÓn"}}},		
-		[17] =  {item={{gdp={0, 107, 214,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn"}}},
+		[17] =  {item={{gdp={0, 107, 214,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Town Army Flying Dragon Spear True Manual"}}},
 		[18] =  {item={{gdp={0, 107, 215,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Xuyªn V©n L¹c Hång Ch©n QuyÓn"}}},
 		[20] =  {item={{gdp={0, 107, 216,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="HuyÒn Minh Phong Ma Ch©n QuyÓn"}}},
 		[21] =  {item={{gdp={0, 107, 217,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Linh Cæ HuyÒn Tµ Ch©n QuyÓn"}}},
@@ -675,9 +675,9 @@ tb_topserver_award_item = {
 };
 
 tb_topserver_award_item_minhgiao = {				
-				[595] = {{2, "NhanKX3SaoAmChe(%d)", 0,0}, {2, "AwardGenuineQi(%d)", 20000, 0}, {2, "award_new_gem1_1()", 0, 0}, {1, "Hu©n Ch­¬ng Anh Hïng", {2,1,30499,20}, 0}},
-				[695] = {{2, "AwardGenuineQi(%d)", 40000, 0}, {2, "award_new_gem2_1()", 0, 0}, {1, "Cæ Linh Th¹ch", {2,1,30368,100,1}, 0}, {1, "Cæ Linh Ngäc", {2,1,30369,100,1}, 0}, {1, "HiÖp NghÜa Chi Chøng", {2, 1, 30912,100, 4}, 0}, {1, "§ång TÕ Chi NguyÖn", {2,1,30913,50,4}, 0}},
-				[699] = {{2, "AwardGenuineQi(%d)", 60000, 0}, {1, "Thiªn Cang LÖnh", {2,95,204,1,4}, 0}, {1, "Cæ Linh Th¹ch", {2,1,30368,200,1}, 0}, {1, "Cæ Linh Ngäc", {2,1,30369,200,1}, 0}, {1, "Tinh Hoa UÈn Linh CÊp 6", {2,1,30668,16,1}, 0}},
+				[595] = {{2, "NhanKX3SaoAmChe(%d)", 0,0}, {2, "AwardGenuineQi(%d)", 20000, 0}, {2, "award_new_gem1_1()", 0, 0}, {1, "Hero's Medal", {2,1,30499,20}, 0}},
+				[695] = {{2, "AwardGenuineQi(%d)", 40000, 0}, {2, "award_new_gem2_1()", 0, 0}, {1, "Cæ Linh Th¹ch", {2,1,30368,100,1}, 0}, {1, "Cæ Linh Ngäc", {2,1,30369,100,1}, 0}, {1, "Token of Chivalry", {2, 1, 30912,100, 4}, 0}, {1, "Vow of the Same Will", {2,1,30913,50,4}, 0}},
+				[699] = {{2, "AwardGenuineQi(%d)", 60000, 0}, {1, "Thiªn Cang LÖnh", {2,95,204,1,4}, 0}, {1, "Cæ Linh Th¹ch", {2,1,30368,200,1}, 0}, {1, "Cæ Linh Ngäc", {2,1,30369,200,1}, 0}, {1, "Spirit Essence Gathering Level 6", {2,1,30668,16,1}, 0}},
 				[795] = {{1, "Th¸i DÞch Hçn Nguyªn C«ng Phæ", {2,0,1083,1,1}, 0}, {2, "award_random_gem3_16()", 0, 0}, {2, "award_random_gem4_4()", 0, 0}, {1, "Thiªn M«n Kim LÖnh", {2,1,30370,1,4}, 0}},
 --				[797] = {{1, "Phôc Sinh §¬n", {2, 1, 30814, 1, 4}, 0}, {2, "TraoMatTichSieuCap20()", 0, 0}, {2, "AwardGenuineQi(%d)", 100000, 0}, {1, "Trøng B¸ Ng¹c", {2,1,30970,1,1}, 0}},
 --				[81] = {{2,"NhanRuongYeuQuyet(%d)", 30*24*60*60,0}, {1, "Méc R­¬ng", {2,1,30340,999,4}, 0}},
@@ -3582,20 +3582,20 @@ function award_lenh_bai_haohiep_voha()
 end
 
 function award_level_new_cs696()
-	gf_AddItemEx2({2,1,1001,2,1},"Hßa ThÞ BÝch (7 Ngµy)","Top nv cs6 cap 96","nhËn",7*24*3600,1)
+	gf_AddItemEx2({2,1,1001,2,1},"He Shi Jade (7 Days)","Top nv cs6 cap 96","nhËn",7*24*3600,1)
 	gf_AddItemEx2({2,1,30368,200,1},"Cæ Linh Th¹ch","Top nv cs6 cap 96","nhËn")
 	gf_AddItemEx2({2,1,30369,200,1},"Cæ Linh Ngäc","Top nv cs6 cap 96","nhËn")
 	AwardGenuineQi(80000)
 end
 
 function award_level_new_cs796()
-	gf_AddItemEx2({2,1,1001,2,1},"Hßa ThÞ BÝch (7 Ngµy)","Top nv cs7 cap 96","nhËn",7*24*3600,1)
+	gf_AddItemEx2({2,1,1001,2,1},"He Shi Jade (7 Days)","Top nv cs7 cap 96","nhËn",7*24*3600,1)
 	gf_AddItemEx2({2,1,30368,300,1},"Cæ Linh Th¹ch","Top nv cs7 cap 96","nhËn")
 	gf_AddItemEx2({2,1,30369,300,1},"Cæ Linh Ngäc","Top nv cs7 cap 96","nhËn")
 	gf_AddItemEx2({2,95,204,1,1},"Thiªn Cang LÖnh","Top nv cs7 cap 96","nhËn")
 	gf_AddItemEx2({2,1,30370,1,1},"Thiªn M«n Kim LÖnh","Top nv cs7 cap 96","nhËn")
-	gf_AddItemEx2({2,1,30668,16,1},"Tinh Hoa UÈn Linh CÊp 6","Top nv cs7 cap 96","nhËn")
-	gf_AddItemEx2({0,112,158,1,1},"L¨ng Ba Vi Bé toµn tËp","Top nv cs7 cap 96","nhËn")
+	gf_AddItemEx2({2,1,30668,16,1},"Spirit Essence Gathering Level 6","Top nv cs7 cap 96","nhËn")
+	gf_AddItemEx2({0,112,158,1,1},"Lingbo Microstep Complete Edition","Top nv cs7 cap 96","nhËn")
 	AwardGenuineQi(100000)
 end
 
@@ -3697,8 +3697,8 @@ end
 tbKimXaAmChe3Sao = {
 	item = {
 		{gdp={0,152,9,1,1,-1,-1,-1,-1,-1,-1,-1}, name="¸o Choµng ¢m ChÕ"},
-		{gdp={0,153,9,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Huy Ch­¬ng ¢m ChÕ"},
-		{gdp={0,154,9,1,1,-1,-1,-1,-1,-1,-1,-1}, name="§¹o Hµi ¢m ChÕ"},
+		{gdp={0,153,9,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Yin Crafted Medal"},
+		{gdp={0,154,9,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Yin Crafted Boots"},
 	}
 }	
 
@@ -3747,17 +3747,17 @@ tbTuVienVuKhi = {
 	[2] = {{"Tö Quang To¸i Vò §ao",{0,3,8851,1,1,-1,-1,-1,-1,-1,-1,-1,0}}, {"Tö Quang To¸i Vò C«n",{0,5,8852,1,1,-1,-1,-1,-1,-1,-1,-1,0}}},
 	[3] = {"Tö Quang Cöu Nh­ Tr­îng",{0,8,8853,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
 	[4] = {"Tö Quang H¹o Nhiªn Thñ",{0,0,8854,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
-	[6] = {"Tö Quang V« H×nh Ch©m",{0,1,8855,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
+	[6] = {"Purple Light Invisible Needle",{0,1,8855,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
 	[8] = {"Tö Quang Tö Tinh KiÕm",{0,2,8856,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
 	[9] = {"Tö Quang Phông Hoµng CÇm",{0,10,8857,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
 	[11] = {"Tö Quang Ngò Nh¹c Thñ",{0,0,8858,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
 	[12] = {"Tö Quang Ph¸ Thiªn C«n",{0,5,8859,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
 	[14] = {"Tö Quang Hång Qu©n KiÕm",{0,2,8860,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
-	[15] = {"Tö Quang Sinh Tö Bót",{0,9,8861,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
-	[17] = {"Tö Quang Ph¸ Qu©n Th­¬ng",{0,6,8862,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
+	[15] = {"Purple Light Life-Death Brush",{0,9,8861,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
+	[17] = {"Purple Light Army-Breaking Spear",{0,6,8862,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
 	[18] = {"Tö Quang Khai Thiªn Cung",{0,4,8863,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
 	[20] = {"Tö Quang ¢m D­¬ng NhÉn",{0,7,8864,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
-	[21] = {"Tö Quang U Minh Tr¶o",{0,11,8865,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
+	[21] = {"Purple Light Underworld Claw",{0,11,8865,1,1,-1,-1,-1,-1,-1,-1,-1,0}},
 }
 
 tbHienVienChien = {
@@ -3893,17 +3893,17 @@ tbKimXaVanDu = {
 	
 tbKimXaThietHuyet = {
 	item = {
-		{gdp={0,153,27,1,1,-1,-1,-1,-1,-1,-1,-1,7}, name="Huy Ch­¬ng ThiÕt HuyÕt"},
+		{gdp={0,153,27,1,1,-1,-1,-1,-1,-1,-1,-1,7}, name="Iron Blood Medal"},
 		{gdp={0,152,27,1,1,-1,-1,-1,-1,-1,-1,-1,7}, name="¸o Choµng ThiÕt HuyÕt"},
-		{gdp={0,154,27,1,1,-1,-1,-1,-1,-1,-1,-1,7}, name="§¹o Hµi ThiÕt HuyÕt"},
+		{gdp={0,154,27,1,1,-1,-1,-1,-1,-1,-1,-1,7}, name="Iron Blood Boots"},
 	}
 }
 	
 tbKimXaDuHiep = {
 	item = {
-		{gdp={0,153,26,1,1,-1,-1,-1,-1,-1,-1,-1,7}, name="Huy Ch­¬ng Du HiÖp"},
+		{gdp={0,153,26,1,1,-1,-1,-1,-1,-1,-1,-1,7}, name="Roaming Hero Medal"},
 		{gdp={0,152,26,1,1,-1,-1,-1,-1,-1,-1,-1,7}, name="¸o Choµng Du HiÖp"},
-		{gdp={0,154,26,1,1,-1,-1,-1,-1,-1,-1,-1,7}, name="§¹o Hµi Du HiÖp"},
+		{gdp={0,154,26,1,1,-1,-1,-1,-1,-1,-1,-1,7}, name="Wandering Chivalry Boots"},
 	}
 }	
 
@@ -3917,17 +3917,17 @@ tbKimXaVanDu10 = {
 	
 tbKimXaThietHuyet10 = {
 	item = {
-		{gdp={0,153,27,1,1,-1,-1,-1,-1,-1,-1,-1,10}, name="Huy Ch­¬ng ThiÕt HuyÕt"},
+		{gdp={0,153,27,1,1,-1,-1,-1,-1,-1,-1,-1,10}, name="Iron Blood Medal"},
 		{gdp={0,152,27,1,1,-1,-1,-1,-1,-1,-1,-1,10}, name="¸o Choµng ThiÕt HuyÕt"},
-		{gdp={0,154,27,1,1,-1,-1,-1,-1,-1,-1,-1,10}, name="§¹o Hµi ThiÕt HuyÕt"},
+		{gdp={0,154,27,1,1,-1,-1,-1,-1,-1,-1,-1,10}, name="Iron Blood Boots"},
 	}
 }
 	
 tbKimXaDuHiep10 = {
 	item = {
-		{gdp={0,153,26,1,1,-1,-1,-1,-1,-1,-1,-1,10}, name="Huy Ch­¬ng Du HiÖp"},
+		{gdp={0,153,26,1,1,-1,-1,-1,-1,-1,-1,-1,10}, name="Roaming Hero Medal"},
 		{gdp={0,152,26,1,1,-1,-1,-1,-1,-1,-1,-1,10}, name="¸o Choµng Du HiÖp"},
-		{gdp={0,154,26,1,1,-1,-1,-1,-1,-1,-1,-1,10}, name="§¹o Hµi Du HiÖp"},
+		{gdp={0,154,26,1,1,-1,-1,-1,-1,-1,-1,-1,10}, name="Wandering Chivalry Boots"},
 	}
 }	
 
@@ -4026,41 +4026,41 @@ function TopCheckSkill(tb_Skill_ID, nSkillLevel)
 end
 
 tb_Faction_Name = {	
-	[1] = {"shaolin","ThiÕu L©m"},
-	[2] = {"wudang","Vâ §ang"},
+	[1] = {"shaolin","Shaolin"},
+	[2] = {"wudang","Wudang"},
 	[3] = {"emei","Nga My"},
-	[4] = {"gaibang","C¸i Bang"},
+	[4] = {"gaibang","Beggars' Sect"},
 	[5] = {"tangmen","§­êng M«n"},
 	[6] = {"yangmen","D­¬ng M«n"},
-	[7] = {"wudu","Ngò §éc"},
+	[7] = {"wudu","Five Poisons"},
 }
 
 tb_Route_Name = {	
 	[1] = "",
-	[2] = "ThiÕu L©m Tôc Gia",
+	[2] = "Shaolin Lay Disciple",
 	[3] = "ThiÕu L©m ThiÒn T«ng",
 	[4] = "ThiÕu L©m Vâ T«ng",
 	[5] = "",
 	[6] = "§­êng M«n",
 	[7] = "",
-	[8] = "Nga My PhËt Gia",
-	[9] = "Nga My Tôc Gia",
+	[8] = "Emei Buddhist",
+	[9] = "Emei Lay Disciple",
 	[10] = "",
-	[11] = "C¸i Bang TÜnh Y",
-	[12] = "C¸i Bang ¤ Y",
+	[11] = "Beggars' Sect Pure Robe",
+	[12] = "Beggars' Guild Dirty Robe",
 	[13] = "",
-	[14] = "Vâ §ang §¹o Gia",
-	[15] = "Vâ §ang Tôc Gia",
+	[14] = "Wudang Daoist",
+	[15] = "Wudang Lay Disciple",
 	[16] = "",
 	[17] = "D­¬ng M«n Th­¬ng Kþ",
 	[18] = "D­¬ng M«n Cung Kþ",
 	[19] = "",
-	[20] = "Ngò §éc Tµ HiÖp",
-	[21] = "Ngò §éc Cæ S­",
+	[20] = "Five Poison Heretic Hero",
+	[21] = "Five Poison Gu Master",
 	[22] = "",
 	[23] = "C«n L«n Thiªn S­",
 	[24] = "",
-	[25] = "Minh Gi¸o Th¸nh ChiÕn",
+	[25] = "Ming Cult Holy Warrior",
 	[26] = "Minh Gi¸o TrËn Binh",
 	[27] = "Minh Gi¸o HuyÕt Nh©n",
 	[28] = "",
@@ -4097,7 +4097,7 @@ function GiveAwardVD(nLv)
 	{
 		{0,103,8000,"Viªm §Õ Kh«i"},
 		{0,100,8000,"Viªm §Õ Gi¸p"},
-		{0,101,8000,"Viªm §Õ Trang"},
+		{0,101,8000,"Viem De Trang"},
 	}
 	local nBody = GetBody()
 	for i = 1 , getn(VD) do
@@ -4772,7 +4772,7 @@ end
 
 
 function TraoThuongUngDoThong(nGenre)
-	local szItemName = "Th­¬ng ¦ng §« Thèng "
+	local szItemName = "Thuong Ung Do Thong"
 	local nID = 30028
 	local szPhe = "Tèng "
 	if GetTask(701) < 0 then
@@ -4804,9 +4804,9 @@ function TraoThuongUngTienPhong(nType)
 	end
 	
 	if nType == 1 then
-		szItemName = szPhe .. szItemName .. "Kú"
+		szItemName = szPhe .. szItemName .. "Ky"
 	else
-		szItemName = szPhe .. szItemName .. "Phï"
+		szItemName = szPhe .. szItemName .. "Phu"
 		nID = nID + 4
 	end
 	local nBody = GetBody()
@@ -4961,17 +4961,17 @@ end
 
 function TraoMatTich70CaoCap(nQty)
 	local tbMatTich = {
-		[2] =  {item={{gdp={0, 107, 204,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Kim Cang B¸t Nh· Ch©n QuyÓn"}}}, 
-		[3] =  {item={{gdp={0, 107, 206,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="V« TrÇn Bå §Ò Ch©n QuyÓn"}}},
-		[4] =  {item={{gdp={0, 107, 205,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="TiÒm Long Tóc DiÖt Ch©n QuyÓn"}}},
+		[2] =  {item={{gdp={0, 107, 204,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Vajra Prajna True Scroll"}}}, 
+		[3] =  {item={{gdp={0, 107, 206,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Dustless Bodhi True Manual"}}},
+		[4] =  {item={{gdp={0, 107, 205,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Hidden Dragon Annihilation True Manual"}}},
 		[6] =  {item={{gdp={0, 107, 207,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Thiªn La Liªn Ch©u Ch©n QuyÓn"}}},
-		[8] =  {item={{gdp={0, 107, 208,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Nh­ ý Kim §Ønh Ch©n QuyÓn"}}},
-		[9] =  {item={{gdp={0, 107, 209,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="BÝch H¶i TuyÖt ¢m Ch©n QuyÓn"}}},
+		[8] =  {item={{gdp={0, 107, 208,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Wishful Golden Top True Manual"}}},
+		[9] =  {item={{gdp={0, 107, 209,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Azure Sea Silent Sound True Manual"}}},
 		[14] =  {item={{gdp={0, 107, 212,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="HuyÒn ¶nh Mª T«ng Ch©n QuyÓn"}}},
-		[15] =  {item={{gdp={0, 107, 213,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Qu©n Tö §íi Phong Ch©n QuyÓn"}}},		
-		[11] =  {item={{gdp={0, 107, 210,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Hçn §én TrÊn Nh¹c Ch©n QuyÓn"}}},
+		[15] =  {item={{gdp={0, 107, 213,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Gentleman Welcomes the Wind True Manual"}}},		
+		[11] =  {item={{gdp={0, 107, 210,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Chaos Town Mountain True Manual"}}},
 		[12] =  {item={{gdp={0, 107, 211,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Quú Thiªn Du Long Ch©n QuyÓn"}}},		
-		[17] =  {item={{gdp={0, 107, 214,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn"}}},
+		[17] =  {item={{gdp={0, 107, 214,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Town Army Flying Dragon Spear True Manual"}}},
 		[18] =  {item={{gdp={0, 107, 215,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Xuyªn V©n L¹c Hång Ch©n QuyÓn"}}},
 		[20] =  {item={{gdp={0, 107, 216,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="HuyÒn Minh Phong Ma Ch©n QuyÓn"}}},
 		[21] =  {item={{gdp={0, 107, 217,nQty,1,-1,-1,-1,-1,-1,-1,-1,0}, name="Linh Cæ HuyÒn Tµ Ch©n QuyÓn"}}},
@@ -4981,17 +4981,17 @@ function TraoMatTich70CaoCap(nQty)
 	}
 	
 	local tbMatTich_GN = {
-		[2] = {0,107,204, 2,"Kim Cang B¸t Nh· Ch©n QuyÓn"},
-		[4] = {0,107,205, 1,"TiÒm Long Tóc DiÖt Ch©n QuyÓn"},
-		[3] = {0,107,206, 1,"V« TrÇn Bå §Ò Ch©n QuyÓn"},
+		[2] = {0,107,204, 2,"Vajra Prajna True Scroll"},
+		[4] = {0,107,205, 1,"Hidden Dragon Annihilation True Manual"},
+		[3] = {0,107,206, 1,"Dustless Bodhi True Manual"},
 		[6] = {0,107,207, 2,"Thiªn La Liªn Ch©u Ch©n QuyÓn"},
-		[8] = {0,107,208, 1,"Nh­ ý Kim §Ønh Ch©n QuyÓn"},
-		[9] = {0,107,209, 1,"BÝch H¶i TuyÖt ¢m Ch©n QuyÓn"},
-		[11] = {0,107,210, 2,"Hçn §én TrÊn Nh¹c Ch©n QuyÓn"},
+		[8] = {0,107,208, 1,"Wishful Golden Top True Manual"},
+		[9] = {0,107,209, 1,"Azure Sea Silent Sound True Manual"},
+		[11] = {0,107,210, 2,"Chaos Town Mountain True Manual"},
 		[12] = {0,107,211, 2,"Quú Thiªn Du Long Ch©n QuyÓn"},
 		[14] = {0,107,212, 1,"HuyÒn ¶nh Mª T«ng Ch©n QuyÓn"},
-		[15] = {0,107,213, 2,"Qu©n Tö §íi Phong Ch©n QuyÓn"},
-		[17] = {0,107,214, 2,"TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn"},
+		[15] = {0,107,213, 2,"Gentleman Welcomes the Wind True Manual"},
+		[17] = {0,107,214, 2,"Town Army Flying Dragon Spear True Manual"},
 		[18] = {0,107,215, 2,"Xuyªn V©n L¹c Hång Ch©n QuyÓn"},
 		[20] = {0,107,216, 2,"HuyÒn Minh Phong Ma Ch©n QuyÓn"},
 		[21] = {0,107,217, 1,"Linh Cæ HuyÒn Tµ Ch©n QuyÓn"},
@@ -5030,7 +5030,7 @@ function ThuongVuKhi_ThuyYenLinhNu()
 		nOpLevel2 = LIB_Award:GetValueByRate(tbRate)
 	end
 
-	local tbAward = {item={{gdp={0,12,12,1,1,3,252,nOpLevel1,nOpID1,nOpLevel2,nOpID2,-1, 0}, name = "Minh B¨ng"}}}
+	local tbAward = {item={{gdp={0,12,12,1,1,3,252,nOpLevel1,nOpID1,nOpLevel2,nOpID2,-1, 0}, name = "Ice Brightness"}}}
 	LIB_Award.szLogTitle = "NHAN THUONG DUA TOP "..szLOGSERVERNAME
 	LIB_Award.szLogAction = "nhËn"
 	LIB_Award:Award(tbAward)
@@ -5106,20 +5106,20 @@ end
 
 function NhanRuongYeuQuyet(nThoihan)
 	local tbRuongYeuQuyet = {
-		[2] = {item={{gdp={2,0,607,1}, name="Tói bÝ kiÕp ThiÕu L©m", nExpired = nThoihan}}},
-		[4] = {item={{gdp={2,0,607,1}, name="Tói bÝ kiÕp ThiÕu L©m", nExpired = nThoihan}}},
-		[3] = {item={{gdp={2,0,607,1}, name="Tói bÝ kiÕp ThiÕu L©m", nExpired = nThoihan}}},
+		[2] = {item={{gdp={2,0,607,1}, name="Shaolin secret manual bag", nExpired = nThoihan}}},
+		[4] = {item={{gdp={2,0,607,1}, name="Shaolin secret manual bag", nExpired = nThoihan}}},
+		[3] = {item={{gdp={2,0,607,1}, name="Shaolin secret manual bag", nExpired = nThoihan}}},
 		[6] = {item={{gdp={2,0,608,1}, name="Tói bÝ kiÕp §­êng M«n", nExpired = nThoihan}}},
-		[8] = {item={{gdp={2,0,609,1}, name="Tói bÝ kiÕp Nga My", nExpired = nThoihan}}},
-		[9] = {item={{gdp={2,0,609,1}, name="Tói bÝ kiÕp Nga My", nExpired = nThoihan}}},
-		[11] = {item={{gdp={2,0,610,1}, name="Tói bÝ kiÕp C¸i Bang", nExpired = nThoihan}}},
-		[12] = {item={{gdp={2,0,610,1}, name="Tói bÝ kiÕp C¸i Bang", nExpired = nThoihan}}},
-		[14] = {item={{gdp={2,0,611,1}, name="Tói bÝ kiÕp Vâ §ang", nExpired = nThoihan}}},
-		[15] = {item={{gdp={2,0,611,1}, name="Tói bÝ kiÕp Vâ §ang", nExpired = nThoihan}}},
+		[8] = {item={{gdp={2,0,609,1}, name="Emei secret manual bag", nExpired = nThoihan}}},
+		[9] = {item={{gdp={2,0,609,1}, name="Emei secret manual bag", nExpired = nThoihan}}},
+		[11] = {item={{gdp={2,0,610,1}, name="Beggars' Sect secret manual bag", nExpired = nThoihan}}},
+		[12] = {item={{gdp={2,0,610,1}, name="Beggars' Sect secret manual bag", nExpired = nThoihan}}},
+		[14] = {item={{gdp={2,0,611,1}, name="Wudang secret manual bag", nExpired = nThoihan}}},
+		[15] = {item={{gdp={2,0,611,1}, name="Wudang secret manual bag", nExpired = nThoihan}}},
 		[17] = {item={{gdp={2,0,612,1}, name="Tói bÝ kiÕp D­¬ng M«n", nExpired = nThoihan}}},
 		[18] = {item={{gdp={2,0,612,1}, name="Tói bÝ kiÕp D­¬ng M«n", nExpired = nThoihan}}},
-		[20] = {item={{gdp={2,0,613,1}, name="Tói bÝ kiÕp Ngò §éc", nExpired = nThoihan}}},
-		[21] = {item={{gdp={2,0,613,1}, name="Tói bÝ kiÕp Ngò §éc", nExpired = nThoihan}}},
+		[20] = {item={{gdp={2,0,613,1}, name="Five Poisons secret manual bag", nExpired = nThoihan}}},
+		[21] = {item={{gdp={2,0,613,1}, name="Five Poisons secret manual bag", nExpired = nThoihan}}},
 		[23] = {fn="NhanBiKipConLon()"},
 		[29] = {fn="NhanBiKipThuyYen()"},
 		[30] = {fn="NhanBiKipThuyYen()"},
@@ -5139,10 +5139,10 @@ function NhanBiKipConLon()
 	end
 	local tbBiKipConLon = {
 		[1] = {[1] = {item={{gdp={2,6,169,1}, name = "BÝ kiÕp L«i TÕ"}}}, nRate = 7.15},
-		[2] = {[1] = {item={{gdp={2,6,170,1}, name = "BÝ kiÕp Phong TÕ"}}}, nRate = 7.15},
+		[2] = {[1] = {item={{gdp={2,6,170,1}, name = "Manual of Wind Sacrifice"}}}, nRate = 7.15},
 		[3] = {[1] = {item={{gdp={2,6,171,1}, name = "BÝ kiÕp Thiªn l«i phï"}}}, nRate = 7.15},
-		[4] = {[1] = {item={{gdp={2,6,172,1}, name = "BÝ kiÕp B¨ng Phong QuyÕt"}}}, nRate = 7.15},
-		[5] = {[1] = {item={{gdp={2,6,173,1}, name = "BÝ kiÕp Ngù Phong QuyÕt"}}}, nRate = 7.14},
+		[4] = {[1] = {item={{gdp={2,6,172,1}, name = "Manual of Ice Wind Art"}}}, nRate = 7.15},
+		[5] = {[1] = {item={{gdp={2,6,173,1}, name = "Manual of Wind Control Art"}}}, nRate = 7.14},
 		[6] = {[1] = {item={{gdp={2,6,174,1}, name = "BÝ KiÕp Cuång L«i Phï"}}}, nRate = 7.14},
 		[7] = {[1] = {item={{gdp={2,6,175,1}, name = "BÝ KiÕp D­¬ng Sa QuyÕt"}}}, nRate = 7.14},
 		[8] = {[1] = {item={{gdp={2,6,176,1}, name = "BÝ KiÕp Oanh L«i Phï"}}}, nRate = 7.14},
@@ -5200,22 +5200,22 @@ end
 function TraoMatTichCaoCap20(nQty,nRoute)
 
 	local tbMatTich = {
-		[2] = {0,107,204, 2,"Kim Cang B¸t Nh· Ch©n QuyÓn"},
-		[4] = {0,107,205, 1,"TiÒm Long Tóc DiÖt Ch©n QuyÓn"},
-		[3] = {0,107,206, 1,"V« TrÇn Bå §Ò Ch©n QuyÓn"},
+		[2] = {0,107,204, 2,"Vajra Prajna True Scroll"},
+		[4] = {0,107,205, 1,"Hidden Dragon Annihilation True Manual"},
+		[3] = {0,107,206, 1,"Dustless Bodhi True Manual"},
 		[6] = {0,107,207, 2,"Thiªn La Liªn Ch©u Ch©n QuyÓn"},
-		[8] = {0,107,208, 1,"Nh­ ý Kim §Ønh Ch©n QuyÓn"},
-		[9] = {0,107,209, 1,"BÝch H¶i TuyÖt ¢m Ch©n QuyÓn"},
-		[11] = {0,107,210, 2,"Hçn §én TrÊn Nh¹c Ch©n QuyÓn"},
+		[8] = {0,107,208, 1,"Wishful Golden Top True Manual"},
+		[9] = {0,107,209, 1,"Azure Sea Silent Sound True Manual"},
+		[11] = {0,107,210, 2,"Chaos Town Mountain True Manual"},
 		[12] = {0,107,211, 2,"Quú Thiªn Du Long Ch©n QuyÓn"},
 		[14] = {0,107,212, 1,"HuyÒn ¶nh Mª T«ng Ch©n QuyÓn"},
-		[15] = {0,107,213, 2,"Qu©n Tö §íi Phong Ch©n QuyÓn"},
-		[17] = {0,107,214, 2,"TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn"},
+		[15] = {0,107,213, 2,"Gentleman Welcomes the Wind True Manual"},
+		[17] = {0,107,214, 2,"Town Army Flying Dragon Spear True Manual"},
 		[18] = {0,107,215, 2,"Xuyªn V©n L¹c Hång Ch©n QuyÓn"},
 		[20] = {0,107,216, 2,"HuyÒn Minh Phong Ma Ch©n QuyÓn"},
 		[21] = {0,107,217, 1,"Linh Cæ HuyÒn Tµ Ch©n QuyÓn"},
 		[23] = {0,107,218,1,"Cöu Thiªn Phong L«i Ch©n QuyÓn"},
-		[25] = {0,107,219,2,"Håi Phong Tr¶m NhËt Ch©n QuyÓn"},
+		[25] = {0,107,219,2,"Returning Wind Slashing Sun Fist Manual"},
 		[26] = {0,107,220,2,"Phô Kú Hµnh TrËn Ch©n QuyÓn"},
 		[27] = {0,107,221,1,"Ng­ng HuyÕt Phong Hån Ch©n QuyÓn"},
 		[29] = {0,107,222,2,"Hång TrÇn Tóy Méng Ch©n QuyÓn"},

@@ -27,11 +27,11 @@ fe_tbFactionEquipExTHreeName =
 	[1] = {},	
 	[2] = 
 		{	--ÉÙÁÖË×¼Ò
-			[3] = {"Phôc Ma Kim Cang chiÕn kh«i","ChiÕn ı kh¶i gi¸p","ChiÕn ı phôc","Phôc Ma Kim Cang ChiÕn ı Bµn ChØ","Phôc Ma Kim Cang ChiÕn ı Giíi ChØ","§¹t Ma Kim Cang_ChiÕn ı C«n (§ao)"},
+			[3] = {"Phôc Ma Kim Cang chiÕn kh«i","Battle Will Armor","ChiÕn ı phôc","Vajra Demon-Subduing Battle Will Ring","Phôc Ma Kim Cang ChiÕn ı Giíi ChØ","§¹t Ma Kim Cang_ChiÕn ı C«n (§ao)"},
 		},
 	[3] = 
 		{	--ÉÙÁÖìøÉ®
-			[3] = {"ThiÒn TŞnh m·o","ThiÒn TŞnh bµo","ThiÒn TŞnh phôc","TruyÒn Kinh ThiÒn TŞnh Bµn ChØ","TruyÒn Kinh ThiÒn TŞnh Ngäc Giíi ChØ","TruyÒn Kinh  ThiÒn TŞnh Tr­îng"},
+			[3] = {"Meditation Hat","Meditation Robe","ThiÒn TŞnh phôc","Sutra-Transmitting Meditation Ring","TruyÒn Kinh ThiÒn TŞnh Ngäc Giíi ChØ","Sutra-Transmitting  Meditation Staff"},
 		},
 	[4] = 
 		{	--ÉÙÁÖÎäÉ®
@@ -40,7 +40,7 @@ fe_tbFactionEquipExTHreeName =
 	[5] = {},			--ÌÆÃÅ
 	[6] = 
 		{	--ÌÆÃÅ
-			[3] = {"Bİ §éc §Çu C©n","Bİ §éc y","Bİ §éc trang","Bİ §éc Béi","Bİ §éc ChØ Hoµn","Bİ ®éc Ch©m"},
+			[3] = {"Bİ §éc §Çu C©n","Secret Poison Garment","Secret Poison Outfit","Secret Poison Pendant","Secret Poison Ring","Secret Poison Needle"},
 		},
 	[7] = {},			--¶ëáÒ
 	[8] = 
@@ -54,38 +54,38 @@ fe_tbFactionEquipExTHreeName =
 	[10] = {},			--Ø¤°ï
 	[11] = 
 		{	--Ø¤°ï¾»ÒÂ
-			[3] = {"Tø H¶i c©n","Tø H¶i y","Hµo Khİ phôc","Tø H¶i HiÖp Hµo Khİ Ngäc Béi","Tø H¶i HiÖp Hµo Khİ Giíi ChØ","Tø H¶i Y phôc"},
+			[3] = {"Four Seas Headband","Four Seas Garment","Hµo Khİ phôc","Tø H¶i HiÖp Hµo Khİ Ngäc Béi","Tø H¶i HiÖp Hµo Khİ Giíi ChØ","Tø H¶i Y phôc"},
 		},
 	[12] = 
 		{	--Ø¤°ïÎÛÒÂ
-			[3] = {"Tô NghÜa c©n","B¸t §¹i §Ö Tö_Tô NghÜa Y","Tô NghÜa phôc","B¸t §¹i §Ö Tö Tô NghÜa Ngäc Béi","B¸t §¹i §Ö Tö Tô NghÜa Giíi ChØ","B¸t §¹i §Ö Tö_Tô NghÜa C«n"},
+			[3] = {"Righteousness Headband","Eight Great Disciples_Righteousness Garment","Tô NghÜa phôc","B¸t §¹i §Ö Tö Tô NghÜa Ngäc Béi","B¸t §¹i §Ö Tö Tô NghÜa Giíi ChØ","B¸t §¹i §Ö Tö_Tô NghÜa C«n"},
 		},
 	[13] = {},			--Îäµ±
 	[14] = 
 		{	--Îäµ±µÀ¼Ò
-			[3] = {"Tø T­îng c©n","Tø T­îng ph¸p bµo","Tø T­îng phôc","V« Ng· Tø T­îng Giíi ChØ","V« Ng· Tø T­îng ChØ Hoµn","Tø T­îng Ph¸p KiÕm"},
+			[3] = {"Four Symbols Headband","Four Symbols Dharma Robe","Tø T­îng phôc","V« Ng· Tø T­îng Giíi ChØ","Selfless Four Symbols Ring","Tø T­îng Ph¸p KiÕm"},
 		},
 	[15] = 
 		{	--Îäµ±Ë×¼Ò
-			[3] = {"Linh Phong c©n","Linh Phong Phôc","Linh Phong phôc","Nhµn V©n HiÖp §¹o Linh Phong ChØ","Nhµn V©n HiÖp §¹o Linh Phong Hoµn","Linh Phong Bót"},
+			[3] = {"Spirit Wind Headband","Spirit Wind Robe","Linh Phong phôc","Nhµn V©n HiÖp §¹o Linh Phong ChØ","Nhµn V©n HiÖp §¹o Linh Phong Hoµn","Spirit Wind Brush"},
 		},
 	[16] = {},			--ÑîÃÅ
 	[17] = 
 		{	--ÑîÃÅÇ¹Æï
-			[3] = {"Long T­¬ng t­íng qu©n_Ngao Khİ Kh«i","Tinh Kh¶i gi¸p","TŞnh Gi¸p phôc","PhÊn Vâ Hæ Phï","PhÊn Vâ LÖnh Kú","ThÊu Gi¸p Th­¬ng"},
+			[3] = {"Long T­¬ng t­íng qu©n_Ngao Khİ Kh«i","Essence Armor","TŞnh Gi¸p phôc","Martial Spirit Tiger Talisman","Martial Spirit Command Banner","ThÊu Gi¸p Th­¬ng"},
 		},
 	[18] = 
 		{	--ÑîÃÅ¹­Æï
-			[3] = {"Tinh Gi¸p kh«i","PhÊn Uy T­íng Qu©n kh¶i gi¸p","Tinh Gi¸p phôc","PhÊn Uy Hæ Phï","PhÊn Uy LÖnh Kú","Xuyªn Gi¸p cung"},
+			[3] = {"Tinh Gi¸p kh«i","Awe-Rousing General Armor","Tinh Gi¸p phôc","Awe-Rousing Tiger Talisman","Awe-Rousing Command Banner","Xuyªn Gi¸p cung"},
 		},
 	[19] = {},			--Îå¶¾
 	[20] = 
 		{	--Îå¶¾Ğ°ÏÀ
-			[3] = {"H¾c V« Th­êng M¶nh §éc §Çu C©n","H¾c V« Th­êng M·nh §éc y","H¾c V« Th­êng M·nh §éc","H¾c V« Th­êng M·nh §éc HuyÕt Béi","M·nh §éc H¾c Hoµn","H¾c V« Th­êng M·nh §éc ®ao"},
+			[3] = {"H¾c V« Th­êng M¶nh §éc §Çu C©n","Black Impermanence Fierce Poison Garment","Black Impermanence Fierce Poison","Black Impermanence Fierce Poison Blood Pendant","Fierce Poison Black Ring","Black Impermanence Fierce Poison Saber"},
 		},
 	[21] = 
 		{	--Îå¶¾¹ÆÊ¦
-			[3] = {"B¹ch V« Th­êng Quû §éc §Çu C©n","B¹ch V« Th­êng Ngôy §éc Y","B¹ch V« Th­êng Ngôy §éc","Quû §éc HuyÕt Béi","Quû §éc H¾c Hoµn","B¹ch V« Th­êng Quû §éc Tr¶o"},
+			[3] = {"B¹ch V« Th­êng Quû §éc §Çu C©n","B¹ch V« Th­êng Ngôy §éc Y","B¹ch V« Th­êng Ngôy §éc","Demon Poison Blood Pendant","Demon Poison Black Ring","B¹ch V« Th­êng Quû §éc Tr¶o"},
 		},
 }
 
@@ -114,12 +114,12 @@ function zg_give_item(nItemIdx,nType)
 			if GetTask(704) == 6 then
 				Say("HiÖn giê b¹n lµ nguyªn so¸i §¹i Tèng, rÊt vui ®­îc tÆng b¹n trang bŞ nguyªn so¸i miÔn phİ, b¹n ®ång ı chø?",
 					2,
-					"§ång ı/#zg_confirm_give_item("..nItemIdx..","..nType..")",
+					"Agree/#zg_confirm_give_item("..nItemIdx..","..nType..")",
 					"T¹m thêi kh«ng cÇn/nothing");
 			elseif GetTask(704) == -6 then
 				Say("HiÖn giê b¹n lµ nguyªn so¸i §¹i Liªu, rÊt vui ®­îc tÆng b¹n trang bŞ nguyªn so¸i miÔn phİ, b¹n ®ång ı chø?",
 					2,
-					"§ång ı/#zg_confirm_give_item("..nItemIdx..","..nType..")",
+					"Agree/#zg_confirm_give_item("..nItemIdx..","..nType..")",
 					"T¹m thêi kh«ng cÇn/nothing");
 			end
 		end
@@ -135,7 +135,7 @@ function zg_give_item(nItemIdx,nType)
 			else		
 				Say("§iÓm cèng hiÕn S­ M«n hiÖn giê cña b¹n ®· ®¹t ®Õn 4000, rÊt vui ®­îc tÆng b¹n bé trang, b¹n ®ång ı chø?",
 					2,
-					"§ång ı/#zg_confirm_give_item("..nItemIdx..","..nType..")",
+					"Agree/#zg_confirm_give_item("..nItemIdx..","..nType..")",
 					"T¹m thêi kh«ng cÇn/nothing");
 			end
 		end
@@ -147,7 +147,7 @@ function zg_give_item(nItemIdx,nType)
 		else
 			Say("B¹n sÏ nhËn ®­îc bé trang bŞ S­ M«n lôc 2 do chóng t«i tÆng, mÆc vµo sÏ ®­îc céng 300 ®iÓm cèng hiÕn S­ M«n, nh­ng b¹n cÇn ph¶i ®¹t ®Õn <color=red>cÊp 50<color> míi cã thÓ sö dông, b¹n ®ång ı chø?",
 				2,
-				"§ång ı/#zg_confirm_give_item("..nItemIdx..","..nType..")",
+				"Agree/#zg_confirm_give_item("..nItemIdx..","..nType..")",
 				"T¹m thêi kh«ng cÇn/nothing");
 		end
 	end

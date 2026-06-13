@@ -46,7 +46,7 @@ function main()
 --		"N©ng cÊp B¹ch Kim Viªm §Õ/get_BKVD",
 --		tSTRING_TREASUER_NPC[4].."/get_treasure",
 	--tinsert(tbSay, "§æi trang bÞ ChiÕn Cuång/TrangBiChienCuong_Form")
-	tinsert(tbSay,"Rêi khái/do_nothing")
+	tinsert(tbSay,"Leave/do_nothing")
 	
 	Say(tSTRING_TREASUER_NPC[2], getn(tbSay), tbSay)
 end
@@ -116,7 +116,7 @@ function pay_wooden(nNum)
 		if gf_AddItemEx2({2,1,30340,nNum},"§æi Méc R­¬ng lo¹i "..tNumWooden[3].." xu","Than Tai Bao Ruong","§æi Méc R­¬ng thµnh c«ng",0,1) ~= 1 then
 			return 0
 		end
-  		gf_WriteLogEx("Than Tai Bao Ruong", "®æi thµnh c«ng", nNum, "Xu §æi Méc R­¬ng")   		
+  		gf_WriteLogEx("Than Tai Bao Ruong", "®æi thµnh c«ng", nNum, "Coin Exchange Sandalwood Chest")   		
 		SetTask(VET_TREASURE_BOX_MNUM,nNumTask+nNum)
 		return 1
 	end

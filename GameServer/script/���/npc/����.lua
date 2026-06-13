@@ -242,7 +242,7 @@ function direct_divorce()
 	Say(g_InfoHeader.."Hñy bá h«n ­íc? Ng­¬i suy nghÜ kü ch­a?",
 		2,
 		"§ång ý/direct_divorce_option",
-		"Hñy bá/cancel")
+		"Cancel/cancel")
 end
 
 -- Ö±½ÓÀë»éÑ¡Ïî
@@ -264,7 +264,7 @@ function direct_divorce_letter()
 		Say(g_InfoHeader.."Ng­¬i quyÕt ®Þnh ly h«n th× ta còng kh«ng cßn c¸ch nµo, nh­ng ®é h¶o c¶m sÏ gi¶m xuèng = 0! Suy nghÜ kü ch­a?",
 			2,
 			"§ång ý/direct_divorce_letter_confirm",
-			"Hñy bá/cancel")
+			"Cancel/cancel")
 	end
 end
 
@@ -290,8 +290,8 @@ function clear_marriage_info(nType)
 	end;
 	clear_task();
 	ma_skill_remove()
-	WriteLog("[KÕt h«n]:"..GetName().."BiÕn l­îng nhiÖm vô tr­íc li h«n:"..szTaskInfo);
-	WriteLog("[KÕt h«n]:"..GetName().."Li h«n råi, lo¹i li h«n:"..tostring(nType));
+	WriteLog("[Marriage]:"..GetName().."BiÕn l­îng nhiÖm vô tr­íc li h«n:"..szTaskInfo);
+	WriteLog("[Marriage]:"..GetName().."Li h«n råi, lo¹i li h«n:"..tostring(nType));
 end;
 
 -- ÐÝÊéÈ·ÈÏ
@@ -313,7 +313,7 @@ function direct_divorce_estrangement()
 		Say(g_InfoHeader.."Ly h«n ®é h¶o c¶m cña c¸c ng­¬i sÏ = 0. C¸c ng­¬i suy nghÜ kü ®i",
 			2,
 			"§ång ý/#divorce(2)",
-			"Hñy bá/cancel")
+			"Cancel/cancel")
 	end
 end
 
@@ -333,7 +333,7 @@ function direct_divorce_team()
 			Say(g_InfoHeader.."C¸c ng­¬i quyÕt ®Þnh ly h«n ­?",
 				2,
 				"§ång ý/direct_divorce_team_confirm",
-				"Hñy bá/cancel")
+				"Cancel/cancel")
 		end
 	end
 end

@@ -11,7 +11,7 @@ function OnUse()
 		return 0;
 	end;
 	local selTab = {
-				"§óng vËy!/confirm",
+				"That's right!/confirm",
 				"Sau nµy sö dông tiÕp/nothing",
 				}
 	Say("Muèn sö dông TiÓu kim tr­ phï kh«ng? Sau khi nhÊp chuét x¸c nhËn, b¹n sÏ mÊt thó nu«i hiÖn t¹i.",getn(selTab),selTab);

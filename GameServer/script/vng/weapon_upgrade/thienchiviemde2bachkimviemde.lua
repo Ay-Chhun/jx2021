@@ -2,7 +2,7 @@ Include("\\script\\vng\\lib\\vnglib_award.lua");
 Include("\\script\\vng\\lib\\vnglib_function.lua");
 Include("\\script\\lib\\globalfunctions.lua");
 
-szNPCName = "<color=green>Chñ Töu LÇu:<color> "
+szNPCName = "<color=green>Tavern Master:<color>"
 NV_BACHKIMVIEMDE100_FILE = "\\script\\vng\\weapon_upgrade\\change_thienchiviemde2bachkimviemde.lua";
 
 function get_TCVD2BKVD()

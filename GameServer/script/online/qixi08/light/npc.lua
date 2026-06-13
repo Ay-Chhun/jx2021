@@ -9,9 +9,9 @@ function aoyun_light_main()
 	end;
 	local strtab = {
 		"Héi th¾p ®Ìn, kh«ng cã g× khã kh¨n c¶, h·y thö xem./aoyun_light_try",
-		"Quy t¾c Héi th¾p ®Ìn/aoyun_light_rule",
+		"Rules of the Lantern Lighting Meet/aoyun_light_rule",
 		"Ta ®Õn nhËn phÇn th­ëng HØ Rén Rµng - Vui NgËp Trµn/aoyun_light_award",
-		"§Ó ta chuÈn bÞ/nothing"
+		"Let me get ready/nothing"
 	};
 	Say("<color=green>§Æc sø §¹i Héi Vâ l©m<color>: Nãi giang hå, giang hå ë trong tim. §Ó chóc mõng §¹i héi tû vâ Thiªn h¹ ®Ö nhÊt, chóng t«i ®Æc biÖt cö hµnh Héi th¾p ®Ìn tû vâ Vâ L©m 2 lÇn thø nhÊt, hoan nghªnh mäi ng­êi tham gia, cµng ®«ng cµng vui. Ta ®· chuÈn bÞ cho mäi ng­êi vµi mãn quµ, ®o¸n tróng cø lÊy. Thêi gian ho¹t ®éng: <color=yellow>mçi chñ nhËt<color> më ho¹t ®éng nµy.",
 		getn(strtab),
@@ -84,7 +84,7 @@ function aoyun_light_try()
 	if nTeamSize == 0 or nTeamSize == 1 then
 		Say("<color=green>§Æc sø §¹i Héi Vâ l©m<color>: Mét ng­êi sÏ c« ®¬n ®Êy, sao kh«ng rñ thªm b¹n cïng ch¬i?",
 			2,
-			"Gäi thªm b¹n/nothing",
+			"Invite more friends/nothing",
 			"§¬n ®éc khiªu chiÕn/aoyun_light_go");
 	else
 		aoyun_light_go();

@@ -53,7 +53,7 @@ function OnDeath(nNpcIdx)
 			Msg2Player("Tı chi’n tr≠Íng Æ¨n Æ u quay v“ hÀu doanh!");
 		end;
 		if GetTaskTemp(TEMP_CHALLENGER) == 1 then	--ÃÙ’Ω’ﬂªÒ § 
-			Msg2MSAll(MISSION_ID,"ßπi hi÷p"..GetName(nKillerIdx).."("..tCampNameZ[nEnemyCamp]..") khi™u chi’n Æ¨n Æ u Æ∑ thæng "..GetName(nDeathIdx).."("..tCampNameZ[nDeathCamp].."), c≠Ìp Æ≠Óc "..tDoorName[nDoorIdx]);
+			Msg2MSAll(MISSION_ID,"ßπi hi÷p"..GetName(nKillerIdx).."("..tCampNameZ[nEnemyCamp]..") khi™u chi’n Æ¨n Æ u Æ∑ thæng "..GetName(nDeathIdx).."("..tCampNameZ[nDeathCamp].."), looted"..tDoorName[nDoorIdx]);
 		else
 			Msg2MSAll(MISSION_ID,"ßπi hi÷p"..GetName(nKillerIdx).."("..tCampNameZ[nEnemyCamp]..") khi™u chi’n Æ¨n Æ u Æ∑ thæng "..GetName(nDeathIdx).."("..tCampNameZ[nDeathCamp].."), gi˜ Æ≠Óc "..tDoorName[nDoorIdx]);
 		end;
@@ -62,6 +62,6 @@ function OnDeath(nNpcIdx)
 		return 1;
 	end;--µ•ÃÙif
 	Msg2SomeOne(nRealKillerIdx,"Bπn Æ∑ gi’t"..szDeathName);
-	Msg2Player("Bπn bﬁ "..szKillerName.." Æ∑ gi’t ");
+	Msg2Player("Bπn bﬁ "..szKillerName.." has killed");
 	return 0;
 end;

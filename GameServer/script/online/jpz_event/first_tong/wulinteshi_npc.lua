@@ -8,7 +8,7 @@ Include("\\script\\online\\zgc_public_fun.lua")		--´å³¤µÄ¹«¹²º¯Êý
 Include("\\script\\online\\jpz_event\\first_tong\\mission_head.lua");
 --==========================¹«¹²±äÁ¿¶¨ÒåÇøÓò=============================
 
-g_InfoHeader = "<color=green>Vâ L©m §Æc Sø<color>: "
+g_InfoHeader = "<color=green>Wulin Special Envoy<color>:"
 
 tEnterPosTable =
 {
@@ -106,7 +106,7 @@ function goto_huashan()
 	PlayerIndex = nOldPlayer
 
 	SetMissionV(MV_TEAM_NUM, (GetMissionV(MV_TEAM_NUM)+1) )
-	Msg2MSAll(MISSION_ID, GetName().." dÉn d¾t (gåm cã "..GetTeamSize().."  ng­êi) ®· vµo Hoa S¬n, hiÖn t¹i ë Hoa S¬n cã sè tæ ®éi  "..GetMissionV(MV_TEAM_NUM))
+	Msg2MSAll(MISSION_ID, GetName().." leading (including"..GetTeamSize().."  ng­êi) ®· vµo Hoa S¬n, hiÖn t¹i ë Hoa S¬n cã sè tæ ®éi  "..GetMissionV(MV_TEAM_NUM))
 end
 
 -- ¶ÓÎé½øÈëÌõ¼þÅÐ¶Ï

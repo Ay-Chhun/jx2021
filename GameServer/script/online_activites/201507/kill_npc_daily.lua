@@ -39,7 +39,7 @@ TB_KILL_NPC =
 }
 MAP_DESC = 
 {
-	[MAP_1] = "Mª cung sa m¹c",
+	[MAP_1] = "Desert Demon Palace",
 	[MAP_2] = "Hoµng L¨ng mé thÊt tÇng 1",
 	[MAP_3] = "Hoµng L¨ng mé thÊt tÇng 2",
 }
@@ -65,13 +65,13 @@ tbKillNpcDaily.tbAward =
 		{
 			{2, 1, 30603, 29, "Tiªu Dao Ngäc"},
 			{2, 1, 30880, 2000, "LÖnh Bµi"},
-			{2, 1, 30881, 2000, "Qu©n Phôc"},
+			{2, 1, 30881, 2000, "Army Uniform"},
 		},
 		tbPrize = 
 		{
 			{"Exp", 39000000},
-			{2, 1, 30882, 1000, "Binh KhÝ"},
-			{2, 1, 30785, 9, "V« Tù Kinh Th­"},
+			{2, 1, 30882, 1000, "Weapon"},
+			{2, 1, 30785, 9, "Wordless Scripture"},
 		}
 	},
 	[ADVANCED_TYPE] = 
@@ -81,12 +81,12 @@ tbKillNpcDaily.tbAward =
 		{
 			{2, 1, 30603, 299, "Tiªu Dao Ngäc"},
 			{2, 1, 30880, 2000, "LÖnh Bµi"},
-			{2, 1, 30881, 2000, "Qu©n Phôc"},
+			{2, 1, 30881, 2000, "Army Uniform"},
 		},
 		tbPrize = 
 		{
 			{"Exp", 99000000},
-			{2, 1, 30785, 19, "V« Tù Kinh Th­"},
+			{2, 1, 30785, 19, "Wordless Scripture"},
 			{2, 1, 30885, 99, "Kim Bµi Tinh Qu©n"},
 		}
 	}

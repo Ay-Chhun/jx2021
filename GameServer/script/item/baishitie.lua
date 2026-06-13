@@ -3,9 +3,9 @@
 function OnUse(idx)
 	Say("ThiÖp B¸i S­ cã thÓ gióp b¹n b¸i s­ hoÆc thu nhËn ®Ö tö!",
 	4,
-	"Ph¸t tin b¸i s­/bai_shi", 
+	"Send a master-worship sign/bai_shi", 
 --	"§Õn Quèc Tö gi¸m t×m hiÓu liªn quan s­ ®å./shou_tu",
-	"ThuyÕt minh HÖ thèng S­ ®å/see_info2", 
+	"Explanation of the Master-Disciple System/see_info2", 
 	"§Ö tö cã thÓ lµm nhiÖm vô S­ ®å nµo?/renwuchaxun", 
 	"Kh«ng lµm g× hÕt!/no_say"
 	)
@@ -31,18 +31,18 @@ function bai_shi()
 		if nDiffTime > 0 then		-- 10·ÖÖÓ²ÅÄÜÓÃÒ»´Î
 			local nMin = floor(nDiffTime / 60)
 			local nSec = mod(nDiffTime, 60)
-			Say("B¹n cßn cÇn "..nMin.." Phót "..nSec.." gi©y míi cã thÓ göi tiÕp tin b¸i s­.", 0)
+			Say("B¹n cßn cÇn "..nMin.." minutes"..nSec.." gi©y míi cã thÓ göi tiÕp tin b¸i s­.", 0)
 			return
 		end
 		CustomDataSave("mp_p_want_take_on_a_master", "d", nNow)
 	end
 	
 	Want2TakeOnAMaster()
-	Say("     B¹n ®· göi tin b¸i s­, c¸c cao thñ l©n cËn ®Òu nhËn ®­îc, nÕu cã ng­êi muèn thu ®å ®Ö, sÏ chñ ®éng liÖn hÖ víi b¹n. \n <color=yellow>NÕu thÊy cã ng­êi nãi chuyÖn víi b¹n, chØ cÇn Ên Ctrl+chuét ph¶i ngay c©u nãi ®ã ®Ó tr¶ lêi. <color>\n Tin b¸i s­ cã thÓ duy tr× trong 10 phót, c¸c s­ phô vâ häc cã thÓ thÊy ®­îc tin b¸i s­ cña b¹n trong 10 phót, trong thêi gian ®ã b¹n cã thÓ lµm vÖc kh¸c. <color=yellow>nÕu b¹n lµ t©n thñ, ®Ò nghŞ b¹n tíi D· Song gÇn n¬i b¹n xuÊt th©n ®Ó nhËn nhiÖm vô cña t©n thñ . <color>\n NÕu sau 10 phót vÉn ch­a cã ai nhËn b¹n lµm ®Ö tö, b¹n cã thÓ göi l¹i tin b¸i s­ lÇn n÷a.\n Hi väng b¹n cã thÓ t×m ®­îc s­ phô tµi ®øc.",1,"§ång ı/no_say")
+	Say("     B¹n ®· göi tin b¸i s­, c¸c cao thñ l©n cËn ®Òu nhËn ®­îc, nÕu cã ng­êi muèn thu ®å ®Ö, sÏ chñ ®éng liÖn hÖ víi b¹n. \n <color=yellow>NÕu thÊy cã ng­êi nãi chuyÖn víi b¹n, chØ cÇn Ên Ctrl+chuét ph¶i ngay c©u nãi ®ã ®Ó tr¶ lêi. <color>\n Tin b¸i s­ cã thÓ duy tr× trong 10 phót, c¸c s­ phô vâ häc cã thÓ thÊy ®­îc tin b¸i s­ cña b¹n trong 10 phót, trong thêi gian ®ã b¹n cã thÓ lµm vÖc kh¸c. <color=yellow>nÕu b¹n lµ t©n thñ, ®Ò nghŞ b¹n tíi D· Song gÇn n¬i b¹n xuÊt th©n ®Ó nhËn nhiÖm vô cña t©n thñ . <color>\n NÕu sau 10 phót vÉn ch­a cã ai nhËn b¹n lµm ®Ö tö, b¹n cã thÓ göi l¹i tin b¸i s­ lÇn n÷a.\n Hi väng b¹n cã thÓ t×m ®­îc s­ phô tµi ®øc.",1,"Agree/no_say")
 end
 
 function shou_tu()
-	Say("NÕu b¹n muèn nhËn ®Ö tö, cã thÓ ®Õn <color=yellow>Quèc Tö gi¸m<color> ë BiÖn Kinh, cã viªn quan triÒu ®×nh phô tr¸ch vÒ viÖc liªn quan ®Õn s­ ®å. TruyÒn tin ®i ph¶i cÇn 10 b¹c ( cÊp 20 trë lªn miÔn phİ)!", 2, "§ång ı/yes_shou_tu", "Hñy bá/no_say")
+	Say("NÕu b¹n muèn nhËn ®Ö tö, cã thÓ ®Õn <color=yellow>Quèc Tö gi¸m<color> ë BiÖn Kinh, cã viªn quan triÒu ®×nh phô tr¸ch vÒ viÖc liªn quan ®Õn s­ ®å. TruyÒn tin ®i ph¶i cÇn 10 b¹c ( cÊp 20 trë lªn miÔn phİ)!", 2, "Agree/yes_shou_tu", "Cancel/no_say")
 end
 
 function yes_shou_tu()
@@ -76,12 +76,12 @@ function shifu()
 		9,
 		"Lµm sao ®Ó nhËn ®Ö tö/shoutu",
 		"NhiÖm Vô S­ §å sau khi nhËn ®Ö tö lµ g×/shirenwu",
-		"§iÓm S­ ®å lµ g×/shitudianshu",
-		"§iÓm S­ ®øc lµ g×/shidedianshu",
+		"What are Master-Disciple Points/shitudianshu",
+		"What are Master Virtue Points/shidedianshu",
 		"Thô NghiÖp §¼ng CÊp lµ g×/shouyedengji",
 		"Hoa Hång Quèc Tö Gi¸m lµ g×?/huahong",
 		"Bæng Léc Quèc Tö gi¸m lµ g×, cã thÓ mua ®­îc nh÷ng g×/fenglu",
-		"Lµm sao chÊm døt quan hÖ S­ ®å/shichushi",
+		"How to end a master-disciple relationship/shichushi",
 		"Kh«ng viÖc g×, chØ xem th«i./no_say"
 		)
 end
@@ -153,9 +153,9 @@ function tudi()
 	Say("Th«ng tin ®Ö tö nh­ sau, b¹n muèn biÕt vÒ phÇn nµo. Xin nh¾c nhë 1 chót, nhiÒu thao t¸c cña HÖ thèng S­ ®å, lµ nh÷ng <color=yellow>chuét ph¶i chØ tªn ng­êi xuÊt hiÖn trªn menu<color> sau khi <color=yellow>giao diÖn th«ng tin s­ ®å<color> ®­îc më ra.",
 		5,
 		"Lµm c¸ch nµo ®Ó b¸i s­/baishi",
-		"NhiÖm vô S­ ®å sau khi b¸i s­ lµ g×/turenwu",
+		"What are the Mentorship quests after taking a master/turenwu",
 		"Sau khi b¸i s­ cã thÓ nhËn ®­îc phÇn th­ëng nµo/jiangli",
-		"Lµm sao chÊm døt quan hÖ S­ ®å/tuchushi",
+		"How to end the mentorship relationship/tuchushi",
 		"Kh«ng viÖc g×, chØ xem th«i./no_say")
 end
 

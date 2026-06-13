@@ -303,7 +303,7 @@ function bhta6_confirm_exchange_rose(nCount)
 		return
 	end
 	if DelItem(2, 0, 1164, nQuantity * 5) == 1 and DelItem(2, 1, 30230, nQuantity * 2) == 1 then
-		gf_AddItemEx2({2, 1, 30255, nQuantity}, "Hoa Hång Vµng", BHTA6_LOG_TITLE, "®æi hoa hång")
+		gf_AddItemEx2({2, 1, 30255, nQuantity}, "Hoa Hång Vµng", BHTA6_LOG_TITLE, "exchange roses")
 	end
 end
 
@@ -329,7 +329,7 @@ function bhta6_confirm_exchange_rose2(nCount)
 		return
 	end
 	if DelItem(2, 0, 1164, nQuantity * 5) == 1 and Pay(nQuantity * 70000) == 1 then
-		gf_AddItemEx2({2, 1, 30255, nQuantity}, "Hoa Hång Vµng", BHTA6_LOG_TITLE, "®æi hoa hång")
+		gf_AddItemEx2({2, 1, 30255, nQuantity}, "Hoa Hång Vµng", BHTA6_LOG_TITLE, "exchange roses")
 	end
 end
 

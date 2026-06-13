@@ -11,9 +11,9 @@ function handinhand_main()
 	local selTab = {
 				"Ta muèn ®æi/ask_for_award",
 				"Xem néi dung ho¹t ®éng./know_detail",
-				"LÔ bao kû niÖm cóp thÕ giíi/know_present_bag",
+				"World Cup commemorative gift bag/know_present_bag",
 				"NhËn h­íng dÉn ho¹t ®éng/get_intro_book",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"End dialogue/nothing",
 				}
 	Say("Ho¹t ®éng cóp thÕ giíi ®· b¾t ®Çu, mäi ng­êi h·y cïng nhau tham gia.",getn(selTab),selTab);
 end;
@@ -29,11 +29,11 @@ function ask_for_award()
 	end;
 	local selTab = {
 				"Ta ®· thu thËp ®ñ thÎ cña 1 b¶ng/#want_award1(1)",
-				"Ta ®· thu thËp ®ñ thÎ 4 ®éi m¹nh/want_award2",
+				"I have collected enough cards for the 4 strongest teams/want_award2",
 				"Ta ®· thu thËp ®ñ thÎ cña 32 ®éi/want_award3",
 				"B¹n nhËn ®­îc thÎ §¹i Trung Hoa/want_award4",
 				"\nQuay l¹i/handinhand_main",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"End dialogue/nothing",
 				}
 	Say("Ng­êi ®· thu thËp ®­îc lo¹i thÎ nµo? Kh¸ch quan muèn dïng thÎ ®æi phÇn th­ëng nµo?",getn(selTab),selTab);
 end;
@@ -55,7 +55,7 @@ function get_intro_book()
 	end;
 end;
 
-tGroupName = {"B¶ng A","B¶ng B","B¶ng C","B¶ng D","B¶ng E","B¶ng F","B¶ng G","B¶ng H"};
+tGroupName = {"Table A","Table B","Table C","Table D","Table E","Table F","Table G","Table H"};
 --»»È¡Ğ¡×é¿¨Æ¬½±Àø
 function want_award1(nPageNum)
 	if GetTask(TASK_GOTGROUP_AWARD) >= 30 then
@@ -63,15 +63,15 @@ function want_award1(nPageNum)
 		return 0;
 	end;
 	local selTab = {};
-	selTab[1] = "Dïng thÎ"..tGroupName[(nPageNum-1)*4+1].."§æi phÇn th­ëng/#give_award1_confirm("..((nPageNum-1)*4+1)..")";
-	selTab[2] = "Dïng thÎ"..tGroupName[(nPageNum-1)*4+2].."§æi phÇn th­ëng/#give_award1_confirm("..((nPageNum-1)*4+2)..")";
-	selTab[3] = "Dïng thÎ"..tGroupName[(nPageNum-1)*4+3].."§æi phÇn th­ëng/#give_award1_confirm("..((nPageNum-1)*4+3)..")";
-	selTab[4] = "Dïng thÎ"..tGroupName[(nPageNum-1)*4+4].."§æi phÇn th­ëng/#give_award1_confirm("..((nPageNum-1)*4+4)..")";
-	selTab[5] = "Trang tr­íc/#want_award1("..(nPageNum-1)..")";
+	selTab[1] = "Use card"..tGroupName[(nPageNum-1)*4+1].."§æi phÇn th­ëng/#give_award1_confirm("..((nPageNum-1)*4+1)..")";
+	selTab[2] = "Use card"..tGroupName[(nPageNum-1)*4+2].."§æi phÇn th­ëng/#give_award1_confirm("..((nPageNum-1)*4+2)..")";
+	selTab[3] = "Use card"..tGroupName[(nPageNum-1)*4+3].."§æi phÇn th­ëng/#give_award1_confirm("..((nPageNum-1)*4+3)..")";
+	selTab[4] = "Use card"..tGroupName[(nPageNum-1)*4+4].."§æi phÇn th­ëng/#give_award1_confirm("..((nPageNum-1)*4+4)..")";
+	selTab[5] = "Previous page/#want_award1("..(nPageNum-1)..")";
 	selTab[6] = "Trang sau/#want_award1("..(nPageNum+1)..")";
 	selTab[7] = "§æi phÇn th­ëng kh¸c/ask_for_award";
 	selTab[8] = "Quay l¹i ®èi tho¹i chİnh./handinhand_main";
-	selTab[9] = "KÕt thóc ®èi tho¹i/nothing";
+	selTab[9] = "End dialogue/nothing";
 	if nPageNum == 1 then
 		tremove(selTab,5);
 	end;
@@ -83,7 +83,7 @@ end;
 
 function give_award1_confirm(nGroup)
 	local selTab = {
-				"§óng vËy!/#give_award1("..nGroup..")",
+				"That's right!/#give_award1("..nGroup..")",
 				"Ta suy nghÜ l¹i!/#want_award1(1)",
 				}
 	Say("PhÇn th­ëng lµ <color=yellow>1 lÔ bao kû niÖm cóp thÕ giíi<color>. Xin x¸c nhËn hµnh trang vµ søc lùc cßn ®ñ ®Ó tr¸nh tæn thÊt ®¸ng tiÕc.B¹n x¸c nhËn muèn ®æi thÎ cña vßng b¶ng lÊy phÇn th­ëng?",getn(selTab),selTab);
@@ -112,7 +112,7 @@ function want_award2()
 		return 0;
 	end;
 	local selTab = {
-				"§óng vËy!/give_award2",
+				"That's right!/give_award2",
 				"Ta suy nghÜ l¹i!/ask_for_award",
 				}
 	Say("PhÇn th­ëng lµ <color=yellow>4 lÔ bao kû niÖm cóp thÕ giíi<color> vµ <color=yellow>1 TiÓu Niªn Thó Phï<color>. Xin x¸c nhËn hµnh trang vµ søc lùc cßn ®ñ ®Ó tr¸nh tæn thÊt ®¸ng tiÕc. B¹n x¸c nhËn muèn ®æi thÎ 4 ®éi m¹nh lÊy phÇn th­ëng?",getn(selTab),selTab);
@@ -147,7 +147,7 @@ function want_award3()
 		return 0;
 	end;
 	local selTab = {
-				"§óng vËy!/give_award3",
+				"That's right!/give_award3",
 				"Ta suy nghÜ l¹i!/ask_for_award",
 				}
 	Say("PhÇn th­ëng lµ <color=yellow>10 LÔ bao kû niÖm cóp thÕ giíi<color> vµ <color=yellow>5 TiÕu Niªn Thó ThÇn Phï<color>. Xin x¸c nhËn hµnh trang vµ søc lùc cßn ®ñ ®Ó tr¸nh tæn thÊt ®¸ng tiÕc. B¹n ®ång ı dïng 32 thÎ ®æi phÇn th­ëng?",getn(selTab),selTab);	

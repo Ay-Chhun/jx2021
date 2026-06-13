@@ -21,6 +21,6 @@ function confirm_use()
 		if nRet == 1 then
 			Msg2Player("B¹n nhËn ®­îc ["..tItemName[2][1].."]x"..tItemName[2][5]);
 		end
-		WriteLog("["..tItemName[1][1].."]: tµi kho¶n:"..tostring(GetAccount())..",Tªn:"..tostring(GetName())..",Thêi gian:"..tonumber(date("%Y%m%d"))..",[më"..tItemName[1][1].."NhËn ®­îc"..tItemName[2][1].."x"..tItemName[2][5].."], ký hiÖu:"..nRet)
+		WriteLog("["..tItemName[1][1].."]: tµi kho¶n:"..tostring(GetAccount())..",Tªn:"..tostring(GetName())..",Thêi gian:"..tonumber(date("%Y%m%d"))..",[më"..tItemName[1][1].."Received"..tItemName[2][1].."x"..tItemName[2][5].."], ký hiÖu:"..nRet)
 	end
 end

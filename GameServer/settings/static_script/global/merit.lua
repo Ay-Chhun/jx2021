@@ -416,7 +416,7 @@ function OnUse(nItem)
 		return 1;
 	end
 	if G == 2 and D == 1 and P == 30711 then
-		Say("H·y chän lo¹i §¹i Héi Tû Vâ thiÕt lËp l¹i: ", 3, format("1V1/#Reset1V1JoinTimes(%d)", nItem), format("3V3/#Reset3V3JoinTimes(%d)", nItem), "Ra khái/nothing")
+		Say("H·y chän lo¹i §¹i Héi Tû Vâ thiÕt lËp l¹i: ", 3, format("1V1/#Reset1V1JoinTimes(%d)", nItem), format("3V3/#Reset3V3JoinTimes(%d)", nItem), "Leave/nothing")
 		return 1;
 	end
 	if G == 2 and D == 1 and P == 30712 then

@@ -11,7 +11,7 @@ function OnUse(nItemIdx)
 	end
 	if DelItemByIndex(nItemIdx,1) == 1 then
 		DoFireworks(1343,1);
-		Msg2Player("ß∑ Æ∆t b…y.");
+		Msg2Player("Trap set.");
 	end 
 end
 

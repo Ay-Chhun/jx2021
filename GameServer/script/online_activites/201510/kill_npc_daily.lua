@@ -51,8 +51,8 @@ TB_KILL_NPC =
 MAP_DESC = 
 {
 	[MAP_1] = "Thiªn Long Tù",
-	[MAP_2] = "Quúnh KÕt",
-	[MAP_3] = "H­ng Kh¸nh",
+	[MAP_2] = "Qiong Jie",
+	[MAP_3] = "Xing Qing",
 }
 
 tbKillNpcDaily = {}
@@ -75,14 +75,14 @@ tbKillNpcDaily.tbAward =
 		tbCost = 
 		{
 			{2, 1, 30926, 3000, "X¹ h­¬ng"},
-			{2, 1, 30927, 3000, "tói th¬m"},
+			{2, 1, 30927, 3000, "Scented Pouch"},
 			{2, 1, 30603, 75, "Tiªu Dao Ngäc"},
 		},
 		tbPrize = 
 		{
 			{"Exp", 100000000},
-			{2, 1, 30928, 1000, "®Æc biÖt tói th¬m"},
-			{2, 1, 30785, 50, "V« Tù Kinh Th­"},
+			{2, 1, 30928, 1000, "Special Scented Pouch"},
+			{2, 1, 30785, 50, "Wordless Scripture"},
 		}
 	},
 	[ADVANCED_TYPE] = 
@@ -91,14 +91,14 @@ tbKillNpcDaily.tbAward =
 		tbCost = 
 		{
 			{2, 1, 30926, 3000, "X¹ h­¬ng"},
-			{2, 1, 30927, 3000, "tói th¬m"},
+			{2, 1, 30927, 3000, "Scented Pouch"},
 			{2, 1, 30603, 223, "Tiªu Dao Ngäc"},
 		},
 		tbPrize = 
 		{
 			{"Exp", 125000000},
-			{2, 1, 30931, 50, "n­íc hoa nång nµn"},
-			{2, 1, 30785, 111, "V« Tù Kinh Th­"},
+			{2, 1, 30931, 50, "Intense Perfume"},
+			{2, 1, 30785, 111, "Wordless Scripture"},
 		}
 	}
 }

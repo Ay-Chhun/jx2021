@@ -12,11 +12,11 @@ SUNDAY = 0
 
 WEEK_DESC = 
 {
-	[MONDAY] = "Thø 2",
-	[TUESDAY] = "Thø 3",
-	[WEDNESDAY] = "Thø 4",
-	[THURSDAY] = "Thø 5",
-	[FRIDAY] = "Thø 6",
-	[SATURDAY] = "Thø 7",
-	[SUNDAY] = "Chñ nhËt",
+	[MONDAY] = "Monday",
+	[TUESDAY] = "Tuesday",
+	[WEDNESDAY] = "Wednesday",
+	[THURSDAY] = "Thursday",
+	[FRIDAY] = "Friday",
+	[SATURDAY] = "Saturday",
+	[SUNDAY] = "Sunday",
 }

@@ -8,7 +8,7 @@ function main()
 	"§i BiÖn Kinh/#leave_huashan(1)",
 	"§i Thµnh §«/#leave_huashan(2)",
 	"§i TuyÒn Ch©u/#leave_huashan(3)",
-	"KÕt thóc ®èi tho¹i/end_dialog"
+	"End dialogue/end_dialog"
 	)
 end
 function leave_huashan(map_seq)

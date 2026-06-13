@@ -14,7 +14,7 @@ function OnDeath(NpcIndex)
 
 local nSurnameID = GetTask(TASK_KILLER_SURNAME_ID);
 local nFirstnameID = GetTask(TASK_KILLER_FIRSTNAME_ID);
-local nKillerName = "S¸t thñ "..getKillerName(nSurnameID,nFirstnameID);
+local nKillerName = "Assassin"..getKillerName(nSurnameID,nFirstnameID);
 local nKillerParName = nKillerName.." ®ång hµnh ";
 local nNum = random(3,5);--Ëæ»ú³öÏÖ¸´³ðÍ¬°éÊýÁ¿£¨3¡«5¸ö£©
 local nKillerParModeID = getKillerParModeID();

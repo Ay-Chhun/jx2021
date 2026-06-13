@@ -71,8 +71,8 @@ tVIET_0911_SHIMEN_JUHUA = {
 tbVIET_0911_YUTUXIANG = {
 	{"M¶nh Thiªn th¹ch", 10, {2, 2, 7, 1}, 0},
 	{"Thiªn th¹ch", 10, {2, 2, 8, 1}, 0},
-	{"Tiªu KiÕp t¸n", 10, {2, 0, 141, 1}, 7 * 24 * 3600},
-	{"§Êu hån", 4, {2, 1, 1157, 1}, 7 * 24 * 3600},
+	{"Tribulation Dispel Powder", 10, {2, 0, 141, 1}, 7 * 24 * 3600},
+	{"Soul Duel", 4, {2, 1, 1157, 1}, 7 * 24 * 3600},
 	{"Money", 37, 10000},
 	{"Rep", 12, 1},
 	{nil, 12},
@@ -82,50 +82,50 @@ tbVIET_0911_YUTUXIANG = {
 tbVIET_0911_JUHUACHA_AWARD = {
 	{"M¶nh Thiªn th¹ch", 60000, {2, 2, 7, 1}, 0},
 	{"Thiªn th¹ch", 60000, {2, 2, 8, 1}, 0},
-	{"M¶nh B¨ng th¹ch", 20000, {2, 1, 148, 1},  0},
-	{"B¨ng th¹ch", 30000, {2, 1, 149, 1}, 0},
-	{"TÈy Tñy linh ®¬n", 100, {2, 0, 137, 1}, 15 * 24 * 3600},
+	{"Ice Stone Fragment", 20000, {2, 1, 148, 1},  0},
+	{"Ice Stone", 30000, {2, 1, 149, 1}, 0},
+	{"Marrow-Cleansing Spirit Pill", 100, {2, 0, 137, 1}, 15 * 24 * 3600},
 	{"§ång TiÒn Vµng", 5000, {2, 1, 30094, 1}, 0},
-	{"Tu Ch©n YÕu QuyÕt", 70000, {2, 0, 554, 1}, 15 * 24 * 3600},
-	{"R­¬ng BÝ KÝp", 1000, {2, 1, 30093, 1}, 30 * 24 * 3600},
-	{"§Êu hån", 10000, {2, 1, 1157, 1}, 15 * 24 * 3600},
+	{"Xiu Zhen Yao Jue", 70000, {2, 0, 554, 1}, 15 * 24 * 3600},
+	{"Secret Manual Chest", 1000, {2, 1, 30093, 1}, 30 * 24 * 3600},
+	{"Soul Duel", 10000, {2, 1, 1157, 1}, 15 * 24 * 3600},
 	{"ThÇn N«ng §¬n", 14000, {2, 1, 343, 1}, 15 * 24 * 3600},
-	{"V¨n CÈm H¹p", 500, {2, 1, 1100, 1}, 15 * 24 * 3600},
+	{"Wenjin Box", 500, {2, 1, 1100, 1}, 15 * 24 * 3600},
 	{"Qu©n C«ng Ch­¬ng", 5000, {2, 1, 9999, 1}, 15 * 24 * 3600},
 	{"Th¸i H­ §a MËt Qu¶ ", 5000, {2, 1, 387, 1}, 15 * 24 * 3600},
-	{"S­ m«n t×nh nguyÖn th­", 5000, {2, 1, 1019, 1}, 15 * 24 * 3600},
+	{"Sect Volunteer Letter", 5000, {2, 1, 1019, 1}, 15 * 24 * 3600},
 	{"S­ m«n lÖnh th­", 5000, {2, 1, 1016, 1}, 15 * 24 * 3600},
 --	{"èng B«ng GiÊy", 140999, {2, 1, 30092, 1}, 0},
 	{"B¶o R­¬ng §Æc BiÖt", 1, {2, 1, 30091, 1}, 30 * 24 * 3600},
-	{"R­¬ng TrÊn Ph¸i", 1000, {2, 1, 30113, 1}, 30 * 24 * 3600},
+	{"Town Sect Chest", 1000, {2, 1, 30113, 1}, 30 * 24 * 3600},
 	{nil, 320000},
 	{nil, 347399},
-	{"Tiªu KiÕp t¸n", 10000, {2, 0, 141, 1}, 15 * 24 * 3600},
+	{"Tribulation Dispel Powder", 10000, {2, 0, 141, 1}, 15 * 24 * 3600},
 --	{"Ngäc Trai", 83300, {2, 1, 30122, 1}, 15 * 24 * 3600},
 	{"Tø Linh Thiªn ý Phæ", 3000, {0, 107, 160, 1}, 0},
-	{"Tø Linh Tö ý Phæ", 3000, {0, 107, 161, 1}, 0},
-	{"Tø Linh ChiÕn ý Phæ", 3000, {0, 107, 159, 1}, 0},
-	{"Bµn Long BÝch", 2000, {2, 1, 1000, 1}, 15 * 24 * 3600},
+	{"Four Spirits Earth Intent Manual", 3000, {0, 107, 161, 1}, 0},
+	{"Four Spirits Battle Intent Manual", 3000, {0, 107, 159, 1}, 0},
+	{"Panlong Bi", 2000, {2, 1, 1000, 1}, 15 * 24 * 3600},
 	{"TiÓu nh©n s©m qu¶", 20000, {2, 0, 552, 1}, 15 * 24 * 3600},
 };
 
 tbVIET_0911_JUHUACHA_AWARD_2 = {
-	{"Tu Ch©n YÕu QuyÕt", 230000, {2, 0, 554, 1}, 15 * 24 * 3600},
-	{"R­¬ng BÝ KÝp", 40000, {2, 1, 30093, 1}, 30 * 24 * 3600},
+	{"Xiu Zhen Yao Jue", 230000, {2, 0, 554, 1}, 15 * 24 * 3600},
+	{"Secret Manual Chest", 40000, {2, 1, 30093, 1}, 30 * 24 * 3600},
 	{"Qu©n C«ng Ch­¬ng", 170000, {2, 1, 9999, 1}, 15 * 24 * 3600},
-	{"R­¬ng TrÊn Ph¸i", 20000, {2, 1, 30113, 1}, 30 * 24 * 3600},
-	{"Tiªu KiÕp t¸n", 210000, {2, 0, 141, 1}, 15 * 24 * 3600},
+	{"Town Sect Chest", 20000, {2, 1, 30113, 1}, 30 * 24 * 3600},
+	{"Tribulation Dispel Powder", 210000, {2, 0, 141, 1}, 15 * 24 * 3600},
 	{"Tø Linh Thiªn ý Phæ", 40000, {0, 107, 160, 1}, 0},
-	{"Tø Linh Tö ý Phæ", 40000, {0, 107, 161, 1}, 0},
-	{"Tø Linh ChiÕn ý Phæ", 40000, {0, 107, 159, 1}, 0},
-	{"Bµn Long BÝch", 210000, {2, 1, 1000, 1}, 15 * 24 * 3600},
+	{"Four Spirits Earth Intent Manual", 40000, {0, 107, 161, 1}, 0},
+	{"Four Spirits Battle Intent Manual", 40000, {0, 107, 159, 1}, 0},
+	{"Panlong Bi", 210000, {2, 1, 1000, 1}, 15 * 24 * 3600},
 };
 
 tbVIET_0911_JUHUACHA_AWARD_FULL = {
 	{"Thiªn Th¹ch Linh Th¹ch", 7800, {2, 1, 1068, 1}, 15 * 24 * 3600},
 	{"Thiªn Th¹ch Tinh Th¹ch", 453000, {2, 1, 1009, 1}, 0},
 	{"§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", 3100, {2, 1, 1067, 1}, 7 * 24 * 3600},
-	{"L¨ng Ba Vi Bé", 31300, {0, 112, 78, 1}, 0},
+	{"Lingbo Microstep", 31300, {0, 112, 78, 1}, 0},
 	{"Huy hiÖu chiÕn c«ng (Huy hoµng)", 4700, {2, 1, 9977, 1}, 7 * 24 * 3600},
 	{"M· Bµi", 500100, {2, 1, 371, 1}, 30 * 24 * 3600},
 }
@@ -135,10 +135,10 @@ tbVIET_0911_TONG_AWARD1 = {
 	[1] = 
 	{
 		{1, "Ngù dông b¹ch ngäc th¹ch", {2, 1, 1024, 15}, 7 * 24 * 3600},
-		{1, "R­¬ng YÕu QuyÕt_Cao CÊp", {2, 1, 30112, 3}, 7 * 24 * 3600},
+		{1, "Essential Formula Chest_High Grade", {2, 1, 30112, 3}, 7 * 24 * 3600},
 		{1, "Bao m¶nh Thiªn Th¹ch", {2, 1, 1049, 1}, 7 * 24 * 3600},
 		{1, "Bao Thiªn Th¹ch", {2, 1, 1050, 1}, 7 * 24 * 3600},
-		{1, "1 bao XÝch ThiÕt Tinh", {2, 1, 2651, 1}, 7 * 24 * 3600},
+		{1, "1 bag of Red Iron Essence", {2, 1, 2651, 1}, 7 * 24 * 3600},
 		{1, "Ngò Hµnh MËt tÞch", {0, 107, 155, 2}, 0},
 		{1, "Thiªn Th¹ch linh th¹ch", {2, 1, 1068, 1}, 7* 24 * 3600},
 		{1, "N÷ Oa Tinh Th¹ch", {2, 1, 504, 3}, 7* 24 * 3600},
@@ -148,25 +148,25 @@ tbVIET_0911_TONG_AWARD1 = {
 	[2] = 
 	{
 		{1, "Ngù dông b¹ch ngäc th¹ch", {2, 1, 1024, 10}, 7 * 24 * 3600},
-		{1, "R­¬ng YÕu QuyÕt_Cao CÊp", {2, 1, 30112, 2}, 7 * 24 * 3600},
+		{1, "Essential Formula Chest_High Grade", {2, 1, 30112, 2}, 7 * 24 * 3600},
 		{1, "Bao m¶nh Thiªn Th¹ch", {2, 1, 1049, 1}, 7 * 24 * 3600},
 		{1, "Bao Thiªn Th¹ch", {2, 1, 1050, 1}, 7 * 24 * 3600},
-		{1, "1 bao XÝch ThiÕt Tinh", {2, 1, 2651, 1}, 7 * 24 * 3600},
+		{1, "1 bag of Red Iron Essence", {2, 1, 2651, 1}, 7 * 24 * 3600},
 		{1, "Ngò Hµnh MËt tÞch", {0, 107, 155, 1}, 0},
 		{1, "N÷ Oa Tinh Th¹ch", {2, 1, 504, 2}, 7* 24 * 3600},
 		{2, "ModifyExp(7000000)", "C¸c h¹ thu ®­îc 7000000 ®iÓm kinh nghiÖm"},
-		{2, "ModifyReputation(700, 1)", "C¸c h¹ thu ®­îc 700 danh väng"},
+		{2, "ModifyReputation(700, 1)", "You received 700 reputation"},
 	},
 	[3] = 
 	{
 		{1, "Ngù dông b¹ch ngäc th¹ch", {2, 1, 1024, 5}, 7 * 24 * 3600},
-		{1, "R­¬ng YÕu QuyÕt_Cao CÊp", {2, 1, 30112, 1}, 7 * 24 * 3600},
+		{1, "Essential Formula Chest_High Grade", {2, 1, 30112, 1}, 7 * 24 * 3600},
 		{1, "Bao m¶nh Thiªn Th¹ch", {2, 1, 1049, 1}, 7 * 24 * 3600},
 		{1, "Bao Thiªn Th¹ch", {2, 1, 1050, 1}, 7 * 24 * 3600},
-		{1, "1 bao XÝch ThiÕt Tinh", {2, 1, 2651, 1}, 7 * 24 * 3600},
+		{1, "1 bag of Red Iron Essence", {2, 1, 2651, 1}, 7 * 24 * 3600},
 		{1, "N÷ Oa Tinh Th¹ch", {2, 1, 504, 1}, 7* 24 * 3600},
 		{2, "ModifyExp(5000000)", "C¸c h¹ thu ®­îc 5000000 ®iÓm kinh nghiÖm"},
-		{2, "ModifyReputation(500, 1)", "C¸c h¹ thu ®­îc 700 danh väng"},
+		{2, "ModifyReputation(500, 1)", "You received 700 reputation"},
 	}
 };
 
@@ -175,17 +175,17 @@ tbVIET_0911_TONG_AWARD2 = {
 	[1] = 
 	{
 		{2, "ModifyExp(7000000)", "C¸c h¹ thu ®­îc 7000000 ®iÓm kinh nghiÖm"},
-		{2, "ModifyReputation(700, 1)", "C¸c h¹ thu ®­îc 700 danh väng"},
+		{2, "ModifyReputation(700, 1)", "You received 700 reputation"},
 	},
 	[2] = 
 	{
 		{2, "ModifyExp(5000000)", "C¸c h¹ thu ®­îc 5000000 ®iÓm kinh nghiÖm"},
-		{2, "ModifyReputation(500, 1)", "C¸c h¹ thu ®­îc 500 danh väng"},
+		{2, "ModifyReputation(500, 1)", "You received 500 reputation"},
 	},
 	[3] =
 	{
 		{2, "ModifyExp(2000000)", "C¸c h¹ thu ®­îc 2000000 ®iÓm kinh nghiÖm"},
-		{2, "ModifyReputation(200, 1)", "C¸c h¹ thu ®­îc 200 danh väng"},
+		{2, "ModifyReputation(200, 1)", "You received 200 reputation"},
 	},
 };
 
@@ -194,17 +194,17 @@ tbVIET_0911_TONG_AWARD3 = {
 	[1] = 
 	{
 		{2, "ModifyExp(5000000)", "C¸c h¹ thu ®­îc 5000000 ®iÓm kinh nghiÖm"},
-		{2, "ModifyReputation(500, 1)", "C¸c h¹ thu ®­îc 500 danh väng"},
+		{2, "ModifyReputation(500, 1)", "You received 500 reputation"},
 	},
 	[2] = 
 	{
 		{2, "ModifyExp(2000000)", "C¸c h¹ thu ®­îc 2000000 ®iÓm kinh nghiÖm"},
-		{2, "ModifyReputation(200, 1)", "C¸c h¹ thu ®­îc 200 danh väng"},
+		{2, "ModifyReputation(200, 1)", "You received 200 reputation"},
 	},
 	[3] =
 	{
 		{2, "ModifyExp(1000000)", "C¸c h¹ thu ®­îc 1000000 ®iÓm kinh nghiÖm"},
-		{2, "ModifyReputation(100, 1)", "C¸c h¹ thu ®­îc 100 danh väng"},
+		{2, "ModifyReputation(100, 1)", "You received 100 reputation"},
 	},
 };
 
@@ -213,33 +213,33 @@ tbVIET_0911_TONG_AWARD4 = {
 	[1] = 
 	{
 		{2, "ModifyExp(2000000)","C¸c h¹ thu ®­îc 2000000 ®iÓm kinh nghiÖm"},
-		{2, "ModifyReputation(200, 1)", "C¸c h¹ thu ®­îc 200 danh väng"},
+		{2, "ModifyReputation(200, 1)", "You received 200 reputation"},
 	},
 	[2] = 
 	{
 		{2, "ModifyExp(1000000)","C¸c h¹ thu ®­îc 1000000 ®iÓm kinh nghiÖm"},
-		{2, "ModifyReputation(100, 1)","C¸c h¹ thu ®­îc 100 danh väng"},
+		{2, "ModifyReputation(100, 1)","You received 100 reputation"},
 	},
 	[3] =
 	{
 		{2, "ModifyExp(500000)","C¸c h¹ thu ®­îc 500000 ®iÓm kinh nghiÖm"},
-		{2, "ModifyReputation(50, 1)","C¸c h¹ thu ®­îc 50 danh väng"},
+		{2, "ModifyReputation(50, 1)","You received 50 reputation"},
 	},
 };
 
 tbVIET_0911_TANGQUASUPHU ={
 	{nil, 50250},
 	{"§Êu Hån", 26000, {2, 1, 1157, 1}, 15 * 24 * 3600},
-	{"M·nh TiÖt Hoµnh Thó", 1000, {2, 0, 738, 1}, 0},
-	{"Th­îng Cæ Kú L©n HuyÕt", 1000, {2, 0, 739, 1}, 0},
+	{"Fierce Beast Fragment", 1000, {2, 0, 738, 1}, 0},
+	{"Ancient Qilin Blood", 1000, {2, 0, 739, 1}, 0},
 	{"NguyÖt Hoa Chi Tinh", 100, {2, 1, 3219, 1}, 0},
 	{"NguyÖt Hoa", 10000, {2, 1, 2002, 1}, 0},
-	{"L¨ng Ba Vi Bé", 100, {0, 112, 78, 1}, 0},
-	{"R­¬ng Vò KhÝ B¹c", 5000, {2, 1, 1147, 1}, 15 * 24 * 3600},
+	{"Lingbo Microstep", 100, {0, 112, 78, 1}, 0},
+	{"Silver Weapon Chest", 5000, {2, 1, 1147, 1}, 15 * 24 * 3600},
 	{"§ång TiÒn Vµng", 2000, {2, 1, 30094, 1}, 0},
 	{"Thñy Hoµng BÝ ChiÕu", 1000, {2, 1, 1047, 1}, 15 * 24 * 3600},
 	{"Lôc L©m Lang Yªn", 1000, {2, 1, 1014, 1}, 15 * 24 * 3600},
-	{"Uyªn ¦¬ng Kim Ti B¹c", 1000, {2, 1, 1048, 1}, 15 * 24 * 3600},
+	{"Yuanyang Gold Silver Thread", 1000, {2, 1, 1048, 1}, 15 * 24 * 3600},
 	{"Huy hiÖu chiÕn c«ng (huy hoµng)", 250, {2, 1, 9977, 1}, 15 * 24 * 3600},
 	{"Thiªn Th¹ch Tinh Th¹ch", 1300, {2, 1, 1009, 1},0}
 }
@@ -252,19 +252,19 @@ tbVIET_0911_TANGQUASUPHU_2 = {
 };
 
 tbVIET_0911_WEAPON = {
-	[2]= 	{"Cæ §Ýnh",0,3,64,200},
-	[3]= 	{"A La H¸n Tr­îng",0,8,97,100},
+	[2]= 	{"Guding",0,3,64,200},
+	[3]= 	{"Arhat Staff",0,8,97,100},
 	[4]=	 {"V¹n NhÉn",0,0,14,220},
 	[6]= 	{"M·n Thiªn Hoa Vò",0,1,53,130},	
 	[8]= 	{"Háa Tinh",0,2,36,90},	
 	[9]= 	{"Hi Nh©n CÇm",0,10,75,140},
 	[11]= {"V¹n NhÉn",0,0,14,220},
-	[12]= {"LiÖt DiÖm",0,5,40,200},
+	[12]= {"Lie Yan",0,5,40,200},
 	[14]= {"Háa Tinh",0,2,36,90},	
 	[15]= {"ThÇn Hµnh",0,9,86,130},	
 	[17]= {"§¹i Hµo L«i Th­¬ng",0,6,108,130},	
 	[18]= {"ThÇn Cung",0,4,119,130},
-	[20]= {"L¨ng Phong",0,7,12,200},
+	[20]= {"Lingfeng",0,7,12,200},
 	[21]= {"M·nh hæ",0,11,12,200},
 }
 
@@ -348,14 +348,14 @@ function Viet0911_Give_ShangXian_Aword()
 	if nRepLevel ~= 0 then
 		ModifyExp(tbVIET_0911_SHANGXIAN_AWORD[nRepLevel][3]);
 		Msg2Player("B¹n nhËn ®­îc "..tbVIET_0911_SHANGXIAN_AWORD[nRepLevel][3].." ®iÓm kinh nghiÖm");
-		WriteLog(GetName() .. "NhËn ®­îc "..tbVIET_0911_SHANGXIAN_AWORD[nRepLevel][3] .. "  ®iÓm kinh nghiÖm")
-		gf_AddItemEx({2, 1, 30118, tbVIET_0911_SHANGXIAN_AWARD2[nRepLevel]}, "Hoa Cóc");
+		WriteLog(GetName() .. "Received"..tbVIET_0911_SHANGXIAN_AWORD[nRepLevel][3] .. "  ®iÓm kinh nghiÖm")
+		gf_AddItemEx({2, 1, 30118, tbVIET_0911_SHANGXIAN_AWARD2[nRepLevel]}, "Chrysanthemum");
 	end
 	if nFacLevel ~= 0 then
 		ModifyExp(tbVIET_0911_SHANGXIAN_AWORD[nFacLevel][3]);
 		Msg2Player("B¹n nhËn ®­îc "..tbVIET_0911_SHANGXIAN_AWORD[nFacLevel][3].." ®iÓm kinh nghiÖm");
-		WriteLog(GetName() .. "NhËn ®­îc "..tbVIET_0911_SHANGXIAN_AWORD[nFacLevel][3] .. "  ®iÓm kinh nghiÖm")
-		gf_AddItemEx({2, 1, 30118, tbVIET_0911_SHANGXIAN_AWARD2[nFacLevel]}, "Hoa Cóc");
+		WriteLog(GetName() .. "Received"..tbVIET_0911_SHANGXIAN_AWORD[nFacLevel][3] .. "  ®iÓm kinh nghiÖm")
+		gf_AddItemEx({2, 1, 30118, tbVIET_0911_SHANGXIAN_AWARD2[nFacLevel]}, "Chrysanthemum");
 	end
 	SetTask(VIET_0911_TASK_SHANGXIAN_AWORD, tonumber(date("%y%m%d")));
 end
@@ -387,8 +387,8 @@ function Viet_0911_GetJuHuaCha()
 	end
 	if DelItem(2, 1, 30118, 2) == 1 and DelItem(2, 1, 30121, 1) == 1 then
 		gf_SetLogCaption(VIET_0911_LOG_TITLE);
-		gf_AddItemEx({2, 1, 30119, 1}, "Trµ Hoa Cóc");
-		WriteLogEx(VIET_0911_LOG_TITLE,"hîp thµnh",1,"Trµ Hoa Cóc")
+		gf_AddItemEx({2, 1, 30119, 1}, "Chrysanthemum Tea");
+		WriteLogEx(VIET_0911_LOG_TITLE,"hîp thµnh",1,"Chrysanthemum Tea")
 		gf_SetLogCaption("");
 	end
 	SelectSay();
@@ -410,8 +410,8 @@ function Viet0911_Give_Exchange_Baihuabing()
 	end
 	if DelItem(2, 1, 30118, 2) == 1 then
 		gf_SetLogCaption(VIET_0911_LOG_TITLE);
-		gf_AddItemEx({2, 1, 30120, 1}, "B¸nh B¸ch Hoa");
-		WriteLogEx(VIET_0911_LOG_TITLE,"hîp thµnh",1,"B¸nh B¸ch Hoa")
+		gf_AddItemEx({2, 1, 30120, 1}, "Hundred Flowers Cake");
+		WriteLogEx(VIET_0911_LOG_TITLE,"hîp thµnh",1,"Hundred Flowers Cake")
 		gf_SetLogCaption("");
 	end
 	SelectSay();
@@ -474,7 +474,7 @@ function get_tong_award(nType)
 	end
 	local nLevelName = {
 		{1, 1, "Bang chñ"},
-		{2, 2, "Phã bang"},
+		{2, 2, "Deputy Guild Leader"},
 		{3, 2, "Tr­ëng l·o"},
 		{4, 3, "§­êng chñ"},
 		{5, 3, "H­¬ng chñ"},
@@ -501,7 +501,7 @@ function get_tongmaster_award_callback(szKey, nKey1, nKey2, nCount)
 	local nLevel = IsTongMember();
 	local nLevelName = {
 		{1, 1, "Bang chñ"},
-		{2, 2, "Phã bang"},
+		{2, 2, "Deputy Guild Leader"},
 		{3, 2, "Tr­ëng l·o"},
 		{4, 3, "§­êng chñ"},
 		{5, 3, "H­¬ng chñ"},

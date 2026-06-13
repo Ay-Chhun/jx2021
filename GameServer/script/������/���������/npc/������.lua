@@ -20,7 +20,7 @@ local nMemCount = GetTeamSize();
 local nMapId, nX, nY = GetWorldPos();
 local strTalk = {
 	"(1 ¸nh hång quang lãe lªn cïng víi tiÕng rİt chãi tai)",
-	"Ng­êi ch¬i: ??!? (¸nh hµo quang vµ tiÕng rİt lóc n·y lµ sao? Hay nªn ®i hái DiÖp Tö Thu.)",
+	"Player: ??!? (What was that glow and shriek just now? Perhaps I should go ask Ye Zixiu.)",
 	}
 
 	SetNpcLifeTime(index,15);--Ê¹µÃÊ¬ÌåÏûÊ§

@@ -6,13 +6,13 @@
 
 
 DATE_FRUIT_ITEM_VIET_END		= 2008072800;		-- ¼ªÏéÐ¡°üÊ¹ÓÃ½áÊøÈÕÆÚ
-g_LogTitle = "TiÓu c¸t t­êng";
+g_LogTitle = "Minor Auspicious";
 
 
 g_tPrizeItemList =
 {
 	--		"Ãû³Æ",		G1,	G2,		G3,	¸ÅÂÊ
-	[1] = {"Chiªm Y Phæ",	0,	107,	66,	30	},
+	[1] = {"Zhanyi Manual",	0,	107,	66,	30	},
 	[2] = {"Thiªn Hµ MËt tÞch",	0,	107,	64,	60	},
 	[3] = {"Tö Hµ MËt tÞch",	0,	107,	65,	50	},
 	[4] = {"Bæ Kim MËt tÞch",	0,	107,	61,	600	},
@@ -20,13 +20,13 @@ g_tPrizeItemList =
 	[6] = {"Ngò Quû MËt tÞch",	0,	107,	63,	600	},
 	[7] = {"M¶nh Thiªn th¹ch",	2,	2,	7,	600	},
 	[8] = {"Thiªn th¹ch",		2,	2,	8,	5000	},
-	[9] = {"B¨ng th¹ch",		2,	1,	149,	3000	},
-	[10] = {"M¶nh B¨ng th¹ch",	2,	1,	148,	5000	},
-	[11] = {"C©y B¸t Nh·",	2,	0,	398,	5000	},
-	[12] = {"C©y B¸t Nh· nhá",	2,	0,	504,	5000	},
-	[13] = {"Lé thñy",		2,	0,	351,	50000	},
+	[9] = {"Ice Stone",		2,	1,	149,	3000	},
+	[10] = {"Ice Stone Fragment",	2,	1,	148,	5000	},
+	[11] = {"Prajna Tree",	2,	0,	398,	5000	},
+	[12] = {"Small Prajna Tree",	2,	0,	504,	5000	},
+	[13] = {"Dew Water",		2,	0,	351,	50000	},
 	[14] = {"B¸t B¶o TÈy Tñy ®¬n",	2,	0,	138,	3	},
-	[15] = {"C¸t t­êng th¹ch",	2,	1,	30015,	2000	},
+	[15] = {"Auspicious Stone",	2,	1,	30015,	2000	},
 }
 
 

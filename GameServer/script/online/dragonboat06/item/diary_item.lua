@@ -2,8 +2,8 @@ function OnUse(nItemIndex)
 	local nLevel = GetLevel()
 	local nNeedExp = floor((nLevel^2*100000)/(80^2))
 	local selTab = {
-			"§ång ý/#confirm("..nItemIndex..")",
-			"Hñy bá/nothing",
+			"Confirm/#confirm("..nItemIndex..")",
+			"Cancel/nothing",
 			}
 	Say("§¼ng cÊp hiÖn t¹i cã thÓ nhËn ®­îc <color=yellow>"..nNeedExp.."<color> ®iÓm kinh nghiÖm. B¹n muèn sö dông kh«ng?",
 		getn(selTab),

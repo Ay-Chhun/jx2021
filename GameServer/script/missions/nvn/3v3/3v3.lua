@@ -66,7 +66,7 @@ end
 
 function checkEquipment()
 	local tEquipPos = {0,1,2,3,4,5,6,7,8,9,10,11,17,18,19};
-	local tEquipName = {"§Çu","Ngo¹i trang","Vò khÝ","H¹ y","Trang søc 1","Trang søc 2","Ngo¹i trang ®Çu","Th­îng y","Ngo¹i trang","Phã MËt tÞch","M·","MËt tÞch", "¸o Choµng", "Huy HiÖu", "§«i giµy"};
+	local tEquipName = {"§Çu","Ngo¹i trang","Vò khÝ","Lower Garment","Trang søc 1","Trang søc 2","Ngo¹i trang ®Çu","Upper Garment","Ngo¹i trang","Phã MËt tÞch","Horse","MËt tÞch", "¸o Choµng", "Badge", "Pair of Boots"};
 	local szMyHint = "";
 	local bTag = 0;
 	for i = 1, getn(tEquipPos) do

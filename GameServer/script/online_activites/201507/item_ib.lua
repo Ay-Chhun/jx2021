@@ -6,11 +6,11 @@ function OnUse(nItemIndex)
 		return 0;
 	end
 	if VET_201507_Item1UseTime()<VET_201507_GetItem1MaxUseTime() then
-		Talk(1,"",format("Sö dông ®ñ %d %s vµ %d %s míi ®­îc dïng!", 2000, "Qu©n LÖnh Trung CÊp", 2000, "Qu©n LÖnh Cao CÊp"));
+		Talk(1,"",format("Sö dông ®ñ %d %s vµ %d %s míi ®­îc dïng!", 2000, "Intermediate Army Order", 2000, "Advanced Army Order"));
 		return 0
 	end
 	if VET_201507_Item2UseTime()<VET_201507_GetItem2MaxUseTime() then
-		Talk(1,"",format("Sö dông ®ñ %d %s vµ %d %s míi ®­îc dïng!", 2000, "Qu©n LÖnh Trung CÊp", 2000, "Qu©n LÖnh Cao CÊp"));
+		Talk(1,"",format("Sö dông ®ñ %d %s vµ %d %s míi ®­îc dïng!", 2000, "Intermediate Army Order", 2000, "Advanced Army Order"));
 		return 0
 	end
 	

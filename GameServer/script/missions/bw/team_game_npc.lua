@@ -8,23 +8,23 @@ local strSay = {};
 	if GetMissionV(GAME_TYPE) == 3 then
 		strSay = {
 							"Thi ®Êu ®ang tæ chøc lµ §éi chiÕn (trËn thø 1), ng­êi ch¬i tham gia thi ®Êu ®Òu cã thÓ nhËn ®­îc phÇn th­ëng ®iÓm søc kháe t­¬ng øng sau khi thi ®Êu kÕt thóc.",
-							"Rêi khái trËn ®Şa/LeaveMap",
+							"Leave the battlefield/LeaveMap",
 							"T×m hiÓu quy t¾c l«i ®µi/#Rule_Team(2)",
-							"Kh«ng cã g×/no"
+							"Nothing/no"
 							}
 	elseif GetMissionV(GAME_TYPE) == 4 then
 		strSay = 	{
 							"Thi ®Êu ®ang tæ chøc lµ §éi chiÕn (trËn thø 2), ng­êi ch¬i tham gia thi ®Êu mçi lÇn ®¸nh b¹i ®èi thñ cã thÓ nhËn ®­îc phÇn th­ëng tiÒn nhÊt ®Şnh. §Êu thñ chiÕn th¾ng sau cïng sÏ nhËn ®­îc phÇn th­ëng phong phó.",
-							"Rêi khái trËn ®Şa/LeaveMap",
+							"Leave the battlefield/LeaveMap",
 							"T×m hiÓu quy t¾c l«i ®µi/#Rule_Team(3)",
-							"Kh«ng cã g×/no"
+							"Nothing/no"
 							}
 	else
 		strSay = {
 							"HiÕm khi cã dŞp ®Ó xem c¸c ®¹i hiÖp trªn giang hå biÓu diÔn vâ nghÖ, ®«i khi hä ph¶i ®¸nh ®æi c¶ gia tµi míi luyÖn thµnh. LÇn nµy ®óng dŞp may! Ch¼ng hay"..GetPlayerSex().."Cã cÇn g× kh«ng?",
-							"Rêi khái trËn ®Şa/LeaveMap",
+							"Leave the battlefield/LeaveMap",
 							"T×m hiÓu quy t¾c l«i ®µi/#Rule_Team(1)",
-							"Kh«ng cã g×/no"
+							"Nothing/no"
 							}
 	end
 

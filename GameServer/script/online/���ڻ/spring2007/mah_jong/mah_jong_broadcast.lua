@@ -35,10 +35,10 @@ function main()
 		local date_seq = (zgc_pub_day_turn(1) - 13552 + 1)
 		mah_suc_seq = mah_jong_suc_seq[date_seq][mah_suc_seq]
 	end
-	local mah_suc_name = {	"§¹i Tø Hû",		"Tø Kh¾c Tö",		"Cöu Liªn B¶o §¨ng", "ThËp Tham Yªu",	"Liªn ThÊt §èi",
-							"Thanh ThÊt §èi",		"ThÊt Tinh BÊt Kh¸o",		"Thèi bÊt ®¶o",	"§¹i Tam Nguyªn",	"Thanh Yªu Cöu",
-							"NhÊt S¾c Tø §ång ThuËn", 	"NhÊt S¾c Tø TiÕt Cao", 	"Tù NhÊt S¾c",	"Thanh NhÊt S¾c",
-							"Toµn ®¹i",			"Toµn trung",			"Toµn tiÓu",		"Thanh Long",		"Tam Kh¾c Tö",}
+	local mah_suc_name = {	"Great Four Joys",		"Four Concealed Tiles",		"Cöu Liªn B¶o §¨ng", "Thirteen Orphans",	"Linked Seven Pairs",
+							"Pure Seven Pairs",		"Seven Stars Unmatched",		"Unbeatable Pillar",	"Great Three Origins",	"Thanh Yªu Cöu",
+							"Single-Color Four Identical Sequences", 	"Single-Color Four Pure Triplets", 	"Self Single-Color",	"Pure Single-Color",
+							"All Big",			"All Middle",			"All Small",		"Thanh Long",		"Three Concealed Tiles",}
 	Msg2SubWorld("Ho¹t ®éng thu thËp bµi M¹c Ch­îc:"..mah_suc_name[mah_suc_seq].."!")
 	Msg2SubWorld("Mäi ng­êi tham gia gia ho¹t ®éng thu thËp, ®Õn 3 thµnh thŞ chİnh gÆp Phóc ThÇn ®Ó nhËn phÇn th­ëng.")
 	Msg2SubWorld("Xin ®Õn chç Phóc ThÇn nhËn  H­íng dÉn ho¹t ®éng (miÔn phİ)")

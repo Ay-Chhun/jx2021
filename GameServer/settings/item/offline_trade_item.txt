@@ -1,13 +1,13 @@
-Tªn	Lo¹i h×nh chÝnh	Lo¹i h×nh phô	Ph©n lo¹i chi tiÕt
+Name	Lo¹i h×nh chÝnh	Lo¹i h×nh phô	Ph©n lo¹i chi tiÕt
 	2	1	14,001,436
 	2	1	2,187
 	2	1	271,331
 L«ng thá	2	9	1
-Tµm t¬	2	9	2
-T¬ Ngò S¾c	2	9	3
-Lang chu t¬	2	2	52
+Silkworm silk	2	9	2
+Five-Color Silk	2	9	3
+Wolf-spider silk	2	2	52
 Hång t¬	2	2	53
-Linh Chu t¬	2	2	54
+Spirit Pearl Silk	2	2	54
 Kim tµm t¬	2	2	55
 L·nh trïng t¬	2	9	4
 Háa chu t¬	2	9	5
@@ -37,9 +37,9 @@ D­¬ng Méc	2	2	42
 Sam Méc	2	2	43
 ThiÕt Méc	2	2	44
 Ng« §ång	2	2	45
-Trïng Méc	2	2	9
-ThiÕt Ch­¬ng Méc	2	2	10
-ThiÕt TuyÕn Méc	2	2	11
+Heavy wood	2	2	9
+Iron palm wood	2	2	10
+Iron thread wood	2	2	11
 ThiÕt TuyÕn tinh méc	2	2	67
 Ba La Méc	2	2	12
 §µn Méc	2	2	13
@@ -50,10 +50,10 @@ Da sãi	2	2	15
 Da hæ	2	2	16
 Da r¾n	2	2	18
 Da c¸o	2	2	17
-Da hæ tr¾ng	2	2	46
+White tiger hide	2	2	46
 Da gÊu	2	2	20
 Loan ®iÓu vò	2	10	7
-Da S­ tö	2	2	47
+Lion hide	2	2	47
 Da S­ tinh	2	2	68
 Da V­în tr¾ng	2	2	48
 Chu T­íc vò	2	2	49
@@ -88,42 +88,42 @@ Khuynh ly ®Ëu	1	3	10
 NhiÔu minh ®Ëu	1	3	11
 Dung tr¹ch cèc	1	3	12
 MÝa	1	3	13
-Diªn Tinh m¹ch	1	3	14
+Yan Jing vein	1	3	14
 ThuÇn hßa m¹ch	1	3	15
 Du long tóc	1	3	16
 Phông Qu¸n Tóc	1	3	17
 Dao Chi Tóc	1	3	18
-Méc nhÜ	1	3	19
+Wood ear	1	3	19
 Th¹ch khuÈn	1	3	20
-M¨ng	1	3	21
+Bamboo shoot	1	3	21
 Hå tiªu	1	3	22
-C¬m n¾m	1	1	2
-Mµn thÇu	1	1	3
-B¸nh xÕp	1	1	4
-B¸nh bao thÞt	1	1	5
-M¨ng xµo	1	1	6
-Tø Quý ®Ëu	1	1	7
-§Ëu xµo	1	1	8
-C¶i xµo tái	1	1	9
+Rice Ball	1	1	2
+Steamed Bun	1	1	3
+Dumpling	1	1	4
+Meat Bun	1	1	5
+Stir-fried Bamboo Shoots	1	1	6
+Four Seasons Beans	1	1	7
+Stir-fried Beans	1	1	8
+Garlic Stir-fried Greens	1	1	9
 Thiªu §ao Tö	1	1	10
 N÷ Nhi Hång	1	1	11
-§¹o Hoa H­¬ng	1	1	12
-Tóy Méng Töu	1	1	13
-Kim S¸ng T¸n	1	0	2
+Peach Blossom Fragrance	1	1	12
+Tuy Mong Wine	1	1	13
+Golden Wound Powder	1	0	2
 ChØ HuyÕt T¸n	1	0	3
 B¹ch V©n t¸n	1	0	4
 Thiªn H­¬ng CÈm Tôc	1	0	5
 H¾c Ngäc §o¹n Tôc Cao	1	0	6
-TiÓu Hoµn ®¬n	1	0	7
+Tieu Hoan Pill	1	0	7
 Hoµn D­¬ng ®¬n	1	0	8
-§¹i Hoµn ®¬n	1	0	9
+Grand Restoration Pill	1	0	9
 NhÊt Nguyªn Phôc Thñy §¬n	1	0	10
 V¹n VËt Quy Nguyªn §¬n	1	0	11
 Thanh T©m t¸n	1	0	12
 Ých KhÝ t¸n	1	0	13
 Ngäc Linh t¸n	1	0	14
 Ngò Hoa Ngäc Lé Hoµn	1	0	15
-Sinh Sinh Hãa T¸n	1	0	16
+Life-Begetting Powder	1	0	16
 B¹ch NhËt ®¬n	1	0	17
 Toµn Sinh ®¬n	1	0	18
 Chiªu Hån ®¬n	1	0	19
@@ -132,7 +132,7 @@ B«n Tinh NguyÖt §¬n	1	0	21
 Ých D­¬ng t¸n	1	0	22
 Thiªn Kim t¸n	1	0	23
 Bæ Thiªn t¸n	1	0	24
-ThÊt Trïng ThÊt Hoa T¸n	1	0	25
+Seven-Layer Seven-Flower Powder	1	0	25
 §¹i NhËt D­¬ng T¸n	1	0	26
 Gi¶i §éc ®¬n	1	0	27
 ChØ Thñy ®¬n	1	0	28

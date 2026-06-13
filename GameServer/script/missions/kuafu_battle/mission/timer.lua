@@ -45,7 +45,7 @@ function kf_state_peace()
 	else
 		SetMissionV(KF_MV_BATTLE_TIMER_LOOP, nLoop-1);
 		if mod(nLoop, 6) == 0 then --30Ãë²¥·ÅÒ»´Î
-			Msg2MSAll(KF_MISSION_ID, "TiÕn ®é thêi gian: ["..(KF_PEACE_TIMER_LOOP-nLoop+1)..":"..(KF_PEACE_TIMER_LOOP+1).."]");
+			Msg2MSAll(KF_MISSION_ID, "Time progress: ["..(KF_PEACE_TIMER_LOOP-nLoop+1)..":"..(KF_PEACE_TIMER_LOOP+1).."]");
 			local nTime = (nLoop - 1) * KF_PEACE_TIME / KF_FRAME_PER_SECOND
 			local szMsg = format("Sè ng­êi hai bªn hiªn t¹i: %s[%d]:%s[%d], %ds, chiÕn ®Êu b¾t ®Çu.", KF_CampOne_Name, nPlayerOne, KF_CampTwo_Name, nPlayerTwo, nTime)
 			Msg2MSAll(KF_MISSION_ID, szMsg);
@@ -263,7 +263,7 @@ function kf_state_fight()
 			return 0;
 		end
 		if mod(nLoop, 10) == 0 then
-			Msg2MSAll(KF_MISSION_ID,"TiÕn ®é thêi gian: ["..(KF_FIGHT_TIMER_LOOP-nLoop+1)..":"..(KF_FIGHT_TIMER_LOOP+1).."]");
+			Msg2MSAll(KF_MISSION_ID,"Time progress: ["..(KF_FIGHT_TIMER_LOOP-nLoop+1)..":"..(KF_FIGHT_TIMER_LOOP+1).."]");
 			Msg2MSAll(KF_MISSION_ID,"§iÓm tÝch lòy 2 phe hiÖn t¹i lµ: "..KF_CampOne_Name.."["..nSongScore.."]:"..KF_CampTwo_Name.."["..nLiaoScore.."]")
 			KF_OperateAllPlayer(KF_KickSleep, {}, KF_ALL_ID); --Ë¯ÃßµÄÇ¿ÐÐÌß³öÕ½³¡
 		end		

@@ -19,7 +19,7 @@ function main()
 	tinsert(tbSayDialog,"NhËn phÇn th­ëng trång c©y b¸t nh·/get_tuanguan_award")
 	tinsert(tbSayDialog,"T¹i h¹ muèn trång c©y gióp ng­êi kh¸c/#plant_tuoguan(2, 0,0)")
 	tinsert(tbSayDialog,"T¹i h¹ ®Õn nhËn phÇn th­ëng gióp trång c©y./get_help_tuoguan_award")
-	tinsert(tbSayDialog,"H«m nay ®· nép ®ñ 16 B¸t Nh· Chøng Th­ /already_give_16_banruozhengshu")
+	tinsert(tbSayDialog,"Today I have already submitted enough 16 Prajna Certificates / already_give_16_banruozhengshu")
 	
 	tinsert(tbSayDialog,"NhËn phÇn th­ëng theo c¸c nÊc ®iÓm tÝch lòy trång c©y/#get_award(1)")	
 
@@ -108,7 +108,7 @@ function get_tuanguan_award()
 	end
 	local nDiff = GetTime() - GetTask(TASK_TUOGUAN_PLANT_ACTIVE_TIME)
 	if nDiff < 900 then
-		Say(g_strNpc.."ThiÕu hiÖp cÇn"..(900 - nDiff).." gi©y sau míi cã thÓ nhËn phÇn th­ëng ñy th¸c trång c©y", 1, "KÕt thóc ®èi tho¹i/nothing");
+		Say(g_strNpc.."ThiÕu hiÖp cÇn"..(900 - nDiff).." gi©y sau míi cã thÓ nhËn phÇn th­ëng ñy th¸c trång c©y", 1, "End dialogue/nothing");
 		return 0;
 	end
 	if gf_JudgeRoomWeight(5, 50, g_strNpc) == 0 then
@@ -143,7 +143,7 @@ function get_help_tuoguan_award()
 	end
 	local nDiff = GetTime() - GetTask(TASK_TUOGUAN_PLANT_ACTIVE_TIME)
 	if nDiff < 360 then
-		Say(g_strNpc.."ThiÕu hiÖp cÇn"..(360 - nDiff).." gi©y sau míi cã thÓ nhËn th­ëng gióp ng­êi kh¸c trång c©y", 1, "KÕt thóc ®èi tho¹i/nothing");
+		Say(g_strNpc.."ThiÕu hiÖp cÇn"..(360 - nDiff).." gi©y sau míi cã thÓ nhËn th­ëng gióp ng­êi kh¸c trång c©y", 1, "End dialogue/nothing");
 		return 0;
 	end
 	if gf_JudgeRoomWeight(5, 50, g_strNpc) == 0 then
@@ -184,10 +184,10 @@ function get_help_tuoguan_award()
 		end
 	end
 	if tonumber(date("%y%m%d")) >= 101029 and tonumber(date("%y%m%d")) <= 101205 then
-		gf_AddItemEx2({ 2, 1, 30250, 50}, "nguyªn liÖu event 201011", "Hoat dong thang 11 nam 2010", "Nép BNCT")
+		gf_AddItemEx2({ 2, 1, 30250, 50}, "nguyªn liÖu event 201011", "Hoat dong thang 11 nam 2010", "Submit Prajna Certificate")
 	end
 	if tonumber(date("%y%m%d")) >= 110114 and tonumber(date("%y%m%d")) <= 110220 then
-		gf_AddItemEx2({ 2, 1, 30277, 30}, "Nguyªn liÖu event TÕt", "Hoat dong thang 1 nam 2011", "Nép BNCT")
+		gf_AddItemEx2({ 2, 1, 30277, 30}, "Tet event materials", "Hoat dong thang 1 nam 2011", "Submit Prajna Certificate")
 	end
 	SetTask(TASK_TUOGUAN_PLANT_HAS_ACTIVE, 0);
 	SetTask(TASK_TUOGUAN_PLANT_TYPE, 0);
@@ -240,8 +240,8 @@ function get_award(nPage)
 		tinsert(tb_say, "1000 ®iÓm tÝch lòy – nhËn 1 Thiªn Th¹ch Linh Th¹ch/#confirm_get_award(4, 1000)");
 		tinsert(tb_say, "1250 ®iÓm tÝch lòy – nhËn 6 nh©n s©m v¹n n¨m/#confirm_get_award(5, 1250)");
 		tinsert(tb_say, "1500 ®iÓm tÝch lòy – nhËn 2 Hßa ThÞ BÝch/#confirm_get_award(6, 1500)");
-		tinsert(tb_say, "Trang kÕ/#get_award(2)");
-		tinsert(tb_say, "Trang tr­íc/#get_award(1)");
+		tinsert(tb_say, "Next page / #get_award(2)");
+		tinsert(tb_say, "Previous page / #get_award(1)");
 	elseif nPage == 2 then
 		tinsert(tb_say, "1750 ®iÓm tÝch lòy –  nhËn 100 tr¸i c©y ngÉu nhiªn/#confirm_get_award(7, 1750)");
 		tinsert(tb_say, "2000 ®iÓm tÝch lòy – nhËn 6 nh©n s©m v¹n n¨m/#confirm_get_award(8, 2000)");
@@ -249,8 +249,8 @@ function get_award(nPage)
 		tinsert(tb_say, "2500 ®iÓm tÝch lòy – nhËn 2 Thiªn Cang LÖnh/#confirm_get_award(10, 2500)");
 		tinsert(tb_say, "2750 ®iÓm tÝch lòy – nhËn 6 nh©n s©m v¹n n¨m/#confirm_get_award(11, 2750)");
 		tinsert(tb_say, "3000 ®iÓm tÝch lòy – nhËn 1 §¹i §Þnh Hån/#confirm_get_award(12, 3000)");
-		tinsert(tb_say, "Trang kÕ/#get_award(3)");
-		tinsert(tb_say, "Trang tr­íc/#get_award(1)");
+		tinsert(tb_say, "Next page / #get_award(3)");
+		tinsert(tb_say, "Previous page / #get_award(1)");
 	elseif nPage == 3 then	
 		tinsert(tb_say, "3250 ®iÓm tÝch lòy – nhËn 2Thiªn M«n Kim LÖnh/#confirm_get_award(13, 3250)");
 		tinsert(tb_say, "3500 ®iÓm tÝch lòy – nhËn 6 nh©n s©m v¹n n¨m/#confirm_get_award(14, 3500)");
@@ -258,8 +258,8 @@ function get_award(nPage)
 		tinsert(tb_say, "4000 ®iÓm tÝch lòy – nhËn 1 tói Thiªn Th¹ch Tinh Th¹ch/#confirm_get_award(16, 4000)");
 		tinsert(tb_say, "4250 ®iÓm tÝch lòy – nhËn 100 tr¸i c©y ngÉu nhiªn/#confirm_get_award(17, 4250)");
 		tinsert(tb_say, "4500 ®iÓm tÝch lòy – nhËn 1 ChuyÓn sinh ®¬n/#confirm_get_award(18, 4500)");
-		tinsert(tb_say, "Trang kÕ/#get_award(4)");
-		tinsert(tb_say, "Trang tr­íc/#get_award(2)");
+		tinsert(tb_say, "Next page / #get_award(4)");
+		tinsert(tb_say, "Previous page / #get_award(2)");
 	elseif nPage == 4 then
 		tinsert(tb_say, "4750 ®iÓm tÝch lòy – nhËn 1 Thiªn Th¹ch Linh Th¹ch/#confirm_get_award(19, 4750)");
 		tinsert(tb_say, "5000 ®iÓm tÝch lòy – nhËn 2 Hßa ThÞ BÝch/#confirm_get_award(20, 5000)");
@@ -267,8 +267,8 @@ function get_award(nPage)
 		tinsert(tb_say, "5500 ®iÓm tÝch lòy – nhËn 1 §Þnh Hån Thiªn Th¹ch ThÇn Th¹ch/#confirm_get_award(22, 5500)");
 		tinsert(tb_say, "5750 ®iÓm tÝch lòy – nhËn 1 tói Thiªn Th¹ch Tinh Th¹ch/#confirm_get_award(23, 5750)");
 		tinsert(tb_say, "6000 ®iÓm tÝch lòy – nhËn 1 L¨ng Ba Vi Bé Toµn TËp/#confirm_get_award(24, 6000)");
-		tinsert(tb_say, "Trang kÕ/#get_award(5)");		
-		tinsert(tb_say, "Trang tr­íc/#get_award(3)");
+		tinsert(tb_say, "Next page / #get_award(5)");		
+		tinsert(tb_say, "Previous page / #get_award(3)");
 	elseif nPage == 5 then
 		tinsert(tb_say, "6250 ®iÓm tÝch lòy – nhËn 100 tr¸i c©y ngÉu nhiªn/#confirm_get_award(25, 6250)");
 		tinsert(tb_say, "6500 ®iÓm tÝch lòy – nhËn 2 Hßa ThÞ BÝch/#confirm_get_award(26, 6500)");
@@ -276,12 +276,12 @@ function get_award(nPage)
 		tinsert(tb_say, "7000 ®iÓm tÝch lòy – nhËn 1 ChuyÓn sinh ®¬n/#confirm_get_award(28, 7000)");
 		tinsert(tb_say, "7250 ®iÓm tÝch lòy – nhËn 2 Thiªn M«n Kim LÖnh/#confirm_get_award(29, 7250)");
 		tinsert(tb_say, "7500 ®iÓm tÝch lòy – nhËn 18 nh©n s©m v¹n n¨m/#confirm_get_award(30, 7500)");
-		tinsert(tb_say, "Trang tr­íc/#get_award(4)");
+		tinsert(tb_say, "Previous page / #get_award(4)");
 	else
-		tinsert(tb_say, "Trang kÕ/#get_award(2)");
-		tinsert(tb_say, "Trang tr­íc/#get_award(1)");
+		tinsert(tb_say, "Next page / #get_award(2)");
+		tinsert(tb_say, "Previous page / #get_award(1)");
 	end		
-	tinsert(tb_say, "KÕt thóc ®èi tho¹i/nothing");
+	tinsert(tb_say, "End dialogue/nothing");
 	Say(g_strNpc.."§¹i hiÖp muèn ®æi phÇn th­ëng nµo", getn(tb_say), tb_say);
 end
 
@@ -310,7 +310,7 @@ function confirm_get_award(nIndex, nNeedPoint)
 	SetTask(TASK_TUOGUAN_GET_AWARD_FLAG, SetBit(nFlag, nIndex, 1));
 	gf_SetLogCaption(str_TUOGUAN_LOG);
 	if nIndex ~= 1 and nIndex ~= 3 and nIndex ~= 7 and nIndex ~= 17 and nIndex ~= 25 then
-		gf_AddItemEx2(t_TUOGUAN_POINT_TO_AWARD[nIndex][2], t_TUOGUAN_POINT_TO_AWARD[nIndex][1], "BNCT doi diem tich luy", "B¸t Nh· Chøng Th­",t_TUOGUAN_POINT_TO_AWARD[nIndex][3])
+		gf_AddItemEx2(t_TUOGUAN_POINT_TO_AWARD[nIndex][2], t_TUOGUAN_POINT_TO_AWARD[nIndex][1], "BNCT doi diem tich luy", "Prajna Certificate",t_TUOGUAN_POINT_TO_AWARD[nIndex][3])
 --		local _, nItemIndex = gf_AddItemEx(t_TUOGUAN_POINT_TO_AWARD[nIndex][2], t_TUOGUAN_POINT_TO_AWARD[nIndex][1]);		
 --		if t_TUOGUAN_POINT_TO_AWARD[nIndex][3] then
 --			SetItemExpireTime(nItemIndex, t_TUOGUAN_POINT_TO_AWARD[nIndex][3]);
@@ -325,7 +325,7 @@ function confirm_get_award(nIndex, nNeedPoint)
 		gf_AddItemEx(t_TUOGUAN_HIG[nRoute][2], t_TUOGUAN_HIG[nRoute][1])
 	elseif  nIndex == 3 or nIndex == 7 or nIndex == 17  or nIndex == 25 then
 		local nAwardRand = mod(random(1,1000),20)
-		gf_AddItemEx2({2,1,(30164+nAwardRand),100}, "Tr¸i C©y")
+		gf_AddItemEx2({2,1,(30164+nAwardRand),100}, "Fruit")
 	end
 	WriteLogEx("Uy thac trong cay", "Doi diem", 1, t_TUOGUAN_POINT_TO_AWARD[nIndex][1]);
 	gf_SetLogCaption("");
@@ -340,8 +340,8 @@ function get_award_2010(nPage)
 		tinsert(tb_say, "1200 ®iÓm tÝch lòy – nhËn 4 Nh©n S©m V¹n N¨m/#confirm_get_award_2010(4, 1200)");
 		tinsert(tb_say, "1500 ®iÓm tÝch lòy – nhËn 4 Nh©n S©m V¹n N¨m/#confirm_get_award_2010(5, 1500)");
 		tinsert(tb_say, "1800 ®iÓm tÝch lòy – nhËn 4 Nh©n S©m V¹n N¨m/#confirm_get_award_2010(6, 1800)");
-		tinsert(tb_say, "Trang kÕ/#get_award_2010(2)");
-		tinsert(tb_say, "Trang tr­íc/#get_award_2010(1)");
+		tinsert(tb_say, "Next page / #get_award_2010(2)");
+		tinsert(tb_say, "Previous page / #get_award_2010(1)");
 	elseif nPage == 2 then
 		tinsert(tb_say, "2100 ®iÓm tÝch lòy – nhËn 4 Nh©n S©m V¹n N¨m/#confirm_get_award_2010(7, 2100)");
 		tinsert(tb_say, "2400 ®iÓm tÝch lòy – nhËn 4 Nh©n S©m V¹n N¨m/#confirm_get_award_2010(8, 2400)");
@@ -349,8 +349,8 @@ function get_award_2010(nPage)
 		tinsert(tb_say, "3000 ®iÓm tÝch lòy – nhËn 4 Nh©n S©m V¹n N¨m/#confirm_get_award_2010(10, 3000)");
 		tinsert(tb_say, "3300 ®iÓm tÝch lòy – nhËn 4 Nh©n S©m V¹n N¨m/#confirm_get_award_2010(11, 3300)");
 		tinsert(tb_say, "3600 ®iÓm tÝch lòy – nhËn 4 Nh©n S©m V¹n N¨m/#confirm_get_award_2010(12, 3600)");
-		tinsert(tb_say, "Trang kÕ/#get_award_2010(3)");
-		tinsert(tb_say, "Trang tr­íc/#get_award_2010(1)");
+		tinsert(tb_say, "Next page / #get_award_2010(3)");
+		tinsert(tb_say, "Previous page / #get_award_2010(1)");
 	elseif nPage == 3 then	
 		tinsert(tb_say, "3900 ®iÓm tÝch lòy – nhËn 4 Nh©n S©m V¹n N¨m/#confirm_get_award_2010(13, 3900)");
 		tinsert(tb_say, "4200 ®iÓm tÝch lòy – nhËn 4 Nh©n S©m V¹n N¨m/#confirm_get_award_2010(14, 4200)");
@@ -358,8 +358,8 @@ function get_award_2010(nPage)
 		tinsert(tb_say, "4800 ®iÓm tÝch lòy – nhËn 4 Nh©n S©m V¹n N¨m/#confirm_get_award_2010(16, 4800)");
 		tinsert(tb_say, "5100 ®iÓm tÝch lòy – nhËn 4 Nh©n S©m V¹n N¨m/#confirm_get_award_2010(17, 5100)");
 		tinsert(tb_say, "5400 ®iÓm tÝch lòy – nhËn 4 Nh©n S©m V¹n N¨m/#confirm_get_award_2010(18, 5400)");
-		tinsert(tb_say, "Trang kÕ/#get_award_2010(4)");
-		tinsert(tb_say, "Trang tr­íc/#get_award_2010(2)");
+		tinsert(tb_say, "Next page / #get_award_2010(4)");
+		tinsert(tb_say, "Previous page / #get_award_2010(2)");
 	elseif nPage == 4 then
 		tinsert(tb_say, "5700 ®iÓm tÝch lòy – nhËn 4 Nh©n S©m V¹n N¨m/#confirm_get_award_2010(19, 5700)");
 		tinsert(tb_say, "6000 ®iÓm tÝch lòy – nhËn 4 Nh©n S©m V¹n N¨m/#confirm_get_award_2010(20, 6000)");
@@ -367,12 +367,12 @@ function get_award_2010(nPage)
 		tinsert(tb_say, "6600 ®iÓm tÝch lòy – nhËn 4 Nh©n S©m V¹n N¨m/#confirm_get_award_2010(22, 6600)");
 		tinsert(tb_say, "6900 ®iÓm tÝch lòy – nhËn 4 Nh©n S©m V¹n N¨m/#confirm_get_award_2010(23, 6900)");
 		tinsert(tb_say, "7200 ®iÓm tÝch lòy – nhËn 4 Nh©n S©m V¹n N¨m/#confirm_get_award_2010(24, 7200)");		
-		tinsert(tb_say, "Trang tr­íc/#get_award_2010(3)");
+		tinsert(tb_say, "Previous page / #get_award_2010(3)");
 	else
-		tinsert(tb_say, "Trang kÕ/#get_award_2010(2)");
-		tinsert(tb_say, "Trang tr­íc/#get_award_2010(1)");
+		tinsert(tb_say, "Next page / #get_award_2010(2)");
+		tinsert(tb_say, "Previous page / #get_award_2010(1)");
 	end		
-	tinsert(tb_say, "KÕt thóc ®èi tho¹i/nothing");
+	tinsert(tb_say, "End dialogue/nothing");
 	Say(g_strNpc.."§¹i hiÖp muèn ®æi phÇn th­ëng nµo", getn(tb_say), tb_say);
 end
 

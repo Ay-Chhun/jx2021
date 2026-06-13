@@ -21,7 +21,7 @@ function OnUse()
 		"NhiÖm vô s­ m«n - ngÉu nhiªn/#vote_shining_night(2)",
 		"NhiÖm vô s­ m«n tuÇn hoµn/#vote_shining_night(3)",
 		"NhiÖm vô s¸t thñ/#vote_shining_night(4)",
-		"ThuyÒn rång/#vote_shining_night(5)",
+		"Dragon Boat/#vote_shining_night(5)",
 		"Kh«ng sö dông/cancel_dialog")
 end;
 
@@ -30,7 +30,7 @@ function cancel_dialog()
 end;
 
 function vote_shining_night(nChoice)
-	strTab = {"ChiÕn tr­êng", "Th­¬ng héi", "NhiÖm vô s­ m«n - ngÉu nhiªn", "NhiÖm vô s­ m«n tuÇn hoµn", "NhiÖm vô s¸t thñ", "ThuyÒn rång"}
+	strTab = {"Battlefield", "Th­¬ng héi", "NhiÖm vô s­ m«n - ngÉu nhiªn", "NhiÖm vô s­ m«n tuÇn hoµn", "NhiÖm vô s¸t thñ", "Dragon Boat"}
 
 	--		          Äê	       ÔÂ	       ÈÕ
 	local nCurrTime = {date("%Y"), date("%m"), date("%d"), date("%H")}

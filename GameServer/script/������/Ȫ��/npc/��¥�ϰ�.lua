@@ -99,7 +99,7 @@ end
 function selbuy()
 	local selTab = {
 		"Mua 1 b×nh/buy",
-		"KÕt thóc ®èi tho¹i./nothing"
+		"End the conversation./nothing"
 		}
 	Say("Chñ töu lÇu: N¬i nµy r­îu g× còng cã! Hïng Hoµng mü töu 20 l­îng mét b×nh!",2,selTab)
 end
@@ -134,7 +134,7 @@ function vng_quyengop(nType)
 			}
 	local tNhonNhip_Award = {
 					{1, 888, "Thiªn Th¹ch Tinh Th¹ch", {2,1,1009,2}},
-					{1, 10, "ChuyÓn Sinh §¬n", {2,1,30345,1}, 30 * 24 * 3600},
+					{1, 10, "Rebirth Pill", {2,1,30345,1}, 30 * 24 * 3600},
 					{1, 50, "§¹i §Þnh Hån", {2,1,1113,1}, 30 * 24 * 3600},
 					{1, 1212, "Ma §ao Th¹ch 1", {2,1,30428,3}, 15 * 24 * 3600},
 					{1, 1212, "Ma §ao Th¹ch 2", {2,1,30429,3}, 15 * 24 * 3600},					

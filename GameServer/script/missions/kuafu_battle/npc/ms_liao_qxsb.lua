@@ -18,9 +18,9 @@ function main()
 				return 0;
 			end
 			if nX == 1864 and nY == 3331 then
-				tinsert(tSay, format("§­a ta ®Õn tr­íc ®¹i doanh/#KF_TransmitPlayer(%d,%d,%d)", 0, 1850, 3360));
+				tinsert(tSay, format("Take me to the front main camp/#KF_TransmitPlayer(%d,%d,%d)", 0, 1850, 3360));
 			else
-				tinsert(tSay, format("§­a ta ®Õn bªn gÇn ®¹i doanh/#KF_TransmitPlayer(%d,%d,%d)", 0, 1843, 3243));
+				tinsert(tSay, format("Take me near the main camp/#KF_TransmitPlayer(%d,%d,%d)", 0, 1843, 3243));
 			end
 			local tRevivePos = {
 				[1] = {1606, 3309, "C¶nh M«n TrËn Kú"},
@@ -38,7 +38,7 @@ function main()
 			}
 			for i = 1, getn(tTemp) do
 				if GetMissionV(tTemp[i]) == nCamp then
-					tinsert(tSay, format("§­a ta ®Õn %s/#KF_TransmitPlayer(%d,%d,%d)", tRevivePos[i][3], i, tRevivePos[i][1], tRevivePos[i][2]));
+					tinsert(tSay, format("Take me to %s/#KF_TransmitPlayer(%d,%d,%d)", tRevivePos[i][3], i, tRevivePos[i][1], tRevivePos[i][2]));
 				end
 			end
 			--ÐÂÔö°²È«´«ËÍ

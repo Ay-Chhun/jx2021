@@ -33,13 +33,13 @@ szBKLBLogAction = "nhËn th­ëng"
 
 tb_golden_faction =
 {
-	"ThiÕu L©m",
-	"Vâ §ang",
+	"Shaolin",
+	"Wudang",
 	"Nga My",
-	"C¸i Bang",
+	"Beggars' Sect",
 	"§­êng M«n",
 	"D­¬ng Gia",
-	"Ngò §éc",
+	"Five Poisons",
 }
 
 
@@ -68,20 +68,20 @@ tb_thuongung_suite = {
 
 tb_golden_faction_tree =
 {
-		[2] =  {"ThiÕu L©m tôc gia", 0, 20, 21, 23, "Kim Cang Phôc Ma T©m Ph¸p", {0,107,2,1}, "Kim Cang Phôc Ma kinh", {0,107,1,1}, "Kim Cang B¸t Nh· Kinh", {0,107,166,3}, "Kim Cang B¸t Nh· Ch©n QuyÓn ", {0, 107, 204, 3}}, 
-		[3] =  {"ThiÕu L©m thiÒn t¨ng", 2, 45, 46, 0, "V« TrÇn T©m Ph¸p", {0,107,6,1}, "V« TrÇn MËt tÞch", {0,107,5,1}, "V« TrÇn Bå §Ò Kinh", {0,107,168,3}, "V« TrÇn Bå §Ò Ch©n QuyÓn", {0, 107, 206, 3}}, 
-		[4] =  {"ThiÕu L©m vâ t«ng", 1, 33, 34, 0, "TiÒm Long T©m Ph¸p", {0,107,4,1}, "TiÒm Long MËt tÞch", {0,107,3,1}, "TiÒm Long TÞch DiÖt Kinh", {0,107,167,3},"TiÒm Long Tóc DiÖt Ch©n QuyÓn", {0, 107, 205, 3}}, 
-		[14] =  {"Vâ §ang ®¹o gia", 8, 125, 126, 0, "HuyÒn ¶nh T©m Ph¸p", {0,107,18,1}, "HuyÒn ¶nh MËt tÞch", {0,107,17,1}, "HuyÔn ¶nh Mª Tung MËt TÞch", {0,107,174,3},"HuyÒn ¶nh Mª T«ng Ch©n QuyÓn", {0, 107, 212, 3}}, 
-		[15] =  {"Vâ §ang tôc gia", 9, 147, 148, 0, "Qu©n Tö T©m Ph¸p", {0,107,20,1}, "Qu©n Tö MËt tÞch", {0,107,19,1}, "Qu©n Tö TiÖt Phong MËt TÞch", {0,107,175,3},"Qu©n Tö §íi Phong Ch©n QuyÓn", {0, 107, 213, 3}}, 
-		[8] =  {"Nga My phËt gia", 4, 75, 76, 0, "Nh­ ý T©m Ph¸p", {0,107,10,1}, "Nh­ ý MËt TÞch", {0,107,9,1}, "Nh­ ý Kim §Ønh MËt TÞch", {0,107,170,3}, "Nh­ ý Kim §Ønh Ch©n QuyÓn", {0, 107, 208, 3}}, 
-		[9] =  {"Nga My tôc gia", 5, 90, 91, 0, "BÝch H¶i T©m Ph¸p", {0,107,12,1}, "BÝch H¶i Phæ", {0,107,11,1}, "BÝch H¶i TuyÖt ¢m Phæ", {0,107,171,3}, "BÝch H¶i TuyÖt ¢m Ch©n QuyÓn", {0, 107, 209, 3}}, 
-		[11] =  {"C¸i Bang tÜnh y", 6, 103, 104, 0, "Hçn §én T©m Ph¸p", {0,107,14,1}, "Hçn §én MËt tÞch", {0,107,13,1}, "Hçn §én TrÊn Nh¹c MËt TÞch", {0,107,172,3}, "Hçn §én TrÊn Nh¹c Ch©n QuyÓn", {0, 107, 210, 3}}, 
-		[12] =  {"C¸i Bang « y", 7, 114, 115, 0, "Quý Thiªn T©m Ph¸p", {0,107,16,1}, "Quý Thiªn MËt tÞch", {0,107,15,1}, "Quü Thiªn Du Long MËt TÞch", {0,107,173,3}, "Quú Thiªn Du Long Ch©n QuyÓn", {0, 107, 211, 3}}, 
+		[2] =  {"Shaolin Lay Branch", 0, 20, 21, 23, "Kim Cang Phôc Ma T©m Ph¸p", {0,107,2,1}, "Vajra Demon-Subduing Sutra", {0,107,1,1}, "Kim Cang Bat Nha Kinh", {0,107,166,3}, "Vajra Prajna True Manual", {0, 107, 204, 3}}, 
+		[3] =  {"ThiÕu L©m thiÒn t¨ng", 2, 45, 46, 0, "V« TrÇn T©m Ph¸p", {0,107,6,1}, "V« TrÇn MËt tÞch", {0,107,5,1}, "Vo Tran Bo De Kinh", {0,107,168,3}, "Dustless Bodhi True Manual", {0, 107, 206, 3}}, 
+		[4] =  {"Shaolin Martial Sect", 1, 33, 34, 0, "TiÒm Long T©m Ph¸p", {0,107,4,1}, "TiÒm Long MËt tÞch", {0,107,3,1}, "TiÒm Long TÞch DiÖt Kinh", {0,107,167,3},"Hidden Dragon Annihilation True Manual", {0, 107, 205, 3}}, 
+		[14] =  {"Wudang Daoist Branch", 8, 125, 126, 0, "HuyÒn ¶nh T©m Ph¸p", {0,107,18,1}, "HuyÒn ¶nh MËt tÞch", {0,107,17,1}, "HuyÔn ¶nh Mª Tung MËt TÞch", {0,107,174,3},"HuyÒn ¶nh Mª T«ng Ch©n QuyÓn", {0, 107, 212, 3}}, 
+		[15] =  {"Wudang Lay Branch", 9, 147, 148, 0, "Qu©n Tö T©m Ph¸p", {0,107,20,1}, "Qu©n Tö MËt tÞch", {0,107,19,1}, "Qu©n Tö TiÖt Phong MËt TÞch", {0,107,175,3},"Gentleman Welcomes the Wind True Manual", {0, 107, 213, 3}}, 
+		[8] =  {"Emei Buddhist Branch", 4, 75, 76, 0, "Nh­ ý T©m Ph¸p", {0,107,10,1}, "Nh­ ý MËt TÞch", {0,107,9,1}, "Nh­ ý Kim §Ønh MËt TÞch", {0,107,170,3}, "Wishful Golden Top True Manual", {0, 107, 208, 3}}, 
+		[9] =  {"Emei Lay Branch", 5, 90, 91, 0, "BÝch H¶i T©m Ph¸p", {0,107,12,1}, "Azure Sea Score", {0,107,11,1}, "Azure Sea Silent Sound Score", {0,107,171,3}, "Azure Sea Silent Sound True Manual", {0, 107, 209, 3}}, 
+		[11] =  {"Beggars' Sect Calm Robe", 6, 103, 104, 0, "Hçn §én T©m Ph¸p", {0,107,14,1}, "Hçn §én MËt tÞch", {0,107,13,1}, "Hçn §én TrÊn Nh¹c MËt TÞch", {0,107,172,3}, "Chaos Town Mountain True Manual", {0, 107, 210, 3}}, 
+		[12] =  {"Beggars' Sect Black Robe", 7, 114, 115, 0, "Quý Thiªn T©m Ph¸p", {0,107,16,1}, "Quý Thiªn MËt tÞch", {0,107,15,1}, "Quü Thiªn Du Long MËt TÞch", {0,107,173,3}, "Quú Thiªn Du Long Ch©n QuyÓn", {0, 107, 211, 3}}, 
 		[6] =  {"§­êng M«n", 3, 58, 60, 0, "Thiªn La T©m Ph¸p", {0,107,8,1}, "Thiªn La MËt TÞch", {0,107,7,1}, "Thiªn La Liªn Ch©u Lôc", {0,107,169,3}, "Thiªn La Liªn Ch©u Ch©n QuyÓn", {0, 107, 207, 3}}, 
-		[17] =  {"D­¬ng Gia th­¬ng", 10, 720, 0, 0, "TrÊn Qu©n T©m Ph¸p", {0,107,22,1}, "TrÊn Qu©n MËt tÞch", {0,107,21,1}, "TrÊn Qu©n Phi Long Th­¬ng Phæ", {0,107,176,3}, "TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn", {0, 107, 214, 3}}, 
+		[17] =  {"D­¬ng Gia th­¬ng", 10, 720, 0, 0, "TrÊn Qu©n T©m Ph¸p", {0,107,22,1}, "TrÊn Qu©n MËt tÞch", {0,107,21,1}, "Tran Quan Phi Long Thuong Manual", {0,107,176,3}, "Town Army Flying Dragon Spear True Manual", {0, 107, 214, 3}}, 
 		[18] =  {"D­¬ng Gia cung", 11, 733, 0, 0, "Xuyªn V©n T©m Ph¸p", {0,107,24,1}, "Xuyªn V©n MËt tÞch", {0,107,23,1}, "Xuyªn V©n L¹c Hång MËt TÞch", {0,107,177,3}, "Xuyªn V©n L¹c Hång Ch©n QuyÓn", {0, 107, 215, 3}}, 
-		[20] = {"Ngò §éc hiÖp ®éc", 12, 13, 364, 365, "U Minh T©m Ph¸p", {0,107,26,1}, "U Minh Quû Lôc", {0,107,25,1}, "U Minh Phong Ma Lôc", {0,107,178,3}, "HuyÒn Minh Phong Ma Ch©n QuyÓn", {0, 107, 216, 3}}, 
-		[21] = {"Ngò §éc tµ ®éc", 13, 14, 347, 351, "Linh Cæ T©m Ph¸p", {0,107,28,1}, "Linh Cæ MËt tÞch", {0,107,27,1}, "Linh Cæ HuyÔn Tµ Lôc", {0,107,179,3}, "Linh Cæ HuyÒn Tµ Ch©n QuyÓn", {0, 107, 217, 3}}, 
+		[20] = {"Ngò §éc hiÖp ®éc", 12, 13, 364, 365, "U Minh T©m Ph¸p", {0,107,26,1}, "Nether Ghost Record", {0,107,25,1}, "U Minh Phong Ma Manual", {0,107,178,3}, "HuyÒn Minh Phong Ma Ch©n QuyÓn", {0, 107, 216, 3}}, 
+		[21] = {"Five Poisons evil poison", 13, 14, 347, 351, "Linh Cæ T©m Ph¸p", {0,107,28,1}, "Linh Cæ MËt tÞch", {0,107,27,1}, "Linh Co Huyen Ta Manual", {0,107,179,3}, "Linh Cæ HuyÒn Tµ Ch©n QuyÓn", {0, 107, 217, 3}}, 
 		[23] = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "Cöu Thiªn L«i Phong QuyÕt", {0,107,198,3}, "Cöu Thiªn L«i Phong Ch©n QuyÓn", {0,107,218,3}},
 		[29] = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "Hång TrÇn Tóy Méng Phæ", {0,107,202,3}, "Hång TrÇn Tóy Méng Ch©n QuyÓn", {0,107,222,3}},
 		[30] = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "Phong Hoa Thiªn DiÖp Phæ", {0,107,203,3}, "Phong Hoa Thiªn DiÖp Ch©n QuyÓn", {0,107,223,3}},
@@ -224,9 +224,9 @@ tb_golden_jew_dau = {
 
 -- golden weekday award
 tb_golden_material_goldenday_BKL = {
-				[7] = {"Gç Qu©n Dông", {2,0,308}, 720, 1, 1, 19},
+				[7] = {"Wood Military Supplies", {2,0,308}, 720, 1, 1, 19},
 				[8] = {"Qu©n C«ng Ch­¬ng", {2,1,9999}, 720, 1, 2, 47},
-				[9] = {"B¸t Nh· nhá", {2,0,504}, 720, 2, 4, 59},				
+				[9] = {"small Prajna", {2,0,504}, 720, 2, 4, 59},				
 }
 
 -- 1 item, 2 table
@@ -254,7 +254,7 @@ tb_golden_weapon_bpy_low = {
 				[12] = {"L­u Yªn c«n",{0,5,6009, 1,1,-1,-1,-1,-1,-1,-1}},
 				[14] = {"HuyÒn Yªn kiÕm",{0,2,6010, 1,1,-1,-1,-1,-1,-1,-1}},
 				[15] = {"Vò Yªn bót",{0,9,6011, 1,1,-1,-1,-1,-1,-1,-1}},
-				[17] = {"Hµ Tiªm Th­¬ng",{0,6,6012, 1,1,-1,-1,-1,-1,-1,-1}},
+				[17] = {"He Tian Spear",{0,6,6012, 1,1,-1,-1,-1,-1,-1,-1}},
 				[18] = {"Hµnh Yªn Cung",{0,4,6013, 1,1,-1,-1,-1,-1,-1,-1}},
 				[20] = {"Träc Yªn nhÉn",{0,7,6014, 1,1,-1,-1,-1,-1,-1,-1}},
 				[21] = {"Yªu Yªn tr¶o",{0,11,6015, 1,1,-1,-1,-1,-1,-1,-1}},
@@ -271,7 +271,7 @@ tb_golden_weapon_bpy_med = {
 				[12] = {"L­u Yªn c«n",{0,5,6009, 1,1,3,268,7,265,7,266}},
 				[14] = {"HuyÒn Yªn kiÕm",{0,2,6010, 1,1,6,86,7,267,7,266}},
 				[15] = {"Vò Yªn bót",{0,9,6011, 1,1,3,268,7,266,7,265}},
-				[17] = {"Hµ Tiªm Th­¬ng",{0,6,6012, 1,1,6,85,7,264,7,263}},
+				[17] = {"He Tian Spear",{0,6,6012, 1,1,6,85,7,264,7,263}},
 				[18] = {"Hµnh Yªn Cung",{0,4,6013, 1,1,3,268,7,265,7,264}},
 				[20] = {"Träc Yªn nhÉn",{0,7,6014, 1,1,4,281,7,265,7,264}},
 				[21] = {"Yªu Yªn tr¶o",{0,11,6015, 1,1,5,285,7,266,7,267}},
@@ -281,53 +281,53 @@ tb_golden_weapon_tq_med = {
 				[2]  = {"Tö Quang To¸i Vò §ao",{0,3,8851, 1,1,-1,-1,-1,-1,-1,-1}},
 				[3]  = {"Tö Quang Cöu Nh­ Tr­îng",{0,8,8853, 1,1,-1,-1,-1,-1,-1,-1}},
 				[4]  = {"Tö Quang H¹o Nhiªn Thñ",{0,0,8854, 1,1,-1,-1,-1,-1,-1,-1}},
-				[6]  = {"Tö Quang V« H×nh Ch©m",{0,1,8855, 1,1,-1,-1,-1,-1,-1,-1}},
+				[6]  = {"Purple Light Invisible Needle",{0,1,8855, 1,1,-1,-1,-1,-1,-1,-1}},
 				[8]  = {"Tö Quang Tö Tinh KiÕm",{0,2,8856, 1,1,-1,-1,-1,-1,-1,-1}},
 				[9]  = {"Tö Quang Phông Hoµng CÇm",{0,10,8857, 1,1,-1,-1,-1,-1,-1,-1}},
 				[11] = {"Tö Quang Ngò Nh¹c Thñ",{0,0,8858, 1,1,-1,-1,-1,-1,-1,-1}},
 				[12] = {"Tö Quang Ph¸ Thiªn C«n",{0,5,8859, 1,1,-1,-1,-1,-1,-1,-1}},
 				[14] = {"Tö Quang Hång Qu©n KiÕm",{0,2,8860, 1,1,-1,-1,-1,-1,-1,-1}},
-				[15] = {"Tö Quang Sinh Tö Bót",{0,9,8861, 1,1,-1,-1,-1,-1,-1,-1}},
-				[17] = {"Tö Quang Ph¸ Qu©n Th­¬ng",{0,6,8862, 1,1,-1,-1,-1,-1,-1,-1}},
+				[15] = {"Purple Light Life-Death Brush",{0,9,8861, 1,1,-1,-1,-1,-1,-1,-1}},
+				[17] = {"Purple Light Army-Breaking Spear",{0,6,8862, 1,1,-1,-1,-1,-1,-1,-1}},
 				[18] = {"Tö Quang Khai Thiªn Cung",{0,4,8863, 1,1,-1,-1,-1,-1,-1,-1}},
 				[20] = {"Tö Quang ¢m D­¬ng NhÉn",{0,7,8864, 1,1,-1,-1,-1,-1,-1,-1}},
-				[21] = {"Tö Quang U Minh Tr¶o",{0,11,8865, 1,1,-1,-1,-1,-1,-1,-1}},
+				[21] = {"Purple Light Underworld Claw",{0,11,8865, 1,1,-1,-1,-1,-1,-1,-1}},
 };
 
 -- tªn item thu thËp, item ID, h¹t gièng, vµng, mÆt n¹ s¸t thñ ®­êng, tr¸i c©y
 tb_everyday_award_BKL = {
 	[1] = {	-- Th¸i dÞch, h¹t gièng, yÕu quyÕt, vµng, tr¸i c©y (cét 7)
-				[7] = {1, 1, 1, 10, "Dõa", {2,1,30167,1}, 1},	
-				[8] = {1, 5, 5, 60, "Dõa", {2,1,30167,4}, 5},	
-				[9] = {3, 6, 8, 80, "Dõa", {2,1,30167,6}, 8},
+				[7] = {1, 1, 1, 10, "Coconut", {2,1,30167,1}, 1},	
+				[8] = {1, 5, 5, 60, "Coconut", {2,1,30167,4}, 5},	
+				[9] = {3, 6, 8, 80, "Coconut", {2,1,30167,6}, 8},
 	},
 	[2] = {
-				[7] = {1, 1, 1, 20, "M·ng cÇu", {2,1,30179,1}, 1},	
-				[8] = {2, 4, 4, 66, "M·ng cÇu", {2,1,30179,2}, 4},	
-				[9] = {3, 5, 6, 79, "M·ng cÇu", {2,1,30179,4}, 6},
+				[7] = {1, 1, 1, 20, "Soursop", {2,1,30179,1}, 1},	
+				[8] = {2, 4, 4, 66, "Soursop", {2,1,30179,2}, 4},	
+				[9] = {3, 5, 6, 79, "Soursop", {2,1,30179,4}, 6},
 	},
 }
 tb_everyday_fruit_BKL = {
-				[0] = {30164,"Nh·n"},
-				[1] = {30165,"Ch«m Ch«m"},
+				[0] = {30164,"Longan"},
+				[1] = {30165,"Rambutan"},
 				[2] = {30166,"Cam"},
-				[3] = {30167,"Dõa"},
-				[4] = {30168,"M¨ng côt"},
-				[5] = {30169,"B­ëi"},
-				[6] = {30170,"D©u"},
-				[7] = {30171,"Chuèi"},
-				[8] = {30172,"Xoµi"},
-				[9] = {30173,"§µo"},
-				[10] = {30174,"MËn"},
-				[11] = {30175,"V¶i"},
-				[12] = {30176,"T¸o"},
-				[13] = {30177,"B¬"},
-				[14] = {30178,"§u §ñ"},
-				[15] = {30179,"M·ng CÇu"},
-				[16] = {30180,"Khãm"},
-				[17] = {30181,"Lª"},
-				[18] = {30182,"Bßn Bon"},
-				[19] = {30183,"KhÕ"},
+				[3] = {30167,"Coconut"},
+				[4] = {30168,"Mangosteen"},
+				[5] = {30169,"Pomelo"},
+				[6] = {30170,"Strawberry"},
+				[7] = {30171,"Banana"},
+				[8] = {30172,"Mango"},
+				[9] = {30173,"Peach"},
+				[10] = {30174,"Plum"},
+				[11] = {30175,"Lychee"},
+				[12] = {30176,"Apple"},
+				[13] = {30177,"Avocado"},
+				[14] = {30178,"Papaya"},
+				[15] = {30179,"Soursop"},
+				[16] = {30180,"Pineapple"},
+				[17] = {30181,"Li"},
+				[18] = {30182,"Langsat"},
+				[19] = {30183,"Star Fruit"},
 }
 -- Thªm b¶ng tu ch©n yÕu quyÕt 
 tb_everyday_award_TCYQ_BKL = {
@@ -345,37 +345,37 @@ tb_everyday_award_TCYQ_BKL = {
 }
 
 tb_golden_skillbag = {
-				[2] = {"Tói bÝ kiÕp ThiÕu L©m", {2, 0, 607, 3, 4}},
-				[3] = {"Tói bÝ kiÕp ThiÕu L©m", {2, 0, 607, 3, 4}},
-				[4] = {"Tói bÝ kiÕp ThiÕu L©m", {2, 0, 607, 3, 4}},
+				[2] = {"Shaolin secret manual bag", {2, 0, 607, 3, 4}},
+				[3] = {"Shaolin secret manual bag", {2, 0, 607, 3, 4}},
+				[4] = {"Shaolin secret manual bag", {2, 0, 607, 3, 4}},
 				[6] = {"Tói bÝ kiÕp §­êng M«n", {2, 0, 608, 3, 4}},
-				[8] = {"Tói bÝ kiÕp Nga My", {2, 0, 609, 3, 4}},
-				[9] = {"Tói bÝ kiÕp Nga My", {2, 0, 609, 3, 4}},
-				[11] = {"Tói bÝ kiÕp C¸i Bang", {2, 0, 610, 3, 4}},
-				[12] = {"Tói bÝ kiÕp C¸i Bang", {2, 0, 610, 3, 4}},
-				[14] = {"Tói bÝ kiÕp Vâ §ang", {2, 0, 611, 3, 4}},
-				[15] = {"Tói bÝ kiÕp Vâ §ang", {2, 0, 611, 3, 4}},
+				[8] = {"Emei secret manual bag", {2, 0, 609, 3, 4}},
+				[9] = {"Emei secret manual bag", {2, 0, 609, 3, 4}},
+				[11] = {"Beggars' Sect secret manual bag", {2, 0, 610, 3, 4}},
+				[12] = {"Beggars' Sect secret manual bag", {2, 0, 610, 3, 4}},
+				[14] = {"Wudang secret manual bag", {2, 0, 611, 3, 4}},
+				[15] = {"Wudang secret manual bag", {2, 0, 611, 3, 4}},
 				[17] = {"Tói bÝ kiÕp D­¬ng M«n", {2, 0, 612, 3, 4}},
 				[18] = {"Tói bÝ kiÕp D­¬ng M«n", {2, 0, 612, 3, 4}},
-				[20] = {"Tói bÝ kiÕp Ngò §éc", {2, 0, 613, 3, 4}},
-				[21] = {"Tói bÝ kiÕp Ngò §éc", {2, 0, 613, 3, 4}}
+				[20] = {"Five Poisons secret manual bag", {2, 0, 613, 3, 4}},
+				[21] = {"Five Poisons secret manual bag", {2, 0, 613, 3, 4}}
 }
 
 tb_golden_book_high = {
-				[2] = {"DÞch C©n Kinh-th­îng", {2, 1, 916, 1}},
+				[2] = {"Tendon-Changing Classic - upper", {2, 1, 916, 1}},
 				[4] = {"Nh­ Lai ThÇn Ch­ëng-th­îng", {2, 1, 919, 1}},
-				[3] = {"TÈy Tñy Kinh-th­îng", {2, 1, 922, 1}},
+				[3] = {"Marrow-Cleansing Classic - upper", {2, 1, 922, 1}},
 				[6] = {"HÊp Tinh TrËn-th­îng", {2, 1, 925, 1}},
 				[8] = {"V¹n T­íng ThÇn C«ng-th­îng", {2, 1, 928, 1}},
 				[9] = {"Thiªn ¢m TrÊn Hån Khóc-th­îng", {2, 1, 931, 1}},
-				[11] = {"Gi¸ng Long ThËp B¸t Ch­ëng-th­îng", {2, 1, 934, 1}},
+				[11] = {"Eighteen Dragon-Subduing Palms - upper", {2, 1, 934, 1}},
 				[12] = {"§¶ CÈu C«n TrËn-th­îng", {2, 1, 937, 1}},
 				[14] = {"V« Th­îng Th¸i Cùc KiÕm-th­îng", {2, 1, 940, 1}},
 				[15] = {"Th¸i Cùc ThÇn C«ng-th­îng", {2, 1, 943, 1}},
-				[17] = {"Liªn Hoµn Toµn Long Th­¬ng-th­îng", {2, 1, 946, 1}},
+				[17] = {"Chained Coiling Dragon Spear - upper", {2, 1, 946, 1}},
 				[18] = {"B¸ V­¬ng T­êng Phông TiÔn-th­îng", {2, 1, 949, 1}},
 				[20] = {"V« Thiªn Ma C«ng-th­îng", {2, 1, 955, 1}},
-				[21] = {"V« ¶nh Ma Cæ-th­îng", {2, 1, 952, 1}},
+				[21] = {"Shadowless Demon Drum - upper", {2, 1, 952, 1}},
 }
 
 tb_golden_book_med = {
@@ -396,17 +396,17 @@ tb_golden_book_med = {
 }
 
 tb_golden_book_all = {
-				[2] = {"DÞch C©n Kinh", {0, 112, 101, 1}},		
+				[2] = {"Sinew Transformation Classic", {0, 112, 101, 1}},		
 				[4] = {"Nh­ Lai ThÇn Ch­ëng", {0, 112, 102, 1}},		
-				[3] = {"TÈy Tñy Kinh", {0, 112, 103, 1}},		
+				[3] = {"Marrow Cleansing Classic", {0, 112, 103, 1}},		
 				[6] = {"HÊp Tinh TrËn", {0, 112, 104, 1}},		
 				[8] = {"V¹n T­íng ThÇn C«ng", {0, 112, 105, 1}},		
 				[9] = {"Thiªn ¢m TrÊn Hån Khóc", {0, 112, 106, 1}},		
-				[11] = {"Gi¸ng Long ThËp B¸t Ch­ëng", {0, 112, 107, 1}},		
+				[11] = {"Eighteen Dragon Subduing Palms", {0, 112, 107, 1}},		
 				[12] = {"§¶ CÈu C«n TrËn", {0, 112, 108, 1}},		
 				[14] = {"V« Th­îng Th¸i Cùc KiÕm", {0, 112, 109, 1}},		
 				[15] = {"Th¸i Cùc ThÇn C«ng", {0, 112, 110, 1}},		
-				[17] = {"Liªn Hoµn Toµn Long Th­¬ng", {0, 112, 111, 1}},		
+				[17] = {"Linked Coiling Dragon Spear", {0, 112, 111, 1}},		
 				[18] = {"B¸ V­¬ng T­êng Phông TiÔn", {0, 112, 112, 1}},		
 				[20] = {"V« Thiªn Ma C«ng", {0, 112, 113, 1}},		
 				[21] = {"V« ¶nh Ma Cæ", {0, 112, 114, 1}},		
@@ -415,17 +415,17 @@ tb_golden_book_all = {
 				[30] = {"Hoa Tiªn T©m Kinh", {0,112,197,1}},				
 }
 tb_golden_book_gaojimiji_faction = {
-				[2] = {"Kim Cang B¸t Nh· Ch©n QuyÓn ", {0, 107, 204, 1}},		
-				[4] = {"TiÒm Long Tóc DiÖt Ch©n QuyÓn", {0, 107, 205, 1}},
-				[3] = {"V« TrÇn Bå §Ò Ch©n QuyÓn", {0, 107, 206, 1}},		
+				[2] = {"Vajra Prajna True Manual", {0, 107, 204, 1}},		
+				[4] = {"Hidden Dragon Annihilation True Manual", {0, 107, 205, 1}},
+				[3] = {"Dustless Bodhi True Manual", {0, 107, 206, 1}},		
 				[6] = {"Thiªn La Liªn Ch©u Ch©n QuyÓn", {0, 107, 207,1 }},		
-				[8] = {"Nh­ ý Kim §Ønh Ch©n QuyÓn", {0, 107, 208, 1}},		
-				[9] = {"BÝch H¶i TuyÖt ¢m Ch©n QuyÓn", {0, 107, 209, 1}},		
-				[11] = {"Hçn §én TrÊn Nh¹c Ch©n QuyÓn", {0, 107, 210, 1}},		
+				[8] = {"Wishful Golden Top True Manual", {0, 107, 208, 1}},		
+				[9] = {"Azure Sea Silent Sound True Manual", {0, 107, 209, 1}},		
+				[11] = {"Chaos Town Mountain True Manual", {0, 107, 210, 1}},		
 				[12] = {"Quú Thiªn Du Long Ch©n QuyÓn", {0, 107, 211, 1}},		
 				[14] = {"HuyÒn ¶nh Mª T«ng Ch©n QuyÓn", {0, 107, 212, 1}},		
-				[15] = {"Qu©n Tö §íi Phong Ch©n QuyÓn", {0, 107, 213, 1}},		
-				[17] = {"TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn", {0, 107, 214, 1}},		
+				[15] = {"Gentleman Welcomes the Wind True Manual", {0, 107, 213, 1}},		
+				[17] = {"Town Army Flying Dragon Spear True Manual", {0, 107, 214, 1}},		
 				[18] = {"Xuyªn V©n L¹c Hång Ch©n QuyÓn", {0, 107, 215, 1}},		
 				[20] = {"HuyÒn Minh Phong Ma Ch©n QuyÓn", {0, 107, 216, 1}},		
 				[21] = {"Linh Cæ HuyÒn Tµ Ch©n QuyÓn", {0, 107, 217, 1}},		
@@ -435,17 +435,17 @@ tb_golden_book_gaojimiji_faction = {
 }
 -- MËt tÞch cao cÊp 70
 tb_golden_book_gaojimiji = {
-	{1, 888, "Kim Cang B¸t Nh· Ch©n QuyÓn ", {0, 107, 204, 1}, 0},
-	{1, 568, "TiÒm Long Tóc DiÖt Ch©n QuyÓn", {0, 107, 205, 1}, 0},
-	{1, 714, "V« TrÇn Bå §Ò Ch©n QuyÓn", {0, 107, 206, 1}, 0},
+	{1, 888, "Vajra Prajna True Manual", {0, 107, 204, 1}, 0},
+	{1, 568, "Hidden Dragon Annihilation True Manual", {0, 107, 205, 1}, 0},
+	{1, 714, "Dustless Bodhi True Manual", {0, 107, 206, 1}, 0},
 	{1, 888, "Thiªn La Liªn Ch©u Ch©n QuyÓn", {0, 107, 207, 1}, 0},
-	{1, 568, "Nh­ ý Kim §Ønh Ch©n QuyÓn", {0, 107, 208, 1}, 0},
-	{1, 568, "BÝch H¶i TuyÖt ¢m Ch©n QuyÓn", {0, 107, 209, 1}, 0},
-	{1, 888, "Hçn §én TrÊn Nh¹c Ch©n QuyÓn", {0, 107, 210, 1}, 0},
+	{1, 568, "Wishful Golden Top True Manual", {0, 107, 208, 1}, 0},
+	{1, 568, "Azure Sea Silent Sound True Manual", {0, 107, 209, 1}, 0},
+	{1, 888, "Chaos Town Mountain True Manual", {0, 107, 210, 1}, 0},
 	{1, 668, "Quú Thiªn Du Long Ch©n QuyÓn", {0, 107, 211, 1}, 0},
 	{1, 668, "HuyÒn ¶nh Mª T«ng Ch©n QuyÓn", {0, 107, 212, 1}, 0},
-	{1, 714, "Qu©n Tö §íi Phong Ch©n QuyÓn", {0, 107, 213, 1}, 0},
-	{1, 668, "TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn", {0, 107, 214, 1}, 0},
+	{1, 714, "Gentleman Welcomes the Wind True Manual", {0, 107, 213, 1}, 0},
+	{1, 668, "Town Army Flying Dragon Spear True Manual", {0, 107, 214, 1}, 0},
 	{1, 668, "Xuyªn V©n L¹c Hång Ch©n QuyÓn", {0, 107, 215, 1}, 0},
 	{1, 888, "HuyÒn Minh Phong Ma Ch©n QuyÓn", {0, 107, 216, 1}, 0},
 	{1, 644, "Linh Cæ HuyÒn Tµ Ch©n QuyÓn", {0, 107, 217, 1}, 0},
@@ -519,7 +519,7 @@ tbOpenBoxTimes = {1,8,12,16}
 tbChangeAccumulateVLTB = 
 {
 	[1] = {130,"§Þnh Hån Thiªn Th¹ch",{2,1,1067,1,4},7*24*3600 },
-	[2] = { 130,"L¨ng Ba Vi Bé",{0,112,78,1,4}},
+	[2] = { 130,"Lingbo Microstep",{0,112,78,1,4}},
 	[3] = {90,"N÷ Oa Tinh Th¹ch",{2,1,504,8,4},7*24*3600},
 	[4] = {50,"Nãn S­ m«n bé 4"},
 	[5] = {50,"Aã S­ m«n bé 4"},
@@ -542,15 +542,15 @@ tbChangeAccumulateVLTBBKL =
 	[8] = {390,"N÷ Oa Tinh Th¹ch",{2,1,504,12,4},15*24*3600},
 	[9] = {150,"§Þnh Hån Thiªn Th¹ch",{2,1,1067,1,1},7*24*3600 },
 --	[10] ={450,"Th­¬ng ¦ng Tiªn Phong - Phï"},
-	[11] = {300,"ChuyÓn Sinh §¬n",{2,1,30345,1,1},60*24*3600 },
-	[12] = {50,"L¨ng Ba Vi Bé",{0,112,78,1,1}},
+	[11] = {300,"Rebirth Pill",{2,1,30345,1,1},60*24*3600 },
+	[12] = {50,"Lingbo Microstep",{0,112,78,1,1}},
 	[13] = {1650,"Ma Tinh",{2,1,30497,500,4}},	
 	[14] = {200,"Cæ Linh Th¹ch",{2,1,30368,200,1}},		
 	[15] = {300,"Cæ Linh Ngäc",{2,1,30369,200,1}},		
-	[16] = {110,"C­êng Hãa QuyÓn CÊp 12",{2,1,30424,10,1}},	
-	[17] = {250,"C­êng Hãa QuyÓn CÊp 13",{2,1,30425,10,1}},	
-	[18] = {550,"C­êng Hãa QuyÓn CÊp 14",{2,1,30426,10,1}},	
-	[19] = {1200,"C­êng Hãa QuyÓn CÊp 15",{2,1,30427,10,1}},		
+	[16] = {110,"Enhancement Volume Level 12",{2,1,30424,10,1}},	
+	[17] = {250,"Enhancement Volume Level 13",{2,1,30425,10,1}},	
+	[18] = {550,"Enhancement Volume Level 14",{2,1,30426,10,1}},	
+	[19] = {1200,"Enhancement Volume Level 15",{2,1,30427,10,1}},		
 --	[20] = {"Danh hiÖu TuyÖt ThÕ Cao Nh©n"},	
 }
 tbHaoNguyet_Ao_BKL = {
@@ -772,7 +772,7 @@ function GetTQVD()
 	if nRand <= 55 then
 		gf_AddItemEx2({0,103,8050 + nBody,1,1,-1,-1,-1,-1,-1,-1}, "Tö Quang Viªm §Õ Kh«i", szBKLBLogHeader, "nhËn ®­îc")
 	elseif nRand <= 99 then
-		gf_AddItemEx2({0,101,8050 + nBody,1,1,-1,-1,-1,-1,-1,-1}, "Tö Quang Viªm §Õ Trang", szBKLBLogHeader, "nhËn ®­îc")
+		gf_AddItemEx2({0,101,8050 + nBody,1,1,-1,-1,-1,-1,-1,-1}, "Ziguang Yandi Garb", szBKLBLogHeader, "nhËn ®­îc")
 	else
 		gf_AddItemEx2({0,100,8050 + nBody,1,1,-1,-1,-1,-1,-1,-1}, "Tö Quang Viªm §Õ Gi¸p", szBKLBLogHeader, "nhËn ®­îc")
 	end
@@ -938,20 +938,20 @@ function Confirm_make_shimen_tier4BKLB(nUpgradeType)
 	-- ChØ sè base cña c¸c trang bÞ theo m«n ph¸i
 	local tbShimen4Equip =
 	{
-		[2] =  {"ThiÕu L©m tôc gia", 230}, 
+		[2] =  {"Shaolin Lay Branch", 230}, 
 		[3] =  {"ThiÕu L©m thiÒn t¨ng", 330}, 
-		[4] =  {"ThiÕu L©m vâ t«ng", 430}, 
-		[14] =  {"Vâ §ang ®¹o gia", 1430}, 
-		[15] =  {"Vâ §ang tôc gia", 1530}, 
-		[8] =  {"Nga My phËt gia", 830}, 
-		[9] =  {"Nga My tôc gia", 930}, 
-		[11] =  {"C¸i Bang tÜnh y", 1130}, 
-		[12] =  {"C¸i Bang « y", 1230}, 
+		[4] =  {"Shaolin Martial Sect", 430}, 
+		[14] =  {"Wudang Daoist Branch", 1430}, 
+		[15] =  {"Wudang Lay Branch", 1530}, 
+		[8] =  {"Emei Buddhist Branch", 830}, 
+		[9] =  {"Emei Lay Branch", 930}, 
+		[11] =  {"Beggars' Sect Calm Robe", 1130}, 
+		[12] =  {"Beggars' Sect Black Robe", 1230}, 
 		[6] =  {"§­êng M«n", 630}, 
 		[17] =  {"D­¬ng Gia th­¬ng", 1730}, 
 		[18] =  {"D­¬ng Gia cung", 1830}, 
 		[20] = {"Ngò §éc hiÖp ®éc", 2030}, 
-		[21] = {"Ngò §éc tµ ®éc", 2130}, 
+		[21] = {"Five Poisons evil poison", 2130}, 
 	}
 	
 	local tbUpgradeTypes =

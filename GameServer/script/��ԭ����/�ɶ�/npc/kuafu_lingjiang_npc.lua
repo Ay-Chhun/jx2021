@@ -9,5 +9,5 @@ function main()
 		"Lo¹n chiÕn bang héi/tm_award_tong_melee",
 		"\n T¹i h¹ chØ xem qua th«i/nothing",
 	}
-	Say("<color=green> Ng­êi NhËn Th­ëng Liªn Server:<color>"..gf_GetPlayerSexName().."Muèn nhËn th­ëng liªn server nµo?", getn(tSay), tSay);
+	Say("<color=green> Cross-Server Reward Recipient:<color>"..gf_GetPlayerSexName().."Muèn nhËn th­ëng liªn server nµo?", getn(tSay), tSay);
 end

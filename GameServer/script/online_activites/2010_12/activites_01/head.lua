@@ -45,7 +45,7 @@ function VET_201012_01_JingNangDaShiJiangDialog(tbSayDialog, szSayHead)
 end
 
 function exchange_xmas_box()
-	AskClientForNumber("confirm_exchange_xmas_box", 1, 999, "SË HÈp Quµ?")
+	AskClientForNumber("confirm_exchange_xmas_box", 1, 999, "Number of Gift Boxes?")
 end
 
 function confirm_exchange_xmas_box(nCount)
@@ -301,7 +301,7 @@ function makeup_xmas_tree()
 		ModifyExp(2500000)
 		Msg2Player("NhÀn Æ≠Óc 2500000 Æi”m kinh nghi÷m")
 		gf_WriteLogEx("Hoat dong thang 12 nam 2010", "trang tr› c©y gi∏ng sinh nhÀn 2500000 exp")
-		gf_AddItemEx2({2, 1, 30264, 1}, "CÒi", "Hoat dong thang 12 nam 2010", "trang tr› c©y gi∏ng sinh nhÀn 1 CÒi")
+		gf_AddItemEx2({2, 1, 30264, 1}, "Firewood", "Hoat dong thang 12 nam 2010", "trang tr› c©y gi∏ng sinh nhÀn 1 CÒi")
 		SetTask(TSK_GIVE_EVENT_ITEM, GetTask(TSK_GIVE_EVENT_ITEM) + 1)
 	end
 end

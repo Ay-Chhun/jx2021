@@ -10,7 +10,7 @@
 	happy_zong_zi_date_TaskID = 1244
 --==============================================¹«¹²±äÁ¿¶¨ÒåÇø====================================
 	TB_zongzi_use_fun = {}
-	TB_zongzi_use_fun[1123] = {"b¸nh Ýt ng¶i h­¬ng","Cã thÓ nhËn ®­îc <color=yellow>10 v¹n*®¼ng cÊp*®¼ng cÊp/6400<color> ®iÓm kinh nghiÖm.","return zong_zi_exp_chg(100000)"}
+	TB_zongzi_use_fun[1123] = {"a few wormwood cakes","Cã thÓ nhËn ®­îc <color=yellow>10 v¹n*®¼ng cÊp*®¼ng cÊp/6400<color> ®iÓm kinh nghiÖm.","return zong_zi_exp_chg(100000)"}
 	TB_zongzi_use_fun[1124] = {"b¸nh Ýt ch©n gµ","Cã thÓ t¨ng Sinh lùc tèi ®a <color=yellow>30%<color>, duy tr× <color=yellow>10<color> phót!","return zong_zi_life_add(30,10800)"}
 	TB_zongzi_use_fun[1125] = {"b¸nh Ýt B¸c B¶o","T¨ng toµn bé n¨ng lùc<color=yellow>60<color> ®iÓm, duy tr× <color=yellow>3<color> phót.","return zong_zi_all_add(60,3240)"}
 --==============================================¹¦ÄÜÖ÷Âß¼­Çø======================================
@@ -18,8 +18,8 @@ function OnUse(goods_index)
 	local goods_id = GetItemParticular(goods_index)
 	Say("<color=green>Gîi ý <color>: Sö dông <color=yellow>"..TB_zongzi_use_fun[goods_id][1].."<color>"..TB_zongzi_use_fun[goods_id][2].."B¹n cã muèn sö dông kh«ng?",
 	2,
-	"§æi/#use_dtm("..goods_id..")",
-	"§Ó suy nghÜ/end_dialog"
+	"Exchange/#use_dtm("..goods_id..")",
+	"To reconsider/end_dialog"
 	)
 end
 function use_dtm(goods_id)

@@ -8,7 +8,7 @@ function main()
 	local tSay = {}
 	local szHeader = "Trung Thu n¨m nay nhén nhÞp thËt, nh­ng H»ng Nga ta ®ang cÇn mét sè l­îng lín b¸nh Trung Thu ®Ó tÆng cho chóng tiªn, ®¹i hiÖp cã thÓ gióp ®ì kh«ng?"
 	
-	tinsert(tSay, "TÆng B¸nh Trung Thu cho H»ng Nga (10 B¸nh Trung Thu)/give_mooncake_201009")
+	tinsert(tSay, "Give Mooncakes to Chang'e (10 Mooncakes)/give_mooncake_201009")
 	tinsert(tSay, "§Ó lóc kh¸c nhÐ, giê ta ch­a cã b¸nh/do_nothing")
 	
 	Say(szHeader, getn(tSay), tSay)
@@ -34,7 +34,7 @@ function give_mooncake_201009()
 	if DelItem(2, 1, 30236, 10) == 1 then
 		ModifyExp(2000000)
 		Msg2Player("NhËn ®­îc 2000000 ®iÓm kinh nghiÖm")
-		gf_WriteLogEx("Hoat dong thang 9 n¨m 2010", "TÆng b¸nh Trung Thu nhËn 2000000 exp")
+		gf_WriteLogEx("September 2010 activity", "TÆng b¸nh Trung Thu nhËn 2000000 exp")
 		SetTask(EVENT201009_GIVE_CAKE, GetTask(EVENT201009_GIVE_CAKE) + 1)
 		if mod(GetTask(EVENT201009_GIVE_CAKE), 10) == 3 then
 			gf_AddItemEx2({2,1,30239, 3}, "NÕn Vµng", "Hoat dong thang 9 nam 2010", "TÆng B¸nh Trung Thu nhËn NÕn Vµng", 24 * 3600)

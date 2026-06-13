@@ -14,7 +14,7 @@ tXqPos = {
 	{"§Çu",0},
 	{"Y phôc",1},
 	{"Vò khÝ",2},
-	{"H¹ y",3},
+	{"Lower Garment",3},
 	{"VÞ trÝ tïy ý",4}
 	}
 

@@ -64,7 +64,7 @@ function add_muchai(nKaoluPhase, nTimeNow)
         SetTask(VET_201009_01_TASK_MUCAI_NUM,GetTask(VET_201009_01_TASK_MUCAI_NUM)+1) --Ä¾²Ä+1
         nLeftTime = VET_201009_01_TB_KAOLU_TIME[nKaoluPhase+1]
         SetNpcLifeTime(GetTask(VET_201009_01_TASK_FLAG_KAOLU),nLeftTime) --ÖØÖÃ¿¾Â¯´æÔÚÊ±¼ä
-        StartTimeGuage("Lß n­íng", 30,0,1)
+        StartTimeGuage("Oven", 30,0,1)
     end
 end
 

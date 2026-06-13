@@ -13,8 +13,8 @@ function main()
 	end
 	local time_minuet_dis = floor((66600 - Zgc_pub_today_sec_num_rtn())/60)
 	if time_minuet_dis > 0 then
-		Msg2SubWorld("Héi Hoa S¬n"..time_minuet_dis.." phót n÷a sÏ b¾t ®Çu, c¸c anh hïng h·y nhanh chãng tham gia!")
+		Msg2SubWorld("Huashan Meeting"..time_minuet_dis.." phót n÷a sÏ b¾t ®Çu, c¸c anh hïng h·y nhanh chãng tham gia!")
 	else
-		Msg2SubWorld("Héi Hoa S¬n ®· b¾t ®Çu")
+		Msg2SubWorld("The Huashan Meeting has begun")
 	end
 end

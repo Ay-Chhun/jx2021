@@ -19,7 +19,7 @@
 Import("\\script\\lib\\task_main.lua");
 
 MAIN_TITLE = "<color=green>D­íi ®©y lµ nh÷ng sù kiÖn b¹n ®· tr¶i qua. H·y chän sù kiÖn b¹n muèn xem!<color>"
-MAIN_EXIT = "Tho¸t/pack_exit"
+MAIN_EXIT = "Exit/pack_exit"
 MAIN_BACK = "Quay l¹i/main"
 
 function main()
@@ -50,12 +50,12 @@ end;
 
 function showlist(eventID)
 
-local strMain = "Trong sù kiÖn"..CTask:GetEventText(eventID)..", b¹n cã nh÷ng tr¶i nghiÖm nh­ sau: <enter><enter>";
+local strMain = "In event"..CTask:GetEventText(eventID)..", b¹n cã nh÷ng tr¶i nghiÖm nh­ sau: <enter><enter>";
 local aryTask = CTask:EnumEventTask(eventID)
 local strTaskText = "";
 local strShowText = "";
 
-local strNever = "  <color=red>Ch­a b¾t ®Çu<color>";
+local strNever = "  <color=red>Not started<color>";
 local strNow = "  <color=green>§ang tiÕn hµnh<color>";
 local strEnd = "  <color=yellow>§· hoµn thµnh<color>";
 

@@ -191,7 +191,7 @@ function stageFight0:onTalk()
 			"\n Më ¶i thø 1: HuyÕt ChiÕn S¬n M«n/#stageFight0.gotoOne(1)",
 			"\n Më ¶i thø 1: HuyÕt ChiÕn S¬n M«n (dïng h×nh thøc gian lËn ph¶i tiªu hao Th«ng Thiªn LÖnh x2)/#stageFight0.gotoOne(2)",
 			"\n rêi ¶i/ttd_askClose",
-			"\nKÕt thóc ®èi tho¹i/nothing"
+			"\nEnd conversation/nothing"
 		};
 		if g_nDebugVersion == 1 then
 			tinsert(strtab,"T¹i h¹ muèn v­ît ¶i/ttd_tiaoguan");
@@ -210,7 +210,7 @@ function ttd_tiaoguan()
 		"¶i thø 5/#ttd_tg_choose(5)",
 		"¶i thø 6/#ttd_tg_choose(6)",
 		"¶i thø 7/#ttd_tg_choose(7)",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	}
 	Say("§ång ®¹o ®i ®©u?",
 		getn(strtab),
@@ -514,7 +514,7 @@ function stageFight1_2:onTalk()
 			"\n Më ¶i thø 2: HiÖp Lé T­¬ng Phïng/#stageFight1_2.gotoTwo(1)",
 			"\n Më ¶i thø 2: HiÖp Lé T­¬ng Phïng (dïng h×nh thøc gian lËn ph¶i tiªu hao Th«ng Thiªn LÖnh x2)/#stageFight1_2.gotoTwo(2)",
 			"\n rêi ¶i/ttd_askClose",
-			"\nKÕt thóc ®èi tho¹i/nothing"
+			"\nEnd conversation/nothing"
 		};
 		if g_nDebugVersion == 1 then
 			tinsert(strtab,"T¹i h¹ muèn v­ît ¶i/ttd_tiaoguan");
@@ -817,7 +817,7 @@ function stageFight2_3:onTalk()
 			"\n Më ¶i thø 3: Nh­ Méng Nh­îc Tiªn/#stageFight2_3.gotoThree(1)",
 			"\n Më ¶i thø 3: Nh­ Méng Nh­îc Tiªn (dïng h×nh thøc gian lËn ph¶i tiªu hao Th«ng Thiªn LÖnh x2)/#stageFight2_3.gotoThree(2)",
 			"\n rêi ¶i/ttd_askClose",
-			"\nKÕt thóc ®èi tho¹i/nothing"
+			"\nEnd conversation/nothing"
 		};
 		if g_nDebugVersion == 1 then
 			tinsert(strtab,"T¹i h¹ muèn v­ît ¶i/ttd_tiaoguan");
@@ -1118,7 +1118,7 @@ function stageFight3_4:onTalk()
 			"\n Më ¶i thø 4:  Bï Nh×n M¸u/#stageFight3_4.gotoFour(1)",
 			"\n Më ¶i thø 4: HuyÕt Nhôc Khæi Læi (dïng h×nh thøc gian lËn ph¶i tiªu hao Th«ng Thiªn LÖnh x2)/#stageFight3_4.gotoFour(2)",
 			"\n rêi ¶i/ttd_askClose",
-			"\nKÕt thóc ®èi tho¹i/nothing"
+			"\nEnd conversation/nothing"
 		};
 		if g_nDebugVersion == 1 then
 			tinsert(strtab,"T¹i h¹ muèn v­ît ¶i/ttd_tiaoguan");
@@ -1343,7 +1343,7 @@ function stageFight4_5:onTalk()
 			"\n Më ¶i thø 5:  LuyÖn Ma ThÇn L­/#stageFight4_5.gotoFive(1)",
 			"\n Më ¶i thø 5: ThÇn L­ LuyÖn Ma (dïng h×nh thøc gian lËn ph¶i tiªu hao Th«ng Thiªn LÖnh x2)/#stageFight4_5.gotoFive(2)",
 			"\n rêi ¶i/ttd_askClose",
-			"\nKÕt thóc ®èi tho¹i/nothing"
+			"\nEnd conversation/nothing"
 		};
 		if g_nDebugVersion == 1 then
 			tinsert(strtab,"T¹i h¹ muèn v­ît ¶i/ttd_tiaoguan");
@@ -1709,7 +1709,7 @@ function stageFight5_6:onTalk()
 			"\n Më ¶i thø 6: Sèng ChÕt Cïng Nhau/#stageFight5_6.gotoSix(1)",
 			"\n Më ¶i thø 6: Sinh Tö T­¬ng Y (dïng h×nh thøc gian lËn ph¶i tiªu hao Th«ng Thiªn LÖnh x2)/#stageFight5_6.gotoSix(2)",
 			"\n rêi ¶i/ttd_askClose",
-			"\nKÕt thóc ®èi tho¹i/nothing"
+			"\nEnd conversation/nothing"
 		};
 		if g_nDebugVersion == 1 then
 			tinsert(strtab,"T¹i h¹ muèn v­ît ¶i/ttd_tiaoguan");
@@ -1961,13 +1961,13 @@ function stageFight6_7:onTalk()
 				"\n Më ¶i thø 7: Th«ng Thiªn L·o Tæ /#stageFight6_7.gotoSeven(1)",
 				"\n Më ¶i thø 7: Th«ng Thiªn L·o Tæ (dïng h×nh thøc gian lËn ph¶i tiªu hao Th«ng Thiªn LÖnh x2)/#stageFight6_7.gotoSeven(2)",
 				"\n rêi ¶i/ttd_askClose",
-				"\nKÕt thóc ®èi tho¹i/nothing"
+				"\nEnd conversation/nothing"
 			};
 		else
 			strtab = {
 				"\n Më ¶i thø 7: Th«ng Thiªn L·o Tæ /#stageFight6_7.gotoSeven(3)",
 				"\n rêi ¶i/ttd_askClose",
-				"\nKÕt thóc ®èi tho¹i/nothing"
+				"\nEnd conversation/nothing"
 			};
 		end
 		if g_nDebugVersion == 1 then
@@ -2476,7 +2476,7 @@ function stageFight9:onTalk()
 	if strNpcName == "NhËm Doanh Doanh" and ttd_isCaption() == 1 then
 		local strtab = {
 				"\n rêi ¶i/_all_pass_leave",
-				"\nKÕt thóc ®èi tho¹i/nothing"
+				"\nEnd conversation/nothing"
 			};
 		Say("NhËm Doanh Doanh: ViÖc nµy ®· kÕt thóc, hy väng Cha sau nµy cã thÓ sèng yªn æn råi ……",
 			getn(strtab),
@@ -2577,7 +2577,7 @@ function stageFight10:onTalk()
 	if strNpcName == "NhËm Doanh Doanh" and ttd_isCaption() == 1 then
 		local strtab = {
 				"\n rêi ¶i/ttd_confirmClose",
-				"\nKÕt thóc ®èi tho¹i/nothing"
+				"\nEnd conversation/nothing"
 			};
 		Say("NhËm Doanh Doanh: ViÖc nµy ®· kÕt thóc, hy väng Cha sau nµy cã thÓ sèng yªn æn råi ……",
 			getn(strtab),

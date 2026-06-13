@@ -15,7 +15,7 @@ function main_slt()
 	local tSay = {
 		format("Tinh lùc tham dù (Mçi ng­êi tiªu hao %d tinh lùc)/slt_npc_join_1", SLT_COST_NUM_1),
 		format("Thiªn Kiªu LÖnh tham dù (§éi tr­ëng tiªu hao %d Thiªn Kiªu LÖnh)/slt_npc_join_2", SLT_COST_NUM_2),
-		"Ra khái/nothing",	
+		"Leave/nothing",	
 	}
 	Say(SLT_NPC..format("CÊp %d trë lªn ®ång thêi së h÷u b¹n ®ång hµnh phôc sinh míi cã t­ c¸ch tham gia ThÝ LuyÖn Tø Linh. ThÝ LuyÖn Tø Linh cÇn %d ng­êi trë lªn tæ ®éi míi ®­îc tham gia.", SLT_LIMIT_LEVEL, SLT_LIMIT_PLAYER), getn(tSay), tSay);
 end

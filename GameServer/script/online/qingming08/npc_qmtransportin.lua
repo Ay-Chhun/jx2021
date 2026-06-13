@@ -10,17 +10,17 @@ function main()
 	if is_qingming_opened() == -1 then
 		Talk(1,"","<color=green>"..get_transport_name()..":<color> Thanh Minh s¾p ®Õn råi, h·y giµnh chót thêi gian ®Ó cóng tæ tiªn.");
 	elseif is_qingming_opened() == 0 then
-		Talk(1,"","<color=green>"..get_transport_name()..":<color> TiÕt Thanh Minh ®· qua, "..get_player_sex().."nhí n¨m sau ®Õn cóng tÕ tæ tiªn.");
+		Talk(1,"","<color=green>"..get_transport_name()..":<color> The Qingming Festival has passed,"..get_player_sex().."remember to come honor your ancestors next year.");
 	elseif is_qingming_opened() == 2 then
 		Talk(1,"","<color=green>"..get_transport_name()..":<color> Ho¹t ®éng Thanh Minh ®· ®ãng.");
 	elseif is_qingming_opened() == 1 then
 		local selTab = {
-					"§Õn "..get_tomb_name().." cóng b¸i./#gotocemetery("..get_type()..")",
+					"Arrive"..get_tomb_name().." worship./#gotocemetery("..get_type()..")",
 					"NhËn 1 quyÓn chØ nam ho¹t ®éng TiÕt Thanh Minh./#AddItem(2,0,685,1)",
 					"Ho¹t ®éng TiÕt Thanh Minh./knowdetail",
 					"H·y quay l¹i cóng tÕ sau nhĞ!/nothing",
 					}
-		Say("<color=green>"..get_transport_name()..":<color> Trong tiÕt Thanh Minh, "..get_player_sex().." cã muèn ®Õn "..get_tomb_name().." b¸i tÕ, bµy tá thµnh ı kh«ng?",getn(selTab),selTab);
+		Say("<color=green>"..get_transport_name()..":<color> During the Qingming Festival,"..get_player_sex().." cã muèn ®Õn "..get_tomb_name().." b¸i tÕ, bµy tá thµnh ı kh«ng?",getn(selTab),selTab);
 	else
 		WriteLog("TiÕt Thanh Minh 2008: Kh«ng thÓ nhËn ®­îc tr¹ng th¸i ho¹t ®éng tiÕt Thanh Minh.");
 		return FALSE;--³ö´í

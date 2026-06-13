@@ -73,28 +73,28 @@ Tb_devil_num_max = {0,20,20,40,25,20}
 	Mission_login_times_per_week = 10
 	--Á÷ÅÉÃû³Æ
 	Tb_route_name = {
-		[0] = "Ch÷ tr¾ng",
-		[1] = "ThiÕu L©m",
-		[2] = "ThiÕu L©m tôc gia",
+		[0] = "White Lettering",
+		[1] = "Shaolin",
+		[2] = "Shaolin Lay Branch",
 		[3] = "ThiÕu L©m thiÒn t¨ng",
 		[4] = "ThiÕu L©m vâ t¨ng",
 		[5] = "§­êng M«n",
 		[6] = "§­êng M«n",
 		[7] = "Nga My",
-		[8] = "Nga My phËt gia",
-		[9] = "Nga My tôc gia",
-		[10] = "C¸i Bang",
-		[11] = "C¸i Bang TÜnh y",
-		[12] = "C¸i Bang ¤ Y",
-		[13] = "Vâ §ang",
-		[14] = "Vâ §ang ®¹o gia",
-		[15] = "Vâ §ang tôc gia",
+		[8] = "Emei Buddhist Branch",
+		[9] = "Emei Lay Branch",
+		[10] = "Beggars' Sect",
+		[11] = "Beggars' Guild Pure Robe",
+		[12] = "Beggars' Guild Dirty Robe",
+		[13] = "Wudang",
+		[14] = "Wudang Daoist Branch",
+		[15] = "Wudang Lay Branch",
 		[16] = "D­¬ng M«n",
 		[17] = "D­¬ng M«n th­¬ng Kþ",
 		[18] = "D­¬ng M«n Cung Kþ",
-		[19] = "Ngò §éc",
+		[19] = "Five Poisons",
 		[20] = "Tµ hiÖp",
-		[21] = "Cæ s­",
+		[21] = "Ancient Master",
 	}
 --npcÃû³Æ
 for i = 1,6 do
@@ -163,7 +163,7 @@ Stage_info[1].boss_crt_msg = " Cæ D­¬ng Thó trÊn thñ MËt ®éng ®· hiÖn th©n! Ph¶i
 Stage_info[1].stage_end_msg = "Hµnh ®éng thu phôc Cæ D­¬ng Thó lÇn nµy ®· hoµn thµnh, sau ®ã sÏ ®­a c¸c vÞ ®Õn bªn ngoµi MËt ®éng. Xin ®õng nãng. "
 Stage_info[1].stage_start_time_bar = "Cæ D­¬ng Thó hiÖn th©n (®Õm ng­îc)"
 Stage_info[1].boss_crt_time_bar = "Thu phôc Cæ D­¬ng Thó (®Õm ng­îc)"
-Stage_info[1].stage_end_time_bar = "Khu vùc ®­îc dÉn ®Õn, (®Õm ng­îc)"
+Stage_info[1].stage_end_time_bar = "Area being led to, (countdown)"
 ---------------------------------------------------»ªÀöµÄ·Ö¸îÏß---------------------------------------
 Stage_info[2].main_dialog = {Stage_info[2].npc_name.."To gan! §øng l¹i. §©y lµ Hoµng L¨ng MËt §¹o, ng­êi l¹ kh«ng ®­îc ®Õn gÇn, nÕu kh«ng sÏ bÞ TrÊn Mé Linh Thó trõng ph¹t nghiªm!",
 							Stage_info[2].npc_name.."To gan! Bªn trong ®Çy rÉy c¹m bÉy, nÕu muèn sèng h·y mau chãng rêi khái!"	
@@ -185,7 +185,7 @@ Stage_info[2].stage_condition = {	Stage_info[2].npc_name.."N¬i ta yªn nghÜ, kh«n
 Stage_info[2].task_goods = {
 	{},
 	{	
-		{2,0,1032,1,"Håi Long s¸ch"}
+		{2,0,1032,1,"Returning Dragon Scroll"}
 	}
 }												--´³¹ØÐèÒªÎïÆ·
 Stage_info[2].task_ID = {2031,25}												--´³¹ØÊ±¶ÔÓ¦µÄID
@@ -221,7 +221,7 @@ Stage_info[2].boss_crt_msg = "TrÊn Mé Thó ®· xuÊt hiÖn! Trong vßng 30 phót ph¶i 
 Stage_info[2].stage_end_msg = "LÇn thu phôc TrÊn Mé Thó nµy ®· kÕt thóc. Xin ®îi gi©y l¸t sÏ dÉn c¸c vÞ ra ngoµi MËt ®¹o. "
 Stage_info[2].stage_start_time_bar = "TrÊn Mé Thó xuÊt hiÖn (®Õm ng­îc)"
 Stage_info[2].boss_crt_time_bar = "§¸nh b¹i TrÊn Mé Thó (®Õm ng­îc)"
-Stage_info[2].stage_end_time_bar = "Khu vùc ®­îc dÉn ®Õn, (®Õm ng­îc)"
+Stage_info[2].stage_end_time_bar = "Area being led to, (countdown)"
 ---------------------------------------------------Æ®ÒÝµÄ·Ö¸îÏß---------------------------------------
 Stage_info[3].main_dialog = {Stage_info[3].npc_name.."N¬i ta yªn nghÜ, kh«ng ®­îc x©m ph¹m, ngang nhiªn x«ng vµo ¾t giÕt kh«ng tha!",
 							Stage_info[3].npc_name.."Ngang nhiªn x«ng vµo ¾t giÕt kh«ng tha!"	
@@ -271,7 +271,7 @@ Stage_info[3].cannot_log_reason = {
 	}
 }	--ÎÞ·¨½øÈë¹Ø¿¨µÄÔ­Òò¶Ô»°
 Stage_info[3].boss_chat = {
-	"Kho b¸u vua ta, ai d¸m ®µo trém?",
+	"My king's treasure vault; who dares to dig and steal from it?",
 	"Ng­êi tham lam v« tri ®Òu ph¶i tiªu tan tr­íc b¶n t­íng lÜnh! ",
 	"d¸m quÊy rÇy n¬i ta yªn nghØ, giÕt kh«ng thÓ! ",
 	"§Ó ta tiÔn c¸c ng­¬i xuèng ©m tµo ®Þa phñ! ",
@@ -283,7 +283,7 @@ Stage_info[3].boss_crt_msg = "Quû T­¬ng §Çu ®· xuÊt hiÖn! Trong vßng 30 phót ph¶
 Stage_info[3].stage_end_msg = "LÇn thu phôc Quû T­¬ng §Çu ®· hoµn thµnh. Xin ®îi gi©y l¸t sÏ dÉn c¸c vÞ ra bªn ngoµi mËt ®¹o. "
 Stage_info[3].stage_start_time_bar = "Quû T­¬ng §Çu xuÊt hiÖn (®Õm ng­îc)"
 Stage_info[3].boss_crt_time_bar = "§¸nh b¹i Quû T­¬ng §Çu ®Õm ng­îc"
-Stage_info[3].stage_end_time_bar = "Khu vùc ®­îc dÉn ®Õn, (®Õm ng­îc)"
+Stage_info[3].stage_end_time_bar = "Area being led to, (countdown)"
 ---------------------------------------------------äìÈ÷µÄ·Ö¸îÏß---------------------------------------
 Stage_info[4].main_dialog = {	
 	Stage_info[4].npc_name.."Ng­¬i lµ ai? D­îc V­¬ng ®éng lµ l·nh ®Þa cña D­îc V­¬ng chñ nh©n ta, ng­êi l¹ kh«ng ®­îc b­íc vµo. LuyÖn ®¬n ®éng lµ cÊm ®Þa, ai muèn vµo ph¶i b­íc qua x¸c cu¶ ta! ",
@@ -348,7 +348,7 @@ Stage_info[4].boss_crt_msg = "D­îc V­¬ng cña LuyÖn ®¬n ®éng ®· xuÊt hiÖn! Ph¶i t
 Stage_info[4].stage_end_msg = "Thu phôc D­îc V­¬ng ®· hoµn thµnh. Xin ®îi gi©y l¸t sÏ dÉn c¸c vÞ ®Õn bªn ngoµi LuyÖn ®¬n ®éng."
 Stage_info[4].stage_start_time_bar = "D­îc V­¬ng xuÊt hiÖn (®Õm ng­îc)"
 Stage_info[4].boss_crt_time_bar = "§¸nh b¹i D­îc V­¬ng ®Õm ng­îc"
-Stage_info[4].stage_end_time_bar = "Khu vùc ®­îc dÉn ®Õn, (®Õm ng­îc)"
+Stage_info[4].stage_end_time_bar = "Area being led to, (countdown)"
 ---------------------------------------------------¿ÉÁ¯µÄ·Ö¸îÏß---------------------------------------
 Stage_info[5].main_dialog = {	
 	Stage_info[5].npc_name.."Ngò hµnh trËn vèn lµ cæ m¸y trinh s¸t, Ngò Hµnh Sø ®¶m nhËn nhiÖm vô ®Æc biÖt, chuyªn truy s¸t nh÷ng kÎ t¹o ph¶n!",
@@ -373,10 +373,10 @@ Stage_info[5].stage_condition ={					--´³¹ØÌõ¼þ
 }
 Stage_info[5].task_goods = {						--´³¹ØÐèÒªÎïÆ·
 	{
-		{2,0,755,1,"NhÊt PhÈm Th¸c B¹t LÖnh"}
+		{2,0,755,1,"First Rank Tuoba Order"}
 	},
 	{
-		{2,0,1035,1,"Ngò Hµnh Kú Phiªn"}
+		{2,0,1035,1,"Five Elements Banner"}
 	}
 }
 Stage_info[5].task_ID = {2031,58}												--´³¹ØÊ±¶ÔÓ¦µÄID
@@ -414,7 +414,7 @@ Stage_info[5].boss_crt_msg = "Ngò hµnh trËn sø ®· xuÊt hiÖn vµ bè trËn Ngò Hµnh!
 Stage_info[5].stage_end_msg = "V­ît trËn ®· hoµn thµnh. Xin ®îi gi©y l¸t sÏ dÉn c¸c vÞ ®Õn bªn ngoµi Ngò hµnh trËn"
 Stage_info[5].stage_start_time_bar = "Ngò Hµnh Sø xuÊt hiÖn (®Õm ng­îc)"
 Stage_info[5].boss_crt_time_bar = "§¸nh b¹i Ngò Hµnh Sø ®Õm ng­îc"
-Stage_info[5].stage_end_time_bar = "Khu vùc ®­îc dÉn ®Õn, (®Õm ng­îc)"
+Stage_info[5].stage_end_time_bar = "Area being led to, (countdown)"
 ---~~~~~~~~~~~~~~~~~~~~~Åó¿ËµÄ·Ö¸îÏß~~~~~~~~~~~~~~~~~~~~~~~
 Stage_info[6].main_dialog = {
 	Stage_info[6].npc_name.."Cuèi Sa m¹c khã ph©n biÖt ®­îc ngµy hay ®ªm, nguy hiÓm tø bÒ, cã Hoan T­îng mª hoÆc lßng ng­êi. Ng­¬i muèn ®Õn Cuèi Sa m¹c, cßn ta kh«ng muèn. Nh­ng nÕu c¸c ng­¬i cã b¶o vËt tÆng, ta sÏ nghØ l¹i.",
@@ -422,7 +422,7 @@ Stage_info[6].main_dialog = {
 	}
 Stage_info[6].no_task_dialog = 	Stage_info[6].npc_name.."Sa m¹c réng lín, nguy hiÓm trïng trïng, cã Hoan T­îng mª hoÆc lßng ng­êi. C¸c ng­¬i ®i ®i, ®õng ®Õn quÊy nhiÔu."
 Stage_info[6].finish_task_dialog = Stage_info[6].npc_name..": Sù hoang v¾ng cña Cuèi Sa m¹c ng­¬i còng hiÓu, sù ®¸ng sî cña ¶o ¶nh Sa M¹c, ng­¬i còng l·nh gi¸o qua, kh«ng cã b¶o tµng , l¹i cã kÎ ®Þch m¹nh, ®Õn lµm g×? Ta kh«ng thÓ dÉn ng­¬i ®i ®­îc."
-Stage_info[6].stage_name = "Cuèi Sa m¹c"												--stageÃû³Æ
+Stage_info[6].stage_name = "End of the Desert"												--stageÃû³Æ
 Stage_info[6].ground_sel_dialog = {
 	{Stage_info[6].npc_name.."NÕu ta dÉn ng­¬i ®Õn Cuèi Sa m¹c, ph¶i tÆng ta b¶o vËt cã gi¸ t­¬ng ®­¬ng nÕu kh«ng miÔn bµn. Ng­¬i cã b¶o vËt kh«ng?",Stage_info[6].npc_name.."Ta còng muèn dÉn ng­¬i ®Õn Cuèi Sa m¹c, nh­ng mäi ng· ®­êng ®Òu ®· bÞ giã sa m¹c lÊp kÝn. Chi b»ng ®Ó b¶o vËt ë chç ta, ®õng ®Õn ®ã n÷a, kh«ng ph¶i hay h¬n sao?"},
 	{Stage_info[6].npc_name.."B·o c¸t ®· thæi mÊt ph­¬ng h­íng, khuyªn ng­¬i kh«ng nªn ®Õn ®ã.",Stage_info[6].npc_name.."B·o c¸t cã quan hÖ g× víi tËn cïng sa m¹c? NhÊt ®Þnh ph¶i ®Õn ®ã sao? Ta ch­a muèn chÕt ®©u."},
@@ -439,10 +439,10 @@ Stage_info[6].stage_condition ={ 						--´³¹ØÌõ¼þ
 Stage_info[6].task_goods = {
 	{
 		{2,0,733,1,"Hoan T­îng Ph¸p KhÝ"},
-		{2,0,732,1,"Th¸p Phong Yªu"}
+		{2,0,732,1,"Phong Yao Tower"}
 	},
 	{
-		{2,0,1036,1,"La bµn"},
+		{2,0,1036,1,"Compass"},
 	}
 }	--´³¹ØÐèÒªÎïÆ·
 Stage_info[6].task_ID = {2031,64}												--´³¹ØÊ±¶ÔÓ¦µÄID
@@ -469,7 +469,7 @@ Stage_info[6].cannot_log_reason = {			--ÎÞ·¨½øÈë¹Ø¿¨µÄÔ­Òò¶Ô»°
 }
 Stage_info[6].boss_chat = {
 	"chiÕm ®o¹t tÊt c¶ …",
-	"chiÕm ®o¹t c¶ thÕ giíi …",
+	"seize the whole world",
 	"Hoan t­îng ta ®©y lµ nçi khiÕp sî cña c¸c ng­¬i!",
 	"kh«ng cã trêi cao ®Êt dµy, hçn ®én ®Òu lµ … ",
 	"hång hoang … v« khëi … v« diÖt!",
@@ -480,7 +480,7 @@ Stage_info[6].boss_crt_msg = "¶o ¶nh Èn nóp ë Cuèi Sa m¹c ®· xuÊt hiÖn! Ph¶i lµm
 Stage_info[6].stage_end_msg = "V­ît trËn ®· hoµn thµnh. Xin ®îi gi©y l¸t sÏ dÉn c¸c vÞ ®Õn bªn ngoµi Ngò hµnh trËn"
 Stage_info[6].stage_start_time_bar = "Hoan T­îng xuÊt hiÖn (®Õm ng­îc)"
 Stage_info[6].boss_crt_time_bar = "§¸nh b¹i Hoan T­îng ®Õm ng­îc"
-Stage_info[6].stage_end_time_bar = "Khu vùc ®­îc dÉn ®Õn, (®Õm ng­îc)"
+Stage_info[6].stage_end_time_bar = "Area being led to, (countdown)"
 --³ÇÊÐ¹Ø¿¨´«ËÍÈË¶Ô»°--
 Stage_info.city_mis_dia_main = {
 	Npc_name_city.."Ng­êi T©y vùc còng Ýt lui tíi, ë ®©y cã nhiÒu chç rÊt nguy hiÓm, ta tõng dß hái ®­îc biÕt trong <color=yellow>Cæ D­¬ng §éng<color> cã con <color=yellow>Cæ D­¬ng Thó<color> hung b¹o bªn trong, c¸c ng­¬i cßn muèn ®Õn ®ã sao?",
@@ -523,14 +523,14 @@ Tb_normal_boss_info = {
 		{"D­îc V­¬ng","D­îc V­¬ng",1600,3168,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"}
 	},
 	{
-		{"Ngò Hµnh Sø Kim","Ngò Hµnh Kim Sø",1613,3205,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"},
+		{"Ngò Hµnh Sø Kim","Five Elements Metal Envoy",1613,3205,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"},
 		{"Ngò Hµnh Sø Thñy","Ngò Hµnh Thñy Sø",1602,3258,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"},
-		{"Ngò Hµnh Sø Méc","Ngò Hµnh Méc Sø",1625,3231,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"},
+		{"Ngò Hµnh Sø Méc","Five Elements Wood Envoy",1625,3231,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"},
 		{"Ngò Hµnh Sø Háa","Ngò Hµnh Háa Sø",1577,3230,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"},
-		{"Ngò Hµnh Sø Thæ","Ngò Hµnh Thæ Sø",1592,3203,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"},
+		{"Ngò Hµnh Sø Thæ","Five Elements Earth Envoy",1592,3203,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"},
 	},
 	{
-		{"Hoan T­îng (T­íng lÜnh t­îng)","Thèng lÜnh t­îng binhHoanT­îng ",1614,3217,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"}
+		{"Hoan T­îng (T­íng lÜnh t­îng)","Commander of Elephant SoldiersIllusion General",1614,3217,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"}
 	},
 }
 --¸´ÔÓ¹Ø¿¨bossÐÅÏ¢
@@ -538,10 +538,10 @@ Tb_normal_boss_info = {
 	Tb_Monster_info[1] = {
 		{"Cæ D­¬ng Thó ¶i 1","Cæ D­¬ng Thó (háa luyÖn)",1599,3195,5},
 		{"Cæ D­¬ng Thó ¶i 2","Cæ D­¬ng Thó (nhËp)",1599,3195,5},
-		{"¶i ¢m NhËt Sø","¢m NhËt Sø ",1599,3195,350},
-		{"¶i Minh NhËt Sø ","Minh NhËt Sø",1599,3195,350},
+		{"¶i ¢m NhËt Sø","Am Nhat Su",1599,3195,350},
+		{"Stage Bright Sun Envoy","Minh NhËt Sø",1599,3195,350},
 		{"¶i HuyÕt Ma Nh©n","HuyÕt Ma Nh©n",1599,3195,350},
-		{"¶i LiÖt Nhan Li Long ","LiÖt Nhan Li Long",1599,3195,350},
+		{"Stage Fierce-Faced Li Long","LiÖt Nhan Li Long",1599,3195,350},
 		{"¶i XÝch LuyÖn Háa Hå","XÝch LuyÖn Háa Hå",1599,3195,350},
 	}
 	Tb_Monster_info[2] = {
@@ -552,9 +552,9 @@ Tb_normal_boss_info = {
 		{"¶i TrÊn Mé Thó","TrÊn Mé Thó",1618,3207,},
 	}
 	Tb_Monster_info[3] = {
-		{"Mang nÕn vµ ngän ®uèc (trung)","Ngän ®uèc §«ng B¾c",1638,3224,"","Kh«ng cã nÕn vµ ngän ®uèc","§«ng B¾c TrÊn mé T­íng qu©n","§«ng B¾c TrÊn mé T­íng qu©n",{10,60,100},"Quû tïy tïng","Quû tïy tïng",{{1627,1637},{3214,3234}}},
+		{"Mang nÕn vµ ngän ®uèc (trung)","Northeast Torch",1638,3224,"","Kh«ng cã nÕn vµ ngän ®uèc","§«ng B¾c TrÊn mé T­íng qu©n","§«ng B¾c TrÊn mé T­íng qu©n",{10,60,100},"Quû tïy tïng","Quû tïy tïng",{{1627,1637},{3214,3234}}},
 		{"Mang nÕn vµ ngän ®uèc (®¹i)","Ngäc ®uèc §«ng Nam",1601,3265,"","Kh«ng cã nÕn vµ ngän ®uèc","§«ng Nam TrÊn mé T­íng qu©n","§«ng Nam TrÊn mé T­íng qu©n",{0,20,100},"Quû Kh«i Lçi","Quû Kh«i Lçi",{{1594,1604},{3251,3261}}},
-		{"Mang nÕn vµ ngän ®uèc (trung)","Ngän ®uèc T©y Nam",1563,3223,"","Kh«ng cã nÕn vµ ngän ®uèc","T©y Nam TrÊn mé T­íng qu©n","T©y Nam TrÊn mé T­íng qu©n",{10,60,100},"Quû n« béc","Quû n« béc",{{1565,1575},{3212,3232}}},
+		{"Mang nÕn vµ ngän ®uèc (trung)","Southwest Torch",1563,3223,"","Kh«ng cã nÕn vµ ngän ®uèc","T©y Nam TrÊn mé T­íng qu©n","T©y Nam TrÊn mé T­íng qu©n",{10,60,100},"Quû n« béc","Quû n« béc",{{1565,1575},{3212,3232}}},
 		{"Mang nÕn vµ ngän ®uèc (tiÓu)","Ngäc ®uèc T©y B¾c",1601,3182,"","Kh«ng cã nÕn vµ ngän ®uèc","T©y B¾c TrÊn mé T­íng qu©n","T©y B¾c TrÊn mé T­íng qu©n",{70,100,0},"Quû ThÞ Tïng","Quû ThÞ Tïng",{{1597,1607},{3183,3193}}},
 		{"¶i Quû T­¬ng §Çu","Quû T­íng Qu©n",1600,3221,""},
 	}
@@ -567,24 +567,24 @@ Tb_normal_boss_info = {
 	TB_Npc_death_script = {}
 	TB_Npc_death_script[1] = {
 		{"Cæ D­¬ng Thó (háa luyÖn)","stage1_boss_death()"},
-		{"¢m NhËt Sø ","stage1_sun_moon_death()"},
+		{"Am Nhat Su","stage1_sun_moon_death()"},
 		{"Minh NhËt Sø","stage1_sun_moon_death()"},
 		{"LiÖt Nhan Li Long","stage1_dragon_fox_death()"},
 		{"XÝch LuyÖn Háa Hå","stage1_dragon_fox_death()"}
 	}
 	TB_Npc_death_script[2] = {
-		{"Ph¸ phßng TrÊn mé trô","stage2_pillar_death(1,"},
+		{"Break Defense Tomb-Guarding Pillar","stage2_pillar_death(1,"},
 		{"Gi¸ng c«ng TrÊn mé trô","stage2_pillar_death(2,"},
 		{"H­ nh­îc TrÊn mé trô","stage2_pillar_death(3,"},
-		{"Gi¶m tèc TrÊn mé trô","stage2_pillar_death(4,"},
-		{"§én th©n TrÊn mé trô","stage2_pillar_death(5,"},
-		{"§o¹n huyÕt TrÊn mé trô","stage2_pillar_death(6,"},
-		{"Håi mÖnh TrÊn mé trô","stage2_pillar_death(7,"},
-		{"Håi néi TrÊn mé trô","stage2_pillar_death(8,"},
+		{"Slow Tomb-Guarding Pillar","stage2_pillar_death(4,"},
+		{"Evasion Tomb-Guarding Pillar","stage2_pillar_death(5,"},
+		{"Bleed Tomb-Guarding Pillar","stage2_pillar_death(6,"},
+		{"Restore Life Tomb-Guarding Pillar","stage2_pillar_death(7,"},
+		{"Restore Internal Tomb-Guarding Pillar","stage2_pillar_death(8,"},
 		{"C­êng c«ng TrÊn mé trô","stage2_pillar_death(9,"},
 		{"Ngù thÓ TrÊn mé trô","stage2_pillar_death(10,"},
-		{"C­êng lùc TrÊn mé trô","stage2_pillar_death(11,"},
-		{"§Ò tèc TrÊn mé trô","stage2_pillar_death(12,"},
+		{"Strong Power Tomb-Guarding Pillar","stage2_pillar_death(11,"},
+		{"Speed Boost Tomb-Guarding Pillar","stage2_pillar_death(12,"},
 		{"TrÊn Mé Thó","stage2_boss_death("},
 	}
 	TB_Npc_death_script[3] = {
@@ -597,9 +597,9 @@ Tb_normal_boss_info = {
 		{"Quû Kh«i Lçi","end_dialog()"},
 		{"Quû n« béc","end_dialog()"},
 		{"Quû ThÞ Tïng","end_dialog()"},	
-		{"Ngän ®uèc §«ng B¾c","player_kill_candler(1)"},
+		{"Northeast Torch","player_kill_candler(1)"},
 		{"Ngäc ®uèc §«ng Nam","player_kill_candler(2)"},
-		{"Ngän ®uèc T©y Nam","player_kill_candler(3)"},
+		{"Southwest Torch","player_kill_candler(3)"},
 		{"Ngäc ®uèc T©y B¾c","player_kill_candler(4)"},
 	}
 	TB_Npc_death_script[4] = {
@@ -607,20 +607,20 @@ Tb_normal_boss_info = {
 		{"D­îc Nh©n","stage4_devil_death()"},
 	}
 TB_Npc_death_script[5] = {
-	{"Kim sø","stage5_element_death(1)"},
+	{"Metal Envoy","stage5_element_death(1)"},
 	{"Thñy sø","stage5_element_death(2)"},
-	{"Méc sø","stage5_element_death(3)"},
+	{"Wood Envoy","stage5_element_death(3)"},
 	{"Háa sø","stage5_element_death(4)"},
-	{"Thæ sø","stage5_element_death(5)"},
+	{"Earth Envoy","stage5_element_death(5)"},
 }
 TB_Npc_death_script[6] = {
 	{"HuyÕt Ma Nh©nHoan T­îng ","stage6_shadow_death(1)"},
 	{"Quû T­¬ng §ÇuHoan T­îng ","stage6_shadow_death(2)"},
 	{"TrÊn mé T­íng qu©nHoan T­îng ","stage6_shadow_death(3)"},
-	{"Thèng lÜnh t­îng binhHoanT­îng ","stage6_shadow_death(4)"},
-	{"TrÊn Mé ThóHoan T­îng ","stage6_shadow_death(5)"},
-	{"Nguyªn h×nh ¶o ¶nh (tÜnh mÞch)","stage6_boss_slience_death()"},
-	{"Nguyªn h×nh ¶o ¶nh (thÇn)","stage6_boss_death()"},
+	{"Commander of Elephant SoldiersIllusion General","stage6_shadow_death(4)"},
+	{"Tomb-Guarding BeastIllusion General","stage6_shadow_death(5)"},
+	{"Primal Form Mirage (still)","stage6_boss_slience_death()"},
+	{"Primal Form Mirage (divine)","stage6_boss_death()"},
 }
 	--npc¶Ô»°½Å±¾
 	--Íæ¼Òtaskid¼ÇÂ¼ÄÚÈÝ
@@ -691,11 +691,11 @@ end
 Sever_diff = 2		--(1ÎªÊÕ·ÑÇø¡¢2ÎªÃâ·ÑÇø)
 Tb_stage_tichket = {
 	{2,0,1031,"BÝch Dao Thanh T©m §¬n"},
-	{2,0,1032,"Håi Long s¸ch"},
+	{2,0,1032,"Returning Dragon Scroll"},
 	{2,0,1033,"To¸i Th¹ch ChÊn"},
 	{2,0,1034,"TÝch D­¬ng Tinh Hoa"},
-	{2,0,1035,"Ngò Hµnh Kú Phiªn"},
-	{2,0,1036,"La bµn"},
+	{2,0,1035,"Five Elements Banner"},
+	{2,0,1036,"Compass"},
 	{2,0,1037,"ThiÖp dù tiÖc Long M«n"},
 }
 Tb_add_mertiral = {
@@ -821,7 +821,7 @@ function Ms_stage_prize()
 				add_flag = AddItem(Tb_stage_tichket[ticket_seq][1],Tb_stage_tichket[ticket_seq][2],Tb_stage_tichket[ticket_seq][3],1)
 				if add_flag == 1 then
 					Msg2Player("B¹n nhËn ®­îc 1 "..Tb_stage_tichket[ticket_seq][4])
-					Zgc_pub_mission_fun(MS_ID,"Msg2Player(\""..GetName().."NhËn ®­îc 1 "..Tb_stage_tichket[ticket_seq][4].."\")")
+					Zgc_pub_mission_fun(MS_ID,"Msg2Player(\""..GetName().."Received 1"..Tb_stage_tichket[ticket_seq][4].."\")")
 				else
 					WriteLog("¶i T©y B¾c: PhÇn th­ëng ban cho-ng­êi ch¬i["..GetName().."]t¨ng 1"..Tb_stage_tichket[ticket_seq][4].." thÊt b¹i, ký hiÖu:"..add_flag)
 				end
@@ -839,7 +839,7 @@ function Ms_stage_prize()
 				add_flag = AddItem(Tb_add_mertiral[mertiral_seq][1],Tb_add_mertiral[mertiral_seq][2],Tb_add_mertiral[mertiral_seq][3],mertiral_num)
 				if add_flag == 1 then
 					Msg2Player("B¹n nhËn ®­îc "..mertiral_num.."c¸i"..Tb_add_mertiral[mertiral_seq][4])
-					Zgc_pub_mission_fun(MS_ID,"Msg2Player(\""..GetName().."NhËn ®­îc "..mertiral_num.."c¸i"..Tb_add_mertiral[mertiral_seq][4].."\")")
+					Zgc_pub_mission_fun(MS_ID,"Msg2Player(\""..GetName().."Received"..mertiral_num.."c¸i"..Tb_add_mertiral[mertiral_seq][4].."\")")
 				else
 					WriteLog("¶i T©y B¾c: PhÇn th­ëng ban cho-ng­êi ch¬i["..GetName().."]t¨ng thªm "..mertiral_num.."c¸i"..Tb_add_mertiral[mertiral_seq][4].." thÊt b¹i, ký hiÖu:"..add_flag)
 				end
@@ -857,7 +857,7 @@ function Ms_stage_prize()
 				add_flag = AddItem(Tb_add_mertiral[mertiral_seq][1],Tb_add_mertiral[mertiral_seq][2],Tb_add_mertiral[mertiral_seq][3],mertiral_num)
 				if add_flag == 1 then
 					Msg2Player("B¹n nhËn ®­îc "..mertiral_num.."c¸i"..Tb_add_mertiral[mertiral_seq][4])
-					Zgc_pub_mission_fun(MS_ID,"Msg2Player(\""..GetName().."NhËn ®­îc "..mertiral_num.."c¸i"..Tb_add_mertiral[mertiral_seq][4].."\")")
+					Zgc_pub_mission_fun(MS_ID,"Msg2Player(\""..GetName().."Received"..mertiral_num.."c¸i"..Tb_add_mertiral[mertiral_seq][4].."\")")
 				else
 					WriteLog("¶i T©y B¾c: PhÇn th­ëng ban cho-ng­êi ch¬i["..GetName().."]t¨ng thªm "..mertiral_num.."c¸i"..Tb_add_mertiral[mertiral_seq][4].." thÊt b¹i, ký hiÖu:"..add_flag)
 				end
@@ -874,7 +874,7 @@ function Ms_stage_prize()
 				add_flag = AddItem(Tb_add_mertiral[mertiral_seq][1],Tb_add_mertiral[mertiral_seq][2],Tb_add_mertiral[mertiral_seq][3],mertiral_num)
 				if add_flag == 1 then
 					Msg2Player("B¹n nhËn ®­îc "..mertiral_num.."c¸i"..Tb_add_mertiral[mertiral_seq][4])
-					Zgc_pub_mission_fun(MS_ID,"Msg2Player(\""..GetName().."NhËn ®­îc "..mertiral_num.."c¸i"..Tb_add_mertiral[mertiral_seq][4].."\")")
+					Zgc_pub_mission_fun(MS_ID,"Msg2Player(\""..GetName().."Received"..mertiral_num.."c¸i"..Tb_add_mertiral[mertiral_seq][4].."\")")
 				else
 					WriteLog("¶i T©y B¾c: PhÇn th­ëng ban cho-ng­êi ch¬i["..GetName().."]t¨ng thªm "..mertiral_num.."c¸i"..Tb_add_mertiral[mertiral_seq][4].." thÊt b¹i, ký hiÖu:"..add_flag)
 				end

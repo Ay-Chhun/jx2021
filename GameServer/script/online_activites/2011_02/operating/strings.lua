@@ -2,7 +2,7 @@ VET_STR_201102_OPERATING_LOG_TITLE = "Hoat dong thang 3 nam 2011";
 
 VET_TB_201102_OPERATING_LOG_ACTION_LIST = 
 {
-	"NhËn online",
+	"Receive online",
 	"§æi %s b»ng bÝ quyÕt lµm kÑo",
 	"NhËn ®­îc phÇn th­ëng cuèi",
 	"PhÇn th­ëng sö dông %s",
@@ -14,7 +14,7 @@ VET_TB_201102_OPERATING_LOG_ACTION_LIST =
 VET_TB_201102_OPERATING_DLG = 
 {
 	"Ho¹t ®éng %s diÔn ra trong thêi gian tõ <color=yellow>ngµy 25 th¸ng 2 n¨m 2011 ®Õn 24 giê ngµy 27 th¸ng 3 n¨m 2011<color>, néi dung chi tiÕt t¹i trang chñ <color=red>http://volam2.zing.vn<color>",
-	"®æi kÑo ngät",
+	"exchange sweet candy",
 	"§æi %s (cÇn %d %s + %d %s)",
 	"NhËn phÇn th­ëng tèi ®a",
 	"Chän h×nh thøc nhËn th­ëng",
@@ -24,7 +24,7 @@ VET_TB_201102_OPERATING_DLG =
 	"PhÇn th­ëng 20.000.000 Exp vµ vËt phÈm",
 	"PhÇn th­ëng 20 ®iÓm n©ng cÊp b¹n ®ång hµnh vµ vËt phÈm",
 	"PhÇn th­ëng 1 ®iÓm Linh Lùc b¹n ®ång hµnh vµ vËt phÈm ",
-	"Tho¸t",
+	"Exit",
 	"Chän 1 phÇn th­ëng",
 	"C¸c h¹ ®· nhËn phÇn th­ëng nµy",
 	"KÝch ho¹t nhËn th­ëng kh«ng nhËn vËt phÈm (t¨ng thªm 25% kinh nghiÖm)",
@@ -38,23 +38,23 @@ VET_TB_201102_OPERATING_DLG =
 
 VET_TB_201102_OPERATING_ITEM_TITLE = 
 {
-	"S«c«la",
-	"Nguyªn liÖu ",
+	"Chocolate",
+	"Material",
 	"Xu",
 	"BÝ quyÕt lµm kÑo ",
-	"§¹i ng©n phiÕu",
+	"Great Silver Note",
 }
 
 VET_TB_201102_OPERATING_EXCHANGE_MATERIAL = 
 {
 	[1] = 
 	{
-		{"Nguyªn liÖu ", 2, 1, 30287,5},
+		{"Material", 2, 1, 30287,5},
 		{"Xu", 2, 1, 30230,2},
 	},
 	[2] = 
 	{
-		{"Nguyªn liÖu ", 2, 1, 30287,5},
+		{"Material", 2, 1, 30287,5},
 		{"BÝ quyÕt lµm kÑo ", 2, 1, 30288,1},
 	},
 }
@@ -68,14 +68,14 @@ VET_TB_201102_OPERATING_FINAL_AWARD =
 	{1, 100, "ChiÕn ThÇn hoµn", {2, 1, 1005, 1}, 7 * 24 * 3600},
 	{1, 10, "Phi Yªn Th¹ch", {2, 1, 30130, 1}},
 	{1, 50, "Tö Quang ThÇn Th¹ch", {2, 1, 30131, 1}},
-	{1, 10, "Long Tö Bèi", {2, 1, 30155, 1}},
+	{1, 10, "Dragon Pendant", {2, 1, 30155, 1}},
 	{1, 10, "Phông Tö Bèi", {2, 1, 30156, 1}},
-	{1, 10, "¦ng Tö Bèi", {2, 1, 30158, 1}},
+	{1, 10, "Eagle Pendant", {2, 1, 30158, 1}},
 	{1, 300, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 2}},
 	{1, 1, "§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", {2, 1, 1067, 1}, 7 * 24 * 3600},
 	{1, 10, "Thiªn Th¹ch Tinh Th¹ch", {2, 1, 1009, 1}},	
 	{1, 5, "Thiªn Th¹ch linh th¹ch", {2, 1, 1068, 1}},
-	{1, 1, "L¨ng Ba Vi Bé", {0, 112, 78, 1}},
+	{1, 1, "Lingbo Microstep", {0, 112, 78, 1}},
 	{1, 50, "Hoµng Kim §¹i Hång Bao (trèng)", {2, 1, 538, 1}, 7 * 24 * 3600},
 	{32, 422, 7000, 1}, 
 	{1, 5, "Th¸i DÞch Hçn Nguyªn Phæ", {2, 0, 1083, 1}}
@@ -95,7 +95,7 @@ VET_TB_201102_OPERATING_FY_AWARD =
 	{1, 675, "L­u Yªn c«n", {0, 5, 6009, 1, 1, -1, -1, -1, -1, -1, -1}},
 	{1, 675, "HuyÒn Yªn kiÕm", {0, 2, 6010, 1, 1, -1, -1, -1, -1, -1, -1}},
 	{1, 675, "Vò Yªn bót", {0, 9, 6011, 1, 1, -1, -1, -1, -1, -1, -1}},
-	{1, 675, "Hµ Tiªm Th­¬ng", {0, 6, 6012, 1, 1, -1, -1, -1, -1, -1, -1}},
+	{1, 675, "He Tian Spear", {0, 6, 6012, 1, 1, -1, -1, -1, -1, -1, -1}},
 	{1, 675, "Hµnh Yªn Cung", {0, 4, 6013, 1, 1, -1, -1, -1, -1, -1, -1}},
 	{1, 625, "Träc Yªn nhÉn", {0, 7, 6014, 1, 1, -1, -1, -1, -1, -1, -1}},
 	{1, 600, "Yªu Yªn tr¶o", {0, 11, 6015, 1, 1, -1, -1, -1, -1, -1, -1}}
@@ -138,18 +138,18 @@ VET_TB_201102_OPERATING_SHIMEN_EQUIP_AWARD =
 	{1, 20, "Th¸i Êt T¶n Nh©n H¹o Nhiªn Phôc", {0, 100, 1532, 1, 1, -1, -1, -1, -1, -1, -1}},	
 	{1, 20, "Th¸i Êt T¶n Nh©n H¹o Nhiªn Phôc", {0, 100, 1533, 1, 1, -1, -1, -1, -1, -1, -1}},	
 	{1, 20, "Th¸i Êt T¶n Nh©n H¹o Nhiªn Phôc", {0, 100, 1534, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 20, "Long T­¬ng Ngao KhÝ ChiÕn kh¶i", {0, 100, 1731, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 20, "Long T­¬ng Ngao KhÝ ChiÕn kh¶i", {0, 100, 1732, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 20, "Long T­¬ng Ngao KhÝ ChiÕn kh¶i", {0, 100, 1733, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 20, "Long T­¬ng Ngao KhÝ ChiÕn kh¶i", {0, 100, 1734, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 30, "Hæ Dùc M·nh Sü ChiÕn kh¶i", {0, 100, 1831, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 30, "Hæ Dùc M·nh Sü ChiÕn kh¶i", {0, 100, 1832, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 30, "Hæ Dùc M·nh Sü ChiÕn kh¶i", {0, 100, 1833, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 30, "Hæ Dùc M·nh Sü ChiÕn kh¶i", {0, 100, 1834, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 30, "U Minh Quû S¸t Tu La HuyÕt Y", {0, 100, 2031, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 30, "U Minh Quû S¸t Tu La HuyÕt Y", {0, 100, 2032, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 30, "U Minh Quû S¸t Tu La HuyÕt Y", {0, 100, 2033, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 30, "U Minh Quû S¸t Tu La HuyÕt Y", {0, 100, 2034, 1, 1, -1, -1, -1, -1, -1, -1}}	
+	{1, 20, "Long Tuong Ngao Khi Battle Armor", {0, 100, 1731, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 20, "Long Tuong Ngao Khi Battle Armor", {0, 100, 1732, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 20, "Long Tuong Ngao Khi Battle Armor", {0, 100, 1733, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 20, "Long Tuong Ngao Khi Battle Armor", {0, 100, 1734, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 30, "Ho Duc Manh Si Battle Armor", {0, 100, 1831, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 30, "Ho Duc Manh Si Battle Armor", {0, 100, 1832, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 30, "Ho Duc Manh Si Battle Armor", {0, 100, 1833, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 30, "Ho Duc Manh Si Battle Armor", {0, 100, 1834, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 30, "U Minh Quy Sat Tu La Huyet Y", {0, 100, 2031, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 30, "U Minh Quy Sat Tu La Huyet Y", {0, 100, 2032, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 30, "U Minh Quy Sat Tu La Huyet Y", {0, 100, 2033, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 30, "U Minh Quy Sat Tu La Huyet Y", {0, 100, 2034, 1, 1, -1, -1, -1, -1, -1, -1}}	
 };
 
 VET_TB_201102_OPERATING_SHIMEN_WEAPON_AWARD = 
@@ -212,14 +212,14 @@ VET_TB_201102_OPERATING_STRING_LIST =
     [4] = "Chän h×nh thøc nhËn th­ëng",
     [5] = "§æi 100 vËt phÈm xu (cÇn 1 §¹i Ng©n PhiÕu)",
     [6] = "KÝch ho¹t löa tr¹i s­ëi Êm",
-    [7] = "Mua cñi (20 vµng)",
+    [7] = "Buy firewood (20 gold)",
     [8] = "Nguyªn liÖu mang theo kh«ng ®ñ",
     [9] = "Sè l­îng Hép Quµ Gi¸ng Sinh ®· sö dông: <color=red>[%d/%d]<color>",
     [10] = "C¸c h¹ ®· nhËn phÇn th­ëng nµy råi",
     [11] = "Vui lßng chän h×nh thøc nhËn th­ëng",
     [12] = "KÝch ho¹t nhËn th­ëng kh«ng nhËn vËt phÈm (t¨ng thªm 25% kinh nghiÖm)",
     [13] = "KÝch ho¹t nhËn th­ëng nhËn vËt phÈm",
-    [14] = "KÕt thóc ®èi tho¹i",
+    [14] = "End conversation",
     [15] = "HiÖn ®ang kÝch ho¹t nhËn th­ëng kh«ng vËt phÈm (t¨ng 25% kinh nghiÖm)",
     [16] = "HiÖn ®ang kÝch ho¹t KÝch ho¹t nhËn th­ëng nhËn vËt phÈm",
     [17] = "C¸c h¹ kh«ng mang theo §¹i Ng©n PhiÕu",
@@ -234,7 +234,7 @@ VET_TB_201102_OPERATING_STRING_LIST =
 
 VET_TB_201102_OPERATING_ITEM_LOGINGIVE_LIST = 
 {
-    [1] = {"CÈm Nang §¹i Sù KiÖn", 2, 1, 30045},
+    [1] = {"Grand Event Handbook", 2, 1, 30045},
 };
 
 VET_TB_201102_OPERATING_NOMAL_AWARD = 
@@ -243,19 +243,19 @@ VET_TB_201102_OPERATING_NOMAL_AWARD =
 	{1, 50, "Thiªn th¹ch", {2, 2, 8, 1}},
 	{1, 30, "M¶nh Thiªn th¹ch", {2, 2, 7, 1}},
 	{1, 5, "ThÕ Th©n phï", {2, 0, 556, 1}, 7 * 24 * 3600},
-	{1, 10, "B¸t Nh· Chøng Th­", {2, 1, 30114, 1}, 7 * 24 * 3600},
-	{1, 10, "C©y B¸t Nh· nhá", {2, 0, 504, 1}, 7 * 24 * 3600},
-	{1, 5, "C©y B¸t Nh·", {2, 0, 398, 1}, 7 * 24 * 3600},
+	{1, 10, "Prajna Certificate", {2, 1, 30114, 1}, 7 * 24 * 3600},
+	{1, 10, "Small Prajna Tree", {2, 0, 504, 1}, 7 * 24 * 3600},
+	{1, 5, "Prajna Tree", {2, 0, 398, 1}, 7 * 24 * 3600},
 	{4, 245, 10, 1},
 	{5, 160, 10, 1},
 	{1, 5, "Thiªn Hµ MËt tÞch", {0, 107, 64, 1}},
 	{1, 5, "Tö Hµ MËt tÞch", {0, 107, 65, 1}},
-	{1, 5, "Chiªm Y Phæ", {0, 107, 66, 1}},
-	{1, 10, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 1}, 7 * 24 * 3600},
+	{1, 5, "Zhanyi Manual", {0, 107, 66, 1}},
+	{1, 10, "Xiu Zhen Yao Jue", {2, 0, 554, 1}, 7 * 24 * 3600},
 	{1, 10, "TiÓu Nh©n s©m qu¶", {2, 0, 552, 1}, 7 * 24 * 3600},
 	{1, 5, "§ång TiÒn Vµng", {2, 1, 30094,1}},
 	{1, 10, "§é NguyÖt ThÇn Sa", {2, 1, 3332, 1}},
-	{1, 100, "XÝch ThiÕt Tinh", {2, 1, 2652, 1}},
+	{1, 100, "Red Iron Essence", {2, 1, 2652, 1}},
 	{1, 35, "Th¸i DÞch Hçn Nguyªn C«ng §å", {2, 0, 1082, 1}},
 };
 
@@ -264,13 +264,13 @@ VET_TB_201102_OPERATING_SP_AWARD =
 	{8, 1800, 60, 1},
 	{15, 1800, 60, 1},
 	{12, 1800, 60, 1},
-	{1, 300, "Sæ tay sèng", {2, 19, 1, 1}, 7 * 24 * 3600},
-	{1, 300, "C¬ quan nh©n", {2, 1, 1011, 1}, 7 * 24 * 3600},
+	{1, 300, "Living Notebook", {2, 19, 1, 1}, 7 * 24 * 3600},
+	{1, 300, "Mechanism Man", {2, 1, 1011, 1}, 7 * 24 * 3600},
 	{1, 500, "V« NgÊn Thñy", {2, 1, 503, 1}, 7 * 24 * 3600},
-	{1, 500, "TÈy Tñy ®¬n", {2, 0, 136, 1}, 7 * 24 * 3600},
-	{1, 100, "TÈy Tñy linh ®¬n", {2, 0, 137, 1}, 7 * 24 * 3600},
-	{1, 1049, "§Êu hån", {2, 1, 1157, 1}, 7 * 24 * 3600},
-	{1, 1000, "R­¬ng BÝ KÝp", {2, 1, 30093, 1}, 7 * 24 * 3600},
+	{1, 500, "Marrow-Cleansing Pill", {2, 0, 136, 1}, 7 * 24 * 3600},
+	{1, 100, "Marrow-Cleansing Spirit Pill", {2, 0, 137, 1}, 7 * 24 * 3600},
+	{1, 1049, "Soul Duel", {2, 1, 1157, 1}, 7 * 24 * 3600},
+	{1, 1000, "Secret Manual Chest", {2, 1, 30093, 1}, 7 * 24 * 3600},
 	{1, 1, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},
 	{1, 50, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
 	{1, 400, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 7 * 24 * 3600},
@@ -291,7 +291,7 @@ VET_TB_201102_OPERATING_BFY_WEAPON =
     {"L­u Yªn c«n", {0, 5, 6009, 1, 1, -1, -1, -1, -1, -1, -1}},
     {"HuyÒn Yªn kiÕm", {0, 2, 6010, 1, 1, -1, -1, -1, -1, -1, -1}},
     {"Vò Yªn bót", {0, 9, 6011, 1, 1, -1, -1, -1, -1, -1, -1}},
-    {"Hµ Tiªm Th­¬ng", {0, 6, 6012, 1, 1, -1, -1, -1, -1, -1, -1}},
+    {"He Tian Spear", {0, 6, 6012, 1, 1, -1, -1, -1, -1, -1, -1}},
     {"Hµnh Yªn Cung", {0, 4, 6013, 1, 1, -1, -1, -1, -1, -1, -1}},
     {"Träc Yªn nhÉn", {0, 7, 6014, 1, 1, -1, -1, -1, -1, -1, -1}},
     {"Yªu Yªn tr¶o", {0, 11, 6015, 1, 1, -1, -1, -1, -1, -1, -1}},

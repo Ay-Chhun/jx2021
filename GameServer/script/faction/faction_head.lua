@@ -50,19 +50,19 @@ NROUTEID_KL = 22
 NROUTEID_MJ = 24
 NROUTEID_CY = 28
 --ÐÔ±ð¶ÔÓ¦³Æºô
-TPLAYER_SEX_NAME = {"Huynh ®Ö","C« n­¬ng"}
+TPLAYER_SEX_NAME = {"Martial brother","Young lady"}
 
 --ÃÅÅÉÐÅÏ¢×Ü±í
 TFACTION_INFO = {
 	[NFACTIONID_SL] = {
 		--ÃÅÅÉÃû³Æ
-		sFactionName = "ThiÕu L©m",
+		sFactionName = "Shaolin",
 		--ÉÌµêÐÅÏ¢
 		tShopId = {44,66,67,68},
 	},
 	[NFACTIONID_WD] = {
 		--ÃÅÅÉÃû³Æ
-		sFactionName = "Vâ §ang",
+		sFactionName = "Wudang",
 		--ÉÌµêÐÅÏ¢
 		tShopId = {46,78,79,80},
 	},
@@ -74,7 +74,7 @@ TFACTION_INFO = {
 	},
 	[NFACTIONID_GB] = {
 		--ÃÅÅÉÃû³Æ
-		sFactionName = "C¸i Bang",
+		sFactionName = "Beggars' Sect",
 		--ÉÌµêÐÅÏ¢
 		tShopId = {47,75,76,77},
 	},
@@ -92,7 +92,7 @@ TFACTION_INFO = {
 	},
 	[NFACTIONID_WDU] = {
 		--ÃÅÅÉÃû³Æ
-		sFactionName = "Ngò §éc",
+		sFactionName = "Five Poisons",
 		--ÉÌµêÐÅÏ¢
 		tShopId = {55,84,85,86},
 	},
@@ -138,16 +138,16 @@ TFACTION_EQUIP_INFO = {
 		--ÉÙÁÖË×¼Ò
 		[NROUTEID_SLSJ] = {
 			{
-				{"Hµnh Gi¶ m·o",0,103,201},
+				{"Walker hat",0,103,201},
 				{"Hµnh Gi¶ phôc",0,100,201},
-				{"Hµnh Gi¶ trang",0,101,201},
+				{"Walker garb",0,101,201},
 				{"Hµnh Gi¶ Giíi ®ao",0,3,201},
 				{"Hµnh Gi¶ Giíi c«n",0,5,201},
 			},
 			{
-				{"Hµnh Gi¶ m·o",0,103,202},
+				{"Walker hat",0,103,202},
 				{"Hµnh Gi¶ phôc",0,100,202},
-				{"Hµnh Gi¶ trang",0,101,202},
+				{"Walker garb",0,101,202},
 				{"Hµnh Gi¶ Giíi ®ao",0,3,202},
 				{"Hµnh Gi¶ Giíi c«n",0,5,202},
 			},
@@ -155,31 +155,31 @@ TFACTION_EQUIP_INFO = {
 		--ÉÙÁÖìøÉ®
 		[NROUTEID_SLCS] = {
 			{
-				{"Khæ Hµnh m·o",0,103,301},
-				{"Khæ Hµnh bµo",0,100,301},
+				{"Ascetic hat",0,103,301},
+				{"Ascetic robe",0,100,301},
 				{"Khæ Hµnh phôc",0,101,301},
-				{"Khæ Hµnh Tr­îng",0,8,301},
+				{"Ascetic Staff",0,8,301},
 			},
 			{
-				{"Khæ Hµnh m·o",0,103,302},
-				{"Khæ Hµnh bµo",0,100,302},
+				{"Ascetic hat",0,103,302},
+				{"Ascetic robe",0,100,302},
 				{"Khæ Hµnh phôc",0,101,302},
-				{"Khæ Hµnh Tr­îng",0,8,302},
+				{"Ascetic Staff",0,8,302},
 			},
 		},
 		--ÉÙÁÖÎäÉ®
 		[NROUTEID_SLWS] = {
 			{
-				{"Sa Di m·o",0,103,401},
-				{"Sa Di Phôc",0,100,401},
+				{"Sramanera hat",0,103,401},
+				{"Sramanera robe",0,100,401},
 				{"Sa Di phôc",0,101,401},
-				{"Sa Di Hé UyÓn",0,0,401},
+				{"Sha Mi He Yuan",0,0,401},
 			},
 			{
-				{"Sa Di m·o",0,103,402},
-				{"Sa Di Phôc",0,100,402},
+				{"Sramanera hat",0,103,402},
+				{"Sramanera robe",0,100,402},
 				{"Sa Di phôc",0,101,402},
-				{"Sa Di Hé UyÓn",0,0,402},
+				{"Sha Mi He Yuan",0,0,402},
 			},
 		},
 		--ÌÆÃÅ
@@ -187,25 +187,25 @@ TFACTION_EQUIP_INFO = {
 		--ÌÆÃÅ
 		[NROUTEID_TMRL] = {
 			{
-				{"Trang Kh¸ch m·o",0,103,601},
+				{"Zhuang Ke headband",0,103,601},
 				{"Trang kh¸ch phôc",0,100,601},
 				{"Trang Kh¸ch phôc",0,101,601},
 				{"Trang Kh¸ch Phi §ao",0,1,601},
 			},
 			{
-				{"Trang Kh¸ch m·o",0,103,602},
+				{"Zhuang Ke headband",0,103,602},
 				{"Trang kh¸ch phôc",0,100,602},
 				{"Trang Kh¸ch phôc",0,101,602},
 				{"Trang Kh¸ch Phi §ao",0,1,602},
 			},
 			{
-				{"Trang Kh¸ch m·o",0,103,603},
+				{"Zhuang Ke headband",0,103,603},
 				{"Trang kh¸ch phôc",0,100,603},
 				{"Trang Kh¸ch phôc",0,101,603},
 				{"Trang Kh¸ch Phi §ao",0,1,603},
 			},
 			{
-				{"Trang Kh¸ch m·o",0,103,604},
+				{"Zhuang Ke headband",0,103,604},
 				{"Trang kh¸ch phôc",0,100,604},
 				{"Trang Kh¸ch phôc",0,101,604},
 				{"Trang Kh¸ch Phi §ao",0,1,604},
@@ -231,16 +231,16 @@ TFACTION_EQUIP_INFO = {
 		--¶ëáÒË×¼Ò
 		[NROUTEID_EMSJ] = {	{},{},
 			{
-				{"T­ Khóc",0,103,901},
-				{"T­ Khóc tè y",0,100,901},
+				{"Zi Ku",0,103,901},
+				{"Zi Ku belt",0,100,901},
 				{"T­ Khóc phôc",0,101,901},
-				{"T­ Khóc Tè CÇm",0,10,901},
+				{"Zi Ku Purple Zither",0,10,901},
 			},
 			{
-				{"T­ Khóc",0,103,902},
-				{"T­ Khóc tè y",0,100,902},
+				{"Zi Ku",0,103,902},
+				{"Zi Ku belt",0,100,902},
 				{"T­ Khóc phôc",0,101,902},
-				{"T­ Khóc Tè CÇm",0,10,902},
+				{"Zi Ku Purple Zither",0,10,902},
 			},
 		},
 		--Ø¤°ï
@@ -248,55 +248,55 @@ TFACTION_EQUIP_INFO = {
 		--Ø¤°ï¾»ÒÂ
 		[NROUTEID_GBJY] = {
 			{
-				{"ChÊp B¸t c©n",0,103,1101},
-				{"ChÊp B¸t Th­êng",0,100,1101},
+				{"Zhi Ba sash",0,103,1101},
+				{"Zhi Ba robe",0,100,1101},
 				{"ChÊp B¸t phôc",0,101,1101},
-				{"B¸t sø",0,0,1101},
+				{"Ba boots",0,0,1101},
 			},
 			{
-				{"ChÊp B¸t c©n",0,103,1102},
-				{"ChÊp B¸t Th­êng",0,100,1102},
+				{"Zhi Ba sash",0,103,1102},
+				{"Zhi Ba robe",0,100,1102},
 				{"ChÊp B¸t phôc",0,101,1102},
-				{"B¸t sø",0,0,1102},
+				{"Ba boots",0,0,1102},
 			},
 			{
-				{"ChÊp B¸t c©n",0,103,1103},
-				{"ChÊp B¸t Th­êng",0,100,1103},
+				{"Zhi Ba sash",0,103,1103},
+				{"Zhi Ba robe",0,100,1103},
 				{"ChÊp B¸t phôc",0,101,1103},
-				{"B¸t sø",0,0,1103},
+				{"Ba boots",0,0,1103},
 			},
 			{
-				{"ChÊp B¸t c©n",0,103,1104},
-				{"ChÊp B¸t Th­êng",0,100,1104},
+				{"Zhi Ba sash",0,103,1104},
+				{"Zhi Ba robe",0,100,1104},
 				{"ChÊp B¸t phôc",0,101,1104},
-				{"B¸t sø",0,0,1104},
+				{"Ba boots",0,0,1104},
 			},
 		},
 		--Ø¤°ïÎÛÒÂ
 		[NROUTEID_GBWY] = {
 			{
-				{"KhiÕu Hoa c©n",0,103,1201},
-				{"KhiÕu Hoa y",0,100,1201},
-				{"KhiÕu Hoa Khè",0,101,1201},
-				{"KhiÕu Hoa Bæng",0,5,1201},
+				{"Xiao Hua sash",0,103,1201},
+				{"Xiao Hua robe",0,100,1201},
+				{"Xiao Hua trousers",0,101,1201},
+				{"Xiao Hua staff",0,5,1201},
 			},
 			{
-				{"KhiÕu Hoa c©n",0,103,1202},
-				{"KhiÕu Hoa y",0,100,1202},
-				{"KhiÕu Hoa Khè",0,101,1202},
-				{"KhiÕu Hoa Bæng",0,5,1202},
+				{"Xiao Hua sash",0,103,1202},
+				{"Xiao Hua robe",0,100,1202},
+				{"Xiao Hua trousers",0,101,1202},
+				{"Xiao Hua staff",0,5,1202},
 			},
 			{
-				{"KhiÕu Hoa c©n",0,103,1203},
-				{"KhiÕu Hoa y",0,100,1203},
-				{"KhiÕu Hoa Khè",0,101,1203},
-				{"KhiÕu Hoa Bæng",0,5,1203},
+				{"Xiao Hua sash",0,103,1203},
+				{"Xiao Hua robe",0,100,1203},
+				{"Xiao Hua trousers",0,101,1203},
+				{"Xiao Hua staff",0,5,1203},
 			},
 			{
-				{"KhiÕu Hoa c©n",0,103,1204},
-				{"KhiÕu Hoa y",0,100,1204},
-				{"KhiÕu Hoa Khè",0,101,1204},
-				{"KhiÕu Hoa Bæng",0,5,1204},
+				{"Xiao Hua sash",0,103,1204},
+				{"Xiao Hua robe",0,100,1204},
+				{"Xiao Hua trousers",0,101,1204},
+				{"Xiao Hua staff",0,5,1204},
 			},
 		},
 		--Îäµ±
@@ -304,26 +304,26 @@ TFACTION_EQUIP_INFO = {
 		--Îäµ±µÀ¼Ò
 		[NROUTEID_WDDJ] = {
 			{
-				{"Thanh Tu c©n",0,103,1401},
-				{"Thanh Tu bµo",0,100,1401},
+				{"Qing Tu sash",0,103,1401},
+				{"Qing Tu gown",0,100,1401},
 				{"Thanh Tu phôc",0,101,1401},
 				{"Thanh Tu KiÕm",0,2,1401},
 			},
 			{
-				{"Thanh Tu c©n",0,103,1402},
-				{"Thanh Tu bµo",0,100,1402},
+				{"Qing Tu sash",0,103,1402},
+				{"Qing Tu gown",0,100,1402},
 				{"Thanh Tu phôc",0,101,1402},
 				{"Thanh Tu KiÕm",0,2,1402},
 			},
 			{
-				{"Thanh Tu c©n",0,103,1403},
-				{"Thanh Tu bµo",0,100,1403},
+				{"Qing Tu sash",0,103,1403},
+				{"Qing Tu gown",0,100,1403},
 				{"Thanh Tu phôc",0,101,1403},
 				{"Thanh Tu KiÕm",0,2,1403},
 			},
 			{
-				{"Thanh Tu c©n",0,103,1404},
-				{"Thanh Tu bµo",0,100,1404},
+				{"Qing Tu sash",0,103,1404},
+				{"Qing Tu gown",0,100,1404},
 				{"Thanh Tu phôc",0,101,1404},
 				{"Thanh Tu KiÕm",0,2,1404},
 			},
@@ -331,28 +331,28 @@ TFACTION_EQUIP_INFO = {
 		--Îäµ±Ë×¼Ò
 		[NROUTEID_WDSJ] = {
 			{
-				{"Thanh Phong c©n",0,103,1501},
-				{"Thanh Phong bµo",0,100,1501},
+				{"Qing Feng sash",0,103,1501},
+				{"Qing Feng gown",0,100,1501},
 				{"Thanh Phong phôc",0,101,1501},
-				{"Thanh Phong ThÝch",0,9,1501},
+				{"Qing Feng dagger",0,9,1501},
 			},
 			{
-				{"Thanh Phong c©n",0,103,1502},
-				{"Thanh Phong bµo",0,100,1502},
+				{"Qing Feng sash",0,103,1502},
+				{"Qing Feng gown",0,100,1502},
 				{"Thanh Phong phôc",0,101,1502},
-				{"Thanh Phong ThÝch",0,9,1502},
+				{"Qing Feng dagger",0,9,1502},
 			},
 			{
-				{"Thanh Phong c©n",0,103,1503},
-				{"Thanh Phong bµo",0,100,1503},
+				{"Qing Feng sash",0,103,1503},
+				{"Qing Feng gown",0,100,1503},
 				{"Thanh Phong phôc",0,101,1503},
-				{"Thanh Phong ThÝch",0,9,1503},
+				{"Qing Feng dagger",0,9,1503},
 			},
 			{
-				{"Thanh Phong c©n",0,103,1504},
-				{"Thanh Phong bµo",0,100,1504},
+				{"Qing Feng sash",0,103,1504},
+				{"Qing Feng gown",0,100,1504},
 				{"Thanh Phong phôc",0,101,1504},
-				{"Thanh Phong ThÝch",0,9,1504},
+				{"Qing Feng dagger",0,9,1504},
 			},
 		},
 		--ÑîÃÅ
@@ -360,53 +360,53 @@ TFACTION_EQUIP_INFO = {
 		--ÑîÃÅÇ¹Æï
 		[NROUTEID_YMQQ] = {
 			{
-				{"Khinh Kþ kh«i",0,103,1701},
-				{"Khinh Kþ gi¸p",0,100,1701},
+				{"Light Cavalry helmet",0,103,1701},
+				{"Light Cavalry armor",0,100,1701},
 				{"Khinh Kþ phôc",0,101,1701},
-				{"Khinh Kþ Th­¬ng",0,6,1701},
+				{"Light Cavalry spear",0,6,1701},
 			},
 			{
-				{"Khinh Kþ kh«i",0,103,1702},
-				{"Khinh Kþ gi¸p",0,100,1702},
+				{"Light Cavalry helmet",0,103,1702},
+				{"Light Cavalry armor",0,100,1702},
 				{"Khinh Kþ phôc",0,101,1702},
-				{"Khinh Kþ Th­¬ng",0,6,1702},
+				{"Light Cavalry spear",0,6,1702},
 			},
 			{
-				{"Khinh Kþ kh«i",0,103,1703},
-				{"Khinh Kþ gi¸p",0,100,1703},
+				{"Light Cavalry helmet",0,103,1703},
+				{"Light Cavalry armor",0,100,1703},
 				{"Khinh Kþ phôc",0,101,1703},
-				{"Khinh Kþ Th­¬ng",0,6,1703},
+				{"Light Cavalry spear",0,6,1703},
 			},
 			{
-				{"Khinh Kþ kh«i",0,103,1704},
-				{"Khinh Kþ gi¸p",0,100,1704},
+				{"Light Cavalry helmet",0,103,1704},
+				{"Light Cavalry armor",0,100,1704},
 				{"Khinh Kþ phôc",0,101,1704},
-				{"Khinh Kþ Th­¬ng",0,6,1704},
+				{"Light Cavalry spear",0,6,1704},
 			},
 		},
 		--ÑîÃÅ¹­Æï
 		[NROUTEID_YMGQ] = {
 			{
 				{"Nç Thñ kh«i",0,103,1801},
-				{"Nâ thñ gi¸p",0,100,1801},
+				{"Crossbow guard armor",0,100,1801},
 				{"Nâ Thñ phôc",0,101,1801},
 				{"Nç Thñ Cung",0,4,1801},
 			},
 			{
 				{"Nç Thñ kh«i",0,103,1802},
-				{"Nâ thñ gi¸p",0,100,1802},
+				{"Crossbow guard armor",0,100,1802},
 				{"Nâ Thñ phôc",0,101,1802},
 				{"Nç Thñ Cung",0,4,1802},
 			},
 			{
 				{"Nç Thñ kh«i",0,103,1803},
-				{"Nâ thñ gi¸p",0,100,1803},
+				{"Crossbow guard armor",0,100,1803},
 				{"Nâ Thñ phôc",0,101,1803},
 				{"Nç Thñ Cung",0,4,1803},
 			},
 			{
 				{"Nç Thñ kh«i",0,103,1804},
-				{"Nâ thñ gi¸p",0,100,1804},
+				{"Crossbow guard armor",0,100,1804},
 				{"Nâ Thñ phôc",0,101,1804},
 				{"Nç Thñ Cung",0,4,1804},
 			},
@@ -416,55 +416,55 @@ TFACTION_EQUIP_INFO = {
 		--Îå¶¾Ð°ÏÀ
 		[NROUTEID_WDUXX] = {
 			{
-				{"§o¹t Ph¸ch diÖn",0,103,2001},
-				{"§o¹t Ph¸ch y",0,100,2001},
+				{"Duo Po mask",0,103,2001},
+				{"Duo Po robe",0,100,2001},
 				{"§o¹t Ph¸ch phôc",0,101,2001},
-				{"§o¹t Ph¸ch ®ao",0,7,2001},
+				{"Duo Po blade",0,7,2001},
 			},
 			{
-				{"§o¹t Ph¸ch diÖn",0,103,2002},
-				{"§o¹t Ph¸ch y",0,100,2002},
+				{"Duo Po mask",0,103,2002},
+				{"Duo Po robe",0,100,2002},
 				{"§o¹t Ph¸ch phôc",0,101,2002},
-				{"§o¹t Ph¸ch ®ao",0,7,2002},
+				{"Duo Po blade",0,7,2002},
 			},
 			{
-				{"§o¹t Ph¸ch diÖn",0,103,2003},
-				{"§o¹t Ph¸ch y",0,100,2003},
+				{"Duo Po mask",0,103,2003},
+				{"Duo Po robe",0,100,2003},
 				{"§o¹t Ph¸ch phôc",0,101,2003},
-				{"§o¹t Ph¸ch ®ao",0,7,2003},
+				{"Duo Po blade",0,7,2003},
 			},
 			{
-				{"§o¹t Ph¸ch diÖn",0,103,2004},
-				{"§o¹t Ph¸ch y",0,100,2004},
+				{"Duo Po mask",0,103,2004},
+				{"Duo Po robe",0,100,2004},
 				{"§o¹t Ph¸ch phôc",0,101,2004},
-				{"§o¹t Ph¸ch ®ao",0,7,2004},
+				{"Duo Po blade",0,7,2004},
 			},
 		},
 		--Îå¶¾¹ÆÊ¦
 		[NROUTEID_WDUGS] = {
 			{
-				{"§éc Tµm diÖn",0,103,2101},
-				{"§éc Tµm Y",0,100,2101},
+				{"Du Can mask",0,103,2101},
+				{"Du Can robe",0,100,2101},
 				{"§éc Tµm phôc",0,101,2101},
-				{"§éc Tµm Tr¶o",0,11,2101},
+				{"Du Can claw",0,11,2101},
 			},
 			{
-				{"§éc Tµm diÖn",0,103,2102},
-				{"§éc Tµm Y",0,100,2102},
+				{"Du Can mask",0,103,2102},
+				{"Du Can robe",0,100,2102},
 				{"§éc Tµm phôc",0,101,2102},
-				{"§éc Tµm Tr¶o",0,11,2102},
+				{"Du Can claw",0,11,2102},
 			},
 			{
-				{"§éc Tµm diÖn",0,103,2103},
-				{"§éc Tµm Y",0,100,2103},
+				{"Du Can mask",0,103,2103},
+				{"Du Can robe",0,100,2103},
 				{"§éc Tµm phôc",0,101,2103},
-				{"§éc Tµm Tr¶o",0,11,2103},
+				{"Du Can claw",0,11,2103},
 			},
 			{
-				{"§éc Tµm diÖn",0,103,2104},
-				{"§éc Tµm Y",0,100,2104},
+				{"Du Can mask",0,103,2104},
+				{"Du Can robe",0,100,2104},
 				{"§éc Tµm phôc",0,101,2104},
-				{"§éc Tµm Tr¶o",0,11,2104},
+				{"Du Can claw",0,11,2104},
 			},
 		},
 	},

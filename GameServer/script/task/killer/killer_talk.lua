@@ -13,11 +13,11 @@ function main()
 
 local npcName = GetTargetNpcName();
 
-	if npcName==nil or npcName=="" then npcName = "S¸t thñ "; end;	
+	if npcName==nil or npcName=="" then npcName = "Assassin"; end;	
 
 	Say("<color=green>"..npcName.."<color>: Ng­¬i lµm g× vËy? Cø ®i qua ®i l¹i tr­íc mÆt ta, lì kinh ®éng ®Õn Mao ®¹i gia ng­¬i cã g¸nh næi kh«ng!",
 		2,
-		"Ta trõ h¹i cho d©n/Killer_Fight",
+		"I rid the people of harm/Killer_Fight",
 		"Xin lçi! Nh×n lÇm ng­êi./Killer_Exit");
 	
 end;
@@ -47,7 +47,7 @@ local nPlayerName = GetPlayerSex();
 					AddItem(2,1,195,1,1);
 				end;
 		else
-			Say("<color=green>"..npcName.."<color>: Hay l¾m!",0);
+			Say("<color=green>"..npcName.."<color>: Well done!",0);
 		
 			SetNpcScript(npcID, "\\script\\task\\killer\\killer_fight.lua");
 			ChangeNpcToFight(npcID);

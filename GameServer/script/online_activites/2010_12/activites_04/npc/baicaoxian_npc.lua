@@ -142,7 +142,7 @@ function give_4_soul_tree(nCount)
                         VET_201012_04_STR_LOG_TITLE, 
                         VET_201012_04_TB_LOG_ACTION_LIST[6], 7 * 24 * 3600);
     end
-    WriteLogEx("LOG XU VAT PHAM","Mua c©y Tø Linh 15 xu")
+    WriteLogEx("LOG XU VAT PHAM","Buy Four Spirits Tree 15 coins")
 end
 
 function buy_4_soul_xianlu()

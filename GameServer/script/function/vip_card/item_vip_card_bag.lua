@@ -36,8 +36,8 @@ function on_use_real(nItemIndex, bConfirm)
 		local szMsg = format("MÎ %s sœ nhÀn Æ≠¨c %d <color=yellow>%s (%d ngµy)<color>. MuËn mÎ?", name, 1, szCardName, nExpritedays)
 		Say(szMsg,
 			2,
-			format("%s/#on_use_real(%d, 1)","MÎ", nItemIndex),
-			format("%s/nothing","Ra kh·i"))
+			format("%s/#on_use_real(%d, 1)","Open", nItemIndex),
+			format("%s/nothing","Exit"))
 		return 0
 	end
 	if time > 0 then

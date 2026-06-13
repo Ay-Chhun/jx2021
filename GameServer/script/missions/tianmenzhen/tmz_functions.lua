@@ -253,7 +253,7 @@ function TMZ_JoinBattle(nCamp)
 	local nCampPlace = nCamp;
 	local nMapID = gf_GetCurMapID();
 	if NewWorld(nMapID,tPositionCamp[nCampPlace][1][1],tPositionCamp[nCampPlace][1][2]) == 1 then
-		Msg2MSAll(MISSION_ID,GetName().." ®· gia nhËp "..tCampName[nCamp]);
+		Msg2MSAll(MISSION_ID,GetName().." has joined"..tCampName[nCamp]);
 		Msg2Player("C¸c h¹ ®· gia nhËp råi"..tCampName[nCamp]);
 		TMZ_SetPlayerState(nCamp);
 		AddMSPlayer(MISSION_ID,nCamp);
@@ -462,7 +462,7 @@ function TMZ_GetMSPlayerIndex(nCamp)
 		end
 	end;
 	if nTotalPlayerNum ~= getn(tIndex) then
-		WriteLog("[chiÕn tr­êng Thiªn M«n TrËn]: trong hµm sè TMZ_GetMSPlayerIndex nhËn ®­îc sè ng­êi trong phe nµo ®ã cïng víi getn(tIndex) kh«ng gièng nhau, sè ng­êi trong trËn doanh lµ: "..nTotalPlayerNum..", getn(tIndex) chªnh lÖch lµ:"..getn(tIndex));
+		WriteLog("[chiÕn tr­êng Thiªn M«n TrËn]: trong hµm sè TMZ_GetMSPlayerIndex nhËn ®­îc sè ng­êi trong phe nµo ®ã cïng víi getn(tIndex) kh«ng gièng nhau, sè ng­êi trong trËn doanh lµ: "..nTotalPlayerNum..", getn(tIndex) difference is:"..getn(tIndex));
 	end;
 	return tIndex;
 end;
@@ -574,14 +574,14 @@ function TMZ_ClearData()
 		TMZ_ShowData = {
 			CurN = 0,
 			name = "Thiªn M«n trËn",
-			title = {"Tªn","Phe","L­u ph¸i","GiÕt","ChÕt","TrËn nh·n"},
+			title = {"Name","Phe","L­u ph¸i","Kill","Death","TrËn nh·n"},
 			szFormat = "%-17s%-10s%-16s%-9s%-9s%-10s",
 		};
 	else
 		TMZ_ShowData = {
 			CurN = 0,
 			name = "Thiªn M«n trËn",
-			title = {"Tªn","","L­u ph¸i","GiÕt","ChÕt","TrËn nh·n"},
+			title = {"Name","","L­u ph¸i","Kill","Death","TrËn nh·n"},
 			szFormat = "%-17s%-s%-16s%-9s%-9s%-10s",
 		};
 	end	
@@ -607,7 +607,7 @@ function tmz_tell_end()
 	elseif nWhoWin == 2 then
 		szResult = tCampName[nWhoWin].."Giµnh chiÕn th¾ng";
 	else
-		szResult = "hai phe hßa nhau";
+		szResult = "both sides drew";
 	end;
 	SetFightState(0);
 	Say("DiÔn vâ tr­êng Thiªn M«n TrËn ®· kÕt thóc, c¸c h¹ ®· ®¸nh b¹i kÎ ®Þch<color=yellow>"..nKillNum1.."<color> ng­êi, tö trËn <color=yellow>"..nKillNum2.."<color> lÇn, ®o¹t trËn nh·n<color=yellow>"..nKillNum3.."<color> lÇn. Cuèi cïng"..szResult.."<color>. BiÓu hiÖn xuÊt s¾c cña c¸c vÞ cã thÓ ®Õn t×m <color=yellow>Qu©n B»ng phiªu kþ t­íng qu©n<color> ®Ó nhËn th­ëng.",0);
@@ -664,7 +664,7 @@ function tmz_get_game_loop()
 		StartMissionTimer(MISSION_ID,TIMER_ID,tTimeDiff[nState]);
 		SetMissionV(MV_TMZ_GAME_LOOP,GetGameLoop());
 		SetMissionV(MV_TMZ_ERROR_NUM,GetMissionV(MV_TMZ_ERROR_NUM)+1);
-		WriteLog("[chiÕn tr­êng Thiªn M«n TrËn]: "..GetMissionV(MV_TMZ_LOG_TIME).."Mission thø"..GetMissionV(MV_TMZ_ERROR_NUM).."T¹o míi thêi gian vµ giai ®o¹n chiÕn tr­êng: "..(nState-1));
+		WriteLog("[chiÕn tr­êng Thiªn M«n TrËn]: "..GetMissionV(MV_TMZ_LOG_TIME).."Mission number"..GetMissionV(MV_TMZ_ERROR_NUM).."T¹o míi thêi gian vµ giai ®o¹n chiÕn tr­êng: "..(nState-1));
 	end
 end
 

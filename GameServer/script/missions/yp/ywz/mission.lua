@@ -6,7 +6,7 @@ stageFight = {
 	name = "tbYWZ",
 	frequency = firePhases.frequency,
 	maxsecond = firePhases.maxsecond,
-	guage = {msg = "TiÕn ®é DiÔn Vâ ChiÕn",	time = 60,	cyc = 0, id = 1,},
+	guage = {msg = "Martial Tournament Battle Progress",	time = 60,	cyc = 0, id = 1,},
 	actionsType = "second",
 }
 
@@ -107,7 +107,7 @@ function stageFight:CreateBox()
 	for i = this.mvBox1, this.mvBox2 do
 		local npcIdx = GetMissionV(i);
 		--print("CreateBox", i, GetMissionV(i), GetNpcName(npcIdx))
-		if GetNpcName(npcIdx) == "R­¬ng DiÔn Vâ" then
+		if GetNpcName(npcIdx) == "Martial Tournament Chest" then
 			SetNpcLifeTime(GetMissionV(i), 0);
 		end
 	end
@@ -124,7 +124,7 @@ function stageFight:CreateBox()
 		{1770,3849}, {1703,3808},
 	}
 	for i = 1, getn(tPos) do
-		local npcIndex = CreateNpc("SFYWZ_YWBX", "R­¬ng DiÔn Vâ", nMapId, tPos[i][1], tPos[i][2]);
+		local npcIndex = CreateNpc("SFYWZ_YWBX", "Martial Tournament Chest", nMapId, tPos[i][1], tPos[i][2]);
 		if npcIndex > 0 then
 			SetNpcScript(npcIndex, thisFile);
 			--print("CreateBox", this.mvBox1 + i - 1, npcIndex)
@@ -138,7 +138,7 @@ function stageFight.Init()
 	self = stageFight;
 	self:createSomeNpc();
 	self:CreateTraps();
-	this:Msg2MSAll("B¶n ®å NPC...");
+	this:Msg2MSAll("NPC map...");
 end
 
 function stageFight.Msg()
@@ -146,10 +146,10 @@ function stageFight.Msg()
 	self = stageFight;
 	if GetMissionV(this.mvFlag) == 0 then
 		local nCurTime = GetMissionV(MV_TIMER_SECOND) + 2;
-		this:Msg2MSAll(format("Giai ®o¹n chuÈn bÞ (%d/%d)", floor(nCurTime / 60), 5));
+		this:Msg2MSAll(format("Preparation phase (%d/%d)", floor(nCurTime / 60), 5));
 	else
 		local nCurTime = GetMissionV(MV_TIMER_SECOND) + 2 - 300;
-		this:Msg2MSAll(format("Nh¾c nhë tiÕn ®é (%d/%d)", floor(nCurTime / 60), 55));
+		this:Msg2MSAll(format("Progress reminder (%d/%d)", floor(nCurTime / 60), 55));
 	end
 end
 
@@ -293,14 +293,14 @@ function stageFight:onPlayerDeath(event, killId)
 	SetTaskTemp(0, 0);
 	if nValue + 1 < 2 then
 		ywzm_AddScore(2);
-		Msg2Player(format("b¹n ®· giÖt %s", deathName));
+		Msg2Player(format("You killed %s", deathName));
 		Msg2Player(format("NhËn ®­îc %d ®iÓm diÔn vâ, hiÖn ®· nhËn ®­îc %d ®iÓm diÔn vâ.", 2, ywzm_GetScore()));
 		self:SetShiliScore(2);
 	else
 		Msg2Player(format("%s ®· liªn tôc tö vong v­ît qu¸ %d lÇn kh«ng thÓ tiÕp tôc nhËn ®­îc lîi Ých", deathName, 2));
 	end
 	PlayerIndex = oldPlayerIndex;
-	Msg2Player(format("b¹n bÞ %s giÖt", killName));
+	Msg2Player(format("You were killed by %s", killName));
 	AddRuntimeStat(41, 3, 0, 1);
 end
 
@@ -308,7 +308,7 @@ function stageFight:OnTalk(event)
 	--print("stageFight.OnTalk")
 	local npcIndex = GetTargetNpc();
 	local szNpcName = GetNpcName(npcIndex);
-	if szNpcName == "R­¬ng DiÔn Vâ" then
+	if szNpcName == "Martial Tournament Chest" then
 		SetNpcLifeTime(npcIndex, 0);
 		ywzm_AddScore(10);
 		Msg2Player(format("NhËn ®­îc %d ®iÓm diÔn vâ, hiÖn ®· nhËn ®­îc %d ®iÓm diÔn vâ.", 10, ywzm_GetScore()));
@@ -321,7 +321,7 @@ function stageFight:OnTalk(event)
 			{"state_m_attack_percent_add", 100, 60*18, 10006, "Néi c«ng t¨ng 100%, duy tr× 60 gi©y"},
 			{"state_physical_parmor_poi_add", 30, 60*18, 10007, "Phßng thñ ngo¹i c«ng 30%, duy tr× 60 gi©y"},
 			{"state_magic_parmor_poi_add", 30, 60*18, 10008, "Phßng thñ néi c«ng 30%, duy tr× 60 gi©y"},
-			{"state_dispear", 100, 20*18, 10009, "Tr¹ng th¸i v« ®Þch, duy tr× 20 gi©y"},
+			{"state_dispear", 100, 20*18, 10009, "Invincible state, lasts 20 seconds"},
 			{"state_move_speed_percent_add", 50, 60*18, 10010, "T¨ng 50% tèc ®é di chuyÓn, duy tr× 60 gi©y"},
 		}
 		SetNpcLifeTime(npcIndex, 0);
@@ -485,7 +485,7 @@ end
 function JoinYwzMission(nCamp)
 	local nMapID = ywzm_GetMap();
 	if not nMapID then
-		Talk(1,"","Kh«ng biÕt ®­êng ®i");
+		Talk(1,"","You do not know the way");
 		return 0;
 	end
 	local nFlag = ywzm_GetMissionState(nMapID);

@@ -44,7 +44,7 @@ function assign_to_member(nItem, playerIndex)
 	-- add item
 	PlayerIndex = playerIndex
 	local szName = GetName();
-	gf_AddItemEx2({2, 1, 30769, 1, 4}, "Háa Phông Linh", "Bang Héi Vinh Danh", "R­¬ng Háa Phông", 0, 1);
+	gf_AddItemEx2({2, 1, 30769, 1, 4}, "Háa Phông Linh", "Guild Hall of Fame", "R­¬ng Háa Phông", 0, 1);
 	-- extra msg
 	if PlayerIndex ~= oldPlayerIndex then
 		PlayerIndex = oldPlayerIndex;

@@ -18,7 +18,7 @@ function main()
 	if GetTask(TASK_PLANTSTAR_DATE) == nDate then
 		local selTab = {
 				"Ta muèn nhËn lÔ phÈm/get_award_confirm",
-				"Ta ®Õn ®Ó chóc mõng/nothing",
+				"I came to congratulate/nothing",
 				}
 		Say("<color=green>"..sNpcName.."<color>: Chóc c¸c ®«i t×nh nh©n trong thiªn h¹ m·i m·i bªn nhau. Chóng t«i cã chuÈn bÞ 1 mãn quµ nhá, xin h·y nhËn lÊy.",getn(selTab),selTab);
 	else
@@ -33,7 +33,7 @@ function get_award_confirm()
 	end;
 	local sNpcName = GetNpcName(nNpcIndex);
 	local selTab = {
-				"§ång ý/give_award",
+				"Agree/give_award",
 				"Ta sÏ quay l¹i sau/nothing",
 				}
 	Say("<color=green>"..sNpcName.."<color>:"..tSexName[GetSex()].."h·y x¸c nhËn chç trèng trong hµnh trang vµ søc lùc cßn ®ñ ®Ó tr¸nh tæn thÊt ®¸nh tiÕc, b¹n x¸c nhËn muèn nhËn phÇn th­ëng?",getn(selTab),selTab);

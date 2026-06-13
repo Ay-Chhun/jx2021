@@ -3,8 +3,8 @@ g_szItemName = "1 T©n Nguyªn ngo¹i trang";
 
 function OnUse(nItemIdx)
 	local selTab = {
-				"§ång ý/#confirm("..nItemIdx..")",
-				"Hñy bá/nothing",
+				"Confirm/#confirm("..nItemIdx..")",
+				"Cancel/nothing",
 				}
 	Say("B¹n muèn më <color=yellow>"..g_szPacketName.."<color>? B¹n cã thÓ nhËn ®­îc <color=yellow>"..g_szItemName.."<color>.",getn(selTab),selTab);
 end;

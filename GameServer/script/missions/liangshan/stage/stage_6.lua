@@ -229,5 +229,5 @@ function tStage_6:OnBossDeath(npcIdx)
 	create_box_tong(m,x,y,nBossCount+4)
 	--Observer:onTeamEvent(SYSEVENT_LIANGSHAN_STAGE_FINISH, nBossCount+4)
 	FireEvent("event_mission_stage_finish", "liangshan", nBossCount+4)
-	TriggerTeamMisEvent("event_mission_passstage", "L­¬ng S¬n", nBossCount+4);
+	TriggerTeamMisEvent("event_mission_passstage", "Liangshan", nBossCount+4);
 end

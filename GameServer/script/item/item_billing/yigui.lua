@@ -6,19 +6,19 @@ YIGUI_WEIGHT_PER_ITEM = 10		-- ¸ºÖØ
 
 nTType =
 {
-	[1] = {0, 108, "Nãn",199},
+	[1] = {0, 108, "Hat",199},
 	[2] = {0, 109, "Y phôc",277},
-	[3] = {0, 110, "H¹ y",89},
+	[3] = {0, 110, "Lower Garment",89},
 }
 
 function OnUse(nIdx)
 	local nItemIndex = tonumber(nIdx)
 	local nTime = GetItemExpireTime(nItemIndex)
-	local szHeader = "Xin hái <color=yellow>"..Zgc_pub_sex_name().."<color> cÇn lo¹i trang phôc nµo?"
+	local szHeader = "May I ask <color=yellow>"..Zgc_pub_sex_name().."<color> cÇn lo¹i trang phôc nµo?"
 	local tSay = {}		
-	tinsert(tSay,"Nãn/#yigui_item(1,"..nTime..")")
+	tinsert(tSay,"Hat/#yigui_item(1,"..nTime..")")
 	tinsert(tSay,"Y phôc/#yigui_item(2,"..nTime..")")
-	tinsert(tSay,"H¹ y/#yigui_item(3,"..nTime..")")
+	tinsert(tSay,"Lower garment/#yigui_item(3,"..nTime..")")
 	tinsert(tSay,"Ngo¹i trang T­íng Qu©n/#general_equips("..nTime..")")
 	tinsert(tSay,"Ngo¹i trang V¨n Sö (dµnh cho nh©n vËt ®· häc Hçn Nguyªn C«ng thµnh thø 4)/#vansu_equips("..nTime..", "..nIdx..")")
 	tinsert(tSay,"T¹m thêi ch­a cÇn!/yigui_no")
@@ -47,17 +47,17 @@ function yigui_item(nType, time)
 	local nBody = GetBody() - 1
 	local nCount = 0
 	
-	tYigui[1] = "TÊt c¶ "..nTType[nType][3].."/#GetItemAll("..nType..","..time..")"
+	tYigui[1] = "All"..nTType[nType][3].."/#GetItemAll("..nType..","..time..")"
 	for i = 1, 6 do
 		local szItemName = GetItemName(nTType[nType][1], nTType[nType][2], nBody*18+i)
 		tYigui[i + 1] = szItemName.."/#GetItem("..nType..","..(nBody*18+i)..","..time..")"
 		nCount = nCount + 1
 	end
 	local nTT = getn(tYigui)
-	tYigui[nTT + 1] = "Trang kÕ/#yigui_page("..nType..","..nCount..","..time..")"
+	tYigui[nTT + 1] = "Next page/#yigui_page("..nType..","..nCount..","..time..")"
 	tYigui[nTT + 2] = "T¹m thêi ch­a cÇn!/yigui_no"
 	
-	Say("Mêi <color=yellow>"..Zgc_pub_sex_name().."<color> tù do lùa chän.", getn(tYigui), tYigui)
+	Say("You may <color=yellow>"..Zgc_pub_sex_name().."<color> choose freely.", getn(tYigui), tYigui)
 end
 
 function yigui_page(nType, nIndex, time)
@@ -69,9 +69,9 @@ function yigui_page(nType, nIndex, time)
 		nEnd = 18
 	end
 	if (nIndex - 6) == 0 then
-		tYigui[1] = "Trang tr­íc/#yigui_item("..nType..","..time..")"
+		tYigui[1] = "Previous page/#yigui_item("..nType..","..time..")"
 	else
-		tYigui[1] = "Trang tr­íc/#yigui_page("..nType..","..(nIndex - 6)..","..time..")"
+		tYigui[1] = "Previous page/#yigui_page("..nType..","..(nIndex - 6)..","..time..")"
 	end
 	
 	for i = nIndex + 1, nEnd do
@@ -81,14 +81,14 @@ function yigui_page(nType, nIndex, time)
 	end
 	local nTT = getn(tYigui)
 	if nEnd == 18 then
-		tYigui[nTT + 1] = "Trang kÕ/#add_other("..nType..","..nIndex..","..time..")"
+		tYigui[nTT + 1] = "Next page/#add_other("..nType..","..nIndex..","..time..")"
 		tYigui[nTT + 2] = "T¹m thêi ch­a cÇn!/yigui_no"
 	else
-		tYigui[nTT + 1] = "Trang kÕ/#yigui_page("..nType..","..nCount..","..time..")"
+		tYigui[nTT + 1] = "Next page/#yigui_page("..nType..","..nCount..","..time..")"
 		tYigui[nTT + 2] = "T¹m thêi ch­a cÇn!/yigui_no"
 	end
 	
-	Say("Mêi <color=yellow>"..Zgc_pub_sex_name().."<color> tù do lùa chän.", getn(tYigui), tYigui);
+	Say("You may <color=yellow>"..Zgc_pub_sex_name().."<color> choose freely.", getn(tYigui), tYigui);
 end
 
 function GetItemAll(nType, time)
@@ -134,7 +134,7 @@ function add_other(nType,nIndex,time)
 	local tYigui = {}
 	local nBody = GetBody() - 1
 	
-	tYigui[1] = "Trang tr­íc/#yigui_page("..nType..","..nIndex..","..time..")"
+	tYigui[1] = "Previous page/#yigui_page("..nType..","..nIndex..","..time..")"
 	
 	for i = 1,3 do
 		local szItemName = GetItemName(nTType[nType][1], nTType[nType][2], 518+nBody+(i-1)*4)
@@ -144,7 +144,7 @@ function add_other(nType,nIndex,time)
 	local nTT = getn(tYigui)
 	tYigui[nTT + 1] = "T¹m thêi ch­a cÇn!/yigui_no"
 	
-	Say("Mêi <color=yellow>"..Zgc_pub_sex_name().."<color> tù do lùa chän.", getn(tYigui), tYigui)	
+	Say("You may <color=yellow>"..Zgc_pub_sex_name().."<color> choose freely.", getn(tYigui), tYigui)	
 	
 
 end

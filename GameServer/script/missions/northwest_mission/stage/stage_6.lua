@@ -16,10 +16,10 @@ Ms_stage6_box_crt_loop = 17			--´´½¨Ïä×Ó
 Tb_boss_life_fun_info = {0.9,0.7,0.5,0.3,0.1}
 --»ÃÏóµÄÐÅÏ¢
 Tb_shadow_info = {
-	{"Thèng lÜnh t­îng binhHoanT­îng ","Thèng lÜnh t­îng binhHoanT­îng ",1614,3217},
+	{"Commander of Elephant SoldiersIllusion General","Commander of Elephant SoldiersIllusion General",1614,3217},
 	{"HuyÕt Ma Nh©nHoan T­îng ","HuyÕt Ma Nh©nHoan T­îng ",1614,3217},
 	{"TrÊn mé T­íng qu©nHoan T­îng ","TrÊn mé T­íng qu©nHoan T­îng ",1614,3217},    
-	{"TrÊn Mé ThóHoan T­îng ","TrÊn Mé ThóHoan T­îng ",1614,3217},
+	{"Tomb-Guarding BeastIllusion General","Tomb-Guarding BeastIllusion General",1614,3217},
 	{"Quû T­¬ng §ÇuHoan T­îng ","Quû T­¬ng §ÇuHoan T­îng ",1614,3217},
 }
 --Ïä×ÓºÍÑ°±¦ÈËµÄ×ø±ê
@@ -33,8 +33,8 @@ Tb_shadow_info = {
  shadow_reduce_life_per_10s = 0.05
 
  Tb_stage6_boss_info = {
-		{"Sa M¹c Hoan T­îng ¶i 1","Nguyªn h×nh ¶o ¶nh (tÜnh mÞch)",1614,3217},
-		{"Sa M¹c Hoan T­îng ¶i 2","Nguyªn h×nh ¶o ¶nh (thÇn)",1614,3217},
+		{"Sa M¹c Hoan T­îng ¶i 1","Primal Form Mirage (still)",1614,3217},
+		{"Sa M¹c Hoan T­îng ¶i 2","Primal Form Mirage (divine)",1614,3217},
 	}
   -------------------------------------------ÏµÍ³Âß¼­Çø------------------------------------------
  --µÚÒ»²½£º¹Ø¿¨×¼±¸
@@ -184,7 +184,7 @@ end
 	local shadow_index = CreateNpc(Tb_shadow_info[shadow_step][1],Tb_shadow_info[shadow_step][2],map_id,Tb_shadow_info[shadow_step][3],Tb_shadow_info[shadow_step][4])
 	SetNpcScript(shadow_index,Main_Npc_Script_way)
 	SetMissionV(Ms_stage6_shandow_index,shadow_index)
-	NpcChat(shadow_index,"Ng­êi bÞ mª hoÆc, rÊt khã ph¸ gi¶i t©m ma.")
+	NpcChat(shadow_index,"A bewitched person is very hard to free from inner demons.")
 	Zgc_pub_mission_fun(MS_ID,"Msg2Player(\"¶o ¶nh l¹i t¸i sinh, ch­a tiªu diÖt hoµn toµn!\")")
  end
 --bossº°»°
@@ -238,14 +238,14 @@ end
 	local stage_seq = GetMissionV(MS_STATE_DIFF_ID)
 	PlayerIndex = GetTeamMember(0)
 	if PlayerIndex ~= 0 then
-		AddGlobalNews("T¹i"..GetName().."ChiÕn ®Êu gian khæ, cuèi cïng ®¸nh b¹i '¶o ¶nh Nguyªn H×nh (thÇn)', v­ît ¶i thµnh c«ng"..Stage_info[stage_seq].stage_name..".")
+		AddGlobalNews("At"..GetName().."ChiÕn ®Êu gian khæ, cuèi cïng ®¸nh b¹i '¶o ¶nh Nguyªn H×nh (thÇn)', v­ît ¶i thµnh c«ng"..Stage_info[stage_seq].stage_name..".")
 	end
 
 	local nMapID = SubWorldIdx2ID(SubWorld)
 	ClearMapNpc(nMapID)
 	--×¼±¸¹Ø¿¨½áÊø
 	local mission_count = GetMapTaskTemp(nMapID,1)
-	WriteLog("[¶i T©y B¾c] thèng kª qua ¶i: ID ¶i	"..stage_seq..":"..nMapID..":"..mission_count.."	Thêi gian qua ¶i	"..Zgc_pub_time_sec_change(((189-GetMissionV(MS_TIMMER_LOOP_ID))* 10),1))
+	WriteLog("[Northwest Pass] pass clearing statistics: Pass ID"..stage_seq..":"..nMapID..":"..mission_count.."	Thêi gian qua ¶i	"..Zgc_pub_time_sec_change(((189-GetMissionV(MS_TIMMER_LOOP_ID))* 10),1))
 	Zgc_pub_mission_fun(MS_ID,"Ms_stage_prize()")
 	SetMissionV(MS_TIMMER_LOOP_ID,6)
 	--stage_mission_fail(6) 

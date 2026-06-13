@@ -7,7 +7,7 @@ Include("\\script\\online\\viet_event\\200912\\event_head.lua");
 function main()
     local nNpcIndex = GetTargetNpc();
     local szName = GetNpcName(nNpcIndex);
-    local szBoxName = "HÈp Quµ Thﬁnh Hπ";
+    local szBoxName = "Midsummer Gift Box";
     if GetTrigger(2509) ~= 0 then
         Talk(1, "", format("Tr≠Ìc Æ©y ng≠¨i Æ∑ k›ch hoπt %s, xin nh p %s nhÀn th≠Îng.", szName, szBoxName));
         return 0;

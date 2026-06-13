@@ -51,7 +51,7 @@ function main()
 		"Häc kü n¨ng luyÖn bïa/luaLearnLifeSkill",
 		"Häc c¸ch phèi chÕ hoÆc lµm nhiÖm vô phèi chÕ/learn_all_recipe",
 		"Bá kü n¨ng luyÖn bïa/forget_life_skill",
-		"Rêi khái/SayHello")
+		"Leave/SayHello")
 end;
 
 -- ËùÓĞÅä·½Ïà¹ØµÄÊÂÇé
@@ -64,7 +64,7 @@ function learn_all_recipe()
 		"Xem nhËn ®­îc nhiÖm vô vò khİ cÊp 76 kh«ng/get_76_task",
 		"Häc c¸ch phèi chÕ cÊp 76/relearn_76_recipe",
 		"Häc söa phèi chÕ/Reset_Learn",
-		"Rêi khái/SayHello")
+		"Leave/SayHello")
 end;
 
 -- ½ÓÊÜ76¼¶Åä·½ÈÎÎñ

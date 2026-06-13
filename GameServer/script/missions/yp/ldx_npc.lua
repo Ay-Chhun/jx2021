@@ -4,8 +4,8 @@ Include("\\script\\missions\\yp\\award.lua")
 
 tNpcName = {
 	{"<color=green>§o¹n Khinh Nh©n<color>: ","D­íi ch©n nói cña bæn tù cã 3 c©y Th¸i H­, t­¬ng truyÒn n¨m x­a do Th¸i H­ Ch©n Nh©n v©n du ®Õn ®©y mµ trång. NhiÒu n¨m nay lu«n cµnh l¸ um tïm. C©y cæ thô nµy thÇn kú ë chç, mang h¹t gièng Th¸i H­ ®Æt vµo trong sÏ cã thÓ hÊp thô linh khÝ ®Êt trêi. sÏ nhËn ®­îc Ngäc Ph¸ch ®Ó t¨ng c«ng lùc.","Ta cho ng­¬i hai h¹t gièng, hy väng ng­¬i h·y mang ®Õn chç Th¸i H­ Cæ Thô ®Ó trång, ®ång thêi thµnh c«ng thu ho¹ch 2 lÇn.","T­¬ng truyÒn, T©y H¹ vµ Thæ Phån còng cã cæ thô. Nh­ng bän v« lÔ ë hai n­íc ®ã c¶ gan d¸m vµo n­íc ta h¸i trém Ngäc Ph¸ch. Hy väng ng­¬i h·y ®Õn chç <color=yellow>Quúnh KÕt hoÆc H­ng Kh¸nh<color> ®Ó trém Ngäc Ph¸ch 1 lÇn, xem nh­ lµ gËy «ng ®Ëp l­ng «ng!"},
-	{"<color=green>Côc Bæn C¸c Quý<color>: ","D­íi ch©n nói cña bæn tù cã 3 c©y Th¸i H­, t­¬ng truyÒn n¨m x­a do Th¸i H­ Ch©n Nh©n v©n du ®Õn ®©y mµ trång. NhiÒu n¨m nay lu«n cµnh l¸ um tïm. C©y cæ thô nµy thÇn kú ë chç, mang h¹t gièng Th¸i H­ ®Æt vµo trong sÏ cã thÓ hÊp thô linh khÝ ®Êt trêi. sÏ nhËn ®­îc Ngäc Ph¸ch ®Ó t¨ng c«ng lùc.","Côc Bæn C¸c Quý: Ta cho ng­¬i hai h¹t gièng, hy väng ng­¬i h·y mang ®Õn chç Th¸i H­ Cæ Thô ®Ó trång, ®ång thêi thµnh c«ng thu ho¹ch 2 lÇn.","T­¬ng truyÒn, T©y H¹ vµ §¹i Lý còng cã cæ thô. Nh­ng bän v« lÔ ë hai n­íc ®ã c¶ gan d¸m vµo n­íc ta h¸i trém Ngäc Ph¸ch. Hy väng ng­¬i h·y ®Õn chç <color=yellow>H­ng Kh¸nh hoÆc Thiªn Long Tù<color> ®Ó trém Ngäc Ph¸ch 1 lÇn, xem nh­ lµ gËy «ng ®Ëp l­ng «ng!"},	
-	{"<color=green>Lý §øc Dôc<color>: ","D­íi ch©n nói cña bæn m«n cã 3 c©y Th¸i H­, t­¬ng truyÒn n¨m x­a do Th¸i H­ Ch©n Nh©n v©n du ®Õn ®©y mµ trång. NhiÒu n¨m nay lu«n cµnh l¸ um tïm. C©y cæ thô nµy thÇn kú ë chç, mang h¹t gièng Th¸i H­ ®Æt vµo trong sÏ cã thÓ hÊp thô linh khÝ ®Êt trêi. sÏ nhËn ®­îc Ngäc Ph¸ch ®Ó t¨ng c«ng lùc.","Ta cho ng­¬i hai h¹t gièng, hy väng ng­¬i h·y mang ®Õn chç Th¸i H­ Cæ Thô ®Ó trång, ®ång thêi thµnh c«ng thu ho¹ch 2 lÇn.","T­¬ng truyÒn, Thæ Phån vµ §¹i Lý còng cã cæ thô. Nh­ng bän v« lÔ ë hai n­íc ®ã c¶ gan d¸m vµo n­íc ta h¸i trém Ngäc Ph¸ch. Hy väng ng­¬i h·y ®Õn chç <color=yellow>Quúnh KÕt hoÆc Thiªn Long Tù<color> ®Ó trém Ngäc Ph¸ch 1 lÇn, xem nh­ lµ gËy «ng ®Ëp l­ng «ng!"},
+	{"<color=green>Cuc Bon Cac Quy<color>:","D­íi ch©n nói cña bæn tù cã 3 c©y Th¸i H­, t­¬ng truyÒn n¨m x­a do Th¸i H­ Ch©n Nh©n v©n du ®Õn ®©y mµ trång. NhiÒu n¨m nay lu«n cµnh l¸ um tïm. C©y cæ thô nµy thÇn kú ë chç, mang h¹t gièng Th¸i H­ ®Æt vµo trong sÏ cã thÓ hÊp thô linh khÝ ®Êt trêi. sÏ nhËn ®­îc Ngäc Ph¸ch ®Ó t¨ng c«ng lùc.","Côc Bæn C¸c Quý: Ta cho ng­¬i hai h¹t gièng, hy väng ng­¬i h·y mang ®Õn chç Th¸i H­ Cæ Thô ®Ó trång, ®ång thêi thµnh c«ng thu ho¹ch 2 lÇn.","T­¬ng truyÒn, T©y H¹ vµ §¹i Lý còng cã cæ thô. Nh­ng bän v« lÔ ë hai n­íc ®ã c¶ gan d¸m vµo n­íc ta h¸i trém Ngäc Ph¸ch. Hy väng ng­¬i h·y ®Õn chç <color=yellow>H­ng Kh¸nh hoÆc Thiªn Long Tù<color> ®Ó trém Ngäc Ph¸ch 1 lÇn, xem nh­ lµ gËy «ng ®Ëp l­ng «ng!"},	
+	{"<color=green>Ly Duc Duc<color>:","D­íi ch©n nói cña bæn m«n cã 3 c©y Th¸i H­, t­¬ng truyÒn n¨m x­a do Th¸i H­ Ch©n Nh©n v©n du ®Õn ®©y mµ trång. NhiÒu n¨m nay lu«n cµnh l¸ um tïm. C©y cæ thô nµy thÇn kú ë chç, mang h¹t gièng Th¸i H­ ®Æt vµo trong sÏ cã thÓ hÊp thô linh khÝ ®Êt trêi. sÏ nhËn ®­îc Ngäc Ph¸ch ®Ó t¨ng c«ng lùc.","Ta cho ng­¬i hai h¹t gièng, hy väng ng­¬i h·y mang ®Õn chç Th¸i H­ Cæ Thô ®Ó trång, ®ång thêi thµnh c«ng thu ho¹ch 2 lÇn.","T­¬ng truyÒn, Thæ Phån vµ §¹i Lý còng cã cæ thô. Nh­ng bän v« lÔ ë hai n­íc ®ã c¶ gan d¸m vµo n­íc ta h¸i trém Ngäc Ph¸ch. Hy väng ng­¬i h·y ®Õn chç <color=yellow>Quúnh KÕt hoÆc Thiªn Long Tù<color> ®Ó trém Ngäc Ph¸ch 1 lÇn, xem nh­ lµ gËy «ng ®Ëp l­ng «ng!"},
 };
 
 function main()
@@ -29,10 +29,10 @@ function main()
 	local strtab = {
 		"Ngäc Ph¸ch Chi Tinh (Tiªu hao 5 ®iÓm tinh lùc)/#ldx_talk_1("..nType..")",
 		"BÊt T×nh Chi Tinh (Tiªu hao 5 ®iÓm tinh lùc)/#ldx_talk_2("..nType..")",
-		"Cung phông thªm/#ldx_talk_3("..nType..")",
+		"Additional offering/#ldx_talk_3("..nType..")",
 		"Giíi thiÖu chi tiÕt/#ldx_talk_4("..nType..")",
 		format("Mua Ng­ng Tinh Lé (%d vµng/c¸i)/ldx_talk_5", 5),
-		"Kh«ng cã viÖc g×!/nothing",
+		"Nothing to do!/nothing",
 	}
 	Say(g_NpcName..tNpcName[nType][2],
 		getn(strtab),
@@ -54,14 +54,14 @@ function ldx_talk_1(nType)
 				3,
 				"\nHoµn thµnh nhiÖm vô [Ngäc Ph¸ch Chi Tinh]/#ldx_talk_1_2("..nType..")",
 				"\nHñy bá nhiÖm vô [Ngäc Ph¸ch Chi Tinh]/#ldx_talk_1_1("..nType..")",
-				"\nKÕt thóc ®èi tho¹i/nothing");
+				"\nEnd conversation/nothing");
 		end
 	else
 		Say(g_NpcName.."GÆp khã kh¨n µ? Ng­¬i cã thÓ hñy bá nhiÖm vô nµy.",
 				3,
 				"\nNhËn nhiÖm vô [Ngäc Ph¸ch Chi Tinh]/#ldx_talk_1_4("..nType..")",
 				"\n*Bá qua nhiÖm vô [Ngäc Ph¸ch Chi Tinh]/#ldx_talk_1_3("..nType..")",
-				"\nKÕt thóc ®èi tho¹i/nothing");
+				"\nEnd conversation/nothing");
 	end
 end
 
@@ -102,7 +102,7 @@ function ldx_talk_1_3(nType)
 	local g_NpcName = tNpcName[nType][1];
 	local tSay = {
 		format("\nX¸c nhËn/#ldx_talk_1_3_1(%d)", nType),
-		"§Ó ta suy nghÜ/nothing",
+		"Let me think about it/nothing",
 	}
 	local szCardName = "ThÎ th¸ng hoÆc ThÎ ho¹t ®éng"
 	if IsActivatedVipCard() ~= 0 then
@@ -179,14 +179,14 @@ function ldx_talk_2(nType)
 				3,
 				"\nHoµn thµnh nhiÖm vô [BÊt T×nh Chi Tinh]/#ldx_talk_2_2("..nType..")",
 				"\nHñy bá nhiÖm vô [BÊt T×nh Chi Tinh]/#ldx_talk_2_1("..nType..")",
-				"\nKÕt thóc ®èi tho¹i/nothing");
+				"\nEnd conversation/nothing");
 		end
 	else
 		Say(g_NpcName.."GÆp khã kh¨n µ? Ng­¬i cã thÓ hñy bá nhiÖm vô nµy.",
 				3,
 				"\nNhËn nhiÖm vô [BÊt T×nh Chi Tinh]/#ldx_talk_2_4("..nType..")",
 				"\n*Bá qua nhiÖm vô [BÊt T×nh Chi Tinh]/#ldx_talk_2_3("..nType..")",
-				"\nKÕt thóc ®èi tho¹i/nothing");
+				"\nEnd conversation/nothing");
 	end	
 end
 
@@ -206,7 +206,7 @@ function ldx_talk_2_3(nType)
 	local g_NpcName = tNpcName[nType][1];
 	local tSay = {
 		format("\nX¸c nhËn/#ldx_talk_2_3_1(%d)", nType),
-		"§Ó ta suy nghÜ/nothing",
+		"Let me think about it/nothing",
 	}
 	local szCardName = "ThÎ th¸ng hoÆc ThÎ ho¹t ®éng"
 	if IsActivatedVipCard() ~= 0 then
@@ -262,11 +262,11 @@ function ldx_talk_3(nType)
 	for i = 1,getn(tYupoName) do
 		local nCount = GetItemCount(tYupoName[i][2][1],tYupoName[i][2][2],tYupoName[i][2][3]);
 		if nCount ~= 0 then
-			tinsert(strtab,format("Nép [%s]/#ldx_talk_3_1(%d)",tYupoName[i][1],i));
+			tinsert(strtab,format("Hand in [%s]/#ldx_talk_3_1(%d)",tYupoName[i][1],i));
 		end
 	end
 	tinsert(strtab,"trë l¹i/main");
-	tinsert(strtab,"KÕt thóc ®èi tho¹i/nothing");
+	tinsert(strtab,"End dialogue/nothing");
 	Say(g_NpcName.."§¹i hiÖp ë Th¸i H­ Cæ Thô thu ho¹ch ®­îc “Ngäc Ph¸ch” cã thÓ ®Õn t×m ta ®Ó ®æi th­ëng.",
 	getn(strtab),
 	strtab)	
@@ -307,5 +307,5 @@ function ldx_talk_5_cb(num)
 	if Pay(50000 * num) ~= 1 then
 		return 0;
 	end
-	gf_AddItemEx2({2, 1, 30804, num}, "Ng­ng Tinh Lé", "Th¸i H­ Cæ Thô", "Mua Ng­ng Tinh Lé", 0, 1);
+	gf_AddItemEx2({2, 1, 30804, num}, "Ngung Tinh Lo", "Th¸i H­ Cæ Thô", "Buy Ngung Tinh Lo", 0, 1);
 end

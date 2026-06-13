@@ -13,7 +13,7 @@ function tong_title_talk_main()
     tinsert(tbSay, format("%s/update_tong_title_max_lv", "NhËn danh hiÖu"))
     tinsert(tbSay, format("%s/view_tong_title_attr", "KiÓm tra thuéc tÝnh danh hiÖu"))
 
-    tinsert(tbSay, format("%s/nothing", "Ra khái"))
+    tinsert(tbSay, format("%s/nothing", "Exit"))
     
     Say(szTitle, getn(tbSay), tbSay)
 end
@@ -35,7 +35,7 @@ function view_tong_title_attr(nLv)
 			local szHead = format("<color=yellow>%s<color>thuéc tÝnh danh héi nh­ sau", _get_tong_title_name(nLv))
 			szTitle = format("%s:\n    %s: %d\n    %s: %d\n    %s: %d\n    %s: %d\n    %s: %d%s", szHead
 				, "Thuéc tÝnh V« cô t¨ng ", t[2]
-				, "Sinh lùc +", t[3]
+				, "Vitality +", t[3]
 				, "Phßng thñ b¹o kÝch t¨ng", t[4]
 				, "B¹o kÝch gi¶m th­¬ng t¨ng", t[5]
 				, "Chøng nhËn HiÖp nghÜa gi¶m x¸c suÊt", nRate, "%"
@@ -43,7 +43,7 @@ function view_tong_title_attr(nLv)
 		end
 		tinsert(tbSay, format("%s/view_tong_title_attr", "trë l¹i"))
 	end
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 	Say(szTitle, getn(tbSay), tbSay)
 end
 
@@ -61,16 +61,16 @@ function update_tong_title_max_lv(bConfirm)
 			local szTitle = ""
 			if nNewLv == 1 then
 				szTitle = format("HiÖn nay ch­a nhËn danh hiÖu, nhËn ®­îc 1 cÊp cÇn tiªu hao <color=yellow>[%d %s#%d %s, %d %s]<color> , cã x¸c nhËn?", 
-					gxd, "§é cèng hiÕn Bang héi", tjzy, "§ång TÕ Chi NguyÖn", gold, " Kim ")
+					gxd, "§é cèng hiÕn Bang héi", tjzy, "Vow of the Same Will", gold, " Kim ")
 			else
 				szTitle = format("HiÖn nay ®¼ng cÊp danh hiÖu lµ %d, t¨ng lªn cÊp tiÕp theo cÇn tiªu hao <color=yellow>[%d %s,%d %s, %d %s]<color>, x¸c nhËn n©ng cÊp?", 
-					nNewLv - 1, gxd, "§é cèng hiÕn Bang héi", tjzy, "§ång TÕ Chi NguyÖn", gold, " Kim ")
+					nNewLv - 1, gxd, "§é cèng hiÕn Bang héi", tjzy, "Vow of the Same Will", gold, " Kim ")
 			end
             local tbSay = {}
             
-            tinsert(tbSay, format("%s/#update_tong_title_max_lv(1)", "§ång ý"))
+            tinsert(tbSay, format("%s/#update_tong_title_max_lv(1)", "Agree"))
             tinsert(tbSay, format("%s/tong_title_talk_main", "trë l¹i"))
-            tinsert(tbSay, format("%s/nothing", "Ra khái"))
+            tinsert(tbSay, format("%s/nothing", "Exit"))
             
             Say(szTitle, getn(tbSay), tbSay)
 			return 0
@@ -122,7 +122,7 @@ function change_tong_title(nLv, bConfirm)
         	end
         end
         tinsert(tbSay, format("%s/tong_title_talk_main", "trë l¹i"))
-        tinsert(tbSay, format("%s/nothing", "Ra khái"))
+        tinsert(tbSay, format("%s/nothing", "Exit"))
         
         Say(szTitle, getn(tbSay), tbSay)
 		return 0
@@ -145,7 +145,7 @@ function change_tong_title(nLv, bConfirm)
         		local tbSay = {}
         		tinsert(tbSay, format("%s/#change_tong_title(%d, 1)", "X¸c nhËn ®æi hÕt", nLv))
         		tinsert(tbSay, format("%s/#change_tong_title(%d)", "trë l¹i", -1))
-        		tinsert(tbSay, format("%s/nothing", "Ra khái"))
+        		tinsert(tbSay, format("%s/nothing", "Exit"))
         		Say(szTitle, getn(tbSay), tbSay)
         		return 0
 			end

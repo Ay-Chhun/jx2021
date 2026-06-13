@@ -4,7 +4,7 @@ function main()
 	local strNpcName = GetTargetNpcName();
 	local tSay = {};
 	local msg = nil;
-	if strNpcName == "Ng­êi truyÒn tèng ¢m §­êng" then
+	if strNpcName == "Yin Hall Teleporter" then
 		msg = "T«i sÏ phô tr¸ch hç trî c¸c vÞ vµo ¢m §­êng Ph©n §µ Thiªn ¢m Gi¸o!";
 		tinsert(tSay, format("\n ¢m §­êng Ph©n §µ Thiªn ¢m/#mg_GotoLevel2(%d)", 1));
 	elseif strNpcName == "Ng­êi truyÒn tèng D­¬ng §­êng" then

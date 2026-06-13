@@ -15,10 +15,10 @@ function OnUse()
 end
 
 function youyong_lingshi(nNum)
-	Say("§æi <color=yellow>"..nNum.."<color> linh th¹ch ngÉu nhiªn cÊp 1-5 cÇn <color=yellow>"..(20*nNum).." <color>m¶nh ®ång h÷u dông. B¹n chÊp nhËn?",
+	Say("Exchange <color=yellow>"..nNum.."<color> linh th¹ch ngÉu nhiªn cÊp 1-5 cÇn <color=yellow>"..(20*nNum).." <color>m¶nh ®ång h÷u dông. B¹n chÊp nhËn?",
 		2,
 		"õ, ta muèn ®æi./#confirm_youyong("..nNum..")",
-		"Kh«ng, ta nhÇm!/OnUse")
+		"No, I made a mistake!/OnUse")
 end
 
 function confirm_youyong(nNum)

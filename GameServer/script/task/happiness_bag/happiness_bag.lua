@@ -47,7 +47,7 @@ end
 function HBRewardSource(tableIndex)
 	do return end
 	local itemID = {HB_ITEM_TYPE_MAIN, HB_ITEM_TYPE_SUB1, HB_ITEM_TYPE_SUB2, HBRewardSourceTable[tableIndex]};
-	local itemName = "Tói May M¾n";
+	local itemName = "Lucky Bag";
 	gf_AddItemEx2(itemID, itemName, "happiness bag", "reward");
 end
 
@@ -84,13 +84,13 @@ function HBRewardInSmallWisdomTree()
 end
 
 function HBBroadcast(rewardInfo)
-	return AddGlobalCountNews("Chóc mõng "..GetName().."Më Tói May M¾n nhËn ®­îc"..rewardInfo..",ThËt may m¾n qu¸!", 1);
+	return AddGlobalCountNews("Congratulations"..GetName().."Më Tói May M¾n nhËn ®­îc"..rewardInfo..", how lucky!", 1);
 end
 
 HBStrings = 
 {
-	"Chóc mõng ",
-	"ThËt may m¾n qu¸!",
+	"Congratulations",
+	"How lucky!",
 	"C¸c h¹ nhËn ®­îc 100 ®iÓm tu luyÖn",
 	"C¸c h¹ nhËn ®­îc 200 ®iÓm tu luyÖn",
 	"C¸c h¹ nhËn ®­îc 400 ®iÓm tu luyÖn",
@@ -123,7 +123,7 @@ HBMajoyRewardList = {
 	{3, 100, 100000},
 	{3, 100, 200000},
 	{3, 95, 400000},
-	{31, 5, "Earn(10000000);HBBroadcast(\'".."1000 vµng,"..", "..HBStrings[1].."\')"},
+	{31, 5, "Earn(10000000);HBBroadcast(\'".."1000 gold,"..", "..HBStrings[1].."\')"},
 };
 
 -- base 10000
@@ -135,16 +135,16 @@ HBAdditionalRewardList = {
 	{10, 1300, 60, 1},
 	{1, 1500, "Tö Hµ MËt tÞch", {0, 107, 65, 1}},
 	{1, 1500, "Thiªn Hµ MËt tÞch", {0, 107, 64, 1}},
-	{1, 1500, "Chiªm Y Phæ", {0, 107, 66, 1}},
-	{1, 270, "§Êu hån", {2, 1, 1157, 1}, 7*24*3600},
+	{1, 1500, "Zhanyi Manual", {0, 107, 66, 1}},
+	{1, 270, "Soul Duel", {2, 1, 1157, 1}, 7*24*3600},
 	{1, 100, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1, 4}, 7*24*3600},
 	{1, 5, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1, 4}, 1*24*3600},
 	{1, 25, "Qu©n C«ng §¹i", {2, 1, 9978, 1, 4}, 1*24*3600},
-	{1, 200, "Tö Quang Kim ThiÒn Ti", {2, 0, 737, 1}},
-	{1, 200, "Tö Quang Kú L©n Vò", {2, 0, 736, 1}},
-	{1, 200, "Tö Quang LiÖt DiÖm CÈm", {2, 0, 735 ,1}},
-	{1, 200, "Th­îng Cæ Kú L©n HuyÕt", {2, 0, 739 ,1}},
-	{1, 200, "M¶nh TiÖt Hoµnh Thó", {2, 0, 738 ,1}},
+	{1, 200, "Purple Light Golden Cicada Wing", {2, 0, 737, 1}},
+	{1, 200, "Purple Light Qilin Dance", {2, 0, 736, 1}},
+	{1, 200, "Purple Light Blazing Flame Brocade", {2, 0, 735 ,1}},
+	{1, 200, "Ancient Qilin Blood", {2, 0, 739 ,1}},
+	{1, 200, "Fierce Sweeping Beast", {2, 0, 738 ,1}},
 };
 
 function OnUse(itemIndex)
@@ -156,7 +156,7 @@ end
 
 function HBOpenUI()
 	local openedTimes = GetTask(HB_TASK_VALUE_KEY_USED_COUNT);
-	local title = "Tói May M¾n: tói thÇn kú chøa ®Çy may m¾n.";
+	local title = "Lucky Bag: a magical bag full of good fortune.";
 	title = title.."<enter>  ".."H«m nay c¸c h¹ ®· më "..openedTimes.." Tói May M¾n, chØ cã thÓ më thªm";
 	if HB_ITEM_THRESHOLD_TIMES > openedTimes then
 		title = title..(HB_ITEM_THRESHOLD_TIMES-openedTimes);
@@ -166,9 +166,9 @@ function HBOpenUI()
 	title = title.." Tói lµ cã thÓ nhËn ®­îc phÇn th­ëng may m¾n råi.";
 	title = title.."<enter><color=Red>".."Chó ý: sè l­îng Tói May M¾n më trong ngµy nhiÒu h¬n"..HB_ITEM_THRESHOLD_TIMES.." , tiÕp tôc më thªm chØ nhËn ®­îc"..HB_MINOR_REWARD_EXP.."Kinh nghiÖm.".."<color>";
 	local menu = {};
-	tinsert(menu, "Më Tói May M¾n".."/HBDoOpen");
+	tinsert(menu, "Open Lucky Bag".."/HBDoOpen");
 	tinsert(menu, "KiÓm tra nguån xuÊt hiÖn cña Tói May M¾n".."/HBDoHelp");
-	tinsert(menu, "Tho¸t".."/HBDoNothing");
+	tinsert(menu, "Exit".."/HBDoNothing");
 	Say(title, getn(menu), menu);
 end
 
@@ -228,7 +228,7 @@ function HBDoHelp()
 	local title = "Th«ng qua tham dù ho¹t ®éng trong game, sÏ cã c¬ héi nhËn ®­îc Tói May M¾n, ho¹t ®éng cã kh¶ n¨ng xuÊt hiÖn: ";
 	title = title.."<enter>".."ChiÕn tr­êng, S¸t Thñ §­êng, NhiÖm vô Vâ L©m Sø Gi¶ (c¸ nh©n vµ tæ ®éi), trång c©y, trång c©y B¸t Nh· lín nhá";
 	local menu = {};
-	tinsert(menu, "Tho¸t/HBDoNothing");
+	tinsert(menu, "Exit/HBDoNothing");
 	tinsert(menu, "trë l¹i/HBOpenUI");
 	Say(title, getn(menu), menu);
 end

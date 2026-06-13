@@ -5,8 +5,8 @@ Include("\\script\\lib\\define.lua")
 nItemId1 = 2;
 nItemId2 = 96;
 tInfo = {
-	[112] = {{2,96,113,1,4},"Th≠ t›n do hæc y nh©n Æ” lπi","Chi’c hÈp Æ∑ bﬁ mÎ ra"},
-	[129] = {{2,96,130,1,4},"Qu∂ Æµo","Qu∂ Æµo t≠¨i"};
+	[112] = {{2,96,113,1,4},"Th≠ t›n do hæc y nh©n Æ” lπi","The box has been opened"},
+	[129] = {{2,96,130,1,4},"Peach","Fresh peach"};
 	}
 function OnUse(nItemIdx)
 	if GetTask(TASKID_SW_USE_ANTIDOTE) == 1 then return 0;end;

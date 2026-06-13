@@ -51,10 +51,10 @@ function main()
 		ModifyExp(GetLevel() * 5000)
 		WriteLogEx("Hoi Ngo Cao Thu","nhÀn",GetLevel() * 5000,"Æi”m kinh nghi÷m")
 	elseif nRand <= 9990 then
-		local nRet, nItemIdx = gf_AddItemEx({2,1,1147,1,1}, "R≠¨ng VÚ Kh› Bπc")
+		local nRet, nItemIdx = gf_AddItemEx({2,1,1147,1,1}, "Silver Weapon Chest")
 		if nRet == 1 then
 			SetItemExpireTime(nItemIdx,15*24*60*60)
-			WriteLogEx("Hoi Ngo Cao Thu","nhÀn",1,"R≠¨ng VÚ Kh› Bπc")
+			WriteLogEx("Hoi Ngo Cao Thu","nhÀn",1,"Silver Weapon Chest")
 		end
 	elseif nRand <= 9995 then
 		local nRet, nItemIdx = gf_AddItemEx({0,102, nRoute*100 + 20 + GetBody, 1,1,-1,-1,-1,-1,-1,-1},"Trang s¯c S≠ M´n" )

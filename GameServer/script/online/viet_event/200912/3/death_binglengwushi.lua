@@ -19,12 +19,12 @@ function OnDeath(nNpcIndex)
     DoFireworks(801, 10);
    
     --¸øÎ×Ê¦ÐÄ
-    gf_AddItemEx2({2, 1, 30746, 1}, "Tr¸i Tim B¨ng Gi¸", "Phï Thñy B¨ng Gi¸", "Phï Thñy B¨ng Gi¸", 24*3600, 1);
+    gf_AddItemEx2({2, 1, 30746, 1}, "Frozen Heart", "Phï Thñy B¨ng Gi¸", "Phï Thñy B¨ng Gi¸", 24*3600, 1);
 
     --Ë¢100¸öÊ¥µ®ÀñºÐ
     local nMapId, nMapX, nMapY = GetNpcWorldPos(nNpcIndex);
     for i = 1, 100 do
-        local nNewNpcIndex = CreateNpc("Event gi¸ng sinh VN", "Hép Quµ ThÞnh H¹", nMapId, nMapX + random(-10, 10), nMapY + random(-10, 10));
+        local nNewNpcIndex = CreateNpc("Event gi¸ng sinh VN", "Midsummer Gift Box", nMapId, nMapX + random(-10, 10), nMapY + random(-10, 10));
         SetNpcLifeTime(nNewNpcIndex, 30);
         SetNpcScript(nNewNpcIndex, "\\script\\online\\viet_event\\200912\\3\\npc_shengdanlihe.lua");
     end

@@ -36,21 +36,21 @@ Tb_refound_mertiral = {
 }
 --ÖØÖıĞèÒª×°±¸ÁĞ±í
 Tb_refound_att = {}
-Tb_refound_att[0]	= {0,103,8000,"Viªm §Õ kh«i"}
-Tb_refound_att[1]	= {0,100,8000,"Viªm §Õ gi¸p"}
-Tb_refound_att[3]	= {0,101,8000,"Viªm §Õ trang"}
+Tb_refound_att[0]	= {0,103,8000,"Yandi Helm"}
+Tb_refound_att[1]	= {0,100,8000,"Yandi Armor"}
+Tb_refound_att[3]	= {0,101,8000,"Yandi Garb"}
 --Ñ×»ÆÌú»êĞÅÏ¢
 Tb_yanhuang_stone = {2,1,1146,"Viªm Hoµng ThiÕt Hån"}
 --ÖıÔì¶ÔÓ¦µÄ¶Ô»°ĞÅÏ¢
 Tb_refound_get_dia = {
 	{
-		"Viªm §Õ gi¸p","","Viªm §Õ trang"
+		"Yandi Armor","","Yandi Garb"
 	},
 	{	
 		"","Hiªn Viªn vò khİ","","Hiªn Viªn ChiÕn","Hiªn Viªn §Êu",
 	}
 }
-Tb_refound_get_dia[1][0] = "Viªm §Õ kh«i"
+Tb_refound_get_dia[1][0] = "Yandi Helm"
 --»ÆµÛ×°¶ÔÓ¦×°±¸
 Tb_huandi_position = {1,2,3}
 Tb_huandi_equip = {}
@@ -128,10 +128,10 @@ Tb_huandi_sushao_weapon = {
 	{0,5,8802,"Hiªn Viªn To¸i Vò C«n"},
 }
 Tb_equip_position_info = {}
-Tb_equip_position_info[0] = {"Viªm §Õ kh«i",1}
-Tb_equip_position_info[1] = {"Viªm §Õ gi¸p",1}
+Tb_equip_position_info[0] = {"Yandi Helm",1}
+Tb_equip_position_info[1] = {"Yandi Armor",1}
 Tb_equip_position_info[2] = {"Hiªn Viªn vò khİ",2}
-Tb_equip_position_info[3] = {"Viªm §Õ trang",1}
+Tb_equip_position_info[3] = {"Yandi Garb",1}
 Tb_equip_position_info[4] = {"Hiªn Viªn ChiÕn",2}
 Tb_equip_position_info[5] = {"Hiªn Viªn §Êu",2}
 Refound_level_max = 15			--ÖØÖıºóµÄ×î¸ßÇ¿»¯¶È
@@ -189,7 +189,7 @@ function main()
 		if GetLifeSkillMaxLevel(1, 2) == 79 then
 			tinsert(strtab, "Muèn häckü n¨ng cao cÊp h¬n/update_max_skill_level");
 		end 
-		tinsert(strtab,"Rêi khái/SayHello")
+		tinsert(strtab,"Leave/SayHello")
 		Say("Ta tªn M¹c §¹i, truyÒn nh©n ®êi thø 73 cña Can T­íng M¹c Tµ, së tr­êng rÌn c¸c lo¹i vò khİ ThÇn Binh, nhÊt lµ nh÷ng binh khİ dµi nh­: c«n, tr­îng. Trong thiªn h¹ kh«ng thÓ t×m ra ng­êi thø hai. Víi l¹i gÇn ®©y ta ph¸t hiÖn ra ph­¬ng ph¸p chÕ t¹o <color=red>trang bŞ Viªm §Õ<color> nh­ trong truyÒn thuyÕt nãi, ng­¬i cã muèn nghe kh«ng?",
 			getn(strtab),
 			strtab)
@@ -213,7 +213,7 @@ function yandi_chg_dia_main()
 	"Ta muèn lÊy 1 b¶n vÏ ChÕ t¹oViªm §Õ/#refound_paper_chg(1)",
 	"Ta muèn lÊy 1 b¶n vÏ ChÕ t¹o Hoµng §Õ/#refound_paper_chg(2)",
 	"Sau khi chÕ t¹o cã g× thay ®æi/refuond_info",
-	"§Õn hái th¨m th«i mµ!/SayHello"
+	"Just dropping by to say hello!/SayHello"
 	)
 end
 -----------------------------------×°±¸×ª»»----------------------------
@@ -270,7 +270,7 @@ function yandi_att_chk(equip_diff)
 end
 --Ñ×»ÆÌú»ê×ª»»È·ÈÏ¶Ô»°
 function stone_chg_dtm(equip_diff,part_diff)
-	Say("B¹n x¸c nhËn muèn lÊy <color=yellow>Viªm HoµngThiÕt Hån<color> ®óc 1 <color=red>"..Tb_refound_get_dia[equip_diff][part_diff].."<color> chø?",
+	Say("B¹n x¸c nhËn muèn lÊy <color=yellow>Viªm HoµngThiÕt Hån<color> ®óc 1 <color=red>"..Tb_refound_get_dia[equip_diff][part_diff].."<color> ?",
 	2,
 	"Ta x¸c nhËn/#stone_chg("..equip_diff..","..part_diff..")",
 	"§Ó ta suy nghÜ l¹i/end_dialog"
@@ -378,7 +378,7 @@ function refound_dtm(old_seq,new_seq)
 		"§Ó ta suy nghÜ l¹i/end_dialog"
 		)
 	else
-		Say("Ng­¬i muèn lÊy trang bŞ ®ang mÆc <color=red>"..Tb_equip_position_info[old_seq][1].."<color> chÕ t¹o thµnh <color=red>"..Tb_equip_position_info[new_seq][1].."<color> chø?",
+		Say("Ng­¬i muèn lÊy trang bŞ ®ang mÆc <color=red>"..Tb_equip_position_info[old_seq][1].."<color> chÕ t¹o thµnh <color=red>"..Tb_equip_position_info[new_seq][1].."<color> ?",
 		2,
 		"Ta x¸c nhËn muèn chÕ t¹o/#refound_deal("..old_seq..","..new_seq..")",
 		"§Ó ta suy nghÜ l¹i/end_dialog"
@@ -387,7 +387,7 @@ function refound_dtm(old_seq,new_seq)
 end
 --ssÎäÆ÷×ª»¯È·ÈÏ
 function ss_refoud_dtm(old_seq,weapon_diff)
-	Say("§¹i hiÖp x¸c nhËn muèn lÊy <color=red>"..Tb_equip_position_info[old_seq][1].."<color> chÕ t¹o thµnh <color=red>"..Tb_huandi_sushao_weapon[weapon_diff][4].."<color> chø?",
+	Say("§¹i hiÖp x¸c nhËn muèn lÊy <color=red>"..Tb_equip_position_info[old_seq][1].."<color> chÕ t¹o thµnh <color=red>"..Tb_huandi_sushao_weapon[weapon_diff][4].."<color> ?",
 	2,
 	"Ta x¸c nhËn muèn chÕ t¹o/#ss_refoud_deal("..old_seq..","..weapon_diff..")",
 	"§Ó ta suy nghÜ l¹i/end_dialog"
@@ -431,7 +431,7 @@ function ss_refoud_deal(old_seq,weapon_diff)
 	if add_flag == 1 then
 		Talk(1,"","Cuèi cïng ®· thµnh c«ng, vËt nµy kh«ng b×nh th­êng ®©u, "..Zgc_pub_sex_name().."h·y dïng vËt nµy hµnh hiÖp tr­îng nghÜa!")
 	else
-		WriteLog("§óc trang bŞ Viªm Hoµng: Ng­êi ch¬i"..GetName().."Dïng thÎ"..Tb_equip_position_info[old_seq][1].."ChÕ t¹o "..Tb_equip_position_info[new_seq][1].." thÊt b¹i, kı hiÖu:"..add_flag)
+		WriteLog("§óc trang bŞ Viªm Hoµng: Ng­êi ch¬i"..GetName().."Use card"..Tb_equip_position_info[old_seq][1].."ChÕ t¹o "..Tb_equip_position_info[new_seq][1].." thÊt b¹i, kı hiÖu:"..add_flag)
 	end
 end
 --×°±¸Ôö¼Ó
@@ -485,7 +485,7 @@ end
 		end
 		WriteLog("§óc trang bŞ Viªm Hoµng: Ng­êi ch¬i"..GetName().."Thµnh c«ng nhËn ®­îc møc t¨ng cÊp lµ:"..att_step.."-"..Tb_equip_position_info[new_seq][1].."Trang bŞ")
 	else
-		WriteLog("§óc trang bŞ Viªm Hoµng: Ng­êi ch¬i"..GetName().."Dïng thÎ"..Tb_equip_position_info[old_seq][1].."ChÕ t¹o "..Tb_equip_position_info[new_seq][1].." thÊt b¹i, kı hiÖu:"..add_flag)
+		WriteLog("§óc trang bŞ Viªm Hoµng: Ng­êi ch¬i"..GetName().."Use card"..Tb_equip_position_info[old_seq][1].."ChÕ t¹o "..Tb_equip_position_info[new_seq][1].." thÊt b¹i, kı hiÖu:"..add_flag)
 	end
 end
 --×°±¸´©×Å¡¢É¾³ı¼ì²â
@@ -757,7 +757,7 @@ function old_dia()
 	if GetTask(TASK_LINGSHI_ID) == 2 or GetTask(TASK_LINGSHI_ID) == 11 then
 		tinsert(strtab,"tiÕp tôc nhiÖm vô häc tËp Linh Th¹ch B¸t Qu¸i/task_new3");
 	end
-	tinsert(strtab,"Rêi khái/SayHello")
+	tinsert(strtab,"Leave/SayHello")
     Say(strTitle.."Kü n¨ng chÕ t¹o vò khİ cña ta vïng nµy cã mét kh«ng hai, ®Æc biÖt lµ binh khİ dµi, thÕ nµo cã muèn mua mét c¸i kh«ng?",
     getn(strtab),strtab)
 end
@@ -772,7 +772,7 @@ function learn_all_recipe()
     	"Xem nhËn ®­îc nhiÖm vô vò khİ cÊp 76 kh«ng/get_76_task",
     	"Häc c¸ch phèi chÕ cÊp 76/relearn_76_recipe",
     	"Kh«ng häc ®­îc söa c¸ch ghĞp/LearnRecipe",
-    	"Rêi khái/SayHello")
+    	"Leave/SayHello")
 end;
 
 
@@ -1282,7 +1282,7 @@ function bagua()
 	"Lµm sao chÕ t¹o trang bŞ cã lç kh¶m n¹m/kongzhuangbeizhizuo",
 	"VËt phÈm thªm vµo cã t¸c dông g×/tianjiawu",
 	"Lµm sao trang bŞ ®­îc chÕ t¹o thµnh trang bŞ B¸t Qu¸i/xiangqianzhuyi",
-	"§Õn hái th¨m th«i mµ!/SayHello"
+	"Just dropping by to say hello!/SayHello"
 	)
 end
 
@@ -1318,7 +1318,7 @@ end
 
 function update_max_skill_level()
 	Say(strTitle..format("Më réng cÊp kü n¨ng s¶n xuÊt cÇn kü n¨ng thu thËp ®¹t cÊp 79 ®ång thêi tiªu hao %d Vµng", 1000), 
-		2, "§ång ı/update_max_skill_level_ensure", "T¹i h¹ chØ xem qua th«i/SayHello")
+		2, "Agree/update_max_skill_level_ensure", "T¹i h¹ chØ xem qua th«i/SayHello")
 end
 
 function update_max_skill_level_ensure()

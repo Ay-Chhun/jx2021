@@ -39,14 +39,14 @@ ID	Name	Type	LifeTime	Height	Speed	ZSpeed	ZAcceleration	CollidRangeW	CollidRange
 38	§éc ThÝch Cèt	1	3240	10	0			3	3	0	0	1			0	
 39	TiÔn	0	9	80	60			3	3	1	1				1	
 40	§¹i Lùc Kim Cang ChØ	0	2	60	0			7	7	15	15				0	
-41	S­ Tö Hèng	0	2	10	0			19	19	19	19				0	
+41	Lion's Roar	0	2	10	0			19	19	19	19				0	
 42	BÊt §éng Minh V­¬ng Chó	0	2	10	0			7	7	7	7				0	
 43	L­u Quang KiÕm Ph¸p xuyªn	0	15	80	80			3	3	3	3				1	
 44	Nhu V©n KiÕm Ph¸p xuyªn	0	15	80	80			3	3	3	3				1	
 45	La H¸n QuyÒn	0	2	60	0			3	3	3	3				0	
 46	Vi §µ QuyÒn 1	0	2	60	0			3	3	3	3				0	
 47	Vi §µ QuyÒn 2	0	2	60	0			3	3	3	3				0	
-48	§¹i Tu Di Ch­ëng	0	2	60	0			3	3	3	3				0	
+48	Great Sumeru Palm	0	2	60	0			3	3	3	3				0	
 49	Nhiªn Méc §ao Ph¸p	0	12	60	100			5	5	5	5				1	
 50	V« T­íng ThÇn C«ng	0	2	10	0			19	19	19	19			1	0	
 51	Phôc Ma ThÇn Th«ng chu vi	0	2	60	0			5	5	6	6			1	0	
@@ -86,7 +86,7 @@ ID	Name	Type	LifeTime	Height	Speed	ZSpeed	ZAcceleration	CollidRangeW	CollidRange
 85	PhÇn CÇm Chö H¹c QuyÕt	0	15	50	80			3	4	3	4				1	
 86	Ch©n Vâ ThÊt TiÖt KiÕm (gi¶)	0	63	10	0			13	13	13	13				0	
 87	Th­îng Thanh V« Cùc C«ng	0	2	1	0			9	9	9	9				0	
-88	ThiÕu ¢m QuyÕt	0	2	60	0			3	3	3	3				0	
+88	Lesser Yin Art	0	2	60	0			3	3	3	3				0	
 89	Tµn ¶nh c«ng kÝch	0	2	60	0			1	1	1	1				0	
 90	Táa HÇu CÇm N· Thñ	0	90	60	0			7	7	7	7				0	
 91	B«n L«i kiÕm ph¸p (chiªu)	0	9	10	0			3	3	3	3				0	
@@ -138,7 +138,7 @@ ID	Name	Type	LifeTime	Height	Speed	ZSpeed	ZAcceleration	CollidRangeW	CollidRange
 137	DÞch C©n Kinh 5	0	90	1	40			7	7	7	7				1	
 138	Nh­ Lai ThÇn Ch­ëng (tiÓu)	0	108	240	150	-40		3	3	3	3				1	
 139	Nh­ Lai ThÇn Ch­ëng (®¹i)	0	108	240	150	-40		9	9	9	9				1	
-140	TÈy Tñy Kinh	0	18	1	0			15	15	15	15				0	
+140	Marrow Cleansing Classic	0	18	1	0			15	15	15	15				0	
 141	C¬ quan HÊp Tinh trËn	4	108	30	15			0	0	0	0	36			1	
 142	HÊp Tinh trËn Phi ch©m	0	54	80	100			3	3	3	3				1	
 143	Thiªn ¢m TrÊn Hån Khóc ph¹m vi réng	0	2	10	0			25	25	25	25				0	
@@ -234,7 +234,7 @@ ID	Name	Type	LifeTime	Height	Speed	ZSpeed	ZAcceleration	CollidRangeW	CollidRange
 320	BÝ Èn L«i	1	3240	10	0			5	5	5	5	20			0	
 321	V« Song S¸t	0	2	10	0			21	21	21	21				0	
 322	Cuång Lam KÝch	0	9	75	150			3	3	3	3				1	
-323	H»ng Nga	0	360	1	0			19	19	19	19				0	
+323	Chang'e	0	360	1	0			19	19	19	19				0	
 400	D­¬ng Gia Ph¸ Phong Th­¬ng	0	2	160	0			7	9	7	9				1	
 401	D­¬ng Gia B«n Lang Th­¬ng	0	2	60	200			5	11	5	11				1	
 402	D­¬ng Gia Thiªn Hµnh Th­¬ng-tiÒn	0	2	1	0			13	13	13	13				0	
@@ -284,7 +284,7 @@ ID	Name	Type	LifeTime	Height	Speed	ZSpeed	ZAcceleration	CollidRangeW	CollidRange
 446	B¸ Hoµng §o¹n	0	10	10	100			7	7	7	7				1	
 447	D­¬ng Viªm B¹o	0	9	60	0			15	15	15	15				0	
 448	B¹o S¸t K×nh	0	3	60	0			5	5	5	5				0	
-449	Cµn Kh«n §¹i Na Di	0	12	1	0			23	23	23	23				0	
+449	Heaven and Earth Great Shift	0	12	1	0			23	23	23	23				0	
 450	Kim TrËn Kú	4	270	10	0			0	0	0	0	18			0	
 451	Thñy TrËn Kú	4	270	10	0			0	0	0	0	18			0	
 452	Méc TrËn Kú	4	180	10	0			0	0	0	0	18			0	
@@ -296,7 +296,7 @@ ID	Name	Type	LifeTime	Height	Speed	ZSpeed	ZAcceleration	CollidRangeW	CollidRange
 458	Quang Minh Ngò Hµnh TrËn (Tö)	0	12	1	0			23	23	23	23				0	
 459	YÓn Kú	0	12	1	0			11	11	11	11				0	
 460	Quang Minh Bót Ph¸p Th­êng	0	18	60	90			3	7	3	7				1	
-461	Linh Miªu VËn	0	2	10	0			23	23	23	23	65537		1	0	
+461	Spirit Cat Fortune	0	2	10	0			23	23	23	23	65537		1	0	
 462	MÞ Hoa	0	2	10	0			23	23	23	23	65537		1	0	
 463	Thu NguyÖt Phó	0	2	10	0			23	23	23	23	65537		1	0	
 464	§iÖp O¸n	0	2	10	0			23	23	23	23	65537		1	0	
@@ -304,12 +304,12 @@ ID	Name	Type	LifeTime	Height	Speed	ZSpeed	ZAcceleration	CollidRangeW	CollidRange
 466	Méng Xµ	0	2	10	0			23	23	23	23	65537		1	0	
 467	Loan Phông Cöu Thiªn	0	2	10	0			23	23	23	23			1	0	
 468	Loan Phông Cöu Thiªn (Nhá)	0	15	75	90			3	3	3	3				1	
-469	§o¹n Cèt Tr¶o	0	2	60	0			3	3	3	3				0	
+469	Bone-Severing Claw	0	2	60	0			3	3	3	3				0	
 470	B¨ng HuyÕt Ên B¹o Tr¸c	3	2	60	0			7	7	7	7				0	
 471	HiÖu qu¶ kú tö	0	2	1	0			17	17	17	17				0	
 472	HÊp HuyÕt Ên HÊp HuyÕt	3	2	60	0			3	3	3	3				0	
-473	Hµn B¨ng Miªn Ch­ëng	0	105	90	50			5	5	5	5				1	
-474	L¹c Hoa QuyÕt	0	2	10	0			3	3	3	3				0	
+473	Frost Cotton Palm	0	105	90	50			5	5	5	5				1	
+474	Falling Flower Art	0	2	10	0			3	3	3	3				0	
 475	§µo Hoa Ch­íng	0	270	10	1			13	13	13	13				1	
 476	Mª X¶o QuyÕt	0	180	10	0			11	11	11	11				0	
 477	B¸ch §iÖp Nghªnh H­¬ng QuyÕt	0	2	10	0			5	5	5	5				0	
@@ -319,8 +319,8 @@ ID	Name	Type	LifeTime	Height	Speed	ZSpeed	ZAcceleration	CollidRangeW	CollidRange
 481	Cöu Vü Hoa Tiªn QuyÕt (§iªu Uy)	0	36	1	30			11	11	11	11				1	
 482	boss Giai VËn Ch­ëng Ph¸p 1	0	15	60	150			3	3	3	3				1	
 483	boss Giai VËn Ch­ëng Ph¸p 2	0	9	60	0			23	23	23	23				0	
-484	Vá chuèi	0	1080	1	0			5	5	5	5				0	
-485	BÉy kÑp	0	1080	1	0			5	5	5	5				0	
+484	Banana Peel	0	1080	1	0			5	5	5	5				0	
+485	Trap Clamp	0	1080	1	0			5	5	5	5				0	
 486	§Çm lÇy	0	1080	1	0			13	13	13	13				0	
 487	Lam Quang CÇu	0	90	1	10			5	5	5	5				1	
 488	B¨ng Phong QuyÕt	0	360	60	10			5	5	5	5	9			3	

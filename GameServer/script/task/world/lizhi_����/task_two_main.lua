@@ -11,7 +11,7 @@ Include("\\script\\task\\world\\task_trigger_list.lua");
 
 function task_01_00()
     local szTalk = {
-        "V·n bèi vÊn an l·o l·o.",
+        "Greetings, your humble servant pays respects, elder.",
         "Ta víi ng­¬i kh«ng quen biÕt, cã chuyÖn g× kh«ng?",
         "T¹i h¹ cã mét ng­êi b¹n bÞ giÕt, trªn thi thÕ t×m ®­îc {Phi Béc kim ch©m}, thiÕt nghÜ ®©y lµ vËt phÈm cña §­êng M«n, t¹i h¹ muèn nhê L·o L·o ®iÒu tra xem ai lµ hung thñ.",
         "Mét ngµy ta cßn ®øng trong §­êng M«n sÏ tu©n thñ theo gia ph¸p, kh«ng cÇn <sex> ra tay.",
@@ -97,7 +97,7 @@ function two_05_01()
         "Th× sao nµo?",
         "Xi Háa gi¸o ®ang sö dông tÊm b¶n ®å S¬n Hµ lµ b¶o vËt thÇn bÝ mµ H¹ HÇu CÇm b¶o ng­¬i mang tíi. Lóc ®ã mét ng­êi phô n÷ tªn H­íng Ty Thanhra lÖnh ta ph¶i giÕt L«i Th¾ng, ®o¹t lÊy m¶nh b¶n ®å S¬n Hµ X· T¾c, tiÕc thay ta kh«ng t×m ®­îc.",
         "ChÝnh v× vËy ng­¬i míi t×m ®­îc ¸m khÝ cña ta nh­ng ta vÉn kh«ng hiÓu v× sao {H¹ HÇu CÇm} b¶o ng­¬i mang m¶nh S¬n Hµ X· T¾c ®Õn, ng­¬i vÒ hái l¹i xem!",
-        "§a t¹ c« n­¬ng!"
+        "Many thanks, miss!"
     };
     TalkEx("two_05_02", szTalk);
 end;
@@ -127,7 +127,7 @@ function two_06_01()
         "Hõm! {Hãa ®éc cao} ®óng lµ thuèc gi¶i nh­ng cã thªm {ThiÒm T«} v« sÏ lµ lo¹i ®éc ®Þnh kú ph¸t t¸c, nÕu kh«ng cã thuèc gi¶i kÞp sÏ ®au ®ín mµ chÕt, ¶ ®· uy hiÕp ta lµm nhiÒu ®iÒu cã lçi víi l­¬ng t©m.",
         "Kh«ng thÓ tr¸ch c« n­¬ng, vËy c« cã biÕt m¶nh S¬n Hµ X· T¾c cña Xi Háa gi¸o ®em ®i ®©u kh«ng?",
         "H×nh nh­ Xi Háa gi¸o ®ang ©m m­u lín ë {§«ng H¶i H¶i T©n}, ng­¬i thö ®Õn ®ã xem thö!",
-        "§­îc! T¹i h¹ lªn ®­êng ngay!"
+        "Very well! I set out at once!"
     };
     TalkEx("two_06_02", szTalk);
 end;
@@ -142,7 +142,7 @@ function two_07_00()
     local szSay = {
         "<sex> t×m ta cã chuyÖn g× kh«ng?",
         "Liªn quan Xi Háa gi¸o/about_chj",
-        "Liªn quan H¹ HÇu Liªn/about_xhl"
+        "Concerning Xiahou Lian/about_xhl"
     };
     SelectSay(szSay);
 end;

@@ -33,12 +33,12 @@ function need_normal_suit()
 		"A C®n chi’n bµo/need_normal_argentina",
 		"B t Di÷t chi’n bµo/need_normal_england",
 		"Tÿ T∏t chi’n bµo/need_normal_italy",
-		"Cﬂn 5 bÈ, xin xem trang sau/need_normal_suit_page2")
+		"5 sets remaining, please see next page/need_normal_suit_page2")
 end;
 function need_normal_suit_page2()
 	Say("Ng≠¨i c«n loπi chi’n bµo nµo? T t c∂ c„ 10 bÈ chi’n bµo Æ” ch‰n:",
 		7,
-		"Cﬂn 5 bÈ, xin xem trang tr≠Ìc/need_normal_suit",
+		"5 sets remaining, please see previous page/need_normal_suit",
 		"∏i Phi chi’n bµo/need_normal_france",
 		"Phong Xa chi’n bµo/need_normal_holland",
 		"ß u Ng≠u chi’n bµo/need_normal_spain",
@@ -160,12 +160,12 @@ function need_strong_suit()
 		"A C®n chi’n bµo/need_strong_argentina",
 		"B t Di÷t chi’n bµo/need_strong_england",
 		"Tÿ T∏t chi’n bµo/need_strong_italy",
-		"Cﬂn 5 bÈ, xin xem trang sau/need_strong_suit_page2")
+		"5 sets remaining, please see next page/need_strong_suit_page2")
 end;
 function need_strong_suit_page2()
 	Say("Ng≠¨i c«n loπi chi’n bµo nµo? T t c∂ c„ 10 bÈ chi’n bµo Æ” ch‰n:",
 		7,
-		"Cﬂn 5 bÈ, xin xem trang tr≠Ìc/need_strong_suit",
+		"5 sets remaining, please see previous page/need_strong_suit",
 		"∏i Phi chi’n bµo/need_strong_france",
 		"Phong Xa chi’n bµo/need_strong_holland",
 		"ß u Ng≠u chi’n bµo/need_strong_spain",
@@ -287,12 +287,12 @@ function need_sexy_suit()
 		"A C®n chi’n bµo/need_sexy_argentina",
 		"B t Di÷t chi’n bµo/need_sexy_england",
 		"Tÿ T∏t chi’n bµo/need_sexy_italy",
-		"Cﬂn 5 bÈ, xin xem trang sau/need_sexy_suit_page2")
+		"5 sets remaining, please see next page/need_sexy_suit_page2")
 end;
 function need_sexy_suit_page2()
 	Say("Ng≠¨i c«n loπi chi’n bµo nµo? T t c∂ c„ 10 bÈ chi’n bµo Æ” ch‰n:",
 		7,
-		"Cﬂn 5 bÈ, xin xem trang tr≠Ìc/need_sexy_suit",
+		"5 sets remaining, please see previous page/need_sexy_suit",
 		"∏i Phi chi’n bµo/need_sexy_france",
 		"Phong Xa chi’n bµo/need_sexy_holland",
 		"ß u Ng≠u chi’n bµo/need_sexy_spain",
@@ -414,12 +414,12 @@ function need_amortta_suit()
 		"A C®n chi’n bµo/need_amortta_argentina",
 		"B t Di÷t chi’n bµo/need_amortta_england",
 		"Tÿ T∏t chi’n bµo/need_amortta_italy",
-		"Cﬂn 5 bÈ, xin xem trang sau/need_amortta_suit_page2")
+		"5 sets remaining, please see next page/need_amortta_suit_page2")
 end;
 function need_amortta_suit_page2()
 	Say("Ng≠¨i c«n loπi chi’n bµo nµo? T t c∂ c„ 10 bÈ chi’n bµo Æ” ch‰n:",
 		7,
-		"Cﬂn 5 bÈ, xin xem trang tr≠Ìc/need_amortta_suit",
+		"5 sets remaining, please see previous page/need_amortta_suit",
 		"∏i Phi chi’n bµo/need_amortta_france",
 		"Phong Xa chi’n bµo/need_amortta_holland",
 		"ß u Ng≠u chi’n bµo/need_amortta_spain",

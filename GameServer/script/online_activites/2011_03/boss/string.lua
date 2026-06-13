@@ -2,7 +2,7 @@ VET_STR_201103_EVENTBOSS_LOG_TITLE = "Hoat dong gio to Hung Vuong 2011 ";
 
 VET_TB_201103_EVENTBOSS_LOG_ACTION_LIST = 
 {
-	"NhËn ®­îc tõ %s",
+	"Received from %s",
 	"Tiªu diÖt %s",
 }
 
@@ -27,11 +27,11 @@ VET_TB_201103_EVENTBOSS_NPC_NAME =
 
 VET_TB_201103_EVENTBOSS_ITEM_TITLE = 
 {
-	"B¸nh ch­ng",
-	"B¸nh ch­ng h¶o h¹ng",
+	"Sticky Rice Cake",
+	"Premium Banh Chung",
 	"Tói nguyªn liÖu",
 	"Xu",
 	"BÝ quyÕt b¸nh ch­ng",
-	"§¹i ng©n phiÕu",
-	"L¸ gãi b¸nh",
+	"Great Silver Note",
+	"Wrapping Leaf",
 }

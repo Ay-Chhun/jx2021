@@ -1,7 +1,7 @@
 --°²È«Ç¿»¯
 
 function OnUse()
-	Say("Sö dông tİnh n¨ng c­êng hãa an toµn tiÕn hµnh c­êng hãa vò khİ, c­êng hãa thÊt b¹i sÏ kh«ng lµm rít cÊp. <color=red> (CÊp 11 trë lªn míi cã thÓ tiÕn hµnh c­êng hãa an toµn) <color>",2,"B¾t ®Çu/StartEnhance","Kh«ng cÇn ®©u/do_nothing")
+	Say("Sö dông tİnh n¨ng c­êng hãa an toµn tiÕn hµnh c­êng hãa vò khİ, c­êng hãa thÊt b¹i sÏ kh«ng lµm rít cÊp. <color=red> (CÊp 11 trë lªn míi cã thÓ tiÕn hµnh c­êng hãa an toµn) <color>",2,"Start/StartEnhance","Kh«ng cÇn ®©u/do_nothing")
 end
 
 function StartEnhance()

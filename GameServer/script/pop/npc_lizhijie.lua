@@ -5,7 +5,7 @@ Include("\\script\\task\\world\\task_head.lua");
 Include("\\script\\lib\\talktmp.lua");
 Include("\\script\\task\\global_task\\gtask_head.lua")
 
-g_NpcName = "<color=green>Quû ¶nh Bót Lý ChÝ KiÖt<color>: ";
+g_NpcName = "<color=green>Ghost Shadow Brush Ly Chi Kiet<color>:";
 
 TMAIN = {};
 TMAIN_Action = {};
@@ -69,7 +69,7 @@ function OnRemove(nRemoveIdx)
 end
 
 function GiveKG()
-	Msg2Player("NhËn ®­îc khÈu cung");
-	Talk(1, "", "NhËn ®­îc khÈu cung");
+	Msg2Player("Received the confession");
+	Talk(1, "", "Received the confession");
 	gf_AddItemEx({2, 96, 27, 1}, "KhÈu cung cña Lý ChÝ KiÖt");  --»ñµÃ¿Ú¹©
 end

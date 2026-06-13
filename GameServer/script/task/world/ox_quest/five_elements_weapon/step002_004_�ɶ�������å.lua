@@ -11,7 +11,7 @@
 Include("\\script\\task\\world\\ox_common\\common.lua");
 
 quest_giver = cf_ox_SetColor("L­u Manh", "green")..":"
-quest_title = cf_ox_SetColor("Th¨m dß", "yellow").."\n"
+quest_title = cf_ox_SetColor("Investigate", "yellow").."\n"
 quest_detail = cf_ox_SetColor("Quay l¹i Bé §Çu ë Thµnh §« håi b¸o.", "gray").."\n\n"
 quest_description_1 = quest_giver.."Xin tha m¹ng…B¾t cãc tiÓu th­ h«m ®ã còng chØ lµ lµm theo mÖnh lÖnh cña Bang chñ vµ L·o ®¹i, lo¹i nh·i nhÐp nh­ ta chØ biÕt lµm theo. µ \n h«m ®Õn chç Ch©u gia ta ta cßn ph¸t hiÖn…a..®au qu¸…cøu..."
 quest_confirm = ""

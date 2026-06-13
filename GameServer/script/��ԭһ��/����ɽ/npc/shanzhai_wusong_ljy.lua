@@ -18,7 +18,7 @@ end
 function StartTask001()
 local strMain = {
 		"Ng­¬i ®­îc Thêi Thiªn ®Æc c¸ch ®Õn? HiÖn nay d­íi ch©n nói Long S¬n cã mét ®¸m quan binh, h·y ®Õn ®ã tiªu trõ chóng.",
-		"§ång ý",
+		"Agree",
 		"§¸nh giÆc tr­íc tiªn ph¶i b¾t t­íng, chØ cÇn ng­¬i ®¸nh b¹i tªn thñ lÜnh <color=green>L­¬ng Trung Th­<color>, lÊy ®­îc <color=green>Trung Th­ LÖnh<color> th× kh«ng cÇn ®¸nh chóng còng tù b¹i råi.",
 }
 	CTask:TalkEx(strMain)	

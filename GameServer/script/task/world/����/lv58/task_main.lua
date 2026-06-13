@@ -13,11 +13,11 @@ Include("\\script\\task\\world\\task_award.lua");
 
 --ËÎ³¯ÊÖÐÅ
 GiftData = {
-	[1] = {2,0,374,"C¸ sÊy kh«"},
-	[2] = {2,0,375,"VÞt quay"},
-	[3] = {2,0,376,"Ngçng hÊp ®Ëu xanh"},
-	[4] = {2,0,377,"B¸nh tæ"},
-	[5] = {2,0,378,"B¸nh Ýt mÆn"},
+	[1] = {2,0,374,"Dried fish"},
+	[2] = {2,0,375,"Roast duck"},
+	[3] = {2,0,376,"Steamed goose with mung beans"},
+	[4] = {2,0,377,"Bird's-nest cake"},
+	[5] = {2,0,378,"Small salted cake"},
 }
 
 --ÁìÈ¡½Óº¢×ÓÈÎÎñ
@@ -27,9 +27,9 @@ local strTalk = {
 	"Nghe nãi <sex> ë §¹i Lý ®· gióp rÊt nhiÒu ®¹i sù! Quèc s­ ta còng v« cïng c¶m kÝch <sex>.",
 	"Quèc s­ qu¸ khen, cã g× chØ b¶o t¹i h¹ kh«ng?",
 	"Kh«ng d¸m! Cã thÓ thay l·o phu ®Õn Thiªn Ba D­¬ng Phñ mét chuyÕn kh«ng?",
-	"Cã chuyÖn g× sao?",
+	"Is something the matter?",
 	"Nhi tö §æng Ca Minh ®Õn D­¬ng M«n häc vâ, muèn vÒ th¨m phô th©n, nh­ng ch­a quen ®­êng thuéc lèi, phiÒn <sex> ®Õn D­¬ng M«n ®ãn vÒ.",
-	"T¹i h¹ ®i ngay!",
+	"This humble one goes now!",
 	"§a t¹ <sex>. PhiÒn <sex> ®Õn D­¬ng M«n b¸o l¹i cho Xa Th¸i Qu©n biÕt viÖc nµy!",
 	}
 	
@@ -91,7 +91,7 @@ function task_002_01()
 
 local strSay = {
 	"Cã chót thµnh ý, xin nhËn cho!",
-	"§a t¹!/#reward(1)",
+	"Thank you!/#reward(1)",
 	"ChØ lµ viÖc män, sè ng©n l­îng nµy t¹i h¹ kh«ng d¸m nhËn!/#reward(2)",
 	}
 	
@@ -127,7 +127,7 @@ local strTalk = {};
 			"Cã viÖc nµy muèn nhê <sex> gióp ®ì, nh­ng do mÊy h«m tr­íc thÊy <sex> vÊt v¶ nªn kh«ng d¸m nhê!",
 			"T¹i h¹ lµ ng­êi häc vâ chØ bá chót c«ng søc ®©u cã ®¸ng g×, xin Quèc s­ cø nãi!",
 			"B¹ch Thñy ®éng ë Vò L¨ng s¬n cã rÊt nhiÒu D¬i ®éc. <sex> cã thÓ gióp ta b¾t 20 con kh«ng?",
-			"§­îc! T¹i h¹ ®i ngay!",
+			"Very well! I will go at once!",
 			}
 		
 		TalkEx("",strTalk);
@@ -153,7 +153,7 @@ function buy_gift_talk(index)
 local strSay = {
 	"Kh¸ch quan muèn dïng g×? "..GiftData[index][4].." kh¸ch quan cã muèn mua kh«ng?",
 	"Mua 1 phÇn/#buy_gift("..index..")",
-	"Kh«ng mua/no"
+	"Don't buy/no"
 	}
 	SelectSay(strSay)
 	return
@@ -166,10 +166,10 @@ local strTalk = {};
 	
 	if Pay(50000) == 1 then
 		AddItem(GiftData[index][1],GiftData[index][2],GiftData[index][3],1,1)
-		strTalk = {"§a t¹, ®a t¹!"};
+		strTalk = {"Thank you, thank you!"};
 		TalkEx("",strTalk);
 	else
-		strTalk = {"Kh«ng cã ng©n l­îng µ?"};
+		strTalk = {"You have no silver?"};
 		TalkEx("",strTalk);
 	end
 end
@@ -249,7 +249,7 @@ end
 function task_112_00()
 
 local strTalk = {
-		"<sex> vÊt v¶ qu¸!",
+		"<sex>, you have worked so hard!",
 		"Kh«ng sao, t¹i h¹ d­ søc ®Ó giÕt h¾n.",
 		"Sau nµy cßn nhiÒu viÖc nhê ®Õn <sex>, b©y giê h·y nghØ ng¬i ®·!",
 		}
@@ -272,7 +272,7 @@ local strTalk = {
 	"BÊt luËn chóng lîi h¹i thÕ nµo, t¹i h¹ còng kh«ng chèi tõ.",
 	"<sex> qu¶ lµ hµo hiÖp, nh­ng nÕu <sex> cã ®ång ®éi hç trî sÏ tèt h¬n!",
 	"T¹i h¹ biÕt råi, lËp tøc ®Õn {B¹ch Thñy ®éng} ®©y.",
-	"Xin <sex> b¶o träng!",
+	"Take care, <sex>!",
 	}
 	
 	TalkEx("",strTalk);
@@ -308,8 +308,8 @@ local strTalk = {
 	Earn(100000);
 	TalkEx("",strTalk);
 	SetTask(TASK_DL_LV60_ID,8);
-	Msg2Player("§em ng©n l­îng ®Õn §¹i Lý cho TrÞnh Qu¸n Chi.");
-	TaskTip("§em ng©n l­îng ®Õn §¹i Lý cho TrÞnh Qu¸n Chi.");
+	Msg2Player("Bring the silver taels to Trinh Quan Chi in Dali.");
+	TaskTip("Bring the silver taels to Trinh Quan Chi in Dali.");
 	GivePlayerAward("Level_61", "xn_step_1",nil,nil,"YunTie",1);
 	GivePlayerExp(SkeyDali,"cihuoyecha")
 	GivePlayerEquipment("head","Level_64",1);
@@ -338,9 +338,9 @@ local strTalk = {};
 	if GetLevel() >= 80 then
 		strTalk = {
 			"Sù viÖc cña NhÞ Hoµng Tö v« cïng cÊp b¸ch, phiÒn <sex> ®Õn §¹i Lý tiªu trõ qu©n ph¶n lo¹n.",
-			"T¹i h¹ ®i ngay!",
+			"This humble one goes now!",
 			"§Çu lÜnh qu©n ph¶n lo¹n còng lµ ®éi tr­ëng hé vÖ cña NhÞ Hoµng Tö tªn §oµn Thõa ¢n, tªn nµy lµ mét cao thñ cã tiÕng ë §¹i Lý.",
-			"HiÖn giê hä ë ®©u?",
+			"Where are they now?",
 			"NhÊt ®Þnh ph¶i ®¸nh b¹i §oµn Thõa ¢n!",
 			} 	           
 		TalkEx("",strTalk);
@@ -360,7 +360,7 @@ end
 function task_018_00()
 
 local strTalk = {
-	"§oµn Thõa ¢n ë phÝa §«ng nam T©y Song B¶n N¹p.",
+	"Doan Thua An is to the southeast of Xishuangbanna.",
 	}
 	
 	TalkEx("",strTalk);
@@ -376,7 +376,7 @@ local strTalk = {
 	"T¹i h¹ ®· gÆp {NhÞ Hoµng Tö} nghe nãi lµ bÞ oan, trong {chiÕu ch­ cña Tiªn ®Õ §¹i Lý} vÉn muèn h¾n tiÕp tôc kÕ vÞ.",
 	"Cã chuyÖn nµy ­? ThËt buån c­êi, h¾n cã g× ®Ó chøng minh?",
 	"H¾n ®­a cho t¹i h¹ {chiÕu th­ cña Tiªn ®Õ}, kh«ng biÕt thËt hay gi¶.",
-	"Ng­¬i ®­a ta xem!",
+	"Hand it to me to see!",
 	"…",
 	"§óng lµ bót tÝch cña Tiªn ®Õ.",
 	"VËy ph¶i lµm sao?",
@@ -409,7 +409,7 @@ local nTime = GetTime() - GetTask(TASK_DL_LV80_TIME_ID);
 			"Kh«ng xong råi, Tam Hoµng Tö kh«ng chÞu tho¸i vÞ. Ta ®Þnh dïng uy lùc ®Ó bøc h¾n tho¸i vÞ. Kh«ng ngê h¾n l¹i ®­îc ng­êi cña Thiªn TÇm Th¸p hç trî ®­a vµo Thiªn TÇm Th¸p råi, kh«ng cßn c¸ch nµo kh¸c.",
 			"VËy giê ph¶i lµm sao?",
 			"<sex>, §¹i Lý nµy chØ cã m×nh <sex> lµ vâ c«ng cao c­êng. Mau truy b¾t Tam Hoµng Tö!",
-			"§­îc th«i!",
+			"Very well!",
 			}
 		TalkEx("task_019_02",strTalk);
 	else
@@ -426,7 +426,7 @@ function task_019_02()
 local strTalk = {};
 strTalk = {
 		"Tam Hoµng Tö rÊt thÝch ph¸o, h¾n hiÖn ë tÇng cuèi cïng cña Thiªn TÇm Th¸p. Ng­¬i ph¶i ®¸nh b¹i Cµn §¹t Bµ hé vÖ cña h¾n lÊy ®­îc ph¸o. Sau ®ã ®èt ph¸o lµm tÝn hiÖu gäi h¾n ra.",
-		"{Cµn §¹t Bµ} ë ®©u?",
+		"Where is {Qiandapo}?",
 		"H¾n hiÖn ë tÇng 1 Thiªn TÇm Th¸p.",
 	}		
 	TalkEx("",strTalk);
@@ -452,7 +452,7 @@ function task_021_00()
 local strTalk = {
 	"§· lÊy ®­îc {ph¸o hiÖu}, nh­ng ch­a cã {ngßi næ}.",
 	"Ngßi næ ®ang ë chç KhÈn Na La, ng­¬i ph¶i ®¸nh b¹i h¾n míi lÊy ®­îc.",
-	"{KhÈn Na La} ë ®©u?",
+	"Where is {Kinnara}?",
 	"H¾n ë tÇng 2 Thiªn TÇm Th¸p.",
 	}
 	

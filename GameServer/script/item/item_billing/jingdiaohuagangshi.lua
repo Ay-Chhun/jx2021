@@ -24,26 +24,26 @@ Zgc_cong_task_usemapid = {
 	{327,"¤ M«ng Bé"},
 	{401,"§iÓm Th­¬ng s¬n"},
 	{306,"Giang T©n Th«n"},
-	{307,"Phong §«"},
-	{405,"Ch©n nói Vò L¨ng"},
+	{307,"Phong Do"},
+	{405,"Foot of Vu Lang Mountain"},
 	{406,"Vò L¨ng s¬n"},
 	{326,"Mé TuyÕt s¬n trang"},
 	{310,"KiÕm M«n quan"},
 	{311,"Phôc Ng­u s¬n"},
 	{218,"Linh B¶o s¬n"},
-	{202,"H¹nh Hoa th«n"},
+	{202,"Hanh Hoa village"},
 	{151,"V©n Méng Tr¹ch"},			
-	{106,"Long TuyÒn Th«n"},
+	{106,"Long Tuyen Village"},
 	{107,"Vò Di s¬n"},
 	{103,"§«ng H¶i H¶i T©n 1"},
 	{104,"§«ng H¶i H¶i T©n 2"},
-	{102,"§µo Hoa ®¶o"},
+	{102,"Peach Blossom Island"},
 	{207,"NhÞ Long s¬n"},
 	{217,"D· Tr­ l©m"},
-	{208,"L­¬ng S¬n B¹c"},
+	{208,"Liang Son Bac"},
 	{604,"Nh¹n M«n quan"},
-	{601,"§¹i Th¶o Nguyªn 1"},
-	{602,"§¹i Th¶o Nguyªn 2"},
+	{601,"Great Grassland 1"},
+	{602,"Great Grassland 2"},
 	{600,"Bé l¹c V­¬ng Kú"},
 }
 TaskID_bfy_crt = 958
@@ -75,7 +75,7 @@ function jdhgs_use()
 		Talk(1,"end_dialog","Xin x¸c nhËn trªn ng­êi cã Hoa c­¬ng th¹ch vµ Sinh ThÇn C­¬ng!")
 		return
 	elseif GetItemCount(2,0,545) < 1 then
-		Talk(1,"end_dialog","Muèn g¹t ta µ?")
+		Talk(1,"end_dialog","Trying to fool me?")
 		return
 	end
 	if DelItem(2,1,1023,1) ~= 1 or DelItem(2,0,545,1) ~=1 then
@@ -94,7 +94,7 @@ function jdhgs_use()
 				if IsTongMember() ~= 0 then
 					AddGlobalNews(GetTongName().."Cã tin bän hä ®ang giao ®Êu víi Bé Phi Yªn!")
 				end
-				WriteLogEx(strLogCaption, "gäi ra", "1", Zgc_conf_task_boss[boss_seq], "", GetTongName())
+				WriteLogEx(strLogCaption, "summon", "1", Zgc_conf_task_boss[boss_seq], "", GetTongName())
 			elseif boss_step <= 85 then
 				boss_seq = random(5,6)
 				npc_index = CreateNpc(Zgc_conf_task_boss[boss_seq],Zgc_conf_task_boss[boss_seq],mapID,X,Y,-1,1,0,0)
@@ -108,7 +108,7 @@ function jdhgs_use()
 					SendTongMessage(GetName().."Sö dông Sinh ThÇn Cang gäi ra:"..Zgc_conf_task_boss[boss_seq].."!")
 				end
 			end
-			WriteLogEx(strLogCaption, "Tinh §iªu Hoa C­¬ng", "1", Zgc_conf_task_boss[boss_seq], "", GetTongName())			
+			WriteLogEx(strLogCaption, "Jingdiao Huagang", "1", Zgc_conf_task_boss[boss_seq], "", GetTongName())			
 			SetNpcScript(npc_index,"\\script\\item\\conftaskbosscreate.lua")
 	end
 

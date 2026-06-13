@@ -55,7 +55,7 @@ function main ()
 	elseif ( GetCash() >=50 and GetCash() < 1000 )  then
 		Say("Cho tiÓu nh©n mÊy ®ång mua ch¸o ¨n ®i! TiÓu nh©n ®ãi ®Õn nçi ph¶i b¸n con chã ®Ó ®æi mµn thÇu ¨n. Ng­êi nãi xem cßn ai khæ h¬n ta chø?",2,"ThËt lµ téi nghiÖp!/zaimin10_yes","H·y t×m ng­êi kh¸c ®i!/zaimin_no")
 	elseif ( GetCash() < 50 )  then
-		Say("TiÒn trong ng­êi cßn İt h¬n ¨n mµy n÷a. Ng­êi nãi xem cßn ai khæ h¬n ta n÷a?",2,"Cho dï cã còng kh«ng cho ng­¬i! Cã tay cã ch©n ch¼ng lÏ kh«ng biÕt tù kiÕm sèng sao!/zaimin_zdd","Ng­êi cïng c¶nh ngé chí nªn chª c­êi/zaimin_zbd")
+		Say("TiÒn trong ng­êi cßn İt h¬n ¨n mµy n÷a. Ng­êi nãi xem cßn ai khæ h¬n ta n÷a?",2,"Cho dï cã còng kh«ng cho ng­¬i! Cã tay cã ch©n ch¼ng lÏ kh«ng biÕt tù kiÕm sèng sao!/zaimin_zdd","Those who share the same plight should not mock one another/zaimin_zbd")
 	end
 end;
 
@@ -96,7 +96,7 @@ function  zaimin500_yes()
 end;
 
 function  zaimin100_yes()
-	Talk(1,"","Oa! §óng lµ ra ®­êng gÆp quı nh©n!")
+	Talk(1,"","Wow! Truly I met a benefactor on the road!")
 	Pay(100)
 	TaskTip("B¹n ®· ®­a N¹n d©n 100 tiÒn ®ång!")
 end;
@@ -108,7 +108,7 @@ function  zaimin10_yes()
 end;
 
 function  zaimin_no()
-	Talk(1,"","Lµm ¬n bè thİ cho tiÓu nh©n vµi ®ång b¹c lÎ.")
+	Talk(1,"","Please give this humble one a few loose coins of silver.")
 end;
 function  zaimin_zdd()
 	Talk(1,"","¡n xin thËt ra còng kh«ng tÖ l¾m!")

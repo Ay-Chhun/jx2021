@@ -1,6 +1,6 @@
 Include("\\script\\vng\\lib\\vnglib_textdata.lua")
 
-g_szNpcName = "<color=green>Long Hæ Sø<color>: "
+g_szNpcName = "<color=green>Dragon Tiger Envoy<color>:"
 
 BHTA_SEASON = 1
 

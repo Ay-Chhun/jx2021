@@ -4,51 +4,51 @@ THIS_FILE = "\\script\\online\\abluemoon\\abluemoon_item2exp.lua"
 --===================================================用收集品换取经验开始============================================
 function item_to_exp()
 	if GetLevel() < 50 then
-		Say("<color=green>周善人<color>：毋以恶小而为之，毋以善小而不为。少侠年纪还轻，等锻炼到50级以后考虑来为难民奉献些粮食吧！",0)
+		Say("<color=green>Zhou the Philanthropist<color>: Do no evil because it is small, and neglect no good because it is small. Young hero, you are still young; once you have trained to level 50, consider coming to donate some food for the refugees!",0)
 		return
 	end
 	local nDay = tonumber(date("%y%m%d"))
 	if ( GetTask(ABLUEMOON_ITEM_TO_EXP) == nDay ) then
-		Say("<color=green>周善人<color>：毋以恶小而为之，毋以善小而不为。大侠今天已经捐献过粮食了！",0)
+		Say("<color=green>Zhou the Philanthropist<color>: Do no evil because it is small, and neglect no good because it is small. Great hero, you have already donated food today!",0)
 		return
 	end
-	Say("<color=green>周善人<color>：连年的战乱，给两国国民带来很多苦难。大侠如果有多余的物资，可以交给我去分发给灾民，作为奖励，我会给你加上一些经验。大侠考虑一下吧！",
+	Say("<color=green>Zhou the Philanthropist<color>: Years of war have brought much suffering to the people of both nations. Great hero, if you have surplus supplies, you may hand them to me to distribute to the disaster victims, and as a reward I will grant you some experience. Please consider it, great hero!",
 			3,
-			"我要捐献一些生活材料/gather",
-			"我要捐献一些做好的食品/food",
-			"我回去找找吧/end_say"
+			"I want to donate some living materials/gather",
+			"I want to donate some prepared food/food",
+			"Let me go look for some/end_say"
 			)
 end
 
 function gather()	
-	Say("<color=green>周善人<color>：大侠要捐献哪些东西呢？",
+	Say("<color=green>Zhou the Philanthropist<color>: What would you like to donate, great hero?",
 			7,
-			"我要捐献一些抽丝材料/#item2exp(1)",
-			"我要捐献一些制皮材料/#item2exp(2)",
-			"我要捐献一些挖矿材料/#item2exp(3)",
-			"我要捐献一些伐木材料/#item2exp(4)",
-			"我要捐献一些采药材料/#item2exp(5)",
-			"我要捐献一些收耕材料/#item2exp(6)",
-			"我回去找找吧/end_say"
+			"I want to donate some spinning materials/#item2exp(1)",
+			"I want to donate some leather-making materials/#item2exp(2)",
+			"I want to donate some mining materials/#item2exp(3)",
+			"I want to donate some lumber materials/#item2exp(4)",
+			"I want to donate some herb-gathering materials/#item2exp(5)",
+			"I want to donate some harvest materials/#item2exp(6)",
+			"Let me go look for some/end_say"
 			)
 end
 
 function food()
-	Say("<color=green>周善人<color>：大侠要捐献哪些东西呢？",4,
-		"我要捐献一些主食/#item2exp(7)",
-		"我要捐献一些菜肴/#item2exp(8)",
-		"我要捐献一些美酒/#item2exp(9)",
-		"我再考虑一下/end_say"
+	Say("<color=green>Zhou the Philanthropist<color>: What would you like to donate, great hero?",4,
+		"I want to donate some staple food/#item2exp(7)",
+		"I want to donate some dishes/#item2exp(8)",
+		"I want to donate some fine wine/#item2exp(9)",
+		"Let me think about it again/end_say"
 	)
 end
 
 function item2exp(nType)
 	local tSay = {}
 	for i = 1,getn(tItem2Exp[nType]) do
-		tSay[i] = "我要捐献"..tItem2Exp[nType][i][5].."个"..tItem2Exp[nType][i][1].."/#giveexp("..nType..","..i..")"
+		tSay[i] = "I want to donate"..tItem2Exp[nType][i][5].." points"..tItem2Exp[nType][i][1].."/#giveexp("..nType..","..i..")"
 	end
-	tSay[getn(tSay)+1] = "我再考虑一下/end_say"
-	Say("<color=green>周善人<color>：大侠要捐献哪些东西呢？",getn(tSay),tSay	)	
+	tSay[getn(tSay)+1] = "Let me think about it again/end_say"
+	Say("<color=green>Zhou the Philanthropist<color>: What would you like to donate, great hero?",getn(tSay),tSay	)	
 end
 
 function wantexp()
@@ -62,11 +62,11 @@ function giveexp(ntype,nlevel)
 	local Particular = tItem2Exp[ntype][nlevel][4]
 	local neednum = tItem2Exp[ntype][nlevel][5]
 	if GetItemCount(Genre,Detail,Particular) < neednum then
-		Say("<color=green>周善人<color>：大侠身上没有足够的材料哦！",0)
+		Say("<color=green>Zhou the Philanthropist<color>: You do not have enough materials on you, great hero!",0)
 		return
 	end
 	if DelItem(Genre,Detail,Particular,neednum) == 1 then
-		Msg2SubWorld("大侠 "..GetName().." 在成都周善人处为灾民捐献了大量"..tItem2Exp[ntype][nlevel][1].."，被百姓广为传颂！")
+		Msg2SubWorld("Great hero"..GetName().." donated a large amount for the disaster victims at Zhou the Philanthropist in Chengdu"..tItem2Exp[ntype][nlevel][1]..", and is widely praised by the people!")
 		ApplyRelayShareData("item2exp_count", nDay, 0, THIS_FILE, "giveexp_go")
 	end
 end
@@ -88,13 +88,13 @@ function giveexp_go(szKey, nKey1, nKey2, nCount)
 	if count == 1 or mod(count,100) == 0 then  --彩蛋～
 		SetTask(ABLUEMOON_ITEM_TO_EXP,nDay)
 		ModifyExp(Exp*2)
-		Msg2Player("你获得"..(Exp*2).."点经验！")
-		Say("<color=green>周善人<color>：谢谢大侠为国民作出的奉献！由于你是今天第<color=yellow>"..count.."<color>位捐献的人，特别给你<color=yellow>两倍<color>的奖励，以示鼓励！",0)
+		Msg2Player("Obtained"..(Exp*2).."EXP points!")
+		Say("<color=green>Zhou the Philanthropist<color>: Thank you, great hero, for your contribution to the people! Since you are the <color=yellow>"..count.."<color> donor today, you receive a special <color=yellow>double<color> reward as encouragement!",0)
 	else
 		SetTask(ABLUEMOON_ITEM_TO_EXP,nDay)
 		ModifyExp(Exp)
-		Msg2Player("你获得"..Exp.."点经验！")
-		Say("<color=green>周善人<color>：谢谢大侠为国民作出的奉献！你是今天第<color=yellow>"..count.."<color>位捐献的人。如果你是第一位或者整百位的捐献者，将会有<color=yellow>两倍<color>的奖励哦！",0)		
+		Msg2Player("Obtained"..Exp.."EXP points!")
+		Say("<color=green>Zhou the Philanthropist<color>: Thank you, great hero, for your contribution to the people! You are the <color=yellow>"..count.."<color> donor today. If you are the first or every hundredth donor, you will receive a <color=yellow>double<color> reward!",0)		
 	end
 end
 
@@ -104,85 +104,85 @@ end
 
 tItem2Exp = {  --换取经验所需生活材料
 	[1] = { --丝
-					{"兔毛",2,9,1,999},
-					{"蚕丝",2,9,2,999},
-					{"五色丝",2,9,3,799},
-					{"狼蛛丝",2,2,52,799},
-					{"血蚕丝",2,2,53,599},
-					{"灵蛛丝",2,2,54,300},
-					{"金蚕丝",2,2,55,300},
-					{"冷虫丝",2,9,4,300},
+					{"Rabbit Fur",2,9,1,999},
+					{"Silkworm Silk",2,9,2,999},
+					{"Five-Color Silk",2,9,3,799},
+					{"Wolf Pearl Thread",2,2,52,799},
+					{"Blood Silkworm Silk",2,2,53,599},
+					{"Spirit Pearl Thread",2,2,54,300},
+					{"Golden Silkworm Thread",2,2,55,300},
+					{"Cold Insect Silk",2,9,4,300},
 	},
 	[2] = { --皮
-					{"狼皮",2,2,15,999},
-					{"虎皮",2,2,16,999},
-					{"蛇皮",2,2,18,799},
-					{"狐皮",2,2,17,799},
-					{"白虎之皮",2,2,46,599},
-					{"熊皮",2,2,20,300},
-					{"鸾鸟羽披",2,10,7,300},
-					{"山狮之皮",2,2,47,300},
+					{"Wolf Hide",2,2,15,999},
+					{"Tiger Hide",2,2,16,999},
+					{"Snake Hide",2,2,18,799},
+					{"Fox Hide",2,2,17,799},
+					{"White Tiger Hide",2,2,46,599},
+					{"Bear Hide",2,2,20,300},
+					{"Roc Feather Cloak",2,10,7,300},
+					{"Mountain Lion Hide",2,2,47,300},
 	},
 	[3] = { --矿
-					{"精铁",2,2,1,999},
-					{"百炼钢",2,2,2,999},
-					{"乌金石",2,8,5,799},
-					{"寒铁",2,2,4,799},
-					{"太白精金",2,2,5,599},
-					{"玄铁",2,2,6,300},
-					{"天青石",2,2,36,300},
-					{"黑钨石",2,2,37,300},
+					{"Refined Iron",2,2,1,999},
+					{"Hundred-Forged Steel",2,2,2,999},
+					{"Black Gold Stone",2,8,5,799},
+					{"Cold Iron",2,2,4,799},
+					{"Taibai Refined Gold",2,2,5,599},
+					{"Black Iron",2,2,6,300},
+					{"Sky-Blue Stone",2,2,36,300},
+					{"Black Onyx Stone",2,2,37,300},
 	},
 	[4] = { --木
-					{"松木",2,2,41,999},
-					{"杨木",2,2,42,999},
-					{"杉木",2,2,43,799},
-					{"铁木",2,2,44,799},
-					{"梧桐木",2,2,45,599},
-					{"重木",2,2,9,300},
-					{"铁樟木",2,2,10,300},
-					{"铁线木",2,2,11,300},
+					{"Pine Wood",2,2,41,999},
+					{"Poplar Wood",2,2,42,999},
+					{"Cedar Wood",2,2,43,799},
+					{"Iron Wood",2,2,44,799},
+					{"Phoenix Tree Wood",2,2,45,599},
+					{"Heavy Wood",2,2,9,300},
+					{"Iron Camphor Wood",2,2,10,300},
+					{"Iron Thread Wood",2,2,11,300},
 	},
 	[5] = { --采药
-					{"巴豆",1,2,8,1998},
+					{"Castor Bean",1,2,8,1998},
 					{"藏红花",1,2,1,1998},
 					{"桔梗",1,2,2,1998},
-					{"黄连",1,2,3,1998},
-					{"蝉蜕",1,2,9,1599},
+					{"Yellow Coptis",1,2,3,1998},
+					{"Cicada Slough",1,2,9,1599},
 					{"田七",1,2,10,999},
-					{"穿山甲",1,2,11,899},
-					{"麝香",1,2,4,799},					
+					{"Pangolin Scale",1,2,11,899},
+					{"Kui Xiang",1,2,4,799},					
 	},
 	[6] = { --收耕
-					{"光通麻",1,3,9,1299},
-					{"木耳",1,3,19,1299},
-					{"倾篱豆",1,3,10,1299},
-					{"石菌",1,3,20,1299},
-					{"绕明豆",1,3,11,1299},
-					{"竹肉",1,3,21,1299},
-					{"融泽谷",1,3,12,1299},
-					{"胡椒",1,3,22,1299},
-					{"甘蔗",1,3,13,999},
-					{"延精麦",1,3,14,899},
-					{"淳和麦",1,3,15,799},
-					{"游龙栗",1,3,16,699},	
+					{"Cnidium",1,3,9,1299},
+					{"Wood Ear Fungus",1,3,19,1299},
+					{"Tilt Pear Bean",1,3,10,1299},
+					{"Stone Mushroom",1,3,20,1299},
+					{"Rao Ming Bean",1,3,11,1299},
+					{"Bamboo Shoot Meat",1,3,21,1299},
+					{"Rongze Valley",1,3,12,1299},
+					{"Pepper",1,3,22,1299},
+					{"Sugarcane",1,3,13,999},
+					{"Yan Jing Wheat",1,3,14,899},
+					{"Chun He Wheat",1,3,15,799},
+					{"Roaming Dragon Chestnut",1,3,16,699},	
 	},
 	[7] = { --主食
-					{"饭团",1,1,2,250},
-					{"馒头",1,1,3,250},
-					{"花卷",1,1,4,220},
-					{"肉包",1,1,5,200},		
+					{"Rice Ball",1,1,2,250},
+					{"Steamed Bun",1,1,3,250},
+					{"Flower Roll",1,1,4,220},
+					{"Meat Bun",1,1,5,200},		
 	},
 	[8] = { --主菜
-					{"素炒竹肉",1,1,6,250},
-					{"家常四季豆",1,1,7,250},
-					{"炒豌豆角",1,1,8,220},
-					{"蒜茸生菜",1,1,9,200},		
+					{"Stir-fried Bamboo Shoots",1,1,6,250},
+					{"Homestyle Four-Season Beans",1,1,7,250},
+					{"Stir-fried Snap Peas",1,1,8,220},
+					{"Garlic Lettuce",1,1,9,200},		
 	},
 	[9] = { --酒
-					{"烧刀子",1,1,10,250},
-					{"女儿红",1,1,11,250},
-					{"稻花香",1,1,12,220},
-					{"醉生梦死",1,1,13,200},		
+					{"Roasted Knife Fish",1,1,10,250},
+					{"Daughter's Red",1,1,11,250},
+					{"Rice Blossom Fragrance",1,1,12,220},
+					{"Drunken Life Dreaming Death",1,1,13,200},		
 	},
 }

@@ -4,7 +4,7 @@
 function main()
 	Uworld1 = GetTask(1)
 	if Uworld1 == 5  then
-		Say("Cuèi cïng ta ®· gia nhËp ®­îc Vâ §ang. Ta quyÕt sÏ trë thµnh mét ®¹i hiÖp ®Ønh thiªn lËp ®Şa. §a t¹ tiÓu huynh ®Ö b¸o tin lµnh! Cã muèn ta truyÒn l¹i kinh nghiÖm kh«ng? ",2,"Muèn/yes","Kh«ng cÇn ®©u!/no")
+		Say("Cuèi cïng ta ®· gia nhËp ®­îc Vâ §ang. Ta quyÕt sÏ trë thµnh mét ®¹i hiÖp ®Ønh thiªn lËp ®Şa. §a t¹ tiÓu huynh ®Ö b¸o tin lµnh! Cã muèn ta truyÒn l¹i kinh nghiÖm kh«ng? ",2,"Yes/yes","Kh«ng cÇn ®©u!/no")
 	SetTask(1,6)
 	else
 		Talk(1,"","§a t¹ c¸c h¹ dÉn d¾t ta tíi ®Êt Trung Nguyªn! A men!")

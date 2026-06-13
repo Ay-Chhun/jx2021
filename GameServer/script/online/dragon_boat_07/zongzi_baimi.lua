@@ -15,6 +15,6 @@ function OnUse()
 			WriteLog("[ßoan Ng‰ 08] ng≠Íi ch¨i:  "..GetName().."T®ng"..baimi_zongzi_num.." B∏nh ›t gπo th¨m th t bπi, k˝ hi÷u th t bπi:  "..add_flag)
 		end
 	else
-		WriteLog("[ßoan Ng‰ 08] ng≠Íi ch¨i:  "..GetName().."HÒy b·"..baimi_zongzi_num.." B∏nh ›t gπo træng th t bπi, k˝ hi÷u th t bπi:  "..del_flag)
+		WriteLog("[ßoan Ng‰ 08] ng≠Íi ch¨i:  "..GetName().."Cancel"..baimi_zongzi_num.." B∏nh ›t gπo træng th t bπi, k˝ hi÷u th t bπi:  "..del_flag)
 	end
 end

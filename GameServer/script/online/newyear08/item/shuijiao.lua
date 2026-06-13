@@ -7,7 +7,7 @@ function OnUse()
 	local nExp = floor(1000000*nLv^2/80^2);
 	Say("<color=green>sñi c¶o<color>: Sö dông sñi c¶o cã thÓ nhËn ®­îc <color=yellow>"..nExp.." <color> kinh nghiÖm. Dïng chø?",
 		2,
-		"§­îc/get_shuijiao_exp",
+		"Receive/get_shuijiao_exp",
 		"Kh«ng cÇn/nothing")
 end
 

@@ -155,7 +155,7 @@ function tm_assign_beast(bTag, nPlayerIndex)
 		local PlayerIndex = nPlayerIndex;
 		local sSay = format("Ng­¬i quyÕt ®Þnh muèn giao ThÇn Thó cho %s chø?", GetName());
 		PlayerIndex = oldPlayerIdx1;
-		Say(TM_TONG_AD_NPC..sSay, 2, format("§ång ý/#tm_assign_beast(2, %d)", nPlayerIndex), "Hñy bá/nothing");
+		Say(TM_TONG_AD_NPC..sSay, 2, format("Agree/#tm_assign_beast(2, %d)", nPlayerIndex), "Cancel/nothing");
 		return 2;
 	end
 	local oldPlayerIndex = PlayerIndex;
@@ -311,7 +311,7 @@ function tm_set_tongsorce(nSorce)
 				gf_Msg2Team(format("§iÓm linh lùc bang héi %s råi %d, tæng sè lµ %d", "T¨ng", nSorce, GetMissionV(i)));
 			else
 				SetMissionV(i, max(GetMissionV(i) + nSorce, 0));
-				gf_Msg2Team(format("§iÓm linh lùc bang héi %s råi %d, tæng sè lµ %d", "Gi¶m", -nSorce, GetMissionV(i)));
+				gf_Msg2Team(format("§iÓm linh lùc bang héi %s råi %d, tæng sè lµ %d", "Decrease", -nSorce, GetMissionV(i)));
 			end
 			return 1;
 		end
@@ -544,7 +544,7 @@ function tm_RankShow()
 	local tRezult = _tm_GetRankTable();
 	Msg2MSAll(tbTONGMELEE.missionID, "XÕp h¹ng bang héi lo¹n chiÕn:");
 	for i = 1, min(3, GetMissionV(tbTONGMELEE.mv_TongCount)) do
-		Msg2MSAll(tbTONGMELEE.missionID, format("XÕp h¹ng %d :%s[%d]", i, tRezult[i][1], tRezult[i][2]));	
+		Msg2MSAll(tbTONGMELEE.missionID, format("Rank %d :%s[%d]", i, tRezult[i][1], tRezult[i][2]));	
 	end
 	--Êý¾Ý¿âÅÅÃû
 	local s = SDB(TM_RANK_INMATCHREALM, 0, 0);

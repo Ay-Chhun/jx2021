@@ -15,8 +15,8 @@ g_szThisFile = "\\script\\online\\viet_event\\mooncake_08\\npc\\feiyan.lua"
 g_tbItem = 
 {
 	--		Ãû³Æ		G1	G2	G3		ÊýÁ¿ ÀàÐÍ
-	[1] = {"TiÓu Nh­ ý",	2,	1,	30030,	20,	1},
-	[2] = {"Chiªm Y Phæ",	0,	107,66,		1,	2},
+	[1] = {"Little Ruyi",	2,	1,	30030,	20,	1},
+	[2] = {"Zhanyi Manual",	0,	107,66,		1,	2},
 	[3] = {"Tö Hµ MËt tÞch",	0,	107,65,		1,	3},
 	[4] = {"Tö Hµ MËt tÞch",	0,	107,65,		1,	3},
 	[5] = {"Thiªn Hµ MËt tÞch",	0,	107,64,		1,	4},
@@ -88,8 +88,8 @@ function give_mooncake(nType)
 			SetTask(CAKE_DATE_08_MOONCAKE_VIET, nDate)
 			WriteLogEx(szLogTrungThuName,"nhËn",nExp,"®iÓm kinh nghiÖm")
 			local selTab = {
-						"Ta ­íc ®­îc 20 TiÓu Nh­ ý./#make_wish(1)",
-						"Ta ­íc ®­îc 1 Chiªm Y Phæ./#make_wish(2)",
+						"I wish for 20 Small Ruyi./#make_wish(1)",
+						"I wish for 1 Zhan Yi Manual./#make_wish(2)",
 						"Ta ­íc ®­îc 1 Tö Hµ MËt TÞch./#make_wish(3)",
 						"Ta ­íc ®­îc 1 Thiªn Hµ MËt TÞch./#make_wish(4)",
 						"Ta ­íc ®­îc tÊt c¶ nh÷ng mãn trªn./#make_wish(5)",
@@ -170,7 +170,7 @@ function add_item_ex(szItemName, genre, detail, particular, nItemNum)
 	nRetCode = AddItem(genre, detail, particular, nItemNum);
 	if nRetCode == 1 then
 		Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." c¸i "..szItemName);
-		WriteLogEx(szLogTrungThuName,"Phi YÕn tû tû",nItemNum,szItemName)
+		WriteLogEx(szLogTrungThuName,"Sister Phi Yen",nItemNum,szItemName)
 	else
 		WriteLog("["..g_szLogTitle.."]: [Account: "..GetAccount().."][Role Name:"..GetName().."] Obtain "..nItemNum.." "..szItemName.." Failed, return value = "..nRetCode);
 	end

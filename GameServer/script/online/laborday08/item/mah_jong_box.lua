@@ -34,17 +34,17 @@ end
 
 function get_mah_jong_1(index)
 	local tTemp = {}
-	local tMJTemp = {"§ång","§iÒu","V¹n ","T¹p"}
+	local tMJTemp = {"Tong","Tiao","V¹n ","Mixed"}
 	if get_total(index) <= 0 then
 		Talk(1,"OnUse","Trong r­¬ng M¹t ch­îc cña b¹n kh«ng cã "..tMJTemp[index + 1])
 		return
 	end
 	if index == 0 or index == 1 or index == 2 then--Í³¼ÆÓÐ¶àÉÙÍ²ÌõÍò
-		local szTemp = {"§ång","§iÒu","V¹n "}
+		local szTemp = {"Tong","Tiao","V¹n "}
 		local nFuncTemp = {0,1,2,3,4,5}
 		--×÷Îª²ÎÊý´«µÝ¸øget_mah_jong_2µÄ»°£¬1,3,5±íÊ¾È¡³ö1~9Í²ÌõÍò£»2£¬4£¬6±íÊ¾È¡³öÈ«²¿Í²ÌõÍò
 		local nFor = 1
-		tinsert(tTemp,"Ta muèn lÊy "..szTemp[index + 1].."1 ®Õn 9/#get_mah_jong_2("..nFuncTemp[index * 2 + 1]..")")
+		tinsert(tTemp,"Ta muèn lÊy "..szTemp[index + 1].."1 through 9/#get_mah_jong_2("..nFuncTemp[index * 2 + 1]..")")
 		for nFor = 1, 9, 1 do--²åÈëÈ¡³öÒ»Í²£¨Ìõ£¬Íò£©¶þÍ²£¨Ìõ£¬Íò£©¡­¡­µÄÈ«²¿Ñ¡Ïî
 			local nTaskTemp = TASK_MJ_TONG1 + index * 9 + nFor - 1
 			tinsert(tTemp,tMahJong[nFor + index * 9][1]..", cßn "..GetTask(nTaskTemp).."Tr­¬ng/#get_mah_jong_2("..nTaskTemp..")")
@@ -92,8 +92,8 @@ function get_mah_jong_2(index)
 				if GetTask(TASK_MJ_TONG1 + nFor + floor(index / 2) * 9 - 1) <= 0 then
 					--ÅÐ¶ÏÃ¿ÖÖÍ²ÓÐÃ»ÓÐÒ»¸ö
 					local tMJTemp = {
-						[0] = "§ång",
-						[2] = "§iÒu",
+						[0] = "Tong",
+						[2] = "Tiao",
 						[4] = "V¹n "
 					} 
 					Say("Trong r­¬ng M¹t ch­îc cña b¹n kh«ng cã "..nFor..tMJTemp[index],1,"Ta biÕt råi./#get_mah_jong_1("..floor(index / 2)..")")
@@ -118,8 +118,8 @@ function get_mah_jong_2(index)
 			local nGezi = 0--ÅÐ¶ÏÐèÒª¶àÉÙ¸ñ×Ó
 			if get_total(floor(index / 2)) <= 0 then
 				local tMJTemp = {
-					[1] = "§ång",
-					[3] = "§iÒu",
+					[1] = "Tong",
+					[3] = "Tiao",
 					[5] = "V¹n "
 				}
 				Talk(1,"OnUse","Trong r­¬ng M¹t ch­îc cña b¹n kh«ng cã g× c¶"..tMJTemp[index])
@@ -146,7 +146,7 @@ function get_mah_jong_2(index)
 			end
 			for nFor = 1, 4, 1 do
 				if GetTask(TASK_MJ_DONG + nFor - 1) < 3 then
-					local tszTemp = {"§«ng ","Nam ","T©y ","B¾c "}
+					local tszTemp = {"East","Nam ","West","North"}
 					Say(" -"..tszTemp[nFor].." kh«ng ®ñ 3 con!",1,"Ta biÕt råi/#get_mah_jong_1(3)")
 					return
 				end
@@ -182,10 +182,10 @@ function get_mah_jong_2(index)
 	local nLast = 0
 	if index == 1 or index == 3 or index == 5 or index == 7 then
 		local tMJTemp = {
-			[1] = "§ång",
-			[3] = "§iÒu",
+			[1] = "Tong",
+			[3] = "Tiao",
 			[5] = "V¹n ",
-			[7] = "T¹p"
+			[7] = "Mixed"
 		} 
 		Say(" ®· lÊy toµn bé "..tMJTemp[index].."!",1,"Ta biÕt råi./OnUse")--Èç¹ûÊÇÈ¡³öÈ«²¿Í²ÌõÍò
 		return

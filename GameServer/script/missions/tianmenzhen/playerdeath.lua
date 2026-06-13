@@ -23,7 +23,7 @@ function OnDeath(Launcher)
 		PlayerIndex = nKillerIndex;
 		nKillerName = GetName();
 		local nSex = GetSex();
-		local tSexName = {"Tha","Ng­êi ch¬i"};
+		local tSexName = {"Tha","Player"};
 		local nCamp = GetTask(TASKID_TMZ_PLAY_CAMP);
 		SetTask(TASKID_TMZ_KILL_PLAYER,GetTask(TASKID_TMZ_KILL_PLAYER)+1);
 		SetTask(TASKID_TMZ_KILL_NUMS,GetTask(TASKID_TMZ_KILL_NUMS)+1);

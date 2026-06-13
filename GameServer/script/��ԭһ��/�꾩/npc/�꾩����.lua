@@ -25,7 +25,7 @@ function main()
 		3,
 		"Thµnh §«/chengdu",
 		"TuyÒn Ch©u/quanzhou",
-		"Kh«ng ®i ®©u c¶/no")
+		"Nowhere at all/no")
 	else
 		local tbSay = {
 			"Thµnh §« (3 l­îng)/chengdu",
@@ -33,15 +33,15 @@ function main()
     		"T­¬ng D­¬ng (3 l­îng)/xiangyang",
     		"D­¬ng Ch©u (3 l­îng)/yangzhou",
     		"Phông T­êng (3 l­îng b¹c)/fengxiang",
-    		"§¹i Lý (3 l­îng)/dali",
+    		"Dali (3 taels)/dali",
 			}
 		local nMap = GetWorldPos()
 		if nMap == 200 then
-			tinsert(tbSay, "Vâ L©m Minh/wulinmeng")
+			tinsert(tbSay, "Wulin Alliance/wulinmeng")
 		else
-			tinsert(tbSay, "BiÖn Kinh (3 l­îng b¹c)/bianjing")
+			tinsert(tbSay, "Bianjing (3 taels of silver)/bianjing")
 		end
-		tinsert(tbSay, "Kh«ng ®i ®©u c¶/no")
+		tinsert(tbSay, "Nowhere at all/no")
 		Say("Lé phÝ chØ cã <color=yellow>3 l­îng<color> th«i, ng­¬i muèn ®i ®©u?",
 			getn(tbSay), tbSay)
 		return
@@ -68,7 +68,7 @@ end;
 function bianjing()
 	n=moneygo()
 	if n==0 then 
-		Talk(1,"","Cã tiÒn th× h·y ngåi xe!")
+		Talk(1,"","If you have money, then take the ride!")
 	else 
 		CleanInteractive();	--½â³ýÍæ¼Ò»¥¶¯¶¯×÷ added by yanjun 2006-3-14
 		i=random(1,4)
@@ -86,7 +86,7 @@ end
 function chengdu()
 	n=moneygo()
 	if n==0 then 
-		Talk(1,"","Cã tiÒn th× h·y ngåi xe!")
+		Talk(1,"","If you have money, then take the ride!")
 	else 
 		CleanInteractive();	--½â³ýÍæ¼Ò»¥¶¯¶¯×÷ added by yanjun 2006-3-14
 		i=random(1,3)
@@ -109,7 +109,7 @@ end
 function quanzhou()
 	n=moneygo()
 	if n==0 then 
-		Talk(1,"","Cã tiÒn th× h·y ngåi xe!")
+		Talk(1,"","If you have money, then take the ride!")
 	else 
 		CleanInteractive();	--½â³ýÍæ¼Ò»¥¶¯¶¯×÷ added by yanjun 2006-3-14
 		i=random(1,3)
@@ -128,7 +128,7 @@ end
 function xiangyang()
 	n=moneygo()
 	if n==0 then 
-		Talk(1,"","Cã tiÒn th× h·y ngåi xe!")
+		Talk(1,"","If you have money, then take the ride!")
 	else 
 		CleanInteractive();	--½â³ýÍæ¼Ò»¥¶¯¶¯×÷ added by yanjun 2006-3-14
 		i=random(1,4)
@@ -148,7 +148,7 @@ end
 function yangzhou()
 	n=moneygo()
 	if n==0 then 
-		Talk(1,"","Cã tiÒn th× h·y ngåi xe!")
+		Talk(1,"","If you have money, then take the ride!")
 	else 
 		CleanInteractive();	--½â³ýÍæ¼Ò»¥¶¯¶¯×÷ added by yanjun 2006-3-14
 		i=random(1,4)
@@ -169,7 +169,7 @@ end
 function fengxiang()
 	n=moneygo()
 	if n==0 then 
-		Talk(1,"","Cã tiÒn th× h·y ngåi xe!")
+		Talk(1,"","If you have money, then take the ride!")
 	else 
 		CleanInteractive();	--½â³ýÍæ¼Ò»¥¶¯¶¯×÷ added by yanjun 2006-3-14
 		i=random(1,4)
@@ -189,7 +189,7 @@ end;
 function dali()
 	n=moneygo()
 	if n==0 then 
-		Talk(1,"","Cã tiÒn th× h·y ngåi xe!")
+		Talk(1,"","If you have money, then take the ride!")
 	else 
 		CleanInteractive();	--½â³ýÍæ¼Ò»¥¶¯¶¯×÷ added by yanjun 2006-3-14
 		i=random(1,3)

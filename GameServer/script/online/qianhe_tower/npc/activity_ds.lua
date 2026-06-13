@@ -21,7 +21,7 @@ function qht_ds_introduce()
 	local tbSay = {
 		"Giíi thiÖu Thiªn TÇm HuyÔn C¶nh/qht_ds_introduce_hj",
 		"C¸ch thøc nhËn vµ c«ng dông cña Hæ phï/qht_ds_introduce_hf",
-		"\n rót lui/nothing",
+		"\n withdraw/nothing",
 	}
 	Say(Qht_Npc_Name..strTitle,getn(tbSay),tbSay);
 end
@@ -32,7 +32,7 @@ function qht_ds_introduce_hj()
 	local tbSay = {};
 	tbSay.msg = Qht_Npc_Name..strTitle;
 	tbSay.sel = {
-		{"\n rót lui","nothing"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -42,7 +42,7 @@ function qht_ds_introduce_hf()
 	local tbSay = {};
 	tbSay.msg = Qht_Npc_Name..strTitle;
 	tbSay.sel = {
-		{"\n rót lui","nothing"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -53,7 +53,7 @@ function qht_ds_awardinfo()
 	local tbSay = {};
 	tbSay.msg = Qht_Npc_Name..strTitle;
 	tbSay.sel = {
-		{"\n rót lui","nothing"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);	
 end
@@ -64,7 +64,7 @@ function qht_ds_goto()
 		"Vµo Thiªn TÇm HuyÔn C¶nh tÇng 1/#qht_ds_goto_qht(1)",
 		--"½øÈëÇ§Ñ°»Ã¾³¶þ²ã/#qht_ds_goto_qht(2)",
 		--"½øÈëÇ§Ñ°»Ã¾³Èý²ã/#qht_ds_goto_qht(3)",
-		"\n rót lui/nothing",
+		"\n withdraw/nothing",
 	}
 	Say(Qht_Npc_Name..strTitle,getn(tbSay),tbSay);
 end
@@ -75,14 +75,14 @@ function qht_ds_ibshop()
 		--"Í­ÎÆ»¢·ûÉÌµê/qht_ds_ibshop_tw",
 		--"ÒøÎÆ»¢·ûÉÌµê/qht_ds_ibshop_yw",
 		"Cöa tiÖm Kim Hæ phï/qht_ds_ibshop_jw",
-		"\n rót lui/nothing",
+		"\n withdraw/nothing",
 	}
 	Say(Qht_Npc_Name..strTitle,getn(tbSay),tbSay);
 end
 
 function qht_ds_ibshop_tw()
 	if qht_activity_isopen() ~= 1 then
-		Talk(1,"","Event ®· hÕt h¹n");
+		Talk(1,"","The event has expired");
 		return 0;
 	end
 	show_equip_shop(3022);
@@ -90,7 +90,7 @@ end
 
 function qht_ds_ibshop_yw()
 	if qht_activity_isopen() ~= 1 then
-		Talk(1,"","Event ®· hÕt h¹n");
+		Talk(1,"","The event has expired");
 		return 0;
 	end
 	show_equip_shop(3023);
@@ -98,7 +98,7 @@ end
 
 function qht_ds_ibshop_jw()
 	if qht_activity_isopen() ~= 1 then
-		Talk(1,"","Event ®· hÕt h¹n");
+		Talk(1,"","The event has expired");
 		return 0;
 	end
 	show_equip_shop(3024);

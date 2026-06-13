@@ -7,10 +7,10 @@ Include("\\script\\misc\\taskmanager.lua")
 --nKind == 1:seed 2:banruo tree 3:four souls tree 4:lucky star 5:Nuwa box 
 
 VET_XIAORUYI_USE_AWARD = {
-	{24, 40, "H¹t gièng"}, --1:seed
+	{24, 40, "Seed"}, --1:seed
 	{16, 20, "C©y b¸t nh· nhá"}, --2:banruo tree
-	{16, 60, "C©y Tø Linh"}, --3:four souls tree
-	{16, 140, "Ng«i sao may m¾n"},--4:lucky star
+	{16, 60, "Four Spirits Tree"}, --3:four souls tree
+	{16, 140, "Lucky Star"},--4:lucky star
 	{100, 50, "N÷ Oa B¶o H¹p"},--5:Nuwa box
 };
 
@@ -36,7 +36,7 @@ function vet_add_xiaoruyi_interface(nKind)
 			return
 		end
 		tTaskGroup:SetTask(nKind, 0);
-		gf_AddItemEx2({2, 1, 30030, VET_XIAORUYI_USE_AWARD[nKind][2]}, "TiÓu Nh­ ý", "Ho¹t ®éng gi¸ng sinh", "TiÓu Nh­ ý", 0, 1);
+		gf_AddItemEx2({2, 1, 30030, VET_XIAORUYI_USE_AWARD[nKind][2]}, "Little Ruyi", "Ho¹t ®éng gi¸ng sinh", "Little Ruyi", 0, 1);
 	else
 		Msg2Player(format("Dïng vËt phÈm %s%d/%d, dïng %d lÇn n÷a sÏ nhËn ®­îc %d TiÓu Nh­ ý.", VET_XIAORUYI_USE_AWARD[nKind][3], tTaskGroup:GetTask(nKind),	VET_XIAORUYI_USE_AWARD[nKind][1], VET_XIAORUYI_USE_AWARD[nKind][1] - tTaskGroup:GetTask(nKind), VET_XIAORUYI_USE_AWARD[nKind][2]));
 	end		

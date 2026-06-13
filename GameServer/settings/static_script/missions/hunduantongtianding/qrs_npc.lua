@@ -22,29 +22,29 @@ function ttd_entry_npc_main()
 		{"NhiÖm vô ngµy Th«ng Thiªn HuyÔn C¶nh",T3},
 		{"NhiÖm vô tuÇn Th«ng Thiªn HuyÔn C¶nh",T4},
 		{"§æi phÇn th­ëng", "OnOpenShopGroup1"},
-		{"KÕt thóc ®èi tho¹i","nothing"},
+		{"End conversation","nothing"},
 	};
 	
 	T2.msg = g_NpcName.."ChuyÕn ®i Th«ng Thiªn §Ønh thËp tö nhÊt sinh, c¸c vŞ nhí cÈn thËn. §iÒu kiÖn vµo nh­ sau: \n ph¶i tæ ®éi 5-8 thµnh viªn; \n    hÖ ph¸i#5;\n   cÊp ®é tÊt c¶ thµnh viªn tæ ®éi #lv80;  ";
 	T2.sel = {
 		{"trë l¹i",T1},
-		{"KÕt thóc ®èi tho¹i","nothing"},
+		{"End conversation","nothing"},
 	};
 	
 	T3.msg = g_NpcName.."Mçi ngµy chØ cã thÓ hoµn thµnh 1 lÇn, phÇn th­ëng ch­a nhËn sau khi hoµn thµnh sÏ kh«ng thiÕt lËp l¹i. \n    NhiÖm vô th«ng quan Th«ng Thiªn HuyÔn C¶nh: <color=green>4.000.000 kinh nghiÖm, Cæ Linh Th¹ch x 4<color>, \n    NhiÖm vô 1 lÇn lËt bµi thu phİ: <color=green>5.000.000 kinh nghiÖm, 3 Vµng, Cæ Linh Ngäc x 1<color>;";
 	T3.sel = {
 		{"\n Th«ng quan 1 lÇn Th«ng Thiªn HuyÔn C¶nh(%s)","tthj_daily_task"},
 		{"\n ¶i lËt bµi 1 lÇn (%s)","fanpai_daily_task"},
-		{"\n Ph¶n håi",T1},
-		{"KÕt thóc ®èi tho¹i","nothing"},
+		{"\n Feedback",T1},
+		{"End conversation","nothing"},
 	}
 	
 	T4.msg = g_NpcName.."Mçi tuÇn chØ cã thÓ hoµn thµnh 1 lÇn, phÇn th­ëng ch­a nhËn sau khi hoµn thµnh sÏ kh«ng thiÕt lËp l¹i. \n   Hoµn thµnh 4 lÇn nhiÖm vô Th«ng Thiªn HuyÔn C¶nh: <color=green>12.000.000 kinh nghiÖm, Cæ Linh Ngäc x 2<color>; \n  NhiÖm vô lËt bµi céng dån ®Õn 15 lÇn : <color=green>30.000.000 kinh nghiÖm, Cæ Linh Ngäc x 7<color>;";
 	T4.sel = {
 		{"\n Th«ng quan 4 lÇn Th«ng Thiªn HuyÔn C¶nh (%s)","tthj_week_task"},
 		{"\n ¶i lËt bµi 15 lÇn","fanpai_week_task"},
-		{"\n Ph¶n håi",T1},
-		{"KÕt thóc ®èi tho¹i","nothing"},
+		{"\n Feedback",T1},
+		{"End conversation","nothing"},
 	}
 	
 	local str1 = return_status(1);
@@ -60,7 +60,7 @@ function ttd_entry_npc_main()
 		temp_Talk(T1);
 	else
 		local strtab = {
-    		"KÕt thóc ®èi tho¹i/nothing",
+    		"End dialogue/nothing",
     		}
     	Say(g_NpcName..format("Lèi vµo ¶i %s®· ®ãng lÇn sau h·y ®Õn më!", "Hån §o¹n Th«ng Thiªn HuyÔn C¶nh"),
     		getn(strtab),
@@ -72,7 +72,7 @@ function qrs_talk_1()
 	Say(g_NpcName.."T¹i h¹ muèn tham gia Hån §o¹n Th«ng Thiªn HuyÔn C¶nh!",
 		2,
 		"\n vµo Th«ng Thiªn HuyÔn C¶nh/qrs_talk_1_1",
-		"\nKÕt thóc ®èi tho¹i/nothing")
+		"\nEnd conversation/nothing")
 end
 
 function qrs_talk_1_1()

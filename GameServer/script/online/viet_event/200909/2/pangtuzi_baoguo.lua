@@ -95,11 +95,11 @@ function main()
 	end
 	
 	-- doi 45 gi©y míi cã thÓ ¨n ®­îc n÷a	
-	StartTimeGuage("ThÞt N­íng",45,0,1)	
+	StartTimeGuage("Roasted Meat",45,0,1)	
 		
 	if GetTask(TSK_THONUONG_ACCEPT) == 1 then
 		set_task_thonuong(BYTE_COUNT_COLLECT, get_task_thonuong(BYTE_COUNT_COLLECT) + 1)
-		Msg2Player("Thu thËp ThÞt N­íng "..get_task_thonuong(BYTE_COUNT_COLLECT).."/20")
+		Msg2Player("Collect Roasted Meat"..get_task_thonuong(BYTE_COUNT_COLLECT).."/20")
 		if get_task_thonuong(BYTE_COUNT_COLLECT) == 20 then
 			SetTask(TSK_THONUONG_ACCEPT,2)
 			-- PhÇn th­ëng B¹ch Tiªn Sinh

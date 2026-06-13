@@ -6,14 +6,14 @@
 VET_201108_CAKE_LOG_TITLE = "Hoat dong nuong Banh Trung Thu 2011"
 
 VET_201108_TB_LOG_ACTION_LIST = {
-	[1] = "Mua cñi",
+	[1] = "Buy firewood",
      [2] = "KÝch ho¹t lß n­íng",
-	[3] = "NhËn ®­îc 5 B¸nh Th­îng H¹ng",
+	[3] = "Received 5 Premium Cakes",
 }
 
 VET_201108_STRING_LIST = {
 	[1] = "KÝch ho¹t lß n­íng b¸nh",
-	[2] = "Mua cñi  (gi¸ 30 vµng)",
+	[2] = "Buy firewood  (price 30 gold)",
 	[3] = "Tæ ®éi trªn 2 ng­êi míi cã thÓ kÝch ho¹t lß n­íng",
 	[4] = "ChØ cã ®éi tr­ëng míi cã thÓ kÝch ho¹t lß n­íng",
 	[5] = "Kh«ng tháa ®iÒu kiÖn kÝch ho¹t lß n­íng",
@@ -24,7 +24,7 @@ VET_201108_STRING_LIST = {
 	[10] = "Tæ ®éi cã thµnh viªn ®· tham gia ®ñ giíi h¹n %d lÇn n­íng b¸nh trong ngµy",
 	[11] = "§éi tr­ëng chØ cã thÓ kÝch ho¹t 1 Lß N­íng trong cïng lóc",
 	[12] = "C¸c h¹ mang kh«ng ®ñ 30 vµng",
-	[13] = "Sè l­îng mua",
+	[13] = "Quantity to buy",
 	[14] = "Giíi thiÖu ho¹t ®éng n­íng b¸nh",
 	[15] = "C¸c h¹ cã thÓ tæ ®éi cïng th©n h÷u hoÆc ®ång ®¹o hµo kiÖt tËp hîp l¹i cïng kÝch ho¹t lß n­íng b¸nh trung thu. Sau khi kÝch ho¹t lß n­íng lµ kho¶n thêi gian ®Ó cho mäi ng­êi sum häp quay quÇn vµ nhËn th­ëng ®iÓm kinh nghiÖm. Sau 5 phót, cßn cã thÓ nhËn ®­îc 5 B¸nh Th­îng H¹ng tõ Lß N­íng. L­u ý: chØ giíi h¹n tham gia mçi ngµy 4 lÇn th«i ®Êy!",
 	[16] = "C¸c h¹ hiÖn t¹i kh«ng thÓ kÝch ho¹t lß n­íng",
@@ -48,10 +48,10 @@ VET_201108_TB_MAPID = {
 
 --ÎïÆ·
 VET_201108_ITEM_LIST = {
-	[1] = {"B¸nh Trung Thu",2,1,30326},
-	[2] = {"Bã cñi",2,1,30330},
-	[3] = {"B¸nh Th­îng H¹ng",2,1,30329},
-	[4] = {"§Ìn hoa Trung Thu",2,1,30327},
+	[1] = {"Mid-Autumn Cake",2,1,30326},
+	[2] = {"Bundle of Firewood",2,1,30330},
+	[3] = {"Premium Cake",2,1,30329},
+	[4] = {"Mid-Autumn Lantern",2,1,30327},
 }
 --¿¾Â¯
 VET_201108_TB_NPCS = {
@@ -78,10 +78,10 @@ VET_201108_NPCLAMP_LIST = {
 			backMenu = "Trë l¹i",
 		},
 		[2] = {
-			subTitle = "Ta ®Õn treo Lång §Ìn",
+			subTitle = "I will go hang the Lantern",
 			subOptions = {
 				[1] = "C¸c h¹ cÇn mang theo 1 Lång §Ìn Trung Thu!",
-				[2] = "CÇn chê ®îi 10 phót ®Ó treo Lång §Ìn tiÕp theo!",
+				[2] = "You must wait 10 minutes to hang the next Lantern!",
 				[3] = "H«m nay c¸c h¹ ®· dïng hÕt sè l­ît treo Lång §Ìn råi!",
 				[4] = "Treo ®Ìn thÊt b¹i, h·y b¾t ®Çu l¹i nhÐ!",
 				[5] = "C¸c h¹ treo ®Ìn thµnh c«ng lÇn thø %d! NhËn ®­îc %d ®iÓm kinh nghiÖm",

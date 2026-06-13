@@ -40,6 +40,6 @@ function main()
 		end;
 		SetMissionV(MV_GET_BOX,0);
 		SendTongMessage(GetName().."NhÆt ®­îc r­¬ng cña ¶i"..nStage..".	");
-		WriteLog("[Bang héi v­ît ¶i]:"..GetName().."NhÆt ®­îc thø"..nStage..".	");
+		WriteLog("[Bang héi v­ît ¶i]:"..GetName().."Picked up the item"..nStage..".	");
 	end;
 end;

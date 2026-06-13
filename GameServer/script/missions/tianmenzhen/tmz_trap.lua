@@ -57,7 +57,7 @@ function main()
 			CastState("state_life_max_percent_add",tXueHen[nTbIdx][3],2*60*18,1,9910,1);		--ÉúÃüÉÏÏŞ
 			CastState("state_buff_resist",tXueHen[nTbIdx][4],2*60*18,1,9911,1);					--ÃâÒß¸ºÃæ×´Ì¬
 			SyncCustomState(1,9908,1,tXueHen[nTbIdx][5]);
-			Msg2Player("B¹n nhËn ®­îc "..tXueHen[nTbIdx][5].."HiÖu qu¶: "..tXueHen[nTbIdx][6].."Duy tr× 2 phót.");
+			Msg2Player("B¹n nhËn ®­îc "..tXueHen[nTbIdx][5].."HiÖu qu¶: "..tXueHen[nTbIdx][6].."Lasts 2 minutes.");
 		end
 		TMZ_RestoreAll();
 	end;		

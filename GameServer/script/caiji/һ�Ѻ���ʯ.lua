@@ -54,7 +54,7 @@ function main()
 	-- Èç¹ûÍæ¼Ò¿ÉÒÔÍÚÕâ¸öÒ©Æ·£¬½øÈëÏÂÃæÖ´ĞĞ¶Î
 	if (nCanDig == 1 and nCanDigTool == 1) then
 		if (DoFireworks(890, 1) == 1) then
-			Msg2Player("Thu thËp......");
+			Msg2Player("Collecting......");
 			CastState("state_fetter", 1, 5 * 18)
 			ProgressSlot(5 * 18)
 			
@@ -100,7 +100,7 @@ function OnProgressCallback()
 	
 	-- ÌáÊ¾
 	if (nChoice == 1) then
-		Say("H¾c « th¹ch nµy rÊt tèt, b¹n t×m ®­îc "..nSelCount.."H¾c « th¹ch!", 0)
+		Say("H¾c « th¹ch nµy rÊt tèt, b¹n t×m ®­îc "..nSelCount.."Black jade stone!", 0)
 	elseif (nChoice == 2) then
 		Say("Tuy kh«ng t×m ®­îc kho¸ng th¹ch nh­ng ng­¬i ®· ph¸t hiÖn ra"..nSelCount.." tÊm ThÇn Binh phæ!", 0)
 	else

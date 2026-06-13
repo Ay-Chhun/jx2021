@@ -1,28 +1,28 @@
 Include("\\settings\\static_script\\online\\qianhe_tower\\qht_define.lua")
 
 QHT_LANGUAI_TABLE = {
-	{"QxLanGuai_1", "Miªu LÜnh Cæ S­"},
-	{"QxLanGuai_2", "S¸t thñ T©y Vùc"},
-	{"QxLanGuai_3", "§«ng Doanh x¹ thñ"},
-	{"QxLanGuai_4", "§¹i Lý mËt vÖ"},
-	{"QxLanGuai_5", "T©y Vùc quyÒn thñ"},
-	{"QxLanGuai_6", "§¹i Lý n÷ quyÒn vÖ"},
-	{"QxLanGuai_7", "T©y Vùc m· tÆc"},
+	{"QxLanGuai_1", "Miaoling Ancient Master"},
+	{"QxLanGuai_2", "Western Region Assassin"},
+	{"QxLanGuai_3", "Dongying Archer"},
+	{"QxLanGuai_4", "Dali Secret Guard"},
+	{"QxLanGuai_5", "Western Region Boxer"},
+	{"QxLanGuai_6", "Dali Female Boxing Guard"},
+	{"QxLanGuai_7", "Western Region Horse Bandit"},
 	{"QxLanGuai_8", "§«ng Doanh ®ao kh¸ch"},
 	{"QxLanGuai_9", "Hång Ph¸t ®ao kh¸ch"},
 	{"QxLanGuai_10", "Vâ l©m nh©n sÜ"},
 }
 
 QHT_XIAOBOSS_TABLE = {
-	{"QxXiaoBoss_1","§¹i M¹c cung thñ"},
-	{"QxXiaoBoss_2","Quû DiÖn cung thñ"},
-	{"QxXiaoBoss_3","Man Téc cung thñ"},
+	{"QxXiaoBoss_1","Desert Archer"},
+	{"QxXiaoBoss_2","Ghost Face Archer"},
+	{"QxXiaoBoss_3","Barbarian Tribe Archer"},
 	{"QxXiaoBoss_4","Man Téc ®ao kh¸ch"},
 	{"QxXiaoBoss_5","B¸ V­¬ng ®ao kh¸ch"},
 	{"QxXiaoBoss_6","Song §ao kh¸ch"},
-	{"QxXiaoBoss_7","ThiÕt Chïy dòng sÜ"},
+	{"QxXiaoBoss_7","Iron Mace Warrior"},
 	{"QxXiaoBoss_8","Tiªu Dao kiÕm kh¸ch"},
-	{"QxXiaoBoss_9","Quû DiÖn vâ sÜ"},
+	{"QxXiaoBoss_9","Ghost Face Warrior"},
 	{"QxXiaoBoss_10","Hång Anh th­¬ng kh¸ch"},	
 }
 

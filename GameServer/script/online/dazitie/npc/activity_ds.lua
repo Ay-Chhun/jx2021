@@ -17,7 +17,7 @@ function dzt_introduce()
 	local tbSay = {};
 	tbSay.msg = DZT_NPC..strTitle;
 	tbSay.sel = {
-		{"\n rót lui","nothing"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -27,7 +27,7 @@ function dzt_award()
 	local tbSay = {};
 	tbSay.msg = DZT_NPC..strTitle;
 	tbSay.sel = {
-		{"\n rót lui","nothing"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -42,7 +42,7 @@ function dzt_find_hhyy()
 	tbSay.msg = DZT_NPC..strTitle;
 	tbSay.sel = {
 		{"\n NhËn phÇn th­ëng","dzt_get_award_hhyy"},
-		{"\n rót lui","nothing"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -66,7 +66,7 @@ function dzt_find_pttq()
 	tbSay.msg = DZT_NPC..strTitle;
 	tbSay.sel = {
 		{"\n NhËn phÇn th­ëng","dzt_get_award_pttq"},
-		{"\n rót lui","nothing"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);
 end

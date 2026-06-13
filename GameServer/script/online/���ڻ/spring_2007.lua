@@ -37,20 +37,20 @@ function OnUse(goods_index)
 	elseif goods_id == 552 then						--ÊÍ·ÅÖí±¦±¦µÀ¾ß
 		Say("Dïng vËt phÈm <color=red>phãng thÝch<color> pet, sau ®ã gäi l¹i pet míi.",
 		2,
-		"§æi/pig_delete_chk",
+		"Change/pig_delete_chk",
 		"§Ó ta suy nghÜ l¹i/end_dialog")
 	elseif goods_id == 553 then						--ÑøÖí±¦µä			--test:ÕâÀïÅÐ¶Ï²»×ã¡£ÓÐÎÊÌâ¡£
 		local dialog_pig = {}				--ÖíÊÇ·Å»¹ÊÇÊÕµÄ¶Ô»°
 		if GetFollower() == 0 then
 			dialog_pig[1] = "Ta muèn ®­a thó c­ng/pig_out"
-			dialog_pig[2] = "Rêi khái/end_dialog"
+			dialog_pig[2] = "Leave/end_dialog"
 		else
 			local follower_name = GetNpcName(GetFollower())
-			if  follower_name ~= "§æng Ca Minh" and follower_name ~= "Chung ThÞ" then
+			if  follower_name ~= "§æng Ca Minh" and follower_name ~= "Zhong Shi" then
 				dialog_pig[1] = "Ta muèn thu håi thó c­ng/pig_in"
 				local pig_level = GetTask(978)
 				if pig_level ~= 4 then
-					local pig_foods = {"10 b¸nh ng«","20 mµn thÇu"," 50 B¸nh xÕp"}
+					local pig_foods = {"10 corn cakes","20 steamed buns"," 50 dumplings"}
 					dialog_pig[2] = "Ta muèn ch¨m sãc thó c­ng (cÇn"..pig_foods[pig_level]..")/pig_feed"
 				else
 					dialog_pig[2] = "Ta cÇn thó c­ng/pig_use"
@@ -60,7 +60,7 @@ function OnUse(goods_index)
 				return
 			end
 			dialog_pig[3] = "Ta cÇn ®Æt tªn cho thó c­ng/pig_rename"
-			dialog_pig[4] = "Rêi khái/end_dialog"
+			dialog_pig[4] = "Leave/end_dialog"
 		end
 		Say("Xin lùa chän nh÷ng ®éng t¸c cho thó c­ng:",
 			getn(dialog_pig),
@@ -73,17 +73,17 @@ function pig_baby_use(goods_id)						--Öí±¦±¦µÄÊ¹ÓÃ
 	if goods_id == 546 then
 		Say("Sö dông vËt phÈm nµy cã thÓ gäi ®­îc thó c­ng mµu s¾c tïy ý, ng­¬i ®ång ý chø?",
 		2,
-		"Ta ®ång ý/#pig_create(0,0,"..goods_id..")",		--ÐÔ±ð¡¢ÑÕÉ«¡¢ÎïÆ·Ë÷Òý
+		"I agree/#pig_create(0,0,"..goods_id..")",		--ÐÔ±ð¡¢ÑÕÉ«¡¢ÎïÆ·Ë÷Òý
 		"§Ó ta suy nghÜ l¹i/end_dialog")		
 	elseif goods_id == 547 then
 		Say("Sö dông vËt phÈm nµy cã thÓ gäi H¾c tr­, ng­¬i ®ång ý chø?",
 		2,
-		"Ta ®ång ý/#pig_create(1,0,"..goods_id..")",
+		"I agree/#pig_create(1,0,"..goods_id..")",
 		"§Ó ta suy nghÜ l¹i/end_dialog")
 	elseif goods_id == 548 then
 		Say("Sö dông vËt phÈm nµy cã thÓ gäi ®­îc B¹ch tr­, ng­¬i ®ång ý chø?",
 		2,
-		"Ta ®ång ý/#pig_create(2,0,"..goods_id..")",
+		"I agree/#pig_create(2,0,"..goods_id..")",
 		"§Ó ta suy nghÜ l¹i/end_dialog")
 	elseif goods_id == 549 then
 		Say("Sö dông vËt phÈm nµy cã thÓ gäi thó c­ng _H¾c tr­, ng­¬i ®ång ý sö dông kh«ng?",
@@ -113,15 +113,15 @@ function pig_feed()
 		return
 	end
 	local pig_level = GetTask(TaskID_spring2007_pig_level)
-	local pig_foods = {	{1,1,1,10,"10","B¸nh Ng«"},
-						{1,1,3,20,"20","Mµn thÇu"},
-						{1,1,4,50," 50 ","B¸nh xÕp"}}
+	local pig_foods = {	{1,1,1,10,"10","Corn Cake"},
+						{1,1,3,20,"20","Steamed Bun"},
+						{1,1,4,50," 50 ","Dumpling"}}
 	if GetItemCount(pig_foods[pig_level][1],pig_foods[pig_level][2],pig_foods[pig_level][3]) < pig_foods[pig_level][4] then
-		Talk(1,"end_dialog","<color=red>"..pig_foods[pig_level][6].." H×nh nh­ kh«ng ®ñ "..pig_foods[pig_level][5].."µ?")
+		Talk(1,"end_dialog","<color=red>"..pig_foods[pig_level][6].." H×nh nh­ kh«ng ®ñ "..pig_foods[pig_level][5].."huh?")
 		return
 	end
 	if DelItem(pig_foods[pig_level][1],pig_foods[pig_level][2],pig_foods[pig_level][3],pig_foods[pig_level][4]) ~= 1 then
-		Talk(1,"end_dialog","<color=red>"..pig_foods[pig_level][6].." H×nh nh­ kh«ng ®ñ "..pig_foods[pig_level][5].."µ?")
+		Talk(1,"end_dialog","<color=red>"..pig_foods[pig_level][6].." H×nh nh­ kh«ng ®ñ "..pig_foods[pig_level][5].."huh?")
 		return		
 	else
 		SetTask(978,(pig_level + 1))
@@ -157,7 +157,7 @@ function pig_create_rtn(pig_name)
 	--	return
 	--end
 	--**************************Ãû×Ö¹ýÂË****************************
-	local pigname_forbid_chr = {"CÇu","B¸","Qu©n","L«i","Qu©n","Kim S¬n","chÝn","TuyÖt","JS","§æng Ca Minh","Chung ThÞ"}
+	local pigname_forbid_chr = {"Bridge","Dad","Quan","L«i","Quan","Jinshan","nine","Jue","JS","§æng Ca Minh","Zhong Shi"}
 	for i = 1,getn(pigname_forbid_chr) do
 		local startS,endS = strfind(pig_name,pigname_forbid_chr[i])
 		if startS then
@@ -194,7 +194,7 @@ end
 function pig_delete_chk()
 	Say("B¹n x¸c ®Þnh sö dông vËt phÈm nµy?",
 	2,
-	"§æi/pig_delete_determine",
+	"Exchange/pig_delete_determine",
 	"§Ó ta suy nghÜ l¹i/end_dialog"
 	)
 end
@@ -283,7 +283,7 @@ function pig_born_timer()
 			Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 TiÓu Tr­")
 			local player_name = GetName()
 			PlayerIndex = player_index_accept
-			Msg2Player("Chóc mõng b¹n vµ"..player_name.."NhËn ®­îc 1 TiÓu Tr­!")
+			Msg2Player("Congratulations, you and"..player_name.."Received 1 Piglet!")
 		else
 			--Ð´ÈÕÖ¾
 		end
@@ -295,7 +295,7 @@ function pig_born_timer()
 			Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 TiÓu Tr­")
 			local player_name = GetName()
 			PlayerIndex = player_index_ask
-			Msg2Player("Chóc mõng b¹n vµ"..player_name.."NhËn ®­îc 1 TiÓu Tr­!")
+			Msg2Player("Congratulations, you and"..player_name.."Received 1 Piglet!")
 		else
 			--Ð´ÈÕÖ¾
 		end

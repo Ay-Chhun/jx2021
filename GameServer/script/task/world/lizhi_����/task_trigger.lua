@@ -126,8 +126,8 @@ function Njx_Killed()
     
     if GetItemCount(2,0,65) >= 10 then
         SetTask(TASK_XYTY, 40);
-        Msg2Player("Thu thËp ®ñ mª hån h­¬ng");
-        TaskTip("Thu thËp ®ñ mª hån h­¬ng");
+        Msg2Player("Collect enough soul-enchanting incense");
+        TaskTip("Collect enough soul-enchanting incense");
     end;
 end;
 

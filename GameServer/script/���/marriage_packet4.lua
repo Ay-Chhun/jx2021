@@ -18,6 +18,6 @@ function OnUse(nItemIdx)
 		Msg2Player("Bπn nhÀn Æ≠Óc 18 Mπn Thi™n Th” Ti’t bao")
 		AddItem(ITEM_NOTEBOOK[1],ITEM_NOTEBOOK[2],ITEM_NOTEBOOK[3],1)
 		Msg2Player("Bπn nhÀn Æ≠Óc 1 quy”n thuy’t minh chi’n Æﬁa.");
-		WriteLog("[K’t h´n]:"..GetName().."MÎ V®n ßﬁnh C∏t T≠Íng bao");
+		WriteLog("[Marriage]:"..GetName().."MÎ V®n ßﬁnh C∏t T≠Íng bao");
 	end
 end;

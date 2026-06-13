@@ -94,7 +94,7 @@ function main()
 		"§Õn HuyÒn Tinh ®éng (cao cÊp)/GotoWorld_Confirm3",
 		--"ÒÅÍüÍÚ¿ó¼¼ÄÜ/forget_life_skill",
 		"Ta muèn t×m hiÓu th«ng tin liªn quan ®µo kho¸ng/Info",
-    	"Rêi khái/Main_Exit")
+    	"Leave/Main_Exit")
 end;
 
 
@@ -198,19 +198,19 @@ function GotoWorld_Confirm1()
 	Say(strTitle.."Ng­¬i muèn ®Õn <color=yellow>Th¹ch M«n §éng<color> ®µo kho¸ng ­? N¬i ®ã cã <color=yellow>Tinh ThiÕt<color>, <color=yellow>B¸ch luyÖn c­¬ng<color>, <color=yellow>¤ kim<color> vµ <color=yellow>Hµn thiÕt<color>. Nhí mang theo <color=yellow>ThÇn N«ng §¬n<color>!",
 		2,
 		"Ta muèn ®i/#GotoWorld(711,1728,3383)",
-		"Kh«ng ®i ®©u/Main_Exit")
+		"I'm not going anywhere/Main_Exit")
 end;
 function GotoWorld_Confirm2()
 	Say(strTitle.."Ng­¬i muèn ®Õn <color=yellow>Linh Nham ®éng<color> ®µo kho¸ng ­? N¬i ®ã cã <color=yellow>Th¸i b¹ch tinh kim<color>, <color=yellow>HuyÒn thiÕt<color> vµ <color=yellow>Thiªn Thanh<color>. Nhí mang theo <color=yellow>ThÇn N«ng §¬n<color>!",
 		2,
 		"Ta muèn ®i/#GotoWorld(716,1694,3032)",
-		"Kh«ng ®i ®©u/Main_Exit")
+		"I'm not going anywhere/Main_Exit")
 end;
 function GotoWorld_Confirm3()
 	Say(strTitle.."Ng­¬i muèn ®Õn <color=yellow>HuyÒn Tinh ®éng<color> ®µo kho¸ng ­? N¬i ®ã cã <color=yellow>H¾c « th¹ch<color>, <color=yellow>XÝch thiÕt<color> vµ <color=yellow>V©n mÉu<color>. Nhí mang theo <color=yellow>ThÇn N«ng §¬n<color>!",
 		2,
 		"Ta muèn ®i/#GotoWorld(721,1688,3333)",
-		"Kh«ng ®i ®©u/Main_Exit")
+		"I'm not going anywhere/Main_Exit")
 end;
 -- È¥ÏàÓ¦µÄ¹Ò»úµØµã
 function GotoWorld(MapID, x, y)
@@ -232,7 +232,7 @@ end;
 
 function update_max_skill_level()
 	Say(strTitle..format("Më réng cÊp kü n¨ng s¶n xuÊt cÇn kü n¨ng thu thËp ®¹t cÊp 79 ®ång thêi tiªu hao %d Vµng", 1000), 
-		2, "§ång ý/update_max_skill_level_ensure", "T¹i h¹ chØ xem qua th«i/Main_Exit")
+		2, "Agree/update_max_skill_level_ensure", "T¹i h¹ chØ xem qua th«i/Main_Exit")
 end
 
 function update_max_skill_level_ensure()

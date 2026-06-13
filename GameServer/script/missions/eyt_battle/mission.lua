@@ -6,7 +6,7 @@ Include("\\script\\missions\\eyt_battle\\eyt_head.lua")
 eytMission_waiting = {
 	maxsecond = 2 * 60,
 	guage = {
-		msg = "Giai ®o¹n chuÈn bÞ",
+		msg = "Preparation phase",
 		time = 2 * 60,
 		cyc = 0,
 		id = 1,
@@ -80,7 +80,7 @@ function eytMission_fighting.Init()
 	this.msCamp:turnPlayer(0, eyt_SetJoinTime, GetTime());
 	this.msCamp:turnPlayer(0, eyt_AddOnceJoinTimes);
 	AddRuntimeStat(27, 3, 0, 1); --³É¹¦¿ªÆô´ÎÊý
-	this:Msg2MSAll("Tû vâ chÝnh thøc b¾t ®Çu!");
+	this:Msg2MSAll("The official duel has begun!");
 end
 
 function eytMission_fighting:onPlayerDeath(event, killId)
@@ -113,7 +113,7 @@ function eytMission_fighting:onTalk(event)
 			return 0;
 		end
 		DoWait(119, 120, 10);
-		this.msCamp:turnPlayer(0, HeadMsg2Player, format("%s ®ang më cê...", GetName()));
+		this.msCamp:turnPlayer(0, HeadMsg2Player, format("%s is opening the banner...", GetName()));
 	end
 end
 
@@ -354,8 +354,8 @@ EYT_MISSION.msOption.OnPlayerJoin = function(self, nCamp)
 	SetFightState(0);
 	eyt_SetTempRevPos();
 	SetTempRevScript(thisFile);
-	Msg2Player(format("Ng­¬i ®· gia nhËp %s", EYT_CAMP_NAME[nCamp]));
-	this:Msg2MSAll(format("%s gia nhËp Tû Vâ ¢n O¸n §µi", GetName()));
+	Msg2Player(format("You have joined %s", EYT_CAMP_NAME[nCamp]));
+	this:Msg2MSAll(format("%s joined the Grudge Platform", GetName()));
 	AddRuntimeStat(27, 1, GetPlayerRoute(), 1); --Í³¼ÆÁ÷ÅÉ²ÎÓëÈËÊý
 end
 
@@ -368,7 +368,7 @@ EYT_MISSION.msOption.OnPlayerLeave = function(self, nCamp)
 	if GetMissionV(this.battleState) ~= EYT_STATE_FIGHT then
 		eyt_SetJoinTime(0);
 	end
-	TriggerMisEvent("event_mission_joinonce", "¢n O¸n §µi");
+	TriggerMisEvent("event_mission_joinonce", "Grudge Platform");
 end
 
 EYT_MISSION.onMissionInit = function(self)

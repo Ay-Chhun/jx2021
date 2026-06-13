@@ -54,10 +54,10 @@ tStageXX = {
 	},
 	resetPos = {1721, 3168},
 	npcMod = {
-		{"Minh Gi¸o Th¸m Tù §Þa", "Th¸m Tö TuÇn Tra"},
+		{"Minh Gi¸o Th¸m Tù §Þa", "Patrol Scout"},
 
-		{"yinbaoxiang", "R­¬ng B¹c", 180},
-		{"yinbaoxiang", "R­¬ng §ång", 180},
+		{"yinbaoxiang", "Silver Chest", 180},
+		{"yinbaoxiang", "Copper Chest", 180},
 		{"IBbaoxiang", "Thiªn ¢m MËt R­¬ng", 180},
 		--{"Ïä×ÓÇ®", "ÌìÒõ¾«Á¦Ïä", 180},
 	},
@@ -68,13 +68,13 @@ tStageXX = {
 		{1430, "Hoµng Kú Tinh §Þa", "Thiªn ¢m MËt Th¸m Tinh Anh", 1},
 		{1430, "B¹ch Kú Tinh §Þa",     "B¹ch Kú Tinh Anh", 1},
 		{510 , "Hång Kú Chñ §Þa", "Hång Kú Chñ Hång Tinh", 2},
-		{510 , "H¾c Kú Chñ §Þa", "H¾c Kú Chñ ¤ Mai Vò", 2},
-		{510 , "Lam Kú Chñ §Þa", "Lam Kú Chñ Lam Èn H¹c", 2},
+		{510 , "H¾c Kú Chñ §Þa", "Black Banner Master Wu Mei Yu", 2},
+		{510 , "Lam Kú Chñ §Þa", "Blue Banner Master Lan Yin He", 2},
 		{510 , "Hoµng Kú Chñ §Þa",   "Hoµng Kú Chñ Hoµng Siªu", 2},
 		{510 , "B¹ch Kú Chñ §Þa", "B¹ch Kú Chñ B¹ch L¨ng Tiªu", 2},
 		{100 , "L«i Th­êng Chñ §Þa", "L«i §­êng Chñ Ph­¬ng Ch©u", 3},
 		{100 , "Háa §­êng Chñ §Þa",   "Háa §­êng Chñ TiÒn ChÝch", 3},
-		{100 , "Phong §­êng Chñ §Þa", "Phong §­êng Chñ Phong TrÇn", 3},
+		{100 , "Phong §­êng Chñ §Þa", "Wind Hall Master Feng Chen", 3},
 	},
 	bossMod2 = {
 		{1440, "Hång Kú Tinh §Þa", "Thiªn ¢m S¸t Thñ Tinh Anh", 1},
@@ -83,19 +83,19 @@ tStageXX = {
 		{1430, "Hoµng Kú Tinh §Þa", "Thiªn ¢m MËt Th¸m Tinh Anh", 1},
 		{1430, "B¹ch Kú Tinh §Þa",     "B¹ch Kú Tinh Anh", 1},
 		{500 , "Hång Kú Chñ §Þa", "Hång Kú Chñ Hång Tinh", 2},
-		{500 , "H¾c Kú Chñ §Þa", "H¾c Kú Chñ ¤ Mai Vò", 2},
-		{500 , "Lam Kú Chñ §Þa", "Lam Kú Chñ Lam Èn H¹c", 2},
+		{500 , "H¾c Kú Chñ §Þa", "Black Banner Master Wu Mei Yu", 2},
+		{500 , "Lam Kú Chñ §Þa", "Blue Banner Master Lan Yin He", 2},
 		{500 , "Hoµng Kú Chñ §Þa",   "Hoµng Kú Chñ Hoµng Siªu", 2},
 		{500 , "B¹ch Kú Chñ §Þa", "B¹ch Kú Chñ B¹ch L¨ng Tiªu", 2},
 		{100 , "L«i Th­êng Chñ §Þa", "L«i §­êng Chñ Ph­¬ng Ch©u", 3},
 		{100 , "Háa §­êng Chñ §Þa",   "Háa §­êng Chñ TiÒn ChÝch", 3},
-		{100 , "Phong §­êng Chñ §Þa", "Phong §­êng Chñ Phong TrÇn", 3},
+		{100 , "Phong §­êng Chñ §Þa", "Wind Hall Master Feng Chen", 3},
 		{15 ,  "UyÓn Nhu V©n §Þa",       "UyÓn Nhu V©n", 4},
-		{15 ,  "UyÓn Thanh Nhi §Þa",       "UyÓn Thanh Nhi", 4},
+		{15 ,  "UyÓn Thanh Nhi §Þa",       "Wan Qing Er", 4},
 	},
 	bossMod3 = {
 		{25 ,  "UyÓn Nhu V©n §Þa",       "UyÓn Nhu V©n", 4},
-		{25 ,  "UyÓn Thanh Nhi §Þa",       "UyÓn Thanh Nhi", 4},
+		{25 ,  "UyÓn Thanh Nhi §Þa",       "Wan Qing Er", 4},
 	},
 --	stepLimit = 600,
 }
@@ -248,9 +248,9 @@ end
 function phasexx_1:onTalk(npcIdx)
 	local tSel = {
 		"Truy t×m KÎ Chñ M­u (Tiªu hao 2 Thiªn Kiªu LÖnh)/perStart",
-		"KiÓm tra danh s¸ch Mé HËu Chñ Sø/info_xx",
+		"Check the list of the Late Hou Masters/info_xx",
 		"H«m nay ®Õn ®©y, h«m sau ph­¬ng tr­ëng/perEnd",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	}
 	if not isCaption() then
 		tremove(tSel,3);
@@ -303,7 +303,7 @@ function perStart()
 end
 function perEnd()
 	if not isCaption() then
-		Msg2Player("ChØ cã ®éi tr­ëng dÉn d¾t tæ ®éi rêi khái cöa ¶i");
+		Msg2Player("Only the team leader may lead the party out of the pass");
 	end
 	
 	if GetMissionV(MV_SP_DAYE) ~= 0 then
@@ -317,12 +317,12 @@ function perEnd()
 end
 
 function perEnd_Talk()
-	Say("Cßn cã b¶o r­¬ng ch­a nhËn, c¸c h¹ x¸c nhËn kÕt thóc v­ît ¶i kh«ng?", 2, "§ång ý/perEnd2", "T¹i h¹ chØ xem qua th«i/do_nothing")
+	Say("Cßn cã b¶o r­¬ng ch­a nhËn, c¸c h¹ x¸c nhËn kÕt thóc v­ît ¶i kh«ng?", 2, "Agree/perEnd2", "T¹i h¹ chØ xem qua th«i/do_nothing")
 end
 
 function perEnd2()
 	if not isCaption() then
-		Msg2Player("ChØ cã ®éi tr­ëng dÉn d¾t tæ ®éi rêi khái cöa ¶i");
+		Msg2Player("Only the team leader may lead the party out of the pass");
 	end
 	
 	if GetMissionV(MV_PHASE) == 1 then
@@ -341,7 +341,7 @@ function phasexx_2:onInit()
 	g_theMS.msTimer:setInterval(self.stepInterval);
 	g_theMS:onTimer();
 	g_theMS.msCamp[1]:turnPlayer(StopTimeGuage,-2);
-	g_theMS.msCamp[1]:turnPlayer(StartTimeGuage,"Thanh tr­ît thêi gian", self.stepLimit, 0);
+	g_theMS.msCamp[1]:turnPlayer(StartTimeGuage,"Time slider", self.stepLimit, 0);
 	getStage():createBoss();
 
 end
@@ -390,7 +390,7 @@ end
 function phasexx_3:onInit()
 	g_theMS.msTimer:setInterval(self.stepInterval);
 	g_theMS:Msg2MSAll("Qua næ lùc hÕt m×nh, c¸c ng­¬i ®· v­ît qua ®­îc §Þa HuyÒn Cung, ")
-	g_theMS.msCamp[1]:turnPlayer(StartTimeGuage, "Rêi cöa ¶i", 60, 0);
+	g_theMS.msCamp[1]:turnPlayer(StartTimeGuage, "Leave the pass", 60, 0);
 
 	for i = MV_IS_OPENED_BOX_BEGIN, MV_IS_OPENED_BOX_END do
 		SetMissionV(i, 0);

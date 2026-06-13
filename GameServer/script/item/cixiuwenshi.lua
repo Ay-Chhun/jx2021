@@ -83,7 +83,7 @@ function _Collect(nItemIdx)
 	szTitle = format("L­u tr÷ %s cÇn tiªu hao <color=yellow>%s<color>, x¸c ®Þnh muèn l­u tr÷?", GetItemName(nItemIdx), _get_consume_desc(nLevel))
 	tinsert(tbSay, format("X¸c ®Þnh/#_do_collect(%d)", nItemIdx))
 	tinsert(tbSay, format("trë l¹i/#OnUse_real(%d)", nItemIdx))
-	tinsert(tbSay, "Tõ bá/no")
+	tinsert(tbSay, "Goodbye/no")
 	Say(szTitle, getn(tbSay), tbSay)
 end
 

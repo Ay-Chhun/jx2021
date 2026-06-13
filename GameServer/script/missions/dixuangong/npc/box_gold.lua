@@ -11,7 +11,7 @@ T_DXG_GOLD_BoxScript = {
 T_GOLD_BOX_IDX = {}
 function remove_box_gold()
 	for i,v in T_GOLD_BOX_IDX do
-		if GetNpcName(i) == "Kim R­¬ng" then
+		if GetNpcName(i) == "Gold Chest" then
 			SetNpcLifeTime(i, 0);
 		end
 	end
@@ -24,7 +24,7 @@ function create_dxg_box_gold(nNpcIdx, nBoxId)
 	end
 	local m, x, y = GetNpcWorldPos(nNpcIdx);
 	local x2, y2 = x + random(-5, 5), y + random(-5, 5);
-	local npc = CreateNpc("jinbaoxiang", "Kim R­¬ng", m, x2, y2);
+	local npc = CreateNpc("jinbaoxiang", "Gold Chest", m, x2, y2);
 	if npc and npc > 0 then
 		T_GOLD_BOX_IDX[npc] = 1
 		--SetNpcLifeTime(npc, 180);
@@ -104,19 +104,19 @@ _t_free_award_stage =
         	t_other_group = --×°±¸×é
         	{
         		----tPara = {nCount, nBind, nExpireDays, bGblMsg}
-                { {"C©y B¸t Nh· nhá", {2,0,504,1,4}, 7,nil, {1, 100}}, 600},
-                { {"C©y B¸t Nh·", {2,0,398,1,4}, 7,nil, {1, 100}}, 600},
-                { {"C©y Tø Linh", {2,1,30269,1,4}, 7,nil, {1, 100}}, 600},
+                { {"Small Prajna Tree", {2,0,504,1,4}, 7,nil, {1, 100}}, 600},
+                { {"Prajna Tree", {2,0,398,1,4}, 7,nil, {1, 100}}, 600},
+                { {"Four Spirits Tree", {2,1,30269,1,4}, 7,nil, {1, 100}}, 600},
                 --{ {"´«¹¦µ¤", {2,1,30313,1,4}, 7,nil, {1, 100}}, 600},
-                { {"Tu Ch©n YÕu QuyÕt", {2,0,554,1,4}, 7,nil, {1, 100}}, 600},
+                { {"Xiu Zhen Yao Jue", {2,0,554,1,4}, 7,nil, {1, 100}}, 600},
                 { {"Thiªn Lý TruyÒn ¢m Phï ChØ", {2,1,3508,1,4}, nil,nil, {1, 100}}, 300},
-                { {"Tø Linh Quy Nguyªn §¬n", {2,1,30352,1,4}, 7,nil, {1, 100}}, 500},
-                { {"Båi Nguyªn §¬n", {2,1,30351,1,4}, 7,nil, {1, 100}}, 600},
+                { {"Four Spirits Return to Origin Pill", {2,1,30352,1,4}, 7,nil, {1, 100}}, 500},
+                { {"Replenishing Origin Pill", {2,1,30351,1,4}, 7,nil, {1, 100}}, 600},
                 { {"B¨ng Tinh Th¹ch", {2,1,30554,1,4}, nil,nil, {1, 100}}, 500},
                 { {"B¹ch C©u Hoµn", {2,1,270,1,4}, 7,nil, {1, 100}}, 500},
                 { {"TÈy T©m Th¹ch Kho¸ng", {2,1,30536,1}, nil,nil, {1, 100}}, 300},
                 { {"LuyÖn L« ThiÕt Kho¸ng", {2,1,30537,1}, nil,nil, {1, 100}}, 300},
-                { {"Tói tiÒn", {2,1,30367,1,4}, nil,nil, {1, 100}}, 500},
+                { {"Money Pouch", {2,1,30367,1,4}, nil,nil, {1, 100}}, 500},
                 { {"ThiÕt Tinh cÊp 1", {2,1,30533,1,4}, nil,nil, {1, 100}}, 500},
                 { {"ThiÕt Tinh cÊp 2", {2,1,30534,1,4}, nil,nil, {1, 100}}, 550},
                 { {"ThiÕt Tinh cÊp 3", {2,1,30535,1,4}, nil,nil, {1, 100}}, 947},
@@ -140,19 +140,19 @@ _t_free_award_stage =
 			n_daibi_group_rate = 0,--Ëæ»úµ½´ú±Ò×éµÄ¸ÅÂÊ
         	t_other_group = --×°±¸×é
         	{
-                { {"C©y B¸t Nh· nhá", {2,0,504,1,4}, 7,nil, {1, 100}}, 600},
-                { {"C©y B¸t Nh·", {2,0,398,1,4}, 7,nil, {1, 100}}, 600},
-                { {"C©y Tø Linh", {2,1,30269,1,4}, 7,nil, {1, 100}}, 600},
+                { {"Small Prajna Tree", {2,0,504,1,4}, 7,nil, {1, 100}}, 600},
+                { {"Prajna Tree", {2,0,398,1,4}, 7,nil, {1, 100}}, 600},
+                { {"Four Spirits Tree", {2,1,30269,1,4}, 7,nil, {1, 100}}, 600},
                -- { {"´«¹¦µ¤", {2,1,30313,1,4}, 7,nil, {1, 100}}, 600},
-                { {"Tu Ch©n YÕu QuyÕt", {2,0,554,1,4}, 7,nil, {1, 100}}, 600},
+                { {"Xiu Zhen Yao Jue", {2,0,554,1,4}, 7,nil, {1, 100}}, 600},
                 { {"Thiªn Lý TruyÒn ¢m Phï ChØ", {2,1,3508,1,4}, nil,nil, {1, 100}}, 300},
-                { {"Tø Linh Quy Nguyªn §¬n", {2,1,30352,1,4}, 7,nil, {1, 100}}, 500},
-                { {"Båi Nguyªn §¬n", {2,1,30351,1,4}, 7,nil, {1, 100}}, 600},
+                { {"Four Spirits Return to Origin Pill", {2,1,30352,1,4}, 7,nil, {1, 100}}, 500},
+                { {"Replenishing Origin Pill", {2,1,30351,1,4}, 7,nil, {1, 100}}, 600},
                 { {"B¨ng Tinh Th¹ch", {2,1,30554,1,4}, nil,nil, {1, 100}}, 500},
                 { {"B¹ch C©u Hoµn", {2,1,270,1,4}, 7,nil, {1, 100}}, 500},
                 { {"TÈy T©m Th¹ch Kho¸ng", {2,1,30536,1}, nil,nil, {1, 100}}, 300},
                 { {"LuyÖn L« ThiÕt Kho¸ng", {2,1,30537,1}, nil,nil, {1, 100}}, 300},
-                { {"Tói tiÒn", {2,1,30367,1,4}, nil,nil, {1, 100}}, 500},
+                { {"Money Pouch", {2,1,30367,1,4}, nil,nil, {1, 100}}, 500},
                 { {"ThiÕt Tinh cÊp 1", {2,1,30533,1,4}, nil,nil, {1, 100}}, 500},
                 { {"ThiÕt Tinh cÊp 2", {2,1,30534,1,4}, nil,nil, {1, 100}}, 550},
                 { {"ThiÕt Tinh cÊp 3", {2,1,30535,1,4}, nil,nil, {1, 100}}, 947},
@@ -186,17 +186,17 @@ _t_ib_award_no_stage1 =
 	},
 	t_ib_award =--ib½±Àø
 	{
-        { {"C©y B¸t Nh· nhá", {2,0,504,1}, 7,nil, {1, 100}}, 600},
-        { {"C©y B¸t Nh·", {2,0,398,1}, 7,nil, {1, 100}}, 600},
-        { {"C©y Tø Linh", {2,1,30269,1}, 7,nil, {1, 100}}, 600},
+        { {"Small Prajna Tree", {2,0,504,1}, 7,nil, {1, 100}}, 600},
+        { {"Prajna Tree", {2,0,398,1}, 7,nil, {1, 100}}, 600},
+        { {"Four Spirits Tree", {2,1,30269,1}, 7,nil, {1, 100}}, 600},
         { {"B¹ch C©u Hoµn", {2,1,270,1}, 7,nil, {1, 100}}, 600},
         { {"§¹i B¹ch C©u hoµn", {2,1,1007,1}, 7,nil, {1, 100}}, 800},
         { {"B¹ch C©u Tiªn ®¬n", {2,1,1008,1}, 7,nil, {1, 100}}, 600},
         { {"§¹i Nh©n s©m", {2,0,553,1}, 7,nil, {1, 100}}, 500},
-        { {"Hu©n ch­¬ng anh hïng", {2,1,30499,1,4}, nil,nil, {1, 100}}, 563},
-        { {"Hu©n ch­¬ng anh hïng", {2,1,30499,2,4}, nil,nil, {1, 100}}, 600},
-        { {"Hu©n ch­¬ng anh hïng", {2,1,30499,4,4}, nil,nil, {1, 100}}, 200},
-        { {"Hu©n ch­¬ng anh hïng", {2,1,30499,10,4}, nil,nil, {1, 100}}, 50},
+        { {"Hero's Medal", {2,1,30499,1,4}, nil,nil, {1, 100}}, 563},
+        { {"Hero's Medal", {2,1,30499,2,4}, nil,nil, {1, 100}}, 600},
+        { {"Hero's Medal", {2,1,30499,4,4}, nil,nil, {1, 100}}, 200},
+        { {"Hero's Medal", {2,1,30499,10,4}, nil,nil, {1, 100}}, 50},
         { {"M¶nh Thiªn M«n", {2,1,30410,2}, nil,nil, {1, 100}}, 1200},
         { {"M¶nh Thiªn M«n", {2,1,30410,4}, nil,nil, {1, 100}}, 391},
         { {"M¶nh Thiªn M«n", {2,1,30410,20}, nil,nil, {1, 100}}, 40},
@@ -228,17 +228,17 @@ _t_ib_award_no_stage2 =
 	},
 	t_ib_award =--ib½±Àø
 	{
-        { {"C©y B¸t Nh· nhá", {2,0,504,1}, 7,nil, {1, 100}}, 600},
-        { {"C©y B¸t Nh·", {2,0,398,1}, 7,nil, {1, 100}}, 600},
-        { {"C©y Tø Linh", {2,1,30269,1}, 7,nil, {1, 100}}, 600},
+        { {"Small Prajna Tree", {2,0,504,1}, 7,nil, {1, 100}}, 600},
+        { {"Prajna Tree", {2,0,398,1}, 7,nil, {1, 100}}, 600},
+        { {"Four Spirits Tree", {2,1,30269,1}, 7,nil, {1, 100}}, 600},
         { {"B¹ch C©u Hoµn", {2,1,270,1}, 7,nil, {1, 100}}, 600},
         { {"§¹i B¹ch C©u hoµn", {2,1,1007,1}, 7,nil, {1, 100}}, 800},
         { {"B¹ch C©u Tiªn ®¬n", {2,1,1008,1}, 7,nil, {1, 100}}, 600},
         { {"§¹i Nh©n s©m", {2,0,553,1}, 7,nil, {1, 100}}, 500},
-        { {"Hu©n ch­¬ng anh hïng", {2,1,30499,1,4}, nil,nil, {1, 100}}, 563},
-        { {"Hu©n ch­¬ng anh hïng", {2,1,30499,2,4}, nil,nil, {1, 100}}, 600},
-        { {"Hu©n ch­¬ng anh hïng", {2,1,30499,4,4}, nil,nil, {1, 100}}, 200},
-        { {"Hu©n ch­¬ng anh hïng", {2,1,30499,10,4}, nil,nil, {1, 100}}, 50},
+        { {"Hero's Medal", {2,1,30499,1,4}, nil,nil, {1, 100}}, 563},
+        { {"Hero's Medal", {2,1,30499,2,4}, nil,nil, {1, 100}}, 600},
+        { {"Hero's Medal", {2,1,30499,4,4}, nil,nil, {1, 100}}, 200},
+        { {"Hero's Medal", {2,1,30499,10,4}, nil,nil, {1, 100}}, 50},
         { {"M¶nh Thiªn M«n", {2,1,30410,2}, nil,nil, {1, 100}}, 1200},
         { {"M¶nh Thiªn M«n", {2,1,30410,4}, nil,nil, {1, 100}}, 391},
         { {"M¶nh Thiªn M«n", {2,1,30410,20}, nil,nil, {1, 100}}, 40},

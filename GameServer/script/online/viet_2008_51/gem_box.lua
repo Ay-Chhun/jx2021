@@ -15,7 +15,7 @@ function OnUse(nItemIdx)
 	if nDate >= DATE_2008_51_START_GEM and nDate <= DATE_2008_51_ITEM_END then
 		Say("Më b¶o r­¬ng sÏ ngÉu nhiªn nhËn ®­îc 1 viªn Ngò Linh Th¹ch, Lam Tinh Th¹ch hoÆc Hoµng B¶o Th¹ch, cã ®ång ý më b¶o r­¬ng kh«ng?\nThêi h¹n sö dông: <color=red>24h00 31-05-2008<color>",
 			2,
-			format("Më/#OnOpen(%d)", nItemIdx),
+			format("Open/#OnOpen(%d)", nItemIdx),
 			"Kh«ng cÇn ®©u/nothing");
 	end
 end

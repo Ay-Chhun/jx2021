@@ -28,7 +28,7 @@ function what_tong_feast()
 	tSay.msg = tSay.msg.."Vµo lóc 18:00, 19:00, 20:00 ngµy Thø B¶y vµ Chñ NhËt, ng­¬i cã thÓ ®Õn c¸c b¶n ®å xung quanh BiÖn Kinh, Thµnh §«, TuyÒn Ch©u ®Ó t×m §Çu bÕp, tiÕn hµnh chØ ®Şnh ®Çu bÕp, vµ d©ng tÆng nguyªn liÖu ®Ó lµm ®¹i tiÖc cña bang héi.";
 	tSay.sel = {
 		{"trë l¹i", "main_not_open"},
-		{"KÕt thóc ®èi tho¹i", "nothing"},
+		{"End conversation", "nothing"},
 	};
 	temp_Talk(tSay);
 end
@@ -38,7 +38,7 @@ function where_collect()
 	tSay.msg = "§å ¨n ®­îc chia ra thµnh 4 phÇn, ®å ¨n sÏ sinh ra ë nh÷ng n¬i kh¸c nhau. \n Tµng KiÕm S¬n Trang vµ V¹n KiÕm Tròng sinh ra Lîn C¾p N¸ch; \n L­¬ng S¬n B¹c vµ §Şa HuyÒn Cung sinh ra Bß KoBe; \n Th¸i H­ HuyÔn C¶nh vµ Th«ng Thiªn §Ønh r¬i ra Dª B¶y Në; \n tham gia ChiÕn Tr­êng Liªn Server vµ ChiÕn Tr­êng Tèng Liªu sÏ nhËn ®­îc ThŞt Nguéi. ";
 	tSay.sel = {
 		{"trë l¹i", "main_not_open"},
-		{"KÕt thóc ®èi tho¹i", "nothing"},
+		{"End conversation", "nothing"},
 	};
 	temp_Talk(tSay);
 end
@@ -49,7 +49,7 @@ function how_select()
 	tSay.msg = tSay.msg.."Sau khi yÕn tiÖc ®­îc më ra, néi trong 10min cã thÓ ®Æt ®Çu bÕp bang héi, sau khi ®Æt xong, néi trong 15min cã thÓ d©ng tÆng nguyªn liÖu ®å ¨n vµ ®å nÊu bÕp, 15min ®Õn 20min cã thÓ d©ng tÆng bµn ghÕ, sau khi tÊt c¶ ®· chuÈn bŞ xong, th× yÕn tiÖc bang héi sÏ ®­îc diÔn ra!";
 	tSay.sel = {
 		{"trë l¹i", "main_not_open"},
-		{"KÕt thóc ®èi tho¹i", "nothing"},
+		{"End conversation", "nothing"},
 	};
 	temp_Talk(tSay);
 end
@@ -59,7 +59,7 @@ function what_award()
 	tSay.msg = "Khi d©ng tÆng ®å ¨n vµ c¸c ®¹o cô, cã thÓ nhËn ®­îc kinh nghiÖm, ch©n khİ, ®iÓm luyÖn mËt tŞch. Trong qu¸ tr×nh dù tiÖc còng cã thÓ nhËn ®­îc kinh nghiÖm, ch©n khİ, ®iÓm luyÖn mËt tŞch, lÖnh bµi bang héi vµ c¸c phÇn th­ëng kh¸c, lÖnh bµi bang héi cã thÓ ®æi phÇn th­ëng t¹i Th­¬ng Nh©n Bang Héi. Vµ cã thÓ nhËn ®­îc hiÖu qu¶ t¨ng thªm, n©ng cao hiÖu qu¶ thuéc tİnh cña nh©n vËt.";
 	tSay.sel = {
 		{"trë l¹i", "main_not_open"},
-		{"KÕt thóc ®èi tho¹i", "nothing"},
+		{"End conversation", "nothing"},
 	};
 	temp_Talk(tSay);
 end
@@ -144,7 +144,7 @@ end
 function goto_my_chef(x, y)
 	DebugOutput("goto_my_chef(x,y)", x, y)
 	local tSay = {
-		format("LËp tøc ®Õn ®ã/#NewWorld(%d,%d,%d)", TF_NPC_POS[x][y][1], TF_NPC_POS[x][y][2], TF_NPC_POS[x][y][3]),
+		format("Go there immediately/#NewWorld(%d,%d,%d)", TF_NPC_POS[x][y][1], TF_NPC_POS[x][y][2], TF_NPC_POS[x][y][3]),
 		"Bµn l¹i sau/nothing",
 	}
 	Say(format("§Çu bÕp chuyªn nghiÖp cña bang héi kh«ng cã ë ®©y, ®Çu bÕp phôc vô cho quı bang t¹i <color=green> %s <color> ®ã th«i. §¹i hiÖp h·y nhanh ch©n ®Õn ®ã.",TF_NPC_POS[x][y][4]), getn(tSay), tSay);
@@ -218,7 +218,7 @@ function main_do()
 		tinsert(tSay, 1, "Ta muèn d©ng tÆng nguyªn liÖu/hang_in_material");
 	end
 	if tf_IsStartTime() ~= 0 then
-		tinsert(tSay, 1, "Lµm tiÖc thŞnh so¹n/make_dinner");
+		tinsert(tSay, 1, "Make the lavish banquet/make_dinner");
 	end	
 	Say("Thêi kh¾c ®· ®Õn, nÕu nhËn ®­îc ®Çy ®ñ nguyªn liÖu, ta cã thÓ lµm cho quı bang mét b÷a tiÖc thŞnh so¹n nhÊt trong thiªn h¹.", getn(tSay), tSay);
 end
@@ -245,7 +245,7 @@ function check_tong_material_cb(nCount, sdb)
 	if sData then
 		local szTemp = "";
 		if sData[7] and sData[7] > 0 then
-			szTemp = "<color=green> ®· <color>";
+			szTemp = "<color=green> done <color>";
 		else
 			szTemp = "<color=red> vÉn ch­a <color>";
 		end
@@ -256,7 +256,7 @@ function check_tong_material_cb(nCount, sdb)
 		if nNeedHandCount > 0 then
 			msg = msg..format("(<color=red> cÇn ph¶i d©ng tÆng Bµn TiÖc víi sè l­îng lµ %d c¸i <color>)", nNeedHandCount);
 		else
-			msg = msg.."(<color=green> sè l­îng d©ng tÆng Bµn TiÖc t¹m thêi ®· ®ñ <color>)";
+			msg = msg.."(<color=green> the amount of donated Banquet Tables is temporarily sufficient <color>)";
 		end
 		Say(msg, getn(tSay), tSay);
 	else
@@ -303,8 +303,8 @@ function hang_in_material()
 	end
 	local szMsg = "\n giai ®o¹n nµy lµ <color=green>%s<color>, kho¶ng c¸ch giai ®o¹n nµy kÕt thóc v©n cßn <color=green>%d phót %d gi©y <color>, giai ®o¹n kÕ tiÕp lµ <color=red>%s<color>";
 	local tTemp = {
-		{"D©ng tÆng thøc ¨n vµ Bé Nêu BÕp", "D©ng tÆng Bµn TiÖc"},
-		{"D©ng tÆng Bµn TiÖc", "Lµm tiÖc thŞnh so¹n"},
+		{"Donate food and Cookware Set", "Donate Banquet Table"},
+		{"Donate Banquet Table", "Make the lavish banquet"},
 	}
 	local nMinute = tonumber(date("%M"));
 	local nSecond = tonumber(date("%S"));
@@ -315,12 +315,12 @@ end
 
 function hang_in_material_food_say()
 	local tSay = {
-		"D©ng tÆng Lîn C¾p N¸ch/hang_in_material_food_1",
-		"D©ng tÆng Bß KoBe/hang_in_material_food_2",
-		"D©ng tÆng Dª B¶y Në/hang_in_material_food_3",	
-		"D©ng tÆng ThŞt Nguéi/hang_in_material_food_4",
-		"\n Ph¶n håi/hang_in_material",
-		"Ra khái/nothing",
+		"Donate Pork Belly/hang_in_material_food_1",
+		"Donate Kobe Beef/hang_in_material_food_2",
+		"Donate Spring Lamb/hang_in_material_food_3",	
+		"Donate Cold Cuts/hang_in_material_food_4",
+		"\n Feedback/hang_in_material",
+		"Leave/nothing",
 	}
 	Say("Xin hái ®¹i hiÖp ng­¬i muèn d©ng tÆng lo¹i thøc ¨n nµo?", getn(tSay), tSay);
 end
@@ -390,7 +390,7 @@ function hang_in_material_food_cb(nKind, nNum, nCount, sdb)
 		[4] = TF_ITEM_BACON,
 	}
 	if DelItem(tFood[nKind][1], tFood[nKind][2], tFood[nKind][3], nNum) ~= 1 then
-		Talk(1, "", format("Kh«ng ®ñ %s",tFood[nKind][4]));
+		Talk(1, "", format("Not enough %s",tFood[nKind][4]));
 		return 0;
 	end
 	local s = SDB(TF_FEAST_CHEF, 0, 3);
@@ -410,13 +410,13 @@ function hang_in_material_food_cb(nKind, nNum, nCount, sdb)
 		tf_SetBacon(tf_GetBacon() + nNum);
 		AddRuntimeStat(7,28,0,nNum);
 	end	
-	Talk(1,"",format("Ng­¬i ®· d©ng tÆng %s*%d!", tFood[nKind][4], nNum));
+	Talk(1,"",format("You have donated %s*%d!", tFood[nKind][4], nNum));
 	--½±Àø
 	tf_Award_ShiCai(nNum);
 end
 
 function hang_in_material_cooker_say()
-	Say("Ng­¬i x¸c ®Şnh muèn d©ng tÆng 1 Bé NÊu BÕp chø?", 3, "§ång ı/hang_in_material_cooker", "\n Ph¶n håi/hang_in_material", "Ra khái/nothing");
+	Say("Ng­¬i x¸c ®Şnh muèn d©ng tÆng 1 Bé NÊu BÕp chø?", 3, "Agree/hang_in_material_cooker", "\n Feedback/hang_in_material", "Leave/nothing");
 end
 
 function hang_in_material_cooker()
@@ -443,7 +443,7 @@ function hang_in_material_cooker_cb(nCount, sdb)
 		sData[4], sData[5], sData[6], 1, sData[8]};
 	tf_SetCooker(1);
 	Talk(1,"","Ng­¬i ®· thµnh c«ng d©ng tÆng Bé NÊu BÕp, nh­ vËy sÏ n©ng cao tØ lÖ cña YÕn TiÖc Linh §×nh vµ YÕn TiÖc Hµo Hoa!");
-	Msg2Tong(format("§Ó th­ëng thøc b÷a tiÖc ngon h¬n, %s ®· d©ng tÆng %s !",GetName(),"Bé NÊu BÕp"))
+	Msg2Tong(format("§Ó th­ëng thøc b÷a tiÖc ngon h¬n, %s ®· d©ng tÆng %s !",GetName(),"Cookware Set"))
 	--½±Àø
 	tf_Award_JingZhiCooker();
 	--Í³¼Æ
@@ -451,7 +451,7 @@ function hang_in_material_cooker_cb(nCount, sdb)
 end
 
 function hang_in_material_tc_say()
-	Say("Ng­¬i x¸c ®Şnh muèn d©ng tÆng 1 Bµn TiÖc chø?", 3, "§ång ı/hang_in_material_tc", "\n Ph¶n håi/hang_in_material", "Ra khái/nothing");
+	Say("Ng­¬i x¸c ®Şnh muèn d©ng tÆng 1 Bµn TiÖc chø?", 3, "Agree/hang_in_material_tc", "\n Feedback/hang_in_material", "Leave/nothing");
 end
 
 function hang_in_material_tc()
@@ -481,7 +481,7 @@ function hang_in_material_tc_cb(nCount, sdb)
 		s[GetTongName()] = {TF_SHAREDATA_STRING03, sData[1], sData[2], sData[3], sData[4], sData[5], sData[6] + 1, sData[7], sData[8]};
 		tf_SetTc(tf_GetTc() + 1);
 		Talk(1,"","Ng­¬i ®· thµnh c«ng d©ng tÆng mét Bµn TiÖc!")
-		Msg2Tong(format("§Ó th­ëng thøc b÷a tiÖc ngon h¬n, %s ®· d©ng tÆng %s !",GetName(),"Bµn TiÖc"));
+		Msg2Tong(format("§Ó th­ëng thøc b÷a tiÖc ngon h¬n, %s ®· d©ng tÆng %s !",GetName(),"Banquet Table"));
 		--½±Àø
 		tf_Award_JingzhiTableChair();
 		--Í³¼Æ

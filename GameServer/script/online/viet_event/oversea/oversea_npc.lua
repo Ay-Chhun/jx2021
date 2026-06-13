@@ -1,13 +1,13 @@
 Include("\\script\\online\\qixi08\\box\\mission_head.lua")
 Include("\\script\\online\\chuyen_sinh\\translife_npc.lua");
 
-szNpcName = "<color=green>ThuyÒn phu §«ng H¶i<color>: "
+szNpcName = "<color=green>East Sea Boatman<color>:"
 
 function main()
 	local tSay = 
 	{
-		"Mau ®­a ta tíi C« §¶o (tèn 1 vµng)/go_island",
-		"§¨ng ký tíi khu vùc §«ng H¶i - §¶o HiÖp Kh¸ch/go_oversea",
+		"Take me to the Lone Island quickly (costs 1 gold)/go_island",
+		"Register to travel to the East Sea region - Knight-Errant Island/go_oversea",
 		"T¹m thêi ta ch­a muèn ®i/gf_DoNothing",
 	}
 	if GetTaskTrans() == 15 then

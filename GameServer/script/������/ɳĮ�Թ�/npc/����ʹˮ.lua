@@ -130,7 +130,7 @@ local nBossName = {" Kim ","Méc","Thñy","Háa","Thæ"}
 	end
 	
 	strTalk = {
-		"B¹n ®· h¹ thñ"..(5 - nNum).." Ngò Hµnh Sø, cßn "..strMsg.." vµ "..nNum.." Ngò Hµnh Sø ch­a giÕt ®­îc."
+		"B¹n ®· h¹ thñ"..(5 - nNum).." Ngò Hµnh Sø, cßn "..strMsg.." and"..nNum.." Ngò Hµnh Sø ch­a giÕt ®­îc."
 		}
 		
 	TalkEx("",strTalk);

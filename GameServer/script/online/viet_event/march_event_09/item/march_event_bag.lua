@@ -14,7 +14,7 @@ TYPE_EQUIP 	= 2;	--´øÊôÐÔ×°±¸ÀàÎïÆ·
 TYPE_CMD 	= 3;	--ÃüÁî
 
 --=========================================================================================
-g_szLogTitle = "Event th¸ng 3"			--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
+g_szLogTitle = "March Event"			--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
 g_nVietUseBoxEnd = 2009040600					--Ê¹ÓÃ½ØÖ¹ÈÕÆÚ
 g_nNeedRoom = 1
 g_nNeedWeight = 20
@@ -25,9 +25,9 @@ g_szFileName = "march_event_bag.lua"			--ÎÄ¼þÃû
 g_tbItem = 
 {
 	--		ÀàÐÍ	   ¸ÅÂÊ	ÊýÁ¿ Ãû×Ö	ID1,ID2,ID3
-	[1] = {TYPE_ITEM,	50,	1,	"§­êng C¸t",	2,	1,	30062,	},
-	[2] = {TYPE_ITEM,	25,	1,	"Hép S÷a",		2,	1,	30063,	},
-	[3] = {TYPE_ITEM,	25,	1,	"Lä H­¬ng",	2,	1,	30064,	},
+	[1] = {TYPE_ITEM,	50,	1,	"Sugar",	2,	1,	30062,	},
+	[2] = {TYPE_ITEM,	25,	1,	"Milk box",		2,	1,	30063,	},
+	[3] = {TYPE_ITEM,	25,	1,	"Incense jar",	2,	1,	30064,	},
 }
 
 
@@ -64,7 +64,7 @@ function use_it()
 
 	if nRetCode == 1 then
 		Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." "..szItemName)
-		WriteLogEx(g_szLogTitle, "NhËn ®­îc", nItemNum, szItemName, szInfoDescribe, GetTongName() )
+		WriteLogEx(g_szLogTitle, "Received", nItemNum, szItemName, szInfoDescribe, GetTongName() )
 	else
 		WriteLogEx(g_szLogTitle, "", nItemNum, szItemName, szInfoDescribe, GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
 	end

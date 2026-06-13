@@ -6,8 +6,8 @@
 Include("\\script\\online\\viet_event\\mooncake_08\\mooncake_head.lua")
 Include("\\script\\lib\\globalfunctions.lua")
 
-g_szLogTitle = "Ho¹t ®éng trung thu : ".."TÇn ®¹i thÈm"		--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓĞÂµÄ·­Òë
-g_szInfoHead = "<color=green>TÇn ®¹i thÈm<color>: "
+g_szLogTitle = "Ho¹t ®éng trung thu : ".."Madam Qin"		--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓĞÂµÄ·­Òë
+g_szInfoHead = "<color=green>Madam Qin<color>:"
 
 
 function main()
@@ -34,7 +34,7 @@ function bug_wood()
 		return
 	end
 	if pay_ex(1000) == 1 then
-		add_item_ex("Cñi",2,1,30022,1)
+		add_item_ex("Firewood",2,1,30022,1)
 	else
 		Say(g_szInfoHead.."1 Bã Cñi = 10 B¹c, c¸c h¹ mang theo kh«ng ®ñ B¹c th× ph¶i!",1,"ThËt ng¹i qu¸, ®Ó ta kiÓm tra l¹i!/no")
 		return
@@ -42,7 +42,7 @@ function bug_wood()
 end
 
 function mooncake_guide()
-	Say(g_szInfoHead.."Nguyªn liÖu cÇn thiÕt:\n- 1 B¸nh trung thu ch­a n­íng lo¹i th­êng cÇn cã: 2 Bét M× + 1 §­êng C¸t + 1 Trøng Muèi + 1 Nguyªn LiÖu ThËp CÈm + 40B¹c\n- 1 B¸nh trung thu ch­a n­íng lo¹i ®Æc biÖt cÇn cã: 2 Bét M× + 1 §­êng C¸t + 1 Trøng Muèi + 1 Nguyªn LiÖu ThËp CÈm + 1 Gãi Gia VŞ\nNg­êi ch¬i mua mét İt Bã Cñi ®Ó n­íng b¸nh, mét lÇn cã thÓ n­íng 8 B¸nh. Tïy theo sè lÇn bá cñi thµnh c«ng trong qu¸ tr×nh n­íng b¸nh mµ ng­êi ch¬i sÏ nhËn ®­îc nh÷ng chiÕc B¸nh trung thu th¬m ngon.",1,"C¸m ¬n TÇn §¹i ThÈm ®· tËn t×nh h­íng dÉn!/no");
+	Say(g_szInfoHead.."Nguyªn liÖu cÇn thiÕt:\n- 1 B¸nh trung thu ch­a n­íng lo¹i th­êng cÇn cã: 2 Bét M× + 1 §­êng C¸t + 1 Trøng Muèi + 1 Nguyªn LiÖu ThËp CÈm + 40B¹c\n- 1 B¸nh trung thu ch­a n­íng lo¹i ®Æc biÖt cÇn cã: 2 Bét M× + 1 §­êng C¸t + 1 Trøng Muèi + 1 Nguyªn LiÖu ThËp CÈm + 1 Gãi Gia VŞ\nNg­êi ch¬i mua mét İt Bã Cñi ®Ó n­íng b¸nh, mét lÇn cã thÓ n­íng 8 B¸nh. Tïy theo sè lÇn bá cñi thµnh c«ng trong qu¸ tr×nh n­íng b¸nh mµ ng­êi ch¬i sÏ nhËn ®­îc nh÷ng chiÕc B¸nh trung thu th¬m ngon.",1,"Thank you, Madam Qin, for your kind guidance!/no");
 end
 
 function make_mooncake(nType)
@@ -61,7 +61,7 @@ function make_mooncake(nType)
 				Talk(1,"",g_szInfoHead.."Kho¶ng trèng hµnh trang hoÆc søc lùc kh«ng ®ñ, xin kiÓm tra l¹i!");
 				return
 			end;
-			if del_item_ex("Bét m×",2,1,30017,2) == 1 and del_item_ex("§­êng c¸t",2,1,30018,1) == 1 and del_item_ex("Trøng muèi",2,1,30019,1) == 1 and del_item_ex("Nguyªn liÖu thËp cÈm",2,1,30020,1) == 1 and pay_ex(4000) == 1 then
+			if del_item_ex("Flour",2,1,30017,2) == 1 and del_item_ex("Sugar",2,1,30018,1) == 1 and del_item_ex("Salted egg",2,1,30019,1) == 1 and del_item_ex("Mixed ingredients",2,1,30020,1) == 1 and pay_ex(4000) == 1 then
 				add_item_ex("B¸nh ch­a n­íng th­êng",2,1,30023,1)
 			else
 				Say(g_szInfoHead.."Kh«ng ®ñ c¸c nguyªn liÖu cÇn thiÕt th× ta kh«ng thÓ lµm ra nh÷ng chiÕc B¸nh trung thu ch­a n­íng ®­îc. H·y cè g¾ng t×m thªm nguyªn liÖu nhĞ!",1,"V©ng! T¹i h¹ sÏ quay l¹i sau khi cã ®ñ nguyªn liÖu!!/no");
@@ -77,7 +77,7 @@ function make_mooncake(nType)
 				Talk(1,"",g_szInfoHead.."Kho¶ng trèng hµnh trang hoÆc søc lùc kh«ng ®ñ, xin kiÓm tra l¹i!");
 				return
 			end;
-			if del_item_ex("Bét m×",2,1,30017,2) == 1 and del_item_ex("§­êng c¸t",2,1,30018,1) == 1 and del_item_ex("Trøng muèi",2,1,30019,1) == 1 and del_item_ex("Nguyªn liÖu thËp cÈm",2,1,30020,1) == 1 and del_item_ex("Gãi gia vŞ",2,1,30021,1) == 1 then
+			if del_item_ex("Flour",2,1,30017,2) == 1 and del_item_ex("Sugar",2,1,30018,1) == 1 and del_item_ex("Salted egg",2,1,30019,1) == 1 and del_item_ex("Mixed ingredients",2,1,30020,1) == 1 and del_item_ex("Spice pack",2,1,30021,1) == 1 then
 				add_item_ex("B¸nh ch­a n­íng §B",2,1,30024,1)
 			else
 				Say(g_szInfoHead.."Kh«ng ®ñ c¸c nguyªn liÖu cÇn thiÕt th× ta kh«ng thÓ lµm ra nh÷ng chiÕc B¸nh trung thu ch­a n­íng ®­îc. H·y cè g¾ng t×m thªm nguyªn liÖu nhĞ!",1,"V©ng! T¹i h¹ sÏ quay l¹i sau khi cã ®ñ nguyªn liÖu!!/no");

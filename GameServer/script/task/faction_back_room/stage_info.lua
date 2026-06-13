@@ -298,7 +298,7 @@ TB_EMFJ_INFO =
 {
 	[0] = 
 	{
-		[1] = {"Nga My PhËt gia thñ vÖ (mËt thÊt)","V« T­íng Yªu Ma"},	--¹Ø¿¨Ä£°åÃû×ÖÓëNPCÃû×Ö
+		[1] = {"Nga My PhËt gia thñ vÖ (mËt thÊt)","Formless Demon"},	--¹Ø¿¨Ä£°åÃû×ÖÓëNPCÃû×Ö
 		[2] = {"Nga My PhËt gia cao thñ (mËt thÊt)","V« T­íng Ma V­¬ng"},	--bossÄ£°åÃû×ÖÓëbossÃû×Ö
 		[3] = {600,1};	--boss¹ØÊ±ÏŞºÍBOSSÊıÁ¿
 	},
@@ -371,7 +371,7 @@ TB_EMSJ_INFO =
 {
 	[0] = 
 	{
-		[1] = {"Nga My tôc gia thñ vÖ (mËt thÊt)","V« T­íng Yªu Ma"},	--¹Ø¿¨Ä£°åÃû×ÖÓëNPCÃû×Ö
+		[1] = {"Nga My tôc gia thñ vÖ (mËt thÊt)","Formless Demon"},	--¹Ø¿¨Ä£°åÃû×ÖÓëNPCÃû×Ö
 		[2] = {"Nga My tôc gia cao thñ (mËt thÊt)","V« T­íng Ma V­¬ng"},	--bossÄ£°åÃû×ÖÓëbossÃû×Ö
 		[3] = {600,1};	--boss¹ØÊ±ÏŞºÍBOSSÊıÁ¿
 	},
@@ -444,8 +444,8 @@ TB_GBJY_INFO =
 {
 	[0] = 
 	{
-		[1] = {"C¸i Bang TŞnh Y thñ vÖ (mËt thÊt)","TŞnh Y thñ vÖ"},	--¹Ø¿¨Ä£°åÃû×ÖÓëNPCÃû×Ö
-		[2] = {"C¸i Bang TŞnh Y cao thñ (mËt thÊt)","TŞnh Y cao thñ"},	--bossÄ£°åÃû×ÖÓëbossÃû×Ö
+		[1] = {"C¸i Bang TŞnh Y thñ vÖ (mËt thÊt)","Clean Robe Guard"},	--¹Ø¿¨Ä£°åÃû×ÖÓëNPCÃû×Ö
+		[2] = {"C¸i Bang TŞnh Y cao thñ (mËt thÊt)","Clean Robe Expert"},	--bossÄ£°åÃû×ÖÓëbossÃû×Ö
 		[3] = {600,1};	--boss¹ØÊ±ÏŞºÍBOSSÊıÁ¿
 	},
 	[1] = 
@@ -517,8 +517,8 @@ TB_GBWY_INFO =
 {
 	[0] = 
 	{
-		[1] = {"C¸i Bang ¤ Y cao thñ (mËt thÊt)","¤ y thñ vÖ"},	--¹Ø¿¨Ä£°åÃû×ÖÓëNPCÃû×Ö
-		[2] = {"C¸i Bang ¤ Y cao thñ (mËt thÊt)","¤ Y cao thñ"},	--bossÄ£°åÃû×ÖÓëbossÃû×Ö
+		[1] = {"C¸i Bang ¤ Y cao thñ (mËt thÊt)","Dark Robe Guard"},	--¹Ø¿¨Ä£°åÃû×ÖÓëNPCÃû×Ö
+		[2] = {"C¸i Bang ¤ Y cao thñ (mËt thÊt)","Dark Robe Expert"},	--bossÄ£°åÃû×ÖÓëbossÃû×Ö
 		[3] = {600,1};	--boss¹ØÊ±ÏŞºÍBOSSÊıÁ¿
 	},
 	[1] = 
@@ -736,7 +736,7 @@ TB_YMQQ_INFO =
 {
 	[0] = 
 	{
-		[1] = {"D­¬ng M«n th­¬ng kş thñ vÖ (mËt thÊt)","DiÔn tËp sü binh"},	--¹Ø¿¨Ä£°åÃû×ÖÓëNPCÃû×Ö
+		[1] = {"D­¬ng M«n th­¬ng kş thñ vÖ (mËt thÊt)","Drill Soldier"},	--¹Ø¿¨Ä£°åÃû×ÖÓëNPCÃû×Ö
 		[2] = {"D­¬ng M«n th­¬ng kş cao thñ (mËt thÊt)","D­¬ng gia qu©n t­íng lÜnh"},	--bossÄ£°åÃû×ÖÓëbossÃû×Ö
 		[3] = {600,1};	--boss¹ØÊ±ÏŞºÍBOSSÊıÁ¿
 	},
@@ -809,7 +809,7 @@ TB_YMGQ_INFO =
 {
 	[0] = 
 	{
-		[1] = {"D­¬ng M«n cung kş thñ vÖ (mËt thÊt)","DiÔn tËp sü binh"},	--¹Ø¿¨Ä£°åÃû×ÖÓëNPCÃû×Ö
+		[1] = {"D­¬ng M«n cung kş thñ vÖ (mËt thÊt)","Drill Soldier"},	--¹Ø¿¨Ä£°åÃû×ÖÓëNPCÃû×Ö
 		[2] = {"D­¬ng M«n cung kş cao thñ (mËt thÊt)","D­¬ng gia qu©n t­íng lÜnh"},	--bossÄ£°åÃû×ÖÓëbossÃû×Ö
 		[3] = {600,1};	--boss¹ØÊ±ÏŞºÍBOSSÊıÁ¿
 	},
@@ -882,7 +882,7 @@ TB_WDXX_INFO =
 {
 	[0] = 
 	{
-		[1] = {"Ngò §éc tµ hiÖp thñ vÖ (mËt thÊt)","Ngò §éc hé vÖ"},	--¹Ø¿¨Ä£°åÃû×ÖÓëNPCÃû×Ö
+		[1] = {"Ngò §éc tµ hiÖp thñ vÖ (mËt thÊt)","Five Poisons Protector"},	--¹Ø¿¨Ä£°åÃû×ÖÓëNPCÃû×Ö
 		[2] = {"Ngò §éc tµ hiÖp cao thñ (mËt thÊt)","Ngò §éc T«n GØ¶"},	--bossÄ£°åÃû×ÖÓëbossÃû×Ö
 		[3] = {600,1};	--boss¹ØÊ±ÏŞºÍBOSSÊıÁ¿
 	},
@@ -954,7 +954,7 @@ TB_WDGS_INFO =
 {
 	[0] = 
 	{
-		[1] = {"Ngò §éc cæ s­ thñ vÖ (mËt thÊt)","Ngò §éc hé vÖ"},	--¹Ø¿¨Ä£°åÃû×ÖÓëNPCÃû×Ö
+		[1] = {"Ngò §éc cæ s­ thñ vÖ (mËt thÊt)","Five Poisons Protector"},	--¹Ø¿¨Ä£°åÃû×ÖÓëNPCÃû×Ö
 		[2] = {"Ngò §éc cæ s­ cao thñ (mËt thÊt)","Ngò §éc T«n GØ¶"},	--bossÄ£°åÃû×ÖÓëbossÃû×Ö
 		[3] = {600,1};	--boss¹ØÊ±ÏŞºÍBOSSÊıÁ¿
 	},
@@ -1088,13 +1088,13 @@ TB_LINGPAI =
 TB_FACTION_ROUTE = 
 {
 	[0] = {},
-	[1] = {{2,"ThiÕu L©m tôc gia"},{3,"ThiÕu L©m thiÒn t¨ng"},{4,"ThiÕu L©m vâ t¨ng"}},	--ÉÙÁÖ
-	[2] = {{14,"Vâ §ang ®¹o gia"},{15,"Vâ §ang tôc gia"}},	--Îäµ±
-	[3] = {{8,"Nga My phËt gia"},{9,"Nga My tôc gia"}},	--¶ëáÒ
-	[4] = {{11,"C¸i Bang TÜnh y"},{12,"C¸i Bang ¤ Y"}},	--Ø¤°ï
+	[1] = {{2,"Shaolin Lay Branch"},{3,"ThiÕu L©m thiÒn t¨ng"},{4,"ThiÕu L©m vâ t¨ng"}},	--ÉÙÁÖ
+	[2] = {{14,"Wudang Daoist Branch"},{15,"Wudang Lay Branch"}},	--Îäµ±
+	[3] = {{8,"Emei Buddhist Branch"},{9,"Emei Lay Branch"}},	--¶ëáÒ
+	[4] = {{11,"Beggars' Guild Pure Robe"},{12,"Beggars' Guild Dirty Robe"}},	--Ø¤°ï
 	[5] = {{6,"§­êng M«n"}},	--ÌÆÃÅ	
 	[6] = {{17,"D­¬ng M«n th­¬ng Kş"},{18,"D­¬ng M«n Cung Kş"}},	--ÑîÃÅ
-	[7] = {{20,"HiÖp §éc"},{21,"Tµ §éc"}},	--Îå¶¾
+	[7] = {{20,"Chivalrous Venom"},{21,"Wicked Venom"}},	--Îå¶¾
 }
 
 TB_BACKROOM = 
@@ -1152,9 +1152,9 @@ TB_EXIT_POS =
 	[500] = {1748,3144},	--·ïÏè
 }
 --¸÷¸öÄÑ¶ÈËù¶ÔÓ¦µÄÃû×Ö
-TB_DIFF_NAME = {"S¬ xuÊt mao l­","Ng­u ®ao tiÓu thİ","TiÓu thµnh s¬ diÔn","Vâ nghÖ thİ luyÖn","TuyÖt häc uyªn th©m","Kú c«ng m¹c tr¾c","C¸i thÕ v« song","Bİ truyÒn nghŞch thiªn","S­ tæ nguyªn thÇn"};
+TB_DIFF_NAME = {"S¬ xuÊt mao l­","Oxherd Boy","TiÓu thµnh s¬ diÔn","Martial Arts Trial","Profound Mastery","Kú c«ng m¹c tr¾c","Peerless in the World","Secret Defying Heaven","S­ tæ nguyªn thÇn"};
 --¸÷¸öÁ÷ÅÉµÄÃû×Ö
-TB_FACTION_NAME = {"ThiÕu L©m","Vâ §ang","Nga My","C¸i Bang","§­êng M«n","D­¬ng M«n","Ngò §éc"};
+TB_FACTION_NAME = {"Shaolin","Wudang","Nga My","Beggars' Sect","§­êng M«n","D­¬ng M«n","Five Poisons"};
 --¸÷¹ØµÄµôÂäÎïĞÅÏ¢
 TB_DROP_INFO =
 {	--¶¨ÒåÃ¿¹ØµÄ»ÕÕÂµôÂäÊıÁ¿
@@ -1172,15 +1172,15 @@ TB_DROP_INFO =
 TB_TOTEM_INFO = 
 {	--{{»ÕÕÂ1ĞÅÏ¢},{»ÕÕÂ2ĞÅÏ¢},{»ÕÕÂ3ĞÅÏ¢}}
 	[0] = {},
-	[1] = {{2,0,447,"V¨n Thï X¸ Lîi"},{2,0,448,"Phæ HiÒn X¸ Lîi"},{2,0,449,"§¹i Minh V­¬ng X¸ Lîi"}},	--ÉÙÁÖ
+	[1] = {{2,0,447,"Wenshu Relic"},{2,0,448,"Puxian Relic"},{2,0,449,"§¹i Minh V­¬ng X¸ Lîi"}},	--ÉÙÁÖ
 	[2] = {{2,0,468,"Thiªn Toµn Méc"},{2,0,469,"Thiªn C¬ Méc"},{2,0,470,"Thiªn Khu Méc"}},	--Îäµ±
-	[3] = {{2,0,456,"Hoa sen"},{2,0,457,"Kim Liªn Hoa"},{2,0,461,"TŞnh B×nh Tiªn LiÔu"}},	--¶ëáÒ
-	[4] = {{2,0,463,"Long §Çu §¹i"},{2,0,466,"Tö Kim B¸t"},{2,0,467,"Lôc Ngäc Tr­îng"}},	--Ø¤°ï
-	[5] = {{2,0,453,"B¹ch Háa th¹ch"},{2,0,454,"Bİ §éc ph­¬ng"},{2,0,455,"C¬ quan bİ lôc"}}, 	--ÌÆÃÅ	
-	[6] = {{2,0,476,"M· §¸ng"},{2,0,477,"Tinh B× TiÔn §¹i"},{2,0,478,"Kim Cang ThuÉn"}},	--ÑîÃÅ
-	[7] = {{2,0,483,"NhÖn ®éc"},{2,0,484,"RÕt ®éc"},{2,0,485,"Thi ®éc"}},	--Îå¶¾
-	[8] = {{2,0,490,"MÉu §¬n Lé"},{2,0,491,"Mai QuÕ Lé"},{2,0,487,"Cöu Th¸i Hoa BiÖn"}},	--´äÑÌ
-	[9] = {{2,0,493,"Thiªn C­¬ng Phï"},{2,0,495,"Khu Ma H­¬ng"},{2,0,496,"TrÊn Yªu Linh"}},	--À¥ÂØ
+	[3] = {{2,0,456,"Hoa sen"},{2,0,457,"Golden Lotus Flower"},{2,0,461,"TŞnh B×nh Tiªn LiÔu"}},	--¶ëáÒ
+	[4] = {{2,0,463,"Long §Çu §¹i"},{2,0,466,"Purple Gold Bowl"},{2,0,467,"Lôc Ngäc Tr­îng"}},	--Ø¤°ï
+	[5] = {{2,0,453,"B¹ch Háa th¹ch"},{2,0,454,"Bİ §éc ph­¬ng"},{2,0,455,"Mechanism Secret Manual"}}, 	--ÌÆÃÅ	
+	[6] = {{2,0,476,"Stone Horse"},{2,0,477,"Star Hide Arrow Grand"},{2,0,478,"Vajra Shield"}},	--ÑîÃÅ
+	[7] = {{2,0,483,"NhÖn ®éc"},{2,0,484,"RÕt ®éc"},{2,0,485,"Corpse Poison"}},	--Îå¶¾
+	[8] = {{2,0,490,"Peony Road"},{2,0,491,"Plum Osmanthus Road"},{2,0,487,"Cöu Th¸i Hoa BiÖn"}},	--´äÑÌ
+	[9] = {{2,0,493,"Thiªn C­¬ng Phï"},{2,0,495,"Demon Quelling Incense"},{2,0,496,"Demon Suppressing Spirit"}},	--À¥ÂØ
 	[10] = {{2,0,498,"Xİch Háa LÖnh"},{2,0,499,"Th¸nh Háa LÖnh"},{2,0,500,"Ngò hµnh Kú"}},	--Ã÷½Ì
 }
 --ÃÅÅÉÌØÉ«PKÒ©
@@ -1188,16 +1188,16 @@ TB_MEDICINE =
 {
 	[0] = {},
 	[1] = {},	
-	[2] = {1,0,247,"Ngò ChuyÓn Kim Cang §¬n"},	--ÉÙÁÖË×¼Ò
+	[2] = {1,0,247,"Five Transformation Vajra Pill"},	--ÉÙÁÖË×¼Ò
 	[3] = {1,0,249,"Ngò ChuyÓn Linh B¶o ®¬n"},	--ÉÙÁÖìøÉ®
-	[4] = {1,0,248,"Ngò ChuyÓn La H¸n §¬n"},	--ÉÙÁÖÎäÉ®
+	[4] = {1,0,248,"Five Transformation Arhat Pill"},	--ÉÙÁÖÎäÉ®
 	[5] = {},			--ÌÆÃÅ
 	[6] = {1,0,250,"HuyÒn C¬ ThÇn Gi¸p §¬n"},	--ÌÆÃÅ
 	[7] = {},			--¶ëáÒ
-	[8] = {1,0,251,"Chİnh Nguyªn Kim Quang §¬n"},	--¶ëáÒ·ğ¼Ò
-	[9] = {1,0,252,"Chİnh Nguyªn Tö Anh §¬n"},	--¶ëáÒË×¼Ò
+	[8] = {1,0,251,"Zhengyuan Golden Light Pill"},	--¶ëáÒ·ğ¼Ò
+	[9] = {1,0,252,"Zhengyuan Purple Hero Pill"},	--¶ëáÒË×¼Ò
 	[10] = {},			--Ø¤°ï
-	[11] = {1,0,253,"Tiªu Dao Cµn Kh«n §¬n"},--Ø¤°ï¾»ÒÂ
+	[11] = {1,0,253,"Xiaoyao Universe Pill"},--Ø¤°ï¾»ÒÂ
 	[12] = {1,0,254,"Tiªu Dao ThÇn Du §¬n"},--Ø¤°ïÎÛÒÂ
 	[13] = {},			--Îäµ±
 	[14] = {1,0,255,"Lôc D­¬ng Chİnh Khİ ®¬n"},--Îäµ±µÀ¼Ò
@@ -1213,8 +1213,8 @@ TB_MEDICINE =
 TB_BOOK_LIST = {
 		[0] = {},
 		[1] = {},
-		[2] = {{"DŞch C©n Kinh-th­îng",2,1,916},{"DŞch C©n Kinh-trung",2,1,917},{"DŞch C©n Kinh-h¹ ",2,1,918}},
-		[3] = {{"TÈy Tñy Kinh-th­îng",2,1,922},{"TÈy Tñy Kinh-trung",2,1,923},{"TÈy Tñy Kinh-h¹ ",2,1,924}},
+		[2] = {{"Tendon-Changing Classic - upper",2,1,916},{"DŞch C©n Kinh-trung",2,1,917},{"Yi Jin Jing - lower",2,1,918}},
+		[3] = {{"Marrow-Cleansing Classic - upper",2,1,922},{"TÈy Tñy Kinh-trung",2,1,923},{"Xi Sui Jing - lower",2,1,924}},
 		[4] = {{"Nh­ Lai ThÇn Ch­ëng-th­îng",2,1,919},{"Nh­ Lai ThÇn Ch­ëng-trung",2,1,920},{"Nh­ Lai ThÇn Ch­ëng-h¹ ",2,1,921}},
 		[5] = {},
 		[6] = {{"HÊp Tinh TrËn-th­îng",2,1,925},{"HÊp Tinh TrËn-trung",2,1,926},{"HÊp Tinh TrËn-h¹ ",2,1,927}},
@@ -1222,17 +1222,17 @@ TB_BOOK_LIST = {
 		[8] = {{"V¹n T­íng ThÇn C«ng-th­îng",2,1,928},{"V¹n T­íng ThÇn C«ng-trung",2,1,929},{"V¹n T­íng ThÇn C«ng-h¹ ",2,1,930}},
 		[9]	= {{"Thiªn ¢m TrÊn Hån Khóc-th­îng",2,1,931},{"Thiªn ¢m TrÊn Hån Khóc-trung",2,1,932},{"Thiªn ¢m TrÊn Hån Khóc-h¹ ",2,1,933}},
 		[10] = {},
-		[11] = {{"Gi¸ng Long ThËp B¸t Ch­ëng-th­îng",2,1,934},{"Gi¸ng Long ThËp B¸t Ch­ëng-trung",2,1,935},{"Gi¸ng Long ThËp B¸t Ch­ëng-h¹ ",2,1,936}},
+		[11] = {{"Eighteen Dragon-Subduing Palms - upper",2,1,934},{"Gi¸ng Long ThËp B¸t Ch­ëng-trung",2,1,935},{"Eighteen Dragon-Subduing Palms - lower",2,1,936}},
 		[12] = {{"§¶ CÈu C«n TrËn-th­îng",2,1,937},{"§¶ CÈu C«n TrËn-trung",2,1,938},{"§¶ CÈu C«n TrËn-h¹ ",2,1,939}},
 		[13] = {},
 		[14] = {{"V« Th­îng Th¸i Cùc KiÕm-th­îng",2,1,940},{"V« Th­îng Th¸i Cùc KiÕm-trung",2,1,941},{"V« Th­îng Th¸i Cùc KiÕm-h¹ ",2,1,942}},
 		[15] = {{"Th¸i Cùc ThÇn C«ng-th­îng",2,1,943},{"Th¸i Cùc ThÇn C«ng-trung",2,1,944},{"Th¸i Cùc ThÇn C«ng-h¹ ",2,1,945}},
 		[16] = {},
-		[17] = {{"Liªn Hoµn Toµn Long Th­¬ng-th­îng",2,1,946},{"Liªn Hoµn Toµn Long Th­¬ng-trung",2,1,947},{"Liªn Hoµn Toµn Long Th­¬ng-h¹ ",2,1,948}},
+		[17] = {{"Chained Coiling Dragon Spear - upper",2,1,946},{"Liªn Hoµn Toµn Long Th­¬ng-trung",2,1,947},{"Continuous Coiling Dragon Spear - lower",2,1,948}},
 		[18] = {{"B¸ V­¬ng T­êng Phông TiÔn-th­îng",2,1,949},{"B¸ V­¬ng T­êng Phông TiÔn-trung",2,1,950},{"B¸ V­¬ng T­êng Phông TiÔn-h¹ ",2,1,951}},
 		[19] = {},
 		[20] = {{"V« Thiªn Ma C«ng-th­îng",2,1,955},{"V« Thiªn Ma C«ng-trung",2,1,956},{"V« Thiªn Ma C«ng-h¹ ",2,1,957}},
-		[21] = {{"V« ¶nh Ma Cæ-th­îng",2,1,952},{"V« ¶nh Ma Cæ-trung",2,1,953},{"V« ¶nh Ma Cæ-h¹ ",2,1,954}}
+		[21] = {{"Shadowless Demon Drum - upper",2,1,952},{"V« ¶nh Ma Cæ-trung",2,1,953},{"Shadowless Demon Drum - lower",2,1,954}}
 	}
 	
 TB_BOOK_REQUIRE = {--¶Ò»»ÕòÅÉÃØ¼®²ĞÆªĞèÒª¶ÔÓ¦µÄÊ¦ÃÅĞÅÎïµÈ¼¶ºÍÊıÁ¿

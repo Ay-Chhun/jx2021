@@ -14,9 +14,9 @@ tYuebing = {
 function OnUse()
 	Say("Më Hép b¸nh Trung Thu ngÉu nhiªn nhËn ®­îc 20 b¸nh Trung Thu ThŞnh ThÕ, më kh«ng? ",
 		3,
-		"§ång ı/confirm_yuebing",
+		"Agree/confirm_yuebing",
 		"Ta muèn xem x¸c suÊt nhËn ®­îc b¸nh Trung Thu./about_prob",
-		"Kh«ng cã g×/nothing")
+		"Nothing/nothing")
 end
 
 function confirm_yuebing()
@@ -33,7 +33,7 @@ function confirm_yuebing()
 					if add_flag == 1 then
 						nTotal=nTotal+1;
 					else
-						WriteLog("Hép b¸nh Trung Thu lín: "..GetName().."Më hép b¸nh Trung Thu nhËn ®­îc b¸nh Trung Thu thÊt b¹i, vŞ trİ thÊt b¹i:"..add_flag);
+						WriteLog("Large Mooncake Box:"..GetName().."Më hép b¸nh Trung Thu nhËn ®­îc b¸nh Trung Thu thÊt b¹i, vŞ trİ thÊt b¹i:"..add_flag);
 					end
 					break
 				end
@@ -42,7 +42,7 @@ function confirm_yuebing()
 		if nTotal == 20 then
 			Msg2Player("Chóc mõng b¹n nhËn ®­îc 20 b¸nh Trung Thu ThŞnh ThÕ!");
 		else
-			WriteLog("Hép b¸nh Trung Thu lín: "..GetName().."Më hép b¸nh Trung Thu nhËn ®­îc b¸nh Trung Thu sè phÇn th­ëng lçi, vŞ trİ bŞ lçi: "..nTotal);
+			WriteLog("Large Mooncake Box:"..GetName().."Më hép b¸nh Trung Thu nhËn ®­îc b¸nh Trung Thu sè phÇn th­ëng lçi, vŞ trİ bŞ lçi: "..nTotal);
 		end
 	end
 end

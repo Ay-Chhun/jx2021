@@ -1,5 +1,5 @@
 PLC_ItemList = {
-	{"CÈm Nang §¹i Sù KiÖn", 2, 1, 30045}
+	{"Grand Event Handbook", 2, 1, 30045}
 };
 
 function PLC_OnPlayerLogin()

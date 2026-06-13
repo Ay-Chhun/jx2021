@@ -25,7 +25,7 @@ function OnUse(idx)
 	end
 	local nMapID = GetWorldPos()
 	if nItemMapID ~= nMapID then
-		Say("ChØ ë "..tCityName[nItemMapID].." míi sö dông vËt phÈm nµy ", 0)
+		Say("Only in"..tCityName[nItemMapID].." míi sö dông vËt phÈm nµy ", 0)
 		return
 	end
 	local nJoinTime = GetTime() - GetJoinTongTime()
@@ -69,7 +69,7 @@ function OnUse(idx)
 			SetCurTitle(tMapTitleID[nItemMapID][1], tMapTitleID[nItemMapID][2])
 			Say("b¹n ®­îc bæ nhiÖm lµ "..tCityName[nItemMapID].." danh bé. \n<color=red>Chó ý:  Danh hiÖu danh bé ph¶i kÝch ho¹t míi cã chøc n¨ng cña danh bé.<color>", 0)
 			SendTongMessage(GetName().."Sö dông danh bé tiÕn cö th­ trë thµnh danh bé.")
-			WriteLog("C«ng thµnh chiÕn-Qu¶n lý:"..szTongName.."-"..GetName().." trë thµnh "..tCityName[nItemMapID].."Danh bé")
+			WriteLog("C«ng thµnh chiÕn-Qu¶n lý:"..szTongName.."-"..GetName().." trë thµnh "..tCityName[nItemMapID].."Reputation Holder")
 			SaveNow()
 		end
 	end

@@ -20,13 +20,13 @@ function OnUse(nItemIdx)
 	end
 	if DelItemByIndex(nItemIdx, 1) == 1 then
 		ModifyExp(125000);
-		WriteLogEx(VIET_0911_LOG_TITLE,"Trµ Hoa CÛc",125000,"Æi”m kinh nghi÷m")
+		WriteLogEx(VIET_0911_LOG_TITLE,"Chrysanthemum Tea",125000,"Æi”m kinh nghi÷m")
 		SetTask(VIET_0911_TASK_JUHUACHA_COUNT, GetTask(VIET_0911_TASK_JUHUACHA_COUNT) + 1);
 		--∏¯ŒÔ∆∑Ω±¿¯		
 		if mod(GetTask(VIET_0911_TASK_JUHUACHA_COUNT),50) == 0 then
 			local nRand = gf_GetRandItemByTable(tbVIET_0911_JUHUACHA_AWARD_2, 1000000, 1);
 			local nRetCode, nIndex = gf_AddItemEx(tbVIET_0911_JUHUACHA_AWARD_2[nRand][3], tbVIET_0911_JUHUACHA_AWARD_2[nRand][1]);
-			WriteLogEx(VIET_0911_LOG_TITLE,"Trµ Hoa CÛc",1,tbVIET_0911_JUHUACHA_AWARD_2[nRand][1])
+			WriteLogEx(VIET_0911_LOG_TITLE,"Chrysanthemum Tea",1,tbVIET_0911_JUHUACHA_AWARD_2[nRand][1])
 			if nRetCode == 1 and tbVIET_0911_JUHUACHA_AWARD_2[nRand][4] ~= 0 then
 				SetItemExpireTime(nIndex, tbVIET_0911_JUHUACHA_AWARD_2[nRand][4]);
 			end
@@ -36,14 +36,14 @@ function OnUse(nItemIdx)
 			if nRand == 18 then
 				ModifyReputation(2, 0);
 				Msg2Player("Bπn nhÀn Æ≠Óc 2 Æi”m Danh v‰ng.")
-				WriteLogEx(VIET_0911_LOG_TITLE,"Trµ Hoa CÛc",2,"Æi”m danh v‰ng")
+				WriteLogEx(VIET_0911_LOG_TITLE,"Chrysanthemum Tea",2,"Æi”m danh v‰ng")
 			elseif nRand == 19 then
 				SetTask(336, GetTask(336) + 2);
 				Msg2Player("Bπn nhÀn Æ≠Óc 2 Æi”m S≠ m´n.")
-				WriteLogEx(VIET_0911_LOG_TITLE,"Trµ Hoa CÛc",2,"Æi”m s≠ m´n")
+				WriteLogEx(VIET_0911_LOG_TITLE,"Chrysanthemum Tea",2,"Æi”m s≠ m´n")
 			else
 				local nRetCode, nIndex = gf_AddItemEx(tbVIET_0911_JUHUACHA_AWARD[nRand][3], tbVIET_0911_JUHUACHA_AWARD[nRand][1]);
-				WriteLogEx(VIET_0911_LOG_TITLE,"Trµ Hoa CÛc",1,tbVIET_0911_JUHUACHA_AWARD[nRand][1])
+				WriteLogEx(VIET_0911_LOG_TITLE,"Chrysanthemum Tea",1,tbVIET_0911_JUHUACHA_AWARD[nRand][1])
 				if nRetCode == 1 and tbVIET_0911_JUHUACHA_AWARD[nRand][4] ~= 0 then
 					SetItemExpireTime(nIndex, tbVIET_0911_JUHUACHA_AWARD[nRand][4]);
 				end

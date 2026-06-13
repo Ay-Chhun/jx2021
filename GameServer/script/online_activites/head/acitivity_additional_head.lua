@@ -228,7 +228,7 @@ function aah_Ud_PointAward(nActivityId)
 	for i = 1, getn(tPointAward.uFunc) do
 		tinsert(tSay, format(tPointAward.uFunc[i], nActivityId));
 	end
-	tinsert(tSay, "Ra khái/nothing");
+	tinsert(tSay, "Leave/nothing");
 	Say(tPointAward.szTitle, getn(tSay), tSay)
 end
 
@@ -269,8 +269,8 @@ function Ud_GiveVipAward_201309()
 	AddItem(2,1,30369,20);
 	Msg2Player(format("Ng­¬i nhËn ®­îc %sx%d", "Cæ Linh Ngäc", 20));
 	local tAward = {
-		{1, 45, "b¸nh Ýt ng¶i h­¬ng", {2,1,1123,6,4}, 0},
-		{1, 45, "B¸nh Ýt Ch©n Gµ", {2,1,1124,6,4}, 0},
+		{1, 45, "a few wormwood cakes", {2,1,1123,6,4}, 0},
+		{1, 45, "Chicken Feet Mini Cake", {2,1,1124,6,4}, 0},
 		{1, 10, "b¸nh Ýt B¸c B¶o", {2,1,1125,6,4}, 0},
 	}
 	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "", "");
@@ -281,7 +281,7 @@ function Ud_GiveVipAward_201310(nActivityId)
 	AddItem(2,1,30132,2010);
 	Msg2Player(format("Ng­¬i nhËn ®­îc %sx%d", "Vâ L©m B¶o H¹p", 2010));
 	AddItem(2,1,30340,200);
-	Msg2Player(format("Ng­¬i nhËn ®­îc %sx%d", "Méc R­¬ng", 200));
+	Msg2Player(format("Ng­¬i nhËn ®­îc %sx%d", "Wooden Chest", 200));
 	AddItem(2,1,30368,20);
 	Msg2Player(format("Ng­¬i nhËn ®­îc %sx%d", "Cæ Linh Th¹ch", 20));
 	AddItem(2,1,30369,20);
@@ -373,20 +373,20 @@ function Ud_Use_Exchange_Point_1(nActivityId, nIndex)
 	gf_SetMyTaskBit(nTaskID, 1, 30, nPoint-tPoint[nIndex]);
 	Msg2Player(format("Ng­¬i tiªu hao %d ®iÓm tÝch lòy phÇn th­ëng", tPoint[nIndex]));
 	if nIndex == 1 then
-		gf_AddItemEx2({0, 102, 3185, 1, 1, -1, -1, -1, -1, -1, -1}, "DiÖu D­¬ng To¸i Hoµng-¤ L©n B¶o Giíi", "PhÇn th­ëng ho¹t ®éng phô", "§æi tÝch lòy", 0, 1);
+		gf_AddItemEx2({0, 102, 3185, 1, 1, -1, -1, -1, -1, -1, -1}, "DiÖu D­¬ng To¸i Hoµng-¤ L©n B¶o Giíi", "PhÇn th­ëng ho¹t ®éng phô", "Accumulation exchange", 0, 1);
 	elseif nIndex == 2 then
-		gf_AddItemEx2({0, 102, 3186, 1, 1, -1, -1, -1, -1, -1, -1}, "DiÖu D­¬ng To¸i Hoµng-Tö Giao Ngäc Béi", "PhÇn th­ëng ho¹t ®éng phô", "§æi tÝch lòy", 0, 1);
+		gf_AddItemEx2({0, 102, 3186, 1, 1, -1, -1, -1, -1, -1, -1}, "DiÖu D­¬ng To¸i Hoµng-Tö Giao Ngäc Béi", "PhÇn th­ëng ho¹t ®éng phô", "Accumulation exchange", 0, 1);
 	elseif nIndex == 3 then
-		gf_AddItemEx2({0, 102, 3187, 1, 1, -1, -1, -1, -1, -1, -1}, "DiÖu D­¬ng To¸i Hoµng-V©n Hæ LÖnh", "PhÇn th­ëng ho¹t ®éng phô", "§æi tÝch lòy", 0, 1);
+		gf_AddItemEx2({0, 102, 3187, 1, 1, -1, -1, -1, -1, -1, -1}, "DiÖu D­¬ng To¸i Hoµng-V©n Hæ LÖnh", "PhÇn th­ëng ho¹t ®éng phô", "Accumulation exchange", 0, 1);
 	elseif nIndex == 4 then
-		gf_AddItemEx2({0, 102, 3188, 1, 1, -1, -1, -1, -1, -1, -1}, "DiÖu D­¬ng To¸i Hoµng-XÝch T­íc Hoµn", "PhÇn th­ëng ho¹t ®éng phô", "§æi tÝch lòy", 0, 1);
+		gf_AddItemEx2({0, 102, 3188, 1, 1, -1, -1, -1, -1, -1, -1}, "DiÖu D­¬ng To¸i Hoµng-XÝch T­íc Hoµn", "PhÇn th­ëng ho¹t ®éng phô", "Accumulation exchange", 0, 1);
 	elseif nIndex == 5 then
-		gf_AddItemEx2({0, 102, 3189, 1, 1, -1, -1, -1, -1, -1, -1}, "DiÖu D­¬ng To¸i Hoµng-BÝch Quy Liªn", "PhÇn th­ëng ho¹t ®éng phô", "§æi tÝch lòy", 0, 1);
+		gf_AddItemEx2({0, 102, 3189, 1, 1, -1, -1, -1, -1, -1, -1}, "DiÖu D­¬ng To¸i Hoµng-BÝch Quy Liªn", "PhÇn th­ëng ho¹t ®éng phô", "Accumulation exchange", 0, 1);
 	elseif nIndex == 6 then
 		AddItem(2, 1, 30132, 9999);
-		gf_WriteLogEx("PhÇn th­ëng ho¹t ®éng phô","§æi tÝch lòy",9999,"Vâ L©m B¶o H¹p");
+		gf_WriteLogEx("PhÇn th­ëng ho¹t ®éng phô","Accumulation exchange",9999,"Vâ L©m B¶o H¹p");
 	elseif nIndex == 7 then	
-		gf_AddItemEx2({2, 1, 30133, 3}, "Ch×a Khãa Vµng", "PhÇn th­ëng ho¹t ®éng phô", "§æi tÝch lòy", 0, 1);
+		gf_AddItemEx2({2, 1, 30133, 3}, "Ch×a Khãa Vµng", "PhÇn th­ëng ho¹t ®éng phô", "Accumulation exchange", 0, 1);
 	elseif nIndex == 8 then
 		give_all_pet_book(1);
 	elseif nIndex == 9 then
@@ -396,15 +396,15 @@ function Ud_Use_Exchange_Point_1(nActivityId, nIndex)
 	elseif nIndex == 11 then
 		give_all_pet_book(4);
 	elseif nIndex == 12 then
-		gf_AddItemEx2({2, 1, 30536, 20}, "TÈy T©m Th¹ch Kho¸ng", "PhÇn th­ëng ho¹t ®éng phô", "§æi tÝch lòy", 0, 1); 
+		gf_AddItemEx2({2, 1, 30536, 20}, "TÈy T©m Th¹ch Kho¸ng", "PhÇn th­ëng ho¹t ®éng phô", "Accumulation exchange", 0, 1); 
 	elseif nIndex == 13 then
-		gf_AddItemEx2({2, 1, 30537, 20}, "LuyÖn L« ThiÕt Kho¸ng", "PhÇn th­ëng ho¹t ®éng phô", "§æi tÝch lòy", 0, 1); 
+		gf_AddItemEx2({2, 1, 30537, 20}, "LuyÖn L« ThiÕt Kho¸ng", "PhÇn th­ëng ho¹t ®éng phô", "Accumulation exchange", 0, 1); 
 	elseif nIndex == 14 then
-		gf_AddItemEx2({2, 1, 30523, 3}, "CÊp 3 TÈy T©m Th¹ch", "PhÇn th­ëng ho¹t ®éng phô", "§æi tÝch lòy", 0, 1); 
+		gf_AddItemEx2({2, 1, 30523, 3}, "CÊp 3 TÈy T©m Th¹ch", "PhÇn th­ëng ho¹t ®éng phô", "Accumulation exchange", 0, 1); 
 	elseif nIndex == 15 then
-		gf_AddItemEx2({2, 1, 30529, 3}, "CÊp 3 LuyÖn L« ThiÕt", "PhÇn th­ëng ho¹t ®éng phô", "§æi tÝch lòy", 0, 1); 
+		gf_AddItemEx2({2, 1, 30529, 3}, "CÊp 3 LuyÖn L« ThiÕt", "PhÇn th­ëng ho¹t ®éng phô", "Accumulation exchange", 0, 1); 
 	elseif nIndex == 16 then
-		gf_AddItemEx2({2, 1, 30497, 500}, "Ma Tinh", "PhÇn th­ëng ho¹t ®éng phô", "§æi tÝch lòy", 0, 1); 
+		gf_AddItemEx2({2, 1, 30497, 500}, "Ma Tinh", "PhÇn th­ëng ho¹t ®éng phô", "Accumulation exchange", 0, 1); 
 	end
 end
 
@@ -414,7 +414,7 @@ function give_all_pet_book(nLevel)
 	end
 	local tP = {1,5,9,13,17,21,25,29,33,37,41,45,49,53,57};
 	for i = 1, getn(tP) do
-		gf_AddItemEx2({2,150,tP[i]+nLevel-1,1}, GetItemName(2,150,tP[i]+nLevel-1), "PhÇn th­ëng ho¹t ®éng phô", "§æi tÝch lòy", 0, 1);
+		gf_AddItemEx2({2,150,tP[i]+nLevel-1,1}, GetItemName(2,150,tP[i]+nLevel-1), "PhÇn th­ëng ho¹t ®éng phô", "Accumulation exchange", 0, 1);
 	end
 	return 1;
 end
@@ -434,40 +434,40 @@ end
 function Ud_GiveAward_106_1()
 	--¸øÊ¥µ®Ì××°
 	local tChrismas = {
-		{{"Nãn gi¸ng sinh chuÈn", {0,108,109,1}}, {"Nãn gi¸ng sinh kh«i ng«", {0,108,110,1}}, {"Nãn gi¸ng sinh gîi c¶m", {0,108,112,1}}, {"Nãn gi¸ng sinh nhá", {0,108,111,1}}},
-		{{"Th­îng y gi¸ng sinh chuÈn", {0,109,109,1}}, {"Gi¸ng sinh kh«i ng«", {0,109,110,1}}, {"Th­¬ng y gi¸ng sinh gîi c¶m", {0,109,112,1}}, {"Th­¬ng y gi¸ng sinh KiÒu n÷", {0,109,111,1}}},
-		{{"H¹ y Gi¸ng sinh chuÈn", {0,110,73,1}}, {"Trang phôc gi¸ng sinh kh«i ng«", {0,110,74,1}}, {"H¹ y gi¸ng sinh n÷ gîi c¶m", {0,110,76,1}}, {"Gi¸ng sinh KiÒu n÷", {0,110,75,1}}},
+		{{"Standard Christmas Hat", {0,108,109,1}}, {"Imposing Christmas Hat", {0,108,110,1}}, {"Alluring Christmas Hat", {0,108,112,1}}, {"Small Christmas Hat", {0,108,111,1}}},
+		{{"Standard Christmas Top", {0,109,109,1}}, {"Imposing Christmas Outfit", {0,109,110,1}}, {"Alluring Christmas Top", {0,109,112,1}}, {"Charming Women's Christmas Top", {0,109,111,1}}},
+		{{"Standard Christmas Bottom", {0,110,73,1}}, {"Trang phôc gi¸ng sinh kh«i ng«", {0,110,74,1}}, {"Alluring Women's Christmas Bottom", {0,110,76,1}}, {"Charming Women's Christmas", {0,110,75,1}}},
 	};
 	local nBody = GetBody();
 	local nSize = getn(tChrismas);
 	for i = 1, nSize do
-		gf_AddItemEx2(tChrismas[i][nBody][2], tChrismas[i][nBody][1], "Event phô th¸ng12", "NhËn ngo¹i trang Noel", 24 * 3600, 1)
+		gf_AddItemEx2(tChrismas[i][nBody][2], tChrismas[i][nBody][1], "December Side Event", "Receive Christmas outfit", 24 * 3600, 1)
 	end
 end
 
 function Ud_GiveAward_106_2()
-	gf_AddItemEx2({0, 105, 35, 1, 1, -1, -1, -1, -1, -1, -1}, "TuÇn Léc", "Event phô th¸ng12", "NhËn TuÇn Léc", 24 * 3600, 1);
+	gf_AddItemEx2({0, 105, 35, 1, 1, -1, -1, -1, -1, -1, -1}, "Tuan Loc", "December Side Event", "Receive Reindeer", 24 * 3600, 1);
 end
 
 function Ud_GiveAward_106_3()
-	gf_AddItemEx2({0, 105, 30041, 1, 1, -1, -1, -1, -1, -1, -1}, "Xe TuÇn Léc mµu ®á", "Event phô th¸ng12", "NhËn Xe TuÇn Léc", 24 * 3600, 1);
+	gf_AddItemEx2({0, 105, 30041, 1, 1, -1, -1, -1, -1, -1, -1}, "Red Reindeer Cart", "December Side Event", "Receive Reindeer Cart", 24 * 3600, 1);
 end
 
 function Ud_GiveAward_106_4()
-	gf_AddItemEx2({0, 105, 30042, 1, 1, -1, -1, -1, -1, -1, -1}, "Xe TuÇn Léc  xanh lôc", "Event phô th¸ng12", "NhËn Xe TuÇn Léc", 24 * 3600, 1)
+	gf_AddItemEx2({0, 105, 30042, 1, 1, -1, -1, -1, -1, -1, -1}, "Green Reindeer Cart", "December Side Event", "Receive Reindeer Cart", 24 * 3600, 1)
 end
 
 function Ud_GiveAward_106_5()
-	gf_AddItemEx2({0, 105, 30043, 1, 1, -1, -1, -1, -1, -1, -1}, "Xe TuÇn Léc mµu vµng", "Event phô th¸ng12", "NhËn Xe TuÇn Léc", 24 * 3600, 1)
+	gf_AddItemEx2({0, 105, 30043, 1, 1, -1, -1, -1, -1, -1, -1}, "Yellow Reindeer Cart", "December Side Event", "Receive Reindeer Cart", 24 * 3600, 1)
 end
 
 function Ud_GiveAward_106_6()
 	gf_Modify("Exp", 24122013);
-	gf_EventGiveCustomAward(4, 24, 1, "Event phô th¸ng12");
-  gf_EventGiveCustomAward(3, 24, 1, "Event phô th¸ng12");
-  gf_EventGiveCustomAward(27, 24, 1, "Event phô th¸ng12", "", 1);
-  gf_EventGiveCustomAward(31, 24, 1, "Event phô th¸ng12");
-  gf_AddItemEx2({2,1,30170,24}, "D©u", "Event phô th¸ng12");
+	gf_EventGiveCustomAward(4, 24, 1, "December Side Event");
+  gf_EventGiveCustomAward(3, 24, 1, "December Side Event");
+  gf_EventGiveCustomAward(27, 24, 1, "December Side Event", "", 1);
+  gf_EventGiveCustomAward(31, 24, 1, "December Side Event");
+  gf_AddItemEx2({2,1,30170,24}, "Strawberry", "December Side Event");
 end
 
 function Ud_GiveAward_108_1()
@@ -478,23 +478,23 @@ function Ud_GiveAward_108_1()
 	local nBody = GetBody();
 	local nSize = getn(tSpring);
 	for i = 1, nSize do
-		gf_AddItemEx2(tSpring[i][nBody][2], tSpring[i][nBody][1], "Event phô 1 th¸ng 1", "NhËn ngo¹i trang N¨m Míi", 72 * 3600, 1)
+		gf_AddItemEx2(tSpring[i][nBody][2], tSpring[i][nBody][1], "Assist event January 1", "Receive New Year outfit", 72 * 3600, 1)
 	end
 end
 
 function Ud_GiveAward_108_2()
-	gf_AddItemEx2({0, 105, 33, 1, 4, -1, -1, -1, -1, -1, -1}, "Niªn thó", "Event phô 1 th¸ng 1", "", 72*3600, 1);
+	gf_AddItemEx2({0, 105, 33, 1, 4, -1, -1, -1, -1, -1, -1}, "Year Beast", "Assist event January 1", "", 72*3600, 1);
 end
 
 function Ud_GiveAward_108_3()
 	gf_Modify("Exp", 20142014);
-	gf_EventGiveCustomAward(4, 24, 1, "Event phô 1 th¸ng 1");
-  gf_EventGiveCustomAward(3, 24, 1, "Event phô 1 th¸ng 1");
-  gf_EventGiveCustomAward(27, 24, 1, "Event phô 1 th¸ng 1", "", 1);
-  gf_EventGiveCustomAward(31, 24, 1, "Event phô 1 th¸ng 1");
-  gf_AddItemEx2({2,1,30172,24}, "Xoµi", "Event phô 1 th¸ng 1", "", 0, 1);
-  gf_AddItemEx2({2,95,208,4,4}, "Tô NghÜa LÖnh", "Event phô 1 th¸ng 1", "", 0, 1);
-  gf_AddItemEx2({2,1,30409,4,4}, "Th«ng Thiªn LÖnh", "Event phô 1 th¸ng 1", "", 0, 1);
+	gf_EventGiveCustomAward(4, 24, 1, "Assist event January 1");
+  gf_EventGiveCustomAward(3, 24, 1, "Assist event January 1");
+  gf_EventGiveCustomAward(27, 24, 1, "Assist event January 1", "", 1);
+  gf_EventGiveCustomAward(31, 24, 1, "Assist event January 1");
+  gf_AddItemEx2({2,1,30172,24}, "Mango", "Assist event January 1", "", 0, 1);
+  gf_AddItemEx2({2,95,208,4,4}, "Token of Righteousness", "Assist event January 1", "", 0, 1);
+  gf_AddItemEx2({2,1,30409,4,4}, "Th«ng Thiªn LÖnh", "Assist event January 1", "", 0, 1);
 end
 
 function Ud_GiveAward_113_1()
@@ -522,27 +522,27 @@ end
 
 function Ud_GiveAward_116_1()
 	gf_Modify("Exp", 5555555);
-	gf_EventGiveCustomAward(3, 55, 1, "Event phô th¸ng 3");
-  gf_EventGiveCustomAward(4, 55, 1, "Event phô th¸ng 3");
+	gf_EventGiveCustomAward(3, 55, 1, "Assist event March");
+  gf_EventGiveCustomAward(4, 55, 1, "Assist event March");
   AwardGenuineQi(55)
 end
 
 function Ud_GiveAward_116_2()
 	gf_Modify("Exp", 47444777);
-	gf_EventGiveCustomAward(31, 44, 1, "Event phô th¸ng 3");
-	gf_AddItemEx2({2,1,30497,10,4}, "Ma Tinh", "Event phô th¸ng 3", "", 0, 1);
+	gf_EventGiveCustomAward(31, 44, 1, "Assist event March");
+	gf_AddItemEx2({2,1,30497,10,4}, "Ma Tinh", "Assist event March", "", 0, 1);
 end
 
 function Ud_GiveAward_116_3()
 	gf_Modify("Exp", 39888666);
 	AwardGenuineQi(100)
-	gf_AddItemEx2({2,1,30497,20,4}, "Ma Tinh", "Event phô th¸ng 3", "", 0, 1);
+	gf_AddItemEx2({2,1,30497,20,4}, "Ma Tinh", "Assist event March", "", 0, 1);
 end
 
 function Ud_GiveLastAward_201403()
-	gf_AddItemEx2({2,1,9998,2,4}, "Qu©n C«ng §¹i", "Event phô th¸ng 3", "", 7*24*3600, 1);
-	gf_AddItemEx2({2,1,9977,2,4}, "Qu©n C«ng Huy Hoµng", "Event phô th¸ng 3", "", 7*24*3600, 1);
-	gf_AddItemEx2({2,1,30636,4}, "8/3 tÝn vËt", "Event phô th¸ng 3", "", 0, 1);
+	gf_AddItemEx2({2,1,9998,2,4}, "Qu©n C«ng §¹i", "Assist event March", "", 7*24*3600, 1);
+	gf_AddItemEx2({2,1,9977,2,4}, "Qu©n C«ng Huy Hoµng", "Assist event March", "", 7*24*3600, 1);
+	gf_AddItemEx2({2,1,30636,4}, "8/3 tÝn vËt", "Assist event March", "", 0, 1);
 	ahf_Get70GaojiMiji(0, 1, 1)
 end
 
@@ -568,27 +568,27 @@ end
 function Ud_GiveLastAward_201404()
 	gf_AddItemEx2({2,1,9998,2,4}, "Qu©n C«ng §¹i", "ho¹t ®éng phô th¸ng 4 ", "", 7*24*3600, 1);
 	gf_AddItemEx2({2,1,9977,2,4}, "Qu©n C«ng Huy Hoµng", "ho¹t ®éng phô th¸ng 4 ", "", 7*24*3600, 1);
-	gf_AddItemEx2({2,1,30641,4}, "tö s¾c b¶o th¹ch ", "ho¹t ®éng phô th¸ng 4 ", "", 0, 1);
+	gf_AddItemEx2({2,1,30641,4}, "Four-color gemstone", "ho¹t ®éng phô th¸ng 4 ", "", 0, 1);
 	ahf_GetGaojiZhenjuan(1, 3, 1)
 end
 
 function Ud_GiveAward_124_1()
 	gf_Modify("Exp", 5900000);
-	gf_EventGiveCustomAward(3, 50, 1, "Event phô th¸ng 5");
-  gf_EventGiveCustomAward(4, 50, 1, "Event phô th¸ng 5");
+	gf_EventGiveCustomAward(3, 50, 1, "Assist event May");
+  gf_EventGiveCustomAward(4, 50, 1, "Assist event May");
   AwardGenuineQi(50)
   gf_WriteLogEx("Hoat dong phu thang 5 nam 2014", "§æi phÇn th­ëng cuèi cïng", 1, "PhÇn th­ëng dßng 1");
 end
 
 function Ud_GiveAward_124_2()
 	gf_Modify("Exp", 69000000);
-	gf_EventGiveCustomAward(31, 49, 1, "Event phô th¸ng 5");
+	gf_EventGiveCustomAward(31, 49, 1, "Assist event May");
 	local tAward = {
 		{1, 10, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 0},
-		{1, 5, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 1}, 7 * 24 * 3600},
+		{1, 5, "Xiu Zhen Yao Jue", {2, 0, 554, 1}, 7 * 24 * 3600},
 		{1, 5, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 		{1, 5, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 7 * 24 * 3600},
-		{1, 5, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 7 * 24 * 3600},
+		{1, 5, "Tribulation Dispel Powder", {2, 0, 141, 1}, 7 * 24 * 3600},
 		{2, 32, 1000000, 1},
 		{2, 25, 2000000, 1},
 		{32, 1, 1000, 1},
@@ -624,7 +624,7 @@ function Ud_GiveAward_127_2()
 		{1, 5, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 		{1, 10, "TiÓu Nh©n s©m qu¶", {2, 0, 552, 1}, 7 * 24 * 3600},
 		{1, 7, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 7 * 24 * 3600},
-		{1, 10, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 7 * 24 * 3600},
+		{1, 10, "Tribulation Dispel Powder", {2, 0, 141, 1}, 7 * 24 * 3600},
 		{32, 1, 1000, 1},
 		{4, 6, 200, 1},
 		{5, 6, 200, 1},
@@ -658,7 +658,7 @@ function Ud_GiveAward_130_2()
 		{1, 7, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 		{1, 10, "TiÓu Nh©n s©m qu¶", {2, 0, 552, 1}, 7 * 24 * 3600},
 		{1, 7, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 7 * 24 * 3600},
-		{1, 10, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 7 * 24 * 3600},
+		{1, 10, "Tribulation Dispel Powder", {2, 0, 141, 1}, 7 * 24 * 3600},
 		{1, 1, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},
 		{1, 2, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
 		{1, 3, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 7 * 24 * 3600},
@@ -690,7 +690,7 @@ function Ud_GiveAward_132_2()
 		{1, 7, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 		{1, 10, "TiÓu Nh©n s©m qu¶", {2, 0, 552, 1}, 7 * 24 * 3600},
 		{1, 7, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 7 * 24 * 3600},
-		{1, 10, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 7 * 24 * 3600},
+		{1, 10, "Tribulation Dispel Powder", {2, 0, 141, 1}, 7 * 24 * 3600},
 		{1, 1, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},
 		{1, 2, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
 		{1, 3, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 7 * 24 * 3600},
@@ -722,7 +722,7 @@ function Ud_GiveAward_134_2()
 		{1, 7, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 		{1, 10, "TiÓu Nh©n s©m qu¶", {2, 0, 552, 1}, 7 * 24 * 3600},
 		{1, 7, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 7 * 24 * 3600},
-		{1, 10, "TÈy Tñy linh ®¬n", {2, 0, 137, 1}, 7 * 24 * 3600},
+		{1, 10, "Marrow-Cleansing Spirit Pill", {2, 0, 137, 1}, 7 * 24 * 3600},
 		{1, 1, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},
 		{1, 2, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
 		{1, 3, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 7 * 24 * 3600},
@@ -754,7 +754,7 @@ function Ud_GiveAward_136_2()
 		{1, 7, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 		{1, 10, "TiÓu Nh©n s©m qu¶", {2, 0, 552, 1}, 7 * 24 * 3600},
 		{1, 7, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 7 * 24 * 3600},
-		{1, 10, "TÈy Tñy linh ®¬n", {2, 0, 137, 1}, 7 * 24 * 3600},
+		{1, 10, "Marrow-Cleansing Spirit Pill", {2, 0, 137, 1}, 7 * 24 * 3600},
 		{1, 1, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},
 		{1, 2, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
 		{1, 3, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 7 * 24 * 3600},
@@ -786,7 +786,7 @@ function Ud_GiveAward_139_2()
 		{32, 15, 1000, 1},
 		{33, 5, 1000, 1},
 		{1, 10, "Cöu chuyÓn håi hån ®¬n", {1, 0, 32, 2}, 0},
-		{1, 5, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 2}, 7 * 24 * 3600},
+		{1, 5, "Xiu Zhen Yao Jue", {2, 0, 554, 2}, 7 * 24 * 3600},
 		{1, 5, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 		{1, 5, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 7 * 24 * 3600},
 		{1, 5, "B¸t B¶o TÈy Tñy Tiªn §¬n", {2, 0, 138, 1}, 7 * 24 * 3600},
@@ -820,14 +820,14 @@ function Ud_GiveAward_143_2()
 		{32, 15, 1000, 1},
 		{33, 5, 1000, 1},
 		{1, 10, "Cöu chuyÓn håi hån ®¬n", {1, 0, 32, 2}, 0},
-		{1, 5, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 2}, 7 * 24 * 3600},
+		{1, 5, "Xiu Zhen Yao Jue", {2, 0, 554, 2}, 7 * 24 * 3600},
 		{1, 5, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 		{1, 5, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 7 * 24 * 3600},
 		{1, 5, "B¸t B¶o TÈy Tñy Tiªn §¬n", {2, 0, 138, 1}, 7 * 24 * 3600},
 		{1, 5, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},
 		{1, 5, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
 		{1, 4, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 7 * 24 * 3600},
-		{1, 1, "ChuyÓn Sinh §¬n ", {2, 1, 30345, 1}, 30 * 24 * 3600},		
+		{1, 1, "Reincarnation Pill", {2, 1, 30345, 1}, 30 * 24 * 3600},		
 	}
 	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Ho¹t ®éng phô 12/2014", "Ho¹t ®éng phô 12/2014")
 end

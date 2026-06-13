@@ -32,7 +32,7 @@ function check_roll_state(dwID)
 	elseif nState == 1 then
 		local n, szItem = DiceLootItem(dwID)
 		if n == 0 then
-			local szMsg = GetName().."Nh∆t Æ≠Óc "..szItem
+			local szMsg = GetName().."Picked up"..szItem
 			gf_Msg2Team(szMsg)
 		elseif n == 1 then
 			Msg2Player("Kho∂ng trËng trong hµnh trang kh´ng ÆÒ, kh´ng th” nhÀn vÀt ph»m" .. "(" .. szItem .. ")")
@@ -46,11 +46,11 @@ function show_roll_info(dwID)
 	local t, nSize, szItem = GetItemDiceRollInfo(dwID)
 	local bAllGiveUp = 1
 	for index, value in t do
-		local str = value[1].."N–m"..value[2].." Æi”m" .. "(" .. szItem .. ")"
+		local str = value[1].."Throw"..value[2].." Æi”m" .. "(" .. szItem .. ")"
 		if value[3] == 0 then
-			str = value[1].."Ph„ng" .. "(" .. szItem .. ")"
+			str = value[1].."Cast" .. "(" .. szItem .. ")"
 		elseif value[3] == 1 then
-			str = str.." (Tuy’t c«u)"
+			str = str.." (Snowball)"
 			if value[4] == 1 then
 				str = str.." --  ∞»°¡À" .. "£®" .. szItem .. "£©"
 			end

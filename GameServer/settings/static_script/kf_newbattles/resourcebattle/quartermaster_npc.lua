@@ -28,14 +28,14 @@ function main()
 	local nResourceCount3 = GetItemCount(tBattleItem[3][2],tBattleItem[3][3],tBattleItem[3][4]);
 	local nStoneCount = GetItemCount(tBattleItem[6][2],tBattleItem[6][3],tBattleItem[6][4]);
 	local selTab = {
-			"NÈp toµn bÈ l≠¨ng th∂o/#handin(0)",
+			"Hand in all provisions/#handin(0)",
 			"NÈp l≠¨ng th∂o-s¨ c p ("..nResourceCount1.." ph«n)/#handin(1)",
 			"NÈp l≠¨ng th∂o-trung c p ("..nResourceCount2.." ph«n)/#handin(2)",
 			"NÈp l≠¨ng th∂o-cao c p ("..nResourceCount3.." ph«n)/#handin(3)",
 			"NÈp Huy“n thi’t kho∏ng thπch ("..nStoneCount.." ph«n)/handin_stone",
-			"NhÀn cuËc/get_hoe",
-			"trÎ lπi"..tCampNameZ[nCamp].."_hÀu doanh/back_to_home",
-			"ßang thu thÀp/nothing"
+			"Take hoe/get_hoe",
+			"trÎ lπi"..tCampNameZ[nCamp].."Rear camp/back_to_home",
+			"Collecting/nothing"
 			}
 	Say("<color=green>"..nNpcName.."<color>: ThÍi gian g p b∏ch, mau giao nÈp l≠¨ng th∂o.",getn(selTab),selTab);
 end;
@@ -106,8 +106,8 @@ function handin(nType)
 	Add_Resource(nCamp,nBattlePoint);
 	BT_SetData(PT_HANDIN_RESOURCE,BT_GetData(PT_HANDIN_RESOURCE)+nBattlePoint);
 	BT_AddPersonalPoint(nPersonalPoint);
-	Talk(1,"","<color=green>"..nNpcName.."<color>: Giao nÈp <color=yellow>"..str1..str2..str3.."<color> giÛp phe m◊nh t®ng th™m <color=yellow>"..nBattlePoint.."<color> Æi”m t›ch lÚy. TÊng Æi”m t›ch lÚy <color=yellow>"..Get_ResCount(nCamp).."<color>");
-	Msg2MSGroup(MISSION_ID,GetName().." NÈp"..str1..str2..str3.."ßi”m t›ch lÚy hi÷n tπi"..Get_ResCount(nCamp),nCamp);
+	Talk(1,"","<color=green>"..nNpcName.."<color>: Hand in <color=yellow>"..str1..str2..str3.."<color> giÛp phe m◊nh t®ng th™m <color=yellow>"..nBattlePoint.."<color> Æi”m t›ch lÚy. TÊng Æi”m t›ch lÚy <color=yellow>"..Get_ResCount(nCamp).."<color>");
+	Msg2MSGroup(MISSION_ID,GetName().." Hand in"..str1..str2..str3.."ßi”m t›ch lÚy hi÷n tπi"..Get_ResCount(nCamp),nCamp);
 end;
 
 function get_hoe()

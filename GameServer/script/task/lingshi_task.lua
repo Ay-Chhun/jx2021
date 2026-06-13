@@ -28,7 +28,7 @@ tZhizaoNpc = {--npc×ø±ê£¬ÒÀ´ÎÊÇÄª´ó¡¢Äª¶þ¡¢ÄªÈý¡¢½õÄï¡¢×Ï¾î¹ÃÄï¡¢Ã÷Ê¦¸µ
 	{350,1546,2935}
 	}
 	
-tNpcName = {"<color=green>M¹c §¹i<color>","<color=green>M¹c NhÞ<color>","<color=green>M¹c Tam<color>","<color=green>CÈm N­¬ng<color>","<color=green>Tö Quyªn C« N­¬ng<color>","<color=green>Minh S­ phã<color>"};
+tNpcName = {"<color=green>Mo Da<color>","<color=green>Mo Er<color>","<color=green>Mo San<color>","<color=green>Jin Niang<color>","<color=green>Zi Juan Gu Niang<color>","<color=green>Master Ming<color>"};
 
 tZhuangbeiOne = {
 	{0,103,1,0,100,1,0,101,1},
@@ -120,7 +120,7 @@ function talk_II()
 	Say("<color=green>HÖ thèng<color>: NÕu b¹n ®· hiÓu c¸c hÖ thèng liªn quan, khi ®Õn cÊp <color=yellow>75<color> cã thÓ ®Õn gÆp TruyÒn nh©n C«ng D· ThÕ Gia l·nh nhËn Linh th¹ch phèi ph­¬ng",	
 		2,
 		"Hay qu¸! Ta ®· hiÓu råi!/set_id_five",
-		"Ch­a hiÓu! Cßn chót m¬ hå!/talk_I");
+		"Not yet clear! Still a little confused!/talk_I");
 end
 
 function talk_III()
@@ -264,7 +264,7 @@ function confirm_cancel()
 	Say("<color=green>HÖ thèng<color>: NÕu b¹n ®· hiÓu ®­îc c¸c hÖ thèng liªn quan, ®Õn cÊp <color=yellow>75<color> cã thÓ ®i t×m TruyÒn nh©n C«ng D· ThÕ Gia l·nh nhËn Linh th¹ch phèi ph­¬ng",
 		2,
 		"Hay qu¸! Ta ®· hiÓu råi!/set_five_two",
-		"Ch­a hiÓu! Cßn chót m¬ hå!/nothing")
+		"Not yet clear! Still a little confused!/nothing")
 end
 
 function set_five_two()

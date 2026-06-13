@@ -1,7 +1,7 @@
 function OnUse(nItemIdx)
 	local selTab = {
-				format("§ång ý/#use(%d)",nItemIdx),
-				"Hñy bá",
+				format("Agree/#use(%d)",nItemIdx),
+				"Cancel",
 				}
 	Say("Sö dông Qu©n tÝch bµi cã thÓ t¨ng <color=yellow>1000<color> ®iÓm tÝch lòy.",getn(selTab),selTab);
 end;

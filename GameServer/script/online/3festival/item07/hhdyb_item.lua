@@ -15,10 +15,10 @@ function OnUse()
 		local nRand = random(1,100);
 		if nRand <= 25 then
 			CastState("state_confusion",0,10*18,1,211000);
-			Msg2Player("Hçn lo¹n 10 gi©y");
+			Msg2Player("Chaos for 10 seconds.");
 		elseif nRand <= 50 then
 			CastState("state_vertigo",0,10*18,1,213000);
-			Msg2Player("BÞ cho¸ng 10 gi©y");
+			Msg2Player("Stunned for 10 seconds.");
 		end;
 	end;
 end;

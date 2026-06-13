@@ -55,7 +55,7 @@ function WLGetReward()
 	end
 	
 	-----判断背包和负重------------------------
-	if gf_Judge_Room_Weight(1, 1, "Xin l鏸, ") == 0 then
+	if gf_Judge_Room_Weight(1, 1, "Sorry,") == 0 then
 		return 0
 	end
 	

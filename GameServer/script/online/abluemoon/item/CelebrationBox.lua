@@ -80,7 +80,7 @@ tMatchercloth = {    --一套
 					{109,180}
 				}
 
-tAllcloth = {{tCele2cloth,"剑网2两周年庆外装"},{tNewyear7,"2007年新年装外装"},{tMatchercloth,"主婚人外装"}}				
+tAllcloth = {{tCele2cloth,"JX2 Two-Year Anniversary Costume"},{tNewyear7,"2007 New Year Costume"},{tMatchercloth,"Wedding Officiant Costume"}}				
 --新郎外装      --  标准男,魁梧男
 --================================================先不开放=====================================
 --tGroomcloth = {
@@ -102,39 +102,39 @@ tAllcloth = {{tCele2cloth,"剑网2两周年庆外装"},{tNewyear7,"2007年新年装外装"},{t
 --							}
 --==============================================================================================
 
-tAlreadyput = {{"我想存入剑网2周年庆外装/#PutClothInBox(1)","我想取出剑网2周年庆外装"},
-							 {"我想存入2007年新年装外装/#PutClothInBox(2)","我想取出2007年新年装外装"},
-							 {"我想存入主婚人外装/#PutClothInBox(3)","我想取出主婚人外装"}
+tAlreadyput = {{"I want to store the JX2 Anniversary Costume/#PutClothInBox(1)","I want to take out the JX2 Anniversary Costume"},
+							 {"I want to store the 2007 New Year Costume/#PutClothInBox(2)","I want to take out the 2007 New Year Costume"},
+							 {"I want to store the Wedding Officiant Costume/#PutClothInBox(3)","I want to take out the Wedding Officiant Costume"}
 							}
 			
 function OnUse()
 	local tSay = {
-		"我要领取剑侠情缘盒附带的外装/GetDefaultCloth",
-		"我要领取存入的外装/GetOutCloth",
-		"我想了解剑侠情缘盒有什么用处/AboutBox",
-		"没有什么事/Leave"
+		"I want to claim the costume that comes with the Swordsman Affinity Box/GetDefaultCloth",
+		"I want to claim a stored costume/GetOutCloth",
+		"I want to learn what the Swordsman Affinity Box is for/AboutBox",
+		"Nothing/Leave"
 	}
 	local putAlready = GetTask(PUT_ALREADY)
 	if putAlready < 3 then  --当存入全部外装后去除该选项
-		tinsert(tSay,2,"我要将自己的外装装进剑侠情缘盒里/PutInBox")
+		tinsert(tSay,2,"I want to store my own costume into the Swordsman Affinity Box/PutInBox")
 	end
-	Say("<color=green>剑侠情缘盒<color>：这位大侠，你需要什么帮助？",getn(tSay),tSay);
+	Say("<color=green>Swordsman Affinity Box<color>: Hero, what help do you need?",getn(tSay),tSay);
 end
 
 function GetDefaultCloth()
   local sSay = {
-  			"我想要2005年圣诞套外装/GiveXmas",
-  			"我想要2006年新年装外装/#GiveNewyear(1)",
-  			"我想要2007年元旦装外装/#GiveNewyear(2)",
-  			"我再考虑一下/end_say"
+  			"I want the 2005 Christmas Costume set/GiveXmas",
+  			"I want the 2006 New Year Costume/#GiveNewyear(1)",
+  			"I want the 2007 New Year's Day Costume/#GiveNewyear(2)",
+  			"Let me think about it again/end_say"
   			}
-  Say("<color=green>剑侠情缘盒<color>：大侠想要哪种套装?请随意挑选:",getn(sSay),sSay)
+  Say("<color=green>Swordsman Affinity Box<color>: Which costume set do you want, hero? Please pick freely:",getn(sSay),sSay)
  end
 
 function GiveXmas()
 	local player_sex = GetBody()
 	if GetFreeItemRoom() < 3 or (GetMaxItemWeight() - GetCurItemWeight()) < 30 then
-		Say("你的背包空间不足,请整理后再来领取!",0)
+		Say("Your inventory space is not enough, please tidy it up and come back to claim it!",0)
 	return
   end
   for i=1,3 do
@@ -146,13 +146,13 @@ function GiveNewyear(nYear)
 	local player_sex = GetBody()
   if nYear == 1 then
   	if GetFreeItemRoom() < 1 or (GetMaxItemWeight() - GetCurItemWeight()) < 30 then
-  		Say("<color=green>剑侠情缘盒<color>：你的背包空间不足,请整理后再来领取!",0)
+  		Say("<color=green>Swordsman Affinity Box<color>: Your inventory space is not enough, please tidy it up and come back to claim it!",0)
   		return
   	end
   	AddItem(0,tNewyear6[player_sex][1],tNewyear6[player_sex][2],1)
   elseif nYear == 2 then
   	if GetFreeItemRoom() < 3 or (GetMaxItemWeight() - GetCurItemWeight()) < 30 then
-			Say("<color=green>剑侠情缘盒<color>：你的背包空间不足,请整理后再来领取!",0)
+			Say("<color=green>Swordsman Affinity Box<color>: Your inventory space is not enough, please tidy it up and come back to claim it!",0)
 			return
   	end
   	for i =1,3 do
@@ -183,8 +183,8 @@ function PutInBox()
 --			tinsert(tSay,"我想存入新娘外装/#PutClothInBox(5)")
 --		end	
 --	end
-	tinsert(tSay,"我不想存入任何外装/end_say")
-	Say("<color=green>剑侠情缘盒<color>：大侠想存入哪些外装呢？",getn(tSay),tSay)
+	tinsert(tSay,"I don't want to store any costume/end_say")
+	Say("<color=green>Swordsman Affinity Box<color>: Which costumes do you want to store, hero?",getn(tSay),tSay)
 end
 
 function PutClothInBox(nIndex)
@@ -194,24 +194,24 @@ function PutClothInBox(nIndex)
 	local sex = player_sex - 2
 	if nIndex < 3 then
 		if GetItemCount(0,tAllcloth[nIndex][1][player_sex][1][1],tAllcloth[nIndex][1][player_sex][1][2]) < 1 then
-			Say("<color=green>剑侠情缘盒<color>：你的背包里并没有完整的一套"..tAllcloth[nIndex][2]..",请检查后再存入宝盒中！",0)
+			Say("<color=green>Swordsman Affinity Box<color>: You do not have a complete set in your inventory"..tAllcloth[nIndex][2]..", please check and then store it in the treasure box!",0)
     elseif GetItemCount(0,tAllcloth[nIndex][1][player_sex][2][1],tAllcloth[nIndex][1][player_sex][2][2])< 1 then
-    	Say("<color=green>剑侠情缘盒<color>：你的背包里并没有完整的一套"..tAllcloth[nIndex][2]..",请检查后再存入宝盒中！",0)
+    	Say("<color=green>Swordsman Affinity Box<color>: You do not have a complete set in your inventory"..tAllcloth[nIndex][2]..", please check and then store it in the treasure box!",0)
     elseif GetItemCount(0,tAllcloth[nIndex][1][player_sex][3][1],tAllcloth[nIndex][1][player_sex][3][2])< 1 then
-    	Say("<color=green>剑侠情缘盒<color>：你的背包里并没有完整的一套"..tAllcloth[nIndex][2]..",请检查后再存入宝盒中！",0)
+    	Say("<color=green>Swordsman Affinity Box<color>: You do not have a complete set in your inventory"..tAllcloth[nIndex][2]..", please check and then store it in the treasure box!",0)
     else	
     	for i = 1,3 do 
     		DelItem(0,tAllcloth[nIndex][1][player_sex][i][1],tAllcloth[nIndex][1][player_sex][i][2],1)
     	end
-    	Msg2Player("你已经将"..tAllcloth[nIndex][2].."存入到剑侠情缘盒里了！")
+    	Msg2Player("You have already"..tAllcloth[nIndex][2].."stored it in the Swordsman Affinity Box!")
     	SetTask(PUT_ALREADY,GetTask(PUT_ALREADY)+1)
     	SetTask(tTask[nIndex],1)
     end
 	elseif nIndex == 3 then
 			if DelItem(0,tMatchercloth[player_sex][1],tMatchercloth[player_sex][2],1) ~= 1 then
-				Say("<color=green>剑侠情缘盒<color>：你的背包里并没有一套主婚人外装,请检查后再存入宝盒中！",0)
+				Say("<color=green>Swordsman Affinity Box<color>: You do not have a Wedding Officiant Costume set in your inventory, please check and then store it in the treasure box!",0)
 		  else 
-		  	Msg2Player("你已经将主婚人外装存入到剑侠情缘盒里了！")
+		  	Msg2Player("You have already stored the Wedding Officiant Costume in the Swordsman Affinity Box!")
 				SetTask(PUT_ALREADY,GetTask(PUT_ALREADY)+1)
 				SetTask(MATCHERCLOTH_ALREADY,1)
 		  end
@@ -271,13 +271,13 @@ function GetOutCloth()
 	local i3 = GetTask(MATCHERCLOTH_ALREADY)
 --	local i4 = GetTask(MARRIAGECLOTH_ALREADY)
 	if i1 == 1 then
-			tinsert(tSay,"我想取出剑网2周年庆外装/#GetCloth(1)")
+			tinsert(tSay,"I want to take out the JX2 Two-Year Anniversary Costume/#GetCloth(1)")
 	end
 	if i2 == 1 then
-		 tinsert(tSay,"我想取出2007年新年装外装/#GetCloth(2)")
+		 tinsert(tSay,"I want to take out the 2007 New Year Costume/#GetCloth(2)")
 	end
 	if i3 == 1 then
-		 tinsert(tSay,"我想取出主婚人外装/#GetCloth1(1)")
+		 tinsert(tSay,"I want to take out the Wedding Officiant Costume/#GetCloth1(1)")
 	end
 --	if i4 == 1 then
 --		if player_sex < 3 then
@@ -287,17 +287,17 @@ function GetOutCloth()
 --		end
 --	end
 	if putAlready == 0 then 
-		Say("<color=green>剑侠情缘盒<color>：你还没有存入任何外装,只有存入外装以后才能领取!",0)
+		Say("<color=green>Swordsman Affinity Box<color>: You have not stored any costume yet; you can only claim costumes after storing them!",0)
 	else
-		tinsert(tSay,"我不想取出任何外装/end_say")
-		Say("<color=green>剑侠情缘盒<color>：大侠要取出哪件外装?",getn(tSay),tSay)
+		tinsert(tSay,"I don't want to take out any costume/end_say")
+		Say("<color=green>Swordsman Affinity Box<color>: Which costume do you want to take out, hero?",getn(tSay),tSay)
 	end
 end
 
 function GetCloth(nIndex)
 	local player_sex = GetBody()
 	if GetFreeItemRoom() < 3 or (GetMaxItemWeight() - GetCurItemWeight()) < 30 then
-		Say("你的背包空间已经装不下了，先整理一下再来吧！",0)
+		Say("Your inventory space is already full, please tidy it up first and then come back!",0)
     return	
 	end
 	if nIndex == 1 then
@@ -317,7 +317,7 @@ function GetCloth1(nIndex)
 	local choice = 0
 	local sex = player_sex - 2
 	if GetFreeItemRoom() < 1 or (GetMaxItemWeight() - GetCurItemWeight()) < 30 then
-		Say("你的背包空间已经装不下了，先整理一下再来吧！",0)
+		Say("Your inventory space is already full, please tidy it up first and then come back!",0)
     return	
 	end
 	if nIndex == 1 then 
@@ -358,9 +358,9 @@ end
 		
 
 function AboutBox()
-	Say("<color=green>剑侠情缘盒<color>:打开该宝盒可以免费获取2005年圣诞外装、2007年元旦外装、2006年新年外装。同时，你也可以在盒子里存入与自己体形相符合的2007年新年装、剑网2两周年庆外装、主婚人外装和结婚外装；在存入后就可以免费获取这些存入的外装！",
+	Say("<color=green>Swordsman Affinity Box<color>: Opening this box lets you freely obtain the 2005 Christmas Costume, 2007 New Year's Day Costume, and 2006 New Year Costume. At the same time, you can also store in the box the 2007 New Year Costume, JX2 Two-Year Anniversary Costume, Wedding Officiant Costume, and Wedding Costume that match your body type; once stored you can freely obtain these stored costumes!",
 		1,
-		"我了解了/end_say")
+		"I understand/end_say")
 end
 
 function Leave()

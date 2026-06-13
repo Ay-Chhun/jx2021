@@ -2,9 +2,9 @@
 function main()
 	local nLevel = GetLevel()
 	if (nLevel < 10) then
-		Say("Ta cã thÓ tøc tèc ®­a ng­¬i ®Õn thµnh kh¸c, ng­¬i muèn ®i ®©u?",3,"BiÖn Kinh/bianjing","Phông T­êng/fengxiang","Kh«ng ®i ®©u c¶/OnCancel")
+		Say("Ta cã thÓ tøc tèc ®­a ng­¬i ®Õn thµnh kh¸c, ng­¬i muèn ®i ®©u?",3,"Bianjing/bianjing","Phông T­êng/fengxiang","Not going anywhere/OnCancel")
 	else
-		Say("Ta cã thÓ tøc tèc ®­a ng­¬i ®Õn thµnh kh¸c, ng­¬i muèn ®i ®©u?",3,"BiÖn Kinh/bianjing","Phông T­êng/fengxiang","Kh«ng ®i ®©u c¶/OnCancel")
+		Say("Ta cã thÓ tøc tèc ®­a ng­¬i ®Õn thµnh kh¸c, ng­¬i muèn ®i ®©u?",3,"Bianjing/bianjing","Phông T­êng/fengxiang","Not going anywhere/OnCancel")
 	end
 	return	
 end;
@@ -26,7 +26,7 @@ end;
 function bianjing()
 	n=moneygo()
 	if n==0 then 
-		Say("Cã tiÒn th× h·y ngåi xe!",0)
+		Say("If you have money, then take the ride!",0)
 	else 
 		i=random(1,4)
 		if i==1 then
@@ -44,7 +44,7 @@ end
 function chengdu()
 	n=moneygo()
 	if n==0 then 
-		Say("Cã tiÒn th× h·y ngåi xe!",0)
+		Say("If you have money, then take the ride!",0)
 	else 
 		i=random(1,3)
 --		if i==1 then
@@ -88,7 +88,7 @@ end
 function xiangyang()
 	n=moneygo()
 	if n==0 then 
-		Say("Cã tiÒn th× h·y ngåi xe!",0)
+		Say("If you have money, then take the ride!",0)
 	else 
 		i=random(1,4)
 		if i==1 then
@@ -108,7 +108,7 @@ end
 function yangzhou()
 	n=moneygo()
 	if n==0 then 
-		Say("Cã tiÒn th× h·y ngåi xe!",0)
+		Say("If you have money, then take the ride!",0)
 	else 
 		i=random(1,4)
 		if i==1 then
@@ -129,7 +129,7 @@ end
 function fengxiang()
 	n=moneygo()
 	if n==0 then 
-		Say("Cã tiÒn th× h·y ngåi xe!",0)
+		Say("If you have money, then take the ride!",0)
 	else 
 		i=random(1,4)
 		if i==1 then

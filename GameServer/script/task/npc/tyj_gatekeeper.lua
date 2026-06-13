@@ -25,7 +25,7 @@ function EnterTysmdHow()
 	Say(NPC_TYSMR.."Nh©n vËt tham gia nhiÖm vô phôc sinh 3 vµ thu tËp 10 Thiªn ¢m LÖnh Bµi míi ®­îc ®i vµo Thiªn ¢m ThÇn BÝ C¬ §Þa.LÇn ®Çu ®i vµo cÇn nép 10 Thiªn ¢m LÖnh Bµi, lÇn sau ®i vµo kh«ng cÇn nép thªm.",
 		2,
 		"trë l¹i/EnterTysmd",
-		"KÕt thóc ®èi tho¹i/nothing")
+		"End dialogue/nothing")
 end
 
 function EnterTysmdEnsure()
@@ -55,7 +55,7 @@ end
 function LeaveTysmd()
 	Say(NPC_TYSMR..format("%s cã muèn rêi khái Thiªn ¢m ThÇn BÝ C¬ §Þa kh«ng?", gf_GetPlayerSexName()),
 		2,
-		"Rêi khái/LeaveTysmdEnsure",
+		"Leave/LeaveTysmdEnsure",
 		"T¹i h¹ chØ xem qua th«i/nothing");	
 end
 

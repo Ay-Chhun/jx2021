@@ -4,7 +4,7 @@ GIVE_LETTER_ID = 2430
 GIVE_LETTER_TIME_ID = 2431
 GIVE_MAX = 4
 
-szNpcName = "<color=green>Minh Chñ Kim S¬n<color>: "
+szNpcName = "<color=green>Master Kim Son<color>:"
 
 function give_letter()
 	local nDate = tonumber(date("%Y%m%d"))

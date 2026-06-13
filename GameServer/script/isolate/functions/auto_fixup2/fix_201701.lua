@@ -147,10 +147,10 @@ T_CK_TASK_LIST = {
 	[1102] = {0, "C­íp tiªu", {"Hoµn thµnh 1 lÇn nhiÖm vô c­íp tiªu", "§Õn b¶n ®å thÕ lùc chç NPC Tiªu §Çu TrÊn ViÔn Tiªu Côc ®Ó nhËn nhiÖm vô ®o¹t tiªu"}, {5000000, 18, nil, CK_EXT_AWARD}, {8, 4, 5, 6}},
 	[1103] = {0, "Thu thËp Ngäc Ph¸ch", {"Thu thËp 1 Ngäc Ph¸ch", "§Õn Th¸i H­ Cæ Thô cña thÕ lùc trång 1 h¹t gièng, thu thËp 1 Ngäc Ph¸ch"}, {5000000, 18, nil, CK_EXT_AWARD}, {8, 7, 8, 9}},
 	[1104] = {0, "Trém Ngäc Ph¸ch", {"§Õn thÕ lùc kh¸c trém 1 Ngäc Ph¸ch", "Vµo b¶n ®å thÕ lùc kh¸c ®Ó trém 1 Ngäc Ph¸ch"}, {5000000, 18, nil, CK_EXT_AWARD}, {8, 10, 11, 12}},
-	[1105] = {0, "T©y Vùc TruyÒn §¹o", {"Tham gia tİnh n¨ng T©y Vùc TruyÒn §¹o, nhÊp vµo 3 th¸nh vËt ®Ó nhËn th­ëng", "Vµo b¶n ®å thÕ lùc tham gia tİnh n¨ng T©y Vùc TruyÒn §¹o, nhÊp vµo 3 th¸nh vËt ®Ó nhËn th­ëng"}, {5000000, 18, nil, CK_EXT_AWARD}, {8, 13, 14, 15}},
+	[1105] = {0, "Western Region Preaching", {"Tham gia tİnh n¨ng T©y Vùc TruyÒn §¹o, nhÊp vµo 3 th¸nh vËt ®Ó nhËn th­ëng", "Vµo b¶n ®å thÕ lùc tham gia tİnh n¨ng T©y Vùc TruyÒn §¹o, nhÊp vµo 3 th¸nh vËt ®Ó nhËn th­ëng"}, {5000000, 18, nil, CK_EXT_AWARD}, {8, 13, 14, 15}},
 	[1106] = {0, "BOSS ThÕ Lùc", {"NhËn b¶o vÖ BOSS cña thÕ lùc vµ tiªu diÖt BOSS cña thÕ lùc phe ®Şch ®Ó nhËn ®­îc phÇn th­ëng", "Buæi tèi sÏ xuÊt hiÖn BOSS cña thÕ lùc phe ta hoÆc phe ®Şch, b¶o vÖ BOSS cña phe ta vµ tiªu diÖt BOSS cña phe ®Şch sÏ nhËn ®­îc phÇn th­ëng"}, {5000000, 18, nil, CK_EXT_AWARD}, {8, 16, 17, 18}},
 	[1107] = {0, "Thî S¨n TiÒn Th­ëng", {"Hoµn thµnh 1 lÇn nhiÖm vô Thî S¨n TiÒn Th­ëng", "Hoµn thµnh 1 lÇn nhiÖm vô Thî S¨n TiÒn Th­ëng"}, {5000000, 18, nil, CK_EXT_AWARD}, {8, 19, 20, 21}},
-	[1108] = {0, "NhiÖm vô §µo Kho B¸u", {"Hoµn thµnh 1 lÇn nhiÖm vô §µo Kho B¸u", "Vµo thÕ lùc nhËn 1 Tµng B¶o §å, hoµn thµnh 1 lÇn nhiÖm vô §µo Kho B¸u"}, {5000000, 18, nil, CK_EXT_AWARD}, {8, 22, 23, 24}},
+	[1108] = {0, "Treasure Digging Mission", {"Hoµn thµnh 1 lÇn nhiÖm vô §µo Kho B¸u", "Vµo thÕ lùc nhËn 1 Tµng B¶o §å, hoµn thµnh 1 lÇn nhiÖm vô §µo Kho B¸u"}, {5000000, 18, nil, CK_EXT_AWARD}, {8, 22, 23, 24}},
 	
 	--°ÙÕ½²»´ù ¸±±¾ÈÎÎñ
 --	[1201] = {},
@@ -173,14 +173,14 @@ T_CK_TASK_LIST = {
 	[2103] = {0, "Nép ®iÓm cèng hiÕn bang héi", {"Tham gia tİnh n¨ng Bang Héi Vinh Danh, giao nép 10 ®iÓm cèng hiÕn bang héi", "Tham gia tİnh n¨ng Bang Héi Vinh Danh, giao nép 10 ®iÓm cèng hiÕn bang héi"}, {8000000, 100}, {9, 0, 3, 4}},
 	[2104] = {0, "NhËn phÇn th­ëng Bang Héi Vinh Danh", {"NhËn phÇn th­ëng Bang Héi Vinh Danh", "Tham gia tİnh n¨ng Bang Héi Vinh Danh vµ nhËn phÇn th­ëng"}, {10000000, 300}, {9, 0, 5, 6}},
 	
-	[2201] = {0, "ThÎ Th¸ng", {"Kİch ho¹t 1 thÎ th¸ng", "Kİch ho¹t thÎ th¸ng, ch¬i trß ch¬i nhÑ nhµng h¬n"}, {5000000, 1200}, {10, 0, _ck_check_yueka, 1}},
-	[2202] = {0, "Gia nhËp thÕ lùc", {"Gia nhËp 1 thÕ lùc trong ba phe", "Gia nhËp 1 thÕ lùc trong ba phe"}, {5000000, 300}, {10, 0, _ck_check_shili, 2}},
+	[2201] = {0, "Monthly Card", {"Kİch ho¹t 1 thÎ th¸ng", "Kİch ho¹t thÎ th¸ng, ch¬i trß ch¬i nhÑ nhµng h¬n"}, {5000000, 1200}, {10, 0, _ck_check_yueka, 1}},
+	[2202] = {0, "Join a faction", {"Join 1 of the three factions", "Join 1 of the three factions"}, {5000000, 300}, {10, 0, _ck_check_shili, 2}},
 	[2203] = {0, "VËn tiªu", {"Hoµn thµnh 1 lÇn vËn tiªu", "Vµo thÕ lùc nhËn nhiÖm vô vËn tiªu, hoµn thµnh 1 lÇn vËn tiªu"}, {5000000, 600}, {10, 0, 3, 4}},
 	[2204] = {0, "C­íp tiªu", {"Hoµn thµnh 1 lÇn c­íp tiªu", "Vµo thÕ lùc nhËn nhiÖm vô c­íp tiªu, hoµn thµnh 1 lÇn c­íp tiªu"}, {5000000, 600}, {10, 0, 5, 6}},
-	[2205] = {0, "Trång c©y", {"Hoµn thµnh 1 lÇn nhiÖm vô trång c©y", "Vµo thÕ lùc chç C©y Th¸i H­ hoµn thµnh 1 lÇn nhiÖm vô trång c©y"}, {5000000, 600}, {10, 0, 7, 8}},
+	[2205] = {0, "Plant a tree", {"Hoµn thµnh 1 lÇn nhiÖm vô trång c©y", "Vµo thÕ lùc chç C©y Th¸i H­ hoµn thµnh 1 lÇn nhiÖm vô trång c©y"}, {5000000, 600}, {10, 0, 7, 8}},
 	[2206] = {0, "§µo r­¬ng", {"Hoµn thµnh 1 lÇn nhiÖm vô ®µo r­¬ng", "Hoµn thµnh 1 lÇn nhiÖm vô ®µo r­¬ng"}, {5000000, 600}, {10, 0, 9, 10}},
 	[2207] = {0, "Thî S¨n TiÒn Th­ëng", {"Hoµn thµnh 1 lÇn nhiÖm vô Thî S¨n TiÒn Th­ëng", "Hoµn thµnh 1 lÇn nhiÖm vô Thî S¨n TiÒn Th­ëng"}, {5000000, 600}, {10, 0, 11, 12}},
-	[2208] = {0, "T©y Vùc TruyÒn §¹o", {"Dïng 1 ®¹o cô bÊt kú sau ®©y: Kim L¨ng Töu, Tµng KiÕm Bİ TruyÒn T©m Kinh, B¸ch HiÓu Sinh Bİ Ph¸p", "Tham gia tİnh n¨ng T©y Vùc TruyÒn §¹o, sö dông 1 ®¹o cô bÊt kú sau ®©y: Kim L¨ng Töu, Tµng KiÕm Bİ TruyÒn T©m Kinh, B¸ch HiÓu Sinh Bİ Ph¸p"}, {5000000, 600}, {10, 0, 13, 14}},
+	[2208] = {0, "Western Region Preaching", {"Dïng 1 ®¹o cô bÊt kú sau ®©y: Kim L¨ng Töu, Tµng KiÕm Bİ TruyÒn T©m Kinh, B¸ch HiÓu Sinh Bİ Ph¸p", "Tham gia tİnh n¨ng T©y Vùc TruyÒn §¹o, sö dông 1 ®¹o cô bÊt kú sau ®©y: Kim L¨ng Töu, Tµng KiÕm Bİ TruyÒn T©m Kinh, B¸ch HiÓu Sinh Bİ Ph¸p"}, {5000000, 600}, {10, 0, 13, 14}},
 },
 T_CK_TASK_GROUP_LIST = {
 	--name, {type,desc}, {sub_list_group}
@@ -192,10 +192,10 @@ T_CK_TASK_GROUP_LIST = {
 		},
 	},
 	[2] = {
-		"Tèc ChiÕn Tèc Th¾ng", {2, "Trong thêi gian ho¹t ®éng chØ hoµn thµnh 1 lÇn, nhËn ®­îc nhiÒu EXP vµ ®é n¨ng ®éng!"},
+		"Swift Battle Swift Victory", {2, "Trong thêi gian ho¹t ®éng chØ hoµn thµnh 1 lÇn, nhËn ®­îc nhiÒu EXP vµ ®é n¨ng ®éng!"},
 		{
 			[1] = {"NhiÖm vô bang héi", 0, {2101,2102,2103,2104}}, --ËÙÕ½ËÙ¾ö-°ï»áÈÎÎñ
-			[2] = {"NhiÖm vô h­íng dÉn", 0, {2201,2202,2203,2204,2205,2206,2207,2208}}, --ËÙÕ½ËÙ¾ö-Ö¸ÒıÈÎÎñ
+			[2] = {"Tutorial Mission", 0, {2201,2202,2203,2204,2205,2206,2207,2208}}, --ËÙÕ½ËÙ¾ö-Ö¸ÒıÈÎÎñ
 		},
 	},
 },

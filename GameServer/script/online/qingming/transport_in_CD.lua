@@ -14,9 +14,9 @@ EnterPointTab = {									--¼ÇÂ¼Èı¸öµØÍ¼µÄ½øÈë×ø±ê¡£
 --================================ÒÔÉÏÊÇÈ«¾Ö±äÁ¿========================================
 function main()
 	if tomb_sweep_2007_date_chk() == -1 then
-		Talk(1,"","Thanh minh s¾p ®Õn, h·y giµnh chót thêi gian ®Ó cóng tæ tiªn.");
+		Talk(1,"","Qingming is approaching; please take some time to honor your ancestors.");
 	elseif tomb_sweep_2007_date_chk() == 0 then
-		Talk(1,"","TiÕt thanh minh ®· qua,"..Zgc_pub_sex_name().."nhí n¨m sau ®Õn cóng tÕ tæ tiªn.");
+		Talk(1,"","The Qingming Festival has passed,"..Zgc_pub_sex_name().."remember to come honor your ancestors next year.");
 	else
 		local selTab = {
 					"§Õn cóng b¸i mé Hiªn Viªn ®¹i hiÖp./#gotocemetery(3)",
@@ -24,7 +24,7 @@ function main()
 					"Ho¹t ®éng TiÕt Thanh Minh./knowdetail",
 					"H·y quay l¹i cóng tÕ sau nhĞ!/nothing",
 					}
-		Say("Trong tiÕt Thanh minh,"..Zgc_pub_sex_name().."cã muèn ®Õn mé phÇn cña <color=red>Hiªn Viªn ®¹i hiÖp<color> b¸i tÕ bµy tá thµnh ı kh«ng?",getn(selTab),selTab);
+		Say("During the Qingming Festival,"..Zgc_pub_sex_name().."cã muèn ®Õn mé phÇn cña <color=red>Hiªn Viªn ®¹i hiÖp<color> b¸i tÕ bµy tá thµnh ı kh«ng?",getn(selTab),selTab);
 	end;
 end;
 

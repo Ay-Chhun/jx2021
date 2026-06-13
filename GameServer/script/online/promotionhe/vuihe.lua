@@ -47,7 +47,7 @@ function ProcessIndexHe(nIndex)
 				end
 			else
 				if ((nFreeItemRoom <  nExtVal*tEventHeGift[nIndex][2])  and (nFreeItemRoom > 0)) then
-					Say("Chóc mõng b»ng h÷u ®· tróng th­ëng "..nExtVal.." "..tEventHeGift[nIndex][1]..". Hµnh trang cña b»ng h÷u chØ cã <color=Gold>"..nFreeItemRoom.." « trèng<color> nªn chØ nhËn ®­îc <color=Gold>"..nFreeItemRoom.."<color> "..tEventHeGift[nIndex][1]..". Sau khi nhËn th­ëng h·y s¾p xÕp l¹i hµnh trang råi ®Õn gÆp ta.",2,"§ång ý/#SayYesHe("..nIndex..","..GetFreeItemRoom()..")","§Ó ta s¾p xÕp l¹i hµnh trang/SayNoHe")
+					Say("Chóc mõng b»ng h÷u ®· tróng th­ëng "..nExtVal.." "..tEventHeGift[nIndex][1]..". Hµnh trang cña b»ng h÷u chØ cã <color=Gold>"..nFreeItemRoom.." « trèng<color> nªn chØ nhËn ®­îc <color=Gold>"..nFreeItemRoom.."<color> "..tEventHeGift[nIndex][1]..". Sau khi nhËn th­ëng h·y s¾p xÕp l¹i hµnh trang råi ®Õn gÆp ta.",2,"Agree/#SayYesHe("..nIndex..","..GetFreeItemRoom()..")","§Ó ta s¾p xÕp l¹i hµnh trang/SayNoHe")
 				else
 					Say("Søc lùc hoÆc hµnh trang cña b»ng h÷u kh«ng ®ñ.",0)
 					Msg2Player("Søc lùc hoÆc hµnh trang cña b¹n kh«ng ®ñ.")

@@ -2,9 +2,9 @@
 Include("\\script\\missions\\yp\\award.lua")
 
 tItemInfo = {
-	{"Kho B¸u Tr©n PhÈm",	2,95,931},
-	{"Kho B¸u T× H­u",	2,95,932},
-	{"Kho B¸u Di VËt",	2,95,933},
+	{"Treasure Trove Rare Item",	2,95,931},
+	{"Treasure Trove Pixiu",	2,95,932},
+	{"Treasure Trove Relic",	2,95,933},
 	{"Kho B¸u Kinh ThÕ",	2,95,934},
 }
 

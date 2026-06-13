@@ -11,7 +11,7 @@ function OnUse(nItemIdx)
 	end
 	if DelItemByIndex(nItemIdx, 1) == 1 then
 		nRandItem = gf_GetRandItemByTable(tb_mijixiang_aword, 1000, 1);
-		gf_SetLogCaption("Truy t×m tr­êng sinh phæ");
+		gf_SetLogCaption("Search for the Longevity Manual");
 		gf_AddItemEx(
 									{tb_mijixiang_aword[nRandItem][3], tb_mijixiang_aword[nRandItem][4], 
 										tb_mijixiang_aword[nRandItem][5], tb_mijixiang_aword[nRandItem][6]

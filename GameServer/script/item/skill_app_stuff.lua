@@ -12,8 +12,8 @@ Include("\\script\\lib\\message.lua");
 Include("\\script\\global\\skill_app.lua");
 --Include("\\script\\misc\\observer\\observer_head.lua");
 
-g_szLogCaption				= "M¶nh §¸ Kü N¨ng";
-g_szTitle					= "<color=green>M¶nh §¸ Kü N¨ng<color>";
+g_szLogCaption				= "Skill Stone Fragment";
+g_szTitle					= "<color=green>Skill Stone Fragment<color>";
 g_tComposeStuff				= {2, 1, 10011};
 g_nComposeNeedCount			= 100;
 g_nComposeLevel				= 1;
@@ -38,7 +38,7 @@ function OnUse()
 	g_szTitle, g_nComposeNeedCount, g_nComposeLevel, nMaxStuffCount, nMaxComposeCount, g_nComposeLevel, nCanComposeTimes - nHasComposeTimes);
 	local tMenu	= {
 		"Ta muèn ghÐp §¸ Kü N¨ng			/ComposeSkillApp",
-		"Ra khái	/nothing",
+		"Exit	/nothing",
 	};
 	suSay(szMsg, getn(tMenu), tMenu);
 	return 1;
@@ -63,7 +63,7 @@ function ComposeSkillApp()
 	
 	nMaxComposeCount		= min(nMaxComposeCount, nCanComposeTimes - nHasComposeTimes);
 	
-	AskClientForNumber("ComposeSkillAppCallBack", 0, nMaxComposeCount, "Muèn ghÐp bao nhiªu?");
+	AskClientForNumber("ComposeSkillAppCallBack", 0, nMaxComposeCount, "How many do you want to combine?");
 end
 
 function OnAchivement(nCount)

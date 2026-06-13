@@ -35,16 +35,16 @@ t_rand_pos = {
 }
 t_caiji_npcinfo={
 	--name template,dialog_npc,script,camp1pos,camp2pos
-	{"Long Linh Th¶o","ZZC_longlingcao",1,"\\settings\\static_script\\kf_newbattles\\mainbattle\\anti_cheat\\npc_caiji.lua",0 , 0, "Long Linh Th¶o", 1},
-	{"ThÊt tinh hoa","ZZC_qixinhua",1,"\\settings\\static_script\\kf_newbattles\\mainbattle\\anti_cheat\\npc_caiji.lua",0 , 0, "ThÊt tinh hoa",2},
+	{"Dragon Spirit Grass","ZZC_longlingcao",1,"\\settings\\static_script\\kf_newbattles\\mainbattle\\anti_cheat\\npc_caiji.lua",0 , 0, "Dragon Spirit Grass", 1},
+	{"Seven essences","ZZC_qixinhua",1,"\\settings\\static_script\\kf_newbattles\\mainbattle\\anti_cheat\\npc_caiji.lua",0 , 0, "Seven essences",2},
 	{"B¹ch §µ S©m","ZZC_baituoshen",1,"\\settings\\static_script\\kf_newbattles\\mainbattle\\anti_cheat\\npc_caiji.lua",0 , 0, "B¹ch §µ S©m",3},
 }
 t_randpos_npc_info = {
 	
 }
 t_npc_to_index ={
-	["Long Linh Th¶o"] = 1,
-	["ThÊt tinh hoa"] = 2,
+	["Dragon Spirit Grass"] = 1,
+	["Seven essences"] = 2,
 	["B¹ch §µ S©m"] = 3,
 --	["Ä¾¿þÀÜ"] = 4,
 --	["Ê¯¿þÀÜ"] = 5,
@@ -52,7 +52,7 @@ t_npc_to_index ={
 }
 N_MONSTER_COUNT=9
 t_monster_npcinfo={
-	{"Con rèi","ZZC_mukuilei",0,"\\settings\\static_script\\kf_newbattles\\mainbattle\\anti_cheat\\npc_monster.lua",0 , 0,"Con rèi",4},
+	{"Puppet","ZZC_mukuilei",0,"\\settings\\static_script\\kf_newbattles\\mainbattle\\anti_cheat\\npc_monster.lua",0 , 0,"Puppet",4},
 	{"Th¹ch Kh«i Lçi","ZZC_shikuilei",0,"\\settings\\static_script\\kf_newbattles\\mainbattle\\anti_cheat\\npc_monster.lua",0 , 0, "Th¹ch Kh«i Lçi",5},
 	{"§ång Kh«i Lçi","ZZC_tongkuilei",0,"\\settings\\static_script\\kf_newbattles\\mainbattle\\anti_cheat\\npc_monster.lua",0 , 0, "§ång Kh«i Lçi",6},
 }
@@ -299,8 +299,8 @@ function pco_on_task_npc_talk_or_death(npcIndex, bConfirm,szNpcNameSave)
 			local sNpcName = GetNpcName(npcIndex);
 			if not bConfirm then
 				local selTab = {
-					format("%s%s", "NhiÖm vô thu thËp",format("/#_p(%d,\"%s\")",npcIndex,sNpcName)),
-					"KÕt thóc ®èi tho¹i/_pco_nothing",
+					format("%s%s", "Collection Quest",format("/#_p(%d,\"%s\")",npcIndex,sNpcName)),
+					"End dialogue/_pco_nothing",
 				}
 				local szTitle = format("<color=green>%s<color>Hoµn thµnh nhiÖm vô thu thËp", sNpcName)
 				Say(szTitle,getn(selTab),selTab);
@@ -359,7 +359,7 @@ function pco_get_rand_task_info()
 	local szTaskName = ""
 	if t then
 		if t[3] == 1 then
-			szTaskName = "Thu thËp"
+			szTaskName = "Collect"
 		else
 			szTaskName = "KÝch s¸t"
 		end
@@ -370,8 +370,8 @@ end
 
 function pco_jiaoguan_talk()
 	local selTab = {
-			format("ViÖc nhá th«i mµ (%s) mua Ýt r­îu cho gi¸o quan %s", "2 vµng","/_pco_pay_money"),
-			"KÕt thóc ®èi tho¹i/_pco_nothing",
+			format("ViÖc nhá th«i mµ (%s) mua Ýt r­îu cho gi¸o quan %s", "2 gold","/_pco_pay_money"),
+			"End dialogue/_pco_nothing",
 			}
 	local sNpcName = "";
 	if pco_get_camp() == 1 then

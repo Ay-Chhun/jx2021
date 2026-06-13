@@ -28,7 +28,7 @@ function equip_feed_NpcTalkMain(bTag)
 	tinsert(tbSay, "TrÔng luy÷n trang bﬁ d≠Ïng thµnh/_equip_feed_chongzhu")
 	tinsert(tbSay, "Tinh luy÷n trang bﬁ d≠Ïng thµnh/_equip_feed_jinglian")
 	tinsert(tbSay, format("%s/_equip_feed_reset_advance", "T»y luy÷n trang bﬁ d≠Ïng thµnh"))
-	tinsert(tbSay, "Ra kh·i/nothing")
+	tinsert(tbSay, "Leave/nothing")
 
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -39,7 +39,7 @@ function _equip_feed_desc()
 	local tbSay = {}
 
 	tinsert(tbSay, "Quay lπi /equip_feed_NpcTalkMain")
-	tinsert(tbSay, "Ra kh·i/nothing")
+	tinsert(tbSay, "Leave/nothing")
 
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -51,7 +51,7 @@ function _equip_feed_chongzhu()
 
 	tinsert(tbSay, "TrÔng luy÷n trang bﬁ/_equip_feed_do_chongzhu")
 	tinsert(tbSay, "Quay lπi /equip_feed_NpcTalkMain")
-	tinsert(tbSay, "Ra kh·i/nothing")
+	tinsert(tbSay, "Leave/nothing")
 
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -63,7 +63,7 @@ function _equip_feed_jinglian()
 
 	tinsert(tbSay, "Tinh luy÷n trang bﬁ/_equip_feed_do_jinglian")
 	tinsert(tbSay, "Quay lπi /equip_feed_NpcTalkMain")
-	tinsert(tbSay, "Ra kh·i/nothing")
+	tinsert(tbSay, "Leave/nothing")
 
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -74,7 +74,7 @@ function _equip_feed_reset_advance()
 
 	tinsert(tbSay, format("%s/_equip_feed_do_reset_advance", "T»y luy÷n trang bﬁ"))
 	tinsert(tbSay, "Quay lπi /equip_feed_NpcTalkMain")
-	tinsert(tbSay, "Ra kh·i/nothing")
+	tinsert(tbSay, "Leave/nothing")
 
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -86,7 +86,7 @@ function _equip_feed_weiyang()
 
 	tinsert(tbSay, "Nu´i d≠Ïng trang bﬁ/_equip_feed_do_weiyang")
 	tinsert(tbSay, "Quay lπi /equip_feed_NpcTalkMain")
-	tinsert(tbSay, "Ra kh·i/nothing")
+	tinsert(tbSay, "Leave/nothing")
 
 	Say(szTitle, getn(tbSay), tbSay)
 end

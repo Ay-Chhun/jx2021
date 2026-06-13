@@ -10,7 +10,7 @@ function OnUse()
 	end
 	Say("Dïng Tİch lòy bµi ®æi 10 ®iÓm tİch lòy, nhiÒu nhÊt lµ 200 ®iÓm, ®iÓm hiÖn giê cña ng­¬i lµ: <color=yellow>"..GetTask(1351).."<color>, ng­¬i x¸c nhËn muèn sö dông chø?",
 		2,
-		"\n§óng/ask_use_num",
+		"\nYes/ask_use_num",
 		"\nKh«ng cÇn/nothing");
 end
 

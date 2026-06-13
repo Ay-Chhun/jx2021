@@ -43,10 +43,10 @@ ID	CommandType	TargetMap	TargetDisplayName	ScriptFile	ScriptFunc
 2009	0	100	Thñ khè	\script\online\newyear08\bainian_trigger.lua	main
 2010	0	100	Xa phu TuyÒn Ch©u	\script\online\newyear08\bainian_trigger.lua	main
 2011	0	100	Qu¶n lý cöa hiÖu	\script\online\newyear08\bainian_trigger.lua	main
-2012	0	100	L©m D­îc S­	\script\online\newyear08\bainian_trigger.lua	main
-2013	0	100	Lý Phong Thu	\script\online\newyear08\bainian_trigger.lua	main
+2012	0	100	Lin the Apothecary	\script\online\newyear08\bainian_trigger.lua	main
+2013	0	100	Li Feng Qiu	\script\online\newyear08\bainian_trigger.lua	main
 2014	0	100	Chñ l«i ®µi	\script\online\newyear08\bainian_trigger.lua	main
-2015	0	100	ChØ huy sø	\script\online\newyear08\bainian_trigger.lua	main
+2015	0	100	Commander	\script\online\newyear08\bainian_trigger.lua	main
 2016	0	100	Sø gi¶ bang ph¸i	\script\online\newyear08\bainian_trigger.lua	main
 2018	0	100	LÔ quan	\script\online\newyear08\bainian_trigger.lua	main
 2019	0	100	Bé ®Çu	\script\online\newyear08\bainian_trigger.lua	main
@@ -62,7 +62,7 @@ ID	CommandType	TargetMap	TargetDisplayName	ScriptFile	ScriptFunc
 2030	0	100	V­¬ng NghiÖp VÜ	\script\online\newyear08\bainian_trigger.lua	main
 2031	0	100	Tiªu s­	\script\online\newyear08\bainian_trigger.lua	main
 2032	0	100	Nha dÞch	\script\online\newyear08\bainian_trigger.lua	main
-2033	0	100	Uy NhÜ Tèn	\script\online\newyear08\bainian_trigger.lua	main
+2033	0	100	Wei Ru Tin	\script\online\newyear08\bainian_trigger.lua	main
 2034	0	100	H¹ KiÖt	\script\online\newyear08\bainian_trigger.lua	main
 2035	0	100	Chung Phãng	\script\online\newyear08\bainian_trigger.lua	main
 2036	0	100	Chñ töu lÇu	\script\online\newyear08\bainian_trigger.lua	main
@@ -80,12 +80,12 @@ ID	CommandType	TargetMap	TargetDisplayName	ScriptFile	ScriptFunc
 2049	0	150	Xa phu	\script\online\newyear08\bainian_trigger.lua	main
 2050	0	150	Chñ th­¬ng héi	\script\online\newyear08\bainian_trigger.lua	main
 2051	0	150	Ch©n Tö §¬n	\script\online\newyear08\bainian_trigger.lua	main
-2052	0	150	ChØ huy sø	\script\online\newyear08\bainian_trigger.lua	main
+2052	0	150	Commander	\script\online\newyear08\bainian_trigger.lua	main
 2053	0	150	Bé ®Çu	\script\online\newyear08\bainian_trigger.lua	main
 2054	0	150	Sø gi¶ Tµng KiÕm	\script\online\newyear08\bainian_trigger.lua	main
 2055	0	150	Chñ l«i ®µi	\script\online\newyear08\bainian_trigger.lua	main
 2056	0	150	Hµnh C­íc Th­¬ng Nh©n	\script\online\newyear08\bainian_trigger.lua	main
-2057	0	150	Lý TiÕn Dòng	\script\online\newyear08\bainian_trigger.lua	main
+2057	0	150	Li Tian Yong	\script\online\newyear08\bainian_trigger.lua	main
 2058	0	150	H¹ HÇu CÇm	\script\online\newyear08\bainian_trigger.lua	main
 2059	0	150	Tr­¬ng B¸ H¸n	\script\online\newyear08\bainian_trigger.lua	main
 2060	0	150	Thu Dung	\script\online\newyear08\bainian_trigger.lua	main
@@ -93,10 +93,10 @@ ID	CommandType	TargetMap	TargetDisplayName	ScriptFile	ScriptFunc
 2062	0	150	H¹ HÇu Anh	\script\online\newyear08\bainian_trigger.lua	main
 2063	0	150	H¹ HÇu Liªn	\script\online\newyear08\bainian_trigger.lua	main
 2064	0	150	L­u HuyÒn Thanh	\script\online\newyear08\bainian_trigger.lua	main
-2065	0	150	M·nh Nham 	\script\online\newyear08\bainian_trigger.lua	main
+2065	0	150	Manh Nham	\script\online\newyear08\bainian_trigger.lua	main
 2066	0	150	Phïng §ång Nhi	\script\online\newyear08\bainian_trigger.lua	main
 2067	0	150	TrÇn MÉn	\script\online\newyear08\bainian_trigger.lua	main
-2068	0	150	T­ëng Duy	\script\online\newyear08\bainian_trigger.lua	main
+2068	0	150	Jiang Wei	\script\online\newyear08\bainian_trigger.lua	main
 					
 2071	0	200	D· TÈu	\script\online\newyear08\bainian_trigger.lua	main
 2072	0	200	Chñ TiÖm vò khÝ	\script\online\newyear08\bainian_trigger.lua	main
@@ -136,7 +136,7 @@ ID	CommandType	TargetMap	TargetDisplayName	ScriptFile	ScriptFunc
 2108	0	200	TiÓu nhÞ	\script\online\newyear08\bainian_trigger.lua	main
 2109	0	200	Nh©n sÜ giang hå	\script\online\newyear08\bainian_trigger.lua	main
 2110	0	200	Tµo §¹i Lùc	\script\online\newyear08\bainian_trigger.lua	main
-2111	0	200	Gi¸o sÜ	\script\online\newyear08\bainian_trigger.lua	main
+2111	0	200	Professor	\script\online\newyear08\bainian_trigger.lua	main
 2112	0	200	Vâ s­	\script\online\newyear08\bainian_trigger.lua	main
 2113	0	200	Hµng xãm Hµn TrÝ Nh­îng	\script\online\newyear08\bainian_trigger.lua	main
 2114	0	200	Tiªu s­	\script\online\newyear08\bainian_trigger.lua	main
@@ -191,7 +191,7 @@ ID	CommandType	TargetMap	TargetDisplayName	ScriptFile	ScriptFunc
 2173	0	300	V­¬ng CÈn	\script\online\newyear08\bainian_trigger.lua	main
 2174	0	300	B¸ch HiÓu Sinh	\script\online\newyear08\bainian_trigger.lua	main
 2175	0	300	Tiªu s­	\script\online\newyear08\bainian_trigger.lua	main
-2176	0	300	Gi¸o sÜ	\script\online\newyear08\bainian_trigger.lua	main
+2176	0	300	Professor	\script\online\newyear08\bainian_trigger.lua	main
 2177	0	300	TiÓu ®ång	\script\online\newyear08\bainian_trigger.lua	main
 2178	0	300	Tiªu s­	\script\online\newyear08\bainian_trigger.lua	main
 					
@@ -208,7 +208,7 @@ ID	CommandType	TargetMap	TargetDisplayName	ScriptFile	ScriptFunc
 2191	0	350	Chñ l«i ®µi	\script\online\newyear08\bainian_trigger.lua	main
 2192	0	350	Minh Chñ Kim S¬n	\script\online\newyear08\bainian_trigger.lua	main
 2193	0	350	Ch©n Tö §¬n	\script\online\newyear08\bainian_trigger.lua	main
-2194	0	350	ChØ huy sø	\script\online\newyear08\bainian_trigger.lua	main
+2194	0	350	Commander	\script\online\newyear08\bainian_trigger.lua	main
 2195	0	350	Chñ th­¬ng héi	\script\online\newyear08\bainian_trigger.lua	main
 2196	0	350	Thî rÌn L­u	\script\online\newyear08\bainian_trigger.lua	main
 2197	0	350	M¹c Tam	\script\online\newyear08\bainian_trigger.lua	main
@@ -236,15 +236,15 @@ ID	CommandType	TargetMap	TargetDisplayName	ScriptFile	ScriptFunc
 2225	0	400	Chñ TiÖm N÷ phôc	\script\online\newyear08\bainian_trigger.lua	main
 2226	0	400	Chñ Kim hoµn	\script\online\newyear08\bainian_trigger.lua	main
 2227	0	400	Thñ khè	\script\online\newyear08\bainian_trigger.lua	main
-2228	0	400	Xa phu §¹i Lý	\script\online\newyear08\bainian_trigger.lua	main
+2228	0	400	Dali Coachman	\script\online\newyear08\bainian_trigger.lua	main
 2229	0	400	Chñ th­¬ng héi	\script\online\newyear08\bainian_trigger.lua	main
 2230	0	400	LÔ quan	\script\online\newyear08\bainian_trigger.lua	main
 2231	0	400	Chñ töu lÇu	\script\online\newyear08\bainian_trigger.lua	main
-2233	0	400	TrÞnh Qu¸n Chi	\script\online\newyear08\bainian_trigger.lua	main
-2234	0	400	§æng Giµ La	\script\online\newyear08\bainian_trigger.lua	main
-2235	0	400	TrÇn LËp Hµnh	\script\online\newyear08\bainian_trigger.lua	main
-2236	0	400	L­u §iÓn	\script\online\newyear08\bainian_trigger.lua	main
-2237	0	400	Cao Th¨ng TuyÒn	\script\online\newyear08\bainian_trigger.lua	main
+2233	0	400	Zheng Guanzhi	\script\online\newyear08\bainian_trigger.lua	main
+2234	0	400	Dong Jia La	\script\online\newyear08\bainian_trigger.lua	main
+2235	0	400	Chen Liheng	\script\online\newyear08\bainian_trigger.lua	main
+2236	0	400	Liu Dian	\script\online\newyear08\bainian_trigger.lua	main
+2237	0	400	Cao Thang Tuyen	\script\online\newyear08\bainian_trigger.lua	main
 
 3001	0	200	Thñ khè	\script\task\random\incept_npc.lua	main
 3002	0	200	Xa phu	\script\task\random\incept_npc.lua	main

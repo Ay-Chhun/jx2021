@@ -52,7 +52,7 @@ end
 
 
 function do_tast_food_activity( )
-	local Str_Main = format("<color=gold>NhÊt PhÈm Ngù Trï<color>:")
+	local Str_Main = format("<color=gold>Top Grade Imperial Chef<color>:")
 	local tbSay = {}
 	tinsert(tbSay,format("Lµm 1 %s (H«m nay cßn ®­îc lµm: %d lÇn)/#give_food(1)",tb_tast_food_task[1]["name"], tb_tast_food_task[1]["limit"]-get_tsk_num(get_task("id_task_limit"),1)  ))
 	tinsert(tbSay,format("Lµm 1 %s (H«m nay cßn ®­îc lµm: %d lÇn)/#give_food(2)",tb_tast_food_task[2]["name"], tb_tast_food_task[2]["limit"]-get_tsk_num(get_task("id_task_limit"),2)  ))
@@ -74,9 +74,9 @@ function give_food( Itemid )
 	if gf_CheckLevel(t_level[1], t_level[2],1) ~= 1 then
 		return 0
 	end
-	local SayStr = "<color=gold>NhÊt PhÈm Ngù Trï<color>:"..tb_tast_food_task[Itemid]["cost_str"];
+	local SayStr = "<color=gold>Top Grade Imperial Chef<color>:"..tb_tast_food_task[Itemid]["cost_str"];
 	local tbSay = {}
-	tinsert(tbSay,format("§ång ý/#give_food_award(%d)",Itemid))
+	tinsert(tbSay,format("Agree/#give_food_award(%d)",Itemid))
 	tinsert(tbSay,"trë l¹i/do_tast_food_activity")
 	Say(SayStr,getn(tbSay),tbSay)
 end

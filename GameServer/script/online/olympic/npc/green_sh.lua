@@ -9,9 +9,9 @@ function main()
 	end
 	local tbSay = {
 		format("Dïng 5 lo¹i %s ®Ó th¾p s¸ng/free_fire", HuoZhongName),
-		format("Dïng %s ®Ó th¾p s¸ng/ib_fire", WuCai_ShenHuoZhong[5]),
+		format("Use %s to light the flame/ib_fire", WuCai_ShenHuoZhong[5]),
 		"KiÓm tra sè lÇn th¾p s¸ng cña server/oly_GetFireCount",
-		"\n rót lui/do_nothing",
+		"\nWithdraw/do_nothing",
 	}
 	local nCount = gf_GetMyTaskByte(VET_OLY_TASK2,1,2);
 	local nIndex = oly_GetCountStep(nCount);

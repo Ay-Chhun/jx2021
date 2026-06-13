@@ -42,7 +42,7 @@ function OnUse()
 					nFindNum = nFindNum + 1;
 					if nRetCode == 1 then
 						Talk(1,"","Theo täa ®é b¶n ®å, chç nµy lµ n¬i Sao b¨ng r¬i, b¹n nhËn ®­îc <color=yellow>"..t7XiItem["star"][1].."<color>");
-						WriteLog("[Ho¹t ®éng ThÊt TÞch]:"..GetName().."NhËn ®­îc"..t7XiItem["star"][1]);
+						WriteLog("[Ho¹t ®éng ThÊt TÞch]:"..GetName().."Received"..t7XiItem["star"][1]);
 						Msg2Player("H«m nay ng­¬i nhËn ®­îc "..nFindNum.." "..t7XiItem["star"][1]);
 					else
 						WriteLog("[Lçi ho¹t ®éng ThÊt TÞch]:"..GetName().."Lçi khi nhËn ®­îc Sao b¨ng, trÞ quay l¹i chØ lÖnh AddItem:"..nRetCode);
@@ -59,7 +59,7 @@ function OnUse()
 								if random(1,100) <= 80 then
 									nRetCode,nItemIdx = AddItem(t7XiItem["atlas"][2],t7XiItem["atlas"][3],t7XiItem["atlas"][4],1);
 									Msg2Player("Chóc mõng ng­¬i nhËn ®­îc 1 tÊm "..t7XiItem["atlas"][1]);
-									WriteLog("[Ho¹t ®éng ThÊt TÞch]:"..GetName().."NhËn ®­îc thªm 1 tÊm Tinh Tinh §Þa §å");
+									WriteLog("[Ho¹t ®éng ThÊt TÞch]:"..GetName().."Received 1 more Star Map");
 								end;
 							else
 								if GetTask(TASK_ADDED_AWARD_FINDSTAR_DATE) < nDate then
@@ -114,13 +114,13 @@ function OnUse()
 				Talk(1,"","Theo täa ®é b¶n ®å, chç nµy kh«ng ph¶i lµ n¬i Sao b¨ng r¬i nh­ng b¹n ph¸t hiÖn ë <color=yellow>"..floor(nMapX/8)..","..floor(nMapY/16).."(täa ®é)<color> cã vËt ®ang ph¸t s¸ng.");
 			end;
 		else
-			Talk(1,"","Theo täa ®é b¶n ®å, chç nµy kh«ng ph¶i lµ n¬i Sao b¨ng r¬i, hay lµ b»ng h÷u ®Õn <color=yellow>"..sMapName.."<color> xem thö!");
+			Talk(1,"","Theo täa ®é b¶n ®å, chç nµy kh«ng ph¶i lµ n¬i Sao b¨ng r¬i, hay lµ b»ng h÷u ®Õn <color=yellow>"..sMapName.."<color> and take a look!");
 		end;
 	else
 		local nTotalPosCount = tabPos:getRow();	--µÃµ½×ÜÐÐÊý
 		local nRandomRow = random(3,nTotalPosCount);	--Ëæ»úÒ»¸öÎ»ÖÃ
 		if nRandomRow < 3 then
-			WriteLog("[Lçi ho¹t ®éng ThÊt TÞch]:"..GetName().."Khi nhËn ®­îc h­íng dÉn vÞ trÝ ng«i sao, nRandomRow nhá h¬n 3, trÞ lµ:"..nRandomRow..", trÞ sè nTotalPosCount:"..nTotalPosCount)
+			WriteLog("[Lçi ho¹t ®éng ThÊt TÞch]:"..GetName().."Khi nhËn ®­îc h­íng dÉn vÞ trÝ ng«i sao, nRandomRow nhá h¬n 3, trÞ lµ:"..nRandomRow..", the value nTotalPosCount:"..nTotalPosCount)
 			SetTask(TASK_POS_INDEX,3);	--ÉèÎª£³
 		end;
 		sMapName = tabPos:getCell(nRandomRow,3);
@@ -128,7 +128,7 @@ function OnUse()
 		nMapX = tonumber(tabPos:getCell(nRandomRow,5));
 		nMapY = tonumber(tabPos:getCell(nRandomRow,6));
 		SetTask(TASK_POS_INDEX,nRandomRow);
-		Talk(1,"","GÇn ®©y th«n d©n ®ån r»ng thÊy 1 ng«i sao r¬i ë <color=yellow>"..sMapName.."<color>, v« cïng tr¸ng lÖ.");
+		Talk(1,"","Recently the villagers have been rumoring that they saw a star fall at <color=yellow>"..sMapName.."<color>, exceedingly magnificent.");
 	end;
 end;
 --ÅÐ¶ÏÊÇ·ñÔÚÄ¿±êµØµã¸½½ü

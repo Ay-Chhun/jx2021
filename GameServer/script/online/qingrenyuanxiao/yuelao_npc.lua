@@ -20,25 +20,25 @@ function main()
 		end
 		if GetTask(TASK_LOVESTORY1) == 0 or GetTask(TASK_LOVESTORY2) == 0 or GetTask(TASK_LOVESTORY3) == 0 or GetTask(TASK_LOVESTORY4) == 0 then
 			local selTab = {
-						"§o trÞ sè duyªn phËn/question1",
+						"Measure the fate score/question1",
 						"Xem néi dung ho¹t ®éng./know_detail",
 						"Ta nhËn ®­îc gièng hoa hång, sö dông nh­ thÕ nµo?/know_useseed",
 						"NhËn l¹i nhiÖm vô./reaccept",
-						"KÕt thóc ®èi tho¹i./nothing"
+						"End the conversation./nothing"
 						}
 			Say("LÔ t×nh nh©n lµ do c¸c nhµ truyÒn gi¸o T©y Ph­¬ng mang ®Õn, hiÖn nay nã rÊt phæ biÕn.",5,selTab)
 		elseif AllTaskComplete() == 1 then
 			local selUseSeed = {
 						"Ta muèn l·nh th­ëng./get_present",
 						"Ta nhËn ®­îc gièng hoa hång, sö dông nh­ thÕ nµo?/know_useseed",
-						"KÕt thóc ®èi tho¹i./nothing"
+						"End the conversation./nothing"
 						}
 			Say("Chóc mõng ng­¬i hoµn thµnh tÊt c¶ nhiÖm vô, t×m ta cã viÖc g×?",3,selUseSeed)
 		else
 			local selReset = {
 						"Ta muèn lµm l¹i nhiÖm vô./reset",
 						"Ta muèn tra xem quy t¾c nhiÖm vô./know_detail",
-						"KÕt thóc ®èi tho¹i./nothing"
+						"End the conversation./nothing"
 						}
 			Say("Sao ch­a lµm nhiÖm vô vËy? GÆp khã kh¨n µ?",3,selReset)
 		end
@@ -46,7 +46,7 @@ function main()
 		local selUseSeed = {
 					"Ta muèn l·nh th­ëng./get_present",
 					"Ta nhËn ®­îc gièng hoa hång, sö dông nh­ thÕ nµo?/know_useseed",
-					"KÕt thóc ®èi tho¹i./nothing"
+					"End the conversation./nothing"
 					}
 		Say("Chóc c¸c ®«i t×nh nh©n sím thµnh phu thª.",3,selUseSeed)
 	end
@@ -67,9 +67,9 @@ function question1()
 	end
 	SetTask(TASK_YUANFEN,0)
 	local ansTab = {
-			"ThÝch/#question2(9)",
-			"Kh«ng mµng ®Õn/#question2(6)",
-			"Kh«ng thÝch/#question2(3)",
+			"Like/#question2(9)",
+			"Indifferent/#question2(6)",
+			"Dislike/#question2(3)",
 			"LÇn sau míi nãi tiÕp nhÐ./abandon"
 			}
 	Say("C©u hái 1: B¹n cã thÝch PK gi÷a nh÷ng ng­êi ch¬i víi nhau kh«ng?",4,ansTab)
@@ -77,9 +77,9 @@ end
 
 function question2(i)
 	local ansTab = {
-			"ThÝch/#question3(3)",
-			"Kh«ng mµng ®Õn/#question3(6)",
-			"Kh«ng thÝch/#question3(9)",
+			"Like/#question3(3)",
+			"Indifferent/#question3(6)",
+			"Dislike/#question3(9)",
 			"LÇn sau míi nãi tiÕp nhÐ./abandon"
 			}
 	SetTask(TASK_YUANFEN,GetTask(TASK_YUANFEN)+i)
@@ -88,9 +88,9 @@ end
 
 function question3(i)
 	local ansTab = {
-			"ThÝch/#question4(3)",
-			"Kh«ng mµng ®Õn/#question4(6)",
-			"Kh«ng thÝch/#question4(9)",
+			"Like/#question4(3)",
+			"Indifferent/#question4(6)",
+			"Dislike/#question4(9)",
 			"LÇn sau míi nãi tiÕp nhÐ./abandon"
 			}
 	SetTask(TASK_YUANFEN,GetTask(TASK_YUANFEN)+i)
@@ -99,9 +99,9 @@ end
 
 function question4(i)
 	local ansTab = {
-			"ThÝch/#question5(9)",
-			"Kh«ng mµng ®Õn/#question5(6)",
-			"Kh«ng thÝch/#question5(3)",
+			"Like/#question5(9)",
+			"Indifferent/#question5(6)",
+			"Dislike/#question5(3)",
 			"LÇn sau míi nãi tiÕp nhÐ./abandon"
 			}
 	SetTask(TASK_YUANFEN,GetTask(TASK_YUANFEN)+i)
@@ -110,9 +110,9 @@ end
 
 function question5(i)
 	local ansTab = {
-			"ThÝch/#question6(3)",
-			"Kh«ng mµng ®Õn/#question6(6)",
-			"Kh«ng thÝch/#question6(9)",
+			"Like/#question6(3)",
+			"Indifferent/#question6(6)",
+			"Dislike/#question6(9)",
 			"LÇn sau míi nãi tiÕp nhÐ./abandon"
 			}
 	SetTask(TASK_YUANFEN,GetTask(TASK_YUANFEN)+i)
@@ -121,9 +121,9 @@ end
 
 function question6(i)
 	local ansTab = {
-			"ThÝch/#question7(9)",
-			"Kh«ng mµng ®Õn/#question7(6)",
-			"Kh«ng thÝch/#question7(3)",
+			"Like/#question7(9)",
+			"Indifferent/#question7(6)",
+			"Dislike/#question7(3)",
 			"LÇn sau míi nãi tiÕp nhÐ./abandon"
 			}
 	SetTask(TASK_YUANFEN,GetTask(TASK_YUANFEN)+i)
@@ -132,9 +132,9 @@ end
 
 function question7(i)
 	local ansTab = {
-			"ThÝch/#question8(3)",
-			"Kh«ng mµng ®Õn/#question8(6)",
-			"Kh«ng thÝch/#question8(9)",
+			"Like/#question8(3)",
+			"Indifferent/#question8(6)",
+			"Dislike/#question8(9)",
 			"LÇn sau míi nãi tiÕp nhÐ./abandon"
 			}
 	SetTask(TASK_YUANFEN,GetTask(TASK_YUANFEN)+i)
@@ -143,9 +143,9 @@ end
 
 function question8(i)
 	local ansTab = {
-			"ThÝch/#question9(3)",
-			"Kh«ng mµng ®Õn/#question9(6)",
-			"Kh«ng thÝch/#question9(9)",
+			"Like/#question9(3)",
+			"Indifferent/#question9(6)",
+			"Dislike/#question9(9)",
 			"LÇn sau míi nãi tiÕp nhÐ./abandon"
 			}
 	SetTask(TASK_YUANFEN,GetTask(TASK_YUANFEN)+i)
@@ -154,9 +154,9 @@ end
 
 function question9(i)
 	local ansTab = {
-			"ThÝch/#question10(3)",
-			"Kh«ng mµng ®Õn/#question10(6)",
-			"Kh«ng thÝch/#question10(9)",
+			"Like/#question10(3)",
+			"Indifferent/#question10(6)",
+			"Dislike/#question10(9)",
 			"LÇn sau míi nãi tiÕp nhÐ./abandon"
 			}
 	SetTask(TASK_YUANFEN,GetTask(TASK_YUANFEN)+i)
@@ -165,9 +165,9 @@ end
 
 function question10(i)
 	local ansTab = {
-			"ThÝch/#question11(3)",
-			"Kh«ng mµng ®Õn/#question11(6)",
-			"Kh«ng thÝch/#question11(9)",
+			"Like/#question11(3)",
+			"Indifferent/#question11(6)",
+			"Dislike/#question11(9)",
 			"LÇn sau míi nãi tiÕp nhÐ./abandon"
 			}
 	SetTask(TASK_YUANFEN,GetTask(TASK_YUANFEN)+i)
@@ -176,9 +176,9 @@ end
 
 function question11(i)
 	local ansTab = {
-			"ThÝch/#endquestion(9)",
-			"Kh«ng mµng ®Õn/#endquestion(6)",
-			"Kh«ng thÝch/#endquestion(3)",
+			"Like/#endquestion(9)",
+			"Indifferent/#endquestion(6)",
+			"Dislike/#endquestion(3)",
 			"LÇn sau míi nãi tiÕp nhÐ./abandon"
 			}
 	SetTask(TASK_YUANFEN,GetTask(TASK_YUANFEN)+i)
@@ -240,11 +240,11 @@ function get_present()
 					if GetSex() == 1 then
 						if AddItem(2,0,352,1) == 1 then	--Ãµ¹å»¨ÖÖ×Ó
 							Msg2Player("B¹n nhËn ®­îc 1 h¹t gièng hoa hång.")
-							WriteLog("[Ho¹t ®éng lÔ t×nh nh©n vµ tÕt nguyªn tiªu (phÇn th­ëng hoµn thµnh nhiÖm vô)]:"..GetName().."NhËn ®­îc 1 h¹t gièng hoa hång.")						
+							WriteLog("[Ho¹t ®éng lÔ t×nh nh©n vµ tÕt nguyªn tiªu (phÇn th­ëng hoµn thµnh nhiÖm vô)]:"..GetName().."Received 1 rose seed.")						
 						end
 					end
 					if AddItem(2,1,332,1) == 1 then	--Ö¥ÂéÇßÏãÔªÏü
-						WriteLog("[Ho¹t ®éng lÔ t×nh nh©n vµ tÕt nguyªn tiªu (phÇn th­ëng hoµn thµnh nhiÖm vô)]:"..GetName().."NhËn ®­îc 1 Chi Ma H­¬ng")
+						WriteLog("[Ho¹t ®éng lÔ t×nh nh©n vµ tÕt nguyªn tiªu (phÇn th­ëng hoµn thµnh nhiÖm vô)]:"..GetName().."Received 1 Sesame Fragrance")
 						Msg2Player("B¹n nhËn ®­îc 1 Chi Ma H­¬ng")
 					end
 					SetTask(TASK_GOT_AWARD,nDate)

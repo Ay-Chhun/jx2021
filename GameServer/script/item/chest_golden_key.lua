@@ -14,8 +14,8 @@ function OnUse(nItemIdx)
 		return 0;
 	end;
 	local selTab = {
-				"§ång ý/#use("..nItemIdx..")",
-				"Hñy bá/nothing",
+				"Agree/#use("..nItemIdx..")",
+				"Cancel/nothing",
 				}
 	Say("B¹n x¸c ®Þnh sö dông <color=yellow>Ch×a khãa vµng<color>?",getn(selTab),selTab);
 end;

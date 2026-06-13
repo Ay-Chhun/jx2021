@@ -14,9 +14,9 @@ function OnUse(nItemIdx)
 		tinsert(selTab,format("X¸c nhËn, chän c«n lµm vò khİ/#add_item(%d,%d)",nItemIdx,5));
 		tinsert(selTab,format("X¸c nhËn, chän ®ao lµm vò khİ/#add_item(%d,%d)",nItemIdx,4));
 	else
-		tinsert(selTab,format("§ång ı/#add_item(%d,%d)",nItemIdx,0));
+		tinsert(selTab,format("Agree/#add_item(%d,%d)",nItemIdx,0));
 	end;
-	tinsert(selTab,"Hñy bá/nothing");	
+	tinsert(selTab,"Cancel/nothing");	
 	Say("B¹n muèn më <color=yellow>"..g_szPacketName.."<color> B¹n nhËn ®­îc 1 bé <color=yellow>trang bŞ s­ m«n s¬ cÊp<color> vµ <color=yellow>100<color> ®iÓm cèng hiÕn s­ m«n.",getn(selTab),selTab);
 end;
 
@@ -28,6 +28,6 @@ function add_item(nItemIdx,nType)
 		Msg2Player("B¹n nhËn ®­îc 1 bé trang bŞ s­ m«n s¬ cÊp.");
 		SetTask(336,GetTask(336)+100);
 		Msg2Player("B¹n nhËn ®­îc 100 ®iÓm cèng hiÕn s­ m«n");
-		WriteLog("["..g_szPacketName.."]:"..GetName().."Më 1 tói ");
+		WriteLog("["..g_szPacketName.."]:"..GetName().."Open 1 bag");
 	end;
 end;

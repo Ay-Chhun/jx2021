@@ -7,28 +7,28 @@ TSK_COUNTER = 564;
 
 tXJCP = 
 {
-	[0]  = {{"DŞch C©n Kinh-h¹ ",2,1,918},{"TÈy Tñy Kinh-h¹ ",2,1,924},{"Nh­ Lai ThÇn Ch­ëng-h¹ ",2,1,921},{"HÊp Tinh TrËn-h¹ ",2,1,927},{"V¹n T­íng ThÇn C«ng-h¹ ",2,1,930},{"Thiªn ¢m TrÊn Hån Khóc-h¹ ",2,1,933},{"Gi¸ng Long ThËp B¸t Ch­ëng-h¹ ",2,1,936},{"§¶ CÈu C«n TrËn-h¹ ",2,1,939},{"V« Th­îng Th¸i Cùc KiÕm-h¹ ",2,1,942},{"Th¸i Cùc ThÇn C«ng-h¹ ",2,1,945},{"Liªn Hoµn Toµn Long Th­¬ng-h¹ ",2,1,948},{"B¸ V­¬ng T­êng Phông TiÔn-h¹ ",2,1,951},{"V« ¶nh Ma Cæ-h¹ ",2,1,954},{"V« Thiªn Ma C«ng-h¹ ",2,1,957}},
-	[1]  = {{"DŞch C©n Kinh-h¹ ",2,1,918},{"TÈy Tñy Kinh-h¹ ",2,1,924},{"Nh­ Lai ThÇn Ch­ëng-h¹ ",2,1,921}},
-	[2]  = {{"DŞch C©n Kinh-h¹ ",2,1,918}},
-	[3]  = {{"TÈy Tñy Kinh-h¹ ",2,1,924}},
+	[0]  = {{"Yi Jin Jing - lower",2,1,918},{"Xi Sui Jing - lower",2,1,924},{"Nh­ Lai ThÇn Ch­ëng-h¹ ",2,1,921},{"HÊp Tinh TrËn-h¹ ",2,1,927},{"V¹n T­íng ThÇn C«ng-h¹ ",2,1,930},{"Thiªn ¢m TrÊn Hån Khóc-h¹ ",2,1,933},{"Eighteen Dragon-Subduing Palms - lower",2,1,936},{"§¶ CÈu C«n TrËn-h¹ ",2,1,939},{"V« Th­îng Th¸i Cùc KiÕm-h¹ ",2,1,942},{"Th¸i Cùc ThÇn C«ng-h¹ ",2,1,945},{"Continuous Coiling Dragon Spear - lower",2,1,948},{"B¸ V­¬ng T­êng Phông TiÔn-h¹ ",2,1,951},{"Shadowless Demon Drum - lower",2,1,954},{"V« Thiªn Ma C«ng-h¹ ",2,1,957}},
+	[1]  = {{"Yi Jin Jing - lower",2,1,918},{"Xi Sui Jing - lower",2,1,924},{"Nh­ Lai ThÇn Ch­ëng-h¹ ",2,1,921}},
+	[2]  = {{"Yi Jin Jing - lower",2,1,918}},
+	[3]  = {{"Xi Sui Jing - lower",2,1,924}},
 	[4]  = {{"Nh­ Lai ThÇn Ch­ëng-h¹ ",2,1,921}},
 	[5]  = {{"HÊp Tinh TrËn-h¹ ",2,1,927}},
 	[6]  = {{"HÊp Tinh TrËn-h¹ ",2,1,927}},
 	[7]  = {{"V¹n T­íng ThÇn C«ng-h¹ ",2,1,930},{"Thiªn ¢m TrÊn Hån Khóc-h¹ ",2,1,933}},
 	[8]  = {{"V¹n T­íng ThÇn C«ng-h¹ ",2,1,930}},
 	[9]  = {{"Thiªn ¢m TrÊn Hån Khóc-h¹ ",2,1,933}},
-	[10] = {{"Gi¸ng Long ThËp B¸t Ch­ëng-h¹ ",2,1,936},{"§¶ CÈu C«n TrËn-h¹ ",2,1,939}},
-	[11] = {{"Gi¸ng Long ThËp B¸t Ch­ëng-h¹ ",2,1,936}},
+	[10] = {{"Eighteen Dragon-Subduing Palms - lower",2,1,936},{"§¶ CÈu C«n TrËn-h¹ ",2,1,939}},
+	[11] = {{"Eighteen Dragon-Subduing Palms - lower",2,1,936}},
 	[12] = {{"§¶ CÈu C«n TrËn-h¹ ",2,1,939}},
 	[13] = {{"V« Th­îng Th¸i Cùc KiÕm-h¹ ",2,1,942},{"Th¸i Cùc ThÇn C«ng-h¹ ",2,1,945}},
 	[14] = {{"V« Th­îng Th¸i Cùc KiÕm-h¹ ",2,1,942}},
 	[15] = {{"Th¸i Cùc ThÇn C«ng-h¹ ",2,1,945}},
-	[16] = {{"Liªn Hoµn Toµn Long Th­¬ng-h¹ ",2,1,948},{"B¸ V­¬ng T­êng Phông TiÔn-h¹ ",2,1,951}},
-	[17] = {{"Liªn Hoµn Toµn Long Th­¬ng-h¹ ",2,1,948}},
+	[16] = {{"Continuous Coiling Dragon Spear - lower",2,1,948},{"B¸ V­¬ng T­êng Phông TiÔn-h¹ ",2,1,951}},
+	[17] = {{"Continuous Coiling Dragon Spear - lower",2,1,948}},
 	[18] = {{"B¸ V­¬ng T­êng Phông TiÔn-h¹ ",2,1,951}},
-	[19] = {{"V« ¶nh Ma Cæ-h¹ ",2,1,954},{"V« Thiªn Ma C«ng-h¹ ",2,1,957}},
+	[19] = {{"Shadowless Demon Drum - lower",2,1,954},{"V« Thiªn Ma C«ng-h¹ ",2,1,957}},
 	[20] = {{"V« Thiªn Ma C«ng-h¹ ",2,1,957}},
-	[21] = {{"V« ¶nh Ma Cæ-h¹ ",2,1,954}},
+	[21] = {{"Shadowless Demon Drum - lower",2,1,954}},
 }
 
 function OnUse(nItemIdx)
@@ -40,9 +40,9 @@ function OnUse(nItemIdx)
 			local nRand = 0;
 			local nRetCode,nItemIdx = 0,0;
 			AddItem(2,1,1000,2);
-			Msg2Player("NhËn ®­îc 2 Bµn Long Bİch");
+			Msg2Player("Received 2 Coiling Dragon Jade");
 			AddItem(2,1,2642,1);
-			Msg2Player("NhËn ®­îc 1 Tói b¶o th¹ch");	
+			Msg2Player("Received 1 Gemstone Bag");	
 			if GetPlayerRoute() ~= 0 then	
 				SetTask(336,GetTask(336)+25);	--Ê¦ÃÅ¹±Ï×¶È25
 				Msg2Player("B¹n nhËn ®­îc 25 ®iÓm cèng hiÕn s­ m«n");
@@ -51,13 +51,13 @@ function OnUse(nItemIdx)
 			if GetTask(565) == 0 and nCurCount >= 8 then   --ÎäÁÖ³ÆºÅ		
 				SetTask(565,GetTime());
 				if GetTask(916) ~= 0 then
-					Msg2Global(get_name().."Më '"..g_ItemName.." nhËn ®­îc phÇn th­ëng ho¹t ®éng Vâ L©m Tranh B¸ Kh¸nh §iÓn!");
+					Msg2Global(get_name().."Open '"..g_ItemName.." nhËn ®­îc phÇn th­ëng ho¹t ®éng Vâ L©m Tranh B¸ Kh¸nh §iÓn!");
 				else
 					SetTask(566,1);   --Ã»ÁìÈ¡ÀÏÍæ¼ÒÇ°ÏÈ¿ª°ü±ê¼Ç
 					if AddTitle(3,7) > 0 then   --Ò°ÛÅÎäÁÖÃØÎÅ´«ÈË
 						SetCurTitle(3,7);   
 					end	
-					Msg2Global(get_name().."Më '"..g_ItemName.." nhËn ®­îc phÇn th­ëng ho¹t ®éng Vâ L©m Tranh B¸ Kh¸nh §iÓn!");				
+					Msg2Global(get_name().."Open '"..g_ItemName.." nhËn ®­îc phÇn th­ëng ho¹t ®éng Vâ L©m Tranh B¸ Kh¸nh §iÓn!");				
 				end
 			end					
 			nRand = random(1,100);
@@ -71,20 +71,20 @@ function OnUse(nItemIdx)
 				AddItem(2,0,599,3);
 				Msg2Player("B¹n ®¹t ®­îc 3 Cö Nh©n chøng th­");			
 			end;			
-			give_item(2,1,2002,1,"1 th¸ng ",5,8,0);  --1¸öÏû½ÙÉ¢£¬5%ÇÒÃ¿¿ª8¸ö°ü±Ø¸ø1¸ö
+			give_item(2,1,2002,1,"1 month",5,8,0);  --1¸öÏû½ÙÉ¢£¬5%ÇÒÃ¿¿ª8¸ö°ü±Ø¸ø1¸ö
 			give_item(2,1,1015,1,"1 Vâ L©m bİ lÖnh",5,10,0);  --ÎäÁÖÃØÁî1¸ö	5%ÇÒÃ¿¿ª10¸ö°ü±Ø¸ø1¸ö
 			give_item(2,1,3219,1,"1 NguyÖt Hoa tinh",5,25,0); --1¸öÔÂ»ªÖ®¾«,5%ÇÒÃ¿¿ª25¸ö°ü±Ø¸ø1¸ö
 			add_lingshi(6,1,5,15,0);	--Ëæ»ú6¼¶ÁéÊ¯1¿Å,5%ÇÒÃ¿¿ª15¸ö°ü±Ø¸ø1¸ö	
 			--ÒÔÏÂĞèÒª·¢È«·ş¹«¸æ
 			add_lingshi(7,1,0.5,45,1);	--Ëæ»ú7¼¶ÁéÊ¯1¿Å,0.5%ÇÒÃ¿¿ª45¸ö°ü±Ø¸ø1¸ö
 			give_item(2,1,3331,15,"15 Tam DiÖu Long Hi",0.2,80,1);	--ÈıÒ«Áú x,0.2%ÇÒÃ¿¿ª80¸ö°ü±Ø¸ø15¸ö
-			give_item(2,1,3206,1,"1Vâ L©m b¶o ®iÓn",0.1,160,1);--ÎäÁÖ±¦µä1±¾,0.1%ÇÒÃ¿¿ª160¸ö°ü±Ø¸ø1¸ö
+			give_item(2,1,3206,1,"1 Wulin Treasure Manual",0.1,160,1);--ÎäÁÖ±¦µä1±¾,0.1%ÇÒÃ¿¿ª160¸ö°ü±Ø¸ø1¸ö
 			give_item(2,0,1028,1,"1 R­¬ng vµng ThŞnh ThÕ",0.2,200,1); --1¸öÊ¢ÊÀ½ğ±¦Ïä0.2%ÇÒÃ¿¿ª200¸ö°ü±Ø¸ø1¸ö
 			--ÒÔÏÂĞèÒª·¢È«·ş¹«¸æºÍ¹öÆÁ¹«¸æ
 			add_zpcp(tXJCP,1,0.2,300);	--¶ÔÓ¦Á÷ÅÉÕòÅÉ²Ğ¾íÏÂ²á,0.2%ÇÒÃ¿¿ª300¸ö°ü±Ø¸ø1¸ö
 			give_item(2,1,1146,1,"1 Viªm Hoµng ThiÕt hån",0.01,1600,2);	--Ñ×»ÆÌú»ê1¸ö,0.01%ÇÒÃ¿¿ª1600¸ö°ü±Ø¸ø 1¸ö
-			Msg2Player("§©y lµ lÇn thø "..nCurCount.." më "..g_ItemName);
-			WriteLog("["..g_ItemName.."]:"..GetName().."thø"..nCurCount.." më "..g_ItemName);
+			Msg2Player("§©y lµ lÇn thø "..nCurCount.." to open"..g_ItemName);
+			WriteLog("["..g_ItemName.."]:"..GetName().."the"..nCurCount.." to open"..g_ItemName);
 		end;
 	else
 		Talk(1,"","Kho¶ng trèng hoÆcsøc lùccña b¹n kh«ng ®ñ. Xin kiÓm tra l¹i hµnh trang tr­íc!"..g_ItemName.."!");
@@ -94,12 +94,12 @@ end;
 function show_msg(szItemName,bGlobalMsg)
 	Msg2Player("B¹n nhËn ®­îc "..szItemName);
 	if bGlobalMsg == 1 then
-		Msg2Global(get_name().."Më '"..g_ItemName.." nhËn ®­îc "..szItemName);
+		Msg2Global(get_name().."Open '"..g_ItemName.." nhËn ®­îc "..szItemName);
 	elseif bGlobalMsg == 2 then
-		Msg2Global(get_name().."Më '"..g_ItemName.." nhËn ®­îc "..szItemName);
-		AddGlobalNews(get_name().."Më '"..g_ItemName.." nhËn ®­îc "..szItemName);
+		Msg2Global(get_name().."Open '"..g_ItemName.." nhËn ®­îc "..szItemName);
+		AddGlobalNews(get_name().."Open '"..g_ItemName.." nhËn ®­îc "..szItemName);
 	end;
-	WriteLog("["..g_ItemName.."]:"..GetName().."NhËn ®­îc"..szItemName);	
+	WriteLog("["..g_ItemName.."]:"..GetName().."Received"..szItemName);	
 end;
 --¸øÕòÅÉ²ĞÆªµÄº¯Êı
 function give_zpcp(tbZPCP,nCount)
@@ -222,7 +222,7 @@ function add_horse(nP,nModCount)
 			AddItem(0,105,16,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,2)
 		else
-			szItemName = "1 §»ng Vô";
+			szItemName = "1 Deng Wu";
 			AddItem(0,105,20,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,2)
 		end;
@@ -234,7 +234,7 @@ function add_horse(nP,nModCount)
 			AddItem(0,105,16,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,2)
 		else
-			szItemName = "1 §»ng Vô";
+			szItemName = "1 Deng Wu";
 			AddItem(0,105,20,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,2)
 		end;	

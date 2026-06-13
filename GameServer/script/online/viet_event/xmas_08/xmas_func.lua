@@ -9,7 +9,7 @@ Include("\\script\\lib\\writelog.lua")
 --ÃÌº” •µÆ¿Ò∫–
 function add_box_xmas_08_viet(nItemNum, szLog)
 	local szLogTitle = "Giang Sinh 2008"
-	local szItemName = "HÈp quµ gi∏ng sinh"
+	local szItemName = "Christmas gift box"
 	local G, D, P = 2, 1, 30032
 	local nRetCode = 0
 	nRetCode = AddItem(G, D, P, nItemNum)

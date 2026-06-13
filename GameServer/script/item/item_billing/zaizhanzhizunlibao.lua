@@ -2,8 +2,8 @@ Include("\\script\\lib\\globalfunctions.lua");
 function OnUse(nItemIdx)
 	if gf_CheckPlayerRoute() == 1 then
 		local selTab = {
-					format("§ång ý/#use_yes(%d)",nItemIdx),
-					"Hñy bá/nothing",
+					format("Agree/#use_yes(%d)",nItemIdx),
+					"Cancel/nothing",
 					}
 		Say("B¹n muèn më T¸i chiÕn giang hå-ChÝ t«n lÔ bao?",getn(selTab),selTab);
 	else
@@ -23,7 +23,7 @@ tBFYWeapon =
 [12] = {{"L­u Yªn c«n",0,5,6009}},
 [14] = {{"HuyÒn Yªn kiÕm",0,2,6010}},
 [15] = {{"Vò Yªn bót",0,9,6011}},
-[17] = {{"Hµ Tiªm Th­¬ng",0,6,6012}},
+[17] = {{"He Tian Spear",0,6,6012}},
 [18] = {{"Hµnh Yªn Cung",0,4,6013}},
 [20] = {{"Träc Yªn nhÉn",0,7,6014}},
 [21] = {{"Yªu Yªn tr¶o",0,11,6015}},

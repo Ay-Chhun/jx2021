@@ -12,10 +12,10 @@
 function OnUse()
 	Say("Sau khi dïng <color=yellow>mËt chÕ TÈy Tñy Linh §¬n<color> cã thÓ t¹o l¹i mét n¨nng lùc bÊt kú, b¹n muèn t¹o l¹i n¨ng lùc nµo?",
 		6,
-		"Søc m¹nh/change_strength_all_points",
+		"Strength/change_strength_all_points",
 		"Néi c«ng /change_energy_all_points",
-		"G©n cèt/change_vitality_all_points",
-		"Th©n ph¸p/change_dexterity_all_points",
+		"Vitality/change_vitality_all_points",
+		"Dexterity/change_dexterity_all_points",
 		"Linh ho¹t/change_observe_all_points",
 		"Ta kh«ng muèn kh«i phôc--Hñy bá/cancel_dialog")
 end;
@@ -29,7 +29,7 @@ end;
 function change_strength_all_points()
 	Say("B¹n x¸c nhËn muèn kh«i phôc <color=yellow>Søc m¹nh<color>?",
 		2,
-		"§­îc/confirm_strength_all",
+		"Confirm/confirm_strength_all",
 		"Ta kh«ng muèn kh«i phôc--Hñy bá/cancel_dialog")
 end;
 -- È·ÈÏ¸ü¸ÄËùÓÐÁ¦Á¿
@@ -55,7 +55,7 @@ end;
 function change_vitality_all_points()
 	Say("B¹n x¸c nhËn muèn kh«i phôc <color=yellow>G©n cèt<color> chø?",
 		2,
-		"§­îc/confirm_vitality_all",
+		"Confirm/confirm_vitality_all",
 		"Ta kh«ng muèn kh«i phôc--Hñy bá/cancel_dialog")
 end;
 -- È·ÈÏ¸ü¸ÄËùÓÐ¸ù¹Ç
@@ -81,7 +81,7 @@ end;
 function change_dexterity_all_points()
 	Say("B¹n x¸c nhËn muèn kh«i phôc <color=yellow>Th©n ph¸p<color> chø?",
 		2,
-		"§­îc/confirm_dexterity_all",
+		"Confirm/confirm_dexterity_all",
 		"Ta kh«ng muèn kh«i phôc--Hñy bá/cancel_dialog")
 end;
 -- È·ÈÏ¸ü¸ÄËùÓÐÉí·¨
@@ -107,7 +107,7 @@ end;
 function change_energy_all_points()
 	Say("B¹n x¸c nhËn muèn kh«i phôc <color=yellow>Néi c«ng<color> chø?",
 		2,
-		"§­îc/confirm_energy_all",
+		"Confirm/confirm_energy_all",
 		"Ta kh«ng muèn kh«i phôc--Hñy bá/cancel_dialog")
 end;
 -- È·ÈÏ¸ü¸ÄËùÓÐÄÚ¹¦
@@ -133,7 +133,7 @@ end;
 function change_observe_all_points()
 	Say("B¹n x¸c nhËn muèn kh«i phôc <color=yellow>Linh ho¹t<color> chø?",
 		2,
-		"§­îc/confirm_observe_all",
+		"Confirm/confirm_observe_all",
 		"Ta kh«ng muèn kh«i phôc--Hñy bá/cancel_dialog")
 end;
 -- È·ÈÏ¸ü¸ÄËùÓÐ¶´²ì

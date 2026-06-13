@@ -15,15 +15,15 @@ Include("\\script\\online\\zgc_public_fun.lua")		--´å³¤µÄ¹«¹²º¯Êý
 	--ÌØÊâÂé½«ID£º624
 	special_mah_jong_id = 664
 	--Âé½«°ü
-	mah_jong_bag = {{665,8,"Tói M¹c Ch­îc (tiÓu)"},{666,14,"Tói M¹c Ch­îc (®¹i)"}} --ID£¬ÕÅÊý
+	mah_jong_bag = {{665,8,"Mahjong Bag (small)"},{666,14,"Mahjong Bag (large)"}} --ID£¬ÕÅÊý
 	--Âé½«»î¶¯½±Àø°ü
-	mah_jong_prize_bag = {{667,200,"Con bµi ®em c­îc"},{668,200,"Con bµi 2 ®em c­îc"},{669,200,"Con bµi 3 ®em c­îc"},{670,200,"Con bµi 4 ®em c­îc"}}
+	mah_jong_prize_bag = {{667,200,"Betting Tile"},{668,200,"Betting Tile 2"},{669,200,"Betting Tile 3"},{670,200,"Betting Tile 4"}}
 	--ËùÓÐÂé½«³õÊ¼»¯
 	mah_jong = {
-			"NhÊt ®ång","NhÞ ®ång","Tam ®ång","Tø ®ång","Ngò ®ång","Lôc ®ång","ThÊt ®ång","B¸t ®ång","Cöu ®ång",
-			"Mét","NhÞ ®iÒu","Ba","Bèn","Ngò ®iÒu","Lôc ®iÒu","ThÊt ®iÒu","B¸t ®iÒu","Cöu ®iÒu",
-			"NhÊt v¹n","NhÞ v¹n","Tam v¹n","Tø v¹n","Ngò v¹n","Lôc v¹n","ThÊt v¹n","B¸t v¹n","Cöu v¹n",
-			"§«ng phong","Nam phong","T©y phong","B¾c phong","Hång trung","ph¸t tµi","B¹ch ban"}
+			"One Copper","Two Copper","Three Copper","Four Copper","Five Copper","Six Copper","Seven Copper","Eight Copper","Cöu ®ång",
+			"One","Two Bars","Ba","Four","Five Bars","Six Bars","Seven Bars","Eight Bars","Cöu ®iÒu",
+			"Ten Thousand","Twenty Thousand","Thirty Thousand","Forty Thousand","Fifty Thousand","Sixty Thousand","Seventy Thousand","Eighty Thousand","Cöu v¹n",
+			"East Wind","Nam phong","West Wind","North Wind","Hång trung","Riches","B¹ch ban"}
 	--Âé½«ºÍ·¨¶¨Òå
 --==============================Ö÷Âß¼­ÇøÓò===============================
 function OnUse(goods_index)
@@ -46,9 +46,9 @@ function OnUse(goods_index)
 	--Âé½«°ü¶Ò»»½±Àø
 	elseif goods_id == mah_jong_bag[1][1] or goods_id == mah_jong_bag[2][1] then
 		local bag_diff = (goods_id + 1) - mah_jong_bag[1][1]
-		Say("B¹n muèn sö dông: <color=green>".. mah_jong_bag[bag_diff][3].."<color> ®æi <color=green>".. mah_jong_bag[bag_diff][2].."<color> M¹c ch­îc ­?",
+		Say("B¹n muèn sö dông: <color=green>".. mah_jong_bag[bag_diff][3].."<color> to exchange <color=green>".. mah_jong_bag[bag_diff][2].."<color> Mahjong tiles?",
 		2,
-		"§æi/#mah_jong_bag_chg("..bag_diff..")",
+		"Exchange/#mah_jong_bag_chg("..bag_diff..")",
 		"§Ó ta suy nghÜ l¹i/end_dialog")
 	elseif goods_id >= mah_jong_prize_bag[1][1] and goods_id <= mah_jong_prize_bag[4][1] then  	--Âé½«½±Àø°ü»»È¡½±Àø
 		local prize_diff = (goods_id + 1) - mah_jong_prize_bag[1][1]
@@ -88,7 +88,7 @@ function single_mahj_pri(goods_id)
 		num = (num * num) * 12
 		ModifyExp(num)
 		SetTask(997,(GetTask(997)+1))
-		Msg2Player("Xin chóc mõng"..mah_jong[mah_jong_diff].."®æi "..num.." ®iÓm kinh nghiÖm!")
+		Msg2Player("Congratulations"..mah_jong[mah_jong_diff].."exchange"..num.." ®iÓm kinh nghiÖm!")
 		if chg_num_remain == 1 then
 			Talk(1,"","<color=green>Nh¾c nhì<color>: H«m nay ®©y lµ <color=red>lÇn cuèi cïng<color> b¹n cã thÓ ®æi phÇn th­ëng")
 			return
@@ -154,7 +154,7 @@ function mah_jong_add(goods_id)
 			if add_flag == 1 then
 				Msg2Player("B¹n dïng con bµi ®Æc biÖt ®æi mét tÊm"..mah_jong[goods_id - circle_start_id +1].."!")
 			else
-				WriteLog ("Ng­êi ch¬i:"..GetName().."Dïng con bµi ®Æc biÖt ®æi"..mah_jong[goods_id - circle_start_id +1].."ThÊt b¹i!")
+				WriteLog ("Ng­êi ch¬i:"..GetName().."Use the special tile to exchange"..mah_jong[goods_id - circle_start_id +1].."ThÊt b¹i!")
 			end
 		end
 	end
@@ -258,14 +258,14 @@ function mah_jong_prize(goods_id)
 end
 --**********************Ê¦ÃÅÃØ¼®Ôö¼Ó**************************
 function mah_jong_bag_prize_book(prize_diff)
-	local book_name = {"Kim Cang Phôc Ma kinh","TiÒm Long MËt tÞch","V« TrÇn MËt tÞch","Thiªn La MËt TÞch","Nh­ ý MËt TÞch","BÝch H¶i Phæ","Hçn §én MËt tÞch",
-						"Quý Thiªn MËt tÞch","HuyÒn ¶nh MËt tÞch","Qu©n Tö MËt tÞch","TrÊn Qu©n MËt tÞch","Xuyªn V©n MËt tÞch","U Minh Quû Lôc","Linh Cæ MËt tÞch"}
+	local book_name = {"Vajra Demon-Subduing Sutra","TiÒm Long MËt tÞch","V« TrÇn MËt tÞch","Thiªn La MËt TÞch","Nh­ ý MËt TÞch","Azure Sea Score","Hçn §én MËt tÞch",
+						"Quý Thiªn MËt tÞch","HuyÒn ¶nh MËt tÞch","Qu©n Tö MËt tÞch","TrÊn Qu©n MËt tÞch","Xuyªn V©n MËt tÞch","Nether Ghost Record","Linh Cæ MËt tÞch"}
 	local book_seq = random(1,getn(book_name))
 	local book_id = ((book_seq - 1) * 2) + 1
 	local add_flag = AddItem(0,107,book_id,1)
 	if add_flag == 1 then
 		Msg2Player("Chóc mõng b¹n nhËn ®­îc "..book_name[book_seq].."!")
-		Msg2SubWorld("Ng­êi ch¬i:"..GetName().."Sö dông bµi c­îc"..mah_jong_prize_bag[prize_diff][3].."NhËn ®­îc "..book_name[book_seq].."!")
+		Msg2SubWorld("Ng­êi ch¬i:"..GetName().."Sö dông bµi c­îc"..mah_jong_prize_bag[prize_diff][3].."Received"..book_name[book_seq].."!")
 	else
 		WriteLog("Ho¹t ®éng thu thËp con bµi: Ng­êi ch¬i:"..GetName().."T¨ng"..book_name[book_seq].." thÊt b¹i, ký hiÖu:"..add_flag)
 	end

@@ -193,7 +193,7 @@ function WN_201403_CampTask_GetAward_1_1()
 	--
 	WN_201403_CAMPTASK_TASKGROUP:SetTask(WN_201403_CAMPTASK_TASKGROUP.IsAward1, 1)
 	gf_Modify("Exp", 30000000)
-	gf_AddItemEx2({2, 1, 30499, 1, 4}, "Hu©n ch­¬ng anh hïng", "2XU vËt phÈm", "nhËn qu©n c«ng t­íng", 0, 1)
+	gf_AddItemEx2({2, 1, 30499, 1, 4}, "Hero's Medal", "2XU vËt phÈm", "nhËn qu©n c«ng t­íng", 0, 1)
 end
 
 function WN_201403_CampTask_GetAward_1_2()
@@ -222,7 +222,7 @@ function WN_201403_CampTask_GetAward_1_2()
 	WN_201403_CAMPTASK_TASKGROUP:SetTask(WN_201403_CAMPTASK_TASKGROUP.IsAward1, 1)
 	gf_Modify("Exp", 88000000)
 	ahf_GetAFruits(18)
-	gf_AddItemEx2({2, 1, 30499, 1, 4}, "Hu©n ch­¬ng anh hïng", "2XU vËt phÈm", "nhËn qu©n c«ng t­íng", 0, 1)
+	gf_AddItemEx2({2, 1, 30499, 1, 4}, "Hero's Medal", "2XU vËt phÈm", "nhËn qu©n c«ng t­íng", 0, 1)
 end
 
 function WN_201403_CampTask_GetAward_1_3()
@@ -258,7 +258,7 @@ function WN_201403_CampTask_GetAward_1_3()
 	WN_201403_CAMPTASK_TASKGROUP:SetTask(WN_201403_CAMPTASK_TASKGROUP.IsAward1, 1)
 	gf_Modify("Exp", 113114115)
 	ahf_GetAFruits(39)
-	gf_AddItemEx2({2, 1, 30499, 3, 4}, "Hu©n ch­¬ng anh hïng", "2XU vËt phÈm", "nhËn qu©n c«ng t­íng", 0, 1)
+	gf_AddItemEx2({2, 1, 30499, 3, 4}, "Hero's Medal", "2XU vËt phÈm", "nhËn qu©n c«ng t­íng", 0, 1)
 end
 
 function WN_201403_CampTask_GetAward_2()
@@ -291,7 +291,7 @@ function WN_201403_CampTask_GetAward_2_1()
 		return
 	end
 	WN_201403_CAMPTASK_TASKGROUP:SetTask(WN_201403_CAMPTASK_TASKGROUP.IsAward2, 1)
-	gf_AddItemEx2({2, 1, 30499, 1, 4}, "Hu©n ch­¬ng anh hïng", "2XU vËt phÈm", "§æi hu©n ch­¬ng anh hïng ", 0, 1)
+	gf_AddItemEx2({2, 1, 30499, 1, 4}, "Hero's Medal", "2XU vËt phÈm", "Exchange hero medal", 0, 1)
 end
 
 function WN_201403_CampTask_GetAward_2_2()
@@ -314,5 +314,5 @@ function WN_201403_CampTask_GetAward_2_2()
 		return
 	end
 	WN_201403_CAMPTASK_TASKGROUP:SetTask(WN_201403_CAMPTASK_TASKGROUP.IsAward3, 1)
-	gf_AddItemEx2({2, 1, 30499, 10, 4}, "Hu©n ch­¬ng anh hïng", "2XU vËt phÈm", "§æi hu©n ch­¬ng anh hïng ", 0, 1)
+	gf_AddItemEx2({2, 1, 30499, 10, 4}, "Hero's Medal", "2XU vËt phÈm", "Exchange hero medal", 0, 1)
 end

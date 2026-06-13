@@ -18,35 +18,35 @@ Include("\\script\\online\\zgc_public_fun.lua")		--´å³¤µÄ¹«¹²º¯Êı
 	char_start_id = 647
 	--ËùÓĞÂé½«³õÊ¼»¯
 	mah_jong = {
-		"NhÊt ®ång","NhŞ ®ång","Tam ®ång","Tø ®ång","Ngò ®ång","Lôc ®ång","ThÊt ®ång","B¸t ®ång","Cöu ®ång",
-		"Mét","NhŞ ®iÒu","Ba","Bèn","Ngò ®iÒu","Lôc ®iÒu","ThÊt ®iÒu","B¸t ®iÒu","Cöu ®iÒu",
-		"NhÊt v¹n","NhŞ v¹n","Tam v¹n","Tø v¹n","Ngò v¹n","Lôc v¹n","ThÊt v¹n","B¸t v¹n","Cöu v¹n",
-		"§«ng phong","Nam phong","T©y phong","B¾c phong","Hång trung","ph¸t tµi","B¹ch ban"
+		"One Copper","Two Copper","Three Copper","Four Copper","Five Copper","Six Copper","Seven Copper","Eight Copper","Cöu ®ång",
+		"One","Two Bars","Ba","Four","Five Bars","Six Bars","Seven Bars","Eight Bars","Cöu ®iÒu",
+		"Ten Thousand","Twenty Thousand","Thirty Thousand","Forty Thousand","Fifty Thousand","Sixty Thousand","Seventy Thousand","Eighty Thousand","Cöu v¹n",
+		"East Wind","Nam phong","West Wind","North Wind","Hång trung","Riches","B¹ch ban"
 	}
-	mah_jong_prize_bag = {{650,"Con bµi ®em c­îc"},{651,"Con bµi 2 ®em c­îc"},{652,"Con bµi 3 ®em c­îc"},{653,"Con bµi 4 ®em c­îc"}} --µ½ 630
+	mah_jong_prize_bag = {{650,"Betting Tile"},{651,"Betting Tile 2"},{652,"Betting Tile 3"},{653,"Betting Tile 4"}} --µ½ 630
 	--Âé½«ºÍ·¨¶¨Òå
 	mah_jong_suc_way = {
 		--ºÍÅÆÃû³Æ-------------------ÕÅÊı---------¼ì²éº¯Êı-------------------------------½±ÀøµÈ¼¶--------ÃèÊö
-		{"§¹i Tø Hû",		14,	"big_4_hap_chk()",			1,	"§¹i Tø HØ vµ quy t¾c bµi: <color=red>§«ng, Nam, B¾c<color> tÊt c¶ <color=red>3<color> tÊm, ngoµi ra <color=red>bµi Nh­ ı<color> 1 cÆp, tæng céng 14 tÊm."},	--ËÄ¸öËÄÕÅ¶«ÄÏÎ÷±±·ç+ÆäËüÒ»¶Ô
-		{"Tø Kh¾c Tö",		14,	"four_hide_4_chk()",		2,	"Quy t¾c cña Tø kh¾c vµ Hßa bµi: 4 phã 4 tÊm lµ 1 cÆp, tÊt c¶ lµ 14 tÊm."},			--ËÄ¸öËÄÕÅ+ÆäËüÒ»¶Ô
+		{"Great Four Joys",		14,	"big_4_hap_chk()",			1,	"§¹i Tø HØ vµ quy t¾c bµi: <color=red>§«ng, Nam, B¾c<color> tÊt c¶ <color=red>3<color> tÊm, ngoµi ra <color=red>bµi Nh­ ı<color> 1 cÆp, tæng céng 14 tÊm."},	--ËÄ¸öËÄÕÅ¶«ÄÏÎ÷±±·ç+ÆäËüÒ»¶Ô
+		{"Four Concealed Tiles",		14,	"four_hide_4_chk()",		2,	"Quy t¾c cña Tø kh¾c vµ Hßa bµi: 4 phã 4 tÊm lµ 1 cÆp, tÊt c¶ lµ 14 tÊm."},			--ËÄ¸öËÄÕÅ+ÆäËüÒ»¶Ô
 		{"Cöu Liªn B¶o §¨ng",	14,	"from_1_to_9_chk()",		1,	"Quy t¾c Cöu liªn b¶o ®¨ng: §ång hoa ®ång s¾c 3 tÊm lµ 1, nhŞ tam tø ngò lôc thÊt b¸t ®ång hoa s¾c lµ 1, tæng céng 14 tÊm"},	--Í¬É«1112345678999+ÈÎÒâÒ»ÕÅÍ¬É«
-		{"ThËp Tham Yªu",		14,	"thrteen_1_or_9()",			1,	"Quy t¾c ThËp tam yªu: Mçi s¾c hoa (§ång tö, §iÒu tö, V¹n tö) 1 vµ 9. 7 ch÷ trªn tÊm bµi (§«ng phong, Nam phong, T©y phong, B¾c phong, Hång trung, Ph¸t tµi, B¹ch b¶n) tæng céng 14 tÊm."},		--ÈıÖĞ»¨É«µÄçÛ¾Å+¶«ÄÏÎ÷±±ÖĞ·¢°×
-		{"Liªn ThÊt §èi",		14,	"connect_7_double()",		2,	"Quy t¾c Liªn ThÊt §èi: Dùa theo sè thø tù 7 cÆp liªn tiÕp cña nh÷ng tÊm ®ång hoa s¾c. Tæng céng cã 14 tÊm."},	--Í¬É«Á¬ÆğÀ´µÄÆß¶Ô
-		{"Thanh ThÊt §èi",		14,	"sam_color_7_double()",		3,	"Quy t¾c thanh long ®èi: 7 cÆp cña nh÷ng tÊm ®ång hoa s¾c, tæng céng 14 tÊm"},
-		{"ThÊt Tinh BÊt Kh¸o",	14,	"seven_star()",				3,	"Quy t¾c ThÊt tinh bÊt kh¸o: Chon tÊt c¶ 14 tÊm trong ®ã nhÊt ®Şnh ph¶i cã 7 tÊm trong §«ng, T©y, Nam, B¾c thªm 3 tÊm hoa s¾c vµ chän nh÷ng tÊm trong trïng c¸c sè 147, 258, 369…"},
-		{"Thèi bÊt ®¶o",		14,	"cannot_push()",			2, 	"Quy t¾c Th«i BÊt §¶o Dùa theo c¸c h×nh vÏ trªn tÊm bµi kh¸c nhau ®Ó xÕp thµnh 1 nhãm gåm: 123456789 bİnh, 245689 ®iÒu, b¹ch ®iÒu. Tæng céng 14 tÊm."},
-		{"§¹i Tam Nguyªn",		14,	"big_3_yuan()",				3,	"Quy t¾c §¹i Tam Nguyªn (<color=red>quy t¾c bÊt chİnh<color>): Chän 14 tÊm trong c¸c lo¹i Hång trung, Ph¸t tµi, B¹ch b¶n, cßn l¹i <color=red>tïy ı<color>."},
+		{"Thirteen Orphans",		14,	"thrteen_1_or_9()",			1,	"Quy t¾c ThËp tam yªu: Mçi s¾c hoa (§ång tö, §iÒu tö, V¹n tö) 1 vµ 9. 7 ch÷ trªn tÊm bµi (§«ng phong, Nam phong, T©y phong, B¾c phong, Hång trung, Ph¸t tµi, B¹ch b¶n) tæng céng 14 tÊm."},		--ÈıÖĞ»¨É«µÄçÛ¾Å+¶«ÄÏÎ÷±±ÖĞ·¢°×
+		{"Linked Seven Pairs",		14,	"connect_7_double()",		2,	"Quy t¾c Liªn ThÊt §èi: Dùa theo sè thø tù 7 cÆp liªn tiÕp cña nh÷ng tÊm ®ång hoa s¾c. Tæng céng cã 14 tÊm."},	--Í¬É«Á¬ÆğÀ´µÄÆß¶Ô
+		{"Pure Seven Pairs",		14,	"sam_color_7_double()",		3,	"Quy t¾c thanh long ®èi: 7 cÆp cña nh÷ng tÊm ®ång hoa s¾c, tæng céng 14 tÊm"},
+		{"Seven Stars Unmatched",	14,	"seven_star()",				3,	"Quy t¾c ThÊt tinh bÊt kh¸o: Chon tÊt c¶ 14 tÊm trong ®ã nhÊt ®Şnh ph¶i cã 7 tÊm trong §«ng, T©y, Nam, B¾c thªm 3 tÊm hoa s¾c vµ chän nh÷ng tÊm trong trïng c¸c sè 147, 258, 369…"},
+		{"Unbeatable Pillar",		14,	"cannot_push()",			2, 	"Quy t¾c Th«i BÊt §¶o Dùa theo c¸c h×nh vÏ trªn tÊm bµi kh¸c nhau ®Ó xÕp thµnh 1 nhãm gåm: 123456789 bİnh, 245689 ®iÒu, b¹ch ®iÒu. Tæng céng 14 tÊm."},
+		{"Great Three Origins",		14,	"big_3_yuan()",				3,	"Quy t¾c §¹i Tam Nguyªn (<color=red>quy t¾c bÊt chİnh<color>): Chän 14 tÊm trong c¸c lo¹i Hång trung, Ph¸t tµi, B¹ch b¶n, cßn l¹i <color=red>tïy ı<color>."},
 		{"Thanh Yªu Cöu",		14,	"all_1_or_9()",				3,	"Quy t¾c Thanh Yªu Cöu: (<color=red>Quy t¾c bÊt chİnh<color>: chän 14 tÊm trong tÊt c¶ c¸c lo¹i."},
-		{"NhÊt S¾c Tø §ång ThuËn",	14,	"one_color_four_seq()",		2,	"Quy t¾c NhÊt S¾c Tø §ång ThuËn (<color=red>Quy t¾c bÊt chİnh<color>): Chän 14 tÊm theo c¸c sè thø tù (nh­: 1 v¹n, 2 v¹n, 3 v¹n), cßn l¹i chän <color=red>cïng s¾c tïy ı<color>"},
-		{"NhÊt S¾c Tø TiÕt Cao",	14,	"one_color_four_cont()",	2,	"Quy t¾c §ång S¾c Tø TiÕt Cao (<color=red>quy t¾c bÊt chİnh<color>): Chän 14 tÊm theo c¸c sè thø tù t¨ng dÇn (1 v¹n, 2 v¹n, 3 v¹n, 4 v¹n ) vµ 2 tÊm <color=red>®ång s¾c tïy ı<color>."},
-		{"Tù NhÊt S¾c",		14,	"all_char()",				3,	"Quy t¾c Ch÷ NhÊt S¾c (<color=red>Quy t¾c bÊt chİnh<color>): chän tÊt c¶ 14 tÊm <color=red>tïy ı<color> trong c¸c ch÷ (§«ng phong, T©y phong, Nam phong, B¾c phong, Hång Trung, Ph¸t tµi, B¹ch b¶n)"},
-		{"Thanh NhÊt S¾c",		14,	"all_sam_color()",			4,	"Quy t¾c Thanh NhÊt S¾c (<color=red>quy t¾c bÊt chİnh<color>): Chän tïy ı 14 tÊm trong nh÷ng tÊm <color=red>®ång s¾c<color>, (§ång tö, §iÒu tö, V¹n tö)."},
-		{"Toµn ®¹i",		14,	"all_big()",				4,	"Quy t¾c Toµn §¹i (<color=red>quy t¾c bÊt chİnh<color>: Chän 14 tÊm tïy ı trong c¸c tÊm <color=red>hoa s¾c<color> hoÆc trong tæ hîp sè thø tù <color=red>7, 8, 9<color>"},
-		{"Toµn trung",		14,	"all_normal()",				4,	"Quy t¾c toµn trung (<color=red>quy t¾c bÊt chİnh<color>): Chän 14 tÊm tïy ı trong c¸c tÊm <color=red>hoa s¾c<color> hoÆc trong tæ hîp sè thø tù <color=red>4, 5, 6<color>"},
-		{"Toµn tiÓu",		14,	"all_small()",				4,	"Quy t¾c toµn tiÓu (<color=red>quy t¾c bÊt chİnh<color>): Chän 14 tÊm tïy ı trong c¸c tÊm <color=red>hoa s¾c<color> cßn l¹i trong tæ hîp sè thø tù <color=red>1, 2, 3<color>."},
+		{"Single-Color Four Identical Sequences",	14,	"one_color_four_seq()",		2,	"Quy t¾c NhÊt S¾c Tø §ång ThuËn (<color=red>Quy t¾c bÊt chİnh<color>): Chän 14 tÊm theo c¸c sè thø tù (nh­: 1 v¹n, 2 v¹n, 3 v¹n), cßn l¹i chän <color=red>cïng s¾c tïy ı<color>"},
+		{"Single-Color Four Pure Triplets",	14,	"one_color_four_cont()",	2,	"Quy t¾c §ång S¾c Tø TiÕt Cao (<color=red>quy t¾c bÊt chİnh<color>): Chän 14 tÊm theo c¸c sè thø tù t¨ng dÇn (1 v¹n, 2 v¹n, 3 v¹n, 4 v¹n ) vµ 2 tÊm <color=red>®ång s¾c tïy ı<color>."},
+		{"Self Single-Color",		14,	"all_char()",				3,	"Quy t¾c Ch÷ NhÊt S¾c (<color=red>Quy t¾c bÊt chİnh<color>): chän tÊt c¶ 14 tÊm <color=red>tïy ı<color> trong c¸c ch÷ (§«ng phong, T©y phong, Nam phong, B¾c phong, Hång Trung, Ph¸t tµi, B¹ch b¶n)"},
+		{"Pure Single-Color",		14,	"all_sam_color()",			4,	"Quy t¾c Thanh NhÊt S¾c (<color=red>quy t¾c bÊt chİnh<color>): Chän tïy ı 14 tÊm trong nh÷ng tÊm <color=red>®ång s¾c<color>, (§ång tö, §iÒu tö, V¹n tö)."},
+		{"All Big",		14,	"all_big()",				4,	"Quy t¾c Toµn §¹i (<color=red>quy t¾c bÊt chİnh<color>: Chän 14 tÊm tïy ı trong c¸c tÊm <color=red>hoa s¾c<color> hoÆc trong tæ hîp sè thø tù <color=red>7, 8, 9<color>"},
+		{"All Middle",		14,	"all_normal()",				4,	"Quy t¾c toµn trung (<color=red>quy t¾c bÊt chİnh<color>): Chän 14 tÊm tïy ı trong c¸c tÊm <color=red>hoa s¾c<color> hoÆc trong tæ hîp sè thø tù <color=red>4, 5, 6<color>"},
+		{"All Small",		14,	"all_small()",				4,	"Quy t¾c toµn tiÓu (<color=red>quy t¾c bÊt chİnh<color>): Chän 14 tÊm tïy ı trong c¸c tÊm <color=red>hoa s¾c<color> cßn l¹i trong tæ hîp sè thø tù <color=red>1, 2, 3<color>."},
 		{"Thanh Long",		14,	"sam_color_dragon()",		3,	"Quy t¾c Thanh Long (<color=red>quy t¾c bÊt chİnh<color>): chän 14 tÊm bµi cã sè thø tù ®ång nhÊt s¾c tõ 1-9, cßn l¹i chän <color=red>hoa s¾c tïy ı<color>."},
-		{"Tam Kh¾c Tö",		14,	"three_hide_num_3()",		4,	"Quy t¾c Tam Kh¾c Tö (<color=red>quy t¾c bÊt chİnh<color>): Cã thÓ chän 14 tÊm trong nh÷ng cÆp t­¬ng ®ång cßn l¹i lµ <color=red>hoa s¾c tïy ı<color>."},
-		{"Thİ Hå",		14, "just_14()",				5,	"Quy t¾c Tİ Hå (<color=red>quy t¾c bÊt chİnh<color>): Cã thÓ chän 14 tÊm <color=red>tïy ı<color>."},
+		{"Three Concealed Tiles",		14,	"three_hide_num_3()",		4,	"Quy t¾c Tam Kh¾c Tö (<color=red>quy t¾c bÊt chİnh<color>): Cã thÓ chän 14 tÊm trong nh÷ng cÆp t­¬ng ®ång cßn l¹i lµ <color=red>hoa s¾c tïy ı<color>."},
+		{"Sparrow Game",		14, "just_14()",				5,	"Quy t¾c Tİ Hå (<color=red>quy t¾c bÊt chİnh<color>): Cã thÓ chän 14 tÊm <color=red>tïy ı<color>."},
 	}
 --==============================Ö÷Âß¼­ÇøÓò===============================
 function main(npc_index)
@@ -94,7 +94,7 @@ function get_present()
 		if GetSex() == 1 then
 			strSex = "ThiÕu hiÖp"
 		elseif GetSex() == 2 then
-			strSex = "C« n­¬ng"
+			strSex = "Young lady"
 		else
 			strSex = "ThiÕu hiÖp/N÷ hiÖp"
 		end
@@ -159,13 +159,13 @@ function mah_jong_collect_dia()
 	if mah_jong_seq_ran ~= 0 and mah_jong_seq_ran <=(getn(mah_jong_suc_way) -1) then
 		mah_jong_collect_dia_main = "Thêi gian thu thËp m¹c ch­îc:"
 		mah_jong_collect_dia[1] = mah_jong_suc_way[mah_jong_seq_ran][1].."/#mah_jong_collect_prize("..mah_jong_seq_ran..")" 
-		mah_jong_collect_dia[2] = "Ta muèn t×m hiÓu"..mah_jong_suc_way[mah_jong_seq_ran][1].."quy t¾c/#mah_jong_suc_inf("..mah_jong_seq_ran..")"
-		mah_jong_collect_dia[3] = "Thİ Hå/#mah_jong_collect_prize(20)"
+		mah_jong_collect_dia[2] = "Ta muèn t×m hiÓu"..mah_jong_suc_way[mah_jong_seq_ran][1].."rule/#mah_jong_suc_inf("..mah_jong_seq_ran..")"
+		mah_jong_collect_dia[3] = "Sparrow Game/#mah_jong_collect_prize(20)"
 		mah_jong_collect_dia[4] = "T×m hiÓu quy t¾c tİ hå/#mah_jong_suc_inf(20)"
 		mah_jong_collect_dia[5] = "Ta chØ ®Õn xem thö/end_dialog"
 	else
 		mah_jong_collect_dia_main = "Thêi gian thu thËp m¹c ch­îc:"
-		mah_jong_collect_dia[1] = "Thİ Hå/#mah_jong_collect_prize(20)"
+		mah_jong_collect_dia[1] = "Sparrow Game/#mah_jong_collect_prize(20)"
 		mah_jong_collect_dia[2] = "T×m hiÓu quy t¾c tİ hå/#mah_jong_suc_inf(20)"
 		mah_jong_collect_dia[3] = "Ta chØ ®Õn xem thö/end_dialog"		
 	end

@@ -6,7 +6,7 @@ Include("\\script\\task\\world\\lizhi_³¤¸èÃÅ\\task_head.lua");
 Include("\\script\\newbattles\\sign_up_npc.lua");
 
 --g_sNpcName = "TriÖu Diªn Niªn";
-g_sNpcName = "TiÓu Ph­¬ng";
+g_sNpcName = "Xiaofang";
 g_nNpcCamp = SONG_ID;
 
 function main()
@@ -51,9 +51,9 @@ function talk_one()
     
     local szTalk = {
         "MÊy ngµy kh«ng gÆp <sex> qu¶ nhiªn tiÕn bé h¼n!",
-        "KhÊu ChuÈn ®¹i nh©n cãth­ göi cho tiÒn bèi!",
-        "Th­ g×? §­a ta xem.....",
-        "[TriÖu Diªn Niªn më th­ ra xem xong suy nghÜ håi l©u]",
+        "Lord Khau Chuan asked me to deliver this money to you, senior!",
+        "What letter? Let me see it.....",
+        "[Trieu Dien Nien opens the letter, reads it, and ponders for a long while]",
         "Kh«ng ngê sù viÖc l¹i hÖ träng ®Õn vËy. Ng­¬i ra søc gióp §¹i Tèng, TriÖu mç nµy rÊt kh©m phôc. Kh«ng giÊu g× ng­¬i, ta chÝnh lµ ng­êi liªn l¹c víi {Tr­êng Ca M«n}.",
         "Ra lµ vËy! {Tr­êng Ca M«n}, {Thiªn ¢m gi¸o} lµm ta rèi c¶ lªn, tiÒn bèi gi¶i thÝch mét chót ®­îc kh«ng?"
     };
@@ -83,7 +83,7 @@ function task_002_00()
         "Lai lÞch Tr­êng Ca M«n b¾t ®Çu tõ ngµy khai quèc, sau khi Th¸i Tæ ®êi tr­íc b×nh ®Þnh giang s¬n B«i Töu ThÝch Binh QuyÒn, c¸c t­íng lÜnh Th¹ch Thñ TÝn, Cao Hoµi §øc, Tr­¬ng LÖnh Phong, TriÖu Ng¹n Huy ®Òu c¸o l·o håi h­¬ng. {TriÖu Ng¹n Huy} ®¹i nh©n kh«ng cam c¶nh c« ®¬n, ®· liªn l¹c vµi b»ng h÷u giang hå, th­êng cïng nhau ng©m th¬ ®èi x­íng hoÆc tû thÝ vâ c«ng.",
         "VÒ sau nh÷ng vÞ b»ng h÷u nµy thµnh lËp thµnh mét m«n ph¸i. Lóc ®ã trong ph¸i nhiÒu ng­êi s¸ng t¸c nh¹c lµm th¬ cho nªn míi cã tªn {Tr­êng Ca M«n}. ViÖc cÇn lµm lóc nµy lµ th«ng b¸o cho nh÷ng huynh ®Ö Êy biÕt.",
         "HiÖn {4 ng­êi} ®Òu ®ang phông mÖnh ®iÒu tra, ta ph¶i th«ng b¸o cho {¢u D­¬ng Häa} tr­íc. {H¹ HÇu CÇm} ë {D­¬ng Ch©u}, {C«ng T«n Th­} ë {T­¬ng D­¬ng}, {Gia C¸t Kú} ë {Giang T©n Th«n}, kh«ng biÕt <sex> cã thÓ gióp ta th«ng b¸o cho 3 vÞ kh«ng?",
-        "V·n bèi ®i ngay!"
+        "This junior will go at once!"
     };
     TalkEx("task_002_000", szTalk);
 end;

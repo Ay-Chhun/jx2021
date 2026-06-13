@@ -24,9 +24,9 @@ tEventGift =
 
 tEventFactionGift =
 {
-	[1] = {"Trang bﬁ m´n ph∏i S¨ c p", "VÚ Kh›, M∑o, Hπ Y", 30, BIT_LEVEL_30, 2, 3},											-- Level 30
+	[1] = {"Trang bﬁ m´n ph∏i S¨ c p", "Weapon, Helm, Lower Garment", 30, BIT_LEVEL_30, 2, 3},											-- Level 30
 	[2] = {"Trang bﬁ m´n ph∏i Trung c p", "VÚ kh›, Trang S¯c", 50, BIT_LEVEL_50, 4, 3}, 										-- Level 50
-	[3] = {"Trang bﬁ Tµng Ki’m", "M∑o, Hπ Y, Th≠Óng Y, Trang S¯c vµ VÚ Kh›", 60, BIT_LEVEL_60, 8, 6}, 				-- Level 60	
+	[3] = {"Trang bﬁ Tµng Ki’m", "Helm, Lower Garment, Upper Garment, Accessory, and Weapon", 60, BIT_LEVEL_60, 8, 6}, 				-- Level 60	
 }
 
 

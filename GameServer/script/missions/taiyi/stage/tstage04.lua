@@ -59,7 +59,7 @@ function tStage04_1:Init()
 		return 
 	end
 	this.msCamp:turnPlayer(0, function() SetTask(%nTaskID, GetTask(%nTaskID) + 1); end);
-	this.msCamp:turnPlayer(0, function() HeadMsg2Player("§éi tr­ëng vµ Méc QuÕ Anh ®èi tho¹i ®Ó tiÕp tôc ¶i!") end);
+	this.msCamp:turnPlayer(0, function() HeadMsg2Player("Team leader, talk to Mu Guiying to continue the stage!") end);
 end
 
 function tStage04_1:BeginFight()
@@ -77,7 +77,7 @@ end
 function tStage04_1:CheatMode()
 	local self = tStage04_1;
 	if GetItemCount(TYT_IB_ITEM[2], TYT_IB_ITEM[3], TYT_IB_ITEM[4]) < 1 then
-		Talk(1, "", "<color=green>Méc QuÕ Anh<color>: Trªn ng­êi b¹n"..TYT_IB_ITEM[1].."Kh«ng ®ñ.");
+		Talk(1, "", "<color=green>Méc QuÕ Anh<color>: Trªn ng­êi b¹n"..TYT_IB_ITEM[1].."Not enough.");
 		return 0;
 	end
 	if 1 ~= DelItem(TYT_IB_ITEM[2], TYT_IB_ITEM[3], TYT_IB_ITEM[4], 1) then return 0; end
@@ -135,7 +135,7 @@ function tStage04_1.NpcMain()
 			--"H×nh thøc sao chÐp (CÇn "..TYT_IB_ITEM[1].."*1)/#tStage04_1.CheatMode()",
 --			"½áÊøµÚ4¹Ø/#tStage04_1.EndStage05()",
 			"Ta muèn rêi khái ¶i/TY_ConfirmClose",
-			"Hñy bá/nothing",
+			"Cancel/nothing",
 		};
 	end
 	
@@ -144,7 +144,7 @@ function tStage04_1.NpcMain()
 			"Më ¶i 1: TÞch Tµ Chi HÝ/#tStage04_1.BeginFight()",
 --			"½áÊøµÚ4¹Ø/#tStage04_1.EndStage05()",
 			"Ta muèn rêi khái ¶i/TY_ConfirmClose",
-			"Hñy bá/nothing",
+			"Cancel/nothing",
 		};
 	end
 	
@@ -293,13 +293,13 @@ function tStage04_2:CreateMashroom()
 	
 	for i = 1, 2 do
 		tPos = tNpcPos.mashroom[5][tRand[i]];
-		nMashroomIdx = CreateNpc("TYT_BlackMogu", "NÊm §en", nMapId, tPos[1], tPos[2]);
+		nMashroomIdx = CreateNpc("TYT_BlackMogu", "Black Mushroom", nMapId, tPos[1], tPos[2]);
 		SetNpcScript(nMashroomIdx, thisFile);
 	end
 	local tMashrooms = {
-		{"TYT_GrennMogu", "NÊm Lôc"},
-		{"TYT_RedMogu", "NÊm §á"},
-		{"TYT_BlueMogu", "NÊm Lam"},
+		{"TYT_GrennMogu", "Green Mushroom"},
+		{"TYT_RedMogu", "Red Mushroom"},
+		{"TYT_BlueMogu", "Blue Mushroom"},
 	};
 	for i = 1, 4 do
 		tPos = tNpcPos.mashroom[5][tRand[i + 2]];
@@ -357,12 +357,12 @@ function tStage04_2:CheckPos()
 		SetMissionV(this.mv_24, 0);
 		
 		local szMashroomName = GetMissionS(this.ms20);
-		if "NÊm §á" == szMashroomName then
+		if "Red Mushroom" == szMashroomName then
 			RemoveStateFromNpc(nBXIdx, 10003);
 			CastState2Npc(nBXIdx, "state_move_speed_percent_add", 26, 15*18, 0, 10003);
 			CastState2Npc(nBXIdx, "state_p_attack_percent_add", 100, 15*18, 0, 10004);
 			NpcCommand(nBXIdx, NPCCOMMAND.do_skill, x*32, y*32, 65536*1+1662);
-		elseif "NÊm Lôc" == szMashroomName then
+		elseif "Green Mushroom" == szMashroomName then
 			local nMax, nCur = GetUnitCurStates(nBXIdx, 1);
 			local fPercent = nCur / nMax;
 			local nAdd = 0.4;
@@ -373,7 +373,7 @@ function tStage04_2:CheckPos()
 			if fPercent > 1.0 then fPercent = 1.0; end
 			ModifyNpcData(nBXIdx, 0, floor(nMax * fPercent), 0);
 			SetCurrentNpcSFX(nBXIdx, 989, 0, 0);
-		elseif "NÊm §en" == szMashroomName then	--Ð¶¶Ü
+		elseif "Black Mushroom" == szMashroomName then	--Ð¶¶Ü
 			RemoveStateFromNpc(nBXIdx, 10001);
 			RemoveStateFromNpc(nBXIdx, 10002);
 			CastState2Npc(nBXIdx, "state_move_speed_percent_add", 22, 15*18, 0, 10003);
@@ -381,7 +381,7 @@ function tStage04_2:CheckPos()
 			SetCurrentNpcSFX(nBXIdx, 0, 1, 1);
 			SetCurrentNpcSFX(nBXIdx, -1, 0, 1);
 			SetCurrentNpcSFX(nBXIdx, 0, 0, 1);
-		elseif "NÊm Lam" == szMashroomName then
+		elseif "Blue Mushroom" == szMashroomName then
 			local nPlayerIndex = GetWhoHitNpcMost(nBXIdx);
 			if not nPlayerIndex then
 				nPlayerIndex = PIdx2NpcIdx(TY_FindRandomPlayer({x1, y1}));
@@ -389,7 +389,7 @@ function tStage04_2:CheckPos()
 			SetCurrentNpcSFX(nBXIdx, 988, 1, 1);
 			DoSkill2Target(nBXIdx, 1663, 1, nPlayerIndex);
 		end
-		TY_ClearNpc({"NÊm §á","NÊm Lôc","NÊm Lam","NÊm §en"});
+		TY_ClearNpc({"Red Mushroom","Green Mushroom","Blue Mushroom","Black Mushroom"});
 	end
 end
 
@@ -406,7 +406,7 @@ function tStage04_2:EatMashroom()
 		return 0;
 	end
 	if not tStage04_2.EatList then
-		tStage04_2.EatList = {"NÊm §á", "NÊm Lam", "NÊm Lôc", "NÊm §en"};
+		tStage04_2.EatList = {"Red Mushroom", "Blue Mushroom", "Green Mushroom", "Black Mushroom"};
 	end
 	local nNewMashroomIdx = nil;
 	local nOldMashroomIdx = GetMissionV(this.mv_24);
@@ -488,7 +488,7 @@ function tStage04_2:DoSth()
 	SetMissionV(this.mv_23, GetMissionV(this.mv_23) + 1);
 	local nValue = GetMissionV(this.mv_23) * 5;
 	if nValue == 15 then
-		TY_ClearNpc({"NÊm §á","NÊm Lôc","NÊm Lam","NÊm §en"});
+		TY_ClearNpc({"Red Mushroom","Green Mushroom","Blue Mushroom","Black Mushroom"});
 		self:CreateMashroom();
 		self:EquipShield();
 	elseif nValue == 20 then
@@ -528,42 +528,42 @@ function tStage04_2:NpcMain()
 	if not self.MashroomEffect then
 		self.MashroomEffect = {
 			[eDifType.NORMAL] = {
-				["NÊm §en"] = {
+				["Black Mushroom"] = {
 					["states"] = {{"state_lost_p_life_per18", 2, 10*18, 0, 10001}, },		--Ã¿1Ãëµô3%Ñª
 					["sfx"] = {980, 1, 1},
 				},
-				["NÊm Lôc"] = {
+				["Green Mushroom"] = {
 					["states"] = {{"state_lost_p_life_per18", 2, 10*18, 0, 10001}, 
 								  {"state_damage_point", 1000, 18*30, 0, 10004}, },			--³ÔÂÌÉ«Ä¢¹½Ôö¼ÓÉËº¦
 					["sfx"] = {981, 1, 1},
 				},
-				["NÊm §á"] = {
+				["Red Mushroom"] = {
 					["states"] = {{"state_lost_p_life_per18", 2, 10*18, 0, 10001}, 
 								  {"state_p_attack_percent_add", 100, 18*30, 0, 10002}, },	--³ÔºìÉ«Ä¢¹½Ôö¼ÓÍâ¹¦¹¥»÷
 					["sfx"] = {983, 1, 1},
 				},
-				["NÊm Lam"] = {
+				["Blue Mushroom"] = {
 					["states"] = {{"state_lost_p_life_per18", 2, 10*18, 0, 10001},
 								  {"state_m_attack_percent_add", 100, 18*30, 1, 10003}, },	--³ÔÀ¶É«Ä¢¹½Ôö¼ÓÄÚ¹¦¹¥»÷
 					["sfx"] = {982, 1, 1},
 				},
 			},
 			[eDifType.HARD] = {
-				["NÊm §en"] = {
+				["Black Mushroom"] = {
 					["states"] = {{"state_lost_p_life_per18", 4.5, 10*18, 0, 10001}, },		--Ã¿1Ãëµô3%Ñª
 					["sfx"] = {980, 1, 1},
 				},
-				["NÊm Lôc"] = {
+				["Green Mushroom"] = {
 					["states"] = {{"state_lost_p_life_per18", 4.5, 10*18, 0, 10001}, 
 								  {"state_damage_point", 1000, 18*30, 0, 10004}, },			--³ÔÂÌÉ«Ä¢¹½Ôö¼ÓÉËº¦
 					["sfx"] = {981, 1, 1},
 				},
-				["NÊm §á"] = {
+				["Red Mushroom"] = {
 					["states"] = {{"state_lost_p_life_per18", 4.5, 10*18, 0, 10001}, 
 								  {"state_p_attack_percent_add", 100, 18*30, 0, 10002}, },	--³ÔºìÉ«Ä¢¹½Ôö¼ÓÍâ¹¦¹¥»÷
 					["sfx"] = {983, 1, 1},
 				},
-				["NÊm Lam"] = {
+				["Blue Mushroom"] = {
 					["states"] = {{"state_lost_p_life_per18", 4.5, 10*18, 0, 10001},
 								  {"state_m_attack_percent_add", 100, 18*30, 1, 10003}, },	--³ÔÀ¶É«Ä¢¹½Ôö¼ÓÄÚ¹¦¹¥»÷
 					["sfx"] = {982, 1, 1},
@@ -714,7 +714,7 @@ function tStage04_3:NpcMain()
 		local strTab = {
 			"TruyÒn tèng ®Õn Th¸i NhÊt Th¸p-Trung/#tStage04_3.GoToStage06()",
 			"Ta muèn rêi khái ¶i/TY_ConfirmClose",
-			"Hñy bá/nothing",
+			"Cancel/nothing",
 		};
 		Say("<color=green>Méc QuÕ Anh<color>: muèn ®Õn Th¸i NhÊt Th¸p-Trung?", getn(strTab), strTab);
 	end

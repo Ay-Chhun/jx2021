@@ -1,4 +1,4 @@
 ID	Name
 1	Kü nghÖ giang hå
-2	Thu thËp
+2	Collect
 3	S¶n xuÊt

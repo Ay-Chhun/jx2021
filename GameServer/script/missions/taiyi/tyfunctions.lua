@@ -130,7 +130,7 @@ end
 
 function TY_ConfirmClose()
 	local szMsg = "<color=green>Méc QuÕ Anh<color>: X¸c nhËn rêi ¶i. ";
-	suSay(szMsg, 2, "Rêi khái/TY_CloseMission", "Hñy bá/nothing");
+	suSay(szMsg, 2, "Leave/TY_CloseMission", "Cancel/nothing");
 end
 
 function TY_CloseMission()
@@ -531,7 +531,7 @@ function TY_RollCardCallBack(id)
 			end
 		end
 				
-		gf_SetLogCaption(format("%s.LËt thÎFree", szName[nMSType]));
+		gf_SetLogCaption(format("%s.Flip Card Free", szName[nMSType]));
 		
 		tAward = TYT_PRICE[nMSType][1][nDifType];
 	
@@ -554,7 +554,7 @@ function TY_RollCardCallBack(id)
 				
 				if type(tAward[i][2]) == "table"  then
 					if type(tAward[i][2][1]) ~= "function" then 
-						gf_AddItemEx2(tAward[i][2], tAward[i][1], szName[nMSType], "Kim R­¬ng", (tAward[i][5] or 0) * 24 * 3600, 1);
+						gf_AddItemEx2(tAward[i][2], tAward[i][1], szName[nMSType], "Gold Chest", (tAward[i][5] or 0) * 24 * 3600, 1);
 						g, d, p, n = tAward[i][2][1], tAward[i][2][2], tAward[i][2][3], tAward[i][2][4];
 					else
 						g, d, p, n = tAward[i][2][1](tAward[i][2][2], tAward[i][2][3]);
@@ -588,13 +588,13 @@ function TY_RollCardCallBack(id)
 	else
 		local tItem = MA_GetRequire(id);
 		if DelItem(tItem[1], tItem[2], tItem[3], tItem[4]) ~= 1 then
-			Talk(1, "", "Mang theo trªn ng­êi"..TYT_IB_ITEM[1].."Kh«ng ®ñ!");
+			Talk(1, "", "Mang theo trªn ng­êi"..TYT_IB_ITEM[1].."Not enough!");
 			return 0;
 		end
 		--Observer:onEvent(SYSEVENT_GLOBAL_COST_IB, {tItem[1], tItem[2], tItem[3], tItem[4]})
 		FireEvent("event_ib_cost", tItem[1], tItem[2], tItem[3], tItem[4])
 		
-		gf_SetLogCaption(format("%s.LËt thÎPay", szName[nMSType]));
+		gf_SetLogCaption(format("%s.Flip Card Pay", szName[nMSType]));
 				
 		local TASKID_TAIYITA_CONSUME = tTaskID.ConsumeTaskID[nMSType];
 		local nConsumeV = GetTask(TASKID_TAIYITA_CONSUME) + 2;
@@ -625,7 +625,7 @@ function TY_RollCardCallBack(id)
 			if nRand <= 0 then
 				if type(tAward[i][2]) == "table"  then
 					if type(tAward[i][2][1]) ~= "function" then 
-						gf_AddItemEx2(tAward[i][2], tAward[i][1], szName[nMSType], "Kim R­¬ng", (tAward[i][5] or 0) * 24 * 3600, 1);
+						gf_AddItemEx2(tAward[i][2], tAward[i][1], szName[nMSType], "Gold Chest", (tAward[i][5] or 0) * 24 * 3600, 1);
 						g, d, p, n = tAward[i][2][1], tAward[i][2][2], tAward[i][2][3], tAward[i][2][4];
 					else
 						g, d, p, n = tAward[i][2][1](tAward[i][2][2], tAward[i][2][3]);
@@ -660,11 +660,11 @@ function TY_RollCardCallBack(id)
 	end
 	
 	local itemName = GetItemName(g,d,p);
-	if itemName == "Viªm Linh Ti" then
+	if itemName == "Yan Ling Si" then
 		AddRuntimeStat(18, 44, 0, 1);
 	elseif itemName == "Da Ma Lang" then
 		AddRuntimeStat(18, 45, 0, 1);
-	elseif itemName == "Da §Þa Long" then
+	elseif itemName == "Da Di Long" then
 		AddRuntimeStat(18, 46, 0, 1);
 	elseif itemName == "Th¸i NhÊt LÖnh" then
 		AddRuntimeStat(18, 47, 0, 1);
@@ -680,15 +680,15 @@ function TY_StagePassed(tStage, tPos)
 	
 	--Èç¹ûÊÇ·Ç¹ý¶É¹Ø£¬Ôò¸ø½±Àø
 	if tMainLevelID[tStage.nStageId] then
-		WriteLog(format("[Th¸i NhÊt Th¸p.%s] [V­ît qua ¶i %d] [§éi tr­ëng RoleName: %s Account: %s]", (GetMissionV(this.mv_02) == eDifType.NORMAL and "Th­êng") or "Anh Hïng", (tStage.nStageId-2-TOTAL_STAGE)/3, TY_GetCaptainName(), TY_GetCaptainAccount()));
+		WriteLog(format("[Th¸i NhÊt Th¸p.%s] [V­ît qua ¶i %d] [§éi tr­ëng RoleName: %s Account: %s]", (GetMissionV(this.mv_02) == eDifType.NORMAL and "Common") or "Hero", (tStage.nStageId-2-TOTAL_STAGE)/3, TY_GetCaptainName(), TY_GetCaptainAccount()));
 		local nMSType = GetMissionV(this.mv_01);	--FOREST or TOWER
 		local nDifType = GetMissionV(this.mv_02);	--NORMAL or HARD
 				
 		local strMsg = nil;
 		if (TOTAL_STAGE + 3*3 + 2) == tStage.nStageId then
-			strMsg = format("Chóc mõng %s thèng lÜnh giang hå tinh anh lo¹i bá Ph¹n Thiªn L©m %s, thµnh c«ng x«ng vµo Th¸i NhÊt Th¸p!", TY_GetCaptainSafeName(), (GetMissionV(this.mv_02) == eDifType.HARD and "(Anh Hïng)") or "(Th­êng)");
+			strMsg = format("Chóc mõng %s thèng lÜnh giang hå tinh anh lo¹i bá Ph¹n Thiªn L©m %s, thµnh c«ng x«ng vµo Th¸i NhÊt Th¸p!", TY_GetCaptainSafeName(), (GetMissionV(this.mv_02) == eDifType.HARD and "(Hero)") or "(Normal)");
 		elseif (TOTAL_STAGE + 6*3 + 2) == tStage.nStageId then
-			strMsg = format("Chóc mõng %s thèng lÜnh giang hå tinh anh ®¸nh b¹i Gia LuËt Phi Hång %s, lÊy l¹i tro cèt cña D­¬ng NghiÖp!", TY_GetCaptainSafeName(), (GetMissionV(this.mv_02) == eDifType.HARD and "(Anh Hïng)") or "(Th­êng)");
+			strMsg = format("Chóc mõng %s thèng lÜnh giang hå tinh anh ®¸nh b¹i Gia LuËt Phi Hång %s, lÊy l¹i tro cèt cña D­¬ng NghiÖp!", TY_GetCaptainSafeName(), (GetMissionV(this.mv_02) == eDifType.HARD and "(Hero)") or "(Normal)");
 		end
 		
 		local nHaveNewRoute = TY_CheckTeamHaveNewRoute();
@@ -840,8 +840,8 @@ function TY_CheckAndCostItem(szNpcName, nMSType, nDifType, bOnlyCheck)
 		return 0;
 	end
 	local tDifName = {
-		[eDifType.NORMAL] = "Th­êng",
-		[eDifType.HARD] = "Anh hïng",
+		[eDifType.NORMAL] = "Common",
+		[eDifType.HARD] = "Hero",
 	}
 	local tMSName = {
 		[eMSName.FOREST] = "Ph¹n Thiªn L©m",

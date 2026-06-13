@@ -13,7 +13,7 @@ Include("\\script\\lib\\writelog.lua")
 function OnUse()
 	Say("B¹n muèn dïng <color=yellow>Long HuyÕt hoµn<color>? B¹n sÏ lËp tøc ®¹t cÊp 73.",
 		2,
-		"§­îc/use_longxue_wan",
+		"Yes/use_longxue_wan",
 		"Kh«ng sö dông/cancel_dialog")
 end;
 

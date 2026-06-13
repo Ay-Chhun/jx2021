@@ -25,13 +25,13 @@ function OnUse(nItem)
 		local szItemName = GetItemName(v[1], v[2], v[3]);
 		tinsert(tbSay.sel, {szItemName, format("#ExchangeSYKT('%s', %d, %d)", szItemName, nItem, i)});
 	end
-	tinsert(tbSay.sel, {"Ra khái","nothing"});
+	tinsert(tbSay.sel, {"Exit","nothing"});
 	temp_Talk(tbSay);
 end
 
 function ExchangeSYKT(szItemName, nItem, nIndex)
 	Say(format("B¹n ch¾c ch¾n muèn ®æi <color=gold>%s<color> kh«ng?", szItemName), 2,
-		format("§ång ý/#ExchangeSYKT_sure('%s', %d, %d)", szItemName, nItem, nIndex), "Hñy bá/nothing")
+		format("Agree/#ExchangeSYKT_sure('%s', %d, %d)", szItemName, nItem, nIndex), "Cancel/nothing")
 end
 
 function ExchangeSYKT_sure(szItemName, nItem, nIndex)

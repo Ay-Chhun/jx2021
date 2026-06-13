@@ -9,7 +9,7 @@ tPeachTree = { --
 	nEndDate = 20301230, --»î¶¯½áÊøÊ±¼ä
 	nCheckRoute = 0,  --ÊÇ·ñÒª¼ÓÈëÁ÷ÅÉ
 	strNpcMod = "§µo Hoa thô",  --NpcÄ£°å
-	strNpcName = "Nh¸nh §µo", --npcÃû×Ö
+	strNpcName = "Peach Branch", --npcÃû×Ö
 	nCampType = 1,   --¶Ô»°npc»¹ÊÇÕ½¶·npc
 	nNeedRoom = 0,   --Èç¹ûÊÇ¶Ô»°npc£¬ĞèÒªÅĞ¶Ï±³°ü¿Õ¼ä£¨¸ù¾İ½±Àø¶ø¶¨£©
 	nNeedWeight = 0, --Èç¹ûÊÇ¶Ô»°npc£¬ĞèÒªÅĞ¶Ï±³°ü¸ºÖØ£¨¸ù¾İ½±Àø¶ø¶¨£©
@@ -88,7 +88,7 @@ end
 	
 
 function tPeachTree:giveTalkAward()
-	gf_AddItemEx({2,96,130,1,4},"H¹t gièng c©y ®µo");
+	gf_AddItemEx({2,96,130,1,4},"Peach tree seed");
 end
 	
 tTaskId = {928,947}
@@ -108,6 +108,6 @@ function tPeachTree:onTalk()
 	if nHasTask ~= 1 then
 			return 0;
 	end
-	if gf_Judge_Room_Weight(1,10,"Nh¸nh §µo") ~= 1 then return 0; end
+	if gf_Judge_Room_Weight(1,10,"Peach Branch") ~= 1 then return 0; end
 	tPeachTree:talkCallBack(); 
 end

@@ -49,7 +49,7 @@ function OnUse(nItem)
 		return
 	end
 	if GetItemCount(2, 0, 351) < VET_201211_NEED_LUSHUI then
-		Talk(1,"","Kh«ng ®ñ lé thñy");
+		Talk(1,"","Not enough dew");
 		return
 	end
 	local nNpcTempIndex = VET_201211_DECORATE_TREE_TASK:GetTask(VET_201211_DECORATE_TREE_TASK.npcIndex);

@@ -2,9 +2,9 @@
 Include("\\script\\lib\\globalfunctions.lua")
 
 tItemHaoXiaRecipe = {
-	[30941] = {{"Vi™m Linh BË", {2, 1, 30676, 30}}, {"Linh Thi’t", {2, 1, 30681, 60}},	{"Hµo Hi÷p L÷nh", {2, 95, 2084, 400}},	{" Kim ", 300}},
-	[30942] = {{"Ma Lang Gi∏p", {2, 1, 30677, 30}}, {"Linh Thi’t", {2, 1, 30681, 60}},	{"Hµo Hi÷p L÷nh", {2, 95, 2084, 400}},	{" Kim ", 300}},
-	[30943] = {{"ßﬁa Long Gi∏p", {2, 1, 30678, 30}}, {"Linh Thi’t", {2, 1, 30681, 60}},	{"Hµo Hi÷p L÷nh", {2, 95, 2084, 400}},	{" Kim ", 300}},
+	[30941] = {{"Yanling Cloth", {2, 1, 30676, 30}}, {"Spirit Iron", {2, 1, 30681, 60}},	{"Hµo Hi÷p L÷nh", {2, 95, 2084, 400}},	{" Kim ", 300}},
+	[30942] = {{"Ma Lang Gi∏p", {2, 1, 30677, 30}}, {"Spirit Iron", {2, 1, 30681, 60}},	{"Hµo Hi÷p L÷nh", {2, 95, 2084, 400}},	{" Kim ", 300}},
+	[30943] = {{"ßﬁa Long Gi∏p", {2, 1, 30678, 30}}, {"Spirit Iron", {2, 1, 30681, 60}},	{"Hµo Hi÷p L÷nh", {2, 95, 2084, 400}},	{" Kim ", 300}},
 }
 
 tItemWuXiaHaoXia = {

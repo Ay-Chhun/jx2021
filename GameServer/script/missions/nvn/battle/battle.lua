@@ -20,7 +20,7 @@ phaseTeamFight_idle.onTimeout = phaseTeamFight_idle.onFinish;
 phaseTeamFight_waiting = {
 	maxsecond = 30,
 	guage = {
-		msg = "§îi më",
+		msg = "Waiting to open",
 		time = 30,
 		cyc = 0,
 		id = 1,
@@ -167,12 +167,12 @@ function phaseTeamFight_fighting:onFinish(result)
 	SetMissionV(MV_MISSION_STATUS, 1);
 	phaseBase.onFinish(self)
 	if result == 0 then
-		this:Msg2MSAll("Hai bªn hßa");
+		this:Msg2MSAll("Both sides draw");
 		return
 	elseif result == 1 then
-		this:Msg2MSAll(CampName[1].."ChiÕn th¾ng!");
+		this:Msg2MSAll(CampName[1].."Victory!");
 	else
-		this:Msg2MSAll(CampName[2].."ChiÕn th¾ng!");
+		this:Msg2MSAll(CampName[2].."Victory!");
 	end
 	missionAward(result)
 	if self.second < 60 then
@@ -265,7 +265,7 @@ BattleMission_TeamFight.msOption.OnPlayerLeave = function(self, nCamp)
 		for nCamp = 1, 2 do
 			for mv = mi[nCamp], ma[nCamp] do
 				if GetMissionV(mv) == PlayerIndex then
-					this:Msg2MSAll(format("%s rêi khái ®Êu tr­êng!",GetName()));
+					this:Msg2MSAll(format("%s left the arena!",GetName()));
 					SetMissionV(mv, 0);
 					SetMissionV(MV_TEAM_ALIVE[nCamp], GetMissionV(MV_TEAM_ALIVE[nCamp]) - 1);
 					gf_ModifyTask(TASKID_3V3_ESCAPE_DAILY, 1);
@@ -436,7 +436,7 @@ function this.info(n,p)
 	DebugOutput(format("Ng­êi ch¬i ®èi chiÕn hiÖn t¹i: %s(%d) vs %s(%d)", GetName(f1), f1, GetName(f2), f2));
 
 	for nCamp = 1, 2 do
-		DebugOutput("§éi"..nCamp)
+		DebugOutput("Team"..nCamp)
 		for i = mi[nCamp], ma[nCamp] do
 			local p = GetMissionV(i)
 			DebugOutput(format("  %d : %s(%d)", i, GetName(p), p));
@@ -454,16 +454,16 @@ end
 
 
 g_tRankScore = {
-	[0] = {0		 ,	"NhÊt Vâ Gi¶", 67, 1 },
-	[1] = {2000    ,"NhÞ Vâ SÜ", 67, 2 },
-	[2] = {6000    ,"Tam Vâ S­", 67, 3 },
-	[3] = {10000   ,"Tø Vâ HiÖp", 67, 4 },
+	[0] = {0		 ,	"First Martial Apprentice", 67, 1 },
+	[1] = {2000    ,"Second Martial Warrior", 67, 2 },
+	[2] = {6000    ,"Third Martial Master", 67, 3 },
+	[3] = {10000   ,"Fourth Martial Hero", 67, 4 },
 	[4] = {14000   ,"Ngò Vâ T«ng", 67, 5 },
-	[5] = {18000   ,"Lôc Vâ Linh", 67, 6 },
+	[5] = {18000   ,"Sixth Martial Spirit", 67, 6 },
 	[6] = {22000   ,"ThÊt Vâ Hoµng", 67, 7 },
-	[7] = {28000   ,"B¸t Vâ Quû", 67, 8 },
+	[7] = {28000   ,"Eighth Martial Demon", 67, 8 },
 	[8] = {35000   ,"Cöu Vâ T«n", 67, 9 },
-	[9] = {60000   ,"Vâ Th¸nh"	, 67, 10},
+	[9] = {60000   ,"Martial Saint"	, 67, 10},
 }
 function addNvnScore(nScore)
 	local newScore = GetTask(TASKID_NVN_SCORE) + nScore;
@@ -573,7 +573,7 @@ g_tGodState	= {
 	{
 		{9910, "state_life_max_percent_add",	100,  "Giíi h¹n m¸u t¨ng %d%%"},
 		{9916, "state_neili_max_percent_add",    100,  "T¨ng néi lùc %d%%"};
-		tInfo	= {"Vâ L©m Minh Quang Huy", 15, "Duy tr× %d phót"},
+		tInfo	= {"Wulin Alliance Glory", 15, "Lasts %d minutes"},
 	},
 }
 g_tGodState2	= {
@@ -583,7 +583,7 @@ g_tGodState2	= {
 		{9913, "state_p_attack_percent_add",   18,  "T¨ng ngo¹i c«ng %d%%"},
 		{9914, "state_m_attack_percent_add",   18,  "T¨ng néi c«ng %d%%"},
 		{9915, "state_burst_enhance_rate",     40,  "T¨ng tèc ®é xuÊt chiªu %d%%"};
-		tInfo	= {"Vâ L©m Minh Quang Huy", 15, "Duy tr× %d phót"},
+		tInfo	= {"Wulin Alliance Glory", 15, "Lasts %d minutes"},
 	},
 }
 if _JX2WZ == 1 then
@@ -594,7 +594,7 @@ g_tGodState2	= {
 		{9913, "state_p_attack_percent_add",   18,  "T¨ng ngo¹i c«ng %d%%"},
 		{9914, "state_m_attack_percent_add",   18,  "T¨ng néi c«ng %d%%"},
 		{9915, "state_burst_enhance_rate",     25,  "T¨ng tèc ®é xuÊt chiªu %d%%"};
-		tInfo	= {"Vâ L©m Minh Quang Huy", 15, "Duy tr× %d phót"},
+		tInfo	= {"Wulin Alliance Glory", 15, "Lasts %d minutes"},
 	},
 }
 end
@@ -787,7 +787,7 @@ function missionAward_3v3(result)
 			GetTask(TASKID_3V3_WIN_ROUND_DAILY), GetTask(TASKID_3V3_TOTAL_ROUND_DAILY),
 			GetTask(TASKID_3V3_SCORE_DAILY), GetTask(TASKID_3V3_SCORE_TOTAL)))
 	end
-	local msg = "<enter/>Bªn th¾ng <enter/><color=green>"..strWinRoute.."<color><enter/> Bªn b¹i <enter/><color=red>"..strLoseRoute.."<color><enter/>";
+	local msg = "<enter/>Winning side <enter/><color=green>"..strWinRoute.."<color><enter/> Bªn b¹i <enter/><color=red>"..strLoseRoute.."<color><enter/>";
 	DebugOutput(msg)
 	BattleMission_TeamFight.msCamp:reflash(0);
 	local tPlayers = BattleMission_TeamFight.msCamp.players;

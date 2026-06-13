@@ -14,7 +14,7 @@ tCityWarOutPos =
 }
 
 function main()
-	Say("§i hay ë, tïy ng­¬i quyÕt ®Þnh!",2,"§­a ta ra ngoµi/go_outside", "§Ó ta suy nghÜ ®·!/no_say")
+	Say("§i hay ë, tïy ng­¬i quyÕt ®Þnh!",2,"Take me outside/go_outside", "Let me think about it!/no_say")
 end
 
 function go_outside()
@@ -37,13 +37,13 @@ function go_outside()
 	if nTrigger == 0 then					-- À´Ì½¼àµÄ
 		local selTab = 
 		{
-			"BiÖn Kinh/#go_out_safe(1)",
+			"Bianjing/#go_out_safe(1)",
 			"Thµnh §«/#go_out_safe(2)",
 			"TuyÒn Ch©u/#go_out_safe(3)",
-			"§¹i Lý/#go_out_safe(4)",
+			"Dali/#go_out_safe(4)",
 			"D­¬ng Ch©u/#go_out_safe(5)",
 			"T­¬ng D­¬ng/#go_out_safe(6)",
-			"Hñy bá/no_say"
+			"Cancel/no_say"
 		}
 		Say("<color=green>LÝnh g¸c lao<color>: Ta cã thÓ ®­a ng­¬i ®Õn nh÷ng n¬i sau: ", getn(selTab), selTab)
 	elseif  nStep > CITYWAR_MAX_STEP then	-- ±»×¥½øÀ´µÄÒÑ¾­¹»Ê±¼äµÄ
@@ -58,7 +58,7 @@ function chose_go_out()
 	local nValue = GetPKValue()
 	local nPay = nValue * 80
 	if nValue > 0 then
-		Say("<color=green>LÝnh g¸c lao<color>: ®iÓm PK cña ng­¬i hiÖn lµ "..nValue..", ®­a cho ta "..nPay.." l­îng vµng h¹ ®iÓm PK xuèng cßn 0, sao h¶?",
+		Say("<color=green>LÝnh g¸c lao<color>: ®iÓm PK cña ng­¬i hiÖn lµ "..nValue..", give me"..nPay.." l­îng vµng h¹ ®iÓm PK xuèng cßn 0, sao h¶?",
 			2,
 			"Ra ngôc vµ tÈy ®iÓm PK/chose_go_out_xi",
 			"Ta kh«ng cÇn!/no_say")
@@ -71,13 +71,13 @@ end
 function chose_go_out_xi()
 	local selTab = 
 	{
-		"BiÖn Kinh/#go_out_safe_xi(1)",
+		"Bianjing/#go_out_safe_xi(1)",
 		"Thµnh §«/#go_out_safe_xi(2)",
 		"TuyÒn Ch©u/#go_out_safe_xi(3)",
-		"§¹i Lý/#go_out_safe_xi(4)",
+		"Dali/#go_out_safe_xi(4)",
 		"D­¬ng Ch©u/#go_out_safe_xi(5)",
 		"T­¬ng D­¬ng/#go_out_safe_xi(6)",
-		"Hñy bá/no_say"
+		"Cancel/no_say"
 	}
 	Say("Ng­¬i ®· chän ra ngôc vµ tÈy ®iÓm PK. Ta cã thÓ ®­a ng­¬i ®Õn nh÷ng n¬i sau: ", getn(selTab), selTab)
 end
@@ -85,13 +85,13 @@ end
 function chose_go_out_buxi()
 	local selTab = 
 	{
-		"BiÖn Kinh/#go_out_safe(1)",
+		"Bianjing/#go_out_safe(1)",
 		"Thµnh §«/#go_out_safe(2)",
 		"TuyÒn Ch©u/#go_out_safe(3)",
-		"§¹i Lý/#go_out_safe(4)",
+		"Dali/#go_out_safe(4)",
 		"D­¬ng Ch©u/#go_out_safe(5)",
 		"T­¬ng D­¬ng/#go_out_safe(6)",
-		"Hñy bá/no_say"
+		"Cancel/no_say"
 	}
 	Say("Ta cã thÓ ®­a ng­¬i ®Õn nh÷ng n¬i sau: ", getn(selTab), selTab)
 end
@@ -126,7 +126,7 @@ function want_bail_xi()
 		"X¸c nhËn b¶o l·nh, ®Õn §¹i LÝ/#go_outside_yes(4,"..nPay..",1)",
 		"X¸c nhËn b¶o l·nh, ®Õn D­¬ng Ch©u/#go_outside_yes(5,"..nPay..",1)",
 		"X¸c nhËn b¶o l·nh, ®Õn T­¬ng D­¬ng/#go_outside_yes(6,"..nPay..",1)",
-		"Hñy bá/no_say",
+		"Cancel/no_say",
 	}
 	Say("Ch­a ®Õn h¹n ra lao, giê muèn ®i ph¶i ®ãng tiÒn b¶o l·nh <color=yellow>"..nArrestPay.." l­îng<color> vµ (ngÉu nhiªn) "..nValue.." l­îng tÈy ®iÓm PK, sao h¶?",getn(selTab),selTab)
 end
@@ -145,13 +145,13 @@ function want_bail_buxi()
 		"X¸c nhËn b¶o l·nh, ®Õn §¹i LÝ/#go_outside_yes(4,"..nPay..",0)",
 		"X¸c nhËn b¶o l·nh, ®Õn D­¬ng Ch©u/#go_outside_yes(5,"..nPay..",0)",
 		"X¸c nhËn b¶o l·nh, ®Õn T­¬ng D­¬ng/#go_outside_yes(6,"..nPay..",0)",
-		"Hñy bá/no_say",
+		"Cancel/no_say",
 	}
 	
 	if nPay == 0 then
 		Say("Ch­a ®Õn h¹n ra lao, giê muèn ®i ph¶i ®ãng tiÒn b¶o l·nh. Tuy nhiªn khi ng­¬i bÞ truy n· kh«ng ®ñ 70 cÊp, kh«ng cÇn n¹p tiÒn b¶o l·nh",getn(selTab),selTab)
 	else
-		Say("Ch­a ®Õn h¹n ra lao, giê muèn ®i ph¶i ®ãng tiÒn b¶o l·nh <color=yellow>"..nPay.." l­îng<color>, sao h¶?",getn(selTab),selTab)
+		Say("Ch­a ®Õn h¹n ra lao, giê muèn ®i ph¶i ®ãng tiÒn b¶o l·nh <color=yellow>"..nPay.." amount<color>, all right?",getn(selTab),selTab)
 	end
 end;
 
@@ -208,7 +208,7 @@ function go_out_safe_xi(index)
 			SetTongAttr("TONG_MONEY", szTong, nMoney)
 		end
 	else
-		Talk(1,"","Kh«ng tiÒn mµ ®ßi tÈy PK! Lµm ta mÊt thêi gian qu¸!")
+		Talk(1,"","No money yet you demand to clear PK! You are wasting my time!")
 	end
 end
 

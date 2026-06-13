@@ -44,10 +44,10 @@ function Add_PopNpc()		--ÉíÍûnpc
 		{"Lý Ng¹o Thiªn", "Danh Väng Th­¬ng Nh©n-Lý Ng¹o Thiªn", 6200, 1443, 2597},
 		{"T¸t Giµ Minh Phñ", "Danh Väng Th­¬ng Nh©n-T¸t Giµ Minh Phñ", 6100, 1594, 3683},
 		{"TXBJ_TYET", "Thiªn ¢m ƒc §å", 6400, 1831, 3392},
-		{"FENGXINZI", "Phong TÝn Tö në ré", 6300, 1407, 3128, "\\script\\task\\npc\\Ê¢¿ªµÄ·çÐÅ×Ó.lua"},
+		{"FENGXINZI", "Fengxinzi in Full Bloom", 6300, 1407, 3128, "\\script\\task\\npc\\Ê¢¿ªµÄ·çÐÅ×Ó.lua"},
 		--{"Zhuxiaobai", "ÖíÐ¡°×", 6400, 1860, 3509},
-		{"tongmaguan", "§ång M· Qu¸n", 6400, 1632, 3180},
-		{"guojingan", "Qu¸ch TÜnh An", 6400, 1840, 3212},
+		{"tongmaguan", "Dong Ma Quan", 6400, 1632, 3180},
+		{"guojingan", "Quach Tinh An", 6400, 1840, 3212},
 		{"yuantongdashi", "Viªn Th«ng §¹i S­", 6400, 1640, 3518},
 	});
 
@@ -86,8 +86,8 @@ function AddPVPNpc()
 		{"§o¹n Hßa HuyÒn", "§o¹n Hßa HuyÒn", 425,1762,3205, "\\script\\missions\\yp\\dhx_npc.lua"},
 		{"C¸t Kh©m XÝch Ba", "C¸t Kh©m XÝch Ba", 425,1740,3175, "\\script\\missions\\yp\\dhx_npc.lua"},
 		{"Lý KÕ Tinh", "Lý KÕ Tinh", 425,1763,3184, "\\script\\missions\\yp\\dhx_npc.lua"},
-		{"Xa phu", "Xa Phu T©y Vùc", 425, 1744, 3204, "\\script\\missions\\yp\\cf_npc.lua"},
-		{"Xa phu Trung Nguyªn","Xa Phu Vâ L©m Minh",425,1741,3232,"\\script\\tong\\npc_chehu.lua"},
+		{"Xa phu", "Western Region Carter", 425, 1744, 3204, "\\script\\missions\\yp\\cf_npc.lua"},
+		{"Xa phu Trung Nguyªn","Wulin Alliance Coachman",425,1741,3232,"\\script\\tong\\npc_chehu.lua"},
 		{"Xa phu Trung Nguyªn","Xa phu",429,1667,2872,"\\script\\Î÷ÄÏÇø\\Ëª·çÑÂ\\npc\\npc_chefu.lua"},
 		{"Ch©n Tö §¬n hµo hoa", "TËp kÝch hµnh ®éng ", 6300, 1353, 3276, "\\script\\missions\\yp\\slymg\\npc_award.lua"},
 	});

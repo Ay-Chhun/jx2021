@@ -24,13 +24,13 @@ DALIY_TASK_0912_PERSONAL_TASK_LIST = {
 
 --ÍÅ¶ÓÈÕ³£ÈÎÎñÁĞ±í
 DALIY_TASK_0912_TEAM_TASK_LIST = {
-    {"Truy t×m B¾c Lôc L©m LÖnh", 10, "B¾c Lôc L©m lÖnh"},
+    {"Search for the Northern Forest Token", 10, "B¾c Lôc L©m lÖnh"},
     {"Truy t×m Trôc ¶nh th­¬ng", 20, "Trôc ¶nh Th­¬ng"},
     {"Truy t×m TuyÖt T×nh Th¹ch", 20, "TuyÖt T×nh Th¹ch"},
     {"Truy t×m LÖnh Bµi Tæng Qu¶n ngo¹i viÖn", 5, "LÖnh bµi tæng qu¶n ngo¹i viÖn"},
     {"Truy t×m LÖnh Bµi Tæng qu¶n néi viÖn", 5, "LÖnh bµi tæng qu¶n néi viÖn"},
     {"Truy t×m ViÖt N÷ KiÕm", 5, "ViÖt N÷ kiÕm"},
-    {"Truy t×m Trang Chñ Kim Ên", 15, "Trang chñ kim Ên"},
+    {"Search for the Estate Owner's Golden Seal", 15, "Trang chñ kim Ên"},
     {"Truy t×m Tr­ëng L·o chØ hoµn", 20, "Tr­ëng L·o ChØ Hoµn"},
 }
 

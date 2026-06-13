@@ -32,7 +32,7 @@ function VET201104CHG(nChgSeq)
 end
 
 function VET_201104_304_MassExchange()
-	AskClientForNumber("VET_201104_304_ConfirmMassExchange", 1, 999, "Sè Bã Hoa?")
+	AskClientForNumber("VET_201104_304_ConfirmMassExchange", 1, 999, "How many Flower Bouquets?")
 end
 
 function VET_201104_304_ConfirmMassExchange(nCount)
@@ -223,7 +223,7 @@ function VET_201104_Give_FireCracker()
 	end
 	
 	if nDate > 110529 then
-		Talk(1,"","§· hÕt thêi h¹n sù kiÖn!")
+		Talk(1,"","The event has expired!")
 		return
 	end
 	
@@ -249,7 +249,7 @@ function VET_201104_give_Winflower()
 	local nDate = tonumber(date("%y%m%d"))
 	
 	if nDate < 110520 or nDate > 110616 then
-		Talk(1,"","§· hÕt thêi h¹n sù kiÖn!")
+		Talk(1,"","The event has expired!")
 		return
 	end
 	

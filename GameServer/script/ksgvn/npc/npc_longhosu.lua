@@ -1,7 +1,7 @@
 Import("\\script\\ksgvn\\lib.lua")
 Include("\\script\\ksgvn\\event\\bhta\\bhta.lua")
 
-g_szNpcName = "<color=green>Long Hæ Sø<color>: "
+g_szNpcName = "<color=green>Dragon Tiger Envoy<color>:"
 
 function main()
     local tSay = {

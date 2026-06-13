@@ -1,5 +1,5 @@
 
-szNPCName = "<color=green>Chñ Th­¬ng Héi: <color>"
+szNPCName = "<color=green>Chamber of Commerce Head: <color>"
 szLogTitle = "NHIEM VU LAM GIAU"
 function NhiemVuLamGiau_Nhan()
 	if gf_GetTaskBit(TSK_LAMGIAU, 12) == 1 then

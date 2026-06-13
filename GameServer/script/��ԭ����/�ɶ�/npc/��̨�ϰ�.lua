@@ -50,8 +50,8 @@ function SelectGameStyle()
 		"L«i ®µi ®Æt c­îc/#SearchValidRoom(5)",
 		--"»ñµÃ²Î¼Ó¹¥³ÇÕ½×Ê¸ñ/talk_to_npc",
 		"Tranh ®o¹t t­ c¸ch c«ng thµnh/siege_qualification",
-		"ThuyÕt minh quy t¾c/GameRuleTalk",
-		"Rêi khái/OnCancel_Talk"
+		"Explain the rules/GameRuleTalk",
+		"Leave/OnCancel_Talk"
 		};
 		
 	Say("<color=green>Chñ l«i ®µi<color>: L«i ®µi lµ n¬i c¸c anh hïng h¶o h¸n tû vâ, lo¹i h×nh thi ®Êu chia thµnh 4 lo¹i <color=yellow>§¬n ®Êu l«i ®µi<color>, <color=yellow>Tæ ®éi ®èi chiÕn<color>, <color=yellow>§¬n ®Êu hçn chiÕn<color> vµ <color=yellow>Tæ ®éi hçn chiÕn<color>. Xin h·y chän h×nh thøc thi ®Êu: ",
@@ -90,7 +90,7 @@ local nMapId = GetWorldPos();
                 szSay = szSay..","..format("%q", MapTab[index][3].."/#OnChanceRoom("..index..")");
             end;
         end;
-        szSay = szSay..","..format("%q", "Rêi khái/OnCancel_Talk")..")";
+        szSay = szSay..","..format("%q", "Leave/OnCancel_Talk")..")";
         dostring(szSay);
     elseif room_num > MAX_ROOM_COUNT then
         ErrorMsg(12);
@@ -134,13 +134,13 @@ local nMapId = GetWorldPos();
    			SubWorld = SubWorldID2Idx(SingleTeamMapTab[i][1]);
    			if SubWorld ~= -1 then
    				nMapState = GetMissionV(TEAM_GAME_STATE);
-   				local strTemp = "[Gi¶i ®Æt c­îc]";
+   				local strTemp = "[Cancel betting]";
 					if GetMissionV(MS_YAJING_NUM) <= 0 then
 						strTemp = "";
 					end
    				--³¡µØÃ»ÓÐÈË
    				if nMapState == 0 then
-   					szSay = szSay..","..format("%q", SingleTeamMapTab[i][3].."(Tr¹ng th¸i: bá trèng)/#OpenSingleTeamRoomRequest("..i..")");
+   					szSay = szSay..","..format("%q", SingleTeamMapTab[i][3].."(Status: empty)/#OpenSingleTeamRoomRequest("..i..")");
    				elseif nMapState == 1 then	
    					--ÒÑÓÐÁ½Ö§¶ÓÎé
    					if GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,1) > 0 and GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,2) > 0 then
@@ -156,7 +156,7 @@ local nMapId = GetWorldPos();
    							nTeamSize_2 = gf_GetTeamSize();
    						end
    						PlayerIndex = OldPlayer;
-   						szSay = szSay..","..format("%q", strTemp..SingleTeamMapTab[i][3].."(Tr¹ng th¸i: §îi khai chiÕn, hai phe ®èi chiÕn lµ ®éi "..nCaptainName_1.." vµ ®éi "..nCaptainName_2.." )/#OpenSingleTeamRoom("..i..")");
+   						szSay = szSay..","..format("%q", strTemp..SingleTeamMapTab[i][3].."(Tr¹ng th¸i: §îi khai chiÕn, hai phe ®èi chiÕn lµ ®éi "..nCaptainName_1.." and team"..nCaptainName_2.." )/#OpenSingleTeamRoom("..i..")");
    					--ÒÑÓÐÒ»Ö§¶ÓÎé£¬µÈ´ýÆäËû¶ÓÎé¼ÓÈë
    					elseif GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,1) > 0 or GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,2) > 0 then
    						if GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,1) > 0 then
@@ -171,7 +171,7 @@ local nMapId = GetWorldPos();
    							nTeamSize_1 = gf_GetTeamSize();
    						end
    						PlayerIndex = OldPlayer;
-   						szSay = szSay..","..format("%q", strTemp..SingleTeamMapTab[i][3].."(Tr¹ng th¸i: §îi thi ®Êu, tin tøc ®éi ngò:"..nCaptainName_1..", cã "..nTeamSize_1.." ng­êi.)/#OpenSingleTeamRoom("..i..")");
+   						szSay = szSay..","..format("%q", strTemp..SingleTeamMapTab[i][3].."(Tr¹ng th¸i: §îi thi ®Êu, tin tøc ®éi ngò:"..nCaptainName_1..", has"..nTeamSize_1.." ng­êi.)/#OpenSingleTeamRoom("..i..")");
    					end
    				--±ÈÈüÒÑ¾­¿ªÊ¼
    				elseif nMapState == 2 then
@@ -187,15 +187,15 @@ local nMapId = GetWorldPos();
    						nTeamSize_2 = gf_GetTeamSize();
    					end
    					PlayerIndex = OldPlayer;
-   					szSay = szSay..","..format("%q", strTemp..SingleTeamMapTab[i][3].."(Tr¹ng th¸i: §ang thi ®Êu, hai phe ®èi chiÕn lµ ®éi "..nCaptainName_1.." vµ ®éi "..nCaptainName_2.." )/#OpenSingleTeamRoom("..i..")");
+   					szSay = szSay..","..format("%q", strTemp..SingleTeamMapTab[i][3].."(Tr¹ng th¸i: §ang thi ®Êu, hai phe ®èi chiÕn lµ ®éi "..nCaptainName_1.." and team"..nCaptainName_2.." )/#OpenSingleTeamRoom("..i..")");
    				elseif nMapState == 3 then
-   					szSay = szSay..","..format("%q", strTemp..SingleTeamMapTab[i][3].."(Tr¹ng th¸i: Thi ®Êu kÕt thóc)/#GameOverTalk");
+   					szSay = szSay..","..format("%q", strTemp..SingleTeamMapTab[i][3].."(Status: Contest ended)/#GameOverTalk");
    				end
    			end   			
    			SubWorld = OldWorld;	   					
    		end 			
    	end
-   	szSay = szSay..","..format("%q", "Rêi khái/OnCancel_Talk")..")";
+   	szSay = szSay..","..format("%q", "Leave/OnCancel_Talk")..")";
    	dostring(szSay);
 		return
 	end
@@ -233,7 +233,7 @@ local nMapId = GetWorldPos();
     	SubWorld = SubWorldID2Idx(MultiMapTab[multi_room_tab[i]][1]);
     	
     	if SubWorld <= 0 then
-				WriteLog("[QuÇn hïng chiÕn]T×nh h×nh ®Êu tr­êng hiÖn t¹i SubWorld b¸o lçi, b¸o lçi nMapIndex lµ"..MultiMapTab[multi_room_tab[i]][1]..", SubWorld lµ"..SubWorld..".");
+				WriteLog("[QuÇn hïng chiÕn]T×nh h×nh ®Êu tr­êng hiÖn t¹i SubWorld b¸o lçi, b¸o lçi nMapIndex lµ"..MultiMapTab[multi_room_tab[i]][1]..", SubWorld is"..SubWorld..".");
 				SubWorld = OldWorld;
 				return 0
 			end
@@ -271,7 +271,7 @@ local nMapId = GetWorldPos();
     		SubWorld = SubWorldID2Idx(MultiMapTab[multi_room_tab[i]][1]);
     		
     		if SubWorld <= 0 then
-					WriteLog("[QuÇn hïng chiÕn]T×nh h×nh ®Êu tr­êng hiÖn t¹i SubWorld b¸o lçi, b¸o lçi nMapIndex lµ"..MultiMapTab[multi_room_tab[i]][1]..", SubWorld lµ"..SubWorld..".");
+					WriteLog("[QuÇn hïng chiÕn]T×nh h×nh ®Êu tr­êng hiÖn t¹i SubWorld b¸o lçi, b¸o lçi nMapIndex lµ"..MultiMapTab[multi_room_tab[i]][1]..", SubWorld is"..SubWorld..".");
 					SubWorld = OldWorld;
 					return 0
 				end
@@ -301,7 +301,7 @@ local nMapId = GetWorldPos();
     		SubWorld = SubWorldID2Idx(MultiMapTab[hundred_room_tab[i]][1]);
     		
     		if SubWorld <= 0 then
-						WriteLog("[QuÇn hïng chiÕn]Khi ®èi tho¹i B¸ch nh©n ®¹i l«i, cöa sæ tïy chän SubWorld b¸o lçi, b¸o lçi nMapIndex lµ"..MultiMapTab[hundred_room_tab[i]][1]..", SubWorld lµ"..SubWorld..".");
+						WriteLog("[QuÇn hïng chiÕn]Khi ®èi tho¹i B¸ch nh©n ®¹i l«i, cöa sæ tïy chän SubWorld b¸o lçi, b¸o lçi nMapIndex lµ"..MultiMapTab[hundred_room_tab[i]][1]..", SubWorld is"..SubWorld..".");
 						SubWorld = OldSubWorld;
 						return 0
 				end
@@ -315,9 +315,9 @@ local nMapId = GetWorldPos();
     			szSay = szSay..","..format("%q", MultiMapTab[hundred_room_tab[i]][8].."(Tr¹ng th¸i hiÖn t¹i: Ch­a thi ®Êu)/MapPreparingTalk");
     		elseif nMapState == 1 then
     			if nGameType == 1 or nGameType == 2 then 
-    				szSay = szSay..","..format("%q", MultiMapTab[hundred_room_tab[i]][8].."(Tr¹ng th¸i hiÖn t¹i: Ch­a khai trËn. Sè ng­¬i tham dù:"..nFighterNum.." :"..MAX_MULTIMAP_FIGTHER_NUM.." Sè kh¸n gi¶:"..nAudienceNum..":"..MAX_MULTIMAP_AUDIENCE_NUM..")/#RequestGame("..hundred_room_tab[i]..")");
+    				szSay = szSay..","..format("%q", MultiMapTab[hundred_room_tab[i]][8].."(Tr¹ng th¸i hiÖn t¹i: Ch­a khai trËn. Sè ng­¬i tham dù:"..nFighterNum.." :"..MAX_MULTIMAP_FIGTHER_NUM.." Number of spectators:"..nAudienceNum..":"..MAX_MULTIMAP_AUDIENCE_NUM..")/#RequestGame("..hundred_room_tab[i]..")");
     			else
-    				szSay = szSay..","..format("%q", MultiMapTab[hundred_room_tab[i]][3].."(Tr¹ng th¸i hiÖn t¹i: Ch­a khai trËn. Sè ng­¬i tham dù:"..nFighterNum.." :"..MAX_MULTIMAP_FIGTHER_NUM.." Sè kh¸n gi¶:"..nAudienceNum..":"..MAX_MULTIMAP_AUDIENCE_NUM..")/#RequestGame("..hundred_room_tab[i]..")");
+    				szSay = szSay..","..format("%q", MultiMapTab[hundred_room_tab[i]][3].."(Tr¹ng th¸i hiÖn t¹i: Ch­a khai trËn. Sè ng­¬i tham dù:"..nFighterNum.." :"..MAX_MULTIMAP_FIGTHER_NUM.." Number of spectators:"..nAudienceNum..":"..MAX_MULTIMAP_AUDIENCE_NUM..")/#RequestGame("..hundred_room_tab[i]..")");
     			end
     		elseif nMapState >= 2 then
     			if nGameType == 1 or nGameType == 2 then
@@ -335,7 +335,7 @@ local nMapId = GetWorldPos();
     		SubWorld = SubWorldID2Idx(MultiMapTab[multiroom_book_tab[i]][1]);
     		
     		if SubWorld <= 0 then
-						WriteLog("[QuÇn hïng chiÕn]Th«ng th­êng, khi ®èi tho¹i QuÇn hïng chiÕn, cöa sæ tïy chän SubWorld b¸o lçi, b¸o lçi nMapIndex lµ"..MultiMapTab[multiroom_book_tab[i]][1]..", SubWorld lµ"..SubWorld..".");
+						WriteLog("[QuÇn hïng chiÕn]Th«ng th­êng, khi ®èi tho¹i QuÇn hïng chiÕn, cöa sæ tïy chän SubWorld b¸o lçi, b¸o lçi nMapIndex lµ"..MultiMapTab[multiroom_book_tab[i]][1]..", SubWorld is"..SubWorld..".");
 						SubWorld = OldSubWorld;
 						return 0
 				end
@@ -347,7 +347,7 @@ local nMapId = GetWorldPos();
     		if nMapState == 0 then
     			szSay = szSay..","..format("%q", MultiMapTab[multiroom_book_tab[i]][3].."(Tr¹ng th¸i hiÖn t¹i: Ch­a thi ®Êu)/#RequestGame("..multiroom_book_tab[i]..")");
     		elseif nMapState == 1 then
-    			szSay = szSay..","..format("%q", MultiMapTab[multiroom_book_tab[i]][3].."(Tr¹ng th¸i hiÖn t¹i: Ch­a khai trËn. Sè ng­¬i tham dù:"..nFighterNum.." :"..MAX_MULTIMAP_FIGTHER_NUM.." Sè kh¸n gi¶:"..nAudienceNum..":"..MAX_MULTIMAP_AUDIENCE_NUM..")/#RequestGame("..multiroom_book_tab[i]..")");
+    			szSay = szSay..","..format("%q", MultiMapTab[multiroom_book_tab[i]][3].."(Tr¹ng th¸i hiÖn t¹i: Ch­a khai trËn. Sè ng­¬i tham dù:"..nFighterNum.." :"..MAX_MULTIMAP_FIGTHER_NUM.." Number of spectators:"..nAudienceNum..":"..MAX_MULTIMAP_AUDIENCE_NUM..")/#RequestGame("..multiroom_book_tab[i]..")");
     		elseif nMapState >= 2 then
     			szSay = szSay..","..format("%q", MultiMapTab[multiroom_book_tab[i]][3].."(Tr¹ng th¸i hiÖn t¹i: §ang tiÕn hµnh thi ®Êu)/#RequestGame("..multiroom_book_tab[i]..")");
     		end
@@ -355,7 +355,7 @@ local nMapId = GetWorldPos();
     	end
     end
  
-    szSay = szSay..","..format("%q", "Rêi khái/OnCancel_Talk")..")";
+    szSay = szSay..","..format("%q", "Leave/OnCancel_Talk")..")";
     dostring(szSay);
 		return
 	end
@@ -395,7 +395,7 @@ local nMapId = GetWorldPos();
      		end
      	end	
      		
-     	szSay = szSay..","..format("%q", "Rêi khái/OnCancel_Talk")..")";
+     	szSay = szSay..","..format("%q", "Leave/OnCancel_Talk")..")";
      	dostring(szSay);
 		return
 	end
@@ -434,13 +434,13 @@ local nMapId = GetWorldPos();
 					SubWorld = SubWorldID2Idx(SingleTeamMapTab[i][1]);
 					if SubWorld ~= -1 then
 						nMapState = GetMissionV(TEAM_GAME_STATE);
-						local strTemp = "[Gi¶i ®Æt c­îc]";
+						local strTemp = "[Cancel betting]";
 						if GetMissionV(MS_YAJING_NUM) <= 0 then
 							strTemp = "";
 						end
 						--³¡µØÃ»ÓÐÈË
 						if nMapState == 0 then
-							szSay = szSay..","..format("%q", SingleTeamMapTab[i][3].."(Tr¹ng th¸i: bá trèng)/#OpenSingleTeamRoomRequestYJ("..i..")");
+							szSay = szSay..","..format("%q", SingleTeamMapTab[i][3].."(Status: empty)/#OpenSingleTeamRoomRequestYJ("..i..")");
 						elseif nMapState == 1 then	
 							--ÒÑÓÐÁ½Ö§¶ÓÎé
 							if GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,1) > 0 and GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,2) > 0 then
@@ -456,7 +456,7 @@ local nMapId = GetWorldPos();
 									nTeamSize_2 = gf_GetTeamSize;
 								end
 								PlayerIndex = OldPlayer;
-								szSay = szSay..","..format("%q", strTemp..SingleTeamMapTab[i][3].."(Tr¹ng th¸i: §îi khai chiÕn, hai phe ®èi chiÕn lµ ®éi "..nCaptainName_1.." vµ ®éi "..nCaptainName_2.." )/#OpenSingleTeamRoomYJ("..i..")");
+								szSay = szSay..","..format("%q", strTemp..SingleTeamMapTab[i][3].."(Tr¹ng th¸i: §îi khai chiÕn, hai phe ®èi chiÕn lµ ®éi "..nCaptainName_1.." and team"..nCaptainName_2.." )/#OpenSingleTeamRoomYJ("..i..")");
 							--ÒÑÓÐÒ»Ö§¶ÓÎé£¬µÈ´ýÆäËû¶ÓÎé¼ÓÈë
 							elseif GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,1) > 0 or GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,2) > 0 then
 								if GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,1) > 0 then
@@ -471,7 +471,7 @@ local nMapId = GetWorldPos();
 									nTeamSize_1 = gf_GetTeamSize();
 								end
 								PlayerIndex = OldPlayer;
-								szSay = szSay..","..format("%q", strTemp..SingleTeamMapTab[i][3].."(Tr¹ng th¸i: §îi thi ®Êu, tin tøc ®éi ngò:"..nCaptainName_1..", cã "..nTeamSize_1.." ng­êi.)/#OpenSingleTeamRoomYJ("..i..")");
+								szSay = szSay..","..format("%q", strTemp..SingleTeamMapTab[i][3].."(Tr¹ng th¸i: §îi thi ®Êu, tin tøc ®éi ngò:"..nCaptainName_1..", has"..nTeamSize_1.." ng­êi.)/#OpenSingleTeamRoomYJ("..i..")");
 							end
 						--±ÈÈüÒÑ¾­¿ªÊ¼
 						elseif nMapState == 2 then
@@ -487,15 +487,15 @@ local nMapId = GetWorldPos();
    								nTeamSize_2 = gf_GetTeamSize();
 							end
 							PlayerIndex = OldPlayer;
-							szSay = szSay..","..format("%q", strTemp..SingleTeamMapTab[i][3].."(Tr¹ng th¸i: §ang thi ®Êu, hai phe ®èi chiÕn lµ ®éi "..nCaptainName_1.." vµ ®éi "..nCaptainName_2.." )/#OpenSingleTeamRoomYJ("..i..")");
+							szSay = szSay..","..format("%q", strTemp..SingleTeamMapTab[i][3].."(Tr¹ng th¸i: §ang thi ®Êu, hai phe ®èi chiÕn lµ ®éi "..nCaptainName_1.." and team"..nCaptainName_2.." )/#OpenSingleTeamRoomYJ("..i..")");
 						elseif nMapState == 3 then
-							szSay = szSay..","..format("%q", strTemp..SingleTeamMapTab[i][3].."(Tr¹ng th¸i: Thi ®Êu kÕt thóc)/#GameOverTalk");
+							szSay = szSay..","..format("%q", strTemp..SingleTeamMapTab[i][3].."(Status: Contest ended)/#GameOverTalk");
 						end
 					end   			
 					SubWorld = OldWorld;	   					
 				end 			
 			end
-			szSay = szSay..","..format("%q", "Rêi khái/OnCancel_Talk")..")";
+			szSay = szSay..","..format("%q", "Leave/OnCancel_Talk")..")";
 			dostring(szSay);
 				return
 			end
@@ -503,14 +503,14 @@ end
 
 function OnChanceRoom(index)
     if (GetTaskTemp(JOINROOMINDEX)>0 and GetTaskTemp(JOINROOMINDEX)~=index) then
-        Say("Ng­¬i ®· ®Æt trËn ®Þa "..GetTaskTemp(JOINROOMINDEX)..", h·y chän vµo trËn ®Þa ®· ®Æt!",0);
+        Say("You have reserved a battle ground"..GetTaskTemp(JOINROOMINDEX)..", h·y chän vµo trËn ®Þa ®· ®Æt!",0);
     else
         SetTaskTemp(JOINROOMINDEX,index);
         OldSubWorld = SubWorld;
 	    SubWorld = SubWorldID2Idx(MapTab[GetTaskTemp(JOINROOMINDEX)][1]);
 	    ms_state = GetMissionV(MS_STATE);
 	    if (ms_state <= 0) then
-		    Say("N¬i ®©y lµ ®Êu tr­êng ®¬n ®Êu l«i ®µi cho c¸c Nh©n sÜ giang hå tham gia ®¬n ®Êu tû thÝ. HiÖn ch­a cã ®Êu thñ nµo ®¨ng ký thi ®Êu, c¸c h¹ cã høng thó kh«ng? <color=yellow>TrËn ®¬n ®Êu l«i ®µi hiÖn më miÔn phÝ, h·y chíp lÊy thêi c¬!", 3, "§­îc/OnRegister", "Quy t¾c tû vâ lµ g×?/OnHelp", "§Ó ta chuÈn bÞ thªm/OnCancel");
+		    Say("N¬i ®©y lµ ®Êu tr­êng ®¬n ®Êu l«i ®µi cho c¸c Nh©n sÜ giang hå tham gia ®¬n ®Êu tû thÝ. HiÖn ch­a cã ®Êu thñ nµo ®¨ng ký thi ®Êu, c¸c h¹ cã høng thó kh«ng? <color=yellow>TrËn ®¬n ®Êu l«i ®µi hiÖn më miÔn phÝ, h·y chíp lÊy thêi c¬!", 3, "Accept/OnRegister", "What are the duel rules?/OnHelp", "Let me prepare a bit more/OnCancel");
 	    elseif (ms_state == 1) then
 		    OnReady();
 	    elseif (ms_state == 2) then
@@ -531,7 +531,7 @@ end
 
 function OnHelp()
     SetTaskTemp(JOINROOMINDEX,0);
-	Talk(7, "",	"§¬n ®Êu l«i ®µi lµ n¬i c¸c ®¹i hiÖp cao thñ trªn giang hå tû thÝ vâ nghÖ, ph©n tµi cao thÊp. L«i ®µi lµ trËn ®Þa thi ®Êu c«ng b»ng cho hai phe tham dù!",	"Muèn tiÕn hµnh trËn tû vâ l«i ®µi cÇn ®Õn ®¨ng ký thi ®Êu víi ta!",	"Sau khi hai phe tham dù tæ ®éi, ®éi tr­ëng ®Õn b¸o danh xin tham gia thi ®Êu!",	"Do trËn ®Þa h¹n hÑp, khi mét l«i ®µi nµo ®ã ®ang tiÕn hµnh thi ®Êu th× l«i ®µi kh«ng tiÕp nhËn b¸o danh!",	"B¸o danh thµnh c«ng, hai phe b¾t ®Çu chuÈn bÞ thi ®Êu. Thêi gian vµo trËn cña hai phe lµ 3 phót. Trong vßng 3 phót, c¸c ®Êu thñ ph¶i khÈn tr­¬ng vµo ®Êu tr­êng tiÕn hµnh thi ®Êu!" , 	"Thêi gian thi ®Êu lµ 10phót. Trong 10 phót, hai phe ch­a ph©n th¾ng b¹i sÏ ®­îc xö hßa!",	"Trong lóc thi ®Êu, bÊt kú bªn nµo bÞ rít m¹ng hoÆc vÒ thµnh sÏ bÞ xö b¹i!");
+	Talk(7, "",	"§¬n ®Êu l«i ®µi lµ n¬i c¸c ®¹i hiÖp cao thñ trªn giang hå tû thÝ vâ nghÖ, ph©n tµi cao thÊp. L«i ®µi lµ trËn ®Þa thi ®Êu c«ng b»ng cho hai phe tham dù!",	"Muèn tiÕn hµnh trËn tû vâ l«i ®µi cÇn ®Õn ®¨ng ký thi ®Êu víi ta!",	"After both sides form teams, the team leaders come to register to join the match!",	"Do trËn ®Þa h¹n hÑp, khi mét l«i ®µi nµo ®ã ®ang tiÕn hµnh thi ®Êu th× l«i ®µi kh«ng tiÕp nhËn b¸o danh!",	"B¸o danh thµnh c«ng, hai phe b¾t ®Çu chuÈn bÞ thi ®Êu. Thêi gian vµo trËn cña hai phe lµ 3 phót. Trong vßng 3 phót, c¸c ®Êu thñ ph¶i khÈn tr­¬ng vµo ®Êu tr­êng tiÕn hµnh thi ®Êu!" , 	"Thêi gian thi ®Êu lµ 10phót. Trong 10 phót, hai phe ch­a ph©n th¾ng b¹i sÏ ®­îc xö hßa!",	"Trong lóc thi ®Êu, bÊt kú bªn nµo bÞ rít m¹ng hoÆc vÒ thµnh sÏ bÞ xö b¹i!");
 end;
 
 function OnRegister()
@@ -626,7 +626,7 @@ function SignUpFinal(V)
 	for i = 1, 2 do 
 		PlayerIndex = gf_GetTeamMember(i);
 --		Pay(V);
-        TaskTip("§éi ngò cña ng­¬i ®· b¸o danh tham gia trËn ®Þa"..MapTab[GetTaskTemp(JOINROOMINDEX)][3].."thi ®Êu PK!");
+        TaskTip("§éi ngò cña ng­¬i ®· b¸o danh tham gia trËn ®Þa"..MapTab[GetTaskTemp(JOINROOMINDEX)][3].."PK match!");
 		SetMissionV(MS_PLAYER1ID + i -1, PlayerIndex);
 		SetMissionS(i, GetName());
 		SetMissionS(i+2, GetPlayerInfo(PlayerIndex));
@@ -722,8 +722,8 @@ function OnLook()
 	SubWorld = idx;
 	
 	str = GetMissionS(1).." cïng víi  "..GetMissionS(2).."  b¾t ®Çu thi ®Êu tû vâ l«i ®µi! Ng­¬i ®o¸n xem ai chiÕn th¾ng?";
-	str1 = "Ta cho r»ng "..GetMissionS(1).."("..GetMissionS(3)..")".."  sÏ th¾ng!/OnCas1";
-	str2 = "Ta cho r»ng "..GetMissionS(2).."("..GetMissionS(4)..")".."  sÏ th¾ng!/OnCas2";
+	str1 = "I think"..GetMissionS(1).."("..GetMissionS(3)..")".."  will win!/OnCas1";
+	str2 = "I think"..GetMissionS(2).."("..GetMissionS(4)..")".."  will win!/OnCas2";
 	Say(str, 3, str1, str2, "Ta kh«ng biÕt! Ta kh«ng vµo ®©u!/OnCancel");
 
 	SubWorld=OldSubWorld;
@@ -855,7 +855,7 @@ local str = "";
 	SubWorld = SubWorldID2Idx(MultiMapTab[nMapIndex][1]);
 	
 	if SubWorld <= 0 then
-		WriteLog("[QuÇn hïng chiÕn]Khi RequestGame SubWorld b¸o lçi, b¸o lçi nMapIndex lµ"..nMapIndex..", SubWorld lµ"..SubWorld..".");
+		WriteLog("[QuÇn hïng chiÕn]Khi RequestGame SubWorld b¸o lçi, b¸o lçi nMapIndex lµ"..nMapIndex..", SubWorld is"..SubWorld..".");
 		SubWorld = OldSubWorld;
 		return 0
 	end
@@ -868,8 +868,8 @@ local str = "";
 		if IsHundredBattleState() == 0 then
 			Say("L«i ®µi nµy ch­a cã ng­êi ®¨ng ký. Ng­¬i muèn ®¨ng ký trËn ®Þa kh«ng?",
 					2,
-					"§¨ng ký/#OpenMultiRoom("..nMapIndex..")",
-					"Rêi khái/OnCancel_Talk"
+					"Register/#OpenMultiRoom("..nMapIndex..")",
+					"Leave/OnCancel_Talk"
 			)
 		else
 			Say("Xin lçi, l«i ®µi lÇn nµy ®· kÕt thóc, h·y chän l¹i b¶n ®å lÇn n÷a.",0)
@@ -885,17 +885,17 @@ local str = "";
 		end
 		Say(str,
 				3,
-				"Tham gia tû vâ/#SelectMultiRoom("..nMapIndex..")",
-				"Vµo xem thi ®Êu/#View_Game("..nMapIndex..")",
-				"Rêi khái/OnCancel_Talk"
+				"Join the duel/#SelectMultiRoom("..nMapIndex..")",
+				"Enter to watch the match/#View_Game("..nMapIndex..")",
+				"Leave/OnCancel_Talk"
 		)
 		
 	elseif nMapState == 2 then
 	
 		Say("TrËn ®Þa thi ®Êu l«i ®µi nµy ®· b¾t ®Çu. Ng­¬i muèn vµo xem kh«ng?",
 				2,
-				"Vµo xem thi ®Êu/#View_Game("..nMapIndex..")",
-				"Rêi khái/OnCancel_Talk"
+				"Enter to watch the match/#View_Game("..nMapIndex..")",
+				"Leave/OnCancel_Talk"
 		)
 	end
 
@@ -917,7 +917,7 @@ local str_news = "";
 			OldSubWorld = SubWorld;
 			SubWorld = SubWorldID2Idx(MultiMapTab[i][1]);
 			if SubWorld <= 0 then
-				WriteLog("[QuÇn hïng chiÕn]Khi OpenMultiRoom SubWorld b¸o lçi. B¸o lçi nMapIndex lµ"..nMapIndex..", SubWorld lµ"..SubWorld..".");
+				WriteLog("[QuÇn hïng chiÕn]Khi OpenMultiRoom SubWorld b¸o lçi. B¸o lçi nMapIndex lµ"..nMapIndex..", SubWorld is"..SubWorld..".");
 				SubWorld = OldSubWorld;
 				return 0
 			end			
@@ -946,7 +946,7 @@ local str_news = "";
 	SubWorld = SubWorldID2Idx(MultiMapTab[nMapIndex][1]);
 	
 	if SubWorld <= 0 then
-		WriteLog("[QuÇn hïng chiÕn]Khi OpenMultiRoom SubWorld b¸o lçi. B¸o lçi nMapIndex lµ"..nMapIndex..", SubWorld lµ"..SubWorld..".");
+		WriteLog("[QuÇn hïng chiÕn]Khi OpenMultiRoom SubWorld b¸o lçi. B¸o lçi nMapIndex lµ"..nMapIndex..", SubWorld is"..SubWorld..".");
 		SubWorld = OldSubWorld;
 		return 0
 	end
@@ -968,22 +968,22 @@ local str_news = "";
 		SetTaskTemp(PLAYER_CAMP,MULIT_FIGTHER_CAMP);--¼ÇÂ¼Íæ¼ÒÕóÐÍ
 		SetTask(MULTIMAP_PLAYER_STATE,1);--±êÖ¾½ÇÉ«ÉíÔÚ¶àÈËÀÞÌ¨
 		StartMissionTimer(MULIT_MISSION_ID, MULTI_TIME_ID1, MULTI_TIMER_1);
-		str_news = GetPlayerInfo(PlayerIndex)..GetName().."®ang ë"..MultiMapTab[nMapIndex][9].."L«i ®µi s¾p xÕp QuÇn hïng chiÕn. Mêi c¸c anh hïng tham gia thÝ luyÖn!",
+		str_news = GetPlayerInfo(PlayerIndex)..GetName().."is at"..MultiMapTab[nMapIndex][9].."L«i ®µi s¾p xÕp QuÇn hïng chiÕn. Mêi c¸c anh hïng tham gia thÝ luyÖn!",
 		Msg2Global(str_news);
 	
 	elseif nMapState == 1 then
 		Say("Xin lçi! TrËn ®Þa nµy ®· ®­îc ng­êi kh¸c ®Æt tr­íc! Ng­¬i muèn vµo xem hay tham gia thi ®Êu?",
 				3,
-				"Tham gia tû vâ/#SelectMultiRoom("..nMapIndex..")",
-				"Vµo xem thi ®Êu/#View_Game("..nMapIndex..")",
-				"Rêi khái/OnCancel_Talk"
+				"Join the duel/#SelectMultiRoom("..nMapIndex..")",
+				"Enter to watch the match/#View_Game("..nMapIndex..")",
+				"Leave/OnCancel_Talk"
 		)
 		
 	elseif nMapState == 2 then
 		Say("L«i ®µi ®ang tiÕn hµnh thi ®Êu! Ng­¬i cã thÓ vµo xem!",
 				2,
-				"Vµo xem thi ®Êu/#View_Game("..nMapIndex..")",
-				"Rêi khái/OnCancel_Talk"
+				"Enter to watch the match/#View_Game("..nMapIndex..")",
+				"Leave/OnCancel_Talk"
 		)
 	end
 	
@@ -1000,7 +1000,7 @@ local nGameType = 0;
   SubWorld = SubWorldID2Idx(MultiMapTab[nMapIndex][1]);
   
   if SubWorld <= 0 then
-		WriteLog("[QuÇn hïng chiÕn]Khi SelectMultiRoom SubWorld b¸o lçi. B¸o lçi nMapIndex lµ"..nMapIndex..", SubWorld lµ"..SubWorld..".");
+		WriteLog("[QuÇn hïng chiÕn]Khi SelectMultiRoom SubWorld b¸o lçi. B¸o lçi nMapIndex lµ"..nMapIndex..", SubWorld is"..SubWorld..".");
 		SubWorld = OldSubWorld;
 		return 0
 	end
@@ -1017,8 +1017,8 @@ local nGameType = 0;
 	elseif nTotalAudicnceNum < MAX_MULTIMAP_AUDIENCE_NUM then
 		Say("Sè ng­êi tham gia thi ®Êu ®· ®¹t møc tèi ®a. Ng­¬i cã thÓ vµo xem thi ®Êu!",
 		2,
-		"Vµo xem thi ®Êu/#View_Game("..nMapIndex..")",
-		"Rêi khái/OnCancel_Talk"
+		"Enter to watch the match/#View_Game("..nMapIndex..")",
+		"Leave/OnCancel_Talk"
 		)
 	else
 		Say("Xin lçi! Sè ng­êi trong trËn ®Þa ®· ®ñ! Sau nµy h·y tíi nhÐ!",0)
@@ -1039,7 +1039,7 @@ local nGameType = 0;
   SubWorld = SubWorldID2Idx(MultiMapTab[nMapIndex][1]);
   
   if SubWorld <= 0 then
-		WriteLog("[QuÇn hïng chiÕn]Khi JoinMultiMap SubWorld b¸o lçi. B¸o lçi nMapIndex lµ"..nMapIndex..", SubWorld lµ"..SubWorld..".");
+		WriteLog("[QuÇn hïng chiÕn]Khi JoinMultiMap SubWorld b¸o lçi. B¸o lçi nMapIndex lµ"..nMapIndex..", SubWorld is"..SubWorld..".");
 		SubWorld = OldSubWorld;
 		return 0
 	end
@@ -1081,8 +1081,8 @@ local nGameType = 0;
 	elseif nTotalFigtherNum >= MAX_MULTIMAP_FIGTHER_NUM and nTotalAudicnceNum < MAX_MULTIMAP_AUDIENCE_NUM then
 		Say("Sè ng­êi tham gia thi ®Êu ®· ®¹t møc tèi ®a. Ng­¬i cã thÓ vµo xem thi ®Êu!",
 		2,
-		"Vµo xem thi ®Êu/#View_Game("..nMapIndex..")",
-		"Rêi khái/OnCancel_Talk"
+		"Enter to watch the match/#View_Game("..nMapIndex..")",
+		"Leave/OnCancel_Talk"
 		)
 	else
 		Say("Xin lçi! Sè ng­êi trong trËn ®Þa ®· ®ñ! Sau nµy h·y tíi nhÐ!",0)
@@ -1140,7 +1140,7 @@ function GameRuleTalk()
 	"Tæ ®éi ®èi chiÕn L«i ®µi/#GameRule(2)",
 	"Hçn chiÕn ®¬n ®Êu L«i ®µi/#GameRule(3)",
 	"Tæ ®éi hçn chiÕn l«i ®µi/#GameRule(4)",
-	"Ra khái/OnCancel_Talk"
+	"Leave/OnCancel_Talk"
 	)
 end
 
@@ -1234,8 +1234,8 @@ function OpenSingleTeamRoomRequest(nMapIndex)
 
 	Say("TrËn ®Þa nµy ch­a cã thi ®Êu. Ng­¬i cã muèn ®¨ng ký vµ xin chuyÓn vµo ®Êu tr­êng kh«ng?",
 			2,
-			"§¨ng ký/#OpenSingleTeamRoom("..nMapIndex..")",
-			"Rêi khái/OnCancel_Talk"
+			"Register/#OpenSingleTeamRoom("..nMapIndex..")",
+			"Leave/OnCancel_Talk"
 			)
 
 end
@@ -1246,7 +1246,7 @@ function OpenSingleTeamRoomRequestYJ(nMapIndex)
 	Say("<color=green>Chñ l«i ®µi<color>: vâ ®µi n÷a ch­a ®¨ng ký thi ®Êu, c¸c h¹ cã muèn ®Æt c­îc vµ chuyÓn vµo l«i ®µi?",
 			2,
 			"§Æt c­îc khiªu chiÕn (Gi¶i ®Æt c­îc)/#OpenSingleTeamRoomYJ("..nMapIndex..")",
-			"Rêi khái/OnCancel_Talk"
+			"Leave/OnCancel_Talk"
 			)
 
 end
@@ -1307,10 +1307,10 @@ function OpenSingleTeamRoom(nMapIndex)
 			end
 		--±ÈÈüÒÑ¾­¿ªÊ¼»òÁ½Ö§¶ÓÎéÒÑÔÚ×¼±¸ÖÐ	
 		elseif nMapState == 2 or (GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,1) > 0 and GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,2) > 0) then
-			Say("TrËn ®Þa nµy ®· b¾t ®Çu thi ®Êu, ®éi ngò hai phe do <color=yellow>"..GetMissionS(CAPTAIN_NAME).."<color> vµ <color=yellow>"..GetMissionS(CAPTAIN_NAME+1).."<color> dÉn d¾t. Cã muèn vµo trËn ®Þa nµy xem thi ®Êu?",
+			Say("TrËn ®Þa nµy ®· b¾t ®Çu thi ®Êu, ®éi ngò hai phe do <color=yellow>"..GetMissionS(CAPTAIN_NAME).."<color> and <color=yellow>"..GetMissionS(CAPTAIN_NAME+1).."<color> dÉn d¾t. Cã muèn vµo trËn ®Þa nµy xem thi ®Êu?",
 			2,
-			"Xem thi ®Êu/#RequestViewSingleTeamGame("..nMapIndex..")",
-			"Rêi khái/OnCancel_Talk"
+			"Watch the match/#RequestViewSingleTeamGame("..nMapIndex..")",
+			"Leave/OnCancel_Talk"
 			)
 		--±ÈÈüÉÐÎ´¿ªÊ¼
 		elseif nMapState == 1 and (GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,1) > 0 and GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,2) == 0 ) or (GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,1) == 0 and GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,2) > 0 ) then
@@ -1321,11 +1321,11 @@ function OpenSingleTeamRoom(nMapIndex)
 				nTeamSize = gf_GetTeamSize();
 			end
 			PlayerIndex = OldPlayer;
-			Say("Cã ph¶i ng­¬i muèn chän <color=yellow>"..nCaptainName.."<color> dÉn d¾t (gåm cã"..nTeamSize.." ng­êi) mêi tû vâ hoÆc vµo ®Êu tr­êng xem thi ®Êu?",
+			Say("Cã ph¶i ng­¬i muèn chän <color=yellow>"..nCaptainName.."<color> leading (consisting of"..nTeamSize.." ng­êi) mêi tû vâ hoÆc vµo ®Êu tr­êng xem thi ®Êu?",
 				3,
 				"Göi lêi khiªu chiÕn/#RequestGame2Captian("..nMapIndex..")",
-				"Xem thi ®Êu/#RequestViewSingleTeamGame("..nMapIndex..")",
-				"Rêi khái/OnCancel_Talk"
+				"Watch the match/#RequestViewSingleTeamGame("..nMapIndex..")",
+				"Leave/OnCancel_Talk"
 				)
 		elseif nMapState == 3 then
 			GameOverTalk();
@@ -1363,14 +1363,14 @@ function OpenSingleTeamRoomYJ(nMapIndex)
 		if nMapState == 0 then
 			--ÅÐ¶ÏÊÇ·ñ·ûºÏ±ÈÎä×Ê¸ñ
 			if HaveSingleTemaGameTitleYJ() == 1 then
-					AskClientForNumber("AskSingleTeamYJNum",100,5000,"NhËp sè l­îng vµng c­îc","")
+					AskClientForNumber("AskSingleTeamYJNum",100,5000,"Enter the amount of gold to bet","")
 			end
 		--±ÈÈüÒÑ¾­¿ªÊ¼»òÁ½Ö§¶ÓÎéÒÑÔÚ×¼±¸ÖÐ	
 		elseif nMapState == 2 or (GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,1) > 0 and GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,2) > 0) then
-			Say("<color=green>Chñ l«i ®µi<color>: tû vâ trªn l«i ®µi nµy ®· b¾t ®Çu, thµnh viªn bao gåm <color=yellow>"..GetMissionS(CAPTAIN_NAME).."<color> vµ <color=yellow>"..GetMissionS(CAPTAIN_NAME+1).."<color>, c¸c h¹ muèn vµo quan chiÕn?",
+			Say("<color=green>Chñ l«i ®µi<color>: tû vâ trªn l«i ®µi nµy ®· b¾t ®Çu, thµnh viªn bao gåm <color=yellow>"..GetMissionS(CAPTAIN_NAME).."<color> and <color=yellow>"..GetMissionS(CAPTAIN_NAME+1).."<color>, c¸c h¹ muèn vµo quan chiÕn?",
 			2,
 			"Quan chiÕn (gi¶i ®Æt c­îc)/#RequestViewSingleTeamGame("..nMapIndex..")",
-			"Rêi khái/OnCancel_Talk"
+			"Leave/OnCancel_Talk"
 			)
 		--±ÈÈüÉÐÎ´¿ªÊ¼
 		elseif nMapState == 1 and (GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,1) > 0 and GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,2) == 0 ) or (GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,1) == 0 and GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,2) > 0 ) then
@@ -1387,11 +1387,11 @@ function OpenSingleTeamRoomYJ(nMapIndex)
 					nTeamSize = gf_GetTeamSize();
 				end
 				PlayerIndex = OldPlayer;
-				Say("Cã ph¶i ng­¬i muèn chän <color=yellow>"..nCaptainName.."<color> dÉn d¾t (gåm cã"..nTeamSize.."ng­êi) ®¨ng ký khiªu chiÕn hoÆc vµo ®Êu tr­êng quan chiÕn? <color=red>Vµng c­îc khiªu chiÕn lµ:"..GetMissionV(MS_YAJING_NUM).."J<color>",
+				Say("Cã ph¶i ng­¬i muèn chän <color=yellow>"..nCaptainName.."<color> leading (consisting of"..nTeamSize.."ng­êi) ®¨ng ký khiªu chiÕn hoÆc vµo ®Êu tr­êng quan chiÕn? <color=red>Vµng c­îc khiªu chiÕn lµ:"..GetMissionV(MS_YAJING_NUM).."J<color>",
 					3,
 					"Khiªu chiÕn (Gi¶i ®Æt c­îc)/#RequestGame2CaptianYJ("..nMapIndex..")",
 					"Quan chiÕn (gi¶i ®Æt c­îc)/#RequestViewSingleTeamGame("..nMapIndex..")",
-					"Rêi khái/OnCancel_Talk"
+					"Leave/OnCancel_Talk"
 					)
 			end
 		elseif nMapState == 3 then
@@ -1422,7 +1422,7 @@ function AskSingleTeamYJNum(num)
 		end
 		
 		if Pay(num * 10000) == 1 then
-			gf_WriteLogEx("L«i ®µi ®Æt c­îc","Chi tr¶ vµng c­îc",num," Kim ","",GetTongName(),"","","","");
+			gf_WriteLogEx("L«i ®µi ®Æt c­îc","Pay the bet gold",num," Kim ","",GetTongName(),"","","","");
 			OpenMission(SINGLE_TEAM_MISSION_ID);
 			local OldPlayer = PlayerIndex;
 			for i=1, gf_GetTeamSize() do
@@ -1469,15 +1469,15 @@ local nCaptainName = "";
 		if nMapState == 0 then
 			Say("TrËn ®Þa nµy ch­a cã thi ®Êu. Ng­¬i cã muèn ®¨ng ký vµ xin chuyÓn vµo ®Êu tr­êng kh«ng?",
 				2,
-				"§¨ng ký/#OpenSingleTeamRoom("..nMapIndex..")",
-				"Rêi khái/OnCancel_Talk"
+				"Register/#OpenSingleTeamRoom("..nMapIndex..")",
+				"Leave/OnCancel_Talk"
 				)		
 		--±ÈÈüÒÑ¾­¿ªÊ¼»òÁ½Ö§¶ÓÎéÒÑÔÚ×¼±¸ÖÐ		
 		elseif nMapState >= 2 or GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,1) > 0 and GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,2) > 0 then
-			Say("TrËn ®Þa nµy ®· b¾t ®Çu thi ®Êu, ®éi ngò hai phe do <color=yellow>"..GetMissionS(CAPTAIN_NAME).."<color> vµ <color=yellow>"..GetMissionS(CAPTAIN_NAME+1).."<color> dÉn d¾t. Cã muèn vµo trËn ®Þa nµy xem thi ®Êu?",
+			Say("TrËn ®Þa nµy ®· b¾t ®Çu thi ®Êu, ®éi ngò hai phe do <color=yellow>"..GetMissionS(CAPTAIN_NAME).."<color> and <color=yellow>"..GetMissionS(CAPTAIN_NAME+1).."<color> dÉn d¾t. Cã muèn vµo trËn ®Þa nµy xem thi ®Êu?",
 				2,
-				"Xem thi ®Êu/#RequestViewSingleTeamGame("..nMapIndex..")",
-				"Rêi khái/OnCancel_Talk"
+				"Watch the match/#RequestViewSingleTeamGame("..nMapIndex..")",
+				"Leave/OnCancel_Talk"
 				)
 		--±ÈÈüÉÐÎ´¿ªÊ¼
 		elseif nMapState == 1 and GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,1) > 0 or GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,2) > 0 then
@@ -1518,15 +1518,15 @@ function RequestGame2CaptianYJ(nMapIndex)
 		if nMapState == 0 then
 			Say("TrËn ®Þa nµy ch­a cã thi ®Êu. Ng­¬i cã muèn ®¨ng ký vµ xin chuyÓn vµo ®Êu tr­êng kh«ng?",
 				2,
-				"§Æt s©n thi ®Êu (Gi¶i ®Æt c­îc)/#OpenSingleTeamRoomYJ("..nMapIndex..")",
-				"Rêi khái/OnCancel_Talk"
+				"Reserve the match field (Resolve bet)/#OpenSingleTeamRoomYJ("..nMapIndex..")",
+				"Leave/OnCancel_Talk"
 				)		
 		--±ÈÈüÒÑ¾­¿ªÊ¼»òÁ½Ö§¶ÓÎéÒÑÔÚ×¼±¸ÖÐ		
 		elseif nMapState >= 2 or GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,1) > 0 and GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,2) > 0 then
-			Say("TrËn ®Þa nµy ®· b¾t ®Çu thi ®Êu, ®éi ngò hai phe do <color=yellow>"..GetMissionS(CAPTAIN_NAME).."<color> vµ <color=yellow>"..GetMissionS(CAPTAIN_NAME+1).."<color> dÉn d¾t. Cã muèn vµo trËn ®Þa nµy xem thi ®Êu?",
+			Say("TrËn ®Þa nµy ®· b¾t ®Çu thi ®Êu, ®éi ngò hai phe do <color=yellow>"..GetMissionS(CAPTAIN_NAME).."<color> and <color=yellow>"..GetMissionS(CAPTAIN_NAME+1).."<color> dÉn d¾t. Cã muèn vµo trËn ®Þa nµy xem thi ®Êu?",
 				2,
 				"Quan chiÕn (gi¶i ®Æt c­îc)/#RequestViewSingleTeamGame("..nMapIndex..")",
-				"Rêi khái/OnCancel_Talk"
+				"Leave/OnCancel_Talk"
 				)
 		--±ÈÈüÉÐÎ´¿ªÊ¼
 		elseif nMapState == 1 and GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,1) > 0 or GetMSPlayerCount(SINGLE_TEAM_MISSION_ID,2) > 0 then
@@ -1567,7 +1567,7 @@ function SendChallenge2Captain(nMapIndex,nChallengeIndex,nChallengeTeamSize)
 				if GetMissionS(i) == "" then
 					SetPlayerScript("\\script\\ÖÐÔ­¶þÇø\\³É¶¼\\npc\\ÀÞÌ¨ÀÏ°å.lua");
 					SetMissionS(i,nChallengeName);
-					Say("Do <color=yellow>"..nChallengeName.."<color> dÉn d¾t (gåm: <color=yellow>"..nChallengeTeamSize.."<color> ng­êi) mêi ng­¬i tû vâ. Ng­¬i ®ång ý kh«ng?",
+					Say("Do <color=yellow>"..nChallengeName.."<color> leading (consisting of: <color=yellow>"..nChallengeTeamSize.."<color> ng­êi) mêi ng­¬i tû vâ. Ng­¬i ®ång ý kh«ng?",
 					2,
 					"§ång ý/#AG("..nMapIndex..","..nChallengeIndex..","..i..")",
 					"Cù tuyÖt/#RG("..nMapIndex..","..nChallengeIndex..","..i..")"
@@ -1602,7 +1602,7 @@ function SendChallenge2CaptainYJ(nMapIndex,nChallengeIndex,nChallengeTeamSize)
 				if GetMissionS(i) == "" then
 					SetPlayerScript("\\script\\ÖÐÔ­¶þÇø\\³É¶¼\\npc\\ÀÞÌ¨ÀÏ°å.lua");
 					SetMissionS(i,nChallengeName);
-					Say("Do <color=yellow>"..nChallengeName.."<color> dÉn d¾t (gåm: <color=yellow>"..nChallengeTeamSize.."<color> ng­êi) mêi ng­¬i tû vâ. Ng­¬i ®ång ý kh«ng?",
+					Say("Do <color=yellow>"..nChallengeName.."<color> leading (consisting of: <color=yellow>"..nChallengeTeamSize.."<color> ng­êi) mêi ng­¬i tû vâ. Ng­¬i ®ång ý kh«ng?",
 					2,
 					"§ång ý/#AGYJ("..nMapIndex..","..nChallengeIndex..","..i..")",
 					"Cù tuyÖt/#RGYJ("..nMapIndex..","..nChallengeIndex..","..i..")"
@@ -1719,7 +1719,7 @@ function AGYJ(nMapIndex,nChallengeIndex,nChallengeNameIndex)
 								Talk(1,"",format("<color=green>Chñ l«i ®µi<color>: KÎ khiªu chiÕn ‘%s’ mang kh«ng ®ñ vµng, khiªu chiÕn thÊt b¹i",sChallengeName))
 								return
 							end
-							gf_WriteLogEx("L«i ®µi ®Æt c­îc","Chi tr¶ vµng c­îc",GetMissionV(MS_YAJING_NUM)," Kim ","",GetTongName(),"","","","");
+							gf_WriteLogEx("L«i ®µi ®Æt c­îc","Pay the bet gold",GetMissionV(MS_YAJING_NUM)," Kim ","",GetTongName(),"","","","");
 							-----------------
 							SetMissionV(CAPTAIN_ID+1,gf_GetTeamMember(0));
 							SetMissionS(CAPTAIN_NAME+1,gf_GetCaptainName());
@@ -1847,7 +1847,7 @@ local strSay = "";
 				Say("L«i ®µi nµy ch­a cã ng­êi ®¨ng ký. Ng­¬i muèn ®¨ng ký trËn ®Þa kh«ng?",
 						2,
 						"§¨ng ký/#JoinTeamRoom("..nMapIndex..")",
-						"Rêi khái/OnCancel_Talk"
+						"Leave/OnCancel_Talk"
 				)
 			end
 		elseif GetMissionV(TEAM_GAME_STATE) == 1 then
@@ -1866,13 +1866,13 @@ local strSay = "";
 						3,
 						"Tham gia tû vâ/#JoinTeamRoom("..nMapIndex..")",
 						"Vµo xem thi ®Êu/#RequestViewTeamGame("..nMapIndex..")",
-						"Rêi khái/OnCancel_Talk"
+						"Leave/OnCancel_Talk"
 				)
 			else
 				Say("Sè ®éi ngò b¸o danh trËn ®Þa nµy ®· ®¹t"..MAX_TEAM_NUM..", ng­¬i muèn vµo xem thi ®Êu kh«ng?",
 					2,
 					"Vµo xem thi ®Êu/#RequestViewTeamGame("..nMapIndex..")",
-					"Rêi khái/OnCancel_Talk"
+					"Leave/OnCancel_Talk"
 			)
 			end
 		
@@ -1881,7 +1881,7 @@ local strSay = "";
 			Say("TrËn ®Þa thi ®Êu l«i ®µi nµy ®· b¾t ®Çu. Ng­¬i muèn vµo xem kh«ng?",
 					2,
 					"Vµo xem thi ®Êu/#RequestViewTeamGame("..nMapIndex..")",
-					"Rêi khái/OnCancel_Talk"
+					"Leave/OnCancel_Talk"
 			)
 		end
 	end
@@ -1900,7 +1900,7 @@ local news_str = "";
 	SubWorld = SubWorldID2Idx(TeamMapTab[nMapIndex][1]);
 	
 	if SubWorld < 0 then
-		WriteLog("[§a nh©n tæ ®éi l«i ®µi]T×nh tr¹ng ®Êu tr­êng hiÖn t¹i SubWorld b¸o lçi. B¸o lçi MapID lµ"..TeamMapTab[nMapIndex][1]..", SubWorld lµ"..SubWorld..".");
+		WriteLog("[§a nh©n tæ ®éi l«i ®µi]T×nh tr¹ng ®Êu tr­êng hiÖn t¹i SubWorld b¸o lçi. B¸o lçi MapID lµ"..TeamMapTab[nMapIndex][1]..", SubWorld is"..SubWorld..".");
 		SubWorld = OldWorld;
 		return 0
 	end

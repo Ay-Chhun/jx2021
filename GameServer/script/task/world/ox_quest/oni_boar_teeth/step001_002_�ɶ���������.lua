@@ -20,5 +20,5 @@ function wq_ox_obt_001_002()
 	AddItem(2, 0, 13, 1)					-- 得到任务道具 丢失的包裹
 	
 	-- 以下是文字显示部分
-	TaskTip("Лa g鉯 h祅g cho th玭 d﹏.")
+	TaskTip("Deliver the package to the villager.")
 end

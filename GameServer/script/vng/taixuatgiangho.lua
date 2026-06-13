@@ -235,7 +235,7 @@ function TaiXuat_NhanThuong(nIndex)
 		return 0
 	end
 	if gf_Judge_Room_Weight(tbCondition[nIndex][4],tbCondition[nIndex][5]) ~= 1 then
-		Talk(1,"","Hµnh trang ph¶i cã tèi thiÕu <color=yellow>"..tbCondition[nIndex][4].."<color> « trèng, <color=yellow>"..tbCondition[nIndex][5].."<color> ®é nÆng.")
+		Talk(1,"","Hµnh trang ph¶i cã tèi thiÕu <color=yellow>"..tbCondition[nIndex][4].."<color> empty slots, <color=yellow>"..tbCondition[nIndex][5].."<color> of carrying capacity.")
 		return 0
 	end
 	if tbCondition[nIndex][1] == 1 then

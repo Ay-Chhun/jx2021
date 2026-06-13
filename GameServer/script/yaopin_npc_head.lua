@@ -8,7 +8,7 @@
 -- ·µ»ØÒ»¸ö²ÎÊý£¬1±íÊ¾Íæ¼ÒÓÐÑ§Õâ¸öÉú»î¼¼ÄÜ£¬¶øÇÒµÈ¼¶´ïµ½ÒªÇó£¬0±íÊ¾²»´ïÒªÇó¡£
 function check_dig_condition(nLifeSkillType, nLifeSkillID, nLifeSkillLevel)
 
-	strTab = {"§èn c©y", "Lµm da", "Canh t¸c", "H¸i thuèc", "§µo kho¸ng", "KÐo t¬", "TËp linh"}
+	strTab = {"§èn c©y", "Lµm da", "Farm", "H¸i thuèc", "§µo kho¸ng", "KÐo t¬", "TËp linh"}
 	
 	local nRet = 0
 	local nCurLifeSkillLevel = GetLifeSkillLevel(nLifeSkillType, nLifeSkillID)

@@ -2,7 +2,7 @@ Include("\\script\\online\\abluemoon\\abluemoon_head.lua")
 
 function InitMission() 	
 	for i=1,10 do
-		SetMissionS(i,"空缺")
+		SetMissionS(i,"Empty Slot")
 	end	
 	for i=1,50 do
 		SetMissionV(i,0)
@@ -10,8 +10,8 @@ function InitMission()
 	randomseed(GetTime())
 	local nRoute = random(1,15);  --领取奖励需要的组队门派，一共15个
 	SetMissionV(MV_ABLUEMOON_NEED_ROUTE,nRoute)
-	AddGlobalNews("科举考试本次领奖需要的职业是："..tNeedRoute[nRoute][2].."！")
-	Msg2Global("科举考试本次领奖需要的职业是："..tNeedRoute[nRoute][2].."！")
+	AddGlobalNews("The profession required to claim this reward for the imperial exam is:"..tNeedRoute[nRoute][2].."!")
+	Msg2Global("The profession required to claim this reward for the imperial exam is:"..tNeedRoute[nRoute][2].."!")
 	RunMission(MISSION_ID);
 end;
 

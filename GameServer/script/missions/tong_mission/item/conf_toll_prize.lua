@@ -9,11 +9,11 @@ Include("\\script\\online\\zgc_public_fun.lua")		--´å³¤µÄ¹«¹²º¯Êý
 
 Tb_equip_mertiral = 		--²ÄÁÏÁÐ±í
 	{
-		{"Tö Quang LiÖt DiÖm CÈm",2,0,735},
-		{"Tö Quang Kú L©n Vò",2,0,736},
-		{"Tö Quang Kim ThiÒn Ti",2,0,737},
-		{"M¶nh TiÖt Hoµnh Thó",2,0,738},
-		{"Th­îng Cæ Kú L©n HuyÕt",2,0,739},
+		{"Purple Light Blazing Flame Brocade",2,0,735},
+		{"Purple Light Qilin Dance",2,0,736},
+		{"Purple Light Golden Cicada Wing",2,0,737},
+		{"Fierce Sweeping Beast",2,0,738},
+		{"Ancient Qilin Blood",2,0,739},
 	}
 Tb_prize_toll = 
 	{	--²ÄÁÏÐòºÅ¡¢¼¸ÂÊ(¹²Èý¸öÎïÆ·)
@@ -151,7 +151,7 @@ function prize_get(goods_index,param_seq,player_index)
 			Msg2Player("Chóc mõng ®¹i hiÖp ®· ®­îc 2 	"..Tb_equip_mertiral[goods_seq][1].."!")
 			PlayerIndex = player_index_save
 			if add_flag == 1 then
-				SendTongMessage(GetName().."2"..Tb_equip_mertiral[goods_seq][1].." ph©n chia cho:"..prize_get_name)
+				SendTongMessage(GetName().."2"..Tb_equip_mertiral[goods_seq][1].." distributed to:"..prize_get_name)
 			else
 				WriteLog("PhÈn th­ëng bang héi v­ît ¶i: Ng­êi ch¬i ["..prize_get_name.."] t¨ng"..Tb_equip_mertiral[goods_seq][1].." thÊt b¹i, ký hiÖu:"..add_flag)
 			end

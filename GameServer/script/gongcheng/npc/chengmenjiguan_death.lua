@@ -25,7 +25,7 @@ function OnDeath(nNpcIdx)
 		GCZ_SetGraveyardStatus(MV_GRAVEYARD_B1,GONG_ID,TRUE);
 		Msg2MSAll(MISSION_ID,"Thµnh m«n phÝa T©y nguy cÊp, T©y thµnh m«n®iÓm tËp kÕt ngoµi thµnh ®· më");
 	end;
-	Msg2MSAll(MISSION_ID,GetName().." ®· ph¸ hñy "..tChengMenJiGuanPos[nJiGuanID][3])
+	Msg2MSAll(MISSION_ID,GetName().." has been destroyed"..tChengMenJiGuanPos[nJiGuanID][3])
 	if GCZ_CheckAllDoor() == 1 then
 		Msg2MSAll(MISSION_ID,"thµnh m«n ®· hoµn toµn l©m nguy, C«ng thµnh ®¹i ph¸o cßn c¸ch ");
 		GCZ_ComeToGongmeng();

@@ -162,7 +162,7 @@ function MJXR_master_main(faction_seq,route_seq)
           "§Ö tö b¸i kiÕn s­ phô!/#MJXR_EnterRoute("..faction_seq..","..route_seq..")",
           "Häc"..TB_FACTION_INFO[faction_seq]..TB_ROUTE_INFO[route_seq].."Vâ c«ng/#skilllearn("..route_seq..")",
           "Ta cã ®­îc tµn quyÓn mËt tÞch trÊn ph¸i cña bæn m«n./#MJXR_book_chg("..route_seq..")",
-          "Chµo hái/end_dialog",
+          "Greetings/end_dialog",
      }
      local t_dia_show = {}
      local s_dia_main = "<color=green>"..TB_ROUTE_IN_INFO[route_seq].npc_name.."<color>: "..TB_ROUTE_IN_INFO[route_seq].bewrite
@@ -205,7 +205,7 @@ end
 
 
 
-GREATE_SKILL_NAME = "Hµn B¨ng Miªn Ch­ëng"
+GREATE_SKILL_NAME = "Frost Cotton Palm"
 GREATE_SKILL_ID = 1213
 ROUTE_SKILL_NAME = "Minh Gi¸o HuyÕt Nh©n"
 function showlimit(n)    --Ê¦ÃÅËµ»°

@@ -2,7 +2,7 @@ Include("\\script\\lib\\globalfunctions.lua");
 function OnUse()
 	local selTab = {
 				"V©ng, ta kh«ng thÓ ®îi ®­îc n÷a./use",
-				"Th«i, ®Ó sau h·y më./nothing",
+				"Never mind, I'll open it later. /nothing",
 				}
 	Say("Trong bao l× x× b¸nh Ýt cã rÊt nhiÒu vËt phÈm, h·y s¾p xÕp l¹i hµnh trang, ®Ó tr¸nh nh÷ng tæn thÊt kh«ng ®¸ng cã, b¹n cã muèn më bao l× x× b¸nh Ýt kh«ng?",getn(selTab),selTab);
 end;
@@ -28,7 +28,7 @@ function use()
 		if AddItem(2,1,392,5) == 1 then
 			Msg2Player("B¹n ®· nhËn ®­îc 5 c¸i b¸nh Ýt gia h­ng.");
 		end;
-		WriteLog("[Bao l× x× b¸nh Ýt]:"..GetName().."Më bao l× x× b¸nh Ýt.");
+		WriteLog("[Zongzi gift bag]:"..GetName().."Open the zongzi gift bag.");
 	end;
 end;
 

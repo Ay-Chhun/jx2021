@@ -16,7 +16,7 @@ function main()
 	if tomb_sweep_2007_date_chk() == -1 then
 		Talk(1,"","TiÕt Thanh Minh s¾p ®Õn, c¸c vŞ nhí giµnh thêi gian cóng b¸i tæ tiªn!");
 	elseif tomb_sweep_2007_date_chk() == 0 then
-		Talk(1,"","TiÕt Thanh Minh ®· qua, vŞ"..Zgc_pub_sex_name().."nhí n¨m sau ®Õn cóng tÕ tæ tiªn.");
+		Talk(1,"","The Qingming Festival has passed,"..Zgc_pub_sex_name().."remember to come honor your ancestors next year.");
 	else
 		local selTab = {
 					"§Õn cóng b¸i mé phÇn Chu ®¹i hiÖp./#gotocemetery(1)",
@@ -24,7 +24,7 @@ function main()
 					"Ho¹t ®éng TiÕt Thanh Minh./knowdetail",
 					"H·y quay l¹i cóng tÕ sau nhĞ!/nothing",
 					}
-		Say("VŞ "..Zgc_pub_sex_name().."muèn ®Õn mé phÇn <color=red>Chu ®¹i hiÖp<color> cóng b¸i ®Ó tá lßng thµnh kİnh?",getn(selTab),selTab);
+		Say("Position"..Zgc_pub_sex_name().."muèn ®Õn mé phÇn <color=red>Chu ®¹i hiÖp<color> cóng b¸i ®Ó tá lßng thµnh kİnh?",getn(selTab),selTab);
 	end;
 end;
 

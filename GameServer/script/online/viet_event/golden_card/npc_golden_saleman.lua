@@ -145,7 +145,7 @@ function get_golden_card()
 	tinsert(tSay, "Ta muèn mua 1 LÖnh Bµi Hoµng Kim (cÇn "..GOLDENCARD_PRICE.." vËt phÈm Xu)/confirm_get_golden_card")
 --	end
 	tinsert(tSay, "KiÓm tra LÖnh Bµi Hoµng Kim ®· mua/check_golden_code")
-	tinsert(tSay, "Ta sÏ mua sau/hklb_DoNothing")
+	tinsert(tSay, "I'll buy it later/hklb_DoNothing")
 						
 	Say(szName.."T¹i h¹ b¸n <color=yellow>LÖnh Bµi Hoµng Kim<color> gi¸ <color=red>"..GOLDENCARD_PRICE.." Xu<color> ®Õn khi hÕt hµng. HiÖn t¹i cßn <color=yellow>"..golden_code.count.." LÖnh Bµi Hoµng Kim<color>. Do sè ng­êi ®Æt mua rÊt nhiÒu nªn t¹i h¹ chØ cã thÓ b¸n cho ®¹i hiÖp tèi ®a <color=yellow>2 LÖnh Bµi Hoµng Kim<color>!",getn(tSay),tSay)
 end
@@ -237,9 +237,9 @@ function confirm_get_cloth_tulinh(nType)
 		return
 	end
 	if DelItem(2,1,30230,2400) == 1 then
-		gf_AddItemEx2({0, 108, 30000 + nBody + nType, 1}, "Tø Linh M·o", "Ban ngoai trang Tu Linh", "nhËn lo¹i "..nType, 60 * 24 * 3600)
-		gf_AddItemEx2({0, 109, 30000 + nBody + nType, 1}, "Tø Linh Y", "Ban ngoai trang Tu Linh", "nhËn lo¹i "..nType, 60 * 24 * 3600)
-		gf_AddItemEx2({0, 110, 30000 + nBody + nType, 1}, "Tø Linh Trang", "Ban ngoai trang Tu Linh", "nhËn lo¹i "..nType, 60 * 24 * 3600)
+		gf_AddItemEx2({0, 108, 30000 + nBody + nType, 1}, "Tu Linh Hat", "Ban ngoai trang Tu Linh", "nhËn lo¹i "..nType, 60 * 24 * 3600)
+		gf_AddItemEx2({0, 109, 30000 + nBody + nType, 1}, "Tu Linh Robe", "Ban ngoai trang Tu Linh", "nhËn lo¹i "..nType, 60 * 24 * 3600)
+		gf_AddItemEx2({0, 110, 30000 + nBody + nType, 1}, "Tu Linh Garb", "Ban ngoai trang Tu Linh", "nhËn lo¹i "..nType, 60 * 24 * 3600)
 		Talk(1,"",szName.."§¹i hiÖp ®· mua thµnh c«ng ngo¹i trang Tø Linh!")
 	end
 end
@@ -265,7 +265,7 @@ function get_zhanxiang()
     	
     	if DelItem(2, 1, 30230, 2400) == 1 then
     		SetTask(707, GetTask(707) - 200000)
-    		gf_AddItemEx2({0, 105, 30033, 1, 4, -1, -1, -1, -1, -1, -1}, "ChiÕn T­îng", "Hoang Kim Thuong Nhan", "mua ChiÕn T­îng nguyªn so¸i", 90 * 24 * 3600)
+    		gf_AddItemEx2({0, 105, 30033, 1, 4, -1, -1, -1, -1, -1, -1}, "War General", "Hoang Kim Thuong Nhan", "mua ChiÕn T­îng nguyªn so¸i", 90 * 24 * 3600)
     	end
 end
 
@@ -301,7 +301,7 @@ function change_zhanxiang()
 	end
 	UnEquipAtPosition(10)
 	if DelItemByIndex(nMountIndex, -1) == 1 then
-		gf_AddItemEx2({0, 105, 30033, 1, 4, -1, -1, -1, -1, -1, -1}, "ChiÕn T­îng", "Hoang Kim Thuong Nhan", "®æi ChiÕn T­îng nguyªn so¸i", nExpire)
+		gf_AddItemEx2({0, 105, 30033, 1, 4, -1, -1, -1, -1, -1, -1}, "War General", "Hoang Kim Thuong Nhan", "®æi ChiÕn T­îng nguyªn so¸i", nExpire)
 	end
 end
 -- §æi ®iÓm kinh nghiÖm lÊy ®iÓm tÝch lòy 
@@ -408,7 +408,7 @@ function ChangeVLTBShop()
 	
 	local tSay = 	{}	
 	tinsert(tSay, "§æi §inh Hån Thiªn Th¹ch ThÇn Th¹ch/#ChangeVLTBShopType(1)")
-	tinsert(tSay, "§æi L¨ng Ba Vi Bé/#ChangeVLTBShopType(2)")
+	tinsert(tSay, "Exchange Lingbo Weibu/#ChangeVLTBShopType(2)")
 	tinsert(tSay, "§æi 8 N÷ Oa Tinh Th¹ch /#ChangeVLTBShopType(3)")	
 	tinsert(tSay, "§æi Nãn S­ M«n 4/#ChangeVLTBShopType(4)")
 	tinsert(tSay, "§æi Aã S­ M«n 4 /#ChangeVLTBShopType(5)")
@@ -481,7 +481,7 @@ tbHKLPrice = {
 
 function confirm_buy_HKL(nSelected)
 	if gf_Judge_Room_Weight(1, 10, " ") == 0 then
-		Talk(1,"","Hµnh trang khång ®ñ « trèng hoÆc ®é nÆng")
+		Talk(1,"","Your inventory does not have enough empty slots or carrying capacity")
 		return
 	end
 	if GetCash() < tbHKLPrice[nSelected][1] then
@@ -603,14 +603,14 @@ function DoChangeAccumulateBKL(nType, nzType) --nType: lo¹i tiªu hao, nzType: lo
 		DelItem(2,1,30230, tbChange[nzType][3])
 		ModifyExp(-tbChange[nzType][1] * 22222222)
 		nCheckDel = 1
-		gf_WriteLogEx("Loi Ho Lenh", "®æi thµnh c«ng", 1, "§æi "..tbChange[nzType][1].."®iÓm theo huíng 2 xu + Exp")
+		gf_WriteLogEx("Loi Ho Lenh", "®æi thµnh c«ng", 1, "Exchange"..tbChange[nzType][1].."®iÓm theo huíng 2 xu + Exp")
 	elseif nType == 2 then
 		DelItem(2,1,30390, 2*tbChange[nzType][1])
 		DelItem(2,1,30410, 2*tbChange[nzType][1])
 		DelItem(2,1,30340, 22*tbChange[nzType][1])
 		Pay(220000*tbChange[nzType][1])
 		nCheckDel = 1
-		gf_WriteLogEx("Loi Ho Lenh", "®æi thµnh c«ng", 1,  "§æi "..tbChange[nzType][1].."®iÓm theo huíng 2mtc + 2mtm + 22 m?c ruong + 22 vµng")
+		gf_WriteLogEx("Loi Ho Lenh", "®æi thµnh c«ng", 1,  "Exchange"..tbChange[nzType][1].."®iÓm theo huíng 2mtc + 2mtm + 22 m?c ruong + 22 vµng")
 	end
 	if nCheckDel == 1 then
 		SetTask(TSK_BKLB_POINT, GetTask(TSK_BKLB_POINT)+ (tbChange[nzType][1] * 1000000)) --task ®æi ®iÓm trong ngµy
@@ -660,7 +660,7 @@ function ChangeVLTBShopBKL()
 --	tinsert(tSay, "§æi §inh Hån Thiªn Th¹ch ThÇn Th¹ch (150 ®iÓm - cã thÓ giao dÞch)/#ChangeVLTBShopTypeBKL(9)")
 	tinsert(tSay, "§æi 15 MËt tÞch m«n ph¸i 70 cao cÊp (100 ®iÓm - cã thÓ giao dÞch)/ChangeVLTBShopBKL_Mattich70")	---------- Bit 10	
 
-	tinsert(tSay, "Trang kÕ /ChangeVLTBShopBKL2")
+	tinsert(tSay, "Next page /ChangeVLTBShopBKL2")
 	tinsert(tSay, "Quay l¹i trang tr­íc /main")
 	
 	Say("Cöa Hµng Vâ L©m TiÒn Bèi. ", getn(tSay),tSay)
@@ -811,7 +811,7 @@ local VD =
 	{
 		{0,103,8000,"Viªm §Õ Kh«i"},
 		{0,100,8000,"Viªm §Õ Gi¸p"},
-		{0,101,8000,"Viªm §Õ Trang"},
+		{0,101,8000,"Viem De Trang"},
 	}
 	if GetTask(2701) == 1 then
 		Talk(1, "", "B¹n ®· nhËn phÇn th­ëng nµy råi !!!")
@@ -910,7 +910,7 @@ function Unlocl_LangBa_BKL()
 		return	
 	end
 	if DelItem(0,112,158,1) == 1 and DelItem(2,1,1006,2) == 1 then
-		gf_AddItemEx2({0,112,158,1,1}, "L¨ng Ba Vi Bé toµn tËp", szBKLBLogHeader, "Më khãa")
+		gf_AddItemEx2({0,112,158,1,1}, "Lingbo Microstep Complete Edition", szBKLBLogHeader, "Më khãa")
 	end
 end
 

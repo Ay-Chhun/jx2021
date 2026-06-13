@@ -15,7 +15,7 @@ function get_prize()
 	local tSay = {
 --		"NhËn M¶nh MËt TÞch ThÊt L¹c/#processIndex(1)",
 		"NhËn Nh©n S©m V¹n N¨m/#processIndex(2)",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	}	
 	Say("Thêi gian nhËn th­ëng vËt phÈm Bang Héi Tinh Anh 3 tõ <color=red>14/05/2010 - 16/05/2010<color>, c¸c h¹ nhËn phÇn th­ëng nµo?",getn(tSay),tSay)
 end

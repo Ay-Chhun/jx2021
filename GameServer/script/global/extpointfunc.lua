@@ -31,7 +31,7 @@ function OnChangeJXWeb(nChangeValue)
 				WriteLogEx("JX Web","thÊt b¹i",nValue,"Liªn T©m §an","",GetTongName())
 			end
 	else
-		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t cã lçi khi gäi function OnChangeJXWeb.")		
+		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t error calling function OnChangeJXWeb.")		
 	end
 end 
 
@@ -39,10 +39,10 @@ function OnChangeGetToken(nChangeValue)
 	if nChangeValue == 1 then		
 			local tToken = 
 			{
-				{"Long tö Ên",{2,0,30002,1}},
-				{"Hæ tö Ên",{2,0,30003,1}},
+				{"Dragon Seal",{2,0,30002,1}},
+				{"Tiger Seal",{2,0,30003,1}},
 				{"Phông tö Ên",{2,0,30005,1}},
-				{"¦ng tö Ên",{2,0,30006,1}},
+				{"Eagle Seal",{2,0,30006,1}},
 			}
 			local nRand = random(1,4)						
 			local nRet, nItemIdx =  gf_AddItemEx(tToken[nRand][2],tToken[nRand][1])
@@ -55,7 +55,7 @@ function OnChangeGetToken(nChangeValue)
 				WriteLogEx("Phat thuong bang chu","thÊt b¹i",1,tToken[nRand][1])
 			end
 	else
-		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t cã lçi khi gäi function OnChangeGetToken.")		
+		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t error calling function OnChangeGetToken.")		
 	end
 end
 
@@ -73,7 +73,7 @@ function OnChangeTopFaction(nChangeValue)
 			[12] = {"L­u Yªn c«n",{0,5,6009, 1,1,-1,-1,-1,-1,-1,-1,-1,9}},
 			[14] = {"HuyÒn Yªn kiÕm",{0,2,6010, 1,1,-1,-1,-1,-1,-1,-1,-1,9}},
 			[15] = {"Vò Yªn bót",{0,9,6011, 1,1,-1,-1,-1,-1,-1,-1,-1,9}},
-			[17] = {"Hµ Tiªm Th­¬ng",{0,6,6012, 1,1,-1,-1,-1,-1,-1,-1,-1,9}},
+			[17] = {"He Tian Spear",{0,6,6012, 1,1,-1,-1,-1,-1,-1,-1,-1,9}},
 			[18] = {"Hµnh Yªn Cung",{0,4,6013, 1,1,-1,-1,-1,-1,-1,-1,-1,9}},
 			[20] = {"Träc Yªn nhÉn",{0,7,6014, 1,1,-1,-1,-1,-1,-1,-1,-1,9}},
 			[21] = {"Yªu Yªn tr¶o",{0,11,6015, 1,1,-1,-1,-1,-1,-1,-1,-1,9}},
@@ -113,23 +113,23 @@ function OnChangeTopFaction(nChangeValue)
 			WriteLogEx("Phan thuong Top Mon phai","thÊt b¹i",1,tb_wohucanglong_item_aword_83[nRoute][1])
 		end				
 	else
-		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t cã lçi khi gäi function OnChangeTopFaction.")		
+		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t error calling function OnChangeTopFaction.")		
 	end	
 end
 
 function OnChangeTopWorld(nChangeValue)
 	local nValue = -nChangeValue		
 	if nValue == 1 then			
-		local nRet, nItemIdx = gf_AddItemEx({0,105,15,1,1,-1,-1,-1,-1,-1,-1},"Phiªu Vò")
+		local nRet, nItemIdx = gf_AddItemEx({0,105,15,1,1,-1,-1,-1,-1,-1,-1},"Piao Wu")
 		if Ret == 1 then
 			Say("Chóc mõng b¹n nhËn ®­îc 1 Phiªu Vò!",0)
 			Msg2Player("B¹n nhËn ®­îc 1 Phiªu Vò.")	
-			WriteLogEx("Phan thuong Top The gioi","nhËn",1,"Phiªu Vò")
+			WriteLogEx("Phan thuong Top The gioi","nhËn",1,"Piao Wu")
 		else
-			WriteLogEx("Phan thuong Top The gioi","thÊt b¹i",1,"Phiªu Vò")
+			WriteLogEx("Phan thuong Top The gioi","thÊt b¹i",1,"Piao Wu")
 		end	
 	else
-		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t cã lçi khi gäi function OnChangeTopFaction.")		
+		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t error calling function OnChangeTopFaction.")		
 	end	
 end
 
@@ -144,7 +144,7 @@ function OnChangeTALK(nChangeValue)
 			Msg2Player("B¹n nhËn ®­îc 48 Tinh Anh LÖnh Kú")	
 			WriteLogEx("Bang hoi tinh anh 3","nhËn Tinh Anh LÖnh Kú","","","",GetTongName())
 	else
-		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t cã lçi khi gäi function OnChangeTALK.")		
+		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t error calling function OnChangeTALK.")		
 	end
 end 
 
@@ -161,7 +161,7 @@ function OnChangeTTLT(nChangeValue)
 			WriteLogEx("Phan thuong tham du BHTA","thÊt b¹i",1,"Thiªn Th¹ch Linh Th¹ch")
 		end	
 	else
-		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t cã lçi khi gäi function OnChangeTTLT.")		
+		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t error calling function OnChangeTTLT.")		
 	end	
 end
 
@@ -176,7 +176,7 @@ function OnChangeBHTANhanSam(nChangeValue)
 				WriteLogEx("BHTA 3 Prize","thÊt b¹i",nValue,"Nh©n S©m V¹n N¨m","",GetTongName())
 			end
 	else
-		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t cã lçi khi gäi function OnChangeBHTANhanSam.")		
+		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t error calling function OnChangeBHTANhanSam.")		
 	end
 end 
 
@@ -185,18 +185,18 @@ function OnChangeVD(nChangeValue)
 	if nChangeValue == 1 then		
 			for i=100,103 do
 				if i ~= 102 then
-					local nRet, nItemIdx = gf_AddItemEx({0,i,8000+ GetBody(),1,1,-1,-1,-1,-1,-1,-1},"Trang bÞ Viªm §Õ")
+					local nRet, nItemIdx = gf_AddItemEx({0,i,8000+ GetBody(),1,1,-1,-1,-1,-1,-1,-1},"Yandi Equipment")
 					if Ret == 1 then
-						WriteLogEx("Promotion Tet","nhËn",1,"Trang bÞ Viªm §Õ")
+						WriteLogEx("Promotion Tet","nhËn",1,"Yandi Equipment")
 					else
-						WriteLogEx("Promotion Tet","thÊt b¹i",1,"Trang bÞ Viªm §Õ")
+						WriteLogEx("Promotion Tet","thÊt b¹i",1,"Yandi Equipment")
 					end
 			 	end
 		 	end
 		 	Say("Chóc mõng c¸c h¹ nhËn ®­îc bé trang bÞ Viªm §Õ!",0)			
 			Msg2Player("B¹n nhËn ®­îc bé trang bÞ Viªm §Õ.")					
 	else
-		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t cã lçi khi gäi function OnChangeVD.")		
+		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t error calling function OnChangeVD.")		
 	end	
 end
 
@@ -227,7 +227,7 @@ function OnChangeHKLB(nChangeValue)
 			WriteLogEx("HKLB","thÊt b¹i",2,"Thiªn Th¹ch Linh Th¹ch")
 		end	
 	else
-		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t cã lçi khi gäi function OnChangeHKLB.")		
+		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t error calling function OnChangeHKLB.")		
 	end	
 end 
 
@@ -238,14 +238,14 @@ function OnChangeBocThamBHTA(nChangeValue)
 		if nRet ~= 1 then	
 			WriteLogEx("Boc tham BHTA","thÊt b¹i",1,"§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch")
 		end	
-		nRet, nItemIdx = gf_AddItemEx2({0,112,78,1,1},"L¨ng Ba Vi Bé","Boc tham BHTA","nhËn",0)
+		nRet, nItemIdx = gf_AddItemEx2({0,112,78,1,1},"Lingbo Microstep","Boc tham BHTA","nhËn",0)
 		if nRet == 1 then			
 			Say("Chóc mõng c¸c h¹ nhËn ®­îc 1 §Þnh Hån Thiªn Th¹ch ThÇn Th¹ch vµ 1 L¨ng Ba Vi Bé!",0)			
 		else
-			WriteLogEx("Boc tham BHTA","thÊt b¹i",1,"L¨ng Ba Vi Bé")			
+			WriteLogEx("Boc tham BHTA","thÊt b¹i",1,"Lingbo Microstep")			
 		end
 	else
-		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t cã lçi khi gäi function OnChangeBocThamBHTA.")		
+		WriteLog("[Ext Point Wrong]\t"..GetAccount().."\t"..GetName().."\t error calling function OnChangeBocThamBHTA.")		
 	end
 end
 

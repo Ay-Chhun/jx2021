@@ -10,8 +10,8 @@ g_szThisFile = "\\script\\online\\viet_event\\mooncake_08\\mooncake_award.lua"
 g_tbItem = 
 {
 	--		Ãû³Æ		G1	G2	G3		ÊýÁ¿ ÀàÐÍ
-	[1] = {"TiÓu Nh­ ý",	2,	1,	30030,	20,	1},
-	[2] = {"Chiªm Y Phæ",	0,	107,66,		1,	2},
+	[1] = {"Little Ruyi",	2,	1,	30030,	20,	1},
+	[2] = {"Zhanyi Manual",	0,	107,66,		1,	2},
 	[3] = {"Tö Hµ MËt tÞch",	0,	107,65,		1,	3},
 	[4] = {"Tö Hµ MËt tÞch",	0,	107,65,		1,	3},
 	[5] = {"Thiªn Hµ MËt tÞch",	0,	107,64,		1,	4},
@@ -64,7 +64,7 @@ function draw_prize_cb(szKey, nKey1, nKey2, nCount)
 			if nDateNow - nDateFlag < 46800  then
 				nPrizeType = i
 				AddRelayShareData(RELAY_DB_08_MOONCAKE_VIET, 0, 0, "", "", 0, szPlayerName, "dddd", nWishType, nPrizeType, nPrizeFlag, nDateFlag)
-				Msg2Global(i..". "..szPlayerName.." NhËn ®­îc "..g_tbItem[i][5].." "..g_tbItem[i][1])
+				Msg2Global(i..". "..szPlayerName.." Received"..g_tbItem[i][5].." "..g_tbItem[i][1])
 				i = i + 1
 			end
 		end
@@ -88,7 +88,7 @@ function draw_prize_cb(szKey, nKey1, nKey2, nCount)
 						tinsert(tbRandom,nRandom)
 						nPrizeType = i
 						AddRelayShareData(RELAY_DB_08_MOONCAKE_VIET, 0, 0, "", "", 0, szPlayerName, "dddd", nWishType, nPrizeType, nPrizeFlag, nDateFlag)
-						Msg2Global(i..". "..szPlayerName.." NhËn ®­îc "..g_tbItem[i][5].." "..g_tbItem[i][1])
+						Msg2Global(i..". "..szPlayerName.." Received"..g_tbItem[i][5].." "..g_tbItem[i][1])
 						i = i + 1
 						break
 					end
@@ -105,7 +105,7 @@ function draw_prize_cb(szKey, nKey1, nKey2, nCount)
 							tinsert(tbRandom,nRandom)
 							nPrizeType = i
 							AddRelayShareData(RELAY_DB_08_MOONCAKE_VIET, 0, 0, "", "", 0, szPlayerName, "dddd", nWishType, nPrizeType, nPrizeFlag, nDateFlag)
-							Msg2Global(i..". "..szPlayerName.." NhËn ®­îc "..g_tbItem[i][5].." "..g_tbItem[i][1])
+							Msg2Global(i..". "..szPlayerName.." Received"..g_tbItem[i][5].." "..g_tbItem[i][1])
 							i = i + 1
 							break
 						end

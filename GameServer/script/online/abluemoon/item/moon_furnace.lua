@@ -22,7 +22,7 @@ function OnUse()
 	if tbMasterSkill[GetPlayerRoute()]  then
 		tinsert(tSay, "Ta muèn tu luyÖn kü n¨ng trÊn ph¸i ®Õn cÊp 10 (tiªu hao 79 xu vËt phÈm)/HoTro_LuyenTranPhai_Train")
 	end
-	tinsert(tSay,"§ãng/gf_DoNothing")
+	tinsert(tSay,"Cancel/gf_DoNothing")
 
 --	if nDate >= 20130517 and nDate <= 20130614 then
 --		tinsert(tSay, 1, "LuyÖn ThÇn T¸n §¬n/Vet_201305_Refine_Dan")				  
@@ -42,7 +42,7 @@ function transfer_neili()
 						"Kİch ho¹t B¾c §Èu TruyÒn C«ng ThuËt/#activate_transfer_neili(1)",	
 						"Kİch ho¹t B¾c §Èu TruyÒn C«ng ThuËt §Æc BiÖt/#activate_transfer_neili(2)",	
 						"Ng­ng luyÖn c«ng/StopTransfer",
-						"Ta sÏ luyÖn sau/gf_DoNothing",
+						"I will train later/gf_DoNothing",
 					  }
 	if nDate < 20130429 then
 		tinsert(tSay, 1, "Kİch ho¹t Di Hoa TiÕp Ngäc/#activate_transfer_neili(3)")				  
@@ -63,7 +63,7 @@ function pratice_neili()
 							"Kİch ho¹t B¾c §Èu D­ìng Sinh ThuËt/#pratice_neili_choose(1)",
 							"Kİch ho¹t B¾c §Èu D­ìng Sinh ThuËt §Æc BiÖt/#pratice_neili_choose(2)",
 							"Ng­ng luyÖn c«ng/StopTransfer",
-							"Ta sÏ luyÖn sau/gf_DoNothing"	
+							"I will train later/gf_DoNothing"	
 						}
 	if GetTrigger(2509) ~= 0 then
 		tremove(tSay,1)	
@@ -75,7 +75,7 @@ function pratice_neili()
 end
 
 function pratice_neili_choose(nSkillType)
-	Say("Chän tÇng muèn luyÖn:",5,"TÇng 1 D­ìng Sinh ThuËt/#active_pratice(1, "..nSkillType..")","TÇng 2 D­ìng Sinh ThuËt/#active_pratice(2, "..nSkillType..")","TÇng 3 D­ìng Sinh ThuËt/#active_pratice(3, "..nSkillType..")","TÇng 4 D­ìng Sinh ThuËt/#active_pratice(4, "..nSkillType..")","Ta sÏ luyÖn sau/gf_DoNothing")
+	Say("Chän tÇng muèn luyÖn:",5,"Tier 1 Health Cultivation Technique/#active_pratice(1,"..nSkillType..")","Tier 2 Health Cultivation Technique/#active_pratice(2,"..nSkillType..")","Tier 3 Health Cultivation Technique/#active_pratice(3,"..nSkillType..")","Tier 4 Health Cultivation Technique/#active_pratice(4,"..nSkillType..")","I will train later/gf_DoNothing")
 end
 
 function active_pratice(nType, nSkillType)
@@ -84,7 +84,7 @@ function active_pratice(nType, nSkillType)
 		format("Sö dông B¹ch C©u Hoµn + B¹ch C©u Tiªn §¬n/#confirm_active_pratice(%d,%d,2)",nType, nSkillType),
 		format("Sö dông §¹i B¹ch C©u Hoµn + B¹ch C©u Tiªn §¬n/#confirm_active_pratice(%d,%d,3)",nType, nSkillType),
 		format("Sö dông B¹ch C©u Hoµn + §¹i B¹ch C©u Hoµn + B¹ch C©u Tiªn §¬n/#confirm_active_pratice(%d,%d,4)",nType, nSkillType),
-		"Ta sÏ luyÖn sau/gf_DoNothing")
+		"I will train later/gf_DoNothing")
 end
 
 

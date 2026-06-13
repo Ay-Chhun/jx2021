@@ -10,13 +10,13 @@ YWZ_EX_TASK_AWARD = 15; --ÉÏ½»Ìì½¾Áî»ñÈ¡¶îÍâ½±ÀøÉÏÏŞ
 
 --ÖÜ³£ÈÎÎñÁĞ±í
 YWZ_WEEK_TASK_TABLE = {
-	{20, "ThÇn §µn Hé Ph¸p", "ThÊt L¹c Nhai (174,222)"},
-	{20, "NhËt ®µn hé ph¸p", "ThÊt L¹c Nhai (191,200)"},
-	{20, "Giang Hå Tiªu TiÓu", "ThÊt L¹c Nhai (179,194)"},
-	{20, "Hoa T«ng M«n Nh©n", "ThÊt L¹c Nhai (181,205)"},
-	{20, "Nhai Th­îng S¬n TÆc", "ThÊt L¹c Nhai (160,209)"},
-	{20, "NguyÖt §µn Hé Ph¸p", "ThÊt L¹c Nhai (149,202)"},
-	{20, "Tinh §µn Hé Ph¸p", "ThÊt L¹c Nhai (172,183)"},
+	{20, "ThÇn §µn Hé Ph¸p", "Qilannai (174,222)"},
+	{20, "NhËt ®µn hé ph¸p", "Qilannai (191,200)"},
+	{20, "Giang Hå Tiªu TiÓu", "Qilannai (179,194)"},
+	{20, "Hoa T«ng M«n Nh©n", "Qilannai (181,205)"},
+	{20, "Nhai Th­îng S¬n TÆc", "Qilannai (160,209)"},
+	{20, "NguyÖt §µn Hé Ph¸p", "Qilannai (149,202)"},
+	{20, "Tinh §µn Hé Ph¸p", "Qilannai (172,183)"},
 }
 
 --RelayShareData---------------------

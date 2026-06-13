@@ -19,9 +19,9 @@ function sp_BaiNian()
 	local tSay = {
 		"Giíi thiÖu ho¹t ®éng chóc tÕt/sp_BaiNian_Intro",
 		"Giíi thiÖu phÇn th­ëng ho¹t ®éng chóc tÕt/sp_BaiNian_AwardInfo",
-		"NhËn bao l× x×/sp_BaiNian_GetLiShiBao",
+		"Receive lucky money packet/sp_BaiNian_GetLiShiBao",
 		"trë l¹i/sp_ReturnMain",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	Say(SP_NPC_NAME..SP_TITLE, getn(tSay), tSay);
 end
@@ -30,8 +30,8 @@ function sp_BaiNian_Intro()
 	local tSay = {};
 	tSay.msg = SP_NPC_NAME.."Xu©n ®Õn råi, ®¹i hiÖp nhanh ®Õn chç cña ta nhËn bao L× X×, më bao L× X× ra sÏ nh×n thÊy nhiÖm vô chóc TÕt, chØ cÇn ng­¬i hoµn thµnh hÕt c¸c nhiÖm vô chóc TÕt, th× cã thÓ nhËn ®­îc phÇn th­ëng trong Bao L× X×. NÕu nh­ cã høng thó, mçi ngµy ®Òu cã thÓ ®i chóc TÕt, phÇn th­ëng trong bao L× X× rÊt phong phó, c¸c ®¹i hiÖp h·y cè g¾ng lªn nhÐ!";
 	tSay.sel = {
-		{"\n Ph¶n håi", "sp_BaiNian"},
-		{"KÕt thóc ®èi tho¹i", "nothing"},
+		{"\n Feedback", "sp_BaiNian"},
+		{"End conversation", "nothing"},
 	};
 	temp_Talk(tSay);
 end
@@ -40,8 +40,8 @@ function sp_BaiNian_AwardInfo()
 	local tSay = {};
 	tSay.msg = SP_NPC_NAME.."Më Bao L× X× nhËn ®­îc kinh nghiÖm, ch©n khÝ, ph¸o. Mçi ngµy ®Òu tham gia ho¹t déng, phÇn th­ëng sÏ th¨ng thªm. Ph¸o lµ mét lo¹i truyÒn thèng, cã thÓ dïng ®Ó ®uæi Niªn Thó ®i.";
 	tSay.sel = {
-		{"\n Ph¶n håi", "sp_BaiNian"},
-		{"KÕt thóc ®èi tho¹i", "nothing"},
+		{"\n Feedback", "sp_BaiNian"},
+		{"End conversation", "nothing"},
 	};
 	temp_Talk(tSay);
 end
@@ -57,16 +57,16 @@ function sp_BaiNian_GetLiShiBao()
 	if gf_Judge_Room_Weight(1, 1, " ") ~= 1 then
 		return 0;
 	end
-	gf_AddItemEx2({2, 1, 30624, 1}, "Bao L× X× N¨m Míi", "Event TÕt Kingsoft", "NhËn bao l× x×", 0, 1);
+	gf_AddItemEx2({2, 1, 30624, 1}, "New Year Lucky Money Packet", "Kingsoft New Year Event", "Receive lucky money packet", 0, 1);
 end
 
 function sp_DaNianShou()
 	local tSay = {
 		"Giíi thiÖu ho¹t déng §¸nh Niªn Thó/sp_DaNianShou_Intro",
 		"Giíi thiÖu phÇn th­ëng ho¹t ®éng §¸nh Niªn Thó/sp_DaNianShou_AwardInfo",
-		"Mua ph¸o/sp_DaNianShou_Buy",
+		"Buy firecrackers/sp_DaNianShou_Buy",
 		"trë l¹i/sp_ReturnMain",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	Say(SP_NPC_NAME..SP_TITLE, getn(tSay), tSay);
 end
@@ -75,8 +75,8 @@ function sp_DaNianShou_Intro()
 	local tSay = {};
 	tSay.msg = SP_NPC_NAME.."Chóc mõng c¸c ®¹i hiÖp n¨m míi vui vÎ, Niªn Thó xuÊt hiÖn, mäi ng­êi ®ång t©m hiÖp lùc ®Ó ®¸nh ®uæi Niªn Thó ®i, ®Ó chóng ta cã c¸i TÕt trän vÑn vui t­¬i! Mçi ngµy vµo lóc 12:00 ®Õn 13:00, buæi tèi vµo lóc 21:00 ®Õn 22:00, Niªn Thó sÏ ngÉu nhiªn xuÊt hiÖn t¹i BiÖn Kinh, D­¬ng Ch©u, Phông T­êng, T­¬ng D­¬ng, Thµnh §«, TuyÒn Ch©u. Sau khi c¸c ®¹i hiÖp nh×n thÊy Niªn Thó xuÊt hiÖn, th× nhanh chãng ®èt ph¸o gÇn xung quanh Niªn Thó, tham gia ho¹t ®éng cã c¬ héi nhËn ®­îc ph¸o, còng cã thÓ mua t¹i chç cña ta ®©y!";
 	tSay.sel = {
-		{"\n Ph¶n håi", "sp_DaNianShou"},
-		{"KÕt thóc ®èi tho¹i", "nothing"},
+		{"\n Feedback", "sp_DaNianShou"},
+		{"End conversation", "nothing"},
 	};
 	temp_Talk(tSay);
 end
@@ -85,8 +85,8 @@ function sp_DaNianShou_AwardInfo()
 	local tSay = {};
 	tSay.msg = SP_NPC_NAME.."Toµn th©n Niªn Thó ®Òu lµ b¶o vËt, khi ®¹i hiÖp ®¸nh Niªn Thó cã thÓ nhËn ®­îc ®iÓm kinh nghiÖm, ch©n khÝ, thiÕt tinh, thiªn huyÔn kh¾c b¶n, qu©n c«ng ch­¬ng, l¨ng ba vi bé vµ c¸c phÇn th­ëng phong phó kh¸c. NÕu nh­ ®¹i hiÖp thÝch Niªn Thó, liªn tôc 15 ngµy, ngµy ngµy ®¸nh Niªn Thó, Niªn Thó nhÊt ®Þnh sÏ tÆng cho ®¹i hiÖp 1 cuèn mËt tÞch s­ m«n. Nhanh ch©n ®Õn ®ã t×m Niªn Thó nhÐ!";
 	tSay.sel = {
-		{"\n Ph¶n håi", "sp_DaNianShou"},
-		{"KÕt thóc ®èi tho¹i", "nothing"},
+		{"\n Feedback", "sp_DaNianShou"},
+		{"End conversation", "nothing"},
 	};
 	temp_Talk(tSay);
 end
@@ -113,6 +113,6 @@ function sp_DaNianShou_Buy_deal(nNum)
 		return 0;
 	end
 	if Pay(nNum * 1000) == 1 then
-		gf_AddItemEx2({2, 1, 30625, nNum}, "Ph¸o N¨m Míi", "Event TÕt Kingsoft", "Ho¹t ®éng §¸nh Niªn Thó", 0, 1);
+		gf_AddItemEx2({2, 1, 30625, nNum}, "New Year Firecracker", "Kingsoft New Year Event", "Ho¹t ®éng §¸nh Niªn Thó", 0, 1);
 	end
 end

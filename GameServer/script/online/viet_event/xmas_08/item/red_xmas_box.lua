@@ -26,19 +26,19 @@ g_szFileName = "red_xmas_box.lua"			--ÎÄ¼þÃû
 g_tbItem = 
 {
 	--		ÀàÐÍ	   ¸ÅÂÊ		ÊýÁ¿ Ãû×Ö			ID1,ID2,ID3
-	[1] = {TYPE_ITEM,	250,		1,	"Kim Cang Phôc Ma kinh",	0,	107,	1},
+	[1] = {TYPE_ITEM,	250,		1,	"Vajra Demon-Subduing Sutra",	0,	107,	1},
 	[2] = {TYPE_ITEM,	250,		1,	"TiÒm Long MËt tÞch",		0,	107,	3},
 	[3] = {TYPE_ITEM,	250,		1,	"V« TrÇn MËt tÞch",		0,	107,	5},
 	[4] = {TYPE_ITEM,	250,		1,	"Thiªn La MËt TÞch",		0,	107,	7},
 	[5] = {TYPE_ITEM,	250,		1,	"Nh­ ý MËt TÞch",		0,	107,	9},
-	[6] = {TYPE_ITEM,	250,		1,	"BÝch H¶i Phæ",		0,	107,	11},
+	[6] = {TYPE_ITEM,	250,		1,	"Azure Sea Score",		0,	107,	11},
 	[7] = {TYPE_ITEM,	250,		1,	"Hçn §én MËt tÞch",		0,	107,	13},
 	[8] = {TYPE_ITEM,	250,		1,	"Quý Thiªn MËt tÞch",		0,	107,	15},
 	[9] = {TYPE_ITEM,	250,		1,	"HuyÒn ¶nh MËt tÞch",		0,	107,	17},
 	[10] = {TYPE_ITEM,	250,		1,	"Qu©n Tö MËt tÞch",		0,	107,	19},
 	[11] = {TYPE_ITEM,	250,		1,	"TrÊn Qu©n MËt tÞch",		0,	107,	21},
 	[12] = {TYPE_ITEM,	250,		1,	"Xuyªn V©n MËt tÞch",		0,	107,	23},
-	[13] = {TYPE_ITEM,	250,		1,	"U Minh Quû Lôc",		0,	107,	25},
+	[13] = {TYPE_ITEM,	250,		1,	"Nether Ghost Record",		0,	107,	25},
 	[14] = {TYPE_ITEM,	250,		1,	"Linh Cæ MËt tÞch",		0,	107,	27},
 	[15] = {TYPE_ITEM,	250,		1,	"§¹t Ma Vò quyÕt",	2,	6,		10},
 	[16] = {TYPE_ITEM,	250,		1,	"Long Tr¶o Thñ quyÕt",2,	6,		20},
@@ -46,34 +46,34 @@ g_tbItem =
 	[18] = {TYPE_ITEM,	250,		1,	"M·n Thiªn Vò quyÕt",	2,	6,		46},
 	[19] = {TYPE_ITEM,	250,		1,	"§¹i Bi quyÕt",2,	6,		59},
 	[20] = {TYPE_ITEM,	250,		1,	"Mª T©m Khóc quyÕt",2,	6,		70},
-	[21] = {TYPE_ITEM,	250,		1,	"Tóy QuyÒn",		2,	6,		79},
+	[21] = {TYPE_ITEM,	250,		1,	"Drunken Fist",		2,	6,		79},
 	[22] = {TYPE_ITEM,	250,		1,	"§¶ CÈu quyÕt",	2,	6,		88},
 	[23] = {TYPE_ITEM,	250,		1,	"ThÊt TiÖt KiÕm quyÕt",2,	6,		108},
 	[24] = {TYPE_ITEM,	250,		1,	"Th­îng Thanh C«ng quyÕt",2,	6,		119},
 	[25] = {TYPE_ITEM,	250,		1,	"BÝch Th­¬ng quyÕt",2,	6,		130},
 	[26] = {TYPE_ITEM,	250,		1,	"L­u TuyÖt TiÔn quyÕt",2,	6,		141},
 	[27] = {TYPE_ITEM,	250,		1,	"BÝ kiÕp Thi LiÖt Ma C«ng",	2,	6,		154},
-	[28] = {TYPE_ITEM,	250,		1,	"BÝ kiÕp Tµm Cæ",		2,	6,		168},
+	[28] = {TYPE_ITEM,	250,		1,	"Tam Co secret manual",		2,	6,		168},
 	[29] = {TYPE_ITEM,	1000,		1,	"B¸t B¶o TÈy Tñy Tiªn §¬n",	2,	0,		138},
-	[30] = {TYPE_ITEM,	2000,		1,	"TÈy Tñy linh ®¬n",		2,	0,		137},
-	[31] = {TYPE_ITEM,	500000,	1,	"TiÓu Nh­ ý",		2,	1,		30030},
-	[32] = {TYPE_ITEM,	10000,		1,	"Chiªm Y Phæ",		0,	107,	66},
+	[30] = {TYPE_ITEM,	2000,		1,	"Marrow-Cleansing Spirit Pill",		2,	0,		137},
+	[31] = {TYPE_ITEM,	500000,	1,	"Little Ruyi",		2,	1,		30030},
+	[32] = {TYPE_ITEM,	10000,		1,	"Zhanyi Manual",		0,	107,	66},
 	[33] = {TYPE_ITEM,	15000,	1,	"Tö Hµ MËt tÞch",		0,	107,	65},
 	[34] = {TYPE_ITEM,	20000,	1,	"Thiªn Hµ MËt tÞch",		0,	107,	64},
 	[35] = {TYPE_ITEM,	400000,	1,	"M¶nh Thiªn th¹ch",		2,	2,		7},
 	[36] = {TYPE_ITEM,	800000,	1,	"Thiªn th¹ch",			2,	2,		8},
-	[37] = {TYPE_ITEM,	1000000,	1,	"M¶nh B¨ng th¹ch",		2,	1,		148},
-	[38] = {TYPE_ITEM,	1000000,	1,	"B¨ng th¹ch",			2,	1,		149},
-	[39] = {TYPE_ITEM,	10000,	1,	"C©y B¸t Nh·",		2,	0,		398},
-	[40] = {TYPE_ITEM,	10000,	1,	"C©y B¸t Nh· nhá",	2,	0,		504},
-	[41] = {TYPE_ITEM,	25000000,	1,	"Lé thñy",			2,	0,		351},
+	[37] = {TYPE_ITEM,	1000000,	1,	"Ice Stone Fragment",		2,	1,		148},
+	[38] = {TYPE_ITEM,	1000000,	1,	"Ice Stone",			2,	1,		149},
+	[39] = {TYPE_ITEM,	10000,	1,	"Prajna Tree",		2,	0,		398},
+	[40] = {TYPE_ITEM,	10000,	1,	"Small Prajna Tree",	2,	0,		504},
+	[41] = {TYPE_ITEM,	25000000,	1,	"Dew Water",			2,	0,		351},
 	[42] = {TYPE_ITEM,	2000000,	1,	"Bång Lai Lé Thñy",		2,	1,		1012},
 	--		ÀàÐÍ	   ¸ÅÂÊ ÊýÖµ	ÌáÊ¾×Ö·û´® 		ÃüÁî×Ö·û´®
 	[43] = {TYPE_CMD,	14000000,	1,	{"®iÓm danh väng"},		"ModifyReputation(%d,0)"},
 	[44] = {TYPE_CMD,	14000000,	2,	{"®iÓm danh väng"},		"ModifyReputation(%d,0)"},
 	[45] = {TYPE_CMD,	14000000,	3,	{"®iÓm danh väng"},		"ModifyReputation(%d,0)"},
 	[46] = {TYPE_CMD,	14000000,	20,	"®iÓm tu luyÖn",		"ModifyPopur(%d)"},
-	[47] = {TYPE_CMD,	13225000,	100,"§iÓm Tµng kiÕm",	"SetTask(1801, GetTask(1801)+%d)"},
+	[47] = {TYPE_CMD,	13225000,	100,"Sword Hoard Points",	"SetTask(1801, GetTask(1801)+%d)"},
 }
 
 
@@ -111,7 +111,7 @@ function use_it()
 		local szItemName = "®iÓm kinh nghiÖm"
 		local nItemNum = nExp
 		local szInfoDescribe = format("ModifyExp(%d)", nItemNum)
-		WriteLogEx(g_szLogTitle, "Hép Quµ §á", nItemNum, szItemName, szInfoDescribe, GetTongName() )
+		WriteLogEx(g_szLogTitle, "Red Gift Box", nItemNum, szItemName, szInfoDescribe, GetTongName() )
 	end
 	--ÎïÆ·½±Àø²¿·Ö
 	local nRandIdx = get_random_item(g_tbItem)
@@ -144,9 +144,9 @@ function use_it()
 		else
 			Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." "..szItemName)
 		end
-		WriteLogEx(g_szLogTitle, "Hép Quµ §á", nItemNum, szItemName, szInfoDescribe, GetTongName() )
+		WriteLogEx(g_szLogTitle, "Red Gift Box", nItemNum, szItemName, szInfoDescribe, GetTongName() )
 	else
-		WriteLogEx(g_szLogTitle, "Hép Quµ §á", "", "", "", "", "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
+		WriteLogEx(g_szLogTitle, "Red Gift Box", "", "", "", "", "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
 	end
 end
 

@@ -22,9 +22,9 @@ end
 
 g_tConfig = {
 	--batch, award,start_date,end_date
-	[PackItemId(2,114,117)] = {0,  0,{open_equip_shop, 0, {3072, "Cöa Hµng Ch©n Vâ Tinh Hoa"}}, 0, 0 },--Õæ¾í¾«»ª
-	[PackItemId(2,114,143)] = {100,1,{_add_popur2,500, {PackItemId(2,114,143)}, "LÞch luyÖn" }, 0, 0 },--ÕæÎä»êÊ¯
-	[PackItemId(2,114,144)] = {100,1,{_add_popur2,1000, {PackItemId(2,114,144)}, "LÞch luyÖn" }, 0, 0},--´óÕæÎä»êÊ¯
+	[PackItemId(2,114,117)] = {0,  0,{open_equip_shop, 0, {3072, "True Martial Essence Store"}}, 0, 0 },--Õæ¾í¾«»ª
+	[PackItemId(2,114,143)] = {100,1,{_add_popur2,500, {PackItemId(2,114,143)}, "Calendar of Cultivation" }, 0, 0 },--ÕæÎä»êÊ¯
+	[PackItemId(2,114,144)] = {100,1,{_add_popur2,1000, {PackItemId(2,114,144)}, "Calendar of Cultivation" }, 0, 0},--´óÕæÎä»êÊ¯
 	
 	[PackItemId(2,1,31014)] = {100,10,{AddItem,1, {2,1,31015,}, "Ch©n Nguyªn Néi §¬n" }, 0, 0},--ÕæÔªËéÆ¬
 }
@@ -76,7 +76,7 @@ function ConfirmUse(nItemIdx, nCount, bSure)
 		return
 	end
 	
-	if award[4] == "LÞch luyÖn" and get_popur2_left_cap(1) <= 0 then
+	if award[4] == "Calendar of Cultivation" and get_popur2_left_cap(1) <= 0 then
 		return
 	end
 
@@ -89,7 +89,7 @@ function ConfirmUse(nItemIdx, nCount, bSure)
 			award[2], award[4]);
 		local tSel = {
 			format('%s/#AskClientForNumberEx("%s", 1, %d, %d)', "NhËp vµo sè lÇn ®æi", "Sè lÇn ®æi", nMax, nItemIdx),
-			"Hñy bá/nothing",
+			"Cancel/nothing",
 		}
 		Say(msg, getn(tSel), tSel)
 		return

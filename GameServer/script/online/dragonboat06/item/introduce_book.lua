@@ -10,7 +10,7 @@ function OnUse()
 		selTab[getn(selTab)+1] = "Tra xem tin tøc tÊt c¶ ng­êi ch¬i trong b¶n ®å./seeplayerinfo";
 		selTab[getn(selTab)+1] = "Tra xem xÕp h¹ng ng­êi ch¬i hiÖn t¹i trong b¶n ®å/seerank";
 	end;
-	selTab[getn(selTab)+1] = "§ãng/nothing";
+	selTab[getn(selTab)+1] = "Close/nothing";
 	Say("<color=green>S¸ch chØ dÉn ®ua thuyÒn:<color> Tæng céng b¹n ®· thi ®Êu <color=yellow>"..GetTask(ATTENDCOUNT).."trËn<color>, sè ®iÓm lµ <color=yellow>"..GetTask(BONUSPOINT).."<color>.",getn(selTab),selTab);
 end;
 
@@ -31,8 +31,8 @@ function knowrule()
 			"Giíi thiÖu ®ua thuyÒn rång./knowmatch1",
 			"Giíi thiÖu c¸ch ch¬i./knowtech",
 			"XÕp h¹ng vµ c¸ch tÝnh ®iÓm./knowbonus",
-			"VÒ môc tr­íc./OnUse",
-			"§ãng/nothing",
+			"Back to the previous section. /OnUse",
+			"Close/nothing",
 			};
 	Say("<color=green>S¸ch chØ dÉn ®ua thuyÒn:<color> B¹n cã thÓ tra xem:",getn(selTab),selTab);
 end;
@@ -88,8 +88,8 @@ function seeplayerinfo()
 			Write_Log("PlayerIndex Error","introduce_book.lua,seeplayerinfo()");
 		end;
 	end;
-	playerTab[getn(playerTab)+1] = "VÒ môc lôc tr­íc./OnUse";
-	playerTab[getn(playerTab)+1] = "§ãng/nothing";
+	playerTab[getn(playerTab)+1] = "Back to the previous table of contents. /OnUse";
+	playerTab[getn(playerTab)+1] = "Close/nothing";
 	PlayerIndex = OldPlayerIndex;
 	Say("<color=green>S¸ch chØ dÉn ®ua thuyÒn:<color> NÕu muèn tra xem tin tøc ng­êi ch¬i nµo ®ã h·y chän tªn ng­êi ®ã.",getn(playerTab),playerTab);
 end;
@@ -111,7 +111,7 @@ function moreinfo(msid)
 			nBestTime = nBestTime/18;
 			nMin = floor(nBestTime/60);
 			nSec = format("%.2f",nBestTime - nMin*60);	--Ð¡ÊýµãºóÁ½Î»¾Í¹»ÁË
-			sTime = "<color=red>"..nMin.." Phót "..nSec.." gi©y<color>"
+			sTime = "<color=red>"..nMin.." minutes"..nSec.." seconds<color>"
 		end;
 		sContent = "                                  <color=green>Tin tøc ng­êi ch¬i<color><enter> Tªn:<color=yellow>"..GetName().."<color><enter>Sè lÇn ®ua:<color=yellow>"..GetTask(ATTENDCOUNT).."<color><enter>HiÖn t¹i ®iÓm:<color=yellow>"..GetTask(BONUSPOINT).."<color><enter>Thêi gian nhanh nhÊt:"..sTime;
 	else
@@ -132,7 +132,7 @@ function seerank()
 	for i=1,nPlayerCount do
 		PlayerIndex = RankTab[i];
 		if PlayerIndex > 0 then
-			sContent = sContent.."thø"..NumTab[i].." h¹ng:<color=yellow>"..GetName().."<color><enter>";
+			sContent = sContent.."the"..NumTab[i].." rank:<color=yellow>"..GetName().."<color><enter>";
 		else
 			Write_Log("PlayerIndex Error","introduce_book.lua,seerank()");
 		end;
@@ -147,7 +147,7 @@ function knowboat()
 		selTab[i] = BoatInfo[i][1].."/#knowboatdetail("..i..")";
 	end;
 	selTab[getn(selTab)+1] = "Quay l¹i môc lôc tr­íc./OnUse";
-	selTab[getn(selTab)+1] = "§ãng/nothing";
+	selTab[getn(selTab)+1] = "Close/nothing";
 	Say("<color=green>S¸ch chØ dÉn ®ua thuyÒn:<color> B¹n muèn t×m hiÓu thuyÒn rång nµo?",getn(selTab),selTab);
 end;
 

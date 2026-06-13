@@ -115,7 +115,7 @@ function MR_ProcessReadyTimer()
 		RunMission(MISSION_ID);
 	else
 		SetMissionV(MV_TIMER_LOOP,nLoop-1);
-		Msg2MSAll(MISSION_ID,"H«n lÔ s¾p kÕt thóc, chØ cßn"..(nLoop*5).." phót ");
+		Msg2MSAll(MISSION_ID,"H«n lÔ s¾p kÕt thóc, chØ cßn"..(nLoop*5).." minutes");
 	end;
 end;
 --´¦Àí»éÀñ½øÐÐÖÐµÄÊÂ¼þ
@@ -130,7 +130,7 @@ function MR_ProcessStartedTimer()
 	else
 		SetMissionV(MV_TIMER_LOOP,nLoop-1);
 		if mod(nLoop,2) == 0 then
-			Msg2MSAll(MISSION_ID,"H«n lÔ s¾p kÕt thóc, chØ cßn"..(nLoop*5).." phót ");
+			Msg2MSAll(MISSION_ID,"H«n lÔ s¾p kÕt thóc, chØ cßn"..(nLoop*5).." minutes");
 		end;
 		local fAddExp = function(tArg)
 			ModifyExp(GetLevel()^2*15);
@@ -194,7 +194,7 @@ end;
 function MR_CreateMapNPC(nFieldID)
 	local nNpcIndex = 0;
 	if nFieldID == 1 then
-		nNpcIndex = CreateNpc("Th­¬ng nh©n", "Sø gi¶ h«n lÔ", 851, 1554, 3232)
+		nNpcIndex = CreateNpc("Th­¬ng nh©n", "Wedding Envoy", 851, 1554, 3232)
 	  	SetNpcScript(nNpcIndex, "\\script\\½á»é\\npc\\»éÇì´«ËÍÈË.lua");  
 		nNpcIndex = CreateNpc("Th­¬ng nh©n", "DÞch vô h«n nh©n", 851, 1567, 3156)
 		SetNpcScript(nNpcIndex, "\\script\\½á»é\\npc\\»éÇìÉÌÈË.lua");  		
@@ -215,7 +215,7 @@ function MR_CreateMapNPC(nFieldID)
 		SetNpcScript(nNpcIndex, "\\script\\½á»é\\npc\\¾ÆÏ¯.lua"); 
 		WriteLog("[KÕt h«n]: T¹o NPC phôc vô hãa trang thµnh c«ng");
 	elseif nFieldID == 2 then
-		nNpcIndex = CreateNpc("Th­¬ng nh©n", "Sø gi¶ h«n lÔ", 852, 1615, 3276)
+		nNpcIndex = CreateNpc("Th­¬ng nh©n", "Wedding Envoy", 852, 1615, 3276)
 		SetNpcScript(nNpcIndex, "\\script\\½á»é\\npc\\»éÇì´«ËÍÈË.lua");  		
 		nNpcIndex = CreateNpc("Th­¬ng nh©n", "DÞch vô h«n nh©n", 852, 1600, 3225)
 		SetNpcScript(nNpcIndex, "\\script\\½á»é\\npc\\»éÇìÉÌÈË.lua"); 		
@@ -242,7 +242,7 @@ function MR_CreateMapNPC(nFieldID)
 		SetNpcScript(nNpcIndex, "\\script\\½á»é\\npc\\¾ÆÏ¯.lua"); 	
 		WriteLog("[KÕt h«n]: T¹o NPC phôc phôc tuÇn tr¨ng mËt thµnh c«ng");
 	elseif nFieldID == 3 then
-		nNpcIndex = CreateNpc("Th­¬ng nh©n", "Sø gi¶ h«n lÔ", 853, 1550, 3217)
+		nNpcIndex = CreateNpc("Th­¬ng nh©n", "Wedding Envoy", 853, 1550, 3217)
 		SetNpcScript(nNpcIndex, "\\script\\½á»é\\npc\\»éÇì´«ËÍÈË.lua"); 		
 		nNpcIndex = CreateNpc("Th­¬ng nh©n", "DÞch vô h«n nh©n", 853, 1654, 3136)
 		SetNpcScript(nNpcIndex, "\\script\\½á»é\\npc\\»éÇìÉÌÈË.lua"); 	
@@ -295,7 +295,7 @@ function MR_CreateMapNPC(nFieldID)
 		SetNpcScript(nNpcIndex, "\\script\\½á»é\\npc\\¾ÆÏ¯.lua"); 	
 		WriteLog("[KÕt h«n]: T¹o NPC phôc vô ®éng phßng thµnh c«ng");
 	elseif nFieldID == 4 then
-		nNpcIndex = CreateNpc("Th­¬ng nh©n", "Sø gi¶ h«n lÔ", 854, 1612, 3324)
+		nNpcIndex = CreateNpc("Th­¬ng nh©n", "Wedding Envoy", 854, 1612, 3324)
 		SetNpcScript(nNpcIndex, "\\script\\½á»é\\npc\\»éÇì´«ËÍÈË.lua"); 		
 		nNpcIndex = CreateNpc("Th­¬ng nh©n", "DÞch vô h«n nh©n", 854, 1644, 3277)
 		SetNpcScript(nNpcIndex, "\\script\\½á»é\\npc\\»éÇìÉÌÈË.lua"); 	

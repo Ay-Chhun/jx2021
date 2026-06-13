@@ -67,7 +67,7 @@ function newres_general()
 		"Bæn So¸i muèn kÝch ho¹t nh©n ®«i kinh nghiÖm/double_exp_kick_off",
 		"Ta muèn quay vÒ T­¬ng D­¬ng (tèn 10 b¹c)/ask_reason",
 		"Ta muèn tiÕn vµo khu vùc thu thËp (tèn 5 b¹c)/go_gather",
-		"Kh«ng cã g×/gf_DoNothing",	
+		"Nothing/gf_DoNothing",	
 	}
 	Say(szNpcName..szSay,getn(tSay),tSay);
 end
@@ -123,7 +123,7 @@ function use_jungong(nType)
 	elseif nType == 3 then
 		szType = "Qu©n C«ng Huy Hoµng"
 	end
-	Say(szNpcName.."Ng­¬i muèn sö dông <color=yellow>"..szType.." nhËn phÇn th­ëng. NÕu hoµn thµnh nhiÖm vô trong thêi gian Nguyªn So¸i kÝch ho¹t thu thËp tµi nguyªn sÏ ®­îc nh©n ®«i kinh nghiÖm.",2,format("§ång ý/#confirm_use_jungong(%d)",nType),"Ta ch­a muèn nhËn th­ëng/gf_DoNothing")
+	Say(szNpcName.."Ng­¬i muèn sö dông <color=yellow>"..szType.." nhËn phÇn th­ëng. NÕu hoµn thµnh nhiÖm vô trong thêi gian Nguyªn So¸i kÝch ho¹t thu thËp tµi nguyªn sÏ ®­îc nh©n ®«i kinh nghiÖm.",2,format("Agree/#confirm_use_jungong(%d)",nType),"Ta ch­a muèn nhËn th­ëng/gf_DoNothing")
 end
 
 function no_jungong()
@@ -168,11 +168,11 @@ function confirm_use_jungong(nType)
 	}
 	
 	if tonumber(date("%y%m%d")) >= 100709 and tonumber(date("%y%m%d")) <= 100808 then
-		gf_AddItemEx2({2,1,30205,80}, "Tói kho¸ng th¹ch", "Hoat dong thang 7 nam 2010", "Tµi Nguyªn ChiÕn")
+		gf_AddItemEx2({2,1,30205,80}, "Mineral Bag", "Hoat dong thang 7 nam 2010", "Resource Battle")
 	elseif tonumber(date("%y%m%d")) >= 100813 and tonumber(date("%y%m%d")) <= 100912 then
-		gf_AddItemEx2({ 2, 1, 30225, 80}, "Nguyªn LiÖu Lµm B¸nh", "Hoat dong thang 8 nam 2010", "Tµi Nguyªn ChiÕn")
+		gf_AddItemEx2({ 2, 1, 30225, 80}, "Cake Ingredients", "Hoat dong thang 8 nam 2010", "Resource Battle")
 	elseif tonumber(date("%y%m%d")) >= 101029 and tonumber(date("%y%m%d")) <= 101205 then
-		gf_AddItemEx2({ 2, 1, 30250, tb_jun_gong_num[nType] * 50}, "nguyªn liÖu event 201011", "Hoat dong thang 11 nam 2010", "Tµi Nguyªn ChiÕn")
+		gf_AddItemEx2({ 2, 1, 30250, tb_jun_gong_num[nType] * 50}, "nguyªn liÖu event 201011", "Hoat dong thang 11 nam 2010", "Resource Battle")
 	end
 	
 	local tRoseQuantity = 
@@ -198,7 +198,7 @@ function confirm_use_jungong(nType)
 		nMaterial1009 = 50
 	end
 	if tonumber(date("%y%m%d")) >= 100929 and tonumber(date("%y%m%d")) <= 101024 then
-		gf_AddItemEx2({ 2, 1, 30233, nMaterial1009}, "Bét M×", "Hoat dong thang 9 nam 2010", "Tµi Nguyªn ChiÕn")
+		gf_AddItemEx2({ 2, 1, 30233, nMaterial1009}, "Flour", "Hoat dong thang 9 nam 2010", "Resource Battle")
 	end
 	
 	ModifyExp(nExpAward)	
@@ -279,7 +279,7 @@ function double_exp_kick_off()
 end
 
 function ask_reason()	
-	AskClientForString("leave","NhÑ nhµng rêi khái...",1,32,"Sao ph¶i rêi khái?");
+	AskClientForString("leave","Gently leaving...",1,32,"Sao ph¶i rêi khái?");
 end;	
 
 function leave(sLeaveMsg)

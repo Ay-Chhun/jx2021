@@ -9,7 +9,7 @@ function main()
 end;
 
 function ask_reason()
-	AskClientForString("leave","NhÑ nhµng rêi khái...",1,32,"Sao ph¶i rêi khái?");
+	AskClientForString("leave","Gently leaving...",1,32,"Sao ph¶i rêi khái?");
 end;	
 
 function leave(sLeaveMsg)
@@ -23,8 +23,8 @@ end;
 
 function go_out_room()
 	local selTab = {
-				"§ång ý/go_out_room_confirm",
-				"Hñy bá/nothing",
+				"Agree/go_out_room_confirm",
+				"Cancel/nothing",
 				}
 	Say(g_szInfoHeader.."Ng­¬i cã ch¾c muèn ra ngo¹i ®­êng?",getn(selTab),selTab);
 end;
@@ -33,7 +33,7 @@ function go_out_room_confirm()
 	SetPos(tPos_Out_Room[1],tPos_Out_Room[2]-10);
 	SetTaskTemp(TSK_TEMP_STATUS,0);
 	TM_StopTimeGuage(-1);
-	Msg2MSAll(MISSION_ID,GetName().." ®i ra tõ néi ®­êng.");
+	Msg2MSAll(MISSION_ID,GetName().." goes out from the inner path.");
 end;
 
 function apply_enter_in_room()
@@ -42,7 +42,7 @@ function apply_enter_in_room()
 	end;
 	local nNormalPlayerCount = TM_GetNormalPlayerCount();
 	if nNormalPlayerCount >= MAX_NORMAL_PLAYER_COUNT then
-		Talk(1,"main",g_szInfoHeader.."Trong bang ®· cã <color=yellow>"..MAX_NORMAL_PLAYER_COUNT.."<color> vÞ cao thñ tiÕn vµo néi ®­êng, ng­¬i h·y chê mét chót xÝu n÷a nhÐ.");
+		Talk(1,"main",g_szInfoHeader.."The guild already has <color=yellow>"..MAX_NORMAL_PLAYER_COUNT.."<color> vÞ cao thñ tiÕn vµo néi ®­êng, ng­¬i h·y chê mét chót xÝu n÷a nhÐ.");
 		return 0;
 	end;
 	local nRoute = GetPlayerRoute();
@@ -175,13 +175,13 @@ function remove_faction1()
 		return 0;
 	end;
 	local selTab = {
-				"ThiÕu L©m/#remove_faction2(1)",
+				"Shaolin/#remove_faction2(1)",
 				"§­êng M«n/#remove_faction2(2)",
 				"Nga My/#remove_faction2(3)",
-				"C¸i Bang/#remove_faction2(4)",
-				"Vâ §ang/#remove_faction2(5)",
-				"Trang kÕ/remove_faction1_1",
-				"Chän kÕt thóc/remove_faction_confirm",
+				"Beggar Clan/#remove_faction2(4)",
+				"Wudang/#remove_faction2(5)",
+				"Next page/remove_faction1_1",
+				"Choose to finish/remove_faction_confirm",
 				"Ta suy nghÜ l¹i!/nothing",
 				}
 	Say(g_szInfoHeader.."Xin mêi b¹n chän bá lo¹i bãng hé vÖ <color=yellow>1<color>: ",getn(selTab),selTab);
@@ -193,11 +193,11 @@ function remove_faction1_1()
 	end;
 	local selTab = {
 				"D­¬ng M«n/#remove_faction2(6)",
-				"Ngò §éc/#remove_faction2(7)",
+				"Five Poisons/#remove_faction2(7)",
 				"C«n L«n/#remove_faction2(8)",
 				"Thóy Yªn/#remove_faction2(10)",
-				"Trang tr­íc/remove_faction1",
-				"Chän kÕt thóc/remove_faction_confirm",
+				"Previous page/remove_faction1",
+				"Choose to finish/remove_faction_confirm",
 				"Ta suy nghÜ l¹i!/nothing",
 				}
 	Say(g_szInfoHeader.."Xin mêi b¹n chän bá lo¹i bãng hé vÖ <color=yellow>1<color>: ",getn(selTab),selTab);
@@ -215,13 +215,13 @@ function remove_faction2(nFaction)
 		SetMissionV(MV_VALUE9,nFaction);
 	end;
 	local selTab = {
-				"ThiÕu L©m/#remove_faction_confirm(1)",
+				"Shaolin/#remove_faction_confirm(1)",
 				"§­êng M«n/#remove_faction_confirm(2)",
 				"Nga My/#remove_faction_confirm(3)",
-				"C¸i Bang/#remove_faction_confirm(4)",
-				"Vâ §ang/#remove_faction_confirm(5)",
-				"Trang kÕ/remove_faction2_1",
-				"Chän kÕt thóc/remove_faction_confirm",
+				"Beggar Clan/#remove_faction_confirm(4)",
+				"Wudang/#remove_faction_confirm(5)",
+				"Next page/remove_faction2_1",
+				"Choose to finish/remove_faction_confirm",
 				"Ta suy nghÜ l¹i!/nothing",
 				}
 	Say(g_szInfoHeader.."Xin mêi b¹n chän bá lo¹i bãng hé vÖ <color=yellow>2<color>: ",getn(selTab),selTab);
@@ -233,11 +233,11 @@ function remove_faction2_1()
 	end;
 	local selTab = {
 				"D­¬ng M«n/#remove_faction_confirm(6)",
-				"Ngò §éc/#remove_faction_confirm(7)",
+				"Five Poisons/#remove_faction_confirm(7)",
 				"C«n L«n/#remove_faction_confirm(8)",
 				"Thóy Yªn/#remove_faction_confirm(10)",
-				"Trang tr­íc/remove_faction2",
-				"Chän kÕt thóc/remove_faction_confirm",
+				"Previous page/remove_faction2",
+				"Choose to finish/remove_faction_confirm",
 				"Ta suy nghÜ l¹i!/nothing",
 				}
 	Say(g_szInfoHeader.."Xin mêi b¹n chän bá lo¹i bãng hé vÖ <color=yellow>2<color>: ",getn(selTab),selTab);
@@ -260,7 +260,7 @@ function remove_faction_confirm(nFaction)
 		szFactionRemove = szFactionRemove..tb_Npc_Info[GetMissionV(MV_VALUE9)][2]
 	end;
 	if GetMissionV(MV_VALUE10) ~= 0 then
-		szFactionRemove = szFactionRemove.." vµ"..tb_Npc_Info[GetMissionV(MV_VALUE10)][2]
+		szFactionRemove = szFactionRemove.." and"..tb_Npc_Info[GetMissionV(MV_VALUE10)][2]
 	end;
 	local nPreStage = GetMissionV(MV_STAGE);	--ÉÏÒ»¹Ø
 	if szFactionRemove ~= "" then
@@ -346,7 +346,7 @@ function load_stage_callback(szKey, nKey1, nKey2, nCount)
 		end;
 		if GetTaskTemp(TSK_TEMP_STATUS) == 1 then
 			if bStageOver == 1 and nCurStage < MAX_STAGE then
-				tinsert(selTab,"B¾t ®Çu v­ît ¶i (¶i "..(nStage+1)..")/next_stage");
+				tinsert(selTab,"Start clearing the pass (pass"..(nStage+1)..")/next_stage");
 				if DEBUG_VERSION == 1 then
 					tinsert(selTab,"Ta muèn v­ît ¶i 1 (test)/#init_stage(1)");
 					tinsert(selTab,"Ta muèn v­ît ¶i 2 (test)/#init_stage(2)");
@@ -361,26 +361,26 @@ function load_stage_callback(szKey, nKey1, nKey2, nCount)
 			tinsert(selTab,"B¸o danh vµo néi ®­êng/apply_enter_in_room");
 		end;
 	else
-		tinsert(selTab,"LËp tøc b¾t ®Çu v­ît ¶i/run_mission");
+		tinsert(selTab,"Start clearing the pass immediately/run_mission");
 	end;
 	if DEBUG_VERSION == 1 then
-		tinsert(selTab,"KÕt thóc ¶i (test)/close_mission");
+		tinsert(selTab,"End the pass (test)/close_mission");
 	end;
 	tinsert(selTab,"Giíi thiÖu Èn sÜ Tö Quang C¸c/know_boss_info");
 	tinsert(selTab,"Më r­¬ng	/open_box");
 	tinsert(selTab,"Ta muèn rêi khái n¬i ®©y/ask_reason");
-	tinsert(selTab,"Kh«ng cã viÖc g×/nothing");	
-	Say(g_szInfoHeader.."Nghe nãi néi ®­êng cao thñ mu«n vµn, ®Ó mµ sèng sãt tho¸t khái ®­îc n¬i ®©y h×nh nh­ kh«ng nhiÒu ng­êi, bang <color=yellow>"..szKey.."<color> nªn cÈn thËn.",getn(selTab),selTab);
+	tinsert(selTab,"Nothing/nothing");	
+	Say(g_szInfoHeader.."Nghe nãi néi ®­êng cao thñ mu«n vµn, ®Ó mµ sèng sãt tho¸t khái ®­îc n¬i ®©y h×nh nh­ kh«ng nhiÒu ng­êi, bang <color=yellow>"..szKey.."<color> should be careful.",getn(selTab),selTab);
 end;
 
 function know_boss_info()
 	local selTab = {
-				"Bãng hé vÖ/#know_boss_detail_info(0)",
+				"Shadow Guardian/#know_boss_detail_info(0)",
 				"¶i 1: Li Yªn/#know_boss_detail_info(1)",
-				"¶i 2: B¸ KiÒu/#know_boss_detail_info(2)",
+				"Stage 2: Ba Qiao/#know_boss_detail_info(2)",
 				"¶i 3: Phong D­¬ng, V©n Thïy/#know_boss_detail_info(3)",
 				"¶i 4: §Þa HuyÒn/#know_boss_detail_info(4)",
-				"¶i 5: TiÕt Hoµnh Thó/#know_boss_detail_info(5)",
+				"Stage 5: Tiet Hoanh Thu/#know_boss_detail_info(5)",
 				"¶i 6: Th­îng Cæ Háa Kú L©n Háa Vò, Th­îng Cæ Háa Kú L©n L­u Quang/#know_boss_detail_info(6)",
 				"Ta chØ tiÖn ®­êng hái ch¬i!/nothing",
 				}
@@ -393,7 +393,7 @@ end;
 
 function run_mission()
 	local selTab = {
-				"§ång ý/run_mission_confirm",
+				"Agree/run_mission_confirm",
 				"§îi mét tÝ	/nothing",
 				}
 	Say(g_szInfoHeader.."Ng­¬i ch¾c ch¾n lËp tøc khëi ®éng ¶i nµy?",getn(selTab),selTab);
@@ -427,7 +427,7 @@ end;
 
 function close_mission()
 	local selTab = {
-				"§ång ý/close_mission_confirm",
+				"Agree/close_mission_confirm",
 				"Ta bÊm nhÇm råi/nothing",
 				}
 	Say(g_szInfoHeader.."X¸c ®Þnh muèn kÕt thóc ¶i vµ tho¸t khái khu vùc nµy?",getn(selTab),selTab);

@@ -106,7 +106,7 @@ function auto_lock_confirm(nParam)
 	else
 		Say("Khãa giao dŞch: B¹n chän khãa giao dŞch tù ®éng "..nParam.." phót, sau khi b¹n ®¨ng nhËp, nÕu kh«ng cã khãa giao dŞch sÏ tù ®éng khãa giao dŞch "..nParam.." phót. Khi b¹n ®¨ng nhËp nÕu thêi gian khãa giao dŞch cña b¹n nhá h¬n "..nParam.." phót còng sÏ tù ®éng khãa giao dŞch "..nParam.." phót. B¹n muèn më chøc n¨ng khãa tù ®éng?",
 			2,
-			"§óng vËy/#auto_lock_confirm_2("..nParam..")",
+			"Yes, that is right/#auto_lock_confirm_2("..nParam..")",
 			"T¹m thêi kh«ng thÓ khãa/cancel")
 	end
 end
@@ -116,11 +116,11 @@ function auto_lock_confirm_2(nParam)
 	SetTask(AUTO_LOCK_TIME_ID, nSec)
 	local nLastip, nCurip = GetLoginIP()
 	
-	WriteLog("[Khãa giao dŞch]"..GetName().."ThiÕt lËp khãa giao dŞch, thêi gian khãa lµ "..nParam.." phót, IP ®¨ng nhËp "..nCurip..".");
+	WriteLog("[Khãa giao dŞch]"..GetName().."ThiÕt lËp khãa giao dŞch, thêi gian khãa lµ "..nParam.." minutes, login IP"..nCurip..".");
 	if (nParam <= 0) then
 		Talk(1,"","Khãa giao dŞch: B¹n ®· hñy chøc n¨ng khãa giao dŞch!");
 	else
-		Talk(1,"","Khãa giao dŞch: B¹n ®· chän thiÕt lËp thêi gian khãa giao dŞch tù ®éng <color=red>"..nParam.." phót<color>!");
+		Talk(1,"","Khãa giao dŞch: B¹n ®· chän thiÕt lËp thêi gian khãa giao dŞch tù ®éng <color=red>"..nParam.." minutes<color>!");
 	end
 end
 
@@ -229,7 +229,7 @@ function confirm_1_time(nParam)
 		end
 	end
 
-	Say("Khãa giao dŞch: B¹n chän khãa giao dŞch <color=red>"..nParam.."<color> giê, tõ <color=red>"..month.."NguyÖt"..day.."NhËt"..hour.." ®iÓm"..minute.." phót ®Õn "..month1.."NguyÖt"..day1.."NhËt"..hour1.." ®iÓm"..minute.." phót<color>, b¹n x¸c nhËn muèn khãa?",
+	Say("Khãa giao dŞch: B¹n chän khãa giao dŞch <color=red>"..nParam.."<color> giê, tõ <color=red>"..month.."NguyÖt"..day.."day"..hour.." ®iÓm"..minute.." minutes to"..month1.."NguyÖt"..day1.."day"..hour1.." ®iÓm"..minute.." phót<color>, b¹n x¸c nhËn muèn khãa?",
 		2,
 		"\nX¸c nhËn/#confirm_2_time("..nParam..")",
 		"\nKh«ng cÇn/cancel");

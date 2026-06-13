@@ -377,7 +377,7 @@ end
 
 tPackage = {
 	[6000] = {"Tói Thiªn Long Tù","Tói cña Trô Tr×","Quµ tÆng cña Trô tr×","Trô tr× §¹i Lý Thiªn Long Tù",2,3,1},
-	[6100] = {"Tói Hãa Sinh Tù","Tói cña XÝch Ba","Quµ tÆng cña XÝch Ba","Thæ Phån Hãa Sinh Tù-XÝch Ba",1,3,2},
+	[6100] = {"Tói Hãa Sinh Tù","Tói cña XÝch Ba","Quµ tÆng cña XÝch Ba","Tubo Huasheng Temple - Xich Ba",1,3,2},
 	[6200] = {"R­¬ng Qu©n Nhu T©y H¹","R­¬ng cña T­íng Qu©n","Quµ tÆng cña T­íng Qu©n","T©y H¹ Chinh Nam T­íng Qu©n",1,2,3},	
 };
 
@@ -393,7 +393,7 @@ function stageFight:onNpcDeath(event, data)
 		SetNpcRemoveScript(data[1],"");
 		SetNpcLifeTime(data[1],0);
 		if not tPackage[nMapID] then
-			print("Qu©n ®oµn tö v× phi mÖnh!");
+			print("The legion soldiers died for their mission!");
 			return 0;
 		end
 		for j = 1,10 do
@@ -421,7 +421,7 @@ function stageFight:onNpcRemove(event, data)
 		local nMapID,nPosx,nPosy = GetNpcWorldPos(data);
 		local nNewIdx = 0;
 		if not tPackage[nMapID] then
-			print("Qu©n ®oµn tö v× phi mÖnh!");
+			print("The legion soldiers died for their mission!");
 			return 0;
 		end
 		for j = 1,10 do
@@ -506,7 +506,7 @@ stageFight.triggers = {
 firePhases.phases = {stageFight};
 
 function firePhases:onTimeout()
-	Msg2MSAll(this.missionID, "KÕt thóc ¶i!");
+	Msg2MSAll(this.missionID, "The challenge has ended!");
 	CloseMission(this.missionID);
 end
 

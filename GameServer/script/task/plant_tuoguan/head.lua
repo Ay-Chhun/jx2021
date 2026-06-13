@@ -19,7 +19,7 @@ TASK_TUOGUAN_GIVE_BANRUO_COUNT = 2273;			--ÍÐ¹ÜÖÖÊ÷ÉÏ½»°ãÈôÖ¤ÊéµÄÊýÁ¿
 TASK_TUOGUAN_GET_AWARD_DATE = 2274;					--ÍÐ¹ÜÖÖÊ÷ÁìÈ¡½±ÀøµÄÈÕÆÚ
 TASK_TUOGUAN_GET_AWARD_FLAG = 2275;					--ÍÐ¹ÜÖÖÊ÷ÁìÈ¡½±ÀøµÄ¼ÇÂ¼±ê¼Ç
 
-str_TUOGUAN_LOG = "[ñy th¸c trång c©y:]";
+str_TUOGUAN_LOG = "[Entrusted tree planting:]";
 
 --ÍÐ¹Ü³É¹¦µÄ¸ÅÂÊ
 t_TUOGUAN_PLANT_RAND = {75, 75, 50, 75, 50};
@@ -66,7 +66,7 @@ t_TUOGUAN_AWARD = {
 	{"Ngò Hµnh MËt tÞch", 			4, {0,107,155,1}},
 	{"NguyÖt Hoa Chi Tinh", 			3, {2,1,3219,1}},
 	{"NguyÖt Hoa ", 					4, {2,1,2002,1}},
-	{"XÝch ThiÕt Tinh", 				204, {2,1,2652,1}},
+	{"Red Iron Essence", 				204, {2,1,2652,1}},
 	{"N«ng Tang phæ", 			1, {2,1,1056,1}},
 --	{"Long HuyÕt hoµn", 				1, {2,1,1002,1}},
 --	{"Kú L©n hoµn", 				1, {2,1,1003,1}},
@@ -76,16 +76,16 @@ t_TUOGUAN_AWARD = {
 
 --½»¹»8¸ö°ãÈôÖ¤ÊéºóµÃµ½µÄ½±Àø
 t_TUOGUAN_8_AWARD = {
-	{"Bµn Long bÝch", 10, {2,1,1000,1}, 15*24*3600},
+	{"Coiling Dragon Jade", 10, {2,1,1000,1}, 15*24*3600},
 	{"MÆt n¹ S¸t Thñ §­êng", 10, {2,1,1087,1}, 15*24*3600},
 	{"ThÇn N«ng §¬n", 10, {2,1,343,1}, 15*24*3600},
 	{"ThÕ Th©n phï", 10, {2,0,556,1}, 15*24*3600},
-	{"Tu Ch©n YÕu QuyÕt", 10, {2,0,554,1}, 15*24*3600},
+	{"Xiu Zhen Yao Jue", 10, {2,0,554,1}, 15*24*3600},
 	{"Tµng KiÕm anh hïng thiÕp", 10, {2,0,31,1}, 15*24*3600},
-	{"S­ m«n mËt hµm", 10, {2,1,1020,1}, 15*24*3600},
+	{"Sect secret letter", 10, {2,1,1020,1}, 15*24*3600},
 	{"§¹i Nh©n s©m", 10, {2,0,553,1}, 15*24*3600},
 	{"ThÇn hµnh bÝ phæ", 10, {0,200,39,1}, 15*24*3600},
-	{"Tinh ®iªu hoa c­¬ng th¹ch", 10, {2,1,1023,1}, 15*24*3600},
+	{"Refined Carved Flower Hardstone", 10, {2,1,1023,1}, 15*24*3600},
 };
 
 
@@ -93,11 +93,11 @@ t_TUOGUAN_8_AWARD = {
 t_TUOGUAN_POINT_TO_AWARD = {
 	{"MËt tÞch m«n ph¸i cao cÊp 70", nil},
 	{"Nh©n S©m V¹n N¨m", {2,1,30071,6}},
-	{"Tr¸i c©y", nil},
+	{"Fruit", nil},
 	{"Thiªn Th¹ch linh th¹ch", {2,1,1068,1}, 30 * 24 * 3600},
 	{"Nh©n S©m V¹n N¨m", {2,1,30071,6}},
-	{"Hßa ThÞ BÝch", {2,1,1001,2}, 7 * 24 * 3600},
-	{"Tr¸i c©y", nil},
+	{"Heshi Jade", {2,1,1001,2}, 7 * 24 * 3600},
+	{"Fruit", nil},
 	{"Nh©n S©m V¹n N¨m", {2,1,30071,6}},
 	{"§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", {2,1,1067,1}, 30 * 24 * 3600},
 	{"Thiªn Cang LÖnh",{2, 95, 204,2}}, 
@@ -105,37 +105,37 @@ t_TUOGUAN_POINT_TO_AWARD = {
 	{"§¹i §Þnh Hån", {2,1,1113,1}, 30 * 24 * 3600},
 	{"Thiªn M«n Kim LÖnh", {2,1,30370,2}},
 	{"Nh©n S©m V¹n N¨m", {2,1,30071,6}},
-	{"L¨ng Ba Vi Bé", {0,112,78,1}},
+	{"Lingbo Microstep", {0,112,78,1}},
 	{"Tói Thiªn Th¹ch Tinh Th¹ch", {2,1,3356,1}, 30 * 24 * 3600},
-	{"Tr¸i c©y", nil},
-	{"ChuyÓn Sinh §¬n", {2,1,30345,1}, 30 * 24 * 3600},
+	{"Fruit", nil},
+	{"Rebirth Pill", {2,1,30345,1}, 30 * 24 * 3600},
 	{"Thiªn Th¹ch linh th¹ch", {2,1,1068,1}, 30 * 24 * 3600},
-	{"Hßa ThÞ BÝch", {2,1,1001,2}, 7 * 24 * 3600},
+	{"Heshi Jade", {2,1,1001,2}, 7 * 24 * 3600},
 	{"Nh©n S©m V¹n N¨m", {2,1,30071,6}},
 	{"§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", {2,1,1067,1}, 30 * 24 * 3600},
 	{"Tói Thiªn Th¹ch Tinh Th¹ch", {2,1,3356,1}, 30 * 24 * 3600},
-	{"L¨ng Ba Vi Bé toµn tËp", {0,112,158,1}},
-	{"Tr¸i c©y", nil},
-	{"Hßa ThÞ BÝch", {2,1,1001,2}, 7 * 24 * 3600},
+	{"Lingbo Microstep Complete Edition", {0,112,158,1}},
+	{"Fruit", nil},
+	{"Heshi Jade", {2,1,1001,2}, 7 * 24 * 3600},
 	{"Nh©n S©m V¹n N¨m", {2,1,30071,6}},
-	{"ChuyÓn Sinh §¬n", {2,1,30345,1}, 30 * 24 * 3600},
+	{"Rebirth Pill", {2,1,30345,1}, 30 * 24 * 3600},
 	{"Thiªn M«n Kim LÖnh", {2,1,30370,2}},
 	{"Nh©n S©m V¹n N¨m", {2,1,30071,18}},
 }
 
 -- MËt tÞch cao cÊp 70
 t_TUOGUAN_HIG = {
-	[2] = {"Kim Cang B¸t Nh· Ch©n QuyÓn", {0,107,204,2,1}},
-	[3] = {"V« TrÇn Bå §Ò Ch©n QuyÓn",{0,107,206,2,1}},
-	[4] = {"TiÒm Long Tóc DiÖt Ch©n QuyÓn",{0,107,205,2,1}},
+	[2] = {"Vajra Prajna True Scroll", {0,107,204,2,1}},
+	[3] = {"Dustless Bodhi True Manual",{0,107,206,2,1}},
+	[4] = {"Hidden Dragon Annihilation True Manual",{0,107,205,2,1}},
 	[6] = {"Thiªn La Liªn Ch©u Ch©n QuyÓn",{0,107,207,2,1}},
-	[8] = {"Nh­ ý Kim §Ønh Ch©n QuyÓn",{0,107,208,2,1}},
-	[9] = {"BÝch H¶i TuyÖt ¢m Ch©n QuyÓn",{0,107,209,2,1}},
-	[11] = {"Hçn §én TrÊn Nh¹c Ch©n QuyÓn",{0,107,210,2,1}},
+	[8] = {"Wishful Golden Top True Manual",{0,107,208,2,1}},
+	[9] = {"Azure Sea Silent Sound True Manual",{0,107,209,2,1}},
+	[11] = {"Chaos Town Mountain True Manual",{0,107,210,2,1}},
 	[12] = {"Quú Thiªn Du Long Ch©n QuyÓn",{0,107,211,2,1}},
 	[14] = {"HuyÒn ¶nh Mª T«ng Ch©n QuyÓn",{0,107,212,2,1}},
-	[15] = {"Qu©n Tö §íi Phong Ch©n QuyÓn",{0,107,213,2,1}},
-	[17] = {"TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn",{0,107,214,2,1}},
+	[15] = {"Gentleman Welcomes the Wind True Manual",{0,107,213,2,1}},
+	[17] = {"Town Army Flying Dragon Spear True Manual",{0,107,214,2,1}},
 	[18] = {"Xuyªn V©n L¹c Hång Ch©n QuyÓn",{0,107,215,2,1}},
 	[20] = {"HuyÒn Minh Phong Ma Ch©n QuyÓn",{0,107,216,2,1}},
 	[21] = {"Linh Cæ HuyÒn Tµ Ch©n QuyÓn",{0,107,217,2,1}},
@@ -146,59 +146,59 @@ t_TUOGUAN_HIG = {
 --»ý·Ö»»È¡½±ÀøµÄÃØ¼®
 -- MËt tÞch 70
 t_TUOGUAN_MIJI = {
-	[2] = {"Kim Cang B¸t Nh· Kinh", {0,107,166,2}},
-	[3] = {"V« TrÇn Bå §Ò Kinh",{0,107,168,1}},
+	[2] = {"Kim Cang Bat Nha Kinh", {0,107,166,2}},
+	[3] = {"Vo Tran Bo De Kinh",{0,107,168,1}},
 	[4] = {"TiÒm Long TÞch DiÖt Kinh",{0,107,167,1}},
 	[6] = {"Thiªn La Liªn Ch©u Lôc",{0,107,169,1}},
 	[8] = {"Nh­ ý Kim §Ønh MËt TÞch",{0,107,170,1}},
-	[9] = {"BÝch H¶i TuyÖt ¢m Phæ",{0,107,171,1}},
+	[9] = {"Azure Sea Silent Sound Score",{0,107,171,1}},
 	[11] = {"Hçn §én TrÊn Nh¹c MËt TÞch"	,{0,107,172,1}},
 	[12] = {"Quü Thiªn Du Long MËt TÞch",{0,107,173,1}},
 	[14] = {"HuyÔn ¶nh Mª Tung MËt TÞch",{0,107,174,1}},
 	[15] = {"Qu©n Tö TiÖt Phong MËt TÞch",{0,107,175,1}},
-	[17] = {"TrÊn Qu©n Phi Long Th­¬ng Phæ"	,{0,107,176,1}},
+	[17] = {"Tran Quan Phi Long Thuong Manual"	,{0,107,176,1}},
 	[18] = {"Xuyªn V©n L¹c Hång MËt TÞch",{0,107,177,1}},
-	[20] = {"U Minh Phong Ma Lôc",{0,107,178,1}},
-	[21] = {"Linh Cæ HuyÔn Tµ Lôc",{0,107,179,1}},
+	[20] = {"U Minh Phong Ma Manual",{0,107,178,1}},
+	[21] = {"Linh Co Huyen Ta Manual",{0,107,179,1}},
 	[23] = {"Cöu Thiªn Phong L«i QuyÕt",{0,107,198,1}},	
 	[29] = {"Hång TrÇn Tóy Méng Phæ",{0,107,202,1}},
 	[30] = {"Phong Hoa Thiªn DiÖp Phæ",{0,107,203,1}},
 };
 
 t_TUOGUAN_MIJI2 = {
-	[2] = {"Kim Cang B¸t Nh· Kinh", {0,107,166,2}},
-	[3] = {"V« TrÇn Bå §Ò Kinh",{0,107,168,2}},
+	[2] = {"Kim Cang Bat Nha Kinh", {0,107,166,2}},
+	[3] = {"Vo Tran Bo De Kinh",{0,107,168,2}},
 	[4] = {"TiÒm Long TÞch DiÖt Kinh",{0,107,167,2}},
 	[6] = {"Thiªn La Liªn Ch©u Lôc",{0,107,169,2}},
 	[8] = {"Nh­ ý Kim §Ønh MËt TÞch",{0,107,170,2}},
-	[9] = {"BÝch H¶i TuyÖt ¢m Phæ",{0,107,171,2}},
+	[9] = {"Azure Sea Silent Sound Score",{0,107,171,2}},
 	[11] = {"Hçn §én TrÊn Nh¹c MËt TÞch"	,{0,107,172,2}},
 	[12] = {"Quü Thiªn Du Long MËt TÞch",{0,107,173,2}},
 	[14] = {"HuyÔn ¶nh Mª Tung MËt TÞch",{0,107,174,2}},
 	[15] = {"Qu©n Tö TiÖt Phong MËt TÞch",{0,107,175,2}},
-	[17] = {"TrÊn Qu©n Phi Long Th­¬ng Phæ"	,{0,107,176,2}},
+	[17] = {"Tran Quan Phi Long Thuong Manual"	,{0,107,176,2}},
 	[18] = {"Xuyªn V©n L¹c Hång MËt TÞch",{0,107,177,2}},
-	[20] = {"U Minh Phong Ma Lôc",{0,107,178,2}},
-	[21] = {"Linh Cæ HuyÔn Tµ Lôc",{0,107,179,2}},
+	[20] = {"U Minh Phong Ma Manual",{0,107,178,2}},
+	[21] = {"Linh Co Huyen Ta Manual",{0,107,179,2}},
 	[23] = {"Cöu Thiªn Phong L«i QuyÕt",{0,107,198,2}},	
 	[29] = {"Hång TrÇn Tóy Méng Phæ",{0,107,202,2}},
 	[30] = {"Phong Hoa Thiªn DiÖp Phæ",{0,107,203,2}},	
 };
 -- MËt tÞch 45
 t_TUOGUAN_LOW = {
-	[2] = {"Kim Cang Phôc Ma kinh",{0,107, 1,2}},
+	[2] = {"Vajra Demon-Subduing Sutra",{0,107, 1,2}},
 	[3] = {"V« TrÇn MËt tÞch",{0,107, 5,2}},
 	[4] = {"TiÒm Long MËt tÞch",	{0,107, 3,2}},
 	[6] = {"Thiªn La MËt TÞch",{0,107, 7,2}},
 	[8] = {"Nh­ ý MËt TÞch",{0,107, 9,2}},
-	[9] = {"BÝch H¶i Phæ",{0,107,11,2}},
+	[9] = {"Azure Sea Score",{0,107,11,2}},
 	[11] = {"Hçn §én MËt tÞch",{0,107,13,2}},
 	[12] = {"Quý Thiªn MËt tÞch",{0,107,15,2}},
 	[14] = {"HuyÒn ¶nh MËt tÞch",{0,107,17,2}},
 	[15] = {"Qu©n Tö MËt tÞch",{0,107,19,2}},
 	[17] = {"TrÊn Qu©n MËt tÞch",{0,107,21,2}},
 	[18] = {"Xuyªn V©n MËt tÞch",{0,107,23,2}},
-	[20] = {"U Minh Quû Lôc",{0,107,25,2}},
+	[20] = {"Nether Ghost Record",{0,107,25,2}},
 	[21] = {"Linh Cæ MËt tÞch",{0,107,27,2}},
 	[23] = {"Kinh Phong MËt TÞch",{0,107,180,2}},
 	[29] = {"Tóy Méng MËt tÞch",{0,107,188,2}},
@@ -207,20 +207,20 @@ t_TUOGUAN_LOW = {
 
 --»ý·Ö»»¾÷Òª½±Àø
 t_TUOGUAN_JUEYAO = {
-	[2] = {"Tói bÝ kiÕp ThiÕu L©m", {2,0,607,1}},
-	[3] = {"Tói bÝ kiÕp ThiÕu L©m",{2,0,607,1}},
-	[4] = {"Tói bÝ kiÕp ThiÕu L©m",{2,0,607,1}},
+	[2] = {"Shaolin secret manual bag", {2,0,607,1}},
+	[3] = {"Shaolin secret manual bag",{2,0,607,1}},
+	[4] = {"Shaolin secret manual bag",{2,0,607,1}},
 	[6] = {"Tói bÝ kiÕp §­êng M«n",{2,0,608,1}},
-	[8] = {"Tói bÝ kiÕp Nga My",{2,0,609,1}},
-	[9] = {"Tói bÝ kiÕp Nga My",{2,0,609,1}},
-	[11] = {"Tói bÝ kiÕp C¸i Bang"	,{2,0,610,1}},
-	[12] = {"Tói bÝ kiÕp C¸i Bang",{2,0,610,1}},
-	[14] = {"Tói bÝ kiÕp Vâ §ang",{2,0,611,1}},
-	[15] = {"Tói bÝ kiÕp Vâ §ang",{2,0,611,1}},
+	[8] = {"Emei secret manual bag",{2,0,609,1}},
+	[9] = {"Emei secret manual bag",{2,0,609,1}},
+	[11] = {"Beggars' Sect secret manual bag"	,{2,0,610,1}},
+	[12] = {"Beggars' Sect secret manual bag",{2,0,610,1}},
+	[14] = {"Wudang secret manual bag",{2,0,611,1}},
+	[15] = {"Wudang secret manual bag",{2,0,611,1}},
 	[17] = {"Tói bÝ kiÕp D­¬ng M«n"	,{2,0,612,1}},
 	[18] = {"Tói bÝ kiÕp D­¬ng M«n",{2,0,612,1}},
-	[20] = {"Tói bÝ kiÕp Ngò §éc",{2,0,613,1}},
-	[21] = {"Tói bÝ kiÕp Ngò §éc",{2,0,613,1}},
+	[20] = {"Five Poisons secret manual bag",{2,0,613,1}},
+	[21] = {"Five Poisons secret manual bag",{2,0,613,1}},
 };
 
 function plant_tuoguan(nType, nPay, nZone)
@@ -311,18 +311,18 @@ function Give_BNCT_16_Award()
 	local rand =  random(1,100)
 	if rand <= 50 then
 		local nAwardRand = mod(random(1,1000),20)
-		gf_AddItemEx2({2,1,(30164+nAwardRand),4}, "Tr¸i C©y", "Nop bat nha chung thu 16", "B¸t Nh· Chøng Th­")
+		gf_AddItemEx2({2,1,(30164+nAwardRand),4}, "Fruit", "Nop bat nha chung thu 16", "Prajna Certificate")
 	elseif rand <= 55 then
 		Earn(300000)
 		WriteLogEx("Nop bat nha chung thu 16","Nhan 30 vang")	
 	elseif rand <= 75 then	
-		gf_AddItemEx2({2,1,30086,1}, "H¹t Gièng", "Nop bat nha chung thu 16", "B¸t Nh· Chøng Th­",7*24*60*60)
+		gf_AddItemEx2({2,1,30086,1}, "Seed", "Nop bat nha chung thu 16", "Prajna Certificate",7*24*60*60)
 	elseif rand <= 85 then
-		gf_AddItemEx2({2,0,504,1}, "C©y B¸t Nh· Nhá", "Nop bat nha chung thu 16", "B¸t Nh· Chøng Th­",7*24*60*60)
+		gf_AddItemEx2({2,0,504,1}, "Small Prajna Tree", "Nop bat nha chung thu 16", "Prajna Certificate",7*24*60*60)
 	elseif rand <= 90 then
-		gf_AddItemEx2({2,0,398,1}, "C©y B¸t Nh· ", "Nop bat nha chung thu 16", "B¸t Nh· Chøng Th­",7*24*60*60)
+		gf_AddItemEx2({2,0,398,1}, "Prajna Tree", "Nop bat nha chung thu 16", "Prajna Certificate",7*24*60*60)
 	elseif rand <= 95 then
-		gf_AddItemEx2({2,1,30269,1}, "C©y Tø Linh", "Nop bat nha chung thu 16", "B¸t Nh· Chøng Th­",7*24*60*60)
+		gf_AddItemEx2({2,1,30269,1}, "Four Spirits Tree", "Nop bat nha chung thu 16", "Prajna Certificate",7*24*60*60)
 	else
 		ModifyExp(1000000)
 		WriteLogEx( "Nop bat nha chung thu 16","Nhan 1000000 diem kinh nghiem")

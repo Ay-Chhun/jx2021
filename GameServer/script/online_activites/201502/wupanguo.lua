@@ -36,25 +36,25 @@ function wpg_handup()
 		{4, 10000, 20, 1},
 		{5, 10000, 20, 1},	
 		{32, 10000, 100, 1},	
-		{1, 7000, "B¸nh Bét vµng", {1, 1, 15, 1}, 0},
+		{1, 7000, "Golden Flour Cake", {1, 1, 15, 1}, 0},
 		{1, 7000, "Minh NguyÖt D¹", {1, 1, 17, 1}, 0},
-		{1, 7000, "T©y B¾c Väng", {1, 1, 19, 1}, 0},
+		{1, 7000, "Northwest Gaze", {1, 1, 19, 1}, 0},
 		{1, 8000, "L«i Viªm Th¹ch", {2, 1, 30683, 1}, 0},
 		{28, 9000, 10, 1},	
 		{1, 8739, "B¨ng Tinh Th¹ch", {2, 1, 30554, 1}, 0},
-		{1, 2000, "BÝ Ng©n To¶n", {2, 1, 30538, 10}, 0},
-		{1, 2000, "BÝ Ng©n Chïy", {2, 1, 30539, 1}, 0},
+		{1, 2000, "Hidden Silver Plate", {2, 1, 30538, 10}, 0},
+		{1, 2000, "Hidden Silver Mallet", {2, 1, 30539, 1}, 0},
 		{31, 1000, "wpg_rand_gem1()", 1},	
 		{1, 1000, "L«i Hæ Tinh Ph¸ch", {2, 1, 30614, 1}, 0},
 		{1, 10, "Thiªn Th¹ch Tinh Th¹ch", {2, 1, 1009, 1}, 0},
 		{1, 2000, "M¶nh Thiªn th¹ch", {2, 2, 7, 1}, 0},
 		{1, 1000, "M¶nh Thiªn M«n", {2, 1, 30410, 1}, 0},
-		{1, 250, "Tµng R­¬ng", {2, 1, 30341, 1}, 0},
-		{1, 1, "Hßa ThÞ BÝch", {2, 1, 1001, 1}, 0},
-		{1, 10000, "V« Tù Kinh Th­", {2, 1, 30785, 1}, 0},
-		{1, 2000, "Bao l× x× may m¾n", {2, 1, 30786, 1}, 0},	
+		{1, 250, "Treasure Chest", {2, 1, 30341, 1}, 0},
+		{1, 1, "Heshi Jade", {2, 1, 1001, 1}, 0},
+		{1, 10000, "Wordless Scripture", {2, 1, 30785, 1}, 0},
+		{1, 2000, "Lucky Money Bag", {2, 1, 30786, 1}, 0},	
 	}
-	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "M©m Ngò Qu¶ 02/2015", "M©m ngò qu¶")
+	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Five-Fruit Tray 02/2015", "M©m ngò qu¶")
 end
 
 function wpg_rand_gem1()
@@ -64,7 +64,7 @@ function wpg_rand_gem1()
 		{1, 25, "Hæ Ph¸ch Th¹ch CÊp 1", {2,22,301,1}, 0},
 		{1, 25, "H¾c DiÖu Th¹ch CÊp 1", {2,22,401,1}, 0},
 	}
-	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "M©m Ngò Qu¶ 02/2015", "§¸ quý cÊp 1")
+	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Five-Fruit Tray 02/2015", "§¸ quý cÊp 1")
 end
 
 WPG_EXCHANGE_TABLE = {
@@ -80,7 +80,7 @@ WPG_EXCHANGE_TABLE = {
 	{1, "C­êng hãa quyÓn 15", {2,1,30427,1}, 299, 14},
 	{1, "B¸o §en B¶o B¶o", {0,105,30045,1}, 2015, 0},
 	{1, "B¸o Vµng B¶o B¶o", {0,105,30046,1}, 2015, 0},
-	{1, "L©n S­", {0,105,30044,1}, 2015, 0},
+	{1, "Lion", {0,105,30044,1}, 2015, 0},
 	{1, "b¸nh Ýt B¸c B¶o", {2,1,1125,10,4}, 66, 0},
 	{2, "999999000EXP", 999999000, 450},
 	{3, "99000 ®iÓm c«ng tr¹ng", 99000, 450},
@@ -92,7 +92,7 @@ function wpg_use_lucky()
 	end
 	local tSay = {}
 	for i = 1, getn(WPG_EXCHANGE_TABLE) do
-		tinsert(tSay, format("%s (Tiªu hao %d Bao L× X× May M¾n)/#wpg_use_lucky_do(%d)", WPG_EXCHANGE_TABLE[i][2], WPG_EXCHANGE_TABLE[i][4], i));		
+		tinsert(tSay, format("%s (Consumes %d Lucky Fortune Pack)/#wpg_use_lucky_do(%d)", WPG_EXCHANGE_TABLE[i][2], WPG_EXCHANGE_TABLE[i][4], i));		
 	end
 	Say("<color=green>La Sa<color>: N¨m míi vui vÎ!!", getn(tSay), tSay)
 end
@@ -107,16 +107,16 @@ function wpg_use_lucky_do(nIndex)
 	end
 	if tAward[1] == 1 then
 		if GetItemCount(2, 1, 30786) < tAward[4] then
-			Talk(1,"",format("Trong hµnh trang %s sè l­îng kh«ng ®ñ %d", "Bao l× x× may m¾n", tAward[4]));
+			Talk(1,"",format("Trong hµnh trang %s sè l­îng kh«ng ®ñ %d", "Lucky Money Bag", tAward[4]));
 			return 0;
 		end
 		if DelItem(2, 1, 30786, tAward[4]) ~= 1 then
 			return 0;
 		end
-		gf_AddItemEx2(tAward[3], tAward[2], "M©m Ngò Qu¶ 02/2015", "Bao l× x× may m¾n", tAward[5]*24*3600, 1)
+		gf_AddItemEx2(tAward[3], tAward[2], "Five-Fruit Tray 02/2015", "Lucky Money Bag", tAward[5]*24*3600, 1)
 	elseif tAward[1] == 2 then
 		if GetItemCount(2, 1, 30786) < tAward[4] then
-			Talk(1,"",format("Trong hµnh trang %s sè l­îng kh«ng ®ñ %d", "Bao l× x× may m¾n", tAward[4]));
+			Talk(1,"",format("Trong hµnh trang %s sè l­îng kh«ng ®ñ %d", "Lucky Money Bag", tAward[4]));
 			return 0;
 		end
 		if DelItem(2, 1, 30786, tAward[4]) ~= 1 then
@@ -125,7 +125,7 @@ function wpg_use_lucky_do(nIndex)
 		gf_ModifyExp(tAward[3])
 	elseif tAward[1] == 3 then
 		if GetItemCount(2, 1, 30786) < tAward[4] then
-			Talk(1,"",format("Trong hµnh trang %s sè l­îng kh«ng ®ñ %d", "Bao l× x× may m¾n", tAward[4]));
+			Talk(1,"",format("Trong hµnh trang %s sè l­îng kh«ng ®ñ %d", "Lucky Money Bag", tAward[4]));
 			return 0;
 		end
 		if DelItem(2, 1, 30786, tAward[4]) ~= 1 then
@@ -179,26 +179,26 @@ function wpg_OnTrigger()
 		bIsBlueBoss = 0;
 	end
 	if bIsBlueBoss ~= 0 then
-		gf_AddItemEx2({2, 1, 30784, 1}, "M©m Ngò Qu¶", "M©m Ngò Qu¶ 02/2015", "GhÐp M©m Ngò Qu¶", 0, 1)
+		gf_AddItemEx2({2, 1, 30784, 1}, "Five-Fruit Tray", "Five-Fruit Tray 02/2015", "Combine Five-Fruit Tray", 0, 1)
 	end
 	if nMapID == 508 then
-		tinsert(tDrop, {1, 5, "M·ng cÇu", {2, 1, 30779, 1}, 0})
+		tinsert(tDrop, {1, 5, "Soursop", {2, 1, 30779, 1}, 0})
 		tinsert(tDrop, {31, 95, "nothing()", 1});
 	end
 	if nMapID == 506 then
-		tinsert(tDrop, {1, 5, "Xoµi", {2, 1, 30780, 1}, 0})
+		tinsert(tDrop, {1, 5, "Mango", {2, 1, 30780, 1}, 0})
 		tinsert(tDrop, {31, 95, "nothing()", 1});
 	end
 	if nMapID == 411 then
-		tinsert(tDrop, {1, 5, "§u §ñ", {2, 1, 30781, 1}, 0})
+		tinsert(tDrop, {1, 5, "Papaya", {2, 1, 30781, 1}, 0})
 		tinsert(tDrop, {31, 95, "nothing()", 1});
 	end
 	if nMapID == 503 then
-		tinsert(tDrop, {1, 2, "D­a hÊu", {2, 1, 30782, 1}, 0})
+		tinsert(tDrop, {1, 2, "Watermelon", {2, 1, 30782, 1}, 0})
 		tinsert(tDrop, {31, 98, "nothing()", 1});
 	end
 	if nMapID == 328 then
-		tinsert(tDrop, {1, 2, "D­a hÊu", {2, 1, 30782, 1}, 0})
+		tinsert(tDrop, {1, 2, "Watermelon", {2, 1, 30782, 1}, 0})
 		tinsert(tDrop, {31, 98, "nothing()", 1});
 	end
 	if nMapID == 116 then
@@ -267,7 +267,7 @@ function wpg_Compose_do(nNum)
 				end
 			end
 		else
-			gf_AddItemEx2({2,1,30784,1}, "M©m Ngò Qu¶", "M©m Ngò Qu¶ 02/2015", "GhÐp M©m Ngò Qu¶", 0, 1);
+			gf_AddItemEx2({2,1,30784,1}, "Five-Fruit Tray", "Five-Fruit Tray 02/2015", "Combine Five-Fruit Tray", 0, 1);
 		end
 	end
 end

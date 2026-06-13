@@ -47,7 +47,7 @@ function ywz_GetAward1()
 		"NhËn th­ëng xÕp h¹ng thÕ lùc/ywz_GetAward1_RankAward",
 		"NhËn th­ëng ®é n¨ng ®éng x©y dùng/ywz_GetAward1_AcitivtyAward",
 		"NhËn th­ëng xÕp h¹ng c¸ nh©n/ywz_GetAward1_PlayerRankAward",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	}
 	Say("PhÇn th­ëng giai ®o¹n 1 ThÕ Lùc Ba Phe-DiÔn Vâ ChiÕn:", getn(tSay), tSay);
 end
@@ -65,7 +65,7 @@ function ywz_GetAward2()
 		"NhËn th­ëng xÕp h¹ng thÕ lùc/ywz_GetAward2_RankAward",
 		"NhËn th­ëng xÕp h¹ng c¸ nh©n/ywz_GetAward2_PlayerRankAward",
 		"NhËn phÇn th­ëng n¨ng ®éng diÔn vâ/ywz_GetAward2_ActivityAward",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	}
 	Say("PhÇn th­ëng giai ®o¹n 2 ThÕ Lùc Ba Phe-DiÔn Vâ ChiÕn:", getn(tSay), tSay);
 end
@@ -133,7 +133,7 @@ function ywz_GetAward1_AcitivtyAward()
 	end
 	CustomAwardGiveGroup("SLYWZ_YJJSHYJ", 1);
 	AddRuntimeStat(36, 7, 0, 1);
-	TriggerMisEvent("event_ywz_taskfinish", "§iÓm x©y dùng c¸ nh©n ®¹t 300", nScore);
+	TriggerMisEvent("event_ywz_taskfinish", "Personal construction points reached 300", nScore);
 end
 
 function ywz_GetAward1_PlayerRankAward()
@@ -267,7 +267,7 @@ end
 
 function ywz_GetAward2_ActivityAward()
 	local tRankString = {
-		"Gi¶i 1", "Gi¶i 2", "Gi¶i 3", "Gi¶i 4", "Gi¶i khuyÕn khİch",
+		"Tier 1", "Tier 2", "Tier 3", "Tier 4", "Gi¶i khuyÕn khİch",
 	}
 	local nRank = gf_GetTaskByte(YWZM_TASK_MISSION_VALUE, 3);
 	if not tRankString[nRank] then
@@ -295,7 +295,7 @@ end
 function ywz_GetAwardInfo()
 	local msg1 = "Trong giai ®o¹n 1 cña ho¹t ®éng, ®iÓm x©y dùng c¸ nh©n cña ng­êi ch¬i ph¶i ®¹t 120 ®iÓm míi ®­îc nhËn th­ëng xÕp h¹ng thÕ lùc, nhËn phÇn th­ëng n¨ng ®éng x©y dùng tÕ ®µn thÕ lùc cÇn ®iÓm x©y dùng c¸ nh©n ®¹t 300 ®iÓm."
 	local msg2 = "khi nhËn th­ëng xÕp h¹ng c¸ nh©n, ®iÓm x©y dùng cña nh©n vËt ph¶i ®¹t 950 ®iÓm míi cã thÓ nhËn."
-	Say(msg1..msg2, 2, "Trang kÕ/ywz_GetAwardInfo2", "trë l¹i/main");
+	Say(msg1..msg2, 2, "Next page/ywz_GetAwardInfo2", "trë l¹i/main");
 end
 
 function ywz_GetAwardInfo2()

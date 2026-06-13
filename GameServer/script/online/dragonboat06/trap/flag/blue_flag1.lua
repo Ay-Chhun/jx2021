@@ -44,7 +44,7 @@ function dizzyfirst()
 		PlayerIndex = Get_Player_By_Rank(i);
 		if PlayerIndex > 0 and GetTask(POSITION) ~= TRAPCOUNT then
 			CastState("state_vertigo",1,5*18);
-			Msg2MSAll(MISSION_ID,sName.." Liªn tiÕp v­ît qua cê ®á vµ cê xanh, lµm cho ng­êi ®øng nhÊt: "..GetName().." bÞ cho¸ng.");
+			Msg2MSAll(MISSION_ID,sName.." Liªn tiÕp v­ît qua cê ®á vµ cê xanh, lµm cho ng­êi ®øng nhÊt: "..GetName().." get stunned.");
 			break;
 		end;
 	end;

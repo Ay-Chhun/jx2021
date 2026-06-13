@@ -61,34 +61,34 @@ function game_info_yes()	--¸ÃÇø·şÎªÔ½Ò°Èü¿ªÈüÇø·ş
 	local szSay = "Thi ®Êu ViÖt d· siªu cÊp<color=yellow>HiÖn t¹i ®· vµo vßng ®Êu lo¹i<color>, nhÊn vµo c¸c h¹ng môc d­íi ®©y ®Ó xem ch­¬ng tr×nh thi ®Êu, chi tiÕt xin xem trang chñ"
 	local t=
 	{
-		"Giai ®o¹n 1: b¸o danh/sign_info",
+		"Stage 1: registration/sign_info",
 		"\nGiai ®o¹n 2: vßng lo¹i\n\n/game_info_yu",
-		"Giai ®o¹n 3: B¸n kÕt/game_info2",
-		"Giai ®o¹n 4: chung kÕt/game_info3",
-		"Tin tøc kh¸c./game_info4",
-		"Rêi khái/end_say",
+		"Stage 3: Semifinals/game_info2",
+		"Stage 4: Finals/game_info3",
+		"Other news./game_info4",
+		"Leave/end_say",
 	}
 	Say(szSay, getn(t), t)
 end
 
 function game_info_yu()
 	local szSay = "Thêi gian thi ®Êu: sau ®ît b¶o tr×, ng­êi ch¬i h·y ®¨ng nhËp vµo server chØ ®Şnh tiÕn hµnh thi ®Êu kĞo dµi ®Õn tr­íc ®ît b¶o tr× lÇn sau\n §iÒu kiÖn tham dù: tÊt c¶ ng­êi ch¬i nhËn ®­îc tµi kho¶n thi ®Êu vµ ®iÒn ®Çy ®ñ nh÷ng th«ng tin c¸ nh©n \nH×nh thøc b¸o danh: a. nhËn lÊy tµi kho¶n thi ®Êu tõ c¸c tiÖm net, c¸c tr­êng ®¹i häc, c¸c chi nh¸nh cña VNG b.vµo trang web chİnh thøc nhËn lÊy tµi kho¶n thi ®Êu \n H×nh thøc thi ®Êu: t¨ng cÊp \n Chó ı: ng­êi ch¬i tham gia thi ®Êu kh«ng ph¶i ë c¸c server chØ ®Şnh th× sÏ kh«ng ®­îc tİnh.\n b¶n update trß ch¬i: ph¶i lµ b¶n míi nhÊt\n khu vùc tham gia: bÊt cø n¬i nµo (tiÖm net, tr­êng ®¹i häc, gia ®×nh vv...)"
-	Say(szSay, 2, "TiÕp tôc t×m hiÓu (server chØ ®Şnh)/game_info_yu_svr", "Rêi khái/end_say")
+	Say(szSay, 2, "TiÕp tôc t×m hiÓu (server chØ ®Şnh)/game_info_yu_svr", "Leave/end_say")
 end
 
 function game_info_yu_svr()
 	local szSay = "Côm server §iÖn Tİn trËn 1: V©n Nam, Quı Ch©u, Tø Xuyªn, T©y T¹ng, ThiÓm T©y, Cam Tóc, T©n C­¬ng\n Côm server §iÖn Tİn trËn 2: Hå B¾c, Giang T©y, ChiÕt Giang, Th­îng H¶i, Giang T«, An Huy \n Côm server §iÖn Tİn trËn 3: Hå Nam, Phóc KiÕn, Qu¶ng §«ng, Qu¶ng T©y, H¶i Nam\n\n Côm server viÔn th«ng trËn 1: B¾c Kinh, Thiªn T©n, S¬n T©y, S¬n §«ng, T©n C­¬ng, Hµ Nam, Hµ B¾c\n Côm server ViÔn Th«ng trËn 2: Liªu Ninh, C¸t L©m, H¾c Long Giang, Néi M«ng, Thanh H¶i."
-	Say(szSay, 2, "TiÕp tôc t×m hiÓu quy t¾c./game_info_yu_guize", "Rêi khái/end_say")
+	Say(szSay, 2, "Continue learning the rules./game_info_yu_guize", "Leave/end_say")
 end
 
 function game_info_yu_guize()
 	local szSay = "1. Nghiªm cÊm sö dông auto hoÆc lîi dông lçi game (BUG), nÕu ph¸t hiÖn sÏ hñy bá t­ c¸ch thi ®Êu\n2. Sau khi thi ®Êu kÕt thóc, chóng t«i sÏ chän ra nh÷ng nh©n vËt cã ®¼ng cÊp cao nhÊt trong server thi ®Êu ®Ó trao th­ëng (vİ dô: mét tµi kho¶n cã 3 nh©n vËt cÊp 12, cÊp 60, cÊp 47, chóng t«i sÏ chän nh©n vËt cÊp 60 tiÕn hµnh xÕp h¹ng)\n3.Sau khi server thi ®Êu më ra, ng­êi ch¬i ph¶i tù t¹o nh©n vËt míi, tªn, chän h×nh t­îng, m«n ph¸i\n4.Trong khi thi ®Êu, cã thÓ nhê ng­êi kh¸c trî gióp\n5.Mèc ®¼ng cÊp lµ 30\n6. Ngµy cuéc thi t¨ng cÊp kÕt thóc sÏ chiÕu theo ®¼ng cÊp nh©n vËt h«m ®ã tiÕn hµnh xĞt chän qu¸n qu©n m«n ph¸i vµ tæng qu¸n qu©n cho vßng lo¹i (nÕu ®¼ng cÊp b»ng nhau sÏ so s¸nh trŞ kinh nghiÖm, nÕu vÉn b»ng nhau sÏ so s¸nh ®iÓm danh väng)"
-	Say(szSay, 2, "Tra xem phÇn th­ëng./game_info_yu_award", "Rêi khái/end_say")
+	Say(szSay, 2, "Tra xem phÇn th­ëng./game_info_yu_award", "Leave/end_say")
 end
 
 function game_info_yu_award()
 	local szSay = "1. BÊt kú nh©n vËt nµo trong tµi kho¶n thi ®Êu ®¹t ®Õn cÊp 30 vµ thêi gian t¹o nh©n vËt İt nhÊt 4 ngµy, ®Òu cã thÓ nhËn lÊy phÇn th­ëng: (1)1 ngùa hång m· hay hoµng m· cÊp 30; (2)1 trang bŞ s­ m«n cÊp 40; (3) thİ luyÖn qu¶ tõ 1- 3 viªn ; (4) 5 Thiªn th¹ch. Thêi gian nhËn th­ëng: tõ vßng lo¹i ngµy 16/06 ®Õn trËn b¸n kÕt ngµy 25/07, ®Şa ®iÓm nhËn th­ëng: Sø gi¶ viÖt d· ë ba ®¹i thµnh thŞ\n2.Gi¶i nhÊt giµnh cho ng­êi ch¬i ®¹t ®¼ng cÊp cao nhÊt cña 7 m«n ph¸i tÊt c¶ server thi ®Êu lµ 1 MP3 trŞ gi¸ 500 NDT\n3.Tæng qu¸n qu©n toµn server thi ®Êu lµ 1 bé card mµn h×nh trŞ gi¸ 1000 NDT\nKh«ng thÓ nhËn cïng lóc 2,3 gi¶i th­ëng."
-	Say(szSay, 2, "trë l¹i/game_info_yes", "Rêi khái/end_say")
+	Say(szSay, 2, "trë l¹i/game_info_yes", "Leave/end_say")
 end
 
 function get_award_yu()
@@ -110,7 +110,7 @@ function get_award_yu()
 		Talk(1, "", "Xin lçi, chØ cã ng­êi ch¬i ®¹t ®iÒu kiÖn nhËn th­ëng ë vßng lo¹i vµ ch­a nhËn míi cã thÓ nhËn th­ëng.")
 		return
 	elseif GetTask(1785) == 2 then
-		Say("PhÇn th­ëng vßng lo¹i bao gåm:\n(1)1 con ngùa hång m· hay hoµng m· cÊp 30\n(2)1 trang bŞ s­ m«n cÊp 40\n(3) thİ luyÖn qu¶ tõ 1 - 3 viªn\n(4) 5 miÕng Thiªn th¹ch\n\n<color=yellow>Khi nhËn th­ëng, h·y s¾p xÕp hµnh trang l¹i<color>", 2, "NhËn lÊy phÇn th­ëng./get_award_yu_yes", "Th«i! LÇn sau ®i!/end_say")
+		Say("PhÇn th­ëng vßng lo¹i bao gåm:\n(1)1 con ngùa hång m· hay hoµng m· cÊp 30\n(2)1 trang bŞ s­ m«n cÊp 40\n(3) thİ luyÖn qu¶ tõ 1 - 3 viªn\n(4) 5 miÕng Thiªn th¹ch\n\n<color=yellow>Khi nhËn th­ëng, h·y s¾p xÕp hµnh trang l¹i<color>", 2, "NhËn lÊy phÇn th­ëng./get_award_yu_yes", "No thanks! Maybe next time!/end_say")
 	end
 end
 
@@ -236,7 +236,7 @@ function main_no()		-- ²»ÊÇÔ½Ò°ÈüµÄÇø·ş
 	local t =
 	{
 		"T×m hiÓu cuéc thi t¨ng cÊp./game_info",
-		"Rêi khái/end_say",
+		"Leave/end_say",
 	}
 	Say(szSay, getn(t), t)
 end
@@ -246,34 +246,34 @@ function game_info()
 	local szSay = "Cuéc thi ViÖt d· viÖt vâ hiÖp 2007 ®· chİnh thøc khëi ®éng!"
 	local t=
 	{
-		"Giai ®o¹n 1: b¸o danh/sign_info",
+		"Stage 1: registration/sign_info",
 		"\nGiai ®o¹n 2: vßng lo¹i\n\n/game_info1",
-		"Giai ®o¹n 3: B¸n kÕt/game_info2",
-		"Giai ®o¹n 4: chung kÕt/game_info3",
-		"Tin tøc kh¸c./game_info4",
-		"Rêi khái/end_say"
+		"Stage 3: Semifinals/game_info2",
+		"Stage 4: Finals/game_info3",
+		"Other news./game_info4",
+		"Leave/end_say"
 	}
 	Say(szSay, getn(t), t)
 end
 
 function sign_info()
-	Say("Cuéc thi ViÖt d· viÖt vâ hiÖp 2007 ®· chİnh thøc khëi ®éng!", 2, "trë l¹i/game_info", "Rêi khái/end_say")
+	Say("Cuéc thi ViÖt d· viÖt vâ hiÖp 2007 ®· chİnh thøc khëi ®éng!", 2, "trë l¹i/game_info", "Leave/end_say")
 end
 
 function game_info1()
-	Say("Cuéc thi ViÖt d· viÖt vâ hiÖp 2007 ®· chİnh thøc khëi ®éng!", 2, "trë l¹i/game_info", "Rêi khái/end_say")
+	Say("Cuéc thi ViÖt d· viÖt vâ hiÖp 2007 ®· chİnh thøc khëi ®éng!", 2, "trë l¹i/game_info", "Leave/end_say")
 end
 
 function game_info2()
-	Say("Cuéc thi ViÖt d· viÖt vâ hiÖp 2007 ®· chİnh thøc khëi ®éng!", 2, "trë l¹i/game_info", "Rêi khái/end_say")
+	Say("Cuéc thi ViÖt d· viÖt vâ hiÖp 2007 ®· chİnh thøc khëi ®éng!", 2, "trë l¹i/game_info", "Leave/end_say")
 end
 
 function game_info3()
-	Say("Cuéc thi ViÖt d· viÖt vâ hiÖp 2007 ®· chİnh thøc khëi ®éng!", 2, "trë l¹i/game_info", "Rêi khái/end_say")
+	Say("Cuéc thi ViÖt d· viÖt vâ hiÖp 2007 ®· chİnh thøc khëi ®éng!", 2, "trë l¹i/game_info", "Leave/end_say")
 end
 
 function game_info4()
-	Say("C¸c côm server thi ®Êu vßng lo¹i, vßng b¸n kÕt cuéc thi t¨ng cÊp còng cho nh÷ng ng­êi ch¬i b×nh th­êng t¹o nh©n vËt, sau khi cuéc thi kÕt thóc c¸c server thi ®Êu sÏ vËn hµnh b×nh th­êng nh­ c¸c server cò. Sau khi thi ®Êu kÕt thóc, tÊt c¶ tin tøc cña ng­êi ch¬i thi ®Êu sÏ ®­îc b¶o l­u tr¹ng th¸i, ng­êi ch¬i cã thÓ tiÕp tôc sö dông tµi kho¶n nµy ®Ó ®¨ng nhËp vµo trß ch¬i.", 2, "trë l¹i/game_info", "Rêi khái/end_say")
+	Say("C¸c côm server thi ®Êu vßng lo¹i, vßng b¸n kÕt cuéc thi t¨ng cÊp còng cho nh÷ng ng­êi ch¬i b×nh th­êng t¹o nh©n vËt, sau khi cuéc thi kÕt thóc c¸c server thi ®Êu sÏ vËn hµnh b×nh th­êng nh­ c¸c server cò. Sau khi thi ®Êu kÕt thóc, tÊt c¶ tin tøc cña ng­êi ch¬i thi ®Êu sÏ ®­îc b¶o l­u tr¹ng th¸i, ng­êi ch¬i cã thÓ tiÕp tôc sö dông tµi kho¶n nµy ®Ó ®¨ng nhËp vµo trß ch¬i.", 2, "trë l¹i/game_info", "Leave/end_say")
 end
 
 function end_say()

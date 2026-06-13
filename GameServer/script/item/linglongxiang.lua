@@ -22,7 +22,7 @@ function OnUse(nItemIdx)
 	Say("<color=green>"..tRose[nRose].."r­¬ng<color>: trang phôc trong r­¬ng nµy lµ <color=yellow>"..tRose[nRose].."<color>Trång lo¹i hoa nµy rÊt khã, ®Ó chøng minh t×nh yªu cña 2 ng­êi, ng­¬i cã chÊp nhËn 1 lÇn thö th¸ch kh«ng? §iÓm tİch lòy cña ng­¬i sÏ bŞ gi¶m <color=yellow>"..tChenghao[nRose].."<color> cÊp.",
 		2,
 		"\n §­îc, ta chÊp nhËn/#rose_open("..nRose..")",
-		"\n §Ó ta suy nghÜ/end_say"
+		"\n Let me think it over/end_say"
 	)
 end
 

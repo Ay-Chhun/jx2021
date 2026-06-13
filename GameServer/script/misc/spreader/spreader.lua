@@ -50,7 +50,7 @@ function spreader_main()
 		"NhËn phÇn th­ëng t©n thñ/XSTG_award",
 		"NhËp [CD-KEY]kİch ho¹t tµi kho¶n cña b¹n/gsp_input_cdkey", 
 		"NhËn phÇn th­ëng giai ®o¹n sau khi kİch ho¹t [CD-KEY]cña b¹n/gsp_phase_prize",
-		"Liªn quan Sø gi¶.../gsp_about")
+		"About the Envoy.../gsp_about")
 end;
 
 -- ÊäÈë[CD-KEY]¼¤»îÄúµÄÕÊºÅ
@@ -58,11 +58,11 @@ function gsp_input_cdkey()
 	local nValue = GetBeSpreadFlag()
 	if (nValue == 1) then
 		local szError = "Tµi kho¶n nµy ®· kİch ho¹t, kh«ng cÇn nhËp [CD-KEY]n÷a."
-		Say("<color=green>Sø gi¶<color>:"..szError, 0)
+		Say("<color=green>Envoy<color>:"..szError, 0)
 		return
 	end
 	-- Í¨Öª¿Í»§¶Ë´ò¿ªÊäÈë¿ò
-	AskClientForString("gsp_on_cdkey_input", "", 1, 20, "Vui lßng nhËp CD-KEY:")
+	AskClientForString("gsp_on_cdkey_input", "", 1, 20, "Please enter your CD-KEY:")
 end
 
 -- ÁìÈ¡ÄúµÄ[CD-KEY]¼¤»îºó½×¶Î½±Àø
@@ -109,7 +109,7 @@ function gsp_cdkey_verify_result(nResult)
 	print("GSP_CDKEY_E_NEWTIMEOUT"..GSP_CDKEY_E_NEWTIMEOUT)
 	print("nSel:"..nSel)
 	Msg2Player(szMsg[nSel])
-	Say("[<color=green>Sø gi¶<color>]:"..szMsg[nSel], 0)
+	Say("[<color=green>Envoy<color>]:"..szMsg[nSel], 0)
 
 	if (nResult == GSP_CDKEY_ACTION_SUCCESS) then
         SetBeSpreadFlag()

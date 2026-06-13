@@ -4,7 +4,7 @@
 
 tPackItems = {
 	[200130822] = {"Nh©n S©m D­ìng Vinh Hoµn",1,0,30005,100},--Ò»ÏäÈË²ÎÑøÈÙÍè
-	[200130823] = {"§iÒn ThÊt Sa §¶m Hoµn",1,0,30006,100},--Ò»ÏäÌïÆßöèµ¨Íè
+	[200130823] = {"Tian Qi Sha Dan Pill",1,0,30006,100},--Ò»ÏäÌïÆßöèµ¨Íè
 	[200130824] = {"Cöu Hoa Ngäc Lé Hoµn",1,0,30007,100},--Ò»Ïä¾Å»¨ÓñÂ¶Íè
 }
 
@@ -20,8 +20,8 @@ function on_use_real(nItemIndex)
 	local szMsg = format("Më %s sÏ nhËn ®­îc %d c¸i <color=yellow>%s<color>. §ång ı më kh«ng?", name, t[5], t[1])
 	Say(szMsg,
 		2,
-		format("%s/#sure_open(%d)","Më", nItemIndex),
-		format("%s/nothing","Ra khái"))
+		format("%s/#sure_open(%d)","Open", nItemIndex),
+		format("%s/nothing","Exit"))
 end;
 
 

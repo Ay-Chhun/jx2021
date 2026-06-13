@@ -256,7 +256,7 @@ LEVELWORD = {
 
 function toLevel(lvl)
 	if(not tonumber(lvl)) then return "error" end
-	if(lvl < 0 or lvl > 10) then return "VÞ Tri" end
+	if(lvl < 0 or lvl > 10) then return "Position" end
 	return LEVELWORD[lvl]
 end
 ---------------------------------

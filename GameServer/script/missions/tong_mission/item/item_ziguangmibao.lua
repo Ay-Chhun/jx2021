@@ -4,11 +4,11 @@
 Include("\\script\\missions\\tong_mission\\main_head.lua");
 g_szItemName = " Tö Quang MËt Báa";
 g_tbItem = {
-	[1] = {2,0,735,"Tö Quang LiÖt Viªm CÈm",1},
-	[2] = {2,0,736,"Tö Quang Kú L©n Vò",1},
-	[3] = {2,0,737,"Tö Quang Kim Tµm Ti",2},
-	[4] = {2,0,738,"M¶nh TiÖt Hoµnh Thó",4},
-	[5] = {2,0,739,"Th­îng Cæ Kú L©n HuyÕt",3},
+	[1] = {2,0,735,"Purple Light Blazing Flame Brocade",1},
+	[2] = {2,0,736,"Purple Light Qilin Dance",1},
+	[3] = {2,0,737,"Purple Light Golden Silkworm Thread",2},
+	[4] = {2,0,738,"Fierce Sweeping Beast",4},
+	[5] = {2,0,739,"Ancient Qilin Blood",3},
 	}
 function OnUse(nItemIdx)
 	local selTab = {};
@@ -26,7 +26,7 @@ function make_it(nType)
 	end;
 	local nNeedItemCount = g_tbItem[nType][5];
 	if GetItemCount(2,0,761) < nNeedItemCount then
-		Talk(1,"","Sè l­îng "..g_szItemName.." trªn hµnh trang cña ®¹i hiÖp kh«ng ®ñ!");
+		Talk(1,"","The quantity"..g_szItemName.." trªn hµnh trang cña ®¹i hiÖp kh«ng ®ñ!");
 		return 0;
 	end;
 	if DelItem(2,0,761,nNeedItemCount) == 1 then

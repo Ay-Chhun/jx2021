@@ -32,7 +32,7 @@ function main()
 	end
 	if bIsTree == 0 then
 		SetNpcScript(npcIdx, "");
-		WriteLog("[Lçi khi trång c©y th¸ng 4]:NPC:"..npcName.."Lçi files gèc");
+		WriteLog("[April tree-planting error]:NPC:"..npcName.."Original file error");
 		return 0;
 	end
 	local npcTreeIndex = GetTargetNpc(); --»ñÈ¡Íæ¼ÒµÄ¶¯×÷¶ÔÏóNpc
@@ -55,10 +55,10 @@ function main()
 	--Èç¹ûÊÇ²»ËÀÊ÷
 	if GetTask(TASK_PLANT_TREE_TYPE) == 2 then
 		if nPlantTimePassed < 240 then
-			Talk(1, "", "C©y BÊt Tö vÉn ch­a tr­êng thµnh, b©y giê kh«ng thÓ thu ho¹ch ®­îc, ®îi <color=yellow>" .. 240 - nPlantTimePassed .. " gi©y<color> h·y tiÕp tôc thu ho¹ch");
+			Talk(1, "", "C©y BÊt Tö vÉn ch­a tr­êng thµnh, b©y giê kh«ng thÓ thu ho¹ch ®­îc, ®îi <color=yellow>" .. 240 - nPlantTimePassed .. " seconds<color> then continue harvesting");
 			return 0;
 		else
-			tinsert(selTab, "B©y giê thu ho¹ch /getTree");
+			tinsert(selTab, "Harvest now /getTree");
 			tinsert(selTab, "§îi mét lóc h·y thu ho¹ch tiÕp/doNothong");
 			sSaySth = "C©y ®· tr­ëng thµnh, muèn thu ho¹ch b©y giê? NÕu nh­<color=yellow>" .. 300 - nPlantTimePassed .. "<color> gi©y sau kh«ng thu ho¹ch, c©y sÏ tù ®éng chÕt ®i";
 		end
@@ -87,10 +87,10 @@ function main()
 		end
 		if nTreeGrow == 6 then
 			if nPlantTimePassed < TREE_PARAM[nTreeGrow][3] then
-				Talk(1, "", TREE_TYPE[GetTask(TASK_PLANT_TREE_TYPE)][2] .. "VÉn ch­a tr­ëng thµnh, nªn kh«ng thÓ thu ho¹ch b©y giê ®­îc<color=yellow>" ..TREE_PARAM[nTreeGrow][3] - nPlantTimePassed .. " gi©y<color> h·y tiÕp tôc thu ho¹ch");
+				Talk(1, "", TREE_TYPE[GetTask(TASK_PLANT_TREE_TYPE)][2] .. "VÉn ch­a tr­ëng thµnh, nªn kh«ng thÓ thu ho¹ch b©y giê ®­îc<color=yellow>" ..TREE_PARAM[nTreeGrow][3] - nPlantTimePassed .. " seconds<color> then continue harvesting");
 				return 0;
 			end
-			tinsert(selTab, "B©y giê thu ho¹ch /getTree");
+			tinsert(selTab, "Harvest now /getTree");
 			tinsert(selTab, "§îi mét lóc h·y thu ho¹ch tiÕp/doNothong");
 			sSaySth = "C©y ®· tr­ëng thµnh, muèn thu ho¹ch b©y giê? NÕu nh­<color=yellow>" .. getDateTimeString(TREE_PARAM[nTreeGrow][2] - nPlantTimePassed) .. "<color> gi©y sau kh«ng thu ho¹ch, c©y sÏ tù ®éng chÕt ®i";
 		else
@@ -132,7 +132,7 @@ end
 function getTree()
 
 -----ÅÐ¶Ï±³°üºÍ¸ºÖØ------------------------
-	if gf_Judge_Room_Weight(4, 20, "Xin lçi, ") == 0 then
+	if gf_Judge_Room_Weight(4, 20, "Sorry,") == 0 then
 		return 0
 	end
 	
@@ -176,7 +176,7 @@ function getTree()
 	
 	ModifyExp(nExp);
 	Msg2Player("B¹n nhËn ®­îc " .. nExp.." ®iÓm kinh nghiÖm");
-	WriteLog("[Ho¹t ®éng trång c©y th¸ng 04]:" .. GetName() .. "NhËn ®­îc " .. nExp.. " ®iÓm kinh nghiÖm");
+	WriteLog("[Ho¹t ®éng trång c©y th¸ng 04]:" .. GetName() .. "Received" .. nExp.. " ®iÓm kinh nghiÖm");
 	
 
 -----¸øÎïÆ·½±Àø£¬Ö»ÓÐ»Æ½ðÊ÷ºÍ°×½ðÊ÷²Å¸ø
@@ -234,13 +234,13 @@ function getTree()
 		nRand = random(1, 100);
 		if nRand > 0 and nRand <= 40 then
 			if AddItem(2, 1, 30079, 100) == 1 then
-				Msg2Player("B¹n nhËn ®­îc " .. "100" .. "c¸i" .. "R­¬ng HiÖu Kú");
-				WriteLogEx("Hoat dong thang 4","C©y B¹ch Ng©n",100,"R­¬ng HiÖu Kú")
+				Msg2Player("B¹n nhËn ®­îc " .. "100" .. "c¸i" .. "Banner Flag Chest");
+				WriteLogEx("Hoat dong thang 4","C©y B¹ch Ng©n",100,"Banner Flag Chest")
 			end
 		elseif nRand > 40 and nRand <= 50 then
 			if AddItem(2, 1, 30079, 200) == 1 then
-				Msg2Player("B¹n nhËn ®­îc " .. "200" .. "c¸i" .. "R­¬ng HiÖu Kú");
-				WriteLogEx("Hoat dong thang 4","C©y B¹ch Ng©n",200,"R­¬ng HiÖu Kú")
+				Msg2Player("B¹n nhËn ®­îc " .. "200" .. "c¸i" .. "Banner Flag Chest");
+				WriteLogEx("Hoat dong thang 4","C©y B¹ch Ng©n",200,"Banner Flag Chest")
 			end			
 		end
 	end

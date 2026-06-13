@@ -255,7 +255,7 @@ function Deal_Triger(nTeamSize)
             Talk(1, "", VET_201108_STRING_LIST[5])
             return
         end
-        StartTimeGuage("N­íng b¸nh", VET_201108_OVEN_LIFE,0,1)
+        StartTimeGuage("Bake cakes", VET_201108_OVEN_LIFE,0,1)
     end
     PlayerIndex = nOldPlayer
 		

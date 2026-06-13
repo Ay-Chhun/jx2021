@@ -25,7 +25,7 @@ g_tTupu = {
 	[8]={2,1,31138,TSK_TUPU2,4,"M¶nh §å Phæ 8"},
 	[9]={2,1,31139,TSK_TUPU3,1,"M¶nh §å Phæ 9"},
 	[10]={2,1,31140,TSK_TUPU3,2,"M¶nh §å Phæ 10"},
-	[11]={2,1,31141,TSK_TUPU3,3,"§å Phæ ChÕ T¹o"},
+	[11]={2,1,31141,TSK_TUPU3,3,"Crafting Blueprint"},
 }
 
 function test1()
@@ -42,7 +42,7 @@ function OnUse()
 	tinsert(tbSay, format("%s/_checkout_tupu", "Ta muèn lÊy ra §å Phæ ChÕ T¹o"))
 	tinsert(tbSay, format("%s/_compose_tupu", "Ta muèn ghÐp §å Phæ ChÕ T¹o"))
 	-- tinsert(tbSay, format("%s/test1", "[Debug]ÎÒÒª¶ÍÔìÍ¼Æ×"))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 	Say(szTitle, getn(tbSay), tbSay)
 end
 
@@ -68,7 +68,7 @@ function _checkout_tupu_confirm(nNum)
 	end
 	local tAward = g_tTupu[11];
 	if gf_Judge_Room_Weight(1, 0) == 1 then
-		gf_AddItemEx({tAward[1],tAward[2],tAward[3],nNum}, "§å Phæ ChÕ T¹o");
+		gf_AddItemEx({tAward[1],tAward[2],tAward[3],nNum}, "Crafting Blueprint");
 	else
 		_modify_storage_by_idx(11,nNum)
 		Talk(1,"","Kh«ng gian hµnh trang kh«ng ®ñ")
@@ -167,9 +167,9 @@ function _checkin_all_tupu(bConfirm)
 	if not bConfirm then
 		local szTitle = format("%s, mçi lo¹i §å Phæ tèi ®a ®­îc l­u tr÷ %d c¸i, x¸c ®Þnh cÊt vµo?", g_szTitle, G_MAX_TUPU_STORE);
     	local tbSay = {}
-    	tinsert(tbSay, format("%s/#_checkin_all_tupu(1)", "§ång ý"))
+    	tinsert(tbSay, format("%s/#_checkin_all_tupu(1)", "Agree"))
     	tinsert(tbSay, format("%s/OnUse", "trë l¹i"))
-    	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+    	tinsert(tbSay, format("%s/nothing", "Exit"))
 		Say(szTitle, getn(tbSay), tbSay)
 		return
 	end

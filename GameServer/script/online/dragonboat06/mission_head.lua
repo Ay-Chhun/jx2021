@@ -262,7 +262,7 @@ function Sort_By_Rank(TempTab)
 end;
 --ÏÔÊ¾ÅÅÃû
 function Report_Result(RankTab)
-	local sContent = "XÕp h¹ng cuèi cïng: <enter>";
+	local sContent = "Final ranking: <enter>";
 	local OldPlayerIndex = PlayerIndex;
 	local nPlayerCount = getn(RankTab);
 	local nPlayerScored = nPlayerCount;
@@ -286,7 +286,7 @@ function Report_Result(RankTab)
 				FinishTime = FinishTime/18;
 				nMin = floor(FinishTime/60);
 				nSec = format("%.2f",FinishTime - nMin*60);	--Ð¡ÊýµãºóÁ½Î»¾Í¹»ÁË
-				sResult = ""..nMin.." Phót "..nSec.." Gi©y "
+				sResult = ""..nMin.." minutes"..nSec.." Gi©y "
 			end;
 			if nPlayerCount > 0 and nPlayerCount <= MAXPLAYER then		
 				local multiple = get_reward_multiple(SYS_DRAGONBOAT)
@@ -294,10 +294,10 @@ function Report_Result(RankTab)
 					multiple = multiple*MULTIPLE;	--¶à±¶½±Àø¡£ÕâÀï³ËÒÔ»Ô»ÍÖ®Ò¹µÄ±¶ÂÊ¾ÍÐÐÁË
 				end;
 				local score = BonusTab[nPlayerCount][i] * multiple
-				sContent = sContent.."h¹ng "..NumTab[i]..":<color=yellow> "..strsub(GetName(),1,10).." <color>thêi gian<color=red> "..sResult.." <color>®iÓm tÝch lòy<color=yellow> "..score.."<color><enter>";
-				Msg2MSAll(MISSION_ID,"h¹ng "..NumTab[i].." Danh:"..GetName().." thêi gian sö dông:"..sResult);
+				sContent = sContent.."rank"..NumTab[i]..":<color=yellow> "..strsub(GetName(),1,10).." <color>time<color=red>"..sResult.." <color>®iÓm tÝch lòy<color=yellow> "..score.."<color><enter>";
+				Msg2MSAll(MISSION_ID,"rank"..NumTab[i].." Danh:"..GetName().." thêi gian sö dông:"..sResult);
 			else
-				Write_Log("Ho¹t ®éng §oan Ngä sai sãt","Trong hµm sè Report_Result, biÕn l­îng nPlayerCount sai");
+				Write_Log("Ho¹t ®éng §oan Ngä sai sãt","In the Report_Result function, the variable nPlayerCount is wrong");
 			end;
 		else
 			Write_Log("Ho¹t ®éng §oan Ngä sai sãt","Nh©n tè ng­êi ch¬i trong mission_head.lua,Report_Result(), RankTab lín h¬n hoÆc = 0");

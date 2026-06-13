@@ -16,11 +16,11 @@ function OnUse(nItemIdx)
 				WriteLogEx("Hoat dong thang 8", "Dung tui trai cay", 1, "Nho Tuoi");
 			end
 		elseif nRand > 30 and nRand <= 60 then
-			if gf_AddItemEx({2, 1, 30099, 1}, "M·ng cÇu") == 1 then
+			if gf_AddItemEx({2, 1, 30099, 1}, "Soursop") == 1 then
 				WriteLogEx("Hoat dong thang 8", "Dung tui trai cay", 1, "Mang Cau");
 			end
 		else
-			if gf_AddItemEx({2, 1, 30100, 1}, "SÇu riªng") == 1 then
+			if gf_AddItemEx({2, 1, 30100, 1}, "Durian") == 1 then
 				WriteLogEx("Hoat dong thang 8", "Dung tui trai cay", 1, "Sau rieng");
 			end
 		end

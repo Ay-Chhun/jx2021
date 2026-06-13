@@ -2,7 +2,7 @@ Include("\\script\\online\\qianhe_tower\\qht_head.lua")
 
 function OnUse(nItem)
 	if qht_activity_isopen() ~= 1 then
-		Talk(1,"","Event Æ∑ h’t hπn");
+		Talk(1,"","The event has expired");
 		return 0;
 	end
 	local tSay = {}

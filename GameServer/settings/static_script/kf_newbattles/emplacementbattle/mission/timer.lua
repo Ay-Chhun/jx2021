@@ -72,8 +72,8 @@ function Process_Fight_Timer()
 		else
 			sResult = "Nh¹n M«n Quan-Ph¸o ®µi chiÕn kÕt thóc, hai bªn hßa nhau!";
 		end;
-		Msg2MSAll(MISSION_ID,tBattleName[BATTLE_TYPE].." ®· kÕt thóc.");
-		Msg2MSAll(MISSION_ID,"Thêi gian chiÕm lÜnh ph¸o ®µi gi÷a Tèng-Liªu lµ: Tèng ["..nTimeSong.." gi©y], Liªu ["..nTimeLiao.." gi©y]."..sResult);
+		Msg2MSAll(MISSION_ID,tBattleName[BATTLE_TYPE].." has ended.");
+		Msg2MSAll(MISSION_ID,"Thêi gian chiÕm lÜnh ph¸o ®µi gi÷a Tèng-Liªu lµ: Tèng ["..nTimeSong.." gi©y], Liªu ["..nTimeLiao.." seconds]."..sResult);
 		StopMissionTimer(MISSION_ID,TIMER_ID);
 		StopMissionTimer(MISSION_ID,INJURE_TIMER_ID);
 		StartMissionTimer(MISSION_ID,TIMER_ID,WAITOUT_TIME);
@@ -92,7 +92,7 @@ function Process_Fight_Timer()
 			nOccupyTimeLiao = GetTime() - GetMissionV(MV_TAKE_TIME_LIAO);
 			nOccupyTimeLiao = GetMissionV(MV_OCCUPY_TIME_LIAO)+nOccupyTimeLiao;	
 		end;
-		Msg2MSAll(MISSION_ID,"TiÕn ®é thêi gian: ["..(FIGHT_TIMER_LOOP-nLoop+1)..":"..(FIGHT_TIMER_LOOP+1).."]");
+		Msg2MSAll(MISSION_ID,"Time progress: ["..(FIGHT_TIMER_LOOP-nLoop+1)..":"..(FIGHT_TIMER_LOOP+1).."]");
 		local nScaleSong = floor(100*(nOccupyTimeSong/((FIGHT_TIME/18)*(FIGHT_TIMER_LOOP+1))));
 		local nScaleLiao = floor(100*(nOccupyTimeLiao/((FIGHT_TIME/18)*(FIGHT_TIMER_LOOP+1))));
 		Msg2MSAll(MISSION_ID,"Thêi gian chiÕm lÜnh ph¸o ®µi hiÖn t¹i gi÷a Tèng-Liªu lµ: Tèng ["..nScaleSong.."]:["..nScaleLiao.."] Liªu");

@@ -192,14 +192,14 @@ function get_one_task(task_link_id)
 	
 	-- ÏÖÔÚÊ¦ÃÅÈÎÎñ¾ÍÊÇÉ±¹Ö
 	if (nTaskType == TT_KILL_MONSTER) then
-		strAnswer = {"§Ö tö ®ång ý!/confirm_accept_task",
+		strAnswer = {"Disciple agrees!/confirm_accept_task",
 					 "§Ö tö thùc lùc cßn kÐm, ®Ó luyÖn mét thêi gian ®·!/cancel_task"}
 
 		-- Ëæ»úÑ¡ÔñÒ»¸ö·¢ÈÎÎñµÄ»°£¬¹þ¹þ£¬²ß»®Ìî±í»áÓÐÂùÍ´¿àÑ½£¡ Amen.	
 		local nSel = random(1, 3)
 		local strTaskInfo = GetInfo(task_link_id, nSel)
 		local strAnswer = {
-			"§Ö tö ®ång ý!/confirm_accept_task",
+			"Disciple agrees!/confirm_accept_task",
 			"§Ö tö thùc lùc cßn kÐm, ®Ó luyÖn mét thêi gian ®·!/cancel_task",
 		}
 		Say(strTaskInfo, getn(strAnswer), strAnswer);
@@ -216,7 +216,7 @@ function confirm_accept_task()
 		Say("Ng­¬i nhËn ®­îc 1 nhiÖm vô s­ m«n, muèn ®Õn ®ã kh«ng?",
 			2,
 			"PhiÒn s­ phô ®­a ®Ö tö ®Õn n¬i lµm nhiÖm vô!/#gotoWorld("..nMapIndex..")",
-			"§a t¹ s­ phô! §Ö tö sÏ tù ®i!/cancel_dialog");
+			"Many thanks, master! The disciple will go on his own!/cancel_dialog");
 	else
 		TaskTip("B¹n nhËn ®­îc 1 nhiÖm vô s­ m«n!");
 	end
@@ -612,7 +612,7 @@ end;
 function get_next_task(nFactionRouteNo)
 	local nCurDifficulty = GetTask(TASKVALUE_DIFFICULT_LEVEL_ID)
 	local strTalk = {"Kh¸ l¾m, cã muèn lµm thªm kh«ng? Hay muèn thö nhiÖm vô khã h¬n?",
-					 "§Ö tö ®ång ý!/#get_one_task("..nCurDifficulty..")",
+					 "This disciple agrees!/#get_one_task("..nCurDifficulty..")",
 					 "NhiÖm vô nµy ®· hoµn thµnh, xin kiÓm tra l¹i/faction_event_finish",
 					 "§Ö tö kÐm cái kh«ng thÓ ®¶m nhËn, xin ®­îc hñy nhiÖm vô!/cancel_faction_event",
 					 "§Ö tö muèn nhËn nhiÖm vô khã h¬n/#get_new_task("..nFactionRouteNo..")",
@@ -631,7 +631,7 @@ function query_faction_contribute()
 	local nCurFactionContribute = GetTask(TASKVALUE_FACTION_CONTRI_ID)
 	-- µ±Ç°µÈ¼¶µÄÉùÍûÏÞÖÆ
 	local nFactionReputationLimit, nBaseDayLimit, nExtraDayLimit = GetFactionRepuLimit()
-	Say("§é cèng hiÕn s­ m«n lµ <color=yellow>"..nCurFactionContribute.."<color>, ®¼ng cÊp hiÖn t¹i nhËn ®­îc ®iÓm cèng hiÕn tèi ®a lµ <color=yellow>"..nFactionReputationLimit.."<color>, cè lªn! Më giao diÖn F3 cã thÓ xem ®é cèng hiÕn s­ m«n.", 0)
+	Say("Your sect contribution is <color=yellow>"..nCurFactionContribute.."<color>, ®¼ng cÊp hiÖn t¹i nhËn ®­îc ®iÓm cèng hiÕn tèi ®a lµ <color=yellow>"..nFactionReputationLimit.."<color>, cè lªn! Më giao diÖn F3 cã thÓ xem ®é cèng hiÕn s­ m«n.", 0)
 end;
 
 -- ¼ì²éÍæ¼ÒÊÇ·ñÒÑ¾­Íê³ÉÁËÎäÁÖ´óÊÂ¼þÈÎÎñ
@@ -850,9 +850,9 @@ function faction_event_prize()
 			end
 		else
 		 local	tMijiName = {
-							{"Tø Linh ChiÕn ý Phæ",0,107,159},
+							{"Four Spirits Battle Intent Manual",0,107,159},
 							{"Tø Linh Thiªn ý Phæ",0,107,160},
-							{"Tø Linh Tö ý Phæ",0,107,161}
+							{"Four Spirits Earth Intent Manual",0,107,161}
 						};	
 		 local nRandtb = random(1,3);
 		 AddItem(tMijiName[nRandtb][2],tMijiName[nRandtb][3],tMijiName[nRandtb][4],1);		
@@ -879,7 +879,7 @@ function faction_event_prize()
 	
 	-- ¹ö¶¯¹«¸æ
 	local strPlayerName = GetName()
-	local strNews = "[NhiÖm vô s­ m«n]: Ng­êi ch¬i "..strPlayerName.."  Hoµn thµnh nhiÖm vô s­ m«n nhËn ®­îc quyÓn mËt tÞch."
+	local strNews = "[Sect mission]: Player"..strPlayerName.."  Hoµn thµnh nhiÖm vô s­ m«n nhËn ®­îc quyÓn mËt tÞch."
 --	AddGlobalNews(strNews)
 end;
 
@@ -944,46 +944,46 @@ end;
 --¸øÓèÊ¦ÃÅ¸ß¼¶ÃØ¼®£¬ÐÂÃÅÅÉÒª¼Ó
 function get_advanced_faction_book()
 	local tGaojiMiji = {
-				[0] = {{"Kim Cang B¸t Nh· Kinh",0,107,166},{"V« TrÇn Bå §Ò Kinh",0,107,168},{"TiÒm Long TÞch DiÖt Kinh",0,107,167},{"Thiªn La Liªn Ch©u Lôc",0,107,169},{"Nh­ ý Kim §Ønh MËt TÞch",0,107,170},{"BÝch H¶i TuyÖt ¢m Phæ",0,107,171},{"Hçn §én TrÊn Nh¹c MËt TÞch",0,107,172},{"Quü Thiªn Du Long MËt TÞch",0,107,173},{"HuyÔn ¶nh Mª Tung MËt TÞch",0,107,174},{"Qu©n Tö TiÖt Phong MËt TÞch",0,107,175},{"TrÊn Qu©n Phi Long Th­¬ng Phæ",0,107,176},{"Xuyªn V©n L¹c Hång MËt TÞch",0,107,177},{"U Minh Phong Ma Lôc",0,107,178},{"Linh Cæ HuyÔn Tµ Lôc",0,107,179}},
-				[1] = {{"Kim Cang B¸t Nh· Kinh",0,107,166},{"V« TrÇn Bå §Ò Kinh",0,107,168},{"TiÒm Long TÞch DiÖt Kinh",0,107,167}},
-				[2] = {{"Kim Cang B¸t Nh· Kinh",0,107,166}},
-				[3] = {{"V« TrÇn Bå §Ò Kinh",0,107,168}},
+				[0] = {{"Kim Cang Bat Nha Kinh",0,107,166},{"Vo Tran Bo De Kinh",0,107,168},{"TiÒm Long TÞch DiÖt Kinh",0,107,167},{"Thiªn La Liªn Ch©u Lôc",0,107,169},{"Nh­ ý Kim §Ønh MËt TÞch",0,107,170},{"Azure Sea Silent Sound Score",0,107,171},{"Hçn §én TrÊn Nh¹c MËt TÞch",0,107,172},{"Quü Thiªn Du Long MËt TÞch",0,107,173},{"HuyÔn ¶nh Mª Tung MËt TÞch",0,107,174},{"Qu©n Tö TiÖt Phong MËt TÞch",0,107,175},{"Tran Quan Phi Long Thuong Manual",0,107,176},{"Xuyªn V©n L¹c Hång MËt TÞch",0,107,177},{"U Minh Phong Ma Manual",0,107,178},{"Linh Co Huyen Ta Manual",0,107,179}},
+				[1] = {{"Kim Cang Bat Nha Kinh",0,107,166},{"Vo Tran Bo De Kinh",0,107,168},{"TiÒm Long TÞch DiÖt Kinh",0,107,167}},
+				[2] = {{"Kim Cang Bat Nha Kinh",0,107,166}},
+				[3] = {{"Vo Tran Bo De Kinh",0,107,168}},
 				[4] = {{"TiÒm Long TÞch DiÖt Kinh",0,107,167}},
 				[5] = {{"Thiªn La Liªn Ch©u Lôc",0,107,169}},
 				[6] = {{"Thiªn La Liªn Ch©u Lôc",0,107,169}},
-				[7] = {{"Nh­ ý Kim §Ønh MËt TÞch",0,107,170},{"BÝch H¶i TuyÖt ¢m Phæ",0,107,171}},
+				[7] = {{"Nh­ ý Kim §Ønh MËt TÞch",0,107,170},{"Azure Sea Silent Sound Score",0,107,171}},
 				[8] = {{"Nh­ ý Kim §Ønh MËt TÞch",0,107,170}},
-				[9] = {{"BÝch H¶i TuyÖt ¢m Phæ",0,107,171}},
+				[9] = {{"Azure Sea Silent Sound Score",0,107,171}},
 				[10] = {{"Hçn §én TrÊn Nh¹c MËt TÞch",0,107,172},{"Quü Thiªn Du Long MËt TÞch",0,107,173}},
 				[11] = {{"Hçn §én TrÊn Nh¹c MËt TÞch",0,107,172}},
 				[12] = {{"Quü Thiªn Du Long MËt TÞch",0,107,173}},
 				[13] = {{"HuyÔn ¶nh Mª Tung MËt TÞch",0,107,174},{"Qu©n Tö TiÖt Phong MËt TÞch",0,107,175}},
 				[14] = {{"HuyÔn ¶nh Mª Tung MËt TÞch",0,107,174}},
 				[15] = {{"Qu©n Tö TiÖt Phong MËt TÞch",0,107,175}},
-				[16] = {{"TrÊn Qu©n Phi Long Th­¬ng Phæ",0,107,176},{"Xuyªn V©n L¹c Hång MËt TÞch",0,107,177}},
-				[17] = {{"TrÊn Qu©n Phi Long Th­¬ng Phæ",0,107,176}},
+				[16] = {{"Tran Quan Phi Long Thuong Manual",0,107,176},{"Xuyªn V©n L¹c Hång MËt TÞch",0,107,177}},
+				[17] = {{"Tran Quan Phi Long Thuong Manual",0,107,176}},
 				[18] = {{"Xuyªn V©n L¹c Hång MËt TÞch",0,107,177}},
-				[19] = {{"U Minh Phong Ma Lôc",0,107,178},{"Linh Cæ HuyÔn Tµ Lôc",0,107,179}},
-				[20] = {{"U Minh Phong Ma Lôc",0,107,178}},
-				[21] = {{"Linh Cæ HuyÔn Tµ Lôc",0,107,179}},
+				[19] = {{"U Minh Phong Ma Manual",0,107,178},{"Linh Co Huyen Ta Manual",0,107,179}},
+				[20] = {{"U Minh Phong Ma Manual",0,107,178}},
+				[21] = {{"Linh Co Huyen Ta Manual",0,107,179}},
 				[22] = {{"ThiÓm L«i MËt TÞch",0,107,198}},
 				[23] = {{"ThiÓm L«i MËt TÞch",0,107,198}},
 				[24] = {{"Tr¶m NhËt MËt TÞch",0,107,199},{"Hµnh TrËn MËt TÞch",0,107,200},{"Phong HuyÕt MËt TÞch",0,107,201}},
 				[25] = {{"Tr¶m NhËt MËt TÞch",0,107,199}},
 				[26] = {{"Hµnh TrËn MËt TÞch",0,107,200}},
 				[27] = {{"Phong HuyÕt MËt TÞch",0,107,201}},
-				[28] = {{"U Méng Phæ",0,107,202},{"B¸ch Hoa Phæ",0,107,203}},
-				[29] = {{"U Méng Phæ",0,107,202}},
-				[30] = {{"B¸ch Hoa Phæ",0,107,203}},
+				[28] = {{"You Meng Pu",0,107,202},{"Bai Hua Pu",0,107,203}},
+				[29] = {{"You Meng Pu",0,107,202}},
+				[30] = {{"Bai Hua Pu",0,107,203}},
 			};
 	local nFactionRoute = GetPlayerRoute()	-- »ñµÃÍæ¼ÒµÄÁ÷ÅÉÊý¾Ý
 	local nRandom = random(1,getn(tGaojiMiji[nFactionRoute]));
 	local nAdd_flag = AddItem(tGaojiMiji[nFactionRoute][nRandom][2],tGaojiMiji[nFactionRoute][nRandom][3],tGaojiMiji[nFactionRoute][nRandom][4],1);
 	if nAdd_flag == 1 then
 		Msg2Player("B¹n nhËn ®­îc 1 quyÓn"..tGaojiMiji[nFactionRoute][nRandom][2]);
-		WriteLog("[Sù kiÖn s­ m«n]: "..GetName().."Hoµn thµnh sù kiÖn s­ m«n ®­îc 1 "..tGaojiMiji[nFactionRoute][nRandom][1]);
+		WriteLog("[Sect event]:"..GetName().."Hoµn thµnh sù kiÖn s­ m«n ®­îc 1 "..tGaojiMiji[nFactionRoute][nRandom][1]);
 	else
-		WriteLog("[Sù kiÖn s­ m«n]: "..GetName().."Hoµn thµnh sù kiÖn s­ m«n ®­îc 1 "..tGaojiMiji[nFactionRoute][nRandom][1].."ThÊt b¹i: "..nAdd_flag);
+		WriteLog("[Sect event]:"..GetName().."Hoµn thµnh sù kiÖn s­ m«n ®­îc 1 "..tGaojiMiji[nFactionRoute][nRandom][1].."ThÊt b¹i: "..nAdd_flag);
 	end	
 end
 
@@ -1045,9 +1045,9 @@ function add_0906and07_aword()
 			SetTask(TASK_GET_MIBEN_COUNT_TODAY, 0);
 		end
 		if GetTask(TASK_GET_MIBEN_COUNT_TODAY) < CONST_GET_MIBEN_MAX_COUNT then
-			gf_SetLogCaption("Truy t×m tr­êng sinh phæ");
-			local nRetCode = gf_AddItemEx({2, 1, 30088, nCount}, "BÝ Phæ Cò N¸t");
-			WriteLogEx("Hoat dong thang 6","S­ m«n"..floor(GetLevel() / 10).."x",nCount,"BÝ Phæ Cò N¸t");
+			gf_SetLogCaption("Search for the Longevity Manual");
+			local nRetCode = gf_AddItemEx({2, 1, 30088, nCount}, "Worn Old Manual");
+			WriteLogEx("Hoat dong thang 6","Sect"..floor(GetLevel() / 10).."x",nCount,"Worn Old Manual");
 			if nRetCode == 1 then
 				SetTask(TASK_GET_MIBEN_DATE, tonumber(date("%y%m%d")));
 				SetTask(TASK_GET_MIBEN_COUNT_TODAY, GetTask(TASK_GET_MIBEN_COUNT_TODAY) + 1);
@@ -1066,7 +1066,7 @@ function add_0908_aword()
 		end
 		if GetTask(VIET_0908_TASK_SHIMEN_GET_PUTAO_COUNT) < VIET_0908_CONST_SHIMEN_GET_MAX then
 			gf_SetLogCaption(str_VIET_0908_LOG_TITLE);
-			local nRetCode = gf_AddItemEx({2, 1, 30097, nCount}, "Tói Tr¸i C©y");
+			local nRetCode = gf_AddItemEx({2, 1, 30097, nCount}, "Bag of Fruit");
 			if nRetCode == 1 then
 				SetTask(VIET_0908_TASK_SHIMEN_GET_PUTAO_DATE, tonumber(date("%y%m%d")));
 				SetTask(VIET_0908_TASK_SHIMEN_GET_PUTAO_COUNT, GetTask(VIET_0908_TASK_SHIMEN_GET_PUTAO_COUNT) + 1);
@@ -1091,10 +1091,10 @@ function add_0909_aword()
 		end
 		if GetTask(VIET_0909_TASK_SHIMENG_NUM) < 10 then
 			gf_SetLogCaption(VIET_0909_LOG_TITLE);
-			local nRetCode = gf_AddItemEx({2, 1, 30106, nCount}, "Bét M×");
+			local nRetCode = gf_AddItemEx({2, 1, 30106, nCount}, "Flour");
 			if nRetCode == 1 then
 				local nLevel = floor(GetLevel() / 10)
-				WriteLogEx("Hoat dong trung thu","S­ M«n cÊp "..nLevel,nCount,"Bét M×")
+				WriteLogEx("Hoat dong trung thu","S­ M«n cÊp "..nLevel,nCount,"Flour")
 				SetTask(VIET_0909_TASK_SHIMENG_DATE, tonumber(date("%y%m%d")));
 				SetTask(VIET_0909_TASK_SHIMENG_NUM, GetTask(VIET_0909_TASK_SHIMENG_NUM) + 1);
 			end
@@ -1112,11 +1112,11 @@ function add_0911_aword()
 		end
 		if GetTask(VIET_0911_TASK_SHIMENG_NUM) < 10 then
 			gf_SetLogCaption(VIET_0911_LOG_TITLE);
-			local nRetCode = gf_AddItemEx({2, 1, 30118, nCount}, "Hoa Cóc");
+			local nRetCode = gf_AddItemEx({2, 1, 30118, nCount}, "Chrysanthemum");
 			if nRetCode == 1 then
 				SetTask(VIET_0911_TASK_SHIMENG_DATE, tonumber(date("%y%m%d")));
 				SetTask(VIET_0911_TASK_SHIMENG_NUM, GetTask(VIET_0911_TASK_SHIMENG_NUM) + 1);
-				WriteLogEx(VIET_0911_LOG_TITLE,"S­ m«n "..floor(GetLevel() / 10).."x",nCount,"Hoa Cóc")
+				WriteLogEx(VIET_0911_LOG_TITLE,"Sect"..floor(GetLevel() / 10).."x",nCount,"Chrysanthemum")
 			end
 			gf_SetLogCaption("");
 		end
@@ -1125,5 +1125,5 @@ end
 
 function add_0912_aword()
     local szFullLog = VIET_0912_STR_EVENT_LOG_TITLE.."- Lµm nhiÖm vô s­ m«n ®­îc kÑo gi¸ng sinh"
-    gf_EventFactionAward({2, 1, 30138}, "C©y KÑo Gi¸ng Sinh", VIET_0912_SHIMEN_SHENGDANTANGGUO, VIET_0912_SHIMEN_AWARD_MAX_COUNT, VIET_0912_TASK_SHIMENG_DATE, VIET_0912_TASK_SHIMENG_NUM, szFullLog, 091218, 100117);
+    gf_EventFactionAward({2, 1, 30138}, "Christmas Candy Cane Tree", VIET_0912_SHIMEN_SHENGDANTANGGUO, VIET_0912_SHIMEN_AWARD_MAX_COUNT, VIET_0912_TASK_SHIMENG_DATE, VIET_0912_TASK_SHIMENG_NUM, szFullLog, 091218, 100117);
 end

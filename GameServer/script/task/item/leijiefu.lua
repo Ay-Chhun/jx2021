@@ -12,7 +12,7 @@ function OnUse(nItem)
 		Msg2Player("H·y ®Õn Linh B¶o S¬n triÖu håi L«i KiÕp Thó!");
 		return 0;
 	end
-	Say("X¸c nhËn muèn triÖu håi L«i KiÕp Thó?", 2, "§ång ı/_TiaoZhanljs", "Hñy bá/nothing")
+	Say("X¸c nhËn muèn triÖu håi L«i KiÕp Thó?", 2, "Agree/_TiaoZhanljs", "Cancel/nothing")
 end
 
 function _TiaoZhanljs()

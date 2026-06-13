@@ -17,7 +17,7 @@ function main()
 	local nSaySize = 0;
 	tinsert(tbSayDialog, "Ta muèn nhËn th­ëng trång c©y (tiªu hao 1 tói h¹t gièng + 20 lé thñy)/nop_hatgiong")
 	if (nDate >= 12082010 or GetAccount() == "pemiliem") and nDate < 12083100 then
-		tinsert(tbSayDialog, "Ta ®Õn b×nh chän giai nh©n/VoteMynu_Form")
+		tinsert(tbSayDialog, "I have come to vote for the beauty/VoteMynu_Form")
 	end
 	tinsert(tbSayDialog, "Ta chØ ghÐ ngang/do_nothing")
 	
@@ -48,7 +48,7 @@ function nop_hatgiong()
 	if DelItem(2,1,30087,1) == 1 and DelItem(2,0,351,20) == 1 then
 		SetTask(TSK_COUNT_EVERYDAY, GetTask(TSK_COUNT_EVERYDAY)+1);
 		ModifyExp(6600000)
- 		gf_WriteLogEx("NOP TUI HAT GIONG", "nép thµnh c«ng", 1, "Nép tói h¹t gièng")
+ 		gf_WriteLogEx("NOP TUI HAT GIONG", "nép thµnh c«ng", 1, "Turn in seed bag")
 	end	
 end
 
@@ -56,17 +56,17 @@ end
 function VoteMynu_Form()
 local nDate =  tonumber(date("%y%m%d"))
 	local szName = "La Sa"
-	local szHeader = "<color=green>"..szName.." :<color>C¸c h¹ h·y b×nh chän cho giai nh©n m×nh yªu thÝch nhÐ."
+	local szHeader = "<color=green>"..szName.." :<color>Please vote for the beauty you like best."
 	local tbDanhSachMyNu = {
-			[1] = {"NguyÔn ThÞ Quúnh Anh",7},
+			[1] = {"Nguyen Thi Quynh Anh",7},
 			[2] = {"Lª Ngäc HuyÒn Tr©m",2},
-			[3] = {"Lª Ph­¬ng Thóy",5},
+			[3] = {"Le Phuong Thuy",5},
 			[4] = {"TrÇn ThÞ HuyÒn Trang",1},
-			[5] = {"NguyÔn Mai Chinh",3},
-			[6] = {"§µm ThÞ Hµ Trang",6},
+			[5] = {"Nguyen Mai Chinh",3},
+			[6] = {"Dam Thi Ha Trang",6},
 			[7] = {"Bïi Th¹ch Nh­ ý",9},	
-			[8] = {"NguyÔn ThÞ Kim Nguyªn",4},
-			[9] = {"TrÞnh ThÞ Ph­¬ng Oanh",8},
+			[8] = {"Nguyen Thi Kim Nguyen",4},
+			[9] = {"Trinh Thi Phuong Oanh",8},
 		}
 	LIB_txtData:Init("hotgirl.txt")
 	LIB_txtData:LoadData()
@@ -112,14 +112,14 @@ function VoteMynu(nID)
 end
 
 function TraoThuongVoteMyNu()
-	local tbAward1 = {item = {{gdp={2,1,30367,1}, name="Tói tiÒn"}}}
-	local tbAward2 = {item = {{gdp={2,1,30367,2}, name="Tói tiÒn"}}}
-	local tbAward3 = { item = {{gdp={2,1,30367,3}, name="Tói tiÒn"}}}
-	local tbAward4 = {item = {{gdp={2,1,30367,4}, name="Tói tiÒn"}}}
-	local tbAward5 = {item = {{gdp={2,1,30367,5}, name="Tói tiÒn"}}}
-	local tbAward6 = {item = {{gdp={2,0,504,1}, name="C©y B¸t Nh· nhá", nExpired = 7*24*60*60}}}
-	local tbAward7 = {item = {{gdp={2,0,398,1}, name="C©y B¸t Nh· lín", nExpired = 7*24*60*60}}}
-	local tbAward8 = {item = {{gdp={2,1,30269,1}, name="C©y Tø Linh", nExpired = 7*24*60*60}}}
+	local tbAward1 = {item = {{gdp={2,1,30367,1}, name="Money Pouch"}}}
+	local tbAward2 = {item = {{gdp={2,1,30367,2}, name="Money Pouch"}}}
+	local tbAward3 = { item = {{gdp={2,1,30367,3}, name="Money Pouch"}}}
+	local tbAward4 = {item = {{gdp={2,1,30367,4}, name="Money Pouch"}}}
+	local tbAward5 = {item = {{gdp={2,1,30367,5}, name="Money Pouch"}}}
+	local tbAward6 = {item = {{gdp={2,0,504,1}, name="Small Prajna Tree", nExpired = 7*24*60*60}}}
+	local tbAward7 = {item = {{gdp={2,0,398,1}, name="Large Prajna Tree", nExpired = 7*24*60*60}}}
+	local tbAward8 = {item = {{gdp={2,1,30269,1}, name="Four Spirits Tree", nExpired = 7*24*60*60}}}
 	local tbAward9 = {item = {{gdp={1,0,6,1}, name="H¾c Ngäc §o¹n Tôc Cao"}}}
 	local tbAward10 = {item = {{gdp={2,1,3356,1}, name="Tói Thiªn Th¹ch Tinh Th¹ch", nExpired = 7*24*60*60}}}
 	local tbAward11 = {item = {{gdp={2,1,1051,1}, name="Bao Thiªn Th¹ch Tinh Th¹ch", nExpired = 7*24*60*60}}}

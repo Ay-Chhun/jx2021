@@ -1,10 +1,10 @@
-g_szPacketName = "Hép TriÒu Hoa ngo¹i trang ";
-g_szItemName = " 1 TriÒu Hoa ngo¹i trang ";
+g_szPacketName = "Court Splendor Costume Box";
+g_szItemName = " 1 Court Splendor Costume";
 
 function OnUse(nItemIdx)
 	local selTab = {
-				"§ång ý/#confirm("..nItemIdx..")",
-				"Hñy bá/nothing",
+				"Confirm/#confirm("..nItemIdx..")",
+				"Cancel/nothing",
 				}
 	Say("B¹n muèn më <color=yellow>"..g_szPacketName.."<color>? B¹n cã thÓ nhËn ®­îc <color=yellow>"..g_szItemName.."<color>.",getn(selTab),selTab);
 end;

@@ -8,7 +8,7 @@ Include("\\script\\lib\\globalfunctions.lua")
 t_isolate_base_cfg = { --ÕâÊÇÒ»¸ö±ØÌîÅäÖÃÏî
     nPriority 			= 1,        --¼ÓÔØÓÅÏÈ¼¶ <=0:Ä£¿éÊ§Ğ§ >0:Ä£¿éÓĞĞ§£¬ÊıÖµÔ½´óÔ½ÏÈ¼ÓÔØ 1 default
     szEngName 			= "master_bai",
-    szViewName 			= "N¨m Míi B¸i S­",
+    szViewName 			= "New Year Worship the Master",
     nTalkBeginDate		= 0,
     nBeginDate 			= 20151220,
     nEndDate 			= 20160103,
@@ -23,9 +23,9 @@ t_isolate_task_list={ --Ä£¿éÓÃµ½µÄÈÎÎñ±äÁ¿ÅäÖÃid={szTaskName,nTaskGroupIdx},
 
 function on_add_watches()
 	isolate_watch_event("event_player_interactive", "handle_on_bai", "gentle")
-	isolate_watch_npc_talk("Uy NhÜ Tèn", 100, "handle_on_npc_talk")
-	isolate_watch_npc_talk("Gi¸o sÜ", 200, "handle_on_npc_talk")
-	isolate_watch_npc_talk("Gi¸o sÜ", 300, "handle_on_npc_talk")
+	isolate_watch_npc_talk("Wei Ru Tin", 100, "handle_on_npc_talk")
+	isolate_watch_npc_talk("Professor", 200, "handle_on_npc_talk")
+	isolate_watch_npc_talk("Professor", 300, "handle_on_npc_talk")
 	--isolate_watch_npc_talk("ÂŞÉ¯", 100, "handle_on_npc_talk")
 end
 
@@ -123,10 +123,10 @@ function _give_award(nLvLow, nLvHigh,szHighName,nMasterIdx)
 		end
 		local nNum = 1*nMul
 		AddItem(2,1,30913,nNum)
-		Msg2Player(format("Sau khi hµnh lÔ b¸o s­ víi %s, cïng nhau giao l­u giang hå t©m ®¾c, nhËn ®­îc phÇn th­ëng %s.",szHighName, "§ång TÕ Chi NguyÖn"))
+		Msg2Player(format("Sau khi hµnh lÔ b¸o s­ víi %s, cïng nhau giao l­u giang hå t©m ®¾c, nhËn ®­îc phÇn th­ëng %s.",szHighName, "Vow of the Same Will"))
 		if nMul > 1 then
 			local szMsg = format("%s thµnh t©m thØnh gi¸o vâ häc víi %s, sau khi ®­îc chØ ®iÓm th× vâ c«ng tiÕn bé, nhËn ®­îc phÇn th­ëng gÊp %d lÇn, ®­îc %d %s", 
-				szName, szHighName, nMul, nNum, "§ång TÕ Chi NguyÖn")
+				szName, szHighName, nMul, nNum, "Vow of the Same Will")
 			Msg2Global(szMsg)
 		end
 	end
@@ -141,7 +141,7 @@ end
 function handle_on_npc_talk(nIndex)
 	local szDate = format("%s, %s~%s", isolate_get_str_date(20151225), isolate_get_str_date(20160101), isolate_get_str_date(20160103))
 	local szTitle = format('<color=green>%s:<color> Trong thêi gian %s, t×m mét vŞ b»ng h÷u giang hå vµ tæ ®éi, thµnh viªn cÊp thÊp lµm ®éng t¸c hµnh "LÏ phĞp" víi ng­êi ch¬i cÊp cao ®Ó bµy tá thµnh ı, sÏ cã c¬ héi nhËn ®­îc phÇn th­ëng EXP phong phó! NÕu may m¾n th× cßn cã thÓ ®­îc phÇn th­ëng gÊp ®«i. §èi víi cao thñ giang hå ®· ®¹t chuyÓn sinh 8, nÕu cïng giao l­u giang hå t©m ®¾c, sÏ ®­îc phÇn th­ëng <color=yellow>%s<color>! Chó ı: Mçi ng­êi chØ ®­îc häc EXP giang hå %d lÇn/ngµy!'
-		, GetTargetNpcName(), szDate , "§ång TÕ Chi NguyÖn", tCfg.max_bai_oneday)
+		, GetTargetNpcName(), szDate , "Vow of the Same Will", tCfg.max_bai_oneday)
     local tbSay = {
     	format("%s/nothing", "BiÕt råi!"),
     	}

@@ -23,7 +23,7 @@ ANNOUCE_FRIENDS_BEGIN_COST = 20	--Í¨ÖªÍæ¼Ò»éÇì½«Òª¿ªÊ¼ËùÐèµÄ½ð×Ó
 ANNOUNCE_INVITAION_COST = 20	--
 ANNOUNCE_ALL_PLAYER_COST = 20
 --==========================================================================================================
-g_InfoHeader = "<color=green>Bµ mai<color>:";
+g_InfoHeader = "<color=green>Matchmaker<color>:";
 --Õâ¸ö½á¹¹µÄ¾ßÌåÄÚÈÝÊÇ£ºmap_fields = ÈÕÆÚ{Ê±¶Î{³¡µØÀàÐÍ{¾ßÌåÐÅÏ¢}}}
 map_fields = {}
 
@@ -54,7 +54,7 @@ function process_nacai_boy_gift()
 		set_wedding_step(2)
 		Talk(1, "",g_InfoHeader.."TiÒn mai mèi vµ lÔ vËt ®Òu nhËn c¶ råi cßn kh«ng mau tæ ®éi víi ý trung nh©n ®Õn ®©y gÆp ta.")
 		hint_step(3)
-		WriteLog("[KÕt h«n]:"..GetName().."Giao tiÒn mai mèi vµ lÔ vËt")
+		WriteLog("[Marriage]:"..GetName().."Giao tiÒn mai mèi vµ lÔ vËt")
 	end
 end
 
@@ -65,14 +65,14 @@ function process_nacai_boy()
 	elseif (GetPlayerFaction() == 0) then
 		Talk(1, "",g_InfoHeader.."Ng­¬i ph¶i gia nhËp m«n ph¸i xin ý kiÕn cña ch­ëng m«n råi míi ®­îc kÕt h«n.")
 	elseif (GetTask(TASK_FACTION_OUT) == 0) then
-		Talk(1, "",g_InfoHeader.."Ng­¬i"..map_faction[GetPlayerFaction()][1].." nªn b¸o cho ch­ëng m«n"..map_faction[GetPlayerFaction()][2].."H·y <color=yellow>xuÊt s­<color> råi ®Õn gÆp ta!")
+		Talk(1, "",g_InfoHeader.."You"..map_faction[GetPlayerFaction()][1].." should report to the sect leader"..map_faction[GetPlayerFaction()][2].."H·y <color=yellow>xuÊt s­<color> råi ®Õn gÆp ta!")
 	else
 		set_wedding_step(1)
 		hint_step(2)
 		Say(g_InfoHeader.."ThÕ nµy ®i, ng­¬i h·y chuÈn bÞ (<color=red>100<color> l­îng vµng) vµ (<color=red>10<color> cuén gÊm vãc) lµm lÔ vËt, ta sÏ ®Ých th©n gióp ng­¬i lµm lÔ g¹m hái. C¸c ®«i trai g¸i quanh ®©y ®Òu do mét tay ta mai mèi, chØ cÇn cã thµnh ý, b¶o ®¶m ng­¬i sÏ c­íi ®­îc vî hiÒn. <color=yellow>NÕu nhÊt thêi t×m kh«ng ®­îc th× ng­¬i cã thÓ ®Õn Ngù c¸c mua KÕt h«n lÔ bao, nh÷ng g× cÇn cho lÔ hái ®Òu cã trong KÕt h«n lÔ bao<color>.",
 			2,
 			"Ta ®· chuÈn bÞ tiÒn mai mèi vµ lÔ vËt råi/process_nacai_boy_gift",
-			"Ta sÏ chuÈn bÞ/cancel")
+			"I will prepare them/cancel")
 	end
 end
 
@@ -96,10 +96,10 @@ end
 -- ½â³ý»éÔ¼¶Ô»°£¬Å®·½
 function cancel_engagement()
 	local selTab = {
-				"§ång ý/disengage_girl",
+				"Agree/disengage_girl",
 				"§Ó ta suy nghÜ l¹i/cancel",
 				}
-	Say(g_InfoHeader.."Sao thÕ? Kh«ng muèn kÕt h«n ­? NÕu ng­¬i hñy h«n ­íc ph¶i nép båi th­êng <color=yellow>"..CANCEL_MARRIAGE_COST.." LÔ kim<color>, suy nghÜ kü nhÐ!",getn(selTab),selTab)
+	Say(g_InfoHeader.."Sao thÕ? Kh«ng muèn kÕt h«n ­? NÕu ng­¬i hñy h«n ­íc ph¶i nép båi th­êng <color=yellow>"..CANCEL_MARRIAGE_COST.." dowry money<color>, think carefully!",getn(selTab),selTab)
 end;
 
 function disengage_girl()	--Å®·½È¡Ïû»éÔ¼
@@ -107,7 +107,7 @@ function disengage_girl()	--Å®·½È¡Ïû»éÔ¼
 		clear_task();
 		Talk(1,"",g_InfoHeader.."Ta ®· gióp ng­¬i hñy h«n ­íc. Hy väng lÇn sau kh«ng ph¶i nh­ vËy n÷a nhÐ, h«n nh©n kh«ng ph¶i trß ®ïa ®©u.")
 		Msg2Player("B¹n ®· hñy h«n ­íc");
-		WriteLog("[KÕt h«n]:"..GetName().."H«n ­íc ®· bÞ hñy");
+		WriteLog("[Marriage]:"..GetName().."The engagement has been canceled");
 	else
 		Talk(1,"",g_InfoHeader.."TiÒn vµng mang theo kh«ng ®ñ, kh«ng thÓ hñy h«n ­íc.");
 	end;
@@ -116,7 +116,7 @@ end;
 function disengage_talk()
 	Say(g_InfoHeader.."Ng­¬i muèn hñy h«n ­íc ­? Nh­ vËy nh÷ng næ lùc cña ng­¬i xem nh­ c«ng cèc, lÔ vËt ng­¬i giao còng kh«ng thÓ lÊy l¹i. Ng­¬i nghÜ kü ®i.",
 		2,
-		"§ång ý/disengage_boy",
+		"Agree/disengage_boy",
 		"§Ó ta suy nghÜ l¹i/cancel")
 end
 
@@ -142,7 +142,7 @@ function disengage_boy()
 	clear_task();
 	Talk(1,"",g_InfoHeader.."Ta ®· gióp ng­¬i hñy h«n ­íc. Hy väng lÇn sau kh«ng ph¶i nh­ vËy n÷a nhÐ, h«n nh©n kh«ng ph¶i trß ®ïa ®©u.");
 	Msg2Player("B¹n ®· hñy h«n ­íc");
-	WriteLog("[KÕt h«n]:"..GetName().."H«n ­íc ®· bÞ hñy");
+	WriteLog("[Marriage]:"..GetName().."The engagement has been canceled");
 end
 
 -- ÎÊÃû
@@ -228,7 +228,7 @@ function check_marriage_condition(check)
 	elseif (GetPlayerFaction(lover) == 0) then
 		Talk(1, "",g_InfoHeader.."C« n­¬ng nµy vÉn ch­a cã ng­êi chøng gi¸m ­? H«n sù nh­ vÇy kh«ng thÓ gäi lµ danh chÝnh ng«n thuËn ®­îc. H·y gia nhËp m«n ph¸i ®­îc sù ®ång ý cña ch­ëng m«n sau ®ã ®Õn gÆp ta.")
 	elseif (GetTask(TASK_FACTION_OUT, PlayerIndex) == 0) then
-		Talk(1, "",g_InfoHeader.."Ng­¬i"..map_faction[GetPlayerFaction()][1].." nªn b¸o cho ch­ëng m«n"..map_faction[GetPlayerFaction()][2].."Ng­¬i ph¶i xuÊt s­ råi míi ®­îc kÕt h«n.")
+		Talk(1, "",g_InfoHeader.."You"..map_faction[GetPlayerFaction()][1].." should report to the sect leader"..map_faction[GetPlayerFaction()][2].."Ng­¬i ph¶i xuÊt s­ råi míi ®­îc kÕt h«n.")
 	elseif (GetTask(TASK_FACTION_OUT, lover) == 0) then
 		Talk(1, "",g_InfoHeader.."C« n­¬ng ph¶i xuÊt s­ råi míi ®­îc kÕt h«n.")
 	elseif (check(PlayerIndex, lover) == 1) then
@@ -255,10 +255,10 @@ function ask_engage()
 		local lover = get_team_lover(PlayerIndex)
 		SetPlayerScript(CALLBACK_FILE, lover)
 		Say2SomeOne(lover,
-			g_InfoHeader.."Ng­¬i chÝnh lµ" .. GetName(lover) .. " c« n­¬ng, <color=yellow>" .. GetName() .. "<color> ®· nhiÒu lÇn muèn cïng c« ®Ýnh h«n, thiÕu hiÖp ®ã yªu th­¬ng c« thËt lßng. Ta ®· lµm mai cho nhiÒu ng­êi nh­ng ch­a thÊy ai tèt nh­ vËy. ThiÕu hiÖp Êy cßn s¾m c¶ sÝnh lÔ, chØ cÇn chê sù ®ång ý cña c«.",
+			g_InfoHeader.."You are precisely" .. GetName(lover) .. " young lady, <color=yellow>" .. GetName() .. "<color> ®· nhiÒu lÇn muèn cïng c« ®Ýnh h«n, thiÕu hiÖp ®ã yªu th­¬ng c« thËt lßng. Ta ®· lµm mai cho nhiÒu ng­êi nh­ng ch­a thÊy ai tèt nh­ vËy. ThiÕu hiÖp Êy cßn s¾m c¶ sÝnh lÔ, chØ cÇn chê sù ®ång ý cña c«.",
 			2,
-			"§ång ý/agree_engage",
-			"Kh«ng ®ång ý/disagree_engage")
+			"Agree/agree_engage",
+			"Disagree/disagree_engage")
 	end
 end
 
@@ -293,9 +293,9 @@ function agree_engage()
 			Say2SomeOne(lover,
 				caption,
 				2,
-				"Kh«ng cã vÊn ®Ò g×/process_wenming_confirm2",
+				"No problem at all/process_wenming_confirm2",
 				"Ta sÏ quay l¹i sau!/cancel")
-			Msg2Player(format("Ta ®ång ý cïng %s kÕt h«n", GetName(lover)))
+			Msg2Player(format("I agree to marry %s", GetName(lover)))
 		end
 	end
 end
@@ -314,7 +314,7 @@ function process_wenming_confirm2()
 		Talk(1, "", g_InfoHeader.."Ta ®· gióp c¸c ng­¬i trao ®æi danh thiÕp, b©y giê bªn nam sÏ tÆng quµ cho bªn n÷.")
 		SaveNow();
 		PlayerIndex = myself;
-		WriteLog("[KÕt h«n]:"..GetName(myself).."cïng víi "..GetName(lover).."KiÕn lËp h«n ­íc");
+		WriteLog("[Marriage]:"..GetName(myself).."cïng víi "..GetName(lover).."Establish the engagement");
 	end
 end
 
@@ -331,7 +331,7 @@ end
 -- ÄÉáç£ºÈ·ÈÏ
 function process_naji_confirm()
 	-- ±ØÐëÄÐ·½×ö¶Ó³¤
-	local msg = g_InfoHeader.."Bªn nam ®­a ý trung nh©n ®Õn gÆp ta"
+	local msg = g_InfoHeader.."The groom brings his sweetheart to see me"
 	if (GetTeamSize() ~= 2 or GetCaptainName() ~= GetName()) then
 		Talk(1, "", msg)
 		return
@@ -363,7 +363,7 @@ function process_naji_confirm()
 	-- ÉèÖÃÈÎÎñ±äÁ¿
 	set_wedding_step(4)
 	process_qingqi()
-	WriteLog("[KÕt h«n]:"..GetName().."Giao lÔ vËt");
+	WriteLog("[Marriage]:"..GetName().."Giao lÔ vËt");
 end
 --ÅÐ¶ÏÔ¤¶©µÄ³¡µØÊÇ·ñ¹ýÆÚ
 function is_field_timeout()
@@ -430,7 +430,7 @@ function process_qingqi()
 	-- DEBUG
 	gf_ShowDebugInfor(format("process_qingqi: sub_stat==%d", sub_stat))
 	local talk = {
-		"§Ó ta xem s©n khÊu h«n lÔ ë ®©u/process_qingqi_selectfield",
+		"Let me see where the wedding stage is/process_qingqi_selectfield",
 		"Ta muèn xem bªn trong s©n khÊu/preview_fields",
 --		"§­îc! Ta tæ chøc h«n lÔ mµ kh«ng cÇn s©n khÊu/process_qingqi_nofield",
 		"Ta muèn suy nghÜ l¹i chuyÖn h«n sù./disengage_talk",
@@ -493,9 +493,9 @@ end
 
 function preview_fields()
 	local selTab = {
-			"YÕt chi tiÓu tróc/#preview_fields_confirm(1)",
-			"C« ®¶o/#preview_fields_confirm(2)",
-			"§éng phßng hoa chóc/#preview_fields_confirm(3)",
+			"Yetzhi Xiaozhu/#preview_fields_confirm(1)",
+			"Lonely Isle/#preview_fields_confirm(2)",
+			"Bridal Chamber/#preview_fields_confirm(3)",
 			"V©n S¬n ®Ønh/#preview_fields_confirm(4)",
 			"Kh«ng cÇn ®©u/cancel",
 			}
@@ -590,7 +590,7 @@ function withdraw()
 	end;
 	local task_cost = GetTask(TASK_WEDDING_COST)
 	if (task_cost == 0) then
-		Talk(1, "main", g_InfoHeader.."Ch­a ®Æt lêi")
+		Talk(1, "main", g_InfoHeader.."No booking placed yet")
 		return
 	end
 	
@@ -636,8 +636,8 @@ function withdraw()
 	end
 	AddItem(ITEM_COIN[1], ITEM_COIN[2], ITEM_COIN[3], task_cost)
 	clear_subs()
-	Msg2Player(format("Ng­¬i ®· ®Æt %d LÔ kim.", task_cost))
-	WriteLog("[KÕt h«n]:"..GetName().."Do mét sè nguyªn nh©n ®· rót l¹i"..task_cost.." LÔ kim, t¹i hµm sè withdraw")
+	Msg2Player(format("You have placed %d dowry money.", task_cost))
+	WriteLog("[Marriage]:"..GetName().."Do mét sè nguyªn nh©n ®· rót l¹i"..task_cost.." LÔ kim, t¹i hµm sè withdraw")
 end
 
 function diff_time(time1, time2)
@@ -676,7 +676,7 @@ function on_sub_success()
 			"§Ó ta nghÜ l¹i/cancel")
 	end
 	set_wedding_stat(1)		--±íÊ¾¾º±ê³¡µØ³É¹¦
-	WriteLog("[KÕt h«n]:"..GetName().."§Æt ®­îc s©n khÊu, thêi gian:"..GetTask(TASK_WEDDING_DATE)..", thêi gian vµ lo¹i:"..GetTask(TASK_WEDDING_FIELD));
+	WriteLog("[Marriage]:"..GetName().."Booked the stage, time:"..GetTask(TASK_WEDDING_DATE)..", thêi gian vµ lo¹i:"..GetTask(TASK_WEDDING_FIELD));
 end
 
 -- ½ÓÊÕÇëÌû
@@ -699,7 +699,7 @@ function take_invitation(count)
 	AddItem(ITEM_MARRIAGE_PACKET[nFieldType][1],ITEM_MARRIAGE_PACKET[nFieldType][2],ITEM_MARRIAGE_PACKET[nFieldType][3],1)
 	Msg2Player("B¹n nhËn ®­îc "..ITEM_MARRIAGE_PACKET[nFieldType][4]);
 	set_wedding_step(5);	--½ÓÏÂÀ´¾Íµ½Ç×Ó­À²
-	WriteLog("[KÕt h«n]:"..GetName().."thiÖp mêi vµ KÕt h«n lÔ bao"..nFieldType);
+	WriteLog("[Marriage]:"..GetName().."thiÖp mêi vµ KÕt h«n lÔ bao"..nFieldType);
 end
 
 -- ÎÒµÄÍ¶±êÇé¿ö
@@ -719,7 +719,7 @@ function show_mysubs()
 			cost)
 		Talk(1, "", caption)
 	elseif (sub_stat == 0) then
-		Talk(1, "main", g_InfoHeader.."Ch­a ®Æt lêi")
+		Talk(1, "main", g_InfoHeader.."No booking placed yet")
 	elseif (sub_stat == 1) then
 		on_sub_success()
 	elseif (sub_stat == 2) then
@@ -794,7 +794,7 @@ function show_subs_period(year, mon, day, period)
 		local stat = fields[i][ITEMKEY_STAT]
 		local cost = fields[i][ITEMKEY_COST]
 		if (stat == STATUS_IDLE) then
-			talk[i] = format("%s: gi¸ %d/#select_field(%d,%d,%d,%d,%d)",
+			talk[i] = format("%s: price %d/#select_field(%d,%d,%d,%d,%d)",
 				map_fieldinfo[i][1], map_fieldinfo[i][2], year, mon, day, period, i)
 		elseif (stat == STATUS_OVER or cost >= map_fieldinfo[i][3]) then
 			local role = fields[i][ITEMKEY_ROLE]
@@ -802,7 +802,7 @@ function show_subs_period(year, mon, day, period)
 				map_fieldinfo[i][1], role, cost)
 		else
 			if (cmp_datetime(fields[i][ITEMKEY_CLOSEDATE], fields[i][ITEMKEY_CLOSETIME], curr_date(), curr_time()) <= 0) then
-				talk[i] = format("%s: §Æt xong, gi¸ %d/cancel",
+				talk[i] = format("%s: Bid placed, price %d/cancel",
 					map_fieldinfo[i][1], fields[i][ITEMKEY_COST])
 			else
 				local close_date = fields[i][ITEMKEY_CLOSEDATE]
@@ -885,7 +885,7 @@ function drop_behind(field, year, mon, day, period, type, left_hour, left_min)
 	talk[2] = format("S©n khÊu nµy ®¹i gia ta mua ®øt råi, gi¸ %d LÔ kim!/#buy(%d,%d,%d,%d,%d)",
 		map_fieldinfo[type][3], year, mon, day, period, type)
 	talk[3] = "Ta muèn thu håi l¹i sè tiÒn ®· bá ra ë s©n khÊu nµy/rollback"
-	talk[4] = format("Chän s©n khÊu kh¸c/#show_subs_period(%d,%d,%d,%d)",
+	talk[4] = format("Choose another stage/#show_subs_period(%d,%d,%d,%d)",
 		year, mon, day, period)
 	talk[5] = "SÏ quay l¹i sau/cancel"
 	Say(caption, getn(talk), talk)
@@ -962,9 +962,9 @@ function select_field(year, mon, day, period, type)
 --			talk[1] = format("ÎÒÒª¾º±ê£¬ÎÒ¶à³ö%d¸öÀñ½ð£¬Ò»¹²ÊÇ%d¸öÀñ½ð/#bidup(%d,%d,%d,%d,%d)",map_fieldinfo[type][6],curr_cost+map_fieldinfo[type][6], year, mon, day, period, type)
 --		end;
 			
-		talk[1] = format("§ång ý, gi¸ %d LÔ kim!/#buy(%d,%d,%d,%d,%d)",
+		talk[1] = format("Agreed, price %d gift gold!/#buy(%d,%d,%d,%d,%d)",
 			map_fieldinfo[type][2], year, mon, day, period, type)
-		talk[2] = format("Hay lµ chän s©n khÊu kh¸c/#show_subs_period(%d,%d,%d,%d)",
+		talk[2] = format("Or choose another stage/#show_subs_period(%d,%d,%d,%d)",
 			year, mon, day, period)
 		talk[3] = "SÏ quay l¹i sau/cancel"
 		Say(caption, getn(talk), talk)
@@ -1066,17 +1066,17 @@ function buy_hint(mon, day, period, type, cost)
 	local sGirlName = GetName(lover);
 	local nHour = map_period[period][1];
 	if type == 1 then
-		sMsg = "HiÖp sÜ giang hå <color=yellow>"..sBoyName.."<color> tõ <color=red>"..mon.."NguyÖt"..day.."Ngµy <color> lóc <color=red>"..nHour.."<color> t¹i <color=yellow>YÕt Chi tiÓu tróc<color> cïng víi <color=yellow>"..sGirlName.."<color> c« n­¬ng kÕt h«n. Sù cã mÆt cña c¸c vÞ b»ng h÷u lµ niÒm vinh h¹nh cho t©n nh©n!";
-		sMsg1 = "HiÖp sÜ giang hå"..sBoyName.."Vu"..mon.."NguyÖt"..day.."Ngµy"..nHour.." giê t¹i Yªn Chi tiÓu tróc cïng víi"..sGirlName.." kÕt h«n. Sù cã mÆt cña b»ng h÷u lµ niÒm vinh h¹nh cho t©n nh©n";
+		sMsg = "Wandering knight <color=yellow>"..sBoyName.."<color> from <color=red>"..mon.."NguyÖt"..day.."On <color> at <color=red>"..nHour.."<color> t¹i <color=yellow>YÕt Chi tiÓu tróc<color> cïng víi <color=yellow>"..sGirlName.."<color> c« n­¬ng kÕt h«n. Sù cã mÆt cña c¸c vÞ b»ng h÷u lµ niÒm vinh h¹nh cho t©n nh©n!";
+		sMsg1 = "Wandering knight"..sBoyName.."Vu"..mon.."NguyÖt"..day.."Day"..nHour.." giê t¹i Yªn Chi tiÓu tróc cïng víi"..sGirlName.." kÕt h«n. Sù cã mÆt cña b»ng h÷u lµ niÒm vinh h¹nh cho t©n nh©n";
 	elseif type == 2 then
-		sMsg = "<color=yellow>"..sBoyName.."<color> vµ <color=yellow>"..sGirlName.."<color> lóc <color=red>"..mon.."NguyÖt"..day.."Ngµy <color> lóc <color=red>"..nHour.."<color> sÏ kÕt h«n t¹i C« §¶o, mäi ng­êi ®Õn ®ã chóc mõng!";
-		sMsg1 = "Gia nh©n"..sBoyName.."cïng víi "..sGirlName.."lóc"..mon.."NguyÖt"..day.."Ngµy"..nHour.." giê kÕt h«n t¹i C« ®¶o, mêi c¸c anh hïng kü n÷ ®Õn chóc mõng!";
+		sMsg = "<color=yellow>"..sBoyName.."<color> and <color=yellow>"..sGirlName.."<color> at <color=red>"..mon.."NguyÖt"..day.."On <color> at <color=red>"..nHour.."<color> sÏ kÕt h«n t¹i C« §¶o, mäi ng­êi ®Õn ®ã chóc mõng!";
+		sMsg1 = "Family member"..sBoyName.."cïng víi "..sGirlName.."at"..mon.."NguyÖt"..day.."Day"..nHour.." giê kÕt h«n t¹i C« ®¶o, mêi c¸c anh hïng kü n÷ ®Õn chóc mõng!";
 	elseif type == 3 then
-		sMsg = "Cao thñ <color=yellow>"..sBoyName.."<color> kÕt h«n cïng <color=red>"..mon.."NguyÖt"..day.."Ngµy <color> lóc <color=red>"..nHour.."<color> giai nh©n <color=yellow>"..sGirlName.."<color>, c¸c vÞ ®ång ®¹o Vâ l©m ®Õn chóc mõng";
-		sMsg1 = "Cao thñ"..sBoyName.."kÕt h«n cïng"..mon.."NguyÖt"..day.."Ngµy"..nHour.."Gia nh©n"..sGirlName..", c¸c vÞ ®ång ®¹o ®Õn chóc mõng";
+		sMsg = "Master <color=yellow>"..sBoyName.."<color> marries <color=red>"..mon.."NguyÖt"..day.."On <color> at <color=red>"..nHour.."<color> the beauty <color=yellow>"..sGirlName.."<color>, c¸c vÞ ®ång ®¹o Vâ l©m ®Õn chóc mõng";
+		sMsg1 = "Master"..sBoyName.."marries"..mon.."NguyÖt"..day.."Day"..nHour.."Family member"..sGirlName..", c¸c vÞ ®ång ®¹o ®Õn chóc mõng";
 	else
-		sMsg = "Nam cao thñ <color=yellow>"..sBoyName.."<color> s¸nh duyªn cïng giai nh©n <color=red>"..mon.."NguyÖt"..day.."Ngµy <color> lóc <color=red>"..nHour.."<color> t¹i <color=yellow>"..sGirlName.."<color>, chóc hai ng­êi b¸ch niªn giai l·o!";
-		sMsg1 = "Nam cao thñ"..sBoyName.."s¸nh duyªn cïng n÷ giai nh©n"..mon.."NguyÖt"..day.."Ngµy"..nHour.."t¹i"..sGirlName..". Chóc 2 ng­êi b¸ch niªn giai l·o!";
+		sMsg = "Male master <color=yellow>"..sBoyName.."<color> is matched with the beauty <color=red>"..mon.."NguyÖt"..day.."On <color> at <color=red>"..nHour.."<color> t¹i <color=yellow>"..sGirlName.."<color>, chóc hai ng­êi b¸ch niªn giai l·o!";
+		sMsg1 = "Male master"..sBoyName.."is matched with the female beauty"..mon.."NguyÖt"..day.."Day"..nHour.."t¹i"..sGirlName..". Chóc 2 ng­êi b¸ch niªn giai l·o!";
 	end;
 	AddGlobalNews(sMsg);
 	Msg2Global(sMsg1);
@@ -1207,7 +1207,7 @@ function bidup(year, mon, day, period, type)
 	SetTask(TASK_WEDDING_FIELD, param2)
 	
 	bidup_hint(mon, day, period, type, base_price)
-	WriteLog("[KÕt h«n]:"..GetName().."§Êu gi¸ s©n khÊu, tèn"..base_price.." LÔ kim, th«ng tin:"..subs_date..","..param2);
+	WriteLog("[Marriage]:"..GetName().."Stage auction, cost"..base_price.." gift gold, info:"..subs_date..","..param2);
 end
 
 -- È¡»Ø¾ºÍ¶µÄÀñ½ð
@@ -1241,9 +1241,9 @@ function rollback()
 	-- ·µ»¹Àñ½ð
 	AddItem(ITEM_COIN[1], ITEM_COIN[2], ITEM_COIN[3], cost)
 	clear_subs()
-	Msg2Player(format("Ng­¬i ®· ®Æt %d LÔ kim.", cost));
+	Msg2Player(format("You have placed %d dowry money.", cost));
 	-- TODO: ÈÕÖ¾
-	WriteLog("[KÕt h«n]:"..GetName().."§· cã ng­êi bá phiÕu cao h¬n, nhËn"..cost.." LÔ kim");
+	WriteLog("[Marriage]:"..GetName().."§· cã ng­êi bá phiÕu cao h¬n, nhËn"..cost.." gift gold");
 end
 
 -- Âò¶Ï
@@ -1328,7 +1328,7 @@ function buy(year, mon, day, period, type)
 	
 	buy_hint(mon, day, period, type, over_count)
 	set_wedding_stat(1)		--±íÊ¾¾º±ê³¡µØ³É¹¦
-	WriteLog("[KÕt h«n]:"..GetName().."Dïng thÎ"..(over_count - lost_count).." LÔ kim mua ®øt s©n khÊu,"..subs_date..","..encode_param2(period, type));
+	WriteLog("[Marriage]:"..GetName().."Use card"..(over_count - lost_count).." gift gold to buy out the stage,"..subs_date..","..encode_param2(period, type));
 	SaveNow();
 end
 
@@ -1372,7 +1372,7 @@ function process_qingqi_nofield_confirm()
 	clear_subs()
 	set_wedding_stat(1)
 	Talk(1, "",g_InfoHeader.."Hai vÞ kh«ng kÕt h«n ë S©n khÊu còng kh«ng sao. Hai ng­êi cïng tæ ®éi ®Õn <color=red>Thóy Yªn<color> nhê <color=red>NguyÖt L·o<color> chøng gi¸m cho 2 ng­êi.")
-	WriteLog("[KÕt h«n]:"..GetName().."Kh«ng dïng s©n khÊu kÕt h«n.")
+	WriteLog("[Marriage]:"..GetName().."Kh«ng dïng s©n khÊu kÕt h«n.")
 end
 
 -- ÏÔÊ¾ÎÒµÄ»éÀñ³¡µØÇé¿ö
@@ -1411,25 +1411,25 @@ function process_qinying()
 		local selTab = {
 				"Ta muèn chän l¹i s©n khÊu/process_qingqi_selectfield",
 				"Ta muèn hñy h«n ­íc/disengage_talk",
-				"Kh«ng cã g×/cancel",
+				"Nothing/cancel",
 				}
-		Say(g_InfoHeader.."S©n khÊu kÕt h«n ®· qu¸ h¹n",getn(selTab),selTab);
+		Say(g_InfoHeader.."The marriage stage has expired",getn(selTab),selTab);
 		return 0
 	end;
 	--Èç¹ûÊ±¼äµ½ÁË²¢ÇÒ½á»é³¡µØ¿ªÁË
 	if (cmp_datetime(sub_date, sub_time, curr_date(), curr_time()) <= 0) and mf_GetMissionV(MISSION_ID,MV_FIELD_STATE,nDesMapID) ~= MS_STATE_IDEL then
 		Say(g_InfoHeader.."Chóc mõng hai vÞ! §Õn gÆp <color=yellow>Ng­êi dÉn ch­¬ng tr×nh<color> sau ®ã vµo s©n khÊu ®Ó cö hµnh h«n lÔ. NÕu cÇn thuª trang phôc hay trang søc xin gÆp <color=yellow>Hû N­¬ng<color>",
 			4,
-			"Xem s©n khÊu h«n lÔ/show_myfield",
+			"View the wedding stage/show_myfield",
 			"Ta muèn mua mét Ýt vËt phÈm/buy_thing",
 			"Ta cÇn th«ng b¸o cho b»ng h÷u, h«n lÔ b¾t ®Çu/#global_annouce(1)",
-			"Kh«ng mua/cancel")
+			"Do not buy/cancel")
 	else
 		talk = {
-			"Ta muèn mua thiÖp mêi (Tèn"..BUY_QINGTIE_PACKET.." tiÒn vµng)/talk_buy_invitation",
+			"Ta muèn mua thiÖp mêi (Tèn"..BUY_QINGTIE_PACKET.." gold)/talk_buy_invitation",
 			"Ta cÇn th«ng b¸o cho b»ng h÷u ®Õn nhËn thiÖp/#global_annouce(2)",
 			"Ta muèn th«ng b¸o cho toµn thÓ ng­êi ch¬i thêi gian kÕt h«n/#global_annouce(3)",						
-			"Xem s©n khÊu h«n lÔ/show_myfield",
+			"View the wedding stage/show_myfield",
 			"§Ó ta nghÜ l¹i/cancel"
 		}
 		Say(g_InfoHeader.."S©n khÊu kÕt h«n c¸c ng­¬i ®· ®Æt xong, mäi viÖc liªn quan ®Õn h«n sù nÕu cÇn g× cø ®Õn t×m ta.",
@@ -1447,8 +1447,8 @@ tAnnouce = {
 function global_annouce(nType)
 	Say(g_InfoHeader..tAnnouce[nType][2],
 		2,
-		format("§ång ý/#global_annouce_confirm(%d)",nType),
-		"Hñy bá/cancel")	
+		format("Agree/#global_annouce_confirm(%d)",nType),
+		"Cancel/cancel")	
 end;
 
 function global_annouce_confirm(nType)
@@ -1480,19 +1480,19 @@ function buy_thing()
 	local selTab = {
 				"Thuª y phôc h«n lÔ/buy_cloth",
 				"Thuª y phôc cho chñ h«n/buy_cloth2",
-				"Thuª kiÖu hoa/buy_dooly",
-				"Mua nhÉn c­íi/buy_ring",
-				"Ta muèn mua thiÖp mêi (Tèn"..BUY_QINGTIE_PACKET.." tiÒn vµng)/talk_buy_invitation",
-				"Kh«ng mua/process_qinying",
+				"Rent the flower palanquin/buy_dooly",
+				"Buy wedding rings/buy_ring",
+				"Ta muèn mua thiÖp mêi (Tèn"..BUY_QINGTIE_PACKET.." gold)/talk_buy_invitation",
+				"Do not buy/process_qinying",
 				};
 	Say(g_InfoHeader.."VËt phÈm ®Ó phôc vô h«n lÔ chç ta kh«ng thiÕu, ng­¬i cÇn g×?",getn(selTab),selTab);
 end;
 
 function buy_cloth()
 	local selTab = {
-			"Ta muèn thuª 1 bé lÔ phôc (cÇn"..HIRE_CLOTH_COST.."l­îng tiÒn vµng)/buy_cloth_confirm",
-			"Ta muèn thuª 1 bé lÔ phôc cho t©n n­¬ng ( cÇn"..HIRE_CLOTH_COST.."l­îng tiÒn vµng)/buy_bride_cloth_confirm",
-			"§Ó ta xem/buy_thing",
+			"Ta muèn thuª 1 bé lÔ phôc (cÇn"..HIRE_CLOTH_COST.." amount of gold)/buy_cloth_confirm",
+			"Ta muèn thuª 1 bé lÔ phôc cho t©n n­¬ng ( cÇn"..HIRE_CLOTH_COST.." amount of gold)/buy_bride_cloth_confirm",
+			"Let me take a look/buy_thing",
 			"Kh«ng cÇn ®©u/cancel",
 			}
 	Say(g_InfoHeader.."Thuª lÔ phôc néi trong 24 giê ph¶i hoµn tr¶. NÕu cÇn thuª lÔ phôc cho t©n n­¬ng th× 2 ng­êi tæ ®éi ®Õn ®©y gÆp ta",getn(selTab),selTab);
@@ -1500,8 +1500,8 @@ end;
 
 function buy_cloth2()
 	local selTab = {
-			"Ta muèn thuª 1 bé y phôc cho chñ h«n (cÇn"..HIRE_CLOTH2_COST.."l­îng tiÒn vµng)/buy_cloth2_confirm",
-			"§Ó ta xem/buy_thing",
+			"Ta muèn thuª 1 bé y phôc cho chñ h«n (cÇn"..HIRE_CLOTH2_COST.." amount of gold)/buy_cloth2_confirm",
+			"Let me take a look/buy_thing",
 			"Kh«ng cÇn ®©u/cancel",
 			}
 	Say(g_InfoHeader.."Thuª y phôc cho chñ h«n, néi trong 24 giê ph¶i hoµn tr¶.",getn(selTab),selTab);
@@ -1547,16 +1547,16 @@ function buy_bride_cloth_confirm()
 		if nRetCode ~= 0 then
 			Msg2SomeOne(nOldPlayerIndex,"Thµnh c«ng: "..GetName().." 1 c¸i nãn")
 			Msg2Player(GetName(nOldPlayerIndex).."Cho ng­¬i thuª 1 c¸i nãn");
-			WriteLog("[KÕt h«n]:"..GetName(nOldPlayerIndex).."Cho "..GetName(nBrideIndex).."Thuª ®­îc 1 c¸i nãn, nRetCode:"..nRetCode);
+			WriteLog("[Marriage]:"..GetName(nOldPlayerIndex).."Cho "..GetName(nBrideIndex).."Thuª ®­îc 1 c¸i nãn, nRetCode:"..nRetCode);
 		end;
 		nRetCode = AddItem(0,109,tCloth_Faction[nFaction][2]+nBody-1,1)
 		if nRetCode ~= 0 then
 			Msg2SomeOne(nOldPlayerIndex,"Thµnh c«ng: "..GetName().."Thuª ®­îc 1 bé lÔ phôc")
 			Msg2Player(GetName(nOldPlayerIndex).."Cho ng­¬i thª 1 bé lÔ phôc");
-			WriteLog("[KÕt h«n]:"..GetName(nOldPlayerIndex).."Cho "..GetName(nBrideIndex).."Thuª ®­îc 1 c¸i nãn, nRetCode:"..nRetCode);
+			WriteLog("[Marriage]:"..GetName(nOldPlayerIndex).."Cho "..GetName(nBrideIndex).."Thuª ®­îc 1 c¸i nãn, nRetCode:"..nRetCode);
 		end;
 	else
-		Talk(1,"",g_InfoHeader.."TiÒn vµng cña b¹n kh«ng ®ñ, cÇn <color=yellow>"..HIRE_CLOTH_COST.."<color> tiÒn vµng.");
+		Talk(1,"",g_InfoHeader.."TiÒn vµng cña b¹n kh«ng ®ñ, cÇn <color=yellow>"..HIRE_CLOTH_COST.."<color> gold.");
 	end;
 	PlayerIndex = nOldPlayerIndex;
 end;
@@ -1573,27 +1573,27 @@ function buy_cloth_confirm()
 		local nCreateTime = GetTime();
 		if nRetCode ~= 0 then
 			Msg2Player("B¹n thuª ®­îc 1 c¸i nãn");
-			WriteLog("[KÕt h«n]:"..GetName().."Thuª ®­îc 1 c¸i nãn, nRetCode:"..nRetCode);
+			WriteLog("[Marriage]:"..GetName().."Thuª ®­îc 1 c¸i nãn, nRetCode:"..nRetCode);
 		end;
 		nRetCode = AddItem(0,109,tCloth_Faction[nFaction][2]+nBody-1,1)
 		if nRetCode ~= 0 then
 			Msg2Player("B¹n thuª ®­îc 1 bé lÔ phôc");
-			WriteLog("[KÕt h«n]:"..GetName().."B¹n thuª ®­îc 1 bé lÔ phôc, nRetCode:"..nRetCode);
+			WriteLog("[Marriage]:"..GetName().."B¹n thuª ®­îc 1 bé lÔ phôc, nRetCode:"..nRetCode);
 		end;
 	else
-		Talk(1,"",g_InfoHeader.."TiÒn vµng cña b¹n kh«ng ®ñ, cÇn <color=yellow>"..HIRE_CLOTH_COST.."<color> tiÒn vµng.");
+		Talk(1,"",g_InfoHeader.."TiÒn vµng cña b¹n kh«ng ®ñ, cÇn <color=yellow>"..HIRE_CLOTH_COST.."<color> gold.");
 	end;
 end;
 
 function buy_cloth2_confirm()
 	local selTab = {
 				"Nam tiªu chuÈn/#buy_cloth2_confirm2(1)",
-				"Nam kh«i ng«/#buy_cloth2_confirm2(2)",
-				"N÷ gîi c¶m/#buy_cloth2_confirm2(3)",
-				"KiÒu n÷/#buy_cloth2_confirm2(4)",
-				"§Ó ta xem/buy_thing",
+				"Handsome male/#buy_cloth2_confirm2(2)",
+				"Sexy female/#buy_cloth2_confirm2(3)",
+				"Charming maiden/#buy_cloth2_confirm2(4)",
+				"Let me take a look/buy_thing",
 				}
-	Say(g_InfoHeader.."Xin chän size:",getn(selTab),selTab);
+	Say(g_InfoHeader.."Please choose a size:",getn(selTab),selTab);
 end;
 
 function buy_cloth2_confirm2(nBody)
@@ -1605,20 +1605,20 @@ function buy_cloth2_confirm2(nBody)
 		local nRetCode = AddItem(0,109,177+nBody-1,1)
 		if nRetCode ~= 0 then
 			Msg2Player("B¹n thuª ®­îc 1 bé lÔ phôc cho chñ h«n.");
-			WriteLog("[KÕt h«n]:"..GetName().."B¹n thuª ®­îc 1 bé lÔ phôc cho chñ h«n, size:"..nBody)
+			WriteLog("[Marriage]:"..GetName().."B¹n thuª ®­îc 1 bé lÔ phôc cho chñ h«n, size:"..nBody)
 		end;
 	else
-		Talk(1,"",g_InfoHeader.."TiÒn vµng cña b¹n kh«ng ®ñ, cÇn <color=yellow>"..HIRE_CLOTH2_COST.."<color> tiÒn vµng.");
+		Talk(1,"",g_InfoHeader.."TiÒn vµng cña b¹n kh«ng ®ñ, cÇn <color=yellow>"..HIRE_CLOTH2_COST.."<color> gold.");
 	end;	
 end;
 
 function buy_dooly()
 	local selTab = {
-				"§ång ý/buy_dooly_confirm",
-				"§Ó ta xem/buy_thing",
+				"Agree/buy_dooly_confirm",
+				"Let me take a look/buy_thing",
 				"Kh«ng cÇn ®©u/cancel",
 				}
-	Say(g_InfoHeader.."Ng­¬i cã muèn thuª <color=yellow>KiÖu hoa<color> kh«ng? Tèn <color=yellow>"..BUY_DOOLY_COST.."<color> tiÒn vµng",getn(selTab),selTab);
+	Say(g_InfoHeader.."Ng­¬i cã muèn thuª <color=yellow>KiÖu hoa<color> kh«ng? Tèn <color=yellow>"..BUY_DOOLY_COST.."<color> gold",getn(selTab),selTab);
 end;
 
 function buy_dooly_confirm()
@@ -1629,10 +1629,10 @@ function buy_dooly_confirm()
 	if Pay(BUY_DOOLY_COST*10000) == 1 then
 		if AddItem(ITEM_DOOLY[1],ITEM_DOOLY[2],ITEM_DOOLY[3],1) ~= 0 then
 			Msg2Player("B¹n thuª ®­îc 1 kiÖu hoa");
-			WriteLog("[KÕt h«n]:"..GetName().."B¹n thuª ®­îc 1 kiÖu hoa")
+			WriteLog("[Marriage]:"..GetName().."B¹n thuª ®­îc 1 kiÖu hoa")
 		end;
 	else
-		Talk(1,"",g_InfoHeader.."TiÒn vµng cña b¹n kh«ng ®ñ, cÇn <color=yellow>"..BUY_DOOLY_COST.."<color> tiÒn vµng.");
+		Talk(1,"",g_InfoHeader.."TiÒn vµng cña b¹n kh«ng ®ñ, cÇn <color=yellow>"..BUY_DOOLY_COST.."<color> gold.");
 	end;
 end;
 
@@ -1640,10 +1640,10 @@ function buy_ring()
 	local selTab = {
 				"Ta muèn mua nhÉn nam/#buy_ring_confirm(1)",
 				"Ta muèn mua nhÉn n÷/#buy_ring_confirm(2)",
-				"§Ó ta xem/buy_thing",
+				"Let me take a look/buy_thing",
 				"Kh«ng cÇn ®©u/cancel",
 				}
-	Say(g_InfoHeader.."Ng­¬i muèn mua <color=yellow>nhÉn<color> kh«ng? CÇn <color=yellow>"..BUY_RING_COST.."<color> tiÒn vµng.",getn(selTab),selTab);
+	Say(g_InfoHeader.."Ng­¬i muèn mua <color=yellow>nhÉn<color> kh«ng? CÇn <color=yellow>"..BUY_RING_COST.."<color> gold.",getn(selTab),selTab);
 end;
 
 function buy_ring_confirm(nType)
@@ -1671,10 +1671,10 @@ function buy_ring_confirm(nType)
 				SetTask(TASK_BUY_RING,nBuyRingInfo+10);	--°ÑÊ®Î»±ä³É1
 			end;
 			Msg2Player("B¹n mua ®­îc 1 chiÕc nhÉn");
-			WriteLog("[KÕt h«n]:"..GetName().."Mua ®­îc 1 chiÕc nhÉn, lo¹i:"..nType)
+			WriteLog("[Marriage]:"..GetName().."Mua ®­îc 1 chiÕc nhÉn, lo¹i:"..nType)
 		end;
 	else
-		Talk(1,"",g_InfoHeader.."TiÒn vµng cña b¹n kh«ng ®ñ, cÇn <color=yellow>"..BUY_RING_COST.." <color> tiÒn vµng.");
+		Talk(1,"",g_InfoHeader.."TiÒn vµng cña b¹n kh«ng ®ñ, cÇn <color=yellow>"..BUY_RING_COST.." <color> gold.");
 	end;
 end;
 
@@ -1737,7 +1737,7 @@ function callback_main()
 		(is_field_timeout() == 1 and GetMateName() ~= "") or --³¡µØ¹ýÆÚ½á»éºó
 		(GetSex() == 2 and GetMateName() ~= "") then	--Å®·½½á»éºó
 		local selTab= {
-				"§a t¹!/cancel",
+				"Thank you!/cancel",
 				}
 		Say(g_InfoHeader.."§Õn c¶m ¬n ta ­? Chóc c¸c ng­¬i h¹nh phóc!",getn(selTab),selTab);
 		return 0;
@@ -1776,7 +1776,7 @@ function init()
 			end
 		end
 	end
-	WriteLog("[KÕt h«n]: S©n khÊu kÕt h«n");
+	WriteLog("[Marriage]: Wedding stage");
 end
 
 -- DEBUG
@@ -1827,5 +1827,5 @@ function hook_recvsubs(key, param1, param2, count)
 		inited = 1
 		main()
 	end
-	WriteLog("[KÕt h«n]: S©n khÊu kÕt h«n kÕt thóc");
+	WriteLog("[Marriage]: Wedding stage has ended");
 end

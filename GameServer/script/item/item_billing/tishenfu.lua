@@ -18,7 +18,7 @@ function ChkCanUse()
 	if nMapID >= 839 and nMapID <= 842 then
 		return 0
 	end
-	if GetMissionS(10) == "¶i s­ m«n" then	--¿´¿´ÊÇ²»ÊÇÔÚÌØÊâ¹Ø¿¨ÀïÃæ
+	if GetMissionS(10) == "Sect Master" then	--¿´¿´ÊÇ²»ÊÇÔÚÌØÊâ¹Ø¿¨ÀïÃæ
 		return 0;
 	end;
 	return 1

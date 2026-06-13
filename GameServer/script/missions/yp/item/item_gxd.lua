@@ -3,8 +3,8 @@ Include("\\script\\tmp_task_id_def.lua")
 
 tItemInfo = 
 {
-	[1] = {2, 95, 929,"T¬ Lôa §¹i Lý"},
-	[2] = {2,	95,	930,"Da L«ng Thæ Phån"},
+	[1] = {2, 95, 929,"Dai Ly Silk"},
+	[2] = {2,	95,	930,"Tho Phon Fur"},
 	[3] = {2, 95, 928,"Ch©u B¸u T©y H¹"},
 }
 
@@ -30,7 +30,7 @@ function OnUse(nItemIdx)
 	end
 	local selTab = {
 				"\nX¸c nhËn/#confirm_use_final("..nItemIdx..")",
-				"\n hñy bá/nothing",
+				"\n Cancel/nothing",
 				}
 	Say(tItemInfo[nType][4]..": Sau khi dïng sÏ nhËn ®­îc ®iÓm cèng hiÕn thÕ lùc <color=yellow>10 ®iÓm<color>.\n§ång ý dïng??", getn(selTab), selTab);	
 end

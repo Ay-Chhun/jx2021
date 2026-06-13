@@ -19,7 +19,7 @@ end
 function task_deal()
 	if tGtTask:check_cur_task(124) == 1 then
 		if GetItemCount(2,0,30061) < 1 then
-			Talk(1,"","Kh«ng cã thuèc trÞ liÖu:".."Thanh T©m t¸n");
+			Talk(1,"","There is no healing medicine:".."Thanh T©m t¸n");
 			return 0;
 		end
 		local nCount = GetTask(ZQ_CURE_SONG);

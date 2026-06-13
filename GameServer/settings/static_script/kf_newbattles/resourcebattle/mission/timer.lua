@@ -49,7 +49,7 @@ function Process_Fight_Timer()
 		StartMissionTimer(MISSION_ID,TIMER_ID,WAITOUT_TIME);
 		SetMissionV(MV_TIMER_LOOP,WAITOUT_TIMER_LOOP);
 		SetMissionV(MV_BATTLE_STATE,MS_STATE_COMPLETE);
-		Msg2MSAll(MISSION_ID,tBattleName[BATTLE_TYPE].." ®· kÕt thóc.");
+		Msg2MSAll(MISSION_ID,tBattleName[BATTLE_TYPE].." has ended.");
 		if nResSong > nResLiao then
 			sResult = "Phe Tèng giµnh th¾ng lîi chung cuéc t¹i chiÕn dÞch th¶o cèc"
 		elseif nResLiao > nResSong then
@@ -62,7 +62,7 @@ function Process_Fight_Timer()
 		BT_OperateAllPlayer(tell_end,{},ALL_ID);
 	else
 		SetMissionV(MV_TIMER_LOOP,nLoop-1)
-		Msg2MSAll(MISSION_ID,"L­¬ng th¶o Tèng-Liªu hiÖn cã"..nResSong..":"..nResLiao..", tiÕn ®é thêi gian: ["..(FIGHT_TIMER_LOOP-nLoop+1)..":"..(FIGHT_TIMER_LOOP+1).."]");
+		Msg2MSAll(MISSION_ID,"L­¬ng th¶o Tèng-Liªu hiÖn cã"..nResSong..":"..nResLiao..", time progress: ["..(FIGHT_TIMER_LOOP-nLoop+1)..":"..(FIGHT_TIMER_LOOP+1).."]");
 		if mod(nLoop,2) == 0 then
 			Reflash_Res();	--40ÃëË¢ÐÂÒ»´ÎÁ¸²Ýµã
 			BT_OperateAllPlayer(BT_KickSleeper,{},ALL_ID);

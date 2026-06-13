@@ -110,13 +110,13 @@ MAX_SEL_PER_PAGE = 5;	--Ã¿Ò³ÃÅÅÉÊýÁ¿
 
 TB_FACTION_PLACE =
 {	--{ÃÅÅÉÃû×Ö,{×ø±êµãÐÅÏ¢},Õ½¶·×´Ì¬,ÃÅÅÉ±àºÅ}
-	{"ThiÕu L©m",{204,1501,3328},1,1},
-	{"Vâ §ang",{312,1713,3469},1,2},
+	{"Shaolin",{204,1501,3328},1,1},
+	{"Wudang",{312,1713,3469},1,2},
 	{"Nga My",{303,1603,3240},1,3},
-	{"C¸i Bang",{209,1528,3246},1,4},
+	{"Beggars' Sect",{209,1528,3246},1,4},
 	{"§­êng M«n",{305,1532,2915},1,5},
 	{"Thiªn Ba D­¬ng phñ",{219,1630,3274},1,6},
-	{"Ngò §éc Gi¸o",{407,1555,3282},1,7},
+	{"Five Poisons Sect",{407,1555,3282},1,7},
 	{"C«n L«n",{509,1513,3285},0,8},
 	{"Minh gi¸o",{152,1518,3078},0,9},
 	{"Thóy Yªn",{404,1507,2788},0,10},
@@ -144,7 +144,7 @@ function get_list()
 		nFactionIdx = tbFactionTb[i];
 		szFactionName = TB_FACTION_PLACE_INDEX[nFactionIdx][1];
 		if i == 1 and nFaction ~= 0 then
-			tinsert(tbRetTb,"VÒ s­ m«n ("..szFactionName..")/#go_to_faction("..nFactionIdx..")");
+			tinsert(tbRetTb,"Return to sect ("..szFactionName..")/#go_to_faction("..nFactionIdx..")");
 		else
 			tinsert(tbRetTb,szFactionName.."/#go_to_faction("..nFactionIdx..")");
 		end;
@@ -191,13 +191,13 @@ function list_content(nPageNum)
 		tinsert(selTab,tbList[i]);
 	end;
 	if nPageNum ~= 1 then
-		tinsert(selTab,format("\n Trang tr­íc/#list_content(%d)",nPageNum-1));
+		tinsert(selTab,format("\n Previous page/#list_content(%d)",nPageNum-1));
 	end;
 	if nPageNum ~= ceil(nRecordCount/MAX_SEL_PER_PAGE) then
 		tinsert(selTab,format("\n Trang sau/#list_content(%d)",nPageNum+1));
 	end;
 	tinsert(selTab,"Ta muèn hñy bá nhiÖm vô nhËp m«n hiÖn t¹i./cancel_faction");
-	tinsert(selTab,"Kh«ng ®i ®©u c¶./no");
+	tinsert(selTab,"I'm not going anywhere./no");
 	Say(g_szInfoHead.."Ta lµ Sø Gi¶ M«n Ph¸i, cã thÓ ®­a ng­¬i ®Õn c¸c ®¹i m«n ph¸i trªn giang hå, ng­¬i muèn ®Õn m«n ph¸i nµo?",getn(selTab),selTab);
 end
 function moneygo()
@@ -242,7 +242,7 @@ function cancel_faction()
 		for i = 1,getn(TB_FACTION_TASKID_LIST) do
 			SetTask(TB_FACTION_TASKID_LIST[i],0)
 		end
-		if GetNpcName(GetFollower())  == "TiÓu §iªu" then
+		if GetNpcName(GetFollower())  == "Little Bird" then
 			KillFollower()
 		end
 	end
@@ -250,14 +250,14 @@ end
 --====================ÐÂÃÅÅÉÆäËü¹¦ÄÜ===========
 TB_FACTION_TASKID_LIST = {1001,1002,1003,1004,1005,1031,1032,1033,1017,1018,1019}
 TB_FACTION_INFO = {
-	"ThiÕu L©m","Vâ §ang","Nga My","C¸i Bang","§­êng M«n","D­¬ng M«n","Ngò §éc","C«n L«n","Minh gi¸o","Thóy Yªn",
+	"Shaolin","Wudang","Nga My","Beggars' Sect","§­êng M«n","D­¬ng M«n","Five Poisons","C«n L«n","Minh gi¸o","Thóy Yªn",
 }
 --Á÷ÅÉÃû³Æ
 TB_ROUTE_INFO = {
-	"ThiÕu L©m","ThiÕu Tôc","ThiÒn t¨ng","Vâ t¨ng","§­êng M«n","§­êng M«n","Nga My","PhËt Gia","Tôc gia","C¸i Bang",
-	"TÞnh Y","¤ Y","Vâ §ang","§¹o Gia","Tôc gia","D­¬ng M«n","Th­¬ng Kþ","Cung Kþ","Ngò §éc","Tµ hiÖp",
-	"Cæ s­","C«n L«n","Thiªn S­","Minh gi¸o","Th¸nh ChiÕn","TrËn Binh","HuyÕt Nh©n","Thóy Yªn","Vò Tiªn","Linh N÷",
-	"NhËm HiÖp","KiÕm T«n"
+	"Shaolin","Shaolin Layman","ThiÒn t¨ng","Vâ t¨ng","§­êng M«n","§­êng M«n","Nga My","Buddhist","Household","Beggars' Sect",
+	"Pure Robe","Black Robe","Wudang","Daoist","Household","D­¬ng M«n","Cavalry Spear","Mounted Archer","Five Poisons","Tµ hiÖp",
+	"Ancient Master","C«n L«n","Thiªn S­","Minh gi¸o","Holy War","TrËn Binh","HuyÕt Nh©n","Thóy Yªn","Vò Tiªn","Spirit Maiden",
+	"Wandering Hero","KiÕm T«n"
 }
 --ÃÅÅÉ¶ÔÓ¦µÄÁ÷ÅÉ
 TB_FACTION_ROUTE = {
@@ -283,7 +283,7 @@ TB_FACTION_TASK_DIFF = {
 --Ê¦ÃÅÃÜÊÒNPC
 TB_FACTION_BACK_NAME = {
 	[8] = "TrÇn BÊt Vi",
-	[9] = "L­u Thanh Mi",
+	[9] = "Liu Qingmei",
 	[10] = "Th¹ch B¶o",
 }
 --Á÷ÅÉÈëÃÅÏà¹Ø
@@ -319,11 +319,11 @@ TB_ROUTE_IN_INFO = {
 		bewrite = "Minh Gi¸o trËn binh tinh nhuÖ, ®¸nh ®©u th¾ng ®ã! Vâ c«ng bæn ph¸i chØ truyÒn cho TrËn Binh ®Ö tö, th«ng hiÓu ngò hµnh t­¬ng kh¾c, uy hiÕp kÎ thï. Vâ c«ng hÖ ph¸i xem träng <color=yellow>linh ho¹t<color>, dïng <color=yellow>bót<color> ®Ó t¨ng kh¶ n¨ng tÊn c«ng.",
 		in_route_talk = "Giê chÝnh thøc thu nhËn ng­¬i lµm ®Ö tö vµ gióp ng­¬i ®¶ th«ng kinh m¹ch, <color=yellow>tÈy l¹i tiÒm n¨ng<color>. Vâ c«ng hÖ ph¸i xem träng <color=yellow>linh ho¹t<color>, sau nµy ng­¬i h·y cè g¾ng. Giê ng­¬i cã thÓ ®Õn gÆp Ch­ëng M«n nhËn <color=yellow>nhiÖm vô s­ m«n<color> råi.",
 		skill = {{8,"Bót tÊn c«ng b×nh th­êng"},{1083,"Quang Minh Tiªu Dao C«ng"},{1084,"Quang Minh Bót Ph¸p"}},
-		book = {0,112,194,"Quang Minh Ngò Hµnh LÖnh"},
+		book = {0,112,194,"Radiant Ming Five Elements Order"},
 		book_chip = {
-			{2,95,7 ,"Quang Minh Ngò Hµnh LÖnh Tµn QuyÓn-Th­îng"},
-			{2,95,8 ,"Quang Minh Ngò Hµnh LÖnh Tµn QuyÓn-Trung"},
-			{2,95,9 ,"Quang Minh Ngò Hµnh LÖnh Tµn QuyÓn-H¹"},
+			{2,95,7 ,"Radiant Ming Five Elements Order Fragment Manual - Upper"},
+			{2,95,8 ,"Radiant Ming Five Elements Order Fragment Manual - Middle"},
+			{2,95,9 ,"Radiant Ming Five Elements Order Fragment Manual - Lower"},
 			},
 		equip = 9,
 	},
@@ -331,20 +331,20 @@ TB_ROUTE_IN_INFO = {
 		npc_name = "T­ Hµnh Ph­¬ng",
 		bewrite = "Gi¸o chóng Minh Gi¸o t×nh nh­ thñ tóc, quyÕt kh«ng n­¬ng tay víi kÎ thï! Vâ c«ng bæn ph¸i chØ truyÒn cho ®Ö tö HuyÕt Nh©n, dïng lîi tr¶o uy hiÕp kÎ thï, xuÊt chiªu chÝ m¹ng. Vâ c«ng hÖ ph¸i xem träng <color=yellow>th©n ph¸p<color>, dïng <color=yellow>tr¶o<color> ®Ó t¨ng kh¶ n¨ng tÊn c«ng.",
 		in_route_talk = "Giê chÝnh thøc thu nhËn ng­¬i lµm ®Ö tö vµ gióp ng­¬i ®¶ th«ng kinh m¹ch, <color=yellow>tÈy l¹i tiÒm n¨ng<color>. Vâ c«ng hÖ ph¸i xem träng <color=yellow>th©n ph¸p<color>, sau nµy ng­¬i h·y cè g¾ng. Giê ng­¬i cã thÓ ®Õn gÆp Ch­ëng M«n nhËn <color=yellow>nhiÖm vô s­ m«n<color> råi.",
-		skill = {{14,"Tr¶o tÊn c«ng b×nh th­êng"},{1131,"Hµn B¨ng T©m Ph¸p"},{1132,"§o¹n Cèt Tr¶o"}},
-		book={0,112,195,"Hµn B¨ng Ng­ng HuyÕt Chó"},
+		skill = {{14,"Tr¶o tÊn c«ng b×nh th­êng"},{1131,"Hµn B¨ng T©m Ph¸p"},{1132,"Bone-Severing Claw"}},
+		book={0,112,195,"Frost Ice Blood-Congealing Curse"},
 		book_chip = {
-			{2,95,10,"Hµn B¨ng Ng­ng HuyÕt Chó Tµn QuyÓn-Th­îng"},
-			{2,95,11,"Hµn B¨ng Ng­ng HuyÕt Chó Tµn QuyÓn-Trung"},
-			{2,95,12,"Hµn B¨ng Ng­ng HuyÕt Chó Tµn QuyÓn-H¹"},
+			{2,95,10,"Frost Ice Blood-Congealing Curse Fragment Manual - Upper"},
+			{2,95,11,"Frost Ice Blood-Congealing Curse Fragment Manual - Middle"},
+			{2,95,12,"Frost Ice Blood-Congealing Curse Fragment Manual - Lower"},
 		},
 		equip = 11,
 	},
 	[29] = {
-		npc_name = "Chu Tö V¨n",
+		npc_name = "Zhou Ziwen",
 		bewrite = "Thóy Yªn tr¨m hoa ®ua në, ®óng lµ n¬i tuyÖt mü luyÖn tËp nh¶y móa! Vâ c«ng ph¸i ta chØ truyÒn cho Vò Tiªn ®Ö tö, khi xuÊt chiªu uyÓn chuyÓn nh­ móa lµm suy yÕu kÎ thï vµ t¨ng thuéc tÝnh cho ®ång ®éi. Vâ c«ng hÖ ph¸i xem träng <color=yellow>th©n ph¸p<color>, vò khÝ lµ <color=yellow>Linh Chi<color> ®Ó t¨ng kh¶ n¨ng tÊn c«ng.",
 		in_route_talk = "Giê chÝnh thøc thu nhËn ng­¬i lµm ®Ö tö vµ gióp ng­¬i ®¶ th«ng kinh m¹ch, <color=yellow>tÈy l¹i tiÒm n¨ng<color>. Vâ c«ng hÖ ph¸i xem träng <color=yellow>th©n ph¸p<color>, sau nµy ng­¬i h·y cè g¾ng. Giê ng­¬i cã thÓ ®Õn gÆp Ch­ëng M«n nhËn <color=yellow>nhiÖm vô s­ m«n<color> råi.",
-		skill = {{15,"Linh Chi c«ng kÝch"},{1165,"Phong Vò T©m Ph¸p"},{1166,"Khëi Vò"},{1167,"Linh Miªu VËn"}},
+		skill = {{15,"Linh Chi c«ng kÝch"},{1165,"Phong Vò T©m Ph¸p"},{1166,"Rising Dance"},{1167,"Spirit Cat Fortune"}},
 		book={0,112,196,"Phông Minh Phæ"},
 		book_chip = {
 			{2,95,13,"Phông Minh Phæ Tµn QuyÓn-Th­îng"},
@@ -357,7 +357,7 @@ TB_ROUTE_IN_INFO = {
 		npc_name = "Hå Man Thµnh",
 		bewrite = "T©m kh«ng t¹p niÖm míi cã thÓ dung hßa víi TiÓu §iªu! Vâ c«ng m«n ph¸i chØ truyÒn cho Linh N÷ ®Ö tö, th­êng häc nu«i TiÓu §iªu, khi chiÕn ®Êu dïng Tiªu triÖu gäi TiÓu §iªu tÊn c«ng kÎ thï. Vâ c«ng hÖ ph¸i xem träng <color=yellow>linh ho¹t<color>, dïng <color=yellow>tiªu<color> ®Ó t¨ng kh¶ n¨ng tÊn c«ng.",
 		in_route_talk = "Giê chÝnh thøc thu nhËn ng­¬i lµm ®Ö tö vµ gióp ng­¬i ®¶ th«ng kinh m¹ch, <color=yellow>tÈy l¹i tiÒm n¨ng<color>. Vâ c«ng hÖ ph¸i xem träng <color=yellow>linh ho¹t<color>, sau nµy ng­¬i h·y cè g¾ng. Giê ng­¬i cã thÓ ®Õn gÆp Ch­ëng M«n nhËn <color=yellow>nhiÖm vô s­ m«n<color>råi.",
-		skill = {{16,"S¸o c«ng kÝch b×nh th­êng"},{1217,"B¸ch Hoa Ngäc Lé C«ng"},{1218,"Nu«i TiÓu §iªu"},{1219,"L¹c Hoa QuyÕt"}},
+		skill = {{16,"S¸o c«ng kÝch b×nh th­êng"},{1217,"B¸ch Hoa Ngäc Lé C«ng"},{1218,"Raise Little Bird"},{1219,"Falling Flower Art"}},
 		book={0,112,197,"Hoa Tiªn T©m Kinh"},
 		book_chip = {
 			{2,95,16,"Hoa Tiªn T©m Kinh Tµn QuyÓn-Th­îng"},
@@ -409,9 +409,9 @@ TB_FACTION_SALE_NPC = {
 	[5] = "§­êng Thiªn H¶i",
 	[6] = "D­¬ng Bµi Phong",
 	[7] = "Th¸i Quang",
-	[8] = "Mai BÊt Dung",
+	[8] = "Mei Burong",
 	[9] = "Ph­¬ng ThÊt PhËt",
-	[10] = "Hµ Hµi",
+	[10] = "Ha Hai",
 }
 --Ê¦ÃÅ´«ËÍ
 TB_TRANSPORT_INFO = {
@@ -447,7 +447,7 @@ function master_main(faction_seq,route_seq)
 --		"µÜ×Ó²Î°ÝÊ¦¸µ/#get_in_route("..faction_seq..","..route_seq..")",
 		"Häc"..TB_FACTION_INFO[faction_seq]..TB_ROUTE_INFO[route_seq].."Vâ c«ng/#learn_skill("..route_seq..")",
 --		"ÎÒµÃµ½ÁË±¾ÃÅÕòÅÉÃØ¼®µÄ²Ð¾í/#book_chg("..route_seq..")",
-		"Chµo hái/end_dialog",
+		"Greetings/end_dialog",
 	}
 	local t_dia_show = {}
 	local s_dia_main = "<color=green>"..TB_ROUTE_IN_INFO[route_seq].npc_name.."<color>: "..TB_ROUTE_IN_INFO[route_seq].bewrite
@@ -556,7 +556,7 @@ end
 function hand_up(route_seq)
 	Say("<color=green>"..TB_ROUTE_IN_INFO[route_seq].npc_name.."<color>: NÕu nh­ ng­¬i cã ®ñ 3 tËp th­îng, trung, h¹, ta nhÊt ®Þnh sÏ ®ãng l¹i thµnh mét quyÓn hoµn chØnh.",
 		2,
-		"§ång ý ®ãng s¸ch/#hand_up_dtm("..route_seq..")",
+		"Agree to bind the book/#hand_up_dtm("..route_seq..")",
 		"Kh«ng cÇn ®©u/no"
 	)
 end
@@ -567,7 +567,7 @@ function hand_up_dtm(route_seq)
 	for i = 1,getn(TB_ROUTE_IN_INFO[route_seq].book_chip) do
 		if GetItemCount(TB_ROUTE_IN_INFO[route_seq].book_chip[i][1],TB_ROUTE_IN_INFO[route_seq].book_chip[i][2], TB_ROUTE_IN_INFO[route_seq].book_chip[i][3]) > 0 then
 			if DelItem(TB_ROUTE_IN_INFO[route_seq].book_chip[i][1],TB_ROUTE_IN_INFO[route_seq].book_chip[i][2], TB_ROUTE_IN_INFO[route_seq].book_chip[i][3],1) == 1 then
-				s_del_log = s_del_log.."Hñy 1 quyÓn"..TB_ROUTE_IN_INFO[route_seq].book_chip[i][1],TB_ROUTE_IN_INFO[route_seq].book_chip[i][2], TB_ROUTE_IN_INFO[route_seq].book_chip[i][4].." thµnh c«ng "
+				s_del_log = s_del_log.."Cancel 1 volume"..TB_ROUTE_IN_INFO[route_seq].book_chip[i][1],TB_ROUTE_IN_INFO[route_seq].book_chip[i][2], TB_ROUTE_IN_INFO[route_seq].book_chip[i][4].." thµnh c«ng "
 				tinsert(t_del_num,i)
 			end
 		end
@@ -593,7 +593,7 @@ function hand_up_dtm(route_seq)
 		local add_flag = AddItem(TB_ROUTE_IN_INFO[route_seq].book[1],TB_ROUTE_IN_INFO[route_seq].book[2],TB_ROUTE_IN_INFO[route_seq].book[3], 1)
 		if add_flag == 1 then
 			Talk(1,"","<color=green>"..TB_ROUTE_IN_INFO[route_seq].npc_name.."<color>: Ng­¬i thËt may m¾n, MËt TÞch TrÊn Ph¸i S­ M«n xin giao cho ng­¬i!")
-			Msg2Player("NhËn ®­îc MËt TÞch TrÊn Ph¸i S­ M«n: "..TB_ROUTE_IN_INFO[route_seq].book[4].."1 quyÓn!")
+			Msg2Player("NhËn ®­îc MËt TÞch TrÊn Ph¸i S­ M«n: "..TB_ROUTE_IN_INFO[route_seq].book[4].."1 volume!")
 		else
 			WriteLog(s_del_log.."	Thªm MËt TÞch S­ M«n thÊt b¹i, ®¸nh dÊu thÊt b¹i: "..add_flag)
 		end
@@ -660,12 +660,12 @@ function ftask_repeat_main(faction_seq)
 		"Ta muèn tra xem ®é cèng hiÕn./#check_query("..faction_seq..")",
 		"Ta muèn t×m hiÓu ®é cèng hiÕn s­ m«n./shimenshuoming",
 		"   /#repair_faction("..faction_seq..")",
-		"Rêi khái/end_dialog"
+		"Leave/end_dialog"
 		)
 end
 function start_faction(faction_seq)
 	if (GetPlayerFaction() ~= faction_seq) then
-		Talk(1,"","<color=green>"..TB_FACTION_MASTER_NAME[faction_seq].."<color>: ChØ cã"..TB_FACTION_INFO[faction_seq].."®Ö tö ta míi ®­îc cèng hiÕn bæn m«n!")
+		Talk(1,"","<color=green>"..TB_FACTION_MASTER_NAME[faction_seq].."<color>: Only"..TB_FACTION_INFO[faction_seq].."®Ö tö ta míi ®­îc cèng hiÕn bæn m«n!")
 		return
 	elseif (GetPlayerRoute() == TB_FACTION_ROUTE[faction_seq]) then
 		Talk(1,"","<color=green>"..TB_FACTION_MASTER_NAME[faction_seq].."<color>: H·y b¸i s­ häc nghÖ tr­íc, råi h·y gãp søc cho s­ m«n!")
@@ -696,7 +696,7 @@ end
 function repair_faction(faction_seq)
 	Say("<color=green>"..TB_FACTION_MASTER_NAME[faction_seq].."<color>: Do bËn rén c«ng vô nªn quªn chuyÖn ng­¬i lµm nhiÖm vô. §©y còng lµ ®Ó ng­¬i rÌn luyÖn! Giê ta sÏ gióp ng­¬i hñy nhiÖm vô tr­íc, nh­ng ph¶i trõ 5 ®iÓm s­ m«n, ®ång ý kh«ng?",
 		2,
-		"§­îc, ta ®ång ý/#cfm_repair_bug("..faction_seq..")",
+		"Yes, I agree/#cfm_repair_bug("..faction_seq..")",
 		"§Ó ta nghÜ c¸ch kh¸c/no")
 end;
 
@@ -725,7 +725,7 @@ function practice_main(faction_seq)
         if GetItemCount(cards_table[faction_seq][1],cards_table[faction_seq][2],cards_table[faction_seq][3]) >= 1 then  --Ê¦ÃÅÁîÅÆ
             Say("<color=green>"..TB_FACTION_MASTER_NAME[faction_seq].."<color>: Vµo tu luyÖn kh«ng?",
             	2,
-            	"§óng/practice_start",
+            	"Yes/practice_start",
             	"Sai/no_practice");
         else
             Talk(1, "", "<color=green>"..TB_FACTION_MASTER_NAME[faction_seq].."<color>: Ng­¬i kh«ng cã<color=yellow>"..TB_FACTION_INFO[faction_seq].."LÖnh Bµi S­ M«n<color>, kh«ng thÓ bÕ quan tu luyÖn.");

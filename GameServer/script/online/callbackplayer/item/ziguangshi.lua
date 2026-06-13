@@ -29,7 +29,7 @@ function OnUse(nIndex)
 	end
 	Say(tZiguangshi[nIdx][4].." cã thÓ gióp b¹n ®em  "..tZiguangshi[nIdx][5]..", b¹n x¸c nhËn muèn sö dông chø?",
 		2,
-		"§­îc/#choose_weizhi("..nIdx..")",
+		"Yes/#choose_weizhi("..nIdx..")",
 		"Sö dông sau/nothing")
 end
 
@@ -42,7 +42,7 @@ function choose_weizhi(nIdx)
 		5,
 		"§Çu/#confirm_qianghua_ziguang(1,"..nIdx..")",
 		"Ngo¹i trang/#confirm_qianghua_ziguang(2,"..nIdx..")",
-		"H¹ y/#confirm_qianghua_ziguang(3,"..nIdx..")",
+		"Lower garment/#confirm_qianghua_ziguang(3,"..nIdx..")",
 		"Vò khÝ/#confirm_qianghua_ziguang(4,"..nIdx..")",
 		"§îi ta mÆc trang bÞ lªn ®·./nothing")	
 end

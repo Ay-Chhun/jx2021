@@ -25,19 +25,19 @@ function ma_trans_dia()
 	if task_diff == 2 then
 		ma_trans_dia = "Khu vùc hiÖn t¹i "
 	else
-		ma_trans_dia = "{c¹nh}"
+		ma_trans_dia = "{edge}"
 	end	
 	local mate_sex = ""
 	if GetSex() == 1 then
-		mate_sex = "Ng­êi ch¬i"
+		mate_sex = "Player"
 	else
 		mate_sex = "Tha"
 	end
 	SetTask(random_tasktip_taskID,0)
 	Say("<color=yellow>chØ dÉn<color>: §ång ®éi yªu cÇu b¹n chuyÓn ®Õn "..mate_sex..ma_trans_dia..", ®ång ý kh«ng?",
 	2,
-	"§ång ý/#ma_trans_callback("..task_diff..")",
-	"Kh«ng ®ång ý/Main_Exit"
+	"Agree/#ma_trans_callback("..task_diff..")",
+	"Disagree/Main_Exit"
 	)
 end
 --·òÆÞ´«ËÍ»Øµ÷
@@ -50,7 +50,7 @@ function ma_trans_callback(task_diff)
 	--°ÚÌ¯×´Ì¬ÎÞ·¨´«ËÍ
 	if IsStalling() == 1 then
 		Msg2Player("Tr¹ng th¸i bµy b¸n kh«ng thÓ truyÒn tèng!")
-		DoScriptByName(GetMateName(),"\\script\\global\\skill_process_callback_s.lua","trans_err", "§ång ®éi ë tr¹ng th¸i bµy b¸n!")
+		DoScriptByName(GetMateName(),"\\script\\global\\skill_process_callback_s.lua","trans_err", "Your teammate is in vendor stall state!")
 		return
 	end	
 	DoScriptByName(GetMateName(),"\\script\\global\\skill_process_callback_s.lua","ask_mate_callback", tostring(task_diff))
@@ -66,7 +66,7 @@ function _prentice_see_la()
 	if tInfo["master"] == "" then
 		return
 	end
-	Say("S­ phô gäi b¹n k×a, sao h¶?", 2, "§ång ý/prentice_yes_la", "Kh«ng ®ång ý/prentice_no_la")
+	Say("Master is calling you, what's wrong?", 2, "Agree/prentice_yes_la", "Disagree/prentice_no_la")
 end
 
 function prentice_yes_la()

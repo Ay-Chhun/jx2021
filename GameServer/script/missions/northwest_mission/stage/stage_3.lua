@@ -19,9 +19,9 @@
 	--É±ËÀµÄ¸÷¸öÎ»ÖÃĞ¡bossµÄÊıÁ¿
 	Ms_Devilgen_Killed_num ={ 23,24,25,26}
 	Tb_Bougie_info = {}
-	Tb_Bougie_info[1038] = {"§Ìn cÇy lín","Mang nÕn vµ ngän ®uèc (®¹i)"}		--´óÀ¯Öò
-	Tb_Bougie_info[1039] = {"§Ìn cÇy võa","Mang nÕn vµ ngän ®uèc (trung)"}		--ÖĞÀ¯Öò
-	Tb_Bougie_info[1040] = {"§Ìn cÇy nhá","Mang nÕn vµ ngän ®uèc (tiÓu)"}		--Ğ¡À¯Öò
+	Tb_Bougie_info[1038] = {"Large altar lamp","Mang nÕn vµ ngän ®uèc (®¹i)"}		--´óÀ¯Öò
+	Tb_Bougie_info[1039] = {"Medium altar lamp","Mang nÕn vµ ngän ®uèc (trung)"}		--ÖĞÀ¯Öò
+	Tb_Bougie_info[1040] = {"Small altar lamp","Mang nÕn vµ ngän ®uèc (tiÓu)"}		--Ğ¡À¯Öò
 		--³ÖĞøµôÑª¼¼ÄÜ£º
 	Tb_Bougie_buff = {"state_lost_life_per18_monster",200,31860,0,19801250}
 		--À¯ÖòÈ¼ÉÕÌØĞ§ID
@@ -39,7 +39,7 @@
 			{
 				{"state_life_percent_per10s_anytime",2,31860,0,19801251},
 			},
-			"Duy tr× håi m¸u","Ng­ng håi m¸u",
+			"Maintain HP recovery","Stop blood recovery",
 		},
 		{--·ÀÓùÌá¸ß	
 			{	--Ä§·¨buff£¬¿É×ÔĞĞÌí¼Ó
@@ -87,7 +87,7 @@ function stage3_boss_wind_skill()
 		return
 	end
 	Zgc_pub_mission_fun(MS_ID,"StartTimeGuage(\"Quû Phong xuÊt hiÖn cßn\",60,0,2)")
-	NpcChat(boss_index,"ThËt to gan, d¸m th¾p ¸nh s¸ng loe loĞt!")
+	NpcChat(boss_index,"How bold, daring to light a flickering flame!")
 	Zgc_pub_mission_fun(MS_ID,"Msg2Player(\"Quû Phong biÕn mÊt, bèn h­íng chuyÓn ®éng, Quû T­íng Qu©n gäi ra Quû Phong, nÕn bçng phôt ch¸y!\")")
 	for i = Ms_candler_state_noutheast,Ms_candler_state_northwest do
 		if GetMissionV(i) == 0 then
@@ -178,7 +178,7 @@ function stage3_boss_death()
 	local stage_seq = GetMissionV(MS_STATE_DIFF_ID)
 	PlayerIndex = GetTeamMember(0)
 	if PlayerIndex ~= 0 then
-		AddGlobalNews("T¹i"..GetName().."ChiÕn ®Êu gian khæ, cuèi cïng ®¸nh b¹i 'Quû T­íng Qu©n', v­ît ¶i thµnh c«ng"..Stage_info[stage_seq].stage_name..".")
+		AddGlobalNews("At"..GetName().."ChiÕn ®Êu gian khæ, cuèi cïng ®¸nh b¹i 'Quû T­íng Qu©n', v­ît ¶i thµnh c«ng"..Stage_info[stage_seq].stage_name..".")
 	end
 	
 	local nMapID = SubWorldIdx2ID(SubWorld)
@@ -188,7 +188,7 @@ function stage3_boss_death()
 	--×¼±¸¹Ø¿¨½áÊø
 	--test
 	local mission_count = GetMapTaskTemp(nMapID,1)
-	WriteLog("[¶i T©y B¾c] thèng kª qua ¶i: ID ¶i	"..stage_seq..":"..nMapID..":"..mission_count.."	Thêi gian qua ¶i	"..Zgc_pub_time_sec_change(((189-GetMissionV(MS_TIMMER_LOOP_ID))* 10),1))
+	WriteLog("[Northwest Pass] pass clearing statistics: Pass ID"..stage_seq..":"..nMapID..":"..mission_count.."	Thêi gian qua ¶i	"..Zgc_pub_time_sec_change(((189-GetMissionV(MS_TIMMER_LOOP_ID))* 10),1))
 	Zgc_pub_mission_fun(MS_ID,"Ms_stage_prize()")
 	SetMissionV(MS_TIMMER_LOOP_ID,6)
 	--stage_mission_fail(3)
@@ -204,7 +204,7 @@ function devil_Gen_death(gen_seq)
 		for i = 1,getn(Tb_Monster_info[3][gen_seq][9]) do
 			if ran_num <= Tb_Monster_info[3][gen_seq][9][i] then
 				AddItem(2,0,(1037+i),1)
-				Msg2Player("NhËn ®­îc 1 "..Tb_Bougie_info[1037+i][1]..", b¹n cã thÓ ®èi tho¹i víi ngän ®uèc ®Ó ®èt nÕn.")
+				Msg2Player("Received 1"..Tb_Bougie_info[1037+i][1]..", b¹n cã thÓ ®èi tho¹i víi ngän ®uèc ®Ó ®èt nÕn.")
 				break
 			end
 		end
@@ -236,8 +236,8 @@ function stage3_bougie_use(bougie_seq)
 	--¶Ô»°Õ¹¿ª
 	Say("<color=green>Nh¾c nhë<color> B¹n muèn dïng nÕn th¾p ngän ®uèc nµy kh«ng?",
 	2,
-	"§ång ı/#bougie_use_dtm("..bougie_seq..")",
-	"Tho¸t/end_dialog"
+	"Agree/#bougie_use_dtm("..bougie_seq..")",
+	"Exit/end_dialog"
 	)
 end
 --È·ÈÏÊ¹ÓÃÀ¯Öò
@@ -246,7 +246,7 @@ function bougie_use_dtm(bougie_seq)
 	local tb_dilog = {}
 	for i = 1038,1040 do
 		if GetItemCount(2,0,i) ~= 0 then
-			tinsert(tb_dilog,"§ång ı"..Tb_Bougie_info[i][1].."Th¾p ®uèc/#bougie_crt("..bougie_seq..","..i..")")
+			tinsert(tb_dilog,"Agree"..Tb_Bougie_info[i][1].."Light torch/#bougie_crt("..bougie_seq..","..i..")")
 		end
 	end
 	if getn(tb_dilog) == 0 then
@@ -264,7 +264,7 @@ end
 function bougie_crt(att_seq,bougie_id)
 	--×´Ì¬¼ì²â
 	if GetMissionV(att_seq + 14) == 0 then
-		Talk(1,"","<color=green>Nh¾c nhë<color>: HiÖn"..Tb_Monster_info[3] [att_seq][2].." nÕn ®· th¾p!")
+		Talk(1,"","<color=green>Reminder<color>: Currently"..Tb_Monster_info[3] [att_seq][2].."candles are lit!")
 		return
 	end
 	--ÎïÆ·¼ì²â

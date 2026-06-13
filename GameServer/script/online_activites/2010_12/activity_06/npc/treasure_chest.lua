@@ -19,14 +19,14 @@ TC_WeaponList =
   {1, 7, "L­u Yªn c«n", {0, 5, 6009, 1, 1, -1, -1, -1, -1, -1, -1}},
   {1, 7, "HuyÒn Yªn kiÕm", {0, 2, 6010, 1, 1, -1, -1, -1, -1, -1, -1}},
   {1, 6, "Vò Yªn bót", {0, 9, 6011, 1, 1, -1, -1, -1, -1, -1, -1}},
-  {1, 6, "Hµ Tiªm Th­¬ng", {0, 6, 6012, 1, 1, -1, -1, -1, -1, -1, -1}},
+  {1, 6, "He Tian Spear", {0, 6, 6012, 1, 1, -1, -1, -1, -1, -1, -1}},
   {1, 6, "Hµnh Yªn Cung", {0, 4, 6013, 1, 1, -1, -1, -1, -1, -1, -1}},
   {1, 6, "Träc Yªn nhÉn", {0, 7, 6014, 1, 1, -1, -1, -1, -1, -1, -1}},
   {1, 6, "Yªu Yªn tr¶o", {0, 11, 6015, 1, 1, -1, -1, -1, -1, -1, -1}}
 }
 
 function TC_AddWeapon()
-	gf_EventGiveRandAward(TC_WeaponList, 100, 1, "Event th¸ng 12 n¨m 2010", "Vò khÝ bé Phi Yªn");
+	gf_EventGiveRandAward(TC_WeaponList, 100, 1, "December 2010 Event", "Vò khÝ bé Phi Yªn");
 end
 
 function TC_AddBattleAchievement()
@@ -37,7 +37,7 @@ end
 -- base 1000
 TC_ItemBonusList = 
 {
-	{1, 300, "Ch«m Ch«m", {2, 1, 30165, 50}},
+	{1, 300, "Rambutan", {2, 1, 30165, 50}},
 	{31, 10, "TC_AddWeapon();"},
 	{1, 1, "Thiªn Qu¸i Th¹ch", {2, 0, 1084, 1}},
 	{1, 100, "ChiÕn ThÇn hoµn", {2, 1, 1005, 1}, 7 * 24 * 3600},
@@ -50,7 +50,7 @@ TC_ItemBonusList =
 	{1, 1, "§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", {2, 1, 1067, 1}, 7 * 24 * 3600},
 	{1, 10, "Thiªn Th¹ch Tinh Th¹ch", {2, 1, 1009, 1}},
 	{1, 5, "Thiªn Th¹ch linh th¹ch", {2, 1, 1068, 1}, 7 * 24 * 3600},
-	{1, 1, "L¨ng Ba Vi Bé", {0, 112, 78, 1}},
+	{1, 1, "Lingbo Microstep", {0, 112, 78, 1}},
   {3, 50, 5000000, 1}, --½ðÇ®
   {31, 282, "TC_AddBattleAchievement();"} -- ¾ü¹¦Öµ
 }
@@ -98,8 +98,8 @@ function main()
 	for i=1, teamSize do
 		local oldPlayerIndex = PlayerIndex;
 		PlayerIndex = GetTeamMember(i);
-		gf_EventGiveRandAward(TC_ExpBounus, 1000, 1, "Event th¸ng 12 n¨m 2010", "teasure chest");			
-		gf_EventGiveRandAward(itemBonusTable, 1000, 1, "Event th¸ng 12 n¨m 2010", "teasure chest");	
+		gf_EventGiveRandAward(TC_ExpBounus, 1000, 1, "December 2010 Event", "teasure chest");			
+		gf_EventGiveRandAward(itemBonusTable, 1000, 1, "December 2010 Event", "teasure chest");	
 		PlayerIndex = oldPlayerIndex;
 	end
 	FG_DestroyChest(mapID);

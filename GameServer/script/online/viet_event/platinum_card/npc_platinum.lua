@@ -62,7 +62,7 @@ end
 
 function get_platinum_day_CTAH()
 	local tSay = {}
-	tinsert(tSay,"§ång ý/confirm_get_platinum_day_CTAH")
+	tinsert(tSay,"Agree/confirm_get_platinum_day_CTAH")
 	tinsert(tSay,"T¹i h¹ chØ ghÐ ngang/dlgover")
 	Say("<color=green>Chñ Phßng M¸y<color>: NhiÖm vô cèng hiÕn c¸c vËt phÈm (1 B¸t nh· nhá, 1 B¸t nh· lín, 1 H¹t gièng, 1 Tµng r­¬ng) ®Ó nhËn th­ëng c¸c vËt phÈm: 2 th¸i dÞch hçn nguyªn c«ng ®å, 30 m¶nh thiªn cang, 7 m¶nh thiªn m«n, 20 danh väng, 20 s­ m«n, 2000 qu©n c«ng, 4,7 triÖu ®iÓm kinh nghiÖm.", getn(tSay),tSay)
 end
@@ -291,7 +291,7 @@ function confirm_get_platinum_day(nIndex)
 	
 	gf_AddItemEx2({2,0,1082, tb_everyday_award_BKL[nType][nLevel][1]},"Th¸i DÞch Hçn Nguyªn C«ng §å", szBKLBLogHeader, szBKLBLogAction)
 	if nIndex == 1 then
-		gf_AddItemEx2({2,1,30086, tb_everyday_award_BKL[nType][nLevel][2],4},"H¹t gièng", szBKLBLogHeader, szBKLBLogAction, 15*24*60*60)
+		gf_AddItemEx2({2,1,30086, tb_everyday_award_BKL[nType][nLevel][2],4},"Seed", szBKLBLogHeader, szBKLBLogAction, 15*24*60*60)
 		gf_WriteLogEx(szBKLBLogHeader, "®æi thµnh c«ng", 1, "Mçi ngµy: H¹t gièng, cÊp "..nLevel)
 	elseif nIndex == 2 then
 		Earn(tb_everyday_award_BKL[nType][nLevel][4] * 10000)
@@ -365,8 +365,8 @@ function confirm_get_platinum_weekday_BKL(nIndex)
 	end
 
 	if nIndex == 1 then
-		gf_AddItemEx2({2,0,308,tb_golden_material_goldenday_BKL[nLevel][3]}, "Gç Qu©n Dông", szBKLBLogHeader, szBKLBLogAction)		
-		gf_AddItemEx2({2,0,504,tb_golden_material_goldenday_BKL[nLevel][5],4}, "B¸t Nh· nhá", szBKLBLogHeader, szBKLBLogAction, 15*24*60*60)
+		gf_AddItemEx2({2,0,308,tb_golden_material_goldenday_BKL[nLevel][3]}, "Wood Military Supplies", szBKLBLogHeader, szBKLBLogAction)		
+		gf_AddItemEx2({2,0,504,tb_golden_material_goldenday_BKL[nLevel][5],4}, "small Prajna", szBKLBLogHeader, szBKLBLogAction, 15*24*60*60)
 		if nLevel == 9 then
 			gf_AddItemEx2({2,1,9977,1,4}, "Qu©n C«ng Huy Hoµng", szBKLBLogHeader, szBKLBLogAction, 15*24*60*60)	
 		elseif nLevel == 8 then
@@ -377,7 +377,7 @@ function confirm_get_platinum_weekday_BKL(nIndex)
 		 gf_WriteLogEx(szBKLBLogHeader, "®æi thµnh c«ng", 1, "Ngµy vµng: Gç + B¸t nh·, cÊp "..nLevel)
 	else
 		local nCash = tb_golden_material_goldenday_BKL[nLevel][6] * 10000
-		gf_AddItemEx2({2,0,308,tb_golden_material_goldenday_BKL[nLevel][3]}, "Gç Qu©n Dông", szBKLBLogHeader, szBKLBLogAction)	
+		gf_AddItemEx2({2,0,308,tb_golden_material_goldenday_BKL[nLevel][3]}, "Wood Military Supplies", szBKLBLogHeader, szBKLBLogAction)	
 		Earn(nCash)
 		gf_WriteLogEx(szBKLBLogHeader, "®æi thµnh c«ng", 1, "Ngµy vµng: Gç + vµng, cÊp "..nLevel)
 	end
@@ -482,7 +482,7 @@ function award_level_BKL()
 					"Ta muèn nhËn phÇn th­ëng cÊp ®é 80/#get_BKL_award(80)",
 					"Ta muèn nhËn phÇn th­ëng cÊp ®é 81/#get_BKL_award(81)",			
 					"Ta muèn nhËn phÇn th­ëng cÊp ®é 82/#get_BKL_award(82)",	
-					"Trang kÕ/award_level_2_BKL",
+					"Next page/award_level_2_BKL",
 					"T¹i h¹ chØ ghÐ ngang!/dlgover",
 			}
 	Say("<color=green>Chñ Phßng M¸y<color>: §èi víi c¸c tµi kho¶n cã <color=yellow>L«i Hæ LÖnh<color>, khi ®¹t ®­îc c¸c mèc ®iÒu kiÖn nhËn th­ëng (xem thªm trªn trang chñ), c¸c h¹ cã thÓ ®Õn gÆp ta ®Ó nhËn phÇn th­ëng.",	getn(tSay),tSay)	
@@ -498,8 +498,8 @@ function award_level_2_BKL()
 					"Ta muèn nhËn phÇn th­ëng cÊp ®é 88/#get_BKL_award(88)",	
 					"Ta muèn nhËn phÇn th­ëng cÊp ®é 89/#get_BKL_award(89)",	
 					"Ta muèn nhËn phÇn th­ëng cÊp ®é 90/#get_BKL_award(90)",
-					"Trang kÕ/award_level_3_BKL",	
-					"Trang tr­íc/award_level_BKL",
+					"Next page/award_level_3_BKL",	
+					"Previous page/award_level_BKL",
 					"T¹i h¹ chØ ghÐ ngang!/dlgover",
 			}
 	Say("<color=green>Chñ Phßng M¸y<color>: §èi víi c¸c tµi kho¶n cã <color=yellow>L«i Hæ LÖnh<color>, khi ®¹t ®­îc c¸c mèc ®iÒu kiÖn nhËn th­ëng (xem thªm trªn trang chñ), c¸c h¹ cã thÓ ®Õn gÆp ta ®Ó nhËn phÇn th­ëng.",	getn(tSay),tSay)		
@@ -516,7 +516,7 @@ function award_level_3_BKL()
 					"Ta muèn nhËn phÇn th­ëng cÊp ®é 97/#get_BKL_award(97)",
 					"Ta muèn nhËn phÇn th­ëng cÊp ®é 98/#get_BKL_award(98)",
 					"Ta muèn nhËn phÇn th­ëng cÊp ®é 99/#get_BKL_award(99)",										
-					"Trang tr­íc/award_level_2_BKL",
+					"Previous page/award_level_2_BKL",
 					"T¹i h¹ chØ ghÐ ngang!/dlgover",
 			}
 	Say("<color=green>Chñ Phßng M¸y<color>: §èi víi c¸c tµi kho¶n cã <color=yellow>L«i Hæ LÖnh<color>, khi ®¹t ®­îc c¸c mèc ®iÒu kiÖn nhËn th­ëng (xem thªm trªn trang chñ), c¸c h¹ cã thÓ ®Õn gÆp ta ®Ó nhËn phÇn th­ëng.",	getn(tSay),tSay)		
@@ -633,12 +633,12 @@ function confirm_confirm_BKL(nLevel)
 	gf_SetTaskByte(TSK_BKLB_FLAG, BYTE_BKLB_LEVELAWARD, nGet + 1)
 	if nLevel == 74 then										
 		gf_AddItemEx2({2, 0, 553,3,1},"§¹i Nh©n S©m", szLogTitle, szLogAction, 7*24*60*60)
-		gf_AddItemEx2({2, 0, 554,15,1},"Tu Ch©n YÕu QuyÕt", szLogTitle, szLogAction, 7*24*60*60)
+		gf_AddItemEx2({2, 0, 554,15,1},"Xiu Zhen Yao Jue", szLogTitle, szLogAction, 7*24*60*60)
 		gf_AddItemEx2({0, 107, 64,1,1},"Thiªn Hµ MËt tÞch", szLogTitle, szLogAction)
 		gf_AddItemEx2({0, 107, 65,1,1},"Tö Hµ MËt tÞch", szLogTitle, szLogAction)
-		gf_AddItemEx2({0, 107, 66,1,1},"Chiªm Y Phæ", szLogTitle, szLogAction)
+		gf_AddItemEx2({0, 107, 66,1,1},"Zhanyi Manual", szLogTitle, szLogAction)
 		gf_AddItemEx2({0, 107, 60,1,1},"Tu La MËt tÞch", szLogTitle, szLogAction)
-		gf_AddItemEx2({0, 107, 59,1,1},"Kim ThiÒn Phæ", szLogTitle, szLogAction)
+		gf_AddItemEx2({0, 107, 59,1,1},"Golden Cicada Manual", szLogTitle, szLogAction)
 		gf_AddItemEx2({0, 107, 61,1,1},"Bæ Kim MËt tÞch", szLogTitle, szLogAction)
 		gf_AddItemEx2({0, 107, 62,1,1},"Bæ Th¹ch MËt tÞch", szLogTitle, szLogAction)		
 		Say("<color=green>Chñ Phßng M¸y<color>: Chóc mõng c¸c h¹ nhËn ®­îc phÇn th­ëng cÊp "..nLevel.."!",0)		
@@ -703,7 +703,7 @@ function confirm_confirm_BKL(nLevel)
 --		if nRoute == 2 then
 --			AddItem(0, tWeapons[12], nRoute * 100 + 20 + nBody, 1, 1, -1, -1, -1, -1, -1, -1, 0, 7);	
 --		end
-		gf_AddItemEx2({2,1,30340,800,4}, "Méc R­¬ng", szLogTitle, "nhËn ®­îc")
+		gf_AddItemEx2({2,1,30340,800,4}, "Wooden Chest", szLogTitle, "nhËn ®­îc")
 		gf_AddItemEx2(tb_golden_faction_tree[nRoute][11], tb_golden_faction_tree[nRoute][10], szLogTitle, "nhËn ®­îc")
 		Say("<color=green>Chñ Phßng M¸y<color>: Chóc mõng c¸c h¹ nhËn ®­îc phÇn th­ëng cÊp "..nLevel.."!",0)		
 		gf_WriteLogEx(szLogTitle, "®æi thµnh c«ng", 1, "nhËn th­ëng theo cÊp "..nLevel)		
@@ -824,7 +824,7 @@ function confirm_confirm_BKL(nLevel)
 		SetTask(336, GetTask(336) - tb_golden_award_BKL[nLevel][7])
 		Msg2Player("B¹n ®· bÞ trõ "..tb_golden_award_BKL[nLevel][7].." ®iÓm s­ m«n.")		
 		--gf_AddItemEx2({2,1,1067,1,1}, "§Þnh Hån Thiªn Th¹ch", szLogTitle, szLogAction, 7*24*60*60)
-		gf_AddItemEx2({0,112,78,1,1}, "L¨ng Ba Vi Bé", szLogTitle, szLogAction)
+		gf_AddItemEx2({0,112,78,1,1}, "Lingbo Microstep", szLogTitle, szLogAction)
 		Say("<color=green>Chñ Phßng M¸y<color>: Chóc mõng c¸c h¹ nhËn ®­îc phÇn th­ëng cÊp "..nLevel.."!",0)		
 		gf_WriteLogEx(szLogTitle, "®æi thµnh c«ng", 1, "6/2013 nhËn th­ëng theo cÊp "..nLevel)		
 	elseif nLevel == 93 then
@@ -858,7 +858,7 @@ function confirm_confirm_BKL(nLevel)
 		SetTask(336, GetTask(336) - tb_golden_award_BKL[nLevel][7])
 		Msg2Player("B¹n ®· bÞ trõ "..tb_golden_award_BKL[nLevel][7].." ®iÓm s­ m«n.")	
 		Pay(nCashPay)			
-		gf_AddItemEx2({0,112,158,1,4}, "L¨ng Ba Vi Bé toµn tËp", szLogTitle, szLogAction)
+		gf_AddItemEx2({0,112,158,1,4}, "Lingbo Microstep Complete Edition", szLogTitle, szLogAction)
 		Say("<color=green>Chñ Phßng M¸y<color>: Chóc mõng c¸c h¹ nhËn ®­îc phÇn th­ëng cÊp "..nLevel.."!",0)		
 		AddGlobalNews("Qu¶ lµ C¸i ThÕ Anh Hµo, "..GetName().." ®· nhËn thµnh c«ng 1 L¨ng Ba Vi Bé Toµn TËp, phÇn th­ëng cÊp 95 L«i Hæ LÖnh")
   		Msg2SubWorld("Qu¶ lµ C¸i ThÕ Anh Hµo, "..GetName().." ®· nhËn thµnh c«ng 1 L¨ng Ba Vi Bé Toµn TËp, phÇn th­ëng cÊp 95 L«i Hæ LÖnh")		
@@ -874,7 +874,7 @@ function confirm_confirm_BKL(nLevel)
 		Msg2Player("B¹n ®· bÞ trõ "..nCash1.." vµng.")		
 		--gf_AddItemEx2({0,112,78,1,1}, "L¨ng Ba Vi Bé", szLogTitle, szLogAction)
 		--gf_AddItemEx2({2,1,1067,1,1}, "§Þnh Hån Thiªn Th¹ch", szLogTitle, szLogAction, 7*24*60*60)
-		gf_AddItemEx2({2,1,30345,1,1}, "ChuyÓn sinh ®¬n", szLogTitle, szLogAction, 60*24*60*60)
+		gf_AddItemEx2({2,1,30345,1,1}, "Rebirth Pill", szLogTitle, szLogAction, 60*24*60*60)
 		Say("<color=green>Chñ Phßng M¸y<color>: Chóc mõng c¸c h¹ nhËn ®­îc phÇn th­ëng cÊp "..nLevel.."!",0)	
 		gf_WriteLogEx(szLogTitle, "®æi thµnh c«ng", 1, "6/2013 nhËn th­ëng theo cÊp "..nLevel)		
 	elseif nLevel == 97 then
@@ -889,7 +889,7 @@ function confirm_confirm_BKL(nLevel)
 		Msg2Player("B¹n ®· bÞ trõ "..nCash1.." vµng.")			
 		--gf_AddItemEx2({0,112,78,1,1}, "L¨ng Ba Vi Bé", szLogTitle, szLogAction)
 		--gf_AddItemEx2(tb_VK_SuMon[nRoute][2][nBody], tb_VK_SuMon[nRoute][1], szLogTitle, "nhËn ®­îc")		
-		gf_AddItemEx2({2,1,30345,1,4}, "ChuyÓn sinh ®¬n", szLogTitle, szLogAction)
+		gf_AddItemEx2({2,1,30345,1,4}, "Rebirth Pill", szLogTitle, szLogAction)
 		Say("<color=green>Chñ Phßng M¸y<color>: Chóc mõng c¸c h¹ nhËn ®­îc phÇn th­ëng cÊp "..nLevel.."!",0)		
 		gf_WriteLogEx(szLogTitle, "®æi thµnh c«ng", 1, "6/2013 nhËn th­ëng theo cÊp "..nLevel)		
 	elseif nLevel == 98 then
@@ -915,7 +915,7 @@ function confirm_confirm_BKL(nLevel)
 		Pay(nCashPay)
 		local nCash1 = tb_golden_award_BKL[nLevel][8]*10000
 		Msg2Player("B¹n ®· bÞ trõ "..nCash1.." vµng.")		
-		gf_AddItemEx2({2,1,30345,1,1}, "ChuyÓn sinh ®¬n", szLogTitle, szLogAction, 60*24*60*60)
+		gf_AddItemEx2({2,1,30345,1,1}, "Rebirth Pill", szLogTitle, szLogAction, 60*24*60*60)
 		Say("<color=green>Chñ Phßng M¸y<color>: Chóc mõng c¸c h¹ nhËn ®­îc phÇn th­ëng cÊp "..nLevel.."!",0)	
 		AddGlobalNews("Qu¶ lµ C¸i ThÕ Anh Hµo, "..GetName().." ®· nhËn thµnh c«ng 1 ChuyÓn Sinh §¬n, phÇn th­ëng cÊp 99 L«i Hæ LÖnh. Qu¸ tr×nh b«n tÈu giang hå b¾t ®Çu")
   		Msg2SubWorld("Qu¶ lµ C¸i ThÕ Anh Hµo, "..GetName().." ®· nhËn thµnh c«ng 1 ChuyÓn Sinh §¬n , phÇn th­ëng cÊp 99 L«i Hæ LÖnh. Qu¸ tr×nh b«n tÈu giang hå b¾t ®Çu")		
@@ -930,10 +930,10 @@ end
 function TraoBiKiepPhaiMoi()
 	local tbBiKipConLon = {
 		[1] = {[1] = {item={{gdp={2,6,169,1}, name = "BÝ kiÕp L«i TÕ"}}}, nRate = 7.15},
-		[2] = {[1] = {item={{gdp={2,6,170,1}, name = "BÝ kiÕp Phong TÕ"}}}, nRate = 7.15},
+		[2] = {[1] = {item={{gdp={2,6,170,1}, name = "Manual of Wind Sacrifice"}}}, nRate = 7.15},
 		[3] = {[1] = {item={{gdp={2,6,171,1}, name = "BÝ kiÕp Thiªn l«i phï"}}}, nRate = 7.15},
-		[4] = {[1] = {item={{gdp={2,6,172,1}, name = "BÝ kiÕp B¨ng Phong QuyÕt"}}}, nRate = 7.15},
-		[5] = {[1] = {item={{gdp={2,6,173,1}, name = "BÝ kiÕp Ngù Phong QuyÕt"}}}, nRate = 7.14},
+		[4] = {[1] = {item={{gdp={2,6,172,1}, name = "Manual of Ice Wind Art"}}}, nRate = 7.15},
+		[5] = {[1] = {item={{gdp={2,6,173,1}, name = "Manual of Wind Control Art"}}}, nRate = 7.14},
 		[6] = {[1] = {item={{gdp={2,6,174,1}, name = "BÝ KiÕp Cuång L«i Phï"}}}, nRate = 7.14},
 		[7] = {[1] = {item={{gdp={2,6,175,1}, name = "BÝ KiÕp D­¬ng Sa QuyÕt"}}}, nRate = 7.14},
 		[8] = {[1] = {item={{gdp={2,6,176,1}, name = "BÝ KiÕp Oanh L«i Phï"}}}, nRate = 7.14},

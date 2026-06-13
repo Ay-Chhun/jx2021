@@ -5,12 +5,12 @@ WB_WORLD_BOSS = {
 	[1] = {"WorldBoss_HL", "§µo Hoa §¶o Chñ Hoµng Long"},
 	[2] = {"WorldBoss_CLBZ", "T©y Vùc Th­¬ng Lang B¸ V­¬ng"},
 	[3] = {"WorldBoss_TJ", "Ngäc S¬n Chi Linh Thiªn Cöu"},
-	[4] = {"WorldBoss_MW", "U Tr¹ch Chi ¶nh Minh Vâ"},
+	[4] = {"WorldBoss_MW", "You Ze Zhi Ying Ming Wu"},
 }
 
 WB_WORLD_BOSS_MAP = {
-	[1] = "§µo Hoa ®¶o",
-	[2] = "Quang Minh ®Ønh",
+	[1] = "Peach Blossom Island",
+	[2] = "Guangming Peak",
 	[3] = "§iÓm Th­¬ng s¬n",
 	[4] = "V©n Méng Tr¹ch",
 }

@@ -35,7 +35,7 @@ function main()
 	end;
 	if bIsTree == 0 then
 		SetNpcScript(npcIdx,"");
-		WriteLog("[Lçi ho¹t ®éng trång c©y Th¸i H­]:NPC:"..npcName.."Lçi files gèc");
+		WriteLog("[Lçi ho¹t ®éng trång c©y Th¸i H­]:NPC:"..npcName.."Original file error");
 		return 0;
 	end;
 	Create_Map_Trigger();
@@ -62,7 +62,7 @@ function main()
 	local selTab = {};
 	if nTreeGrow == 6 then
 		if nTimePassed < TREETYPE[nTreeGrow][3] then
-			Talk(1,"",TREETYPE[nTreeGrow][2].."C©y ph¸t triÓn, kh«ng nªn h¸i sím, sau <color=yellow>"..(TREETYPE[nTreeGrow][3]-nTimePassed).." gi©y<color> h·y h¸i.");
+			Talk(1,"",TREETYPE[nTreeGrow][2].."C©y ph¸t triÓn, kh«ng nªn h¸i sím, sau <color=yellow>"..(TREETYPE[nTreeGrow][3]-nTimePassed).." seconds<color> then harvest.");
 			return 0;
 		end;
 		tinsert(selTab,"H·y mau h¸i ®Ó tr¸nh bÞ c­íp/getfruit");
@@ -91,9 +91,9 @@ function givewater()
 	local MapID,MapX,MapY = GetNpcWorldPos(npcTreeIndex)
 	SetNpcLifeTime(npcTreeIndex,0);
 	SetNpcScript(npcTreeIndex,"");
-	npcTreeIndex = CreateNpc(TREETYPE[nTreeGrow+1][1],GetName().." trång "..TREETYPE[nTreeGrow+1][2],MapID,MapX,MapY);
+	npcTreeIndex = CreateNpc(TREETYPE[nTreeGrow+1][1],GetName().." plant"..TREETYPE[nTreeGrow+1][2],MapID,MapX,MapY);
 	if npcTreeIndex == 0 then
-		WriteLog("[Lçi ho¹t ®éng trång c©y Th¸i H­]:"..GetName().."Lóc t­íi c©y, trÞ quay l¹i hµm sè CreateNpc lµ 0. Tham sè nhËp CreateNpc:"..TREETYPE[nTreeGrow+1][1]..","..GetName().." trång "..TREETYPE[nTreeGrow+1][2]..","..MapID..","..MapX..","..MapY);
+		WriteLog("[Lçi ho¹t ®éng trång c©y Th¸i H­]:"..GetName().."Lóc t­íi c©y, trÞ quay l¹i hµm sè CreateNpc lµ 0. Tham sè nhËp CreateNpc:"..TREETYPE[nTreeGrow+1][1]..","..GetName().." plant"..TREETYPE[nTreeGrow+1][2]..","..MapID..","..MapX..","..MapY);
 	end;
 	SetNpcLifeTime(npcTreeIndex,TREELIFETIME);
 	SetNpcScript(npcTreeIndex,"\\script\\online\\plant\\tree_npc.lua")
@@ -105,32 +105,32 @@ function givewater()
 	if nTreeGrow ==6 then
 		StartTimeGuage("Thu ho¹ch",TREETYPE[nTreeGrow][3]-nTimePassed,0,1)			
 	else
-		StartTimeGuage("T­íi c©y",TREETYPE[nTreeGrow][3]-nTimePassed,0,1)	
+		StartTimeGuage("Water the tree",TREETYPE[nTreeGrow][3]-nTimePassed,0,1)	
 	end
 end;
 
 function getfruit()
 	local tFruitAwardJune2010 = {
-		[1] = {9880, 	30, 		30, 		30,		30, 		{2,1,30164,1}, "Nh·n"},
-		[2] = {30, 		9880, 	30, 		30,	 	30,		{2,1,30165,1}, "Ch«m Ch«m"},
+		[1] = {9880, 	30, 		30, 		30,		30, 		{2,1,30164,1}, "Longan"},
+		[2] = {30, 		9880, 	30, 		30,	 	30,		{2,1,30165,1}, "Rambutan"},
 		[3] = {30, 		30, 		9880, 	30, 		30,		{2,1,30166,1}, "Cam"},
-		[4] = {30, 		30, 		30, 		9880, 	30,		{2,1,30167,1}, "Dõa"},
-		[5] = {30, 		30, 		30, 		30, 		9880,		{2,1,30168,1}, "M¨ng Côt"},
-		[6] = {9880, 		30, 		30, 		30, 		30,	{2,1,30169,1}, "B­ëi"},
-		[7] = {30, 	9880, 		30, 		30,		30, 		{2,1,30170,1}, "D©u"},
-		[8] = {30, 		30, 	9880, 		30,	 	30,		{2,1,30171,1}, "Chuèi"},
-		[9] = {30, 		30, 		30, 	9880, 		30,		{2,1,30172,1}, "Xoµi"},
-		[10] = {30, 		30, 		30, 		30, 	9880,			{2,1,30173,1}, "§µo"},
-		[11] = {9880, 		30, 		30, 		30, 		30,	{2,1,30174,1}, "MËn"},
-		[12] = {30, 	9880, 		30, 		30,		30, 		{2,1,30175,1}, "V¶i"},
-		[13] = {30, 		30, 	9880, 		30,	 	30,		{2,1,30176,1}, "T¸o"},
-		[14] = {30, 		30, 		30, 	9880, 		30,		{2,1,30177,1}, "B¬"},
-		[15] = {30, 		30, 		30, 		30, 	9880,			{2,1,30178,1}, "§u §ñ"},
-		[16] = {9880, 		30, 		30, 		30, 		30,	{2,1,30179,1}, "M·ng CÇu"},
-		[17] = {30, 	9880, 		30, 		30,		30, 		{2,1,30180,1}, "Khãm"},
-		[18] = {30, 		30, 	9880, 		30,	 	30,		{2,1,30181,1}, "Lª"},
-		[19] = {30, 		30, 		30, 	9880, 		30,		{2,1,30182,1}, "Bßn bon"},
-		[20] = {30, 		30, 		30, 		9880, 	30,		{2,1,30183,1}, "KhÕ"},
+		[4] = {30, 		30, 		30, 		9880, 	30,		{2,1,30167,1}, "Coconut"},
+		[5] = {30, 		30, 		30, 		30, 		9880,		{2,1,30168,1}, "Mangosteen"},
+		[6] = {9880, 		30, 		30, 		30, 		30,	{2,1,30169,1}, "Pomelo"},
+		[7] = {30, 	9880, 		30, 		30,		30, 		{2,1,30170,1}, "Strawberry"},
+		[8] = {30, 		30, 	9880, 		30,	 	30,		{2,1,30171,1}, "Banana"},
+		[9] = {30, 		30, 		30, 	9880, 		30,		{2,1,30172,1}, "Mango"},
+		[10] = {30, 		30, 		30, 		30, 	9880,			{2,1,30173,1}, "Peach"},
+		[11] = {9880, 		30, 		30, 		30, 		30,	{2,1,30174,1}, "Plum"},
+		[12] = {30, 	9880, 		30, 		30,		30, 		{2,1,30175,1}, "Lychee"},
+		[13] = {30, 		30, 	9880, 		30,	 	30,		{2,1,30176,1}, "Apple"},
+		[14] = {30, 		30, 		30, 	9880, 		30,		{2,1,30177,1}, "Avocado"},
+		[15] = {30, 		30, 		30, 		30, 	9880,			{2,1,30178,1}, "Papaya"},
+		[16] = {9880, 		30, 		30, 		30, 		30,	{2,1,30179,1}, "Soursop"},
+		[17] = {30, 	9880, 		30, 		30,		30, 		{2,1,30180,1}, "Pineapple"},
+		[18] = {30, 		30, 	9880, 		30,	 	30,		{2,1,30181,1}, "Li"},
+		[19] = {30, 		30, 		30, 	9880, 		30,		{2,1,30182,1}, "Langsat"},
+		[20] = {30, 		30, 		30, 		9880, 	30,		{2,1,30183,1}, "Star Fruit"},
 	}
 	if GetTask(TASK_TREEGROW) == 6 then
 		local npcTreeIndex = GetTargetNpc();
@@ -216,7 +216,7 @@ function getfruit()
 		if nRandomNum <= 5 then
 			if AddItem(0,107,155,1) == 1 then
 				Msg2Player("B¹n nhËn ®­îc 1 quyÓn ".."Ngò Hµnh MËt tÞch");
-				WriteLog("[Ho¹t ®éng trång c©y Th¸i H­]:"..GetName().."Thu ®­îc 1 ".."Ngò Hµnh MËt tÞch");
+				WriteLog("[Ho¹t ®éng trång c©y Th¸i H­]:"..GetName().."Obtained 1".."Ngò Hµnh MËt tÞch");
 			end;		
 		end;
 		
@@ -275,7 +275,7 @@ function Give_Fruit_Award(npcTreeIndex)
 	for i = 1, 8 do
 		nAddX = random(-5, 5)
 		nAddY = random(-5, 5)
-		nTargetNpc = CreateNpc("Tói cao thñ", "Tói tr¸i c©y", nMapID, nWx + nAddX, nWy + nAddY)
+		nTargetNpc = CreateNpc("Tói cao thñ", "Fruit Bag", nMapID, nWx + nAddX, nWy + nAddY)
 		SetNpcLifeTime(nTargetNpc, 5*60)
 		SetNpcScript(nTargetNpc, "\\script\\online\\plant\\fruit_baoguo.lua")
 	end
@@ -287,9 +287,9 @@ function give_viet20090607_miben()
 		return
 	end
 	if tonumber(date("%y%m%d%H")) >= 09061900 and tonumber(date("%y%m%d%H")) < 09071924 then
-		gf_SetLogCaption("Truy t×m tr­êng sinh phæ");
-		gf_AddItemEx({2, 1, 30088, 100}, "BÝ Phæ Cò N¸t");
-		WriteLogEx("Hoat dong thang 6","B¸t Nh·",100,"BÝ Phæ Cò N¸t");
+		gf_SetLogCaption("Search for the Longevity Manual");
+		gf_AddItemEx({2, 1, 30088, 100}, "Worn Old Manual");
+		WriteLogEx("Hoat dong thang 6","Prajna",100,"Worn Old Manual");
 		gf_SetLogCaption("");
 	end
 end
@@ -298,7 +298,7 @@ end
 function give_viet200908_shuiguodai()
 	if tonumber(date("%y%m%d")) >= 090807 and tonumber(date("%y%m%d")) < 090907 then
 		gf_SetLogCaption("[Hoat dong thang 8]");
-		nRet = gf_AddItemEx({2, 1, 30097, 100}, "Tói Tr¸i C©y");
+		nRet = gf_AddItemEx({2, 1, 30097, 100}, "Bag of Fruit");
 		if nRet == 1 then
 			WriteLogEx("Hoat dong thang 8","Nhan tui trai cay",100,"Trong cay bat nha");
 		end
@@ -317,7 +317,7 @@ function give_viet200908_banruozhengshu()
 		nCount = 3;
 	end
 	for i = 1, nCount do
-		local nRetCode, nIndex = gf_AddItemEx({2, 1, 30114, 1}, "B¸t Nh· Chøng Th­");
+		local nRetCode, nIndex = gf_AddItemEx({2, 1, 30114, 1}, "Prajna Certificate");
 		if nRetCode == 1 then
 			SetItemExpireTime(nIndex, 15 * 24 * 3600);
 		end
@@ -329,16 +329,16 @@ end
 function give_viet200909_baimianbao()
 	if tonumber(date("%y%m%d")) >= 090918 and tonumber(date("%y%m%d")) < 091026 then
 		gf_SetLogCaption("[Hoat dong trung thu 2009]");
-		gf_AddItemEx({2, 1, 30106, 100}, "Bét M×");
-		WriteLogEx("Hoat dong trung thu","B¸t Nh· Lín",100,"Bét M×");
+		gf_AddItemEx({2, 1, 30106, 100}, "Flour");
+		WriteLogEx("Hoat dong trung thu","Large Prajna",100,"Flour");
 		gf_SetLogCaption("");
 	end
 end
 
 function give_viet200911_hoacuc()
 	if tonumber(date("%y%m%d")) >= 091106 and tonumber(date("%y%m%d")) <= 091206 then		
-		gf_AddItemEx({2, 1, 30118, 40}, "Hoa Cóc");
-		WriteLogEx("Hoat dong thang 11","B¸t Nh· Lín",40,"Hoa Cóc");		
+		gf_AddItemEx({2, 1, 30118, 40}, "Chrysanthemum");
+		WriteLogEx("Hoat dong thang 11","Large Prajna",40,"Chrysanthemum");		
 	end
 end
 
@@ -346,7 +346,7 @@ end
 function give_viet200912_shengdantangguo()
 	if tonumber(date("%y%m%d")) >= 091218 and tonumber(date("%y%m%d")) <= 100117 then
 	    local szFullLog = VIET_0912_STR_EVENT_LOG_TITLE
-	    gf_AddItemEx2({2, 1, 30138, 80}, "C©y KÑo Gi¸ng Sinh", szFullLog, 0, 1, 10, 1,"B¸t Nh· lín");
+	    gf_AddItemEx2({2, 1, 30138, 80}, "Christmas Candy Cane Tree", szFullLog, 0, 1, 10, 1,"large Prajna");
 	end
 end
 
@@ -363,6 +363,6 @@ function fruitcheckserver()
 end
 function give_gongcheng_fangshou_award()
 	if GetWorldPos() == 301 and GetTime() - GetTask(3344) > 14*24*3600 then
-    gf_AddItemEx2({2, 1, 30097, 3}, "Tói Tr¸i C©y", "C©y B¸t Nh· Lín", "C«ng Thµnh §¹i ChiÕn", 0, 1);
+    gf_AddItemEx2({2, 1, 30097, 3}, "Bag of Fruit", "Large Prajna Tree", "C«ng Thµnh §¹i ChiÕn", 0, 1);
   end
 end

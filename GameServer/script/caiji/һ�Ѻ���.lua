@@ -54,7 +54,7 @@ function main()
 	-- Èç¹ûÍæ¼Ò¿ÉÒÔÍÚÕâ¸öÒ©Æ·£¬½øÈëÏÂÃæÖ´ĞĞ¶Î
 	if (nCanDig == 1 and nCanDigTool == 1) then
 		if (DoFireworks(890, 1) == 1) then
-			Msg2Player("Thu thËp......");
+			Msg2Player("Collecting......");
 			CastState("state_fetter", 1, 5 * 18)
 			ProgressSlot(5 * 18)
 			
@@ -102,7 +102,7 @@ function OnProgressCallback()
 	if (nChoice == 1) then
 		Say("Hµn thiÕt nµy rÊt tèt, b¹n t×m ®­îc "..nSelCount.."Hµn thiÕt!", 0)
 	elseif (nChoice == 2) then
-		Say("Tuy kh«ng t×m ®­îc kho¸ng th¹ch nh­ng ng­¬i ®· ph¸t hiÖn ra"..nSelCount.." Tu La phæ!", 0)
+		Say("Tuy kh«ng t×m ®­îc kho¸ng th¹ch nh­ng ng­¬i ®· ph¸t hiÖn ra"..nSelCount.." Asura manual!", 0)
 	else
 		Say("MÊy tÊm da nµy ®· r¸ch n¸t, ng­¬i vÉn ch­a t×m ®­îc ®å cÇn dïng!", 0)
 	end

@@ -20,7 +20,7 @@ function OnUse(nIdx)
 		"Kü n¨ng h¸i thuèc/#learn_dig_skill("..nScrollIndex..", 4)",
 		"Kü n¨ng khai kho¸ng/#learn_dig_skill("..nScrollIndex..", 5)",
 		"Kü n¨ng kÐo t¬/#learn_dig_skill("..nScrollIndex..", 6)",
-		"TËp linh/#learn_dig_skill("..nScrollIndex..", 7)",
+		"Spirit Gathering/#learn_dig_skill("..nScrollIndex..", 7)",
 		"T¹m thêi ch­a cÇn!/cancel_dialog")
 end;
 

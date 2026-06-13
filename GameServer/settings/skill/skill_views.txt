@@ -5,7 +5,7 @@ Ngñ	0
 Tª liÖt	0					
 §Þnh th©n	0					
 Tróng ®éc	0					
-Gi¶m tèc	0					
+Reduce speed	0					
 Lµm chËm	0					
 Minh S¸t Thu Hµo	66					
 Kim Chung Tr¸o	26	165				
@@ -19,8 +19,8 @@ BÊt §éng Minh V­¬ng Chó	55	208	209
 T©m Nh·n	60	212				
 T«i §éc BÝ ThuËt	68					
 Hµm Sa X¹ ¶nh	71	344	345			
-Quan ¢m QuyÕt	219	226	229	30205		
-§é Nguyªn QuyÕt	79	221				
+Guanyin Art	219	226	229	30205		
+Origin Crossing Art	79	221				
 PhËt Quang Phæ ChiÕu	80					
 Liªn Hoa T©m Kinh	81	222				
 L­u Thñy QuyÕt	83	225	1338	2652	2689	
@@ -31,8 +31,8 @@ Th«ng Tý QuyÒn	105	234
 Thiªn C©n H¹p						
 Táa HÇu CÇm N· Thñ	108	237				
 Tiªu Dao Du						
-Tóy §iÖp	111	240	241	30214	30215	30216
-Tóy QuyÒn	112					
+Drunken Butterfly	111	240	241	30214	30215	30216
+Drunken Fist	112					
 Nª Thu C«ng	118	244				
 Th©u Thiªn Ho¸n NhËt	122	307	308			
 V« Ng· T©m Ph¸p	132	256				
@@ -62,15 +62,15 @@ D­¬ng Gia Tôc MÖnh QuyÕt	743	763	764
 D­¬ng Gia Anh Hïng KhÝ	728					
 D­¬ng Gia ChiÕn §Þnh QuyÕt	725	750				
 T©m Cæ	363					
-§éc Cæ	354	388	389	390		
+Poison Gu	354	388	389	390		
 HuyÔn Cæ	362					
 Linh cæ	436	1015	1452			
 Ma cæ						
-Thi Cæ	358	394	395	396		
-H­¬ng Cæ	357					
+Corpse Gu	358	394	395	396		
+Fragrance Gu	357					
 T©m Cæ	360	397	398	399		
-HuyÕt Cæ	356	391	392	393		
-Yªu Cæ	359					
+Blood Gu	356	391	392	393		
+Demon Gu	359					
 Ba S¬n D¹ Vò	867					
 L«i TÕ	1018					
 Phong TÕ	1019					
@@ -86,7 +86,7 @@ Thiªn KiÕp PhÇn	1058	1072
 Ng­ng Háa BÝch	1059	1073				
 KhÝ Hãa Du Long						
 B¹o S¸t K×nh	1065	1079				
-Cµn Kh«n §¹i Na Di	1066					
+Heaven and Earth Great Shift	1066					
 Håi Phong LiÖt DiÖm	1202	1205	1296	1297	1456	2729
 Quang Minh Bót Ph¸p	1084	1097				
 Kim Táa TrËn	1098	1113	1119	1124		
@@ -99,7 +99,7 @@ NghiÖp Háa TrËn	1106	1116	1122	1127
 Thæ Lao TrËn	1107	1117	1123	1128		
 Ngò Linh Quy Nguyªn	1095	1110				
 Quang Minh Ngò Hµnh TrËn	1096					
-§o¹n Cèt Tr¶o						
+Bone-Severing Claw						
 Hñ Th­¬ng Ên	1133	1146				
 B¨ng HuyÕt Ên	1135	1148				
 HÊp HuyÕt Ên						
@@ -110,10 +110,10 @@ ThÝ C¶nh Tr¶o
 Hµn B¨ng HuyÕt Ch­íng	1141	1154				
 Hãa HuyÕt Ên						
 VÉn Th­¬ng Ên	1143	1156				
-Hµn B¨ng Miªn Ch­ëng	1213					
+Frost Cotton Palm	1213					
 Hµn B¨ng Ng­ng HuyÕt Ên	1204	1207	1302	1303	1460	2731
-Khëi Vò	1166	1183				
-Linh Miªu VËn	1167	1177	1184			
+Rising Dance	1166	1183				
+Spirit Cat Fortune	1167	1177	1184			
 MÞ Hoa	1169	1178	1185			
 §o¹n V©n QuyÕt 						
 Thu NguyÖt Phó	1171	1179	1187			
@@ -122,7 +122,7 @@ Thiªn Háa DiÔm D­¬ng	1174	1181	1189	1190
 Méng Xµ	1176	1182	1192	1193		
 Loan Phông Cöu Thiªn	1196					
 Tóy Méng Ng©m	1194	1195	1305	1306	1462	2732
-L¹c Hoa QuyÕt	1232	1233				
+Falling Flower Art	1232	1233				
 §µo Hoa Ch­íng	1234	1235				
 Táa T©m QuyÕt	1236	1237				
 Linh §éng QuyÕt						
@@ -174,7 +174,7 @@ Ch­ Ph¸p Kh«ng T­¬ng	2361
 §¹i Bi Chó	2368					
 Du Long Phi Bé	2378					
 Nghªnh H­¬ng	2408					
-Häa ¶nh	2409					
+Painting Shadow	2409					
 C­êng Cung	2419					
 V·n NguyÖt Thiªn Lang TrËn	2417					
 Ph¸ TrËn ThÕ	2425					
@@ -188,7 +188,7 @@ Hån DiÖt	2454
 TÝch Thi KhÝ	2430
 §Êu PhËt ChiÕn Ph¸p	23					
 Ch©n Vâ §Êu KhÝ	2628					
-Tµn ¶nh QuyÕt	156	2620				
+Fading Shadow Art	156	2620				
 Kim Táa TrËn Phô Kú ChØ LÖnh	1261					
 Bµn Méc TrËn Phô Kú ChØ LÖnh	1263					
 HuyÒn Thñy TrËn Phô Kú ChØ LÖnh	1262					

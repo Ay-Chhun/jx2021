@@ -136,8 +136,8 @@ item_bg_table = {
     [1] = {100, 1367, 3228, "Tr­íc Ma Tæ T­îng TuyÒn Ch©u phñ"},
     [2] = {203, 1461, 3134, "Gi÷a c©y cÇu gç gÇn Thñy xa ë T©y BiÖn Kinh"},
     [3] = {303, 1704, 3009, "Tr­íc c¸i chu«ng nµo ®ã sau nói Nga My"},
-    [4] = {312, 1765, 3059, "Cuèi cÇu d©y gÇn Vâ §ang"},
-    [5] = {202, 1396, 2798, "D­íi th¸c ë H¹nh Hoa Th«n"},
+    [4] = {312, 1765, 3059, "At the end of the rope bridge near Wudang"},
+    [5] = {202, 1396, 2798, "Beneath the waterfall at Apricot Blossom Village"},
     [6] = {327, 1451, 2922, "Chİnh gi÷a tr¹i ¤ M«ng bé"},
     [7] = {326, 1540, 2992, "Chİnh gi÷a tÊm th¶m ë Mé TuyÕt s¬n trang"},
     [8] = {310, 1394, 2988, "D­íi cæng lÇu KiÕm M«n Quan"}
@@ -151,7 +151,7 @@ function GivePlayerAward_Bg(index)
     local nY2 = item_bg_table[index][3];
     local nDist = DistanceBetweenPoints(nMapid1, nX1, nY1, nMapid2, nX2, nY2);
     if nDist >= 0 and nDist <= 15 then
-    	Say("<color=green>¢m thanh thÇn bİ<color>: Tr­íc khi khai quËt kho b¸u xem <color=yellow>®ñ søc lùc vµ kho¶ng trèng<color> ch­a! Muèn tiÕp tôc kh«ng?",2,"TiÕp tôc!/#GiveAward("..index..")", "Ng­ng!/empty_function");
+    	Say("<color=green>¢m thanh thÇn bİ<color>: Tr­íc khi khai quËt kho b¸u xem <color=yellow>®ñ søc lùc vµ kho¶ng trèng<color> ch­a! Muèn tiÕp tôc kh«ng?",2,"Continue!/#GiveAward("..index..")", "Stop!/empty_function");
     else
         Msg2Player("Trªn tranh b¸t qu¸i Èn hiÖn vŞ trİ kho b¸u"..item_bg_table[index][4]..", h×nh nh­ kh«ng ph¶i n¬i ®©y!");
     end;

@@ -82,9 +82,9 @@ armament_table = {
 life_item_table = {
 	{"Cuèc Céng C«ng", 0, 200, 23},
 	{"L«i ThÇn ®ao", 0, 200, 24},
-	{"Cuèc Viªm §Õ", 0, 200, 25},
+	{"Hoe of Emperor Yan", 0, 200, 25},
 	{"Bµn Cæ phñ", 0, 200, 26},
-	{"Chøc N÷ thoa", 0, 200, 27},
+	{"Weaving Maiden's hairpin", 0, 200, 27},
 	{"Cuèc ThÇn N«ng", 0, 200, 28}
 };
 
@@ -267,7 +267,7 @@ boss_data_table = {
         ["index"] = 0,              --boss index
     },
     [4] = {
-        ["name"] = "Vâ s­ bé l¹c Ngao Hung",  --boss Ãû×Ö
+        ["name"] = "Master of the Ngao Hung Tribe",  --boss Ãû×Ö
         ["template"] = "Vâ s­ Ngao §Þch",  --boss Ä£°å
         ["script"] = "",            --boss ½Å±¾
         ["index"] = 0,              --boss index

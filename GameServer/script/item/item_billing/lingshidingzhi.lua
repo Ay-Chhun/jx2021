@@ -26,10 +26,10 @@ function choose_lingshi(nPage)
 		tinsert(strtab,tLingshiName[nPage*nPageNum+i].."/#choose_weizhi("..(nPage*nPageNum+i)..")");
 	end
 	if nPage ~= 0 then
-		tinsert(strtab,"Trang tr­íc/#choose_lingshi("..(nPage-1)..")");
+		tinsert(strtab,"Previous page/#choose_lingshi("..(nPage-1)..")");
 	end
 	if nRemaidNum > nPageNum then
-		tinsert(strtab,"Trang kÕ/#choose_lingshi("..(nPage+1)..")");
+		tinsert(strtab,"Next page/#choose_lingshi("..(nPage+1)..")");
 	end
 	tinsert(strtab,"Bá ®i, t¹m thêi kh«ng ®æi/nothing");
 	Say("<color=green>Hoan linh sa<color>: xin chän thuéc tÝnh Linh Th¹ch cÊp 6 b¹n muèn ®æi",
@@ -73,7 +73,7 @@ function choose_weizhi(nType)
 			tinsert(strtab,"Ngo¹i trang/#give_lingshi("..nType..","..i..")");
 		end
 		if tonumber(tLingshiLv[nMinLv][nType-nTotal][4][i]) == 3 then
-			tinsert(strtab,"H¹ y/#give_lingshi("..nType..","..i..")");
+			tinsert(strtab,"Xia Yi/#give_lingshi("..nType..","..i..")");
 		end
 		if tonumber(tLingshiLv[nMinLv][nType-nTotal][4][i]) == 2 then
 			tinsert(strtab,"Vò khÝ/#give_lingshi("..nType..","..i..")");

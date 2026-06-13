@@ -17,7 +17,7 @@ function main()
 	local tSay = {
 		"So tµi B¹n §ång Hµnh/pet_fight",
 		"RÌn luyÖn B¹n §ång Hµnh/pet_train",
-		"KÕt thóc ®èi tho¹i/gf_DoNothing",	
+		"End dialogue/gf_DoNothing",	
 	}
 	Say("T¹i ®©y diÔn ra thi ®Êu B¹n §ång Hµnh. PhÝ ®¨ng ký thi ®Êu lµ 60 vµng 1 lÇn. Chñ nh©n cña B¹n §ång Hµnh chiÕn th¾ng sÏ nhËn ®­îc 4 T¸o. NÕu so tµi hßa sÏ ®­îc 2 T¸o.", getn(tSay), tSay)
 end
@@ -31,7 +31,7 @@ function pet_fight()
 	local tSay = {
 		"B¾t ®Çu so tµi B¹n §ång Hµnh/pet_fight_start",
 		"NhËn phÇn th­ëng chiÕn th¾ng/pet_fight_reward",
-		"KÕt thóc ®èi tho¹i/gf_DoNothing",	
+		"End dialogue/gf_DoNothing",	
 	}
 	Say("T¹i ®©y diÔn ra thi ®Êu B¹n §ång Hµnh. PhÝ ®¨ng ký thi ®Êu lµ 60 vµng 1 lÇn. Chñ nh©n cña B¹n §ång Hµnh chiÕn th¾ng sÏ nhËn ®­îc 3 T¸o. Thêi gian thi ®Êu lµ 10 phót.", getn(tSay), tSay)
 end
@@ -51,9 +51,9 @@ function pet_fight_reward()
 	end	
 	SetTask(TASK_PET_FIGHT,0)
 	if nTaskVal == 1 then
-		gf_AddItemEx2({2, 1, 30176, 4},"T¸o","Ban Dong Hanh","so tµi th¾ng",0,1)
+		gf_AddItemEx2({2, 1, 30176, 4},"Apple","Ban Dong Hanh","duel won",0,1)
 	elseif nTaskVal == 2 then
-		gf_AddItemEx2({2, 1, 30176, 2},"T¸o","Ban Dong Hanh","so tµi hßa",0,1)
+		gf_AddItemEx2({2, 1, 30176, 2},"Apple","Ban Dong Hanh","duel drawn",0,1)
 	end
 end
 

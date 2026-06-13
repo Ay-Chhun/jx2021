@@ -5,7 +5,7 @@
 Include("\\script\\lib\\globalfunctions.lua");
 
 tb_GoldBoss_Award = {
-	{"Tu Ch©n YÕu QuyÕt", 281, {2, 0, 554, 1}, 15*24*3600},
+	{"Xiu Zhen Yao Jue", 281, {2, 0, 554, 1}, 15*24*3600},
 	{"TiÓu Nh©n S©m", 300, {2, 0, 552, 1}, 15*24*3600},
 	{"ThÇn N«ng §¬n", 300, {2, 1, 343, 1}, 15*24*3600},
 	{"Tr¸i Tim Phï Thñy", 300, {2, 1, 30126, 1}, 0},

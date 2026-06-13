@@ -69,8 +69,8 @@ SLYMG_LEVEL_BOSS2 = {"baihu2_boss", "Long Hæ §­êng hé gi¸o sø", 1679, 3145};
 SLYMG_LEVEL_BOSS3 = {"baihu3_boss", "Tiªu NhiÔm NguyÖt Thiªn ¢m Gi¸o", 1679, 3145};
 
 SLYMG_TRANS_NPC = {
-	[7112] = {"Xa phu", "Ng­êi truyÒn tèng ¢m §­êng"},
-	[7113] = {"Xa phu", "Ng­êi truyÒn tèng ¢m §­êng"},
+	[7112] = {"Xa phu", "Yin Hall Teleporter"},
+	[7113] = {"Xa phu", "Yin Hall Teleporter"},
 	[7114] = {"Xa phu", "Ng­êi truyÒn tèng D­¬ng §­êng"},
 	[7115] = {"Xa phu", "Ng­êi truyÒn tèng D­¬ng §­êng"},
 	[7116] = {"Xa phu", "Ng­êi truyÒn tèng tÇng 3"},
@@ -294,8 +294,8 @@ function mg_CreateMonster()
 		{1711, 3122},
 	};
 	local tNpc = {
-		{"baihu1_footman", "Mao TÆc lo¹n nhËp"},
-		{"baihu2_footman", "Long Hæ §­êng C¬ Quan Thó"},
+		{"baihu1_footman", "Maozei Intruders"},
+		{"baihu2_footman", "Longhu Hall Mechanism Beast"},
 		{"baihu3_footman", "Hé VÖ Tr­ëng L·o"},	
 	}
 	local tMaps = {SLYMG_LEVEL_MAP1, SLYMG_LEVEL_MAP2, SLYMG_LEVEL_MAP3};
@@ -366,7 +366,7 @@ function mg_BgStory()
 	local tbSay = {};
 	tbSay.msg = format("<color=gold>%s<color>:", GetNpcName(GetTargetNpc()))..tbBody;
 	tbSay.sel = {
-		{"Ra khái","nothing"},
+		{"Exit","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -376,7 +376,7 @@ function mg_TimeInfo()
 	local tbSay = {};
 	tbSay.msg = format("<color=gold>%s<color>:", GetNpcName(GetTargetNpc()))..tbBody;
 	tbSay.sel = {
-		{"Ra khái","nothing"},
+		{"Exit","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -386,7 +386,7 @@ function mg_FunctionInfo()
 	local tbSay = {};
 	tbSay.msg = format("<color=gold>%s<color>:", GetNpcName(GetTargetNpc()))..tbBody;
 	tbSay.sel = {
-		{"Ra khái","nothing"},
+		{"Exit","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -416,7 +416,7 @@ function mg_MonsterDropItem()
 	end
 	if t[4] >= random(100) then
 		gf_SetTaskByte(t[1], t[2], nCount + 1);
-		gf_AddItemEx2({2, 1, 30923, t[5]}, "Thiªn ¢m MËt B¶o", "Long Hæ §­êng", "PhÇn th­ëng giÕt qu¸i nhá", 0, 1);
+		gf_AddItemEx2({2, 1, 30923, t[5]}, "Thiªn ¢m MËt B¶o", "Longhu Hall", "PhÇn th­ëng giÕt qu¸i nhá", 0, 1);
 	end
 end
 

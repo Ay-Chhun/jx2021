@@ -8,7 +8,7 @@ function OnUse(nItemIdx)
 	elseif nZhanGong > 0 then
 		sCampName = "T鑞g";
 	else
-		sCampName = "Trung l藀";
+		sCampName = "Neutral";
 	end; 
 	local selTab = {
 				"Й th鑞g_T鑞g/#change_camp(1,"..nItemIdx..")",
@@ -30,7 +30,7 @@ function change_camp(nCamp,nItemIdx)
 	elseif (nZhanGong > 0) then
 		sCampName = "T鑞g"
 	else
-		sCampName = "Trung l藀"
+		sCampName = "Neutral"
 	end
 	
 	if abs(nZhanGong) >= 50000 then	--如果当前军功绝对值大于等于50000

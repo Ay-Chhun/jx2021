@@ -12,7 +12,7 @@ function OnUse(nItem)
 		format("TiÖm Háa Phông Nguyªn So¸i/#show_equip_shop(%d)", tShop[nSex][2]),
 		format("TiÖm Trang Søc T­íng Qu©n Háa Phông/#show_equip_shop(%d)", tShop[nSex][3]),
 		format("TiÖm Trang Søc Háa Phông Nguyªn So¸i/#show_equip_shop(%d)", tShop[nSex][4]),
-		"\n rót lui/nothing",
+		"\n withdraw/nothing",
 	}
 	Say("H·y chän tiÖm ®Ó ®æi:", getn(tSay), tSay);
 end

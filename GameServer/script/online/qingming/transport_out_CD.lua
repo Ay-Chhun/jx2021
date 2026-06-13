@@ -21,12 +21,12 @@ task_reel_table = {
 	--ÈÎÎñÀàĞÍ(£¨1¡¢ÎªÉ±¹Ö£»2ÎªÊÕ¼¯£©-Íê³É±êÖ¾-¹ÖÎïÃû³Æ-¹ÖÎïÊıÁ¿-½±Àø°Ù·Ö¼¸ÂÊ-½±Àø±¶Êı-Ëæ»ú¼ÀÆ·ÊıÁ¿--ËµÃ÷
 	{1,"C«n ®å",1205,5,10,900,""},
 	--ÈÎÎñÀàĞÍ-ÊÕ¼¯ÎïÆ·ÖÖÀà-ÈÎÎñ½±Àø°Ù·Ö¼¸ÂÊ-ÈÎÎñ½±Àø±¶Êı-Ëæ»ú¼ÀÆ·Êı-ÊÕ¼¯µÄÎïÆ·Ãû³Æ-ÊÕ¼¯µÄÎïÆ·´óÀà-¸±Àà-Ğ¡Àà-ÊıÁ¿--ËµÃ÷
-	{2,1,10,5,2,"Hæ vÜ",2,1,19,20,""},
-	{1,"XÊu xa",1206,16,3,901,""},
-	{2,2,20,2.5,2,"Linh Chu t¬",2,2,54,10,"Da gÊu",2,2,20,10,""},
-	{2,2,30,1.7,2,"BÇu r­îu da dª",2,1,60,10,"Kim Thoa",2,1,41,10,""},
-	{2,2,40,1.25,2,"Thiªn Lang y",0,100,15,1,"Minh Quang gi¸p",0,100,51,1,""},
-	{2,2,50,1,2,"Gi¸p x¸c phiÕn",2,1,177,10,"Khª S¬n chİ",2,1,98,10,""},
+	{2,1,10,5,2,"Tiger Tail",2,1,19,20,""},
+	{1,"Vile",1206,16,3,901,""},
+	{2,2,20,2.5,2,"Spirit Pearl Silk",2,2,54,10,"Da gÊu",2,2,20,10,""},
+	{2,2,30,1.7,2,"Goatskin Wine Gourd",2,1,60,10,"Kim Thoa",2,1,41,10,""},
+	{2,2,40,1.25,2,"Thiªn Lang y",0,100,15,1,"Mingguang Armor",0,100,51,1,""},
+	{2,2,50,1,2,"Gi¸p x¸c phiÕn",2,1,177,10,"Khe Son Mark",2,1,98,10,""},
 	{1,"Xi Háa tr­ëng l·o",1207,65,0.75,902,""},
 	{2,2,80,0.65,2,"HuyÒn thiÕt Träng KiÕm",0,2,26,1,"Ph¸ Thiªn kİch",0,6,107,1,""},
 	{1,"Tiªu Tiªn Tö",1208,100,0.5,903,""}
@@ -38,20 +38,20 @@ function main()
 	local selTab = {}
 	if task_diff == nil or task_diff == 0 then
 		selTab = {
-				"Xin ®­a ta vÒ!/#gohome(3)",
+				"Please take me home!/#gohome(3)",
 				"T×m hiÓu ho¹t ®éng TiÕt Thanh Minh./tomb_sweep_2007_inf",
-				"MÖt qu¸! Cho ngåi nghØ chót ®·!/end_dialog",
+				"So tired! Let me sit and rest a bit!/end_dialog",
 				}
 	else
 		selTab = {
-				"Xin ®­a ta vÒ!/#gohome(3)",
+				"Please take me home!/#gohome(3)",
 				"NhËn phÇn th­ëng./get_teel_task_prize",
 				"Hñy nhiÖm vô./teel_task_release",
 				"T×m hiÓu ho¹t ®éng TiÕt Thanh Minh./tomb_sweep_2007_inf",
-				"MÖt qu¸! Cho ngåi nghØ chót ®·!/end_dialog",
+				"So tired! Let me sit and rest a bit!/end_dialog",
 				}
 	end
-	Say("§a t¹"..Zgc_pub_sex_name().."®Õn b¸i tÕ mé chñ nh©n, cã cÇn tiÓu nh©n ®­a ngµi vÒ kh«ng?",getn(selTab),selTab);
+	Say("Thank you"..Zgc_pub_sex_name().."®Õn b¸i tÕ mé chñ nh©n, cã cÇn tiÓu nh©n ®­a ngµi vÒ kh«ng?",getn(selTab),selTab);
 end
 --*******************************´«»ØÈı´óÖ÷³Ç*****************************
 function gohome(MapIndex)
@@ -61,7 +61,7 @@ end
 function get_teel_task_prize()
 	--ÔÚ»î¶¯ÆÚ¼äÓĞĞ§
 	if tomb_sweep_2007_date_chk() ~= 1 then				
-		Talk(1,"","TiÕt Thanh Minh ®· qua"..Zgc_pub_sex_name().."NÕu cã lßng n¨m sau nhí ®Õn cóng b¸i!")
+		Talk(1,"","The Qingming Festival has passed"..Zgc_pub_sex_name().."If you wish, remember to come pay respects next year!")
 		return
 	end
 	--Íæ¼Ò¸ºÖØ¼ì²â
@@ -89,7 +89,7 @@ function get_teel_task_prize()
 	end
 	if task_reel_table[task_diff][1] == 1 then			--É±¹ÖÈÎÎñ
 		if GetTask(tomb_sweep_2007_task_reel_step) ~= 1 then
-			Talk(1,"","<color=green>Hiªn gia nh©n<color>:"..Zgc_pub_sex_name().."kh«ng ®­îc nãi bËy tr­íc mé tiªn nh©n, lµm xong nhiÖm vô míi ®Õn ®©y!")
+			Talk(1,"","<color=green>Mr. Xian<color>:"..Zgc_pub_sex_name().."kh«ng ®­îc nãi bËy tr­íc mé tiªn nh©n, lµm xong nhiÖm vô míi ®Õn ®©y!")
 			return
 		end
 	else
@@ -107,7 +107,7 @@ function get_teel_task_prize()
 					return
 				--ÊÕ×°±¸Ê±ÎªÁË·ÀÖ¹ÊÕ´í£¬¶àÓÚÊÕµÄ¼şÊıÒ»ÂÉ²»ÊÕ¡£
 				elseif GetItemCount(task_reel_table[task_diff][7+add_num],task_reel_table[task_diff][8+add_num],task_reel_table[task_diff][9+add_num]) > task_reel_table[task_diff][10+add_num] then
-					Talk(1,"","Ng­¬i mang"..task_reel_table[task_diff][6+add_num].."d­ ra <color=yellow>1<color> c¸i, l·o phu kh«ng thÓ nhËn.")
+					Talk(1,"","What you carry"..task_reel_table[task_diff][6+add_num].."d­ ra <color=yellow>1<color> c¸i, l·o phu kh«ng thÓ nhËn.")
 					return
 				end
 			end
@@ -188,7 +188,7 @@ function teel_task_release()
 	elseif task_diff >= 1 and task_diff <= 10 then
 		Say("MËt ®å nµy lµ"..Zgc_pub_sex_name().."ng­êi h÷u duyªn míi cã, ng­¬i thËt sù muèn hñy kh«ng?",
 		2,
-		"§óng/task_release_dtm",
+		"Confirm/task_release_dtm",
 		"§Ó ta suy nghÜ l¹i/end_dialog"
 		)
 	else			--Êı¾İ³ö´íµÄÇé¿ö

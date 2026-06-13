@@ -2,8 +2,8 @@
 Include("\\script\\task\\global_task\\gtask_head.lua");
 Include("\\script\\lib\\define.lua")
 tInfo ={
-{"§Ö Tö Vâ §ang",	"Danh väng Vâ §ang §¹o Gia Thñ Täa",},
-{"§Ö tö ThiÕu L©m",		"Giam CÇm §Þa1",},
+{"Disciple of Wudang",	"Danh väng Vâ §ang §¹o Gia Thñ Täa",},
+{"Disciple of Shaolin",		"Giam CÇm §Þa1",},
 {"§Ö tö Minh Gi¸o",		"Danh väng Minh Gi¸o Th¸nh ChiÕn Thñ Täa",},
 }
 sDeathScript = "\\script\\pop\\2012\\liaoguo_cike_npc.lua";
@@ -27,7 +27,7 @@ function main()
 	if GetFollower() ~= 0 then
 --		KillFollower();
 	end
-	SummonNpc("ThiÕu n÷ h«n mª","ThiÕu n÷ h«n mª");
+	SummonNpc("Fainted Maiden","Fainted Maiden");
 	SetTask(TASKID_SW_ITEM_WXZYH_CD,GetTime());
 end
 

@@ -7,8 +7,8 @@ Include("\\script\\online\\3festival\\3festival_head.lua")
 function OnUse()
 	Say("Më Hép §ång Bµi Huy Hoµng ph¶i cã Huy Hoµng §ång Th­îc Chuû, b¹n muèn më chø?",
 		2,
-		"§ång ý/confirm_open",
-		"Kh«ng cã g×/nothing")
+		"Agree/confirm_open",
+		"Nothing/nothing")
 end
 
 function confirm_open()
@@ -21,7 +21,7 @@ function confirm_open()
 		end	
 		if DelItem(2,0,1077,1) == 1 and DelItem(2,0,1073,1) == 1 then
 			AddItem(tItemInfo[19][2],tItemInfo[19][3],tItemInfo[19][4],2);
-			Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tItemInfo[19][1].."2 tÊm!");
+			Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tItemInfo[19][1].."2 plaques!");
 			local nRand = random(1,6);
 			lspf_AddLingShiInBottle(nRand,1);
 			Msg2Player("B¹n nhËn ®­îc "..nRand.." - (cÊp) 1 viªn Linh th¹ch, ®· bá vµo Tô Linh ®Ønh.");
@@ -40,17 +40,17 @@ function confirm_open()
 					if nRetCode == 1 then
 						SetTask(TASK_USE_TONG_BOX,0);
 						Msg2Player("Chóc mõng b¹n nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing1[nRoute][nRandRing][1]);
-						Msg2Global("Ng­êi ch¬i"..GetName().."Më Hép §ång Bµi Huy Hoµng nhËn ®­îc trang bÞ Hoµng §Õ"..tbHuangDiRing1[nRoute][nRandRing][1].."!");
+						Msg2Global("Player"..GetName().."Më Hép §ång Bµi Huy Hoµng nhËn ®­îc trang bÞ Hoµng §Õ"..tbHuangDiRing1[nRoute][nRandRing][1].."!");
 						WriteLog("[08 Tam tiÕt liªn th«ng]:"..GetName().."Më Hép §ång Bµi Huy Hoµng nhËn ®­îc trang bÞ Hoµng §Õ"..tbHuangDiRing1[nRoute][nRandRing][1]);
 					else
-						WriteLog("[Lçi 08 Tam tiÕt liªn th«ng]:"..GetName().."Më Hép §ång Bµi Huy Hoµng nhËn ®­îc trang bÞ Hoµng §Õ"..tbHuangDiRing1[nRoute][nRandRing][1].."B¸o lçi khi AddItem, nRetCode:"..nRetCode);
+						WriteLog("[Lçi 08 Tam tiÕt liªn th«ng]:"..GetName().."Më Hép §ång Bµi Huy Hoµng nhËn ®­îc trang bÞ Hoµng §Õ"..tbHuangDiRing1[nRoute][nRandRing][1].."Error on AddItem, nRetCode:"..nRetCode);
 					end					
 				else
 					nRetCode = AddItem(tItemInfo[25][2],tItemInfo[25][3],tItemInfo[25][4],1);
 					if nRetCode == 1 then
 						SetTask(TASK_USE_TONG_BOX,0);
 						Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 "..tItemInfo[25][1]);
-						Msg2Global("Ng­êi ch¬i"..GetName().."Më Hép §ång Bµi Huy Hoµng nhËn ®­îc 1 "..tItemInfo[25][1]);
+						Msg2Global("Player"..GetName().."Më Hép §ång Bµi Huy Hoµng nhËn ®­îc 1 "..tItemInfo[25][1]);
 						WriteLog("[08 Tam tiÕt liªn th«ng]:"..GetName().."Më Hép §ång Bµi Huy Hoµng nhËn ®­îc 1 "..tItemInfo[25][1]);
 					else
 						WriteLog("[Lçi 08 Tam tiÕt liªn th«ng]:"..GetName().."Më Hép §ång Bµi Huy Hoµng nhËn ®­îc 1 "..tItemInfo[25][1].." thÊt b¹i, ký hiÖu:"..nRetCode);

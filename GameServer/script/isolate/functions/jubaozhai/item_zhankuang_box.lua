@@ -448,8 +448,8 @@ function OpenZhankuangBox(nItem, nType)
 		if not nType then
 			local tSay = {
 				format("§Çu/#OpenZhankuangBox(%d, 1)", nItem),
-				format("Th­îng y/#OpenZhankuangBox(%d, 2)", nItem),
-				format("H¹ y/#OpenZhankuangBox(%d, 3)", nItem),
+				format("Upper grade/#OpenZhankuangBox(%d, 2)", nItem),
+				format("Lower grade/#OpenZhankuangBox(%d, 3)", nItem),
 				"\nT«i chØ xem xem th«i/nothing",
 			}
 			Say(format("Chän vÞ trÝ phßng cô:", GetItemName(nItem)), getn(tSay), tSay);

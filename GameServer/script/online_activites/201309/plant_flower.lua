@@ -5,18 +5,18 @@ Include("\\script\\online\\zgc_public_fun.lua")
 VET_LOG_TITLE = "Hoat Dong Hoa Hong Thang 9/2013";
 
 VET_TB_LOG_ACTION_LIST = {
-    [1] = "Mua MÇm Hoa",
+    [1] = "Buy Flower Seedling",
     [2] = "KÝch ho¹t trång hoa",
 };
 
 VET_STRING_LIST = {
     [1] = "KÝch ho¹t trång hoa",
-    [2] = "Mua MÇm Hoa (1 MÇm Hoa = 19 vµng)",
-    [3] = "KÕt thóc ®èi tho¹i",
+    [2] = "Buy Flower Seedling (1 Flower Seedling = 19 gold)",
+    [3] = "End conversation",
     [4] = "TiÒn vµng ®¹i hiÖp mang theo kh«ng ®ñ.",
     [5] = "ChØ cã ®éi tr­ëng míi cã thÓ kÝch ho¹t trång hoa.",
     [6] = "CÇn tæ ®éi trªn 2 ng­êi, míi cã thÓ kÝch ho¹t trång hoa.",
-    [7] = "§iÒu kiÖn trång hoa lçi.",
+    [7] = "Flower planting conditions failed.",
     [8] = "Tæ ®éi thµnh viªn mçi ng­êi cÇn mang theo 1 mÇm hoa míi cã thÓ kÝch ho¹t trång hoa.",
     [9] = "Mçi ngµy mçi ng­êi ch¬i giíi h¹n mua 1 mÇm hoa.",
     [10] = "Nh©n vËt cÊp 77 trë lªn, ®· gia nhËp m«n ph¸i vµ luyÖn ®­îc kü n¨ng cÊp 55 míi cã thÓ tham gia ho¹t ®éng",
@@ -72,7 +72,7 @@ local tbSayDialog = {};
 	if gf_CheckEventDateEx(VET_ROSE_ACTIVITY_ID) == 1 then
 		tinsert(tbSayDialog, VET_STRING_LIST[1].."/active_fire_for_warm")
 		tinsert(tbSayDialog, VET_STRING_LIST[2].."/buy_match") 
-		tinsert(tbSayDialog, "Tho¸t/do_nothing");
+		tinsert(tbSayDialog, "Exit/do_nothing");
 	end
 	nSaySize = getn(tbSayDialog);
 	Say(szSayHead, nSaySize, tbSayDialog);

@@ -23,7 +23,7 @@ function QX08_GetAward(nType,nAwardLevel,nTaskID)
 		return 0;
 	end;
 	if nAwardLevel < 0 or nAwardLevel > 5 then
-		WriteLog("[Ho¹t ®éng Olympic sai]:"..GetName().."nAwardLevel bÞ lçi, trÞ lçi: "..nAwardLevel);
+		WriteLog("[Ho¹t ®éng Olympic sai]:"..GetName().."nAwardLevel error, error value:"..nAwardLevel);
 		return 0;
 	end;
 	local szAwardInfo = "";
@@ -52,12 +52,12 @@ function QX08_GetAward(nType,nAwardLevel,nTaskID)
 	end;
 	local szOtherAward = "";
 	if nLevel == 99 then
-		szOtherAward = "<color=yellow>"..nBagNum.."<color> Tói b¶o th¹ch, <color=yellow>"..nPoint.."<color> ®iÓm tÝch lòy ho¹t ®éng."
+		szOtherAward = "<color=yellow>"..nBagNum.."<color> Gemstone Bag, <color=yellow>"..nPoint.."<color> ®iÓm tÝch lòy ho¹t ®éng."
 	else
 		szOtherAward = "<color=yellow>"..nPoint.."<color> ®iÓm tÝch lòy ho¹t ®éng."
 	end;
 	local selTab = {
-				"NhËn /#QX08_GetAward_1("..nType..","..nAwardLevel..","..nTaskID..","..bGotTitle..")",
+				"Receive /#QX08_GetAward_1("..nType..","..nAwardLevel..","..nTaskID..","..bGotTitle..")",
 				"T¹m thêi kh«ng nhËn/nothing",
 				}
 	if IB_VERSION == 1 then	--Ãâ·Ñ
@@ -82,7 +82,7 @@ end;
 --Õë¶Ô½¡¿µ¾­Ñé²»¹»¶øÔö¼ÓµÄÒ»¸öÁ÷³Ì
 function QX08_GetAward_1(nType,nAwardLevel,nTaskID,bGotTitle)
 	if nAwardLevel < 0 or nAwardLevel > 5 then
-		WriteLog("[Ho¹t ®éng Olympic sai]:"..GetName().."nAwardLevel bÞ lçi, trÞ lçi: "..nAwardLevel);
+		WriteLog("[Ho¹t ®éng Olympic sai]:"..GetName().."nAwardLevel error, error value:"..nAwardLevel);
 		return 0;
 	end;
 	local nLevel = GetLevel();
@@ -90,8 +90,8 @@ function QX08_GetAward_1(nType,nAwardLevel,nTaskID,bGotTitle)
 	local nGoldenExpAward = floor((nLevel^2)/(80^2)*g_tbAward[nAwardLevel][1][1]*10000);
 	if IB_VERSION ~= 1 and nLevel ~= 99 and nGoldenExpAward > nCurGoldenExp then
 		local selTab = {
-					"§ång ý/#QX08_GetAward_2("..nType..","..nAwardLevel..","..nTaskID..","..bGotTitle..")",
-					"Hñy bá/nothing",
+					"Agree/#QX08_GetAward_2("..nType..","..nAwardLevel..","..nTaskID..","..bGotTitle..")",
+					"Cancel/nothing",
 					}
 		Say(g_szInfoHead.." ng­¬i cã thÓ chuyÓn <color=yellow>"..nGoldenExpAward.."<color> ®iÓm søc kháe, nh­ng ®iÓm søc kháe hiÖn t¹i lµ <color=yellow>"..nCurGoldenExp.."<color> ®iÓm, <color=red>nhá h¬n<color> ®iÓm søc kháe ng­¬i cã thÓ chuyÓn, ng­¬i cã muèn chuyÓn kh«ng?",getn(selTab),selTab);
 	else
@@ -104,7 +104,7 @@ function QX08_GetAward_2(nType,nAwardLevel,nTaskID,bGotTitle)
 		return 0;
 	end;
 	if nAwardLevel < 0 or nAwardLevel > 5 then
-		WriteLog("[Ho¹t ®éng Olympic sai]:"..GetName().."nAwardLevel bÞ lçi, trÞ lçi: "..nAwardLevel);
+		WriteLog("[Ho¹t ®éng Olympic sai]:"..GetName().."nAwardLevel error, error value:"..nAwardLevel);
 		return 0;
 	end;
 	local nLevel = GetLevel();
@@ -122,7 +122,7 @@ function QX08_GetAward_2(nType,nAwardLevel,nTaskID,bGotTitle)
 		AddTitle(53,nType);
 		SetTitleTime(53,nType,GetTime()+24*3600);
 		Msg2Player("B¹n nhËn ®­îc danh hiÖu"..g_tbTitleName[nType].." ' danh hiÖu");
-		WriteLog("[Ho¹t ®éng Olympic]:"..GetTime().."NhËn ®­îc "..g_tbTitleName[nType].."HiÖu");
+		WriteLog("[Ho¹t ®éng Olympic]:"..GetTime().."Received"..g_tbTitleName[nType].."Effect");
 	end;
 	local nPoint = g_tbAward[nAwardLevel][4];
 	SetTask(TSK_AOYUN_POINT,GetTask(TSK_AOYUN_POINT)+nPoint);
@@ -136,15 +136,15 @@ function QX08_GetAward_2(nType,nAwardLevel,nTaskID,bGotTitle)
 	if nLevel == 99 then	--99¼¶½±Àø¡£ÊÕ·ÑÃâ·ÑÒ»ÑùµÄ
 		local nNum = g_tbAward[nAwardLevel][3];
 		AddItem(2,1,2642,nNum);
-		Msg2Player("B¹n nhËn ®­îc "..nNum.." Tói b¶o th¹ch");
-		WriteLog("[Ho¹t ®éng Olympic]:"..GetName().."§· nhËn "..nType.."sè"..nAwardLevel.." - phÇn th­ëng ho¹t ®éng:"..nNum.." Tói b¶o th¹ch.");
+		Msg2Player("B¹n nhËn ®­îc "..nNum.." Gemstone Bag");
+		WriteLog("[Ho¹t ®éng Olympic]:"..GetName().."§· nhËn "..nType.."number"..nAwardLevel.." - phÇn th­ëng ho¹t ®éng:"..nNum.." Gemstone Bag.");
 		return 1;
 	end;
 	if IB_VERSION == 1 then	--Ãâ·Ñ
 		nExpAward = floor((nLevel^2)/(80^2)*g_tbAward[nAwardLevel][2][1]*10000);
 		ModifyExp(nExpAward);
 		Msg2Player("B¹n nhËn ®­îc "..nExpAward.." ®iÓm kinh nghiÖm");
-		WriteLog("[Ho¹t ®éng Olympic]:"..GetName().."§· nhËn "..nType.."sè"..nAwardLevel.." - phÇn th­ëng ho¹t ®éng:"..nExpAward.." ®iÓm kinh nghiÖm");
+		WriteLog("[Ho¹t ®éng Olympic]:"..GetName().."§· nhËn "..nType.."number"..nAwardLevel.." - phÇn th­ëng ho¹t ®éng:"..nExpAward.." ®iÓm kinh nghiÖm");
 	else	--ÊÕ·Ñ
 		local nCurGoldenExp = GetGoldenExp();
 		nGoldenExpAward = floor((nLevel^2)/(80^2)*g_tbAward[nAwardLevel][1][1]*10000);
@@ -152,7 +152,7 @@ function QX08_GetAward_2(nType,nAwardLevel,nTaskID,bGotTitle)
 		ModifyExp(nExpAward);
 		Msg2Player("B¹n nhËn ®­îc "..nExpAward.." ®iÓm kinh nghiÖm");
 		gf_GoldenExp2Exp(nGoldenExpAward);
-		WriteLog("[Ho¹t ®éng Olympic]:"..GetName().."§· nhËn "..nType.."sè"..nAwardLevel.." - phÇn th­ëng ho¹t ®éng: ChuyÓn"..nGoldenExpAward.." ®iÓm søc kháe; "..nExpAward.." ®iÓm kinh nghiÖm");
+		WriteLog("[Ho¹t ®éng Olympic]:"..GetName().."§· nhËn "..nType.."number"..nAwardLevel.." - phÇn th­ëng ho¹t ®éng: ChuyÓn"..nGoldenExpAward.." ®iÓm søc kháe; "..nExpAward.." ®iÓm kinh nghiÖm");
 	end;
 end;
 

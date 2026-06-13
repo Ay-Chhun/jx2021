@@ -31,7 +31,7 @@ function get_aword()
 				local nRet = AddItem(tb_yingxiong_aword[i][nBody][2], tb_yingxiong_aword[i][nBody][3], tb_yingxiong_aword[i][nBody][4], 1,1,-1,-1,-1,-1,-1,-1)
 				if nRet == 1 then
 					Msg2Player("B¹n nhËn ®­îc 1 ".. tb_yingxiong_aword[i][nBody][1])
-					WriteLogEx("Hoat dong thang 6","Tiªu Giao Sø Gi¶",1, tb_yingxiong_aword[i][nBody][1])
+					WriteLogEx("Hoat dong thang 6","Carefree Envoy",1, tb_yingxiong_aword[i][nBody][1])
 				else
 					WriteLogEx("Hoat dong thang 6","add item thÊt b¹i",1, tb_yingxiong_aword[i][nBody][1])
 				end

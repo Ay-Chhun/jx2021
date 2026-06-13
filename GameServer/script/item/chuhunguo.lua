@@ -9,8 +9,8 @@ tChuHunGuo =
 function OnUse(item)
 	if GetFollower() ~= 0 then	--Èç¹ûÉíºóÓĞ¸úËæNPC£¬ÏÈÈ·ÈÏÉ¾³ı
 		local selTab = {
-					"§ång ı/#confirm_use("..item..")",
-					"Hñy bá/nothing",
+					"Agree/#confirm_use("..item..")",
+					"Cancel/nothing",
 					}
 		Say("Tr­íc khi dïng XuÊt Hån Qu¶,<color=red>ngoµi thi thÓ ra th× nh÷ng kÎ ®i theo sÏ bŞ biÕn mÊt<color>. QuyÕt ®Şnh dïng XuÊt Hån Qu¶ chø?",getn(selTab),selTab);
 	else
@@ -29,8 +29,8 @@ function confirm_use(item)
 	end;
 	KillFollower();
 	local selTab = {
-				"§ång ı/#confirm_use_final("..item..")",
-				"Hñy bá/nothing",
+				"Agree/#confirm_use_final("..item..")",
+				"Cancel/nothing",
 				}
 	Say("    Khi phèi ngÉu kh«ng ë trªn m¹ng cã thÓ dïng <color=yellow>"..tChuHunGuo[nType][4].."<color> ®Ó tİch lòy kinh nghiÖm cho ®èi ph­¬ng, cã t¸c dông trong vßng <color=yellow>2<color> tiÕng. Trong vßng 2 tiÕng ®ã toµn bé kinh nghiÖm ®· ®­îc tİch lòy sÏ chuyÓn hãa thµnh Liªn Lı Qu¶, nÕu tÆng Liªn Lı Qu¶ cho b»ng h÷u , hä sÏ céng h­ëng kinh nghiÖm khi cïng ®¸mh qu¸i, nh­ng <color=red>nÕu b»ng h÷u cña b¹n ®¨ng nhËp trß ch¬i trong lóc b¹n dïng XuÊt Hån Qu¶, th× XuÊt Hån Qu¶ sÏ lËp tøc mÊt t¸c dông, kinh nghiÖm tİch lòy ®­îc sÏ biÕn thµnh Liªn Lı Qu¶<color>.<enter> NÕu ®¨ng nhËp l¹i cã thÓ sÏ bŞ mÊt céng h­ëng, nh­ng kh«ng lµm ¶nh h­ëng ®Õn kinh nghiÖm tİch lòy.<enter> "..tChuHunGuo[nType][4].."Trong qu¸ tr×nh ph¸t huy t¸c dông nªn chõa <color=green>1 « trèng vµ 1 ®iÓm søc lùc<color> ®Ó ®Æt Liªn Lı qu¶ vµo. B¹n muèn sö dông kh«ng?",getn(selTab),selTab);
 end;
@@ -56,7 +56,7 @@ function confirm_use_final(item)
 		SetTask(TASKVAR_DOLLTIME, DOLL_TIME + DOLL_TIME_LIMIT * nType)
 		SetTask(TASKVAR_DOLLEXP, 0);	--¾­ÑéÇå0
 		SetTask(TASK_DOLL_ACTIVE,GetTime());
-		WriteLog("[KÕt h«n]:"..GetName().."§· sö dông mét XuÊt hån qu¶ ");
+		WriteLog("[Marriage]:"..GetName().."§· sö dông mét XuÊt hån qu¶ ");
 	end;
 end;
 

@@ -45,7 +45,7 @@ function gtNormalExchange:npc_talk_main(szNpcName,nTempIndex)
 	local szTitle = format("%s:%s", szNpcName, szMsg)
 	local tbSay = {}
 	tinsert(tbSay, format("%s/#npc_talk_ask_num(%d)", "X¸c ®Þnh ®æi", nTempIndex))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 	Say(szTitle, getn(tbSay), tbSay)
 end
 
@@ -176,7 +176,7 @@ function check_and_consume_list(tConsume, bDelete, bNotify)
     	elseif ti[2] == -1 then
     		if GetCash() < ti[5]*10000 then
     			if 1 == bNotify then
-        			Talk(1,"",format("Kh«ng cã %d%s",  ti[5], ti[1]))
+        			Talk(1,"",format("You don't have %d%s",  ti[5], ti[1]))
         		end
         		return 0
     		end

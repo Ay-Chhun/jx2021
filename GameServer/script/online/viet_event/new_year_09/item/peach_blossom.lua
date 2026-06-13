@@ -30,14 +30,14 @@ g_tbItem =
 	[1] = {TYPE_NULL,	464800,	},
 	[2] = {TYPE_ITEM,	500,	1,	"Thiªn Hµ MËt tÞch",	0,	107,	64,	},
 	[3] = {TYPE_ITEM,	200,	1,	"Tö Hµ MËt tÞch",	0,	107,	65,	},
-	[4] = {TYPE_ITEM,	100,	1,	"Chiªm Y Phæ",	0,	107,	66,	},
+	[4] = {TYPE_ITEM,	100,	1,	"Zhanyi Manual",	0,	107,	66,	},
 	[5] = {TYPE_ITEM,	1000,	1,	"Ngò Quû MËt tÞch",	0,	107,	63,	},
 	[6] = {TYPE_ITEM,	800,	1,	"Bæ Kim MËt tÞch",	0,	107,	61,	},
 	[7] = {TYPE_ITEM,	600,	1,	"Bæ Th¹ch MËt tÞch",	0,	107,	62,	},
 	[8] = {TYPE_ITEM,	10000,	1,	"M¶nh Thiªn th¹ch",	2,	2,	7,	},
 	[9] = {TYPE_ITEM,	2000,	1,	"Thiªn th¹ch",	2,	2,	8,	},
-	[10] = {TYPE_ITEM,	2000,	1,	"M¶nh B¨ng th¹ch",	2,	1,	148,	},
-	[11] = {TYPE_ITEM,	3000,	1,	"B¨ng th¹ch",	2,	1,	149,	},
+	[10] = {TYPE_ITEM,	2000,	1,	"Ice Stone Fragment",	2,	1,	148,	},
+	[11] = {TYPE_ITEM,	3000,	1,	"Ice Stone",	2,	1,	149,	},
 	[12] = {TYPE_ITEM,	20000,	1,	"Bång Lai Lé Thñy",	2,	1,	1052,	},
 	[13] = {TYPE_ITEM,	10000,	1,	"Bång Lai Tiªn Thñy",	2,	1,	1012,	},
 	[14] = {TYPE_ITEM,	10000,	1,	"ThÇn Gi¸p §¬n (chiÕn tr­êng)",	1,	0,	209,	},
@@ -91,7 +91,7 @@ function use_it()
 		local szItemName = "®iÓm kinh nghiÖm"
 		local nItemNum = nExp
 		local szInfoDescribe = format("ModifyExp(%d)", nItemNum)
-		WriteLogEx(g_szLogTitle, "Hoa §µo", nItemNum, szItemName, szInfoDescribe, GetTongName() )
+		WriteLogEx(g_szLogTitle, "Peach Blossom", nItemNum, szItemName, szInfoDescribe, GetTongName() )
 	end
 	--ÎïÆ·½±Àø²¿·Ö
 	local nRandIdx = get_random_item(g_tbItem)
@@ -124,9 +124,9 @@ function use_it()
 		else
 			Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." "..szItemName)
 		end
-		WriteLogEx(g_szLogTitle, "Hoa §µo", nItemNum, szItemName, szInfoDescribe, GetTongName() )
+		WriteLogEx(g_szLogTitle, "Peach Blossom", nItemNum, szItemName, szInfoDescribe, GetTongName() )
 	else
-		WriteLogEx(g_szLogTitle, "Hoa §µo", "", "", szInfoDescribe, GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
+		WriteLogEx(g_szLogTitle, "Peach Blossom", "", "", szInfoDescribe, GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
 	end
 end
 

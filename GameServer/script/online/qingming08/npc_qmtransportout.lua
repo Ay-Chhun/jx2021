@@ -21,13 +21,13 @@ task_reel_table = {
 	--ÈÎÎñÀàĞÍ(£¨1¡¢ÎªÉ±¹Ö£»2ÎªÊÕ¼¯£»3ÎªÁéÊ¯£©-¹ÖÎïÃû³Æ-´¥·¢Æ÷ID-½±Àø°Ù·Ö¼¸ÂÊ-½±Àø±¶Êı-·µ»ØµÄ´¥·¢Æ÷Ë÷Òı--ËµÃ÷
 	{1,"C«n ®å",1205,5,11,900,"    TiÕt Thanh Minh ®· ®Õn, chç ta cã mét sè mËt ®å nhiÖm vô dµnh cho nh÷ng ai thµnh t©m cóng b¸i.\n    <color=yellow>Néi dung nhiÖm vô<color>: Ngoµi thµnh cã nh÷ng tªn <color=yellow>C«n ®å<color> lµm h¹i b¸ t¸nh, giÕt <color=yellow>30<color> tªn sau ®ã quay vÒ <color=yellow>Thñ l¨ng mé<color> phôc mÖnh.\n   <color=yellow>PhÇn th­ëng nhiÖm vô: x¸c suÊt 95%<color> nh©n ®«i <color=yellow>®iÓm søc kháe chuyÓn thµnh kinh nghiÖm<color> hoÆc <color=yellow>5%<color> x¸c suÊt gÊp <color=yellow>11<color> lÇn ®iÓm søc kháe chuyÓn thµnh kinh nghiÖm."},
 	--ÈÎÎñÀàĞÍ-ÊÕ¼¯ÎïÆ·ÖÖÀà¸öÊı-ÈÎÎñ½±Àø°Ù·Ö¼¸ÂÊ-ÈÎÎñ½±Àø±¶Êı-Ëæ»ú¼ÀÆ·Êı-ÊÕ¼¯µÄÎïÆ·Ãû³Æ-ÊÕ¼¯µÄÎïÆ·´óÀà-¸±Àà-Ğ¡Àà-ÊıÁ¿--ËµÃ÷<color>
-	{2,1,10,6,2,"Hæ vÜ",2,1,19,20,"    TiÕt Thanh Minh ®· ®Õn, chç ta cã mét sè mËt ®å nhiÖm vô dµnh cho nh÷ng ai thµnh t©m cóng b¸i.\n    <color=yellow>Néi dung nhiÖm vô: §u«i hæ<color> lµm thuèc cã thÓ ®iÒu trŞ c¸c bÖnh tËt, thu thËp <color=yellow>20<color> <color=yellow>®u«i hæ<color> sau ®ã quay vÒ <color=yellow>Thñ l¨ng mé<color> phôc mÖnh.\n   <color=yellow>PhÇn th­ëng nhiÖm vô: x¸c suÊt 90%<color> nh©n ®«i <color=yellow>®iÓm søc kháe chuyÓn thµnh kinh nghiÖm<color> hoÆc <color=yellow>10%<color> x¸c suÊt gÊp <color=yellow>6<color> lÇn ®iÓm søc kháe chuyÓn thµnh kinh nghiÖm."},
+	{2,1,10,6,2,"Tiger Tail",2,1,19,20,"    TiÕt Thanh Minh ®· ®Õn, chç ta cã mét sè mËt ®å nhiÖm vô dµnh cho nh÷ng ai thµnh t©m cóng b¸i.\n    <color=yellow>Néi dung nhiÖm vô: §u«i hæ<color> lµm thuèc cã thÓ ®iÒu trŞ c¸c bÖnh tËt, thu thËp <color=yellow>20<color> <color=yellow>®u«i hæ<color> sau ®ã quay vÒ <color=yellow>Thñ l¨ng mé<color> phôc mÖnh.\n   <color=yellow>PhÇn th­ëng nhiÖm vô: x¸c suÊt 90%<color> nh©n ®«i <color=yellow>®iÓm søc kháe chuyÓn thµnh kinh nghiÖm<color> hoÆc <color=yellow>10%<color> x¸c suÊt gÊp <color=yellow>6<color> lÇn ®iÓm søc kháe chuyÓn thµnh kinh nghiÖm."},
 	{1,"Quan sø",1206,16,4,901,"    TiÕt Thanh Minh ®· ®Õn, chç ta cã mét sè mËt ®å nhiÖm vô dµnh cho nh÷ng ai thµnh t©m cóng b¸i.\n    <color=yellow>Néi dung nhiÖm vô: Quan sø<color> ë <color=yellow>D­¬ng Trung ®éng<color> hµ hiÕp b¸ t¸nh, gi¸o huÊn <color=yellow>30<color> tªn sau ®ã quay vÒ <color=yellow>Thñ l¨ng mé<color> phôc mÖnh.\n   <color=yellow>PhÇn th­ëng nhiÖm vô: x¸c suÊt 84%<color> nh©n ®«i <color=yellow>®iÓm søc kháe chuyÓn thµnh kinh nghiÖm<color> hoÆc <color=yellow>16%<color> x¸c suÊt gÊp <color=yellow>4<color> lÇn ®iÓm søc kháe chuyÓn thµnh kinh nghiÖm."},
 	--ÈÎÎñÀàĞÍ-ÊÕ¼¯ÎïÆ·ÖÖÀà¸öÊı-ÈÎÎñ½±Àø°Ù·Ö¼¸ÂÊ-ÈÎÎñ½±Àø±¶Êı-Ëæ»ú¼ÀÆ·Êı-ÊÕ¼¯µÄÁéÊ¯Ãû³Æ-ÊÕ¼¯µÄÁéÊ¯ÊıÁ¿-ÊÕ¼¯µÄÁéÊ¯ÊıÁ¿µÄÈÎÎñ±äÁ¿-ËµÃ÷
 	{3,1,20,3.5,2,"Linh th¹ch cÊp 1",4,SYS_TSK_LINGSHI_ONE,"    TiÕt Thanh Minh ®· ®Õn, chç ta cã mét sè mËt ®å nhiÖm vô dµnh cho nh÷ng ai thµnh t©m cóng b¸i.\n    <color=yellow>Néi dung nhiÖm vô<color>: HiÖn triÒu ®×nh cÇn mét sè vËt liÖu, thu thËp <color=yellow>4 Linh th¹ch cÊp 1<color> sau ®ã quay vÒ <color=yellow>Thñ l¨ng mé<color> phôc mÖnh.\n   <color=yellow>PhÇn th­ëng nhiÖm vô: x¸c suÊt 80%<color> nh©n ®«i <color=yellow>®iÓm søc kháe chuyÓn thµnh kinh nghiÖm<color> hoÆc <color=yellow>20%<color> x¸c suÊt gÊp <color=yellow>3.5<color> lÇn ®iÓm søc kháe chuyÓn thµnh kinh nghiÖm."},
-	{2,2,30,2.7,2,"BÇu r­îu da dª",2,1,60,10,"Kim Thoa",2,1,41,10,"    TiÕt Thanh Minh ®· ®Õn, chç ta cã mét sè mËt ®å nhiÖm vô dµnh cho nh÷ng ai thµnh t©m cóng b¸i.\n    <color=yellow>Néi dung nhiÖm vô<color>: HiÖn triÒu ®×nh cÇn mét sè vËt liÖu, ®Õn <color=yellow>KiÕm M«n Quan<color> thu thËp 10 <color=yellow>bÇu r­îu da dª<color>, ®Õn <color=yellow>KiÕm C¸c thôc ®¹o<color> thu thËp 10 <color=yellow>Kim Thoa<color> sau ®ã quay vÒ Thñ l¨ng mé <color>phôc mÖnh.\n   <color=yellow>PhÇn th­ëng nhiÖm vô: x¸c suÊt 70%<color> nh©n ®«i <color=yellow>®iÓm søc kháe chuyÓn thµnh kinh nghiÖm<color> hoÆc <color=yellow>30%<color> x¸c suÊt gÊp <color=yellow>2.7<color> lÇn ®iÓm søc kháe chuyÓn thµnh kinh nghiÖm."},
+	{2,2,30,2.7,2,"Goatskin Wine Gourd",2,1,60,10,"Kim Thoa",2,1,41,10,"    TiÕt Thanh Minh ®· ®Õn, chç ta cã mét sè mËt ®å nhiÖm vô dµnh cho nh÷ng ai thµnh t©m cóng b¸i.\n    <color=yellow>Néi dung nhiÖm vô<color>: HiÖn triÒu ®×nh cÇn mét sè vËt liÖu, ®Õn <color=yellow>KiÕm M«n Quan<color> thu thËp 10 <color=yellow>bÇu r­îu da dª<color>, ®Õn <color=yellow>KiÕm C¸c thôc ®¹o<color> thu thËp 10 <color=yellow>Kim Thoa<color> sau ®ã quay vÒ Thñ l¨ng mé <color>phôc mÖnh.\n   <color=yellow>PhÇn th­ëng nhiÖm vô: x¸c suÊt 70%<color> nh©n ®«i <color=yellow>®iÓm søc kháe chuyÓn thµnh kinh nghiÖm<color> hoÆc <color=yellow>30%<color> x¸c suÊt gÊp <color=yellow>2.7<color> lÇn ®iÓm søc kháe chuyÓn thµnh kinh nghiÖm."},
 	{3,2,40,2.25,2,"Linh th¹ch cÊp 2",2,SYS_TSK_LINGSHI_TWO,"Linh th¹ch cÊp 3",2,SYS_TSK_LINGSHI_THREE,"    TiÕt Thanh Minh ®· ®Õn, chç ta cã mét sè mËt ®å nhiÖm vô dµnh cho nh÷ng ai thµnh t©m cóng b¸i.\n    <color=yellow>PhÇn th­ëng nhiÖm vô<color>: T×m <color=yellow>2 Linh th¹ch cÊp 2<color>, <color=yellow>2 Linh th¹ch cÊp 3<color> ®Æt vµo Tô Linh ®Ønh sau ®ã quay vÒ <color=yellow>Thñ l¨ng mé<color> phôc mÖnh.\n   <color=yellow>PhÇn th­ëng nhiÖm vô: x¸c suÊt 60%<color> nh©n ®«i <color=yellow>®iÓm søc kháe chuyÓn thµnh kinh nghiÖm<color> hoÆc <color=yellow>40%<color> x¸c suÊt gÊp <color=yellow>2.25<color> lÇn ®iÓm søc kháe chuyÓn thµnh kinh nghiÖm."},
-	{2,2,50,2,2,"Gi¸p x¸c phiÕn",2,1,177,10,"Khª S¬n chİ",2,1,98,10,"    TiÕt Thanh Minh ®· ®Õn, chç ta cã mét sè mËt ®å nhiÖm vô dµnh cho nh÷ng ai thµnh t©m cóng b¸i.\n    <color=yellow>Néi dung nhiÖm vô<color>: HiÖn triÒu ®×nh cÇn mét sè vËt liÖu, thu thËp 10 <color=yellow>Gi¸p x¸c phiÕn ë §µo Hoa §¶o<color>, 10 <color=yellow>b¶n ®å rõng nói gèc ë §¹i Th¶o Nguyªn<color> sau ®ã quay vÒ <color=yellow>Thñ l¨ng mé<color> phôc mÖnh.\n   <color=yellow>PhÇn th­ëng nhiÖm vô: x¸c suÊt 50%<color> nh©n ®«i <color=yellow>®iÓm søc kháe chuyÓn thµnh kinh nghiÖm<color> hoÆc <color=yellow>50%<color> x¸c suÊt gÊp <color=yellow>2<color> lÇn ®iÓm søc kháe chuyÓn thµnh kinh nghiÖm."},
+	{2,2,50,2,2,"Gi¸p x¸c phiÕn",2,1,177,10,"Khe Son Mark",2,1,98,10,"    TiÕt Thanh Minh ®· ®Õn, chç ta cã mét sè mËt ®å nhiÖm vô dµnh cho nh÷ng ai thµnh t©m cóng b¸i.\n    <color=yellow>Néi dung nhiÖm vô<color>: HiÖn triÒu ®×nh cÇn mét sè vËt liÖu, thu thËp 10 <color=yellow>Gi¸p x¸c phiÕn ë §µo Hoa §¶o<color>, 10 <color=yellow>b¶n ®å rõng nói gèc ë §¹i Th¶o Nguyªn<color> sau ®ã quay vÒ <color=yellow>Thñ l¨ng mé<color> phôc mÖnh.\n   <color=yellow>PhÇn th­ëng nhiÖm vô: x¸c suÊt 50%<color> nh©n ®«i <color=yellow>®iÓm søc kháe chuyÓn thµnh kinh nghiÖm<color> hoÆc <color=yellow>50%<color> x¸c suÊt gÊp <color=yellow>2<color> lÇn ®iÓm søc kháe chuyÓn thµnh kinh nghiÖm."},
 	{1,"Cao thñ quan ngo¹i",1207,65,1.75,902,"    TiÕt Thanh Minh ®· ®Õn, chç ta cã mét sè mËt ®å nhiÖm vô dµnh cho nh÷ng ai thµnh t©m cóng b¸i.\n    <color=yellow>Néi dung nhiÖm vô<color>: Cao thñ quan ngo¹i <color=yellow>ë<color> Long M«n trÊn ®¶ th­¬ng b¸ t¸nh, giÕt <color=yellow>30<color> tªn sau ®ã quay vÒ <color=yellow>Thñ l¨ng mé<color> phôc mÖnh.\n   <color=yellow>PhÇn th­ëng nhiÖm vô: x¸c suÊt 35%<color> nh©n ®«i <color=yellow>®iÓm søc kháe chuyÓn thµnh kinh nghiÖm<color> hoÆc <color=yellow>65%<color> x¸c suÊt gÊp <color=yellow>1.75<color> lÇn ®iÓm søc kháe chuyÓn thµnh kinh nghiÖm."},
 	{3,1,80,1.65,2,"Linh th¹ch cÊp 4",2,SYS_TSK_LINGSHI_FOUR,"    TiÕt Thanh Minh ®· ®Õn, chç ta cã mét sè mËt ®å nhiÖm vô dµnh cho nh÷ng ai thµnh t©m cóng b¸i.\n    <color=yellow>Néi dung nhiÖm vô<color>: T×m <color=yellow>2 Linh th¹ch cÊp 4<color> ®Æt vµo Tô Linh ®Ønh sau ®ã quay vÒ Thñ l¨ng mé phôc mÖnh.\n   <color=yellow>PhÇn th­ëng nhiÖm vô: x¸c suÊt 45%<color> nh©n ®«i <color=yellow>®iÓm søc kháe chuyÓn thµnh kinh nghiÖm<color> hoÆc <color=yellow>65%<color> x¸c suÊt gÊp <color=yellow>1.65<color> lÇn ®iÓm søc kháe chuyÓn thµnh kinh nghiÖm."},
 	{1,"TÇm B¶o Nh©n",1208,100,1.5,903,"    TiÕt Thanh Minh ®· ®Õn, chç ta cã mét sè mËt ®å nhiÖm vô dµnh cho nh÷ng ai thµnh t©m cóng b¸i.\n    <color=yellow>Néi dung nhiÖm vô: ë Sa m¹c mª cung<color> cã <color=yellow>TÇm b¶o nh©n<color> ®¶ th­¬ng kh«ng İt nh©n sÜ giang hå, giÕt <color=yellow>30<color> tªn sau ®ã quay vÒ <color=yellow>Thñ l¨ng mé<color> phôc mÖnh.\n   <color=yellow>PhÇn th­ëng nhiÖm vô: 100%<color> x¸c suÊt gÊp <color=yellow>1.5<color> lÇn ®iÓm søc kháe chuyÓn thµnh kinh nghiÖm."}
@@ -39,20 +39,20 @@ function main()
 	local selTab = {}
 	if task_diff == nil or task_diff == 0 then
 		selTab = {
-				"Xin ®­a ta vÒ!/#gohome("..get_type()..")",
+				"Please take me home!/#gohome("..get_type()..")",
 				"T×m hiÓu ho¹t ®éng TiÕt Thanh Minh./tomb_sweep_2007_inf",
-				"MÖt qu¸! Cho ngåi nghØ chót ®·!/end_dialog",
+				"So tired! Let me sit and rest a bit!/end_dialog",
 				}
 	else
 		selTab = {
-				"Xin ®­a ta vÒ!/#gohome("..get_type()..")",
+				"Please take me home!/#gohome("..get_type()..")",
 				"NhËn phÇn th­ëng./get_teel_task_prize",
 				"Hñy nhiÖm vô./teel_task_release",
 				"T×m hiÓu ho¹t ®éng TiÕt Thanh Minh./tomb_sweep_2007_inf",
-				"MÖt qu¸! Cho ngåi nghØ chót ®·!/end_dialog",
+				"So tired! Let me sit and rest a bit!/end_dialog",
 				}
 	end
-	Say("<color=green>"..get_transport_name().."<color>: §a t¹"..Zgc_pub_sex_name().."®Õn b¸i tÕ mé chñ nh©n, cã cÇn tiÓu nh©n ®­a ngµi vÒ kh«ng?",getn(selTab),selTab);
+	Say("<color=green>"..get_transport_name().."<color>: Thank you"..Zgc_pub_sex_name().."®Õn b¸i tÕ mé chñ nh©n, cã cÇn tiÓu nh©n ®­a ngµi vÒ kh«ng?",getn(selTab),selTab);
 end
 --*******************************´«»ØÈı´óÖ÷³Ç*****************************
 function gohome(MapIndex)
@@ -62,7 +62,7 @@ end
 function get_teel_task_prize()
 	--ÔÚ»î¶¯ÆÚ¼äÓĞĞ§
 	if is_qingming_opened() ~= 1 then				
-		Talk(1,"","<color=green>"..get_transport_name().."<color>: TiÕt Thanh Minh ®· qua, "..Zgc_pub_sex_name().."NÕu cã lßng n¨m sau nhí ®Õn cóng b¸i!")
+		Talk(1,"","<color=green>"..get_transport_name().."<color>: The Qingming Festival has passed,"..Zgc_pub_sex_name().."If you wish, remember to come pay respects next year!")
 		return
 	end
 	--Íæ¼Ò¸ºÖØ¼ì²â
@@ -306,7 +306,7 @@ function golden_exp_chg()
 		n99Book = floor(n99Book * n99Times)
 		if Zgc_pub_goods_add_chk(2,50) == 1 then--ÌìÊ±×¢½â¿ÉÒÔµş¼Ó999±¾
 			AddItem(2,1,3210,n99Book)--»ñµÃÌìÊ±×¢½ân99Book±¾
-			Msg2Player("B¹n nhËn ®­îc Thiªn Thêi Chó Gi¶i "..n99Book.." quyÓn!")
+			Msg2Player("B¹n nhËn ®­îc Thiªn Thêi Chó Gi¶i "..n99Book.." volumes!")
 		end --if zgc_pub_gooods_add_chk
 		n99Times = floor(n99Times)
 		local nTemp = 1
@@ -363,7 +363,7 @@ function teel_task_release()
 	elseif task_diff >= 1 and task_diff <= 10 then
 		Say("<color=green>"..get_transport_name().."<color>: MËt ®å nµy lµ "..Zgc_pub_sex_name().."ng­êi h÷u duyªn míi cã, ng­¬i thËt sù muèn hñy kh«ng?",
 		2,
-		"§óng/task_release_dtm",
+		"Confirm/task_release_dtm",
 		"§Ó ta suy nghÜ l¹i/end_dialog"
 		)
 	else			--Êı¾İ³ö´íµÄÇé¿ö

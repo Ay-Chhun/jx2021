@@ -23,18 +23,18 @@ function snowwar_enter_main()
 				"T×m hiÓu ho¹t ®éng./SW_KnowSnowWar",
 				"Ta ®· qua tuæi nµy råi ­!/nothing"
 				}
-	Say("<color=green>"..g_sNpcName.."<color>: VÞ "..strSex.."lÏ nµo kh«ng muèn nh©n c¬ héi ch¬i ®ïa tháa thÝch mét lÇn hay sao?",getn(selTab),selTab)	
+	Say("<color=green>"..g_sNpcName.."<color>: Esteemed"..strSex.."lÏ nµo kh«ng muèn nh©n c¬ héi ch¬i ®ïa tháa thÝch mét lÇn hay sao?",getn(selTab),selTab)	
 end
 
 function go()
 	local strSex = gf_GetPlayerSexName();
 	local nFieldID = SW_GetFieldIDFromMapID(g_CurMapID);
 	if GetPlayerRoute() == 0 then
-		Talk(1,"main","<color=green>"..g_sNpcName.."<color>: VÞ "..strSex.."<color=yellow>gia nhËp m«n ph¸i<color> míi ®­îc tham gia nÐm tuyÕt.");
+		Talk(1,"main","<color=green>"..g_sNpcName.."<color>: Esteemed"..strSex.."<color=yellow>gia nhËp m«n ph¸i<color> míi ®­îc tham gia nÐm tuyÕt.");
 		return 0;
 	end;
 	if GetLevel() <= 10 then
-		Talk(1,"main","<color=green>"..g_sNpcName.."<color>: VÞ "..strSex.."§îi ®Õn cÊp <color=yellow>11<color> råi h·y quay l¹i nhÐ!");
+		Talk(1,"main","<color=green>"..g_sNpcName.."<color>: Esteemed"..strSex.."§îi ®Õn cÊp <color=yellow>11<color> råi h·y quay l¹i nhÐ!");
 		return 0;
 	end;
 	if mf_GetPlayerCount(MISSION_ID,nFieldID) > MAX_PLAYER then
@@ -76,7 +76,7 @@ end;
 
 function leave()
 	local selTab = {
-			"Rêi khái/leave_confirm",
+			"Leave/leave_confirm",
 			"Ch­a muèn rêi khái/nothing",
 			}
 	local sSayContent = "Chó ý, sau khi thêi gian nÐm tuyÕt kÕt thóc. <color=yellow>néi trong 20 phót<color> cã thÓ ®Õn gÆp <color=yellow>TuyÕt Gi¶<color> ®Ó nhËn phÇn th­ëng. §õng l·ng phÝ ®iÓm tÝch lòy. Ng­¬i muèn rêi khái chø?";
@@ -130,6 +130,6 @@ function get_award()
 end;
 
 function see_rank()
-	Talk(1,"main","<color=green>"..g_sNpcName.."<color>: b¹n ®· nÐm ng· <color=yellow>"..GetTask(PT_KILL_COUNT).."<color> ng­êi, bÞ ng·<color=yellow>"..GetTask(PT_DEATH_COUNT).."<color> lÇn.");
+	Talk(1,"main","<color=green>"..g_sNpcName.."<color>: You have knocked down <color=yellow>"..GetTask(PT_KILL_COUNT).."<color> ng­êi, bÞ ng·<color=yellow>"..GetTask(PT_DEATH_COUNT).."<color> lÇn.");
 end;
 --=========================================================================================

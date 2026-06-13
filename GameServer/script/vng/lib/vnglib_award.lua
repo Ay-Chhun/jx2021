@@ -156,7 +156,7 @@ function LIB_Award:Award(tbAwardList)
 	if type(tbAwardList["nDanhvong"])=="number" then
 		ModifyReputation(tbAwardList["nDanhvong"], 0)
 		if self.szLogTitle ~= "" then
-			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nDanhvong"], "Danh väng")
+			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nDanhvong"], "Reputation")
 		end
 	end
 -- Award Su Mon
@@ -164,14 +164,14 @@ function LIB_Award:Award(tbAwardList)
 		SetTask(336, GetTask(336) + tbAwardList["nSumon"])
 		Msg2Player("§iÓm s­ m«n t¨ng thªm " .. tbAwardList["nSumon"] .. ".")
 		if self.szLogTitle ~= "" then
-			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nSumon"], "S­ m«n")
+			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nSumon"], "Sect")
 		end
 	end
 -- Award Gold
 	if type(tbAwardList["nGold"])=="number" then
 		Earn(tbAwardList["nGold"])
 		if self.szLogTitle ~= "" then
-			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nGold"], "Ng©n l­îng")
+			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nGold"], "Silver tael")
 		end
 	end
 -- Award Exp Pet
@@ -232,13 +232,13 @@ function LIB_Award:Award(tbAwardList)
 	if type(tbAwardList["nTamThanh1"])=="number" then
 		EatSanqin(1,tbAwardList["nTamThanh1"])
 		if self.szLogTitle ~= "" then
-			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nTamThanh1"], "Tam Thanh Hoµn")
+			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nTamThanh1"], "Three Purities Pill")
 		end
 	end
 	if type(tbAwardList["nTamThanh2"])=="number" then
 		EatSanqin(2,tbAwardList["nTamThanh2"])
 		if self.szLogTitle ~= "" then
-			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nTamThanh2"], "§¹i Tam Thanh Hoµn")
+			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nTamThanh2"], "Great Three Purities Pill")
 		end
 	end
 	if type(tbAwardList["nTamThanh3"])=="number" then
@@ -270,13 +270,13 @@ function LIB_Award:Award(tbAwardList)
 	if type(tbAwardList["nTuLinh1"])=="number" then
 		SetTask(3105, GetTask(3105) + tbAwardList["nTuLinh1"],TASK_ACCESS_CODE_OFFLINELIVE)
 		if self.szLogTitle ~= "" then
-			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nTuLinh1"], "Tô Linh Hoµn")
+			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nTuLinh1"], "Spirit-Gathering Pill")
 		end
 	end
 	if type(tbAwardList["nTuLinh2"])=="number" then
 		SetTask(3106, GetTask(3106) + tbAwardList["nTuLinh2"],TASK_ACCESS_CODE_OFFLINELIVE)
 		if self.szLogTitle ~= "" then
-			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nTuLinh2"], "§¹i Tô Linh Hoµn")
+			gf_WriteLogEx(self.szLogTitle, self.szLogAction, tbAwardList["nTuLinh2"], "Grand Spirit-Gathering Pill")
 		end
 	end
 	if type(tbAwardList["nTuLinh3"])=="number" then
@@ -300,7 +300,7 @@ function LIB_Award:Punish(tbPunishList)
 		for i=1,getn(tbItemSet) do
 			DelItem(tbItemSet[i]["gdp"][1], tbItemSet[i]["gdp"][2], tbItemSet[i]["gdp"][3], tbItemSet[i]["gdp"][4])
 			Msg2Player("B¹n bÞ mÊt " .. tbItemSet[i]["gdp"][4] .. " " .. tbItemSet[i]["name"])
-			gf_WriteLogEx(self.szLogTitle.." FAIL", "mÊt", tbItemSet[i]["gdp"][4], tbItemSet[i]["name"])
+			gf_WriteLogEx(self.szLogTitle.." FAIL", "lost", tbItemSet[i]["gdp"][4], tbItemSet[i]["name"])
 		end
 	end
 	return 1
@@ -453,7 +453,7 @@ function LIB_Award:CheckMaterial(tbMaterialList, nOption)
 	if type(tbMaterialList["nQuancong"])=="number" then
 		if abs(GetTask(701)) < tbMaterialList["nQuancong"] then
 			if nOption ~= 0 then
-				Talk(1,"","<color=yellow>C«ng tr¹ng<color> c¸c h¹ kh«ng ®ñ <color=yellow>"..tbMaterialList["nQuancong"].."<color>, h·y cè g¾ng thªm.")
+				Talk(1,"","<color=yellow>C«ng tr¹ng<color> c¸c h¹ kh«ng ®ñ <color=yellow>"..tbMaterialList["nQuancong"].."<color>, please keep trying harder.")
 			end
 			return 0
 		end
@@ -462,7 +462,7 @@ function LIB_Award:CheckMaterial(tbMaterialList, nOption)
 	if type(tbMaterialList["nDanhvong"])=="number" then
 		if GetReputation() < tbMaterialList["nDanhvong"] then
 			if nOption ~= 0 then
-				Talk(1,"","<color=yellow>Danh väng<color> c¸c h¹ kh«ng ®ñ <color=yellow>"..tbMaterialList["nDanhvong"].."<color>, h·y cè g¾ng thªm.")
+				Talk(1,"","<color=yellow>Danh väng<color> c¸c h¹ kh«ng ®ñ <color=yellow>"..tbMaterialList["nDanhvong"].."<color>, please keep trying harder.")
 			end
 			return 0
 		end
@@ -471,7 +471,7 @@ function LIB_Award:CheckMaterial(tbMaterialList, nOption)
 	if type(tbMaterialList["nSumon"])=="number" then
 		if GetTask(336) < tbMaterialList["nSumon"] then
 			if nOption ~= 0 then
-				Talk(1,"","<color=yellow>Danh väng s­ m«n<color> c¸c h¹ kh«ng ®ñ <color=yellow>"..tbMaterialList["nSumon"].."<color>, h·y cè g¾ng thªm.")
+				Talk(1,"","<color=yellow>Danh väng s­ m«n<color> c¸c h¹ kh«ng ®ñ <color=yellow>"..tbMaterialList["nSumon"].."<color>, please keep trying harder.")
 			end
 			return 0
 		end
@@ -489,7 +489,7 @@ function LIB_Award:CheckMaterial(tbMaterialList, nOption)
 	if type(tbMaterialList["nBachCau1"])=="number" then
 		if GetTask(2501) < tbMaterialList["nBachCau1"] then
 			if nOption ~= 0 then
-				Talk(1,"","Thêi gian ñy th¸c <color=yellow>B¹ch C©u Hoµn<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nBachCau1"].."<color> phót.")
+				Talk(1,"","Thêi gian ñy th¸c <color=yellow>B¹ch C©u Hoµn<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nBachCau1"].."<color> minutes.")
 			end
 			return 0
 		end
@@ -497,7 +497,7 @@ function LIB_Award:CheckMaterial(tbMaterialList, nOption)
 	if type(tbMaterialList["nBachCau2"])=="number" then
 		if GetTask(2507) < tbMaterialList["nBachCau2"] then
 			if nOption ~= 0 then
-				Talk(1,"","Thêi gian ñy th¸c <color=yellow>§¹i B¹ch C©u Hoµn<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nBachCau2"].."<color> phót.")
+				Talk(1,"","Thêi gian ñy th¸c <color=yellow>§¹i B¹ch C©u Hoµn<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nBachCau2"].."<color> minutes.")
 			end
 			return 0
 		end
@@ -505,7 +505,7 @@ function LIB_Award:CheckMaterial(tbMaterialList, nOption)
 	if type(tbMaterialList["nBachCau3"])=="number" then
 		if GetTask(2508) < tbMaterialList["nBachCau3"] then
 			if nOption ~= 0 then
-				Talk(1,"","Thêi gian ñy th¸c <color=yellow>B¹ch C©u Tiªn §¬n<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nBachCau3"].."<color> phót.")
+				Talk(1,"","Thêi gian ñy th¸c <color=yellow>B¹ch C©u Tiªn §¬n<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nBachCau3"].."<color> minutes.")
 			end
 			return 0
 		end
@@ -514,7 +514,7 @@ function LIB_Award:CheckMaterial(tbMaterialList, nOption)
 	if type(tbMaterialList["nTamThanh1"])=="number" then
 		if EatSanqin(1,0) < tbMaterialList["nTamThanh1"] then
 			if nOption ~= 0 then
-				Talk(1,"","Thêi gian ñy th¸c <color=yellow>Tam Thanh Hoµn<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nTamThanh1"].."<color> phót.")
+				Talk(1,"","Thêi gian ñy th¸c <color=yellow>Tam Thanh Hoµn<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nTamThanh1"].."<color> minutes.")
 			end
 			return 0
 		end
@@ -522,7 +522,7 @@ function LIB_Award:CheckMaterial(tbMaterialList, nOption)
 	if type(tbMaterialList["nTamThanh2"])=="number" then
 		if EatSanqin(2,0) < tbMaterialList["nTamThanh2"] then
 			if nOption ~= 0 then
-				Talk(1,"","Thêi gian ñy th¸c <color=yellow>§¹i Tam Thanh Hoµn<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nTamThanh2"].."<color> phót.")
+				Talk(1,"","Thêi gian ñy th¸c <color=yellow>§¹i Tam Thanh Hoµn<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nTamThanh2"].."<color> minutes.")
 			end
 			return 0
 		end
@@ -530,7 +530,7 @@ function LIB_Award:CheckMaterial(tbMaterialList, nOption)
 	if type(tbMaterialList["nTamThanh3"])=="number" then
 		if EatSanqin(3,0) < tbMaterialList["nTamThanh3"] then
 			if nOption ~= 0 then
-				Talk(1,"","Thêi gian ñy th¸c <color=yellow>Tam Thanh Tiªn §¬n<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nTamThanh3"].."<color> phót.")
+				Talk(1,"","Thêi gian ñy th¸c <color=yellow>Tam Thanh Tiªn §¬n<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nTamThanh3"].."<color> minutes.")
 			end
 			return 0
 		end
@@ -539,7 +539,7 @@ function LIB_Award:CheckMaterial(tbMaterialList, nOption)
 	if type(tbMaterialList["nLucThan1"])=="number" then
 		if EatLiushen(1,0) < tbMaterialList["nLucThan1"] then
 			if nOption ~= 0 then
-				Talk(1,"","Thêi gian ñy th¸c <color=yellow>Lôc ThÇn Hoµn<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nLucThan1"].."<color> phót.")
+				Talk(1,"","Thêi gian ñy th¸c <color=yellow>Lôc ThÇn Hoµn<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nLucThan1"].."<color> minutes.")
 			end
 			return 0
 		end
@@ -547,7 +547,7 @@ function LIB_Award:CheckMaterial(tbMaterialList, nOption)
 	if type(tbMaterialList["nLucThan2"])=="number" then
 		if EatLiushen(2,0) < tbMaterialList["nLucThan2"] then
 			if nOption ~= 0 then
-				Talk(1,"","Thêi gian ñy th¸c <color=yellow>§¹i Lôc ThÇn Hoµn<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nLucThan2"].."<color> phót.")
+				Talk(1,"","Thêi gian ñy th¸c <color=yellow>§¹i Lôc ThÇn Hoµn<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nLucThan2"].."<color> minutes.")
 			end
 			return 0
 		end
@@ -555,7 +555,7 @@ function LIB_Award:CheckMaterial(tbMaterialList, nOption)
 	if type(tbMaterialList["nLucThan3"])=="number" then
 		if EatLiushen(3,0) < tbMaterialList["nLucThan3"] then
 			if nOption ~= 0 then
-				Talk(1,"","Thêi gian ñy th¸c <color=yellow>Lôc ThÇn Tiªn §¬n<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nLucThan3"].."<color> phót.")
+				Talk(1,"","Thêi gian ñy th¸c <color=yellow>Lôc ThÇn Tiªn §¬n<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nLucThan3"].."<color> minutes.")
 			end
 			return 0
 		end
@@ -564,7 +564,7 @@ function LIB_Award:CheckMaterial(tbMaterialList, nOption)
 	if type(tbMaterialList["nTuLinh1"])=="number" then
 		if GetTask(3105) < tbMaterialList["nTuLinh1"] then
 			if nOption ~= 0 then
-				Talk(1,"","Thêi gian ñy th¸c <color=yellow>Tô Linh Hoµn<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nTuLinh1"].."<color> phót.")
+				Talk(1,"","Thêi gian ñy th¸c <color=yellow>Tô Linh Hoµn<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nTuLinh1"].."<color> minutes.")
 			end
 			return 0
 		end
@@ -572,7 +572,7 @@ function LIB_Award:CheckMaterial(tbMaterialList, nOption)
 	if type(tbMaterialList["nTuLinh2"])=="number" then
 		if GetTask(3106) < tbMaterialList["nTuLinh2"] then
 			if nOption ~= 0 then
-				Talk(1,"","Thêi gian ñy th¸c <color=yellow>§¹i Tô Linh Hoµn<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nTuLinh2"].."<color> phót.")
+				Talk(1,"","Thêi gian ñy th¸c <color=yellow>§¹i Tô Linh Hoµn<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nTuLinh2"].."<color> minutes.")
 			end
 			return 0
 		end
@@ -580,7 +580,7 @@ function LIB_Award:CheckMaterial(tbMaterialList, nOption)
 	if type(tbMaterialList["nTuLinh3"])=="number" then
 		if GetTask(3107) < tbMaterialList["nTuLinh3"] then
 			if nOption ~= 0 then
-				Talk(1,"","Thêi gian ñy th¸c <color=yellow>Tô Linh Tiªn §¬n<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nTuLinh3"].."<color> phót.")
+				Talk(1,"","Thêi gian ñy th¸c <color=yellow>Tô Linh Tiªn §¬n<color> kh«ng ®ñ <color=yellow>"..tbMaterialList["nTuLinh3"].."<color> minutes.")
 			end
 			return 0
 		end
@@ -596,7 +596,7 @@ function LIB_Award:PayMaterial(tbMaterialList)
 	-- Pay Kinh Nghiem
 	if type(tbMaterialList["nExp"])=="number" then
 		ModifyExp(-tbMaterialList["nExp"])
-		Msg2Player("Tiªu hao "..tbMaterialList["nExp"].." ®iÓm kinh nghiÖm.")
+		Msg2Player("Consume"..tbMaterialList["nExp"].." ®iÓm kinh nghiÖm.")
 	end
 	-- Pay Item
 	if type(tbMaterialList["item"])=="table" then
@@ -612,17 +612,17 @@ function LIB_Award:PayMaterial(tbMaterialList)
 		local tbTaskSet = tbMaterialList["task"]
 		for i=1,getn(tbTaskSet) do
 			SetTask(tbTaskSet[i][1], GetTask(tbTaskSet[i][1]) - tbTaskSet[i][2])
-			Msg2Player("Tiªu hao "..tbTaskSet[i][2].." "..tbTaskSet[i][3])
+			Msg2Player("Consume"..tbTaskSet[i][2].." "..tbTaskSet[i][3])
 		end
 	end
 -- Pay Quan Cong
 	if type(tbMaterialList["nQuancong"])=="number" then
 		if GetTask(701) > 0 then
 			SetTask(701, GetTask(701) - tbMaterialList["nQuancong"])
-			Msg2Player("Tiªu hao "..tbMaterialList["nQuancong"].." ®iÓm qu©n c«ng.")
+			Msg2Player("Consume"..tbMaterialList["nQuancong"].." ®iÓm qu©n c«ng.")
 		elseif GetTask(701) < 0 then
 			SetTask(701, GetTask(701) + tbMaterialList["nQuancong"])
-			Msg2Player("Tiªu hao "..tbMaterialList["nQuancong"].." ®iÓm qu©n c«ng.")
+			Msg2Player("Consume"..tbMaterialList["nQuancong"].." ®iÓm qu©n c«ng.")
 		end
 	end
 -- Pay Danh Vong
@@ -632,7 +632,7 @@ function LIB_Award:PayMaterial(tbMaterialList)
 -- Pay Su Mon
 	if type(tbMaterialList["nSumon"])=="number" then
 		SetTask(336, GetTask(336) - tbMaterialList["nSumon"])
-		Msg2Player("Tiªu hao "..tbMaterialList["nSumon"].." ®iÓm danh väng s­ m«n.")
+		Msg2Player("Consume"..tbMaterialList["nSumon"].." ®iÓm danh väng s­ m«n.")
 	end
 -- Pay Gold
 	if type(tbMaterialList["nGold"])=="number" then
@@ -641,54 +641,54 @@ function LIB_Award:PayMaterial(tbMaterialList)
 -- Check Bach Cau
 	if type(tbMaterialList["nBachCau1"])=="number" then
 		SetTask(2501, GetTask(2501) - tbMaterialList["nBachCau1"])
-		Msg2Player("Tiªu hao "..tbMaterialList["nBachCau1"].." phót B¹ch C©u Hoµn.")
+		Msg2Player("Consume"..tbMaterialList["nBachCau1"].." phót B¹ch C©u Hoµn.")
 	end
 	if type(tbMaterialList["nBachCau2"])=="number" then
 		SetTask(2507, GetTask(2507) - tbMaterialList["nBachCau2"])
-		Msg2Player("Tiªu hao "..tbMaterialList["nBachCau2"].." phót §¹i B¹ch C©u Hoµn.")
+		Msg2Player("Consume"..tbMaterialList["nBachCau2"].." phót §¹i B¹ch C©u Hoµn.")
 	end
 	if type(tbMaterialList["nBachCau3"])=="number" then
 		SetTask(2508, GetTask(2508) - tbMaterialList["nBachCau3"])
-		Msg2Player("Tiªu hao "..tbMaterialList["nBachCau3"].." phót B¹ch C©u Tiªn §¬n.")
+		Msg2Player("Consume"..tbMaterialList["nBachCau3"].." phót B¹ch C©u Tiªn §¬n.")
 	end
 -- Pay Tam Thanh
 	if type(tbMaterialList["nTamThanh1"])=="number" then
 		EatSanqin(1,-tbMaterialList["nTamThanh1"])
-		Msg2Player("Tiªu hao "..tbMaterialList["nTamThanh1"].." phót Tam Thanh Hoµn.")
+		Msg2Player("Consume"..tbMaterialList["nTamThanh1"].." minutes Three Purities Pill.")
 	end
 	if type(tbMaterialList["nTamThanh2"])=="number" then
 		EatSanqin(2,-tbMaterialList["nTamThanh2"])
-		Msg2Player("Tiªu hao "..tbMaterialList["nTamThanh2"].." phót §¹i Tam Thanh Hoµn.")
+		Msg2Player("Consume"..tbMaterialList["nTamThanh2"].." minutes Great Three Purities Pill.")
 	end
 	if type(tbMaterialList["nTamThanh3"])=="number" then
 		EatSanqin(3,-tbMaterialList["nTamThanh3"])
-		Msg2Player("Tiªu hao "..tbMaterialList["nTamThanh3"].." phót Tam Thanh Tiªn §¬n.")
+		Msg2Player("Consume"..tbMaterialList["nTamThanh3"].." phót Tam Thanh Tiªn §¬n.")
 	end
 -- Pay Luc Than
 	if type(tbMaterialList["nLucThan1"])=="number" then
 		EatLiushen(1,-tbMaterialList["nLucThan1"])
-		Msg2Player("Tiªu hao "..tbMaterialList["nLucThan1"].." phót Lôc ThÇn Hoµn.")
+		Msg2Player("Consume"..tbMaterialList["nLucThan1"].." phót Lôc ThÇn Hoµn.")
 	end
 	if type(tbMaterialList["nLucThan2"])=="number" then
 		EatLiushen(2,-tbMaterialList["nLucThan2"])
-		Msg2Player("Tiªu hao "..tbMaterialList["nLucThan2"].." phót §¹i Lôc ThÇn Hoµn.")
+		Msg2Player("Consume"..tbMaterialList["nLucThan2"].." phót §¹i Lôc ThÇn Hoµn.")
 	end
 	if type(tbMaterialList["nLucThan3"])=="number" then
 		EatLiushen(3,-tbMaterialList["nLucThan3"])
-		Msg2Player("Tiªu hao "..tbMaterialList["nLucThan3"].." phót Lôc ThÇn Tiªn §¬n.")
+		Msg2Player("Consume"..tbMaterialList["nLucThan3"].." phót Lôc ThÇn Tiªn §¬n.")
 	end
 -- Pay Tu Linh
 	if type(tbMaterialList["nTuLinh1"])=="number" then
 		SetTask(3105, GetTask(3105) - tbMaterialList["nTuLinh1"])
-		Msg2Player("Tiªu hao "..tbMaterialList["nTuLinh1"].." phót Tô Linh Hoµn.")
+		Msg2Player("Consume"..tbMaterialList["nTuLinh1"].." minutes Spirit Gathering Pill.")
 	end
 	if type(tbMaterialList["nTuLinh2"])=="number" then
 		SetTask(3106, GetTask(3106) - tbMaterialList["nTuLinh2"])
-		Msg2Player("Tiªu hao "..tbMaterialList["nTuLinh2"].." phót §¹i Tô Linh Hoµn.")
+		Msg2Player("Consume"..tbMaterialList["nTuLinh2"].." minutes Great Spirit Gathering Pill.")
 	end
 	if type(tbMaterialList["nTuLinh3"])=="number" then
 		SetTask(3107, GetTask(3107) - tbMaterialList["nTuLinh3"])
-		Msg2Player("Tiªu hao "..tbMaterialList["nTuLinh3"].." phót Tô Linh Tiªn §¬n.")
+		Msg2Player("Consume"..tbMaterialList["nTuLinh3"].." phót Tô Linh Tiªn §¬n.")
 	end
 	return 1
 end

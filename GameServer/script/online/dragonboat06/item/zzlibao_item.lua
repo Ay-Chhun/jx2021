@@ -2,7 +2,7 @@ Include("\\script\\lib\\globalfunctions.lua");
 function OnUse()
 	local selTab = {
 				"V©ng, ta kh«ng thÓ ®îi ®­îc n÷a./use",
-				"Th«i, ®Ó sau h·y më./nothing",
+				"Never mind, I'll open it later. /nothing",
 				}
 	Say("Bªn trong tói quµ cã rÊt nhiÒu vËt phÈm, xin x¸c nhËn hµnh trang ®ñ kho¶ng trèng vµ søc lùc, b¹n muèn më kh«ng?",getn(selTab),selTab);
 end;

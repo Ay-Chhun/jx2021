@@ -32,13 +32,13 @@ end;
 
 function lspf_AddLingShiInBottleEx(nLevel, nCount)
 	lspf_AddLingShiInBottle(nLevel, nCount);
-	Msg2Player(format("%s nhËn ®­îc %d viªn cÊp %d  Linh Th¹ch, ®· cho vµo Tô Linh §Ønh","C¸c h¹…", nCount, nLevel));
+	Msg2Player(format("%s nhËn ®­îc %d viªn cÊp %d  Linh Th¹ch, ®· cho vµo Tô Linh §Ønh","You", nCount, nLevel));
 	WriteLog(format("%s Get %d Level %d LingShi", GetName(), nCount, nLevel));
 end
 
 function lspf_AddTaiShiLingShiInBottleEx(nLevel, nCount)
 	if 1 == lspf_AddTaiShiLingShiInBottle(nLevel, nCount) then
-		Msg2Player(format("%s nhËn ®­îc %d viªn cÊp %d Th¸i Thñy Linh Th¹ch, ®· cho vµo Tô Linh §Ønh","C¸c h¹…", nCount, nLevel));
+		Msg2Player(format("%s nhËn ®­îc %d viªn cÊp %d Th¸i Thñy Linh Th¹ch, ®· cho vµo Tô Linh §Ønh","You", nCount, nLevel));
 		WriteLog(format("%s Get %d Level %d TaiShiLingShi", GetName(), nCount, nLevel));
 	end
 end

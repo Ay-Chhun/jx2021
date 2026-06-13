@@ -23,7 +23,7 @@ function task_01_00()
     	"Ha! Ha! <sex> rÊt cã chİ khİ nh­ng hiÖn ta ®ang cã viÖc hÑn <sex> vµo dŞp kh¸c.",
     	"ChuyÖn g×? T¹i h¹ gióp ®­îc kh«ng?",
     	"Nguy hiÕm l¾m, ta kh«ng d¸m phiÒn <sex>! Ta cã bøc th­ muèn göi cho Tö H¹c Ch©n Nh©n ë Vâ §ang, cã thÓ gióp ta ®­îc kh«ng?",
-        "§­îc th«i!"
+        "Very well!"
     };
     TalkEx("task_01_01", szTalk);
 end;
@@ -40,12 +40,12 @@ end;
 function task_02_00()
     local szTalk = {
         "Xuèng nói l©u nh­ vËy mµ kh«ng cã tin tøc g× sao?",
-    	"Tham kiÕn tiÒn bèi!",
-    	"MiÔn lÔ! MiÔn lÔ! Kh«ng biÕt t×m bÇn ®¹o cã chuyÖn g×?",
+    	"Greetings, senior!",
+    	"No need for formalities! No need! May I ask what brings you to find this humble priest?",
     	"C«ng T«n Th­ tiÒn bèi nhiÒu ngµy kh«ng nhËn ®­îc tin tøc nªn ph¸i t¹i h¹ ®Õn hái th¨m.",
     	"MÊy h«m nay trong ph¸i gÆp mét sè chuyÖn bÇn ®¹o ch­a liªn l¹c kŞp. HiÖn bÇn ®¹o muèn nhê ng­êi ®Õn ThiÕu L©m t×m nhŞ ®ång.",
     	"§Ó v·n bèi ®Õn ®ã mét chuyÕn!",
-        "Tèt qu¸! §i ®­êng cÈn thËn!"
+        "Excellent! Travel safely on the road!"
     };
     TalkEx("task_02_01", szTalk);
 end;
@@ -60,11 +60,11 @@ end;
 
 function task_03_00()
     local szTalk = {
-    	"Lµ l¸ la..",
+    	"La la la..",
     	"Cho hái ®©y cã ph¶i {th­ kiÕm nhŞ ®ång} kh«ng?",
     	"§óng råi! T¹i h¹ Lôc Th¸i Thanh, huynh ®Ö hay gäi KiÕm ®ång, kÕ bªn lµ s­ ®Ö Lôc TrŞ B×nh hay cßn gäi Th­ ®ång. Chóng Ta phông mÖnh s­ phô lªn ThiÕu L©m, gi÷a ®­êng gÆp LiÖp hé Linh B¶o s¬n, hai bªn x¶y ra tranh chÊp chóng ®¸nh s­ ®Ö bŞ th­¬ng, ta kh«ng d¸m vÒ gÆp s­ phô v× ®· ph¹m giíi nh­ng l¹i sî th­¬ng tİch cña s­ ®Ö...",
     	"Th«i ®Ó ta gióp hai ng­¬i vÒ nãi víi s­ phô.",
-        "§a t¹ <sex>."
+        "Many thanks, <sex>."
     };
     TalkEx("task_03_01", szTalk);
 end;
@@ -114,7 +114,7 @@ function task_06_00()
     };
     local szNot = {
         "Hæ cèt vÉn ch­a t×m ®ñ µ?",
-	    "V·n bèi ®i ngay!"
+	    "This junior will go at once!"
 	};
     if GetItemCount(2,0,55) >= 10 then
         TalkEx("task_06_01", szTalk);
@@ -144,11 +144,11 @@ function task_07_00()
     local szTalk = {
         "Ta mong tin qu¸! Ch­ëng m«n nãi sao?",
     	"Tö H¹c Ch©n Nh©n b¶o hai ng­êi trŞ th­¬ng tr­íc, ®©y lµ linh d­îc.",
-    	"§a t¹ cøu m¹ng!",
+    	"Many thanks for saving our lives!",
     	"[KiÕm ®ång ®­a thuèc cho th­ ®ång]",
     	"Thùc ra kh«ng ph¶i bän ta v« cí ra tay mµ v« t×nh nghe ®­îc bän LiÖp hé nãi vô c­íp s¬n trang, hä ®Şnh giÕt bän ta diÖt khÈu.",
     	"Xem ra hai ng­êi còng cã ı tèt ®Ó ta vÒ bÈm b¸o víi ®¹i nh©n.",
-        "§a t¹ <sex>……"
+        "Many thanks, <sex>"
     };
     TalkEx("task_07_01", szTalk);
 end;
@@ -169,7 +169,7 @@ function task_08_00()
     	"Hõm! Vâ nghÖ häc ch­a tíi ®©u mµ muèn hµnh hiÖp tr­îng nghÜa.",
     	"TiÒn bèi nãi ®óng.",
     	"Kh«ng d¸m! Kh«ng d¸m! Mµ ®óng råi nghe ng­¬i nãi s¬n trang kh«ng lÏ Mé TuyÕt s¬n trang, ng­¬i mau vÒ bÈm b¸o víi C«ng T«n Th­, h×nh nh­ h¾n cã qua l¹i trang chñ n¬i ®ã.",
-    	"V·n bèi ®i ngay!",
+    	"This junior will go at once!",
         "Ng­¬i gióp Vâ §ang rÊt nhiÒu, ë ®©y cã chót quµ xem nh­ b¸o ®¸p."
     };
     TalkEx("task_08_01", szTalk);
@@ -221,7 +221,7 @@ function task_11_00()
         "ChuyÕn ®i lÇn nµy <sex> thu thËp ®­îc g×?",
 	    "Ta ph¸t hiÖn trªn ng­êi LiÖp hé cã cê cña tiªu côc, cã thÓ tiªu s­ ®· bŞ h·m h¹i. ViÖc nµy xö lı ra sao, xin tiÒn bèi chØ gi¸o.",
 	    "ChuyÖn giÕt ng­êi ®Ó cho quan phñ gi¶i quyÕt. Tr­íc m¾t <sex> gióp ta ®Õn Linh B¶o s¬n t×m hµng hãa bŞ thÊt l¹c.",
-        "§­îc th«i!"
+        "Very well!"
     };
     local szNot = {
         "ChuyÕn ®i lÇn nµy <sex> thu thËp ®­îc g×?",
@@ -247,7 +247,7 @@ end;
 function task_12_00()
     local szTalk = {
         "Mé TuyÕt s¬n trang mÊt nhiÒu hµng hãa, phiÒn <sex> t×m vÒ.",
-        "V·n bèi ®i ngay!"
+        "This junior will go at once!"
     };
     TalkEx("task_10_01", szTalk);
 end;
@@ -259,11 +259,11 @@ function task_13_00()
     	"§Ó ta xem! Sao cã bøc th­ Mé TuyÕt s¬n trang göi cho T©y H¹?",
     	"[C«ng T«n Th­ xem kü néi dung trong th­]",
     	"Trong th­ ghi chuyÕn hµng nµy Mé TuyÕt s¬n trang c­íp ®­îc tõ Vâ §ang ph¸i. ChuyÖn nµy cã vÎ kh¶ nghi, ng­¬i mau t×m Tö H¹c Ch©n Nh©n x¸c minh thö xem!",
-        "V·n bèi ®Õn Vâ §ang ®©y!"
+        "This junior has come to Wudang!"
     };
     local szNot = {
         "Mé TuyÕt s¬n trang mÊt nhiÒu hµng hãa, phiÒn <sex> t×m vÒ.",
-        "V·n bèi ®i ngay!"
+        "This junior will go at once!"
     };
     if GetItemCount(2,0,57) >= 20 then
         TalkEx("task_13_01", szTalk);
@@ -287,7 +287,7 @@ function task_14_00()
     	"C«ng T«n Th­ tiÒn bèi nhËn ®­îc tin Vâ §ang bŞ mÊt mét sè vËt phÈm quı nªn ph¸i t¹i h¹ ®Õn hái thö!",
     	"Trong ph¸i chØ cã mÊy ng­êi chøc vŞ cao míi biÕt. C«ng T«n Th­ lÊy tin tøc tõ ®©u?",
     	"Kh«ng giÊu g× t¹i Linh B¶o s¬n v·n bèi ph¸t hiÖn chuyÕn hµng Mé TuyÕt s¬n trang, biÕt ®­îc bªn trong cã vËt phÈm quı ph¸i nªn ®em ®Õn tr¶.",
-    	"Mau ®­a bÇn ®¹o xem!"
+    	"Quickly let this humble priest see!"
 	};
 	TalkEx("task_14_00_0", szTalk);
 end;
@@ -383,7 +383,7 @@ function task_18_00()
     local szNot = {
         "Ng­¬i lµ ai? Kh«ng thÊy ta ®ang th­ëng thøc r­îu sao? §õng quÊy rÇy!",
         "[Xem ra ph¶i ®eo lÖnh bµi míi ®­îc]",
-        "Thuéc h¹ lËp tøc c¸o lui."
+        "Your subordinate takes leave at once."
     };
     if GetItemCount(2,0,58) >= 1 then
         TalkEx("task_18_01", szTalk);
@@ -425,7 +425,7 @@ function task_21_00()
     local szTalk = {
         "Ng­¬i ®¸nh b¹i tªn ®¹o tÆc ch­a?",
         "Tªn giÆc ®ã thµ chÕt còng kh«ng chŞu khuÊt phôc, v·n bèi chØ t×m ®­îc mét tÊm Danh bµi!",
-        "Danh bµi? §­a ta xem!",
+        "A name plate? Give it to me!",
         "[Tö H¹c Ch©n Nh©n cÇm xem rÊt l©u…]",
         "Ng­¬i thö mang cho C«ng T«n Th­ xem, ë ®©y cã chót quµ män xem nh­ bÇn ®¹o t¹ ¬n ng­¬i."
     };
@@ -486,7 +486,7 @@ end;
 function task_25_00()
     local szTalk = {
         "Ng­¬i lµ ng­êi Mé TuyÕt s¬n trang ­? Sao kh«ng thÊy Cöu §Çu Kim Phông?",
-    	"§¹i tû dÆn ta ®Õn ®©y ®­a mËt hµm.",
+    	"Senior sister told me to come here to deliver a secret letter.",
     	"[Th¸c B¹t Kú nhËn mËt hµm]",
     	"Qu©n ®éi ®· chuÈn bŞ s½n sµng ë {KiÕm M«n Quan} chê hiÖu lÖnh {tËp kİch thµnh T­¬ng D­¬ng}, ng­¬i mau vÒ bÈm b¸o víi trang chñ chuÈn bŞ phèi hîp t¸c chiÕn.",
     	"[Kh«ng xong råi qu©n ®éi T©y H¹ ®· tiÕn vµo KiÕm M«n Quan, cÇn ph¶i tiªu diÖt ®éi qu©n tiªn phong tr­íc]"
@@ -593,7 +593,7 @@ function task_32_00()
     local szTalk = {
         "Ta thÊy <sex> ®i h¬i l©u cã chót lo l¾ng nh­ng <sex> b×nh an trë vÒ lµ tèt råi.",
     	"T¹i h¹ t×m ®­îc mÊy bøc th­ trªn ng­êi t­íng lÜnh tiÒn bèi xem qua.",
-    	"§­a ta xem!",
+    	"Give them to me!",
     	"[C«ng T«n Th­ ®äc th­]"
 	};
 	TalkEx("task_32_00_01", szTalk);
@@ -715,7 +715,7 @@ function task_38_00()
     local szTalk = {
         "Ng­¬i lµ ai?",
     	"§©y cã ph¶i lµ §éc Si tiÒn bèi? ë ®©y cã chiÕc b×nh sø chøa d­îc liÖu muèn nhê tiÒn bèi xem gióp.",
-    	"§éc d­îc g× n÷a ®©y? §­a ta xem!",
+    	"What poison is this again? Give it to me!",
     	"[§éc Si xem ngöi xong liÒn lÊy nót chai ®Ëy l¹i]",
     	"§©y lµ Bi T« Thanh Phong, lo¹i ®éc v« s¾c v« vŞ cña NhÊt PhÈm ®­êng, ai tróng ph¶i trong 12 canh giê kh«ng thÓ cö ®éng. Ta cã c¸ch gi¶i! H·y vµo Tróc Ty ®éng t×m N÷ KiÕm kh¸ch lÊy 10 Mª Hån h­¬ng, t×m thªm, 10 Hoµng liªn, 5 phÇn NhiÔu minh ®Ëu."
     };
@@ -725,8 +725,8 @@ end;
 function task_38_00_00()
     local szTalk = {
     	"[§éc Si më b×nh ra hİt m¹nh mét c¸i]",
-    	"§éc Si tiÒn bèi!",
-    	"….",
+    	"Poison Master, senior!",
+    	".",
         "[Xem ra h¾n ta bŞ ®iªn råi, mau gióp t×m thuèc gi¶i th«i]"
     };
     TalkEx("task_38_01", szTalk);
@@ -744,7 +744,7 @@ end;
 
 function task_39_00()
     local szTalk = {
-        "….",
+        ".",
         "[Xem ra h¾n ta bŞ ®iªn råi, mau gióp t×m thuèc gi¶i th«i]"
     };
     TalkEx("task_39_01", szTalk);
@@ -758,16 +758,16 @@ end;
 
 function task_40_00()
     local szTalk = {
-        "….",
-    	"§éc Si tiÒn bèi, thuèc gi¶i ®©y!",
+        ".",
+    	"Poison Master, senior, here is the antidote!",
     	"[§éc Si dïng sè thuèc b¹n mang ®Õn]",
         "Khô…Khô! Bi T« Thanh Phong qu¶ nhiªn lîi h¹i tay ch©n ta ph¶i qua 12 canh giê míi cã thÓ cö ®éng. LÇn nµy l·o phu s¬ ı ®¸nh gi¸ thÊp lo¹i ®éc d­îc nµy hy väng sÏ t×m ra ph­¬ng thuèc gi¶i ®éc. Ng­¬i thö ®Õn NhÊt PhÈm ®­êng xem ng­êi bá ®éc cã mang thuèc gi¶i kh«ng?"
     };
     local szNot = {
-        "….",
-    	"§éc Si tiÒn bèi, thuèc gi¶i ®©y!",
+        ".",
+    	"Poison Master, senior, here is the antidote!",
     	"[§éc Si dïng sè thuèc b¹n mang ®Õn]",
-    	"….",
+    	".",
     	"Xem ra l­îng thuèc gi¶i kh«ng ®ñ."
     };
     if GetItemCount(2,0,65) >= 10 and GetItemCount(1,2,3) >= 10 and GetItemCount(1,3,11) >= 5 then
@@ -851,7 +851,7 @@ function task_44_00()
         "Tiªn sinh ®õng véi vui mõng, chuyÖn nµy kh«ng ®¬n gi¶n ®©y lµ vËt t×m ®­îc trong th­¬ng khè T©y H¹.",
         "[Mang c«ng v¨n Liªu Quèc giao cho C«ng T«n Th­]",
         "§óng nh­ <sex> dù ®o¸n cuéc tÊn c«ng lÇn nµy do n­íc Liªu khiªu khİch, hä dïng thñ ®o¹n khuyªn phôc T©y H¹ bao quanh KiÕm C¸c víi ı ®å c«ng ®¸nh thµnh T­¬ng D­¬ng. <sex> gióp ta ®Õn Phôc Ng­u s¬n dß la ®­îc kh«ng?",
-        "V·n bèi ®i ngay!"
+        "This junior will go at once!"
     };
     TalkEx("task_44_01", szTalk);
 end;
@@ -867,7 +867,7 @@ end;
 
 function task_45_00()
     local szTalk = {
-        "Xin tha m¹ng!",
+        "Spare me!",
     	"Ng­¬i lµ ai? Sao thÊy ta l¹i la to¸ng lªn?",
     	"Kh«ng ph¶i ng­¬i ®Şnh truy giÕt ta µ?",
     	"Ng­¬i vµ ta kh«ng thï kh«ng o¸n, giÕt ng­¬i lµm g×?",
@@ -1005,7 +1005,7 @@ function task_53_00()
     local szTalk = {
         "<sex> vÒ råi ­? Huynh ®Ö cña ta xem nh­ ®­îc cøu råi.",
     	"Tiªn ®¬n ®©y mau ®­a cho huynh ®Ö ng­¬i.",
-    	"[L¹c Ph¸ch S¬n tÆc uèng thuèc]",
+    	"[The Fuyu Mountain bandit drinks the medicine]",
     	"§¹i ¬n ®¹i ®øc cña <sex> kh«ng biÕt lÊy g× ®Òn ®¸p, lóc n·y tiÓu nh©n nghe ®¸m Tµ t¨ng cã nh¾c bµy bè trËn ph¸p trong KiÕm M«n Quan, ®¹i nh©n nhí thËn träng! §©y cã tÊm b¶n ®å Phôc Ng­u s¬n vµ t×nh h×nh binh lùc qu©n Liªu tÆng ®¹i nh©n xem nh­ ®Òn ¬n cøu m¹ng.",
         "§a t¹ ng­¬i! HÑn ngµy gÆp l¹i!"
     };
@@ -1030,7 +1030,7 @@ function task_54_00()
     	"Xem ra n­íc Liªu vµ T©y H¹ ®· chuÈn bŞ s½n nh­ng tr­íc giê tµ kh«ng thÓ th¾ng ch¸nh, theo ı ta nÕu ®Ó mèi quan hÖ hä v÷ng ch¾c th× khã mµ c«ng ph¸.",
     	"Ta ph¶i lµm sao ®©y?",
     	"ChØ cßn c¸ch chia binh hai ®­êng cïng tiÕn ®¸nh. ChuyÖn nµy cÇn ph¶i bµn b¹c kü! Ng­¬i mau t×m Tæng binh T­¬ng D­¬ng th­¬ng thuyÕt tiÕn ®¸nh doanh tr¹i Liªu qu©n tr­íc. Cßn vÒ trËn ph¸p ph¶i nhê Tö H¹c Ch©n Nh©n chØ c¸ch ph¸ gi¶i. <sex> xin h·y lËp tøc lªn ®­êng!",
-        "T¹i h¹ ®i ngay!"
+        "This humble one goes now!"
     };
     TalkEx("task_54_01", szTalk);
 end;
@@ -1064,7 +1064,7 @@ end;
 function two_02_00()
     local szTalk = {
         "T×m ®­îc råi ­?",
-        "§· chuÈn bŞ ®ñ!",
+        "I have prepared enough!",
         "[Tö H¹c Ch©n Nh©n lÊy mét chiÕc b×nh b»ng ®ång bá thuèc vµo trong niÖm chó]",
         "Ta ®· chuÈn bŞ Ph¸ Chó thñy chØ cÇn ng­¬i dïng chóng t­íi vµo ng­êi chñ tr× trËn ph¸p lµ ®­îc.",
         "Cã c¸ch hãa gi¶i råi!",
@@ -1143,7 +1143,7 @@ end;
 
 function task_57_00()
     local szTalk = {
-        "¢n nh©n t×m ta cã chuyÖn g×?",
+        "Benefactor, you seek me on what matter?",
         "Ng­¬i cã nghe qua m¶nh b¶n ®å S¬n Hµ X· T¾c ch­a?",
         "(Suy nghÜ), nhí ra råi ®ã lµ mãn b¶o bèi cña tr¹i chñ ta. Tõ lóc cã nã «ng ta tá th¸i ®é nãng n¶y víi c¸c huynh ®Ö, th­êng la m¾ng ®¸nh ®Ëp. H¬n n÷a b¶n ®å xuÊt hiÖn Liªu binh vµ T¨ng nh©n T©y H¹ còng kĞo ®Õn, xem ra ®©y kh«ng ph¶i vËt c¸t t­êng.",
         "Tr¹i chñ cña ng­¬i hiÖn giê ë ®©u?",
@@ -1179,7 +1179,7 @@ end;
 
 function task_61_00()
     local szTalk = {
-        "<sex> cè g¾ng thªm."
+        "Keep up your efforts, <sex>."
     };
     TalkEx("", szTalk);
 end;

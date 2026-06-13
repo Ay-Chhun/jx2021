@@ -21,7 +21,7 @@ function OnDeath(id, f, x)
 	gf_TeamOperateEX(mg_ModifyScore, SLYMG_SCORE_BOSS[m])
 	gf_TeamOperateEX(function (mapId)
 		if GetFreeItemRoom() > 1 then
-			gf_AddItemEx2({2,1,30910,SLYMG_BOSS_AWARD_BOOK[mapId]}, "Danh s¸ch kh«ng ®Çy ®ñ", "Long Hæ §­êng", "Long Hæ §­êng", 0, 1);
+			gf_AddItemEx2({2,1,30910,SLYMG_BOSS_AWARD_BOOK[mapId]}, "Danh s¸ch kh«ng ®Çy ®ñ", "Longhu Hall", "Longhu Hall", 0, 1);
 		end
 	end, m)
 	mg_BossDropItem(m, id)

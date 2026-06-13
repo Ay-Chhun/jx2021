@@ -8,20 +8,20 @@ Include("\\script\\online\\zgc_public_fun.lua")
 MAX_SEL_PER_PAGE = 5;
 
 way_book ={
-	{"DÞch C©n Kinh (ThiÕu L©m tôc gia)",0,107,101},
+	{"Yijin Jing (Shaolin lay disciple)",0,107,101},
 	{"Nh­ Lai Kinh (ThiÕu L©m vâ t¨ng)",0,107,102},
 	{"TÈy Tñy Kinh (ThiÕu L©m thiÒn t¨ng)",0,107,103},
 	{"HÊp tinh mËt tÞch (§­êng M«n)",0,107,104},
 	{"V¹n T­îng mËt tÞch (Nga My phËt gia)",0,107,105},
 	{"Thiªn ¢m ChÊn Hån phæ (Nga My tôc gia)",0,107,106},
-	{"Gi¸ng Long Ch­ëng phæ (C¸i Bang TÜnh y)",0,107,107},
+	{"Subduing Dragon Palm Score (Beggars' Sect Clean-robe)",0,107,107},
 	{"§¶ CÈu TrËn phæ (C¸i Bang « y)",0,107,108},
 	{"Th¸i Cùc KiÕm Kinh (Vâ §ang ®¹o gia)",0,107,109},
 	{"Th¸i Cùc T©m Kinh (Vâ §ang tôc gia)",0,107,110},
 	{"Toµn Long th­¬ng phæ (D­¬ng M«n th­¬ng kþ)",0,107,111},
 	{"B¸ V­¬ng tiÔn phæ (D­¬ng M«n cung kþ)",0,107,112},
 	{"Thi V­¬ng mËt tÞch (HiÖp §éc)",0,107,113},
-	{"Tµ Cæ mËt tÞch (Ngò §éc Cæ S­)",0,107,114}
+	{"Heretic Gu Manual (Five Poisons Gu Master)",0,107,114}
 }
 --**********************************ÎïÆ·Ê¹ÓÃÖ÷º¯Êý************************************
 function OnUse(goods_index)
@@ -44,12 +44,12 @@ function show_page(nPageNum,nRecordCount)
 		tinsert(selTab,way_book[i][1].."/#book_add_dtm("..i..")");
 	end;
 	if nPageNum ~= 1 then
-		tinsert(selTab,"\n Trang tr­íc/#show_page("..(nPageNum-1)..","..nRecordCount..")");
+		tinsert(selTab,"\n Previous page/#show_page("..(nPageNum-1)..","..nRecordCount..")");
 	end;
 	if nPageNum ~= ceil(nRecordCount/MAX_SEL_PER_PAGE) then
 		tinsert(selTab,"\n Trang sau/#show_page("..(nPageNum+1)..","..nRecordCount..")");	
 	end;
-	tinsert(selTab,"\n §ãng");
+	tinsert(selTab,"\n Close");
 	Say("Xin chän MËt tÞch trÊn ph¸i cÇn ®æi!",getn(selTab),selTab);
 end
 
@@ -57,7 +57,7 @@ end
 function book_add_dtm(book_seq)
 	Say("B¹n ®· chän"..way_book[book_seq][1]..",muèn ®æi kh«ng?",
 	2,
-	"§ång ý/#book_add("..book_seq..")",
+	"Agree/#book_add("..book_seq..")",
 	"§Ó ta suy nghÜ l¹i/end_dialog")
 end
 --***********************************ÃØ¼®Ôö¼Ó**************************************

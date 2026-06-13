@@ -50,7 +50,7 @@ function use_ls_cb(nCount)
 	if DelItem(tItemInfo[nTabIndex][1], tItemInfo[nTabIndex][2], tItemInfo[nTabIndex][3], nCount) == 1 then
 		local nRet = EatLiushen(nTabIndex, tItemInfo[nTabIndex][4] * nCount)
 		if nRet > 0 then
-			Msg2Player("B¹n nhËn ®­îc "..tItemInfo[nTabIndex][6].." cã"..tItemInfo[nTabIndex][6].." thêi gian "..nRet.." phót ")
+			Msg2Player("B¹n nhËn ®­îc "..tItemInfo[nTabIndex][6].."have"..tItemInfo[nTabIndex][6].."time"..nRet.." minutes")
 			--cdkey
 			if 1 == nTabIndex then
 				SendScript2VM("\\script\\function\\cdkey\\ck_head.lua", "_ck_UseItemLiuShen()");

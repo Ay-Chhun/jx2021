@@ -29,7 +29,7 @@ local nState = GetTask(TASK_KILLER_STATE_ID)
 			end;
 
 			nTime = TurnTime(nTime);
-			Say("§Õn <color=yellow>"..nMapName.."("..nMx..", "..nMy..")<color>: <color=yellow>"..nKillerName.."<color>! (Thêi gian cßn:"..nTime..")",0);
+			Say("Go to <color=yellow>"..nMapName.."("..nMx..", "..nMy..")<color>: <color=yellow>"..nKillerName.."<color>! (Thêi gian cßn:"..nTime..")",0);
 			
 	elseif nState == 2 then
 		

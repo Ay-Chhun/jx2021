@@ -9,20 +9,20 @@ SZ_THIS_BOXES_SCRIPT = "\\script\\missions\\taiyi\\box\\boxes.lua"
 T_BOX = {
 	--award_type(1 dice 2 dice 3 card),award,consume,
 	--award
-	[1] = {"tongbaoxiang", "R­¬ng §ång", 1,"YXTY_tong1", 1},
-	[2] = {"tongbaoxiang", "R­¬ng §ång", 1,"YXTY_tong2", 1},
-	[3] = {"tongbaoxiang", "R­¬ng §ång", 1,"YXTY_tong3", 1},
-	[4] = {"tongbaoxiang", "R­¬ng §ång", 1,"TY_tong1", 0},
-	[5] = {"tongbaoxiang", "R­¬ng §ång", 1,"TY_tong2", 0},
-	[6] = {"tongbaoxiang", "R­¬ng §ång", 1,"TY_tong3", 0},
+	[1] = {"tongbaoxiang", "Copper Chest", 1,"YXTY_tong1", 1},
+	[2] = {"tongbaoxiang", "Copper Chest", 1,"YXTY_tong2", 1},
+	[3] = {"tongbaoxiang", "Copper Chest", 1,"YXTY_tong3", 1},
+	[4] = {"tongbaoxiang", "Copper Chest", 1,"TY_tong1", 0},
+	[5] = {"tongbaoxiang", "Copper Chest", 1,"TY_tong2", 0},
+	[6] = {"tongbaoxiang", "Copper Chest", 1,"TY_tong3", 0},
 	--award, consume
-	[11] = {"yinbaoxiang", "R­¬ng B¹c", 2,"YXTY_yin", "csm_1_tianjiaoling", 1},
-	[12] = {"yinbaoxiang", "R­¬ng B¹c", 2,"TY_yin", "csm_1_tianjiaoling", 0},
+	[11] = {"yinbaoxiang", "Silver Chest", 2,"YXTY_yin", "csm_1_tianjiaoling", 1},
+	[12] = {"yinbaoxiang", "Silver Chest", 2,"TY_yin", "csm_1_tianjiaoling", 0},
 	--free_award, ib_award,ib_consume,t_ib_consmue_ui,mapId
-	[21] = {"jinbaoxiang", "Kim R­¬ng", 3,"YXTY_jin1_free", "YXTY_jin1_IB", "csm_1_tianjiaoling",{2,97,236,2},6075, 1},
-	[22] = {"jinbaoxiang", "Kim R­¬ng", 3,"YXTY_jin2_free", "YXTY_jin2_IB", "csm_1_tianjiaoling",{2,97,236,2},6075, 1},
-	[23] = {"jinbaoxiang", "Kim R­¬ng", 3,"TY_free1", "TY_IB1", "csm_1_tianjiaoling",{2,97,236,2},6075, 0},
-	[24] = {"jinbaoxiang", "Kim R­¬ng", 3,"TY_free2", "TY_IB2", "csm_1_tianjiaoling",{2,97,236,2},6075, 0},
+	[21] = {"jinbaoxiang", "Gold Chest", 3,"YXTY_jin1_free", "YXTY_jin1_IB", "csm_1_tianjiaoling",{2,97,236,2},6075, 1},
+	[22] = {"jinbaoxiang", "Gold Chest", 3,"YXTY_jin2_free", "YXTY_jin2_IB", "csm_1_tianjiaoling",{2,97,236,2},6075, 1},
+	[23] = {"jinbaoxiang", "Gold Chest", 3,"TY_free1", "TY_IB1", "csm_1_tianjiaoling",{2,97,236,2},6075, 0},
+	[24] = {"jinbaoxiang", "Gold Chest", 3,"TY_free2", "TY_IB2", "csm_1_tianjiaoling",{2,97,236,2},6075, 0},
 }
 
 NPC_TEMP_BOX_ID = 1 --idx of T_BOX
@@ -190,7 +190,7 @@ function _box_yin_spe_loot(tBox, npcIndex)
 		return 0;
 	end
 	local tSel = {
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	}
 	local OldPlayerIndex = PlayerIndex
 	if daye == PlayerIndex then

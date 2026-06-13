@@ -1,13 +1,13 @@
 PosID	TriggerID	CustomID	Text
 ID ®Þa ®iÓm	ID kÝch ho¹t	ID tù ®Þnh nghÜa	Tªn ®Þa ®iÓm
-204	1600	600	ThiÕu L©m
-312	1601	601	Vâ §ang
+204	1600	600	Shaolin
+312	1601	601	Wudang
 303	1602	602	Nga My
-209	1603	603	C¸i Bang
+209	1603	603	Beggars' Sect
 305	1604	604	§­êng M«n
 218	1605	605	Linh B¶o s¬n
 217	1606	606	D· Tr­ l©m
-106	1607	607	Long TuyÒn Th«n
+106	1607	607	Long Tuyen Village
 309	1608	608	KiÕm C¸c Thôc ®¹o
 604	1609	609	Nh¹n M«n quan
 151	1610	610	V©n Méng Tr¹ch
@@ -17,10 +17,10 @@ ID ®Þa ®iÓm	ID kÝch ho¹t	ID tù ®Þnh nghÜa	Tªn ®Þa ®iÓm
 107	1614	614	Vò Di s¬n
 311	1615	615	Phôc Ng­u s¬n
 103	1616	616	§«ng H¶i H¶i T©n 1
-208	1617	617	L­¬ng S¬n B¹c
+208	1617	617	Liang Son Bac
 104	1618	618	§«ng H¶i H¶i T©n 2
-601	1619	619	§¹i Th¶o Nguyªn 1
-602	1620	620	§¹i Th¶o Nguyªn 2
+601	1619	619	Great Grassland 1
+602	1620	620	Great Grassland 2
 600	1621	621	Bé l¹c V­¬ng Kú
 315	1622	622	B¨ng T©m ®éng_1
 316	1623	623	B¨ng T©m ®éng_2

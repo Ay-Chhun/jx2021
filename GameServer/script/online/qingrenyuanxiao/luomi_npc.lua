@@ -6,7 +6,7 @@ Include("\\script\\online\\qingrenyuanxiao\\qryx_head.lua")
 
 function main()
 	local selTab = {
-				"Ta ®ång ı/ok",
+				"I agree/ok",
 				"§Ó ta suy nghÜ l¹i/nothing"
 				}
 	if NoTaskBegin() == 1 then
@@ -19,7 +19,7 @@ end
 function ok()
 	if GetTask(TASK_LOVESTORY4) == 0 then
 		if GetCash() == 214 then
-			Say("¤i!...",0)
+			Say("Oh!...",0)
 		elseif GetSex() == 2 and GetCash() == 521 then
 			Say("C« n­¬ng cßn ®Ñp h¬n c¶ Chu LÖ, xem ra ta v­ît qua bao thÕ kû ®Õn víi thÕ giíi vâ l©m 2 lµ ®Ó héi ngé cïng n÷ hiÖp.",0)
 		else
@@ -68,16 +68,16 @@ function ok()
 				"Hai bªn hËn nhau nh­ thÕ, nÕu thiªn h¹ nµy chØ cã ta vµ nµng th× tèt biÕt mÊy, sÏ kh«ng ph¶i xÊu mÆt! ",
 				"Sao l¹i xÊu mÆt?",
 				"Hai bªn lµm rïm ben lªn cßn kh«ng xÊu mÆt sao? §Ó chøng tá t×nh yªu cña ta ®èi víi nµng, ta sÏ tù tö!",
-				"Tù tö?",
+				"Take your own life?",
 				"Ta kh«ng chØ muèn tù tö, mµ ta ®Şnh cïng chÕt víi nµng! ",
 				"ThËt lµ c¶m ®éng! ",
 				"Th«i, kh«ng cÇn khuyªn ta n÷a? Ta ®· chuÈn bŞ thuèc ®éc, thuèc nµy cßn ®éc h¬n hãa cèt miªn ch­ëng.",
-				"§Ó ta vÒ khuyªn Chu LÖ.")
+				"Let me go back and persuade Zhu Li.")
 		local OldPlayerIndex = PlayerIndex 
 		for i=1,2 do
 			PlayerIndex = GetTeamMember(i)
 			SetTask(TASK_LOVESTORY4,6)
-			TaskTip("Khuyªn Chu LÖ")
+			TaskTip("Persuade Zhu Li")
 		end
 		PlayerIndex = OldPlayerIndex		
 	elseif CanAcceptTask(TASK_LOVESTORY4,6) == 1 or CanAcceptTask(TASK_LOVESTORY4,7) == 1 then

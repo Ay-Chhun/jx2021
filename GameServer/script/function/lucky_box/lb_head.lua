@@ -180,7 +180,7 @@ function lb_CostOneLuckyCoin(nLotteryType, nLotteryCount)
 		return 0;
 	end
 --	Observer:onEvent(SYSEVENT_GLOBAL_COST_IB, LB_FREE_COST_ITEM)
-	Msg2Player(format("Tiªu hao [%s]*%d", LB_FREE_COST_ITEM[5], LB_FREE_COST_ITEM[4]));
+	Msg2Player(format("Consume [%s]*%d", LB_FREE_COST_ITEM[5], LB_FREE_COST_ITEM[4]));
 	local nCount = gf_GetTaskByte(TASKID_LUCKYBOX_LOTTERY, 1);
 	--Í³¼ÆÃâ·Ñ¿ªÆôÈËÊý
 	if LB_FREE_USE_MAX == nCount then
@@ -228,7 +228,7 @@ function lb_CostOneIBItem(nLotteryType, nLotteryCount)
 	end
 	--Observer:onEvent(SYSEVENT_GLOBAL_COST_IB, LB_IB_COST_ITEM)
 	FireEvent("event_ib_cost", LB_IB_COST_ITEM[1], LB_IB_COST_ITEM[2], LB_IB_COST_ITEM[3], LB_IB_COST_ITEM[4])
-	Msg2Player(format("Tiªu hao [%s]*%d", LB_IB_COST_ITEM[5], LB_IB_COST_ITEM[4]));
+	Msg2Player(format("Consume [%s]*%d", LB_IB_COST_ITEM[5], LB_IB_COST_ITEM[4]));
 		
 	--¼ÇÂ¼³é½±½á¹û
 	gf_SetMyTaskBit(TASKID_LUCKYBOX_LOTTERY, 14, 16, 1, TASK_ACCESS_CODE_LUCKY_BOX);
@@ -291,7 +291,7 @@ function lb_CostMoreIBItem(nLotteryType, nLotteryCount)
 	end
 	--Observer:onEvent(SYSEVENT_GLOBAL_COST_IB, LB_IB_COST_ITEM)
 	FireEvent("event_ib_cost", LB_IB_COST_ITEM[1], LB_IB_COST_ITEM[2], LB_IB_COST_ITEM[3], LB_IB_COST_ITEM[4])
-	Msg2Player(format("Tiªu hao [%s]*%d", LB_IB_COST_ITEM[5], LB_IB_COST_ITEM[4]));
+	Msg2Player(format("Consume [%s]*%d", LB_IB_COST_ITEM[5], LB_IB_COST_ITEM[4]));
 	
 	--Ê¹ÓÃ1´ÎÌì½¾Áî
 	gf_SetTaskByte(TASKID_LUCKYBOX_LOTTERY, 4, nIBTimes - 1, TASK_ACCESS_CODE_LUCKY_BOX);
@@ -360,7 +360,7 @@ function lb_ActivityInfo()
 	local tbSay = {};
 	tbSay.msg = "<color=green> §¹i Sø ho¹t ®éng: <color>"..strTitle;
 	tbSay.sel = {
-		{"\n rót lui","nothing"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -370,7 +370,7 @@ function lb_ItemDorp()
 	local tbSay = {};
 	tbSay.msg = "<color=green> §¹i Sø ho¹t ®éng: <color>".."§©y lµ vËt phÈm míi cña ho¹t ®éng lÇn nµy, h·y xem thö lµm sao cã ®­îc!".."\n"..strTitle;
 	tbSay.sel = {
-		{"\n rót lui","nothing"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);
 end

@@ -247,7 +247,7 @@ end;
 function ConfirmQuestion()
 
 	if GetStamina()<=QA_MINSTAMINA + 1 then
-		Say(QA_TitleText.."VŞ "..GetPlayerSex().."tr«ng cã vÎ mÖt mái? Chi b»ng nghØ ng¬i <color=yellow>bæ sung chót thÓ lùc<color> råi ®Õn!",0);
+		Say(QA_TitleText.."Position"..GetPlayerSex().."tr«ng cã vÎ mÖt mái? Chi b»ng nghØ ng¬i <color=yellow>bæ sung chót thÓ lùc<color> råi ®Õn!",0);
 		return
 	end;
 

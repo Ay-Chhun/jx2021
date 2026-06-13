@@ -55,7 +55,7 @@ function main()
 	if GetLifeSkillMaxLevel(1, 3) == 79 then
 		tinsert(strtab, "Muèn häckü n¨ng cao cÊp h¬n/update_max_skill_level");
 	end 
-	tinsert(strtab,"Rêi khái/SayHello");
+	tinsert(strtab,"Leave/SayHello");
 	Say(strTitle.."Ta tªn M¹c Tam truyÒn nh©n ®êi thø 73 cña Can T­¬ng M¹c Tµ, së tr­êng ChÕ t¹o thÇn binh lîi khİ, nhÊt lµ nh÷ng binh khİ ng¾n nh­: §ao, KiÕm, bao tay. Ch¼ng hay ta cã thÓ gióp g× cho b»ng h÷u?",
     	getn(strtab),
     	strtab)
@@ -71,7 +71,7 @@ function learn_all_recipe()
 		"Xem nhËn ®­îc nhiÖm vô vò khİ cÊp 76 kh«ng/get_76_task",
 		"Häc c¸ch phèi chÕ cÊp 76/relearn_76_recipe",
     	"Häc thªm c¸ch phèi chÕ song ®ao/luaLearnRecipeDdao",
-    	"Rêi khái/SayHello")
+    	"Leave/SayHello")
 end;
 
 
@@ -131,10 +131,10 @@ function relearn_76_recipe()
 				HaveLearnRecipe(804) == 0) then
 				Say("H·y chän 1 lo¹i vò khİ b¹n muèn häc c¸ch chÕ t¹o:",
 					5,
-					"Hé thñ/learn_long_1",   
+					"Defensive stance/learn_long_1",   
 					"KiÕm/learn_long_2",  
 					"§ao/learn_long_3",    
-					"Song ®ao/learn_long_4",    
+					"Twin sabers/learn_long_4",    
 					"Ta suy nghÜ l¹i/SayHello")
 			else
 				Say("B¹n ®· häc ®­îc ph­¬ng ph¸p phèi chÕ míi!", 0)
@@ -612,7 +612,7 @@ function bagua()
 	"Lµm sao chÕ t¹o trang bŞ cã lç kh¶m n¹m/kongzhuangbeizhizuo",
 	"VËt phÈm thªm vµo cã t¸c dông g×/tianjiawu",
 	"Lµm sao trang bŞ ®­îc chÕ t¹o thµnh trang bŞ B¸t Qu¸i/xiangqianzhuyi",
-	"§Õn hái th¨m th«i mµ!/SayHello"
+	"Just dropping by to say hello!/SayHello"
 	)
 end
 
@@ -647,7 +647,7 @@ end
 
 function update_max_skill_level()
 	Say(strTitle..format("Më réng cÊp kü n¨ng s¶n xuÊt cÇn kü n¨ng thu thËp ®¹t cÊp 79 ®ång thêi tiªu hao %d Vµng", 1000), 
-		2, "§ång ı/update_max_skill_level_ensure", "T¹i h¹ chØ xem qua th«i/SayHello")
+		2, "Agree/update_max_skill_level_ensure", "T¹i h¹ chØ xem qua th«i/SayHello")
 end
 
 function update_max_skill_level_ensure()

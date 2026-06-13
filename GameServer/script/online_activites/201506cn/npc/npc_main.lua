@@ -18,31 +18,31 @@ tExchange = {
 	gtNormalExchange:new(),--Î÷ÓòÃÜÐÅ
 }
 tExchange[1].tConsume ={
-	{"Cèng PhÈm T©y Vùc", 2, 1, 30871, 10},
+	{"Western Region Tribute", 2, 1, 30871, 10},
 	{"Vµng", -1, -1, -1, 2},
 }
 tExchange[1].tAward ={
-	{"Hép Quµ B¸nh Vu«ng", 2, 1, 30872, 1},
+	{"Square Cake Gift Box", 2, 1, 30872, 1},
 }
 tExchange[2].tConsume ={
-	{"Cèng PhÈm T©y Vùc", 2, 1, 30871, 1},
-	{"H­¬ng LiÖu T©y Vùc", 2, 1, 30874, 1},
+	{"Western Region Tribute", 2, 1, 30871, 1},
+	{"Western Region Incense", 2, 1, 30874, 1},
 }
 tExchange[2].tAward ={
-	{"Hép Quµ B¸nh Trßn", 2, 1, 30873, 1},
+	{"Round Cake Gift Box", 2, 1, 30873, 1},
 }
 tExchange[3].tConsume ={
 	{"Vµng", -1, -1, -1, 10},
 }
 tExchange[3].tAward ={
-	{"Cèng PhÈm T©y Vùc", 2, 1, 30871, 1},
+	{"Western Region Tribute", 2, 1, 30871, 1},
 }
 tExchange[4].tConsume ={
 	{"MËt Th­ T©y Vùc", 2, 1, 30870, 1},
 }
 tExchange[4].tAward ={
 	{"M¶nh Thiªn Cang", 2, 1, 30390, 25},
-	{"Cèng PhÈm T©y Vùc", 2, 1, 30871, 100},
+	{"Western Region Tribute", 2, 1, 30871, 100},
 	{"LuyÖn", -2, 0, 0, 1000},
 }
 tExchange[4].tRoomWeight = {2,100}
@@ -56,8 +56,8 @@ function npc_talk_shop_1506()
 	local tbSay = {}
 	tinsert(tbSay, format("%s/#do_exchange(%d)", "ChÕ t¹o Hép Quµ B¸nh Vu«ng", 1))
 	tinsert(tbSay, format("%s/#do_exchange(%d)", "ChÕ t¹o Hép Quµ B¸nh Trßn", 2))
-	tinsert(tbSay, format("%s/#do_exchange(%d)", "Mua Cèng PhÈm T©y Vùc", 3))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/#do_exchange(%d)", "Buy Western Region Tribute", 3))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 	Say(szTitle, getn(tbSay), tbSay)
 end
 --ÖÆ×÷ôÕ×Ó
@@ -74,7 +74,7 @@ function npc_talk_main_1506()
 	tinsert(tbSay, format("%s/act_1", "Ho¹t ®éng Mïa hÌ nãng báng"))
 	tinsert(tbSay, format("%s/act_2", "Ho¹t ®éng b¸nh ch­ng th¬m ngon"))
 	
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 	
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -83,8 +83,8 @@ function act_1()
 	local szTitle = format("%s:%s", SZ_NPC_NAME, "GÇn ®©y §iÓm Th­¬ng S¬n, Thanh Thµnh S¬n vµ D­îc V­¬ng Cèc cã rÊt nhiÒu nh©n vËt thÇn bÝ ngôy trang thµnh ng­êi b¶n ®Þa, Vâ L©m Minh nghi ngê do Thiªn ¢m Gi¸o §å ngôy trang thµnh, cã liªn quan ®Õn viÖc c­íp vËt phÈm, ®Æc biÖt th«ng b¸o cho §¹i Sø Ho¹t §éng triÖu tËp c¸c hiÖp kh¸ch ®i tiªu diÖt, nÕu ph¸t hiÖn MËt Th­ T©y Vùc h·y mang vÒ cho §¹i Sø Ho¹t §éng ®Ó nhËn phÇn th­ëng, khi truy ®uæi Ng­êi ThÇn BÝ nhËn ®­îc c¸c cèng phÈm ®Òu thuéc vÒ c¸c hiÖp kh¸ch.")
 	local tbSay = {}
 	tinsert(tbSay, format("%s/act_1_award", "Nép MËt Th­ T©y Vùc"))
-	tinsert(tbSay, format("%s/npc_talk_main_1506", "VÒ trang tr­íc"))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/npc_talk_main_1506", "Return to previous page"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 	
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -100,8 +100,8 @@ function act_2()
 	local szTitle = format("%s:%s", SZ_NPC_NAME, "Cèng PhÈm T©y Vùc mµ c¸c ®¹i hiÖp ®o¹t vÒ ®· bÞ hao hôt mÊt mét Ýt, nh­ng còng kh«ng lµm khã ®­îc Chñ Töu LÇu, h·y ®i t×m «ng Êy ®Ó nhê lµm ra b¸nh ch­ng §oan Ngä th¬m ngon. NÕu ®¹i hiÖp cã thªm nguyªn liÖu th× Chñ Töu LÇu sÏ lµm ra b¸nh ch­ng ngon h¬n n÷a. Trong tói ®¹i hiÖp kh«ng cã cèng phÈm ­? H×nh nh­ Chñ Töu LÇu còng cã b¸n, h·y ®Õn ®ã mua råi lµm b¸nh còng ®­îc.")
 	local tbSay = {}
 	tinsert(tbSay, format("%s/act_1_award", "Nép MËt Th­ T©y Vùc"))
-	tinsert(tbSay, format("%s/npc_talk_main_1506", "VÒ trang tr­íc"))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/npc_talk_main_1506", "Return to previous page"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 	
 	Say(szTitle, getn(tbSay), tbSay)
 end

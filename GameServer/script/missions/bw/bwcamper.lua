@@ -1,7 +1,7 @@
 Include("\\script\\missions\\bw\\bwhead.lua");
 
 function main()
-	Say("B¹n muèn t¹m thêi rêi khái L«i ®µi tû vâ ­?",2,"Muèn/yes","Kh«ng cÇn ®©u!/no")
+	Say("B¹n muèn t¹m thêi rêi khái L«i ®µi tû vâ ­?",2,"Yes/yes","Kh«ng cÇn ®©u!/no")
 end;
 
 function yes()

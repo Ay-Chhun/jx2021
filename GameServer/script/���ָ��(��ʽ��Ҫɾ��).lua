@@ -2,7 +2,7 @@ Include("\\script\\lib\\globalfunctions.lua");
 Include("\\script\\task\\world\\task_head.lua")
 Include("\\script\\online\\chuyen_sinh\\translife_head.lua");
 
-g_szTitle = "<color=green>H­íng dÉn:<color>"
+g_szTitle = "<color=green>Guide:<color>"
 
 function OnUse(nItem)
 	local tSay = {}
@@ -14,21 +14,21 @@ function OnUse(nItem)
 	else
 		tSay = {
 			"N©ng cao ®¼ng cÊp chuyÓn sinh nh©n vËt/player_reborn",
-			"Thay ®æi h­íng Phôc Sinh/change_PhucSinh",
+			"Change rebirth path/change_PhucSinh",
 			"NhËn l¹i Ên vµ ngo¹i trang chuyÓn sinh/get_translife_item",
 			--"NhËn Bé DiÖu D­¬ng +10/Get_YaoYang_10",
 			--"NgÉu nhiªn nhËn ®­îc Trang BÞ Kim Xµ Lv3 +10/Get_JinShe",
-			format("%s/Process_Equip_LingTu", "NhËn Linh §å +10"),
+			format("%s/Process_Equip_LingTu", "Receive Spirit Chart +10"),
 			format("%s/Process_SanJianTao", "NhËn trang søc ®eo h«ng 4 sao"),
-			"NhËn L­u Ph¸i Ch©n QuyÓn vµ QuyÕt YÕu/Get_Book",
-			"NhËn 1000 vµng/Get_Money",
+			"Receive Liu Sect True Fist and Essence Manual/Get_Book",
+			"Receive 1000 gold/Get_Money",
 			--"°ï»á²Ù×÷/TongOperation",
-			"Thao th¸c kinh m¹ch/GetJingMai",
+			"Manipulate meridians/GetJingMai",
 			--"Bæ sung tinh lùc/Get_Energy",
 			--"Kü n¨ng sèng/Life_Skill",
 			--"NhËn tµi liÖu c­êng hãa/Get_Enhance",
 			--"NhËn ®¸ quý/Get_Gem",
-			format("%s/Pet_OP", "Phôc sinh thó c­ng"),
+			format("%s/Pet_OP", "Revive your pet"),
 			format("%s/getTiLi", "Håi phôc thÓ lùc"),
 			format("%s/getTianJiaoLing", "NhËn Thiªn Kiªu LÖnh"),
 		}
@@ -36,28 +36,28 @@ function OnUse(nItem)
 			tinsert(tSay, "NhËn Thiªn PhËt Ch©u vµ Ph¸ Ma Chó/Give_ZhuzhuZhouzhou")
 		end
 		if 6 == nRoute then
-			tinsert(tSay, "NhËn ¸m KhÝ vµ C¬ Quan/Give_JiguanAnqi")
+			tinsert(tSay, "Receive Hidden Weapon and Mechanism/Give_JiguanAnqi")
 		end
 		if 8 == nRoute then
-			tinsert(tSay, "NhËn X¸ Lîi Kim §¬n/Give_Dandan")
+			tinsert(tSay, "Receive Sarira Golden Pill/Give_Dandan")
 		end		
 		if 17 == nRoute then
-			tinsert(tSay, "NhËn ChiÕn M·/Give_ZhanMa")
+			tinsert(tSay, "Receive War Horse/Give_ZhanMa")
 		end
 		if 18 == nRoute then
-			tinsert(tSay, "NhËn ChiÕn M· vµ Tô TiÔn/Give_Jiancu")
+			tinsert(tSay, "Receive War Horse and Sleeve Arrow/Give_Jiancu")
 		end
 		if 20 == nRoute then
-			tinsert(tSay, "NhËn Phong Thi Phï/Give_Fengshifu")
+			tinsert(tSay, "Receive Wind Corpse Charm/Give_Fengshifu")
 		end
 		if 21 == nRoute then
-			tinsert(tSay, "NhËn Cæ/Give_GuGu")
+			tinsert(tSay, "Receive Gu/Give_GuGu")
 		end
 		if 30 == nRoute then
-			tinsert(tSay, "NhËn §iªu/ling_nv_xiaodiao")
+			tinsert(tSay, "Receive Carving/ling_nv_xiaodiao")
 		end
 	end
-	tinsert(tSay, "Thanh lý tói/ClearBagAllItem");
+	tinsert(tSay, "Clear out your bag/ClearBagAllItem");
 	tinsert(tSay, "T¹i h¹ chØ xem qua th«i/nothing");
 	Say(g_szTitle.."Ng­¬i cÇn gióp ®ì g×?", getn(tSay), tSay);
 end
@@ -77,7 +77,7 @@ function Pet_OP()
 	if GetSkillLevel(30149) == 0 then
 		tinsert(tSay, format("%s/activePet", "KÝch ho¹t phôc sinh thó c­ng"))
 	end
-	tinsert(tSay, format("%s/getPetEgg", "NhËn Trøng Thó C­ng"))
+	tinsert(tSay, format("%s/getPetEgg", "Receive Pet Egg"))
 	tinsert(tSay, format("%s/getLingLi", "NhËn ®iÓm linh lùc"))
 	tinsert(tSay, "T¹i h¹ chØ xem qua th«i/nothing");
 	Say(g_szTitle.."Ng­¬i cÇn gióp ®ì g×?", getn(tSay), tSay);
@@ -224,16 +224,16 @@ function JoinRoute_UpdateLevel()
 		return 0;
 	end
 	local tMenu = {
-		"ThiÕu L©m/join_sl",
-		"Vâ §ang/join_wd",
+		"Shaolin/join_sl",
+		"Wudang/join_wd",
 		"Nga My/join_em",
-		"C¸i Bang/join_gb",
+		"Beggars' Guild/join_gb",
 		"§­êng M«n/join_tm",
 		"D­¬ng M«n/join_ym",
-		"Ngò §éc/join_wdu",
+		"Five Poisons/join_wdu",
 		"C«n L«n/join_kl",
 		"Thóy Yªn/join_cy",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	Say("Ng­¬i muèn gia nhËp l­u ph¸i g×?", getn(tMenu), tMenu);
 end
@@ -251,10 +251,10 @@ function join_sl()
 
 	local szSay = {
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
-		"ThiÕu L©m vâ t«ng/#enter_mp(4)",
-		"ThiÕu L©m thiÒn t«ng/#enter_mp(3)",
-		"ThiÕu L©m tôc gia/#enter_mp(2)",
-		"Ra khái/nothing",
+		"Shaolin Martial Order/#enter_mp(4)",
+		"Shaolin Zen Order/#enter_mp(3)",
+		"Shaolin Lay Branch/#enter_mp(2)",
+		"Leave/nothing",
 	};
 
 	SelectSay(szSay);
@@ -267,9 +267,9 @@ function join_wd()
 
 	local szSay = {
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
-		"Vâ §ang ®¹o gia/#enter_mp(14)",
-		"Vâ §ang tôc gia/#enter_mp(15)",
-		"Ra khái/nothing",
+		"Wudang Daoist Branch/#enter_mp(14)",
+		"Wudang Lay Branch/#enter_mp(15)",
+		"Leave/nothing",
 	};
 
 	SelectSay(szSay);
@@ -287,9 +287,9 @@ function join_em()
 
 	local szSay = {
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
-		"Nga My phËt gia/#enter_mp(8)",
-		"Nga My tôc gia/#enter_mp(9)",
-		"Ra khái/nothing",
+		"Emei Buddhist Branch/#enter_mp(8)",
+		"Emei Lay Branch/#enter_mp(9)",
+		"Leave/nothing",
 	};
 
 	SelectSay(szSay);
@@ -302,9 +302,9 @@ function join_gb()
 
 	local szSay = {
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
-		"C¸i Bang TÜnh y/#enter_mp(11)",
-		"C¸i Bang ¤ Y/#enter_mp(12)",
-		"Ra khái/nothing",
+		"Beggars' Guild Pure Robe/#enter_mp(11)",
+		"Beggars' Guild Dirty Robe/#enter_mp(12)",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end;
@@ -317,7 +317,7 @@ function join_tm()
 	local szSay = {
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
 		"§­êng M«n/#enter_mp(6)",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end;
@@ -331,7 +331,7 @@ function join_ym()
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
 		"D­¬ng M«n th­¬ng Kþ/#enter_mp(17)",
 		"D­¬ng M«n Cung Kþ/#enter_mp(18)",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end;
@@ -343,9 +343,9 @@ function join_wdu()
 
 	local szSay = {
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
-		"HiÖp §éc/#enter_mp(20)",
-		"Tµ §éc/#enter_mp(21)",
-		"Ra khái/nothing",
+		"Chivalrous Poison/#enter_mp(20)",
+		"Evil Poison/#enter_mp(21)",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end;
@@ -363,7 +363,7 @@ function join_kl()
 	local szSay = {
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
 		"C«n L«n Thiªn S­/#enter_mp(23)",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end;
@@ -382,7 +382,7 @@ function join_cy()
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
 		"Thóy Yªn Vò Tiªn/#enter_mp(29)",
 		"Thóy Yªn Linh N÷/#enter_mp(30)",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end;
@@ -1093,11 +1093,11 @@ end
 
 function Get_Book()
 	local szSay = {
-		g_szTitle.."NhËn L­u Ph¸i Ch©n QuyÓn vµ QuyÕt YÕu!",
-		"NhËn Ch©n QuyÓn/Get_Book_ZhenJuan",
-		"NhËn QuyÕt YÕu/Get_Book_JueYao",
+		g_szTitle.."Receive Liu Sect True Fist and Essence Manual!",
+		"Receive True Fist/Get_Book_ZhenJuan",
+		"Receive Essence Manual/Get_Book_JueYao",
 		"Th¨ng cÊp mËt tÞch ®· trang bÞ/Get_Book_Update",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end
@@ -1194,7 +1194,7 @@ function Get_Book_ZhenJuan()
 		AddItem(0, 107, 223-20,5)
 	end
 	
-	gf_AddItemEx({0, 112, 158,	1, 4}, "L¨ng Ba Vi Bé toµn tËp");
+	gf_AddItemEx({0, 112, 158,	1, 4}, "Lingbo Microstep Complete Edition");
 end
 
 function Get_Book_JueYao()
@@ -1231,7 +1231,7 @@ function Get_Book_JueYao()
 	end
 
 	for i = tJue[nRoute][1],tJue[nRoute][2] do
-		gf_AddItemEx({2, 6, i, 1, 4}, "QuyÕt YÕu");
+		gf_AddItemEx({2, 6, i, 1, 4}, "Essence Manual");
 	end
 end
 
@@ -1316,11 +1316,11 @@ end
 
 function ling_nv_xiaodiao()
 	local szSay = {};
-	szSay[getn(szSay) + 1] = "NhËn TiÓu §iªu/Give_XiaoDiao";
-	szSay[getn(szSay) + 1] = "Nu«i TiÓu §iªu/Give_XiaoDiaoFood";
-	szSay[getn(szSay) + 1] = "HuÊn luyÖn TiÓu §iªu/Feed_XiaoDiao";
-	szSay[getn(szSay) + 1] = "Ra khái/nothing";
-	Say(g_szTitle.."TiÓu §iªu thao t¸c.", getn(szSay), szSay)
+	szSay[getn(szSay) + 1] = "Receive Little Carving/Give_XiaoDiao";
+	szSay[getn(szSay) + 1] = "Feed Little Carving/Give_XiaoDiaoFood";
+	szSay[getn(szSay) + 1] = "Train Little Carving/Feed_XiaoDiao";
+	szSay[getn(szSay) + 1] = "Leave/nothing";
+	Say(g_szTitle.."Little Carving operation.", getn(szSay), szSay)
 end
 
 
@@ -1366,7 +1366,7 @@ end
 
 function ClearBagAllItem(bTag)
 	if not bTag or tonumber(bTag) ~= 1 then
-		Say(g_szTitle.."Ng­¬i muèn thanh lý tói?", 2, "§ång ý/#ClearBagAllItem(1)", "Ra khái/nothing")
+		Say(g_szTitle.."Ng­¬i muèn thanh lý tói?", 2, "Agree/#ClearBagAllItem(1)", "Leave/nothing")
 		return
 	end
 	ClearItemInPos();
@@ -1380,7 +1380,7 @@ function TongOperation()
 		g_szTitle.."Thao t¸c bang héi",
 		"Ta muèn lËp bang héi/TongOperation_Create",
 		"Ta muèn th¨ng cÊp bang héi/TongOperation_update",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end
@@ -1419,11 +1419,11 @@ end
 
 function GetJingMai()
 	local szSay = {
-		g_szTitle.."Thao th¸c kinh m¹ch",
+		g_szTitle.."Manipulate meridians",
 		"TÈy ®iÓm kinh m¹ch/GetJingMai_Reset",
 		format("%s/getZhenqi", "NhËn ch©n khÝ"),
 		format("%s/getJingMaiTongRen", "NhËn Kinh M¹ch §ång Nh©n"),
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	if MeridianGetLevel() < 4 then
 		tinsert(szSay, 2, "Th¨ng cÊp c¶nh giíi Vâ T«n/GetJingMai_Update")
@@ -1457,7 +1457,7 @@ end
 
 function GetJingMai_Reset(bTag)
 	if not bTag or tonumber(bTag) ~= 1 then
-		Say(g_szTitle.."Thao th¸c kinh m¹ch", 2,"§ång ý/#GetJingMai_Reset(1)", "Hñy bá/nothing")
+		Say(g_szTitle.."Manipulate meridians", 2,"Confirm/#GetJingMai_Reset(1)", "Cancel/nothing")
 		return 0;
 	end
 	MeridianRestore(-1);
@@ -1504,7 +1504,7 @@ function upgrade_gather_skill()
 		if nMax > nCur then
 			local msg = g_szTitle..format("HiÖn t¹i chØ cã thÓ th¨ng cÊp kü n¨ng %s, <color=gold>%s<color> ®ang ®¹t cÊp <color=green>%d<color>, muèn th¨ng cÊp <color=gold>%s<color> ®Õn cÊp <color=green>%d<color> kh«ng?",
 				 str, tName[k], nCur, tName[k], nMax);
-			Say(msg, 2, format("§ång ý/#upgrade_gather_skill_do(%d, %d)", v, nMax), "Hñy bá/nothing")
+			Say(msg, 2, format("Confirm/#upgrade_gather_skill_do(%d, %d)", v, nMax), "Cancel/nothing")
 			return 0;
 		end
 	end
@@ -1525,7 +1525,7 @@ end
 
 function upgrade_compose_skill()
 	local tGather = {2, 3, 4, 5, 9, 10};
-	local tName = {"ChÕ t¹o binh khÝ dµi", "ChÕ t¹o binh khÝ ng¾n", "ChÕ t¹o kú m«n binh khÝ", "Lµm hé gi¸p", "H¹ trang", "§Çu qu¸n"};
+	local tName = {"ChÕ t¹o binh khÝ dµi", "ChÕ t¹o binh khÝ ng¾n", "ChÕ t¹o kú m«n binh khÝ", "Make armor", "Lower garment", "§Çu qu¸n"};
 	local str = ""
 	for k, v in tName do
 		str = str.."<color=gold>"..v.."<color>,"
@@ -1536,7 +1536,7 @@ function upgrade_compose_skill()
 		if nMax > nCur then
 			local msg = g_szTitle..format("HiÖn t¹i chØ cã thÓ th¨ng cÊp kü n¨ng %s, <color=gold>%s<color> ®ang ®¹t cÊp <color=green>%d<color>, muèn th¨ng cÊp <color=gold>%s<color> ®Õn cÊp <color=green>%d<color> kh«ng?",
 				 str, tName[k], nCur, tName[k], nMax);
-			Say(msg, 2, format("§ång ý/#upgrade_compose_skill_do(%d, %d)", v, nMax), "Hñy bá/nothing")
+			Say(msg, 2, format("Confirm/#upgrade_compose_skill_do(%d, %d)", v, nMax), "Cancel/nothing")
 			return 0;
 		end
 	end
@@ -1610,21 +1610,21 @@ function Get_Gem()
 		return 0;
 	end
 	AddItem(2, 22, 105, 100);
-	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "HuyÕt TrÝch Th¹ch CÊp 5");
+	WriteLogEx("Get_Gem","Receive gem", 100, "HuyÕt TrÝch Th¹ch CÊp 5");
 	AddItem(2, 22, 205, 100);
-	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "NguyÖt B¹ch Th¹ch CÊp 5");
+	WriteLogEx("Get_Gem","Receive gem", 100, "NguyÖt B¹ch Th¹ch CÊp 5");
 	AddItem(2, 22, 305, 100);
-	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "Hæ Ph¸ch Th¹ch CÊp 5");
+	WriteLogEx("Get_Gem","Receive gem", 100, "Hæ Ph¸ch Th¹ch CÊp 5");
 	AddItem(2, 22, 405, 100);	
-	WriteLogEx("Get_Gem","NhËn ®¸ quý", 100, "H¾c DiÖu Th¹ch CÊp 5");
+	WriteLogEx("Get_Gem","Receive gem", 100, "H¾c DiÖu Th¹ch CÊp 5");
 end
 
 function change_PhucSinh()
 	local tSay = {}
 	local tHeader = "§¹i hiÖp muèn thay ®æi theo h­íng nµo. §èi víi Phôc Sinh, sau khi thay ®æi sÏ bÞ vÒ level 10, h·y ®Õn g¾p B¹ch Tiªn Sinh (TuyÒn Ch©u) ®Ó nhËn l¹i level !!!!."		
-	tinsert(tSay, "H­íng Long Tö/#confirm_change_chuyensinh(1)")
-	tinsert(tSay, "H­íng Hæ Tö/#confirm_change_chuyensinh( 2)")
-	tinsert(tSay, "H­íng ¦ng Tö/#confirm_change_chuyensinh(3)")		
+	tinsert(tSay, "Toward Dragon Son/#confirm_change_chuyensinh(1)")
+	tinsert(tSay, "Toward Tiger Son/#confirm_change_chuyensinh( 2)")
+	tinsert(tSay, "Toward Eagle Son/#confirm_change_chuyensinh(3)")		
 	tinsert(tSay, "H­íng Phông Tö/#confirm_change_chuyensinh(4)")
 	tinsert(tSay, "T¹m thêi ta ch­a muèn thay ®æi/nothing")
 	Say(tHeader, getn(tSay), tSay)			

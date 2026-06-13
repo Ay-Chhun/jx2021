@@ -74,7 +74,7 @@ function jiguan_crt()
 	Zgc_pub_mission_fun(MS_ID,"StartTimeGuage(\"Thêi gian t¹o b¶o r­¬ng \",10,0,1)")
 	if jiguan_num > 0 then
 		for i = 1,jiguan_num do
-			local jiguan_index = CreateNpc("Tiªu s­-®èi tho¹i","C¬ quan",map_id,1600,3238,-1,1,1,300)
+			local jiguan_index = CreateNpc("Tiªu s­-®èi tho¹i","Mechanism",map_id,1600,3238,-1,1,1,300)
 			SetNpcScript(jiguan_index,"\\script\\online\\qixi08\\box\\function.lua")
 			SetNpcLifeTime(jiguan_index,10)
 		end
@@ -82,7 +82,7 @@ function jiguan_crt()
 end
 -------------------¶Ô»°º¯Êý-------------------
 Tb_npc_dialog = {
-	["C¬ quan"] = "jiguan_dia_main",
+	["Mechanism"] = "jiguan_dia_main",
 	["B¶o r­¬ng"] = "box_dia_main"
 }
 function main()

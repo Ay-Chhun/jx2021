@@ -1,8 +1,8 @@
 Include("\\script\\½á»é\\marriage_head.lua");
 function OnUse(nItemIdx)
 	local selTab = {
-			format("Më/#open(%d)",nItemIdx),
-			"LÇn sau h·y më!/nothing",
+			format("Open/#open(%d)",nItemIdx),
+			"Open next time!/nothing",
 			}
 	Say("B¹n muèn më DiÖm háa bao?",getn(selTab),selTab);
 end;

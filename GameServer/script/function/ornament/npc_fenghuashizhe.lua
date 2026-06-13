@@ -14,7 +14,7 @@ function main()
 	
 	local Title = "<color=green>§¹i Sø Phong Hoa<color>: T¹i cöa hµng cña ta, c¸c ®¹i hiÖp cã thÓ dïng ®iÓm Phong Hoa ®Ó ®æi ngo¹i trang tuyÖt ®Ñp nh­ ý muèn."
 	local tbSay = {}
-	tinsert(tbSay,"Cöa Hµng Phong Hoa/fenghua_shop")
+	tinsert(tbSay,"Fenghua Shop/fenghua_shop")
 	tinsert(tbSay,"Xem ®iÓm Phong Hoa/fenghua_check")
 	tinsert(tbSay,"Giíi thiÖu ®iÓm Phong Hoa/fenghua_introduction")
 	tinsert(tbSay,"Ta chØ ®Õn xem thö/nothing")
@@ -22,12 +22,12 @@ function main()
 end
 
 function fenghua_shop(  )
-	SendScript2Client(format("Open([[EquipShop]], %d, [[%s]])", 3071, "Cöa Hµng Phong Hoa"))
+	SendScript2Client(format("Open([[EquipShop]], %d, [[%s]])", 3071, "Fenghua Shop"))
 end
 
 function fenghua_check(  )
 	local point = ornament_get_score()
-	Talk(1,"",format("§iÓm Phong Hoa: <color=red>%d<color>",point))
+	Talk(1,"",format("Fenghua Points: <color=red>%d<color>",point))
 end
 
 function fenghua_introduction(  )

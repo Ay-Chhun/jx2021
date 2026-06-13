@@ -39,7 +39,7 @@ TB_KILL_NPC =
 }
 MAP_DESC = 
 {
-	[MAP_1] = "TÇn L¨ng",
+	[MAP_1] = "Qin Mausoleum",
 	[MAP_2] = "Hoµng L¨ng mé thÊt tÇng 1",
 	[MAP_3] = "Hoµng L¨ng mé thÊt tÇng 2",
 }
@@ -64,14 +64,14 @@ tbKillNpcDaily.tbAward =
 		tbCost = 
 		{
 			{2, 1, 30603, 29, "Tiªu Dao Ngäc"},
-			{2, 1, 30825, 2000, "D©u"},
-			{2, 1, 30826, 2000, "L¸ Trµ Xanh"},
+			{2, 1, 30825, 2000, "Strawberry"},
+			{2, 1, 30826, 2000, "Green Tea Leaf"},
 		},
 		tbPrize = 
 		{
 			{"Exp", 39000000},
-			{2, 1, 30827, 1000, "Sinh Tè ThËp CÈm"},
-			{2, 1, 30785, 9, "V« Tù Kinh Th­"},
+			{2, 1, 30827, 1000, "Mixed Smoothie"},
+			{2, 1, 30785, 9, "Wordless Scripture"},
 		}
 	},
 	[ADVANCED_TYPE] = 
@@ -80,14 +80,14 @@ tbKillNpcDaily.tbAward =
 		tbCost = 
 		{
 			{2, 1, 30603, 299, "Tiªu Dao Ngäc"},
-			{2, 1, 30825, 2000, "D©u"},
-			{2, 1, 30826, 2000, "L¸ Trµ Xanh"},
+			{2, 1, 30825, 2000, "Strawberry"},
+			{2, 1, 30826, 2000, "Green Tea Leaf"},
 		},
 		tbPrize = 
 		{
 			{"Exp", 99000000},
-			{2, 1, 30785, 19, "V« Tù Kinh Th­"},
-			{2, 1, 30830, 99, "Siro Tr¸i C©y "},
+			{2, 1, 30785, 19, "Wordless Scripture"},
+			{2, 1, 30830, 99, "Fruit Syrup"},
 		}
 	}
 }

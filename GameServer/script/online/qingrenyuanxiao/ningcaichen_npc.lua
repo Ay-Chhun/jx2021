@@ -6,7 +6,7 @@ Include("\\script\\online\\qingrenyuanxiao\\qryx_head.lua")
 
 function main()
 	local selTab = {
-				"Ta ®ång ı/ok",
+				"I agree/ok",
 				"§Ó ta suy nghÜ l¹i/nothing"
 				}
 	if NoTaskBegin() == 1 then
@@ -18,12 +18,12 @@ end
 
 function ok()
 	if GetTask(TASK_LOVESTORY3) == 0 then
-		Talk(2,"","huhu……",
-				"ThËt nguy hiÓm!")
+		Talk(2,"","boo hoo",
+				"How dangerous!")
 	elseif CanAcceptTask(TASK_LOVESTORY3,1) == 1 then
 		Talk(6,"","Cã viÖc g× mµ vÎ mÆt c«ng tö hèc h¸c thÕ?",
 				"Ta vµ TiÓu S¶nh muèn bá trèn, nh­ng Quû Vùc L·o L·o ph¸t hiÖn, suıt chót n÷a mÊt m¹ng, hiÖn giê vÉn cßn run sî!",
-				"Ch¶ tr¸ch!",
+				"No wonder!",
 				"May m¾n tho¸t ®­îc, nh­ng TiÓu S¶nh v× cøu ta nªn bŞ Quû Vùc L·o L·o b¾t, hiÖn bŞ cÇm gi÷ ë Giang T©n th«n, Ta kh«ng nghÜ ra c¸ch cøu nµng, nhŞ vŞ h·y gióp ta víi1",
 				"§­îc! §Ó ta gióp.",
 				"<color=yellow>TiÓu S¶nh<color> ®ang ë <color=red>Giang T©n th«n<color>, nhê nhŞ vŞ th¨m dß t×nh h×nh TiÓu S¶nh råi vÒ nãi cho ta biÕt.")
@@ -85,7 +85,7 @@ function ok()
 		end
 		PlayerIndex = OldPlayerIndex
 	elseif GetTask(TASK_LOVESTORY3) == 7 then	
-		Say("§a t¹, chóc nhŞ vŞ vui vÎ!",0)
+		Say("Many thanks, congratulations to you both!",0)
 	elseif GetTeamSize() == 2 then
 		Say("Tho¹t ®Çu lµ ®«i b¹n, sao b©y giê lµ ®«i t×nh nh©n vËy?",0)
 	else

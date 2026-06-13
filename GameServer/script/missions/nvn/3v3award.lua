@@ -95,8 +95,8 @@ function OnMatchRankAward(nCount, data)
 	for i = 0, nCount - 1 do
 		local szContent = format(g_szContent, i + 1);
 		local szTo = data[i][1];
-		local script = format("gf_AdditemEx({2,95,1511,%d}, '§Êu Ph¸ch LÖnh');", g_3v3MatchAward[i+1] or 250);
-		sendMail(szTo, "Quan Liªn §Êu §¹i Héi TØ Vâ", "PhÇn th­ëng quý liªn ®Êu §¹i Héi TØ Vâ", szContent, script, "check_room_1");
+		local script = format("gf_AdditemEx({2,95,1511,%d}, 'Soul Breaking Token');", g_3v3MatchAward[i+1] or 250);
+		sendMail(szTo, "Inter-Server Arena Tournament", "PhÇn th­ëng quý liªn ®Êu §¹i Héi TØ Vâ", szContent, script, "check_room_1");
 	end	
 end
 
@@ -133,7 +133,7 @@ function update3v3MatchRankCB2(nRound, bAwarded, nCount, s)
 	if nRound < nGlbMatchRound then
 		local localSDB = SDB(SDBKEY_3V3, 2, 0);
 		localSDB["LocalMatchRound"] = {"dd", nGlbMatchRound, 1};
-		DebugOutput(format("Toµn cuéc ®Êu quý: %d", nGlbMatchRound));
+		DebugOutput(format("Global tournament value: %d", nGlbMatchRound));
 --		OnMatchRankAward();
 		local s = SDB(SDBKEY_RANK_LOCAL, 0, 0);
 		s:delete();

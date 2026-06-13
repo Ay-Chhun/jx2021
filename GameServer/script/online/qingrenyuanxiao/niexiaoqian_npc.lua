@@ -10,7 +10,7 @@ function main()
 				"Ta vÉn kháe, L·o L·o kh«ng ®Ó ta bÞ g× ®©u, nh­ng L·o L·o ®· d¸n cho ta 1 tÊm ®Þnh th©n phï kh«ng cho bá trèn.",
 				"Cã c¸ch nµo hãa gi¶i kh«ng?",
 				"§Þnh th©n phï sî nhÊt lµ m¸u chã, h·y t×m <color=red>3 chÐn H¾c KhuyÓn Linh HuyÕt<color> ®Ó hãa gi¶i nã.",
-				"Hay qu¸! Ta ®i ngay ®©y!")
+				"Excellent! I will go right away!")
 		local OldPlayerIndex = PlayerIndex
 		for i=1,2 do
 			PlayerIndex = GetTeamMember(i)
@@ -42,7 +42,7 @@ function main()
 	elseif CanAcceptTask(TASK_LOVESTORY3,5) == 1 then
 		Say("B»ng h÷u ®· lÊy ®­îc YÕn XÝch Hµ b¶o kiÕm, nÕu nh­ ®¸nh b¹i L·o L·o, ta vµ Th¸i ThÇn suèt ®êi kh«ng quªn ¬n.",0)
 	elseif GetTask(TASK_LOVESTORY3) == 6 or GetTask(TASK_LOVESTORY3) == 7 then
-		Say("§a t¹, chóc nhÞ vÞ vui vÎ!",0)
+		Say("Many thanks, congratulations to you both!",0)
 	elseif GetTask(TASK_LOVESTORY3) == 0 or GetTask(TASK_LOVESTORY3) == 1 then
 		Say("Kh«ng biÕt Th¸i ThÇn hiÖn giê b×nh an hay kh«ng……",0)
 	elseif GetTeamSize() == 2 then

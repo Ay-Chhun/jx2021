@@ -20,7 +20,7 @@ function OnUse(nItemIdx)
 		return
 	end;
 	if DelItemByIndex(nItemIdx,1) == 1 then
-		add_item_ex( {"Bao Tay Thu ThÀp",	2,	1,	30058,	10} )
+		add_item_ex( {"Collecting Glove",	2,	1,	30058,	10} )
 	end
 end
 
@@ -33,9 +33,9 @@ function add_item_ex(tItem)
 	nRetCode = AddItem(G, D, P, nItemNum)
 	if nRetCode == 1 then
 		Msg2Player("Bπn nhÀn Æ≠Óc  "..nItemNum.." c∏i "..szItemName);
-		WriteLogEx(g_szLogTitle, "NhÀn Æ≠Óc", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName() )
+		WriteLogEx(g_szLogTitle, "Received", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName() )
 	else
-		WriteLogEx(g_szLogTitle, "NhÀn Æ≠Óc", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName(), "Thu Æ≠Óc th t bπi, ".."AddItem return value = "..nRetCode)
+		WriteLogEx(g_szLogTitle, "Received", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName(), "Thu Æ≠Óc th t bπi, ".."AddItem return value = "..nRetCode)
 	end
 end
 

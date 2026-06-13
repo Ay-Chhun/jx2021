@@ -32,7 +32,7 @@ function do_online_time_activity()
 		tinsert(tbSay,format("%s/#online_award(%d)","X¸c nhËn nhËn th­ëng", round))
 	end
 		
-	tinsert(tbSay,format("%s/nothing", "Ra khái"))
+	tinsert(tbSay,format("%s/nothing", "Exit"))
 	Say(titleSay,getn(tbSay),tbSay)
 end
 
@@ -40,7 +40,7 @@ function _get_time_str(nMin)
 	local resStr = ""
 	local hour = floor(nMin / 60)
 	local minu = floor(mod(nMin,60))
-	local resStr = format("%d giê %d phót",hour,minu)
+	local resStr = format("%d hours %d minutes",hour,minu)
 	return resStr
 end
 

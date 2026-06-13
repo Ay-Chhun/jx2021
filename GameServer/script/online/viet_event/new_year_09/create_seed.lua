@@ -48,7 +48,7 @@ function create_seed()
 		local nNpcIndex = 0
 		for i=1, getn(tbMapID) do
 			for j=1, 50 do
-				nNpcIndex = CreateNpc(" nh¸nh hoa hång","H¹t gièng h¹nh phóc",tbMapID[i][1],tbMapID[i][2],tbMapID[i][3],-1,1,1,2000)
+				nNpcIndex = CreateNpc(" rose branch","Seed of Happiness",tbMapID[i][1],tbMapID[i][2],tbMapID[i][3],-1,1,1,2000)
 				SetNpcScript(nNpcIndex,"\\script\\online\\viet_event\\new_year_09\\npc\\seed_npc.lua")
 				SetNpcLifeTime(nNpcIndex,3600);
 			end

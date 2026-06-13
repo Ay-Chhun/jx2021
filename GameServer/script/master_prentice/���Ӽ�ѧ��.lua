@@ -18,7 +18,7 @@ function main_cb()
 			"Tói HËu sinh kh¶ óy (cã thÓ nhËn khi trë thµnh ®Ö tö chÝnh thøc)/#lin_bao(10)",
 			"Tói TiÒn tr×nh tù cÈm ( cã thÓ nhËn sau khi ®Ö tö chÝnh thøc ®¹t cÊp 45)/#lin_bao(45)",
 			"Tói S­ ®å t×nh th©m (cã thÓ nhËn sau khi ®Ö tö chÝnh thøc ®¹t cÊp 60)/#lin_bao(60)",
-			"ThuyÕt minh HÖ thèng S­ ®å/see_info2",
+			"Explanation of the Master-Disciple System/see_info2",
 			"NhËn 1 ThiÖp b¸i s­/baishitie",
 			"Kh«ng viÖc g×, chØ xem th«i./no_say")
 	elseif tInfo["ismaster"] == 0 then
@@ -26,7 +26,7 @@ function main_cb()
 			5,
 			"Ta muèn thµnh s­ phô/yes_make_master",
 			"T«i muèn lµm ®å ®Ö/yes_be_prentice",
-			"ThuyÕt minh HÖ thèng S­ ®å/see_info2",
+			"Explanation of the Master-Disciple System/see_info2",
 			"NhËn 1 ThiÖp b¸i s­/baishitie",
 			"Kh«ng viÖc g×, chØ xem th«i./no_say")
 	elseif tInfo["ismaster"] > 0 then
@@ -38,7 +38,7 @@ function main_cb()
 			"Dïng bæng léc mua vËt phÈm Quèc Tö gi¸m/#use_fenglu(1)",
 			"NhËn 1 nhiÖm vô xuÊt s­/get_graduate_item",
 			"Ta muèn b¸i «ng ta lµm s­ phô, Ta ph¶i hñy bá ®¨ng ký ë Quèc Tö gi¸m/disband_master",
-			"ThuyÕt minh HÖ thèng S­ ®å/see_info2",
+			"Explanation of the Master-Disciple System/see_info2",
 			"NhËn 1 ThiÖp b¸i s­/baishitie",
 			"Kh«ng viÖc g×, chØ xem th«i./no_say")
 	end
@@ -60,7 +60,7 @@ function lin_bao(nLevel)
 	{
 		[10] = {n1, " tói HËu Sinh Kh¶ óy"},
 		[45] = {n2, "TiÒn Tr×nh Tù CÈm Bµo"},
-		[60] = {n3, "Tói S­ §å T×nh Th©m"},
+		[60] = {n3, "Master-Disciple Deep Affection Bag"},
 	}
 	for index, value in tLeveltoIdx do
 		if value[1] == nil then
@@ -81,13 +81,13 @@ function lin_bao(nLevel)
 	{
 		[10] = {2,1,591," tói HËu Sinh Kh¶ óy"},
 		[45] = {2,1,592,"TiÒn Tr×nh Tù CÈm Bµo"},
-		[60] = {2,1,597,"Tói S­ §å T×nh Th©m"},
+		[60] = {2,1,597,"Master-Disciple Deep Affection Bag"},
 	}
 	
 	AddItem(tItem[nLevel][1], tItem[nLevel][2], tItem[nLevel][3], 1, 1)
 	tLeveltoIdx[nLevel][1] = 1
 	CustomDataSave("mp_p_award", "ddd", tLeveltoIdx[10][1], tLeveltoIdx[45][1], tLeveltoIdx[60][1])
-	WriteLog("[S­ ®å-hoa hång ®å ®Ö]:"..GetName().."NhËn ®­îc 1 "..tItem[nLevel][4])
+	WriteLog("[Master-Disciple - Disciple Rose]:"..GetName().."Received 1"..tItem[nLevel][4])
 end
 
 function see_info2()
@@ -105,12 +105,12 @@ function shifu()
 		9,
 		"Lµm sao ®Ó nhËn ®Ö tö/shoutu",
 		"NhiÖm Vô S­ §å sau khi nhËn ®Ö tö lµ g×/shirenwu",
-		"§iÓm S­ ®å lµ g×/shitudianshu",
-		"§iÓm S­ ®øc lµ g×/shidedianshu",
+		"What are Master-Disciple Points/shitudianshu",
+		"What are Master Virtue Points/shidedianshu",
 		"Thô NghiÖp §¼ng CÊp lµ g×/shouyedengji",
 		"Hoa Hång Quèc Tö Gi¸m lµ g×?/huahong",
 		"Bæng Léc Quèc Tö gi¸m lµ g×, cã thÓ mua ®­îc nh÷ng g×/fenglu",
-		"Lµm sao chÊm døt quan hÖ S­ ®å/shichushi",
+		"How to end a master-disciple relationship/shichushi",
 		"Kh«ng viÖc g×, chØ xem th«i./no_say"
 		)
 end
@@ -182,9 +182,9 @@ function tudi()
 	Say("Néi dung liªn quan ®Õn ®å ®Ö, RÊt nhiÒu thao t¸c cña HÖ thèng S­ ®å ®Òu ph¶i më <color=yellow>B¶ng th«ng tin s­ ®å<color>, sau ®ã <color=yellow>nhÊp ph¶i vµo tªn mét ng­êi trong danh s¸ch<color> sÏ xuÊt hiÖn giao diÖn ®Ó thao t¸c.",
 		5,
 		"Lµm c¸ch nµo ®Ó b¸i s­/baishi",
-		"NhiÖm vô S­ ®å sau khi b¸i s­ lµ g×/turenwu",
+		"What are the Mentorship quests after taking a master/turenwu",
 		"Sau khi b¸i s­ cã thÓ nhËn ®­îc phÇn th­ëng nµo/jiangli",
-		"Lµm sao chÊm døt quan hÖ S­ ®å/tuchushi",
+		"How to end the mentorship relationship/tuchushi",
 		"Kh«ng viÖc g×, chØ xem th«i./no_say")
 end
 

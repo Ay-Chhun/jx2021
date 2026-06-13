@@ -33,7 +33,7 @@ function onUse(nItemIdx, bSure)
 	if not bSure then
 		local tSel = {
 			format("§ång ı/#onUse(%d, 1)", nItemIdx),
-			"Hñy bá/nothing",
+			"Cancel/nothing",
 		}
 		Say("Qu¸n Th«ng QuyÓn: QuyÕt ®Şnh th¨ng hoa ch©n quyÓn hiÖn ®ang trang bŞ? Sau khi chÊp hµnh sÏ tiªu hao 1 Qu¸n Th«ng QuyÓn.", 
 			getn(tSel), tSel);

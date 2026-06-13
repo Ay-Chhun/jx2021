@@ -1,7 +1,7 @@
 
 function OnUse(nItemIdx)
 	local selTab = {
-			"§ång ý/#confirm("..nItemIdx..")",
+			"Confirm/#confirm("..nItemIdx..")",
 			"Ta suy nghÜ l¹i!/nothing",
 			}
 	Say("B¹n muèn bá <color=yellow>360 vµng<color> vµo Tö Kim ®¹i hång bao?",getn(selTab),selTab);
@@ -18,7 +18,7 @@ function confirm(nItemIdx)
 		if nRetCode ~= 0 then
 			Msg2Player("B¹n bá thµnh c«ng 360 vµng vµo Tö Kim ®¹i hång bao!");
 		else
-			WriteLog("[Tö Kim ®¹i hång bao]:"..GetName().."Trong lóc ®ãng gãi Tö Kim ®¹i hång bao AddItem bÞ lçi, trÞ ph¶n håi:"..nRetCode);
+			WriteLog("[Purple Gold great red packet]:"..GetName().."While packing the Purple Gold great red packet, AddItem encountered an error, return value:"..nRetCode);
 		end;
 	end;
 end;

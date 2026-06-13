@@ -28,7 +28,7 @@ function main()
         local szSay = {
             "§a t¹ <sex> gióp chuyÓn vËt phÈm! Nh­ng hiÖn Oa KhÊu xua qu©n tiÕn vµo H¶i T©n, kh«ng biÕt <sex>gióp ®uæi lò giÆc ®i ®­îc kh«ng?",
             "Quèc gia l©m nguy sao cã thÓ ®øng nh×n/kill_enemy",
-            "Ta ®ang bËn!/end_say"
+            "I am busy!/end_say"
         };
         SelectSay(szSay);
         return

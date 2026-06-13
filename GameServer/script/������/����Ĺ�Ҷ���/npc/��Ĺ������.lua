@@ -19,7 +19,7 @@ local nPreservedPlayerIndex = PlayerIndex;
 local nMemCount = GetTeamSize();
 local nMapId, nX, nY = GetWorldPos();
 local nBossState = {0,0,0,0};
-local nBossName = {"§«ng ","Nam ","T©y ","B¾c "}
+local nBossName = {"East","Nam ","West","North"}
 local strTalk = {
 	"B¹n h·y ®¸nh b¹i 4 TrÊn Mé T­íng Qu©n trÊn gi÷ tÇng 2 vµ chØ cÇn t×m ®­îc Thñ Mé T­íng Qu©n sÏ ®¸nh thøc Quû T­íng Qu©n ®ang gi÷ b¶o r­¬ng."
 	}
@@ -124,7 +124,7 @@ local strMsg = "";
 local strTalk = {};
 local nNum = 0;
 local nBossState = CheckBossStataEx();
-local nBossName = {"§«ng ","Nam ","T©y ","B¾c "};
+local nBossName = {"East","Nam ","West","North"};
 
 	for i=1,4 do
 		if nBossState[i] == 0 then
@@ -134,7 +134,7 @@ local nBossName = {"§«ng ","Nam ","T©y ","B¾c "};
 	end
 	
 	strTalk = {
-		"B¹n ®· h¹ thñ"..(4 - nNum).." TrÊn Mé T­íng Qu©n, cßn "..strMsg.." vµ "..nNum.." TrÊn Mé T­íng Qu©n ch­a ®¸nh b¹i."
+		"B¹n ®· h¹ thñ"..(4 - nNum).." TrÊn Mé T­íng Qu©n, cßn "..strMsg.." and"..nNum.." TrÊn Mé T­íng Qu©n ch­a ®¸nh b¹i."
 		}
 		
 	TalkEx("",strTalk);

@@ -13,7 +13,7 @@
 function OnUse()
 	Say("B¹n muèn më gãi hµng lÊy 100 tÊm <color=yellow>gi¸m ®Þnh phï cÊp 7<color>? Xin kiÓm tra hµnh trang vµ søc lùc!",
 		2,
-		"§­îc/open_100_jianding",
+		"Confirm/open_100_jianding",
 		"T¹m thêi kh«ng më--Hñy bá/cancel_dialog")
 end;
 

@@ -199,7 +199,7 @@ function stageFight:onTalk()
 		Say("<color=green>TÇm B¶o Nh©n<color>: Ta nghe nãi ThÊt L¹c Nhai nµy lµ n¬i ch«n kho b¸u cña Thiªn ¢m Gi¸o, kh«ng ngê t×m kiÕm nhiÒu ngµy vÉn kh«ng cã thu ho¹ch. §µnh bá cuéc vËy!",
 			2,
 			"Cã thÓ m­în trang bÞ cña ta ®Ó dïng./xbr_give_tq",
-			"KÕt thóc ®èi tho¹i/nothing")
+			"End dialogue/nothing")
 	end
 end
 
@@ -299,7 +299,7 @@ stageFight.triggers = {
 firePhases.phases = {stageFight};
 
 function firePhases:onTimeout()
-	Msg2MSAll(this.missionID, "KÕt thóc ¶i!");
+	Msg2MSAll(this.missionID, "The challenge has ended!");
 	CloseMission(this.missionID);
 end
 

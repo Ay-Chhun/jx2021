@@ -63,7 +63,7 @@ function get_3v3_last_week_award()
 		--ÖÃ±ê¼Ç
 		gf_SetTaskByte(TASKID_3V3_AWARD_TAG, 1, 2);
 		--¸ø½±Àø
-		gf_AddItemEx2({2,1,30575,_3V3_LAST_WEEK_AWARD[nIndex][nIndexSub][1], 4}, "LÔ Bao Vâ L©m", "3V3", "PhÇn th­ëng tuÇn tr­íc", 0, 1);
+		gf_AddItemEx2({2,1,30575,_3V3_LAST_WEEK_AWARD[nIndex][nIndexSub][1], 4}, "Wulin Gift Pack", "3V3", "PhÇn th­ëng tuÇn tr­íc", 0, 1);
 		gf_AddItemEx2({2,1,30576,_3V3_LAST_WEEK_AWARD[nIndex][nIndexSub][2], 4}, "LÔ Bao Vâ L©m Hµo KiÖt", "3V3", "PhÇn th­ëng tuÇn tr­íc", 0, 1);
 		Talk(1,"","Chóc mõng ®¹i hiÖp thµnh c«ng nhËn th­ëng tØ vâ 3v3 cña tuÇn tr­íc");
 		Msg2Player("Chóc mõng ®¹i hiÖp thµnh c«ng nhËn th­ëng tØ vâ 3v3 cña tuÇn tr­íc");
@@ -124,15 +124,15 @@ function _get_3v3_last_season_award(nRank)
 		--
 		--gf_AddItemEx2({2,1,30577,1,4}, "ÎåÐÐÐ¬Àñ°ü", "3V3", "ÉÏÈü¼¾½±Àø", 0, 1);
 		--
-		gf_AddItemEx2({0,105,141,1,4,-1,-1,-1,-1,-1,-1}, "Phi HiÓu", "3V3", "PhÇn th­ëng quý tr­íc", 30 * 24 * 3600, 1)
+		gf_AddItemEx2({0,105,141,1,4,-1,-1,-1,-1,-1,-1}, "Flying Owl", "3V3", "PhÇn th­ëng quý tr­íc", 30 * 24 * 3600, 1)
 		--
 		--gf_AddItemEx2({2,1,30408,3,4}, "3¼¶Ç§»Ã¿Ì°å", "3V3", "ÉÏÈü¼¾½±Àø", 30 * 24 * 3600, 1)
-		gf_AddItemEx2({2,1,30668,6,4}, "Tinh Hoa UÈn Linh CÊp 6", "3V3", "PhÇn th­ëng quý tr­íc", 30 * 24 * 3600, 1)
+		gf_AddItemEx2({2,1,30668,6,4}, "Spirit Essence Gathering Level 6", "3V3", "PhÇn th­ëng quý tr­íc", 30 * 24 * 3600, 1)
 		--
 		local tWaiZhuang = {
-			{{"Thanh Minh M¹o", {0,108,684,1,4}}, {"Thanh Minh M¹o", {0,108,685,1,4}}, {"Thanh Minh M¹o", {0,108,686,1,4}}, {"Thanh Minh M¹o", {0,108,687,1,4}}},
-			{{"Thanh Minh Th­îng Trang", {0,109,684,1,4}}, {"Thanh Minh Th­îng Trang", {0,109,685,1,4}}, {"Thanh Minh Th­îng Trang", {0,109,686,1,4}}, {"Thanh Minh Th­îng Trang", {0,109,687,1,4}}},
-			{{"Thanh Minh H¹ Trang", {0,110,684,1,4}}, {"Thanh Minh H¹ Trang", {0,110,685,1,4}}, {"Thanh Minh H¹ Trang", {0,110,686,1,4}}, {"Thanh Minh H¹ Trang", {0,110,687,1,4}}},
+			{{"Qingming Hat", {0,108,684,1,4}}, {"Qingming Hat", {0,108,685,1,4}}, {"Qingming Hat", {0,108,686,1,4}}, {"Qingming Hat", {0,108,687,1,4}}},
+			{{"Qingming Upper Garment", {0,109,684,1,4}}, {"Qingming Upper Garment", {0,109,685,1,4}}, {"Qingming Upper Garment", {0,109,686,1,4}}, {"Qingming Upper Garment", {0,109,687,1,4}}},
+			{{"Qingming Lower Garment", {0,110,684,1,4}}, {"Qingming Lower Garment", {0,110,685,1,4}}, {"Qingming Lower Garment", {0,110,686,1,4}}, {"Qingming Lower Garment", {0,110,687,1,4}}},
 		};
 		local nBody = GetBody();
 		local nSize = getn(tWaiZhuang);
@@ -151,12 +151,12 @@ function _get_3v3_last_season_award(nRank)
 		--gf_AddItemEx2({2,1,30577,1}, "ÎåÐÐÐ¬Àñ°ü", "3V3", "ÉÏÈü¼¾½±Àø", 0, 1);
 		--
 		--gf_AddItemEx2({2,1,30408,3,4}, "3¼¶Ç§»Ã¿Ì°å", "3V3", "ÉÏÈü¼¾½±Àø", 30 * 24 * 3600, 1)
-		gf_AddItemEx2({2,1,30668,6,4}, "Tinh Hoa UÈn Linh CÊp 6", "3V3", "PhÇn th­ëng quý tr­íc", 30 * 24 * 3600, 1)
+		gf_AddItemEx2({2,1,30668,6,4}, "Spirit Essence Gathering Level 6", "3V3", "PhÇn th­ëng quý tr­íc", 30 * 24 * 3600, 1)
 		--
 		local tWaiZhuang = {
-			{{"Thanh Minh M¹o", {0,108,684,1,4}}, {"Thanh Minh M¹o", {0,108,685,1,4}}, {"Thanh Minh M¹o", {0,108,686,1,4}}, {"Thanh Minh M¹o", {0,108,687,1,4}}},
-			{{"Thanh Minh Th­îng Trang", {0,109,684,1,4}}, {"Thanh Minh Th­îng Trang", {0,109,685,1,4}}, {"Thanh Minh Th­îng Trang", {0,109,686,1,4}}, {"Thanh Minh Th­îng Trang", {0,109,687,1,4}}},
-			{{"Thanh Minh H¹ Trang", {0,110,684,1,4}}, {"Thanh Minh H¹ Trang", {0,110,685,1,4}}, {"Thanh Minh H¹ Trang", {0,110,686,1,4}}, {"Thanh Minh H¹ Trang", {0,110,687,1,4}}},
+			{{"Qingming Hat", {0,108,684,1,4}}, {"Qingming Hat", {0,108,685,1,4}}, {"Qingming Hat", {0,108,686,1,4}}, {"Qingming Hat", {0,108,687,1,4}}},
+			{{"Qingming Upper Garment", {0,109,684,1,4}}, {"Qingming Upper Garment", {0,109,685,1,4}}, {"Qingming Upper Garment", {0,109,686,1,4}}, {"Qingming Upper Garment", {0,109,687,1,4}}},
+			{{"Qingming Lower Garment", {0,110,684,1,4}}, {"Qingming Lower Garment", {0,110,685,1,4}}, {"Qingming Lower Garment", {0,110,686,1,4}}, {"Qingming Lower Garment", {0,110,687,1,4}}},
 		};
 		local nBody = GetBody();
 		local nSize = getn(tWaiZhuang);
@@ -196,7 +196,7 @@ function _get_3v3_last_season_award(nRank)
 		"ChÝ T«n V­¬ng Gi¶",
 		"§éc Bé Thiªn H¹",
 		"Vâ l©m hµo kiÖt",
-		"Giang Hå Tinh Anh",
+		"Jianghu Elite",
 	}
 	if nIndex ~= -1 and tTitle[nIndex] ~= nil then
 		local msg = format("Chóc mõng ®¹i hiÖp [%s] ®· xÕp h¹ng thø %d liªn ®Êu §¹i Héi TØ Vâ 3v3 cña quý tr­íc, nhËn ®­îc danh hiÖu [%s] vµ phÇn th­ëng phong phó!", GetName(), nRank, tTitle[nIndex]);

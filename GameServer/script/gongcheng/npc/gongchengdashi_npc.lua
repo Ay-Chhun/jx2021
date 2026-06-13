@@ -39,7 +39,7 @@ function view_gongcheng_info()
 	szShou = replace(szShou, "/" ,"-")
 	szShou = replace(szShou, "|" ,"-")
 	szShou = replace(szShou, ":" ,"-")
-	Say(g_InfoHeader.."\nPhe thñ thµnh: <color=yellow>"..szShou.."<color>, Phe c«ng thµnh: <color=red>"..szGong.."<color>\nT×nh h×nh chiÕn sù hiÖn t¹i: \nTæng nh©n sè phe c«ng: <color=yellow>"..nGTotal.."<color> Nh©n sè ngo¹i viÖn phe c«ng: <color=yellow>"..nGRfm.."<color>\nTæng nh©n sè phe thñ: <color=yellow>"..nSTotal.."<color> Nh©n sè ngo¹i viÖn phe thñ: <color=yellow>"..nSRfm.."<color>",0);
+	Say(g_InfoHeader.."\nPhe thñ thµnh: <color=yellow>"..szShou.."<color>, Phe c«ng thµnh: <color=red>"..szGong.."<color>\nT×nh h×nh chiÕn sù hiÖn t¹i: \nTæng nh©n sè phe c«ng: <color=yellow>"..nGTotal.."<color> Nh©n sè ngo¹i viÖn phe c«ng: <color=yellow>"..nGRfm.."<color>\nTotal number of the defending faction: <color=yellow>"..nSTotal.."<color> Nh©n sè ngo¹i viÖn phe thñ: <color=yellow>"..nSRfm.."<color>",0);
 end;
 
 function know_rule()
@@ -106,7 +106,7 @@ function enter_battle()
 	if szShou == "" then
 		szShou = "Ch­a";
 	end;
-	Say(g_InfoHeader.."\nPhe thñ thµnh: <color=yellow>"..szShou.."<color>, Phe c«ng thµnh: <color=red>"..szGong.."<color>\nT×nh h×nh chiÕn sù hiÖn t¹i: \nTæng nh©n sè phe c«ng: <color=yellow>"..nGTotal.."<color> Nh©n sè ngo¹i viÖn phe c«ng: <color=yellow>"..nGRfm.."<color>\nTæng nh©n sè phe thñ: <color=yellow>"..nSTotal.."<color> Nh©n sè ngo¹i viÖn phe thñ: <color=yellow>"..nSRfm.."<color>",getn(selTab),selTab);
+	Say(g_InfoHeader.."\nPhe thñ thµnh: <color=yellow>"..szShou.."<color>, Phe c«ng thµnh: <color=red>"..szGong.."<color>\nT×nh h×nh chiÕn sù hiÖn t¹i: \nTæng nh©n sè phe c«ng: <color=yellow>"..nGTotal.."<color> Nh©n sè ngo¹i viÖn phe c«ng: <color=yellow>"..nGRfm.."<color>\nTotal number of the defending faction: <color=yellow>"..nSTotal.."<color> Nh©n sè ngo¹i viÖn phe thñ: <color=yellow>"..nSRfm.."<color>",getn(selTab),selTab);
 end;
 
 function single_enter(nCamp)
@@ -236,7 +236,7 @@ function get_award()
 				"Ta muèn l·nh tÊt c¶ phÇn th­ëng C«ng thµnh chiÕn! (®¹i bao)/#get_bag(1)",
 				"Ta muèn l·nh tÊt c¶ phÇn th­ëng C«ng thµnh chiÕn! (tiÓu bao)/#get_bag(2)",
 				"Quay l¹i néi dung tr­íc./main",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"End dialogue/nothing",
 				}
 	if tonumber(date("%w")) == 4 then
 		tinsert(selTab, 3, "Ta muèn nhËn phÇn th­ëng qu©n s­/get_junshi_award");
@@ -256,7 +256,7 @@ function get_bag(nType)
 	end;
 	local nItemIndex = 4+nType;	--ÎïÆ·ÔÚtItemInfoÖÐµÄË÷Òý
 	if nBagCount <= 0 then
-		Talk(1,"get_award",g_InfoHeader.."Ng¹i qu¸! <color=yellow>"..tItemInfo[nItemIndex][1].."<color> ng­¬i muèn l·nh chØ cßn <color=red>0<color>. ChØ nh÷ng ai tham gia toµn trËn C«ng thµnh chiÕn míi ®­îc nhËn phÇn th­ëng");
+		Talk(1,"get_award",g_InfoHeader.."Too bad! <color=yellow>"..tItemInfo[nItemIndex][1].."<color> ng­¬i muèn l·nh chØ cßn <color=red>0<color>. ChØ nh÷ng ai tham gia toµn trËn C«ng thµnh chiÕn míi ®­îc nhËn phÇn th­ëng");
 		return 0;
 	end;	
 	SetTask(TASK_AWARD_WIN+nType-1,0);
@@ -289,7 +289,7 @@ function get_junshi_award()
 	
 	local nRetCode, nIndex;
 	for i = 1, 8 do
-		nRetCode, nIndex = gf_AddItemEx({2,1,1001,1}, "Hßa ThÞ BÝch");
+		nRetCode, nIndex = gf_AddItemEx({2,1,1001,1}, "Heshi Jade");
 		if nRetCode == 1 then
 			SetItemExpireTime(nIndex, 7 * 24 * 3600);
 		end
@@ -335,7 +335,7 @@ function get_tong_award()
 		gf_AddItemEx2({2, 1, 1210, 12, 4}, "B¶o r­¬ng Tµi nguyªn", "C«ng Thµnh §¹i ChiÕn", "PhÇn th­ëng bang chñ", 0, 1);
 		gf_AddItemEx2({2, 1, 30589, 1, 4}, "LÖnh Bµi Bang Héi", "C«ng Thµnh §¹i ChiÕn", "PhÇn th­ëng bang chñ", 0, 1);
 		gf_AddItemEx2({2, 1, 30844, 3, 4}, "R­¬ng Háa Phông", "C«ng Thµnh §¹i ChiÕn", "PhÇn th­ëng bang chñ", 0, 1);
-		gf_AddItemEx2({2, 1, 30574, 1, 4}, "ChiÕn Kú Bang Ph¸i ThiÕt HuyÕt", "C«ng Thµnh §¹i ChiÕn", "PhÇn th­ëng bang chñ", 0, 1);
+		gf_AddItemEx2({2, 1, 30574, 1, 4}, "Iron Blood Sect War Banner", "C«ng Thµnh §¹i ChiÕn", "PhÇn th­ëng bang chñ", 0, 1);
 		return 1;
 	end
 	if nFlag == 2 then
@@ -345,7 +345,7 @@ function get_tong_award()
 		SetTask(TNC_TONG_AWARD, 0);
 		Msg2Player("B¹n ®· thÊt b¹i ë C«ng Thµnh §¹i ChiÕn lÇn tr­íc, phÇn th­ëng nh­ sau:")
 		gf_AddItemEx2({2, 1, 1210, 3, 4}, "B¶o r­¬ng Tµi nguyªn", "C«ng Thµnh §¹i ChiÕn", "PhÇn th­ëng bang chñ", 0, 1);
-		gf_AddItemEx2({2, 1, 30573, 1, 4}, "ChiÕn Kú Bang Ph¸i", "C«ng Thµnh §¹i ChiÕn", "PhÇn th­ëng bang chñ", 0, 1);
+		gf_AddItemEx2({2, 1, 30573, 1, 4}, "Sect War Banner", "C«ng Thµnh §¹i ChiÕn", "PhÇn th­ëng bang chñ", 0, 1);
 		return 1;
 	end
 end

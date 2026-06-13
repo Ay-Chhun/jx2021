@@ -156,20 +156,20 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 30009	0	§æi Cæ Linh Th¹ch	Ê¦ÃÅÊ¥Îï										2;1;30368;5	;;;								
 30010	0	§æi Cæ Linh Th¹ch	Ğ¡´«¹¦µ¤										2;1;30368;5	;;;								
 30011	0	§æi Cæ Linh Th¹ch	ĞŞÕæÒª¾÷²ĞÒ³										2;1;30368;10	;;;								
-30012	0	§æi Cæ Linh Th¹ch	Ğ¡°×¾ÔÍè										2;1;30368;10	;;;								
-30013	0	§æi Cæ Linh Th¹ch	Ğ¡ÈıÇåÍè										2;1;30368;10	;;;								
-30014	0	§æi Cæ Linh Th¹ch	Ğ¡ÁùÉñÍè										2;1;30368;10	;;;								
+30012	0	§æi Cæ Linh Th¹ch	Small White Jade Pill										2;1;30368;10	;;;								
+30013	0	§æi Cæ Linh Th¹ch	Small Three Pure Pill										2;1;30368;10	;;;								
+30014	0	§æi Cæ Linh Th¹ch	Small Six Spirits Pill										2;1;30368;10	;;;								
 30015	0	§æi Cæ Linh Th¹ch	´«¹¦µ¤										2;1;30368;10	;;;								
 30016	0	§æi Cæ Linh Th¹ch	ÌìÃÅºìÒ©*9										2;1;30368;9	;;;								
 30017	0	§æi Cæ Linh Th¹ch	ÌìÃÅÀ¶Ò©*9										2;1;30368;9	;;;								
 30018	0	§æi Cæ Linh Th¹ch	Ğ¡ÈË²Î¹û				1						2;1;30368;40	;;;								
 30019	0	§æi Cæ Linh Th¹ch	¾«Á¶½ğÏ¬				1						2;1;30368;40	;;;								
 30020	0	§æi Cæ Linh Th¹ch	ÎåĞĞĞşÊ¯*10										2;1;30368;40	;;;								
-30021	0	§æi Cæ Linh Th¹ch	ÅàÔªµ¤										2;1;30368;40	;;;								
-30022	0	§æi Cæ Linh Th¹ch	Ïû½ÙÉ¢				1						2;1;30368;60	;;;								
+30021	0	§æi Cæ Linh Th¹ch	Yuanyuan Dan										2;1;30368;40	;;;								
+30022	0	§æi Cæ Linh Th¹ch	Calamity-Dispelling Powder				1						2;1;30368;60	;;;								
 30023	0	§æi Cæ Linh Th¹ch	¹ÅÌìÃÅ±¦Ïä										2;1;30368;20	;;;								
-30024	0	§æi Cæ Linh Th¹ch	¿Ì°å										2;1;30368;30	;;;								
-30025	0	§æi Cæ Linh Th¹ch	Ï´ËèÁéµ¤				1						2;1;30368;800	;;;								
+30024	0	§æi Cæ Linh Th¹ch	Engraving Plate										2;1;30368;30	;;;								
+30025	0	§æi Cæ Linh Th¹ch	Marrow-Cleansing Spirit Pill				1						2;1;30368;800	;;;								
 30026	0	§æi Cæ Linh Th¹ch	ÔÌÁé1¼¶ÆÕÍ¨										2;1;30368;40	;;;								
 30027	0	§æi Cæ Linh Th¹ch	ÔÌÁé1¼¶Ï¡ÓĞ										2;1;30368;40	;;;								
 30028	0	§æi Cæ Linh Th¹ch	Ê¦ÃÅ4Í·										2;1;30368;300	;;;								
@@ -195,20 +195,20 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 30048	0	§æi Cæ Linh Ngäc	ÌìÃÅºìÒ©*9				¡¡						2;1;30369;1	;;;								
 30049	0	§æi Cæ Linh Ngäc	ÌìÃÅºìÒ©*9				¡¡						2;1;30369;1	;;;								
 30050	0	§æi Cæ Linh Ngäc	ÉñÅ©µ¤				1						2;1;30369;2	;;;								
-30051	0	§æi Cæ Linh Ngäc	¾ü¹¦ÕÂ				1						2;1;30369;4	;;;								
+30051	0	§æi Cæ Linh Ngäc	Military Merit Citation				1						2;1;30369;4	;;;								
 30052	0	§æi Cæ Linh Ngäc	°×¾ÔÏÉµ¤				1						2;1;30369;5	;;;								
 30053	0	§æi Cæ Linh Ngäc	´óÈË²Î¹û				1						2;1;30369;5	;;;								
 30054	0	§æi Cæ Linh Ngäc	ÁùÉñÏÉµ¤				1						2;1;30369;5	;;;								
 30055	0	§æi Cæ Linh Ngäc	ÈıÇåÏÉµ¤				1						2;1;30369;5	;;;								
 30056	0	§æi Cæ Linh Ngäc	¾ü¼¨ÅÆ				1						2;1;30369;6	;;;								
 30057	0	§æi Cæ Linh Ngäc	Ê¦ÃÅÁîÆì				1						2;1;30369;15	;;;								
-30058	0	§æi Cæ Linh Ngäc	»Æ½ğ´óºì°ü£¨¿Õ£©				¡¡						2;1;30369;15	;;;								
+30058	0	§æi Cæ Linh Ngäc	Golden Big Red Pack (Empty)				¡¡						2;1;30369;15	;;;								
 30059	0	§æi Cæ Linh Ngäc	×Ï½ğºì°ü£¨¿Õ£©				¡¡						2;1;30369;15	;;;								
 30060	0	§æi Cæ Linh Ngäc	ËÄÁé¹éÔªµ¤				¡¡						2;1;30369;15	;;;								
-30061	0	§æi Cæ Linh Ngäc	´ó¾ü¹¦ÕÂ				¡¡						2;1;30369;18	;;;								
+30061	0	§æi Cæ Linh Ngäc	Grand Army Merit Citation				¡¡						2;1;30369;18	;;;								
 30062	0	§æi Cæ Linh Ngäc	ÔÉÌú¾«Ê¯				¡¡						2;1;30369;25	;;;								
 30063	0	§æi Cæ Linh Ngäc	°×½ğºì°ü(¿Õ)				¡¡						2;1;30369;60	;;;								
-30064	0	§æi Cæ Linh Ngäc	»Ô»Í¾ü¹¦ÕÂ				¡¡						2;1;30369;90	;;;								
+30064	0	§æi Cæ Linh Ngäc	Glorious Military Merit Citation				¡¡						2;1;30369;90	;;;								
 30065	0	§æi Cæ Linh Ngäc	°Ë±¦Ï´ËèÏÉµ¤				¡¡						2;1;30369;280	;;;								
 30066	0	§æi Cæ Linh Ngäc	Ğ¡½â°ó·û				1						2;1;30369;300	;;;								
 30067	0	§æi Cæ Linh Ngäc	ÔÉÌúÁéÊ¯				¡¡						2;1;30369;450	;;;								
@@ -274,8 +274,8 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 30127	0	Thiªn HuyÔn Kh¾c B¶n cÊp 1 	1¼¶Ç§»Ã¿Ì°å¶Ò»»ÈÎÒâ1¼¶ÔÌÁé				1						2;1;30406;1									
 30128	0	Thiªn HuyÔn Kh¾c B¶n cÊp 2	2¼¶Ç§»Ã¿Ì°å¶Ò»»ÈÎÒâ2¼¶ÔÌÁé				1						2;1;30407;1									
 30129	0	Thiªn HuyÔn Kh¾c B¶n cÊp 3	3¼¶Ç§»Ã¿Ì°å¶Ò»»ÈÎÒâ3¼¶ÔÌÁé				1						2;1;30408;1									
-30130	0	§æi §ång Hæ phï	1¼¶Ä¥µ¶Ê¯				1						2;1;30436;30									
-30131	0	§æi §ång Hæ phï	Í¨ÌìÁîÅÆ				1						2;1;30436;20									
+30130	0	§æi §ång Hæ phï	Tier 1 Whetstone				1						2;1;30436;30									
+30131	0	§æi §ång Hæ phï	Heaven-Reaching Token				1						2;1;30436;20									
 30132	0	§æi §ång Hæ phï	ÎäÁÖÔç±¨				1						2;1;30436;1									
 30133	0	§æi §ång Hæ phï	Ê¦ÃÅÊ¥Îï				1						2;1;30436;1									
 30134	0	§æi §ång Hæ phï	´«¹¦µ¤				1						2;1;30436;1									
@@ -284,15 +284,15 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 30137	0	§æi §ång Hæ phï	ºÚÓñ¶ÏĞø¸à				1						2;1;30436;10									
 30138	0	§æi §ång Hæ phï	ÍòÎï¹éÔªµ¤				1						2;1;30436;10									
 30139	0	§æi §ång Hæ phï	ÉúÉúÔì»¯É¢				1						2;1;30436;10									
-30140	0	§æi §ång Hæ phï	Ïû½ÙÉ¢				1						2;1;30436;15									
+30140	0	§æi §ång Hæ phï	Calamity-Dispelling Powder				1						2;1;30436;15									
 30141	0	§æi §ång Hæ phï	¾«Á¶½ğÏ¬				1						2;1;30436;30									
-30142	0	§æi Ng©n Hæ phï	2¼¶Ä¥µ¶Ê¯				1						2;1;30437;30									
-30143	0	§æi Ng©n Hæ phï	Í¨ÌìÁîÅÆ				1						2;1;30437;6									
-30144	0	§æi Ng©n Hæ phï	Ììî¸ËéÆ¬				1						2;1;30437;30									
+30142	0	§æi Ng©n Hæ phï	Tier 2 Whetstone				1						2;1;30437;30									
+30143	0	§æi Ng©n Hæ phï	Heaven-Reaching Token				1						2;1;30437;6									
+30144	0	§æi Ng©n Hæ phï	Heaven Roc Fragment				1						2;1;30437;30									
 30145	0	§æi Ng©n Hæ phï	3¼¶ÁéÊ¯Ô­Ê¯				1						2;1;30437;2									
 30146	0	§æi Ng©n Hæ phï	4¼¶ÁéÊ¯Ô­Ê¯				1						2;1;30437;10									
 30147	0	§æi Ng©n Hæ phï	´óÈË²Î¹û				1						2;1;30437;10									
-30148	0	§æi Ng©n Hæ phï	¶·»ê				1						2;1;30437;10									
+30148	0	§æi Ng©n Hæ phï	Soul Fight				1						2;1;30437;10									
 30149	0	§æi Ng©n Hæ phï	ÉñĞĞÃØ±¾				1						2;1;30437;5									
 30150	0	§æi Ng©n Hæ phï	Ì«Ò×»ìÔª¹¦Í¼¼ø				1						2;1;30437;2									
 30151	0	§æi Ng©n Hæ phï	Ì«Ò×»ìÔª¹¦Í¼¼ø				1						2;1;30437;20									
@@ -300,16 +300,16 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 30153	0	§æi Ng©n Hæ phï	ÂÌÁÖÀÇÑÌ				1						2;1;30437;200									
 30154	0	§æi Ng©n Hæ phï	Ê¼»ÊÃØÚ¯				1						2;1;30437;300									
 30155	0	§æi Kim Hæ phï	ÌìÃÅËéÆ¬										2;1;30438;8									
-30156	0	§æi Kim Hæ phï	ÌìÃÅ½ğÁî										2;1;30438;160									
-30157	0	§æi Kim Hæ phï	Ììî¸ËéÆ¬										2;1;30438;8									
-30158	0	§æi Kim Hæ phï	Ììî¸Áî										2;1;30438;160									
-30159	0	§æi Kim Hæ phï	1¼¶Ä¥µ¶Ê¯				1						2;1;30438;1									
-30160	0	§æi Kim Hæ phï	2¼¶Ä¥µ¶Ê¯				1						2;1;30438;2									
-30161	0	§æi Kim Hæ phï	3¼¶Ä¥µ¶Ê¯				1						2;1;30438;3									
+30156	0	§æi Kim Hæ phï	Heaven Sect Gold Order										2;1;30438;160									
+30157	0	§æi Kim Hæ phï	Heaven Roc Fragment										2;1;30438;8									
+30158	0	§æi Kim Hæ phï	Heaven Sect Order										2;1;30438;160									
+30159	0	§æi Kim Hæ phï	Tier 1 Whetstone				1						2;1;30438;1									
+30160	0	§æi Kim Hæ phï	Tier 2 Whetstone				1						2;1;30438;2									
+30161	0	§æi Kim Hæ phï	Tier 3 Whetstone				1						2;1;30438;3									
 30162	0	§æi Kim Hæ phï	12¼¶Ç¿»¯¾í				1						2;1;30438;36									
-30163	0	§æi Kim Hæ phï	13¼¶Ç¿»¯¾í				1						2;1;30438;72									
-30164	0	§æi Kim Hæ phï	14¼¶Ç¿»¯¾í				1						2;1;30438;150									
-30165	0	§æi Kim Hæ phï	15¼¶Ç¿»¯¾í				1						2;1;30438;300									
+30163	0	§æi Kim Hæ phï	Tier 13 Enhancement Scroll				1						2;1;30438;72									
+30164	0	§æi Kim Hæ phï	Tier 14 Enhancement Scroll				1						2;1;30438;150									
+30165	0	§æi Kim Hæ phï	Tier 15 Enhancement Scroll				1						2;1;30438;300									
 30166	1	§æi H¹o NguyÖt míi cò	Ğ°ÏÀğ©ÔÂÒÂ1		save_enhance	B¶o l­u cÊp c­êng hãa, hiÖu qu¶ ®Şnh hån	1						0;100;3102;1									
 30167	1	§æi H¹o NguyÖt míi cò	Ğ°ÏÀğ©ÔÂÒÂ2		save_enhance	B¶o l­u cÊp c­êng hãa, hiÖu qu¶ ®Şnh hån	1						0;100;3103;1									
 30168	1	§æi H¹o NguyÖt míi cò	Ğ°ÏÀğ©ÔÂÒÂ3		save_enhance	B¶o l­u cÊp c­êng hãa, hiÖu qu¶ ®Şnh hån	1						0;100;3104;1									
@@ -345,8 +345,8 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 30198	0	§æi Ma Tinh	»»Ê¦ÃÅ5×°±¸				1						2;1;30497;180					1;300000				
 30199	0	§æi Ma Tinh	»»Ê¦ÃÅ5ÎäÆ÷				1						2;1;30497;300					1;400000				
 30200	0	§æi Ma Tinh	×øÆï:¹ÅÑôÊŞ±¦±¦				1						2;1;30497;100					1;100000				
-30201	0	§æi Ma Tinh	1¼¶Ç§»Ã¿Ì°å				1						2;1;30497;100					1;100000				
-30202	0	§æi Ma Tinh	2¼¶Ç§»Ã¿Ì°å				1						2;1;30497;300					1;300000				
+30201	0	§æi Ma Tinh	Tier 1 Thousand Phantom Engraving Plate				1						2;1;30497;100					1;100000				
+30202	0	§æi Ma Tinh	Tier 2 Thousand Phantom Engraving Plate				1						2;1;30497;300					1;300000				
 30203	1	§æi Ma Tinh + Thiªn Cang	Ò«ÑôËé»ÍÖ®ÎÚ÷ë±¦½äÉı3¼¶				1						0;102;3185;1	2;1;30497;1500	2;95;204;15							
 30204	1	§æi Ma Tinh + Thiªn Cang	Ò«ÑôËé»ÍÖ®×ÏòÔÓñÅåÉı3¼¶				1						0;102;3186;1	2;1;30497;1500	2;95;204;15							
 30205	1	§æi Ma Tinh + Thiªn Cang	Ò«ÑôËé»ÍÖ®ÔÆ»¢ÁîÅÆÉı3¼¶				1						0;102;3187;1	2;1;30497;1500	2;95;204;15							
@@ -357,22 +357,22 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 30210	1	§æi Thiªn Cang	Ò«ÑôËé»ÍÖ®ÔÆ»¢ÁîÅÆÉı3¼¶				1						0;102;3187;1	2;95;204;18								
 30211	1	§æi Thiªn Cang	Ò«ÑôËé»ÍÖ®³àÈ¸Ö¸»·Éı3¼¶				1						0;102;3188;1	2;95;204;18								
 30212	1	§æi Thiªn Cang	Ò«ÑôËé»ÍÖ®±Ì¹êÏîÁ´Éı3¼¶				1						0;102;3189;1	2;95;204;18								
-30213	0	Hu©n ch­¬ng dòng sÜ	ÓÂÊ¿»ÕÕÂ°ü				1						2;1;30498;8					1;10000				
-30214	0	Hu©n ch­¬ng dòng sÜ	1¼¶Ìú¾§				1	99					2;1;30498;2									
-30215	0	Hu©n ch­¬ng dòng sÜ	2¼¶Ìú¾§				1	99					2;1;30498;4									
-30216	0	Hu©n ch­¬ng dòng sÜ	Ï´ĞÄÊ¯¿ó					99					2;1;30498;3									
-30217	0	Hu©n ch­¬ng dòng sÜ	Á¶Â¯Ìú¿ó					99					2;1;30498;3									
-30218	0	Hu©n ch­¬ng anh hïng	Ó¢ĞÛ»ÕÕÂ°ü				1						2;1;30499;4					1;20000				
-30219	0	Hu©n ch­¬ng anh hïng	3¼¶Ìú¾§				1	99					2;1;30499;6									
-30220	0	Hu©n ch­¬ng anh hïng	ÃØÒø´¸					99					2;1;30499;4									
-30221	0	Hu©n ch­¬ng anh hïng	ÃØÒø×ê					99					2;1;30499;4									
-30222	0	Hu©n ch­¬ng dòng sÜ	1¼¶Ìú¾§*10				1						2;1;30498;20					1;25000				
-30223	0	Hu©n ch­¬ng dòng sÜ	2¼¶Ìú¾§*10				1						2;1;30498;40					1;50000				
-30224	0	Hu©n ch­¬ng dòng sÜ	Ï´ĞÄÊ¯¿ó*10										2;1;30498;30					1;50000				
-30225	0	Hu©n ch­¬ng dòng sÜ	Á¶Â¯Ìú¿ó*10										2;1;30498;30					1;50000				
-30226	0	Hu©n ch­¬ng anh hïng	3¼¶Ìú¾§*10				1						2;1;30499;10					1;100000				
-30227	0	Hu©n ch­¬ng anh hïng	Ï´ĞÄÊ¯¿ó*10										2;1;30499;10					1;50000				
-30228	0	Hu©n ch­¬ng anh hïng	Á¶Â¯Ìú¿ó*10										2;1;30499;10					1;50000				
+30213	0	Brave Warrior Medal	ÓÂÊ¿»ÕÕÂ°ü				1						2;1;30498;8					1;10000				
+30214	0	Brave Warrior Medal	1¼¶Ìú¾§				1	99					2;1;30498;2									
+30215	0	Brave Warrior Medal	2¼¶Ìú¾§				1	99					2;1;30498;4									
+30216	0	Brave Warrior Medal	Mind-Cleansing Stone Ore					99					2;1;30498;3									
+30217	0	Brave Warrior Medal	Forge Iron Ore					99					2;1;30498;3									
+30218	0	Hero's Medal	Ó¢ĞÛ»ÕÕÂ°ü				1						2;1;30499;4					1;20000				
+30219	0	Hero's Medal	3¼¶Ìú¾§				1	99					2;1;30499;6									
+30220	0	Hero's Medal	Secret Silver Hammer					99					2;1;30499;4									
+30221	0	Hero's Medal	Secret Silver Drill					99					2;1;30499;4									
+30222	0	Brave Warrior Medal	1¼¶Ìú¾§*10				1						2;1;30498;20					1;25000				
+30223	0	Brave Warrior Medal	2¼¶Ìú¾§*10				1						2;1;30498;40					1;50000				
+30224	0	Brave Warrior Medal	Ï´ĞÄÊ¯¿ó*10										2;1;30498;30					1;50000				
+30225	0	Brave Warrior Medal	Á¶Â¯Ìú¿ó*10										2;1;30498;30					1;50000				
+30226	0	Hero's Medal	3¼¶Ìú¾§*10				1						2;1;30499;10					1;100000				
+30227	0	Hero's Medal	Ï´ĞÄÊ¯¿ó*10										2;1;30499;10					1;50000				
+30228	0	Hero's Medal	Á¶Â¯Ìú¿ó*10										2;1;30499;10					1;50000				
 30229	0	vip1	vip·âÉÍÁî:ÓÎÏÀ				1		3135;1		3138;4000	CÇn ViP cÊp 1 vµ tiªu hao 4000 Kim PhiÕu						1;100000				
 30230	0	vip1	1¼¶vip×øÆï				1		3135;1		3138;2000	CÇn ViP cÊp 1 vµ tiªu hao 2000 Kim PhiÕu						1;100000				
 30231	0	vip1	÷ö»êöÌ½ğvipÍâ×°				1		3135;1		3138;30000	CÇn ViP cÊp 1 vµ tiªu hao 30000 Kim PhiÕu						1;100000				
@@ -409,13 +409,13 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 30262	0	vip5	vip·âÉÍÁî:Õ½¿ñ				1		3135;5		3138;600000	CÇn ViP cÊp 5 vµ tiªu hao 600000 Kim PhiÕu						1;300000				
 30263	0	vip5	3¼¶vip×øÆï				1		3135;5		3138;300000	CÇn ViP cÊp 5 vµ tiªu hao 300000 Kim PhiÕu						1;300000				
 30264	0	vip5	ÉÙÄêÓÎvipÍâ×°				1		3135;5		3138;600000	CÇn ViP cÊp 5 vµ tiªu hao 600000 Kim PhiÕu						1;300000				
-30265	0	TiÖm Ng©n PhiÕu	ÎÚÔÆÌ¤Ñ©±¦±¦				1											1;50000	2;15000			
-30266	0	TiÖm Ng©n PhiÕu	¶À½ÇÊŞ±¦±¦				1											1;50000	2;15000			
-30267	0	TiÖm Ng©n PhiÕu	ÉñĞĞ±¦µä				1											1;50000	2;12000			
-30268	0	TiÖm Ng©n PhiÕu	°Ë±¦Ï´ËèÏÉµ¤				1											1;100000	2;20000			
-30269	0	TiÖm Ng©n PhiÕu	Ò×½îµ¤				1											1;100000	2;25000			
-30270	0	TiÖm Ng©n PhiÕu	ÔÉÌúÁéÊ¯				1											1;100000	2;60000			
-30271	0	TiÖm Ng©n PhiÕu	¶¨»êÔÉÌúÁéÊ¯				1											1;100000	2;90000			
+30265	0	Silver Note Shop	ÎÚÔÆÌ¤Ñ©±¦±¦				1											1;50000	2;15000			
+30266	0	Silver Note Shop	¶À½ÇÊŞ±¦±¦				1											1;50000	2;15000			
+30267	0	Silver Note Shop	ÉñĞĞ±¦µä				1											1;50000	2;12000			
+30268	0	Silver Note Shop	°Ë±¦Ï´ËèÏÉµ¤				1											1;100000	2;20000			
+30269	0	Silver Note Shop	Ò×½îµ¤				1											1;100000	2;25000			
+30270	0	Silver Note Shop	ÔÉÌúÁéÊ¯				1											1;100000	2;60000			
+30271	0	Silver Note Shop	¶¨»êÔÉÌúÁéÊ¯				1											1;100000	2;90000			
 30272	0	§æi Thiªn Cang LÖnh	14¸öÌìî¸Áî+7¸öÌìÃÅ½ğÁîÖ±½Ó¶Ò»»Õ½¿ñ×°±¸				1						2;95;204;14	2;1;30370;7				1;2000000				
 30273	0	§æi Thiªn Cang LÖnh	21¸öÌìî¸Áî+7¸öÌìÃÅ½ğÁîÖ±½Ó¶Ò»»Õ½¿ñÎäÆ÷				1						2;95;204;21	2;1;30370;7				1;3000000				
 30274	1	N©ng cÊp trang bŞ DiÖu D­¬ng	ÉÙÁÖË×¼ÒÒ«ÑôÍ·+8¸öÌìî¸Áî+8¸öÌìÃÅ½ğÁîÖÁÕ½¿ñ×°±¸		reduce_enhance	Gi¶m møc c­êng hãa, kh«ng b¶o l­u hiÖu qu¶ ®Şnh hån	1						0;103;3128;1	2;95;204;8	2;1;30370;8			1;2000000				
@@ -1022,16 +1022,16 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 30875	1	N©ng cÊp vò khİ H¹o NguyÖt	À¥ÂØÌìÊ¦ğ©ÔÂÎäÆ÷+600¸öÓÂÊ¿Ñ«ÕÂÉı¼¶ÖÁÒ«ÑôÎäÆ÷		half_enhance	Gi¶m mét nöa møc c­êng hãa, kh«ng b¶o l­u hiÖu qu¶ ®Şnh hån	1						0;2;8986;1	2;1;30498;600				1;1990000				
 30876	1	N©ng cÊp vò khİ H¹o NguyÖt	´äÑÌÎèÏÉğ©ÔÂÎäÆ÷+600¸öÓÂÊ¿Ñ«ÕÂÉı¼¶ÖÁÒ«ÑôÎäÆ÷		half_enhance	Gi¶m mét nöa møc c­êng hãa, kh«ng b¶o l­u hiÖu qu¶ ®Şnh hån	1						0;13;8990;1	2;1;30498;600				1;1990000				
 30877	1	N©ng cÊp vò khİ H¹o NguyÖt	´äÑÌÁéÅ®ğ©ÔÂÎäÆ÷+600¸öÓÂÊ¿Ñ«ÕÂÉı¼¶ÖÁÒ«ÑôÎäÆ÷		half_enhance	Gi¶m mét nöa møc c­êng hãa, kh«ng b¶o l­u hiÖu qu¶ ®Şnh hån	1						0;12;8991;1	2;1;30498;600				1;1990000				
-30878	0	Hu©n ch­¬ng dòng sÜ	200¸öÓÂÊ¿Ñ«ÕÂ¶Ò»»ğ©ÔÂ×°±¸				1						2;1;30498;200					1;400000				
-30879	0	Hu©n ch­¬ng dòng sÜ	400¸öÓÂÊ¿Ñ«ÕÂ¶Ò»»ğ©ÔÂÎäÆ÷				1						2;1;30498;400					1;800000				
-30880	0	Hu©n ch­¬ng anh hïng	10¸öÓ¢ĞÛÑ«ÕÂ¶Ò»»4¼¶Ìú¾§				1	99					2;1;30499;10									
-30881	0	Hu©n ch­¬ng anh hïng	180¸öÓ¢ĞÛÑ«ÕÂ¶Ò»»À×»¢ÓÂÊ¿×°±¸				1						2;1;30499;180					1;44440000				
-30882	0	TiÖm Ng©n PhiÕu	ºÚÓñ¶ÏĞø¸à															2;5				
-30883	0	TiÖm Ng©n PhiÕu	ÉúÉúÔì»¯É¢															2;5				
-30884	0	TiÖm Ng©n PhiÕu	ÍòÎï¹éÔªµ¤															2;5				
-30885	0	TiÖm Ng©n PhiÕu	¾Å×ª»¹»êµ¤															2;5				
-30886	0	TiÖm Ng©n PhiÕu	Ï´³¾µ¤															2;100				
-30887	0	TiÖm Ng©n PhiÕu	Ç§Àï´«Òô·û															2;50				
+30878	0	Brave Warrior Medal	200¸öÓÂÊ¿Ñ«ÕÂ¶Ò»»ğ©ÔÂ×°±¸				1						2;1;30498;200					1;400000				
+30879	0	Brave Warrior Medal	400¸öÓÂÊ¿Ñ«ÕÂ¶Ò»»ğ©ÔÂÎäÆ÷				1						2;1;30498;400					1;800000				
+30880	0	Hero's Medal	10¸öÓ¢ĞÛÑ«ÕÂ¶Ò»»4¼¶Ìú¾§				1	99					2;1;30499;10									
+30881	0	Hero's Medal	180¸öÓ¢ĞÛÑ«ÕÂ¶Ò»»À×»¢ÓÂÊ¿×°±¸				1						2;1;30499;180					1;44440000				
+30882	0	Silver Note Shop	ºÚÓñ¶ÏĞø¸à															2;5				
+30883	0	Silver Note Shop	ÉúÉúÔì»¯É¢															2;5				
+30884	0	Silver Note Shop	ÍòÎï¹éÔªµ¤															2;5				
+30885	0	Silver Note Shop	¾Å×ª»¹»êµ¤															2;5				
+30886	0	Silver Note Shop	Dust-Cleansing Pill															2;100				
+30887	0	Silver Note Shop	Ç§Àï´«Òô·û															2;50				
 30888	0	Huy ch­¬ng anh hïng+ Tinh ph¸ch L«i Hæ	300¸öÓ¢ĞÛÑ«ÕÂ+90¸öÀ×»¢¾«ÆÇ+2¸öÌìî¸Áî+¸öÌìÃÅ½ğÁî¶Ò»»4ĞÇÑø³É×°±¸										2;1;30499;300	2;1;30614;90	2;95;204;2	2;1;30370;2		1;100000				
 30889	1	N©ng cÊp ¸o Choµng Kim ChÕ	10¼¶ÎåĞĞ½ğÖÊ¹ÒÒÂ+30À×»¢¾«ÆÇ+4Ììî¸Áî+4ÌìÃÅ½ğÁîÉı¼¶³É4ĞÇ¹ÒÒÂ		reduce_enhance	Gi¶m møc c­êng hãa, kh«ng b¶o l­u hiÖu qu¶ ®Şnh hån	1						0;152;4;1;10	2;1;30614;30	2;95;204;4	2;1;30370;4		1;100000				
 30890	1	N©ng cÊp ¸o Choµng Méc ChÕ	10¼¶ÎåĞĞÄ¾ÖÊ¹ÒÒÂ+30À×»¢¾«ÆÇ+4Ììî¸Áî+4ÌìÃÅ½ğÁîÉı¼¶³É4ĞÇ¹ÒÒÂ		reduce_enhance	Gi¶m møc c­êng hãa, kh«ng b¶o l­u hiÖu qu¶ ®Şnh hån	1						0;152;5;1;10	2;1;30614;30	2;95;204;4	2;1;30370;4		1;100000				
@@ -1268,8 +1268,8 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 31121	0	M¶nh MËt TŞch	150ÕÅ+50½ğ=åĞÒ£ÃØ¼®²Ğ¾í				0						2;1;30669;150					1;500000				
 31122	0	M¶nh MËt TŞch	50ÕÅ+10½ğ=Ê¦ÃÅÕæ¾í				0						2;1;30669;50					1;100000				
 31123	0	Tinh Hoa UÈn Linh CÊp 4	16¸ö4¼¶ÔÌÁé¾«»ª»»4¼¶ÔÌÁé				1						2;1;30666;16									
-31124	0	Tinh Hoa UÈn Linh CÊp 5	16¸ö5¼¶ÔÌÁé¾«»ª»»5¼¶ÔÌÁé				1						2;1;30667;16									
-31125	0	Tinh Hoa UÈn Linh CÊp 6	16¸ö6¼¶ÔÌÁé¾«»ª»»6¼¶ÔÌÁé				1						2;1;30668;16									
+31124	0	Spirit Essence Tier 5	16¸ö5¼¶ÔÌÁé¾«»ª»»5¼¶ÔÌÁé				1						2;1;30667;16									
+31125	0	Spirit Essence Gathering Level 6	16¸ö6¼¶ÔÌÁé¾«»ª»»6¼¶ÔÌÁé				1						2;1;30668;16									
 31126	0	§æi nguyªn liÖu	20ĞşÑ×Ìú+32ÁéÓñ+20Ì«Ò»ÁîºÏ³ÉĞşÑ×¸Ö										2;1;30670;20	2;1;30682;32	2;1;30687;20							
 31127	0	§æi nguyªn liÖu	20Ñ×ÁéË¿+32ÁéÓñ+20Ì«Ò»ÁîºÏ³ÉÑ×Áé²¼										2;1;30671;20	2;1;30682;32	2;1;30687;20							
 31128	0	§æi nguyªn liÖu	20Ä§ÀÇÆ¤+32ÁéÓñ+20Ì«Ò»ÁîºÏ³ÉÄ§ÀÇ¼×										2;1;30672;20	2;1;30682;32	2;1;30687;20							
@@ -1281,11 +1281,11 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 31134	0	§æi Hµo HiÖp Khè	500Áé÷¡Ö®Æ¤+500²ÊÔÆË¿+9µØÁú¼×+40ÁéÌú										2;2;50;500	2;2;100;500	2;1;30677;9	2;1;30681;40						
 31135	0	§æi Hµo HiÖp Giíi ChØ	999ÁğÁ§½ğ+9ÏÉÒôÓñ+40ÁéÌú										2;1;30684;999	2;1;30679;9	2;1;30681;40							
 31136	0	§æi Linh §å Giíi ChØ	50À×Ñ×Ê¯+50ÏÉÒôÊ¯+20ÁéÊ¯										2;1;30683;50	2;1;30674;50	2;1;30680;20			1;100000				
-31137	0	Hu©n ch­¬ng anh hïng	2Ó¢ĞÛÑ«ÕÂ»»1¸öÁéÊ¯					1000					2;1;30499;2									
-31138	0	Hu©n ch­¬ng anh hïng	10Ó¢ĞÛÑ«ÕÂ»»1¸öÁéÓñ					1000					2;1;30499;10									
-31139	0	Hu©n ch­¬ng anh hïng	1¸öÓ¢ĞÛÑ«ÕÂ¶Ò»»Ò»¸ö¿Ì°å					100					2;1;30499;1									
-31140	0	Hu©n ch­¬ng anh hïng	1¸öÓ¢ĞÛÑ«ÕÂ¶Ò»»2¸öÓÂÊ¿Ñ«ÕÂ					500					2;1;30499;1									
-31141	0	Hu©n ch­¬ng anh hïng	2¸öÓ¢ĞÛÑ«ÕÂ¶Ò»»1¿Å1¼¶±¦Ê¯					255					2;1;30499;2									
+31137	0	Hero's Medal	2Ó¢ĞÛÑ«ÕÂ»»1¸öÁéÊ¯					1000					2;1;30499;2									
+31138	0	Hero's Medal	10Ó¢ĞÛÑ«ÕÂ»»1¸öÁéÓñ					1000					2;1;30499;10									
+31139	0	Hero's Medal	1¸öÓ¢ĞÛÑ«ÕÂ¶Ò»»Ò»¸ö¿Ì°å					100					2;1;30499;1									
+31140	0	Hero's Medal	1¸öÓ¢ĞÛÑ«ÕÂ¶Ò»»2¸öÓÂÊ¿Ñ«ÕÂ					500					2;1;30499;1									
+31141	0	Hero's Medal	2¸öÓ¢ĞÛÑ«ÕÂ¶Ò»»1¿Å1¼¶±¦Ê¯					255					2;1;30499;2									
 31142	1	N©ng cÊp vò khİ DiÖu D­¬ng	ÉÙÁÖË×¼ÒÒ«ÑôÎäÆ÷+800¸ö½ğÎÆ»¢·ûÖÁÕ½¿ñÎäÆ÷		reduce_enhance7	§é c­êng hãa trë vÒ 0, kh«ng b¶o l­u hiÖu qu¶ ®Şnh hån							0;3;8992;1	2;1;30438;800								
 31143	1	N©ng cÊp vò khİ DiÖu D­¬ng	ÉÙÁÖË×¼ÒÒ«ÑôÎäÆ÷+800¸ö½ğÎÆ»¢·ûÖÁÕ½¿ñÎäÆ÷		reduce_enhance7	§é c­êng hãa trë vÒ 0, kh«ng b¶o l­u hiÖu qu¶ ®Şnh hån							0;3;8992;1	2;1;30438;800								
 31144	1	N©ng cÊp vò khİ DiÖu D­¬ng	ÉÙÁÖìø×ÚÒ«ÑôÎäÆ÷+800¸ö½ğÎÆ»¢·ûÖÁÕ½¿ñÎäÆ÷		reduce_enhance7	§é c­êng hãa trë vÒ 0, kh«ng b¶o l­u hiÖu qu¶ ®Şnh hån							0;8;8994;1	2;1;30438;800								
@@ -1865,19 +1865,19 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 31718	0	§æi thó nu«i	ÊÆÁ¦¸ú³è£¨´óÀí£©				1		3324;80000			V¹n ng­êi ng­ìng mé cã thÓ ®æi	2;95;2084;1000									
 31719	0	§æi thó nu«i	ÊÆÁ¦¸ú³è£¨ÍÂŞ¬£©				1		3325;80000			V¹n ng­êi ng­ìng mé cã thÓ ®æi	2;95;2084;1000									
 31720	0	§æi thó nu«i	ÊÆÁ¦¸ú³è£¨Î÷ÏÄ£©				1		3326;80000			V¹n ng­êi ng­ìng mé cã thÓ ®æi	2;95;2084;1000									
-31721	0	§æi Tiªu LÖnh	ÊÆÁ¦ÉùÍû-³õ³öÃ©Â®					1000					2;1;30499;1					1;20000				
-31722	0	Kim L¨ng Töu	ÊÆÁ¦ÉùÍû-Õ¸Â¶Í·½Ç-´óÀí						3324;2000			Béc lé tµi n¨ng cã thÓ ®æi	2;1;30499;10									
-31723	0	Kim L¨ng Töu	ÊÆÁ¦ÉùÍû-Õ¸Â¶Í·½Ç-ÍÂŞ¬						3325;2000			Béc lé tµi n¨ng cã thÓ ®æi	2;1;30499;10									
-31724	0	Kim L¨ng Töu	ÊÆÁ¦ÉùÍû-Õ¸Â¶Í·½Ç-Î÷ÏÄ						3326;2000			Béc lé tµi n¨ng cã thÓ ®æi	2;1;30499;10									
+31721	0	Exchange Token	ÊÆÁ¦ÉùÍû-³õ³öÃ©Â®					1000					2;1;30499;1					1;20000				
+31722	0	Jinling Wine	ÊÆÁ¦ÉùÍû-Õ¸Â¶Í·½Ç-´óÀí						3324;2000			Béc lé tµi n¨ng cã thÓ ®æi	2;1;30499;10									
+31723	0	Jinling Wine	ÊÆÁ¦ÉùÍû-Õ¸Â¶Í·½Ç-ÍÂŞ¬						3325;2000			Béc lé tµi n¨ng cã thÓ ®æi	2;1;30499;10									
+31724	0	Jinling Wine	ÊÆÁ¦ÉùÍû-Õ¸Â¶Í·½Ç-Î÷ÏÄ						3326;2000			Béc lé tµi n¨ng cã thÓ ®æi	2;1;30499;10									
 31725	0	§æi phèi ph­¬ng phßng cô V« H¹	ÊÆÁ¦ÉùÍû-ÉùÃûÈµÆğÅä·½¶Ò»»£¨´óÀí£©					1000	3324;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30499;300	2;95;2084;200								
 31726	0	§æi phèi ph­¬ng phßng cô V« H¹	ÊÆÁ¦ÉùÍû-ÉùÃûÈµÆğÅä·½¶Ò»»£¨Î÷ÏÄ£©					1000	3325;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30499;300	2;95;2084;200								
 31727	0	§æi phèi ph­¬ng phßng cô V« H¹	ÊÆÁ¦ÉùÍû-ÉùÃûÈµÆğÅä·½¶Ò»»£¨ÍÂŞ¬£©					1000	3326;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30499;300	2;95;2084;200								
-31728	0	XÎng Kho B¸u	ÊÆÁ¦ÉùÍû-ÉùÃûÈµÆğ-´óÀí				1		3324;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30499;10	2;95;2084;5								
-31729	0	XÎng Kho B¸u	ÊÆÁ¦ÉùÍû-ÉùÃûÈµÆğ-ÍÂŞ¬				1		3325;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30499;10	2;95;2084;5								
-31730	0	XÎng Kho B¸u	ÊÆÁ¦ÉùÍû-ÉùÃûÈµÆğ-Î÷ÏÄ				1		3326;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30499;10	2;95;2084;5								
-31731	0	M¶nh §¸ Kü N¨ng	ÊÆÁ¦ÉùÍû-ÉùÃûÈµÆğ-´óÀí						3324;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30499;1									
-31732	0	M¶nh §¸ Kü N¨ng	ÊÆÁ¦ÉùÍû-ÉùÃûÈµÆğ-ÍÂŞ¬						3325;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30499;1									
-31733	0	M¶nh §¸ Kü N¨ng	ÊÆÁ¦ÉùÍû-ÉùÃûÈµÆğ-Î÷ÏÄ						3326;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30499;1									
+31728	0	Treasure Shovel	ÊÆÁ¦ÉùÍû-ÉùÃûÈµÆğ-´óÀí				1		3324;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30499;10	2;95;2084;5								
+31729	0	Treasure Shovel	ÊÆÁ¦ÉùÍû-ÉùÃûÈµÆğ-ÍÂŞ¬				1		3325;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30499;10	2;95;2084;5								
+31730	0	Treasure Shovel	ÊÆÁ¦ÉùÍû-ÉùÃûÈµÆğ-Î÷ÏÄ				1		3326;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30499;10	2;95;2084;5								
+31731	0	Skill Stone Fragment	ÊÆÁ¦ÉùÍû-ÉùÃûÈµÆğ-´óÀí						3324;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30499;1									
+31732	0	Skill Stone Fragment	ÊÆÁ¦ÉùÍû-ÉùÃûÈµÆğ-ÍÂŞ¬						3325;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30499;1									
+31733	0	Skill Stone Fragment	ÊÆÁ¦ÉùÍû-ÉùÃûÈµÆğ-Î÷ÏÄ						3326;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30499;1									
 31734	0	Håi Tiªn §¬n	ÊÆÁ¦ÉùÍû-ÉùÃûÈµÆğ-´óÀí						3324;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;95;2084;100									
 31735	0	Håi Tiªn §¬n	ÊÆÁ¦ÉùÍû-ÉùÃûÈµÆğ-ÍÂŞ¬						3325;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;95;2084;100									
 31736	0	Håi Tiªn §¬n	ÊÆÁ¦ÉùÍû-ÉùÃûÈµÆğ-Î÷ÏÄ						3326;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;95;2084;100									
@@ -2013,9 +2013,9 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 31866	0	Ma Lang Gi¸p	´óÀíÉùÍû-Õ¸Â¶Í·½Ç¶Ò»»					1000	3324;2000			Béc lé tµi n¨ng cã thÓ ®æi	2;1;30672;200	2;1;30682;20	2;1;30687;15							
 31867	0	Ma Lang Gi¸p	Î÷ÏÄÉùÍû-Õ¸Â¶Í·½Ç¶Ò»»					1000	3326;2000			Béc lé tµi n¨ng cã thÓ ®æi	2;1;30672;200	2;1;30682;20	2;1;30687;15							
 31868	0	Ma Lang Gi¸p	ÍÂŞ¬ÉùÍû-Õ¸Â¶Í·½Ç¶Ò»»					1000	3325;2000			Béc lé tµi n¨ng cã thÓ ®æi	2;1;30672;200	2;1;30682;20	2;1;30687;15							
-31869	0	Viªm Linh Bè	´óÀíÉùÍû-ÉùÃûÈµÆğ¶Ò»»					1000	3324;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30671;200	2;1;30682;20	2;1;30687;15							
-31870	0	Viªm Linh Bè	Î÷ÏÄÉùÍû-ÉùÃûÈµÆğ¶Ò»»					1000	3326;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30671;200	2;1;30682;20	2;1;30687;15							
-31871	0	Viªm Linh Bè	ÍÂŞ¬ÉùÍû-ÉùÃûÈµÆğ¶Ò»»					1000	3325;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30671;200	2;1;30682;20	2;1;30687;15							
+31869	0	Yanling Cloth	´óÀíÉùÍû-ÉùÃûÈµÆğ¶Ò»»					1000	3324;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30671;200	2;1;30682;20	2;1;30687;15							
+31870	0	Yanling Cloth	Î÷ÏÄÉùÍû-ÉùÃûÈµÆğ¶Ò»»					1000	3326;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30671;200	2;1;30682;20	2;1;30687;15							
+31871	0	Yanling Cloth	ÍÂŞ¬ÉùÍû-ÉùÃûÈµÆğ¶Ò»»					1000	3325;8000			Danh tiÕng th­íc khëi cã thÓ ®æi	2;1;30671;200	2;1;30682;20	2;1;30687;15							
 31872	0	HuyÒn Viªm C­¬ng	´óÀíÉùÍû-Ñ«¼¨×¿Öø¶Ò»»					1000	3324;20000			C«ng danh lín lao cã thÓ ®æi	2;1;30670;200	2;1;30682;20	2;1;30687;15							
 31873	0	HuyÒn Viªm C­¬ng	Î÷ÏÄÉùÍû-Ñ«¼¨×¿Öø¶Ò»»					1000	3326;20000			C«ng danh lín lao cã thÓ ®æi	2;1;30670;200	2;1;30682;20	2;1;30687;15							
 31874	0	HuyÒn Viªm C­¬ng	ÍÂŞ¬ÉùÍû-Ñ«¼¨×¿Öø¶Ò»»					1000	3325;20000			C«ng danh lín lao cã thÓ ®æi	2;1;30670;200	2;1;30682;20	2;1;30687;15							
@@ -2026,19 +2026,19 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 31879	0	mua b»ng Ng©n PhiÕu	¾Å»¨ÓñÂ¶Íè					999										2;10				
 31880	0	mua b»ng Ng©n PhiÕu	ÈË²ÎÑøÈÙÍè					999										2;5				
 31881	0	mua b»ng Ng©n PhiÕu	¾Å×ª»Ø»êµ¤					999										2;15				
-31882	0	mua b»ng Ng©n PhiÕu	ĞŞÕæÒª¾÷															2;35				
-31883	0	mua b»ng Ng©n PhiÕu	¾ü¹¦ÕÂ															2;20				
-31884	0	mua b»ng Ng©n PhiÕu	´ó¾ü¹¦ÕÂ															2;50				
-31885	0	mua b»ng Ng©n PhiÕu	»Ô»Í¾ü¹¦ÕÂ															2;300				
+31882	0	mua b»ng Ng©n PhiÕu	Cultivation Secret Formula															2;35				
+31883	0	mua b»ng Ng©n PhiÕu	Military Merit Citation															2;20				
+31884	0	mua b»ng Ng©n PhiÕu	Grand Army Merit Citation															2;50				
+31885	0	mua b»ng Ng©n PhiÕu	Glorious Military Merit Citation															2;300				
 31886	0	mua b»ng Ng©n PhiÕu	ÉñÅ©µ¤															2;20				
-31887	0	mua b»ng Ng©n PhiÕu	Ïû½ÙÉ¢															2;20				
+31887	0	mua b»ng Ng©n PhiÕu	Calamity-Dispelling Powder															2;20				
 31888	0	mua b»ng Ng©n PhiÕu	°×¾ÔÏÉµ¤															2;20				
 31889	0	mua b»ng Ng©n PhiÕu	ÁùÉñÏÉµ¤															2;20				
 31890	0	mua b»ng Ng©n PhiÕu	ÈıÇåÏÉµ¤															2;20				
-31891	0	mua b»ng Ng©n PhiÕu	»Æ½ğ´óºì°ü£¨¿Õ£©															2;100				
+31891	0	mua b»ng Ng©n PhiÕu	Golden Big Red Pack (Empty)															2;100				
 31892	0	mua b»ng Ng©n PhiÕu	°×½ğ´óºì°ü£¨¿Õ£©															2;300				
 31893	0	mua b»ng Ng©n PhiÕu	ÔÉÌúÁéÊ¯															2;35000				
-31894	0	mua b»ng Ng©n PhiÕu	¶¨»êÔÉÌúÉñÊ¯															2;35000				
+31894	0	mua b»ng Ng©n PhiÕu	Soul-Fixing Meteoric Iron Divine Stone															2;35000				
 31895	0	mua b»ng Ng©n PhiÕu	Ò×½îµ¤															2;35000				
 31896	0	mua b»ng Ng©n PhiÕu	³ÆºÅ£ºÒ»´ú´óÏÀ															2;350				
 31897	0	mua b»ng Ng©n PhiÕu	³ÆºÅ£ºÓÎÏÀ															2;1000				
@@ -2386,7 +2386,7 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 32239	0	§æi vËt phÈm	¾Û±¦Õ«ÉùÍû-ÍòÈË¾´Ñö¶Ò»»				1		3329;40000			V¹n ng­êi ng­ìng mé cã thÓ ®æi	2;1;30499;25	2;95;2084;25								
 32240	0	§æi vËt phÈm	¾Û±¦Õ«ÉùÍû-ÍòÈË¾´Ñö¶Ò»»				1		3329;40000			V¹n ng­êi ng­ìng mé cã thÓ ®æi	2;1;30499;25	2;95;2084;25								
 32241	0	§æi vËt phÈm	¾Û±¦Õ«ÉùÍû-ÍòÈË¾´Ñö¶Ò»»				1		3329;40000			V¹n ng­êi ng­ìng mé cã thÓ ®æi	2;1;30499;25	2;95;2084;25								
-32242	0	§æi Kim Hæ phï	»Æ½ğ´óºì°ü£¨¿Õ£©					100					2;1;30438;3									
+32242	0	§æi Kim Hæ phï	Golden Big Red Pack (Empty)					100					2;1;30438;3									
 32243	0	§æi Kim Hæ phï	°×½ğ´óºì°ü£¨¿Õ£©					100					2;1;30438;12									
 32244	0	§æi Kim Hæ phï	×øÆï				1						2;1;30438;100									
 32245	0	§æi MËt Tİn	ÕÆÃÅÃÜĞÅ				1	10					2;1;31059;2	2;1;31058;3								
@@ -2675,9 +2675,9 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 32528	1	T¨ng cÊp vò khİ ChiÕn Cuång	Õ½¿ñÖ®Ä§ÓòÎŞË«×·»ê×¦		enhance_reduce_s	C­êng hãa cÊp 12 trë xuèng xãa hÕt, c­êng hãa cÊp 12 trë lªn gi÷ c­êng hãa 7	1						0;11;30200;1	2;1;31063;25	2;1;31064;1	2;1;30370;3	2;95;204;2					
 32529	1	T¨ng cÊp vò khİ ChiÕn Cuång	Õ½¿ñÖ®Ä§ÓòÎŞË«×·»ê×¦		enhance_reduce_s	C­êng hãa cÊp 12 trë xuèng xãa hÕt, c­êng hãa cÊp 12 trë lªn gi÷ c­êng hãa 7	1						0;11;30201;1	2;1;31063;25	2;1;31064;1	2;1;30370;3	2;95;204;2					
 32530	1	T¨ng cÊp vò khİ ChiÕn Cuång	Õ½¿ñÖ®Ä§ÓòÎŞË«×·»ê×¦		enhance_reduce_s	C­êng hãa cÊp 12 trë xuèng xãa hÕt, c­êng hãa cÊp 12 trë lªn gi÷ c­êng hãa 7	1						0;11;30202;1	2;1;31063;25	2;1;31064;1	2;1;30370;3	2;95;204;2					
-32531	0	Håi Phong Tr¶m NhËt Ch©n QuyÓn (Cao CÊp)	ÊÆÁ¦ÉùÍû-¾Ã¸ºÊ¢Ãû¸ß¼¶ÃØ¼®¶Ò»»-´óÀí				1		3324;40000			Cùu phô thŞnh danh cã thÓ ®æi	0;107;219;5	2;95;2084;400								
-32532	0	Håi Phong Tr¶m NhËt Ch©n QuyÓn (Cao CÊp)	ÊÆÁ¦ÉùÍû-¾Ã¸ºÊ¢Ãû¸ß¼¶ÃØ¼®¶Ò»»-ÍÂŞ¬				1		3325;40000			Cùu phô thŞnh danh cã thÓ ®æi	0;107;219;5	2;95;2084;400								
-32533	0	Håi Phong Tr¶m NhËt Ch©n QuyÓn (Cao CÊp)	ÊÆÁ¦ÉùÍû-¾Ã¸ºÊ¢Ãû¸ß¼¶ÃØ¼®¶Ò»»-Î÷ÏÄ				1		3326;40000			Cùu phô thŞnh danh cã thÓ ®æi	0;107;219;5	2;95;2084;400								
+32531	0	Returning Wind Slashing Sun Fist Manual (Advanced)	ÊÆÁ¦ÉùÍû-¾Ã¸ºÊ¢Ãû¸ß¼¶ÃØ¼®¶Ò»»-´óÀí				1		3324;40000			Cùu phô thŞnh danh cã thÓ ®æi	0;107;219;5	2;95;2084;400								
+32532	0	Returning Wind Slashing Sun Fist Manual (Advanced)	ÊÆÁ¦ÉùÍû-¾Ã¸ºÊ¢Ãû¸ß¼¶ÃØ¼®¶Ò»»-ÍÂŞ¬				1		3325;40000			Cùu phô thŞnh danh cã thÓ ®æi	0;107;219;5	2;95;2084;400								
+32533	0	Returning Wind Slashing Sun Fist Manual (Advanced)	ÊÆÁ¦ÉùÍû-¾Ã¸ºÊ¢Ãû¸ß¼¶ÃØ¼®¶Ò»»-Î÷ÏÄ				1		3326;40000			Cùu phô thŞnh danh cã thÓ ®æi	0;107;219;5	2;95;2084;400								
 32534	0	Phô Kú Hµnh TrËn Ch©n QuyÓn (Cao CÊp)	ÊÆÁ¦ÉùÍû-¾Ã¸ºÊ¢Ãû¸ß¼¶ÃØ¼®¶Ò»»-´óÀí				1		3324;40000			Cùu phô thŞnh danh cã thÓ ®æi	0;107;220;5	2;95;2084;400								
 32535	0	Phô Kú Hµnh TrËn Ch©n QuyÓn (Cao CÊp)	ÊÆÁ¦ÉùÍû-¾Ã¸ºÊ¢Ãû¸ß¼¶ÃØ¼®¶Ò»»-ÍÂŞ¬				1		3325;40000			Cùu phô thŞnh danh cã thÓ ®æi	0;107;220;5	2;95;2084;400								
 32536	0	Phô Kú Hµnh TrËn Ch©n QuyÓn (Cao CÊp)	ÊÆÁ¦ÉùÍû-¾Ã¸ºÊ¢Ãû¸ß¼¶ÃØ¼®¶Ò»»-Î÷ÏÄ				1		3326;40000			Cùu phô thŞnh danh cã thÓ ®æi	0;107;220;5	2;95;2084;400								
@@ -5085,12 +5085,12 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 34938	0	Thiªn Tinh Th¹ch	º£Ğ·¶Ò»»				1						2;1;30820;26									
 34939	0	Kinh M¹ch Ng©n Nh©n	öëÓã¶Ò»»				1	100				trong thêi gian ho¹t ®éng, tİnh gåm tÊt c¶ ph­¬ng thøc tæng céng cã thÓ ®æi 50 lÇn	2;1;30818;250									
 34940	0	Kinh M¹ch Ng©n Nh©n	º£Ïº¶Ò»»				1	100				trong thêi gian ho¹t ®éng, tİnh gåm tÊt c¶ ph­¬ng thøc tæng céng cã thÓ ®æi 50 lÇn	2;1;30819;50									
-34941	0	Tói §¸ Quı CÊp 1	»îÔ¾¶È¹ºÂò				1	100			3472;5	Dïng 5 ®iÓm tİch cùc bang héi ®Ó ®æi										
+34941	0	Gem Bag Tier 1	»îÔ¾¶È¹ºÂò				1	100			3472;5	Dïng 5 ®iÓm tİch cùc bang héi ®Ó ®æi										
 34942	0	Tói Trang BŞ Kim Xµ Cuång Vâ cÊp 3	»îÔ¾¶È¹ºÂò				1	100			3472;168	Dïng 168 ®iÓm tİch cùc bang ®Ó ®æi										
 34943	0	Ho¸n ®æi TÈy T©m Th¹ch cÊp 3	»îÔ¾¶È¹ºÂò				1	100			3472;10	Dïng 10 ®iÓm tİch cùc bang ®Ó ®æi										
 34944	0	Ho¸n ®æi LuyÖn L« ThiÕt cÊp 3	»îÔ¾¶È¹ºÂò				1	100			3472;10	Dïng 10 ®iÓm tİch cùc bang ®Ó ®æi										
 34945	0	ThiÕt Tinh cÊp 3	»îÔ¾¶È¹ºÂò				1	100			3472;30	Dïng 30 ®iÓm tİch cùc bang ®Ó ®æi										
-34946	0	§Êu hån	»îÔ¾¶È¹ºÂò				1	100			3472;20	Dïng 20 ®iÓm tİch cùc bang ®Ó ®æi										
+34946	0	Soul Duel	»îÔ¾¶È¹ºÂò				1	100			3472;20	Dïng 20 ®iÓm tİch cùc bang ®Ó ®æi										
 34947	0	Tói Cöu chuyÓn håi hån ®¬n	»îÔ¾¶È¹ºÂò				1	100			3472;50	Dïng 50 ®iÓm tİch cùc bang ®Ó ®æi										
 34948	0	VĞ TiÕu Y Vµng	»îÔ¾¶È¹ºÂò				1	100			3472;50	Dïng 50 ®iÓm tİch cùc bang ®Ó ®æi										
 34949	0	Hép M¶nh Thiªn Th¹ch (Nhá)	»îÔ¾¶È¹ºÂò				1	100			3472;80	Dïng 80 ®iÓm tİch cùc bang ®Ó ®æi										
@@ -5098,28 +5098,28 @@ ID	Type	Title	Remark	BaguaFlag	SpecialOpStr	SpecialOpDesc	BangdingFlag	BatchNum	
 34951	0	HuyÒn Th¹ch	»îÔ¾¶È¹ºÂò				1	100			3472;10	Dïng 10 ®iÓm tİch cùc bang ®Ó ®æi										
 34952	0	Thiªn Tinh Th¹ch	»îÔ¾¶È¹ºÂò				1	100			3472;912	Dïng 912 ®iÓm tİch cùc bang ®Ó ®æi										
 34953	0	MËt Tİn Tr­ëng M«n	»îÔ¾¶È¹ºÂò				1	100			3472;170	Dïng 170 ®iÓm tİch cùc bang ®Ó ®æi										
-34954	0	Tói §¸ Quı CÊp 2	»îÔ¾¶È¹ºÂò				1	100			3472;20	Dïng 20 ®iÓm tİch cùc bang ®Ó ®æi										
+34954	0	Gem Bag Tier 2	»îÔ¾¶È¹ºÂò				1	100			3472;20	Dïng 20 ®iÓm tİch cùc bang ®Ó ®æi										
 34955	0	Tói Trang BŞ Kim Xµ cÊp 4	»îÔ¾¶È¹ºÂò				1	100			3472;456	Dïng 456 ®iÓm tİch cùc bang ®Ó ®æi										
 34956	0	QuyÕt YÕu Tµn Thiªn	»îÔ¾¶È¹ºÂò				1	100														
 34957	0	TÈy T©m Th¹ch cÊp 4	»îÔ¾¶È¹ºÂò				1	100			3472;50	Dïng 50 ®iÓm tİch cùc bang ®Ó ®æi										
 34958	0	LuyÖn L« ThiÕt cÊp 4	»îÔ¾¶È¹ºÂò				1	100			3472;50	Dïng 50 ®iÓm tİch cùc bang ®Ó ®æi										
-34959	0	§Êu hån	»îÔ¾¶È¹ºÂò				1	100			3472;8	Dïng 8 ®iÓm tİch cùc bang ®Ó ®æi										
+34959	0	Soul Duel	»îÔ¾¶È¹ºÂò				1	100			3472;8	Dïng 8 ®iÓm tİch cùc bang ®Ó ®æi										
 34960	0	Bao Thiªn Th¹ch	»îÔ¾¶È¹ºÂò				1	100			3472;400	Dïng 400 ®iÓm tİch cùc bang ®Ó ®æi										
-34961	0	Th¶o Ph¹t Lªnh 	»îÔ¾¶È¹ºÂò				1	100			3472;70	Dïng 70 ®iÓm tİch cùc bang ®Ó ®æi										
+34961	0	Subjugation Order	»îÔ¾¶È¹ºÂò				1	100			3472;70	Dïng 70 ®iÓm tİch cùc bang ®Ó ®æi										
 34962	0	HuyÒn Th¹ch	»îÔ¾¶È¹ºÂò				1	100			3472;8	Dïng 8 ®iÓm tİch cùc bang ®Ó ®æi										
 34963	0	Thiªn Tinh Th¹ch	»îÔ¾¶È¹ºÂò				1	100			3472;820	Dïng 820 ®iÓm tİch cùc bang ®Ó ®æi										
 34964	0	MËt Tİn Tr­ëng M«n	»îÔ¾¶È¹ºÂò				1	100			3472;153	Dïng 153 ®iÓm tİch cùc bang ®Ó ®æi										
-34965	0	LÖnh bµi ®é cèng hiÕn	»îÔ¾¶È¹ºÂò				1	100			3472;100	Dïng 100 ®iÓm tİch cùc bang ®Ó ®æi										
-34966	0	Tói §¸ Quı CÊp 3	»îÔ¾¶È¹ºÂò				1	100			3472;72	Dïng 72 ®iÓm tİch cùc bang ®Ó ®æi										
+34965	0	Contribution Token	»îÔ¾¶È¹ºÂò				1	100			3472;100	Dïng 100 ®iÓm tİch cùc bang ®Ó ®æi										
+34966	0	Gem Bag Tier 3	»îÔ¾¶È¹ºÂò				1	100			3472;72	Dïng 72 ®iÓm tİch cùc bang ®Ó ®æi										
 34967	0	Tói Tam D­¬ng Khai Th¸i	»îÔ¾¶È¹ºÂò				1	100			3472;18000	Dïng 18000 ®iÓm tİch cùc bang ®Ó ®æi										
 34968	0	QuyÕt YÕu Tµn Thiªn	»îÔ¾¶È¹ºÂò				1	100														
 34969	0	TÈy T©m Th¹ch cÊp 5	»îÔ¾¶È¹ºÂò				1	100			3472;80	Dïng 80 ®iÓm tİch cùc bang ®Ó ®æi										
 34970	0	LuyÖn L« ThiÕt cÊp 5	»îÔ¾¶È¹ºÂò				1	100			3472;80	Dïng 80 ®iÓm tİch cùc bang ®Ó ®æi										
-34971	0	§Êu hån	»îÔ¾¶È¹ºÂò				1	100			3472;8	Dïng 8 ®iÓm tİch cùc bang ®Ó ®æi										
+34971	0	Soul Duel	»îÔ¾¶È¹ºÂò				1	100			3472;8	Dïng 8 ®iÓm tİch cùc bang ®Ó ®æi										
 34972	0	Bao Thiªn Th¹ch	»îÔ¾¶È¹ºÂò				1	100			3472;350	Dïng 350 ®iÓm tİch cùc bang ®Ó ®æi										
-34973	0	Th¶o Ph¹t Lªnh 	»îÔ¾¶È¹ºÂò				1	100			3472;56	Dïng 56 ®iÓm tİch cùc bang ®Ó ®æi										
+34973	0	Subjugation Order	»îÔ¾¶È¹ºÂò				1	100			3472;56	Dïng 56 ®iÓm tİch cùc bang ®Ó ®æi										
 34974	0	Thiªn Tinh Th¹ch	»îÔ¾¶È¹ºÂò				1	100			3472;656	Dïng 656 ®iÓm tİch cùc bang ®Ó ®æi										
-34975	0	LÖnh bµi ®é cèng hiÕn	»îÔ¾¶È¹ºÂò				1	100			3472;90	Dïng 90 ®iÓm tİch cùc bang ®Ó ®æi										
+34975	0	Contribution Token	»îÔ¾¶È¹ºÂò				1	100			3472;90	Dïng 90 ®iÓm tİch cùc bang ®Ó ®æi										
 34976	0	§æi §iÓm Phong Hoa	ÆÕÍ¨Íâ×°				1	100			3407;50	Dïng 50 ®iÓm Phong Hoa	2;1;31233;5									
 34977	0	§æi §iÓm Phong Hoa	Õ½³¡Íâ×°				1	100			3407;100	Dïng 100 ®iÓm Phong Hoa	2;1;31233;10									
 34978	0	§æi §iÓm Phong Hoa	ÌìÏÂÎŞË«Íâ×°				1	100			3407;400	Dïng 400 ®iÓm Phong Hoa	2;1;31233;40									

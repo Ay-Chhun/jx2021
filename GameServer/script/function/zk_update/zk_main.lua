@@ -14,34 +14,34 @@ function Init()
 	local tMissionName = {
 		{"event_mission_passstage", "V¹n KiÕm Tròng",  "handle_zk_mc"},
 		{"event_mission_passstage", "§Þa HuyÒn Cung", "handle_zk_mc"},
-		{"event_mission_passstage", "L­¬ng S¬n", "handle_zk_mc"},
+		{"event_mission_passstage", "Liangshan", "handle_zk_mc"},
 		{"event_mission_passstage", "Th¸i NhÊt Th¸p", "handle_zk_mc"},
 		{"event_mission_passstage", "Th¸i NhÊt Th¸p_Anh Hïng", "handle_zk_mc"},
 		{"event_mission_joinonce", "Thiªn M«n trËn", "handle_zk_jo"},
-		{"event_mission_joinonce", "Th«n L¹c Tranh §o¹t ChiÕn", "handle_zk_jo"},
-		{"event_mission_joinonce", "Th¶o Cèc Tranh §o¹t ChiÕn", "handle_zk_jo"},
-		{"event_mission_joinonce", "Ph¸o §µi Tranh §o¹t ChiÕn", "handle_zk_jo"},
+		{"event_mission_joinonce", "Village Seizure Battle", "handle_zk_jo"},
+		{"event_mission_joinonce", "Grass Valley Seizure Battle", "handle_zk_jo"},
+		{"event_mission_joinonce", "Fortress Seizure Battle", "handle_zk_jo"},
 		{"event_mission_joinonce", "ChiÕn tr­êng chÝnh-Nh¹n M«n Quan", "handle_zk_jo"},
-		{"event_mission_joinonce", "¢n O¸n §µi", "handle_zk_jo"},
-		{"event_yp_taskfinish", "§µo Kho B¸u", "handle_zk_yptask"},
-		{"event_yp_taskfinish", "Trém Kinh S¸ch", "handle_zk_yptask"},
+		{"event_mission_joinonce", "Grudge Platform", "handle_zk_jo"},
+		{"event_yp_taskfinish", "Dig Treasure Vault", "handle_zk_yptask"},
+		{"event_yp_taskfinish", "Steal Scripture Book", "handle_zk_yptask"},
 		{"event_yp_taskfinish", "VËn tiªu", "handle_zk_yptask"},
-		{"event_yp_taskfinish", "C­íp Tiªu", "handle_zk_yptask"},
+		{"event_yp_taskfinish", "Rob Escort Convoy", "handle_zk_yptask"},
 		{"event_yp_taskfinish", "Trém Ngäc Ph¸ch", "handle_zk_yptask"},
-		{"event_ywz_taskfinish", "NhiÖm vô tuÇn", "handle_zk_ywztask"},
+		{"event_ywz_taskfinish", "Weekly quest", "handle_zk_ywztask"},
 		{"event_slyb_award", "yp_slyzz_award", "handle_zk_slyb", "PhÇn th­ëng ChiÕn ThÕ Lùc ThËt L¹c Nhai"},
-		{"event_ywz_taskfinish", "§iÓm x©y dùng c¸ nh©n ®¹t 300", "handle_zk_award"},
+		{"event_ywz_taskfinish", "Personal construction points reached 300", "handle_zk_award"},
 		{"event_kill_npc", "§µo Hoa §¶o Chñ Hoµng Long", "handle_zk_killboss"},
 		{"event_kill_npc", "T©y Vùc Th­¬ng Lang B¸ V­¬ng", "handle_zk_killboss"},
 		{"event_kill_npc", "Ngäc S¬n Chi Linh Thiªn Cöu", "handle_zk_killboss"},
-		{"event_kill_npc", "U Tr¹ch Chi ¶nh Minh Vâ", "handle_zk_killboss"},
+		{"event_kill_npc", "You Ze Zhi Ying Ming Wu", "handle_zk_killboss"},
 	};
 	for _, v in tMissionName do
 		AddMisEvent(v[1], v[2], 0, thisFile, v[3]);
 	end
 	if zkwq_IsOpen() ~= 0 then
 		AddMisEvent("event_server_start", "Th­¬ng Nh©n Chî §en", 0, thisFile, "handle_zkwq_createnpc");
-		AddMisEvent("event_talk_npc", "Th­¬ng Nh©n Chî §en", 350, thisFile, "handle_zkwq_main", "Shop chî ®en");
+		AddMisEvent("event_talk_npc", "Th­¬ng Nh©n Chî §en", 350, thisFile, "handle_zkwq_main", "Black Market Shop");
 		AddMisEvent("event_kill_npc", "Háa Kú L©n Con", 406, thisFile, "handle_zkwq_bossdeath1");
 		AddMisEvent("event_kill_npc", "ThÇn Thó Háa Kú L©n", 218, thisFile, "handle_zkwq_bossdeath2");
 	end
@@ -66,9 +66,9 @@ ZK_TZQ_TASK = {
 ZK_ZMMX_TASK = {
 	{"ThiÕt Tinh cÊp 1", 3, {2,1,30533}, 8},
 	{"ThiÕt Tinh cÊp 2", 1, {2,1,30534}, 9},
-	{"Viªm Linh Ti", 20, {2,1,30671}, 10},
+	{"Yan Ling Si", 20, {2,1,30671}, 10},
 	{"HuyÒn Viªm ThiÕt", 20, {2,1,30670}, 11},
-	{"Da §Þa Long", 20, {2,1,30673}, 12},
+	{"Da Di Long", 20, {2,1,30673}, 12},
 	{"Da Ma Lang", 20, {2,1,30672}, 13},
 	{"Thiªn Kiªu LÖnh", 1, {2,97,236}, 14},
 	{"Ma §ao Th¹ch cÊp 1", 1, {2,1,30428}, 15},
@@ -77,12 +77,12 @@ ZK_ZMMX_TASK = {
 	{"Kinh M¹ch §ång Nh©n", 1, {2,1,30730}, 18},
 	{"Vµng", 80, 1, 19},
 	{"Qu©n C«ng Ch­¬ng", 2, {2,1,9999}, 20},
-	{"Ng­ng Tinh Lé", 15, {2,1,30804}, 21},
-	{"Tô Linh Hoµn", 1, {2,1,30458}, 22},
-	{"Tu Ch©n YÕu QuyÕt", 3, {2,0,554}, 23},
-	{"HiÖp NghÜa Chi Chøng", 10, {2,1,30912}, 24},
-	{"§ång TÕ Chi NguyÖn", 2, {2,1,30913}, 25},
-	{"C©y B¸t Nh·", 1, {2,0,398}, 26},
+	{"Ngung Tinh Lo", 15, {2,1,30804}, 21},
+	{"Spirit-Gathering Pill", 1, {2,1,30458}, 22},
+	{"Xiu Zhen Yao Jue", 3, {2,0,554}, 23},
+	{"Token of Chivalry", 10, {2,1,30912}, 24},
+	{"Vow of the Same Will", 2, {2,1,30913}, 25},
+	{"Prajna Tree", 1, {2,0,398}, 26},
 	{"C©y b¸t nh· nhá", 3, {2,0,504}, 27},
 	{"HuyÕtTrÝchTh¹ch Lv1", 2, {2,22,101}, 28},
 	{"NguyÖtB¹chTh¹ch Lv1", 2, {2,22,201}, 29},
@@ -140,7 +140,7 @@ function handle_zk_mc(szType, szName, nStage)
 	local t = {
 		["V¹n KiÕm Tròng"] = 4,
 		["§Þa HuyÒn Cung"] = 7,
-		["L­¬ng S¬n"] = 7,
+		["Liangshan"] = 7,
 		["Th¸i NhÊt Th¸p"] = 6,
 		["Th¸i NhÊt Th¸p_Anh Hïng"] = 6,
 	}
@@ -162,16 +162,16 @@ function handle_zk_yptask(szType, szName, nParam)
 		return 0;
 	end
 	local tName2Task = {
-		["§µo Kho B¸u"] = {3425, 2},
-		["Trém Kinh S¸ch"] = {3426, 1},
+		["Dig Treasure Vault"] = {3425, 2},
+		["Steal Scripture Book"] = {3426, 1},
 		["VËn tiªu"] = {3427, 1},
-		["C­íp Tiªu"] = {3429, 1},
+		["Rob Escort Convoy"] = {3429, 1},
 		["Trém Ngäc Ph¸ch"] = {3430, 1},
 	};
 	local v = tName2Task[szName];
 	local nTask = GetTask(v[1]);
 	if nTask >= v[2] then return 0;	end
-	if szName == "C­íp Tiªu" and nParam ~= 5 then
+	if szName == "Rob Escort Convoy" and nParam ~= 5 then
 		return 0;
 	end
 	SetTask(v[1], nTask + 1);
@@ -228,7 +228,7 @@ function zk_GetTaskState1(nTaskID, nBit)
 			if DirectIsTaskFinish(nTaskID) ~= 1 then
 				return "(ch­a hoµn thµnh)";
 			else
-				return "(§­îc giao)";
+				return "(Delivered)";
 			end
 		end
 	else
@@ -372,7 +372,7 @@ function _gtask_zk_award(nNum)
 	end
 	nCount = min(nCount, nNum);
 	AddItem(2,1,31058, nCount);   -- Ôö¼ÓÌôÕ½È¯
-	Msg2Player(format("NhËn ®­îc %s*%d", "PhiÕu Khiªu ChiÕn", nCount));
+	Msg2Player(format("Received %s*%d", "PhiÕu Khiªu ChiÕn", nCount));
 end
 
 --Õ½¿ñÎäÆ÷Éý¼¶
@@ -445,8 +445,8 @@ function handle_zkwq_bossdeath2(npcIndex)
 end
 
 function handle_zkwq_useitem(nItemIndex)
-	Say(format("X¸c ®Þnh muèn dïng %s ®æi %s*%d?", GetItemName(nItemIndex), "VÈy Kú L©n", 10), 2,
-		format("X¸c ®Þnh ®æi/#zkwq_ItemExchange(%d)", nItemIndex), "§Ó ta suy nghÜ/nothing");
+	Say(format("X¸c ®Þnh muèn dïng %s ®æi %s*%d?", GetItemName(nItemIndex), "Qi Lin Scale", 10), 2,
+		format("X¸c ®Þnh ®æi/#zkwq_ItemExchange(%d)", nItemIndex), "Let me think about it/nothing");
 end
 
 function zkwq_ItemExchange(nItemIndex)
@@ -456,7 +456,7 @@ function zkwq_ItemExchange(nItemIndex)
 	if DelItemByIndex(nItemIndex, 1) ~= 1 then
 		return 0;
 	end
-	gf_AddItemEx2({2, 1, 31064, 10}, "VÈy Kú L©n", "T¨ng cÊp vò khÝ ChiÕn Cuång", "Mét t¸ VÈy Kú L©n", 0, 1);
+	gf_AddItemEx2({2, 1, 31064, 10}, "Qi Lin Scale", "T¨ng cÊp vò khÝ ChiÕn Cuång", "Mét t¸ VÈy Kú L©n", 0, 1);
 end
 
 function zkwq_IsOpen()
@@ -478,7 +478,7 @@ function zkwq_Info(npcIndex)
 	local tbSay = {};
 	tbSay.msg = format("<color=gold>%s<color>:", GetNpcName(npcIndex))..tbBody;
 	tbSay.sel = {
-		{"\n rót lui","nothing"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);
 end

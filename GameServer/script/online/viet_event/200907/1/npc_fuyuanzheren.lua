@@ -25,7 +25,7 @@ function GetJinnang()
 	if gf_Judge_Room_Weight(1, 10, " ") == 0 then
 		return
 	end
-	local nRetCode, nItem = gf_AddItemEx({2, 1, 30045, 1}, "CÈm Nang §¹i Sù KiÖn");
+	local nRetCode, nItem = gf_AddItemEx({2, 1, 30045, 1}, "Grand Event Handbook");
 	gf_SetItemExpireTime(nItem, 2009, 7, 20, 0, 0, 0); 
 end
 

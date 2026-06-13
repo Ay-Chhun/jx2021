@@ -47,7 +47,7 @@ function trade_candy()
 		nType = 3;
 	end
 	
-	if gf_Judge_Room_Weight(tIndependenceItem[nType][3], tIndependenceItem[nType][4], "Bµ x· Thî rÌn L­u") == 0 then		
+	if gf_Judge_Room_Weight(tIndependenceItem[nType][3], tIndependenceItem[nType][4], "Madam Blacksmith Luu") == 0 then		
 		Msg2Player("B¹n ch­a ®ñ ®iÒu kiÖn ®æi phÇn th­ëng")
 		return 0;
 	end

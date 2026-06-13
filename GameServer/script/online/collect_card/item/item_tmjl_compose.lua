@@ -13,7 +13,7 @@ end
 function sure_exchange(nItem)
 	local nFreeRoom = GetFreeItemRoom();
 	local nCount = min(GetItemCount(2, 1, 30509), floor(GetItemCount(2, 1, 30370)/CC_TMGL_COST_NUM));
-	AskClientForNumber("sure_exchange_deal",0,min(nFreeRoom, nCount),"NhËp sè l­îng","")
+	AskClientForNumber("sure_exchange_deal",0,min(nFreeRoom, nCount),"Enter quantity","")
 end
 
 function sure_exchange_deal(nNum)

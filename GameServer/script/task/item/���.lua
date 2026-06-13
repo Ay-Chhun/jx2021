@@ -10,7 +10,7 @@ function OnUse(nItem)
 		Say("Kh«ng thÓ dïng ë b¶n ®å nµy!", 0);
 		return 0
 	end
-	local nNpcIndex = CreateNpc("LSM_CTQF", "Kh©m Ph¹m TriÒu §×nh", 6400, 1760, 3408);
+	local nNpcIndex = CreateNpc("LSM_CTQF", "Inlay the Imperial Court", 6400, 1760, 3408);
 	if nNpcIndex > 0 then
 		BigDelItem(2,1,31045,1);
 		SetNpcLifeTime(nNpcIndex, 15*60);

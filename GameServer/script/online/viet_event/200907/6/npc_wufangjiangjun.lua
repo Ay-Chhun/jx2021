@@ -12,7 +12,7 @@ function main()
 					"Ta muËn nhÀn ph«n th≠Îng c p ÆÈ 76/#get_aword(76)",
 					"Ta muËn nhÀn ph«n th≠Îng c p ÆÈ 77/#get_aword(77)",
 					"Ta muËn nhÀn ph«n th≠Îng c p ÆÈ 78/#get_aword(78)",
-					"Trang k’/nextpage",
+					"Next page/nextpage",
 					"Tπi hπ chÿ gh– ngang!/dlgover",
 			}
 						
@@ -37,7 +37,7 @@ function nextpage()
 			"Ta muËn nhÀn ph«n th≠Îng c p ÆÈ 82/#get_aword(82)",
 			"Ta muËn nhÀn ph«n th≠Îng c p ÆÈ 83/#get_aword(83)",
 			"Ta muËn nhÀn ph«n th≠Îng c p ÆÈ 84/#get_aword(84)",
-			"Trang tr≠Ìc/main",
+			"Previous Page/main",
 			"Tπi hπ chÿ gh– ngang!/dlgover");
 	else
 		Say("Hoπt ÆÈng Æ∑ k’t thÛc!",0)
@@ -166,39 +166,39 @@ function confirm_confirm(nLevel)
 					SetItemExpireTime(nItem, 30*24*60*60);				
 				end
 			end				
-			WriteLogEx("Hoat dong thang 6","Ngoπ HÊ Tµng Long",tb_wohucanglong_item_aword[nLevel][2][4],tb_wohucanglong_item_aword[nLevel][1]);
+			WriteLogEx("Hoat dong thang 6","Crouching Tiger Hidden Dragon",tb_wohucanglong_item_aword[nLevel][2][4],tb_wohucanglong_item_aword[nLevel][1]);
 		elseif nLevel == 74 then
 			gf_AddItemEx(tb_wohucanglong_item_aword_74[nBody][2], tb_wohucanglong_item_aword_74[nBody][1]);
-			WriteLogEx("Hoat dong thang 6","Ngoπ HÊ Tµng Long",tb_wohucanglong_item_aword_74[nBody][2][4],tb_wohucanglong_item_aword_74[nBody][1]);
+			WriteLogEx("Hoat dong thang 6","Crouching Tiger Hidden Dragon",tb_wohucanglong_item_aword_74[nBody][2][4],tb_wohucanglong_item_aword_74[nBody][1]);
 		elseif nLevel == 75 then
 			gf_AddItemEx(tb_wohucanglong_item_aword_75[nRoute][nBody][2], tb_wohucanglong_item_aword_75[nRoute][nBody][1]);
-			WriteLogEx("Hoat dong thang 6","Ngoπ HÊ Tµng Long",1, "∏o S≠ m´n c p 8x");
+			WriteLogEx("Hoat dong thang 6","Crouching Tiger Hidden Dragon",1, "∏o S≠ m´n c p 8x");
 		elseif nLevel == 78 then
 			gf_AddItemEx(tb_wohucanglong_item_aword_78[nRoute][2], tb_wohucanglong_item_aword_78[nRoute][1]);
-			WriteLogEx("Hoat dong thang 6","Ngoπ HÊ Tµng Long",1,"TÛi Y’u Quy’t");
+			WriteLogEx("Hoat dong thang 6","Crouching Tiger Hidden Dragon",1,"Essential Manual Bag");
 		elseif nLevel == 79 then
 			local nItem = gf_GetRandItemByTable(tb_wohucanglong_item_aword_79, 100, 1);
 			gf_AddItemEx(tb_wohucanglong_item_aword_79[nItem][3], tb_wohucanglong_item_aword_79[nItem][1]);
-			WriteLogEx("Hoat dong thang 6","Ngoπ HÊ Tµng Long",1,"Trang S¯c Th∏i H≠");
+			WriteLogEx("Hoat dong thang 6","Crouching Tiger Hidden Dragon",1,"Trang S¯c Th∏i H≠");
 		elseif nLevel == 81 then
 			gf_AddItemEx(tb_wohucanglong_item_aword_81[nBody][2], tb_wohucanglong_item_aword_81[nBody][1]);
-			WriteLogEx("Hoat dong thang 6","Ngoπ HÊ Tµng Long",1,"Qu«n Tµng Ki’m c p 8x");
+			WriteLogEx("Hoat dong thang 6","Crouching Tiger Hidden Dragon",1,"Qu«n Tµng Ki’m c p 8x");
 		elseif nLevel == 82 then
 			local nItem = random(1, 100);
 			local nBook = random(1, 14);
 			if 0 < nItem and nItem <= 45 then
 				gf_AddItemEx(tb_wohucanglong_item_aword_82_1[nBook][2], tb_wohucanglong_item_aword_82_1[nBook][1]);
-				WriteLogEx("Hoat dong thang 6","Ngoπ HÊ Tµng Long",1,"Quy”n MÀt Tﬁch Tr n Ph∏i");
+				WriteLogEx("Hoat dong thang 6","Crouching Tiger Hidden Dragon",1,"Quy”n MÀt Tﬁch Tr n Ph∏i");
 			elseif nItem > 45 and nItem <= 90 then
 				gf_AddItemEx(tb_wohucanglong_item_aword_82_2[nBook][2], tb_wohucanglong_item_aword_82_2[nBook][1]);
-				WriteLogEx("Hoat dong thang 6","Ngoπ HÊ Tµng Long",1,"Quy”n MÀt Tﬁch Tr n Ph∏i");
+				WriteLogEx("Hoat dong thang 6","Crouching Tiger Hidden Dragon",1,"Quy”n MÀt Tﬁch Tr n Ph∏i");
 			else
 				gf_AddItemEx(tb_wohucanglong_item_aword_82_3[nBook][2], tb_wohucanglong_item_aword_82_3[nBook][1]);
-				WriteLogEx("Hoat dong thang 6","Ngoπ HÊ Tµng Long",1,"Quy”n MÀt Tﬁch Tr n Ph∏i");
+				WriteLogEx("Hoat dong thang 6","Crouching Tiger Hidden Dragon",1,"Quy”n MÀt Tﬁch Tr n Ph∏i");
 			end
 		elseif nLevel == 83 then
 			gf_AddItemEx(tb_wohucanglong_item_aword_83[nRoute][2], tb_wohucanglong_item_aword_83[nRoute][1]);
-			WriteLogEx("Hoat dong thang 6","Ngoπ HÊ Tµng Long",1,"VÚ Kh› BÈ Phi Y™n");
+			WriteLogEx("Hoat dong thang 6","Crouching Tiger Hidden Dragon",1,"VÚ Kh› BÈ Phi Y™n");
 		end
 		gf_SetLogCaption("");	
 	end

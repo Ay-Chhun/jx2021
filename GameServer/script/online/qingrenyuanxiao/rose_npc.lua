@@ -26,7 +26,7 @@ function main()
 					"Yªn t©m./nothing"
 					}
 		local selTabFemale = {
-					"H¸i hoa hång./getrose",
+					"Pick the rose./getrose",
 					"Xem søc sèng cña hoa hång./checklife",
 					"H·y ®îi./nothing"
 					}
@@ -35,13 +35,13 @@ function main()
 					"Yªn t©m./nothing"
 					}
 		if GetSex() == 1 and GetTask(TASK_ROSE_GROW) == 3 then
-			Say("Hoa hång ®· træ b«ng, h·y mau nhê ý trung nh©n h¸i xuèng.",2,selTab)
+			Say("The rose has bloomed; quickly ask your sweetheart to pick it.",2,selTab)
 			return 0
 		end
 		if GetSex() == 1 then
-			Say("Hoa ¬i, h·y mau në!",3,selTabMale)
+			Say("Flower, hurry and bloom!",3,selTabMale)
 		elseif GetSex() == 2 then
-			Say("Hoa ¬i, h·y mau në!",3,selTabFemale)	
+			Say("Flower, hurry and bloom!",3,selTabFemale)	
 		end
 	elseif GetTeamSize() ~= 2 then
 		Say("Tæ ®éi cña b¹n ®©u? Ph¶i 2 ng­êi míi trång ®­îc hoa hång!",0)
@@ -55,7 +55,7 @@ function manure()
 	if GetTask(TASK_ROSE_INDEX) == GetTargetNpc() then
 		if IsLoversTeam() == 1 then
 			if GetTime() - GetTask(TASK_ROSE_LIFE) <= ROSELIFE/2 then
-				Say("Míi t­íi n­íc, h·y ®îi 1 l¸t.",0)
+				Say("You just watered it; please wait a moment.",0)
 				return 0
 			end
 			if GetItemCount(2,0,351) >=1 then
@@ -71,7 +71,7 @@ function manure()
 					local MapID,MapX,MapY = GetNpcWorldPos(npcRoseIndex)
 					if GetTask(TASK_ROSE_GROW) == 1 then
 						SetNpcLifeTime(GetTask(TASK_ROSE_INDEX),0)
-						local npcRoseIndex1 = CreateNpc("MÇm Hoa hång","®Ó"..nameFemale.." trång hoa hång",MapID,MapX,MapY)
+						local npcRoseIndex1 = CreateNpc("MÇm Hoa hång","de"..nameFemale.." grow roses",MapID,MapX,MapY)
 						SetNpcScript(npcRoseIndex1,"\\script\\online\\qingrenyuanxiao\\rose_npc.lua")
 						for i=1,2 do
 							PlayerIndex = GetTeamMember(i)
@@ -80,7 +80,7 @@ function manure()
 						PlayerIndex = OldPlayerIndex
 					elseif GetTask(TASK_ROSE_GROW) == 2 then
 						SetNpcLifeTime(GetTask(TASK_ROSE_INDEX),0)
-						local npcRoseIndex2 = CreateNpc(" nh¸nh hoa hång","®Ó"..nameFemale.." nô hoa",MapID,MapX,MapY)
+						local npcRoseIndex2 = CreateNpc(" rose branch","de"..nameFemale.." flower bud",MapID,MapX,MapY)
 						SetNpcScript(npcRoseIndex2,"\\script\\online\\qingrenyuanxiao\\rose_npc.lua")
 						for i=1,2 do
 							PlayerIndex = GetTeamMember(i)
@@ -91,7 +91,7 @@ function manure()
 						SetNpcLifeTime(GetTask(TASK_ROSE_INDEX),0)
 						local nRandomNum = random(1,100)
 						if nRandomNum <= 90 then
-							local npcRedRoseIndex = CreateNpc("Hoa hång ®á","®Ó"..nameFemale.." trång hång mai quÕ hoa",MapID,MapX,MapY)
+							local npcRedRoseIndex = CreateNpc("Hoa hång ®á","de"..nameFemale.." plant red rose cassia flower",MapID,MapX,MapY)
 							SetNpcScript(npcRedRoseIndex,"\\script\\online\\qingrenyuanxiao\\rose_npc.lua")
 							for i=1,2 do
 								PlayerIndex = GetTeamMember(i)
@@ -100,7 +100,7 @@ function manure()
 							end
 							PlayerIndex = OldPlayerIndex
 						elseif nRandomNum <= 95 then
-							local npcBlackRoseIndex = CreateNpc("Hoa hång tr¾ng","®Ó"..nameFemale.." trång phÊn mai quÕ hoa",MapID,MapX,MapY)
+							local npcBlackRoseIndex = CreateNpc("Hoa hång tr¾ng","de"..nameFemale.." plant pink rose cassia flower",MapID,MapX,MapY)
 							SetNpcScript(npcBlackRoseIndex,"\\script\\online\\qingrenyuanxiao\\rose_npc.lua")
 							for i=1,2 do
 								PlayerIndex = GetTeamMember(i)
@@ -109,7 +109,7 @@ function manure()
 							end
 							PlayerIndex = OldPlayerIndex			
 						elseif nRandomNum <= 100 then
-							local npcyellowRoseIndex = CreateNpc("Hoa hång vµng","®Ó"..nameFemale.." trång hoµng mai quÕ hoa",MapID,MapX,MapY)
+							local npcyellowRoseIndex = CreateNpc("Hoa hång vµng","de"..nameFemale.." trång hoµng mai quÕ hoa",MapID,MapX,MapY)
 							SetNpcScript(npcyellowRoseIndex,"\\script\\online\\qingrenyuanxiao\\rose_npc.lua")
 							for i=1,2 do
 								PlayerIndex = GetTeamMember(i)
@@ -142,7 +142,7 @@ function checklife()
 			watertime = 0
 		end
 		if GetTask(TASK_ROSE_GROW) == 3 then
-			Say("Hoa hång ®· træ b«ng, nÕu trong <color=yellow>"..roselife.."<color> phót kh«ng h¸i sÏ kh« chÕt.",0)
+			Say("The rose has bloomed; if it is not picked within <color=yellow>"..roselife.."<color> phót kh«ng h¸i sÏ kh« chÕt.",0)
 		else
 			Say("Hoa hång ph¶i mÊt <color=yellow>"..watertime.."<color> phót míi cã thÓ træ b«ng. NÕu trong vßng <color=yellow>"..roselife.."<color> phót kh«ng t­íi n­íc sÏ kh« chÕt.",0)
 		end

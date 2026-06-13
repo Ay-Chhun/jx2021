@@ -30,8 +30,8 @@ function Xmas_prize_get(prize_flag)
 	for i = 1 ,add_num do
 		if random(1,4) == 1 then
 			local Xmas_tree_B_C = {
-				{2,0,574,"Nh¸nh th«ng mü lÖ"},
-				{2,0,575,"Nh¸nh th«ng ®Ñp"}
+				{2,0,574,"Lovely Pine Branch"},
+				{2,0,575,"Pretty Pine Branch"}
 			}
 			local prize_seq = random(1,2)
 			AddItem(Xmas_tree_B_C[prize_seq][1],Xmas_tree_B_C[prize_seq][2],Xmas_tree_B_C[prize_seq][3],1)

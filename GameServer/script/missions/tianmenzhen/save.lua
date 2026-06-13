@@ -1,11 +1,11 @@
 TMZ_ShowData = {
 	[35] = {
 		["title"] = {
-			[1] = "Tªn",
+			[1] = "Name",
 			[2] = "Phe",
 			[3] = "L­u ph¸i",
-			[4] = "GiÕt",
-			[5] = "ChÕt",
+			[4] = "Kill",
+			[5] = "Death",
 			[6] = "TrËn nh·n",
 		},
 		["name"] = "Thiªn M«n trËn",
@@ -46,11 +46,11 @@ TMZ_ShowData = {
 		},
 	},
 	["title"] = {
-		[1] = "Tªn",
+		[1] = "Name",
 		[2] = "Phe",
 		[3] = "L­u ph¸i",
-		[4] = "GiÕt",
-		[5] = "ChÕt",
+		[4] = "Kill",
+		[5] = "Death",
 		[6] = "TrËn nh·n",
 	},
 	["name"] = "Thiªn M«n trËn",

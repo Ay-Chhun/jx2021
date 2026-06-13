@@ -17,35 +17,35 @@ Include("\\script\\online_activites\\2014_01\\spring1.lua")
 Include("\\script\\online_activites\\2014_01\\valentine.lua")
 Include("\\script\\online_activites\\2014_01\\spring2.lua") 
 
-szNPCName = "<color=green>Long Hæ Sø<color>: "
+szNPCName = "<color=green>Dragon Tiger Envoy<color>:"
 TASKTEMP_BHTA9 = 118
 tbBangCaoCap = {
-	[1] = {"-°•Hotel"},
-	[6] = {"TøH¶i"},
-	[7] = {"H¶o H÷u"},
+	[1] = {"-oHotel"},
+	[6] = {"Sihai"},
+	[7] = {"Allies"},
 	[8] = {"=HeoCon!"},
-	[11] = {"•Family"},
-	[12] = {"°•Giã•°Ä"},
+	[11] = {"Family"},
+	[12] = {"*Wind*"},
 	[19] = {"MatTri"},
-	[25] = {"NghÖ Sü"},
-	[33] = {"=-V×EmLµ"},
-	[38] = {"ÄPDHouse"},
-	[63] = {"PhôcH­ng"},
+	[25] = {"Artist"},
+	[33] = {"=-BecauseSheIs"},
+	[38] = {"*PDHouse"},
+	[63] = {"Restoration"},
 	[75] = {"_W-A-F_"},
 }
 tbBangSieuCap = {
-	[2] = {"ÄHeroic"},
-	[17] = {"Tinh Vâ"},
+	[2] = {"*Heroic"},
+	[17] = {"Jingwu"},
 	[23] = {"!i-Max!"},
 	[29] = {"C«ng Tö"},
 	[32] = {"ThÇnÅHæ"},
-	[33] = {"ÄMÊtTrÝ-"},
-	[53] = {"Tô*NghÜa"},
-	[66] = {"=-NgùLong"},
+	[33] = {"*LostMind-"},
+	[53] = {"Tu*Yi"},
+	[66] = {"=-YuLong"},
 }
 
 tbNguyenLieuVote = {
-	[1] = {1, "vµng", 1, 0},
+	[1] = {1, "gold", 1, 0},
 	[2] = {{2,1,539,1}, "Hoµng Kim §¹i Hång Bao 999 vµng", 1100, 0 },
 	[3] = {{2,1,30229,1}, "B¹ch Kim §¹i Hång Bao 4000 vµng", 4500, 0 },
 }
@@ -86,7 +86,7 @@ function SayPage1()
 
 	tinsert(tSay, "Ta muèn nhËn th­ëng ®iÓm ch©n khÝ khi sö dông ch×a khãa vµng trong tuÇn(tiªu hao Xu vËt phÈm)/get_chankhi")	
 	tinsert(tSay,"Mua 10 Lé Thñy = 1 vµng/BuyWater")
-	tinsert(tSay, "Mua thuèc trÞ bÖnh/NT_Dialog2")
+	tinsert(tSay, "Buy medicine/NT_Dialog2")
 	tinsert(tSay,"Ta muèn mua mÆt n¹ S¸t Thñ §­êng (60 vµng)/buy_mask")
 	tinsert(tSay,"§æi vËt phÈm C«ng Thµnh/exchange_citywar")
 	tinsert(tSay,"Chuéc l¹i qu©n c«ng tæn thÊt trong ngµy (1 ®iÓm = 2 b¹c)/take_jungong_back")
@@ -150,7 +150,7 @@ function BuyWater()
 		return
 	end
 		
-	gf_AddItemEx({2, 0, 351, 10}, "Lé thñy")
+	gf_AddItemEx({2, 0, 351, 10}, "Dew Water")
 	SayPage1()
 end
 
@@ -158,7 +158,7 @@ function exchange_citywar()
 	local tSay = {
 		"§æi 8 Dòng SÜ LÖnh (cÇn 1 Th­ tiÕn cö)/exchange_warriorling",
 		"§æi 6 C«ng thµnh Tiªn Phong (cÇn 1 Th­ tiÕn cö)/exchange_citywarling",
-		"KÕt thóc ®èi tho¹i/do_nothing",
+		"End conversation/do_nothing",
 	}
 	Say("C¸c h¹ muèn ®æi vËt phÈm nµo?",getn(tSay),tSay)
 end
@@ -176,7 +176,7 @@ function exchange_warriorling()
 	if DelItem(2,1,1200,1) == 1 then
 		AddItem(2,1,1201,8,1)
 		Msg2Player("B¹n nhËn ®­îc 8 Dòng SÜ LÖnh.")
-		WriteLogEx("Cong Thanh Chien","nhËn",8,"Dòng SÜ LÖnh","",GetTongName())
+		WriteLogEx("Cong Thanh Chien","nhËn",8,"Warrior Order","",GetTongName())
 	end
 end
 
@@ -221,7 +221,7 @@ function take_jungong_back()
 	end
 	local nMustPay =nLoseJungong * 200
 	local strMoney = gf_GetMoneyString(nMustPay)	
-	Say("H«m nay c¸c h¹ cã <color=yellow>"..nLoseJungong.."<color> ®iÓm qu©n c«ng bÞ tæn thÊt. CÇn ph¶i cã <color=yellow>"..strMoney.."<color> ®Ó chuéc l¹i sè ®iÓm nµy. C¸c h¹ cã muèn chuéc? <color=red>L­u ý: nÕu c¸c h¹ chuyÓn c«ng tr¹ng tr­íc khi chuéc, qu©n c«ng hiÖn t¹i cña c¸c h¹ sÏ bÞ trõ.<color>",2,"Ta ®ång ý/take_jungong_back_confirm","Kh«ng cÇn/nothing")
+	Say("H«m nay c¸c h¹ cã <color=yellow>"..nLoseJungong.."<color> ®iÓm qu©n c«ng bÞ tæn thÊt. CÇn ph¶i cã <color=yellow>"..strMoney.."<color> ®Ó chuéc l¹i sè ®iÓm nµy. C¸c h¹ cã muèn chuéc? <color=red>L­u ý: nÕu c¸c h¹ chuyÓn c«ng tr¹ng tr­íc khi chuéc, qu©n c«ng hiÖn t¹i cña c¸c h¹ sÏ bÞ trõ.<color>",2,"I agree/take_jungong_back_confirm","Kh«ng cÇn/nothing")
 end
 
 function take_jungong_back_confirm()
@@ -294,7 +294,7 @@ function GiveAwardTTGS()
 		end
 	elseif gf_GetExtPointByte(1,1) == 2 then
 		if gf_SetExtPointByte(1, 1, 0) == 1 then
-			gf_AddItemEx2({0,112,78,1,1}, "L¨ng Ba Vi Bé", "Phan thuong TTGC", "nhËn")
+			gf_AddItemEx2({0,112,78,1,1}, "Lingbo Microstep", "Phan thuong TTGC", "nhËn")
 		end
 	else
 		Talk(1, "", " §¹i hiÖp ®· nhËn phÇn th­ëng nµy råi hoÆc kh«ng cã trong danh s¸ch nhËn th­ëng!")
@@ -341,7 +341,7 @@ end
 
 function exchang_Item(nType)
 	local tbItem = {
-				[1] = {1, 0, " Ch×a khãa Vµng", 599, {2, 1, 30346, 1}, "M¶nh B¹ch Kim", 30133, "MBK= key vµng 20/7", 1},
+				[1] = {1, 0, " Ch×a khãa Vµng", 599, {2, 1, 30346, 1}, "M¶nh B¹ch Kim", 30133, "MBK= gold key 20/7", 1},
 				[2] = {0, 1, " ThÇn Tµi B¶o R­¬ng", 199, {2, 1, 30346, 4}, "M¶nh B¹ch Kim", 30344, "MBK = TTBR 20/7", 4},
 			}
 	if GetCash() < tbItem[nType][4] * 10000 then
@@ -403,10 +403,10 @@ function get_tinhnhan()
 	local szSayHead = "Th«ng tin chi tiÕt c¸c ho¹t ®éng ®ång ®¹o cã thÓ xem trªn trang chñ <color=green>http://volam2.zing.vn<color>."
 	--tbSayDialog, szSayHead = get_tbJNDialog_info(VET_XA_ACTIVITY_TABLE)
    	tinsert(tbSayDialog,"§æi 1 Socola t×nh nh©n (5 H¹t cacao + 2 Xu vËt phÈm)/VNG_DoiEventThang2_Form1")
-   	tinsert(tbSayDialog,"§æi 1 Socola t×nh nh©n (5 H¹t cacao + 1 S÷a tinh luyÖn)/VNG_DoiEventThang2_Form2")
+   	tinsert(tbSayDialog,"Exchange 1 Valentine's Chocolate (5 Cocoa Beans + 1 Refined Milk)/VNG_DoiEventThang2_Form2")
    	tinsert(tbSayDialog,"KiÓm tra sè l­îng Socola ®· sö dông/ncheck_number_use"	)
    	tinsert(tbSayDialog,"NhËn phÇn th­ëng cuèi sö dông Socola/get_final_socola"	)
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/do_nothing"	)
+	tinsert(tbSayDialog,"End conversation/do_nothing"	)
 	nSaySize = getn(tbSayDialog);	
 	Say(szSayHead, nSaySize, tbSayDialog);
 end
@@ -416,7 +416,7 @@ function get_final_socola()
 	local szSayHead = "Th«ng tin chi tiÕt c¸c ho¹t ®éng ®ång ®¹o cã thÓ xem trªn trang chñ <color=green>http://volam2.zing.vn<color>."	
 	tinsert(tbSayDialog,"NhËn th­ëng 2 thiªn m«n kim lÖnh/#confirm_get_final_socola(1)")
    	tinsert(tbSayDialog,"NhËn th­ëng 300 triÖu ®iÓm kinh nghiÖm/#confirm_get_final_socola(2)")
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/do_nothing"	)
+	tinsert(tbSayDialog,"End conversation/do_nothing"	)
 	nSaySize = getn(tbSayDialog);	
 	Say(szSayHead, nSaySize, tbSayDialog);
 end
@@ -446,7 +446,7 @@ function confirm_get_final_socola(nType)
     
 end
 function VNG_DoiEventThang2_Form1()
-	AskClientForNumber("VNG_DoiEventThang2_Socola1", 1, 999, "Sè l­îng (1-999)")
+	AskClientForNumber("VNG_DoiEventThang2_Socola1", 1, 999, "Quantity (1-999)")
 end
 function VNG_DoiEventThang2_Socola1(nCount)
 	if gf_Judge_Room_Weight(2, 100, "") ~= 1 then
@@ -462,7 +462,7 @@ function VNG_DoiEventThang2_Socola1(nCount)
 	end
 end
 function VNG_DoiEventThang2_Form2()
-	AskClientForNumber("VNG_DoiEventThang2_Socola2", 1, 20, "Sè l­îng (1-20)")
+	AskClientForNumber("VNG_DoiEventThang2_Socola2", 1, 20, "Quantity (1-20)")
 end
 function VNG_DoiEventThang2_Socola2(nCount)
 	if gf_Judge_Room_Weight(2, 100, "") ~= 1 then

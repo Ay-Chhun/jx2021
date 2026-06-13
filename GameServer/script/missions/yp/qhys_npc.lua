@@ -3,13 +3,13 @@ Include("\\script\\missions\\yp\\award.lua");
 Include("\\script\\lib\\talktmp.lua");
 Include("\\script\\lib\\message.lua");
 
-g_NpcName = "<color=green>Thanh H¶i Diªm Th­¬ng<color>: "
+g_NpcName = "<color=green>Thanh Hai Diem Thuong<color>:"
 
 function main()
 	local strtab = {
 		"Ta muèn giao tiªu/qhys_talk_1",
 		"NhËn phÇn th­ëng mua b¶o hiÓm/qhys_talk_2",
-		"KÕt thóc ®èi tho¹i/nothing"
+		"End dialogue/nothing"
 	};
 	Say(g_NpcName.."Ta lµ ®¹i diªm th­¬ng cña vïng bê hå Thanh H¶i, gÇn ®©y h×nh nh­ cã rÊt nhiÒu tiªu cña TrÊn ViÔn Tiªu Côc ®Òu b¾t nguån tõ chç cña ta, xem ra ta s¾p ph¸t tµi råi.",
 		getn(strtab),

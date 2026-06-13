@@ -93,9 +93,9 @@ function learnskill(id)
 	end
 
 	if (HaveLearnedSkill(id) == 0) then
-		Say(tipbeforelearn.."Häc vâ c«ng nµy cÇn "..needRep.." ®iÓm danh väng vµ "..needExp.." ®iÓm kinh nghiÖm!"..floor(needExp/2).." ®ång, x¸c ®Şnh chø?",2,"§ång ı/yeslearn","Bá qua/no")
+		Say(tipbeforelearn.."Häc vâ c«ng nµy cÇn "..needRep.." ®iÓm danh väng vµ "..needExp.." ®iÓm kinh nghiÖm!"..floor(needExp/2).." ®ång, x¸c ®Şnh chø?",2,"Agree/yeslearn","Skip/no")
 	else
-		Say(tipbeforelearn.."Häc vâ c«ng nµy cÇn "..needRep.." ®iÓm danh väng vµ "..needExp.." ®iÓm kinh nghiÖm!"..floor(needExp/2).." ®ång, x¸c ®Şnh chø?",2,"§ång ı/yeslearn","Bá qua/no")
+		Say(tipbeforelearn.."Häc vâ c«ng nµy cÇn "..needRep.." ®iÓm danh väng vµ "..needExp.." ®iÓm kinh nghiÖm!"..floor(needExp/2).." ®ång, x¸c ®Şnh chø?",2,"Agree/yeslearn","Skip/no")
 	end
 end
 

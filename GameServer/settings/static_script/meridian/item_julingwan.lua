@@ -17,15 +17,15 @@ t_ZhenQiWanPara =
 {
 	--time task, task access code, add zhenqi
 	{TASKVAL_ZHENQIWAN2, ZHENQIWAN_ACCESS_CODE, 3, "Tô Linh Tiªn §¬n"},
-	{TASKVAL_ZHENQIWAN1, ZHENQIWAN_ACCESS_CODE, 2, "§¹i Tô Linh Hoµn"},
-	{TASKVAL_ZHENQIWAN,  ZHENQIWAN_ACCESS_CODE, 1, "Tô Linh Hoµn"},
+	{TASKVAL_ZHENQIWAN1, ZHENQIWAN_ACCESS_CODE, 2, "Grand Spirit-Gathering Pill"},
+	{TASKVAL_ZHENQIWAN,  ZHENQIWAN_ACCESS_CODE, 1, "Spirit-Gathering Pill"},
 }
 
 t_ItemInfo =
 {
 	--[ItemParticular]=type, name, time add(min)
-	[30458] = {ZHENQIWAN_TYPE0, "Tô Linh Hoµn", 480},
-	[30459] = {ZHENQIWAN_TYPE1, "§¹i Tô Linh Hoµn", 480},
+	[30458] = {ZHENQIWAN_TYPE0, "Spirit-Gathering Pill", 480},
+	[30459] = {ZHENQIWAN_TYPE1, "Grand Spirit-Gathering Pill", 480},
 	[30460] = {ZHENQIWAN_TYPE2, "Tô Linh Tiªn §¬n", 480},
 }
 
@@ -218,7 +218,7 @@ function get_offline_juling_talk()
 		format("Dïng thêi gian §¹i Tô Linh Hoµn ®æi ch©n khÝ/#confirm_use_juling_offline_time(%d)", ZHENQIWAN_TYPE1),
 		format("Dïng thêi gian Tô Linh Tiªn §¬n ®æi ch©n khÝ/#confirm_use_juling_offline_time(%d)", ZHENQIWAN_TYPE2),
 		"trë l¹i/offline_exchange_talk_main",
-		"Rêi khái/no",
+		"Leave/no",
 	}
 	Say(szMsg, getn(tSay), tSay)
 end
@@ -231,7 +231,7 @@ function confirm_use_juling_offline_time(nType)
     	{
     		format("§ång ý/#yes_get_offline_juling_zhenqi(%d)",nType),
     		"trë l¹i/get_offline_juling_talk",
-    		"Rêi khái/no",
+    		"Leave/no",
     	}
     	Say(szMsg, getn(tSay), tSay)
 	end

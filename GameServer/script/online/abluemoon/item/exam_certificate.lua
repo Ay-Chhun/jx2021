@@ -8,11 +8,11 @@ Include("\\script\\online\\zgc_public_fun.lua")		--´å³¤µÄ¹«¹²º¯Êı
 --=============================¹«¹²±äÁ¿¶¨ÒåÇø=================================
 goods_and_prize_list = {
 	--id-----------------------Ãû³Æ---------------Ê¦ÃÅÁîÅÆÊıÁ¿--½±Àø1-4ÊıÁ¿/¸ÅÂÊ----×ª»»½¡¿µ¾­ÑéÊıÁ¿--½¡¿µ¾­Ñé±¶ÂÊ--ÉùÍû--ËµÃ÷
-	{601,"½øÊ¿Ö¤Êé","","",5,15,25,50,10,1600000,1.5,40,"ÎªÔÂÁÁÍÃÊÕ¼¯ ÈÎÒâ¾÷Òª5ÕÅ¡¢É±ÊÖ²Ø±¦Í¼1±¾¡¢Ì«Ğé°ËØÔÅÌ-Ç¬¡¢À¤¡¢¿²¡¢¶Ò ¸÷1¸ö\n<color=yellow>ÈÎÎñ¹Ì¶¨½±Àø<color>£ºµÃµ½ [¼¶±ğx¼¶±ğx¼¶±ğx1.5] µã¾­Ñé¡£\n<color=yellow>ÈÎÎñËæ»ú½±Àø1<color>£ºµÃµ½ [¼¶±ğx¼¶±ğx¼¶±ğx1.5] µã¾­Ñé 50%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø2<color>£ºÔÉÌú10¸ö 25%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø3<color>£ºÉùÍû40µã 10%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø4<color>£ºËæ»úÊ¦ÃÅÃØ¼®1±¾ 10%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø5<color>£ºÔÂÁÁÍÃÌú±¦Ïä1¸ö 5%¸ÅÂÊ"},
-	{600,"¹±Ê¿Ö¤Êé","","",4,12,30,50,8,1200000,1.2,30,"ÎªÔÂÁÁÍÃÊÕ¼¯ Æß´óÃÅÅÉµÄÊ¦ÃÅÁîÅÆ¸÷1¸ö¡¢ÌúÏß¾«Ä¾/É½Ê¨¾«Æ¤/ºÚÎÙ¾«Ê¯/³àÎÙÁé·û ¸÷10·İ¡£\n<color=yellow>ÈÎÎñ¹Ì¶¨½±Àø<color>£ºµÃµ½ [¼¶±ğx¼¶±ğx¼¶±ğx1.2] µã¾­Ñé¡£\n<color=yellow>ÈÎÎñËæ»ú½±Àø1<color>£ºµÃµ½ [¼¶±ğx¼¶±ğx¼¶±ğx1.2] µã¾­Ñé		50%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø2<color>£ºÔÉÌú8¸ö					20%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø3<color>£ºÉùÍû30µã					18%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø4<color>£ºËæ»úÊ¦ÃÅÃØ¼®1±¾			8%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø5<color>£ºÔÂÁÁÍÃÌú±¦Ïä1¸ö			4%¸ÅÂÊ"},
-	{599,"¾ÙÈËÖ¤Êé","","",3,8,30,50,5,1000000,1,20,"ÎªÔÂÁÁÍÃÊÕ¼¯ Àä³æË¿/É½Ê¨Ö®Æ¤/÷êÏã/ÓÎÁúËÚ »òÕß ºÚÎÙÊ¯/ÌúÏßÄ¾/÷êÏã/ÓÎÁúËÚ ¸÷222·İ\n<color=yellow>ÈÎÎñ¹Ì¶¨½±Àø<color>£ºµÃµ½ [¼¶±ğx¼¶±ğx¼¶±ğ] µã¾­Ñé¡£\n<color=yellow>ÈÎÎñËæ»ú½±Àø1<color>£ºµÃµ½ [¼¶±ğx¼¶±ğx¼¶±ğ] µã¾­Ñé		50%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø2<color>£ºÔÉÌú5¸ö					20%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø3<color>£ºÉùÍû20µã					22%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø4<color>£ºËæ»úÊ¦ÃÅÃØ¼®1±¾			5%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø5<color>£ºÔÂÁÁÍÃÌú±¦Ïä1¸ö			3%¸ÅÂÊ"},
-	{598,"Ğã²ÅÖ¤Êé","","",2,5,30,50,3,800000,0.8,10,"ÎªÔÂÁÁÍÃÊÕ¼¯ ½ğ²ÏË¿/ğ½ÄñÓğÅû/´©É½¼× »òÕß ÌúÕÁÄ¾/´¾ºÍÂó/ÌìÇàÊ¯ ¸÷222·İ\n<color=yellow>ÈÎÎñ¹Ì¶¨½±Àø<color>£ºµÃµ½ [¼¶±ğx¼¶±ğx¼¶±ğx0.8] µã¾­Ñé¡£\n<color=yellow>ÈÎÎñËæ»ú½±Àø1<color>£ºµÃµ½ [¼¶±ğx¼¶±ğx¼¶±ğx0.8] µã¾­Ñé		50%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø2<color>£ºÔÉÌú3¸ö					20%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø3<color>£ºÉùÍû10µã					25%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø4<color>£ºËæ»úÊ¦ÃÅÃØ¼®1±¾			3%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø5<color>£ºÔÂÁÁÍÃÌú±¦Ïä1¸ö			2%¸ÅÂÊ"},
-	{597,"ÉúÔ±Ö¤Êé","","",1,3,33,50,2,500000,0.5,5,"ÎªÔÂÁÁÍÃÊÕ¼¯ ÁéÖëË¿/ĞÜÆ¤/ÌïÆß »òÕß ĞşÌú/ÖØÄ¾/ÑÓ¾«Âó ¸÷222·İ\n<color=yellow>ÈÎÎñ¹Ì¶¨½±Àø<color>£ºµÃµ½ [¼¶±ğx¼¶±ğx¼¶±ğx0.5] µã¾­Ñé¡£\n<color=yellow>ÈÎÎñËæ»ú½±Àø1<color>£ºµÃµ½ [¼¶±ğx¼¶±ğx¼¶±ğx0.5] µã¾­Ñé		50%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø2<color>£ºÔÉÌú2¸ö					17%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø3<color>£ºÉùÍû5µã					30%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø4<color>£ºËæ»úÊ¦ÃÅÃØ¼®1±¾			2%¸ÅÂÊ\n<color=yellow>ÈÎÎñËæ»ú½±Àø5<color>£ºÔÂÁÁÍÃÌú±¦Ïä1¸ö			1%¸ÅÂÊ"},
+	{601,"Advanced Scholar Certificate","","",5,15,25,50,10,1600000,1.5,40,"Collect for the Moonlight Rabbit: any 5 manuals, 1 Assassin Treasure Map, and 1 each of the Taixu Bagua Plate - Qian, Kun, Kan, Dui\n<color=yellow>Quest Fixed Reward<color>: gain [level x level x level x1.5] EXP.\n<color=yellow>Quest Random Reward 1<color>: gain [level x level x level x1.5] EXP, 50% chance\n<color=yellow>Quest Random Reward 2<color>: 10 Meteor Iron, 25% chance\n<color=yellow>Quest Random Reward 3<color>: 40 reputation points, 10% chance\n<color=yellow>Quest Random Reward 4<color>: 1 random sect manual, 10% chance\n<color=yellow>Quest Random Reward 5<color>: 1 Moonlight Rabbit Iron Treasure Chest, 5% chance"},
+	{600,"Tribute Scholar Certificate","","",4,12,30,50,8,1200000,1.2,30,"Collect for the Moonlight Rabbit: 1 each of the seven great sects' Sect Tokens, and 10 each of Iron-Thread Fine Wood / Mountain Lion Fine Hide / Black Mink Fine Stone / Red Mink Spirit Charm.\n<color=yellow>Quest Fixed Reward<color>: gain [level x level x level x1.2] EXP.\n<color=yellow>Quest Random Reward 1<color>: gain [level x level x level x1.2] EXP		50% chance\n<color=yellow>Quest Random Reward 2<color>: 8 Meteor Iron					20% chance\n<color=yellow>Quest Random Reward 3<color>: 30 reputation points					18% chance\n<color=yellow>Quest Random Reward 4<color>: 1 random sect manual			8% chance\n<color=yellow>Quest Random Reward 5<color>: 1 Moonlight Rabbit Iron Treasure Chest			4% chance"},
+	{599,"Recommended Scholar Certificate","","",3,8,30,50,5,1000000,1,20,"Collect for the Moonlight Rabbit: 222 each of Cold Silkworm Thread / Mountain Lion Hide / Musk / Roaming Dragon Marrow, or Black Mink Stone / Iron-Thread Wood / Musk / Roaming Dragon Marrow\n<color=yellow>Quest Fixed Reward<color>: gain [level x level x level] EXP.\n<color=yellow>Quest Random Reward 1<color>: gain [level x level x level] EXP		50% chance\n<color=yellow>Quest Random Reward 2<color>: 5 Meteor Iron					20% chance\n<color=yellow>Quest Random Reward 3<color>: 20 reputation points					22% chance\n<color=yellow>Quest Random Reward 4<color>: 1 random sect manual			5% chance\n<color=yellow>Quest Random Reward 5<color>: 1 Moonlight Rabbit Iron Treasure Chest			3% chance"},
+	{598,"Cultivated Scholar Certificate","","",2,5,30,50,3,800000,0.8,10,"Collect for the Moonlight Rabbit: 222 each of Golden Silkworm Thread / Roc Feather Cloak / Mountain-Piercing Armor, or Iron Palm Wood / Pure Barley / Sky-Blue Stone\n<color=yellow>Quest Fixed Reward<color>: gain [level x level x level x0.8] EXP.\n<color=yellow>Quest Random Reward 1<color>: gain [level x level x level x0.8] EXP		50% chance\n<color=yellow>Quest Random Reward 2<color>: 3 Meteor Iron					20% chance\n<color=yellow>Quest Random Reward 3<color>: 10 reputation points					25% chance\n<color=yellow>Quest Random Reward 4<color>: 1 random sect manual			3% chance\n<color=yellow>Quest Random Reward 5<color>: 1 Moonlight Rabbit Iron Treasure Chest			2% chance"},
+	{597,"Student Certificate","","",1,3,33,50,2,500000,0.5,5,"Collect for the Moonlight Rabbit: 222 each of Spirit Pearl Thread / Bear Hide / Tianqi, or Black Iron / Heavy Wood / Refined Barley\n<color=yellow>Quest Fixed Reward<color>: gain [level x level x level x0.5] EXP.\n<color=yellow>Quest Random Reward 1<color>: gain [level x level x level x0.5] EXP		50% chance\n<color=yellow>Quest Random Reward 2<color>: 2 Meteor Iron					17% chance\n<color=yellow>Quest Random Reward 3<color>: 5 reputation points					30% chance\n<color=yellow>Quest Random Reward 4<color>: 1 random sect manual			2% chance\n<color=yellow>Quest Random Reward 5<color>: 1 Moonlight Rabbit Iron Treasure Chest			1% chance"},
 }
 token_list ={205,206,207,208,209,350,390}	
 --==============================½Å±¾Ö÷Âß¼­Çø================================
@@ -22,9 +22,9 @@ function OnUse(goods_index)
 	local goods_types = {
 		{},
 		{},
-		{"Àä³æË¿¡¢É½Ê¨Ö®Æ¤¡¢÷êÏã¡¢ÓÎÁúËÚ ¸÷222·İ","ºÚÎÙÊ¯¡¢ÌúÏßÄ¾¡¢÷êÏã¡¢ÓÎÁúËÚ ¸÷222·İ"},
-		{"½ğ²ÏË¿¡¢ğ½ÄñÓğÅû¡¢´©É½¼× ¸÷222·İ","ÌìÇàÊ¯¡¢ÌúÕÁÄ¾¡¢´¾ºÍÂó ¸÷222·İ"},
-		{"ÁéÖëË¿¡¢ĞÜÆ¤¡¢ÌïÆß ¸÷222·İ","ĞşÌú¡¢ÖØÄ¾¡¢ÑÓ¾«Âó ¸÷222·İ"}
+		{"222 each of Cold Silkworm Thread, Mountain Lion Hide, Musk, Roaming Dragon Marrow","222 each of Black Mink Stone, Iron-Thread Wood, Musk, Roaming Dragon Marrow"},
+		{"222 each of Golden Silkworm Thread, Roc Feather Cloak, Mountain-Piercing Armor","222 each of Sky-Blue Stone, Iron Palm Wood, Pure Barley"},
+		{"222 each of Spirit Pearl Thread, Bear Hide, Tianqi","222 each of Black Iron, Heavy Wood, Refined Barley"}
 	}
 	for i = 1,getn(goods_and_prize_list) do
 		if goods_id == goods_and_prize_list[i][1] then
@@ -32,22 +32,22 @@ function OnUse(goods_index)
 		end
 	end
 	if goods_diff == 1 then
-		Say("¡°<color=red>"..goods_and_prize_list[goods_diff][2].."<color>¡±:"..goods_and_prize_list[goods_diff][13],
+		Say("\"<color=red>"..goods_and_prize_list[goods_diff][2].."<color>\":"..goods_and_prize_list[goods_diff][13],
 		3,
-		"ĞèÒªµÄ¶«Î÷ÒÑ¾­ÊÕ¼¯ºÃÁË/#goods_need_chk("..goods_diff..",1)",
-		"ÎÒÏë¿´¿´ĞèÒªµÄ¾÷ÒªÁĞ±í/book_need_jue",
-		"ÎÒÔÙÈ¥×¼±¸Ò»ÏÂ/end_dialog")		
+		"The items you need have already been collected/#goods_need_chk("..goods_diff..",1)",
+		"I want to see the list of manuals required/book_need_jue",
+		"Let me go and prepare a bit more/end_dialog")		
 	elseif goods_diff == 2 then  
-		Say("¡°<color=red>"..goods_and_prize_list[goods_diff][2].."<color>¡±:"..goods_and_prize_list[goods_diff][13],
+		Say("\"<color=red>"..goods_and_prize_list[goods_diff][2].."<color>\":"..goods_and_prize_list[goods_diff][13],
 		2,
-		"ĞèÒªµÄ¶«Î÷ÒÑ¾­ÊÕ¼¯ºÃÁË/#goods_need_chk("..goods_diff..",1)",
-		"ÎÒÔÙÈ¥×¼±¸Ò»ÏÂ/end_dialog")
+		"The items you need have already been collected/#goods_need_chk("..goods_diff..",1)",
+		"Let me go and prepare a bit more/end_dialog")
 	else
-		Say("¡°<color=red>"..goods_and_prize_list[goods_diff][2].."<color>¡±:"..goods_and_prize_list[goods_diff][13],
+		Say("\"<color=red>"..goods_and_prize_list[goods_diff][2].."<color>\":"..goods_and_prize_list[goods_diff][13],
 		3,
-		"ÎÒÒÑ¾­×¼±¸ºÃ"..goods_types[goods_diff][1].."/#goods_need_chk("..goods_diff..",1)",
-		"ÎÒÒÑ¾­×¼±¸ºÃ"..goods_types[goods_diff][2].."/#goods_need_chk("..goods_diff..",2)",
-		"ÎÒÔÙÈ¥×¼±¸Ò»ÏÂ/end_dialog")		
+		"I am already prepared"..goods_types[goods_diff][1].."/#goods_need_chk("..goods_diff..",1)",
+		"I am already prepared"..goods_types[goods_diff][2].."/#goods_need_chk("..goods_diff..",2)",
+		"Let me go and prepare a bit more/end_dialog")		
 	end
 end
 --*****************************ÈÎÎñÎïÆ·¼ì²âÖ÷º¯Êı*****************************
@@ -55,11 +55,11 @@ function goods_need_chk(goods_diff,goods_type)
 	local jifen = GetTask(ABLUEMOON_JIFEN)
 	local jifenLV = jifen2level(jifen)
 	if jifenLV < (getn(goods_and_prize_list)+2-goods_diff) then 
-		Say("ÄãµÄ¿Æ¿¼³ÆºÅ»¹Ã»ÓĞ´ïµ½<color=yellow>"..tTitle[(getn(goods_and_prize_list)+2-goods_diff)][3].."<color>£¬²»ÄÜÊ¹ÓÃ¸ÃÖ¤Êé£¡",0)
+		Say("Your imperial exam title has not yet reached <color=yellow>"..tTitle[(getn(goods_and_prize_list)+2-goods_diff)][3].."<color>, so you cannot use this certificate!",0)
 		return
 	end
 	if Zgc_pub_goods_add_chk(5,20) ~= 1 then		--¿Õ¼ä/¸ºÖØÅĞ¶Ï
-		Talk(1,"","ÇëÈ·ÈÏÄúµÄ±³°üÓĞ×ã¹»µÄ¸ºÖØºÍ¿Õ¼ä£¡")
+		Talk(1,"","Please make sure your bag has enough carry weight and space!")
 		return
 	end
 
@@ -67,7 +67,7 @@ function goods_need_chk(goods_diff,goods_type)
 		return
 	end
 	if DelItem(2,0,goods_and_prize_list[goods_diff][1],1) ~= 1 then  --É¾µôÖ¤Êé
-		Talk(1,"","ÇëÈ·ÈÏÄãÉíÉÏÓĞÏàÓ¦µÄÖ¤Êé£¡")
+		Talk(1,"","Please make sure you have the corresponding certificate on you!")
 		return
 	end
 	if task_metiral_deal(goods_diff,2,goods_type) ~= 1 then		--ÎïÆ·É¾³ı
@@ -77,7 +77,7 @@ function goods_need_chk(goods_diff,goods_type)
 	local palyer_level = GetLevel()
 	local exp_num = floor((palyer_level*palyer_level*palyer_level)*goods_and_prize_list[goods_diff][11])
 		ModifyExp(exp_num)
-		Msg2Player("¹§Ï²Äã»ñµÃÁË"..exp_num.."µã¾­Ñé£¡")
+		Msg2Player("Congratulations, you have obtained"..exp_num.."EXP points!")
 	local ran_num = random(1,100)
 	if ran_num <= goods_and_prize_list[goods_diff][5] then
 		ran_prize(goods_diff,1)
@@ -95,25 +95,25 @@ end
 function task_metiral_deal(task_diff,deal_flag,goods_type)		--deal_flag:Îª1±íÊ¾¼ì²â£¬Îª2±íÊ¾É¾³ı
 	local task_goods_need_list = {
 		{  --½øÊ¿Ö¤ÊéĞèÒªµÄ²ÄÁÏ
-			{{2,14,1,1,"É±ÊÖ²Ø±¦Í¼"},{2,1,469,1,"Ì«Ğé°ËØÔÅÌ-Ç¬"},{2,1,470,1,"Ì«Ğé°ËØÔÅÌ-À¤"},{2,1,471,1,"Ì«Ğé°ËØÔÅÌ-¿²"},{2,1,472,1,"Ì«Ğé°ËØÔÅÌ-¶Ò"}}
+			{{2,14,1,1,"Assassin Treasure Map"},{2,1,469,1,"Taixu Bagua Plate - Qian"},{2,1,470,1,"Taixu Bagua Plate - Kun"},{2,1,471,1,"Taixu Bagua Plate - Kan"},{2,1,472,1,"Taixu Bagua Plate - Dui"}}
 		},
 		{  --¹±Ê¿Ö¤ÊéĞèÒªµÄ²ÄÁÏ
-			{{2,0,205,1,"ÉÙÁÖÊ¦ÃÅÁîÅÆ"},{2,0,206,1,"Îäµ±Ê¦ÃÅÁîÅÆ"},{2,0,207,1,"¶ëáÒÊ¦ÃÅÁîÅÆ"},{2,0,208,1,"Ø¤°ïÊ¦ÃÅÁîÅÆ"},{2,0,209,1,"ÌÆÃÅÊ¦ÃÅÁîÅÆ"},{2,0,350,1,"ÑîÃÅÊ¦ÃÅÁîÅÆ"},{2,0,390,1,"Îå¶¾Ê¦ÃÅÁîÅÆ"},{2,2,67,10,"ÌúÏß¾«Ä¾"},{2,2,68,10,"É½Ê¨¾«Æ¤"},{2,2,66,10,"ºÚÎÙ¾«Ê¯"},{2,2,69,10,"³àÎÙÁé·û"}},
+			{{2,0,205,1,"Shaolin Sect Token"},{2,0,206,1,"Wudang Sect Token"},{2,0,207,1,"Emei Sect Token"},{2,0,208,1,"Beggars' Gang Sect Token"},{2,0,209,1,"Tangmen Sect Token"},{2,0,350,1,"Yangmen Sect Token"},{2,0,390,1,"Five Poisons Sect Token"},{2,2,67,10,"Iron-Thread Fine Wood"},{2,2,68,10,"Mountain Lion Fine Hide"},{2,2,66,10,"Black Mink Fine Stone"},{2,2,69,10,"Red Mink Spirit Charm"}},
 		},
 		{  --¾ÙÈËÖ¤ÊéĞèÒªµÄ²ÄÁÏ
 --			{{2,9,4,200,"Àä³æË¿"},{2,2,47,200,"É½Ê¨Ö®Æ¤"},{2,2,37,200,"ºÚÎÙÊ¯"},{2,2,11,200,"ÌúÏßÄ¾"},{1,2,4,200,"÷êÏã"},{1,3,16,200,"ÓÎÁúËÚ"}},
-			{{2,9,4,222,"Àä³æË¿"},{2,2,47,222,"É½Ê¨Ö®Æ¤"},{1,2,4,222,"÷êÏã"},{1,3,16,222,"ÓÎÁúËÚ"}},
-			{{2,2,11,222,"ÌúÏßÄ¾"},{2,2,37,222,"ºÚÎÙÊ¯"},{1,2,4,222,"÷êÏã"},{1,3,16,222,"ÓÎÁúËÚ"}},
+			{{2,9,4,222,"Cold Insect Silk"},{2,2,47,222,"Mountain Lion Hide"},{1,2,4,222,"Kui Xiang"},{1,3,16,222,"Roaming Dragon Marrow"}},
+			{{2,2,11,222,"Iron Thread Wood"},{2,2,37,222,"Black Onyx Stone"},{1,2,4,222,"Kui Xiang"},{1,3,16,222,"Roaming Dragon Marrow"}},
 		},
 		{  --Ğã²ÅÖ¤ÊéĞèÒªµÄ²ÄÁÏ
 --			{{2,2,55,99,"½ğ²ÏË¿"},{2,10,7,99,"ğ½ÄñÓğÅû"},{2,2,36,99,"ÌìÇàÊ¯"},{2,2,10,99,"ÌúÕÁÄ¾"},{1,2,11,99,"´©É½¼×"},{1,3,15,99,"´¾ºÍÂó"}},
-			{{2,2,55,222,"½ğ²ÏË¿"},{2,10,7,222,"ğ½ÄñÓğÅû"},{1,2,11,222,"´©É½¼×"},},
-			{{2,2,10,222,"ÌúÕÁÄ¾"},{2,2,36,222,"ÌìÇàÊ¯"},{1,3,15,222,"´¾ºÍÂó"}},
+			{{2,2,55,222,"Golden Silkworm Thread"},{2,10,7,222,"Roc Feather Cloak"},{1,2,11,222,"Pangolin Scale"},},
+			{{2,2,10,222,"Iron Camphor Wood"},{2,2,36,222,"Sky-Blue Stone"},{1,3,15,222,"Chun He Wheat"}},
 		},
 		{  --ÉúÔ±Ö¤ÊéĞèÒªµÄ²ÄÁÏ
 --			{{2,2,54,99,"ÁéÖëË¿"},{2,2,20,99,"ĞÜÆ¤"},{2,2,6,99,"ĞşÌú"},{2,2,9,99,"ÖØÄ¾"},{1,2,10,99,"ÌïÆß"},{1,3,14,99,"ÑÓ¾«Âó"}},
-			{{2,2,54,222,"ÁéÖëË¿"},{2,2,20,222,"ĞÜÆ¤"},{1,2,10,222,"ÌïÆß"},},
-			{{2,2,9,222,"ÖØÄ¾"},{2,2,6,222,"ĞşÌú"},{1,3,14,222,"ÑÓ¾«Âó"}},
+			{{2,2,54,222,"Spirit Pearl Thread"},{2,2,20,222,"Bear Hide"},{1,2,10,222,"ÌïÆß"},},
+			{{2,2,9,222,"Heavy Wood"},{2,2,6,222,"Black Iron"},{1,3,14,222,"Yan Jing Wheat"}},
 		},
 	}
 	local cangbaotu_num = 0;
@@ -127,12 +127,12 @@ function task_metiral_deal(task_diff,deal_flag,goods_type)		--deal_flag:Îª1±íÊ¾¼
 					end
 				end
 				if cangbaotu_num == 0 then
-					Talk(1,"","ÄúÉíÉÏµÄ¡°<color=red>É±ÊÖ²Ø±¦Í¼<color>¡±²»×ã<color=red>1<color>¸ö£¡")
+					Talk(1,"","The \"<color=red>Assassin Treasure Map<color>\" on you is fewer than <color=red>1<color>!")
 					return 0
 				end
 			else
 				if GetItemCount(task_goods_need_list[task_diff][goods_type][i][1],task_goods_need_list[task_diff][goods_type][i][2],task_goods_need_list[task_diff][goods_type][i][3]) < task_goods_need_list[task_diff][goods_type][i][4] then
-					Talk(1,"","ÄúÉíÉÏµÄ¡°<color=red>"..task_goods_need_list[task_diff][goods_type][i][5].."<color>¡±²»×ã<color=red>"..task_goods_need_list[task_diff][goods_type][i][4].."<color>¸ö£¡")
+					Talk(1,"","The \"<color=red>"..task_goods_need_list[task_diff][goods_type][i][5].."<color>\" on you is fewer than <color=red>"..task_goods_need_list[task_diff][goods_type][i][4].."<color>!")
 					return 0
 				end
 			end
@@ -152,12 +152,12 @@ function task_metiral_deal(task_diff,deal_flag,goods_type)		--deal_flag:Îª1±íÊ¾¼
 					end
 				end
 				if cangbaotu_num == 0 then
-					Talk(1,"","ÄúÉíÉÏµÄ¡°<color=red>É±ÊÖ²Ø±¦Í¼<color>¡±²»×ã<color=red>1<color>¸ö£¡")
+					Talk(1,"","The \"<color=red>Assassin Treasure Map<color>\" on you is fewer than <color=red>1<color>!")
 					return 0
 				end				
 			else
 				if DelItem(task_goods_need_list[task_diff][goods_type][i][1],task_goods_need_list[task_diff][goods_type][i][2],task_goods_need_list[task_diff][goods_type][i][3],task_goods_need_list[task_diff][goods_type][i][4]) ~= 1 then
-					Talk(1,"","ÄúÉíÉÏµÄ¡°<color=red>"..task_goods_need_list[task_diff][goods_type][i][5].."<color>¡±²»×ã<color=red>"..task_goods_need_list[task_diff][goods_type][i][4].."<color>¸ö£¡")
+					Talk(1,"","The \"<color=red>"..task_goods_need_list[task_diff][goods_type][i][5].."<color>\" on you is fewer than <color=red>"..task_goods_need_list[task_diff][goods_type][i][4].."<color>!")
 					return 0
 				end
 			end
@@ -174,28 +174,28 @@ function ran_prize(goods_diff,ran_diff)
 	if ran_diff == 1 then			--Ôö¼ÓÔÂÁÁÍÃ±¦Ïä
 		local add_flag = AddItem(2,0,606,1)		
 		if add_flag == 1 then
-			Msg2Player("¹§Ï²Äã»ñµÃÁËÒ»¸öÔÂÁÁÍÃÌú±¦Ïä£¡")
-			Msg2SubWorld(GetName().."Íê³ÉÁË¿Æ¿¼ÈÎÎñ£¬»ñµÃÁËÒ»¸ö¡°ÔÂÁÁÍÃÌú±¦Ïä¡±£¡")		--test
-			WriteLog(GetName().."»ñµÃÒ»¸öÔÂÁÁÍÃÌú±¦Ïä")
+			Msg2Player("Congratulations, you have obtained a Moonlight Rabbit Iron Treasure Chest!")
+			Msg2SubWorld(GetName().."You completed the imperial exam quest and obtained a \"Moonlight Rabbit Iron Treasure Chest\"!")		--test
+			WriteLog(GetName().."Obtained one Moonlight Rabbit Iron Treasure Chest")
 		else
-			WriteLog(GetName().."Ôö¼ÓÔÂÁÁÍÃ±¦ÏäÊ§°Ü£¬Ê§°Ü±êÖ¾£º"..add_flag)
+			WriteLog(GetName().."Failed to add the Moonlight Rabbit treasure chest, failure code:"..add_flag)
 		end
 	elseif ran_diff == 2 then		--Ê¦ÃÅÃØ¼®Ôö¼Ó
-		local book_name = {"½ğ¸Õ·üÄ§¾­","Ç±ÁúÃØ¼®","ÎŞ³¾ÃØ¼®","ÌìÂŞÃØ¼®","ÈçÒâÃØ¼®","±Ìº£Æ×","»ìãçÃØ¼®",
-						"ŞñÌìÃØ¼®","»ÃÓ°ÃØ¼®","¾ı×ÓÃØ¼®","Õò¾üÃØ¼®","´©ÔÆÃØ¼®","ÓÄÚ¤¹íÂ¼","Áé¹ÆÃØ¼®"}
+		local book_name = {"½ğ¸Õ·üÄ§¾­","Ç±ÁúÃØ¼®","ÎŞ³¾ÃØ¼®","Tianluo Secret Manual","Ruyi Secret Manual","Bihai Score","Chaos Secret Manual",
+						"Yutian Secret Manual","Phantom Shadow Secret Manual","Gentleman Secret Manual","Garrison Secret Manual","Cloud-Piercing Secret Manual","Nether Ghost Record","Spirit Gu Secret Manual"}
 		local book_seq = random(1,getn(book_name))
 		local book_id = ((book_seq - 1) * 2) + 1
 		local add_flag = AddItem(0,107,book_id,1)
 		if add_flag == 1 then
-			Msg2Player("¹§Ï²Äú»ñµÃ¡°"..book_name[book_seq].."¡±£¡")
-			Msg2SubWorld("Íæ¼Ò£º"..GetName().."Íê³ÉÁË¿Æ¿¼ÈÎÎñ»ñµÃÁËÒ»±¾¡°"..book_name[book_seq].."¡±£¡")	--test
+			Msg2Player("Congratulations, you obtained \""..book_name[book_seq].."\"!")
+			Msg2SubWorld("Player:"..GetName().."You completed the imperial exam quest and obtained one \""..book_name[book_seq].."\"!")	--test
 		else		--test
-			WriteLog("¿Æ¿¼ÈÎÎñ»î¶¯£ºÍæ¼Ò£º"..GetName().."Ôö¼Ó"..book_name[book_seq].."Ê§°Ü£¬Ê§°Ü±êÖ¾£º"..add_flag)
+			WriteLog("Imperial Exam Quest Activity: Player:"..GetName().."Add"..book_name[book_seq].."Failed, failure code:"..add_flag)
 		end
 	elseif ran_diff == 3 then		--ÔÉÌúÔö¼Ó
 		local add_flag = AddItem(2,2,8,goods_and_prize_list[goods_diff][9])
 		if add_flag == 1 then
-			Msg2Player("¹§Ï²Äã»ñµÃÁË"..goods_and_prize_list[goods_diff][9].."¸öÔÉÌú£¡")
+			Msg2Player("Congratulations, you have obtained"..goods_and_prize_list[goods_diff][9].."Meteor Iron!")
 		end
 	elseif ran_diff == 4 then		--ÉùÍûÔö¼Ó
 		ModifyReputation(goods_and_prize_list[goods_diff][12],0)
@@ -203,19 +203,19 @@ function ran_prize(goods_diff,ran_diff)
 		local palyer_level = GetLevel()
 		local exp_num = floor((palyer_level*palyer_level*palyer_level)*goods_and_prize_list[goods_diff][11])
 		ModifyExp(exp_num)
-		Msg2Player("¹§Ï²Äã»ñµÃÁË"..exp_num.."µã¾­Ñé£¡")
+		Msg2Player("Congratulations, you have obtained"..exp_num.."EXP points!")
 	end
 end
 --*************************************½øÊ¿Ö¤ÊéĞèÒªµÄ¾÷ÒªÁĞ±í*******************************
 function book_need_jue()
-	Talk(1,"","<color=yellow>³ıÁËÒÔÏÂÏ¡ÓĞ¾÷ÒªÒÔÍâµÄÈÎÒâ5ÕÅ¾÷Òª¶¼¿ÉÒÔ£º<color>"..
-			"<enter>    ÉÙÁÖÏ¡ÓĞ¾÷Òª£º´ïÄ¦Îä¾­£¬´óĞëÃÖÕÆ£¬Ê¨×Óºğ£¬´óÁ¦½ğ¸ÕÖ¸"..
-			"<enter>    ÌÆÃÅÏ¡ÓĞ¾÷Òª£ºÂúÌì»¨Óê£¬±©ÓêÀç»¨Õë"..
-			"<enter>    ¶ëáÒÏ¡ÓĞ¾÷Òª£ºÁ«»¨ĞÄ¾­£¬ÃÔĞÄÆ®ÏãÇú£¬¸²Ë®ĞÄ·¨"..
-			"<enter>    Ø¤°ïÏ¡ÓĞ¾÷Òª£º×íÈ­£¬Äàöú¹¦£¬×íµû£¬´ò¹·¹÷·¨"..
-			"<enter>    Îäµ±Ï¡ÓĞ¾÷Òª£ºÖËÑô½£Æø£¬ÕæÎäÆß½Ø½££¬Óù½£¾÷£¬ÉÙÑô¾÷£¬ÉÏÇåÎŞ¼«¹¦£¬ÌİÔÆ×İ"..
-			"<enter>    ÑîÃÅÏ¡ÓĞ¾÷Òª£ºÑî¼Òµ¹º£Ç¹£¬Ñî¼ÒÓùÂíÊõ£¬Ñî¼ÒĞøÃü¾÷£¬Ñî¼ÒÕıÆø¼ı"..
-			"<enter>    Îå¶¾Ï¡ÓĞ¾÷Òª£º¼¯Ê¬Ğ°Æø£¬»Ã¹Æ£¬Ô¦Ê¬Êõ£¬Ñı¹Æ£¬Íò¹ÆÊ´Ìì"
+	Talk(1,"","<color=yellow>Aside from the rare manuals listed below, any other 5 manuals will do:<color>"..
+			"<enter>    Shaolin rare manuals: Damo Sutra, Great Vajra Palm, Lion's Roar, Great Strength Vajra Finger"..
+			"<enter>    Tangmen rare manuals: Sky-Filling Flower Rain, Storm Pear-Blossom Needle"..
+			"<enter>    Emei rare manuals: Lotus Heart Sutra, Heart-Bewitching Fragrant Tune, Water-Covering Heart Technique"..
+			"<enter>    Beggars' Gang rare manuals: Drunken Fist, Mud Eel Skill, Drunken Butterfly, Dog-Beating Staff Technique"..
+			"<enter>    Wudang rare manuals: Zhiyang Sword Qi, Zhenwu Seven-Cut Sword, Sword-Controlling Art, Shaoyang Art, Shangqing Wuji Skill, Cloud-Ladder Stride"..
+			"<enter>    Yangmen rare manuals: Yang Family Sea-Toppling Spear, Yang Family Horse-Taming Art, Yang Family Life-Extending Art, Yang Family Righteous-Qi Arrow"..
+			"<enter>    Five Poisons rare manuals: Corpse-Gathering Evil Qi, Illusion Gu, Corpse-Reanimation Art, Demon Gu, Myriad Gu Devouring Heaven"
 	)
 end
 
@@ -236,7 +236,7 @@ function abluemoon_check_jue(deal_flag)
 			end
 		end
 		if jue_count ~= 5 then
-			Talk(1,"","ÄãÉíÉÏ<color=yellow>Âú×ãÒªÇó<color>µÄ¾÷ÒªÊıÁ¿<color=yellow>²»µÈÓÚ5ÕÅ<color>£¡Çë°ÑÈ±ÉÙµÄ²¹Æë»òÕß°Ñ¶àÓàµÄ·Åµ½²Ö¿âÔÙËµ¡£")
+			Talk(1,"","The number of manuals on you that <color=yellow>meet the requirements<color> <color=yellow>is not equal to 5<color>! Please make up the missing ones or move the extras to your warehouse first.")
 			return 0
 		end
 		return 1

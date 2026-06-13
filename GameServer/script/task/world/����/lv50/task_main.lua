@@ -27,7 +27,7 @@ local strTalk = {
 		"ChÝnh lµ ta. <sex> t×m ta cã viÖc g× kh«ng?",
 		"Nghe nãi tiÒn bèi rÊt tinh th«ng ph­¬ng ng÷ ë {§¹i Lý}, cã thÓ gióp t¹i h¹ dÞch bøc th­ nµy kh«ng?",
 		"Cã ph¶i TrÞnh Qu¸n Chi nãi, phiÒn <sex> ®iÒu tra xem mèi quan hÖ gi÷a Miªu LÜnh vµ Xi Háa Gi¸o?",
-		"§óng vËy.",
+		"That is right.",
 		"Ta còng ®ang cã chuyÖn nµy muèn nhê <sex>.",
 		"Xin tiÒn bèi cø nãi.",
 		"Bän Thæ Ty ë Miªu LÜnh ngµy cµng t¸c lo¹n, chóng c­íp bãc, øc hiÕp th¶o d©n. MÊy huynh ®Ö cña ta còng bÞ chóng bøc chÕt. <sex> cã thÓ thay ta b¸o thï cho c¸c huynh ®Ö Êy ®­îc kh«ng?",
@@ -59,14 +59,14 @@ local strTalk = {
 			"§óng lµ Béi §ao, ®a t¹ <sex>.",
 			"TiÒn bèi, vËy cßn bøc th­…",
 			"§©y lµ th­ Téc tr­ëng Miªu LÜnh göi cho Xi Háa gi¸o, trong th­ nãi r»ng thÕ lùc cña Xi Háa gi¸o hiÖn giê rÊt m¹nh, ®· g©y sù chó ý ®Õn giíi nh©n sÜ Vâ L©m. Xi Háa gi¸o nhÊt cö nhÊt ®éng nªn thËn träng. <sex> nªn ®Õn {Miªu LÜnh} t×m {Téc tr­ëng}.",
-			"§a t¹ tiÒn bèi!",
+			"Many thanks, senior!",
 			}
 		TalkEx("",strTalk);
 		DelItem(2,0,368,10);
 		RemoveTrigger(GetTrigger(KILL_DL_MLTS));
 		SetTask(TASK_DL_LV50_ID,3);
-		TaskTip("§Õn gÆp Téc tr­ëng Miªu LÜnh");
-		Msg2Player("§Õn gÆp Téc tr­ëng Miªu LÜnh");
+		TaskTip("Go meet the Miaoling clan chief");
+		Msg2Player("Go meet the Miaoling clan chief");
 		GivePlayerAward("Level_50","xn_step_1");
 		GivePlayerExp(SkeyDali,"baochou")
 		return
@@ -87,7 +87,7 @@ end
 function task_002_00()
 
 local strTalk = {
-	"<sex> cø ®Õn Miªu LÜnh ¾t sÏ t×m thÊy Téc tr­ëng",
+	"Just go to Miaoling and you will surely find the clan chief.",
 	}
 	TalkEx("",strTalk);
 	return

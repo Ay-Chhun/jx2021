@@ -20,16 +20,16 @@ function main()
 		{1, 50, "L«i Viªm Th¹ch", {2, 1, 30683, 1}, 0},
 		{31, 50, "nothing()", 1},
 	}
-	gf_EventGiveRandAward(tAward1, gf_SumRandBase(tAward1), 1, "§Òn bï hack item", "R­¬ng Nhá §Òn Bï");
+	gf_EventGiveRandAward(tAward1, gf_SumRandBase(tAward1), 1, "Compensation hack item", "Small Compensation Chest");
 	
 	local tAward = {
-		{1, 20, "Hu©n ch­¬ng anh hïng", {2, 1, 30499, 1, 4}, 0},
+		{1, 20, "Hero's Medal", {2, 1, 30499, 1, 4}, 0},
 		{1, 20, "ThiÕt Tinh cÊp 1", {2, 1, 30533, 1, 4}, 0},
 		{1, 20, "ThiÕt Tinh cÊp 2", {2, 1, 30534, 1, 4}, 0},
 		{1, 20, "L«i Viªm Th¹ch", {2, 1, 30683, 1}, 0},
-		{1, 15, "VÐ TiÕu Y §ång", {2, 1, 30493, 1, 4}, 0},
-		{1, 5, "VÐ TiÕu Y B¹c", {2, 1, 30492, 1, 4}, 0},
+		{1, 15, "Bronze Tieu Y Token", {2, 1, 30493, 1, 4}, 0},
+		{1, 5, "Silver Tieu Y Token", {2, 1, 30492, 1, 4}, 0},
 	}
-	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "§Òn bï hack item", "R­¬ng Nhá §Òn Bï");
+	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Compensation hack item", "Small Compensation Chest");
 	SetNpcLifeTime(npcIndex, 0);
 end

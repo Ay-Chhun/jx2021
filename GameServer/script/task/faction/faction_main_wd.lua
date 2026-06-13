@@ -73,7 +73,7 @@ local strMain = {
 		"C©u ®Çu tiªn cña §¹o §øc Kinh lµ g×?",
 		"§¹o Sinh NhÊt, NhÊt Sinh NhÞ, NhÞ Sinh Tam, Tam Sinh V¹n VËt/task_error",
 		"Nh©n Ph¸p §Þa, §Þa Ph¸p Thiªn, Thiªn Ph¸p §¹o, §¹o Ph¸p Tù Nhiªn/task_error",
-		"§¹o Kh¶ §¹o, Phi Th­êng §¹o, Danh Kh¶ Danh, Phi Th­êng Danh/task_004_next"
+		"The Tao that can be told is not the eternal Tao, the name that can be named is not the eternal name/task_004_next"
 	}
 
 Say(strMain[1],3,strMain[2],strMain[3],strMain[4]);
@@ -83,7 +83,7 @@ end
 function task_004_next()
 
 local strMain = {
-		"Cèc thÇn bÊt tö x­ng lµ:",
+		"The Valley Spirit never dies; it is called:",
 		"HuyÒn Vò/task_error",
 		"HuyÒn T½n/task_005_next",
 		"Hùu HuyÒn/task_error"
@@ -98,10 +98,10 @@ function task_005_next()
 local strMain = {
 		"Th­îng ThiÖn Nh­îc?",
 		" Kim /task_error",
-		"Méc/task_error",
+		"Wood/task_error",
 		"Thñy/task_006_next",
 		"Háa/task_error",
-		"Thæ/task_error"
+		"Earth/task_error"
 	}
 
 Say(strMain[1],5,strMain[2],strMain[3],strMain[4],strMain[5],strMain[6]);
@@ -111,11 +111,11 @@ end
 function task_006_next()
 
 local strMain = {
-		"C¸i g× lµ vi thiªn h¹ chÝnh?",
-		"V« vi/task_error",
+		"What is it that sets the world aright?",
+		"Non-action/task_error",
 		"Sung Doanh/task_error",
-		"KhuÊt ChuyÕt/task_error",
-		"Thanh TÞnh/task_007_next"
+		"Bent and clumsy/task_error",
+		"Purity and stillness/task_007_next"
 	}
 
 Say(strMain[1],4,strMain[2],strMain[3],strMain[4],strMain[5]);
@@ -127,9 +127,9 @@ function task_007_next()
 local strMain = {
 		"Nh©n Ph¸p §Þa, §Þa Ph¸p Thiªn, Thiªn Ph¸p §¹o, §¹o Ph¸p?",
 		"Tù nhiªn/task_008",
-		"¢m d­¬ng/task_error",
-		"V« vi/task_error",
-		"H­ thùc/task_error"
+		"Yin and yang/task_error",
+		"Non-action/task_error",
+		"Emptiness and substance/task_error"
 	}
 
 Say(strMain[1],4,strMain[2],strMain[3],strMain[4],strMain[5]);

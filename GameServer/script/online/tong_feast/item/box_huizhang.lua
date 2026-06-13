@@ -6,8 +6,8 @@ function OnUse(nItem)
 		return 0;
 	end
 	local tAward = {
-		{1, 30, "Huy Ch≠¨ng ßÂng Ch’",     {0, 153, 1, 1}, 0},	
-		{1, 30, "Huy Ch≠¨ng Thi’t Ch’",     {0, 153, 2, 1}, 0},
+		{1, 30, "Copper Medal",     {0, 153, 1, 1}, 0},	
+		{1, 30, "Iron Medal",     {0, 153, 2, 1}, 0},
 		{1, 30, "Huy Ch≠¨ng Ng‰c Ch’",     {0, 153, 3, 1}, 0},
 		{1,  1, "Huy Ch≠¨ng Kim Ch’ ngÚ hµnh", {0, 153, 4, 1}, 0},
 		{1,  1, "Huy Ch≠¨ng MÈc Ch’ ngÚ hµnh", {0, 153, 5, 1}, 0},
@@ -17,6 +17,6 @@ function OnUse(nItem)
 		{1,  5, "Huy Ch≠¨ng ¢m Ch’ ngÚ hµnh", {0, 153, 9, 1}, 0},
 	}
 	if DelItemByIndex(nItem, 1) == 1 then
-		gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "R≠¨ng Huy Ch≠¨ng", "D≠Ïng thµnh trang bﬁ");
+		gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Medal Chest", "D≠Ïng thµnh trang bﬁ");
 	end
 end

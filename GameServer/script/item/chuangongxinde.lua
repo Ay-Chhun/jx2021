@@ -9,7 +9,7 @@ function OnUse(nItemIdx)
 	BWT_WeeklyClear();
 	local nUseXinDeNum = GetTask(TSK_USE_CHUANGONG_XINDE);
 	if nUseXinDeNum >= g_nMaxUseTime then
-		Talk(1,"","TuÇn nµy b¹n ®· dïng "..g_nMaxUseTime.." cuèn"..g_szItemName..", kh«ng thÓ dïng n÷a.");
+		Talk(1,"","TuÇn nµy b¹n ®· dïng "..g_nMaxUseTime.." volumes"..g_szItemName..", kh«ng thÓ dïng n÷a.");
 		return 0;
 	end;
 	if nLevel < 60 then
@@ -53,7 +53,7 @@ function use(nCount)
 	if IB_VERSION == 0 then
 		local nGoldenExp = floor(((nLevel^4)*200000)/(80^4)) * nCount;
 		if GetGoldenExp() < nGoldenExp then
-			Say("§iÓm søc kháe cña b¹n <color=yellow>"..GetGoldenExp().."<color> kh«ng ®ñ <color=yellow>"..nGoldenExp.."<color>, cã muèn ®æi kh«ng?",2,"§ång ý/#use_shoufei("..nCount..")","Hñy bá/nothing")
+			Say("§iÓm søc kháe cña b¹n <color=yellow>"..GetGoldenExp().."<color> kh«ng ®ñ <color=yellow>"..nGoldenExp.."<color>, cã muèn ®æi kh«ng?",2,"Agree/#use_shoufei("..nCount..")","Cancel/nothing")
 			return
 		else
 			use_shoufei(nCount);
@@ -69,7 +69,7 @@ function use(nCount)
 			
 		end;
 		SetTask(TSK_USE_CHUANGONG_XINDE,GetTask(TSK_USE_CHUANGONG_XINDE)+nCount);
-		Msg2Player("Trong tuÇn nµy b¹n ®· dïng cuèn thø "..GetTask(TSK_USE_CHUANGONG_XINDE).." cuèn"..g_szItemName..", mçi tuÇn chØ cã thÓ dïng "..g_nMaxUseTime.." cuèn"..g_szItemName);	
+		Msg2Player("Trong tuÇn nµy b¹n ®· dïng cuèn thø "..GetTask(TSK_USE_CHUANGONG_XINDE).." volumes"..g_szItemName..", mçi tuÇn chØ cã thÓ dïng "..g_nMaxUseTime.." volumes"..g_szItemName);	
 
 	end;
 end;
@@ -79,7 +79,7 @@ function use_shoufei(nCount)
 		local nGoldenExp = floor(((GetLevel()^4)*200000)/(80^4)) * nCount;
 		gf_GoldenExp2Exp(nGoldenExp);
 		SetTask(TSK_USE_CHUANGONG_XINDE,GetTask(TSK_USE_CHUANGONG_XINDE)+nCount);
-		Msg2Player("Trong tuÇn nµy b¹n ®· dïng cuèn thø "..GetTask(TSK_USE_CHUANGONG_XINDE).." cuèn"..g_szItemName..", mçi tuÇn chØ cã thÓ dïng "..g_nMaxUseTime.." cuèn"..g_szItemName);	
+		Msg2Player("Trong tuÇn nµy b¹n ®· dïng cuèn thø "..GetTask(TSK_USE_CHUANGONG_XINDE).." volumes"..g_szItemName..", mçi tuÇn chØ cã thÓ dïng "..g_nMaxUseTime.." volumes"..g_szItemName);	
 	end;
 end
 function nothing()

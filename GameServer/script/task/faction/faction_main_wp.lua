@@ -56,9 +56,9 @@ function task_003()
 
 local strSay = {
 	"Dïng phÝm nµo ®Ó chuyÓn ®æi gi÷a ®øng vµ ngåi?",
-	"1.PhÝm K./exam_fault1",
-	"2.PhÝm P/exam_fault1",
-	"3.PhÝm V/exam_pass1",
+	"1. The K key./exam_fault1",
+	"2. The P key/exam_fault1",
+	"3. The V key/exam_pass1",
 }
 	SelectSay(strSay);
 end	
@@ -68,9 +68,9 @@ function exam_pass1()
 
 local strSay = {
 	"PhÝm chuyÓn ®æi chÕ ®é ch¹y tù ®éng lµ phÝm nµo?",
-	"1.PhÝm K./exam_fault1",
-	"2.PhÝm L/exam_pass2",
-	"3.PhÝm O/exam_fault1",
+	"1. The K key./exam_fault1",
+	"2. The L key/exam_pass2",
+	"3. The O key/exam_fault1",
 }
 	SelectSay(strSay);
 end	
@@ -80,9 +80,9 @@ function exam_pass2()
 
 local strSay = {
 	"PhÝm nhÆt vËt phÈm?",
-	"1.PhÝm Ctrl/exam_fault1",
-	"2.PhÝm Space/exam_pass3",
-	"3.PhÝm Enter/exam_fault1",
+	"1. The Ctrl key/exam_fault1",
+	"2. The Space key/exam_pass3",
+	"3. The Enter key/exam_fault1",
 }
 	SelectSay(strSay);
 end
@@ -102,7 +102,7 @@ function task_004()
 
 local strSay = {
 	"C©u hái cuèi cïng, n¨m x­a ta bÞ mét tªn gian tÆc ThiÕu L©m ®¸nh mét c«n, ®Õn giê mçi khi trêi m­a lµ l­ng mái ch©n ®au, ng­¬i biÕt hÖ ph¸i cña h¾n lµ g×?",
-	"1.ThiÕu L©m tôc gia/exam_pass4",
+	"1. Shaolin lay disciples/exam_pass4",
 	"2.ThiÕu L©m thiÒn t¨ng/exam_fault2",
 	"3.ThiÕu L©m vâ t¨ng/exam_fault2",
 	}
@@ -158,9 +158,9 @@ end
 function task_006()
 
 local strSay = {
-	"VËy µ!",
-	"§­a 1 l­îng b¹c/pay_money",
-	"Kh«ng ®­a/no_pay"
+	"Is that so!",
+	"Hand over 1 tael of silver/pay_money",
+	"Do not hand it over/no_pay"
 	}
 	SelectSay(strSay);
 end
@@ -212,7 +212,7 @@ function task_008()
 
 local strTalk = {
 	"3 ng­êi ®ã ®· ®ång ý c¶? VËy ®Õn l­ît ta hái ng­¬i, nÕu tr¶ lêi ®­îc xem nh­ qua ¶i.",
-	"Xin ®a t¹!"
+	"Many thanks!"
 	}
 	TalkEx("task_009", strTalk);
 end
@@ -234,9 +234,9 @@ function exam_pass5()
 
 local strSay = {
 	"Giang hå hËu bèi muèn th¨ng ®¼ng cÊp nhanh, ph­¬ng ph¸p hiÖu qu¶ nhÊt lµ?",
-	"1.Bµy b¸n/exam_fault3",
+	"1. Set up a stall/exam_fault3",
 	"2.Lµm nhiÖm vô Th­¬ng héi/exam_pass6",
-	"3.§¸nh cäc gç/exam_fault3",
+	"3. Hit wooden stakes/exam_fault3",
 	}
 	SelectSay(strSay);
 end
@@ -279,9 +279,9 @@ function exam_pass7()
 
 local strTalk = {
 	"Ng­¬i còng cã chót kiÕn thøc! Ngò §éc gi¸o cÇn nh÷ng ng­êi cã kinh nghiÖm giang hå nh­ ng­¬i, ch¼ng l©u sau Ngò §éc gi¸o ta sÏ vang danh thiªn h¹!",
-	"NghÜa lµ…",
+	"Meaning",
 	"Ng­¬i h·y ®i t×m {C©u S¸ch}! Nãi lµ bän ta ®· ®ång ý råi!",
-	"§a t¹ T©y §å Quû S­"
+	"Many thanks, Ghost Master Xi Tu"
 	}
 	TalkEx("",strTalk);
 	TaskTip("§Õn T©y B¾c Ngò §éc Gi¸o t×m Thñ täa Quû S­ C©u S¸ch");
@@ -298,11 +298,11 @@ local strTalk = {
 	"ThÕ nµo? Bän hä ®ång ý c¶ ch­a? Hä cã nãi g× kh«ng?",
 	"Tam vÞ Quû S­ ®Òu ®· ®ång ý nh­ng Ph­¬ng Viªn Quû S­ h¬i cã thµnh kiÕn víi ThiÕu L©m ph¸i.",
 	"Ha ha! Tr­íc ®©y y cã khóc m¾c víi ThiÕu L©m. Cßn V­u Dung cã ®ßi tiÒn mi kh«ng?",
-	"C©u S¸ch Quû S­ ®Òu biÕt c¶ ­?",
+	"Ghost Master Gou Suo knows everything?",
 	"TËt xÊu cña hä sao ta l¹i kh«ng biÕt. Bän hä võa thï dai, cê b¹c… cho nªn 3 ®êi gi¸o chñ cña bæn gi¸o ®Òu lµ n÷ l­u. Nh­ng ng­¬i ®õng v× thÕ mµ xem th­êng hä, bän hä ai còng b¶n lÜnh nÕu kh«ng ®· kh«ng thÓ ngåi ë vÞ trÝ ®ã. ChØ cÇn ng­¬i cã b¶n lÜnh sÏ cã ngµy ng­¬i næi danh trªn giang hå. H·y nhí lÊy!",
-	"Thuéc h¹ hiÓu râ!",
+	"This subordinate understands clearly!",
 	"Giê ng­¬i h·y ®i t×m B¹ch gi¸o chñ! H·y nãi tø vÞ Quû S­ ®· ®ång ý cho ng­¬i nhËp gi¸o.",
-	"§a t¹ C©u S¸ch Quû S­!"
+	"Many thanks, Master Gui of the Demon Scripture!"
 	}
 	TalkEx("",strTalk);
 	SetTask(FN_WP,7);
@@ -315,9 +315,9 @@ function task_011()
 
 local strTalk = {
 	"ThÕ nµo? Bän hä ®ång ý c¶ ch­a?",
-	"Bän hä ®Òu ®· ®ång ý.",
+	"They have all agreed.",
 	"Nh­ vËy xem nh­ ng­¬i ®· gia nhËp Ngò §éc gi¸o. Sau nµy h·y cè g¾ng luyÖn c«ng ph¸t d­¬ng quang ®¹i tuyÖt häc bæn gi¸o.",
-	"Thuéc h¹ hiÓu râ!",
+	"This subordinate understands clearly!",
 	"Giê ng­¬i ®· cã thÓ häc vâ c«ng bæn gi¸o. NÕu muèn häc Khèng Thi thuËt ®Õn t×m Ng« Ng«n; nÕu muèn häc LuyÖn §éc thuËt t×m LiÔu T©n Tróc!"
 	}
 	

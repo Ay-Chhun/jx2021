@@ -33,7 +33,7 @@ function OnUse(nIndex)
 		EatLiushen(3,-(60 * nPK))
 		EatSanqin(3,-(60 * nPK))
 		AddPKValue(nPK * (-1))
-		WriteLogEx("Hoat dong thang 5", "t»y "..nPK.." Æi”m PK")			
+		WriteLogEx("Hoat dong thang 5", "cleanse"..nPK.." Æi”m PK")			
 	end
 end;
 

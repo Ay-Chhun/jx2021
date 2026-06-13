@@ -6,8 +6,8 @@ function MS_InitMission()
 	local nMSUID = MS_CreateMSUID();	--´´½¨Ò»¸öMissionÎ¨Ò»ID
 	SetMissionV(MV_MISSION_UID,nMSUID);	
 	SetMissionS(MS_MISSION_NAME,MISSION_NAME..nMSUID);	--¼ÇÂ¼MissionµÄÃû×Ö
-	SetMissionS(MS_MISSION_STRING,"¶i s­ m«n");
-	WriteLog(LOG_HEADER.."Mission ®· b¾t ®Çu, MSUID:"..nMSUID);
+	SetMissionS(MS_MISSION_STRING,"Sect Master");
+	WriteLog(LOG_HEADER.."Mission has started, MSUID:"..nMSUID);
 end;
 --Mission¿ªÊ¼
 function MS_StartMission()
@@ -20,7 +20,7 @@ function MS_EndMission()
 	mf_DelAllMSPlayer(MISSION_ID,CAMP_ALL);	--´ÓMissionÀïÃæÉ¾³ýËùÓÐµÄÍæ¼Ò
 	local nMapID = SubWorldIdx2ID(SubWorld);
 	BR_ClearMapNpcSafe(nMapID);
-	WriteLog(LOG_HEADER.."Mission ®· kÕt thóc, MSUID:"..nMSUID);
+	WriteLog(LOG_HEADER.."Mission has ended, MSUID:"..nMSUID);
 	mf_ClearMissionData();
 end;
 --Àë¿ªMission
@@ -72,7 +72,7 @@ function MS_ProcessStartedTimer()
 		BR_UnInitStageEven(nCurDiff,nCurStage);
 		BR_ChangeMSState(MS_STATE_END_WAITING);
 		BR_CreateDisciple();
-		WriteLog(LOG_HEADER.."V­ît ¶i thÊt b¹i. §é khã: "..nCurDiff..", ¶i  "..nCurStage..". Tªn: "..GetName(nPIdx)..", cÊp:"..GetLevel(nPIdx)..","..GetMissionV(MV_ROUTE)..", nguyªn nh©n: v­ît qu¸ thêi gian cho phÐp");
+		WriteLog(LOG_HEADER.."V­ît ¶i thÊt b¹i. §é khã: "..nCurDiff..", trial"..nCurStage..". Name:"..GetName(nPIdx)..", cÊp:"..GetLevel(nPIdx)..","..GetMissionV(MV_ROUTE)..", nguyªn nh©n: v­ît qu¸ thêi gian cho phÐp");
 	else
 		BR_ProcStageEven(nCurDiff,nCurStage);
 		SetMissionV(MV_TIMER_LOOP,nLoop-1);
@@ -97,7 +97,7 @@ end;
 function MS_ProcessEndingTimer()
 	local nLoop = GetMissionV(MV_TIMER_LOOP);
 	if nLoop == 0 then
-		Msg2MSAll(MISSION_ID,", b©y giê xin mêi rêi ¶i...");
+		Msg2MSAll(MISSION_ID,", please leave now...");
 		BR_CloseStage();
 	else
 		SetMissionV(MV_TIMER_LOOP,nLoop-1);
@@ -107,7 +107,7 @@ end;
 --µÇÂ½´¥·¢Æ÷º¯Êý
 function OnLogin()
 	MS_RestorePlayerState();
-	WriteLog(LOG_HEADER.."Ng­êi ch¬i "..GetName().." Rêi Mission kh«ng b×nh th­êng, ®ang trong qu¸ tr×nh xö lý ®¨ng nhËp.");
+	WriteLog(LOG_HEADER.."Player"..GetName().." Rêi Mission kh«ng b×nh th­êng, ®ang trong qu¸ tr×nh xö lý ®¨ng nhËp.");
 end;
 --=====================================================================================
 --´´½¨Ò»¸öMSUID£¨µ±Ç°MissionÎ¨Ò»±êÊ¶£©

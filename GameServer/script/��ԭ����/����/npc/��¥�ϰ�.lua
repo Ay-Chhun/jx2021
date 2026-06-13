@@ -21,7 +21,7 @@ function main()
 		tSay = aah_GetSayDialog(tonumber(v));
 	end
 	if getn(tSay) > 0 then
-		tinsert(tSay, "Ra khái/nothing")
+		tinsert(tSay, "Leave/nothing")
 		Say("Kh¸ch quan ®Õn tiÓu ®iÕm t×m r­îu th­îng h¹ng µ? B¶o ®¶m sÏ ®­îc hµi lßng!", getn(tSay), tSay);
 		return 
 	end

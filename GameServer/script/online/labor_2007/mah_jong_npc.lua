@@ -16,22 +16,22 @@ Include("\\script\\online\\zgc_public_fun.lua")		--´å³¤µÄ¹«¹²º¯Êý
 		}
 	--ËùÓÐÂé½«³õÊ¼»¯
 	mah_jong = {
-		"NhÊt ®ång","NhÞ ®ång","Tam ®ång","Tø ®ång","Ngò ®ång","Lôc ®ång","ThÊt ®ång","B¸t ®ång","Cöu ®ång",
-		"Mét","NhÞ ®iÒu","Ba","Bèn","Ngò ®iÒu","Lôc ®iÒu","ThÊt ®iÒu","B¸t ®iÒu","Cöu ®iÒu",
-		"NhÊt v¹n","NhÞ v¹n","Tam v¹n","Tø v¹n","Ngò v¹n","Lôc v¹n","ThÊt v¹n","B¸t v¹n","Cöu v¹n",
-		"§«ng phong","Nam phong","T©y phong","B¾c phong","Hång trung","ph¸t tµi","B¹ch ban"
+		"One Copper","Two Copper","Three Copper","Four Copper","Five Copper","Six Copper","Seven Copper","Eight Copper","Cöu ®ång",
+		"One","Two Bars","Ba","Four","Five Bars","Six Bars","Seven Bars","Eight Bars","Cöu ®iÒu",
+		"Ten Thousand","Twenty Thousand","Thirty Thousand","Forty Thousand","Fifty Thousand","Sixty Thousand","Seventy Thousand","Eighty Thousand","Cöu v¹n",
+		"East Wind","Nam phong","West Wind","North Wind","Hång trung","Riches","B¹ch ban"
 	}
-	mah_jong_prize_bag = {{670,"Con bµi 4 ®em c­îc"},{669,"Con bµi 3 ®em c­îc"},{668,"Con bµi 2 ®em c­îc"},{667,"Con bµi ®em c­îc"},{667,"Con bµi ®em c­îc"}}
+	mah_jong_prize_bag = {{670,"Betting Tile 4"},{669,"Betting Tile 3"},{668,"Betting Tile 2"},{667,"Betting Tile"},{667,"Betting Tile"}}
 	Npc_name = {"<color=green>Hiªn Viªn Trung<color>:","<color=green>Hiªn Viªn Nh©n<color>:","<color=green>Hiªn Viªn LÔ<color>:"}
 --==============================Ö÷Âß¼­ÇøÓò===============================
 function main(npc_index)
 	local map_ID = GetWorldPos()				--¼ÇÂ¼NPCÃû³Æ
 	--¼ÓÉÏµÈ¼¶ÅÐ¶Ï
 	local npc_dia = {
-		"Hay l¾m! Xem ta ra tay ®©y!/mah_jong_suc_list",
+		"Excellent! Watch me get to work!/mah_jong_suc_list",
 		"§¸nh theo quy t¾c nµo vËy? Lµm sao tÝnh th¾ng?/mah_jong_suc_inf",
 		"Kh«ng biÕt M¹t ch­îc lµ c¸i g×?/what_is_mah_jong",
-		"Cuéc thi §ç thÇn tranh b¸ lµ g×?/mah_jong_task_inf",
+		"What is the Gambling God Supremacy contest?/mah_jong_task_inf",
 		"Ta muèn nhËn H­íng dÉn ho¹t ®éng 1-5/#AddItem(2,1,1114,1)",
 		"Ta cßn ph¶i hµnh hiÖp cøu ng­êi, kh«ng r¶nh ®Ó ®¸nh M¹t ch­îc!/end_dialog",
 	}
@@ -51,7 +51,7 @@ function mah_jong_suc_inf()
 	"Ta muèn biÕt quy t¾c vµ phÇn th­ëng cña Thanh NhÊt S¾c V¹n/#mah_jong_rule_dia(4)",
 	"Ta muèn biÕt quy t¾c vµ phÇn th­ëng cña §¹i Tø Hû/#mah_jong_rule_dia(5)",
 	"Ta muèn biÕt quy t¾c vµ phÇn th­ëng cña Bµi ThÇn/#mah_jong_rule_dia(6)",
-	"Tho¸t/end_dialog"
+	"Exit/end_dialog"
 	)
 end
 function mah_jong_rule_dia(suc_way)
@@ -92,7 +92,7 @@ function mah_jong_suc_list()
 		Talk(1,"mah_jong_task_inf",Npc_name[floor(map_ID/100)].."Cuéc thi §æ ThÇn tranh b¸ vÉn ch­a chÝnh thøc b¾t ®Çu. b»ng h÷u cã thÓ xem thuyÕt minh liªn quan ho¹t ®éng")
 		return
 	elseif date_chk == 0 then			--ºúÅÆÁÐ±í
-		Say(Npc_name[floor(map_ID/100)].."Kh«ng biÕt <color=yellow>"..Zgc_pub_sex_name().."<color>Cã bµi nµo hay?",
+		Say(Npc_name[floor(map_ID/100)].."Don't know <color=yellow>"..Zgc_pub_sex_name().."<color>Cã bµi nµo hay?",
 			7,
 			"Ta muèn chän B×nh Hå/#mah_jong_suc_dtm(1)",
 			"Ta muèn chän Thanh NhÊt S¾c §ång/#mah_jong_suc_dtm(2)",
@@ -129,7 +129,7 @@ function mah_jong_suc_dtm(suc_seq)
 	Say(mah_jong_suc_dia[suc_seq],
 	2,
 	"Ta muèn ®æi phÇn th­ëng/#mah_jong_num_chk("..(suc_seq-1)..")",		--½øÈëÊýÁ¿¼ì²â
-	"§Ó ta chuÈn bÞ thªm/end_dialog"
+	"Let me prepare more/end_dialog"
 	)
 end
 --********************************Âé½«¼ì²â*****************************
@@ -252,9 +252,9 @@ function mah_jong_num_chk(color_diff)
 			if color_diff == 4 or color_diff == 5 then
 				Msg2SubWorld("Ng­êi ch¬i:"..GetName().."Nép qu©n bµi ®èi øng! NhËn ®­îc"..mah_jong_prize_bag[color_diff][2].."!")
 			end
-			WriteLog("Ng­êi ch¬i:"..GetName().."NhËn ®­îc:"..mah_jong_prize_bag[color_diff][2])
+			WriteLog("Ng­êi ch¬i:"..GetName().."Received:"..mah_jong_prize_bag[color_diff][2])
 		else
-			WriteLog("Ho¹t ®éng M¹c Ch­îc, Ng­êi ch¬i:"..GetName().."NhËn ®­îc"..mah_jong_prize_bag[color_diff][2].."T¨ng thªm thÊt b¹i, ký hiÖu"..add_flag)
+			WriteLog("Ho¹t ®éng M¹c Ch­îc, Ng­êi ch¬i:"..GetName().."Received"..mah_jong_prize_bag[color_diff][2].."T¨ng thªm thÊt b¹i, ký hiÖu"..add_flag)
 		end	
 	end
 end

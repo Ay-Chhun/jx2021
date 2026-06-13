@@ -25,7 +25,7 @@ local nStep_XBTask_01 = GetTask(TASK_XB_ID_01);
 		if is_show_title_level() == 1 then --亮出一品堂刺客称号 
 			task_008_02_0();
 		else
-			xb_title_tip(2,"Th竎 B箃 Ho籲g ");
+			xb_title_tip(2,"Tuoba Hong");
 		end
 		return
 	end
@@ -42,7 +42,7 @@ local nStep_XBTask_01 = GetTask(TASK_XB_ID_01);
 		if is_show_title_level() == 1 then --亮出一品堂刺客称号 
 			task_009_01_0();
 		else
-			xb_title_tip(2,"Th竎 B箃 Ho籲g ");
+			xb_title_tip(2,"Tuoba Hong");
 		end
 		return
 	end
@@ -60,7 +60,7 @@ local nStep_XBTask_01 = GetTask(TASK_XB_ID_01);
 		if is_show_title_level() == 1 then --亮出一品堂刺客称号 
 			task_011_01_0();
 		else
-			xb_title_tip(2,"Th竎 B箃 Ho籲g ");
+			xb_title_tip(2,"Tuoba Hong");
 		end
 		return
 	end
@@ -78,7 +78,7 @@ local nStep_XBTask_01 = GetTask(TASK_XB_ID_01);
 		if is_show_title_level() == 1 then --亮出一品堂飞护称号 
 			task_013_01_0();
 		else
-			xb_title_tip(3,"Th竎 B箃 Ho籲g ");
+			xb_title_tip(3,"Tuoba Hong");
 		end
 		return
 	end
@@ -96,7 +96,7 @@ local nStep_XBTask_01 = GetTask(TASK_XB_ID_01);
 		if is_show_title_level() == 1 then --亮出一品堂飞护称号 
 			task_015_01_0();
 		else
-			xb_title_tip(3,"Th竎 B箃 Ho籲g ");
+			xb_title_tip(3,"Tuoba Hong");
 		end
 		return
 	end
@@ -114,7 +114,7 @@ local nStep_XBTask_01 = GetTask(TASK_XB_ID_01);
 		if is_show_title_level() == 1 then --亮出一品堂虎翼称号 
 			task_016_01_0();
 		else
-			xb_title_tip(4,"Th竎 B箃 Ho籲g ");
+			xb_title_tip(4,"Tuoba Hong");
 		end
 		return
 	end
@@ -131,7 +131,7 @@ local nStep_XBTask_01 = GetTask(TASK_XB_ID_01);
 		if is_show_title_level() == 1 then --亮出一品堂羽卫称号 
 			task_021_02_0();
 		else
-			xb_title_tip(5,"Th竎 B箃 Ho籲g ");
+			xb_title_tip(5,"Tuoba Hong");
 		end
 		return
 	end
@@ -147,7 +147,7 @@ local nStep_XBTask_01 = GetTask(TASK_XB_ID_01);
 		if is_show_title_level() == 1 then --亮出一品堂羽卫称号 
 			task_021_04_0();
 		else
-			xb_title_tip(5,"Th竎 B箃 Ho籲g ");
+			xb_title_tip(5,"Tuoba Hong");
 		end
 		return
 	end

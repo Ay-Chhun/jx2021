@@ -4,7 +4,7 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 	[93] = {
 		--¸±»î¶¯IDºÍË÷ÒýÒ»ÖÂ
 		nActivityID = 93,
-		nActivityName = "Quèc TÕ ThiÕu Nhi",
+		nActivityName = "International Children's Day",
 		--Ê¹ÓÃµÄÈÎÎñ±äÁ¿×é
 		tTaskGroup = {3, 9},
 		--ÒÔÏÂtable´óÐ¡Ðè¶ÔÓ¦--------------------
@@ -16,16 +16,16 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		},
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
-			{{2, 1, 30547, 66 ,"Quµ 1/6"}, {66}},
-			{{2, 1, 30548, 66 ,"KÑo B«ng"}, {66}},
-			{{2, 1, 30547, 160 ,"Quµ 1/6"}, {2, 1, 30548, 160 ,"KÑo B«ng"}, {160}},
+			{{2, 1, 30547, 66 ,"1/6 Gift"}, {66}},
+			{{2, 1, 30548, 66 ,"Cotton Candy"}, {66}},
+			{{2, 1, 30547, 160 ,"1/6 Gift"}, {2, 1, 30548, 160 ,"Cotton Candy"}, {160}},
 		},
 		--Ã¿Ò»Ïî×î´óÊ¹ÓÃ´ÎÊý/Ã¿Ìì
 		tMaxUseCount = {3, 3, 3},
 		--Ã¿Ò»ÏîµÄÈÕÖ¾
 		tMsg2Player = {
-			"TÆng Quµ 1/6 %d/%d",
-			"TÆng KÑo B«ng %d/%d",
+			"Give 1/6 Gift %d/%d",
+			"Give Cotton Candy %d/%d",
 			"TÆng phÇn th­ëng cao quý %d/%d",
 		},
 		-----------------------------------------
@@ -97,7 +97,7 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 	[95] = {
 		--¸±»î¶¯IDºÍË÷ÒýÒ»ÖÂ
 		nActivityID = 95,
-		nActivityName = "Quèc TÕ ThiÕu Nhi",
+		nActivityName = "International Children's Day",
 		--Ê¹ÓÃµÄÈÎÎñ±äÁ¿×é
 		tTaskGroup = {5, 6},
 		--ÒÔÏÂtable´óÐ¡Ðè¶ÔÓ¦--------------------
@@ -109,16 +109,16 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		},
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
-			{{2, 1, 30552, 6 ,"Sinh Tè ThËp CÈm"}, {6}},
-			{{2, 1, 30553, 6 ,"Tr¸i C©y DÇm"}, {6}},
-			{{2, 1, 30552, 16 ,"Sinh Tè ThËp CÈm"}, {2, 1, 30553, 16 ,"Tr¸i C©y DÇm"}, {16}},
+			{{2, 1, 30552, 6 ,"Mixed Smoothie"}, {6}},
+			{{2, 1, 30553, 6 ,"Fruit Soak"}, {6}},
+			{{2, 1, 30552, 16 ,"Mixed Smoothie"}, {2, 1, 30553, 16 ,"Fruit Soak"}, {16}},
 		},
 		--Ã¿Ò»Ïî×î´óÊ¹ÓÃ´ÎÊý/Ã¿Ìì
 		tMaxUseCount = {3, 3, 3},
 		--Ã¿Ò»ÏîµÄÈÕÖ¾
 		tMsg2Player = {
-			"§æi Sinh Tè ThËp CÈm %d%d",
-			"§æi Tr¸i C©y DÇm %d%d",
+			"Exchange Assorted Smoothie %d%d",
+			"Exchange Fruit Soak %d%d",
 			"§æi phÇn th­ëng cao quý %d%d",
 		},
 		-----------------------------------------
@@ -147,29 +147,29 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		tItemFinalAward = {
 			[1] = {
 							{1, 2000, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 0},
-							{1, 1212, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 1}, 0},
+							{1, 1212, "Xiu Zhen Yao Jue", {2, 0, 554, 1}, 0},
 							{1, 1212, "§¹i Nh©n s©m", {2, 0, 553, 1}, 0},
 							{1, 1212, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 0},
-							{1, 1212, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 0},
+							{1, 1212, "Tribulation Dispel Powder", {2, 0, 141, 1}, 0},
 							{3, 3060, 160000, 1},
 							{3, 92, 1600000, 1},
 						},
 			[2] = {
 							{1, 2000, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 0},
-							{1, 1212, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 1}, 0},
+							{1, 1212, "Xiu Zhen Yao Jue", {2, 0, 554, 1}, 0},
 							{1, 1212, "§¹i Nh©n s©m", {2, 0, 553, 1}, 0},
 							{1, 1212, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 0},
-							{1, 1212, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 0},
+							{1, 1212, "Tribulation Dispel Powder", {2, 0, 141, 1}, 0},
 							{3, 3060, 160000, 1},
 							{3, 92, 1600000, 1},
 						},
 			[3] = {
 							{31, 39995, format("ahf_GetNFruits(%d)", 3), 0},
 							{1, 20000, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 10}, 0},
-							{1, 10000, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 2}, 0},
+							{1, 10000, "Xiu Zhen Yao Jue", {2, 0, 554, 2}, 0},
 							{1, 10000, "§¹i Nh©n s©m", {2, 0, 553, 2}, 0},
 							{1, 10000, "ThÇn N«ng §¬n", {2, 1, 343, 2}, 0},
-							{1, 10000, "Tiªu KiÕp t¸n", {2, 0, 141, 2}, 0},
+							{1, 10000, "Tribulation Dispel Powder", {2, 0, 141, 2}, 0},
 							{3, 5, 6660000, 1},
 						},
 		},
@@ -203,15 +203,15 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
 			{{2, 1, 30565, 5 ,"Bé Dông Cô Häc TËp"}, {9}},
-			{{2, 1, 30566, 5 ,"CÆp S¸ch"}, {9}},
-			{{2, 1, 30565, 9 ,"Bé Dông Cô Häc TËp"}, {2, 1, 30566, 9 ,"CÆp S¸ch"}, {9}},
+			{{2, 1, 30566, 5 ,"Schoolbag"}, {9}},
+			{{2, 1, 30565, 9 ,"Bé Dông Cô Häc TËp"}, {2, 1, 30566, 9 ,"Schoolbag"}, {9}},
 		},
 		--Ã¿Ò»Ïî×î´óÊ¹ÓÃ´ÎÊý/Ã¿Ìì
 		tMaxUseCount = {6, 6, 6},
 		--Ã¿Ò»ÏîµÄÈÕÖ¾
 		tMsg2Player = {
 			"§æi Bé Dông Cô Häc TËp %d/%d",
-			"§æi CÆp S¸ch %d/%d",
+			"Exchange Schoolbag %d/%d",
 			"§æi phÇn th­ëng cao quý %d%d",
 		},
 		-----------------------------------------
@@ -240,10 +240,10 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		tItemFinalAward = {
 			[1] = {
 							{1, 10, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 0},
-							{1, 5, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 1}, 7 * 24 * 3600},
+							{1, 5, "Xiu Zhen Yao Jue", {2, 0, 554, 1}, 7 * 24 * 3600},
 							{1, 5, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 							{1, 5, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 7 * 24 * 3600},
-							{1, 5, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 7 * 24 * 3600},
+							{1, 5, "Tribulation Dispel Powder", {2, 0, 141, 1}, 7 * 24 * 3600},
 							{31, 25, "AwardGenuineQi(50)", 1},
 							{2, 32, 250000, 1},
 							{32, 1, 50, 1},
@@ -252,10 +252,10 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 						},
 			[2] = {
 							{1, 10, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 0},
-							{1, 5, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 1}, 7 * 24 * 3600},
+							{1, 5, "Xiu Zhen Yao Jue", {2, 0, 554, 1}, 7 * 24 * 3600},
 							{1, 5, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 							{1, 5, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 7 * 24 * 3600},
-							{1, 5, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 7 * 24 * 3600},
+							{1, 5, "Tribulation Dispel Powder", {2, 0, 141, 1}, 7 * 24 * 3600},
 							{31, 25, "AwardGenuineQi(50)", 1},
 							{2, 32, 250000, 1},
 							{32, 1, 50, 1},
@@ -264,10 +264,10 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 						},
 			[3] = {
 							{1, 20, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 2}, 0},
-							{1, 5, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 2}, 7 * 24 * 3600},
+							{1, 5, "Xiu Zhen Yao Jue", {2, 0, 554, 2}, 7 * 24 * 3600},
 							{1, 5, "§¹i Nh©n s©m", {2, 0, 553, 2}, 7 * 24 * 3600},
 							{1, 5, "ThÇn N«ng §¬n", {2, 1, 343, 2}, 7 * 24 * 3600},
-							{1, 5, "Tiªu KiÕp t¸n", {2, 0, 141, 2}, 7 * 24 * 3600},
+							{1, 5, "Tribulation Dispel Powder", {2, 0, 141, 2}, 7 * 24 * 3600},
 							{31, 20, "AwardGenuineQi(100)", 1},
 							{2, 27, 500000, 1},
 							{32, 1, 50, 1},
@@ -305,18 +305,18 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		},
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
-			{{2, 1, 30569, 9 ,"B¸nh Trung Cam"}, {9}},
-			{{2, 1, 30570, 9 ,"B¸nh Trung Thu ¤ Mai"}, {9}},
-			{{2, 1, 30571, 6 ,"B¸nh Trung Thu Socola"}, {9}},
-			{{2, 1, 30569, 9 ,"B¸nh Trung Cam"}, {2, 1, 30570, 9 ,"B¸nh Trung Thu ¤ Mai"}, {2, 1, 30571, 6 ,"B¸nh Trung Thu Socola"}, {29}},
+			{{2, 1, 30569, 9 ,"Orange Mooncake"}, {9}},
+			{{2, 1, 30570, 9 ,"Black Plum Mooncake"}, {9}},
+			{{2, 1, 30571, 6 ,"Chocolate Mooncake"}, {9}},
+			{{2, 1, 30569, 9 ,"Orange Mooncake"}, {2, 1, 30570, 9 ,"Black Plum Mooncake"}, {2, 1, 30571, 6 ,"Chocolate Mooncake"}, {29}},
 		},
 		--Ã¿Ò»Ïî×î´óÊ¹ÓÃ´ÎÊý/Ã¿Ìì
 		tMaxUseCount = {6, 6, 6, 6},
 		--Ã¿Ò»ÏîµÄÈÕÖ¾
 		tMsg2Player = {
-			"TÆng [B¸nh Trung Thu Cam] %d/%d",
-			"TÆng [B¸nh Trung Thu D©u] %d/%d",
-			"TÆng [B¸nh Trung Thu Socola] %d/%d",
+			"Offer [Orange Mooncake] %d/%d",
+			"Offer [Strawberry Mooncake] %d/%d",
+			"Offer [Chocolate Mooncake] %d/%d",
 			"TÆng phÇn th­ëng cao quý %d/%d",
 		},
 		-----------------------------------------
@@ -346,10 +346,10 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		tItemFinalAward = {
 			[1] = {
 							{1, 10, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 0},
-							{1, 5, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 1}, 7 * 24 * 3600},
+							{1, 5, "Xiu Zhen Yao Jue", {2, 0, 554, 1}, 7 * 24 * 3600},
 							{1, 5, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 							{1, 5, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 7 * 24 * 3600},
-							{1, 5, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 7 * 24 * 3600},
+							{1, 5, "Tribulation Dispel Powder", {2, 0, 141, 1}, 7 * 24 * 3600},
 							{31, 25, "AwardGenuineQi(50)", 1},
 							{2, 32, 250000, 1},
 							{32, 1, 50, 1},
@@ -358,10 +358,10 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 						},
 			[2] = {
 							{1, 10, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 0},
-							{1, 5, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 1}, 7 * 24 * 3600},
+							{1, 5, "Xiu Zhen Yao Jue", {2, 0, 554, 1}, 7 * 24 * 3600},
 							{1, 5, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 							{1, 5, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 7 * 24 * 3600},
-							{1, 5, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 7 * 24 * 3600},
+							{1, 5, "Tribulation Dispel Powder", {2, 0, 141, 1}, 7 * 24 * 3600},
 							{31, 25, "AwardGenuineQi(50)", 1},
 							{2, 32, 250000, 1},
 							{32, 1, 50, 1},
@@ -370,10 +370,10 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 						},
 			[3] = {
 							{1, 10, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 0},
-							{1, 5, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 1}, 7 * 24 * 3600},
+							{1, 5, "Xiu Zhen Yao Jue", {2, 0, 554, 1}, 7 * 24 * 3600},
 							{1, 5, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 							{1, 5, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 7 * 24 * 3600},
-							{1, 5, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 7 * 24 * 3600},
+							{1, 5, "Tribulation Dispel Powder", {2, 0, 141, 1}, 7 * 24 * 3600},
 							{31, 25, "AwardGenuineQi(50)", 1},
 							{2, 32, 250000, 1},
 							{32, 1, 50, 1},
@@ -382,10 +382,10 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 						},
 			[4] = {
 							{1, 20, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 3}, 0},
-							{1, 5, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 2}, 7 * 24 * 3600},
+							{1, 5, "Xiu Zhen Yao Jue", {2, 0, 554, 2}, 7 * 24 * 3600},
 							{1, 5, "§¹i Nh©n s©m", {2, 0, 553, 2}, 7 * 24 * 3600},
 							{1, 5, "ThÇn N«ng §¬n", {2, 1, 343, 2}, 7 * 24 * 3600},
-							{1, 5, "Tiªu KiÕp t¸n", {2, 0, 141, 2}, 7 * 24 * 3600},
+							{1, 5, "Tribulation Dispel Powder", {2, 0, 141, 2}, 7 * 24 * 3600},
 							{31, 20, "AwardGenuineQi(100)", 1},
 							{2, 27, 500000, 1},
 							{32, 1, 100, 1},
@@ -410,7 +410,7 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 	[102] = {
 		--¸±»î¶¯IDºÍË÷ÒýÒ»ÖÂ
 		nActivityID = 102,
-		nActivityName = "Evnet phô th¸ng 10",
+		nActivityName = "October Side Event",
 		--Ê¹ÓÃµÄÈÎÎñ±äÁ¿×é
 		tTaskGroup = {3, 10},
 		--ÒÔÏÂtable´óÐ¡Ðè¶ÔÓ¦--------------------
@@ -423,17 +423,17 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		},
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
-			{{2, 1, 30580, 9 ,"Tranh Gèi"}, {9}},
-			{{2, 1, 30581, 9 ,"Tranh §ång Hå"}, {9}},
+			{{2, 1, 30580, 9 ,"Pillow Painting"}, {9}},
+			{{2, 1, 30581, 9 ,"Clock Painting"}, {9}},
 			{{2, 1, 30582, 9 ,"Tranh Th­ Ph¸p"}, {9}},
-			{{2, 1, 30580, 19 ,"Tranh Gèi"}, {2, 1, 30581, 19 ,"Tranh §ång Hå"}, {2, 1, 30582, 19 ,"Tranh Th­ Ph¸p"}, {39}},
+			{{2, 1, 30580, 19 ,"Pillow Painting"}, {2, 1, 30581, 19 ,"Clock Painting"}, {2, 1, 30582, 19 ,"Tranh Th­ Ph¸p"}, {39}},
 		},
 		--Ã¿Ò»Ïî×î´óÊ¹ÓÃ´ÎÊý/Ã¿Ìì
 		tMaxUseCount = {6, 6, 6, 6},
 		--Ã¿Ò»ÏîµÄÈÕÖ¾
 		tMsg2Player = {
-			"TÆng [Tranh Gãi] %d/%d",
-			"TÆng [Tranh §ång Hå] %d/%d",
+			"Offer [Pillow Painting] %d/%d",
+			"Offer [Clock Painting] %d/%d",
 			"TÆng [Tranh Th­ Ph¸p] %d/%d",
 			"TÆng phÇn th­ëng cao quý %d/%d",
 		},
@@ -464,10 +464,10 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		tItemFinalAward = {
 			[1] = {
 							{1, 10, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 0},
-							{1, 5, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 1}, 7 * 24 * 3600},
+							{1, 5, "Xiu Zhen Yao Jue", {2, 0, 554, 1}, 7 * 24 * 3600},
 							{1, 5, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 							{1, 5, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 7 * 24 * 3600},
-							{1, 5, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 7 * 24 * 3600},
+							{1, 5, "Tribulation Dispel Powder", {2, 0, 141, 1}, 7 * 24 * 3600},
 							{31, 3, "ahf_GetPetBook(1)", ""},
 							{31, 3, "ahf_GetPetBook(2)", ""},
 							{31, 25, "AwardGenuineQi(50)", 1},
@@ -478,10 +478,10 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 						},
 			[2] = {
 							{1, 10, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 0},
-							{1, 5, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 1}, 7 * 24 * 3600},
+							{1, 5, "Xiu Zhen Yao Jue", {2, 0, 554, 1}, 7 * 24 * 3600},
 							{1, 5, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 							{1, 5, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 7 * 24 * 3600},
-							{1, 5, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 7 * 24 * 3600},
+							{1, 5, "Tribulation Dispel Powder", {2, 0, 141, 1}, 7 * 24 * 3600},
 							{31, 3, "ahf_GetPetBook(1)", ""},
 							{31, 3, "ahf_GetPetBook(2)", ""},
 							{31, 25, "AwardGenuineQi(50)", 1},
@@ -492,10 +492,10 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 						},
 			[3] = {
 							{1, 10, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 0},
-							{1, 5, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 1}, 7 * 24 * 3600},
+							{1, 5, "Xiu Zhen Yao Jue", {2, 0, 554, 1}, 7 * 24 * 3600},
 							{1, 5, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 							{1, 5, "ThÇn N«ng §¬n", {2, 1, 343, 1}, 7 * 24 * 3600},
-							{1, 5, "Tiªu KiÕp t¸n", {2, 0, 141, 1}, 7 * 24 * 3600},
+							{1, 5, "Tribulation Dispel Powder", {2, 0, 141, 1}, 7 * 24 * 3600},
 							{31, 3, "ahf_GetPetBook(1)", ""},
 							{31, 3, "ahf_GetPetBook(2)", ""},
 							{31, 25, "AwardGenuineQi(50)", 1},
@@ -506,10 +506,10 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 						},
 			[4] = {
 							{1, 20, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 3}, 0},
-							{1, 5, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 3}, 7 * 24 * 3600},
+							{1, 5, "Xiu Zhen Yao Jue", {2, 0, 554, 3}, 7 * 24 * 3600},
 							{1, 5, "§¹i Nh©n s©m", {2, 0, 553, 2}, 7 * 24 * 3600},
 							{1, 5, "ThÇn N«ng §¬n", {2, 1, 343, 2}, 7 * 24 * 3600},
-							{1, 5, "Tiªu KiÕp t¸n", {2, 0, 141, 2}, 7 * 24 * 3600},
+							{1, 5, "Tribulation Dispel Powder", {2, 0, 141, 2}, 7 * 24 * 3600},
 							{31, 3, "ahf_GetPetBook(3)", ""},
 							{31, 3, "ahf_GetPetBook(4)", ""},
 							{31, 20, "AwardGenuineQi(150)", 1},
@@ -543,7 +543,7 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 	[104] = {
 		--¸±»î¶¯IDºÍË÷ÒýÒ»ÖÂ
 		nActivityID = 104,
-		nActivityName = "Event phô th¸ng 11",
+		nActivityName = "November Side Event",
 		--Ê¹ÓÃµÄÈÎÎñ±äÁ¿×é
 		tTaskGroup = {5, 7},
 		--ÒÔÏÂtable´óÐ¡Ðè¶ÔÓ¦--------------------
@@ -555,17 +555,17 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		},
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
-			{{2, 1, 30606, 9, "Quµ 20/11"}, {9}},
-			{{2, 1, 30607, 9, "Hoa §iÓm 10"}, {9}},
-			{{2, 1, 30608, 9, "B»ng Khen"}, {9}},
+			{{2, 1, 30606, 9, "20/11 Gift"}, {9}},
+			{{2, 1, 30607, 9, "A-Grade Flower"}, {9}},
+			{{2, 1, 30608, 9, "Certificate of Merit"}, {9}},
 		},
 		--Ã¿Ò»Ïî×î´óÊ¹ÓÃ´ÎÊý/Ã¿Ìì
 		tMaxUseCount = {4, 4, 4},
 		--Ã¿Ò»ÏîµÄÈÕÖ¾
 		tMsg2Player = {
-			"TÆng ?Qïa 20/11? %d%d",
-			"TÆng ?Hoa §iÓm 10? %d%d",
-			"TÆng ?B»ng Khen? %d%d",
+			"Offer ?20/11 Gift? %d%d",
+			"Offer ?A-Grade Flower? %d%d",
+			"Offer ?Certificate of Merit? %d%d",
 		},
 		-----------------------------------------
 		--ÆÕÍ¨¾­Ñé½±Àø
@@ -594,7 +594,7 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 			[1] = {
 							{2, 20, 2500000, 1},
 							{1, 15, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 7 * 24 * 3600},
-							{1, 15, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 2}, 7 * 24 * 3600},
+							{1, 15, "Xiu Zhen Yao Jue", {2, 0, 554, 2}, 7 * 24 * 3600},
 							{1, 10, "TiÓu Nh©n s©m qu¶", {2, 0, 552, 1}, 7 * 24 * 3600},
 							{1, 10, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 							{1, 6, "Cæ Linh Ngäc", {2, 1, 30369, 2}, 0},
@@ -606,7 +606,7 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 			[2] = {
 							{2, 20, 2500000, 1},
 							{1, 15, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 7 * 24 * 3600},
-							{1, 15, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 2}, 7 * 24 * 3600},
+							{1, 15, "Xiu Zhen Yao Jue", {2, 0, 554, 2}, 7 * 24 * 3600},
 							{1, 10, "TiÓu Nh©n s©m qu¶", {2, 0, 552, 1}, 7 * 24 * 3600},
 							{1, 10, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 							{1, 6, "Cæ Linh Ngäc", {2, 1, 30369, 2}, 0},
@@ -618,7 +618,7 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 			[3] = {
 							{2, 20, 2500000, 1},
 							{1, 15, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 7 * 24 * 3600},
-							{1, 15, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 2}, 7 * 24 * 3600},
+							{1, 15, "Xiu Zhen Yao Jue", {2, 0, 554, 2}, 7 * 24 * 3600},
 							{1, 10, "TiÓu Nh©n s©m qu¶", {2, 0, 552, 1}, 7 * 24 * 3600},
 							{1, 10, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 							{1, 6, "Cæ Linh Ngäc", {2, 1, 30369, 2}, 0},
@@ -645,27 +645,27 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 	[106] = {
 		--¸±»î¶¯IDºÍË÷ÒýÒ»ÖÂ
 		nActivityID = 106,
-		nActivityName = "Event phô th¸ng12",
+		nActivityName = "December Side Event",
 		--Ê¹ÓÃµÄÈÎÎñ±äÁ¿×é
 		tTaskGroup = {7, 7},
 		--ÒÔÏÂtable´óÐ¡Ðè¶ÔÓ¦--------------------
 		--Êý×ÖÓëtCostÒ»Ò»¶ÔÓ¦
 		tSayDialog = {
-			"NhËn 1 bé ngo¹i trang Noel ( Tiªu hao 3 Hép Quµ Noel)",
-			"NhËn 1 TuÇn Léc ( Tiªu hao 3 Hép Quµ Noel)",
-			"NhËn 1 Xe TuÇn Léc (®á) ( Tiªu hao 4 Hép Quµ Noel)",
-			"NhËn 1 Xe TuÇn Léc (xanh) ( Tiªu hao 4 Hép Quµ Noel)",
-			"NhËn 1 Xe TuÇn Léc (vµng) (Tiªu hao 4 Hép Quµ Noel)",
+			"Receive 1 Christmas Outfit set (consumes 3 Christmas Gift Box)",
+			"Receive 1 Reindeer (consumes 3 Christmas Gift Box)",
+			"Receive 1 Reindeer Sleigh (red) (consumes 4 Christmas Gift Box)",
+			"Receive 1 Reindeer Sleigh (blue) (consumes 4 Christmas Gift Box)",
+			"Receive 1 Reindeer Sleigh (gold) (consumes 4 Christmas Gift Box)",
 			"NhËn 24122013 Kinh NghiÖm, 24 ®iÓm S­ M«n, 24 ®iÓm Danh Väng, 24 ®iÓm Ch©n KhÝ, 24 ®iÓm Qu©n C«ng, 24 D©u (Tiªu hao 24 Hép Quµ Noel + 24 Tiªu Dao Ngäc)",
 		},
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
-			{{2, 1, 30611, 3, "Hép quµ gi¸ng sinh"}, {0}},
-			{{2, 1, 30611, 3, "Hép quµ gi¸ng sinh"}, {0}},
-			{{2, 1, 30611, 4, "Hép quµ gi¸ng sinh"}, {0}},
-			{{2, 1, 30611, 4, "Hép quµ gi¸ng sinh"}, {0}},
-			{{2, 1, 30611, 4, "Hép quµ gi¸ng sinh"}, {0}},
-			{{2, 1, 30611, 24, "Hép quµ gi¸ng sinh"}, {2, 1, 30603, 24, "Tiªu Dao Ngäc"}, {0}},
+			{{2, 1, 30611, 3, "Christmas gift box"}, {0}},
+			{{2, 1, 30611, 3, "Christmas gift box"}, {0}},
+			{{2, 1, 30611, 4, "Christmas gift box"}, {0}},
+			{{2, 1, 30611, 4, "Christmas gift box"}, {0}},
+			{{2, 1, 30611, 4, "Christmas gift box"}, {0}},
+			{{2, 1, 30611, 24, "Christmas gift box"}, {2, 1, 30603, 24, "Tiªu Dao Ngäc"}, {0}},
 		},
 		--Ã¿Ò»Ïî×î´óÊ¹ÓÃ´ÎÊý/Ã¿Ìì
 		tMaxUseCount = {1, 1, 1, 1, 1, 1},
@@ -724,7 +724,7 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 	[108] = {
 		--¸±»î¶¯IDºÍË÷ÒýÒ»ÖÂ
 		nActivityID = 108,
-		nActivityName = "Event phô 1 th¸ng 1 n¨m 2014",
+		nActivityName = "Side Event January 2014",
 		--Ê¹ÓÃµÄÈÎÎñ±äÁ¿×é
 		tTaskGroup = {9, 7},
 		--ÒÔÏÂtable´óÐ¡Ðè¶ÔÓ¦--------------------
@@ -736,9 +736,9 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		},
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
-			{{2, 1, 30621, 3, "B¸nh Ch­ng"}, {2, 1, 30622, 3, "B¸nh TÐt"}},
-			{{2, 1, 30621, 3, "B¸nh Ch­ng"}, {2, 1, 30622, 3, "B¸nh TÐt"}, {2, 1, 30603, 3, "Tiªu Dao Ngäc"}},
-			{{2, 1, 30621, 19, "B¸nh Ch­ng"}, {2, 1, 30622, 19, "B¸nh TÐt"}, {2, 1, 30603, 19, "Tiªu Dao Ngäc"}},
+			{{2, 1, 30621, 3, "Banh Chung"}, {2, 1, 30622, 3, "Banh Tet"}},
+			{{2, 1, 30621, 3, "Banh Chung"}, {2, 1, 30622, 3, "Banh Tet"}, {2, 1, 30603, 3, "Tiªu Dao Ngäc"}},
+			{{2, 1, 30621, 19, "Banh Chung"}, {2, 1, 30622, 19, "Banh Tet"}, {2, 1, 30603, 19, "Tiªu Dao Ngäc"}},
 		},
 		--Ã¿Ò»Ïî×î´óÊ¹ÓÃ´ÎÊý/Ã¿Ìì
 		tMaxUseCount = {1, 1, 1},
@@ -800,7 +800,7 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		},
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
-			{{2, 1, 30628, 500, "Ca cao nguyªn chÊt"}, {2, 1, 30629, 500, "S÷a t­¬i vµ trøng"},{50}},
+			{{2, 1, 30628, 500, "Ca cao nguyªn chÊt"}, {2, 1, 30629, 500, "Fresh Milk and Eggs"},{50}},
 			{{2, 1, 30630, 25, "Chocolare Chips Muffin"}, {250}},
 			{{2, 1, 30631, 25, "Dark Chocolate"}, {2, 1, 30230, 66, "XU"}},
 		},
@@ -861,7 +861,7 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 	[116] = {
 		--¸±»î¶¯IDºÍË÷ÒýÒ»ÖÂ
 		nActivityID = 116,
-		nActivityName = "event phô th¸ng 3 n¨m 2014",
+		nActivityName = "Side Event March 2014",
 		--Ê¹ÓÃµÄÈÎÎñ±äÁ¿×é
 		tTaskGroup = {8, 8},
 		--ÒÔÏÂtable´óÐ¡Ðè¶ÔÓ¦--------------------
@@ -873,8 +873,8 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		},
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
-			{{2, 1, 30632, 350, "giÊy bãng kiÕng "}, {2, 1, 30633, 350, "b×a cøng"},{66}},
-			{{2, 1, 30634, 25, "quµ 8/3"}, {268}},
+			{{2, 1, 30632, 350, "Cellophane Sheet"}, {2, 1, 30633, 350, "Cardboard"},{66}},
+			{{2, 1, 30634, 25, "8/3 Gift"}, {268}},
 			{{2, 1, 30635, 25, "hoa 8/3"}, {2, 1, 30603, 68, "Tiªu Dao Ngäc"}},
 		},
 		--Ã¿Ò»Ïî×î´óÊ¹ÓÃ´ÎÊý/Ã¿Ìì
@@ -934,7 +934,7 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 	[120] = {
 		--¸±»î¶¯IDºÍË÷ÒýÒ»ÖÂ
 		nActivityID = 120,
-		nActivityName = "event phô th¸ng 4 n¨m 2014 ",
+		nActivityName = "Side Event April 2014",
 		--Ê¹ÓÃµÄÈÎÎñ±äÁ¿×é
 		tTaskGroup = {2, 15},
 		--ÒÔÏÂtable´óÐ¡Ðè¶ÔÓ¦--------------------
@@ -946,9 +946,9 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		},
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
-			{{2, 1, 30637, 500, "giÊy ngò s¾c "}, {2, 1, 30638, 500, "hå keo "},{50}},
-			{{2, 1, 30639, 25, " b¹ch kú "}, {250}},
-			{{2, 1, 30640, 25, " h¾c kú "}, {2, 1, 30603, 66, "Tiªu Dao Ngäc"}},
+			{{2, 1, 30637, 500, "giÊy ngò s¾c "}, {2, 1, 30638, 500, "Glue"},{50}},
+			{{2, 1, 30639, 25, " White Flag"}, {250}},
+			{{2, 1, 30640, 25, " Black Flag"}, {2, 1, 30603, 66, "Tiªu Dao Ngäc"}},
 		},
 		--Ã¿Ò»Ïî×î´óÊ¹ÓÃ´ÎÊý/Ã¿Ìì
 		tMaxUseCount = {6, 6, 6},
@@ -1019,9 +1019,9 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		},
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
-			{{2, 1, 30645, 499, "D©u t­¬i "}, {2, 1, 30646, 499, "B¹c hµ "},{49}},
-			{{2, 1, 30647, 25, "Sero d©u t­¬i "}, {249}},
-			{{2, 1, 30648, 25, "Sero b¹c hµ "}, {2, 1, 30603, 49, "Tiªu Dao Ngäc"}},
+			{{2, 1, 30645, 499, "Fresh Strawberry"}, {2, 1, 30646, 499, "Mint"},{49}},
+			{{2, 1, 30647, 25, "Strawberry Syrup"}, {249}},
+			{{2, 1, 30648, 25, "Mint Syrup"}, {2, 1, 30603, 49, "Tiªu Dao Ngäc"}},
 		},
 		--Ã¿Ò»Ïî×î´óÊ¹ÓÃ´ÎÊý/Ã¿Ìì
 		tMaxUseCount = {6, 6, 6},
@@ -1031,8 +1031,8 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		--Ã¿Ò»ÏîµÄÈÕÖ¾
 		tMsg2Player = {
 			"Giao tµi nguyªn %d/%d",
-			"Giao sero d©u t­¬i %d/%d",
-			"Giao  sero b¹c hµ %d/%d",
+			"Deliver Strawberry Syrup %d/%d",
+			"Deliver  Mint Syrup %d/%d",
 		},
 		-----------------------------------------
 		--ÆÕÍ¨¾­Ñé½±Àø
@@ -1092,9 +1092,9 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		},
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
-			{{2, 1, 30660, 499, "MËt Ong"}, {2, 1, 30661, 499, "Tr¸i c©y"},{49}},
-			{{2, 1, 30662, 25, "KÑo DÎo Tr¸i C©y"}, {249}},
-			{{2, 1, 30663, 25, "KÑo DÎo Chip Chip"}, {2, 1, 30603, 49, "Tiªu Dao Ngäc"}},
+			{{2, 1, 30660, 499, "MËt Ong"}, {2, 1, 30661, 499, "Fruit"},{49}},
+			{{2, 1, 30662, 25, "Fruit Gummy"}, {249}},
+			{{2, 1, 30663, 25, "Chip Chip Gummy"}, {2, 1, 30603, 49, "Tiªu Dao Ngäc"}},
 		},
 		--Ã¿Ò»Ïî×î´óÊ¹ÓÃ´ÎÊý/Ã¿Ìì
 		tMaxUseCount = {6, 6, 6},
@@ -1104,8 +1104,8 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		--Ã¿Ò»ÏîµÄÈÕÖ¾
 		tMsg2Player = {
 			"Nép nguyªn liÖu %d/%d",
-			"Nép KÑo DÎo Tr¸i C©y %d/%d",
-			"Nép KÑo DÎo Chip Chip %d/%d",
+			"Submit Fruit Gummy %d/%d",
+			"Submit Chip Chip Gummy %d/%d",
 		},
 		-----------------------------------------
 		--ÆÕÍ¨¾­Ñé½±Àø
@@ -1165,9 +1165,9 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		},
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
-			{{2, 1, 30695, 299, "Hép Quµ"}, {2, 1, 30696, 299, "GiÊy Gãi Quµ"},{69}},
-			{{2, 1, 30697, 6, "Quµ Mõng Phiªn B¶n Míi"}, {119}},
-			{{2, 1, 30698, 6, "Hoa Mõng Phiªn B¶n Míi"}, {2, 1, 30603, 19, "Tiªu Dao Ngäc"}},
+			{{2, 1, 30695, 299, "Gift Box"}, {2, 1, 30696, 299, "Gift Wrapping Paper"},{69}},
+			{{2, 1, 30697, 6, "New Version Celebration Gift"}, {119}},
+			{{2, 1, 30698, 6, "New Version Celebration Flower"}, {2, 1, 30603, 19, "Tiªu Dao Ngäc"}},
 		},
 		--Ã¿Ò»Ïî×î´óÊ¹ÓÃ´ÎÊý/Ã¿Ìì
 		tMaxUseCount = {6, 6, 6},
@@ -1177,8 +1177,8 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		--Ã¿Ò»ÏîµÄÈÕÖ¾
 		tMsg2Player = {
 			"Nép nguyªn liÖu %d/%d",
-			"Nép Quµ Mõng Phiªn B¶n Míi %d/%d",
-			"Nép Hoa Mõng Phiªn B¶n Míi %d/%d",
+			"Submit New Version Celebration Gift %d/%d",
+			"Submit New Version Celebration Flower %d/%d",
 		},
 		-----------------------------------------
 		--ÆÕÍ¨¾­Ñé½±Àø
@@ -1238,9 +1238,9 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		},
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
-			{{2, 1, 30705, 299, "Hoa sen"}, {2, 1, 30706, 299, "H¹t Sen"},{69}},
+			{{2, 1, 30705, 299, "Hoa sen"}, {2, 1, 30706, 299, "Lotus Seed"},{69}},
 			{{2, 1, 30707, 6, "B¸nh MËt"}, {119}},
-			{{2, 1, 30708, 6, "B¸nh L¸ Sen"}, {2, 1, 30603, 19, "Tiªu Dao Ngäc"}},
+			{{2, 1, 30708, 6, "Lotus Leaf Cake"}, {2, 1, 30603, 19, "Tiªu Dao Ngäc"}},
 		},
 		--Ã¿Ò»Ïî×î´óÊ¹ÓÃ´ÎÊý/Ã¿Ìì
 		tMaxUseCount = {6, 6, 6},
@@ -1251,7 +1251,7 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		tMsg2Player = {
 			"Nép nguyªn liÖu %d/%d",
 			"Giao nép B¸nh MËt %d/%d",
-			"Giao nép B¸nh L¸ Sen %d/%d",
+			"Deliver and submit Lotus Leaf Cake %d/%d",
 		},
 		-----------------------------------------
 		--ÆÕÍ¨¾­Ñé½±Àø
@@ -1311,9 +1311,9 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		},
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
-			{{2, 1, 30717, 299, "GiÊy KiÕng Mµu"}, {2, 1, 30718, 299, "Dông Cô Lµm §Ìn"},{69}},
-			{{2, 1, 30719, 6, "Lång §Ìn Trung Thu §á"}, {119}},
-			{{2, 1, 30720, 6, "Lång §Ìn Trung Thu TÝm"}, {2, 1, 30603, 19, "Tiªu Dao Ngäc"}},
+			{{2, 1, 30717, 299, "Colored Glass Paper"}, {2, 1, 30718, 299, "Lantern-Making Tools"},{69}},
+			{{2, 1, 30719, 6, "Red Mid-Autumn Lantern"}, {119}},
+			{{2, 1, 30720, 6, "Purple Mid-Autumn Lantern"}, {2, 1, 30603, 19, "Tiªu Dao Ngäc"}},
 		},
 		--Ã¿Ò»Ïî×î´óÊ¹ÓÃ´ÎÊý/Ã¿Ìì
 		tMaxUseCount = {6, 6, 6},
@@ -1323,8 +1323,8 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		--Ã¿Ò»ÏîµÄÈÕÖ¾
 		tMsg2Player = {
 			"Nép nguyªn liÖu %d/%d",
-			"Nép Lång §Ìn Trung Thu §á %d/%d",
-			"Nép Lång §Ìn Trung Thu TÝm %d/%d",
+			"Submit Red Mid-Autumn Lantern %d/%d",
+			"Submit Purple Mid-Autumn Lantern %d/%d",
 		},
 		-----------------------------------------
 		--ÆÕÍ¨¾­Ñé½±Àø
@@ -1384,7 +1384,7 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		},
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
-			{{2, 1, 30735, 299, "Dông Cô Gãi Hoa"}, {2, 1, 30736, 299, "Hoa hång"},{69}},
+			{{2, 1, 30735, 299, "Flower Wrapping Tools"}, {2, 1, 30736, 299, "Rose"},{69}},
 			{{2, 1, 30737, 6, "Hoa hång ®á"}, {119}},
 			{{2, 1, 30738, 6, "Hoa hång vµng"}, {2, 1, 30603, 19, "Tiªu Dao Ngäc"}},
 		},
@@ -1457,7 +1457,7 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		},
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
-			{{2, 1, 30741, 299, "NÑp Tranh"}, {2, 1, 30742, 299, "Nghiªn Mùc"},{69}},
+			{{2, 1, 30741, 299, "Painting Frame"}, {2, 1, 30742, 299, "Ink Stone"},{69}},
 			{{2, 1, 30743, 6, "Tranh Th­ Ph¸p"}, {119}},
 			{{2, 1, 30744, 6, "Tranh Th­ Ph¸p §Æc BiÖt"}, {2, 1, 30603, 19, "Tiªu Dao Ngäc"}},
 		},
@@ -1530,9 +1530,9 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		},
 		--ÏûºÄµÀ¾ßºÍ½ð±ÒÊýÁ¿J
 		tCostTable = {
-			{{2, 1, 30756, 299, "TuyÕt Tr¾ng"}, {2, 1, 30757, 299, "Hép Trang TrÝ"},{69}},
-			{{2, 1, 30758, 6, "Hoa TuyÕt Gi¸ng Sinh"}, {119}},
-			{{2, 1, 30759, 6, "Ng­êi TuyÕt"}, {2, 1, 30603, 19, "Tiªu Dao Ngäc"}},
+			{{2, 1, 30756, 299, "White Snow"}, {2, 1, 30757, 299, "Decoration Box"},{69}},
+			{{2, 1, 30758, 6, "Christmas Snowflake"}, {119}},
+			{{2, 1, 30759, 6, "Snowman"}, {2, 1, 30603, 19, "Tiªu Dao Ngäc"}},
 		},
 		--Ã¿Ò»Ïî×î´óÊ¹ÓÃ´ÎÊý/Ã¿Ìì
 		tMaxUseCount = {6, 6, 6},
@@ -1542,8 +1542,8 @@ VET_ACITIVUTY_ADDITIONAL_TABLE = {
 		--Ã¿Ò»ÏîµÄÈÕÖ¾
 		tMsg2Player = {
 			"Nép nguyªn liÖu %d/%d",
-			"Nép Hoa TuyÕt Gi¸ng Sinh %d/%d",
-			"Nép Ng­êi TuyÕt %d/%d",
+			"Place Christmas Snowflake %d/%d",
+			"Place Snowman %d/%d",
 		},
 		-----------------------------------------
 		--ÆÕÍ¨¾­Ñé½±Àø

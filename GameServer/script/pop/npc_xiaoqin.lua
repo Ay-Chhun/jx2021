@@ -5,7 +5,7 @@ Include("\\script\\task\\world\\task_head.lua");
 Include("\\script\\lib\\talktmp.lua");
 Include("\\script\\task\\global_task\\gtask_head.lua")
 
-g_NpcName = "<color=green>V« T×nh Tr¶o Tiªu Thanh<color>: ";
+g_NpcName = "<color=green>Va Tinh Trao Tieu Thanh<color>:";
 
 TMAIN = {};
 TMAIN_Action = {};
@@ -70,6 +70,6 @@ end
 
 function GiveKG()
 	gf_AddItemEx({2, 96, 28, 1}, "KhÈu cung cña Tiªu Tinh");  --»ñµÃ¿Ú¹©
-	Msg2Player("NhËn ®­îc khÈu cung");
-	Talk(1, "", "NhËn ®­îc khÈu cung");
+	Msg2Player("Received the confession");
+	Talk(1, "", "Received the confession");
 end

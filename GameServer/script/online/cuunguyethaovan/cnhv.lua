@@ -40,7 +40,7 @@ function RequestFactionBook2()
 		tGift3[i] = tBookList[nBook][1].."/#ProcessCNHVIndex(3,"..nBook..")"	
 	end
 	
-	tGift3[getn(tGift3) + 1]  = "Xem trang tr­íc/RequestFactionBook1"
+	tGift3[getn(tGift3) + 1]  = "View previous page/RequestFactionBook1"
 	tGift3[getn(tGift3) + 1]  = "HiÖn t¹i ta ch­a muèn nhËn/SayNoCNHV"
 	
 	Say("Ng­êi ch¬i tróng th­ëng <color=Gold>MËt TÞch S­ M«n<color> cã thÓ nhËn nhiÒu lÇn t­¬ng øng víi sè lÇn tróng th­ëng. Mçi lÇn nhËn tèi ®a <color=red>1 mËt tÞch<color>. B»ng h÷u nhËn mËt tÞch nµo?",getn(tGift3),tGift3)
@@ -71,7 +71,7 @@ function ProcessCNHVIndex(nIndex,nChoice)
 				end
 			else
 				if ((nFreeItemRoom <  nExtVal*tEventCNHVGift[nIndex][2])  and (nFreeItemRoom > 0)) then
-					Say("Chóc mõng b»ng h÷u ®· tróng th­ëng "..nExtVal.." "..tEventCNHVGift[nIndex][1]..". Hµnh trang cña b»ng h÷u chØ cã <color=Gold>"..nFreeItemRoom.." « trèng<color> nªn chØ nhËn ®­îc <color=Gold>"..nFreeItemRoom.."<color> "..tEventCNHVGift[nIndex][1]..". Sau khi nhËn th­ëng h·y s¾p xÕp l¹i hµnh trang råi ®Õn gÆp ta.",2,"§ång ý/#SayYesCNHV("..nIndex..","..GetFreeItemRoom()..")","§Ó ta s¾p xÕp l¹i hµnh trang/SayNoCNHV")
+					Say("Chóc mõng b»ng h÷u ®· tróng th­ëng "..nExtVal.." "..tEventCNHVGift[nIndex][1]..". Hµnh trang cña b»ng h÷u chØ cã <color=Gold>"..nFreeItemRoom.." « trèng<color> nªn chØ nhËn ®­îc <color=Gold>"..nFreeItemRoom.."<color> "..tEventCNHVGift[nIndex][1]..". Sau khi nhËn th­ëng h·y s¾p xÕp l¹i hµnh trang råi ®Õn gÆp ta.",2,"Agree/#SayYesCNHV("..nIndex..","..GetFreeItemRoom()..")","§Ó ta s¾p xÕp l¹i hµnh trang/SayNoCNHV")
 				else
 					Say("Søc lùc hoÆc hµnh trang cña b»ng h÷u kh«ng ®ñ.",0)
 					Msg2Player("Søc lùc hoÆc hµnh trang cña b¹n kh«ng ®ñ.")

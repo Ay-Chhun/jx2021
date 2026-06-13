@@ -39,17 +39,17 @@ function pig_baby_use(goods_id)					--Öí±¦±¦µÄÊ¹ÓÃ
 	if goods_id == Goods_Id_pig_ran_color_sex then
 		Say("Sö dông vËt phÈm nµy cã thÓ gäi ®­îc thó c­ng mµu s¾c tïy ý, ng­¬i ®ång ý chø?",
 		2,
-		"Ta ®ång ý/#pig_create(0,0,"..goods_id..")",		--ÐÔ±ð¡¢ÑÕÉ«¡¢ÎïÆ·Ë÷Òý
+		"I agree/#pig_create(0,0,"..goods_id..")",		--ÐÔ±ð¡¢ÑÕÉ«¡¢ÎïÆ·Ë÷Òý
 		"§Ó ta suy nghÜ l¹i/end_dialog")		
 	elseif goods_id == Goods_Id_pig_black_ran_sex then
 		Say("Sö dông vËt phÈm nµy cã thÓ gäi H¾c tr­, ng­¬i ®ång ý chø?",
 		2,
-		"Ta ®ång ý/#pig_create(1,0,"..goods_id..")",
+		"I agree/#pig_create(1,0,"..goods_id..")",
 		"§Ó ta suy nghÜ l¹i/end_dialog")
 	elseif goods_id == Goods_Id_pig_white_ran_sex then
 		Say("Sö dông vËt phÈm nµy cã thÓ gäi ®­îc B¹ch tr­, ng­¬i ®ång ý chø?",
 		2,
-		"Ta ®ång ý/#pig_create(2,0,"..goods_id..")",
+		"I agree/#pig_create(2,0,"..goods_id..")",
 		"§Ó ta suy nghÜ l¹i/end_dialog")
 	elseif goods_id == Goods_Id_pig_any_color_sex then
 		Say("Sö dông vËt phÈm nµy cã thÓ gäi ®­îc thó c­ng tïy ý, ng­¬i ®ång ý chø?",
@@ -73,12 +73,12 @@ function pig_book_use()
 		Say("Ng­¬i muèn thó c­ng cã nh÷ng ®éng t¸c g×?",
 		2,
 		"Ta muèn ®­a thó c­ng/pig_out",
-		"Rêi b¶o ®iÓn/end_dialog")
+		"Leave the treasure manual/end_dialog")
 	else
 		Say("Ng­¬i muèn thó c­ng cã nh÷ng ®éng t¸c g×?",
 		2,
 		"Ta muèn thu håi thó c­ng/pig_in",
-		"Rêi b¶o ®iÓn/end_dialog")
+		"Leave the treasure manual/end_dialog")
 	end
 end
 --*************************ÊÕ»ØÖí±¦±¦*********************************
@@ -161,7 +161,7 @@ function pig_name_chk(pig_name)
 		return 0
 	end
 	--**************************Ãû×Ö¹ýÂË****************************
-	local pigname_forbid_chr = {"CÇu","B¸","Qu©n","L«i","Qu©n","Kim S¬n","chÝn","TuyÖt","JS","§æng Ca Minh","Chung ThÞ"}
+	local pigname_forbid_chr = {"Bridge","Dad","Quan","L«i","Quan","Jinshan","nine","Jue","JS","§æng Ca Minh","Zhong Shi"}
 	for i = 1,getn(pigname_forbid_chr) do
 		local startS,endS = strfind(pig_name,pigname_forbid_chr[i])
 		if startS then

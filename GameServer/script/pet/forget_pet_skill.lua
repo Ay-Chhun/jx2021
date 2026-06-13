@@ -26,7 +26,7 @@ function _ChoosePet()
 			local szItem = format("%s(T­ chÊt cßn l¹i:%d/%d)/#_ChooseSkill(%d)", tbPetList[i].szName, tbPetList[i].nCurTianZi, tbPetList[i].nMaxTianZi, i)
 			tinsert(tbSay, szItem)
 		end
-		tinsert(tbSay, "Tho¸t/no")
+		tinsert(tbSay, "Exit/no")
 		Say(szTitle, getn(tbSay), tbSay)
 	else
 		t_player_pet_list[PlayerIndex] = nil
@@ -48,7 +48,7 @@ function _ChooseSkill(nPetListIndex)
 			tinsert(tbSay, szItem)
 		end
 		tinsert(tbSay, "trë l¹i/_ChoosePet")
-		tinsert(tbSay, "Tho¸t/no")
+		tinsert(tbSay, "Exit/no")
 		Say(szTitle, getn(tbSay), tbSay)
 	else
 		t_player_pet_list[PlayerIndex] = nil
@@ -70,7 +70,7 @@ function _ConfirmDelPetSkill(nPetListIndex, nSkillListIndex)
 		tinsert(tbSay, szItem)
 		szItem = format("trë l¹i/#_ChooseSkill(%d)", nPetListIndex)
 		tinsert(tbSay, szItem)
-		tinsert(tbSay, "Tho¸t/no")
+		tinsert(tbSay, "Exit/no")
 		Say(szTitle, getn(tbSay), tbSay)
 	else
 		t_player_pet_list[PlayerIndex] = nil

@@ -45,8 +45,8 @@ function _Open_ZhanKuang_Shop()
 
 	local strtab = {
 			"\n muèn më/#show_equip_shop(3034)",
-			"\n Ph¶n håi/exchange",
-			"\n rót lui/nothing",
+			"\n Feedback/exchange",
+			"\n withdraw/nothing",
 	};
 	Say(szTitle, getn(strtab), strtab)
 end
@@ -324,7 +324,7 @@ function entry(bTianJiaolingMode, bSure)
 	if 1 == bTianJiaolingMode then
 		if not bSure or bSure ~= 1 then
 			local tSay = {
-				"§ång ý/#entry(1,1)",
+				"Agree/#entry(1,1)",
 				"Ta chØ ghÐ qua th«i/nothing",
 				}
 			Say(format(NpcSayInfo[6][4][1],N_JOIN_TIANJIAOLING_NEED, T_TIANJIAOLING[4]),getn(tSay),tSay)

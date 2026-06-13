@@ -32,8 +32,8 @@ end
 function _On_Repair()
 	local szTitle = format("NhËn ®Òn bï cÇn ph¶i th¸o trang bŞ ra ®Æt vµo hµnh trang, ng­¬i ®· chuÈn bŞ xong ch­a?")
 	local tbSay = {}
-	tinsert(tbSay, format("%s/_confirm_repair","NhËn ®Òn bï"))
-	tinsert(tbSay, "Tõ bá/no")
+	tinsert(tbSay, format("%s/_confirm_repair","Receive compensation"))
+	tinsert(tbSay, "Goodbye/no")
 	Say(szTitle, getn(tbSay), tbSay)
 end
 

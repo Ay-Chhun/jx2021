@@ -19,14 +19,14 @@ tbKillNpcWeekly.tbAward =
 	tbCost = 
 	{
 		{2, 1, 30603, 299, "Tiªu Dao Ngäc"},
-		{2, 1, 30807, 1000, "èng Phãng"},
-		{2, 1, 30806, 1000, "Ngßi Ph¸o"},
+		{2, 1, 30807, 1000, "Launch Tube"},
+		{2, 1, 30806, 1000, "Fuse"},
 	},
 	tbPrize = 
 	{
 		{"Exp", 150000000},
-		{2, 1, 30785, 19, "V« Tù Kinh Th­"},
-		{2, 1, 30811, 99, "Ph¸o Hoa Vinh Dù"},
+		{2, 1, 30785, 19, "Wordless Scripture"},
+		{2, 1, 30811, 99, "Glory Fireworks"},
 	}
 }
 
@@ -36,7 +36,7 @@ tbKillNpcWeekly.nTargetKillNpcNum = 1
 
 tbKillNpcWeekly.tbLang = 
 {
-	szTaskName = "Thu thËp Ph¸o Hoa Vinh Dù (Ngµy vµng)",
+	szTaskName = "Collect Honor Fireworks (Golden Day)",
 	szOpenDateTimeError = "HiÖn t¹i kh«ng ph¶i thêi gian më tÝnh n¨ng, xin vui lßng ®îi.",
 	szOpenWeekTimeError = "TÝnh n¨ng nµy chØ më vµo %s, xin vui lßng ®îi.",
 	szAcceptTask = "\nNhËn nhiÖm vô %s/KillNpcWeekGetTask",

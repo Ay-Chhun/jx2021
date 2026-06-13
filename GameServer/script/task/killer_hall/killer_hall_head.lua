@@ -69,8 +69,8 @@ tMysticThing = 	--ÍÃÐ¡Ñ¾ÉñÃØÎïÆ·
 	{"Hoµng Kim b¶o r­¬ng",2,1,108},
 	{"X¸ Lîi TruyÒn C«ng",2,1,109},
 	{"M¶nh b¶n ®å SHXT",2,1,110},
-	{"Hoa hång",2,1,111},
-	{"Ch©n thá",2,1,112},
+	{"Rose",2,1,111},
+	{"Real Rabbit",2,1,112},
 	{"Nanh sãi",2,1,113},
 	{"T¬ kh¸ng Thñy",2,1,114},
 	{"Ph¸ Thiªn Cung",2,1,115},
@@ -91,14 +91,14 @@ tMysticThing = 	--ÍÃÐ¡Ñ¾ÉñÃØÎïÆ·
 	{"ChÊn Thiªn TuyÕt",2,1,130},
 	{"Tµng B¶o §å",2,1,131},
 	{"DiÒu",2,1,132},
-	{"Con rèi",2,1,133},
+	{"Puppet",2,1,133},
 	{"Tµo Ng©n",2,1,134},
 	{"Hoa Th¹ch C­¬ng",2,1,135},
 	{"DÇu ®en",2,1,136},
 	{"Tr­êng Thµnh KÝnh",2,1,137},
 	{"B¶n ch÷ TÊt Th¨ng",2,1,138},
 	{"Nh©n §Çu NiÖm Ch©u",2,1,139},
-	{"Khª S¬n chÝ",2,1,140},
+	{"Khe Son Mark",2,1,140},
 	{"Yªu V­¬ng chiÕn kú",2,1,141},
 	{"Hoµng TriÒu Ngäc Tû",2,1,142},
 	{"Thiªn C­¬ng Ngò L«i §¹i Ph¸p",2,1,143},
@@ -245,7 +245,7 @@ end;
 --¹¦        ÄÜ£ºÖ±½ÓÉè¶¨NPCË÷ÒýÎ»ÖÃµÄÖµ
 function KH_SetUnit_CurStates(Npc_index,att_seq,number)
 	if number > 99 and att_seq ~= 1 and att_seq ~= 4 and att_seq ~= 5 and att_seq ~= 6 then
-		print("ThiÕt lËp trÞ sè NPC nhÇm: VÞ trÝ:"..att_seq.."TrÞ:"..number)
+		print("ThiÕt lËp trÞ sè NPC nhÇm: VÞ trÝ:"..att_seq.."Value:"..number)
 		return 0
 	end
 	local num_save = GetUnitCurStates(Npc_index,att_seq)
@@ -430,9 +430,9 @@ function KH_Book_Frag()
 	nRetCode = AddItem(tItemInfo[2][2],tItemInfo[2][3],tItemInfo[2][4],1);
 	if nRetCode == 1 then
 		Msg2Player("B¹n ®­îc 1 "..tItemInfo[2][1]);
-		WriteLog("[S¸t Thñ §­êng]::"..GetName().."NhËn ®­îc "..tItemInfo[2][1]);
+		WriteLog("[S¸t Thñ §­êng]::"..GetName().."Received"..tItemInfo[2][1]);
 	else
-		WriteLog("[S¸t Thñ §­êng b¸o lçi]:"..GetName().."NhËn ®­îc"..tItemInfo[2][1].." thÊt b¹i, nRetCode:"..nRetCode);
+		WriteLog("[S¸t Thñ §­êng b¸o lçi]:"..GetName().."Received"..tItemInfo[2][1].." thÊt b¹i, nRetCode:"..nRetCode);
 	end;
 end;
 --Ôö¼ÓÒ»¸öÉñÃØÎïÆ·
@@ -460,7 +460,7 @@ function KH_Add_Weapon()
 		nRetCode = AddItem(tWeaponList[nRand][2],tWeaponList[nRand][3],tWeaponList[nRand][4],1)
 		if nRetCode == 1 then
 			Msg2Player("B¹n nhËn ®­îc 1 "..tWeaponList[nRand][1]);
-			WriteLog("[S¸t Thñ §­êng]::"..GetName().."NhËn ®­îc"..tWeaponList[nRand][1]);
+			WriteLog("[S¸t Thñ §­êng]::"..GetName().."Received"..tWeaponList[nRand][1]);
 		else
 			WriteLog("[S¸t Thñ §­êng b¸o lçi]:"..GetName().."NhËn vò khÝ thÊt b¹i, nRetCode:"..nRetCode);
 		end;
@@ -491,9 +491,9 @@ function KH_Drop_Weapon_Map(nNpcIdx)
 		nRetCode = AddItem(tItemInfo[3][2],tItemInfo[3][3],tItemInfo[3][4],10);
 		if nRetCode == 1 then
 			Msg2Player("B¹n nhËn ®­îc 10 tÊm "..tItemInfo[3][1]);
-			WriteLog("[S¸t Thñ §­êng]::"..GetName().."NhËn ®­îc "..tItemInfo[3][1]);
+			WriteLog("[S¸t Thñ §­êng]::"..GetName().."Received"..tItemInfo[3][1]);
 		else
-			WriteLog("[S¸t Thñ §­êng b¸o lçi]:"..GetName().."NhËn ®­îc"..tItemInfo[3][1].." thÊt b¹i, nRetCode:"..nRetCode);
+			WriteLog("[S¸t Thñ §­êng b¸o lçi]:"..GetName().."Received"..tItemInfo[3][1].." thÊt b¹i, nRetCode:"..nRetCode);
 		end;
 		SetTaskTemp(KH_TASK_TEMP_BOX_INDEX,0);
 		SetNpcLifeTime(nNpcIdx,0);
@@ -525,7 +525,7 @@ function KH_Drop_Weapon_Map(nNpcIdx)
 	elseif nState == 1 then
 		local n = DiceLootItem(dwID)
 		if n == 0 then
-			gf_Msg2Team(GetName().."NhËn ®­îc "..tItemInfo[3][1],1)
+			gf_Msg2Team(GetName().."Received"..tItemInfo[3][1],1)
 		elseif n == 1 then
 			Msg2Player("Hµnh trang kh«ng cßn trèng, kh«ng thÓ nhËn vËt phÈm")
 		end
@@ -538,21 +538,21 @@ function KH_Time_Over(dwID)
 	local t, nSize = GetItemDiceRollInfo(dwID)
 	local bAllGiveUp = 1
 	for index, value in t do
-		local str = value[1].."NÐm"..value[2].." ®iÓm"
+		local str = value[1].."Throw"..value[2].." ®iÓm"
 		if value[3] == 0 then
-			str = value[1].."Phãng"
+			str = value[1].."Cast"
 		elseif value[3] == 1 then
-			str = str.." (TuyÕt cÇu)"
+			str = str.." (Snowball)"
 			if value[4] == 1 then
 				str = str.." -- NhËn ®­îc "..tItemInfo[3][1]
-				WriteLog("[S¸t Thñ §­êng]::"..value[1].."NhËn ®­îc "..tItemInfo[3][1]);
+				WriteLog("[S¸t Thñ §­êng]::"..value[1].."Received"..tItemInfo[3][1]);
 			end
 			bAllGiveUp = 0
 		elseif value[3] == 2 then
 			str = str.." (Tham lam)"
 			if value[4] == 1 then
 				str = str.." -- NhËn ®­îc "..tItemInfo[3][1]
-				WriteLog("[S¸t Thñ §­êng]::"..value[1].."NhËn ®­îc "..tItemInfo[3][1]);
+				WriteLog("[S¸t Thñ §­êng]::"..value[1].."Received"..tItemInfo[3][1]);
 			end
 			bAllGiveUp = 0
 		end
@@ -636,8 +636,8 @@ end
 
 tFruitAward = {
 	{"Cam", 2, 1, 30166},
-	{"B­ëi", 2, 1, 30169},
-	{"D©u", 2, 1, 30170},
+	{"Pomelo", 2, 1, 30169},
+	{"Strawberry", 2, 1, 30170},
 }
 
 function VIET_1005_Award(nType)

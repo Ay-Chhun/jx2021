@@ -2,7 +2,7 @@
 Include("\\script\\task\\global_task\\task_id.lua")
 function main()
 	if GetTask(Task_id_003) ~= 1 then
-		Talk(1,"","<color=green>B¸ t¸nh Lý Hoa: <color>thêi tiÕt h«m nay thËt ®Ñp!");
+		Talk(1,"","<color=green>Commoner Ly Hoa: <color>the weather today is truly lovely!");
 	else
 		local tbString = {
 				"<color=green>"..GetName()..":<color>§¹i ca, gÇn ®©y b¸ t¸nh trong vïng nµy ®Òu kháe chø?",

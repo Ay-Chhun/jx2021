@@ -1,5 +1,5 @@
 function OnUse(nItem)
-	Say("[Viªn]:".."C¸c h¹ chän h×nh thøc nµo ®Ó viÕt l¹i?",3,"ViÕt l¹i tèn 40 vµng/cost_coin","Dïng bót l«ng viÕt l¹i/cost_item","Tho¸t/do_nothing");
+	Say("[Viªn]:".."C¸c h¹ chän h×nh thøc nµo ®Ó viÕt l¹i?",3,"ViÕt l¹i tèn 40 vµng/cost_coin","Dïng bót l«ng viÕt l¹i/cost_item","Exit/do_nothing");
 end
 
 function cost_coin()

@@ -2,7 +2,7 @@ Import("\\script\\isolate\\functions\\tong_title\\head.lua")
 
 function OnUse(nItem)
 	Say(format("X¸c ®Þnh sö dông %s kh«ng?", GetItemName(nItem)), 
-		2, format("§ång ý/#UseBglp(%d)", nItem), "T¹i h¹ chØ xem qua th«i/nohitng");	
+		2, format("Agree/#UseBglp(%d)", nItem), "T¹i h¹ chØ xem qua th«i/nohitng");	
 end
 
 function UseBglp(nItem)

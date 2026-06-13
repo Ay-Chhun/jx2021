@@ -14,7 +14,7 @@ TYPE_EQUIP 	= 2;	--´øÊôÐÔ×°±¸ÀàÎïÆ·
 TYPE_CMD 	= 3;	--ÃüÁî
 
 --=========================================================================================
-g_szLogTitle = "Event th¸ng 3"			--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
+g_szLogTitle = "March Event"			--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
 g_nVietUseBoxEnd = 2009041300					--Ê¹ÓÃ½ØÖ¹ÈÕÆÚ
 g_nNeedRoom = 1
 g_nNeedWeight = 20
@@ -28,30 +28,30 @@ g_tbItem =
 	--		ÀàÐÍ	   ¸ÅÂÊ		ÊýÁ¿ Ãû×Ö			ID1,ID2,ID3		ÆÚÏÞ(-1ÎªÃ»ÓÐÊ±¼äÏÞÖÆ)
 	[1] = {TYPE_ITEM,	30000,		1,	"M¶nh Thiªn th¹ch",		2,	2,		7,		-1,	},
 	[2] = {TYPE_ITEM,	20000,		1,	"Thiªn th¹ch",			2,	2,		8,		-1,	},
-	[3] = {TYPE_ITEM,	30000,		1,	"M¶nh B¨ng th¹ch",		2,	1,		148,	-1,	},
-	[4] = {TYPE_ITEM,	20000,		1,	"B¨ng th¹ch",			2,	1,		149,	-1,	},
+	[3] = {TYPE_ITEM,	30000,		1,	"Ice Stone Fragment",		2,	1,		148,	-1,	},
+	[4] = {TYPE_ITEM,	20000,		1,	"Ice Stone",			2,	1,		149,	-1,	},
 	[5] = {TYPE_ITEM,	50000,		1,	"Bång Lai Tiªn Thñy",		2,	1,		1012,	-1,	},
 	[6] = {TYPE_ITEM,	80000,		1,	"Bång Lai Lé Thñy",		2,	1,		1052,	-1,	},
 	[7] = {TYPE_ITEM,	20000,		1,	"ThÕ Th©n phï",		2,	0,		556,	7,	},
-	[8] = {TYPE_ITEM,	30000,		1,	"Tiªu KiÕp t¸n",		2,	0,		141,	7,	},
+	[8] = {TYPE_ITEM,	30000,		1,	"Tribulation Dispel Powder",		2,	0,		141,	7,	},
 	[9] = {TYPE_ITEM,	10,			1,	"B¸t B¶o TÈy Tñy Tiªn §¬n",	2,	0,		138,	7,	},
-	[10] = {TYPE_ITEM,	40,			1,	"TÈy Tñy linh ®¬n",		2,	0,		137,	7,	},
+	[10] = {TYPE_ITEM,	40,			1,	"Marrow-Cleansing Spirit Pill",		2,	0,		137,	7,	},
 	[11] = {TYPE_ITEM,	5000,		1,	"Thiªn Hµ MËt tÞch",		0,	107,	64,		-1,	},
 	[12] = {TYPE_ITEM,	3000,		1,	"Tö Hµ MËt tÞch",		0,	107,	65,		-1,	},
-	[13] = {TYPE_ITEM,	2000,		1,	"Chiªm Y Phæ",		0,	107,	66,		-1,	},
-	[14] = {TYPE_ITEM,	10,			1,	"Kim Cang Phôc Ma kinh",	0,	107,	1,		-1,	},
+	[13] = {TYPE_ITEM,	2000,		1,	"Zhanyi Manual",		0,	107,	66,		-1,	},
+	[14] = {TYPE_ITEM,	10,			1,	"Vajra Demon-Subduing Sutra",	0,	107,	1,		-1,	},
 	[15] = {TYPE_ITEM,	5,			1,	"TiÒm Long MËt tÞch",		0,	107,	3,		-1,	},
 	[16] = {TYPE_ITEM,	10,			1,	"V« TrÇn MËt tÞch",		0,	107,	5,		-1,	},
 	[17] = {TYPE_ITEM,	10,			1,	"Thiªn La MËt TÞch",		0,	107,	7,		-1,	},
 	[18] = {TYPE_ITEM,	5,			1,	"Nh­ ý MËt TÞch",		0,	107,	9,		-1,	},
-	[19] = {TYPE_ITEM,	10,			1,	"BÝch H¶i Phæ",		0,	107,	11,		-1,	},
+	[19] = {TYPE_ITEM,	10,			1,	"Azure Sea Score",		0,	107,	11,		-1,	},
 	[20] = {TYPE_ITEM,	10,			1,	"Hçn §én MËt tÞch",		0,	107,	13,		-1,	},
 	[21] = {TYPE_ITEM,	5,			1,	"Quý Thiªn MËt tÞch",		0,	107,	15,		-1,	},
 	[22] = {TYPE_ITEM,	10,			1,	"HuyÒn ¶nh MËt tÞch",		0,	107,	17,		-1,	},
 	[23] = {TYPE_ITEM,	5,			1,	"Qu©n Tö MËt tÞch",		0,	107,	19,		-1,	},
 	[24] = {TYPE_ITEM,	5,			1,	"TrÊn Qu©n MËt tÞch",		0,	107,	21,		-1,	},
 	[25] = {TYPE_ITEM,	10,			1,	"Xuyªn V©n MËt tÞch",		0,	107,	23,		-1,	},
-	[26] = {TYPE_ITEM,	20,			1,	"U Minh Quû Lôc",		0,	107,	25,		-1,	},
+	[26] = {TYPE_ITEM,	20,			1,	"Nether Ghost Record",		0,	107,	25,		-1,	},
 	[27] = {TYPE_ITEM,	10,			1,	"Linh Cæ MËt tÞch",		0,	107,	27,		-1,	},
 	[28] = {TYPE_ITEM,	20000,		1,	"Ch×a Khãa Vµng",		2,	1,		30069,	30,	},
 
@@ -61,7 +61,7 @@ g_tbItem =
 	[31] = {TYPE_CMD,	100000,	10,	{" ®iÓm danh väng"},		"ModifyReputation(%d,0)"},
 	[32] = {TYPE_CMD,	20000,	50,	{" ®iÓm danh väng"},		"ModifyReputation(%d,0)"},
 	[33] = {TYPE_CMD,	100000,	20,	" ®iÓm tu luyÖn",		"ModifyPopur(%d)"},
-	[34] = {TYPE_CMD,	50000,	100,"§iÓm Tµng kiÕm",	"SetTask(1801, GetTask(1801)+%d)"},
+	[34] = {TYPE_CMD,	50000,	100,"Sword Hoard Points",	"SetTask(1801, GetTask(1801)+%d)"},
 }
 
 
@@ -99,7 +99,7 @@ function use_it()
 		local szItemName = "®iÓm kinh nghiÖm"
 		local nItemNum = nExp
 		local szInfoDescribe = format("ModifyExp(%d)", nItemNum)
-		WriteLogEx(g_szLogTitle, "KÑo s÷a", nItemNum, szItemName, szInfoDescribe, GetTongName() )
+		WriteLogEx(g_szLogTitle, "Milk candy", nItemNum, szItemName, szInfoDescribe, GetTongName() )
 	end
 	--ÎïÆ·½±Àø²¿·Ö
 	local nRandIdx = get_random_item(g_tbItem)
@@ -135,7 +135,7 @@ function use_it()
 		if (nType == TYPE_ITEM or nType == TYPE_EQUIP) and g_tbItem[nRandIdx][8] > 0 then
 			SetItemExpireTime(nItemIdx, g_tbItem[nRandIdx][8]*24*3600)
 		end
-		WriteLogEx(g_szLogTitle, "KÑo s÷a", nItemNum, szItemName, szInfoDescribe, GetTongName() )
+		WriteLogEx(g_szLogTitle, "Milk candy", nItemNum, szItemName, szInfoDescribe, GetTongName() )
 	else
 		WriteLogEx(g_szLogTitle, "", nItemNum, szItemName, szInfoDescribe, GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
 	end

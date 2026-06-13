@@ -33,7 +33,7 @@ function OnDeath(Launcher)
 	local sDeathName = GetName();
 	local nDeathCamp = BT_GetCamp();
 	local nKillerCamp = 0;
-	local sKillerName = "KÎ thï";
+	local sKillerName = "Enemy";
 	if nKillerIndex > 0 then
 		PlayerIndex = nKillerIndex;
 		sKillerName = GetName();
@@ -108,7 +108,7 @@ function OnDeath(Launcher)
 				BT_EmperorAward(3);	--µ¥ÌôÊ¤ÕßÓĞ£³£¥µÄ»ú»á»ñµÃ»ÊµÛ¼Î½±
 				BT_AddPersonalPoint(2*nKillPoint);	--¸øÓèÉ±ÊÖÒ»¶¨µÄË«±¶¸öÈË»ı·Ö
 				--BT_AddMissionPoint(BT_GetCamp(),2*nKillPoint);		--¸øÓèÉ±ÊÖ·½Ò»¶¨µÄ¹«¹²»ı·Ö
-				Msg2MSAll(MISSION_ID,GetName().." c­ìi ngùa giÕt ®Şch "..sDeathName.." lËp ®­îc c«ng lín, th­ëng ®iÓm tİch lòy"..(2*nKillPoint).." ®iÓm");
+				Msg2MSAll(MISSION_ID,GetName().." rode out and slew the enemy"..sDeathName.." lËp ®­îc c«ng lín, th­ëng ®iÓm tİch lòy"..(2*nKillPoint).." ®iÓm");
 				Say("B¹n ®· giµnh th¾ng lîi trong ®ît ®¬n ®Êu nµy!",0);
 			else
 				BT_SetData(PT_SINGLE_LOSE,BT_GetData(PT_SINGLE_LOSE)+1);
@@ -395,8 +395,8 @@ function set_fight_camp(nCamp,nRoomIndex,nPosIndex)
 	CastState("imme_clear_skill_interval",7,0);	--Ïû³ıËùÓĞ¼¼ÄÜµÄÀäÈ´Ê±¼ä
 	local nOffset = (nRoomIndex-1)*2+nCamp-1;
 	SetMissionV(MV_FIGHTER_GROUP1_1+nOffset,PlayerIndex);
-	Say("§¬n ®Êu sau <color=yellow>30 gi©y<color> sÏ b¾t ®Çu!",0);
-	Msg2Player("§¬n ®Êu sau 30 gi©y sÏ b¾t ®Çu, ®«i bªn h·y chuÈn bŞ!");
+	Say("The duel will begin after <color=yellow>30 seconds<color>!",0);
+	Msg2Player("The duel will begin after 30 seconds, both sides please prepare!");
 	BT_SetTempData(PTT_LOCK,1);	--É±ÊÖËø¶¨
 	SetPos(tFightRoom[nRoomIndex][nPosIndex][1],tFightRoom[nRoomIndex][nPosIndex][2]);
 end;

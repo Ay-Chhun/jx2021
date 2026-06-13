@@ -51,7 +51,7 @@ function Process_Fight_Timer()
 		SetMissionV(MV_TIMER_LOOP,WAITOUT_TIMER_LOOP);
 		SetMissionV(MV_BATTLE_STATE,MS_STATE_COMPLETE);
 		BT_ClearRelayData();
-		Msg2MSAll(MISSION_ID,tBattleName[BATTLE_TYPE].."  k誸 th骳.");
+		Msg2MSAll(MISSION_ID,tBattleName[BATTLE_TYPE].." has ended.");
 		if nPubPointSong > nPubPointLiao then
 			SetMissionV(MV_WINNER,SONG_ID);
 		elseif nPubPointSong < nPubPointLiao then
@@ -63,7 +63,7 @@ function Process_Fight_Timer()
 	else
 		local nVillageResult = GetGlbValue(GLB_VILLAGE);
 		SetMissionV(MV_TIMER_LOOP,nLoop-1)
-		Msg2MSAll(MISSION_ID,"Ti課  th阨 gian: ["..(FIGHT_TIMER_LOOP-nLoop+1)..":"..(FIGHT_TIMER_LOOP+1).."]");
+		Msg2MSAll(MISSION_ID,"Time progress: ["..(FIGHT_TIMER_LOOP-nLoop+1)..":"..(FIGHT_TIMER_LOOP+1).."]");
 		if mod(nLoop,2) == 0 then
 			BT_OperateAllPlayer(BT_KickSleeper,{},ALL_ID);
 		end;
@@ -114,7 +114,7 @@ function tell_end(tArg)
 	elseif nWhoWin == LIAO_ID then
 		szResult = "Phe Li猽 th緉g l頸 ";
 	else
-		szResult = "hai phe h遖 nhau";
+		szResult = "both sides drew";
 	end;
 	SetFightState(0);
 	RemoveTrigger(GetTrigger(FIGHT_TRIGGER_ID));	--删除单挑时间触发器

@@ -6,11 +6,11 @@ Include("\\script\\online\\qingrenyuanxiao\\qryx_head.lua")
 
 function main()
 	if CanAcceptTask(TASK_LOVESTORY2,2) == 1 then
-		Talk(5,"","ThËt phiÒn qu¸!",
+		Talk(5,"","How annoying!",
 				"Høa c«ng tö, B¹ch Tè Trinh nhê ta hái c«ng tö h«m nay cã r¶nh ®Õn nhµ lÊy dï ®­îc kh«ng?",
 				"Ta v× viÖc nµy mµ buån phiÒn, muèn chuÈn bŞ 1 sè lÔ vËt nh­ng l¹i thiÕu <color=red>Hïng Hoµng töu<color>.",
-				"§©u khã, ®Ó ta ®Õn töu lÇu ch¾c ch¾n sÏ cã.",
-				"VËy phiÒn nhŞ vŞ qu¸.")
+				"That is not hard; let me go to the tavern and surely there will be some.",
+				"Then I must trouble you two.")
 		local OldPlayerIndex = PlayerIndex
 		for i=1,2 do
 			PlayerIndex = GetTeamMember(i)
@@ -37,7 +37,7 @@ function main()
 		Say("C¸c vŞ vÉn ch­a gÆp B¸ch c« n­¬ng sao?",0)
 	elseif CanAcceptTask(TASK_LOVESTORY2,6) == 1 then
 		Talk(6,"","C«ng tö ®· chuÈn bŞ mang sè lÔ phÈm ®Õn B¹ch c« n­¬ng ch­a?",
-				"õ, ta ®ang chuÈn bŞ mang ®i, sao thÕ?",
+				"Ah, I am preparing to bring them. What is it?",
 				"Ta ®­îc biÕt B¹ch Tè Trinh kh«ng biÕt uèng r­îu, c«ng tö mang Hïng Hoµng töu chØ thªm mÊt høng, hay lµ thay thø kh¸c ®i.",
 				"§a t¹ B»ng h÷u ®· nh¾c nhë, nÕu kh«ng th× háng viÖc, nh­ng kh«ng biÕt nªn mang g× theo?",
 				"ThÕ nµy ®i, <color=red>D­¬ng Trung ®éng tÇng 2<color> cã mét sè <color=red>b¸nh lÔ<color> mïi vŞ rÊt ngon, thİch hîp lµm quµ tÆng. Ta sÏ mang vÒ 12 c¸i cho c«ng tö.",
@@ -54,7 +54,7 @@ function main()
 		if GetItemCount(2,0,360) >= 12 then
 			DelItem(2,0,360,12)
 			Talk(4,"","§©y lµ b¸nh lÔ, c«ng tö h·y gãi l¹i mang tÆng B¹ch c« n­¬ng.",
-					"§a t¹ nhŞ vŞ.",
+					"Many thanks to you two.",
 					"Ta ph¶i trë vÒ th«ng b¸o cho B¹ch c« n­¬ng.",
 					"§­îc! §Ó ta chuÈn bŞ ngùa råi sÏ ®i liÒn.")
 			local OldPlayerIndex = PlayerIndex
@@ -73,7 +73,7 @@ function main()
 	elseif GetTask(TASK_LOVESTORY2) == 9 then
 		Say("Chóc ®«i t×nh nh©n sím thµnh phu thª.",0)
 	elseif GetTask(TASK_LOVESTORY2) == 0 or GetTask(TASK_LOVESTORY2) == 1 then
-		Say("Nªn tÆng thø g×?",0)
+		Say("What should I give as a gift?",0)
 	elseif GetTeamSize() == 2 then
 		Say("Tho¹t ®Çu lµ ®«i b¹n, sao b©y giê lµ ®«i t×nh nh©n vËy?",0)
 	else

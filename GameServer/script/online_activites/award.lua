@@ -229,6 +229,6 @@ function vaf_get_prize_item_30709(nRand, nNum)
 	end
 	if random(100) <= nRand then
 		tb:SetTask(10, tb:GetTask(10) + nNum);
-		gf_AddItemEx2({2,1,30709,nNum}, "ChÌ H¹t Sen", "Ho¹t ®éng th¸ng 8", "NhËn ®­îc ChÌ H¹t Sen", 0, 1)
+		gf_AddItemEx2({2,1,30709,nNum}, "Lotus Seed Tea", "Ho¹t ®éng th¸ng 8", "Received Lotus Seed Tea", 0, 1)
 	end
 end

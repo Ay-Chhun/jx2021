@@ -8,7 +8,7 @@ Include("\\script\\lib\\globalfunctions.lua")
 Include("\\script\\online\\viet_event\\new_year_09\\new_year_func.lua")
 
 
-g_szLogTitle = "N¨m míi mõng xu©n : ".."CÈm Nang §¹i Sù KiÖn"		--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
+g_szLogTitle = "N¨m míi mõng xu©n : ".."Grand Event Handbook"		--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
 
 g_szFileName = "\\script\\online\\viet_event\\new_year_09\\item\\event_notify_pouch.lua"
 
@@ -26,13 +26,13 @@ function OnUse()
 	end
 
 	local selTab = {
-			"Mai - §µo chóc tÕt./#new_year_09_info_viet(1)",
+			"Plum & Peach New Year Greetings./#new_year_09_info_viet(1)",
 			"Ng­u V­¬ng H¹ ThÕ./#new_year_09_info_viet(2)",
 			"Tiªn Tö Trë L¹i./#new_year_09_info_viet(3)",
-			"H¹t gièng h¹nh phóc./#new_year_09_info_viet(4)",
-			"Mua nh¸nh hoa ®µo (1 vµng 50 b¹c)/buy_peach",
-			"NhËn [Tói Léc Mõng Xu©n]/want_new_bag",
-			"KÕt thóc ®èi tho¹i/no"
+			"Seed of Happiness./#new_year_09_info_viet(4)",
+			"Buy a peach blossom branch (1 gold 50 silver)/buy_peach",
+			"Receive [Lucky Spring Pouch]/want_new_bag",
+			"End dialogue/no"
 			}
 	
 	Say("N¨m hÕt tÕt ®Õn bæn trang xin chóc tÊt c¶ vâ l©m nh©n sü n¨m míi vui vÎ, an khang thÞnh v­îng. \nThêi gian ho¹t ®éng tÕt diÔn ra tõ 16-01-2009 ®Õn 24:00 15-02-2009. Chi tiÕt ho¹t ®éng:\n",getn(selTab),selTab)
@@ -48,7 +48,7 @@ function buy_peach()
 		return
 	end
 	if pay_ex(15000) == 1 then
-		add_item_ex( {"Nh¸nh §µo",	2,	1,	30050,	1},"mua" )
+		add_item_ex( {"Peach Branch",	2,	1,	30050,	1},"mua" )
 	else
 		Talk(1,"","§¹i hiÖp kh«ng ®ñ ng©n l­îng trªn ng­êi råi!")
 		return
@@ -82,7 +82,7 @@ end
 function want_new_bag()
 	local selTab = {
 				"X¸c nhËn nhËn th­ëng/give_new_bag",
-				"KÕt thóc ®èi tho¹i/no",
+				"End dialogue/no",
 				}
 	Say("Bang héi thµnh c«ng v­ît ¶i Tö Quang C¸c míi cã thÓ nhËn Tói Léc Mõng Xu©n \n §¹i hiÖp cã ch¾c muèn nhËn?",getn(selTab),selTab)
 end
@@ -159,7 +159,7 @@ function give_new_bag_cb(szKey, nKey1, nKey2, nCount)
 		return
 	end
 
-	local nRetCode = add_item_ex( {"Tói Léc Mõng Xu©n",	2,	1,	30046,	nNewBagNum},"Tö Quang C¸c stage "..nStage)
+	local nRetCode = add_item_ex( {"Lucky Spring Pouch",	2,	1,	30046,	nNewBagNum},"Ziguang Pavilion stage"..nStage)
 	if nRetCode == 1 or nRetCode == 2 then
 		SetTask(STAGE_NUM_09_NEWYEAR_VIET, nStage)
 		SetTask(NEW_BAG_NUM_09_NEWYEAR_VIET, GetTask(NEW_BAG_NUM_09_NEWYEAR_VIET)+nNewBagNum )

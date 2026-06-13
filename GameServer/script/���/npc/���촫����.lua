@@ -27,7 +27,7 @@ function main()
 	if (in_wedding_field() == 1) then
 		Say(g_InfoHeader.."Chóc mõng. Cã muèn rêi khái s©n khÊu h«n lÔ kh«ng?", 2,
 			"§ång ý/ask_reason",
-			"Hñy bá/cancel")
+			"Cancel/cancel")
 		return
 	end
 	

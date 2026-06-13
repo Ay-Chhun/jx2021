@@ -17,15 +17,15 @@ function OnUse()
 	4,
 	"Xem tiÕn triÓn ho¹t ®éng/player_step_inq",
 	"Xem néi dung ho¹t ®éng./tomb_sweep_2007_inf",
-	"TiÕt Thanh Minh/tomb_sweep_story",
-	"§ãng h­íng dÉn/end_dialog"
+	"Qingming Festival/tomb_sweep_story",
+	"Close guide/end_dialog"
 	)
 end
 --************************»î¶¯½øÕ¹²éÑ¯***************************
 function player_step_inq()
-	local kotowl_today_chk = "Ch­a b¸i tÕ!"
+	local kotowl_today_chk = "Not yet worshipped!"
 	if GetTask(tomb_sweep_2008_date_seq) >= zgc_pub_day_turn(1) then
-		kotowl_today_chk = "§· b¸i tÕ"
+		kotowl_today_chk = "Already worshipped"
 	end
 	local totowl_times_count = GetTask(tomb_sweep_2008_times_count)
 	if totowl_times_count == nil then
@@ -62,7 +62,7 @@ function player_step_inq()
 				"<color=yellow>Néi dung: ë Sa m¹c mª cung <color> cã <color=yellow>TÇm b¶o nh©n<color> ®¶ th­¬ng kh«ng İt nh©n sü giang hå, sau khi ®¸nh b¹i <color=yellow>30<color> ng­êi, ®Õn <color=yellow>Thñ l¨ng mé<color> phôc mÖnh.\n    <color=yellow>PhÇn th­ëng: 100%<color> x¸c suÊt gÊp <color=yellow>1.5 lÇn<color> ®iÓm søc kháe ®æi ®iÓm kinh nghiÖm. NÕu ng­êi ch¬i cÊp 99 sÏ nhËn ®­îc  <color=yellow>2 quyÓn Thiªn Thêi Chó Gi¶i, 1 Linh th¹ch cÊp 1-7<color>."
 			}
 		end
-		Talk(1,"","NhiÖm vô hiÖn t¹i:\n    Tæng céng b¹n b¸i tÕ <color=yellow>"..totowl_times_count.." <color> lÇn, h«m nay "..kotowl_today_chk.."HiÖp Chñng. \nHiÖn b¹n nhËn mËt ®å nhiÖm vô thø <color=yellow>"..task_diff.."<color>, tin tøc: \n"..task_reel_table[task_diff].."\nSè lÇn hoµn thµnh nhiÖm vô cña b¹n hiÖn lµ: <color=yellow>"..GetTask(tomb_sweep_2008_task_reel_completed).."<color>!")
+		Talk(1,"","NhiÖm vô hiÖn t¹i:\n    Tæng céng b¹n b¸i tÕ <color=yellow>"..totowl_times_count.." <color> lÇn, h«m nay "..kotowl_today_chk.."HiÖp Chñng. \nHiÖn b¹n nhËn mËt ®å nhiÖm vô thø <color=yellow>"..task_diff.."<color>, news: \n"..task_reel_table[task_diff].."\nSè lÇn hoµn thµnh nhiÖm vô cña b¹n hiÖn lµ: <color=yellow>"..GetTask(tomb_sweep_2008_task_reel_completed).."<color>!")
 	else
 		Talk(1,"","NhiÖm vô hiÖn t¹i:\n    Tæng céng b¹n b¸i tÕ <color=yellow>"..totowl_times_count.." <color> lÇn, h«m nay "..kotowl_today_chk.."HiÖp Chñng. \nHiÖn b¹n ch­a nhËn mËt ®å nhiÖm vô TiÕt Thanh Minh!".."\nSè lÇn hoµn thµnh nhiÖm vô cña b¹n hiÖn lµ: <color=yellow>"..GetTask(tomb_sweep_2008_task_reel_completed).."<color>!")
 	end

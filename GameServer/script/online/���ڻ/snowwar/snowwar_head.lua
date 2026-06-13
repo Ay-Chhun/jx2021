@@ -35,7 +35,7 @@ PT_DEATH_COUNT = 2383;								--±ª…±¥Œ ˝0
 tMAP_CITY_FIELD =									--≥« –”Î—©’ÃµÿÕºµƒ∂‘”¶πÿœµ
 {	
 	{100,963,"Tuy“n Ch©u"},	--»™÷›
-	{200,962,"Bi÷n Kinh"},	--„Íæ©
+	{200,962,"Bianjing"},	--„Íæ©
 	{300,961,"Thµnh ß´"},	--≥…∂º
 }
 
@@ -64,13 +64,13 @@ LIMIT_POINT = 50;									--ª˝∑÷…œœﬁ
 --¥¥Ω®œ‡πÿµƒNPC
 function SW_CreateSnowWarNpc()
 	local nCityMapID,nFieldID,nIndex = SW_GetMapIDFromSubWorld(SubWorld);
-	local npcIndex = CreateNpc("Giang hÂ hµo ki÷t","Xa phu_n–m tuy’t",nFieldID,1665,3652)
+	local npcIndex = CreateNpc("Giang hÂ hµo ki÷t","Coachman_Snowball Fight",nFieldID,1665,3652)
 	SetNpcScript(npcIndex,"\\script\\online\\¥∫Ω⁄ªÓ∂Ø\\≥…∂º—©’Ã¥´ÀÕ»Àout.lua")
-	npcIndex = CreateNpc("Giang hÂ hµo ki÷t","Xa phu_n–m tuy’t",nFieldID,1665,3224)
+	npcIndex = CreateNpc("Giang hÂ hµo ki÷t","Coachman_Snowball Fight",nFieldID,1665,3224)
 	SetNpcScript(npcIndex,"\\script\\online\\¥∫Ω⁄ªÓ∂Ø\\≥…∂º—©’Ã¥´ÀÕ»Àout.lua")
-	npcIndex = CreateNpc("Giang hÂ hµo ki÷t","Xa phu_n–m tuy’t",nFieldID,1857,3226)
+	npcIndex = CreateNpc("Giang hÂ hµo ki÷t","Coachman_Snowball Fight",nFieldID,1857,3226)
 	SetNpcScript(npcIndex,"\\script\\online\\¥∫Ω⁄ªÓ∂Ø\\≥…∂º—©’Ã¥´ÀÕ»Àout.lua")
-	npcIndex = CreateNpc("Giang hÂ hµo ki÷t","Xa phu_n–m tuy’t",nFieldID,1856,3652)
+	npcIndex = CreateNpc("Giang hÂ hµo ki÷t","Coachman_Snowball Fight",nFieldID,1856,3652)
 	SetNpcScript(npcIndex,"\\script\\online\\¥∫Ω⁄ªÓ∂Ø\\≥…∂º—©’Ã¥´ÀÕ»Àout.lua")	
 end;
 --…Ë÷√ÕÊº“µƒ“ª–©◊¥Ã¨
@@ -167,7 +167,7 @@ function SW_EndSnowWar()
 	local nCityMapID,nFieldID,nIndex = SW_GetMapIDFromSubWorld(SubWorld);
 	StopMissionTimer(MISSION_ID,TIMER_ID);
 	ClearMapNpc(nFieldID);
-	Msg2SubWorld(tMAP_CITY_FIELD[nIndex][3].." n–m tuy’t Æ∑ k’t thÛc.");
+	Msg2SubWorld(tMAP_CITY_FIELD[nIndex][3].." the snowball fight has ended.");
 	SW_DelAllMSPlayer();
 	SetMissionV(MV_FIELD_STATE,MS_STATE_PEACE);
 	WriteLog("[n–m tuy’tn®m 2007]: Hoπt ÆÈng n–m tuy’t Æ∑ k’t thÛc, ID n–m tuy’t"..GetGlbValue(GLB_SNOWWAR_TIME));
@@ -175,7 +175,7 @@ end;
 --ÕÊº“¿Îø™—©’Ã
 function SW_LeaveSnowWar()
 	local nCityMapID,nFieldID,nIndex = SW_GetMapIDFromSubWorld(SubWorld);
-	Msg2MSAll(MISSION_ID,GetName().."RÍi kh·i khu n–m tuy’t")
+	Msg2MSAll(MISSION_ID,GetName().."Leave the snowball area")
 	SW_RestorePlayerState();
 	NewWorld(tEXIT_POS[nIndex][1],tEXIT_POS[nIndex][2],tEXIT_POS[nIndex][3])
 end;
@@ -188,11 +188,11 @@ function SW_JoinSnowWar()
 	SW_SetPlayerState();
 	if NewWorld(nFieldID,tBORN_POS[nRandPos][1],tBORN_POS[nRandPos][2]) == 1 then
 		RemvoeTempEffect()
-		Msg2MSAll(MISSION_ID,GetName().."Vµo khu n–m tuy’t")
+		Msg2MSAll(MISSION_ID,GetName().."Enter the snowball area")
 		InteractiveEnable(0);	--πÿ±’Ωªª•	±ÿ–Î‘⁄NewWorld÷Æ∫Û÷¥––≤≈”––ß
 		AddMSPlayer(MISSION_ID,0);
 	else
-		WriteLog("[n–m tuy’t]:"..GetName().."Vµo chi’n Æﬁa NewWorld th t bπi!!!");
+		WriteLog("[Snowball Fight]:"..GetName().."Vµo chi’n Æﬁa NewWorld th t bπi!!!");
 	end;
 end;
 --…æ≥˝À˘”–‘⁄—©’Ã≥°µÿ¿Ô√ÊµƒÕÊº“
@@ -224,7 +224,7 @@ function SW_ProcessFightTimer()
 		mf_OperateAllPlayer(MISSION_ID,fFunc,{},0);
 	else
 		SetMissionV(MV_TIMER_LOOP,nLoop-1);
-		Msg2MSAll(MISSION_ID,"Ti’n ÆÈ thÍi gian: ["..(TIMER_COUNT-nLoop+1)..":"..(TIMER_COUNT+1).."]");
+		Msg2MSAll(MISSION_ID,"Time progress: ["..(TIMER_COUNT-nLoop+1)..":"..(TIMER_COUNT+1).."]");
 	end;
 end;
 --º∆ ±∆˜¥¶¿Ì‘⁄—©’ÃΩ· ¯∫Ûƒ«∂Œ ±º‰µƒ“ª–© ¬«È
@@ -235,7 +235,7 @@ function SW_ProcessWaitOutTimer()
 	else
 		SetMissionV(MV_TIMER_LOOP,nLoop-1);
 		if mod(nLoop,2) == 0 then
-			Msg2MSAll(MISSION_ID,"T t c∂ m‰i ng≠Íi dÔng Æi”m t›ch lÚy cÒa m◊nh ÆÊi ph«n th≠Îng."..(nLoop/2).." phÛt.");
+			Msg2MSAll(MISSION_ID,"T t c∂ m‰i ng≠Íi dÔng Æi”m t›ch lÚy cÒa m◊nh ÆÊi ph«n th≠Îng."..(nLoop/2).." minutes.");
 		end;
 	end;
 end;

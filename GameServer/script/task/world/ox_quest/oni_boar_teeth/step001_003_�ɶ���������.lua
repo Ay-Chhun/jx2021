@@ -11,7 +11,7 @@
 Include("\\script\\task\\world\\ox_common\\common.lua");
 
 quest_giver = cf_ox_SetColor("Th«n d©n", "green")..":"
-quest_title = cf_ox_SetColor("DiÖt Heo rõng", "yellow").."\n"
+quest_title = cf_ox_SetColor("Slay the Boars", "yellow").."\n"
 quest_detail = cf_ox_SetColor("Gióp d©n lµng diÖt 20 Heo rõng", "gray").."\n\n"
 quest_description_1 = quest_giver.."Vïng nµy Heo rõng nhiÒu qu¸. \n§¹i hiÖp cã c¸ch nµo tiªu trõ chóng kh«ng?"
 quest_confirm = ""

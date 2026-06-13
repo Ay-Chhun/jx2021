@@ -25,8 +25,8 @@ SYS_TSK_PEIFANG_SEVEN = 2334;  --7¼¶Åä·½µÄÊýÁ¿
 function OnUse()
 	Say("Më r­¬ng b¹c ThÞnh ThÕ ph¶i cã ch×a khãa b¹c ThÞnh ThÕ, më kh«ng? ",
 		2,
-		"§ång ý/confirm_open",
-		"Kh«ng cã g×/nothing")
+		"Agree/confirm_open",
+		"Nothing/nothing")
 end
 
 function confirm_open()
@@ -60,12 +60,12 @@ function confirm_open()
 			if nRandTwo <= tBoxAward[3][3][6] then
 				AddItem(tBoxAward[3][3][2],tBoxAward[3][3][3],tBoxAward[3][3][4],tBoxAward[3][3][5],1);
 				Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tBoxAward[3][3][1]..tBoxAward[3][3][5].."!");
-				Msg2Global("Ng­êi ch¬i"..GetName().."Më r­¬ng b¹c ThÞnh ThÕ nhËn ®­îc "..tBoxAward[3][3][1]..tBoxAward[3][3][5].."!");
+				Msg2Global("Player"..GetName().."Më r­¬ng b¹c ThÞnh ThÕ nhËn ®­îc "..tBoxAward[3][3][1]..tBoxAward[3][3][5].."!");
 			end
 			if nRandThree <= tBoxAward[3][4][6] then
 				AddItem(tBoxAward[3][4][2],tBoxAward[3][4][3],tBoxAward[3][4][4],tBoxAward[3][4][5],1);
 				Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tBoxAward[3][4][1]..tBoxAward[3][4][5].."!");
-				Msg2Global("Ng­êi ch¬i"..GetName().."Më r­¬ng b¹c ThÞnh ThÕ nhËn ®­îc "..tBoxAward[3][4][1]..tBoxAward[3][4][5].."!");
+				Msg2Global("Player"..GetName().."Më r­¬ng b¹c ThÞnh ThÕ nhËn ®­îc "..tBoxAward[3][4][1]..tBoxAward[3][4][5].."!");
 			end
 			if nRandFour <= tBoxAward[3][5][2] then
 				local nRoute = GetPlayerRoute();
@@ -73,10 +73,10 @@ function confirm_open()
 				local nRetCode = AddItem(tbHuangDiRing1[nRoute][nRand][2],tbHuangDiRing1[nRoute][nRand][3],tbHuangDiRing1[nRoute][nRand][4],1,1,-1,-1,-1,-1,-1,-1);
 				if nRetCode == 1 then
 					Msg2Player("Chóc mõng b¹n nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing1[nRoute][nRand][1]);
-					Msg2Global("Ng­êi ch¬i"..GetName().."Më r­¬ng b¹c ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing1[nRoute][nRand][1].."!");
+					Msg2Global("Player"..GetName().."Më r­¬ng b¹c ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing1[nRoute][nRand][1].."!");
 					WriteLog("[07 Tam tiÕt liªn th«ng]:"..GetName().."Më r­¬ng b¹c ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing1[nRoute][nRand][1]);
 				else
-					WriteLog("[B¸o lçi Tam tiÕt liªn th«ng 07]:"..GetName().."Më r­¬ng b¹c ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing1[nRoute][nRand][1].."B¸o lçi khi AddItem, nRetCode:"..nRetCode);
+					WriteLog("[B¸o lçi Tam tiÕt liªn th«ng 07]:"..GetName().."Më r­¬ng b¹c ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing1[nRoute][nRand][1].."Error on AddItem, nRetCode:"..nRetCode);
 				end		
 			elseif nRandFour <= tBoxAward[3][5][4] then
 				local nRoute = GetPlayerRoute();
@@ -84,10 +84,10 @@ function confirm_open()
 				local nRetCode = AddItem(tbHuangDiRing2[nRoute][nRand][2],tbHuangDiRing2[nRoute][nRand][3],tbHuangDiRing2[nRoute][nRand][4],1,1,-1,-1,-1,-1,-1,-1);
 				if nRetCode == 1 then
 					Msg2Player("Chóc mõng b¹n nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing2[nRoute][nRand][1]);
-					Msg2Global("Ng­êi ch¬i"..GetName().."Më r­¬ng b¹c ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing2[nRoute][nRand][1].."!");
+					Msg2Global("Player"..GetName().."Më r­¬ng b¹c ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing2[nRoute][nRand][1].."!");
 					WriteLog("[07 Tam tiÕt liªn th«ng]:"..GetName().."Më r­¬ng b¹c ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing2[nRoute][nRand][1]);
 				else
-					WriteLog("[B¸o lçi Tam tiÕt liªn th«ng 07]:"..GetName().."Më r­¬ng b¹c ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing2[nRoute][nRand][1].."B¸o lçi khi AddItem, nRetCode:"..nRetCode);
+					WriteLog("[B¸o lçi Tam tiÕt liªn th«ng 07]:"..GetName().."Më r­¬ng b¹c ThÞnh ThÕ nhËn ®­îc trang bÞ Hoµng §Õ "..tbHuangDiRing2[nRoute][nRand][1].."Error on AddItem, nRetCode:"..nRetCode);
 				end							
 			end
 		end

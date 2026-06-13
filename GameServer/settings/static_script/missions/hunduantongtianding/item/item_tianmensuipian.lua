@@ -4,7 +4,7 @@ Include("\\script\\lib\\globalfunctions.lua")
 TMSP_NUM_NEED = 200;--ĞèÇóÌìÃÅËéÆ¬ÊıÁ¿
 
 function TMSP_OnUse(nItem)
-	Say("M¶nh Thiªn M«n ®­îc r¬i ra tõ Boss Th«ng Thiªn HuyÔn C¶nh, cã thÓ ghĞp thµnh Thiªn M«n Kim LÖnh.",2,format("%d M¶nh Thiªn M«n ghĞp thµnh 1 Thiªn M«n Kim LÖnh/combine_TMGL",TMSP_NUM_NEED),"Ra khái/nothing");
+	Say("M¶nh Thiªn M«n ®­îc r¬i ra tõ Boss Th«ng Thiªn HuyÔn C¶nh, cã thÓ ghĞp thµnh Thiªn M«n Kim LÖnh.",2,format("%d M¶nh Thiªn M«n ghĞp thµnh 1 Thiªn M«n Kim LÖnh/combine_TMGL",TMSP_NUM_NEED),"Leave/nothing");
 end
 
 function combine_TMGL()

@@ -4,7 +4,7 @@ Include("\\script\\lib\\globalfunctions.lua");
 
 --°ÑÒ»Ğ©Êı¾İÉÏµÄ¶«Î÷¶ªµ½ÕâÀïÀ´ ·½±ã²âÊÔ
 g_tGTaskId = {1321,1337};  --Éæ¼°µ½µÄÈÎÎñid ²é¿´gtask_main
-g_szNpcName = "Qu©n SÜ N÷ Ch©n-A BÊt H·n: ";
+g_szNpcName = "Jurchen Officer - A Bu Han:";
 
 function kill_him()
 	local nNpcIdx = GetTargetNpc();

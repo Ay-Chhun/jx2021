@@ -29,7 +29,7 @@ function OnUse(idx)
 	local val = tTab[nTabIndex][5]
 	local UseBaiju = {
 		"Sö dông 1 "..tTab[nTabIndex][4]..". Cã thÓ nhËn ®­îc 8 giê "..tTab[nTabIndex][4]..". ñy th¸c rêi m¹ng t¨ng kinh nghiÖm.",
-		" HiÖn b¹n cßn ".. GetTask(val) .." phót "..tTab[nTabIndex][4]..". B¹n muèn sö dông"..tTab[nTabIndex][4].."?",
+		" HiÖn b¹n cßn ".. GetTask(val) .." minutes"..tTab[nTabIndex][4]..". B¹n muèn sö dông"..tTab[nTabIndex][4].."?",
 		"Sö dông "..tTab[nTabIndex][4].."/UseBaiJuWan",
 		"§Ó ta nghÜ l¹i/no"
 	}
@@ -47,7 +47,7 @@ function use_bj_cb(nCount)
 	if DelItem(tTab[nTabIndex][1], tTab[nTabIndex][2], tTab[nTabIndex][3], nCount) == 1 then
 		local value = GetTask(tTab[nTabIndex][5]) + BAIJUWAN_TIME * nCount
 		SetTask(tTab[nTabIndex][5], value)
-		Say("Thêi gian sö dông"..tTab[nTabIndex][4].."cña b¹n cßn <color=yellow>" .. value .. "<color> phót !", 0)
+		Say("Thêi gian sö dông"..tTab[nTabIndex][4].."cña b¹n cßn <color=yellow>" .. value .. "<color> minutes!", 0)
 		--cdkey
 		if 1 == nTabIndex then
 			SendScript2VM("\\script\\function\\cdkey\\ck_head.lua", "_ck_UseItemBaiJu()");

@@ -11,7 +11,7 @@ function aoyun_guess_main()
 	nTemp = -1;
 	szTemp,nTemp = QX08_GetTodayGame();
 	if nTemp ~= GAME_ID_GUESS then
-			Talk(1,"",g_szInfoHead.."H«m nay <color=yellow>"..szTemp.."<color>ho¹t ®éng b¾t ®Çu, thËt thó vŞ.");
+			Talk(1,"",g_szInfoHead.."Today <color=yellow>"..szTemp.."<color>ho¹t ®éng b¾t ®Çu, thËt thó vŞ.");
 			return
 	end;
 	
@@ -76,7 +76,7 @@ function guess_start()
 		--ÉèÖÃËæ»úÊı
 		guess_tb_num[GetName()] = random(0,100);
 		local selTab = {
-			"B¾t ®Çu ®o¸n/guess_comfirm",
+			"Start guessing/guess_comfirm",
 			--"È¡Ïû/main"
 		}
 
@@ -118,7 +118,7 @@ function guess_num_confirm(nCount)
 		elseif nTempTurn <= 4 then
 			szTemp = "Kh¸ khen kh¸ khen, ®¹i hiÖp qu¶ lµ v¨n vâ song toµn!";
 		else
-			szTemp = "Chóc mõng b¹n, ®· ®o¸n ®óng!";
+			szTemp = "Congratulations, you guessed correctly!";
 		end
 		Say(g_szInfoHead..szTemp.."§¸p ¸n chİnh x¸c lµ "..guess_tb_num[GetName()].."!",1,"trë l¹i/aoyun_guess_main");
 		

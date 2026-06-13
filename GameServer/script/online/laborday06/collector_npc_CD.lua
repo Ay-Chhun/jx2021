@@ -11,7 +11,7 @@ function main()
 			"Xem néi dung ho¹t ®éng./#knowdetail(1)",
 			"tra xem vËt liÖu ®· nép./#queryinfor(1)",
 			"NhËn s¸ch c«ng lao Tô B¶o Trai./#getbook(1)",
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 			};
 	local nState = Get_Laborday_State();
 	if nState == 0 then
@@ -30,12 +30,12 @@ end;
 
 function handin()
 	local selTab = {
-			"§ång ı/confirm",
+			"Agree/confirm",
 			"thuyÕt minh phÇn th­ëng./#knowrule(1)",
 			"§Ó ta s¾p xÕp l¹i./nothing",
 			}
 	local selTab2 = {
-		"§ång ı/confirm",
+		"Agree/confirm",
 		"Ta vÉn ch­a hiÓu./knowmore",
 		"thuyÕt minh phÇn th­ëng./#knowrule(1)",
 		"Ta hiÓu råi!/donotnoteme",
@@ -83,7 +83,7 @@ function confirm()
 		return FALSE;
 	else
 		Talk(1,"","LÇn nµy tæng céng ®· nép <color=yellow>"..nHandInNum.."<color> lo¹i vËt thu thËp, h·y tra xem tin tøc hÖ thèng ®Ó biÕt thªm chi tiÕt.");
-		Write_Log("Nép vËt phÈm.","§· nép"..nHandInNum.."lo¹i vËt phÈm");
+		Write_Log("Nép vËt phÈm.","Submitted"..nHandInNum.."lo¹i vËt phÈm");
 		return TRUE;
 	end;		
 end;

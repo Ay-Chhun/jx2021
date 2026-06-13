@@ -6,8 +6,8 @@ function handle_on_npc_talk(nIndex)
 	local tSay = {
 		format("%s/#_npc_talk_1(%d)", "Gi¶i thÝch ho¹t ®éng", nIndex),
 		--format("%s/#_npc_talk_2(%d)", "ÁìÈ¡Ã¿ÈÕÀÛ»ý×°ÊÎ½±Àø", nIndex),
-		format("%s/#_npc_talk_3(%d)", "Cöa Hµng Song §¸n", nIndex),
-		format("%s/nothing", "Rêi khái"),
+		format("%s/#_npc_talk_3(%d)", "Double Holiday Shop", nIndex),
+		format("%s/nothing", "Leave"),
 	}
 	Say(szTitle, getn(tSay), tSay)
 end
@@ -18,7 +18,7 @@ function _npc_talk_1(nIndex)
 	szTitle = format("%s\n%s",szTitle, "C¨n cø theo ®¼ng cÊp cña b¹n mµ nhËn ®­îc phÇn th­ëng EXP kh¸c nhau, cÊp cµng cao th× EXP nhËn ®­îc cµng nhiÒu.")
 	--szTitle = format("%s\n%s",szTitle, "Ã¿ÈÕ£¬Äã»¹ÓÐ»ú»á³ÉÎªÊ¥µ®Ö®ÐÇ£¬ÔÚÁìÈ¡×îÖÕ½±ÀøÊ±£¬»ñµÃ2±¶µÄ¾­Ñé½±ÀøÅ¶¡£")
 	local tSay = {
-		format("%s/nothing", "Rêi khái"),
+		format("%s/nothing", "Leave"),
 	}
 	Say(szTitle, getn(tSay), tSay)
 end
@@ -34,7 +34,7 @@ end
 --	Say(szTitle, getn(tSay), tSay)
 --end
 function _npc_talk_3(nIndex)
-	SendScript2Client(format("Open([[EquipShop]], %d, [[%s]])", 3070, "Cöa Hµng Song §¸n"))
+	SendScript2Client(format("Open([[EquipShop]], %d, [[%s]])", 3070, "Double Holiday Shop"))
 end
 
 function handle_on_tree1_talk(nIndex)
@@ -48,8 +48,8 @@ function _tree_talk(nIndex, nType)
 	szTitle = format("%s\n%s", szTitle, format("§¹i hiÖp b©y giê ®ang cã %d ®iÓm trang trÝ", get_task("id_score")))
 	local tSay = {
 		format("%s/#_tree_talk_1(%d,%d)", "Trang trÝ c©y th«ng", nIndex,nType),
-		format("%s/#_tree_talk_2(%d,%d)", "NhËn quµ gi¸ng sinh", nIndex,nType),
-		format("%s/nothing", "Rêi khái"),
+		format("%s/#_tree_talk_2(%d,%d)", "Receive the Christmas gift", nIndex,nType),
+		format("%s/nothing", "Leave"),
 	}
 	Say(szTitle, getn(tSay), tSay)
 end
@@ -70,7 +70,7 @@ function _tree_talk_1(nIndex, nType,nOption)
     			, GetTargetNpcName(), tCfg[2][4], tCfg[1], tCfg[4], tCfg[3], nStep, getn(tTaskAward[nType])-1)
         	local tSay = {
         		format("%s/#_tree_talk_1(%d,%d,1)", "§ång ý trang trÝ", nIndex,nType),
-        		format("%s/nothing", "Rêi khái"),
+        		format("%s/nothing", "Leave"),
         	}
         	Say(szTitle, getn(tSay), tSay)
         	return
@@ -99,8 +99,8 @@ function _tree_talk_2(nIndex, nType, bConfirm)
 		local szTitle = format("<color=green>%s:<color> L­ît hiÖn t¹i <color=yellow>%d/%d, cÇn chó ý lµ sai khi nhËn th­ëng sÏ kÕt thóc l­ît hiÖn t¹i, ®ång ý?<color>"
 			, GetTargetNpcName(), nStep, getn(tTaskAward[nType])-1)
     	local tSay = {
-    		format("%s/#_tree_talk_2(%d,%d,1)", "NhËn ", nIndex,nType),
-    		format("%s/nothing", "Rêi khái"),
+    		format("%s/#_tree_talk_2(%d,%d,1)", "Receive", nIndex,nType),
+    		format("%s/nothing", "Leave"),
     	}
     	Say(szTitle, getn(tSay), tSay)
     	return
@@ -124,7 +124,7 @@ function handle_on_use_item(nIndex,confirm)
 	local t = tItem[nId]
 	if t then
 		if t[1] > 0 and get_task("id_open_box1") >= t[1] then
-			Talk(1,"",format("H«m nay sè l­îng më %s ®· ®¹t giíi h¹n", GetItemName(nIndex)))
+			Talk(1,"",format("The number of times to open %s has reached the limit today", GetItemName(nIndex)))
 			return
 		end
 		if CustomAwardCheckCondition(t[3]) ~= 1 then
@@ -135,7 +135,7 @@ function handle_on_use_item(nIndex,confirm)
     			local szTitle = format("Më %s cÇn tiªu hao %d %s, ®ång ý kh«ng?", GetItemName(nIndex), t[2], "Xu")
     			local tSay = {
     				format("%s/#handle_on_use_item(%d,1)", "X¸c ®Þnh më", nIndex),
-    				format("%s/nothing", "Tõ bá"),
+    				format("%s/nothing", "Give up"),
     			}
     			Say(szTitle, getn(tSay), tSay)
     			return

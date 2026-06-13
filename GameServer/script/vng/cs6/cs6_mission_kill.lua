@@ -49,7 +49,7 @@ function CS6_MobKilled_Add(szMobName, nMisstionTask, nPosition)
 	if GetTask(TSK_CS6_TULINH) == 4 and nMobCount < 9999 then
 		nTaskValue = nTaskValue + nAddValue
 		SetTask(nMisstionTask, nTaskValue)
-		Msg2Player("NhiÖm vô Tø Linh Phôc Sinh: §· giÕt ®­îc ".. nMobCount  .."/9999 "..szMobName)
+		Msg2Player("Four Spirits Revival quest: Have killed".. nMobCount  .."/9999 "..szMobName)
 	end
 end
 

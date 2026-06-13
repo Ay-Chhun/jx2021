@@ -41,7 +41,7 @@ function OnPutinComplete(param)
 		return 0
 	end
 	-------------------- Check material ----------------------------
-	local tbMaterial = {item={{gdp={2,95,204,19}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,39}, name="Thiªn M«n Kim LÖnh"},  {gdp={2,1,30230,777}, name="Xu VËt PhÈm"}}}
+	local tbMaterial = {item={{gdp={2,95,204,19}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,39}, name="Thiªn M«n Kim LÖnh"},  {gdp={2,1,30230,777}, name="Item Token"}}}
 	local nCheck = LIB_Award:CheckMaterial(tbMaterial)
 	if nCheck == 0 then
 		return 0

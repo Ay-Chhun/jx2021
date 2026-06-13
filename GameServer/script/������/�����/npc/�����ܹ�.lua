@@ -43,7 +43,7 @@ function main()
 		SayTable[nCount] = "NhËn danh hiÖu Tiªu Dao V¨n Khóc Tinh/RequestXiaoYaoTitle"
 	end
 
-	SayTable[nCount + 1] = "KÕt thóc ®èi tho¹i/no";
+	SayTable[nCount + 1] = "End dialogue/no";
 	
 	Say("N¨m míi ®Õn ch­ëng m«n Kim S¬n quyÕt ®Þnh ban ph¸t mét sè quµ ®Ó mäi ng­êi ¨n TÕt vui vÎ!",
 		nCount + 1,
@@ -68,7 +68,7 @@ function qingzhu()
 	};
 	local szSay2 = {
 		"§Ó t¨ng kh«ng khÝ n¸o nhiÖt, Minh Chñ Kim S¬n nhê ta ph¸t ph¸o hoa cho mäi ng­êi, chØ cÇn cÊp 10 trë lªn lµ cã thÓ nhËn ®­îc 3 ph¸o hoa.",
-		"KÕt thóc ®èi tho¹i/no"
+		"End dialogue/no"
 	};
 	if GetLevel() >= 10 then
 		SelectSay(szSay1);
@@ -364,9 +364,9 @@ function GetRedeemItemThree(nIndex)
 	ITEM_TABLE = {
 		"Cuèc Céng C«ng",
 		"L«i ThÇn ®ao",
-		"Cuèc Viªm §Õ",
+		"Hoe of Emperor Yan",
 		"Bµn Cæ phñ",
-		"Chøc N÷ thoa",
+		"Weaving Maiden's hairpin",
 	    "Cuèc ThÇn N«ng"
 	};
 	if GetTask(TASK_BUCHANG) == 0 then	--»¹Ã»ÓÐÁìÈ¡¹ý

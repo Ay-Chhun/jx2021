@@ -79,7 +79,7 @@ g_tbFactionRoute_WeaponTypes = {
 
 g_tbFactionRoute_Names = {
     [ROUTE_VOMONPHAI] = "V« m«n ph¸i",
-    [ROUTE_THIEULAM] = "ThiÕu L©m",
+    [ROUTE_THIEULAM] = "Shaolin",
     [ROUTE_THIEULAM_DAO] = "ThiÕu L©m §ao",
     [ROUTE_THIEULAM_TRUONG] = "ThiÕu L©m Tr­îng",
     [ROUTE_THIEULAM_QUYEN] = "ThiÕu L©m QuyÒn",
@@ -88,22 +88,22 @@ g_tbFactionRoute_Names = {
     [ROUTE_NGAMI] = "Nga My",
     [ROUTE_NGAMI_KIEM] = "Nga My KiÕm",
     [ROUTE_NGAMI_DAN] = "Nga My §µn",
-    [ROUTE_CAIBANG] = "C¸i Bang",
+    [ROUTE_CAIBANG] = "Beggars' Sect",
     [ROUTE_CAIBANG_QUYEN] = "C¸i Bang QuyÒn",
     [ROUTE_CAIBANG_BONG] = "C¸i Bang Bæng",
-    [ROUTE_VODANG] = "Vâ §ang",
+    [ROUTE_VODANG] = "Wudang",
     [ROUTE_VODANG_KIEM] = "Vâ §ang KiÕm",
     [ROUTE_VODANG_BUT] = "Vâ §ang Bót",
     [ROUTE_DUONGGIA] = "D­¬ng M«n",
     [ROUTE_DUONGGIA_THUONG] = "D­¬ng Gia Th­¬ng",
     [ROUTE_DUONGGIA_CUNG] = "D­¬ng Gia Cung",
-    [ROUTE_NGUDOC] = "Ngò §éc",
-    [ROUTE_NGUDOC_HIEP] = "HiÖp §éc",
-    [ROUTE_NGUDOC_TA] = "Tµ §éc",
+    [ROUTE_NGUDOC] = "Five Poisons",
+    [ROUTE_NGUDOC_HIEP] = "Chivalrous Venom",
+    [ROUTE_NGUDOC_TA] = "Wicked Venom",
     [ROUTE_CONLON] = "C«n L«n",
     [ROUTE_CONLON_THIENSU] = "C«n L«n Thiªn S­",
     [ROUTE_MINHGIAO] = "Minh Gi¸o",
-    [ROUTE_MINHGIAO_THANHCHIEN] = "Minh Gi¸o Th¸nh ChiÕn",
+    [ROUTE_MINHGIAO_THANHCHIEN] = "Ming Cult Holy Warrior",
     [ROUTE_MINHGIAO_TRANBINH] = "Minh Gi¸o TrËn Binh",
     [ROUTE_MINHGIAO_HUYETNHAN] = "Minh Gi¸o HuyÕt Nh©n",
     [ROUTE_THUYYEN] = "Thóy Yªn",
@@ -217,12 +217,12 @@ g_tbFactionRoute_Skill = {
 g_tbFactionRoute_Females = { ROUTE_NGAMI_KIEM, ROUTE_NGAMI_DAN, ROUTE_THUYYEN_LINHNU, ROUTE_THUYYEN_VUTIEN }
 
 g_tbMeridianNames = {
-    "Vâ Gi¶",
+    "Martial Adept",
     "Vâ T­íng",
     "Vâ V­¬ng",
     "Vâ T«n",
     "Vâ Hoµng",
-    "Vâ Th¸nh",
+    "Martial Saint",
 }
 
 MAX_EXP = 2e9

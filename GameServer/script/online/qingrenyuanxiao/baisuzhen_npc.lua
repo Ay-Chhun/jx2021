@@ -6,7 +6,7 @@ Include("\\script\\online\\qingrenyuanxiao\\qryx_head.lua")
 
 function main()
 	local selTab = {
-				"Ta ®ång ı/ok",
+				"I agree/ok",
 				"§Ó ta suy nghÜ l¹i/nothing"
 				}
 	if NoTaskBegin() == 1 then
@@ -45,7 +45,7 @@ function ok()
 				"B¹ch c« n­¬ng sao kinh ng¹c thÕ?",
 				"Kh«ng giÊu g×, ta vèn lµ b¹ch xµ tu luyÖn thµnh ng­êi. ChØ cÇn ngöi mïi r­îu th«i còng sÏ hiÖn nguyªn h×nh.",
 				"ThÕ nµy ®i, ®Ó t¹i h¹ thuyÕt phôc Høa c«ng tö ®æi lÔ vËt kh¸c." ,
-				"Tèt qu¸……")
+				"Very good")
 		local OldPlayerIndex = PlayerIndex
 		for i=1,2 do
 			PlayerIndex = GetTeamMember(i)

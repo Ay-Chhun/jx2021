@@ -1,7 +1,7 @@
 function main()
 	UWorld1508 = GetTask(1508)
 	if  UWorld1508 == 5  then
-		Say("Tung tÝch L¨ng Nhi µ? Ta ®­¬ng nhiªn biÕt, h·y mua cho ta 3 c¸i b¸nh bao thÞt ta sÏ nãi cho nghe.",2,"Mua b¸nh bao cho ThuËn Oa/yes1508","Kh«ng mua/no1508")
+		Say("Tung tÝch L¨ng Nhi µ? Ta ®­¬ng nhiªn biÕt, h·y mua cho ta 3 c¸i b¸nh bao thÞt ta sÏ nãi cho nghe.",2,"Buy buns for Shun'wa/yes1508","Don't buy/no1508")
 	elseif  UWorld1508  == 11  then	
 		Talk(1,"","Ta muèn ¨n b¸nh bao thÞt, kh«ng ph¶i b¸nh bao rau hÑ, th«i ¨n ®ì lãt d¹, nh­ng ta e r»ng kh«ng ®ñ søc nãi chuyÖn cïng ng­¬i!")
 		Msg2Player("§Õn chç §«ng Muéi mua 3 c¸i b¸nh bao thÞt cho ThuËn Oa.")
@@ -15,7 +15,7 @@ function main()
 		AddNote("Ra ngoµi thµnh t×m L¨ng Nhi")
 		Msg2Player("Ra ngoµi thµnh t×m L¨ng Nhi")
 	else
-		Talk(1,"","B¸nh bao th¬m qu¸! NÕu cã thÞt th× hay biÕt mÊy!")
+		Talk(1,"","The buns smell wonderful! If only they had meat in them!")
 	end
 end;
 
@@ -27,5 +27,5 @@ function yes1508 ()
 end;
 
 function no1508 ()
-		Talk(1,"","§«ng tû tû, ®Ö thÌm b¸nh bao qu¸!")
+		Talk(1,"","Sister Dong, little brother is craving buns so much!")
 end;

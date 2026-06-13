@@ -22,7 +22,7 @@ IC_NPC_TITLE = "H·y nhanh chãng mêi b¹n bÌ ®Õn cïng ch¬i trß ch¬i nµo! B¹n bÌ cµ
 
 IC_NPC_DIALOG = {
 	"Giíi thiÖu ho¹t ®éng/ic_Introduce",
-	"NhËn m· mêi/ic_GetInviteCode",
+	"Receive invite code/ic_GetInviteCode",
 	"KÝch ho¹t m· mêi/ic_ActInviteCode",
 	"Xem ®iÓm tÝch lòy/ic_QueryScore",
 	"NhËn lÊy phÇn th­ëng./ic_GetAward",
@@ -36,7 +36,7 @@ function ic_Introduce()
 	local tbSay = {};
 	tbSay.msg = IC_NPC_NAME..strTitle;
 	tbSay.sel = {
-		{"\n rót lui","nothing"},
+		{"\n withdraw","nothing"},
 	};
 	temp_Talk(tbSay);
 end
@@ -83,7 +83,7 @@ function ic_ActInviteCode()
 --		Say(IC_NPC_NAME.."Äú×Ô¼º»¹Ã»ÓÐÁìÈ¡ÈÎºÎÑûÇëÂë£¡", 0)
 --		return 0;
 --	end
-	AskClientForString("ic_ActInviteCode_Acfs", "M· mêi", 10, 10, "H·y nhËp m· mêi");
+	AskClientForString("ic_ActInviteCode_Acfs", "Invite code", 10, 10, "H·y nhËp m· mêi");
 end
 
 function ic_ActInviteCode_Acfs(szInviteCode)
@@ -159,7 +159,7 @@ function ic_GetAward()
 	local tSay = {
 		"\nPhÇn th­ëng cho ng­êi mêi/ic_GetYaoqingAward",
 		"\nPhÇn th­ëng cho ng­êi ®­îc mêi/ic_GetShouyaoAward",		
-		"\n rót lui/nothing",
+		"\n withdraw/nothing",
 	}
 	Say(IC_NPC_NAME.."B¹n muèn nhËn phÇn th­ëng g×?", getn(tSay), tSay);
 end
@@ -196,7 +196,7 @@ function ic_GetYaoqingAward_CB(nRet, nScore)
 			tinsert(tSay, format("%s(®· tÝch lòy %d ®iÓm tÝch lòy)/#ic_GetYaoqingAward_do(%d, %d)", v[3], v[2], k, nScore));
 		end	
 	end
-	tinsert(tSay, "\n rót lui/nothing");
+	tinsert(tSay, "\n withdraw/nothing");
 	Say(IC_NPC_NAME..format("Tæng ®iÓm tÝch lòy hiÖn t¹i lµ <color=gold>%q<color>, h·y ®æi phÇn th­ëng theo ®iÓm tÝch lòy!", nScore), getn(tSay), tSay);
 end
 
@@ -238,7 +238,7 @@ function ic_GetShouyaoAward()
 		format("Gi¶i th­ëng riªng/ic_GetShouyaoExtAward"),
 		
 	};
-	tinsert(tSay, "\n rót lui/nothing");
+	tinsert(tSay, "\n withdraw/nothing");
 	Say(IC_NPC_NAME.."KÝch ho¹t m· mêi míi nhËn ®­îc phÇn th­ëng t­¬ng øng!", getn(tSay), tSay);
 end
 
@@ -248,7 +248,7 @@ function ic_GetShouyaoExtAward()
 		format("10,000,000 exp(hoµn thµnh 4 nhiÖm vô tïy ý)/#ic_GetShouyaoAward_do(%d)", IC_FINISH_INVITE_TYPE7),
 		format("20,000,000 exp(hoµn thµnh 5 nhiÖm vô tïy ý)/#ic_GetShouyaoAward_do(%d)", IC_FINISH_INVITE_TYPE8),
 	};
-	tinsert(tSay, "\n rót lui/nothing");
+	tinsert(tSay, "\n withdraw/nothing");
 	Say(IC_NPC_NAME.."KÝch ho¹t m· mêi míi nhËn ®­îc phÇn th­ëng t­¬ng øng!", getn(tSay), tSay);
 end
 
@@ -326,13 +326,13 @@ function ic_GetShouyaoAward_finish(nType)
 		gf_Modify("Exp", 100000000)
 		IC_TASK_GROUP:SetTaskBit(IC_TASK_GROUP.Recrod2Award, nType, 1);
 	elseif IC_FINISH_INVITE_TYPE2 == nType then
-		gf_AddItemEx2({0,105,161,1,4,-1,-1,-1,-1,-1,-1}, "C¸o n¨m ®u«i", "Ho¹t ®éng m· mêi", "PhÇn th­ëng ®iÓm tÝch lòy", 30*24*3600, 1);
+		gf_AddItemEx2({0,105,161,1,4,-1,-1,-1,-1,-1,-1}, "Five-Tailed Fox", "Ho¹t ®éng m· mêi", "PhÇn th­ëng ®iÓm tÝch lòy", 30*24*3600, 1);
 		IC_TASK_GROUP:SetTaskBit(IC_TASK_GROUP.Recrod2Award, nType, 1);		
 	elseif IC_FINISH_INVITE_TYPE3 == nType then
 		giveYunLing5()
 		IC_TASK_GROUP:SetTaskBit(IC_TASK_GROUP.Recrod2Award, nType, 1)
 	elseif IC_FINISH_INVITE_TYPE4 == nType then
-		local tCell = {"L¨ng Ba Vi Bé toµn tËp", {0,112,158,1,}, 0}
+		local tCell = {"Lingbo Microstep Complete Edition", {0,112,158,1,}, 0}
 		gf_AddItemEx2(tCell[2], tCell[1], "Ho¹t ®éng m· mêi", "PhÇn th­ëng ®iÓm tÝch lòy", (tCell[3] or 0), 1);
 		IC_TASK_GROUP:SetTaskBit(IC_TASK_GROUP.Recrod2Award, nType, 1);
 	elseif IC_FINISH_INVITE_TYPE5 == nType then

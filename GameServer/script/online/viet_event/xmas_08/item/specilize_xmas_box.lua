@@ -35,7 +35,7 @@ g_tbItem =
 	[8]  = {TYPE_EQUIP,	7,		1,	"L­u Yªn c«n",	0,	5,	6009},
 	[9]  = {TYPE_EQUIP,	7,		1,	"HuyÒn Yªn kiÕm",	0,	2,	6010},
 	[10] = {TYPE_EQUIP,	7,		1,	"Vò Yªn bót",	0,	9,	6011},
-	[11] = {TYPE_EQUIP,	7,		1,	"Hµ Tiªm Th­¬ng",	0,	6,	6012},
+	[11] = {TYPE_EQUIP,	7,		1,	"He Tian Spear",	0,	6,	6012},
 	[12] = {TYPE_EQUIP,	7,		1,	"Hµnh Yªn Cung",	0,	4,	6013},
 	[13] = {TYPE_EQUIP,	7,		1,	"Träc Yªn nhÉn",	0,	7,	6014},
 	[14] = {TYPE_EQUIP,	7,		1,	"Yªu Yªn tr¶o",	0,	11,	6015},
@@ -91,11 +91,11 @@ function use_it()
 		end
 
 		for i=1, 3 do
-			AddGlobalNews("Chóc mõng  "..GetName().." Më Hép Quµ §Æc BiÖt thu ®­îc  "..szItemName)
+			AddGlobalNews("Congratulations"..GetName().." Opening the Special Gift Box you receive"..szItemName)
 		end
-		WriteLogEx(g_szLogTitle, "Hép Quµ §Æc BiÖt", nItemNum, szItemName, szInfoDescribe, GetTongName() )
+		WriteLogEx(g_szLogTitle, "Special Gift Box", nItemNum, szItemName, szInfoDescribe, GetTongName() )
 	else
-		WriteLogEx(g_szLogTitle, "Hép Quµ §Æc BiÖt", "", "", "", "", "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
+		WriteLogEx(g_szLogTitle, "Special Gift Box", "", "", "", "", "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
 	end
 end
 

@@ -44,7 +44,7 @@ local strMain = {
 
 TE_Talk(getn(strMain), "task_004", strMain);
 
-TaskTip("Méc QuÕ Anh b¶o b¹n ®i BiÖn Kinh t×m TriÖu Phæ");
+TaskTip("Mu Guiying told you to go to Bianjing and find Zhao Pu");
 
 end
 
@@ -107,12 +107,12 @@ function task_009()
 local strMain = {
   "Th× ra lµ vËy! Nh­ng muèn CÊm qu©n nhËp sæ ph¶i ®Õn Khu MËt viÖn t×m Tµo B©n ®¹i nh©n.",
 	"ThÕ nµy vËy! Ta sÏ nãi víi Tµo ®¹i nh©n viÖc nµy, ng­¬i h·y vÒ bÈm b¸o <color=yellow>Méc QuÕ Anh<color> t­íng qu©n ®i!",
-	"PhiÒn TriÖu ®¹i nh©n vËy!",
+	"Sorry to trouble you, Lord Zhao!",
 	}
 
 TE_Talk(getn(strMain), "task_010", strMain);
 
-TaskTip("TriÖu Phæ b¶o b¹n ®i t×m Méc QuÕ Anh");
+TaskTip("Zhao Pu told you to go find Mu Guiying");
 
 end
 
@@ -130,7 +130,7 @@ local strMain = {
   "§· xong viÖc råi µ?",
 	"§óng vËy! Nh­ng sao lóc th× do CÊm qu©n qu¶n lı lóc th× Khu MËt viÖn lµ thÕ nµo? ThËt phiÒn phøc!",
 	"ViÖc nµy ta còng kh«ng râ l¾m! Ta chØ lo viÖc qu©n t×nh cßn viÖc quan tr­êng ta kh«ng muèn nghÜ tíi!",
-  "Cho nªn ta lu«n ë trong phñ hiÕm khi gÆp bän hä.", 
+  "That's why I always stay in the mansion and rarely meet them.", 
   "T¹i h¹ cã thÓ mua ngùa cña D­¬ng M«n ë ®©u?",
 	"Trong phñ cã xa m· phßng, qu©n sÜ trong phñ lo luyÖn chiÕn m·, ng­¬i cã thÓ trùc tiÕp t×m <color=green>D­¬ng Bµi Phong<color>.",
   "Trªn chiÕn tr­êng nÕu bŞ th­¬ng còng lµ chuyÖn th­êng t×nh cho nªn nhÊt ®Şnh ph¶i biÕt c¸ch trŞ th­¬ng c¬ b¶n. Ng­¬i ®em <color=yellow>5 cuén b¨ng<color> ®Õn ®©y cho ta.", 
@@ -288,12 +288,12 @@ local strMain = {
 	"NÕu nh­ D­¬ng t­íng qu©n tiÕn cö th× kh«ng cã vÊn ®Ò g×. Nh­ng tiÓu huynh ®Ö cã thÓ gióp ta mét chuyÖn?",
   "Xin Tµo ®¹i nh©n cø nãi!",
 	"GÇn ®©y triÒu ®×nh cã mua mét ®µn ngùa nh­ng ®Õn giê vÉn ch­a chuyÓn ®Õn. Ng­¬i gióp ta hái ng­êi <color=yellow>B¸n ngùa<color> xem bao l©u sÏ chuyÓn ®Õn.",
-  "Th«i ®­îc!",
+  "Very well!",
 	}
 
 TE_Talk(getn(strMain), "task_106", strMain);
 
-TaskTip("Tµo B©n b¶o b¹n ®i BiÖn Kinh t×m B¸n ngùa");
+TaskTip("Cao Bin told you to go to Bianjing and find the Horse Seller");
 
 end
 
@@ -310,12 +310,12 @@ function task_107()
 local strMain = {
   "¤ng chñ! Tµo ®¹i nh©n nhê t«i hái «ng sè ngùa lÇn tr­íc ®Æt bao giê chuyÓn ®Õn.",
 	"Ngùa cña Tµo ®¹i nh©n? Ta sÏ lËp tøc chuyÓn qua.",
-  "Xin ®a t¹!",
+  "Many thanks!",
 	}
 
 TE_Talk(getn(strMain), "task_108", strMain);
 
-TaskTip("Quay vÒ gÆp Tµo B©n");
+TaskTip("Return to meet Cao Bin");
 
 end;
 
@@ -338,9 +338,9 @@ local strMain = {
   "Ng­¬i muèn gia nhËp D­¬ng M«n, chİnh lµ lÊy kş binh lµm chñ, sau nµy ph¶i cè g¾ng rÌn luyÖn.",
 	"Ng­êi trong D­¬ng M«n còng ®Õn BiÖn Kinh mua ngùa?",
   "Còng ®­îc! Nh­ng trong D­¬ng M«n cã m· phßng do mét a hoµn qu¶n lı, D­¬ng Gia qu©n cã thÓ ®Õn ®ã lÊy chiÕn m·.",
-	"T¹i h¹ hiÓu râ!",
+	"I understand clearly!",
   "§­îc råi! Giê ng­¬i cã thÓ vÒ gÆp <color=yellow>D­¬ng T«n B¶o<color>, ta sÏ ®iÒn tªn ng­¬i vµo danh s¸ch.",
-	"§a t¹ ®¹i nh©n!",
+	"Many thanks, my lord!",
 	}
 
 TE_Talk(getn(strMain), "task_110", strMain);
@@ -362,7 +362,7 @@ function task_111()
 local strMain = {
   "Mäi viÖc thÕ nµo råi?",
 	"§· ®iÒn tªn vµo sæ!",
-	"Tèt l¾m!",
+	"Very good!",
   "Binh sÜ nhiÒu nªn l­¬ng thùc còng lµ viÖc rÊt cÊp b¸ch. NhiÒu khi lóc hµnh qu©n, binh sÜ ph¶i tù lo l­¬ng thùc.", 
   "H·y ®i ®¸nh bän <color=yellow> C«n ®å<color> lÊy <color=yellow> 2 phÇn thŞt gµ <color> vÒ ®©y tr­íc ®·!", 
 	}

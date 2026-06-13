@@ -6,12 +6,12 @@
 Include("\\script\\lib\\globalfunctions.lua");
 Include("\\script\\missions\\liangshan\\head.lua")
 tbItemString = {
-	[1] = "Bao Tô NghÜa LÖnh lín",
+	[1] = "Large Hall of Loyalty Token Pack",
 	[2] = {TJYLInfo[1],TJYLInfo[2],TJYLInfo[3],50,TJYLInfo[4]},
 	[4] = "<color=green>Th«ng b¸o<color>: më %s cã thÓ nhËn ®­îc<color=green>%d<color> <color=green>%s<color> <color=red>%s<color>, x¸c ®Þnh muèn më?",
 	[5] = "(Khãa)",
 	[6] = "X¸c nhËn më",
-	[7] = "Tho¸t",
+	[7] = "Exit",
 }
 function OnUse(nItemIndex)
 	Say(format(tbItemString[4],tbItemString[1],tbItemString[2][4],tbItemString[2][5],tbItemString[5]),
@@ -27,7 +27,7 @@ function use_deal(nItemIndex)
 	end
 	
 	if DelItemByIndex(nItemIndex,1) == 1 then
-		gf_AddItemEx2({tbItemString[2][1],tbItemString[2][2],tbItemString[2][3],tbItemString[2][4]}, "Tô NghÜa LÖnh", LUONGSON_LOG_TITLE, "nhËn")
+		gf_AddItemEx2({tbItemString[2][1],tbItemString[2][2],tbItemString[2][3],tbItemString[2][4]}, "Token of Righteousness", LUONGSON_LOG_TITLE, "nhËn")
 		
 --		local bAddFlag = AddItem(tbItemString[2][1],tbItemString[2][2],tbItemString[2][3],tbItemString[2][4])
 --		local szquantity = "chg_suc"

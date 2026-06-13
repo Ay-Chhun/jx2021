@@ -4,7 +4,7 @@
 Include("\\script\\online\\viet_event\\201002\\1\\head.lua");
 
 XIAO_BYTE_ID = 2
-szNpcName = "<color=green>An Khang Thﬁnh V≠Óng<color>: "
+szNpcName = "<color=green>Peace and Prosperity<color>:"
 
 function main()
 	npc_xiao_talk();

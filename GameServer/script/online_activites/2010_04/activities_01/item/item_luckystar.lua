@@ -58,7 +58,7 @@ function OnUse(nItemIdx)
 	local nUsed = mod(GetTask(TSK_LUCKY_STAR_201011), 100) 				-- 2 so cuoi luu so lan su dung trong ngay
 	
 	if nUsed >= LUCKY_STAR_MAX_USE then
-		Talk(1,"","Mçi ngµy chØ cã thÓ sö dông "..LUCKY_STAR_MAX_USE.." Ng«i Sao May M¾n")
+		Talk(1,"","Mçi ngµy chØ cã thÓ sö dông "..LUCKY_STAR_MAX_USE.." Lucky Star")
 		return
 	end
 	
@@ -98,7 +98,7 @@ function OnUse(nItemIdx)
 	end
 	
 	if mod(GetTask(TSK_LUCKY_STAR_201011), 100) == 16 and nDate <= 130120 then
-		gf_AddItemEx2({2,1,30030, 140}, "TiÓu Nh­ Y1", "NIEN THU NHU Y", "hoµn thµnh 16 Ng«i Sao ")
+		gf_AddItemEx2({2,1,30030, 140}, "Tieu Nhu Y1", "NIEN THU NHU Y", "hoµn thµnh 16 Ng«i Sao ")
 	end
     --cdkey
     SendScript2VM("\\script\\function\\cdkey\\ck_head.lua", "_ck_UseItemLuckyStart()");

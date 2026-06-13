@@ -11,11 +11,11 @@ Include("\\script\\online\\zgc_public_fun.lua")
 VET_201111_YUANDAN_TITLE = "Hoat dong tet Duong lich"
 
 VET_201111_YUANDAN_AWARD  = {
-    {1, 6, "Bµn Long bÝch", {2, 1, 1000, 5}, 7 * 24 * 3600},
-    {1, 6, "Nh­ ý", {0, 102, 23, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
-    {1, 6, "C¸t T­êng", {0, 102, 22, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
-    {1, 39, "QuÕ Hoa Töu", {2, 0, 189, 179}, 0},
-    {1, 12, "§u §ñ", {2, 1, 30178, 22}, 0},
+    {1, 6, "Coiling Dragon Jade", {2, 1, 1000, 5}, 7 * 24 * 3600},
+    {1, 6, "As You Wish", {0, 102, 23, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
+    {1, 6, "Auspicious", {0, 102, 22, 1, 1, -1, -1, -1, -1, -1, -1}, 0},
+    {1, 39, "Osmanthus Wine", {2, 0, 189, 179}, 0},
+    {1, 12, "Papaya", {2, 1, 30178, 22}, 0},
     {2, 31, 3900000, 1},
 };
 
@@ -29,7 +29,7 @@ function get_new_years_award()
 		Talk(1,"",tSTRING_MR_WHITE_NPC..tSTRING_201111_TABLE[1])
 		return 0
 	end
-	Say("C¸c h¹ cÇn mang theo <color=green> 200<color> Thiªn Th¹ch +<color=green> 100 <color> vµng ®Ó nhËn phÇn th­ëng n¨m míi",2,"§ång ý/ensure","§Ó ta suy nghÜ l¹i/do_nothing")
+	Say("C¸c h¹ cÇn mang theo <color=green> 200<color> Thiªn Th¹ch +<color=green> 100 <color> vµng ®Ó nhËn phÇn th­ëng n¨m míi",2,"Agree/ensure","§Ó ta suy nghÜ l¹i/do_nothing")
 end
 
 function ensure()

@@ -1,7 +1,7 @@
 --×¼±¸Çø
 -----------------------------------------------------------------
 tStage00 = {
-	name = "Khu chuÈn bÞ",
+	name = "Preparation Area",
 	nStageId = 0,
 	maxsecond = 5 * 60,
 	actionsType = "second",
@@ -11,8 +11,8 @@ function tStage00:CreateNpcs()
 	local nMgyIdx = TY_CreateNpc(tNpcs.mgy_1, tNpcPos.mgy[0][1]);
 	local nYzbIdx = TY_CreateNpc(tNpcs.yzb_1, tNpcPos.yzb[0][1]);
 	local nJjgIdx = TY_CreateNpc(tNpcs.jjg, tNpcPos.jjg[0][1]);
-	this:Msg2MSAll("§éi tr­ëng vµ Méc QuÕ Anh ®èi tho¹i ®Ó b¾t ®Çu ¶i!");
-	this.msCamp:turnPlayer(0, function() HeadMsg2Player("§éi tr­ëng vµ Méc QuÕ Anh ®èi tho¹i ®Ó b¾t ®Çu ¶i!") end);
+	this:Msg2MSAll("Team leader, talk to Mu Guiying to begin!");
+	this.msCamp:turnPlayer(0, function() HeadMsg2Player("Team leader, talk to Mu Guiying to begin!") end);
 end
 
 function tStage00.GoToStage01()
@@ -38,29 +38,29 @@ function tStage00:NpcMain()
 		if not tStage00.sel_FOREST_HARD then
 			tStage00.sel_FOREST_HARD = {
 				"Vµo ¶i 1: Nhiªn TÞch Chi Th­¬ng/#tStage00.GoToStage01()",
-				"Rêi cöa ¶i/TY_ConfirmClose",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"Leave the gate/TY_ConfirmClose",
+				"End dialogue/nothing",
 			};
 		end
 		if not tStage00.sel_FOREST_NORMAL then
 			tStage00.sel_FOREST_NORMAL = {
 				"Vµo ¶i 1: Nhiªn TÞch Chi Th­¬ng/#tStage00.GoToStage01()",
-				"Rêi cöa ¶i/TY_ConfirmClose",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"Leave the gate/TY_ConfirmClose",
+				"End dialogue/nothing",
 			};
 		end
 		if not tStage00.sel_TOWER_HARD then
 			tStage00.sel_TOWER_HARD = {
 				"Vµo ¶i 1: TÞch Tµ Chi HÝ/#tStage00.GoToStage04()",
-				"Rêi cöa ¶i/TY_ConfirmClose",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"Leave the gate/TY_ConfirmClose",
+				"End dialogue/nothing",
 			};
 		end
 		if not tStage00.sel_TOWER_NORMAL then
 			tStage00.sel_TOWER_NORMAL = {
 				"Vµo ¶i 1: TÞch Tµ Chi HÝ/#tStage00.GoToStage04()",
-				"Rêi cöa ¶i/TY_ConfirmClose",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"Leave the gate/TY_ConfirmClose",
+				"End dialogue/nothing",
 			};
 		end
 		if not tStage00.sel then

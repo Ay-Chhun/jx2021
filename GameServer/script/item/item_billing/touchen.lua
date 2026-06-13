@@ -31,8 +31,8 @@ function OnUse(nItemIdx)
 	local selTab = {
 				"KÝch ho¹t sö dông vËt phÈm/kick_off",
 				"Hñy bá kÝch ho¹t sö dông vËt phÈm/turn_off",
-				format("§ång ý/#use(%d,%d)",nItemIdx,nType),
-				"Hñy bá/nothing",
+				format("Agree/#use(%d,%d)",nItemIdx,nType),
+				"Cancel/nothing",
 				}
 	local nCurJunGong = BT_GetData(PT_RANKPOINT);
 	local nMaxTranslateJG = tbTOUCHEN[nType][5];
@@ -114,7 +114,7 @@ function use(nItemIdx,nType)
 		BT_SetData(PT_RANKPOINT,-nTranslateJG);
 		SetRankPoint(5,701,1);	--¼ÓÈë¾ü¹¦ÅÅÐÐ°ñ
 		SetTask(TSK_EXCHANGE_JUNGONG_TIME,0)
-		Msg2Player("B¹n ®Æt thµnh c«ng "..tCampNameZ[nCamp].."Ph­¬ng "..abs(nCurJunGong).." ®iÓm c«ng tr¹ng ®æi thµnh"..tCampNameZ[3-nCamp].."Ph­¬ng "..abs(nTranslateJG).." ®iÓm c«ng tr¹ng");
+		Msg2Player("B¹n ®Æt thµnh c«ng "..tCampNameZ[nCamp].."Faction"..abs(nCurJunGong).." ®iÓm c«ng tr¹ng ®æi thµnh"..tCampNameZ[3-nCamp].."Faction"..abs(nTranslateJG).." ®iÓm c«ng tr¹ng");
 		WriteLog("[ChiÕn tr­êng Nh¹n M«n Quan]:"..GetName().."Sö dông 1	"..szItemName.."ChuyÓn ®æi "..abs(nCurJunGong).." ®iÓm"..tCampNameZ[nCamp].."_c«ng tr¹ng");
 	end;
 end;

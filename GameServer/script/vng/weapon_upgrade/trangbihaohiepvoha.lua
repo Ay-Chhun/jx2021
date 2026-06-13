@@ -10,10 +10,10 @@ LIB_Award.szLogAction = "nhËn"
 tbRoute = {[2] = 1, [4] = 1, [3] = 1, [6] = 1, [8] = 1, [9] = 1, [11] = 1, [12] = 1, [14] = 1, [15] = 1, [17] = 1, [18] = 1, [20] = 1, [21] = 1, [23] = 1, [25] = 1, [26] = 1, [27] = 1, [29] = 1, [30] = 1,}
 
 tbHaoHiepVoHaNguyenLieu = {
-	[1] = {item={{gdp={2,95,204,20}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,20}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,31122,10}, name="Linh KhÝ Rùc Rì"}, {gdp={2,1,1006,4}, name="Cöu Thiªn V« Cùc §¬n"}, {gdp={0,102,31126,1}, name="Hµo HiÖp Giíi"}}},
-	[2] = {item={{gdp={2,95,204,20}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,20}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,31122,10}, name="Linh KhÝ Rùc Rì"}, {gdp={2,1,1006,4}, name="Cöu Thiªn V« Cùc §¬n"}, {gdp={0,102,31127,1}, name="Hµo HiÖp Béi"}}},
-	[3] = {item={{gdp={2,95,204,20}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,20}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,31122,20}, name="Linh KhÝ Rùc Rì"}, {gdp={2,1,1006,4}, name="Cöu Thiªn V« Cùc §¬n"}, {gdp={0,102,30037,1}, name="Thiªn §Þa Giíi"}}},
-	[4] = {item={{gdp={2,95,204,20}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,20}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,31122,20}, name="Linh KhÝ Rùc Rì"}, {gdp={2,1,1006,4}, name="Cöu Thiªn V« Cùc §¬n"}, {gdp={0,102,30038,1}, name="NhËt NguyÖt Giíi"}}},
+	[1] = {item={{gdp={2,95,204,20}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,20}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,31122,10}, name="Radiant Spirit Aura"}, {gdp={2,1,1006,4}, name="Cöu Thiªn V« Cùc §¬n"}, {gdp={0,102,31126,1}, name="Hµo HiÖp Giíi"}}},
+	[2] = {item={{gdp={2,95,204,20}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,20}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,31122,10}, name="Radiant Spirit Aura"}, {gdp={2,1,1006,4}, name="Cöu Thiªn V« Cùc §¬n"}, {gdp={0,102,31127,1}, name="Hµo HiÖp Béi"}}},
+	[3] = {item={{gdp={2,95,204,20}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,20}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,31122,20}, name="Radiant Spirit Aura"}, {gdp={2,1,1006,4}, name="Cöu Thiªn V« Cùc §¬n"}, {gdp={0,102,30037,1}, name="Thiªn §Þa Giíi"}}},
+	[4] = {item={{gdp={2,95,204,20}, name="Thiªn Cang LÖnh"}, {gdp={2,1,30370,20}, name="Thiªn M«n Kim LÖnh"}, {gdp={2,1,31122,20}, name="Radiant Spirit Aura"}, {gdp={2,1,1006,4}, name="Cöu Thiªn V« Cùc §¬n"}, {gdp={0,102,30038,1}, name="NhËt NguyÖt Giíi"}}},
 }
 
 function TrangBiHaoHiepVoHa_Form()
@@ -32,7 +32,7 @@ function TrangBiVoCucMinhTinh()
 	local tbSay = {
 		"X¸c nhËn ®æi V« Cùc/#XacNhanDoiHHVH(3)",
 		"X¸c nhËn ®æi Minh Tinh/#XacNhanDoiHHVH(4)",
-		"Ta ®Õn xem th«i/gf_DoNothing",
+		"I am just here to look/gf_DoNothing",
 	}
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -42,7 +42,7 @@ function LenhbaiHaoHiepVoHa()
 	local tbSay = {
 		"Sö dông Hµo HiÖp Giíi/#XacNhanDoiHHVH(1)",
 		"Sö dông Hµo HiÖp Béi/#XacNhanDoiHHVH(2)",
-		"Ta ®Õn xem th«i/gf_DoNothing",
+		"I am just here to look/gf_DoNothing",
 	}
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -73,7 +73,7 @@ function XacNhanDoiHHVH(nOption)
 	elseif nOption == 2 then
 		gf_AddItemEx2({2,1,30974, 1}, "Hµo HiÖp V« H¹ LÖnh Bµi(trang søc) ", EVENT_LOG_TITLE , "nhËn")
 	elseif nOption == 3 then
-		gf_AddItemEx2({0,102,31130, 1, 4, -1, -1, -1, -1, -1, -1}, "NhÉn V« Cùc ", EVENT_LOG_TITLE , "nhËn")
+		gf_AddItemEx2({0,102,31130, 1, 4, -1, -1, -1, -1, -1, -1}, "Boundless Ring", EVENT_LOG_TITLE , "nhËn")
 	elseif nOption == 4 then
 		gf_AddItemEx2({0,102,31131, 1, 4, -1, -1, -1, -1, -1, -1}, "Minh Tinh Chi Giíi ", EVENT_LOG_TITLE , "nhËn")
 	end

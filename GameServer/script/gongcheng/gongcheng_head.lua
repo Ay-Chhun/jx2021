@@ -37,7 +37,7 @@ tItemInfo = 			--¹¥³ÇÕ½ÎïÆ·Ïà¹ØĞÅÏ¢
 	[1] = {"C«ng thµnh Tiªn phong lÖnh",2,1,1203},
 	[2] = {"Thñ VÖ lÖnh",2,1,1202},
 	[3] = {"Dòng SÜ lÖnh",2,1,1201},
-	[4] = {"ChiÕn b¸o tiÒn tuyÕn",2,1,1206},
+	[4] = {"Front Line Battle Report",2,1,1206},
 	[5] = {"P_th­ëng C«ng Thµnh (th¾ng)",2,1,1208},
 	[6] = {"P_th­ëng  C«ng Thµnh(b¹i)",2,1,1209},
 }

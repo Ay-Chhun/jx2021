@@ -26,7 +26,7 @@ function is_in_valid_date(bNotify)
 	local nDate = tonumber(date("%Y%m%d"))
 	if nDate < CUR_VIP_CARD_START_DATE or nDate > CUR_VIP_CARD_END_DATE then
 		if bNotify and 1 == bNotify then
-			Talk(1,"",format("HiÖn kh«ng ph¶i thêi gian kÝch ho¹t ThÎ VIP, h·y kÝch ho¹t vµo %s~%s", show_date(CUR_VIP_CARD_START_DATE), show_date(CUR_VIP_CARD_END_DATE)))
+			Talk(1,"",format("It is not VIP Card activation time now; please activate during %s~%s", show_date(CUR_VIP_CARD_START_DATE), show_date(CUR_VIP_CARD_END_DATE)))
 		end
 		return 0
 	end

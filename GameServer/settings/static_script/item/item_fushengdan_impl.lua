@@ -7,9 +7,9 @@ fsd_task_id = 3284
 fsd_task_acc = 36
 
 fsd_this_item={
-	{"Phôc Sinh §¬n (Nguyªn liÖu)",2, 1, 30812},
-	{"Phôc Sinh §¬n (Tu luyÖn)",2, 1, 30813},
-	{"Phôc Sinh §¬n",2, 1, 30814},
+	{"Revival Pill (Material)",2, 1, 30812},
+	{"Revival Pill (Cultivation)",2, 1, 30813},
+	{"Resurrection Pill",2, 1, 30814},
 }
 fsd_max_xiulan_daily=10
 fsd_max_xiulan=100
@@ -39,7 +39,7 @@ function on_use_xiulian(nItemIdx)
 		tinsert(tbSay, format("%s/#do_xiulian(%d,%d)", szWord, nItemIdx, i))
 	end
 
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 	Say(szTitle, getn(tbSay), tbSay)
 end
 
@@ -48,7 +48,7 @@ function on_use_fusheng(nItemIdx)
 	local szTitle = format("§¹t chuyÓn sinh 6 cÊp 99, tiªu hao 1 Phôc Sinh §¬n, %d %s, cã thÓ t¨ng lªn chuyÓn sinh 7 cÊp 10.", fsd_taiyihunyuan[5], fsd_taiyihunyuan[1])
 	local tbSay = {}
 	tinsert(tbSay, format("%s/#on_use_fusheng_sure(%d)", "Sö dông", nItemIdx))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -81,8 +81,8 @@ function do_xiulian(nItemIdx, nType)
 	end
 	local szTitle = format("Tu luyÖn %d ®iÓm cÇn tiªu hao %s EXP, %d Th¸i DÞch Hçn Nguyªn C«ng §å Gi¸m, %d tu vi, ®ång ý kh«ng?", t[4], show_large_int(t[1]), t[2], t[3])
 	local tbSay = {}
-	tinsert(tbSay, format("%s/#do_xiulian_sure(%d,%d)", "§ång ý tu luyÖn", nItemIdx, nType))
-	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("%s/#do_xiulian_sure(%d,%d)", "Agree to cultivate", nItemIdx, nType))
+	tinsert(tbSay, format("%s/nothing", "Exit"))
 
 	Say(szTitle, getn(tbSay), tbSay)
 end

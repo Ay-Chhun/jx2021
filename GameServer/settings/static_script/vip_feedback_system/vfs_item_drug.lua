@@ -1,7 +1,7 @@
 --¾«Á¦Íè
 --µş¼ÓÊıÄ¿99£¬¿ÉÒÔ½»Ò×£¬Ê¹ÓÃºó¾«Á¦»Ø¸´100µã£¬IBÊÛ¼Û 100Xu
 function OnUse(nItem)
-	Say("Ng­¬i quyÕt ®Şnh sö dông Tinh Lùc Hoµn kh«ng?", 2, format("§ång ı/#ensure(%d)", nItem), "Kh«ng cÇn ®©u/do_nothing");
+	Say("Ng­¬i quyÕt ®Şnh sö dông Tinh Lùc Hoµn kh«ng?", 2, format("Confirm/#ensure(%d)", nItem), "Kh«ng cÇn ®©u/do_nothing");
 end
 
 function ensure(nItem)

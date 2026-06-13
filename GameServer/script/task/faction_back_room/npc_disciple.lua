@@ -2,7 +2,7 @@
 --´´½¨ÈÕÆÚ£º07Äê11ÔÂ13ÈÕ14:50
 --½ÓÒýµÜ×Ó½Å±¾
 Include("\\script\\task\\faction_back_room\\back_room_function.lua");
-g_szInforHeader = "<color=green>TiÕp dÉn ®Ö tö<color>: ";
+g_szInforHeader = "<color=green>Receiving Disciple<color>:";
 
 function main()
 	local nPlayerState = GetMissionV(MV_MISSION_STATE);
@@ -12,7 +12,7 @@ function main()
 				"Më r­¬ng chøa ®å/open_box",
 				"Xem trang bÞ hiÖn t¹i cã thÓ vµo ¶i kÕ tiÕp hay kh«ng /#check_equipment("..nDiff..","..nStage..")",
 				"Xem h¹n chÕ khiªu chiÕn/BR_KnowLimit",
-				"\nB¾t ®Çu v­ît ¶i/start_stage",
+				"\nStart the stage/start_stage",
 				"Ta muèn rêi khái mËt thÊt/leave_stage",
 				}
 	local szSay = "";
@@ -23,12 +23,12 @@ function main()
 		tremove(selTab,1);
 		szSay = "B¹n muèn rêi khái n¬i v­ît ¶i ph¶i kh«ng?";
 	else
-		szSay = "B¹n s¾p vµo <color=yellow>"..TB_DIFF_NAME[nDiff].."<color> ¶i <color=yellow>"..nStage.." <color>."
+		szSay = "B¹n s¾p vµo <color=yellow>"..TB_DIFF_NAME[nDiff].."<color> stage <color=yellow>"..nStage.." <color>."
 	end;
 	if DEBUG_VERSION == 1 and nPlayerState == MS_STATE_STARTED then
-		tinsert(selTab,"Vµo ¶i kÕ tiÕp (thö luyÖn)/next_stage");
+		tinsert(selTab,"Enter the next stage (trial)/next_stage");
 	end;
-	tinsert(selTab,"Kh«ng cã g×/nothing");
+	tinsert(selTab,"Nothing/nothing");
 	Say(g_szInforHeader..szSay,getn(selTab),selTab);
 end;
 

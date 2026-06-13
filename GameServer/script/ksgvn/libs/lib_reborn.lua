@@ -145,10 +145,10 @@ function KsgReborn:SendNews(nRebornCount)
     local tMapName = {
         [100] = "TuyÒn Ch©u",
         [150] = "D­¬ng Ch©u",
-        [200] = "BiÖn Kinh",
+        [200] = "Bianjing",
         [300] = "Thµnh §«",
         [350] = "T­¬ng D­¬ng",
-        [400] = "§¹i Lý",
+        [400] = "Da Li",
         [500] = "Phông T­êng",
     }
     if not tMapName[nMapId] then

@@ -17,7 +17,7 @@ function main()
     end
     
 	if nDate <= 20140119 then
-		tinsert(tbSays, "Kim xµ th¸ng 1/KimXaThang1_Menu")
+		tinsert(tbSays, "Golden Snake Month 1/KimXaThang1_Menu")
 		tinsert(tbSays, "NhËn phÇn th­ëng ®æi 6 lÇn trang bÞ Kim Xµ/KimXaThang1_FinalAward")
 	end
     
@@ -173,26 +173,26 @@ end
 --		local tbKhe = {item = {{gdp = {2, 1, 30183, 20}, name="KhÕ"}}}
 
 tbTraiCay = {
-	[1] = {"Nh·n", 30164, 5},
-	[2] = {"Ch«m Ch«m", 30165, 5},
+	[1] = {"Longan", 30164, 5},
+	[2] = {"Rambutan", 30165, 5},
 	[3] = {"Cam", 30166, 5},
-	[4] = {"Dõa", 30167, 5},
-	[5] = {"M¨ng Côt", 30168, 5},
-	[6] = {"B­ëi", 30169, 5},
-	[7] = {"D©u", 30170, 5},
-	[8] = {"Chuèi", 30171, 5},
-	[9] = {"Xoµi", 30172, 5},
-	[10] = {"§µo", 30173, 5},
-	[11] = {"MËn", 30174, 5},
-	[12] = {"V¶i", 30175, 5},
-	[13] = {"T¸o", 30176, 5},
-	[14] = {"B¬", 30177, 5},
-	[15] = {"§u §ñ", 30178, 5},
-	[16] = {"M·ng CÇu", 30179, 5},
-	[17] = {"Khãm", 30180, 5},
-	[18] = {"Lª", 30181, 5},
-	[19] = {"Bßn Bon", 30182, 5},
-	[20] = {"KhÕ", 30183, 5},
+	[4] = {"Coconut", 30167, 5},
+	[5] = {"Mangosteen", 30168, 5},
+	[6] = {"Pomelo", 30169, 5},
+	[7] = {"Strawberry", 30170, 5},
+	[8] = {"Banana", 30171, 5},
+	[9] = {"Mango", 30172, 5},
+	[10] = {"Peach", 30173, 5},
+	[11] = {"Plum", 30174, 5},
+	[12] = {"Lychee", 30175, 5},
+	[13] = {"Apple", 30176, 5},
+	[14] = {"Avocado", 30177, 5},
+	[15] = {"Papaya", 30178, 5},
+	[16] = {"Soursop", 30179, 5},
+	[17] = {"Pineapple", 30180, 5},
+	[18] = {"Li", 30181, 5},
+	[19] = {"Langsat", 30182, 5},
+	[20] = {"Star Fruit", 30183, 5},
 }
 		
 
@@ -210,7 +210,7 @@ end
 
 function BuyFruit_Confirm(nFruitID)
 	SetTaskTemp(TSK_TMP_FRUIT_INDEX, nFruitID)
-	AskClientForNumber("BuyFruit_Done", 1, 999, "Sè l­îng (1-999)")
+	AskClientForNumber("BuyFruit_Done", 1, 999, "Quantity (1-999)")
 end
 
 

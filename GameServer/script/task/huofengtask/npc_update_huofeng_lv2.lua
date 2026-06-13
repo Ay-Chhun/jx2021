@@ -8,7 +8,7 @@ function npc_talk_main()
 	local tbSay = {}
 	tinsert(tbSay, format("%s/about_update_lv2", "Néi dung cÇn chó ı khi n©ng cÊp"))
 	tinsert(tbSay, format("%s/iwant_update_lv2", "Ta muèn n©ng cÊp"))
-	tinsert(tbSay, format("%s/no", "KÕt thóc ®èi tho¹i"))
+	tinsert(tbSay, format("%s/no", "End conversation"))
 	local szMsg = format("%s:%s", "<color=green>Háa Long §Ønh<color>", "Muèn n©ng cÊp vò khİ Háa Phông cÊp 1, b¹n chuÈn bŞ ®ñ nguyªn liÖu ch­a?")
 	Say(szMsg,getn(tbSay),tbSay)
 end
@@ -16,7 +16,7 @@ end
 function about_update_lv2()
 	local tbSay = {}
 	tinsert(tbSay, format("%s/npc_talk_main", "trë l¹i"))
-	tinsert(tbSay, format("%s/no", "KÕt thóc ®èi tho¹i"))
+	tinsert(tbSay, format("%s/no", "End conversation"))
 	local szMsg = format("%s:%s", "<color=green>Háa Long §Ønh<color>", "N©ng cÊp vò khİ Háa Phông cÊp 1 thµnh vò khİ Háa Phông cÊp 2,cÇn trang bŞ vò khİ Háa Phông +7 trë lªn cÊp 1 trªn ng­êi, mang theo Háa DiÖm Th¹ch.")
 	Say(szMsg,getn(tbSay),tbSay)
 end
@@ -27,7 +27,7 @@ function iwant_update_lv2()
 	local tbSay = {}
 	tinsert(tbSay, format("%s/confirm_update_lv2", "Ta muèn n©ng cÊp"))
 	tinsert(tbSay, format("%s/npc_talk_main", "trë l¹i"))
-	tinsert(tbSay, format("%s/no", "KÕt thóc ®èi tho¹i"))
+	tinsert(tbSay, format("%s/no", "End conversation"))
 	local szMsg = format("%s:%s", "<color=green>Háa Long §Ønh<color>", "N©ng cÊp vò khİ Háa Phông cÊp 1 lªn cÊp 2, cÇn trang bŞ vò khİ Háa Phông cÊp 1 trªn ng­êi, mang theo Háa DiÖm Th¹ch, cßn cÇn nép 6 Hµn Tinh ThiÕt, 6 Thiªn Ma Tµ Tinh, 10 Thiªn Cang LÖnh, 20 Thiªn M«n Kim LÖnh.")
 	Say(szMsg,getn(tbSay),tbSay)
 end

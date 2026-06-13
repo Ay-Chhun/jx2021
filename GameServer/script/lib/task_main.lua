@@ -71,7 +71,7 @@ CTask = {
 			nCheck = self:CheckCanStart(taskName);
 			if nCheck==1 then
 			
-				CDebug:MessageOut(taskName.." NhiÖm vô chİnh thøc b¾t ®Çu");
+				CDebug:MessageOut(taskName.." Task officially started");
 				
 				self:SetTaskStateStart(taskName);
 				
@@ -205,7 +205,7 @@ CTask = {
 		end;
 		
 		if nCheck == getn(aryTaskEntity) then
-			CDebug:MessageOut(taskName.." §¹t ®­îc toµn bé "..nCheck.."  ®iÒu kiÖn nhiÖm vô toµn bé ®¹t ®Õn.");
+			CDebug:MessageOut(taskName.." Achieved all"..nCheck.."  ®iÒu kiÖn nhiÖm vô toµn bé ®¹t ®Õn.");
 			return 1;
 		else
 			return 0;
@@ -253,28 +253,28 @@ CTask = {
 				aryGoods[3] = tonumber(taskAwardFile:getCell(aryTaskAward[i][2],"Particular"));
 				aryGoods[4] = tonumber(taskAwardFile:getCell(aryTaskAward[i][2],"GoodsNum"));
 				AddItem(aryGoods[1],aryGoods[2],aryGoods[3],aryGoods[4]);
-				CDebug:MessageOut("Ph¸t tÆng "..taskName.." PhÇn th­ëng vËt phÈm");
+				CDebug:MessageOut("Distribute"..taskName.." PhÇn th­ëng vËt phÈm");
 			end;
 			
 			-- Èç¹û½±ÀøµÄÀàĞÍÊÇ½ğÇ®
 			if strAward==TaskAward.AwardMoney then
 				nMoney = tonumber(taskAwardFile:getCell(aryTaskAward[i][2],"MoneyNum"));
 				Earn(nMoney);
-				CDebug:MessageOut("Ph¸t tÆng "..taskName.." PhÇn th­ëng ng©n l­îng:"..nMoney);
+				CDebug:MessageOut("Distribute"..taskName.." PhÇn th­ëng ng©n l­îng:"..nMoney);
 			end;
 
 			-- Èç¹û½±ÀøµÄÀàĞÍÊÇ¾­Ñé
 			if strAward==TaskAward.AwardExp then
 				nExp = tonumber(taskAwardFile:getCell(aryTaskAward[i][2],"ExpNum"));
 				ModifyExp(nExp);
-				CDebug:MessageOut("Ph¸t tÆng "..taskName.." PhÇn th­ëng kinh nghiÖm:"..nExp);
+				CDebug:MessageOut("Distribute"..taskName.." PhÇn th­ëng kinh nghiÖm:"..nExp);
 			end;
 
 			-- Èç¹û½±ÀøµÄÀàĞÍÊÇÉùÍû
 			if strAward==TaskAward.AwardRepute then
 				nRepute = tonumber(taskAwardFile:getCell(aryTaskAward[i][2],"ReputeNum"));
 				ModifyReputation(nRepute, 0); -- ÎŞÏŞÖÆÀàĞÍÔö¼ÓÉùÍû
-				CDebug:MessageOut("Ph¸t tÆng "..taskName.." PhÇn th­ëng danh väng:"..nRepute);
+				CDebug:MessageOut("Distribute"..taskName.." PhÇn th­ëng danh väng:"..nRepute);
 			end;
 			
 			-- Èç¹û½±ÀøÊÇ¿ªÊ¼Ò»¸öĞÂÈÎÎñ
@@ -283,7 +283,7 @@ CTask = {
 				
 				if strTask~="" and strTask~=nil then
 					self:StartTask(strTask);
-					CDebug:MessageOut("Ph¸t tÆng "..taskName.." PhÇn th­ëng nhiÖm vô míi:"..strTask);
+					CDebug:MessageOut("Distribute"..taskName.." PhÇn th­ëng nhiÖm vô míi:"..strTask);
 				end;
 			end;
 
@@ -419,7 +419,7 @@ CTask = {
 		end;
 		
 		if nCheck==getn(taskCondition) then
-			CDebug:MessageOut(taskName.." §¹t ®­îc toµn bé "..getn(taskCondition).."  ®iÒu kiÖn nhiÖm vô toµn bé ®¹t ®Õn ");	
+			CDebug:MessageOut(taskName.." Achieved all"..getn(taskCondition).."  ®iÒu kiÖn nhiÖm vô toµn bé ®¹t ®Õn ");	
 			return 1;
 		else
 			return 0;
@@ -663,7 +663,7 @@ CTask = {
 		-- Èç¹û·µ»ØµÄÊı×éÎª1¸ö³ÉÔ±ÔòÖ±½ÓÓÃ SAY£¬·ñÔòÓÃ TALK ½øĞĞ¶à·Ö¶Î
 		if getn(aryTaskText)==1 then
 			aryTaskText[1] = self:SetTaskSayColor(aryTaskText[1]);
-			Say(aryTaskText[1],1,"KÕt thóc ®èi tho¹i/"..funBack);
+			Say(aryTaskText[1],1,"End dialogue/"..funBack);
 		else
 			for i=1, getn(aryTaskText) do
 				aryTaskText[i] = self:SetTaskSayColor(aryTaskText[i]);

@@ -129,7 +129,7 @@ ID	CommandType	TargetMap	TargetDisplayName	ScriptFile	ScriptFunc
 1128	0	303	Nghi Hßa	\script\task\tasklink\talktrigger.lua	talktask
 1129	0	303	D­¬ng NguyÖt s­ th¸i	\script\task\tasklink\talktrigger.lua	talktask
 1130	0	209	Long T¹i Thiªn	\script\task\tasklink\talktrigger.lua	talktask
-1131	0	209	Bµng L· Väng	\script\task\tasklink\talktrigger.lua	talktask
+1131	0	209	Pang Luwang	\script\task\tasklink\talktrigger.lua	talktask
 1132	0	209	TrÇn Chung H¹c	\script\task\tasklink\talktrigger.lua	talktask
 1133	0	209	Tèng Nguyªn An	\script\task\tasklink\talktrigger.lua	talktask
 1134	0	209	M· TŞnh Sinh	\script\task\tasklink\talktrigger.lua	talktask
@@ -144,7 +144,7 @@ ID	CommandType	TargetMap	TargetDisplayName	ScriptFile	ScriptFunc
 1143	0	305	§­êng Xu©n	\script\task\tasklink\talktrigger.lua	talktask
 1144	0	305	§­êng V©n	\script\task\tasklink\talktrigger.lua	talktask
 1145	0	305	§­êng UyÓn Nhi	\script\task\tasklink\talktrigger.lua	talktask
-1146	0	400	Xa phu §¹i Lı	\script\task\tasklink\talktrigger.lua	talktask
+1146	0	400	Dali Coachman	\script\task\tasklink\talktrigger.lua	talktask
 1147	0	400	Chñ Kim hoµn	\script\task\tasklink\talktrigger.lua	talktask
 1148	0	400	Thñ khè	\script\task\tasklink\talktrigger.lua	talktask
 1149	0	400	Chñ töu lÇu	\script\task\tasklink\talktrigger.lua	talktask
@@ -155,21 +155,21 @@ ID	CommandType	TargetMap	TargetDisplayName	ScriptFile	ScriptFunc
 1154	0	400	Chñ TiÖm Nam phôc	\script\task\tasklink\talktrigger.lua	talktask
 1155	0	400	Chñ TiÖm N÷ phôc	\script\task\tasklink\talktrigger.lua	talktask
 1156	0	407	B¹ch Doanh Doanh	\script\task\tasklink\talktrigger.lua	talktask
-1157	0	407	C©u S¸ch	\script\task\tasklink\talktrigger.lua	talktask
+1157	0	407	Gou Sach	\script\task\tasklink\talktrigger.lua	talktask
 1158	0	407	Ph­¬ng Viªn	\script\task\tasklink\talktrigger.lua	talktask
-1159	0	407	V­u Dung	\script\task\tasklink\talktrigger.lua	talktask
-1160	0	407	T©y §å	\script\task\tasklink\talktrigger.lua	talktask
+1159	0	407	Wu Dung	\script\task\tasklink\talktrigger.lua	talktask
+1160	0	407	Xitu	\script\task\tasklink\talktrigger.lua	talktask
 1161	0	407	LiÔu T©n Tróc	\script\task\tasklink\talktrigger.lua	talktask
-1162	0	407	Ng« Ng«n	\script\task\tasklink\talktrigger.lua	talktask
-1163	0	407	Hïng LËp	\script\task\tasklink\talktrigger.lua	talktask
+1162	0	407	Wu Yan	\script\task\tasklink\talktrigger.lua	talktask
+1163	0	407	Xiong Li	\script\task\tasklink\talktrigger.lua	talktask
 1164	0	407	Th¸i Quang	\script\task\tasklink\talktrigger.lua	talktask
 1165	0	404	Sµi Hoµng Nhi	\script\task\tasklink\talktrigger.lua	talktask
-1166	0	404	Hé MÉn	\script\task\tasklink\talktrigger.lua	talktask
-1167	0	404	L­u Thanh Mi	\script\task\tasklink\talktrigger.lua	talktask
-1168	0	404	Chu Tö V¨n	\script\task\tasklink\talktrigger.lua	talktask
+1166	0	404	Hu Min	\script\task\tasklink\talktrigger.lua	talktask
+1167	0	404	Liu Qingmei	\script\task\tasklink\talktrigger.lua	talktask
+1168	0	404	Zhou Ziwen	\script\task\tasklink\talktrigger.lua	talktask
 1169	0	404	Hå Man Thµnh	\script\task\tasklink\talktrigger.lua	talktask
-1170	0	404	Hµ Hµi	\script\task\tasklink\talktrigger.lua	talktask
-1171	0	404	X¶o X¶o	\script\task\tasklink\talktrigger.lua	talktask
+1170	0	404	Ha Hai	\script\task\tasklink\talktrigger.lua	talktask
+1171	0	404	Qiaoqiao	\script\task\tasklink\talktrigger.lua	talktask
 1172	0	202	Vi ¦ng	\script\task\tasklink\talktrigger.lua	talktask
 1173	0	202	Tr­¬ng V©n	\script\task\tasklink\talktrigger.lua	talktask
 1174	0	202	B¸ch Thóy B×nh	\script\task\tasklink\talktrigger.lua	talktask
@@ -196,23 +196,23 @@ ID	CommandType	TargetMap	TargetDisplayName	ScriptFile	ScriptFunc
 1195	0	311	L¹c Ph¸ch S¬n tÆc	\script\task\tasklink\talktrigger.lua	talktask
 1196	0	319	Lam D· Quû	\script\task\tasklink\talktrigger.lua	talktask
 1197	0	326	Kim Phông	\script\task\tasklink\talktrigger.lua	talktask
-1198	0	102	ThuyÒn Phu §µo Hoa ®¶o	\script\task\tasklink\talktrigger.lua	talktask
+1198	0	102	Boatman of Peach Blossom Island	\script\task\tasklink\talktrigger.lua	talktask
 1199	0	104	ThuyÒn phu H¶i T©n	\script\task\tasklink\talktrigger.lua	talktask
 1200	0	106	H­íng Ty Thanh	\script\task\tasklink\talktrigger.lua	talktask
-1201	0	107	§­êng Ninh	\script\task\tasklink\talktrigger.lua	talktask
+1201	0	107	Tang Ning	\script\task\tasklink\talktrigger.lua	talktask
 1202	0	604	D­¬ng NghiÖp	\script\task\tasklink\talktrigger.lua	talktask
 1203	0	604	Tèng qu©n tr­ëng hé vÖ	\script\task\tasklink\talktrigger.lua	talktask
 1204	0	601	Thñ vÖ bé l¹c	\script\task\tasklink\talktrigger.lua	talktask
 1205	0	602	Nhiªu L©n	\script\task\tasklink\talktrigger.lua	talktask
 1206	0	600	Môc NghÜa	\script\task\tasklink\talktrigger.lua	talktask
 1207	0	600	Tiªu Thiªn Hùu	\script\task\tasklink\talktrigger.lua	talktask
-1208	0	408	Téc tr­ëng Miªu LÜnh	\script\task\tasklink\talktrigger.lua	talktask
+1208	0	408	Miaoling Chieftain	\script\task\tasklink\talktrigger.lua	talktask
 1209	0	403	§oµn Tè ThuËn	\script\task\tasklink\talktrigger.lua	talktask
-1210	0	400	TrŞnh Qu¸n Chi	\script\task\tasklink\talktrigger.lua	talktask
-1211	0	400	§æng Giµ La	\script\task\tasklink\talktrigger.lua	talktask
-1212	0	400	TrÇn LËp Hµnh	\script\task\tasklink\talktrigger.lua	talktask
-1213	0	400	L­u §iÓn	\script\task\tasklink\talktrigger.lua	talktask
-1214	0	400	Cao Th¨ng TuyÒn	\script\task\tasklink\talktrigger.lua	talktask
+1210	0	400	Zheng Guanzhi	\script\task\tasklink\talktrigger.lua	talktask
+1211	0	400	Dong Jia La	\script\task\tasklink\talktrigger.lua	talktask
+1212	0	400	Chen Liheng	\script\task\tasklink\talktrigger.lua	talktask
+1213	0	400	Liu Dian	\script\task\tasklink\talktrigger.lua	talktask
+1214	0	400	Cao Thang Tuyen	\script\task\tasklink\talktrigger.lua	talktask
 1215	0	150	Chñ TiÖm vò khİ	\script\task\tasklink\talktrigger.lua	talktask
 1216	0	150	Chñ D­îc ®iÕm	\script\task\tasklink\talktrigger.lua	talktask
 1217	0	150	Chñ T¹p hãa	\script\task\tasklink\talktrigger.lua	talktask
@@ -221,12 +221,12 @@ ID	CommandType	TargetMap	TargetDisplayName	ScriptFile	ScriptFunc
 1220	0	150	Chñ Kim hoµn	\script\task\tasklink\talktrigger.lua	talktask
 1221	0	150	Chñ tiÒn trang	\script\task\tasklink\talktrigger.lua	talktask
 1222	0	150	Ch©n Tö §¬n	\script\task\tasklink\talktrigger.lua	talktask
-1223	0	150	ChØ huy sø	\script\task\tasklink\talktrigger.lua	talktask
+1223	0	150	Commander	\script\task\tasklink\talktrigger.lua	talktask
 1224	0	150	Bé ®Çu	\script\task\tasklink\talktrigger.lua	talktask
 1225	0	150	Sø gi¶ Tµng KiÕm	\script\task\tasklink\talktrigger.lua	talktask
 1226	0	150	Chñ l«i ®µi	\script\task\tasklink\talktrigger.lua	talktask
 1227	0	150	Hµnh C­íc Th­¬ng Nh©n	\script\task\tasklink\talktrigger.lua	talktask
-1228	0	150	Lı TiÕn Dòng	\script\task\tasklink\talktrigger.lua	talktask
+1228	0	150	Li Tian Yong	\script\task\tasklink\talktrigger.lua	talktask
 1229	0	150	H¹ HÇu CÇm	\script\task\tasklink\talktrigger.lua	talktask
 1230	0	150	Tr­¬ng B¸ H¸n	\script\task\tasklink\talktrigger.lua	talktask
 1231	0	150	Thu Dung	\script\task\tasklink\talktrigger.lua	talktask
@@ -234,10 +234,10 @@ ID	CommandType	TargetMap	TargetDisplayName	ScriptFile	ScriptFunc
 1233	0	150	H¹ HÇu Anh	\script\task\tasklink\talktrigger.lua	talktask
 1234	0	150	H¹ HÇu Liªn	\script\task\tasklink\talktrigger.lua	talktask
 1235	0	150	L­u HuyÒn Thanh	\script\task\tasklink\talktrigger.lua	talktask
-1236	0	150	M·nh Nham 	\script\task\tasklink\talktrigger.lua	talktask
+1236	0	150	Manh Nham	\script\task\tasklink\talktrigger.lua	talktask
 1237	0	150	Phïng §ång Nhi	\script\task\tasklink\talktrigger.lua	talktask
 1238	0	150	TrÇn MÉn	\script\task\tasklink\talktrigger.lua	talktask
-1239	0	150	T­ëng Duy	\script\task\tasklink\talktrigger.lua	talktask
+1239	0	150	Jiang Wei	\script\task\tasklink\talktrigger.lua	talktask
 1240	0	100	D· TÈu	\script\task\tasklink\talktrigger.lua	talktask
 1241	0	100	Chñ TiÖm vò khİ	\script\task\tasklink\talktrigger.lua	talktask
 1242	0	100	Chñ D­îc ®iÕm	\script\task\tasklink\talktrigger.lua	talktask
@@ -246,10 +246,10 @@ ID	CommandType	TargetMap	TargetDisplayName	ScriptFile	ScriptFunc
 1245	0	100	Chñ TiÖm N÷ phôc	\script\task\tasklink\talktrigger.lua	talktask
 1246	0	100	Chñ Kim hoµn	\script\task\tasklink\talktrigger.lua	talktask
 1247	0	100	Chñ tiÒn trang	\script\task\tasklink\talktrigger.lua	talktask
-1248	0	100	L©m D­îc S­	\script\task\tasklink\talktrigger.lua	talktask
-1249	0	100	Lı Phong Thu	\script\task\tasklink\talktrigger.lua	talktask
+1248	0	100	Lin the Apothecary	\script\task\tasklink\talktrigger.lua	talktask
+1249	0	100	Li Feng Qiu	\script\task\tasklink\talktrigger.lua	talktask
 1250	0	100	Chñ l«i ®µi	\script\task\tasklink\talktrigger.lua	talktask
-1251	0	100	ChØ huy sø	\script\task\tasklink\talktrigger.lua	talktask
+1251	0	100	Commander	\script\task\tasklink\talktrigger.lua	talktask
 1252	0	100	LÔ quan	\script\task\tasklink\talktrigger.lua	talktask
 1253	0	100	Bé ®Çu	\script\task\tasklink\talktrigger.lua	talktask
 1254	0	100	Sø gi¶ m«n ph¸i	\script\task\tasklink\talktrigger.lua	talktask
@@ -263,7 +263,7 @@ ID	CommandType	TargetMap	TargetDisplayName	ScriptFile	ScriptFunc
 1262	0	100	V­¬ng NghiÖp VÜ	\script\task\tasklink\talktrigger.lua	talktask
 1263	0	100	Tiªu s­	\script\task\tasklink\talktrigger.lua	talktask
 1264	0	100	Nha dŞch	\script\task\tasklink\talktrigger.lua	talktask
-1265	0	100	Uy NhÜ Tèn	\script\task\tasklink\talktrigger.lua	talktask
+1265	0	100	Wei Ru Tin	\script\task\tasklink\talktrigger.lua	talktask
 1266	0	100	H¹ KiÖt	\script\task\tasklink\talktrigger.lua	talktask
 1267	0	100	Chung Phãng	\script\task\tasklink\talktrigger.lua	talktask
 1268	0	100	Chñ töu lÇu	\script\task\tasklink\talktrigger.lua	talktask

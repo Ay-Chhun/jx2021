@@ -7,8 +7,8 @@ Include("\\script\\online\\3festival\\3festival_head.lua")
 function OnUse()
 	Say("Më Hép Ngäc Bµi Huy Hoµng ph¶i cã Ch×a Khãa Ngäc Huy Hoµng, b¹n muèn më chø?",
 		2,
-		"§ång ý/confirm_open",
-		"Kh«ng cã g×/nothing")
+		"Agree/confirm_open",
+		"Nothing/nothing")
 end
 
 function confirm_open()
@@ -21,7 +21,7 @@ function confirm_open()
 		end	
 		if DelItem(2,0,1076,1) == 1 and DelItem(2,0,1072,1) == 1 then
 			AddItem(tItemInfo[19][2],tItemInfo[19][3],tItemInfo[19][4],1);
-			Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tItemInfo[19][1].."1 tÊm!");
+			Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tItemInfo[19][1].."1 plaque!");
 			local nRand = random(1,5);
 			lspf_AddLingShiInBottle(nRand,1);
 			Msg2Player("B¹n nhËn ®­îc "..nRand.." - (cÊp) 1 viªn Linh th¹ch, ®· bá vµo Tô Linh ®Ønh.");
@@ -36,7 +36,7 @@ function confirm_open()
 				if nRetCode == 1 then
 					SetTask(TASK_USE_TIE_BOX,0);
 					Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 "..tItemInfo[25][1]);
-					Msg2Global("Ng­êi ch¬i"..GetName().."Më Hép Ngäc Bµi Huy Hoµng nhËn ®­îc 1 "..tItemInfo[25][1]);
+					Msg2Global("Player"..GetName().."Më Hép Ngäc Bµi Huy Hoµng nhËn ®­îc 1 "..tItemInfo[25][1]);
 					WriteLog("[08 Tam tiÕt liªn th«ng]:"..GetName().."Më Hép Ngäc Bµi Huy Hoµng nhËn ®­îc 1 "..tItemInfo[25][1]);
 				else
 					WriteLog("[Lçi 08 Tam tiÕt liªn th«ng]:"..GetName().."Më Hép Ngäc Bµi Huy Hoµng nhËn ®­îc 1 "..tItemInfo[25][1].." thÊt b¹i, ký hiÖu:"..nRetCode);

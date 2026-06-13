@@ -27,7 +27,7 @@ function main()
 		end
 		local tSay = {
 			"Ta muèn nhËn th­ëng/qht_award_tong_fight_flag_tiexue",
-			"Ra khái/nothing",
+			"Leave/nothing",
 		}
 		Say("<color=green>"..szNpcName..":<color>bæn bang cÊp 80 trë lªn, häc ®ñ kü n¨ng cÊp 55, nhËp bang qu¸ 1 ngµy,   sÏ nhËn ®­îc mét phÇn thuæng phong phó t¹i ®©y.",getn(tSay), tSay);
 		return 1;
@@ -41,7 +41,7 @@ function main()
 		end
 		local tSay = {
 			"Ta muèn nhËn th­ëng/qht_award_tong_fight_flag",
-			"Ra khái/nothing",
+			"Leave/nothing",
 		}
 		Say("<color=green>"..szNpcName..":<color>bæn bang cÊp 80 trë lªn, häc ®ñ kü n¨ng cÊp 55, nhËp bang qu¸ 1 ngµy,   sÏ nhËn ®­îc mét phÇn thuæng t¹i ®©y.",getn(tSay), tSay);
 		return 1;

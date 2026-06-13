@@ -140,7 +140,7 @@ function DoArrest(pTargetIndex)
 		local nOldPlayer = PlayerIndex
 		PlayerIndex = pTargetIndex
 		-- ‘› ±ºÚµ•Ã· æ“ªœ¬∞…
-		Msg2Player("Bπn Æang bﬁ "..szName.."Truy  n∑")
+		Msg2Player("Bπn Æang bﬁ "..szName.."Pursue")
 	end
 end
 

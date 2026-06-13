@@ -25,25 +25,25 @@ Zgc_cong_task_usemapid = {
 	{327,"¤ M«ng Bé"},
 	{401,"§iÓm Th­¬ng s¬n"},
 	{306,"Giang T©n Th«n"},
-	{307,"Phong §«"},
-	{405,"Ch©n nói Vò L¨ng"},
+	{307,"Phong Do"},
+	{405,"Foot of Vu Lang Mountain"},
 	{406,"Vò L¨ng s¬n"},
 	{326,"Mé TuyÕt s¬n trang"},
 	{310,"KiÕm M«n quan"},
 	{311,"Phôc Ng­u s¬n"},
 	{218,"Linh B¶o s¬n"},
-	{202,"H¹nh Hoa th«n"},
+	{202,"Hanh Hoa village"},
 	{151,"V©n Méng Tr¹ch"},			
-	{601,"§¹i Th¶o Nguyªn 1"},
-	{602,"§¹i Th¶o Nguyªn 2"},
+	{601,"Great Grassland 1"},
+	{602,"Great Grassland 2"},
 	{103,"§«ng H¶i H¶i T©n 1"},
 	{104,"§«ng H¶i H¶i T©n 2"},
-	{102,"§µo Hoa ®¶o"},
+	{102,"Peach Blossom Island"},
 	{207,"NhÞ Long s¬n"},
 	{217,"D· Tr­ l©m"},
-	{208,"L­¬ng S¬n B¹c"},
+	{208,"Liang Son Bac"},
 	{604,"Nh¹n M«n quan"},
-	{106,"Long TuyÒn Th«n"},
+	{106,"Long Tuyen Village"},
 	{107,"Vò Di s¬n"},
 	{600,"Bé l¹c V­¬ng Kú"},
 }
@@ -77,17 +77,17 @@ function OnUse(id)
 				npc_index = CreateNpc(Zgc_conf_task_boss[7],Zgc_conf_task_boss[7],mapID,X,Y,-1,1,0,0)
 				SendTongMessage(GetName().."Sö dông Sinh ThÇn Cang gäi ra Bé Phi Yªn!")
 				AddGlobalNews(GetTongName().."Cã tin bän hä ®ang giao ®Êu víi Bé Phi Yªn!")
-				WriteLogEx(strLogCaption, "gäi ra", "1", "Bé Phi Yªn", "", GetTongName())
+				WriteLogEx(strLogCaption, "summon", "1", "Bé Phi Yªn", "", GetTongName())
 			elseif boss_step <= 85 then
 				local boss_seq = random(5,6)
 				npc_index = CreateNpc(Zgc_conf_task_boss[boss_seq],Zgc_conf_task_boss[boss_seq],mapID,X,Y,-1,1,0,0)
 				SendTongMessage(GetName().."Sö dông Sinh ThÇn Cang gäi ra:"..Zgc_conf_task_boss[boss_seq].."!")
-				WriteLogEx(strLogCaption, "gäi ra", "1", Zgc_conf_task_boss[boss_seq], "", GetTongName())
+				WriteLogEx(strLogCaption, "summon", "1", Zgc_conf_task_boss[boss_seq], "", GetTongName())
 			else
 				boss_seq = random(1,4)
 				npc_index = CreateNpc(Zgc_conf_task_boss[boss_seq],Zgc_conf_task_boss[boss_seq],mapID,X,Y,-1,1,0,0)
 				SendTongMessage(GetName().."Sö dông Sinh ThÇn Cang gäi ra:"..Zgc_conf_task_boss[boss_seq].."!")
-				WriteLogEx(strLogCaption, "gäi ra", "1", Zgc_conf_task_boss[boss_seq], "", GetTongName())
+				WriteLogEx(strLogCaption, "summon", "1", Zgc_conf_task_boss[boss_seq], "", GetTongName())
 			end
 			SetNpcScript(npc_index,"\\script\\item\\conftaskbosscreate.lua")			
 		end
@@ -124,7 +124,7 @@ function OnDeath(index)
 			SetNpcScript(box_index,"\\script\\item\\zgcconftaskboxdialog.lua")
 			local num_save = GetUnitCurStates(box_index,2)
 			AddUnitStates(box_index,2,-num_save)
-			WriteLog("NhiÖm vô Bang Héi Bé Phi Yªn: BOSS ["..npc_name.."] CHÕT!")
+			WriteLog("NhiÖm vô Bang Héi Bé Phi Yªn: BOSS ["..npc_name.."] DEAD!")
 			break
 		end
 	end

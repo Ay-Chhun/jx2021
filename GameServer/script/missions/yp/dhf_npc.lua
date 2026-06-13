@@ -3,9 +3,9 @@
 Include("\\script\\missions\\yp\\award.lua")
 
 tNpcName = {
-	{"<color=green>§oµn Hßa Phong<color>: ","Phô v­¬ng b¶o ta chuÈn bŞ cña håi m«n, nh­ng chiÕn sù liªn miªn, quèc khè trèng rçng th× lµm sao cßn lôa lµ gÊm vãc!"},
-	{"<color=green>§« Tïng C¸t Ngâa<color>: ","A di ®µ phËt! C¸m ¬n c¸c vŞ, sè da nµy sÏ do bæn tù qu¶n lı gióp, thiÖn tai! ThiÖn tai!"},
-	{"<color=green>Lı KÕ Minh<color>: ","Ha ha, bän khèn Thiªn ¢m Gi¸o, h·y tr¶ ch©u b¸u l¹i cho l·o tö!"},	
+	{"<color=green>Duan Hefeng<color>:","Phô v­¬ng b¶o ta chuÈn bŞ cña håi m«n, nh­ng chiÕn sù liªn miªn, quèc khè trèng rçng th× lµm sao cßn lôa lµ gÊm vãc!"},
+	{"<color=green>Dusong Jiwa<color>:","A di ®µ phËt! C¸m ¬n c¸c vŞ, sè da nµy sÏ do bæn tù qu¶n lı gióp, thiÖn tai! ThiÖn tai!"},
+	{"<color=green>Li Jiming<color>:","Ha ha, bän khèn Thiªn ¢m Gi¸o, h·y tr¶ ch©u b¸u l¹i cho l·o tö!"},	
 };
 
 function main()
@@ -30,7 +30,7 @@ function main()
 	local strtab = {
 		"NhËn phÇn th­ëng ®é cèng hiÕn (Mçi tuÇn chØ ®­îc nhËn 1 lÇn)/#dhf_talk_1("..nType..")",
 		"T×m hiÓu vÒ ®é cèng hiÕn/#dhf_talk_2("..nType..")",
-		"Kh«ng cã viÖc g×!/nothing",
+		"Nothing to do!/nothing",
 	}
 	Say(g_NpcName..tNpcName[nType][2].."§é cèng hiÕn hiÖn t¹i: <color=yellow>"..GetTask(TASK_FIELD_PVP_GXD).."<color>.",
 		getn(strtab),

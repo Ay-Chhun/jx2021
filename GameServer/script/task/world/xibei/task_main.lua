@@ -32,11 +32,11 @@ HUANXIANG_CURSE = {
 --[¶ÔÓ¦µÄÅäÖÃ±í¸±Ààid] = {"³ÆºÅÃû³Æ",¶ÔÓ¦±äÁ¿,¶ÔÓ¦±äÁ¿Öµ
 YIPINGTANG_TITLE = {
 	[1] = {"NhÊt PhÈm §­êng-T©n BŞ",2030,17},
-	[2] = {"NhÊt PhÈm §­êng-Thİch Kh¸ch",2030,34},
-	[3] = {"NhÊt PhÈm §­êng-Phi Hé",2031,9},
-	[4] = {"NhÊt PhÈm §­êng-Hæ Dùc",2031,23},
-	[5] = {"NhÊt PhÈm §­êng-Vò VÖ",2031,52},
-	[6] = {"NhÊt PhÈm §­êng-Gian TÕ",2031,61},
+	[2] = {"First Grade Hall-Assassin",2030,34},
+	[3] = {"First Grade Hall-Flying Guard",2031,9},
+	[4] = {"First Grade Hall-Tiger Wing",2031,23},
+	[5] = {"First Grade Hall-Martial Guard",2031,52},
+	[6] = {"First Grade Hall-Spy",2031,61},
 	[7] = {"§iÖp ¶nh kú hiÖp",2031,68},
 	}
 
@@ -143,9 +143,9 @@ function task_001_03_0_1()
 
 local strTalk = {
 	"µ, cã c¸ch råi. HiÖn giê tuy kh«ng cã ng­êi thËt, nh­ng phôc søc cña thiÕu n÷ T©y Vùc diªm dóa phong t×nh, mµu s¾c ®éc ®¸o, ®­îc xem mét lÇn th× phong c¸ch tù nhiªn sÏ ®­îc lång vµo tranh, vËy còng tháa lßng.",
-	"Nh­ng tiÒn bèi…..",
+	"But elder...",
 	"<sex> lµ ng­êi hiÓu tranh, ph¶i biÕt r»ng c¶m xóc lu«n d©ng trµo. Chóng ta chia nhau lµm, ta ®i mµi mùc, ng­¬i ®Õn phİa B¾c thµnh lÊy bé y phôc cña ng­êi ®Ñp Ba T­ vµ ng­êi ®µn bµ T©y Vùc, ta sÏ vÏ nªn bøc tranh giai nh©n tuyÖt ®Ñp. ",
-	"VËy……",
+	"Then",
 	"Mau ®i ®i, c¶m xóc sÏ tan biÕn mÊt, cã thÓ ®­a thiÕu n÷ T©y Vùc vµo tranh lµ mét niÒm vui ®èi víi ta.",
 	"… (xem ra chØ cÇn tháa m·n niÒm ao ­íc cña «ng ta ®·, råi tİnh sau)",
 	}
@@ -271,8 +271,8 @@ function task_002_01_0()
 local strTalk = {
 	"§©y cã ph¶i lµ T«n NhŞ Liªn tiªn sinh kh«ng?",
 	"(H¬i r­îu nång nÆc) Nµy………T×nh lµ g× mµ khiÕn lßng ng­êi ®iªn ®¶o..., tiÓu nhŞ, mang thªm mét b×nh n÷ nhi hång…………",
-	"Th­a tiªn sinh?",
-	"(bÊt tØnh nh©n sù)…………",
+	"Sir?",
+	"(passed out cold)",
 	"…… (ph¶i t×m c¸ch ®¸nh thøc «ng ta dËy, kh¸ch s¹n lµ n¬i uèng r­îu, kh¸ch say xØn lµ chuyÖn b×nh th­êng, tiÓu nhŞ h·y ®­a Thuèc tØnh r­îu)",
 	}
 
@@ -287,7 +287,7 @@ end
 function task_002_01_1()
 
 local strTalk = {
-	"(say ®Õn bÊt tØnh nh©n sù)………",
+	"(drunk to the point of passing out)",
 	"(Kh¸ch s¹n lµ n¬i uèng r­îu, kh¸ch say xØn lµ chuyÖn b×nh th­êng, TiÓu nhŞ h·y ®­a Thuèc tØnh r­îu)"
 	}
 
@@ -299,7 +299,7 @@ end
 function task_002_02_0()
 
 local strTalk = {
-	"Kh¸ch quan nghØ trä hay ¨n c¬m?",
+	"Honored guest, will you lodge here or have a meal?",
 	"Ta muèn hái ng­¬i cã Thuèc tØnh r­îu kh«ng?",
 	"Cã, nh­ng thËt kh«ng may, mÊy h«m tr­íc ®· b¸n cho T©y B¾c tr¸ng sÜ råi, nãi r»ng muèn thi uèng r­îu.",
 	"Cã chuyÖn nµy µ? Ng­¬i cã biÕt ng­êi say r­îu kia kh«ng? ¤ng ta say bao l©u råi?",
@@ -326,7 +326,7 @@ local strTalk = {};
 	if GetItemCount(2,0,689) >= 10 then
 		strTalk = {
 			"§óng lµ, cø ë ®©y say xØn, nÕu say ®Õn tr¨m n¨m nh­ ng­êi x­a, khi tØnh dËy ®· bá lë mäi chuyÖn! TiÓu nhŞ ca, h·y cho anh ta uèng thuèc ®i.",
-			"§­îc, uèng bao nhiªu ®©y ch¾c sÏ tØnh.",
+			"Alright, drinking this much should surely sober him.",
 			"…………"
 			}
 		TalkEx("",strTalk);
@@ -358,7 +358,7 @@ function task_002_03_1()
 
 local strTalk = {
 	"T¹i h¹ ®· cho T«n NhŞ gia uèng thuèc tØnh r­îu, ch¾c còng ®· tØnh l¹i råi, <sex> h·y ®i gÆp anh ta.",
-	"VÊt v¶ cho tiÓu nhŞ ca qu¸.",
+	"What a lot of trouble for brother waiter.",
 	}
 
 	TalkEx("",strTalk);
@@ -371,7 +371,7 @@ function task_002_04_0()
 local strTalk = {
 	"……¤i…… N÷ nhi hång, n÷ nhi ®Ñp, n÷ nhi dŞu dµng nh­ ThËp Tam Muéi…… ThËp Tam Muéi, ThËp Tam Muéi, sao l¹i tuyÖt t×nh, khiÕn ta ®au lßng……",
 	"(cã vÎ tØnh dËy l¹i lÈn thÈn h¬n, ThËp Tam Muéi lµ ai?)",
-	"ThËp Tam Muén……",
+	"Thirteenth Sister",
 	"(Xem ra ®· m¾c bÖnh t­¬ng t­ råi, ®· vËy l¹i cßn uèng r­îu, cã uèng thuèc tØnh r­îu còng v« İch)",
 	"ThËp Tam Muéi, nh×n ta ®i, cã ph¶i chÕt v× nµng ta còng cam lßng…… ThËp Tam Muéi …… N­íc ch¶y hoa tr«i, nµng bªn t©y ta bªn ®«ng……",
 	"(Nãi c©u nµy kh«ng biÕt bao nhiªu lÇn, h·y hái TiÓu nhŞ xem sao)",
@@ -387,7 +387,7 @@ end
 function task_002_04_1()
 
 local strTalk = {
-	"ThËp Tam Muéi, tim ta……",
+	"Thirteenth Sister, my heart.",
 	"(Nãi c©u nµy kh«ng biÕt bao nhiªu lÇn, h·y hái TiÓu nhŞ xem sao)",
 	}
 
@@ -402,7 +402,7 @@ local strTalk = {
 	"VŞ T«n kh¸ch quan kia ®· tØnh råi µ?",
 	"TØnh chót ®Ønh, nh­ng kh«ng tØnh h¼n, cø l¶m nh¶m kh«ng biÕt bao nhiªu lÇn, «i dµo, thuèc kia kh«ng cã t¸c dông råi. Ng­¬i nãi xem anh ta ®ê ng­êi ra l©u råi, suèt ngµy say xØn, lµ v× chuyÖn g×? ThËp Tam Muéi  anh ta nãi ®Õn lµ ai?",
 	"Kh¸ch quan kh«ng biÕt råi. ThËp Tam Muéi anh ta nãi ®Õn lµ Xu©n ThËp Tam N­¬ng chñ qu¸n nµy, nµng Êy lµ ®¹i mü nh©n næi tiÕng t¹i Long M«n trÊn, rÊt xinh ®Ñp, bän ®µn «ng trong trÊn nh×n thÊy nµng kh«ng ai kh«ng hån siªu ph¸ch l¹c, ch¶y n­íc d·i rßng rßng.",
-	"Ch¼ng tr¸ch anh hïng nhôt chİ, th× ra lµ gÆp mü nh©n.",
+	"No wonder the hero lost his spirit; so it was a beauty he met.",
 	"§óng vËy, T«n kh¸ch quan cßn khê h¬n, võa thÊy n÷ chñ qu¸n chóng t«i ®· mÊt hån, suèt ngµy l¶i nh¶i “ThËp Tam Muéi ” lu«n miÖng, tiÕc lµ nµng Êy kh«ng ®Ó m¾t ®Õn anh ta.",
 	}
 
@@ -418,7 +418,7 @@ local strTalk = {
 	"§óng vËy, tõ khi gÆp n÷ chñ qu¸n cña chóng t«i, anh ta ngµy nµo còng ®Õn uèng r­îu, say råi ngñ, tØnh dËy l¹i uèng, miÖng lóc nµo còng l¶m nh¶m, kh«ng ng©m th¬ còng gäi tªn n÷ chñ qu¸n cña chóng t«i.",
 	"¤i, r­îu t­¬ng t­ dÔ uèng kh«ng dÔ tØnh, tiÓu nhŞ ca, dïng thªm thuèc tØnh r­îu n÷a ®­îc kh«ng?",
 	"Kh«ng ®­îc, kh«ng ®­îc, thuèc nµy kh«ng ®­îc uèng nhiÒu, tù anh tØnh l¹i míi ®­îc.",
-	"…VËy th× th«i, ®a t¹ tiÓu nhŞ ca. ",
+	"Then so be it. Many thanks, brother waiter.",
 	"(Anh ta gäi tªn Xu©n ThËp Tam N­¬ng kh«ng th«i, xem ra lµ yªu ®¬n ph­¬ng råi, ch¾c ph¶i quay vÒ t×m ¢u D­¬ng tiÒn bèi th­¬ng l­îng)",
 	}
 
@@ -628,7 +628,7 @@ local strTalk = {
 	"<sex> ®· vÒ råi µ! T«n NhŞ Liªn ®· tØnh råi chø?",
 	"T«n tiªn sinh ®· tØnh l¹i råi, «ng ta cßn th¸m thİnh ®­îc NhÊt PhÈm §­êng ®ang chiªu binh m·i m· ë Long M«n trÊn, MËt sø NhÊt PhÈm §­êng ®ang ë gÇn ®ã t×m kiÕm nh©n tµi. Cßn ®©y lµ Th­ mêi NhÊt PhÈm §­êng. Xin tiÒn bèi xem qua.",
 	"(Xem xong th­ mêi) §· ®iÒu ®éng Lı Nguyªn Kh¸nh vµ ThËp §¹i Kim Cang, hµnh ®éng lÇn nµy cña NhÊt PhÈm §­êng qu¶ thËt kh«ng ph¶i chuyÖn nhá, xem ra chóng rÊt xem träng ®ît chiªu binh m·i m· lÇn nµy, Lı Nguyªn Kh¸nh còng xuÊt hiÖn, chØ sî bªn trong cßn cã ©m m­u g× lín h¬n.",
-	"Lı Nguyªn Kh¸nh lµ ai?",
+	"Who is Li Yuanqing?",
 	"Lı Nguyªn Kh¸nh lµ cao thñ thø 3 cña T©y H¹ NhÊt PhÈm §­êng, ng­êi nµy trİ dòng song toµn vµ cã ®Şa vŞ rÊt cao trong NhÊt PhÈm §­êng. Kh«ng ph¶i viÖc hÖ träng y sÏ kh«ng xuÊt hiÖn, viÖc cña NhÊt PhÈm §­êng chØ cÇn y phô tr¸ch th× ch¾c ch¾n sÏ thµnh c«ng, tõ lóc trÎ y ®· cã thÓ ngåi vµo chøc vŞ cao thñ thø 3 cã thÓ thÊy tµi nghÖ cña y cao th©m khã l­êng.",
 	"Th× ra lµ vËy! NhÊt PhÈm §­êng ®Ó Lı Nguyªn Kh¸nh phô tr¸ch viÖc chiªu binh m·i m· lÇn nµy nhÊt ®Şnh sÏ thµnh c«ng. Cßn ThËp §¹i Kim Cang?",
 	"ThËp §¹i Kim Cang lµ tinh anh NhÊt PhÈm §­êng phô tr¸ch hµnh sù vµ truyÒn chØ lÖnh. M­êi ng­êi nµy cã ngo¹i h×nh kú l¹ nh­ng ®Òu lµ cao thñ, lÇn nµy ng­êi ®Õn Long M«n trÊn ®ãn Xa Lu©n B¸ V­¬ng  chİnh lµ mét trong m­êi ng­êi ®ã.",
@@ -752,7 +752,7 @@ end
 function task_005_01_1()
 
 local strTalk = {
-	"Thö th¸ch thø 1: ®Õn nhµ lao gi¶i cøu S¸t thñ Oa Oa ®Ó chøng tá lßng can ®¶m.",
+	"Trial 1: Go to the prison to rescue the assassin Wawa to prove your courage.",
 	"(KÎ nµy kiªu c¨ng nh­ng l¹i cÈn träng, râ rµng ta ®· tù khai m×nh ®ang bŞ Lôc PhiÕn M«n truy n·, cßn b¾t ta m¹o hiÓm, thËt gi¶o ho¹t. Cã ®iÒu nhµ lao Lôc PhiÕn M«n ë ®©u míi ®­îc? Ch¾c ph¶i ®Õn hái ¢u D­¬ng Häa tiÒn bèi th«i.)",
 	}
 
@@ -764,7 +764,7 @@ end
 function task_005_01_2()
 
 local strTalk = {
-	"Thö th¸ch thø 1: ®Õn nhµ lao gi¶i cøu S¸t thñ Oa Oa ®Ó chøng tá lßng can ®¶m.",
+	"Trial 1: Go to the prison to rescue the assassin Wawa to prove your courage.",
 	}
 
 	TalkEx("",strTalk);
@@ -793,7 +793,7 @@ function task_005_02_1()
 
 local strTalk = {
 	"Giê ng­¬i h·y ®Õn BiÖn Kinh t×m B¸ch HiÓu Sinh, ta ®· dïng bå c©u ®­a th­ nãi râ sù t×nh víi «ng ta råi.",
-	"§­îc, v·n bèi sÏ ®i ngay."
+	"Very well, this junior will go at once."
 	}
 
 	TalkEx("",strTalk);
@@ -815,8 +815,8 @@ local strTalk = {
 	AddItem(2,0,692,1,1);--»ñµÃÁùÉÈÃÅÑÌ»ğ
 	SetTask(TASK_XB_ID,19);
 	TalkEx("",strTalk);
-	TaskTip("§Õn "..nMapName.."("..nXpos..", "..nYpos..") dïng Ph¸o hiÖu Lôc PhiÕn m«n ®Ó gÆp Viªn Phi V©n.");
-	Msg2Player("§Õn "..nMapName.."("..nXpos..", "..nYpos..") dïng Ph¸o hiÖu Lôc PhiÕn m«n ®Ó gÆp Viªn Phi V©n.");
+	TaskTip("Arrive"..nMapName.."("..nXpos..", "..nYpos..") dïng Ph¸o hiÖu Lôc PhiÕn m«n ®Ó gÆp Viªn Phi V©n.");
+	Msg2Player("Arrive"..nMapName.."("..nXpos..", "..nYpos..") dïng Ph¸o hiÖu Lôc PhiÕn m«n ®Ó gÆp Viªn Phi V©n.");
 	GivePlayerExp(SkeyXibei,"bukuaiyuanyunfei")
 end
 
@@ -983,14 +983,14 @@ local strTalk = {}
 	 	strTalk = {
 			"Huynh tuy hÕt lßng tu hµnh trõ ma, nh­ng còng cÇn nhí ®Õn ng­êi th©n míi ph¶i. DiÖp L·o rÊt kháe, huynh yªn t©m. ¤ng c« ®¬n mét m×nh ë Phông T­êng , muèn lªn nói th¨m nh­ng tuæi giµ søc yÕu kh«ng thÓ ®i ®­îc. Tuy c¸ch xa ngµn dÆm nh­ng vÉn lo l¾ng cho huynh.",
 			"S­ ®Ö nãi ph¶i, ta qu¶ bÊt hiÕu. S­ ®Ö cã thÓ gióp ta b¸o cho gia phô kh«ng? Ta rÊt kháe, chê lµm xong nhiÖm vô s­ phô giao cho sÏ vÒ th¨m «ng.",
-			"§­îc, mong huynh mau chãng vÒ nhµ."
+			"Very well, I hope you return home soon, senior martial brother."
 			}
 	else
 		strTalk = {
 			"PhiÒn <sex> råi. Ta ®· rêi nhµ ®Õn C«n L«n tu luyÖn míi ®©y ®· ba n¨m, bá cha giµ c« ®¬n mét m×nh ë nhµ, «ng vÉn kháe chø?",
 			"Ng­¬i tuy hÕt lßng tu hµnh trõ ma, nh­ng còng cÇn nhí ®Õn ng­êi th©n míi ph¶i. DiÖp L·o rÊt kháe, ng­¬i yªn t©m. ¤ng c« ®¬n mét m×nh ë Phông T­êng, muèn lªn nói th¨m nh­ng tuæi giµ søc yÕu kh«ng thÓ ®i ®­îc. Tuy c¸ch xa ngµn dÆm nh­ng vÉn lo l¾ng cho ng­¬i.",
 			"Qu¶ thùc ta bÊt hiÕu. <sex> cã thÓ gióp ta b¸o cho gia phô kh«ng? Ta rÊt kháe, chê lµm xong nhiÖm vô s­ phô giao cho sÏ vÒ th¨m «ng.",
-			"§­îc, mong huynh mau chãng vÒ nhµ.",
+			"Very well, I hope you return home soon, senior martial brother.",
 			}
 	end
 
@@ -1034,7 +1034,7 @@ local strTalk = {
 	"<sex> gÆp con trai ta kh«ng? Nã kháe kh«ng?",
 	"DiÖp L·o yªn t©m, huynh Êy rÊt kháe, huynh Êy cßn nãi khi nµo lµm xong viÖc s­ phô giao sÏ vÒ th¨m «ng.",
 	"å, vËy tèt råi, chØ cÇn nã kháe lµ ta yªn t©m. TÆng ng­¬i Yªn M¹c §¹n, c¶m ¬n <sex> ®· gióp ®ì.",
-	"ChuyÖn nhá th«i.",
+	"It was only a small matter.",
 	}
 
 	AddItem(2,0,694,1,1);--µÃµ½ÑÌÄ»µ¯
@@ -1093,19 +1093,19 @@ local strTalk = {};
 			strSay = {
 				"Ai ®Êy? X­ng tªn ®i! D¸m ngang nhiªn c­íp ngôc, chèng ®èi quan phñ, xem Lôc PhiÕn M«n ta kh«ng ra g× µ? TiÕp chiªu!",
 				"§õng nhiÒu lêi, h·y mau th¶ ng­êi cho ta!/#task_005_08_1("..nNpcIndex..")",
-				"ChØ lµ qua ®­êng th«i./Task_Exit",
+				"I am only passing through./Task_Exit",
 				}
 		else
 			strSay = {
 				"Ai ®Êy? X­ng tªn ®i! D¸m ngang nhiªn c­íp ngôc, chèng ®èi quan phñ, xem Lôc PhiÕn M«n ta kh«ng ra g× µ? TiÕp chiªu!",
 				"§õng nhiÒu lêi, h·y mau th¶ ng­êi cho ta!/#task_005_08_2("..nNpcIndex..")",
-				"ChØ lµ qua ®­êng th«i./Task_Exit",
+				"I am only passing through./Task_Exit",
 				}
 		end
 		SelectSay(strSay);
 	elseif GetTask(TASK_XB_ID) == 23 then
 		strTalk = {
-			"D­êng nh­ t×m nh»m ng­êi råi, h·y ®Õn "..Map_Data[GetTask(YUANFEIYUN_MAP_DATA_ID)][1].."("..Map_Data[GetTask(YUANFEIYUN_MAP_DATA_ID)][5]..", "..Map_Data[GetTask(YUANFEIYUN_MAP_DATA_ID)][6].." t×m thö."
+			"D­êng nh­ t×m nh»m ng­êi råi, h·y ®Õn "..Map_Data[GetTask(YUANFEIYUN_MAP_DATA_ID)][1].."("..Map_Data[GetTask(YUANFEIYUN_MAP_DATA_ID)][5]..", "..Map_Data[GetTask(YUANFEIYUN_MAP_DATA_ID)][6].." to search."
 			}
 		TalkEx("",strTalk);
 	else
@@ -1122,8 +1122,8 @@ function task_005_08_1(nNpcIndex)
 
 local strSay = {
 	"Nh¾c nhë: Khi c­íp S¸t Thñ Oa Oa thµnh c«ng, sÏ hñy bá thó c­ng hiÖn mang theo, tiÕp tôc c­íp ngôc kh«ng?",
-	"§ång ı/#task_005_08_2("..nNpcIndex..")",
-	"Hñy bá/Task_Exit"
+	"Agree/#task_005_08_2("..nNpcIndex..")",
+	"Cancel/Task_Exit"
 	}
 
 	SelectSay(strSay);
@@ -1684,7 +1684,7 @@ local strTalk = {}
 		strTalk = {
 			"TriÖu s­ huynh qu¶ nhiªn tinh th«ng ®¬n thuËt, mong s­ huynh chØ b¶o thªm.",
 			"S­ ®Ö kh¸ch s¸o qu¸, ta cßn ph¶i trë vÒ phßng luyÖn ®¬n, sau nµy cã vÊn ®Ò g× cø ®Õn t×m ta, ta sÏ gióp cho.? (Tªn nµy thËt ngèc, ta nãi vËy mµ h¾n còng tin.)",
-			"§­îc, ®Ö xin c¸o tõ.",
+			"Very well, I take my leave.",
 			"(TriÖu s­ huynh nµy d­êng nh­ chØ hiÓu biÕt s¬ vÒ thuËt luyÖn ®¬n, khi gÆp Xa Lu©n B¸ V­¬ng  ta ph¶i nãi khoa tr­¬ng mét chót míi ®­îc.)",
 			}
 	else
@@ -1814,7 +1814,7 @@ local strTalk = {
 	"Ha ha, th¾ng råi µ? <sex> qu¶ nhiªn n¨ng lùc siªu phµm. Ba thö th¸ch ®· qua, kh«ng ngê tuæi trÎ mµ tµi cao ®Õn vËy.? (NhÊt PhÈm §­êng hoan nghªnh sù gia nhËp cña ng­¬i, giê ng­¬i lµ thİch kh¸ch cña NhÊt PhÈm §­êng. NhÊt PhÈm §­êng tæ chøc nghiªm minh, vµ cÇn ph¶i thËt cÈn träng khi hµnh sù. Ng­êi trong NhÊt phÈm ®§­êng gÆp ¸m hiÖu nµy, ¾t sÏ tíi gióp ®ì.)",
 	"Ta nguyÖn cèng hiÕn hÕt søc m×nh.",
 	"Ng­¬i bŞ Lôc PhiÕn M«n truy n· ®· l©u, nh­ng chØ mét Lôc PhiÕn M«n cán con vÉn ch­a xøng lµ ®èi thñ cña bän ta, sau nµy ng­¬i cø yªn t©m, gia nhËp NhÊt PhÈm §­êng råi th× Lôc PhiÕn M«n sÏ kh«ng thÓ lµm phiÒn ng­¬i n÷a. ChØ cÇn ng­¬i tËn trung víi NhÊt PhÈm §­êng, mai nµy phó quı danh lîi ®Òu trong tÇm tay. H·y nghØ ng¬i ®·, cã nhiÖm vô míi ta sÏ t×m ng­¬i.",
-	"§­îc. Xin c¸o tõ.",
+	"Very well. I take my leave.",
 	"(MÊt kh«ng İt c«ng søc míi vµo ®­îc NhÊt PhÈm §­êng, ta ph¶i b¸o l¹i víi ¢u D­¬ng tiÒn bèi míi ®­îc. Kh«ng biÕt th­¬ng tİch cña Viªn Bé kho¸i thÕ nµo råi, ta còng lo qu¸, hay lµ ®Õn nha m«n tr­íc vËy.)",
 	}
 
@@ -1870,8 +1870,8 @@ local strTalk = {
 	AddItem(2,0,749,1,1);--µÃµ½ÁùÉÈÃÅÉËÒ©
 	SetTask(TASK_XB_ID,35);
 	CreateTrigger(2,nTriggerID,RECT_XB_YUANFEIYUN);--µØÍ¼´¥·¢Æ÷
-	TaskTip("§Õn "..nMapName.."("..nXpos..", "..nYpos..") ®­a thuèc cña Lôc PhiÕn M«n cho Viªn V©n Phi.");
-	Msg2Player("§Õn "..nMapName.."("..nXpos..", "..nYpos..") ®­a thuèc cña Lôc PhiÕn M«n cho Viªn V©n Phi.");
+	TaskTip("Arrive"..nMapName.."("..nXpos..", "..nYpos..") ®­a thuèc cña Lôc PhiÕn M«n cho Viªn V©n Phi.");
+	Msg2Player("Arrive"..nMapName.."("..nXpos..", "..nYpos..") ®­a thuèc cña Lôc PhiÕn M«n cho Viªn V©n Phi.");
 
 end
 
@@ -1894,8 +1894,8 @@ local strTalk = {
 
 	if GetTrigger(RECT_XB_YUANFEIYUN) == 0 then
 		CreateTrigger(2,nTriggerID,RECT_XB_YUANFEIYUN);
-		TaskTip("§Õn "..nMapName.."("..nXpos..", "..nYpos..") ®­a thuèc cña Lôc PhiÕn M«n cho Viªn V©n Phi.");
-		Msg2Player("§Õn "..nMapName.."("..nXpos..", "..nYpos..") ®­a thuèc cña Lôc PhiÕn M«n cho Viªn V©n Phi.");
+		TaskTip("Arrive"..nMapName.."("..nXpos..", "..nYpos..") ®­a thuèc cña Lôc PhiÕn M«n cho Viªn V©n Phi.");
+		Msg2Player("Arrive"..nMapName.."("..nXpos..", "..nYpos..") ®­a thuèc cña Lôc PhiÕn M«n cho Viªn V©n Phi.");
 	end
 
 end
@@ -2026,7 +2026,7 @@ local strTalk = {
 	"Ng­¬i kh¸ch s¸o qu¸. Nh­ng sau nµy ta sÏ cßn nhiÒu c¬ héi so tµi víi nhau. VÕt th­¬ng cña ta kh«ng ®¸ng ng¹i, do h«m tr­íc tû thİ mét ngµy mét ®ªm víi T­ M· Minh Phongnªn míi vËy. Tõ ngµy xuÊt ®¹o ®Õn nay, ta ch­a tõng ®­îc ®¸nh mét trËn s¶ng kho¸i ®Õn vËy, h¬n n÷a cßn bÊt ph©n th¾ng b¹i. Ta nghÜ ch¾c h¾n còng ®· bŞ th­¬ng, <sex> cã vÎ nh­ lµ ng­êi Tèng, h·y gióp ta ®­a NhÊt PhÈm §­êng MËt d­îc nµy cho h¾n, v× d­êng nh­ h¾n h¬i ph¶n c¶m víi ng­êi T©y H¹.",
 	"Theo nh­ lêi tiÒn bèi, T­ M· Minh Phong lµ mét ng­êi H¸n, kh«ng biÕt giê h¾n ®ang ë ®©u?",
 	"H¾n vÉn cßn ë trong Phông T­êng phñ, ta vµ h¾n vÉn ch­a ph©n th¾ng b¹i, chØ lµ t¹m thêi nghØ ng¬i, sao cã thÓ bá ®i ®­îc? Mét ®èi thñ c©n søc nh­ thÕ ®©u ph¶i dÔ gÆp. Ng­¬i mau ®­a thuèc tíi cho h¾n, ®ång thêi gióp ta hÑn ngµy giao ®Êu tiÕp. §i mau ®i, ta cßn ph¶i suy nghÜ c¸ch ph¸ gi¶i chiªu thøc cña h¾n, biÕn hãa cña chiªu thøc ph¶i kÕt hîp ®­îc ®iÓm m¹nh nhÊt vµ yÕu nhÊt, ch¶ lÏ khi biÕn hãa còng lµ lóc ®Ó lé s¬ hë...",
-	"…………….",
+	".",
 	"(Xem ra Th¸c B¹t Ho»ng ®· bá ngoµi tai nhiÖm vô cña NhÊt PhÈm §­êng råi. T­ M· Minh Phong kia lµ thÇn th¸nh ph­¬ng nµo? NÕu h¾n lµ ng­êi Tèng, mét cao nh©n nh­ thÕ sao giang hå l¹i kh«ng nghe danh t¸nh vËy?)",
 	}
 
@@ -2842,8 +2842,8 @@ function task_012_03_0_3()
 		if GetItemCount(2,0,710) < 2 then
 			AddItem(2,0,710,2,1);
 		end
-		TaskTip("Giao MÆt n¹ t¬ vµng giao Th¸c B¹t Ho»ng.");
-		Msg2Player("Giao MÆt n¹ t¬ vµng giao Th¸c B¹t Ho»ng.");
+		TaskTip("Deliver the Golden Silk Masks to Tuoba Hong.");
+		Msg2Player("Deliver the Golden Silk Masks to Tuoba Hong.");
 		GivePlayerAward("Award_XB_26","Easy");
 		GivePlayerExp(SkeyXibei,"huanglingwai")
 	end
@@ -2910,8 +2910,8 @@ local strTalk = {
 	end
 
 	SetTask(TASK_XB_ID_01,16);
-	TaskTip("Giao 1 MÆt n¹ t¬ vµng cho T­ M· Minh Phong.");
-	Msg2Player("Giao 1 MÆt n¹ t¬ vµng cho T­ M· Minh Phong.");
+	TaskTip("Give 1 Golden Silk Mask to Sima Mingfeng.");
+	Msg2Player("Give 1 Golden Silk Mask to Sima Mingfeng.");
 
 end
 
@@ -2964,7 +2964,7 @@ end
 function task_013_02_0_2()
 
 local strTalk = {
-	"Th× ra lµ thÕ nªn tiÒn bèi ®· mai danh Èn tİch.",
+	"So that is why, senior, you have lived in seclusion.",
 	"Tö Qu©n vÉn ch­a râ sèng chÕt, nÕu kh«ng t×m ®­îc thi thÓ ta sÏ kh«ng cam lßng. Vâ c«ng thiªn h¹ ®Ö nhÊt th× sao chø? Ngay c¶ ng­êi con g¸i m×nh yªu quı còng kh«ng gi÷ ®­îc. NÕu <sex> cã thÓ vµo mé ta chØ nhê ng­¬i ®iÒu tra tin cña vî ta Tö Qu©n, dï sèng hay chÕt còng b¸o cho ta biÕt.",
 	"TiÒn bèi nÆng t×nh thÕ sao ta cã thÓ kh«ng gióp? ¤ng cø yªn t©m, vî chång «ng t×nh s©u nghÜa nÆng nhÊt ®Şnh sÏ gÆp l¹i nhau. Xin c¸o tõ.",
 	"(Kh«ng cßn c¸ch nµo hay h¬n lµ lîi dông t×nh nghÜa cña T­ M· tiÒn bèi ®Ó vµo mé, ®µnh ph¶i võa truy t×m B¶n ®å S¬n Hµ X· T¾c võa gióp «ng ta hoµn thµnh t©m nguyÖn. Ph¶i råi ¢u D­¬ng Häa  tõng dÆn tr­íc khi vµo mé h·y ®Õn t×m «ng ta.)",
@@ -2998,7 +2998,7 @@ local strTalk = {
 	"Tèt l¾m, chuyÖn vµo mé v« cïng cÊp b¸ch, T­îng binh m· trong mé ®· sèng l¹i, ch¾c ®©y lµ søc m¹nh cña B¶n ®å S¬n Hµ X· T¾c nhÊt ®Şnh kh«ng thÓ ®Ó B¶n ®å S¬n Hµ X· T¾c r¬i vµo tay ng­êi T©y H¹. T×nh h×nh trong mé ta còng kh«ng râ, e r»ng víi MÆt n¹ t¬ vµng còng sÏ cã trë ng¹i, Mé §Õ V­¬ng kh«ng thÓ xem th­êng. Ta t×m ®­îc truyÒn nh©n cña C­íp mé tªn lµ LiÔu Tïng V©n .",
 	"Tèt råi, ng­êi nµy ë ®©u? Ta sÏ ®i t×m h¾n.",
 	"Ng­êi nµy hµnh nghÒ Trém mé ë Phông T­êng phñ, tinh th«ng C¸ch t¹o c¬ quan rÊt am hiÓu vÒ TÇn L¨ng. Ng­¬i h·y ®i dß hái t×nh h×nh trong mé, ta ph¶i vµo mé tr­íc ng­êi T©y H¹, cµng ph¶i cÈn thËn víi t­îng binh m· vµ c¬ quan trong mé.",
-	"§a t¹ tiÒn bèi!",
+	"Many thanks, senior!",
 	}
 
 	SetTask(TASK_XB_ID_01,18);
@@ -3076,7 +3076,7 @@ local strTalk = {
 	"B¶n ®å S¬n Hµ X· T¾c lµ b¸u vËt g× thÕ? Cã liªn quan ®Õn t­îng binh m· sao? §­îc th«i ta ®· quyÕt ®Şnh kh«ng ®Õn ®ã n÷a th× còng kh«ng ng¹i nãi ng­¬i biÕt. TÇn L¨ng rÊt to lín vµ chia lµm 2 tÇng. mçi tÇng ®Òu cã T­îng binh m· trÊn gi÷, lóc ta ®ét nhËp vµo th× bŞ chóng tÊn c«ng nÕu ta kh«ng nhanh ch©n ch¹y trèn b»ng mËt ®¹o th× e lµ ®· ph¶i bá m¹ng råi.",
 	"NÕu vËy «ng cã thÓ cho ta biÕt ph­¬ng ph¸p ®Ó vµo mé kh«ng?",
 	"LiÔu Tèng V©n: theo ta thÊy, thùc lùc hiÖn t¹i cña <sex>, vµo L¨ng C¬ mé chØ e lµ mét ®i kh«ng trë l¹i, h·y quay vÒ luyÖn thªm 1 thêi gian ®i, ®¹t cÊp 72 h·y ®Òn t×m ta",
-	"§a t¹ tiÒn bèi."
+	"Many thanks, senior."
 	}
 
 	TalkEx("",strTalk);
@@ -3133,7 +3133,7 @@ local nMapPosIndex = random(1,getn(BingMaYongTongLing_MapData));
 local nNpcIndex = 0;
 
 	Msg2Player("Thèng lÜnh t­îng binh m· xuÊt hiÖn råi!")
-	nNpcIndex = CreateNpc("L·nh qu©n t­îng binh m·","Thèng lÜnh t­îng binh m·",513,BingMaYongTongLing_MapData[nMapPosIndex][1],BingMaYongTongLing_MapData[nMapPosIndex][2]);
+	nNpcIndex = CreateNpc("L·nh qu©n t­îng binh m·","Terracotta commander",513,BingMaYongTongLing_MapData[nMapPosIndex][1],BingMaYongTongLing_MapData[nMapPosIndex][2]);
 	SetNpcScript(nNpcIndex,"\\script\\Î÷±±Çø\\»ÊÁêÄ¹ÊÒÒ»²ã\\npc\\±øÂíÙ¸Í³Áì.lua");
 	SetNpcLifeTime(nNpcIndex,1500);
 	Msg2Player("Thèng lÜnh t­îng binh m· xuÊt hiÖn t¹i  "..BingMaYongTongLing_MapData[nMapPosIndex][3]..", "..BingMaYongTongLing_MapData[nMapPosIndex][4].."  mau ®i tiªu diÖt ®Ó lÊy M« Kim Phï.")
@@ -3192,7 +3192,7 @@ local strTalk = {};
 		strTalk = {
 			"LiÔu tiªn sinh xem thö ®©y cã ph¶i §o¹n Thñy Chö vµ La Canh kh«ng, nh÷ng thø nµy lµm sao sö dông?",
 			"§óng råi nh­ng thËt cã lçi víi <sex>, nh÷ng thø nµy e r»ng ch­a thÓ ph¸ phong thñy trËn. V× chØ cã Ph¸ Phong Chïy míi cã thÓ ®ãng §o¹n Thñy Chö vµo huyÖt phong thñy, võa míi cã ng­êi tù x­ng lµ NhÊt PhÈm ®­êng kim cang tr¶o v­¬ng ®Õn hái ta lÊy Ph¸ Phong Chïy. Nã lµ mËt b¶o trém mé gia truyÒn cña nhµ ta vèn ®Şnh cho ng­¬i m­în th× sao ta ®­a cho h¾n? ThÕ lµ h¾n ra tay c­íp chïy cña ta vµ kÕt qu¶ chïy ®· bŞ h¾n c­íp ®i.",
-			"Sao? H¾n tù x­ng lµ NhÊt PhÈm ®­êng kim cang sao?",
+			"What? He called himself the First Grade Hall Vajra Claw King?",
 			}
 
 		TalkEx("task_014_02_0_1",strTalk);
@@ -3242,7 +3242,7 @@ function task_014_02_1()
 local strSay = {
 	"<sex> sao l¹i quay vÒ råi?",
 	"T¹i h¹ lµm mÊt §o¹n Thñy Chö vµ La Canh råi/task_014_02_2",
-	"Kh«ng cã g×/task_014_02_3",
+	"It is nothing/task_014_02_3",
 	}
 
 	SelectSay(strSay);
@@ -3352,7 +3352,7 @@ local nNpcIndex = 0;
 
 		strTalk = {
 			"Thñ mé nh©n: TrÊn mé linh thó ®· xuÊt hiÖn, mau tiªu diÖt!",
-			"TrÊn mé linh thó: Gõ gõ!!!",
+			"Tomb-guarding spirit beast: Roar roar!!!",
 			"B¹n nh×n thÊy mét con vËt thËt lín xuÊt hiÖn ë ("..xPos..", "..yPos.."), ch¾c lµ TrÊn mé thó mµ LiÔu tiÒn bèi ®· nãi, mau tiÖu diÖt nã!"
 			}
 
@@ -3465,7 +3465,7 @@ local strTalk = {
 	"T­ M· tiÒn bèi, t¹i h¹ ®· t×m ®­îc Ngäc béi vµ MÆc ®Èu kiÕm, tiÒn bèi cã nhËn ra vËt nµy kh«ng?",
 	"§©y lµ …..Minh phong quúnh ngäc yªn hµn, hång nhan t­¬ng t­ nan hoµn. Tõ Qu©n ®· ®eo ngäc nµy, vµ kh«ng hÒ th¸o xuèng bao giê, lÏ nµo….lÏ nµo….Tõ Qu©n…..",
 	"TiÒn bèi….xin h·y nĞn ®au th­¬ng, t¹i h¹ kh«ng t×m thÊy thi thÓ trong mé, kh«ng chõng hiÒn thª cña «ng vÉn cßn sèng.",
-	"……..",
+	"..",
 	"………",
 	"Trong l¨ng hiÓm ¸c trïng trïng, Tõ Qu©n e lµ lµnh İt d÷ nhiÒu, ®a t¹ <sex> ®· an ñi, ta còng kh«ng cÇn ph¶i tù lõa dèi m×nh, kh«ng t×m ®­îc thi thÓ cña Tõ Qu©n trong lßng ra còng ®· nghÜ ra ®­îc t×nh huèng xÊu nhÊt. ChuyÓn chóc phiªu linh nhÊt méng qui, ®·i nguyÖt tr× ®µi kh«ng thÖ thñy, thiªn ı bÊt l©n c¸nh triªm y, trÇn tİch nan tÇm tóc nguyÖn vi. MÆc ®Èu kiÕm nµy cÇn ®Ó lµm g× n÷a chø?",
 	"TiÒn bèi………",
@@ -3517,8 +3517,8 @@ function task_015_04_0_3()
 		DelItem(2,0,719,1);--É¾È¥ÓñÅå
 		DelItem(2,0,710,1);--É¾È¥½ğË¿ÃæÕÖ
 		DelItem(2,0,716,1);--É¾È¥Î÷ÏÄ·¨ÍõÃÜº¯
-		TaskTip("Håi b¸o Th¸c B¹t Ho»ng vÒ viÖc T­ M· Minh Phong ®· ®ång ı tû vâ.");
-		Msg2Player("Håi b¸o Th¸c B¹t Ho»ng vÒ viÖc T­ M· Minh Phong ®· ®ång ı tû vâ.");
+		TaskTip("Report to Tuoba Hong that Sima Mingfeng has agreed to the martial contest.");
+		Msg2Player("Report to Tuoba Hong that Sima Mingfeng has agreed to the martial contest.");
 		GivePlayerAward("Award_XB_34","Easy");
 		GivePlayerExp(SkeyXibei,"guijiangjun")
 	end
@@ -4014,9 +4014,9 @@ function task_018_04_0()
 
 local strSay = {
 	"Ch¾c ch¾n ®©y lµ Tİch D­¬ng C¨n T«n tiÒn bèi ®· nãi, ®Ó ta xem dïng c¸i g× ®Ó h¸i chóng ®©y.",
-	"L­ìi liÒm/#task_018_05_0(1)",
-	"Cuèc/#task_018_05_0(0)",
-	"Chñy thñ/#task_018_05_0(0)",
+	"Sickle/#task_018_05_0(1)",
+	"Hoe/#task_018_05_0(0)",
+	"Dagger/#task_018_05_0(0)",
 	"Lo¹i c©y nµy tr«ng cã vÎ ®Ñp, tèt nhÊt kh«ng nªn lµm h­ nã/Task_Exit",
 		}
 
@@ -4029,9 +4029,9 @@ function task_018_04_1()
 
 local strSay = {
 	"Ch¾c ch¾n ®©y lµ Tİch D­¬ng C¨n T«n tiÒn bèi ®· nãi, ®Ó ta xem dïng c¸i g× ®Ó h¸i chóng ®©y.",
-	"L­ìi liÒm/#task_018_05_0(0)",
-	"Cuèc/#task_018_05_0(1)",
-	"Chñy thñ/#task_018_05_0(0)",
+	"Sickle/#task_018_05_0(0)",
+	"Hoe/#task_018_05_0(1)",
+	"Dagger/#task_018_05_0(0)",
 	"Lo¹i c©y nµy tr«ng cã vÎ ®Ñp, tèt nhÊt kh«ng nªn lµm h­ nã/Task_Exit",
 		}
 
@@ -4044,9 +4044,9 @@ function task_018_04_2()
 
 local strSay = {
 	"Ch¾c ch¾n ®©y lµ Tİch D­¬ng C¨n T«n tiÒn bèi ®· nãi, ®Ó ta xem dïng c¸i g× ®Ó h¸i chóng ®©y.",
-	"L­ìi liÒm/#task_018_05_0(0)",
-	"Cuèc/#task_018_05_0(0)",
-	"Chñy thñ/#task_018_05_0(1)",
+	"Sickle/#task_018_05_0(0)",
+	"Hoe/#task_018_05_0(0)",
+	"Dagger/#task_018_05_0(1)",
 	"Lo¹i c©y nµy tr«ng cã vÎ ®Ñp, tèt nhÊt kh«ng nªn lµm h­ nã/Task_Exit",
 		}
 
@@ -4105,7 +4105,7 @@ local strTalk = {};
 		strTalk = {
 			"T«n tiªn sinh, xin xem ®©y cã ph¶i lµ Tİch D­¬ng C¨n kh«ng?",
 			"§óng råi, ®©y lµ Tİch D­¬ng C¨n d­îc tİnh cùc hµn, ta ®· hiÓu râ c¸ch bµo chÕ thuèc tõ Tİch D­¬ng C¨n, chê ta.",
-			"Mét lóc sau…",
+			"A while later",
 			"§©y lµ Tİch D­¬ng Thñy, lµ tinh hoa cña Tİch D­¬ng C¨n, ph¬i Tİch D­¬ng Thñy trªn cá D­îc v­¬ng, kh«ng l©u sau th©n vµ rÔ cña nã sÏ bŞ tæn th­¬ng, lóc ®ã sÏ diÖt trõ tËn gèc d­îc th¶o nµy. Ng­¬i cÇm ®i, c¶m t¹ ng­¬i gióp ta t×m l¹i Thiªn Kim Dùc Ph­¬ng.",
 			"§a t¹ T«n tiªn sinh, may mµ ®­îc T«n tiªn sinh t­¬ng trî, cuèi cïng ®· diÖt trõ ®­îc ®éc th¶o nµy.",
 			}
@@ -4175,12 +4175,12 @@ local nNpcIndex = GetTargetNpc();
 	end
 
 	strTalk = {
-		"Hõm…",
+		"Hmph",
 		"NÕu cã D­îc nh©n chuyªn canh gi÷ D­îc Nh©n Th¶o, thÕ th× ch¼ng cßn c¸ch nµo ®µnh ph¶i trõ khö chóng míi cã thÓ diÖt lo¹i cá nµy."
 		}
 
 	SetNpcLifeTime(nNpcIndex,0);
-	nNpcIndex = CreateNpc("Thñ lÜnh D­îc nh©n","D­îc nh©n v­¬ng",GetWorldPos());
+	nNpcIndex = CreateNpc("Thñ lÜnh D­îc nh©n","Medicine Man King",GetWorldPos());
 	SetNpcScript(nNpcIndex,"\\script\\Î÷±±Çø\\Ò©Íõ¶´\\npc\\Ò©ÈËÊ×Áì.lua");
 	SetNpcLifeTime(nNpcIndex,600);
 	TalkEx("",strTalk);
@@ -4281,7 +4281,7 @@ local strTalk = {
 	"Ta ®· chuÈn bŞ xong bót mùc, ng­¬i ®· hái kü dung m¹o D­îc v­¬ng ch­a?",
 	"Ta ®· hái dung m¹o cña D­îc v­¬ng. D­îc v­¬ng r©u tãc b¹c tr¾ng, ®· cã tuæi. §Çu h¾n gièng nh­ b¸o, r©u tãc dµi b¹c tr¾ng vµ rËm. da dÎ kh«ng kh¸c g× ng­êi trÎ tuæi. Sau l­ng ®eo 1 b×nh d­îc hå l« lín, tiÒn bèi cã thÓ dùa theo ®ã vÏ ®­îc kh«ng?",
 	"Tuy kh«ng râ rµng l¾m, nh­ng nh÷ng chi tiÕt m« t¶ kh¸ ®Æc tr­ng. Theo m« t¶ cña ng­¬i thÊy còng cã vµi nĞt gièng Tr­¬ng Phi thêi Tam Quèc, ng­¬i chê ta 1 tiÕng, ta ®i vÏ 1 bøc tranh gièng nh­ thËt.",
-	" 1 giê sau……",
+	" 1 hour later",
 	}
 
 	TalkEx("task_019_03_0_1",strTalk);
@@ -4347,7 +4347,7 @@ local strTalk = {};
 		strTalk = {
 			"§©y lµ nguyªn liÖu c« n­¬ng cÇn, cßn cÇn thø g× n÷a kh«ng?",
 			"BÊy nhiªu ®ñ råi, mäi thø ®· ®ñ kho¶ng n÷a giê sau sÏ lµm xong mÆt n¹, <sex> chê chót.",
-			"Mét lóc sau…",
+			"A while later",
 			"MÆt n¹ vµ ®å c¶i trang ®· lµm xong, c¸c h¹ thö xem cã võa ı ch­a?",
 			"§­êng c« n­¬ng trİ tuÖ h¬n ng­êi, bµn tay l¹i khĞo lĞo, c¶i trang rÊt khã ph©n biÖt thËt gi¶. ThuËt c¶i trang cña §­êng c« n­¬ng thËt cao siªu.T¹i h¹ cßn viÖc quan träng cÇn lµm, c¶m t¹ c« n­¬ng tr­îng nghÜa t­¬ng trî.",
 			}
@@ -4748,7 +4748,7 @@ function task_021_01_0_2()
 
 local strTalk = {
 	"Ta còng kh«ng râ n÷a. Tãm l¹i lµ Th¸c B¹t Ho»ng  ®· cã ı ph¶n béi NhÊt PhÈm ®­êng nªn téi kh«ng thÓ tha. Ng­¬i h·y ®em Thuèc d­îc nh©n cho h¾n uèng.",
-	"Ta ®i t×m Th¸c B¹t Ho»ng ®©y.",
+	"I'll go find Tuoba Hong now.",
 	"(Thuèc d­îc nh©n nµy kh«ng cã t¸c dông, quan hÖ cña Th¸c B¹t tiÒn bèi vµ NhÊt PhÈm ®­êng ®· ®Õn håi gay cÊn. NÕu Xa Lu©n B¸ V­¬ng ph¸i ng­êi ®Õn Cæ D­¬ng ®éng ®iÒu tra sÏ lé th× th©n phËn gi¸n ®iÖp cña ta sÏ bŞ lé. Hay lµ ®i ®iÒu tra xem xu h­íng hiÖn t¹i cña NhÊt PhÈm ®­êng.)",
 	}
 
@@ -4806,7 +4806,7 @@ end
 function task_021_02_0_1()
 
 local strTalk = {
-	"Th¸c B¹t tiÒn bèi xin ®õng tù tr¸ch m×nh, mäi viÖc ®Òu do NhÊt PhÈm §­êng…",
+	"Senior Tuoba, please do not blame yourself. Everything was done by the Yipin Hall.",
 	"Trong sè c¸c cao thñ còng kh«ng İt ng­êi cã thÓ trë thµnh tri kû nh­ T­ M· Minh Phong, nh­ng ®Òu ph¶n béi hoÆc bŞ trõ khö. Míi ®©y Lı Nguyªn Kh¸nh ®· tíi t×m ta, muèn ta th«i ®Êu víi T­ M· Minh Phong, bëi h¾n ®· kh«ng cßn nhÉn n¹i ®­îc n÷a. T­ M· Minh Phong ®· kh«ng cßn ®­îC NhÊt PhÈm §­êng chÊp nhËn, nÕu c¶ T­ M· Minh Phong còng bŞ h¹i, th× thiªn h¹ cßn ai hiÓu ®­îc Th¸c B¹t Ho»ng? Môc ®İch ban ®Çu cña ta ®· bŞ lÖch h­íng, Lı Nguyªn Kh¸nh còng kh«ng cßn vŞ nÓ ¬n x­a, ta hµ tÊt ph¶i biÕn m×nh thµnh con cê trong tay kÎ kh¸c? Ta ®· nãi hÕt lêi, ®­îc chÕt d­íi tay ng­¬i còng lµ mét sù may m¾n, ra tay ®i.",
 	"Xem ra Th¸c B¹t tiÒn bèi ®· h¹ quyÕt t©m, vËy th× tèt qu¸. Tõ ngµy kÕt giao víi tiÒn bèi ®Õn nay, ta ®Òu thÊy tiÕc cho ng­êi, mét n¬i xÊu xa ®en tèi nh­ NhÊt PhÈm §­êng lµm sao xøng ®¸ng víi mét ®Êng anh hµo nh­ thÕ? Nh­ng giê th× ta ®· hiÓu râ ngän ngµnh. TiÒn bèi yªn t©m, ta kh«ng cã ı h¹i ng­êi ®©u, h¬n n÷a d­îc nh©n d­îc nµy lµ do ta ph­¬ng thuèc gi¶ ®Ó t¹o ra.",
 	"...Ch¶ tr¸ch gÇn ®©y NhÊt PhÈm §­êng lu«n gÆp trë ng¹i, ra ®Òu do <sex> c¶. Ta kh©m phôc tµi trİ vµ dòng khİ cña ng­¬i, ta t­ëng chõng ®· bu«ng xu«i kh«ng ngê l¹i gÆp ®­îc mét tri kû nh­ ng­¬i.",
@@ -4871,7 +4871,7 @@ local nNpcIndex1,nNpcIndex2,nNpcIndex3,nNpcIndex4,nNpcIndex5 = 0,0,0,0,0;
 		strTalk = {
 			"Ng­¬i lµ ai?",
 			"Ta lµ ng­êi khiªu chiÕn, thÕ còng kh«ng nhËn ra sao?",
-			"Qu¶ lµ gan d¹!",
+			"Truly bold!",
 			}
 
 		DelItem(2,0,755,1);--É¾³ıÒ»Æ·ÍØ°ÎÁî
@@ -5218,16 +5218,16 @@ local strTalk = {
 	"å? Ph¸p khİ nµy lµ mãn ®å kh«ng tåi. VÇy ®i, ta sÏ dÉn ng­¬i ®Õn cuèi sa m5c, nh­ng ng­¬i ph¶i tÆng ph¸p khİ nµy cho ta, thÕ nµo? ",
 	"Ng­êi t×m b¸u vËt qu¶ nhiªn ®Òu tham b¸u vËt, th«i, ph¸p khi nµy dïng ®Ó gäi nguyªn h×nh cña ChÊn, sau khi thu ChÊn vµo phong yªu th¸p còng hÕt t¸c dông, tÆng cho «ng ta còng kh«ng sao.)",
 	"§­îc, nÕu B¹ch tiªn sinh thİch vËt nµy, ®îi ta phong Ên ¶o gi¸c xong, sÏ tÆng nã cho «ng ®Ó c¶m t¹.",
-	"Ta nhí lÇn tr­íc ë "..xPos..", "..yPos.." ®· gÆp qua¶o gi¸c, <sex> h·y ®i kiÓm tra xem sao.",
+	"Ta nhí lÇn tr­íc ë "..xPos..", "..yPos.." I encountered the mirage. <sex>, go check it out.",
 	}
 
 	TalkEx("",strTalk);
 	SetTask(CREAT_HUANGXIANG_TIME,GetTime());--¼ÇÂ¼»ÃÏóË¢ĞÂÊ±¼ä
-	nNpcIndex = CreateNpc("Hoan T­îng (T­íng lÜnh t­îng)","¶o gi¸c thèng lÜnh",506,xWPos,yWPos,-1,1,1,70);
+	nNpcIndex = CreateNpc("Hoan T­îng (T­íng lÜnh t­îng)","Mirage Commander",506,xWPos,yWPos,-1,1,1,70);
 	SetNpcScript(nNpcIndex,"\\script\\Î÷±±Çø\\É³Ä®ÃÔ¹¬\\npc\\»ÃÏóÍ³Áì.lua");
 	SetNpcLifeTime(nNpcIndex,1800);
-	Msg2Player("§Õn  "..xPos..", "..yPos.." , t×m vµ tiªu diÖt ¶o gi¸c.")
-	TaskTip("§Õn  "..xPos..", "..yPos.." , t×m vµ tiªu diÖt ¶o gi¸c.");
+	Msg2Player("Go to"..xPos..", "..yPos.." , t×m vµ tiªu diÖt ¶o gi¸c.")
+	TaskTip("Go to"..xPos..", "..yPos.." , t×m vµ tiªu diÖt ¶o gi¸c.");
 
 end
 
@@ -5868,7 +5868,7 @@ local nCruseIndex = random(1,getn(KULOUWANG_CURSE));
 	if GetPlayerRoute() == 100 then
 		strTalk = {
 			"C« L©u V­¬ng ®ang bŞ ta phong Ên t¹i n¬i tËn cïng cña Thiªn S­ MËt C¶nh, nÕu muèn tiªu diÖt th× ph¶i nh©n lóc nµy. Ng­¬i cã thÓ dïng c©u Tµ chó nµy ®Ó gi¶i phong Ên, sau ®ã cïng Tr¶m Yªu Phï tiªu diÖt h¾n. Chí dïng sai Tµ chó, v× nÕu dïng sai Tµ chó trong lóc gi¶i phong Ên, C« L©u V­¬ng sÏ tho¸t ra, mét khi h¾n phôc håi ph¸p lùc sÏ rÊt khã ®èi phã.",
-			"Xin hái s­ huynh c©u Tµ chó lµ g×?",
+			"May I ask, senior brother, what is the Evil incantation?",
 			"Ng­¬i ph¶i nhí cho kü Tµ chó lµ "..KULOUWANG_CURSE[nCruseIndex]..", nÕu ®äc sai th× phong Ên sÏ kh«ng gi¶i trõ ®­îc ®©u.",
 			"HiÓu råi, ta sÏ cÈn thËn. S­ huynh cø yªn t©m d­ìng th­¬ng.",
 			}
@@ -6145,8 +6145,8 @@ local strTalk = {}
 
 	TalkEx("",strTalk);
 	SetTask(TASK_XB_ID_02,12);
-	TaskTip("Thay DiÖp Tö Thu ®Õn vÊn an DiÖp l·o.");
-	Msg2Player("Thay DiÖp Tö Thu ®Õn vÊn an DiÖp l·o.");
+	TaskTip("On behalf of Diep Tu Thu, go pay respects to elder Diep.");
+	Msg2Player("On behalf of Diep Tu Thu, go pay respects to elder Diep.");
 
 end
 
@@ -6158,7 +6158,7 @@ local strTalk = {}
 	--À¥ÂØÅÉµÜ×Ó¶Ô»°
 	if GetPlayerRoute() == 100 then
 		strTalk = {
-			"Chµo DiÖp l·o! Ng­êi vÉn m¹nh kháe chø?",
+			"Greetings, elder Diep! Are you still in good health?",
 			"Chµo <sex>! Sao r¶nh tíi th¨m ta vËy? C¸i th©n giµ nµy vÉn kháe, nh­ng gÇn ®©y thêi tiÕt thÊt th­êng, khiÕn ta thÊp thám kh«ng yªn. <sex> ®Õn ®©y cã viÖc g×?",
 			"DiÖp s­ huynh nãi l·o mét m×nh sèng t¹i Phông T­êng, nªn rÊt mong nhí, nhê ta ®Õn b¸o víi l·o, nhiÖm vô cña s­ phô giao cho ®· s¾p hoµn thµnh, sÏ nhanh chãng trë vÒ ®oµn tô víi l·o. Xin ®õng lo l¾ng qu¸.",
 			"Ra lµ vËy, ta còng ®ang ®Şnh hái th¨m nã ®©y. Kh«ng biÕt s­ phô c¸c ng­êi giao nhiÖm vô g× mµ ®Õn giê nã vÉn ch­a xong. Sù viÖc cã khã kh¨n l¾m kh«ng? Ch¾c lµ v× nã kh«ng ®ñ søc g¸nh v¸c råi.",
@@ -6167,7 +6167,7 @@ local strTalk = {}
 			}
 	else
 		strTalk = {
-			"Chµo DiÖp l·o! Ng­êi vÉn m¹nh kháe chø?",
+			"Greetings, elder Diep! Are you still in good health?",
 			"Chµo <sex>! Sao r¶nh tíi th¨m ta vËy? C¸i th©n giµ nµy vÉn kháe, nh­ng gÇn ®©y thêi tiÕt thÊt th­êng, khiÕn ta thÊp thám kh«ng yªn. <sex> ®Õn ®©y cã viÖc g×?",
 			"GÇn ®©y ta vµ DiÖp Tö Thu - con cña DiÖp l·o kh¸ th©n, nghe huynh Êy nh¾c l·o ®ang sèng ë Phông T­êng, rÊt nhí mong l·o, nªn ®· nhê ta ®Õn nh¾n vµi lêi, nhiÖm vô mµ s­ phô huynh Êy giao phİ ®· s¾p hoµn thµnh, sÏ nhanh chãng trë vÒ ®oµn tô víi l·o. Mong l·o ®õng th­¬ng nhí qu¸.",
 			"Ra lµ vËy, ta còng ®ang ®Şnh hái <sex> vÒ tiÓu nhi ®©y. Kh«ng biÕt s­ phô nã giao nhiÖm vô g× mµ ®Õn giê vÉn ch­a lµm xong. Sù viÖc cã khã kh¨n l¾m kh«ng? Ch¾c lµ v× nã kh«ng ®ñ søc g¸nh v¸c.",
@@ -6554,7 +6554,7 @@ local nNpcIndex = 0;
 				"Ai ®ã? N¬i nµy rÊt nguy hiÓm, nÕu kh«ng cã viÖc g× th× mau rêi khái ®©y.",
 				"Ta ®Õn ®©y ®Ó thu phôc Cæ D­¬ng Thó, ®©y lµ §µo Méc KiÕm cña DiÖp Tö Thu thiÕu hiÖp.",
 				"Ra lµ b»ng h÷u cña ®¹i s­ huynh. Tuy Cæ D­¬ng Thó ®· bŞ ta phong Ên, nh­ng ta còng ®· bŞ th­¬ng, uy lùc cña Cæ D­¬ng Thó qu¸ m¹nh, e phong Ên kh«ng thÓ duy tr× ®­îc l©u. Ng­¬i ®Õn ®óng lóc l¾m, ta sÏ gi¶i trõ phong Ên, ng­¬i ph¶i cÈn thËn.",
-				"§a t¹.",
+				"Thank you.",
 				}
 		end
 
@@ -6564,8 +6564,8 @@ local nNpcIndex = 0;
 		SetNpcScript(nNpcIndex,"\\script\\Î÷±±Çø\\¹ÅÑô¶´¶ş²ã\\npc\\¹ÅÑôÊŞ.lua");
 		SetNpcLifeTime(nNpcIndex,1800);
 
-		Msg2Player("§Õn  "..xPos..", "..yPos.." , ®¸nh b¹i Cæ D­¬ng Thó.")
-		TaskTip("§Õn  "..xPos..", "..yPos.." , ®¸nh b¹i Cæ D­¬ng Thó.");
+		Msg2Player("Go to"..xPos..", "..yPos.." , ®¸nh b¹i Cæ D­¬ng Thó.")
+		TaskTip("Go to"..xPos..", "..yPos.." , ®¸nh b¹i Cæ D­¬ng Thó.");
 
 	else
 
@@ -6966,7 +6966,7 @@ function task_029_04_0_1()
 local strTalk = {
 	"Ng­êi ch¬i: µ? Trang bŞ nµy cã vÊn ®Ò g× µ?",
 	"KhÊu ChuÈn: <sex> ®· gãp søc v× §¹i Tèng, ng­¬i chØ cÇn ®em {1 bé nhiÖm vô nhËn ®­îc trong nhiÖm vô T©y B¾c tr­íc ®©y} ®Õn ®©y ®æi {1 b¶o vËt}?",
-	"Ng­êi ch¬i: Hay qu¸! §a t¹ KhÊu tiªn sinh.",
+	"Player: Wonderful! Many thanks, Master Kou.",
 	}
 
 	TalkEx("task_029_04_0_2",strTalk);
@@ -7155,7 +7155,7 @@ local strTalk = {
 				{
 				{"Së dÜ NhÊt PhÈm §­êng ®­îc xem lµ ®éi qu©n tinh nhuÖ nhÊt cña T©y H¹, bëi thİch kh¸ch cña bæn ®­êng ®­îc ph©n bæ réng kh¾p thiªn h¹. RÊt nhiÒu T©n BŞ muèn gia nhËp bæn ®­êng ®Òu cã th©n thñ rÊt kh¸, nÕu v­ît qua c¶ 3 thö th¸ch th× sÏ trë thµnh thİch kh¸ch, nh­ thÕ NhÊt PhÈm §­êng l¹i cã thÓ lín m¹nh h¬n tr­íc. Nh÷ng nhiÖm vô c¬ b¶n ®Òu do thİch kh¸ch hoµn thµnh, ng­êi cña bæn ®­êng ®Òu cã mét danh hiÖu, nÕu lµ thİch kh¸ch cña bæn ®­êng, h·y ®Õn chç ta nhËn nhiÖm vô."},
 				},
-				["Th¸c B¹t Ho»ng "] =
+				["Tuoba Hong"] =
 				{
 				{"Ng­êi cña bæn ®­êng ®Òu cã danh hiÖu, nÕu lµ thİch kh¸ch cña bæn ®­êng, h·y ®Õn chç ta nhËn nhiÖm vô; nÕu ch­a ph¶i lµ thİch kh¸ch, h·y ®Õn chç Xa Lu©n B¸ V­¬ng ®Ó nghe chØ dÉn. Thİch kh¸ch chİnh lµ trô cét cña bæn ®­êng, lµ nh÷ng cao thñ ®­îc r¶i ®Òu kh¾p thiªn h¹. "},
 				{"Xem ra lÇn nµy ®· chiªu mé ®­îc kh«ng İt nh©n tµi, phñ Phông T­êng qu¶ lµ n¬i ngäa hæ tµng long, kh«ng biÕt cßn t×m ®­îc cao thñ nµo cã thÓ so tµi víi ta mét phen. GÇn ®©y thİch kh¸ch cña bæn ®­êng t¨ng lªn rÊt nhiÒu, tèt l¾m tèt l¾m. §em nhiÖm vô cña bæn ®­êng r¶i ®Òu ra kh¾p n¬i, còng lµ mét c¸ch lµm viÖc hiÖu qu¶."},
@@ -7166,7 +7166,7 @@ local strTalk = {
 				{
 				{"Thİch kh¸ch còng lµ mËt th¸m cña bæn ®­êng, lµ lùc l­îng chİnh chuyªn thu thËp t×nh b¸o, dß la tin tøc, thñ tiªu nh÷ng kÎ g©y bÊt lîi cho bæn ®­êng. T×nh b¸o lÇn tr­íc vÒ Quang Minh ®Ønh còng lµ mét vİ dô. Nh­ng nh÷ng t×nh b¸o c¬ mËt th× vÉn ph¶i giao cho c¸c Phi Hé cña bæn ®­êng ®¶m nhiÖm. Së tr­êng cña Phi Hé lµ khai th¸c bİ mËt, th¨m dß qu©n t×nh, ¸m s¸t c¸c nh©n vËt ®Çu n·o v.v... V× lµ c¬ mËt, nªn ph¶i ®¶m b¶o t×nh b¸o vµ nhiÖm vô ®­îc hoµn thµnh tuyÖt ®èi chİnh x¸c. Khi nhËn nhiÖm vô bİ mËt ®Òu ph¶i cho biÕt danh hiÖu Phi Hé."},
 				},
-				["Th¸c B¹t Ho»ng "] =
+				["Tuoba Hong"] =
 				{
 				{"Thİch kh¸ch còng lµ mËt th¸m cña bæn ®­êng, lµ lùc l­îng chİnh chuyªn thu thËp t×nh b¸o, dß la tin tøc, thñ tiªu nh÷ng kÎ g©y bÊt lîi cho bæn ®­êng. T×nh b¸o lÇn tr­íc vÒ Quang Minh ®Ønh còng lµ mét vİ dô. Nh­ng nh÷ng t×nh b¸o c¬ mËt th× vÉn ph¶i giao cho c¸c Phi Hé cña bæn ®­êng ®¶m nhiÖm. Së tr­êng cña Phi Hé lµ khai th¸c bİ mËt, th¨m dß qu©n t×nh, ¸m s¸t c¸c nh©n vËt ®Çu n·o v.v... V× lµ c¬ mËt, nªn ph¶i ®¶m b¶o t×nh b¸o vµ nhiÖm vô ®­îc hoµn thµnh tuyÖt ®èi chİnh x¸c. Khi nhËn nhiÖm vô bİ mËt ®Òu ph¶i cho biÕt danh hiÖu Phi Hé."},
 				},
@@ -7176,7 +7176,7 @@ local strTalk = {
 				{
 				{"Hæ Dùc lµ lùc l­îng tinh nhuÖ cña bæn ®­êng. Tuy Phi Hé ®¶m nhËn chøc n¨ng dß th¸m tİnh b¸o, nh­ l¨ng mé TÇn Thñy Hoµng, b¶n ®å S¬n Hµ X· T¾c... ®Òu lµ c¬ mËt. Song nhiÖm vô cña Hæ Dùc l¹i lµ nh÷ng nhiÖm vô c¬ mËt liªn quan ®Õn sù tiÕn tho¸i cña bæn ®­êng, kh«ng nh÷ng ph¶i cã tuyÖt kü do th¸m cña Phi Hé, cßn ph¶i biÕt phèi hîp víi c¸c lùc l­îng kh¸c cña bæn ®­êng ®Ó hoµn thµnh nhiÖm vô. Kim Cang cña bæn ®­êng vµ T©y H¹ ph¸p v­¬ng ®Òu rÊt tin t­ëng Hæ Dùc, v× thÕ cÇn ph¶i cho biÕt danh hiÖu Hæ Dùc khi nhËn nhiÖm vô c¬ mËt."},
 				},
-				["Th¸c B¹t Ho»ng "] =
+				["Tuoba Hong"] =
 				{
 				{"Hæ Dùc lµ l­îng lùc tinh nhuÖ cña bæn ®­êng. Tuy Phi Hé ®¶m nhËn chøc n¨ng dß th¸m tİnh b¸o, nh­ l¨ng mé TÇn Thñy Hoµng, b¶n ®å S¬n Hµ X· T¾c... ®Òu lµ c¬ mËt. Song c¸c nhiÖm vô cña Hæ Dùc l¹i lµ nh÷ng nhiÖm vô c¬ mËt liªn quan ®Õn sù tiÕn tho¸i cña bæn ®­êng, kh«ng nh÷ng ph¶i cã tuyÖt kü do th¸m cña Phi Hé, cßn ph¶i biÕt phèi hîp víi c¸c lùc l­îng kh¸c cña bæn ®­êng ®Ó hoµn thµnh nhiÖm vô. Kim Cang cña bæn ®­êng vµ T©y H¹ ph¸p v­¬ng ®Òu rÊt tin t­ëng Hæ Dùc, v× thÕ cÇn ph¶i cho biÕt danh hiÖu Hæ Dùc khi nhËn nhiÖm vô c¬ mËt."},
 				},
@@ -7186,7 +7186,7 @@ local strTalk = {
 				{
 				{"Vò VÖ lµ c¸nh tay ®¾c lùc nhÊt cña ThËp §¹i Kim Cang. V­ît qua nh÷ng nhiÖm vô thö th¸ch lín nhá cña NhÊt PhÈm ®­êng, Vò VÖ cßn cÇn ph¶i cã lßng trung thµnh tuyÖt ®èi. NhiÖm vô cña Vò VÖ kh«ng nh÷ng liªn quan ®Õn bæn ®­êng, cßn liªn quan ®Õn quèc gia, kh«ng nh÷ng ph¶i ®­a bæn ®­êng ®i lªn mµ cµng ph¶i gióp qu©n ®éi T©y H¹ thªm v÷ng m¹nh. Tr¸ch nhiÖm cña Vò VÖ còng chİnh lµ tr¸ch nhiÖm víi T©y H¹."},
 				},
-				["Th¸c B¹t Ho»ng "] =
+				["Tuoba Hong"] =
 				{
 				{"Ngò Hµnh trËn ngoµi viÖc trõng trŞ ph¶n ®å, cßn lµ n¬i tËp luyÖn cña Vò VÖ. Vò VÖ muèn th¨ng cÊp lªn Kim Cang ®Òu ph¶i tr¶i qua thö th¸ch cña Ngò Hµnh trËn. V× thÕ Ngò Hµnh trËn kh«ng tiÕp nhËn nh÷ng ng­êi d­íi cÊp Vò VÖ."},
 				},

@@ -12,13 +12,13 @@ function main()
 			"T×m hiÓu t×nh h×nh Giang T©n th«n/fengdu",
 			"Lµm c¸ch nµo ®iÒu khiÓn Táa Yªu chung?/suoyaozhong",
 			"§¹i hiÖp! Ta cã thÓ gióp g×?/huanyouhun",
-			"Kh«ng cã g×/no")
+			"Nothing/no")
 	else
 		Say("T×m ta cã viÖc g×?",
 			3,
 			"T×m hiÓu t×nh h×nh Giang T©n th«n/fengdu",
 			"§¹i hiÖp! Ta cã thÓ gióp g×?/huanyouhun",
-			"Kh«ng cã g×/no")
+			"Nothing/no")
 	end
 
 end
@@ -49,7 +49,7 @@ end;
 function fengdu()
 UWorld1402 = GetTask(1402)
 if ( UWorld1402 == 10 )  then
-		Talk(2,"","Ta ®· tróng Thi ®éc, mau t×m <color=red>10 Ph¸ Ma Chó<color> ®Õn kh¾c chÕ chóng!","T¹i h¹ ®i ngay!")
+		Talk(2,"","Ta ®· tróng Thi ®éc, mau t×m <color=red>10 Ph¸ Ma Chó<color> ®Õn kh¾c chÕ chóng!","This humble one goes now!")
 		SetTask(1402,15)
 elseif ( UWorld1402  == 15 and  GetItemCount(2,3,12) < 9 ) then
 		Talk(1,"","Mau t×m <color=red>10 Ph¸ Ma Chó<color> vÒ ®©y! Nhanh lªn!")
@@ -81,7 +81,7 @@ function suoyaozhong()
 				"Hay l¾m! Chê ta chót xÝu.",
 				"Mét l¸t sau……",
 				"§©y lµ Hµnh Thi vµ Hñ Thi ng­¬i cÇn, mau ®em vÒ cho <color=yellow>Gia C¸t Kú<color>.",
-				"§a t¹ tiÒn bèi!"
+				"Many thanks, senior!"
 				);
 		DelItem(2,1,19,30);
 		AddItem(2,0,85,25);

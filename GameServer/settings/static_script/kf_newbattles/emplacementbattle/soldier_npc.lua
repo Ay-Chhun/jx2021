@@ -13,13 +13,13 @@ function main()
 				" ®· tiÕn vµo tiÒn doanh/enter_front_camp",
 				" ®· tiÕn vµo hËu doanh/enter_back_camp",
 				"Rêi khái chiÕn tr­êng/ask_reason",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"End dialogue/nothing",
 				}
 	Say("T­íng sÜ phe ta kh«ng ph©n biÖt tuæi t¸c, chØ cÇn ®oµn kÕt ®¸nh ®uæi ngo¹i x©m lµ ®­îc!",getn(selTab),selTab);
 end;
 
 function ask_reason()
-	AskClientForString("leave","NhÑ nhµng rêi khái...",1,32,"Sao ph¶i rêi khái?");
+	AskClientForString("leave","Gently leaving...",1,32,"Sao ph¶i rêi khái?");
 end;	
 
 function leave(sLeaveMsg)

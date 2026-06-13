@@ -2,14 +2,14 @@ Include("\\script\\vng\\lib\\vnglib_award.lua");
 Include("\\script\\vng\\lib\\vnglib_function.lua");
 Include("\\script\\vng\\config\\vng_feature.lua");
 
-szNPCname = "<color=green>§¹i sø Vip: <color>"
+szNPCname = "<color=green>Vip Ambassador: <color>"
 szLogTitle = "VIPCARE"
 szLogAction = "nhËn"
 
 tbVipTitle = {
-	[1] = {"Vip sao ®ång", "red"},
-	[2] = {"Vip sao b¹c", "white"},
-	[3] = {"Vip sao vµng", "yellow"},
+	[1] = {"Bronze Star Vip", "red"},
+	[2] = {"Silver Star Vip", "white"},
+	[3] = {"Gold Star Vip", "yellow"},
 }
 
 LIB_Award.szLogTitle = szLogTitle
@@ -96,7 +96,7 @@ function ThuongThang_Award()
 	 }
 	local tbAward2 = { nBachCau3 = 120*60, nLucThan3 = 120*60, nTamThanh3 = 120*60, nTuLinh3 = 120*60,nGold = 13000000,
 	 item = { 
-	 			{gdp ={2, 1, 30492, 2}, name = "VÐ TiÓu Y B¹c" }
+	 			{gdp ={2, 1, 30492, 2}, name = "Tieu Y Silver Ticket" }
 	 		}
 	 }
 	local tbAward1 = { nBachCau3 = 104*60, nLucThan3 = 104*60, nTamThanh3 = 104*60, nTuLinh3 = 104*60,  nGold = 10000000 }
@@ -117,7 +117,7 @@ function ThuongThang_Award()
 	if ThuongThang_Set() == 1 then
 		LIB_Award:Award(tbAwardSet[nBonus][1])
 		Talk(1,"",szNPCname.."C¸c h¹ ®· nhËn thµnh c«ng phÇn th­ëng th¸ng <bclr=".. tbVipTitle[nBonus][2]  ..">".. tbVipTitle[nBonus][1] .."<bclr>.")
-		gf_WriteLogEx(szLogTitle, szLogAction, 1, "Th¸ng "..tbVipTitle[nBonus][1])
+		gf_WriteLogEx(szLogTitle, szLogAction, 1, "Month"..tbVipTitle[nBonus][1])
 	end
 end
 

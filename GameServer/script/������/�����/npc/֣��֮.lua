@@ -54,7 +54,7 @@ local nTask_DL_State_75 = GetTask(TASK_DL_LV75_ID);
 	if nTask_DL_State_10 == 4 then
 		local strTalk = {
 			"Ta lµ ng­êi H¸n, míi ®Õn §¹i Lý lµm ¨n nªn còng kh«ng hiÓu t×nh h×nh ë ®©y l¾m. Nh­ng nghe nãi nÕu cã g× liªn quan ®Õn Xi Háa gi¸o th× cã thÓ t×m Quèc c«ng Cao Th¨ng TuyÒn ®Ó hái.",
-			"§­îc! §Ó ta ®i hái xem."
+			"Very well! Let me go and ask."
 		}
 		TalkEx("",strTalk);
 		return

@@ -18,7 +18,7 @@ VET_201202_SENDPIFENG_TASK.DaySeq = 2;
 
 VET_201202_SENDPIFENG_AWARD1 = {
 	  {1, 1850, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 1}, 0},
-  	  {1, 1502, "§Êu hån", {2, 1, 1157, 1}, 7 * 24 * 3600},
+  	  {1, 1502, "Soul Duel", {2, 1, 1157, 1}, 7 * 24 * 3600},
     	  {1, 2929, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 7 * 24 * 3600},
     	  {1, 1010, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
 	  {1, 51, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},
@@ -27,7 +27,7 @@ VET_201202_SENDPIFENG_AWARD1 = {
 
 VET_201202_SENDPIFENG_AWARD2 = {
 	{1, 18020, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 2}, 0},
-    	{1, 15020, "§Êu hån", {2, 1, 1157, 1}, 7 * 24 * 3600},
+    	{1, 15020, "Soul Duel", {2, 1, 1157, 1}, 7 * 24 * 3600},
 	{1, 38410, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 7 * 24 * 3600},
     	{1, 5218, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
     	{1, 2000, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},
@@ -39,7 +39,7 @@ VET_201202_SENDPIFENG_AWARD2 = {
 function main()
 	local nDate =  tonumber(date("%y%m%d"))
 	if nDate < 120312 or nDate > 120408 then
-		Talk(1, "", "§· hÕt h¹n tÆng quµ cho chÞ em Phô N÷!")
+		Talk(1, "", "The time to give gifts to the ladies has expired!")
 		return
 	end
 	local szName = "La Sa"

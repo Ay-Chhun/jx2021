@@ -31,7 +31,7 @@ function use_gift(nIdx)
 	gf_SetLogCaption("[viet_newyear][mouse_big_gift]");
 	local nr = random(1, 100)
 	if nr < 4 then
-		nRet, nItem = gf_AddItemEx( {0, 105, 33, 1, 1, -1, -1, -1, -1, -1, -1}, "Niªn thó" );
+		nRet, nItem = gf_AddItemEx( {0, 105, 33, 1, 1, -1, -1, -1, -1, -1, -1}, "Year Beast" );
 		if nRet ~= 0 and nItem ~= 0 then
 			SetItemExpireTime(nItem, 3600 * 24);
 		end

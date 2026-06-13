@@ -125,12 +125,12 @@ end
 -- ÅÐ¶Ï¶ÓÎéÊÇ·ñÄÜ¹»½øÈë
 function Chk_Enter()
 	local szSex = {"ThiÕu hiÖp", "N÷ hiÖp "}
-	local szNoTeam ={"Th¸i H­ HuyÔn C¶nh nguy hiÓm trïng trïng,", " nªn tæ ®éi hay h¬n!"}
+	local szNoTeam ={"Th¸i H­ HuyÔn C¶nh nguy hiÓm trïng trïng,", " so forming a team is better!"}
 	local nSex = GetSex()
 	local szLevel = "<color=green>Lín h¬n hoÆc b»ng cÊp 70<color>"
 	local szItemCount = "<color=green>1 Th¸i H­ §a MËt qu¶<color>"
 	local szTimes = "<color=green>1 lÇn<color>"
-	local szLeader = "<color=green>§éi tr­ëng<color>"
+	local szLeader = "<color=green>Team Leader<color>"
 	local szTown = "<color=green>§éi viªn cïng mét thµnh thÞ<color>"
 	local szExMsg = ""				-- ¶îÍâµÄÐÅÏ¢
 	local nRetCode = 1
@@ -142,7 +142,7 @@ function Chk_Enter()
 	
 	if IsCaptain() == 0 then
 		nRetCode = 0
-		szLeader = "<color=red>§éi tr­ëng<color>" 
+		szLeader = "<color=red>Team Leader<color>" 
 	end
 	
 	local nSize = GetTeamSize()
@@ -788,12 +788,12 @@ end
 
 function RandomAward()
 	local tbAward_ThaiHu = {
-								{1, 2500, "L¹c Mai", {1, 1, 16, 5}},
-								{1, 2500, "Méc Lan Xu©n", {1, 1, 18, 5}},
+								{1, 2500, "Plum Blossom", {1, 1, 16, 5}},
+								{1, 2500, "Magnolia Spring", {1, 1, 18, 5}},
 								{1, 2000, "B¸nh Bét Vµng", {1, 1, 15, 5}},
-								{1, 2000, "T©y B¾c Väng", {1, 1, 19, 5}},
+								{1, 2000, "Northwest Gaze", {1, 1, 19, 5}},
 								{1, 999, "Minh D¹ NguyÖt", {1, 1, 17, 5}},
-								{1, 1, "Tµng R­¬ng", {2, 1, 30341, 2}},
+								{1, 1, "Treasure Chest", {2, 1, 30341, 2}},
 							}
 	gf_EventGiveRandAward(tbAward_ThaiHu, 10000,1,"Thai Hu Huyen Canh","phÇn th­ëng ngÉu nhiªn")							
 end

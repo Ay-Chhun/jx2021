@@ -25,7 +25,7 @@ function OnUse(nItemIdx)
 				format(" trë thµnh "..tDoorName[1].."Thñ vÖ/#use(%d,%d)",nItemIdx,1),
 				format(" trë thµnh "..tDoorName[2].."Thñ vÖ/#use(%d,%d)",nItemIdx,2),
 				format(" trë thµnh "..tDoorName[3].."Thñ vÖ/#use(%d,%d)",nItemIdx,3),
-				"Hñy bá/nothing",
+				"Cancel/nothing",
 				}
 	local nEnemyCamp = GONGSHOU_ID - nPlayerCamp;
 	local szSEGuardName,szSSGuardName,szSWGuardName = GCZ_GetGuardName(SHOU_ID,0);
@@ -51,6 +51,6 @@ function use(nItemIdx,nDoorIdx)
 		SetMissionV(MV_SPIDX_EAST_DOOR+2*(nDoorIdx-1),PlayerIndex);
 		SetMissionV(MV_TRAP_EAST_DOOR+nDoorIdx-1,SHOU_ID);
 		GCZ_Msg2Camp(GetName().."Sö dông Thñ Thµnh lÖnh trë thµnh "..tDoorName[nDoorIdx].."Thñ vÖ",SHOU_ID);		
-		Talk(1,"","B¹n ®· trë thµnh Thñ vÖ cña <color=yellow>"..tDoorName[nDoorIdx].."<color>. Träng tr¸ch rÊt nÆng nÒ!");
+		Talk(1,"","B¹n ®· trë thµnh Thñ vÖ cña <color=yellow>"..tDoorName[nDoorIdx].."<color>. The responsibility is very heavy!");
 	end;
 end;

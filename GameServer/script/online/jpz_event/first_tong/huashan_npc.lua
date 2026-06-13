@@ -1,6 +1,6 @@
 Include("\\script\\online\\jpz_event\\first_tong\\mission_head.lua");
 
-g_InfoHeader = "<color=green>Vâ L©m §Æc Sø<color>: "
+g_InfoHeader = "<color=green>Wulin Special Envoy<color>:"
 
 function main()
 	if mf_GetMissionV(MISSION_ID,MV_MISSION_STATE,HUASHAN_MAP_ID) == 2 then
@@ -11,7 +11,7 @@ function main()
 	Say(g_InfoHeader.."Hoa S¬n c¶nh ®Ñp tuyÖt mü, ng­¬i muèn rêi khái ch¨ng?",
 	2,
 	"§óng! Ta muèn rêi khái/LeaveMap",
-	"KÕt thóc ®èi tho¹i/end_dialog"
+	"End dialogue/end_dialog"
 	)
 end
 

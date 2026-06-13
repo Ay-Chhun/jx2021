@@ -2,7 +2,7 @@
 --author:yanjun
 --describe:战场里面的墓地送传人
 Include("\\script\\gongcheng\\gongcheng_function.lua");
-g_InfoHeader = "<color=green>T藀 k誸 quan<color>: ";
+g_InfoHeader = "<color=green>Rally Point<color>:";
 function main()
 	local nNpcIdx = GetTargetNpc();
 	local _,nMapX,nMapY = GetNpcWorldPos(nNpcIdx);

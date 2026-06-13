@@ -41,7 +41,7 @@ function Get_Random_Player(nCamp,nPlayerCount)
 		return tSelectedPlayer;
 	end;
 	if getn(tPlayer) ~= nMSPlayerCount then
-		WriteLog("[ChiÕn tr­êng b¸o lçi]: Hµm sè Get_Random_Player trong tPlayer("..getn(tPlayer)..") lín nhá so víi nMSPlayerCount("..nMSPlayerCount..") kh«ng ®ång nhÊt");
+		WriteLog("[Battlefield error]: Function Get_Random_Player in tPlayer("..getn(tPlayer)..") lín nhá so víi nMSPlayerCount("..nMSPlayerCount..") kh«ng ®ång nhÊt");
 	end;
 	for i=1,nPlayerCount do
 		local nSel = random(1,getn(tPlayer));
@@ -49,7 +49,7 @@ function Get_Random_Player(nCamp,nPlayerCount)
 		tremove(tPlayer,nSel);
 	end;
 	if getn(tSelectedPlayer) ~= nPlayerCount then
-		WriteLog("[ChiÕn tr­êng b¸o lçi]: Hµm sè Get_Random_Player trÞ ph¶n håi tSelectedPlayer("..getn(tSelectedPlayer)..") lín nhá so víi nPlayerCount("..nPlayerCount..") kh«ng ®ång nhÊt");
+		WriteLog("[Battlefield error]: Function Get_Random_Player return value tSelectedPlayer("..getn(tSelectedPlayer)..") lín nhá so víi nPlayerCount("..nPlayerCount..") kh«ng ®ång nhÊt");
 	end;
 	return tSelectedPlayer;
 end;
@@ -59,7 +59,7 @@ function Create_Task_NPC(nCamp,sName)
 	local nNpcCount = KNOWMAN_COUNT+1;	--£±£±¸öÖªÇéÈË¼ÓÒ»¸öÄ¿±êNPC
 	tPosition = Get_Position_Index(nCamp);	--tPosition×îºóÒ»¸öÔªËØÊÇÄ¿±êNPCµÄÎ»ÖÃË÷Òý£¬¼´µÚnNpcCount¸öÔªËØ
 	if getn(tPosition) ~= nNpcCount then
-		WriteLog("[ChiÕn tr­êng b¸o lçi]: Hµm sè Create_Task_NPC trong Get_Position_Index ph¶n håi table lín nhá kh«ng ph¶i"..nNpcCount..",§óng:"..getn(tPosition))
+		WriteLog("[ChiÕn tr­êng b¸o lçi]: Hµm sè Create_Task_NPC trong Get_Position_Index ph¶n håi table lín nhá kh«ng ph¶i"..nNpcCount..",Correct:"..getn(tPosition))
 		for i=1,nNpcCount do	--ÈÝ´í´¦Àí£¬ÓÐ¿ÉÄÜÔÚÍ¬Ò»¸öÎ»ÖÃ´´½¨¶à¸öNPC
 			tPosition[i] = random(1,g_PosCount);	
 		end;
@@ -138,7 +138,7 @@ function Select_Task_Player(nCamp)
 	end;
 	local nSelPlayerCount = getn(tSelPlayer);
 	if nSelPlayerCount > SELECT_COUNT then
-		WriteLog("[ChiÕn tr­êng b¸o lçi]: Select_Task_Player hµm sè Get_Random_Player(nCamp,SELECT_COUNT) ph¶n håi sai, tSelPlayer lín nhá lµ:"..nSelPlayerCount);
+		WriteLog("[Battlefield error]: Select_Task_Player function Get_Random_Player(nCamp,SELECT_COUNT) returned wrong value, tSelPlayer size is:"..nSelPlayerCount);
 	end;
 	Clear_Task_Player(nCamp);
 	for i=1,nSelPlayerCount do
@@ -203,25 +203,25 @@ function Check_Position(nPosIndex)
 	return 1;
 end;
 
-tFirstName = {"Lý","V­¬ng","Tr­¬ng","L­u","TrÇn","D­¬ng","TriÖu","Hoµng","Chu",
-			  "Chu","Cao","L©m","Hµ","Qu¸ch","M·","La ","L­¬ng","Tèng","TrÞnh",
-			  "T¹","Hµn","§­êng","Phïng","Vu","§æng","Tiªu","Tr×nh","Tµo","Viªn",
-			  "§Æng","Høa","Phã","ThÈm","T¨ng","Bµnh","L÷","T«","L­"," T­¬ng",
-			  "Th¸i","Gi¶","§inh","Ngôy","TiÕt ","DiÖp","Diªm","Xa","Phan","§¹t ",
-			  "§¸i","H¹","Chung","U«ng","§iÒn","NhiÖm","Kh­¬ng","Phµn ","Ph­¬ng ","Th¹ch",
-			  "Diªu","§µm","Liªu","Tr©u","GÊu"," Kim ","Lôc","H¸ch","Khæng","B¹ch",
-			  "Th«i","khang","Mao","Kh­u","TÇn","Giang","Sö","Cè","HÇu","ThiÖu",
-			  "M·nh","Long","V¹n ","§oµn","Ch­¬ng","TiÒn","Thang","Do·n","Lª"," DÞch ",
-			  "Th­êng","Vò ","¢n","H¹","L¹i","Cung","T©n","Ng«","Tõ","T«n",
-			  "Bå ",
+tFirstName = {"Li","V­¬ng","Tr­¬ng","Liu","Chen","D­¬ng","Zhao","Hoµng","Chu",
+			  "Chu","Cao","Lin","He","Guo","Horse","La ","Liang","Tèng","Zheng",
+			  "Xie","Han","Tang","Feng","Vu","Dong","Xiao","Cheng","Cao","Viªn",
+			  "Deng","Xu","Fu","Shen","T¨ng","Peng","Lu","Su","Lu"," Xiang",
+			  "Th¸i","Jia","Ding","Wei","Xue","Ye","Yan","Xa","Phan","Da",
+			  "Dai","Xia","Chung","Wang","Tian","Ren","Jiang","Fan","Faction","Th¹ch",
+			  "Yao","Tan","Liªu","Tr©u","Xiong"," Kim ","Lu","Hao","Kong","B¹ch",
+			  "Cui","khang","Mao","Qiu","Qin","Giang","Shi","Gu","Hou","ThiÖu",
+			  "Meng","Long","V¹n ","Duan","Zhang","TiÒn","Thang","Yin","Li"," Yi",
+			  "Common","Wu","Yin","Xia","Lai","Cung","T©n","Wu","Tu","T«n",
+			  "Pu",
 			 };
 nFirstNameSize = getn(tFirstName);
-tSecondName = {"ba","bèn","Ngò ","L©m","§iÒn","Th¹ch","B¹ch","khang","Quúnh","Giang",
-				"Minh","Ch­¬ng","Vò ","KiÒu","T©n","C¸t","TrÝ","ChÝ ","D­¬ng","®¹t","Thanh",
-				"Toµn","Huy","B©n","Siªu","phi","Vò","L­îng","KiÖn","Ho»ng","ý","H¹o",
-				"Khanh","QuyÒn","Quý","Dông","Phong","h¶i","B»ng","Tïng","Thiªn","V¹n ","Xu©n",
-				"Anh","c¶nh","Söu","TiÖm","H­¬ng","Th©m","Hoµn ","Ch©n","Bè","Tr¸c","Nguyªn",
-				"Xung","To¸n","Hy","Chïy","TiÕn","®Ó","NhuËn","KiÖm","hai"
+tSecondName = {"ba","ben","Wu","Lin","Tian","Th¹ch","B¹ch","khang","Qiong","Giang",
+				"Minh","Zhang","Wu","Qiao","T©n","Ge","Zhi","Zhi","D­¬ng","da","Thanh",
+				"Quan","Huy","Bin","Chao","phi","Wu","Liang","Jian","Hong","yi","H¹o",
+				"Khanh","Quan","Gui","Yong","Phong","hai","Peng","Song","Thiªn","V¹n ","Chun",
+				"Anh","jing","Chou","Jian","Xiang","Shen","Huan","Zhen","Paper","Zhuo","Yuan",
+				"Xung","Suan","Hy","Chui","Jin","de","Run","Jian","hai"
 
 			  };
 ntSecondNameSize = getn(tSecondName);

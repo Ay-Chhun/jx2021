@@ -5,8 +5,8 @@ Include("\\script\\online\\zgc_public_fun.lua")
 
 WN_201403_ACTIVITY_ID = 117
 
-WN_201403_NPC_MAIN = "<color=green>Vò N­¬ng<color>:"
-WN_201403_NPC = "<color=green>Phïng §ång Nhi<color>:"
+WN_201403_NPC_MAIN = "<color=green>Lady Wu<color>:"
+WN_201403_NPC = "<color=green>Feng Dongni<color>:"
 
 WN_201403_DIALOG = {
 	"nhËn nhiÖm vô truy t×m Ên tÝn/WN_201403_GetTask",
@@ -50,7 +50,7 @@ function WN_201403_GetTask()
 		return
 	end
 	if nTaskStatus == 2 then
-		Talk(1,"",WN_201403_NPC_MAIN.."b¹n ®· nhËn ®­îc nhiÖm vô truy t×m Ên tÝn \n"..format("H·y ®i %s t×m %s hoµn thµnh nhiÖm vô!", "D­îc V­¬ng cèc", "L­u Tam "))
+		Talk(1,"",WN_201403_NPC_MAIN.."b¹n ®· nhËn ®­îc nhiÖm vô truy t×m Ên tÝn \n"..format("H·y ®i %s t×m %s hoµn thµnh nhiÖm vô!", "D­îc V­¬ng cèc", "Liu San"))
 		return
 	end
 	if nTaskStatus == 1 then
@@ -139,7 +139,7 @@ function WN_201403_KillNpc(sName)
 		if nIsCompelte == 1 then
 			local tName = {
 				[1] = "Chu UÊt Ly",
-				[2] = "L­u Tam ",
+				[2] = "Liu San",
 				[3] = "§Ö Tö C«n L«n",
 			}
 			Talk(1,"","B¹n ®· hoµn thµnh nhiÖm vô!")
@@ -223,7 +223,7 @@ function WN_201403_Talk1()
 		WN_201403_TASKGROUP:SetTask(WN_201403_TASKGROUP.TaskStep2_1, 0)
 		WN_201403_TASKGROUP:SetTask(WN_201403_TASKGROUP.TaskStep2_2, 0)
 		WN_201403_TASKGROUP:SetTask(WN_201403_TASKGROUP.TaskStep2_3, 0)
-		local msg = "NhiÖm vô hoµn thµnh!"..format("Mau ®i%st×m%s®i!", "D­îc V­¬ng cèc", "L­u Tam ")
+		local msg = "NhiÖm vô hoµn thµnh!"..format("Hurry, go to %s and find %s!", "D­îc V­¬ng cèc", "Liu San")
 		Msg2Player(msg)
 		Talk(1,"",msg)
 		TaskTip(msg)
@@ -244,7 +244,7 @@ WN_201403_KILL_2 =
 	},
 	[3] = {
 		{690, "Th­¬ng t­îng", "Hoµng l¨ng mé thÊt tÇng 2"},
-		{690, "TÇm B¶o Nh©n", "Mª cung sa m¹c"},
+		{690, "TÇm B¶o Nh©n", "Desert Demon Palace"},
 	},
 }
 
@@ -288,7 +288,7 @@ function WN_201403_Talk2()
 	if bIsComplete == 1 then
 		WN_201403_TASKGROUP:SetTask(WN_201403_TASKGROUP.TaskStatus, 3)
 		WN_201403_TASKGROUP:SetTask(WN_201403_TASKGROUP.TaskStep3_1, 0)
-		local msg = "NhiÖm vô hoµn thµnh!"..format("Mau ®i%st×m%s®i!", "Thiªn s­ bÝ c¶nh", "§Ö Tö C«n L«n")
+		local msg = "NhiÖm vô hoµn thµnh!"..format("Hurry, go to %s and find %s!", "Thiªn s­ bÝ c¶nh", "§Ö Tö C«n L«n")
 		Msg2Player(msg)
 		Talk(1,"",msg)
 		TaskTip(msg)
@@ -366,7 +366,7 @@ function WN_201403_FinishTask()
 		return
 	end
 	if nTaskStatus == 2 then
-		Talk(1,"",WN_201403_NPC_MAIN.."B¹n ch­a hoµn thµnh nhiÖm vô truy t×m Ên tÝn\n"..format("H·y ®i %s t×m %s hoµn thµnh nhiÖm vô!", "D­îc V­¬ng cèc", "L­u Tam "))
+		Talk(1,"",WN_201403_NPC_MAIN.."B¹n ch­a hoµn thµnh nhiÖm vô truy t×m Ên tÝn\n"..format("H·y ®i %s t×m %s hoµn thµnh nhiÖm vô!", "D­îc V­¬ng cèc", "Liu San"))
 		return
 	end
 	if nTaskStatus == 1 then
@@ -397,7 +397,7 @@ function WN_201403_GetAward1()
 	WN_201403_TASKGROUP:SetTask(WN_201403_TASKGROUP.TaskStatus, 5)
 	gf_Modify("Exp", 100000000)
 	gf_Modify("Rep", 19)
-	gf_EventGiveCustomAward(4, 19, 1, "Event phô 1 th¸ng 3");
+	gf_EventGiveCustomAward(4, 19, 1, "Side Event 1 March");
 	ahf_GetPetBook(1)
 end
 
@@ -442,11 +442,11 @@ function WN_201403_GetAward3()
 	WN_201403_TASKGROUP:SetTask(WN_201403_TASKGROUP.TaskStatus, 5)
 	gf_Modify("Exp", 1234567890)
 	gf_Modify("Rep", 500)
-	gf_EventGiveCustomAward(4, 200, 1, "Event phô 1 th¸ng 3");
+	gf_EventGiveCustomAward(4, 200, 1, "Side Event 1 March");
 	ahf_GetPetBook(3)
 	ahf_GetPetBook(4)
 	AddItem(2, 1, 30632, 2000)
 	AddItem(2, 1, 30633, 2000)
-	gf_AddItemEx2({2, 1, 30497, 100, 4}, "Ma Tinh", "Event phô 1 th¸ng 3","siªu cÊp nhËn th­ëng ", 0, 1)
-	gf_AddItemEx2({2, 1, 9977, 1, 4}, "Qu©n C«ng Huy Hoµng", "Event phô 1 th¸ng 3","siªu cÊp nhËn th­ëng ", 7 * 24 * 3600, 1)
+	gf_AddItemEx2({2, 1, 30497, 100, 4}, "Ma Tinh", "Side Event 1 March","siªu cÊp nhËn th­ëng ", 0, 1)
+	gf_AddItemEx2({2, 1, 9977, 1, 4}, "Qu©n C«ng Huy Hoµng", "Side Event 1 March","siªu cÊp nhËn th­ëng ", 7 * 24 * 3600, 1)
 end

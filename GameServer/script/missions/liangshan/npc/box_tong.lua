@@ -15,7 +15,7 @@ T_TongBoxScript = {
 T_TONG_BOX_IDX = {}
 function remove_tong_box()
 	for i,v in T_TONG_BOX_IDX do
-		if GetNpcName(i) == "R­¬ng §ång" then
+		if GetNpcName(i) == "Copper Chest" then
 			SetNpcLifeTime(i, 0);
 		end
 	end
@@ -29,7 +29,7 @@ function create_box_tong(m,x,y, nBoxId)
 	--local m, x, y = GetNpcWorldPos(nNpcIdx);
 	--ÌìÒõÃÜÏä1¸ö
 	local x2, y2 = x + random(-5, 5), y + random(-5, 5);
-	local npc = CreateNpc("tongbaoxiang", "R­¬ng §ång", m, x2, y2);
+	local npc = CreateNpc("tongbaoxiang", "Copper Chest", m, x2, y2);
 	if npc and npc > 0 then
 		T_TONG_BOX_IDX[npc] = 1
 		--SetNpcLifeTime(npc, 180);

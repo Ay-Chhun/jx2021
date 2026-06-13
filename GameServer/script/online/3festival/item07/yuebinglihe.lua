@@ -14,9 +14,9 @@ tYuebing = {
 function OnUse()
 	Say("Më hép b¸nh Trung Thu ngÉu nhiªn nhËn ®­îc 1 b¸nh Trung Thu ThŞnh ThÕ, më kh«ng? ",
 		3,
-		"§ång ı/confirm_yuebing",
+		"Agree/confirm_yuebing",
 		"Ta muèn xem x¸c suÊt nhËn ®­îc b¸nh Trung Thu./about_prob",
-		"Kh«ng cã g×/nothing")
+		"Nothing/nothing")
 end
 
 function confirm_yuebing()
@@ -31,10 +31,10 @@ function confirm_yuebing()
 				if add_flag == 1 then
 					Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tYuebing[i][1].." 1!");
 					if i == getn(tYuebing) then
-						Msg2Global("Ng­êi ch¬i"..GetName().."Më hép b¸nh Trung Thu nhËn ®­îc "..tYuebing[i][1].." 1!");
+						Msg2Global("Player"..GetName().."Më hép b¸nh Trung Thu nhËn ®­îc "..tYuebing[i][1].." 1!");
 					end
 				else
-					WriteLog("Hép b¸nh Trung Thu: "..GetName().."Më b¸nh Trung Thu nhËn ®­îc b¸nh Trung Thu thÊt b¹i, vŞ trİ thÊt b¹i:"..add_flag);
+					WriteLog("Mooncake Box:"..GetName().."Më b¸nh Trung Thu nhËn ®­îc b¸nh Trung Thu thÊt b¹i, vŞ trİ thÊt b¹i:"..add_flag);
 				end
 				break
 			end

@@ -11,7 +11,7 @@ function main()
 				"tra xem néi dung ho¹t ®éng./#knowdetail(2)",
 				"tra xem vËt liÖu ®· nép./#queryinfor(2)",
 				"NhËn s¸ch c«ng lao Tô B¶o Trai./#getbook(2)",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"End dialogue/nothing",
 				};
 	local nState = Get_Laborday_State();
 	if nState == 0 then
@@ -63,7 +63,7 @@ function askforaward()	--Ñ¯ÎÊÒª²»ÒªÄÃ½±
 		nPrizeType = 10;
 	else
 		Talk(1,"","[hÖ thèng]: sè liÖu bŞ sai, xin liªn hÖ víi GM.");
-		Write_Log("Ho¹t ®éng tÕt lao ®éng cã sai sãt","sè l­îng thu thËp sai:"..nItemNum);
+		Write_Log("Ho¹t ®éng tÕt lao ®éng cã sai sãt","Wrong collection quantity:"..nItemNum);
 	end;
 	if nPrizeType == 10 and GetOnePrize >= 1 then
 		nPrizeType = 9;
@@ -85,7 +85,7 @@ function askforaward()	--Ñ¯ÎÊÒª²»ÒªÄÃ½±
 			"Ta muèn tra xem phÇn th­ëng./#knowrule(2)",
 			"Th«i, ®Ó lÇn sau./nothing",
 			};
-	Say("HiÖn giê ®· thu thËp <color=yellow>"..nItemNum.."<color> lo¹i vËt phÈm, b»ng h÷u cã thÓ ®æi lÊy <color=yellow>"..tNumTab[nPrizeType].."<color> phÇn th­ëng: <color=yellow>"..PrizeTab[nPrizeType][1].."<color> sau khi ®æi lÊy phÇn th­ëng, sè l­îng vËt phÈm ®· nép sÏ mÊt hÕt. B»ng h÷u cã ®ång ı ®æi lÊy phÇn th­ëng nµy kh«ng?",getn(selTab),selTab);
+	Say("Right now you have collected <color=yellow>"..nItemNum.."<color> lo¹i vËt phÈm, b»ng h÷u cã thÓ ®æi lÊy <color=yellow>"..tNumTab[nPrizeType].."<color> phÇn th­ëng: <color=yellow>"..PrizeTab[nPrizeType][1].."<color> sau khi ®æi lÊy phÇn th­ëng, sè l­îng vËt phÈm ®· nép sÏ mÊt hÕt. B»ng h÷u cã ®ång ı ®æi lÊy phÇn th­ëng nµy kh«ng?",getn(selTab),selTab);
 end;
 
 function getaward(nPrizeType)	--NPC·¢½±

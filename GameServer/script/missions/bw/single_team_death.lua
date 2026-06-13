@@ -15,7 +15,7 @@ local nDecedentIndex = PlayerIndex;
 	end
 	PlayerIndex = OldPlayer;
 	
-	news_str = nMurderName.."  Æ∑ gi’t  "..nDecedentName;
+	news_str = nMurderName.."  has killed"..nDecedentName;
 	Msg2MSAll(SINGLE_TEAM_MISSION_ID,news_str);
 	
 	return -1

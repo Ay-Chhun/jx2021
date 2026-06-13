@@ -233,18 +233,18 @@ end
 
 function VNG_Del1Time()
 	local tb_translife_cloth_PS_Xoa = {	--tb_translife_cloth_PS
-													{"Chuy”n Sinh Trang", {0,108,30029,1,4,7,639,3,371,7,102}}, 
-													{"Chuy”n Sinh Trang", {0,109,30029,1,4,5,342,7,102}}, 
-													{"Chuy”n Sinh Trang", {0,110,30029,1,4,4,282,7,250,7,102}},
-													{"Chuy”n Sinh Trang", {0,108,30029,1,4,7,27,7,102}}, 
-													{"Chuy”n Sinh Trang", {0,109,30029,1,4,5,342,4,409,7,102}}, 
-													{"Chuy”n Sinh Trang", {0,110,30029,1,4,5,292,5,293,7,102}},
-													 {"Chuy”n Sinh Trang", {0,108,30029,1,4,3,13075,7,102}}, 
-													 {"Chuy”n Sinh Trang", {0,109,30029,1,4,5,342,2,346,7,102}}, 
-													 {"Chuy”n Sinh Trang", {0,110,30029,1,4,4,282,7,250,7,102}},
-													 {"Chuy”n Sinh Trang", {0,108,30029,1,4,6,302,7,409,7,102}}, 
-													 {"Chuy”n Sinh Trang", {0,109,30029,1,4,5,13219,5,13220,7,102}}, 
-													 {"Chuy”n Sinh Trang", {0,110,30029,1,4,4,290,7,250,7,102}},
+													{"Rebirth Manor", {0,108,30029,1,4,7,639,3,371,7,102}}, 
+													{"Rebirth Manor", {0,109,30029,1,4,5,342,7,102}}, 
+													{"Rebirth Manor", {0,110,30029,1,4,4,282,7,250,7,102}},
+													{"Rebirth Manor", {0,108,30029,1,4,7,27,7,102}}, 
+													{"Rebirth Manor", {0,109,30029,1,4,5,342,4,409,7,102}}, 
+													{"Rebirth Manor", {0,110,30029,1,4,5,292,5,293,7,102}},
+													 {"Rebirth Manor", {0,108,30029,1,4,3,13075,7,102}}, 
+													 {"Rebirth Manor", {0,109,30029,1,4,5,342,2,346,7,102}}, 
+													 {"Rebirth Manor", {0,110,30029,1,4,4,282,7,250,7,102}},
+													 {"Rebirth Manor", {0,108,30029,1,4,6,302,7,409,7,102}}, 
+													 {"Rebirth Manor", {0,109,30029,1,4,5,13219,5,13220,7,102}}, 
+													 {"Rebirth Manor", {0,110,30029,1,4,4,290,7,250,7,102}},
 									}
 	local nCount = getn(tb_translife_cloth_PS_Xoa)
 	local nCheckXoa = VNG_GetTaskPos(TSK_DUNGCHUNG, 1, 1)

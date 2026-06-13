@@ -7,21 +7,21 @@ MAP_ID = 117;
 function OnUse()
 	local nMapID = GetWorldPos()
 	if nMapID ~= MAP_ID then
-		Talk(1,"","你只有在天涯海角才能点亮许愿星！");
+		Talk(1,"","You can only light the wishing star at the Ends of the Earth!");
 		return 0;
 	end;
-	AskClientForString("create_star","",1,14,"请输入星星的名字：");
+	AskClientForString("create_star","",1,14,"Please enter the star's name:");
 end;
 
 function create_star(sName)
 	local nMapID = GetWorldPos();
 	if nMapID ~= MAP_ID then
-		Talk(1,"","你只有在天涯海角才能点亮许愿星！");
+		Talk(1,"","You can only light the wishing star at the Ends of the Earth!");
 		return 0;
 	end;
 	if DelItem(2,1,1171,1) == 1 then
 		local nNpcIndex = CreateNpc("透明人",sName,GetWorldPos());
-		Msg2Player("祝福你的心愿能够实现！");
+		Msg2Player("May your wishes come true!");
 		SetNpcLifeTime(nNpcIndex,1*60*60);
 		SetCurrentNpcSFX(nNpcIndex,935,1,1);
 	end;

@@ -27,13 +27,13 @@ Attribute_Num_Rate = {
 
 WEAPON_DATA_76 = {
 
-	[1]  = 	{{0,8,97,"A La H¸n Tr­îng"},{2,1,382}},	--ÕÈ
-	[2]  = 	{{0,5,40,"LiÖt DiÖm"},{2,1,377}},			--¹÷°ô
+	[1]  = 	{{0,8,97,"Arhat Staff"},{2,1,382}},	--ÕÈ
+	[2]  = 	{{0,5,40,"Lie Yan"},{2,1,377}},			--¹÷°ô
 	[3]  = 	{{0,6,108,"§¹i Hµo L«i Th­¬ng"},{2,1,383}},	--Ç¹
 	[4]  = 	{{0,0,14,"V¹n NhÉn"},{2,1,375}},			--»¤ÊÖ
-	[5]  = 	{{0,3,64,"Cæ §Ýnh"},{2,1,379}},			--µ¶
+	[5]  = 	{{0,3,64,"Guding"},{2,1,379}},			--µ¶
 	[6]  = 	{{0,2,36,"Háa Tinh"},{2,1,376}},			--½£
-	[7]  = 	{{0,7,12,"L¨ng Phong"},{2,1,386}},			--Ë«µ¶
+	[7]  = 	{{0,7,12,"Lingfeng"},{2,1,386}},			--Ë«µ¶
 	[8]  = 	{{0,1,53,"M·n Thiªn Hoa Vò"},{2,1,378}},	--°µÆ÷
 	[9]  = 	{{0,9,86,"ThÇn Hµnh"},{2,1,381}},			--±Ê
 	[10] = 	{{0,10,75,"Hi Nh©n CÇm"},{2,1,380}},	--ÇÙ
@@ -66,14 +66,14 @@ local nOk,nItemIndex = 0,0;
 		if IsWeaponDestroy(nAttribute_1,nAttribute_2,nAttribute_3) == 1 then
 			Say("V× kü x¶o khai phong ®· dïng kh«ng phï hîp dÉn ®Õn vò khÝ bÞ tæn h¹i.",0);
 			DelItem(WEAPON_DATA_76[nWeaponType][2][1],WEAPON_DATA_76[nWeaponType][2][2],WEAPON_DATA_76[nWeaponType][2][3],1);
-			WriteLog("[NhËt ký kÝch ho¹t vò khÝ]".."		Tµi kho¶n:"..GetAccount().."		Tªn:"..GetName().."		Gi¸m ®Þnh 1 "..WEAPON_DATA_76[nWeaponType][1][4].."		KÕt qu¶: ThÊt b¹i!");
+			WriteLog("[NhËt ký kÝch ho¹t vò khÝ]".."		Account:"..GetAccount().."		Name:"..GetName().."		Gi¸m ®Þnh 1 "..WEAPON_DATA_76[nWeaponType][1][4].."		KÕt qu¶: ThÊt b¹i!");
 		else
 			nAttributeLv_1,nAttributeID_1,nAttributeLv_2,nAttributeID_2,nAttributeLv_3,nAttributeID_3 = GetWeaponAttribute(nKfType,nAttribute_1,nAttribute_2,nAttribute_3,nAttributeType);
 			nOk,nItemIndex = AddItem(WEAPON_DATA_76[nWeaponType][1][1],WEAPON_DATA_76[nWeaponType][1][2],WEAPON_DATA_76[nWeaponType][1][3],1,1,nAttributeLv_1,nAttributeID_1,nAttributeLv_2,nAttributeID_2,nAttributeLv_3,nAttributeID_3);
 			SetEquipCanChouQu(nItemIndex,1); 
 			DelItem(WEAPON_DATA_76[nWeaponType][2][1],WEAPON_DATA_76[nWeaponType][2][2],WEAPON_DATA_76[nWeaponType][2][3],1);
 			Say("Chóc mõng b¹n, vò khÝ <color=yellow>"..WEAPON_DATA_76[nWeaponType][1][4].."<color> KÝch ho¹t thµnh c«ng!",0);
-			WriteLog("[NhËt ký kÝch ho¹t vò khÝ]".."		Tµi kho¶n:"..GetAccount().."		Tªn:"..GetName().."		Gi¸m ®Þnh 1 "..WEAPON_DATA_76[nWeaponType][1][4].."		KÕt qu¶: Thµnh c«ng! NhËn ®­îc mét vËt phÈm, id lµ: *"..WEAPON_DATA_76[nWeaponType][1][1].."*"..WEAPON_DATA_76[nWeaponType][1][2].."*"..WEAPON_DATA_76[nWeaponType][1][3].."*1*1*"..nAttributeLv_1.."*"..nAttributeID_1.."*"..nAttributeLv_2.."*"..nAttributeID_2.."*"..nAttributeLv_3.."*"..nAttributeID_3.."{vò khÝ}");
+			WriteLog("[NhËt ký kÝch ho¹t vò khÝ]".."		Account:"..GetAccount().."		Name:"..GetName().."		Gi¸m ®Þnh 1 "..WEAPON_DATA_76[nWeaponType][1][4].."		KÕt qu¶: Thµnh c«ng! NhËn ®­îc mét vËt phÈm, id lµ: *"..WEAPON_DATA_76[nWeaponType][1][1].."*"..WEAPON_DATA_76[nWeaponType][1][2].."*"..WEAPON_DATA_76[nWeaponType][1][3].."*1*1*"..nAttributeLv_1.."*"..nAttributeID_1.."*"..nAttributeLv_2.."*"..nAttributeID_2.."*"..nAttributeLv_3.."*"..nAttributeID_3.."{vò khÝ}");
 		end
 	else
 		Say("VËt liÖu kÝch ho¹t cña b¹n hiÖn kh«ng ®ñ! H·y chuÈn bÞ l¹i!",0);
@@ -433,14 +433,14 @@ function Weapon_Kaifeng_Ex(nKfType,nAttributeType,nWeaponType)
 		if IsWeaponDestroy(nAttribute_1,nAttribute_2,nAttribute_3) == 1 then
 			Say("V× kü x¶o khai phong ®· dïng kh«ng phï hîp dÉn ®Õn vò khÝ bÞ tæn h¹i.",0);
 			DelItem(WEAPON_DATA_76[nWeaponType][2][1],WEAPON_DATA_76[nWeaponType][2][2],WEAPON_DATA_76[nWeaponType][2][3],1);
-			WriteLog("[NhËt ký kÝch ho¹t vò khÝ]".."		Tµi kho¶n:"..GetAccount().."		Tªn:"..GetName().."		Gi¸m ®Þnh 1 "..WEAPON_DATA_76[nWeaponType][1][4].."		KÕt qu¶: ThÊt b¹i!");
+			WriteLog("[NhËt ký kÝch ho¹t vò khÝ]".."		Account:"..GetAccount().."		Name:"..GetName().."		Gi¸m ®Þnh 1 "..WEAPON_DATA_76[nWeaponType][1][4].."		KÕt qu¶: ThÊt b¹i!");
 		else
 			nAttributeLv_1,nAttributeID_1,nAttributeLv_2,nAttributeID_2,nAttributeLv_3,nAttributeID_3 = GetWeaponAttribute(nKfType,nAttribute_1,nAttribute_2,nAttribute_3,nAttributeType);
 			nOk,nItemIndex = AddItem(WEAPON_DATA_76[nWeaponType][1][1],WEAPON_DATA_76[nWeaponType][1][2],WEAPON_DATA_76[nWeaponType][1][3],1,1,nAttributeLv_1,nAttributeID_1,nAttributeLv_2,nAttributeID_2,nAttributeLv_3,nAttributeID_3);
 			SetEquipCanChouQu(nItemIndex,1);
 			DelItem(WEAPON_DATA_76[nWeaponType][2][1],WEAPON_DATA_76[nWeaponType][2][2],WEAPON_DATA_76[nWeaponType][2][3],1);
 			Say("Chóc mõng b¹n, vò khÝ <color=yellow>"..WEAPON_DATA_76[nWeaponType][1][4].."<color> KÝch ho¹t thµnh c«ng!",0);
-			WriteLog("[NhËt ký kÝch ho¹t vò khÝ]".."		Tµi kho¶n:"..GetAccount().."		Tªn:"..GetName().."		Gi¸m ®Þnh 1 "..WEAPON_DATA_76[nWeaponType][1][4].."		KÕt qu¶: Thµnh c«ng! NhËn ®­îc mét vËt phÈm, id lµ: *"..WEAPON_DATA_76[nWeaponType][1][1].."*"..WEAPON_DATA_76[nWeaponType][1][2].."*"..WEAPON_DATA_76[nWeaponType][1][3].."*1*1*"..nAttributeLv_1.."*"..nAttributeID_1.."*"..nAttributeLv_2.."*"..nAttributeID_2.."*"..nAttributeLv_3.."*"..nAttributeID_3.." vò khÝ! Dïng vËt phÈm trong Ngù C¸c ®Ó mëi bao, C¸c kiÓu më:"..nKfType);
+			WriteLog("[NhËt ký kÝch ho¹t vò khÝ]".."		Account:"..GetAccount().."		Name:"..GetName().."		Gi¸m ®Þnh 1 "..WEAPON_DATA_76[nWeaponType][1][4].."		KÕt qu¶: Thµnh c«ng! NhËn ®­îc mét vËt phÈm, id lµ: *"..WEAPON_DATA_76[nWeaponType][1][1].."*"..WEAPON_DATA_76[nWeaponType][1][2].."*"..WEAPON_DATA_76[nWeaponType][1][3].."*1*1*"..nAttributeLv_1.."*"..nAttributeID_1.."*"..nAttributeLv_2.."*"..nAttributeID_2.."*"..nAttributeLv_3.."*"..nAttributeID_3.." vò khÝ! Dïng vËt phÈm trong Ngù C¸c ®Ó mëi bao, C¸c kiÓu më:"..nKfType);
 		end
 	else
 		Say("VËt liÖu kÝch ho¹t cña b¹n hiÖn kh«ng ®ñ! H·y chuÈn bÞ l¹i!",0);

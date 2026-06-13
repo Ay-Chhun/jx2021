@@ -23,7 +23,7 @@ ItemIndex	BodyType	GroupName	GDP	SellType	SellPrices	PopPrice	GiftPrice	Not4Sale
 6	2		0;110;567	7	1;1;1	10			
 6	3		0;110;568	7	1;1;1	10			
 6	4		0;110;569	7	1;1;1	10			
-7	1	V¨n Sö Trang	0;108;570	7	1;1;1	10			
+7	1	Literary Manor	0;108;570	7	1;1;1	10			
 7	2		0;108;571	7	1;1;1	10			
 7	3		0;108;572	7	1;1;1	10			
 7	4		0;108;573	7	1;1;1	10			
@@ -230,7 +230,7 @@ ItemIndex	BodyType	GroupName	GDP	SellType	SellPrices	PopPrice	GiftPrice	Not4Sale
 67	1	TuÕ Thñ bµo	0;108;139	7	1;1;1	10			
 68	1		0;109;185	7	1;1;1	10			
 69	1		0;110;81	7	1;1;1	10			
-67	2	ChÝnh Sãc gi¸p	0;108;140	7	1;1;1	10			
+67	2	Main Plow Armor	0;108;140	7	1;1;1	10			
 68	2		0;109;186	7	1;1;1	10			
 69	2		0;110;82	7	1;1;1	10			
 67	3	T©n ChÝnh §¹i	0;108;141	7	1;1;1	10			
@@ -239,13 +239,13 @@ ItemIndex	BodyType	GroupName	GDP	SellType	SellPrices	PopPrice	GiftPrice	Not4Sale
 67	4	Nguyªn ChÝnh th­êng	0;108;142	7	1;1;1	10			
 68	4		0;109;188	7	1;1;1	10			
 69	4		0;110;84	7	1;1;1	10			
-70	1	Thu Thi bµo	0;108;195	7	1;1;1	10			
+70	1	Qiushi Robe	0;108;195	7	1;1;1	10			
 71	1		0;109;255	7	1;1;1	10			
 72	1		0;110;85	7	1;1;1	10			
-70	2	§«ng Hµn gi¸p	0;108;196	7	1;1;1	10			
+70	2	Donghan Armor	0;108;196	7	1;1;1	10			
 71	2		0;109;256	7	1;1;1	10			
 72	2		0;110;86	7	1;1;1	10			
-70	3	H¹ Vinh trang	0;108;197	7	1;1;1	10			
+70	3	Xiarong Outfit	0;108;197	7	1;1;1	10			
 71	3		0;109;257	7	1;1;1	10			
 72	3		0;110;87	7	1;1;1	10			
 70	4	Xu©n No·n th­êng	0;108;198	7	1;1;1	10			
@@ -293,10 +293,10 @@ ItemIndex	BodyType	GroupName	GDP	SellType	SellPrices	PopPrice	GiftPrice	Not4Sale
 82	2	Long L©n ¤ Kim Gi¸p	0;108;519	7	1;1;1	10			
 83	2		0;109;519	7	1;1;1	10			
 84	2		0;110;519	7	1;1;1	10			
-82	3	Lôc Oanh Vò Y	0;108;520	7	1;1;1	10			
+82	3	Green Oriole Feather Garment	0;108;520	7	1;1;1	10			
 83	3		0;109;520	7	1;1;1	10			
 84	3		0;110;520	7	1;1;1	10			
-82	4	Doanh Vò Th­êng	0;108;521	7	1;1;1	10			
+82	4	Camp Feather Robe	0;108;521	7	1;1;1	10			
 83	4		0;109;521	7	1;1;1	10			
 84	4		0;110;521	7	1;1;1	10			
 85	1	KiÕm TuyÖt y	0;108;135	7	1;1;1	10			
@@ -353,7 +353,7 @@ ItemIndex	BodyType	GroupName	GDP	SellType	SellPrices	PopPrice	GiftPrice	Not4Sale
 97	2	L«i Ng©n Gi¸p	0;108;32	7	1;1;1	10			
 98	2		0;109;32	7	1;1;1	10			
 99	2		0;110;32	7	1;1;1	10			
-97	3	Minh Quang gi¸p	0;108;51	7	1;1;1	10			
+97	3	Mingguang Armor	0;108;51	7	1;1;1	10			
 98	3		0;109;51	7	1;1;1	10			
 99	3		0;110;51	7	1;1;1	10			
 97	4	NghÞch V©n §Êu y	0;108;69	7	1;1;1	10			
@@ -635,11 +635,11 @@ ItemIndex	BodyType	GroupName	GDP	SellType	SellPrices	PopPrice	GiftPrice	Not4Sale
 168	2		0;110;930	7	1;1;1	10			
 168	3		0;110;931	7	1;1;1	10			
 168	4		0;110;932	7	1;1;1	10			
-169	1	Mò Ho¸n Hïng	0;108;622	7	1;1;1	10			
+169	1	Phantom Hero Hat	0;108;622	7	1;1;1	10			
 169	2		0;108;623	7	1;1;1	10			
 169	3		0;108;624	7	1;1;1	10			
 169	4		0;108;625	7	1;1;1	10			
-170	1	Tö D¹ Trang	0;108;825	7	1;1;1	10			
+170	1	Tu Da Trang	0;108;825	7	1;1;1	10			
 170	2		0;108;826	7	1;1;1	10			
 170	3		0;108;827	7	1;1;1	10			
 170	4		0;108;828	7	1;1;1	10			
@@ -675,7 +675,7 @@ ItemIndex	BodyType	GroupName	GDP	SellType	SellPrices	PopPrice	GiftPrice	Not4Sale
 178	2		0;110;714	7	1;1;1	10			
 178	3		0;110;715	7	1;1;1	10			
 178	4		0;110;716	7	1;1;1	10			
-179	1	DiÖp Th­îng Thu Phong Trang	0;108;953	7	1;1;1	10			
+179	1	Diep Thuong Thu Phong Trang	0;108;953	7	1;1;1	10			
 179	2		0;108;954	7	1;1;1	10			
 179	3		0;108;955	7	1;1;1	10			
 179	4		0;108;956	7	1;1;1	10			

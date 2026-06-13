@@ -200,7 +200,7 @@ function box_thing(nType)
 		end	
 	end	
 	
-	Talk(2,"how_about_box","<color=green>§Æc sø Vâ L©m<color>:"..tBoxName[nType].."_mÆc dï nhiÒu, nh­ng kh«ng nªn xem th­êng "..tBoxName[nType].."Bªn trong Èn chøa linh khİ Cµn kh«n.".."<color=yellow> sÏ nhËn ®­îc vËt phÈm sau<color>\n"..sDiaOne,"<color=green>§Æc sø Vâ L©m<color>:<color=yellow> SÏ nhËn ®­îc 1 trong c¸c vËt phÈm sau<color>\n"..sDiaTwo);
+	Talk(2,"how_about_box","<color=green>Wulin Special Envoy<color>:"..tBoxName[nType].."_mÆc dï nhiÒu, nh­ng kh«ng nªn xem th­êng "..tBoxName[nType].."Bªn trong Èn chøa linh khİ Cµn kh«n.".."<color=yellow> sÏ nhËn ®­îc vËt phÈm sau<color>\n"..sDiaOne,"<color=green>§Æc sø Vâ L©m<color>:<color=yellow> SÏ nhËn ®­îc 1 trong c¸c vËt phÈm sau<color>\n"..sDiaTwo);
 end
    
 function about_this_festival()

@@ -9,7 +9,7 @@ function get_tong_sex_name()
 	if GetSex() == 1 then
 		sex_name = "Thµnh Chñ"
 	else
-		sex_name = "QuËn Chóa "
+		sex_name = "Commandery Lord"
 	end
 	return sex_name
 end
@@ -30,9 +30,9 @@ function cb_citywar(szKey, nKey1, nKey2, nCount)
 		Say("Thµnh nµy hiÖn ch­a cã bang héi chiÕm lÜnh", 
 			4, 
 			"Giíi thiÖu Qu¶n lı thµnh thŞ/jieshao_city", 
-			"\nNhiÖm vô Håi Phong tr¹i/tongcitywar_task", 
+			"\nHuifeng Camp Mission/tongcitywar_task", 
 			"Thu håi trang bŞ x­ng hiÖu/shou_zhuang", 
-			"Rêi khái/no_say")
+			"Leave/no_say")
 	end
 end
 
@@ -49,9 +49,9 @@ function main()
 		Say("Thµnh nµy hiÖn ch­a cã bang héi chiÕm lÜnh", 
 			4, 
 			"Giíi thiÖu Qu¶n lı thµnh thŞ/jieshao_city", 
-			"\nNhiÖm vô Håi Phong tr¹i/tongcitywar_task", 
+			"\nHuifeng Camp Mission/tongcitywar_task", 
 			"Thu håi trang bŞ x­ng hiÖu/shou_zhuang", 
-			"Rêi khái/no_say")
+			"Leave/no_say")
 		return
 	end
 	if GetTongName() ~= szTongName then		-- ²»ÊÇÕ¼Áì³ÇÊĞµÄ°ïÅÉ¶Ô»°
@@ -59,12 +59,12 @@ function main()
 		szTongViewName = sf_Replace(szTongViewName, "/" ,"-")
 		szTongViewName = sf_Replace(szTongViewName, "|" ,"-")
 		szTongViewName = sf_Replace(szTongViewName, ":" ,"-")
-		Say("Thµnh nµy do <color=yellow>"..szTongViewName.."<color> chiÕm lÜnh", 
+		Say("Thµnh nµy do <color=yellow>"..szTongViewName.."<color> captured", 
 			4, 
 			"Giíi thiÖu Qu¶n lı thµnh thŞ/jieshao_city", 
-			"\nNhiÖm vô Håi Phong tr¹i/tongcitywar_task", 
+			"\nHuifeng Camp Mission/tongcitywar_task", 
 			"Thu håi trang bŞ x­ng hiÖu/shou_zhuang", 
-			"Rêi khái/no_say")
+			"Leave/no_say")
 		return
 	end
 	Say("Thµnh nµy do quı bang chiÕm lÜnh",
@@ -73,10 +73,10 @@ function main()
 		"Qu¶n lı thµnh thŞ/manage_city",
 		"X­ng hiÖu trang bŞ/fuli_city",
 		"Ta ch­a cã x­ng hiÖu, ph¶i lÊy l¹i x­ng hiÖu/get_title_again",
-		"NhiÖm vô Håi Phong tr¹i/tongcitywar_task",
+		"Huifeng Camp Mission/tongcitywar_task",
 		"Phôc vô ®Æc biÖt thµnh viªn bang héi/#tongcitywar_service(0)",
 		"Thu håi trang bŞ x­ng hiÖu/shou_zhuang",
-		"Rêi khái/no_say")
+		"Leave/no_say")
 end
 
 function tongcitywar_service(nParam)
@@ -96,8 +96,8 @@ function tongcitywar_service(nParam)
 			"NhËn 8 giê ñy th¸c B¹ch C©u Hoµn/#tongcitywar_service(1)",
 			"L·nh ThÇn n«ng ®¬n 4 giê /#tongcitywar_service(2)",
 			"NhËn 8 giê ñy th¸c Lôc ThÇn Hoµn/#tongcitywar_service(3)",
-			"NhËn 8 giê ñy th¸c Tam Thanh Hoµn/#tongcitywar_service(4)",
-			"KÕt thóc ®èi tho¹i/no_say")
+			"Receive 8 hours of trusteeship Three Pure Pill/#tongcitywar_service(4)",
+			"End conversation/no_say")
 	elseif nParam == 1 then		
 		local nJoinTime = GetTime() - GetJoinTongTime()
 		if nJoinTime <= 604800 then
@@ -158,7 +158,7 @@ function tongcitywar_service(nParam)
 		EatSanqin(1, 8 * 60)
 		SetTask(447, nTime)
 		Msg2Player("§¹i hiÖp thu ®­îc 8 giê ñy th¸c Tam Thanh Hoµn")
-		WriteLog("[C«ng thµnh chiÕn-phôc vô ®Æc biÖt]:"..GetName().."Thu ®­îc 8 giê ñy th¸c Tam Thanh Hoµn")
+		WriteLog("[C«ng thµnh chiÕn-phôc vô ®Æc biÖt]:"..GetName().."Obtained 8 hours of trusteeship Three Pure Pill")
 	end
 end
 
@@ -170,17 +170,17 @@ function tongcitywar_task()
 		local tSay =
 		{
 			"\nHuy ch­¬ng Thµnh thŞ ®æi gi¶i th­ëng/task_jiangli",
-			"\nCø hái/no_say",
+			"\nJust asking/no_say",
 		}
 		Say(szMsg,getn(tSay),tSay)
 	elseif GetTongName() ~= szTongName then
 		local tSay =
 		{
-			"\nChiÕn sù/task_zhankuang",
+			"\nWar situation/task_zhankuang",
 			"Ta ph¶i ®Õn Håi Phong tr¹i/task_huifeng",
-			"§Şch binh Hé gi¸p/task_hujia",
+			"Enemy soldier Armor/task_hujia",
 			"Huy ch­¬ng thµnh thŞ ®æi gi¶i th­ëng/task_jiangli",
-			"Cø hái/no_say",
+			"Just asking/no_say",
 		}
 		Say(szMsg,getn(tSay),tSay)
 	else
@@ -189,14 +189,14 @@ function tongcitywar_task()
 		local szName = GetName()
 		local tSay =
 		{
-			"\nChiÕn sù/task_zhankuang",
+			"\nWar situation/task_zhankuang",
 			"Ta ph¶i ®Õn Håi Phong tr¹i/task_huifeng",
-			"§Şch binh Hé gi¸p/task_hujia",
+			"Enemy soldier Armor/task_hujia",
 			"Huy ch­¬ng thµnh thŞ ®æi gi¶i th­ëng/task_jiangli",
-			"Cø hái/no_say",
+			"Just asking/no_say",
 		}
 		if szName == szBoss or szName == szManager then
-			tinsert(tSay, 2, "Lo¹n trong giÆc ngoµi/task_youhuan")
+			tinsert(tSay, 2, "Trouble within and enemies without/task_youhuan")
 		end
 		Say(szMsg,getn(tSay),tSay)
 	end
@@ -231,17 +231,17 @@ function task_youhuan()
 	Say("Th¸i thó c¶m thÊy Tr¹i chñ Lı ThuËn lo ng¹i , gÇn ®©y d©n chóng Thµnh §« lÇm than khæ cùc, Lı ThuËn míi tËp hîp m­u ph¶n... §ang lóc dÇu s«i löa báng, triÒu ®×nh cã mËt chØ ®Õn sai Thµnh §« Th¸i thó tÊn c«ng Håi Phong tr¹i…",
 	2,
 	"Tuyªn chiÕn/task_xuanzhan",
-	"KÕt thóc ®èi tho¹i/no_say")
+	"End conversation/no_say")
 end
 
 tTaskInfo =
 {
-	{30000, "TuÇn nµy thu ®­îc 30000 ®Şch binh Hé gi¸p - Gi¶i th­ëng:", "500 l­îng"},
-	{45000, "TuÇn nµy thu ®­îc 45000 ®Şch binh Hé gi¸p - Gi¶i th­ëng:", "1200 l­îng"},
-	{60000, "TuÇn nµy thu ®­îc 60000 ®Şch binh Hé gi¸p - Gi¶i th­ëng:", "2000 l­îng"},
-	{90000, "TuÇn nµy thu ®­îc 90000 ®Şch binh Hé gi¸p - Gi¶i th­ëng:", "2 tói huy ch­¬ng, 1 tói 50 huy ch­¬ng"},
-	{150000, "TuÇn nµy thu ®­îc 150000 ®Şch binh Hé gi¸p - Gi¶i th­ëng:", "4 tói huy ch­¬ng, 1 tói 50 huy ch­¬ng"},
-	{210000, "TuÇn nµy thu ®­îc 210000 ®Şch binh Hé gi¸p - Gi¶i th­ëng:", "6 tói huy ch­¬ng, 1 tói 50 huy ch­¬ng"},
+	{30000, "TuÇn nµy thu ®­îc 30000 ®Şch binh Hé gi¸p - Gi¶i th­ëng:", "500 taels"},
+	{45000, "TuÇn nµy thu ®­îc 45000 ®Şch binh Hé gi¸p - Gi¶i th­ëng:", "1200 taels"},
+	{60000, "TuÇn nµy thu ®­îc 60000 ®Şch binh Hé gi¸p - Gi¶i th­ëng:", "2000 taels"},
+	{90000, "TuÇn nµy thu ®­îc 90000 ®Şch binh Hé gi¸p - Gi¶i th­ëng:", "2 medal bags, 1 bag of 50 medals"},
+	{150000, "TuÇn nµy thu ®­îc 150000 ®Şch binh Hé gi¸p - Gi¶i th­ëng:", "4 medal bags, 1 bag of 50 medals"},
+	{210000, "TuÇn nµy thu ®­îc 210000 ®Şch binh Hé gi¸p - Gi¶i th­ëng:", "6 medal bags, 1 bag of 50 medals"},
 	{300000, "TuÇn nµy thu ®­îc 300000 ®Şch binh Hé gi¸p - Gi¶i th­ëng:", "1 mãn vò khİ Hoµng kim Bé Phi Yªn tïy ı"},
 }
 
@@ -292,9 +292,9 @@ function task_zhankuang()
 		end
 		local szSay = " TuÇn nµy ®· thu ®­îc §Şch Binh Hé Gi¸p <color=yellow>"..nItemCount.."/"..tTaskInfo[nType][1].."<color>, ®¹t môc tiªu, cã thÓ l·nh th­ëng.\nGi¶i th­ëng chiÕm thµnh: <color=green>"..tTaskInfo[nType][3].."<color>"
 		if szName == szBoss or szName == szManager then
-			Say(szSay,3,"L·nh phÇn th­ëng bang héi/task_tong_finish","Hu©n ch­¬ng thµnh thŞ ngÉu nhiªn/task_person_more","KÕt thóc ®èi tho¹i/no_say")
+			Say(szSay,3,"L·nh phÇn th­ëng bang héi/task_tong_finish","Hu©n ch­¬ng thµnh thŞ ngÉu nhiªn/task_person_more","End conversation/no_say")
 		else
-			Say(szSay,2,"Hu©n ch­¬ng thµnh thŞ ngÉu nhiªn/task_person_more","KÕt thóc ®èi tho¹i/no_say")
+			Say(szSay,2,"Hu©n ch­¬ng thµnh thŞ ngÉu nhiªn/task_person_more","End conversation/no_say")
 		end
 	end
 end
@@ -366,7 +366,7 @@ tTaskWeapon =
 	{0,5,6009,"L­u Yªn c«n"},
 	{0,2,6010,"HuyÒn Yªn kiÕm"},
 	{0,9,6011,"Vò Yªn bót"},
-	{0,6,6012,"Hµ Tiªm Th­¬ng"},
+	{0,6,6012,"He Tian Spear"},
 	{0,4,6013,"Hµnh Yªn Cung"},
 	{0,7,6014,"Träc Yªn nhÉn"},
 	{0,11,6015,"Yªu Yªn tr¶o"},
@@ -377,7 +377,7 @@ function sel_task_weapon(nStartIndex)
 	local nTabIndex = 1
 	if nStartIndex > 6 then
 		local n = nStartIndex - 6
-		tSay[nTabIndex] = "Trang tr­íc/#sel_task_weapon("..n..")"
+		tSay[nTabIndex] = "Previous page/#sel_task_weapon("..n..")"
 		nTabIndex = nTabIndex + 1
 	end
 	
@@ -392,20 +392,20 @@ function sel_task_weapon(nStartIndex)
 	end
 	
 	if nEnd < getn(tTaskWeapon) then
-		tSay[nTabIndex] = "Trang kÕ/#sel_task_weapon("..(nEnd + 1)..")"
+		tSay[nTabIndex] = "Next page/#sel_task_weapon("..(nEnd + 1)..")"
 		nTabIndex = nTabIndex + 1
 	end
-	tSay[nTabIndex] = "Rêi khái/no_say"
+	tSay[nTabIndex] = "Leave/no_say"
 	
 	Say("Xin chän Vò Khİ Bé Phi Yªn muèn nhËn!",getn(tSay),tSay)
 end
 
 function sel_task_weapon_one(nIndex)
-	Say("Ng­¬i ®· chän "..tTaskWeapon[nIndex][4]..", x¸c ®Şnh chø?",
+	Say("You have chosen"..tTaskWeapon[nIndex][4]..", x¸c ®Şnh chø?",
 		3,
-		"§ång ı/#sel_task_weapon_yes("..nIndex..")",
+		"Agree/#sel_task_weapon_yes("..nIndex..")",
 		"Chän l¹i/#sel_task_weapon(1)",
-		"KÕt thóc ®èi tho¹i/no_say")
+		"End conversation/no_say")
 end
 
 function sel_task_weapon_yes(nIndex)
@@ -418,7 +418,7 @@ function sel_task_weapon_yes(nIndex)
 		if AddItem(tTaskWeapon[nIndex][1],tTaskWeapon[nIndex][2],tTaskWeapon[nIndex][3],1,1,-1,-1,-1,-1,-1,-1) == 1 then
 			SetCityWarTaskAwardFlag(nMapID, 1)
 			SendTongMessage(GetName().."L·nh phÇn th­ëng bang héi tuÇn nµy: "..tTaskWeapon[nIndex][4].."_1")
-			WriteLog("PhÇn th­ëng bang héi "..GetName().."®æi "..tTaskWeapon[nIndex][4])
+			WriteLog("PhÇn th­ëng bang héi "..GetName().."exchange"..tTaskWeapon[nIndex][4])
 		end
 	end
 end
@@ -465,7 +465,7 @@ function task_person_more()
 	end
 	
 	local nCount = floor((nSJCount - nJHCount)/60)
-	Say(szMsg.."\nTuÇn nµy b¹n giao ®­îc §Şch Binh Hé Gi¸p <color=yellow>"..nSJCountView.."<color>, trong ®ã sè l­îng cã thÓ ®æi Hu©n ch­¬ng thµnh thŞ lµ <color=yellow>"..nSJCount.."<color>, ®· sö dông <color=yellow>"..nJHCount.."<color>§Şch Binh Hé Gi¸p ®æi Hu©n ch­¬ng thµnh thŞ, phÇn cßn d­ cã thÓ ®æi <color=yellow>"..nCount.."<color> Hu©n ch­¬ng thµnh thŞ! §æi b©y giê chø?",2,"§æi Hu©n ch­¬ng thµnh thŞ/#task_person_more_yes("..nCount..")","KÕt thóc ®èi tho¹i/no_say")
+	Say(szMsg.."\nTuÇn nµy b¹n giao ®­îc §Şch Binh Hé Gi¸p <color=yellow>"..nSJCountView.."<color>, trong ®ã sè l­îng cã thÓ ®æi Hu©n ch­¬ng thµnh thŞ lµ <color=yellow>"..nSJCount.."<color>, ®· sö dông <color=yellow>"..nJHCount.."<color>§Şch Binh Hé Gi¸p ®æi Hu©n ch­¬ng thµnh thŞ, phÇn cßn d­ cã thÓ ®æi <color=yellow>"..nCount.."<color> Hu©n ch­¬ng thµnh thŞ! §æi b©y giê chø?",2,"§æi Hu©n ch­¬ng thµnh thŞ/#task_person_more_yes("..nCount..")","End conversation/no_say")
 end
 
 function task_person_more_yes(nCount)
@@ -474,7 +474,7 @@ function task_person_more_yes(nCount)
 		nJHCount = nJHCount + nCount * 60
 		CustomDataSave("tongcitywar_person_task", "dddd", nDLCount, nSJCount, nJHCount, nSJCountView)
 		Msg2Player("B¹n nhËn ®­îc "..nCount.." Hu©n ch­¬ng thµnh thŞ")
-		WriteLog(GetName().."®æi "..nCount.." Hu©n ch­¬ng thµnh thŞ ngÉu nhiªn")
+		WriteLog(GetName().."exchange"..nCount.." Hu©n ch­¬ng thµnh thŞ ngÉu nhiªn")
 	end
 end
 
@@ -493,9 +493,9 @@ function task_hujia()
 		szMsg = szMsg.."\nTuÇ nµy ®· giao ®Şch binh Hé gi¸p <color=yellow>"..nSJCountView.."/300<color>, cã ph¶i muèn giao §Şch Binh Hé Gi¸p. Mçi lÇn giao 10 §Şch Binh Hé Gi¸p sÏ nhËn ®­îc 1 Hu©n ch­¬ng thµnh thŞ. (v­ît qu¸ <color=yellow>300<color> bé sÏ kh«ng thÓ nhËn ®­îc Hu©n ch­¬ng thµnh thŞ)"
 	end
 	Say(szMsg,3,
-		"Giao 10 ®Şch binh Hé gi¸p/#task_hujia_sj(10)",
-		"Giao 100 ®Şch binh Hé gi¸p/#task_hujia_sj(100)",
-		"KÕt thóc ®èi tho¹i/no_say")
+		"Turn in 10 enemy soldier armors/#task_hujia_sj(10)",
+		"Turn in 100 enemy soldier armors/#task_hujia_sj(100)",
+		"End conversation/no_say")
 end
 
 function task_hujia_sj(nCount)
@@ -543,7 +543,7 @@ function task_hujia_sj(nCount)
 			szMsg = szMsg.."\nMôc tiªu nhiÖm vô tuÇn nµy lµ thu thËp §Şch Binh Hé Gi¸p <color=yellow>"..(nItemCount+nCount).."/"..tTaskInfo[nType][1].."<color>"
 			szMsg2 = szMsg2.."Môc tiªu nhiÖm vô tuÇn nµy lµ thu thËp §Şch Binh Hé Gi¸p"..(nItemCount+nCount).."/"..tTaskInfo[nType][1]
 		end
-		Say(szMsg,2,"TiÕp tôc giao ®Şch binh Hé gi¸p /task_hujia", "Rêi khái/no_say")
+		Say(szMsg,2,"Continue turning in enemy soldier armor/task_hujia", "Leave/no_say")
 		Msg2Player(szMsg2)
 	end
 end
@@ -553,7 +553,7 @@ function task_jiangli()
 		3,
 		"\nMËt tŞch trang bŞ\n/#task_jiangli_zm(0,0,0)",
 		"\nHiÖu qu¶ c­êng hãa\n/#task_jiangli_xg(1)",
-		"\nKÕt thóc ®èi tho¹i/no_say")
+		"\nEnd dialogue/no_say")
 end
 
 tRoute2Weapon = 
@@ -568,7 +568,7 @@ tRoute2Weapon =
 	[12] = {{0,5,6009,"L­u Yªn c«n"}},
 	[14] = {{0,2,6010,"HuyÒn Yªn kiÕm"}},
 	[15] = {{0,9,6011,"Vò Yªn bót"}},
-	[17] = {{0,6,6012,"Hµ Tiªm Th­¬ng"}},
+	[17] = {{0,6,6012,"He Tian Spear"}},
 	[18] = {{0,4,6013,"Hµnh Yªn Cung"}},
 	[20] = {{0,7,6014,"Träc Yªn nhÉn"}},
 	[21] = {{0,11,6015,"Yªu Yªn tr¶o"}},
@@ -591,11 +591,11 @@ function task_jiangli_zm(nType,nParam1,nParam2)
 			"§¹i Lùc ThÇn H¹ng Liªn (CÇn 750 Hu©n ch­¬ng thµnh thŞ)/#task_jiangli_zm(2,0,0)",
 			--"¶ÔÓ¦ÃÅÅÉ²½·ÇÑÌ»Æ½ğÎäÆ÷£¨ĞèÒª500³ÇÊĞ½±ÕÂ£©/#task_jiangli_zm(3,0,0)",
 			"L¨ng Ba Vi Bé (CÇn 600 Hu©n ch­¬ng thµnh thŞ)/#task_jiangli_zm(4,0,0)",
-			"KÕt thóc ®èi tho¹i/no_say")
+			"End conversation/no_say")
 	elseif nType == 1 then
-		Say("§æi KhuÊt Nguyªn Béi cÇn 600 Hu©n ch­¬ng thµnh thŞ, ®æi chø?",2,"§ång ı/#task_jiangli_zm(11,0,0)","§Ó ta suy nghÜ!/no_say")
+		Say("§æi KhuÊt Nguyªn Béi cÇn 600 Hu©n ch­¬ng thµnh thŞ, ®æi chø?",2,"Agree/#task_jiangli_zm(11,0,0)","Let me think about it!/no_say")
 	elseif nType == 2 then
-		Say("§æi §¹i Lùc ThÇn H¹ng Liªn cÇn 750 Hu©n ch­¬ng thµnh thŞ, ®æi chø?",2,"§ång ı/#task_jiangli_zm(12,0,0)","§Ó ta suy nghÜ!/no_say")
+		Say("§æi §¹i Lùc ThÇn H¹ng Liªn cÇn 750 Hu©n ch­¬ng thµnh thŞ, ®æi chø?",2,"Agree/#task_jiangli_zm(12,0,0)","Let me think about it!/no_say")
 	elseif nType == 3 then
 		local nRoute = GetPlayerRoute()
 		if tRoute2Weapon[nRoute] == nil then
@@ -609,18 +609,18 @@ function task_jiangli_zm(nType,nParam1,nParam2)
 			end
 			Say("Ng­¬i cã thÓ chän 1 mãn vò khİ Hoµng Kim tóy ı",getn(tSay),tSay)
 		else
-			Say("§æi "..tRoute2Weapon[nRoute][1][4].." cÇn 500 Hu©n ch­¬ng thµnh thŞ, ®æi chø?",2,"§ång ı/#task_jiangli_zm(13,"..nRoute..",1)", "§Ó ta suy nghÜ!/no_say")
+			Say("Exchange"..tRoute2Weapon[nRoute][1][4].." cÇn 500 Hu©n ch­¬ng thµnh thŞ, ®æi chø?",2,"Agree/#task_jiangli_zm(13,"..nRoute..",1)", "Let me think about it!/no_say")
 		end
 	elseif nType == 4 then
-		Say("§æi L¨ng Ba Vi Bé cÇn 600 Hu©n ch­¬ng thµnh thŞ, ®æi chø?",2,"§ång ı/#task_jiangli_zm(14,0,0)","§Ó ta suy nghÜ!/no_say")
+		Say("§æi L¨ng Ba Vi Bé cÇn 600 Hu©n ch­¬ng thµnh thŞ, ®æi chø?",2,"Agree/#task_jiangli_zm(14,0,0)","Let me think about it!/no_say")
 	elseif nType == 10 then
-		Say("§æi "..tRoute2Weapon[nParam1][nParam2][4].." cÇn 900 Hu©n ch­¬ng thµnh thŞ, ®æi chø?",2,"§ång ı/#task_jiangli_zm(13,"..nParam1..","..nParam2..")", "§Ó ta suy nghÜ!/no_say")
+		Say("Exchange"..tRoute2Weapon[nParam1][nParam2][4].." cÇn 900 Hu©n ch­¬ng thµnh thŞ, ®æi chø?",2,"Agree/#task_jiangli_zm(13,"..nParam1..","..nParam2..")", "Let me think about it!/no_say")
 	elseif nType == 11 then
 		if Zgc_pub_goods_add_chk(1,1) == 1 then
 			if DelItem(2,0,765,600) == 1 then
 				AddItem(0,102,27,1,1,-1,-1,-1,-1,-1,-1)
 				Msg2Player("B¹n ®· ®æi 1 KhuÊt Nguyªn Béi ")
-				WriteLog(GetName().." ®· ®æi 1 KhuÊt Nguyªn Béi ")
+				WriteLog(GetName().." has exchanged for 1 Qu Yuan Pendant")
 			else
 				Say("C¸c h¹ kh«ng cã ®ñ Hu©n ch­¬ng thµnh thŞ.",0)
 			end
@@ -643,7 +643,7 @@ function task_jiangli_zm(nType,nParam1,nParam2)
 			if DelItem(2,0,765,500) == 1 then
 				AddItem(tRoute2Weapon[nParam1][nParam2][1],tRoute2Weapon[nParam1][nParam2][2],tRoute2Weapon[nParam1][nParam2][3],1,1,-1,-1,-1,-1,-1,-1)
 				Msg2Player("B¹n ®· ®æi "..tRoute2Weapon[nParam1][nParam2][4])
-				WriteLog(GetName().."®æi "..tRoute2Weapon[nParam1][nParam2][4])
+				WriteLog(GetName().."exchange"..tRoute2Weapon[nParam1][nParam2][4])
 			else
 				Say("C¸c h¹ kh«ng cã ®ñ Hu©n ch­¬ng thµnh thŞ.",0)
 			end
@@ -653,7 +653,7 @@ function task_jiangli_zm(nType,nParam1,nParam2)
 			if DelItem(2,0,765,600) == 1 then
 				AddItem(0,112,78,1,1,-1,-1,-1,-1,-1,-1)
 				Msg2Player("B¹n ®· ®æi L¨ng Ba Vi Bé")
-				WriteLog(GetName().."®· ®æi L¨ng Ba Vi Bé")
+				WriteLog(GetName().." has exchanged for the Lingbo Microstep")
 			else
 				Say("C¸c h¹ kh«ng cã ®ñ Hu©n ch­¬ng thµnh thŞ.",0)
 			end
@@ -690,7 +690,7 @@ function task_jiangli_xg(nStartIndex)
 	local nTabIndex = 1
 	if nStartIndex > 6 then
 		local n = nStartIndex - 6
-		tSay[nTabIndex] = "Trang tr­íc/#task_jiangli_xg("..n..")"
+		tSay[nTabIndex] = "Previous page/#task_jiangli_xg("..n..")"
 		nTabIndex = nTabIndex + 1
 	end
 	
@@ -705,22 +705,22 @@ function task_jiangli_xg(nStartIndex)
 	end
 	
 	if nEnd < getn(tMagicAttr) then
-		tSay[nTabIndex] = "Trang kÕ/#task_jiangli_xg("..(nEnd + 1)..")"
+		tSay[nTabIndex] = "Next page/#task_jiangli_xg("..(nEnd + 1)..")"
 		nTabIndex = nTabIndex + 1
 	end
-	tSay[nTabIndex] = "Rêi khái/no_say"
+	tSay[nTabIndex] = "Leave/no_say"
 	
 	Say("HiÖu qu¶ nµy kh«ng thÓ dïng chung víi lo¹i kh¸c, duy tr× 3 giê, rêi m¹ng hoÆc tö vong ®Òu b¶o l­u, nh­ng trong mét vµi tr­êng hîp ®Æc biÖt sÏ bŞ c­ìng chÕ hñy bá",getn(tSay),tSay)
 end
 
 function task_jiangli_xg_buy(nIndex,nParam)
 	if nParam == 0 then
-		Say("§æi "..tMagicAttr[nIndex][4].."CÇn"..tMagicAttr[nIndex][5].." Hu©n ch­¬ng thµnh thŞ hoÆc cÇn "..tMagicAttr[nIndex][6].." §Şch Binh Hé Gi¸p, ®æi chø?\n<color=red>NÕu hiÖu qu¶ lo¹i nµy ®· tån t¹i, ®æi lo¹i míi sÏ cã hiÖu qu¶ <color>",
+		Say("Exchange"..tMagicAttr[nIndex][4].."Requires"..tMagicAttr[nIndex][5].." Hu©n ch­¬ng thµnh thŞ hoÆc cÇn "..tMagicAttr[nIndex][6].." §Şch Binh Hé Gi¸p, ®æi chø?\n<color=red>NÕu hiÖu qu¶ lo¹i nµy ®· tån t¹i, ®æi lo¹i míi sÏ cã hiÖu qu¶ <color>",
 			4,
 			"Dïng Hu©n ch­¬ng thµnh thŞ ®æi /#task_jiangli_xg_buy("..nIndex..",1)",
 			"Dïng §Şch Binh Hé Gi¸p ®æi /#task_jiangli_xg_buy("..nIndex..",2)",
-			"VÒ trang tr­íc/#task_jiangli_xg(1)",
-			"§Ó ta suy nghÜ!/no_say")
+			"Back to previous page/#task_jiangli_xg(1)",
+			"Let me think about it!/no_say")
 	elseif nParam == 1 then
 		if DelItem(2,0,765,tMagicAttr[nIndex][5]) == 1 then
 			CastState(tMagicAttr[nIndex][1], tMagicAttr[nIndex][2], tMagicAttr[nIndex][3],1,9900,1)
@@ -792,12 +792,12 @@ function shou_zhuang()
 		"Thu håi trang bŞ thµnh chñ/hui_taishou",
 		"Thu håi trang bŞ qu©n s­/hui_shiye",
 		"Thu håi trang bŞ danh bé/hui_tixia",
-		"Thu håi Trang bŞ VÖ binh/hui_weibin",
-		"Rêi khái/no_say")
+		"Reclaim Guard equipment/hui_weibin",
+		"Leave/no_say")
 end
 
 function hui_taishou()
-	Say("<color=green>Qu¶n lı thµnh thŞ<color>: C¸c h¹ x¸c nhËn muèn thu håi trang bŞ thµnh chñ trong hµnh trang?", 2, "§ång ı/yes_hui_taishou", "§Ó ta suy nghÜ!/no_say")
+	Say("<color=green>Qu¶n lı thµnh thŞ<color>: C¸c h¹ x¸c nhËn muèn thu håi trang bŞ thµnh chñ trong hµnh trang?", 2, "Agree/yes_hui_taishou", "Let me think about it!/no_say")
 end
 
 function yes_hui_taishou()
@@ -831,7 +831,7 @@ function yes_hui_taishou()
 end
 
 function hui_shiye()
-	Say("<color=green>Qu¶n lı thµnh thŞ<color>: C¸c h¹ x¸c nhËn muèn thu håi trang bŞ qu©n s­ trong hµnh trang? ", 2, "§ång ı/yes_hui_shiye", "§Ó ta suy nghÜ!/no_say")
+	Say("<color=green>Qu¶n lı thµnh thŞ<color>: C¸c h¹ x¸c nhËn muèn thu håi trang bŞ qu©n s­ trong hµnh trang? ", 2, "Agree/yes_hui_shiye", "Let me think about it!/no_say")
 end
 
 function yes_hui_shiye()
@@ -852,7 +852,7 @@ function yes_hui_shiye()
 end
 
 function hui_tixia()
-	Say("<color=green>Qu¶n lı thµnh thŞ<color>: C¸c h¹ x¸c nhËn muèn thu håi trang bŞ danh bé trong hµnh trang?", 2, "§ång ı/yes_hui_tixia", "§Ó ta suy nghÜ!/no_say")
+	Say("<color=green>Qu¶n lı thµnh thŞ<color>: C¸c h¹ x¸c nhËn muèn thu håi trang bŞ danh bé trong hµnh trang?", 2, "Agree/yes_hui_tixia", "Let me think about it!/no_say")
 end
 
 function yes_hui_tixia()
@@ -890,7 +890,7 @@ function yes_hui_tixia()
 end
 
 function hui_weibin()
-	Say("C¸c h¹ x¸c ®Şnh muèn thu håi Trang bŞ VÖ binh trong hµnh trang?", 2, "§ång ı/yes_hui_weibin", "§Ó ta suy nghÜ!/no_say")
+	Say("C¸c h¹ x¸c ®Şnh muèn thu håi Trang bŞ VÖ binh trong hµnh trang?", 2, "Agree/yes_hui_weibin", "Let me think about it!/no_say")
 end
 
 function yes_hui_weibin()
@@ -941,7 +941,7 @@ function fuli_city()
 		"ChÕ t¹o trang bŞ thµnh chñ/mk_taishou_equip",
 		"NhËn trang bŞ danh bé/mk_tixia_equip",
 		"NhËn trang bŞ qu©n s­/get_shiye_equip",
-		"L·nh Trang bŞ VÖ binh/get_weibing_suit",
+		"Claim Guard equipment/get_weibing_suit",
 		"§æi trang bŞ thµnh chñ míi/#change_old_taishou_equip(0)",
 		"Ta chØ ghĞ ch¬i/no_say")
 end
@@ -957,7 +957,7 @@ function change_old_taishou_equip(nParam)
 			"§æi thµnh chñ (quËn chñ) chiÕn trang/#change_old_taishou_equip(3)",
 			--"»»È¡ĞÂµÄ³ÇÖ÷(¿¤Ö÷)½ğÓ¡/#change_old_taishou_equip(4)",
 			--"»»È¡ĞÂµÄ³ÇÖ÷(¿¤Ö÷)»·Åå/#change_old_taishou_equip(5)",
-			"KÕt thóc ®èi tho¹i/no_say")
+			"End conversation/no_say")
 	elseif nParam == 1 then
 		local nRightIdx = 0
 		local nIdx = GetPlayerEquipIndex(0)
@@ -1141,7 +1141,7 @@ function manage_city()
 			szTongViewName = sf_Replace(szTongViewName, "/" ,"-")
 			szTongViewName = sf_Replace(szTongViewName, "|" ,"-")
 			szTongViewName = sf_Replace(szTongViewName, ":" ,"-")			
-			Say("Thµnh nµy do <color=yellow>"..szTongViewName.."<color> chiÕm lÜnh", 0)
+			Say("Thµnh nµy do <color=yellow>"..szTongViewName.."<color> captured", 0)
 		else										-- ÊÇÕ¼Áì³ÇÊĞµÄ°ïÅÉ¶Ô»°
 			if IsTongMaster() == 1 then				-- ÊÇ°ïÖ÷
 				yes_get_boss()
@@ -1158,17 +1158,17 @@ function manage_city()
 				--"ÁìÈ¡°ï»á»ù½ğ/manager_getmoney",
 				--"ÉèÖÃË°ÂÊ/manager_setcess",
 				"L·nh B¶o r­¬ng tµi nguyªn/res_box_add",
-				"KÕt thóc ®èi tho¹i/no_say"
+				"End conversation/no_say"
 			}
 			Say("Thµnh nµy do Quı bang chiÕm lÜnh", getn(tTab), tTab)
 		elseif GetTongName() == szTongName then
-			Say("Thµnh nµy do Quı bang chiÕm lÜnh", 1, "Rêi khái/no_say")
+			Say("Thµnh nµy do Quı bang chiÕm lÜnh", 1, "Leave/no_say")
 		else
 			local szTongViewName = szTongName
 			szTongViewName = sf_Replace(szTongViewName, "/" ,"-")
 			szTongViewName = sf_Replace(szTongViewName, "|" ,"-")
 			szTongViewName = sf_Replace(szTongViewName, ":" ,"-")
-			Say("Thµnh nµy do <color=yellow>"..szTongViewName.."<color> chiÕm lÜnh", 0)
+			Say("Thµnh nµy do <color=yellow>"..szTongViewName.."<color> captured", 0)
 		end
 	end
 end
@@ -1182,7 +1182,7 @@ function mk_taishou_equip()
 		"ChÕ t¹o thµnh chñ (quËn chóa) ngäc béi (8 hßa thŞ bİch + 15 hoµng kim ®¹i hång bao)/#mk_taishou_ep(8,102,8017)", --0£¬102£¬8017--0£¬102£¬8020
 		"NhËn thµnh chñ (quËn chóa) kim Ên (8 hßa thŞ bİch + 15 hoµng kim ®¹i hång bao)/#mk_taishou_ep(0,102,8013)", --0£¬102£¬8013--0£¬102£¬8016
 		"NhËn thµnh chñ (quËn chóa) ngo¹i trang (8 hßa thŞ bİch + 15 hoµng kim ®¹i hång bao)/#mk_taishou_ep(0,109,300)",  --0£¬109£¬300 --0£¬109£¬303
-		"Rêi khái/no_say")
+		"Leave/no_say")
 end
 
 function mk_taishou_ep(nNeed, nDetail, nParticular)
@@ -1305,8 +1305,8 @@ function mk_tixia_equip()
 		"NhËn danh bé chiÕn trang (4 hßa thŞ bİch + 6 hoµng kim ®¹i hång bao)/#mk_tixia_ep(0,101,8005)",  	--0£¬101£¬8005 -0£¬101£¬8008
 		"NhËn danh bé Thµnh §« tÇm n· lÖnh  (4 hßa thŞ bİch + 6 hoµng kim ®¹i hång bao)/#mk_tixia_ep(0,102,8005)",						--0£¬102£¬8005--0£¬102£¬8008
 		"NhËn danh bé lÖnh (4 hßa thŞ bİch + 6 hoµng kim ®¹i hång bao)/#mk_tixia_ep(0,102,8023)",                    	--0£¬102£¬8023--0£¬102£¬8026
-		"NhËn danh bé ngo¹i trang/mk_tixia_wai",
-		"Rêi khái/no_say")
+		"Receive reputation outfit/mk_tixia_wai",
+		"Leave/no_say")
 end
 
 function mk_tixia_ep(nNeed, nDetail, nParticular)
@@ -1399,7 +1399,7 @@ function get_shiye_equip()
 		3,
 		"NhËn trang søc qu©n s­ (5 hßa thŞ bİch + 7 hoµng kim ®¹i hång bao)/mk_shiye_ring",
 		"NhËn ngo¹i trang qu©n s­ (5  hßa thŞ bİch  + 7  hoµng kim ®¹i hång bao)/mk_shiye_wai",
-		"Rêi khái/no_say")
+		"Leave/no_say")
 end
 
 function mk_shiye_ring()
@@ -1554,7 +1554,7 @@ function yes_get_boss()
 		AddTitle(tMapTitleID[nMapID][1], nDetail)
 		SetCurTitle(tMapTitleID[nMapID][1], nDetail)
 		SaveNow()
-		Say("B¹n ®¶m nhËn chøc "..get_tong_sex_name(), 2, "Vµo Qu¶n lı thµnh thŞ/manage_city", "Rêi khái/no_say")
+		Say("B¹n ®¶m nhËn chøc "..get_tong_sex_name(), 2, "Vµo Qu¶n lı thµnh thŞ/manage_city", "Leave/no_say")
 		WriteLog("C«ng thµnh chiÕn-Qu¶n lı:"..GetTongName().."-"..GetName().." trë thµnh thµnh chñ")
 	end
 end
@@ -1605,7 +1605,7 @@ function yes_get_money(nGold)
 		local nHour = floor(nCD / 3600)
 		local nMin = floor(mod(nCD, 3600) / 60)
 		local nSec = mod(nCD, 60)
-		Say("Cßn cÇn "..nHour.."h "..nMin.." Phót "..nSec.." gi©y n÷a míi tiÕn hµnh ®­îc thao t¸c nµy!", 0)
+		Say("Cßn cÇn "..nHour.."h "..nMin.." minutes"..nSec.." gi©y n÷a míi tiÕn hµnh ®­îc thao t¸c nµy!", 0)
 	elseif nCD == 0 then
 		local _1, _2, _3, _4, nMoney = GetCityWarInfo(nMapID, "base")
 		local nGetMaxMoney = (1000000 + (GetLevel() - 1) * 500000) * 2
@@ -1631,10 +1631,10 @@ function manager_setcess()
 		Say("Thµnh nµy hiÖn ch­a cã bang héi chiÕm lÜnh", 0)
 		return
 	end
-	Say("Quı bang ®· thiÕt lËp thuÕ suÊt buèn b¸n lµ <color=yellow>"..(nCessBuysell / 10).."%<color>, thuÕ bµy b¸n lµ <color=yellow>"..(nCessStore / 10).."%<color>. Cã ph¶i muèn thay ®æi?",
+	Say("Quı bang ®· thiÕt lËp thuÕ suÊt buèn b¸n lµ <color=yellow>"..(nCessBuysell / 10).."%<color>, and the stall tax rate to <color=yellow>"..(nCessStore / 10).."%<color>. Cã ph¶i muèn thay ®æi?",
 		2, --"¸ü¸ÄÂòÂôË°/change_mai_cess", 
-		"Thay ®æi thuÕ bµy b¸n/change_bai_cess",
-		"Rêi khái/no_say")
+		"Change stall tax/change_bai_cess",
+		"Leave/no_say")
 end
 
 function change_mai_cess()
@@ -1648,7 +1648,7 @@ function change_mai_cess()
 		local nHour = floor(nCD / 3600)
 		local nMin = floor(mod(nCD, 3600) / 60)
 		local nSec = mod(nCD, 60)
-		Say("Cßn cÇn "..nHour.."h "..nMin.." Phót "..nSec.." gi©y n÷a míi tiÕn hµnh ®­îc thao t¸c nµy!", 0)
+		Say("Cßn cÇn "..nHour.."h "..nMin.." minutes"..nSec.." gi©y n÷a míi tiÕn hµnh ®­îc thao t¸c nµy!", 0)
 	elseif nCD == 0 then
 		AskClientForNumber("yes_change_mai_cess", 0, 100, "§¬n vŞ: phÇn ngµn")
 	end
@@ -1665,7 +1665,7 @@ function change_bai_cess()
 		local nHour = floor(nCD / 3600)
 		local nMin = floor(mod(nCD, 3600) / 60)
 		local nSec = mod(nCD, 60)
-		Say("Cßn cÇn "..nHour.."h "..nMin.." Phót "..nSec.." gi©y n÷a míi tiÕn hµnh ®­îc thao t¸c nµy!", 0)
+		Say("Cßn cÇn "..nHour.."h "..nMin.." minutes"..nSec.." gi©y n÷a míi tiÕn hµnh ®­îc thao t¸c nµy!", 0)
 	elseif nCD == 0 then
 		AskClientForNumber("yes_change_bai_cess", 0, 100, "§¬n vŞ: phÇn ngµn")
 	end
@@ -1764,35 +1764,35 @@ function res_box_get()
 			if nRet == 1 then
 				SetItemExpireTime(nItemIdx,7*24*60*60)
 				SendTongMessage(GetName().." §· nhËn cho bang m×nh 1 Hßa ThŞ Bİch")
-				WriteLogEx("Cong Thanh Chien","B¶o vÖ tµi nguyªn",1,"Hßa ThŞ Bİch","",GetTongName())
+				WriteLogEx("Cong Thanh Chien","B¶o vÖ tµi nguyªn",1,"Heshi Jade","",GetTongName())
 			end
 		end			
 	end
 end
 
 function jieshao_city()
-	Say("ThuyÕt minh qu¶n lı thµnh thŞ", 3, "ThuyÕt minh X­ng hiÖu/chenghao_shuoming", "ThuyÕt minh X­ng hiÖu Trang bŞ/fuli_shuoming", "KÕt thóc ®èi tho¹i/no_say")
+	Say("ThuyÕt minh qu¶n lı thµnh thŞ", 3, "ThuyÕt minh X­ng hiÖu/chenghao_shuoming", "ThuyÕt minh X­ng hiÖu Trang bŞ/fuli_shuoming", "End conversation/no_say")
 end
 
 function chenghao_shuoming()
-	Say("Danh hiÖu: Sau khi kÕt thóc c«ng thµnh chiÕn vµ bang chñ sÏ ®Õn NPC qu¶n lı thµnh thŞ nhËn danh hiÖu thµnh chñ vµ bæ nhiÖm th­. Ng­êi ch¬i cÇn ph¶i kİch ho¹t danh hiÖu thµnh chñ míi cã thÓ thùc thi c¸c quyÒn lùc thµnh chñ. C¸c lo¹i danh hiÖu c«ng thµnh chiÕn kh«ng thÓ nh­êng hoÆc ®æi cho ng­êi kh¸c\nBæ nhiÖm th­: Thµnh chñ ®Õn qu¶n lı thµnh thŞ ®Ó nhËn 1 tiÕn cö qu©n s­ vµ 4 tiÕn cö bæ ®Çu. Thµnh chñ ph¶i tiÕn hµnh tæ ®éi víi ng­êi cÇn bæ nhiÖm råi tra quyÒn lùc t­¬ng øng, khi ng­êi ch¬i sö dông bæ nhiÖm th­ sÏ thu ®­îc danh hiÖu t­¬ng øng.\nH¹n chÕ sö dông bæ nhiÖm th­: Ng­êi ch¬i ®· cã c¸c danh hiÖu (thµnh chñ, thµnh chñ, danh bé) th× kh«ng thÓ sö dông thªm bæ nhiÖm th­, tÊt c¶ c¸c lo¹i bæ nhiÖm th­ sÏ biÕn mÊt vµo s¸ng thø 7, danh hiÖu sÏ biÕn mÊt sau khi kÕt thóc c«ng thµnh.", 3, "ThuyÕt minh chøc vô/zhiwu_shuoming", "trë l¹i/jieshao_city", "KÕt thóc ®èi tho¹i/no_say")
+	Say("Danh hiÖu: Sau khi kÕt thóc c«ng thµnh chiÕn vµ bang chñ sÏ ®Õn NPC qu¶n lı thµnh thŞ nhËn danh hiÖu thµnh chñ vµ bæ nhiÖm th­. Ng­êi ch¬i cÇn ph¶i kİch ho¹t danh hiÖu thµnh chñ míi cã thÓ thùc thi c¸c quyÒn lùc thµnh chñ. C¸c lo¹i danh hiÖu c«ng thµnh chiÕn kh«ng thÓ nh­êng hoÆc ®æi cho ng­êi kh¸c\nBæ nhiÖm th­: Thµnh chñ ®Õn qu¶n lı thµnh thŞ ®Ó nhËn 1 tiÕn cö qu©n s­ vµ 4 tiÕn cö bæ ®Çu. Thµnh chñ ph¶i tiÕn hµnh tæ ®éi víi ng­êi cÇn bæ nhiÖm råi tra quyÒn lùc t­¬ng øng, khi ng­êi ch¬i sö dông bæ nhiÖm th­ sÏ thu ®­îc danh hiÖu t­¬ng øng.\nH¹n chÕ sö dông bæ nhiÖm th­: Ng­êi ch¬i ®· cã c¸c danh hiÖu (thµnh chñ, thµnh chñ, danh bé) th× kh«ng thÓ sö dông thªm bæ nhiÖm th­, tÊt c¶ c¸c lo¹i bæ nhiÖm th­ sÏ biÕn mÊt vµo s¸ng thø 7, danh hiÖu sÏ biÕn mÊt sau khi kÕt thóc c«ng thµnh.", 3, "Post Explanation/zhiwu_shuoming", "trë l¹i/jieshao_city", "End conversation/no_say")
 end
 
 function zhiwu_shuoming()
-	Say("Chó thİch chøc vô:", 2, "trë l¹i/jieshao_city", "KÕt thóc ®èi tho¹i/no_say")
+	Say("Post Notes:", 2, "trë l¹i/jieshao_city", "End conversation/no_say")
 end
 
 function ziyuan_shuoming()
-	Say("B¶o hé Tµi nguyªn: Cèng phÈm cho triÒu ®×nh sÏ do Bang ph¸i thµnh chñ chuyÓn ®i. Sè tµi nguyªn nµy cã 4 phÇn sÏ ®­îc trùc tiÕp ®­a vµo thµnh, 6 phÇn cßn l¹i sÏ bŞ l­u l¹i ë 2 thµnh thŞ l©n cËn trong vßng 2 canh giê, cÇn cã Bang ph¸i thµnh chñ tù b¶o vÖ. C¸c tµi nguyªn kh«ng bŞ c­íp vµ c¸c tµi nguyªn ®­îc ®­a trùc tiÕp vµo thµnh sÏ ®­îc b¶o qu¶n t¹i chç Qu¶n thµnh sø.", 3, "Xem c¸c ®Şa ®iÓm b¶o hé Tµi nguyªn/wuzi_didian", "trë l¹i/jieshao_city", "KÕt thóc ®èi tho¹i/no_say")
+	Say("B¶o hé Tµi nguyªn: Cèng phÈm cho triÒu ®×nh sÏ do Bang ph¸i thµnh chñ chuyÓn ®i. Sè tµi nguyªn nµy cã 4 phÇn sÏ ®­îc trùc tiÕp ®­a vµo thµnh, 6 phÇn cßn l¹i sÏ bŞ l­u l¹i ë 2 thµnh thŞ l©n cËn trong vßng 2 canh giê, cÇn cã Bang ph¸i thµnh chñ tù b¶o vÖ. C¸c tµi nguyªn kh«ng bŞ c­íp vµ c¸c tµi nguyªn ®­îc ®­a trùc tiÕp vµo thµnh sÏ ®­îc b¶o qu¶n t¹i chç Qu¶n thµnh sø.", 3, "Xem c¸c ®Şa ®iÓm b¶o hé Tµi nguyªn/wuzi_didian", "trë l¹i/jieshao_city", "End conversation/no_say")
 end
 
 function wuzi_didian()
-	Say("§Şa ®iÓm tµi nguyªn: \nThµnh §«: Nam m«n (189.191); (192.186); (188. 186)\n B¾c m«n (181.198); (186.194); (178.191)",  2, "trë l¹i/jieshao_city", "KÕt thóc ®èi tho¹i/no_say")
+	Say("§Şa ®iÓm tµi nguyªn: \nThµnh §«: Nam m«n (189.191); (192.186); (188. 186)\n B¾c m«n (181.198); (186.194); (178.191)",  2, "trë l¹i/jieshao_city", "End conversation/no_say")
 	--\n	ÈªÖİ£ºÈªÖİ¸®±± £¨189£¬191£©£¨184£¬195£©£¨192£¬195£©\n      ÈªÖİ¸®Î÷ £¨195£¬196£©£¨190£¬196£©£¨184£¬194£©\n	ÏåÑô£ºÁé±¦É½   £¨207£¬221£©£¨214£¬220£©£¨221£¬221£©\n      ÎäÁêÉ½   £¨195£¬177£©£¨192£¬183£©£¨187£¬180£©", 2, "·µ»Ø/jieshao_city", "½áÊø¶Ô»°/no_say")
 end
 
 function fuli_shuoming()
-	Say("ThuyÕt minh X­ng hiÖu Trang bŞ: Ng­êi ch¬i cã X­ng hiÖu ®Æc biÖt cã thÓ l·nh hoÆc chÕ t¹o trang bŞ ®Æc biÖt, toµn bé thµnh viªn trong bang héi ®Òu cã thÓ l·nh VÖ binh Kh«i gi¸p vµ ngo¹i trang thµnh thŞ", 2, "trë l¹i/jieshao_city", "KÕt thóc ®èi tho¹i/no_say")
+	Say("ThuyÕt minh X­ng hiÖu Trang bŞ: Ng­êi ch¬i cã X­ng hiÖu ®Æc biÖt cã thÓ l·nh hoÆc chÕ t¹o trang bŞ ®Æc biÖt, toµn bé thµnh viªn trong bang héi ®Òu cã thÓ l·nh VÖ binh Kh«i gi¸p vµ ngo¹i trang thµnh thŞ", 2, "trë l¹i/jieshao_city", "End conversation/no_say")
 end
 
 function no_say()

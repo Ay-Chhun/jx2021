@@ -15,12 +15,12 @@ tbKimXa3sao = {
 }
 
 tbMenuKimXa = {
-	[1] = {"Kim ChÕ Ngò Hµnh", 29, 169}, -- {trang bi, so trai cay, so xu}
-	[2] = {"Méc ChÕ Ngò Hµnh", 29, 169},
+	[1] = {"Metal Five Elements", 29, 169}, -- {trang bi, so trai cay, so xu}
+	[2] = {"Wood Five Elements", 29, 169},
 	[3] = {"Thñy ChÕ Ngò Hµnh", 29, 169},
 	[4] = {"Háa ChÕ Ngò Hµnh", 29, 169},
-	[5] = {"Thæ ChÕ Ngò Hµnh", 29, 169},
-	[6] = {"¢m ChÕ Ngò Hµnh", 69, 369},
+	[5] = {"Earth Five Elements", 29, 169},
+	[6] = {"Yin Five Elements", 69, 369},
 }
 
 tbFinalAward = {
@@ -120,7 +120,7 @@ function KimXaThang1_Form(nOption)
 	tbSay[0] = "H·y chän lo¹i tr¸i c©y c¸c h¹ muèn tÆng ta."
 	for i = 30164, 30183 do
 		if GetItemCount(2,1,i) >= tbMenuKimXa[nOption][2] then
-			tinsert(tbSay, "Ta muèn ®æi "..tbMenuKimXa[nOption][2].." "..GetItemName(2,1,i).." vµ "..tbMenuKimXa[nOption][3].." "..GetItemName(2,1,30230).."/#KimXaThang1_Done("..i..")")
+			tinsert(tbSay, "Ta muèn ®æi "..tbMenuKimXa[nOption][2].." "..GetItemName(2,1,i).." and"..tbMenuKimXa[nOption][3].." "..GetItemName(2,1,30230).."/#KimXaThang1_Done("..i..")")
 		end
 	end
 	gf_PageSay(tbSay, 1, 6)

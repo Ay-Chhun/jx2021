@@ -66,14 +66,14 @@ function main()
 ---------------------------------------------Ö÷¶Ô»°-------------------------------------------
 	Say(strTitle.."T×m ®­îc Thiªn Tµm Ti lµ lý t­ëng duy nhÊt cña cuéc ®êi ta, ®¸ng tiªc ta ®· giµ råi kh«ng thÓ trÌo ®Ìo v­ît suèi, chØ cã thÓ göi g¾m tr¸ch nhiÖm nµy cho bän trÎ c¸c ng­¬i, muèn häc c¸ch kÐo t¬ kh«ng?",
 		7,
-		"§ång ý/luaLearnLifeSkill",
+		"Agree/luaLearnLifeSkill",
 		"Muèn häc kü n¨ng cao cÊp h¬n/update_max_skill_level",
 		"§Õn Kh«ng Tang s¬n (s¬ cÊp)/GotoWorld_Confirm1",
 		"§Õn C«n Ng« s¬n (trung cÊp)/GotoWorld_Confirm2",
 		"§Õn Tö Tang s¬n (cao cÊp)/GotoWorld_Confirm3",
 		--"ÒÅÍü³éË¿¼¼ÄÜ/forget_life_skill",
 		"T×m hiÓu kÐo t¬/Info",
-    	"Rêi khái/Main_Exit")
+    	"Leave/Main_Exit")
 end;
 
 
@@ -173,19 +173,19 @@ function GotoWorld_Confirm1()
 	Say(strTitle.."Ng­¬i muèn ®Õn <color=yellow>Kh«ng Tang S¬n<color> kÐo t¬ ­? N¬i ®ã cã nhiÒu <color=yellow>Thá <color>, <color=yellow>T»m<color>, <color=yellow>Ngò s¾c trïng<color> vµ <color=yellow>Lang Chu<color>. Nhí mang theo <color=yellow>ThÇn N«ng §¬n<color>!",
 		2,
 		"Ta muèn ®i/#GotoWorld(712,1472,2918)",
-		"Kh«ng ®i ®©u/Main_Exit")
+		"I'm not going anywhere/Main_Exit")
 end;
 function GotoWorld_Confirm2()
 	Say(strTitle.."Ng­¬i muèn ®Õn <color=yellow>C«n Ng« S¬n<color> kÐo t¬ ­? N¬i ®ã cã nhiÒu <color=yellow>HuyÕt tµm<color>, <color=yellow>Linh Chu<color> vµ <color=yellow>Kim t¬<color>. Nhí mang theo <color=yellow>ThÇn N«ng §¬n<color>!",
 		2,
 		"Ta muèn ®i/#GotoWorld(717,1736,2906)",
-		"Kh«ng ®i ®©u/Main_Exit")
+		"I'm not going anywhere/Main_Exit")
 end;
 function GotoWorld_Confirm3()
 	Say(strTitle.."B©y giê ng­¬i muèn ®Õn <color=yellow>Tö Tang s¬n<color> kÐo t¬ µ? ë ®ã cã rÊt nhiÒu <color=yellow>L·nh Trïng<color>, <color=yellow>Thiªn Tµm<color> vµ <color=yellow>ThÓ V©n<color>, ng­¬i ph¶i dïng <color=yellow>ThÇn N«ng ®¬n<color> míi cã thÓ kÐo t¬.",
 		2,
 		"Ta muèn ®i/#GotoWorld(722,1748,3420)",
-		"Kh«ng ®i ®©u/Main_Exit")
+		"I'm not going anywhere/Main_Exit")
 end;
 -- È¥ÏàÓ¦µÄ¹Ò»úµØµã
 function GotoWorld(MapID, x, y)
@@ -208,7 +208,7 @@ end;
 
 function update_max_skill_level()
 	Say(strTitle..format("Më réng cÊp kü n¨ng s¶n xuÊt cÇn kü n¨ng thu thËp ®¹t cÊp 79 ®ång thêi tiªu hao %d Vµng", 1000), 
-		2, "§ång ý/update_max_skill_level_ensure", "T¹i h¹ chØ xem qua th«i/Main_Exit")
+		2, "Agree/update_max_skill_level_ensure", "T¹i h¹ chØ xem qua th«i/Main_Exit")
 end
 
 function update_max_skill_level_ensure()

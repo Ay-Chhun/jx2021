@@ -302,7 +302,7 @@ function msCamp:reflash(bForce)
 		end
 	end;
 	if nTotalPlayerNum ~= getn(tIndex) then
-		WriteLog("[Toµn bé hµm sè b¸o lçi]: trong hµm sè ms_GetMSPlayerIndex nhËn ®­îc sè ng­êi cña phe nµo ®ã so víi getn(tIndex) kh«ng ®ång nhÊt. Sè ng­êi:"..nTotalPlayerNum..", getn(tIndex) chªnh lÖch lµ:"..getn(tIndex));
+		WriteLog("[Toµn bé hµm sè b¸o lçi]: trong hµm sè ms_GetMSPlayerIndex nhËn ®­îc sè ng­êi cña phe nµo ®ã so víi getn(tIndex) kh«ng ®ång nhÊt. Sè ng­êi:"..nTotalPlayerNum..", getn(tIndex) difference is:"..getn(tIndex));
 	end;
 --	self.lastReflashTime = GetTime()
 end

@@ -37,7 +37,7 @@ function main()
 		tinsert(SayTable, "NhËn phÇn th­ëng vinh danh game thñ tham gia §¹i Héi ViÖt Trung/Viet_Trung_2013")	
 	end
 	tinsert(SayTable, "NhËn phÇn th­ëng chèng giÆc Man/RequestWeekEnd")	
-	tinsert(SayTable, "KÕt thóc ®èi tho¹i/no")
+	tinsert(SayTable, "End dialogue/no")
 	
 	Say("N¨m míi ®Õn ch­ëng m«n Kim S¬n quyÕt ®Þnh ban ph¸t mét sè quµ ®Ó mäi ng­êi ¨n TÕt vui vÎ!",
 		getn(SayTable),
@@ -71,7 +71,7 @@ function Viet_Trung_2013()
 end
 
 tTongList = {
-					{"Äheroic",2,1},
+					{"Heroic",2,1},
 }
 
 tTongAward = {
@@ -266,7 +266,7 @@ function get_sa_bag_award()
 		Talk(1,"","Kho¶ng trèng trong hµnh trang cña ng­¬i kh«ng ®ñ.");
 		return 0;
 	end;
-	WriteLog("[LÔ bao b¹ch kim]:"..GetName().."NhËn quµ Siªu B¹ch Kim");
+	WriteLog("[Platinum Gift Pack]:"..GetName().."NhËn quµ Siªu B¹ch Kim");
 	AddExtPoint(4,1);	--ÈÃextpoint4±äÎª1
 end;
 
@@ -305,7 +305,7 @@ function get_sa_uplevel_award()
 		SetTask(502,40);
 		Add_Faction_Equipment(nRoute,nBody,40,4);
 		Msg2Player("B¹n nhËn ®­îc bé trang phôc s­ m«n s¬ cÊp");
-		WriteLog("[LÔ bao b¹ch kim]:"..GetName().."nhËn trang phôc s­ m«n cÊp 40");
+		WriteLog("[Platinum Gift Pack]:"..GetName().."nhËn trang phôc s­ m«n cÊp 40");
 	elseif nTaskValue <= 40 then
 		if nLevel < 70 then
 			Talk(1,"","Ng­¬i ch­a ®¹t <color=yellow>cÊp 70<color>. §îi ®Õn cÊp 70 míi cã thÓ nhËn phÇn th­ëng <color=yellow>500 ®iÓm cèng hiÕn, 1 b¶o r­¬ng vµ trang phôc s­ m«n cao cÊp t­¬ng øng<color>.");
@@ -317,7 +317,7 @@ function get_sa_uplevel_award()
 			Msg2Player("B¹n nhËn ®­îc 1 b¶o r­¬ng");
 			Add_Faction_Equipment(nRoute,nBody,63,4);
 			Msg2Player("B¹n nhËn ®­îc 1 trang phôc s­ m«n cao cÊp");
-			WriteLog("[LÔ bao b¹ch kim]:"..GetName().."NhËn ®­îc trang phôc s­ m«n cÊp 60");
+			WriteLog("[Platinum Gift Pack]:"..GetName().."NhËn ®­îc trang phôc s­ m«n cÊp 60");
 		end;
 	elseif nTaskValue == 70 then
 		Talk(1,"RequestSuperAccountAward","Xin lçi, ng­¬i ®· nhËn hÕt phÇn th­ëng t¨ng cÊp råi, kh«ng thÓ nhËn thªm n÷a.");
@@ -326,15 +326,15 @@ end;
 
 tAwardInfo = 	--extpointfunc.lua½Å±¾ÀïÃæÒ²ÓÐÏàÓ¦µÄ±í
 {			--ÎïÆ·Ãû		ËùÐè»ý·Ö  ÓÐÐ§Ê±¼ä
-	[1] =  {"C©y B¸t Nh·",			1,7*24*3600,	{2,0,398}},
+	[1] =  {"Prajna Tree",			1,7*24*3600,	{2,0,398}},
 	[2] =  {"ThÇn N«ng §¬n",			2,7*24*3600,	{2,1,343}},
 	[3] =  {"Cöu chuyÓn håi hån ®¬n",		3,30*24*3600,	{1,0,32}},
 	[4] =  {"ThÇn hµnh bÝ phæ",			4,30*24*3600,	{0,200,39}},
-	[5] =  {"Tñ nhá",			6,7*24*3600,	{2,1,1069}},
+	[5] =  {"Small cabinet",			6,7*24*3600,	{2,1,1069}},
 	[6] =  {"Bao lín-gi¸m ®Þnh phï cÊp 7",	10,7*24*3600,	{2,1,1058}},
-	[7] =  {"§»ng Vô",				20,30*24*3600,	{0,105,20}},
+	[7] =  {"Dang Vu",				20,30*24*3600,	{0,105,20}},
 	[8] =  {"ThÇn hµnh b¶o ®iÓn",			40,90*24*3600,	{0,200,40}},
-	[9] =  {"Hßa ThÞ BÝch",			80,7*24*3600,	{2,1,1001}},
+	[9] =  {"Heshi Jade",			80,7*24*3600,	{2,1,1001}},
 	[10] = {"Héi Minh LÖnh Bµi",			100,7*24*3600,	{2,0,125}},
 	[11] = {"N«ng Tang phæ",			200,7*24*3600,	{2,1,1056}},
 	[12] = {"Thiªn Th¹ch linh th¹ch",			400,7*24*3600,	{2,1,1068}},
@@ -353,7 +353,7 @@ function RequestChongZhiAward()
 	local selTab = {
 				format("Ta muèn dïng ®iÓm tÝch lòy ®æi phÇn th­ëng/#list_chongzhi_award(%d,%d)",1,getn(tAwardInfo)),
 				"Ta muèn xem thuyÕt minh ho¹t ®éng/chong_zhi_introduce",
-				"Kh«ng cã viÖc g×/no",
+				"Nothing/no",
 				}
 	Say("Hoan nghªnh anh hïng tham gia ho¹t ®éng lÇn nµy",getn(selTab),selTab);
 end;
@@ -385,7 +385,7 @@ function list_chongzhi_award(nPageNum,nCount)
 	local nMaxIndex = GetMaxItemCountPerPage(nPageNum,nCount);
 	local nCurStartIndex = (nPageNum-1)*nItemPerPage+1
 	if nPageNum ~= 1 then
-		tinsert(selTab,format("Trang tr­íc \n /#list_chongzhi_award(%d,%d)",nPageNum-1,nCount));
+		tinsert(selTab,format("Previous page \n /#list_chongzhi_award(%d,%d)",nPageNum-1,nCount));
 	end;
 	for i=nCurStartIndex,nCurStartIndex+nMaxIndex-1 do
 		tinsert(selTab,tList[i]);
@@ -393,7 +393,7 @@ function list_chongzhi_award(nPageNum,nCount)
 	if nPageNum ~= ceil(nCount/nItemPerPage) then
 		tinsert(selTab,format("\n Trang sau/#list_chongzhi_award(%d,%d)",nPageNum+1,nCount));	
 	end;
-	tinsert(selTab,"\n Ph¶n håi/main");
+	tinsert(selTab,"\nBack/main");
 	tinsert(selTab,"§Ó ta nghÜ l¹i/no");
 	local nCurPt = GetExtPoint(6);
 	Say("Ng­¬i hiÖn cã <color=yellow>"..nCurPt.."<color> ®iÓm tÝch lòy, muèn ®æi phÇn th­ëng g×?",getn(selTab),selTab);

@@ -34,8 +34,8 @@ function Get_Random_Resource(nMultiple)
 	elseif nRandomNum <= 80 then
 		Get_Resource(2,nMultiple);	--÷–º∂¡∏≤›
 	elseif nRandomNum <= 90 then
-		Msg2MSGroup(MISSION_ID,"Ng≠Íi ch¨i"..GetName().."tπi Nhπn M´n Quan-Th∂o cËc chi’n Æµo bÌi bıa b∑i ∂nh h≠Îng Æ’n m´i tr≠Íng n™n bﬁ thÊ d©n truy ÆuÊi, chÍ t≠Ìng s‹ Æ’n gi∂i c¯u.",nCamp);
-		local npcIndex = CreateNpc("Hoµn tr≠Íng ThÊ d©n","ThÊ d©n hÈ rıng",GetWorldPos());
+		Msg2MSGroup(MISSION_ID,"Player"..GetName().."tπi Nhπn M´n Quan-Th∂o cËc chi’n Æµo bÌi bıa b∑i ∂nh h≠Îng Æ’n m´i tr≠Íng n™n bﬁ thÊ d©n truy ÆuÊi, chÍ t≠Ìng s‹ Æ’n gi∂i c¯u.",nCamp);
+		local npcIndex = CreateNpc("Hoµn tr≠Íng ThÊ d©n","Forest-guarding Local",GetWorldPos());
 		SetNpcDeathScript(npcIndex,"\\settings\\static_script\\kf_newbattles\\resourcebattle\\environmentalist_death.lua");
 	else
 		Msg2Player("Ng≠¨i v t v∂ Æµo bÌi v…n kh´ng t◊m Æ≠Óc g◊");
@@ -152,12 +152,12 @@ function Create_Cateran(nCamp,nCount)
 	end;
 	local tPos = tPosTable[3-nCampPlace];
 	if nCount > getn(tPos) then
-		BT_ShowDebugInfor("Create_Cateran b∏o lÁi, tham sË nCount phi ph∏p");
+		BT_ShowDebugInfor("Create_Cateran reported an error, parameter nCount is invalid");
 		return 0;
 	end;
 	local nNpcIndex = 0;
 	for i=1,nCount do
-		nNpcIndex = CreateNpc("S¨n t∆c l©u la","S¨n t∆c ("..tCampNameZ[nCamp]..")",MAPID,tPos[i][1],tPos[i][2]);
+		nNpcIndex = CreateNpc("S¨n t∆c l©u la","Mountain bandit ("..tCampNameZ[nCamp]..")",MAPID,tPos[i][1],tPos[i][2]);
 		SetNpcDeathScript(nNpcIndex,"\\settings\\static_script\\kf_newbattles\\resourcebattle\\cateran_death.lua");
 		AddGroupUnit(CATERAN_GROUP_SONG+nCamp-1,nNpcIndex);
 	end;

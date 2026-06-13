@@ -171,8 +171,8 @@ local nTalk_004 = GetBit(GetTask(GB_MANTALK), GB_MANTALK_004);
 local nTalk_005 = GetBit(GetTask(GB_MANTALK), GB_MANTALK_005);
 
 local strMain = {
-		"Huynh ®Ö trong bang ®Òu ®· cã r­îu?",
-		"§· ph©n ph¸t xong!",
+		"Do the brothers in the guild all have wine now?",
+		"The distribution is complete!",
 		"Hay l¾m! Cã phóc cïng h­ëng cã häa cïng chia chÝnh lµ tiªu chÝ cña bang ta.",
 		"TÊm lßng cña ng­¬i qu¶ hiÕm thÊy! H·y gia nhËp C¸i Bang ta!"
 	}

@@ -9,7 +9,7 @@ Include("\\script\\online_activites\\reborn\\tongban\\npc\\bacdaulaonhan.lua");
 Include("\\settings\\static_script\\gem\\imp_npc_gem.lua")
 Include("\\script\\equip_shop\\equip_shop_head.lua")
 Include("\\script\\global\\c2s_execute_func.lua");
-g_szTitle = "<color=green>H­íng dÉn:<color>"
+g_szTitle = "<color=green>Guide:<color>"
 IC_CLICK_TIME = 5;
 function ic_CheckClickTime()
 	if not G_IC_CLICK_TIME then
@@ -63,27 +63,27 @@ end
 			tinsert(tSay, "+NhËn ¸o + QuÇn S­ M«n t¨ng tô khÝ ThiÕu L©m QuyÒn/nhanaotlq")
 		end		
 		if 6 == nRoute then
-			tinsert(tSay, "NhËn ¸m KhÝ vµ C¬ Quan/Give_JiguanAnqi")
+			tinsert(tSay, "Receive Hidden Weapon and Mechanism/Give_JiguanAnqi")
 		end
 		if 8 == nRoute then
-			tinsert(tSay, "NhËn X¸ Lîi Kim §¬n/Give_Dandan")
+			tinsert(tSay, "Receive Sarira Golden Pill/Give_Dandan")
 		end		
 		if 17 == nRoute then
-			tinsert(tSay, "NhËn ChiÕn M·/Give_ZhanMa")
+			tinsert(tSay, "Receive War Horse/Give_ZhanMa")
 		--	tinsert(tSay, "++Mua ChiÕn M· (tù chän OPT)/Mua_ZhanMa")		
 		end
 		if 18 == nRoute then
-			tinsert(tSay, "NhËn ChiÕn M· vµ Tô TiÔn/Give_Jiancu")
+			tinsert(tSay, "Receive War Horse and Sleeve Arrow/Give_Jiancu")
 		--	tinsert(tSay, "++Mua ChiÕn M· (tù chän OPT)/Mua_ZhanMa")			
 		end
 		if 20 == nRoute then
-			tinsert(tSay, "NhËn Phong Thi Phï/Give_Fengshifu")
+			tinsert(tSay, "Receive Wind Corpse Charm/Give_Fengshifu")
 		end
 		if 21 == nRoute then
-			tinsert(tSay, "NhËn Cæ/Give_GuGu")
+			tinsert(tSay, "Receive Gu/Give_GuGu")
 		end
 		if 30 == nRoute then
-			tinsert(tSay, "NhËn §iªu/ling_nv_xiaodiao")
+			tinsert(tSay, "Receive Carving/ling_nv_xiaodiao")
 		end
 	--	if GetTask(3501) < 1 then
 			--tinsert(tSay, "nhËn quµ ®Òn bï sù cè m¹ng 23-10(x20 MËt tÞch 30%,1400 ®iÓm Phong Hoa)/denbuloi1")
@@ -201,7 +201,7 @@ function uanlinh7mn()
 			"NhËn uÈn linh 8/#show_equip_shop(3115)",					
 		--	"NhËn uÈn linh ¸o/#show_equip_shop(3203)",							
 		--	"NhËn uÈn linh quÇn/#show_equip_shop(3204)",							
-        "Ra khái/nothing",
+        "Leave/nothing",
     };
     SelectSay(szSay);
 end
@@ -263,7 +263,7 @@ function nhannguyenlieumenu()
 			"NhËn N÷ Oa Tinh Th¹ch (rót YQ)/nuoatt", 
 			"NhËn l¹i Phiªu Vò/nhangua1",			
 			"NhËn l¹i ThÇn Hµnh B¶o §iÓn /nhanthanhanh",			
-        "Ra khái/nothing",
+        "Leave/nothing",
     };
     SelectSay(szSay);
 end
@@ -305,7 +305,7 @@ function nhantrangbimenu()
 	"NhËn Set S­ M«n 4/quasm4",	 
           "++,NhËn Set Buff hç trî tÊn c«ng,phßng thñ /setbuffhttc",					
 "++,NhËn Trang BÞ Kh¶m Linh Th¹ch/shopdokhamfr",			  
-        "Ra khái/nothing",
+        "Leave/nothing",
     };
     SelectSay(szSay);
 end
@@ -320,7 +320,7 @@ function GetHieumenu()
 		"NhËn vËt phÈm kÝch ho¹t Danh HiÖu ChiÕn Tr­êng (HiÖu óy ->Nguyªn So¸i)/nhandhct",						
 		"NhËn vËt phÈm kÝch ho¹t HiÖu ChiÕn Cuång,Ph¸ Qu©n/nhanhieuccpq",						
 	--	"NhËn §Çu Thµnh TÝn,Th­, BiÓu /nhandtb",						
-        "Ra khái/nothing",
+        "Leave/nothing",
     };
     SelectSay(szSay);
 end
@@ -347,7 +347,7 @@ function Get_Diem_Char()
     local szSay = {
         g_szTitle.."T¨ng ®iÓm cho nh©n vËt!",
 		"Thay ®æi h­íng chuyÓn sinh nh©n vËt/confirm_phucsinh4",		
-			"Thao th¸c kinh m¹ch/GetJingMai",				
+			"Manipulate meridians/GetJingMai",				
 			"Më thñ khè tõ xa/mothukho",			
 			"Söa nhanh trang bÞ ®ang mÆc trªn ng­êi (håi phôc full ®é bÒn)/suadofast",			
 			"NhËn Danh HiÖu,Qu©n Hµm/GetHieumenu",		
@@ -365,7 +365,7 @@ function Get_Diem_Char()
 		--	format("%s/get_tong_title", "NhËn danh hiÖu bang héi cÊp 10"),		
 			"NhËn tñ ¸o/diemphonghoa",			
 --"[Test]NhËn ph¸t s¸ng vò khÝ /nhanpsvk",				
-        "Ra khái/nothing",
+        "Leave/nothing",
     };
     SelectSay(szSay);
 end
@@ -374,7 +374,7 @@ function nhandhct()
         g_szTitle.."NhËn Danh HiÖu ChiÕn Tr­êng",
         "NhËn Danh HiÖu Tèng/nhandhcttong",
         "NhËn Danh HiÖu Liªu/nhandhctlieu",		
-        "Ra khái/nothing",
+        "Leave/nothing",
     };
     SelectSay(szSay);
 end
@@ -596,7 +596,7 @@ function get_tong_title()
 		AddTitle(72, 10)
 		PlaySound("\\sound\\sound_i016.wav");
 		SetCurrentNpcSFX(PIdx2NpcIdx(),905,0,0)
-		local szMsg = format("Chóc mõng nhËn danh hiÖu %s thµnh c«ng", "§ång Cõu")
+		local szMsg = format("Chóc mõng nhËn danh hiÖu %s thµnh c«ng", "Same Vengeance")
 		Msg2Player(szMsg)
 		Talk(1, "", szMsg)
 	else
@@ -630,7 +630,7 @@ function Pet_OP()
 	tinsert(tSay, format("%s/Get_SachPet", "NhËn S¸ch Pet Lv7(20 « trèng)"))
 	tinsert(tSay, format("%s/Get_Pet", "NhËn pet  LV8"))
 	tinsert(tSay, format("%s/ForgetPetSkillMain", "Xãa kü n¨ng Pet"))
-	tinsert(tSay, format("%s/getPetEgg", "NhËn Trøng Thó C­ng"))	
+	tinsert(tSay, format("%s/getPetEgg", "Receive Pet Egg"))	
 	tinsert(tSay, format("%s/Get_Petrd", "NhËn trøng pet"))	
 	tinsert(tSay, format("%s/getLingLi", "NhËn ®iÓm linh lùc"))		
 	tinsert(tSay, "T¹i h¹ chØ xem qua th«i/nothing");
@@ -875,17 +875,17 @@ function JoinRoute_UpdateLevel()
 		return 0;
 	end
 	local tMenu = {
-		"ThiÕu L©m/join_sl",
-		"Vâ §ang/join_wd",
+		"Shaolin/join_sl",
+		"Wudang/join_wd",
 		"Nga My/join_em",
-		"C¸i Bang/join_gb",
+		"Beggars' Guild/join_gb",
 		"§­êng M«n/join_tm",
 		"D­¬ng M«n/join_ym",
-		"Ngò §éc/join_wdu",
+		"Five Poisons/join_wdu",
 		"C«n L«n/join_kl",
 		"Thóy Yªn/join_cy",
 		format("%s/join_mj", "Minh gi¸o"),
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	Say("Ng­¬i muèn gia nhËp l­u ph¸i g×?", getn(tMenu), tMenu);
 end
@@ -903,10 +903,10 @@ function join_sl()
 
 	local szSay = {
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
-		"ThiÕu L©m vâ t«ng/#enter_mp(4)",
-		"ThiÕu L©m thiÒn t«ng/#enter_mp(3)",
-		"ThiÕu L©m tôc gia/#enter_mp(2)",
-		"Ra khái/nothing",
+		"Shaolin Martial Order/#enter_mp(4)",
+		"Shaolin Zen Order/#enter_mp(3)",
+		"Shaolin Lay Branch/#enter_mp(2)",
+		"Leave/nothing",
 	};
 
 	SelectSay(szSay);
@@ -919,9 +919,9 @@ function join_wd()
 
 	local szSay = {
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
-		"Vâ §ang ®¹o gia/#enter_mp(14)",
-		"Vâ §ang tôc gia/#enter_mp(15)",
-		"Ra khái/nothing",
+		"Wudang Daoist Branch/#enter_mp(14)",
+		"Wudang Lay Branch/#enter_mp(15)",
+		"Leave/nothing",
 	};
 
 	SelectSay(szSay);
@@ -939,9 +939,9 @@ function join_em()
 
 	local szSay = {
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
-		"Nga My phËt gia/#enter_mp(8)",
-		"Nga My tôc gia/#enter_mp(9)",
-		"Ra khái/nothing",
+		"Emei Buddhist Branch/#enter_mp(8)",
+		"Emei Lay Branch/#enter_mp(9)",
+		"Leave/nothing",
 	};
 
 	SelectSay(szSay);
@@ -954,9 +954,9 @@ function join_gb()
 
 	local szSay = {
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
-		"C¸i Bang TÜnh y/#enter_mp(11)",
-		"C¸i Bang ¤ Y/#enter_mp(12)",
-		"Ra khái/nothing",
+		"Beggars' Guild Pure Robe/#enter_mp(11)",
+		"Beggars' Guild Dirty Robe/#enter_mp(12)",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end;
@@ -970,7 +970,7 @@ function join_tm()
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
 		"§­êng M«n Ch©m/#enter_mp(6)",
 		"§­êng M«n NhËp HiÖp/#enter_mp(6)",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end;
@@ -984,7 +984,7 @@ function join_ym()
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
 		"D­¬ng M«n th­¬ng Kþ/#enter_mp(17)",
 		"D­¬ng M«n Cung Kþ/#enter_mp(18)",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end;
@@ -996,9 +996,9 @@ function join_wdu()
 
 	local szSay = {
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
-		"HiÖp §éc/#enter_mp(20)",
-		"Tµ §éc/#enter_mp(21)",
-		"Ra khái/nothing",
+		"Chivalrous Poison/#enter_mp(20)",
+		"Evil Poison/#enter_mp(21)",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end;
@@ -1016,7 +1016,7 @@ function join_kl()
 	local szSay = {
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
 		"C«n L«n Thiªn S­/#enter_mp(23)",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end;
@@ -1035,7 +1035,7 @@ function join_cy()
 		g_szTitle.."Ng­¬i muèn gia nhËp l­u ph¸i g×?",
 		"Thóy Yªn Vò Tiªn/#enter_mp(29)",
 		"Thóy Yªn Linh N÷/#enter_mp(30)",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end;
@@ -1047,10 +1047,10 @@ function join_mj()
 
 	local szSay = {
 		g_szTitle.."VÞ <sex> muèn theo h­íng nµo cña Minh Gi¸o?",
-		format("%s/#enter_mp(25)", "Minh Gi¸o Th¸nh ChiÕn"),
+		format("%s/#enter_mp(25)", "Ming Cult Holy Warrior"),
 		format("%s/#enter_mp(26)", "Minh Gi¸o TrËn Binh"),
 		format("%s/#enter_mp(27)", "Minh Gi¸o HuyÕt Nh©n"),
-		"Ra khái/nothing",
+		"Leave/nothing",
 	}
 	SelectSay(szSay);
 end;
@@ -1781,7 +1781,7 @@ function get_mattichphu()
 		"Tø Linh ChiÕn ý Phæ/get_mt17",
 		"Tø Linh Thiªn ý Phæ/get_mt18",
 		"Tø Linh Tö ý Phæ/get_mt19",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end
@@ -1870,7 +1870,7 @@ function nhanl3()
 	end
 function Get_Book()
 	local szSay = {
-		g_szTitle.."NhËn L­u Ph¸i Ch©n QuyÓn vµ QuyÕt YÕu!",
+		g_szTitle.."Receive Liu Sect True Fist and Essence Manual!",
 		"NhËn MËt TÞch M«n Ph¸i BÝ §iÓn/Get_Book_ZhenJuan",
 	--	"NhËn MËt TÞch M«n Ph¸i /Get_Book_ZhenJuan2",
 		"NhËn MËt tÞch phô/get_mattichphu",		
@@ -1883,7 +1883,7 @@ function Get_Book()
 		"NhËn 5k ®iÓm lÞch luyÖn(dïng luyÖn TiÕn CÊp mËt tÞch)/nhanlichluyen",
 		"[Test] nhËn vËt phÈm hç trî th¨ng cÊp mËt tÞch lªn 10 thµnh, 4 phô lôc/nhantangpl",
 		 "[TEST]Th¨ng CÊp MËt TÞch ®ang ®eo lªn 10 thµnh ,4 phô lôc,chØ sè 120%/thangcapmttest",		
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end
@@ -1940,24 +1940,24 @@ function mt15lg()
 	--Msg2Player("B¹n nhËn ®­îc 1 mËt tÞch 15%")
 end
 tbMatTich_GNlg = {
-		[2] = {0,107,30045, 2,"Kim Cang B¸t Nh· Ch©n QuyÓn"},
-		[4] = {0,107,30046, 1,"TiÒm Long Tóc DiÖt Ch©n QuyÓn"},
-		[3] = {0,107,30047, 1,"V« TrÇn Bå §Ò Ch©n QuyÓn"},
+		[2] = {0,107,30045, 2,"Vajra Prajna True Scroll"},
+		[4] = {0,107,30046, 1,"Hidden Dragon Annihilation True Manual"},
+		[3] = {0,107,30047, 1,"Dustless Bodhi True Manual"},
 		[6] = {0,107,30048, 2,"Thiªn La Liªn Ch©u Ch©n QuyÓn"},
-		[8] = {0,107,30049, 1,"Nh­ ý Kim §Ønh Ch©n QuyÓn"},
-		[9] = {0,107,30050, 1,"BÝch H¶i TuyÖt ¢m Ch©n QuyÓn"},
-		[11] = {0,107,30051, 2,"Hçn §én TrÊn Nh¹c Ch©n QuyÓn"},
+		[8] = {0,107,30049, 1,"Wishful Golden Top True Manual"},
+		[9] = {0,107,30050, 1,"Azure Sea Silent Sound True Manual"},
+		[11] = {0,107,30051, 2,"Chaos Town Mountain True Manual"},
 		[12] = {0,107,30052, 2,"Quú Thiªn Du Long Ch©n QuyÓn"},
 		[14] = {0,107,30053, 1,"HuyÒn ¶nh Mª T«ng Ch©n QuyÓn"},
-		[15] = {0,107,30054, 2,"Qu©n Tö §íi Phong Ch©n QuyÓn"},
-		[17] = {0,107,30055, 2,"TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn"},
+		[15] = {0,107,30054, 2,"Gentleman Welcomes the Wind True Manual"},
+		[17] = {0,107,30055, 2,"Town Army Flying Dragon Spear True Manual"},
 		[18] = {0,107,30056, 2,"Xuyªn V©n L¹c Hång Ch©n QuyÓn"},
 		[20] = {0,107,30057, 2,"HuyÒn Minh Phong Ma Ch©n QuyÓn"},
 		[21] = {0,107,30058, 1,"Linh Cæ HuyÒn Tµ Ch©n QuyÓn"},
 		[23] = {0,107,30059, 1,"Cöu Thiªn Phong L«i Ch©n QuyÓn"},
 		[29] = {0,107,30060, 2,"Hång TrÇn Tóy Méng Ch©n QuyÓn"},
 		[30] = {0,107,30061, 2,"Phong Hoa Thiªn DiÖp Ch©n QuyÓn"},
-		[25] = {0,107,30062, 2,"Håi Phong Tr¶m NhËt Ch©n QuyÓn"},
+		[25] = {0,107,30062, 2,"Returning Wind Slashing Sun Fist Manual"},
 		[26] = {0,107,30063, 2,"Phô Kú Hµnh TrËn Ch©n QuyÓn"},
 		[27] = {0,107,30064, 1,"Ng­ng HuyÕt Phong Hån Ch©n QuyÓn"},
 	}
@@ -1995,7 +1995,7 @@ function Get_Book_JueYao2()
 	end
 
 	for i = tJue[nRoute][1],tJue[nRoute][2] do
-		gf_AddItemEx({2, 6, i, 1, 4}, "QuyÕt YÕu");
+		gf_AddItemEx({2, 6, i, 1, 4}, "Essence Manual");
 	end
 end
 
@@ -2123,11 +2123,11 @@ end
 
 function ling_nv_xiaodiao()
 	local szSay = {};
-	szSay[getn(szSay) + 1] = "NhËn TiÓu §iªu/Give_XiaoDiao";
-	szSay[getn(szSay) + 1] = "Nu«i TiÓu §iªu/Give_XiaoDiaoFood";
+	szSay[getn(szSay) + 1] = "Receive Little Carving/Give_XiaoDiao";
+	szSay[getn(szSay) + 1] = "Feed Little Carving/Give_XiaoDiaoFood";
 	szSay[getn(szSay) + 1] = "HuÊn luyÖn TiÓu §iªu nhanh/Feed_XiaoDiao";
-	szSay[getn(szSay) + 1] = "Ra khái/nothing";
-	Say(g_szTitle.."TiÓu §iªu thao t¸c.", getn(szSay), szSay)
+	szSay[getn(szSay) + 1] = "Leave/nothing";
+	Say(g_szTitle.."Little Carving operation.", getn(szSay), szSay)
 end
 
 
@@ -2178,7 +2178,7 @@ end
 
 function ClearBagAllItem(bTag)
 	if not bTag or tonumber(bTag) ~= 1 then
-		Say(g_szTitle.."Ng­¬i muèn thanh lý tói?", 2, "§ång ý/#ClearBagAllItem(1)", "Ra khái/nothing")
+		Say(g_szTitle.."Ng­¬i muèn thanh lý tói?", 2, "Agree/#ClearBagAllItem(1)", "Leave/nothing")
 		return
 	end
 	ClearItemInPos();
@@ -2192,7 +2192,7 @@ function TongOperation()
 		g_szTitle.."Thao t¸c bang héi",
 		"Ta muèn lËp bang héi/TongOperation_Create",
 		"Ta muèn th¨ng cÊp bang héi/TongOperation_update",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end
@@ -2232,13 +2232,13 @@ end
 
 function GetJingMai()
 	local szSay = {
-		g_szTitle.."Thao th¸c kinh m¹ch",
+		g_szTitle.."Manipulate meridians",
 		"TÈy ®iÓm kinh m¹ch/GetJingMai_Reset",
 		format("%s/getZhenqi", "NhËn ch©n khÝ"),
 		format("%s/#getJingMaiTongRen(1)", "NhËn Kinh M¹ch §ång Nh©n"),
 		format("%s/#getJingMaiTongRen(2)", "NhËn Kinh M¹ch Ng©n Nh©n"),
 		--format("%s/#getJingMaiTongRen(3)", "ÁìÈ¡¾­Âö½ðÈË"),
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	if MeridianGetLevel() < 2 then
 		tinsert(szSay, 2, format("%s/GetJingMai_Update", "T¨ng lªn c¶nh giíi §éng Minh(kÝch ho¹t Kinh M¹ch)"))
@@ -2273,7 +2273,7 @@ end
 
 function GetJingMai_Reset(bTag)
 	if not bTag or tonumber(bTag) ~= 1 then
-		Say(g_szTitle.."Thao th¸c kinh m¹ch", 2,"§ång ý/#GetJingMai_Reset(1)", "Hñy bá/nothing")
+		Say(g_szTitle.."Manipulate meridians", 2,"Confirm/#GetJingMai_Reset(1)", "Cancel/nothing")
 		return 0;
 	end
 	MeridianRestore(-1);
@@ -2318,7 +2318,7 @@ function upgrade_gather_skill()
 		if nMax > nCur then
 			local msg = g_szTitle..format("HiÖn t¹i chØ cã thÓ th¨ng cÊp kü n¨ng %s, <color=gold>%s<color> ®ang ®¹t cÊp <color=green>%d<color>, muèn th¨ng cÊp <color=gold>%s<color> ®Õn cÊp <color=green>%d<color> kh«ng?",
 				 str, tName[k], nCur, tName[k], nMax);
-			Say(msg, 2, format("§ång ý/#upgrade_gather_skill_do(%d, %d)", v, nMax), "Hñy bá/nothing")
+			Say(msg, 2, format("Confirm/#upgrade_gather_skill_do(%d, %d)", v, nMax), "Cancel/nothing")
 			return 0;
 		end
 	end
@@ -2339,7 +2339,7 @@ end
 
 function upgrade_compose_skill()
 	local tGather = {2, 3, 4, 5, 9, 10};
-	local tName = {"ChÕ t¹o binh khÝ dµi", "ChÕ t¹o binh khÝ ng¾n", "ChÕ t¹o kú m«n binh khÝ", "Lµm hé gi¸p", "H¹ trang", "§Çu qu¸n"};
+	local tName = {"ChÕ t¹o binh khÝ dµi", "ChÕ t¹o binh khÝ ng¾n", "ChÕ t¹o kú m«n binh khÝ", "Make armor", "Lower garment", "§Çu qu¸n"};
 	local str = ""
 	for k, v in tName do
 		str = str.."<color=gold>"..v.."<color>,"
@@ -2350,7 +2350,7 @@ function upgrade_compose_skill()
 		if nMax > nCur then
 			local msg = g_szTitle..format("HiÖn t¹i chØ cã thÓ th¨ng cÊp kü n¨ng %s, <color=gold>%s<color> ®ang ®¹t cÊp <color=green>%d<color>, muèn th¨ng cÊp <color=gold>%s<color> ®Õn cÊp <color=green>%d<color> kh«ng?",
 				 str, tName[k], nCur, tName[k], nMax);
-			Say(msg, 2, format("§ång ý/#upgrade_compose_skill_do(%d, %d)", v, nMax), "Hñy bá/nothing")
+			Say(msg, 2, format("Confirm/#upgrade_compose_skill_do(%d, %d)", v, nMax), "Cancel/nothing")
 			return 0;
 		end
 	end
@@ -2690,35 +2690,35 @@ BindWeaponEffect("level19",1)
 Talk(1,"","nhËn ph¸t s¸ng thµnh c«ng.sö dông <color=yellow>phÝm [F]<color> ®Ó kÝch ho¹t ph¸t s¸ng")
 end
 function hu1()
-BindWeaponEffect("ThiÕt Cèt",1)  
+BindWeaponEffect("Iron Bone",1)  
 Talk(1,"","nhËn ph¸t s¸ng thµnh c«ng.sö dông <color=yellow>phÝm [F]<color> ®Ó kÝch ho¹t ph¸t s¸ng")
 end
 function hu2()
-BindWeaponEffect("B¸ch ChiÕn",1)    
+BindWeaponEffect("Bach Chien",1)    
 Talk(1,"","nhËn ph¸t s¸ng thµnh c«ng.sö dông <color=yellow>phÝm [F]<color> ®Ó kÝch ho¹t ph¸t s¸ng")
 end
 function hu3()
-BindWeaponEffect("Ch­íc NhËt",1)  
+BindWeaponEffect("Chuoc Nhat",1)  
 Talk(1,"","nhËn ph¸t s¸ng thµnh c«ng.sö dông <color=yellow>phÝm [F]<color> ®Ó kÝch ho¹t ph¸t s¸ng")
 end
 function hu4()
-BindWeaponEffect("TuÊn DËt",1)  
+BindWeaponEffect("Tuan Dat",1)  
 Talk(1,"","nhËn ph¸t s¸ng thµnh c«ng.sö dông <color=yellow>phÝm [F]<color> ®Ó kÝch ho¹t ph¸t s¸ng")
 end
 function hu5()
-BindWeaponEffect("§µo Lý",1)  
+BindWeaponEffect("Dao Ly",1)  
 Talk(1,"","nhËn ph¸t s¸ng thµnh c«ng.sö dông <color=yellow>phÝm [F]<color> ®Ó kÝch ho¹t ph¸t s¸ng")
 end
 function hu6()
-BindWeaponEffect("Danh Tóc",1)  
+BindWeaponEffect("Danh Tuc",1)  
 Talk(1,"","nhËn ph¸t s¸ng thµnh c«ng.sö dông <color=yellow>phÝm [F]<color> ®Ó kÝch ho¹t ph¸t s¸ng")
 end
 function hu7()
-BindWeaponEffect("L¹c Hµ",1)  
+BindWeaponEffect("Lac Ha",1)  
 Talk(1,"","nhËn ph¸t s¸ng thµnh c«ng.sö dông <color=yellow>phÝm [F]<color> ®Ó kÝch ho¹t ph¸t s¸ng")
 end
 function hu8()
-BindWeaponEffect("L¨ng Tiªu",1)  
+BindWeaponEffect("Ling Xiao",1)  
 Talk(1,"","nhËn ph¸t s¸ng thµnh c«ng.sö dông <color=yellow>phÝm [F]<color> ®Ó kÝch ho¹t ph¸t s¸ng")
 end
 function hu9()
@@ -2726,7 +2726,7 @@ BindWeaponEffect("PhÇn V©n",1)
 Talk(1,"","nhËn ph¸t s¸ng thµnh c«ng.sö dông <color=yellow>phÝm [F]<color> ®Ó kÝch ho¹t ph¸t s¸ng")
 end
 function hu10()
-BindWeaponEffect("§o¹n Giao",1)  
+BindWeaponEffect("Doan Giao",1)  
 Talk(1,"","nhËn ph¸t s¸ng thµnh c«ng.sö dông <color=yellow>phÝm [F]<color> ®Ó kÝch ho¹t ph¸t s¸ng")
 end
 function hu11()
@@ -2932,7 +2932,7 @@ function Get_CT_HP()
 		"Trang phôc ThÇn ¦ng So¸i Phe Tèng/Get_T_HPS",
 		"Trang phôc ThÇn ¦ng T­íng Phe Liªu/Get_L_HPT",
 		"Trang phôc ThÇn ¦ng So¸i Phe Liªu/Get_L_HPS",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end
@@ -3149,17 +3149,17 @@ nNewWeapon = {}
 nWeaponTypeList = {
     {0, 3, 66, "§ao"},
     {0, 5, 42, "Bæng"},
-    {0, 8, 99, "Tr­îng"},
+    {0, 8, 99, "Staff"},
     {0, 0, 16, "Bao tay"},
     {0, 1, 55, "Phi Tiªu"},
     {0, 2, 38, "KiÕm"},
-    {0, 10, 77, "CÇm"},
-    {0, 9, 88, "Bót"},
+    {0, 10, 77, "Zither"},
+    {0, 9, 88, "Brush"},
     {0, 6, 110, "Th­¬ng"},
     {0, 4, 121, "Cung"},
     {0, 7, 14, "Song §ao"},
     {0, 11, 14, "Tr¶o"},
-    {0, 12, 14, "Tiªu"},
+    {0, 12, 14, "Xiao"},
     {0, 13, 14, "Qu¹t"},
  --   {0, 14, 14, "Chñy"},
 }
@@ -4102,9 +4102,9 @@ tRandNum ={--ÊôÐÔÃû	id	Î»ÖÃ	×îµÍµÈ¼¶	ÊÇ·ñËæ»ú	ÏûºÄËæ»ú´ÎÊý	µÈ¼¶1-7È¨Öµ
 {"Søc lùc t¨ng",110,0,1,0,1,1,1,1,1,2,2,2},
 {"Søc lùc t¨ng",110,1,1,0,1,1,1,1,1,2,2,2},
 {"Søc lùc t¨ng",110,3,1,0,1,1,1,1,1,2,2,2},
-{"Sinh lùc +",11,0,1,0,3,1,1,1,1,2,2,2},
-{"Sinh lùc +",11,1,1,0,3,1,1,1,1,2,2,2},
-{"Sinh lùc +",11,3,1,0,3,1,1,1,1,2,2,2},
+{"Vitality +",11,0,1,0,3,1,1,1,1,2,2,2},
+{"Vitality +",11,1,1,0,3,1,1,1,1,2,2,2},
+{"Vitality +",11,3,1,0,3,1,1,1,1,2,2,2},
 {"H¹ gôc ®èi ph­¬ng sinh lùc håi phôc " ,333,2,1,0,2,1,1,1,1,2,2,2},
 {"600 gi©y ®é bÒn vò khÝ håi phôc",43,2,1,1,2,1,1,1,1,2,2,2},
 {"600 gi©y ®é bÒn th­îng y håi phôc ",112,1,1,1,2,1,1,1,1,2,2,2},
@@ -4113,7 +4113,7 @@ tRandNum ={--ÊôÐÔÃû	id	Î»ÖÃ	×îµÍµÈ¼¶	ÊÇ·ñËæ»ú	ÏûºÄËæ»ú´ÎÊý	µÈ¼¶1-7È¨Öµ
 {"yªu cÇu ®¼ng cÊp gi¶m ",334,0,6,1,3,1,1,1,1,2,2,2},
 {"yªu cÇu ®¼ng cÊp gi¶m "	,334,1,6,1,3,1,1,1,1,2,2,2},
 {"yªu cÇu ®¼ng cÊp gi¶m "	,334,3,6,1,3,1,1,1,1,2,2,2},
-{"Tû lÖ ®¸nh ph¹m vi",335,2,1,0,3,1,1,1,1,2,2,2},
+{"Hit range rate",335,2,1,0,3,1,1,1,1,2,2,2},
 {"Vò khÝ ®¸nh ngo¹i lín nhÊt t¨ng ",65,2,1,0,3,1,1,1,1,2,2,2},
 {"Vò khÝ ®¸nh ngo¹i thÊp nhÊt t¨ng "	,66,2,1,0,3,1,1,1,1,2,2,2},
 {"Vò khÝ ®¸nh néi lín nhÊt t¨ng"	,67,2,1,0,3,1,1,1,1,2,2,2},
@@ -4123,7 +4123,7 @@ tRandNum ={--ÊôÐÔÃû	id	Î»ÖÃ	×îµÍµÈ¼¶	ÊÇ·ñËæ»ú	ÏûºÄËæ»ú´ÎÊý	µÈ¼¶1-7È¨Öµ
 {"TÊn c«ng t¨ng ",77,2,1,1,3,1,1,2,2,3,3,4},
 {"ChÝnh x¸c t¨ng",337,2,1,0,4,1,1,2,2,3,3,4},
 {"NÐ tr¸nh t¨ng",338,3,1,0,5,1,1,2,2,3,3,4},
-{"Ph¶n ®ßn",339,1,1,0,5,1,1,2,2,3,3,4},
+{"Counter blow",339,1,1,0,5,1,1,2,2,3,3,4},
 {"Mçi 10 gi©y néi lùc håi phôc",340,0,5,1,5,1,1,2,2,3,3,4},
 {"Mçi 10 gi©y néi lùc håi phôc",340,1,5,1,5,1,1,2,2,3,3,4},
 {"Mçi 10 gi©y néi lùc håi phôc",340,3,5,1,5,1,1,2,2,3,3,4},
@@ -4173,9 +4173,9 @@ tRandNum ={--ÊôÐÔÃû	id	Î»ÖÃ	×îµÍµÈ¼¶	ÊÇ·ñËæ»ú	ÏûºÄËæ»ú´ÎÊý	µÈ¼¶1-7È¨Öµ
 {"Néi c«ng t¨ng ",361,0,1,0,5,1,1,2,2,3,3,4},
 {"Néi c«ng t¨ng ",361,1,1,0,5,1,1,2,2,3,3,4},
 {"Néi c«ng t¨ng ",361,3,1,0,5,1,1,2,2,3,3,4},
-{"Kh¸ng ®éc",100,0,1,0,6,1,1,2,2,3,3,4},
-{"Kh¸ng ®éc",100,1,1,0,6,1,1,2,2,3,3,4},
-{"Kh¸ng ®éc",100,3,1,0,6,1,1,2,2,3,3,4},
+{"Poison resistance",100,0,1,0,6,1,1,2,2,3,3,4},
+{"Poison resistance",100,1,1,0,6,1,1,2,2,3,3,4},
+{"Poison resistance",100,3,1,0,6,1,1,2,2,3,3,4},
 {"ChuyÓn hãa s¸t th­¬ng thµnh néi lùc",46,0,5,1,6,1,1,2,2,3,3,4},
 {"ChuyÓn hãa s¸t th­¬ng thµnh néi lùc",46,1,5,1,6,1,1,2,2,3,3,4},
 {"TÊn c«ng lµm ®èi ph­¬ng hao tæn néi lùc",49,2,5,0,6,1,2,2,3,3,4,5},
@@ -4189,7 +4189,7 @@ tRandNum ={--ÊôÐÔÃû	id	Î»ÖÃ	×îµÍµÈ¼¶	ÊÇ·ñËæ»ú	ÏûºÄËæ»ú´ÎÊý	µÈ¼¶1-7È¨Öµ
 {"Néi lùc tèi ®a t¨ng-%",80,0,1,0,6,1,2,2,3,3,4,5},
 {"Néi lùc tèi ®a t¨ng-%",80,1,1,0,6,1,2,2,3,3,4,5},
 {"Néi lùc tèi ®a t¨ng-%",80,3,1,0,6,1,2,2,3,3,4,5},
-{"Kh¾c nÐ",364,1,3,0,6,1,2,2,3,3,4,5},
+{"Restraint counter",364,1,3,0,6,1,2,2,3,3,4,5},
 {"Hç trî tÊn c«ng  duy tr× ",41,0,1,0,7,1,2,2,3,3,4,5},
 {"Hç trî tÊn c«ng  duy tr× ",41,2,1,0,7,1,2,2,3,3,4,5},
 {"Hç trî tÊn c«ng  duy tr× ",41,1,1,0,7,1,2,2,3,3,4,5},
@@ -4200,22 +4200,22 @@ tRandNum ={--ÊôÐÔÃû	id	Î»ÖÃ	×îµÍµÈ¼¶	ÊÇ·ñËæ»ú	ÏûºÄËæ»ú´ÎÊý	µÈ¼¶1-7È¨Öµ
 {"Hç trî phßng thñ duy tr× ",42,3,1,0,7,1,2,2,3,3,4,5},
 {"C«ng kÝch khiÕn ngo¹i phßng cña ®èi ph­¬ng gi¶m",382,2,1,0,7,1,2,2,3,3,4,5},
 {"C«ng kÝch khiÕn néi lùc cña ®èi ph­¬ng gi¶m ",383,2,1,0,7,1,2,2,3,3,4,5},
-{"Tû lÖ chÞu ®ßn gi¶m nöa	",365,0,5,0,7,1,2,2,3,3,4,5},
-{"Tû lÖ chÞu ®ßn gi¶m nöa	",365,1,5,0,7,1,2,2,3,3,4,5},
-{"Tû lÖ chÞu ®ßn gi¶m nöa	",365,3,5,0,7,1,2,2,3,3,4,5},
+{"Rate of damage taken halved",365,0,5,0,7,1,2,2,3,3,4,5},
+{"Rate of damage taken halved",365,1,5,0,7,1,2,2,3,3,4,5},
+{"Rate of damage taken halved",365,3,5,0,7,1,2,2,3,3,4,5},
 {"Kinh nghiÖm nhËn ®­îc t¨ng",366,2,5,1,5,2,2,3,3,3,4,5},
 {"Kinh nghiÖm nhËn ®­îc t¨ng",366,0,5,1,5,2,2,3,3,3,4,5},
 {"Kinh nghiÖm nhËn ®­îc t¨ng",366,1,5,1,5,2,2,3,3,3,4,5},
 {"Kinh nghiÖm nhËn ®­îc t¨ng",366,3,5,1,5,2,2,3,3,3,4,5},
 {"Lµm gi¶m nÐ tr¸nh cña ®èi ph­¬ng",373,3,4,0,8,2,2,3,3,3,4,5},
 {"Lµm chËm nÐ tr¸nh cña ®èi ph­¬ng",374,3,4,0,8,2,2,3,3,3,4,5},
-{"Tû lÖ nÐ tr¸nh ®¸nh lui",375,3,4,0,8,2,2,3,3,3,4,5},
-{"Tû lÖ nÐ tr¸nh ®¸nh ng·",376,3,4,0,8,2,2,3,3,3,4,5},
+{"Rate of evasion knockback",375,3,4,0,8,2,2,3,3,3,4,5},
+{"Rate of evasion knockdown",376,3,4,0,8,2,2,3,3,3,4,5},
 {"Bá qua nÐ tr¸nh ®èi ph­¬ng",377,0,4,0,8,2,2,3,3,3,4,5},
-{"G©y mª",378,0,4,0,8,2,2,3,3,3,4,5},
-{"G©y cho¸ng",379,0,4,0,8,2,2,3,3,3,4,5},
-{"G©y hçn lo¹n nÐ tr¸nh",380,1,4,0,8,2,2,3,3,3,4,5},
-{"G©y ngñ mª gi¶m nÐ tr¸nh",381,1,4,0,8,2,2,3,3,3,4,5},
+{"Cause confusion",378,0,4,0,8,2,2,3,3,3,4,5},
+{"Cause stun",379,0,4,0,8,2,2,3,3,3,4,5},
+{"Cause evasion chaos",380,1,4,0,8,2,2,3,3,3,4,5},
+{"Cause sleep and reduce evasion",381,1,4,0,8,2,2,3,3,3,4,5},
 {"Ngo¹i phßng gi¶m, ngo¹i kÝch t¨ng",18,1,1,0,8,2,2,3,3,3,4,5},
 {"Néi phßng gi¶m, Néi c«ng t¨ng",19,1,1,0,8,2,2,3,3,3,4,5},
 {"S¸t th­¬ng t¨ng ",372,2,3,0,7,2,2,3,3,3,4,5},
@@ -4236,7 +4236,7 @@ local szSay = {
 "NhËn C¸c Lo¹i trang bÞ kh¶m 3 lç cã s½n linh khÝ /nhantbkham",
 	"NhËn Nguyªn LiÖu kÝch ho¹t QuÎ b¸t qu¸i/nhanquebk",
 	"NhËn Nguyªn LiÖu hîp thµnh Bé b¸t qu¸i/nhanbobk",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end
@@ -4245,7 +4245,7 @@ local szSay = {
 	g_szTitle.." §å Kh¶m", 
 "NhËn Set Thiªn §Þa HuyÒn Hoµng 119 linh khÝ/tdhh119",
 "NhËn Set Thiªn §Þa HuyÒn Hoµng 120 linh khÝ/tdhh120",
-		"Ra khái/nothing",
+		"Leave/nothing",
 	};
 	SelectSay(szSay);
 end
@@ -4354,7 +4354,7 @@ function doilinhthach(nLv,nWz,nPage)
 		strtab);	
 end
 function confirm_lingshi_zhiding(nId,nLv,nWz,nIdx)
-	local tWz = {"M·o","Y phôc","Vò khÝ","QuÇn "};
+	local tWz = {"Helmet","Y phôc","Vò khÝ","Pants"};
 	Say("Sè lÇn b¹n tiªu hao <color=yellow>"..nLv*tRandNum[nIdx][nLv+6].."<color> lÇn"..nLv.." (cÊp) Linh th¹ch ngÉu nhiªn ®Ó ®æi thuéc tÝnh Linh th¹ch lµ <color=yellow>"..tRandNum[nIdx][1].."<color>, vÞ trÝ kh¶m lµ 1 <color=yellow> "..tWz[nWz+1].."<color> "..nLv.." (cÊp) Linh th¹ch, ®ång ý chø?",
 		2,
 		"õ, ta muèn ®æi./#give_lingshi_zhiding("..nId..","..nLv..","..nWz..","..nIdx..")",
@@ -4376,7 +4376,7 @@ function give_lingshi_zhiding(nId,nLv,nWz,nIdx)
 	AddLingShi(nId,nWz,nLv);
 	Msg2Player("B¹n nhËn ®­îc "..nLv.."(cÊp) Linh Th¹ch!");
 	if nLv >= 6 then
-		WriteLog("Ng­êi ch¬i"..GetName().."Sè lÇn ngÉu nhiªn tiªu hao "..nNum.." lÇn nhËn ®­îc "..nLv.."(cÊp) Linh Th¹ch!");
+		WriteLog("Player"..GetName().."Sè lÇn ngÉu nhiªn tiªu hao "..nNum.." lÇn nhËn ®­îc "..nLv.."(cÊp) Linh Th¹ch!");
 	end
 end
 function tdhh120()
@@ -4523,7 +4523,7 @@ function Process_KX5chonopt()
         "Trang bÞ Kim Xµ Tinh Huy (Kh¸ng tÊt c¶) /Get_KXHL",
         "Trang bÞ Kim Xµ Háa S¸t (Ngo¹i c«ng)/Get_KXDG",
         "Trang bÞ Kim Xµ NguyÖt KhuyÕt (Néi C«ng)/Get_KXKP",
-        "Ra khái/nothing",
+        "Leave/nothing",
     };
     SelectSay(szSay);
 end
@@ -4543,8 +4543,8 @@ end
 
 function SetKXDG_1(nType)
     local List = {
-        [3416] = {"Søc m¹nh"},
-        [3417] = {"G©n cèt"},
+        [3416] = {"Strength"},
+        [3417] = {"Sinews and Bones"},
     };
     
     local tSay = {};
@@ -4560,7 +4560,7 @@ end
 function SetKXDG_2(nType,ID1)
     local List = {
         [3429] = {"Néi c«ng"},
-        [3430] = {"Th©n ph¸p"},
+        [3430] = {"Agility"},
         [3431] = {"Linh ho¹t"},
         [3432] = {"§iÓm sinh lùc"},
         [3433] = {"Tû lÖ ®iÓm sinh lùc"},
@@ -4617,8 +4617,8 @@ end
 
 function SetKXDG_5(nType,ID1, ID2, ID3,ID4)
     local List = {
-        [3476] = {"Søc m¹nh"},
-        [3477] = {"G©n cèt"},
+        [3476] = {"Strength"},
+        [3477] = {"Sinews and Bones"},
         [3478] = {"T¨ng tû lÖ ®iÓm sinh lùc"},
     };
     
@@ -4696,8 +4696,8 @@ end
 function SetKXHL_2(nType,ID1)
     local List = {
         [3325] = {"Néi c«ng"},
-        [3326] = {"Søc m¹nh"},
-        [3327] = {"G©n cèt"},
+        [3326] = {"Strength"},
+        [3327] = {"Sinews and Bones"},
         [3328] = {"§iÓm sinh lùc"},
         [3329] = {"Tû lÖ ®iÓm sinh lùc"},
     };
@@ -4754,7 +4754,7 @@ end
 function SetKXHL_5(nType,ID1, ID2, ID3,ID4)
     local List = {
         [3370] = {"Linh Ho¹t"},
-        [3371] = {"Th©n ph¸p"},
+        [3371] = {"Agility"},
     };
     
     local tSay = {};
@@ -4818,7 +4818,7 @@ end
 function SetKXKP_1(nType)
     local List = {
         [3510] = {"Néi c«ng"},
-        [3511] = {"G©n cèt"},
+        [3511] = {"Sinews and Bones"},
     };
     
     local tSay = {};
@@ -4833,8 +4833,8 @@ end
 
 function SetKXKP_2(nType,ID1)
     local List = {
-        [3523] = {"Søc m¹nh"},
-        [3524] = {"Th©n ph¸p"},
+        [3523] = {"Strength"},
+        [3524] = {"Agility"},
         [3525] = {"Linh Ho¹t"},
         [3526] = {"§iÓm sinh lùc"},
         [3527] =  {"Tû lÖ ®iÓm sinh lùc"},
@@ -4892,7 +4892,7 @@ end
 function SetKXKP_5(nType,ID1, ID2, ID3,ID4)
     local List = {
         [3570] = {"Néi c«ng"},
-        [3571] = {"Th©n ph¸p"},
+        [3571] = {"Agility"},
         [3572] = {"Linh Ho¹t"},
     };
     
@@ -5665,24 +5665,24 @@ function mt30denbu()
 	--Msg2Player("B¹n nhËn ®­îc 1 mËt tÞch 15%")
 end
 tbMatTich_GN30 = {
-		[2] = {0,107,30018, 2,"Kim Cang B¸t Nh· Ch©n QuyÓn"},
-		[4] = {0,107,30019, 1,"TiÒm Long Tóc DiÖt Ch©n QuyÓn"},
-		[3] = {0,107,30020, 1,"V« TrÇn Bå §Ò Ch©n QuyÓn"},
+		[2] = {0,107,30018, 2,"Vajra Prajna True Scroll"},
+		[4] = {0,107,30019, 1,"Hidden Dragon Annihilation True Manual"},
+		[3] = {0,107,30020, 1,"Dustless Bodhi True Manual"},
 		[6] = {0,107,30021, 2,"Thiªn La Liªn Ch©u Ch©n QuyÓn"},
-		[8] = {0,107,30022, 1,"Nh­ ý Kim §Ønh Ch©n QuyÓn"},
-		[9] = {0,107,30023, 1,"BÝch H¶i TuyÖt ¢m Ch©n QuyÓn"},
-		[11] = {0,107,30024, 2,"Hçn §én TrÊn Nh¹c Ch©n QuyÓn"},
+		[8] = {0,107,30022, 1,"Wishful Golden Top True Manual"},
+		[9] = {0,107,30023, 1,"Azure Sea Silent Sound True Manual"},
+		[11] = {0,107,30024, 2,"Chaos Town Mountain True Manual"},
 		[12] = {0,107,30025, 2,"Quú Thiªn Du Long Ch©n QuyÓn"},
 		[14] = {0,107,30026, 1,"HuyÒn ¶nh Mª T«ng Ch©n QuyÓn"},
-		[15] = {0,107,30027, 2,"Qu©n Tö §íi Phong Ch©n QuyÓn"},
-		[17] = {0,107,30028, 2,"TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn"},
+		[15] = {0,107,30027, 2,"Gentleman Welcomes the Wind True Manual"},
+		[17] = {0,107,30028, 2,"Town Army Flying Dragon Spear True Manual"},
 		[18] = {0,107,30029, 2,"Xuyªn V©n L¹c Hång Ch©n QuyÓn"},
 		[20] = {0,107,30030, 2,"HuyÒn Minh Phong Ma Ch©n QuyÓn"},
 		[21] = {0,107,30031, 1,"Linh Cæ HuyÒn Tµ Ch©n QuyÓn"},
 		[23] = {0,107,30032, 1,"Cöu Thiªn Phong L«i Ch©n QuyÓn"},
 		[29] = {0,107,30033, 2,"Hång TrÇn Tóy Méng Ch©n QuyÓn"},
 		[30] = {0,107,30034, 2,"Phong Hoa Thiªn DiÖp Ch©n QuyÓn"},
-		[25] = {0,107,30038, 2,"Håi Phong Tr¶m NhËt Ch©n QuyÓn"},
+		[25] = {0,107,30038, 2,"Returning Wind Slashing Sun Fist Manual"},
 		[26] = {0,107,30039, 2,"Phô Kú Hµnh TrËn Ch©n QuyÓn"},
 		[27] = {0,107,30040, 1,"Ng­ng HuyÕt Phong Hån Ch©n QuyÓn"},
 	}				
@@ -6055,7 +6055,7 @@ function shopvang1()
 		--"V­ît ¶i L­¬ng S¬n B¹c/knowlsb",
 	--	"V­ît ¶i §Þa HuyÒn Cung/knowdhc",
 	--	"V­ît ¶i Th¸i NhÊt Th¸p/knowtnt",		
-       "Ra khái/nothing",
+       "Leave/nothing",
     };
     SelectSay(szSay);
 end

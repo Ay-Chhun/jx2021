@@ -30,7 +30,7 @@ function Vet_201402_main()
 		"NhËn phÇn th­ëng nhiÖm vô 'Sa Trung Kim'(tiªu hao 199 vµng vµ 99 Tiªu Dao Ngäc )/Vet_201402_Award",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
-	Say("<color=green>Lôc Tróc ¤ng: <color>®­êng phè h«m nay thËt n¸o nhiÖt.", getn(tSay), tSay);
+	Say("<color=green>Old Man Luzhu: <color>the streets are so lively today.", getn(tSay), tSay);
 end
 
 function Vet_201402_AcceptTask()
@@ -38,7 +38,7 @@ function Vet_201402_AcceptTask()
 	if nStep ~= 0 then
 		Talk(1,"","B¹n ®· nhËn nhiÖm vô 'Sa Trung Kim'");
 		if nStep == 1 then
-			Msg2Player("§Õn Quang Minh §Ønh t×m ¢n Minh");
+			Msg2Player("Go to Bright Summit to find Yin Ming");
 		elseif nStep == 2 then
 			Msg2Player("§Õn mª cung sa m¹c t×m B¹ch Tiªn Thµnh");
 		elseif nStep == 3 then
@@ -53,8 +53,8 @@ function Vet_201402_AcceptTask()
 		return 0;
 	end
 	VET_201402_TASK:SetTask(VET_201402_TASK.TASK, 1);
-	Msg2Player("§Õn Quang Minh §Ønh t×m ¢n Minh".."ThØnh gi¸o gi¶ kim mËt thuËt");
-	TaskTip("§Õn Quang Minh §Ønh t×m ¢n Minh".."ThØnh gi¸o gi¶ kim mËt thuËt");
+	Msg2Player("Go to Bright Summit to find Yin Ming".."ThØnh gi¸o gi¶ kim mËt thuËt");
+	TaskTip("Go to Bright Summit to find Yin Ming".."ThØnh gi¸o gi¶ kim mËt thuËt");
 end
 
 function Vet_201402_Award()
@@ -83,29 +83,29 @@ function Vet_201402_Award()
 	VET_201402_TASK:SetTask(VET_201402_TASK.AWARD, 1);
 	gf_ModifyExp(1234567890);
 	local tFruitAward = {
-		{"Nh·n", 2,	1,	30164},
-		{"Ch«m Ch«m", 2,	1,	30165},
+		{"Longan", 2,	1,	30164},
+		{"Rambutan", 2,	1,	30165},
 		{"Cam", 2,	1,	30166},
-		{"Dõa", 2,	1,	30167},
-		{"M¨ng côt", 2,	1,	30168},
-		{"B­ëi", 2,	1,	30169},
-		{"D©u", 2,	1,	30170},
-		{"Chuèi", 2,	1,	30171},
-		{"Xoµi", 2,	1,	30172},
-		{"§µo", 2,	1,	30173},
-		{"MËn", 2,	1,	30174},
-		{"V¶i", 2,	1,	30175},
-		{"T¸o", 2,	1,	30176},
-		{"B¬", 2,	1,	30177},
-		{"§u §ñ", 2,	1,	30178},
-		{"M·ng CÇu", 2,	1,	30179},
-		{"Khãm", 2,	1,	30180},
-		{"Lª", 2,	1,	30181},
-		{"Bßn Bon", 2,	1,	30182},
-		{"KhÕ", 2,	1,	30183},		
+		{"Coconut", 2,	1,	30167},
+		{"Mangosteen", 2,	1,	30168},
+		{"Pomelo", 2,	1,	30169},
+		{"Strawberry", 2,	1,	30170},
+		{"Banana", 2,	1,	30171},
+		{"Mango", 2,	1,	30172},
+		{"Peach", 2,	1,	30173},
+		{"Plum", 2,	1,	30174},
+		{"Lychee", 2,	1,	30175},
+		{"Apple", 2,	1,	30176},
+		{"Avocado", 2,	1,	30177},
+		{"Papaya", 2,	1,	30178},
+		{"Soursop", 2,	1,	30179},
+		{"Pineapple", 2,	1,	30180},
+		{"Li", 2,	1,	30181},
+		{"Langsat", 2,	1,	30182},
+		{"Star Fruit", 2,	1,	30183},		
 	}
 	for i = 1, getn(tFruitAward) do
-		gf_AddItemEx2({tFruitAward[i][2],tFruitAward[i][3],tFruitAward[i][4], 12}, tFruitAward[i][1], "Event phu 2 thang 2 nam 2014", "NhiÖm vô 'Sa Trung Kim'", 0, 1);
+		gf_AddItemEx2({tFruitAward[i][2],tFruitAward[i][3],tFruitAward[i][4], 12}, tFruitAward[i][1], "Event phu 2 thang 2 nam 2014", "Quest 'Sand Gold'", 0, 1);
 	end
 	local tAward = {
 		{31, 40000, "Vet_201402_70Book()", 1},
@@ -120,32 +120,32 @@ function Vet_201402_Award()
 		--{1, 100, "14¼¶Ç¿»¯¾í", {2, 1, 30426, 1}, 7 * 24 * 3600},
 		--{1, 500, "15¼¶Ç¿»¯¾í", {2, 1, 30427, 1}, 7 * 24 * 3600},
 	}
-	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Event phu 2 thang 2 nam 2014", "NhiÖm vô 'Sa Trung Kim'");
+	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Event phu 2 thang 2 nam 2014", "Quest 'Sand Gold'");
 end
 
 function Vet_201402_70Book()
 	local tBook = {
-		[2] =  {0, 107, 204, "Kim Cang B¸t Ch©n QuyÓn"},
+		[2] =  {0, 107, 204, "Vajra Eight Truths Fist"},
 		[4] =  {0, 107, 205, "TiÒm Long TÞch DiÖt Ch©n QuyÓn"},
-		[3] =  {0, 107, 206, "V« TrÇn Bå §Ò Ch©n QuyÓn"},
+		[3] =  {0, 107, 206, "Dustless Bodhi True Manual"},
 		[6] =  {0, 107, 207, "Thiªn La Liªn Ch©u Ch©n QuyÓn"},
 		[8] =  {0, 107, 208, "Nh­ ý Kim §Ønh MËt Ch©n QuyÓn"},
-		[9] =  {0, 107, 209, "BÝch H¶i TuyÖt ¢m Ch©n QuyÓn"},
-		[11] = {0, 107, 210, "Hçn §én TrÊn Nh¹c Ch©n QuyÓn"},
+		[9] =  {0, 107, 209, "Azure Sea Silent Sound True Manual"},
+		[11] = {0, 107, 210, "Chaos Town Mountain True Manual"},
 		[12] = {0, 107, 211, "Quü Thiªn Du Long Ch©n QuyÓn"},
-		[14] = {0, 107, 212, "HuyÔn ¶nh Mª Tung Ch©n QuyÓn"},
-		[15] = {0, 107, 213, "Qu©n Tö TiÖt Phong Ch©n QuyÓn"},
-		[17] = {0, 107, 214, "TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn"},
+		[14] = {0, 107, 212, "Phantom Shadow Lost Track Truth Fist"},
+		[15] = {0, 107, 213, "Gentleman's Wind-Cutting Truth Fist"},
+		[17] = {0, 107, 214, "Town Army Flying Dragon Spear True Manual"},
 		[18] = {0, 107, 215, "Xuyªn V©n L¹c Hång Ch©n QuyÓn"},
 		[20] = {0, 107, 216, "HuyÒn Minh Phong Ma Ch©n QuyÓn"},
-		[21] = {0, 107, 217, "Linh Cæ HuyÔn Tµ Ch©n QuyÓn"},
+		[21] = {0, 107, 217, "Spirit Bone Mysterious Evil True Scroll"},
 		[23] = {0, 107, 218, "Cöu Thiªn Phong L«i Ch©n QuyÓn"},
 		[29] = {0, 107, 222, "Hång TrÇn Tóy Méng Ch©n QuyÓn"},
 		[30] = {0, 107, 223, "Phong Hoa Thiªn DiÖp Ch©n QuyÓn"},
 	}
 	local nRoute = GetPlayerRoute();
 	if not tBook[nRoute] then return 0; end
-	gf_AddItemEx2({tBook[nRoute][1],tBook[nRoute][2],tBook[nRoute][3], 1}, tBook[nRoute][4], "Event phu 2 thang 2 nam 2014", "NhiÖm vô 'Sa Trung Kim'", 0, 1);
+	gf_AddItemEx2({tBook[nRoute][1],tBook[nRoute][2],tBook[nRoute][3], 1}, tBook[nRoute][4], "Event phu 2 thang 2 nam 2014", "Quest 'Sand Gold'", 0, 1);
 end
 
 function Vet_201402_KillNpc1(szName)

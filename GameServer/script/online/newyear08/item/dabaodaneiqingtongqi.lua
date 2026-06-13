@@ -13,7 +13,7 @@ tSuipian = {
 function OnUse()
 	Say("<color=green>§ãng gãi vò khİ §¹i Néi Thanh §ång<color>: Mçi khi sö dông §¹i Néi Thanh §ång x¸c suÊt nhËn ®­îc vËt phÈm nh­ sau, tÊt c¶ ngÉu nhiªn 20 lÇn, b¹n chÊp nhËn? \n 1 m¶nh ®ång h÷u dông 100%\n 25 m¶nh ®ång cÊp 2: 71.2% \n 12 Thanh §ång ®Ønh phèi kiÖn cÊp 4: 25%\n 10 phèi kiÖn Thanh §ång ®Ønh cÊp 3: 2.5% \n 3 Thanh §ång ®Ønh phèi kiÖn cÊp 2: 1% \n 3 Thanh §ång ®Ønh phèi kiÖn cÊp 1 : 0.3%",
 		2,
-		"§­îc/use_daneiqingtongqi",
+		"Receive/use_daneiqingtongqi",
 		"Kh«ng cÇn/nothing")
 end
 

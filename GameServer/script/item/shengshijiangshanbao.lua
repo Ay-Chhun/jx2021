@@ -12,15 +12,15 @@ end;
 function confirm_open(nItemIdx)
 	local selTab = {
 				format("§­îc råi. B¾t ®Çu më th«i!/#open(%d)",nItemIdx),
-				format("Xem bªn trong cã g× ®·!/#see_item(%d)",nItemIdx),
+				format("Let's see what's inside!/#see_item(%d)",nItemIdx),
 				"T¹m thêi kh«ng më/nothing",
 				}
-	Say("<color=red> Chó ı<color>: R­¬ng b¹n ph¶i cã "..g_NeedRoom.." chç trèng vµ "..g_NeedWeight..". Linh th¹ch vµ phèi ph­¬ng Linh th¹ch sÏ bá vµo Tô Linh ®Ønh. Xin chó ı, cÊp hiÖn t¹i ®iÓm danh väng vµ ®iÓm cèng hiÕn s­ m«n tèi ®a, nÕu më lÔ bao v­ît qu¸ giíi h¹n, cã kh¶ n¨ng hÖ thèng sÏ khÊu trõ. B¹n muèn më kh«ng?",getn(selTab),selTab);
+	Say("<color=red> Chó ı<color>: R­¬ng b¹n ph¶i cã "..g_NeedRoom.." empty slots and"..g_NeedWeight..". Linh th¹ch vµ phèi ph­¬ng Linh th¹ch sÏ bá vµo Tô Linh ®Ønh. Xin chó ı, cÊp hiÖn t¹i ®iÓm danh väng vµ ®iÓm cèng hiÕn s­ m«n tèi ®a, nÕu më lÔ bao v­ît qu¸ giíi h¹n, cã kh¶ n¨ng hÖ thèng sÏ khÊu trõ. B¹n muèn më kh«ng?",getn(selTab),selTab);
 end
 
 function see_item(nItemIdx)
 	local szItems = "1 Xİch ThiÕt Tinh, 2 NhÊt ThiÓm Yªu Hoµng, 50 danh väng, 25 ®iÓm cèng hiÕn s­ m«n (ph¶i gia nhËp m«n ph¸i), 1 Cñ c¶i ®á, 1 Tói b¶o th¹ch, 3 Sinh ®å chøng th­, 3 Tó tµi chøng th­, 3 Cö nh©n chøng th­, 1 MËt thÊt s­ m«n lÖnh, ngÉu nhiªn 1 phèi ph­¬ng linh th¹ch cÊp 6, ngÉu nhiªn 1 Linh th¹ch cÊp 6, ngÉu nhiªn 1 phèi ph­¬ng linh th¹ch cÊp 7, ch×a khãa vµng (r­¬ng) (c¬ héi 1 lÇn) (Nh©n vËt nhËn qua kh«ng ®­îc nhËn l¹i), ngÉu nhiªn 1 Linh th¹ch cÊp 7, 15 Tam DiÖu Long Hi, 1 Vâ l©m b¶o ®iÓn, ngÉu nhiªn 1 B«n Tiªu hoÆc §»ng Vô, 1 Viªm Hoµng ThiÕt Hån";
-	Talk(1,"#OnUse("..nItemIdx..")","Mçi '"..g_ItemName.." cã thÓ më ®­îc c¸c vËt phÈm: "..szItems..". Chóc b¹n may m¾n!");
+	Talk(1,"#OnUse("..nItemIdx..")","Mçi '"..g_ItemName.." cã thÓ më ®­îc c¸c vËt phÈm: "..szItems..". Good luck!");
 end;
 
 function open(nItemIdx)
@@ -43,7 +43,7 @@ function open(nItemIdx)
 			AddItem(2,1,1090,1);
 			Msg2Player("B¹n nhËn ®­îc 1 C¶i ®á");
 			AddItem(2,1,2642,1);
-			Msg2Player("NhËn ®­îc 1 Tói b¶o th¹ch");			
+			Msg2Player("Received 1 Gemstone Bag");			
 			nRand = random(1,100);
 			if nRand <= 60 then
 				AddItem(2,0,597,3);
@@ -67,11 +67,11 @@ function open(nItemIdx)
 			end;
 			add_lingshi(7,1,0.5,50,1);	--Ëæ»ú7¼¶ÁéÊ¯1¿Å,0.5%ÇÒÃ¿¿ª50¸ö°ü±Ø¸ø1¸ö
 			give_item(2,1,3331,15,"15 Tam DiÖu Long Hi",0.2,80,1);	--Å©É£¼­Òª,0.2%ÇÒÃ¿¿ª80¸ö°ü±Ø¸øÒ»¸ö
-			give_item(2,1,3206,1,"1Vâ L©m b¶o ®iÓn",0.1,160,1);--ÎäÁÖ±¦µä1±¾,0.1%ÇÒÃ¿¿ª160¸ö°ü±Ø¸ø1¸ö
+			give_item(2,1,3206,1,"1 Wulin Treasure Manual",0.1,160,1);--ÎäÁÖ±¦µä1±¾,0.1%ÇÒÃ¿¿ª160¸ö°ü±Ø¸ø1¸ö
 			--ÒÔÏÂĞèÒª·¢È«·ş¹«¸æºÍ¹öÆÁ¹«¸æ
 			add_horse(0.2,240);	--±¼Ïü»òÌÚÎíËæ»ú1Æ¥£¬0.2%ÇÒÃ¿¿ª240¸ö°ü±Ø¸ø1¸ö
 			give_item(2,1,1146,1,"1 Viªm Hoµng ThiÕt hån",0.01,2000,2)	--Ñ×»ÆÌú»ê1¸ö,0.01%ÇÒÃ¿¿ª2000¸ö°ü±Ø¸ø 1¸ö
-			WriteLog("["..g_ItemName.."]:"..GetName().."thø"..nCurCount.." më "..g_ItemName);
+			WriteLog("["..g_ItemName.."]:"..GetName().."the"..nCurCount.." to open"..g_ItemName);
 		end;
 	else
 		Talk(1,"","Kho¶ng trèng hoÆcsøc lùccña b¹n kh«ng ®ñ. Xin kiÓm tra l¹i hµnh trang tr­íc!"..g_ItemName.."!");
@@ -81,12 +81,12 @@ end;
 function show_msg(szItemName,bGlobalMsg)
 	Msg2Player("B¹n nhËn ®­îc "..szItemName);
 	if bGlobalMsg == 1 then
-		Msg2Global(get_name().."Më '"..g_ItemName.." nhËn ®­îc "..szItemName);
+		Msg2Global(get_name().."Open '"..g_ItemName.." nhËn ®­îc "..szItemName);
 	elseif bGlobalMsg == 2 then
-		Msg2Global(get_name().."Më '"..g_ItemName.." nhËn ®­îc "..szItemName);
-		AddGlobalNews(get_name().."Më '"..g_ItemName.." nhËn ®­îc "..szItemName);
+		Msg2Global(get_name().."Open '"..g_ItemName.." nhËn ®­îc "..szItemName);
+		AddGlobalNews(get_name().."Open '"..g_ItemName.." nhËn ®­îc "..szItemName);
 	end;
-	WriteLog("["..g_ItemName.."]:"..GetName().."NhËn ®­îc"..szItemName);	
+	WriteLog("["..g_ItemName.."]:"..GetName().."Received"..szItemName);	
 end;
 --¸øÕòÅÉ²ĞÆªµÄº¯Êı
 function give_zpcp(tbZPCP,nCount)
@@ -209,7 +209,7 @@ function add_horse(nP,nModCount)
 			AddItem(0,105,16,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,2)
 		else
-			szItemName = "1 §»ng Vô";
+			szItemName = "1 Deng Wu";
 			AddItem(0,105,20,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,2)
 		end;
@@ -221,7 +221,7 @@ function add_horse(nP,nModCount)
 			AddItem(0,105,16,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,2)
 		else
-			szItemName = "1 §»ng Vô";
+			szItemName = "1 Deng Wu";
 			AddItem(0,105,20,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,2)
 		end;	

@@ -13,13 +13,13 @@ function main()
 	local sXiongDi = "";
 	if tonumber(nMapId) == tGongyeNpc[1][1] then
 		sNowNpc=tNpcName[1];
-		sXiongDi=tNpcName[2].." vµ"..tNpcName[3];
+		sXiongDi=tNpcName[2].." and"..tNpcName[3];
 	elseif tonumber(nMapId) == tGongyeNpc[2][1] then
 		sNowNpc=tNpcName[2];
-		sXiongDi=tNpcName[1].." vµ"..tNpcName[3];
+		sXiongDi=tNpcName[1].." and"..tNpcName[3];
 	elseif tonumber(nMapId) == tGongyeNpc[3][1] then
 		sNowNpc=tNpcName[3];
-		sXiongDi=tNpcName[1].." vµ"..tNpcName[2];		
+		sXiongDi=tNpcName[1].." and"..tNpcName[2];		
 	end
 	if BigGetItemCount(2,0,1022) < 1 and Zgc_pub_goods_add_chk(1,1) == 1 then
 		AddItem(2,0,1022,1,1);
@@ -31,13 +31,13 @@ function main()
 --		"Ta muèn hîp thµnh Linh Th¹ch/hecheng_lingshi",
 --		"NhËn ®­îc Nguyªn Th¹ch, Linh Th¹ch vµ Linh Th¹ch phèi ph­¬ng/ziyuanhuode",
 --		"ThuyÕt minh hîp thµnh bé B¸t Qu¸i/detail_bagua",
-		"L·nh 'b¶o ®iÓn B¸t Qu¸i'/bagua_baodian"
+		"Receive the 'Eight Trigrams Treasure Codex'/bagua_baodian"
 		}
 	--if GetTask(TASK_LINGSHI_ID) == 1 or GetTask(TASK_LINGSHI_ID) == 4 or GetTask(TASK_LINGSHI_ID) == 5 or GetTask(TASK_LINGSHI_ID) == 7 then
 		--tinsert(strtab,"TiÕp tôc nhiÖm vô häc tËp Linh Th¹ch B¸t Qu¸i/new_task");
 	--end
 		tinsert(strtab,"Kh«ng cÇn ®©u/nothing");
-	Say("<color=green>"..sNowNpc.."<color>: chÝnh lµ ta "..sNowNpc.."Ta cßn cã hai huynh ®Ö, "..sXiongDi..", lµ truyÒn nh©n cña C«ng trÞ thÕ gia, ta vµ l·o L­u ë T­¬ng D­¬ng ®· nghiªn cøu chÕ t¹o thµnh c«ng Linh Th¹ch truyÒn thuyÕt vµ bé trang bÞ B¸t Qu¸i thÇn kú. Ngoµi ra cßn chÕ ra chøc n¨ng <color=red>B¸t Qu¸i lÊy Linh Th¹ch<color>. Kh«ng tin , h·y nhÊn chän <color=green>LÊy Linh Th¹ch<color> xem thö tin tøc!",
+	Say("<color=green>"..sNowNpc.."<color>: It is I"..sNowNpc.."Ta cßn cã hai huynh ®Ö, "..sXiongDi..", lµ truyÒn nh©n cña C«ng trÞ thÕ gia, ta vµ l·o L­u ë T­¬ng D­¬ng ®· nghiªn cøu chÕ t¹o thµnh c«ng Linh Th¹ch truyÒn thuyÕt vµ bé trang bÞ B¸t Qu¸i thÇn kú. Ngoµi ra cßn chÕ ra chøc n¨ng <color=red>B¸t Qu¸i lÊy Linh Th¹ch<color>. Kh«ng tin , h·y nhÊn chän <color=green>LÊy Linh Th¹ch<color> xem thö tin tøc!",
 		getn(strtab),
 		strtab)
 end
@@ -54,18 +54,18 @@ function chongzu_bagua()
 	local sXiongDi = "";
 	if tonumber(nMapId) == tGongyeNpc[1][1] then
 		sNowNpc=tNpcName[1];
-		sXiongDi=tNpcName[2].." vµ"..tNpcName[3];
+		sXiongDi=tNpcName[2].." and"..tNpcName[3];
 	elseif tonumber(nMapId) == tGongyeNpc[2][1] then
 		sNowNpc=tNpcName[2];
-		sXiongDi=tNpcName[1].." vµ"..tNpcName[3];
+		sXiongDi=tNpcName[1].." and"..tNpcName[3];
 	elseif tonumber(nMapId) == tGongyeNpc[3][1] then
 		sNowNpc=tNpcName[3];
-		sXiongDi=tNpcName[1].." vµ"..tNpcName[2];		
+		sXiongDi=tNpcName[1].." and"..tNpcName[2];		
 	end
 	Say("<color=green>"..sNowNpc.."<color>: Xin chó ý! cÇn ph¶i n¹p vµo <color=red> 10000 l­îng gi¸ trÞ <color> míi cã thÓ ®¶m b¶o khi t¸ch ra trang bÞ cña b¹n kh«ng biÕn mÊt.",
 		2,
-		"Më giao diÖn ®óc/dasan_bagua_item",
-		"Kh«ng cã g×/nothing")
+		"Open the forging interface/dasan_bagua_item",
+		"Nothing/nothing")
 end
 
 function dasan_bagua_item()
@@ -78,17 +78,17 @@ function chouqu_lingshi()
 	local sXiongDi = "";
 	if tonumber(nMapId) == tGongyeNpc[1][1] then
 		sNowNpc=tNpcName[1];
-		sXiongDi=tNpcName[2].." vµ"..tNpcName[3];
+		sXiongDi=tNpcName[2].." and"..tNpcName[3];
 	elseif tonumber(nMapId) == tGongyeNpc[2][1] then
 		sNowNpc=tNpcName[2];
-		sXiongDi=tNpcName[1].." vµ"..tNpcName[3];
+		sXiongDi=tNpcName[1].." and"..tNpcName[3];
 	elseif tonumber(nMapId) == tGongyeNpc[3][1] then
 		sNowNpc=tNpcName[3];
-		sXiongDi=tNpcName[1].." vµ"..tNpcName[2];		
+		sXiongDi=tNpcName[1].." and"..tNpcName[2];		
 	end
 	--TransformAttr(); --³éÈ¡ÁéÊ¯
 	Say("<color=green>"..sNowNpc.."<color>: Trang bÞ B¸t Qu¸i còng cã thÓ lÊy ®­îc Linh Th¹ch. B»ng h÷u cã muèn t×m hiÓu huyÒn c¬ nµy kh«ng?",2,
-	"Muèn chø!/how_chouqu",
+	"Of course I do!/how_chouqu",
 	"Khái ®i! Ta hiÓu råi/chouqu_lingstone")
 end
 
@@ -98,13 +98,13 @@ function how_chouqu()
 	local sXiongDi = "";
 	if tonumber(nMapId) == tGongyeNpc[1][1] then
 		sNowNpc=tNpcName[1];
-		sXiongDi=tNpcName[2].." vµ"..tNpcName[3];
+		sXiongDi=tNpcName[2].." and"..tNpcName[3];
 	elseif tonumber(nMapId) == tGongyeNpc[2][1] then
 		sNowNpc=tNpcName[2];
-		sXiongDi=tNpcName[1].." vµ"..tNpcName[3];
+		sXiongDi=tNpcName[1].." and"..tNpcName[3];
 	elseif tonumber(nMapId) == tGongyeNpc[3][1] then
 		sNowNpc=tNpcName[3];
-		sXiongDi=tNpcName[1].." vµ"..tNpcName[2];		
+		sXiongDi=tNpcName[1].." and"..tNpcName[2];		
 	end
 	Talk(1,"chouqu_lingstone","<color=green>"..sNowNpc.."<color>: ChØ cÇn <color=red>trang bÞ ®· kh¶m qua Linh Th¹ch<color> lµ cã thÓ lÊy ®­îc Linh Th¹ch ra, Trang bÞ B¸t Qu¸i th× kh«ng thÓ! ChØ cÇn dïng <color=green>Thiªn C¬ toµn<color> lµ cã thÓ lÊy, nh­ng chÝ lÊy ®­îc <color=red>1 Linh Th¹ch<color> ra. LÊy ra xong <color=green>trang bÞ sÏ mÊt<color>. Linh Th¹ch nÕu bÞ lÊy ra nhiÒu lÇn cã thÓ biÕn tÝnh, <color=red>trÞ Linh khÝ cã thÓ thay ®æi<color> nh­ng <color=green>Thuéc tÝnh ¢m d­¬ng<color> th× vÉn gi÷ nguyªn. Thiªn C¬ toµn cã thÓ xem ë <color=yellow>Ngù C¸c<color>!")
 end
@@ -123,13 +123,13 @@ function ziyuanhuode()
 	local sXiongDi = "";
 	if tonumber(nMapId) == tGongyeNpc[1][1] then
 		sNowNpc=tNpcName[1];
-		sXiongDi=tNpcName[2].." vµ"..tNpcName[3];
+		sXiongDi=tNpcName[2].." and"..tNpcName[3];
 	elseif tonumber(nMapId) == tGongyeNpc[2][1] then
 		sNowNpc=tNpcName[2];
-		sXiongDi=tNpcName[1].." vµ"..tNpcName[3];
+		sXiongDi=tNpcName[1].." and"..tNpcName[3];
 	elseif tonumber(nMapId) == tGongyeNpc[3][1] then
 		sNowNpc=tNpcName[3];
-		sXiongDi=tNpcName[1].." vµ"..tNpcName[2];		
+		sXiongDi=tNpcName[1].." and"..tNpcName[2];		
 	end
 	Say("<color=green>"..sNowNpc.."<color>: Xin h·y xem kü c¸c ph­¬ng ph¸p cã ®­îc nh÷ng vËt phÈm liªn quan Linh Th¹ch!",
 	5,
@@ -137,7 +137,7 @@ function ziyuanhuode()
 	"NhËn ®­îc Linh Th¹ch/lingshihuode",
 	"Hîp thµnh Linh Th¹ch/hechenglingshi",
 	"BiÕt ®­îc c¸ch phèi hîp Linh Th¹ch /lingshipeifanghuode",
-	"§Õn hái th¨m th«i mµ!/SayHello"
+	"Just dropping by to say hello!/SayHello"
 	)
 end
 
@@ -147,13 +147,13 @@ function yuanshihuode()
 	local sXiongDi = "";
 	if tonumber(nMapId) == tGongyeNpc[1][1] then
 		sNowNpc=tNpcName[1];
-		sXiongDi=tNpcName[2].." vµ"..tNpcName[3];
+		sXiongDi=tNpcName[2].." and"..tNpcName[3];
 	elseif tonumber(nMapId) == tGongyeNpc[2][1] then
 		sNowNpc=tNpcName[2];
-		sXiongDi=tNpcName[1].." vµ"..tNpcName[3];
+		sXiongDi=tNpcName[1].." and"..tNpcName[3];
 	elseif tonumber(nMapId) == tGongyeNpc[3][1] then
 		sNowNpc=tNpcName[3];
-		sXiongDi=tNpcName[1].." vµ"..tNpcName[2];		
+		sXiongDi=tNpcName[1].." and"..tNpcName[2];		
 	end
 	Talk(1,"","<color=green>"..sNowNpc.."<color>: Cã thÓ ®Õn <color=red>Chñ tiÖm T¹p hãa<color> ®Ó mua <color=red>Nguyªn Th¹ch<color>. CÇn chó ý, Nguyªn Th¹ch kh¸c nhau cã vÞ trÝ thuéc tÝnh Linh khÝ t­¬ng øng kh¸c nhau, Nguyªn Th¹ch kh«ng cïng ®¼ng cÊp lÊy ®­îc thuéc tÝnh tèi cao kh¸c nhau, nªn xem tr­íc thuyÕt minh cã liªn quan ®Õn Nguyªn Th¹ch råi h·y rót.")
 end
@@ -164,13 +164,13 @@ function lingshihuode()
 	local sXiongDi = "";
 	if tonumber(nMapId) == tGongyeNpc[1][1] then
 		sNowNpc=tNpcName[1];
-		sXiongDi=tNpcName[2].." vµ"..tNpcName[3];
+		sXiongDi=tNpcName[2].." and"..tNpcName[3];
 	elseif tonumber(nMapId) == tGongyeNpc[2][1] then
 		sNowNpc=tNpcName[2];
-		sXiongDi=tNpcName[1].." vµ"..tNpcName[3];
+		sXiongDi=tNpcName[1].." and"..tNpcName[3];
 	elseif tonumber(nMapId) == tGongyeNpc[3][1] then
 		sNowNpc=tNpcName[3];
-		sXiongDi=tNpcName[1].." vµ"..tNpcName[2];		
+		sXiongDi=tNpcName[1].." and"..tNpcName[2];		
 	end
 	Talk(1,"","<color=green>"..sNowNpc.."<color>Ngoµi dïng Nguyªn Th¹ch ®Ó rót Linh khÝ trang bÞ ra, nghe nãi hai n­íc Tèng Liªu ®Ó cæ vò t­íng sü, phµm ai tham gia <color=red>chiÕn tr­êng Nh¹n M«n quan<color> ®Òu ®­îc th­ëng <color=red>Linh Th¹ch<color>, nh­ng muèn cã ®­îc Linh Th¹ch ph¶i xem xÐt c«ng tr¹ng vµ biÓu hiÖn cña hä. TruyÒn r»ng bän s¸t thñ rÊt høng thó víi Linh Th¹ch, c¸c anh hïng khi gÆp bän <color=red>s¸t thñ<color> cÇn l­u t©m xem chóng cã mang theo Linh Th¹ch nµy kh«ng.")
 end
@@ -181,13 +181,13 @@ function hechenglingshi()
 	local sXiongDi = "";
 	if tonumber(nMapId) == tGongyeNpc[1][1] then
 		sNowNpc=tNpcName[1];
-		sXiongDi=tNpcName[2].." vµ"..tNpcName[3];
+		sXiongDi=tNpcName[2].." and"..tNpcName[3];
 	elseif tonumber(nMapId) == tGongyeNpc[2][1] then
 		sNowNpc=tNpcName[2];
-		sXiongDi=tNpcName[1].." vµ"..tNpcName[3];
+		sXiongDi=tNpcName[1].." and"..tNpcName[3];
 	elseif tonumber(nMapId) == tGongyeNpc[3][1] then
 		sNowNpc=tNpcName[3];
-		sXiongDi=tNpcName[1].." vµ"..tNpcName[2];		
+		sXiongDi=tNpcName[1].." and"..tNpcName[2];		
 	end
 	Talk(1,"","<color=green>"..sNowNpc.."<color>: Linh Th¹ch nµy thÕ gian rÊt hiÕm thÊy. C¸c vÞ tiÒn nh©n ®· v« cïng khæ cùc nghiªn cøu ra <color=red>Linh Th¹ch phèi ph­¬ng<color>, chØ cÇn <color=red>Linh Th¹ch phèi ph­¬ng<color> vµ <color=red>Linh Th¹ch<color> cïng ®Æt trªn cét hîp thµnh Linh Th¹ch ®Ó t¹o ra <color=red>Linh Th¹ch theo phèi ph­¬ng<color>. Kh«ng thªm phèi ph­¬ng, tïy ý kÕp hîp Linh Th¹ch tuy cã thÓ hîp thµnh, nh­ng thµnh c«ng hay kh«ng cßn do Trêi ®Þnh.")
 end
@@ -198,13 +198,13 @@ function lingshipeifanghuode()
 	local sXiongDi = "";
 	if tonumber(nMapId) == tGongyeNpc[1][1] then
 		sNowNpc=tNpcName[1];
-		sXiongDi=tNpcName[2].." vµ"..tNpcName[3];
+		sXiongDi=tNpcName[2].." and"..tNpcName[3];
 	elseif tonumber(nMapId) == tGongyeNpc[2][1] then
 		sNowNpc=tNpcName[2];
-		sXiongDi=tNpcName[1].." vµ"..tNpcName[3];
+		sXiongDi=tNpcName[1].." and"..tNpcName[3];
 	elseif tonumber(nMapId) == tGongyeNpc[3][1] then
 		sNowNpc=tNpcName[3];
-		sXiongDi=tNpcName[1].." vµ"..tNpcName[2];		
+		sXiongDi=tNpcName[1].." and"..tNpcName[2];		
 	end
 	Talk(1,"","<color=green>"..sNowNpc.."<color>: Linh Th¹ch phèi ph­¬ng tõ Th­îng cæ l­u truyÒn ®Õn nay kh«ng nhiÒu...Ng­¬i cèng hiÕn cho m«n ph¸i, hoµn thµnh <color=red>nhiÖm vô s­ m«n<color> mçi ngµy, tin r»ng ch­ëng m«n sÏ hiÓu ®­îc sù nç lùc cña ng­¬i. C¸c s¸t thñ cao cÊp trong <color=red>S¸t thñ ®­êng<color> ®Òu cã mang theo phèi ph­¬ng, nh­ng cã lÊy ®­îc hay kh«ng cßn ph¶i xem vËn khÝ cña ng­¬i n÷a!")
 end
@@ -388,12 +388,12 @@ function new_task()
 		Say("<color=green>"..sNowNpc.."<color>: ChØ cã Linh Th¹ch th× kh«ng ®­îc, Linh Th¹ch nµy chØ cã kh¶m trªn trang bÞ míi ph¸t huy t¸c dông, trang bÞ Phæ th«ng kh«ng thÓ kh¶m Linh Th¹ch, chØ cã truyÒn tù M¹c §¹i, M¹c NhÞ, M¹c Tam, CÈm Lang, linh khÝ cña Tö Quyªn c« n­¬ng vµ Minh s­ phô míi cã thÓ kh¶m Linh Th¹ch, ng­¬i h·y ®i hái mét trong sè 6 ng­êi hä xem",
 			3,
 			"Ta ®i t×m s¸u ng­êi hä ®©y!/#goto_zhizao_npc(1)",
-			"R¶nh rçi ta sÏ ®i t×m hä sau!/#goto_zhizao_npc(2)",
+			"When I'm free I'll go find them later!/#goto_zhizao_npc(2)",
 			"§­îc råi, ta ®· hiÓu!/confirm_cancel");	
 	elseif GetTask(TASK_LINGSHI_ID) == 4 then
 		Say("<color=green>"..sNowNpc.."<color>: kh«ng ngê ng­¬i ®· ®i ®­îc tíi ®©y råi, sau khi ng­¬i më giao diÖn kÝch ho¹t, nhÊp v« hiÖu qu¶ bé B¸t Qu¸i cÇn kÝch ho¹t, c¨n cø theo b¸t vÞ ®· chØ dÉn mµ s¾p ®Æt lªn trang bÞ B¸t Qu¸i t­¬ng øng. L·o ThÇn Du ®­a ng­¬i 4 trang bÞ B¸t Qu¸i nµy Ýt nhiÒu cã thÓ kÝch ho¹t bé TiÒm Long, tuy bé nµy ®· l©u kh«ng söa ch÷a, hiÖu qu¶ kÝch ho¹t rÊt kÐm, nh­ng ng­¬i cø thö xem. Sau ®ã h·y ®Õn t×m ta.",
 			1,
-			"§­îc, ®Ó ta thö xem!/try_try");
+			"Alright, let me give it a try!/try_try");
 	elseif GetTask(TASK_LINGSHI_ID) == 5 then
 		if GetLevel() < 75 then 
 			Talk(1,"","<color=green>"..sNowNpc.."<color>: Thö xong ch­a? §­îc ®ã, cã tiÒn ®å, giê ®· hiÓu hÖ thèng Linh Th¹ch vµ B¸t Qu¸i, nh­ng muèn hiÓu râ h¬n, cÇn xem mËt truyÒn cña 'B¸t Qu¸i b¶o ®iÓn'. Ta vèn ®Þnh cho ng­¬i mét sè ph­¬ng ph¸p phèi hîp Linh Th¹ch, nh­ng ®¼ng cÊp ng­¬i thÊp qu¸ lµm sao dïng ®­îc! §Õn <color=yellow>cÊp 75<color> h·y ®Õn t×m ta.");

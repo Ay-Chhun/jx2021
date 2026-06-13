@@ -35,7 +35,7 @@ function task_000_00()
 local strMain = {
 	"Ta vèn ng­êi D­¬ng Ch©u, gÇn ®©y nhËp mét chuyÕn {hµng b»ng ngäc} muèn chuyÓn ®Õn TuyÒn Ch©u. Kh«ng ngê bŞ ®¸m {L­u manh} c­íp mÊt. Ng­¬i gióp ta t×m 20 mãn Ngäc khİ ®­îc kh«ng?",
 	"TiÕp nhËn nhiÖm vô/task_000_01",
-	"Rêi khái/Task_Exit"
+	"Leave/Task_Exit"
 }
 
 SelectSay(strMain);
@@ -53,9 +53,9 @@ end;
 function task_001_00()
 
 local strMain = {
-	"B»ng h÷u ®Õn ®©y cã chuyÖn g×?",
+	"Friend, what business brings you here?",
 	"Dïng Ngäc khİ ®æi thï lao/task_001_01",
-	"KÕt thóc ®èi tho¹i/task_001_03"
+	"End the dialogue/task_001_03"
 }
 
 SelectSay(strMain);
@@ -141,7 +141,7 @@ function task_004_00()
     
     local strMain = {
         "§a t¹ <sex> ®· gióp ®ì!",
-        "Kh«ng cã chi."
+        "Don't mention it."
     }
     TalkEx("",strMain);
 end;

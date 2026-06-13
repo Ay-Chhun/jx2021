@@ -106,7 +106,7 @@ function BuyVET_70_GAOJIMIJI()
 		return
 	end
 	if gf_Judge_Room_Weight(1, 10, " ") == 0 then
-		Talk(1,"","Hµnh trang khång ®ñ « trèng hoÆc ®é nÆng")
+		Talk(1,"","Your inventory does not have enough empty slots or carrying capacity")
 		return
 	end
 	if GetItemCount(2,0,554) < 5 then
@@ -143,7 +143,7 @@ function BuyVET_70_GAOJIMIJI_New()
 --		return
 --	end
 	if gf_Judge_Room_Weight(1, 10, " ") == 0 then
-		Talk(1,"","Hµnh trang khång ®ñ « trèng hoÆc ®é nÆng")
+		Talk(1,"","Your inventory does not have enough empty slots or carrying capacity")
 		return
 	end
 --	if GetItemCount(2,0,554) < 5 then
@@ -165,17 +165,17 @@ function BuyVET_70_GAOJIMIJI_byFaction()
 	local nSaySize = 0;
 	local szSayHead = "H·y chän mËt tÞch cÇn ®æi."
 	
-	tinsert(tbSayDialog, "- Kim Cang B¸t Nh· Ch©n QuyÓn/#confirm_BuyVET_70_GAOJIMIJI_byFaction(1)")
-	tinsert(tbSayDialog, "- TiÒm Long Tóc DiÖt Ch©n QuyÓn/#confirm_BuyVET_70_GAOJIMIJI_byFaction(2)")
-	tinsert(tbSayDialog, "- V« TrÇn Bå §Ò Ch©n QuyÓn/#confirm_BuyVET_70_GAOJIMIJI_byFaction(3)")
+	tinsert(tbSayDialog, "- Vajra Prajna True Fist/#confirm_BuyVET_70_GAOJIMIJI_byFaction(1)")
+	tinsert(tbSayDialog, "- Hidden Dragon Annihilation True Fist/#confirm_BuyVET_70_GAOJIMIJI_byFaction(2)")
+	tinsert(tbSayDialog, "- Dustless Bodhi True Fist/#confirm_BuyVET_70_GAOJIMIJI_byFaction(3)")
 	tinsert(tbSayDialog, "- Thiªn La Liªn Ch©u Ch©n QuyÓn/#confirm_BuyVET_70_GAOJIMIJI_byFaction(4)")
-	tinsert(tbSayDialog, "- Nh­ ý Kim §Ønh Ch©n QuyÓn/#confirm_BuyVET_70_GAOJIMIJI_byFaction(5)")
-	tinsert(tbSayDialog, "- BÝch H¶i TuyÖt ¢m Ch©n QuyÓn/#confirm_BuyVET_70_GAOJIMIJI_byFaction(6)")
-	tinsert(tbSayDialog, "- Hçn §én TrÊn Nh¹c Ch©n QuyÓn/#confirm_BuyVET_70_GAOJIMIJI_byFaction(7)")
+	tinsert(tbSayDialog, "- Wishful Golden Summit True Fist/#confirm_BuyVET_70_GAOJIMIJI_byFaction(5)")
+	tinsert(tbSayDialog, "- Azure Sea Frost Sound True Fist/#confirm_BuyVET_70_GAOJIMIJI_byFaction(6)")
+	tinsert(tbSayDialog, "- Chaos Mountain Suppression True Fist/#confirm_BuyVET_70_GAOJIMIJI_byFaction(7)")
 	tinsert(tbSayDialog, "- Quú Thiªn Du Long Ch©n QuyÓn/#confirm_BuyVET_70_GAOJIMIJI_byFaction(8)")
 	tinsert(tbSayDialog, "- HuyÒn ¶nh Mª T«ng Ch©n QuyÓn/#confirm_BuyVET_70_GAOJIMIJI_byFaction(9)")
-	tinsert(tbSayDialog, "- Qu©n Tö §íi Phong Ch©n QuyÓn/#confirm_BuyVET_70_GAOJIMIJI_byFaction(10)")
-	tinsert(tbSayDialog, "- TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn/#confirm_BuyVET_70_GAOJIMIJI_byFaction(11)")
+	tinsert(tbSayDialog, "- Gentleman's Wind-Riding True Fist/#confirm_BuyVET_70_GAOJIMIJI_byFaction(10)")
+	tinsert(tbSayDialog, "- Town-Quelling Flying Dragon Spear True Fist/#confirm_BuyVET_70_GAOJIMIJI_byFaction(11)")
 	tinsert(tbSayDialog, "- Xuyªn V©n L¹c Hång Ch©n QuyÓn/#confirm_BuyVET_70_GAOJIMIJI_byFaction(12)")
 	tinsert(tbSayDialog, "- HuyÒn Minh Phong Ma Ch©n QuyÓn/#confirm_BuyVET_70_GAOJIMIJI_byFaction(13)")
 	tinsert(tbSayDialog, "- Linh Cæ HuyÒn Tµ Ch©n QuyÓn/#confirm_BuyVET_70_GAOJIMIJI_byFaction(14)")
@@ -246,22 +246,22 @@ end
 function MatTichSoCap_Mua_Page1()
 	local tbMatTich = {
 		{"Tr­êng QuyÒn Phæ", 1, 10},
-		{"T­îng H×nh Phæ", 2, 20},
-		{"Trung B×nh Phæ", 3, 20},
-		{"Khai S¬n Phæ", 4, 20},
-		{"KhÝ LiÖu ThuËt", 5, 50},
-		{"To¸i DiÖp Phæ", 6, 50},
+		{"Pictograph Manual", 2, 20},
+		{"Balanced Manual", 3, 20},
+		{"Mountain-Opening Manual", 4, 20},
+		{"Weapon Forging Technique", 5, 50},
+		{"Suiye Manual", 6, 50},
 		{"Tô NguyÖn C«ng Phæ", 7, 30},
 		{"HuyÒn Th¹ch C«ng Phæ", 8, 30},
-		{"Kim ThiÒn Phæ", 9, 120},
+		{"Golden Cicada Manual", 9, 120},
 		{"Tu La MËt tÞch", 10, 50},
 	}
 
-	local tbBuyOption = {"Xem tiÕp/MatTichSoCap_Mua_Page2"}
+	local tbBuyOption = {"View next/MatTichSoCap_Mua_Page2"}
 	tinsert(tbBuyOption,2, "T¹i sÏ quay l¹i sau/do_nothing")
 	
 	for i=getn(tbMatTich),1,-1 do
-		tinsert(tbBuyOption,1,tbMatTich[i][1].." ("..tbMatTich[i][3].." vµng)/#MatTichSoCap_MuaBuoc2("..tbMatTich[i][2]..")")
+		tinsert(tbBuyOption,1,tbMatTich[i][1].." ("..tbMatTich[i][3].." gold)/#MatTichSoCap_MuaBuoc2("..tbMatTich[i][2]..")")
 	end
 	
 	Say("Ta cã mét sè mËt tÞch, ng­¬i xem cã cÇn quyÓn nµo kh«ng?", getn(tbBuyOption), unpack(tbBuyOption))
@@ -274,17 +274,17 @@ function MatTichSoCap_Mua_Page2()
 		{"Ngò Quû MËt tÞch", 13, 50},
 		{"Thiªn Hµ MËt tÞch", 14, 120},
 		{"Tö Hµ MËt tÞch", 15, 120},
-		{"Chiªm Y Phæ", 16, 150},
-		{"Tø Linh ChiÕn ý Phæ", 17, 150},
+		{"Zhanyi Manual", 16, 150},
+		{"Four Spirits Battle Intent Manual", 17, 150},
 		{"Tø Linh Thiªn ý Phæ", 18, 150},
-		{"Tø Linh Tö ý Phæ", 19, 150}
+		{"Four Spirits Earth Intent Manual", 19, 150}
 	}
 
 	local tbBuyOption = {"Quay l¹i/MatTichSoCap_Mua_Page1"}
 	tinsert(tbBuyOption,2, "T¹i sÏ quay l¹i sau/do_nothing")
 	
 	for i=getn(tbMatTich),1,-1 do
-		tinsert(tbBuyOption,1,tbMatTich[i][1].." ("..tbMatTich[i][3].." vµng)/#MatTichSoCap_MuaBuoc2("..tbMatTich[i][2]..")")
+		tinsert(tbBuyOption,1,tbMatTich[i][1].." ("..tbMatTich[i][3].." gold)/#MatTichSoCap_MuaBuoc2("..tbMatTich[i][2]..")")
 	end
 	Say("Ta cã mét sè mËt tÞch, ng­¬i xem cã cÇn quyÓn nµo kh«ng?", getn(tbBuyOption), unpack(tbBuyOption))
 end
@@ -297,24 +297,24 @@ function MatTichSoCap_MuaBuoc2(nIdx)
 	
 	local tbMatTich = {
 		[1] = {"Tr­êng QuyÒn Phæ", 0, 107, 51, 10},
-		[2] = {"T­îng H×nh Phæ", 0, 107, 52, 20},
-		[3] = {"Trung B×nh Phæ", 0, 107, 53, 20},
-		[4] = {"Khai S¬n Phæ", 0, 107, 54, 20},
-		[5] = {"KhÝ LiÖu ThuËt", 0, 107, 55, 50},
-		[6] = {"To¸i DiÖp Phæ", 0, 107, 56, 50},
+		[2] = {"Pictograph Manual", 0, 107, 52, 20},
+		[3] = {"Balanced Manual", 0, 107, 53, 20},
+		[4] = {"Mountain-Opening Manual", 0, 107, 54, 20},
+		[5] = {"Weapon Forging Technique", 0, 107, 55, 50},
+		[6] = {"Suiye Manual", 0, 107, 56, 50},
 		[7] = {"Tô NguyÖn C«ng Phæ", 0, 107, 57, 30},
 		[8] = {"HuyÒn Th¹ch C«ng Phæ", 0, 107, 58, 30},
-		[9] = {"Kim ThiÒn Phæ", 0, 107, 59, 120},
+		[9] = {"Golden Cicada Manual", 0, 107, 59, 120},
 		[10] = {"Tu La MËt tÞch", 0, 107, 60, 50},
 		[11] = {"Bæ Kim MËt tÞch", 0, 107, 61, 100},
 		[12] = {"Bæ Th¹ch MËt tÞch", 0, 107, 62, 100},
 		[13] = {"Ngò Quû MËt tÞch", 0, 107, 63, 50},
 		[14] = {"Thiªn Hµ MËt tÞch", 0, 107, 64, 120},
 		[15] = {"Tö Hµ MËt tÞch", 0, 107, 65, 120},
-		[16] = {"Chiªm Y Phæ", 0, 107, 66, 150},
-		[17] = {"Tø Linh ChiÕn ý Phæ", 0, 107, 159, 150},
+		[16] = {"Zhanyi Manual", 0, 107, 66, 150},
+		[17] = {"Four Spirits Battle Intent Manual", 0, 107, 159, 150},
 		[18] = {"Tø Linh Thiªn ý Phæ", 0, 107, 160, 150},
-		[19] = {"Tø Linh Tö ý Phæ", 0, 107, 161, 150}
+		[19] = {"Four Spirits Earth Intent Manual", 0, 107, 161, 150}
 	}
 	
 	if GetCash()<tbMatTich[nIdx][5]*10000 then
@@ -346,7 +346,7 @@ function MatTichPhu_Fast()
 	local nHour1 = floor(nLeftTime1 / 60)
 	if nHour < 120 or nHour1 < 120 then
 		Talk(1,"","§¹i nh©n s©m cßn "..nHour.." giê vµ TiÓu nh©n s©m cßn "..nHour1.." giê, mçi lo¹i ph¶i ®ñ 120 giê míi cã thÓ luyÖn nhanh mËt tÞch ®­îc !!!.");
-		Msg2Player("§¹i nh©n s©m cßn: "..nHour.." giê, TiÓu nh©n s©m cßn: "..nHour1.." giê")
+		Msg2Player("§¹i nh©n s©m cßn: "..nHour.." giê, TiÓu nh©n s©m cßn: "..nHour1.." hours")
 		return 0
 	end
 	if GetPlayerEquipIndex(9) == 0 then
@@ -387,7 +387,7 @@ function confirm_mtc(nType)
 	local nHour1 = floor(nLeftTime1 / 60)
 	if nHour < tCheckNhanSam[nType][1] or nHour1 < tCheckNhanSam[nType][1] then
 		Talk(1,"","§¹i nh©n s©m cßn "..nHour.." giê vµ TiÓu nh©n s©m cßn "..nHour1.." giê, mçi lo¹i ph¶i ®ñ " ..tCheckNhanSam[nType][1].. " giê míi cã thÓ luyÖn nhanh mËt tÞch ®­îc !!!.");
-		Msg2Player("§¹i nh©n s©m cßn: "..nHour.." giê, TiÓu nh©n s©m cßn: "..nHour1.." giê")
+		Msg2Player("§¹i nh©n s©m cßn: "..nHour.." giê, TiÓu nh©n s©m cßn: "..nHour1.." hours")
 		return 0
 	end	
 	if GetItemCount(2,0,554) < 10 then

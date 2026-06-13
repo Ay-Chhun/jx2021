@@ -53,7 +53,7 @@ function OnUse(nItemIdx)
 	else
 -----¼ì²é½ñÌìÖÖµÄÊ÷ÊÇ·ñÒÑ¾­µ½ÔÊÐíµÄ×î´óÊýÁ¿--------------------------------------
 		if GetTask(TASK_PLANT_TREE_COUNT) >= PLANT_TREE_LIMIT then
-			Talk(1, "", "H«m nay b¹n ®· trång <color=yellow>".. GetTask(TASK_PLANT_TREE_COUNT) .."<color> c©y råi, ®îi ngay mai h·y tiÕp tôc nhÐ.");
+			Talk(1, "", "Today you have planted <color=yellow>".. GetTask(TASK_PLANT_TREE_COUNT) .."<color> c©y råi, ®îi ngay mai h·y tiÕp tôc nhÐ.");
 			return 0;
 		end
 -----¼ì²éÊÇ·ñÒÑ¾­ÖÖÏÂÒ»¿ÃÊ÷ÁË----------------------------------------------------
@@ -128,7 +128,7 @@ function plantTree(nItemIdx)
 			nMin = nMin + TREE_TYPE[i][3]
 		end
 		
-		local npcTreeIndex = CreateNpc(TREE_TYPE[nTreeType][1], GetName().." trång "..TREE_TYPE[nTreeType][2], nMapID, nMapX, nMapY);
+		local npcTreeIndex = CreateNpc(TREE_TYPE[nTreeType][1], GetName().." plant"..TREE_TYPE[nTreeType][2], nMapID, nMapX, nMapY);
 
 		KichHoatHatGiong() -- phÇn thuëng khi kÝch ho¹t
 		--- §iÓm VËn May
@@ -142,18 +142,18 @@ function plantTree(nItemIdx)
 --			Msg2Player("B¹n bÞ tæn thÊt ".. nExpVM.." ®iÓm kinh nghiÖm do kh«ng may m¾n. H·y ®i gi¶i vËn xui ë ThÇy Bãi Siªu H¹ng!")
 --		end
 		---------			
-		WriteLogEx("Hoat dong trong cay","Trång",1,TREE_TYPE[nTreeType][4])
+		WriteLogEx("Hoat dong trong cay","Plant",1,TREE_TYPE[nTreeType][4])
 		if npcTreeIndex == 0 then
 			WriteLog("[Hoat dong trong cay loi]:"
 								..GetName..
 								"Trong lóc trång c©y, CreatNpc hµm sè trë vÒ 0. NhËp tham sè CreateNPC lµ:"
-								 ..TREE_TYPE[nTreeType][1]..", " ..GetName().. " trång "
+								 ..TREE_TYPE[nTreeType][1]..", " ..GetName().. " plant"
 								  ..TREE_TYPE[nTreeType][2].. ", " ..nMapID.. "," ..nMapX.. "," ..nMapY);
 		end
 
 -----Èç¹û»ñµÃ°×½ðÊ÷£¬ÔòÏòÈ«ÊÀ½ç·¢¹«¸æ
 		if nTreeType == 5 then
-			AddGlobalNews("Chóc mõng  "..GetName().." §· nhËn ®­îc." .. "C©y B¹ch Kim" .. " T¹i ".. CITY_NAME_ID[GetWorldPos()]);
+			AddGlobalNews("Congratulations"..GetName().." §· nhËn ®­îc." .. "C©y B¹ch Kim" .. " At".. CITY_NAME_ID[GetWorldPos()]);
 		end
 		
 -----ÉèÖÃÊ÷µÄ´æ»îÊ±¼ä----------------------------------------------------------------------------		
@@ -172,7 +172,7 @@ function plantTree(nItemIdx)
 		SetTask(TASK_PLANT_TREE_TIME, GetTime());
 
 		if nTreeType ~= 2 then
-			StartTimeGuage("T­íi c©y",TREE_PARAM[GetTask(TASK_TREE_GROW)][3],0,1)
+			StartTimeGuage("Water the tree",TREE_PARAM[GetTask(TASK_TREE_GROW)][3],0,1)
 		else
 			StartTimeGuage("Thu ho¹ch",240,0,1)
 		end
@@ -180,7 +180,7 @@ function plantTree(nItemIdx)
 
 		--if GetTask(TASK_PLANT_TREE_COUNT) == PLANT_TREE_LIMIT and nDate <= 130120 then	
 		if nDate >= 130214 and nDate <= 130228 then	
-			gf_AddItemEx2({2,1,30357, 200}, "H¹t Ca Cao", "VALENTINE 2013", "H¹t ca cao")
+			gf_AddItemEx2({2,1,30357, 200}, "Cacao Seed", "VALENTINE 2013", "Cacao seed")
 		end	
 	end
 end

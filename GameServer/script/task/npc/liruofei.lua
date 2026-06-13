@@ -21,7 +21,7 @@ end
 --SetCampToPlayer("camp_enemy");
 
 
-npcIndex = CreateNpc("liruofei", "Lý Nh­îc Phi", nMapId, nX + 2, nY + 2);
+npcIndex = CreateNpc("liruofei", "Ly Nhuoc Phi", nMapId, nX + 2, nY + 2);
 SetNpcDeathScript(npcIndex, "\\script\\task\\npc\\liruofei_death.lua");
 --SetCampToNpc(npcIndex, "camp_evil");
 Msg2Player("Lý Nh­îc Phi ®· xuÊt hiÖn!")

@@ -2,8 +2,8 @@ Include("\\script\\lib\\globalfunctions.lua")
 
 function OnUse(nItem)
 	local tAward = {
-		{1, 70, "Huy Ch≠¨ng ßÂng Ch’", {0, 153, 1, 1}, 0},
-		{1, 25, "Huy Ch≠¨ng Thi’t Ch’", {0, 153, 2, 1}, 0},
+		{1, 70, "Copper Medal", {0, 153, 1, 1}, 0},
+		{1, 25, "Iron Medal", {0, 153, 2, 1}, 0},
 		{1, 5, "Huy Ch≠¨ng Ng‰c Ch’", {0, 153, 3, 1}, 0},
 	}
 	if GetFreeItemRoom() < 1 then
@@ -11,6 +11,6 @@ function OnUse(nItem)
 		return 0;
 	end
 	if DelItemByIndex(nItem, 1) == 1 then
-		gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "TÛi Huy Ch≠¨ng DÚng S‹", "TÛi Huy Ch≠¨ng DÚng S‹");
+		gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Brave Warrior Medal Bag", "Brave Warrior Medal Bag");
 	end
 end

@@ -128,7 +128,7 @@ Tb_boss_step_chat = {
 	},
 	--·É»¤
 	{	{	"T¹i h¹ ph¶i chøng tá thùc lùc cña m×nh, tiÕp chiªu!",
-			"Ng­êi ®©u! Bµy r­îu!"
+			"Attendants! Bring wine!"
 		},
 		{	"Bæn ®­êng lÇn nµy chŞu thua trung nguyªn, qu¶ thËt thùc lùc kh«ng ®ñ!"},
 		{	"Xem ra bæn ®­êng th¶m b¹i, lµ do ng­êi cña bæn ®­êng bÊt tµi!"},
@@ -285,7 +285,7 @@ function chg_boss_2_fight()
 		if player_num <= 0 then
 			CloseMission(FEAST_MS_ID)
 			local map_id =  SubWorldIdx2ID(SubWorld)
-			WriteLog("[YÕn tiÖc Long M«n]cöa ¶i: 	"..map_id.."	Cöa ¶i 	")
+			WriteLog("[YÕn tiÖc Long M«n]cöa ¶i: 	"..map_id.."	Pass")
 			return
 		end
 		Zgc_pub_mission_fun(FEAST_MS_ID,"StartTimeGuage(\"Thêi gian kÕt thóc d¹ yÕn cßn\",3000,0,1)")
@@ -392,7 +392,7 @@ function feast_fail()
 	Zgc_pub_mission_fun(FEAST_MS_ID,"StartTimeGuage(\"Thêi gian hÕt yÕn tiÖc cßn\",60,0,1)")
 	player_revive()
 	local map_id =  SubWorldIdx2ID(SubWorld)
-	WriteLog("[YÕn tiÖc Long M«n]cöa ¶i: 	"..map_id.."	Cöa ¶i 1 ®ang ®­îc ®ãng	"..log_mission_step.."	Sè ng­êi	"..GetMissionV(MS_PLAYER_NUM).."")
+	WriteLog("[YÕn tiÖc Long M«n]cöa ¶i: 	"..map_id.."	Pass 1 is being closed"..log_mission_step.."	Sè ng­êi	"..GetMissionV(MS_PLAYER_NUM).."")
 end
 --¹Ø¿¨½áÊø
 function feast_end()
@@ -474,9 +474,9 @@ end
 function feast_banquet_dialog(feast_index)
 	Say("<color=green>Lı Nguyªn Kh¸nh<color>: Trung nguyªn qu¶ nhiªn cao thñ v« sè, trËn nµy thËt s¶ng kho¸i! R­îu T©y H¹ nång nµn ng©y ngÊt, rÊt thİch hîp c¸c vŞ hµo kiÖt, mêi dïng! Cßn mét sè thø cña T©y H¹, c¸c vŞ h·y nhËn lÊy!",
 	3,
-	"Th­ëng thøc r­îu thŞt/feast_restore",
+	"Enjoy the wine and feast/feast_restore",
 	"NhËn lÊy phÇn th­ëng./feast_get_prize",
-	"Rêi khái yÕn tiÖc/end_dialog"
+	"Leave the banquet/end_dialog"
 	)
 end
 function feast_get_prize()
@@ -500,7 +500,7 @@ function feast_get_prize()
 			if exp_chg_num ~= 0 then
 				ModifyGoldenExp(-exp_chg_num)
 				ModifyExp(exp_chg_num)
-				Msg2Player("Chóc mõng b¹n ®· ®æi "..exp_chg_num.." ®iÓm søc kháe thµnh kinh nghiÖm!")
+				Msg2Player("Congratulations, you have exchanged"..exp_chg_num.." ®iÓm søc kháe thµnh kinh nghiÖm!")
 			else
 				Msg2Player("§iÓm søc kháe cña b¹n lµ 0, kh«ng thÓ ®æi thµnh kinh nghiÖm!")
 			end
@@ -611,7 +611,7 @@ function boss_death()
 			if IsPlayerDeath() == 0 then
 				ModifyExp(10000000)
 				Msg2Player("NhËn ®­îc 10000000 ®iÓm kinh nghiÖm.")
-				WriteLog("[YÕn tiÖc Long M«n]cöa ¶i: 	"..map_id.."	Cöa ¶i 	".."nhËn 10000000 ®iÓm kinh nghiÖm")
+				WriteLog("[YÕn tiÖc Long M«n]cöa ¶i: 	"..map_id.."	Pass".."nhËn 10000000 ®iÓm kinh nghiÖm")
 			end
 		end
 	end
@@ -661,5 +661,5 @@ end
 --ÏµÍ³¹ã²¥º¯Êı
 function feast_broadcast()
 	local start_remian_sec_num = (GetMissionV(MS_TIMMER_LOOP_ID)-3060)
-	AddGlobalNews("YÕn tiÖc Long M«n sÏ b¾t ®Çu: Mêi ng­êi ch¬i ®Õn Long M«n trÊn t×m Npc TiÓu NhŞ ®¨ng kı qua ¶i. Thêi gian kÕt thóc ®¨ng kı cßn "..Zgc_pub_time_sec_change((start_remian_sec_num-1),0).."KÕt thóc!")
+	AddGlobalNews("YÕn tiÖc Long M«n sÏ b¾t ®Çu: Mêi ng­êi ch¬i ®Õn Long M«n trÊn t×m Npc TiÓu NhŞ ®¨ng kı qua ¶i. Thêi gian kÕt thóc ®¨ng kı cßn "..Zgc_pub_time_sec_change((start_remian_sec_num-1),0).."The end!")
 end

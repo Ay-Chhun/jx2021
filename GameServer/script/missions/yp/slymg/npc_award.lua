@@ -2,7 +2,7 @@ Include("\\script\\lib\\define.lua")
 
 function main()
 	local tSay = {
-		"\n xem cã nh÷ng g×/OpenIBShop",
+		"\n See what is available/OpenIBShop",
 		"\n §îi t«i v­ît ¶i xong råi ®Õn t×m b¹n nhÐ./nothing",
 	}
 	local msg = format("<color=gold>%s<color>:", GetTargetNpcName());

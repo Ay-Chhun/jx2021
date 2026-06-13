@@ -21,7 +21,7 @@ function main()
 		--Say("<color=green>ÇÉÅ®<color>£ºÊ±ÖµÆßÔÂ³õÆßÈµÇÅ»á£¬¸ÕºÃÒ»¶ÎÒøºÓ»¯ÎªÁ÷ĞÇÓê×¹ÂäÈË¼ä£¬ÕæÊÇÃÀÃî°¡¡£",getn(selTab),selTab);
 	else	--ÔÚÒøºÓµØÍ¼
 		local selTab = {
-				"PhiÒn X¶o N÷ ®­a ta vÒ/leave_galaxy",
+				"Clever Girl, take me back/leave_galaxy",
 				"Ta ®îi thªm mét l¸t/nothing",
 				}
 		Say("Vµo ngµy 7 th¸ng 7 cÇu ¤ Th­íc b¾c sang võa lóc d¶i Ng©n Hµ hãa thµnh trËn m­a sao b¨ng r¬i xuèng nh©n gian, thËt lµ mét c¶nh t­îng tuyÖt ®Ñp!",getn(selTab),selTab);
@@ -78,7 +78,7 @@ end;
 function know_detail()
 	Talk(3,"know_detail_1","Ho¹t ®éng lÇn nµy chia lµm 4 phÇn. <enter><color=yellow>PhÇn 1: Mçi tèi cã thÓ ®Õn Thµnh §«, BiÖn Kinh, TuyÒn Ch©u<color> t×m <color=yellow>X¶o N÷<color> gÇn D· TÈu nhËn <color=yellow>1 Tinh Tinh §Şa §å<color>. Sö dông Tinh Tinh §¹i §å cã thÓ nhËn ®­îc täa ®é, ®Õn täa ®é chØ ®Şnh cña ®Şa ®å chØ ®Şnh sö dông Tinh Tinh §Şa §å cã thÓ nhËn ®­îc ng«i <color=yellow>Sao b¨ng<color>",
 					"<color=yellow><enter>PhÇn 2 Th¾p s¸ng ng«i sao: <color><enter> Sau khi ng­êi ch¬i nhËn ®­îc Sao b¨ng cã thÓ t×m <color=yellow>X¶o N÷<color> ®Ó vµo d¶i Ng©n Hµ, trong d¶i Ng©n Hµ sö dông Sao b¨ng sÏ xuÊt hiÖn 1 ng«i sao.",
-					"<color=yellow><enter>PhÇn 3 Ng­u Lang, Chøc N÷ t­¬ng ngé: Sau khi <color><enter>sè l­îng ng«i sao<color=yellow> trªn <color>d¶i Ng©n Hµ ®¹t ®Õn <color=yellow>"..REQUIRE_STAR_COUNT.."<color> ng«i, Ng­u Lang, Chøc N÷ sÏ gÆp nhau lóc <color=yellow>9 giê tèi<color>, Ng­u Lang, Chøc N÷ sÏ bªn nhau trong <color=yellow>15 phót<color>.");
+					"<color=yellow><enter>Part 3 The Cowherd and Weaver Girl meet: After <color><enter>the number of stars<color=yellow> on <color>the Milky Way reaches <color=yellow>"..REQUIRE_STAR_COUNT.."<color> stars, the Cowherd and Weaver Girl will meet at <color=yellow>9 o'clock at night<color>, and the Cowherd and Weaver Girl will be together for <color=yellow>15 minutes<color>.");
 end;
 
 function know_detail_1()
@@ -107,7 +107,7 @@ function know_time()
 	local sTimeLeft = "";
 	local nHour = tonumber(date("%H"))
 	local nMin = tonumber(date("%M"));
-	sTimeLeft = nHour.." giê "..nMin.." Phót "
+	sTimeLeft = nHour.." hours"..nMin.." minutes"
 	Talk(1,"main","Thêi gian hiÖn t¹i lµ <color=yellow>"..sTimeLeft.."<color>. Vµo kho¶ng <color=yellow>21 giê<color> mçi tèi Ng­u Lang vµ Chøc N÷ sÏ gÆp nhau, mäi ng­êi h·y nhí râ thêi gian.");
 end;
 
@@ -143,14 +143,14 @@ function get_award_confirm(nType,nCount)
 			ModifyGoldenExp(200000*nCount);
 			Msg2Player("B¹n nhËn ®­îc "..(20*nCount).."v¹n ®iÓm kinh nghiÖm.");
 			ModifyReputation(5*nCount,0);
-			WriteLog("[Ho¹t ®éng ThÊt TŞch]:"..GetName().."Dïng thÎ"..nCount.."tÊm Tinh Tinh §Şa §å ®æi ®­îc phÇn th­ëng.");
+			WriteLog("[Ho¹t ®éng ThÊt TŞch]:"..GetName().."Use card"..nCount.."tÊm Tinh Tinh §Şa §å ®æi ®­îc phÇn th­ëng.");
 		end;
 	else
 		if DelItem(t7XiItem["star"][2],t7XiItem["star"][3],t7XiItem["star"][4],nCount) == 1 then
 			ModifyGoldenExp(300000*nCount);
 			Msg2Player("B¹n nhËn ®­îc "..(30*nCount).."v¹n ®iÓm kinh nghiÖm.");
 			ModifyReputation(5*nCount,0);
-			WriteLog("[Ho¹t ®éng ThÊt TŞch]:"..GetName().."Dïng thÎ"..nCount.."tÊm Tinh Tinh ®æi ®­îc phÇn th­ëng.");
+			WriteLog("[Ho¹t ®éng ThÊt TŞch]:"..GetName().."Use card"..nCount.."tÊm Tinh Tinh ®æi ®­îc phÇn th­ëng.");
 		end;
 	end;
 end;

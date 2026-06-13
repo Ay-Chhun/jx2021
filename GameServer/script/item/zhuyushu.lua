@@ -14,14 +14,14 @@ function OnUse()
 	local szExp = "";
 	local nLevel = GetLevel();
 	if IB_VERSION == 1 then
-		szExp = "NhËn ®­îc <color=yellow>"..floor(1500000*(nLevel^3)/(80^3)).." kinh nghiÖm <color>. ";
+		szExp = "Received <color=yellow>"..floor(1500000*(nLevel^3)/(80^3)).." kinh nghiÖm <color>. ";
 	else
-		szExp = "NhËn ®­îc <color=yellow>"..floor(2500000*(nLevel^3)/(80^3)).." kinh nghiÖm <color>. ";
+		szExp = "Received <color=yellow>"..floor(2500000*(nLevel^3)/(80^3)).." kinh nghiÖm <color>. ";
 	end;	
 	Say("Sö dông Bã thï du, b¹n cã thÓ "..szExp.."Sö dông chø?",
 		2,
-		"§ång ý/give_exp",
-		"Hñy bá/nothing")
+		"Agree/give_exp",
+		"Cancel/nothing")
 end
 
 function give_exp()

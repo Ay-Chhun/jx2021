@@ -168,7 +168,7 @@ function get_addendar_1()
 	local strAddendar, nAddendar = GetBookAddendarName(0)
 	Say("B¹n x¸c nhËn muèn lÊy <color=yellow>"..strAddendar.."<color> chø? Xin x¸c nhËn cßn ®ñ søc lùc vµ kho¶ng trèng trong hµnh trang kÎo ®¸nh r¬i bİ kiÕp!",
 		2,
-		"LÊy bİ kiÕp!/confirm_get_addendar_1",
+		"Take the secret manual!/confirm_get_addendar_1",
 		"Ta kh«ng lÊy--Hñy bá/cancel_dialog")
 end;
 -- È·ÈÏÈ¡ÏÂ¾öÒª1
@@ -188,7 +188,7 @@ function get_addendar_2()
 	local strAddendar, nAddendar = GetBookAddendarName(1)
 	Say("B¹n x¸c nhËn muèn lÊy <color=yellow>"..strAddendar.."<color> chø? Xin x¸c nhËn cßn ®ñ søc lùc vµ kho¶ng trèng trong hµnh trang kÎo ®¸nh r¬i bİ kiÕp!",
 		2,
-		"LÊy bİ kiÕp!/confirm_get_addendar_2",
+		"Take the secret manual!/confirm_get_addendar_2",
 		"Ta kh«ng lÊy--Hñy bá/cancel_dialog")
 end;
 -- È·ÈÏÈ¡ÏÂ¾öÒª2
@@ -208,7 +208,7 @@ function get_addendar_3()
 	local strAddendar, nAddendar = GetBookAddendarName(2)
 	Say("B¹n x¸c nhËn muèn lÊy <color=yellow>"..strAddendar.."<color> chø? Xin x¸c nhËn cßn ®ñ søc lùc vµ kho¶ng trèng trong hµnh trang kÎo ®¸nh r¬i bİ kiÕp!",
 		2,
-		"LÊy bİ kiÕp!/confirm_get_addendar_3",
+		"Take the secret manual!/confirm_get_addendar_3",
 		"Ta kh«ng lÊy--Hñy bá/cancel_dialog")
 end;
 -- È·ÈÏÈ¡ÏÂ¾öÒª3
@@ -228,7 +228,7 @@ function get_addendar_4()
 	local strAddendar, nAddendar = GetBookAddendarName(3)
 	Say("B¹n x¸c nhËn muèn lÊy <color=yellow>"..strAddendar.."<color> chø? Xin x¸c nhËn cßn ®ñ søc lùc vµ kho¶ng trèng trong hµnh trang kÎo ®¸nh r¬i bİ kiÕp!",
 		2,
-		"LÊy bİ kiÕp!/confirm_get_addendar_4",
+		"Take the secret manual!/confirm_get_addendar_4",
 		"Ta kh«ng lÊy--Hñy bá/cancel_dialog")
 end;
 -- È·ÈÏÈ¡ÏÂ¾öÒª4

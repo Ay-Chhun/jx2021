@@ -21,7 +21,7 @@ function OnTimer()
 	DebugOutput("nStep =", nStep, HD_MISSION_ID[1]);
 	if nStep == 2 or nStep ==  602 or nStep == 1202 or nStep == 1802 then
 		local nMapID, nX, nY = GetNpcWorldPos(npcIndex);
-		local npcIdx = CreateNpc("wugangzuoqi", "Thó C­ng Cña Chó Cuéi", nMapID, nX + random(-2, 2), nY + random(-2, 2));
+		local npcIdx = CreateNpc("wugangzuoqi", "Chu Cuoi's Pet", nMapID, nX + random(-2, 2), nY + random(-2, 2));
 		if npcIdx > 0 then
 			SetNpcDeathScript(npcIdx, "\\script\\online_activites\\201409\\wugang_death.lua");
 			SetNpcLifeTime(npcIdx, 5 * 60);

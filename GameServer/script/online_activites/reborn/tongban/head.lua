@@ -69,7 +69,7 @@ function pet_init()
 	tinsert(tSay, "Trß chuyÖn víi B¹n §ång Hµnh/chat_pet")	
 	tinsert(tSay, "NhiÖm vô th­êng nhËt ch¨m sãc B¹n §ång Hµnh/quest_pet")
 	tinsert(tSay, "Xem th«ng sè B¹n §ång Hµnh/info_pet")	
-	tinsert(tSay, "Rêi khái/dialog_over")
+	tinsert(tSay, "Leave/dialog_over")
 	
 	Say(tHeader, getn(tSay), tSay)
 end
@@ -99,7 +99,7 @@ function pet_gp_training()
 	local nDate = tonumber(date("%y%m%d"))	
 	Pet_ResetTask()	
 	local nQuestGPCount = mod(GetTask(TASK_VNG_PET_GODPOINT),100)
-	Say("<color=green>§iÓm Linh Lùc<color> ¶nh h­ëng ®Õn tiÒm n¨ng cña B¹n §ång Hµnh. Mçi lÇn tu luyÖn <color=yellow>tiªu hao 50.000.000 ®iÓm kinh nghiÖm cña b¶n th©n<color>. H«m nay b¹n ®· hoµn thµnh tu luyÖn Linh Lùc cho B¹n §ång Hµnh <color=yellow>"..nQuestGPCount.."<color> lÇn. B¹n cã muèn tiÕp tôc tu luyÖn?",2,"§ång ý!/pet_gp_training_confirm","Ta ch­a cÇn/gf_DoNothing")
+	Say("<color=green>§iÓm Linh Lùc<color> ¶nh h­ëng ®Õn tiÒm n¨ng cña B¹n §ång Hµnh. Mçi lÇn tu luyÖn <color=yellow>tiªu hao 50.000.000 ®iÓm kinh nghiÖm cña b¶n th©n<color>. H«m nay b¹n ®· hoµn thµnh tu luyÖn Linh Lùc cho B¹n §ång Hµnh <color=yellow>"..nQuestGPCount.."<color> lÇn. B¹n cã muèn tiÕp tôc tu luyÖn?",2,"Agreed!/pet_gp_training_confirm","Ta ch­a cÇn/gf_DoNothing")
 end
 
 function pet_gp_training_confirm()
@@ -260,7 +260,7 @@ function pet_rename()
 end
 
 function pet_rename_input()
-	AskClientForString("pet_rename_confirm","",1,16, "NhËp tªn:")
+	AskClientForString("pet_rename_confirm","",1,16, "Enter name:")
 end
 
 function pet_rename_confirm(szName)
@@ -281,7 +281,7 @@ function summon_pet()
 	end
     KillFollower()
     --AskClientForString("confirm_summon_pet","",1,31, "NhËp tªn:")
-    Say("B¹n muèn gäi B¹n §ång Hµnh?",3,"Ta muèn gäi!/call_pet","§æi tªn B¹n §ång Hµnh/pet_rename","§Ó ta suy nghÜ/vet_201003_tongban_end_dialog")    
+    Say("B¹n muèn gäi B¹n §ång Hµnh?",3,"Ta muèn gäi!/call_pet","§æi tªn B¹n §ång Hµnh/pet_rename","Let me think about it/vet_201003_tongban_end_dialog")    
 end
 
 function call_pet()
@@ -292,14 +292,14 @@ function call_pet()
 	end
 	local szName = CustomDataRead("pet_name") or ""
 	if szName == "" then	
-		Say("§©y lµ lÇn ®Çu tiªn b¹n gäi <color=yellow>B¹n §ång Hµnh<color>, h·y ®Æt tªn cho b¹n ®ång hµnh. <color=red>Chó ý: ChØ ®­îc ®Æt 1 lÇn duy nhÊt. NÕu muèn ®æi tªn B¹n §ång Hµnh ph¶i gÆp B¾c §Èu L·o Nh©n sö dông 1 N÷ Oa Tinh Th¹ch.<color>",2,"Ta ®ång ý!/assign_name","§Ó ta suy nghÜ/vet_201003_tongban_end_dialog")
+		Say("§©y lµ lÇn ®Çu tiªn b¹n gäi <color=yellow>B¹n §ång Hµnh<color>, h·y ®Æt tªn cho b¹n ®ång hµnh. <color=red>Chó ý: ChØ ®­îc ®Æt 1 lÇn duy nhÊt. NÕu muèn ®æi tªn B¹n §ång Hµnh ph¶i gÆp B¾c §Èu L·o Nh©n sö dông 1 N÷ Oa Tinh Th¹ch.<color>",2,"I agree!/assign_name","Let me think about it/vet_201003_tongban_end_dialog")
 		return
 	end	
 	confirm_summon_pet(szName)
 end
 
 function assign_name()
-	AskClientForString("confirm_summon_pet","",1,16, "NhËp tªn:")
+	AskClientForString("confirm_summon_pet","",1,16, "Enter name:")
 end
 
 function confirm_summon_pet(szName)	
@@ -377,7 +377,7 @@ function quest_pet()
 	tinsert(tSay, "Hoµn thµnh nhiÖm vô th­êng nhËt/done_quest_pet")
 	tinsert(tSay,"RÌn luyÖn B¹n §ång Hµnh/pet_train")
 	tinsert(tSay, "Tu luyÖn Linh Lùc/pet_gp_training")	
-	tinsert(tSay, "Rêi khái/dialog_over")
+	tinsert(tSay, "Leave/dialog_over")
 	
 	Say(tHeader, getn(tSay), tSay)
 end
@@ -394,7 +394,7 @@ function pet_train()
 		"Ta muèn rÌn luyÖn trong rõng/pet_train_confirm",
 		"Ta muèn rÌn luyÖn trªn nói/pet_train_confirm",
 		"Ta muèn nhËn kÕt qu¶ rÌn luyÖn/pet_train_award",
-		"KÕt thóc ®èi tho¹i/gf_DoNothing",	
+		"End dialogue/gf_DoNothing",	
 	}
 	Say("RÌn luyÖn B¹n §ång Hµnh t¹i C« §¶o. ", getn(tSay), tSay)
 end
@@ -464,7 +464,7 @@ function pet_train_award()
 	if nTrainCounted == 6 then
 		Pet_AddGP(1)
 		Msg2Player("B¹n nhËn ®­îc 1 ®iÓm linh lùc.")
-		gf_AddItemEx2({2, 1, 30114, 1}, "B¸t Nh· Chøng Th­", "Ban Dong Hanh", "nhËn th­ëng rÌn luyÖn lÇn thø 6", 24 * 3600)
+		gf_AddItemEx2({2, 1, 30114, 1}, "Prajna Certificate", "Ban Dong Hanh", "nhËn th­ëng rÌn luyÖn lÇn thø 6", 24 * 3600)
 	end
 	pet_train()
 end
@@ -494,7 +494,7 @@ function receive_quest_pet()
 	
 	local nDiff = 900 - (GetTime() - GetTask(TASK_VNG_PET_TIME))
 	if nDiff > 0 then
-		Talk(1,"","Cßn "..nDiff.." gi©y n÷a míi cã thÓ nhËn nhiÖm vô tiÕp theo!")
+		Talk(1,"","There are"..nDiff.." gi©y n÷a míi cã thÓ nhËn nhiÖm vô tiÕp theo!")
 		return
 	end
 	
@@ -580,7 +580,7 @@ function done_quest_pet()
 		gf_AddItemEx2({ 2, 1, 30250, 50}, "Hoa H­íng D­¬ng", "Hoat dong thang 11 nam 2010", "Hoµn thµnh nhiÖm vô B¹n §ång Hµnh")
 	end
 	if tonumber(date("%y%m%d")) >= 101210 and tonumber(date("%y%m%d")) <= 110109 then
-		gf_AddItemEx2({ 2, 1, 30265, 30},  "Chu«ng Gi¸ng Sinh", "Hoat dong thang 12 nam 2010", "Hoµn thµnh nhiÖm vô B¹n §ång Hµnh")
+		gf_AddItemEx2({ 2, 1, 30265, 30},  "Christmas Bell", "Hoat dong thang 12 nam 2010", "Hoµn thµnh nhiÖm vô B¹n §ång Hµnh")
 	end
 	get_award_woodenbox()
 	if nQuestCounted == 4 then
@@ -607,13 +607,13 @@ function done_quest_pet()
 		else
 			nUpgradePoint = 5
 		end
-		gf_AddItemEx2({2, 1, 30114, 1}, "B¸t Nh· Chøng Th­", "Ban Dong Hanh", "nhËn th­ëng nhiÖm vô hµng ngµy", 24 * 3600)
+		gf_AddItemEx2({2, 1, 30114, 1}, "Prajna Certificate", "Ban Dong Hanh", "nhËn th­ëng nhiÖm vô hµng ngµy", 24 * 3600)
 		SetTask(TASK_VNG_PET, GetTask(TASK_VNG_PET) + (nUpgradePoint * 100))
 		
 		Msg2Player("NhËn ®­îc 4000000 ®iÓm kinh nghiÖm. 24 ®iÓm S­ M«n, 24 ®iÓm Danh Väng, 300 Qu©n C«ng vµ "..nUpgradePoint.." ®iÓm n©ng cÊp.")
 		WriteLogEx(VET_201003_TONGBAN_STR_LOGTITLE, "nhËn th­ëng nhiÖm vô lÇn thø 4")
 		if tonumber(date("%y%m%d")) >= 100929 and tonumber(date("%y%m%d")) <= 101024 then
-			gf_AddItemEx2({ 2, 1, 30233, 50}, "Bét M×", "Hoat dong thang 9 nam 2010", "Hoµn thµnh nhiÖm vô B¹n §ång Hµnh")
+			gf_AddItemEx2({ 2, 1, 30233, 50}, "Flour", "Hoat dong thang 9 nam 2010", "Hoµn thµnh nhiÖm vô B¹n §ång Hµnh")
 		end
 	end
 	

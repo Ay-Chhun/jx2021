@@ -174,15 +174,15 @@ function gf_PageSay(tbDialogList1, n_start_dialog_num, n_every_page)
       		nLen = nCount - nStartDialogNum + 1
     	end
     	local tbCurrentlyShow = {}
-    	tinsert(tbCurrentlyShow,1,"KÕt thóc ®èi tho¹i/gf_DoNothing")
+    	tinsert(tbCurrentlyShow,1,"End dialogue/gf_DoNothing")
     	if nStartDialogNum ~= 1 then
         	tinsert(tbCurrentlyShow,1,format("%s/#gf_pagesay(1,%d)","trë l¹i",nEveryPage))
     	end
     	if nStartDialogNum + nEveryPage - 1 < nCount then
-	        tinsert(tbCurrentlyShow,1,format("%s/#gf_pagesay(%d,%d)","Trang kÕ",nStartDialogNum+nEveryPage,nEveryPage))
+	        tinsert(tbCurrentlyShow,1,format("%s/#gf_pagesay(%d,%d)","Next page",nStartDialogNum+nEveryPage,nEveryPage))
     	end
     	if nStartDialogNum ~= 1 then
-        	tinsert(tbCurrentlyShow,1,format("%s/#gf_pagesay(%d,%d)","Trang tr­íc",nStartDialogNum-nEveryPage,nEveryPage))
+        	tinsert(tbCurrentlyShow,1,format("%s/#gf_pagesay(%d,%d)","Previous page",nStartDialogNum-nEveryPage,nEveryPage))
 	    end
     	for i = 1, nLen do
         	tinsert(tbCurrentlyShow,1,format(tbDialogList[nStartDialogNum+nLen-i],nStartDialogNum+nLen-i))
@@ -233,7 +233,7 @@ function gf_Modify(strType,nCount)
 		strShow = gf_GetMoneyString(nCount);
 	elseif strType == "ShiMen" then
 		SetTask(336, GetTask(336) + nCount);
-		strShow = nCount.."§iÓm s­ m«n";
+		strShow = nCount.."Sect Points";
 	elseif strType == "ShiMenWeiWang" then
 		if nCount == 0 then
 			return 1
@@ -272,7 +272,7 @@ function gf_Modify(strType,nCount)
 		local TASKID_BOOK_POPUR2				= 3409;	-- µ±Ç°ÔÄÀúµãÊý
 		gf_ModifyTask(TASKID_BOOK_POPUR2, nCount);
 		gf_ModifyTask(TASKID_BOOK_POPUR2_TOTAL, nCount);
-		strShow = nCount.."LÞch luyÖn"
+		strShow = nCount.."Calendar of Cultivation"
 	else -- Error
 		WriteLog("["..strLog.."]\tgf_Modify Error:\t"..GetName().." Modify "..nCount.." "..strType );
 		return 0;
@@ -286,7 +286,7 @@ end
 
 function gf_AddItemEx(sItemIds, strName, nCount)
 	if type(sItemIds) ~= "table" then
-		WriteLog(format("[%s] [AddItemEx Tham sè sai!] [Role:%s (acc:%s)] [Item:%s]",
+		WriteLog(format("[%s] [AddItemEx wrong parameter!] [Role:%s (acc:%s)] [Item:%s]",
 			strLog, GetName(), GetAccount(), strName));
 		return 0;
 	end
@@ -294,13 +294,13 @@ function gf_AddItemEx(sItemIds, strName, nCount)
 	nCount = nCount or sItemIds[4];
 	nCount = tonumber(nCount);
 	if not nCount then
-		WriteLog(format("[%s] [AddItemEx Tham sè sai!] [Role:%s (acc:%s)] [Item:%s]",
+		WriteLog(format("[%s] [AddItemEx wrong parameter!] [Role:%s (acc:%s)] [Item:%s]",
 			strLog, GetName(), GetAccount(), strName));
 		return 0;
 	end
 	local nAmg = (nCount and 3) or 4;
 	if getn(sItemIds) < nAmg then
-		WriteLog(format("[%s] [AddItemEx Tham sè sai!] [Role:%s (acc:%s)] [Item:%s]",
+		WriteLog(format("[%s] [AddItemEx wrong parameter!] [Role:%s (acc:%s)] [Item:%s]",
 			strLog, GetName(), GetAccount(), strName));
 		return 0;
 	end
@@ -347,13 +347,13 @@ function gf_GetMoneyString(nMoney)
 	local nCopper = mod(nMoney,100);
 	local sString = "";
 	if nGold > 0 then
-		sString = sString..nGold.."vµng"
+		sString = sString..nGold.."gold"
 	end;
 	if nSilver > 0 then
-		sString = sString..nSilver.." b¹c "
+		sString = sString..nSilver.." silver"
 	end;
 	if nCopper > 0 then
-		sString = sString..nCopper.."®ång <color>"
+		sString = sString..nCopper.." copper <color>"
 	end;
 	return sString;
 end;
@@ -445,7 +445,7 @@ function gf_ShowDebugInfor(Arg,nType)
 		if nType == nil or nType == 0 then
 			print("\n §iÒu chØnh tin tøc:"..Arg.."\n")
 		elseif nType == 1 then
-			Msg2SubWorld("ChØnh tin tøc:"..Arg);
+			Msg2SubWorld("Edit information:"..Arg);
 		end;
 	else	--Èç¹ûÎª·Çµ÷ÊÔ°æ±¾ÔòÎª¼ÇÈÕÖ¾
 		WriteLog(Arg);
@@ -596,7 +596,7 @@ function gf_GetRouteName(nRoute)
 	local tRoute = 	--Â·Ïß
 	{
 		[0] = "V« m«n ph¸i",
-		[1] = "ThiÕu L©m",
+		[1] = "Shaolin",
 		[2] = "ThiÕu L©m §ao",
 		[3] = "ThiÕu L©m Tr­îng",
 		[4] = "ThiÕu L©m QuyÒn",
@@ -605,32 +605,32 @@ function gf_GetRouteName(nRoute)
 		[7] = "Nga My",
 		[8] = "Nga Mi KiÕm",
 		[9] = "Nga Mi §µn",
-		[10] = "C¸i Bang",
+		[10] = "Beggars' Sect",
 		[11] = "C¸i Bang QuyÒn",
 		[12] = "C¸i Bang Bæng",
-		[13] = "Vâ §ang",
+		[13] = "Wudang",
 		[14] = "Vâ §ang KiÕm",
 		[15] = "Vâ §ang Bót",
 		[16] = "D­¬ng M«n",
 		[17] = "D­¬ng Gia Th­¬ng",
 		[18] = "D­¬ng Gia Cung",
-		[19] = "Ngò §éc",
-		[20] = "HiÖp §éc",
+		[19] = "Five Poisons",
+		[20] = "Chivalrous Venom",
 		[21] = "Cæ S­",
 		[22] = "C«n L«n",
 		[23] = "C«n L«n",
 		[24] = "Minh gi¸o",
-		[25] = "Th¸nh ChiÕn",
+		[25] = "Holy War",
 		[26] = "TrËn Binh",
 		[27] = "HuyÕt Nh©n",
 		[28] = "Thóy Yªn",
 		[29] = "Thóy Yªn Vò N÷",
-		[30] = "Linh N÷",
+		[30] = "Spirit Maiden",
 		[31] = "§­êng M«n NhËm HiÖp",
 		[32] = "C«n L«n KiÕm T«n",
 	}
 	if nRoute < 0 or nRoute > getn(tRoute) then
-		return "Kh«ng râ h­íng";
+		return "Unknown direction";
 	end;
 	return tRoute[nRoute] or ""
 end;
@@ -640,13 +640,13 @@ function gf_GetFactionName(nFac)
 	local tFaction = --ÃÅÅÉ
 	{
 		[0] = "V« m«n ph¸i",
-		[1] = "ThiÕu L©m",
-		[2] = "Vâ §ang",
+		[1] = "Shaolin",
+		[2] = "Wudang",
 		[3] = "Nga My",
-		[4] = "C¸i Bang",
+		[4] = "Beggars' Sect",
 		[5] = "§­êng M«n",
 		[6] = "D­¬ng M«n",
-		[7] = "Ngò §éc",
+		[7] = "Five Poisons",
 		[8] = "C«n L«n",
 		[9] = "Minh gi¸o",
 		[10] = "Thóy Yªn",
@@ -695,7 +695,7 @@ end;
 --1ÊÇNPCµÄÉúÃüÖµ£¬²»ÄÜÐ¡ÓÚµÈÓÚ0,·ñÔòNPC»á¡°ËÀµô¡±
 function gf_SetUnitCurState(Npc_index,att_seq,number)
 	if number > 99 and att_seq ~= 1 and att_seq ~= 4 and att_seq ~= 5 and att_seq ~= 6 then
-		print("ThiÕt lËp trÞ sè NPC nhÇm: VÞ trÝ:"..att_seq.."TrÞ:"..number)
+		print("ThiÕt lËp trÞ sè NPC nhÇm: VÞ trÝ:"..att_seq.."Value:"..number)
 		return 0
 	end
 	local num_save = GetUnitCurStates(Npc_index,att_seq)
@@ -867,7 +867,7 @@ function gf_WriteLog(szHead,szEvenDescribe,nPIdx)
 	if not PlayerIndex then	--Èç¹ûÃ»ÓÐÍæ¼ÒË÷Òý
 		WriteLog("["..szHead.."]:"..szEvenDescribe);
 	else
-		WriteLog("["..szHead.."]: Tµi kho¶n:"..GetAccount()..",Nh©n vËt:"..GetName()..",CÊp:"..GetLevel()..",M«n ph¸i:"..GetPlayerRoute()..",ThÓ h×nh:"..GetBody()..",Miªu t¶:"..szEvenDescribe);
+		WriteLog("["..szHead.."]: Account:"..GetAccount()..",Nh©n vËt:"..GetName()..",Level:"..GetLevel()..",M«n ph¸i:"..GetPlayerRoute()..",Body type:"..GetBody()..",Description:"..szEvenDescribe);
 	end;
 	PlayerIndex = nOldPIdx;
 end;
@@ -1015,15 +1015,15 @@ end
 function gf_EventFactionAward(tbItemIds, szItemName, LevelAwardListTable, nMaxCount, nTaskGetDate, nTaskGetCount, szLogTitle)
     local nDate = tonumber(date("%y%m%d"));
     local tbLogActions = {
-        [1] = "NhiÖm vô s­ m«n".." 1x",
-        [2] = "NhiÖm vô s­ m«n".." 2x",
-        [3] = "NhiÖm vô s­ m«n".." 3x",
-        [4] = "NhiÖm vô s­ m«n".." 4x",
-        [5] = "NhiÖm vô s­ m«n".." 5x",
-        [6] = "NhiÖm vô s­ m«n".." 6x",
-        [7] = "NhiÖm vô s­ m«n".." 7x",
-        [8] = "NhiÖm vô s­ m«n".." 8x",
-        [9] = "NhiÖm vô s­ m«n".." 9x",
+        [1] = "Sect master mission".." 1x",
+        [2] = "Sect master mission".." 2x",
+        [3] = "Sect master mission".." 3x",
+        [4] = "Sect master mission".." 4x",
+        [5] = "Sect master mission".." 5x",
+        [6] = "Sect master mission".." 6x",
+        [7] = "Sect master mission".." 7x",
+        [8] = "Sect master mission".." 8x",
+        [9] = "Sect master mission".." 9x",
     }
     local nCount = LevelAwardListTable[floor(GetLevel() / 10)];
     if GetTask(nTaskGetDate) < nDate then
@@ -1503,7 +1503,7 @@ SKeyProbability="nProbability"
 
 --ÎïÆ·¶Ò»»¶Ô»°Éú³É
 function gf_VnGetChangeSaySel(sInfoKey)
-	return "§æi "..gf_VnGetItemChgPrizeInfo(sInfoKey,SkeyPrizeNum,SkeyPrizeElement).."(cÇn"..gf_VnGetItemChgInfo(sInfoKey,SkeyConsumptionNum,SkeyConsumptionElement)..")"
+	return "Exchange"..gf_VnGetItemChgPrizeInfo(sInfoKey,SkeyPrizeNum,SkeyPrizeElement).."(cÇn"..gf_VnGetItemChgInfo(sInfoKey,SkeyConsumptionNum,SkeyConsumptionElement)..")"
 end
 
 --»ñÈ¡½±ÀøµÄ¶Ò»»¸ñÊ½
@@ -1513,7 +1513,7 @@ function gf_VnGetItemChgPrizeInfo(sInfoKey,sKeyElementCount,SkeyElement)
 	for nElemenSeq = 1,nElementCount do
 		if nElemenSeq > 1 then
 			--¶à¸öÔªËØÐèÒªÔÚÇ°Ãæ¼ÓÉÏ+ºÅ
-			sElenmentInfo = sElenmentInfo.." hoÆc "
+			sElenmentInfo = sElenmentInfo.." or"
 		end
 		local tElementInfo = g_objOnlineChgRule:GetMixTable(sInfoKey,SkeyElement..nElemenSeq)
 		if tElementInfo == nil then
@@ -1552,7 +1552,7 @@ function gf_VnItemChgDeal(sInfoKey)
 	--ÏûºÄÆ·¼ì²â
 	local nConsumptionCount=g_objOnlineChgRule:GetNum(sInfoKey,SkeyConsumptionNum)
 	local nChkFlag = 1
-	local sChgClew = "<color=green>Nh¾c nhë<color>:"
+	local sChgClew = "<color=green>Reminder<color>:"
 	for nCounsumptionSeq = 1,nConsumptionCount do
 		local tConsumptionInfo = g_objOnlineChgRule:GetMixTable(sInfoKey,SkeyConsumptionElement..nCounsumptionSeq)
 		--ÎïÆ·µÄ´¦Àí
@@ -1594,7 +1594,7 @@ function gf_VnItemChgDeal(sInfoKey)
 		bDelFlag,sDelClew = gf_VnConsumptionDelMain(g_objOnlineChgRule:GetMixTable(sInfoKey,SkeyConsumptionElement..nCounsumptionSeq))
 	end
 	if bDelFlag ~= 1 then
-		Talk(1,"","<color=green>Nh¾c nhë<color>:"..sDelClew.."\n kh«ng thÓ ®æi!")
+		Talk(1,"","<color=green>Reminder<color>:"..sDelClew.."\n kh«ng thÓ ®æi!")
 		return
 	end
 		--Ôö¼Ó½±ÀøÎïÆ·
@@ -1695,12 +1695,12 @@ function gf_SayEx(nPage,tbInfo)
 	local szSayString = "";
 	szSayString = tbInfo[nPage];
 	if nPage ~= 1 then	--Èç¹û²»ÊÇµÚ1Ò³ÔòÓÐ¡°ÉÏÒ»Ò³¡±
-		tinsert(selTab,format("Trang tr­íc/#gf_SayEx(%d)",nPage-1));
+		tinsert(selTab,format("Previous page/#gf_SayEx(%d)",nPage-1));
 	end;
 	if nPage ~= nTotalPage then	--Èç¹û²»ÊÇ×îºóÒ»Ò³ÔòÓÐ¡°ÏÂÒ»Ò³¡±
-		tinsert(selTab,format("Trang kÕ/#gf_SayEx(%d)",nPage+1));
+		tinsert(selTab,format("Next page/#gf_SayEx(%d)",nPage+1));
 	end;
-	tinsert(selTab,"KÕt thóc ®èi tho¹i/nothing");
+	tinsert(selTab,"End dialogue/nothing");
 	Say(format(szSayString.."\n (hiÖn t¹i trang %d, tæng %d trang)",nPage,nTotalPage),getn(selTab),selTab);
 end;
 
@@ -1726,8 +1726,8 @@ end;
 
 function gf_ConfirmSay(szCaption,szFunction)
 	local selTab = {
-				"§ång ý/#"..szFunction,
-				"Hñy bá/nothing",
+				"Agree/#"..szFunction,
+				"Cancel/nothing",
 				}
 	Say(szCaption,getn(selTab),selTab);
 end;
@@ -2147,7 +2147,7 @@ end
 
 function gf_AddItems(sItemIds, strName, nCount)
 	if type(sItemIds) ~= "table" then
-		WriteLog(format("[%s] [AddItemEx Tham sè sai!] [Role:%s (acc:%s)] [Item:%s]",--´íÎóÐÅÏ¢Êä³öµ½ÀÏµÄÈÕÖ¾
+		WriteLog(format("[%s] [AddItemEx wrong parameter!] [Role:%s (acc:%s)] [Item:%s]",--´íÎóÐÅÏ¢Êä³öµ½ÀÏµÄÈÕÖ¾
 			strLog, GetName(), GetAccount(), strName));
 		return 0;
 	end
@@ -2155,7 +2155,7 @@ function gf_AddItems(sItemIds, strName, nCount)
 	nCount 	= nCount or sItemIds[4];
 	local nAmg = (nCount and 3) or 4;
 	if getn(sItemIds) < nAmg then
-		WriteLog(format("[%s] [AddItemEx Tham sè sai!] [Role:%s (acc:%s)] [Item:%s]",--´íÎóÐÅÏ¢Êä³öµ½ÀÏµÄÈÕÖ¾
+		WriteLog(format("[%s] [AddItemEx wrong parameter!] [Role:%s (acc:%s)] [Item:%s]",--´íÎóÐÅÏ¢Êä³öµ½ÀÏµÄÈÕÖ¾
 			strLog, GetName(), GetAccount(), strName));
 		return 0;
 	end
@@ -2174,7 +2174,7 @@ function gf_AddItems(sItemIds, strName, nCount)
 		gf_Log(format("%s(%d,%d,%d)\t%d",
 				strName,sItemIds[1],sItemIds[2],sItemIds[3],nCount))
 	elseif nRet == 2 then
-		Msg2Player("C¸c h¹ ®· r¬i["..strName.."]x"..nCount);
+		Msg2Player("You dropped["..strName.."]x"..nCount);
 		gf_Log(format("%s(%d,%d,%d)\t%d",
 			strName,sItemIds[1],sItemIds[2],sItemIds[3],nCount));
 	end
@@ -2511,20 +2511,20 @@ function gf_ThrowDiceCallBack(dwID)
 	local bAllGiveUp = 1;
 	if type(t) ~= "table" then return end
 	for index, value in t do
-		local str = value[1].."NÐm"..value[2].." ®iÓm"
+		local str = value[1].."Throw"..value[2].." ®iÓm"
 		if value[3] == 0 then
-			str = value[1].."Phãng"
+			str = value[1].."Cast"
 		elseif value[3] == 1 then
-			str = str.." (TuyÕt cÇu)"
+			str = str.." (Snowball)"
 			if value[4] == 1 then
-				str = str.." -§· nhÆt ®­îc"..szItem
+				str = str.." -Already picked up"..szItem
 				gf_WriteLogEx("gf_ThrowDice", "gf_ThrowDiceCallBack", nil, szItem, nil, GetTongName());
 			end
 			bAllGiveUp = 0
 		elseif value[3] == 2 then
 			str = str.." (Tham lam)"
 			if value[4] == 1 then
-				str = str.." -§· nhÆt ®­îc"..szItem
+				str = str.." -Already picked up"..szItem
 				gf_WriteLogEx("gf_ThrowDice", "gf_ThrowDiceCallBack", nil, szItem, nil, GetTongName());
 			end
 			bAllGiveUp = 0

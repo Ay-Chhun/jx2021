@@ -69,10 +69,10 @@ function main()
 	SetTask(TSK_NIENTHU20101201_INFO, GetTask(TSK_NIENTHU20101201_INFO) + 1)
 	
 	ModifyExp(1000000)
-	WriteLogEx("Hoat dong Thang 12","TiÓu niªn thó",1000000,"®iÓm kinh nghiÖm")
+	WriteLogEx("Hoat dong Thang 12","Little Year Beast",1000000,"®iÓm kinh nghiÖm")
 	Msg2Player("B¹n nhËn ®­îc 1000000 ®iÓm kinh nghiÖm!")
 	
 	-- doi 30*60 gi©y míi cã thÓ ¨n ®­îc n÷a	
-	StartTimeGuage("TiÓu niªn thó", 30*60 ,0,1)	
+	StartTimeGuage("Little Year Beast", 30*60 ,0,1)	
 end
 -- ================================================

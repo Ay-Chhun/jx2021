@@ -2,7 +2,7 @@
 
 function main()
 	if GetPlayerFaction() == 4  then
-		Say("S­ ®Ö muèn vÒ s­ m«n kh«ng?",3,"PhiÒn huynh ®­a ®Ö xuèng nói!/gotogaibang","T×m hiÓu khu vùc luyÖn cÊp/maphelp","Thay ®Ö vÊn an s­ phô!/no")
+		Say("S­ ®Ö muèn vÒ s­ m«n kh«ng?",3,"PhiÒn huynh ®­a ®Ö xuèng nói!/gotogaibang","T×m hiÓu khu vùc luyÖn cÊp/maphelp","Let me pay respects to the master for you!/no")
 	elseif GetPlayerFaction() == 2  then
 		Talk(1,"","Vâ §ang ch­ hiÖp næi danh thiªn h¹, xin thay mÆt KhiÕu Hãa Tö vÊn an Tö H¹c Ch©n Nh©n.")
 	elseif GetPlayerFaction() == 3 then				
@@ -12,7 +12,7 @@ function main()
 	elseif GetPlayerFaction() == 5 then
 		Talk(1,"","Nh¾c ®Õn ¸m khİ §­êng M«n lµ thiªn h¹ ®· biÕn s¾c, sao quı ph¸i kh«ng nghiªn cøu thªm binh khİ kh¸c?")
 	else
-		Say("Thİ chñ t×m ta cã chuyÖn g×?",2,"Ta muèn tham quan C¸i Bang/gotogaibang","Kh«ng cã g×!/no")
+		Say("Thİ chñ t×m ta cã chuyÖn g×?",2,"Ta muèn tham quan C¸i Bang/gotogaibang","Nothing at all!/no")
 	end
 end
 

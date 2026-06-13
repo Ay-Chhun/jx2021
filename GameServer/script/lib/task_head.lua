@@ -26,13 +26,13 @@ TaskCondition = {
 	
 	LevelEqual = "ßºng c p = ",
 	
-	ValueMore = "Bi’n l≠Óng lÌn",
+	ValueMore = "Variable greater than",
 	
-	ValueLess = "Bi’n l≠Óng nh·",
+	ValueLess = "Variable less than",
 	
 	ValueEqual = "Bi’n l≠Óng bªng",
 	
-	ReputeMore = "Danh v‰ng lÌn",
+	ReputeMore = "Reputation greater than",
 	
 	HaveItem = "ß∆c ph»m",
 	
@@ -47,7 +47,7 @@ TaskEntity = {
 	
 	PayMoney = "l≠Óng ti“n ti™u hao",
 	
-	ChangeValue = "Thay ÆÊi bi’n l≠Óng",
+	ChangeValue = "Change variable",
 
 }
 
@@ -56,11 +56,11 @@ TaskAward = {
 
 	AwardGoods = "VÀt ph»m",
 	
-	AwardMoney = "Ng©n l≠Óng",
+	AwardMoney = "Silver tael",
 	
 	AwardExp = "Kinh nghi÷m",
 	
-	AwardRepute = "Danh v‰ng",
+	AwardRepute = "Reputation",
 	
 	AwardStartTask = "Bæt Æ«u nhi÷m vÙ",
 

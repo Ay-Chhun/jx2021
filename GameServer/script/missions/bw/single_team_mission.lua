@@ -163,7 +163,7 @@ function OnLeave(RoleIndex)
 		PlayerIndex = nOldPlayer;
 	end
 
-	str_news = GetName().."Rêi trËn ®Þa.";
+	str_news = GetName().."Leave the battlefield.";
 	Msg2MSAll(SINGLE_TEAM_MISSION_ID,str_news);
 	
 	SetTaskTemp(PLAYER_CAMP,0);

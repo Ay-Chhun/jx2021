@@ -10,11 +10,11 @@ t_pet_type = {
 			},
 			
 	[3]= 	{
-				[1] = {"Sãi rõng",3000,1},
+				[1] = {"Forest Wolf",3000,1},
 				[2] = {"Qu¹ §en",3000,2},
 				[3] = {"C¸ sÊu",2950,3},
-				[4] = {"Cãc",400,4},	
-				[5] = {"D¬i löa",300,5},	
+				[4] = {"Toad",400,4},	
+				[5] = {"Fire Bat",300,5},	
 				[6] = {"Bß c¹p",100,6},	
 				[7] = {"Ng©n Hå",100,7},	
 				[8] = {"Th­¬ng Viªn",50,8},	
@@ -43,7 +43,7 @@ t_pet_step =
 }
 
 function OnUse(nItemIdx)
-	Say("Më Trøng ngÉu nhiªn ®Ó cã ®­îc c¸c lo¹i B¹n §ång Hµnh kh¸c. B¹n cã muèn më  trøng kh«ng?", 5, format("§ång ý (cÇn 1 Bµn cæ phñ)/#open_egg(%d)",nItemIdx), "LuyÖn ThuÇn Thó ThuËt cÊp 1/learn_subskill_1_active", format("Ta muèn ®Ëp trøng nhËn 10 ®iÓm Linh Lùc/#receive_pet_god_point(%d)", nItemIdx), format("Ta muèn ®Ëp trøng nhËn 30 ®iÓm N©ng CÊp/#receive_pet_upgrade_point(%d)", nItemIdx), "T¹m thêi cÊt ®i/gf_DoNothing")
+	Say("Më Trøng ngÉu nhiªn ®Ó cã ®­îc c¸c lo¹i B¹n §ång Hµnh kh¸c. B¹n cã muèn më  trøng kh«ng?", 5, format("§ång ý (cÇn 1 Bµn cæ phñ)/#open_egg(%d)",nItemIdx), "LuyÖn ThuÇn Thó ThuËt cÊp 1/learn_subskill_1_active", format("Ta muèn ®Ëp trøng nhËn 10 ®iÓm Linh Lùc/#receive_pet_god_point(%d)", nItemIdx), format("Ta muèn ®Ëp trøng nhËn 30 ®iÓm N©ng CÊp/#receive_pet_upgrade_point(%d)", nItemIdx), "Store away temporarily/gf_DoNothing")
 end
 
 function open_egg(nItemIdx)
@@ -60,7 +60,7 @@ function open_egg(nItemIdx)
 		if DelItemByIndex(nItemIdx,-1) == 1 then
 			local nRand = gf_GetRandItemByTable(t_pet_type[nCurLevel],10000,1)
 			local szPetType = t_pet_type[nCurLevel][nRand][1]
-			Say("Chóc mõng b¹n ®· nhËn ®­îc 1 <color=yellow>"..szPetType.."<color>. B¹n cã muèn nhËn lµm B¹n §ång Hµnh?",2,format("Ta ®ång ý!/#confirm_open_egg(%d)",nRand),"Kh«ng muèn nhËn/gf_DoNothing")		
+			Say("Chóc mõng b¹n ®· nhËn ®­îc 1 <color=yellow>"..szPetType.."<color>. B¹n cã muèn nhËn lµm B¹n §ång Hµnh?",2,format("I agree!/#confirm_open_egg(%d)",nRand),"Kh«ng muèn nhËn/gf_DoNothing")		
 		end	
 	end
 end

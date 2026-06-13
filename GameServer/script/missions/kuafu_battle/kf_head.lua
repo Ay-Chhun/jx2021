@@ -279,7 +279,7 @@ function KF_JoinBattle(nCamp)
 	CleanInteractive();
 	local nMapID = gf_GetCurMapID();
 	if NewWorld(nMapID, KF_JOIN_MISSION_POS[nCamp][1], KF_JOIN_MISSION_POS[nCamp][2]) == 1 then
-		Msg2MSAll(KF_MISSION_ID, GetName().." ®· gia nhËp "..KF_tCampName[nCamp]);
+		Msg2MSAll(KF_MISSION_ID, GetName().." has joined"..KF_tCampName[nCamp]);
 		Msg2Player("C¸c h¹ ®· gia nhËp råi"..KF_tCampName[nCamp]);
 		KF_SetPlayerState(nCamp);
 		AddMSPlayer(KF_MISSION_ID, nCamp);
@@ -614,7 +614,7 @@ function KF_CreateZhenqi(nKind, id, f, x)
 		local npcIndex = CreateNpc(tNpcList[nCamp][1], tNpcList[nCamp][2], nMap, nX, nY);
 		SetNpcScript(npcIndex, tNpcList[nCamp][3]);
 		SetCampToNpc(npcIndex, KF_tCampType[nCamp]);
-		Msg2MSAll(KF_MISSION_ID, format("%s, anh hïng %s, ®· chiÕm %s.", KF_tCampName[nCamp], GetName(), tNpcList[0][2]));
+		Msg2MSAll(KF_MISSION_ID, format("%s, hero %s, has captured %s.", KF_tCampName[nCamp], GetName(), tNpcList[0][2]));
 		--Ïà¹ØÉèÖÃ
 		SetMissionV(tNpcList[nCamp][4], nCamp);
 		KF_AddScore(KF_SCORE_ZHENQI, nCamp);
@@ -645,7 +645,7 @@ function KF_CreateZhenqi(nKind, id, f, x)
 			local npcIndex = CreateNpc(tNpcList[KF_ALL_ID][1], tNpcList[KF_ALL_ID][2], nMap, nX, nY);
 			SetNpcScript(npcIndex, tNpcList[KF_ALL_ID][3]);
 			SetCampToNpc(npcIndex, KF_tCampType[KF_ALL_ID]);
-			Msg2MSAll(KF_MISSION_ID, format("Phe trung lËp ®· chiÕm %s.", tNpcList[0][2]));
+			Msg2MSAll(KF_MISSION_ID, format("The neutral faction has captured %s.", tNpcList[0][2]));
 			SetMissionV(tNpcList[KF_ALL_ID][4], KF_ALL_ID);		
 		end
 	end
@@ -678,7 +678,7 @@ function KF_GetSayTale(nCamp, nKind, bTag)
 			end
 		end
 	end
-	tinsert(tRet, "Ra khái/nothing");
+	tinsert(tRet, "Leave/nothing");
 	return tRet;
 end
 
@@ -769,7 +769,7 @@ function KF_Order_Duwei(nWhich)
 	SetCampToNpc(npcIndex, KF_tCampType[nCamp]);
 	KF_CreateShiBing(nWhich, nCamp);
 	SetMissionV(tNpc[nCamp][4], 1);
-	Msg2MSAll(KF_MISSION_ID, format("%s (Nguyªn So¸i/T­íng Qu©n): %s §« óy phông mÖnh ®ét kÝch %s.", GetName(), KF_tCampName[nCamp], tPos[3]));
+	Msg2MSAll(KF_MISSION_ID, format("%s (Marshal/General): %s commander sealed the order and raided %s.", GetName(), KF_tCampName[nCamp], tPos[3]));
 end
 
 --½«¾ü³öÏÖ
@@ -838,7 +838,7 @@ function KF_Add_XueHenBuff()
 		CastState("state_life_max_percent_add",KF_XUEHEN[nTbIdx][3],2*60*18,1,9910,1);		--ÉúÃüÉÏÏÞ
 		CastState("state_buff_resist",KF_XUEHEN[nTbIdx][4],2*60*18,1,9911,1);					--ÃâÒß¸ºÃæ×´Ì¬
 		SyncCustomState(1,9908,1,KF_XUEHEN[nTbIdx][5]);
-		Msg2Player("B¹n nhËn ®­îc "..KF_XUEHEN[nTbIdx][5].."HiÖu qu¶: "..format(KF_XUEHEN[nTbIdx][6], KF_XUEHEN[nTbIdx][2], KF_XUEHEN[nTbIdx][3], KF_XUEHEN[nTbIdx][4]).."Duy tr× 2 phót.");
+		Msg2Player("B¹n nhËn ®­îc "..KF_XUEHEN[nTbIdx][5].."HiÖu qu¶: "..format(KF_XUEHEN[nTbIdx][6], KF_XUEHEN[nTbIdx][2], KF_XUEHEN[nTbIdx][3], KF_XUEHEN[nTbIdx][4]).."Lasts 2 minutes.");
 		if nTbIdx <= 9 then
 			SetCurrentNpcSFX(PIdx2NpcIdx(), 921,1,0,18*3);
 		end
@@ -869,7 +869,7 @@ function KF_KillPaiMing()
 				end
 			end
 			sort(tKiller, _sort);
-			local msg = format("XÕp h¹ng cao thñ %s: ",KF_tCampName[nCamp]);
+			local msg = format("Expert ranking %s:",KF_tCampName[nCamp]);
 			for j = 1, SORT_COUNT_MAX do
 				msg = msg..format("%s(%d)", tKiller[j][2], tKiller[j][1]);
 				if j ~= SORT_COUNT_MAX then
@@ -903,7 +903,7 @@ end
 
 function KF_MsgZhenQiState()
 	local tMsg = {
-		[0] = "Trung lËp",
+		[0] = "Neutral",
 		[1] = "Qu©n Tèng",
 		[2] = "Qu©n Liªu",	
 	}

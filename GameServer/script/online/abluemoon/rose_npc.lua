@@ -24,7 +24,7 @@ function main()
 		return 0;
 	end;
 	local nGrow = floor(GetTask(ABLUEMOON_GROW_TYPE)/10);
-	if strsub(szNpcName,strlen(szNpcName)-5,strlen(szNpcName)) == "Hoa hång" then	--³¤³ÉÁË
+	if strsub(szNpcName,strlen(szNpcName)-5,strlen(szNpcName)) == "Rose" then	--³¤³ÉÁË
 		if GetSex() == 1 then
 			Talk(1,"","Hoa hång cña ng­¬i ®· lín, mau gäi ng­êi yªu ®Õn h¸i ®i.");
 		else
@@ -32,7 +32,7 @@ function main()
 				return 0;
 			end;
 			local selTab = {
-						"§­îc th«i! (h¸i hoa hång)/#get_rose("..nNpcIdx..")",
+						"All right! (pick roses)/#get_rose("..nNpcIdx..")",
 						"§Ó ta suy nghÜ l¹i/nothing",
 						}
 			Say("Trång loµi hoa hång nµy rÊt khã, ®Ó minh chøng cho t×nh yªu cña hai ng­¬i, ng­¬i cã ®ång ý v× h¾n mµ tiÕp nhËn 1 lÇn thö th¸ch kh«ng?",getn(selTab),selTab);
@@ -40,7 +40,7 @@ function main()
 		return 0;
 	end;
 	if GetSex() == 2 then
-		Talk(1,"","Hoa ¬i, h·y mau në!");
+		Talk(1,"","Flower, hurry and bloom!");
 		return 0;
 	end;
 	if nElapseTime <= g_nWaterInterval then
@@ -104,19 +104,19 @@ function get_rose(nNpcIdx)
 	PlayerIndex = nOldIdx;
 	local szColor = "";
 	if nType == 1 then
-		szColor = "Tö";
+		szColor = "Seed";
 	else
 		szColor = " lam";
 	end;
 	local nMapID,nMapX,nMapY = GetNpcWorldPos(nNpcIdx);
 	if nType == 1 then
-		nNpcIdx = CreateNpc("Mai Quý Hoa Tö",szFemaleName.." hoa hång tÝm",nMapID,nMapX,nMapY)
+		nNpcIdx = CreateNpc("Mai Quý Hoa Tö",szFemaleName.." purple rose",nMapID,nMapX,nMapY)
 	else
-		nNpcIdx = CreateNpc("Mai Quý Hoa Lam",szFemaleName.." hoa hång lam",nMapID,nMapX,nMapY)
+		nNpcIdx = CreateNpc("Mai Quý Hoa Lam",szFemaleName.." blue rose",nMapID,nMapX,nMapY)
 	end;
-	Msg2Global(szFemaleName.." h¸i "..szMaleName.." trång "..szColor.." hoa hång, vµ nãi: "..g_tbSentence[nRandSentence]);
-	AddGlobalCountNews("<color=red>"..szFemaleName.."<color> ®· h¸i <color=red>"..szMaleName.."<color> trång"..szColor.." hoa hång, vµ nãi: "..g_tbSentence[nRandSentence]);
-	WriteLog("[Hoa hång Thè TiÓu Nha]:"..szFemaleName.." h¸i "..szMaleName.." - Hoa hång. nType:"..nType.."£¬Level:"..GetLevel());
+	Msg2Global(szFemaleName.." pick"..szMaleName.." plant"..szColor.." hoa hång, vµ nãi: "..g_tbSentence[nRandSentence]);
+	AddGlobalCountNews("<color=red>"..szFemaleName.."<color> has picked <color=red>"..szMaleName.."<color> grew"..szColor.." hoa hång, vµ nãi: "..g_tbSentence[nRandSentence]);
+	WriteLog("[Rose Tho Tieu Nha]:"..szFemaleName.." pick"..szMaleName.." - Rose. nType:"..nType..", Level:"..GetLevel());
 end;
 function water_rose(nNpcIdx)
 	if check_team() == 0 then
@@ -132,14 +132,14 @@ function water_rose(nNpcIdx)
 	SetNpcLifeTime(nNpcIdx,0);
 	local szFemaleName = get_female_name();
 	if nGrow == 1 then
-		nNpcIdx = CreateNpc("MÇm Hoa hång","®Ó"..szFemaleName.." trång hoa hång",nMapID,nMapX,nMapY)
+		nNpcIdx = CreateNpc("MÇm Hoa hång","de"..szFemaleName.." grow roses",nMapID,nMapX,nMapY)
 	elseif nGrow == 2 then
-		nNpcIdx = CreateNpc(" nh¸nh hoa hång","®Ó"..szFemaleName.." nô hoa",nMapID,nMapX,nMapY)
+		nNpcIdx = CreateNpc(" rose branch","de"..szFemaleName.." flower bud",nMapID,nMapX,nMapY)
 	elseif nGrow == 3 then
 		if mod(GetTask(ABLUEMOON_GROW_TYPE),10) == 1 then
-			nNpcIdx = CreateNpc("Mai Quý Hoa Tö","®Ó"..szFemaleName.." - Hoa hång tÝm",nMapID,nMapX,nMapY)
+			nNpcIdx = CreateNpc("Mai Quý Hoa Tö","de"..szFemaleName.." - purple rose",nMapID,nMapX,nMapY)
 		else
-			nNpcIdx = CreateNpc("Mai Quý Hoa Lam","®Ó"..szFemaleName.." - Hoa hång lam",nMapID,nMapX,nMapY)
+			nNpcIdx = CreateNpc("Mai Quý Hoa Lam","de"..szFemaleName.." - blue rose",nMapID,nMapX,nMapY)
 		end;
 	end;
 	SetNpcScript(nNpcIdx,"\\script\\online\\abluemoon\\rose_npc.lua");	

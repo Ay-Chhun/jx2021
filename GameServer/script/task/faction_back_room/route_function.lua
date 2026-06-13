@@ -10,18 +10,18 @@ function BR_RF_InitStage_SLSJ(nDiff,nStage)
 	local nNpcIdx = 0;
 	local tbPos = {};
 	if nDiff == 4 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 7","C¬ quan",nMapID,1602,3193);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 7","Mechanism",nMapID,1602,3193);
 	elseif nDiff == 5 then
 		tbPos = {{1591,3199},{1594,3203},{1593,3204},{1590,3201}};
- 		BR_CreateFellow("MËt thÊt s­ m«n thiÕu l©m","ThiÕu L©m hé ph¸p",4,CAMP_PLAYER,tbPos)
+ 		BR_CreateFellow("MËt thÊt s­ m«n thiÕu l©m","Shaolin Dharma Protector",4,CAMP_PLAYER,tbPos)
 	elseif nDiff == 6 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 9","C¬ quan",nMapID,1602,3193);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 9","Mechanism",nMapID,1602,3193);
 	elseif nDiff == 7 then
 		tbPos = {{1591,3199},{1594,3203},{1593,3204},{1590,3201}};
- 		BR_CreateFellow("MËt thÊt s­ m«n thiÕu l©m","ThiÕu L©m hé ph¸p",4,CAMP_PLAYER,tbPos)
+ 		BR_CreateFellow("MËt thÊt s­ m«n thiÕu l©m","Shaolin Dharma Protector",4,CAMP_PLAYER,tbPos)
 	elseif nDiff == 8 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 7","C¬ quan",nMapID,1573,3205);
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 7","C¬ quan",nMapID,1609,3203);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 7","Mechanism",nMapID,1573,3205);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 7","Mechanism",nMapID,1609,3203);
 	end;
 end;
 function BR_RF_ProcStageEven_SLSJ(nDiff,nStage)
@@ -37,7 +37,7 @@ function BR_RF_ProcStageEven_SLSJ(nDiff,nStage)
 	};
 	if nDiff == 3 then
 		if BR_CheckTimerPosition(0,30) == 1 then
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 5","C¬ quan",nMapID,1591,3204);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 5","Mechanism",nMapID,1591,3204);
 			SetNpcLifeTime(nNpcIdx,8);
 		end;
 	elseif nDiff == 5 then
@@ -53,20 +53,20 @@ function BR_RF_ProcStageEven_SLSJ(nDiff,nStage)
 			SetNpcLifeTime(nNpcIdx,15);
 		end;
 		if BR_CheckTimerPosition(40,60) == 1 then
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 5","C¬ quan",nMapID,1581,3213);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 5","Mechanism",nMapID,1581,3213);
 			SetNpcLifeTime(nNpcIdx,12);
 		end;	
 	elseif nDiff == 9 then
 		if BR_CheckTimerPosition(0,60) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 3","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 3","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,20);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
 		end;
 		if BR_CheckTimerPosition(20,30) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 5","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 5","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,6);
 		end;
 	end;
@@ -83,12 +83,12 @@ function BR_RF_InitStage_SLCS(nDiff,nStage)
 	local nMapID = BR_GetCurMapID();
 	local nNpcIdx = 0;
 	if nDiff == 4 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 2","C¬ quan",nMapID,1602,3193);	
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 2","Mechanism",nMapID,1602,3193);	
 	elseif nDiff == 6 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 3","C¬ quan",nMapID,1581,3213);	
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 3","Mechanism",nMapID,1581,3213);	
 	elseif nDiff == 8 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1573,3205);	
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1609,3203);	
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1573,3205);	
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1609,3203);	
 	end;
 end;
 function BR_RF_ProcStageEven_SLCS(nDiff,nStage)
@@ -103,39 +103,39 @@ function BR_RF_ProcStageEven_SLCS(nDiff,nStage)
 	};
 	if nDiff == 3 then
 		if BR_CheckTimerPosition(0,30) == 1 then
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh ThiÕuL©mthiÒn","C¬ quan",nMapID,1591,3204);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh ThiÕuL©mthiÒn","Mechanism",nMapID,1591,3204);
 			SetNpcLifeTime(nNpcIdx,8);
 		end;			
 	elseif nDiff == 5 then
 		if BR_CheckTimerPosition(0,40) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,30);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],30)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],30)
 		end;	
 	elseif nDiff == 7 then
 		if BR_CheckTimerPosition(0,60) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,20);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
 		end;
 		if BR_CheckTimerPosition(20,30) == 1 then
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 4","C¬ quan",nMapID,1591,3204);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 4","Mechanism",nMapID,1591,3204);
 			SetNpcLifeTime(nNpcIdx,10);
 		end;	
 	elseif nDiff == 9 then
 		if BR_CheckTimerPosition(0,60) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,20);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
 		end;
 		if BR_CheckTimerPosition(20,30) == 1 then
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 4","C¬ quan",nMapID,1591,3204);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 4","Mechanism",nMapID,1591,3204);
 			SetNpcLifeTime(nNpcIdx,15);
 		end;
 	end;
@@ -152,12 +152,12 @@ function BR_RF_InitStage_SLWS(nDiff,nStage)
 	local nMapID = BR_GetCurMapID();
 	local nNpcIdx = 0;
 	if nDiff == 4 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 7","C¬ quan",nMapID,1602,3193);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 7","Mechanism",nMapID,1602,3193);
 	elseif nDiff == 6 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 9","C¬ quan",nMapID,1602,3193);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 9","Mechanism",nMapID,1602,3193);
 	elseif nDiff == 8 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 7","C¬ quan",nMapID,1573,3205);	
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 7","C¬ quan",nMapID,1609,3203);		
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 7","Mechanism",nMapID,1573,3205);	
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 7","Mechanism",nMapID,1609,3203);		
 	end;
 end;
 function BR_RF_ProcStageEven_SLWS(nDiff,nStage)
@@ -172,41 +172,41 @@ function BR_RF_ProcStageEven_SLWS(nDiff,nStage)
 	};
 	if nDiff == 3 then
 		if BR_CheckTimerPosition(0,30) == 1 then
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 5","C¬ quan",nMapID,1591,3204);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 5","Mechanism",nMapID,1591,3204);
 			SetNpcLifeTime(nNpcIdx,8);
 		end;		
 	elseif nDiff == 5 then
 		if BR_CheckTimerPosition(0,40) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 3","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 3","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,20);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
 		end;	
 	elseif nDiff == 7 then
 		if BR_CheckTimerPosition(0,60) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 3","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 3","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,20);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
 		end;
 		if BR_CheckTimerPosition(20,60) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 5","C¬ quan",nMapID,1591,3204);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 5","Mechanism",nMapID,1591,3204);
 			SetNpcLifeTime(nNpcIdx,12);
 		end;	
 	elseif nDiff == 9 then
 		if BR_CheckTimerPosition(0,60) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 3","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 3","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,20);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],20);
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],20);
 		end;
 		if BR_CheckTimerPosition(20,30) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 5","C¬ quan",nMapID,1591,3204);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 5","Mechanism",nMapID,1591,3204);
 			SetNpcLifeTime(nNpcIdx,10);
 		end;		
 	end;
@@ -223,33 +223,33 @@ function BR_RF_InitStage_TM(nDiff,nStage)
 	local nMapID = BR_GetCurMapID();
 	local nNpcIdx = 0;
 	if nDiff == 3 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o chËm 2","C¬ quan",nMapID,1592,3206);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o chËm 2","Mechanism",nMapID,1592,3206);
 	end;
 	if nDiff == 4 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1592,3189);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1592,3189);
 	end;
 	if nDiff == 5 and nStage ~= MAX_STAGE then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o chËm 3","C¬ quan",nMapID,1592,3206);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o chËm 3","Mechanism",nMapID,1592,3206);
 	end;
 	if nDiff == 6 then
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1584,3206);
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1603,3206);
 	end;	
 	if nDiff == 7 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 6","C¬ quan",nMapID,1592,3189);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 6","Mechanism",nMapID,1592,3189);
 	end;
 	if nDiff == 8 and nStage ~= MAX_STAGE then
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 2 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1584,3206);
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 2 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1603,3206);
 	end;	
 	if (nDiff == 8 and nStage == MAX_STAGE) or (nDiff == 9 and nStage ~= MAX_STAGE) then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1592,3189);
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1592,3231);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1592,3189);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1592,3231);
 	end;
 	if nDiff == 9 and nStage == MAX_STAGE then
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 2 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1592,3189);
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 2 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1592,3231);
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o chËm 2","C¬ quan",nMapID,1592,3206);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o chËm 2","Mechanism",nMapID,1592,3206);
 	end;
 end;
 function BR_RF_ProcStageEven_TM(nDiff,nStage)
@@ -266,13 +266,13 @@ function BR_RF_InitStage_EMFJ(nDiff,nStage)
 	local tbPos = {{1591,3199},{1596,3204},{1600,3208},{1604,3212},{1600,3213},{1590,3203}};
 	local tbObstaclePos =
 	{
-		[1] = {"Giai nh©n «m nçi sÇu",1584,3214},
-		[2] = {"Mµy liÔu ®­îm t×nh s©u",1586,3216},
-		[3] = {"Võa gÆp lÖ tu«n dµi",1588,3218},
-		[4] = {"V× ai lßng quÆn ®au",1590,3220},
+		[1] = {"The beauty cradles her sorrow",1584,3214},
+		[2] = {"Willow brows steeped in deep love",1586,3216},
+		[3] = {"Just met, tears flow long",1588,3218},
+		[4] = {"For whom does the heart wrench in pain",1590,3220},
 	}
 	if nDiff == 2 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1606,3198);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1606,3198);
 	elseif nDiff == 4 then
 		BR_CreateFellow("Nga My s­ tû","Nga My s­ tû",5,CAMP_PLAYER,tbPos);	--´´½¨°ïÊÖ
 	elseif nDiff == 6 then
@@ -283,16 +283,16 @@ function BR_RF_InitStage_EMFJ(nDiff,nStage)
 		for i=1,getn(tbObstaclePos) do
 			nNpcIdx = BR_CreateNpc("Nga My mËt thÊt c¬ quan",tbObstaclePos[i][1],nMapID,tbObstaclePos[i][2],tbObstaclePos[i][3],CAMP_PLAYER);
 		end;
-		nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh","C¬ quan",nMapID,1584,3221);
+		nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh","Mechanism",nMapID,1584,3221);
 	elseif nDiff == 8 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1576,3212);
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1614,3209);		
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1576,3212);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1614,3209);		
 	elseif nDiff == 9 then
 		BR_CreateFellow("Nga My s­ tû","Nga My s­ tû",5,CAMP_PLAYER,tbPos);	--´´½¨°ïÊÖ
 		for i=1,getn(tbObstaclePos) do
 			nNpcIdx = BR_CreateNpc("Nga My mËt thÊt c¬ quan",tbObstaclePos[i][1],nMapID,tbObstaclePos[i][2],tbObstaclePos[i][3],CAMP_PLAYER);
 		end;
-		nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh","C¬ quan",nMapID,1584,3221);
+		nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh","Mechanism",nMapID,1584,3221);
 	end;
 end;
 function BR_RF_ProcStageEven_EMFJ(nDiff,nStage)
@@ -302,7 +302,7 @@ function BR_RF_ProcStageEven_EMFJ(nDiff,nStage)
 	local tbPos = {{1591,3199},{1596,3204},{1600,3208},{1604,3212},{1600,3213},{1590,3203}};
 	if nDiff == 3 then
 		if BR_CheckTimerPosition(0,30) == 1 then
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh NgaMyphËtgia","C¬ quan",nMapID,1597,3209);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh NgaMyphËtgia","Mechanism",nMapID,1597,3209);
 			SetNpcLifeTime(nNpcIdx,10);
 		end;
 	elseif nDiff == 5 then
@@ -316,13 +316,13 @@ function BR_RF_ProcStageEven_EMFJ(nDiff,nStage)
 		if nStage ~= MAX_STAGE then
 			if BR_CheckTimerPosition(0,20) == 1 then
 				BR_CastPlayerState("state_confusion",0,1,1,1);
-				Msg2MSAll(MISSION_ID,"Hçn lo¹n 1 gi©y");
+				Msg2MSAll(MISSION_ID,"Chaos 1 second");
 			end;
 		end;
 	elseif nDiff == 8 then
 		if BR_CheckTimerPosition(0,20) == 1 then
 			BR_CastPlayerState("state_confusion",0,1,1,1);
-			Msg2MSAll(MISSION_ID,"Hçn lo¹n 1 gi©y");
+			Msg2MSAll(MISSION_ID,"Chaos 1 second");
 		end;
 	elseif nDiff == 9 then
 		if BR_CheckTimerPosition(0,30) == 1 then
@@ -344,17 +344,17 @@ function BR_RF_InitStage_EMSJ(nDiff,nStage)
 	local nNpcIdx = 0;
 	local tbPos = {{1591,3202},{1589,3209},{1601,3212},{1594,3205}};
 	if nDiff == 3 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o NgaMytôcgia","C¬ quan",nMapID,1606,3198);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o NgaMytôcgia","Mechanism",nMapID,1606,3198);
 	elseif nDiff == 5 then
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 7 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1587,3200);
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 7 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1607,3218);
 		BR_CreateFellow("Nga My s­ tû","Nga My s­ tû",4,CAMP_PLAYER,tbPos);	--´´½¨°ïÊÖ
 	elseif nDiff == 6 then
 		if nStage == MAX_STAGE then
-			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o NgaMytôcgia","C¬ quan",nMapID,1584,3221);
+			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o NgaMytôcgia","Mechanism",nMapID,1584,3221);
 		end;
 	elseif nDiff == 8 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o NgaMytôcgia","C¬ quan",nMapID,1584,3221);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o NgaMytôcgia","Mechanism",nMapID,1584,3221);
 	end;
 end;
 function BR_RF_ProcStageEven_EMSJ(nDiff,nStage)
@@ -373,10 +373,10 @@ function BR_RF_ProcStageEven_EMSJ(nDiff,nStage)
 	if nDiff == 4 then
 		if BR_CheckTimerPosition(0,30) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,20);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
 		end;
 	elseif nDiff == 6 then
 		if BR_CheckTimerPosition(0,20) == 1 then
@@ -388,10 +388,10 @@ function BR_RF_ProcStageEven_EMSJ(nDiff,nStage)
 	elseif nDiff == 7 then
 		if BR_CheckTimerPosition(0,30) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,20);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("C¬ quan mËt thÊt s­ m«n NgaMy1","Trë ng¹i",3,CAMP_EVIL,tbObstaclePos[nRand],20)
+			BR_CreateFellow("C¬ quan mËt thÊt s­ m«n NgaMy1","Obstacle",3,CAMP_EVIL,tbObstaclePos[nRand],20)
 		end;	
 	elseif nDiff == 8 then
 		if BR_CheckTimerPosition(0,20) == 1 then
@@ -403,14 +403,14 @@ function BR_RF_ProcStageEven_EMSJ(nDiff,nStage)
 	elseif nDiff == 9 then
 		if BR_CheckTimerPosition(0,60) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,20);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("C¬ quan mËt thÊt s­ m«n NgaMy1","Trë ng¹i",3,CAMP_EVIL,tbObstaclePos[nRand],20)
+			BR_CreateFellow("C¬ quan mËt thÊt s­ m«n NgaMy1","Obstacle",3,CAMP_EVIL,tbObstaclePos[nRand],20)
 		end;
 		if BR_CheckTimerPosition(20,30) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 4","C¬ quan",nMapID,1597,3209);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 4","Mechanism",nMapID,1597,3209);
 			SetNpcLifeTime(nNpcIdx,10);
 		end;	
 	end;
@@ -427,12 +427,12 @@ function BR_RF_InitStage_GBJY(nDiff,nStage)
 	local nMapID = BR_GetCurMapID();
 	local nNpcIdx = 0;
 	if nDiff == 4 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 2","C¬ quan",nMapID,1598,3179);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 2","Mechanism",nMapID,1598,3179);
 	elseif nDiff == 6 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 3","C¬ quan",nMapID,1598,3179);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 3","Mechanism",nMapID,1598,3179);
 	elseif nDiff == 8 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1587,3182);
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1608,3213);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1587,3182);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1608,3213);
 	end;
 end;
 function BR_RF_ProcStageEven_GBJY(nDiff,nStage)
@@ -487,7 +487,7 @@ function BR_RF_ProcStageEven_GBJY(nDiff,nStage)
 	end;
 	if nDiff == 3 then
 		if BR_CheckTimerPosition(0,30) == 1 then
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 4","C¬ quan",nMapID,1598,3196);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 4","Mechanism",nMapID,1598,3196);
 			SetNpcLifeTime(nNpcIdx,8);
 		end;		
 	elseif nDiff == 4 then
@@ -496,10 +496,10 @@ function BR_RF_ProcStageEven_GBJY(nDiff,nStage)
 		funLifeProcess();
 		if BR_CheckTimerPosition(0,60) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,20);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],20)		
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],20)		
 		end;
 	elseif nDiff == 6 then
 		funLifeProcess();
@@ -507,10 +507,10 @@ function BR_RF_ProcStageEven_GBJY(nDiff,nStage)
 		funLifeProcess();
 		if BR_CheckTimerPosition(0,40) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,20);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],20)		
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],20)		
 		end;
 	elseif nDiff == 8 then
 		funLifeProcess();
@@ -518,14 +518,14 @@ function BR_RF_ProcStageEven_GBJY(nDiff,nStage)
 		funLifeProcess();
 		if BR_CheckTimerPosition(0,60) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,20);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],20)		
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],20)		
 		end;
 		if BR_CheckTimerPosition(20,30) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 4","C¬ quan",nMapID,1598,3196);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 4","Mechanism",nMapID,1598,3196);
 			SetNpcLifeTime(nNpcIdx,10);
 		end;		
 	end;
@@ -542,9 +542,9 @@ function BR_RF_InitStage_GBWY(nDiff,nStage)
 	local nMapID = BR_GetCurMapID();
 	local nNpcIdx = 0;
 	if nDiff == 3 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1598,3193);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1598,3193);
 	elseif nDiff == 6 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1598,3179);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1598,3179);
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1598,3218);
 	end;
 end;
@@ -564,49 +564,49 @@ function BR_RF_ProcStageEven_GBWY(nDiff,nStage)
 		if nStage ~= MAX_STAGE then
 			if BR_CheckTimerPosition(0,40) == 1 then
 				nRand = random(1,getn(tbRandAllPos));
-				nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 1","C¬ quan",nMapID,tbRandAllPos[nRand][1],tbRandAllPos[nRand][2],CAMP_PLAYER);
+				nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 1","Mechanism",nMapID,tbRandAllPos[nRand][1],tbRandAllPos[nRand][2],CAMP_PLAYER);
 				SetNpcLifeTime(nNpcIdx,25);
 			end;
 		end;
 	elseif nDiff == 5 then
 		if BR_CheckTimerPosition(0,60) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,20);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
 		end;	
 	elseif nDiff == 7 then
 		if BR_CheckTimerPosition(0,60) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,40);
 			--Á½×éÕÏ°­
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],40)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],40)
 			tremove(tbObstaclePos,nRand);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],40)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],40)
 		end;	
 	elseif nDiff == 8 then
 		if BR_CheckTimerPosition(0,30) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,20);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
 		end;	
 	elseif nDiff == 9 then
 		if BR_CheckTimerPosition(0,30) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,20);
 			--Á½×éÕÏ°­
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
 			tremove(tbObstaclePos,nRand);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
 		end;		
 	end;
 	if nNpcIdx ~= 0 then
@@ -626,7 +626,7 @@ function BR_RF_InitStage_WDDJ(nDiff,nStage)
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1595,3237);
 	elseif nDiff == 4 then
 		if nStage ~= MAX_STAGE then
-			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1585,3196);
+			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1585,3196);
 		end;
 	end;
 end;
@@ -651,55 +651,55 @@ function BR_RF_ProcStageEven_WDDJ(nDiff,nStage)
 	if nDiff == 5 then
 		if BR_CheckTimerPosition(0,30) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);		
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);		
 			SetNpcLifeTime(nNpcIdx,20);
 			BR_SetCurrentNpcSFX(nNpcIdx,962);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],20)
 		end;
 	elseif nDiff == 6 then
 		if BR_CheckTimerPosition(0,30) == 1 then
 			nRand = random(1,getn(tbJiGuanPos));
-			nNpcIdx = BR_CreateNpc("Vâ §ang mËt thÊt c¬ quan 1","C¬ quan",nMapID,tbJiGuanPos[nRand][1][1],tbJiGuanPos[nRand][1][2]);		
+			nNpcIdx = BR_CreateNpc("Vâ §ang mËt thÊt c¬ quan 1","Mechanism",nMapID,tbJiGuanPos[nRand][1][1],tbJiGuanPos[nRand][1][2]);		
 			SetNpcLifeTime(nNpcIdx,20);
 			BR_SetCurrentNpcSFX(nNpcIdx,962);
-			nNpcIdx = BR_CreateNpc("Vâ §ang mËt thÊt c¬ quan 2","C¬ quan",nMapID,tbJiGuanPos[nRand][2][1],tbJiGuanPos[nRand][2][2],CAMP_PLAYER);		
+			nNpcIdx = BR_CreateNpc("Vâ §ang mËt thÊt c¬ quan 2","Mechanism",nMapID,tbJiGuanPos[nRand][2][1],tbJiGuanPos[nRand][2][2],CAMP_PLAYER);		
 			SetNpcLifeTime(nNpcIdx,20);
 			BR_SetCurrentNpcSFX(nNpcIdx,962);
 		end;	
 	elseif nDiff == 7 then
 		if BR_CheckTimerPosition(0,60) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);		
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);		
 			SetNpcLifeTime(nNpcIdx,40);
 			BR_SetCurrentNpcSFX(nNpcIdx,962);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],40)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],40)
 			tremove(tbObstaclePos,nRand);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],40)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],40)
 		end;	
 	elseif nDiff == 8 then
 		if BR_CheckTimerPosition(0,30) == 1 then
 			nRand = random(1,getn(tbJiGuanPos));
-			nNpcIdx = BR_CreateNpc("Vâ §ang mËt thÊt c¬ quan 1","C¬ quan",nMapID,tbJiGuanPos[nRand][1][1],tbJiGuanPos[nRand][1][2]);		
+			nNpcIdx = BR_CreateNpc("Vâ §ang mËt thÊt c¬ quan 1","Mechanism",nMapID,tbJiGuanPos[nRand][1][1],tbJiGuanPos[nRand][1][2]);		
 			SetNpcLifeTime(nNpcIdx,20);
 			BR_SetCurrentNpcSFX(nNpcIdx,962);
-			nNpcIdx = BR_CreateNpc("Vâ §ang mËt thÊt c¬ quan 2","C¬ quan",nMapID,tbJiGuanPos[nRand][2][1],tbJiGuanPos[nRand][2][2],CAMP_PLAYER);		
+			nNpcIdx = BR_CreateNpc("Vâ §ang mËt thÊt c¬ quan 2","Mechanism",nMapID,tbJiGuanPos[nRand][2][1],tbJiGuanPos[nRand][2][2],CAMP_PLAYER);		
 			SetNpcLifeTime(nNpcIdx,20);
 			BR_SetCurrentNpcSFX(nNpcIdx,962);
 		end;	
 	elseif nDiff == 9 then
 		if BR_CheckTimerPosition(0,60) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);		
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);		
 			SetNpcLifeTime(nNpcIdx,40);
 			BR_SetCurrentNpcSFX(nNpcIdx,962);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],40)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],40)
 			tremove(tbObstaclePos,nRand);
 			nRand = random(1,getn(tbObstaclePos));
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],40)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],40)
 		end;	
 	end;
 end;
@@ -716,18 +716,18 @@ function BR_RF_InitStage_WDSJ(nDiff,nStage)
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1591,3237);		
 	end;
 	if (nDiff == 4 and nStage ~= MAX_STAGE) then 	--Ë¢Ò»¸ö
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 2","C¬ quan",nMapID,1591,3194);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 2","Mechanism",nMapID,1591,3194);
 	end;
 	if nDiff == 6 then	--Ë¢Ò»¸ö
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 3","C¬ quan",nMapID,1591,3194);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 3","Mechanism",nMapID,1591,3194);
 	end;
 	if nDiff == 8 and nStage ~= MAX_STAGE then
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 2 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1591,3194);
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 2 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1591,3237);		
 	end;
 	if (nDiff == 8 and nStage == MAX_STAGE) or nDiff == 9 then	--Ë¢Á½¸ö
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 2","C¬ quan",nMapID,1591,3194);
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 2","C¬ quan",nMapID,1591,3237);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 2","Mechanism",nMapID,1591,3194);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 2","Mechanism",nMapID,1591,3237);
 	end;
 end;
 function BR_RF_ProcStageEven_WDSJ(nDiff,nStage)
@@ -752,12 +752,12 @@ function BR_RF_ProcStageEven_WDSJ(nDiff,nStage)
 		if BR_CheckTimerPosition(0,30) == 1 then
 			local nNpcIdx = 0;
 			for i=1,getn(tbPos) do
-				nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh","C¬ quan",nMapID,tbPos[i][1],tbPos[i][2]);
+				nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh","Mechanism",nMapID,tbPos[i][1],tbPos[i][2]);
 				SetNpcLifeTime(nNpcIdx,10);
 				BR_SetCurrentNpcSFX(nNpcIdx,962);
 				SetCampToNpc(nNpcIdx,TB_CAMP_NAME[CAMP_ENEMY]);
 			end;
-			nNpcIdx = BR_CreateNpc("Cäc gç phe m×nh","C¬ quan",nMapID,1591,3209);
+			nNpcIdx = BR_CreateNpc("Cäc gç phe m×nh","Mechanism",nMapID,1591,3209);
 			SetNpcLifeTime(nNpcIdx,10);
 			BR_SetCurrentNpcSFX(nNpcIdx,962);
 			SetCampToNpc(nNpcIdx,TB_CAMP_NAME[CAMP_PLAYER]);
@@ -777,34 +777,34 @@ function BR_RF_InitStage_YMQQ(nDiff,nStage)
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1583,3165);
 	end;
 	if nDiff == 4 or nDiff == 6 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1604,3188);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1604,3188);
 	end;
 	if nDiff == 7 or (nDiff == 8 and nStage == MAX_STAGE) then
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1604,3188);
 	end;
 	if nDiff == 8 and nStage ~= MAX_STAGE then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 3","C¬ quan",nMapID,1604,3188);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 3","Mechanism",nMapID,1604,3188);
 	end;
 	if nDiff == 9 and nStage ~= MAX_STAGE then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1574,3177);
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1611,3178);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1574,3177);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1611,3178);
 	end;
 	if nDiff == 9 and nStage == MAX_STAGE then
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1574,3177);
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1611,3178);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1611,3178);
 	end;
 end;
 function BR_RF_ProcStageEven_YMQQ(nDiff,nStage)
 	if (nDiff == 5) or (nDiff == 6 and nStage ~= MAX_STAGE) then
 		if BR_CheckTimerPosition(0,35) == 1 then	--´óÓÚÓùÂíCDÊ±¼äµÄÖÜÆÚ¶¨Éí
 			BR_CastPlayerState("state_fetter",0,4,1,1);
-			Msg2MSAll(MISSION_ID,"§øng yªn 4 gi©y");
+			Msg2MSAll(MISSION_ID,"Stand still 4 seconds");
 		end;
 	end;
 	if (nDiff == 7) or ((nDiff == 8 or nDiff == 9) and (nStage ~= MAX_STAGE)) then
 		if BR_CheckTimerPosition(0,20) == 1 then	--Ð¡ÓÚÓùÂíCDÊ±¼äµÄÖÜÆÚ¶¨Éí
 			BR_CastPlayerState("state_fetter",0,4,1,1);
-			Msg2MSAll(MISSION_ID,"§øng yªn 4 gi©y");
+			Msg2MSAll(MISSION_ID,"Stand still 4 seconds");
 		end;
 	end;
 	if (nDiff == 6 or nDiff == 8 or nDiff == 9) and (nStage == MAX_STAGE) then
@@ -841,7 +841,7 @@ function BR_RF_InitStage_YMGQ(nDiff,nStage)	--¹Ø¿¨³õÊ¼»¯
 	local nMapID = BR_GetCurMapID();
 	local nNpcIdx = 0;
 	if nDiff == 3 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1604,3166);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1604,3166);
 	end;
 	if nDiff == 4 then
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 3 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1594,3177);
@@ -851,17 +851,17 @@ function BR_RF_InitStage_YMGQ(nDiff,nStage)	--¹Ø¿¨³õÊ¼»¯
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 3 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1583,3188);
 	end;
 	if nDiff == 8 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1574,3177);
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1611,3178);		
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1574,3177);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1611,3178);		
 	end;
 	if nDiff == 9 then
 		if nStage ~= MAX_STAGE then
-			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1574,3177);
-			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1611,3178);				
+			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1574,3177);
+			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1611,3178);				
 		else
 			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 3 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1580,3166);
 			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 3 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1604,3188);	
-			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1604,3166);	
+			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1604,3166);	
 		end;
 	end;
 end;
@@ -871,7 +871,7 @@ function BR_RF_ProcStageEven_YMGQ(nDiff,nStage)
 	local nNpcIdx = 0;
 	if nDiff == 5 then
 		if BR_CheckTimerPosition(0,30) == 1 then
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh D­¬ngM«ncung","C¬ quan",nMapID,1594,3177);	
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh D­¬ngM«ncung","Mechanism",nMapID,1594,3177);	
 			SetNpcLifeTime(nNpcIdx,10);	
 			BR_SetCurrentNpcSFX(nNpcIdx,962);
 		end;		
@@ -890,10 +890,10 @@ function BR_RF_InitStage_WDXX(nDiff,nStage)
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1604,3183);
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1593,3220);		
 	elseif nDiff == 5 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1604,3183);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1604,3183);
 	elseif nDiff == 8 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1593,3184);
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1606,3220);		
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1593,3184);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1606,3220);		
 	end;
 end;
 function BR_RF_ProcStageEven_WDXX(nDiff,nStage)
@@ -910,36 +910,36 @@ function BR_RF_ProcStageEven_WDXX(nDiff,nStage)
 	if nDiff == 4 then
 		if BR_CheckTimerPosition(0,60) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o Ngò§éctµhiÖp","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2],CAMP_EVIL);
+			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o Ngò§éctµhiÖp","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2],CAMP_EVIL);
 			SetNpcLifeTime(nNpcIdx,15);
 			BR_SetCurrentNpcSFX(nNpcIdx,962);
 		end; 
 	elseif nDiff == 6 then
 		if BR_CheckTimerPosition(0,30) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);
 			SetNpcLifeTime(nNpcIdx,10);
 			BR_SetCurrentNpcSFX(nNpcIdx,962);
 			nRand = getn(tbObstaclePos);
-			BR_CreateFellow("Cäc gç phe m×nh","Trë ng¹i",3,CAMP_PLAYER,tbObstaclePos[nRand],10)
+			BR_CreateFellow("Cäc gç phe m×nh","Obstacle",3,CAMP_PLAYER,tbObstaclePos[nRand],10)
 		end; 	
 	elseif nDiff == 7 then
 		if BR_CheckTimerPosition(0,60) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o Ngò§éctµhiÖp","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2],CAMP_EVIL);
+			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o Ngò§éctµhiÖp","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2],CAMP_EVIL);
 			SetNpcLifeTime(nNpcIdx,15);
 			BR_SetCurrentNpcSFX(nNpcIdx,962);
 		end; 	
 	elseif nDiff == 9 then
 		if BR_CheckTimerPosition(0,60) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o Ngò§éctµhiÖp","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2],CAMP_EVIL);
+			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o Ngò§éctµhiÖp","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2],CAMP_EVIL);
 			SetNpcLifeTime(nNpcIdx,15);
 			BR_SetCurrentNpcSFX(nNpcIdx,962);
 		end; 
 		if BR_CheckTimerPosition(30,60) == 1 then
 			nRand = random(1,getn(tbRandPos));
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 4","C¬ quan",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);		
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 4","Mechanism",nMapID,tbRandPos[nRand][1],tbRandPos[nRand][2]);		
 			SetNpcLifeTime(nNpcIdx,10);
 			BR_SetCurrentNpcSFX(nNpcIdx,962);
 		end;
@@ -958,13 +958,13 @@ function BR_RF_InitStage_WDGS(nDiff,nStage)
 	local nNpcIdx = 0;
 	local tbPos = {{1596,3199},{1606,3199},{1599,3199},{1602,3199}};
 	if nDiff == 3 then
-		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1604,3183);
+		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1604,3183);
 	elseif nDiff == 5 then
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1593,3184);
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1606,3220);
 	elseif nDiff == 6 then
 		if nStage ~= MAX_STAGE then
-			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1604,3183);
+			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1604,3183);
 			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1593,3220);
 		else
 			BR_CreateFellow("Ngò §éc S­ Huynh","Ngò §éc S­ Huynh",getn(tbPos),CAMP_PLAYER,tbPos);
@@ -974,14 +974,14 @@ function BR_RF_InitStage_WDGS(nDiff,nStage)
 		nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1 (cã thÓ hñy)","C¬ quan (cã thÓ ph¸ hñy)",nMapID,1606,3220);		
 	elseif nDiff == 8 then
 		if nStage ~= MAX_STAGE then
-			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1604,3183);
+			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1604,3183);
 		else
 			BR_CreateFellow("Ngò §éc S­ Huynh","Ngò §éc S­ Huynh",getn(tbPos),CAMP_PLAYER,tbPos)
 		end;
 	elseif nDiff == 9 then
 		if nStage ~= MAX_STAGE then
-			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1593,3184);
-			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","C¬ quan",nMapID,1606,3220);
+			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1593,3184);
+			nNpcIdx = BR_CreateNpc("C¬ quan ®¹n ph¸o 1","Mechanism",nMapID,1606,3220);
 		else
 			BR_CreateFellow("Ngò §éc S­ Huynh","Ngò §éc S­ Huynh",getn(tbPos),CAMP_PLAYER,tbPos)
 		end;
@@ -1000,7 +1000,7 @@ function BR_RF_ProcStageEven_WDGS(nDiff,nStage)
 	
 	if nDiff == 4 then
 		if BR_CheckTimerPosition(0,30) == 1 then
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 4","C¬ quan",nMapID,1601,3200);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 4","Mechanism",nMapID,1601,3200);
 			SetNpcLifeTime(nNpcIdx,10);			
 			BR_SetCurrentNpcSFX(nNpcIdx,962);
 		end;
@@ -1010,24 +1010,24 @@ function BR_RF_ProcStageEven_WDGS(nDiff,nStage)
 				nRand = random(1,getn(tbEnemyPos));
 				nNpcIdx = BR_CreateNpc("Ngò §éc Èn Sü","Ngò §éc Èn Sü",nMapID,tbEnemyPos[nRand][1][1],tbEnemyPos[nRand][1][2]);
 				SetNpcLifeTime(nNpcIdx,40);
-				nNpcIdx = BR_CreateNpc("Ngò §éc mËt thÊt c¬ quan","C¬ quan",nMapID,tbEnemyPos[nRand][2][1],tbEnemyPos[nRand][2][2],CAMP_PLAYER);
+				nNpcIdx = BR_CreateNpc("Ngò §éc mËt thÊt c¬ quan","Mechanism",nMapID,tbEnemyPos[nRand][2][1],tbEnemyPos[nRand][2][2],CAMP_PLAYER);
 				SetNpcLifeTime(nNpcIdx,40);
 				BR_SetCurrentNpcSFX(nNpcIdx,962);
-				nNpcIdx = BR_CreateNpc("Ngò §éc mËt thÊt c¬ quan","C¬ quan",nMapID,tbEnemyPos[nRand][3][1],tbEnemyPos[nRand][3][2],CAMP_PLAYER);
+				nNpcIdx = BR_CreateNpc("Ngò §éc mËt thÊt c¬ quan","Mechanism",nMapID,tbEnemyPos[nRand][3][1],tbEnemyPos[nRand][3][2],CAMP_PLAYER);
 				SetNpcLifeTime(nNpcIdx,40);
 				BR_SetCurrentNpcSFX(nNpcIdx,962);
 			end;
 		end;
 	elseif nDiff == 7 then
 		if BR_CheckTimerPosition(0,60) == 1 then
-			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 4","C¬ quan",nMapID,1601,3200);
+			nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 4","Mechanism",nMapID,1601,3200);
 			SetNpcLifeTime(nNpcIdx,10);
 			BR_SetCurrentNpcSFX(nNpcIdx,962);
 		end;
 	elseif nDiff == 8 then
 		if nStage ~= MAX_STAGE then
 			if BR_CheckTimerPosition(0,30) == 1 then
-				nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 4","C¬ quan",nMapID,1601,3200);
+				nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 4","Mechanism",nMapID,1601,3200);
 				SetNpcLifeTime(nNpcIdx,10);		
 				BR_SetCurrentNpcSFX(nNpcIdx,962);	
 			end;		
@@ -1040,9 +1040,9 @@ function BR_RF_ProcStageEven_WDGS(nDiff,nStage)
 					nNpcIdx = BR_CreateNpc("Ngò §éc Cuång Nh©n","Ngò §éc Cuång Nh©n",nMapID,tbEnemyPos[nRand][1][1],tbEnemyPos[nRand][1][2]);
 				end;
 				SetNpcLifeTime(nNpcIdx,40);
-				nNpcIdx = BR_CreateNpc("Ngò §éc mËt thÊt c¬ quan","Trë ng¹i",nMapID,tbEnemyPos[nRand][2][1],tbEnemyPos[nRand][2][2],CAMP_PLAYER);
+				nNpcIdx = BR_CreateNpc("Ngò §éc mËt thÊt c¬ quan","Obstacle",nMapID,tbEnemyPos[nRand][2][1],tbEnemyPos[nRand][2][2],CAMP_PLAYER);
 				SetNpcLifeTime(nNpcIdx,40);
-				nNpcIdx = BR_CreateNpc("Ngò §éc mËt thÊt c¬ quan","Trë ng¹i",nMapID,tbEnemyPos[nRand][3][1],tbEnemyPos[nRand][3][2],CAMP_PLAYER);
+				nNpcIdx = BR_CreateNpc("Ngò §éc mËt thÊt c¬ quan","Obstacle",nMapID,tbEnemyPos[nRand][3][1],tbEnemyPos[nRand][3][2],CAMP_PLAYER);
 				SetNpcLifeTime(nNpcIdx,40);
 			end;		
 		end;
@@ -1056,13 +1056,13 @@ function BR_RF_ProcStageEven_WDGS(nDiff,nStage)
 					nNpcIdx = BR_CreateNpc("Ngò §éc Cuång Nh©n","Ngò §éc Cuång Nh©n",nMapID,tbEnemyPos[nRand][1][1],tbEnemyPos[nRand][1][2]);
 				end;
 				SetNpcLifeTime(nNpcIdx,40);
-				nNpcIdx = BR_CreateNpc("Ngò §éc mËt thÊt c¬ quan 2","Trë ng¹i",nMapID,tbEnemyPos[nRand][2][1],tbEnemyPos[nRand][2][2],CAMP_PLAYER);
+				nNpcIdx = BR_CreateNpc("Ngò §éc mËt thÊt c¬ quan 2","Obstacle",nMapID,tbEnemyPos[nRand][2][1],tbEnemyPos[nRand][2][2],CAMP_PLAYER);
 				SetNpcLifeTime(nNpcIdx,40);
-				nNpcIdx = BR_CreateNpc("Ngò §éc mËt thÊt c¬ quan 2","Trë ng¹i",nMapID,tbEnemyPos[nRand][3][1],tbEnemyPos[nRand][3][2],CAMP_PLAYER);
+				nNpcIdx = BR_CreateNpc("Ngò §éc mËt thÊt c¬ quan 2","Obstacle",nMapID,tbEnemyPos[nRand][3][1],tbEnemyPos[nRand][3][2],CAMP_PLAYER);
 				SetNpcLifeTime(nNpcIdx,40);
 			end;
 			if BR_CheckTimerPosition(20,60) == 1 then
-				nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","C¬ quan",nMapID,1601,3200);
+				nNpcIdx = BR_CreateNpc("C¬ quan nÐ tr¸nh 2","Mechanism",nMapID,1601,3200);
 				SetNpcLifeTime(nNpcIdx,10);	
 				BR_SetCurrentNpcSFX(nNpcIdx,962);	
 			end;

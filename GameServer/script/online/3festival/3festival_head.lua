@@ -97,24 +97,24 @@ tWuLinAward = {
 
 --±¦Ïä½±Àø
 tAboutBoxIB = {--Ç°ÃæÎª±ØÈ»»ñµÃ£¬ºóÃæÎª¸ÅÂÊ»ñµÃ
-	{{"<color=yellow>1<color> thÎ kû niÖm JX2 trßn 3 n¨m","CÊp 1-5 ngÉu nhiªn <color=yellow>1<color> Linh th¹ch"},{"C¶i ®á","Hép §ång Bµi Huy Hoµng","Thiªn Thêi Chó Gi¶i ","Ngò Hµnh MËt tŞch","1 Tµng KiÕm B¶o R­¬ng","Viªm Hoµng ThiÕt Hån"}},
-	{{"<color=yellow>2<color> thÎ kû niÖm JX2 trßn 3 n¨m","CÊp 1-6 ngÉu nhiªn <color=yellow>1<color> Linh th¹ch"},{"MËt hµm s­ m«n","Hép Ng©n Bµi Vinh Dù","Thiªn Thêi Chó Gi¶i ","Ngò Hµnh MËt tŞch","1 Tµng KiÕm B¶o R­¬ng","Hiªn Viªn ChiÕn","Viªm Hoµng ThiÕt Hån"}},
-	{{"<color=yellow>50<color> thÎ kû niÖm JX2 trßn 3 n¨m"},{"CÊp 6-7 ngÉu nhiªn <color=yellow>1<color> Linh th¹ch","MËt tŞch L¨ng Ba Vi Bé","§Şnh Hån Thiªn Th¹ch ThÇn Th¹ch","Hép Kim Bµi Vinh Dù","Hiªn Viªn ChiÕn","Hiªn Viªn §Êu","Viªm Hoµng ThiÕt Hån"}},
-	{{"<color=yellow>300<color> thÎ kû niÖm JX2 trßn 3 n¨m"},{"CÊp 7 ngÉu nhiªn <color=yellow>3<color> Linh th¹ch","§Şnh Hån Thiªn Th¹ch ThÇn Th¹ch","Nguyªn cuèn mËt tŞch L¨ng Ba Vi Bé","Hiªn Viªn ChiÕn","Hiªn Viªn §Êu","Hoµng §Õ vò khİ","Viªm Hoµng ThiÕt Hån"}}
+	{{"<color=yellow>1<color> JX2 3rd Anniversary Commemorative Token","CÊp 1-5 ngÉu nhiªn <color=yellow>1<color> Linh th¹ch"},{"Red Cabbage","Hép §ång Bµi Huy Hoµng","Thiªn Thêi Chó Gi¶i ","Ngò Hµnh MËt tŞch","1 Tµng KiÕm B¶o R­¬ng","Viªm Hoµng ThiÕt Hån"}},
+	{{"<color=yellow>2<color> JX2 3rd Anniversary Commemorative Token","CÊp 1-6 ngÉu nhiªn <color=yellow>1<color> Linh th¹ch"},{"MËt hµm s­ m«n","Hép Ng©n Bµi Vinh Dù","Thiªn Thêi Chó Gi¶i ","Ngò Hµnh MËt tŞch","1 Tµng KiÕm B¶o R­¬ng","Hiªn Viªn ChiÕn","Viªm Hoµng ThiÕt Hån"}},
+	{{"<color=yellow>50<color> JX2 3rd Anniversary Commemorative Token"},{"CÊp 6-7 ngÉu nhiªn <color=yellow>1<color> Linh th¹ch","MËt tŞch L¨ng Ba Vi Bé","§Şnh Hån Thiªn Th¹ch ThÇn Th¹ch","Hép Kim Bµi Vinh Dù","Hiªn Viªn ChiÕn","Hiªn Viªn §Êu","Viªm Hoµng ThiÕt Hån"}},
+	{{"<color=yellow>300<color> JX2 3rd Anniversary Commemorative Token"},{"CÊp 7 ngÉu nhiªn <color=yellow>3<color> Linh th¹ch","§Şnh Hån Thiªn Th¹ch ThÇn Th¹ch","Complete Lingbo Weibu Secret Manual Scroll","Hiªn Viªn ChiÕn","Hiªn Viªn §Êu","Hoµng §Õ vò khİ","Viªm Hoµng ThiÕt Hån"}}
 	}
 	
 --±¦Ïä½±Àø£¨ÊÕ·ÑÇø£©
 tAboutBox = {--Ç°ÃæÎª±ØÈ»»ñµÃ£¬ºóÃæÎª¸ÅÂÊ»ñµÃ
-	{{"<color=yellow>1<color> thÎ kû niÖm JX2 trßn 3 n¨m","CÊp 1-5 ngÉu nhiªn <color=yellow>1<color> Linh th¹ch"},{"C¶i ®á","Hép §ång Bµi Huy Hoµng","Thiªn Thêi Chó Gi¶i ","Ngò Hµnh MËt tŞch","1 Tµng KiÕm B¶o R­¬ng","Viªm Hoµng ThiÕt Hån"}},
-	{{"<color=yellow>2<color> thÎ kû niÖm JX2 trßn 3 n¨m","CÊp 1-6 ngÉu nhiªn <color=yellow>1<color> Linh th¹ch"},{"MËt hµm s­ m«n","Hép Ng©n Bµi Vinh Dù","Thiªn Thêi Chó Gi¶i ","Ngò Hµnh MËt tŞch","1 Tµng KiÕm B¶o R­¬ng","Hiªn Viªn ChiÕn","Viªm Hoµng ThiÕt Hån"}},
-	{{"<color=yellow>50<color> thÎ kû niÖm JX2 trßn 3 n¨m"},{"CÊp 6-7 ngÉu nhiªn <color=yellow>1<color> Linh th¹ch","MËt tŞch L¨ng Ba Vi Bé","§Şnh Hån Thiªn Th¹ch ThÇn Th¹ch","Hép Kim Bµi Vinh Dù","Hiªn Viªn ChiÕn","Hiªn Viªn §Êu","Viªm Hoµng ThiÕt Hån"}},
-	{{"<color=yellow>300<color> thÎ kû niÖm JX2 trßn 3 n¨m"},{"CÊp 7 ngÉu nhiªn <color=yellow>3<color> Linh th¹ch","§Şnh Hån Thiªn Th¹ch ThÇn Th¹ch","Nguyªn cuèn mËt tŞch L¨ng Ba Vi Bé","Hiªn Viªn ChiÕn","Hiªn Viªn §Êu","Hoµng §Õ vò khİ","Viªm Hoµng ThiÕt Hån"}}
+	{{"<color=yellow>1<color> JX2 3rd Anniversary Commemorative Token","CÊp 1-5 ngÉu nhiªn <color=yellow>1<color> Linh th¹ch"},{"Red Cabbage","Hép §ång Bµi Huy Hoµng","Thiªn Thêi Chó Gi¶i ","Ngò Hµnh MËt tŞch","1 Tµng KiÕm B¶o R­¬ng","Viªm Hoµng ThiÕt Hån"}},
+	{{"<color=yellow>2<color> JX2 3rd Anniversary Commemorative Token","CÊp 1-6 ngÉu nhiªn <color=yellow>1<color> Linh th¹ch"},{"MËt hµm s­ m«n","Hép Ng©n Bµi Vinh Dù","Thiªn Thêi Chó Gi¶i ","Ngò Hµnh MËt tŞch","1 Tµng KiÕm B¶o R­¬ng","Hiªn Viªn ChiÕn","Viªm Hoµng ThiÕt Hån"}},
+	{{"<color=yellow>50<color> JX2 3rd Anniversary Commemorative Token"},{"CÊp 6-7 ngÉu nhiªn <color=yellow>1<color> Linh th¹ch","MËt tŞch L¨ng Ba Vi Bé","§Şnh Hån Thiªn Th¹ch ThÇn Th¹ch","Hép Kim Bµi Vinh Dù","Hiªn Viªn ChiÕn","Hiªn Viªn §Êu","Viªm Hoµng ThiÕt Hån"}},
+	{{"<color=yellow>300<color> JX2 3rd Anniversary Commemorative Token"},{"CÊp 7 ngÉu nhiªn <color=yellow>3<color> Linh th¹ch","§Şnh Hån Thiªn Th¹ch ThÇn Th¹ch","Complete Lingbo Weibu Secret Manual Scroll","Hiªn Viªn ChiÕn","Hiªn Viªn §Êu","Hoµng §Õ vò khİ","Viªm Hoµng ThiÕt Hån"}}
 	}	
 
 tNewCehua = {--Ä£°åÃû npcÃû µØ·½ id 
 	{"Vò n÷ Ba T­","Viªn L­u L­u","Thóy Yªn",404,{1550,1630,1648},{2746,2736,2947}},
-	{"Chñ cÇm ®å Trung Nguyªn","TiÓu C­¬ng","C«n L«n",509,{1452,1551,1576},{3363,3243,3107}},
-	{"Th­ sinh","Vò c«ng tö","Quang Minh ®Ønh",508,{1631,1558,1641},{3031,3157,3236}}
+	{"Chñ cÇm ®å Trung Nguyªn","Small Gang","C«n L«n",509,{1452,1551,1576},{3363,3243,3107}},
+	{"Th­ sinh","Vò c«ng tö","Guangming Peak",508,{1631,1558,1641},{3031,3157,3236}}
 	}
 
 --===========================================================================================
@@ -122,8 +122,8 @@ tSex = {"ThiÕu hiÖp","N÷ hiÖp "};
 --tBossInfoÓëtItemInfoÓëtBossPos±ØĞë¶ÔÓ¦,Ë³Ğò²»ÄÜÂÒ
 tBossInfo = {	--BOSSÄ£°åÃû,Ğ¡BOSSÄ£°åÃû,	Ë¢¹ÖÊ±¼ä
 		[1] = {"ThiÕt D­¬ng","TiÓu ThiÕt D­¬ng","ThiÕt D­¬ng","Thuéc h¹ cña ThiÕt D­¬ng",21},
-		[2] = {"¢m Minh","TiÓu ¢m Minh","TiÓu BiÖn Nhi","Thuéc h¹ cña TiÓu BiÖn Nhi",19},
-		[3] = {"HÇu ThuÉn","TiÓu HÇu ThuÉn","KhØ mËp","Thuéc h¹ cña KhØ mËp",16},
+		[2] = {"¢m Minh","TiÓu ¢m Minh","Small Bian'er","Thuéc h¹ cña TiÓu BiÖn Nhi",19},
+		[3] = {"HÇu ThuÉn","TiÓu HÇu ThuÉn","Fat Monkey","Thuéc h¹ cña KhØ mËp",16},
 		[4] = {"B¸t Hïng","TiÓu B¸t Hïng","B¸t Hïng","Thuéc h¹ cña B¸t Hïng",21},
 		[5] = {"H¹ Thiªn","TiÓu H¹ Thiªn","TiÓu Thiªn Thiªn","Thuéc h¹ cña TiÓu Thiªn Thiªn",19},
 		[6] = {"Quang V« Cùc","TiÓu Quang V« Cùc","Cöu TuyÖt KiÕm Khİ","Thuéc h¹ cña Cöu TuyÖt KiÕm Khİ",21},
@@ -134,34 +134,34 @@ tItemInfo = {
 		[1] = {"D­¬ng Häa PhiÕn",2,0,506},
 		[2] = {"Yªn §¹i",2,0,509},
 		[3] = {"Háa ChiÕt Tö",2,0,508},
-		[4] = {"Tróc M·",2,0,511},
-		[5] = {"Méc hµi",2,0,510},
+		[4] = {"Bamboo Horse",2,0,511},
+		[5] = {"Wooden Sandals",2,0,510},
 		[6] = {"ThuËt Cöu Ch­¬ng",2,0,513},
 		[7] = {"Loan Phông Ngäc Béi",2,0,512},
 		[8] = {"D­¬ng Häa C¬",2,0,507},	--07ÄêÈı½Ú²»ÓÃÁË
 		[9] = {"Thiªn Th¹ch Chïy",2,0,514},	--07ÄêÈı½Ú²»ÓÃÁË
-		[10] = {"Kh¸nh §iÓn diÖm háa",2,0,515},
-		[11] = {"H­íng dÉn",2,0,1030},
+		[10] = {"Khanh Dien Flame",2,0,515},
+		[11] = {"Guide",2,0,1030},
 		[12] = {"Bao thuèc cña NguyÖt L­îng Thè",0,102,41},
 		[13] = {"H»ng Nga NguyÖt Vò §¸i",0,102,42},
-		[14] = {"HËu NghÖ L¹c NhËt Hoµn",0,102,43},
+		[14] = {"Houyi Setting Sun Pill",0,102,43},
 		[15] = {"Hép Ngäc Bµi Huy Hoµng",2,0,1076},
 		[16] = {"Hép §ång Bµi Huy Hoµng",2,0,1077},
 		[17] = {"Hép Ng©n Bµi Vinh Dù",2,0,1078},
 		[18] = {"Hép Kim Bµi Vinh Dù",2,0,1079},
-		[19] = {"ThÎ kû niÖm mõng Vâ L©m trßn 2 n¨m",2,0,1081},
+		[19] = {"Token Commemorating the 2nd Anniversary of Vo Lam",2,0,1081},
 		[20] = {"Ch×a Khãa Ngäc Huy Hoµng",2,0,1072},
 		[21] = {"Ch×a Khãa §ång Huy Hoµng",2,0,1073},
 		[22] = {"Ch×a Khãa B¹c Vinh Dù",2,0,1074},
 		[23] = {"Ch×a Khãa Vµng Vinh Dù",2,0,1075},
 		[24] = {"Bång Lai Tiªn Lé",2,0,109},
 		[25] = {"Viªm Hoµng ThiÕt Hån",2,1,1146},
-		[26] = {"C¶i ®á",2,1,1090},
+		[26] = {"Red Cabbage",2,1,1090},
 		[27] = {"Thiªn Thêi Chó Gi¶i ",2,1,3210},
 		[28] = {"Ngò Hµnh MËt tŞch",0,107,155},
 		[29] = {"MËt tŞch ngò hµnh toµn tËp",0,107,157},
-		[30] = {"L¨ng Ba Vi Bé",0,112,78},
-		[31] = {"L¨ng Ba Vi Bé toµn tËp",0,112,158},
+		[30] = {"Lingbo Microstep",0,112,78},
+		[31] = {"Lingbo Microstep Complete Edition",0,112,158},
 		[32] = {"MËt hµm s­ m«n",2,1,1020},
 		[33] = {"B¶o r­¬ng Tµng KiÕm ®Çu qu¸n",2,1,1059},
 		[34] = {"B¶o r­¬ng Tµng KiÕm y gi¸p",2,1,1060},
@@ -173,15 +173,15 @@ tItemInfo = {
 		}
 
 tMaterial = {
-		[1] = {"Ng.liÖu chİnh 1",2,0,518},
-		[2] = {"Ng.liÖu chİnh 2",2,0,519},
-		[3] = {"Ng.liÖu chİnh 3",2,0,520},
-		[4] = {"Ng.liÖu phô 1",2,0,521},
-		[5] = {"Ng.liÖu phô 2",2,0,522},
-		[6] = {"Ng.liÖu phô 3",2,0,523},
-		[7] = {"Than nhiÖt ®é cao",2,0,524},
-		[8] = {"Cñi nhiÖt ®é thÊp",2,0,525},
-		[9] = {"Lß n­íng b¸nh Trung Thu",2,0,517},
+		[1] = {"Main Material 1",2,0,518},
+		[2] = {"Main Material 2",2,0,519},
+		[3] = {"Main Material 3",2,0,520},
+		[4] = {"Secondary Material 1",2,0,521},
+		[5] = {"Secondary Material 2",2,0,522},
+		[6] = {"Secondary Material 3",2,0,523},
+		[7] = {"High Temperature Charcoal",2,0,524},
+		[8] = {"Low Temperature Firewood",2,0,525},
+		[9] = {"Mid-Autumn Mooncake Oven",2,0,517},
 		}
 
 tBossPos = {
@@ -195,25 +195,25 @@ tBossPos = {
 		}
 
 tMoonCake = {
-		[1] = {"B¸nh Trung Thu Giang S¬n",2,0,1000},
+		[1] = {"Jiangshan Mooncake",2,0,1000},
 		[2] = {"B¸nh Trung Thu ch©n gµ Giang S¬n",2,0,1002},
-		[3] = {"B¸nh Trung Thu thŞt mÆn Giang S¬n",2,0,1003},
-		[4] = {"B¸nh Trung Thu Kim Hoa Giang S¬n",2,0,1004},
-		[5] = {"B¸nh Trung Thu Liªn Dung Giang S¬n",1,0,231},
+		[3] = {"Jiangshan Salted Meat Mooncake",2,0,1003},
+		[4] = {"Jiangshan Kim Hoa Mooncake",2,0,1004},
+		[5] = {"Jiangshan Lotus Paste Mooncake",1,0,231},
 		[6] = {"B¸nh Trung Thu Nh©n T¸o Giang S¬n",1,0,232},
 		[7] = {"B¸nh Trung Thu Nh©n §Ëu Giang S¬n",1,0,233},
-		[8] = {"B¸nh Trung Thu Xoµi Giang S¬n",2,0,1005},
-		[9] = {"B¸nh Trung Thu SÇu Riªng Giang S¬n",2,0,1006},
-		[10] = {"B¸nh Trung Thu Xoµi Giang S¬n",2,0,1007},	
+		[8] = {"Jiangshan Mango Mooncake",2,0,1005},
+		[9] = {"Jiangshan Durian Mooncake",2,0,1006},
+		[10] = {"Jiangshan Mango Mooncake",2,0,1007},	
 		[11] = {"ThŞnh ThÕ Mai Hµn H­¬ng NguyÖt",2,0,1008},	
 		[12] = {"ThŞnh ThÕ B¹ch Ngäc Song NguyÖt",2,0,1009},	
 		[13] = {"ThŞnh ThÕ Kú H­¬ng Ngò Nh©n NguyÖt",2,0,1010},	
 		[14] = {"ThŞnh ThÕ B¸ch Hoa ThËp CÈm NguyÖt",2,0,1011},	
 		[15] = {"ThŞnh ThÕ ThÊt Tinh B¹n Qu©n NguyÖt",2,0,1012},	
 		[16] = {"ThŞnh ThÕ H»ng Nga Thñy Tinh NguyÖt",2,0,1013},
-		[17] = {"B¸nh Trung Thu Giang S¬n Mü VŞ ",2,0,1001},		
-		[18] = {"B¸nh trung thu n­íng",2,0,1014},	
-		[19] = {"B¸nh trung thu khĞt",2,0,1015},	
+		[17] = {"Jiangshan Delicacy Mooncake",2,0,1001},		
+		[18] = {"Baked Mooncake",2,0,1014},	
+		[19] = {"Burnt Mooncake",2,0,1015},	
 		}
 
 tMappingTemp = {	--ÎÂ¶ÈÇø¼ä
@@ -394,10 +394,10 @@ tbHuangDiRing2 =
 
 --´ò¿ªËÄ¸öÏä×ÓµÄ½±Àø
 tBoxAward = {
-	{{"ThÎ kû niÖm Vâ L©m 2 trßn 2 n¨m",2,0,1081,1},{1,4,70,1,4,100},{"NguyÖt Hoa ",2,1,2002,1,10},{"Hép §ång Bµi Huy Hoµng",2,0,1077,1,1000},{"Hiªn Viªn ChiÕn",5}},
-	{{"ThÎ kû niÖm Vâ L©m 2 trßn 2 n¨m",2,0,1081,5},{1,5,70,1,5,100},{"NguyÖt Hoa ",2,1,2002,1,50},{"Hép Ng©n Bµi Vinh Dù",2,0,1078,1,500},{"Hiªn Viªn ChiÕn",10}},
-	{{"ThÎ kû niÖm Vâ L©m 2 trßn 2 n¨m",2,0,1081,50},{3,5,70,3,6,100},{"NguyÖt Hoa ",2,1,2002,2,200},{"Hép Kim Bµi Vinh Dù",2,0,1079,1,500},{"Hiªn Viªn ChiÕn",100,"Hiªn Viªn §Êu",200}},
-	{{"ThÎ kû niÖm Vâ L©m 2 trßn 2 n¨m",2,0,1081,100},{4,5,70,4,7,100},{"NguyÖt Hoa ",2,1,2002,3,500},{"Hiªn Viªn ChiÕn",1000,"Hiªn Viªn §Êu",2000,"Hoµng §Õ vò khİ",3000}}
+	{{"Token Commemorating the 2nd Anniversary of Vo Lam 2",2,0,1081,1},{1,4,70,1,4,100},{"NguyÖt Hoa ",2,1,2002,1,10},{"Hép §ång Bµi Huy Hoµng",2,0,1077,1,1000},{"Hiªn Viªn ChiÕn",5}},
+	{{"Token Commemorating the 2nd Anniversary of Vo Lam 2",2,0,1081,5},{1,5,70,1,5,100},{"NguyÖt Hoa ",2,1,2002,1,50},{"Hép Ng©n Bµi Vinh Dù",2,0,1078,1,500},{"Hiªn Viªn ChiÕn",10}},
+	{{"Token Commemorating the 2nd Anniversary of Vo Lam 2",2,0,1081,50},{3,5,70,3,6,100},{"NguyÖt Hoa ",2,1,2002,2,200},{"Hép Kim Bµi Vinh Dù",2,0,1079,1,500},{"Hiªn Viªn ChiÕn",100,"Hiªn Viªn §Êu",200}},
+	{{"Token Commemorating the 2nd Anniversary of Vo Lam 2",2,0,1081,100},{4,5,70,4,7,100},{"NguyÖt Hoa ",2,1,2002,3,500},{"Hiªn Viªn ChiÕn",1000,"Hiªn Viªn §Êu",2000,"Hoµng §Õ vò khİ",3000}}
 	}
 
 --Ïä×Ó¼«Æ·¸ÅÂÊÓë³£¹æ¸ÅÂÊ
@@ -407,7 +407,7 @@ tBoxProb = {{20,950000},{100,950000},{10000,950000},{150000,1000000}};
 tBoxChangGui = {{800,990,991,1000},{800,990,995,1000},{960,980,1000},{700,850,1000}};
 
 --ÌúÏä×Ó ¶ÔÓ¦ÉÏ±í¸ÅÂÊ
-tBoxTie = {{{"C¶i ®á",2,1,1090}},{{"Thiªn Thêi Chó Gi¶i ",2,1,3210}},{{"Ngò Hµnh MËt tŞch",0,107,155}},{{"B¶o r­¬ng Tµng KiÕm ®Çu qu¸n",2,1,1059},{"B¶o r­¬ng Tµng KiÕm y gi¸p",2,1,1060},{"B¶o r­¬ng Tµng KiÕm hoa khè",2,1,1061},{"B¶o r­¬ng Tµng KiÕm trang søc",2,1,1062},{"B¶o r­¬ng Tµng KiÕm vò khİ",2,1,1063}}};
+tBoxTie = {{{"Red Cabbage",2,1,1090}},{{"Thiªn Thêi Chó Gi¶i ",2,1,3210}},{{"Ngò Hµnh MËt tŞch",0,107,155}},{{"B¶o r­¬ng Tµng KiÕm ®Çu qu¸n",2,1,1059},{"B¶o r­¬ng Tµng KiÕm y gi¸p",2,1,1060},{"B¶o r­¬ng Tµng KiÕm hoa khè",2,1,1061},{"B¶o r­¬ng Tµng KiÕm trang søc",2,1,1062},{"B¶o r­¬ng Tµng KiÕm vò khİ",2,1,1063}}};
 
 --Í­Ïä×Ó
 tBoxTong = {{{"MËt hµm s­ m«n",2,1,1020}},{{"Thiªn Thêi Chó Gi¶i ",2,1,3210}},{{"Ngò Hµnh MËt tŞch",0,107,155}},{{"B¶o r­¬ng Tµng KiÕm ®Çu qu¸n",2,1,1059},{"B¶o r­¬ng Tµng KiÕm y gi¸p",2,1,1060},{"B¶o r­¬ng Tµng KiÕm hoa khè",2,1,1061},{"B¶o r­¬ng Tµng KiÕm trang søc",2,1,1062},{"B¶o r­¬ng Tµng KiÕm vò khİ",2,1,1063}}};

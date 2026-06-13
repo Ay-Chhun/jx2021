@@ -128,7 +128,7 @@ function NewServer_HoatDong_Menu()
 	local tbSay = {}
 	tinsert(tbSay,"NhËn th­ëng mçi ngµy/NewServer_DailyReward")
 	tinsert(tbSay,"NhiÖm vô tµi nguyªn chiÕn ("..nTNC.."/30)/NewServer_TaiNguyenChien_NhanThuong_Menu")
-	tinsert(tbSay,"NhiÖm vô L­¬ng S¬n B¹c ("..nLSB.."/30)/NewServer_LuongSonBac_NhanThuong_Menu")
+	tinsert(tbSay,"Liangshan Marsh quest ("..nLSB.."/30)/NewServer_LuongSonBac_NhanThuong_Menu")
 	tinsert(tbSay,"NhiÖm vô Thiªn M«n TrËn ("..nTMT.."/30)/NewServer_ThienMonTran_NhanThuong_Menu")
 	tinsert(tbSay,"ChiÕn tr­êng Nh¹n M«n Quan ("..nNMQ.."/30)/NewServer_NhanMonQuan_NhanThuong_Menu")
 	tinsert(tbSay,"Ta chØ ghĞ xem/gf_DoNothing")

@@ -7,7 +7,7 @@ function OnDeath(npcIndex)
 	gf_EventGiveCustomAward(1, 5000000, 0, szLogTitle)
 	local _npcIndex,npcModel,npcName = GetTriggeringUnit()
 	
-	if npcName == "Bæc LÙc L©m Minh ChÒ" then
+	if npcName == "Northern Greenwood Alliance Leader" then
 		local npcIndex = CreateNpc("Bæc LÙc L©m l÷nh","Bæc LÙc L©m l÷nh",GetNpcWorldPos(npcIndex));
 		SetNpcScript(npcIndex,"\\script\\task\\tasklink\\taskitem.lua");
 		SetNpcLifeTime(npcIndex,5*60);

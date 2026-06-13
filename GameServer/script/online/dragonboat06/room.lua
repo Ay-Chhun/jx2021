@@ -68,7 +68,7 @@ AddPlayer = function(self)
 		NewWorld(MapID*10+70+self.m_MapID-1,2051,3257);
 		JoinMission(MISSION_ID,CAMP_PLAYER);	--»´≤øº”µΩ’Û”™2
 		SetTask(CURMAP,self.m_MapID);
-		Msg2MSAll(MISSION_ID,"Tuy”n thÒ "..GetName().." ß∑ vµo tr≠Íng Æ u. Hi÷n trong tr≠Íng Æ u c„ t t c∂ "..(nPlayerNum+1).." ng≠Íi");
+		Msg2MSAll(MISSION_ID,"Contestant"..GetName().." ß∑ vµo tr≠Íng Æ u. Hi÷n trong tr≠Íng Æ u c„ t t c∂ "..(nPlayerNum+1).." ng≠Íi");
 		if nPlayerNum == MAXPLAYER-1 then
 			Msg2MSAll(MISSION_ID,"Th´ng b∏o c∏c tuy”n thÒ chu»n bﬁ, 30 gi©y sau ch›nh th¯c thi Æ u.");
 		end;

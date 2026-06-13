@@ -16,7 +16,7 @@ function main()
 	        "Dïng c«ng lao ®æi b¸o ®¸p/goto_liguan",
 	        "Xem c«ng lao/query_offer",
 	        "Giíi thiÖu chi tiÕt ho¹t ®éng cuèi tuÇn/introduce_detail",
-	        "KÕt thóc ®èi tho¹i/end_say"
+	        "End conversation/end_say"
 	    };
 	    SelectSay(szSay);
 	elseif CheckTime(5) == 1 then	--ÖÜÄ©µÄÊ±ºò²ÅÓÐ»î¶¯
@@ -26,14 +26,14 @@ function main()
 	        "Dïng c«ng lao ®æi b¸o ®¸p/goto_liguan",
 	        "Xem c«ng lao/query_offer",
 	        "Giíi thiÖu chi tiÕt ho¹t ®éng cuèi tuÇn/introduce_detail",
-	        "KÕt thóc ®èi tho¹i/end_say"
+	        "End conversation/end_say"
 	    };
 	    SelectSay(szSay);
 	else
 	    local szSay = {
 	        "Sø gi¶ ho¹t ®éng: Ch©n Tö §an ®¹i hiÖp ®­îc triÒu ®×nh ñy th¸c qu¶n lý mäi viÖc liªn quan ®¹i héi tû vâ lÇn nµy, h·y ®Õn BiÖn Kinh t×m anh ta, ho¹t ®éng cuèi tuÇn hiÖn do ta phô tr¸ch!",
 	        "Giíi thiÖu chi tiÕt ho¹t ®éng cuèi tuÇn/introduce_detail",
-	        "KÕt thóc ®èi tho¹i/end_say"
+	        "End conversation/end_say"
 	    };
 	    SelectSay(szSay);
 	end;

@@ -42,14 +42,14 @@ tPos =
 tMobType = 
 {
 	[1] = {"TiÓu D· tr­", "Heo rõng", 25000},
-	[2] = {"Ong ®éc nhá", "Ong nhá", 30000},
-	[3] = {"§éc Gi¸p Trïng", "§éc gi¸p trïng", 35000},
+	[2] = {"Ong ®éc nhá", "Small Bee", 30000},
+	[3] = {"§éc Gi¸p Trïng", "Venomous Armor Bug", 35000},
 	[4] = {"D¬i hót m¸u", "D¬i", 40000},
-	[5] = {"Hå Ly", "Hå ly", 45000},
+	[5] = {"Hå Ly", "Fox", 45000},
 	[6] = {"Sãi ®iªn", "Sãi ®iªn", 50000},
-	[7] = {"Qu¹ §en", "Qu¹ ®en", 55000},
+	[7] = {"Qu¹ §en", "Black Crow", 55000},
 	[8] = {"C¸ sÊu1", "C¸ sÊu", 60000},
-	[9] = {"Cãc1", "Cãc", 65000},
+	[9] = {"Cãc1", "Toad", 65000},
 	[10] = {"D¬i ®éc", "D¬i hót m¸u",70000},
 	[11] = {"Bß c¹p", "Bß c¹p", 75000},
 	[12] = {"Ng©n Hå", "Ng©n Hå", 80000},
@@ -155,7 +155,7 @@ tLimitPetFoodUsed =
 
 function Chk_Enter(nType)
 	local szSex = {"ThiÕu hiÖp", "N÷ hiÖp "}
-	local szNoTeam ={"Th¸i H­ HuyÔn C¶nh nguy hiÓm trïng trïng,", " nªn tæ ®éi hay h¬n!"}
+	local szNoTeam ={"Th¸i H­ HuyÔn C¶nh nguy hiÓm trïng trïng,", " so forming a team is better!"}
 	local nSex = GetSex()
 	local szLevel = "<color=green>lín h¬n hoÆc b»ng cÊp 70<color>"
 	local szItemCount = "<color=green>cÇn 1 Th¸i H­ §a MËt qu¶<color>"	
@@ -163,7 +163,7 @@ function Chk_Enter(nType)
 	if nType == 2 then
 		szTimes = "<color=green>2 lÇn<color>"
 	end
-	local szLeader = "<color=green>§éi tr­ëng<color>"
+	local szLeader = "<color=green>Team Leader<color>"
 	local szTown = "<color=green>, ®éi viªn cïng mét thµnh thÞ<color>"
 	local szExMsg = ""	
 	local szPet = ""
@@ -176,7 +176,7 @@ function Chk_Enter(nType)
 	
 	if IsCaptain() == 0 then
 		nRetCode = 0
-		szLeader = "<color=red>§éi tr­ëng<color>" 
+		szLeader = "<color=red>Team Leader<color>" 
 	end
 	
 	local nSize = GetTeamSize()
@@ -238,7 +238,7 @@ function Chk_Enter(nType)
 		Msg2Team(szSleepCheck)
 	end
 
-    local szMsg = "Tæ ®éi do "..szLeader.." dÉn ®Çu, "..szLevel..szTown..", "..szPet..szItemCount..", 1 ngµy cïng b¹n ®ång hµnh vµo Th¸i H­ HuyÔn C¶nh "..szTimes..". \n\n(<color=white>Mµu xanh t­îng tr­ng ®ñ ®iÒu kiÖn, mµu ®á kh«ng ®ñ nguyªn nh©n<color>)"
+    local szMsg = "The team led by"..szLeader.." leading,"..szLevel..szTown..", "..szPet..szItemCount..", 1 ngµy cïng b¹n ®ång hµnh vµo Th¸i H­ HuyÔn C¶nh "..szTimes..". \n\n(<color=white>Mµu xanh t­îng tr­ng ®ñ ®iÒu kiÖn, mµu ®á kh«ng ®ñ nguyªn nh©n<color>)"
     return nRetCode, szMsg
 end
 
@@ -373,7 +373,7 @@ function Move2Stage(nIndex, nType, nMapID)
 		
 		local szLocation = "Thµnh §«"
 		if pos[1] == 2010 then
-			szLocation = "BiÖn Kinh"
+			szLocation = "Bianjing"
 		end
 		gf_WriteLogEx("Thai Hu Huyen Canh Ban Dong Hanh", "tham gia v­ît ¶i lo¹i "..nType.." t¹i Th¸i H­ "..szLocation)
 	end

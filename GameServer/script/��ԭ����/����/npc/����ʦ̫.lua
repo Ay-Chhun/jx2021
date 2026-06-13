@@ -11,7 +11,7 @@ function main(bTag)
 	UWorld1402 = GetTask(1402)
 	---------------ÒÔÏÂÊÇ´ò¿ª·âÄ§¶´µØÍ¼µÄÈÎÎñ------------------------------------
 	if ( UWorld1402 == 20 )  then
-			Talk(3,"","Ng­êi lµ D­¬ng NguyÖt S­ Th¸i? V·n bèi thÊy yªu ma hoµnh hµnh ë Giang T©n th«n, ®Şnh ra tay t­¬ng trî nh­ng kh«ng biÕt lµm thÕ nµo nªn ®Õn ®©y thØnh gi¸o s­ th¸i.","§óng lµ nghiÖp ch­íng! §¸m yªu nghiÖt nµy nhÊt ®Şnh lµ tõ d­íi <color=red>Phong Ma ®éng<color> ch¹y ra. N¨m x­a L·o ni ®· giam chóng ë ®ã nªn míi ®Ó l¹i hËu ho¹n cho th«n d©n! Ng­¬i h·y ®i lÊy <color=red>1 viªn X¸ Lîi Kim §¬n<color>, ta sÏ lµm phĞp gióp ng­¬i ®Õn <color=red>Phong Ma ®éng<color> diÖt trõ yªu ma.","T¹i h¹ ®i ngay!")
+			Talk(3,"","Ng­êi lµ D­¬ng NguyÖt S­ Th¸i? V·n bèi thÊy yªu ma hoµnh hµnh ë Giang T©n th«n, ®Şnh ra tay t­¬ng trî nh­ng kh«ng biÕt lµm thÕ nµo nªn ®Õn ®©y thØnh gi¸o s­ th¸i.","§óng lµ nghiÖp ch­íng! §¸m yªu nghiÖt nµy nhÊt ®Şnh lµ tõ d­íi <color=red>Phong Ma ®éng<color> ch¹y ra. N¨m x­a L·o ni ®· giam chóng ë ®ã nªn míi ®Ó l¹i hËu ho¹n cho th«n d©n! Ng­¬i h·y ®i lÊy <color=red>1 viªn X¸ Lîi Kim §¬n<color>, ta sÏ lµm phĞp gióp ng­¬i ®Õn <color=red>Phong Ma ®éng<color> diÖt trõ yªu ma.","This humble one goes now!")
 			SetTask(1402,25)
 			--AddNote("È¡1¸öÉáÀû½ğµ¤À´£¬ÒÔ±ãµÃµ½ÑôÔÂÊ¦Ì«µÄ°ïÖú¶øÄÜ¹»×ÔÓÉ³öÈë·âÄ§¶´¡£")
 			TaskTip("T×m 1 viªn X¸ Lîi Kim §¬n vÒ nhê D­¬ng NguyÖt S­ Th¸i dÉn vµo Phong Ma ®éng.")
@@ -52,7 +52,7 @@ function main(bTag)
 	---------------------ÒÔÏÂÊÇ´ò¿ª¹í³ÇÈÎÎñµÚÈı²½----------------------------------------------
 	
 	elseif ( UWorld1402  == 40  ) then
-					    Talk(5,"","Ta dß la ®­îc tin Phong §« Quû Thµnh ®· xuÊt hiÖn ë phİa §«ng Giang T©n th«n, cã thÓ mét tªn ma t­íng nµo ®ã cña Quû Thµnh ®· më cöa ®éng Phong Ma.","Kh«ng thÓ nµo! Ma t­íng cña Quû Thµnh kh«ng thÓ cã søc m¹nh lín ®Õn nh­ vËy. Trõ phi chóng cã <color=red>b¶n ®å S¬n Hµ X· T¾c<color>. Ng­¬i mau ®i ®iÒu tra râ!","T¹i h¹ ®i ngay!","HiÖn giê ng­¬i ch­a thÓ vµo Quû Thµnh ®­îc. H·y ®i lÊy <color=red>2 viªn X¸ Lîi Kim §¬n<color> ®Õn ®©y.","T¹i h¹ ®i ngay!")
+					    Talk(5,"","Ta dß la ®­îc tin Phong §« Quû Thµnh ®· xuÊt hiÖn ë phİa §«ng Giang T©n th«n, cã thÓ mét tªn ma t­íng nµo ®ã cña Quû Thµnh ®· më cöa ®éng Phong Ma.","Kh«ng thÓ nµo! Ma t­íng cña Quû Thµnh kh«ng thÓ cã søc m¹nh lín ®Õn nh­ vËy. Trõ phi chóng cã <color=red>b¶n ®å S¬n Hµ X· T¾c<color>. Ng­¬i mau ®i ®iÒu tra râ!","This humble one goes now!","HiÖn giê ng­¬i ch­a thÓ vµo Quû Thµnh ®­îc. H·y ®i lÊy <color=red>2 viªn X¸ Lîi Kim §¬n<color> ®Õn ®©y.","This humble one goes now!")
 					    SetTask(1402,45)
 					    --AddItem(1,1,1,1)
 					    Earn(800)
@@ -82,7 +82,7 @@ function main(bTag)
 	
 	------------------ÒÔÏÂÊÇ´ò¿ªÌìÊ¦¶´µÄÈÎÎñ------------------------------------------------------
 	elseif ( UWorld1402 == 75 )  then
-			Talk(7,"","S­ Th¸i! T¹i h¹ võa tõ Phong §« Quû Thµnh trë vÒ. N¬i ®ã kh¸ nguy hiÓm, giê ph¶i lµm sao ®©y?","Xem ra ®µnh ph¶i t×m <color=yellow>c« ta råi<color>.","<color=yellow>C« ta<color> lµ ai?","C« ta chİnh lµ s­ muéi cña ta, mÆc dï vâ c«ng cao h¬n ta rÊt nhiÒu nh­ng n¨m x­a c« ta ®· cùc lùc ph¶n ®èi ta giam bän yªu ma ë Phong Ma ®éng. N¨m x­a ta trÎ tuæi cè chÊp kh«ng nghe c« ta khuyªn nªn g©y ra ®¹i häa h«m nay.","Xin hái quı t¸nh cña c« ta? T¹i h¹ ®Õn ®©u míi cã thÓ t×m ®­îc c« ta?","C« ta ®· bŞ ta trôc xuÊt khái s­ m«n, lóc tr­íc cã ng­êi thÊy c« ta ë <color=red>Thµnh §«<color>, tªn tôc gia cña c« ta lµ <color=red>V­¬ng CÈn<color>. Ng­¬i h·y ®i t×m c« ta vµ nãi n¨m x­a lµ do ta kh«ng ®óng víi c« ta, mong c« ta h·y lÊy viÖc cøu sinh linh ®å th¸n lµm träng vµ chØ c¸ch ®uæi bän Quû Thµnh khái nh©n gian.","T¹i h¹ ®i ngay!")
+			Talk(7,"","S­ Th¸i! T¹i h¹ võa tõ Phong §« Quû Thµnh trë vÒ. N¬i ®ã kh¸ nguy hiÓm, giê ph¶i lµm sao ®©y?","Xem ra ®µnh ph¶i t×m <color=yellow>c« ta råi<color>.","<color=yellow>C« ta<color> lµ ai?","C« ta chİnh lµ s­ muéi cña ta, mÆc dï vâ c«ng cao h¬n ta rÊt nhiÒu nh­ng n¨m x­a c« ta ®· cùc lùc ph¶n ®èi ta giam bän yªu ma ë Phong Ma ®éng. N¨m x­a ta trÎ tuæi cè chÊp kh«ng nghe c« ta khuyªn nªn g©y ra ®¹i häa h«m nay.","Xin hái quı t¸nh cña c« ta? T¹i h¹ ®Õn ®©u míi cã thÓ t×m ®­îc c« ta?","C« ta ®· bŞ ta trôc xuÊt khái s­ m«n, lóc tr­íc cã ng­êi thÊy c« ta ë <color=red>Thµnh §«<color>, tªn tôc gia cña c« ta lµ <color=red>V­¬ng CÈn<color>. Ng­¬i h·y ®i t×m c« ta vµ nãi n¨m x­a lµ do ta kh«ng ®óng víi c« ta, mong c« ta h·y lÊy viÖc cøu sinh linh ®å th¸n lµm träng vµ chØ c¸ch ®uæi bän Quû Thµnh khái nh©n gian.","This humble one goes now!")
 			SetTask(1402,80)		
 			--AddItem(1,1,1,1)
 			Earn(1200)

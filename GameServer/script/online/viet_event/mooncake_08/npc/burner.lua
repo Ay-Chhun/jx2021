@@ -6,7 +6,7 @@
 Include("\\script\\online\\viet_event\\mooncake_08\\mooncake_head.lua")
 Include("\\script\\lib\\globalfunctions.lua")
 
-g_szLogTitle = "Ho¹t ®éng trung thu : ".."Lß n­íng b¸nh Trung Thu"		--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
+g_szLogTitle = "Ho¹t ®éng trung thu : ".."Mid-Autumn Mooncake Oven"		--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
 g_szFileName = "burner.lua"						--ÎÄ¼þÃû
 
 g_tbMoonCake = 
@@ -33,7 +33,7 @@ function main()
 
 	local nTimeElapse = GetTime() - GetTask(FIRE_TIME_08_MOONCAKE_VIET)
 	if nTimeElapse > g_nTime_MoonCakeViet or nBurnerIndex ~= GetTask(BURNER_IDX_08_MOONCAKE_VIET) then
-		Msg2Player("VËt phÈm nµy kh«ng ph¶i cña ®¹i hiÖp ".."Lß n­íng b¸nh Trung Thu")
+		Msg2Player("VËt phÈm nµy kh«ng ph¶i cña ®¹i hiÖp ".."Mid-Autumn Mooncake Oven")
 		return
 	end
 
@@ -95,7 +95,7 @@ function give_wood()
 	end
 
 	if GetItemCount(2,1,30022) < 1 then
-		Say("Thêi gian sö dông ".."Cñi".."  H×nh nh­ kh«ng ®ñ ", 0)
+		Say("Thêi gian sö dông ".."Firewood".."  H×nh nh­ kh«ng ®ñ ", 0)
 		return
 	end
 
@@ -104,7 +104,7 @@ function give_wood()
 		SetTask(WOOD_NUM_08_MOONCAKE_VIET, GetTask(WOOD_NUM_08_MOONCAKE_VIET)+1 )
 		Talk(1,"", format("Bá cñi thµnh c«ng <color=yellow>%d<color> lÇn.", GetTask(WOOD_NUM_08_MOONCAKE_VIET) ) )
 	else
-		Say("Thêi gian sö dông ".."Cñi".."  H×nh nh­ kh«ng ®ñ ", 0)
+		Say("Thêi gian sö dông ".."Firewood".."  H×nh nh­ kh«ng ®ñ ", 0)
 		return
 	end
 end
@@ -132,7 +132,7 @@ function obtain_mooncake()
 			end
 		elseif nMoonCakeType == 2 then
 			if g_tbMoonCake[nWoodNum][1] ~= nil and g_tbMoonCake[nWoodNum][1] > 0 then
-				add_item_ex("B¸nh trung thu ®Æc biÖt",2,1,30026,g_tbMoonCake[nWoodNum][1])
+				add_item_ex("Special mooncake",2,1,30026,g_tbMoonCake[nWoodNum][1])
 			end
 			if g_tbMoonCake[nWoodNum][2] ~= nil and g_tbMoonCake[nWoodNum][2] > 0 then
 				add_item_ex("B¸nh ch­a chÝn lo¹i ®Æc biÖt",2,1,30028,g_tbMoonCake[nWoodNum][2])

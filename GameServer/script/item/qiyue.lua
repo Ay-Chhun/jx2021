@@ -17,28 +17,28 @@ function OnUse()
 
 	local nNpcCount = GetNpcCountNear()
 	if nNpcCount > 100 then
-		Say("BiÓn ng­êi ®«ng nghŞt, biÕt t×m ë ®©u ®©y"..GetPlayerSex().."§Õn n¬i kh¸c thu thËp nhĞ!", 0)
+		Say("BiÓn ng­êi ®«ng nghŞt, biÕt t×m ë ®©u ®©y"..GetPlayerSex().."Go gather somewhere else!", 0)
 		return
 	end
 
 	Say("Ngoµi viÖc dïng ThÇn N«ng §¬n ®Ó ñy th¸c thu thËp, ThiÕu hiÖp cßn cã thÓ ñy th¸c trång c©y B¸t Nh· lín t¹i ®©y. Xem thªm th«ng tin bªn d­íi",
 		3,
 		"ñy th¸c thu thËp b»ng ThÇn N«ng §¬n/use_shennong",
-		"ñy th¸c trång c©y B¸t Nh· lín/tuoguan_zhongshu",
-		"KÕt thóc ®èi tho¹i/end_say");
+		"Commission planting large Prajna trees/tuoguan_zhongshu",
+		"End conversation/end_say");
 end
 
 function use_shennong()
-	Say("Xin hái "..GetPlayerSex().."cÇn dïng mÊy viªn ThÇn N«ng ®¬n ®Ó ñy th¸c thu thËp?",
+	Say("May I ask"..GetPlayerSex().."cÇn dïng mÊy viªn ThÇn N«ng ®¬n ®Ó ñy th¸c thu thËp?",
 		4,
-		"Dïng 1 ThÇn N«ng ®¬n--nhËn ®­îc 8 giê ñy th¸c thu thËp (thu phİ "..GOLD_PER_8_HOUR.." vµng)/#yes_use(1)",
-		"Dïng 2 ThÇn N«ng ®¬n--nhËn ®­îc 16 giê ñy th¸c thu thËp (thu phİ "..(GOLD_PER_8_HOUR * 2).." vµng)/#yes_use(2)",
-		"Dïng 3 ThÇn N«ng ®¬n--nhËn ®­îc 24 giê ñy th¸c thu thËp (thu phİ "..(GOLD_PER_8_HOUR * 3).." vµng)/#yes_use(3)",
+		"Dïng 1 ThÇn N«ng ®¬n--nhËn ®­îc 8 giê ñy th¸c thu thËp (thu phİ "..GOLD_PER_8_HOUR.." gold)/#yes_use(1)",
+		"Dïng 2 ThÇn N«ng ®¬n--nhËn ®­îc 16 giê ñy th¸c thu thËp (thu phİ "..(GOLD_PER_8_HOUR * 2).." gold)/#yes_use(2)",
+		"Dïng 3 ThÇn N«ng ®¬n--nhËn ®­îc 24 giê ñy th¸c thu thËp (thu phİ "..(GOLD_PER_8_HOUR * 3).." gold)/#yes_use(3)",
 		"Kh«ng sö dông ñy th¸c thu thËp/end_say")
 end
 
 function tuoguan_zhongshu()
-	Say("Xin hái "..GetPlayerSex().."Lµm thÕ nµo trång ®­îc c©y b¸t nh· lín?",
+	Say("May I ask"..GetPlayerSex().."Lµm thÕ nµo trång ®­îc c©y b¸t nh· lín?",
 		6,
 		"T¹i h¹ cÇn ñy th¸c ng­êi ë < côm TP Hå Chİ Minh 1> trång c©y gióp (tiÒn c«ng 20 vµng vµ 7 lé thñy)/#plant_tuoguan(1, 20, 1)",
 		"T¹i h¹ cÇn ñy th¸c ng­êi ë < côm TP Hå Chİ Minh 2> trång c©y gióp (tiÒn c«ng 20 vµng vµ 7 lé thñy)/#plant_tuoguan(1, 20, 2)",
@@ -104,7 +104,7 @@ function sel_skill(nSkillID)
 
 	for i = 1, getn(t) do
 		if i > 6 then
-			tSay[i] = "Trang kÕ/#next_page("..nSkillID..")"
+			tSay[i] = "Next page/#next_page("..nSkillID..")"
 			break
 		end
 		-- ÌØÀı´¦Àí°¡,À´²»¼°ÁË!
@@ -167,7 +167,7 @@ function next_page(nSkillID)
 		return
 	end
 	
-	tSay[nIndex] = "Trang tr­íc/#sel_skill("..nSkillID..")"
+	tSay[nIndex] = "Previous page/#sel_skill("..nSkillID..")"
 	tSay[nIndex+1] = "Ta ch­a muèn thu thËp/end_say"
 	
 	Say("!!"..GetPlayerSex().." cÇn thu thËp lo¹i vËt phÈm nµo?", getn(tSay), tSay)
@@ -175,9 +175,9 @@ end
 
 function sel_item(szItem, nMapLevel, nSkillID)
 	
-	Say("!!"..GetPlayerSex().."X¸c nhËn muèn thu thËp <color=yellow>"..szItem.."<color> chø?",
+	Say("!!"..GetPlayerSex().."X¸c nhËn muèn thu thËp <color=yellow>"..szItem.."<color> ?",
 		2,
-		"§óng/#start_gather("..nMapLevel..","..nSkillID..")",
+		"Confirm/#start_gather("..nMapLevel..","..nSkillID..")",
 		"Sai/end_say")
 end
 
@@ -202,9 +202,9 @@ function start_gather(nMapLevel, nSkillID)
 		StartTishenGather(nMapLevel, nSkillID, nMaxTime * nCount)
 		
 		local szSkillName = GetGatherSkillName(nSkillID)
-		local szNpcName = GetName().."-"..szSkillName.."tiÓu ®éi"
+		local szNpcName = GetName().."-"..szSkillName.."small team"
 		local szNpcMode = szSkillName
-		if szNpcMode == "Canh t¸c" then
+		if szNpcMode == "Farm" then
 			szNpcMode = "Thu ho¹ch"
 		end
 		-- createnpc

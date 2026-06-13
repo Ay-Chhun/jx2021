@@ -142,13 +142,13 @@ function SelectSay()
 --		tinsert(tbSayDialog,"Sö dông hoa hång vµng/UseYellowRose")
 --	end
    	if nDate >= 20140318 and nDate <= 20140320 then
-		tinsert(tbSayDialog, "Trao gi¶i li xi 3 tû/TraoThuong2Ty_Menu")
+		tinsert(tbSayDialog, "Award the 3 billion lucky money prize/TraoThuong2Ty_Menu")
 	end
 	local tbFeatureMenu = FeatureMenu()
 	if nDate >= 20141107 and nDate <= 20141130 then
 --		tinsert(tbSayDialog, "Mua 1000 Hå Keo (tiªu hao 79 vµng)/#nguyenlieu_thang4(1)")
 --		tinsert(tbSayDialog, "Mua 1000 GiÊy Ngò S¾c (tiªu hao 79 vµng)/#nguyenlieu_thang4(2)")
-		tinsert(tbSayDialog, "Event ChÝnh Th¸ng 11/EventMenu")
+		tinsert(tbSayDialog, "Main November Event/EventMenu")
 		--tinsert(tbSayDialog, "Event MÇm Hoa Th¸ng 10/EventMenu_MamHoa")
 	end
 	if nDate >= 20130919 and nDate <= 20131013 then	
@@ -166,7 +166,7 @@ function SelectSay()
 	for i=1,getn(tbFeatureMenu) do
 		tinsert(tbSayDialog, tbFeatureMenu[i])
 	end
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/dialog_over"	)
+	tinsert(tbSayDialog,"End conversation/dialog_over"	)
 	
 	nSaySize = getn(tbSayDialog);
 	Say(szSayHead, nSaySize, tbSayDialog);
@@ -177,7 +177,7 @@ function Event_Tree_Thang5()
 	local szSayHead = "Th«ng tin chi tiÕt c¸c ho¹t ®éng ®ång ®¹o cã thÓ xem trªn trang chñ <color=green>http://volam2.zing.vn<color>."
 	tbSayDialog, szSayHead = get_tbJNDialog_info(VET_XA_ACTIVITY_TABLE)
    
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/do_nothing"	)
+	tinsert(tbSayDialog,"End conversation/do_nothing"	)
 	nSaySize = getn(tbSayDialog);
 	Say(szSayHead, nSaySize, tbSayDialog);
 end
@@ -307,7 +307,7 @@ function GM001Func2()
 		tinsert(tbSayDialog,"LIEU Body4/#GM_TraoLoiHoTuongQuan(13,4,2)"	)
 	
 		tinsert(tbSayDialog,"Exchange/GM_AddExchange"	)
-		tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/dialog_over"	)
+		tinsert(tbSayDialog,"End conversation/dialog_over"	)
 		nSaySize = getn(tbSayDialog);
 		Say(szSayHead, nSaySize, tbSayDialog);
 	end
@@ -325,7 +325,7 @@ function EventMenu_MamHoa()
 	
 	tbSayDialog,szSayHead = VET_201410_AdditionDialog(tbSayDialog, szSayHead);
 	
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/dialog_over"	)
+	tinsert(tbSayDialog,"End conversation/dialog_over"	)
 	nSaySize = getn(tbSayDialog);
 	Say(szSayHead, nSaySize, tbSayDialog);
 end
@@ -354,7 +354,7 @@ function EventMenu()
 --	if GetTask(2790) == 4000 and VNG_GetTaskPos(2731,3,3) == 0 then
 --		tinsert(tbSayDialog, 1, "NhËn phÇn th­ëng 4000 Tranh Th­ Ph¸p/#EventT10_Max4000_Menu(3,3)")
 --	end
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/dialog_over"	)
+	tinsert(tbSayDialog,"End conversation/dialog_over"	)
 	nSaySize = getn(tbSayDialog);
 	Say(szSayHead, nSaySize, tbSayDialog);
 end
@@ -470,7 +470,7 @@ function NextPage2()
 --	tinsert(tbSayDialog,"§æi vËt phÈm C«ng Thµnh/exchange_citywar")	
 --	tinsert(tbSayDialog,"Chuéc l¹i qu©n c«ng tæn thÊt trong ngµy (1 ®iÓm = 2 b¹c)/take_jungong_back")
 	--tinsert(tbSayDialog,"Trang tr­íc/NextPage")
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/dialog_over"	)
+	tinsert(tbSayDialog,"End conversation/dialog_over"	)
 
 	nSaySize = getn(tbSayDialog);
 	Say(szSayHead, nSaySize, tbSayDialog);
@@ -478,8 +478,8 @@ end
 
 
 function Viet_0912_GetXiangCaoDanGao()
-	local SourceTable = {{"C©y KÑo Gi¸ng Sinh", {2, 1, 30138, 4}}, {"¤ng giµ tuyÕt", {2, 1, 30125, 1}}};
-	local DestTable = {{"B¸nh Kem Vani", 100, {2, 1, 30124, 1}}};
+	local SourceTable = {{"Christmas Candy Cane Tree", {2, 1, 30138, 4}}, {"Old man of snow", {2, 1, 30125, 1}}};
+	local DestTable = {{"Vanilla Cream Cake", 100, {2, 1, 30124, 1}}};
 	if GetItemCount(2,1,30138) < 4 or GetItemCount(2,1,30125) < 1 then
 		Talk(1,"SelectSay","Nguyªn liÖu kh«ng ®ñ!")
 		return
@@ -517,8 +517,8 @@ function clear_pk_value()
 		local tbSayDialog = {}
 		local nSaySize = 0
 		local szSayHead = format("§iÓm PK cña c¸c h¹ ®ang lµ %d, cÇn cã %d giê ñy th¸c B¹ch C©u Tiªn §¬n, %d giê ñy th¸c Tam Thanh Tiªn §¬n, %d giê ñy th¸c Lôc ThÇn Tiªn §¬n ®Ó tiÕn hµnh tÈy ®iÓm. Cã muèn tÈy ®iÓm PK kh«ng?", nPK, nPK*2, nPK, nPK)
-		tinsert(tbSayDialog,"§ång ý/clear_pk")
-		tinsert(tbSayDialog,"Kh«ng ®æi n÷a/dialog_over")
+		tinsert(tbSayDialog,"Agree/clear_pk")
+		tinsert(tbSayDialog,"No more exchange/dialog_over")
 		nSaySize = getn(tbSayDialog)
 		Say(szSayHead, nSaySize, tbSayDialog)
 	end
@@ -544,7 +544,7 @@ function clear_pk()
 		EatLiushen(3,-(60 * nPK))
 		EatSanqin(3,-(60 * nPK))
 		AddPKValue(nPK * (-1))
-		WriteLogEx("Hoat dong thang 5","tÈy "..nPK.." ®iÓm PK")			
+		WriteLogEx("Hoat dong thang 5","cleanse"..nPK.." ®iÓm PK")			
 	end
 end
 
@@ -573,7 +573,7 @@ function VET_201106_Give_Fire()
 	
 	tinsert(tbSayDialog,"NhËn ph¸o hoa mçi ngµy/Confirm_VET_201106_Give_Fire")	
 	--tinsert(tbSayDialog,"KÝch ho¹t sö dông ph¸o hoa d¹ng VIP (tiªu hao 12 Xu vËt phÈm)/Active_VET_201106_Give_Fire")		
-	tinsert(tbSayDialog,"KÕt thóc ®èi tho¹i/dialog_over"	)
+	tinsert(tbSayDialog,"End conversation/dialog_over"	)
 
 	nSaySize = getn(tbSayDialog);
 	Say(szSayHead, nSaySize, tbSayDialog);
@@ -597,7 +597,7 @@ function Active_VET_201106_Give_Fire()
 	end
 	DelItem(2,1,30230,12)
 	SetTask(TSK_ACTIVE_VIP_PHAOHOA, 1)
-	gf_WriteLogEx("KICK HOAT VIP", "kick ho¹t thµnh c«ng", 1, "VIP ph¸o hoa")
+	gf_WriteLogEx("KICK HOAT VIP", "kick ho¹t thµnh c«ng", 1, "VIP fireworks")
 end
 
 
@@ -644,11 +644,11 @@ function Confirm_VET_201106_Give_Fire()
 --		DelItem(2,1,30230,40)
 --		gf_AddItemEx2({2, 1, 30297, nMaxRecv, 4}, "Ph¸o Hoa mõng phiªn b¶n míi lÇn 3", "Phao hoa phien ban moi thang 6", "nhËn "..nMaxRecv.." Ph¸o hoa")
 --	else
-		gf_AddItemEx2({2, 1, 30297, nMaxRecv, 4}, "NhËn Ph¸o Hoa mçi ngµy", "Phao hoa CNDSK 2013 bk", "nhËn "..nMaxRecv.." Ph¸o hoa")
+		gf_AddItemEx2({2, 1, 30297, nMaxRecv, 4}, "NhËn Ph¸o Hoa mçi ngµy", "Phao hoa CNDSK 2013 bk", "nhËn "..nMaxRecv.." Fireworks")
 		gf_WriteLogEx("Phao hoa CNDSK 2013", "nhËn 60 ph¸o hoa", 1, "NhËn Ph¸o Hoa mçi ngµy")
 --	end
 	
-	Msg2Player("B¹n nhËn ®­îc "..nMaxRecv.." ph¸o hoa.")
+	Msg2Player("B¹n nhËn ®­îc "..nMaxRecv.." fireworks.")
 	SetTask(TSK_DAHONGBAO_201101, GetTask(TSK_DAHONGBAO_201101) + 100)
 end
 
@@ -721,7 +721,7 @@ function ChangeSoCola()
 end
 
 tbItem = {
-	{{2,1,30086,24,4}, "H¹t gièng", 7*24*60*60},
+	{{2,1,30086,24,4}, "Seed", 7*24*60*60},
 	{{2,1,9999,1,4},"Qu©n c«ng ch­¬ng", 7*24*60*60},
 	{{2,1,9998,1,4},"Qu©n c«ng §¹i", 7*24*60*60},
 	{{2,1,9977,1,4},"Qu©n c«ng Huy Hoµng", 7*24*60*60},
@@ -769,13 +769,13 @@ function prize_max_event_4000()
 	end
 
 	LIB_Award.szLogTitle = "Hoat dong thang 7 nam 2012"
-	LIB_Award.szLogAction = "NhËn mèc event 4000"
+	LIB_Award.szLogAction = "Receive milestone event 4000"
 	
-	local tbAward1 = {item = {{gdp={2,1,30341,5}, name = "Tµng R­¬ng"}}, nChankhi = 10000}
-	local tbAward2 = {item = {{gdp={2,1,30341,10}, name = "Tµng R­¬ng"}}, nChankhi = 10000}
-	local tbAward3 = {item = {{gdp={2,1,30341,15}, name = "Tµng R­¬ng"}}, nChankhi = 10000}
-	local tbAward4 = {item = {{gdp={2,1,30341,20}, name = "Tµng R­¬ng"}}, nChankhi = 10000}
-	local tbAward5 = {item = {{gdp={2,1,30341,25}, name = "Tµng R­¬ng"}}, nChankhi = 10000}
+	local tbAward1 = {item = {{gdp={2,1,30341,5}, name = "Treasure Chest"}}, nChankhi = 10000}
+	local tbAward2 = {item = {{gdp={2,1,30341,10}, name = "Treasure Chest"}}, nChankhi = 10000}
+	local tbAward3 = {item = {{gdp={2,1,30341,15}, name = "Treasure Chest"}}, nChankhi = 10000}
+	local tbAward4 = {item = {{gdp={2,1,30341,20}, name = "Treasure Chest"}}, nChankhi = 10000}
+	local tbAward5 = {item = {{gdp={2,1,30341,25}, name = "Treasure Chest"}}, nChankhi = 10000}
 	local tbAwardSet = {
 		[1] = {[1] = tbAward1, nRate = 55.550},
 		[2] = {[1] = tbAward2, nRate = 33.330},
@@ -804,7 +804,7 @@ function prize_max_event_4000()
 	end
 
 	LIB_Award.szLogTitle = "Hoat dong thang 7 nam 2012"
-	LIB_Award.szLogAction = "NhËn mèc event 6000"
+	LIB_Award.szLogAction = "Receive milestone event 6000"
 	
 	local tbAward1 = {item = {{gdp={2,1,30346,1}, name = "M¶nh B¹ch Kim"}}, nChankhi = 10000}
 	local tbAward2 = {item = {{gdp={2,1,30346,2}, name = "M¶nh B¹ch Kim"}}, nChankhi = 10000}
@@ -849,7 +849,7 @@ function prize_max_event_4000()
 	end
 
 	LIB_Award.szLogTitle = "Hoat dong thang 7 nam 2012"
-	LIB_Award.szLogAction = "NhËn mèc event 10000"
+	LIB_Award.szLogAction = "Receive milestone event 10000"
 	
 	local tbAward1 = {item = {{gdp={2,95,204,2}, name = "Thiªn Cang LÖnh"}}, nChankhi = 10000}
 	local tbAward2 = {item = {{gdp={2,95,204,4}, name = "Thiªn Cang LÖnh"}}, nChankhi = 10000}
@@ -914,7 +914,7 @@ function prize_max_event_4000()
 		gf_WriteLogEx("Hoat dong thang 07 nam 2013", "nhËn th­ëng thµnh c«ng", 1, "NhËn mèc event 3000 lo¹i 1 tû ®iÓm kinh nghiÖmÝ")
 	end
 	if nType == 2 then
-		gf_AddItemEx2({2,1,30345, 1}, "ChuyÓn sinh ®¬n", "Log phu Hoat dong thang 07 nam 2013", "ChuyÓn Sinh §¬n", 60 * 24 * 3600)
+		gf_AddItemEx2({2,1,30345, 1}, "Rebirth Pill", "Log phu Hoat dong thang 07 nam 2013", "Rebirth Pill", 60 * 24 * 3600)
 		gf_WriteLogEx("Hoat dong thang 07 nam 2013", "nhËn th­ëng thµnh c«ng", 1, "NhËn mèc event 3000 lo¹i chuyÓn sinh ®¬n")
 	end
 	if nType == 3 then
@@ -971,7 +971,7 @@ function prize_max_event_4000()
 		gf_WriteLogEx("Hoat dong thang 07 nam 2013", "nhËn th­ëng thµnh c«ng", 1, "NhËn mèc event 3000 lo¹i 1 tû ®iÓm kinh nghiÖmÝ")
 	end
 	if nType == 2 then
-		gf_AddItemEx2({2,1,30345, 2}, "ChuyÓn sinh ®¬n", "Log phu Hoat dong thang 07 nam 2013", "ChuyÓn Sinh §¬n", 60 * 24 * 3600)
+		gf_AddItemEx2({2,1,30345, 2}, "Rebirth Pill", "Log phu Hoat dong thang 07 nam 2013", "Rebirth Pill", 60 * 24 * 3600)
 		gf_WriteLogEx("Hoat dong thang 07 nam 2013", "nhËn th­ëng thµnh c«ng", 1, "NhËn mèc event 3000 lo¹i chuyÓn sinh ®¬n")
 	end
 	if nType == 3 then
@@ -1015,7 +1015,7 @@ function prize_max_both_event_3000_choose()
 	WriteLogEx("Hoat dong thang 09 nam 2013", "nhËn th­ëng mèc 3000 ®­îc 200 linh lùc ", 1, "200 ®iÓm linh lùc")
 	Msg2Player("B¹n nhËn ®­îc 200 §iÓm Linh Lùc B¹n §ång Hµnh")
 	Msg2Player("Chóc mõng ®¹i hiÖp nhËn th­ëng mèc 3000 thµnh c«ng")
-	gf_WriteLogEx("Hoat dong thang 09 nam 2013", "nhËn th­ëng thµnh c«ng", 1, "NhËn mèc event 3000")
+	gf_WriteLogEx("Hoat dong thang 09 nam 2013", "nhËn th­ëng thµnh c«ng", 1, "Receive milestone event 3000")
  end	
 function prize_max_both_event_4000_choose()
  	local nCheckMaxEvent1 = gf_GetTaskByte(2731, 1)
@@ -1048,7 +1048,7 @@ function prize_max_both_event_4000_choose()
 	WriteLogEx("Hoat dong thang 09 nam 2013", "nhËn th­ëng mèc 3000 ®­îc 200 linh lùc ", 1, "200 ®iÓm linh lùc")
 	Msg2Player("B¹n nhËn ®­îc 200 §iÓm Linh Lùc B¹n §ång Hµnh")
 	Msg2Player("Chóc mõng ®¹i hiÖp nhËn th­ëng mèc 4000 thµnh c«ng")
-	gf_WriteLogEx("Hoat dong thang 09 nam 2013", "nhËn th­ëng thµnh c«ng", 1, "NhËn mèc event 4000")
+	gf_WriteLogEx("Hoat dong thang 09 nam 2013", "nhËn th­ëng thµnh c«ng", 1, "Receive milestone event 4000")
  end	
   
  function prize_max_both_event_6000_choose()
@@ -1070,7 +1070,7 @@ function prize_max_both_event_4000_choose()
 	gf_AddItemEx2({2,1,30344, 2}, "ThÇn Tµi B¶o R­¬ng", "Log phu Hoat dong thang 04 nam 2013", "2 ThÇn Tµi B¶o R­¬ng")
 	AwardGenuineQi(35000)
 	Msg2Player("Chóc mõng ®¹i hiÖp nhËn th­ëng mèc 3000 thµnh c«ng")
-	gf_WriteLogEx("Hoat dong thang 04 nam 2013", "nhËn th­ëng thµnh c«ng", 1, "NhËn mèc event 3000")
+	gf_WriteLogEx("Hoat dong thang 04 nam 2013", "nhËn th­ëng thµnh c«ng", 1, "Receive milestone event 3000")
  end	
  	
  
@@ -1096,7 +1096,7 @@ function prize_max_both_event_4000_choose()
 	gf_AddItemEx2({2,95,204, 1}, "Thiªn Cang LÖnh", "Log phu Hoat dong thang 04 nam 2013", "1 Thiªn Cang LÖnh")
 	gf_AddItemEx2({2,1,30344, 3}, "ThÇn Tµi B¶o R­¬ng", "Log phu Hoat dong thang 04 nam 2013", "1 ThÇn Tµi B¶o R­¬ng")
 	Msg2Player("Chóc mõng ®¹i hiÖp nhËn th­ëng mèc 1111 thµnh c«ng")
-	gf_WriteLogEx("Hoat dong thang 04 nam 2013", "nhËn th­ëng thµnh c«ng", 1, "NhËn mèc event 1111")
+	gf_WriteLogEx("Hoat dong thang 04 nam 2013", "nhËn th­ëng thµnh c«ng", 1, "Receive milestone event 1111")
  end
  
  function prize_max_event_1500_anlanhtho()
@@ -1118,7 +1118,7 @@ function prize_max_both_event_4000_choose()
 	gf_AddItemEx2({2,1,30344, 3}, "ThÇn Tµi B¶o R­¬ng", "Log phu Hoat dong thang 04 nam 2013", "ThÇn Tµi B¶o R­¬ng")
 	AwardGenuineQi(39000)
 	Msg2Player("Chóc mõng ®¹i hiÖp nhËn th­ëng mèc 1500 thµnh c«ng")
-	gf_WriteLogEx("Hoat dong thang 04 nam 2013", "nhËn th­ëng thµnh c«ng", 1, "NhËn mèc event 1500")
+	gf_WriteLogEx("Hoat dong thang 04 nam 2013", "nhËn th­ëng thµnh c«ng", 1, "Receive milestone event 1500")
  end
  
 
@@ -1145,7 +1145,7 @@ function prize_max_both_event_4000_choose()
 	gf_AddItemEx2({2,1,30427, 10}, "C­êng hãa quyÓn 15", "Log phu Hoat dong thang 03 nam 2013", "10 C­êng hãa quyÓn 15", 30 * 24 * 3600)
 	gf_AddItemEx2({2,1,30071, 10}, "10 Nh©n s©m v¹n n¨m", "Log phu Hoat dong thang 03 nam 2013", "10 Nh©n s©m v¹n n¨m")
 	Msg2Player("Chóc mõng ®¹i hiÖp nhËn th­ëng mèc 10000 thµnh c«ng")
-	gf_WriteLogEx("Hoat dong thang 03 nam 2013", "nhËn th­ëng thµnh c«ng", 1, "NhËn mèc event 10000")
+	gf_WriteLogEx("Hoat dong thang 03 nam 2013", "nhËn th­ëng thµnh c«ng", 1, "Receive milestone event 10000")
  end
  function prize_max_event_lixi_choose()
  	local nCheckMaxLixi = gf_GetTaskByte(2731, 2)
@@ -1167,9 +1167,9 @@ function prize_max_both_event_4000_choose()
 	end
 	gf_SetTaskByte(2731, 2, 2)
 	DelItem(2,1,539,8)
-	gf_WriteLogEx("Hoat dong thang 01 nam 2013", "nhËn th­ëng thµnh c«ng", 1, "NhËn mèc event 6800 l× x×")
+	gf_WriteLogEx("Hoat dong thang 01 nam 2013", "nhËn th­ëng thµnh c«ng", 1, "Receive milestone event 6800 lucky money")
 	gf_AddItemEx2({0,102,8844, 1,1,-1,-1,-1,-1,-1,-1,-1,0}, "Huy Hoµng QuËt Khëi", "Log phu Hoat dong thang 01 nam 2013", "Huy Hoµng QuËt Khëi")
-	gf_AddItemEx2({0,102,8845, 1,1,-1,-1,-1,-1,-1,-1,-1,0}, "Vinh Dù QuËt Khëi", "Log phu Hoat dong thang 01 nam 2013", "Vinh Dù QuËt Khëi")
+	gf_AddItemEx2({0,102,8845, 1,1,-1,-1,-1,-1,-1,-1,-1,0}, "Glory Rise", "Log phu Hoat dong thang 01 nam 2013", "Glory Rise")
 	local nKinhNghiem = 666666666
 	ModifyExp(nKinhNghiem)
  end
@@ -1211,7 +1211,7 @@ function EventThang8_HoTro1()
         	return 0
 	end
 	if DelItem(2,1,30132,100) == 1 and Pay(1000000) == 1 then
-		gf_AddItemEx2({2,1,30563,1000}, "GiÊy Tr¾ng", "Hoat dong thang 08 nam 2013", "nhËn më réng event b»ng vµng + VLBH")
+		gf_AddItemEx2({2,1,30563,1000}, "White Paper", "Hoat dong thang 08 nam 2013", "nhËn më réng event b»ng vµng + VLBH")
 	end
  end
  function EventThang8_HoTro2()
@@ -1224,7 +1224,7 @@ function EventThang8_HoTro1()
         	return 0
 	end
 	if DelItem(2,1,30230,39) == 1 then
-		gf_AddItemEx2({2,1,30563,1000}, "GiÊy Tr¾ng", "Hoat dong thang 08 nam 2013", "nhËn më réng event b»ng xu")
+		gf_AddItemEx2({2,1,30563,1000}, "White Paper", "Hoat dong thang 08 nam 2013", "nhËn më réng event b»ng xu")
 		WriteLogEx("LOG XU VAT PHAM","Më réng event th¸ng 8/2013 b»ng 39 xu")	
 	end	
  end
@@ -1249,7 +1249,7 @@ function EventThang8_HoTro1()
  
  function EventT10_Max4000_Done(nOpt,nPos2,nPos1)
  	local tbAward = {
-		[1] = {item={{gdp={2,1,30345,1}, name="ChuyÓn Sinh §¬n", nExpired = 60*24*3600}}},
+		[1] = {item={{gdp={2,1,30345,1}, name="Rebirth Pill", nExpired = 60*24*3600}}},
 		[2] = {nCheck = 0, nExp = 600000000},
  	}
  	if VNG_GetTaskPos(2731,nPos2,nPos1) ~= 0 then
@@ -1295,8 +1295,8 @@ function EventThang8_HoTro1()
  	end
  	if Pay(790000) == 1 then
  		if nType == 1 then
- 			gf_AddItemEx2({2,1,30638,1000}, "hå keo", "MUA NGUYEN LIEU THANG 4 bk", "mua hå keo")
- 			gf_WriteLogEx("MUA NGUYEN LIEU THANG 4", "thµnh c«ng", 1, "mua hå keo")
+ 			gf_AddItemEx2({2,1,30638,1000}, "glue", "MUA NGUYEN LIEU THANG 4 bk", "buy glue")
+ 			gf_WriteLogEx("MUA NGUYEN LIEU THANG 4", "thµnh c«ng", 1, "buy glue")
  		elseif nType == 2 then
  			gf_AddItemEx2({2,1,30637,1000}, "giÊy ngò s¾c", "MUA NGUYEN LIEU THANG 4 bk", "mua giÊy ngò s¾c")
  			gf_WriteLogEx("MUA NGUYEN LIEU THANG 4", "thµnh c«ng", 1, "mua giÊy ngò s¾c")

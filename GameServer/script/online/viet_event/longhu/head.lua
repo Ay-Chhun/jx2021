@@ -5,7 +5,7 @@
 --TASKID_JYBHZ_GET_HONGBAO = 2670;	-- ÁìÈ¡ºì°ü
 
 function addLonghuNpc()
-	local npcIdx = CreateNpc("Vâ L©m Minh Chñ1","Long Hæ Sø", 300, 1921, 3511);
+	local npcIdx = CreateNpc("Vâ L©m Minh Chñ1","Dragon Tiger Envoy", 300, 1921, 3511);
 	SetNpcScript(npcIdx, "\\script\\online\\viet_event\\longhu\\longhu_npc.lua");
 	return npcIdx;
 end

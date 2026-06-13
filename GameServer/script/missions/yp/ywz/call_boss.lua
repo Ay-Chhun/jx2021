@@ -15,7 +15,7 @@ function main()
 		{6300,1537,3215},
 	}
 	local index = random(getn(tPos));
-	local npcIndex = CreateNpc("SFYWZ_YWDCS", "DiÔn Vâ §èc S¸t Sø", tPos[index][1], tPos[index][2], tPos[index][3]);
+	local npcIndex = CreateNpc("SFYWZ_YWDCS", "Yanwu Inspection Envoy", tPos[index][1], tPos[index][2], tPos[index][3]);
 	if npcIndex > 0 then
 		SetNpcDeathScript(npcIndex, "\\script\\missions\\yp\\ywz\\call_boss.lua");
 		SetNpcLifeTime(npcIndex, 30*60);

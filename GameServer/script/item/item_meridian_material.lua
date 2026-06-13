@@ -7,7 +7,7 @@ t_exchange =	{
 }
 t_exchange.free.tConsume = {
 	{"Kinh Mπch ßÂng Nh©n",2,1,30730,1},
-	{"KhËi ng©n nh·",2,1,31012,1},
+	{"Small Silver Block",2,1,31012,1},
 }
 t_exchange.free.nRate = 33
 t_exchange.free.tAward = {
@@ -17,7 +17,7 @@ t_exchange.free.tAward2 = {}
 
 t_exchange.ib.tConsume = {
 	{"Kinh Mπch ßÂng Nh©n",2,1,30730,3},
-	{"Ng©n ß‹nh",2,1,31013,1},
+	{"Silver Ingot",2,1,31013,1},
 }
 t_exchange.ib.tAward = t_exchange.free.tAward
 function exchangeYinRen(szType, szName)
@@ -28,8 +28,8 @@ function exchangeYinRen(szType, szName)
 	if not szType then
 		local tbSay = {}
 		local szTitle = format("%s:%s", szName, "DÔng c∏ch nµo Æ” gh–p Kinh Mπch Ng©n Nh©n?")
-		tinsert(tbSay, format("%s/#exchangeYinRen('free', '%s')", "DÔng khËi ng©n nh· Æ” gh–p", szName))
-		tinsert(tbSay, format("%s/#exchangeYinRen('ib', '%s')", "DÔng Ng©n ß‹nh Æ” gh–p", szName))
+		tinsert(tbSay, format("%s/#exchangeYinRen('free', '%s')", "Use Small Silver Block to forge", szName))
+		tinsert(tbSay, format("%s/#exchangeYinRen('ib', '%s')", "Use Silver Ingot to forge", szName))
 		tinsert(tbSay, "Ta chÿ gh– ch¨i/no")
 		Say(szTitle, getn(tbSay), tbSay)
 		return

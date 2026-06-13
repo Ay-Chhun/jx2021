@@ -10,37 +10,37 @@ TaskID_elixer_num = 1263					--仙丹的数量
 Elixer_num_max = 30000					--仙丹存放的最大数量
 
 function OnUse(elixir_index)
-	Say("<color=green>提示<color>：使用<color=yellow>月亮仙丹<color>可以让你自己的<color=yellow>仙丹<color>数量增加<color=yellow>"..Elixir_chg_num.."<color>个，您确认要使用吗？",
+	Say("<color=green>Tip<color>: Using the <color=yellow>Moonlight Immortal Pill<color> can increase your own <color=yellow>Immortal Pill<color> count by <color=yellow>"..Elixir_chg_num.."<color> pills. Are you sure you want to use it?",
 	2,
-	"我确认要使用/elixir_use_dtm",
-	"我再考虑考虑/end_dialog"
+	"I confirm I want to use it/elixir_use_dtm",
+	"Let me think it over again/end_dialog"
 	)
 end
 --确认使用数量输入
 function elixir_use_dtm()
 	local num_max = GetItemCount(2,0,1042)
-	AskClientForNumber("elixir_chg_dtm",1,num_max,"请输入您要兑换的数量")
+	AskClientForNumber("elixir_chg_dtm",1,num_max,"Please enter the amount you want to exchange")
 end
 --确认对话
 function elixir_chg_dtm(num_enter)
 	--携带检测
 	if GetItemCount(2,0,1042) <num_enter then
-		Talk(1,"","<color=green>提示<color>：您的<color=yellow>月亮仙丹<color>数量不足，请确认后重新使用！")
+		Talk(1,"","<color=green>Tip<color>: Your <color=yellow>Moonlight Immortal Pill<color> count is insufficient. Please confirm and use it again!")
 		return
 	end
 	--上限判断
 	local elixir_num = GetTask(TaskID_elixer_num) + (num_enter *Elixir_chg_num)
 	if elixir_num > Elixer_num_max then
-		Talk(1,"","<color=green>提示<color>：您的<color=yellow>仙丹<color>数量已经达到上限：<color=red>"..Elixer_num_max.."<color>粒，请先到<color=yellow>凤翔<color>找<color=green>大考官兔总管<color>兑换掉再来使用吧！")
+		Talk(1,"","<color=green>Tip<color>: Your <color=yellow>Immortal Pill<color> count has reached the upper limit: <color=red>"..Elixer_num_max.."<color> pills. Please go to <color=yellow>Fengxiang<color> and find the <color=green>Chief Examiner Rabbit Steward<color> to exchange them first, then come back to use it!")
 		return
 	end
 	--删除检测
 	if DelItem(2,0,1042,num_enter) ~= 1 then
-		Talk(1,"","<color=green>提示<color>：您的<color=yellow>月亮仙丹<color>数量不足，请确认后重新使用！")
+		Talk(1,"","<color=green>Tip<color>: Your <color=yellow>Moonlight Immortal Pill<color> count is insufficient. Please confirm and use it again!")
 		return
 	end
 	SetTask(TaskID_elixer_num,elixir_num)
-	Talk(1,"","<color=green>提示<color>：使用后您增加了<color=yellow>".. (num_enter *Elixir_chg_num).."<color>粒仙丹，现在您的仙丹总数为<color=yellow>"..elixir_num.."<color>粒！")
+	Talk(1,"","<color=green>Tip<color>: After using it you gained <color=yellow>".. (num_enter *Elixir_chg_num).."<color> Immortal Pills. Your total Immortal Pill count is now <color=yellow>"..elixir_num.."<color> pills!")
 end
 --结束对话
 function end_dialog()

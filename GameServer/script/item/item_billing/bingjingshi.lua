@@ -31,7 +31,7 @@ function OnUse(nItem)
 		"HÓp thµnh Luy÷n L´ Thi’t c p 3 = 4*2 c p Luy÷n L´ Thi’t + 2 B®ng Tinh Thπch/compose3l",
 		"HÓp thµnh c p 4 T»y T©m Thπch = 4*3 c p T»y T©m Thπch + 3 B®ng Tinh Thπch/compose4x",
 		"HÓp thµnh c p 4 Luy÷n L´ Thi™t = 4*3 c p Luy÷n L´ Thi’t + 3 B®ng Tinh Thπch/compose4l",
-		"Ra kh·i/do_nothing",
+		"Exit/do_nothing",
 	}
 --	for i,v in t_compose do
 --		local szNeed = format("%sx%d",v.need[1][1], ,v.need[1][5])

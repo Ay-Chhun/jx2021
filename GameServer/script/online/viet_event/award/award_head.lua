@@ -10,13 +10,13 @@ end
 -- Më tói h¹t gièng
 function VietSeedBagAwards()
 	if VietCheckEvent201104() == 1 then
-		gf_AddItemEx2({2, 1, 30290, 100}, "Tói nguyªn liÖu", "Hoat dong thang 4 nam 2011", "më Tói H¹t Gièng")
+		gf_AddItemEx2({2, 1, 30290, 100}, "Tói nguyªn liÖu", "Hoat dong thang 4 nam 2011", "open Seed Pouch")
 	end
 --	if VietCheckEvent201106() == 1 then
 --		gf_AddItemEx2({2,1,30317, 100}, "Tr¸i c©y mïa hÌ", "Hoat dong thang 6 nam 2011", "më Tói H¹t Gièng")
 --	end
 	if VietCheckEvent20110826() == 1 then
-		gf_AddItemEx2({2,1,30327,1}, "§Ìn hoa Trung Thu", "Hoat dong thang 8 nam 2011", "më Tói H¹t Gièng", 24*3600)
+		gf_AddItemEx2({2,1,30327,1}, "Mid-Autumn Lantern", "Hoat dong thang 8 nam 2011", "open Seed Pouch", 24*3600)
 		Msg2Player("B¹n nhËn ®­îc 1 §Ìn hoa Trung Thu")		
 	end
 	
@@ -32,13 +32,13 @@ function VietSeedBagAwardsEvent12()
 		end
 		local nTimes = GetTask(2059)
 		if  nTimes >= 1 and nTimes <= 6 then
-			gf_AddItemEx2({2,1,30347, 5}, "KÑo Que B¹c Hµ", "Hoat dong thang 12 nam 2011", "trång H¹t Gièng")
+			gf_AddItemEx2({2,1,30347, 5}, "Mint Stick Candy", "Hoat dong thang 12 nam 2011", "plant Seed")
 			Msg2Player("B¹n nhËn ®­îc 5 KÑo Que B¹c Hµ")	
 		elseif  nTimes >= 7 and nTimes <= 12 then
-			gf_AddItemEx2({2,1,30347, 15}, "Tói nguyªn liÖu", "Hoat dong thang 12 nam 2011", "trång H¹t Gièng")
+			gf_AddItemEx2({2,1,30347, 15}, "Tói nguyªn liÖu", "Hoat dong thang 12 nam 2011", "plant Seed")
 			Msg2Player("B¹n nhËn ®­îc 15 KÑo Que B¹c Hµ")	
 		elseif  nTimes >= 13 and nTimes <= 24 then
-			gf_AddItemEx2({2,1,30347, 25}, "Tói nguyªn liÖu", "Hoat dong thang 12 nam 2011", "trång H¹t Gièng")
+			gf_AddItemEx2({2,1,30347, 25}, "Tói nguyªn liÖu", "Hoat dong thang 12 nam 2011", "plant Seed")
 			Msg2Player("B¹n nhËn ®­îc 25 KÑo Que B¹c Hµ")	
 		end
 end
@@ -50,13 +50,13 @@ function VietSeedBagAwardsEvent012012()
 		end
 		local nTimes = GetTask(2059)
 		if  nTimes >= 1 and nTimes <= 6 then
-			gf_AddItemEx2({2,1,30353, 5}, "§ång tiÒn may m¾n", "Hoat dong thang 1 nam 2012", "trång H¹t Gièng")
+			gf_AddItemEx2({2,1,30353, 5}, "Lucky Coin", "Hoat dong thang 1 nam 2012", "plant Seed")
 			Msg2Player("B¹n nhËn ®­îc 5 §ång tiÒn may m¾n")	
 		elseif  nTimes >= 7 and nTimes <= 12 then
-			gf_AddItemEx2({2,1,30353, 15}, "§ång tiÒn may m¾n", "Hoat dong thang 1 nam 2012", "trång H¹t Gièng")
+			gf_AddItemEx2({2,1,30353, 15}, "Lucky Coin", "Hoat dong thang 1 nam 2012", "plant Seed")
 			Msg2Player("B¹n nhËn ®­îc 15 §ång tiÒn may m¾n")	
 		elseif  nTimes >= 13 and nTimes <= 24 then
-			gf_AddItemEx2({2,1,30353, 25}, "§ång tiÒn may m¾n", "Hoat dong thang 1 nam 2012", "trång H¹t Gièng")
+			gf_AddItemEx2({2,1,30353, 25}, "Lucky Coin", "Hoat dong thang 1 nam 2012", "plant Seed")
 			Msg2Player("B¹n nhËn ®­îc 25 §ång tiÒn may m¾n")	
 		end
 end
@@ -64,21 +64,21 @@ end
 -- C©y b¸t nh· nhá
 function VietSmallFruit_Award()
 	if VietCheckEvent201104() == 1 then
-		gf_AddItemEx2({2, 1, 30290, 30}, "Tói nguyªn liÖu", "Hoat dong thang 4 nam 2011", "trång B¸t Nh· Nhá")
+		gf_AddItemEx2({2, 1, 30290, 30}, "Tói nguyªn liÖu", "Hoat dong thang 4 nam 2011", "plant Small Prajna")
 	end
 end
 
 -- C¸y b¸t nh¶ lín
 function VietBiglFruit_Award()
 	if VietCheckEvent201104() == 1 then
-		gf_AddItemEx2({2, 1, 30290, 40}, "Tói nguyªn liÖu", "Hoat dong thang 4 nam 2011", "trång B¸t Nh· Lín")
+		gf_AddItemEx2({2, 1, 30290, 40}, "Tói nguyªn liÖu", "Hoat dong thang 4 nam 2011", "plant Large Prajna")
 	end
 end
 
 -- Ng«i sao may m¾n
 function VietLuckyStar()
 	if VietCheckEvent201107() == 1 then
-		gf_AddItemEx2({2,1,30317, 20}, "Tr¸i c©y mïa hÌ", "Hoat dong thang 6 nam 2011", "Sö dông Ng«i Sao May M¾n")
+		gf_AddItemEx2({2,1,30317, 20}, "Summer Fruit", "Hoat dong thang 6 nam 2011", "Sö dông Ng«i Sao May M¾n")
 	end
 	
 	if VietCheckEvent20110714() == 1 then
@@ -109,9 +109,9 @@ function VietSongLiao(nType)
 			[3] = {100},
 			[4] = {20},
 		}
-		gf_AddItemEx2({2,1,30328,  tMaterialQuantity201108[nType][1]}, "Bét m×", "Hoat dong thang 8 nam 2011", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201108[nType][1].." Bét M× H¶o H¹ng")
-		gf_AddItemEx2({2,1,30327,1}, "§Ìn hoa Trung Thu", "Hoat dong thang 8 nam 2011", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn", 24*3600)
+		gf_AddItemEx2({2,1,30328,  tMaterialQuantity201108[nType][1]}, "Flour", "Hoat dong thang 8 nam 2011", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201108[nType][1].." Premium Wheat Flour")
+		gf_AddItemEx2({2,1,30327,1}, "Mid-Autumn Lantern", "Hoat dong thang 8 nam 2011", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn", 24*3600)
 		Msg2Player("B¹n nhËn ®­îc 1 §Ìn hoa Trung Thu")		
 	end
 	
@@ -137,8 +137,8 @@ function VietSongLiao(nType)
 			[3] = {100},
 			[4] = {20},
 		}
-		gf_AddItemEx2({2,1,30333,  tMaterialQuantity201111[nType][1]}, "Hoa S¬n Trµ", "Hoat dong thang 11 nam 2011", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201111[nType][1].." Hoa S¬n Trµ")
+		gf_AddItemEx2({2,1,30333,  tMaterialQuantity201111[nType][1]}, "Camellia Flower", "Hoat dong thang 11 nam 2011", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201111[nType][1].." Camellia Flower")
 	end
 	
 	if VietCheckEvent20111216() == 1 then
@@ -149,8 +149,8 @@ function VietSongLiao(nType)
 			[3] = {100},
 			[4] = {20},
 		}
-		gf_AddItemEx2({2,1,30347,  tMaterialQuantity201111[nType][1]}, "KÑo Que B¹c Hµ", "Hoat dong thang 12 nam 2011", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201111[nType][1].." KÑo Que B¹c Hµ")
+		gf_AddItemEx2({2,1,30347,  tMaterialQuantity201111[nType][1]}, "Mint Stick Candy", "Hoat dong thang 12 nam 2011", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201111[nType][1].." Mint Stick Candy")
 	end
 	
 	if VietCheckEvent20120116() == 1 then
@@ -161,8 +161,8 @@ function VietSongLiao(nType)
 			[3] = {100},
 			[4] = {20},
 		}
-		gf_AddItemEx2({2,1,30353,  tMaterialQuantity201201[nType][1]}, "§ång tiÒn may m¾n", "Hoat dong thang 1 nam 2012", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201201[nType][1].." §ång tiÒn may m¾n")
+		gf_AddItemEx2({2,1,30353,  tMaterialQuantity201201[nType][1]}, "Lucky Coin", "Hoat dong thang 1 nam 2012", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201201[nType][1].." Lucky Coin")
 	end
 	
 	if VietCheckEvent20120210() == 1 then
@@ -173,8 +173,8 @@ function VietSongLiao(nType)
 			[3] = {100},
 			[4] = {20},
 		}
-		gf_AddItemEx2({2,1,30357,  tMaterialQuantity201202[nType][1]}, "Qu¶ CaCao", "Hoat dong thang 2 nam 2012", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201202[nType][1].." Qu¶ CaCao")
+		gf_AddItemEx2({2,1,30357,  tMaterialQuantity201202[nType][1]}, "Cacao Fruit", "Hoat dong thang 2 nam 2012", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201202[nType][1].." Cacao Fruit")
 	end
 	if VietCheckEvent20120309() == 1 then
 		local tMaterialQuantity201203 = 
@@ -195,8 +195,8 @@ function VietSongLiao(nType)
 			[3] = {100},
 			[4] = {20},
 		}
-		gf_AddItemEx2({2,1,30363,  tMaterialQuantity201204[nType][1]}, "ChiÕn tÝch", "Hoat dong thang 4 nam 2012", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201204[nType][1].." ChiÕn tÝch")
+		gf_AddItemEx2({2,1,30363,  tMaterialQuantity201204[nType][1]}, "War Record", "Hoat dong thang 4 nam 2012", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201204[nType][1].." War Record")
 	end
 	if VietCheckEvent20120511() == 1 then
 		local tMaterialQuantity201205 = 
@@ -206,8 +206,8 @@ function VietSongLiao(nType)
 			[3] = {100},
 			[4] = {20},
 		}
-		gf_AddItemEx2({2,1,30375 ,  tMaterialQuantity201205[nType][1]}, "Nguyªn liÖu mïa hÌ", "Hoat dong thang 5 nam 2012", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201205[nType][1].." Nguyªn liÖu mïa hÌ")
+		gf_AddItemEx2({2,1,30375 ,  tMaterialQuantity201205[nType][1]}, "Summer materials", "Hoat dong thang 5 nam 2012", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201205[nType][1].." Summer materials")
 	end
 	if VietCheckEvent20120615() == 1 then
 		local tMaterialQuantity201205 = 
@@ -217,8 +217,8 @@ function VietSongLiao(nType)
 			[3] = {100},
 			[4] = {20},
 		}
-		gf_AddItemEx2({2,1,30380 ,  tMaterialQuantity201205[nType][1]}, "Nguyªn liÖu b¸nh ó tro", "Hoat dong thang 6 nam 2012", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201205[nType][1].." Nguyªn liÖu b¸nh ó tro")
+		gf_AddItemEx2({2,1,30380 ,  tMaterialQuantity201205[nType][1]}, "Ash Cake materials", "Hoat dong thang 6 nam 2012", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201205[nType][1].." Ash Cake materials")
 	end
 	if VietCheckEvent20120720() == 1 then
 		local tMaterialQuantity201207 = 
@@ -228,8 +228,8 @@ function VietSongLiao(nType)
 			[3] = {100},
 			[4] = {20},
 		}
-		gf_AddItemEx2({2,1,30393 ,  tMaterialQuantity201207[nType][1]}, "Nguyªn liÖu H¶i s¶n t­¬i sèng", "Hoat dong thang 7 nam 2012", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201207[nType][1].." Nguyªn liÖu H¶i s¶n t­¬i sèng")
+		gf_AddItemEx2({2,1,30393 ,  tMaterialQuantity201207[nType][1]}, "Fresh Seafood materials", "Hoat dong thang 7 nam 2012", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201207[nType][1].." Fresh Seafood materials")
 	end
 	if VietCheckEvent20120817() == 1 then
 		local tMaterialQuantity201208 = 
@@ -259,8 +259,8 @@ function VietSongLiao(nType)
 			[3] = {300},
 			[4] = {20},
 		}
-		gf_AddItemEx2({2,1,30442 ,  tMaterialQuantity201209[nType][1]}, "Tinh DÇu Hoa", "Hoat dong thang 10 nam 2012", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201209[nType][1].." Tinh DÇu Hoa")
+		gf_AddItemEx2({2,1,30442 ,  tMaterialQuantity201209[nType][1]}, "Flower Essence Oil", "Hoat dong thang 10 nam 2012", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201209[nType][1].." Flower Essence Oil")
 	end
 	if VietCheckEvent20121116() == 1 then
 		local tMaterialQuantity201211 = 
@@ -270,8 +270,8 @@ function VietSongLiao(nType)
 			[3] = {300},
 			[4] = {20},
 		}
-		gf_AddItemEx2({2,1,30454 ,  tMaterialQuantity201211[nType][1]}, "Men r­îu th­îng h¹ng", "Hoat dong thang 11 nam 2012", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201211[nType][1].." Men r­îu th­îng h¹ng")
+		gf_AddItemEx2({2,1,30454 ,  tMaterialQuantity201211[nType][1]}, "Premium wine yeast", "Hoat dong thang 11 nam 2012", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201211[nType][1].." Premium wine yeast")
 	end	
 	if VietCheckEvent20121217() == 1 then
 		local tMaterialQuantity201212 = 
@@ -281,8 +281,8 @@ function VietSongLiao(nType)
 			[3] = {600},
 			[4] = {20},
 		}
-		gf_AddItemEx2({2,1,30464 ,  tMaterialQuantity201212[nType][1]}, "Nguyªn liÖu Noel", "Hoat dong thang 12 nam 2012", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201212[nType][1].." Nguyªn liÖu Noel")
+		gf_AddItemEx2({2,1,30464 ,  tMaterialQuantity201212[nType][1]}, "Christmas materials", "Hoat dong thang 12 nam 2012", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201212[nType][1].." Christmas materials")
 	end	
 	if VietCheckEvent20130125() == 1 then
 		local tMaterialQuantity201301 = 
@@ -292,8 +292,8 @@ function VietSongLiao(nType)
 			[3] = {600},
 			[4] = {20},
 		}
-		gf_AddItemEx2({2,1,30472 ,  tMaterialQuantity201301[nType][1]}, "Nguyªn liÖu Event", "Hoat dong thang 01 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201301[nType][1].." Nguyªn liÖu Event")
+		gf_AddItemEx2({2,1,30472 ,  tMaterialQuantity201301[nType][1]}, "Event materials", "Hoat dong thang 01 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201301[nType][1].." Event materials")
 	end
 	if VietCheckEvent20130308() == 1 then
 		local tMaterialQuantity201301 = 
@@ -303,8 +303,8 @@ function VietSongLiao(nType)
 			[3] = {600},
 			[4] = {20},
 		}
-		gf_AddItemEx2({2,1,30486 ,  tMaterialQuantity201301[nType][1]}, "Nguyªn liÖu Event", "Hoat dong thang 03 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201301[nType][1].." Nguyªn liÖu Event")
+		gf_AddItemEx2({2,1,30486 ,  tMaterialQuantity201301[nType][1]}, "Event materials", "Hoat dong thang 03 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201301[nType][1].." Event materials")
 	end	
 	if VietCheckEvent20130419() == 1 then
 		local tMaterialQuantity201301 = 
@@ -314,8 +314,8 @@ function VietSongLiao(nType)
 			[3] = {300},
 			[4] = {20},
 		}
-		gf_AddItemEx2({2,1,30500 ,  tMaterialQuantity201301[nType][1]}, "Nguyªn liÖu Event", "Hoat dong thang 04 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201301[nType][1].." Nguyªn liÖu Event")
+		gf_AddItemEx2({2,1,30500 ,  tMaterialQuantity201301[nType][1]}, "Event materials", "Hoat dong thang 04 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201301[nType][1].." Event materials")
 	end	
 	if VietCheckEvent20130517() == 1 then
 		local tMaterialQuantity201305 = 
@@ -325,8 +325,8 @@ function VietSongLiao(nType)
 			[3] = {300},
 			[4] = {20},
 		}
-		gf_AddItemEx2({2,1,30515 ,  tMaterialQuantity201305[nType][1]}, "Nguyªn liÖu Event", "Hoat dong thang 05 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201305[nType][1].." Nguyªn liÖu Event")
+		gf_AddItemEx2({2,1,30515 ,  tMaterialQuantity201305[nType][1]}, "Event materials", "Hoat dong thang 05 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201305[nType][1].." Event materials")
 	end	
 	if VietCheckEvent20130615() == 1 then
 		local tMaterialQuantity201306 = 
@@ -336,8 +336,8 @@ function VietSongLiao(nType)
 			[3] = {200},
 			[4] = {50},
 		}
-		gf_AddItemEx2({2,1,30545 ,  tMaterialQuantity201306[nType][1]}, "Nguyªn liÖu Event", "Hoat dong thang 06 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201306[nType][1].." Nguyªn liÖu Event")
+		gf_AddItemEx2({2,1,30545 ,  tMaterialQuantity201306[nType][1]}, "Event materials", "Hoat dong thang 06 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201306[nType][1].." Event materials")
 	end		
 	if VietCheckEvent20130719() == 1 then	
 		local tMaterialQuantity201307 = 
@@ -347,8 +347,8 @@ function VietSongLiao(nType)
 			[3] = {300},
 			[4] = {50},
 		}
-		gf_AddItemEx2({2,1,30550 ,  tMaterialQuantity201307[nType][1]}, "Nguyªn liÖu Event", "Hoat dong thang 07 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201307[nType][1].." Nguyªn liÖu Event")
+		gf_AddItemEx2({2,1,30550 ,  tMaterialQuantity201307[nType][1]}, "Event materials", "Hoat dong thang 07 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201307[nType][1].." Event materials")
 	end			
 	if VietCheckEvent20130823() == 1 then	
 		local tMaterialQuantity201307 = 
@@ -358,8 +358,8 @@ function VietSongLiao(nType)
 			[3] = {300},
 			[4] = {50},
 		}
-		gf_AddItemEx2({2,1,30563 ,  tMaterialQuantity201307[nType][1]}, "Nguyªn liÖu Event", "Hoat dong thang 08 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201307[nType][1].." Nguyªn liÖu Event")
+		gf_AddItemEx2({2,1,30563 ,  tMaterialQuantity201307[nType][1]}, "Event materials", "Hoat dong thang 08 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201307[nType][1].." Event materials")
 	end	
 	if VietCheckEvent20130919() == 1 then	
 		local tMaterialQuantity201307 = 
@@ -369,8 +369,8 @@ function VietSongLiao(nType)
 			[3] = {300},
 			[4] = {50},
 		}
-		gf_AddItemEx2({2,1,30567 ,  tMaterialQuantity201307[nType][1]}, "Nguyªn liÖu Event", "Hoat dong thang 09 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
-		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201307[nType][1].." Nguyªn liÖu Event")
+		gf_AddItemEx2({2,1,30567 ,  tMaterialQuantity201307[nType][1]}, "Event materials", "Hoat dong thang 09 nam 2013", "hoµn thµnh nhiÖm vô Tµi Nguyªn ChiÕn")
+		Msg2Player("B¹n nhËn ®­îc "..tMaterialQuantity201307[nType][1].." Event materials")
 	end								
 		
 end
@@ -383,7 +383,7 @@ function VietWaBaoHe()
 			return
 		end
 		if  mod(nUse,10) == 0 then
-			gf_AddItemEx2({2,1,30317, 20}, "Tr¸i c©y mïa hÌ", "Hoat dong thang 6 nam 2011", "Sö dông N÷ Oa B¶o H¹p")
+			gf_AddItemEx2({2,1,30317, 20}, "Summer Fruit", "Hoat dong thang 6 nam 2011", "Sö dông N÷ Oa B¶o H¹p")
 		end
 	end
 	
@@ -402,11 +402,11 @@ end
 --  Thá  n­ímg 
 function ThoNuong_Award()
 	if VietCheckEvent20110826() == 1 then
-		gf_AddItemEx2({2, 1, 30328, 5}, "Bét M× H¶o H¹ng", "Hoat dong thang 8 nam 2011", "bµn tiÖc Thá N­íng")
+		gf_AddItemEx2({2, 1, 30328, 5}, "Premium Wheat Flour", "Hoat dong thang 8 nam 2011", "Roast Rabbit Banquet")
 		Msg2Player("B¹n nhËn ®­îc 5 Bét M× H¶o H¹ng")
 	end
 	if VietCheckEvent20111007() == 1 then
-		gf_AddItemEx2({2,1,30331, 5}, "Hoa Hång", "Hoat dong thang 10 nam 2011", "bµn tiÖc Thá N­íng")
+		gf_AddItemEx2({2,1,30331, 5}, "Hoa Hång", "Hoat dong thang 10 nam 2011", "Roast Rabbit Banquet")
 		Msg2Player("B¹n nhËn ®­îc 5 Hoa Hång")
 	end
 --	if VietCheckEvent20111111() == 1 then
@@ -418,7 +418,7 @@ end
 --  NhiÖm vô B¹ch Tiªn Sinh
 function BachTienSinh_Award()
 	if VietCheckEvent20110826() == 1 then
-		gf_AddItemEx2({2, 1, 30328, 50}, "Bét M× H¶o H¹ng", "Hoat dong thang 8 nam 2011", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2, 1, 30328, 50}, "Premium Wheat Flour", "Hoat dong thang 8 nam 2011", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 50 Bét M× H¶o H¹ng")
 	end
 	if VietCheckEvent20111007() == 1 then
@@ -426,15 +426,15 @@ function BachTienSinh_Award()
 		Msg2Player("B¹n nhËn ®­îc 50 Hoa Hång")
 	end
 	if VietCheckEvent20111111() == 1 then
-		gf_AddItemEx2({2,1,30333,100}, "Hoa S¬n Trµ", "Hoat dong thang 11 nam 2011", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2,1,30333,100}, "Camellia Flower", "Hoat dong thang 11 nam 2011", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 100 Hoa S¬n Trµ")
 	end
 	if VietCheckEvent20120116() == 1 then
-		gf_AddItemEx2({2,1,30353,50}, "§ång tiÒn may m¾n", "Hoat dong thang 1 nam 2012", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2,1,30353,50}, "Lucky Coin", "Hoat dong thang 1 nam 2012", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 50 §ång tiÒn may m¾n")
 	end
 	if VietCheckEvent20120210() == 1 then
-		gf_AddItemEx2({2,1,30357,50}, "Qu¶ CaCao", "Hoat dong thang 2 nam 2012", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2,1,30357,50}, "Cacao Fruit", "Hoat dong thang 2 nam 2012", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 50 Qu¶ CaCao")
 	end
 	if VietCheckEvent20120309() == 1 then
@@ -442,19 +442,19 @@ function BachTienSinh_Award()
 		Msg2Player("B¹n nhËn ®­îc 50 V¶i lôa cao cÊp")
 	end
 	if VietCheckEvent20120413() == 1 then
-		gf_AddItemEx2({2,1,30363,50}, "ChiÕn tÝch", "Hoat dong thang 4 nam 2012", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2,1,30363,50}, "War Record", "Hoat dong thang 4 nam 2012", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 50 ChiÕn tÝch")
 	end
 	if VietCheckEvent20120511() == 1 then
-		gf_AddItemEx2({2,1,30375 ,50}, "Nguyªn LiÖu mïa hÌ", "Hoat dong thang 5 nam 2012", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2,1,30375 ,50}, "Summer Materials", "Hoat dong thang 5 nam 2012", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 50 Nguyªn LiÖu mïa hÌ")
 	end
 	if VietCheckEvent20120615() == 1 then
-		gf_AddItemEx2({2,1,30380 ,50}, "Nguyªn LiÖu b¸nh ó tro", "Hoat dong thang 6 nam 2012", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2,1,30380 ,50}, "Ash Cake Materials", "Hoat dong thang 6 nam 2012", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 50 Nguyªn LiÖu b¸nh ó tro")
 	end
 	if VietCheckEvent20120720() == 1 then
-		gf_AddItemEx2({2,1,30393 ,50}, "Nguyªn LiÖu H¶i s¶n t­¬i sèng", "Hoat dong thang 7 nam 2012", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2,1,30393 ,50}, "Fresh Seafood Ingredient", "Hoat dong thang 7 nam 2012", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 50 Nguyªn LiÖu H¶i s¶n t­¬i sèng")
 	end
 	if VietCheckEvent20120817() == 1 then
@@ -466,7 +466,7 @@ function BachTienSinh_Award()
 		Msg2Player("B¹n nhËn ®­îc 50 Bét lµm b¸nh")
 	end	
 	if VietCheckEvent20121012() == 1 then
-		gf_AddItemEx2({2,1,30442 ,50}, "Tinh DÇu Hoa", "Hoat dong thang 10 nam 2012", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2,1,30442 ,50}, "Flower Essence Oil", "Hoat dong thang 10 nam 2012", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 50 Tinh DÇu Hoa")
 	end	
 	if VietCheckEvent20121116() == 1 then
@@ -474,39 +474,39 @@ function BachTienSinh_Award()
 		Msg2Player("B¹n nhËn ®­îc 50 Men r­îu th­ëng h¹ng")
 	end	
 	if VietCheckEvent20121217() == 1 then
-		gf_AddItemEx2({2,1,30464 ,100}, "Nguyªn liÖu Noel", "Hoat dong thang 12 nam 2012", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2,1,30464 ,100}, "Christmas materials", "Hoat dong thang 12 nam 2012", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 100 Nguyªn LiÖu Noel")
 	end	
 	if VietCheckEvent20130125() == 1 then
-		gf_AddItemEx2({2,1,30472 ,100}, "Nguyªn liÖu Event", "Hoat dong thang 01 nam 2013", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2,1,30472 ,100}, "Event materials", "Hoat dong thang 01 nam 2013", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 100 Nguyªn LiÖu Event")
 	end
 	if VietCheckEvent20130308() == 1 then
-		gf_AddItemEx2({2,1,30486 ,100}, "Nguyªn liÖu Event", "Hoat dong thang 03 nam 2013", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2,1,30486 ,100}, "Event materials", "Hoat dong thang 03 nam 2013", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 100 Nguyªn LiÖu Event")
 	end		
 	if VietCheckEvent20130419() == 1 then
-		gf_AddItemEx2({2,1,30500 ,60}, "Nguyªn liÖu Event", "Hoat dong thang 04 nam 2013", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2,1,30500 ,60}, "Event materials", "Hoat dong thang 04 nam 2013", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 60 Nguyªn LiÖu Event")
 	end		
 	if VietCheckEvent20130517() == 1 then
-		gf_AddItemEx2({2,1,30515 ,100}, "Nguyªn liÖu Event", "Hoat dong thang 05nam 2013", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2,1,30515 ,100}, "Event materials", "Hoat dong thang 05nam 2013", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 100 Nguyªn LiÖu Event")
 	end		
 	if VietCheckEvent20130615() == 1 then
-		gf_AddItemEx2({2,1,30545 ,100}, "Nguyªn liÖu Event", "Hoat dong thang 06nam 2013", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2,1,30545 ,100}, "Event materials", "Hoat dong thang 06nam 2013", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 100 Nguyªn LiÖu Event")
 	end		
 	if VietCheckEvent20130719() == 1 then
-		gf_AddItemEx2({2,1,30550 ,20}, "Nguyªn liÖu Event", "Hoat dong thang 07 nam 2013", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2,1,30550 ,20}, "Event materials", "Hoat dong thang 07 nam 2013", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 20 Nguyªn LiÖu Event")
 	end			
 	if VietCheckEvent20130823() == 1 then
-		gf_AddItemEx2({2,1,30563 ,20}, "Nguyªn liÖu Event", "Hoat dong thang 08 nam 2013", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2,1,30563 ,20}, "Event materials", "Hoat dong thang 08 nam 2013", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 20 Nguyªn LiÖu Event")
 	end		
 	if VietCheckEvent20130919() == 1 then
-		gf_AddItemEx2({2,1,30567 ,20}, "Nguyªn liÖu Event", "Hoat dong thang 09 nam 2013", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
+		gf_AddItemEx2({2,1,30567 ,20}, "Event materials", "Hoat dong thang 09 nam 2013", "hoµn thµnh nhiÖm vô B¹ch Tiªn Sinh")
 		Msg2Player("B¹n nhËn ®­îc 20 Nguyªn LiÖu Event")
 	end						
 end

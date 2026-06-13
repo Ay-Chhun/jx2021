@@ -382,7 +382,7 @@ function ACT3_Killer()
 			-- Stage Event End
 		end
 	end
-	if TT_TARGET_Name == "§¹i tiÓu th­" then
+	if TT_TARGET_Name == "Eldest Young Lady" then
 		TC_STAGE_State[nZone] = 20
 		MC_ClearGroup(nZone)
 		GS_CreateMessenger()
@@ -1127,7 +1127,7 @@ function On_Dropis_Get()
 	end
 	AddItem(aGearsIndex[1], aGearsIndex[2], aGearsIndex[3], 1)
 --	Msg2Player("#"..aGearsIndex[1].." "..aGearsIndex[2].." "..aGearsIndex[3])
-	MU_Msg2Team(GetName().."NhÆt ®­îc "..GT_GetGearFaction(aGearsIndex[3]).."-"..GT_GetGearPart(aGearsIndex[2])..".."..aGearsIndex[1].." "..aGearsIndex[2].." "..aGearsIndex[3])
+	MU_Msg2Team(GetName().."Picked up"..GT_GetGearFaction(aGearsIndex[3]).."-"..GT_GetGearPart(aGearsIndex[2])..".."..aGearsIndex[1].." "..aGearsIndex[2].." "..aGearsIndex[3])
 	MC_Del4Group(nChestIndex, 0)
 end
 function On_Dropis_Exit()
@@ -1231,14 +1231,14 @@ SB_EVENT_CONT = {
 	 "  [<color=metal>§¹i tiÓu th­<color> sÏ kh«ng qu¸ lµm khã (nÕu ®éi ngò ®Òu lµ n÷)]",
 	 "  ??????",
 	 "  ??????",
-	 "HËu hoa viªn"},
+	 "Rear Garden"},
 	{"  [LÊy ®­îc 3 viªn kú th¹ch <color=metal>Ngò hµnh kiÕm linh<color> sÏ xuÊt hiÖn]",
 	 "  [LÊy ®­îc<color=metal>Kim Ngäc Thè<color>, míi cã thÓ vµo <color=metal>Tµng KiÕm C¸c<color> ]",
 	 "  [LÊy ®­îc<color=metal>Méc Ngäc Thè<color>, míi cã thÓ vµo <color=metal>!<color> ]",
 	 "  [LÊy ®­îc<color=metal>Háa Ngäc Thè<color>, míi cã thÓ vµo <color=metal>!<color> ]",
 	 "  ??????",
 	 "  ??????",
-	 "Liªn Hoµn Sµo"},
+	 "Lianhuan Stronghold"},
 	{"  [Kim quy Kim, Méc quy Méc, Thñy quy Thñy, Háa quy Háa, Thæ quy Thæ, ®Òu lµ <color=metal>T­¬ng ThÕ<color> ]",	-- 70¼¶ÒÔÉÏ Ö»ÔÚÕâÀïµôÂä Ø¤°ï¡¤ÍµÌì»»ÈÕ¾÷Òª		¶ëáÒ¡¤¸²Ë®ĞÄ·¨¾÷Òª
 	 "  [Kim sinh Thñy, Thñy sinh Méc, Méc sinh Háa, Háa sinh Thæ, Thæ sinh Kim, ®Òu lµ <color=metal>T­¬ng Sinh<color> ]",	-- 70¼¶ÒÔÉÏ Ö»ÔÚÕâÀïµôÂä ¶ëáÒ¡¤´ó´È´ó±¯Öä¾÷Òª	ÉÙÁÖ¡¤´ó³ËÈçÀ´ĞÄ·¨¾÷Òª
 	 "  [Kim kh¾c Méc, Méc kh¾c Thæ, Thæ kh¾c Thñy, Thñy kh¾c Háa, Háa kh¾c Kim, ®Òu lµ <color=metal>T­¬ng Tö<color> ]",	-- 70¼¶ÒÔÉÏ Ö»ÔÚÕâÀïµôÂä ÌÆÃÅ¡¤±©ÓêÀæ»¨Õë¾÷Òª	Îäµ±¡¤²ĞÓ°¾÷ĞÄ·¨

@@ -13,12 +13,12 @@ MAX_MULTIPLE			= 3		-- ±¶ÂÊ×î´óÖµ
 
 -- ½±Àø·­±¶µÄÏµÍ³
 map_sysnames = {
-	"ChiÕn tr­êng",
+	"Battlefield",
 	"Th­¬ng héi",
 	"NhiÖm vô s­ m«n - ngÉu nhiªn",
 	"NhiÖm vô s­ m«n tuÇn hoµn",
 	"NhiÖm vô s¸t thñ",
-	"ThuyÒn rång"
+	"Dragon Boat"
 }
 
 -- »ñÈ¡½±ÀøµÄ±¶ÂÊ

@@ -1,5 +1,5 @@
 Index	Level	TaskID	TaskValue	TaskInfo
-H­íng dÉn	§¼ng cÊp	Sè hiÖu thay ®æi nhiÖm vô	Gi¸ trŞ thay ®æi nhiÖm vô	ThuyÕt minh nhiÖm vô
+Guide	§¼ng cÊp	Sè hiÖu thay ®æi nhiÖm vô	Gi¸ trŞ thay ®æi nhiÖm vô	ThuyÕt minh nhiÖm vô
 1	1	390	0	TiÓu hiÖp ®¹t cÊp 10 cã thÓ ®Õn t×m <color=yellow>Chñ Th­¬ng héi<color> nhËn <color=yellow>nhiÖm vô Th­¬ng héi<color>, sau khi hoµn thµnh sÏ nhËn ®­îc ng©n l­îng vµ danh väng.
 2	10	336	0	B»ng h÷u ®· vµo m«n ph¸i nµo ch­a? NÕu nh­ ®· gia nhËp m«n ph¸i, sau khi chän hÖ ph¸i tïy ı cã thÓ ®Õn gÆp <color=yellow>ch­ëng m«n<color> nhËn <color=yellow>NhiÖm vô s­ m«n<color>. Hoµn thµnh nhiÖm vô ®Çu tiªn mçi ngµy sÏ nhËn ®­îc <color=yellow>Thİ LuyÖn Qña<color>, ngoµi ®­îc t¨ng ®iÓm kinh cña b¶n th©n cßn nhËn ®­îc mét sè ®iÓm nhÊt ®Şnh cèng hiÕn s­ m«n, nhËn ®­îc <color=yellow>binh khİ quı hiÕm<color> cña s­ m«n, b»ng h÷u cã thêi gian th× h·y thö xem.
 3	10	1713	0	B»ng h÷u ®· ®¹t ®Õn cÊp 10, xem ra ®· cã chót kinh nghiÖm trªn giang hå, cã tõng nghe qua ®ua thuyÒn rång ch­a? Bªn c¹nh D· TÈu cã <color=yellow>Long Chu sø gi¶<color>, cã thÓ mêi c¸c vŞ b»ng h÷u cïng tham gia. Cã thÓ dïng ®iÓm tİch lòy thi ®Êu ®æi <color=yellow>b¸nh ch­ng, vò khİ cÊp 76, thó c­ìi cÊp 70, KhuÊt Nguyªn Ngäc Béi<color> vµ c¸c vËt phÈm quı gi¸ kh¸c.

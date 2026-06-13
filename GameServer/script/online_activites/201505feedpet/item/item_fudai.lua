@@ -2,10 +2,10 @@
 Include("\\script\\online_activites\\201505feedpet\\head.lua")
 
 tFuDaiCfg = {
-	{1,15, "ThÞt C¸ T­¬i", {2,1,30837,1},0},
-	{1,15, "§ïi Heo Th¬m Ngon", {2,1,30838,1},0},
-	{1,40, "Tó CÇu", {2,1,30839,1},0},
-	{1,30, "Thøc ¡n HÕt H¹n", {2,1,30840,1},0},
+	{1,15, "Fresh Fish Meat", {2,1,30837,1},0},
+	{1,15, "Fragrant Delicious Ham", {2,1,30838,1},0},
+	{1,40, "Hydrangea", {2,1,30839,1},0},
+	{1,30, "Expired Food", {2,1,30840,1},0},
 }
 function OnUse(nItemIdx)
 	if check_player_condition()~= 1 then

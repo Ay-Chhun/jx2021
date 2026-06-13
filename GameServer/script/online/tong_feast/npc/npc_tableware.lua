@@ -37,15 +37,15 @@ function main_cb_yes()
 		"Sö dông TiÖc Cô Tinh ChÕ/main_cb_yes_UseIBtw",
 		"Ta chØ tiÖn ®­êng ghÐ ngang/nothing",
 	}
-	Say("Th­ëng thøc mÜ vÞ?"..format("<color=red>( hiÖn t¹i bµn nµy ®· cã sè ng­êi lµ %d/10)<color>", GetNpcLevel(GetTargetNpc())),getn(tSay), tSay);
+	Say("Enjoy the delicacies?"..format("<color=red>( hiÖn t¹i bµn nµy ®· cã sè ng­êi lµ %d/10)<color>", GetNpcLevel(GetTargetNpc())),getn(tSay), tSay);
 end
 
 function main_cb_yes_toast()
-	Say("Ng­¬i x¸c ®Þnh muèn kÝnh töu cho bµn tiÖc hiÖn t¹i kh«ng?", 2, "§ång ý/tf_Toast", "T¹i h¹ chØ xem qua th«i/nothing");
+	Say("Ng­¬i x¸c ®Þnh muèn kÝnh töu cho bµn tiÖc hiÖn t¹i kh«ng?", 2, "Agree/tf_Toast", "T¹i h¹ chØ xem qua th«i/nothing");
 end
 
 function main_cb_yes_UseIBtw()
-	Say("Ng­¬i x¸c ®Þnh muèn sö dông Bé §å ¡n kh«ng?", 2, "§ång ý/tf_UseIBtw", "T¹i h¹ chØ xem qua th«i/nothing");
+	Say("Ng­¬i x¸c ®Þnh muèn sö dông Bé §å ¡n kh«ng?", 2, "Agree/tf_UseIBtw", "T¹i h¹ chØ xem qua th«i/nothing");
 end
 
 function main_cb_no()

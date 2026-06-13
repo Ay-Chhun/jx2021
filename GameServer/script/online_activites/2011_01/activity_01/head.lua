@@ -30,27 +30,27 @@ PB_expReward =
 
 PB_items = 
 {
-	{2, 1, 30277, "Nguyªn liÖu event TÕt"},
+	{2, 1, 30277, "Tet event materials"},
 	{2, 1, 30230, " Xu "},
-	{2, 1, 199, "§¹i ng©n phiÕu"},
-	{2, 1, 30051, "Nh¸nh Hoa Mai"},
+	{2, 1, 199, "Great Silver Note"},
+	{2, 1, 30051, "Plum Blossom Branch"},
 };
 
 PB_exchangeTable1 = 
 {
 	{
-		{"Nguyªn liÖu event TÕt", 2, 1, 30277, 5},
+		{"Tet event materials", 2, 1, 30277, 5},
 		{" Xu ", 2, 1, 30230, 2}
 	},
 	{
-		{"M©m Ngò Qu¶", 100, {"M©m Ngò Qu¶", {2, 1, 30278, 1}}}
+		{"Five-Fruit Tray", 100, {"Five-Fruit Tray", {2, 1, 30278, 1}}}
 	}
 };
 
 PB_exchangeTable2 = 
 {
 	{
-		{"§¹i ng©n phiÕu", 2, 1, 199, 1},
+		{"Great Silver Note", 2, 1, 199, 1},
 	},
 	{
 		{" Xu ", 100, {" Xu ", {2, 1, 30230, 100}}}
@@ -64,19 +64,19 @@ PB_itemReward =
 	{1, 100, "Thiªn th¹ch", {2, 2, 8, 1}},
 	{1, 60, "M¶nh Thiªn th¹ch", {2, 2, 7, 1}},
  	{1, 5, "ThÕ Th©n phï", {2, 0, 556, 1}, 7 * 24 * 3600},
- 	{1, 20, "B¸t Nh· Chøng Th­", {2, 1, 30114, 1}, 7 * 24 * 3600},
- 	{1, 20, "C©y B¸t Nh· nhá", {2, 0, 504, 1}, 7 * 24 * 3600},
- 	{1, 10, "C©y B¸t Nh·", {2, 0, 398, 1}, 7 * 24 * 3600},
+ 	{1, 20, "Prajna Certificate", {2, 1, 30114, 1}, 7 * 24 * 3600},
+ 	{1, 20, "Small Prajna Tree", {2, 0, 504, 1}, 7 * 24 * 3600},
+ 	{1, 10, "Prajna Tree", {2, 0, 398, 1}, 7 * 24 * 3600},
   	{4, 200, 10, 1},
   	{5, 140, 10, 1},
 	{1, 5, "Thiªn Hµ MËt tÞch", {0, 107, 64, 1}},
 	{1, 5, "Tö Hµ MËt tÞch", {0, 107, 65, 1}},
-	{1, 5, "Chiªm Y Phæ", {0, 107, 66, 1}},
-	{1, 20, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 1}, 7 * 24 * 3600},
+	{1, 5, "Zhanyi Manual", {0, 107, 66, 1}},
+	{1, 20, "Xiu Zhen Yao Jue", {2, 0, 554, 1}, 7 * 24 * 3600},
 	{1, 10, "TiÓu Nh©n s©m qu¶", {2, 0, 552, 1}, 7 * 24 * 3600},
 	{1, 5, "§ång TiÒn Vµng", {2, 1, 30094,1}},
 	{1, 10, "§é NguyÖt ThÇn Sa", {2, 1, 3332, 1}},
-	{1, 100, "XÝch ThiÕt Tinh", {2, 1, 2652, 1}},
+	{1, 100, "Red Iron Essence", {2, 1, 2652, 1}},
 	{1, 35, "Th¸i DÞch Hçn Nguyªn C«ng §å", {2, 0, 1082, 1}}
 };
 
@@ -87,13 +87,13 @@ PB_extraItemReward = {
     {8, 1800, 60, 1},
     {15, 1800, 60, 1},
     {12, 1800, 60, 1},
-    {1, 300, "Sæ tay sèng", {2, 19, 1, 1}, 7 * 24 * 3600},
-    {1, 300, "C¬ quan nh©n", {2, 1, 1011, 1}, 7 * 24 * 3600},
+    {1, 300, "Living Notebook", {2, 19, 1, 1}, 7 * 24 * 3600},
+    {1, 300, "Mechanism Man", {2, 1, 1011, 1}, 7 * 24 * 3600},
     {1, 500, "V« NgÊn Thñy", {2, 1, 503, 1}, 7 * 24 * 3600},
-    {1, 500, "TÈy Tñy ®¬n", {2, 0, 136, 1}, 7 * 24 * 3600},
-    {1, 100, "TÈy Tñy linh ®¬n", {2, 0, 137, 1}, 7 * 24 * 3600},
-    {1, 1049, "§Êu hån", {2, 1, 1157, 1}, 7 * 24 * 3600},
-    {1, 1000, "R­¬ng BÝ KÝp", {2, 1, 30093, 1}, 7 * 24 * 3600},
+    {1, 500, "Marrow-Cleansing Pill", {2, 0, 136, 1}, 7 * 24 * 3600},
+    {1, 100, "Marrow-Cleansing Spirit Pill", {2, 0, 137, 1}, 7 * 24 * 3600},
+    {1, 1049, "Soul Duel", {2, 1, 1157, 1}, 7 * 24 * 3600},
+    {1, 1000, "Secret Manual Chest", {2, 1, 30093, 1}, 7 * 24 * 3600},
     {1, 1, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},
     {1, 50, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
     {1, 400, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 7 * 24 * 3600},
@@ -113,7 +113,7 @@ PB_equipmentReward1 = {
 	{1, 675, "L­u Yªn c«n", {0, 5, 6009, 1, 1, -1, -1, -1, -1, -1, -1}},
 	{1, 675, "HuyÒn Yªn kiÕm", {0, 2, 6010, 1, 1, -1, -1, -1, -1, -1, -1}},
 	{1, 675, "Vò Yªn bót", {0, 9, 6011, 1, 1, -1, -1, -1, -1, -1, -1}},
-	{1, 675, "Hµ Tiªm Th­¬ng", {0, 6, 6012, 1, 1, -1, -1, -1, -1, -1, -1}},
+	{1, 675, "He Tian Spear", {0, 6, 6012, 1, 1, -1, -1, -1, -1, -1, -1}},
 	{1, 675, "Hµnh Yªn Cung", {0, 4, 6013, 1, 1, -1, -1, -1, -1, -1, -1}},
 	{1, 625, "Träc Yªn nhÉn", {0, 7, 6014, 1, 1, -1, -1, -1, -1, -1, -1}},
 	{1, 600, "Yªu Yªn tr¶o", {0, 11, 6015, 1, 1, -1, -1, -1, -1, -1, -1}}
@@ -155,18 +155,18 @@ PB_equipmentReward2 = {
 	{1, 20, "Th¸i Êt T¶n Nh©n H¹o Nhiªn Phôc", {0, 100, 1532, 1, 1, -1, -1, -1, -1, -1, -1}},	
 	{1, 20, "Th¸i Êt T¶n Nh©n H¹o Nhiªn Phôc", {0, 100, 1533, 1, 1, -1, -1, -1, -1, -1, -1}},	
 	{1, 20, "Th¸i Êt T¶n Nh©n H¹o Nhiªn Phôc", {0, 100, 1534, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 20, "Long T­¬ng Ngao KhÝ ChiÕn kh¶i", {0, 100, 1731, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 20, "Long T­¬ng Ngao KhÝ ChiÕn kh¶i", {0, 100, 1732, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 20, "Long T­¬ng Ngao KhÝ ChiÕn kh¶i", {0, 100, 1733, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 20, "Long T­¬ng Ngao KhÝ ChiÕn kh¶i", {0, 100, 1734, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 30, "Hæ Dùc M·nh Sü ChiÕn kh¶i", {0, 100, 1831, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 30, "Hæ Dùc M·nh Sü ChiÕn kh¶i", {0, 100, 1832, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 30, "Hæ Dùc M·nh Sü ChiÕn kh¶i", {0, 100, 1833, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 30, "Hæ Dùc M·nh Sü ChiÕn kh¶i", {0, 100, 1834, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 30, "U Minh Quû S¸t Tu La HuyÕt Y", {0, 100, 2031, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 30, "U Minh Quû S¸t Tu La HuyÕt Y", {0, 100, 2032, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 30, "U Minh Quû S¸t Tu La HuyÕt Y", {0, 100, 2033, 1, 1, -1, -1, -1, -1, -1, -1}},	
-	{1, 30, "U Minh Quû S¸t Tu La HuyÕt Y", {0, 100, 2034, 1, 1, -1, -1, -1, -1, -1, -1}}	
+	{1, 20, "Long Tuong Ngao Khi Battle Armor", {0, 100, 1731, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 20, "Long Tuong Ngao Khi Battle Armor", {0, 100, 1732, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 20, "Long Tuong Ngao Khi Battle Armor", {0, 100, 1733, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 20, "Long Tuong Ngao Khi Battle Armor", {0, 100, 1734, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 30, "Ho Duc Manh Si Battle Armor", {0, 100, 1831, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 30, "Ho Duc Manh Si Battle Armor", {0, 100, 1832, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 30, "Ho Duc Manh Si Battle Armor", {0, 100, 1833, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 30, "Ho Duc Manh Si Battle Armor", {0, 100, 1834, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 30, "U Minh Quy Sat Tu La Huyet Y", {0, 100, 2031, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 30, "U Minh Quy Sat Tu La Huyet Y", {0, 100, 2032, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 30, "U Minh Quy Sat Tu La Huyet Y", {0, 100, 2033, 1, 1, -1, -1, -1, -1, -1, -1}},	
+	{1, 30, "U Minh Quy Sat Tu La Huyet Y", {0, 100, 2034, 1, 1, -1, -1, -1, -1, -1, -1}}	
 };
 
 PB_equipmentReward3 = {
@@ -249,14 +249,14 @@ PB_maxCountItemReward =
 	{1, 100, "ChiÕn ThÇn hoµn", {2, 1, 1005, 1}, 7 * 24 * 3600},
 	{1, 10, "Phi Yªn Th¹ch", {2, 1, 30130, 1}},
 	{1, 50, "Tö Quang ThÇn Th¹ch", {2, 1, 30131, 1}},
-	{1, 10, "Long Tö Bèi", {2, 1, 30155, 1}},
+	{1, 10, "Dragon Pendant", {2, 1, 30155, 1}},
 	{1, 10, "Phông Tö Bèi", {2, 1, 30156, 1}},
-	{1, 10, "¦ng Tö Bèi", {2, 1, 30158, 1}},
+	{1, 10, "Eagle Pendant", {2, 1, 30158, 1}},
 	{1, 300, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 2}},
 	{1, 1, "§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", {2, 1, 1067, 1}, 7 * 24 * 3600},
 	{1, 10, "Thiªn Th¹ch Tinh Th¹ch", {2, 1, 1009, 1}},	
 	{1, 5, "Thiªn Th¹ch linh th¹ch", {2, 1, 1068, 1}, 7 * 24 * 3600},
-	{1, 1, "L¨ng Ba Vi Bé", {0, 112, 78, 1}},
+	{1, 1, "Lingbo Microstep", {0, 112, 78, 1}},
 	{1, 50, "Hoµng Kim §¹i Hång Bao (trèng)", {2, 1, 538, 1}, 7 * 24 * 3600},
 	{32, 422, 7000, 1}, 
 	{1, 5, "Th¸i DÞch Hçn Nguyªn Phæ", {2, 0, 1083, 1}}
@@ -272,7 +272,7 @@ PB_menu =
 	"§æi 100 vËt phÈm xu (cÇn 1 §¹i Ng©n PhiÕu)/PB_exchange",
 	"\n§æi M©m Ngò Qu¶ (cÇn 5 Hoa Mai + 1 Nh¸nh Hoa Mai)/PB_composite1",
 	"NhËn T©n M·o §¹i Hång Bao/PB_give_dahongbao",
-	"Nép 10 M©m Ngò Qu¶/PB_give_5fruit",
+	"Submit 10 Five-Fruit Trays/PB_give_5fruit",
 };
 
 PB_title_2 = "H·y chän lo¹i phÇn th­ëng:";
@@ -281,7 +281,7 @@ PB_menu_2 =
 	"20.000.000 Exp vµ vËt phÈm /#PB_confirm_getThresholdReward(1)",
 	"20 ®iÓm n©ng cÊp B¹n §ång Hµnh vµ vËt phÈm/#PB_confirm_getThresholdReward(2)",	-- TODO: finished by VinaGame
 	"1 ®iÓm linh lùc B¹n §ång Hµnh vµ vËt phÈm/#PB_confirm_getThresholdReward(3)", -- TODO: finished by VinaGame
-	"Rêi khái/gf_DoNothing"
+	"Leave/gf_DoNothing"
 }
 
 PB_title_3 = "Vui lßng chän h×nh thøc nhËn th­ëng";
@@ -289,13 +289,13 @@ PB_menu_3 =
 {
 	"KÝch ho¹t nhËn th­ëng nhËn vËt phÈm/PB_activateItemMode",
 	"KÝch ho¹t nhËn th­ëng kh«ng nhËn vËt phÈm (t¨ng thªm 25% kinh nghiÖm)/PB_activateNonItemMode",
-	"Rêi khái/gf_DoNothing"
+	"Leave/gf_DoNothing"
 };
 
 PB_results = 
 {
 	"Nguyªn liÖu mang theo kh«ng ®ñ",
-	"Rêi khái",
+	"Leave",
 	"C¸c h¹ ®· nhËn th­ëng",
 	"§· kÝch ho¹t nhËn th­ëng kÌm vËt phÈm",
 	"§· kÝch ho¹t nhËn th­ëng kh«ng kÌm vËt phÈm, t¨ng thªm 25% kinh nghiÖm",
@@ -354,7 +354,7 @@ function PB_composite1()
         Talk(1, "", PB_results[1]);
         return 0;
     elseif DelItem(2, 1, 30277, 5) == 1 and DelItem(2, 1, 30051, 1) == 1 then 
-        gf_AddItemEx2({2, 1, 30278, 1}, "M©m Ngò Qu¶",
+        gf_AddItemEx2({2, 1, 30278, 1}, "Five-Fruit Tray",
                         VET_201101_01_STR_LOG_TITLE, 
                         VET_201101_01_TB_LOG_ACTION_LIST[4],
                         0,
@@ -364,7 +364,7 @@ function PB_composite1()
 end
 
 function PB_composite()
-	AskClientForNumber("PB_confirm_composite", 1, 999, "Sè M©m Ngò Qu¶?")
+	AskClientForNumber("PB_confirm_composite", 1, 999, "How many Five-Fruit Trays?")
 end
 
 function PB_confirm_composite(nCount)
@@ -375,7 +375,7 @@ function PB_confirm_composite(nCount)
         Talk(1, "", PB_results[1]);
         return 0;
     elseif DelItem(2, 1, 30277, 5 * nCount)  == 1 and DelItem(2, 1, 30230, 2 * nCount) == 1 then 
-        gf_AddItemEx2({2, 1, 30278, nCount}, "M©m Ngò Qu¶",
+        gf_AddItemEx2({2, 1, 30278, nCount}, "Five-Fruit Tray",
                         VET_201101_01_STR_LOG_TITLE, 
                         VET_201101_01_TB_LOG_ACTION_LIST[1],
                         0,
@@ -496,7 +496,7 @@ function PB_give_dahongbao()
 	end
 	
 	if nDate > 110220 then
-		Talk(1,"","§· hÕt thêi h¹n sù kiÖn!")
+		Talk(1,"","The event has expired!")
 		return
 	end
 	
@@ -522,7 +522,7 @@ function PB_give_5fruit()
 	local nDate = tonumber(date("%y%m%d"))
 	
 	if nDate < 110121 or nDate > 110220 then
-		Talk(1,"","§· hÕt thêi h¹n sù kiÖn!")
+		Talk(1,"","The event has expired!")
 		return
 	end
 	
@@ -570,7 +570,7 @@ function PB_activateNonItemMode()
 end
 
 function PB_exchange()
-	if 0 == gf_ExchangeItemEx(PB_exchangeTable2, "M©m Ngò Qu¶", "®æi b¸nh") then
+	if 0 == gf_ExchangeItemEx(PB_exchangeTable2, "Five-Fruit Tray", "exchange cake") then
 		PB_notEnoughMaterial();
 	end
 end
@@ -587,30 +587,30 @@ end
 
 function PB_smallWisdomTreeReward()
 	if gf_CheckEventDateEx(PB_activityID) == 1 then
-		gf_GivePlantSmallTreeAward({2, 1, 30277, 50}, "Nguyªn liÖu event TÕt", VET_201101_01_STR_LOG_TITLE);
+		gf_GivePlantSmallTreeAward({2, 1, 30277, 50}, "Tet event materials", VET_201101_01_STR_LOG_TITLE);
 	end
 end
 
 function PB_bigWisdomTreeReward()
 	if gf_CheckEventDateEx(PB_activityID) == 1 then
-		gf_GivePlantBigTreeAward({2, 1, 30277, 60}, "Nguyªn liÖu event TÕt", VET_201101_01_STR_LOG_TITLE);
+		gf_GivePlantBigTreeAward({2, 1, 30277, 60}, "Tet event materials", VET_201101_01_STR_LOG_TITLE);
 	end
 end
 
 function PB_seedBagReward()
 	if gf_CheckEventDateEx(PB_activityID) == 1 then
-		gf_GiveSeedBagAward({2, 1, 30277, 150}, "Nguyªn liÖu event TÕt", VET_201101_01_STR_LOG_TITLE);
+		gf_GiveSeedBagAward({2, 1, 30277, 150}, "Tet event materials", VET_201101_01_STR_LOG_TITLE);
 	end
 end
 
 function PB_soloMessengerQuestReward()
 	if gf_CheckEventDateEx(PB_activityID) == 1 then
-		gf_GiveDailyTaskPersonalAward({2, 1, 30277, 30}, "Nguyªn liÖu event TÕt", VET_201101_01_STR_LOG_TITLE);
+		gf_GiveDailyTaskPersonalAward({2, 1, 30277, 30}, "Tet event materials", VET_201101_01_STR_LOG_TITLE);
 	end
 end
 
 function PB_partyMessengerQuestReward()
 	if gf_CheckEventDateEx(PB_activityID) == 1 then
-		gf_GiveDailyTaskTeamAward({2, 1, 30277, 30}, "Nguyªn liÖu event TÕt", VET_201101_01_STR_LOG_TITLE);
+		gf_GiveDailyTaskTeamAward({2, 1, 30277, 30}, "Tet event materials", VET_201101_01_STR_LOG_TITLE);
 	end
 end

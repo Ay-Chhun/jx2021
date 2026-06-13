@@ -24,8 +24,8 @@ function PoisonBee_Killed_1()
 	  if g_probability(50, 100) then
         AddItem(2,0,362,1,1);--µÃµ½Ò©²Ä
     		if GetItemCount(2,0,362) >= 15 then
-      		TaskTip("§· thu thËp ®ñ 15 d­îc liÖu quay vÒ t×m TrŞnh Qu¸n Chi.");
-      		Msg2Player("§· thu thËp ®ñ 15 d­îc liÖu quay vÒ t×m TrŞnh Qu¸n Chi.");
+      		TaskTip("You have collected enough 15 medicinal herbs; return to find Zheng Guanzhi.");
+      		Msg2Player("You have collected enough 15 medicinal herbs; return to find Zheng Guanzhi.");
     		end;
 		end;
 end;
@@ -61,19 +61,19 @@ local nSate = GetTask(TASK_DL_LV35_01_ID);
 	--Ö®Ç°ÒÑÉ±ËÀ10¸öò¿»ğºÚ½ÌÍ½
 	if nSate == 10 then
 		local strTalk = {
-			"Cã chuyÖn g× vËy?",
+			"What's the matter?",
 			"Kh«ng liªn quan g× ®Õn ng­¬i!",
 			"Cho dï lµ chuyÖn cña c¸c ng­¬i ®i ch¨ng n÷a th× còng kh«ng ®­îc n¸o lo¹n ®¹i Tèng cña ta!",
 			"Ta c¶nh b¸o ng­¬i ®õng xen vµo viÖc cña Xi Háa gi¸o ta!",
 			"ChuyÖn nµy cã liªn quan ®Õn viÖc lªn ng«i cña Hoµng tö ch¨ng!?",
 			"Kh«ng liªn quan g× ®Õn ng­¬i",
 			"…………",
-			"{(NghÜ thÇm) Hay lµ quay vÒ gÆp {Cao Th¨ng TuyÒn}}",
+			"{(Thinking) Perhaps I should return to meet {Gao Shengquan}}",
 			}
 		TalkEx("",strTalk);
 		SetTask(TASK_DL_LV35_ID,2);
-    TaskTip("Quay vÒ gÆp Cao Th¨ng TuyÒn");
-    Msg2Player("Quay vÒ gÆp Cao Th¨ng TuyÒn");
+    TaskTip("Return to meet Gao Shengquan");
+    Msg2Player("Return to meet Gao Shengquan");
     	
 	--Î´É±ËÀ10¸öò¿»ğºÚ½ÌÍ½
 	else
@@ -89,19 +89,19 @@ local nSate = GetTask(TASK_DL_LV35_01_ID);
 	--Ö®Ç°ÒÑÉ±ËÀ10¸öò¿»ğ°×½ÌÍ½
 	if nSate == 10 then
 	local strTalk = {
-		"Cã chuyÖn g× vËy?",
+		"What's the matter?",
 		"Kh«ng liªn quan g× ®Õn ng­¬i!",
 		"Cho dï lµ chuyÖn cña c¸c ng­¬i ®i ch¨ng n÷a th× còng kh«ng ®­îc n¸o lo¹n ®¹i Tèng cña ta!",
 		"Ta c¶nh b¸o ng­¬i ®õng xen vµo viÖc cña Xi Háa gi¸o ta!",
 		"ChuyÖn nµy cã liªn quan ®Õn viÖc lªn ng«i cña Hoµng tö ch¨ng!?",
 		"Kh«ng liªn quan g× ®Õn ng­¬i",
 		"…………",
-		"{(NghÜ thÇm) Hay lµ quay vÒ gÆp {Cao Th¨ng TuyÒn}}",
+		"{(Thinking) Perhaps I should return to meet {Gao Shengquan}}",
 		}
 		TalkEx("",strTalk);
 		SetTask(TASK_DL_LV35_ID,2);
-    TaskTip("Quay vÒ gÆp Cao Th¨ng TuyÒn");
-    Msg2Player("Quay vÒ gÆp Cao Th¨ng TuyÒn");
+    TaskTip("Return to meet Gao Shengquan");
+    Msg2Player("Return to meet Gao Shengquan");
     	
 	--Î´É±ËÀ10¸öò¿»ğ°×½ÌÍ½
 	else
@@ -113,20 +113,20 @@ end
 --É±ËÀ15¸öò¿»ğ³à½ÌÍ½
 function ChiHuoRed_Killed_15()
 local strTalk = {
-	"Cã chuyÖn g× vËy?",
+	"What's the matter?",
 	"Kh«ng liªn quan g× ®Õn ng­¬i!",
 	"Cho dï lµ chuyÖn cña c¸c ng­¬i ®i ch¨ng n÷a th× còng kh«ng ®­îc n¸o lo¹n ®¹i Tèng cña ta!",
 	"Ta c¶nh b¸o ng­¬i ®õng xen vµo viÖc cña Xi Háa gi¸o ta!",
 	"ChuyÖn nµy cã liªn quan ®Õn viÖc lªn ng«i cña Hoµng tö ch¨ng!?",
 	"Kh«ng liªn quan g× ®Õn ng­¬i",
 	"…………",
-	"(NghÜ thÇm) (Hay lµ quay vÒ gÆp {Cao Th¨ng TuyÒn})",
+	"(Thinking) (Perhaps I should return to meet {Gao Shengquan})",
 	}
 	TalkEx("",strTalk);
 	SetTask(TASK_DL_LV35_ID,2);
 	SetTask(TASK_DL_LV35_ID_ZX,2);
-  TaskTip("Quay vÒ gÆp Cao Th¨ng TuyÒn");
-  Msg2Player("Quay vÒ gÆp Cao Th¨ng TuyÒn");
+  TaskTip("Return to meet Gao Shengquan");
+  Msg2Player("Return to meet Gao Shengquan");
   RemoveTrigger(GetRunningTrigger());
 end
 
@@ -144,7 +144,7 @@ local nTask_DL_State_40 = GetTask(TASK_DL_LV40_ID);
 			"§­¬ng triÒu Hoµng ®Õ {§¹i Lı} lµ {§oµn T­ Th«ng}",
 			"Hoµng ®Õ khai quèc lËp nªn {§¹i Lı} ch¼ng ph¶i lµ {§oµn T­ B×nh} sao? {§oµn T­ Th«ng} lµ hoµng ®Ö µ?",
 			"Thµnh phÇn quı téc ë {§¹i Lı} nµy ®Òu lµ {B¹ch Téc}, dßng hä §oµn còng thuéc B¹ch Téc, v× vËy mµ c¸ch ®Æt tªn còng gièng ng­êi H¸n chóng ta. Míi nghe qua {§oµn T­ B×nh} vµ {§oµn T­ Th«ng} gièng nh­ lµ huynh ®Ö nh­ng hoµn toµn kh«ng ph¶i, gi÷a hä c¸ch nhau ®Õn 3 ®êi!",
-			"Th× ra lµ vËy!"
+			"So that's how it is!"
 			}
 			TalkEx("Zhaoyannian_Talk_01",strTalk);
 			RemoveTrigger(GetRunningTrigger());
@@ -160,8 +160,8 @@ local nTask_DL_State_40 = GetTask(TASK_DL_LV40_ID);
 			}
 		  TalkEx("",strTalk);
 			SetTask(TASK_DL_LV40_ID,6);
-		  TaskTip("§Õn §¹i Lı t×m TrŞnh Qu¸n Chi");
-		  Msg2Player("§Õn §¹i Lı t×m TrŞnh Qu¸n Chi");
+		  TaskTip("Go to Dali to find Zheng Guanzhi");
+		  Msg2Player("Go to Dali to find Zheng Guanzhi");
 		  GivePlayerAward("Level_40","xn_step_4","chest","Level_44");
 		  GivePlayerExp(SkeyDali,"chihuojiaoyinmou")
 		  RemoveTrigger(GetRunningTrigger());
@@ -190,8 +190,8 @@ local strTalk	=	{
 	}
 	TalkEx("",strTalk);
 	SetTask(TASK_DL_LV40_ID,2);
-	TaskTip("§Õn gÆp Téc tr­ëng Miªu LÜnh");
-	Msg2Player("§Õn gÆp Téc tr­ëng Miªu LÜnh");
+	TaskTip("Go meet the Miaoling clan chief");
+	Msg2Player("Go meet the Miaoling clan chief");
 	GivePlayerAward("Level_40","xn_step_2");
 	GivePlayerExp(SkeyDali,"dalihuangzu")
 	return
@@ -203,8 +203,8 @@ function MLHY_Killed_1()
   if g_probability(30, 100) then
   	AddItem(2,0,366,1,1);--µÃµ½÷äÆ¤
   	if GetItemCount(2,0,366) >= 10 then
-  		TaskTip("§· t×m ®ñ 10 tÊm Da h­¬u, quay vÒ gÆp TrŞnh Qu¸n Chi");
-  		Msg2Player("§· t×m ®ñ 10 tÊm Da h­¬u, quay vÒ gÆp TrŞnh Qu¸n Chi");
+  		TaskTip("You have found enough 10 pieces of deer hide; return to meet Zheng Guanzhi");
+  		Msg2Player("You have found enough 10 pieces of deer hide; return to meet Zheng Guanzhi");
   	end;
 	end;
 end;
@@ -227,8 +227,8 @@ function MidnightTiger_Killed_1()
     if g_probability(40, 100) then
       AddItem(2,0,371,1,1);--µÃµ½×ÓÒ¹»¢ÑÀ
       if GetItemCount(2,0,371) >= 10 then
-      	TaskTip("§· t×m ®­îc 10 nanh D¹ Hæ!");
-      	Msg2Player("§· t×m ®­îc 10 nanh D¹ Hæ!");
+      	TaskTip("You have found 10 Night Tiger fangs!");
+      	Msg2Player("You have found 10 Night Tiger fangs!");
     	end;
 		end;
 end;
@@ -261,7 +261,7 @@ function MoSan_Talk()
 				"Cao Th¨ng TuyÒn ph¸i ng­¬i ®Õn µ? Ta biÕt råi, t×m ®ñ vËt liÖu ta sÏ gióp cho.",
 				"M¹c s­ b¸ biÕt hÕt råi ­?",
 				"Ta vµ Cao huynh ¬n nghÜa s©u nÆng, lÇn nµy huynh Êy cã viÖc lÏ nµo ta l¹i tõ chèi?",
-				"Th× ra lµ vËy!",
+				"So that's how it is!",
 				"Kh«ng cÇn kh¸ch s¸o.",
 				"uh!!",
 				"…",
@@ -272,7 +272,7 @@ function MoSan_Talk()
 			strTalk = {
 				"{M¹c s­ b¸}, t¹i h¹ ®­îc Cao Quèc C«ng sai ®Õn t×m ng­êi.",
 				"§Õn nhê ta chÕ t¹o Phông Hoµng Linh µ? §îi mét l¸t nhĞ!",
-				"Xin ®a t¹!",
+				"Many thanks!",
 				"…",
 				"Xong råi! Nh­ng Phông Hoµng Linh nµy rÊt mau mÊt t¸c dông! H·y mau ®Õn Phông Nh·n ®éng gäi ra vµ ®¸nh b¹i Phông Hoµng!",
 				"T¹i h¹ biÕt råi, ®a t¹ Tam s­ b¸.",
@@ -374,7 +374,7 @@ end
 	--Î´½«Ğ¡º¢ËÍ»ØÈ¥
 	if GetTask(TASK_DL_LV55_ID) == 7 then
 		local strTalk = {
-			"§­êng ®i rÊt nguy hiÓm, nhí b¶o träng nhĞ!",
+			"The road is very dangerous; remember to take care!",
 			}
 			
 		TalkEx("",strTalk);
@@ -407,8 +407,8 @@ function PoisonBat_Killed_20()
 	
 	RemoveTrigger(GetRunningTrigger());
 	SetTask(TASK_DL_LV60_ID,2);
-	TaskTip("§· giÕt ®­îc 20 d¬i ®éc, quay vÒ gÆp §æng Giµ La");
-	Msg2Player("§· giÕt ®­îc 20 d¬i ®éc, quay vÒ gÆp §æng Giµ La");
+	TaskTip("Killed 20 venomous bats, return to meet Dong Gia La");
+	Msg2Player("Killed 20 venomous bats, return to meet Dong Gia La");
 	
 end
 
@@ -465,13 +465,13 @@ local strTalk = {};
 			"Ch¶ ph¶i lÇn tr­íc ta ®· nãi råi, sao l¹i ®Õn n÷a?",
 			"LÇn nµy lµ chuyÖn kh¸c…",
 			"Nh÷ng ®iÒu ng­¬i quan t©m ®Òu cã hÕt trong tÊm §¹i Lı Cùu Chİ. HiÖn giê L­u §iÓn ®ang gi÷, mau ®Õn §¹i Lı t×m «ng Êy ®i.",
-			"§a t¹ tiÒn bèi!",
+			"Many thanks, senior!",
 			}
 		
 		TalkEx("",strTalk);
 		CreateTrigger(4,203,TALK_DL_BAIXIAOSHENG);
-		Msg2Player("§Õn §¹i Lı t×m L­u §iÓn");
-		TaskTip("§Õn §¹i Lı t×m L­u §iÓn");
+		Msg2Player("Go to Dali and find Liu Dien");
+		TaskTip("Go to Dali and find Liu Dien");
 		SetTask(TASK_DL_LV75_ID,4);
 		GivePlayerExp(SkeyDali,"qiyi")
 		--RemoveTrigger(GetTrigger(TALK_DL_BAIXIAOSHENG));
@@ -493,8 +493,8 @@ function Jocko_Killed_1()
     if g_probability(40, 100) then
       AddItem(2,0,379,1,1);--µÃµ½´óÀí¾ÉÖ¾²ĞÆ¬
       if GetItemCount(2,0,379) >= 10 then
-      	TaskTip("§· thu thËp ®­îc 10 tÊm §¹i Lı Cùu Chİ");
-      	Msg2Player("§· thu thËp ®­îc 10 tÊm §¹i Lı Cùu Chİ");
+      	TaskTip("Collected 10 Dali Jiuzhi scrolls");
+      	Msg2Player("Collected 10 Dali Jiuzhi scrolls");
     	end;
 		end;
 end

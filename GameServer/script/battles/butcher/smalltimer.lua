@@ -39,10 +39,10 @@ function OnTimer()
 		RestMin, RestSec = GetMinAndSec(RestTime);
 		if (RestSec == 0) then
 			str1 = resultstr.."Thiªn M«n trËn t¹i Nh¹n M«n quan s¾p khai chiÕn. C¸c hiÖp kh¸ch h·y mau chãng mang theo Anh hïng lÖnh ®Õn Nh¹n M«n quan b¸o danh! Thêi gian b¸o danh cßn"..RestMin.." phót. §iÒu kiÖn tham chiÕn: §¼ng cÊp tõ"..lvllimit.." trë lªn.";
-			str2 = "Thêi gian khai chiÕn cßn:"..RestMin.." Phót "
+			str2 = "Thêi gian khai chiÕn cßn:"..RestMin.." minutes"
 		else
-			str1 = resultstr.."Thiªn M«n trËn t¹i Nh¹n M«n quan s¾p khai chiÕn. C¸c hiÖp kh¸ch h·y mau chãng mang theo Anh hïng lÖnh ®Õn Nh¹n M«n quan b¸o danh! Thêi gian b¸o danh cßn"..RestMin.." Phót "..RestSec.." gi©y. §iÒu kiÖn tham chiÕn: §¼ng cÊp kh«ng nhá h¬n"..lvllimit.." trë lªn.";
-			str2 = "Thêi gian khai chiÕn cßn:"..RestMin.." Phót "..RestSec.." Gi©y "
+			str1 = resultstr.."Thiªn M«n trËn t¹i Nh¹n M«n quan s¾p khai chiÕn. C¸c hiÖp kh¸ch h·y mau chãng mang theo Anh hïng lÖnh ®Õn Nh¹n M«n quan b¸o danh! Thêi gian b¸o danh cßn"..RestMin.." minutes"..RestSec.." gi©y. §iÒu kiÖn tham chiÕn: §¼ng cÊp kh«ng nhá h¬n"..lvllimit.." trë lªn.";
+			str2 = "Thêi gian khai chiÕn cßn:"..RestMin.." minutes"..RestSec.." Gi©y "
 		end
 		if( mod(t, 18) == 0 ) then
 			AddGlobalNews(str1);
@@ -67,7 +67,7 @@ function OnTimer()
 			local gametime = floor(GetMSRestTime(MISSIONID, 40) / 18);
 			local gamerestmin, gamerestsec = GetMinAndSec(gametime);
 			if( gamerestmin ~= 0 ) then
-				Msg2MSAll( MISSIONID, "Thêi gian kÕt thóc trËn chiÕn cßn"..gamerestmin.." phót " )
+				Msg2MSAll( MISSIONID, "Thêi gian kÕt thóc trËn chiÕn cßn"..gamerestmin.." minutes" )
 				if ( mod(t,30) == 0 and t > RUNGAME_TIME and t < CLOSE_SIGNUP_TIME) then
 					AddGlobalNews("ChiÕn ®Êu gi÷a Tèng qu©n vµ Liªu binh ®ang håi kÞch liÖt, thêi gian kÕt thóc trËn chiÕn cßn"..gamerestmin.." phót, c¸c t­íng sÜ khÈn tr­¬ng dïng Anh hïng lÖnh th¼ng tiÕn Nh¹n M«n quan tham chiÕn!")
 					Msg2Global("ChiÕn ®Êu gi÷a Tèng qu©n vµ Liªu binh ®ang håi kÞch liÖt, thêi gian kÕt thóc trËn chiÕn cßn"..gamerestmin.." phót, c¸c t­íng sÜ khÈn tr­¬ng dïng Anh hïng lÖnh th¼ng tiÕn Nh¹n M«n quan tham chiÕn!")

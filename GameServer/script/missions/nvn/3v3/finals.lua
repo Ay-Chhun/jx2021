@@ -24,7 +24,7 @@ function Finals:addPlayer()
 		return Talk(1, "", format("Nh©n sè cïng tæ ®éi kh«ng qu¸ %d ng­êi tæ ®éi míi cã thÓ tham gia liªn ®Êu chung kÕt!",WARTEAM_SIZE));
 	end
 	if GetCaptainName() ~= GetName() then
-		Talk(1, "", "CÇn ®éi tr­ëng thao t¸c!");
+		Talk(1, "", "The team leader must perform the action!");
 		return 0;
 	end
 	local fightTeamID = GetFightTeamID() or 0;
@@ -213,7 +213,7 @@ function Finals:kickTeam(tTeam)
 	tinsert(self.tFinalTop[g_nTodayRound], teamName);
 	msg = format("ChiÕn ®éi [%s] bÞ lo¹i", teamName)
 	Msg2Global(msg);
-	WriteLog("[3v3 chung kÕt]"..msg);
+	WriteLog("[3v3 final]"..msg);
 	DebugOutput(msg)
 	PlayerIndex = oldPidx;
 end
@@ -223,7 +223,7 @@ function Finals:gameover()
 	DebugOutput("Finals:gameover");
 
 	self:saveFinalTop();
-	DebugOutput("KÕt thóc chung kÕt!!!");
+	DebugOutput("Final ends!!!");
 	--if GetGSIndex()[0] ~= 1 then return end
 	local sdb = SDB(SDBKEY_3V3, 0, 0);
 	sdb:modify("BattleDate", {"ddddd", 0, 0, 0, 1, 0});
@@ -261,7 +261,7 @@ function Finals:saveFinalTop()
 		end
 	end
 	Msg2Global(msg);
-	WriteLog("[3v3 chung kÕt]"..msg);
+	WriteLog("[3v3 final]"..msg);
 	DebugOutput(msg)
 end
 
@@ -285,18 +285,18 @@ function Finals:onFinishBattle(winTeamID, loseTeamID, winTeamName, loseTeamName)
 		msg = format("%s ®éi chiÕn th¾ng %s ®éi, giµnh th¾ng lîi!", winTeamName, loseTeamName);
 	end
 	Msg2Global(msg);
-	WriteLog("[3v3 chung kÕt]"..msg);
+	WriteLog("[3v3 final]"..msg);
 	DebugOutput(msg)
 end
 
 function SendAwardMail(name, nRank)
 	local szRank = format("XÕp h¹ng %d liªn ®Êu", nRank);
 	if nRank == 1 then
-		szRank = "Qu¸n Qu©n";
+		szRank = "Champion";
 	elseif nRank == 2 then
-		szRank = "¸ Qu©n";
+		szRank = "Runner-up";
 	elseif nRank == 3 then
-		szRank = "Quý Qu©n";
+		szRank = "Third Place";
 	end
 	sendScriptMail("PhÇn th­ëng chung kÕt tØ vâ liªn ®Êu", szTo, "PhÇn th­ëng chung kÕt tØ vâ liªn ®Êu", 
 		format("Chóc mõng ng­¬i nhËn ®­îc quý thø %d chung kÕt tØ vâ liªn ®Êu", g_t3v3Data.nMatchRound, szRank),

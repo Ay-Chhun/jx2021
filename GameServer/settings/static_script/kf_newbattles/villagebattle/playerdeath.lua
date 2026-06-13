@@ -13,7 +13,7 @@ function OnDeath(Launcher)
 	BT_SetTempData(PTT_DIE_LOOP,GetMissionV(MV_TIMER_LOOP));
 	SetTempRevPos(ENTRANCE_POINT[nCampPlace][1],ENTRANCE_POINT[nCampPlace][2]*32,ENTRANCE_POINT[nCampPlace][3]*32);	--…Ë÷√÷ÿ…˙µ„
 	if sNpcName == nil then
-		sNpcName = "KŒ thÔ"
+		sNpcName = "Enemy"
 	end;
 	local nOldPlayerIndex = PlayerIndex;
 	BT_AddBattleActivity(BA_VILL_DEATH);

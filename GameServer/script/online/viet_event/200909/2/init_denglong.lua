@@ -5,12 +5,12 @@
 Include("\\script\\lib\\globalfunctions.lua");
 --Ë¢ĞÂ×ß¾üµÆÁıµÄ×ø±ê
 t_denglong_sets = {
-	[0] = {"ThiÕu L©m", {204, 1526, 3269}},--ĞÇÆÚÈÕ
+	[0] = {"Shaolin", {204, 1526, 3269}},--ĞÇÆÚÈÕ
 	[1] = {"Nga My", {303, 1552, 3232}},--ĞÇÆÚÒ»
 	[2] = {"§­êng M«n", {305, 1530, 2921}},--ĞÇÆÚ¶ş
-	[3] = {"C¸i Bang", {209, 1515, 3265}},--ĞÇÆÚÈı
-	[4] = {"Vâ §ang", {312, 1707, 3477}},--ĞÇÆÚËÄ
-	[5] = {"Ngò §éc", {407, 1555, 3286}},--ĞÇÆÚÎå
+	[3] = {"Beggars' Sect", {209, 1515, 3265}},--ĞÇÆÚÈı
+	[4] = {"Wudang", {312, 1707, 3477}},--ĞÇÆÚËÄ
+	[5] = {"Five Poisons", {407, 1555, 3286}},--ĞÇÆÚÎå
 	[6] = {"D­¬ng M«n", {219, 1655, 3301}},--ĞÇÆÚÁù
 };
 function main()
@@ -35,9 +35,9 @@ end
 function create_npcs(nDay)
 	local nNpcIndex = 0;
 	local nNpcLifeTime = 57 * 60;--ÒòÎªsystemtimetask.txtÀïÃæÓĞĞ©ÕûµãµÄÊ±¼äÒÑ¾­±»Õ¼ÓÃ£¬ËùÒÔ±»ÆÈÎ¢µ÷¼¸·ÖÖÓÊ±¼ä
-	nNpcIndex = CreateNpc("Lß n­íng b¸nh", "Lß N­íng", gf_UnPack(t_denglong_sets[nDay][2]));
+	nNpcIndex = CreateNpc("Lß n­íng b¸nh", "Roasting Oven", gf_UnPack(t_denglong_sets[nDay][2]));
 	SetNpcLifeTime(nNpcIndex, nNpcLifeTime);
 	SetNpcScript(nNpcIndex, "\\script\\online\\viet_event\\200909\\2\\npc_zoujundenglong.lua");
 	AddUnitStates(nNpcIndex, 6, GetTime());--¼ÇÂ¼NPC´´½¨µÄÊ±¼ä
-	AddGlobalNews("YÕn tiÖc ThŞt N­íng ®­îc chiªu ®·i t¹i ["..t_denglong_sets[nDay][1].."]. Mêi ®ång ®¹o ®Õn tham dù!");
+	AddGlobalNews("YÕn tiÖc ThŞt N­íng ®­îc chiªu ®·i t¹i ["..t_denglong_sets[nDay][1].."]. Fellow comrades are invited to attend!");
 end

@@ -132,12 +132,12 @@ end
 
 
 function DongHanh_TangMatTich(nQty)
-	PutinItemBox("TÆng "..nQty.." MËt tÞch" ,nQty , szNPCName.."Ng­¬i tÆng ta "..nQty.." quyÓn mËt tÞch nµy thËt chø?", TANGMATTICH_FILE, 1)
+	PutinItemBox("Give"..nQty.." MËt tÞch" ,nQty , szNPCName.."You give me"..nQty.." quyÓn mËt tÞch nµy thËt chø?", TANGMATTICH_FILE, 1)
 end
 
 
 function DongHanh_TangTraiCay()
-	PutinItemBox("TÆng 20 tr¸i c©y" ,1, szNPCName.."Ng­¬i tÆng ta 20 tr¸i nµy thËt chø?", TANGTRAICAY_FILE, 1)
+	PutinItemBox("Give 20 fruits" ,1, szNPCName.."Ng­¬i tÆng ta 20 tr¸i nµy thËt chø?", TANGTRAICAY_FILE, 1)
 end
 
 
@@ -190,7 +190,7 @@ function DongHanh_select_translife(nType)
 		att3 = att3 or 0
 		BigDelItem(G,D,P,BigGetItemCount(G,D,P))
 		BigDelItem(G,D,Pnew,BigGetItemCount(G,D,Pnew))
-		gf_AddItemEx2({G, D, (30000 + GetBody()), nCount,4, lvatt1, att1, lvatt2, att2, lvatt3, att3},"Tø Linh ViÖt Trang","Chuyen Sinh","nhËn ngo¹i trang",120*24*3600,1)
+		gf_AddItemEx2({G, D, (30000 + GetBody()), nCount,4, lvatt1, att1, lvatt2, att2, lvatt3, att3},"Four Spirits Yue Manor","Chuyen Sinh","nhËn ngo¹i trang",120*24*3600,1)
 	end
 	RemoveTitle(tb_translife_tittle[nTransCount-1][nRoute][2], tb_translife_tittle[nTransCount-1][nRoute][3])
 	AddTitle(tb_translife_tittle[nTransCount][nRoute][2], tb_translife_tittle[nTransCount][nRoute][3])

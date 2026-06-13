@@ -26,7 +26,7 @@ function OnDeath(Launcher)
 		PlayerIndex = PlayerIndex1;
 		LaunName = GetName();
 
-		str = GetMissionS(CITYID).." - "..MapTab[GetMissionV(MS_ROOMINDEX)][3]..GetMissionS(1).." cïng víi  "..GetMissionS(2).."ChiÕn ®Êu ®¬n ®Êu l«i ®µi kÕt thóc, "..LaunName.." Trong thi ®Êu ®· ®¸nh b¹i "..DeathName..", giµnh th¾ng lîi chung cuéc!"
+		str = GetMissionS(CITYID).." - "..MapTab[GetMissionV(MS_ROOMINDEX)][3]..GetMissionS(1).." cïng víi  "..GetMissionS(2).."The one-on-one stage duel battle has ended,"..LaunName.." Trong thi ®Êu ®· ®¸nh b¹i "..DeathName..", winning the final victory!"
 		Msg2MSAll(MISSIONID, str);
     	if GetMissionV(GLOBAL_NEWS_SHOW) == 1 then
     	    AddGlobalNews(str);

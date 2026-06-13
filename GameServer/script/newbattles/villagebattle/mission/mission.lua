@@ -14,9 +14,9 @@ function InitMission()
 	SetNpcScript(npcIndex,"\\script\\newbattles\\villagebattle\\maingeneral_npc.lua");
 	npcIndex = CreateNpc(sModelName2,"Chñ so¸i",MAPID,1794,3147);
 	SetNpcScript(npcIndex,"\\script\\newbattles\\villagebattle\\maingeneral_npc.lua");
-	npcIndex = CreateNpc("R­¬ng ®å Trung Nguyªn","Qu©n nhu quan",MAPID,1545,3609);
+	npcIndex = CreateNpc("R­¬ng ®å Trung Nguyªn","Army Supply Officer",MAPID,1545,3609);
 	SetNpcScript(npcIndex,"\\script\\newbattles\\quartermaster_npc.lua");
-	npcIndex = CreateNpc("R­¬ng ®å Trung Nguyªn","Qu©n nhu quan",MAPID,1803,3164);
+	npcIndex = CreateNpc("R­¬ng ®å Trung Nguyªn","Army Supply Officer",MAPID,1803,3164);
 	SetNpcScript(npcIndex,"\\script\\newbattles\\quartermaster_npc.lua");
 	npcIndex = CreateNpc("VÖ binh thµnh m«n","Binh sÜ",MAPID,1561,3614);
 	SetNpcScript(npcIndex,"\\script\\newbattles\\villagebattle\\soldier_npc.lua");

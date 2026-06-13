@@ -8,7 +8,7 @@ function OnUse(nItemIdx)
 				local nRetCode = AddItem(tItemInfo[14][2],tItemInfo[14][3],tItemInfo[14][4],1,1,-1,-1,-1,-1,-1,-1);
 				if nRetCode == 1 then
 					Msg2Player("B¹n nhËn ®­îc 1 HËu NghÖ L¹c NhËt Hoµn");
-					WriteLog("[Tam tiÕt liªn th«ng]:"..GetName().."NhËn ®­îc 1 HËu NghÖ L¹c NhËt Hoµn");
+					WriteLog("[Tam tiÕt liªn th«ng]:"..GetName().."Received 1 Hou Yi Sunset Pill.");
 				else
 					WriteLog("[Lçi Tam tiÕt liªn th«ng]:"..GetName().."Lçi nhËn ®­îc HËu NghÖ L¹c NhËt Hoµn, trÞ quay l¹i AddItem:"..nRetCode);
 				end;

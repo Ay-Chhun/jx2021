@@ -17,6 +17,6 @@ function OnUse(nItemIdx)
 	if DelItemByIndex(nItemIdx, 1) == 1 then
             --¸øÎïÆ·½±Àø
             local szFullLogTitle = VIET_0912_STR_EVENT_LOG_TITLE
-            gf_EventGiveRandAward(VIET_0912_YUTUXIAO_AWARD, 100000, 13, szFullLogTitle,"Ch©n gµ");
+            gf_EventGiveRandAward(VIET_0912_YUTUXIAO_AWARD, 100000, 13, szFullLogTitle,"Chicken leg");
 	end
 end

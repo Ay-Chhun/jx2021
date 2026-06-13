@@ -41,8 +41,8 @@ function handle_on_npc_talk_jbp( nidx )
 	if npc[6]<=0 then --Œﬁ»Àæ€±¶
 		local Title = "<color=gold>TÙ B∂o BÂn-TrËng:<color> TÙ B∂o BÂn nµy kh´ng c„ ng≠Íi tÙ b∂o, bπn c„ th” b· ßÂng Ti“n Th«n K˙ vµo Æ” tÙ b∂o."
 		local tbSay = {}
-		tinsert(tbSay,format("%s/#do_jubao(%d)","TÙ b∂o ngay",idx))
-		tinsert(tbSay,"Tı b·/nothing")
+		tinsert(tbSay,format("%s/#do_jubao(%d)","Gather treasure now",idx))
+		tinsert(tbSay,"Give up/nothing")
 		Say(Title,getn(tbSay),tbSay)
 	elseif npc[6]>0 and curtime < npc[7] then  -- ’˝‘⁄æ€±¶
 		local TalkStr = format("<color=gold>TÙ B∂o BÂn-%s:<color> TÙ B∂o BÂn Æang chu»n bﬁ tÙ b∂o, sau %d gi©y sœ tÙ b∂o hoµn t t.",npc[5],npc[7]-curtime)
@@ -54,7 +54,7 @@ function handle_on_npc_talk_jbp( nidx )
 		if nCnt < GET_JBP_LIMIT then
 			tinsert(tbSay,format("NhÀn l y ph«n th≠Îng./#get_jbp_award(%d)",idx))
 		end
-		tinsert(tbSay,"HÒy b·/nothing")
+		tinsert(tbSay,"Cancel/nothing")
 		Say(Title,getn(tbSay),tbSay)
 	end
 end

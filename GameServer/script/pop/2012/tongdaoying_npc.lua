@@ -28,7 +28,7 @@ function leave_ziluoshan(nTask)
 end
 
 function get_book()
-	if gf_Judge_Room_Weight(1,10,"§¹o §ång Khuynh Chi") ~= 1 then return 0; end
+	if gf_Judge_Room_Weight(1,10,"Daoist Acolyte Qing Zhi") ~= 1 then return 0; end
 	if BigGetItemCount(2,96,142) >= 10  then
 		Talk(1,"","Ng­¬i ®· lÊy ®ñ kinh th­ råi, h·y mau ®i giao cho ®¹o tr­ëng Tö La S¬n-Nguyªn H­ Tö xem thö!");
 		return 0;
@@ -47,7 +47,7 @@ function get_book()
 		nCount = 2;		
 	end
 	gf_SetLogCaption("NhiÖm vô tuÇn hoµn Tö La S¬n (Phiªn b¶n 2012)")
-	gf_AddItemEx({2,96,142,nCount,4},"Tö La S¬n Kinh Th­");
+	gf_AddItemEx({2,96,142,nCount,4},"Mount Ziluo Scripture");
 	Restore();
 	NewWorld(5077,1606,3402);
 end
@@ -67,9 +67,9 @@ function main()
 		return 0;
 	end
 	local tMsg = {
-	["§¹o §ång DÜnh Chi"] =  	format("Ta muèn vµo Tö La S¬n-Khu Tu LuyÖn!/#goto_ziluoshan(%d)",nTask),
-	["§¹o §ång MÉn Chi"]	= 	format("Ta muèn rêi khái Tö La S¬n-Khu Tu LuyÖn!/#leave_ziluoshan(%d)",nTask),
-	["§¹o §ång Khuynh Chi"] = "NhËn Tö La S¬n Kinh Th­./get_book",
+	["Daoist Acolyte Ying Zhi"] =  	format("Ta muèn vµo Tö La S¬n-Khu Tu LuyÖn!/#goto_ziluoshan(%d)",nTask),
+	["Daoist Acolyte Min Zhi"]	= 	format("Ta muèn rêi khái Tö La S¬n-Khu Tu LuyÖn!/#leave_ziluoshan(%d)",nTask),
+	["Daoist Acolyte Qing Zhi"] = "Accept the Mount Ziluo Scripture./get_book",
 	}
 	if not tMsg[sNpcName] then
 		return 0;

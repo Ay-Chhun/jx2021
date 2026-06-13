@@ -43,14 +43,14 @@ g_tbDialog =
 		},	
 	[4] = 
 		{	--Ø¤°ï
-			[0] = "<color=green>Bµng L· Väng<color>:",
+			[0] = "<color=green>Pang Lu Wang<color>:",
 			[1] = "Hµo Tung Cèc lµ S­ m«n mËt thÊt cña bæn bang, chØ cã ®Ö tö bæn bang míi cã thÓ ®Õn ®ã ®Ó rÌn luyÖn!",	
 			[2] = "N¨m ®ã bang chóng ta tô nghÜa ë Hµo Tung Cèc, thËt lµ rÇm ré ch­a tõng thÊy, ®· ®Æt nÒn mãng cho C¸i Bang ta trë thµnh Thiªn h¹ ®Ö nhÊt bang! Trong bang quyÕt ®Þnh chän Hµo Tung Cèc lµm s­ m«n tu luyÖn tr­êng, cho tËp hîp truyÒn c«ng tr­ëng l·o, thiÕt kÕ ra nhiÒu c¬ quan, ®Ó chóng ®Ö tö cã chèn tu luyÖn, nhí l¹i sù anh dòng cña c¸c tiÒn bèi, thóc giôc chóng ®Ö tö siªng n¨ng tu luyÖn vâ c«ng, lËp danh trªn chèn giang hå!",
 			[3] = "Ta lµ ng­êi truyÒn c«ng cña bæn bang, Hµo Tung Cèc lµ tu luyÖn tr­êng cña s­ m«n, chóng ®Ö tö cã thÓ vµo ®©y ®Ó nhËn kh¶o nghiÖm, tu luyÖn ngµy mét tiÕn bé!",
 		},	
 	[5] = 
 		{ 	--ÌÆÃÅ	
-			[0] = "<color=green>§­êng T« M¹c<color>:",
+			[0] = "<color=green>Tang Su Mo<color>:",
 			[1] = "§­êng M«n mËt thÊt Tróc H¶i, chØ cho phÐp ®Ö tö cña bæn m«n vµo, trong mËt thÊt toµn lµ cao thñ tiÒn bèi cña bæn m«n, ph¶i hÕt søc cÈn thËn ®ã!",	
 			[2] = "Tróc H¶i kh«ng thuéc bæn m«n tø ®¹i phßng, cã quy t¾c ®éc lËp. C¸c cao thñ tiÒn bèi cña tø ®¹i phßng ®Òu tËp trung ë Tróc H¶i, b¾t ®Çu nghiªn cøu c¹m bÉy, ¸m khÝ vµ ho¶ khÝ míi, nÕu ch­a n¾m râ vâ c«ng t©m ph¸p cña bæn m«n th× chí bÐn m¶ng ®Õn n¬i nµy. Nh­ng nÕu chóng ®Ö tö cã lßng tin, th× nhÊt ®Þnh sÏ ®­îc më réng tÇm m¾t.",
 			[3] = "MËt thÊt Tróc H¶i lµ n¬i tËp trung c¸c cao thñ tiÒn bèi ë tø ®¹i phßng cña bæn m«n, ®Ö tö nµo ®ñ can ®¶m, h·y ®Õn ®Ó so tµi!",
@@ -64,7 +64,7 @@ g_tbDialog =
 		},	
 	[7] = 
 		{	--Îå¶¾
-			[0] = "<color=green>C©u S¸ch<color>:",
+			[0] = "<color=green>Gou Sach<color>:",
 			[1] = "Ngò §éc mËt thÊt ë U Nan QuËt, chØ cho phÐp ®Ö tö bæn gi¸o vµo ®Ó luyÖn thi cæ, nh­ng sèng chÕt do trêi ®Þnh, ta ph¶i c¶nh b¸o ch­ vÞ ®iÒu ®ã!",	
 			[2] = "Bæn gi¸o tõ lóc Thi Th­¬ng, Cæ Th­¬ng s¸ng lËp, vÉn th­êng gÆp ph¶i mét sè hung thÇn ¸c thi vµ thiªn niªn ®éc cæ rÊt khã thu phôc. Nh­ng ®ã míi lµ c¬ së cÇn thiÕt ®Ó cho vâ c«ng cña bæn m«n ngµy mét ph¸t triÓn. Cho nªn ®· cho thu thËp nh÷ng thi cæ hiÕm thÊy, tµng tr÷ ë U Nan QuËt, ®ång thêi ph¸i nh÷ng cao thñ tiÒn bèi trong gi¸o ph¸i ®Õn nghiªn cøu. DÇn dµ, nh÷ng tiÒn bèi nµy ®Òu bÞ mÊt hÕt trÝ nhí. §Ö tö bæn gi¸o cã thÓ ®Õn ®©y ®Ó tu luyÖn. Nh­ng sèng chÕt do trêi ®Þnh, nÕu kh«ng thÓ trë ra, th× còng ®õng tr¸ch s­ m«n kh«ng b¸o tr­íc, hoÆc lµ thÊy chÕt mµ kh«ng cøu!",
 			[3] = "U Nan QuËt kh«ng gièng Thi Th­¬ng vµ Cæ Th­¬ng, lµ mËt thÊt cña s­ m«n, chøa ®Çy nguy c¬, nÕu kh«ng ra ®­îc còng ®õng tr¸ch s­ m«n v« t×nh ®ã!",
@@ -138,21 +138,21 @@ function backroom_see_all_faction_rank()
 	for i=1,getn(TB_FACTION_NAME) do
 		tinsert(selTab,TB_FACTION_NAME[i].."/#backroom_see_faction_rank("..i..")");
 	end;
-	tinsert(selTab,"Hñy bá/nothing");
+	tinsert(selTab,"Cancel/nothing");
 	Say(szInforHeader.."B¹n muèn kiÓm tra th«ng tin xÕp h¹ng cña l­u ph¸i nµo?",getn(selTab),selTab);
 end;
 
 function backroom_reset_award_num()
 	local szInforHeader = backroom_get_infoheader();
 	if GetTask(TSK_WC_FAIL_TIMES) < MAX_FAILURE_TIMES then
-		Talk(1,"",szInforHeader.."Xo¸ d÷ liÖu 1 tuÇn <color=yellow>"..MAX_FAILURE_TIMES.."<color> lÇn trë lªn míi cã thÓ sö dông.");
+		Talk(1,"",szInforHeader.."Clear data once a week <color=yellow>"..MAX_FAILURE_TIMES.."<color> lÇn trë lªn míi cã thÓ sö dông.");
 		return 0;
 	end;
 	local selTab = {
-				"§ång ý/backroom_reset_award_num_confirm",
+				"Agree/backroom_reset_award_num_confirm",
 				"Kh«ng dïng /nothing",
 				}
-	Say(szInforHeader.."Xo¸ d÷ liÖu 1 tuÇn <color=yellow>"..MAX_FAILURE_TIMES.."<color> lÇn trë lªn míi cã thÓ sö dông, mçi lÇn tiªu hao <color=yellow>"..TB_ITEM[1][1].." 50<color> c¸i, sau khi sö dông, b¹n cã thÓ nhËn ®­îc b¶o r­¬ng ë mËt thÊt mét lÇn n÷a. <color=yellow>T¨ng sè lÇn nhËn phÇn th­ëng, sÏ tù ®éng xo¸ d÷ liÖu<color>. B¹n x¸c nhËn muèn sö dông?",getn(selTab),selTab);
+	Say(szInforHeader.."Clear data once a week <color=yellow>"..MAX_FAILURE_TIMES.."<color> lÇn trë lªn míi cã thÓ sö dông, mçi lÇn tiªu hao <color=yellow>"..TB_ITEM[1][1].." 50<color> c¸i, sau khi sö dông, b¹n cã thÓ nhËn ®­îc b¶o r­¬ng ë mËt thÊt mét lÇn n÷a. <color=yellow>T¨ng sè lÇn nhËn phÇn th­ëng, sÏ tù ®éng xo¸ d÷ liÖu<color>. B¹n x¸c nhËn muèn sö dông?",getn(selTab),selTab);
 end;
 
 function backroom_reset_award_num_confirm()
@@ -188,7 +188,7 @@ function backroom_challenge()
 				"\n. B¾t ®Çu khiªu chiÕn tõ lÇn t¹m dõng tr­íc/backroom_continue_last_record",
 				". Chän ®é khã, hoµn thµnh khiªu chiÕn/backroom_select_difficulty",
 				"\n. Quay l¹i/backroom_main_entry",
-				". KÕt thóc ®èi tho¹i/nothing",
+				". End dialogue/nothing",
 				}
 	if GetTask(TSK_WC_LAST_RECORD) == 0 then
 		tremove(selTab,1);	--Èç¹ûÉÏ´ÎÃ»ÓÐ±£´æ¼ÇÂ¼
@@ -209,7 +209,7 @@ function backroom_clear_record()
 				"Kh«ng cÇn/nothing",
 				}
 	local nLastDiff,nLastStage = BR_GetSaveRecord();
-	Say(szInforHeader.."TiÕn ®é lÇn tr­íc b¹n l­u lµ <color=yellow>"..TB_DIFF_NAME[nLastDiff].."<color> ®é khã ¶i <color=yellow>"..nLastStage.."<color>, b¹n muèn xãa d÷ liÖu nµy kh«ng? Chó ý, sè lÇn xãa d÷ liÖu tuÇn v­ît qu¸ <color=yellow>"..MAX_FAILURE_TIMES.."<color> lÇn sÏ kh«ng thÓ lÊy b¶o r­¬ng trong mËt thÊt. TuÇn nµy b¹n ®· xãa d÷ liÖu <color=yellow>"..GetTask(TSK_WC_FAIL_TIMES).."<color> lÇn.",getn(selTab),selTab);
+	Say(szInforHeader.."TiÕn ®é lÇn tr­íc b¹n l­u lµ <color=yellow>"..TB_DIFF_NAME[nLastDiff].."<color> difficulty stage <color=yellow>"..nLastStage.."<color>, b¹n muèn xãa d÷ liÖu nµy kh«ng? Chó ý, sè lÇn xãa d÷ liÖu tuÇn v­ît qu¸ <color=yellow>"..MAX_FAILURE_TIMES.."<color> lÇn sÏ kh«ng thÓ lÊy b¶o r­¬ng trong mËt thÊt. TuÇn nµy b¹n ®· xãa d÷ liÖu <color=yellow>"..GetTask(TSK_WC_FAIL_TIMES).."<color> lÇn.",getn(selTab),selTab);
 end;
 
 function backroom_clear_record_confirm()
@@ -261,7 +261,7 @@ function backroom_continue_last_record()
 		return 0;
 	end;
 	local selTab = {
-				format("§­îc/#backroom_enter_back_room(%d,%d)",nLastDiff,nLastStage),
+				format("OK/#backroom_enter_back_room(%d,%d)",nLastDiff,nLastStage),
 				"Ta suy nghÜ mét l¸t/nothing",
 				}
 	local nReadRecordTimes = GetTask(TSK_WC_READ_RECORD_TIMES)+1;
@@ -269,7 +269,7 @@ function backroom_continue_last_record()
 	if nReadRecordTimes > MAX_FREE_READ_RECORD_TIMES then
 		nNeedItemNum = 3;
 	end;
-	Say(szInforHeader.."TiÕn ®é lÇn tr­íc b¹n l­u lµ <color=yellow>"..TB_DIFF_NAME[nLastDiff].."<color> ®é khã ¶i <color=yellow>"..nLastStage.."<color> ¶i, ®äc tiÕn ®é kh«ng nhËn n÷a"..TB_ITEM[1][1]..". Trong tuÇn nµy ®©y lµ lÇn ®äc tiÕn ®é thø <color=yellow>"..nReadRecordTimes.."<color>. B©y giê ng­¬i muèn vµo ¶i nµy ®Ó luyÖn ph¶i kh«ng?",getn(selTab),selTab);
+	Say(szInforHeader.."TiÕn ®é lÇn tr­íc b¹n l­u lµ <color=yellow>"..TB_DIFF_NAME[nLastDiff].."<color> difficulty stage <color=yellow>"..nLastStage.."<color> ¶i, ®äc tiÕn ®é kh«ng nhËn n÷a"..TB_ITEM[1][1]..". Trong tuÇn nµy ®©y lµ lÇn ®äc tiÕn ®é thø <color=yellow>"..nReadRecordTimes.."<color>. B©y giê ng­¬i muèn vµo ¶i nµy ®Ó luyÖn ph¶i kh«ng?",getn(selTab),selTab);
 end;
 
 function backroom_enter_back_room(nDiff,nStage)
@@ -284,9 +284,9 @@ function backroom_enter_back_room(nDiff,nStage)
 	if nStage == nil then
 		nNeedToken = 1;	--Èç¹û²»ÊÇ¶Áµµ½øµÄ£¬ÐèÒª1¸öÊ¦ÃÅÁîÅÆ
 		nStage = 1;
-		tinsert(selTab,"§ång ý/#backroom_enter_back_room_confirm("..nDiff..")");	
+		tinsert(selTab,"Agree/#backroom_enter_back_room_confirm("..nDiff..")");	
 	else
-		tinsert(selTab,"§ång ý/#backroom_enter_back_room_confirm("..nDiff..","..nStage..")");
+		tinsert(selTab,"Agree/#backroom_enter_back_room_confirm("..nDiff..","..nStage..")");
 	end;
 	local nReadRecordTimes = GetTask(TSK_WC_READ_RECORD_TIMES)+1;
 	local nNeedItemNum = 0;
@@ -302,7 +302,7 @@ function backroom_enter_back_room(nDiff,nStage)
 	end;
 	local nTotalNeedNum = nNeedItemNum+nNeedItemNumEx;
 	tinsert(selTab,"T¹m thêi kh«ng vµo/nothing");
-	Say(szInforHeader.."Ng­¬i cã muèn vµo ¶i <color=yellow>"..TB_DIFF_NAME[nDiff].."<color> ¶i <color=yellow>"..nStage.."<color> kh«ng?"..szInfo.."Tæng céng ng­¬i ph¶i tèn <color=yellow> "..nNeedToken.."<color> lÖnh bµi s­ m«n vµ <color=yellow>"..szItemName..nTotalNeedNum.."<color>.",getn(selTab),selTab);
+	Say(szInforHeader.."Ng­¬i cã muèn vµo ¶i <color=yellow>"..TB_DIFF_NAME[nDiff].."<color> stage <color=yellow>"..nStage.."<color> kh«ng?"..szInfo.."Tæng céng ng­¬i ph¶i tèn <color=yellow> "..nNeedToken.."<color> lÖnh bµi s­ m«n vµ <color=yellow>"..szItemName..nTotalNeedNum.."<color>.",getn(selTab),selTab);
 end;
 
 function backroom_enter_back_room_confirm(nDiff,nStage)	--param1:difficulty£¬´ÓÖÐ¶Ï´¦½øÊ±£¬nStage²»Îªnil
@@ -322,12 +322,12 @@ function backroom_enter_back_room_confirm(nDiff,nStage)	--param1:difficulty£¬´ÓÖ
 	local nTotalNeedNum = nNeedItemNum + nNeedItemNumEx;
 	if nStage ~= nil then	--Èç¹ûÊÇ¶Áµµ½øµÄ
 		if GetItemCount(TB_ITEM[1][2],TB_ITEM[1][3],TB_ITEM[1][4]) < nTotalNeedNum then
-			Talk(1,"",szInforHeader.."TuÇn nµy ng­¬i ®· ®æi <color=yellow>"..nReadRecordTimes.."<color> lÇn ®äc tiÕn ®é, cÇn <color=yellow>"..nNeedItemNum.."<color> c¸i"..szItemName.."."..szInfo.."Sè l­îng "..szItemName.."Sè l­îng kh«ng ®ñ, tæng céng cÇn "..nTotalNeedNum.."c¸i"..szItemName..".");
+			Talk(1,"",szInforHeader.."TuÇn nµy ng­¬i ®· ®æi <color=yellow>"..nReadRecordTimes.."<color> lÇn ®äc tiÕn ®é, cÇn <color=yellow>"..nNeedItemNum.."<color> c¸i"..szItemName.."."..szInfo.."The quantity"..szItemName.."Sè l­îng kh«ng ®ñ, tæng céng cÇn "..nTotalNeedNum.."c¸i"..szItemName..".");
 			return 0;
 		end;
 	else
 		if GetItemCount(TB_ITEM[1][2],TB_ITEM[1][3],TB_ITEM[1][4]) < nNeedItemNumEx then
-			Talk(1,"",szInforHeader..szInfo.."Sè l­îng "..szItemName.."Sè l­îng kh«ng ®ñ.");
+			Talk(1,"",szInforHeader..szInfo.."The quantity"..szItemName.."Sè l­îng kh«ng ®ñ.");
 			return 0;
 		end;
 	end;
@@ -386,7 +386,7 @@ function backroom_see_faction_rank(nFaction)
 	for i=1,getn(TB_FACTION_ROUTE[nFaction]) do
 		selTab[i] = TB_FACTION_ROUTE[nFaction][i][2].."/#backroom_see_route_rank("..TB_FACTION_ROUTE[nFaction][i][1]..")";
 	end;
-	tinsert(selTab,"\nKÕt thóc ®èi tho¹i/nothing");
+	tinsert(selTab,"\nEnd conversation/nothing");
 	Say(szInforHeader.."Ng­¬i muèn xem th«ng tin danh s¸ch hÖ ph¸i nµo?",getn(selTab),selTab);
 end;
 
@@ -394,10 +394,10 @@ function backroom_see_route_rank(nRoute)
 	local szInforHeader = backroom_get_infoheader();
 	local selTab = {}
 	for i=1,getn(TB_DIFF_NAME) do
-		tinsert(selTab,"Xem ["..i.."]"..TB_DIFF_NAME[i].." Danh s¸ch ®é khã/#backroom_get_rank("..nRoute..","..i..")");
+		tinsert(selTab,"Xem ["..i.."]"..TB_DIFF_NAME[i].." Difficulty list/#backroom_get_rank("..nRoute..","..i..")");
 	end;
 	tinsert(selTab,"Quay l¹i ®èi tho¹i trªn/backroom_see_all_faction_rank");
-	tinsert(selTab,"KÕt thóc ®èi tho¹i/nothing");
+	tinsert(selTab,"End dialogue/nothing");
 	for i=1,9 do
 		DelRelayShareDataCopy(BACKROOM_RELAY_KEY,nRoute,i);
 	end;
@@ -429,7 +429,7 @@ function backroom_callback_get_rank(szKey,nKey1,nKey2,nRecordCount)
 		szString = szString..gf_FormatStringLength(szFormatTime,20);
 		szString = szString.."\n";
 	end;
-	Talk(1,"#backroom_see_route_rank("..nKey1..")",gf_GetRouteName(nKey1).."MËt thÊt s­ m«n ["..nKey2.."]"..TB_DIFF_NAME[nKey2].." 8 ng­êi dÉn ®Çu ®é khã: \n"..gf_FormatStringLength("H¹ng",6)..gf_FormatStringLength("Tªn",18)..gf_FormatStringLength("Tæng thêi gian",20).."\n"..szString);
+	Talk(1,"#backroom_see_route_rank("..nKey1..")",gf_GetRouteName(nKey1).."MËt thÊt s­ m«n ["..nKey2.."]"..TB_DIFF_NAME[nKey2].." 8 ng­êi dÉn ®Çu ®é khã: \n"..gf_FormatStringLength("Rank",6)..gf_FormatStringLength("Name",18)..gf_FormatStringLength("Total time",20).."\n"..szString);
 end;
 
 function backroom_get_reward()
@@ -447,7 +447,7 @@ function backroom_get_reward()
 				". §æi m¶nh MËt tÝch trÊn ph¸i/backroom_exchange_zhenpai",
 				". §iÒu chØnh lùc ®¸nh cña vò khÝ s­ m«n/backroom_exchange_attack",
 				"Quay l¹i ®èi tho¹i trªn/backroom_main_entry",
-				"Kh«ng cã g×/nothing",
+				"Nothing/nothing",
 				}
 	Say(szInforHeader.."Ng­¬i muèn ®æi phÇn th­ëng nµo?",getn(selTab),selTab);
 end;
@@ -462,7 +462,7 @@ function backroom_exchange_totem()
 			". VËt phÈm cÊp 2 ®æi vËt phÈm cÊp 1 (tû lÖ ®åi 1:1)/#backroom_exchange_totem_type(2)",
 			". VËt phÈm cÊp 3 ®æi vËt phÈm cÊp 1 (tû lÖ ®æi 1:2)/#backroom_exchange_totem_type(3)",
 			"Quay l¹i ®èi tho¹i trªn/backroom_get_reward",
-			"Kh«ng ®æi/nothing",
+			"Do not exchange/nothing",
 			};
 	Say(szInforHeader.."Ng­¬i cã thÓ lÊy vËt phÈm cao cÊp cña mËt thÊt s­ m«n d­ ®æi thµnh vËt phÈm cÊp 1 dïng ®Ó §æi vËt phÈm tiªu hao s­ m«n.",getn(selTab),selTab);
 end;
@@ -476,7 +476,7 @@ function backroom_exchange_totem_type(nType)
 	local szTotemName = TB_TOTEM_INFO[nFaction][nType][4];
 	local nTotemCount = GetItemCount(nID1,nID2,nID3);
 	if nTotemCount <= 0 then
-		Talk(1,"backroom_exchange_totem",szInforHeader.."Ng­¬i kh«ng cã <color=yellow>"..szTotemName.."<color> µ!!");
+		Talk(1,"backroom_exchange_totem",szInforHeader.."Ng­¬i kh«ng cã <color=yellow>"..szTotemName.."<color> ah!!");
 		return 0;
 	end;
 	SetTaskTemp(TTSK_NORMAL_ITEM_TYPE,nType);
@@ -497,7 +497,7 @@ function backroom_exchange_totem_confirm(nCount)
 	local szTotemName = TB_TOTEM_INFO[nFaction][nType][4];
 	local nTotemCount = GetItemCount(nID1,nID2,nID3);
 	if nTotemCount < nCount then
-		Talk(1,"backroom_exchange_totem",szInforHeader.."Ng­¬i ®· ®æi <color=yellow>"..szTotemName.."<color> kh«ng ®ñ <color=yellow>"..nCount.."<color> µ!!");
+		Talk(1,"backroom_exchange_totem",szInforHeader.."You have exchanged <color=yellow>"..szTotemName.."<color> kh«ng ®ñ <color=yellow>"..nCount.."<color> ah!!");
 		return 0;
 	end;
 	local nLV1ID1 = TB_TOTEM_INFO[nFaction][1][1];
@@ -545,7 +545,7 @@ function backroom_list_normal_item(nPageNum,nCount)
 	local nMaxIndex = GetMaxItemCountPerPage(nPageNum,nCount);
 	local nCurStartIndex = (nPageNum-1)*nItemPerPage+1
 	if nPageNum ~= 1 then
-		tinsert(selTab,format("Trang tr­íc \n /#backroom_list_normal_item(%d,%d)",nPageNum-1,nCount));
+		tinsert(selTab,format("Previous page \n /#backroom_list_normal_item(%d,%d)",nPageNum-1,nCount));
 	end;
 	for i=nCurStartIndex,nCurStartIndex+nMaxIndex-1 do
 		tinsert(selTab,tMedList[i]);
@@ -575,7 +575,7 @@ function backroom_get_normal_item_list()
 	local nFaction = GetPlayerFaction();
 	local tSelTab = {};
 	for i=1,getn(TB_NORMAL_ITEM) do
-		tinsert(tSelTab,format(TB_NORMAL_ITEM[i][1].."("..TB_NORMAL_ITEM[i][5].."c¸i"..TB_TOTEM_INFO[nFaction][1][4].." céng "..TB_NORMAL_ITEM[i][6].." vµng ®æi 1 )/#backroom_get_normal_item(%d)",i));
+		tinsert(tSelTab,format(TB_NORMAL_ITEM[i][1].."("..TB_NORMAL_ITEM[i][5].."c¸i"..TB_TOTEM_INFO[nFaction][1][4].." total"..TB_NORMAL_ITEM[i][6].." gold to exchange for 1 )/#backroom_get_normal_item(%d)",i));
 	end;
 	return tSelTab;
 end;
@@ -597,7 +597,7 @@ function backroom_get_normal_item_confirm(nCount)
 		return 0;
 	end;
 	if GetCash() < nNeedMoney*10000 then
-		Talk(1,"",szInforHeader.."Vµng kh«ng ®ñ, x¸c nhËn Ýt nhÊt ng­¬i cã <color=yellow>"..(nNeedMoney).."vµng<color>.");
+		Talk(1,"",szInforHeader.."Vµng kh«ng ®ñ, x¸c nhËn Ýt nhÊt ng­¬i cã <color=yellow>"..(nNeedMoney).."gold<color>.");
 		return 0;
 	end;
 	if gf_JudgeRoomWeight(2,nCount*5,"") == 0 then
@@ -610,7 +610,7 @@ function backroom_get_normal_item_confirm(nCount)
 	Pay(nNeedMoney*10000);
 	if DelItem(nTotemID1,nTotemID2,nTotemID3,nNeedNum) == 1 then
 		AddItem(nItemID1,nItemID2,nItemID3,nCount);
-		Msg2Player("Ng­¬i ®· ®æi "..nCount.."c¸i"..szItemName);
+		Msg2Player("You have exchanged"..nCount.."c¸i"..szItemName);
 		WriteLog(LOG_HEADER..GetName().."(m«n ph¸i:"..nFaction..") råi"..nCount.."c¸i"..szItemName);
 	end;
 end;
@@ -647,7 +647,7 @@ function backroom_equip_reward()
 				"Xem thuéc tÝnh trang bÞ míi/backroom_see_equip_info",
 				"§æi trang bÞ s­ m«n míi/backroom_exchange_equip",
 				"Quay l¹i ®èi tho¹i trªn/backroom_get_reward",
-				"Kh«ng ®æi/nothing",
+				"Do not exchange/nothing",
 				}
 	Say(szInforHeader.."Ng­¬i muèn ®æi trang bÞ s­ m«n kh«ng?",getn(selTab),selTab);
 end;
@@ -672,10 +672,10 @@ function backroom_exchange_equip()
 		return 0;
 	end;
 	local selTab = {
-				"Trang bÞ s­ m«n 4/#backroom_get_equip_reward(4)",
-				"Trang bÞ s­ m«n 5/#backroom_get_equip_reward(5)",
+				"Sect equipment 4/#backroom_get_equip_reward(4)",
+				"Sect equipment 5/#backroom_get_equip_reward(5)",
 				"Quay l¹i ®èi tho¹i trªn/backroom_equip_reward",
-				"Kh«ng ®æi/nothing",
+				"Do not exchange/nothing",
 				}
 	Say(szInforHeader.."Ng­¬i muèn ®æi trang bÞ s­ m«n nµo?",getn(selTab),selTab);
 end;
@@ -691,7 +691,7 @@ function backroom_get_equip_reward(nGeneration)
 				backroom_get_equip_name(nRoute,nGeneration,5).."/#backroom_get_equip("..nGeneration..",5)",
 				backroom_get_equip_name(nRoute,nGeneration,6).."/#backroom_get_equip("..nGeneration..",6)",
 				"Quay l¹i ®èi tho¹i trªn/backroom_exchange_equip",
-				"Kh«ng ®æi/nothing",
+				"Do not exchange/nothing",
 				}
 	Say(szInforHeader.."Ng­¬i muèn ®æi trang bÞ nµo d­íi ®©y?",getn(selTab),selTab);
 end;
@@ -712,8 +712,8 @@ function backroom_get_equip(nGeneration,nType)
 		end;
 	end;
 	tinsert(selTab,"Quay l¹i ®èi tho¹i trªn/#backroom_get_equip_reward("..nGeneration..")");
-	tinsert(selTab,"Kh«ng ®æi/nothing");
-	Say(szInforHeader.."Ng­¬i muèn ®æi <color=yellow>"..szEquipName.."<color> chø?",getn(selTab),selTab);
+	tinsert(selTab,"Do not exchange/nothing");
+	Say(szInforHeader.."Ng­¬i muèn ®æi <color=yellow>"..szEquipName.."<color> ?",getn(selTab),selTab);
 end;
 
 function backroom_get_equip_name(nRoute,nGeneration,nType)
@@ -777,7 +777,7 @@ function backroom_exchange_faction_item()
 				". §æi MËt tÞch cao cÊp s­ m«n (cÇn "..TB_TOTEM_INFO[nFaction][3][4]..TB_FACTION_ITEM[4][0][2].." )/#backroom_exchange_faction_item_type(4)",
 				". §æi MËt tÞch cao cÊp s­ m«n (cÇn "..TB_TOTEM_INFO[nFaction][3][4].."120 c¸i vµ 2000 vµng)/#backroom_exchange_book(1,4)",
 				"Quay l¹i ®èi tho¹i trªn/backroom_get_reward",
-				"Kh«ng ®æi/nothing",
+				"Do not exchange/nothing",
 				}
 	local szInforHeader = backroom_get_infoheader();
 	Say(szInforHeader.."Ng­¬i muèn ®æi vËt phÈm g×?",getn(selTab),selTab);
@@ -809,7 +809,7 @@ function backroom_list_faction_item(nPageNum,nItemType)
 	local nMaxIndex = GetMaxItemCountPerPage(nPageNum,nItemNum);
 	local nCurStartIndex = (nPageNum-1)*nItemPerPage+1
 	if nPageNum ~= 1 then
-		tinsert(selTab,format("Trang tr­íc \n /#backroom_list_faction_item(%d,%d)",nPageNum-1,nItemType));
+		tinsert(selTab,format("Previous page \n /#backroom_list_faction_item(%d,%d)",nPageNum-1,nItemType));
 	end;
 	for i=nCurStartIndex,nCurStartIndex+nMaxIndex-1 do
 		tinsert(selTab,tbList[i]);
@@ -817,7 +817,7 @@ function backroom_list_faction_item(nPageNum,nItemType)
 	if nPageNum ~= ceil(nItemNum/nItemPerPage) then
 		tinsert(selTab,format("\n Trang sau/#backroom_list_faction_item(%d,%d)",nPageNum+1,nItemType));	
 	end;
-	tinsert(selTab,"\n §Ó ta suy nghÜ/nothing");
+	tinsert(selTab,"\n Let me think about it/nothing");
 	Say(szInforHeader.."Ng­¬i muèn ®æi vËt phÈm nµo d­íi ®©y?",getn(selTab),selTab);
 end;
 
@@ -839,8 +839,8 @@ function backroom_get_faction_item(nItemType,nItemIdx)
 	local nTotemType = tbItem[0][1];
 	local szNeedItemName = TB_TOTEM_INFO[nFaction][nTotemType][4];
 	local selTab = {
-				"§ång ý/#backroom_get_faction_item_confirm("..nItemType..","..nItemIdx..")",
-				"Hñy bá/nothing",
+				"Agree/#backroom_get_faction_item_confirm("..nItemType..","..nItemIdx..")",
+				"Cancel/nothing",
 				}
 	Say(szInforHeader.."Ng­¬i muèn ®æi <color=yellow>"..szItemName.."<color>? CÇn ph¶i cã <color=yellow>"..nNeedItemNum.."c¸i"..szNeedItemName.."<color>.",getn(selTab),selTab);
 end;
@@ -873,7 +873,7 @@ function backroom_get_faction_item_confirm(nItemType,nItemIdx)
 	local nItemID3 = tbItem[nItemIdx][4];
 	if DelItem(nID1,nID2,nID3,nNeedItemNum) == 1 then
 		AddItem(nItemID1,nItemID2,nItemID3,1);
-		Msg2Player("B¹n ®æi "..nNeedItemNum.."c¸i"..szNeedItemName.."®æi "..szItemName);
+		Msg2Player("B¹n ®æi "..nNeedItemNum.."c¸i"..szNeedItemName.."exchange"..szItemName);
 		WriteLog(LOG_HEADER..GetName().."(m«n ph¸i:"..nFaction..") dïng "..nNeedItemNum.."c¸i"..szNeedItemName.." råi"..szItemName);
 	end;
 end;
@@ -894,7 +894,7 @@ function backroom_exchange_zhenpai()
 	tinsert(strtab,"@ "..TB_BOOK_LIST[nRoute][2][1].."(cÇn "..TB_TOTEM_INFO[nFaction][nIdx][4]..TB_BOOK_REQUIRE[2][2].." )/#backroom_exchange_zhenpai_ask(2)");
 	nIdx = TB_BOOK_REQUIRE[3][1];
 	tinsert(strtab,"@ "..TB_BOOK_LIST[nRoute][3][1].."(cÇn "..TB_TOTEM_INFO[nFaction][nIdx][4]..TB_BOOK_REQUIRE[3][2].." )/#backroom_exchange_zhenpai_ask(3)");
-	tinsert(strtab,"Kh«ng ®æi/nothing");
+	tinsert(strtab,"Do not exchange/nothing");
 	Say(szInforHeader.."Ng­¬i muèn ®æi cuèn nµo?",getn(strtab),strtab);	
 end
 
@@ -904,14 +904,14 @@ function backroom_exchange_zhenpai_ask(nType)
 	local nFaction = GetPlayerFaction();
 	local nIdx = TB_BOOK_REQUIRE[nType][1];
 	if GetItemCount(TB_TOTEM_INFO[nFaction][nIdx][1],TB_TOTEM_INFO[nFaction][nIdx][2],TB_TOTEM_INFO[nFaction][nIdx][3]) < TB_BOOK_REQUIRE[nType][2] then
-		Talk(1,"",szInforHeader.."§æi"..TB_BOOK_LIST[nRoute][nType][1].."CÇn"..TB_TOTEM_INFO[nFaction][nIdx][4]..TB_BOOK_REQUIRE[nType][2].." , trªn ng­êi ng­¬i kh«ng ®ñ.");
+		Talk(1,"",szInforHeader.."§æi"..TB_BOOK_LIST[nRoute][nType][1].."Requires"..TB_TOTEM_INFO[nFaction][nIdx][4]..TB_BOOK_REQUIRE[nType][2].." , trªn ng­êi ng­¬i kh«ng ®ñ.");
 		return 0;
 	end	
-	Say(szInforHeader.."Ng­¬i dïng <color=yellow>"..TB_TOTEM_INFO[nFaction][nIdx][4]..TB_BOOK_REQUIRE[nType][2].." <color> ®æi <color=yellow>"..TB_BOOK_LIST[nRoute][nType][1].."<color> chø?",
+	Say(szInforHeader.."Ng­¬i dïng <color=yellow>"..TB_TOTEM_INFO[nFaction][nIdx][4]..TB_BOOK_REQUIRE[nType][2].." <color> to exchange <color=yellow>"..TB_BOOK_LIST[nRoute][nType][1].."<color> ?",
 			3,
-			"§­îc/#backroom_exchange_zhenpai_confirm("..nType..")",
-			"Kh«ng, ta nhÇm!/backroom_exchange_zhenpai",
-			"Kh«ng ®æi/nothing")	
+			"Agree/#backroom_exchange_zhenpai_confirm("..nType..")",
+			"No, I made a mistake!/backroom_exchange_zhenpai",
+			"Do not exchange/nothing")	
 end
 
 function backroom_exchange_zhenpai_confirm(nType)
@@ -920,7 +920,7 @@ function backroom_exchange_zhenpai_confirm(nType)
 	local nFaction = GetPlayerFaction();
 	local nIdx = TB_BOOK_REQUIRE[nType][1];
 	if GetItemCount(TB_TOTEM_INFO[nFaction][nIdx][1],TB_TOTEM_INFO[nFaction][nIdx][2],TB_TOTEM_INFO[nFaction][nIdx][3]) < TB_BOOK_REQUIRE[nType][2] then
-		Talk(1,"",szInforHeader.."§æi"..TB_BOOK_LIST[nRoute][nType][1].."CÇn"..TB_TOTEM_INFO[nFaction][nIdx][4]..TB_BOOK_REQUIRE[nType][2].." , trªn ng­êi ng­¬i kh«ng ®ñ.");
+		Talk(1,"",szInforHeader.."§æi"..TB_BOOK_LIST[nRoute][nType][1].."Requires"..TB_TOTEM_INFO[nFaction][nIdx][4]..TB_BOOK_REQUIRE[nType][2].." , trªn ng­êi ng­¬i kh«ng ®ñ.");
 		return 0;
 	end	
 	if gf_JudgeRoomWeight(1,50,szInforHeader) == 0 then
@@ -950,7 +950,7 @@ function backroom_exchange_book(nPageNum,nItemType)
 	local nMaxIndex = GetMaxItemCountPerPage(nPageNum,nItemNum);
 	local nCurStartIndex = (nPageNum-1)*nItemPerPage+1
 	if nPageNum ~= 1 then
-		tinsert(selTab,format("Trang tr­íc \n /#backroom_exchange_book(%d,%d)",nPageNum-1,nItemType));
+		tinsert(selTab,format("Previous page \n /#backroom_exchange_book(%d,%d)",nPageNum-1,nItemType));
 	end;
 	for i=nCurStartIndex,nCurStartIndex+nMaxIndex-1 do
 		tinsert(selTab,tbList[i]);
@@ -958,7 +958,7 @@ function backroom_exchange_book(nPageNum,nItemType)
 	if nPageNum ~= ceil(nItemNum/nItemPerPage) then
 		tinsert(selTab,format("\n Trang sau/#backroom_exchange_book(%d,%d)",nPageNum+1,nItemType));	
 	end;
-	tinsert(selTab,"\n §Ó ta suy nghÜ/nothing");
+	tinsert(selTab,"\n Let me think about it/nothing");
 	Say(szInforHeader.."Ng­¬i muèn ®æi vËt phÈm nµo d­íi ®©y?",getn(selTab),selTab);
 end;
 
@@ -980,10 +980,10 @@ function backroom_exchange_book_item(nItemType,nItemIdx)
 	local nTotemType = tbItem[0][1];
 	local szNeedItemName = TB_TOTEM_INFO[nFaction][nTotemType][4];
 	local selTab = {
-				"§ång ý/#backroom_exchange_book_item_confirm("..nItemType..","..nItemIdx..")",
-				"Hñy bá/nothing",
+				"Agree/#backroom_exchange_book_item_confirm("..nItemType..","..nItemIdx..")",
+				"Cancel/nothing",
 				}
-	Say(szInforHeader.."Ng­¬i muèn ®æi <color=yellow>"..szItemName.."<color>? CÇn ph¶i cã <color=yellow>"..nNeedItemNum.."c¸i"..szNeedItemName.." vµ 2000 vµng<color>.",getn(selTab),selTab);
+	Say(szInforHeader.."Ng­¬i muèn ®æi <color=yellow>"..szItemName.."<color>? CÇn ph¶i cã <color=yellow>"..nNeedItemNum.."c¸i"..szNeedItemName.." and 2000 gold<color>.",getn(selTab),selTab);
 end;
 
 function backroom_exchange_book_item_confirm(nItemType,nItemIdx)
@@ -1018,8 +1018,8 @@ function backroom_exchange_book_item_confirm(nItemType,nItemIdx)
 	local nItemID3 = tbItem[nItemIdx][4];
 	if DelItem(nID1,nID2,nID3,nNeedItemNum) == 1 and Pay(20000000) == 1 then
 		AddItem(nItemID1,nItemID2,nItemID3,1);
-		Msg2Player("B¹n ®æi "..nNeedItemNum.."c¸i"..szNeedItemName.." vµ 2000 vµng ®æi "..szItemName);
-		WriteLog(LOG_HEADER..GetName().."(m«n ph¸i:"..nFaction..") dïng "..nNeedItemNum.."c¸i"..szNeedItemName.." vµ 2000 vµng ®æi "..szItemName);
+		Msg2Player("B¹n ®æi "..nNeedItemNum.."c¸i"..szNeedItemName.." and 2000 gold to exchange"..szItemName);
+		WriteLog(LOG_HEADER..GetName().."(m«n ph¸i:"..nFaction..") dïng "..nNeedItemNum.."c¸i"..szNeedItemName.." and 2000 gold to exchange"..szItemName);
 	end;
 end;
 
@@ -1086,8 +1086,8 @@ function backroom_exchange_attack_ask(nType)
 	local nItemName = GetItemName(nIndex);
 	Say(szInforHeader.."Ng­¬i sö dông 1 Tinh LuyÖn B¨ng Th¹ch ®Ó ®iÒu chØnh lùc ®¸nh cña <color=yellow>"..nItemName.."<color> ph¶i kh«ng?",
 		3,
-		"§­îc/#backroom_exchange_attack_confirm("..nType..")",
-		"Kh«ng, ta nhÇm!/backroom_exchange_attack",
+		"Agree/#backroom_exchange_attack_confirm("..nType..")",
+		"No, I made a mistake!/backroom_exchange_attack",
 		"§Ó ta nghÜ l¹i/nothing")	
 end
 
@@ -1128,12 +1128,12 @@ TB_FACTION_ITEM =
 	[1] = --Ê¦ÃÅÃØ¼®
 	{
 		[0] = {1,60},	--ËùÐèÎïÆ·µÈ¼¶ºÍÊýÁ¿
-		[1] = {"Kim Cang Phôc Ma kinh (ThiÕu L©m tôc gia)",0,107,1},	
+		[1] = {"Vajra Demon-Subduing Sutra (Shaolin Lay Disciple)",0,107,1},	
 		[2] = {"V« TrÇn MËt tÞch (ThiÕu L©m thiÒn t¨ng)",0,107,5},	
 		[3] = {"TiÒm Long MËt tÞch (ThiÕu L©m vâ t¨ng)",0,107,3},	
 		[4] = {"Thiªn La MËt TÞch (§­êng M«n)",0,107,7},	
 		[5] = {"Nh­ ý MËt TÞch (Nga My phËt gia)",0,107,9},	
-		[6] = {"BÝch H¶i Phæ (Nga My tôc gia)",0,107,11},
+		[6] = {"Bihai Manual (Emei Lay Disciple)",0,107,11},
 		[7] = {"Hçn §én MËt tÞch (C¸i Bang tÞnh y)",0,107,13},	
 		[8] = {"Quý Thiªn MËt tÞch (C¸i Bang « y)",0,107,15},	
 		[9] = {"HuyÒn ¶nh MËt tÞch (Vâ §ang ®¹o gia)",0,107,17},	
@@ -1164,23 +1164,23 @@ TB_FACTION_ITEM =
 	[3] = 	--ÃÅÅÉ¾÷Òª°ü
 	{
 		[0] = {1,80},
-		[1] = {"Tói bÝ kiÕp ThiÕu L©m",2,0,607},	
-		[2] = {"Tói bÝ kiÕp Vâ §ang",2,0,611},
-		[3] = {"Tói bÝ kiÕp Nga My",2,0,609},	
-		[4] = {"Tói bÝ kiÕp C¸i Bang",2,0,610},	
+		[1] = {"Shaolin secret manual bag",2,0,607},	
+		[2] = {"Wudang secret manual bag",2,0,611},
+		[3] = {"Emei secret manual bag",2,0,609},	
+		[4] = {"Beggars' Sect secret manual bag",2,0,610},	
 		[5] = {"Tói bÝ kiÕp §­êng M«n",2,0,608},		
 		[6] = {"Tói bÝ kiÕp D­¬ng M«n",2,0,612},	
-		[7] = {"Tói bÝ kiÕp Ngò §éc",2,0,613},	
+		[7] = {"Five Poisons secret manual bag",2,0,613},	
 	},
 	[4] = --¸ß¼¶Ê¦ÃÅÃØ¼®
 	{
 		[0] = {3,600},
-		[1] = {"Kim Cang Ban Nh· Kinh (ThiÕu L©m tôc gia)",0,107,166},
+		[1] = {"Vajra Prajna Sutra (Shaolin Lay Disciple)",0,107,166},
 		[2] = {"V« TrÇn Bå §Ò Kinh (ThiÕu L©m thiÒn t¨ng)",0,107,168},	
 		[3] =	{"TiÒm Long TÞch DiÖt Kinh (ThiÕu L©m vâ t¨ng)",0,107,167},
 		[4] = {"Thiªn La Liªn Ch©u Lôc (§­êng M«n)",0,107,169},	
 		[5] = {"Nh­ ý Kim §Ønh MËt TÞch (Nga My phËt gia)",0,107,170},
-		[6] = {"BÝch H¶i TuyÖt ¢m Phæ (Nga My tôc gia)",0,107,171},
+		[6] = {"Bihai Silent Sound Manual (Emei Lay Disciple)",0,107,171},
 		[7] = {"Hçn §én TrÊn Nh¹c MËt TÞch (C¸i Bang tÞnh y)",0,107,172},
 		[8] = {"Quý Thiªn Du Long MËt TÞch (C¸i Bang « y)",0,107,173},		
 		[9] = {"HuyÒn ¶nh Mª Tung MËt TÞch (Vâ §ang ®¹o gia)",0,107,174},	

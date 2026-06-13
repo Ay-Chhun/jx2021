@@ -161,7 +161,7 @@ function ChoiceUnLockAttr(nItem, nLineID)
 			tinsert(tbSay.sel, {GetItemFeedAttiDesc(tCurrList[i]), 
 				format("#ChoiceUnLockAttr(%d, %d)", nItem, tCurrList[i])});
 		end
-		tinsert(tbSay.sel, {"\n rót lui", "nothing"});
+		tinsert(tbSay.sel, {"\n withdraw", "nothing"});
 		temp_Talk(tbSay);
 		return 0;
 	end
@@ -175,7 +175,7 @@ function ChoiceUnLockAttr(nItem, nLineID)
 			tinsert(tbSay.sel, {tRet[1][i][2], 
 				format("#ChoiceUnLockAttr(%d, %d)", nItem, i)});
 		end
-		tinsert(tbSay.sel, {"\n rót lui", "nothing"});
+		tinsert(tbSay.sel, {"\n withdraw", "nothing"});
 		temp_Talk(tbSay);
 		return 0;
 	end
@@ -188,7 +188,7 @@ function ChoiceUnLockAttr(nItem, nLineID)
 	msg = msg..format("    Thuéc tÝnh mÆc ®Þnh: <color=green>%s, %s, %s<color>\n", GetItemFeedAttiDesc(tLineID[1]), GetItemFeedAttiDesc(tLineID[2]), GetItemFeedAttiDesc(tLineID[3]));
 	msg = msg..format("    Thuéc tÝnh më khãa: <color=green>%s, %s, %s<color>\n", GetItemFeedAttiDesc(tLineID[4]), GetItemFeedAttiDesc(tLineID[5]), GetItemFeedAttiDesc(tLineID[6]));
 	msg = msg..format("QuyÕt ®Þnh dïng <color=gold>%s<color> ghÐp thµnh <color=gold>%s<color> kh«ng?", GetItemName(nItem), tRet[2]);
-	Say(msg, 2, szDialog, "§Ó ta suy nghÜ/nothing");
+	Say(msg, 2, szDialog, "Let me think about it/nothing");
 end
 
 --Ñ¡Ôñ»ù´¡ÊôÐÔ
@@ -201,7 +201,7 @@ function ChoiceBaseAttr(nItem, choice1, curIndex, choice2)
 		for k, v in base do
 			tinsert(tSay, format("%s/#ChoiceBaseAttr(%d, '%s')", k, nItem, k));
 		end
-		tinsert(tSay, "\n rót lui/nothing");
+		tinsert(tSay, "\n withdraw/nothing");
 		Say("H·y chän lo¹i thuéc tÝnh c¬ b¶n: ", getn(tSay), tSay);
 		return 0;
 	end
@@ -227,7 +227,7 @@ function ChoiceBaseAttr(nItem, choice1, curIndex, choice2)
 				end
 				tinsert(tSay, format(szFormat, GetItemFeedAttiDesc(tBaseAttr[i][j]), nItem, choice1, i, j));
 			end
-			tinsert(tSay, "\n rót lui/nothing");
+			tinsert(tSay, "\n withdraw/nothing");
 			Say("H·y chän lo¹i thuéc tÝnh con c¬ b¶n: ", getn(tSay), tSay);
 			return 0;
 		end

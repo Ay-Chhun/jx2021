@@ -9,7 +9,7 @@ Include("\\settings\\static_script\\missions\\base\\mission_head.lua")
 thisFile = "\\script\\missions\\eyt_battle\\mission.lua"
 
 EYT_MISSION = {
-	name = "Tû Vâ ¢n O¸n §µi",
+	name = "Martial Duel Grudge Arena",
 	missionID = EYT_MISSION_ID,
 	realMapID = EYT_MAP_ID,
 	dynamicMap = 1, --ÊÇ·ñ¶¯Ì¬¼ÓÔØ
@@ -150,7 +150,7 @@ function eyt_FloatReport()
 	local nBlue = GetMissionV(EYT_MISSION.blueScore);
 	local nRedPlayer = GetMSPlayerCount(EYT_MISSION_ID, EYT_CAMP_RED);
 	local nBluePlayer = GetMSPlayerCount(EYT_MISSION_ID, EYT_CAMP_BLUE);
-	local msg = format("Tû Vâ ¢n O¸n §µi:\n§éi ®á (%d): %d\n§éi xanh (%d): %d",nRedPlayer, nRed, nBluePlayer, nBlue);
+	local msg = format("Sparring Grudge Arena:\nRed team (%d): %d\nBlue team (%d): %d",nRedPlayer, nRed, nBluePlayer, nBlue);
 	FloatMsg2Player(msg);
 end
 
@@ -160,7 +160,7 @@ function eyt_CheckAndKickSleep()
 		Say("KÎ thï tr­íc mÆt vËy mµ d¸m ngñ gËt, ng­êi ®©u l«i ra cho ta!", 0);
 		LeaveTeam();
 		DelMSPlayer(EYT_MISSION_ID, nCamp);
-		Msg2MSAll(EYT_MISSION_ID, GetName().."§· rêi khái ¢n O¸n §µi.");
+		Msg2MSAll(EYT_MISSION_ID, GetName().."You have left the Grudge Arena.");
 		return 1;
 	end;
 	if IsPlayerDeath() == 1 and GetTaskTemp(TMP_TASK_KF_TIME) ~= 0 then
@@ -169,7 +169,7 @@ function eyt_CheckAndKickSleep()
 			Say("KÎ thï tr­íc mÆt vËy mµ d¸m ngñ gËt, ng­êi ®©u l«i ra cho ta!", 0);
 			LeaveTeam();
 			DelMSPlayer(EYT_MISSION_ID, nCamp);
-			Msg2MSAll(EYT_MISSION_ID, GetName().."§· rêi khái ¢n O¸n §µi.");
+			Msg2MSAll(EYT_MISSION_ID, GetName().."You have left the Grudge Arena.");
 			return 1;
 		end
 	end;
@@ -185,8 +185,8 @@ function eyt_ShowExit(nWinner)
 		msg = "§éi cña ng­¬i ®· thua, lÇn sau ®¹i hiÖp cè lªn!";
 	end
 	local tSay = {
-		format("Rêi khái ¢n O¸n §µi/#DelMSPlayer(%d,%d,%d)", EYT_MISSION_ID, PlayerIndex, nCamp),
-		"Ra khái/nothing",
+		format("Leave the Grudge Arena/#DelMSPlayer(%d,%d,%d)", EYT_MISSION_ID, PlayerIndex, nCamp),
+		"Leave/nothing",
 	}
 	Say(msg, getn(tSay), tSay);
 end
@@ -216,7 +216,7 @@ function eyt_AddBuff()
 		CastState("state_life_max_percent_add",EYT_XUEHEN[nTbIdx][3],2*60*18,1,9910,1);	--ÉúÃüÉÏÏÞ
 		CastState("state_buff_resist",EYT_XUEHEN[nTbIdx][4],2*60*18,1,9911,1);					--ÃâÒß¸ºÃæ×´Ì¬
 		SyncCustomState(1,9908,1,EYT_XUEHEN[nTbIdx][5]);
-		Msg2Player("B¹n nhËn ®­îc "..EYT_XUEHEN[nTbIdx][5].."HiÖu qu¶: "..format(EYT_XUEHEN[nTbIdx][6], EYT_XUEHEN[nTbIdx][2], EYT_XUEHEN[nTbIdx][3], EYT_XUEHEN[nTbIdx][4]).."Duy tr× 2 phót.");
+		Msg2Player("B¹n nhËn ®­îc "..EYT_XUEHEN[nTbIdx][5].."HiÖu qu¶: "..format(EYT_XUEHEN[nTbIdx][6], EYT_XUEHEN[nTbIdx][2], EYT_XUEHEN[nTbIdx][3], EYT_XUEHEN[nTbIdx][4]).."Lasts 2 minutes.");
 		if nTbIdx <= 9 then
 			SetCurrentNpcSFX(PIdx2NpcIdx(), 921,1,0,18*3);
 		end

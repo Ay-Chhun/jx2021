@@ -38,7 +38,7 @@ function vfs_open_JJ_shop()
 		"Ti÷m ViP c p 1/#vfs_open_shop(3030)",
 		"Ti÷m ViP c p 2/#vfs_open_shop(3031)",
 		"Ti÷m ViP c p 3/#vfs_open_shop(3032)",
-		"Ra kh·i/do_nothing"
+		"Exit/do_nothing"
 	}
 	Say("ßπi hi÷p ng≠Íi c n g◊ kh´ng?", getn(tSay), tSay);
 end

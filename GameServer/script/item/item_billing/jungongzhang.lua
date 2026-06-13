@@ -22,9 +22,9 @@ function OnUse(nItemIdx)
 		return 0;
 	end;
 	local selTab = {
-				format("§ång ý/#use(%d)",nType),
+				format("Agree/#use(%d)",nType),
 				"Hñy c«ng dông huy hiÖu chiÕn c«ng/cancel_effect",
-				"Hñy bá/nothing",
+				"Cancel/nothing",
 				}
 	local nCurMultiple = BT_GetData(PT_MULTIPLE_JUNGONG);
 	if nCurMultiple ~= 0 then

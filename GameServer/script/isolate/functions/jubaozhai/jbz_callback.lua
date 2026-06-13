@@ -188,7 +188,7 @@ function _jbz_StartLottery(nLotteryType, nLotteryCount)
 		return 0;
 	end
 	local szItemName = GetItemName(t[1], t[2], t[3]);
-	Msg2Player(format("Tiªu hao [%s]*%d", szItemName, t[4]));
+	Msg2Player(format("Consume [%s]*%d", szItemName, t[4]));
 	FireEvent("event_ib_cost", t[1], t[2], t[3], t[4]);
 	SetTask(TASKID_JBZ_LOTTERY, nRet, TASK_ACCESS_CODE_JBZ);
 	StartJbzBox(nLotteryType, nLotteryCount);

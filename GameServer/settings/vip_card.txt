@@ -1,5 +1,5 @@
 ID	Switch	Name	G	D	P	StartTime	EndTime	Time
-H­íng dÉn	§ãng më	Tªn	G	D	P	Thêi gian b¾t ®Çu kİch ho¹t	Thêi gian kÕt thóc kİch ho¹t	H¹n sö dông (Ngµy)
+Guide	§ãng më	Name	G	D	P	Thêi gian b¾t ®Çu kİch ho¹t	Thêi gian kÕt thóc kİch ho¹t	H¹n sö dông (Ngµy)
 1	1	§¹i HiÖp LÖnh	2	1	50254			30
 2	1	§¹i HiÖp LÖnh	2	1	50254			30
 3	1	§¹i HiÖp LÖnh	2	1	50254			30

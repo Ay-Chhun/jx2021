@@ -19,8 +19,8 @@ tClause1 = {
     {{"Thiªn Cang LÖnh"          ,{2,95,204,1},msg},     80000},
     {{"Thiªn Cang LÖnh"          ,{2,95,204,2},msg},     10000},
     {{"Thiªn Cang LÖnh"          ,{2,95,204,3},msg},     5000},
-    {{"Huy Ch­¬ng Du HiÖp"          ,{0,153,26,1},msg},     2000},
-    {{"Huy Ch­¬ng ThiÕt HuyÕt"          ,{0,153,27,1},msg},     2000},
+    {{"Roaming Hero Medal"          ,{0,153,26,1},msg},     2000},
+    {{"Iron Blood Medal"          ,{0,153,27,1},msg},     2000},
     {{"Huy Ch­¬ng V©n Du"          ,{0,153,28,1},msg},     1000},
 }
 tClause2 = {
@@ -42,23 +42,23 @@ tClause2 = {
 --	{{"15¼¶Ç¿»¯¾í"       		,{2,1,30427,1},msg},    	0.50*100 ,30},
 --	{{"14¼¶Ç¿»¯¾í"       		,{2,1,30426,1},msg},    	1.00*100 ,30},
 --	{{"3¼¶Ä¥µ¶Ê¯"       		,{2,1,30430,1}},    	1.50*100 ,7},
-    {{"C©y B¸t Nh· nhá"          ,{2,0,504,1}},     6000, 7},
-    {{"C©y B¸t Nh·"          ,{2,0,398,1}},     6000, 7},
-    {{"C©y Tø Linh"          ,{2,1,30269,1}},     6000, 7},
+    {{"Small Prajna Tree"          ,{2,0,504,1}},     6000, 7},
+    {{"Prajna Tree"          ,{2,0,398,1}},     6000, 7},
+    {{"Four Spirits Tree"          ,{2,1,30269,1}},     6000, 7},
     {{"B¹ch C©u Hoµn"          ,{2,1,270,1}},     6000, 7},
     {{"§¹i B¹ch C©u hoµn"          ,{2,1,1007,1}},     8000, 7},
     {{"B¹ch C©u Tiªn ®¬n"          ,{2,1,1008,1}},     6000, 7},
     {{"§¹i Nh©n s©m"          ,{2,0,553,1}},     5000, 7},
-    {{"Hu©n ch­¬ng anh hïng"          ,{2,1,30499,1,4}},     15000},
-    {{"Hu©n ch­¬ng anh hïng"          ,{2,1,30499,2,4}},     6000},
-    {{"Hu©n ch­¬ng anh hïng"          ,{2,1,30499,4,4}},     2000},
-    {{"Hu©n ch­¬ng anh hïng"          ,{2,1,30499,10,4}},     500},
+    {{"Hero's Medal"          ,{2,1,30499,1,4}},     15000},
+    {{"Hero's Medal"          ,{2,1,30499,2,4}},     6000},
+    {{"Hero's Medal"          ,{2,1,30499,4,4}},     2000},
+    {{"Hero's Medal"          ,{2,1,30499,10,4}},     500},
     {{"M¶nh Thiªn Cang"          ,{2,1,30390,10}},     12000},
     {{"M¶nh Thiªn Cang"          ,{2,1,30390,20}},     3910},
     {{"M¶nh Thiªn Cang"          ,{2,1,30390,100}},     400},
     {{"Thiªn Cang LÖnh"          ,{2,95,204,1},msg},     100},
-    {{"Huy Ch­¬ng §ång ChÕ", {0,153,1,1}}, 4000},
-    {{"Huy Ch­¬ng ThiÕt ChÕ", {0,153,2,1}}, 4000},
+    {{"Copper Medal", {0,153,1,1}}, 4000},
+    {{"Iron Medal", {0,153,2,1}}, 4000},
     {{"Huy Ch­¬ng Ngäc ChÕ", {0,153,3,1}}, 3060},
     {{"Huy Ch­¬ng Kim ChÕ ngò hµnh", {0,153,4,1}}, 1000},
     {{"Huy Ch­¬ng Méc ChÕ ngò hµnh", {0,153,5,1}}, 1000},
@@ -66,8 +66,8 @@ tClause2 = {
     {{"Huy Ch­¬ng Háa ChÕ ngò hµnh", {0,153,7,1}}, 1000},
     {{"Huy Ch­¬ng Thæ ChÕ ngò hµnh", {0,153,8,1}}, 1000},
     {{"Huy Ch­¬ng ¢m ChÕ ngò hµnh", {0,153,9,1}}, 1000},
-    {{"Huy Ch­¬ng Du HiÖp"          ,{0,153,26,1},msg},     10},
-    {{"Huy Ch­¬ng ThiÕt HuyÕt"          ,{0,153,27,1},msg},     10},
+    {{"Roaming Hero Medal"          ,{0,153,26,1},msg},     10},
+    {{"Iron Blood Medal"          ,{0,153,27,1},msg},     10},
     {{"Huy Ch­¬ng V©n Du"          ,{0,153,28,1},msg},     10},
 }
 tClause3 = {
@@ -118,15 +118,15 @@ tClause3 = {
 --	{{"ÃØÒø´¸"       		,{2,1,30539,1}},      	3.00*100},
 --	{{"ÃØÒø×ê"       		,{2,1,30538,1}},      	2.00*100},
 --	{{"±ù¾§Ê¯"       		,{2,1,30554,1}},      	1.00*100},
-    {{"Tø Linh Quy Nguyªn §¬n"          ,{2,1,30352,1,4}},     5000},
-    {{"Båi Nguyªn §¬n"          ,{2,1,30351,1,4}},     5000},
+    {{"Four Spirits Return to Origin Pill"          ,{2,1,30352,1,4}},     5000},
+    {{"Replenishing Origin Pill"          ,{2,1,30351,1,4}},     5000},
     {{"TruyÒn C«ng §¬n"          ,{2,1,30313,1,4}},     5000},
-    {{"M¶nh Tu Ch©n YÕu QuyÕt"          ,{2,1,30315,1,4}},     5000},
+    {{"Cultivation Truth Fragment"          ,{2,1,30315,1,4}},     5000},
     {{"ThiÕt Tinh cÊp 1"          ,{2,1,30533,1,4}},     10000},
     {{"ThiÕt Tinh cÊp 2"          ,{2,1,30534,1,4}},     10000},
     {{"ThiÕt Tinh cÊp 3"          ,{2,1,30535,1,4}},     10000},
-    {{"Huy Ch­¬ng §ång ChÕ"          ,{0,153,1,1}},     15000},
-    {{"Huy Ch­¬ng ThiÕt ChÕ"          ,{0,153,2,1}},     20000},
+    {{"Copper Medal"          ,{0,153,1,1}},     15000},
+    {{"Iron Medal"          ,{0,153,2,1}},     20000},
     {{"Huy Ch­¬ng Ngäc ChÕ"          ,{0,153,3,1}},     15000},
 }
 tClause4 = {
@@ -168,15 +168,15 @@ tClause4 = {
 --	{{"Ç§Àï´«Òô·ûÖ½"       	,{2,1,3508,1}},    	10*100},
 --	{{"Ï´³¾µ¤"       	,{2,1,30613,1}},    	4*100},
 --	{{"ËÄÁé¹éÔªµ¤"       	,{2,1,30352,1}},    5.00*100},
-    {{"Tø Linh Quy Nguyªn §¬n"          ,{2,1,30352,1,4}},     5000},
-    {{"Båi Nguyªn §¬n"          ,{2,1,30351,1,4}},     10000},
+    {{"Four Spirits Return to Origin Pill"          ,{2,1,30352,1,4}},     5000},
+    {{"Replenishing Origin Pill"          ,{2,1,30351,1,4}},     10000},
     {{"TruyÒn C«ng §¬n"          ,{2,1,30313,1,4}},     10000},
-    {{"M¶nh Tu Ch©n YÕu QuyÕt"          ,{2,1,30315,1,4}},     5000},
+    {{"Cultivation Truth Fragment"          ,{2,1,30315,1,4}},     5000},
     {{"ThiÕt Tinh cÊp 1"          ,{2,1,30533,1,4}},     20000},
     {{"ThiÕt Tinh cÊp 2"          ,{2,1,30534,1,4}},     10000},
     {{"ThiÕt Tinh cÊp 3"          ,{2,1,30535,1,4}},     10000},
-    {{"Huy Ch­¬ng §ång ChÕ"          ,{0,153,1,1}},     15000},
-    {{"Huy Ch­¬ng ThiÕt ChÕ"          ,{0,153,2,1}},     15000},
+    {{"Copper Medal"          ,{0,153,1,1}},     15000},
+    {{"Iron Medal"          ,{0,153,2,1}},     15000},
 }
 tClause5 = {
 --	{{"ÎäÁÖÔç±¨"         	,{2,1,30314,1}},       20.00*100,7},
@@ -229,10 +229,10 @@ tClause5 = {
 --	{{"ÅàÔªµ¤"         		,{2,1,30351,1}},		2.50*100},
 
     {{"TiÓu truyÒn c«ng ®¬n"          ,{2,1,30312,1,4}},     10000},
-    {{"M¶nh Tu Ch©n YÕu QuyÕt"          ,{2,1,30315,1,4}},     10000},
+    {{"Cultivation Truth Fragment"          ,{2,1,30315,1,4}},     10000},
     {{"ThiÕt Tinh cÊp 1"          ,{2,1,30533,1,4}},     40000},
     {{"ThiÕt Tinh cÊp 2"          ,{2,1,30534,1,4}},     30000},
-    {{"Huy Ch­¬ng §ång ChÕ"          ,{0,153,1,1}},     10000},
+    {{"Copper Medal"          ,{0,153,1,1}},     10000},
 }
 function getLootSeting(bossLv)
 	local t = {"LS_haohanA", "LS_haohanB", "LS_haohanC", "LS_haohanD", "LS_haohanE"}
@@ -290,7 +290,7 @@ function speLoot()
 		return
 	end
 	local tSel = {
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 		}
 	local OldPlayerIndex = PlayerIndex;
 	if daye == PlayerIndex then

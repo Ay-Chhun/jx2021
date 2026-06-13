@@ -23,8 +23,8 @@ function main()
 --		Talk(1,"",tbRand[nTemp1 +1]);
 		SetTask(Task_id_007,GetTask(Task_id_007)+1);
 		local tSex = gf_GetPlayerSexName();
-		Msg2Player(tSex..format("§· cøu ®­îc %d/8 néi øng.",GetTask(Task_id_007)));
-		Talk(1,"",tSex..format("§· cøu ®­îc %d/8 néi øng.",GetTask(Task_id_007)));
+		Msg2Player(tSex..format("Rescued %d/8 insiders.",GetTask(Task_id_007)));
+		Talk(1,"",tSex..format("Rescued %d/8 insiders.",GetTask(Task_id_007)));
 		if getn(tbNpcIdex) >= 8 then
 			for i = 1,getn(tbNpcIdex) do
 				tremove(tbNpcIdex,i);

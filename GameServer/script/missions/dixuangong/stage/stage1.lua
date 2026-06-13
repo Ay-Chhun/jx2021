@@ -62,22 +62,22 @@ tStage1 = {
 	},
 	resetPos = {1644, 3257},
 	npcMod = {
-		{"Minh Gi¸o Th¸m Tù §Þa", "Minh Gi¸o Th¸m Tö"},
+		{"Minh Gi¸o Th¸m Tù §Þa", "Ming Sect Scout"},
 		{"Thiªn ¢m Ph¸p S­ §Þa", "Thiªn ¢m  ThÇy Mo"},
 		{"Thiªn ¢m Béi Gi¸o1", "Thiªn ¢m Béi Gi¸o", 10},
-		{"yinbaoxiang", "R­¬ng B¹c", 180},
-		{"tongbaoxiang", "R­¬ng §ång", 180},
+		{"yinbaoxiang", "Silver Chest", 180},
+		{"tongbaoxiang", "Copper Chest", 180},
 
 		{"Thiªn Qu©n §Þa", "Thiªn Qu©n", },
 		{"V¹n M· §Þa", "V¹n M·", },
 
-		{"Nam Cung V·n V·n §Þa", "Nam Cung V·n V·n"},
-		{"Nam Cung Tö Quyªn §Þa", "Nam Cung Tö Quyªn"},
+		{"Nam Cung V·n V·n §Þa", "Nan Gong Wan Wan"},
+		{"Nam Cung Tö Quyªn §Þa", "Nan Gong Zi Juan"},
 
 		{"L©m Xung §Þa","B¸o Tö §Çu L©m Xung"},
 
-		{"LiÔu Hiªn §Þa", "Nga My LiÔu Hiªn"},
-		{"L­u Nh­ Phong §Þa", "Vâ §ang L­u Nh­ Phong"},
+		{"LiÔu Hiªn §Þa", "Emei Liu Xian"},
+		{"L­u Nh­ Phong §Þa", "Wudang Liu Ru Feng"},
 		--{"Ïä×ÓÇ®", "ÌìÒõ¾«Á¦Ïä", 180},
 	},
 }
@@ -227,7 +227,7 @@ end
 -------µÈ´ý¿ªÆô½×¶Î------------------------------------------------------
 function phase1_1:onInit()
 	g_theMS.msTimer:setInterval(self.stepInterval);
-	g_theMS.msCamp[1]:turnPlayer(StartTimeGuage,"Thanh tr­ît thêi gian", 460, 0);
+	g_theMS.msCamp[1]:turnPlayer(StartTimeGuage,"Time slider", 460, 0);
 --	stageAction("p1");
 --	g_theMS:Msg2MSAll("ÄãµÄ¶ÓÎéÒÑ¾­½øÈëµØÐþ¹¬Ç°µî£¬¶Ó³¤Óë±»×¥µÄÌìÒõ½ÌÍ½¶Ô»°¿É¿ªÆô¹Ø¿¨¡£");
 end
@@ -262,7 +262,7 @@ function phase1_1:onTalk(npcIdx)
 	local tSel = {
 		"Nhanh nhanh gäi chñ cña c¸c ng­¬i ra ®©y/#onStageAction('p1')",
 		"§Þa HuyÒn Cung nµy cã huyÒn c¬ g× ®©y/info1_1",
-		"KÕt thóc ®èi tho¹i/nothing"
+		"End dialogue/nothing"
 	}
 	Say("Minh Gi¸o Th¸m Tö: Xin ®õng h¹i ta, ta sÏ chiÕu theo lêi cña ng­êi nãi ®Ó lµm theo.", getn(tSel), tSel);
 end
@@ -311,7 +311,7 @@ function phase1_2:onNpcDeath(npcIdx)
 		g_theMS:SetMissionV(MV_BOSS_COUNT, nBossCount);
 		getStage():giveAward(npcIdx, nBossCount);
 		stageAction("p2");
-	elseif npcName == "Thiªn Qu©n" or npcName == "V¹n M·" or npcName == "Nam Cung V·n V·n" or npcName == "Nam Cung Tö Quyªn" then
+	elseif npcName == "Thiªn Qu©n" or npcName == "V¹n M·" or npcName == "Nan Gong Wan Wan" or npcName == "Nan Gong Zi Juan" then
 		SetMissionV(MV_L1_SPE_FLAG, GetMissionV(MV_L1_SPE_FLAG) + 1);
 	elseif npcName == "B¸o Tö §Çu L©m Xung" then
 		SetMissionV(MV_L1_SPE_FLAG, GetMissionV(MV_L1_SPE_FLAG) - 2);
@@ -350,22 +350,22 @@ function phase1_3:onTimer(nStep)
 		SetCampToNpc(npc2, CampPlayer);
 		SetNpcLifeTime(npc2, 60);
 	elseif nStep == 2 then
-		local npc2 = findNpc("Vâ §ang L­u Nh­ Phong");
+		local npc2 = findNpc("Wudang Liu Ru Feng");
 		NpcCommand(npc2, NPCCOMMAND.do_beatdown, 8, 3 * 18);
-		NpcChat(npc2, "Muéi Muéi h·y nhanh trèn ®i, nhanh lªn !");
+		NpcChat(npc2, "Little sister, flee quickly, hurry!");
 		AddUnitStates(npc2, 8, -1000);
-		local npc = findNpc("Nga My LiÔu Hiªn");
+		local npc = findNpc("Emei Liu Xian");
 		SetNpcActivator(npc);
 		NpcChat(npc, "Muéi kh«ng ®i, c¸c tØ muéi cßn ë bªn trong ®ã! Høt høt.......");
 		NpcCommand(npc, NPCCOMMAND.do_beatdown, 8, 3 * 18);
 	elseif nStep == 5 then
-		local npc2 = findNpc("Vâ §ang L­u Nh­ Phong");
+		local npc2 = findNpc("Wudang Liu Ru Feng");
 		if random(100) < 5 then
 			NpcChat(npc2, "¤i ~~~ta l¹i …(v× sao l¹i nãi ?!)");
 		end
 		Death(1, npc2);
 	elseif nStep == 6 then
-		local npc = findNpc("Nga My LiÔu Hiªn");
+		local npc = findNpc("Emei Liu Xian");
 		ChangeNpc2Talk(npc);
 		NpcChat(npc, "C¸c vÞ ®¹i hiÖp, c¸c cao thñ cña c¸c ®¹i m«n ph¸i ®ang bÞ giam cÇm trong §Þa HuyÒn Cung, vÉn ®ang chê giang hå ®¹i hiÖp cøu gióp!");
 		SetNpcScript(npc, g_theMS.fileName);
@@ -377,8 +377,8 @@ function phase1_3:onTalk()
 	local npc = GetTargetNpc();
 	local tSel = {
 		"Ta ®îi ng­¬i ®Õn cøu ng­êi/p13_gogogo",
-		"Th¨m dß t×nh h×nh/p13_next_info",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"Scout the situation/p13_next_info",
+		"End dialogue/nothing",
 	}
 	if not isCaption() then
 		tremove(tSel, 1);

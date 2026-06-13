@@ -11,7 +11,7 @@ function OnDeath(nNpcIdx)
 	nCurStage = BR_GetCurStage();
 	BR_UnInitStageEven(nCurDiff,nCurStage);
 	BR_ChangeMSState(MS_STATE_END_WAITING);
-	WantTo1v1(PlayerIndex,"B¹n bÞ ®¸nh ng·, b¹n cã muèn tiÕp tôc kh«ng? CÇn "..NEED_NUM_JIEGUAN.."c¸i"..TB_ITEM[1][1]..". §Õm ng­îc %d gi©y...",30,g_szThisFile);
+	WantTo1v1(PlayerIndex,"B¹n bÞ ®¸nh ng·, b¹n cã muèn tiÕp tôc kh«ng? CÇn "..NEED_NUM_JIEGUAN.."c¸i"..TB_ITEM[1][1]..". Counting down %d seconds...",30,g_szThisFile);
 end;
 
 function OnWant(nPIdx, nType)
@@ -25,7 +25,7 @@ function OnWant(nPIdx, nType)
 		return 0;
 	end;
 	if GetItemCount(TB_ITEM[1][2],TB_ITEM[1][3],TB_ITEM[1][4]) < NEED_NUM_JIEGUAN then
-		Say("CÇn cã "..NEED_NUM_JIEGUAN.."c¸i"..TB_ITEM[1][1].." míi cã thÓ tiÕp tôc, v­ît ¶i thÊt b¹i! §ang ®­a b¹n trë vÒ, xin h·y ®îi......",0);
+		Say("Need to have"..NEED_NUM_JIEGUAN.."c¸i"..TB_ITEM[1][1].." míi cã thÓ tiÕp tôc, v­ît ¶i thÊt b¹i! §ang ®­a b¹n trë vÒ, xin h·y ®îi......",0);
 		process_failure();
 		return 0;
 	end;
@@ -54,5 +54,5 @@ function process_failure()
 	BR_UnInitStageEven(nCurDiff,nCurStage);
 	BR_ChangeMSState(MS_STATE_END_WAITING);
 	BR_CreateDisciple();
-	WriteLog(LOG_HEADER.."V­ît ¶i thÊt b¹i. §é khã: "..nCurDiff..", ¶i  "..nCurStage..". Tªn: "..GetName()..", cÊp:"..GetLevel()..","..GetMissionV(MV_ROUTE)..", nguyªn nh©n: tö vong nªn kh«ng thÓ tiÕp tôc");
+	WriteLog(LOG_HEADER.."V­ît ¶i thÊt b¹i. §é khã: "..nCurDiff..", trial"..nCurStage..". Name:"..GetName()..", cÊp:"..GetLevel()..","..GetMissionV(MV_ROUTE)..", nguyªn nh©n: tö vong nªn kh«ng thÓ tiÕp tôc");
 end;

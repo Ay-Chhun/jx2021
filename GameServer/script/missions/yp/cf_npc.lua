@@ -15,27 +15,27 @@ function main()
 			local nCamp = GetTask(TASK_FIELD_PVP_CAMP);
 			for i = 1,3 do
 				if g_nDebugVersion==1 or nCamp == 0 or i == nCamp then
-					tinsert(strtab,"§Õn "..tMainMapID[i][2].."/#cf_talk_1("..i..")")
+					tinsert(strtab,"Arrive"..tMainMapID[i][2].."/#cf_talk_1("..i..")")
 					break;
 				end
 			end
-			tinsert(strtab,"Trë vÒ Vâ L©m Minh/cf_leave");
-			tinsert(strtab,"KÕt thóc ®èi tho¹i/nothing");
+			tinsert(strtab,"Return to the Wulin Alliance/cf_leave");
+			tinsert(strtab,"End dialogue/nothing");
 		else
 			strtab = {
 				"§i ®Õn Th©t L¹c Nhai MËt Cèc/cf_goto_slymg",
-				"§Õn Ch­íng KhÝ S¬n Cèc/cf_goto_zqsg",
-				"Trë vÒ Vâ L©m Minh/cf_leave",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"Go to the Zhangqi Mountain Valley/cf_goto_zqsg",
+				"Return to the Wulin Alliance/cf_leave",
+				"End dialogue/nothing",
 			};
 		end
 		Say("<color=green>Tª Lîi Ca<color>: §¹i hiÖp muèn ®i ®©u? MiÔn phÝ nhÐ!",
 			getn(strtab),
 			strtab)
-	elseif strNpcName == "Xa Phu T©y Vùc" then
+	elseif strNpcName == "Western Region Carter" then
 		strtab = {
-			"§Õn ThÊt L¹c Nhai/cf_talk_4",
-			"KÕt thóc ®èi tho¹i/nothing",
+			"Go to Qiluo Street/cf_talk_4",
+			"End dialogue/nothing",
 		};
 		Say("<color=green>Xa Phu T©y Vùc<color>: Ta cã thÓ nhanh chãng ®­a ng­¬i ®Õn ThÊt L¹c Nhai. MiÔn phÝ nhÐ!",
 			getn(strtab),

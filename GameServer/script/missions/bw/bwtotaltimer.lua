@@ -7,8 +7,8 @@ function OnTimer()
 	    return
     end;
 
-    Msg2MSAll(MISSIONID, "Thêi gian ®¬n ®Êu l«i ®µi ®· ®Õn,"..GetMissionS(1).." cïng víi  "..GetMissionS(2).." hai phe ®Êu hßa!");
-    str = GetMissionS(CITYID).." - "..MapTab[GetMissionV(MS_ROOMINDEX)][3].."Thêi gian ®¬n ®Êu l«i ®µi ®· ®Õn,"..GetMissionS(1).." cïng víi  "..GetMissionS(2).." hai phe ®Êu hßa!";
+    Msg2MSAll(MISSIONID, "Thêi gian ®¬n ®Êu l«i ®µi ®· ®Õn,"..GetMissionS(1).." cïng víi  "..GetMissionS(2).." the two sides draw!");
+    str = GetMissionS(CITYID).." - "..MapTab[GetMissionV(MS_ROOMINDEX)][3].."Thêi gian ®¬n ®Êu l«i ®µi ®· ®Õn,"..GetMissionS(1).." cïng víi  "..GetMissionS(2).." the two sides draw!";
     --51»î¶¯·¢½±
 		if Is51PartyTime() == 1 and Is2PlayerLevelOK() == 1 then
 			Award2Player();

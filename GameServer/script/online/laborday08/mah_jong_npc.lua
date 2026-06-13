@@ -14,21 +14,21 @@ Include("\\script\\lib\\lingshi_head.lua");
 		}
 
 tMJaward = { --Í²¡¢Ìõ¡¢Íò¡¢´óËÄÏ²¡¢ÅÆÉñ
-	{{5,1},{"NhÊt ThiÓm Yªu Hoµng",2,1,3330,5},{50,51},{"Tói bÝ kiÕp s­ m«n",0,0,0,"R­¬ng Thiªn §Þa HuyÒn Hoµng Trang",2,0,1057}},
+	{{5,1},{"NhÊt ThiÓm Yªu Hoµng",2,1,3330,5},{50,51},{"Sect Secret Manual Bag",0,0,0,"R­¬ng Thiªn §Þa HuyÒn Hoµng Trang",2,0,1057}},
 	{{5,2},{"NhÊt ThiÓm Yªu Hoµng",2,1,3330,10},{50,55,58},{"Ngò Hµnh MËt tÞch",0,107,155,"R­¬ng Thiªn §Þa HuyÒn Hoµng Trang",2,0,1057,"R­¬ng Thiªn §Þa HuyÒn Hoµng Gi¸p",2,0,1056}},
-	{{6,1},{"Tam DiÖu Long Hi",2,1,3331,5},{50,70,90,110},{"L¨ng Ba Vi Bé",0	,112,78,"R­¬ng Thiªn §Þa HuyÒn Hoµng Trang",2,0,1057,"R­¬ng Thiªn §Þa HuyÒn Hoµng Gi¸p",2,0,1056,"R­¬ng Thiªn §Þa HuyÒn Hoµng Qu¸n",2,0,1055}},
+	{{6,1},{"Tam DiÖu Long Hi",2,1,3331,5},{50,70,90,110},{"Lingbo Microstep",0	,112,78,"R­¬ng Thiªn §Þa HuyÒn Hoµng Trang",2,0,1057,"R­¬ng Thiªn §Þa HuyÒn Hoµng Gi¸p",2,0,1056,"R­¬ng Thiªn §Þa HuyÒn Hoµng Qu¸n",2,0,1055}},
 	{{7,1},{"Tam DiÖu Long Hi",2,1,3331,15},{150,200,250,300},{"R­¬ng Thiªn §Þa HuyÒn Hoµng vò khÝ",2,0,1058,"R­¬ng Thiªn §Þa HuyÒn Hoµng Trang",2,0,1057,"R­¬ng Thiªn §Þa HuyÒn Hoµng Gi¸p",2,0,1056,"R­¬ng Thiªn §Þa HuyÒn Hoµng Qu¸n",2,0,1055}},
 	{{7,2},{" Thanh §ång ®Ønh cÊp 1",2,1,3213,1}}
 }
 
 	tJueYaoBao = {
-	{"Tói bÝ kiÕp ThiÕu L©m",2,0,607},
-	{"Tói bÝ kiÕp Vâ §ang",2,0,611},
-	{"Tói bÝ kiÕp Nga My",2,0,609},
-	{"Tói bÝ kiÕp C¸i Bang",2,0,610},
+	{"Shaolin secret manual bag",2,0,607},
+	{"Wudang secret manual bag",2,0,611},
+	{"Emei secret manual bag",2,0,609},
+	{"Beggars' Sect secret manual bag",2,0,610},
 	{"Tói bÝ kiÕp §­êng M«n",2,0,608},
 	{"Tói bÝ kiÕp D­¬ng M«n",2,0,612},
-	{"Tói bÝ kiÕp Ngò §éc",2,0,613}
+	{"Five Poisons secret manual bag",2,0,613}
 	}
 	
 tTiandi = {
@@ -66,10 +66,10 @@ function main(npc_index)
 	local map_ID = GetWorldPos()				--¼ÇÂ¼NPCÃû³Æ
 	if get_laborday08_award_state() == 1 then
 		local npc_dia = {
-			"Hay l¾m! Xem ta ra tay ®©y!/mah_jong_suc_list",
+			"Excellent! Watch me get to work!/mah_jong_suc_list",
 			"§¸nh theo quy t¾c nµo vËy? Lµm sao tÝnh th¾ng?/mah_jong_suc_inf",
 			"Kh«ng biÕt M¹t ch­îc lµ c¸i g×?/what_is_mah_jong",
-			"Cuéc thi §ç thÇn tranh b¸ lµ g×?/mah_jong_task_inf",
+			"What is the Gambling God Supremacy contest?/mah_jong_task_inf",
 			"Ta muèn nhËn H­íng dÉn ho¹t ®éng 1-5/#get_something(1)",
 			"Ta muèn nhËn 1 'r­¬ng M¹t ch­îc'/#get_something(2)",
 			"Ta cßn ph¶i hµnh hiÖp cøu ng­êi, kh«ng r¶nh ®Ó ®¸nh M¹t ch­îc!/end_dialog",
@@ -81,7 +81,7 @@ function main(npc_index)
 	elseif get_laborday08_award_state() == 0 then
 		Talk(1,"",Npc_name[floor(map_ID/100)].."Cuéc thi §ç thÇn tranh b¸ sÏ diÔn ra tõ 28-4 ®Õn 5-5, 12-5 sÏ kÕt thóc nhËn phÇn th­ëng.");		 
 	else
-		Talk(1,"",Npc_name[floor(map_ID/100)].."Chóc mõng ph¸t tµi! Cuéc thi §ç thÇn tranh b¸ ®· kÕt thóc.");
+		Talk(1,"",Npc_name[floor(map_ID/100)].."Congratulations and good fortune! The Gambling God Supremacy contest has ended.");
 	end
 end
 --*********************************ºúÅÆ¹æÔòËµÃ÷**************************
@@ -95,7 +95,7 @@ function mah_jong_suc_inf()
 	"Ta muèn biÕt quy t¾c vµ phÇn th­ëng cña Thanh NhÊt S¾c V¹n/#mah_jong_rule_dia(4)",
 	"Ta muèn biÕt quy t¾c vµ phÇn th­ëng cña §¹i Tø Hû/#mah_jong_rule_dia(5)",
 	"Ta muèn biÕt quy t¾c vµ phÇn th­ëng cña Bµi ThÇn/#mah_jong_rule_dia(6)",
-	"Tho¸t/end_dialog"
+	"Exit/end_dialog"
 	)
 end
 function mah_jong_rule_dia(suc_way)
@@ -173,7 +173,7 @@ function mah_jong_suc_dtm(suc_seq)
 	Say(mah_jong_suc_dia[suc_seq],
 	2,
 	"Ta muèn ®æi phÇn th­ëng/#mah_jong_num_chk("..(suc_seq-1)..")",		--½øÈëÊýÁ¿¼ì²â
-	"§Ó ta chuÈn bÞ thªm/end_dialog"
+	"Let me prepare more/end_dialog"
 	)
 end
 --********************************Âé½«¼ì²â*****************************
@@ -302,20 +302,20 @@ function mah_jong_num_chk(color_diff)
 			ModifyExp(nExp);
 			Msg2Player("Chóc mõng b¹n nhËn ®­îc "..nExp.." kinh nghiÖm.");
 			for i=1,3 do	
-				laborday08_baoshi_prob("B×nh Hå");
+				laborday08_baoshi_prob("Ordinary Hand");
 			end
 		else
 			for i=1,15 do
-				laborday08_baoshi_prob("B×nh Hå");
+				laborday08_baoshi_prob("Ordinary Hand");
 			end
 		end
 		Talk(1,"",npc_name.."B¹n ®· ®æi hå bµi <color=red>"..GetTask(tMjTask[color_diff+1]).."<color> lÇn, b¹n cßn ®­îc ®æi <color=red>"..(tTotalNum[color_diff+1]-GetTask(tMjTask[color_diff+1])).."<color> lÇn.");		
 	else
 		lspf_AddLingShiInBottle(tMJaward[color_diff][1][1],tMJaward[color_diff][1][2]);
-		Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tMJaward[color_diff][1][1].."Linh th¹ch"..tMJaward[color_diff][1][2].." viªn, nã ®· ®­îc cÊt vµo Tô Linh ®Ønh.");
+		Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tMJaward[color_diff][1][1].."Spirit Stone"..tMJaward[color_diff][1][2].." viªn, nã ®· ®­îc cÊt vµo Tô Linh ®Ønh.");
 		AddItem(tMJaward[color_diff][2][2],tMJaward[color_diff][2][3],tMJaward[color_diff][2][4],tMJaward[color_diff][2][5]);
 		Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tMJaward[color_diff][2][1]..tMJaward[color_diff][2][5].."c¸i");
-		local tHuName = {"Thanh NhÊt S¾c (§ång)","Thanh NhÊt S¾c (§iÒu)","Thanh NhÊt S¾c (V¹n)","§¹i Tø Hû","ThÇn bµi"}
+		local tHuName = {"Pure One Color (Tong)","Pure One Color (Tiao)","Thanh NhÊt S¾c (V¹n)","Great Four Joys","ThÇn bµi"}
 		if color_diff ~= 5 then
 			SetTask(tMjTask[color_diff+1],GetTask(tMjTask[color_diff+1])+1);
 			Talk(1,"",npc_name.."B¹n ®· ®æi hå bµi <color=red>"..GetTask(tMjTask[color_diff+1]).."<color> lÇn, b¹n cßn ®­îc ®æi <color=red>"..(tTotalNum[color_diff+1]-GetTask(tMjTask[color_diff+1])).."<color> lÇn.");
@@ -327,29 +327,29 @@ function mah_jong_num_chk(color_diff)
 						if nFaction ~= 0 then
 							AddItem(tJueYaoBao[nFaction][2],tJueYaoBao[nFaction][3],tJueYaoBao[nFaction][4],1);
 							Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tJueYaoBao[nFaction][1]);
-							Msg2Global("Ng­êi ch¬i"..GetName().."Trong cuéc thi ThÇn bµi"..tHuName[color_diff].."NhËn ®­îc"..tJueYaoBao[nFaction][1]);
-							WriteLog("Ho¹t ®éng quèc tÕ lao ®éng 08: Ng­êi ch¬i"..GetName().."Trong cuéc thi ThÇn bµi"..tHuName[color_diff].."NhËn ®­îc"..tJueYaoBao[nFaction][1]);
+							Msg2Global("Player"..GetName().."Trong cuéc thi ThÇn bµi"..tHuName[color_diff].."Received"..tJueYaoBao[nFaction][1]);
+							WriteLog("Ho¹t ®éng quèc tÕ lao ®éng 08: Ng­êi ch¬i"..GetName().."Trong cuéc thi ThÇn bµi"..tHuName[color_diff].."Received"..tJueYaoBao[nFaction][1]);
 						else
 							local nIdx = random(1,7);
 							AddItem(tJueYaoBao[nIdx][2],tJueYaoBao[nIdx][3],tJueYaoBao[nIdx][4],1);
 							Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tJueYaoBao[nIdx][1]);
-							Msg2Global("Ng­êi ch¬i"..GetName().."Trong cuéc thi ThÇn bµi"..tHuName[color_diff].."NhËn ®­îc"..tJueYaoBao[nIdx][1]);
-							WriteLog("Ho¹t ®éng quèc tÕ lao ®éng 08: Ng­êi ch¬i"..GetName().."Trong cuéc thi ThÇn bµi"..tHuName[color_diff].."NhËn ®­îc"..tJueYaoBao[nIdx][1]);
+							Msg2Global("Player"..GetName().."Trong cuéc thi ThÇn bµi"..tHuName[color_diff].."Received"..tJueYaoBao[nIdx][1]);
+							WriteLog("Ho¹t ®éng quèc tÕ lao ®éng 08: Ng­êi ch¬i"..GetName().."Trong cuéc thi ThÇn bµi"..tHuName[color_diff].."Received"..tJueYaoBao[nIdx][1]);
 						end
 					else
 						local nId = 4*(i-1)+1; --¶¨Î»id
 						AddItem(tMJaward[color_diff][4][nId+1],tMJaward[color_diff][4][nId+2],tMJaward[color_diff][4][nId+3],1);
 						Msg2Player("Chóc mõng b¹n nhËn ®­îc "..tMJaward[color_diff][4][nId]);
-						Msg2Global("Ng­êi ch¬i"..GetName().."Trong cuéc thi ThÇn bµi"..tHuName[color_diff].."NhËn ®­îc"..tMJaward[color_diff][4][nId]);
-						WriteLog("Ho¹t ®éng quèc tÕ lao ®éng 08: Ng­êi ch¬i"..GetName().."Trong cuéc thi ThÇn bµi"..tHuName[color_diff].."NhËn ®­îc"..tMJaward[color_diff][4][nId]);
+						Msg2Global("Player"..GetName().."Trong cuéc thi ThÇn bµi"..tHuName[color_diff].."Received"..tMJaward[color_diff][4][nId]);
+						WriteLog("Ho¹t ®éng quèc tÕ lao ®éng 08: Ng­êi ch¬i"..GetName().."Trong cuéc thi ThÇn bµi"..tHuName[color_diff].."Received"..tMJaward[color_diff][4][nId]);
 					end	
 					break
 				end
 			end
 		else
-			Msg2Global("Ng­êi ch¬i"..GetName().."Trong cuéc thi ThÇn bµi"..tHuName[color_diff].."NhËn ®­îc"..tMJaward[color_diff][1][1].."Linh th¹ch"..tMJaward[color_diff][1][2].." ");
-			Msg2Global("Ng­êi ch¬i"..GetName().."Trong cuéc thi ThÇn bµi"..tHuName[color_diff].."NhËn ®­îc"..tMJaward[color_diff][2][1]);
-			WriteLog("Ho¹t ®éng quèc tÕ lao ®éng 08: Ng­êi ch¬i"..GetName().."Trong cuéc thi ThÇn bµi"..tHuName[color_diff].."NhËn ®­îc"..tMJaward[color_diff][1][1].."Linh th¹ch"..tMJaward[color_diff][1][2].." viªn vµ "..tMJaward[color_diff][2][1]);
+			Msg2Global("Player"..GetName().."Trong cuéc thi ThÇn bµi"..tHuName[color_diff].."Received"..tMJaward[color_diff][1][1].."Spirit Stone"..tMJaward[color_diff][1][2].." ");
+			Msg2Global("Player"..GetName().."Trong cuéc thi ThÇn bµi"..tHuName[color_diff].."Received"..tMJaward[color_diff][2][1]);
+			WriteLog("Ho¹t ®éng quèc tÕ lao ®éng 08: Ng­êi ch¬i"..GetName().."Trong cuéc thi ThÇn bµi"..tHuName[color_diff].."Received"..tMJaward[color_diff][1][1].."Spirit Stone"..tMJaward[color_diff][1][2].." stone(s) and"..tMJaward[color_diff][2][1]);
 		end
 	end				
 end

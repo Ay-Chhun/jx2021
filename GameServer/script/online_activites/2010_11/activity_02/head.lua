@@ -29,7 +29,7 @@ SF_weapon_bpy = {
 				[8] = {675, "L­u Yªn c«n",{0,5,6009, 1,1,-1,-1,-1,-1,-1,-1}},
 				[9] = {675, "HuyÒn Yªn kiÕm",{0,2,6010, 1,1,-1,-1,-1,-1,-1,-1}},
 				[10] = {675, "Vò Yªn bót",{0,9,6011, 1,1,-1,-1,-1,-1,-1,-1}},
-				[11] = {675, "Hµ Tiªm Th­¬ng",{0,6,6012, 1,1,-1,-1,-1,-1,-1,-1}},
+				[11] = {675, "He Tian Spear",{0,6,6012, 1,1,-1,-1,-1,-1,-1,-1}},
 				[12] = {675, "Hµnh Yªn Cung",{0,4,6013, 1,1,-1,-1,-1,-1,-1,-1}},
 				[13] = {625, "Träc Yªn nhÉn",{0,7,6014, 1,1,-1,-1,-1,-1,-1,-1}},
 				[14] = {600, "Yªu Yªn tr¶o",{0,11,6015, 1,1,-1,-1,-1,-1,-1,-1}},
@@ -39,24 +39,24 @@ SF_weapon_bpy = {
 SF_items = 
 {
 	{2, 1, 30250, "Hoa H­íng D­¬ng"},
-	{2, 1, 30251, "GiÊy gãi hoa"},
+	{2, 1, 30251, "Flower Wrapping Paper"},
 	{2, 1, 30252, "§ãa Hoa H­íng D­¬ng"},
 	{2, 1, 30253, "Hoa hång ®á"},
-	{2, 1, 30254, "Hoa hång phÊn"},
+	{2, 1, 30254, "Pink rose"},
 	{2, 1, 30255, "Hoa hång vµng"},
 	{2, 1, 30256, "Hoa Hång Tr¾ng"},
-	{2, 1, 30257, "L¨ng Ba Tµn QuyÓn"},
+	{2, 1, 30257, "Lingbo Tan Scroll"},
 	{2, 1, 30258, "Th­ëng ThiÖn LÖnh"},
-	{2, 1, 30259, "Ph¹t ¸c LÖnh"},
-	{2, 1, 30230, " ®ång "},
-	{2, 1, 199, "§¹i ng©n phiÕu"}
+	{2, 1, 30259, "Punish the Wicked Token"},
+	{2, 1, 30230, " copper"},
+	{2, 1, 199, "Great Silver Note"}
 };
 
 SF_compositeTable1 = 
 {
 	{
 		{"Hoa H­íng D­¬ng", 2, 1, 30250, 5},
-		{"GiÊy gãi hoa", 2, 1, 30251, 1}
+		{"Flower Wrapping Paper", 2, 1, 30251, 1}
 	},
 	{
 		{"§ãa Hoa H­íng D­¬ng", 100, {"§ãa Hoa H­íng D­¬ng", {2, 1, 30252, 1}}}
@@ -67,7 +67,7 @@ SF_compositeTable2 =
 {
 	{
 		{"Hoa H­íng D­¬ng", 2, 1, 30250, 5},
-		{" ®ång ", 2, 1, 30230, 2}
+		{" copper", 2, 1, 30230, 2}
 	},
 	{
 		{"§ãa Hoa H­íng D­¬ng", 100, {"§ãa Hoa H­íng D­¬ng", {2, 1, 30252, 1}}}
@@ -77,10 +77,10 @@ SF_compositeTable2 =
 SF_compositeTable3 = 
 {
 	{
-		{"§¹i ng©n phiÕu", 2, 1, 199, 1},
+		{"Great Silver Note", 2, 1, 199, 1},
 	},
 	{
-		{" ®ång ", 100, {" ®ång ", {2, 1, 30230, 100}}}
+		{" copper", 100, {" copper", {2, 1, 30230, 100}}}
 	}
 };
 
@@ -91,15 +91,15 @@ SF_itemReward =
 	{1, 100, "Thiªn th¹ch", {2, 2, 8, 1}},
 	{1, 60, "M¶nh Thiªn th¹ch", {2, 2, 7, 1}},
  	{1, 5, "ThÕ Th©n phï", {2, 0, 556, 1}, 7 * 24 * 3600},
- 	{1, 20, "B¸t Nh· Chøng Th­", {2, 1, 30114, 1}, 7 * 24 * 3600},
- 	{1, 20, "C©y B¸t Nh· nhá", {2, 0, 504, 1}, 7 * 24 * 3600},
- 	{1, 10, "C©y B¸t Nh·", {2, 0, 398, 1}, 7 * 24 * 3600},
+ 	{1, 20, "Prajna Certificate", {2, 1, 30114, 1}, 7 * 24 * 3600},
+ 	{1, 20, "Small Prajna Tree", {2, 0, 504, 1}, 7 * 24 * 3600},
+ 	{1, 10, "Prajna Tree", {2, 0, 398, 1}, 7 * 24 * 3600},
   	{4, 250, 10, 1},
   	{5, 140, 10, 1},
 	{1, 5, "Thiªn Hµ MËt tÞch", {0, 107, 64, 1}},
 	{1, 5, "Tö Hµ MËt tÞch", {0, 107, 65, 1}},
-	{1, 5, "Chiªm Y Phæ", {0, 107, 66, 1}},
-	{1, 50, "Tu Ch©n YÕu QuyÕt", {2, 0, 554, 1}, 7 * 24 * 3600},
+	{1, 5, "Zhanyi Manual", {0, 107, 66, 1}},
+	{1, 50, "Xiu Zhen Yao Jue", {2, 0, 554, 1}, 7 * 24 * 3600},
 	{1, 5, "§¹i Nh©n s©m", {2, 0, 553, 1}, 7 * 24 * 3600},
 	{1, 10, "TiÓu Nh©n s©m qu¶", {2, 0, 552, 1}, 7 * 24 * 3600},
 	{1, 10, "§é NguyÖt ThÇn Sa", {2, 1, 3332, 1}},
@@ -114,15 +114,15 @@ SF_extraItemReward = {
     {15, 1000, 60, 1},
     {12, 1000, 60, 1},
     {1, 600, "TiÓu Nh©n s©m qu¶", {2, 0, 552, 1}, 7 * 24 * 3600},
-    {1, 300, "C¬ quan nh©n", {2, 1, 1011, 1}, 7 * 24 * 3600},
-    {1, 300, "Sæ tay sèng", {2, 19, 1, 1}, 7 * 24 * 3600},
+    {1, 300, "Mechanism Man", {2, 1, 1011, 1}, 7 * 24 * 3600},
+    {1, 300, "Living Notebook", {2, 19, 1, 1}, 7 * 24 * 3600},
     {1, 500, "V« NgÊn Thñy", {2, 1, 503, 1}, 7 * 24 * 3600},
-    {1, 500, "TÈy Tñy ®¬n", {2, 0, 136, 1}, 7 * 24 * 3600},
-    {1, 100, "TÈy Tñy linh ®¬n", {2, 0, 137, 1}, 7 * 24 * 3600},
-    {1, 1240, "§Êu hån", {2, 1, 1157, 1}, 7 * 24 * 3600},
+    {1, 500, "Marrow-Cleansing Pill", {2, 0, 136, 1}, 7 * 24 * 3600},
+    {1, 100, "Marrow-Cleansing Spirit Pill", {2, 0, 137, 1}, 7 * 24 * 3600},
+    {1, 1240, "Soul Duel", {2, 1, 1157, 1}, 7 * 24 * 3600},
     {1, 1000, "Th¸i H­ §a MËt Qu¶ ", {2, 1, 387, 1}, 7 * 24 * 3600},
     {1, 1009, "Tµng KiÕm anh hïng thiÕp", {2, 0, 31, 1}, 7 * 24 * 3600},
-    {1, 1000, "R­¬ng BÝ KÝp", {2, 1, 30093, 1}, 7 * 24 * 3600},
+    {1, 1000, "Secret Manual Chest", {2, 1, 30093, 1}, 7 * 24 * 3600},
     {1, 1, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},
     {1, 50, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
     {1, 400, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 7 * 24 * 3600},
@@ -132,7 +132,7 @@ SF_extraItemReward = {
 SF_maxCountItemReward = 
 {
 	{3, 150, 5000000, 1},
-	{1, 200, "Ch«m Ch«m", {2, 1, 30165, 50}},
+	{1, 200, "Rambutan", {2, 1, 30165, 50}},
 	{1, 100, "ChiÕn ThÇn hoµn", {2, 1, 1005, 1}, 7 * 24 * 3600},
 	{31, 10, "SF_get_bpy_weapon_201011()"},
 	{1, 10, "Phi Yªn Th¹ch", {2, 1, 30130, 1}},
@@ -145,7 +145,7 @@ SF_maxCountItemReward =
 	{1, 1, "§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", {2, 1, 1067, 1}, 7 * 24 * 3600},
 	{1, 10, "Thiªn Th¹ch Tinh Th¹ch", {2, 1, 1009, 1}},
 	{1, 5, "Thiªn Th¹ch Linh Th¹ch", {2, 1, 1068, 1}, 7 * 24 * 3600},
-	{1, 1, "L¨ng Ba Vi Bé", {0, 112, 78, 1}},
+	{1, 1, "Lingbo Microstep", {0, 112, 78, 1}},
 	{32, 282, 7000, 1},
 }
 
@@ -158,7 +158,7 @@ SF_options =
 SF_results = 
 {
 	"Nguyªn liÖu mang theo kh«ng ®ñ",
-	"Rêi khái",
+	"Leave",
 	"C¸c h¹ ®· nhËn th­ëng",
 	"§· kÝch ho¹t nhËn th­ëng kÌm vËt phÈm",
 	"§· kÝch ho¹t nhËn th­ëng kh«ng kÌm vËt phÈm, t¨ng thªm 25% kinh nghiÖm",
@@ -259,7 +259,7 @@ function SF_getThresholdReward()
 	tinsert(tSay, "20000000 ®iÓm kinh nghiÖm vµ vËt phÈm/#SF_confirm_getThresholdReward(1)")
 	tinsert(tSay, "20 §iÓm N©ng CÊp B¹n §ång Hµnh vµ vËt phÈm/#SF_confirm_getThresholdReward(2)")
 	tinsert(tSay, "1 §iÓm Linh Lùc B¹n §ång Hµnh vµ vËt phÈm/#SF_confirm_getThresholdReward(3)")
-	tinsert(tSay, "Tho¸t/do_nothing")
+	tinsert(tSay, "Exit/do_nothing")
 	
 	Say(szHeader, getn(tSay), tSay)
 end
@@ -429,7 +429,7 @@ function give_sunflower()
 	if DelItem(2, 1, 30252, 10) == 1 then
 		ModifyExp(2000000)
 		Msg2Player("NhËn ®­îc 2000000 ®iÓm kinh nghiÖm")
-		gf_WriteLogEx("Hoat dong thang 11 n¨m 2010", "TÆng §ãa Hoa H­íng D­¬ng nhËn 2000000 exp")
+		gf_WriteLogEx("November 2010 Activity", "TÆng §ãa Hoa H­íng D­¬ng nhËn 2000000 exp")
 		SetTask(EVENT201011_GIVE_FLOWER, GetTask(EVENT201011_GIVE_FLOWER) + 1)
 	end
 end

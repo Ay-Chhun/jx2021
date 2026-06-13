@@ -22,11 +22,11 @@ end
 t_isolate_user_batch_watch_list = {--{szEventId, {para...}, pfn_elem_handler(tEvent, data, para), ...}
 	{"event_mission_task_award", {"pvp", "shengwu", -1}, 		handle_task_event,	{name="Thu thËp Ngò Hµnh T©m Hån §¬n", category=random(5)}  },
 	{"event_mission_task_award", {"pvp", "toujingshu", -1},	 	handle_task_event,	{name="Thu thËp Néi C«ng T©m Kinh", category=-1}  },
-	{"event_mission_task_award", {"pvp", "yunbiao", -1}, 		handle_task_event,	{name="TÆng quµ"}  },
+	{"event_mission_task_award", {"pvp", "yunbiao", -1}, 		handle_task_event,	{name="Give gift"}  },
 	{"event_mission_task_award", {"pvp", "shangjin", -1}, 		handle_task_event,	{name="Thiªn ¢m LÖnh Bµi", category=-1}  },
 	{"event_mission_task_award", {"pvp", "yupo", -1}, 			handle_task_event,	{name="Thu thËp Tiªn Ngäc Linh Hoµn", category=-1}  },
-	{"event_mission_task_award", {"pvp", "shiliwabao", -1}, 	handle_task_event,	{name="Thu thËp Kim Hoa", category=-1}  },
-	{"event_mission_affairs",    {"newbattle", "killplayer", -1}, handle_task_event,{name="ThÝ luyÖn"}  },
+	{"event_mission_task_award", {"pvp", "shiliwabao", -1}, 	handle_task_event,	{name="Collect Golden Flower", category=-1}  },
+	{"event_mission_affairs",    {"newbattle", "killplayer", -1}, handle_task_event,{name="Trial"}  },
 }
 
 
@@ -53,7 +53,7 @@ function _gtask_rand_item(data, TaskID, tList, limit)
 	local nCount = GetItemCount(tItem[1], tItem[2], tItem[3]);
 	local nMax = min(limit - nCount, tItem[4]);
 	if random(100) < tAward[1] then
-		gf_AddItemEx2({tItem[1], tItem[2], tItem[3], nMax, tItem[5] or 0}, tAward[3], "GTASK", "NhiÖm vô", 0, 1);
+		gf_AddItemEx2({tItem[1], tItem[2], tItem[3], nMax, tItem[5] or 0}, tAward[3], "GTASK", "Mission", 0, 1);
 	end
 end
 
@@ -123,7 +123,7 @@ function Reborn3Xinhundan(data)
 	if random(100) <= 50 then
 		local tItem = tList[data.category];
 		if GetItemCount(tItem[1], tItem[2], tItem[3]) <= 0 then
-			gf_AddItemEx2(tItem, GetItemName(tItem[1], tItem[2], tItem[3]), "GTASK", "NhiÖm vô", 0, 1);
+			gf_AddItemEx2(tItem, GetItemName(tItem[1], tItem[2], tItem[3]), "GTASK", "Mission", 0, 1);
 		end
 	end
 end
@@ -144,12 +144,12 @@ end
 EventList = {
 	--["ÈÎÎñ"] = "ÏàÓ¦º¯Êý"
 	["Thu thËp Tiªn Ngäc Linh Hoµn"] = Reborn3PlantTree,
-	["Thu thËp Kim Hoa"] = Reborn3Collect,
+	["Collect Golden Flower"] = Reborn3Collect,
 	["Thu thËp Néi C«ng T©m Kinh"] = Reborn3Book,
-	["TÆng quµ"] = Reborn3Yunbiao,
+	["Give gift"] = Reborn3Yunbiao,
 	["Thu thËp Ngò Hµnh T©m Hån §¬n"] = Reborn3Xinhundan,
 	["Thiªn ¢m LÖnh Bµi"] = Reborn3Lingpai,
-	["ThÝ luyÖn"] = Reborn3KillAmry,
+	["Trial"] = Reborn3KillAmry,
 }
 
 --data format

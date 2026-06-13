@@ -12,12 +12,12 @@ g_tbGameName =
 {
 	[GAME_ID_GUESS] = "Thiªn C¬ ThÇn To¸n",
 	[GAME_ID_BOX] = "§o¹t B¶o Kú Binh",
-	[GAME_ID_LIGHT] = "§iÓm §¨ng Héi",
+	[GAME_ID_LIGHT] = "Lantern Assembly Points",
 }
 --============================================================================
 g_tbGameSchedule =
 {
-	[0] = {"§iÓm §¨ng Héi",GAME_ID_LIGHT},
+	[0] = {"Lantern Assembly Points",GAME_ID_LIGHT},
 	[1] = {"Thiªn C¬ ThÇn To¸n",GAME_ID_GUESS},
 	[2] = {"§o¹t B¶o Kú Binh",GAME_ID_BOX},
 	[3] = {"Thiªn C¬ ThÇn To¸n",GAME_ID_GUESS},
@@ -55,7 +55,7 @@ g_tbTitleName =
 {
 	[GAME_ID_GUESS] = "Thiªn C¬ ThÇn To¸n",
 	[GAME_ID_BOX] = "§o¹t B¶o Kú Binh",
-	[GAME_ID_LIGHT] = "Hoa ®¨ng v­¬ng",
+	[GAME_ID_LIGHT] = "Lantern King",
 };
 --ÈÎÎñ±äÁ¿1986-1987=====================================================================
 TSK_WEAPON_TYPE = 1987;					--¸øÍò¶ñµÄÉÙÁÖË×¼ÒÓÃÁË¡£¼ÇÂ¼Ñ¡ÔñµÄÊÇµ¶»¹ÊÇ¹÷
@@ -71,40 +71,40 @@ TSK_YEARS_EXP_DATE = 1359;        --µ±ÌìÊÇ·ñÁìÂúÁË¾­Ñé
 TSK_YEARS_EXP_NUM = 1360;         --µ±Ìì¸øÁË¶àÉÙ´Î¾­Ñé
 
 tJifenAward = {
-	[10] = {"R­¬ng kû niÖm 20 n¨m",2,0,1085,1,2000000},
-	[50] = {"R­¬ng kû niÖm 20 n¨m",2,0,1085,8,5000000},
-	[200] = {"R­¬ng kû niÖm 20 n¨m",2,0,1085,35,10000000}
+	[10] = {"20th Anniversary Commemorative Chest",2,0,1085,1,2000000},
+	[50] = {"20th Anniversary Commemorative Chest",2,0,1085,8,5000000},
+	[200] = {"20th Anniversary Commemorative Chest",2,0,1085,35,10000000}
 };
 
 tMijiName = {
-		{"Tø Linh ChiÕn ý Phæ",0,107,159},
+		{"Four Spirits Battle Intent Manual",0,107,159},
 		{"Tø Linh Thiªn ý Phæ",0,107,160},
-		{"Tø Linh Tö ý Phæ",0,107,161}
+		{"Four Spirits Earth Intent Manual",0,107,161}
 };
 
 tGaojiMiji = {
-	[0] = {{"Kim Cang B¸t Nh· Kinh",0,107,166},{"V« TrÇn Bå §Ò Kinh",0,107,168},{"TiÒm Long TÞch DiÖt Kinh",0,107,167},{"Thiªn La Liªn Ch©u Lôc",0,107,169},{"Nh­ ý Kim §Ønh MËt TÞch",0,107,170},{"BÝch H¶i TuyÖt ¢m Phæ",0,107,171},{"Hçn §én TrÊn Nh¹c MËt TÞch",0,107,172},{"Quü Thiªn Du Long MËt TÞch",0,107,173},{"HuyÔn ¶nh Mª Tung MËt TÞch",0,107,174},{"Qu©n Tö TiÖt Phong MËt TÞch",0,107,175},{"TrÊn Qu©n Phi Long Th­¬ng Phæ",0,107,176},{"Xuyªn V©n L¹c Hång MËt TÞch",0,107,177},{"U Minh Phong Ma Lôc",0,107,178},{"Linh Cæ HuyÔn Tµ Lôc",0,107,179}},
-	[1] = {{"Kim Cang B¸t Nh· Kinh",0,107,166},{"V« TrÇn Bå §Ò Kinh",0,107,168},{"TiÒm Long TÞch DiÖt Kinh",0,107,167}},
-	[2] = {{"Kim Cang B¸t Nh· Kinh",0,107,166}},
-	[3] = {{"V« TrÇn Bå §Ò Kinh",0,107,168}},
+	[0] = {{"Kim Cang Bat Nha Kinh",0,107,166},{"Vo Tran Bo De Kinh",0,107,168},{"TiÒm Long TÞch DiÖt Kinh",0,107,167},{"Thiªn La Liªn Ch©u Lôc",0,107,169},{"Nh­ ý Kim §Ønh MËt TÞch",0,107,170},{"Azure Sea Silent Sound Score",0,107,171},{"Hçn §én TrÊn Nh¹c MËt TÞch",0,107,172},{"Quü Thiªn Du Long MËt TÞch",0,107,173},{"HuyÔn ¶nh Mª Tung MËt TÞch",0,107,174},{"Qu©n Tö TiÖt Phong MËt TÞch",0,107,175},{"Tran Quan Phi Long Thuong Manual",0,107,176},{"Xuyªn V©n L¹c Hång MËt TÞch",0,107,177},{"U Minh Phong Ma Manual",0,107,178},{"Linh Co Huyen Ta Manual",0,107,179}},
+	[1] = {{"Kim Cang Bat Nha Kinh",0,107,166},{"Vo Tran Bo De Kinh",0,107,168},{"TiÒm Long TÞch DiÖt Kinh",0,107,167}},
+	[2] = {{"Kim Cang Bat Nha Kinh",0,107,166}},
+	[3] = {{"Vo Tran Bo De Kinh",0,107,168}},
 	[4] = {{"TiÒm Long TÞch DiÖt Kinh",0,107,167}},
 	[5] = {{"Thiªn La Liªn Ch©u Lôc",0,107,169}},
 	[6] = {{"Thiªn La Liªn Ch©u Lôc",0,107,169}},
-	[7] = {{"Nh­ ý Kim §Ønh MËt TÞch",0,107,170},{"BÝch H¶i TuyÖt ¢m Phæ",0,107,171}},
+	[7] = {{"Nh­ ý Kim §Ønh MËt TÞch",0,107,170},{"Azure Sea Silent Sound Score",0,107,171}},
 	[8] = {{"Nh­ ý Kim §Ønh MËt TÞch",0,107,170}},
-	[9] = {{"BÝch H¶i TuyÖt ¢m Phæ",0,107,171}},
+	[9] = {{"Azure Sea Silent Sound Score",0,107,171}},
 	[10] = {{"Hçn §én TrÊn Nh¹c MËt TÞch",0,107,172},{"Quü Thiªn Du Long MËt TÞch",0,107,173}},
 	[11] = {{"Hçn §én TrÊn Nh¹c MËt TÞch",0,107,172}},
 	[12] = {{"Quü Thiªn Du Long MËt TÞch",0,107,173}},
 	[13] = {{"HuyÔn ¶nh Mª Tung MËt TÞch",0,107,174},{"Qu©n Tö TiÖt Phong MËt TÞch",0,107,175}},
 	[14] = {{"HuyÔn ¶nh Mª Tung MËt TÞch",0,107,174}},
 	[15] = {{"Qu©n Tö TiÖt Phong MËt TÞch",0,107,175}},
-	[16] = {{"TrÊn Qu©n Phi Long Th­¬ng Phæ",0,107,176},{"Xuyªn V©n L¹c Hång MËt TÞch",0,107,177}},
-	[17] = {{"TrÊn Qu©n Phi Long Th­¬ng Phæ",0,107,176}},
+	[16] = {{"Tran Quan Phi Long Thuong Manual",0,107,176},{"Xuyªn V©n L¹c Hång MËt TÞch",0,107,177}},
+	[17] = {{"Tran Quan Phi Long Thuong Manual",0,107,176}},
 	[18] = {{"Xuyªn V©n L¹c Hång MËt TÞch",0,107,177}},
-	[19] = {{"U Minh Phong Ma Lôc",0,107,178},{"Linh Cæ HuyÔn Tµ Lôc",0,107,179}},
-	[20] = {{"U Minh Phong Ma Lôc",0,107,178}},
-	[21] = {{"Linh Cæ HuyÔn Tµ Lôc",0,107,179}},
+	[19] = {{"U Minh Phong Ma Manual",0,107,178},{"Linh Co Huyen Ta Manual",0,107,179}},
+	[20] = {{"U Minh Phong Ma Manual",0,107,178}},
+	[21] = {{"Linh Co Huyen Ta Manual",0,107,179}},
 	[23] = {{"Cöu Thiªn Phong L«i QuyÕt",0,107,198}},	
 	[29] = {{"Hång TrÇn Tóy Méng Phæ",0,107,202}},
 	[30] = {{"Phong Hoa Thiªn DiÖp Phæ",0,107,203}},	
@@ -112,15 +112,15 @@ tGaojiMiji = {
 
 tItemName = {
 	{"B¹ch NghÜa",0,105,49},
-	{"HiÖp Dùc",0,105,50},
+	{"Heroic Spirit",0,105,50},
 	{"ChiÕn M· Nguyªn So¸i cao cÊp (tr¾ng)",0,105,51},
 	{"ChiÕn M· Nguyªn So¸i cao cÊp (®en)",0,105,52},
 	{"Thiªn Qu¸i Th¹ch",2,0,1084},
-	{"R­¬ng kû niÖm 20 n¨m",2,0,1085},
+	{"20th Anniversary Commemorative Chest",2,0,1085},
 	{"Ch×a khãa ®ång kû niÖm",2,0,1086},
 	{"Ch×a khãa b¹c kû niÖm",2,0,1087},
 	{"Ch×a khãa vµng kû niÖm",2,0,1088},
-	{"TÝch lòy bµi",2,0,1089},
+	{"Accumulation Token",2,0,1089},
 	{"H­íng dÉn ho¹t ®«ng kû niÖm 20 n¨m",2,0,1090},
 	{"§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch",2,1,1067},
 	{"Thiªn Th¹ch linh th¹ch",2,1,1068},

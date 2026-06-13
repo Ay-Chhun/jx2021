@@ -11,7 +11,7 @@ function main()
 --		format("%s/#lsy_enhance(204)", "ÎÒÒª¾«Á¶ÖØÖýÎÆÊÎ"),
 		--format("%s/change_lv4_armory", "×ª»»4¼¶Á÷ÅÉ×¨ÊôÎÆÊÎËæ»úÊôÐÔ(Ã¿´Î10000½ð)"),
 		format("%s/lsy_intro_main", "Giíi thiÖu V¨n Søc"),
-		format("%s/nothing", "Ra khái"),
+		format("%s/nothing", "Exit"),
 	};
 	Say(g_NpcName.."",
 		getn(strtab),
@@ -25,7 +25,7 @@ end
 
 function lsy_intro_main()
 	local strtab = {
-		format("%s/#lsy_intro(1)", "V¨n Søc lµ g×"),
+		format("%s/#lsy_intro(1)", "What is Van Suc"),
 		format("%s/#lsy_intro(2)", "C­êng hãa cÊp V¨n Søc cã t¸c dông g×"),
 		format("%s/#lsy_intro(3)", "T¨ng phÈm chÊt V¨n Søc cã t¸c dông g×"),
 		-- format("%s/#lsy_intro(4)", "ÈçºÎ¾«Á¶ÖØÖýÎÆÊÎ"),
@@ -33,7 +33,7 @@ function lsy_intro_main()
 		format("%s/#lsy_intro(6)", "C¸ch nhËn nguyªn liÖu c­êng hãa V¨n Søc"),
 		format("%s/#lsy_intro(7)", "C­êng hãa V¨n Søc Nh­ ThÕ Nµo"),
 		format("%s/#lsy_intro(8)", "N©ng cÊp phÈm chÊt V¨n Søc nh­ thÕ nµo"),
-		format("%s/nothing", "Ra khái"),
+		format("%s/nothing", "Exit"),
 	};
 	Say(g_NpcName.."",
 		getn(strtab),
@@ -59,10 +59,10 @@ end
 
 g_tPosName = {
 	[17] = "V¨n Søc §Çu",
-	[18] = "V¨n Søc ƒo",
-	[19] = "V¨n Søc QuÇn",
-	[20] = "V¨n Søc Trang Søc 1",
-	[21] = "V¨n Søc Trang Søc 2",
+	[18] = "Van Suc Top",
+	[19] = "Van Suc Pants",
+	[20] = "Van Suc Accessory 1",
+	[21] = "Van Suc Accessory 2",
 };
 
 g_tPosDetail = {
@@ -86,7 +86,7 @@ function change_lv4_armory()
 		format("%s/#want_to_exchange(20)", "Muèn chuyÓn ®æi V¨n Søc Trang Søc 1 hiÖn cã"),
 		format("%s/#want_to_exchange(21)", "Muèn chuyÓn ®æi V¨n Søc Trang Søc 2 hiÖn cã"),
 		format("%s/main", "trë l¹i"),
-		format("%s/nothing", "KÕt thóc ®èi tho¹i"),
+		format("%s/nothing", "End conversation"),
 	}
 	Say(szMsg, getn(tSel), tSel);
 end
@@ -156,7 +156,7 @@ function MakeArmory_Confirm(nSel, nStep, nValue)
 		return 0;
 	end
 	if not nValue then
-		local szMsg = format("<color=green>[%s]<color>: §· chän\n", tItem[1]);
+		local szMsg = format("<color=green>[%s]<color>: Chosen\n", tItem[1]);
 
 		if not tData.nArmory or not g_tRouteArmory[tData.nArmory] then
 			return 0;
@@ -173,9 +173,9 @@ function MakeArmory_Confirm(nSel, nStep, nValue)
 		end
 
 		local tMenu = {
-			format("\n%s	/#MakeArmory_Confirm(%d,%d,%d)", "§ång ý", nSel, nStep, 1),
+			format("\n%s	/#MakeArmory_Confirm(%d,%d,%d)", "Agree", nSel, nStep, 1),
 			format("\n%s	/#MakeArmory(%d, %d)", "trë l¹i", nSel, nStep - 1),
-			format("%s/nothing", "Ra khái"),
+			format("%s/nothing", "Exit"),
 		};
 
 		Say(szMsg, getn(tMenu), tMenu);

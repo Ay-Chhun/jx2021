@@ -47,7 +47,7 @@ function task_003()
 
 local strMain = {
 		"Ta muèn ph¸t tiÒn ®Ó cøu tÕ nh­ng bän gia nh©n th× bËn gióp nÊu ch¸o. PhiÒn c« n­¬ng ®Õn th«ng b¸o cho <color=yellow>N¹n d©n Gi¸p, Êt, Bİnh, §inh<color> ë cæng thµnh, b¶o hä ®Õn nhËn cøu tÕ.",
-		"§· thÕ ®Ó ta ®i thay «ng."
+		"Very well, let me go in your place."
 	}
 
 TE_Talk(getn(strMain), "task_004", strMain);
@@ -155,8 +155,8 @@ function task_008()
 
 local strMain = {
 		"Ta ®· b¸o tin cho tÊt c¶ c¸c n¹n d©n.",
-		"§a t¹ c« n­¬ng!",
-		"ı ngµi lµ?",
+		"Many thanks, miss!",
+		"What do you mean, sir?",
 		"Ta võa nhËn ®­îc tin: ngµy mai trong thµnh vËt gi¸ cña c¸c cöa hiÖu lín sÏ t¨ng 3 lÇn, thÕ th× n¹n d©n lµm sao sèng?",
 		"Ch¼ng lÏ c¸c chñ tiÖm trong thµnh kh«ng cã chót l­¬ng t©m sao?",
 		"ChuyÖn nµy còng kh«ng thÓ tr¸ch hä, chñ yÕu lµ trong thµnh cã 1 tªn L­u Manh chuyªn hµ hiÕp b¸ t¸nh l­¬ng thiÖn.",
@@ -187,7 +187,7 @@ local strMain = {
 		"C« n­¬ng kh«ng hæ danh lµ ®Ö tö Nga My.",
 		"Ta kh«ng ph¶i ®Ö tö Nga My, Ch©n Nh­ S­ Th¸i nãi kh«ng cã thêi gian thö th¸ch ta.",
 		"Víi b¶n lÜnh cña c« n­¬ng th× cÇn g× thö th¸ch. Ta sÏ cho bå c©u chuyÓn th­ ®Õn S­ Th¸i. C« n­¬ng h·y quay vÒ Nga My.",
-		"Xin ®a t¹!"
+		"Many thanks!"
 	}
 
 if (GetItemCount(2,1,12)>=2) then

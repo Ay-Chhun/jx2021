@@ -36,7 +36,7 @@ function OnTimer()
 	if nIndex >= 1 and nIndex < 10 then
 		if GetNpcTempData(npcIndex, nIndex) == 0 then
 			for i = 1, 30 do
-				local npcIdx = CreateNpc("BC_xiaobaoxiang", "R­¬ng Nhá §Òn Bï", IBC_MAPID, IBC_MAP_X + random(-15, 15), IBC_MAP_Y + random(-15, 15));
+				local npcIdx = CreateNpc("BC_xiaobaoxiang", "Small Compensation Chest", IBC_MAPID, IBC_MAP_X + random(-15, 15), IBC_MAP_Y + random(-15, 15));
 				SetNpcScript(npcIdx, "\\script\\online\\item_buchang\\box_small.lua");
 				SetNpcLifeTime(npcIdx, 5 * 60);
 			end

@@ -214,7 +214,7 @@ function qf_team_operation()
 	local szSay = "Ng­¬i muèn tiÕn hµnh thao t¸c nµo?"
 	local t =
 	{
-		"b¸o danh trËn b¸n kÕt./qf_signup",
+		"Register for the semifinal battle./qf_signup",
 	}
 	if szCaptainName ~= nil then
 		tinsert(t, 2, "Tra xem ®é cèng hiÕn cña m×nh./qf_offer")
@@ -223,7 +223,7 @@ function qf_team_operation()
 			tinsert(t, 4, "Tra xem tæng ®iÓm chiÕn ®éi./refer_point")
 		end
 	end
-	tinsert(t, getn(t)+1, "Rêi khái/end_say")
+	tinsert(t, getn(t)+1, "Leave/end_say")
 	Say(szSay, getn(t), t)
 end
 
@@ -239,7 +239,7 @@ function qf_offer()
 	local tDiff = CalcResult(1, tNow, tDefault)
 	nPoint = CountPoint(tDiff)
 	local szSay = "chiÕn ®éi cña b¹n, ®é cèng hiÕn lµ: <color=yellow>["..nPoint.."]<color> ®iÓm\n(cã thÓ ®é cèng hiÕn chiÕn ®éi nhiÒu h¬n so víi thùc tÕ do sù sai biÖt thêi gian tÝnh to¸n)"
-	Say(szSay, 2, "Tra xem t×nh h×nh chiÕn ®éi./show_detail", "Rêi khái/end_say")
+	Say(szSay, 2, "Tra xem t×nh h×nh chiÕn ®éi./show_detail", "Leave/end_say")
 end
 
 function show_detail()
@@ -249,9 +249,9 @@ function show_detail()
 	local tDiff = CalcResult(1, tNow, tDefault)
 	
 	for i=1, 6 do
-		szShow = szShow..tQUARTER_FINAL_HEAD[i][1].." §iÓm: <color=yellow>"..floor(tDiff[i] + 0.5).."<color>\n"
+		szShow = szShow..tQUARTER_FINAL_HEAD[i][1].." Points: <color=yellow>"..floor(tDiff[i] + 0.5).."<color>\n"
 	end
-	Say(szShow,2,"Trang kÕ/next_page","Rêi khái/end_say")
+	Say(szShow,2,"Next page/next_page","Leave/end_say")
 end
 
 function next_page()
@@ -262,9 +262,9 @@ function next_page()
 	
 	local nCount = getn(tQUARTER_FINAL_HEAD)
 	for i=7, nCount do
-		szShow = szShow..tQUARTER_FINAL_HEAD[i][1].." §iÓm: <color=yellow>"..floor(tDiff[i] + 0.5).."<color>\n"
+		szShow = szShow..tQUARTER_FINAL_HEAD[i][1].." Points: <color=yellow>"..floor(tDiff[i] + 0.5).."<color>\n"
 	end
-	Say(szShow,2,"Trang tr­íc/show_detail","Rêi khái/end_say")
+	Say(szShow,2,"Previous page/show_detail","Leave/end_say")
 end
 
 function queue_member_status()
@@ -278,7 +278,7 @@ function queue_member_status()
 	for i=1, getn(tMember) do
 		tMember[i] = tMember[i].."/#show_member_status("..i..")"
 	end
-	tinsert(tMember, getn(tMember) + 1, "Rêi khái/end_say")
+	tinsert(tMember, getn(tMember) + 1, "Leave/end_say")
 	Say(szSay, getn(tMember), tMember)
 end
 
@@ -309,9 +309,9 @@ function show_member_status(index)
 	local nPoint = CountPoint(tDiff)
 	szShow = "Tæng ®iÓm: <color=yellow>"..nPoint.."<color>\n"
 	for i=1, 6 do
-		szShow = szShow..tQUARTER_FINAL_HEAD[i][1].." §iÓm: <color=yellow>"..floor(tDiff[i] + 0.5).."<color>\n"
+		szShow = szShow..tQUARTER_FINAL_HEAD[i][1].." Points: <color=yellow>"..floor(tDiff[i] + 0.5).."<color>\n"
 	end
-	Say(szShow,3,"Trang kÕ/#member_next_page("..index..")","trë l¹i/queue_member_status", "Rêi khái/end_say")
+	Say(szShow,3,"Next page/#member_next_page("..index..")","trë l¹i/queue_member_status", "Leave/end_say")
 end
 
 function member_next_page(index)
@@ -319,9 +319,9 @@ function member_next_page(index)
 	local tMember = YY_GetData(CustomDataRead("yueye_all_member_name"))
 	local tDiff = YY_GetData(CustomDataRead(tMember[index]))
 	for i=7, getn(tQUARTER_FINAL_HEAD) do
-		szShow = szShow..tQUARTER_FINAL_HEAD[i][1].." §iÓm: <color=yellow>"..floor(tDiff[i] + 0.5).."<color>\n"
+		szShow = szShow..tQUARTER_FINAL_HEAD[i][1].." Points: <color=yellow>"..floor(tDiff[i] + 0.5).."<color>\n"
 	end
-	Say(szShow,3,"Trang tr­íc/#show_member_status("..index..")","trë l¹i/queue_member_status", "Rêi khái/end_say")
+	Say(szShow,3,"Previous page/#show_member_status("..index..")","trë l¹i/queue_member_status", "Leave/end_say")
 end
 
 function qf_signup()
@@ -334,10 +334,10 @@ function qf_signup()
 	if nSize < 8 then
 		szSay = szSay.."<color=red>sè thµnh viªn 1 chiÕn ®éi tèi ®a lµ 8 ng­êi, hiÖn ®· cã"..nSize.." thµnh viªn<color>, b¹n cã ®ång ý b¸o danh kh«ng?"
 	else
-		szSay = szSay.."B¸o danh chø?"
+		szSay = szSay.."Register?"
 	end
 	
-	Say(szSay, 3, "Tra xem danh s¸ch thµnh viªn/show_member_list", "\n®ång ý b¸o danh\n\n/confirm_signup", "§Ó ta suy nghÜ!/end_say")
+	Say(szSay, 3, "Tra xem danh s¸ch thµnh viªn/show_member_list", "\nagree to register\n\n/confirm_signup", "Let me think about it!/end_say")
 end
 
 function show_member_list()
@@ -345,7 +345,7 @@ function show_member_list()
 	local nSize = GetTeamSize()
 	local nCount = 1
 	tMember = {}
-	szMemberInfo = "§éi tr­ëng:<color=yellow>"..GetName().."<color>"
+	szMemberInfo = "Team leader:<color=yellow>"..GetName().."<color>"
 	local nOldPlayer = PlayerIndex
 	for i=1, nSize do
 		PlayerIndex = GetTeamMember(i)
@@ -362,19 +362,19 @@ function check_can_signup()
 	-- ²»×é¶ÓÊÇ²»ÐÐµÎ
 	local nResult = 1
 	if GetTeamSize() < 1 then
-		Say("ChØ cã lËp tæ ®éi míi cã thÓ tham gia trËn b¸n kÕt.", 2, "Liªn quan t¹o lËp tæ ®éi./about_quarter_final_team", "Rêi khái/end_say")
+		Say("ChØ cã lËp tæ ®éi míi cã thÓ tham gia trËn b¸n kÕt.", 2, "Liªn quan t¹o lËp tæ ®éi./about_quarter_final_team", "Leave/end_say")
 		return 0
 	end
 	
 	-- ²»ÊÇ¶Ó³¤ÊÇ²»ÐÐµÎ
 	if PlayerIndex ~= GetCaptainIndex() then
-		Say("ChØ cã ®éi tr­ëng míi cã thÓ b¸o danh", 2, "Liªn quan t¹o lËp tæ ®éi./about_quarter_final_team", "Rêi khái/end_say")
+		Say("ChØ cã ®éi tr­ëng míi cã thÓ b¸o danh", 2, "Liªn quan t¹o lËp tæ ®éi./about_quarter_final_team", "Leave/end_say")
 		return 0
 	end
 	
 	-- ¶Ó³¤²»ÊÇ±ÈÈüÕÊºÅ£¬Ã»ÓÐÍê³É³õÈüÊÇ²»ÐÐµÎ
 	if GetTask(1785) == 0 then
-		Say("§éi tr­ëng ph¶i lµ tµi kho¶n tham gia ch¹y bé ®ång thêi ®¼ng cÊp ph¶i tõ 30 trë lªn míi cã thÓ tham gia b¸o danh.", 2, "Liªn quan t¹o lËp tæ ®éi./about_quarter_final_team", "Rêi khái/end_say")
+		Say("§éi tr­ëng ph¶i lµ tµi kho¶n tham gia ch¹y bé ®ång thêi ®¼ng cÊp ph¶i tõ 30 trë lªn míi cã thÓ tham gia b¸o danh.", 2, "Liªn quan t¹o lËp tæ ®éi./about_quarter_final_team", "Leave/end_say")
 		return 0
 	end
 	
@@ -395,7 +395,7 @@ function check_can_signup()
 		szMsg = strsub(szMsg, 1, strlen(szMsg) - strlen(szSplit))
 		szMsg = szMsg.."B¹n ®· lµ thµnh viªn cña chiÕn ®éi kh¸c, kh«ng thÓ t¹o lËp tæ ®éi míi."
 		PlayerIndex = nOldPlayer
-		Say("<color=green>Sø gi¶ viÖt d·<color>:"..szMsg, 0)
+		Say("<color=green>Cross-country messenger<color>:"..szMsg, 0)
 	end
 	return nResult
 end
@@ -438,7 +438,7 @@ function qf_get_award()
 	local nReputation = 50
 	ModifyReputation(nReputation, 0)
 	Talk(1,"", "B¹n nhËn ®­îc "..nReputation.." ®iÓm danh väng. \n®iÓm tÝch lòy trËn b¸n kÕt cña b¹n ®· chuyÓn ®Õn ®éi tr­ëng.")
-	WriteLog("Tr¹i ViÖt d· "..GetName().."§· nhËn phÇn th­ëng ngµy: "..nReputation.." ®iÓm danh väng"..date("%H%M"))
+	WriteLog("Cross-Country Camp"..GetName().."§· nhËn phÇn th­ëng ngµy: "..nReputation.." ®iÓm danh väng"..date("%H%M"))
 	-- ¼ÇÂ¼½ñÌìÁìÈ¡¹ýÁË
 	CustomDataSave("yueye_is_join_team", "sd", szCaptainName, nDateNow)
 	
@@ -668,16 +668,16 @@ function show_rank_data(index)
 		end
 		local szMyName, nMyPoint, nMyRank = CustomDataRead("yueye_rank_mine")
 		if szMyName ~= "" then
-			szResult = szResult.."\nChiÕn ®éi <color=green>["..szMyName.."]<color>, ®iÓm tÝch lòy chiÕn ®éi lµ <color=yellow>["..nMyPoint.."]<color>, xÕp h¹ng <color=yellow>["..(nMyRank + 1).."]<color>"
+			szResult = szResult.."\nBattle team <color=green>["..szMyName.."]<color>, ®iÓm tÝch lòy chiÕn ®éi lµ <color=yellow>["..nMyPoint.."]<color>, ranked <color=yellow>["..(nMyRank + 1).."]<color>"
 		else
 			szResult = szResult.."\n<color=yellow>ChiÕn ®éi cña b¹n vÉn ch­a ®­a ®iÓm tÝch lòy, t¹m thêi vÉn ch­a xÕp h¹ng<color>"
 		end
 	end
 	
 	if index + 5 < nRankCount then
-		Say(szResult, 2, "Trang kÕ/#show_rank_data(7)", "Rêi khái/end_show_rank")
+		Say(szResult, 2, "Next page/#show_rank_data(7)", "Leave/end_show_rank")
 	else
-		Say(szResult, 1, "Rêi khái/end_show_rank")
+		Say(szResult, 1, "Leave/end_show_rank")
 	end
 end
 

@@ -22,7 +22,7 @@ function main()
 		return
 	end
 	local selTab = {				
-				"NhËn LÔ Hép vµ Long HuyÕt Hoµn/obtain_new_xmas_box",
+				"Receive Gift Box and Dragon Blood Pill/obtain_new_xmas_box",
 				"NhËn hép quµ may m¾n (Vui gi¸ng sinh cïng nhau nhËn th­ëng)/obtain_lucky_box",
 				"Ta chØ ®Õn xem thö/no",
 				}
@@ -33,17 +33,17 @@ end
 function obtain_new_xmas_box()
 
 	if GetTask(GAIN_PILL_08_XMAS_VIET) == 1 then
-		Say(g_szInfoHead.."§¹i hiÖp ®· nhËn råi, kh«ng thÓ tiÕp tôc nhËn ®­îc n÷a!",1,"ThËt lµ ng¹i qu¸! T¹i h¹ xin c¸o tõ./no")
+		Say(g_szInfoHead.."§¹i hiÖp ®· nhËn råi, kh«ng thÓ tiÕp tôc nhËn ®­îc n÷a!",1,"This is too much trouble! I take my leave./no")
 		return
 	end
 	
 	if GetTask(GAIN_NEW_BOX_08_XMAS_VIET) == 1 then
-		Say(g_szInfoHead.."§¹i hiÖp ®· nhËn råi, kh«ng thÓ tiÕp tôc nhËn ®­îc n÷a!",1,"ThËt lµ ng¹i qu¸! T¹i h¹ xin c¸o tõ./no")
+		Say(g_szInfoHead.."§¹i hiÖp ®· nhËn råi, kh«ng thÓ tiÕp tôc nhËn ®­îc n÷a!",1,"This is too much trouble! I take my leave./no")
 		return
 	end
 	
 	if is_could_award() == 0 then
-		Say(g_szInfoHead.."C¸c h¹ vÉn ch­a ®ñ ®iÒu kiÖn lÜnh th­ëng",1,"ThËt lµ ng¹i qu¸! T¹i h¹ xin c¸o tõ./no")
+		Say(g_szInfoHead.."C¸c h¹ vÉn ch­a ®ñ ®iÒu kiÖn lÜnh th­ëng",1,"This is too much trouble! I take my leave./no")
 		return
 	end
 	
@@ -60,10 +60,10 @@ function obtain_new_xmas_box()
 					SetItemExpireTime(nItemIdx, 7*24*3600)		
 				end
 				
-				nRetCode = add_item_ex( {"Hép quµ",	2,	1,	30035,	1} )
+				nRetCode = add_item_ex( {"Gift Box",	2,	1,	30035,	1} )
 				SetTask(GAIN_NEW_BOX_08_XMAS_VIET, 1)
 				if nRetCode == 1 then
-					Say(g_szInfoHead.."RÊt tèt! Ng­êi ®· ®¹t cÊp 55 råi sao? §©y lµ phÇn quµ cña ng­¬i, h·y mau mau sö dông, kh«ng khĞo l¹i hÕt h¹n sö dông.",1,"§a t¹ c©y th«ng gi¸ng sinh/no")
+					Say(g_szInfoHead.."RÊt tèt! Ng­êi ®· ®¹t cÊp 55 råi sao? §©y lµ phÇn quµ cña ng­¬i, h·y mau mau sö dông, kh«ng khĞo l¹i hÕt h¹n sö dông.",1,"Thank you, Christmas tree/no")
 				end
 			end
 		end
@@ -74,13 +74,13 @@ end
 function obtain_lucky_box()
 	local nWeek = tonumber(date("%w"))
 	if nWeek ~= 6 and nWeek ~= 0 then
-		Say(g_szInfoHead.."C¸c h¹ vÉn ch­a ®ñ ®iÒu kiÖn lÜnh th­ëng",1,"KÕt thóc ®èi tho¹i/no")
+		Say(g_szInfoHead.."C¸c h¹ vÉn ch­a ®ñ ®iÒu kiÖn lÜnh th­ëng",1,"End dialogue/no")
 		return
 	end
 
 	local nTime = tonumber(date("%H%M"))
 	if nTime < 930 or nTime >= 1033 then
-		Say(g_szInfoHead.."C¸c h¹ vÉn ch­a ®ñ ®iÒu kiÖn lÜnh th­ëng",1,"KÕt thóc ®èi tho¹i/no")
+		Say(g_szInfoHead.."C¸c h¹ vÉn ch­a ®ñ ®iÒu kiÖn lÜnh th­ëng",1,"End dialogue/no")
 		return
 	end
 
@@ -92,7 +92,7 @@ function obtain_lucky_box()
 	end
 	
 	if GetTask(LUCK_BOX_NUM_08_XMAS_VIET) >= 6 then
-		Say(g_szInfoHead.."Mçi ngµy mçi nh©n vËt chØ cã thÓ nhËn 6 hép quµ may m¾n.",1,"KÕt thóc ®èi tho¹i/no")
+		Say(g_szInfoHead.."Mçi ngµy mçi nh©n vËt chØ cã thÓ nhËn 6 hép quµ may m¾n.",1,"End dialogue/no")
 		return
 	end
 	
@@ -115,7 +115,7 @@ function obtain_lucky_box()
 		end
 	end
 	if GetTask(LUCK_BOX_TURN_08_XMAS_VIET) == nTurn then
-		Say(g_szInfoHead.."C¸c h¹ vÉn ch­a ®ñ ®iÒu kiÖn lÜnh th­ëng",1,"KÕt thóc ®èi tho¹i/no")
+		Say(g_szInfoHead.."C¸c h¹ vÉn ch­a ®ñ ®iÒu kiÖn lÜnh th­ëng",1,"End dialogue/no")
 		return
 	else
 		if gf_Judge_Room_Weight(1, 20) == 0 then
@@ -123,7 +123,7 @@ function obtain_lucky_box()
 			return
 		end
 
-		add_item_ex( {"Hép Quµ May M¾n",	2,	1,	30038,	1} )
+		add_item_ex( {"Lucky Gift Box",	2,	1,	30038,	1} )
 		SetTask(LUCK_BOX_TURN_08_XMAS_VIET, nTurn)
 		SetTask(LUCK_BOX_NUM_08_XMAS_VIET, GetTask(LUCK_BOX_NUM_08_XMAS_VIET)+1 )
 
@@ -132,7 +132,7 @@ function obtain_lucky_box()
 			if GetGlbValue(AWARD_TURN_XMAS_VIET) == nTurn then
 				SetGlbValue(g_tbMap[nMapID], GetGlbValue(g_tbMap[nMapID])+1)
 				if GetGlbValue(g_tbMap[nMapID]) == 68 then
-					add_item_ex( {"Hép Quµ §Æc BiÖt",	2,	1,	30037,	1} )
+					add_item_ex( {"Special Gift Box",	2,	1,	30037,	1} )
 				end
 			end
 		end

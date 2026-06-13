@@ -29,7 +29,7 @@ g_tbItem =
 	[2] = {TYPE_EQUIP,	10,		1,	"Tµng Ki’m K˙ Thπch",		0,	102,	39},
 	[3] = {TYPE_EQUIP_BODY,	10,		1,	"Tµng Ki’m Tˆ Kim m∑o",	0,	103,	95},
 	[4] = {TYPE_EQUIP,	33330,	1,	"Tµng Ki’m B∂o Ch©u",		0,	102,	38},
-	[5] = {TYPE_EQUIP_BODY,	33320,	1,	"Kim LÚ Th≠Íng",	0,	100,	95},
+	[5] = {TYPE_EQUIP_BODY,	33320,	1,	"Gold-Inlaid Robe",	0,	100,	95},
 	[6] = {TYPE_EQUIP_BODY,	33320,	1,	"Tµng Ki’m § kim phÙc",	0,	101,	95},
 }
 
@@ -77,9 +77,9 @@ function use_it()
 		else
 			Msg2Player("Bπn nhÀn Æ≠Óc  "..nItemNum.." "..szItemName)
 		end
-		WriteLogEx(g_szLogTitle, "HÈp quµ", nItemNum, szItemName, szInfoDescribe, GetTongName() )
+		WriteLogEx(g_szLogTitle, "Gift Box", nItemNum, szItemName, szInfoDescribe, GetTongName() )
 	else
-		WriteLogEx(g_szLogTitle, "HÈp quµ", "", "", "", "", "Thu Æ≠Óc th t bπi, ".."AddItem return value = "..nRetCode)
+		WriteLogEx(g_szLogTitle, "Gift Box", "", "", "", "", "Thu Æ≠Óc th t bπi, ".."AddItem return value = "..nRetCode)
 	end
 end
 

@@ -28,7 +28,7 @@ function Equip(nGeren, nDetail, nType)
 		local nYear, nMonth, nDay, nHour, nMin, nSec = AddTitleTime(nGeren, nDetail, 0)
 		--WriteLog("year: "..nYear..", month: "..nMonth..", day: "..nDay..", hour: "..nHour..", minute: "..nMin..", second: "..nSec);
 		if nYear ~= 1970 then
-			Msg2Player("X­ng hiÖu cña b¹n hÕt h¹n vµo"..nYear.."niªn"..nMonth.."NguyÖt"..nDay.."NhËt"..nHour.." giê "..nMin.." Phót "..nSec.." gi©y")
+			Msg2Player("X­ng hiÖu cña b¹n hÕt h¹n vµo"..nYear.."year"..nMonth.."NguyÖt"..nDay.."day"..nHour.." hours"..nMin.." minutes"..nSec.." seconds")
 		end
 	end
 end
@@ -1759,7 +1759,7 @@ function CityWarEquip(nGeren, nDetail, nType)
 	if nType == 1 then
 		local nYear, nMonth, nDay, nHour, nMin, nSec = AddTitleTime(nGeren, nDetail, 0)
 		if nYear ~= 1970 then
-			Msg2Player("X­ng hiÖu cña b¹n hÕt h¹n vµo"..nYear.."niªn"..nMonth.."NguyÖt"..nDay.."NhËt"..nHour.." giê "..nMin.." Phót "..nSec.." gi©y")
+			Msg2Player("X­ng hiÖu cña b¹n hÕt h¹n vµo"..nYear.."year"..nMonth.."NguyÖt"..nDay.."day"..nHour.." hours"..nMin.." minutes"..nSec.." seconds")
 		end
 	end
 end
@@ -1982,24 +1982,24 @@ function check_new_battle_rank(nGeren, nDetail)
 	if nCurCamp == 1 then	--µ±Ç°ÎªËÎ·½
 		if nNeedEverRank == 1 then
 			if (bEverMarshal == 0 and nCurJunGong < nNeedJunGong) or nCurCamp ~= nTitleCamp then
-				Msg2Player("B¹n ph¶i ®¹t ®­îc "..tCampNameZ[nTitleCamp].."Ph­¬ng "..abs(nNeedJunGong).." chiÕn c«ng hoÆc cã "..tCampNameZ[nTitleCamp].." Qu©n hµm Ph­¬ng VÜnh cöu Nguyªn So¸i míi cã thÓ sö dông x­ng hiÖu nµy");				
+				Msg2Player("B¹n ph¶i ®¹t ®­îc "..tCampNameZ[nTitleCamp].."Faction"..abs(nNeedJunGong).." chiÕn c«ng hoÆc cã "..tCampNameZ[nTitleCamp].." Qu©n hµm Ph­¬ng VÜnh cöu Nguyªn So¸i míi cã thÓ sö dông x­ng hiÖu nµy");				
 				return 0;
 			end;
 		else
 			if nCurJunGong < nNeedJunGong or nCurCamp ~= nTitleCamp then
-				Msg2Player("B¹n ph¶i ®¹t ®­îc "..tCampNameZ[nTitleCamp].."Ph­¬ng "..abs(nNeedJunGong).." Qu©n c«ng míi ®­îc sö dông x­ng hiÖu nµy");				
+				Msg2Player("B¹n ph¶i ®¹t ®­îc "..tCampNameZ[nTitleCamp].."Faction"..abs(nNeedJunGong).." Qu©n c«ng míi ®­îc sö dông x­ng hiÖu nµy");				
 				return 0;
 			end;
 		end;
 	else
 		if nNeedEverRank == 1 then
 			if (bEverMarshal == 0 and nCurJunGong > nNeedJunGong) or nCurCamp ~= nTitleCamp then
-				Msg2Player("B¹n ph¶i ®¹t ®­îc "..tCampNameZ[nTitleCamp].."Ph­¬ng "..abs(nNeedJunGong).." chiÕn c«ng hoÆc cã "..tCampNameZ[nTitleCamp].." Qu©n hµm Ph­¬ng VÜnh cöu Nguyªn So¸i míi cã thÓ sö dông x­ng hiÖu nµy");				
+				Msg2Player("B¹n ph¶i ®¹t ®­îc "..tCampNameZ[nTitleCamp].."Faction"..abs(nNeedJunGong).." chiÕn c«ng hoÆc cã "..tCampNameZ[nTitleCamp].." Qu©n hµm Ph­¬ng VÜnh cöu Nguyªn So¸i míi cã thÓ sö dông x­ng hiÖu nµy");				
 				return 0;
 			end;
 		else
 			if nCurJunGong > nNeedJunGong or nCurCamp ~= nTitleCamp then
-				Msg2Player("B¹n ph¶i ®¹t ®­îc "..tCampNameZ[nTitleCamp].."Ph­¬ng "..abs(nNeedJunGong).." Qu©n c«ng míi ®­îc sö dông x­ng hiÖu nµy");				
+				Msg2Player("B¹n ph¶i ®¹t ®­îc "..tCampNameZ[nTitleCamp].."Faction"..abs(nNeedJunGong).." Qu©n c«ng míi ®­îc sö dông x­ng hiÖu nµy");				
 				return 0;
 			end;
 		end;		
@@ -2121,25 +2121,25 @@ function _67_13_(nType, nStateID)
 	newbattle_season_titile(nType, nStateID,3)
 end
 T_NEW_BATTLE_ATTR = {
-    [2] = {"state_add_strength", "Søc m¹nh",}, --ÉÙÁÖË×¼Ò
+    [2] = {"state_add_strength", "Strength",}, --ÉÙÁÖË×¼Ò
     [3] = {"state_add_energy", "Néi c«ng ",}, --ÉÙÁÖìø×Ú
     [4] = {"state_add_energy", "Néi c«ng ",}, --ÉÙÁÖÎä×Ú
-    [6] = {"state_add_dexterity", "Th©n ph¸p",}, --ÌÆÃÅ
+    [6] = {"state_add_dexterity", "Agility",}, --ÌÆÃÅ
     [8] = {"state_add_energy", "Néi c«ng ",}, --¶ğáÒ·ğ¼Ò
-    [9] = {"state_add_dexterity", "Th©n ph¸p",}, --¶ğáÒË×¼Ò
-    [11] = {"state_add_strength", "Søc m¹nh",}, --Ø¤°ï¾»ÒÂ
-    [12] = {"state_add_dexterity", "Th©n ph¸p",}, --Ø¤°ïÎÛÒÂ
+    [9] = {"state_add_dexterity", "Agility",}, --¶ğáÒË×¼Ò
+    [11] = {"state_add_strength", "Strength",}, --Ø¤°ï¾»ÒÂ
+    [12] = {"state_add_dexterity", "Agility",}, --Ø¤°ïÎÛÒÂ
     [14] = {"state_add_energy", "Néi c«ng ",}, --Îäµ±µÀ¼Ò
     [15] = {"state_add_observe", "Linh ho¹t",}, --Îäµ±Ë×¼Ò
-    [17] = {"state_add_strength", "Søc m¹nh",}, --ÑîÃÅÇ¹Æï
-    [18] = {"state_add_dexterity", "Th©n ph¸p",}, --ÑîÃÅ¹­Æï
-    [20] = {"state_add_dexterity", "Th©n ph¸p",}, --Îå¶¾Ğ°ÏÀ
+    [17] = {"state_add_strength", "Strength",}, --ÑîÃÅÇ¹Æï
+    [18] = {"state_add_dexterity", "Agility",}, --ÑîÃÅ¹­Æï
+    [20] = {"state_add_dexterity", "Agility",}, --Îå¶¾Ğ°ÏÀ
     [21] = {"state_add_observe", "Linh ho¹t",}, --Îå¶¾¹ÆÊ¦
     [23] = {"state_add_energy", "Néi c«ng ",}, --À¥ÂØ
-	[25] = {"state_add_strength", "Søc m¹nh",}, --Ã÷½ÌÊ¥Õ½
-	[26] = {"state_add_strength", "Søc m¹nh",}, --Ã÷½ÌÕó±ø
+	[25] = {"state_add_strength", "Strength",}, --Ã÷½ÌÊ¥Õ½
+	[26] = {"state_add_strength", "Strength",}, --Ã÷½ÌÕó±ø
 	[27] = {"state_add_energy", "Néi c«ng ",}, --Ã÷½ÌÑªÈË
-    [29] = {"state_add_strength", "Søc m¹nh",}, --´äÑÌÎèÏÉ
+    [29] = {"state_add_strength", "Strength",}, --´äÑÌÎèÏÉ
     [30] = {"state_add_observe", "Linh ho¹t",}, --´äÑÌÁéÅ®
 	
 }
@@ -2224,16 +2224,16 @@ function _71_01_(nType, nStateID)
 end
 
 t_tong_title_cfg = {--°ï»á³ÆºÅÊôĞÔÊıÖµ
-    {"KÕt nghÜa", 20, 10000, 10, 10 },
+    {"Sworn brotherhood", 20, 10000, 10, 10 },
     {"HuÒ Thñ", 30, 12000, 12, 15 },
     {"Kim Lan", 40, 14000, 14, 20 },
     {"TÒ T©m", 50, 16000, 16, 25 },
-    {"§ång h­ëng", 80, 18000, 20, 40 },
+    {"Same homeland", 80, 18000, 20, 40 },
     {"Phã Háa", 90, 20000, 25, 50 },
-    {"QuÇn Hïng", 100, 25000, 30, 60 },
-    {"Hîp m­u", 120, 30000, 35, 70 },
-    {"Chİ Khİ", 150, 35000, 40, 80 },
-    {"§ång Cõu", 200, 40000, 50, 100 },
+    {"Heroic Throng", 100, 25000, 30, 60 },
+    {"Joint Scheme", 120, 30000, 35, 70 },
+    {"Resolve", 150, 35000, 40, 80 },
+    {"Same Vengeance", 200, 40000, 50, 100 },
 }
 
 function _tong_title_(nLevel, nType, nStateID)

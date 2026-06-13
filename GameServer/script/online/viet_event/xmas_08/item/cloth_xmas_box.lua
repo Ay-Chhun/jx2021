@@ -22,27 +22,27 @@ g_tbItem =
 	--		Ãû×Ö			ID1,ID2,ID3			ÊýÁ¿ 
 	[1] = 
 	{
-		{"Nãn gi¸ng sinh chuÈn",		0,	108,	109,	1	},
-		{"Th­îng y gi¸ng sinh chuÈn",	0,	109,	109,	1	},
-		{"H¹ y Gi¸ng sinh chuÈn",	0,	110,	73,		1	},
+		{"Standard Christmas Hat",		0,	108,	109,	1	},
+		{"Standard Christmas Top",	0,	109,	109,	1	},
+		{"Standard Christmas Bottom",	0,	110,	73,		1	},
 	},
 	[2] = 
 	{
-		{"Nãn gi¸ng sinh kh«i ng«",		0,	108,	110,	1	},
-		{"Gi¸ng sinh kh«i ng«",	0,	109,	110,	1	},
+		{"Imposing Christmas Hat",		0,	108,	110,	1	},
+		{"Imposing Christmas Outfit",	0,	109,	110,	1	},
 		{"Trang phôc gi¸ng sinh kh«i ng«",	0,	110,	74,		1	},
 	},
 	[3] = 
 	{
-		{"Nãn gi¸ng sinh gîi c¶m",		0,	108,	112,	1	},
-		{"Th­¬ng y gi¸ng sinh gîi c¶m",	0,	109,	112,	1	},
-		{"H¹ y gi¸ng sinh n÷ gîi c¶m",	0,	110,	76,		1	},
+		{"Alluring Christmas Hat",		0,	108,	112,	1	},
+		{"Alluring Christmas Top",	0,	109,	112,	1	},
+		{"Alluring Women's Christmas Bottom",	0,	110,	76,		1	},
 	},
 	[4] = 
 	{
-		{"Nãn gi¸ng sinh nhá",		0,	108,	111,	1	},
-		{"Th­¬ng y gi¸ng sinh KiÒu n÷",	0,	109,	111,	1	},
-		{"Gi¸ng sinh KiÒu n÷",	0,	110,	75,		1	},
+		{"Small Christmas Hat",		0,	108,	111,	1	},
+		{"Charming Women's Christmas Top",	0,	109,	111,	1	},
+		{"Charming Women's Christmas",	0,	110,	75,		1	},
 	},
 }
 
@@ -95,9 +95,9 @@ function add_cloth_xmas(tItem)
 	if nRetCode == 1 then
 		SetItemExpireTime(nItemIdx, 30*24*3600)
 		Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." c¸i "..szItemName)
-		WriteLogEx(g_szLogTitle, "NhËn ®­îc", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName() )
+		WriteLogEx(g_szLogTitle, "Received", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName() )
 	else
-		WriteLogEx(g_szLogTitle, "NhËn ®­îc", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
+		WriteLogEx(g_szLogTitle, "Received", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
 	end
 end
 

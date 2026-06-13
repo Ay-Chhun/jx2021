@@ -21,82 +21,82 @@ Nhãm trang bÞ thu håi	L­u ý	Lo¹i lín	Lo¹i phô	Ph©n lo¹i chi tiÕt	Lo¹i tiÒn tÖ ti
 1		0	3	30761							2	1	30681	1	0						0	1
 1		0	11	30762							2	1	30681	1	0						0	1
 2	Linh §å M·o	0	103	30235;30238							2	1	30681	1	0						0	1
-3	Linh §å Y	0	100	30235;30238							2	1	30681	1	0						0	1
+3	Lingdao Garment	0	100	30235;30238							2	1	30681	1	0						0	1
 4	Linh §å Khè	0	101	30235;30246							2	1	30681	1	0						0	1
 5	Linh §å Giíi ChØ	0	102	30221;30222							2	1	30681	1	0						0	1
-6	UÈn Linh CÊp 4	0	148	53;68							2	1	30666	1	0						0	1
-6	UÈn Linh CÊp 4	0	149	53;69							2	1	30666	1	0						0	1
-6	UÈn Linh CÊp 4	0	150	53;68							2	1	30666	1	0						0	1
-7	UÈn Linh CÊp 5	0	148	69;84							2	1	30667	1	0						0	1
-7	UÈn Linh CÊp 5	0	149	70;86							2	1	30667	1	0						0	1
-7	UÈn Linh CÊp 5	0	150	69;84							2	1	30667	1	0						0	1
-8	UÈn Linh CÊp 6	0	148	85;100							2	1	30668	1	0						1	1
-8	UÈn Linh CÊp 6	0	149	87;103							2	1	30668	1	0						1	1
-8	UÈn Linh CÊp 6	0	150	85;100							2	1	30668	1	0						1	1
+6	Yun Ling Level 4	0	148	53;68							2	1	30666	1	0						0	1
+6	Yun Ling Level 4	0	149	53;69							2	1	30666	1	0						0	1
+6	Yun Ling Level 4	0	150	53;68							2	1	30666	1	0						0	1
+7	Yun Ling Level 5	0	148	69;84							2	1	30667	1	0						0	1
+7	Yun Ling Level 5	0	149	70;86							2	1	30667	1	0						0	1
+7	Yun Ling Level 5	0	150	69;84							2	1	30667	1	0						0	1
+8	Yun Ling Level 6	0	148	85;100							2	1	30668	1	0						1	1
+8	Yun Ling Level 6	0	149	87;103							2	1	30668	1	0						1	1
+8	Yun Ling Level 6	0	150	85;100							2	1	30668	1	0						1	1
 9	Ch©n khÝ hé thÓ CÊp 1	2	150	1							2	1	30729	1	0							1
 9	Ých Thä Diªn D­¬ng CÊp 1	2	150	5							2	1	30729	1	0							1
-9	C­êng Th©n B¸ ThÓ CÊp 1	2	150	9							2	1	30729	1	0							1
-9	¢m Phong Thùc Cèt CÊp 1	2	150	13							2	1	30729	1	0							1
+9	Strong Body Mighty Form Lv 1	2	150	9							2	1	30729	1	0							1
+9	Yin Wind Bone Eroding Lv 1	2	150	13							2	1	30729	1	0							1
 9	HuyÒn Vò V« Song CÊp 1	2	150	17							2	1	30729	1	0							1
-9	V« Hµnh V« T­¬ng CÊp 1	2	150	21							2	1	30729	1	0							1
-9	Kim Linh Phô ThÓ CÊp 1	2	150	25							2	1	30729	1	0							1
-9	Méc Linh Phô ThÓ CÊp 1	2	150	29							2	1	30729	1	0							1
+9	Formless Featureless Lv 1	2	150	21							2	1	30729	1	0							1
+9	Metal Spirit Attachment Lv 1	2	150	25							2	1	30729	1	0							1
+9	Wood Spirit Attachment Lv 1	2	150	29							2	1	30729	1	0							1
 9	Thuû Linh Phô ThÓ CÊp 1	2	150	33							2	1	30729	1	0							1
 9	Ho¶ Linh Phô ThÓ CÊp 1	2	150	37							2	1	30729	1	0							1
-9	Thæ Linh Phô ThÓ CÊp 1	2	150	41							2	1	30729	1	0							1
-9	Ph¸ Kh«ng Tr¶m ¶nh CÊp 1	2	150	45							2	1	30729	1	0							1
+9	Earth Spirit Attachment Lv 1	2	150	41							2	1	30729	1	0							1
+9	Sky Shattering Shadow Slash Lv 1	2	150	45							2	1	30729	1	0							1
 9	S¸t th­¬ng gia n©ng cÊp 1	2	150	49							2	1	30729	1	0							1
 9	Khinh Linh TÊn TËt  CÊp 1	2	150	53							2	1	30729	1	0							1
-9	V« H×nh Chi Cæ CÊp 1	2	150	57							2	1	30729	1	0							1
+9	Formless Ancient Lv 1	2	150	57							2	1	30729	1	0							1
 9	Ch©n khÝ hé thÓ CÊp 2	2	150	2							2	1	30729	2	0							1
 9	Ých Thä Diªn D­¬ng CÊp 2	2	150	6							2	1	30729	2	0							1
-9	C­êng Th©n B¸ ThÓ CÊp 2	2	150	10							2	1	30729	2	0							1
-9	¢m Phong Thùc Cèt CÊp 2	2	150	14							2	1	30729	2	0							1
+9	Strong Body Mighty Form Lv 2	2	150	10							2	1	30729	2	0							1
+9	Yin Wind Bone Eroding Lv 2	2	150	14							2	1	30729	2	0							1
 9	HuyÒn Vò V« Song CÊp 2	2	150	18							2	1	30729	2	0							1
-9	V« Hµnh V« T­¬ng CÊp 2	2	150	22							2	1	30729	2	0							1
-9	Kim Linh Phô ThÓ CÊp 2	2	150	26							2	1	30729	2	0							1
-9	Méc Linh Phô ThÓ CÊp 2	2	150	30							2	1	30729	2	0							1
-9	Thuû Linh Phô ThÓ CÊp 2	2	150	34							2	1	30729	2	0							1
-9	Ho¶ Linh Phô ThÓ CÊp 2	2	150	38							2	1	30729	2	0							1
-9	Thæ Linh Phô ThÓ CÊp 2	2	150	42							2	1	30729	2	0							1
-9	Ph¸ Kh«ng Tr¶m ¶nh CÊp 2	2	150	46							2	1	30729	2	0							1
+9	Formless Featureless Lv 2	2	150	22							2	1	30729	2	0							1
+9	Metal Spirit Attachment Lv 2	2	150	26							2	1	30729	2	0							1
+9	Wood Spirit Attachment Lv 2	2	150	30							2	1	30729	2	0							1
+9	Water Spirit Attached Body Lv 2	2	150	34							2	1	30729	2	0							1
+9	Fire Spirit Attached Body Lv 2	2	150	38							2	1	30729	2	0							1
+9	Earth Spirit Attachment Lv 2	2	150	42							2	1	30729	2	0							1
+9	Sky Shattering Shadow Slash Lv 2	2	150	46							2	1	30729	2	0							1
 9	S¸t th­¬ng gia n©ng cÊp 2	2	150	50							2	1	30729	2	0							1
-9	Khinh Linh TÊn TËt  CÊp 2	2	150	54							2	1	30729	2	0							1
-9	V« H×nh Chi Cæ CÊp 2	2	150	58							2	1	30729	2	0							1
+9	Nimble Spirit Swiftness  Lv 2	2	150	54							2	1	30729	2	0							1
+9	Formless Ancient Lv 2	2	150	58							2	1	30729	2	0							1
 9	Ch©n khÝ hé thÓ CÊp 3	2	150	3							2	1	30729	3	0							1
 9	Ých Thä Diªn D­¬ng CÊp 3	2	150	7							2	1	30729	3	0							1
-9	C­êng Th©n B¸ ThÓ CÊp 3	2	150	11							2	1	30729	3	0							1
-9	¢m Phong Thùc Cèt CÊp 3	2	150	15							2	1	30729	3	0							1
+9	Strong Body Mighty Form Lv 3	2	150	11							2	1	30729	3	0							1
+9	Yin Wind Bone Eroding Lv 3	2	150	15							2	1	30729	3	0							1
 9	HuyÒn Vò V« Song CÊp 3	2	150	19							2	1	30729	3	0							1
-9	V« Hµnh V« T­¬ng CÊp 3	2	150	23							2	1	30729	3	0							1
-9	Kim Linh Phô ThÓ CÊp 3	2	150	27							2	1	30729	3	0							1
-9	Méc Linh Phô ThÓ CÊp 3	2	150	31							2	1	30729	3	0							1
-9	Thuû Linh Phô ThÓ CÊp 3	2	150	35							2	1	30729	3	0							1
-9	Ho¶ Linh Phô ThÓ CÊp 3	2	150	39							2	1	30729	3	0							1
-9	Thæ Linh Phô ThÓ CÊp 3	2	150	43							2	1	30729	3	0							1
-9	Ph¸ Kh«ng Tr¶m ¶nh CÊp 3	2	150	47							2	1	30729	3	0							1
+9	Formless Featureless Lv 3	2	150	23							2	1	30729	3	0							1
+9	Metal Spirit Attachment Lv 3	2	150	27							2	1	30729	3	0							1
+9	Wood Spirit Attachment Lv 3	2	150	31							2	1	30729	3	0							1
+9	Water Spirit Attached Body Lv 3	2	150	35							2	1	30729	3	0							1
+9	Fire Spirit Attached Body Lv 3	2	150	39							2	1	30729	3	0							1
+9	Earth Spirit Attachment Lv 3	2	150	43							2	1	30729	3	0							1
+9	Sky Shattering Shadow Slash Lv 3	2	150	47							2	1	30729	3	0							1
 9	S¸t th­¬ng gia n©ng cÊp 3	2	150	51							2	1	30729	3	0							1
-9	Khinh Linh TÊn TËt  CÊp 3	2	150	55							2	1	30729	3	0							1
-9	V« H×nh Chi Cæ CÊp 3	2	150	59							2	1	30729	3	0							1
+9	Nimble Spirit Swiftness  Lv 3	2	150	55							2	1	30729	3	0							1
+9	Formless Ancient Lv 3	2	150	59							2	1	30729	3	0							1
 9	Ch©n khÝ hé thÓ CÊp 4	2	150	4							2	1	30729	4	0							1
 9	Ých Thä Diªn D­¬ng CÊp 4	2	150	8							2	1	30729	4	0							1
-9	C­êng Th©n B¸ ThÓ CÊp 4	2	150	12							2	1	30729	4	0							1
-9	¢m Phong Thùc Cèt CÊp 4	2	150	16							2	1	30729	4	0							1
+9	Qiang Shen Ba Ti Level 4	2	150	12							2	1	30729	4	0							1
+9	Yin Feng Shi Gu Level 4	2	150	16							2	1	30729	4	0							1
 9	HuyÒn Vò V« Song CÊp 4	2	150	20							2	1	30729	4	0							1
-9	V« Hµnh V« T­¬ng CÊp 4	2	150	24							2	1	30729	4	0							1
-9	Kim Linh Phô ThÓ CÊp 4	2	150	28							2	1	30729	4	0							1
-9	Méc Linh Phô ThÓ CÊp 4	2	150	32							2	1	30729	4	0							1
-9	Thuû Linh Phô ThÓ CÊp 4	2	150	36							2	1	30729	4	0							1
-9	Ho¶ Linh Phô ThÓ CÊp 4	2	150	40							2	1	30729	4	0							1
-9	Thæ Linh Phô ThÓ CÊp 4	2	150	44							2	1	30729	4	0							1
-9	Ph¸ Kh«ng Tr¶m ¶nh CÊp 4	2	150	48							2	1	30729	4	0							1
+9	Wu Xing Wu Xiang Level 4	2	150	24							2	1	30729	4	0							1
+9	Jin Ling Fu Ti Level 4	2	150	28							2	1	30729	4	0							1
+9	Mu Ling Fu Ti Level 4	2	150	32							2	1	30729	4	0							1
+9	Shui Ling Fu Ti Level 4	2	150	36							2	1	30729	4	0							1
+9	Huo Ling Fu Ti Level 4	2	150	40							2	1	30729	4	0							1
+9	Tu Ling Fu Ti Level 4	2	150	44							2	1	30729	4	0							1
+9	Po Kong Zhan Ying Level 4	2	150	48							2	1	30729	4	0							1
 9	S¸t th­¬ng gia n©ng cÊp 4	2	150	52							2	1	30729	4	0							1
-9	Khinh Linh TÊn TËt  CÊp 4	2	150	56							2	1	30729	4	0							1
-9	V« H×nh Chi Cæ CÊp 4	2	150	60							2	1	30729	4	0							1
+9	Qing Ling Xun Ji Level 4	2	150	56							2	1	30729	4	0							1
+9	Wu Xing Zhi Gu Level 4	2	150	60							2	1	30729	4	0							1
 10	MËt TÞch Th­êng	0	107	204;223							2	114	117	10	0				5		1	1
 10	MËt TÞch Cao CÊp	0	107	30001;30017							2	114	117	20	0				5		1	1
 10	MËt TÞch Siªu CÊp	0	107	30018;30034							2	114	117	30	0				5		1	1
-11	Hoa v¨n	0	113;117	11;20																	1	2
+11	Pattern	0	113;117	11;20																	1	2
 10	MËt TÞch Cao CÊp	0	107	30035;30037							2	114	117	20	0				5		1	1
 10	MËt TÞch Siªu CÊp	0	107	30038;30040							2	114	117	30	0				5		1	1
 10	MËt TÞch Th­êng	0	107	231							2	114	117	10	0				5		1	1

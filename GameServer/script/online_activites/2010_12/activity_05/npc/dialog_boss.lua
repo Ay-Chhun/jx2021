@@ -11,21 +11,21 @@ function main()
 	
 	if 0 == monsterWave then
 		head = "Muèn khiªu chiÕn víi ta? VÉn cßn h¬i sím, h·y hái th¨m c¸c thñ h¹ cña ta tr­íc ®i ("..(monsterWave+1).."/"..SB_MONSTER_WAVE_THRESHOLD..")";
-		tinsert(menu, "Kh«ng vÊn ®Ò/#SB_SpawnWaveMonsters("..mapID..")");
-		tinsert(menu, "Ta sÏ ®îi/gf_DoNothing");	
+		tinsert(menu, "No problem/#SB_SpawnWaveMonsters("..mapID..")");
+		tinsert(menu, "I will wait/gf_DoNothing");	
 	elseif 0 == SB_IsMonsterWaveKilled(mapID) and 0 == SB_IsMonsterWaveTimeout(mapID) then
 		head = "Tèt nhÊt ng­¬i nªn ®¸nh b¹i c¸c thñ h¹ cña ta ®·"
-		tinsert(menu, "Tèt th«i/gf_DoNothing");
+		tinsert(menu, "Alright then/gf_DoNothing");
 	else
 		--WriteLog("main::monsterWave: "..monsterWave);	
 		if monsterWave < SB_MONSTER_WAVE_THRESHOLD then
 			head = "Muèn khiªu chiÕn víi ta? VÉn cßn h¬i sím, h·y hái th¨m c¸c thñ h¹ cña ta tr­íc ®i ("..(monsterWave+1).."/"..SB_MONSTER_WAVE_THRESHOLD..")";
-			tinsert(menu, "Kh«ng vÊn ®Ò/#SB_SpawnWaveMonsters("..mapID..")");
-			tinsert(menu, "Ta sÏ ®îi/gf_DoNothing");
+			tinsert(menu, "No problem/#SB_SpawnWaveMonsters("..mapID..")");
+			tinsert(menu, "I will wait/gf_DoNothing");
 		else
 			head = "§Õn khiªu chiÕn ta nµo";
-			tinsert(menu, "Ta ®Õn ®©y/SB_SpawnBoss");
-			tinsert(menu, "Ta sÏ ®îi/gf_DoNothing");
+			tinsert(menu, "I am here/SB_SpawnBoss");
+			tinsert(menu, "I will wait/gf_DoNothing");
 		end
 	end
 	Say(head, getn(menu), menu);

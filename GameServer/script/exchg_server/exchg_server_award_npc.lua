@@ -13,7 +13,7 @@ function main()
 	--tinsert(tbSay, format("%s/#get_award(3)", "比武大会联赛"))
 	--tinsert(tbSay, format("%s/#get_award(4)", "比武大会单人赛"))
 	tinsert(tbSay, format("%s/#get_award(5)", "Chi課 Trng  O竛 Уi"))
-	tinsert(tbSay, format("\n%s/nothing", "Ra kh醝"))
+	tinsert(tbSay, format("\n%s/nothing", "Exit"))
 	Say(szTitle, getn(tbSay), tbSay)
 end
 

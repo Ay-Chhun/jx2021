@@ -46,19 +46,19 @@ end
 function handle_use_ptwaizhuang( nItemIdx ) --1
 	local Title = "<color=gold>Quµ Ngo¹i Trang-Th­êng<color>: H·y chän mãn ngo¹i trang yªu thÝch"
 	local tbSay = {}
-	tinsert(tbSay,format("%s/#waizhuang(1,%d)", "Nh¸nh §µo T­¬i", nItemIdx))
-	tinsert(tbSay,format("%s/#waizhuang(2,%d)", "Con C¸-Eo (§á)", nItemIdx))
-	tinsert(tbSay,format("%s/#waizhuang(3,%d)", "Con C¸-L­ng (§á)", nItemIdx))
-	tinsert(tbSay,format("%s/nothing", "Hñy bá"))
+	tinsert(tbSay,format("%s/#waizhuang(1,%d)", "Fresh Peach Branch", nItemIdx))
+	tinsert(tbSay,format("%s/#waizhuang(2,%d)", "Fish Pendant (Red)", nItemIdx))
+	tinsert(tbSay,format("%s/#waizhuang(3,%d)", "Fish Charm (Red)", nItemIdx))
+	tinsert(tbSay,format("%s/nothing", "Cancel"))
 	Say(Title,getn(tbSay),tbSay)
 end
 function handle_use_hhwaizhuang( nItemIdx )	--2
 	local Title = "<color=gold>Quµ Ngo¹i Trang-Hµo Hoa<color>: H·y chän mãn ngo¹i trang yªu thÝch"
 	local tbSay = {}
-	tinsert(tbSay,format("%s/#waizhuang(4,%d)", "Nh­ ý (Lam)", nItemIdx))
-	tinsert(tbSay,format("%s/#waizhuang(5,%d)", "Siªu Phong (Lam)", nItemIdx))
-	tinsert(tbSay,format("%s/#waizhuang(6,%d)", "Oanh TrÇn Vò (Lam)", nItemIdx))
-	tinsert(tbSay,format("%s/nothing", "Hñy bá"))
+	tinsert(tbSay,format("%s/#waizhuang(4,%d)", "Ruyi (Blue)", nItemIdx))
+	tinsert(tbSay,format("%s/#waizhuang(5,%d)", "Soaring Wind (Blue)", nItemIdx))
+	tinsert(tbSay,format("%s/#waizhuang(6,%d)", "Thundering Dance (Blue)", nItemIdx))
+	tinsert(tbSay,format("%s/nothing", "Cancel"))
 	Say(Title,getn(tbSay),tbSay)
 end
 function handle_use_taozhilihe( nItemIdx )	--3

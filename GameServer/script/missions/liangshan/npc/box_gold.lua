@@ -19,7 +19,7 @@ T_GOLD_BoxScript = {
 T_GOLD_BOX_IDX = {}
 function remove_gold_box()
 	for i,v in T_GOLD_BOX_IDX do
-		if GetNpcName(i) == "Kim R­¬ng" then
+		if GetNpcName(i) == "Gold Chest" then
 			SetNpcLifeTime(i, 0);
 		end
 	end
@@ -32,7 +32,7 @@ function create_box_gold(m,x,y, nStage)
 	end
 	--local m, x, y = GetNpcWorldPos(nNpcIdx);
 	local x2, y2 = x + random(-5, 5), y + random(-5, 5);
-	local npc = CreateNpc("jinbaoxiang", "Kim R­¬ng", m, x2, y2);
+	local npc = CreateNpc("jinbaoxiang", "Gold Chest", m, x2, y2);
 	if npc and npc > 0 then
 		T_GOLD_BOX_IDX[npc] = npc
 		--SetNpcLifeTime(npc, 180);

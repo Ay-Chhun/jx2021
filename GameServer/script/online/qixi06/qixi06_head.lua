@@ -26,8 +26,8 @@ REQUIRE_STAR_COUNT = 7;
 tSexName = {"ThiÕu hiÖp","N÷ hiÖp "};
 
 t7XiItem = {	--Ãû×Ö,ÎïÆ·±àºÅ1,ÎïÆ·±àºÅ2,ÎïÆ·±àºÅ3
-		atlas = {"Tinh Tinh §Şa §å",2,0,407},
-		star = {"Sao b¨ng r¬i xuèng trÇn gian",2,0,408},
+		atlas = {"Star Map",2,0,407},
+		star = {"Meteor falling to the mortal world",2,0,408},
 		}
 --ÅĞ¶Ïµ±Ç°ÊÇ²»ÊÇÒ»ÄĞÒ»Å®×é¶ÓÇÒ¶¼´óÓÚ£±£°¼¶ÇÒÏà»¥¾àÀë²»³¬¹ı¾ÅÆÁ
 function Is_Lovers_Team()	

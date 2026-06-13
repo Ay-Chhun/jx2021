@@ -9,7 +9,7 @@ function main()
 	if GetSex() == 1 then
 		str_sex = "ThiÕu hiÖp"
 	elseif GetSex() == 2 then
-		str_sex = "C« n­¬ng"
+		str_sex = "Young lady"
 	else
 		str_sex = "ThiÕu hiÖp/N÷ hiÖp"
 	end
@@ -18,7 +18,7 @@ function main()
 		"Ta muèn t×m hiÓu ho¹t ®éng Nguyªn §¸n ®o¹t kú./know_detail",
 		"Ta chØ muèn hái th¨m./nothing"
 		}
-	Say("Nguyªn §¸n ®o¹t kú ®· b¾t ®Çu!"..str_sex..", ®©y lµ lóc chøng minh søc m¹nh cña ng­¬i!",3,SelTab)
+	Say("The New Year Banner-Seizing has begun!"..str_sex..", ®©y lµ lóc chøng minh søc m¹nh cña ng­¬i!",3,SelTab)
 end
 
 function hand_up()
@@ -44,7 +44,7 @@ function hand_up()
 		end
 		local flag_left = GetGlbValue(ID_FLAG_NUMBER_BJ)
 		if AddItem(0,102,21,1,1,-1,-1,-1,-1,-1,-1) == 1 then
-			Say("Hay qu¸!"..str_sex.."Cã thÓ ®o¹t lÊy tiªu kú, thËt kh«ng ph¶i dÔ! §©y lµ phÇn th­ëng cña b¹n!",0)
+			Say("Excellent!"..str_sex.."Cã thÓ ®o¹t lÊy tiªu kú, thËt kh«ng ph¶i dÔ! §©y lµ phÇn th­ëng cña b¹n!",0)
 			Msg2Player("B¹n nhËn ®­îc 1 t­íng qu©n giíi chØ!")
 		end
 		if GetGlbValue(ID_FLAG_NUMBER_BJ) == 0 then

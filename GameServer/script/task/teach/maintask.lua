@@ -32,7 +32,7 @@ function Teach_001()
 	local strMain = {
 	
 		"Hoan nghªnh ®Õn víi thÕ giíi <color=yellow>Vâ L©m 2<color>! Ta chuyªn h­íng dÉn t©n thñ! Tr«ng b¹n trÎ thËt lµ ®¸ng yªu!",
-		"¤ng thËt lµ tèt qu¸!/Teach_001_Okay",
+		"You are so kind!/Teach_001_Okay",
 		"C¸i g× ta còng hiÓu hÕt råi!/Teach_003"
 		
 	}
@@ -71,7 +71,7 @@ end
 
 -- Íæ¼ÒÑ¡ÔñÁËÃ»¿ÕÌıÄã†ªËôÖ®ºó
 function Teach_003()
-	Say("Sau nµy mçi khi t¨ng  cÊp nhí quay l¹i gÆp ta nhËn <color=yellow>NhiÖm vô<color>, häc mét vµi kinh nghiÖm giang hå, cho ®Õn lóc ®¹t cÊp 10 gia nhËp m«n ph¸i. ThÕ nµo h¶?",2,"Tèt qu¸! §a t¹ tiÒn bèi!/Teach_005","Ta kh«ng høng thó!/Teach_004");
+	Say("Sau nµy mçi khi t¨ng  cÊp nhí quay l¹i gÆp ta nhËn <color=yellow>NhiÖm vô<color>, häc mét vµi kinh nghiÖm giang hå, cho ®Õn lóc ®¹t cÊp 10 gia nhËp m«n ph¸i. ThÕ nµo h¶?",2,"Wonderful! Many thanks, senior!/Teach_005","Ta kh«ng høng thó!/Teach_004");
 end
 
 
@@ -155,7 +155,7 @@ end
 
 
 function Teach_Level02_01_01()
-	Say("Cã muèn ta giíi thiÖu ®Õn c¸c tiÖm kh¸c trong th«n nµy kh«ng?",2,"C¶m phiÒn tiÒn bèi!/acc_wuqi","Kh«ng cÇn ®©u!/rej_wuqi");
+	Say("Cã muèn ta giíi thiÖu ®Õn c¸c tiÖm kh¸c trong th«n nµy kh«ng?",2,"Thank you, senior!/acc_wuqi","Kh«ng cÇn ®©u!/rej_wuqi");
 end
 
 function acc_wuqi()
@@ -208,7 +208,7 @@ end
 function Teach_Level02_03()
 	local strMain = {
 		"TiÖm ta b¸n trang phôc tèt nhÊt vïng nµy cã thÓ gióp ng­¬i t¨ng phßng thñ néi ngo¹i lÉn s¸t th­¬ng. Lùa chän vµi mãn cho m×nh ®i!",
-		"Tèt qu¸, tÆng cho ta µ?",
+		"Wonderful, are you giving them to me?",
 		"D¹o nµy lµm ¨n khÊm kh¸, ng­¬i cã thÓ chän mét trong ba c¸i, cßn l¹i ®Ó ta b¸n cho ng­êi kh¸c.",
 		"Nh÷ng thø nµy cã g× kh¸c biÖt kh«ng?"		
 	}
@@ -291,7 +291,7 @@ function Teach_Level02_05()
 end
 
 function Teach_Level02_05_01()
-	Say("VËt phÈm trong game phong phó, ng­¬i muèn t×m hiÓu chóng kh«ng?",2,"C¶m phiÒn tiÒn bèi!/acc_fuzhuang","GhĞ ch¬i th«i!/rej_fuzhuang");
+	Say("VËt phÈm trong game phong phó, ng­¬i muèn t×m hiÓu chóng kh«ng?",2,"Thank you, senior!/acc_fuzhuang","Just dropping by!/rej_fuzhuang");
 end
 
 function acc_fuzhuang()
@@ -383,14 +383,14 @@ function Teach_Level02_07()
 	AddItem(2,5,1,1)
 	Msg2Player("B¹n nhËn ®­îc 1 tÊm Gi¸m ®Şnh phï!")
     end
-    Msg2Player("§Õn gÆp Chñ D­îc ®iÕm !");
+    Msg2Player("Go see the Pharmacy Owner!");
 	TE_SetTeachAdd() -- TEACH_SEASONNPC_ID Ó¦Îª 6
 end
 
 
 -- Íæ¼ÒÓëÒ©µêÀÏ°åµÄ¶Ô»°
 function Teach_Level02_08()
-	Say("Ng­¬i míi b­íc ch©n ra giang hå còng nªn häc hái mét chót kiÕn thøc vÒ y d­îc.",2,"C¶m phiÒn tiÒn bèi!/acc_yaodian","GhĞ ch¬i th«i!/rej_yaodian");
+	Say("Ng­¬i míi b­íc ch©n ra giang hå còng nªn häc hái mét chót kiÕn thøc vÒ y d­îc.",2,"Sorry to bother you, elder!/acc_yaodian","Just dropping by!/rej_yaodian");
 end
 
 
@@ -434,7 +434,7 @@ end
 
 -- Íæ¼ÒµÈ¼¶Éıµ½µÚÈı¼¶µÄÊ±ºòÀ´ÓëÒ°ÛÅ¶Ô»°
 function Teach_Level03()
-	Say("Tr«ng ng­¬i vÊt v¶! NhÊn phİm <color=yellow><R><color> ®Ó ®i cho nhanh. Cã bŞ l¹c ®­êng kh«ng?",2,"Ta l¹c ®­êng råi!/acc_milu","Kh«ng sao!/rej_milu")
+	Say("Tr«ng ng­¬i vÊt v¶! NhÊn phİm <color=yellow><R><color> ®Ó ®i cho nhanh. Cã bŞ l¹c ®­êng kh«ng?",2,"Ta l¹c ®­êng råi!/acc_milu","No worries!/rej_milu")
 end
 
 
@@ -478,13 +478,13 @@ end
 
 function Teach_Level03_01_01()
 
-	Say("§Ó ta chØ ng­¬i mét vµi c¸ch ®Ó chiÕn ®Êu.",2,"Tèt qu¸, phiÒn «ng chØ gi¸o./acc_killnpc","Th«i ®Ó ta tù t×m hiÓu/rej_killnpc")
+	Say("§Ó ta chØ ng­¬i mét vµi c¸ch ®Ó chiÕn ®Êu.",2,"Tèt qu¸, phiÒn «ng chØ gi¸o./acc_killnpc","I will figure it out myself/rej_killnpc")
 end
 
 function acc_killnpc()
 	local strMain = {
 		"ChiÕn ®Êu víi qu¸i gióp ng­êi ch¬i lµm nhiÖm vôt¨ng <color=yellow>®iÓm kinh nghiÖm<color>. Cã hai c¸ch <color=yellow>chiÕn ®Êu th­êng<color> vµ <color=yellow>PK<color>!",
-		"PK lµ g×?",
+		"What is PK?",
 		"ChiÕn ®Êu PK ta sÏ nãi sau, giê ta muèn nh¾c ®Õn chiÕn ®Êu th­êng gi÷a ng­êi ch¬i víi NPC (qu¸i), ng­¬i cã thÓ ra ngoµi thµnh nhÊp chuét vµo qu¸i mµ ng­¬i muèn ®¸nh. NÕu gia nhËp m«n ph¸i häc ®­îc c¸c chiªu thøc th× uy lùc ®¸nh qu¸i sÏ t¨ng gÊp béi.",
 	}
 	TE_Talk(getn(strMain), "acc_killnpc_01", strMain);
@@ -566,13 +566,13 @@ function Teach_Level04()
 
 	local strMain = {
 		"MÊy ngµy qua cã g× vui kh«ng?",
-		"Ch¶ cã g× thó vŞ! Ngoµi ®èi tho¹i vµ ®¸nh qu¸i ra, nÕu cã ai ®ã <color=yellow>t¸n gÉu<color> th× vui biÕt mÊy!",
+		"Nothing interesting! Aside from talking and fighting monsters, if someone would <color=yellow>chat<color> it would be so much fun!",
 		}
 	TE_Talk(getn(strMain), "teach_chat", strMain); 
 end		
 		
 function teach_chat()
-	Say("§­îc! Ta sÏ chØ cho ng­¬i c¸ch t¸n gÉu.",2,"Hay qu¸, xin ng­êi chØ gi¸o!/acc_chat","GhĞ ch¬i th«i!/rej_chat")	
+	Say("§­îc! Ta sÏ chØ cho ng­¬i c¸ch t¸n gÉu.",2,"Hay qu¸, xin ng­êi chØ gi¸o!/acc_chat","Just dropping by!/rej_chat")	
 end;		
 		
 function acc_chat()
@@ -811,7 +811,7 @@ function Teach_Level06_01()
 		"C¸t c¸nh cã thÓ ®¸nh thá x¸m ngoµi rõng, X¹ h­¬ng ®¸nh l­u manh r¬i ra hoÆc mua ë chñ d­îc ®iÕm."
 	}
 	TE_Talk(getn(strMain), "TE_SetTeachAdd", strMain); -- TEACH_SEASONNPC_ID Ó¦Îª 15
-	Msg2Player("Thu thËp 3 c¸t c¸nh vµ 3 X¹ h­¬ng!");
+	Msg2Player("Collect 3 balloon flowers and 3 musk!");
 end
 
 
@@ -927,7 +927,7 @@ function Teach_Level06_06()
 	SetTask(805,1) -- ÕâÊÇÒ»¸öÁÙÊ±±äÁ¿£¬´æ´¢Íæ¼ÒÊÇ·ñÒÑ¾­ÓĞ´¢ÎïÏä
 	Pay(500)
 	TE_SetTeachAdd() -- TEACH_SEASONNPC_ID Ó¦Îª 18
-	Say("R­¬ng chøa ®å ®· lµm xong, ta ®Ó ë <color=yellow>dŞch tr¹m<color>, ng­¬i cã thÓ ®Õn ®ã cÊt gi÷ vËt phÈm. B©y giê ta muèn giíi thiÖu cho ng­¬i vÒ kü n¨ng sèng, cã muèn nghe kh«ng?",2,"C¶m phiÒn tiÒn bèi!/acc_liveskill","Kh«ng cÇn ®©u!/rej_liveskill");
+	Say("R­¬ng chøa ®å ®· lµm xong, ta ®Ó ë <color=yellow>dŞch tr¹m<color>, ng­¬i cã thÓ ®Õn ®ã cÊt gi÷ vËt phÈm. B©y giê ta muèn giíi thiÖu cho ng­¬i vÒ kü n¨ng sèng, cã muèn nghe kh«ng?",2,"Sorry to bother you, elder!/acc_liveskill","Kh«ng cÇn ®©u!/rej_liveskill");
 end
 
 function acc_liveskill()
@@ -1017,16 +1017,16 @@ function Teach_Level07_02()
 		"Sao gièng tÊm giÊy vÏ bïa cña mÊy ®¹o sÜ vËy!",
 		"Haha! Ng­¬i lÇm to råi! §©y chİnh lµ <color=red>TÊm thÎ giê ch¬i<color>, do <color=yellow>tiÒn trang BiÖn Kinh<color> ph¸t hµnh. Sau khi n¹p thÎ ng­êi ch¬i cã thÓ chän ®æi thµnh giê ch¬i hoÆc ng©n phiÕu, cÇn thiÕt ®Õn tiÒn trang BiÖn Kinh ®æi thµnh giê ch¬i.",
 		"§a t¹ ®· chØ gi¸o!",
-		"Cho ta göi lêi th¨m hái ®Õn D· TÈu."
+		"Let me send my regards to the Wanderer."
 	
 	}
 	if (TE_GetTeachState()==19) then
 		TE_Talk(getn(strMain), "Teach_Level07_03", strMain);
-		Msg2Player("Mang ng©n phiÕu vÒ cho D· TÈu!");		
+		Msg2Player("Bring the bank note back to the Wanderer!");		
 	elseif (TE_GetTeachState()==20) and (GetItemCount(2,0,1)==0) then  -- Èç¹ûÍæ¼Ò¶ªÊ§ÁËÈÎÎñµÀ¾ßºóµÄ²¹³¥
                 AddItem(2,0,1,1)
 		Say("Sao gÊp vËy? Ng©n phiÕu ch­a lÊy ®· véi ®i råi?",0);
-		Msg2Player("Mang ng©n phiÕu vÒ cho D· TÈu!");
+		Msg2Player("Bring the bank note back to the Wanderer!");
 		return
 	end
 
@@ -1080,7 +1080,7 @@ end
 -- Ò°ÛÅ¶Ô»°µÄÑ¡Ôñ
 function Teach_Level08_01()
 
-	Say("Cßn g× ch­a râ kh«ng?",2,"HiÓu råi!/Teach_Level08_02","Ch­a hiÓu!/Teach_Money");
+	Say("Cßn g× ch­a râ kh«ng?",2,"HiÓu råi!/Teach_Level08_02","Not yet clear!/Teach_Money");
 
 end
 
@@ -1106,7 +1106,7 @@ end
 -- Íæ¼Ò»ØÀ´»Ø´ğÒ°ÛÅµÄÎÊÌâ
 function Teach_Level08_03()
 
-	Say("Ng­¬i hiÓu râ ®Æc s¾c cña thËp ®¹i m«n ph¸i ch­a?",2,"HiÓu råi!/Teach_Qustion_001","Ch­a hiÓu l¾m!/Teach_Exit");
+	Say("Ng­¬i hiÓu râ ®Æc s¾c cña thËp ®¹i m«n ph¸i ch­a?",2,"HiÓu råi!/Teach_Qustion_001","Not quite clear!/Teach_Exit");
 	return
 
 end
@@ -1114,7 +1114,7 @@ end
 
 -- Èç¹ûÍæ¼ÒÈ«²¿»Ø´ğÕıÈ·ÁËÎÊÌâÔò·¢Óè½±Àø²¢ÇÒ¸Ä±äÈÎÎñ±äÁ¿
 function Teach_Level08_04()
-	Say("Ng­¬i biÕt g× vÒ SÜ, HiÖp, Èn tam ®¹i l­u ph¸i?",2,"PhiÒn tiÒn bèi gi¶i thİch/acc_route","Ta biÕt råi!/rej_route");
+	Say("Ng­¬i biÕt g× vÒ SÜ, HiÖp, Èn tam ®¹i l­u ph¸i?",2,"Senior, please explain/acc_route","Ta biÕt råi!/rej_route");
 end
 
 
@@ -1166,9 +1166,9 @@ function Teach_Level09()
 	local strMain = {
 	
 		"Ng­¬i cã biÕt v× sao ta l¹i h­íng dÉn tËn t×nh nh­ vËy kh«ng?",
-		"Kh«ng biÕt!",
+		"I don't know!",
 		"ChuyÖn dµi dßng l¾m, ®îi ng­¬i luyÖn ®Õn <color=yellow>cÊp 10<color> h·y tİnh",
-		"……§­îc! Ta sÏ cè g¾ng!"
+		"Alright! I'll do my best!"
 	
 	}
 	TE_Talk(getn(strMain),"TE_SetTeachAdd",strMain); -- TEACH_SEASONNPC_ID Ó¦Îª 24
@@ -1227,27 +1227,27 @@ function Teach_Qustion_001()
 end
 
 function Teach_Qustion_002()
-	Say("Tr¶ lêi tèt l¾m! C©u hái tiÕp theo: KiÕm ph¸p Vâ §ang xuÊt thÇn nhËp quû do ®Ö tö ®¹o gia hay ®Ö tö tôc gia luyÖn?",3,"§¹o gia ®Ö tö/Teach_Qustion_003","Tôc gia ®Ö tö/Teach_Qustion_Error","C¶ hai ®Òu ®óng/Teach_Qustion_Error");
+	Say("Tr¶ lêi tèt l¾m! C©u hái tiÕp theo: KiÕm ph¸p Vâ §ang xuÊt thÇn nhËp quû do ®Ö tö ®¹o gia hay ®Ö tö tôc gia luyÖn?",3,"Taoist disciples/Teach_Qustion_003","Secular disciples/Teach_Qustion_Error","Both are correct/Teach_Qustion_Error");
 	return
 end
 
 function Teach_Qustion_003()
-	Say("Kh¸ l¾m! C©u hái 3: §­êng M«n ®­îc xem lµ gia téc m«n ph¸i, vËy ng­êi phô tr¸ch m«n ph¸i lµ ai?",4,"M«n chñ/Teach_Qustion_Error","L·o l·o/Teach_Qustion_004","Ch­ëng m«n/Teach_Qustion_Error","Tæng qu¶n/Teach_Qustion_Error");
+	Say("Kh¸ l¾m! C©u hái 3: §­êng M«n ®­îc xem lµ gia téc m«n ph¸i, vËy ng­êi phô tr¸ch m«n ph¸i lµ ai?",4,"M«n chñ/Teach_Qustion_Error","L·o l·o/Teach_Qustion_004","The Sect Leader/Teach_Qustion_Error","Tæng qu¶n/Teach_Qustion_Error");
 	return
 end
 
 function Teach_Qustion_004()
-	Say("C©u hái tiÕp theo: §Ö tö tôc gia Nga My sö dông binh khİ nµo?",4,"Thİch/Teach_Qustion_Error","KiÕm/Teach_Qustion_Error","CÇm/Teach_Qustion_005","Bót/Teach_Qustion_Error");
+	Say("C©u hái tiÕp theo: §Ö tö tôc gia Nga My sö dông binh khİ nµo?",4,"Dagger/Teach_Qustion_Error","KiÕm/Teach_Qustion_Error","Zither/Teach_Qustion_005","Brush/Teach_Qustion_Error");
 	return
 end
 
 function Teach_Qustion_005()
-	Say("§óng råi! C©u hái 5: Vâ c«ng ThiÕu L©m tinh th©m khã ®o¸n, 72 tuyÖt kü danh chÊn thiªn h¹. VËy ThiÕu L©m cã mÊy h­íng tu luyÖn?",4,"Mét/Teach_Qustion_Error","Hai/Teach_Qustion_Error","Ba/Teach_Qustion_006","Bèn/Teach_Qustion_Error");
+	Say("§óng råi! C©u hái 5: Vâ c«ng ThiÕu L©m tinh th©m khã ®o¸n, 72 tuyÖt kü danh chÊn thiªn h¹. VËy ThiÕu L©m cã mÊy h­íng tu luyÖn?",4,"One/Teach_Qustion_Error","Hai/Teach_Qustion_Error","Ba/Teach_Qustion_006","Four/Teach_Qustion_Error");
 	return
 end
 
 function Teach_Qustion_006()
-	Say("C©u hái cuèi cïng: Nghe nãi ®Ö tö C¸i Bang cã ¤ Y, TŞnh Y, vËy ®Ö tö TŞnh Y tu luyÖn vâ c«ng nµo?",4,"C«n ph¸p/Teach_Qustion_Error","Ch­ëng ph¸p/Teach_Level08_04","ThuÇn d­ìng/Teach_Qustion_Error","BÉy/Teach_Qustion_Error");
+	Say("C©u hái cuèi cïng: Nghe nãi ®Ö tö C¸i Bang cã ¤ Y, TŞnh Y, vËy ®Ö tö TŞnh Y tu luyÖn vâ c«ng nµo?",4,"C«n ph¸p/Teach_Qustion_Error","Palm techniques/Teach_Level08_04","Taming/Teach_Qustion_Error","Traps/Teach_Qustion_Error");
 	return
 end
 

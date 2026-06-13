@@ -24,14 +24,14 @@ thisFilePath = "\\script\\online_activites\\2011_11\\activity_02\\missionaries_n
 -------------------------------------
 --½±Àø±í
 VET_201111_SHENGDAN_AWARD = {
-	{1, 39, "TuÇn Léc", {0, 105, 35, 1, 1, -1, -1, -1, -1, -1, -1}, 60 * 24 * 3600},
-	{1, 58, "Trang trÝ Gi¸ng sinh",{{{"Nãn gi¸ng sinh chuÈn", {0,108,109,1}},{"Nãn gi¸ng sinh kh«i ng«", {0,108,110,1}},{"Nãn gi¸ng sinh gîi c¶m", {0,108,112,1}},{"Nãn gi¸ng sinh nhá", {0,108,111,1}}},
-						{{"Th­îng y gi¸ng sinh chuÈn", {0,109,109,1}},{"Gi¸ng sinh kh«i ng«", {0,109,110,1}},{"Th­¬ng y gi¸ng sinh gîi c¶m", {0,109,112,1}},{"Th­¬ng y gi¸ng sinh KiÒu n÷", {0,109,111,1}}},
-						{{"H¹ y Gi¸ng sinh chuÈn", {0,110,73,1}},{"Trang phôc gi¸ng sinh kh«i ng«", {0,110,74,1}},{"H¹ y gi¸ng sinh n÷ gîi c¶m", {0,110,76,1}},{"Gi¸ng sinh KiÒu n÷", {0,110,75,1}}},
+	{1, 39, "Tuan Loc", {0, 105, 35, 1, 1, -1, -1, -1, -1, -1, -1}, 60 * 24 * 3600},
+	{1, 58, "Trang trÝ Gi¸ng sinh",{{{"Standard Christmas Hat", {0,108,109,1}},{"Imposing Christmas Hat", {0,108,110,1}},{"Alluring Christmas Hat", {0,108,112,1}},{"Small Christmas Hat", {0,108,111,1}}},
+						{{"Standard Christmas Top", {0,109,109,1}},{"Imposing Christmas Outfit", {0,109,110,1}},{"Alluring Christmas Top", {0,109,112,1}},{"Charming Women's Christmas Top", {0,109,111,1}}},
+						{{"Standard Christmas Bottom", {0,110,73,1}},{"Trang phôc gi¸ng sinh kh«i ng«", {0,110,74,1}},{"Alluring Women's Christmas Bottom", {0,110,76,1}},{"Charming Women's Christmas", {0,110,75,1}}},
 						},60 * 24 * 3600, 1},
-	{1, 3, "Trang trÝ Gi¸ng sinh",{{{"Nãn gi¸ng sinh chuÈn", {0,108,109,1}},{"Nãn gi¸ng sinh kh«i ng«", {0,108,110,1}},{"Nãn gi¸ng sinh gîi c¶m", {0,108,112,1}},{"Nãn gi¸ng sinh nhá", {0,108,111,1}}},
-						{{"Th­îng y gi¸ng sinh chuÈn", {0,109,109,1}},{"Gi¸ng sinh kh«i ng«", {0,109,110,1}},{"Th­¬ng y gi¸ng sinh gîi c¶m", {0,109,112,1}},{"Th­¬ng y gi¸ng sinh KiÒu n÷", {0,109,111,1}}},
-						{{"H¹ y Gi¸ng sinh chuÈn", {0,110,73,1}},{"Trang phôc gi¸ng sinh kh«i ng«", {0,110,74,1}},{"H¹ y gi¸ng sinh n÷ gîi c¶m", {0,110,76,1}},{"Gi¸ng sinh KiÒu n÷", {0,110,75,1}}},
+	{1, 3, "Trang trÝ Gi¸ng sinh",{{{"Standard Christmas Hat", {0,108,109,1}},{"Imposing Christmas Hat", {0,108,110,1}},{"Alluring Christmas Hat", {0,108,112,1}},{"Small Christmas Hat", {0,108,111,1}}},
+						{{"Standard Christmas Top", {0,109,109,1}},{"Imposing Christmas Outfit", {0,109,110,1}},{"Alluring Christmas Top", {0,109,112,1}},{"Charming Women's Christmas Top", {0,109,111,1}}},
+						{{"Standard Christmas Bottom", {0,110,73,1}},{"Trang phôc gi¸ng sinh kh«i ng«", {0,110,74,1}},{"Alluring Women's Christmas Bottom", {0,110,76,1}},{"Charming Women's Christmas", {0,110,75,1}}},
 						},0, 1},
 }
 
@@ -134,9 +134,9 @@ function buy_ngoaitrang()
 		local nNon = VET_201111_SHENGDAN_AWARD[2][4][1][nbody][2]
 		local nAo = VET_201111_SHENGDAN_AWARD[2][4][2][nbody][2]
 		local nQuan = VET_201111_SHENGDAN_AWARD[2][4][3][nbody][2]
-		gf_AddItemEx2(nNon, "Nãn Gi¸ng Sinh","ITEM NOEL", "mua thµnh c«ng 1 nãn gi¸ng sinh", 7 * 24 * 3600 )
-		gf_AddItemEx2(nAo, "Aã Gi¸ng Sinh","ITEM NOEL", "mua thµnh c«ng 1 ¸o gi¸ng sinh", 7 * 24 * 3600 )		
-		gf_AddItemEx2(nQuan, "QuÇn Gi¸ng Sinh","ITEM NOEL", "mua thµnh c«ng 1 quÇn gi¸ng sinh", 7 * 24 * 3600 )
+		gf_AddItemEx2(nNon, "Christmas Hat","ITEM NOEL", "mua thµnh c«ng 1 nãn gi¸ng sinh", 7 * 24 * 3600 )
+		gf_AddItemEx2(nAo, "Christmas Coat","ITEM NOEL", "mua thµnh c«ng 1 ¸o gi¸ng sinh", 7 * 24 * 3600 )		
+		gf_AddItemEx2(nQuan, "Christmas Pants","ITEM NOEL", "mua thµnh c«ng 1 quÇn gi¸ng sinh", 7 * 24 * 3600 )
 	end 
 end
 
@@ -150,6 +150,6 @@ function buy_thucuoi()
 		return 0
 	end
 	if Pay(1000000) == 1 then
-		gf_AddItemEx2({0, 105, 35, 1, 1, -1, -1, -1, -1, -1, -1}, "TuÇn Léc","ITEM NOEL", "mua thµnh c«ng 1 tuÇn léc", 7 * 24 * 3600 )
+		gf_AddItemEx2({0, 105, 35, 1, 1, -1, -1, -1, -1, -1, -1}, "Tuan Loc","ITEM NOEL", "mua thµnh c«ng 1 tuÇn léc", 7 * 24 * 3600 )
 	end   
 end

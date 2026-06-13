@@ -29,37 +29,37 @@ tbNguyenLieuNop = {
 	[8] = {700, {item={{gdp={2,95,204,1}, name="Thi™n Cang L÷nh"}}}, "01 Thi™n Cang L÷nh (700 Æi”m)"},
 	[9] = {600, {item={{gdp={2,1,30370,1}, name="Thi™n M´n Kim L÷nh"}}}, "01 Thi™n M´n Kim L÷nh (600 Æi”m)"},
 	[10] = {3, {item={{gdp={2,1,30410,1}, name="M∂nh Thi™n M´n"}}, nGold = 10000}, "01 M∂nh Thi™n M´n + 01 Vµng (3 Æi”m)"},
-	[11] = {160, {item={{gdp={0,112,78,1}, name="L®ng Ba Vi BÈ"}, {gdp={2,1,199,1}, name = "ßπi Ng©n Phi’u"}}}, "01 L®ng Ba Vi BÈ + 01 ßπi Ng©n Phi’u (160 Æi”m)"},
-	[12] = {80, {item={{gdp={2,1,30164,39}, name="Nh∑n"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 Nh∑n + 19 xu vÀt ph»m (80 Æi”m)"},
-	[13] = {80, {item={{gdp={2,1,30165,39}, name="Ch´m Ch´m"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 Ch´m Ch´m + 19 xu vÀt ph»m (80 Æi”m)"},
-	[14] = {80, {item={{gdp={2,1,30166,39}, name="Cam"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 Cam + 19 xu vÀt ph»m (80 Æi”m)"},
-	[15] = {80, {item={{gdp={2,1,30167,39}, name="Dıa"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 Dıa + 19 xu vÀt ph»m (80 Æi”m)"},
-	[16] = {80, {item={{gdp={2,1,30168,39}, name="M®ng CÙt"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 M®ng CÙt + 19 xu vÀt ph»m (80 Æi”m)"},
-	[17] = {80, {item={{gdp={2,1,30169,39}, name="B≠Îi"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 B≠Îi + 19 xu vÀt ph»m (80 Æi”m)"},
-	[18] = {80, {item={{gdp={2,1,30170,39}, name="D©u"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 D©u + 19 xu vÀt ph»m (80 Æi”m)"},
-	[19] = {80, {item={{gdp={2,1,30171,39}, name="ChuËi"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 ChuËi + 19 xu vÀt ph»m (80 Æi”m)"},
-	[20] = {80, {item={{gdp={2,1,30172,39}, name="Xoµi"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 Xoµi + 19 xu vÀt ph»m (80 Æi”m)"},
-	[21] = {80, {item={{gdp={2,1,30173,39}, name="ßµo"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 ßµo + 19 xu vÀt ph»m (80 Æi”m)"},
-	[22] = {80, {item={{gdp={2,1,30174,39}, name="MÀn"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 MÀn + 19 xu vÀt ph»m (80 Æi”m)"},
-	[23] = {80, {item={{gdp={2,1,30175,39}, name="V∂i"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 V∂i + 19 xu vÀt ph»m (80 Æi”m)"},
-	[24] = {80, {item={{gdp={2,1,30176,39}, name="T∏o"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 T∏o + 19 xu vÀt ph»m (80 Æi”m)"},
-	[25] = {80, {item={{gdp={2,1,30177,39}, name="B¨"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 B¨ + 19 xu vÀt ph»m (80 Æi”m)"},
-	[26] = {80, {item={{gdp={2,1,30178,39}, name="ßu ßÒ"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 ßu ßÒ + 19 xu vÀt ph»m (80 Æi”m)"},
-	[27] = {80, {item={{gdp={2,1,30179,39}, name="M∑ng C«u"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 M∑ng C«u + 19 xu vÀt ph»m (80 Æi”m)"},
-	[28] = {80, {item={{gdp={2,1,30180,39}, name="Kh„m"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 Kh„m + 19 xu vÀt ph»m (80 Æi”m)"},
-	[29] = {80, {item={{gdp={2,1,30181,39}, name="L™"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 L™ + 19 xu vÀt ph»m (80 Æi”m)"},
-	[30] = {80, {item={{gdp={2,1,30182,39}, name="Bﬂn Bon"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 Bﬂn Bon + 19 xu vÀt ph»m (80 Æi”m)"},
-	[31] = {80, {item={{gdp={2,1,30183,39}, name="Kh’"}, {gdp={2,1,30230,19}, name = "Xu VÀt Ph»m"}}}, "39 Kh’ + 19 xu vÀt ph»m (80 Æi”m)"},
+	[11] = {160, {item={{gdp={0,112,78,1}, name="Lingbo Microstep"}, {gdp={2,1,199,1}, name = "Great Silver Note"}}}, "01 L®ng Ba Vi BÈ + 01 ßπi Ng©n Phi’u (160 Æi”m)"},
+	[12] = {80, {item={{gdp={2,1,30164,39}, name="Longan"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 Nh∑n + 19 xu vÀt ph»m (80 Æi”m)"},
+	[13] = {80, {item={{gdp={2,1,30165,39}, name="Rambutan"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 Ch´m Ch´m + 19 xu vÀt ph»m (80 Æi”m)"},
+	[14] = {80, {item={{gdp={2,1,30166,39}, name="Cam"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 Cam + 19 xu vÀt ph»m (80 Æi”m)"},
+	[15] = {80, {item={{gdp={2,1,30167,39}, name="Coconut"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 Dıa + 19 xu vÀt ph»m (80 Æi”m)"},
+	[16] = {80, {item={{gdp={2,1,30168,39}, name="Mangosteen"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 M®ng CÙt + 19 xu vÀt ph»m (80 Æi”m)"},
+	[17] = {80, {item={{gdp={2,1,30169,39}, name="Pomelo"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 B≠Îi + 19 xu vÀt ph»m (80 Æi”m)"},
+	[18] = {80, {item={{gdp={2,1,30170,39}, name="Strawberry"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 D©u + 19 xu vÀt ph»m (80 Æi”m)"},
+	[19] = {80, {item={{gdp={2,1,30171,39}, name="Banana"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 ChuËi + 19 xu vÀt ph»m (80 Æi”m)"},
+	[20] = {80, {item={{gdp={2,1,30172,39}, name="Mango"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 Xoµi + 19 xu vÀt ph»m (80 Æi”m)"},
+	[21] = {80, {item={{gdp={2,1,30173,39}, name="Peach"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 ßµo + 19 xu vÀt ph»m (80 Æi”m)"},
+	[22] = {80, {item={{gdp={2,1,30174,39}, name="Plum"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 MÀn + 19 xu vÀt ph»m (80 Æi”m)"},
+	[23] = {80, {item={{gdp={2,1,30175,39}, name="Lychee"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 V∂i + 19 xu vÀt ph»m (80 Æi”m)"},
+	[24] = {80, {item={{gdp={2,1,30176,39}, name="Apple"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 T∏o + 19 xu vÀt ph»m (80 Æi”m)"},
+	[25] = {80, {item={{gdp={2,1,30177,39}, name="Avocado"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 B¨ + 19 xu vÀt ph»m (80 Æi”m)"},
+	[26] = {80, {item={{gdp={2,1,30178,39}, name="Papaya"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 ßu ßÒ + 19 xu vÀt ph»m (80 Æi”m)"},
+	[27] = {80, {item={{gdp={2,1,30179,39}, name="Soursop"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 M∑ng C«u + 19 xu vÀt ph»m (80 Æi”m)"},
+	[28] = {80, {item={{gdp={2,1,30180,39}, name="Pineapple"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 Kh„m + 19 xu vÀt ph»m (80 Æi”m)"},
+	[29] = {80, {item={{gdp={2,1,30181,39}, name="Li"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 L™ + 19 xu vÀt ph»m (80 Æi”m)"},
+	[30] = {80, {item={{gdp={2,1,30182,39}, name="Langsat"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 Bﬂn Bon + 19 xu vÀt ph»m (80 Æi”m)"},
+	[31] = {80, {item={{gdp={2,1,30183,39}, name="Star Fruit"}, {gdp={2,1,30230,19}, name = "Item Token"}}}, "39 Kh’ + 19 xu vÀt ph»m (80 Æi”m)"},
 	[32] = {6, {item={{gdp={2,1,149,1}, name="B®ng Thπch"}}}, "01 B®ng Thπch (6 Æi”m)"},
 	[33] = {60, {item={{gdp={2,1,30130,1}, name="Phi Y™n Thπch"}}}, "01 Phi Y’n Thπch (60 Æi”m)"},
 	[34] = {100, {item={{gdp={2,0,1084,1}, name="Thi™n Qu∏i Thπch"}}}, "01 Thi™n Qu∏i Thπch (100 Æi”m)"},
-	[35] = {15, {item={{gdp={2,1,30346,1}, name="M∂nh Bπch Kim"}, {gdp={2,1,30230,1}, name="Xu VÀt Ph»m"}}}, "01 M∂nh Bπch Kim + 01 xu vÀt ph»m (15 Æi”m)"},
-	[36] = {30, {item={{gdp={2,1,30342,1}, name="Kim R≠¨ng"}}}, "01 Kim R≠¨ng (30 Æi”m)"},
+	[35] = {15, {item={{gdp={2,1,30346,1}, name="M∂nh Bπch Kim"}, {gdp={2,1,30230,1}, name="Item Token"}}}, "01 M∂nh Bπch Kim + 01 xu vÀt ph»m (15 Æi”m)"},
+	[36] = {30, {item={{gdp={2,1,30342,1}, name="Gold Chest"}}}, "01 Kim R≠¨ng (30 Æi”m)"},
 	[37] = {150, {item={{gdp={2,1,30343,1}, name="Bπch Kim R≠¨ng"}}}, "01 Bπch Kim R≠¨ng (150 Æi”m)"},
 	[38] = {1350, {item={{gdp={2,1,30344,1}, name="Th«n Tµi B∂o R≠¨ng"}}}, "01 Th«n Tµi B∂o R≠¨ng (1,350 Æi”m)"},
-	[39] = {1500, {item={{gdp={2,1,30345,1}, name="Chuy”n Sinh ß¨n"}}}, "01 Chuy”n Sinh ß¨n (1,500 Æi”m)"},
-	[40] = {1000, {item={{gdp={2,1,1006,1}, name="Cˆu Thi™n V´ C˘c ß¨n"}, {gdp={2,1,199,1}, name = "ßπi Ng©n Phi’u"}}}, "01 Cˆu Thi™n V´ C˘c ß¨n + 01 ßπi Ng©n Phi’u (1,000 Æi”m)"},
-	[41] = {200, {item={{gdp={2,1,30230,10}, name="Xu VÀt Ph»m"}}, nExp = 100000000}, "100.000.000 Æi”m kinh nghi÷m + 10 xu vÀt ph»m (200 Æi”m)"},
+	[39] = {1500, {item={{gdp={2,1,30345,1}, name="Rebirth Pill"}}}, "01 Chuy”n Sinh ß¨n (1,500 Æi”m)"},
+	[40] = {1000, {item={{gdp={2,1,1006,1}, name="Cˆu Thi™n V´ C˘c ß¨n"}, {gdp={2,1,199,1}, name = "Great Silver Note"}}}, "01 Cˆu Thi™n V´ C˘c ß¨n + 01 ßπi Ng©n Phi’u (1,000 Æi”m)"},
+	[41] = {200, {item={{gdp={2,1,30230,10}, name="Item Token"}}, nExp = 100000000}, "100.000.000 Æi”m kinh nghi÷m + 10 xu vÀt ph»m (200 Æi”m)"},
 }
 
 tbKimXaTuongQuan = {
@@ -123,7 +123,7 @@ tbKimXa3sao = {
 	[12] = {item={{gdp={0,153,7,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Huy Ch≠¨ng H·a Ch’ ngÚ hµnh"}}},
 	[13] = {item={{gdp={0,153,8,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Huy Ch≠¨ng ThÊ Ch’ ngÚ hµnh"}}},
 	[14] = {item={{gdp={0,153,9,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Huy Ch≠¨ng ¢m Ch’ ngÚ hµnh"}}},
-	[15] = {item={{gdp={0,154,3,1,1,-1,-1,-1,-1,-1,-1,-1}, name="BË Ch’ Cao ßÂng Ngoa"}}},
+	[15] = {item={{gdp={0,154,3,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Gao Tong Wa Recipe"}}},
 	[16] = {item={{gdp={0,154,4,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Chi’n Hµi Kim Ch’ ngÚ hµnh"}}},
 	[17] = {item={{gdp={0,154,5,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Chi’n Hµi MÈc Ch’ ngÚ hµnh"}}},
 	[18] = {item={{gdp={0,154,6,1,1,-1,-1,-1,-1,-1,-1,-1}, name="Chi’n Hµi ThÒy Ch’ ngÚ hµnh"}}},
@@ -171,7 +171,7 @@ tbTopAwardItem = {
 }
 
 tbPhanThuongCaNhan = {
-	[1] = {item={{gdp={2,1,30340,999}, name = "MÈc R≠¨ng"}}, nExp = 50000000},
+	[1] = {item={{gdp={2,1,30340,999}, name = "Wooden Chest"}}, nExp = 50000000},
 	[2] = {nDanhvong =2000, nSumon = 2000},
 	[3] = {nChankhi = 10000},
 	[4] = {item={{gdp={2,1,30536,150}, name = "T»y T©m Thπch Kho∏ng"}}},
@@ -190,24 +190,24 @@ tbPhanThuongCaNhan = {
 	[17] = {item={{gdp={2,1,30133,20}, name = "Ch◊a Kh„a Vµng	"}}},
 	[18] = {fn="TrangBiKimXaAmChe()"},
 	[19] = {fn="MatTichMonPhai20_Menu()"},
-	[20] = {item={{gdp={0,102,8844,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name = "Huy Hoµng QuÀt KhÎi"}, {gdp={0,102,8845,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name = "Vinh D˘ QuÀt KhÎi"}}},
+	[20] = {item={{gdp={0,102,8844,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name = "Huy Hoµng QuÀt KhÎi"}, {gdp={0,102,8845,1,1,-1,-1,-1,-1,-1,-1,-1,0}, name = "Glory Rise"}}},
 }
 
 tbDieuKienNhanThuong = {
-	[1] = {150, {item={{gdp={2,1,30230,1}, name = "Xu VÀt Ph»m"}}}, "50.000.000 Æi”m kinh nghi÷m + 999 MÈc R≠¨ng",2,250},
-	[2] = {200, {item={{gdp={2,1,30230,20}, name = "Xu VÀt Ph»m"}}}, "2.000 danh v‰ng + 2.000 s≠ m´n",0,250},
-	[3] = {300, {item={{gdp={2,1,30230,30}, name = "Xu VÀt Ph»m"}}}, "10.000 Æi”m ch©n kh›",0,250},
-	[4] = {500, {item={{gdp={2,1,30230,10}, name = "Xu VÀt Ph»m"}}}, "150 T»y T©m Kho∏ng Thπch",2,250},
-	[5] = {1000, {item={{gdp={2,1,30230,10}, name = "Xu VÀt Ph»m"}}}, "150 Luy÷n L´ Kho∏ng Thπch",2,250},
-	[6] = {1500, {item={{gdp={2,1,30230,50}, name = "Xu VÀt Ph»m"}}}, "15.000 Æi”m c´ng trπng",0,250},
-	[7] = {2000, {item={{gdp={2,1,30230,20}, name = "Xu VÀt Ph»m"}}}, "200 Nh©n S©m Vπn N®m",3,250},
-	[8] = {2500, {item={{gdp={2,1,30230,6}, name = "Xu VÀt Ph»m"}}}, "6.000 v‚ l©m b∂o hπp",7,250},
-	[9] = {3000, {item={{gdp={2,1,30230,300}, name = "Xu VÀt Ph»m"}}}, "03 Ch◊a Kh„a Vµng",4,250},
-	[10] = {3500, {item={{gdp={2,1,30230,60}, name = "Xu VÀt Ph»m"}}}, "06 Qu©n C´ng ßπi",7,250},
-	[11] = {4000, {item={{gdp={2,1,30230,400}, name = "Xu VÀt Ph»m"}}}, "400 Ma Tinh + 100 B®ng Tinh Thπch",3,250},
-	[12] = {5000, {item={{gdp={2,1,30230,800}, name = "Xu VÀt Ph»m"}}}, "09 Qu©n C´ng Huy Hoµng (hπn sˆ dÙng 30 ngµy)",10,250},
+	[1] = {150, {item={{gdp={2,1,30230,1}, name = "Item Token"}}}, "50.000.000 Æi”m kinh nghi÷m + 999 MÈc R≠¨ng",2,250},
+	[2] = {200, {item={{gdp={2,1,30230,20}, name = "Item Token"}}}, "2,000 reputation + 2,000 sect contribution",0,250},
+	[3] = {300, {item={{gdp={2,1,30230,30}, name = "Item Token"}}}, "10.000 Æi”m ch©n kh›",0,250},
+	[4] = {500, {item={{gdp={2,1,30230,10}, name = "Item Token"}}}, "150 T»y T©m Kho∏ng Thπch",2,250},
+	[5] = {1000, {item={{gdp={2,1,30230,10}, name = "Item Token"}}}, "150 Luy÷n L´ Kho∏ng Thπch",2,250},
+	[6] = {1500, {item={{gdp={2,1,30230,50}, name = "Item Token"}}}, "15.000 Æi”m c´ng trπng",0,250},
+	[7] = {2000, {item={{gdp={2,1,30230,20}, name = "Item Token"}}}, "200 Nh©n S©m Vπn N®m",3,250},
+	[8] = {2500, {item={{gdp={2,1,30230,6}, name = "Item Token"}}}, "6.000 v‚ l©m b∂o hπp",7,250},
+	[9] = {3000, {item={{gdp={2,1,30230,300}, name = "Item Token"}}}, "03 Ch◊a Kh„a Vµng",4,250},
+	[10] = {3500, {item={{gdp={2,1,30230,60}, name = "Item Token"}}}, "06 Qu©n C´ng ßπi",7,250},
+	[11] = {4000, {item={{gdp={2,1,30230,400}, name = "Item Token"}}}, "400 Ma Tinh + 100 B®ng Tinh Thπch",3,250},
+	[12] = {5000, {item={{gdp={2,1,30230,800}, name = "Item Token"}}}, "09 Qu©n C´ng Huy Hoµng (hπn sˆ dÙng 30 ngµy)",10,250},
 	[13] = {6000, {item={{gdp={2,1,30490,2}, name = "Hoµng Kim ßπi Ng©n Phi’u"}}}, "10 Kim Xµ c p 3 sao ng…u nhi™n",11,250},
-	[14] = {8000, {item={{gdp={2,1,30490,2}, name = "Hoµng Kim ßπi Ng©n Phi’u"}}}, "80 Thi’t Tinh C p 3",8,250},
+	[14] = {8000, {item={{gdp={2,1,30490,2}, name = "Hoµng Kim ßπi Ng©n Phi’u"}}}, "80 Iron Essence Level 3",8,250},
 	[15] = {10000, {item={{gdp={2,1,30490,5}, name = "Hoµng Kim ßπi Ng©n Phi’u"}}}, "68 Luy÷n L´ Thi’t C p 3",2,250},
 	[16] = {12000, {item={{gdp={2,1,30490,5}, name = "Hoµng Kim ßπi Ng©n Phi’u"}}}, "79 T»y T©m Thπch C p 3",2,250},
 	[17] = {15000, {item={{gdp={2,1,30490,6}, name = "Hoµng Kim ßπi Ng©n Phi’u"}}}, "20 Ch◊a Kh„a Vµng",20,250},
@@ -217,17 +217,17 @@ tbDieuKienNhanThuong = {
 }
 
 tbMatTich = {
-		[2] = {0,107,204, 2,"Kim Cang B∏t Nh∑ Ch©n Quy”n"},
-		[4] = {0,107,205, 1,"Ti“m Long TÛc Di÷t Ch©n Quy”n"},
-		[3] = {0,107,206, 1,"V´ Tr«n BÂ ß“ Ch©n Quy”n"},
+		[2] = {0,107,204, 2,"Vajra Prajna True Scroll"},
+		[4] = {0,107,205, 1,"Hidden Dragon Annihilation True Manual"},
+		[3] = {0,107,206, 1,"Dustless Bodhi True Manual"},
 		[6] = {0,107,207, 2,"Thi™n La Li™n Ch©u Ch©n Quy”n"},
-		[8] = {0,107,208, 1,"Nh≠ ˝ Kim ßÿnh Ch©n Quy”n"},
-		[9] = {0,107,209, 1,"B›ch H∂i Tuy÷t ¢m Ch©n Quy”n"},
-		[11] = {0,107,210, 2,"HÁn ßÈn Tr n Nhπc Ch©n Quy”n"},
+		[8] = {0,107,208, 1,"Wishful Golden Top True Manual"},
+		[9] = {0,107,209, 1,"Azure Sea Silent Sound True Manual"},
+		[11] = {0,107,210, 2,"Chaos Town Mountain True Manual"},
 		[12] = {0,107,211, 2,"Qu˙ Thi™n Du Long Ch©n Quy”n"},
 		[14] = {0,107,212, 1,"Huy“n ∂nh M™ T´ng Ch©n Quy”n"},
-		[15] = {0,107,213, 2,"Qu©n Tˆ ßÌi Phong Ch©n Quy”n"},
-		[17] = {0,107,214, 2,"Tr n Qu©n Phi Long Th≠¨ng Ch©n Quy”n"},
+		[15] = {0,107,213, 2,"Gentleman Welcomes the Wind True Manual"},
+		[17] = {0,107,214, 2,"Town Army Flying Dragon Spear True Manual"},
 		[18] = {0,107,215, 2,"Xuy™n V©n Lπc HÂng Ch©n Quy”n"},
 		[20] = {0,107,216, 2,"Huy“n Minh Phong Ma Ch©n Quy”n"},
 		[21] = {0,107,217, 1,"Linh CÊ Huy“n Tµ Ch©n Quy”n"},
@@ -241,7 +241,7 @@ szNpcName = "<color=green>La Sa<color>: "
 function EventKimXaLienServer_Menu()
 	local nDate = tonumber(date("%y%m%d"))
 	local tbSay = {}
-	tinsert(tbSay, "ß®ng k˝ tham gia Kim Xµ Nguy™n So∏i/EventKimXaLienServer_DangKy")
+	tinsert(tbSay, "Register to join Gold Serpent Marshal/EventKimXaLienServer_DangKy")
 	tinsert(tbSay, "Tham d˘ cuÈc Æua bang hÈi nhÀn Kim Xµ Nguy™n So∏i/EventKimXaLienServer_Vote_Menu")
 	tinsert(tbSay, "Xem Æi”m t›ch lÚy b∂n th©n/EventKimXaLienServer_XemDiem")
 	tinsert(tbSay, "Xem Æi”m t›ch lÚy c∏c bang hÈi tham gia/EventKimXaLienServer_XemDiemBang")
@@ -324,7 +324,7 @@ function EventKimXaLienServer_Vote_Done(szAccount,nIndex)
 		return 0
 	end
 	local nPoint = tbNguyenLieuNop[nIndex][1]
-	local tbAward = {task={{TSK_KIMXA_ALLSERVER_POINT, nPoint , "ßi”m t›ch lÚy"}}}
+	local tbAward = {task={{TSK_KIMXA_ALLSERVER_POINT, nPoint , "Accumulated points"}}}
 	local nCheck = 0
 	nCheck = LIB_Award:CheckMaterial(tbNguyenLieuNop[nIndex][2])
 	if nCheck == 0 then
@@ -347,14 +347,14 @@ function EventKimXaLienServer_Vote_Done(szAccount,nIndex)
 	end
 	LIB_txtData.tbTextData[nBang][4] = LIB_txtData.tbTextData[nBang][4] + nPoint
 	LIB_txtData:SaveMultiColumn()
-	gf_WriteLogEx(szLogTitle, "nhÀn", 1, "Òng hÈ "..tbNguyenLieuNop[nIndex][3])
+	gf_WriteLogEx(szLogTitle, "nhÀn", 1, "support"..tbNguyenLieuNop[nIndex][3])
 	EventKimXaLienServer_Vote(szAccount)
 end
 
 
 function EventKimXaLienServer_XemDiem()
 	local nPoint = GetTask(TSK_KIMXA_ALLSERVER_POINT)
-	Talk(1,"","Ng≠¨i Æang c„ trong tay <color=yellow>".. nPoint  .." Æi”m t›ch lÚy<color>, hay mau ch„ng ÆÊi ph«n th≠Îng.")
+	Talk(1,"","You currently have in hand <color=yellow>".. nPoint  .." Æi”m t›ch lÚy<color>, hay mau ch„ng ÆÊi ph«n th≠Îng.")
 end
 
 
@@ -633,7 +633,7 @@ function EventKimXaLienServer_MatTichMonPhai20_Done(nIndex)
 		SetBookInfo(nItemID, nil, 3, 20, 1, 20, 20)
 	end
 	gf_WriteLogEx(szLogTitle, "nhÀn", 1, tbDieuKienNhanThuong[19][1].." Æi”m: "..tbDieuKienNhanThuong[19][3])
-	Talk(1,"","C∏c hπ Æ∑ nhÀn 1 mÀt tﬁch si™u c p, c„ th” nhÀn ti’p "..gf_GetTaskByte(TSK_KIMXA_ALLSERVER_POINT, 2).." quy”n")
+	Talk(1,"","C∏c hπ Æ∑ nhÀn 1 mÀt tﬁch si™u c p, c„ th” nhÀn ti’p "..gf_GetTaskByte(TSK_KIMXA_ALLSERVER_POINT, 2).." volume")
 end
 
 

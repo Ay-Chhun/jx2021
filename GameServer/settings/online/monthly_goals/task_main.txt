@@ -14,10 +14,10 @@ ID Nhi÷m vÙ	1: Nhi÷m vÙ ngµy	Ti™u Æ“ nhi÷m vÙ	Mi™u t∂ Nhi÷m vÙ	NhÀn nhi÷m vÙ nµy
 4	1	TrÂng 1 C©y Hπt GiËng	<color=White>TrÂng vµ thu hoπch 1 <color=Green>C©y Hπt GiËng	-1	492	325	2	2;1;31506;1;4																							
 5	1	VÀn ti™u	<color=White>ß’n khu v˘c Th’ L˘c Ba Phe, hoµn thµnh 1 l«n <color=Green>VÀn Ti™u	-1	233	326	2	2;1;31506;2;4																							
 6	1	C≠Ìp ti™u	<color=White>ß’n khu v˘c Th’ L˘c Ba Phe, <color=Green>Æoπt Ti™u Xa 1 l«n	-1	493	327	2	2;1;31506;2;4																							
-7	1	Ph∏o Chi’n Thæng	<color=White>Sˆ dÙng <color=Green>50 Ph∏o Chi’n Thæng	-1	225	328	2	2;1;31506;5;4																							
+7	1	Victory Cannon	<color=White>Sˆ dÙng <color=Green>50 Ph∏o Chi’n Thæng	-1	225	328	2	2;1;31506;5;4																							
 8	1	Th«n Du Th∏i H≠	<color=White>TÊ ÆÈi Æ’n Th∏i H≠, <color=Green>v≠Ót ∂i 25	-1	230	329	2	2;1;31506;3;4																							
 9	1	ßﬁa Huy“n Cung	<color=White>V≠Ót ph„ b∂n ßﬁa Huy“n Cung 1 l«n, <color=Green>v≠Ót qua ∂i 3	-1	224	330	2	2;1;31506;1;4																							
-10	1	L≠¨ng S¨n	<color=White>V≠Ót ph„ b∂n L≠¨ng S¨n 1 l«n, <color=Green>v≠Ót qua ∂i 3	-1	494	331	2	2;1;31506;1;4																							
+10	1	Liangshan	<color=White>V≠Ót ph„ b∂n L≠¨ng S¨n 1 l«n, <color=Green>v≠Ót qua ∂i 3	-1	494	331	2	2;1;31506;1;4																							
 11	1	Vπn Ki’m TrÚng	<color=White>V≠Ót ph„ b∂nVπn Ki’m TrÚng 1 l«n, <color=Green>v≠Ót qua ∂i 3	-1	495	332	2	2;1;31506;1;4																							
 12	1	Ki’m ß∑ng Y’n V©n	<color=White>ß’n Ki’m ß∑ng Y’n V©n, <color=Green>sˆ dÙng Thi™n Ki™u L÷nh lÀt bµi 1 l«n (Åi Th≠Íng, Åi Anh HÔng Æ“u Æ≠Óc)	-1	229	333	2	2;1;31506;3;4																							
 13	1	ßπi Chi’n Nhπn M´n Quan	<color=White>Tham d˘ Æ«y ÆÒ 1 l«n <color=Green>Chi’n Tr≠Íng Nhπn M´n Quan vµ nhÀn th≠Îng	-1	234	334	2	2;1;31506;2;4																							
@@ -71,7 +71,7 @@ ID Nhi÷m vÙ	1: Nhi÷m vÙ ngµy	Ti™u Æ“ nhi÷m vÙ	Mi™u t∂ Nhi÷m vÙ	NhÀn nhi÷m vÙ nµy
 74	2	T®ng thuÈc t›nh Th≠¨ng H∂i Ch©u 1 l«n	<color=White>T®ng c p <color=Green>thµnh c´ng <color=White><color=Green>Th≠¨ng H∂i Ch©u<color=White> 1 l«n	-1	301	394	2	2;1;31506;1;4																							
 75	2	C≠Íng h„a max 1 Th≠¨ng H∂i Ch©u	<color=White>C≠Íng h„a 1 Th≠¨ng H∂i Ch©u <color=Green>20 l«n	-1	302	395	2	2;1;31506;10;4																							
 76	2	C≠Íng h„a max 10 Th≠¨ng H∂i Ch©u	<color=White>C≠Íng h„a <color=Green>10<color=White> Th≠¨ng H∂i Ch©u<color=Green> 20 l«n	-1	303	396	2	2;1;31506;100;4																							
-77	2	C©y B∏t Nh∑ LÌn	<color=White>TrÂng vµ thu hoπch <color=Green>4 C©y B∏t Nh∑ LÌn	-1	498	503	1	2;1;31506;40;4																							
+77	2	Large Prajna Tree	<color=White>TrÂng vµ thu hoπch <color=Green>4 C©y B∏t Nh∑ LÌn	-1	498	503	1	2;1;31506;40;4																							
 78	2	Khi™u Chi’n-BOSS Ngoµi Thµnh [NhÀm Ng∑ Hµnh]	<color=White>Di÷t BOSS Ngoµi Thµnh <color=Green>[NhÀm Ng∑ Hµnh]<color=White> (Chÿ ÆÈi ho∆c c∏ nh©n k’t li‘u BOSS mÌi t›nh lµ hoµn thµnh nhi÷m vÙ)	-1	304	397	2	2;1;31506;5;4																							
 79	2	Khi™u Chi’n-BOSS Ngoµi Thµnh [Th≠¨ng Th«n Doanh Thi™n]	<color=White>Di÷t BOSS Ngoµi Thµnh <color=Green>[Th≠¨ng Th«n Doanh Thi™n]<color=White> (Chÿ ÆÈi ho∆c c∏ nh©n k’t li‘u BOSS mÌi t›nh lµ hoµn thµnh nhi÷m vÙ)	-1	305	398	2	2;1;31506;5;4																							
 80	2	Khi™u Chi’n-BOSS Ngoµi Thµnh [Bæc LÙc L©m Minh ChÒ]	<color=White>Di÷t BOSS Ngoµi Thµnh <color=Green>[Bæc LÙc L©m Minh ChÒ]<color=White> (Chÿ ÆÈi ho∆c c∏ nh©n k’t li‘u BOSS mÌi t›nh lµ hoµn thµnh nhi÷m vÙ)	-1	306	399	2	2;1;31506;5;4																							

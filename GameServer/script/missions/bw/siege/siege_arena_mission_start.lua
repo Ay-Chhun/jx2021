@@ -9,9 +9,9 @@ Include("\\script\\missions\\bw\\siege\\mission_room.lua")
 function main()
 	if PlayerIndex > 0 then
 		if GetMissionV(2) > 0 then
-			Say("§ãng", 2, "§ãng/close_mission", "Qua ®­êng/no_say")
+			Say("Close", 2, "Close/close_mission", "Pass by/no_say")
 		else
-			Say("B¾t ®Çu", 2, "B¾t ®Çu/start_mission", "Qua ®­êng/no_say")
+			Say("B¾t ®Çu", 2, "Start/start_mission", "Pass by/no_say")
 		end
 	elseif tonumber(date("%w")) == 5 then
 		start_mission()
@@ -42,7 +42,7 @@ function start_mission()
 	get_gongcheng_type();
 	local nType = GetGlbValue(CITY_GLB_VALUE_TYPE);
 	if nType == 2 then
-		AddGlobalNews("B¾t ®Çu b¸o danh tranh ®o¹t"..tFightCityName[nCityID].."Lo¹i h×nh c«ng thµnh chiÕn lµ: "..tSignMethod[nType])		
+		AddGlobalNews("Start registering to compete"..tFightCityName[nCityID].."Lo¹i h×nh c«ng thµnh chiÕn lµ: "..tSignMethod[nType])		
 		return 0;
 	end
 --Èç¹ûÊÇ¾ºÍ¶ÌôÕ½Áî·½·¨£¬Ôò²»¿ªÆô¹¥³ÇÕ½ÀÞÌ¨
@@ -64,7 +64,7 @@ function start_mission()
 	
 	-- Éú³É·¿¼äOK, ¿ªÊ¼±¨Ãû
 	KMissionRecordRoom:Open(CITY_SIGNUP_MAP_ID, RECORD_MISSION_ID, nCityID)	
-	AddGlobalNews("B¾t ®Çu b¸o danh tranh ®o¹t"..tFightCityName[nCityID].." L«i ®µi C«ng thµnh chiÕn, h·y nhanh chãng ®Õn chç Thµnh §« Chñ L«i ®µi b¸o danh.")
+	AddGlobalNews("Start registering to compete"..tFightCityName[nCityID].." L«i ®µi C«ng thµnh chiÕn, h·y nhanh chãng ®Õn chç Thµnh §« Chñ L«i ®µi b¸o danh.")
 end
 
 function get_gongcheng_type()

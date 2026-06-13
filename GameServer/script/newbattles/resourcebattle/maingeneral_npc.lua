@@ -4,7 +4,7 @@
 Include("\\script\\newbattles\\resourcebattle\\resourcebattle_head.lua");
 
 sSongGeneral = "Hπ l÷nh ÆÂ";
-sLiaoGeneral = "Ti’u Lan ßπt";
+sLiaoGeneral = "Xiao Landa";
 -- Bit quy Æﬁnh tÊng t n c´ng cÒa Th∂o cËc
 SONG_BIT = 2
 LIAO_BIT = 6
@@ -14,10 +14,10 @@ function main()
 		NpcChat(GetTargetNpc(),"Chπy th´i! Lˆa k–o Æ’n n¨i rÂi!");
 	end;
 	local selTab = {			
-			"BËi c∂nh/knowbackground",
+			"Background/knowbackground",
 			"Quy tæc chi’n tr≠Íng/knowbattlerule",
 			"Nguy™n So∏i ph∏t l÷nh tÊng t n c´ng/battle_charge",
-			"K’t thÛc ÆËi thoπi/nothing",
+			"End dialogue/nothing",
 			}
 	local sNpcName = "";
 	if BT_GetCamp() == SONG_ID then
@@ -46,7 +46,7 @@ function knowbattlerule()
 	else
 		sNpcName = sLiaoGeneral;
 	end;
-	Talk(1,"main","<color=green>"..sNpcName.."<color>: <enter>1: ThÍi gian chi’n Æ u 30 phÛt <enter>2: Phe nµo t›ch lÚy l≠¨ng th∂o nhi“u h¨n sœ thæng<enter>3: ßi”m t›ch lÚy cao nh t<color=yellow>"..POINT_LIMITED.."<color><enter>4: GiÌi hπn pk<enter>5: NhÀn Æ≠Óc ph«n th≠Îng cÒa Hoµng Æ’ + Æi”m t›ch lÚy <color=yellow>"..EMPEROR_AWARD_POINT.."<color> Æi”m  Æi”m t›ch lÚy, kinh nghi÷m <color=yellow>"..floor(EMPEROR_AWARD_EXP/10000).."<color>vπn<enter>6: ß≠Óc b«u lµm ng´i sao chi’n tr≠Íng+Æi”m t›ch lÚy <color=yellow>"..BATTLE_STAR_AWARD_POINT.."<color> Æi”m  Æi”m t›ch lÚy, kinh nghi÷m <color=yellow>"..floor(BATTLE_STAR_AWARD_EXP/10000).."<color> vπn");
+	Talk(1,"main","<color=green>"..sNpcName.."<color>: <enter>1: ThÍi gian chi’n Æ u 30 phÛt <enter>2: Phe nµo t›ch lÚy l≠¨ng th∂o nhi“u h¨n sœ thæng<enter>3: ßi”m t›ch lÚy cao nh t<color=yellow>"..POINT_LIMITED.."<color><enter>4: GiÌi hπn pk<enter>5: NhÀn Æ≠Óc ph«n th≠Îng cÒa Hoµng Æ’ + Æi”m t›ch lÚy <color=yellow>"..EMPEROR_AWARD_POINT.."<color> Æi”m  Æi”m t›ch lÚy, kinh nghi÷m <color=yellow>"..floor(EMPEROR_AWARD_EXP/10000).."<color>vπn<enter>6: ß≠Óc b«u lµm ng´i sao chi’n tr≠Íng+Æi”m t›ch lÚy <color=yellow>"..BATTLE_STAR_AWARD_POINT.."<color> Æi”m  Æi”m t›ch lÚy, kinh nghi÷m <color=yellow>"..floor(BATTLE_STAR_AWARD_EXP/10000).."<color> thousand");
 end;
 
 function wantaward()

@@ -15,10 +15,10 @@ Include("\\script\\task\\world\\task_trigger_list.lua");
 function task_000_00()
 
 local strMain = {
-	"Kh«ng ®­îc……Lµm sao b©y giê?",
+	"That won't do. What should I do now?",
 	"TiÒn bèi cã ph¶i KhÊu ChuÈn ®¹i nh©n kh«ng? TriÖu Diªn Niªn vµ D· TÈu nhê ta mang bøc th­ tíi, mêi tiÒn bèi xem qua!",
 	"§­a ta xem nµo!",
-	"[KhÊu ChuÈn ®äc bøc th­]",
+	"[Kou Zhun reads the letter]",
 	"<sex> ®Õn thËt ®óng lóc, ta còng kh«ng giÊu! HiÖn Liªu binh ®ang tiÕp cËn biªn giíi, qu©n t×nh khÈn cÊp tõ Nh¹n M«n quan, h¬n n÷a gÇn ®©y BiÖn Kinh l¹i x¶y ra chuyÖn…",
 	"ChuyÖn nµy vèn do quan sai phô tr¸ch! Nh­ng nh©n lùc ®a sè bÞ ®iÒu ®i n¬i kh¸c, hiÖn chØ cßn l¹i mét sè giµ nua yÕu ít. Ta thÊy <sex> vâ c«ng phi phµm, nhÊt ®Þnh kh«ng tõ chèi gióp l·o phu ®i gi¶i v©y!",
 	"TiÒn bèi cø dÆn dß!",
@@ -136,7 +136,7 @@ function task_006_00()
         "§óng nh­ ng­êi dù ®o¸n. Bän nµy bÞ 1 ng­êi tªn lµ {Tiªu Hµn} xói giôc. Chóng vèn lµ du d©n ngoµi quan ¶i! HÇy! Còng chØ v× 2 ch÷ Phó quý mµ th«i!",
         "Nghe nãi tªn Tiªu Hµn nµy lµ ng­êi Liªu quèc. LÇn nµy may nhê cã <sex>, hõm….",
         "L·o Th¸i qu©n! T¹i h¹ cßn chuyÖn nµy muèn hái ng­êi!",
-        "Lµ chuyÖn g×?",
+        "What matter is it?",
         "T¹i h¹ nghe 1 tªn C«n ®å nãi: {Tiªu Hµn} ®ang muèn t×m 1 ng­êi tªn {B¸ch Th¶o ¤ng}! Th¸i Qu©n cã nghe qua ng­êi nµy ch­a?",
         "B¸ch Th¶o ¤ng? Ng­êi nµy lµ 1 thÇn y ë BiÖn Kinh. Kh«ng biÕt tªn Tiªu Hµn kia t×m «ng ta ®Ó lµm g×? Ng­¬i h·y mau ®Õn H¹nh Hoa th«n ®Ó b¶o vÖ cho B¸ch Th¶o ¤ng! Nh©n tiÖn ®iÒu tra manh mèi!",
         "Tu©n lÖnh! T¹i h¹ ®i ngay!"
@@ -157,8 +157,8 @@ function task_006_01()
 end;
 
 function task_006_02()
-	Msg2Player("§Õn H¹nh Hoa th«n b¶o vÖ B¸ch Th¶o ¤ng");
-	TaskTip("§Õn H¹nh Hoa th«n b¶o vÖ B¸ch Th¶o ¤ng");
+	Msg2Player("Go to Xinghua Village to protect Bach Thao Ong");
+	TaskTip("Go to Xinghua Village to protect Bach Thao Ong");
 	
 	GivePlayerAward("Level_10", "hard", "legs", "Level_15");    --½±Àø
 	GivePlayerExp(SkeyBJShuxin,"wulai2")		--ÎÞÀµ2
@@ -170,21 +170,21 @@ end;
 
 function task_007_00()
     local strMain = {
-    	"….",
+    	".",
     	"VÞ c« n­¬ng nµy! T¹i h¹ ®Õn th¨m B¸ch Th¶o ¤ng tiÒn bèi! Xin hái…",
     	"[C« g¸i mÊp m¸y m«i nh­ng kh«ng ph¸t ra tiÕng]",
     	"Ta cã thÓ gióp g× c« n­¬ng kh«ng?",
-    	"[§­a b¹n 1 tê giÊy]",
+    	"[Hands you a sheet of paper]",
     	"{Tæ Ong 5 c¸i}, t×m ë {H¹nh Hoa th«n}; {C¸t C¸nh 5 c¸i} t×m ë ngoµi thµnh {Nam BiÖn Kinh}…§©y lµ bµi thuèc?",
-    	"[C« g¸i gËt ®Çu]",
+    	"[The girl nods]",
     	"§­îc! Xin ®îi t¹i h¹ ®i lÊy chóng vÒ!"
     }
     TalkEx("task_007_01", strMain);
 end;
 
 function task_007_01()
-	Msg2Player("B¸ch Thóy B×nh nhê b¹n ®i t×m 5 Tæ Ong vµ ®Õn phÝa Nam BiÖn Kinh t×m 5 C¸t C¸nh");
-	TaskTip("B¸ch Thóy B×nh nhê b¹n ®i t×m 5 Tæ Ong vµ ®Õn phÝa Nam BiÖn Kinh t×m 5 C¸t C¸nh");
+	Msg2Player("Bach Thuy Binh asks you to find 5 Bee Hives and go south of Bianjing to find 5 Balloon Flowers");
+	TaskTip("Bach Thuy Binh asks you to find 5 Bee Hives and go south of Bianjing to find 5 Balloon Flowers");
 	SetTask(TASK_BJ_ID, 8);
 end;
 
@@ -192,8 +192,8 @@ end;
 function task_008_00()
 
 local strMain = {
-	"[C« g¸i cã vÎ rÊt c¨ng th¼ng]",
-	"C« n­¬ng! Ta ®· mang d­îc liÖu vÒ ®©y!",
+	"[The girl seems very tense]",
+	"Young lady! I have brought the medicinal ingredients back!",
 	"[C« g¸i lËp tøc phèi thuèc, sau ®ã uèng ngay]",
 	"<sex>! ¥n cøu m¹ng nµy tiÓu n÷ xin t¹c d¹ ghi ©n! <sex>! Xin hái ng­êi t×m gia phô cña tiÓu n÷ cã viÖc g×?",
 	"Ta phông mÖnh Xa Th¸i Qu©n ®Õn b¶o vÖ cho B¸ch l·o b¸!",
@@ -207,14 +207,14 @@ local strMain = {
 	if GetItemCount(2, 1, 13) >= 5 and GetItemCount(1, 2, 2) >= 5 then
 		TalkEx("task_008_01", strMain);
 	else
-		Talk(1,"","….");
+		Talk(1,"",".");
 	end;
 	
 end;
 
 function task_008_01()
-	Msg2Player("B¸ch Thóy B×nh nhê b¹n ®i t×m 10 No·n trïng");
-	TaskTip("B¸ch Thóy B×nh nhê b¹n ®i t×m 10 No·n trïng");
+	Msg2Player("Bach Thuy Binh asks you to find 10 Larva worms");
+	TaskTip("Bach Thuy Binh asks you to find 10 Larva worms");
 	
 	GivePlayerAward("Level_14", "easy");    --½±Àø
 	GivePlayerExp(SkeyBJShuxin,"yaoshimizong")		--Ò©ÊÒÃÔ×Ù
@@ -269,7 +269,7 @@ function task_013_00()
     local szTalk = {
     	"<sex> ®· vÒ råi µ? Mäi viÖc thuËn lîi chø?",
         "KhÊu ®¹i nh©n! §©y cã 1 bøc th­ cña {Thiªn ¢m gi¸o}! Xin ng­êi ®äc qua!",
-        "[KhÊu ChuÈn ®äc nhanh]",
+        "[Kou Zhun reads it quickly]",
         "Ra lµ vËy!...Ta nghe nãi Thiªn ¢m gi¸o lµ mét t«ng gi¸o thÇn bÝ rÊt cã ¶nh h­ëng víi giíi quý téc Liªu quèc. Liªn quan ®Õn Tr­êng ca m«n, tèt nhÊt nªn ®i hái TriÖu Diªn Niªn!",
         "VËy t¹i h¹ ®i b¸i kiÕn TriÖu tiÒn bèi ®©y!",
         "Ng­êi ®· v× ta mµ vÊt v¶ nhiÒu qu¸! Cã chót t×nh ý, xin <sex> nhËn lÊy!"

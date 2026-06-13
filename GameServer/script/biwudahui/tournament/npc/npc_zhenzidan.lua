@@ -9,7 +9,7 @@ Include("\\settings\\static_script\\lib\\itemfunctions.lua")
 Include("\\script\\missions\\nvn\\3v3npc.lua")
 Include("\\settings\\static_script\\exchg_server\\exchange_server_func.lua")
 
-g_szInfoHead = "<color=green> §Æc Sø §¹i Héi TØ Vâ <color>:";
+g_szInfoHead = "<color=green> Special Grand Duel Tournament <color>:";
 g_szThisFile = "\\script\\biwudahui\\tournament\\npc\\npc_zhenzidan.lua";
 g_bInit = 0;		--±ê¼ÇÊÇ·ñ¾­¹ý³õÊ¼»¯
 g_tbZiGeRank = {};
@@ -23,11 +23,11 @@ tbJUNGONGZHANG =
 
 function main()
 	local tSel = {
-		"§¹i Héi Tû Vâ-§¬n ®Êu\n/main_bwdh",
-		"§¹i Héi Tû Vâ-Liªn ®Êu\n/main_3v3",
+		"Grand Duel Tournament - Single Combat\n/main_bwdh",
+		"Grand Duel Tournament - Team Combat\n/main_3v3",
 		--"¿ç·þ»õ±Ò¶Ò»»/exchangeMoney",
 		--"ÖÐÔ½¶Ô¿¹ÈüÏßÉÏÑ¡°ÎÈüÏà¹Ø/gotoUrl",
-		"Kh«ng cã g×!/nothing",
+		"Nothing!/nothing",
 	}
 	Say(g_szInfoHead.."Nh÷ng n¨m gÇn ®©y biªn c­¬ng liªn tiÕp x¶y ra chiÕn tranh, triÒu ®×nh h¹ chØ, s¾p xÕp §¹i Héi Tû Vâ ®¬n ®Êu vµ ®¹i héi tû thÝ liªn ®Êu. Hµo kiÖt c¸c m«n ph¸i ®Òu cã thÓ tham gia ®¨ng ký. Ng­êi giµnh th¾ng lîi cµng cã thÓ ®­îc n­íc nhµ träng dông, x«ng pha trËn m¹c. Hìi hiÖp sÜ, b¹n cã muèn tham gia kh«ng?",
 		getn(tSel), tSel);
@@ -39,7 +39,7 @@ function exchangeMoney()
 		"§æi Xu Tiªu Dao (Mua vËt phÈm tû vâ liªn server)/GLB_BW_Change_Xoyo_Gold",
 		"§æi Tiªu Dao Ngäc (DÞch vô trÞ gia t¨ng liªn server) /GLB_BW_Change_Xoyo_Yu",
 		"trë l¹i/main",
-		"Kh«ng cã g×!/nothing",
+		"Nothing!/nothing",
 	}
 	Say(g_szInfoHead.."Sau khi vµo khu vùc liªn server, mét sè vËt phÈm sÏ kh«ng ®­îc sö dông, vµ t¹m thêi biÕn mÊt (quay vÒ sÏ ®­îc nhËn l¹i). TiÒn tÖ duy nhÊt ®­îc sö dông lµ <color=yellow>Xu Tiªu Dao<color>.", getn(tSel), tSel);
 end
@@ -50,7 +50,7 @@ function main_bwdh_award()
 	szTitle = format("Cã thÓ nhËn th­ëng liªn server ë ®©y, ng­¬i muèn nhËn phÇn th­ëng g×?")
 	tinsert(tbSay, format("\n%s/BWT_GetAward", "NhËn phÇn th­ëng ®¹i héi tû vç tuÇn tr­íc "))
 	tinsert(tbSay, format("\n%s/season_award", "thi quý §¹i Héi Tû Vâ liªn quan "))
-	tinsert(tbSay, format("\n%s/nothing", "Ra khái"))
+	tinsert(tbSay, format("\n%s/nothing", "Exit"))
 	Say(szTitle, getn(tbSay), tbSay)
 end
 
@@ -68,12 +68,12 @@ function main_bwdh()
 				--"µ¥ÈË±ÈÎäÔöÖµ·þÎñÉèÖÃ/GLB_BW_Services_Set",
 				"PhÇn th­ëng §¹i Héi Tû Vâ/main_bwdh_award",
 				"Phæ biÕn §¹i héi tû vâ/know_detail",
-				"Kh«ng cã g×!/nothing",
+				"Nothing!/nothing",
 --				"ÖØÖÃÕ½¼¨/clear_biwu_result",
 				}
 	local nYear,nMonth,nDay,nHour = gf_GetDateData(g_nBWAwardDate);
 	if nDate >= g_nBWAwardBeginDate and nDate <= g_nBWAwardDate then
-		tinsert(selTab,2,"NhËn ["..g_szGloryAwardName.."] (Thêi gian dõng nhËn th­ëng:"..nYear.."niªn"..nMonth.."NguyÖt"..nDay.."NhËt"..nHour.." giê)/get_glory_bag");
+		tinsert(selTab,2,"Receive ["..g_szGloryAwardName.."] (Thêi gian dõng nhËn th­ëng:"..nYear.."year"..nMonth.."NguyÖt"..nDay.."day"..nHour.." hour)/get_glory_bag");
 	end;
 	if GLB_BW_BiWuCheck() ~= 1 then --ÊÇ·ñ¿ªÆôÁË¿ç·þ±ÈÎä
 		tremove(selTab,1)
@@ -93,19 +93,19 @@ end;
 function clear_biwu_result()
 	local selTab = {
 				"Xãa sè lÇn tham gia so tµi cña ta thµnh 0/clear_biwu_times",
-				"KÕt thóc ®èi tho¹i/nothing",
+				"End dialogue/nothing",
 				}
 	Say(g_szInfoHead.."NÕu ng­¬i kh«ng hµi lßng víi thµnh tÝch hiÖn giê cña m×nh, th× cã thÓ tÈy mét sè chiÕn tÝch. VÝ dô ng­¬i cã thÓ xãa sè lÇn so tµi cña ng­¬i, bao gåm c¶ trËn th¾ng lÉn trËn thua thµnh 0. Ng­¬i muèn tÈy chiÕn tÝch kh«ng? ",getn(selTab),selTab);
 end;
 
 function clear_biwu_times()
 	local selTab = {
-			"§ång ý/clear_biwu_times_confirm",
-			"Hñy bá/nothing",
+			"Agree/clear_biwu_times_confirm",
+			"Cancel/nothing",
 			}
 	local szItemName = "";
 	if IB_VERSION == 1 then
-		szItemName = "1 quyÓn S­ m«n ®¹i sù hµm";
+		szItemName = "1 Sect Grand Affairs Scroll";
 	else
 		szItemName = "3 c¸i Tiªu KiÕp t¸n";
 	end;
@@ -117,7 +117,7 @@ function clear_biwu_times_confirm()
 	local nNeedItemNum = 0;
 	local nID1,nID2,nID3 = 0,0,0;
 	if IB_VERSION == 1 then
-		szItemName = "1 quyÓn S­ m«n ®¹i sù hµm";
+		szItemName = "1 Sect Grand Affairs Scroll";
 		nNeedItemNum = 1;
 		nID1,nID2,nID3 = 2,1,1021;
 	else
@@ -159,12 +159,12 @@ function test_entry()
 				"Ta muèn gia nhËp vµo danh s¸ch ®Êu ®«i/join_peidui",
 				"Ta muèn rêi khái danh s¸ch ®Êu ®«i/quit_peidui",
 				"Chän ra mét cÆp tuyÓn thñ/get_random_pair",
-				"B¾t ®Çu trËn tû vâ/init_one_round",
-				"LËp nhãm më tû vâ/test_enter_field",
+				"Start the duel match/init_one_round",
+				"Form a group to open a duel/test_enter_field",
 				"Ta muèn xem tû vâ/go_to_watch",
 				"KiÓm tra trang bÞ cña ta/check_equip",
 				"KiÓm tra xÕp h¹ng ®iÓm t­ c¸ch tr­íc khi hîp nhÊt/see_rank_before",
-				"Kh«ng cã g×/nothing",
+				"Nothing/nothing",
 				}
 	Say(g_szInfoHead.."Ng­¬i muèn g×?",getn(selTab),selTab);
 end;
@@ -187,18 +187,18 @@ end;
 
 function init_one_round()
 	local nCount = BWT_InitOneRound();
-	Talk(1,"",g_szInfoHead.."Chän ra tuyÓn thñ tû vâ"..nCount.."§óng.");
+	Talk(1,"",g_szInfoHead.."Select duel contestants"..nCount.."Correct.");
 end;
 
 function join_peidui()
 	BWT_JoinGestConvention();
 	Talk(1,"",g_szInfoHead.."B©y giê b¹n ®· tham gia tû vâ, mêi ®Õn <color=yellow>TuyÒn Ch©u hoÆc gÇn ®ã<color> ®îi th«ng b¸o tû vâ cña hÖ thèng.");
-	Msg2Player("Ng­¬i ®· tham gia so tµi, h·y ®îi th«ng b¸o tõ hÖ thèng");
+	Msg2Player("You have joined the duel; please wait for the announcement from the system");
 end;
 
 function quit_peidui()
 	BWT_QuitGestConvention();
-	Talk(1,"",g_szInfoHead.."Ng­¬i ®· rêi khái danh s¸ch ®Êu ®«i.");
+	Talk(1,"",g_szInfoHead.."You have left the pairing list.");
 end;
 
 function get_random_pair()
@@ -214,9 +214,9 @@ end;
 function go_to_watch()
 	local selTab = {
 				"TuyÒn Ch©u/#go_to_watch_confirm(100)",
-				"BiÖn Kinh/#go_to_watch_confirm(200)",
+				"Bianjing/#go_to_watch_confirm(200)",
 				"Thµnh §«/#go_to_watch_confirm(300)",
-				"Kh«ng cã g×/nothing",
+				"Nothing/nothing",
 				}
 	Say(g_szInfoHead.."Ng­¬i muèn xem tû vâ ë thµnh nµo?",getn(selTab),selTab);
 end;
@@ -263,7 +263,7 @@ function xz_award_shimen()
 	end;
 	local szItemName = TB_TOTEM_INFO[nFaction][2][4];
 	local selTab = {
-				"§ång ý/xz_award_shimen_confirm",
+				"Agree/xz_award_shimen_confirm",
 				"\nT¹m thêi kh«ng ®æi/xunzhang_award",
 				}
 	Say(g_szInfoHead.."1 Tû vâ ®¹i héi bµi cã thÓ ®æi <color=yellow>1 "..szItemName.."vµ 10 ®iÓm cèng hiÕn S­ M«n<color>, mçi tuÇn nhiÒu nhÊt <color=red>cã thÓ ®æi 20 lÇn<color>PhÇn th­ëng nµy, tuÇn nµy ng­¬i cßn cã thÓ ®æi <color=yellow>"..(20-nWeekNum).."<color> lÇn.",getn(selTab),selTab);
@@ -304,9 +304,9 @@ function xz_award_shimen_confirm_1(nNum)
 		AddItem(nID1,nID2,nID3,nNum);
 		BWDH_SetTask(336,GetTask(336)+nNum*10);
 		BWDH_SetTask(TSK_XZ_AWARD_SHIMEN,nWeekNum+nNum);
-		Msg2Player("B¹n nhËn ®­îc "..nNum.."c¸i"..szItemName.." vµ"..(nNum*10).." ®iÓm cèng hiÕn S­ M«n, tuÇn nµy ng­¬i cßn cã thÓ ®æi "..(20-nWeekNum-nNum).." lÇn phÇn th­ëng nµy.");
+		Msg2Player("B¹n nhËn ®­îc "..nNum.."c¸i"..szItemName.." and"..(nNum*10).." ®iÓm cèng hiÕn S­ M«n, tuÇn nµy ng­¬i cßn cã thÓ ®æi "..(20-nWeekNum-nNum).." lÇn phÇn th­ëng nµy.");
 	else
-		Talk(1,"xunzhang_award",g_szInfoHead.."Ph¶i cã <color=yellow>"..nNum.." Tû vâ ®¹i héi bµi<color> míi cã thÓ ®æi phÇn th­êng nµy.");
+		Talk(1,"xunzhang_award",g_szInfoHead.."You must have <color=yellow>"..nNum.." Tû vâ ®¹i héi bµi<color> míi cã thÓ ®æi phÇn th­êng nµy.");
 	end;
 end;
 
@@ -347,7 +347,7 @@ function xz_award_lingshi_confirm(nUseType)
 		{
 			[1] = {2,1,1020,1,"MËt hµm s­ m«n"},
 			[2] = {2,1,1020,3,"MËt hµm s­ m«n"},
-			[3] = {2,1,1021,1,"S­ m«n ®¹i sù hµm"},
+			[3] = {2,1,1021,1,"Sect Grand Affairs Scroll"},
 		}
 	else
 		tbNeedItemInfo =
@@ -392,12 +392,12 @@ function give_lingshi(nCount)
 	local szString = "";
 	for i=1,getn(tbNum) do
 		if tbNum[i] ~= 0 then
-			szString = szString.."B¹n nhËn ®­îc "..i.." (cÊp) Linh Th¹ch"..tbNum[i].." viªn,";
+			szString = szString.."B¹n nhËn ®­îc "..i.." (cÊp) Linh Th¹ch"..tbNum[i].." units,";
 			lspf_AddLingShiInBottle(i,tbNum[i]);
 		end;
 	end;
 	Msg2Player(szString.." ®· cho vµo Tô Linh ®Ønh");
-	WriteLog("[PhÇn th­ëng §¹i héi tû vâ]:"..GetName().."NhËn ®­îc"..nCount.." viªn Linh th¹ch: "..szString);
+	WriteLog("[PhÇn th­ëng §¹i héi tû vâ]:"..GetName().."Received"..nCount.." units of Spirit Stone:"..szString);
 end;
 --¾­Ñé½±Àø================================================================================
 function xz_award_jingyan()
@@ -439,7 +439,7 @@ function xz_award_jingyan_confirm(nUseType)
 		local nGoldenExp = floor((nLevel^4)*300000/(80^4))*nMutiple;
 		if nGoldenExp > nCurGoldenExp then	--Èç¹û½¡¿µ¾­Ñé²»¹»£¬¸ø¸öÌáÊ¾
 			local selTab = {
-					"§ång ý/#xz_award_jingyan_confirm_final("..nUseType..")",
+					"Agree/#xz_award_jingyan_confirm_final("..nUseType..")",
 					"T¹m thêi kh«ng ®æi/nothing",
 					}
 			Say(g_szInfoHead.."Søc kháe hiÖn giê cña ng­¬i lµ <color=yellow>"..nCurGoldenExp.."<color> ®iÓm, kh«ng ®ñ <color=yellow>"..nGoldenExp.."<color> ®iÓm, ng­¬i x¸c nhËn muèn ®æi chø?",getn(selTab),selTab);
@@ -466,7 +466,7 @@ function xz_award_jingyan_confirm_final(nUseType)
 		{
 			[1] = {2,1,1020,1,"MËt hµm s­ m«n"},
 			[2] = {2,1,1020,3,"MËt hµm s­ m«n"},
-			[3] = {2,1,1021,1,"S­ m«n ®¹i sù hµm"},
+			[3] = {2,1,1021,1,"Sect Grand Affairs Scroll"},
 		}
 	else
 		nGoldenExp = floor((nLevel^4)*300000/(80^4));	--Íæ¼ÒµÈ¼¶µÄËÄ´Î·½*30w/80µÄËÄ´Î·½
@@ -570,10 +570,10 @@ function give_battle_award_confirm(nType)
 		Say(g_szInfoHead.."Ng­¬i x¸c nhËn kh«ng sö dông Qu©n C«ng Ch­¬ng chø?",getn(selTab),selTab);
 	else
 		local selTab = {
-					format("§ång ý/#give_battle_award(%d)",nType),
-					"§Ó ta suy nghÜ/nothing",
+					format("Agree/#give_battle_award(%d)",nType),
+					"Let me think about it/nothing",
 					}
-		Say(g_szInfoHead.."Ng­¬i x¸c nhËn muèn sö dông <color=yellow>"..tbJUNGONGZHANG[nType][1].."<color> chø?",getn(selTab),selTab);
+		Say(g_szInfoHead.."Ng­¬i x¸c nhËn muèn sö dông <color=yellow>"..tbJUNGONGZHANG[nType][1].."<color> ?",getn(selTab),selTab);
 	end;
 end;
 
@@ -672,7 +672,7 @@ function get_glory_bag()
 	local selTab = {
 				"Ta muèn nhËn!/#get_glory_bag_1("..nBagNum..")",
 				"KiÓm tra xÕp h¹ng tÝch ®iÓm t­ c¸ch /see_rank_before",
-				g_szGloryAwardName.."ThuyÕt minh/know_glory_bag",
+				g_szGloryAwardName.."Description/know_glory_bag",
 				"T¹m thêi kh«ng nhËn/nothing",
 				}
 	Say(g_szInfoHead.."Ng­êi ch¬i ®­îc <color=green>vµo b¶ng xÕp h¹ng ®iÓm t­ c¸ch m«n ph¸i <color>, sÏ nhËn ®­îc mét phÇn quµ hÊp dÉn, cã thÓ nhËn ®­îc mét sè l­îng nhÊt ®Þnh<color=green>"..g_szGloryAwardName.."<color>. §ång thêi ®iÓm t­ c¸ch sÏ bÞ xãa s¹ch.\n  ng­êi ch¬i cã tÝch ®iÓm tû vâ d­íi 200 ®iÓm, tÝch ®iÓm t¨ng thªm 100 ®iÓm, tÝch ®iÓm sau khi t¨ng xong nhiÒu nhÊt kh«ng qu¸ 200.\n  Sau nµy còng sÏ c¨n cø theo sè ®iÓm t­ c¸ch kh«ng ®Þnh kú ph¸t phÇn th­ëng.\n  C¨n cø vµo chiÕn tÝch tr­íc kia cña b¹n:<color=yellow>"..szMsg.."<color>, cã thÓ nhËn ®­îc <color=yellow>"..nBagNum.."<color> c¸i"..g_szGloryAwardName..". B¹n muèn nhËn th­ëng ngay kh«ng?",getn(selTab),selTab);
@@ -706,9 +706,9 @@ function get_glory_bag_1(nBagNum)
 		AddItem(g_tbGloryAwardItem[1],g_tbGloryAwardItem[2],g_tbGloryAwardItem[3],nBagNum);
 		Msg2Player("B¹n nhËn ®­îc "..nBagNum.."c¸i"..g_szGloryAwardName);
 		if nBWRank > 0 then
-			Msg2Global(GetName().."trong §¹i Héi Tû Vâ thi quý ®­îc ®øng thø "..nBWRank..", nhËn ®­îc råi "..nBagNum.."c¸i"..g_szGloryAwardName..",, ®¸ng mõng ®¸ng mõng !");
+			Msg2Global(GetName().."ranked in the Grand Martial Tournament this season"..nBWRank..", nhËn ®­îc råi "..nBagNum.."c¸i"..g_szGloryAwardName..",, congratulations, congratulations!");
 		end
-		WriteLog("[§¹i héi tû vâ]:"..GetName().."§· nhËn "..nBagNum.." (H¹ng "..nBWRank..", thø)"..g_szGloryAwardName);
+		WriteLog("[§¹i héi tû vâ]:"..GetName().."§· nhËn "..nBagNum.." (Rank"..nBWRank..", place)"..g_szGloryAwardName);
 	end;
 end;
 
@@ -751,8 +751,8 @@ function see_rank_before()
 	end;
 	local selTab = {
 				--"ÐÂÐãÎäÁÖ´ó»á/#see_rank_before_1(0)",
-				" §¹i Héi Tû Vâ ®¬n ®Êu /#see_rank_before_1(1)",
-				"KÕt thóc ®èi tho¹i/nothing",
+				" Grand Martial Tournament Solo Duel /#see_rank_before_1(1)",
+				"End dialogue/nothing",
 				}
 	Say(g_szInfoHead.."§iÓm t­ c¸ch tr­íc ®©y cña b¹n lµ <color=yellow>"..nPoint.."<color>. B¹n muèn xem th«ng tin b¶n xÕp h¹ng t­ c¸ch cña ®¹i héi tû vâ nµo?",getn(selTab),selTab);
 end;
@@ -781,7 +781,7 @@ function list_route_page(nPageNum,nRecordCount,nLevel)
 		tinsert(selTab,tbAllSelTab[i]);
 	end;
 	if nPageNum ~= 1 then
-		tinsert(selTab,format("\n Trang tr­íc/#list_route_page(%d,%d,%d)",nPageNum-1,nRecordCount,nLevel));
+		tinsert(selTab,format("\n Previous page/#list_route_page(%d,%d,%d)",nPageNum-1,nRecordCount,nLevel));
 	end;
 	if nPageNum ~= ceil(nRecordCount/MAX_SEL_PER_PAGE) then
 		tinsert(selTab,format("\n Trang sau/#list_route_page(%d,%d,%d)",nPageNum+1,nRecordCount,nLevel));
@@ -802,7 +802,7 @@ end;
 function view_route_rank_info(nLevel,nRoute)
 	local tbRankInfo = g_tbZiGeRank[nLevel][nRoute];
 	local tbSorted = {};
-	local szMsgHead = "<color=yellow>"..TB_BIWU_NAME[nLevel+1].."<color>:<color=green>"..gf_GetRouteName(nRoute).."<color>10 h¹ng ®Çu b¶ng xÕp h¹ng tÝch lòy t­ c¸ch<color>: \n"..gf_FormatStringLength("H¹ng",10)..gf_FormatStringLength("Tªn",20)..gf_FormatStringLength("§iÓm tÝch lòy t­ c¸ch",8).."\n";
+	local szMsgHead = "<color=yellow>"..TB_BIWU_NAME[nLevel+1].."<color>:<color=green>"..gf_GetRouteName(nRoute).."<color>10 h¹ng ®Çu b¶ng xÕp h¹ng tÝch lòy t­ c¸ch<color>: \n"..gf_FormatStringLength("Rank",10)..gf_FormatStringLength("Name",20)..gf_FormatStringLength("§iÓm tÝch lòy t­ c¸ch",8).."\n";
 	local szMsgBody = "";
 	for i,v in tbRankInfo do
 		tbSorted[v[1]] = {i,v[2]};
@@ -853,17 +853,17 @@ function season_modify_exp(nExp,nCount)
 		ModifyExp(nExp);
 		Msg2Player("B¹n nhËn ®­îc "..nExp.."Kinh nghiÖm");
 	end
-	WriteLog(format("[§¹i Héi Tû Vâ thø "..(nCurSeason-1).."thi quý ] [Sucess] [ModifyExp] [role:%s(acc:%s)] [NhËn ®­îc kinh nghiÖm %d]", GetName(), GetAccount(), nExp*nCount));
+	WriteLog(format("[Grand Martial Tournament"..(nCurSeason-1).."thi quý ] [Sucess] [ModifyExp] [role:%s(acc:%s)] [NhËn ®­îc kinh nghiÖm %d]", GetName(), GetAccount(), nExp*nCount));
 end
 
 function season_award_title(nRank)
 	local szTitleName = {
-		[1] = "§¹i S­ Tû",
-        [2] = "NhÞ S­ Tû",
-        [3] = "Tam S­ Tû",
-        [11] = "§¹i S­ Huynh",
-        [12] = "NhÞ S­ Huynh",
-        [13] = "Tam S­ Huynh",
+		[1] = "Senior Martial Sister",
+        [2] = "Second Martial Sister",
+        [3] = "Third Martial Sister",
+        [11] = "Senior Martial Brother",
+        [12] = "Second Martial Brother",
+        [13] = "Third Martial Brother",
 	}
 	local nSex = mod(GetSex(),2)
 	local nG = 67
@@ -880,7 +880,7 @@ function season_award_title(nRank)
 			SetTitleTime(nG,nDetal, GetTime() + g_nBWWeeks*7*24*3600);
 			SetCurTitle(nG,nDetal)
 			Msg2Player("B¹n nhËn ®­îc ["..szName.."] danh hiÖu");
-			WriteLog("[§¹i Héi Tû Vâ thø "..(nCurSeason-1).."thi quý ]:"..GetName().." nhËn ®­îc ["..szName.."] danh hiÖu");
+			WriteLog("[Grand Martial Tournament"..(nCurSeason-1).."season ]:"..GetName().." nhËn ®­îc ["..szName.."] danh hiÖu");
 		end
 	end
 end
@@ -897,19 +897,19 @@ function season_add_title(nID1,nID2,sName)
 			SetTitleTime(nID1,nID2, GetTime() + g_nBWWeeks*7*24*3600);
 			SetCurTitle(nID1,nID2)
 			Msg2Player("B¹n nhËn ®­îc ["..sName.."] danh hiÖu");
-			WriteLog("[§¹i Héi Tû Vâ thø "..(nCurSeason-1).."thi quý ]:"..GetName().." nhËn ®­îc ["..sName.."] danh hiÖu");
+			WriteLog("[Grand Martial Tournament"..(nCurSeason-1).."season ]:"..GetName().." nhËn ®­îc ["..sName.."] danh hiÖu");
 		end
 	end
 end
 
 tGJJingQi = {
-	{{"ThiÕu L©m Tinh Kú (Kh«i Thñ)",{0,120,42,1}},{"ThiÕu L©m Tinh Kú (KiÒu Së)",{0,120,43,1}},{"ThiÕu L©m Tinh Kú (Anh KiÖt)",{0,120,44,1}},},
-	{{"Vâ §ang Tinh Kú (Kh«i Thñ)",{0,120,54,1}},{"Vâ §ang Tinh Kú (KiÒu Së)",{0,120,55,1}},{"Vâ §ang Tinh Kú (Anh KiÖt)",{0,120,56,1}},},
-	{{"Nga My Tinh Kú (Kh«i Thñ)",{0,120,48,1}},{"Nga My Tinh Kú (KiÒu Së)",{0,120,49,1}},{"Nga My Tinh Kú (Anh KiÖt)",{0,120,50,1}},},
-	{{"C¸i Bang Tinh Kú (Kh«i Thñ)",{0,120,51,1}},{"C¸i Bang Tinh Kú (KiÒu Së)",{0,120,52,1}},{"C¸i Bang Tinh Kú (Anh KiÖt)",{0,120,53,1}},},
+	{{"ThiÕu L©m Tinh Kú (Kh«i Thñ)",{0,120,42,1}},{"Shaolin Banner (Kiao So)",{0,120,43,1}},{"Shaolin Banner (Hero)",{0,120,44,1}},},
+	{{"Vâ §ang Tinh Kú (Kh«i Thñ)",{0,120,54,1}},{"Wudang Banner (Kiao So)",{0,120,55,1}},{"Wudang Banner (Hero)",{0,120,56,1}},},
+	{{"Nga My Tinh Kú (Kh«i Thñ)",{0,120,48,1}},{"Emei Banner (Kiao So)",{0,120,49,1}},{"Emei Banner (Hero)",{0,120,50,1}},},
+	{{"C¸i Bang Tinh Kú (Kh«i Thñ)",{0,120,51,1}},{"Beggars' Sect Banner (Kiao So)",{0,120,52,1}},{"Beggars' Sect Banner (Hero)",{0,120,53,1}},},
 	{{"§­êng M«n Tinh Kú (Kh«i Thñ)",{0,120,45,1}},{"§­êng M«n Tinh Kú (KiÒu Së)",{0,120,46,1}},{"§­êng M«n Tinh Kú (Anh KiÖt)",{0,120,47,1}},},
 	{{"D­¬ng M«n Tinh Kú (Kh«i Thñ)",{0,120,57,1}},{"D­¬ng M«n Tinh Kú (KiÒu Së)",{0,120,58,1}},{"D­¬ng M«n Tinh Kú (Anh KiÖt)",{0,120,59,1}},},
-	{{"Ngò §éc Tinh Kú (Kh«i Thñ)",{0,120,60,1}},{"Ngò §éc Tinh Kú (KiÒu Së)",{0,120,61,1}},{"Ngò §éc Tinh Kú (Anh KiÖt)",{0,120,62,1}},},
+	{{"Ngò §éc Tinh Kú (Kh«i Thñ)",{0,120,60,1}},{"Five Poisons Banner (Kiao So)",{0,120,61,1}},{"Five Poisons Banner (Hero)",{0,120,62,1}},},
 	{{"C«n L«n Tinh Kú (Kh«i Thñ)",{0,120,63,1}},{"C«n L«n Tinh Kú (KiÒu Së)",{0,120,64,1}},{"C«n L«n Tinh Kú (Anh KiÖt)",{0,120,65,1}},},
 	{{"Minh gi¸o Tinh Kú (Kh«i Thñ)",{0,120,66,1}},{"Minh gi¸o Tinh Kú (KiÒu Së)",{0,120,67,1}},{"Minh gi¸o Tinh Kú (Anh KiÖt)",{0,120,68,1}},},
 	{{"Thóy Yªn Tinh Kú (Kh«i Thñ)",{0,120,69,1}},{"Thóy Yªn Tinh Kú (KiÒu Së)",{0,120,70,1}},{"Thóy Yªn Tinh Kú (Anh KiÖt)",{0,120,71,1}},},
@@ -968,10 +968,10 @@ tSeasonAward = {
 
 function season_award()
 	local strtab = {
-		"H­íng dÉn thi quý /season_detail",
+		"Season guide /season_detail",
 		"KiÓm tra phÇn th­ëng thi quý /season_see_award",
 		"trë l¹i/main",
-		"KÕt thóc ®èi tho¹i/nothing"
+		"End dialogue/nothing"
 	};
 --if _JX2WZ == 2 then
 --	tinsert(strtab, 2, "¸ü»»½±ÀøÖÐµÄ·Ç·¨ÎïÆ·/repairItem");
@@ -999,7 +999,7 @@ function season_detail()
 	if nSeasonWeek == 0 then
 		nSeasonWeek = g_nBWWeeks;
 	end
-	Talk(1,"season_award",g_szInfoHead.."Tõ ngµy 12 th¸ng 5 n¨m 2014 b¾t ®Çu §¹i Héi Tû Vâ <color=yellow> mçi"..g_nBWWeeks.." tuÇn lµ mét thi quý<color>, tr­íc khi kÕt thóc cuéc thi quý tiÕp theo dùa vµo sè ®iÓm t­ c¸ch kú thi quý lÇn tr­íc nhËn ®­îc phÇn th­ëng thi quý tr­íc, ®iÓm t­ c¸ch cø mçi tuÇn dùa vµo tÝch ®iÓm hÖ ph¸i xÕp h¹ng, tõ 1-10 cã thÓ nhËn ®­îc 100, 90, 85, 80, 75, 70, 65, 60, 55, 50 ®iÓm. HiÖn t¹i ®ang tiÕn hµnh <color=yellow>kú"..nCurSeason.."Thi quý tuÇn thø "..nSeasonWeek.."<color> tû vâ, phÇn th­ëng thi quý tr­íc vµo sau 10h mçi ngµy tr­íc khi thi quý nµy kÕt thóc ®Òu cã thÓ nhËn th­ëng, qu¸ h¹n kh«ng ph¸t bï!");
+	Talk(1,"season_award",g_szInfoHead.."Tõ ngµy 12 th¸ng 5 n¨m 2014 b¾t ®Çu §¹i Héi Tû Vâ <color=yellow> mçi"..g_nBWWeeks.." tuÇn lµ mét thi quý<color>, tr­íc khi kÕt thóc cuéc thi quý tiÕp theo dùa vµo sè ®iÓm t­ c¸ch kú thi quý lÇn tr­íc nhËn ®­îc phÇn th­ëng thi quý tr­íc, ®iÓm t­ c¸ch cø mçi tuÇn dùa vµo tÝch ®iÓm hÖ ph¸i xÕp h¹ng, tõ 1-10 cã thÓ nhËn ®­îc 100, 90, 85, 80, 75, 70, 65, 60, 55, 50 ®iÓm. HiÖn t¹i ®ang tiÕn hµnh <color=yellow>kú"..nCurSeason.."Season week number"..nSeasonWeek.."<color> tû vâ, phÇn th­ëng thi quý tr­íc vµo sau 10h mçi ngµy tr­íc khi thi quý nµy kÕt thóc ®Òu cã thÓ nhËn th­ëng, qu¸ h¹n kh«ng ph¸t bï!");
 end
 
 function season_see_award()
@@ -1010,7 +1010,7 @@ function season_see_award()
 		"Gi¶i 4  (®iÓm t­ c¸ch kú thi quý tr­íc 200-269)/#season_see_award_detail(4)",
 		"Gi¶i khuyÕn khÝch (®iÓm t­ c¸ch kú thi quý tr­íc 100-199)/#season_see_award_detail(5)",
 		"trë l¹i/season_award",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	}
 	Say(g_szInfoHead.."Mçi role mçi kú thi quý chØ nhËn ®­îc mét lÇn th­ëng.",
 	getn(strtab),
@@ -1042,7 +1042,7 @@ function season_get_award()
 		Talk(1,"",g_szInfoHead.."B¹n vÉn ch­a nhËp m«n ph¸i, kh«ng cã t­ c¸ch nhËn phÇn th­ëng thi quý tr­íc.");
 		return 0;
 	end;
-	local tbRankInfo = {{370/4*g_nBWWeeks,"Gi¶i 1"},{330/4*g_nBWWeeks,"Gi¶i 2"},{270/4*g_nBWWeeks,"Gi¶i 3"},{200/4*g_nBWWeeks,"Gi¶i 4"},{100/4*g_nBWWeeks,"Gi¶i khuyÕn khÝch"}};
+	local tbRankInfo = {{370/4*g_nBWWeeks,"Tier 1"},{330/4*g_nBWWeeks,"Tier 2"},{270/4*g_nBWWeeks,"Tier 3"},{200/4*g_nBWWeeks,"Tier 4"},{100/4*g_nBWWeeks,"Gi¶i khuyÕn khÝch"}};
 	local nType = 0;
 	local szMsg = "";
 	local nBWLevel,nBWRank,nRankPoint = get_rank_before();--Èç¹ûÃ»½øÅÅÐÐ°ñ£¬nRankPoint¾ÍÊÇ0
@@ -1083,7 +1083,7 @@ function season_confirm_award(nType)
 		return 0;
 	end
 	BWDH_SetTask(TSK_SEASON_GET_AWARD,nCurSeason);
-	gf_SetLogCaption("§¹i Héi Tû Vâ thi quý thø "..(nCurSeason-1)..".");
+	gf_SetLogCaption("Grand Martial Arts Tournament season number"..(nCurSeason-1)..".");
 	for i=1,getn(tSeasonAward[nType]) do
 		dostring(tSeasonAward[nType][i][2]);
 	end
@@ -1091,7 +1091,7 @@ function season_confirm_award(nType)
 	local tStat = {10, 5, 3, 2, 1}
 	AddRuntimeStat(20, 6, 0, tStat[nType]) --Ê¦ÃÅ·âÉÍ±¦Ïä²ú³öÊýÁ¿
 	gf_SetLogCaption("");
-	local tbRankInfo = {"Gi¶i 1","Gi¶i 2","Gi¶i 3","Gi¶i 4","Gi¶i khuyÕn khÝch"};
+	local tbRankInfo = {"Tier 1","Tier 2","Tier 3","Tier 4","Gi¶i khuyÕn khÝch"};
 	Msg2Global("§¹i hiÖp"..GetName().."NhËn ®¹i héi tû thÝ kú thi quý tr­íc "..tbRankInfo[nType].."!");
 	WriteLog(format("[§¹i Héi Tû Vâ thø %d thi quý ] [Sucess][role:%s(acc:%s)] [ NhËn ®¹i héi tû thÝ kú thi quý tr­íc %s!]",(nCurSeason-1), GetName(), GetAccount(), tbRankInfo[nType]));
 end
@@ -1099,7 +1099,7 @@ end
 function repairItem(bSure)
 	if not bSure then
 		local tSel = {
-			"§ång ý/#repairItem(1)",
+			"Agree /#repairItem(1)",
 			"trë l¹i/season_award",
 		}
 		Say(g_szInfoHead.."Trong phÇn th­ëng §¹i Héi Tû Vâ lÇn nµy më tói thi quý §¹i Héi Tû Vâ nhËn ®­îc vËt phÈm phi ph¸p, h·y ®Ó vËt phÈm phi ph¸p nµy vµo trong tói, click x¸c nhËn, ®æi nã thµnh tô nghÜa lÖnh tói lín (chØ cã hiÖu qu¶ khi më vËt phÈm phi ph¸p trong tói kú thi quý §¹i Héi Tû Vâ lÇn nµy)",
@@ -1149,10 +1149,10 @@ function GLB_BW_Goto_Field(bConfirm)
 		--szInfo = szInfo .. format("ÉÙÏÀÏÖÔÚÓµÓÐåÐÒ£±Ò%dÃ¶£¬åÐÒ£Óñ%dÃ¶¡£È·ÈÏÒªÇ°Íù¿ç·þ±ÈÎäÃ´£¿", GetXYB(), GetXYY());
 
 		local strtab = {
-			"Ta ®· chuÈn bÞ xong!			/#GLB_BW_Goto_Field(1)",
+			"I am ready!			/#GLB_BW_Goto_Field(1)",
 			--"ÎÒÒªÐÞ¸ÄÎÒµÄÔöÖµ·þÎñÏî	/GLB_BW_Services_Set",
 			"trë l¹i/main",
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 		};
 		Say(g_szInfoHead.."Cã thÓ gióp g× ®­îc b¹n ?",
 		getn(strtab),
@@ -1204,10 +1204,10 @@ end
 
 function GLB_BW_Change_Xoyo_Gold()
 	local strtab = {
-		"Dïng vµng ®æi Xu Tiªu Dao (1 vµng ®æi 100 Xu Tiªu Dao)/GLB_BW_Use_JXB",
+		"Use gold to exchange for Tieu Dao Coin (1 gold exchanges for 100 Tieu Dao Coin) /GLB_BW_Use_JXB",
 --		"Ê¹ÓÃÒ©Æ·¶Ò»»åÐÒ£±Ò/GLB_BW_Use_Medicine",
 		"trë l¹i/main",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	};
 	Say(g_szInfoHead.."Sau khi v­ît server ngoµi <color=yellow>Xu Tiªu Dao<color> ra nh÷ng tiÒn tÖ kh¸c ®Òu kh«ng thÓ sö dông, ta cã thÓ gióp chuyÓn <color=yellow>vµng<color> thµnh Xu Tiªu Dao. ThiÕu hiÖp hiÖn ®ang së h÷u "..GetXYB().." Xu Tiªu Dao, vÒ sau cã thÓ kiÓm trang th«ng qua giao diÖn F2 (cã thÓ lµ sè ©m)",
 		getn(strtab),
@@ -1218,7 +1218,7 @@ function GLB_BW_Change_Xoyo_Yu()
 	local strtab = {
 		"Sö dông Hßa ThÞ BÝch ®æi Tiªu Dao Ngäc (1 Hßa ThÞ BÝch ®æi 100 Tiªu Dao Ngäc)/GLB_BW_Use_HSB",
 		"trë l¹i/main",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	};
 	Say(g_szInfoHead.."Tû vâ liªn server ®­a ra dÞch vô trÞ gia t¨ng míi nhÊt, thiÕt kÕ nh÷ng h¹ng môc dÞch vô trÞ gia t¨ng mµ b¹n cÇn, khi tû vâ liªn server sÏ tËn h­ëng ®­îc cµng nhiÒu c¸i míi. Cø vµo mét trËn thi ®Êu cã ®em theo phôc vô n¹p thªm tiÒn sÏ bÞ trõ mét sè l­îng nhÊt ®Þnh <color=yellow>Tiªu Dao Ngäc<color> (Sè l­îng tiªu hao tïy theo lo¹i dÞch vô mµ quyÕt ®Þnh), t¹i ®©y cã thÓ dïng <color=yellow>Hßa ThÞ BÝch<color> ®æi thµnh <color=yellow>Tiªu Dao Ngäc<color>. ThiÕu hiÖp hiÖn cã "..GetXYB().." Xu Tiªu Dao, <color=yellow>Tiªu Dao Ngäc<color> "..GetXYY().." xu, cã thÓ sö dông phÝm F2 ®Ó kiÓm tra. (cã thÓ cã gi¸ trÞ ©m)",
 	getn(strtab),
@@ -1227,18 +1227,18 @@ end
 
 function GLB_BW_Use_JXB()
 	local nJxb = floor(GetCash()/10000);
-	AskClientForNumber("GLB_BW_Use_JXB_Confirm",1,nJxb*100,"§«i bao nhiªu Xu Tiªu Dao?");
+	AskClientForNumber("GLB_BW_Use_JXB_Confirm",1,nJxb*100,"How much Tieu Dao Coin to exchange?");
 end
 
 function GLB_BW_Use_HSB()
 	local nHsb = GetItemCount(2,1,1001);
-	AskClientForNumber("GLB_BW_Use_HSB_Confirm",1,nHsb,"§æi bao nhiªu Hßa ThÞ BÝch ?");
+	AskClientForNumber("GLB_BW_Use_HSB_Confirm",1,nHsb,"How much Hoa Thi Bich to exchange?");
 end
 
 function GLB_BW_Use_JXB_Confirm(nCount)
 	local nJxb = floor(GetCash()/10000);
 	if nJxb < nCount/100 then
-		Talk(1,"",g_szInfoHead.."TiÒn vµng c¸c h¹ mang theo kh«ng ®ñ"..nCount.."Xu Tiªu Dao.");
+		Talk(1,"",g_szInfoHead.."TiÒn vµng c¸c h¹ mang theo kh«ng ®ñ"..nCount.."Tieu Dao Coin.");
 		return 0;
 	end
 	if Pay(nCount/100*10000) == 1 then
@@ -1261,14 +1261,14 @@ end
 
 tMedicineInfo = {
 	{{"B¹ch V©n t¸n",1,0,4},7},
-	{{"§¹i Hoµn ®¬n",1,0,9},7},
+	{{"Grand Restoration Pill",1,0,9},7},
 	{{"Ngäc Linh t¸n",1,0,14},10},
 	{{"Thiªn H­¬ng CÈm Tôc",1,0,5},9},
 	{{"NhÊt Nguyªn Phôc Thñy §¬n",1,0,10},9},
 	{{"H¾c Ngäc §o¹n Tôc Cao",1,0,6},10},
 	{{"V¹n VËt Quy Nguyªn §¬n",1,0,11},10},
 	{{"Ngò Hoa Ngäc Lé Hoµn",1,0,15},10},
-	{{"Sinh Sinh Hãa T¸n",1,0,16},15},
+	{{"Life-Begetting Powder",1,0,16},15},
 };
 g_MaxChangeXYB = 7000000;
 
@@ -1277,7 +1277,7 @@ function GLB_BW_Use_Medicine()
 	for i = 1,getn(tMedicineInfo) do
 		tinsert(strtab,format("Sö dông %s ®æi Xu Tiªu Dao (tû lÖ ®æi:1:%d)/#GLB_BW_Use_Medicine_Ask(%d)",tMedicineInfo[1][1][1],tMedicineInfo[1][2],i))
 	end
-	tinsert(strtab,"KÕt thóc ®èi tho¹i/nothing")
+	tinsert(strtab,"End dialogue/nothing")
 	Say(g_szInfoHead.."B¹n cÇn dïng vËt phÈm g× ®Ó ®æi Tiªu Dao Xu?",
 		getn(strtab),
 		strtab)
@@ -1302,7 +1302,7 @@ end
 function GLB_BW_Use_Medicine_Confirm(nCount)
 	local nIdx = GetTaskTemp(206);
 	if GetItemCount(tMedicineInfo[nIdx][1][2],tMedicineInfo[nIdx][1][3],tMedicineInfo[nIdx][1][4]) < nCount then
-		Talk(1,"",g_szInfoHead.."Trªn ng­êi b¹n "..tMedicineInfo[nIdx][1][1].."Kh«ng ®ñ"..nCount..".");
+		Talk(1,"",g_szInfoHead.."Trªn ng­êi b¹n "..tMedicineInfo[nIdx][1][1].."Not enough"..nCount..".");
 		return 0;
 	end
 	if DelItem(tMedicineInfo[nIdx][1][2],tMedicineInfo[nIdx][1][3],tMedicineInfo[nIdx][1][4],nCount) == 1 then
@@ -1314,7 +1314,7 @@ function GLB_BW_Services_Set()
 	local strtab = {
 		"T«i muèn chÆn ®èi thñ m«n ph¸i (nhiÒu nhÊt cã thÓ chÆn 5 m«n ph¸i)	/GLB_BW_Block_Route_Set",
 		"trë l¹i/main",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	};
 	Say(g_szInfoHead.."Tû vâ liªn server ®­a ra phôc vô n¹p thªm tiÒn phong phó ®a d¹ng míi nhÊt, trong server cã thiÕt kÕ c¸c môc phôc vô cÇn n¹p thªm tiÒn mµ b¹n cÇn , khi tû vâ liªn server sÏ h­ëng thñ ®­îc nhiÒu tr¸i nghiÖm míi. Cø vµo mét trËn  tû vâ cã ®em theo phôc vô n¹p thªm tiÒn ®Òu bÞ trõ mét sè l­îng nhÊt ®Þnh <color=yellow>Tiªu Dao Ngäc<color> (L­îng tiªu hao c¨n cø vµo lo¹i h×nh phôc vô ®Þnh ra mµ cã sù kh¸c nhau). Khi <color=yellow>Tiªu Dao Ngäc<color> lµ 0 hoÆc Ýt h¬n, hÖ thèng sÏ dõng viÖc b¾t cÆp tû vâ cho ng­êi ch¬i, ®ång thêi nh¾c nhë ng­êi ch¬i quay vÒ server ®Ó söa h¹ng môc dÞch vô trÞ gia t¨ng. §Ó ®¶m b¶o b¹n cã thÓ tr¶i nghiÖm tèt h¬n th× tr­íc khi vµo tû vâ liªn server, b¹n h·y ®æi ®ñ sè l­îng <color=yellow>Tiªu Dao Ngäc<color>.",
 	getn(strtab),
@@ -1349,7 +1349,7 @@ function GLB_BW_Block_Route_Set()
 		"§· xãa m«n ph¸i ®­îc chän lùa 	/#BWDH_SetTask(TASKID_BIWU_BLOCK_ROUTE, 0);",
 		"T¨ng thªm m«n ph¸i chÆn míi 	/GLB_BW_Block_Route_Add_Set",
 		"trë l¹i/main",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	};
 	Say(g_szInfoHead.."ChÆn m«n ph¸i nhÊt ®Þnh cã thÓ tr¸nh tr­êng hîp b¹n trong §¹i Héi Tû Vâ gÆp ph¶i m«n ph¸i nµy. NhiÒu nhÊt b¹n cã thÓ chÆn <color=yellow>"..MAXNUM_BLOCK_ROUTE.."<color> kh«ng cïng m«n ph¸i."..szBlockInfo,
 	getn(strtab),
@@ -1360,7 +1360,7 @@ function GLB_BW_Block_Route_Add_Set()
 	local tSay = {};
 	tSay.sel = {
 		{"trë l¹i",	"main"},
-		{"KÕt thóc ®èi tho¹i",	"nothing"},
+		{"End conversation",	"nothing"},
 	};
 
 	local tBlockRoute	= GLB_BW_Get_Block_Route();
@@ -1394,7 +1394,7 @@ end
 function GLB_BW_Block_Route_Add(nRouteIdx)
 	local strtab = {
 		"trë l¹i/main",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	};
 
 	local tbRoute = gf_GetRouteTable();
@@ -1416,7 +1416,7 @@ function GLB_BW_Block_Route_Add(nRouteIdx)
 	
 	gf_SetTaskBit(TASKID_BIWU_BLOCK_ROUTE, nRouteIdx, 1);
 
-	tinsert(strtab, 1, "TiÕp tôc chÆn  /GLB_BW_Block_Route_Add_Set");
+	tinsert(strtab, 1, "Continue blocking  /GLB_BW_Block_Route_Add_Set");
 	Say(g_szInfoHead.."B¹n ®· chÆn thµnh c«ng "..gf_GetRouteName(tbRoute[nRouteIdx])..".",
 	getn(strtab),
 	strtab)
@@ -1427,7 +1427,7 @@ function bw_buchang()
 		3,
 		"\nNhËn båi th­êng /bw_buchang_1",
 		"\nPh­¬ng ¸n båi th­êng /bw_buchang_2",
-		"\nKÕt thóc ®èi tho¹i/nothing")
+		"\nEnd conversation/nothing")
 end
 
 function bw_buchang_1()
@@ -1447,27 +1447,27 @@ function bw_buchang_1()
 	local tBuChangAward = {
 		{
 			{"1000 v¹n kinh nghiÖm ","season_modify_exp(10000000,1)"},
-			{"Tói §¹i Héi Tû Vâ thi quý 20 c¸i","gf_AddItemEx({2,95,171,20,1}, 'Tói thi quý §¹i Héi Tû Vâ thi quý')"},
-			{"Danh hiÖu: Cöu Ch©u Vâ ThÇn (Èn vÉn cã hiÖu lùc)","season_add_title(5,2,'cöu ch©u vâ thÇn')"},
+			{"Tói §¹i Héi Tû Vâ thi quý 20 c¸i","gf_AddItemEx({2,95,171,20,1}, 'Grand Martial Arts Tournament season bag')"},
+			{"Danh hiÖu: Cöu Ch©u Vâ ThÇn (Èn vÉn cã hiÖu lùc)","season_add_title(5,2,'Nine Provinces Martial God')"},
 		},
 		{
 			{"500 v¹n kinh nghiÖm ","season_modify_exp(5000000,1)"},
-			{"Thó c­ìi chuyªn dïng cho §¹i Héi Tû Vâ ","gf_AddItemEx({0,105,106,1,1,-1,-1,-1,-1,-1,-1}, 'ViÖt ¶nh')"},
-			{"Tói §¹i Héi Tû Vâ thi quý 20 c¸i","gf_AddItemEx({2,95,171,20,1}, 'Tói thi quý §¹i Héi Tû Vâ thi quý')"},
-			{"Danh hiÖu: Cöu Ch©u Vâ Th¸nh (Èn vÉn cã hiÖu lùc)","season_add_title(5,3,'cöu ch©u vâ th¸nh')"},
+			{"Thó c­ìi chuyªn dïng cho §¹i Héi Tû Vâ ","gf_AddItemEx({0,105,106,1,1,-1,-1,-1,-1,-1,-1}, 'Viet Anh')"},
+			{"Tói §¹i Héi Tû Vâ thi quý 20 c¸i","gf_AddItemEx({2,95,171,20,1}, 'Grand Martial Arts Tournament season bag')"},
+			{"Danh hiÖu: Cöu Ch©u Vâ Th¸nh (Èn vÉn cã hiÖu lùc)","season_add_title(5,3,'Nine Provinces Martial Saint')"},
 		},
 		{
 			{"500 v¹n kinh nghiÖm ","season_modify_exp(5000000,1)"},
-			{"Tói §¹i Héi Tû Vâ thi quý 20 c¸i","gf_AddItemEx({2,95,171,20,1}, 'Tói thi quý §¹i Héi Tû Vâ thi quý')"},
-			{"Danh hiÖu: Cöu Ch©u Vâ Cuång (Èn vÉn cã hiÖu lùc)","season_add_title(5,4,' cöu ch©u vâ cuång')"},
+			{"Tói §¹i Héi Tû Vâ thi quý 20 c¸i","gf_AddItemEx({2,95,171,20,1}, 'Grand Martial Arts Tournament season bag')"},
+			{"Danh hiÖu: Cöu Ch©u Vâ Cuång (Èn vÉn cã hiÖu lùc)","season_add_title(5,4,' Nine Provinces Martial Madman')"},
 		},
 		{
 			{"500 v¹n kinh nghiÖm ","season_modify_exp(5000000,1)"},
-			{"Tói §¹i Héi Tû Vâ thi quý 20 c¸i","gf_AddItemEx({2,95,171,20,1}, 'Tói thi quý §¹i Héi Tû Vâ thi quý')"},
+			{"Tói §¹i Héi Tû Vâ thi quý 20 c¸i","gf_AddItemEx({2,95,171,20,1}, 'Grand Martial Arts Tournament season bag')"},
 			{"Danh hiÖu: Cöu Ch©u Vâ HiÖp (Èn vÉn cã hiÖu lùc)","season_add_title(5,5,'cöu ch©u vâ hiÖp')"},
 		},
 		{
-			{"Tói §¹i Héi Tû Vâ thi quý 20 c¸i","gf_AddItemEx({2,95,171,20,1}, 'Tói thi quý §¹i Héi Tû Vâ thi quý')"},
+			{"Tói §¹i Héi Tû Vâ thi quý 20 c¸i","gf_AddItemEx({2,95,171,20,1}, 'Grand Martial Arts Tournament season bag')"},
 			{"2500 v¹n kinh nghiÖm ","season_modify_exp(25000000,1)"},
 		},
 	};

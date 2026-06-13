@@ -18,7 +18,7 @@ function OnUse(nItem)
 		return
 	end
 	local tCost = JLMD_TABLE[nLevel + 1][2];
-	Say(format("§ång ý tiªu hao <color=red>%s*%d, EXP %d, ®iÓm tu luyÖn %d<color> ®Ó lÜnh ngé Gi¸ng Linh ThuËt cÊp cao h¬n kh«ng?", "Gi¸ng Linh BÝ §iÓn", tCost[1], tCost[2], tCost[3]), 2, format("§ång ý/#try_update_jinglingshu(%d)", nLevel + 1), "Hñy bá/nothing");
+	Say(format("§ång ý tiªu hao <color=red>%s*%d, EXP %d, ®iÓm tu luyÖn %d<color> ®Ó lÜnh ngé Gi¸ng Linh ThuËt cÊp cao h¬n kh«ng?", "Spirit Descent Secret Codex", tCost[1], tCost[2], tCost[3]), 2, format("Agree/#try_update_jinglingshu(%d)", nLevel + 1), "Cancel/nothing");
 end
 
 function try_update_jinglingshu(nIndex)
@@ -27,7 +27,7 @@ function try_update_jinglingshu(nIndex)
 		return 
 	end
 	if GetItemCount(2, 1, 30725) < tCost[1] then
-		Say(format("Sè l­îng <color=gold>%s<color> kh«ng ®ñ <color=red>%d<color>", "Gi¸ng Linh BÝ §iÓn", tCost[1]), 0);
+		Say(format("Sè l­îng <color=gold>%s<color> kh«ng ®ñ <color=red>%d<color>", "Spirit Descent Secret Codex", tCost[1]), 0);
 		return
 	end
 	if GetExp() < tCost[2] then

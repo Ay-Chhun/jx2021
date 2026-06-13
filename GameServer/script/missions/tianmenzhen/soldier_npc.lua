@@ -4,7 +4,7 @@ Include("\\script\\lib\\globalfunctions.lua")
 function main()
 	local selTab = {
 				"Rêi khái chiÕn tr­êng/ask_reason",
-				"KÕt thóc ®èi tho¹i/gf_DoNothing",
+				"End dialogue/gf_DoNothing",
 				}
 	Say("<color=green>bang chóng hËu cÇn<color>: c¸c vÞ anh hïng nªn ®oµn kÕt víi nhau cïng kh¸ng ngo¹i ®Þch!",getn(selTab),selTab);
 end;
@@ -14,7 +14,7 @@ function ask_reason()
 		Talk(1,"","<color=green>bang chóng hËu cÇn<color>: Thiªn M«n TrËn ®· kÕt thóc, h·y ®îi hÖ thèng chuyÓn ra ngoµi.");
 		return 0;
 	end
-	AskClientForString("leave","NhÑ nhµng rêi khái...",1,32,"Sao ph¶i rêi khái?");
+	AskClientForString("leave","Gently leaving...",1,32,"Sao ph¶i rêi khái?");
 end;	
 
 function leave(sLeaveMsg)

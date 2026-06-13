@@ -6,7 +6,7 @@ Include("\\script\\online\\viet_event\\mooncake_08\\mooncake_head.lua")
 Include("\\script\\lib\\globalfunctions.lua")
 
 g_szLogTitle = "Ho¹t ®éng trung thu : ".."TiÓu ®ång"		--´Ë´¦·ÖÎª2¶ÎÖ»ÊÇÎªÁË²»Ôö¼ÓÐÂµÄ·­Òë
-g_szInfoHead = "<color=green>§øa bÐ<color>: "
+g_szInfoHead = "<color=green>Child<color>:"
 
 function main()
 	if is_mooncake_viet_open() == 0 then
@@ -21,7 +21,7 @@ end
 
 function bug_candle()
 	if GetCash() < 1000 then
-		Say(g_szInfoHead.."Muéi kh«ng ®æi ®©u v× s­ huynh (tû tû) ch­a l× x× cho muéi.",1,"¤i! Ta quªn mÊt./no")
+		Say(g_szInfoHead.."Muéi kh«ng ®æi ®©u v× s­ huynh (tû tû) ch­a l× x× cho muéi.",1,"Oh! I forgot./no")
 		return
 	end
 	if gf_Judge_Room_Weight(1,20) == 0 then
@@ -29,9 +29,9 @@ function bug_candle()
 		return
 	end
 	if pay_ex(1000) == 1 then
-		add_item_ex("NÕn vµng",2,1,30029,1)
+		add_item_ex("Gold Candle",2,1,30029,1)
 	else
-		Say(g_szInfoHead.."Muéi kh«ng ®æi ®©u v× s­ huynh (tû tû) ch­a l× x× cho muéi.",1,"¤i! Ta quªn mÊt./no")
+		Say(g_szInfoHead.."Muéi kh«ng ®æi ®©u v× s­ huynh (tû tû) ch­a l× x× cho muéi.",1,"Oh! I forgot./no")
 		return
 	end
 end

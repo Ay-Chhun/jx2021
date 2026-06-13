@@ -76,11 +76,11 @@ function GetHappyTimes(nStage,bWin)
 	local level = GetLevel()
 	local route = GetMissionV(MV_ABLUEMOON_NEED_ROUTE)
 	if NEED_TEAM == 1 then
-		Say("<color=green>兔小丫<color>：你已经获得了领奖的资格，但是，还需要经过最后一道考验才能领到奖励。这样吧，你去找一个<color=yellow>"..(level-10).."级到"..(level+10).."级的"..tNeedRoute[route][2].."<color>朋友和你一起<color=yellow>组队<color>来找我，我就把奖励给你。",2,
-			"我已经带来了，给我奖励吧/CheckHappyTimes","我再去找找/end_say")
+		Say("<color=green>Little Rabbit<color>: You have already earned the qualification to claim the reward, but you still need to pass one final test to receive the prize. Here is how it works: go find a <color=yellow>"..(level-10).."level to"..(level+10).."level"..tNeedRoute[route][2].."<color>friend and come find me together as a <color=yellow>party<color>, and I will give you the reward.",2,
+			"I have brought one. Give me the reward/CheckHappyTimes","I will go look again/end_say")
 	else
-		Say("<color=green>兔小丫<color>：你已经获得了领奖的资格。任何时候来找我领取都行。",2,
-			"给我奖励吧/CheckHappyTimes","我先不领/end_say")		
+		Say("<color=green>Little Rabbit<color>: You have already earned the qualification to claim the reward. Come find me to collect it any time.",2,
+			"Give me the reward/CheckHappyTimes","I will not claim it for now/end_say")		
 	end
 end
 
@@ -89,7 +89,7 @@ function CheckHappyTimes()
 	local stage = GetTask(ABLUEMOON_ANSWER_STAGE)
 	local win = GetTask(ABLUEMOON_ANSWER_WIN)
 	if stage == 0 then
-		Say("<color=green>兔小丫<color>：你上次考试的奖励已经领过啦！",0)
+		Say("<color=green>Little Rabbit<color>: You have already claimed the reward from your last exam!",0)
 		return
 	end
 	
@@ -113,7 +113,7 @@ function CheckHappyTimes()
 	end
 	
 	if canwin == 0 then 
-		Say("<color=green>兔小丫<color>：你还没有找到一个<color=yellow>"..(level-10).."级到"..(level+10).."级的"..tNeedRoute[route][2].."<color>朋友和你一起<color=yellow>组队<color>来找我，不能给你奖励哦！",0)
+		Say("<color=green>Little Rabbit<color>: You still have not found a <color=yellow>"..(level-10).."level to"..(level+10).."level"..tNeedRoute[route][2].."<color>friend to come find me together as a <color=yellow>party<color>, so I cannot give you the reward!",0)
 	else
 		--SetTask(ABLUEMOON_ANSWER_STAGE,0) --放到领取成功之后再清吧
 		HappyTimes(stage,win)
@@ -150,15 +150,15 @@ function HappyTimes(nStage,bWin)
 		nTotalExp = floor(nTotalExp / 2);  --答错了只有一半奖励
 	end
 	local tPrize = { 
-			"<enter>院试答对的题目：<color=yellow>"..bonus_1st.."<color>题",
-			"<enter>院试每题的奖励：<color=yellow>"..award_1st.."<color>点经验",
-			"<enter>乡试答对的题目：<color=yellow>"..bonus_2nd.."<color>题",
-			"<enter>乡试每题的奖励：<color=yellow>"..award_2nd.."<color>点经验",
+			"<enter>Questions answered correctly in the Provincial Exam: <color=yellow>"..bonus_1st.."<color>questions",
+			"<enter>Reward per question in the Provincial Exam: <color=yellow>"..award_1st.."<color>EXP points",
+			"<enter>Questions answered correctly in the Local Exam: <color=yellow>"..bonus_2nd.."<color>questions",
+			"<enter>Reward per question in the Local Exam: <color=yellow>"..award_2nd.."<color>EXP points",
 		}		
 	if win == 0 then
-		tinsert(tPrize,"<enter>但是你最后失败了，只能给你一半的奖励，一共是：<color=yellow>"..nTotalExp.."<color>点经验")
+		tinsert(tPrize,"<enter>But you failed in the end, so you can only get half the reward, which is a total of: <color=yellow>"..nTotalExp.."<color>EXP points")
 	else
-		tinsert(tPrize,"<enter>恭喜你，你今天能获得的奖励一共是：<color=yellow>"..nTotalExp.."<color>点经验")
+		tinsert(tPrize,"<enter>Congratulations, the total reward you can receive today is: <color=yellow>"..nTotalExp.."<color>EXP points")
 	end	
 	if stage == 1 then
 		for i=1,2 do tremove(tPrize,3) end
@@ -167,14 +167,14 @@ function HappyTimes(nStage,bWin)
 	for i=1,getn(tPrize) do 
 		szPrize = szPrize..tPrize[i]
 	end
-	Say("<color=green>兔小丫<color>：根据你上次考试的记录，我们来算一下帐，你今天答题的奖励如下："..szPrize,1,"我现在就领取/#GetPrize("..nTotalExp..","..win..","..nStage..")")
+	Say("<color=green>Little Rabbit<color>: Based on the record of your last exam, let us settle the account. Your reward for today's questions is as follows:"..szPrize,1,"I will claim it now/#GetPrize("..nTotalExp..","..win..","..nStage..")")
 end
 
 --领奖
 function GetPrize(nExp,bWin,nStage) 
 	local win = bWin
 	ModifyExp(nExp);
-	Msg2Player("你获得了"..nExp.."点经验")
+	Msg2Player("Lei Tai Arena"..nExp.."The lightning arena")
 --	if GetTask(ABLUEMOON_QUEST_RIGHT_COUNT_1st) == 10 and GetTask(ABLUEMOON_QUEST_COUNT) == 5 and win == 1 then
 --		AddItem(0,107,155,1)  --五行秘籍
 --		Say("<color=green>兔小丫<color>：由于你表现优异，特奖励你一本五行秘籍，下次继续努力！",0)
@@ -183,7 +183,7 @@ function GetPrize(nExp,bWin,nStage)
 	local jifen = GetTask(ABLUEMOON_JIFEN)
 	local jifenLV = jifen2level(jifen)
 	if jifenLV >= 3 then 
-		Msg2SubWorld("恭喜玩家 "..GetName().." 获得“"..tTitle[jifenLV][3].."”的称号！")
+		Msg2SubWorld("Congratulations to player"..GetName().." earned the title \""..tTitle[jifenLV][3].."\"!")
 	end
 	local award_type = GetTask(ABLUEMOON_AWARD_TYPE)
 	local book_num = 1;
@@ -194,56 +194,56 @@ function GetPrize(nExp,bWin,nStage)
 	if nStage == 2 and GetTask(ABLUEMOON_QUEST_RIGHT_COUNT_2nd) >= 5 then  --第二关答对5题以上才给证书
 		if jifenLV == 2 then  --生员
 			AddItem(2,0,597,book_num)  --月亮兔的任务卷轴－生员
-			Msg2Player("你获得了科举考试的奖励－生员证书"..book_num.."本！")
+			Msg2Player("You received the reward of the Imperial Examination - Student Certificate"..book_num.."volume!")
 		elseif jifenLV == 3 then  --秀才
 			if book < 50 then
 				AddItem(2,0,597,book_num)  --月亮兔的任务卷轴－生员
-				Msg2Player("你获得了科举考试的奖励－生员证书"..book_num.."本！")
+				Msg2Player("You received the reward of the Imperial Examination - Student Certificate"..book_num.."volume!")
 			else
 				AddItem(2,0,598,book_num)  --月亮兔的任务卷轴－秀才
-				Msg2Player("你获得了科举考试的奖励－秀才证书"..book_num.."本！")
+				Msg2Player("You received the reward of the Imperial Examination - Scholar Certificate"..book_num.."volume!")
 			end
 		elseif jifenLV == 4 then --举人
 			if book < 40 then
 				AddItem(2,0,597,book_num)  --月亮兔的任务卷轴－生员
-				Msg2Player("你获得了科举考试的奖励－生员证书"..book_num.."本！")
+				Msg2Player("You received the reward of the Imperial Examination - Student Certificate"..book_num.."volume!")
 			elseif book < 70 then
 				AddItem(2,0,598,book_num)  --月亮兔的任务卷轴－秀才
-				Msg2Player("你获得了科举考试的奖励－秀才证书"..book_num.."本！")
+				Msg2Player("You received the reward of the Imperial Examination - Scholar Certificate"..book_num.."volume!")
 			else
 				AddItem(2,0,599,book_num)  --月亮兔的任务卷轴－举人
-				Msg2Player("你获得了科举考试的奖励－举人证书"..book_num.."本！")
+				Msg2Player("You received the reward of the Imperial Examination - Recommended Scholar Certificate"..book_num.."volume!")
 			end
 		elseif jifenLV == 5 then --贡士
 			if book < 30 then
 				AddItem(2,0,597,book_num)  --月亮兔的任务卷轴－生员
-				Msg2Player("你获得了月亮兔的任务卷轴－生员证书"..book_num.."本！")
+				Msg2Player("You received the Moon Rabbit's quest scroll - Student Certificate"..book_num.."volume!")
 			elseif book < 60 then
 				AddItem(2,0,598,book_num)  --月亮兔的任务卷轴－秀才
-				Msg2Player("你获得了月亮兔的任务卷轴－秀才证书"..book_num.."本！")
+				Msg2Player("You received the Moon Rabbit's quest scroll - Scholar Certificate"..book_num.."volume!")
 			elseif book < 80 then
 				AddItem(2,0,599,book_num)  --月亮兔的任务卷轴－举人
-				Msg2Player("你获得了月亮兔的任务卷轴－举人证书"..book_num.."本！")
+				Msg2Player("You received the Moon Rabbit's quest scroll - Recommended Scholar Certificate"..book_num.."volume!")
 			else
 				AddItem(2,0,600,book_num)  --月亮兔的任务卷轴－贡士
-				Msg2Player("你获得了月亮兔的任务卷轴－贡士证书"..book_num.."本！")				
+				Msg2Player("You received the Moon Rabbit's quest scroll - Tribute Scholar Certificate"..book_num.."volume!")				
 			end			
 		elseif jifenLV >= 6 then --进士以上
 			if book < 30 then
 				AddItem(2,0,597,book_num)  --月亮兔的任务卷轴－生员
-				Msg2Player("你获得了月亮兔的任务卷轴－生员证书"..book_num.."本！")
+				Msg2Player("You received the Moon Rabbit's quest scroll - Student Certificate"..book_num.."volume!")
 			elseif book < 55 then
 				AddItem(2,0,598,book_num)  --月亮兔的任务卷轴－秀才
-				Msg2Player("你获得了月亮兔的任务卷轴－秀才证书"..book_num.."本！")
+				Msg2Player("You received the Moon Rabbit's quest scroll - Scholar Certificate"..book_num.."volume!")
 			elseif book < 75 then
 				AddItem(2,0,599,book_num)  --月亮兔的任务卷轴－举人
-				Msg2Player("你获得了月亮兔的任务卷轴－举人证书"..book_num.."本！")
+				Msg2Player("You received the Moon Rabbit's quest scroll - Recommended Scholar Certificate"..book_num.."volume!")
 			elseif book < 95 then
 				AddItem(2,0,600,book_num)  --月亮兔的任务卷轴－贡士
-				Msg2Player("你获得了月亮兔的任务卷轴－贡士证书"..book_num.."本！")	
+				Msg2Player("You received the Moon Rabbit's quest scroll - Tribute Scholar Certificate"..book_num.."volume!")	
 			else
 				AddItem(2,0,601,book_num)  --月亮兔的任务卷轴－进士
-				Msg2Player("你获得了月亮兔的任务卷轴－进士证书"..book_num.."本！")							
+				Msg2Player("You received the Moon Rabbit's quest scroll - Presented Scholar Certificate"..book_num.."volume!")							
 			end			
 		end
 	end
@@ -260,7 +260,7 @@ function GetPrize(nExp,bWin,nStage)
 			if GetPlayerRoute() == tNeedRoute[route][1] and GetLevel() <= (level+10) and GetLevel() >= (level-10) and PlayerIndex ~= nOldPlayerIndex then
 					local nOtherExp = GetLevel()^2*20
 					ModifyExp(nOtherExp) --给队友加级别^2*20经验
-					Msg2Player("你获得了"..nOtherExp.."点经验！")
+					Msg2Player("Lei Tai Arena"..nOtherExp.."EXP points!")
 			end
 		end
 		PlayerIndex = nOldPlayerIndex
@@ -347,24 +347,24 @@ function answer_ok(num1,num2)
 	if njifen >= 4999 then jifen = 0 end  --限制分数上限
 
 	if GetTask(ABLUEMOON_STATE) == 3 then 
-		Say("<color=green>兔小丫<color>：你回答时间超时，算你答错哦！",1,"知道了/#answer_fail("..num..","..Qnum..")")
+		Say("<color=green>Little Rabbit<color>: Your answer timed out, so it counts as wrong!",1,"Understood/#answer_fail("..num..","..Qnum..")")
 		return
 	else
 		SetTask(ABLUEMOON_STATE,2) --停止答题
 	end
-	Msg2Player("恭喜你答对了！")
-	use_yanhuo("神秘烟花")  --放烟花庆祝,能不能做情绪动作？
+	Msg2Player("Congratulations, you answered correctly!")
+	use_yanhuo("Mystic Fireworks")  --放烟花庆祝,能不能做情绪动作？
 	--DoFireworks(862,1)  --后羿效果
 	SetTask(ABLUEMOON_QUEST_COUNT, GetTask(ABLUEMOON_QUEST_COUNT) + 1)   --答题数+1
 	if Qnum == 1 then  --第一关
 		SetTask(ABLUEMOON_JIFEN,GetTask(ABLUEMOON_JIFEN)+jifen)	  --积分+1
 		SetTask(ABLUEMOON_QUEST_RIGHT_COUNT_1st, GetTask(ABLUEMOON_QUEST_RIGHT_COUNT_1st) + 1)  --第一关正确题数+1
-		Say("<color=green>兔小丫<color>：恭喜你答对了！再给你加上<color=yellow>"..jifen.."分<color>。",1,"继续答题/abluemoon_1st")
+		Say("<color=green>Little Rabbit<color>: Congratulations, you answered correctly! I will add another <color=yellow>"..jifen.."points<color>.",1,"Continue answering/abluemoon_1st")
 	elseif Qnum > 1 and Qnum < 7 then  --第二关
 		SetTask(ABLUEMOON_JIFEN,(GetTask(ABLUEMOON_JIFEN)+jifen))	  --积分+2
 		SetTask(ABLUEMOON_QUEST_RIGHT_COUNT_2nd, GetTask(ABLUEMOON_QUEST_RIGHT_COUNT_2nd) + 1)  --第二关正确题数+1
 		if GetTask(ABLUEMOON_QUEST_COUNT) < GetTask(ABLUEMOON_QUEST_RIGHT_COUNT_1st) then  --第二关可以答题的数量＝第一关正确的数量
-			Say("<color=green>兔小丫<color>：恭喜你答对了！再给你加上<color=yellow>"..jifen.."分<color>。你乡试目前一共答对了<color=yellow>"..GetTask(ABLUEMOON_QUEST_RIGHT_COUNT_2nd).."<color>道题。你可以继续闯关，也可以现在领取累积的奖励。",2,"\n继续闯关/#abluemoon_2nd_go("..num..")","\n我现在就领取奖励吧/#GetHappyTimes(2,1)")
+			Say("<color=green>Little Rabbit<color>: Congratulations, you answered correctly! I will add another <color=yellow>"..jifen.."points<color>. So far in the Local Exam you have answered <color=yellow>"..GetTask(ABLUEMOON_QUEST_RIGHT_COUNT_2nd).."<color>questions correctly. You can keep advancing, or you can claim your accumulated reward now.",2,"\nKeep advancing/#abluemoon_2nd_go("..num..")","\nI will claim the reward now/#GetHappyTimes(2,1)")
 		elseif GetTask(ABLUEMOON_QUEST_RIGHT_COUNT_2nd) >= 5 then
 			local bonus = 10;
 			if GetTask(ABLUEMOON_AWARD_TYPE) == 1 then  --如果是一般考试
@@ -375,9 +375,9 @@ function answer_ok(num1,num2)
 			if njifen <= 4989 then 
 				SetTask(ABLUEMOON_JIFEN,GetTask(ABLUEMOON_JIFEN)+bonus)	  --积分+1
 			end
-			Say("<color=green>兔小丫<color>：恭喜你乡试答对了<color=yellow>5题<color>以上！再给你额外奖励<color=yellow>"..bonus.."分<color>！",1,"我现在就领取奖励吧/#GetHappyTimes(2,1)")
+			Say("<color=green>Little Rabbit<color>: Congratulations, you answered more than <color=yellow>5 questions<color> correctly in the Local Exam! I will give you an extra reward of <color=yellow>"..bonus.."points<color>!",1,"I will claim the reward now/#GetHappyTimes(2,1)")
 		else
-			Say("<color=green>兔小丫<color>：你在乡试的表现欠佳，没有答对<color=yellow>5题<color>以上。没有额外奖励哦！",1,"我现在就领取奖励吧/#GetHappyTimes(2,0)")
+			Say("<color=green>Little Rabbit<color>: Your performance in the Local Exam was poor; you did not answer more than <color=yellow>5 questions<color> correctly. There is no extra reward!",1,"I will claim the reward now/#GetHappyTimes(2,0)")
 		end
 	end
 end
@@ -390,18 +390,18 @@ function answer_fail(num1,num2)
 	local num = num1;
 	local jifenLV = jifen2level(njifen)  --获得积分等级
 	local jifen = tJifen[2][jifenLV]  --按积分等级给积分，只对第二关有效
-	Msg2Player("你答错了！")
+	Msg2Player("You answered wrong!")
 	CastState("state_lost_life_per18",250,18*5)
 	SetTask(ABLUEMOON_QUEST_COUNT, GetTask(ABLUEMOON_QUEST_COUNT) + 1)  --答题数+1
 	if Qnum == 1 then  --第一关
 		SetTask(ABLUEMOON_JIFEN,GetTask(ABLUEMOON_JIFEN)-1)  --积分-1
-		Say("<color=green>兔小丫<color>：太可惜了，答错啦！你被扣了<color=yellow>1分<color>哦，嘻嘻！",1,"继续答题/abluemoon_1st")
+		Say("<color=green>Little Rabbit<color>: What a pity, you got it wrong! You were deducted <color=yellow>1 point<color>, hee hee!",1,"Continue answering/abluemoon_1st")
 	elseif Qnum > 1 and Qnum < 7 then  --第二关
 		SetTask(ABLUEMOON_JIFEN,(GetTask(ABLUEMOON_JIFEN)+jifen))  --积分-2
 		if GetTask(ABLUEMOON_QUEST_RIGHT_COUNT_2nd) >= 5 then
-			Say("<color=green>兔小丫<color>：太可惜了，答错啦！你被扣了<color=yellow>"..-jifen.."分<color>，不能继续闯关了，累积的奖励也只能领取一半，下次努力！你乡试答对了<color=yellow>5题<color>以上，可能会有证书奖励哦！",1,"领取奖励/#GetHappyTimes(2,0)")
+			Say("<color=green>Little Rabbit<color>: What a pity, you got it wrong! You were deducted <color=yellow>"..-jifen.."points<color>, so you can no longer keep advancing. You can only claim half of your accumulated reward; do better next time! You answered more than <color=yellow>5 questions<color> correctly in the Local Exam, so you may receive a certificate reward!",1,"Claim the reward/#GetHappyTimes(2,0)")
 		else
-			Say("<color=green>兔小丫<color>：太可惜了，答错啦！你被扣了<color=yellow>"..-jifen.."分<color>，不能继续闯关了，累积的奖励也只能领取一半，下次努力！你在乡试的表现欠佳，没有答对<color=yellow>5题<color>以上。没有证书奖励哦！",1,"我现在就领取奖励吧/#GetHappyTimes(2,0)")
+			Say("<color=green>Little Rabbit<color>: What a pity, you got it wrong! You were deducted <color=yellow>"..-jifen.."points<color>, so you can no longer keep advancing. You can only claim half of your accumulated reward; do better next time! Your performance in the Local Exam was poor; you did not answer more than <color=yellow>5 questions<color> correctly. There is no certificate reward!",1,"I will claim the reward now/#GetHappyTimes(2,0)")
 		end
 	end
 end
@@ -418,25 +418,25 @@ function abluemoon_luck()
 	local nluck = random(1,7)
 	if GetTask(ABLUEMOON_LUCK) == 0 then
 		SetTask(ABLUEMOON_LUCK,nluck)
-		Say("<color=green>兔小丫<color>：天灵灵，地灵灵，都没有我兔子灵，（咒语）％￥＃％￥※……※（咒语），掐指一算，这位大侠今天的运势是：<color=yellow>"..tluck[nluck].."<color>。",2,
-				"我要转运/want_lucky",
-				"多谢兔半仙/end_say")
+		Say("<color=green>Little Rabbit<color>: Heaven spirits, earth spirits, none are as clever as my rabbit, (incantation) $%@##%@*...*(incantation), with a pinch of my fingers, this hero's fortune today is: <color=yellow>"..tluck[nluck].."<color>.",2,
+				"I want a change of luck/want_lucky",
+				"Many thanks, Rabbit Half-Immortal/end_say")
 	else
-		Say("<color=green>兔小丫<color>：我已经给你算过一卦啦，算来算去都一样，你今天的运势是：<color=yellow>"..tluck[GetTask(ABLUEMOON_LUCK)].."<color>。不过既然我是兔半仙，你求求我还是可以给你转转运的……",2,
-				"我要转运/want_lucky",
-				"我认命了/end_say"
+		Say("<color=green>Little Rabbit<color>: I already cast a divination for you once, and no matter how I calculate it the result is the same. Your fortune today is: <color=yellow>"..tluck[GetTask(ABLUEMOON_LUCK)].."<color>. But since I am the Rabbit Half-Immortal, if you beg me I can still change your luck...",2,
+				"I want a change of luck/want_lucky",
+				"I give up/end_say"
 				)
 	end
 end
 
 function want_lucky()
 	local nPay = 10 * GetTask(ABLUEMOON_LUCKY_COUNT) + 15
-	Say("<color=green>兔小丫<color>：想转运，还得看看神灵舍不舍得帮忙啦！这样吧，你给我带来一个<color=yellow>神秘物品<color>，我供奉给神灵，看看他能不能帮你转个好运。没有的话也没关系，你给我<color=yellow>"..nPay.."金<color>香火费，我烧烧香给你试试。另外，能不能转个好运给你，要看你的个人造化啦！如果你带有<color=yellow>金萝卜<color>，我可以免费给你转到<color=yellow>大吉<color>哦！",5,
-			"我交点香火费转运/give_lucky_money",
-			"我交神秘物品转运/give_lucky_shenmi",
-			"我想直接转大吉/want_daji",
-			"我想看看哪些神秘物品能转运/shenmi_info",
-			"我去找找看/end_say"
+	Say("<color=green>Little Rabbit<color>: To change your luck, we must also see whether the gods are willing to help! Here is the deal: bring me a <color=yellow>Mystic Item<color>, I will offer it to the gods and see if they can change your luck. If you do not have one, that is fine too. Give me <color=yellow>"..nPay.."gold<color> in incense money and I will burn incense to try for you. Also, whether or not your luck can be changed depends on your own destiny! If you bring a <color=yellow>Golden Carrot<color>, I can change your luck to <color=yellow>Great Fortune<color> for free!",5,
+			"I will pay the incense money to change my luck/give_lucky_money",
+			"I will give a Mystic Item to change my luck/give_lucky_shenmi",
+			"I want to go straight to Great Fortune/want_daji",
+			"I want to see which Mystic Items can change luck/shenmi_info",
+			"I will go take a look/end_say"
 			)
 end
 
@@ -448,9 +448,9 @@ function give_lucky_money()  --用钱转运
 			Pay(nPay)
 			SetTask(ABLUEMOON_LUCK,nluck)
 			SetTask(ABLUEMOON_LUCKY_COUNT,nCount+1)
-			Say("<color=green>兔小丫<color>：太好了，你的香火费我收下啦！你的运势也给你重新算过了，现在是：<color=yellow>"..tluck[nluck].."<color>。",0)
+			Say("<color=green>Little Rabbit<color>: Wonderful, I will accept your incense money! I have recalculated your fortune, and now it is: <color=yellow>"..tluck[nluck].."<color>.",0)
 	else
-		Say("<color=green>兔小丫<color>：不要欺骗我，小心我给你转个大凶！",0)
+		Say("<color=green>Little Rabbit<color>: Do not try to cheat me, or watch out, I will turn your luck into Great Misfortune!",0)
 	end
 end
 
@@ -465,11 +465,11 @@ function give_lucky_shenmi()  --看看玩家身上有什么可以用的物品
 		end
 	end
 	if num == 0 then
-		Say("<color=green>兔小丫<color>：你身上好像没有可以转运的神秘物品哦！",0)
+		Say("<color=green>Little Rabbit<color>: It seems you do not have any Mystic Item that can change luck!",0)
 	else
-		Say("<color=green>兔小丫<color>：你身上的<color=yellow>"..tShenmi[index][1].."<color>可以用来转运，你确认要用它来转运吗？如果不想用它来转的话请先把它放到仓库或者摆摊栏里。",2,
-				"是的，我要用它来转运/#del_lucky_shenmi("..num..")",
-				"我不转了/end_say")
+		Say("<color=green>Little Rabbit<color>: The <color=yellow>"..tShenmi[index][1].."<color>on you can be used to change luck. Are you sure you want to use it to change your luck? If you do not want to use it, please first place it in the warehouse or stall.",2,
+				"Yes, I want to use it to change my luck/#del_lucky_shenmi("..num..")",
+				"I will not change/end_say")
 	end
 end
 
@@ -478,9 +478,9 @@ function del_lucky_shenmi(num)  --用神秘物品转运
 	if DelItem(2,1,num,1) == 1 then
 		SetTask(ABLUEMOON_LUCK,nluck)
 		SetTask(ABLUEMOON_LUCKY_COUNT,GetTask(ABLUEMOON_LUCKY_COUNT)+1)
-		Say("<color=green>兔小丫<color>：太好了，你的神秘物品我收下啦！你的运势也给你重新算过了，现在是：<color=yellow>"..tluck[nluck].."<color>。",0)	
+		Say("<color=green>Little Rabbit<color>: Wonderful, I will accept your Mystic Item! I have recalculated your fortune, and now it is: <color=yellow>"..tluck[nluck].."<color>.",0)	
 	else
-		Say("<color=green>兔小丫<color>：不要欺骗我，小心我给你转个大凶！",0)
+		Say("<color=green>Little Rabbit<color>: Do not try to cheat me, or watch out, I will turn your luck into Great Misfortune!",0)
 	end
 end
 
@@ -489,26 +489,26 @@ function shenmi_info()  --能转运的神秘物品
  for i = 1, getn(tShenmi) do
  	shenmi = shenmi..tShenmi[i][1].." "
  end
- Talk(1,"","<color=green>兔小丫<color>：下面的东西就可以转运哦："..shenmi)
+ Talk(1,"","<color=green>Little Rabbit<color>: The following items can change luck:"..shenmi)
 end
 
 function want_daji()
 	if GetItemCount(2,1,1091) >= 1 then
-		Say("<color=green>兔小丫<color>：你身上有<color=yellow>金萝卜<color>，送给我的话就可以帮你转到<color=yellow>大吉<color>哦！要不要送给我呢？",2,
-				"就送给你吧/want_daji_go",
-				"我在想想/end_say"
+		Say("<color=green>Little Rabbit<color>: You have a <color=yellow>Golden Carrot<color> on you. If you give it to me, I can change your luck to <color=yellow>Great Fortune<color>! Do you want to give it to me?",2,
+				"I will give it to you/want_daji_go",
+				"Let me think about it/end_say"
 		)
 	else
-		Say("<color=green>兔小丫<color>：想转大吉需要一个<color=yellow>金萝卜<color>才行哦！",0)
+		Say("<color=green>Little Rabbit<color>: To turn a Great Fortune you need a <color=yellow>Golden Carrot<color>!",0)
 	end
 end
 
 function want_daji_go()
 	if DelItem(2,1,1091,1) == 1 then
 		SetTask(ABLUEMOON_LUCK,7) 
-		Say("<color=green>兔小丫<color>：恭喜你，你今天的运势是<color=yellow>大吉<color>了！",0)
+		Say("<color=green>Little Rabbit<color>: Congratulations, your fortune today is <color=yellow>Great Fortune<color>!",0)
 	else
-		Say("<color=green>兔小丫<color>：想转大吉需要一个<color=yellow>金萝卜<color>才行哦！",0)
+		Say("<color=green>Little Rabbit<color>: To turn a Great Fortune you need a <color=yellow>Golden Carrot<color>!",0)
 	end
 end
 --==================================================当天运势结束=========================================
@@ -550,12 +550,12 @@ function abluemoon_paihang()  --显示排行榜
 		tab_name[i] = GetMissionS(tMS_NAME[i])
 		tab_level[i] = jifen2level(tab_jifen[i])
 	end
-	Say("<color=green>兔小丫<color>：依照我今天登记的名册来看，这次考试排名前五的考生是："..
-			"<enter>第一名："..tab_name[1].."，积分："..tab_jifen[1].."，称号："..tTitle[tab_level[1]][3]..
-			"<enter>第二名："..tab_name[2].."，积分："..tab_jifen[2].."，称号："..tTitle[tab_level[2]][3]..
-			"<enter>第三名："..tab_name[3].."，积分："..tab_jifen[3].."，称号："..tTitle[tab_level[3]][3]..
-			"<enter>第四名："..tab_name[4].."，积分："..tab_jifen[4].."，称号："..tTitle[tab_level[4]][3]..
-			"<enter>第五名："..tab_name[5].."，积分："..tab_jifen[5].."，称号："..tTitle[tab_level[5]][3],
+	Say("<color=green>Little Rabbit<color>: According to the registry I recorded today, the top five candidates in this exam are:"..
+			"<enter>1st place:"..tab_name[1]..", points:"..tab_jifen[1]..", title:"..tTitle[tab_level[1]][3]..
+			"<enter>2nd place:"..tab_name[2]..", points:"..tab_jifen[2]..", title:"..tTitle[tab_level[2]][3]..
+			"<enter>3rd place:"..tab_name[3]..", points:"..tab_jifen[3]..", title:"..tTitle[tab_level[3]][3]..
+			"<enter>4th place:"..tab_name[4]..", points:"..tab_jifen[4]..", title:"..tTitle[tab_level[4]][3]..
+			"<enter>5th place:"..tab_name[5]..", points:"..tab_jifen[5]..", title:"..tTitle[tab_level[5]][3],
 			0)
 end
 
@@ -584,80 +584,80 @@ function abluemoon_sort()  --每次答完一个就统计一次排名
 	end	
 end
 --===================================================排行榜结束===========================================================
-tluck = { "大凶", "中凶", "小凶", "中", "小吉", "中吉", "大吉"}
+tluck = { "Great Curse", "Medium Curse", "Small Curse", "Neutral", "Small Fortune", "Medium Fortune", "Great Fortune"}
 	
 tShenmi = {  --转运用的神秘物品(2,1,...)
 	{"黄金宝箱",108},
-	{"传功舍利",109},
-	{"山河社稷图碎片",110},
-	{"玫瑰",111},
-	{"幸运兔脚",112},
-	{"苍狼牙",113},
-	{"防水油绸",114},
-	{"破天弓",115},
-	{"龙骨",116},
-	{"醉仙菊",117},
-	{"尸王肋骨",118},
-	{"尸气瓶",119},
-	{"管子",120},
-	{"飞鱼袋",121},
-	{"双星壶",122},
-	{"兽王心",123},
-	{"头骨",124},
-	{"聚魂鼎",125},
-	{"蜡丸",126},
-	{"蝠毒",127},
-	{"官帽",128},
-	{"密杀令",129},
-	{"震天雷",130},
-	{"藏宝图",131},
-	{"风筝",132},
-	{"木傀儡",133},
-	{"槽银",134},
-	{"花石纲",135},
-	{"墨油",136},
-	{"长成镜",137},
-	{"毕升泥活字版",138},
-	{"人头念珠",139},
-	{"溪山行旅图",140},
-	{"妖王战旗",141},
-	{"皇朝玉玺",142},
-	{"天罡五雷大法",143},
-	{"金砖",144},
-	{"雷炎金沙",146},
-	{"天衣无缝",147},
-	{"菩提子",151},
-	{"秘银",152},
-	{"颜料",153},
+	{"Skill Relic",109},
+	{"Mountains and Rivers Painting Fragment",110},
+	{"Rose",111},
+	{"Lucky Rabbit Foot",112},
+	{"Grey Wolf Fang",113},
+	{"Waterproof Oil Cloth",114},
+	{"Sky-Breaking Bow",115},
+	{"Dragon Bone",116},
+	{"Drunken Immortal Chrysanthemum",117},
+	{"Corpse King Rib",118},
+	{"Corpse Gas Bottle",119},
+	{"Tube",120},
+	{"Flying Fish Pouch",121},
+	{"Twin Star Pot",122},
+	{"Beast King Heart",123},
+	{"Skull",124},
+	{"Soul-Gathering Cauldron",125},
+	{"Wax Pellet",126},
+	{"Toad Poison",127},
+	{"Official Cap",128},
+	{"Secret Assassination Order",129},
+	{"Sky-Shaking Thunder",130},
+	{"Treasure Map",131},
+	{"Wind Kite",132},
+	{"ELEMENT",133},
+	{"Black Silver",134},
+	{"Flower Stone Drill",135},
+	{"Ink Oil",136},
+	{"Growth Mirror",137},
+	{"Bi Sheng Movable Type Edition",138},
+	{"Human Head Prayer Beads",139},
+	{"Stream and Mountain Travel Map",140},
+	{"Demon King Battle Flag",141},
+	{"Imperial Jade Seal",142},
+	{"Heavenly Marsh Five Thunder Great Art",143},
+	{"Gold Brick",144},
+	{"Thunder-Flame Gold Sand",146},
+	{"Seamless Heavenly Garment",147},
+	{"Bodhi Seed",151},
+	{"Secret Silver",152},
+	{"Pigment",153},
 }
 
 tNeedItem = {  --领取奖励所需物品
-	{"灵蛛丝", 2,2,54 },
-	{"金蚕丝", 2,2,55 },
-	{"熊皮",   2,2,20 },
-	{"鸾鸟羽披",2,10,7 },
-	{"玄铁",   2,2,6 },
-	{"天青石", 2,2,36 },
-	{"重木",   2,2,9 },
-	{"铁樟木", 2,2,10 },
+	{"Spirit Pearl Thread", 2,2,54 },
+	{"Golden Silkworm Thread", 2,2,55 },
+	{"Bear Hide",   2,2,20 },
+	{"Roc Feather Cloak",2,10,7 },
+	{"Black Iron",   2,2,6 },
+	{"Sky-Blue Stone", 2,2,36 },
+	{"Heavy Wood",   2,2,9 },
+	{"Iron Camphor Wood", 2,2,10 },
 }
 
 tNeedRoute = {  --领取奖励需要组队的流派
-	{0,"无门无派"},
-	{2,"少林俗家"},
-	{3,"少林禅宗"}, 
-	{4,"少林武宗"}, 
-	{6,"唐门"},
-	{8,"峨嵋佛家"},
-	{9,"峨嵋俗家"},
-	{11,"丐帮净衣"},
-	{12,"丐帮污衣"}, 
-	{14,"武当道家"},
-	{15,"武当俗家"},
-	{17,"杨门枪骑"},
-	{18,"杨门弓骑"},
-	{20,"五毒邪侠"},
-	{21,"五毒蛊师"},
+	{0,"No Sect No School"},
+	{2,"Shaolin Lay Disciple"},
+	{3,"Shaolin Meditation Lineage"}, 
+	{4,"Shaolin Martial Lineage"}, 
+	{6,"Tang Sect"},
+	{8,"Emei Buddhist"},
+	{9,"Emei Lay"},
+	{11,"Beggar Sect Clean Robe"},
+	{12,"Beggar Sect Dirty Robe"}, 
+	{14,"Wudang Taoist"},
+	{15,"Wudang Lay"},
+	{17,"Yang Sect Spear Cavalry"},
+	{18,"Yang Sect Bow Cavalry"},
+	{20,"Five Poison Heretic"},
+	{21,"Five Poison Sorcerer"},
 }
 
 tJifen = {  -- 相应称号等级答题的分数
@@ -670,16 +670,16 @@ tJifen = {  -- 相应称号等级答题的分数
 }
 
 tTitle = {  --相应积分对应的称号
-	{50,1,"文盲" },
-	{50,2,"生员"},
-	{50,3,"秀才"},
-	{50,4,"举人"},
-	{50,5,"贡士"},
-	{50,6,"进士"},
-	{50,7,"学士"},
-	{50,8,"文书阁学士"},
-	{50,9,"翰林院大学士"},
-	{50,10,"文曲星"},
+	{50,1,"Illiterate" },
+	{50,2,"Student"},
+	{50,3,"Scholar (Xiucai)"},
+	{50,4,"Provincial Graduate (Juren)"},
+	{50,5,"Tribute Scholar (Gongshi)"},
+	{50,6,"Metropolitan Graduate (Jinshi)"},
+	{50,7,"Academician"},
+	{50,8,"Pavilion Academician"},
+	{50,9,"Hanlin Academy Grand Academician"},
+	{50,10,"Wenqu Star"},
 }
 
 

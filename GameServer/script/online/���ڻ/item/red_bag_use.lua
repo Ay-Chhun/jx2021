@@ -45,7 +45,7 @@ function goods_use_det(goods_diff)
 		local player_level = GetLevel()
 		local exp_num = player_level * player_level * player_level
 		ModifyExp(exp_num)
-		Msg2Player("Chóc mõng b¹n sö dông"..prize_list[goods_diff][2].."NhËn ®­îc "..exp_num.." ®iÓm kinh nghiÖm!")
+		Msg2Player("Chóc mõng b¹n sö dông"..prize_list[goods_diff][2].."Received"..exp_num.." ®iÓm kinh nghiÖm!")
 		--Ôö¼ÓÉùÍû
 		ModifyReputation(prize_list[1][5],0)
 		--Ôö¼Ó°×¾ÔÊ¹ÓÃÊ±¼ä
@@ -74,11 +74,11 @@ function goods_use_det(goods_diff)
 		end
 		local exp_num = floor(Zgc_pub_player_uplevel_num_rtn(1) * prize_list[goods_diff][3])
 		ModifyExp(exp_num)
-		Msg2Player("Chóc mõng b¹n sö dông"..prize_list[goods_diff][2].."NhËn ®­îc "..exp_num.." ®iÓm kinh nghiÖm!")
+		Msg2Player("Chóc mõng b¹n sö dông"..prize_list[goods_diff][2].."Received"..exp_num.." ®iÓm kinh nghiÖm!")
 		local iron_num = random(prize_list[goods_diff][4],prize_list[goods_diff][5])
 		local add_flag = AddItem(2,2,8,iron_num)
 		if add_flag == 1 then
-			Msg2Player("Chóc mõng b¹n nhËn ®­îc "..iron_num.." s¾t!")
+			Msg2Player("Chóc mõng b¹n nhËn ®­îc "..iron_num.." obtained!")
 		end
 		local weapon_id =random(375,(375+11))
 		add_flag = AddItem(2,1,weapon_id,prize_list[goods_diff][6])
@@ -90,14 +90,14 @@ function goods_use_det(goods_diff)
 end
 --**********************Ê¦ÃÅÃØ¼®Ôö¼Ó**************************
 function Faction_book_add(goods_diff)
-	local book_name = {"Kim Cang Phôc Ma kinh","TiÒm Long MËt tÞch","V« TrÇn MËt tÞch","Thiªn La MËt TÞch","Nh­ ý MËt TÞch","BÝch H¶i Phæ","Hçn §én MËt tÞch",
-						"Quý Thiªn MËt tÞch","HuyÒn ¶nh MËt tÞch","Qu©n Tö MËt tÞch","TrÊn Qu©n MËt tÞch","Xuyªn V©n MËt tÞch","U Minh Quû Lôc","Linh Cæ MËt tÞch"}
+	local book_name = {"Vajra Demon-Subduing Sutra","TiÒm Long MËt tÞch","V« TrÇn MËt tÞch","Thiªn La MËt TÞch","Nh­ ý MËt TÞch","Azure Sea Score","Hçn §én MËt tÞch",
+						"Quý Thiªn MËt tÞch","HuyÒn ¶nh MËt tÞch","Qu©n Tö MËt tÞch","TrÊn Qu©n MËt tÞch","Xuyªn V©n MËt tÞch","Nether Ghost Record","Linh Cæ MËt tÞch"}
 	local book_seq = random(1,getn(book_name))
 	local book_id = ((book_seq - 1) * 2) + 1
 	local add_flag = AddItem(0,107,book_id,1)
 	if add_flag == 1 then
 		Msg2Player("Chóc mõng b¹n nhËn ®­îc "..book_name[book_seq].."!")
-		Msg2SubWorld("Ng­êi ch¬i:"..GetName().."Sö dông "..prize_list[goods_diff][2].."NhËn ®­îc "..book_name[book_seq].."!")
+		Msg2SubWorld("Ng­êi ch¬i:"..GetName().."Sö dông "..prize_list[goods_diff][2].."Received"..book_name[book_seq].."!")
 	else
 		WriteLog("Ho¹t ®éng t©n niªn sö dông Kim Tr­ §¹i Hång Bao: Ng­êi ch¬i:"..GetName().."T¨ng"..book_name[book_seq].." thÊt b¹i, ký hiÖu:"..add_flag)
 	end

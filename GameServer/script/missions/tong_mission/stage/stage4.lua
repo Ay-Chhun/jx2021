@@ -23,8 +23,8 @@ function CSTAGE4:OnCreateBoss()
 	SetMissionV(MV_BOSS1,nNpcIdx);
 	Msg2MSAll(MISSION_ID,"NhiÖm vô cña ¶i: §¸nh b¹i "..szName);
 	local tbPlayer = TM_GetPlayerTable();
-	TM_StartTimeGuage("Bãng hé vÖ (tr¸i)",20,0,1,tbPlayer);
-	TM_StartTimeGuage("BÉy tr¸i",60,0,2,tbPlayer);
+	TM_StartTimeGuage("Guard (left)",20,0,1,tbPlayer);
+	TM_StartTimeGuage("Trap left",60,0,2,tbPlayer);
 	TM_StartTimeGuage("Bãng hé vÖ (ph¶i)",80,0,3,tbPlayer);
 	TM_StartTimeGuage("BÉy ph¶i",120,0,4,tbPlayer);
 end;
@@ -72,7 +72,7 @@ function CSTAGE4:CreateOpposedNpc(tbArg)
 	local tbPlayer = TM_GetPlayerTable();
 	if nRegion == LEFT_REGION then
 		TM_StopTimeGuage(1,tbPlayer);
-		TM_StartTimeGuage("Bãng hé vÖ (tr¸i)",120,0,1,tbPlayer);
+		TM_StartTimeGuage("Guard (left)",120,0,1,tbPlayer);
 	else
 		TM_StopTimeGuage(3,tbPlayer);
 		TM_StartTimeGuage("Bãng hé vÖ (ph¶i)",120,0,3,tbPlayer);
@@ -106,19 +106,19 @@ function CSTAGE4:ConfusionRegion(tbArg)
 	TM_DoSpecialEffect(1582,3163,953,"Ph¸o hoa chÕt chãc",10);
 	TM_DoSpecialEffect(1555,3191,953,"Ph¸o hoa chÕt chãc",10);
 	if tbArg[1] == LEFT_REGION then
-		TM_DoSpecialEffect(1548,3156,936,"Ph¸o hoa hçn lo¹n",10);
-		TM_DoSpecialEffect(1559,3140,936,"Ph¸o hoa hçn lo¹n",10);
-		TM_DoSpecialEffect(1534,3168,936,"Ph¸o hoa hçn lo¹n",10);
+		TM_DoSpecialEffect(1548,3156,936,"Chaos fireworks",10);
+		TM_DoSpecialEffect(1559,3140,936,"Chaos fireworks",10);
+		TM_DoSpecialEffect(1534,3168,936,"Chaos fireworks",10);
 	else
-		TM_DoSpecialEffect(1591,3202,936,"Ph¸o hoa hçn lo¹n",10);
-		TM_DoSpecialEffect(1601,3191,936,"Ph¸o hoa hçn lo¹n",10);
-		TM_DoSpecialEffect(1579,3214,936,"Ph¸o hoa hçn lo¹n",10);
+		TM_DoSpecialEffect(1591,3202,936,"Chaos fireworks",10);
+		TM_DoSpecialEffect(1601,3191,936,"Chaos fireworks",10);
+		TM_DoSpecialEffect(1579,3214,936,"Chaos fireworks",10);
 	end;
 	local nRegion = tbArg[1];
 	local tbPlayer = TM_GetPlayerTable();
 	if nRegion == LEFT_REGION then
 		TM_StopTimeGuage(2,tbPlayer);
-		TM_StartTimeGuage("BÉy tr¸i",120,0,2,tbPlayer);
+		TM_StartTimeGuage("Trap left",120,0,2,tbPlayer);
 	else
 		TM_StopTimeGuage(4,tbPlayer);
 		TM_StartTimeGuage("BÉy ph¶i",120,0,4,tbPlayer);

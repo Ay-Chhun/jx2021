@@ -37,7 +37,7 @@ function tct_create_snowman()
 	}
 	for i =1, getn(tPos) do
 		if SubWorldID2Idx(tPos[i][1]) >= 0 then
-			CreateNpc("shengdanxueren", "Ng≠Íi Tuy’t Gi∏ng Sinh", tPos[i][1], tPos[i][2], tPos[i][3]);
+			CreateNpc("shengdanxueren", "Christmas Snowman", tPos[i][1], tPos[i][2], tPos[i][3]);
 		end
 	end
 end
@@ -95,7 +95,7 @@ function main()
 		"NhÀn l y ph«n th≠Îng./tct_level_award",
 		"Tπi hπ chÿ xem qua th´i/nothing",
 	}
-	Say(format("<color=green>%s<color>: ChÛc %s Gi∏ng Sinh vui vŒ!", GetNpcName(GetTargetNpc()), gf_GetPlayerSexName()), getn(tSay), tSay);
+	Say(format("<color=green>%s<color>: Wish %s a merry Christmas!", GetNpcName(GetTargetNpc()), gf_GetPlayerSexName()), getn(tSay), tSay);
 end
 
 function tct_decorate_tree()
@@ -151,7 +151,7 @@ function tct_level_award()
 	local tSay = {}
 	local npcIndex = GetTargetNpc();
 	local nLevel = GetNpcTempData(npcIndex, 1);
-	local tStatus = {"ß∑ l∑nh ", "Ch≠a l∑nh "}
+	local tStatus = {"Already claimed", "Not yet claimed"}
 	tct_daily_reset();
 	for i = 1, nLevel do
 		local nAwardStatus = TCT_TASK_GROUP:GetTask(i);
@@ -159,7 +159,7 @@ function tct_level_award()
 		tinsert(tSay, format("NhÀn ph«n th≠Îng c p %d (%s)/#tct_level_award_deal(%d)", i, tStatus[bFinish], i));
 	end
 	tinsert(tSay, "Tπi hπ chÿ xem qua th´i/nothing");
-	Say(format("<color=green>%s<color>: ChÛc %s Gi∏ng Sinh vui vŒ!", GetNpcName(GetTargetNpc()), gf_GetPlayerSexName()), getn(tSay), tSay);
+	Say(format("<color=green>%s<color>: Wish %s a merry Christmas!", GetNpcName(GetTargetNpc()), gf_GetPlayerSexName()), getn(tSay), tSay);
 end
 
 function tct_level_award_deal(nLevel)

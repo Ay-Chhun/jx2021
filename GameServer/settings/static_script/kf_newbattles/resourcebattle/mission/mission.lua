@@ -14,9 +14,9 @@ function InitMission()
 	SetNpcScript(npcIndex,"\\settings\\static_script\\kf_newbattles\\resourcebattle\\maingeneral_npc.lua");
 	npcIndex = CreateNpc(sModelName2,sCampName2.."Chñ so¸i",MAPID,1779,3172);
 	SetNpcScript(npcIndex,"\\settings\\static_script\\kf_newbattles\\resourcebattle\\maingeneral_npc.lua");
-	npcIndex = CreateNpc("R­¬ng ®å Trung Nguyªn",sCampName1.."Qu©n nhu quan",MAPID,1563,3538);
+	npcIndex = CreateNpc("R­¬ng ®å Trung Nguyªn",sCampName1.."Army Supply Officer",MAPID,1563,3538);
 	SetNpcScript(npcIndex,"\\settings\\static_script\\kf_newbattles\\quartermaster_npc.lua");
-	npcIndex = CreateNpc("R­¬ng ®å Trung Nguyªn",sCampName2.."Qu©n nhu quan",MAPID,1764,3168);
+	npcIndex = CreateNpc("R­¬ng ®å Trung Nguyªn",sCampName2.."Army Supply Officer",MAPID,1764,3168);
 	SetNpcScript(npcIndex,"\\settings\\static_script\\kf_newbattles\\quartermaster_npc.lua");
 	npcIndex = CreateNpc("VÖ binh thµnh m«n","Binh sÜ",MAPID,1582,3546);
 	SetNpcScript(npcIndex,"\\settings\\static_script\\kf_newbattles\\resourcebattle\\soldier_npc.lua");

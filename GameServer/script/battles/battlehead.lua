@@ -56,7 +56,7 @@ Include("\\script\\shinynight_head.lua")
 		GAME_BATTLESERIES = 13
 		GAME_ROUND = 14
 		
-		tbRANKNAME={"Binh sÜ", "HiÖu óy", "Thèng LÜnh", "Phã T­íng", "§¹i T­íng" , "Nguyªn So¸i"}
+		tbRANKNAME={"Binh sÜ", "Lieutenant", "Commander", "Vice General", "Great General" , "Marshal"}
 		
 		
 		MS_STATE = 1

@@ -28,7 +28,7 @@ function main()
 			PlayerIndex = GetTeamMember(i)
 			DelItem(2,0,356,1)
 			SetTask(TASK_LOVESTORY1,7)
-			TaskTip("VÒ gÆp Chóc Anh §µi")
+			TaskTip("Return to meet Zhu Yingtai")
 		end
 		PlayerIndex = OldPlayerIndex
 	elseif CanAcceptTask(TASK_LOVESTORY1,7) == 1 then
@@ -39,7 +39,7 @@ function main()
 				"Chóc Anh §µi nhê ta ®­a c©y tr©m nµy vµ nãi víi c«ng tö: <color=red>mét b¶y, hai t¸m, ba s¸u, bèn chÝn<color>.",
 				"Ta kh«ng ph¶i lµ con g¸i, Chóc hiÒn ®Ö t¹i sao l¹i tÆng ta c©y tr©m nhØ?",
 				"C«ng tö cã nhí ®· nãi g× víi Chóc Anh §µi khi chia tay nhau kh«ng?",
-				"NÕu L­¬ng huynh ThÝch mÉu ®¬n, h·y ®Õn nhµ tiÓu ®Ö ch¬i, sau nhµ cã v­ên mÉu ®¬n rÊt ®Ñp, L­¬ng huynh nghÜ sao!",
+				"If brother Liang likes peonies, please come visit my home; behind the house there is a very beautiful peony garden. What does brother Liang think?",
 				"Chóc hiÒn ®Ö nãi, nÕu Anh §µi lµ g¸i gi¶ trai, th× L­¬ng huynh cã muèn kÕt lµm ®«i uyªn ­¬ng kh«ng?", 
 				"Chóc hiÒn ®Ö nãi, L­¬ng huynh cã thÊy con vÞt n­íc kia kh«ng, nã ®ang c­êi L­¬ng huynh gièng nh­ chµng khê ®ã!",
 				"Chóc hiÒn ®Ö nãi, hai ta gièng nh­ Ng­u Lang Chøc N÷ ®i qua cÇu ¤ Th­íc!")
@@ -66,7 +66,7 @@ function main()
 	elseif GetTask(TASK_LOVESTORY1) == 9 then
 		Say("Chóc b»ng h÷u vui vÎ!",0)
 	elseif GetTask(TASK_LOVESTORY1) == 0 or GetTask(TASK_LOVESTORY1) == 1 or GetTask(TASK_LOVESTORY1) == 2 then
-		Say("CÇu vång mu«n dÆm tr¨m hoa në, ®«i b­ím bay l­în trong v­ên hoa.",0)
+		Say("A rainbow stretches a thousand miles as a hundred flowers bloom, and a pair of butterflies flutter through the flower garden.",0)
 	elseif GetTeamSize() == 2 then
 		Say("Tho¹t ®Çu lµ ®«i b¹n, sao b©y giê lµ ®«i t×nh nh©n vËy?",0)
 	else

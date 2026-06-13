@@ -40,7 +40,7 @@ function OnButton(nBtID)
 	end;
 	if nBtID == 3 then	--ÍË³ö½ÏÒÕ
 		BWT_QuitGestConvention();
-		Talk(1,"","Ng­¬i ®· ngõng so tµi.");
+		Talk(1,"","You have stopped competing.");
 		return 1;
 	end;
 	if nBtID == 4 then	--ÁìÈ¡½±Àø
@@ -59,28 +59,28 @@ function OnButton(nBtID)
 				return 0;
 			end;
 			local selTab = {
-						"§ång ý ®¨ng ký/register_point_confirm",
+						"Agree to register/register_point_confirm",
 						"T¹m thêi kh«ng ®¨ng ký/nothing",
 						}
 			local szString1,szString2,szString3 = "","","";
 			local nGetXinDeState = GetTask(TSK_GET_XINDE_STATE);
 			local nCount = 0;
 			if nGetXinDeState == 30 then
-				szString1 = "<color=red>§· l·nh<color>";
-				szString2 = "<color=red>§· l·nh<color>";
-				szString3 = "<color=red>§· l·nh<color>";
+				szString1 = "<color=red>Claimed<color>";
+				szString2 = "<color=red>Claimed<color>";
+				szString3 = "<color=red>Claimed<color>";
 			elseif nGetXinDeState == 20 then
-				szString1 = "<color=red>§· l·nh<color>";
-				szString2 = "<color=red>§· l·nh<color>";
-				szString3 = "<color=yellow>Ch­a l·nh<color>";
+				szString1 = "<color=red>Claimed<color>";
+				szString2 = "<color=red>Claimed<color>";
+				szString3 = "<color=yellow>Not yet claimed<color>";
 			elseif nGetXinDeState == 10 then
-				szString1 = "<color=red>§· l·nh<color>";
-				szString2 = "<color=yellow>Ch­a l·nh<color>";
-				szString3 = "<color=yellow>Ch­a l·nh<color>";
+				szString1 = "<color=red>Claimed<color>";
+				szString2 = "<color=yellow>Not yet claimed<color>";
+				szString3 = "<color=yellow>Not yet claimed<color>";
 			else
-				szString1 = "<color=yellow>Ch­a l·nh<color>";
-				szString2 = "<color=yellow>Ch­a l·nh<color>";
-				szString3 = "<color=yellow>Ch­a l·nh<color>";
+				szString1 = "<color=yellow>Not yet claimed<color>";
+				szString2 = "<color=yellow>Not yet claimed<color>";
+				szString3 = "<color=yellow>Not yet claimed<color>";
 			end;
 			Say("120 ®iÓm ®¨ng ký ®æi ®­îc 10 quyÓn Thùc ChiÕn T©m §¾c       "..szString1.."\n150 ®iÓm ®¨ng ký ®æi thªm ®­îc 10 quyÓn Thùc ChiÕn T©m §¾c     "..szString2.."\n200 ®iÓm ®¨ng ký cã thÓ ®æi thªm 10 quyÓn Thùc ChiÕn T©m §¾c     "..szString3.."\n§iÓm ®¨ng ký hiÖn giê cña ng­¬i lµ <color=yellow>"..nCurSignedResult.."<color>, ®iÓm so tµi hiÖn giê cña ng­¬i lµ <color=yellow>"..nCurRealResult.."<color>, 11 giê 30 tèi chñ nhËt sÏ tiÕn hµnh xÕp h¹ng dùa theo ®iÓm ®¨ng ký, ng­¬i x¸c nhËn muèn ®¨ng ký ®iÓm so tµi hiÖn giê cña m×nh chø?",getn(selTab),selTab);
 			return 1;
@@ -144,7 +144,7 @@ function register_point_confirm()
 		Msg2Player("B¹n nhËn ®­îc "..nCount.." quyÓn Thùc ChiÕn T©m §¾c");
 	end;
 	SignUpGestResult();	--½«»ý·ÖµÇ¼ÇÉÏÈ¥
-	WriteLog("["..LOG_HEAD.."]:"..GetName().."§iÓm ®¨ng ký tû vâ:"..nRegPoint.."NhËn ®­îc"..nCount.." quyÓn Thùc ChiÕn T©m §¾c");
+	WriteLog("["..LOG_HEAD.."]:"..GetName().."Registration points for the duel:"..nRegPoint.."Received"..nCount.." quyÓn Thùc ChiÕn T©m §¾c");
 	Talk(1,"","§iÓm cña ng­¬i ®· ®¨ng ký.");
 end;
 

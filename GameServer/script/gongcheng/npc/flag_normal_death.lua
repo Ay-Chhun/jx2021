@@ -23,15 +23,15 @@ function OnDeath(nNpcIdx)
 	SetMissionV(MV_DESTROY_FLAG1+nFlagID-1,1);
 	SetMissionV(MV_NORMAL_FLAG1_OWNER+nFlagID-1,GONG_ID);
 	local nFlagCount = GetMissionV(MV_FLAG_OWN_COUNT);
-	GCZ_Msg2Camp("Phe ta ®· chiÕm lÜnh "..tNormalFlagPos[nFlagID][3]..", chó ı phßng ®Şch nh©n ph¶n kİch! HiÖn t¹i tiÕn ®é c«ng thµnh phe ta lµ "..nFlagCount.."Thµnh",nPlayerCamp);
-	GCZ_Msg2Camp("Phe ®Şch ®· chiÕm lÜnh "..tNormalFlagPos[nFlagID][3]..", nÕu kh«ng lËp tøc hµnh ®éng tæn thÊt sÏ ngµy mét lín. HiÖn t¹i tiÕn ®é c«ng thµnh phe ®Şch lµ "..nFlagCount.."Thµnh",nEnemyCamp)
+	GCZ_Msg2Camp("Our faction has occupied"..tNormalFlagPos[nFlagID][3]..", chó ı phßng ®Şch nh©n ph¶n kİch! HiÖn t¹i tiÕn ®é c«ng thµnh phe ta lµ "..nFlagCount.."Thµnh",nPlayerCamp);
+	GCZ_Msg2Camp("The enemy faction has occupied"..tNormalFlagPos[nFlagID][3]..", nÕu kh«ng lËp tøc hµnh ®éng tæn thÊt sÏ ngµy mét lín. HiÖn t¹i tiÕn ®é c«ng thµnh phe ®Şch lµ "..nFlagCount.."Thµnh",nEnemyCamp)
 	if nFlagID == 1 then
 		GCZ_SetGraveyardStatus(MV_GRAVEYARD_C2,GONG_ID,TRUE);	--Æì×Ó1±»´İ»Ùºó£¬¹¥·½¿ÉÓÃÄ¹µØC2
 		GCZ_SetGraveyardStatus(MV_GRAVEYARD_22,SHOU_ID,FALSE);	--ÊØ·½²»¿ÉÓÃÄ¹µØ22
 		GCZ_Msg2Camp("§¹i kú ë §«ng thµnh bŞ ph¸ hñy, ®iÓm tËp kÕt trong thµnh m«n phİa §«ng ®· më",GONG_ID);
 		GCZ_Msg2Camp("§¹i kú ë §«ng thµnh nguy cÊp, ®iÓm tËp kÕt trung bé §«ng thµnh ®· më",SHOU_ID);
 	elseif nFlagID == 2 then
-		Msg2MSAll(MISSION_ID,"§¹i kú ë Trung khu bŞ ph¸ hñy, ");
+		Msg2MSAll(MISSION_ID,"The grand banner at the central area has been destroyed,");
 	elseif nFlagID == 3 then
 		GCZ_SetGraveyardStatus(MV_GRAVEYARD_C1,GONG_ID,TRUE);	--Æì×Ó3±»´İ»Ùºó£¬¹¥·½¿ÉÓÃÄ¹µØC1
 		GCZ_SetGraveyardStatus(MV_GRAVEYARD_21,SHOU_ID,FALSE);	--ÊØ·½²»¿ÉÓÃÄ¹µØ21		

@@ -26,7 +26,7 @@ function OnUse(nItemIdx)
 		return
 	end;
 	if DelItemByIndex(nItemIdx,1) == 1 then
-		add_item_ex( {"Kú l©n",	0,	105,	30000,	1} )
+		add_item_ex( {"Kirin",	0,	105,	30000,	1} )
 	end
 end
 
@@ -40,9 +40,9 @@ function add_item_ex(tItem)
 	if nRetCode == 1 then
 		SetItemExpireTime(nItemIdx, 7*24*3600)
 		Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." c¸i "..szItemName);
-		WriteLogEx(g_szLogTitle, "NhËn ®­îc", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName() )
+		WriteLogEx(g_szLogTitle, "Received", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName() )
 	else
-		WriteLogEx(g_szLogTitle, "NhËn ®­îc", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
+		WriteLogEx(g_szLogTitle, "Received", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
 	end
 end
 

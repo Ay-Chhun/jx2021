@@ -10,7 +10,7 @@ SP_END_TIME = 2014021500;
 SP_CITY_TABLE = {
 	[1] = {
 		[1] = 200,
-		[2] = "BiÖn Kinh",
+		[2] = "Bianjing",
 	},
 	[2] = {
 		[1] = 150,
@@ -34,7 +34,7 @@ SP_CITY_TABLE = {
 	},
 	[7] = {
 		[1] = 400,
-		[2] = "§¹i Lý",
+		[2] = "Da Li",
 	},
 }
 
@@ -43,20 +43,20 @@ SP_TARGER_NPC_TABLE = {
 		"D· TÈu",
 		"Tiªu s­",
 		"KhÊu ChuÈn",
-		"Vâ L©m Sø Gi¶",
+		"Wulin Envoy",
 		"V¹n Sù Th«ng",
 	},
 	[2] = {
-		"L­u T­ Anh",
-		"§Æc sø Vâ L©m",
+		"Liu Siying",
+		"Wulin Envoy",
 		"Tö Quang C¸c L·o Nh©n",
 		"Chñ th­¬ng héi",
 		"Bµ mai",
 	},
 	[3] = {
-		"Giang BiÖt H¹c",
+		"Jiang Biehe",
 		"ThÇn gi¸o H¾c Tæng Qu¶n",
-		"Th¸nh N÷ NhËm Doanh Doanh",
+		"Holy Maiden Ren Yingying",
 		"C«n L«n Ph¸i V©n Hi Hßa",
 		"Phông T­êng phñTh¸i thó ",
 	},
@@ -83,10 +83,10 @@ SP_TARGER_NPC_TABLE = {
 	},
 	[7] = {
 		"LÔ quan",
-		"§æng Giµ La",
-		"TrÞnh Qu¸n Chi",
-		"Cao Th¨ng TuyÒn",
-		"Tö Quyªn",
+		"Dong Jia La",
+		"Zheng Guanzhi",
+		"Cao Thang Tuyen",
+		"Zijuan",
 	},
 }
 
@@ -99,7 +99,7 @@ SP_NPC_TABLE = {
 }
 
 SP_NIANSHOU_POS = {
-	{200, 1381, 2894, "BiÖn Kinh(172,180)"},
+	{200, 1381, 2894, "Bianjing(172,180)"},
 	{150, 1687, 3131, "D­¬ng Ch©u(210,195)"},
 	{500, 1743, 3152, "Phông T­êng(218,196)"},
 	{350, 1441, 3010, "T­¬ng D­¬ng(180,188)"},

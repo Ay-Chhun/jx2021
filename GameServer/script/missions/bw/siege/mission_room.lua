@@ -369,9 +369,9 @@ KMissionRecordAppend =
 			WriteLogEx("Cong Thanh Chien",szFinalWinner.." nhËn ®­îc "..tFightCityName[nFightCity].."_t­ c¸ch c«ng thµnh")
 		elseif szD == "" then					-- Èç¹ûÃ»ÓÐÊØ³Ç·½£¬ÔòÖ±½ÓÕ¼ÓÐ³ÇÊÐ
 			SetCityWarWinner(nFightCity, szFinalWinner)
-			Msg2SubWorld("Chóc mõng bang héi:"..szFinalWinner.." ®· chiÕm ®­îc "..tFightCityName[nFightCity])
-			AddGlobalNews("Chóc mõng bang héi:"..szFinalWinner.." ®· chiÕm ®­îc "..tFightCityName[nFightCity])
-			WriteLogEx("Cong Thanh Chien",szFinalWinner.." ®· chiÕm ®­îc "..tFightCityName[nFightCity])
+			Msg2SubWorld("Chóc mõng bang héi:"..szFinalWinner.." has occupied"..tFightCityName[nFightCity])
+			AddGlobalNews("Chóc mõng bang héi:"..szFinalWinner.." has occupied"..tFightCityName[nFightCity])
+			WriteLogEx("Cong Thanh Chien",szFinalWinner.." has occupied"..tFightCityName[nFightCity])
 		end
 	end,
 	
@@ -773,7 +773,7 @@ KMissionArenaAppend =
 			end
 		end
 		if szWinner ~= "" then
-			Msg2SubWorld("Bang héi: "..szWinner.." giµnh th¾ng lîi.")
+			Msg2SubWorld("Bang héi: "..szWinner.." has claimed victory.")
 		end
 		self:ReSetSubWorld()
 		return szWinner
@@ -822,9 +822,9 @@ KMissionArenaAppend =
 			if my_getmissions(self.m_sCamp1Team) == "" and my_getmissions(self.m_sCamp2Team) == "" then
 				szInfo = "Bang héi <color=yellow>"..my_getmissions(self.m_sCamp1TeamBak).."<color> vµ bang héi <color=yellow>"..my_getmissions(self.m_sCamp2TeamBak).."<color> cïng rêi trËn, ra khái trËn L«i ®µi nµy\n"
 			elseif my_getmissions(self.m_sCamp1Team) == "" then
-				szInfo = "Bang héi <color=yellow>"..my_getmissions(self.m_sCamp1TeamBak).."<color> vµ bang héi <color=yellow>"..my_getmissions(self.m_sCamp2TeamBak).."<color> trËn ®Êu, bang héi <color=yellow>"..my_getmissions(self.m_sCamp2Team).."<color> cuèi cïng ®· th¾ng\n"
+				szInfo = "Bang héi <color=yellow>"..my_getmissions(self.m_sCamp1TeamBak).."<color> vµ bang héi <color=yellow>"..my_getmissions(self.m_sCamp2TeamBak).."<color> trËn ®Êu, bang héi <color=yellow>"..my_getmissions(self.m_sCamp2Team).."<color> has won in the end\n"
 			elseif my_getmissions(self.m_sCamp2Team) == "" then
-				szInfo = "Bang héi <color=yellow>"..my_getmissions(self.m_sCamp1TeamBak).."<color> vµ bang héi <color=yellow>"..my_getmissions(self.m_sCamp2TeamBak).."<color> trËn ®Êu, bang héi <color=yellow>"..my_getmissions(self.m_sCamp1Team).."<color> cuèi cïng ®· th¾ng\n"
+				szInfo = "Bang héi <color=yellow>"..my_getmissions(self.m_sCamp1TeamBak).."<color> vµ bang héi <color=yellow>"..my_getmissions(self.m_sCamp2TeamBak).."<color> trËn ®Êu, bang héi <color=yellow>"..my_getmissions(self.m_sCamp1Team).."<color> has won in the end\n"
 			elseif GetMSPlayerCount(ARENA_MISSION_ID, 1) == 0 and GetMSPlayerCount(ARENA_MISSION_ID, 2) == 0 then
 				szInfo = "Bang héi <color=yellow>"..my_getmissions(self.m_sCamp1TeamBak).."<color> vµ bang héi <color=yellow>"..my_getmissions(self.m_sCamp2TeamBak).."<color> ®Òu kh«ng vµo ®Êu tr­êng thi ®Êu\n"
 			elseif GetMSPlayerCount(ARENA_MISSION_ID, 1) == 0 then
@@ -832,7 +832,7 @@ KMissionArenaAppend =
 			elseif GetMSPlayerCount(ARENA_MISSION_ID, 2) == 0 then
 				szInfo = "Bang héi <color=yellow>"..my_getmissions(self.m_sCamp1TeamBak).."<color> vµ bang héi <color=yellow>"..my_getmissions(self.m_sCamp2TeamBak).."<color> trËn ®Êu, bang héi <color=yellow>"..my_getmissions(self.m_sCamp2Team).."<color> kh«ng vµo ®Êu tr­êng thi ®Êu\n"
 			else
-				szInfo = "Bang héi <color=yellow>"..my_getmissions(self.m_sCamp1TeamBak).."<color> vµ bang héi <color=yellow>"..my_getmissions(self.m_sCamp2TeamBak).."<color> ®ang håi kÞch liÖt\n"
+				szInfo = "Bang héi <color=yellow>"..my_getmissions(self.m_sCamp1TeamBak).."<color> vµ bang héi <color=yellow>"..my_getmissions(self.m_sCamp2TeamBak).."<color> is in a fierce clash\n"
 			end
 		end
 		self:ReSetSubWorld()
@@ -846,7 +846,7 @@ KMissionArenaAppend =
 		local nSec = mod(nAllSec, 60)
 		
 		if nMin > 1 and nSec == 0 then		-- ´óÓÚ1·ÖÖÓÔò1·ÖÖÓÒ»±¨
-			Msg2MSAll(GetMissionV(self.m_nMissionID), szPreMsg..nMin.." Phót ")
+			Msg2MSAll(GetMissionV(self.m_nMissionID), szPreMsg..nMin.." minutes")
 		elseif nMin == 0 and mod(nSec, 10) == 0 then	-- Ð¡ÓÚ1·ÖÖÓÔò10ÃëÒ»±¨
 			Msg2MSAll(GetMissionV(self.m_nMissionID), szPreMsg..nSec.." Gi©y ")
 		end

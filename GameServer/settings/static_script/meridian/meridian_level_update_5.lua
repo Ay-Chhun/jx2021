@@ -53,7 +53,7 @@ function do_update_lv_5()
 		SetCurrentNpcSFX(PIdx2NpcIdx(),901,0,0);
 		
 		local str = format("Chóc mõng %s%s kÝch ho¹t Vâ Hoµng thµnh c«ng!", GetName(), gf_GetPlayerSexName());
-		Say("<color=green>Nh¹c BÊt QuÇn:<color>"..str, 0);
+		Say("<color=green>Yue Buqun:<color>"..str, 0);
 		Msg2Global(msg);
 	end
 end

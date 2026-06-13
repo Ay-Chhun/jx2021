@@ -46,7 +46,7 @@ function get_seed()
 		if add_flog_one == 1 and add_flog_two == 1 then
 			Msg2Player("B¹n nhËn ®­îc 1 h¹t gièng hoa hång vµ h¹t gièng thÇn kú.");
 		else
-			WriteLog("Ho¹t ®éng ThÊt TŞch: Ng­êi ch¬i"..GetName().."NhËn lÊy h¹t gièng hoa hång vµ h¹t gièng thÇn kú thÊt b¹i. VŞ trİ thÊt b¹i. VŞ trİ thÊt b¹i:"..add_flog_one.." vµ"..add_flog_two);
+			WriteLog("Ho¹t ®éng ThÊt TŞch: Ng­êi ch¬i"..GetName().."NhËn lÊy h¹t gièng hoa hång vµ h¹t gièng thÇn kú thÊt b¹i. VŞ trİ thÊt b¹i. VŞ trİ thÊt b¹i:"..add_flog_one.." and"..add_flog_two);
 		end
 	else
 		Talk(1,"","RÊt tiÕc! Mçi ng­êi chØ nhËn ®­îc 1 phÇn.");

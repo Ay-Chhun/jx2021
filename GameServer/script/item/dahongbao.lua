@@ -112,7 +112,7 @@ function OnUse(itemIndex)
 		end
 		
 		ModifyExp(nExp)
-		Msg2Player("NhËn ®­îc "..nExp.." ®iÓm kinh nghiÖm")
+		Msg2Player("Received"..nExp.." ®iÓm kinh nghiÖm")
 		WriteLogEx(szLogTitle, "Sö dông bao l× x× thµnh c«ng")
 		AddMonthlyEventFireworkAward(10)
 		SetTask(TSK_DAHONGBAO_201101, GetTask(TSK_DAHONGBAO_201101) + 1)
@@ -129,6 +129,6 @@ end
 function AddMonthlyEventFireworkAward(nCount)
 	local nDate = tonumber(date("%y%m%d"))
 	if nDate >= 110225 and nDate <= 110327 then
-		gf_AddItemEx2({2, 1, 30287, nCount}, "Nguyªn liÖu ", "Hoat dong thang 3 nam 2011", "sö dông bao l× x×")
+		gf_AddItemEx2({2, 1, 30287, nCount}, "Material", "Hoat dong thang 3 nam 2011", "sö dông bao l× x×")
 	end
 end

@@ -12,7 +12,7 @@ function OnUse(nItemIdx)
 	if DelItemByIndex(nItemIdx, 1) == 1 then
 		local nBody = GetBody();
 		nRandItem = gf_GetRandItemByTable(tb_texiaobaoxiang_aword[nBody], 10000, 7);
-		gf_SetLogCaption("Truy t×m tr­êng sinh phæ");
+		gf_SetLogCaption("Search for the Longevity Manual");
 		gf_AddItemEx(
 									{tb_texiaobaoxiang_aword[nBody][nRandItem][3], tb_texiaobaoxiang_aword[nBody][nRandItem][4], 
 										tb_texiaobaoxiang_aword[nBody][nRandItem][5], tb_texiaobaoxiang_aword[nBody][nRandItem][6],

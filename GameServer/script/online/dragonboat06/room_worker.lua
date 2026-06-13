@@ -7,7 +7,7 @@ Include("\\script\\online\\dragonboat06\\mission_head.lua");
 function main()
 	local selTab = {
 				"§óng! Ta muèn rêi khái/leave",
-				"TiÕp tôc tham gia thi ®Êu/nothing",
+				"Continue joining the race /nothing",
 				}
 	Say("B¹n muèn rêi khái tr­êng ®Êu ngay b©y giê?",getn(selTab),selTab);
 end;

@@ -4,7 +4,7 @@ function OnUse()
 	Say("Sö dông nhËn ®­îc<color=yellow>10 ®iÓm<color>danh väng thÕ lùc#cã sö dông kh«ng#",
 		2,
 		"\n§óng/confirm_use",
-		"\nKÕt thóc ®èi tho¹i/nothing")
+		"\nEnd conversation/nothing")
 end
 
 function confirm_use()

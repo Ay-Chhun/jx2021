@@ -24,7 +24,7 @@ tPhaseDriver.phases = {tStage00, tStage01, tStage02, tStage03, tStage04, tStage0
 tPhaseDriver.name = "PhaseDriver";
 
 function tPhaseDriver:onTimeout()
-	this:Msg2MSAll("KÕt thóc ¶i!");
+	this:Msg2MSAll("The challenge has ended!");
 	TY_ReviveAll(0);
 	TY_ConfirmClose();
 end

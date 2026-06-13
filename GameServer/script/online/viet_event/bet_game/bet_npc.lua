@@ -23,7 +23,7 @@ function bet_join()
 		"\nDù ®o¸n c¸c trËn ngµy Chñ NhËt 04-04 (thêi h¹n dù ®o¸n 24 giê Thø B¶y 03-04)/bet_select_2",
 		"\nDù ®o¸n c¸c trËn ngµy Thø B¶y 10-04 (thêi h¹n dù ®o¸n 24 giê Thø S¸u 09-04)/bet_select_3",
 		"\nDù ®o¸n c¸c trËn vßng Chung KÕt (thêi h¹n dù ®o¸n 24 giê Thø S¸u 16-04)/bet_select_4",
-		"\n§Ó ta suy nghÜ/gf_DoNothing",
+		"\nLet me think about it/gf_DoNothing",
 	}
 	Say(szNpcName.."B»ng h÷u cã thÓ ®Æt nhiÒu nhÊt <color=yellow>100 TiÒn LÎ<color> cho mçi kÕt qu¶ dù ®o¸n.",getn(tSay),tSay)
 end
@@ -45,7 +45,7 @@ function bet_prize()
 	if nDate >= 2010041500 then
 		tinsert(tSay,"\nNhËn l¹i TiÒn LÎ dù ®o¸n c¸c trËn Chung KÕt (thêi h¹n nhËn th­ëng 24 giê Thø S¸u 07-05)/#bet_prize_select(4)")
 	end
-	tinsert(tSay,"\n§Ó ta suy nghÜ/gf_DoNothing")
+	tinsert(tSay,"\nLet me think about it/gf_DoNothing")
 	Say(szNpcName.."B»ng h÷u nhËn th­ëng dù ®o¸n nµo?",getn(tSay),tSay)
 end
 
@@ -65,7 +65,7 @@ function bet_select_1()
 		"Tªn 2 ®éi chiÕn th¾ng ë b¶ng F ngµy Thø B¶y 03-04 (tû lÖ 1 tróng 2)/#bet_select_confirm(7)",
 		"Tªn 2 ®éi chiÕn th¾ng ë b¶ng G ngµy Thø B¶y 03-04 (tû lÖ 1 tróng 2)/#bet_select_confirm(8)",
 		"Tªn 2 ®éi chiÕn th¾ng ë b¶ng H ngµy Thø B¶y 03-04 (tû lÖ 1 tróng 2)/#bet_select_confirm(9)",
-		"§Ó ta suy nghÜ/gf_DoNothing",
+		"Let me think about it/gf_DoNothing",
 	}
 	Say(szNpcName.."B»ng h÷u dù ®o¸n kÕt qu¶ nµo?",getn(tSay),tSay)
 end
@@ -86,7 +86,7 @@ function bet_select_2()
 		"Tªn 2 ®éi chiÕn th¾ng ë b¶ng F ngµy Chñ NhËt 04-04 (tû lÖ 1 tróng 2)/#bet_select_confirm(16)",
 		"Tªn 2 ®éi chiÕn th¾ng ë b¶ng G ngµy Chñ NhËt 04-04 (tû lÖ 1 tróng 2)/#bet_select_confirm(17)",	
 		"Tªn 2 ®éi chiÕn th¾ng ë b¶ng H ngµy Chñ NhËt 04-04 (tû lÖ 1 tróng 2)/#bet_select_confirm(18)",
-		"§Ó ta suy nghÜ/gf_DoNothing",
+		"Let me think about it/gf_DoNothing",
 	}
 	Say(szNpcName.."B»ng h÷u dù ®o¸n kÕt qu¶ nµo?",getn(tSay),tSay)
 end
@@ -104,7 +104,7 @@ function bet_select_3()
 		"Tªn 2 ®éi chiÕn th¾ng ë §Êu Tr­êng 2 ngµy Thø B¶y 10-04 (tû lÖ 1 tróng 2)/#bet_select_confirm(22)",
 		"Tªn 2 ®éi chiÕn th¾ng ë §Êu Tr­êng 3 ngµy Thø B¶y 10-04 (tû lÖ 1 tróng 2)/#bet_select_confirm(23)",
 		"Tªn 2 ®éi chiÕn th¾ng ë §Êu Tr­êng 4 ngµy Thø B¶y 10-04 (tû lÖ 1 tróng 2)/#bet_select_confirm(24)",
-		"§Ó ta suy nghÜ/gf_DoNothing",
+		"Let me think about it/gf_DoNothing",
 	}
 	Say(szNpcName.."B»ng h÷u dù ®o¸n kÕt qu¶ nµo?",getn(tSay),tSay)
 end
@@ -117,12 +117,12 @@ function bet_select_4()
 	end
 	local tSay = {
 		"Tªn 2 ®éi tranh nhÊt - nh× Cao CÊp	(tû lÖ 1 tróng 4)/#bet_select_confirm(25)",	
-		"Tªn 2 ®éi ®¹t h¹ng ba - t­ Cao CÊp (tû lÖ 1 tróng 4)/#bet_select_confirm(26)",	
+		"Name the 2 teams taking 3rd and 4th place in Advanced (odds 1 in 4)/#bet_select_confirm(26)",	
 		"Tªn 2 ®éi tranh nhÊt - nh× Siªu CÊp (tû lÖ 1 tróng 4)/#bet_select_confirm(27)",	
-		"Tªn 2 ®éi ®¹t h¹ng ba - t­ Siªu CÊp (tû lÖ 1 tróng 4)/#bet_select_confirm(28)",	
+		"Name the 2 teams taking 3rd and 4th place in Super (odds 1 in 4)/#bet_select_confirm(28)",	
 		"Tªn ®éi v« ®Þch Cao CÊp Bang Héi Tinh Anh lÇn 3 (tû lÖ 1 tróng 8)/#bet_select_confirm(29)",	
 		"Tªn ®éi v« ®Þch Siªu CÊp Bang Héi Tinh Anh lÇn 3 (tû lÖ 1 tróng 8)/#bet_select_confirm(30)",	
-		"§Ó ta suy nghÜ/gf_DoNothing",
+		"Let me think about it/gf_DoNothing",
 	}
 	Say(szNpcName.."B»ng h÷u dù ®o¸n kÕt qu¶ nµo?",getn(tSay),tSay)
 end
@@ -167,7 +167,7 @@ function get_team(nPage,nStep,nType)
 		tinsert(tSay,format("Xem trang sau/#get_team(%d,%d,%d)",nNextPage + 1,6,nType))
 	end
 	if nPage > 1 then
-		tinsert(tSay,format("Xem trang tr­íc/#get_team(%d,%d,%d)",nPage - 1,-6,nType))
+		tinsert(tSay,format("View previous page/#get_team(%d,%d,%d)",nPage - 1,-6,nType))
 	end
 	
 	tinsert(tSay,"T¹i h¹ chØ ghÐ ngang!/gf_DoNothing")
@@ -178,7 +178,7 @@ function get_team(nPage,nStep,nType)
 	end
 	
 	nCount = nCount + 1
-	Say(szNpcName.."Chän ®éi thø <color=yellow>"..nCount.."<color>",getn(tSay),tSay)	
+	Say(szNpcName.."Choose team number <color=yellow>"..nCount.."<color>",getn(tSay),tSay)	
 end
 
 function select_team(nTeamBit,nType,nPage)
@@ -219,7 +219,7 @@ function bet_select_confirm_final(nLimitedCount)
 		end
 	end
 	
-	Say(szNpcName.."B»ng h÷u ®· chän "..nLimitedCount.." ®éi <color=yellow>"..strTeamList.."<color>. §ång ý chø?",2,"Ta ®ång ý!/bet_select_confirm_final_put","Ta muèn chän l¹i/bet_join")
+	Say(szNpcName.."You have chosen"..nLimitedCount.." team(s) <color=yellow>"..strTeamList.."<color>. Do you agree?",2,"I agree!/bet_select_confirm_final_put","Ta muèn chän l¹i/bet_join")
 end
 
 function bet_select_confirm_final_put()
@@ -242,9 +242,9 @@ function bet_select_confirm_final_ok(nSilver)
 	if  DelItem(2,1,198,nSilver) == 1 then
 		if nType == 1 or nType == 10 then
 			SetTask(tTaskByteControl[nType][1],GetTaskTemp(TSK_TEAM_LIST_1))
-			WriteLogEx("Vui Cung BHTA","Dù ®o¸n Type "..nType,GetTask(tTaskByteControl[nType][1]))
+			WriteLogEx("Vui Cung BHTA","Prediction Type"..nType,GetTask(tTaskByteControl[nType][1]))
 			SetTask(tTaskByteControl[nType][2],GetTaskTemp(TSK_TEAM_LIST_2))
-			WriteLogEx("Vui Cung BHTA","Dù ®o¸n Type "..nType,GetTask(tTaskByteControl[nType][2]),nSilver)
+			WriteLogEx("Vui Cung BHTA","Prediction Type"..nType,GetTask(tTaskByteControl[nType][2]),nSilver)
 		else
 			local nCountValue = 0
 			for i=1,31 do
@@ -252,24 +252,24 @@ function bet_select_confirm_final_ok(nSilver)
 					if gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][2]) == 0 then
 						gf_SetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][2],i)						
 						nCountValue = nCountValue + 1
-						WriteLogEx("Vui Cung BHTA","Dù ®o¸n Type "..nType,gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][2]),nSilver)
+						WriteLogEx("Vui Cung BHTA","Prediction Type"..nType,gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][2]),nSilver)
 						if nType == 29 or nType == 30 then
 							break
 						end
 					elseif gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][3]) == 0 then
 						gf_SetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][3],i)						
 						nCountValue = nCountValue + 1
-						WriteLogEx("Vui Cung BHTA","Dù ®o¸n Type "..nType,gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][3]),nSilver)
+						WriteLogEx("Vui Cung BHTA","Prediction Type"..nType,gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][3]),nSilver)
 					else
 						if nType == 19 or nType == 20 then
 							if gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][4]) == 0 then
 								gf_SetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][4],i)								
 								nCountValue = nCountValue + 1
-								WriteLogEx("Vui Cung BHTA","Dù ®o¸n Type "..nType,gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][4]),nSilver)
+								WriteLogEx("Vui Cung BHTA","Prediction Type"..nType,gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][4]),nSilver)
 							elseif gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][5]) == 0 then
 								gf_SetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][5],i)								
 								nCountValue = nCountValue + 1
-								WriteLogEx("Vui Cung BHTA","Dù ®o¸n Type "..nType,gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][5]),nSilver)
+								WriteLogEx("Vui Cung BHTA","Prediction Type"..nType,gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][5]),nSilver)
 							end
 						end
 					end
@@ -280,21 +280,21 @@ function bet_select_confirm_final_ok(nSilver)
 					if gf_GetTaskTempBit(TSK_TEAM_LIST_2,i-31) == 1 then
 						if gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][2]) == 0 then
 							gf_SetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][2],i)
-							WriteLogEx("Vui Cung BHTA","Dù ®o¸n Type "..nType,gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][2]),nSilver)
+							WriteLogEx("Vui Cung BHTA","Prediction Type"..nType,gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][2]),nSilver)
 							if nType == 29 or nType == 30 then
 								break
 							end						
 						elseif gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][3]) == 0 then
 							gf_SetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][3],i)
-							WriteLogEx("Vui Cung BHTA","Dù ®o¸n Type "..nType,gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][3]),nSilver)	
+							WriteLogEx("Vui Cung BHTA","Prediction Type"..nType,gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][3]),nSilver)	
 						else
 							if nType == 19 or nType == 20 then
 								if gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][4]) == 0 then
 									gf_SetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][4],i)	
-									WriteLogEx("Vui Cung BHTA","Dù ®o¸n Type "..nType,gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][4]),nSilver)	
+									WriteLogEx("Vui Cung BHTA","Prediction Type"..nType,gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][4]),nSilver)	
 								elseif gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][5]) == 0 then
 									gf_SetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][5],i)									
-									WriteLogEx("Vui Cung BHTA","Dù ®o¸n Type "..nType,gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][5]),nSilver)	
+									WriteLogEx("Vui Cung BHTA","Prediction Type"..nType,gf_GetTaskByte(tTaskByteControl[nType][1],tTaskByteControl[nType][5]),nSilver)	
 								end
 							end						
 						end
@@ -347,7 +347,7 @@ function bet_prize_select(nPrizeType)
 						SetTask(tTaskByteControl[k][1],0)
 						SetTask(tTaskByteControl[k][2],0)
 						SetTask(TSK_SILVER_WIN,GetTask(TSK_SILVER_WIN) + nSilverCount *  tTaskByteBet[k][3])
-						WriteLogEx("Vui Cung BHTA","Tróng Type "..k,nSilverCount *  tTaskByteBet[k][3])	
+						WriteLogEx("Vui Cung BHTA","Winning Type"..k,nSilverCount *  tTaskByteBet[k][3])	
 					end
 				else								
 					if k == 19 or k == 20 then
@@ -375,7 +375,7 @@ function bet_prize_select(nPrizeType)
 							gf_SetTaskByte(tTaskByteControl[k][1],tTaskByteControl[k][5],0)		
 						end			
 						SetTask(TSK_SILVER_WIN,GetTask(TSK_SILVER_WIN) + nSilverCount *  tTaskByteBet[k][3])
-						WriteLogEx("Vui Cung BHTA","Tróng Type "..k,nSilverCount *  tTaskByteBet[k][3])	
+						WriteLogEx("Vui Cung BHTA","Winning Type"..k,nSilverCount *  tTaskByteBet[k][3])	
 					end			
 				end
 			end
@@ -406,7 +406,7 @@ function get_silver_win()
 		return
 	end
 	local nSilverWin = GetTask(TSK_SILVER_WIN)
-	Say(szNpcName.."B»ng h÷u hiÖn cã <color=yellow>"..nSilverWin.." TiÒn LÎ<color> ë chç ta. Cã muèn rót ra kh«ng?",2,"Ta muèn lÊy/get_silver_won_confirm","§Ó ta suy nghÜ/gf_DoNothing")
+	Say(szNpcName.."B»ng h÷u hiÖn cã <color=yellow>"..nSilverWin.." TiÒn LÎ<color> ë chç ta. Cã muèn rót ra kh«ng?",2,"Ta muèn lÊy/get_silver_won_confirm","Let me think about it/gf_DoNothing")
 end
 
 function get_silver_won_confirm()
@@ -431,7 +431,7 @@ function get_silver_won_confirm_ok(nNumber)
 			return
 		end		
 		SetTask(TSK_SILVER_WIN, GetTask(TSK_SILVER_WIN) - nCanTake)
-		gf_AddItemEx2({2,1,198,nCanTake},"TiÒn LÎ","Vui Cung BHTA","rót ra")	
+		gf_AddItemEx2({2,1,198,nCanTake},"TiÒn LÎ","Vui Cung BHTA","withdraw")	
 	else
 		Say(szNpcName.."B»ng h÷u cã nhÇm lÉn kh«ng? Ta kh«ng gi÷ mãn g× cña b»ng h÷u c¶!",0)
 	end

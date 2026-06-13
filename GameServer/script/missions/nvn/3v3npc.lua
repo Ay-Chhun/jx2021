@@ -21,8 +21,8 @@ end
 
 function main_ggs()
 	local tSel = {
-		"\nTrë vÒ BiÖn Kinh/leave_3v3_map",
-		"Kh«ng cã g×!/nothing",
+		"\nReturn to Bianjing/leave_3v3_map",
+		"Nothing!/nothing",
 	}
 	Say(g_szInfoHead.."TriÒu ®×nh ®· h¹ chØ, chuÈn bÞ §¹i Héi TØ Vâ, c¸c anh hïng hµo kiÖt cã thÓ b¸o danh tham gia. §Ó kiÓm tra n¨ng lùc cña mçi ng­êi chän ra nh©n sÜ cã vâ nghÖ cao c­êng.",
 		getn(tSel), tSel);
@@ -60,9 +60,9 @@ end
 function main_3v3_2()
 	local tSel = {
 		--"ÁìÈ¡Èü¼¾½±Àø/getAward_3v3",
-		"H­íng dÉn §¹i Héi TØ Vâ/info_3v3",
+		"Great Martial Arts Tournament guide/info_3v3",
 		--"·µ»Ø/main",
-		"Kh«ng cã g×!/nothing",
+		"Nothing!/nothing",
 	}
 	--ÆÁ±ÎÔ¤Ñ¡ÈüºÍ¾öÈü
 --	if g_t3v3Data.battleState == BS_PRELIMINARY then
@@ -72,7 +72,7 @@ function main_3v3_2()
 --		tinsert(tSel, 2, "²é¿´¾öÈüÃûµ¥/seePerliminaryRank");
 --	else
 	if g_t3v3Data.battleState == BS_DAYMATCH then
-		tinsert(tSel, 1, "Vµo ®Êu tr­êng §¹i Héi TØ Vâ/before_GLB_3v3_Goto_Field");
+		tinsert(tSel, 1, "Enter the Great Martial Arts Tournament arena/before_GLB_3v3_Goto_Field");
 		--tinsert(tSel, 2, "²é¿´ÉÏÈü¼¾¾öÈüÅÅÃû/seeFinalMatchRank");
 	else
 		tinsert(tSel, 1, "HiÖn t¹i kh«ng ph¶i lµ thêi gian thi ®Êu/main_3v3");
@@ -88,11 +88,11 @@ end
 function test()
 	local tSel = {}
 	if TEST_MODAL == 1 then
-		tinsert(tSel, "Xem xÕp h¹ng tuÇn tr­íc/seeLastWeekRank");
+		tinsert(tSel, "View last week's ranking/seeLastWeekRank");
 		tinsert(tSel, "KiÓm tra phÇn th­ëng quý/xxxcheckMatchAward");
-		tinsert(tSel, "Xem xÕp h¹ng quý/seeLastMatchRank");
+		tinsert(tSel, "View quarterly ranking/seeLastMatchRank");
 		tinsert(tSel, "§i ®Õn khu vùc ®Êu ngµy/#ChangeGroupWorld(8000,1393,2822,1)");
-		tinsert(tSel, "§i ®Õn khu vùc chung kÕt/#ChangeGroupWorld(8000,1393,2822,3)");
+		tinsert(tSel, "Go to the finals area/#ChangeGroupWorld(8000,1393,2822,3)");
 		tinsert(tSel, "trë l¹i/main_3v3")
 	end
 	Say(g_szInfoHead.."TEST!!!", getn(tSel), tSel);
@@ -113,9 +113,9 @@ function GLB_3v3_Goto_Field(bConfirm)
 	if 1 ~= bConfirm then
 		local szInfo		= "Ng­¬i ®· ®i vµo §¹i Héi TØ Vâ liªn ®Êu 3v3";
 		local strtab = {
-			"Ta ®· chuÈn bÞ xong!			/#GLB_3v3_Goto_Field(1)",
+			"I am ready!			/#GLB_3v3_Goto_Field(1)",
 			"trë l¹i/main",
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 		};
 		Say(g_szInfoHead..""..szInfo,
 		getn(strtab),
@@ -265,9 +265,9 @@ g_tAward_3v3 = {
 	end},
 	{giveClause = function (nCount)
 		if nCount >= 11 then
-			gf_AddItemEx({2,95,1511,1,4}, "§Êu Ph¸ch LÖnh", 25);
+			gf_AddItemEx({2,95,1511,1,4}, "Soul Breaking Token", 25);
 		elseif nCount >= 8 then
-			gf_AddItemEx({2,95,1511,1,4}, "§Êu Ph¸ch LÖnh", 10);
+			gf_AddItemEx({2,95,1511,1,4}, "Soul Breaking Token", 10);
 		end
 	end},
 	{giveClause = function (nCount)
@@ -298,7 +298,7 @@ function getAward_3v3_personal(bSure)
 		local tSel = {
 			"NhËn lÊy phÇn th­ëng./#getAward_3v3_personal(1)",
 			"trë l¹i/getAward_3v3",
-			"KÕt thóc/nothing",
+			"End/nothing",
 		}
 		Say(g_szInfoHead..format("Tæng sè phÇn th­ëng c¸ nh©n cã thÓ nhËn quý nµy %d, sè lÇn nhËn th­ëng d­ l¹i hiÖn t¹i %d, cã muèn tiÕp tôc nhËn kh«ng?", maxcount, count),
 			getn(tSel), tSel);
@@ -341,7 +341,7 @@ function getAward_3v3_fightteam(bSure)
 		local tSel = {
 			"NhËn lÊy phÇn th­ëng./#getAward_3v3_fightteam(1)",
 			"trë l¹i/getAward_3v3",
-			"KÕt thóc/nothing",
+			"End/nothing",
 		}
 		Say(g_szInfoHead..format("Tæng sè phÇn th­ëng chiÕn ®éi cã thÓ nhËn quý nµy %d, sè lÇn nhËn th­ëng d­ l¹i hiÖn t¹i %d, cã muèn tiÕp tôc nhËn kh«ng?", maxcount, count),
 			getn(tSel), tSel);
@@ -414,7 +414,7 @@ function getAward_3v3_match(nCurMatchRound, nCount, tData, bUpdate)
 		g_3v3MatchRank = {}
 		g_FightTeamID2Rank = {}
 		for i = 1, nCount do
-			DebugOutput("CËp nhËt xÕp h¹ng cuèi cïng");
+			DebugOutput("Update the final ranking");
 			local tRankData = tData[i-1];
 			DebugOutput(gf_UnPack(tRankData));
 			local tRank = {};
@@ -469,9 +469,9 @@ function getAward_3v3_match_real(rank)
 	Msg2Player(format("Ng­¬i nhËn ®­îc %d cÊp 1 kü n¨ng th¹ch ®· l­u gi÷ vµo trong tói", count[2]));
 
 --è­è²ÂöÆø
-	gf_AddItemEx2({"Th«i X¸n M¹ch KhÝ", {2,92,9,1,4}}, count[3]);
+	gf_AddItemEx2({"Thoi Xan Mach Khi", {2,92,9,1,4}}, count[3]);
 --¶·ÆÇÁî
-	gf_AddItemEx({2,95,1511,1,4}, "§Êu Ph¸ch LÖnh", nCount[4]);
+	gf_AddItemEx({2,95,1511,1,4}, "Soul Breaking Token", nCount[4]);
 	if rank == 1 then
 		local tItem = {
 			{0,120,138,1,4},
@@ -529,16 +529,16 @@ function updateXvXRank(nCount, s)
 end
 
 g_tRankTitle = {
-	{"Vâ L©m Minh ThËp Vâ Th¸nh", 67, 20	},
+	{"Wulin League Tenth Martial Saint", 67, 20	},
 	{"Vâ L©m Minh Cöu Vâ T«n", 67, 19	},
-	{"Vâ L©m Minh B¸t Vâ Quû", 67, 18	},
+	{"Wulin League Eighth Martial Demon", 67, 18	},
 	{"Vâ L©m Minh ThÊt Vâ Hoµng", 67, 17	},
-	{"Vâ L©m Minh Lôc Vâ Linh", 67, 16	},
+	{"Wulin League Sixth Martial Spirit", 67, 16	},
 	{"Vâ L©m Minh Ngò Vâ T«ng", 67, 15	},
-	{"Vâ L©m Minh Tø Vâ HiÖp", 67, 14	},
-	{"Vâ L©m Minh Tam Vâ S­", 67, 13	},
-	{"Vâ L©m Minh NhÞ Vâ SÜ", 67, 12	},
-	{"Vâ L©m Minh NhÊt Vâ Gi¶", 67, 11	},
+	{"Wulin League Fourth Martial Hero", 67, 14	},
+	{"Wulin League Third Martial Master", 67, 13	},
+	{"Wulin League Second Martial Warrior", 67, 12	},
+	{"Wulin League First Martial Disciple", 67, 11	},
 }
 g_3v3DailyAward = {
 	50,
@@ -574,7 +574,7 @@ function getWeeklyAward_3v3()
 		if gf_TodayDate() >= 20121224 and gf_TodayDate() <= 20121230 then
 			local nCount = 100 - (nRank - 1) * 5;
 			Msg2Player(format("Do thuéc tÝnh danh hiÖu tuÇn nµy v« hiÖu, ng­¬I nhËn ®­îc %d §Êu Ph¸ LÖnh", nCount));
-			gf_AddItemEx({2,95,1511,1,4}, "§Êu Ph¸ch LÖnh", nCount);
+			gf_AddItemEx({2,95,1511,1,4}, "Soul Breaking Token", nCount);
 		end
 	end
 	gf_SetLogCaption("");
@@ -584,7 +584,7 @@ function info_3v3(nPage)
 	if not nPage then
 		local tSel = {
 			"Giíi thiÖu cí chÕ/#info_3v3(1)",
-			"Quy t¾c thi ®Êu/#info_3v3(2)",
+			"Competition rules/#info_3v3(2)",
 			"Ph¸n ®o¸n th¾ng b¹i/#info_3v3(3)",
 			"Gi¶i thÝch chØ sè/#info_3v3(4)",
 			"ThuyÕt minh phÇn th­ëng/#info_3v3(5)",
@@ -728,7 +728,7 @@ function seeMatchTeamRank(nCount, tData, bUpdate)
 	end
 	local tSel = {
 		"trë l¹i/main_3v3_2",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	}
 	suSay(msg, getn(tSel), tSel);
 end
@@ -740,7 +740,7 @@ function seePerliminaryRank(nCount, tData, bUpdate)
 	end
 	if bUpdate then
 		nCount = min(nCount, PRELIMINARY_TEAM_PER_GROUP);
-		g_FinalsRankMsg = "Danh s¸ch tham gia chung kÕt: \n"
+		g_FinalsRankMsg = "List of finals participants: \n"
 		for i = 1, nCount do
 			local tFTInfo = tData[i - 1];
 			DebugOutput(gf_UnPack(tFTInfo));
@@ -751,11 +751,11 @@ function seePerliminaryRank(nCount, tData, bUpdate)
 	end
 	DebugOutput(g_FinalsRankMsg)
 	if not g_FinalsRankMsg == 0 then
-		return Talk(1, "", "LÊy danh s¸ch tham gia chung kÕt bÞ lçi");
+		return Talk(1, "", "Failed to get the list of finals participants");
 	end
 	local tSel = {
 		"trë l¹i/main_3v3_2",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	}
 	local msg = g_FinalsRankMsg;
 	PAGE_SIZE = 350
@@ -796,11 +796,11 @@ function seeFinalMatchRank_cb(nCurMatchRound, nCount, data, bUpdate)
 	end
 	DebugOutput(g_FinalsRankMsg2)
 	if not g_FinalsRankMsg2 then
-		return Talk(1, "", "LÊy danh s¸ch xÕp h¹ng chung kÕt quý tr­íc bÞ lçi");
+		return Talk(1, "", "Failed to get the final ranking list of last quarter");
 	end
 	local tSel = {
 		"trë l¹i/main_3v3_2",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	}
 	local msg = g_FinalsRankMsg2 .. "\n phÇn th­ëng sÏ th«ng qua hÖ thèng th­ tÝn ®Ó ph¸t";
 	suSay(msg, getn(tSel), tSel);

@@ -19,7 +19,7 @@ Include("\\script\\isolate\\online_activites\\spring_festival\\2016_01\\npc\\npc
 t_isolate_base_cfg = { --ÕâÊÇÒ»¸ö±ØÌîÅäÖÃÏî
     nPriority 			= 1,        --¼ÓÔØÓÅÏÈ¼¶ <=0:Ä£¿éÊ§Ğ§ >0:Ä£¿éÓĞĞ§£¬ÊıÖµÔ½´óÔ½ÏÈ¼ÓÔØ 1 default
     szEngName 			= "meishiqingdian",
-    szViewName 			= "LÔ Héi Âm Thùc",
+    szViewName 			= "Food Festival",
     nTalkBeginDate		= 20160119,
     nBeginDate 			= 20160119,
     nEndDate 			= 20160131,
@@ -70,9 +70,9 @@ function on_init()
 end
 
 function on_add_watches() 
-	isolate_watch_npc_talk("NhÊt PhÈm Ngù Trï", 100, "handle_on_npc_talk_ypyc")
-	isolate_watch_npc_talk("NhÊt PhÈm Ngù Trï", 200, "handle_on_npc_talk_ypyc")
-	isolate_watch_npc_talk("NhÊt PhÈm Ngù Trï", 300, "handle_on_npc_talk_ypyc")
+	isolate_watch_npc_talk("Top Grade Imperial Chef", 100, "handle_on_npc_talk_ypyc")
+	isolate_watch_npc_talk("Top Grade Imperial Chef", 200, "handle_on_npc_talk_ypyc")
+	isolate_watch_npc_talk("Top Grade Imperial Chef", 300, "handle_on_npc_talk_ypyc")
 	isolate_watch_item_talk(2,1,30982, "handle_on_use_ticket")  --ÆÕÍ¨ÃÀÊ³³é½±¾í
 	isolate_watch_item_talk(2,1,30983, "handle_on_use_ticket")	--¼«Æ·ÃÀÊ³³é½±È¯
 	isolate_watch_item_talk(2,1,31016, "handle_on_use_ticket")	--ÃÀÊ³ÇìµäÀñ°ü
@@ -88,9 +88,9 @@ function handle_on_npc_talk_ypyc(  )
 	Str_Main = format("%s\n§¹i hiÖp ®¹t chuyÓn sinh %d cÊp %d cã thÓ tham gia.", Str_Main, t_level[1], t_level[2])
 	local tbSay = {}
 	tinsert(tbSay,"Gi¶i thİch ho¹t ®éng/show_detail")
-	tinsert(tbSay,"Lµm mãn ngon/do_tast_food_activity")
+	tinsert(tbSay,"Make delicious dishes/do_tast_food_activity")
 	tinsert(tbSay,"NhiÖm vô tİch lòy online h»ng ngµy/do_online_time_activity")
-	tinsert(tbSay,"Kh«ng cã g×/nothing")
+	tinsert(tbSay,"Nothing/nothing")
 	Say(Str_Main,getn(tbSay),tbSay)
 end
 
@@ -107,9 +107,9 @@ function on_event_player_login(nExchangeComing)
 end
 
 function on_event_server_start()
-	local npcypyc_idx1 = CreateNpc("hd_1y_ypyc","NhÊt PhÈm Ngù Trï",200,1366,2866)--ãê¾©£¨170,179£©	
-	local npcypyc_idx2 = CreateNpc("hd_1y_ypyc","NhÊt PhÈm Ngù Trï",300,1724,3525)--³É¶¼£¨215,220£©	
-	local npcypyc_idx3 = CreateNpc("hd_1y_ypyc","NhÊt PhÈm Ngù Trï",100,1416,2973)--ÈªÖİ£¨177,185£©	
+	local npcypyc_idx1 = CreateNpc("hd_1y_ypyc","Top Grade Imperial Chef",200,1366,2866)--ãê¾©£¨170,179£©	
+	local npcypyc_idx2 = CreateNpc("hd_1y_ypyc","Top Grade Imperial Chef",300,1724,3525)--³É¶¼£¨215,220£©	
+	local npcypyc_idx3 = CreateNpc("hd_1y_ypyc","Top Grade Imperial Chef",100,1416,2973)--ÈªÖİ£¨177,185£©	
 end
 -- function handle_refresh(  )
 -- 	-- body

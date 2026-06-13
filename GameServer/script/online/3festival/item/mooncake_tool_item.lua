@@ -16,13 +16,13 @@ function OnUse()
 		local nCurTemp = get_temperature(GetTask(TASK_TEMPERATURE),GetTime()-GetTask(TASK_ADD_FUEL_TIME));
 		if nCurTemp <= 0 then	--Èç¹ûÎÂ¶ÈµÍÓÚ0¶È
 			local selTab = {
-						"Më lß xem thö/open_stove",
+						"Open the oven to check/open_stove",
 						}
 			Say("Löa trong lß cña b¹n ®· t¾t, ch¾c b¸nh Trung Thu còng ®· h­.",getn(selTab),selTab);
 			return 0;
 		end;
 		local selTab = {
-					"LÊy b¸nh Trung Thu ra/get_mooncake",
+					"Take out the Mooncake/get_mooncake",
 					"Thªm nhiªn liÖu/ask_fuel",
 					"T¹m thêi kh«ng lÊy b¸nh ra/nothing",
 					}
@@ -38,13 +38,13 @@ function OnUse()
 					"Ta muèn xem nhiÖt ®é lß/see_temperature",
 					"Ta muèn thªm nhiªn liÖu/ask_fuel",
 					"Ta muèn dïng lß nµy/give_up",
-					"Kh«ng cã g×/nothing",
+					"Nothing/nothing",
 					}
 		local sTimeStr = "";
 		if bTempChecked == 1 or nTimeElapse > 3*60 then	--Èç¹û¿´¹ıÎÂ¶È»ò³¬¹ı3·ÖÖÓ
 			tremove(selTab,1);
 		else
-			sTimeStr = "Chó ı: Sau <color=yellow>"..Get_Time_String(COOKING_TIME-GetTime()+GetTask(TASK_FIREUP_TIME)-120).."<color> sau kh«ng thÓ ®o nhiÖt ®é."
+			sTimeStr = "Note: After <color=yellow>"..Get_Time_String(COOKING_TIME-GetTime()+GetTask(TASK_FIREUP_TIME)-120).."<color> sau kh«ng thÓ ®o nhiÖt ®é."
 		end;
 		Say("§Ó t©m míi cã thÓ lµm ra b¸nh Trung Thu h¶o h¹ng. Sau <color=yellow>"..Get_Time_String(COOKING_TIME-GetTime()+GetTask(TASK_FIREUP_TIME)).."<color> míi cã thÓ lÊy b¸nh ra."..sTimeStr,getn(selTab),selTab);
 	end;
@@ -52,9 +52,9 @@ end;
 
 function ask_main_res()	--Ñ¯ÎÊ¼ÓÈëÊ²Ã´Ö÷ÁÏ
 	local selTab = {
-				"Ng.liÖu chİnh1/#ask_sub_res(1)",
-				"Ng.liÖu chİnh2/#ask_sub_res(2)",
-				"Ng.liÖu chİnh3/#ask_sub_res(3)",
+				"Main ingredient 1/#ask_sub_res(1)",
+				"Main ingredient 2/#ask_sub_res(2)",
+				"Main ingredient 3/#ask_sub_res(3)",
 				"T¹m thêi ch­a cÇn!/cancel",
 				}
 	Say("B¹n muèn thªm nguyªn liÖu nµo vµo?",getn(selTab),selTab);
@@ -69,9 +69,9 @@ function ask_sub_res(nMainResType)	--Ñ¯ÎÊ¼ÓÈëÊ²Ã´¸¨ÁÏ
 	end;
 	SetTaskTemp(TT_MAIN_RES,nMainResType)
 	local selTab = {
-				"Phô liÖu1/#ask_fire_seed(1)",
-				"Phô liÖu2/#ask_fire_seed(2)",
-				"Phô liÖu3/#ask_fire_seed(3)",
+				"Auxiliary material 1/#ask_fire_seed(1)",
+				"Auxiliary material 2/#ask_fire_seed(2)",
+				"Auxiliary material 3/#ask_fire_seed(3)",
 				"T¹m thêi ch­a cÇn!/cancel",
 				}
 	Say("B¹n muèn cho phô liÖu nµo vµo?",getn(selTab),selTab);
@@ -99,7 +99,7 @@ function final_confirm(nFireSeedType)
 		return 0;
 	end;
 	local selTab = {
-				"§ång ı/begin_to_make",
+				"Agree/begin_to_make",
 				"Ta suy nghÜ l¹i!/cancel",
 				}
 	SetTaskTemp(TT_FIRE_SEED,nFireSeedType)
@@ -107,7 +107,7 @@ function final_confirm(nFireSeedType)
 	local nMainRes = GetTaskTemp(TT_MAIN_RES);
 	local nSubRes = GetTaskTemp(TT_SUB_RES);
 	local nFireSeed = nFireSeedType;
-	sContent = sContent.."B¹n ®· cho <color=yellow>"..tMaterial[nMainRes][1].."<color> vµ <color=yellow>"..tMaterial[nSubRes+3][1].."<color> vµo,";
+	sContent = sContent.."B¹n ®· cho <color=yellow>"..tMaterial[nMainRes][1].."<color> and <color=yellow>"..tMaterial[nSubRes+3][1].."<color> vµo,";
 	sContent = sContent.."sö dông <color=yellow>"..tMaterial[nFireSeed+6][1].."<color> ®Ó t¨ng nhiÖt ®é lß.";
 	Say(sContent.."B¹n muèn dïng sè nguyªn liÖu nµy ®Ó lµm b¸nh Trung Thu?",getn(selTab),selTab);
 end;
@@ -143,8 +143,8 @@ end;
 
 function give_up()
 	local selTab = {
-				"§ång ı/confirm_give_up",
-				"§Ó ta suy nghÜ!/OnUse",
+				"Agree/confirm_give_up",
+				"Let me think!/OnUse",
 				}
 	Say("B¹n kh«ng muèn dïng lß nµy?",getn(selTab),selTab);
 end;
@@ -197,13 +197,13 @@ function add_fuel(nFuelType)
 		end;
 		SetTask(TASK_TEMPERATURE,nTotalTemp);
 		SetTask(TASK_ADD_FUEL_TIME,GetTime());
-		Say("B¹n ®· thªm mét İt nhiªn liÖu vµo, nhiÖt ®é lß t¨ng lªn <color=yellow>"..nRandTemp.."<color> ®é",0);
+		Say("B¹n ®· thªm mét İt nhiªn liÖu vµo, nhiÖt ®é lß t¨ng lªn <color=yellow>"..nRandTemp.."<color> degrees",0);
 	end;
 end;
 
 function see_temperature()	--²é¿´ÎÂ¶È
 	local selTab = {
-				"§ång ı/confirm_see_temperature",
+				"Agree/confirm_see_temperature",
 				"Ch­a cÇn xem véi!/OnUse",
 				}
 	Say("Trong qu¸ tr×nh lµm b¸nh chØ cã thÓ xem nhiÖt ®é 1 lÇn, b¹n muèn xem chø?",getn(selTab),selTab);
@@ -212,7 +212,7 @@ end;
 function confirm_see_temperature()
 	local nCurTemp = get_temperature(GetTask(TASK_TEMPERATURE),GetTime()-GetTask(TASK_ADD_FUEL_TIME));
 	SetTask(TASK_TEMPERATURE_CHECKED,1);
-	Talk(1,"OnUse","NhiÖt ®é cña lß lµ: <color=yellow>"..nCurTemp.."<color> ®é");
+	Talk(1,"OnUse","NhiÖt ®é cña lß lµ: <color=yellow>"..nCurTemp.."<color> degrees");
 end;
 
 function get_mooncake()

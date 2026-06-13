@@ -51,8 +51,8 @@ TB_KILL_NPC =
 MAP_DESC = 
 {
 	[MAP_1] = "Thiªn Long Tù",
-	[MAP_2] = "Quúnh KÕt",
-	[MAP_3] = "H­ng Kh¸nh",
+	[MAP_2] = "Qiong Jie",
+	[MAP_3] = "Xing Qing",
 }
 
 tbKillNpcDaily = {}
@@ -76,13 +76,13 @@ tbKillNpcDaily.tbAward =
 		{
 			{2, 1, 30603, 29, "Tiªu Dao Ngäc"},
 			{2, 1, 30887, 2000, "Hoa sen"},
-			{2, 1, 30888, 2000, "GiÊy Gãi Hoa"},
+			{2, 1, 30888, 2000, "Flower Wrapping Paper"},
 		},
 		tbPrize = 
 		{
 			{"Exp", 39000000},
 			{2, 1, 30889, 1000, "ThiÖp Chóc Phóc"},
-			{2, 1, 30785, 9, "V« Tù Kinh Th­"},
+			{2, 1, 30785, 9, "Wordless Scripture"},
 		}
 	},
 	[ADVANCED_TYPE] = 
@@ -92,13 +92,13 @@ tbKillNpcDaily.tbAward =
 		{
 			{2, 1, 30603, 299, "Tiªu Dao Ngäc"},
 			{2, 1, 30887, 2000, "Hoa sen"},
-			{2, 1, 30888, 2000, "GiÊy Gãi Hoa"},
+			{2, 1, 30888, 2000, "Flower Wrapping Paper"},
 		},
 		tbPrize = 
 		{
 			{"Exp", 99000000},
-			{2, 1, 30785, 19, "V« Tù Kinh Th­"},
-			{2, 1, 30892, 99, "Bã Hoa Vu Lan"},
+			{2, 1, 30785, 19, "Wordless Scripture"},
+			{2, 1, 30892, 99, "Ghost Festival Bouquet"},
 		}
 	}
 }

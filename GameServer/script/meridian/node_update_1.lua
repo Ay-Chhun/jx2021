@@ -19,7 +19,7 @@ t_node_id_list = {1}
 t_require_node_list =
 {
 	--require node id, require node name, require node level function
-	{13, "B竎h Li", _get_require_level}
+	{13, "Bai Li", _get_require_level}
 }
 
 --指定穴位指定等级的特殊需求条件是否达成

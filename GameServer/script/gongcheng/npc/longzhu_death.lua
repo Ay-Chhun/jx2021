@@ -19,7 +19,7 @@ function OnDeath(nNpcIdx)
 	local nBattleMapID = SubWorldIdx2ID(SubWorld);
 	local _,nCityMapID = GCZ_GetCityInfo(nBattleMapID);
 	SetCityWarWinner(nCityMapID,GetMissionS(MS_GONG_TONG_NAME));
-	szResult = "C«ng thµnh chiÕn ®· kÕt thóc, cuèi cïng bang héi <color=yellow>"..GetMissionS(MS_GONG_TONG_NAME).."<color> chiÕm lÜnh thµnh c«ng (do bang héi <color=red>"..GetMissionS(MS_SHOU_TONG_NAME).."<color> thñ vÖ) <color=green>"..GetMissionS(MS_CITY_NAME).."<color>.";
+	szResult = "C«ng thµnh chiÕn ®· kÕt thóc, cuèi cïng bang héi <color=yellow>"..GetMissionS(MS_GONG_TONG_NAME).."<color> chiÕm lÜnh thµnh c«ng (do bang héi <color=red>"..GetMissionS(MS_SHOU_TONG_NAME).."<color>) <color=green>"..GetMissionS(MS_CITY_NAME).."<color>.";
 	GCZ_PlaySound(GONG_ID,"¹¥³ÇÕ½Ê¤Àû.wav");
 	GCZ_PlaySound(SHOU_ID,"¹¥³ÇÕ½Ê§°Ü.wav");
 	SetMissionV(MV_WAR_RESULT,GONG_ID);	--ÉèÖÃ½á¹û	
@@ -43,5 +43,5 @@ function OnDeath(nNpcIdx)
 	Msg2Global(sf_RemoveTag(szResult,"<",">"));
 	PlayMusic("\\music\\themusicisnotexist.mp3",1);
 	Msg2MSAll(MISSION_ID,"C«ng thµnh chiÕn ®· kÕt thóc, mäi ng­êi rêi khái chiÕn tr­êng th«i");
-	WriteLog("[c«ng thµnh C«ng thµnh chiÕn]:"..sf_RemoveTag(szResult,"<",">").."MSUID lµ "..GetMissionV(MV_MISSION_UID));
+	WriteLog("[c«ng thµnh C«ng thµnh chiÕn]:"..sf_RemoveTag(szResult,"<",">").."MSUID is"..GetMissionV(MV_MISSION_UID));
 end

@@ -35,7 +35,7 @@ function do_feed_pet(nLevel, szHeadMsg)
 		local tt = t[i]
 		tinsert(tbSay, format("%s(%s)/#_do_feed_pet(%d,%d, %d)", tt[4], tt[5],nLevel, i, 0))
 	end
-	tinsert(tbSay, format("%s/nothing", "TiÕp tôc huÊn luyÖn sau"))
+	tinsert(tbSay, format("%s/nothing", "Continue training later"))
 	
 	Say(szTitle, getn(tbSay), tbSay)
 end
@@ -58,9 +58,9 @@ function _do_feed_pet(nLevel, nType, bConfirm)
 		local szTitle = format("§é c­êng tr¸ng hiÖn t¹i lµ <color=yellow>%d/%d<color>, sau khi huÊn luyÖn sÏ thay ®æi thµnh <color=yellow>%d<color>, ®ång ý kh«ng?", ncurPoint, g_tFeedPet.nFeedTargetPoint, nNewPoint)
     	local tbSay = {}
     	
-    	tinsert(tbSay, format("%s/#_do_feed_pet(%d,%d,%d)", "§ång ý", nLevel, nType, 1))
+    	tinsert(tbSay, format("%s/#_do_feed_pet(%d,%d,%d)", "Agree", nLevel, nType, 1))
     	tinsert(tbSay, format("%s/#do_feed_pet(%d)", "trë l¹i", nLevel))
-    	tinsert(tbSay, format("%s/nothing", "Ra khái"))
+    	tinsert(tbSay, format("%s/nothing", "Exit"))
     	
     	Say(szTitle, getn(tbSay), tbSay)
     	return

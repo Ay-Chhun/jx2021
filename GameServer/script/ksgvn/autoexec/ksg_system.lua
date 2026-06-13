@@ -73,7 +73,7 @@ function _ksg_handle_monthlyEvent_Item(nItemIndex)
 end
 
 t_isolate_user_batch_watch_list = {--{szEventId, {event_para...}, pfn_elem_handler(tEvent, data, para), {task_name, sè tói quµ vâ l©m, th­ëng lÖnh jx2, hu©n ch­¬ng jx2, sè ®iÓm phong hoa}}
-    { "event_player_daily_online_minute", { 60 }, _ksg_onActivityFinish_Online60Min, { "Online 60 phót" }, },
+    { "event_player_daily_online_minute", { 60 }, _ksg_onActivityFinish_Online60Min, { "Online for 60 minutes" }, },
     { "event_player_daily_online_minute", { 180 }, _ksg_onActivityFinish_Online180Min, { "Online 180 phót" }, },
     
     { "event_mission_stage_finish", { "liangshan", -1 }, _ksg_onActivityFinish_LSB, { "Hoµn thµnh ¶i L­¬ng S¬n B¹c" }, },

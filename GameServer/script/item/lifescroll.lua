@@ -7,10 +7,10 @@
 -- Date: Aug 28th, 2006
 -- =========================================================
 
-strTabMainSkill = {"Kü nghÖ gia truyÒn", "ChÕ t¹o binh khİ dµi", "ChÕ t¹o binh khİ ng¾n", "ChÕ t¹o kú m«n binh khİ", 
-				   "Lµm hé gi¸p", "ChÕ thuèc", "NÊu n­íng", "ChÕ phï", "H¹ trang", "§Çu qu¸n"}
+strTabMainSkill = {"Family Heirloom Craft", "ChÕ t¹o binh khİ dµi", "ChÕ t¹o binh khİ ng¾n", "ChÕ t¹o kú m«n binh khİ", 
+				   "Make armor", "Medicine Crafting", "Cooking", "ChÕ phï", "Lower garment", "§Çu qu¸n"}
 							 
-strTabSubSkill = {"§èn c©y", "Lµm da", "Canh t¸c",	"H¸i thuèc", "§µo kho¸ng", "KĞo t¬", "TËp linh"}
+strTabSubSkill = {"§èn c©y", "Lµm da", "Farm",	"H¸i thuèc", "§µo kho¸ng", "KĞo t¬", "TËp linh"}
 
 
 -- Ê¹ÓÃÎïÆ·µÄÊ±ºò£¬Ä¬ÈÏµÄÈë¿Úº¯Êı
@@ -122,9 +122,9 @@ function learn_skill(nScrollIndex)
 		AddLifeSkillExp(nLifeSkillType, nLifeSkillID, nLifeSkillExp)
 		
 		if (nLifeSkillType == 0) then
-			Say("B¹n ®· häc thµnh c«ng kü n¨ng sèng: <color=yellow>"..strTabSubSkill[nLifeSkillID].."<color>. Xin chóc mõng!", 0)
+			Say("B¹n ®· häc thµnh c«ng kü n¨ng sèng: <color=yellow>"..strTabSubSkill[nLifeSkillID].."<color>. Congratulations!", 0)
 		else
-			Say("B¹n ®· häc thµnh c«ng kü n¨ng sèng: <color=yellow>"..strTabMainSkill[nLifeSkillID].."<color>. Xin chóc mõng!", 0)
+			Say("B¹n ®· häc thµnh c«ng kü n¨ng sèng: <color=yellow>"..strTabMainSkill[nLifeSkillID].."<color>. Congratulations!", 0)
 		end
 	end
 end;

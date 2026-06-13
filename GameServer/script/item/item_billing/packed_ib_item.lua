@@ -40,7 +40,7 @@ function OnUse(nItemIdx)
 	end
 	local tSel = {
 		format("HiÖn t¹i dïng/#onOpen(%d,%d)", nItemIdx,nType),
-		"§ãng/nothing",
+		"Close/nothing",
 	}
 	Say(format("Dïng %s sÏ nhËn ®­îc <color=yellow>%d c¸i %s<color>, muèn dïng ngay kh«ng??",tIBItems[nType][1][1],tIBItems[nType][2][2][4],tIBItems[nType][2][1]),
 		getn(tSel), tSel);

@@ -165,7 +165,7 @@ function sp_RealyCreateNianShou(nRandSeed)
 		return 0;
 	end
 	--Ë¢NPC
-	local npcIdx = CreateNpc("Niªn Thó TiÕt Xu©n", "Niªn thó", SP_NIANSHOU_POS[nIndex][1], SP_NIANSHOU_AI_POS[SP_NIANSHOU_POS[nIndex][1]][1][1],SP_NIANSHOU_AI_POS[SP_NIANSHOU_POS[nIndex][1]][1][2]);
+	local npcIdx = CreateNpc("Niªn Thó TiÕt Xu©n", "Year Beast", SP_NIANSHOU_POS[nIndex][1], SP_NIANSHOU_AI_POS[SP_NIANSHOU_POS[nIndex][1]][1][1],SP_NIANSHOU_AI_POS[SP_NIANSHOU_POS[nIndex][1]][1][2]);
 	if npcIdx > 0 then
 		SetNpcLifeTime(npcIdx, 60*60);
 		g_NpcAI:setAI(npcIdx, AT_SM_PATROL, 1)

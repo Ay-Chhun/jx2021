@@ -8,12 +8,12 @@ g_sMsg = "$n më gãi Song L¹c Bao, nhËn ®­îc $i!";
 tClause = {
 	subclauses = {
 	{{"500 ®iÓm tu luyÖn";giveClause = function() gf_Modify("Popur",500) end}, 3000},
-	{{"5 vµng";giveClause = function() gf_Modify("Money",50000) end}, 3000},
+	{{"5 gold";giveClause = function() gf_Modify("Money",50000) end}, 3000},
 	{{"20 v¹n ®iÓm kinh nghiÖm";giveClause = function() gf_Modify("Exp",200000) end}, 2350},
 	{{"B¹ch C©u Hoµn", {2,1,270,1},}, 1000},
-	{{"HuÊn Léc Bæng", {2,95,172,1},g_sMsg}, 50},
+	{{"Reward Salary", {2,95,172,1},g_sMsg}, 50},
 	{{"PhiÕu Thiªn M«n anh hïng ", {2,95,691,1},g_sMsg}, 100},
-	{{"C©y B¸t Nh·", {2,0,398,1},}, 500},
+	{{"Prajna Tree", {2,0,398,1},}, 500},
 	},			
 	giveClause = ClauseRandom.giveClause,
 };
@@ -23,7 +23,7 @@ function OnUse(nItemIdx)
 		return 0;
 	end
 	if DelItemByIndex(nItemIdx,1) == 1 then
-		gf_SetLogCaption("Hoan l¹c bao");
+		gf_SetLogCaption("Joy Treasure");
 		Clause2.giveClause(tClause);
 		gf_SetLogCaption("")
 	end		

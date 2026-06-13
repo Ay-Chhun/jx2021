@@ -17,13 +17,13 @@ function OnUse()
     
     nStep = GetTask(TASK_THREE);
     if (nStep == 0) then
-        Msg2Player("§em mËt hµm giao cho H¹ HÇu CÇm");
-        TaskTip("§em mËt hµm giao cho H¹ HÇu CÇm");
+        Msg2Player("Deliver the secret letter to Xiahou Qin");
+        TaskTip("Deliver the secret letter to Xiahou Qin");
         SetTask(TASK_THREE, 1);
         TalkEx("", szMsg);
     elseif nStep == 1 then
-        Msg2Player("§em mËt hµm giao cho H¹ HÇu CÇm");
-        TaskTip("§em mËt hµm giao cho H¹ HÇu CÇm");
+        Msg2Player("Deliver the secret letter to Xiahou Qin");
+        TaskTip("Deliver the secret letter to Xiahou Qin");
     end;
 
 end;

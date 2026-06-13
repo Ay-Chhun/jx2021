@@ -5,7 +5,7 @@ function main()
 end
 
 function next_talk()
-	Say("<color=green>§¹i sø CÇu Phóc<color>: <color=yellow>Ng­êi ch¬i cÊp 70 trë lªn<color>, cã thÓ nhËn danh hiÖu <color=yellow>'§ång T©m V­ît Khã'<color> ë chç ta (më danh hiÖu, mçi mét phót sÏ nhËn ®­îc phÇn th­ëng kinh nghiÖm). Dïng hµnh ®éng ®Ó biÓu ®¹t t©m ı cña m×nh, hy väng cã thÓ g¸nh v¸c mét phÇn cïng víi ng­êi bŞ n¹n, chèng l¹i thiªn tai, v­ît qua khã kh¨n. <color=yellow>Sau 23: 00 ngµy 25 th¸ng 5, sÏ ngõng ph¸t th­ëng.<color>", 2, "NhËn danh hiÖu/get_title", "Rêi khái/no_say")
+	Say("<color=green>§¹i sø CÇu Phóc<color>: <color=yellow>Ng­êi ch¬i cÊp 70 trë lªn<color>, cã thÓ nhËn danh hiÖu <color=yellow>'§ång T©m V­ît Khã'<color> ë chç ta (më danh hiÖu, mçi mét phót sÏ nhËn ®­îc phÇn th­ëng kinh nghiÖm). Dïng hµnh ®éng ®Ó biÓu ®¹t t©m ı cña m×nh, hy väng cã thÓ g¸nh v¸c mét phÇn cïng víi ng­êi bŞ n¹n, chèng l¹i thiªn tai, v­ît qua khã kh¨n. <color=yellow>Sau 23: 00 ngµy 25 th¸ng 5, sÏ ngõng ph¸t th­ëng.<color>", 2, "NhËn danh hiÖu/get_title", "Leave/no_say")
 end
 
 function get_title()

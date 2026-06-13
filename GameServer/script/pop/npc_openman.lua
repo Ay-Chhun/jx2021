@@ -18,7 +18,7 @@ talkTable.sel = {
 --	{"开启武林盟声望", "OpenWuLinUnitPop"},
 --	{"召唤脚本任务妞", "CreatePopNpc",},
 --	{"关闭所有声望", "ClearAllPop",},
-	{"K誸 th骳 i tho筰", "nothing",}, 
+	{"End conversation", "nothing",}, 
 };
 
 function CreatePopNpc()

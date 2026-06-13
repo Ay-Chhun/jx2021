@@ -288,9 +288,9 @@ function ywz_CreateNpc()
 		return 0;
 	end
 	local tNpc = {
-		{"SFYWZ_QJJT", "TÕ §µn §¹i Lý", 6300, 1501, 3196, "\\script\\missions\\yp\\ywz\\npc_shilijitan.lua"},
-		{"SFYWZ_XQJT", "TÕ §µn T©y H¹", 6300, 1380, 3048, "\\script\\missions\\yp\\ywz\\npc_shilijitan.lua"},
-		{"SFYWZ_TLSJT", "TÕ §µn Thæ Phån", 6300, 1251, 3237, "\\script\\missions\\yp\\ywz\\npc_shilijitan.lua"},
+		{"SFYWZ_QJJT", "Dali Altar", 6300, 1501, 3196, "\\script\\missions\\yp\\ywz\\npc_shilijitan.lua"},
+		{"SFYWZ_XQJT", "Xixia Altar", 6300, 1380, 3048, "\\script\\missions\\yp\\ywz\\npc_shilijitan.lua"},
+		{"SFYWZ_TLSJT", "Tubo Altar", 6300, 1251, 3237, "\\script\\missions\\yp\\ywz\\npc_shilijitan.lua"},
 	}
 	for _, v in tNpc do
 		local npcIndex = CreateNpc(v[1], v[2], v[3], v[4], v[5]);

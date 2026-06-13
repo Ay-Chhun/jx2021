@@ -17,25 +17,25 @@ Include("\\script\\task\\world\\task_head.lua")
 						{"TrÊn Mé Thó","zhenmu_death_1",""},
 						{"Quû T­íng Qu©n","ghost_death_1",""},
 						{"D­îc V­¬ng","drugking_death_1",""},
-						{"Ngò Hµnh Kim Sø","iron_death_1",""},
+						{"Five Elements Metal Envoy","iron_death_1",""},
 						{"Ngò Hµnh Thñy Sø","water_death_1",""},
-						{"Ngò Hµnh Méc Sø","wood_death_1",""},
+						{"Five Elements Wood Envoy","wood_death_1",""},
 						{"Ngò Hµnh Háa Sø","fire_death_1",""},
-						{"Ngò Hµnh Thæ Sø","dust_death_1",""},
-						{"Thèng lÜnh t­îng binhHoanT­îng ","binma_yong_death_1",""},
-						{"TrÊn Mé ThóHoan T­îng ","zhenmu_jia_death_1",""},
+						{"Five Elements Earth Envoy","dust_death_1",""},
+						{"Commander of Elephant SoldiersIllusion General","binma_yong_death_1",""},
+						{"Tomb-Guarding BeastIllusion General","zhenmu_jia_death_1",""},
 						{"TrÊn mé T­íng qu©nHoan T­îng ","zhenmu_jj_death_1",""},
 						{"HuyÕt Ma Nh©nHoan T­îng ","xuemo_death_1",""},
 						{"Quû T­¬ng §ÇuHoan T­îng ","gui_jj_death_1",""},
 						{"Nguyªn h×nh Hoan T­îng","sheng_death_1",""},
 						}
 	Tb_stage6_boss_info = {
-		{"Hoan T­îng (T­íng lÜnh t­îng)","Thèng lÜnh t­îng binhHoanT­îng ",1614,3217,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"},
-		{"Hoan T­îng (Cæ D­¬ng Thó)","TrÊn Mé ThóHoan T­îng ",1614,3217,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"},
+		{"Hoan T­îng (T­íng lÜnh t­îng)","Commander of Elephant SoldiersIllusion General",1614,3217,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"},
+		{"Hoan T­îng (Cæ D­¬ng Thó)","Tomb-Guarding BeastIllusion General",1614,3217,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"},
 		{"Hoan T­îng (TrÊn mé T­íng qu©n)","TrÊn mé T­íng qu©nHoan T­îng ",1614,3217,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"},
 		{"Hoan T­îng (HuyÕt Ma Nh©n)","HuyÕt Ma Nh©nHoan T­îng ",1614,3217,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"},
 		{"Hoan T­îng (Quû T­¬ng §Çu)","Quû T­¬ng §ÇuHoan T­îng ",1614,3217,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"},
-		{"Nguyªn h×nh Hoan T­îng","Nguyªn h×nh Hoan T­îng - Con trai",1614,3217,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"},
+		{"Nguyªn h×nh Hoan T­îng","Primal Form Illusion General - Son",1614,3217,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua"},
 	}
 --¹ÖÎïËÀÍöÖ÷º¯Êý
 function OnDeath(monster_index)
@@ -54,7 +54,7 @@ end
 function guyang_death_1(monster_index)
 	local strTalk = {
 		"(1 ¸nh hång quang lãe lªn cïng víi tiÕng rÝt chãi tai)",
-		"Ng­êi ch¬i: ??!? (¸nh hµo quang vµ tiÕng rÝt lóc n·y lµ sao? Hay nªn ®i hái DiÖp Tö Thu.)",
+		"Player: ??!? (What was that glow and shriek just now? Perhaps I should go ask Ye Zixiu.)",
 		}
 	SetNpcLifeTime(monster_index,15);--Ê¹µÃÊ¬ÌåÏûÊ§
 	--È¡µÃ¹Ø¿¨µÄËùÓÐÍæ¼ÒË÷Òý
@@ -295,7 +295,7 @@ end
 function binma_yong_death_1(monster_index)
 	local nMapId, nX, nY = GetWorldPos()
 	SetNpcLifeTime(monster_index,15);--Ê¹µÃÊ¬ÌåÏûÊ§
-	nNpcIndex = CreateNpc("Hoan T­îng (Cæ D­¬ng Thó)","TrÊn Mé ThóHoan T­îng ",nMapId, nX, nY);
+	nNpcIndex = CreateNpc("Hoan T­îng (Cæ D­¬ng Thó)","Tomb-Guarding BeastIllusion General",nMapId, nX, nY);
 	SetMissionV(MS_BOSS_INDEX_1,nNpcIndex)
 	SetNpcLifeTime(nNpcIndex,1800);
 	SetNpcScript(nNpcIndex,"\\script\\missions\\northwest_mission\\npc\\boss_death.lua");

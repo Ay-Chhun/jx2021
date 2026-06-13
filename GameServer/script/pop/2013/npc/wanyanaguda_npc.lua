@@ -4,7 +4,7 @@ Include("\\script\\lib\\globalfunctions.lua");
 
 --把一些数据上的东西丢到这里来 方便测试
 g_tGTaskId = {1319, 1335};  --涉及到的任务id 查看gtask_main
-g_szNpcName = "<color=green>Ho祅 Nhan A C鑤 Ф<color>: ";
+g_szNpcName = "<color=green>Wanyan A Gu Da<color>:";
 
 function main()
 	local nNpcIdx = GetTargetNpc();

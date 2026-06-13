@@ -34,14 +34,14 @@ t_isolate_task_list={ --ƒ£øÈ”√µΩµƒ»ŒŒÒ±‰¡ø≈‰÷√id={szTaskName,nTaskGroupIdx},
 --function on_export_gdata() end
 --function on_import_gdata() end
 function on_add_watches()
-	isolate_watch_npc_talk("Uy Nh‹ TËn", 100, "handle_on_npc_talk")
-	isolate_watch_npc_talk("Gi∏o s‹", 200, "handle_on_npc_talk")
-	isolate_watch_npc_talk("Gi∏o s‹", 300, "handle_on_npc_talk")
+	isolate_watch_npc_talk("Wei Ru Tin", 100, "handle_on_npc_talk")
+	isolate_watch_npc_talk("Professor", 200, "handle_on_npc_talk")
+	isolate_watch_npc_talk("Professor", 300, "handle_on_npc_talk")
 	isolate_watch_item_talk(2,1,30971,"handle_on_use_item")
 	isolate_watch_item_talk(2,1,30972,"handle_on_use_item")
-	isolate_watch_npc_talk("C©y Noel-Th≠Íng", 100, "handle_on_tree1_talk")
-	isolate_watch_npc_talk("C©y Noel-Th≠Íng", 200, "handle_on_tree1_talk")
-	isolate_watch_npc_talk("C©y Noel-Th≠Íng", 300, "handle_on_tree1_talk")
+	isolate_watch_npc_talk("Christmas Tree-Standard", 100, "handle_on_tree1_talk")
+	isolate_watch_npc_talk("Christmas Tree-Standard", 200, "handle_on_tree1_talk")
+	isolate_watch_npc_talk("Christmas Tree-Standard", 300, "handle_on_tree1_talk")
 	isolate_watch_npc_talk("C©y Noel-Hµo Hoa", 100, "handle_on_tree2_talk")
 	isolate_watch_npc_talk("C©y Noel-Hµo Hoa", 200, "handle_on_tree2_talk")
 	isolate_watch_npc_talk("C©y Noel-Hµo Hoa", 300, "handle_on_tree2_talk")
@@ -50,9 +50,9 @@ end
 
 function on_event_server_start()
 	local tTreeList = {
-		{"hd_ptsds","C©y Noel-Th≠Íng", 100,1323,2928, ""},
-		{"hd_ptsds","C©y Noel-Th≠Íng", 200,1319,2810, ""},
-		{"hd_ptsds","C©y Noel-Th≠Íng", 300,1714,3552, ""},
+		{"hd_ptsds","Christmas Tree-Standard", 100,1323,2928, ""},
+		{"hd_ptsds","Christmas Tree-Standard", 200,1319,2810, ""},
+		{"hd_ptsds","Christmas Tree-Standard", 300,1714,3552, ""},
 		{"hd_hhsds","C©y Noel-Hµo Hoa", 100,1315,2920, ""},
 		{"hd_hhsds","C©y Noel-Hµo Hoa", 200,1331,2798, ""},
 		{"hd_hhsds","C©y Noel-Hµo Hoa", 300,1700,3539, ""},

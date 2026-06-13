@@ -23,7 +23,7 @@ tSignUpCityName =
 {
 	[100] = "TuyÒn Ch©u",
 	[300] = "Thµnh §«",
-	[200] = "BiÖn Kinh",
+	[200] = "Bianjing",
 }
 
 tFightCityName =

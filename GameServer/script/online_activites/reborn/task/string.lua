@@ -13,10 +13,10 @@ VET_200912_STR_ACTIONS = {
 }
 
 VET_201003_STR_NPC_NAME = {
-    [1] = {"Tèng T­íng Qu©n","Hæ Tö Sø"},
-    [2] = {"Vâ L©m Minh Chñ1","Long Tö Sø"},
+    [1] = {"Tèng T­íng Qu©n","Tiger Disciple Envoy"},
+    [2] = {"Vâ L©m Minh Chñ1","Dragon Disciple Envoy"},
     [3] = {"Phu nh©n T©y D­¬ng","Phông Tö Sø"},
-    [4] = {"TruyÒn gi¸o sÜ","¦ng Tö Sø"},
+    [4] = {"TruyÒn gi¸o sÜ","Eagle Disciple Envoy"},
 }
 --4¸önpcµÄ¶Ô»°ÄÚÈÝ
 VET_200912_STR_TALK = {
@@ -24,10 +24,10 @@ VET_200912_STR_TALK = {
     [2] = "Muèn gia nhËp phông tö héi?",
     [3] = "Muèn gia nhËp hæ tö héi?",
     [4] = "Muèn gia nhËp ­ng tö héi?",
-    [5] = "§ång ý gia nhËp/#VET_201003_MaskSureAgain(%d)",
+    [5] = "Agree to join/#VET_201003_MaskSureAgain(%d)",
     [6] = "§Ó ta suy nghÜ l¹i/gf_DoNothing",
     [7] = "Muèn gia nhËp %s, tr­íc tiªn ph¶i hoµn thµnh nhiÖm vô chuyÓn sinh",
-    [8] = "§ång ý gia nhËp/#VET_201003_JoinMenHui(%d)",
+    [8] = "Agree to join/#VET_201003_JoinMenHui(%d)",
     [9] = "§Ó ta suy nghÜ l¹i/gf_DoNothing",
     [10] = "§¹i hiÖp ®· kÝch ho¹t nhiÖm vô chuyÓn sinh %s råi",
     [11] = "Ta muèn t×m hiÓu %s/#menhui_detailse(%d)",
@@ -52,7 +52,7 @@ VET_200912_STR_TALK = {
 
 
 VET_200912_STR_XIAXIANTISHI = {
-    {"§· chuyÓn sinh thµnh c«ng vµ gia nhËp %s, sau khi tho¸t ra ®¨ng nhËp l¹i míi cã hiÖu lùc, <color=red> (Chó ý: sau khi rêi m¹ng xong sÏ trë vÒ cÊp 10, giíi h¹n trªn hµnh trang chØ ®­îc mang 1000000 ®ång.)<color>","Ta muèn ®¨ng nhËp l¹i/VET_201003_REBOOT_CLIENT","§Ó ta ®i göi tiÒn ®·/gf_DoNothing"},
+    {"§· chuyÓn sinh thµnh c«ng vµ gia nhËp %s, sau khi tho¸t ra ®¨ng nhËp l¹i míi cã hiÖu lùc, <color=red> (Chó ý: sau khi rêi m¹ng xong sÏ trë vÒ cÊp 10, giíi h¹n trªn hµnh trang chØ ®­îc mang 1000000 ®ång.)<color>","Ta muèn ®¨ng nhËp l¹i/VET_201003_REBOOT_CLIENT","Let me go deposit my money first/gf_DoNothing"},
 }
 VET_200912_STR_MENHUI_NAME = {
     "Long Tö M«n",
@@ -61,17 +61,17 @@ VET_200912_STR_MENHUI_NAME = {
     "¦ng Tö M«n",
 }
 VET_200912_STR_NPC_NAME = {
-    "Long Tö Sø",
+    "Dragon Disciple Envoy",
     "Phông Tö Sø",
-    "Hæ Tö Sø",
-    "¦ng Tö Sø",
+    "Tiger Disciple Envoy",
+    "Eagle Disciple Envoy",
 }
 
 VET_200912_TB_MENHUIYIN = {
-    {"Long tö Ên",{2,0,30002,1,4},},
+    {"Dragon Seal",{2,0,30002,1,4},},
     {"Phông tö Ên",{2,0,30005,1,4},},
-    {"Hæ tö Ên",{2,0,30003,1,4},},
-    {"¦ng tö Ên",{2,0,30006,1,4},},
+    {"Tiger Seal",{2,0,30003,1,4},},
+    {"Eagle Seal",{2,0,30006,1,4},},
 }
 
 VET_200912_STR_SEX_ERROR = {
@@ -131,14 +131,14 @@ VET_200912_STR_POETICAL_JUSTICE_ITEM_NAME = {
 }
 
 VET_200912_STR_SALVAGE_ITEM_NAME = {
-    "C¬m n¾m",
-    "Mµn thÇu",
-    "B¸nh xÕp",
-    "B¸nh bao thÞt",
-    "M¨ng xµo",
-    "Tø Quý ®Ëu",
-    "§Ëu xµo",
-    "C¶i xµo tái",
+    "Rice Ball",
+    "Steamed Bun",
+    "Dumpling",
+    "Meat Bun",
+    "Stir-fried Bamboo Shoots",
+    "Four Seasons Beans",
+    "Stir-fried Beans",
+    "Garlic Stir-fried Greens",
 }
 
 VET_200912_STR_SCARCITY_ITEM_ERROR = {
@@ -151,7 +151,7 @@ VET_200912_STR_HAVE_ACTIVE_ERROR = {"Xin lçi, h«m nay c¸c h¹ ®· kÝch ho¹t råi, k
 
 VET_200912_STR_DAY_ERROR = {"Xin lçi, chØ cã mçi thø 2-6-7-CN míi cã thÓ kÝch ho¹t"}
 
-VET_200912_STR_RENOVATE_BOSS_NUM = "H«m nay sÏ xuÊt hiÖn <color=red>%d<color> boss long tö, <color=red>%d<color> boss phông tö,".."<color=red> %d<color> boss hæ tö, <color=red>%d<color> boss ­ng tö"
+VET_200912_STR_RENOVATE_BOSS_NUM = "H«m nay sÏ xuÊt hiÖn <color=red>%d<color> boss long tö, <color=red>%d<color> boss phông tö,".."<color=red> %d<color> Tiger Cub bosses, <color=red>%d<color> Eagle Cub bosses"
 
 VET_201003_STR_ERROR = {
     "§¹i hiÖp ®· chuyÓn sinh thµnh c«ng 1 lÇn råi",

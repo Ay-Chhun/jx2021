@@ -100,7 +100,7 @@ function wjz_entry_npc_main()
         		"NhiÖm vô ngµy V¹n KiÕm Tròng/jt_talk_3",
         		"NhiÖm vô tuÇn V¹n KiÕm Tròng/jt_talk_4",
         		"§æi phÇn th­ëng/OnOpenShopGroup1",
-        		"KÕt thóc ®èi tho¹i/do_nothing",
+        		"End conversation/do_nothing",
         		}
     	else
     		strtab = {
@@ -110,7 +110,7 @@ function wjz_entry_npc_main()
         		"NhiÖm vô ngµy V¹n KiÕm Tròng/jt_talk_3",
         		"NhiÖm vô tuÇn V¹n KiÕm Tròng/jt_talk_4",
         		"§æi phÇn th­ëng/OnOpenShopGroup1",
-        		"KÕt thóc ®èi tho¹i/do_nothing",
+        		"End conversation/do_nothing",
         		}
     	end
     	local szMsg = g_NpcName.."NhËm gi¸o chñ cïng Giang ®¹i hiÖp ®· x«ng lªn V¹n KiÕm Tròng, t¹i h¹ chê ë ®©y nghªnh ®ãn c¸c vÞ lªn trî gióp"
@@ -122,7 +122,7 @@ function wjz_entry_npc_main()
     		strtab)
 	else
 		local strtab = {
-    		"KÕt thóc ®èi tho¹i/do_nothing",
+    		"End conversation/do_nothing",
     		}
     	Say(g_NpcName..format("Lèi vµo ¶i %s®· ®ãng lÇn sau h·y ®Õn më!", "V¹n KiÕm Tròng"),
     		getn(strtab),
@@ -155,7 +155,7 @@ end
 function entry_tianjiaoling(bSure)
 	if not bSure or 0 == bSure then
 		local tSay = {
-			"§ång ý/#entry_tianjiaoling(1)",
+			"Agree/#entry_tianjiaoling(1)",
 			"Ta chØ ghÐ qua th«i/nothing",
 			}
 		Say(format("D¹ng Thiªn Kiªu cÇn <color=red>%d c¸i %s (Cã thÓ mua trong Ngù C¸c)<color> ®ång ý kh«ng?",N_JOIN_TIANJIAOLING_NEED, T_TIANJIAOLING[4]),getn(tSay),tSay)
@@ -322,8 +322,8 @@ function jt_talk_3()
 		4,
 		format("\n Th«ng quan 1 lÇn V¹n KiÕm Tròng (%s)/wjz_daily_task",str1),
 		format("\n ¶i lËt bµi 1 lÇn (%s)/fanpai_daily_task",str2),
-		"\n Ph¶n håi/main",
-		"KÕt thóc ®èi tho¹i/do_nothing")
+		"\nBack/main",
+		"End conversation/do_nothing")
 end
 
 function jt_talk_4()
@@ -333,8 +333,8 @@ function jt_talk_4()
 		4,
 		format("\n Th«ng quan 7 lÇn V¹n KiÕm Tròng (%s)/wjz_week_task",str1),
 		format("\n ¶i lËt bµi 15 lÇn/fanpai_week_task",str2),
-		"\n Ph¶n håi/main",
-		"KÕt thóc ®èi tho¹i/do_nothing")
+		"\nBack/main",
+		"End conversation/do_nothing")
 end
 
 function do_nothing()

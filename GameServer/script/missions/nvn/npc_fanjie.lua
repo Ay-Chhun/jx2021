@@ -22,7 +22,7 @@ SAY_4_3 = {}
 SAY_5 = {}
 
 tGtNpcMain:get_main_table("Ph¹m Th­")
-g_NpcName = "<color=green> Vâ L©m Minh Ph¹m Th­ <color>:"
+g_NpcName = "<color=green> Wulin League Pham Thu <color>:"
 TMAIN.msg = g_NpcName.."Vâ L©m Minh Gi¸o Tr­êng nhËn ®­îc chiÕu thŞ cña triÒu ®×nh, ®· giao viÖc nµy cho §Æc Sø §¹i Héi TØ Vâ t¹i BiÖn Kinh chñ tr×.";
 TMAIN.sel = 
 {
@@ -30,16 +30,16 @@ TMAIN.sel =
 --	{"ÈÕ³£ÈÎÎñ", SAY_2, }, 
 --	{"ÔöÖµ·şÎñ", SAY_3, }, 
 --	{"Ğ£³¡½éÉÜ", SAY_4, }, 
-	{"Vâ L©m Minh Håi Qui", SAY_5, },
-	{"KÕt thóc", "nothing", }, };
+	{"Wulin League Return", SAY_5, },
+	{"End", "nothing", }, };
 SAY_1.msg = g_NpcName.."Sau khi vµo Vâ L©m Minh Gi¸o Tr­êng, nh÷ng vËt phÈm kh«ng hîp víi tiªu chuÈn ta sÏ b¶o qu¶n gióp ng­¬i, sau khi quay l¹i ta sÏ tr¶ l¹i, ta kh«ng ph¶i tªn trém ®©u! TiÒn cña Vâ L©m Minh duy nhÊt chØ cã TiÒn Tiªu Dao mµ th«i.";
 SAY_1.sel = 
 {
-	{"Vµo ®Êu tr­êng TØ Vâ", "enterNvn", },
+	{"Enter the Martial Arts Tournament arena", "enterNvn", },
 	{"§æi TiÒn Tiªu Dao (vËt phÈm mua ®Ó dïng t¹i liªn ®Êu)", "tmz_Change_Xoyo_Gold", }, 
 	{"§æi Ngäc Tiªu Dao( phôc vô cho viÖc t¨ng trŞ gi¸ t¹i liªn ®Êu)", "tmz_Change_Xoyo_Yu", }, 
 	{"trë l¹i", TMAIN, }, 
-	{"KÕt thóc ®èi tho¹i", "nothing", }, };
+	{"End conversation", "nothing", }, };
 SAY_2.msg = g_NpcName.."§¹i hiÖp t¹i ®Êu tr­êng tØ thİ cã vui hay kh«ng?";
 SAY_2.sel = 
 {
@@ -47,7 +47,7 @@ SAY_2.sel =
 	{"TiÓu thİ th©n thñ - giµnh chiÕn th¾ng 5 lÇn th«ng qua "gia nhËp nhanh" më ®Êu tr­êng Vâ L©m Minh, sÏ nhËn ®­îc phÇn th­ëng.", "#task(2)", }, 
 	{"Phong cuång vâ gi¶ - giµnh chiÕn th¾ng 10 lÇn th«ng qua "gia nhËp nhanh" më ®Êu tr­êng Vâ L©m Minh, sÏ nhËn ®­îc phÇn th­ëng.", "#task(3)", }, 
 	{"trë l¹i", TMAIN, }, 
-	{"KÕt thóc ®èi tho¹i", "nothing", }, };
+	{"End conversation", "nothing", }, };
 		
 g_tStatValueStr = {
 	"jiaochang_reshen",			--¼ÇÂ¼Íæ¼ÒÁìÈ¡ÈÈÉíÈÎÎñµÄ´ÎÊı
@@ -82,10 +82,10 @@ end
 SAY_3.msg = g_NpcName.."§Ó tr¸nh t×nh tr¹ng kh«ng tu©n thñ trËt tù trong ®Êu tr­êng, tr­ëng l·o ®Æc biÖt giao cho nh÷ng ®¹i hiÖp lËp kú c«ng lÖnh bµi";
 SAY_3.sel = 
 {
-	{"LÖnh bµi g× chø", SAY_3_1, }, 
+	{"What order tablet?", SAY_3_1, }, 
 --	{"ÎÒÒª»ñµÃÁîÅÆ£¨ÏûºÄ20Ã¶åĞÒ£Óñ£©", "exchangeToken", }, 
 	{"trë l¹i", TMAIN, }, 
-	{"KÕt thóc", "nothing", }, };
+	{"End", "nothing", }, };
 SAY_3_1.msg = g_NpcName.."LÖnh bµi cã thÓ tr¸nh t×nh tr¹ng trong ®Êu tr­êng Vâ L©m Minh bŞ tïy tiÖn mêi rêi khái ®éi, nã cã t¸c dông trong vßng 1 th¸ng";
 SAY_3_1.sel = 
 {
@@ -97,7 +97,7 @@ SAY_4.sel =
 	{"Giíi thiÖu ®iÓm tİch lòy", SAY_4_2, }, 
 --	{"½±Àø½éÉÜ", SAY_4_3, }, 
 	{"trë l¹i", TMAIN, }, 
-	{"KÕt thóc", "nothing", }, };
+	{"End", "nothing", }, };
 SAY_4_1.msg = "Thêi gian Vâ L©m Minh Gi¸o Tr­êng më lµ mçi ngµy vµo lóc 18:00 - 24:00. C¸c ®¹i hiÖp cã thÓ trong kho¶ng thêi gian nµy, do tiÓu n÷ dÉn vµo. Sau ®ã cã thÓ gia nhËp vµo phßng liªn quan tiÕn hµnh giao tranh. n\ HiÖn t¹i lµ m« h×nh tæ ®éi Vâ L©m Minh, chia thµnh 2 ng­êi tæ ®éi vµ 3 ng­êi tæ ®éi giao tranh.";
 SAY_4_1.sel = 
 {
@@ -126,7 +126,7 @@ function main()
 		sel = {             
 			--"\n»ØÎäÁÖÃË/#ChangeGroupWorld(425,1762,3157)",
 			"\·µ»Øãê¾©/#ChangeGroupWorld(200,1391,2820)",
-			"\nKÕt thóc ®èi tho¹i/nothing",
+			"\nEnd conversation/nothing",
 		}
 		Say("<color=green>Giang Nam nhÊt k× Mai Ph¹m Th­<color>: ha ha, §Æc Sø §¹i Héi TØ Vâ ®ang bËn viÖc triÒu ®×nh, ta ®µnh ph¶i thay mÆt chñ tr× lÇn ®¹i héi nµy råi.",
 			getn(sel), sel);
@@ -157,8 +157,8 @@ g_tNvnRankAward = {
 		{"ThÇn hµnh b¶o ®iÓn", {g,d,p,1,4}},
 	},
 	[4 ] = {
-		{"TÈy Tñy ®¬n", {g,d,p,5,4}},
-		{"TÈy Tñy linh ®¬n", {g,d,p,1,4}},
+		{"Marrow-Cleansing Pill", {g,d,p,5,4}},
+		{"Marrow-Cleansing Spirit Pill", {g,d,p,1,4}},
 	},
 	[5 ] = {"B¸t B¶o TÈy Tñy Tiªn §¬n", {g,d,p,1,4}},
 	[6 ] = {"L¨ng Ba MËt TŞch", {g,d,p,1,4}},
@@ -181,9 +181,9 @@ end
 
 function tmz_Change_Xoyo_Gold()
 	local strtab = {
-		"Dïng vµng ®æi Xu Tiªu Dao (1 vµng ®æi 100 Xu Tiªu Dao)/tmz_Use_JXB",
+		"Use gold to exchange Xiaoyao Coins (1 gold exchanges 100 Xiaoyao Coins)/tmz_Use_JXB",
 		"trë l¹i/main",
-		"KÕt thóc ®èi tho¹i/nothing",
+		"End dialogue/nothing",
 	};
 	Say(g_NpcName,--.."¿ç·şºó³ı<color=yellow>åĞÒ£±Ò<color>ÒÔÍâµÄ»õ±Ò¶¼½«ÎŞ·¨Ê¹ÓÃ£¬ÎÒ¿ÉÒÔ½«<color=yellow>½ğ×Ó<color>¶Ò»»³É¿ç·ş»õ±ÒåĞÒ£±Ò¡£ÉÙÏÀÏÖÔÚÓµÓĞåĞÒ£±Ò"..GetXYB().."Ã¶£¬ÒÔºó²éÑ¯¿ÉÍ¨¹ıF2½çÃæ¡££¨¿ÉÎª¸ºÊı£©",
 		getn(strtab),
@@ -192,7 +192,7 @@ end
 
 function tmz_Use_JXB()
 	local nJxb = floor(GetCash()/10000);
-	AskClientForNumber("tmz_Use_JXB_Confirm",1,nJxb*100,"§«i bao nhiªu Xu Tiªu Dao?");
+	AskClientForNumber("tmz_Use_JXB_Confirm",1,nJxb*100,"How much Tieu Dao Coin to exchange?");
 end
 
 function tmz_Use_JXB_Confirm(nCount)
@@ -270,16 +270,16 @@ function FinishGTask(nTaskID)
 end
 
 g_tNvnRankTitle = {
-    {1    , 67, 1, "Vâ L©m Minh Vâ Gi¶",},
-    {2000 , 67, 2, "Vâ L©m Minh Vâ SÜ",},
-    {6000 , 67, 3, "Vâ L©m Minh Vâ S­",},
-    {10000, 67, 4, "Vâ L©m Minh Vâ HiÖp",},
+    {1    , 67, 1, "Wulin Alliance Martial Apprentice",},
+    {2000 , 67, 2, "Wulin Alliance Martial Warrior",},
+    {6000 , 67, 3, "Wulin Alliance Martial Master",},
+    {10000, 67, 4, "Wulin Alliance Martial Hero",},
     {14000, 67, 5, "Vâ L©m Minh Vâ T«ng",},
-    {18000, 67, 6, "Vâ L©m Minh Vâ Linh",},
+    {18000, 67, 6, "Wulin Alliance Martial Spirit",},
     {22000, 67, 7, "Vâ L©m Minh Vâ Hoµng",},
-    {28000, 67, 8, "Vâ L©m Minh Vâ Quû",},
+    {28000, 67, 8, "Wulin Alliance Martial Demon",},
     {35000, 67, 9, "Vâ L©m Minh Vâ T«n",},
-    {60000, 67, 10, "Vâ L©m Minh Vâ Th¸nh",},
+    {60000, 67, 10, "Wulin Alliance Martial Saint",},
 }
 
 function exchangeScore(bSure)
@@ -289,7 +289,7 @@ function exchangeScore(bSure)
 		end
 		if gf_AddGlbFlag(GF_NVN_FEEDBACK_2) ~= 1 then return end
 		gf_SetLogCaption(format("[NVN ®æi ®iÓm tİch lòy 2]"));
-		gf_AddItemEx({2,95,1511,1,4}, "§Êu Ph¸ch LÖnh", 45);
+		gf_AddItemEx({2,95,1511,1,4}, "Soul Breaking Token", 45);
 		gf_SetLogCaption("");
 		return Talk(1, "", "§iÓm tİch lòy Vâ L©m Minh cña ng­¬i ®· ®æi hoµn tÊt, ®a t¹ !");
 	end
@@ -306,7 +306,7 @@ function exchangeScore(bSure)
 		if nScore >= g_tNvnRankTitle[i][1] then
 			AddTitle(g_tNvnRankTitle[i][2], g_tNvnRankTitle[i][3]);
 			Msg2Player(format("Chóc mõng ng­¬i nhËn ®­îc [%s] danh hiÖu", g_tNvnRankTitle[i][4]));
-			gf_AddItemEx({2,95,1511,1,4}, "§Êu Ph¸ch LÖnh", 50);
+			gf_AddItemEx({2,95,1511,1,4}, "Soul Breaking Token", 50);
 			break;
 		end
 	end

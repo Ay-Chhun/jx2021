@@ -23,7 +23,7 @@ function OnUse(nItem)
 	
 	local strTab = {
 		format("Ta muèn më lÔ bao n©ng cÊp/#OnUse_1(%d)", nItem),
-		"§Ó ta suy nghÜ/nothing",
+		"Let me think about it/nothing",
 	};
 	Say("<color=green> LÔ Bao N©ng CÊp: <color> x¸c nhËn më LÔ Bao N©ng CÊp nµy kh«ng?", getn(strTab), strTab);
 end

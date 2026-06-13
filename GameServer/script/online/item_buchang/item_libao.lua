@@ -3,8 +3,8 @@ Include("\\script\\online\\item_buchang\\ibc_head.lua")
 --Ê¹ÓÃ²¹³¥Àñ°ü
 function OnUse(nItem)
 	local tSay = {
-		format("§óng/#_GetBcAward(%d)", nItem),
-		"Ra khái/nothing",
+		format("Confirm/#_GetBcAward(%d)", nItem),
+		"Leave/nothing",
 	}
 	Say("Tói quµ ®Òn bï: §Ó bµy tá lßng thµnh xin lçi tõ viÖc hack item lÇn nµy, chóng t«i sÏ ®­a ra nh÷ng phÇn th­ëng ®Òn bï sau, mong r»ng b¹n sÏ thÝch: <color=green>1.000.000.000 EXP, 20 Hu©n Ch­¬ng Anh Hïng, 10000 ®iÓm ch©n khÝ, 20000 ®iÓm c«ng tr¹ng, thó c­ìi ngÉu nhiªn<color>", getn(tSay), tSay);
 end
@@ -22,7 +22,7 @@ function _GetBcAward(nItem)
 	end
 	DoFireworks(832, 3);
 	gf_ModifyExp(1000000000);
-	gf_AddItemEx2({2, 1, 30499, 20, 4}, "Hu©n ch­¬ng anh hïng", "§Òn bï hack item", "Hu©n ch­¬ng anh hïng", 0, 1);
+	gf_AddItemEx2({2, 1, 30499, 20, 4}, "Hero's Medal", "Compensation hack item", "Hero's Medal", 0, 1);
 	AwardGenuineQi(10000);
 	Msg2Player(format("C¸c h¹ nhËn ®­îc %d ®iÓm ch©n khÝ", 10000))
 	if GetTask(701) >= 0 then
@@ -38,6 +38,6 @@ function _GetBcAward(nItem)
 		{1, 20, "B¸o Vµng B¶o B¶o", {0, 105, 30030, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
 		{1, 20, "Hång Mao Ng­u B¶o B¶o", {0, 105, 30023, 1, 1, -1, -1, -1, -1, -1, -1}, 30 * 24 * 3600},
   }
-  gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "§Òn bï hack item", "Thó c­ìi ngÉu nhiªn")
+  gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Compensation hack item", "Thó c­ìi ngÉu nhiªn")
   IBC_TASK_MANAGE:SetTask(IBC_TASK_MANAGE.AwardTag, 2);
 end

@@ -93,14 +93,14 @@ Gi¸p M·_Thiªn S­ BÝ C¶nh	98	329	329	1
 B¾c Phông T­êng	99	504	504	1
 Nam Phông T­êng	100	501	501	1
 Long M«n trÊn	101	507	507	1
-Quang Minh ®Ønh	102	508	508	1
-TÇn L¨ng	103	503	503	1
+Guangming Peak	102	508	508	1
+Qin Mausoleum	103	503	503	1
 Hoµng L¨ng mé thÊt tÇng 1	104	513	513	1
 Hoµng L¨ng mé thÊt tÇng 2	105	514	514	1
 Cæ D­¬ng ®éng_1	106	511	511	1
 Cæ D­¬ng ®éng_2	107	512	512	1
 D­îc V­¬ng cèc	108	505	505	1
 D­îc V­¬ng ®éng	109	510	510	1
-Mª cung sa m¹c	110	506	506	1
+Desert Demon Palace	110	506	506	1
 Dao Tiªn ®éng	111	118	118	1
 				

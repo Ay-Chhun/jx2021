@@ -42,8 +42,8 @@ local strNpcMap      = tabNpcName:getCell(nRow, "NpcMap");  -- µÃµ½ÈÎÎñ NPC ËùÔÚ
 local strBossName    = FactionBossName[GetPlayerFaction()];
 local strBossTitle   = FactionBossTitle[GetPlayerFaction()];
 
-	Say("B¹n nhËn ®­îc bå c©u ®­a th­ cña"..strBossTitle.."{bå c©u ®­a th­}"..strBossName.."nhê b¹n ®Õn <color=yellow>"..strNpcMap.."<color> t×m <color=yellow>"..strNpcName.."<color>, ng­êi nµy cÇn sù gióp ®ì cña b¹n, ®ång thêi dÆn b¹n dï thÕ nµo còng ph¶i hoµn thµnh nhiÖm vô ®­îc giao!",
+	Say("B¹n nhËn ®­îc bå c©u ®­a th­ cña"..strBossTitle.."{messenger pigeon}"..strBossName.."asks you to go to <color=yellow>"..strNpcMap.."<color> to find <color=yellow>"..strNpcName.."<color>, ng­êi nµy cÇn sù gióp ®ì cña b¹n, ®ång thêi dÆn b¹n dï thÕ nµo còng ph¶i hoµn thµnh nhiÖm vô ®­îc giao!",
 		2,
 		"§Õn n¬i lµm nhiÖm vô/#AcceptTask("..nNpcMapID..")",
-		"§ãng/Main_Exit");
+		"Close/Main_Exit");
 end;

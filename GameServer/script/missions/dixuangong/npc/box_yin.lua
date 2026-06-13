@@ -23,7 +23,7 @@ T_YinBoxScript={
 T_YIN_BOX_IDX = {}
 function remove_yin_box()
 	for i,v in T_YIN_BOX_IDX do
-		if GetNpcName(i) == "R­¬ng B¹c" then
+		if GetNpcName(i) == "Silver Chest" then
 			SetNpcLifeTime(i, 0);
 		end
 	end
@@ -36,7 +36,7 @@ function create_box_yin(m,x,y, nStage)
 	end
 	--local m, x, y = GetNpcWorldPos(nNpcIdx);
 	local x2, y2 = x + random(-5, 5), y + random(-5, 5);
-	local npc = CreateNpc("yinbaoxiang", "R­¬ng B¹c", m, x2, y2);
+	local npc = CreateNpc("yinbaoxiang", "Silver Chest", m, x2, y2);
 	if npc and npc > 0 then
 		T_YIN_BOX_IDX[npc] = 1
 		--SetNpcLifeTime(npc, 180);
@@ -49,17 +49,17 @@ end
 tAward = {
 	randMulti = 1,
 	subclauses = {
-        {{"C©y B¸t Nh· nhá", {2,0,504,1},nil,{7*24*3600}},600},
-        {{"C©y B¸t Nh·", {2,0,398,1},nil,{7*24*3600}},600},
-        {{"C©y Tø Linh", {2,1,30269,1},nil,{7*24*3600}},600},
+        {{"Small Prajna Tree", {2,0,504,1},nil,{7*24*3600}},600},
+        {{"Prajna Tree", {2,0,398,1},nil,{7*24*3600}},600},
+        {{"Four Spirits Tree", {2,1,30269,1},nil,{7*24*3600}},600},
         {{"B¹ch C©u Hoµn", {2,1,270,1},nil,{7*24*3600}},600},
         {{"§¹i B¹ch C©u hoµn", {2,1,1007,1},nil,{7*24*3600}},800},
         {{"B¹ch C©u Tiªn ®¬n", {2,1,1008,1},nil,{7*24*3600}},600},
         {{"§¹i Nh©n s©m", {2,0,553,1},nil,{7*24*3600}},500},
-        {{"Hu©n ch­¬ng anh hïng", {2,1,30499,1,4},},848},
-        {{"Hu©n ch­¬ng anh hïng", {2,1,30499,2,4},},600},
-        {{"Hu©n ch­¬ng anh hïng", {2,1,30499,4,4},},200},
-        {{"Hu©n ch­¬ng anh hïng", {2,1,30499,10,4},},50},
+        {{"Hero's Medal", {2,1,30499,1,4},},848},
+        {{"Hero's Medal", {2,1,30499,2,4},},600},
+        {{"Hero's Medal", {2,1,30499,4,4},},200},
+        {{"Hero's Medal", {2,1,30499,10,4},},50},
         {{"M¶nh Thiªn M«n", {2,1,30410,2},},1200},
         {{"M¶nh Thiªn M«n", {2,1,30410,4},},391},
         {{"M¶nh Thiªn M«n", {2,1,30410,20},},40},
@@ -156,7 +156,7 @@ function speLoot(npcIdx)
 		return 0;
 	end
 	local tSel = {
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 		}
 	local OldPlayerIndex = PlayerIndex;
 	if daye == PlayerIndex then
@@ -248,9 +248,9 @@ function lootAward(player_index, box_index)
 		AddRuntimeStat(1,16,0,tLoot[2][4]);
 	elseif tLoot[1] == "CÊp 3 TÈy T©m Th¹ch" then
 		AddRuntimeStat(1,17,0,tLoot[2][4]);
-	elseif tLoot[1] == "BÝ Ng©n To¶n" then
+	elseif tLoot[1] == "Hidden Silver Plate" then
 		AddRuntimeStat(1,18,0,tLoot[2][4]);
-	elseif tLoot[1] == "BÝ Ng©n Chïy" then
+	elseif tLoot[1] == "Hidden Silver Mallet" then
 		AddRuntimeStat(1,19,0,tLoot[2][4]);
 	end
 	

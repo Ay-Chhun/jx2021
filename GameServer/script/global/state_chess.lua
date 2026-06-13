@@ -92,10 +92,10 @@ function scConfirmPassTask(nTaskID)
 		return 6
 	end
 	local strTab = {
-		format("\n§ång ý tiªu hao %s nh¶y qua nhiÖm vô nµy/StateChessPassTask", "Hu©n ch­¬ng anh hïng"),
+		format("\n§ång ý tiªu hao %s nh¶y qua nhiÖm vô nµy/StateChessPassTask", "Hero's Medal"),
 		"\nKh«ng, muèn tù tay hoµn thµnh nhiÖm vô/nothing",
 	};
-	Say(format("Nh¶y qua nhiÖm vô (NhËn ®­îc phÇn th­ëng nhiÖm vô), cÇn tiªu hao <color=red>%d<color> %s", 2, "Hu©n ch­¬ng anh hïng"), getn(strTab), strTab);
+	Say(format("Nh¶y qua nhiÖm vô (NhËn ®­îc phÇn th­ëng nhiÖm vô), cÇn tiªu hao <color=red>%d<color> %s", 2, "Hero's Medal"), getn(strTab), strTab);
 	return 1;
 end
 
@@ -117,13 +117,13 @@ function scPassTask(nTaskID)
 	end
 	
 	if GetItemCount(2, 1, 30499) < 2 then
-		Talk(1,"",format("Sè l­îng [%s] kh«ng ®ñ <color=red>%d<color> c¸i", "Hu©n ch­¬ng anh hïng", 2))
+		Talk(1,"",format("Sè l­îng [%s] kh«ng ®ñ <color=red>%d<color> c¸i", "Hero's Medal", 2))
 		return 3;
 	end
 	if DelItem(2, 1, 30499, 2) ~= 1 then
 		return 4;
 	end
-	Msg2Player(format("§· tiªu hao %s*%d", "Hu©n ch­¬ng anh hïng", 2));
+	Msg2Player(format("§· tiªu hao %s*%d", "Hero's Medal", 2));
 	
 	--½áÊøÇ°¶¯×÷£º²ß»®Éè¶¨£¬É¾³ý
 	tGtCondition:del_item_confirm(tGtNpcInfo[nTaskID]["data"][10])
@@ -163,10 +163,10 @@ end
 --½øÈëÏÂÒ»È¦ÏûºÄ-----------------------------------------
 function scConfirmRoundOver(nRound)
 	local strTab = {
-		format("\n§ång ý tiªu hao %s ®Ó b­íc vµo vßng tiÕp theo/StateChessRoundOver", "Hu©n ch­¬ng anh hïng"),
+		format("\n§ång ý tiªu hao %s ®Ó b­íc vµo vßng tiÕp theo/StateChessRoundOver", "Hero's Medal"),
 		"\nT¹m thêi kh«ng cÇn/nothing",
 	};
-	Say(format("Chóc mõng, ®· hoµn thµnh vßng <color=green>%d<color>, b­íc vµo vßng tiÕp theo cÇn tiªu hao <color=red>%d<color> %s", nRound, 4 + (nRound - 1) * 4, "Hu©n ch­¬ng anh hïng"), getn(strTab), strTab);
+	Say(format("Chóc mõng, ®· hoµn thµnh vßng <color=green>%d<color>, b­íc vµo vßng tiÕp theo cÇn tiªu hao <color=red>%d<color> %s", nRound, 4 + (nRound - 1) * 4, "Hero's Medal"), getn(strTab), strTab);
 	return 1;
 end
 
@@ -176,23 +176,23 @@ end
 function scRoundOver(nRound)
 	local nValue = 4 + (nRound - 1) * 4;
 	if GetItemCount(2, 1, 30499) < nValue then
-		Talk(1,"",format("Sè l­îng [%s] kh«ng ®ñ <color=red>%d<color> c¸i", "Hu©n ch­¬ng anh hïng", nValue))
+		Talk(1,"",format("Sè l­îng [%s] kh«ng ®ñ <color=red>%d<color> c¸i", "Hero's Medal", nValue))
 		return 0;
 	end
 	if DelItem(2, 1, 30499, nValue) ~= 1 then
 		return 0;
 	end
-	Msg2Player(format("§· tiªu hao %s*%d", "Hu©n ch­¬ng anh hïng", nValue));
+	Msg2Player(format("§· tiªu hao %s*%d", "Hero's Medal", nValue));
 	return 1;
 end
 
 --ÊÇ·ñÏûºÄÒø„»»ñÈ¡ºÃÔËµØÍ¼½±Àø--------------------------
 function scConfirmFinishGl(nType)
 	local strTab = {
-		format("\n§ång ý tiªu hao %s nhËn phÇn th­ëng/StateChessFinishGl", "Hu©n ch­¬ng anh hïng"),
+		format("\n§ång ý tiªu hao %s nhËn phÇn th­ëng/StateChessFinishGl", "Hero's Medal"),
 		"\nT¹m thêi kh«ng cÇn/nothing",
 	};
-	Say(format("Chµo mõng ®Õn víi <color=green>b¶n ®å may m¾n<color>, tham gia cÇn tiªu hao <color=red>%d<color> %s", 2, "Hu©n ch­¬ng anh hïng"), getn(strTab), strTab);
+	Say(format("Chµo mõng ®Õn víi <color=green>b¶n ®å may m¾n<color>, tham gia cÇn tiªu hao <color=red>%d<color> %s", 2, "Hero's Medal"), getn(strTab), strTab);
 	return 1;
 end
 
@@ -200,23 +200,23 @@ end
 --Ê§°Ü·µ»Ø0
 function scFinishGl(nType)
 	if GetItemCount(2, 1, 30499) < 2 then
-		Talk(1,"",format("Sè l­îng [%s] kh«ng ®ñ <color=red>%d<color> c¸i", "Hu©n ch­¬ng anh hïng", 2))
+		Talk(1,"",format("Sè l­îng [%s] kh«ng ®ñ <color=red>%d<color> c¸i", "Hero's Medal", 2))
 		return 0;
 	end
 	if DelItem(2, 1, 30499, 2) ~= 1 then
 		return 0;
 	end
-	Msg2Player(format("§· tiªu hao %s*%d", "Hu©n ch­¬ng anh hïng", 2));
+	Msg2Player(format("§· tiªu hao %s*%d", "Hero's Medal", 2));
 	return 1;
 end
 
 --ÊÇ·ñÏûºÄÒø„»»ñÈ¡Ëæ»úµØÍ¼½±Àø--------------------------
 function scConfirmFinishEv(nType)
 	local strTab = {
-		format("\n§ång ý tiªu hao %s nhËn phÇn th­ëng/StateChessFinishEv", "Hu©n ch­¬ng anh hïng"),
+		format("\n§ång ý tiªu hao %s nhËn phÇn th­ëng/StateChessFinishEv", "Hero's Medal"),
 		"\nT¹m thêi kh«ng cÇn/nothing",
 	};
-	Say(format("Chµo mõng ®Õn víi <color=green>b¶n ®å sù kiÖn ngÉu nhiªn<color>, tham gia cÇn tiªu hao <color=red>%d<color> %s", 2, "Hu©n ch­¬ng anh hïng"), getn(strTab), strTab);
+	Say(format("Chµo mõng ®Õn víi <color=green>b¶n ®å sù kiÖn ngÉu nhiªn<color>, tham gia cÇn tiªu hao <color=red>%d<color> %s", 2, "Hero's Medal"), getn(strTab), strTab);
 	return 1;
 end
 
@@ -224,13 +224,13 @@ end
 --Ê§°Ü·µ»Ø0
 function scFinishEv(nType)
 	if GetItemCount(2, 1, 30499) < 2 then
-		Talk(1,"",format("Sè l­îng [%s] kh«ng ®ñ <color=red>%d<color> c¸i", "Hu©n ch­¬ng anh hïng", 2))
+		Talk(1,"",format("Sè l­îng [%s] kh«ng ®ñ <color=red>%d<color> c¸i", "Hero's Medal", 2))
 		return 0;
 	end
 	if DelItem(2, 1, 30499, 2) ~= 1 then
 		return 0;
 	end
-	Msg2Player(format("§· tiªu hao %s*%d", "Hu©n ch­¬ng anh hïng", 2));
+	Msg2Player(format("§· tiªu hao %s*%d", "Hero's Medal", 2));
 	return 1;
 end
 
@@ -296,7 +296,7 @@ function scGoodLuck(nValue)
 			{38, 1, 60, 1},
 		}
 		local nIndex = gf_GetRandItemByTable(tAward, gf_SumRandBase(tAward), 1);
-		gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Tr­îng KiÕm Thiªn Nhai", "TiÖm thuèc", nIndex)
+		gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Tr­îng KiÕm Thiªn Nhai", "Pharmacy", nIndex)
 		Talk(1,"",format("Ng­¬i nhËn ®­îc <color=green>%d®iÓm%s<color>", tAward[nIndex][3], "Tinh Lùc"))
 		return 1;
 	end
@@ -324,22 +324,22 @@ function scEvent(nValue)
 		{1, 100, "HuyÒn Viªm ThiÕt", {2, 1, 30670, 4}, 0},
 		{1, 100, "HuyÒn Viªm ThiÕt", {2, 1, 30670, 8}, 0},
 		{1, 1, "Linh §å §ao", {0, 3 , 30207, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "Linh §å Tr­îng", {0, 8 , 30208, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Spirit Token Staff", {0, 8 , 30208, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 1, "Linh §å Thñ", {0, 0 , 30209, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "Linh §å Ch©m", {0, 1 , 30210, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Spirit Token Needle", {0, 1 , 30210, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 1, "Linh §å KiÕm", {0, 2 , 30211, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "Linh §å §µn", {0, 10, 30212, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Spirit Token Lute", {0, 10, 30212, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 1, "Linh §å Thñ", {0, 0 , 30213, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 1, "Linh §å C«n", {0, 5 , 30214, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 1, "Linh §å KiÕm", {0, 2 , 30215, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "Linh §å Bót", {0, 9 , 30216, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "Linh §å Th­¬ng", {0, 6 , 30217, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "Linh §å Cung", {0, 4 , 30218, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Spirit Token Brush", {0, 9 , 30216, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Spirit Token Spear", {0, 6 , 30217, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Spirit Token Bow", {0, 4 , 30218, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 1, "Linh §å §ao", {0, 7 , 30219, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "Linh §å Tr¶o", {0, 11, 30220, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Spirit Token Claw", {0, 11, 30220, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 1, "Linh §å KiÕm", {0, 2 , 30221, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "Linh §å PhiÕn", {0, 13, 30222, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "Linh §å §Þch", {0, 12, 30223, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Spirit Token Fan", {0, 13, 30222, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Spirit Token Flute", {0, 12, 30223, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 	}
 	local nIndex = gf_GetRandItemByTable(tAward, gf_SumRandBase(tAward), 1)
 	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Tr­îng KiÕm Thiªn Nhai", "B¶n ®å ngÉu nhiªn", nIndex);
@@ -408,27 +408,27 @@ function OnUse(nItem)
 		{1, 1000, "Viªm HuyÒn ThiÕt", {2, 1, 30670, 2}, 0},
 		{1, 500, "Viªm HuyÒn ThiÕt", {2, 1, 30670, 4}, 0},
 		{1, 500, "Viªm HuyÒn ThiÕt", {2, 1, 30670, 8}, 0},
-		{1, 500, "C©y B¸t Nh·", {2, 0, 398, 1, 4}, 0},
-		{1, 600, "C©y B¸t Nh· nhá", {2, 0, 504, 1, 4}, 0},
-		{1, 500, "C©y Tø Linh", {2, 1, 30269, 1, 4}, 0},
-		{1, 383, "Tói h¹t gièng", {2, 1, 30087, 1, 4}, 0},
+		{1, 500, "Prajna Tree", {2, 0, 398, 1, 4}, 0},
+		{1, 600, "Small Prajna Tree", {2, 0, 504, 1, 4}, 0},
+		{1, 500, "Four Spirits Tree", {2, 1, 30269, 1, 4}, 0},
+		{1, 383, "Seed bag", {2, 1, 30087, 1, 4}, 0},
 		{1, 1, "Linh §å §ao", {0, 3 , 30207, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "Linh §å Tr­îng", {0, 8 , 30208, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Spirit Token Staff", {0, 8 , 30208, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 1, "Linh §å Thñ", {0, 0 , 30209, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "Linh §å Ch©m", {0, 1 , 30210, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Spirit Token Needle", {0, 1 , 30210, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 1, "Linh §å KiÕm", {0, 2 , 30211, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "Linh §å §µn", {0, 10, 30212, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Spirit Token Lute", {0, 10, 30212, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 1, "Linh §å Thñ", {0, 0 , 30213, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 1, "Linh §å C«n", {0, 5 , 30214, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 1, "Linh §å KiÕm", {0, 2 , 30215, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "Linh §å Bót", {0, 9 , 30216, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "Linh §å Th­¬ng", {0, 6 , 30217, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "Linh §å Cung", {0, 4 , 30218, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Spirit Token Brush", {0, 9 , 30216, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Spirit Token Spear", {0, 6 , 30217, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Spirit Token Bow", {0, 4 , 30218, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 1, "Linh §å §ao", {0, 7 , 30219, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "Linh §å Tr¶o", {0, 11, 30220, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Spirit Token Claw", {0, 11, 30220, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 		{1, 1, "Linh §å KiÕm", {0, 2 , 30221, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "Linh §å PhiÕn", {0, 13, 30222, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
-		{1, 1, "Linh §å §Þch", {0, 12, 30223, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Spirit Token Fan", {0, 13, 30222, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
+		{1, 1, "Spirit Token Flute", {0, 12, 30223, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 	}
 	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Tr­îng KiÕm Thiªn Nhai", "Bao Tr­îng KiÕm Thiªn Nhai")
 end

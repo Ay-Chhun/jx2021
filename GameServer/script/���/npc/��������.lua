@@ -6,7 +6,7 @@ function main()
 	local selTab = {
 				"Mua tiÓu hång bao/buy_xiaohongbao",
 				"Mua ph¸o/buy_banger",
-				"Kh«ng mua/cancel",
+				"Do not buy/cancel",
 				}
 	Say(g_InfoHeader.."TÊt c¶ vËt phÈm phôc vô cho h«n lÔ bæn tiÖm ®Òu kh«ng thiÕu. Kh¸ch quan "..gf_GetPlayerSexName().."cÇn mua g×?",getn(selTab),selTab);
 end;
@@ -27,7 +27,7 @@ function buy_hongbao_confirm()
 	if Pay(1000000) == 1 then
 		AddItem(2,1,508,1);
 		Msg2Player("B¹n mua ®­îc tiÓu hång bao")
-		WriteLog("[KÕt h«n]:"..GetName().."Mua ®­îc tiÓu hång bao");
+		WriteLog("[Marriage]:"..GetName().."Mua ®­îc tiÓu hång bao");
 	else
 		Msg2Player("B¹n kh«ng ®ñ tiÒn ");
 	end;

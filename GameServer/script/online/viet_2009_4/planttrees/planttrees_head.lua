@@ -29,17 +29,17 @@ function is_2015_12_act_time()
 end
 if is_2015_12_act_time()== 1 then
 TREE_TYPE = {									--Ä£°åÃû£¬NPCÃû×Ö£¬³öÏÖ¸ÅÂÊ
-				{"Xmas_Tree1", "C©y HÐo óa",  9},
-				{"C©y Gi¸ng sinh 3d", "C©y BÊt Tö", 16},
+				{"Xmas_Tree1", "Withered Tree",  9},
+				{"C©y Gi¸ng sinh 3d", "Immortal Tree", 16},
 				{"C©y Gi¸ng sinh 3a", "C©y B¹ch Ng©n", 70},
 				{"Xmas_Tree3", "C©y Hoµng Kim", 4},
 				{"C©y Gi¸ng sinh 3b", "C©y B¹ch Kim", 1},
 			}
 else
 TREE_TYPE = {									--Ä£°åÃû£¬NPCÃû×Ö£¬³öÏÖ¸ÅÂÊ
-				{"MÇm hoa hång", "C©y HÐo óa",  9},
-				{"MÇm Hoa hång", "C©y BÊt Tö", 16},
-				{" nh¸nh hoa hång", "C©y B¹ch Ng©n", 70},
+				{"MÇm hoa hång", "Withered Tree",  9},
+				{"MÇm Hoa hång", "Immortal Tree", 16},
+				{" rose branch", "C©y B¹ch Ng©n", 70},
 				{"c©y §a MËt Hoa Qu¶ nhá", "C©y Hoµng Kim", 4},
 				{"c©y §a MËt Hoa Qu¶ lín", "C©y B¹ch Kim", 1},
 			}
@@ -61,31 +61,31 @@ CITY_NAME_ID =
 				{
 					[100] = "TuyÒn Ch©u",
 					[150] = "D­¬ng Ch©u",
-					[200] = "BiÖn Kinh",
+					[200] = "Bianjing",
 					[300] = "Thµnh §«",
 					[350] = "T­¬ng D­¬ng",
-					[400] = "§¹i Lý"
+					[400] = "Da Li"
 				}
 
 --»Æ½ðÊ÷½±ÀøÎïÆ·£ºÎïÆ·Ãû£¬³öÏÖ¸ÅÂÊ£¬Ö÷ÀàÐÍ£¬¸±ÀàÐÍ£¬ÏêÏ¸ÀàÐÍ£¬Ê¹ÓÃÆÚÏÞ£¬·¢·ÅÊýÁ¿
 GOLDEN_TREE_REWARD_ITEM_PARAM = {
-									{"Tiªu KiÕp t¸n", 50, 2, 0, 141, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1},
+									{"Tribulation Dispel Powder", 50, 2, 0, 141, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1},
 									{"ThÇn hµnh bÝ phæ", 10, 0, 200, 39, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1},
-									{"Tu Ch©n YÕu QuyÕt", 40, 2, 0, 554, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1}
+									{"Xiu Zhen Yao Jue", 40, 2, 0, 554, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1}
 	};
 
 --°×½ðÊ÷½±ÀøÎïÆ·£ºÎïÆ·Ãû£¬³öÏÖ¸ÅÂÊ£¬Ö÷ÀàÐÍ£¬¸±ÀàÐÍ£¬ÏêÏ¸ÀàÐÍ£¬Ê¹ÓÃÆÚÏÞ£¬·¢·ÅÊýÁ¿
 WHITE_TREE_REWARD_ITEM_PARAM = {
-									{"Bé C¶nh", 5, 0, 105, 13, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1},
+									{"Scenery Set", 5, 0, 105, 13, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1},
 									{"Hèt L«i B¸c", 5, 0, 105, 12, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1},
-									{"XÝch Thè", 5, 0, 105, 9, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1},
+									{"Red Hare", 5, 0, 105, 9, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1},
 									{"Tr¶o Hoµng Phi §iÖn", 5, 0, 105, 11, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1},
-									{"Phiªu Vò", 5, 0, 105, 15, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1},
-									{"Bµn Long bÝch", 10, 2, 1, 1000, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1},
+									{"Piao Wu", 5, 0, 105, 15, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1},
+									{"Coiling Dragon Jade", 10, 2, 1, 1000, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1},
 									{"V« NgÊn Thñy", 5, 2, 1, 503, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1},
-									{"Sæ tay sèng", 5, 2, 19, 1, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1},
+									{"Living Notebook", 5, 2, 19, 1, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1},
 									{"Bång Lai Tiªn §¬n", 50, 2, 1, 1013, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1},
-									{"TÈy Tñy linh ®¬n", 5, 2, 0, 137, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1}
+									{"Marrow-Cleansing Spirit Pill", 5, 2, 0, 137, PLANT_TREE_REWARD_ITEM_TIME_LIMIT, 1}
 	};
 --°×ÒøÊ÷µÄ¾­Ñé½±Àø£º¾­ÑéÖµ£¬¸ÅÂÊ
 WHITE_SILVER_TREE_EXP_REWARD_PARAM = {
@@ -185,7 +185,7 @@ function getDateTimeString(nSecond)
 		sTime = sTime .. nHour .. "h ";
 	end
 	if nMin > 0 then
-		sTime = sTime .. nMin .. " phót ";
+		sTime = sTime .. nMin .. " minutes";
 	end
 	if nSec >= 0 then
 		sTime = sTime .. nSec .. " Gi©y ";

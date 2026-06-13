@@ -7,13 +7,13 @@
 --==============================¹«¹²±äÁ¿¶¨ÒåÇø========================
 	zong_zi_bag_goods_ID = 1141
 TB_zong_zi_bag_prize = {
-	{"b¸nh Ýt g¹o tr¾ng",1122,1,"43%",4300},
-	{"b¸nh Ýt ng¶i h­¬ng",1123,1,"30%",7300},
+	{"white rice cake",1122,1,"43%",4300},
+	{"a few wormwood cakes",1123,1,"30%",7300},
 	{"b¸nh Ýt ch©n gµ",1124,1,"20.5%",9350},
 	{"b¸nh Ýt B¸c B¶o",1125,1,"5%",9850},
-	{"b¸nh Ýt vui vÎ",1126,1,"1%",9950},
-	{"b¸nh Ýt may m¾n",1127,1,"0.45%",9995},
-	{"b¸nh Ýt th¹ch anh",1128,1,"0.05%",10000},
+	{"joyful cake",1126,1,"1%",9950},
+	{"lucky cake",1127,1,"0.45%",9995},
+	{"quartz cake",1128,1,"0.05%",10000},
 }
 function OnUse(goods_index)
 	local prize_dialog = ""
@@ -22,7 +22,7 @@ function OnUse(goods_index)
 	end
 	Say("<color=green>Gîi ý <color>: B¹n x¸c nhËn muèn sö dông <color=yellow>Hép b¸nh Ýt<color> ®æi lÊy phÇn th­ëng? "..prize_dialog,
 	2,
-	"§ång ý/prize_chg",
+	"Agree/prize_chg",
 	"§Ó ta suy nghÜ l¹i/end_dialog"
 	)
 end
@@ -47,7 +47,7 @@ function prize_chg()
 				WriteLog("Ho¹t ®éng TÕt §oan Ngä: Ng­êi ch¬i "..GetName().."Sö dông Hép b¸nh Ýt t¨ng"..TB_zong_zi_bag_prize[i][1].." thÊt b¹i, ký hiÖu:"..add_flag.."")
 			end
 			if i > 4 then
-				Msg2SubWorld("Chóc mõng:"..GetName().."Sö dông Hép b¸nh Ýt ®æi lÊy 1 "..TB_zong_zi_bag_prize[i][1].."!")
+				Msg2SubWorld("Congratulations:"..GetName().."Sö dông Hép b¸nh Ýt ®æi lÊy 1 "..TB_zong_zi_bag_prize[i][1].."!")
 				WriteLog("Ho¹t ®éng TÕt §oan Ngä: Ng­êi ch¬i "..GetName().."Sö dông Hép b¸nh Ýt ®æi lÊy 1 "..TB_zong_zi_bag_prize[i][1].."!")
 			end
 		end

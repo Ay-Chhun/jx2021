@@ -22,7 +22,7 @@
 				{"state_o_defence_point_add",6000,5400,0,19801229},
 				{"state_receive_half_damage",100,5400,0,19801250},
 			},
-			"Ph¸ phßng TrÊn mé trô","T¨ng phßng thñ",
+			"Break Defense Tomb-Guarding Pillar","T¨ng phßng thñ",
 		},	
 		{--¹¥»÷Ìá¸ß
 			{
@@ -44,34 +44,34 @@
 			{
 				{"state_move_speed_percent_add",250,5400,0,19801236},
 			},
-			"Gi¶m tèc TrÊn mé trô","T¨ng di chuyÓn",
+			"Slow Tomb-Guarding Pillar","T¨ng di chuyÓn",
 		},	  
 		{--ÉÁ±ÜÌá¸ß   
 			{
 				{"state_perfect_dodge_rate",10000,5400,0,19801237},
 			},
-			"§én th©n TrÊn mé trô","T¨ng nÐ tr¸nh",
+			"Evasion Tomb-Guarding Pillar","Increase evasion",
 		},	          
 		{--³ÖÐø»ØÑª 
 			{
 				{"state_life_percent_per10s_anytime",2,5400,0,19801238},
 			},
-			"§o¹n huyÕt TrÊn mé trô","Duy tr× håi m¸u",
+			"Bleed Tomb-Guarding Pillar","Maintain HP recovery",
 		},
 	--------------------------------------------------ÏÂÎªÍæ¼ÒÓÐº¦Öù-------------------------------------------
 		{--³ÖÐøµôÑª
 			{
 				{"state_lost_p_life_per18",2,5400,0,19801239},
 			},
-			"Håi mÖnh TrÊn mé trô",
-			"Duy tr× mÊt m¸u",
+			"Restore Life Tomb-Guarding Pillar",
+			"Maintain blood loss",
 			{60,11},
 		},		
 		{--³ÖÐøµôÀ¶
 			{
 				{"state_lost_p_mana_per18",2,5400,0,19801240},
 			},
-			"Håi néi TrÊn mé trô","Duy tr× mÊt néi lùc",
+			"Restore Internal Tomb-Guarding Pillar","Duy tr× mÊt néi lùc",
 			{60,12},
 		},
 		{--¹¥»÷ÏÂ½µ
@@ -101,14 +101,14 @@
 				{"state_physical_parmor_per_dec",32,5400,0,19801251},
 				{"state_magic_parmor_per_dec",32,5400,0,19801252},
 			},
-			"C­êng lùc TrÊn mé trô","Gi¶m c«ng thñ",
+			"Strong Power Tomb-Guarding Pillar","Gi¶m c«ng thñ",
 			{60,15},
 		},
 		{--ÒÆ¶¯ËÙ¶ÈÏÂ½µ
 			{
 				{"state_slow",70,5400,0,19801249},
 			},
-			"§Ò tèc TrÊn mé trô","Gi¶m tèc",
+			"Speed Boost Tomb-Guarding Pillar","Reduce speed",
 			{60,16},
 		}	
 	}
@@ -244,7 +244,7 @@ function stage2_boss_death()
 	local stage_seq = GetMissionV(MS_STATE_DIFF_ID)
 	PlayerIndex = GetTeamMember(0)
 	if PlayerIndex ~= 0 then
-		AddGlobalNews("T¹i"..GetName().."ChiÕn ®Êu gian khæ, cuèi cïng ®¸nh b¹i 'TrÊn Mé Thó', v­ît ¶i thµnh c«ng"..Stage_info[stage_seq].stage_name..".")
+		AddGlobalNews("At"..GetName().."ChiÕn ®Êu gian khæ, cuèi cïng ®¸nh b¹i 'TrÊn Mé Thó', v­ît ¶i thµnh c«ng"..Stage_info[stage_seq].stage_name..".")
 	end
 	
 	--Íæ¼ÒbuffÇå³ý
@@ -267,7 +267,7 @@ function stage2_boss_death()
 	ClearMapNpc(nMapID)
 	--test
 	local mission_count = GetMapTaskTemp(nMapID,1)
-	WriteLog("[¶i T©y B¾c] thèng kª qua ¶i: ID ¶i	"..stage_seq..":"..nMapID..":"..mission_count.."	Thêi gian qua ¶i	"..Zgc_pub_time_sec_change(((189-GetMissionV(MS_TIMMER_LOOP_ID))* 10),1))
+	WriteLog("[Northwest Pass] pass clearing statistics: Pass ID"..stage_seq..":"..nMapID..":"..mission_count.."	Thêi gian qua ¶i	"..Zgc_pub_time_sec_change(((189-GetMissionV(MS_TIMMER_LOOP_ID))* 10),1))
 	Zgc_pub_mission_fun(MS_ID,"Ms_stage_prize()")
 	SetMissionV(MS_TIMMER_LOOP_ID,6)	
 	--stage_mission_fail(2)

@@ -7,6 +7,6 @@ function OnUse(nItemIdx)
 		CastState("state_observe_add_percent",50,600*18,1,307000);
 		CastState("state_dexterity_add_percent",50,600*18,1,308000);
 		Msg2Player("TÊt c¶ n¨ng lùc t¨ng 50% trong 10 phót");
-		Msg2_LeiTai("B¸nh Trung Thu B¸ch Hoa");
+		Msg2_LeiTai("Hundred Flowers Mooncake");
 	end;
 end;

@@ -15,10 +15,10 @@ end;
 function Select_mp()
 	local szSay = {
 		"<sex> muèn gia nhËp m«n ph¸i nµo?",
-		"ThiÕu L©m./join_sl",
-		"Vâ §ang./join_wd",
+		"Shaolin./join_sl",
+		"Wudang./join_wd",
 		"Nga My./join_em",
-		"C¸i Bang./join_gb",
+		"Beggars' Guild./join_gb",
 		"§­êng M«n./join_tm",
 		"Ta ch­a muèn gia nhËp m«n ph¸i!/end_say"
 	};
@@ -43,7 +43,7 @@ function join_sl()
 		"<sex> muèn gia nhËp hÖ ph¸i nµo cña ThiÕu L©m?",
 		"ThiÕu L©m vâ t¨ng/enter_mp(4)",
 		"ThiÕu L©m thiÒn t¨ng/enter_mp(3)",
-		"ThiÕu L©m tôc gia/enter_mp(2)",
+		"Shaolin Lay Branch/enter_mp(2)",
 		"Ta kh«ng muèn gia nhËp ThiÕu L©m./end_say"
 	};
 	
@@ -57,8 +57,8 @@ function join_wd()
 	
 	local szSay = {
 		"<sex> muèn gia nhËp hÖ ph¸i nµo cña Vâ §ang?",
-		"Vâ §ang ®¹o gia/enter_mp(14)",
-		"Vâ §ang tôc gia/enter_mp(15)",
+		"Wudang Daoist Branch/enter_mp(14)",
+		"Wudang Lay Branch/enter_mp(15)",
 		"Ta kh«ng muèn gia nhËp Vâ §ang./end_say"
 	};
 	
@@ -80,8 +80,8 @@ function join_em()
 	
 	local szSay = {
 		"<sex> muèn gia nhËp hÖ ph¸i nµo cña Nga My?",
-		"Nga My phËt gia/enter_mp(8)",
-		"Nga My tôc gia/enter_mp(9)",
+		"Emei Buddhist Branch/enter_mp(8)",
+		"Emei Lay Branch/enter_mp(9)",
 		"Ta kh«ng muèn gia nhËp Nga My./end_say"
 	};
 	
@@ -95,8 +95,8 @@ function join_gb()
 	
 	local szSay = {
 		"<sex> muèn gia nhËp hÖ ph¸i nµo cña C¸i Bang?",
-		"C¸i Bang TÜnh y/enter_mp(11)",
-		"C¸i Bang ¤ Y/enter_mp(12)",
+		"Beggars' Guild Pure Robe/enter_mp(11)",
+		"Beggars' Guild Dirty Robe/enter_mp(12)",
 		"Ta kh«ng muèn gia nhËp C¸i Bang./end_say"
 	};
 	SelectSay(szSay);
@@ -120,18 +120,18 @@ function enter_mp(nRoute)
 	local nEnd = 0;
 	local szTable = {};
 	
-	szTable[2] = "ThiÕu L©m tôc gia";
+	szTable[2] = "Shaolin Lay Branch";
 	szTable[3] = "ThiÕu L©m thiÒn t¨ng";
 	szTable[4] = "ThiÕu L©m vâ t¨ng";
 
-	szTable[14] = "Vâ §ang ®¹o gia";
-	szTable[15] = "Vâ §ang tôc gia";
+	szTable[14] = "Wudang Daoist Branch";
+	szTable[15] = "Wudang Lay Branch";
 	
-	szTable[8] = "Nga My phËt gia";
-	szTable[9] = "Nga My tôc gia";
+	szTable[8] = "Emei Buddhist Branch";
+	szTable[9] = "Emei Lay Branch";
 	
-	szTable[11] = "C¸i Bang TÜnh y";
-	szTable[12] = "C¸i Bang ¤ Y";
+	szTable[11] = "Beggars' Guild Pure Robe";
+	szTable[12] = "Beggars' Guild Dirty Robe";
 	
 	szTable[6] = "§­êng M«n";
 	
@@ -166,7 +166,7 @@ function enter_mp(nRoute)
 		nBegin = 58
 		nEnd = 74;
 	else
-		print("Gia nhËp "..szTable[nRoute].."XuÊt hiÖn nRoute phi ph¸p : "..nRoute);
+		print("Join"..szTable[nRoute].."XuÊt hiÖn nRoute phi ph¸p : "..nRoute);
 		return
 	end;
 
@@ -177,7 +177,7 @@ function enter_mp(nRoute)
 			LevelUpSkill(i);
 		end;
 	end;
-	Msg2Player("TÊt c¶ kü n¨ng cña"..szTable[nRoute].." ®· häc hÕt");
+	Msg2Player("TÊt c¶ kü n¨ng cña"..szTable[nRoute].." have already been fully learned");
 end;
 
 function end_say()

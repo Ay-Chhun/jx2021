@@ -20,7 +20,7 @@ function OnUse(nItemIdx)
 			Msg2Player("B¹n nhËn ®­îc "..CONST_USE_CHANGSHENGPU_EACH_EXP.." ®iÓm kinh nghiÖm");
 		end
 		nRandItem = gf_GetRandItemByTable(tb_changshengpu_aword, 1000000000, 23);
-		gf_SetLogCaption("Truy t×m tr­êng sinh phæ");
+		gf_SetLogCaption("Search for the Longevity Manual");
 		local nRetCode, nItem = gf_AddItemEx(
 				{tb_changshengpu_aword[nRandItem][3], tb_changshengpu_aword[nRandItem][4], tb_changshengpu_aword[nRandItem][5], tb_changshengpu_aword[nRandItem][7]}, 
 				tb_changshengpu_aword[nRandItem][1]

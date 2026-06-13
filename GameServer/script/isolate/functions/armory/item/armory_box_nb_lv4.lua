@@ -41,7 +41,7 @@ function Confirm(nSel, nItemIndex)
 
 	local szTitle = format("<color=green>[%s]<color>: DÔng sœ nhÀn Æ≠Óc1 V®n S¯c c„ ngÚ hµnh vµ thuÈc t›nh chÿ Æﬁnh <color=yellow>[%s][+%d][%s]<color>.\n\n", tItem[1], g_tStringTable.tLevel[tItem[5]], tItem[6], g_tStringTable.tQuality[tItem[7]]);
 	local tMenu = {
-		format("%s/#Award(%d, %d)", "ßÂng ˝", nSel, nItemIndex),
+		format("%s/#Award(%d, %d)", "Agree", nSel, nItemIndex),
 		"ß” ta ngh‹ lπi	/nothing",
 	};
 	Say(szTitle, getn(tMenu), tMenu);
@@ -225,11 +225,11 @@ function MakeArmory_MagicAttribute(nSel, nStep, nAttrIdx, nPageIdx, nValue)
 		};
 
 		if getn(tItem[8][nAttrIdx]) > (nPageIdx + 1) * nLinePerPage then
-			tinsert(tMenu, 1, format("%s/#MakeArmory_MagicAttribute(%d, %d, %d, %d)", "Trang k’", nSel, nStep, nAttrIdx, nPageIdx + 1));
+			tinsert(tMenu, 1, format("%s/#MakeArmory_MagicAttribute(%d, %d, %d, %d)", "Next page", nSel, nStep, nAttrIdx, nPageIdx + 1));
 		end
 
 		if 0 < nPageIdx then
-			tinsert(tMenu, 1, format("%s/#MakeArmory_MagicAttribute(%d, %d, %d, %d)", "Trang tr≠Ìc", nSel, nStep, nAttrIdx, nPageIdx - 1));
+			tinsert(tMenu, 1, format("%s/#MakeArmory_MagicAttribute(%d, %d, %d, %d)", "Previous page", nSel, nStep, nAttrIdx, nPageIdx - 1));
 		end
 
 		for i = 1, nLinePerPage do
@@ -274,11 +274,11 @@ function MakeArmory_Suit(nSel, nStep, nPageIdx, nValue)
 		};
 
 		if getn(tItem[10]) > (nPageIdx + 1) * nLinePerPage then
-			tinsert(tMenu, 1, format("%s/#MakeArmory_Suit(%d, %d, %d)", "Trang k’", nSel, nStep, nPageIdx + 1));
+			tinsert(tMenu, 1, format("%s/#MakeArmory_Suit(%d, %d, %d)", "Next page", nSel, nStep, nPageIdx + 1));
 		end
 
 		if 0 < nPageIdx then
-			tinsert(tMenu, 1, format("%s/#MakeArmory_Suit(%d, %d, %d)", "Trang tr≠Ìc", nSel, nStep, nPageIdx - 1));
+			tinsert(tMenu, 1, format("%s/#MakeArmory_Suit(%d, %d, %d)", "Previous page", nSel, nStep, nPageIdx - 1));
 		end
 
 		for i = 1, nLinePerPage do
@@ -319,7 +319,7 @@ function MakeArmory_Confirm(nSel, nStep, nValue)
 	end
 
 	if not nValue then
-		local szMsg = format("<color=green>[%s]<color>: ß∑ ch‰n\n", tItem[1]);
+		local szMsg = format("<color=green>[%s]<color>: Chosen\n", tItem[1]);
 
 		if not tData.nArmory or not g_tStringTable.tArmoryEx[tData.nArmory] then
 			return 0;

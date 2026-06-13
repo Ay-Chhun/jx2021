@@ -14,7 +14,7 @@ function OnTimer()
 	elseif (timestate == 2) then --¿ªÕ½ÁË
 		ReportBattle(V);
 	elseif (timestate == 3) then  --Õ½¶·½áÊøÁË
-		Msg2MSAll(MISSIONID, "ChiÕn ®Êu kÕt thóc!");
+		Msg2MSAll(MISSIONID, "Battle over!");
 		StopMissionTimer(MISSIONID, TIME_NO1);
 		StopMissionTimer(MISSIONID, TIME_NO2);
 	end;
@@ -25,7 +25,7 @@ function ReportMemberState(V)
 	if (V == GO_TIME) then
 	
 		if (GetMSPlayerCount(MISSIONID, 1) <= 0 ) and (GetMSPlayerCount(MISSIONID, 2) <= 0 ) then 
-			str1 = GetMissionS(CITYID).." - "..MapTab[GetMissionV(MS_ROOMINDEX)][3]..GetMissionS(1).." cïng víi  "..GetMissionS(2).."Thêi gian ®¬n ®Êu l«i ®µi ®· ®Õn, hai phe thi ®Êu "..GetMissionS(1).." cïng víi  "..GetMissionS(2).." Kh«ng ®óng giê bÞ truÊt quyÒn thi ®Êu!";
+			str1 = GetMissionS(CITYID).." - "..MapTab[GetMissionV(MS_ROOMINDEX)][3]..GetMissionS(1).." cïng víi  "..GetMissionS(2).."Thêi gian ®¬n ®Êu l«i ®µi ®· ®Õn, hai phe thi ®Êu "..GetMissionS(1).." cïng víi  "..GetMissionS(2).." Not on time, disqualified from the duel!";
 			Msg2MSAll(MISSIONID,str1)
         	if GetMissionV(GLOBAL_NEWS_SHOW) == 1 then
         	    AddGlobalNews(str1);
@@ -89,7 +89,7 @@ function ReportMemberState(V)
 			return
 		end;
 			
-		str = GetMissionS(CITYID).." - "..MapTab[GetMissionV(MS_ROOMINDEX)][3].."Tû vâ tr­êng "..GetMissionS(1).."("..GetMissionS(3)..")".." cïng víi  "..GetMissionS(2).."("..GetMissionS(4)..")".."  ng­ng cho vµo ®Êu tr­êng ®¬n ®Êu l«i ®µi, thi ®Êu chÝnh thøc b¾t ®Çu!";
+		str = GetMissionS(CITYID).." - "..MapTab[GetMissionV(MS_ROOMINDEX)][3].."Sparring ground"..GetMissionS(1).."("..GetMissionS(3)..")".." cïng víi  "..GetMissionS(2).."("..GetMissionS(4)..")".."  ng­ng cho vµo ®Êu tr­êng ®¬n ®Êu l«i ®µi, thi ®Êu chÝnh thøc b¾t ®Çu!";
 		Msg2MSAll(MISSIONID, str);
     	if GetMissionV(GLOBAL_NEWS_SHOW) == 1 then
     	    AddGlobalNews(str);
@@ -121,7 +121,7 @@ function ReportMemberState(V)
 		
 		if (RestMin > 0) and (RestSec == 0) then
 --			str1 = GetMissionS(CITYID)..MapTab[GetMissionV(MS_ROOMINDEX)][3]..GetMissionS(1).." Óë "..GetMissionS(2).."µ¥ÌôÀÞÌ¨ÈüÈë³¡Ê£ÓàÊ±¼ä£º"..RestMin.."·ÖÖÓ£¬ÏÖÔÚÍâÎ§Íæ¼ÒµÄ¶Ä×¢ÊÇ"..GetMissionV(BW_MONEY1)..":"..GetMissionV(BW_MONEY2);
-			str1 = GetMissionS(CITYID).." - "..MapTab[GetMissionV(MS_ROOMINDEX)][3]..GetMissionS(1).."("..GetMissionS(3)..")".." cïng víi  "..GetMissionS(2).."("..GetMissionS(4)..")".."Thêi gian vµo ®Êu tr­êng ®¬n ®Êu l«i ®µi cßn:"..RestMin.." phót."
+			str1 = GetMissionS(CITYID).." - "..MapTab[GetMissionV(MS_ROOMINDEX)][3]..GetMissionS(1).."("..GetMissionS(3)..")".." cïng víi  "..GetMissionS(2).."("..GetMissionS(4)..")".."Thêi gian vµo ®Êu tr­êng ®¬n ®Êu l«i ®µi cßn:"..RestMin.." minutes."
 			Msg2MSAll(MISSIONID, str1);
         	if GetMissionV(GLOBAL_NEWS_SHOW) == 1 then
         	    AddGlobalNews(str1);
@@ -152,7 +152,7 @@ function ReportBattle(V)
 	    Msg2Player("ContinueTime "..ContinueTime)
 	if (GetMSPlayerCount(MISSIONID, 1) <= 0 ) and (GetMSPlayerCount(MISSIONID, 2) <= 0 ) then 
 	    if (ContinueTime == 0) then
-		    str1 = GetMissionS(CITYID).." - "..MapTab[GetMissionV(MS_ROOMINDEX)][3]..GetMissionS(1).." cïng víi  "..GetMissionS(2).."Hai phe tham gia ®¬n ®Êu cïng rêi trËn,"..GetMissionS(1).." cïng víi  "..GetMissionS(2).." §­îc xö hßa!";
+		    str1 = GetMissionS(CITYID).." - "..MapTab[GetMissionV(MS_ROOMINDEX)][3]..GetMissionS(1).." cïng víi  "..GetMissionS(2).."Both sides joined the duel and left the battle together,"..GetMissionS(1).." cïng víi  "..GetMissionS(2).." is ruled a draw!";
         	if GetMissionV(GLOBAL_NEWS_SHOW) == 1 then
         	    AddGlobalNews(str1);
         	end;
@@ -241,8 +241,8 @@ function ReportBattle(V)
 	if (RestMin == 0) then
 		Msg2MSAll(MISSIONID, "Giai ®o¹n chiÕn ®Êu: Hai phe hiÖn ®ang thi ®Êu. Thêi gian cßn l¹i lµ:"..RestSec.." gi©y.");
 	elseif (RestSec == 0) then
-		Msg2MSAll(MISSIONID, "Giai ®o¹n chiÕn ®Êu: Hai phe hiÖn ®ang thi ®Êu. Thêi gian cßn l¹i lµ:"..RestMin.." phót.");
+		Msg2MSAll(MISSIONID, "Giai ®o¹n chiÕn ®Êu: Hai phe hiÖn ®ang thi ®Êu. Thêi gian cßn l¹i lµ:"..RestMin.." minutes.");
 	else
-		Msg2MSAll(MISSIONID, "Giai ®o¹n chiÕn ®Êu: Hai phe hiÖn ®ang thi ®Êu. Thêi gian cßn l¹i lµ:"..RestMin.." Phót "..RestSec.." gi©y.");
+		Msg2MSAll(MISSIONID, "Giai ®o¹n chiÕn ®Êu: Hai phe hiÖn ®ang thi ®Êu. Thêi gian cßn l¹i lµ:"..RestMin.." minutes"..RestSec.." gi©y.");
 	end;
 end;

@@ -1,7 +1,7 @@
 
-g_tItem = {"Ti”u Ti”u Kim HÊ", {2,95,696,1}};
+g_tItem = {"Little Little Golden Tiger", {2,95,696,1}};
 
-g_tModels ={"Ti”u Ti”u Kim HÊ"};
+g_tModels ={"Little Little Golden Tiger"};
 
 Include("\\script\\item\\summon_pet_charm.lua")
 

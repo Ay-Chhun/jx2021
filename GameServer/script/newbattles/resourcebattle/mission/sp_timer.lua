@@ -52,7 +52,7 @@ function Process_Sp_Careran_Even(nCamp)
 			return 0;
 		end;
 		Add_Resource(nCamp,nCateranCount);	--nCamp·½Á¸²İÔö¼Ó
-		Msg2MSGroup(MISSION_ID,"§¸nh s¬n tÆc: ®o¹t ®­îc"..nCateranCount.." bao l­¬ng th¶o",nCamp);
+		Msg2MSGroup(MISSION_ID,"§¸nh s¬n tÆc: ®o¹t ®­îc"..nCateranCount.." sacks of provisions",nCamp);
 		Dec_Resource(nEnemyCamp,nCateranCount);	--nEnemyCamp·½Á¸²İ¼õÉÙ
 		Msg2MSGroup(MISSION_ID,"§¸nh s¬n tÆc:"..nCateranCount.." bao l­¬ng th¶o cña ta ®· bŞ s¬n tÆc c­íp ®i",nEnemyCamp);
 	elseif nCateranCount == 0 then	--15ÃëÄÚÈç¹ûÉ½ÔôÊıÁ¿Îª0

@@ -25,7 +25,7 @@ function main()
 	
 	local nWait = 300 - (GetTime() - GetUnitCurStates(npcIndex, 6))
 	if nWait > 0 then
-		Talk(1,"","Cßn "..nWait.." gi©y míi cã thÓ nhÆt tói!")
+		Talk(1,"","There are"..nWait.." gi©y míi cã thÓ nhÆt tói!")
 		return 0
 	end
 	

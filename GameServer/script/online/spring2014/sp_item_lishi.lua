@@ -34,16 +34,16 @@ function OnUse(nItem)
 		end
 		local nIsComplete = sp_GetIsComplete(i);
 		if nIsComplete == 1 then
-			strMsg = strMsg..format("\n<color=green><%d>: cho %s h­íng vÒ %s chóc TÕt <color>", i, tCityTable[2], tNpcTable[nSubIndex]);
+			strMsg = strMsg..format("\n<color=green><%d>: wishes %s a Happy New Year toward %s <color>", i, tCityTable[2], tNpcTable[nSubIndex]);
 		else
-			strMsg = strMsg..format("\n<color=white><%d>: cho %s h­íng vÒ %s chóc TÕt <color>", i, tCityTable[2], tNpcTable[nSubIndex]);
+			strMsg = strMsg..format("\n<color=white><%d>: wishes %s a Happy New Year toward %s <color>", i, tCityTable[2], tNpcTable[nSubIndex]);
 		end
 	end
 	local tSay = {};
 	tSay.msg = strMsg;
 	tSay.sel = {
-		{"NhËn bao l× x× h«m nay", "sp_GetDailyAward"},
-		{"KÕt thóc ®èi tho¹i", "nothing"},
+		{"Receive today's lucky money packet", "sp_GetDailyAward"},
+		{"End conversation", "nothing"},
 	};
 	temp_Talk(tSay);
 end
@@ -79,6 +79,6 @@ function sp_GetDailyAward()
 	SP_TASK_GROUP:SetTask(SP_TASK_GROUP.DayAcc, nDayAcc + 1);
 	gf_ModifyExp(nExp*7);
 	AwardGenuineQi(nZhenQi*7);
-	gf_AddItemEx2({2,1,30625,nDayAcc+7,4}, "Ph¸o N¨m Míi", "Event TÕt Kingsoft", "Bao L× X× N¨m Míi", 0, 1);
+	gf_AddItemEx2({2,1,30625,nDayAcc+7,4}, "New Year Firecracker", "Kingsoft New Year Event", "New Year Lucky Money Packet", 0, 1);
 end
 

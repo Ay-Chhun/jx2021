@@ -18,8 +18,8 @@ function OnDeath(nNpcIndex)
 			break;
 		end;
 	end;
-	Msg2SubWorld(tBossPos[nPosIndex][1].." giang hå ¸c nh©n "..sNpcName.."®· bÞ mäi ng­êi hîp søc ®¸nh b¹i!")
-	AddGlobalNews(tBossPos[nPosIndex][1].." giang hå ¸c nh©n "..sNpcName.."®· bÞ mäi ng­êi hîp søc ®¸nh b¹i!");
+	Msg2SubWorld(tBossPos[nPosIndex][1].." villain of the martial world"..sNpcName.."®· bÞ mäi ng­êi hîp søc ®¸nh b¹i!")
+	AddGlobalNews(tBossPos[nPosIndex][1].." villain of the martial world"..sNpcName.."®· bÞ mäi ng­êi hîp søc ®¸nh b¹i!");
 	if nBossID == 0 then
 		WriteLog("[Lçi Tam tiÕt liªn th«ng]: Sau khi Boss chÕt kh«ng t×m thÊy th«ng tin t­¬ng øng cña Boss");
 		nBossID = 9;	--ÈÝ´í´¦Àí
@@ -36,24 +36,24 @@ function OnDeath(nNpcIndex)
 end;
 
 tRandString = {
-			"¤i chao! §¸nh ta ®au qu¸!",
-			"Ng­¬i h·y nhí kü",
-			"LÇn sau ®¸nh tiÕp.",
+			"Ouch! That hurt so much!",
+			"You remember this well",
+			"Next time we fight again.",
 			"VLTK2 chóc b¹n n¨m míi vui vÎ!",
-			"Quèc Kh¸nh vui vÎ!",
-			"Trung Thu vui vÎ!",
-			"¤i chao! §¸nh ta ®au qu¸!",
-			"¤i chao! §¸nh ta ®au qu¸!",
-			"¤i chao! §¸nh ta ®au qu¸!",
-			"¤i chao! §¸nh ta ®au qu¸!",
-			"¤i chao! §¸nh ta ®au qu¸!",
-			"¤i chao! §¸nh ta ®au qu¸!",
-			"¤i chao! §¸nh ta ®au qu¸!",
-			"¤i chao! §¸nh ta ®au qu¸!",
-			"¤i chao! §¸nh ta ®au qu¸!",
-			"¤i chao! §¸nh ta ®au qu¸!",
-			"¤i chao! §¸nh ta ®au qu¸!",
-			"¤i chao! §¸nh ta ®au qu¸!",
+			"Happy National Day!",
+			"Happy Mid-Autumn Festival!",
+			"Ouch! That hurt so much!",
+			"Ouch! That hurt so much!",
+			"Ouch! That hurt so much!",
+			"Ouch! That hurt so much!",
+			"Ouch! That hurt so much!",
+			"Ouch! That hurt so much!",
+			"Ouch! That hurt so much!",
+			"Ouch! That hurt so much!",
+			"Ouch! That hurt so much!",
+			"Ouch! That hurt so much!",
+			"Ouch! That hurt so much!",
+			"Ouch! That hurt so much!",
 			}
 			
 function get_pos_index(nMapID)

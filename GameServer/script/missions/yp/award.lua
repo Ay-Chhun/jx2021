@@ -107,7 +107,7 @@ function yp_aw_giveAward_6()
 	--Include("\\script\\global\\events.lua")
 	--EventOnTrigger(7, {name="收集内功心经", category=nStep+1});
 	FireEvent("event_mission_task_award", "pvp", "toujingshu", nStep+1)
-	TriggerMisEvent("event_yp_taskfinish", "Tr閙 Kinh S竎h", nStep+1);
+	TriggerMisEvent("event_yp_taskfinish", "Steal Scripture Book", nStep+1);
 	AddRuntimeStat(29, 5, 0, 1);
 end
 
@@ -217,7 +217,7 @@ function yp_aw_giveAward_13()
 	
 	--Observer:onEvent(SYSEVENT_YP_DIG_TASK, 0);
 	FireEvent("event_mission_task_award", "pvp", "baozang", 0)
-	TriggerMisEvent("event_yp_taskfinish", "Уo Kho B竨");
+	TriggerMisEvent("event_yp_taskfinish", "Dig Treasure Vault");
 	return 1
 end
 
@@ -279,7 +279,7 @@ function yp_aw_giveAward_15(nType)
 	AddRuntimeStat(29, 2, 0, 1);
 	--Observer:onEvent(SYSEVENT_YP_DUOBIAO, nType);
 	FireEvent("event_mission_task_award", "pvp", "duobiao", nType)
-	TriggerMisEvent("event_yp_taskfinish", "Cp Ti猽", nType);
+	TriggerMisEvent("event_yp_taskfinish", "Rob Escort Convoy", nType);
 end
 
 --投保返回(ok)

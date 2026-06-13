@@ -18,7 +18,7 @@ function OnUse(nItemIdx)
     local tSay = {}
     local szHeader = "Chóc mõng c¸c h¹ ®· ®¹t ®Õn ®Ønh cao cña Hçn Nguyªn C«ng thµnh thø 4, h·y chän phÇn th­ëng hç trî :"
    	tinsert(tSay, "N©ng cÊp thó c­ìi Kú L©n (cÇn 1 Phiªu Vò + 100 vµng)/do_bonus")
-   	tinsert(tSay, "Tho¸t/do_nothing")
+   	tinsert(tSay, "Exit/do_nothing")
    	
    	Say(szHeader, getn(tSay), tSay)
 end
@@ -29,7 +29,7 @@ function do_bonus()
 		return
 	end
 	if GetCash() < 1000000 then
-		Talk(1,"","Ch­a ®ñ ng©n l­îng ®Ó ®æi!")
+		Talk(1,"","Not enough silver tael to exchange!")
 		return
 	end
 	if gf_JudgeRoomWeight(2, 300) == 0 then
@@ -58,8 +58,8 @@ function do_bonus()
 			SetItemStatus(nItemIndex, 0, 1)
 			SetItemExpireTime(nItemIndex, nExpireTime)
 		end
-		Msg2Player("NhËn ®­îc thó c­ìi Kú L©n.")
-		gf_WriteLogEx("Ho tro Chuyen Sinh 2", "®æi Kú L©n")
+		Msg2Player("Received the Qilin mount.")
+		gf_WriteLogEx("Ho tro Chuyen Sinh 2", "exchange Qilin")
 	end
 end
 

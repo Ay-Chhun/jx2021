@@ -73,7 +73,7 @@ function business_entrance()
 		local tbSay = {}
 		tinsert(tbSay, "NhËn nhiÖm vô lµm giµu mçi ngµy (tiªu hao 99 xu vËt phÈm)./NhiemVuLamGiau_Nhan")
 		tinsert(tbSay, "Xem tiÕn ®é thùc hiÖn nhiÖm vô./NhiemVuLamGiau_Xem")
-		tinsert(tbSay, "NhËn tµi léc./NhiemVuLamGiau_Thuong")
+		tinsert(tbSay, "Receive the wealth./NhiemVuLamGiau_Thuong")
 		tinsert(tbSay, "Ta ch­a muèn giµu cã./gf_DoNothing")
 		Say(szSay, getn(tbSay), tbSay)
 	end
@@ -81,7 +81,7 @@ end;
 
 -- ÍË³ö¶Ô»°µÄÄ¬ÈÏ¶Ô»°
 function exit_dialog()
-	Say("Ng­¬i v× n­íc x¶ th©n, v× d©n cøu n¹n thËt lµ ®¹i ©n ®¹i ®øc!", 0)
+	Say("You sacrifice yourself for the country and save the people from disaster, truly a great kindness and great virtue!", 0)
 end;
 
 -- ½éÉÜĞÂµÄÉÌ»áÈÎÎñµÄ¶Ô»°
@@ -527,8 +527,8 @@ function AddMoneyForIPBonus()
 	local nBonusMoney = tIpBonusReq[nCheck][4]
 	Earn(nBonusMoney)
 	nBonusMoney = nBonusMoney / 100
-	Msg2Player("B¹n nhËn ®­îc "..nBonusMoney.." b¹c")
-	gf_WriteCustomLog(VET_STR_IPBONUS_LOG_TITLE, "nhËn ®­îc "..nBonusMoney.." b¹c")
+	Msg2Player("B¹n nhËn ®­îc "..nBonusMoney.." silver")
+	gf_WriteCustomLog(VET_STR_IPBONUS_LOG_TITLE, "nhËn ®­îc "..nBonusMoney.." silver")
 end
 
 	-- Kh«ng cho nhËn nv Th­¬ng héi

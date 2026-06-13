@@ -9,11 +9,11 @@ g_nHeadInfo = "<color=green>H­íng dÉn ho¹t ®éng 20 n¨m<color>: "
 function OnUse()
 	local strtab = {
 				"Thêi gian ho¹t ®éng/know_time",
-				"§iÒu kiÖn tham gia /know_condition",
+				"Participation Conditions /know_condition",
 				"H­íng dÉn quy t¾c ho¹t ®éng/know_rule",
 				"ThuyÕt minh phÇn th­ëng/know_award",
 --				"ĞÂÎïÆ·ËµÃ÷/know_new",
-				"H­íng dÉn ®ãng/nothing"
+				"Close Guide/nothing"
 				};
 	Say(g_nHeadInfo.."§©y lµ n¬i h­íng dÉn ho¹t ®éng Kû niÖm 20 n¨m thµnh lËp Kingsoft, ng­¬i muèn t×m hiÓu phÇn nµo?",getn(strtab),strtab);
 end
@@ -29,9 +29,9 @@ end
 function know_rule()
 	Say(g_nHeadInfo.."Ho¹t ®éng cã hai phÇn, thi ®Êu vµ thu thËp vËt phÈm, ng­¬i muèn xem h­íng dÉn phÇn nµo?",
 			3,
-			"Thi ®Êu/know_rule_1",
+			"Contest/know_rule_1",
 			"Thu thËp vËt phÈm/know_rule_2",
-			"Xem h­íng dÉn kh¸c/OnUse");
+			"View Other Guides/OnUse");
 end
 
 function know_rule_1()

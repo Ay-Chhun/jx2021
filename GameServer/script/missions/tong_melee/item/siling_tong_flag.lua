@@ -7,10 +7,10 @@ function OnUse(nItem)
 	local	tMapName = {
 		[100] = "TuyÒn Ch©u",
 		[150] = "D­¬ng Ch©u",
-		[200] = "BiÖn Kinh",
+		[200] = "Bianjing",
 		[300] = "Thµnh §«",
 		[350] = "T­¬ng D­¬ng",
-		[400] = "§¹i Lý",
+		[400] = "Da Li",
 		[500] = "Phông T­êng",
 	}
 	local nMapId, nX, nY = GetWorldPos();
@@ -30,7 +30,7 @@ function OnUse(nItem)
 	if npcIndex > 0 then
 		SetNpcScript(npcIndex, "\\script\\missions\\tong_melee\\item\\siling_tong_flag.lua");
 		SetNpcLifeTime(npcIndex, 2*60*60);
-		local msg = format("%s ®· ®­îc %s thµnh lËp %s, c¸c ®¹i hiÖp cã thÓ ®Õn nhËn th­ëng!",GetName(), tMapName[nMapId], "ChiÕn Kú Tø Linh Bang Héi");
+		local msg = format("%s ®· ®­îc %s thµnh lËp %s, c¸c ®¹i hiÖp cã thÓ ®Õn nhËn th­ëng!",GetName(), tMapName[nMapId], "Guild Four Spirit War Banner");
 		Msg2Global(msg);
 		AddLocalCountNews(msg, 2);
 		Msg2Tong(msg);
@@ -40,7 +40,7 @@ end
 function main()
 	local tSay = {};
 	local sTongName = GetNpcName(GetTargetNpc());
-	local msg = "<color=green> ChiÕn Kú Tø Linh Bang Héi :<color>"..format("Bang héi <color=yellow>%s<color> trong lóc bang héi lo¹n chiÕn nhËn ®­îc thµnh tÝch v­ît tréi, c¸c thµnh viªn bang héi ®Òu cã thÓ ®èi tho¹i víi ta ®Ó nhËn phÇn th­ëng v­ît møc!", sTongName);
+	local msg = "<color=green> Guild Four Spirit War Banner :<color>"..format("Bang héi <color=yellow>%s<color> trong lóc bang héi lo¹n chiÕn nhËn ®­îc thµnh tÝch v­ît tréi, c¸c thµnh viªn bang héi ®Òu cã thÓ ®èi tho¹i víi ta ®Ó nhËn phÇn th­ëng v­ît møc!", sTongName);
 	if GetTongName() ~= sTongName then
 		tinsert(tSay, "Ng­¬i kh«ng thuéc thµnh viªn bang héi nµy/nothing");
 		Say(msg, getn(tSay), tSay);
@@ -58,7 +58,7 @@ function main()
 	end
 	if GetTongName() == sTongName then
 		tinsert(tSay, "NhËn th­ëng ngay/get_award_now");
-		tinsert(tSay, "§Ó ta suy nghÜ/nothing");
+		tinsert(tSay, "Let me think about it/nothing");
 		Say(msg, getn(tSay), tSay);
 		return 0;
 	end
@@ -77,7 +77,7 @@ function get_award_now()
 	AwardGenuineQi(500);
 	gf_EventGiveCustomAward(3, 150, 1);
 	gf_EventGiveCustomAward(4, 200, 1);
-	gf_AddItemEx2({2, 1, 30588, 20}, "M¶nh LÖnh Bµi Bang Héi", "Lo¹n chiÕn bang héi", "ChiÕn Kú Tø Linh Bang Héi", 0, 1);
+	gf_AddItemEx2({2, 1, 30588, 20}, "M¶nh LÖnh Bµi Bang Héi", "Lo¹n chiÕn bang héi", "Guild Four Spirit War Banner", 0, 1);
 end
 
 function nothing()

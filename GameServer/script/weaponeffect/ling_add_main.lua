@@ -19,16 +19,16 @@
 	IB_cost_num = 1419
 	Tb_aptitude_num = {{7},{250},{},{15000},{3},{15000},{0,79},{80,100},{},{10},{},{2000,200000},{101,150},}
 	Tb_aptitude_info = {
-		{"§é c­êng hãa vò khÝ ®¹t "..Tb_aptitude_num[1][1],																"return weapon_level_chk()",		"ThiÕt Cèt, hµo quang xanh nh¹t (Linh ph¸ch cÊp 1)",	1,1,"§é c­êng hãa vò khÝ ®¹t <color=yellow>"..Tb_aptitude_num[1][1].."<color>","ThiÕt Cèt",30},
-		{"§¹i héi tû vâ H¹ng 2-10 l­u ph¸i",																													"return bw_seq_chk(2)",				"B¸ch chiÕn, s­¬ng mï ®á (Linh ph¸ch cÊp 2)",6,2,"§¹i héi tû vâ H¹ng <color=yellow>2-10<color>","B¸ch ChiÕn",7},
-		{"å! Vò khÝ Hoµng Kim lÊp l¸nh!",																															"return golden_weapon_chk()",	"Ch­íc NhËt, s­¬ng mï vµng (Linh ph¸ch cÊp 2)",	2,2," ®· trang bÞ <color=yellow>trang bÞ Hoµng Kim<color>","Ch­íc NhËt",30},
-		{"§é cèng hiÕn ®¹t "..Tb_aptitude_num[4][1],													"return tech_offer_num_chk()",	"TuÊn DËt, s­¬ng mï lam (Linh ph¸ch cÊp 2)",	2,2,"§iÓm cèng hiÕn s­ m«n ®¹t ®Õn <color=yellow>"..Tb_aptitude_num[4][1].."<color>","TuÊn DËt",30},
-		{"§¼ng cÊp s­ ®øc ta ®· ®¹t (v­ît) cÊp "..Tb_aptitude_num[5][1]..", ®Ó ta d¹y!",								"return teah_prentice_chk()",		"§µo Lý, s­¬ng mï lôc (Linh ph¸ch cÊp 2)",	2,2,"§¼ng cÊp s­ ®øc ®¹t cÊp <color=yellow>"..Tb_aptitude_num[5][1].."<color>","§µo Lý",30},
-		{"Ta lµ danh nh©n, danh väng ®¹t ®Õn (v­ît) "..Tb_aptitude_num[6][1],																	"return repute_num_chk()",			"Danh Tóc, s­¬ng mï n©u (Linh ph¸ch cÊp 2)",	2,2,"Danh väng ®¹t ®Õn <color=yellow>"..Tb_aptitude_num[6][1].."<color> ®iÓm","Danh Tóc",30},
-		{"Ta bËn lµ bé b¸t qu¸i Linh KhÝ §o¹n thÊp ("..Tb_aptitude_num[7][1].."-"..Tb_aptitude_num[7][2]..")",			"return equipment_lin_chk(7) ",	"L¹c Hµ, s­¬ng mï tÝm vµ hµo quang lam (Linh ph¸ch cÊp 2)",	2,1,"§· trang bÞ bé b¸t qu¸i Linh KhÝ §o¹n thÊp","L¹c Hµ",30},
-		{"Xem bé b¸t qu¸i Linh KhÝ §o¹n trung ("..Tb_aptitude_num[8][1].."-"..Tb_aptitude_num[8][2]..")! Dïng rÊt tèt!","return equipment_lin_chk(8) ",	"L¨ng Tiªu, s­¬ng mï tÝm vµ tia s¸ng lôc (Linh ph¸ch cÊp 2)",	2,2,"§· trang bÞ bé b¸t qu¸i Linh KhÝ §o¹n trung (80-100)","L¨ng Tiªu",30},
-		{"§¹i T­íng Qu©n ®­¬ng triÒu lµ t¹i h¹!",																															"return general_chk()",					"§o¹n Giao, ¸nh s¸ng ph¸t t¸n ®á (Linh ph¸ch cÊp 3)",	3,6,"Qu©n hµm chiÕn tr­êng lµ: <color=yellow>T­íng Qu©n<color> (gåm T­íng Qu©n vÜnh viÔn)","§o¹n Giao",30},
-		{"Ta kinh nghiÖm ®Çy m×nh, b¶ng xÕp h¹ng thÕ giíi h¹ng "..Tb_aptitude_num[10][1].."!!",															"return player_rank_chk() ",			"C¸i ThÕ, ¸nh s¸ng ph¸t t¸n lam (Linh ph¸ch cÊp 3)",	3,4,"B¶ng xÕp h¹ng thÕ giíi h¹ng <color=yellow>"..Tb_aptitude_num[10][1].."<color>","C¸i ThÕ",30},
+		{"§é c­êng hãa vò khÝ ®¹t "..Tb_aptitude_num[1][1],																"return weapon_level_chk()",		"ThiÕt Cèt, hµo quang xanh nh¹t (Linh ph¸ch cÊp 1)",	1,1,"§é c­êng hãa vò khÝ ®¹t <color=yellow>"..Tb_aptitude_num[1][1].."<color>","Iron Bone",30},
+		{"§¹i héi tû vâ H¹ng 2-10 l­u ph¸i",																													"return bw_seq_chk(2)",				"B¸ch chiÕn, s­¬ng mï ®á (Linh ph¸ch cÊp 2)",6,2,"§¹i héi tû vâ H¹ng <color=yellow>2-10<color>","Bach Chien",7},
+		{"å! Vò khÝ Hoµng Kim lÊp l¸nh!",																															"return golden_weapon_chk()",	"Ch­íc NhËt, s­¬ng mï vµng (Linh ph¸ch cÊp 2)",	2,2," ®· trang bÞ <color=yellow>trang bÞ Hoµng Kim<color>","Chuoc Nhat",30},
+		{"Contribution reached"..Tb_aptitude_num[4][1],													"return tech_offer_num_chk()",	"TuÊn DËt, s­¬ng mï lam (Linh ph¸ch cÊp 2)",	2,2,"Sect master contribution points reached <color=yellow>"..Tb_aptitude_num[4][1].."<color>","Tuan Dat",30},
+		{"§¼ng cÊp s­ ®øc ta ®· ®¹t (v­ît) cÊp "..Tb_aptitude_num[5][1]..", let me teach you!",								"return teah_prentice_chk()",		"§µo Lý, s­¬ng mï lôc (Linh ph¸ch cÊp 2)",	2,2,"§¼ng cÊp s­ ®øc ®¹t cÊp <color=yellow>"..Tb_aptitude_num[5][1].."<color>","Dao Ly",30},
+		{"I am a renowned figure, my reputation has reached (surpassed)"..Tb_aptitude_num[6][1],																	"return repute_num_chk()",			"Danh Tóc, s­¬ng mï n©u (Linh ph¸ch cÊp 2)",	2,2,"Reputation reached <color=yellow>"..Tb_aptitude_num[6][1].."<color> ®iÓm","Danh Tuc",30},
+		{"Ta bËn lµ bé b¸t qu¸i Linh KhÝ §o¹n thÊp ("..Tb_aptitude_num[7][1].."-"..Tb_aptitude_num[7][2]..")",			"return equipment_lin_chk(7) ",	"L¹c Hµ, s­¬ng mï tÝm vµ hµo quang lam (Linh ph¸ch cÊp 2)",	2,1,"§· trang bÞ bé b¸t qu¸i Linh KhÝ §o¹n thÊp","Lac Ha",30},
+		{"Xem bé b¸t qu¸i Linh KhÝ §o¹n trung ("..Tb_aptitude_num[8][1].."-"..Tb_aptitude_num[8][2]..")! Very useful!","return equipment_lin_chk(8) ",	"L¨ng Tiªu, s­¬ng mï tÝm vµ tia s¸ng lôc (Linh ph¸ch cÊp 2)",	2,2,"§· trang bÞ bé b¸t qu¸i Linh KhÝ §o¹n trung (80-100)","Ling Xiao",30},
+		{"§¹i T­íng Qu©n ®­¬ng triÒu lµ t¹i h¹!",																															"return general_chk()",					"§o¹n Giao, ¸nh s¸ng ph¸t t¸n ®á (Linh ph¸ch cÊp 3)",	3,6,"Qu©n hµm chiÕn tr­êng lµ: <color=yellow>T­íng Qu©n<color> (gåm T­íng Qu©n vÜnh viÔn)","Doan Giao",30},
+		{"Ta kinh nghiÖm ®Çy m×nh, b¶ng xÕp h¹ng thÕ giíi h¹ng "..Tb_aptitude_num[10][1].."!!",															"return player_rank_chk() ",			"C¸i ThÕ, ¸nh s¸ng ph¸t t¸n lam (Linh ph¸ch cÊp 3)",	3,4,"World standings rank <color=yellow>"..Tb_aptitude_num[10][1].."<color>","C¸i ThÕ",30},
 		{"To gan! ThÊy bæn Nguyªn So¸i cßn kh«ng quú xuèng?",																												"return marshal_chk()",					"Ph¸ Qu©n, ¸nh s¸ng tô héi tÝm (Linh ph¸ch cÊp 4)",	4,8,"Qu©n hµm chiÕn tr­êng lµ: <color=yellow>Nguyªn So¸i<color> (gåm Nguyªn So¸i vÜnh viÔn)","Ph¸ Qu©n",30},
 		{"§¹i héi tû vâ h¹ng 1 l­u ph¸i",																													"return bw_seq_chk(1)",				"Tinh Di, ¸ng s¸ng ph¸t t¸n tÝm (Linh ph¸ch cÊp 3)",7,3,"§¹i héi tû vâ h¹ng <color=yellow>1<color> l­u ph¸i","Tinh Di",7},
 		{"§¹o tr­ëng cã thÓ ch¹m nhÑ vµo bé b¸t qu¸i Linh KhÝ §o¹n cao ("..Tb_aptitude_num[13][1].." trë lªn) cña ta",							"return equipment_lin_chk(13)",	"PhÇn V©n, s­¬ng mï tÝm vµ tia s¸ng vµng (Linh ph¸ch cÊp 2)",2,3,"§· trang bÞ bé b¸t qu¸i Linh KhÝ §o¹n (100) trë lªn","PhÇn V©n",30},
@@ -41,7 +41,7 @@
 		Tb_aptitude_info[getn(Tb_aptitude_info)][1] = "§iÓm tÝch lòy tiªu dïng cña ta ®· gãp rÊt nhiÒu!"
 		Tb_aptitude_info[getn(Tb_aptitude_info)][6]  = "<color=yellow>20 v¹n<color> ®iÓm tÝch lòy tiªu dïng"
 	end
-	Tb_ib_money = {"1 b¹c lÎ","1 Xu"}
+	Tb_ib_money = {"1 odd silver","1 Xu"}
 	--º³ÌìÐÅÏ¢
 	Break_sky_need_cent = 26
 	--²ÄÁÏÐÅÏ¢
@@ -88,7 +88,7 @@
 		{0,5,6009,"L­u Yªn c«n"},
 		{0,2,6010,"HuyÒn Yªn kiÕm"},
 		{0,9,6011,"Vò Yªn bót"},
-		{0,6,6012,"Hµ Tiªm Th­¬ng"},
+		{0,6,6012,"He Tian Spear"},
 		{0,4,6013,"Hµnh Yªn Cung"},
 		{0,7,6014,"Träc Yªn nhÉn"},
 		{0,11,6015,"Yªu Yªn tr¶o"},
@@ -109,18 +109,18 @@
 		{0,11,8815,"Hiªn Viªn U Minh Tr¶o"},
 		{0,3,2351,"Tö Quang B¸ V­¬ng §ao"},
 		{0,5,2352,"Tö Quang B¸ V­¬ng C«n"},
-		{0,8,2353,"Tö Quang Bå §Ò Tr­îng"},
+		{0,8,2353,"Purple Light Bodhi Staff"},
 		{0,0,2354,"Tö Quang Phôc Ma Thñ"},
 		{0,1,2355,"Tö Quang L­u V©n Ch©m"},
 		{0,2,2356,"Tö Quang HuyÒn Minh KiÕm"},
-		{0,10,2357,"Tö Quang Tiªu T­¬ng CÇm"},
+		{0,10,2357,"Purple Light Xiaoxiang Zither"},
 		{0,0,2358,"Tö Quang Gi¸ng Long Thñ"},
 		{0,5,2359,"Tö Quang Hµnh V©n C«n"},
 		{0,2,2360,"Tö Quang L­ìng Nghi KiÕm"},
-		{0,9,2361,"Tö Quang §o¹n V¨n Bót"},
-		{0,6,2362,"Tö Quang TrÊn Qu©n Th­¬ng"},
+		{0,9,2361,"Purple Light Decree-Severing Brush"},
+		{0,6,2362,"Purple Light Army-Guarding Spear"},
 		{0,4,2363,"Tö Quang Xuyªn D­¬ng Cung"},
-		{0,7,2364,"Tö Quan O¸n Linh NhÉn"},
+		{0,7,2364,"Purple Light Grudge Spirit Ring"},
 		{0,11,2365,"Tö Quang V¹n §éc Tr¶o"},
     {0,3,241,"§¹t Ma Thñ Täa §Õ ThÝch §ao"},
     {0,3,242,"§¹t Ma Thñ Täa §Õ ThÝch §ao"},
@@ -150,18 +150,18 @@
     {0,2,1442,"Th­îng Thanh ThÇn Kh«ng KiÕm"},
     {0,2,1443,"Th­îng Thanh ThÇn Kh«ng KiÕm"},
     {0,2,1444,"Th­îng Thanh ThÇn Kh«ng KiÕm"},
-    {0,9,1541,"Tö Tiªu Ngù Kh«ng Bót"},
-    {0,9,1542,"Tö Tiªu Ngù Kh«ng Bót"},
-    {0,9,1543,"Tö Tiªu Ngù Kh«ng Bót"},
-    {0,9,1544,"Tö Tiªu Ngù Kh«ng Bót"},
-    {0,6,1741,"TrÊn Qu©n V« Song Th­¬ng"},
-    {0,6,1742,"TrÊn Qu©n V« Song Th­¬ng"},
-    {0,6,1743,"TrÊn Qu©n V« Song Th­¬ng"},
-    {0,6,1744,"TrÊn Qu©n V« Song Th­¬ng"},
-    {0,4,1841,"Chinh Lç B¸ Gi¶ Cung"},
-    {0,4,1842,"Chinh Lç B¸ Gi¶ Cung"},
-    {0,4,1843,"Chinh Lç B¸ Gi¶ Cung"},
-    {0,4,1844,"Chinh Lç B¸ Gi¶ Cung"},
+    {0,9,1541,"Purple Cloud Void-Riding Brush"},
+    {0,9,1542,"Purple Cloud Void-Riding Brush"},
+    {0,9,1543,"Purple Cloud Void-Riding Brush"},
+    {0,9,1544,"Purple Cloud Void-Riding Brush"},
+    {0,6,1741,"Garrison Peerless Spear"},
+    {0,6,1742,"Garrison Peerless Spear"},
+    {0,6,1743,"Garrison Peerless Spear"},
+    {0,6,1744,"Garrison Peerless Spear"},
+    {0,4,1841,"Conquest Overlord Bow"},
+    {0,4,1842,"Conquest Overlord Bow"},
+    {0,4,1843,"Conquest Overlord Bow"},
+    {0,4,1844,"Conquest Overlord Bow"},
     {0,7,2041,"Diªm La T«n Gi¶ Ma Hån NhÉn"},
     {0,7,2042,"Diªm La T«n Gi¶ Ma Hån NhÉn"},
     {0,7,2043,"Diªm La T«n Gi¶ Ma Hån NhÉn"},
@@ -174,17 +174,17 @@
 		{0,5,8852,"Tö Quang To¸i Vò C«n"},
 		{0,8,8853,"Tö Quang Cöu Nh­ Tr­îng"},
 		{0,0,8854,"Tö Quang H¹o Nhiªn Thñ"},
-		{0,1,8855,"Tö Quang V« H×nh Ch©m"},
+		{0,1,8855,"Purple Light Invisible Needle"},
 		{0,2,8856,"Tö Quang Tö Tinh KiÕm"},
 		{0,10,8857,"Tö Quang Phông Hoµng CÇm"},	
 		{0,0,8858,"Tö Quang Ngò Nh¹c Thñ"},
 		{0,5,8859,"Tö Quang Ph¸ Thiªn C«n"},
 		{0,2,8860,"Tö Quang Hång Qu©n KiÕm"},
-		{0,9,8861,"Tö Quang Sinh Tö Bót"},
-		{0,6,8862,"Tö Quang Ph¸ Qu©n Th­¬ng"},
+		{0,9,8861,"Purple Light Life-Death Brush"},
+		{0,6,8862,"Purple Light Army-Breaking Spear"},
 		{0,4,8863,"Tö Quang Khai Thiªn Cung"},
 		{0,7,8864,"Tö Quang ¢m D­¬ng NhÉn"},
-		{0,11,8865,"Tö Quang U Minh Tr¶o"}	
+		{0,11,8865,"Purple Light Underworld Claw"}	
 	}
 	
 	Npc_name = "<color=green>Long Quang Ch©n Nh©n<color>: "
@@ -204,7 +204,7 @@
 	Tb_route_point_info[20]={4,3}
 	Tb_route_point_info[21]={5,6}
 	Tb_route_point_info[6]={4,3}
-	Tb_point_name = {"","G©n cèt","Søc m¹nh","Th©n ph¸p","Linh ho¹t","Néi c«ng ",}
+	Tb_point_name = {"","Sinews and Bones","Strength","Agility","Linh ho¹t","Néi c«ng ",}
 --ÁéÄÜÏûºÄ±í
 	Tb_blity_cost_name =  {
 			{	
@@ -214,10 +214,10 @@
 				{"N÷ Oa Tinh Th¹ch",2,1,504},
 			},
 			{	
-				{"Bµn Long bÝch",2,1,1000},
+				{"Coiling Dragon Jade",2,1,1000},
 				{"ThÕ Th©n phï",2,0,556},
 				{"V« NgÊn Thñy",2,1,503},
-				{"Hßa ThÞ BÝch",2,1,1001},
+				{"Heshi Jade",2,1,1001},
 			},
 	}
 	Tb_ability_cost_num = {

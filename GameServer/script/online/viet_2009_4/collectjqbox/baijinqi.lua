@@ -14,7 +14,7 @@ function OnUse()
 	end
 	
 	-----判断背包和负重------------------------
-	if gf_Judge_Room_Weight(5, 50, "Xin l鏸, ") == 0 then
+	if gf_Judge_Room_Weight(5, 50, "Sorry,") == 0 then
 		return 0
 	end
 	

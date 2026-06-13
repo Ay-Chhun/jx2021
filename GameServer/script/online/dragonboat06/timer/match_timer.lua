@@ -18,9 +18,9 @@ function OnTimer()
 			StartMissionTimer(MISSION_ID,MATCH_TIMER_ID,MATCH_TIME);
 			SetMissionV(MV_TIMELEFT,timeleft-1);
 			if mod(timeleft,2) == 0 then
-				Msg2MSAll(MISSION_ID,"Thêi gian thi ®Êu cßn"..(timeleft/2).." phót ");
+				Msg2MSAll(MISSION_ID,"Thêi gian thi ®Êu cßn"..(timeleft/2).." minutes");
 			else
-				Msg2MSAll(MISSION_ID,"Thêi gian thi ®Êu cßn"..floor(timeleft/2).." phót 30 gi©y.");
+				Msg2MSAll(MISSION_ID,"Thêi gian thi ®Êu cßn"..floor(timeleft/2).." minutes 30 seconds.");
 			end;
 		end;
 		RankTab = Get_Rank();
@@ -31,7 +31,7 @@ function OnTimer()
 		for i=1,getn(RankTab) do
 			PlayerIndex = RankTab[i];
 			if PlayerIndex > 0 then
-				Msg2MSAll(MISSION_ID,"thø"..NumTab[i]..":"..GetName());
+				Msg2MSAll(MISSION_ID,"the"..NumTab[i]..":"..GetName());
 			end;
 		end;
 	else

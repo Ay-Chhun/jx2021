@@ -5,10 +5,10 @@ tQKF = {2, 0, 555}
 tItem =
 {
 	{0, 102, 24, "§«ng Ph­¬ng Long Ch©u", 1},
-	{0, 102, 22, "C¸t T­êng", 1},
-	{0, 102, 23, "Nh­ ý", 1},
+	{0, 102, 22, "Auspicious", 1},
+	{0, 102, 23, "As You Wish", 1},
 	{0, 102, 42, "H»ng Nga NguyÖt Vò §¸i", 1},
-	{0, 102, 43, "HËu NghÖ L¹c NhËt Hoµn", 1},
+	{0, 102, 43, "Houyi Setting Sun Pill", 1},
 	{0, 3, 231, "Trang bÞ S­ M«n Hoµng Kim bé 4", 1},
 	{0, 3, 232, "Trang bÞ S­ M«n Hoµng Kim bé 4"},
 	{0, 5, 231, "Trang bÞ S­ M«n Hoµng Kim bé 4"},
@@ -325,12 +325,12 @@ tItem =
 	{0, 102, 30132, "Trang bÞ S­ M«n Hoµng Kim bé 4"},
 	{0, 102, 30136, "Trang bÞ S­ M«n Hoµng Kim bé 4"},
 	{0,102,8844, "Huy Hoµng QuËt Khëi"},
-	{0,102,8845, "Vinh Dù QuËt Khëi"},
+	{0,102,8845, "Glory Rise"},
 	{0,102,8846, "Huy Hoµng"},
-	{0,102,8847, "Vinh Dù"},
+	{0,102,8847, "Glory"},
 	{0,101,8055, "Thiªn Chi Viªm §Õ trang"},
-	{2, 1, 30814, "Phôc Sinh §¬n"},
-	{2, 1, 31141, "§å Phæ ChÕ T¹o"},
+	{2, 1, 30814, "Resurrection Pill"},
+	{2, 1, 31141, "Crafting Blueprint"},
 }
 
 function OnUse()
@@ -355,7 +355,7 @@ function OnBindCheck(nItemIndex, bIsBind)
 	end
 	local nIndex = CheckInItemList(nGeren, nDetail, nParticular)
 	if nIndex == 0 then
-		local szMsg = "ChØ cã <color=yellow>"
+		local szMsg = "Only <color=yellow>"
 		for i = 1, getn(tItem) do
 			if tItem[i][5] and tItem[i][5] == 1 then
 				szMsg = szMsg..tItem[i][4].." "

@@ -10,7 +10,7 @@ tabLVEXP = new(KTabFile, "\\settings\\uplevel.txt");
 function main()
 	local nDate = tonumber(date("%y%m%d"));
 	if nDate < 080911 then
-		Talk(1,"","<color=green>Niªn sø<color>: Ho¹t ®éng sÏ b¾t ®Çu vµo 11-9, vŞ  "..tSexName[GetSex()].."®Õn lóc ®ã nhí ®Õn ®©y.");
+		Talk(1,"","<color=green>Niªn sø<color>: Ho¹t ®éng sÏ b¾t ®Çu vµo 11-9, vŞ  "..tSexName[GetSex()].."remember to come here at that time.");
 		return 0;
 	end;
 	if GetLevel() < 30 then
@@ -19,14 +19,14 @@ function main()
 	end;
 	local selTab = {
 				"NhËn nguyªn liÖu lµm b¸nh/want_mooncake_resource",
-				"NhËn ®­îc B¸nh Trung Thu Tinh Mü/want_mooncake",
+				"Receive the Fine Delicacy Mooncake/want_mooncake",
 				"B¸nh Trung Thu, lÊy ®¹o cô ®æi phÇn th­ëng /want_reward",
 --				"ÁìÈ¡Á½ÖÜÄêÀñÆ·/want_anniversary",
 				"Ta muèn nhËn b¸nh trung thu/require_mooncake",
 				"Mua vËt phÈm lÔ mõng/buy_things",
 				"NhËn h­íng dÉn ho¹t ®éng/get_intro_book",
 				"Xem néi dung ho¹t ®éng./know_detail",
-				"[-KÕt thóc ®èi tho¹i-]/nothing",
+				"[-End conversation-]/nothing",
 				}
 	if nDate > 081012 then
 		Talk(1,"","Ho¹t ®éng lÇn nµy ®· kÕt thóc, c¶m ¬n b¹n ®· tham gia!");
@@ -44,9 +44,9 @@ function want_reward()
 				"Ta muèn dïng thÎ kû niÖm ®æi lÊy phÇn th­ëng /use_card",
 				"Ta muèn dïng B¸nh Trung Thu ®æi B¶o r­¬ng/use_mooncake",
 				"Xem thuéc tİnh trang søc Vinh Dù, Huy Hoµng (kh«ng mua ®­îc)/ring_Sale",
-				"[-ThuyÕt minh-]/know_reward",
+				"[-Explanation-]/know_reward",
 				"[-Quay l¹i ®èi tho¹i-]/main",
-				"[-KÕt thóc ®èi tho¹i-]/nothing",
+				"[-End conversation-]/nothing",
 				}
 	Say("B¹n dïng vËt phÈm nµo ®æi phÇn th­ëng?",getn(selTab),selTab);
 end;
@@ -58,11 +58,11 @@ function use_card()
 				"§æi  40 thÎ kû niÖm JX2 trßn 3 n¨m lÊy phÇn th­ëng kinh nghiÖm/#ask_is_use_card(40)",
 				"§æi  100 thÎ kû niÖm JX2 trßn 3 n¨m lÊy 1 Hép Ng©n Bµi Vinh Dù/#ask_is_use_card(100)",
 				"§æi  500 thÎ kû niÖm JX2 trßn 3 n¨m lÊy 1 Ch×a Khãa B¹c Vinh Dù/#ask_is_use_card(500)",
-				"Trang kÕ/use_card_page_2",
+				"Next page/use_card_page_2",
 				"Ta kh«ng muèn ®æi n÷a./nothing",
 				}
 	local nCount = GetItemCount(tItemInfo[19][2],tItemInfo[19][3],tItemInfo[19][4]);
-	Say("HiÖn b¹n cã <color=yellow>"..nCount.."<color>ThÎ kû niÖm JX2 trßn 3 n¨m, tïy theo sè l­îng <color=red>thÎ kû niÖm JX2 trßn 3 n¨m<color> cña b¹n, b¹n cã thÓ ®æi phÇn th­ëng sau ®©y: ",getn(selTab),selTab);
+	Say("You currently have <color=yellow>"..nCount.."<color>ThÎ kû niÖm JX2 trßn 3 n¨m, tïy theo sè l­îng <color=red>thÎ kû niÖm JX2 trßn 3 n¨m<color> cña b¹n, b¹n cã thÓ ®æi phÇn th­ëng sau ®©y: ",getn(selTab),selTab);
 end;
 
 function use_card_page_2()
@@ -71,17 +71,17 @@ function use_card_page_2()
 				"§æi 2000 thÎ kû niÖm JX2 trßn 3 n¨m lÊy trang søc Huy Hoµng Chi Thñy/#ask_is_use_card(2000)",
 				"§æi 3000 thÎ kû niÖm JX2 trßn 3 n¨m lÊy 1 trang søc Vinh Dù Chi Thñy/#ask_is_use_card(3000)",
 				"§æi 6000 thÎ kû niÖm JX2 trßn 3 n¨m lÊy 1 trong 3 mãn Hoµng §Õ/use_card_exchange_equip",
-				"Trang tr­íc/use_card",
+				"Previous page/use_card",
 				"Ta kh«ng muèn ®æi n÷a./nothing",
 				}
 	local nCount = GetItemCount(tItemInfo[19][2],tItemInfo[19][3],tItemInfo[19][4]);
-	Say("HiÖn b¹n cã <color=yellow>"..nCount.."<color>ThÎ kû niÖm JX2 trßn 3 n¨m, tïy theo sè l­îng <color=red>thÎ kû niÖm JX2 trßn 3 n¨m<color> cña b¹n, b¹n cã thÓ ®æi phÇn th­ëng sau ®©y: ",getn(selTab),selTab);
+	Say("You currently have <color=yellow>"..nCount.."<color>ThÎ kû niÖm JX2 trßn 3 n¨m, tïy theo sè l­îng <color=red>thÎ kû niÖm JX2 trßn 3 n¨m<color> cña b¹n, b¹n cã thÓ ®æi phÇn th­ëng sau ®©y: ",getn(selTab),selTab);
 
 end;
 
 function ask_is_use_card(nCount)
 	local tCardInfo = {
-						 [10] = "1 Bång Lai tiªn lé",
+						 [10] = "1 Penglai Fairy Path",
 						 [20] = "PhËn th­ëng kinh nghiÖm",
 						 [40] = "PhËn th­ëng kinh nghiÖm",	
 						 [100] = "Hép Ng©n Bµi Vinh Dù",	
@@ -90,7 +90,7 @@ function ask_is_use_card(nCount)
 						 [2000] = "Trang søc Huy Hoµng Chi Thñy",	
 						 [3000] = "Trang søc Vinh Dù"
 							};
-	Say("<color=green>Niªn sø<color>: B¹n muèn sö dông <color=yellow>"..nCount.."<color> thÎ kû niÖm JX2 trßn 3 n¨m ®æi <color=yellow>"..tCardInfo[nCount].."<color> chø?",
+	Say("<color=green>Niªn sø<color>: B¹n muèn sö dông <color=yellow>"..nCount.."<color> JX2 3rd Anniversary commemorative tokens to exchange for <color=yellow>"..tCardInfo[nCount].."<color> ?",
 			2,
 			"Ta muèn ®æi/#use_card_confirm("..nCount..")",
 			"Ta chän nhÇm råi./use_card");						
@@ -203,7 +203,7 @@ function use_card_exchange_exp()
 		ModifyExp(nExp);
 		Msg2Player("B¹n nhËn ®­îc "..nExp.." ®iÓm kinh nghiÖm");
 		Talk(1,"","§©y lµ lÇn thø <color=yellow>"..nTimes.."<color> thay ®æi phÇn th­ëng kinh nghiÖm. <color=yellow>10<color> lÇn ®Çu sÏ kh«ng bŞ suy gi¶m, nh­ng tõ lÇn thø 11 trë ®i phÇn th­ëng sÏ bŞ suy gi¶m <color=yellow>5%<color>, tèi ®a <color=yellow>20%<color>. ");
-		WriteLog("[07 Tam tiÕt liªn th«ng]:"..GetName().."thø"..nTimes.." lÇn dïng 1000 thÎ kû niÖm ®æi ®­îc "..nExp.." ®iÓm kinh nghiÖm");
+		WriteLog("[07 Tam tiÕt liªn th«ng]:"..GetName().."the"..nTimes.." lÇn dïng 1000 thÎ kû niÖm ®æi ®­îc "..nExp.." ®iÓm kinh nghiÖm");
 	else
 		Talk(1,"use_card","<color=green>Niªn sø<color>: Xin lçi! Sè l­îng thÎ kû niÖm JX2 trßn 3 n¨m cña b¹n kh«ng ®ñ.");
 	end;
@@ -215,7 +215,7 @@ function use_card_exchange_equip()
 			"Ta muèn thay ®æi Hiªn Viªn ChiÕn/#use_card_exchange_equip_confirm(2)",
 			"Ta muèn thay ®æi Hiªn Viªn §Êu /#use_card_exchange_equip_confirm(3)",
 			"Ta muèn ®æi thø kh¸c /use_card",
-			"§Ó ta xem/nothing",
+			"Let me take a look /nothing",
 			}
 	Say("<color=green>Niªn sø<color>: B¹n muèn ®æi trang bŞ nµo sau ®©y? <color=red>Chó ı: Ng­êi ch­a vµo l­u ph¸i chØ nhËn ®­îc 1 vò khİ hoÆc trang søc ngÉu nhiªn.<color>",getn(selTab),selTab);
 end;
@@ -226,12 +226,12 @@ function use_card_exchange_equip_confirm(nType)
 		return 0;
 	end;
 	local selTab = {
-			"§ång ı/#get_emperor_equip("..nType..")",
+			"Agree /#get_emperor_equip("..nType..")",
 			"Kh«ng,Ta muèn ®æi thø kh¸c c¬/use_card_exchange_equip",
 			"Ta suy nghÜ mét chót /nothing",
 			}
 	local tbItemName = {"Hiªn Viªn vò khİ","Hiªn Viªn ChiÕn","Hiªn Viªn §Êu"};
-	Say("B¹n x¸c nh©n muèn ®æi <color=yellow>"..tbItemName[nType].."<color> chø?",getn(selTab),selTab);		
+	Say("B¹n x¸c nh©n muèn ®æi <color=yellow>"..tbItemName[nType].."<color> ?",getn(selTab),selTab);		
 end;
 
 function get_emperor_equip(nType)
@@ -261,7 +261,7 @@ function get_emperor_equip(nType)
 		Msg2Player("B¹n nhËn ®­îc "..tbItemName[nType]);
 		WriteLog("[08 Tam tiÕt liªn th«ng]:"..GetName().."§· dïng thÎ kû niÖm ®æi."..tbItemName[nType]);
 	else
-		WriteLog("[Lçi 08 Tam tiÕt liªn th«ng]:"..GetName().."Dïng thÎ kû niÖm ®æi."..tbItemName[nType].."B¸o lçi khi AddItem, nRetCode:"..nRetCode);
+		WriteLog("[Lçi 08 Tam tiÕt liªn th«ng]:"..GetName().."Use the Commemorative Token to exchange."..tbItemName[nType].."Error on AddItem, nRetCode:"..nRetCode);
 	end;
 end;
 
@@ -271,7 +271,7 @@ function select_emperor_weapon()
 		local selTab = {
 					"Ta muèn Hiªn Viªn To¸i Vò §ao/#give_emperor_weapon(2,1)",
 					"Ta muèn Hiªn Viªn To¸i Vò C«n/#give_emperor_weapon(2,2)",
-					"§Ó ta xem/nothing",
+					"Let me take a look /nothing",
 					}
 		Say("B¹n chän nh÷ng vò khİ g× sau ®©y?",getn(selTab),selTab);
 	else
@@ -293,7 +293,7 @@ function give_emperor_weapon(nRoute,nIdx)
 		Msg2Player("B¹n nhËn ®­îc "..tHuangDiWeapon[nRoute][nIdx][1]);
 		WriteLog("[08 Tam tiÕt liªn th«ng]:"..GetName().."§· dïng thÎ kû niÖm ®æi."..tHuangDiWeapon[nRoute][nIdx][1]);
 	else
-		WriteLog("[Lçi 08 Tam tiÕt liªn th«ng]:"..GetName().."Dïng thÎ kû niÖm ®æi."..tHuangDiWeapon[nRoute][nIdx][1].."B¸o lçi khi AddItem, nRetCode:"..nRetCode);
+		WriteLog("[Lçi 08 Tam tiÕt liªn th«ng]:"..GetName().."Use the Commemorative Token to exchange."..tHuangDiWeapon[nRoute][nIdx][1].."Error on AddItem, nRetCode:"..nRetCode);
 	end;
 end;
 
@@ -306,7 +306,7 @@ function use_mooncake()
 				"Ta muèn dïng ThŞnh ThÕ ThÊt Tinh B¹n Qu©n NguyÖt ®æi phÇn th­ëng /#use_mooncake_confirm(5)",
 				"Ta muèn dïng ThŞnh ThÕ Th­êng Nga Thñy Tinh NguyÖt ®æi phÇn th­ëng /#use_mooncake_confirm(6)",
 				"Ta muèn biÕt lo¹i B¸nh Trung Thu nµy cã thÓ ®æi ®­îc phÇn th­ëng g× /know_mookcake_use",
-				"Ta ®Ó dµnh ¨n vËy./nothing",
+				"I will keep it to eat instead. /nothing",
 				}
 	Say("N¨m nay chóng ta h·y dung b¶o hép cña Vâ L©m Minh chñ ph¸t lµm gi¶i th­ëng cho ng­êi lµm b¸nh trung thu ngon nhÊt, ®Ó xem hä cã lµm ra nh÷ng lo¹i B¸nh Trung Thu nµy kh«ng:",getn(selTab),selTab);
 end;
@@ -434,7 +434,7 @@ function use_mooncake_confirm(nType)
 		end;
 		WriteLog("[08 Tam tiÕt liªn th«ng]"..GetName().."§· dïng B¸nh Trung Thu ®æi phÇn th­ëng, c¸c lo¹i b¸nh Trung Thu:"..nType);
 	else
-		Talk(1,"use_mooncake","B¹n kh«ng cã <color=yellow>"..tMoonCake[10+nType][1].."<color> µ!!");
+		Talk(1,"use_mooncake","B¹n kh«ng cã <color=yellow>"..tMoonCake[10+nType][1].."<color> ah!!");
 	end;
 end;
 
@@ -494,7 +494,7 @@ function want_mooncake()
 	if nMapID == 100 then
 		sCityName = "TuyÒn Ch©u";
 	elseif nMapID == 200 then
-		sCityName = "BiÖn Kinh";
+		sCityName = "Bianjing";
 	elseif nMapID == 300 then
 		sCityName = "Thµnh §«";
 	end;
@@ -538,14 +538,14 @@ end;
 
 function know_detail()
 	local selTab = {
-			"NhËn ®­îc b¸nh Trung Thu Mü VŞ/detail_1",
+			"Received the Delicious Mooncake /detail_1",
 			"NhËn th­ëng Vâ L©m Minh/detail_6",
 --			"ÁìÈ¡Á½ÖÜÄê½±Àø/detail_2",
 			"B¸nh Trung Thu, lÊy ®¹o cô ®æi phÇn th­ëng /detail_3",
 			"Lµm c¸c lo¹i b¸nh Trung Thu/detail_4",
 			"§æi thÎ kû niÖm nhËn phÇn th­ëng/detail_5",
 			"[-Quay l¹i ®èi tho¹i-]/main",
-			"[-KÕt thóc ®èi tho¹i-]/nothing",
+			"[-End conversation-]/nothing",
 			}
 	Say("<color=green>H­íng dÉn<color>: B¹n muèn t×m hiÓu ph­¬ng diÖn nµo?",getn(selTab),selTab);
 end;

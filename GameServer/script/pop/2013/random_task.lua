@@ -4,7 +4,7 @@ Include("\\script\\lib\\define.lua")
 
 g_tTv = {
 	["Hoµn Nhan T«ng Hµn"] = TASKID_2013_RANDOM_POP_TASK_FLAG1,
-	["Nhan Hi Do·n"] = TASKID_2013_RANDOM_POP_TASK_FLAG2,
+	["Yan Xi Yun"] = TASKID_2013_RANDOM_POP_TASK_FLAG2,
 }
 
 g_tTaskInfo = {
@@ -17,7 +17,7 @@ g_tTaskInfo = {
 		{1337,6,},
 		{1338,7,},
 	},
-	["Nhan Hi Do·n"] = {
+	["Yan Xi Yun"] = {
 		{1339,1,},
 		{1340,2,},
 		{1341,3,},

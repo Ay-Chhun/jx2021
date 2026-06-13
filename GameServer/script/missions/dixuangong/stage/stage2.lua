@@ -77,13 +77,13 @@ tStage2 = {
 
 	resetPos = {1674, 3234},
 	npcMod = {
-		{"Minh Gi¸o Th¸m Tù §Þa", "Minh Gi¸o Th¸m Tö"},
+		{"Minh Gi¸o Th¸m Tù §Þa", "Ming Sect Scout"},
 
 		{"Thiªn ¢m Ngôc Tèt §Þa", "§Çu Sá Ngôc Tèt Thiªn ¢m",},
-		{"TuyÒn Cø §Þa", "TuyÒn Cø", },
+		{"TuyÒn Cø §Þa", "Spring Cell", },
 
-		{"yinbaoxiang", "R­¬ng B¹c", 180},
-		{"tongbaoxiang", "R­¬ng §ång", 180},
+		{"yinbaoxiang", "Silver Chest", 180},
+		{"tongbaoxiang", "Copper Chest", 180},
 		--{"Ïä×ÓÇ®", "ÌìÒõ¾«Á¦Ïä", 180},
 	},
 --	stepLimit = 600,
@@ -110,7 +110,7 @@ end
 function tStage2:createRunner()
 	local npcMod = {};
 	npcName = "Nh©n sÜ vâ l©m bÞ giam cÇm";
-	local model = "Giam CÇm §Þa"..random(1,10)
+	local model = "Imprisonment Land"..random(1,10)
 	npc = CreateNpc(model, npcName, self:GetPosEx(self.npcpos));
 	SetNpcScript(npc, g_theMS.fileName);
 	SetCampToNpc(npc, CampPlayer);
@@ -241,7 +241,7 @@ function phase2_1:onTimer(nStep)
 		return
 	end
 	if nStep == 1 then
-		local npc = findNpc("Nga My LiÔu Hiªn");
+		local npc = findNpc("Emei Liu Xian");
 		ChangeNpc2Talk(npc);
 		NpcChat(npc, "Høc hu hu, tØ muéi téi nghiÖp cña ta~");
 	end
@@ -256,7 +256,7 @@ function phase2_1:onTalk(npcIdx)
 	local tSel = {
 		"Ta ®îi ng­¬i ®Õn cøu ng­êi/#stageAction('p1')",
 		"Trung §iÖn cña §Þa HuyÒn Cung nµy cã huyÒn c¬ g×/info2",
-		"KÕt thóc ®èi tho¹i/nothing"
+		"End dialogue/nothing"
 	}
 	Say("LiÔu Hiªn: høc hu hu, tØ muéi ®¸ng th­¬ng cña ta~", getn(tSel), tSel);
 end
@@ -269,7 +269,7 @@ function phase2_2:onInit()
 	ClearMapNpc(g_theMS:getMapId(), nil);
 	g_theMS.msTimer:setInterval(self.stepInterval);
 	g_theMS:onTimer();
-	g_theMS.msCamp[1]:turnPlayer(StartTimeGuage,"Thanh tr­ît thêi gian", self.stepLimit, 0);
+	g_theMS.msCamp[1]:turnPlayer(StartTimeGuage,"Time slider", self.stepLimit, 0);
 	g_theMS:Msg2MSAll("H·y b¶o vÖ Nh©n SÜ Vâ L©m ch¹y trèn!");
 	local pos = getStage().resetPos;
 	g_theMS.msCamp[1]:turnPlayer(SetPos, pos[1], pos[2]);
@@ -297,7 +297,7 @@ function phase2_2:onTimer(nStep)
 		if nStep < self.maxCount * runStep then
 			local npc = getStage():createRunner();
 			tMsg = {
-				"Hé gi¸ ta, ë ®©y nguy hiÓm qu¸!",
+				"Escort me, it is too dangerous here!",
 				"¤i cha mÑ ¬i! cuèi cïng ta còng tho¸t ra ®­îc råi !",
 				"Cuèi cïng tªn cÇm ®Çu còng xuÊt hiÖn !",
 				"Qu©n tö 10 n¨m b¸o thï còng ch­a muén, ng­¬i ng­¬i ng­¬i cßn c¶ ng­¬i n÷a h·y ®îi ®Êy!",
@@ -375,7 +375,7 @@ function phase2_2:onNpcDeath(npcIdx)
 --		StopTimeGuage(-2);
 --		stageAction('p2');
 	end
-	if npcName ~= "TuyÒn Cø" then
+	if npcName ~= "Spring Cell" then
 		SetNpcLifeTime(npcIdx, 3);
 	end
 end
@@ -407,7 +407,7 @@ function phase2_3:onTimer(nStep)
 	end
 
 	if nStep == 3 then
-		local npc = findNpc("Nga My LiÔu Hiªn");
+		local npc = findNpc("Emei Liu Xian");
 		ChangeNpc2Talk(npc);
 		NpcChat(npc, "§a t¹ c¸c vÞ ®¹i hiÖp ®· ra tay t­¬ng trî!");
 	end
@@ -440,7 +440,7 @@ tPos_2_3 = {
 	{1646, 3266, { {1665, 3245}, {1675, 3235}}},		-- 24
 }
 function phase2_3:createMinion()
-	local npc = CreateNpc("LiÔu Hiªn §Þa", "Nga My LiÔu Hiªn", g_theMS:GetMissionV(MV_MAP_ID), 1653, 3248);
+	local npc = CreateNpc("LiÔu Hiªn §Þa", "Emei Liu Xian", g_theMS:GetMissionV(MV_MAP_ID), 1653, 3248);
 	SetCampToNpc(npc, CampPlayer);
 	SetNpcActivator(npc);
 	ChangeNpc2Talk(npc);
@@ -460,7 +460,7 @@ function phase2_3:createMinion()
 end
 
 function phase2_3:createMinion2(m, x, y)
-	npcName = "Vâ L©m Tinh Anh";
+	npcName = "Martial World Elites";
 	local model = "Vâ L©m Nh©n SÜ §Þa"..random(1,10)
 	npc = CreateNpc(model, npcName, m, x, y);
 	SetCampToNpc(npc, CampPlayer);
@@ -470,10 +470,10 @@ end
 
 function phase2_3:onTalk(npcIdx)
 	local npcName = GetTargetNpcName();
-	if npcName == "Nga My LiÔu Hiªn" and isCaption() then
+	if npcName == "Emei Liu Xian" and isCaption() then
 		Say("TrËn chiÕn nµy nh©n sÜ vâ l©m tæn thÊt nÆng nÒ, mong c¸c ch­ vÞ t­¬ng trî!", 1, "Ta nguyÖn v× vâ l©m mµ gióp søc/phase2_3_gogogo");
 	else
-		Talk(1, "", format("<color=green>%s<color>: ®a t¹ ®· t­¬ng trî!", npcName));
+		Talk(1, "", format("<color=green>%s<color>: many thanks for your help!", npcName));
 	end
 end
 
@@ -481,7 +481,7 @@ function phase2_3_gogogo()
 	local flag = GetMissionV(MV_S2_GGG_FLAG);
 	if flag == 1 then return end
 	SetMissionV(MV_S2_GGG_FLAG, 1);
-	local npc = findNpc("Nga My LiÔu Hiªn");
+	local npc = findNpc("Emei Liu Xian");
 	NpcChat(npc, "C¸c huynh ®Ö, ®¸nh tan §¹i HuyÒn Cung Cung Chñ chóng ta chia nhau trang bÞ!");
 	ChangeNpc2Fight(npc);
 	g_NpcAI:setAI(npc, AT_SM_MOVE);
@@ -493,11 +493,11 @@ function phase2_3_gogogo()
 
 	local tMsg = {
 		"HÕt tiÒn söa trang bÞ råi T_T",
-		"Trêi, c¶ bé!",
+		"Heavens, the whole set!",
 		"++++++++++++++",
 		"H¾c thñ ®õng më r­¬ng!! ",
 	}
-	local tnpcs = findAllNpc("Vâ L©m Tinh Anh");
+	local tnpcs = findAllNpc("Martial World Elites");
 	local t = {{1690, 3197}, {1696, 3201}, {1700, 3208}};
 	for _, npc in tnpcs do
 --		ChangeNpc2Fight(npc);

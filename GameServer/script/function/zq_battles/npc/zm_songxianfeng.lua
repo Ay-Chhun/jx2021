@@ -5,7 +5,7 @@ function main()
 		return 0;
 	end
 	if GetItemCount(ZQ_ITEM_FLAG[SONG_ID][1], ZQ_ITEM_FLAG[SONG_ID][2], ZQ_ITEM_FLAG[SONG_ID][3]) < 1 then
-		Say(format("<color=green>Tèng Tiªn Phong:<color> ThiÕu hiÖp trªn ng­êi kh«ng mang %s, kh«ng thÓ trë vÒ doanh tr¹i. C¸c h¹ x¸c ®Þnh b¾t ®Çu chiÕn ®Êu?", ZQ_ITEM_FLAG[SONG_ID][4]), 2, "§ång ý/xianfeng_dialog", "Ra khi/do_nothing")
+		Say(format("<color=green>Tèng Tiªn Phong:<color> ThiÕu hiÖp trªn ng­êi kh«ng mang %s, kh«ng thÓ trë vÒ doanh tr¹i. C¸c h¹ x¸c ®Þnh b¾t ®Çu chiÕn ®Êu?", ZQ_ITEM_FLAG[SONG_ID][4]), 2, "Agree/xianfeng_dialog", "Ra khi/do_nothing")
 		return 0;
 	end
 	xianfeng_dialog();

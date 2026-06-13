@@ -9,7 +9,7 @@ Include("\\script\\missions\\liangshan\\runtime_data_stat.lua")
 Include("\\script\\online_activites\\head\\activity_normal_head.lua")
 --Include("\\script\\misc\\observer\\observer_head.lua")
 
-msg = "Chóc mõng $n më R­¬ng L­¬ng S¬n QuÇn Anh Héi ®­îc $i";
+msg = "Congratulations $n on opening the Liangshan Heroes Gathering Chest and receiving $i";
 
 MV_WHO_IS_DAYE = 26
 MV_LOOT_ID = 28
@@ -33,7 +33,7 @@ T_YinBoxScript={
 T_YIN_BOX_IDX = {}
 function remove_yin_box()
 	for i,v in T_YIN_BOX_IDX do
-		if GetNpcName(i) == "R­¬ng B¹c" then
+		if GetNpcName(i) == "Silver Chest" then
 			SetNpcLifeTime(i, 0);
 		end
 	end
@@ -46,7 +46,7 @@ function create_box_yin(m,x,y, nStage)
 	end
 	--local m, x, y = GetNpcWorldPos(nNpcIdx);
 	local x2, y2 = x + random(-5, 5), y + random(-5, 5);
-	local npc = CreateNpc("yinbaoxiang", "R­¬ng B¹c", m, x2, y2);
+	local npc = CreateNpc("yinbaoxiang", "Silver Chest", m, x2, y2);
 	if npc and npc > 0 then
 		T_YIN_BOX_IDX[npc] = 1
 		--SetNpcLifeTime(npc, 180);
@@ -59,23 +59,23 @@ end
 tAward = {
 	randMulti = 1,
 	subclauses = {
-        {{"C©y B¸t Nh· nhá"    ,{2,0,504,1},nil,{7*24*3600}},6000},
-        {{"C©y B¸t Nh·"    ,{2,0,398,1},nil,{7*24*3600}},6000},
-        {{"C©y Tø Linh"    ,{2,1,30269,1},nil,{7*24*3600}},6000},
+        {{"Small Prajna Tree"    ,{2,0,504,1},nil,{7*24*3600}},6000},
+        {{"Prajna Tree"    ,{2,0,398,1},nil,{7*24*3600}},6000},
+        {{"Four Spirits Tree"    ,{2,1,30269,1},nil,{7*24*3600}},6000},
         {{"B¹ch C©u Hoµn"    ,{2,1,270,1},nil,{7*24*3600}},6000},
         {{"§¹i B¹ch C©u hoµn"    ,{2,1,1007,1},nil,{7*24*3600}},8000},
         {{"B¹ch C©u Tiªn ®¬n"    ,{2,1,1008,1},nil,{7*24*3600}},6000},
         {{"§¹i Nh©n s©m"    ,{2,0,553,1},nil,{7*24*3600}},5000},
-        {{"Hu©n ch­¬ng anh hïng"    ,{2,1,30499,1,4}},15000},
-        {{"Hu©n ch­¬ng anh hïng"    ,{2,1,30499,2,4}},6000},
-        {{"Hu©n ch­¬ng anh hïng"    ,{2,1,30499,4,4}},2000},
-        {{"Hu©n ch­¬ng anh hïng"    ,{2,1,30499,10,4}},500},
+        {{"Hero's Medal"    ,{2,1,30499,1,4}},15000},
+        {{"Hero's Medal"    ,{2,1,30499,2,4}},6000},
+        {{"Hero's Medal"    ,{2,1,30499,4,4}},2000},
+        {{"Hero's Medal"    ,{2,1,30499,10,4}},500},
         {{"M¶nh Thiªn Cang"    ,{2,1,30390,10}},12000},
         {{"M¶nh Thiªn Cang"    ,{2,1,30390,20}},3910},
         {{"M¶nh Thiªn Cang"    ,{2,1,30390,100}},400},
         {{"Thiªn Cang LÖnh"    ,{2,95,204,1},msg},100},
-        {{"Huy Ch­¬ng §ång ChÕ", {0,153,1,1}}, 4000},
-        {{"Huy Ch­¬ng ThiÕt ChÕ", {0,153,2,1}}, 4000},
+        {{"Copper Medal", {0,153,1,1}}, 4000},
+        {{"Iron Medal", {0,153,2,1}}, 4000},
         {{"Huy Ch­¬ng Ngäc ChÕ", {0,153,3,1}}, 3060},
         {{"Huy Ch­¬ng Kim ChÕ ngò hµnh", {0,153,4,1}}, 1000},
         {{"Huy Ch­¬ng Méc ChÕ ngò hµnh", {0,153,5,1}}, 1000},
@@ -83,8 +83,8 @@ tAward = {
         {{"Huy Ch­¬ng Háa ChÕ ngò hµnh", {0,153,7,1}}, 1000},
         {{"Huy Ch­¬ng Thæ ChÕ ngò hµnh", {0,153,8,1}}, 1000},
         {{"Huy Ch­¬ng ¢m ChÕ ngò hµnh", {0,153,9,1}}, 1000},
-        {{"Huy Ch­¬ng Du HiÖp"    ,{0,153,26,1},msg},10},
-        {{"Huy Ch­¬ng ThiÕt HuyÕt"    ,{0,153,27,1},msg},10},
+        {{"Roaming Hero Medal"    ,{0,153,26,1},msg},10},
+        {{"Iron Blood Medal"    ,{0,153,27,1},msg},10},
         {{"Huy Ch­¬ng V©n Du"    ,{0,153,28,1},msg},10},
 	},
 	giveClause = ClauseRandom.giveClause,
@@ -170,7 +170,7 @@ function speLoot(npcIdx)
 		return 0;
 	end
 	local tSel = {
-			"KÕt thóc ®èi tho¹i/nothing",
+			"End dialogue/nothing",
 		}
 	local OldPlayerIndex = PlayerIndex;
 	if daye == PlayerIndex then

@@ -18,7 +18,7 @@ function AddPet()
 		CreateTrigger(1,500,3106)
 		ContinueTimer(GetTrigger(3106))
 		SetTask(TASK_PET_BORN,GetTime())	--¼ÇÂ¼³èÎïµÄ³öÉúÊ±¼ä
-		SummonNpc("Thá tr¾ng","C¸t T­êng")
+		SummonNpc("Thá tr¾ng","Auspicious")
 		WriteLog("[Ho¹t ®éng mïa xu©n (s¸o tróc)]:"..GetName().."B¹n ®· sö dông s¸o tróc gäi ra Thá tr¾ng.")
 		Msg2Player("C¹nh b¹n ®· xuÊt hiÖn 1 thó c­ng ®¸ng yªu.")
 	end

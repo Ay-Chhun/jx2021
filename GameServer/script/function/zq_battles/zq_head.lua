@@ -146,7 +146,7 @@ function ZQ_NpcCreate()
 	end	
 	local nNpcIndex, tNpcPos = {};
 	--½ÓÒýÈË
-	nNpcIndex = CreateNpc("ZM_jieyingren", "Ch©n Ma TiÕp DÉn Sø", 300, 1796, 3358);
+	nNpcIndex = CreateNpc("ZM_jieyingren", "Zhen Mo Jie Yin Envoy", 300, 1796, 3358);
 	SetNpcScript(nNpcIndex, "\\script\\function\\zq_battles\\npc\\zm_jieyinren.lua");
 	--ËÎ¾üÓªµØ
 	nNpcIndex = CreateNpc("ZM_songjiangjun", "Tèng T­íng Qu©n", ZQ_MAP_ID, 1572, 3800);
@@ -197,7 +197,7 @@ function ZQ_NpcCreate()
 	SetCampToNpc(nNpcIndex, ZQ_tCampString[SONG_ID]);
 	nNpcIndex = CreateNpc("ZM_songxunyingguan", "Tèng TuÇn Doanh Quan", ZQ_MAP_ID, 1617, 3736);
 	SetCampToNpc(nNpcIndex, ZQ_tCampString[SONG_ID]);
-	nNpcIndex = CreateNpc("ZM_songjiandie", "Gi¸n §iÖp ¶nh Phong", ZQ_MAP_ID, 1616, 3823);
+	nNpcIndex = CreateNpc("ZM_songjiandie", "Spy Shadow Wind", ZQ_MAP_ID, 1616, 3823);
 	SetNpcScript(nNpcIndex, "\\script\\function\\zq_battles\\npc\\jd_yingfeng.lua");
 	nNpcIndex = CreateNpc("ZM_songxianfeng", "Tèng tiªn phong", ZQ_MAP_ID, 1622, 3737);
 	SetNpcScript(nNpcIndex, "\\script\\function\\zq_battles\\npc\\zm_songxianfeng.lua");
@@ -258,7 +258,7 @@ function ZQ_NpcCreate()
 	SetCampToNpc(nNpcIndex, ZQ_tCampString[LIAO_ID]);
 	nNpcIndex = CreateNpc("ZM_liaoxunyingguan", "Liªu TUÇn Doanh Quan", ZQ_MAP_ID, 1920, 3293);
 	SetCampToNpc(nNpcIndex, ZQ_tCampString[LIAO_ID]);
-	nNpcIndex = CreateNpc("ZM_liaojiandie", "Gi¸n §iÖp Kim §iªu", ZQ_MAP_ID, 1900, 3252);
+	nNpcIndex = CreateNpc("ZM_liaojiandie", "Spy Golden Eagle", ZQ_MAP_ID, 1900, 3252);
 	SetNpcScript(nNpcIndex, "\\script\\function\\zq_battles\\npc\\jd_jingdiao.lua");
 	nNpcIndex = CreateNpc("ZM_liaoxianfeng", "Liªu tiªn phong", ZQ_MAP_ID, 1866, 3331);
 	SetNpcScript(nNpcIndex, "\\script\\function\\zq_battles\\npc\\zm_liaoxianfeng.lua");
@@ -286,7 +286,7 @@ function ZQ_NpcCreate()
 			{1703, 3491},
 		};
 	for i = 1, getn(tNpcPos) do
-		nNpcIndex = CreateNpc("ZM_zijinmu", "Tö Kim Méc", ZQ_MAP_ID, tNpcPos[i][1], tNpcPos[i][2]);
+		nNpcIndex = CreateNpc("ZM_zijinmu", "Zi Jin Mu", ZQ_MAP_ID, tNpcPos[i][1], tNpcPos[i][2]);
 		SetNpcScript(nNpcIndex, "\\script\\function\\zq_battles\\npc\\cai_ji.lua");
 	end
 	tNpcPos = {
@@ -322,7 +322,7 @@ function ZQ_NpcCreate()
 			{1841, 3602},
 	};
 	for i = 1, getn(tNpcPos) do
-		nNpcIndex = CreateNpc("ZM_qixinghua", "ThÊt tinh hoa", ZQ_MAP_ID, tNpcPos[i][1], tNpcPos[i][2]);
+		nNpcIndex = CreateNpc("ZM_qixinghua", "Seven essences", ZQ_MAP_ID, tNpcPos[i][1], tNpcPos[i][2]);
 		SetNpcScript(nNpcIndex, "\\script\\function\\zq_battles\\npc\\cai_ji.lua");
 	end
 	--¼ÀÌ³
@@ -333,7 +333,7 @@ function ZQ_NpcCreate()
 		{1804, 3697},
 	}
 	for i = 1, getn(tNpcPos) do
-		nNpcIndex = CreateNpc("Th¸nh Háa §µi", "TÕ §µn", ZQ_MAP_ID, tNpcPos[i][1], tNpcPos[i][2]);
+		nNpcIndex = CreateNpc("Th¸nh Háa §µi", "Sacrificial Altar", ZQ_MAP_ID, tNpcPos[i][1], tNpcPos[i][2]);
 		SetNpcScript(nNpcIndex, "\\script\\function\\zq_battles\\npc\\zm_jitan.lua");
 	end
 	--ÐÞ¸´·âÓ¡
@@ -546,7 +546,7 @@ function ZQ_Return_String(nIndex, nSubIndex)
 	if not tTaskCnf then return 0;  end
 	local tTaskSubCnf = tTaskCnf[nSubIndex];
 	if not tTaskSubCnf or getn(tTaskSubCnf) ~= ZQ_TASK_TOTAL then return 0; end
-	local tString = {"Ch­a nhËn","Ch­a hoµn thµnh","Cã thÓ giao","Ngµy mai h·y ®Õn", "Cã thÓ bá qua"};
+	local tString = {"Ch­a nhËn","Ch­a hoµn thµnh","Cã thÓ giao","Come back tomorrow", "Cã thÓ bá qua"};
 	if gf_GetTaskBit(tTaskSubCnf[2], tTaskSubCnf[4]) ~= 1 then
 		return tString[1];
 	else
@@ -849,7 +849,7 @@ function ZQ_RepairReal_OnTimer()
 	end
 	--Õâ¸öµã¸ø³ö¶Ô»°
 	if mod(nTimes, ZQ_SEAL_START_TIME) == 0 then
-		Msg2Player("Tu söa phong Ên ®· b¾t ®Çu!");
+		Msg2Player("The seal repair has begun!");
 		--ÉèÖÃÊÇµÚ¼¸´ÎÁË
 		if nTimes / ZQ_SEAL_START_TIME > ZQ_REPAIRREAL_COUNT_MAX then
 			gf_SetMyTaskByte(ZQ_BATTLE_TASK9, 3, 4, ZQ_REPAIRREAL_TIME_MAX, TASK_ACCESS_CODE_ZQBATTLE);
@@ -876,7 +876,7 @@ function ZQ_RepairReal_OnTimer()
 	local nGoalTime = floor(nTimes/ZQ_SEAL_START_TIME) * ZQ_SEAL_START_TIME + ZQ_FIND_GOAL_TIME + ZQ_SEAL_EX_TIME * nCount + 1;
 	if nTimes == nGoalTime then
 		gf_SetMyTaskByte(ZQ_BATTLE_TASK9, 3, 4, ZQ_REPAIRREAL_TIME_MAX, TASK_ACCESS_CODE_ZQBATTLE);
-		Msg2Player("Tu söa c¶nh m«n trËn linh v­ît qu¸ thêi h¹n!");
+		Msg2Player("The sect gate formation spirit repair has exceeded the time limit!");
 		return 0;
 	end
 	--¼ÆÊý
@@ -893,7 +893,7 @@ function ZQ_RepairReal_FindGoalTalk()
 		"\nKhëi ®éng trùc tiÕp/#ZQ_RepairReal_StartFindGoal(0)",
 		--format("\nÊ¹ÓÃ%d¿ÅÄ§Ê¯ÑÓ³¤%dÃë¿ªÊ¼/#ZQ_RepairReal_StartFindGoal(%d)", nTimes, ZQ_SEAL_EX_TIME, nTimes),	
 		"Sö dông Ma Th¹ch kÐo dµi thêi gian/ZQ_RepairReal_ACFN",
-		"\nTõ bá/ZQ_RepairReal_GiveUp",
+		"\nGive up/ZQ_RepairReal_GiveUp",
 		--"ÎÒÖ»ÊÇ¿´¿´¶øÒÑ/nothing",
 	}
 	local nSize = getn(ZQ_REPAIRREAL_NPC);
@@ -936,7 +936,7 @@ function ZQ_RepairReal_StartFindGoal(nCount)
 		gf_SetTaskBit(ZQ_BATTLE_TASK6, 16, 1, TASK_ACCESS_CODE_ZQBATTLE);
 		--ÇåÁãÄ§Ê¯Ê¹ÓÃµÄÊýÄ¿
 		gf_SetMyTaskBit(ZQ_BATTLE_TASK2, 25, 27, 0, TASK_ACCESS_CODE_ZQBATTLE);
-		Msg2Player(format("B¾t ®Çu ®Õm ng­îc %d gi©y!", ZQ_FIND_GOAL_TIME));
+		Msg2Player(format("The %d second countdown begins!", ZQ_FIND_GOAL_TIME));
 	else
 		if DelItem(ZQ_ITEM_IB[1], ZQ_ITEM_IB[2], ZQ_ITEM_IB[3], nCount) ==  1 then
 			--¿ªÆôIBÄ£Ê½
@@ -947,7 +947,7 @@ function ZQ_RepairReal_StartFindGoal(nCount)
 			gf_SetTaskBit(ZQ_BATTLE_TASK6, 16, 1, TASK_ACCESS_CODE_ZQBATTLE);
 			--¼ÇÂ¼Ä§Ê¯Ê¹ÓÃµÄÊýÄ¿
 			gf_SetMyTaskBit(ZQ_BATTLE_TASK2, 25, 27, nCount, TASK_ACCESS_CODE_ZQBATTLE);
-			Msg2Player(format("B¾t ®Çu ®Õm ng­îc %d gi©y!", ZQ_FIND_GOAL_TIME + ZQ_SEAL_EX_TIME * nCount));
+			Msg2Player(format("The %d second countdown begins!", ZQ_FIND_GOAL_TIME + ZQ_SEAL_EX_TIME * nCount));
 		else
 			Talk(1, "ZQ_RepairReal_FindGoalTalk", "Ma Th¹ch trong hµnh trang kh«ng ®ñ!");
 		end
@@ -1106,7 +1106,7 @@ function ZQ_RepairReal_Award(nStep)
 	--¸ø¾­Ñé
 	gf_Modify("Exp", ZQ_REPAIRREAL_AWARD[nStep][2]);
 	--¸øµÀ¾ß
-	gf_AddItemEx2({2, 1, 30497, ZQ_REPAIRREAL_AWARD[nStep][3]}, "Ma Tinh", ZQ_szLogTitle, "Tu söa phong Ên", 0, 1);
+	gf_AddItemEx2({2, 1, 30497, ZQ_REPAIRREAL_AWARD[nStep][3]}, "Ma Tinh", ZQ_szLogTitle, "Seal repair", 0, 1);
 	--¸ø¹ý½±ÀøµÄÒ»ÂÉÇå¿Õ
 	gf_SetTaskBit(ZQ_BATTLE_TASK2, 31, 0, TASK_ACCESS_CODE_ZQBATTLE);
 end
@@ -1115,7 +1115,7 @@ function ZQ_RepairReal_GiveUp()
 	ZQ_RepairReal_Clean();
 	ZQ_OutfromCopy();
 	ZQ_Trigger_Clean();
-	Talk(1,"","C¸c h¹ ®· tõ bá tu söa trËn linh!");
+	Talk(1,"","You have given up repairing the formation spirit!");
 end
 
 function ZQ_RepairReal_Clean()
@@ -1154,8 +1154,8 @@ function ZQ_EvilBet_Talk()
 		return 0;
 	end	
 	local tSay = {
-		format("Ra Bóa/#ZQ_EvilBet_Jugde(1)"),
-		format("Ra KÐo/#ZQ_EvilBet_Jugde(2)"),
+		format("Throw Hammer/#ZQ_EvilBet_Jugde(1)"),
+		format("Throw Scissors/#ZQ_EvilBet_Jugde(2)"),
 		format("Ra Bao/#ZQ_EvilBet_Jugde(3)"),	
 	}
 	tinsert(tSay, "\nKh«ng ch¬i n÷a, nhËn phÇn th­ëng råi ch¹y th«i/ZQ_EvilBet_GiveAward");
@@ -1196,7 +1196,7 @@ function ZQ_EvilBet_IB()
 	local nZhenqi, nExp, nCount = ZQ_EvilBet_CalAward();
 	local tSay = {
 		format("\nTiªu hao %d Ma Th¹ch, chóng ta tiÕp tôc/#ZQ_EvilBet_IB_Ensure(%d)", nStep, nStep),
-		"\nTõ bá/ZQ_EvilBet_GiveUp",
+		"\nGive up/ZQ_EvilBet_GiveUp",
 	}
 	local strExt = "\n<color=green>C¸c h¹ ®· th¾ng lÇn thø %d, phÇn th­ëng céng dån lµ: ch©n khÝ %d, kinh nghiÖm %d, Ma Tinh %d. <color>";
 	local nSuccTimes = gf_GetTaskByte(ZQ_BATTLE_TASK8, 1);
@@ -1264,7 +1264,7 @@ function ZQ_EvilBet_GiveAward()
 	--¸ø¾­Ñé
 	gf_Modify("Exp", tonumber(nExp));
 	--¸øµÀ¾ß
-	gf_AddItemEx2({2, 1, 30497, tonumber(nCount)}, "Ma Tinh", ZQ_szLogTitle, "Tµ Linh §ç ¦íc", 0, 1);
+	gf_AddItemEx2({2, 1, 30497, tonumber(nCount)}, "Ma Tinh", ZQ_szLogTitle, "Evil Spirit Gambler", 0, 1);
 	--ÍË³ö---------
 	Talk(1,"","Khiªu chiÕn Tµ Linh §ç ¦íc kÕ thóc!");
 	ZQ_EvilBet_Clean();
@@ -1303,7 +1303,7 @@ function ZQ_ReStartSeal_Talk()
 	local nTag = gf_GetTaskBit(ZQ_BATTLE_TASK8, 29);
 	local tSay = {
 		"Giíi thiÖu phong Ên/ZQ_ReStartSeal_Intro",
-		"\nTõ bá/ZQ_ReStartSeal_Exit",
+		"\nGive up/ZQ_ReStartSeal_Exit",
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	if nTag == 0 then
@@ -1355,7 +1355,7 @@ function ZQ_ReStartSeal_Intro()
 	local ZQ_GtSay = {};
 	ZQ_GtSay.msg = ZQ_SMZL_NPC_NAME.."Tö M«n cã tæng céng 8 phong Ên (quÎ vÞ cña b¸t qu¸i), ®èi tho¹i víi Tö M«n TrËn Linh, xuÊt hiÖn ngÉu nhiªn 3 Phong Ên Th¸p cÇn kÝch ho¹t , ®ång thêi c¸c h¹ nhËn ®­îc 3 lÖnh bµi. Khi kÝch ho¹t phong Ên sÏ xuÊt hiÖn thanh tiÕn ®é, trong kho¶n thêi gian kÝch ho¹t nh©n vËt rêi khái ph¹m vi phong Ên th× thanh tiÕn ®é sÏ biÕn mÊt, kÝch ho¹t thÊt b¹i. \nL©n cËn mçi phong Ên ®Òu cã c¬ quan c¹m bÉy, khi nh©n vËt ch¹m ph¶i sÏ bÞ tÊn c«ng, bÞ tÊn c«ng tö vong xem nh­ khëi ®éng phong Ên thÊt b¹i. \nNg­êi ch¬i cã thÓ dïng 2 Ma Th¹ch sÏ nhËn ®­îc hiÖu qu¶ t¨ng tr­ëng ®iÓm sinh mÖnh 1000%, sinh mÖnh vµ néi lùc hoµn toµn håi phôc, rêi khái cöa ¶i hoÆc hoµn thµnh kÝch ho¹t sÏ biÕn mÊt.";
 	ZQ_GtSay.sel = {
-		{"\n Ph¶n håi","ZQ_ReStartSeal_Talk"},
+		{"\n Feedback","ZQ_ReStartSeal_Talk"},
 	}
 	temp_Talk(ZQ_GtSay);
 end
@@ -1554,7 +1554,7 @@ function ZQ_ProtectSeal_Talk()
 		"T¹i h¹ chØ xem qua th«i/nothing",
 	}
 	if GetTrigger(1524 * 2) == 0 and GetTrigger(1293 * 2) == 0 then
-		tinsert(tSay, 1, "Hç trî giÕt ®Þch/#ZQ_ProtectSeal_Start(0)");
+		tinsert(tSay, 1, "Help kill the enemy/#ZQ_ProtectSeal_Start(0)");
 		tinsert(tSay, 2, "Hç trî tiªu diÖt ®Þch (cÇn tiªu hao 2 ma th¹ch ®Ó hç trî thªm)/#ZQ_ProtectSeal_Start(2)");
 	end
 	local sString = format("Phong Ên  t¹i DiÖt M«n cã vÎ l¾c l­, Ma khÝ ®· mang ®Õn mét l­îng lín qu¸i vËt, nÕu cø tiÕp tôc nh­ thÕ, phong Ên sÏ bÞ ph¸ vì. Thêi gian kh«ng cßn nhiÒu, c¸c h¹ chØ cã <color=red>%d phót<color> ®Ó thùc hiÖn, tiªu diÖt Ýt nhÊt <color=red>%d tªn<color> qu¸i vËt, tiªu diÖt cµng nhiÒu, phÇn th­ëng cña ta cµng tèt.", ZQ_PROTECTSEAL_TIME_TOTLE/60, ZQ_PROTECTSEAL_KILL_MIN);
@@ -1610,7 +1610,7 @@ function ZQ_ProtectSeal_Intro()
 		return 0;
 	end
 	local tSay = {
-		"\n Ph¶n håi/ZQ_ProtectSeal_Talk",	
+		"\n Feedback/ZQ_ProtectSeal_Talk",	
 	}
 	Say(ZQ_MMZL_NPC_NAME.."Ma khÝ tõ DiÖt M«n mang l¹i rÊt nhiÒu qu¸i vËt, tiªu diÖt nh÷ng qu¸i vËt nµy, Thñ VÖ Phong Ên. \nNg­êi ch¬i cã thÓ dïng 2 Ma Th¹ch ®Ó n©ng cao 300% lùc tÊn c«ng, håi phôc toµn bé sinh lùc néi lùc, BUFF sÏ biÕn mÊt sau khi thêi gian kÕt thóc, nhËn phÇn th­ëng hoÆc khi träng th­¬ng. \n§Æc tÝnh cña qu¸i vËt: <color=red>Néi phßng cao, ngo¹i phßng thÊp, c«ng kÝch ngo¹i c«ng<color>", getn(tSay), tSay);
 end
@@ -1745,7 +1745,7 @@ function OnTimer1()
 	if nCount >= ZQ_COPY_TIME_MAX then
 		RemoveTrigger(GetTrigger(1525 * 2));
 		if gf_GetMyTaskBit(ZQ_BATTLE_TASK2, 21, 22) < ZQ_REPAIRREAL_COUNT_MAX then	
-			Talk(1,"ZQ_RepairReal_Fail","§· hÕt thêi gian cöa ¶i")
+			Talk(1,"ZQ_RepairReal_Fail","The stage time is up")
 		end
 		return 0;
 	end
@@ -1788,7 +1788,7 @@ function OnTimer2()
 	if nCount >= ZQ_COPY_TIME_MAX then
 		RemoveTrigger(GetTrigger(1526 * 2));
 		if gf_GetTaskByte(ZQ_BATTLE_TASK8, 1) < getn(ZQ_EVILBET_AWARD) - 1 then
-			Talk(1,"ZQ_EvilBet_GiveUp","§· hÕt thêi gian cöa ¶i")
+			Talk(1,"ZQ_EvilBet_GiveUp","The stage time is up")
 		end
 		return 0;
 	end
@@ -1801,7 +1801,7 @@ function OnTimer3()
 	if nCount >= ZQ_COPY_TIME_MAX then
 		RemoveTrigger(GetTrigger(1527 * 2));
 		if gf_GetTaskByte(ZQ_BATTLE_TASK8, 2) < ZQ_RESTARTSEAL_COUNT_MAX then
-			Talk(1,"ZQ_ReStartSeal_Exit","§· hÕt thêi gian cöa ¶i")
+			Talk(1,"ZQ_ReStartSeal_Exit","The stage time is up")
 		end
 		return 0;
 	end
@@ -1818,7 +1818,7 @@ function OnTimer4()
 	local nCount = gf_GetMyTaskByte(ZQ_BATTLE_TASK11, 1, 2);
 	if nCount >= ZQ_COPY_TIME_MAX then
 		RemoveTrigger(GetTrigger(1528 * 2));
-		Talk(1,"ZQ_ProtectSeal_Fail","§· hÕt thêi gian cöa ¶i")
+		Talk(1,"ZQ_ProtectSeal_Fail","The stage time is up")
 		return 0;
 	end
 	FloatMsg2Player(format("Thêi gian v­ît ¶i: %ds\n sè l­îng qu¸i diÖt: %d\n thêi gian cßn l¹i:%ds", ZQ_COPY_TIME_MAX - nCount, gf_GetTaskByte(ZQ_BATTLE_TASK6, 1), ZQ_PROTECTSEAL_TIME_TOTLE - gf_GetMyTaskByte(ZQ_BATTLE_TASK9, 1, 2)));

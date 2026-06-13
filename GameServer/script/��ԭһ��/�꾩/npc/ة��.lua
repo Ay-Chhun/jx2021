@@ -8,7 +8,7 @@ Include("\\script\\online\\viet_event\\vng_task_control.lua");
 Include("\\script\\vng\\config\\newserver.lua");
 
 THIS_RELAY_CALLBACK_SCRIPT = "\\script\\ÖÐÔ­Ò»Çø\\ãê¾©\\npc\\Ø©Ïà.lua";
-g_szInfoHeader = "<color=green>TriÖu Phæ<color>:";
+g_szInfoHeader = "<color=green>Trieu Pho<color>:";
 g_nBuChangBeginDate = 2008080100;	--²¹³¥¿ªÊ¼Ê±¼ä
 g_nBuChangEndDate = 2008080920;	--²¹³¥½áÊøÊ±¼ä¡£Èç¹ûÎª0Ôò±íÊ¾²»¿ª·Å²¹³¥
 if IB_VERSION == 0 then
@@ -167,20 +167,20 @@ TB_BATTLE_EQUIP =
 		[SONG_ID] = {
 					{"Ngù Long Nguyªn So¸i ChiÕn Kh«i",0,103,3008,0},
 					{"Ngù Long Nguyªn So¸i ChiÕn Gi¸p",0,100,3008,1},
-					{"Ngù Long Nguyªn So¸i ChiÕn Trang",0,101,3008,3},
-					{"Ngù Long Nguyªn So¸i Hæ Phï",0,102,3088,-1},
-					{"Ngù Long Nguyªn So¸i LÖnh Kú",0,102,3092,-1},
-					{"Ngù Long Nguyªn So¸i HiÖu Phï",0,102,3096,-1},
-					{"Ngù Long Nguyªn So¸i HiÖu Kú",0,102,3100,-1},
+					{"Imperial Dragon Marshal War Garb",0,101,3008,3},
+					{"Imperial Dragon Marshal Tiger Talisman",0,102,3088,-1},
+					{"Imperial Dragon Marshal Command Banner",0,102,3092,-1},
+					{"Imperial Dragon Marshal Effect Talisman",0,102,3096,-1},
+					{"Imperial Dragon Marshal Effect Banner",0,102,3100,-1},
 					},
 		[LIAO_ID] = {
 					{"Chiªu Th¸nh Nguyªn So¸i Kh«i",0,103,3012,0},
 					{"Chiªu Th¸nh Nguyªn So¸i ChiÕn Gi¸p",0,100,3012,1},
-					{"Chiªu Th¸nh Nguyªn So¸i ChiÕnTrang",0,101,3012,3},
-					{"Chiªu Th¸nh Nguyªn So¸i HiÖu Phï",0,102,3112,-1},
-					{"Chiªu Th¸nh Nguyªn So¸i HiÖu Kú",0,102,3116,-1},	
-					{"Chiªu Th¸nh Nguyªn So¸i Hæ Phï",0,102,3104,-1},					
-					{"Chiªu Th¸nh Nguyªn So¸i LÖnh Kú",0,102,3108,-1},
+					{"Chieu Thanh Marshal Battle Robe",0,101,3012,3},
+					{"Chieu Thanh Marshal Insignia Tally",0,102,3112,-1},
+					{"Chieu Thanh Marshal Insignia Banner",0,102,3116,-1},	
+					{"Chieu Thanh Marshal Tiger Tally",0,102,3104,-1},					
+					{"Chieu Thanh Marshal Command Banner",0,102,3108,-1},
 					},
 	},		
 }
@@ -212,7 +212,7 @@ function main()
 	--if g_nBuChangEndDate ~= 0 and nDate >= g_nBuChangBeginDate and nDate <= g_nBuChangEndDate then
 	--	tinsert(selTab,format("Ta muèn nhËn båi th­êng (KÕt thóc: N¨m %d Th¸ng %d Ngµy %d %d giê)/get_compensation",nYear,nMonth,nDay,nHour));
 	--end;
-	tinsert(selTab,"Kh«ng cã g×/nothing");
+	tinsert(selTab,"Nothing/nothing");
 	Say("L·o phu lµ thõa t­íng cña triÒu ®×nh, t×m ta cã viÖc g× kh«ng?",getn(selTab),selTab);
 end
 
@@ -257,7 +257,7 @@ function main_sub()
 		if(UWorld1503 == 0) then
 			Say("Th¸i tæ b¨ng hµ, hoµng ®Õ míi lªn ng«i, trong triÒu cßn nhiÒu chuyÖn ch­a gi¶i quyÕt. Cã thÓ gióp ta kh«ng?",
 				2,
-				"§ång ý/W1503_yes",
+				"Agree/W1503_yes",
 				"Kh«ng gióp/W1503_no")
 		end
 		if(UWorld1503 == 5 ) then
@@ -287,7 +287,7 @@ end;
 
 function W1503_yes()
 	Talk(1,"","Nha m«n kh«ng ®ñ ng­êi, mau gióp ta t×m vÖ binh thµnh m«n d¸n c¸o thÞ th«ng b¸o cho mäi ng­êi biÕt tin th¸i tæ b¨ng hµ, hoµng ®Õ míi lªn vua.")
-	Talk(1,"","T¹i h¹ ®i ngay!")
+	Talk(1,"","This humble one goes now!")
 	SetTask(1503,5)
 	--AddNote("½Óµ½ÈÎÎñ£º°ïÖúÔ×ÏàÕÔÆÕÈ¥ÕÒ³ÇÃÅÎÀ±ø¡£")
 	TaskTip("NhËn nhiÖm vô: Gióp thõa t­íng TriÖu Phæ t×m vÖ binh thµnh m«n.")
@@ -298,7 +298,7 @@ end;
 
 tb_introduce_rank = {
 	[1] = {"Tiªn Phong", BYTE_TIENPHONG, 3, 2, 1, 0, 120000, 4},
-	[2] = {"T­íng Qu©n", BYTE_TUONGQUAN, 4, 3, 1, 1, 250000, 5},
+	[2] = {"General", BYTE_TUONGQUAN, 4, 3, 1, 1, 250000, 5},
 }
 
 function introduce_rank()
@@ -317,7 +317,7 @@ function introduce_rank()
 	if abs(GetTask(704)) == 6 then
 		tinsert(tSay, "Ta muèn tiÕn cö "..tCampNameZ[nCurCamp].." T­íng qu©n/#offer_rank(2,"..nCurCamp..")")
 	end
-	tinsert(tSay, "Kh«ng cã g×/nothing")	
+	tinsert(tSay, "Nothing/nothing")	
 	Say(g_szInfoHeader.."<color=yellow>Nguyªn So¸i<color> cã thÓ tiÕn cö <color=yellow>3 Tiªn Phong<color> vµ <color=yellow>4 T­íng Qu©n<color> cïng phe, <color=yellow>T­íng Qu©n<color> cã thÓ tiÕn cö 2 Tiªn Phong cïng phe. Tiªn Phong tiÕn cö <color=yellow>cÇn 120000 ®iÓm qu©n c«ng, 2 N÷ Oa Tinh Th¹ch <color>. T­íng Qu©n tiÕn cö <color=yellow>cÇn 2500000 ®iÓm qu©n c«ng, 3 N÷ Oa Tinh Th¹ch<color>. <color=red>Chó ý: qu©n hµm tiÕn cö chØ cã hiÖu lùc trong tuÇn. §Õn 21 giê thø 7 h»ng tuÇn sÏ xÐt l¹i qu©n hµm.<color>",getn(tSay),tSay);
 end
 
@@ -469,12 +469,12 @@ function confirm_offer_rank(nType,nCurCamp)
 	SetTask(TSK_NGUYENSOAI,nVal)
 	if abs(GetTask(704)) == 6 then
 		WriteLogEx("Nguyen Soai tien cu ",szOfferName,1,tb_introduce_rank[nType][1])
-		AddGlobalNews("[Hoµng ®Õ ban chiÕu]: nhËn ®­îc tiÕn cö cña <color=green>"..tCampNameZ[nCurCamp].." Nguyªn So¸i<color> <color=yellow>"..GetName().."<color>, nay phong cho <color=yellow>"..szOfferName.."<color> lµm <color=green>"..tCampNameZ[nCurCamp].." "..tb_introduce_rank[nType][1].."<color>! ThËt lµ tin mõng cho §¹i "..tCampNameZ[nCurCamp].."!" )
-		Say(g_szInfoHeader.."TiÕn cö hoµn tÊt, <color=yellow>"..szOfferName.."<color> ®· trë thµnh "..tCampNameZ[nCurCamp].." "..tb_introduce_rank[nType][1]..". Chóc mõng Nguyªn So¸i!",1,"Xin ®a t¹!/nothing")
+		AddGlobalNews("[Hoµng ®Õ ban chiÕu]: nhËn ®­îc tiÕn cö cña <color=green>"..tCampNameZ[nCurCamp].." Marshal<color> <color=yellow>"..GetName().."<color>, nay phong cho <color=yellow>"..szOfferName.."<color> lµm <color=green>"..tCampNameZ[nCurCamp].." "..tb_introduce_rank[nType][1].."<color>! This is truly joyful news for the Great"..tCampNameZ[nCurCamp].."!" )
+		Say(g_szInfoHeader.."TiÕn cö hoµn tÊt, <color=yellow>"..szOfferName.."<color> ®· trë thµnh "..tCampNameZ[nCurCamp].." "..tb_introduce_rank[nType][1]..". Congratulations, Marshal!",1,"Thank you!/nothing")
 	else
 		WriteLogEx("Tuong Quan tien cu ",szOfferName,1,tb_introduce_rank[nType][1])
-		AddGlobalNews("[Hoµng ®Õ ban chiÕu]: nhËn ®­îc tiÕn cö cña <color=green>"..tCampNameZ[nCurCamp].." T­íng Qu©n<color> <color=yellow>"..GetName().."<color>, nay phong cho <color=yellow>"..szOfferName.."<color> lµm <color=green>"..tCampNameZ[nCurCamp].." "..tb_introduce_rank[nType][1].."<color>! ThËt lµ tin mõng cho §¹i "..tCampNameZ[nCurCamp].."!" )
-		Say(g_szInfoHeader.."TiÕn cö hoµn tÊt, <color=yellow>"..szOfferName.."<color> ®· trë thµnh "..tCampNameZ[nCurCamp].." "..tb_introduce_rank[nType][1]..". Chóc mõng T­íng Qu©n!",1,"Xin ®a t¹!/nothing")
+		AddGlobalNews("[Hoµng ®Õ ban chiÕu]: nhËn ®­îc tiÕn cö cña <color=green>"..tCampNameZ[nCurCamp].." General<color> <color=yellow>"..GetName().."<color>, nay phong cho <color=yellow>"..szOfferName.."<color> lµm <color=green>"..tCampNameZ[nCurCamp].." "..tb_introduce_rank[nType][1].."<color>! This is truly joyful news for the Great"..tCampNameZ[nCurCamp].."!" )
+		Say(g_szInfoHeader.."TiÕn cö hoµn tÊt, <color=yellow>"..szOfferName.."<color> ®· trë thµnh "..tCampNameZ[nCurCamp].." "..tb_introduce_rank[nType][1]..". Congratulations, General!",1,"Thank you!/nothing")
 	end
 end
 
@@ -495,7 +495,7 @@ function change_battle_equip()
 --				"Ta muèn ®æi "..tCampNameZ[nCurCamp].."Trang bÞ Thiªn Chi T­íng Qu©n/#select_equip_type(5,"..nCurCamp..")",
 --				"Ta muèn ®æi "..tCampNameZ[nCurCamp].."Trang bÞ Thiªn Chi Nguyªn So¸i/#select_equip_type(6,"..nCurCamp..")",
 --				"Ta muèn ®æi "..tCampNameZ[nCurCamp].."Trang bÞ Thiªn Chi Nguyªn So¸i vÜnh viÔn/#select_equip_type(7,"..nCurCamp..")",
-				"Kh«ng cã g×/nothing",
+				"Nothing/nothing",
 				}
 	local szString = "";
 	if IB_VERSION == 1 then
@@ -524,8 +524,8 @@ end;
 
 function get_battle_equip_confirm(nType,nCurCamp,nEquipIdx)
 	local selTab = {
-				"§ång ý/#get_battle_equip("..nType..","..nCurCamp..","..nEquipIdx..")",
-				"Hñy bá/nothing",
+				"Agree/#get_battle_equip("..nType..","..nCurCamp..","..nEquipIdx..")",
+				"Cancel/nothing",
 				}
 	local nEnemyCamp = SONGLIAO_ID - nCurCamp;
 	local szCurCampEquipName = TB_BATTLE_EQUIP[nType][nCurCamp][nEquipIdx][1];
@@ -554,7 +554,7 @@ function get_battle_equip(nType,nCurCamp,nEquipIdx)
 	if nTypeID ~= -1 then
 		local nG,nD,nP = GetPlayerEquipInfo(nTypeID)
 		if ((nG ~= nDelID1) or (nD ~= nDelID2) or (nP ~= nDelID3+nBody-1)) then
-			Talk(1,"change_battle_equip",g_szInfoHeader.."Ph¶i cã <color=yellow>"..szDelItemName.."<color> míi cã thÓ ®æi thµnh <color=yellow>"..szItemName.."<color>.");
+			Talk(1,"change_battle_equip",g_szInfoHeader.."You must have <color=yellow>"..szDelItemName.."<color> míi cã thÓ ®æi thµnh <color=yellow>"..szItemName.."<color>.");
 			return 0;
 		end		
 		local nItemIdx = GetPlayerEquipIndex(nTypeID)		
@@ -567,7 +567,7 @@ function get_battle_equip(nType,nCurCamp,nEquipIdx)
 		return 0;
 	end;
 	if nDelItemCount <= 0 then
-		Talk(1,"change_battle_equip",g_szInfoHeader.."Ph¶i cã <color=yellow>"..szDelItemName.."<color> míi cã thÓ ®æi thµnh <color=yellow>"..szItemName.."<color>.");
+		Talk(1,"change_battle_equip",g_szInfoHeader.."You must have <color=yellow>"..szDelItemName.."<color> míi cã thÓ ®æi thµnh <color=yellow>"..szItemName.."<color>.");
 		return 0;
 	end;
 	if GetCash() < 2500000 then
@@ -579,9 +579,9 @@ function get_battle_equip(nType,nCurCamp,nEquipIdx)
 		local nRetCode = AddItem(nID1,nID2,nID3+nBody-1,1,1,-1,-1,-1,-1,-1,-1,0,nUpgrade);
 		if nRetCode == 1 then
 			Msg2Player("B¹n ®· nhËn ®­îc 1 "..szItemName);
-			WriteLog("[Trang bÞ chiÕn tr­êng ®æi]:"..GetName().."§· ®æi 1"..szDelItemName);
+			WriteLog("[Trang bÞ chiÕn tr­êng ®æi]:"..GetName().."Exchanged 1"..szDelItemName);
 		else
-			WriteLog("[Trang bÞ chiÕn tr­êng ®æi bÞ lçi]:"..GetName().."§æi"..szDelItemName.."AddItem gÆp lçi, nRetCode:"..nRetCode);
+			WriteLog("[Trang bÞ chiÕn tr­êng ®æi bÞ lçi]:"..GetName().."§æi"..szDelItemName.."AddItem error, nRetCode:"..nRetCode);
 		end;
 	end;
 end;
@@ -610,7 +610,7 @@ function apply_jungong_save()
 	local selTab = 	{
 								"H·y gióp ta b¶o l­u ®iÓm qu©n c«ng/apply_jungong_confirm",
 								"Ta muèn nhËn l¹i ®iÓm qu©n c«ng/receive_jungong_save",
-								"§Ó ta suy nghÜ ®·/nothing",
+								"Let me think about it/nothing",
 							}
 	if abs(GetTask(TSK_TRANS_POINT)) > 0 then
 		if GetTask(TSK_TRANS_DATE) >= tonumber(date("%Y%m%d")) then			
@@ -635,7 +635,7 @@ function apply_jungong_confirm()
 	local nJungGong = GetTask(701)
 	local nType = 0
 	if nDay ~= 4 then
-		Talk(1,"",g_szInfoHeader.."Thø 5 h»ng tuÇn h·y ®Õn ®©y gÆp l·o phu!")
+		Talk(1,"",g_szInfoHeader.."Come here to see this elder every Thursday!")
 		return
 	end
 	if GetLevel() <80 then
@@ -650,10 +650,10 @@ function apply_jungong_confirm()
 		Talk(1,"",g_szInfoHeader.."Ng­¬i ch­a nhËn l¹i ®iÓm qu©n c«ng ®· b¶o l­u!")
 		return
 	end
-	local strCharge =  "500 vµng"	
+	local strCharge =  "500 gold"	
 	local strSay = {
-							format("Ta ®ång ý!/#apply_jungong_confirm_confirm(%d)",nType),
-							"§Ó ta suy nghÜ ®·/nothing"	
+							format("I agree!/#apply_jungong_confirm_confirm(%d)",nType),
+							"Let me think about it/nothing"	
 						}	
 	Say("§iÓm qu©n c«ng hiÖn t¹i cña ng­¬i lµ <color=yellow>"..abs(nJungGong).."<color>, phÝ b¶o l­u lµ <color=yellow>"..strCharge.."<color>. Sau khi b¶o l­u ®iÓm qu©n c«ng t¹m thêi cña ng­¬i lµ 80000. X¸c nhËn muèn b¶o l­u ®iÓm?",getn(strSay),strSay)
 end
@@ -664,7 +664,7 @@ function apply_jungong_confirm_confirm(nType)
 	local nNextDate = tf_GetResultDate(nDate,1)
 	local nJungGong = GetTask(701)
 	if nDay ~= 4 then
-		Talk(1,"",g_szInfoHeader.."Thø 5 h»ng tuÇn h·y ®Õn ®©y gÆp l·o phu!")
+		Talk(1,"",g_szInfoHeader.."Come here to see this elder every Thursday!")
 		return
 	end
 	if abs(nJungGong) <= 80000 then
@@ -741,9 +741,9 @@ function receive_jungong_save()
 	end
 	local selTab = {
 				"An t©m ®i, ta ®· biÕt råi/#receive_jungong_save_confirm("..nAlterantJunGong..")",
-				"§Ó ta suy nghÜ ®·/nothing",
+				"Let me think about it/nothing",
 				}
-	Say(g_szInfoHeader.."§iÓm qu©n c«ng b¶o l­u hiÖn giê cña ng­¬i ("..tCampNameZ[nCurCamp]..") lµ <color=yellow>"..nSaveJunGong.."<color>, cã thÓ nhËn nhiÒu nhÊt <color=yellow>"..nAlterantJunGong.."<color> ®iÓm qu©n c«ng. §ång ý chø?",getn(selTab),selTab);	
+	Say(g_szInfoHeader.."§iÓm qu©n c«ng b¶o l­u hiÖn giê cña ng­¬i ("..tCampNameZ[nCurCamp]..") are <color=yellow>"..nSaveJunGong.."<color>, cã thÓ nhËn nhiÒu nhÊt <color=yellow>"..nAlterantJunGong.."<color> ®iÓm qu©n c«ng. §ång ý chø?",getn(selTab),selTab);	
 end
 
 
@@ -787,7 +787,7 @@ function apply_jungong_change()
 	
 	local selTab = {
 				"Ta ®· quyÕt ®Þnh, kh«ng cÇn khuyªn n÷a/jungong_change_confirm",
-				"§Ó ta suy nghÜ ®·/nothing",
+				"Let me think about it/nothing",
 				}
 	Say(g_szInfoHeader.."Ng­¬i thËt sù muèn chuyÓn ®Õn doanh tr¹i ®èi ph­¬ng chø? ViÖc nµy rÊt tèn kÐm, hay lµ suy nghÜ kü råi h½n quyÕt ®Þnh! NÕu ng­¬i ®· ®¨ng ký tham gia chiÕn tr­êng, <color=red>sau khi chuyÓn thµnh c«ng, ph¶i ®¨ng ký l¹i<color>, Ng­¬i ®· quyÕt ®Þnh råi chø? <color=red>Chó ý: Ng­êi ch¬i cã qu©n c«ng thÊp h¬n hoÆc b»ng 120000 kh«ng thÓ sö dông tÝnh n¨ng nµy, h·y mua §Çu thµnh tÝn, §Çu thµnh th­ hoÆc §Çu thµnh biÓu ë Ngù C¸c dïng ®Ó tiÕn hµnh chuyÓn ®æi.<color>",getn(selTab),selTab);
 end;
@@ -817,9 +817,9 @@ function jungong_change_confirm()
 	local nNeedItemNum = 3 -- ceil(nAlterantJunGong/120000)^2;
 	local selTab = {
 				"An t©m ®i, ta ®· chuÈn bÞ råi/#jungong_change_confirm_final("..nAlterantJunGong..")",
-				"§Ó ta suy nghÜ ®·/nothing",
+				"Let me think about it/nothing",
 				}
-	Say(g_szInfoHeader.."§iÓm qu©n c«ng hiÖn giê cña ng­¬i ("..tCampNameZ[nCurCamp]..") lµ <color=yellow>"..nCurJunGong.."<color>, chuyÓn ®Õn ®èi ph­¬ng ("..tCampNameZ[nOppCamp]..") cã thÓ chuyÓn nhiÒu nhÊt <color=yellow>"..nAlterantJunGong.."<color> ®iÓm qu©n c«ng, cÇn dïng <color=yellow>"..nNeedItemNum.." §Çu thµnh biÓu vµ 1000 vµng<color>, ng­¬i ch¾c ch¾n muèn chuyÓn chø? <color=red>Chó ý: ChuyÓn qu©n c«ng cã nh÷ng quy t¾c sau: 1. Cã thÓ chuyÓn nhiÒu nhÊt 360000 qu©n c«ng; 2. NÕu 85%®iÓm qu©n c«ng cña ng­êi xÕp ®Çu trong b¶ng xÕp h¹ng qu©n c«ng cña ®èi ph­¬ng nhá h¬n 360000, th× ng­¬i chØ cã thÓ ®æi nhiÒu nhÊt (85% ®iÓm qu©n c«ng cña ng­êi xÕp ®Çu trong b¶ng xÕp h¹ng qu©n c«ng ®èi ph­¬ng).<color>",getn(selTab),selTab);
+	Say(g_szInfoHeader.."§iÓm qu©n c«ng hiÖn giê cña ng­¬i ("..tCampNameZ[nCurCamp]..") are <color=yellow>"..nCurJunGong.."<color>, chuyÓn ®Õn ®èi ph­¬ng ("..tCampNameZ[nOppCamp]..") cã thÓ chuyÓn nhiÒu nhÊt <color=yellow>"..nAlterantJunGong.."<color> ®iÓm qu©n c«ng, cÇn dïng <color=yellow>"..nNeedItemNum.." §Çu thµnh biÓu vµ 1000 vµng<color>, ng­¬i ch¾c ch¾n muèn chuyÓn chø? <color=red>Chó ý: ChuyÓn qu©n c«ng cã nh÷ng quy t¾c sau: 1. Cã thÓ chuyÓn nhiÒu nhÊt 360000 qu©n c«ng; 2. NÕu 85%®iÓm qu©n c«ng cña ng­êi xÕp ®Çu trong b¶ng xÕp h¹ng qu©n c«ng cña ®èi ph­¬ng nhá h¬n 360000, th× ng­¬i chØ cã thÓ ®æi nhiÒu nhÊt (85% ®iÓm qu©n c«ng cña ng­êi xÕp ®Çu trong b¶ng xÕp h¹ng qu©n c«ng ®èi ph­¬ng).<color>",getn(selTab),selTab);
 end;
 
 function jungong_change_confirm_final(nAlterantJunGong)
@@ -843,10 +843,10 @@ function jungong_change_confirm_final(nAlterantJunGong)
 		end;
 		BT_SetData(PT_BATTLE_DATE,0);
 		BT_SetData(PT_SIGN_UP,0);
-		Say(g_szInfoHeader.."B¹n ®Æt thµnh c«ng "..tCampNameZ[nCurCamp].."Ph­¬ng "..nCurJunGong.." ®iÓm c«ng tr¹ng ®æi thµnh"..tCampNameZ[nOppCamp].."Ph­¬ng "..nAlterantJunGong.." ®iÓm qu©n c«ng.",0);
-		Msg2Player("B¹n ®Æt thµnh c«ng "..tCampNameZ[nCurCamp].."Ph­¬ng "..nCurJunGong.." ®iÓm c«ng tr¹ng ®æi thµnh"..tCampNameZ[nOppCamp].."Ph­¬ng "..nAlterantJunGong.." ®iÓm c«ng tr¹ng");
+		Say(g_szInfoHeader.."B¹n ®Æt thµnh c«ng "..tCampNameZ[nCurCamp].."Faction"..nCurJunGong.." ®iÓm c«ng tr¹ng ®æi thµnh"..tCampNameZ[nOppCamp].."Faction"..nAlterantJunGong.." ®iÓm qu©n c«ng.",0);
+		Msg2Player("B¹n ®Æt thµnh c«ng "..tCampNameZ[nCurCamp].."Faction"..nCurJunGong.." ®iÓm c«ng tr¹ng ®æi thµnh"..tCampNameZ[nOppCamp].."Faction"..nAlterantJunGong.." ®iÓm c«ng tr¹ng");
 		SetRankPoint(5,701,1);	--¼ÓÈë¾ü¹¦ÅÅÐÐ°ñ
-		WriteLog("[TriÖu Phæ chuyÓn qu©n c«ng]:"..GetName().."Dïng thÎ"..nNeedItemNum.." §Çu thµnh biÓu thµnh c«ng ®em "..tCampNameZ[nCurCamp].."Ph­¬ng "..nCurJunGong.." ®iÓm c«ng tr¹ng ®æi thµnh"..tCampNameZ[nOppCamp].."Ph­¬ng "..nAlterantJunGong.." ®iÓm c«ng tr¹ng");
+		WriteLog("[TriÖu Phæ chuyÓn qu©n c«ng]:"..GetName().."Use card"..nNeedItemNum.." §Çu thµnh biÓu thµnh c«ng ®em "..tCampNameZ[nCurCamp].."Faction"..nCurJunGong.." ®iÓm c«ng tr¹ng ®æi thµnh"..tCampNameZ[nOppCamp].."Faction"..nAlterantJunGong.." ®iÓm c«ng tr¹ng");
 	else
 		Talk(1,"",g_szInfoHeader.."§æi"..nAlterantJunGong.." ®iÓm qu©n c«ng cÇn "..nNeedItemNum.." §Çu thµnh biÓu.");
 	end;
@@ -928,10 +928,10 @@ function give_battle_compen_confirm(nType)
 		Say(g_szInfoHeader.."Ng­¬i x¸c nhËn kh«ng sö dông Qu©n C«ng Ch­¬ng chø?",getn(selTab),selTab);
 	else
 		local selTab = {
-					format("§ång ý/#give_battle_compensation(%d)",nType),
-					"§Ó ta suy nghÜ/nothing",
+					format("Agree/#give_battle_compensation(%d)",nType),
+					"Let me think about it/nothing",
 					}
-		Say(g_szInfoHeader.."Ng­¬i x¸c nhËn muèn sö dông <color=yellow>"..tbJUNGONGZHANG[nType][1].."<color> chø?",getn(selTab),selTab);
+		Say(g_szInfoHeader.."Ng­¬i x¸c nhËn muèn sö dông <color=yellow>"..tbJUNGONGZHANG[nType][1].."<color> ?",getn(selTab),selTab);
 	end;
 end;
 
@@ -980,7 +980,7 @@ function give_battle_compensation(nType)
 		gf_GoldenExp2Exp(nGoldenExpAward);
 	end;
 	Msg2Player("§©y lµ lÇn thø "..nGotBuChangTimes.." lÇn båi th­êng chiÕn tr­êng");
-	WriteLog("[TriÖu Phæ båi th­êng"..g_nBuChangEndDate.."]"..GetName().."thø"..nGotBuChangTimes.." (cã thÓ l·nh nhiÒu nhÊt "..g_nMaxBuChangTimes.." lÇn) lÇn l·nh båi th­êng chiÕn tr­êng. §¼ng cÊp: "..nLevel..", lo¹i Qu©n C«ng Ch­¬ng:"..nType..", qu©n hµm:"..nCurRank..", qu©n c«ng: "..nJunGong);
+	WriteLog("[TriÖu Phæ båi th­êng"..g_nBuChangEndDate.."]"..GetName().."the"..nGotBuChangTimes.." (cã thÓ l·nh nhiÒu nhÊt "..g_nMaxBuChangTimes.." lÇn) lÇn l·nh båi th­êng chiÕn tr­êng. §¼ng cÊp: "..nLevel..", lo¹i Qu©n C«ng Ch­¬ng:"..nType..", qu©n hµm:"..nCurRank..", qu©n c«ng: "..nJunGong);
 end;
 
 function give_added_comp()
@@ -1004,12 +1004,12 @@ function give_added_comp()
 	local nGoldenExpAward = floor((nLevel^4)/4);
 	local nCurGoldenExp = GetGoldenExp();
 	local selTab = {
-				"NhËn /give_added_comp_confirm",
+				"Claim /give_added_comp_confirm",
 				"T¹m thêi kh«ng nhËn/nothing",
 				}
 	local szGoldenExp = "";
 	if IB_VERSION == 0 then	--Èç¹ûÊÇÊÕ·ÑÇø
-		szGoldenExp = "ChuyÓn <color=yellow>"..nGoldenExpAward.."<color> ®iÓm ®iÓm søc kháe (®iÓm søc kháe hiÖn giê cña ng­¬i lµ <color=yellow>"..nCurGoldenExp.."<color>),";
+		szGoldenExp = "Convert <color=yellow>"..nGoldenExpAward.."<color> ®iÓm ®iÓm søc kháe (®iÓm søc kháe hiÖn giê cña ng­¬i lµ <color=yellow>"..nCurGoldenExp.."<color>),";
 	end;
 	Say(g_szInfoHeader.."Båi th­êng lÇn nµy ng­¬i cã thÓ nhËn <color=yellow>"..nExpAward.."<color>,"..szGoldenExp.."<color=yellow>"..g_nReputation.."<color> ®iÓm danh väng vµ <color=yellow>"..g_nContribute.."<color> ®iÓm cèng hiÕn S­ M«n (cÇn vµo m«n ph¸i). Ng­¬i muèn nhËn båi th­êng nµy chø?",getn(selTab),selTab);
 end;

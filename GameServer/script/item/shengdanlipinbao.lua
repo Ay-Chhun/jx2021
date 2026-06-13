@@ -5,7 +5,7 @@
 function OnUse()
 	Say("<color=green>tói lÔ vËt gi¸ng sinh<color>: kİch ho¹t tói ®ã sÏ nhËn ®­îc 1 c©y th«ng tuyÖt ®Ñp, b¹n x¸c nhËn?",
 		2,
-		"§ång ı/huo_chrims_tree",
+		"Agree/huo_chrims_tree",
 		"Kh«ng cÇn/nothing")
 end
 

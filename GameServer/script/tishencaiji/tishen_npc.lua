@@ -24,7 +24,7 @@ function main()
 		"Nhê ng­êi ñy th¸c thu thËp t×m nguyªn liÖu kh¸c/manage_tishen",
 		"§éi lµm thuª, ta ph¶i nhê hä míi ®­îc/employ_tishen",
 		"T×m hiÓu ng­êi ñy th¸c thu thËp/tishen_shuoming",
-		"Kh«ng cã g×!/end_say",
+		"Nothing here!/end_say",
 	}
 	
 	-- ¼ÆËã»ñµÃµÄÎïÆ·
@@ -41,7 +41,7 @@ function main()
 		end
 	end
 	
-	Say("VŞ "..GetPlayerSex().."CÇn g×?", getn(szSay), szSay)	
+	Say("Position"..GetPlayerSex().."What do you need?", getn(szSay), szSay)	
 end
 
 function employ_tishen()
@@ -54,11 +54,11 @@ function employ_tishen()
 				local nHour = floor(nLastTime / 3600)
 				local nMin = floor(mod(nLastTime, 3600) / 60)
 				local nSec = mod(nLastTime, 60)
-				local szMsg =  " -- §ang thu thËp  : "..szGatherItem.."  Cßn  : "..nHour.."h "..nMin.." Phót "..nSec.." Gi©y "
+				local szMsg =  " -- Now gathering  :"..szGatherItem.."  Remaining  :"..nHour.."h "..nMin.." minutes"..nSec.." Gi©y "
 				if strfind(GetName(), "/") == nil then
-					szSay[ntIndex] = GetName().."-"..szName.."Tæ"..szMsg.."/#employ_tishen_info("..i..")"
+					szSay[ntIndex] = GetName().."-"..szName.."Team"..szMsg.."/#employ_tishen_info("..i..")"
 				else
-					szSay[ntIndex] = szName.."Tæ"..szMsg.."/#employ_tishen_info("..i..")"
+					szSay[ntIndex] = szName.."Team"..szMsg.."/#employ_tishen_info("..i..")"
 				end
 				ntIndex = ntIndex + 1
 			end
@@ -66,20 +66,20 @@ function employ_tishen()
 	end
 	
 	if ntIndex > 1 then
-		szSay[getn(szSay) + 1] = "Rêi khái/end_say"
-		Say("Kh«ng biÕt!"..GetPlayerSex().."§éi nµo sÏ thu thËp?", getn(szSay), szSay)
+		szSay[getn(szSay) + 1] = "Leave/end_say"
+		Say("I don't know!"..GetPlayerSex().."§éi nµo sÏ thu thËp?", getn(szSay), szSay)
 	else
-		Say("<color=green>Ng­êi ñy th¸c thu thËp<color>:"..GetPlayerSex().."T¹i ®©y kh«ng m­ín ®éi ngò thu thËp", 0)
+		Say("<color=green>Gathering Agent<color>:"..GetPlayerSex().."T¹i ®©y kh«ng m­ín ®éi ngò thu thËp", 0)
 	end
 end
 
 function employ_tishen_info(nIndex)
-	Say("Xin hái "..GetPlayerSex().."CÇn ñy th¸c bao l©u?",
+	Say("May I ask"..GetPlayerSex().."How long do you want to commission?",
 		4,
-		"Dïng 1 ThÇn N«ng ®¬n--nhËn ®­îc 8 giê ñy th¸c thu thËp (thu phİ "..GOLD_PER_8_HOUR.." vµng)/#yes_use(1,"..nIndex..")",
-		"Dïng 2 ThÇn N«ng ®¬n--nhËn ®­îc 16 giê ñy th¸c thu thËp (thu phİ "..(GOLD_PER_8_HOUR * 2).." vµng)/#yes_use(2,"..nIndex..")",
-		"Dïng 3 ThÇn N«ng ®¬n--nhËn ®­îc 24 giê ñy th¸c thu thËp (thu phİ "..(GOLD_PER_8_HOUR * 3).." vµng)/#yes_use(3,"..nIndex..")",
-		"§Ó ta xem/main")
+		"Dïng 1 ThÇn N«ng ®¬n--nhËn ®­îc 8 giê ñy th¸c thu thËp (thu phİ "..GOLD_PER_8_HOUR.." gold)/#yes_use(1,"..nIndex..")",
+		"Dïng 2 ThÇn N«ng ®¬n--nhËn ®­îc 16 giê ñy th¸c thu thËp (thu phİ "..(GOLD_PER_8_HOUR * 2).." gold)/#yes_use(2,"..nIndex..")",
+		"Dïng 3 ThÇn N«ng ®¬n--nhËn ®­îc 24 giê ñy th¸c thu thËp (thu phİ "..(GOLD_PER_8_HOUR * 3).." gold)/#yes_use(3,"..nIndex..")",
+		"Let me see/main")
 end
 
 function yes_use(nCount, nIndex)
@@ -108,7 +108,7 @@ function yes_use(nCount, nIndex)
 	
 	if DelItem(2,1,343,nCount) == 1 then
 		AddTishenGatherTime(nIndex, nCount * 8 * 3600)
-		Msg2Player("§ang thu thËp"..szGatherItem.." sÏ gióp b¹n thªm ["..(nCount * 8).."] giê")
+		Msg2Player("Now gathering"..szGatherItem.." sÏ gióp b¹n thªm ["..(nCount * 8).."] hours")
 	end
 end
 
@@ -122,11 +122,11 @@ function manage_tishen()
 				local nHour = floor(nLastTime / 3600)
 				local nMin = floor(mod(nLastTime, 3600) / 60)
 				local nSec = mod(nLastTime, 60)
-				local szMsg =  " -- §ang thu thËp  : "..szGatherItem.."  Cßn  : "..nHour.."h "..nMin.." Phót "..nSec.." Gi©y "
+				local szMsg =  " -- Now gathering  :"..szGatherItem.."  Remaining  :"..nHour.."h "..nMin.." minutes"..nSec.." Gi©y "
 				if strfind(GetName(), "/") == nil then
-					szSay[ntIndex] = GetName().."-"..szName.."Tæ"..szMsg.."/#manage_tishen_info("..i..")"
+					szSay[ntIndex] = GetName().."-"..szName.."Team"..szMsg.."/#manage_tishen_info("..i..")"
 				else
-					szSay[ntIndex] = szName.."Tæ"..szMsg.."/#manage_tishen_info("..i..")"
+					szSay[ntIndex] = szName.."Team"..szMsg.."/#manage_tishen_info("..i..")"
 				end
 				ntIndex = ntIndex + 1
 			end
@@ -134,10 +134,10 @@ function manage_tishen()
 	end
 	
 	if ntIndex > 1 then
-		szSay[getn(szSay) + 1] = "Rêi khái/end_say"
-		Say("Kh«ng biÕt!"..GetPlayerSex().."§éi nµo sÏ thu thËp?", getn(szSay), szSay)
+		szSay[getn(szSay) + 1] = "Leave/end_say"
+		Say("I don't know!"..GetPlayerSex().."§éi nµo sÏ thu thËp?", getn(szSay), szSay)
 	else
-		Say("<color=green>Ng­êi ñy th¸c thu thËp<color>:"..GetPlayerSex().."T¹i ®©y kh«ng m­ín ®éi ngò thu thËp", 0)
+		Say("<color=green>Gathering Agent<color>:"..GetPlayerSex().."T¹i ®©y kh«ng m­ín ®éi ngò thu thËp", 0)
 	end
 end
 
@@ -155,7 +155,7 @@ function manage_tishen_info(nIndex)
 
 	for i = 1, getn(t) do
 		if i > 6 then
-			tSay[i] = "Trang kÕ/#next_page("..nSkillID..")"
+			tSay[i] = "Next page/#next_page("..nSkillID..")"
 			break
 		end
 		tSay[i] = t[i][1].."/#sel_item("..format("%q", t[i][1])..","..t[i][2]..","..nSkillID..")"
@@ -179,7 +179,7 @@ function next_page(nSkillID)
 	end
 	
 	local nIndexID = GetTaskTemp(TISHEN_INDEX_ID)
-	tSay[nIndex] = "Trang tr­íc/#manage_tishen_info("..nIndexID..")"
+	tSay[nIndex] = "Previous page/#manage_tishen_info("..nIndexID..")"
 	tSay[nIndex+1] = "Kh«ng muèn thu thËp nguyªn liÖu kh¸c, gièng ban ®Çu lµ ®­îc/end_say"
 	
 	Say("!!"..GetPlayerSex().." cÇn thu thËp lo¹i vËt phÈm nµo?", getn(tSay), tSay)
@@ -187,9 +187,9 @@ end
 
 function sel_item(szItem, nMapLevel, nSkillID)
 
-	Say("!!"..GetPlayerSex().."X¸c nhËn muèn thu thËp <color=yellow>"..szItem.."<color> chø?",
+	Say("!!"..GetPlayerSex().."X¸c nhËn muèn thu thËp <color=yellow>"..szItem.."<color> ?",
 		2,
-		"§óng/#change_gather("..nMapLevel..","..nSkillID..",\""..szItem.."\")",
+		"Confirm/#change_gather("..nMapLevel..","..nSkillID..",\""..szItem.."\")",
 		"Sai/end_say")
 end
 
@@ -198,7 +198,7 @@ function change_gather(nMapLevel, nSkillID, szItem)
 	local nRet = ChangeTishenGather(nIndex, nMapLevel, nSkillID)
 	if nRet > 0 then
 		local nActionName = GetGatherSkillName(nSkillID)
-		Say("<color=green>Ng­êi ñy th¸c thu thËp<color>:"..GetPlayerSex()..", c¸i ng­êi nµy"..nActionName.."®éi ngò chuyÓn thµnh thu thËp <color=yellow>"..szItem.."<color>", 0)
+		Say("<color=green>Gathering Agent<color>:"..GetPlayerSex()..", c¸i ng­êi nµy"..nActionName.."®éi ngò chuyÓn thµnh thu thËp <color=yellow>"..szItem.."<color>", 0)
 	end
 end
 
@@ -215,23 +215,23 @@ function see_gather_item()
 				local nHour = floor(nLastTime / 3600)
 				local nMin = floor(mod(nLastTime, 3600) / 60)
 				local nSec = mod(nLastTime, 60)
-				szMsg =  " -- §ang thu thËp  : "..szGatherItem.."  Cßn  : "..nHour.."h "..nMin.." Phót "..nSec.." Gi©y "
+				szMsg =  " -- Now gathering  :"..szGatherItem.."  Remaining  :"..nHour.."h "..nMin.." minutes"..nSec.." Gi©y "
 			end
 			
 			if strfind(GetName(), "/") == nil then
-				szSay[ntIndex] = GetName().."-"..szName.."Tæ"..szMsg.."/#seeinfo("..i..")"
+				szSay[ntIndex] = GetName().."-"..szName.."Team"..szMsg.."/#seeinfo("..i..")"
 			else
-				szSay[ntIndex] = szName.."Tæ"..szMsg.."/#seeinfo("..i..")"
+				szSay[ntIndex] = szName.."Team"..szMsg.."/#seeinfo("..i..")"
 			end
 			ntIndex = ntIndex + 1
 		end
 	end
 	
 	if ntIndex > 1 then
-		szSay[getn(szSay) + 1] = "Rêi khái/end_say"
-		Say("Kh«ng biÕt!"..GetPlayerSex().."®Şnh cho ®¸m ng­êi nµo ®i thu thËp vËt phÈm?", getn(szSay), szSay)
+		szSay[getn(szSay) + 1] = "Leave/end_say"
+		Say("I don't know!"..GetPlayerSex().."®Şnh cho ®¸m ng­êi nµo ®i thu thËp vËt phÈm?", getn(szSay), szSay)
 	else
-		Say("<color=green>Ng­êi ñy th¸c thu thËp<color>:"..GetPlayerSex().."T¹i ®©y kh«ng m­ín ®éi ngò thu thËp", 0)
+		Say("<color=green>Gathering Agent<color>:"..GetPlayerSex().."T¹i ®©y kh«ng m­ín ®éi ngò thu thËp", 0)
 	end
 end
 
@@ -242,7 +242,7 @@ function seeinfo(nIndex)
 	local nCount = 1
 	for index, value in t do
 		if nCount > MAX_PAGE_ITEM_COUNT then
-			szSay[nCount] = "Trang kÕ/#next_item_page("..nIndex..","..nCount..")"
+			szSay[nCount] = "Next page/#next_item_page("..nIndex..","..nCount..")"
 			break
 		end
 		-- n = nGenre << 24 | nDetail << 16 | nParticular
@@ -253,10 +253,10 @@ function seeinfo(nIndex)
 	
 	if nCount > 1 then
 		szSay[getn(szSay) + 1] = "LÊy tÊt c¶ vËt phÈm ra/#get_all_gather_item("..nIndex..")"
-		szSay[getn(szSay) + 1] = "Rêi khái/end_say"
+		szSay[getn(szSay) + 1] = "Leave/end_say"
 		Say("§¸m ng­êi nµy thu thËp ®­îc mÊy vËt phÈm sau. <color=yellow>(Tr­íc khi lÊy vËt phÈm xin x¸c nhËn hµnh trang ®ñ kho¶ng trèng vµ søc lùc)<color>", getn(szSay), szSay)
 	else
-		Say("§¸m ng­êi nµy t¹m thêi ch­a thu thËp ®­îc vËt phÈm, mêi "..GetPlayerSex().."khi kh¸c quay l¹i!", 2, "trë l¹i/main", "Rêi khái/end_say")
+		Say("§¸m ng­êi nµy t¹m thêi ch­a thu thËp ®­îc vËt phÈm, mêi "..GetPlayerSex().."khi kh¸c quay l¹i!", 2, "trë l¹i/main", "Leave/end_say")
 	end
 end
 
@@ -269,7 +269,7 @@ function next_item_page(nIndex, nPageIndex)
 	for index, value in t do
 		if nPos >= nPageIndex then
 			if nCount > MAX_PAGE_ITEM_COUNT then
-				szSay[nCount] = "Trang kÕ/next_item_page("..nIndex..","..(MAX_PAGE_ITEM_COUNT + nPageIndex)..")"
+				szSay[nCount] = "Next page/next_item_page("..nIndex..","..(MAX_PAGE_ITEM_COUNT + nPageIndex)..")"
 				break
 			end
 			-- n = nGenre << 24 | nDetail << 16 | nParticular
@@ -282,7 +282,7 @@ function next_item_page(nIndex, nPageIndex)
 	
 	if nCount > 1 then
 		szSay[getn(szSay) + 1] = "LÊy tÊt c¶ vËt phÈm ra/#get_all_gather_item("..nIndex..")"
-		szSay[getn(szSay) + 1] = "Rêi khái/end_say"
+		szSay[getn(szSay) + 1] = "Leave/end_say"
 		Say("§¸m ng­êi nµy thu thËp ®­îc mÊy vËt phÈm sau. <color=yellow>(Tr­íc khi lÊy vËt phÈm xin x¸c nhËn hµnh trang ®ñ kho¶ng trèng vµ søc lùc)<color>", getn(szSay), szSay)
 	end
 end
@@ -300,10 +300,10 @@ function get_all_gather_item(nIndex)
 		local nRet = UpdateTishenGatherInfo(nIndex, n, value.nItemCount)
 		if nRet > 0 then
 			local str = format("ChuÈn bŞ nhËn (%d,%d,%d) %d",value.nGenre,value.nDetail,value.nParticular,value.nItemCount)
-			str = "[ñy th¸c thu thËp]"..GetName()..str
+			str = "[Gathering Commission]"..GetName()..str
 			WriteLog(str)
 			if AddItem(value.nGenre, value.nDetail, value.nParticular, value.nItemCount, 1) == 1 then
-				WriteLog("[ñy th¸c thu thËp]"..GetName().."NhËn vËt phÈm thµnh c«ng")
+				WriteLog("[Gathering Commission]"..GetName().."NhËn vËt phÈm thµnh c«ng")
 			end
 		else
 			Msg2Player("Hµnh trang vµ søc lùc cña b¹n ®· v­ît møc")
@@ -322,7 +322,7 @@ function ggi(nItem, nMax, nIndex, sz)
 	SetTaskTemp(TISHEN_INDEX_ID, nIndex)
 	SetTaskTemp(TISHEN_ITEM_VALUE, nItem)
 	
-	AskClientForNumber("get_gather_item_callback", 1, tonumber(nMax), "LÊy"..sz);
+	AskClientForNumber("get_gather_item_callback", 1, tonumber(nMax), "Take"..sz);
 end
 
 function get_gather_item_callback(nCount)
@@ -362,10 +362,10 @@ function get_gather_item_callback(nCount)
 	local nRet = UpdateTishenGatherInfo(nTishenIndex, n, nCount)
 	if nRet > 0 then
 		local str = format("ChuÈn bŞ nhËn (%d,%d,%d) %d",nGenre,nDetail,nParticular,nCount)
-		str = "[ñy th¸c thu thËp]"..GetName()..str
+		str = "[Gathering Commission]"..GetName()..str
 		WriteLog(str)
 		if AddItem(nGenre, nDetail, nParticular, nCount, 1) == 1 then
-			WriteLog("[ñy th¸c thu thËp]"..GetName().."NhËn vËt phÈm thµnh c«ng")
+			WriteLog("[Gathering Commission]"..GetName().."NhËn vËt phÈm thµnh c«ng")
 		end
 	else
 		Msg2Player("Hµnh trang vµ søc lùc cña b¹n ®· v­ît møc")
@@ -388,10 +388,10 @@ function learn_exp()
 	end
 	
 	if ntIndex > 1 then
-		szSay[getn(szSay) + 1] = "Rêi khái/end_say"
-		Say("Kh«ng biÕt!"..GetPlayerSex().."®Şnh cho ®¸m ng­êi nµo ®i thu thËp kinh nghiÖm?", getn(szSay), szSay)
+		szSay[getn(szSay) + 1] = "Leave/end_say"
+		Say("I don't know!"..GetPlayerSex().."®Şnh cho ®¸m ng­êi nµo ®i thu thËp kinh nghiÖm?", getn(szSay), szSay)
 	else
-		Say("<color=green>Ng­êi ñy th¸c thu thËp<color>:"..GetPlayerSex().."T¹i ®©y kh«ng m­ín ®éi ngò thu thËp", 0)
+		Say("<color=green>Gathering Agent<color>:"..GetPlayerSex().."T¹i ®©y kh«ng m­ín ®éi ngò thu thËp", 0)
 	end
 end
 
@@ -400,12 +400,12 @@ function see_exp_info(nIndex)
 	
 	nRet = GetTishenGatherExp(nIndex)
 	if nRet == nil then
-		Say("<color=green>Ng­êi ñy th¸c thu thËp<color>:"..GetPlayerSex().."Kh«ng cã kü n¨ng sèng, kh«ng thÓ nhËn kinh nghiÖm tõ nh©n c«ng thu thËp.", 0)
+		Say("<color=green>Gathering Agent<color>:"..GetPlayerSex().."Kh«ng cã kü n¨ng sèng, kh«ng thÓ nhËn kinh nghiÖm tõ nh©n c«ng thu thËp.", 0)
 		AddTishenGatherExp(nIndex)	-- Ã»ÓĞ´ËÉú»î¼¼ÄÜµÄAdd²Ù×÷ÎªÇå¿Õ´ËÀàÌæÉíµÄ¾­Ñé
 	elseif nRet > 0 then
-		Say("<color=green>Ng­êi ñy th¸c thu thËp<color>:"..GetPlayerSex().."Cã thÓ nhËn "..nRet.." ®iÓm thu thËp kinh nghiÖm. \n<color=red>Chó ı: Nh÷ng ®éi ngò thu thËp kh¸c kinh nghiÖm nhËn ®­îc sÏ bŞ xãa bá.<color>", 3, "NhËn ®iÓm/#yes_get_exp("..nIndex..")", "Xem nh÷ng ®éi ngò kh¸c/learn_exp", "Rêi khái/end_say")
+		Say("<color=green>Gathering Agent<color>:"..GetPlayerSex().."Cã thÓ nhËn "..nRet.." ®iÓm thu thËp kinh nghiÖm. \n<color=red>Chó ı: Nh÷ng ®éi ngò thu thËp kh¸c kinh nghiÖm nhËn ®­îc sÏ bŞ xãa bá.<color>", 3, "NhËn ®iÓm/#yes_get_exp("..nIndex..")", "Xem nh÷ng ®éi ngò kh¸c/learn_exp", "Leave/end_say")
 	else
-		Say("§¸m ng­êi nµy t¹m thêi ch­a thu thËp ®­îc, mêi "..GetPlayerSex().."khi kh¸c quay l¹i!", 2, "trë l¹i/main", "Rêi khái/end_say")
+		Say("§¸m ng­êi nµy t¹m thêi ch­a thu thËp ®­îc, mêi "..GetPlayerSex().."khi kh¸c quay l¹i!", 2, "trë l¹i/main", "Leave/end_say")
 	end
 end
 
@@ -415,12 +415,12 @@ function yes_get_exp(nIndex)
 end
 
 function tishen_shuoming()
-	Say("VŞ "..GetPlayerSex().."muèn t×m hiÓu g× vÒ ñy th¸c thu thËp?",
+	Say("Position"..GetPlayerSex().."muèn t×m hiÓu g× vÒ ñy th¸c thu thËp?",
 		4,
 		"ñy th¸c thu thËp cÇn nh÷ng g×?/wupinshuoming",
 		"Gi¶i thİch ®éi ngò m­ín/duiwushuoming",
 		"Sau khi ñy th¸c thu thËp t¹i n¬i ®ã nhËn kinh nghiÖm vµ vËt phÈm/lingqushuoming",
-		"Rêi khái./main")
+		"Leave./main")
 end
 
 function wupinshuoming()

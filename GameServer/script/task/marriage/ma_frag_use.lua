@@ -9,8 +9,8 @@ Include("\\script\\online\\zgc_public_fun.lua")		--´å³¤µÄ¹«¹²º¯Êý
 goods_id_tasktempID = 167
 Tb_frag = {}
 Tb_frag[568] = "Gi¸p Méc d­¬ng"
-Tb_frag[569] = "Êt Méc ©m"
-Tb_frag[570] = "BÝnh háa d­¬ng"
+Tb_frag[569] = "Yi Wood Yin"
+Tb_frag[570] = "Bing Fire Yang"
 Tb_frag[571] = "§inh Háa ©m"
 --============================½Å±¾Âß¼­Çø==============================
 function OnUse(goods_index)
@@ -22,7 +22,7 @@ function OnUse(goods_index)
 	--¶Ô»°
 	local goods_ID = GetItemParticular(goods_index)
 	SetTaskTemp(goods_id_tasktempID,goods_ID)
-	Say("<color=green>Gîi ý<color>: <color=yellow>"..Tb_frag[goods_ID].."<color> cã thÓ dung hßa nguyªn tè kh¸c trong <color=yellow>Khiªn V©n Phi Tinh Phæ<color> thµnh <color=yellow>VËt phÈm Phu thª<color>, còng cã thÓ tù chuyÓn hãa thµnh <color=yellow>Uyªn ¦¬ng KÕt<color>. <color=yellow>Uyªn ¦¬ng KÕt<color> lµ <color=yellow>vËt cÇn thiÕt<color> ®Ó sö dông kü n¨ng <color=yellow>H«n Nh©n<color>. B¹n muèn cho vµo <color=yellow>Khiªn V©n Phi Tinh Phæ<color> hay chuyÓn hãa thµnh <color=yellow>Uyªn ¦¬ng KÕt<color>?",
+	Say("<color=green>Hint<color>: <color=yellow>"..Tb_frag[goods_ID].."<color> cã thÓ dung hßa nguyªn tè kh¸c trong <color=yellow>Khiªn V©n Phi Tinh Phæ<color> thµnh <color=yellow>VËt phÈm Phu thª<color>, còng cã thÓ tù chuyÓn hãa thµnh <color=yellow>Uyªn ¦¬ng KÕt<color>. <color=yellow>Uyªn ¦¬ng KÕt<color> lµ <color=yellow>vËt cÇn thiÕt<color> ®Ó sö dông kü n¨ng <color=yellow>H«n Nh©n<color>. B¹n muèn cho vµo <color=yellow>Khiªn V©n Phi Tinh Phæ<color> hay chuyÓn hãa thµnh <color=yellow>Uyªn ¦¬ng KÕt<color>?",
 	3,
 	"Cho vµo Khiªn V©n Phi Tinh Phæ/#put_in_num("..goods_ID..")",
 	"ChuyÓn hãa thµnh Uyªn ¦¬ng KÕt/frag_change_dtm",
@@ -54,7 +54,7 @@ function put_in(goods_num)
 		return
 	end
 	SetTask((goods_ID+653),(GetTask(goods_ID+653)+goods_num))
-	Talk(1,"","<color=green>Gîi ý<color>: <color=yellow>"..goods_num.."<color> <color=yellow>"..Tb_frag[goods_ID].." <color> ®· thµnh c«ng cho vµo <color=yellow>Khiªn V©n Phi Tinh Phæ<color>, muèn dung hßa <color=yellow>VËt phÈm Phu thª<color> chän chuét ph¶i ngay <color=yellow>Khiªn V©n Phi Tinh Phæ<color>.!")
+	Talk(1,"","<color=green>Hint<color>: <color=yellow>"..goods_num.."<color> <color=yellow>"..Tb_frag[goods_ID].." <color> ®· thµnh c«ng cho vµo <color=yellow>Khiªn V©n Phi Tinh Phæ<color>, muèn dung hßa <color=yellow>VËt phÈm Phu thª<color> chän chuét ph¶i ngay <color=yellow>Khiªn V©n Phi Tinh Phæ<color>.!")
 end
 --*************************½»»»Ô§Ñì½á¶Ô»°***********************
 function frag_change_dtm()
@@ -90,6 +90,6 @@ function frag_change(goods_num)
 	end
 	--Ôö¼ÓÔ§Ñì½á
 	if AddItem(2,1,572,goods_num) == 1 then
-		Msg2Player("Chóc mõng b¹n ®· chuyÓn ®æi"..goods_num.." 'Uyªn ¦¬ng KÕt'!")
+		Msg2Player("Chóc mõng b¹n ®· chuyÓn ®æi"..goods_num.." 'Mandarin Duck Knot'!")
 	end
 end

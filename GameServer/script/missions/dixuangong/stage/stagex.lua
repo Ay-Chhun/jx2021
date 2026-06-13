@@ -65,18 +65,18 @@ tStageX = {
 		{"Ng­êi gç1", "Tinh Anh §Þa HuyÒn Cung"},
 		{"Ng­êi gç1", "Tinh Anh §Þa HuyÒn Cung"},
 
-		{"yinbaoxiang", "R­¬ng B¹c", 180},
-		{"tongbaoxiang", "R­¬ng §ång", 180},
+		{"yinbaoxiang", "Silver Chest", 180},
+		{"tongbaoxiang", "Copper Chest", 180},
 		--{"Ïä×ÓÇ®", "ÌìÒõ¾«Á¦Ïä", 180},
 	},
 --	stepLimit = 600,
 	tGodState	= {
-		tInfo	= {"Thiªn thÇn h¹ phµm", 10, "Duy tr× %d phót"},
+		tInfo	= {"Thiªn thÇn h¹ phµm", 10, "Lasts %d minutes"},
 		tState	= {
 			[1] = {9908, "state_p_attack_percent_add",	700,	"Ngo¹i c«ng t¨ng %d%%"},
 			[2] = {9909, "state_m_attack_percent_add",	700,	"Néi c«ng t¨ng %d%%"},
 			[3] = {9910, "state_life_max_percent_add",	300,	"Giíi h¹n m¸u t¨ng %d%%"},
-			[4] = {9911, "state_buff_resist",			14,		"MiÔn dÞch tr¹ng th¸i bÞ h¹i %d"},
+			[4] = {9911, "state_buff_resist",			14,		"Immune to harmful status %d"},
 		},
 	},
 }
@@ -88,11 +88,11 @@ msgs = {
 		"MÊy tªn bªn kia lµm g× mµ kh«ng thÊy ng­¬I bao giê",
 		"Kh«ng lÏ lµ ®Õn nhËp gi¸o sao?",
 	},{
-		"Tèi nay ®©u ®©y, cho ý kiÕn ®i!",
+		"Tonight then, give me your opinion!",
 		"Nghe nãi Long M«n Kh¸ch còng ®­îc ®Êy",
 		"Ph¶i , ph¶i, cßn cã bµ chñ kia n÷a",
 		"C¸c ng­¬i lµ ai, sao vµo ®­îc ®©y chø",
-		"DiÖt hÕt bon hä, kiÕm tÝ tiÒn",
+		"Wipe them all out and earn a bit of money",
 	},
 }
 --------------------------------------------------------------------
@@ -267,7 +267,7 @@ function phasex_2:onInit()
 	ClearMapNpc(g_theMS:getMapId(), nil);
 	g_theMS.msTimer:setInterval(self.stepInterval);
 	g_theMS:onTimer();
-	g_theMS.msCamp[1]:turnPlayer(StartTimeGuage,"Thanh tr­ît thêi gian", self.stepLimit, 0);
+	g_theMS.msCamp[1]:turnPlayer(StartTimeGuage,"Time slider", self.stepLimit, 0);
 	g_theMS.msCamp[1]:turnPlayer(tStageX.AddGodState, tStageX);
 	g_theMS.msCamp[1]:turnPlayer(StartTimeGuage,"Thêi gian håi sinh", 15, 1, 1);
 	SetMissionV(MV_BOSS_COUNT, 0);

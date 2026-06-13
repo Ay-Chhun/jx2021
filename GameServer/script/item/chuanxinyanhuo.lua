@@ -21,7 +21,7 @@ function OnUse()
 	if GetFightState() == 1 and nMapID < 700 then
 		Say("B¹n x¸c nhËn muèn gäi 1 NhÊt PhÈm §­êng s¸t thñ ra gióp søc cho b¹n?",
 				2,
-				"§­îc/yes",
+				"Yes/yes",
 				"Kh«ng cÇn/no")
 	else
 		Talk(1,"","B¹n chØ cã thÓ sö dông vËt phÈm nµy ë ngoµi thµnh!");

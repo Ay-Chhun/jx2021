@@ -55,43 +55,43 @@ AWARD_CSZZ2 = 1626	--¼ÇÂ¼ÁìÈ¡²æÉÕôÕ×ÓµÄÊ±¼ä
 AWARD_DIARY1 = 1627	--¼ÇÂ¼µ±ÌìÁìÈ¡±ÈÈüÈÕ¼ÇµÄ´ÎÊı
 AWARD_DIARY2 = 1628	--¼ÇÂ¼ÁìÈ¡±ÈÈüÈÕ¼ÇµÄÈÕÆÚ
 --================================================================
-NumTab = {"mét","hai","ba","bèn","Ngò ","s¸u","b¶y","t¸m","chİn","ThËp"};
+NumTab = {"mét","hai","ba","ben","Wu","six","seven","eight","nine","Ten"};
 --================================================================
 RoomName = {
-		"M©n Giang  ",
+		"Min River",
 		"Cöu Long Giang",
-		"TÊn Giang  ",
+		"Jin River",
 		"Thinh Giang  ",
-		"Giao Khª  ",
-		"MŞch La Giang",
-		"Méc Lan Khª",
+		"Jiao Creek",
+		"Miluo River",
+		"Mulan Creek",
 		"Ch©u Giang  ",---------------------------------------		
 		"Hoµng Hµ  ",
 		"Hång Y Gi¶n",
-		"L¹c Hµ  ",
-		"Y Hµ  ",
-		"M·ng Hµ  ",
-		"TÈm Hµ  ",
-		"§an Hµ  ",
-		"MÉu §¬n Giang",----------------------------------------	
+		"Luc River",
+		"Y River",
+		"Mang River",
+		"Tam River",
+		"Dan River",
+		"Mudan River",----------------------------------------	
 		"Tr­êng Giang  ",
-		"Phñ Hµ  ",
-		"Nam Hµ  ",
-		"Sa Hµ  ",
+		"Phu River",
+		"South River",
+		"Sa River",
 		"Thanh Thñy Hµ",
-		"Giang An Hµ",
-		"Kim Sa Hµ",
+		"Giang An River",
+		"Kim Sa River",
 		"D­¬ng Tö Giang",
 		};
 --=================================================================================================
 BoatInfo = {
-		{"ThuyÒn Rång phæ th«ng","ThuyÒn Rång phæ th«ng kh«ng cã mµu s¾c vµ tİnh n¨ng ®Æc biÖt."},
+		{"Standard Dragon Boat","ThuyÒn Rång phæ th«ng kh«ng cã mµu s¾c vµ tİnh n¨ng ®Æc biÖt."},
 		{"ThuyÒn Rång Thñy Ph¸o","Cã kh¶ n¨ng b¾n thñy ®¹n rÊt m¹nh vµ tÊn c«ng ®èi thñ tõ xa."},
 		{"ThuyÒn Rång Thñy L«i","Cã kh¶ n¨ng ch«n thñy l«i d­íi n­íc, ®èi thñ ®i qua sÏ bŞ chÊn ®éng."},
 		{"ThuyÒn Rång Thñy L·ng","Cã kh¶ n¨ng t¹o ra mét bøc t­êng sãng ng¨n c¶n ®èi ph­¬ng ®i qua."},
-		{"ThuyÒn rång §o¶n Binh","TuyÓn thñ bªn c¹nh t¹m thêi kh«ng thÓ tiÕn lªn"},
-		{"ThuyÒn Rång Liªn X¹","Cã kh¶ n¨ng b¾n thñy ®¹n khiÕn ®èi thñ bŞ cho¸ng, ­u ®iÓm lµ mét lÇn cã thÓ b¸n nhiÒu ph¸t."},
-		{"ThuyÒn rång TiÒm Hµnh","Khi bŞ t­êng sãng cña ®èi thñ tÊn c«ng kh«ng nh÷ng kh«ng bŞ cho¸ng mµ cßn m­în søc m¹nh cña t­êng sãng lÆn xuèng n­íc tr¸nh ®èi thñ trong mét kho¶ng thêi gian."},
+		{"Dragon Boat Short Soldier","TuyÓn thñ bªn c¹nh t¹m thêi kh«ng thÓ tiÕn lªn"},
+		{"Dragon Boat Volley","Cã kh¶ n¨ng b¾n thñy ®¹n khiÕn ®èi thñ bŞ cho¸ng, ­u ®iÓm lµ mét lÇn cã thÓ b¸n nhiÒu ph¸t."},
+		{"Dragon Boat Stealth","Khi bŞ t­êng sãng cña ®èi thñ tÊn c«ng kh«ng nh÷ng kh«ng bŞ cho¸ng mµ cßn m­în søc m¹nh cña t­êng sãng lÆn xuèng n­íc tr¸nh ®èi thñ trong mét kho¶ng thêi gian."},
 		};
 --=================================================================================================
 BoxPos = {

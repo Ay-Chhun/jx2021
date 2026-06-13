@@ -20,7 +20,7 @@ function talk_compose_pojingshi(szNpcName, bConfirm)
 		local szTitle = format("<color=gold>%s<color>:%s",szNpcName, "MuËn gh–p Ph∏ Tinh Thπch sao? Ph∏ Tinh Thπch lµ nguy™n li÷u c«n Æ” c≠Íng h„a c p 16-20")
     	local tbSay = {}
     	tinsert(tbSay, format("%s/#talk_compose_pojingshi('%s', 1)", "Gh–p Ph∏ Tinh Thπch", szNpcName))
-    	tinsert(tbSay, format("%s/nothing", "Ra kh·i"))
+    	tinsert(tbSay, format("%s/nothing", "Exit"))
     	Say(szTitle, getn(tbSay), tbSay)
 	else
 		T_ExchangePojingshi:npc_talk_main(szNpcName, 1)

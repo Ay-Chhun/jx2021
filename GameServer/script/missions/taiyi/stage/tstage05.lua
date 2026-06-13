@@ -48,7 +48,7 @@ function tStage05_1:Init()
 	TY_ClearColdDown();
 	self:CreateNpcs();
 	this.msCamp:turnPlayer(0, TY_SetPlayerPos, tPlayerPos[self.father.nStageId][1]);
-	this.msCamp:turnPlayer(0, function() HeadMsg2Player("§éi tr­ëng vµ Méc QuÕ Anh ®èi tho¹i ®Ó tiÕp tôc ¶i!") end);
+	this.msCamp:turnPlayer(0, function() HeadMsg2Player("Team leader, talk to Mu Guiying to continue the stage!") end);
 end
 
 function tStage05_1:BeginFight()
@@ -66,7 +66,7 @@ end
 function tStage05_1:CheatMode()
 	local self = tStage05_1;
 	if GetItemCount(TYT_IB_ITEM[2], TYT_IB_ITEM[3], TYT_IB_ITEM[4]) < 1 then
-		Talk(1, "", "<color=green>Méc QuÕ Anh<color>: Trªn ng­êi b¹n"..TYT_IB_ITEM[1].."Kh«ng ®ñ.");
+		Talk(1, "", "<color=green>Méc QuÕ Anh<color>: Trªn ng­êi b¹n"..TYT_IB_ITEM[1].."Not enough.");
 		return 0;
 	end
 	if 1 ~= DelItem(TYT_IB_ITEM[2], TYT_IB_ITEM[3], TYT_IB_ITEM[4], 1) then return 0; end
@@ -114,7 +114,7 @@ function tStage05_1:NpcMain()
 			--"H×nh thøc sao chÐp (CÇn "..TYT_IB_ITEM[1].."*1)/#tStage05_1.CheatMode()",
 --			"½áÊøµÚÎå¹Ø/#tStage05_1.EndStage06()",
 			"Ta muèn rêi khái ¶i/TY_ConfirmClose",
-			"Hñy bá/nothing",
+			"Cancel/nothing",
 		};
 	end
 	
@@ -123,7 +123,7 @@ function tStage05_1:NpcMain()
 			"Më ¶i 2: NghiÖp NhÉn/#tStage05_1.BeginFight()",
 --			"½áÊøµÚÎå¹Ø/#tStage05_1.EndStage06()",
 			"Ta muèn rêi khái ¶i/TY_ConfirmClose",
-			"Hñy bá/nothing",
+			"Cancel/nothing",
 		};
 	end
 	
@@ -240,7 +240,7 @@ function tStage05_2:AddNBJ()
 		return 0;
 	end
 	
-	gf_AddItemEx({2, 95, 1510, 1}, "Ng­ng B¨ng QuyÕt");
+	gf_AddItemEx({2, 95, 1510, 1}, "Ningbing Jue");
 end
 
 function tStage05_2:DelNBJ()
@@ -461,7 +461,7 @@ function tStage05_2:NpcTalk()
 	local tContent = {
 		[1] = {
 			{nYzbIdx, "Khoan, h·y dõng l¹i! Ta biÕt luång khÝ nãng báng nµy lµ g×!"},
-			{nMgyIdx, "C¸i g×?"},
+			{nMgyIdx, "What?"},
 			{nYzbIdx, "¸nh s¸ng hõng hùc, khÝ thÕ b¸ ®¹o, rÊt gièng c¶nh t­îng Gia Gia xuÊt chinh!"},
 			{nMgyIdx, "Nh­ng ng­êi ë trªn c¸i ®µi ®ã, sao kh«ng gièng víi l·o lÖnh c«ng cña chóng ta."},
 			{nYzbIdx, "……"},
@@ -606,7 +606,7 @@ function tStage05_3:NpcMain()
 			tStage05_3.sel = {
 				"TruyÒn tèng ®Õn Th¸i NhÊt Th¸p-§Ønh/#tStage05_3.GoToStage07()",
 				"Ta muèn rêi khái ¶i/TY_ConfirmClose",
-				"Hñy bá/nothing",
+				"Cancel/nothing",
 			};
 		end
 		Say("<color=green>Méc QuÕ Anh<color>: §ång ý ®Õn Th¸i NhÊt Th¸p-§Ønh?", getn(tStage05_3.sel), tStage05_3.sel);

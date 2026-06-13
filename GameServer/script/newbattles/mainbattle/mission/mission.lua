@@ -15,9 +15,9 @@ function InitMission()
 	SetNpcScript(npcIndex,"\\script\\newbattles\\mainbattle\\maingeneral_npc.lua");
 	npcIndex = CreateNpc(sModelName2,sCampName2.."Chñ so¸i",MAPID,1961,3735);
 	SetNpcScript(npcIndex,"\\script\\newbattles\\mainbattle\\maingeneral_npc.lua");
-	npcIndex = CreateNpc("R­¬ng ®å Trung Nguyªn",sCampName1.."Qu©n nhu quan",MAPID,1512,3754);
+	npcIndex = CreateNpc("R­¬ng ®å Trung Nguyªn",sCampName1.."Army Supply Officer",MAPID,1512,3754);
 	SetNpcScript(npcIndex,"\\script\\newbattles\\quartermaster_npc.lua");
-	npcIndex = CreateNpc("R­¬ng ®å Trung Nguyªn",sCampName2.."Qu©n nhu quan",MAPID,1985,3746);
+	npcIndex = CreateNpc("R­¬ng ®å Trung Nguyªn",sCampName2.."Army Supply Officer",MAPID,1985,3746);
 	SetNpcScript(npcIndex,"\\script\\newbattles\\quartermaster_npc.lua");
 	npcIndex = CreateNpc("VÖ binh thµnh m«n","Binh sÜ",MAPID,1571,3735);
 	SetNpcScript(npcIndex,"\\script\\newbattles\\mainbattle\\soldier_npc.lua");
@@ -56,7 +56,7 @@ function RunMission()
 	local nVillageCamp = GetGlbValue(GLB_VILLAGE);
 	local nEmplacementCamp = GetGlbValue(GLB_EMPLACEMENT);
 	local nResourceCamp = GetGlbValue(GLB_RESOURCE);
-	WriteLog("[ChiÕn tr­êng]: ChiÕn tr­êng chÝnh ®· b¾t ®Çu, kÕt qu¶ phô: Th«n trang ("..nVillageCamp.."), Th¶o cèc ("..nResourceCamp.."), Ph¸o ®µi ("..nResourceCamp..")");
+	WriteLog("[ChiÕn tr­êng]: ChiÕn tr­êng chÝnh ®· b¾t ®Çu, kÕt qu¶ phô: Th«n trang ("..nVillageCamp.."), Herb Valley ("..nResourceCamp.."), Fort ("..nResourceCamp..")");
 	Create_Emplacement(ALL_ID,nEmplacementCamp);	--¹«¹²ÅÚÌ¨ÊôÓÚÅÚÌ¨Õ½Ó®µÄÒ»·½£¨Æ½ÊÖ¾ÍÊÇ¹«¹²µÄÀ²£©
 	if GetGlbValue(RANDOM_PLACE) == 1 then
 		Create_Emplacement(SONG_ID,LIAO_ID);

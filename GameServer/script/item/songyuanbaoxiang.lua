@@ -13,8 +13,8 @@ function OnUse(nItemIdx)
 		return 0;
 	end;
 	local selTab = {
-			format("§ång ý/#use(%d,%d)",nItemIdx,nIdx),
-			"Hñy bá/nothing",
+			format("Agree/#use(%d,%d)",nItemIdx,nIdx),
+			"Cancel/nothing",
 			}
 	Say("B¹n muèn më <color=yellow>"..g_tbItem[nIdx][4].."<color>? B¹n sÏ nhËn ®­îc <color=yellow>"..g_tbItem[nIdx][5].." Tèng Nguyªn Th«ng B¶o<color>.",getn(selTab),selTab);
 end;
@@ -40,9 +40,9 @@ function use(nItemIdx,nIdx)
 		local nRetCode = AddItem(2,1,594,nNum);
 		if nRetCode == 1 then
 			Msg2Player("B¹n ®· më"..szPacketName..", nhËn ®­îc "..nNum.." Tèng Nguyªn Th«ng B¶o ");
-			WriteLog("[R­¬ng B¸u Tèng Nguyªn ]"..GetName().." ®· më "..szPacketName);
+			WriteLog("[R­¬ng B¸u Tèng Nguyªn ]"..GetName().." has opened"..szPacketName);
 		else
-			WriteLog("[Tèng Nguyªn R­¬ng B¸u B¸o lçi ]:"..GetName().."Më"..szPacketName.." bÞ lçi, nRetCode:"..nRetCode);
+			WriteLog("[Tèng Nguyªn R­¬ng B¸u B¸o lçi ]:"..GetName().."Open"..szPacketName.." has an error, nRetCode:"..nRetCode);
 		end;
 	end;
 end;

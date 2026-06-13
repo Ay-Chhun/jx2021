@@ -5,7 +5,7 @@ g_szLogTitle = "new map : 963"
 
 g_NpcInfo =
 {
-	{"kylin_viet", "Kú l©n"},
+	{"kylin_viet", "Kirin"},
 	{"phenix_viet", "Phông Vò"},
 }
 

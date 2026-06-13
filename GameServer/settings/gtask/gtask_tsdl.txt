@@ -5,7 +5,7 @@ TaskID	Khu vùc	Tªn qu¸i vËt	Tªn vËt phÈm	ID item	Tû lÖ r¬i	Tæng sè l­îng	Liªn qu
 10		Cãc ®éc	MËt Cãc §éc	2,0,30011,1	80	10	
 28		Oa Quèc L·ng Nh©n	Ngäc Béi	2,0,30012,1	80	10	1
 28		B¹ch §Çu §iªu	L«ng vò B¹ch §Çu §iªu	2,0,30023,1	80	10	1
-32		Quan sø	Ng©n l­îng	2,0,30034,1	80	15	
+32		Quan sø	Silver tael	2,0,30034,1	80	15	
 48		HuyÕt L©n §éc M·ng	MËt §éc M·ng	2,0,30016,1	100	1	
 55		D· Mao T­îng	D· Mao T­îng Nha	2,0,30018,1	80	10	1
 55		§«ng H¶i Thñy Téc Binh sÜ	§«ng H¶i Tr©n Ch©u	2,0,30019,1	80	10	1
@@ -18,7 +18,7 @@ TaskID	Khu vùc	Tªn qu¸i vËt	Tªn vËt phÈm	ID item	Tû lÖ r¬i	Tæng sè l­îng	Liªn qu
 95		Bé kho¸i	Mü töu	2,0,30054,1	80	15	
 101		V©n Bang Chñ	B¶n ®å cña V©n Bang Chñ	2,0,30055,1	100	1	
 102		Lôc bang chñ	B¶n ®å cña Lôc Bang Chñ	2,0,30056,1	100	1	
-105		Cù XÝ Hæ	Ch×a khãa vµng	2,0,30058,1	100	1	
+105		Qu Chihu	Ch×a khãa vµng	2,0,30058,1	100	1	
 106		Thñ vÖ	Ch×a khãa b¹c	2,0,30059,1	100	1	
 121	6026	Ma Hãa Tèng Binh	Tèng Qu©n Yªu Bµi	2,1,30482,1	30	10	
 122	6026	Thô Qu¸i	Ng­ng ThÇn Hoa	2,1,30483,1	30	10	
@@ -43,7 +43,7 @@ TaskID	Khu vùc	Tªn qu¸i vËt	Tªn vËt phÈm	ID item	Tû lÖ r¬i	Tæng sè l­îng	Liªn qu
 270		§µo Hoa §¶o Chñ Hoµng Long	Phong Linh Ch©u	2,0,30078,1	100	1	1
 270		T©y Vùc Th­¬ng Lang B¸ V­¬ng	Háa Linh Ch©u	2,0,30079,1	100	1	1
 270		Ngäc S¬n Chi Linh Thiªn Cöu	L«i Linh Ch©u	2,0,30080,1	100	1	1
-270		U Tr¹ch Chi ¶nh Minh Vâ	§iÖn Linh Ch©u	2,0,30081,1	100	1	1
+270		You Ze Zhi Ying Ming Wu	§iÖn Linh Ch©u	2,0,30081,1	100	1	1
 281	216	Cæ Xµ	Cæ Xµ §éc	2,97,28,1	100	1	
 292	302	Vâ §ang ®¹i s­ huynh	Kh¨n tay t¬ t»m	2,97,29,1	100	1	
 315	6020	Nh©n KiÕm DiÖp Méng	BÝch Ngäc Linh Lung	2,1,30848,1	50	10	

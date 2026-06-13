@@ -109,7 +109,7 @@ function OnUse(nItemIndex)
 			Talk(1,"",sAllMapFindMsg);
 			return 0;
 		else
-			sMapMsg = sMapMsg .. " t×m thö.";
+			sMapMsg = sMapMsg .. " to search.";
 			Talk(1,"",sMapMsg);
 			return 0;
 		end

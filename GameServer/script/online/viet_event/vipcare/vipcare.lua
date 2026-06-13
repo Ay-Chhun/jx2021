@@ -12,7 +12,7 @@ function VipCareAward()
 	local nQty = 1
 	local nStartDate = 20120420
 	local nEndDate = 20120722
-	local tbDayOfWeek = {6, "Thø B¶y"}
+	local tbDayOfWeek = {6, "Saturday"}
 -- get condition
 	local nDate = tonumber(date("%Y%m%d"))
 	local nReceiveDate = floor(mod(GetExtPoint(nExtPoint),1000000000)/10)

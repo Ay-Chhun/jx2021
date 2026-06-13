@@ -135,7 +135,7 @@ function MS_ProcessReadyTimer()
 		RunMission(MISSION_ID);
 	else
 		SetMissionV(MV_TIMER_LOOP,nLoop-1);
-		Msg2MSAll(MISSION_ID,"Thêi gian S¸t thñ xuÊt hiÖn vÉn cßn"..(nLoop*READY_TIMER_INTERVAL).." phót ");
+		Msg2MSAll(MISSION_ID,"Thêi gian S¸t thñ xuÊt hiÖn vÉn cßn"..(nLoop*READY_TIMER_INTERVAL).." minutes");
 	end;
 end;
 --´¦ÀíMission¿ªÊ¼ºóµÄ¼ÆÊ±Æ÷º¯Êý
@@ -154,7 +154,7 @@ function MS_ProcessStartedTimer()
 					"MÆt n¹ nµy ®· bÞ hä ph¸t hiÖn råi,/MS_Nothing");
 		end;
 		mf_OperateAllPlayer(MISSION_ID,lfFunc,{},0,MAP_ID);
-		local nNpcIdx = CreateNpc("Giang hå tuÊn kiÖt","Nam nh©n thÇn bÝ",MAP_ID,1570,3190);
+		local nNpcIdx = CreateNpc("Giang hå tuÊn kiÖt","Mysterious Man",MAP_ID,1570,3190);
 		SetNpcScript(nNpcIdx,"\\script\\task\\killer_hall\\entrance_npc.lua");
 	else
 		local nXiangZhuCount,nFuTangZhuCount,nLiDaZuiCount,nPlayerCount = MS_GetBossCount();
@@ -166,7 +166,7 @@ function MS_ProcessStartedTimer()
 			MS_CreateBoss(NPC_TYPE_LIDAZUI,nLiDaZuiCount);
 		end;
 		SetMissionV(MV_TIMER_LOOP,nLoop-1);
-		Msg2MSAll(MISSION_ID,"Thêi gian hoµn thµnh nhiÖm vô S¸t Thñ §­êng cßn"..(nLoop*STARTED_TIMER_INTERVAL).." phót ");
+		Msg2MSAll(MISSION_ID,"Thêi gian hoµn thµnh nhiÖm vô S¸t Thñ §­êng cßn"..(nLoop*STARTED_TIMER_INTERVAL).." minutes");
 		Msg2MSAll(MISSION_ID,"Sè ng­êi trong trËn:"..nPlayerCount..", sè l­îng S¸t thñ xuÊt hiÖn:"..nXiangZhuCount.."H­¬ng chñ, "..nFuTangZhuCount.."Phã §­êng chñ,"..nLiDaZuiCount.."Lý §¹i Chñy");
 	end;
 end;

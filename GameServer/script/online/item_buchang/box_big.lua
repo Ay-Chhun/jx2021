@@ -16,7 +16,7 @@ function main()
 	IBC_TASK_MANAGE:SetTask(IBC_TASK_MANAGE.BigBoxTime, GetTime());
 	gf_ModifyExp(10000000);
 	local tAward = {
-		{1, 100, "Hu©n ch­¬ng anh hïng", {2, 1, 30499, 1, 4}, 0},
+		{1, 100, "Hero's Medal", {2, 1, 30499, 1, 4}, 0},
 		{1, 200, "ThiÕt Tinh cÊp 1", {2, 1, 30533, 1, 4}, 0},
 		{1, 100, "ThiÕt Tinh cÊp 2", {2, 1, 30534, 1, 4}, 0},
 		{1, 100, "L«i Viªm Th¹ch", {2, 1, 30683, 1}, 0},
@@ -28,15 +28,15 @@ function main()
 		{1, 15, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1, 4}, 7 * 24 * 3600},
 		{1, 20, "Qu©n C«ng §¹i", {2, 1, 9998, 1, 4}, 7 * 24 * 3600},
 		{1, 30, "Thiªn Kiªu LÖnh", {2, 97, 236, 1, 4}, 0, 0, 0, 1},
-		{1, 10, "L¨ng Ba Vi Bé", {0, 112, 78, 1, 4, -1, -1, -1, -1, -1, -1}, 0, 0, 0, 1},
+		{1, 10, "Lingbo Microstep", {0, 112, 78, 1, 4, -1, -1, -1, -1, -1, -1}, 0, 0, 0, 1},
 		{31, 30, "ahf_GetGaojiZhenjuan(1,1,1)", 1},
-		{1, 30, "C©y B¸t Nh· nhá", {2, 0, 504, 1, 4}, 7 * 24 * 3600},
-		{1, 30, "C©y B¸t Nh·", {2, 0, 398, 1, 4}, 7 * 24 * 3600},
-		{1, 30, "B¨ng th¹ch", {2, 1, 149, 1}, 0},
+		{1, 30, "Small Prajna Tree", {2, 0, 504, 1, 4}, 7 * 24 * 3600},
+		{1, 30, "Prajna Tree", {2, 0, 398, 1, 4}, 7 * 24 * 3600},
+		{1, 30, "Ice Stone", {2, 1, 149, 1}, 0},
 		{1, 70, "TiÓu Nh©n s©m qu¶", {2, 0, 552, 1, 4}, 7 * 24 * 3600},
-		{1, 100, "VÐ TiÕu Y §ång", {2, 1, 30493, 1, 4}, 0},
-		{1, 50, "VÐ TiÕu Y B¹c", {2, 1, 30492, 1, 4}, 0},
+		{1, 100, "Bronze Tieu Y Token", {2, 1, 30493, 1, 4}, 0},
+		{1, 50, "Silver Tieu Y Token", {2, 1, 30492, 1, 4}, 0},
 		{1, 30, "VÐ TiÕu Y Vµng", {2, 1, 30491, 1, 4}, 0},
 	}
-	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "§Òn bï hack item", "R­¬ng Vµng §Òn Bï");
+	gf_EventGiveRandAward(tAward, gf_SumRandBase(tAward), 1, "Compensation hack item", "R­¬ng Vµng §Òn Bï");
 end

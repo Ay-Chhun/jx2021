@@ -5,7 +5,7 @@ Include("\\script\\lib\\globalfunctions.lua");
 --°ÑÒ»Ð©Êý¾ÝÉÏµÄ¶«Î÷¶ªµ½ÕâÀïÀ´ ·½±ã²âÊÔ
 g_tGTaskId = {1322,1338};  --Éæ¼°µ½µÄÈÎÎñid ²é¿´gtask_main
 --ÐèÒª¶Ô»°µÄnpc
-g_tNpcName = {["Ng©n ThuËt Kh¶"] = 1, ["A Li"] = 2, ["Hoµn Nhan L©u ThÊt"] = 3,};
+g_tNpcName = {["Yin Shu Ke"] = 1, ["A Li"] = 2, ["Wanyan Lou Shi"] = 3,};
 g_szModelName = "Hoµn Nhan T«ng Hµn";
 
 g_tNpcMsg = {
@@ -37,7 +37,7 @@ g_tNpcMsg = {
 g_tNpcNormalMsg = {
 	"<color=green>Ng©n ThuËt Kh¶<color>: Liªu Quèc øc hiÕp téc N÷ Ch©n cña ta, hiÖn t¹i chóa Liªu hoang d©m v« ®é, ®©y chÝnh lµ thêi c¬ ®Ó ph¶n c«ng!",
 	"<color=green>A Li<color>: Hu Hu",
-	"<color=green>Hoµn Nhan L©u ThÊt<color>: ………………",
+	"<color=green>Wanyan Lou Shi<color>:",
 }
 
 function main()

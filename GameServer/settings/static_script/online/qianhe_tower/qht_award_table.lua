@@ -65,7 +65,7 @@ QHT_AWARD_PERSONAL_2 = {
 	{1, 1000, "Linh Th¹ch Nguyªn Th¹ch cÊp 2", {2, 1, 30414, 1}, 0},
 	{1, 500, "Linh Th¹ch Nguyªn Th¹ch cÊp 3", {2, 1, 30415, 1}, 0},
 	{1, 900, "Cæ Linh Th¹ch", {2, 1, 30368, 5}, 0},
-	{1, 1000, "HiÖp NghÜa Chi Chøng", {2, 1, 30912, 1}, 0},
+	{1, 1000, "Token of Chivalry", {2, 1, 30912, 1}, 0},
 	{31, 100, "qht_award_jinwenhufu(1,100,100)", ""},
 }
 
@@ -99,8 +99,8 @@ QHT_AWARD_PERSONAL_3 = {
 	{1, 500, "Linh Th¹ch Nguyªn Th¹ch cÊp 4", {2, 1, 30416, 1}, 0},
 	{1, 200, "Linh Th¹ch Nguyªn Th¹ch cÊp 5", {2, 1, 30417, 1}, 0},
 	{1, 300, "Ma §ao Th¹ch cÊp 1", {2, 1, 30428, 1}, 0},
-	{1, 300, "Tói tiÒn", {2, 1, 30367, 1}, 0},
-	{1, 400, "HiÖp NghÜa Chi Chøng", {2, 1, 30912, 5}, 0},
+	{1, 300, "Money Pouch", {2, 1, 30367, 1}, 0},
+	{1, 400, "Token of Chivalry", {2, 1, 30912, 5}, 0},
 }
 
 QHT_AWARD_THROW_DICE3 = {
@@ -128,11 +128,11 @@ QHT_AWARD_PERSONAL_4 = {
 	{31, 1500, "qht_add_shimen(8)", ""},
 	{1, 1000, "Cæ Linh Th¹ch", {2, 1, 30368, 10}, 0},
 	{1, 100, "Cæ Linh Ngäc", {2, 1, 30369, 5}, 0},
-	{1, 1200, "Tói tiÒn", {2, 1, 30367, 1}, 0},
+	{1, 1200, "Money Pouch", {2, 1, 30367, 1}, 0},
 	{1, 500, "Linh Th¹ch Nguyªn Th¹ch cÊp 4", {2, 1, 30416, 1}, 0},
 	{1, 200, "Linh Th¹ch Nguyªn Th¹ch cÊp 5", {2, 1, 30417, 1}, 0},
 	{1, 100, "Linh Th¹ch Nguyªn Th¹ch cÊp 6", {2, 1, 30418, 1}, 0},
-	{1, 900, "HiÖp NghÜa Chi Chøng", {2, 1, 30912, 20}, 0},
+	{1, 900, "Token of Chivalry", {2, 1, 30912, 20}, 0},
 }
 
 QHT_AWARD_THROW_DICE4_1 = {
@@ -241,7 +241,7 @@ QHT_AWARD_THROW_DICE6_2 = {
 	{31, 10, "qht_award_tianjiao(%d)", ""},
 	{31, 5, "qht_award_tiangang(%d)", ""},
 	{31, 5, "qht_award_tianmen(%d)", ""},
-	{1, 400, "HiÖp NghÜa Chi Chøng", {2, 1, 30912, 50}, 0},
+	{1, 400, "Token of Chivalry", {2, 1, 30912, 50}, 0},
 	{1, 300, "qht_award_heibao(%d)", ""},
 	{1, 300, "qht_award_huangbao(%d)", ""},
 
@@ -255,7 +255,7 @@ QHT_AWARD_THROW_DICE7_1 = {
 		--{1, 60, "Ììî¸ËéÆ¬", {2, 1, 30390, 1}, 0},
     --{1, 30, "ÌìÃÅËéÆ¬", {2, 1, 30410, 1}, 0},
     --{1, 10, "°×½ðËéÆ¬", {2, 1, 30346, 1}, 0},
-    {1, 100, "ChiÕn Kú Bang Ph¸i", {2, 1, 30573, 1, 4}, 12 * 3600},
+    {1, 100, "Sect War Banner", {2, 1, 30573, 1, 4}, 12 * 3600},
 }
 QHT_AWARD_THROW_DICE7_2 = {
 --	{1, 16, "6¼¶ÁéÊ¯Ô­Ê¯", {2, 1, 30418, 1}, 0},
@@ -285,7 +285,7 @@ QHT_AWARD_THROW_DICE7_2 = {
 	{31, 10, "qht_award_tianjiao(%d)", ""},
 	{31, 5, "qht_award_tiangang(%d)", ""},
 	{31, 5, "qht_award_tianmen(%d)", ""},
-	{1, 400, "HiÖp NghÜa Chi Chøng", {2, 1, 30912, 50}, 0},
+	{1, 400, "Token of Chivalry", {2, 1, 30912, 50}, 0},
 	-- {1, 300, "ºÚ±ª×Ó±¦±¦", {0, 105, 30029, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 	-- {1, 300, "»Æ±ª×Ó±¦±¦", {0, 105, 30030, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 	{1, 300, "qht_award_heibao(%d)", ""},
@@ -296,7 +296,7 @@ QHT_AWARD_THROW_DICE8_1 = {
 --		{1, 60, "Ììî¸ËéÆ¬", {2, 1, 30390, 1}, 0},
 --		{1, 30, "ÌìÃÅËéÆ¬", {2, 1, 30410, 1}, 0},
 --		{1, 10, "°×½ðËéÆ¬", {2, 1, 30346, 1}, 0},
-		{1, 100, "ChiÕn Kú Bang Ph¸i ThiÕt HuyÕt", {2, 1, 30574, 1, 4}, 12 * 3600},
+		{1, 100, "Iron Blood Sect War Banner", {2, 1, 30574, 1, 4}, 12 * 3600},
 }
 QHT_AWARD_THROW_DICE8_2 = {
 --		{1, 16, "6¼¶ÁéÊ¯Ô­Ê¯", {2, 1, 30418, 1}, 0},
@@ -326,7 +326,7 @@ QHT_AWARD_THROW_DICE8_2 = {
 	{31, 10, "qht_award_tianjiao(%d)", ""},
 	{31, 5, "qht_award_tiangang(%d)", ""},
 	{31, 5, "qht_award_tianmen(%d)", ""},
-	{1, 400, "HiÖp NghÜa Chi Chøng", {2, 1, 30912, 50}, 0},
+	{1, 400, "Token of Chivalry", {2, 1, 30912, 50}, 0},
 	-- {1, 300, "ºÚ±ª×Ó±¦±¦", {0, 105, 30029, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 	-- {1, 300, "»Æ±ª×Ó±¦±¦", {0, 105, 30030, 1, 4, -1, -1, -1, -1, -1, -1}, 0},
 	{1, 300, "qht_award_heibao(%d)", ""},

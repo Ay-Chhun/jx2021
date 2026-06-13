@@ -2,14 +2,14 @@ Include("\\script\\missions\\tong_mission\\main_function.lua");
 
 g_tbLuckInfo = 
 {
-	[0] = {0,"VÞ Tri"}, 
-	[1] = {-4,"§¹i hung"},
+	[0] = {0,"Position"}, 
+	[1] = {-4,"Great Misfortune"},
 	[2] = {-3,"Trung hung"},
-	[3] = {-2,"TiÓu hung"},
+	[3] = {-2,"Minor Misfortune"},
 	[4] = {0,"Trung"},
-	[5] = {1,"TiÓu c¸t"},
-	[6] = {2,"Trung c¸t"},
-	[7] = {3,"§¹i c¸t"},
+	[5] = {1,"Minor Fortune"},
+	[6] = {2,"Moderate Fortune"},
+	[7] = {3,"Great Fortune"},
 }
 
 g_nBaseValue = 8;	--»ù´¡Öµ
@@ -27,11 +27,11 @@ function main()
 	local nLuck = GetTask(618);
 	if nPlayerHashCode ~= 0 and nPlayerHashCode == nCasketHashCode then
 		local selTab = {
-					"Hép nhá sè 1/#open_casket(1,"..nStage..")",
-					"Hép nhá sè 2/#open_casket(2,"..nStage..")",
-					"Hép nhá sè 3/#open_casket(3,"..nStage..")",
-					"Hép nhá sè 4/#open_casket(4,"..nStage..")",
-					"Hép nhá sè 5/#open_casket(5,"..nStage..")",
+					"Small box no. 1/#open_casket(1,"..nStage..")",
+					"Small box no. 2/#open_casket(2,"..nStage..")",
+					"Small box no. 3/#open_casket(3,"..nStage..")",
+					"Small box no. 4/#open_casket(4,"..nStage..")",
+					"Small box no. 5/#open_casket(5,"..nStage..")",
 					}
 		Say("Xin chän më hép nhá, ch÷ sè Èn trong ®ã t­îng tr­ng cho sè l­îng HiÖp kh¸ch ch­¬ng nhËn ®­îc, chóc may m¾n!",getn(selTab),selTab);
 	else
@@ -75,14 +75,14 @@ function open_casket(nCasketID,nStage)
 		Msg2Player("Sè l­îng HiÖp kh¸ch ch­¬ng ®· ®¹t tèi ®a "..MAX_XIEKEHUIZHANG.." , h·y mau dïng HiÖp kh¸ch ch­¬ng ®æi phÇn th­ëng");
 		nGotNum = MAX_XIEKEHUIZHANG - nTotalNum;
 	end;
-	Msg2Player("Trong tuÇn nµy ®¹i hiÖp ®©y lµ lÇn thø "..nOpenTimes.." më hép may m¾n ë ¶i  "..nStage.." , ®­îc "..nGotNum.." HiÖp kh¸ch ch­¬ng");
+	Msg2Player("Trong tuÇn nµy ®¹i hiÖp ®©y lµ lÇn thø "..nOpenTimes.." opened the lucky box at stage"..nStage.." , received"..nGotNum.." HiÖp kh¸ch ch­¬ng");
 	SetTask(TSK_CASKET_HASH_CODE,0);
 	SetTask(TSK_CASKET_STAGE_1+nStage-1,nOpenTimes);
 	if nGotNum > 0 then
 		AddItem(2,0,1091,nGotNum);
 	end;
 	Say("B¹n ®· chän Hép nhá sè <color=yellow>"..nCasketID.."<color>, nhËn ®­îc <color=yellow>"..nGotNum.."<color> HiÖp kh¸ch ch­¬ng.\nHép nhá sè 1: "..tbNum[1].." c¸i\nHép nhá sè 2: "..tbNum[2].." c¸i\nHép nhá sè 3: "..tbNum[3].." c¸i\nHép nhá sè 4: "..tbNum[4].." c¸i\nHép nhá sè 5: "..tbNum[5].."c¸i",0);
-	gf_WriteLog("Tö Quang C¸c","TuÇn nµy ë ¶i sè "..nOpenTimes.." më hép may m¾n ë ¶i  "..nStage.." më Hép may m¾n, ®­îc "..nGotNum.." HiÖp kh¸ch ch­¬ng");
+	gf_WriteLog("Purple Light Pavilion","TuÇn nµy ë ¶i sè "..nOpenTimes.." opened the lucky box at stage"..nStage.." opened the Lucky Box, received"..nGotNum.." HiÖp kh¸ch ch­¬ng");
 end;
 
 function get_num_table(nLowValue,nHighValue,nNum)

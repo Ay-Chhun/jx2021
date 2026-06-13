@@ -1,6 +1,6 @@
 Include("\\script\\lib\\globalfunctions.lua");
 Include("\\script\\lib\\lingshi_head.lua");
-g_ItemName = "Kû niÖm 20 n¨m §iÓn bao";
+g_ItemName = "20th Anniversary Commemorative Bag";
 g_NeedRoom = 18;
 g_NeedWeight = 200;
 TSK_COUNTER = 580;
@@ -14,7 +14,7 @@ function OnUse(nItemIdx)
 			local nRand = 0;
 			local nRetCode,nItemIdx = 0,0;
 			AddItem(2,1,1000,2);
-			Msg2Player("NhËn ®­îc 2 Bµn Long BÝch");
+			Msg2Player("Received 2 Coiling Dragon Jade");
 			AddItem(2,0,1082,1);
 			Msg2Player("B¹n nhËn ®­îc 1 quyÓn Th¸i DÞch Hçn Nguyªn C«ng §å");	
 			if GetPlayerRoute() ~= 0 then	
@@ -38,11 +38,11 @@ function OnUse(nItemIdx)
 				AddItem(2,0,1087,2);
 				Msg2Player("B¹n nhËn ®­îc 2 ch×a khãa b¹c kû niÖm 20 n¨m");			
 			end			
-			give_item(2,0,554,1,"1 quyÓn Tu Ch©n YÕu QuyÕt",10,2,0);  --ÐÞÕæÒª¾÷1±¾£¬10%ÇÒÃ¿¿ª2¸ö°ü±Ø¸ø1¸ö	
+			give_item(2,0,554,1,"1 copy of the Cultivation Essence Secret",10,2,0);  --ÐÞÕæÒª¾÷1±¾£¬10%ÇÒÃ¿¿ª2¸ö°ü±Ø¸ø1¸ö	
 			give_item(2,1,3331,1,"1 Tam DiÖu Long Hi",10,4,0);  --1¸öÈýÒ«Áú x£¬10%ÇÒÃ¿¿ª4¸ö°ü±Ø¸ø1¸ö	
 			give_item(2,0,1087,1,"1 ch×a khãa b¹c kû niÖm 20 n¨m",5,8,0);  --1°Ñ¶þÊ®ÖÜÄêÇìÒøÔ¿³×£¬5%ÇÒÃ¿¿ª8¸ö°ü±Ø¸ø1¸ö	
 			give_item(2,1,3204,1,"1 Ngò Th¸i Lung Tñy",5,20,0);  --1¸öÎå²ÊççËè£¬5%ÇÒÃ¿¿ª20¸ö°ü±Ø¸ø1¸ö	
-			give_item(2,1,3388,1,"1 LÖnh th¸o gì miÔn phÝ",5,30,1);	--1¸öÃâ·Ñ²ð½âÁî,5%ÇÒÃ¿¿ª30¸ö°ü±Ø¸ø1¸ö¡£
+			give_item(2,1,3388,1,"1 free Removal Token",5,30,1);	--1¸öÃâ·Ñ²ð½âÁî,5%ÇÒÃ¿¿ª30¸ö°ü±Ø¸ø1¸ö¡£
 			add_lingshi(6,1,5,12,0);	--Ëæ»ú6¼¶ÁéÊ¯1¿Å,5%ÇÒÃ¿¿ª12¸ö°ü±Ø¸ø1¸ö	
 			--ÒÔÏÂÐèÒª·¢È«·þ¹«¸æ
 			add_lingshi(7,1,0.5,40,1);	--Ëæ»ú7¼¶ÁéÊ¯1¿Å,0.5%ÇÒÃ¿¿ª40¸ö°ü±Ø¸ø1¸ö
@@ -55,8 +55,8 @@ function OnUse(nItemIdx)
 			--ÒÔÏÂÐèÒª·¢È«·þ¹«¸æºÍ¹öÆÁ¹«¸æ
 			give_item(2,0,1088,1,"1 ch×a khãa vµng kû niÖm 20 n¨m",0.1,180,2);	--1°Ñ¶þÊ®ÖÜÄêÇì½ðÔ¿³×,0.1%ÇÒÃ¿¿ª180¸ö°ü±Ø¸ø1¸ö
 			give_item(2,0,1084,1,"1 Thiªn Qu¸i Th¹ch",0.01,500,2);	--1¸öÌìØÔÊ¯,0.01%ÇÒÃ¿¿ª500¸ö°ü±Ø¸ø1¸ö
-			Msg2Player("§©y lµ lÇn thø "..nCurCount.." më "..g_ItemName);
-			WriteLog("["..g_ItemName.."]:"..GetName().."thø"..nCurCount.." më "..g_ItemName);
+			Msg2Player("§©y lµ lÇn thø "..nCurCount.." to open"..g_ItemName);
+			WriteLog("["..g_ItemName.."]:"..GetName().."the"..nCurCount.." to open"..g_ItemName);
 		end;
 	else
 		Talk(1,"","Kho¶ng trèng hoÆcsøc lùccña b¹n kh«ng ®ñ. Xin kiÓm tra l¹i hµnh trang tr­íc!"..g_ItemName.."!");
@@ -66,12 +66,12 @@ end;
 function show_msg(szItemName,bGlobalMsg)
 	Msg2Player("B¹n nhËn ®­îc "..szItemName);
 	if bGlobalMsg == 1 then
-		Msg2Global(get_name().."Më '"..g_ItemName.." nhËn ®­îc "..szItemName);
+		Msg2Global(get_name().."Open '"..g_ItemName.." nhËn ®­îc "..szItemName);
 	elseif bGlobalMsg == 2 then
-		Msg2Global(get_name().."Më '"..g_ItemName.." nhËn ®­îc "..szItemName);
-		AddGlobalNews(get_name().."Më '"..g_ItemName.." nhËn ®­îc "..szItemName);
+		Msg2Global(get_name().."Open '"..g_ItemName.." nhËn ®­îc "..szItemName);
+		AddGlobalNews(get_name().."Open '"..g_ItemName.." nhËn ®­îc "..szItemName);
 	end;
-	WriteLog("["..g_ItemName.."]:"..GetName().."NhËn ®­îc"..szItemName);	
+	WriteLog("["..g_ItemName.."]:"..GetName().."Received"..szItemName);	
 end;
 --¸øÕòÅÉ²ÐÆªµÄº¯Êý
 function give_zpcp(tbZPCP,nCount)
@@ -194,7 +194,7 @@ function add_horse(nP,nModCount)
 			AddItem(0,105,16,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,2)
 		else
-			szItemName = "1 §»ng Vô";
+			szItemName = "1 Deng Wu";
 			AddItem(0,105,20,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,2)
 		end;
@@ -206,7 +206,7 @@ function add_horse(nP,nModCount)
 			AddItem(0,105,16,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,2)
 		else
-			szItemName = "1 §»ng Vô";
+			szItemName = "1 Deng Wu";
 			AddItem(0,105,20,1,1,-1,-1,-1,-1,-1,-1);
 			show_msg(szItemName,2)
 		end;	

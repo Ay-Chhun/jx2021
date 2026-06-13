@@ -3,7 +3,7 @@ Include("\\script\\lib\\globalfunctions.lua")
 Include("\\script\\misc\\taskmanager.lua") 
 Include("\\script\\online\\zgc_public_fun.lua")
 
-Npc_Name_201208 = "<color=green>H»ng Nga: <color>";
+Npc_Name_201208 = "<color=green>Chang Nga: <color>";
 
 Npc_Say_Title_201208 = "TÆng vËt phÈm Trung Thu cho ThiÕu Nhi!";
 
@@ -28,21 +28,21 @@ Exp_Award_Normal2 = 12000000;
 Item_Count1 = 25;
 Item_Count2 = 25;
 Coin_Consume = 25;
-Item_table1 = {2,1,30433,"B¸nh N­íng "};
-Item_table2 = {2,1,30434,"B¸nh DÎo"};
+Item_table1 = {2,1,30433,"Baked Mooncake"};
+Item_table2 = {2,1,30434,"Snow Mooncake"};
 
 Acitivity_log1 = "HOAT DONG PHU THANG 9";
-Acitivity_log2 = "Vui cïng chÞ H»ng";
+Acitivity_log2 = "Celebrate with Sister Chang";
 
-strMsg2Player1 = "TÆng B¸nh N­íng %d/%d";
-strMsg2Player2 = "TÆng B¸nh DÎo %d/%d";
-strMsg2Player3 = "TÆng lång ®Ìn Trung Thu %d/%d";
+strMsg2Player1 = "Give Baked Mooncake %d/%d";
+strMsg2Player2 = "Give Snow Mooncake %d/%d";
+strMsg2Player3 = "Give Mid-Autumn Lantern %d/%d";
 
 --½±Àø±í
 Vet_201208_Award  = {
-	{1, 2525, "B¨ng th¹ch", {2, 1, 149, 2}, 0},
+	{1, 2525, "Ice Stone", {2, 1, 149, 2}, 0},
     {1, 1919, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 2}, 0},
-    {1, 1838, "§Êu hån", {2, 1, 1157, 1}, 7 * 24 * 3600},
+    {1, 1838, "Soul Duel", {2, 1, 1157, 1}, 7 * 24 * 3600},
     {1, 2525, "Qu©n C«ng Ch­¬ng", {2, 1, 9999, 1}, 7 * 24 * 3600},
     {1, 522, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
     {1, 200, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},
@@ -51,7 +51,7 @@ Vet_201208_Award  = {
     {3, 123, 9990000, 1},
 };
 Vet_201208_Award_Special  = {
-	{1, 2525, "B¨ng th¹ch", {2, 1, 149, 3}, 0},
+	{1, 2525, "Ice Stone", {2, 1, 149, 3}, 0},
     {1, 1515, "Nh©n S©m V¹n N¨m", {2, 1, 30071, 4}, 0},
     {1, 2020, "Qu©n C«ng §¹i", {2, 1, 9998, 1}, 7 * 24 * 3600},
     {1, 1010, "Qu©n C«ng Huy Hoµng", {2, 1, 9977, 1}, 7 * 24 * 3600},

@@ -12,7 +12,7 @@
 function OnUse()
 	Say("B¹n muèn dïng <color=yellow>Kú L©n hoµn<color>? B¹n sÏ nhËn ®­îc 3000 ®iÓm danh väng.",
 		2,
-		"§­îc/use_qilin_wan",
+		"Yes/use_qilin_wan",
 		"Kh«ng sö dông/cancel_dialog")
 end;
 

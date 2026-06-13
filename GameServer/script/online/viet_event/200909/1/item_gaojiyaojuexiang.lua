@@ -12,7 +12,7 @@ function OnUse(nItemIdx)
 		local nRand = gf_GetRandItemByTable(tbVIET_0909_GAOJIYAOJUE, 100, 1);
 		gf_SetLogCaption(VIET_0909_LOG_TITLE);
 		gf_AddItemEx(tbVIET_0909_GAOJIYAOJUE[nRand][3], tbVIET_0909_GAOJIYAOJUE[nRand][1]);
-		WriteLogEx("Hoat dong trung thu","R≠¨ng Y’u Quy’t",1,tbVIET_0909_GAOJIYAOJUE[nRand][1])
+		WriteLogEx("Hoat dong trung thu","Chest of Essential Formula",1,tbVIET_0909_GAOJIYAOJUE[nRand][1])
 		gf_SetLogCaption("");
 	end
 end

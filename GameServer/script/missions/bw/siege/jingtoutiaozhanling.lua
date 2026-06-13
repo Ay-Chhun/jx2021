@@ -133,7 +133,7 @@ function give_tiaozhanling(nCount)
 	if DelItem(2, 1, 30117, nCount) == 1 then
 		AddRelayShareData("tiaozhanling", 0,0,File_name, "nothing", 2, szTong, "dds", nCount + GetTaskTemp(103), nDate, szTong);
 		Talk(1, "", "<color=green> Chñ l«i ®µi<color>: Ng­¬i ®· thay bæn bang héi giao nép "..nCount.." khiªu chiÕn lÖnh");
-		WriteLogEx("Cong Thanh Chien","nép",nCount,"Khiªu ChiÕn LÖnh","",GetTongName())
+		WriteLogEx("Cong Thanh Chien","submit",nCount,"Challenge Order","",GetTongName())
 	else
 		Talk(1, "", "<color=green> Chñ l«i ®µi<color>: C¸c h¹ mang khiªu chiÕn lÖnh kh«ng ®ñ, h·y kiÓm tra l¹i sè l­îng khiªu chiÕn lÖnh");
 		return 0;
@@ -217,9 +217,9 @@ function main_callback(szKey, nKey1, nKey2, nCount)
 		elseif szD == "" then					-- Èç¹ûÃ»ÓÐÊØ³Ç·½£¬ÔòÖ±½ÓÕ¼ÓÐ³ÇÊÐ
 			SetCityWarWinner(CITY_ID_CD, szTong)
 			szTong = replace(szTong, "|" ,"-")
-			Msg2SubWorld("Chóc mõng bang héi:"..szTong.." ®· chiÕm ®­îc "..tFightCityName[CITY_ID_CD])
-			AddGlobalNews("Chóc mõng bang héi:"..szTong.." ®· chiÕm ®­îc "..tFightCityName[CITY_ID_CD])
-			WriteLogEx("Cong Thanh Chien",szTong.." ®· chiÕm ®­îc "..tFightCityName[CITY_ID_CD])			
+			Msg2SubWorld("Chóc mõng bang héi:"..szTong.." has occupied"..tFightCityName[CITY_ID_CD])
+			AddGlobalNews("Chóc mõng bang héi:"..szTong.." has occupied"..tFightCityName[CITY_ID_CD])
+			WriteLogEx("Cong Thanh Chien",szTong.." has occupied"..tFightCityName[CITY_ID_CD])			
 		end		
 	end
 end

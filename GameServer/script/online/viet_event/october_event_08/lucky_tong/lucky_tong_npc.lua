@@ -34,7 +34,7 @@ function sign_up()
 		return
 	end
 	if GetTongLevel() < 2 then
-		Say(g_szInfoHead.."Quý bang ch­a ®ñ ®iÒu kiÖn tham gia ho¹t ®éng lÇn nµy.",1,"¤i! Ta quªn mÊt./no");
+		Say(g_szInfoHead.."Quý bang ch­a ®ñ ®iÒu kiÖn tham gia ho¹t ®éng lÇn nµy.",1,"Oh! I forgot./no");
 		return
 	end
 	DelRelayShareDataCopy(GetTongName(), 0, 0)
@@ -51,7 +51,7 @@ end
 
 function sign_up_cb(szKey, nKey1, nKey2, nCount)
 	if nCount == 0 then
-		Say(g_szInfoHead.."Quý bang ch­a ®ñ ®iÒu kiÖn tham gia ho¹t ®éng lÇn nµy.",1,"¤i! Ta quªn mÊt./no");
+		Say(g_szInfoHead.."Quý bang ch­a ®ñ ®iÒu kiÖn tham gia ho¹t ®éng lÇn nµy.",1,"Oh! I forgot./no");
 		return
 	end
 
@@ -59,13 +59,13 @@ function sign_up_cb(szKey, nKey1, nKey2, nCount)
 	DelRelayShareDataCopy(szKey,nKey1,nKey2)
 
 	if tong_state ~= 4 then
-		Say(g_szInfoHead.."Quý bang ch­a ®ñ ®iÒu kiÖn tham gia ho¹t ®éng lÇn nµy.",1,"¤i! Ta quªn mÊt./no");
+		Say(g_szInfoHead.."Quý bang ch­a ®ñ ®iÒu kiÖn tham gia ho¹t ®éng lÇn nµy.",1,"Oh! I forgot./no");
 		return
 	end
 	
 	local tong_ID_save, day_parity = Zgc_conf_task_time_return()
 	if tong_ID ~= tong_ID_save then
-		Say(g_szInfoHead.."Quý bang ch­a ®ñ ®iÒu kiÖn tham gia ho¹t ®éng lÇn nµy.",1,"¤i! Ta quªn mÊt./no");
+		Say(g_szInfoHead.."Quý bang ch­a ®ñ ®iÒu kiÖn tham gia ho¹t ®éng lÇn nµy.",1,"Oh! I forgot./no");
 		return
 	end
 	
@@ -83,7 +83,7 @@ function sign_up_notify()
 	local nPrizeFlag = 0
 	local nDateFlag = tonumber(GetTime())
 	AddRelayShareData(RELAY_DB_08_OCT_EVENT_VIET, 0, 0, "", "", 0, GetTongName(), "dddd", nWishType, nPrizeType, nPrizeFlag, nDateFlag)
-	Say(g_szInfoHead.."Quý bang ®· ®¨ng ký thµnh c«ng. Tõ 19:00 ®Õn 24:00, bang chñ cña quý bang h·y quay l¹i ®Ó xem th«ng tin nhÐ.",1,"C¸m ¬n tiÒn bèi!/no");
+	Say(g_szInfoHead.."Quý bang ®· ®¨ng ký thµnh c«ng. Tõ 19:00 ®Õn 24:00, bang chñ cña quý bang h·y quay l¹i ®Ó xem th«ng tin nhÐ.",1,"Thank you, senior!/no");
 	local strLogCaption = "Hoat Dong Thang 10"
 	WriteLogEx(strLogCaption,"tham gia rót th¨m Bang héi","","","",GetTongName())
 end
@@ -124,7 +124,7 @@ function sign_up_check_cb(szKey, nKey1, nKey2, nCount)
 		end
 		for j = 1, nTableSize do
 			if GetTongName() == tbName[j] then
-				Say(g_szInfoHead.."Quý bang ch­a ®ñ ®iÒu kiÖn tham gia ho¹t ®éng lÇn nµy.",1,"¤i! Ta quªn mÊt./no");
+				Say(g_szInfoHead.."Quý bang ch­a ®ñ ®iÒu kiÖn tham gia ho¹t ®éng lÇn nµy.",1,"Oh! I forgot./no");
 				return
 			end
 		end
@@ -141,7 +141,7 @@ function give_prize()
 		return
 	end
 	if GetTongLevel() < 2 then
-		Say(g_szInfoHead.."Quý bang ch­a ®ñ ®iÒu kiÖn tham gia ho¹t ®éng lÇn nµy.",1,"¤i! Ta quªn mÊt./no");
+		Say(g_szInfoHead.."Quý bang ch­a ®ñ ®iÒu kiÖn tham gia ho¹t ®éng lÇn nµy.",1,"Oh! I forgot./no");
 		return
 	end
 
@@ -150,7 +150,7 @@ end
 
 function give_prize_cb(szKey, nKey1, nKey2, nCount)
 	if nCount == 0 then
-		Say(g_szInfoHead.."Quý bang kh«ng thÓ nhËn ®­îc phÇn th­ëng lÇn nµy.",1,"¤i! Ta quªn mÊt./no");
+		Say(g_szInfoHead.."Quý bang kh«ng thÓ nhËn ®­îc phÇn th­ëng lÇn nµy.",1,"Oh! I forgot./no");
 		return
 	end
 
@@ -185,7 +185,7 @@ end
 
 function obtain_prize_cb(szKey, nKey1, nKey2, nCount)
 	if nCount == 0 then
-		Say(g_szInfoHead.."Quý bang kh«ng thÓ nhËn ®­îc phÇn th­ëng lÇn nµy.",1,"¤i! Ta quªn mÊt./no");
+		Say(g_szInfoHead.."Quý bang kh«ng thÓ nhËn ®­îc phÇn th­ëng lÇn nµy.",1,"Oh! I forgot./no");
 		return
 	end
 
@@ -200,11 +200,11 @@ function obtain_prize_cb(szKey, nKey1, nKey2, nCount)
 	nWishType, nPrizeType, nPrizeFlag, nDateFlag = GetRelayShareDataByKey(szKey, nKey1, nKey2, szTongName)
 	DelRelayShareDataCopy(szKey,nKey1,nKey2)
 	if nPrizeType == 0 or nPrizeType == nil or nPrizeType > 3 then
-		Say(g_szInfoHead.."Quý bang kh«ng thÓ nhËn ®­îc phÇn th­ëng lÇn nµy.",1,"¤i! Ta quªn mÊt./no");
+		Say(g_szInfoHead.."Quý bang kh«ng thÓ nhËn ®­îc phÇn th­ëng lÇn nµy.",1,"Oh! I forgot./no");
 		return
 	end
 	if nDateNow - nDateFlag > 86400  then
-		Say(g_szInfoHead.."Quý bang kh«ng thÓ nhËn ®­îc phÇn th­ëng lÇn nµy.",1,"¤i! Ta quªn mÊt./no");
+		Say(g_szInfoHead.."Quý bang kh«ng thÓ nhËn ®­îc phÇn th­ëng lÇn nµy.",1,"Oh! I forgot./no");
 		return
 	end
 	if nPrizeFlag == 1 then
@@ -221,7 +221,7 @@ function obtain_prize_cb(szKey, nKey1, nKey2, nCount)
 	nPrizeFlag = 1
 	AddRelayShareData(RELAY_DB_08_OCT_EVENT_VIET, 0, 0, "", "", 0, GetTongName(), "dddd", nWishType, nPrizeType, nPrizeFlag, nDateFlag)
 		
-	Say(g_szInfoHead.."PhÇn th­ëng cña quý bang lµ: "..g_tbItem[nPrizeType].." Sinh ThÇn Cang",1,"C¸m ¬n tiÒn bèi!/no");
+	Say(g_szInfoHead.."PhÇn th­ëng cña quý bang lµ: "..g_tbItem[nPrizeType].." Sinh ThÇn Cang",1,"Thank you, senior!/no");
 end
 
 function add_item_ex(szItemName, genre, detail, particular, nItemNum)

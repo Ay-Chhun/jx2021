@@ -1,15 +1,15 @@
 g_tbItem = {
 		--ID1, ID2, ID3,     name,Ôö¼ÓÖµ,ÏŞÖÆÖµ
-	[1] = {2,	1,	1156,	"NghŞch L©n",	1,	10},
-	[2] = {2,	1,	1157,	"§Êu hån",	10,	10},
+	[1] = {2,	1,	1156,	"Adverse Scale",	1,	10},
+	[2] = {2,	1,	1157,	"Soul Duel",	10,	10},
 	}
 	
 --ÕòÅÉ¼¼ÄÜÃû×Ö
 g_tbSkillName = {
 	[0] = "",
 	[1] = "",
-	[2] = "DŞch C©n Kinh",
-	[3] = "TÈy Tñy Kinh",
+	[2] = "Sinew Transformation Classic",
+	[3] = "Marrow Cleansing Classic",
 	[4] = "Nh­ Lai ThÇn Ch­ëng",
 	[5] = "",
 	[6] = "HÊp Tinh TrËn",
@@ -17,8 +17,8 @@ g_tbSkillName = {
 	[8] = "V¹n T­íng ThÇn C«ng",
 	[9] = "Thiªn ¢m TrÊn Hån Khóc",
 	[10] = "",
-	[11] = "Gi¸ng Long ThËp B¸t Ch­ëng",
-	[12] = "§¶ CÈu c«n ph¸p",
+	[11] = "Eighteen Dragon Subduing Palms",
+	[12] = "Dog Beating Staff Technique",
 	[13] = "",
 	[14] = "V« Th­îng Th¸i Cùc KiÕm",
 	[15] = "Th¸i Cùc ThÇn C«ng",
@@ -31,9 +31,9 @@ g_tbSkillName = {
 	[22] ="",
 	[23] ="V« Cùc Phong L«i QuyÕt",
 	[24] ="",
-	[25] ="Cµn Kh«n §¹i Na Di",
+	[25] ="Heaven and Earth Great Shift",
 	[26] ="Quang Minh Ngò Hµnh TrËn",
-	[27] ="Hµn B¨ng Miªn Ch­ëng",
+	[27] ="Frost Cotton Palm",
 	[28] ="",
 	[29] ="Loan Phông Cöu Thiªn",
 	[30] ="Cöu Vü Hoa Tiªn QuyÕt",
@@ -128,7 +128,7 @@ function chk_can_use()
 	if nMapID >= 839 and nMapID <= 842 then
 		return 0
 	end
-	if GetMissionS(10) == "¶i s­ m«n" then	--¿´¿´ÊÇ²»ÊÇÔÚÌØÊâ¹Ø¿¨ÀïÃæ
+	if GetMissionS(10) == "Sect Master" then	--¿´¿´ÊÇ²»ÊÇÔÚÌØÊâ¹Ø¿¨ÀïÃæ
 		return 0;
 	end;
 	return 1

@@ -22,7 +22,7 @@ function task_000_00()
         "Ng­¬i lµ ai? Ph¶i Diªu LËp Thµnh ph¸i ®Õn giÕt ta diÖt khÈu kh«ng? Hay lµ ng­êi quan phñ? Ta cã biÕt chuyÖn g× ®©u!",
         "Yªn t©m! Ta chØ muèn biÕt chuyÖn cña Diªu LËp Thµnh.",
         "§Ó chøng minh, ng­¬i gióp ta ®¸nh b¹i {10 tªn L­u manh} vµ {10 tªn C«n ®å}!",
-        "§­îc th«i!"
+        "Very well!"
     };
     TalkEx("task_001_00", szTalk);
 end;
@@ -88,7 +88,7 @@ function task_004_01()
         "H×nh nh­ chuyÕn hµng Diªu LËp Thµnh c­íp ®­îc kh«ng cã m¶nh S¬n Hµ X· T¾c v× vËy míi lÊy sæ s¸ch xem ®· b¸n cho ai mong t×m ra manh mèi tÊm b¶n ®å.",
         "VËy lµ r¾c rèi to råi.",
         "§óng vËy! H·y ®Õn {TuyÒn Ch©u} t×m {V­¬ng NghiÖp VÜ} xem danh s¸ch ng­êi mua.",
-        "Ta ®i ngay!",
+        "I will go at once!",
         "Mãn ®å nµy ta gi÷ l¹i còng kh«ng dïng, tÆng cho ng­¬i!"
     };
     local szNotFinished = {

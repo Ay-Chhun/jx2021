@@ -385,7 +385,7 @@ function ACT3_Killer()
 			-- Stage Event End
 		end
 	end
-	if TT_TARGET_Name == "§¹i tiÓu th­" then
+	if TT_TARGET_Name == "Eldest Young Lady" then
 		TC_STAGE_State[nZone] = 20
 		MC_ClearGroup(nZone)
 		GS_CreateMessenger()
@@ -1144,7 +1144,7 @@ function Killing_Unit()
 					if PlayerIndex > 0 then
 						if GetTask(GS_RECORD_CHANCE) > 1 then
 							local szFullTitle = VIET_0912_STR_EVENT_LOG_TITLE
-                                    			gf_AddItemEx2({2, 1, 30138, 80}, "C©y KÑo Gi¸ng Sinh", szFullTitle, 0, 1, 10, 1,"Tµng KiÕm ¶i 7");
+                                    			gf_AddItemEx2({2, 1, 30138, 80}, "Christmas Candy Cane Tree", szFullTitle, 0, 1, 10, 1,"Tµng KiÕm ¶i 7");
                                    		end
 					end
 				end
@@ -1162,10 +1162,10 @@ function Killing_Unit()
 						if GetTask(GS_RECORD_CHANCE) > 1 then
 							nRetCode = AddItem(2, 1, 30106, 100);
 							if nRetCode == 1 then
-								Msg2Player("B¹n nhËn ®­îc " .. "100" .. "Bét M×");
-								WriteLogEx("Hoat dong trung thu","V­ît ¶i 7",100,"Bét M×")
+								Msg2Player("B¹n nhËn ®­îc " .. "100" .. "Flour");
+								WriteLogEx("Hoat dong trung thu","V­ît ¶i 7",100,"Flour")
 							else
-								WriteLog("[Hoat dong trung thu]: [Account: "..GetAccount().."][Role Name:"..GetName().."] " .. "NhËn ®­îc" .. "100" .. "c¸i" .. "Bét M×" .. "ThÊt b¹i" .. "," .. "return value = "..nRetCode);
+								WriteLog("[Hoat dong trung thu]: [Account: "..GetAccount().."][Role Name:"..GetName().."] " .. "Received" .. "100" .. "c¸i" .. "Flour" .. "ThÊt b¹i" .. "," .. "return value = "..nRetCode);
 							end
 						end
 					end
@@ -1297,8 +1297,8 @@ function On_Dropis_Get(a,b,c)
 		MU_Msg2Team(GetName().."§· lÊy 10 ®ång vµng.")
 	else
 		AddItem(aGearsIndex[1], aGearsIndex[2], aGearsIndex[3], 1, 1, -1, -1, -1, -1, -1, -1)
-		WriteLog("#"..GetName().." "..GetWorldPos().."NhÆt ®­îc "..aGearsIndex[1].." "..aGearsIndex[2].." "..aGearsIndex[3])
-		MU_Msg2Team(GetName().."NhÆt ®­îc "..GT_GetGearFaction(aGearsIndex[3]).."-"..GT_GetGearPart(aGearsIndex[2]).."trang bŞ ")
+		WriteLog("#"..GetName().." "..GetWorldPos().."Picked up"..aGearsIndex[1].." "..aGearsIndex[2].." "..aGearsIndex[3])
+		MU_Msg2Team(GetName().."Picked up"..GT_GetGearFaction(aGearsIndex[3]).."-"..GT_GetGearPart(aGearsIndex[2]).."trang bŞ ")
 	end
 	MC_Del4Group(nChestIndex, 0)
 end
@@ -1404,14 +1404,14 @@ SB_EVENT_CONT = {
 	 "  [<color=metal>§¹i tiÓu th­<color> sÏ kh«ng qu¸ lµm khã (nÕu ®éi ngò ®Òu lµ n÷)]",
 	 "  ??????",
 	 "  ??????",
-	 "HËu hoa viªn"},
+	 "Rear Garden"},
 	{"  [Trong thêi gian nhÊt ®Şnh ph¸ hñy 3 L­ h­¬ng cã thÓ ph¸ ho¹i kÕt cÊu trËn ph¸p, c¸c L­ h­¬ng kh¸c vÉn ph¸t huy t¸c dông.]",
 	 "  [Trong thêi gian nhÊt ®Şnh ph¸ hñy 3 L­ h­¬ng, <color=metal>§¹i trang chñ<color> sÏ hiÖn th©n!",
  	 "  ??????",
 	 "  ??????",
 	 "  ??????",
 	 "  ??????",
-	 "Liªn Hoµn Sµo"},
+	 "Lianhuan Stronghold"},
 	{"  [Kim quy Kim, Méc quy Méc, Thñy quy Thñy, Háa quy Háa, Thæ quy Thæ, ®Òu lµ <color=metal>T­¬ng ThÕ<color> ]",	-- 70¼¶ÒÔÉÏ Ö»ÔÚÕâÀïµôÂä Ø¤°ï¡¤ÍµÌì»»ÈÕ¾÷Òª		¶ëáÒ¡¤¸²Ë®ĞÄ·¨¾÷Òª
 	 "  [Kim sinh Thñy, Thñy sinh Méc, Méc sinh Háa, Háa sinh Thæ, Thæ sinh Kim, ®Òu lµ <color=metal>T­¬ng Sinh<color> ]",	-- 70¼¶ÒÔÉÏ Ö»ÔÚÕâÀïµôÂä ¶ëáÒ¡¤´ó´È´ó±¯Öä¾÷Òª	ÉÙÁÖ¡¤´ó³ËÈçÀ´ĞÄ·¨¾÷Òª
 	 "  [Kim kh¾c Méc, Méc kh¾c Thæ, Thæ kh¾c Thñy, Thñy kh¾c Háa, Háa kh¾c Kim, ®Òu lµ <color=metal>T­¬ng Tö<color> ]",	-- 70¼¶ÒÔÉÏ Ö»ÔÚÕâÀïµôÂä ÌÆÃÅ¡¤±©ÓêÀæ»¨Õë¾÷Òª	Îäµ±¡¤²ĞÓ°¾÷ĞÄ·¨
@@ -1625,7 +1625,7 @@ function On_Good_Dropis()
 	elseif nState == 1 then
 		local n, szItem = DiceLootItem(dwID)
 		if n == 0 then
-			local szMsg = GetName().."NhÆt ®­îc "..szItem
+			local szMsg = GetName().."Picked up"..szItem
 			WriteLogEx("Tang Kiem son trang","nhÆt ®­îc","1",szItem)
 			MU_Msg2Team(szMsg)
 			ToServerMsg(szMsg, szItem, 1)
@@ -1645,11 +1645,11 @@ function show_roll_info(dwID)
 	local t, nSize, szItem = GetItemDiceRollInfo(dwID)
 	local bAllGiveUp = 1
 	for index, value in t do
-		local str = value[1].."NĞm"..value[2].." ®iÓm"
+		local str = value[1].."Throw"..value[2].." ®iÓm"
 		if value[3] == 0 then
-			str = value[1].."Phãng"
+			str = value[1].."Cast"
 		elseif value[3] == 1 then
-			str = str.." (TuyÕt cÇu)"
+			str = str.." (Snowball)"
 			if value[4] == 1 then
 				str = str.." -- NhÆt ®­îc "..szItem
 				ToServerMsg(str, szItem, 0)

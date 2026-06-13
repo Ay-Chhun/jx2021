@@ -18,7 +18,7 @@ function OnDeath(nNpcIndex)
 		nAddX = random(-15, 15)
 		nAddY = random(-15, 15)
 		
-		nTargetNpc = CreateNpc("Tói cao thñ", "Tói Cæ MÆc", nMapID, nWx + nAddX, nWy + nAddY)
+		nTargetNpc = CreateNpc("Tói cao thñ", "Gu Mo Bag", nMapID, nWx + nAddX, nWy + nAddY)
 		SetNpcLifeTime(nTargetNpc, 300)
 		SetNpcScript(nTargetNpc, "\\script\\task\\faction_boss\\boss_baoxiang_wudu.lua")
 	end

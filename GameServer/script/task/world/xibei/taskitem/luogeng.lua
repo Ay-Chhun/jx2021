@@ -38,7 +38,7 @@ local Mapid,nxpos,nypos = GetWorldPos();
 			nYpos = Fengshuixue_MapData[nMapDataID][4];
 			
 			strTalk = {
-				"La Canh cho th y, "..nXpos.."},{"..nYpos.." Î Æ©y c„ dﬁ th≠Íng, chæc Æ„ ch›nh lµ Phong ThÒy Huy÷t."
+				"The compass shows that"..nXpos.."},{"..nYpos.." Î Æ©y c„ dﬁ th≠Íng, chæc Æ„ ch›nh lµ Phong ThÒy Huy÷t."
 				}	
 		
 		else

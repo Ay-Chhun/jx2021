@@ -75,7 +75,7 @@ a:award			8:enumCheckTitle	g	d	1 or 0
 65	aTh­ëng cña Bang Héi Vinh Danh	cdkey	1	3056	6	1								
 66	Kİch ho¹t danh phËn §¹i HiÖp	cdkey	3
 67	aDanh phËn §¹i HiÖp	cdkey	1	3057	1	1
-68	Gia nhËp 1 thÕ lùc trong ba phe	cdkey	0	3286	1	1								
+68	Join 1 of the three factions	cdkey	0	3286	1	1								
 69	aGia nhËpThÕ lùc	cdkey	1	3057	2	1								
 70	Hoµn thµnh 1 lÇn vËn tiªu	cdkey	1	3057	3	1								
 71	aVËn Tiªu	cdkey	1	3057	4	1								

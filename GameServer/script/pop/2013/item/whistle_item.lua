@@ -5,7 +5,7 @@ Include("\\script\\lib\\globalfunctions.lua");
 --ÐèÒªÈ¥µÄµã
 sOtherMapMsg = "H¶i §«ng Thanh nghe thÊy tiÕng huýt sao liÒn h­íng vÒ ng­¬i ra hiÖu, khu vùc nµy kh«ng cã t×nh b¸o, b¶o ng­¬i ®Õn <color=red>Ngäa Long §éng 1<color>, <color=red>Ngäa Long §éng 2<color>, <color=red>Ngäa Long §éng 3<color> t×m thö."
 sAllMapFindMsg = "TÊt c¶ t×nh b¸o ®Òu bÞ ph¸t hiÖn.";
-g_tMapName = {" <color=red>Ngäa Long §éng 1<color> "," <color=red>Ngäa Long §éng 2<color> "," <color=red>Ngäa Long §éng 3<color> "};
+g_tMapName = {" <color=red>Crouching Dragon Cave 1<color>"," <color=red>Crouching Dragon Cave 2<color>"," <color=red>Crouching Dragon Cave 3<color>"};
 
 g_tGTaskId = {1325,1339};  --Éæ¼°µ½µÄÈÎÎñid ²é¿´gtask_main
 
@@ -42,9 +42,9 @@ tBitIdx = {
 	}	
 	
 tAward = {
-	[g_nMapId1] = {"T×nh B¸o Ngäa Long §éng 1", {2, 111,3,1}, },
-	[g_nMapId2] = {"T×nh B¸o Ngäa Long §éng 2", {2, 111,4,1}, },
-	[g_nMapId3] = {"T×nh B¸o Ngäa Long §éng 3", {2, 111,5,1}, },
+	[g_nMapId1] = {"Intelligence at Crouching Dragon Cave 1", {2, 111,3,1}, },
+	[g_nMapId2] = {"Intelligence at Crouching Dragon Cave 2", {2, 111,4,1}, },
+	[g_nMapId3] = {"Intelligence at Crouching Dragon Cave 3", {2, 111,5,1}, },
 };
 
 --TASKID_2013_NEW_TASK_SEARCH  bit_1 bit_2 bit_3 ¼ÇÂ¼3¸öµØÍ¼µÄ±¦²ØÊÇ·ñÕÒµ½£¬byte_2 ¼ÇÂ¼Ëæµ½µÄµØÍ¼×ø±êµÄIdx
@@ -86,7 +86,7 @@ function OnUse(nItemIndex)
 			Talk(1,"",sAllMapFindMsg);
 			return 0;
 		else
-			sMapMsg = sMapMsg .. " t×m thö.";
+			sMapMsg = sMapMsg .. " to search.";
 			Talk(1,"",sMapMsg);
 			return 0;
 		end

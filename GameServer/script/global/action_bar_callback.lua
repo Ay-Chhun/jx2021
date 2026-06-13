@@ -163,12 +163,12 @@ function af_spring_huashan_open_suc()
 		Msg2SubWorld(format("%s ®· ®o¹t ®­îc b¶o r­¬ng Hoa S¬n, trong b¶o r­¬ng cã chøa: %s ", GetName(), prize_name))
 		WriteLogEx("Bang hoi tinh anh","nhËn","1",prize_name,"",GetTongName())
 	else
-		WriteLog("[Ho¹t ®éng bang héi tinh anh] : ".."Ng­êi ch¬i "..GetName().." NhËn ®­îc phÇn th­ëng:"..prize_name.." Thªm thÊt b¹i, ký hiÖu:"..add_flag)
+		WriteLog("[Ho¹t ®éng bang héi tinh anh] : ".."Player"..GetName().." NhËn ®­îc phÇn th­ëng:"..prize_name.." Thªm thÊt b¹i, ký hiÖu:"..add_flag)
 	end
 
 	local tBook =
 	{
-		[1] = {"Chiªm Y Phæ",	0,	107,	66,	1,	},
+		[1] = {"Zhanyi Manual",	0,	107,	66,	1,	},
 		[2] = {"Tö Hµ MËt tÞch",	0,	107,	65,	1,	},
 		[3] = {"Thiªn Hµ MËt tÞch",	0,	107,	64,	1,	},
 	}
@@ -182,14 +182,14 @@ function af_spring_huashan_open_suc()
 		[1] = {"§¹i Hµo L«i Th­¬ng",	0,	6,	108,	130,	},
 		[2] = {"ThÇn Cung",		0,	4,	119,	130,	},
 		[3] = {"V¹n NhÉn",		0,	0,	14,		220,	},
-		[4] = {"A La H¸n Tr­îng",	0,	8,	97,		100,	},
-		[5] = {"Cæ §Ýnh",		0,	3,	64,		200,	},
-		[6] = {"LiÖt DiÖm",		0,	5,	40,		200,	},
+		[4] = {"Arhat Staff",	0,	8,	97,		100,	},
+		[5] = {"Guding",		0,	3,	64,		200,	},
+		[6] = {"Lie Yan",		0,	5,	40,		200,	},
 		[7] = {"ThÇn Hµnh",		0,	9,	86,		130,	},
 		[8] = {"Háa Tinh",		0,	2,	36,		90,		},
 		[9] = {"Hi Nh©n CÇm",	0,	10,	75,		140,	},
 		[10] = {"M·nh hæ",		0,	11,	12,		200,	},
-		[11] = {"L¨ng Phong",		0,	7,	12,		200,	},
+		[11] = {"Lingfeng",		0,	7,	12,		200,	},
 		[12] = {"M·n Thiªn Hoa Vò",	0,	1,	53,		130,	},
 	}
 	local tAttribute =
@@ -233,9 +233,9 @@ function af_spring_huashan_open_suc()
 	if add_flag == 1 then
 		Msg2Player("B¹n më b¶o r­¬ng, nhËn ®­îc: "..prize_name.."!")
 		Msg2SubWorld(format("%s ®· ®o¹t ®­îc b¶o r­¬ng Hoa S¬n, trong b¶o r­¬ng cã chøa: %s ", GetName(), prize_name))
-		WriteLog("[Ho¹t ®éng bang héi tinh anh] : ".."Ng­êi ch¬i "..GetName().." NhËn ®­îc phÇn th­ëng:"..prize_name.."!")
+		WriteLog("[Ho¹t ®éng bang héi tinh anh] : ".."Player"..GetName().." NhËn ®­îc phÇn th­ëng:"..prize_name.."!")
 	else
-		WriteLog("[Ho¹t ®éng bang héi tinh anh] : ".."Ng­êi ch¬i "..GetName().." NhËn ®­îc phÇn th­ëng:"..prize_name.." Thªm thÊt b¹i, ký hiÖu:"..add_flag)
+		WriteLog("[Ho¹t ®éng bang héi tinh anh] : ".."Player"..GetName().." NhËn ®­îc phÇn th­ëng:"..prize_name.." Thªm thÊt b¹i, ký hiÖu:"..add_flag)
 	end
 
 	local nDateStart = tonumber(date("%y%m%d"))		--¼ÇÂ¼°ïÖÚ¿ÉÒÔÁì½±µÄÆðÊ¼Ê±¼ä
@@ -313,17 +313,17 @@ function af_conf_resource_open_suc()
 		if random(1,100) <= 33 then
 			Earn(1000000)
 			Msg2Player("B¹n ®· më ®­îc B¶o r­¬ng, nhËn ®­îc 100 vµng!")
-			WriteLogEx("Cong Thanh Chien","Më R­¬ng Tµi Nguyªn",100,"vµng")
+			WriteLogEx("Cong Thanh Chien","Open Resource Chest",100,"gold")
 		else
 			local nRet, nItemIdx = AddItem(2,1,1210,1)
 			if nRet == 1 then
 				SetItemExpireTime(nItemIdx,24*60*60)
 				Msg2Player("B¹n ®· më ®­îc B¶o r­¬ng, nhËn ®­îc B¶o r­¬ng Tµi nguyªn!")				
 			end
-			WriteLogEx("Cong Thanh Chien","Më R­¬ng Tµi Nguyªn",1,"B¶o r­¬ng Tµi nguyªn")
+			WriteLogEx("Cong Thanh Chien","Open Resource Chest",1,"B¶o r­¬ng Tµi nguyªn")
 		end
-		Msg2SubWorld("Ng­êi ch¬i: "..GetName().." Më B¶o r­¬ng Tµi nguyªn thµnh c«ng!")
-		local flag_index = CreateNpc("Tiªu s­-®èi tho¹i","Ng­êi më:"..GetName(),GetNpcWorldPos(npc_index))
+		Msg2SubWorld("Player:"..GetName().." Më B¶o r­¬ng Tµi nguyªn thµnh c«ng!")
+		local flag_index = CreateNpc("Tiªu s­-®èi tho¹i","Opener:"..GetName(),GetNpcWorldPos(npc_index))
 		SetNpcLifeTime(flag_index,21600)	
 	end
 	SetNpcTempData(npc_index, 1, 0);
@@ -387,7 +387,7 @@ function award_point()
 				if 0 < nRemain then
 					SetTask(TSK_NEWRES_POINT, GetTask(TSK_NEWRES_POINT) +1 * nTypeDouble)
 					ModifyExp(nLev_GetExp * 8 * nTypeDouble)
-					Msg2Player("Thêi gian hç trî cßn l¹i lµ: "..nRemain.." phót")
+					Msg2Player("Thêi gian hç trî cßn l¹i lµ: "..nRemain.." minutes")
 				else
 					SetTask(TSK_NEWRES_POINT, GetTask(TSK_NEWRES_POINT) +1)
 					ModifyExp(nLev_GetExp * 8)
@@ -395,9 +395,9 @@ function award_point()
 			end
 			nPoint = mod(GetTask(TSK_NEWRES_POINT),10000)--GetTask(TSK_NEWRES_POINT)
 			if nPoint < 2500 then
-				Msg2Player("TÝch lòy thu thËp: "..nPoint.."/2500")
+				Msg2Player("Accumulated gathering:"..nPoint.."/2500")
 			else
-				Msg2Player("TÝch lòy thu thËp: 2500/2500")
+				Msg2Player("Accumulated gathering: 2500/2500")
 			end
 			if nPoint >= 2500 then
 				gf_SetTaskByte(TSK_NEWRES_FINISH,BYTE_NEWRES_STATE,2)
@@ -434,7 +434,7 @@ function award_point()
 								if 0 < nRemainPT then
 									SetTask(TSK_NEWRES_POINT, GetTask(TSK_NEWRES_POINT) + (1 * nTypeDoublePT - 1))
 									ModifyExp(nLev_GetExp_mem * 8 * ( nTypeDoublePT - 1))
-									Msg2Player("Thêi gian hç trî cßn l¹i lµ: "..nRemainPT.." phót")
+									Msg2Player("Thêi gian hç trî cßn l¹i lµ: "..nRemainPT.." minutes")
 								end
 								SetTask(TSK_NEWRES_POINT, GetTask(TSK_NEWRES_POINT) +1)
 								ModifyExp(nLev_GetExp_mem * 8)							
@@ -551,7 +551,7 @@ function af_arrest_finish()
 						nPay = 0
 					end
 					CustomDataSave("tongcitywar_arrest_tong", "sd", szTixiaTong, nPay)	--  ¼ÇÂ¼×¥ÄãÃû²¶ËùÊôµÄ°ï»áºÍÐèÒª½»¶àÉÙÇ®
-					Msg2Player("B¹n bÞ "..szSelfName.."Truy n·")
+					Msg2Player("B¹n bÞ "..szSelfName.."Pursued")
 					PlayerIndex = nOldPlayer
 					DelItem(2,1,1211,1)
 				end
@@ -653,9 +653,9 @@ function conf_task_open_suc()
 			end
 		end
 		if add_flag_total == 1 then
-			SendTongMessage(GetName().." NhÆt ®­îc "..npc_name..".")
-			Msg2SubWorld(GetTongName().." Bang héi: "..GetName().." NhÆt ®­îc "..npc_name..".")
-			WriteLog("NhiÖm vô Bé Phi Yªn: Ng­êi ch¬i ["..GetName().."] t¹i Map :"..GetWorldPos() .."NhÆt ®­îc "..npc_name)
+			SendTongMessage(GetName().." Picked up"..npc_name..".")
+			Msg2SubWorld(GetTongName().." Bang héi: "..GetName().." Picked up"..npc_name..".")
+			WriteLog("NhiÖm vô Bé Phi Yªn: Ng­êi ch¬i ["..GetName().."] t¹i Map :"..GetWorldPos() .."Picked up"..npc_name)
 		end
 end
 
@@ -717,7 +717,7 @@ end
 tlucky_award = {
 				{"V¹n VËt Quy Nguyªn §¬n", 909, {1,0,11,1}, 0},
 				{"H¾c Ngäc §o¹n Tôc Cao", 909, {1,0,6,1}, 0},
-				{"Sinh Sinh Hãa T¸n", 909,{1,0,16,1}, 0},
+				{"Life-Begetting Powder", 909,{1,0,16,1}, 0},
 				{"Ma §ao Th¹ch C©p 1", 789, {2,1,30428,1}, 15*24*60*60},
 				{"Ma §ao Th¹ch C©p 2", 312, {2,1,30429,1}, 15*24*60*60},	
 				{"Ma §ao Th¹ch C©p 3", 99, {2,1,30430,1}, 15*24*60*60},			
@@ -726,7 +726,7 @@ tlucky_award = {
 				{"Cæ Linh Th¹ch", 100, {2,1,30368,1}, 0},	
 				{"Cæ Linh Ngäc", 100, {2,1,30369,1}, 0},	
 				{"M¶nh Thiªn Cang", 253, {2,1,30390,1}, 0},
-				{"Méc R­¬ng", 3553, {2,1,30340,1}, 0},
+				{"Wooden Chest", 3553, {2,1,30340,1}, 0},
 				{"Thiªn Th¹ch Linh Th¹ch", 1, {2,1,1068,1}, 7*24*60*60},
 				{"§Þnh Hån Thiªn Th¹ch ThÇn Th¹ch", 1, {2,1,1067,1}, 7*24*60*60},
 				{"§¹i §Þnh Hån", 1, {2,1,1113,1}, 7*24*60*60},								
@@ -748,7 +748,7 @@ tbAwardQuaySo  = {
 	[11] = {[1] = {item={{gdp={2,1,30428,1,1}, name = "Ma §ao Th¹ch cÊp 1", nExpired = 7*24*3600}}}, nRate = 2.00},
 	[12] = {[1] = {item={{gdp={2,1,30429,1,1}, name = "Ma §ao Th¹ch cÊp 2", nExpired = 7*24*3600}}}, nRate = 2.00},
 	[13] = {[1] = {item={{gdp={2,1,1009,1,1}, name = "Thiªn Th¹ch Tinh Th¹ch"}}}, nRate = 1.50},
-	[14] = {[1] = {item={{gdp={2,1,1000,1,1}, name = "Bµn Long BÝch", nExpired = 7*24*3600}}}, nRate = 0.50},
+	[14] = {[1] = {item={{gdp={2,1,1000,1,1}, name = "Panlong Bi", nExpired = 7*24*3600}}}, nRate = 0.50},
 --	[6] = {[1] = {item={{gdp={2,1,30523,1,1}, name = "CÊp 3 TÈy T©m Th¹ch"}}}, nRate = 5.00},
 --	[7] = {[1] = {item={{gdp={2,1,30529,1,1}, name = "CÊp 3 LuyÖn L« ThiÕt"}}}, nRate = 5.00},
 --	[8] = {[1] = {item={{gdp={2,1,30534,1,1}, name = "ThiÕt Tinh cÊp 2"}}}, nRate = 5.00},
@@ -774,17 +774,17 @@ tbAwardQuaySo  = {
 --}
 -- MËt tÞch cao cÊp 
 VET_2012_GAOJIMIJI = {
-	{1, 988, "Kim Cang B¸t Nh· Ch©n QuyÓn ", {0, 107, 204, 1}, 0},
-	{1, 368, "TiÒm Long Tóc DiÖt Ch©n QuyÓn", {0, 107, 205, 1}, 0},
-	{1, 714, "V« TrÇn Bå §Ò Ch©n QuyÓn", {0, 107, 206, 1}, 0},
+	{1, 988, "Vajra Prajna True Manual", {0, 107, 204, 1}, 0},
+	{1, 368, "Hidden Dragon Annihilation True Manual", {0, 107, 205, 1}, 0},
+	{1, 714, "Dustless Bodhi True Manual", {0, 107, 206, 1}, 0},
 	{1, 888, "Thiªn La Liªn Ch©u Ch©n QuyÓn", {0, 107, 207, 1}, 0},
-	{1, 348, "Nh­ ý Kim §Ønh Ch©n QuyÓn", {0, 107, 208, 1}, 0},
-	{1, 524, "BÝch H¶i TuyÖt ¢m Ch©n QuyÓn", {0, 107, 209, 1}, 0},
-	{1, 888, "Hçn §én TrÊn Nh¹c Ch©n QuyÓn", {0, 107, 210, 1}, 0},
+	{1, 348, "Wishful Golden Top True Manual", {0, 107, 208, 1}, 0},
+	{1, 524, "Azure Sea Silent Sound True Manual", {0, 107, 209, 1}, 0},
+	{1, 888, "Chaos Town Mountain True Manual", {0, 107, 210, 1}, 0},
 	{1, 888, "Quú Thiªn Du Long Ch©n QuyÓn", {0, 107, 211, 1}, 0},
 	{1, 668, "HuyÒn ¶nh Mª T«ng Ch©n QuyÓn", {0, 107, 212, 1}, 0},
-	{1, 714, "Qu©n Tö §íi Phong Ch©n QuyÓn", {0, 107, 213, 1}, 0},
-	{1, 568, "TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn", {0, 107, 214, 1}, 0},
+	{1, 714, "Gentleman Welcomes the Wind True Manual", {0, 107, 213, 1}, 0},
+	{1, 568, "Town Army Flying Dragon Spear True Manual", {0, 107, 214, 1}, 0},
 	{1, 668, "Xuyªn V©n L¹c Hång Ch©n QuyÓn", {0, 107, 215, 1}, 0},
 	{1, 888, "HuyÒn Minh Phong Ma Ch©n QuyÓn", {0, 107, 216, 1}, 0},
 	{1, 888, "Linh Cæ HuyÒn Tµ Ch©n QuyÓn", {0, 107, 217, 1}, 0},
@@ -823,13 +823,13 @@ function confirm_lucky_award_fail()
 end
 
 function confirm_translife_suc()
-	Say("Chóc mõng ng­¬i ®· lÜnh héi ®­îc thªm 2 thµnh Hçn Nguyªn C«ng! H·y ®¨ng nhËp l¹i.",1,"Tho¸t!/go_exit")
+	Say("Chóc mõng ng­¬i ®· lÜnh héi ®­îc thªm 2 thµnh Hçn Nguyªn C«ng! H·y ®¨ng nhËp l¹i.",1,"Exit!/go_exit")
 end
 
 t_dig_award_1 = {		    
 	    	{1, 15, "Thiªn th¹ch", {2, 2, 8, 1}, 0},
 	    	{1, 15, "M¶nh Thiªn th¹ch", {2, 2, 7, 1}, 0},
-	    	{1, 25, "B¨ng th¹ch", {2, 1, 149, 1}, 0},
+	    	{1, 25, "Ice Stone", {2, 1, 149, 1}, 0},
 	    	{3, 45, 100000, 1},
 }
 
@@ -854,15 +854,15 @@ function open_golden_chest_success()
 	if mod(nDigCount,7) == 0 then
 		local nRand = gf_GetRandItemByTable(t_dig_award_2,1000000,9)
 		if t_dig_award_2[nRand][1] == 1 then
-			gf_AddItemEx2(t_dig_award_2[nRand][4],t_dig_award_2[nRand][3],szHKLBLogHeader,"TÇn L¨ng b¶o tµng",t_dig_award_2[nRand][5],1)
+			gf_AddItemEx2(t_dig_award_2[nRand][4],t_dig_award_2[nRand][3],szHKLBLogHeader,"Qin Tomb Treasure",t_dig_award_2[nRand][5],1)
 		else
-			gf_EventGiveCustomAward(t_dig_award_2[nRand][1] - 1, t_dig_award_2[nRand][3], t_dig_award_2[nRand][4] or 1, szHKLBLogHeader, "TÇn L¨ng b¶o tµng");
+			gf_EventGiveCustomAward(t_dig_award_2[nRand][1] - 1, t_dig_award_2[nRand][3], t_dig_award_2[nRand][4] or 1, szHKLBLogHeader, "Qin Tomb Treasure");
 		end		
 		if nRand >= 1 and nRand <= 4 then
-			AddGlobalNews("[TÇn L¨ng B¶o Tµng] Nghe nãi ®¹i hiÖp <color=green>"..GetName().."<color> ®· may m¾n ®µo ®­îc kho b¸u <color=yellow>"..t_dig_award_2[nRand][3].."<color>, xung quanh khu vùc ®ã ch¾c ch¾n cßn rÊt  nhiÒu B¶o VËt.")
+			AddGlobalNews("[TÇn L¨ng B¶o Tµng] Nghe nãi ®¹i hiÖp <color=green>"..GetName().."<color> has luckily dug up the treasure <color=yellow>"..t_dig_award_2[nRand][3].."<color>, xung quanh khu vùc ®ã ch¾c ch¾n cßn rÊt  nhiÒu B¶o VËt.")
 		end				
 	else
-		gf_EventGiveRandAward(t_dig_award_1,100,4,szHKLBLogHeader,"TÇn L¨ng b¶o tµng")
+		gf_EventGiveRandAward(t_dig_award_1,100,4,szHKLBLogHeader,"Qin Tomb Treasure")
 	end
 end
 

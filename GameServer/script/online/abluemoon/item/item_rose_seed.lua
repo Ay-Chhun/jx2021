@@ -1,21 +1,21 @@
 Include("\\script\\online\\abluemoon\\abluemoon_head.lua")
 g_tbItem = 
 {
-	[1] = {2,0,1166,"紫玫瑰花"},
-	[2] = {2,0,1165,"蓝玫瑰花"},
+	[1] = {2,0,1166,"Purple Rose"},
+	[2] = {2,0,1165,"Blue Rose"},
 }
 
 g_tbSentece = 
 {
 	[1] = {
-			[1] = "如果爱上你是一个错，我宁愿这是世界上最美丽的错，我宁愿错一生",
-			[2] = "我告诉你：第一是我爱你，第二还是我爱你，第三仍是我爱你……我爱你……",
-			[3] = "海可以枯，石可以烂，我对你的爱，永不会变",
+			[1] = "If loving you is a mistake, I would rather it be the most beautiful mistake in the world, I would rather be mistaken for a lifetime",
+			[2] = "I tell you: first, I love you; second, still I love you; third, again I love you... I love you...",
+			[3] = "Seas may run dry and stones may crumble, but my love for you will never change",
 		  },
 	[2] = {
-			[1] = "我心里有个小秘密你想不想知道？让风悄悄告诉你，我喜欢你，真的好喜欢……",
-			[2] = "如果你快乐，我给你祝福；如果你寂寞，我给你幸福",
-			[3] = "宝贝宝贝我爱你，就像老鼠爱大米；你是天上的凤凰飞呀飞，我是地上的土狗追呀追",
+			[1] = "There is a little secret in my heart, do you want to know? Let the wind quietly tell you: I like you, I really do like you...",
+			[2] = "If you are happy, I give you my blessing; if you are lonely, I give you happiness",
+			[3] = "Baby, baby, I love you, just as the mouse loves rice; you are the phoenix flying in the sky, and I am the dirt dog on the ground chasing after you",
 		  },
 }
 
@@ -23,22 +23,22 @@ function OnUse(nItemIdx)
 	local nDate = tonumber(date("%y%m%d%H"));
 
 	if GetLevel() < 50 then
-		Talk(1,"","不好意思，等级小于<color=yellow>50<color>级的不能种玫瑰花。");
+		Talk(1,"","Sorry, those below level <color=yellow>50<color> cannot plant roses.");
 		return 0;
 	end;
 	if GetSex() ~= 1 then
-		Talk(1,"","不好意思，玫瑰花种子只能由<color=yellow>男方<color>种下。");
+		Talk(1,"","Sorry, rose seeds can only be planted by the <color=yellow>man<color>.");
 		return 0;
 	end;
 	local nType = get_seed_type(nItemIdx);
 	if nType == 0 then
-		Talk(1,"","你这粒种子并不是玫瑰花的种子。");
+		Talk(1,"","This seed of yours is not a rose seed.");
 		return 0;
 	end;
 	local selTab = {};
-	tinsert(selTab,"是的/#select_sentece("..nItemIdx..","..nType..")");
-	tinsert(selTab,"让我考虑一下/nothing");
-	Say("种紫色玫瑰，你将被贬为<color=yellow>进士<color>，种蓝色玫瑰，你将被贬为<color=yellow>学士<color>。你确定为完成心爱的人的愿望而让自己经受前所未有的考验吗？",getn(selTab),selTab);
+	tinsert(selTab,"Yes/#select_sentece("..nItemIdx..","..nType..")");
+	tinsert(selTab,"Let me think about it/nothing");
+	Say("Plant a purple rose and you will be conferred the title of <color=yellow>Advanced Scholar<color>; plant a blue rose and you will be conferred the title of <color=yellow>Bachelor Scholar<color>. Are you sure you want to endure an unprecedented trial for the sake of your beloved's wish?",getn(selTab),selTab);
 end;
 
 function select_sentece(nItemIdx,nType)
@@ -46,21 +46,21 @@ function select_sentece(nItemIdx,nType)
 	for i=1,getn(g_tbSentece[nType]) do
 		tinsert(selTab,g_tbSentece[nType][i].."/#plant("..nItemIdx..","..nType..","..i..")");
 	end;
-	tinsert(selTab,"让我考虑一下/nothing");
-	Say("请选择你爱的告白：",getn(selTab),selTab);
+	tinsert(selTab,"Let me think about it/nothing");
+	Say("Please choose your confession of love:",getn(selTab),selTab);
 end;
 
 function plant(nItemIdx,nType,nIdx)
 	local flag,nTime = GetAntiEnthrallmentInfo()
 	if nTime >= 10800 and flag ==1 then
-		Talk(1,"","请在健康游戏时间再来种玫瑰吧！")
+		Talk(1,"","Please come plant roses again during healthy gaming hours!")
 		return 0;
 	end
 	if check_team() == 0 then
 		return 0;
 	end;
 	if GetItemCount(2,0,351) == 0 then
-		Talk(1,"","你身上并没带有露水啊，露水在<color=yellow>药店<color>有得卖。");
+		Talk(1,"","You do not have any Dew on you. Dew is sold at the <color=yellow>Pharmacy<color>.");
 		return 0
 	end;
 	if DelItemByIndex(nItemIdx,1) == 1 then
@@ -68,19 +68,19 @@ function plant(nItemIdx,nType,nIdx)
 		DelItem(2,0,351,1);
 		local szFemaleName = get_partner_name();
 		local szMaleName = GetName();
-		local nNpcIdx = CreateNpc("玫瑰花小苗","为"..szFemaleName.."种的玫瑰花苗",GetWorldPos())
+		local nNpcIdx = CreateNpc("玫瑰花小苗","For"..szFemaleName.."The planted rose seedling",GetWorldPos())
 		SetNpcScript(nNpcIdx,"\\script\\online\\abluemoon\\rose_npc.lua");
-		Msg2Global(szMaleName.."为心爱的"..szFemaleName.."种下了世间罕见的"..g_tbItem[nType][4].."，并对"..szFemaleName.."说："..g_tbSentece[nType][nIdx]);
-		AddGlobalCountNews("<color=red>"..szMaleName.."<color>为心爱的<color=red>"..szFemaleName.."<color>种下了世间罕见的"..g_tbItem[nType][4].."，并对<color=red>"..szFemaleName.."<color>说："..g_tbSentece[nType][nIdx],2);
+		Msg2Global(szMaleName.."For the beloved"..szFemaleName.."Planted the world's rare"..g_tbItem[nType][4]..", and to"..szFemaleName.."said:"..g_tbSentece[nType][nIdx]);
+		AddGlobalCountNews("<color=red>"..szMaleName.."<color>For the beloved<color=red>"..szFemaleName.."<color>planted the world's rare"..g_tbItem[nType][4]..", and to<color=red>"..szFemaleName.."<color>said:"..g_tbSentece[nType][nIdx],2);
 		local nOldPoint = GetTask(ABLUEMOON_JIFEN);
 		if nType == 1 then
 			jifen_reduce(nOldPoint - 1000)
 			--SetTask(ABLUEMOON_JIFEN,1000);
-			Msg2Player("目前你的科考积分是1000分");
+			Msg2Player("Your current imperial exam score is 1000 points");
 		elseif nType == 2 and nPoint > 1500 then
 			jifen_reduce(nOldPoint - 1500)
 			--SetTask(ABLUEMOON_JIFEN,1500);
-			Msg2Player("目前你的科考积分是1500分");
+			Msg2Player("Your current imperial exam score is 1500 points");
 		end;
 		local nOldIdx = PlayerIndex;
 		local nRand = random(1,10000);
@@ -90,10 +90,10 @@ function plant(nItemIdx,nType,nIdx)
 			SetTask(ABLUEMOON_GROW_TYPE,10+nType);
 			SetTask(ABLUEMOON_ROSE_INDEX,nNpcIdx);
 			SetTask(ABLUEMOON_PLANT_TIME,GetTime());
-			Say("请注意：如果女方在还没摘取这朵玫瑰花前和别的玩家种了另一朵玫瑰，那么女方将不能摘取这朵玫瑰，同样地，如果男方中途和别的玩家种了另一朵玫瑰，那么这朵玫瑰也将不能摘取。",0);
+			Say("Please note: If the woman has not yet picked this rose and another player plants a different rose for her, then the woman will not be able to pick this rose. Likewise, if the man plants another rose for a different player midway, then this rose also cannot be picked.",0);
 		end;
 		PlayerIndex = nOldIdx;
-		WriteLog("[兔小丫玫瑰]:"..GetName().."为"..szFemaleName.."种下了玫瑰，nType:"..nType.."，old point:"..nOldPoint);
+		WriteLog("[Rabbit Little Girl Rose]:"..GetName().."For"..szFemaleName.."Planted a rose, nType:"..nType..", old point:"..nOldPoint);
 	end;
 end;
 
@@ -109,11 +109,11 @@ end;
 
 function check_team()
 	if check_partner_sex() == 0 then
-		Talk(1,"","必须<color=yellow>男女两人组队<color>才可以种玫瑰花。");
+		Talk(1,"","You must <color=yellow>form a team of a man and a woman<color> to plant a rose.");
 		return 0;
 	end;
 	if check_partner_level() == 0 then
-		Talk(1,"","男女双方等级必须<color=yellow>大于或等于50级<color>才可以种玫瑰花。");
+		Talk(1,"","Both the man and woman's levels must be <color=yellow>greater than or equal to 50<color> to plant a rose.");
 		return 0;
 	end;
 	return 1;

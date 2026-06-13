@@ -7,7 +7,7 @@ function OnUse()
 				". ThuyÕt minh chiÕn tr­êng/battle_introduce",
 				". Tin tøc chiÕn tr­êng/battle_info",
 				". T×m hiÓu thuéc tÝnh trang bÞ chiÕn tr­êng/know_equip",
-				"§ãng/nothing",
+				"Close/nothing",
 				}
 	Say("H­íng dÉn chiÕn tr­êng:",getn(selTab),selTab);
 end;
@@ -18,19 +18,19 @@ function battle_info()
 				". Th¶o cèc chiÕn/resource_info",
 				". Ph¸o ®µi chiÕn/emplacement_info",
 				". Nh¹n M«n Quan chiÕn/main_info",
-				"Tr­íc/OnUse",
-				"§ãng/nothing",
+				"Back/OnUse",
+				"Close/nothing",
 				}
 	Say("Tin tøc chiÕn tr­êng:",getn(selTab),selTab);
 end;
 
 function battle_introduce()
 	local selTab = {
-				". C¸ch ch¬i/battle_intro_technique",
+				". How to play/battle_intro_technique",
 				". PhÇn th­ëng/battle_intro_award",
-				". Qu©n hµm/battle_intro_rank",
-				"Tr­íc/OnUse",
-				"§ãng/nothing",
+				". Military rank/battle_intro_rank",
+				"Back/OnUse",
+				"Close/nothing",
 				}
 	Say("ThuyÕt minh chiÕn tr­êng:",getn(selTab),selTab);
 end;
@@ -41,8 +41,8 @@ function battle_intro_technique()
 				". Nh¹n M«n Quan_Th«n Lµng chiÕn/battle_intro_technique_vill",
 				". Nh¹n M«n Quan_Ph¸o §µi chiÕn/battle_intro_technique_empl",
 				". Nh¹n M«n Quan_ChiÕn tr­êng chÝnh/battle_intro_technique_main",
-				"Tr­íc/battle_introduce",
-				"§ãng/nothing",
+				"Back/battle_introduce",
+				"Close/nothing",
 				}
 	Say("C¸ch ch¬i ë chiÕn tr­êng míi:",getn(selTab),selTab);
 end;
@@ -99,7 +99,7 @@ function village_info()
 		local nTargetNameLiao = GetMissionS(MSTR_LIAO_TARGETNAME);
 		local _,nTargetSongPosX,nTargetSongPosY = GetNpcWorldPos(GetMissionV(MV_TASK_NPCINDEX_SONG));
 		local _,nTargetLiaoPosX,nTargetLiaoPosY = GetNpcWorldPos(GetMissionV(MV_TASK_NPCINDEX_LIAO));
-		Talk(1,"battle_info","§iÓm tÝch lòy c¸ nh©n trong ChiÕn tr­êng Th«n trang: <color=yellow>"..BT_GetData(PTNC_BATTLEPOINT).."<color><enter>TiÕn ®é phe Tèng: <color=yellow>"..GetMissionV(MV_SONG_TASKSTEP).."<color> TiÕn ®é phe Liªu: <color=yellow>"..GetMissionV(MV_LIAO_TASKSTEP).."<color><enter>Sè l­îng B¸ch Sù Th«ng bÞ chÝnh phe m×nh tiªu diÖt: <color=yellow>"..GetMissionV(MV_SONG_KILL_SONG+nCamp-1).."<color>Sè l­îng B¸ch Sù Th«ng cña phe ®Þch bÞ phe m×nh diÖt: <color=yellow>"..GetMissionV(MV_SONG_KILL_LIAO+nCamp-1).."<color>")
+		Talk(1,"battle_info","Personal accumulated points in the Farm Battlefield: <color=yellow>"..BT_GetData(PTNC_BATTLEPOINT).."<color><enter>TiÕn ®é phe Tèng: <color=yellow>"..GetMissionV(MV_SONG_TASKSTEP).."<color> TiÕn ®é phe Liªu: <color=yellow>"..GetMissionV(MV_LIAO_TASKSTEP).."<color><enter>Sè l­îng B¸ch Sù Th«ng bÞ chÝnh phe m×nh tiªu diÖt: <color=yellow>"..GetMissionV(MV_SONG_KILL_SONG+nCamp-1).."<color>Sè l­îng B¸ch Sù Th«ng cña phe ®Þch bÞ phe m×nh diÖt: <color=yellow>"..GetMissionV(MV_SONG_KILL_LIAO+nCamp-1).."<color>")
 	else
 		Talk(1,"battle_info"," hiÖn kh«ng trong ChiÕn tr­êng Th«n trang.");
 	end;
@@ -109,7 +109,7 @@ function resource_info()
 	if BT_GetData(PT_BATTLE_TYPE) == RESOURCE_ID then
 		local nCamp = BT_GetCamp();
 		local nEnemyCamp = 3-nCamp;	
-		Talk(1,"battle_info","§iÓm tÝch lòy c¸ nh©n: <color=yellow>"..BT_GetData(PTNC_BATTLEPOINT).."<color><enter>Sè l­¬ng th¶o phe m×nh: <color=yellow>"..GetMissionV(MV_RESOURCE_SONG+nCamp-1).."<color>Sè l­¬ng th¶o phe ®Þch: <color=yellow>"..GetMissionV(MV_RESOURCE_SONG+nEnemyCamp-1).."<color>");
+		Talk(1,"battle_info","Personal accumulated points: <color=yellow>"..BT_GetData(PTNC_BATTLEPOINT).."<color><enter>Amount of provisions for your faction: <color=yellow>"..GetMissionV(MV_RESOURCE_SONG+nCamp-1).."<color>Amount of provisions for the enemy faction: <color=yellow>"..GetMissionV(MV_RESOURCE_SONG+nEnemyCamp-1).."<color>");
 	else
 		Talk(1,"battle_info"," hiÖn kh«ng trong Th¶o Cèc chiÕn.");
 	end;
@@ -131,7 +131,7 @@ function emplacement_info()
 			nOccupyTimeLiao = GetMissionV(MV_OCCUPY_TIME_LIAO)+nOccupyTime;
 			nOccupyTimeSong = GetMissionV(MV_OCCUPY_TIME_SONG);	
 		end;
-		Talk(1,"battle_info","§iÓm tÝch lòy c¸ nh©n trong chiÕn tr­êng ph¸o ®µi: <color=yellow>"..BT_GetData(PTNC_BATTLEPOINT).."<color><enter>§iÓm tÝch lòy phe m×nh: <color=yellow>"..GetMissionV(MV_BATTLE_POINT_SONG+nCamp-1).."<color><enter>§iÓm tÝch lòy phe ®Þch: <color=yellow>"..GetMissionV(MV_BATTLE_POINT_SONG+nEnemyCamp-1).."<color><enter>Thêi gian phe Tèng chiÕm lÜnh ph¸o ®µi: <color=yellow>"..Get_Time_String(nOccupyTimeSong).."<color> Thêi gian phe Liªu chiÕm lÜnh ph¸o ®µi: <color=yellow>"..Get_Time_String(nOccupyTimeLiao).."<color>")
+		Talk(1,"battle_info","§iÓm tÝch lòy c¸ nh©n trong chiÕn tr­êng ph¸o ®µi: <color=yellow>"..BT_GetData(PTNC_BATTLEPOINT).."<color><enter>Accumulated points of your faction: <color=yellow>"..GetMissionV(MV_BATTLE_POINT_SONG+nCamp-1).."<color><enter>Accumulated points of the enemy faction: <color=yellow>"..GetMissionV(MV_BATTLE_POINT_SONG+nEnemyCamp-1).."<color><enter>Thêi gian phe Tèng chiÕm lÜnh ph¸o ®µi: <color=yellow>"..Get_Time_String(nOccupyTimeSong).."<color> Thêi gian phe Liªu chiÕm lÜnh ph¸o ®µi: <color=yellow>"..Get_Time_String(nOccupyTimeLiao).."<color>")
 	else
 		Talk(1,"battle_info"," hiÖn kh«ng trong chiÕn tr­êng ph¸o ®µi.");
 	end;
@@ -141,7 +141,7 @@ function main_info()
 	local nCamp = BT_GetCamp();
 	local nEnemyCamp = 3-nCamp;
 	if BT_GetData(PT_BATTLE_TYPE) == MAINBATTLE_ID then
-		Talk(1,"battle_info","§iÓm tÝch lòy c¸ nh©n: <color=yellow>"..BT_GetData(PTNC_BATTLEPOINT).."<color><enter>§iÓm tÝch lòy phe m×nh: <color=yellow>"..GetMissionV(MV_BATTLE_POINT_SONG+nCamp-1).."<color><enter>§iÓm tÝch lòy phe ®Þch: <color=yellow>"..GetMissionV(MV_BATTLE_POINT_SONG+nEnemyCamp-1).."<color><enter>HiÖu óy phe ®Þch: <color=yellow>"..(12-GetMissionV(MV_KILL_SONG_LOOEY_COUNT+nEnemyCamp-1)).."<color> §« thèng phe ®Þch: <color=yellow>"..(6-GetMissionV(MV_KILL_SONG_CAPTAIN_COUNT+nEnemyCamp-1)).."<color> Tiªn phong phe ®Þch: <color=yellow>"..(1-GetMissionV(MV_KILL_SONG_PIONEER_COUNT+nEnemyCamp-1)).."<color> §¹i t­íng phe ®Þch: <color=yellow>"..(1-GetMissionV(MV_KILL_SONG_GENERAL_COUNT+nEnemyCamp-1)).."<color><enter>HiÖu óy phe m×nh: <color=yellow>"..(12-GetMissionV(MV_KILL_SONG_LOOEY_COUNT+nCamp-1)).."<color> §« thèng phe m×nh: <color=yellow>"..(6-GetMissionV(MV_KILL_SONG_CAPTAIN_COUNT+nCamp-1)).."<color> Tiªn phong phe m×nh: <color=yellow>"..(1-GetMissionV(MV_KILL_SONG_PIONEER_COUNT+nCamp-1)).."<color> §¹i t­íng phe m×nh: <color=yellow>"..(1-GetMissionV(MV_KILL_SONG_GENERAL_COUNT+nCamp-1)).."<color>")
+		Talk(1,"battle_info","Personal accumulated points: <color=yellow>"..BT_GetData(PTNC_BATTLEPOINT).."<color><enter>Accumulated points of your faction: <color=yellow>"..GetMissionV(MV_BATTLE_POINT_SONG+nCamp-1).."<color><enter>Accumulated points of the enemy faction: <color=yellow>"..GetMissionV(MV_BATTLE_POINT_SONG+nEnemyCamp-1).."<color><enter>Enemy Lieutenant: <color=yellow>"..(12-GetMissionV(MV_KILL_SONG_LOOEY_COUNT+nEnemyCamp-1)).."<color> Enemy Commander: <color=yellow>"..(6-GetMissionV(MV_KILL_SONG_CAPTAIN_COUNT+nEnemyCamp-1)).."<color> Tiªn phong phe ®Þch: <color=yellow>"..(1-GetMissionV(MV_KILL_SONG_PIONEER_COUNT+nEnemyCamp-1)).."<color> §¹i t­íng phe ®Þch: <color=yellow>"..(1-GetMissionV(MV_KILL_SONG_GENERAL_COUNT+nEnemyCamp-1)).."<color><enter>Your Lieutenant: <color=yellow>"..(12-GetMissionV(MV_KILL_SONG_LOOEY_COUNT+nCamp-1)).."<color> Your Commander: <color=yellow>"..(6-GetMissionV(MV_KILL_SONG_CAPTAIN_COUNT+nCamp-1)).."<color> Tiªn phong phe m×nh: <color=yellow>"..(1-GetMissionV(MV_KILL_SONG_PIONEER_COUNT+nCamp-1)).."<color> §¹i t­íng phe m×nh: <color=yellow>"..(1-GetMissionV(MV_KILL_SONG_GENERAL_COUNT+nCamp-1)).."<color>")
 	else
 		Talk(1,"battle_info"," hiÖn kh«ng trong Nh¹n M«n Quan chiÕn tr­êng chÝnh.");
 	end;
@@ -149,20 +149,20 @@ end;
 
 function total_info()
 	local selTab = {
-				"§iÓm tÝch lòy/my_point_total",
+				"Accumulated points/my_point_total",
 				"Ho¹t ®éng chiÕn tr­êng/my_data_total",
 				"trë l¹i/battle_info",
-				"KÕt thóc/nothing"
+				"End/nothing"
 				}
 	Say("B¹n muèn xem sè liÖu nµo?",getn(selTab),selTab);
 end;
 
 function my_point_total()
-	Talk(1,"total_info","Tæng ®iÓm tÝch lòy c¸ nh©n: <color=yellow>"..BT_GetData(PT_TOTALPOINT).."<color> C«ng tr¹ng phe Tèng: <color=yellow>"..BT_GetData(PT_RANKPOINT).."<color> C«ng tr¹ng phe Liªu: <color=yellow>"..(-BT_GetData(PT_RANKPOINT)).."<color> C«ng tr¹ng phe Tèng cao nhÊt: <color=yellow>"..BT_GetData(PT_MAX_RANKPOINT_SONG).."<color> C«ng tr¹ng phe Liªu cao nhÊt: <color=yellow>"..(-BT_GetData(PT_MAX_RANKPOINT_LIAO)).."<color><enter>§iÓm tÝch lòy Th«n trang chiÕn: <color=yellow>"..BT_GetData(PT_VILL_POINT).."<color> §iÓm tÝch lòy Tµi Nguyªn chiÕn: <color=yellow>"..BT_GetData(PT_RESO_POINT).."<color> §iÓm tÝch lòy Ph¸o ®µi chiÕn: <color=yellow>"..BT_GetData(PT_EMPL_POINT).."<color> §iÓm tÝch lòy ChiÕn tr­êng chÝnh: <color=yellow>"..BT_GetData(PT_MAIN_POINT).."<color>")
+	Talk(1,"total_info","Tæng ®iÓm tÝch lòy c¸ nh©n: <color=yellow>"..BT_GetData(PT_TOTALPOINT).."<color> C«ng tr¹ng phe Tèng: <color=yellow>"..BT_GetData(PT_RANKPOINT).."<color> C«ng tr¹ng phe Liªu: <color=yellow>"..(-BT_GetData(PT_RANKPOINT)).."<color> C«ng tr¹ng phe Tèng cao nhÊt: <color=yellow>"..BT_GetData(PT_MAX_RANKPOINT_SONG).."<color> C«ng tr¹ng phe Liªu cao nhÊt: <color=yellow>"..(-BT_GetData(PT_MAX_RANKPOINT_LIAO)).."<color><enter>§iÓm tÝch lòy Th«n trang chiÕn: <color=yellow>"..BT_GetData(PT_VILL_POINT).."<color> §iÓm tÝch lòy Tµi Nguyªn chiÕn: <color=yellow>"..BT_GetData(PT_RESO_POINT).."<color> §iÓm tÝch lòy Ph¸o ®µi chiÕn: <color=yellow>"..BT_GetData(PT_EMPL_POINT).."<color> Main battlefield accumulated points: <color=yellow>"..BT_GetData(PT_MAIN_POINT).."<color>")
 end;
 
 function my_data_total()
-	Talk(1,"total_info","T×nh h×nh ®¬n ®Êu: <color=yellow>"..BT_GetData(PT_SINGLE_WIN).."<color> th¾ng <color=yellow>"..BT_GetData(PT_SINGLE_DRAW).."<color> hßa <color=yellow>"..BT_GetData(PT_SINGLE_LOSE).."<color> thua, sè lÇn vua ban th­ëng: <color=yellow>"..BT_GetData(PT_EMPEROR_AWARD_COUNT).."<color> Sè lÇn ng«i sao chiÕn ®Þa: <color=yellow>"..BT_GetData(PT_BATTLE_STAR_COUNT).."<color><enter>T­íng sÜ phe Tèng bÞ giÕt: <color=yellow>"..BT_GetData(PT_KILL_SONG_PLAYER).."<color> Sè lÇn bÞ phe Tèng giÕt: <color=yellow>"..BT_GetData(PT_KILL_BY_SONG).."<color><enter>T­íng sÜ phe Liªu bÞ giÕt: <color=yellow>"..BT_GetData(PT_KILL_LIAO_PLAYER).."<color> Sè lÇn bÞ phe Liªu giÕt: <color=yellow>"..BT_GetData(PT_KILL_BY_LIAO).."<color><enter>Sè lÇn t×m thÊy thñ lÜnh: <color=yellow>"..BT_GetData(PT_FIND_HEADER).."<color> Sè lÇn giao nép l­¬ng th¶o: <color=yellow>"..BT_GetData(PT_HANDIN_RESOURCE).."<color> Sè lÇn ®o¹t ph¸o ®µi: <color=yellow>"..BT_GetData(PT_KILL_EMPLACEMENT).."<color><enter>Sè lÇn tham gia Th«n trang chiÕn: <color=yellow>"..BT_GetData(PT_ATTEND_VILLAGE).."<color> Sè lÇn tham gia Tµi Nguyªn chiÕn: <color=yellow>"..BT_GetData(PT_ATTEND_RESOURCE).."<color> Sè lÇn tham gia Ph¸o ®µi chiÕn: <color=yellow>"..BT_GetData(PT_ATTEND_EMPLACEMENT).."<color> Sè lÇn tham gia ChiÕn tr­êng chÝnh: <color=yellow>"..BT_GetData(PT_ATTEND_MAIN).."<color><enter>Sè lÇn chiÕn th¾ng Th«n trang chiÕn: <color=yellow>"..BT_GetData(PT_VILLAGE_WIN).."<color> Sè lÇn chiÕn th¾ng Tµi Nguyªn chiÕn: <color=yellow>"..BT_GetData(PT_RESOURCE_WIN).."<color> Sè lÇn chiÕn th¾ng Ph¸o ®µi chiÕn: <color=yellow>"..BT_GetData(PT_EMPLACEMENT_WIN).."<color> Sè lÇn chiÕn th¾ng ChiÕn tr­êng chÝnh: <color=yellow>"..BT_GetData(PT_MAIN_WIN).."<color>");
+	Talk(1,"total_info","Duel record: <color=yellow>"..BT_GetData(PT_SINGLE_WIN).."<color> wins <color=yellow>"..BT_GetData(PT_SINGLE_DRAW).."<color> draws <color=yellow>"..BT_GetData(PT_SINGLE_LOSE).."<color> thua, sè lÇn vua ban th­ëng: <color=yellow>"..BT_GetData(PT_EMPEROR_AWARD_COUNT).."<color> Sè lÇn ng«i sao chiÕn ®Þa: <color=yellow>"..BT_GetData(PT_BATTLE_STAR_COUNT).."<color><enter>T­íng sÜ phe Tèng bÞ giÕt: <color=yellow>"..BT_GetData(PT_KILL_SONG_PLAYER).."<color> Sè lÇn bÞ phe Tèng giÕt: <color=yellow>"..BT_GetData(PT_KILL_BY_SONG).."<color><enter>T­íng sÜ phe Liªu bÞ giÕt: <color=yellow>"..BT_GetData(PT_KILL_LIAO_PLAYER).."<color> Sè lÇn bÞ phe Liªu giÕt: <color=yellow>"..BT_GetData(PT_KILL_BY_LIAO).."<color><enter>Sè lÇn t×m thÊy thñ lÜnh: <color=yellow>"..BT_GetData(PT_FIND_HEADER).."<color> Sè lÇn giao nép l­¬ng th¶o: <color=yellow>"..BT_GetData(PT_HANDIN_RESOURCE).."<color> Sè lÇn ®o¹t ph¸o ®µi: <color=yellow>"..BT_GetData(PT_KILL_EMPLACEMENT).."<color><enter>Sè lÇn tham gia Th«n trang chiÕn: <color=yellow>"..BT_GetData(PT_ATTEND_VILLAGE).."<color> Sè lÇn tham gia Tµi Nguyªn chiÕn: <color=yellow>"..BT_GetData(PT_ATTEND_RESOURCE).."<color> Sè lÇn tham gia Ph¸o ®µi chiÕn: <color=yellow>"..BT_GetData(PT_ATTEND_EMPLACEMENT).."<color> Sè lÇn tham gia ChiÕn tr­êng chÝnh: <color=yellow>"..BT_GetData(PT_ATTEND_MAIN).."<color><enter>Sè lÇn chiÕn th¾ng Th«n trang chiÕn: <color=yellow>"..BT_GetData(PT_VILLAGE_WIN).."<color> Sè lÇn chiÕn th¾ng Tµi Nguyªn chiÕn: <color=yellow>"..BT_GetData(PT_RESOURCE_WIN).."<color> Sè lÇn chiÕn th¾ng Ph¸o ®µi chiÕn: <color=yellow>"..BT_GetData(PT_EMPLACEMENT_WIN).."<color> Sè lÇn chiÕn th¾ng ChiÕn tr­êng chÝnh: <color=yellow>"..BT_GetData(PT_MAIN_WIN).."<color>");
 end;
 
 function other_info()
@@ -174,7 +174,7 @@ function other_info()
 				"Xem sè ng­êi cña c¸c m«n ph¸i trong chiÕn tr­êng/see_faction_player_count",
 				--"²é¿´×Ô¼ºµÄÒþ²ØÊý¾Ý/see_secret",
 				"Quay l¹i néi dung tr­íc./OnUse",
-				"§ãng/nothing",
+				"Close/nothing",
 				}
 	Say("Xem tin tøc nµo?",getn(selTab),selTab);
 end;
@@ -191,7 +191,7 @@ function see_faction_player_count()
 end;
 
 function see_secret()
-	Talk(1,"other_info","HÖ sè ho¹t ®éng hiÖn t¹i:"..BT_GetData(PTNC_ACTIVITY).." Tin tøc b¸o danh:"..BT_GetData(PT_SIGN_UP).." Thêi gian b¸o danh:"..BT_GetData(PT_BATTLE_DATE).."<enter>HiÖn ë chiÕn tr­êng:"..BT_GetData(PT_BATTLE_TYPE).." Tr¹ng th¸i chiÕn tr­êng hiÖn t¹i:"..GetMissionV(MV_BATTLE_STATE).." TÝch lòy:"..BT_GetData(PTNC_BATTLEPOINT).."");
+	Talk(1,"other_info","HÖ sè ho¹t ®éng hiÖn t¹i:"..BT_GetData(PTNC_ACTIVITY).." Registration news:"..BT_GetData(PT_SIGN_UP).." Thêi gian b¸o danh:"..BT_GetData(PT_BATTLE_DATE).."<enter>HiÖn ë chiÕn tr­êng:"..BT_GetData(PT_BATTLE_TYPE).." Tr¹ng th¸i chiÕn tr­êng hiÖn t¹i:"..GetMissionV(MV_BATTLE_STATE).." Accumulated:"..BT_GetData(PTNC_BATTLEPOINT).."");
 end;
 
 function know_equip()
@@ -202,8 +202,8 @@ function know_equip()
     	". Xem thuéc tÝnh trang bÞ Liªu t­íng qu©n/equip_info_jiangjun_liao",
    	 	". Xem thuéc tÝnh trang bÞ Tèng nguyªn so¸i/equip_info_yuanshuai_song",
     	". Xem thuéc tÝnh trang bÞ Liªu nguyªn so¸i/equip_info_yuanshuai_liao",
-		"Tr­íc/OnUse",
-		"§ãng/nothing",
+		"Back/OnUse",
+		"Close/nothing",
     	}
     Say("Ng­¬i muèn xem thuéc tÝnh trang bÞ nµo?",getn(selTab),selTab);
 end;

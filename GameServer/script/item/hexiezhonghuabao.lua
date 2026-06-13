@@ -110,7 +110,7 @@ function open(nItemIdx)
 					AddItem(0,105,16,1,1,-1,-1,-1,-1,-1,-1);
 					show_msg(szItemName)
 				else
-					szItemName = "1 §»ng Vô";
+					szItemName = "1 Deng Wu";
 					AddItem(0,105,20,1,1,-1,-1,-1,-1,-1,-1);
 					show_msg(szItemName)
 				end;
@@ -121,12 +121,12 @@ function open(nItemIdx)
 					AddItem(0,105,16,1,1,-1,-1,-1,-1,-1,-1);
 					show_msg(szItemName)
 				else
-					szItemName = "1 §»ng Vô";
+					szItemName = "1 Deng Wu";
 					AddItem(0,105,20,1,1,-1,-1,-1,-1,-1,-1);
 					show_msg(szItemName)
 				end;			
 			end;
-			WriteLog("["..g_ItemName.."]:"..GetName().."thø"..nCurCount.." më "..g_ItemName);
+			WriteLog("["..g_ItemName.."]:"..GetName().."the"..nCurCount.." to open"..g_ItemName);
 		end;
 	else
 		Talk(1,"","Kho¶ng trèng hoÆcsøc lùccña b¹n kh«ng ®ñ. Xin kiÓm tra l¹i hµnh trang tr­íc!"..g_ItemName.."!");
@@ -135,8 +135,8 @@ end;
 
 function show_msg(szItemName)
 	Msg2Player("B¹n nhËn ®­îc "..szItemName);
-	Msg2Global(GetName().."Më '"..g_ItemName.." nhËn ®­îc "..szItemName);
-	WriteLog("["..g_ItemName.."]:"..GetName().."NhËn ®­îc"..szItemName);	
+	Msg2Global(GetName().."Open '"..g_ItemName.." nhËn ®­îc "..szItemName);
+	WriteLog("["..g_ItemName.."]:"..GetName().."Received"..szItemName);	
 end;
 
 function nothing()

@@ -62,7 +62,7 @@ function main()
 	local strtab = {
 			"\n rêi ¶i/wrd_leave_1",
 			"\n T¹i h¹ muèn quay vÒ chiÕn tr­êng (cÇn [Th«ng Thiªn LÖnh]x1)/wrd_goto",
-			"\nKÕt thóc ®èi tho¹i/nothing",
+			"\nEnd conversation/nothing",
 		}
 	local nCurStage = GetMissionV(MV_STAGE);
 	local nRand = 0;

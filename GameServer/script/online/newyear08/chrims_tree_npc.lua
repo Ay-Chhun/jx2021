@@ -18,8 +18,8 @@ function main()
 	local strtab = {
 		"Trang trİ c©y th«ng/strew_chrims_tree",
 		"NhËn phÇn th­ëng trang trİ c©y th«ng./get_chrims_award",
-		"NhËn quµ gi¸ng sinh/get_final_award",
-		"NhËn c©y th«ng/take_chrims_tree",
+		"Receive the Christmas gift/get_final_award",
+		"Receive the pine tree/take_chrims_tree",
 		"Xin ®îi gi©y l¸t råi ®Õn xem thö/nothing"
 		};
 	Say("C©y th«ng nµy rÊt ®Ñp, b¹n muèn?",
@@ -34,7 +34,7 @@ function strew_chrims_tree()
 	end
 	local strtab1 = {
 		"NhËn nhiÖm vô trang trİ c©y th«ng/get_chrims_task",
-		"Quay ®Çu xem thö/nothing"
+		"Turn around and take a look/nothing"
 		};
 	local strtab2 = {
 		"Ta muèn trang trİ c©y th«ng/finish_chrims_task",
@@ -142,7 +142,7 @@ function get_final_award()
 		if nLv >= 70 then
 			Say("B¹n ch­a trang trİ c©y th«ng, quµ ngÉu nhiªn nhËn ®­îc lµ"..tChrimsLingshi[11][1].."-"..tChrimsLingshi[11][2].." (cÊp) Linh Th¹ch"..tChrimsLingshi[11][3].." , c©y th«ng sÏ biÕn mÊt. B¹n chÊp nhËn?",
 				2,
-				"§ång ı/confirm_get_award",
+				"Agree/confirm_get_award",
 				"Ta chän sai råi!/main");
 		else
 			Talk(1,"","B¹n ch­a trang trİ c©y th«ng, ®¼ng cÊp kh«ng ®ñ cÊp 70, kh«ng cã quµ quµ gi¸ng sinh.");
@@ -152,24 +152,24 @@ function get_final_award()
 		if nLv ~= 999 then
 			Say("B¹n vÉn ch­a trang trİ xong c©y th«ng, quµ gi¸ng sinh nhËn ®­îc lµ <color=yellow>"..floor(nExp*nNum/STREW_TREE_TOTAL).." <color> kinh nghiÖm, c©y th«ng sÏ biÕn mÊt. B¹n chÊp nhËn quµ cuèi cïng?",
 				2,
-				"§ång ı/get_middle_award",
+				"Agree/get_middle_award",
 				"Ta chän sai råi!/main");
 		else
 			Say("B¹n vÉn ch­a trang trİ xong c©y th«ng, quµ ngÉu nhiªn nhËn ®­îc lµ"..tChrimsLingshi[11][1].."-"..tChrimsLingshi[11][2].." (cÊp) Linh Th¹ch"..tChrimsLingshi[11][3].." , c©y th«ng sÏ biÕn mÊt. B¹n chÊp nhËn?",
 				2,
-				"§ång ı/confirm_get_award",
+				"Agree/confirm_get_award",
 				"Ta chän sai råi!/main");
 		end			
 	elseif nNum >= STREW_TREE_TOTAL then
 		if nLv == 999 then
 			Say("C©y th«ng nµy rÊt hoµn mü, quµ gi¸ng sinh ngÉu nhiªn nhËn ®­îc lµ"..tChrimsLingshi[13][1].."-"..tChrimsLingshi[13][2].." (cÊp) Linh Th¹ch"..tChrimsLingshi[13][3].." , 1 tuÇn léc gi¸ng sinh, 1 ngo¹i trang vµ Vâ L©m B¶o §iÓn, nhËn xong c©y th«ng sÏ biÕn mÊt. Sao h¶?",
 				2,
-				"§ång ı/get_last_award",
+				"Agree/get_last_award",
 				"Ta chän sai råi!/main");
 		else  --Ãâ·ÑÇøÎª¾­Ñé
 			Say("C©y th«ng nµy ®· hoµn mü, quµ gi¸ng sinh nhËn ®­îc <color=yellow>"..nExp.." <color>kinh nghiÖm, "..tChrimsLingshi[13][1].."-"..tChrimsLingshi[13][2].." (cÊp) Linh Th¹ch"..tChrimsLingshi[13][3].." ngÉu nhiªn, 1 tuÇn léc gi¸ng sinh, 1 ngo¹i trang Vâ L©m B¶o §iÓn, sau khi nhËn c©y th«ng sÏ biÕn mÊt. B¹n chÊp nhËn mãn quµ cuèi cïng nµy?",
 				2,
-				"§ång ı/get_last_award",
+				"Agree/get_last_award",
 				"Ta chän sai råi!/main");
 		end			
 	end		
@@ -275,7 +275,7 @@ function get_last_award()
 				Msg2Player("Chóc mõng b¹n nhËn ®­îc "..nLsLv.." (cÊp) Linh th¹ch, ®· ®­îc cho vµo Tô Linh §Ønh.");
 			end				
 			if nRandom <= 5 then
-				Msg2Global("Ng­êi ch¬i"..GetName().."Chóc mõng b¹n ®· nhËn ®­îc X­ng hiÖu ng«i sao gi¸ng sinh"..nExp.." ®iÓm kinh nghiÖm vµ 4 Linh th¹ch cÊp 1-7!");
+				Msg2Global("Player"..GetName().."Chóc mõng b¹n ®· nhËn ®­îc X­ng hiÖu ng«i sao gi¸ng sinh"..nExp.." ®iÓm kinh nghiÖm vµ 4 Linh th¹ch cÊp 1-7!");
 			end
 			local add_flag,add_idx = AddItem(0,105,35,1,1,-1,-1,-1,-1,-1,-1); --Ê¥µ®Â¹
 			if add_flag == 1 then
@@ -299,7 +299,7 @@ function get_last_award()
 				local add_flag2 = AddItem(2,1,3206,1);
 				if add_flag2 == 1 then
 					Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 Vâ L©m B¶o §iÓn");
-					Msg2Global("Ng­êi ch¬i"..GetName().."Trong ho¹t ®éng gi¸ng sinh, trang trİ c©y th«ng tuyÖt ®Ñp. NhËn ®­îc 1 Vâ L©m B¶o §iÓn. Xin chóc mõng!");
+					Msg2Global("Player"..GetName().."Trong ho¹t ®éng gi¸ng sinh, trang trİ c©y th«ng tuyÖt ®Ñp. NhËn ®­îc 1 Vâ L©m B¶o §iÓn. Xin chóc mõng!");
 				else		
 					WriteLog("07 Ho¹t ®éng Gi¸ng sinh: Ng­êi ch¬i "..GetName().."NhËn Vâ L©m B¶o §iÓn thÊt b¹i, vŞ trİ thÊt b¹i:"..add_flag2);
 				end
@@ -337,7 +337,7 @@ function get_last_award()
 				Msg2Player("Chóc mõng b¹n nhËn ®­îc "..nRand.." (cÊp) Linh th¹ch, ®· ®­îc cho vµo Tô Linh §Ønh.");
 			end					
 			if nRandom <= 5 then
-				Msg2Global("Ng­êi ch¬i"..GetName().."Trang søc c©y gi¸ng sinh ®Ñp qu¸, chóc mõng anh ta nhËn ®­îc danh hiÖu Ng«i sao gi¸ng sinh vµ 4 viªn Linh th¹ch cÊp 5-7!");
+				Msg2Global("Player"..GetName().."Trang søc c©y gi¸ng sinh ®Ñp qu¸, chóc mõng anh ta nhËn ®­îc danh hiÖu Ng«i sao gi¸ng sinh vµ 4 viªn Linh th¹ch cÊp 5-7!");
 			end	
 			local add_flag,add_idx = AddItem(0,105,35,1,1,-1,-1,-1,-1,-1,-1); --Ê¥µ®Â¹
 			if add_flag == 1 then
@@ -361,7 +361,7 @@ function get_last_award()
 				local add_flag2 = AddItem(2,1,3206,1);
 				if add_flag2 == 1 then
 					Msg2Player("Chóc mõng b¹n nhËn ®­îc 1 Vâ L©m B¶o §iÓn");
-					Msg2Global("Ng­êi ch¬i"..GetName().."Trong ho¹t ®éng gi¸ng sinh, trang trİ c©y th«ng tuyÖt ®Ñp. NhËn ®­îc 1 Vâ L©m B¶o §iÓn. Xin chóc mõng!");
+					Msg2Global("Player"..GetName().."Trong ho¹t ®éng gi¸ng sinh, trang trİ c©y th«ng tuyÖt ®Ñp. NhËn ®­îc 1 Vâ L©m B¶o §iÓn. Xin chóc mõng!");
 				else		
 					WriteLog("07 Ho¹t ®éng Gi¸ng sinh: Ng­êi ch¬i "..GetName().."NhËn Vâ L©m B¶o §iÓn thÊt b¹i, vŞ trİ thÊt b¹i:"..add_flag2);
 				end

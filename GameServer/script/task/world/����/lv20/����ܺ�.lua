@@ -15,7 +15,7 @@ Include("\\script\\task\\world\\task_head.lua");
 function OnUse()
 
 local strTalk = {
-	"Trong th­ viÕt g× vËy?",
+	"What does the letter say?",
 	"{NhÞ Hoµng Tö} ®ang ë {T©y Song B¶n N¹p}? Ph¶i lËp tøc b¸o ngay cho {Cao Quèc C«ng} th«i.",
 	}
 	TalkEx("",strTalk);

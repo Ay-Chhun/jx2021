@@ -9,8 +9,8 @@ Include("\\script\\missions\\yp\\vn\\shengwang_award.lua")
 
 tNpcName = {
 	{"<color=green>§o¹n Hßa HuyÒn<color>: ","Ha ha, hiÖp sÜ cã thÓ ®i xung quanh tham quan c¶nh ®Ñp cña hoµng téc."},
-	{"<color=green>C¸t Kh©m XÝch Ba<color>: ","§a t¹ thiÕu hiÖp gióp ®ì, kh«ng biÕt cã thÝch hîp kh«ng?"},
-	{"<color=green>Lý KÕ Tinh<color>: ","Vïng T©y H¹ réng lín, s¶n vËt phong phó. Gióp ®ì chóng t«i sÏ kh«ng bÞ lç vèn ®©u!"},	
+	{"<color=green>Cat Kham Xich Ba<color>:","§a t¹ thiÕu hiÖp gióp ®ì, kh«ng biÕt cã thÝch hîp kh«ng?"},
+	{"<color=green>Ly Ke Tinh<color>:","Vïng T©y H¹ réng lín, s¶n vËt phong phó. Gióp ®ì chóng t«i sÏ kh«ng bÞ lç vèn ®©u!"},	
 };
 g_szThisFile = "\\script\\missions\\yp\\dhx_npc.lua";
 g_nMaxCount = 15;
@@ -42,7 +42,7 @@ function main()
 	if nType == nCamp then
 		tinsert(strtab, "ThÕ Lùc Ba Phe-DiÔn Vâ ChiÕn/dhx_YwzTalk");
 		tinsert(strtab,format("%s/shengwang_award_main", "NhËn phÇn th­ëng danh väng"))
-		tinsert(strtab,"§Õn "..tMainMapID[nType][2].."/dhx_talk_3")
+		tinsert(strtab,"Arrive"..tMainMapID[nType][2].."/dhx_talk_3")
 		tinsert(strtab,"Ta muèn rêi khái"..tMainMapID[nType][2].."/dhx_talk_2")
 	else
 		tinsert(strtab,"Ta muèn gia nhËp"..tMainMapID[nType][2].."/dhx_talk_1")
@@ -87,7 +87,7 @@ function dhx_talk_1()
 		local g_nPlayersC = GetGlbValue(GLV_YP_PLAYER_THREE);
 		Say(g_NpcName..format("Nh­ ng­¬i ®· biÕt, xung quanh bao gåm 3 thÕ lùc chèng l¹i Thiªn ¢m Gi¸o. Trong ®ã nh©n khÝ cña §¹i Lý Quèc: <color=yellow>%d<color>, sè ng­êi: <color=yellow>%d<color>, nh©n khÝ cña Thæ Phån Quèc: <color=yellow>%d<color>, sè ng­êi: <color=yellow>%d<color>, nh©n khÝ cña T©y H¹ Quèc: <color=yellow>%d<color>, sè ng­êi: <color=yellow>%d<color>. Ng­¬i muèn gia nhËp víi chóng t«i thËt chø?<color=red>Sau khi gia nhËp ph¶i 7 ngµy sau míi ®­îc rêi khái!<color>",g_nCharmA,g_nPlayersA,g_nCharmB,g_nPlayersB,g_nCharmC,g_nPlayersC),
 			2,
-			"\nTa sÏ cøu thÕ giíi/dhx_talk_1_2",
+			"\nI will save the world/dhx_talk_1_2",
 			"\n§Ó ta suy nghÜ l¹i/nothing")
 	end
 end
@@ -116,7 +116,7 @@ function dhx_talk_1_1(szkey, nkey1, nkey2, nCount,_szkey, _nkey1, _nkey2)
 		SetGlbValue(GLV_YP_PLAYER_THREE,g_nPlayersC);
 	Say(g_NpcName..format("Nh­ ng­¬i ®· biÕt, xung quanh bao gåm 3 thÕ lùc chèng l¹i Thiªn ¢m Gi¸o. Trong ®ã nh©n khÝ cña §¹i Lý Quèc: <color=yellow>%d<color>, sè ng­êi: <color=yellow>%d<color>, nh©n khÝ cña Thæ Phån Quèc: <color=yellow>%d<color>, sè ng­êi: <color=yellow>%d<color>, nh©n khÝ cña T©y H¹ Quèc: <color=yellow>%d<color>, sè ng­êi: <color=yellow>%d<color>. Ng­¬i muèn gia nhËp víi chóng t«i thËt chø?<color=red>Sau khi gia nhËp ph¶i 7 ngµy sau míi ®­îc rêi khái!<color>",g_nCharmA,g_nPlayersA,g_nCharmB,g_nPlayersB,g_nCharmC,g_nPlayersC),
 		2,
-		"\nTa sÏ cøu thÕ giíi/dhx_talk_1_2",
+		"\nI will save the world/dhx_talk_1_2",
 		"\n§Ó ta suy nghÜ l¹i/nothing")	
 end
 
@@ -163,7 +163,7 @@ function dhx_talk_2()
 	Say(g_NpcName.."Rêi khái thÕ lùc sÏ xãa bá ®é cèng hiÕn thÕ lùc, quyÕt ®Þnh rêi khái?",
 		2,
 		"\nX¸c nhËn/dhx_talk_2_confirm",
-		"\nKÕt thóc ®èi tho¹i/nothing")
+		"\nEnd conversation/nothing")
 end
 
 function dhx_talk_2_confirm()

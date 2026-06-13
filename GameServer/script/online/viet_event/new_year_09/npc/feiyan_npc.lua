@@ -22,19 +22,19 @@ g_tbItem =
 	[1] = {TYPE_ITEM,	-1,	1,	"Ngò Hµnh MËt tÞch",				0,	107,	155,	},
 	[2] = {TYPE_ITEM,	-1,	1,	"Thiªn Hµ MËt tÞch",				0,	107,	64,	},
 	[3] = {TYPE_ITEM,	-1,	1,	"Tö Hµ MËt tÞch",				0,	107,	65,	},
-	[4] = {TYPE_ITEM,	-1,	1,	"Chiªm Y Phæ",				0,	107,	66,	},
-	[5] = {TYPE_ITEM,	7,	1,	"Sæ tay sèng",				2,	19,		1,	},
-	[6] = {TYPE_ITEM,	7,	1,	"TÈy Tñy ®¬n",				2,	0,		136,	},
-	[7] = {TYPE_ITEM,	7,	1,	"TÈy Tñy linh ®¬n",				2,	0,		137,	},
+	[4] = {TYPE_ITEM,	-1,	1,	"Zhanyi Manual",				0,	107,	66,	},
+	[5] = {TYPE_ITEM,	7,	1,	"Living Notebook",				2,	19,		1,	},
+	[6] = {TYPE_ITEM,	7,	1,	"Marrow-Cleansing Pill",				2,	0,		136,	},
+	[7] = {TYPE_ITEM,	7,	1,	"Marrow-Cleansing Spirit Pill",				2,	0,		137,	},
 	[8] = {TYPE_ITEM,	7,	1,	"B¸t B¶o TÈy Tñy Tiªn §¬n",			2,	0,		138,	},
-	[9] = {TYPE_ITEM,	7,	1,	"Tiªu KiÕp t¸n",				2,	0,		141,	},
+	[9] = {TYPE_ITEM,	7,	1,	"Tribulation Dispel Powder",				2,	0,		141,	},
 	[10] = {TYPE_ITEM,	7,	1,	"§¹i Nh©n s©m",				2,	0,		553,	},
 	[11] = {TYPE_ITEM,	7,	1,	"Tinh luyÖn B¨ng Th¹ch",				2,	1,		533,	},
 	[12] = {TYPE_ITEM,	7,	1,	"Phong lÖnh-trung cÊp",		2,	1,		1054,	},
 	[13] = {TYPE_ITEM,	7,	1,	"Phong lÖnh-cao cÊp",		2,	1,		1018,	},
 	[14] = {TYPE_ITEM,	7,	1,	"Phong lÖnh-tèi cao",		2,	1,		1055,	},
 	[15] = {TYPE_ITEM,	7,	1,	"Vâ L©m Cao Thñ",	2,	1,		1040,	},
-	[16] = {TYPE_ITEM,	7,	1,	"NhÊt §¹i §¹i HiÖp",	2,	1,		1041,	},
+	[16] = {TYPE_ITEM,	7,	1,	"Greatest Hero",	2,	1,		1041,	},
 
 	--		ÀàÐÍ	    ÊýÖµ	ÌáÊ¾×Ö·û´® 		ÃüÁî×Ö·û´®
 	[17] = {TYPE_CMD,	800000,	" ®iÓm kinh nghiÖm",		"ModifyExp(%d)"},
@@ -121,7 +121,7 @@ function give_plum()
 	if DelItem(2,1,30053,4) == 1 then
 		ModifyExp(nExp)
 		Msg2Player("B¹n nhËn ®­îc  "..nExp.."  ®iÓm kinh nghiÖm")
-		WriteLogEx(g_szLogTitle, "Phi YÕn", nExp, "®iÓm kinh nghiÖm", format("ModifyExp(%d)", nExp), GetTongName() )
+		WriteLogEx(g_szLogTitle, "Phi Yen", nExp, "®iÓm kinh nghiÖm", format("ModifyExp(%d)", nExp), GetTongName() )
 		SetTask(GIVE_PLUM_DATE_09_NEWYEAR_VIET, nDate)
 
 
@@ -197,7 +197,7 @@ function obtain_prize_cb(szKey, nKey1, nKey2, nCount)
 		local nExp = 100000
 		ModifyExp(nExp)
 		Msg2Player("B¹n nhËn ®­îc  "..nExp.."  ®iÓm kinh nghiÖm")
-		WriteLogEx(g_szLogTitle, "Phi YÕn", nExp, "®iÓm kinh nghiÖm", format("ModifyExp(%d)", nExp), GetTongName() )
+		WriteLogEx(g_szLogTitle, "Phi Yen", nExp, "®iÓm kinh nghiÖm", format("ModifyExp(%d)", nExp), GetTongName() )
 		nRetCode = 1	--Ä¬ÈÏÃüÁî³É¹¦Ö´ÐÐ
 	elseif nPrizeType >= 1 and nPrizeType <= 51 then
 		local nType = g_tbItem[nPrizeType][1]
@@ -209,7 +209,7 @@ function obtain_prize_cb(szKey, nKey1, nKey2, nCount)
 			local szCMDString = format(g_tbItem[nPrizeType][4], nItemNum)
 			dostring(szCMDString)
 			Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." "..szItemName)
-			WriteLogEx(g_szLogTitle, "Phi YÕn", nItemNum, szItemName, szCMDString, GetTongName() )
+			WriteLogEx(g_szLogTitle, "Phi Yen", nItemNum, szItemName, szCMDString, GetTongName() )
 			nRetCode = 1	--Ä¬ÈÏÃüÁî³É¹¦Ö´ÐÐ
 		end
 	else
@@ -236,11 +236,11 @@ function add_item_ex(tItem)
 		end
 		Msg2Player("B¹n nhËn ®­îc  "..nItemNum.." c¸i "..szItemName);
 		if G == 0 and D == 107 and P == 155 then
-			Msg2Global("Chóc mõng "..GetName().." Th«ng qua Phi YÕn Tiªn Tö thu ®­îc 1 Ngò Hµnh MËt TÞch")
+			Msg2Global("Congratulations"..GetName().." Th«ng qua Phi YÕn Tiªn Tö thu ®­îc 1 Ngò Hµnh MËt TÞch")
 		end
-		WriteLogEx(g_szLogTitle, "Phi YÕn", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName() )
+		WriteLogEx(g_szLogTitle, "Phi Yen", nItemNum, szItemName, format("(%d,%d,%d)", G, D, P), GetTongName() )
 	else
-		WriteLogEx(g_szLogTitle, "Phi YÕn", "", "", format("(%d,%d,%d)", G, D, P), GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
+		WriteLogEx(g_szLogTitle, "Phi Yen", "", "", format("(%d,%d,%d)", G, D, P), GetTongName(), "Thu ®­îc thÊt b¹i, ".."AddItem return value = "..nRetCode)
 	end
 	return nRetCode
 end

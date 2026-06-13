@@ -1,5 +1,5 @@
 NpcID	NpcMode	NpcName
-H­íng dÉn	H×nh ném Npc	Tªn gäi Npc
+Guide	H×nh ném Npc	Tªn gäi Npc
 1000	Ong vµng	Ong vµng
 1001	Ong ®éc	Ong ®éc
 1002	Hå Ly	Hå Ly

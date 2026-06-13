@@ -12,5 +12,5 @@ function main()
         task_17_00();
         return
     end;
-    Talk(1,"","<color=green>Mé TuyÕt S¬n Trang Gia §inh<color>: ……");
+    Talk(1,"","<color=green>Snow Mountain Manor Servant<color>:");
 end;

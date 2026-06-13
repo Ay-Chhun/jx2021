@@ -40,7 +40,7 @@ function Ba(toItem, fromItem, bSure)
 	if not bSure then
 		local tSel = {
 			format("§ång ı/#Ba(%d, %d, 1)", toItem, fromItem),
-			"Hñy bá/nothing",
+			"Cancel/nothing",
 		}
 		Say("Ch©n Vâ Thñ Kı: QuyÕt ®Şnh viÕt l¹i néi dung cña Ch©n Vâ MËt TŞch hiÖn ®ang trang bŞ kh«ng? Sau khi chÊp hµnh sÏ tiªu hao 1 Ch©n Vâ Thñ Kı, ®ång thêi tÊt c¶ néi dung Ch©n Vâ B¶o §iÓn cña bİ kİp ®ang trang bŞ còng sÏ biÕn mÊt.", 
 			getn(tSel), tSel);
@@ -83,7 +83,7 @@ function Bia(toItem, fromItem, bSure)
 	if not bSure then
 		local tSel = {
 			format("§ång ı/#Bia(%d, %d, 1)", toItem, fromItem),
-			"Hñy bá/nothing",
+			"Cancel/nothing",
 		}
 		Say("QuyÕt ®Şnh ®em néi dung ®ang ghi chĞp viÕt lªn trªn bİ kİp ®ang trang bŞ kh«ng? Sau khi chÊp hµnh th× vËt phÈm nµy sÏ biÕn mÊt, ®ång thêi chĞp ®Ì lªn tÊt c¶ néi dung trªn bİ kİp hiÖn ®ang trang bŞ.", 
 			getn(tSel), tSel);

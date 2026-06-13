@@ -73,23 +73,23 @@ function handle_on_item_talk_jingnangdashijian(nIndex)
         tinsert(tbSay, format("%s/#_final_award_talk(3)", format("NhËn phÇn th­ëng cuèi %s ", tConfig.tProducts[3][1])))
 	end
     
-    tinsert(tbSay, format("%s/nothing", "KÕt thóc ®èi tho¹i"))
+    tinsert(tbSay, format("%s/nothing", "End conversation"))
     
     Say(szTitle, getn(tbSay), tbSay)
 end
 
 function _add_exchange_talk(tSay, nIndex)
-	local szWord = format("§æi %s hoÆc %s", tExchange[2*nIndex-1]:get_award_desc(),  tExchange[2*nIndex]:get_award_desc())
+	local szWord = format("Exchange %s or %s", tExchange[2*nIndex-1]:get_award_desc(),  tExchange[2*nIndex]:get_award_desc())
 	tinsert(tSay, format("%s/#_exchange_talk(%d)", szWord, nIndex))
 end
 function _exchange_talk(nIndex, bConfirm)
 	if not bConfirm then
 		local tbSay = {}
-		local szTitle = format("§æi %s hoÆc %s", tExchange[2*nIndex-1]:get_award_desc(),  tExchange[2*nIndex]:get_award_desc())
+		local szTitle = format("Exchange %s or %s", tExchange[2*nIndex-1]:get_award_desc(),  tExchange[2*nIndex]:get_award_desc())
 		szTitle = format("%s%s,%s<color=yellow>%s<color>,%s", SZ_TITLE_HEAD, szTitle, "CÇn tiªu hao", tExchange[2*nIndex-1]:get_consume_desc(), "x¸c nhËn kh«ng?")
 		tinsert(tbSay, format("%s/#_exchange_talk(%d,1)", "X¸c ®Þnh ®æi", nIndex))
 		--tinsert(tbSay, format("%s/#handle_on_item_talk_jingnangdashijian(%d)", "·µ»Ø", 0))
-		tinsert(tbSay, format("%s/nothing", "KÕt thóc ®èi tho¹i"))
+		tinsert(tbSay, format("%s/nothing", "End conversation"))
 		Say(szTitle, getn(tbSay), tbSay)
 		return
 	end
@@ -145,7 +145,7 @@ function _final_award_talk(nIndex)
 		szTitle = format("%s,%s", szTitle, "T¹m thêi kh«ng thÓ nhËn phÇn th­ëng cuèi")
 	end
 	--tinsert(tbSay, format("%s/#handle_on_item_talk_jingnangdashijian(%d)", "·µ»Ø", 0))
-	tinsert(tbSay, format("%s/nothing", "KÕt thóc ®èi tho¹i"))
+	tinsert(tbSay, format("%s/nothing", "End conversation"))
 	Say(szTitle, getn(tbSay), tbSay)
 	return
 end
@@ -160,9 +160,9 @@ function _final_award(nIndex, nAward, bConfirm)
 	if not bConfirm then
 		local szTitle = format("%s sÏ nhËn phÇn th­ëng[<color=yellow>%s<color><color=red>%s<color>], x¸c ®Þnh nhËn kh«ng? ", SZ_TITLE_HEAD,get_award_desc(szAward), msg)
 		local tbSay = {}
-		tinsert(tbSay, format("%s/#_final_award(%d, %d, 1)", "NhËn ", nIndex, nAward))
+		tinsert(tbSay, format("%s/#_final_award(%d, %d, 1)", "Receive", nIndex, nAward))
 		tinsert(tbSay, format("%s/#_final_award_talk(%d)", "trë l¹i", nIndex))
-		tinsert(tbSay, format("%s/nothing", "KÕt thóc ®èi tho¹i"))
+		tinsert(tbSay, format("%s/nothing", "End conversation"))
 		Say(szTitle, getn(tbSay), tbSay)
 		return
 	end

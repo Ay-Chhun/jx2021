@@ -31,9 +31,9 @@ function OnDeath(npcIndex)
 	end;
 	local MapID,MapX,MapY = GetNpcWorldPos(GetMissionV(MV_TASK_NPCINDEX_SONG+nNpcCamp-1));
 	if nNpcCamp == SONG_ID then
-		Say("Nh﹏ v藅 phe T鑞g <color=yellow>"..GetMissionS(MSTR_SONG_TARGETNAME+nNpcCamp-1).."<color> t鋋 : <color=yellow>"..floor(MapX/8)..","..floor(MapY/16).."<color>",0);
+		Say("Nh﹏ v藅 phe T鑞g <color=yellow>"..GetMissionS(MSTR_SONG_TARGETNAME+nNpcCamp-1).."<color> coordinates: <color=yellow>"..floor(MapX/8)..","..floor(MapY/16).."<color>",0);
 	else
-		Say("Nh﹏ v藅 phe Li猽 <color=yellow>"..GetMissionS(MSTR_SONG_TARGETNAME+nNpcCamp-1).."<color> t鋋 : <color=yellow>"..floor(MapX/8)..","..floor(MapY/16).."<color>",0);
+		Say("Nh﹏ v藅 phe Li猽 <color=yellow>"..GetMissionS(MSTR_SONG_TARGETNAME+nNpcCamp-1).."<color> coordinates: <color=yellow>"..floor(MapX/8)..","..floor(MapY/16).."<color>",0);
 	end;
 end;
 --判断NPC是哪个阵营的。在这里要说明一下，我们可以根据NPC的名字来判断它所属的阵营，

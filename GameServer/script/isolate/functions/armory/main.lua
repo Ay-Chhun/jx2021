@@ -7,7 +7,7 @@ Include("\\settings\\static_script\\isolate\\base\\isolate_base.lua")
 t_isolate_base_cfg = { --这是一个必填配置项
     nPriority 			= 1,        --加载优先级 <=0:模块失效 >0:模块有效，数值越大越先加载 1 default
     szEngName 			= "armory",
-    szViewName 			= "Hoa v╪",
+    szViewName 			= "Pattern",
     nTalkBeginDate		= 0,
     nBeginDate 			= 0,
     nEndDate 			= 0,

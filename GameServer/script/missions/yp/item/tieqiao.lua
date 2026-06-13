@@ -76,7 +76,7 @@ function OnUse(nItemIndex)
 		end
 	else
 		SetItemUseLapse(nItemIndex,5*18);	--¿‰»¥ ±º‰£∫5√Î
-		Talk(1,"","Kho∂ng c∏ch g«n nh t Æ’n kho b∏u cﬂn <color=yellow>"..nDistance.." b≠Ìc<color>!");
+		Talk(1,"","Kho∂ng c∏ch g«n nh t Æ’n kho b∏u cﬂn <color=yellow>"..nDistance.." steps<color>!");
 		local nNewTimes = gf_GetTaskByte(TASK_FIELD_PVP_TIEQIAO_NUM,1) + 1
 		gf_SetTaskByte(TASK_FIELD_PVP_TIEQIAO_NUM,1,nNewTimes);
 		Msg2Player(format("XŒng Æ∑ sˆ dÙng %d l«n, tuÊi th‰: 30 l«n!",nNewTimes));

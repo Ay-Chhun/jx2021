@@ -32,7 +32,7 @@ tAttri = {--   1		 2     3             4            5          6          7     
 	{"Ph¸ phßng thñ ®èi ph­¬ng",362,40,5,4,3,10,0,0,0,0,0,9895,100,5},
 	{"TÊn c«ng t¨ng ",77,60,1,10,5,40,0,2250,2250,2250,2250,600,300,100},
 	{"Ph¸t huy c«ng kÝch lín nhÊt",346,60,2,5,3,20,0,0,3500,3500,2000,600,300,100},
-	{"Tû lÖ ®¸nh ph¹m vi",335,80,1,6,4,30,0,2000,1500,1500,1500,1500,1000,1000},
+	{"Hit range rate",335,80,1,6,4,30,0,2000,1500,1500,1500,1500,1000,1000},
 	{"Vò khÝ ®¸nh ngo¹i lín nhÊt t¨ng ",65,80,1,8,7,50,1,2000,1500,1500,1500,1500,1000,1000},
 	{"Vò khÝ ®¸nh ngo¹i thÊp nhÊt t¨ng ",66,80,1,6,4,30,1,2000,1500,1500,1500,1500,1000,1000},
 	{"Vò khÝ ®¸nh néi lín nhÊt t¨ng",67,80,1,10,5,40,1,2000,1500,1500,1500,1500,1000,1000},
@@ -89,37 +89,37 @@ tLvProb = {
 	
 --76¼¶ÎäÆ÷table
 tWeapon = {
-	[2]= {"Cæ §Ýnh",0,3,64,200},
-	[3]= {"A La H¸n Tr­îng",0,8,97,100},
+	[2]= {"Guding",0,3,64,200},
+	[3]= {"Arhat Staff",0,8,97,100},
 	[4]= {"V¹n NhÉn",0,0,14,220},
 	[6]= {"M·n Thiªn Hoa Vò",0,1,53,130},	
 	[8]= {"Háa Tinh",0,2,36,90},	
 	[9]= {"Hi Nh©n CÇm",0,10,75,140},
 	[11]= {"V¹n NhÉn",0,0,14,220},
-	[12]= {"LiÖt DiÖm",0,5,40,200},
+	[12]= {"Lie Yan",0,5,40,200},
 	[14]= {"Háa Tinh",0,2,36,90},	
 	[15]= {"ThÇn Hµnh",0,9,86,130},	
 	[17]= {"§¹i Hµo L«i Th­¬ng",0,6,108,130},	
 	[18]= {"ThÇn Cung",0,4,119,130},
-	[20]= {"L¨ng Phong",0,7,12,200},
+	[20]= {"Lingfeng",0,7,12,200},
 	[21]= {"M·nh hæ",0,11,12,200},
 	};
 
 --¸øËæ»ú76¼¶ÎäÆ÷table
 tRandomW = {
-	[1]= {"Cæ §Ýnh",0,3,64,200},
-	[2]= {"A La H¸n Tr­îng",0,8,97,100},
+	[1]= {"Guding",0,3,64,200},
+	[2]= {"Arhat Staff",0,8,97,100},
 	[3]= {"V¹n NhÉn",0,0,14,220},
 	[4]= {"M·n Thiªn Hoa Vò",0,1,53,130},	
 	[5]= {"Háa Tinh",0,2,36,90},	
 	[6]= {"Hi Nh©n CÇm",0,10,75,140},
 	[7]= {"V¹n NhÉn",0,0,14,220},
-	[8]= {"LiÖt DiÖm",0,5,40,200},
+	[8]= {"Lie Yan",0,5,40,200},
 	[9]= {"Háa Tinh",0,2,36,90},	
 	[10]= {"ThÇn Hµnh",0,9,86,130},	
 	[11]= {"§¹i Hµo L«i Th­¬ng",0,6,108,130},	
 	[12]= {"ThÇn Cung",0,4,119,130},
-	[13]= {"L¨ng Phong",0,7,12,200},
+	[13]= {"Lingfeng",0,7,12,200},
 	[14]= {"M·nh hæ",0,11,12,200},
 	};
 		
@@ -128,7 +128,7 @@ function GetPlayerSex()
 	if (GetSex() == 1) then
 		mySex = "ThiÕu hiÖp";
 	elseif (GetSex() == 2) then
-		mySex = "C« n­¬ng";
+		mySex = "Young lady";
 	end;
 	return mySex;
 end
@@ -198,10 +198,10 @@ function dia_page(nPage)
 		end                                                                                                                                                                       	
 	end
 	if nPage ~= 0 then
-		tinsert(dia_attri,"Trang tr­íc/#dia_page("..(nPage-1)..")");
+		tinsert(dia_attri,"Previous page/#dia_page("..(nPage-1)..")");
 	end
 	if attri_remain_num > page_num then
-		tinsert(dia_attri,"Trang kÕ/#dia_page("..(nPage+1)..")");
+		tinsert(dia_attri,"Next page/#dia_page("..(nPage+1)..")");
 	end
 	if GetTaskTemp(TT_ATTRI_ONE) == 0 then
 		tinsert(dia_attri,"Trë vÒ trang chän lo¹i thuéc tÝnh./attri_type");
@@ -228,19 +228,19 @@ function get_attri(aType)
 			if GetTaskTemp(TT_ATTRI_ONE) == 0 then                                                                                                 
 				Say("C¸c h¹ chän thuéc tÝnh lµ <color=yellow>"..tAttri[aType][1].."<color>",
 					2,
-					"§ång ý/#make_attri(1,"..aType..")",
+					"Agree/#make_attri(1,"..aType..")",
 					"Chän sai råi. Xin chän l¹i /#choose_attri("..GetTaskTemp(TT_ATTRI_TYPE)..")"
 					);                           
 			elseif GetTaskTemp(TT_ATTRI_ONE) ~= 0 and GetTaskTemp(TT_ATTRI_TWO) == 0 then                                                                                                 
 				Say("C¸c h¹ chän thuéc tÝnh lµ <color=yellow>"..tAttri[aType][1].."<color>",
 					2,
-					"§ång ý/#make_attri(2,"..aType..")",
+					"Agree/#make_attri(2,"..aType..")",
 					"Chän sai råi. Xin chän l¹i /#choose_attri("..GetTaskTemp(TT_ATTRI_TYPE)..")"
 					);                           
 			elseif GetTaskTemp(TT_ATTRI_ONE) ~= 0 and GetTaskTemp(TT_ATTRI_TWO) ~= 0 and GetTaskTemp(TT_ATTRI_THREE) == 0 then                                                                                                                 
 				Say("C¸c h¹ chän thuéc tÝnh lµ <color=yellow>"..tAttri[aType][1].."<color>",
 					2,
-					"§ång ý/#make_attri(3,"..aType..")",
+					"Agree/#make_attri(3,"..aType..")",
 					"Chän sai råi. Xin chän l¹i /#choose_attri("..GetTaskTemp(TT_ATTRI_TYPE)..")"
 					);                              
 			end                                                                                                                                   
@@ -326,7 +326,7 @@ function confirm_weapon()
 	else			
 		Say("C¸c h¹ muèn giao ra hép ThÇn binh chø?",
 			2,
-			"§­îc/give_weapon",
+			"Confirm/give_weapon",
 			"Sau nµy h·y tÝnh!/cancel"
 			);
 	end
@@ -420,7 +420,7 @@ function is_probability(aType)
 	else
 		Say("Tr­íc tiªn ph¶i t¨ng thuéc tÝnh x¸c suÊt ®Õn møc cao nhÊt: <color=yellow>"..nProbability.."%<color>. b¹n tÝnh mét lÇn ®Æt <color=yellow>"..tTiandiNum[aType].."<color> Thiªn §Þa HuyÒn Hoµng Th¹ch lµm t¨ng thuéc tÝnh x¸c suÊt ThÇn binh, x¸c nhËn ®Æt kh«ng? ",
 			2,
-			"§ång ý/#add_probability("..aType..")",
+			"Agree/#add_probability("..aType..")",
 			"Kh«ng, t¹i h¹ kh«ng ®Þnh lµm t¨ng linh khÝ cho ThÇn binh/main"
 			);
 	end
@@ -500,7 +500,7 @@ function give_weapon()
 	{"Ph¸ phßng thñ ®èi ph­¬ng",362,40,5,4,3,10,0,0,0,0,0,9895,100,5},
 	{"TÊn c«ng t¨ng ",77,60,1,10,5,40,0,2250,2250,2250,2250,600,300,100},
 	{"Ph¸t huy c«ng kÝch lín nhÊt",346,60,2,5,3,20,0,0,3500,3500,2000,600,300,100},
-	{"Tû lÖ ®¸nh ph¹m vi",335,80,1,6,4,30,0,2000,1500,1500,1500,1500,1000,1000},
+	{"Hit range rate",335,80,1,6,4,30,0,2000,1500,1500,1500,1500,1000,1000},
 	{"Vò khÝ ®¸nh ngo¹i lín nhÊt t¨ng ",65,80,1,8,7,50,1,2000,1500,1500,1500,1500,1000,1000},
 	{"Vò khÝ ®¸nh ngo¹i thÊp nhÊt t¨ng ",66,80,1,6,4,30,1,2000,1500,1500,1500,1500,1000,1000},
 	{"Vò khÝ ®¸nh néi lín nhÊt t¨ng",67,80,1,10,5,40,1,2000,1500,1500,1500,1500,1000,1000},

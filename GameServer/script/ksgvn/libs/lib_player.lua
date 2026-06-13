@@ -116,7 +116,7 @@ function KsgPlayer:ModifyHonor(nPoint)
         else
             KsgTask:Modify(TASKID_BATTLE_HONOR, -nPoint)
         end
-        KsgPlayer:Msg("Nh甹 悌蟃 " .. abs(nPoint) .. " 展脁 c南g tr雉g.")
+        KsgPlayer:Msg("Received" .. abs(nPoint) .. " 展脁 c南g tr雉g.")
     end
 end
 

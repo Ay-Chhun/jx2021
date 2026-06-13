@@ -15,7 +15,7 @@ function main()
 	local tSay = {};
 	local nJoinTimes = KF_GetJoinTimes();
 	tSay.msg = KF_NPC_NAME..format("§¹i hiÖp muèn tham gia chiÕn tr­êng liªn server kh«ng? Trong chiÕn tr­êng liªn server, b¹n cã thÓ chiÕn ®Êu mét c¸ch s¶ng kho¸i víi hµo kiÖt cña toµn vâ l©m, kiÕn c«ng lËp nghiÖp vµ nhËn ®­îc phÇn th­ëng quý hiÕm. HiÖn t¹i chØ më cho nh©n vËt chuyÓn sinh %d cÊp %d trë lªn, ®· gia nhËp l­u ph¸i vµ ®· häc tÊt c¶ kü n¨ng cÊp %d, ®ång thêi mçi ng­êi chØ cã thÓ tham gia %d lÇn/ngµy. §¹i hiÖp h«m nay ®· tham gia <color=green>%d<color> lÇn.", 5, 96, 55, KF_JOIN_TIMES_MAX, nJoinTimes);
-	if GetNpcName(GetTargetNpc()) == "Ng­êi B¸o Danh Liªn §Êu" then
+	if GetNpcName(GetTargetNpc()) == "Joint Duel Registrar" then
 		local nTimes = GetMapTaskTemp(KF_MAP_TASK_TEMP_ID, KF_CURR_OPEN_COUNT);
 		tSay.msg = tSay.msg..format("\n<color=red> ChiÕn Tr­êng Liªn Server lÇn nµy ®· më %d trËn <color>", nTimes);
 	end
@@ -23,7 +23,7 @@ function main()
 			{format("B¸o danh c¸ nh©n (tiªu hao %d vµng)", KF_ENTRY_FEE), "jyr_single_join"},
 			{format("Tæ ®éi b¸o danh (nhiÒu nhÊt 3 ng­êi, tiªu hao %d vµng)", KF_ENTRY_FEE * min(gf_GetTeamSize(),3)), "jyr_team_join"},
 		};
-	tinsert(tSay.sel,	{"\n rót lui", "nothing"});	
+	tinsert(tSay.sel,	{"\n withdraw", "nothing"});	
 	temp_Talk(tSay);
 end
 
@@ -33,10 +33,10 @@ function jyr_main_lingjiang()
 	tSay.msg = KF_NPC_NAME..format("§¹i hiÖp muèn tham gia chiÕn tr­êng liªn server kh«ng? Trong chiÕn tr­êng liªn server, b¹n cã thÓ chiÕn ®Êu mét c¸ch s¶ng kho¸i víi hµo kiÖt cña toµn vâ l©m, kiÕn c«ng lËp nghiÖp vµ nhËn ®­îc phÇn th­ëng quý hiÕm. HiÖn t¹i chØ më cho nh©n vËt chuyÓn sinh %d cÊp %d trë lªn, ®· gia nhËp l­u ph¸i vµ ®· häc tÊt c¶ kü n¨ng cÊp %d, ®ång thêi mçi ng­êi chØ cã thÓ tham gia %d lÇn/ngµy. §¹i hiÖp h«m nay ®· tham gia <color=green>%d<color> lÇn.", 5, 96, 55, KF_JOIN_TIMES_MAX, nJoinTimes);
 	tSay.sel = {
 			{"NhËn phÇn th­ëng lÇn tr­íc", "jyr_get_last_award"},
-			{"Cöa hµng hu©n ch­¬ng", "jyr_medal_shop"},
+			{"Medal Shop", "jyr_medal_shop"},
 			{"Th«ng tin chiÕn tr­êng liªn ®Êu", "jyr_battle_introduce"},	
 		};
-	tinsert(tSay.sel,	{"\n rót lui", "nothing"});	
+	tinsert(tSay.sel,	{"\n withdraw", "nothing"});	
 	temp_Talk(tSay);
 end
 
@@ -210,7 +210,7 @@ function jyr_team_join()
 		msg = msg..tResult[3][i].."   ";
 		bTag = 1;
 	end
-	msg = msg.."<color>\nHµnh trang ®Çy:\n<color=red>"
+	msg = msg.."<color>\nInventory is full:\n<color=red>"
 	for i = 1, getn(tResult[4]) do
 		msg = msg..tResult[4][i].."   ";
 		bTag = 1;
@@ -291,7 +291,7 @@ function jyr_get_last_award()
 	local tSay = {};
 	local tTempString = {
 		[0] = "§· nhËn th­ëng hoÆc ch­a tham gia chiÕn tr­êng",
-		[1] = "Tho¸t ra",	
+		[1] = "Exit",	
 		[2] = "§· giµnh chiÕn th¾ng",
 		[3] = "§· thÊt b¹i",
 		[4] = "BÊt ph©n th¾ng b¹i",
@@ -309,7 +309,7 @@ function jyr_get_last_award()
 		tinsert(tSay.sel, {"Vinh Dù Qu©n C«ng Ch­¬ng nhËn th­ëng", "ryjungongzhang_award"})
 	end
 	tinsert(tSay.sel, {"Quay l¹i ", "main"})
-	tinsert(tSay.sel, {"Ra khái", "nothing"})
+	tinsert(tSay.sel, {"Exit", "nothing"})
 	tSay.msg = KF_NPC_NAME..strTemp;
 	temp_Talk(tSay);
 end
@@ -344,7 +344,7 @@ function jyr_battle_introduce()
 	tSay.msg = KF_NPC_NAME..string1..string2..string3..string4;
 	tSay.sel = {
 		{"\nQuay l¹i", "main"},
-		{"Ra khái", "nothing"},
+		{"Exit", "nothing"},
 	}
 	temp_Talk(tSay);
 end
@@ -353,12 +353,12 @@ function jyr_medal_shop()
 	local tSay = {};
 	tSay.msg = KF_NPC_NAME.."C¸c h¹ muèn tham quan cöa hµng hu©n ch­¬ng?";
 	tSay.sel = {
-		{"Cöa hµng Hu©n Ch­¬ng Dòng SÜ", "jyr_ys_shop"},
-		{"Cöa hµng Hu©n Ch­¬ng Anh Hïng", "jyr_yx_shop"},
+		{"Brave Warrior Medal store", "jyr_ys_shop"},
+		{"Hero Medal store", "jyr_yx_shop"},
 		{"Cöa hiÖu qu©n phôc L«i Hæ", "jyr_junzhuang_shop"},
 		{"Cöa hµng trang bÞ Kim Xµ 4 sao", "jyr_jinshe_shop"},
 		{"\nQuay l¹i", "main"},
-		{"Ra khái", "nothing"},
+		{"Exit", "nothing"},
 	}
 	temp_Talk(tSay);
 end
@@ -371,8 +371,8 @@ function jyr_jinshe_shop()
 
 	local strtab = {
 			format("\n%s/%s","X¸c nhËn më","#show_equip_shop(3037)"),
-			format("\n%s/%s","\n Ph¶n håi", "jyr_medal_shop"),
-			"\n rót lui/nothing",
+			format("\n%s/%s","\n Feedback", "jyr_medal_shop"),
+			"\n withdraw/nothing",
 	};
 	Say(szTitle, getn(strtab), strtab)
 end
@@ -385,8 +385,8 @@ function jyr_junzhuang_shop()
 
 	local strtab = {
 			format("\n%s/%s","X¸c nhËn më","#show_equip_shop(3038)"),
-			format("\n%s/%s","\n Ph¶n håi", "jyr_medal_shop"),
-			"\n rót lui/nothing",
+			format("\n%s/%s","\n Feedback", "jyr_medal_shop"),
+			"\n withdraw/nothing",
 	};
 	Say(szTitle, getn(strtab), strtab)
 	--show_equip_shop(3038);
@@ -399,8 +399,8 @@ function jyr_ys_shop()
 
 	local strtab = {
 			format("\n%s/%s","X¸c nhËn më","#show_equip_shop(3028)"),
-			format("\n%s/%s","\n Ph¶n håi", "jyr_medal_shop"),
-			"\n rót lui/nothing",
+			format("\n%s/%s","\n Feedback", "jyr_medal_shop"),
+			"\n withdraw/nothing",
 	};
 	Say(szTitle, getn(strtab), strtab)
 	--show_equip_shop(3028);

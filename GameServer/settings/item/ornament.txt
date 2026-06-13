@@ -1,9 +1,9 @@
-Tªn	Lo¹i h×nh chİnh	Lo¹i h×nh phô	Ph©n lo¹i chi tiÕt	NÆng	Gi¸	Ngò hµnh	HiÖu øng	Gi÷ l¹i b	L­u c	L­u d	L­u e	L­u f	Sè trang bŞ	§¾ng cÊp yªu cÇu	Giíi tİnh (1=nam; 2=n÷)	ThÓ h×nh (1=nam tiªu chuÈn; 2=nam kh«i ng«; 3=n÷ gîi c¶m; 4=kiÒu n÷)	M«n ph¸i yªu cÇu	HiÖn h×nh nhá trªn giao diÖn	HiÖn h×nh lín trªn giao diÖn	ThuyÕt minh	Khi trang bŞ lªn ng­êi sÏ hiÖn tªn lo¹i h×nh	Khi vøt ra ngoµi; sö dông tµi nguyªn nµo	File gèc	CÊp	Cã/kh«ng thÓ giao dŞch(0 ®­îc,1 kh«ng ®­îc,2 chØ cã thÓ b¸n ë tiÖm,3 chØ cã thÓ b¸n)	Cã/kh«ng thÓ vøt (0 ®­îc; 1 kh«ng ®­îc)	L­u ph¸i	L­u ( Ch÷ sè)	Gi¸ trŞ	
+Name	Lo¹i h×nh chİnh	Lo¹i h×nh phô	Ph©n lo¹i chi tiÕt	NÆng	Gi¸	Ngò hµnh	HiÖu øng	Gi÷ l¹i b	L­u c	L­u d	L­u e	L­u f	Sè trang bŞ	§¾ng cÊp yªu cÇu	Giíi tİnh (1=nam; 2=n÷)	ThÓ h×nh (1=nam tiªu chuÈn; 2=nam kh«i ng«; 3=n÷ gîi c¶m; 4=kiÒu n÷)	M«n ph¸i yªu cÇu	HiÖn h×nh nhá trªn giao diÖn	HiÖn h×nh lín trªn giao diÖn	ThuyÕt minh	Khi trang bŞ lªn ng­êi sÏ hiÖn tªn lo¹i h×nh	Khi vøt ra ngoµi; sö dông tµi nguyªn nµo	File gèc	CÊp	Cã/kh«ng thÓ giao dŞch(0 ®­îc,1 kh«ng ®­îc,2 chØ cã thÓ b¸n ë tiÖm,3 chØ cã thÓ b¸n)	Cã/kh«ng thÓ vøt (0 ®­îc; 1 kh«ng ®­îc)	L­u ph¸i	L­u ( Ch÷ sè)	Gi¸ trŞ	
 							EffectID1;EffectID2															ThÇn bİ								
-Nh­ ı (Lam)	0	119	1	0	0		1;2							1	1	1		\image\item\ornament\effecthead01a1.spr	\image\item\ornament\effecthead01a0.spr	Trong ©m nh¹c dŞu dµngd,quÇn ¸o ®u ®­a víi móa nh­ ı ®Ñp.		ThÇn bİ		1	2	1			999	
-Nh­ ı (Lam)	0	119	2	0	0		3;4							1	1	2		\image\item\ornament\effecthead01a1.spr	\image\item\ornament\effecthead01a0.spr	Trong ©m nh¹c dŞu dµngd,quÇn ¸o ®u ®­a víi móa nh­ ı ®Ñp.		ThÇn bİ		1	2	1			999	
-Nh­ ı (Lam)	0	119	3	0	0		5;6							1	2	3		\image\item\ornament\effecthead01a1.spr	\image\item\ornament\effecthead01a0.spr	Trong ©m nh¹c dŞu dµngd,quÇn ¸o ®u ®­a víi móa nh­ ı ®Ñp.		ThÇn bİ		1	2	1			999	
-Nh­ ı (Lam)	0	119	4	0	0		7;8							1	2	4		\image\item\ornament\effecthead01a1.spr	\image\item\ornament\effecthead01a0.spr	Trong ©m nh¹c dŞu dµngd,quÇn ¸o ®u ®­a víi móa nh­ ı ®Ñp.		ThÇn bİ		1	2	1			999	
+Ruyi (Blue)	0	119	1	0	0		1;2							1	1	1		\image\item\ornament\effecthead01a1.spr	\image\item\ornament\effecthead01a0.spr	Trong ©m nh¹c dŞu dµngd,quÇn ¸o ®u ®­a víi móa nh­ ı ®Ñp.		ThÇn bİ		1	2	1			999	
+Ruyi (Blue)	0	119	2	0	0		3;4							1	1	2		\image\item\ornament\effecthead01a1.spr	\image\item\ornament\effecthead01a0.spr	Trong ©m nh¹c dŞu dµngd,quÇn ¸o ®u ®­a víi móa nh­ ı ®Ñp.		ThÇn bİ		1	2	1			999	
+Ruyi (Blue)	0	119	3	0	0		5;6							1	2	3		\image\item\ornament\effecthead01a1.spr	\image\item\ornament\effecthead01a0.spr	Trong ©m nh¹c dŞu dµngd,quÇn ¸o ®u ®­a víi móa nh­ ı ®Ñp.		ThÇn bİ		1	2	1			999	
+Ruyi (Blue)	0	119	4	0	0		7;8							1	2	4		\image\item\ornament\effecthead01a1.spr	\image\item\ornament\effecthead01a0.spr	Trong ©m nh¹c dŞu dµngd,quÇn ¸o ®u ®­a víi móa nh­ ı ®Ñp.		ThÇn bİ		1	2	1			999	
 L­u Quang (Kim)	0	119	5	0	0		9;10							1	1	1		\image\item\ornament\effecthead02a1.spr	\image\item\ornament\effecthead02a0.spr	Dung hoa diÖu triÒu nhËt, cÈm cÇm nh­îc l­u quang.		ThÇn bİ		1	2	1			999	
 L­u Quang (Kim)	0	119	6	0	0		11;12							1	1	2		\image\item\ornament\effecthead02a1.spr	\image\item\ornament\effecthead02a0.spr	Dung hoa diÖu triÒu nhËt, cÈm cÇm nh­îc l­u quang.		ThÇn bİ		1	2	1			999	
 L­u Quang (Kim)	0	119	7	0	0		13;14							1	2	3		\image\item\ornament\effecthead02a1.spr	\image\item\ornament\effecthead02a0.spr	Dung hoa diÖu triÒu nhËt, cÈm cÇm nh­îc l­u quang.		ThÇn bİ		1	2	1			999	
@@ -24,10 +24,10 @@ L­u Quang (Lam)	0	119	21	0	0		41;42							1	1	1		\image\item\ornament\effecthead
 L­u Quang (Lam)	0	119	22	0	0		43;44							1	1	2		\image\item\ornament\effecthead02a1.spr	\image\item\ornament\effecthead02a0.spr	Dung hoa diÖu triÒu nhËt, cÈm cÇm nh­îc l­u quang.		ThÇn bİ		1	2	1			999	
 L­u Quang (Lam)	0	119	23	0	0		45;46							1	2	3		\image\item\ornament\effecthead02a1.spr	\image\item\ornament\effecthead02a0.spr	Dung hoa diÖu triÒu nhËt, cÈm cÇm nh­îc l­u quang.		ThÇn bİ		1	2	1			999	
 L­u Quang (Lam)	0	119	24	0	0		47;48							1	2	4		\image\item\ornament\effecthead02a1.spr	\image\item\ornament\effecthead02a0.spr	Dung hoa diÖu triÒu nhËt, cÈm cÇm nh­îc l­u quang.		ThÇn bİ		1	2	1			999	
-Siªu Phong (Lam)	0	121	1	0	0		1;2							1	1	1		\image\item\ornament\effectfoot01a1.spr	\image\item\ornament\effectfoot01a0.spr	Tr¸ng trİ lªn Thanh V©n, ®i l¹i nh­ siªu phong.		ThÇn bİ		1	2	1			999	
-Siªu Phong (Lam)	0	121	2	0	0		3;4							1	1	2		\image\item\ornament\effectfoot01a1.spr	\image\item\ornament\effectfoot01a0.spr	Tr¸ng trİ lªn Thanh V©n, ®i l¹i nh­ siªu phong.		ThÇn bİ		1	2	1			999	
-Siªu Phong (Lam)	0	121	3	0	0		5;6							1	2	3		\image\item\ornament\effectfoot01a1.spr	\image\item\ornament\effectfoot01a0.spr	Tr¸ng trİ lªn Thanh V©n, ®i l¹i nh­ siªu phong.		ThÇn bİ		1	2	1			999	
-Siªu Phong (Lam)	0	121	4	0	0		7;8							1	2	4		\image\item\ornament\effectfoot01a1.spr	\image\item\ornament\effectfoot01a0.spr	Tr¸ng trİ lªn Thanh V©n, ®i l¹i nh­ siªu phong.		ThÇn bİ		1	2	1			999	
+Soaring Wind (Blue)	0	121	1	0	0		1;2							1	1	1		\image\item\ornament\effectfoot01a1.spr	\image\item\ornament\effectfoot01a0.spr	Tr¸ng trİ lªn Thanh V©n, ®i l¹i nh­ siªu phong.		ThÇn bİ		1	2	1			999	
+Soaring Wind (Blue)	0	121	2	0	0		3;4							1	1	2		\image\item\ornament\effectfoot01a1.spr	\image\item\ornament\effectfoot01a0.spr	Tr¸ng trİ lªn Thanh V©n, ®i l¹i nh­ siªu phong.		ThÇn bİ		1	2	1			999	
+Soaring Wind (Blue)	0	121	3	0	0		5;6							1	2	3		\image\item\ornament\effectfoot01a1.spr	\image\item\ornament\effectfoot01a0.spr	Tr¸ng trİ lªn Thanh V©n, ®i l¹i nh­ siªu phong.		ThÇn bİ		1	2	1			999	
+Soaring Wind (Blue)	0	121	4	0	0		7;8							1	2	4		\image\item\ornament\effectfoot01a1.spr	\image\item\ornament\effectfoot01a0.spr	Tr¸ng trİ lªn Thanh V©n, ®i l¹i nh­ siªu phong.		ThÇn bİ		1	2	1			999	
 Tinh Th¸i (Kim)	0	121	5	0	0		9;10							1	1	1		\image\item\ornament\effectfoot02a1.spr	\image\item\ornament\effectfoot02a0.spr	§¨ng l©u trİch nguyÖt hoa, l·m giang thu tinh th¸i.		ThÇn bİ		1	2	1			999	
 Tinh Th¸i (Kim)	0	121	6	0	0		11;12							1	1	2		\image\item\ornament\effectfoot02a1.spr	\image\item\ornament\effectfoot02a0.spr	§¨ng l©u trİch nguyÖt hoa, l·m giang thu tinh th¸i.		ThÇn bİ		1	2	1			999	
 Tinh Th¸i (Kim)	0	121	7	0	0		13;14							1	2	3		\image\item\ornament\effectfoot02a1.spr	\image\item\ornament\effectfoot02a0.spr	§¨ng l©u trİch nguyÖt hoa, l·m giang thu tinh th¸i.		ThÇn bİ		1	2	1			999	
@@ -48,10 +48,10 @@ Tinh Th¸i (Lam)	0	121	21	0	0		41;42							1	1	1		\image\item\ornament\effectfoot
 Tinh Th¸i (Lam)	0	121	22	0	0		43;44							1	1	2		\image\item\ornament\effectfoot02a1.spr	\image\item\ornament\effectfoot02a0.spr	§¨ng l©u trİch nguyÖt hoa, l·m giang thu tinh th¸i.		ThÇn bİ		1	2	1			999	
 Tinh Th¸i (Lam)	0	121	23	0	0		45;46							1	2	3		\image\item\ornament\effectfoot02a1.spr	\image\item\ornament\effectfoot02a0.spr	§¨ng l©u trİch nguyÖt hoa, l·m giang thu tinh th¸i.		ThÇn bİ		1	2	1			999	
 Tinh Th¸i (Lam)	0	121	24	0	0		47;48							1	2	4		\image\item\ornament\effectfoot02a1.spr	\image\item\ornament\effectfoot02a0.spr	§¨ng l©u trİch nguyÖt hoa, l·m giang thu tinh th¸i.		ThÇn bİ		1	2	1			999	
-Oanh TrÇn Vò (Lam)	0	120	1	0	0		0;1							1	1	1		\image\item\ornament\effectcloth01a1.spr	\image\item\ornament\effectcloth01a0.spr	Móa Oanh TrÇn nh­ kh«ng, c¸nh Vò nh­ giã.		ThÇn bİ		1	2	1			999	
-Oanh TrÇn Vò (Lam)	0	120	2	0	0		0;2							1	1	2		\image\item\ornament\effectcloth01a1.spr	\image\item\ornament\effectcloth01a0.spr	Móa Oanh TrÇn nh­ kh«ng, c¸nh Vò nh­ giã.		ThÇn bİ		1	2	1			999	
-Oanh TrÇn Vò (Lam)	0	120	3	0	0		0;3							1	2	3		\image\item\ornament\effectcloth01a1.spr	\image\item\ornament\effectcloth01a0.spr	Móa Oanh TrÇn nh­ kh«ng, c¸nh Vò nh­ giã.		ThÇn bİ		1	2	1			999	
-Oanh TrÇn Vò (Lam)	0	120	4	0	0		0;4							1	2	4		\image\item\ornament\effectcloth01a1.spr	\image\item\ornament\effectcloth01a0.spr	Móa Oanh TrÇn nh­ kh«ng, c¸nh Vò nh­ giã.		ThÇn bİ		1	2	1			999	
+Thundering Dance (Blue)	0	120	1	0	0		0;1							1	1	1		\image\item\ornament\effectcloth01a1.spr	\image\item\ornament\effectcloth01a0.spr	Móa Oanh TrÇn nh­ kh«ng, c¸nh Vò nh­ giã.		ThÇn bİ		1	2	1			999	
+Thundering Dance (Blue)	0	120	2	0	0		0;2							1	1	2		\image\item\ornament\effectcloth01a1.spr	\image\item\ornament\effectcloth01a0.spr	Móa Oanh TrÇn nh­ kh«ng, c¸nh Vò nh­ giã.		ThÇn bİ		1	2	1			999	
+Thundering Dance (Blue)	0	120	3	0	0		0;3							1	2	3		\image\item\ornament\effectcloth01a1.spr	\image\item\ornament\effectcloth01a0.spr	Móa Oanh TrÇn nh­ kh«ng, c¸nh Vò nh­ giã.		ThÇn bİ		1	2	1			999	
+Thundering Dance (Blue)	0	120	4	0	0		0;4							1	2	4		\image\item\ornament\effectcloth01a1.spr	\image\item\ornament\effectcloth01a0.spr	Móa Oanh TrÇn nh­ kh«ng, c¸nh Vò nh­ giã.		ThÇn bİ		1	2	1			999	
 Chø Phông T­êng Loan (Kim)	0	120	5	0	0		0;5							1	1	1		\image\item\ornament\effectcloth02a1.spr	\image\item\ornament\effectcloth02a0.spr	Trî ph­îng ®¨ng thiªn cùc, t­êng loan l¹c hång trÇn.		ThÇn bİ		1	2	1			999	
 Chø Phông T­êng Loan (Kim)	0	120	6	0	0		0;6							1	1	2		\image\item\ornament\effectcloth02a1.spr	\image\item\ornament\effectcloth02a0.spr	Trî ph­îng ®¨ng thiªn cùc, t­êng loan l¹c hång trÇn.		ThÇn bİ		1	2	1			999	
 Chø Phông T­êng Loan (Kim)	0	120	7	0	0		0;7							1	2	3		\image\item\ornament\effectcloth02a1.spr	\image\item\ornament\effectcloth02a0.spr	Trî ph­îng ®¨ng thiªn cùc, t­êng loan l¹c hång trÇn.		ThÇn bİ		1	2	1			999	
@@ -90,26 +90,26 @@ Tói Gi¸ng Sinh Ch­a §Çy	0	120	39	0	0		0;39							1				\image\item\ornament\Ê¥µ®¹
 Tói Gi¸ng Sinh Trèng	0	120	40	0	0		0;40							1				\image\item\ornament\Ê¥µ®¹Ò¼ş1a1.spr	\image\item\ornament\Ê¥µ®¹Ò¼ş1a0.spr	Mét Tói Gi¸ng Sinh s¾p trèng, trong tói chØ cßn l¹i vµi mãn quµ.		ThÇn bİ		1	2	1			999	
 Tói Gi¸ng Sinh H¹nh Phóc	0	120	41	0	0		0;41							1				\image\item\ornament\Ê¥µ®¹Ò¼ş1a1.spr	\image\item\ornament\Ê¥µ®¹Ò¼ş1a0.spr	Tuy quµ ®· ®­îc tÆng hÕt, nh­ng h¹nh phóc trµn ®Çy lu«n hiÖn diÖn.		ThÇn bİ		1	2	1			999	
 ThiÕu L©m Tinh Kú (Kh«i Thñ)	0	120	42	0	0		0;42							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 1 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
-ThiÕu L©m Tinh Kú (KiÒu Së)	0	120	43	0	0		0;43							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 2 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
-ThiÕu L©m Tinh Kú (Anh KiÖt)	0	120	44	0	0		0;44							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 3 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
+Shaolin Banner (Kiao So)	0	120	43	0	0		0;43							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 2 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
+Shaolin Banner (Hero)	0	120	44	0	0		0;44							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 3 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
 §­êng M«n Tinh Kú (Kh«i Thñ)	0	120	45	0	0		0;45							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 1 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
 §­êng M«n Tinh Kú (KiÒu Së)	0	120	46	0	0		0;46							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 2 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
 §­êng M«n Tinh Kú (Anh KiÖt)	0	120	47	0	0		0;47							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 3 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
 Nga My Tinh Kú (Kh«i Thñ)	0	120	48	0	0		0;48							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 1 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
-Nga My Tinh Kú (KiÒu Së)	0	120	49	0	0		0;49							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 2 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
-Nga My Tinh Kú (Anh KiÖt)	0	120	50	0	0		0;50							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 3 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
+Emei Banner (Kiao So)	0	120	49	0	0		0;49							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 2 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
+Emei Banner (Hero)	0	120	50	0	0		0;50							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 3 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
 C¸i Bang Tinh Kú (Kh«i Thñ)	0	120	51	0	0		0;51							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 1 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
-C¸i Bang Tinh Kú (KiÒu Së)	0	120	52	0	0		0;52							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 2 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
-C¸i Bang Tinh Kú (Anh KiÖt)	0	120	53	0	0		0;53							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 3 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
+Beggars' Sect Banner (Kiao So)	0	120	52	0	0		0;52							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 2 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
+Beggars' Sect Banner (Hero)	0	120	53	0	0		0;53							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 3 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
 Vâ §ang Tinh Kú (Kh«i Thñ)	0	120	54	0	0		0;54							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 1 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
-Vâ §ang Tinh Kú (KiÒu Së)	0	120	55	0	0		0;55							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 2 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
-Vâ §ang Tinh Kú (Anh KiÖt)	0	120	56	0	0		0;56							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 3 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
+Wudang Banner (Kiao So)	0	120	55	0	0		0;55							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 2 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
+Wudang Banner (Hero)	0	120	56	0	0		0;56							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 3 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
 D­¬ng M«n Tinh Kú (Kh«i Thñ)	0	120	57	0	0		0;57							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 1 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
 D­¬ng M«n Tinh Kú (KiÒu Së)	0	120	58	0	0		0;58							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 2 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
 D­¬ng M«n Tinh Kú (Anh KiÖt)	0	120	59	0	0		0;59							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 3 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
 Ngò §éc Tinh Kú (Kh«i Thñ)	0	120	60	0	0		0;60							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 1 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
-Ngò §éc Tinh Kú (KiÒu Së)	0	120	61	0	0		0;61							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 2 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
-Ngò §éc Tinh Kú (Anh KiÖt)	0	120	62	0	0		0;62							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 3 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
+Five Poisons Banner (Kiao So)	0	120	61	0	0		0;61							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 2 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
+Five Poisons Banner (Hero)	0	120	62	0	0		0;62							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 3 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
 C«n L«n Tinh Kú (Kh«i Thñ)	0	120	63	0	0		0;63							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 1 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
 C«n L«n Tinh Kú (KiÒu Së)	0	120	64	0	0		0;64							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 2 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
 C«n L«n Tinh Kú (Anh KiÖt)	0	120	65	0	0		0;65							80				\image\item\ring\½«¾üÁîÆì1a1.spr	\image\item\ring\½«¾üÁîÆì1a0.spr	§¹i Héi Tû Vâ-Th­ëng ph¸i h¹ng 3 cña mïa gi¶i.		ThÇn bİ		1	2	1			999	
@@ -183,10 +183,10 @@ Chong Chãng Tuæi Th¬	0	120	96	0	0		0;96							1	1	1		\image\item\ornament\1·çóİ3
 Chong Chãng Tuæi Th¬	0	120	97	0	0		0;97							1	1	2		\image\item\ornament\1·çóİ36.spr	\image\item\ornament\1·çóİ120.spr	Tuæi th¬ tèt ®Ñp ®¸ng ®Ó håi øc.		ThÇn bİ		1	2	1			999	
 Chong Chãng Tuæi Th¬	0	120	98	0	0		0;98							1	2	3		\image\item\ornament\1·çóİ36.spr	\image\item\ornament\1·çóİ120.spr	Tuæi th¬ tèt ®Ñp ®¸ng ®Ó håi øc.		ThÇn bİ		1	2	1			999	
 Chong Chãng Tuæi Th¬	0	120	99	0	0		0;99							1	2	4		\image\item\ornament\1·çóİ36.spr	\image\item\ornament\1·çóİ120.spr	Tuæi th¬ tèt ®Ñp ®¸ng ®Ó håi øc.		ThÇn bİ		1	2	1			999	
-DiÒu GiÊy B­ím Lam	0	120	100	0	0		0;100							1	1	1		\image\item\ornament\ºûµû·çóİ.spr	\image\item\ornament\ºûµû·çóİ120.spr	Diªn phi ®iÖp vò hû phiªn phiªn, cËn viÔn tïy t©m nhÊt tuyÕn khiªn.		ThÇn bİ		1	2	1			999	
-DiÒu GiÊy B­ím Lam	0	120	101	0	0		0;101							1	1	2		\image\item\ornament\ºûµû·çóİ.spr	\image\item\ornament\ºûµû·çóİ120.spr	Diªn phi ®iÖp vò hû phiªn phiªn, cËn viÔn tïy t©m nhÊt tuyÕn khiªn.		ThÇn bİ		1	2	1			999	
-DiÒu GiÊy B­ím Lam	0	120	102	0	0		0;102							1	2	3		\image\item\ornament\ºûµû·çóİ.spr	\image\item\ornament\ºûµû·çóİ120.spr	Diªn phi ®iÖp vò hû phiªn phiªn, cËn viÔn tïy t©m nhÊt tuyÕn khiªn.		ThÇn bİ		1	2	1			999	
-DiÒu GiÊy B­ím Lam	0	120	103	0	0		0;103							1	2	4		\image\item\ornament\ºûµû·çóİ.spr	\image\item\ornament\ºûµû·çóİ120.spr	Diªn phi ®iÖp vò hû phiªn phiªn, cËn viÔn tïy t©m nhÊt tuyÕn khiªn.		ThÇn bİ		1	2	1			999	
+Diem Giay Buom Lam	0	120	100	0	0		0;100							1	1	1		\image\item\ornament\ºûµû·çóİ.spr	\image\item\ornament\ºûµû·çóİ120.spr	Diªn phi ®iÖp vò hû phiªn phiªn, cËn viÔn tïy t©m nhÊt tuyÕn khiªn.		ThÇn bİ		1	2	1			999	
+Diem Giay Buom Lam	0	120	101	0	0		0;101							1	1	2		\image\item\ornament\ºûµû·çóİ.spr	\image\item\ornament\ºûµû·çóİ120.spr	Diªn phi ®iÖp vò hû phiªn phiªn, cËn viÔn tïy t©m nhÊt tuyÕn khiªn.		ThÇn bİ		1	2	1			999	
+Diem Giay Buom Lam	0	120	102	0	0		0;102							1	2	3		\image\item\ornament\ºûµû·çóİ.spr	\image\item\ornament\ºûµû·çóİ120.spr	Diªn phi ®iÖp vò hû phiªn phiªn, cËn viÔn tïy t©m nhÊt tuyÕn khiªn.		ThÇn bİ		1	2	1			999	
+Diem Giay Buom Lam	0	120	103	0	0		0;103							1	2	4		\image\item\ornament\ºûµû·çóİ.spr	\image\item\ornament\ºûµû·çóİ120.spr	Diªn phi ®iÖp vò hû phiªn phiªn, cËn viÔn tïy t©m nhÊt tuyÕn khiªn.		ThÇn bİ		1	2	1			999	
 Hå L« KhØ MËp-Nhá	0	120	104	0	0		0;104							1	1	1		\image\item\ornament\ÂÌÉ«ºùÂ«Ğ¡.spr	\image\item\ornament\ÂÌÉ«ºùÂ«.spr	T­¬ng truyÒn KhØ MËp khi ®¾c ®¹o ®· ®Ó l¹i mét hå l« nhá, ng­êi cã duyªn sÏ ®¹t ®­îc.		ThÇn bİ		1	2	1			999	
 Hå L« KhØ MËp-Nhá	0	120	105	0	0		0;105							1	1	2		\image\item\ornament\ÂÌÉ«ºùÂ«Ğ¡.spr	\image\item\ornament\ÂÌÉ«ºùÂ«.spr	T­¬ng truyÒn KhØ MËp khi ®¾c ®¹o ®· ®Ó l¹i mét hå l« nhá, ng­êi cã duyªn sÏ ®¹t ®­îc.		ThÇn bİ		1	2	1			999	
 Hå L« KhØ MËp-Nhá	0	120	106	0	0		0;106							1	2	3		\image\item\ornament\ÂÌÉ«ºùÂ«Ğ¡.spr	\image\item\ornament\ÂÌÉ«ºùÂ«.spr	T­¬ng truyÒn KhØ MËp khi ®¾c ®¹o ®· ®Ó l¹i mét hå l« nhá, ng­êi cã duyªn sÏ ®¹t ®­îc.		ThÇn bİ		1	2	1			999	
@@ -203,14 +203,14 @@ Ma ThÇn §Çu Chung-Lín	0	120	116	0	0		0;116							1	1	1		\image\item\ornament\bac
 Ma ThÇn §Çu Chung-Lín	0	120	117	0	0		0;117							1	1	2		\image\item\ornament\back2ÅÆ¾ÅÖÑ01a1.spr	\image\item\ornament\back2ÅÆ¾ÅÖÑ01a0.spr	Lóc Ma ThÇn tu luyÖn sö dông, ng­êi ®¹t ®­îc ®Òu cã duyªn víi Ma ThÇn.		ThÇn bİ		1	2	1			999	
 Ma ThÇn §Çu Chung-Lín	0	120	118	0	0		0;118							1	2	3		\image\item\ornament\back2ÅÆ¾ÅÖÑ01a1.spr	\image\item\ornament\back2ÅÆ¾ÅÖÑ01a0.spr	Lóc Ma ThÇn tu luyÖn sö dông, ng­êi ®¹t ®­îc ®Òu cã duyªn víi Ma ThÇn.		ThÇn bİ		1	2	1			999	
 Ma ThÇn §Çu Chung-Lín	0	120	119	0	0		0;119							1	2	4		\image\item\ornament\back2ÅÆ¾ÅÖÑ01a1.spr	\image\item\ornament\back2ÅÆ¾ÅÖÑ01a0.spr	Lóc Ma ThÇn tu luyÖn sö dông, ng­êi ®¹t ®­îc ®Òu cã duyªn víi Ma ThÇn.		ThÇn bİ		1	2	1			999	
-Bİch H¶i Lam Phong	0	120	120	0	0		0;120							1				\image\item\ornament\backÀûÈĞ·ç³µÀ¶a1.spr	\image\item\ornament\backÀûÈĞ·ç³µÀ¶a0.spr	C­ìi sãng l­íi giã vÒ biÓn xanh, con hån ®øng bë víi giã xanh.		ThÇn bİ		1	2	1			999	
-Vâ T­¬ng Kim Lu©n	0	120	121	0	0		0;121							1				\image\item\ornament\backÀûÈĞ·ç³µ»Æa1.spr	\image\item\ornament\backÀûÈĞ·ç³µ»Æa0.spr	Ma Kha ngµn lÇn nªn V« L­îng, B¸t Nh· ®Èy trêi tù ®am mª.		ThÇn bİ		1	2	1			999	
+Bich Hai Lam Phong	0	120	120	0	0		0;120							1				\image\item\ornament\backÀûÈĞ·ç³µÀ¶a1.spr	\image\item\ornament\backÀûÈĞ·ç³µÀ¶a0.spr	C­ìi sãng l­íi giã vÒ biÓn xanh, con hån ®øng bë víi giã xanh.		ThÇn bİ		1	2	1			999	
+Vo Tuong Kim Luan	0	120	121	0	0		0;121							1				\image\item\ornament\backÀûÈĞ·ç³µ»Æa1.spr	\image\item\ornament\backÀûÈĞ·ç³µ»Æa0.spr	Ma Kha ngµn lÇn nªn V« L­îng, B¸t Nh· ®Èy trêi tù ®am mª.		ThÇn bİ		1	2	1			999	
 Phong Háa Liªn Thµnh	0	120	122	0	0		0;122							1				\image\item\ornament\backÀûÈĞ·ç³µºìa1.spr	\image\item\ornament\backÀûÈĞ·ç³µºìa0.spr	HuyÕt Än che trêi, giã liÖt cïng t­îng tr­ng cho hån §¹i Tèng.		ThÇn bİ		1	2	1			999	
-Bİch H¶i Lam Phong-Ch©n	0	121	84	0	0		73;74							1				\image\item\ornament\foot¹âÇòÀ¶a1.spr	\image\item\ornament\foot¹âÇòÀ¶a0.spr	C­ìi sãng l­íi giã vÒ biÓn xanh, con hån ®øng bë víi giã xanh.		ThÇn bİ		1	2	1			999	
-Vâ T­¬ng Kim Lu©n-Ch©n	0	121	85	0	0		75;76							1				\image\item\ornament\foot¹âÇò»Æa1.spr	\image\item\ornament\foot¹âÇò»Æa0.spr	Ma Kha ngµn lÇn nªn V« L­îng, B¸t Nh· ®Èy trêi tù ®am mª.		ThÇn bİ		1	2	1			999	
+Bich Hai Lam Phong-Foot	0	121	84	0	0		73;74							1				\image\item\ornament\foot¹âÇòÀ¶a1.spr	\image\item\ornament\foot¹âÇòÀ¶a0.spr	C­ìi sãng l­íi giã vÒ biÓn xanh, con hån ®øng bë víi giã xanh.		ThÇn bİ		1	2	1			999	
+Vo Tuong Kim Luan-Foot	0	121	85	0	0		75;76							1				\image\item\ornament\foot¹âÇò»Æa1.spr	\image\item\ornament\foot¹âÇò»Æa0.spr	Ma Kha ngµn lÇn nªn V« L­îng, B¸t Nh· ®Èy trêi tù ®am mª.		ThÇn bİ		1	2	1			999	
 VÕt ch©n Phong Háa Liªn Thµnh	0	121	86	0	0		77;78							1				\image\item\ornament\foot¹âÇòºì1a1.spr	\image\item\ornament\foot¹âÇòºì1a0.spr	HuyÕt Än che trêi, giã liÖt cïng t­îng tr­ng cho hån §¹i Tèng.		ThÇn bİ		1	2	1			999	
-Bİch H¶i Lam Phong-Vai	0	119	96	0	0		0;96							1				\image\item\ornament\back3¹âÇòÀ¶a1.spr	\image\item\ornament\back3¹âÇòÀ¶a0.spr	C­ìi sãng l­íi giã vÒ biÓn xanh, con hån ®øng bë víi giã xanh.		ThÇn bİ		1	2	1			999	
-Vâ T­¬ng Kim Lu©n-Vai	0	119	97	0	0		0;97							1				\image\item\ornament\back3¹âÇò»Æa1.spr	\image\item\ornament\back3¹âÇò»Æa0.spr	Ma Kha ngµn lÇn nªn V« L­îng, B¸t Nh· ®Èy trêi tù ®am mª.		ThÇn bİ		1	2	1			999	
+Bich Hai Lam Phong-Shoulder	0	119	96	0	0		0;96							1				\image\item\ornament\back3¹âÇòÀ¶a1.spr	\image\item\ornament\back3¹âÇòÀ¶a0.spr	C­ìi sãng l­íi giã vÒ biÓn xanh, con hån ®øng bë víi giã xanh.		ThÇn bİ		1	2	1			999	
+Vo Tuong Kim Luan-Shoulder	0	119	97	0	0		0;97							1				\image\item\ornament\back3¹âÇò»Æa1.spr	\image\item\ornament\back3¹âÇò»Æa0.spr	Ma Kha ngµn lÇn nªn V« L­îng, B¸t Nh· ®Èy trêi tù ®am mª.		ThÇn bİ		1	2	1			999	
 Phong Háa Liªn Thµnh-Vai	0	119	98	0	0		0;98							1				\image\item\ornament\back3¹âÇòºì2a1.spr	\image\item\ornament\back3¹âÇòºì2a0.spr	HuyÕt Än che trêi, giã liÖt cïng t­îng tr­ng cho hån §¹i Tèng.		ThÇn bİ		1	2	1			999	
 Thanh Phong KiÕm (Xanh)	0	120	123	0	0		0;123							1				\image\item\ornament\backË«½£Çàa1.spr	\image\item\ornament\backË«½£Çàa0.spr	Thµnh sa m·ng m·ng phong h¹o ®·ng, thÇn nguyÖt cao huyÒn ng©n m·n xuyªn.		ThÇn bİ		1	2	1			999	
 Hång Phong KiÕm	0	120	124	0	0		0;124							1				\image\item\ornament\backË«½£ºìa1.spr	\image\item\ornament\backË«½£ºìa0.spr	§éng §×nh ®i xa gÇn, l¸ phong sî thu l¹nh.		ThÇn bİ		1	2	1			999	
@@ -221,18 +221,18 @@ HuyÒn Hoµng Song KiÕm-Ch©n	0	121	89	0	0		83;84							1				\image\item\ornament\f
 H¹ Lan TuyÕt-Vai	0	119	99	0	0		99;100							1				\image\item\ornament\back3¹âÇòÇàa1.spr	\image\item\ornament\back3¹âÇòÇàa0.spr	Thµnh sa m·ng m·ng phong h¹o ®·ng, thÇn nguyÖt cao huyÒn ng©n m·n xuyªn.		ThÇn bİ		1	2	1			999	
 Hång Phong-Vai	0	119	100	0	0		101;102							1				\image\item\ornament\back3¹âÇòºì1a1.spr	\image\item\ornament\back3¹âÇòºì1a0.spr	§éng §×nh ®i xa gÇn, l¸ phong sî thu l¹nh.		ThÇn bİ		1	2	1			999	
 HuyÒn Hoµng Song KiÕm-Vai	0	119	101	0	0		103;104							1				\image\item\ornament\back3¹âÇòºÚa1.spr	\image\item\ornament\back3¹âÇòºÚa0.spr	HuyÒn thiÕt l­u kim trÇn bÊt nhiÔm, kiÕm khİ trùc th­îng cöu trïng thiªn.		ThÇn bİ		1	2	1			999	
-Con C¸-Eo (§á)	0	120	126	0	0		0;126							1	1	1		\image\item\ornament\back2Óã02a1.spr	\image\item\ornament\back2Óã02a0.spr	Con c¸ ®­a Phóc, n¨m n¨m co tµi!		ThÇn bİ		1	2	1			999	
-Con C¸-Eo (§á)	0	120	127	0	0		0;127							1	1	2		\image\item\ornament\back2Óã02a1.spr	\image\item\ornament\back2Óã02a0.spr	Con c¸ ®­a Phóc, n¨m n¨m co tµi!		ThÇn bİ		1	2	1			999	
-Con C¸-Eo (§á)	0	120	128	0	0		0;128							1	2	3		\image\item\ornament\back2Óã02a1.spr	\image\item\ornament\back2Óã02a0.spr	Con c¸ ®­a Phóc, n¨m n¨m co tµi!		ThÇn bİ		1	2	1			999	
-Con C¸-Eo (§á)	0	120	129	0	0		0;129							1	2	4		\image\item\ornament\back2Óã02a1.spr	\image\item\ornament\back2Óã02a0.spr	Con c¸ ®­a Phóc, n¨m n¨m co tµi!		ThÇn bİ		1	2	1			999	
-Con C¸-L­ng (§á)	0	120	130	0	0		0;130							1	1	1		\image\item\ornament\back2Óã02a1.spr	\image\item\ornament\back2Óã02a0.spr	Con c¸ ®­a Phóc, n¨m n¨m co tµi!		ThÇn bİ		1	2	1			999	
-Con C¸-L­ng (§á)	0	120	131	0	0		0;131							1	1	2		\image\item\ornament\back2Óã02a1.spr	\image\item\ornament\back2Óã02a0.spr	Con c¸ ®­a Phóc, n¨m n¨m co tµi!		ThÇn bİ		1	2	1			999	
-Con C¸-L­ng (§á)	0	120	132	0	0		0;132							1	2	3		\image\item\ornament\back2Óã02a1.spr	\image\item\ornament\back2Óã02a0.spr	Con c¸ ®­a Phóc, n¨m n¨m co tµi!		ThÇn bİ		1	2	1			999	
-Con C¸-L­ng (§á)	0	120	133	0	0		0;133							1	2	4		\image\item\ornament\back2Óã02a1.spr	\image\item\ornament\back2Óã02a0.spr	Con c¸ ®­a Phóc, n¨m n¨m co tµi!		ThÇn bİ		1	2	1			999	
-Nh¸nh §µo T­¬i	0	120	134	0	0		0;134							1	1	1		\image\item\ornament\ÌÒ»¨Ö¦a1.spr	\image\item\ornament\ÌÒ»¨Ö¦a0.spr	Nh¸nh ®µo sinh t­¬i, nh­ mü nh©n sinh ®Ñp.		ThÇn bİ		1	2	1			999	
-Nh¸nh §µo T­¬i	0	120	135	0	0		0;135							1	1	2		\image\item\ornament\ÌÒ»¨Ö¦a1.spr	\image\item\ornament\ÌÒ»¨Ö¦a0.spr	Nh¸nh ®µo sinh t­¬i, nh­ mü nh©n sinh ®Ñp.		ThÇn bİ		1	2	1			999	
-Nh¸nh §µo T­¬i	0	120	136	0	0		0;136							1	2	3		\image\item\ornament\ÌÒ»¨Ö¦a1.spr	\image\item\ornament\ÌÒ»¨Ö¦a0.spr	Nh¸nh ®µo sinh t­¬i, nh­ mü nh©n sinh ®Ñp.		ThÇn bİ		1	2	1			999	
-Nh¸nh §µo T­¬i	0	120	137	0	0		0;137							1	2	4		\image\item\ornament\ÌÒ»¨Ö¦a1.spr	\image\item\ornament\ÌÒ»¨Ö¦a0.spr	Nh¸nh ®µo sinh t­¬i, nh­ mü nh©n sinh ®Ñp.		ThÇn bİ		1	2	1			999	
+Fish Pendant (Red)	0	120	126	0	0		0;126							1	1	1		\image\item\ornament\back2Óã02a1.spr	\image\item\ornament\back2Óã02a0.spr	Con c¸ ®­a Phóc, n¨m n¨m co tµi!		ThÇn bİ		1	2	1			999	
+Fish Pendant (Red)	0	120	127	0	0		0;127							1	1	2		\image\item\ornament\back2Óã02a1.spr	\image\item\ornament\back2Óã02a0.spr	Con c¸ ®­a Phóc, n¨m n¨m co tµi!		ThÇn bİ		1	2	1			999	
+Fish Pendant (Red)	0	120	128	0	0		0;128							1	2	3		\image\item\ornament\back2Óã02a1.spr	\image\item\ornament\back2Óã02a0.spr	Con c¸ ®­a Phóc, n¨m n¨m co tµi!		ThÇn bİ		1	2	1			999	
+Fish Pendant (Red)	0	120	129	0	0		0;129							1	2	4		\image\item\ornament\back2Óã02a1.spr	\image\item\ornament\back2Óã02a0.spr	Con c¸ ®­a Phóc, n¨m n¨m co tµi!		ThÇn bİ		1	2	1			999	
+Fish Charm (Red)	0	120	130	0	0		0;130							1	1	1		\image\item\ornament\back2Óã02a1.spr	\image\item\ornament\back2Óã02a0.spr	Con c¸ ®­a Phóc, n¨m n¨m co tµi!		ThÇn bİ		1	2	1			999	
+Fish Charm (Red)	0	120	131	0	0		0;131							1	1	2		\image\item\ornament\back2Óã02a1.spr	\image\item\ornament\back2Óã02a0.spr	Con c¸ ®­a Phóc, n¨m n¨m co tµi!		ThÇn bİ		1	2	1			999	
+Fish Charm (Red)	0	120	132	0	0		0;132							1	2	3		\image\item\ornament\back2Óã02a1.spr	\image\item\ornament\back2Óã02a0.spr	Con c¸ ®­a Phóc, n¨m n¨m co tµi!		ThÇn bİ		1	2	1			999	
+Fish Charm (Red)	0	120	133	0	0		0;133							1	2	4		\image\item\ornament\back2Óã02a1.spr	\image\item\ornament\back2Óã02a0.spr	Con c¸ ®­a Phóc, n¨m n¨m co tµi!		ThÇn bİ		1	2	1			999	
+Fresh Peach Branch	0	120	134	0	0		0;134							1	1	1		\image\item\ornament\ÌÒ»¨Ö¦a1.spr	\image\item\ornament\ÌÒ»¨Ö¦a0.spr	Nh¸nh ®µo sinh t­¬i, nh­ mü nh©n sinh ®Ñp.		ThÇn bİ		1	2	1			999	
+Fresh Peach Branch	0	120	135	0	0		0;135							1	1	2		\image\item\ornament\ÌÒ»¨Ö¦a1.spr	\image\item\ornament\ÌÒ»¨Ö¦a0.spr	Nh¸nh ®µo sinh t­¬i, nh­ mü nh©n sinh ®Ñp.		ThÇn bİ		1	2	1			999	
+Fresh Peach Branch	0	120	136	0	0		0;136							1	2	3		\image\item\ornament\ÌÒ»¨Ö¦a1.spr	\image\item\ornament\ÌÒ»¨Ö¦a0.spr	Nh¸nh ®µo sinh t­¬i, nh­ mü nh©n sinh ®Ñp.		ThÇn bİ		1	2	1			999	
+Fresh Peach Branch	0	120	137	0	0		0;137							1	2	4		\image\item\ornament\ÌÒ»¨Ö¦a1.spr	\image\item\ornament\ÌÒ»¨Ö¦a0.spr	Nh¸nh ®µo sinh t­¬i, nh­ mü nh©n sinh ®Ñp.		ThÇn bİ		1	2	1			999	
 HuyÕt NhiÔm S¬n Hµ	0	120	138	0	0		0;138							1	1	1		\image\item\ornament\Å£½Ç1a1.spr	\image\item\ornament\Å£½Ç1a0.spr	S­¬ng thiªn hiÓu gi¸c v¨n thanh xø, huyÕt nhiÔm s¬n hµ xİch viªm kiÕp.		ThÇn bİ		1	2	1			999	
 HuyÕt NhiÔm S¬n Hµ	0	120	139	0	0		0;139							1	1	2		\image\item\ornament\Å£½Ç1a1.spr	\image\item\ornament\Å£½Ç1a0.spr	S­¬ng thiªn hiÓu gi¸c v¨n thanh xø, huyÕt nhiÔm s¬n hµ xİch viªm kiÕp.		ThÇn bİ		1	2	1			999	
 HuyÕt NhiÔm S¬n Hµ	0	120	140	0	0		0;140							1	2	3		\image\item\ornament\Å£½Ç1a1.spr	\image\item\ornament\Å£½Ç1a0.spr	S­¬ng thiªn hiÓu gi¸c v¨n thanh xø, huyÕt nhiÔm s¬n hµ xİch viªm kiÕp.		ThÇn bİ		1	2	1			999	
@@ -273,10 +273,10 @@ Bóp Bª H¹nh Phóc (Lam)	0	120	174	0	0		0;174							1	1	1		\image\item\ornament\ba
 Bóp Bª H¹nh Phóc (Lam)	0	120	175	0	0		0;175							1	1	2		\image\item\ornament\backÍŞÍŞ04a1.spr	\image\item\ornament\backÍŞÍŞ04a0.spr	Nghe nãi cã thÓ ®em ®Õn Bóp Bª H¹nh Phóc, ®­îc lµm tõ b«ng, rÊt hiÕm thÊy. Vèn cã 1 cÆp, giê mét con kh«ng râ tung tİch.		ThÇn bİ		1	2	1			999	
 Bóp Bª H¹nh Phóc (Lam)	0	120	176	0	0		0;176							1	2	3		\image\item\ornament\backÍŞÍŞ04a1.spr	\image\item\ornament\backÍŞÍŞ04a0.spr	Nghe nãi cã thÓ ®em ®Õn Bóp Bª H¹nh Phóc, ®­îc lµm tõ b«ng, rÊt hiÕm thÊy. Vèn cã 1 cÆp, giê mét con kh«ng râ tung tİch.		ThÇn bİ		1	2	1			999	
 Bóp Bª H¹nh Phóc (Lam)	0	120	177	0	0		0;177							1	2	4		\image\item\ornament\backÍŞÍŞ04a1.spr	\image\item\ornament\backÍŞÍŞ04a0.spr	Nghe nãi cã thÓ ®em ®Õn Bóp Bª H¹nh Phóc, ®­îc lµm tõ b«ng, rÊt hiÕm thÊy. Vèn cã 1 cÆp, giê mét con kh«ng râ tung tİch.		ThÇn bİ		1	2	1			999	
-Tú Bµ	0	120	178	0	0		0;178							1	1	1		\image\item\ornament\ÅıÅÃ02ca1.spr	\image\item\ornament\ÅıÅÃ02ca0.spr	mét c¸i B× Bµ, nöa khóc t­¬ng t­.		ThÇn bİ		9	2	1			999	
-Tú Bµ	0	120	179	0	0		0;179							1	1	2		\image\item\ornament\ÅıÅÃ02ca1.spr	\image\item\ornament\ÅıÅÃ02ca0.spr	mét c¸i B× Bµ, nöa khóc t­¬ng t­.		ThÇn bİ		9	2	1			999	
-Tú Bµ	0	120	180	0	0		0;180							1	2	3		\image\item\ornament\ÅıÅÃ02ca1.spr	\image\item\ornament\ÅıÅÃ02ca0.spr	mét c¸i B× Bµ, nöa khóc t­¬ng t­.		ThÇn bİ		9	2	1			999	
-Tú Bµ	0	120	181	0	0		0;181							1	2	4		\image\item\ornament\ÅıÅÃ02ca1.spr	\image\item\ornament\ÅıÅÃ02ca0.spr	mét c¸i B× Bµ, nöa khóc t­¬ng t­.		ThÇn bİ		9	2	1			999	
+Tu Ba	0	120	178	0	0		0;178							1	1	1		\image\item\ornament\ÅıÅÃ02ca1.spr	\image\item\ornament\ÅıÅÃ02ca0.spr	mét c¸i B× Bµ, nöa khóc t­¬ng t­.		ThÇn bİ		9	2	1			999	
+Tu Ba	0	120	179	0	0		0;179							1	1	2		\image\item\ornament\ÅıÅÃ02ca1.spr	\image\item\ornament\ÅıÅÃ02ca0.spr	mét c¸i B× Bµ, nöa khóc t­¬ng t­.		ThÇn bİ		9	2	1			999	
+Tu Ba	0	120	180	0	0		0;180							1	2	3		\image\item\ornament\ÅıÅÃ02ca1.spr	\image\item\ornament\ÅıÅÃ02ca0.spr	mét c¸i B× Bµ, nöa khóc t­¬ng t­.		ThÇn bİ		9	2	1			999	
+Tu Ba	0	120	181	0	0		0;181							1	2	4		\image\item\ornament\ÅıÅÃ02ca1.spr	\image\item\ornament\ÅıÅÃ02ca0.spr	mét c¸i B× Bµ, nöa khóc t­¬ng t­.		ThÇn bİ		9	2	1			999	
 Anh Hïng KiÕm (Tİm)	0	120	182	0	0		0;182							1	1	1		\image\item\ornament\Ë«½£ca1.spr	\image\item\ornament\Ë«½£ca0.spr	¤m kiÕm ®îi chê n¬i biªn thµnh.		ThÇn bİ		9	2	1			999	
 Anh Hïng KiÕm (Tİm)	0	120	183	0	0		0;183							1	1	2		\image\item\ornament\Ë«½£ca1.spr	\image\item\ornament\Ë«½£ca0.spr	¤m kiÕm ®îi chê n¬i biªn thµnh.		ThÇn bİ		9	2	1			999	
 Anh Hïng KiÕm (Tİm)	0	120	184	0	0		0;184							1	2	3		\image\item\ornament\Ë«½£ca1.spr	\image\item\ornament\Ë«½£ca0.spr	¤m kiÕm ®îi chê n¬i biªn thµnh.		ThÇn bİ		9	2	1			999	
@@ -438,10 +438,10 @@ TuÕ	0	121	251				185;186							1	1	1		\image\item\ornament\ÃÎ»¨»ğ½ğ½Å²¿¹Ò¼şa1.sp
 TuÕ	0	121	252				187;188							1	1	2		\image\item\ornament\ÃÎ»¨»ğ½ğ½Å²¿¹Ò¼şa1.spr	\image\item\ornament\ÃÎ»¨»ğ½ğ½Å²¿¹Ò¼şa0.spr	Gia héi t¹i nan ngé, tam t¶i vŞ thiªn thu.		ThÇn bİ		1	2	1			999	
 TuÕ	0	121	253				189;190							1	2	3		\image\item\ornament\ÃÎ»¨»ğ½ğ½Å²¿¹Ò¼şa1.spr	\image\item\ornament\ÃÎ»¨»ğ½ğ½Å²¿¹Ò¼şa0.spr	Gia héi t¹i nan ngé, tam t¶i vŞ thiªn thu.		ThÇn bİ		1	2	1			999	
 TuÕ	0	121	254				191;192							1	2	4		\image\item\ornament\ÃÎ»¨»ğ½ğ½Å²¿¹Ò¼şa1.spr	\image\item\ornament\ÃÎ»¨»ğ½ğ½Å²¿¹Ò¼şa0.spr	Gia héi t¹i nan ngé, tam t¶i vŞ thiªn thu.		ThÇn bİ		1	2	1			999	
-Chim B¨ng	0	120	255	0	0		0;255							1	1	1		\image\item\ornament\±ùÄña1.spr	\image\item\ornament\±ùÄña0.spr	CÈn thËn nh­ kh¸ch, tù nhiªn nh­ n­íc		ThÇn bİ		1	2	1			999	
-Chim B¨ng	0	120	256	0	0		0;256							1	1	2		\image\item\ornament\±ùÄña1.spr	\image\item\ornament\±ùÄña0.spr	CÈn thËn nh­ kh¸ch, tù nhiªn nh­ n­íc		ThÇn bİ		1	2	1			999	
-Chim B¨ng	0	120	257	0	0		0;257							1	2	3		\image\item\ornament\±ùÄña1.spr	\image\item\ornament\±ùÄña0.spr	CÈn thËn nh­ kh¸ch, tù nhiªn nh­ n­íc		ThÇn bİ		1	2	1			999	
-Chim B¨ng	0	120	258	0	0		0;258							1	2	4		\image\item\ornament\±ùÄña1.spr	\image\item\ornament\±ùÄña0.spr	CÈn thËn nh­ kh¸ch, tù nhiªn nh­ n­íc		ThÇn bİ		1	2	1			999	
+Roc Bird	0	120	255	0	0		0;255							1	1	1		\image\item\ornament\±ùÄña1.spr	\image\item\ornament\±ùÄña0.spr	CÈn thËn nh­ kh¸ch, tù nhiªn nh­ n­íc		ThÇn bİ		1	2	1			999	
+Roc Bird	0	120	256	0	0		0;256							1	1	2		\image\item\ornament\±ùÄña1.spr	\image\item\ornament\±ùÄña0.spr	CÈn thËn nh­ kh¸ch, tù nhiªn nh­ n­íc		ThÇn bİ		1	2	1			999	
+Roc Bird	0	120	257	0	0		0;257							1	2	3		\image\item\ornament\±ùÄña1.spr	\image\item\ornament\±ùÄña0.spr	CÈn thËn nh­ kh¸ch, tù nhiªn nh­ n­íc		ThÇn bİ		1	2	1			999	
+Roc Bird	0	120	258	0	0		0;258							1	2	4		\image\item\ornament\±ùÄña1.spr	\image\item\ornament\±ùÄña0.spr	CÈn thËn nh­ kh¸ch, tù nhiªn nh­ n­íc		ThÇn bİ		1	2	1			999	
 Song Phi YÕn	0	120	259	0	0		0;259							1	1	1		\image\item\ornament\±ùÄña1.spr	\image\item\ornament\±ùÄña0.spr	CÈn thËn nh­ kh¸ch, tù nhiªn nh­ n­íc		ThÇn bİ		1	2	1			999	
 Song Phi YÕn	0	120	260	0	0		0;260							1	1	2		\image\item\ornament\±ùÄña1.spr	\image\item\ornament\±ùÄña0.spr	CÈn thËn nh­ kh¸ch, tù nhiªn nh­ n­íc		ThÇn bİ		1	2	1			999	
 Song Phi YÕn	0	120	261	0	0		0;261							1	2	3		\image\item\ornament\±ùÄña1.spr	\image\item\ornament\±ùÄña0.spr	CÈn thËn nh­ kh¸ch, tù nhiªn nh­ n­íc		ThÇn bİ		1	2	1			999	
@@ -482,18 +482,18 @@ Hµnh	0	121	275				201;202							1	1	1		\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿a1.spr	\im
 Hµnh	0	121	276				203;204							1	1	2		\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿a1.spr	\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿a0.spr	S­¬ng mï che lèi, ¸nh tr¨ng mê ¶o.		ThÇn bİ		1	2	1			999	
 Hµnh	0	121	277				205;206							1	2	3		\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿a1.spr	\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿a0.spr	S­¬ng mï che lèi, ¸nh tr¨ng mê ¶o.		ThÇn bİ		1	2	1			999	
 Hµnh	0	121	278				207;208							1	2	4		\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿a1.spr	\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿a0.spr	S­¬ng mï che lèi, ¸nh tr¨ng mê ¶o.		ThÇn bİ		1	2	1			999	
-Quı	0	119	279	0	0		209;210							1	1	1		\image\item\ornament\Ì¤É¯ĞĞ¼ç²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞ¼ç²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
-Quı	0	119	280	0	0		211;212							1	1	2		\image\item\ornament\Ì¤É¯ĞĞ¼ç²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞ¼ç²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
-Quı	0	119	281	0	0		213;214							1	2	3		\image\item\ornament\Ì¤É¯ĞĞ¼ç²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞ¼ç²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
-Quı	0	119	282	0	0		215;216							1	2	4		\image\item\ornament\Ì¤É¯ĞĞ¼ç²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞ¼ç²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
-Cµnh	0	120	283	0	0		0;283							1	1	1		\image\item\ornament\Ì¤É¯ĞĞ±³²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞ±³²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
-Cµnh	0	120	284	0	0		0;284							1	1	2		\image\item\ornament\Ì¤É¯ĞĞ±³²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞ±³²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
-Cµnh	0	120	285	0	0		0;285							1	2	3		\image\item\ornament\Ì¤É¯ĞĞ±³²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞ±³²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
-Cµnh	0	120	286	0	0		0;286							1	2	4		\image\item\ornament\Ì¤É¯ĞĞ±³²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞ±³²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
-H­¬ng	0	121	279	0	0		209;210							1	1	1		\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
-H­¬ng	0	121	280	0	0		211;212							1	1	2		\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
-H­¬ng	0	121	281	0	0		213;214							1	2	3		\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
-H­¬ng	0	121	282	0	0		215;216							1	2	4		\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
+Gui	0	119	279	0	0		209;210							1	1	1		\image\item\ornament\Ì¤É¯ĞĞ¼ç²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞ¼ç²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
+Gui	0	119	280	0	0		211;212							1	1	2		\image\item\ornament\Ì¤É¯ĞĞ¼ç²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞ¼ç²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
+Gui	0	119	281	0	0		213;214							1	2	3		\image\item\ornament\Ì¤É¯ĞĞ¼ç²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞ¼ç²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
+Gui	0	119	282	0	0		215;216							1	2	4		\image\item\ornament\Ì¤É¯ĞĞ¼ç²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞ¼ç²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
+Branch	0	120	283	0	0		0;283							1	1	1		\image\item\ornament\Ì¤É¯ĞĞ±³²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞ±³²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
+Branch	0	120	284	0	0		0;284							1	1	2		\image\item\ornament\Ì¤É¯ĞĞ±³²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞ±³²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
+Branch	0	120	285	0	0		0;285							1	2	3		\image\item\ornament\Ì¤É¯ĞĞ±³²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞ±³²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
+Branch	0	120	286	0	0		0;286							1	2	4		\image\item\ornament\Ì¤É¯ĞĞ±³²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞ±³²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
+Xiang	0	121	279	0	0		209;210							1	1	1		\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
+Xiang	0	121	280	0	0		211;212							1	1	2		\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
+Xiang	0	121	281	0	0		213;214							1	2	3		\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
+Xiang	0	121	282	0	0		215;216							1	2	4		\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿³Èa1.spr	\image\item\ornament\Ì¤É¯ĞĞÍÈ²¿³Èa0.spr	Tinh Hµ Lé Khëi		ThÇn bİ		1	2	1			999	
 Bå	0	119	287				217;218							1	1	1		\image\item\ornament\±³²¿¹Ò¼şÒøa1.spr	\image\item\ornament\±³²¿¹Ò¼şÒøa0.spr	Mïa thu l¸ r¬i vµng tr­íc ngâ.		ThÇn bİ		1	2	1			999	
 Bå	0	119	288				219;220							1	1	2		\image\item\ornament\±³²¿¹Ò¼şÒøa1.spr	\image\item\ornament\±³²¿¹Ò¼şÒøa0.spr	Mïa thu l¸ r¬i vµng tr­íc ngâ.		ThÇn bİ		1	2	1			999	
 Bå	0	119	289				221;222							1	2	3		\image\item\ornament\±³²¿¹Ò¼şÒøa1.spr	\image\item\ornament\±³²¿¹Ò¼şÒøa0.spr	Mïa thu l¸ r¬i vµng tr­íc ngâ.		ThÇn bİ		1	2	1			999	
@@ -506,10 +506,10 @@ Man	0	121	287				217;218							1	1	1		\image\item\ornament\ÍÈ²¿¹Ò¼şÒøa1.spr	\ima
 Man	0	121	288				219;220							1	1	2		\image\item\ornament\ÍÈ²¿¹Ò¼şÒøa1.spr	\image\item\ornament\ÍÈ²¿¹Ò¼şÒøa0.spr	Mïa thu l¸ r¬i vµng tr­íc ngâ.		ThÇn bİ		1	2	1			999	
 Man	0	121	289				221;222							1	2	3		\image\item\ornament\ÍÈ²¿¹Ò¼şÒøa1.spr	\image\item\ornament\ÍÈ²¿¹Ò¼şÒøa0.spr	Mïa thu l¸ r¬i vµng tr­íc ngâ.		ThÇn bİ		1	2	1			999	
 Man	0	121	290				223;224							1	2	4		\image\item\ornament\ÍÈ²¿¹Ò¼şÒøa1.spr	\image\item\ornament\ÍÈ²¿¹Ò¼şÒøa0.spr	Mïa thu l¸ r¬i vµng tr­íc ngâ.		ThÇn bİ		1	2	1			999	
-T©y 	0	120	291				0;291							1	1	1		\image\item\ornament\±ù»¨±³²¿36.spr	\image\item\ornament\±ù»¨±³²¿120.spr	¸nh tr¨ng soi khung cöa sæ, tiÕng ve r©m ran kh¾p chèn.		ThÇn bİ		1	2	1			999	
-T©y 	0	120	292				0;292							1	1	2		\image\item\ornament\±ù»¨±³²¿36.spr	\image\item\ornament\±ù»¨±³²¿120.spr	¸nh tr¨ng soi khung cöa sæ, tiÕng ve r©m ran kh¾p chèn.		ThÇn bİ		1	2	1			999	
-T©y 	0	120	293				0;293							1	2	3		\image\item\ornament\±ù»¨±³²¿36.spr	\image\item\ornament\±ù»¨±³²¿120.spr	¸nh tr¨ng soi khung cöa sæ, tiÕng ve r©m ran kh¾p chèn.		ThÇn bİ		1	2	1			999	
-T©y 	0	120	294				0;294							1	2	4		\image\item\ornament\±ù»¨±³²¿36.spr	\image\item\ornament\±ù»¨±³²¿120.spr	¸nh tr¨ng soi khung cöa sæ, tiÕng ve r©m ran kh¾p chèn.		ThÇn bİ		1	2	1			999	
+West	0	120	291				0;291							1	1	1		\image\item\ornament\±ù»¨±³²¿36.spr	\image\item\ornament\±ù»¨±³²¿120.spr	¸nh tr¨ng soi khung cöa sæ, tiÕng ve r©m ran kh¾p chèn.		ThÇn bİ		1	2	1			999	
+West	0	120	292				0;292							1	1	2		\image\item\ornament\±ù»¨±³²¿36.spr	\image\item\ornament\±ù»¨±³²¿120.spr	¸nh tr¨ng soi khung cöa sæ, tiÕng ve r©m ran kh¾p chèn.		ThÇn bİ		1	2	1			999	
+West	0	120	293				0;293							1	2	3		\image\item\ornament\±ù»¨±³²¿36.spr	\image\item\ornament\±ù»¨±³²¿120.spr	¸nh tr¨ng soi khung cöa sæ, tiÕng ve r©m ran kh¾p chèn.		ThÇn bİ		1	2	1			999	
+West	0	120	294				0;294							1	2	4		\image\item\ornament\±ù»¨±³²¿36.spr	\image\item\ornament\±ù»¨±³²¿120.spr	¸nh tr¨ng soi khung cöa sæ, tiÕng ve r©m ran kh¾p chèn.		ThÇn bİ		1	2	1			999	
 Giang	0	119	291				225;226							1	1	1		\image\item\ornament\±ù»¨¼ç²¿36.spr	\image\item\ornament\±ù»¨¼ç²¿120.spr	¸nh tr¨ng soi khung cöa sæ, tiÕng ve r©m ran kh¾p chèn.		ThÇn bİ		1	2	1			999	
 Giang	0	119	292				227;228							1	1	2		\image\item\ornament\±ù»¨¼ç²¿36.spr	\image\item\ornament\±ù»¨¼ç²¿120.spr	¸nh tr¨ng soi khung cöa sæ, tiÕng ve r©m ran kh¾p chèn.		ThÇn bİ		1	2	1			999	
 Giang	0	119	293				229;230							1	2	3		\image\item\ornament\±ù»¨¼ç²¿36.spr	\image\item\ornament\±ù»¨¼ç²¿120.spr	¸nh tr¨ng soi khung cöa sæ, tiÕng ve r©m ran kh¾p chèn.		ThÇn bİ		1	2	1			999	
@@ -526,18 +526,18 @@ L©u	0	119	295				233;234							1	1	1		\image\item\ornament\±³²¿¹Ò¼ş½ğa1.spr	\ima
 L©u	0	119	296				235;236							1	1	2		\image\item\ornament\±³²¿¹Ò¼ş½ğa1.spr	\image\item\ornament\±³²¿¹Ò¼ş½ğa0.spr	Giã xu©n vi vu, hoa bay kh¾p thµnh.		ThÇn bİ		1	2	1			999	
 L©u	0	119	297				237;238							1	2	3		\image\item\ornament\±³²¿¹Ò¼ş½ğa1.spr	\image\item\ornament\±³²¿¹Ò¼ş½ğa0.spr	Giã xu©n vi vu, hoa bay kh¾p thµnh.		ThÇn bİ		1	2	1			999	
 L©u	0	119	298				239;240							1	2	4		\image\item\ornament\±³²¿¹Ò¼ş½ğa1.spr	\image\item\ornament\±³²¿¹Ò¼ş½ğa0.spr	Giã xu©n vi vu, hoa bay kh¾p thµnh.		ThÇn bİ		1	2	1			999	
-Xu©n	0	121	295				233;234							1	1	1		\image\item\ornament\ÍÈ²¿¹Ò¼ş½ğa1.spr	\image\item\ornament\ÍÈ²¿¹Ò¼ş½ğa0.spr	Giã xu©n vi vu, hoa bay kh¾p thµnh.		ThÇn bİ		1	2	1			999	
-Xu©n	0	121	296				235;236							1	1	2		\image\item\ornament\ÍÈ²¿¹Ò¼ş½ğa1.spr	\image\item\ornament\ÍÈ²¿¹Ò¼ş½ğa0.spr	Giã xu©n vi vu, hoa bay kh¾p thµnh.		ThÇn bİ		1	2	1			999	
-Xu©n	0	121	297				237;238							1	2	3		\image\item\ornament\ÍÈ²¿¹Ò¼ş½ğa1.spr	\image\item\ornament\ÍÈ²¿¹Ò¼ş½ğa0.spr	Giã xu©n vi vu, hoa bay kh¾p thµnh.		ThÇn bİ		1	2	1			999	
-Xu©n	0	121	298				239;240							1	2	4		\image\item\ornament\ÍÈ²¿¹Ò¼ş½ğa1.spr	\image\item\ornament\ÍÈ²¿¹Ò¼ş½ğa0.spr	Giã xu©n vi vu, hoa bay kh¾p thµnh.		ThÇn bİ		1	2	1			999	
-Hµn	0	120	299				0;299							1	1	1		\image\item\ornament\º®ÌÁÑã³Ù±³²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù±³²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
-Hµn	0	120	300				0;300							1	1	2		\image\item\ornament\º®ÌÁÑã³Ù±³²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù±³²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
-Hµn	0	120	301				0;301							1	2	3		\image\item\ornament\º®ÌÁÑã³Ù±³²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù±³²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
-Hµn	0	120	302				0;302							1	2	4		\image\item\ornament\º®ÌÁÑã³Ù±³²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù±³²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
-§­êng	0	119	299				241;242							1	1	1		\image\item\ornament\º®ÌÁÑã³Ù¼ç²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù¼ç²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
-§­êng	0	119	300				243;244							1	1	2		\image\item\ornament\º®ÌÁÑã³Ù¼ç²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù¼ç²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
-§­êng	0	119	301				245;246							1	2	3		\image\item\ornament\º®ÌÁÑã³Ù¼ç²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù¼ç²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
-§­êng	0	119	302				247;248							1	2	4		\image\item\ornament\º®ÌÁÑã³Ù¼ç²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù¼ç²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
+Chun	0	121	295				233;234							1	1	1		\image\item\ornament\ÍÈ²¿¹Ò¼ş½ğa1.spr	\image\item\ornament\ÍÈ²¿¹Ò¼ş½ğa0.spr	Giã xu©n vi vu, hoa bay kh¾p thµnh.		ThÇn bİ		1	2	1			999	
+Chun	0	121	296				235;236							1	1	2		\image\item\ornament\ÍÈ²¿¹Ò¼ş½ğa1.spr	\image\item\ornament\ÍÈ²¿¹Ò¼ş½ğa0.spr	Giã xu©n vi vu, hoa bay kh¾p thµnh.		ThÇn bİ		1	2	1			999	
+Chun	0	121	297				237;238							1	2	3		\image\item\ornament\ÍÈ²¿¹Ò¼ş½ğa1.spr	\image\item\ornament\ÍÈ²¿¹Ò¼ş½ğa0.spr	Giã xu©n vi vu, hoa bay kh¾p thµnh.		ThÇn bİ		1	2	1			999	
+Chun	0	121	298				239;240							1	2	4		\image\item\ornament\ÍÈ²¿¹Ò¼ş½ğa1.spr	\image\item\ornament\ÍÈ²¿¹Ò¼ş½ğa0.spr	Giã xu©n vi vu, hoa bay kh¾p thµnh.		ThÇn bİ		1	2	1			999	
+Han	0	120	299				0;299							1	1	1		\image\item\ornament\º®ÌÁÑã³Ù±³²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù±³²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
+Han	0	120	300				0;300							1	1	2		\image\item\ornament\º®ÌÁÑã³Ù±³²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù±³²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
+Han	0	120	301				0;301							1	2	3		\image\item\ornament\º®ÌÁÑã³Ù±³²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù±³²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
+Han	0	120	302				0;302							1	2	4		\image\item\ornament\º®ÌÁÑã³Ù±³²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù±³²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
+Tang	0	119	299				241;242							1	1	1		\image\item\ornament\º®ÌÁÑã³Ù¼ç²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù¼ç²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
+Tang	0	119	300				243;244							1	1	2		\image\item\ornament\º®ÌÁÑã³Ù¼ç²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù¼ç²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
+Tang	0	119	301				245;246							1	2	3		\image\item\ornament\º®ÌÁÑã³Ù¼ç²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù¼ç²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
+Tang	0	119	302				247;248							1	2	4		\image\item\ornament\º®ÌÁÑã³Ù¼ç²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù¼ç²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
 Nh¹n	0	121	299				241;242							1	1	1		\image\item\ornament\º®ÌÁÑã³Ù½Å²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù½Å²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
 Nh¹n	0	121	300				243;244							1	1	2		\image\item\ornament\º®ÌÁÑã³Ù½Å²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù½Å²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
 Nh¹n	0	121	301				245;246							1	2	3		\image\item\ornament\º®ÌÁÑã³Ù½Å²¿À¶a1.spr	\image\item\ornament\º®ÌÁÑã³Ù½Å²¿À¶a0.spr	Thu qua ®«ng tíi, cho lßng hiu qu¹nh.		ThÇn bİ		1	2	1			999	
@@ -562,18 +562,18 @@ Thanh	0	119	307				0;257							1	1	1		\image\item\ornament\ÃÎ»¨»ğ¼ç²¿ÂÌa1.spr	\i
 Thanh	0	119	308				0;258							1	1	2		\image\item\ornament\ÃÎ»¨»ğ¼ç²¿ÂÌa1.spr	\image\item\ornament\ÃÎ»¨»ğ¼ç²¿ÂÌa0.spr	Ng­êi giê tr«i d¹t ph­¬ng nµo.		ThÇn bİ		1	2	1			999	
 Thanh	0	119	309				0;259							1	2	3		\image\item\ornament\ÃÎ»¨»ğ¼ç²¿ÂÌa1.spr	\image\item\ornament\ÃÎ»¨»ğ¼ç²¿ÂÌa0.spr	Ng­êi giê tr«i d¹t ph­¬ng nµo.		ThÇn bİ		1	2	1			999	
 Thanh	0	119	310				0;260							1	2	4		\image\item\ornament\ÃÎ»¨»ğ¼ç²¿ÂÌa1.spr	\image\item\ornament\ÃÎ»¨»ğ¼ç²¿ÂÌa0.spr	Ng­êi giê tr«i d¹t ph­¬ng nµo.		ThÇn bİ		1	2	1			999	
-B»ng	0	120	311				0;311							1	1	1		\image\item\ornament\ÃÎ»¨»ğ±³²¿ÂÌa1.spr	\image\item\ornament\ÃÎ»¨»ğ±³²¿ÂÌa0.spr	Ng­êi giê tr«i d¹t ph­¬ng nµo.		ThÇn bİ		1	2	1			999	
-B»ng	0	120	312				0;312							1	1	2		\image\item\ornament\ÃÎ»¨»ğ±³²¿ÂÌa1.spr	\image\item\ornament\ÃÎ»¨»ğ±³²¿ÂÌa0.spr	Ng­êi giê tr«i d¹t ph­¬ng nµo.		ThÇn bİ		1	2	1			999	
-B»ng	0	120	313				0;313							1	2	3		\image\item\ornament\ÃÎ»¨»ğ±³²¿ÂÌa1.spr	\image\item\ornament\ÃÎ»¨»ğ±³²¿ÂÌa0.spr	Ng­êi giê tr«i d¹t ph­¬ng nµo.		ThÇn bİ		1	2	1			999	
-B»ng	0	120	314				0;314							1	2	4		\image\item\ornament\ÃÎ»¨»ğ±³²¿ÂÌa1.spr	\image\item\ornament\ÃÎ»¨»ğ±³²¿ÂÌa0.spr	Ng­êi giê tr«i d¹t ph­¬ng nµo.		ThÇn bİ		1	2	1			999	
+Peng	0	120	311				0;311							1	1	1		\image\item\ornament\ÃÎ»¨»ğ±³²¿ÂÌa1.spr	\image\item\ornament\ÃÎ»¨»ğ±³²¿ÂÌa0.spr	Ng­êi giê tr«i d¹t ph­¬ng nµo.		ThÇn bİ		1	2	1			999	
+Peng	0	120	312				0;312							1	1	2		\image\item\ornament\ÃÎ»¨»ğ±³²¿ÂÌa1.spr	\image\item\ornament\ÃÎ»¨»ğ±³²¿ÂÌa0.spr	Ng­êi giê tr«i d¹t ph­¬ng nµo.		ThÇn bİ		1	2	1			999	
+Peng	0	120	313				0;313							1	2	3		\image\item\ornament\ÃÎ»¨»ğ±³²¿ÂÌa1.spr	\image\item\ornament\ÃÎ»¨»ğ±³²¿ÂÌa0.spr	Ng­êi giê tr«i d¹t ph­¬ng nµo.		ThÇn bİ		1	2	1			999	
+Peng	0	120	314				0;314							1	2	4		\image\item\ornament\ÃÎ»¨»ğ±³²¿ÂÌa1.spr	\image\item\ornament\ÃÎ»¨»ğ±³²¿ÂÌa0.spr	Ng­êi giê tr«i d¹t ph­¬ng nµo.		ThÇn bİ		1	2	1			999	
 Nh¹c	0	121	307				257;258							1	1	1		\image\item\ornament\ÃÎ»¨»ğ½Å²¿ÂÌa1.spr	\image\item\ornament\ÃÎ»¨»ğ½Å²¿ÂÌa0.spr	Ng­êi giê tr«i d¹t ph­¬ng nµo.		ThÇn bİ		1	2	1			999	
 Nh¹c	0	121	308				259;260							1	1	2		\image\item\ornament\ÃÎ»¨»ğ½Å²¿ÂÌa1.spr	\image\item\ornament\ÃÎ»¨»ğ½Å²¿ÂÌa0.spr	Ng­êi giê tr«i d¹t ph­¬ng nµo.		ThÇn bİ		1	2	1			999	
 Nh¹c	0	121	309				261;262							1	2	3		\image\item\ornament\ÃÎ»¨»ğ½Å²¿ÂÌa1.spr	\image\item\ornament\ÃÎ»¨»ğ½Å²¿ÂÌa0.spr	Ng­êi giê tr«i d¹t ph­¬ng nµo.		ThÇn bİ		1	2	1			999	
 Nh¹c	0	121	310				263;264							1	2	4		\image\item\ornament\ÃÎ»¨»ğ½Å²¿ÂÌa1.spr	\image\item\ornament\ÃÎ»¨»ğ½Å²¿ÂÌa0.spr	Ng­êi giê tr«i d¹t ph­¬ng nµo.		ThÇn bİ		1	2	1			999	
-L©m	0	119	311				0;261							1	1	1		\image\item\ornament\ÃÎ»¨»ğ¼ç²¿À¶a1.spr	\image\item\ornament\ÃÎ»¨»ğ¼ç²¿À¶a0.spr	Hoa ®¬n ®éc bay trong giã.		ThÇn bİ		1	2	1			999	
-L©m	0	119	312				0;262							1	1	2		\image\item\ornament\ÃÎ»¨»ğ¼ç²¿À¶a1.spr	\image\item\ornament\ÃÎ»¨»ğ¼ç²¿À¶a0.spr	Hoa ®¬n ®éc bay trong giã.		ThÇn bİ		1	2	1			999	
-L©m	0	119	313				0;263							1	2	3		\image\item\ornament\ÃÎ»¨»ğ¼ç²¿À¶a1.spr	\image\item\ornament\ÃÎ»¨»ğ¼ç²¿À¶a0.spr	Hoa ®¬n ®éc bay trong giã.		ThÇn bİ		1	2	1			999	
-L©m	0	119	314				0;264							1	2	4		\image\item\ornament\ÃÎ»¨»ğ¼ç²¿À¶a1.spr	\image\item\ornament\ÃÎ»¨»ğ¼ç²¿À¶a0.spr	Hoa ®¬n ®éc bay trong giã.		ThÇn bİ		1	2	1			999	
+Lin	0	119	311				0;261							1	1	1		\image\item\ornament\ÃÎ»¨»ğ¼ç²¿À¶a1.spr	\image\item\ornament\ÃÎ»¨»ğ¼ç²¿À¶a0.spr	Hoa ®¬n ®éc bay trong giã.		ThÇn bİ		1	2	1			999	
+Lin	0	119	312				0;262							1	1	2		\image\item\ornament\ÃÎ»¨»ğ¼ç²¿À¶a1.spr	\image\item\ornament\ÃÎ»¨»ğ¼ç²¿À¶a0.spr	Hoa ®¬n ®éc bay trong giã.		ThÇn bİ		1	2	1			999	
+Lin	0	119	313				0;263							1	2	3		\image\item\ornament\ÃÎ»¨»ğ¼ç²¿À¶a1.spr	\image\item\ornament\ÃÎ»¨»ğ¼ç²¿À¶a0.spr	Hoa ®¬n ®éc bay trong giã.		ThÇn bİ		1	2	1			999	
+Lin	0	119	314				0;264							1	2	4		\image\item\ornament\ÃÎ»¨»ğ¼ç²¿À¶a1.spr	\image\item\ornament\ÃÎ»¨»ğ¼ç²¿À¶a0.spr	Hoa ®¬n ®éc bay trong giã.		ThÇn bİ		1	2	1			999	
 Giang	0	120	315				0;315							1	1	1		\image\item\ornament\ÃÎ»¨»ğ±³²¿À¶a1.spr	\image\item\ornament\ÃÎ»¨»ğ±³²¿À¶a0.spr	Hoa ®¬n ®éc bay trong giã.		ThÇn bİ		1	2	1			999	
 Giang	0	120	316				0;316							1	1	2		\image\item\ornament\ÃÎ»¨»ğ±³²¿À¶a1.spr	\image\item\ornament\ÃÎ»¨»ğ±³²¿À¶a0.spr	Hoa ®¬n ®éc bay trong giã.		ThÇn bİ		1	2	1			999	
 Giang	0	120	317				0;317							1	2	3		\image\item\ornament\ÃÎ»¨»ğ±³²¿À¶a1.spr	\image\item\ornament\ÃÎ»¨»ğ±³²¿À¶a0.spr	Hoa ®¬n ®éc bay trong giã.		ThÇn bİ		1	2	1			999	
@@ -626,10 +626,10 @@ Song	0	120	331				0;331							1	1	1		\image\item\ornament\ÇåãöÕÓ±³²¿µ­Çàa1.spr	\
 Song	0	120	332				0;332							1	1	2		\image\item\ornament\ÇåãöÕÓ±³²¿µ­Çàa1.spr	\image\item\ornament\ÇåãöÕÓ±³²¿µ­Çàa0.spr	§ªm l¹nh n­íc lay liÔu rò, thuyÒn nhá cËp bÕn cÇu son.		ThÇn bİ		1	2	1			999	
 Song	0	120	333				0;333							1	2	3		\image\item\ornament\ÇåãöÕÓ±³²¿µ­Çàa1.spr	\image\item\ornament\ÇåãöÕÓ±³²¿µ­Çàa0.spr	§ªm l¹nh n­íc lay liÔu rò, thuyÒn nhá cËp bÕn cÇu son.		ThÇn bİ		1	2	1			999	
 Song	0	120	334				0;334							1	2	4		\image\item\ornament\ÇåãöÕÓ±³²¿µ­Çàa1.spr	\image\item\ornament\ÇåãöÕÓ±³²¿µ­Çàa0.spr	§ªm l¹nh n­íc lay liÔu rò, thuyÒn nhá cËp bÕn cÇu son.		ThÇn bİ		1	2	1			999	
-Hµn	0	121	331				297;298							1	1	1		\image\item\ornament\ÇåãöÕÓÍÈ²¿µ­Çàa1.spr	\image\item\ornament\ÇåãöÕÓÍÈ²¿µ­Çàa0.spr	Du lŞch trë vÒ, må håi ­ít ®Ém. GiÊc méng t­¬ng t­, thæi s¸o vÏ tranh.		ThÇn bİ		1	2	1			999	
-Hµn	0	121	332				299;300							1	1	2		\image\item\ornament\ÇåãöÕÓÍÈ²¿µ­Çàa1.spr	\image\item\ornament\ÇåãöÕÓÍÈ²¿µ­Çàa0.spr	Du lŞch trë vÒ, må håi ­ít ®Ém. GiÊc méng t­¬ng t­, thæi s¸o vÏ tranh.		ThÇn bİ		1	2	1			999	
-Hµn	0	121	333				301;302							1	2	3		\image\item\ornament\ÇåãöÕÓÍÈ²¿µ­Çàa1.spr	\image\item\ornament\ÇåãöÕÓÍÈ²¿µ­Çàa0.spr	Du lŞch trë vÒ, må håi ­ít ®Ém. GiÊc méng t­¬ng t­, thæi s¸o vÏ tranh.		ThÇn bİ		1	2	1			999	
-Hµn	0	121	334				303;304							1	2	4		\image\item\ornament\ÇåãöÕÓÍÈ²¿µ­Çàa1.spr	\image\item\ornament\ÇåãöÕÓÍÈ²¿µ­Çàa0.spr	Du lŞch trë vÒ, må håi ­ít ®Ém. GiÊc méng t­¬ng t­, thæi s¸o vÏ tranh.		ThÇn bİ		1	2	1			999	
+Han	0	121	331				297;298							1	1	1		\image\item\ornament\ÇåãöÕÓÍÈ²¿µ­Çàa1.spr	\image\item\ornament\ÇåãöÕÓÍÈ²¿µ­Çàa0.spr	Du lŞch trë vÒ, må håi ­ít ®Ém. GiÊc méng t­¬ng t­, thæi s¸o vÏ tranh.		ThÇn bİ		1	2	1			999	
+Han	0	121	332				299;300							1	1	2		\image\item\ornament\ÇåãöÕÓÍÈ²¿µ­Çàa1.spr	\image\item\ornament\ÇåãöÕÓÍÈ²¿µ­Çàa0.spr	Du lŞch trë vÒ, må håi ­ít ®Ém. GiÊc méng t­¬ng t­, thæi s¸o vÏ tranh.		ThÇn bİ		1	2	1			999	
+Han	0	121	333				301;302							1	2	3		\image\item\ornament\ÇåãöÕÓÍÈ²¿µ­Çàa1.spr	\image\item\ornament\ÇåãöÕÓÍÈ²¿µ­Çàa0.spr	Du lŞch trë vÒ, må håi ­ít ®Ém. GiÊc méng t­¬ng t­, thæi s¸o vÏ tranh.		ThÇn bİ		1	2	1			999	
+Han	0	121	334				303;304							1	2	4		\image\item\ornament\ÇåãöÕÓÍÈ²¿µ­Çàa1.spr	\image\item\ornament\ÇåãöÕÓÍÈ²¿µ­Çàa0.spr	Du lŞch trë vÒ, må håi ­ít ®Ém. GiÊc méng t­¬ng t­, thæi s¸o vÏ tranh.		ThÇn bİ		1	2	1			999	
 Tö Kim Hå L«-Nhá	0	120	335	0	0		0;335							1	1	1		\image\item\ornament\½ğºùÂ«a1.spr	\image\item\ornament\½ğºùÂ«a0.spr	Hå l« thÇn kú, ®­îc Th¸i Th­îng L·o Qu©n dïng luyÖn chÕ tiªn ®¬n, bŞ nhiÒu ng­êi nh¸i theo. Kh«ng ai biÕt Tö Kim Hå L« thùc sù ®ang ë ®©u.		ThÇn bİ		1	2	1			999	
 Tö Kim Hå L«-Nhá	0	120	336	0	0		0;336							1	1	2		\image\item\ornament\½ğºùÂ«a1.spr	\image\item\ornament\½ğºùÂ«a0.spr	Hå l« thÇn kú, ®­îc Th¸i Th­îng L·o Qu©n dïng luyÖn chÕ tiªn ®¬n, bŞ nhiÒu ng­êi nh¸i theo. Kh«ng ai biÕt Tö Kim Hå L« thùc sù ®ang ë ®©u.		ThÇn bİ		1	2	1			999	
 Tö Kim Hå L«-Nhá	0	120	337	0	0		0;337							1	2	3		\image\item\ornament\½ğºùÂ«a1.spr	\image\item\ornament\½ğºùÂ«a0.spr	Hå l« thÇn kú, ®­îc Th¸i Th­îng L·o Qu©n dïng luyÖn chÕ tiªn ®¬n, bŞ nhiÒu ng­êi nh¸i theo. Kh«ng ai biÕt Tö Kim Hå L« thùc sù ®ang ë ®©u.		ThÇn bİ		1	2	1			999	
@@ -646,10 +646,10 @@ Ngäc	0	119	347				0;280							1	1	1		\image\item\ornament\ÓñÜ½ÈØ¼ç²¿·ÛÉ«a1.spr	\
 Ngäc	0	119	348				0;281							1	1	2		\image\item\ornament\ÓñÜ½ÈØ¼ç²¿·ÛÉ«a1.spr	\image\item\ornament\ÓñÜ½ÈØ¼ç²¿·ÛÉ«a0.spr	GiÊc méng xu©n sÇu, t×nh nµy ai thÊu?		ThÇn bİ		1	2	1			999	
 Ngäc	0	119	349				0;282							1	2	3		\image\item\ornament\ÓñÜ½ÈØ¼ç²¿·ÛÉ«a1.spr	\image\item\ornament\ÓñÜ½ÈØ¼ç²¿·ÛÉ«a0.spr	GiÊc méng xu©n sÇu, t×nh nµy ai thÊu?		ThÇn bİ		1	2	1			999	
 Ngäc	0	119	350				0;283							1	2	4		\image\item\ornament\ÓñÜ½ÈØ¼ç²¿·ÛÉ«a1.spr	\image\item\ornament\ÓñÜ½ÈØ¼ç²¿·ÛÉ«a0.spr	GiÊc méng xu©n sÇu, t×nh nµy ai thÊu?		ThÇn bİ		1	2	1			999	
-Phï	0	120	347				0;347							1	1	1		\image\item\ornament\ÓñÜ½ÈØ±³²¿·ÛÉ«a1.spr	\image\item\ornament\ÓñÜ½ÈØ±³²¿·ÛÉ«a0.spr	§iÓm trang nĞt yªu kiÒu, hoa sen gi÷a hå xanh, xa råi niÒm vui cò.		ThÇn bİ		1	2	1			999	
-Phï	0	120	348				0;348							1	1	2		\image\item\ornament\ÓñÜ½ÈØ±³²¿·ÛÉ«a1.spr	\image\item\ornament\ÓñÜ½ÈØ±³²¿·ÛÉ«a0.spr	§iÓm trang nĞt yªu kiÒu, hoa sen gi÷a hå xanh, xa råi niÒm vui cò.		ThÇn bİ		1	2	1			999	
-Phï	0	120	349				0;349							1	2	3		\image\item\ornament\ÓñÜ½ÈØ±³²¿·ÛÉ«a1.spr	\image\item\ornament\ÓñÜ½ÈØ±³²¿·ÛÉ«a0.spr	§iÓm trang nĞt yªu kiÒu, hoa sen gi÷a hå xanh, xa råi niÒm vui cò.		ThÇn bİ		1	2	1			999	
-Phï	0	120	350				0;350							1	2	4		\image\item\ornament\ÓñÜ½ÈØ±³²¿·ÛÉ«a1.spr	\image\item\ornament\ÓñÜ½ÈØ±³²¿·ÛÉ«a0.spr	§iÓm trang nĞt yªu kiÒu, hoa sen gi÷a hå xanh, xa råi niÒm vui cò.		ThÇn bİ		1	2	1			999	
+Phu	0	120	347				0;347							1	1	1		\image\item\ornament\ÓñÜ½ÈØ±³²¿·ÛÉ«a1.spr	\image\item\ornament\ÓñÜ½ÈØ±³²¿·ÛÉ«a0.spr	§iÓm trang nĞt yªu kiÒu, hoa sen gi÷a hå xanh, xa råi niÒm vui cò.		ThÇn bİ		1	2	1			999	
+Phu	0	120	348				0;348							1	1	2		\image\item\ornament\ÓñÜ½ÈØ±³²¿·ÛÉ«a1.spr	\image\item\ornament\ÓñÜ½ÈØ±³²¿·ÛÉ«a0.spr	§iÓm trang nĞt yªu kiÒu, hoa sen gi÷a hå xanh, xa råi niÒm vui cò.		ThÇn bİ		1	2	1			999	
+Phu	0	120	349				0;349							1	2	3		\image\item\ornament\ÓñÜ½ÈØ±³²¿·ÛÉ«a1.spr	\image\item\ornament\ÓñÜ½ÈØ±³²¿·ÛÉ«a0.spr	§iÓm trang nĞt yªu kiÒu, hoa sen gi÷a hå xanh, xa råi niÒm vui cò.		ThÇn bİ		1	2	1			999	
+Phu	0	120	350				0;350							1	2	4		\image\item\ornament\ÓñÜ½ÈØ±³²¿·ÛÉ«a1.spr	\image\item\ornament\ÓñÜ½ÈØ±³²¿·ÛÉ«a0.spr	§iÓm trang nĞt yªu kiÒu, hoa sen gi÷a hå xanh, xa råi niÒm vui cò.		ThÇn bİ		1	2	1			999	
 Dung	0	121	347				305;306							1	1	1		\image\item\ornament\ÓñÜ½ÈØÍÈ²¿·ÛÉ«a1.spr	\image\item\ornament\ÓñÜ½ÈØÍÈ²¿·ÛÉ«a0.spr	Ngo¶nh ®Çu nh×n l¹i, non cao tùa b×nh phong.		ThÇn bİ		1	2	1			999	
 Dung	0	121	348				307;308							1	1	2		\image\item\ornament\ÓñÜ½ÈØÍÈ²¿·ÛÉ«a1.spr	\image\item\ornament\ÓñÜ½ÈØÍÈ²¿·ÛÉ«a0.spr	Ngo¶nh ®Çu nh×n l¹i, non cao tùa b×nh phong.		ThÇn bİ		1	2	1			999	
 Dung	0	121	349				309;310							1	2	3		\image\item\ornament\ÓñÜ½ÈØÍÈ²¿·ÛÉ«a1.spr	\image\item\ornament\ÓñÜ½ÈØÍÈ²¿·ÛÉ«a0.spr	Ngo¶nh ®Çu nh×n l¹i, non cao tùa b×nh phong.		ThÇn bİ		1	2	1			999	
@@ -670,10 +670,10 @@ Trän §êi Trän KiÕp	0	119	355				0;288							1	1	1		\image\item\ornament\ÓñÜ½ÈØ¼ç
 Trän §êi Trän KiÕp	0	119	356				0;289							1	1	2		\image\item\ornament\ÓñÜ½ÈØ¼ç²¿°×É«a1.spr	\image\item\ornament\ÓñÜ½ÈØ¼ç²¿°×É«a0.spr	§«i uyªn ­¬ng trêi ®Şnh, sao nì c¸ch xa nhau.		ThÇn bİ		1	2	1			999	
 Trän §êi Trän KiÕp	0	119	357				0;290							1	2	3		\image\item\ornament\ÓñÜ½ÈØ¼ç²¿°×É«a1.spr	\image\item\ornament\ÓñÜ½ÈØ¼ç²¿°×É«a0.spr	§«i uyªn ­¬ng trêi ®Şnh, sao nì c¸ch xa nhau.		ThÇn bİ		1	2	1			999	
 Trän §êi Trän KiÕp	0	119	358				0;291							1	2	4		\image\item\ornament\ÓñÜ½ÈØ¼ç²¿°×É«a1.spr	\image\item\ornament\ÓñÜ½ÈØ¼ç²¿°×É«a0.spr	§«i uyªn ­¬ng trêi ®Şnh, sao nì c¸ch xa nhau.		ThÇn bİ		1	2	1			999	
-T­¬ng T­	0	120	355				0;355							1	1	1		\image\item\ornament\ÓñÜ½ÈØ±³²¿°×É«a1.spr	\image\item\ornament\ÓñÜ½ÈØ±³²¿°×É«a0.spr	§«i uyªn ­¬ng trêi ®Şnh, sao nì c¸ch xa nhau.		ThÇn bİ		1	2	1			999	
-T­¬ng T­	0	120	356				0;356							1	1	2		\image\item\ornament\ÓñÜ½ÈØ±³²¿°×É«a1.spr	\image\item\ornament\ÓñÜ½ÈØ±³²¿°×É«a0.spr	§«i uyªn ­¬ng trêi ®Şnh, sao nì c¸ch xa nhau.		ThÇn bİ		1	2	1			999	
-T­¬ng T­	0	120	357				0;357							1	2	3		\image\item\ornament\ÓñÜ½ÈØ±³²¿°×É«a1.spr	\image\item\ornament\ÓñÜ½ÈØ±³²¿°×É«a0.spr	§«i uyªn ­¬ng trêi ®Şnh, sao nì c¸ch xa nhau.		ThÇn bİ		1	2	1			999	
-T­¬ng T­	0	120	358				0;358							1	2	4		\image\item\ornament\ÓñÜ½ÈØ±³²¿°×É«a1.spr	\image\item\ornament\ÓñÜ½ÈØ±³²¿°×É«a0.spr	§«i uyªn ­¬ng trêi ®Şnh, sao nì c¸ch xa nhau.		ThÇn bİ		1	2	1			999	
+Xiang Si	0	120	355				0;355							1	1	1		\image\item\ornament\ÓñÜ½ÈØ±³²¿°×É«a1.spr	\image\item\ornament\ÓñÜ½ÈØ±³²¿°×É«a0.spr	§«i uyªn ­¬ng trêi ®Şnh, sao nì c¸ch xa nhau.		ThÇn bİ		1	2	1			999	
+Xiang Si	0	120	356				0;356							1	1	2		\image\item\ornament\ÓñÜ½ÈØ±³²¿°×É«a1.spr	\image\item\ornament\ÓñÜ½ÈØ±³²¿°×É«a0.spr	§«i uyªn ­¬ng trêi ®Şnh, sao nì c¸ch xa nhau.		ThÇn bİ		1	2	1			999	
+Xiang Si	0	120	357				0;357							1	2	3		\image\item\ornament\ÓñÜ½ÈØ±³²¿°×É«a1.spr	\image\item\ornament\ÓñÜ½ÈØ±³²¿°×É«a0.spr	§«i uyªn ­¬ng trêi ®Şnh, sao nì c¸ch xa nhau.		ThÇn bİ		1	2	1			999	
+Xiang Si	0	120	358				0;358							1	2	4		\image\item\ornament\ÓñÜ½ÈØ±³²¿°×É«a1.spr	\image\item\ornament\ÓñÜ½ÈØ±³²¿°×É«a0.spr	§«i uyªn ­¬ng trêi ®Şnh, sao nì c¸ch xa nhau.		ThÇn bİ		1	2	1			999	
 T­¬ng Väng	0	121	355				321;322							1	1	1		\image\item\ornament\ÓñÜ½ÈØÍÈ²¿°×É«a1.spr	\image\item\ornament\ÓñÜ½ÈØÍÈ²¿°×É«a0.spr	§«i uyªn ­¬ng trêi ®Şnh, sao nì c¸ch xa nhau.		ThÇn bİ		1	2	1			999	
 T­¬ng Väng	0	121	356				323;324							1	1	2		\image\item\ornament\ÓñÜ½ÈØÍÈ²¿°×É«a1.spr	\image\item\ornament\ÓñÜ½ÈØÍÈ²¿°×É«a0.spr	§«i uyªn ­¬ng trêi ®Şnh, sao nì c¸ch xa nhau.		ThÇn bİ		1	2	1			999	
 T­¬ng Väng	0	121	357				325;326							1	2	3		\image\item\ornament\ÓñÜ½ÈØÍÈ²¿°×É«a1.spr	\image\item\ornament\ÓñÜ½ÈØÍÈ²¿°×É«a0.spr	§«i uyªn ­¬ng trêi ®Şnh, sao nì c¸ch xa nhau.		ThÇn bİ		1	2	1			999	
@@ -850,10 +850,10 @@ V©n CÈm Lo¹n	0	120	419				0;419							1	1	1		\image\item\ornament\Ë«Ë«Ñà±³²¿°×É«
 V©n CÈm Lo¹n	0	120	420				0;420							1	1	2		\image\item\ornament\Ë«Ë«Ñà±³²¿°×É«a1.spr	\image\item\ornament\Ë«Ë«Ñà±³²¿°×É«a0.spr	Bê Thiªn C¬, lo¹n V©n CÈm, nhí v« cïng.		ThÇn bİ		1	2	1			999	
 V©n CÈm Lo¹n	0	120	421				0;421							1	2	3		\image\item\ornament\Ë«Ë«Ñà±³²¿°×É«a1.spr	\image\item\ornament\Ë«Ë«Ñà±³²¿°×É«a0.spr	Bê Thiªn C¬, lo¹n V©n CÈm, nhí v« cïng.		ThÇn bİ		1	2	1			999	
 V©n CÈm Lo¹n	0	120	422				0;422							1	2	4		\image\item\ornament\Ë«Ë«Ñà±³²¿°×É«a1.spr	\image\item\ornament\Ë«Ë«Ñà±³²¿°×É«a0.spr	Bê Thiªn C¬, lo¹n V©n CÈm, nhí v« cïng.		ThÇn bİ		1	2	1			999	
-Ng©n hµ	0	121	419				433;434							1	1	1		\image\item\ornament\Ë«Ë«ÑàÍÈ²¿°×É«a1.spr	\image\item\ornament\Ë«Ë«ÑàÍÈ²¿°×É«a0.spr	Ng©n Hµ xa c¸ch, göi giã trêi t©y.		ThÇn bİ		1	2	1			999	
-Ng©n hµ	0	121	420				435;436							1	1	2		\image\item\ornament\Ë«Ë«ÑàÍÈ²¿°×É«a1.spr	\image\item\ornament\Ë«Ë«ÑàÍÈ²¿°×É«a0.spr	Ng©n Hµ xa c¸ch, göi giã trêi t©y.		ThÇn bİ		1	2	1			999	
-Ng©n hµ	0	121	421				437;438							1	2	3		\image\item\ornament\Ë«Ë«ÑàÍÈ²¿°×É«a1.spr	\image\item\ornament\Ë«Ë«ÑàÍÈ²¿°×É«a0.spr	Ng©n Hµ xa c¸ch, göi giã trêi t©y.		ThÇn bİ		1	2	1			999	
-Ng©n hµ	0	121	422				439;440							1	2	4		\image\item\ornament\Ë«Ë«ÑàÍÈ²¿°×É«a1.spr	\image\item\ornament\Ë«Ë«ÑàÍÈ²¿°×É«a0.spr	Ng©n Hµ xa c¸ch, göi giã trêi t©y.		ThÇn bİ		1	2	1			999	
+Galaxy	0	121	419				433;434							1	1	1		\image\item\ornament\Ë«Ë«ÑàÍÈ²¿°×É«a1.spr	\image\item\ornament\Ë«Ë«ÑàÍÈ²¿°×É«a0.spr	Ng©n Hµ xa c¸ch, göi giã trêi t©y.		ThÇn bİ		1	2	1			999	
+Galaxy	0	121	420				435;436							1	1	2		\image\item\ornament\Ë«Ë«ÑàÍÈ²¿°×É«a1.spr	\image\item\ornament\Ë«Ë«ÑàÍÈ²¿°×É«a0.spr	Ng©n Hµ xa c¸ch, göi giã trêi t©y.		ThÇn bİ		1	2	1			999	
+Galaxy	0	121	421				437;438							1	2	3		\image\item\ornament\Ë«Ë«ÑàÍÈ²¿°×É«a1.spr	\image\item\ornament\Ë«Ë«ÑàÍÈ²¿°×É«a0.spr	Ng©n Hµ xa c¸ch, göi giã trêi t©y.		ThÇn bİ		1	2	1			999	
+Galaxy	0	121	422				439;440							1	2	4		\image\item\ornament\Ë«Ë«ÑàÍÈ²¿°×É«a1.spr	\image\item\ornament\Ë«Ë«ÑàÍÈ²¿°×É«a0.spr	Ng©n Hµ xa c¸ch, göi giã trêi t©y.		ThÇn bİ		1	2	1			999	
 NguyÖt Lı Chi	0	119	423				443;444							1	1	1		\image\item\ornament\Ë«Ë«Ñà¼ç²¿ºìÉ«a1.spr	\image\item\ornament\Ë«Ë«Ñà¼ç²¿ºìÉ«a0.spr	Nh¸nh bµ sa d­íi tr¨ng, s­¬ng Èn gi÷a kh«ng trung.		ThÇn bİ		1	2	1			999	
 NguyÖt Lı Chi	0	119	424				445;446							1	1	2		\image\item\ornament\Ë«Ë«Ñà¼ç²¿ºìÉ«a1.spr	\image\item\ornament\Ë«Ë«Ñà¼ç²¿ºìÉ«a0.spr	Nh¸nh bµ sa d­íi tr¨ng, s­¬ng Èn gi÷a kh«ng trung.		ThÇn bİ		1	2	1			999	
 NguyÖt Lı Chi	0	119	425				447;448							1	2	3		\image\item\ornament\Ë«Ë«Ñà¼ç²¿ºìÉ«a1.spr	\image\item\ornament\Ë«Ë«Ñà¼ç²¿ºìÉ«a0.spr	Nh¸nh bµ sa d­íi tr¨ng, s­¬ng Èn gi÷a kh«ng trung.		ThÇn bİ		1	2	1			999	
@@ -934,10 +934,10 @@ Xu©n Mé	0	119	458				489;490							1	2	4		\image\item\ornament\ÇàÔÆÖ¾¼ç²¿·ÛÉ«a1.
 §¹m NguyÖt 	0	120	456				0;456							1	1	2		\image\item\ornament\ÇàÔÆÖ¾±³²¿·ÛÉ«a1.spr	\image\item\ornament\ÇàÔÆÖ¾±³²¿·ÛÉ«a0.spr	D¹o b­íc bªn s«ng ¸nh chiÒu tµ, h¹t m­a bŞ giã thæi tung bay.		ThÇn bİ		1	2	1			999	
 §¹m NguyÖt 	0	120	457				0;457							1	2	3		\image\item\ornament\ÇàÔÆÖ¾±³²¿·ÛÉ«a1.spr	\image\item\ornament\ÇàÔÆÖ¾±³²¿·ÛÉ«a0.spr	D¹o b­íc bªn s«ng ¸nh chiÒu tµ, h¹t m­a bŞ giã thæi tung bay.		ThÇn bİ		1	2	1			999	
 §¹m NguyÖt 	0	120	458				0;458							1	2	4		\image\item\ornament\ÇàÔÆÖ¾±³²¿·ÛÉ«a1.spr	\image\item\ornament\ÇàÔÆÖ¾±³²¿·ÛÉ«a0.spr	D¹o b­íc bªn s«ng ¸nh chiÒu tµ, h¹t m­a bŞ giã thæi tung bay.		ThÇn bİ		1	2	1			999	
-§µo Lı	0	121	455				481;482							1	1	1		\image\item\ornament\ÇàÔÆÖ¾ÍÈ²¿·ÛÉ«a1.spr	\image\item\ornament\ÇàÔÆÖ¾ÍÈ²¿·ÛÉ«a0.spr	D¹o b­íc bªn s«ng ¸nh chiÒu tµ, h¹t m­a bŞ giã thæi tung bay.		ThÇn bİ		1	2	1			999	
-§µo Lı	0	121	456				483;484							1	1	2		\image\item\ornament\ÇàÔÆÖ¾ÍÈ²¿·ÛÉ«a1.spr	\image\item\ornament\ÇàÔÆÖ¾ÍÈ²¿·ÛÉ«a0.spr	D¹o b­íc bªn s«ng ¸nh chiÒu tµ, h¹t m­a bŞ giã thæi tung bay.		ThÇn bİ		1	2	1			999	
-§µo Lı	0	121	457				485;486							1	2	3		\image\item\ornament\ÇàÔÆÖ¾ÍÈ²¿·ÛÉ«a1.spr	\image\item\ornament\ÇàÔÆÖ¾ÍÈ²¿·ÛÉ«a0.spr	D¹o b­íc bªn s«ng ¸nh chiÒu tµ, h¹t m­a bŞ giã thæi tung bay.		ThÇn bİ		1	2	1			999	
-§µo Lı	0	121	458				487;488							1	2	4		\image\item\ornament\ÇàÔÆÖ¾ÍÈ²¿·ÛÉ«a1.spr	\image\item\ornament\ÇàÔÆÖ¾ÍÈ²¿·ÛÉ«a0.spr	D¹o b­íc bªn s«ng ¸nh chiÒu tµ, h¹t m­a bŞ giã thæi tung bay.		ThÇn bİ		1	2	1			999	
+Dao Ly	0	121	455				481;482							1	1	1		\image\item\ornament\ÇàÔÆÖ¾ÍÈ²¿·ÛÉ«a1.spr	\image\item\ornament\ÇàÔÆÖ¾ÍÈ²¿·ÛÉ«a0.spr	D¹o b­íc bªn s«ng ¸nh chiÒu tµ, h¹t m­a bŞ giã thæi tung bay.		ThÇn bİ		1	2	1			999	
+Dao Ly	0	121	456				483;484							1	1	2		\image\item\ornament\ÇàÔÆÖ¾ÍÈ²¿·ÛÉ«a1.spr	\image\item\ornament\ÇàÔÆÖ¾ÍÈ²¿·ÛÉ«a0.spr	D¹o b­íc bªn s«ng ¸nh chiÒu tµ, h¹t m­a bŞ giã thæi tung bay.		ThÇn bİ		1	2	1			999	
+Dao Ly	0	121	457				485;486							1	2	3		\image\item\ornament\ÇàÔÆÖ¾ÍÈ²¿·ÛÉ«a1.spr	\image\item\ornament\ÇàÔÆÖ¾ÍÈ²¿·ÛÉ«a0.spr	D¹o b­íc bªn s«ng ¸nh chiÒu tµ, h¹t m­a bŞ giã thæi tung bay.		ThÇn bİ		1	2	1			999	
+Dao Ly	0	121	458				487;488							1	2	4		\image\item\ornament\ÇàÔÆÖ¾ÍÈ²¿·ÛÉ«a1.spr	\image\item\ornament\ÇàÔÆÖ¾ÍÈ²¿·ÛÉ«a0.spr	D¹o b­íc bªn s«ng ¸nh chiÒu tµ, h¹t m­a bŞ giã thæi tung bay.		ThÇn bİ		1	2	1			999	
 Phån H¹nh	0	119	459				491;492							1	1	1		\image\item\ornament\ÇàÔÆÖ¾¼ç²¿°×É«a1.spr	\image\item\ornament\ÇàÔÆÖ¾¼ç²¿°×É«a0.spr	V­ên hoa næi tiÕng, hoa në khoe s¾c.		ThÇn bİ		1	2	1			999	
 Phån H¹nh	0	119	460				493;494							1	1	2		\image\item\ornament\ÇàÔÆÖ¾¼ç²¿°×É«a1.spr	\image\item\ornament\ÇàÔÆÖ¾¼ç²¿°×É«a0.spr	V­ên hoa næi tiÕng, hoa në khoe s¾c.		ThÇn bİ		1	2	1			999	
 Phån H¹nh	0	119	461				495;496							1	2	3		\image\item\ornament\ÇàÔÆÖ¾¼ç²¿°×É«a1.spr	\image\item\ornament\ÇàÔÆÖ¾¼ç²¿°×É«a0.spr	V­ên hoa næi tiÕng, hoa në khoe s¾c.		ThÇn bİ		1	2	1			999	

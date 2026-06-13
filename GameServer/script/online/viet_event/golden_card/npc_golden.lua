@@ -74,12 +74,12 @@ function confirm_get_golden_day(nIndex)
 	
 	gf_AddItemEx2(tb_everyday_award[nType][nLevel][2],tb_everyday_award[nType][nLevel][1], szHKLBLogHeader, szHKLBLogAction)
 	if nIndex == 1 then
-			gf_AddItemEx2({2,1,30086,tb_everyday_award[nType][nLevel][3],4},"H¹t Gièng", szHKLBLogHeader, szHKLBLogAction, 24*60*60)
+			gf_AddItemEx2({2,1,30086,tb_everyday_award[nType][nLevel][3],4},"Seed", szHKLBLogHeader, szHKLBLogAction, 24*60*60)
 	elseif nIndex == 2 then
 		Earn(tb_everyday_award[nType][nLevel][4] * 10000)
 		Msg2Player("B¹n nhËn ®­îc "..tb_everyday_award[nType][nLevel][4].." vµng.")
 	elseif nIndex == 3 then
-		gf_AddItemEx2(tb_everyday_award_TCYQ[nType][nLevel],"Tu Ch©n YÕu QuyÕt", szHKLBLogHeader, szHKLBLogAction,7*24*60*60)
+		gf_AddItemEx2(tb_everyday_award_TCYQ[nType][nLevel],"Xiu Zhen Yao Jue", szHKLBLogHeader, szHKLBLogAction,7*24*60*60)
 	elseif nIndex == 4 then
 		gf_AddItemEx2(tb_everyday_award[nType][nLevel][7], tb_everyday_award[nType][nLevel][6], szHKLBLogHeader, szHKLBLogAction)
 	end
@@ -151,15 +151,15 @@ function confirm_get_golden_weekday(nIndex)
 	if nLevel == 7 then
 		gf_AddItemEx2(tb_golden_material_goldenday[1][2], tb_golden_material_goldenday[1][1], szHKLBLogHeader, szHKLBLogAction)
 		gf_AddItemEx2({2,1,9999,1,4}, "Qu©n C«ng Ch­¬ng", szHKLBLogHeader, szHKLBLogAction, 24*60*60)
-		gf_AddItemEx2({2,0,504,tb_golden_material_goldenday[1][4],4}, "B¸t Nh· nhá", szHKLBLogHeader, szHKLBLogAction, 24*60*60)
+		gf_AddItemEx2({2,0,504,tb_golden_material_goldenday[1][4],4}, "small Prajna", szHKLBLogHeader, szHKLBLogAction, 24*60*60)
 	elseif nLevel == 8 then
 		gf_AddItemEx2(tb_golden_material_goldenday[nIndex + 1][2], tb_golden_material_goldenday[nIndex + 1][1], szHKLBLogHeader, szHKLBLogAction)
 		gf_AddItemEx2({2,1,9999,1,4}, "Qu©n C«ng Ch­¬ng", szHKLBLogHeader, szHKLBLogAction, 24*60*60)
-		gf_AddItemEx2({2,0,504,tb_golden_material_goldenday[nIndex + 1][4],4}, "B¸t Nh· nhá", szHKLBLogHeader, szHKLBLogAction, 24*60*60)
+		gf_AddItemEx2({2,0,504,tb_golden_material_goldenday[nIndex + 1][4],4}, "small Prajna", szHKLBLogHeader, szHKLBLogAction, 24*60*60)
 	elseif nLevel == 9 then
 		gf_AddItemEx2(tb_golden_material_goldenday[nIndex + 8][2], tb_golden_material_goldenday[nIndex + 8][1], szHKLBLogHeader, szHKLBLogAction)
 		gf_AddItemEx2({2,1,9999,1,4}, "Qu©n C«ng Ch­¬ng", szHKLBLogHeader, szHKLBLogAction, 24*60*60)
-		gf_AddItemEx2({2,0,504,tb_golden_material_goldenday[nIndex + 8][4],4}, "B¸t Nh· nhá", szHKLBLogHeader, szHKLBLogAction, 24*60*60)
+		gf_AddItemEx2({2,0,504,tb_golden_material_goldenday[nIndex + 8][4],4}, "small Prajna", szHKLBLogHeader, szHKLBLogAction, 24*60*60)
 	end
 end
 
@@ -351,7 +351,7 @@ function confirm_confirm(nLevel)
 		gf_AddItemEx2({2, 0, 553,2,4},"§¹i Nh©n S©m", szLogTitle, szLogAction, 7*24*60*60)
 		gf_AddItemEx({0, 107, 64,1,1},"Thiªn Hµ MËt tÞch")
 		gf_AddItemEx({0, 107, 65,1,1},"Tö Hµ MËt tÞch")
-		gf_AddItemEx({0, 107, 66,1,1},"Chiªm Y Phæ")
+		gf_AddItemEx({0, 107, 66,1,1},"Zhanyi Manual")
 		gf_AddItemEx({0, 107, 60,1,1},"Tu La MËt tÞch")
 		gf_AddItemEx({0, 107, 63,1,1},"Ngò Quû MËt tÞch")
 		Say("<color=green>Chñ Phßng M¸y<color>: Chóc mõng c¸c h¹ nhËn ®­îc phÇn th­ëng cÊp "..nLevel.."!",0)		
@@ -368,15 +368,15 @@ function confirm_confirm(nLevel)
 	elseif nLevel == 76 then
 		local nRand = random(1, 100)
 		if nRand <= 20 then
-			gf_AddItemEx2({2,1,30172,100}, "Xoµi", szLogTitle, szLogAction)
+			gf_AddItemEx2({2,1,30172,100}, "Mango", szLogTitle, szLogAction)
 		elseif nRand <= 40 then
-			gf_AddItemEx2({2,1,30173,100}, "§µo", szLogTitle, szLogAction)
+			gf_AddItemEx2({2,1,30173,100}, "Peach", szLogTitle, szLogAction)
 		elseif nRand <= 60 then
-			gf_AddItemEx2({2,1,30174,100}, "MËn", szLogTitle, szLogAction)
+			gf_AddItemEx2({2,1,30174,100}, "Plum", szLogTitle, szLogAction)
 		elseif nRand <= 80 then
-			gf_AddItemEx2({2,1,30177,100}, "B¬", szLogTitle, szLogAction)
+			gf_AddItemEx2({2,1,30177,100}, "Avocado", szLogTitle, szLogAction)
 		else
-			gf_AddItemEx2({2,1,30175,100}, "V¶i", szLogTitle, szLogAction)
+			gf_AddItemEx2({2,1,30175,100}, "Lychee", szLogTitle, szLogAction)
 		end
 		Say("<color=green>Chñ Phßng M¸y<color>: Chóc mõng c¸c h¹ nhËn ®­îc phÇn th­ëng cÊp "..nLevel.."!",0)		
 		WriteLogEx(szLogTitle,"nhËn phÇn th­ëng cÊp "..nLevel);
@@ -422,14 +422,14 @@ function confirm_confirm(nLevel)
 	elseif nLevel == 81 then
 		gf_AddItemEx2({2, 1, 1068, 1, 4},"Thiªn Th¹ch Linh Th¹ch", szLogTitle, "nhËn ®­îc", 7*24*60*60)
 		gf_AddItemEx2({0, 107, 160, 1}, "Tø Linh Thiªn ý Phæ", szLogTitle, "nhËn ®­îc")
-		gf_AddItemEx2({0, 107, 161, 1}, "Tø Linh Tö ý Phæ", szLogTitle, "nhËn ®­îc")
+		gf_AddItemEx2({0, 107, 161, 1}, "Four Spirits Earth Intent Manual", szLogTitle, "nhËn ®­îc")
 		Say("<color=green>Chñ Phßng M¸y<color>: Chóc mõng c¸c h¹ nhËn ®­îc phÇn th­ëng cÊp "..nLevel.."!",0)
 			AddGlobalNews("Qu¶ lµ ThiÕu Niªn Anh Hïng, "..GetName().." ®· nhËn thµnh c«ng 1 Thiªn Th¹ch Linh Th¹ch, phÇn th­ëng cÊp 81 Hoµng Kim LÖnh Bµi")
   			Msg2SubWorld("Qu¶ lµ ThiÕu Niªn Anh Hïng, "..GetName().." ®· nhËn thµnh c«ng 1 Thiªn Th¹ch Linh Th¹ch, phÇn th­ëng cÊp 81 Hoµng Kim LÖnh Bµi")
 		WriteLogEx(szLogTitle,"nhËn phÇn th­ëng cÊp "..nLevel);
 	elseif nLevel == 82 then
 		GoldenGiveJewel()
-		gf_AddItemEx2({0, 107, 159, 1}, "Tø Linh ChiÕn ý Phæ", szLogTitle, "nhËn ®­îc")
+		gf_AddItemEx2({0, 107, 159, 1}, "Four Spirits Battle Intent Manual", szLogTitle, "nhËn ®­îc")
 		Say("<color=green>Chñ Phßng M¸y<color>: Chóc mõng c¸c h¹ nhËn ®­îc phÇn th­ëng cÊp "..nLevel.."!",0)	
 		WriteLogEx(szLogTitle,"nhËn phÇn th­ëng cÊp "..nLevel);
 	elseif nLevel == 83 then
@@ -460,7 +460,7 @@ function confirm_confirm(nLevel)
 		WriteLogEx(szLogTitle,"nhËn phÇn th­ëng cÊp "..nLevel);
 	elseif nLevel == 88 then
 		GetTQVD()
-		gf_AddItemEx2({0, 107, 156, 1}, "B¸ch Th¶o mËt tÞch", szLogTitle, "nhËn ®­îc")
+		gf_AddItemEx2({0, 107, 156, 1}, "Hundred Herbs Secret Manual", szLogTitle, "nhËn ®­îc")
 		Say("<color=green>Chñ Phßng M¸y<color>: Chóc mõng c¸c h¹ nhËn ®­îc phÇn th­ëng cÊp "..nLevel.."!",0)		
 		WriteLogEx(szLogTitle,"nhËn phÇn th­ëng cÊp "..nLevel);
 	elseif nLevel == 89 then
@@ -489,7 +489,7 @@ function confirm_confirm(nLevel)
 		ModifyExp(0 - tb_golden_award[nLevel][5])
 		Msg2Player("B¹n ®· bÞ trõ 50.000.000 ®iÓm kinh nghiÖm.")
 		--gf_AddItemEx2({2,1,1067,1,1}, "§Þnh Hån Thiªn Th¹ch", szLogTitle, szLogAction, 7*24*60*60)
-		gf_AddItemEx2({0,112,78,1,4}, "L¨ng Ba Vi Bé", szLogTitle, szLogAction)
+		gf_AddItemEx2({0,112,78,1,4}, "Lingbo Microstep", szLogTitle, szLogAction)
 		Say("<color=green>Chñ Phßng M¸y<color>: Chóc mõng c¸c h¹ nhËn ®­îc phÇn th­ëng cÊp "..nLevel.."!",0)		
 		WriteLogEx(szLogTitle,"nhËn phÇn th­ëng cÊp "..nLevel);
 	elseif nLevel == 93 then
@@ -513,7 +513,7 @@ function confirm_confirm(nLevel)
 	elseif nLevel == 95 then
 		ModifyExp(0 - tb_golden_award[nLevel][5])
 		Msg2Player("B¹n ®· bÞ trõ 50.000.000 ®iÓm kinh nghiÖm.")
-		gf_AddItemEx2({0,112,78,1,1}, "L¨ng Ba Vi Bé", szLogTitle, szLogAction)
+		gf_AddItemEx2({0,112,78,1,1}, "Lingbo Microstep", szLogTitle, szLogAction)
 		Say("<color=green>Chñ Phßng M¸y<color>: Chóc mõng c¸c h¹ nhËn ®­îc phÇn th­ëng cÊp "..nLevel.."!",0)		
 		WriteLogEx(szLogTitle,"nhËn phÇn th­ëng cÊp "..nLevel);
 	elseif nLevel == 96 then

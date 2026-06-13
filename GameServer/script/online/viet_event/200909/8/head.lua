@@ -4,19 +4,19 @@ GIVE_CAKE_ID = 2429
 
 -- PhÇn th­ëng 3 em bÐ seed 1000
 tXiaoAwardList = {
-	{"30 vµng", 240, "Earn(%d)", 300000},
+	{"30 gold", 240, "Earn(%d)", 300000},
 	{"30 ®iÓm danh väng", 100, "ModifyReputation(%d,0)",30},
 	{"30 ®iÓm S­ M«n", 100, "SetTask(336, GetTask(336) + %d)",30},
 	{"Tö Hµ mËt TÞch", 19, {0,107,65,1},0},
 	{"Thiªn Hµ MËt TÞch", 20, {0,107,64,1},0},
-	{"Chiªm Y Phæ",	10, {0,107,66,1},0},
-	{"Tø Linh Tö ý Phæ", 20, {0,107,161,1},0},
+	{"Zhanyi Manual",	10, {0,107,66,1},0},
+	{"Four Spirits Earth Intent Manual", 20, {0,107,161,1},0},
 	{"Tø Linh Thiªn ý Phæ", 20, {0,107,160,1},0},
-	{"Tø Linh ChiÕn ý Phæ", 10, {0,107,159,1},0},
+	{"Four Spirits Battle Intent Manual", 10, {0,107,159,1},0},
 	{"§Êu Hån", 250, {2,1,1157,1},7*24*60*60},
 	{"Qu©n c«ng ®¹i", 50, {2,1,9998,1},7*24*60*60},
 	{"Thiªn Th¹ch Tinh Th¹ch", 60, {2,1,1009,1},0},
-	{"Tiªu KiÕp T¸n", 100, {2,0,141,1},7*24*60*60},
+	{"Tribulation Dispelling Powder", 100, {2,0,141,1},7*24*60*60},
 	{"Thiªn Th¹ch Linh Th¹ch", 1, {2,1,1068,1},7*24*60*60},
 }
 
@@ -27,7 +27,7 @@ function npc_xiao_talk()
 		return
 	end	
 	local tSay ={
-		"TÆng bÐ 10 B¸nh §Ëu Xanh/give_moon_cake",
+		"Give the kid 10 Mung Bean Cakes/give_moon_cake",
 		"Ta chØ ghÐ qua!/nothing";
 	}	
 	Say(szNpcName.."Trung Thu ®Õn råi, bÐ thÌm ¨n b¸nh qu¸! Cã ai tÆng bÐ <color=yellow>B¸nh §Ëu Xanh<color> kh«ng?",getn(tSay),tSay);	
@@ -49,7 +49,7 @@ function give_moon_cake()
 		return
 	end
 	if GetItemCount(2,1,30108) < 10 then
-		Say(szNpcName.."G¹t bÐ h¶? Kh«ng ®ñ 10 B¸nh §Ëu Xanh!",0)
+		Say(szNpcName.."Already abandoned? You don't have 10 Mung Bean Cakes!",0)
 		return
 	end	
 	if gf_JudgeRoomWeight(1,10,szNpcName) == 0 then
@@ -62,7 +62,7 @@ function give_moon_cake()
 		GiveAward()		
 		Say(szNpcName.."C¸m ¬n nhiÒu nha!",0)
 	else
-		Say(szNpcName.."G¹t bÐ h¶? Kh«ng ®ñ 10 B¸nh §Ëu Xanh!",0)
+		Say(szNpcName.."Already abandoned? You don't have 10 Mung Bean Cakes!",0)
 		return
 	end
 end
@@ -80,7 +80,7 @@ function GiveAward()
 		dostring(format(tXiaoAwardList[nRand][3], tXiaoAwardList[nRand][4]));		
 		Msg2Player("B¹n nhËn ®­îc "..tXiaoAwardList[nRand][1]);
 	end	
-	WriteLogEx("Hoat dong thang 10","tÆng b¸nh",1,tXiaoAwardList[nRand][1])
+	WriteLogEx("Hoat dong thang 10","gift cake",1,tXiaoAwardList[nRand][1])
 end
 
 function nothing()

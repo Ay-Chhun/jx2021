@@ -21,10 +21,10 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 20	KhÊt Thiªn ThÇn C¸i V©n Du C©n	0;103;1232;1	1	2	12			30000;30028;30033;30196			
 21	KhÊt Thiªn ThÇn C¸i V©n Du C©n	0;103;1233;1	2	3	12			30000;30028;30033;30196			
 22	KhÊt Thiªn ThÇn C¸i V©n Du C©n	0;103;1234;1	2	4	12			30000;30028;30033;30196			
-23	Ch­ëng Kinh Thanh Quang C©n	0;103;1431;1	1	1	14			30000;30028;30033;30196			
-24	Ch­ëng Kinh Thanh Quang C©n	0;103;1432;1	1	2	14			30000;30028;30033;30196			
-25	Ch­ëng Kinh Thanh Quang C©n	0;103;1433;1	2	3	14			30000;30028;30033;30196			
-26	Ch­ëng Kinh Thanh Quang C©n	0;103;1434;1	2	4	14			30000;30028;30033;30196			
+23	Pure Sutra Holy Radiance Bandana	0;103;1431;1	1	1	14			30000;30028;30033;30196			
+24	Pure Sutra Holy Radiance Bandana	0;103;1432;1	1	2	14			30000;30028;30033;30196			
+25	Pure Sutra Holy Radiance Bandana	0;103;1433;1	2	3	14			30000;30028;30033;30196			
+26	Pure Sutra Holy Radiance Bandana	0;103;1434;1	2	4	14			30000;30028;30033;30196			
 27	Th¸i Êt T¶n Nh©n H¹o Nhiªn C©n	0;103;1531;1	1	1	15			30000;30028;30033;30196			
 28	Th¸i Êt T¶n Nh©n H¹o Nhiªn C©n	0;103;1532;1	1	2	15			30000;30028;30033;30196			
 29	Th¸i Êt T¶n Nh©n H¹o Nhiªn C©n	0;103;1533;1	2	3	15			30000;30028;30033;30196			
@@ -37,14 +37,14 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 36	Hæ Dùc T­íng Qu©n  ChiÕn Kh«i	0;103;1832;1	1	2	18			30000;30028;30033;30196			
 37	Hæ Dùc T­íng Qu©n  ChiÕn Kh«i	0;103;1833;1	2	3	18			30000;30028;30033;30196			
 38	Hæ Dùc T­íng Qu©n  ChiÕn Kh«i	0;103;1834;1	2	4	18			30000;30028;30033;30196			
-39	U Minh Quû S¸t Tu La C©n	0;103;2031;1	1	1	20			30000;30028;30033;30196			
-40	U Minh Quû S¸t Tu La C©n	0;103;2032;1	1	2	20			30000;30028;30033;30196			
-41	U Minh Quû S¸t Tu La C©n	0;103;2033;1	2	3	20			30000;30028;30033;30196			
-42	U Minh Quû S¸t Tu La C©n	0;103;2034;1	2	4	20			30000;30028;30033;30196			
-43	V« §éng La S¸t TrÊm HuyÕt C©n	0;103;2131;1	1	1	21			30000;30028;30033;30196			
-44	V« §éng La S¸t TrÊm HuyÕt C©n	0;103;2132;1	1	2	21			30000;30028;30033;30196			
-45	V« §éng La S¸t TrÊm HuyÕt C©n	0;103;2133;1	2	3	21			30000;30028;30033;30196			
-46	V« §éng La S¸t TrÊm HuyÕt C©n	0;103;2134;1	2	4	21			30000;30028;30033;30196			
+39	Underworld Ghost Slayer Asura Bandana	0;103;2031;1	1	1	20			30000;30028;30033;30196			
+40	Underworld Ghost Slayer Asura Bandana	0;103;2032;1	1	2	20			30000;30028;30033;30196			
+41	Underworld Ghost Slayer Asura Bandana	0;103;2033;1	2	3	20			30000;30028;30033;30196			
+42	Underworld Ghost Slayer Asura Bandana	0;103;2034;1	2	4	20			30000;30028;30033;30196			
+43	Unmoving Rakshasa Blood-Drowning Bandana	0;103;2131;1	1	1	21			30000;30028;30033;30196			
+44	Unmoving Rakshasa Blood-Drowning Bandana	0;103;2132;1	1	2	21			30000;30028;30033;30196			
+45	Unmoving Rakshasa Blood-Drowning Bandana	0;103;2133;1	2	3	21			30000;30028;30033;30196			
+46	Unmoving Rakshasa Blood-Drowning Bandana	0;103;2134;1	2	4	21			30000;30028;30033;30196			
 47	Tö Vi §¹o Nh©n - Thiªn Thanh §Çu C©n	0;103;23131;1	1	1	23			30000;30028;30033;30196			
 48	Tö Vi §¹o Nh©n - Thiªn Thanh §Çu C©n	0;103;23132;1	1	2	23			30000;30028;30033;30196			
 49	Tiªu Dao ThÇn Sø - K×nh Phong §Çu C©n	0;103;25131;1	1	1	25			30000;30028;30033;30196			
@@ -93,22 +93,22 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 92	Th¸i Êt T¶n Nh©n H¹o Nhiªn Phôc	0;100;1532;1	1	2	15			30000;30029;30034;30196			
 93	Th¸i Êt T¶n Nh©n H¹o Nhiªn Phôc	0;100;1533;1	2	3	15			30000;30029;30034;30196			
 94	Th¸i Êt T¶n Nh©n H¹o Nhiªn Phôc	0;100;1534;1	2	4	15			30000;30029;30034;30196			
-95	Long T­¬ng Ngao KhÝ ChiÕn kh¶i	0;100;1731;1	1	1	17			30000;30029;30034;30196			
-96	Long T­¬ng Ngao KhÝ ChiÕn kh¶i	0;100;1732;1	1	2	17			30000;30029;30034;30196			
-97	Long T­¬ng Ngao KhÝ ChiÕn kh¶i	0;100;1733;1	2	3	17			30000;30029;30034;30196			
-98	Long T­¬ng Ngao KhÝ ChiÕn kh¶i	0;100;1734;1	2	4	17			30000;30029;30034;30196			
-99	Hæ Dùc M·nh Sü ChiÕn kh¶i	0;100;1831;1	1	1	18			30000;30029;30034;30196			
-100	Hæ Dùc M·nh Sü ChiÕn kh¶i	0;100;1832;1	1	2	18			30000;30029;30034;30196			
-101	Hæ Dùc M·nh Sü ChiÕn kh¶i	0;100;1833;1	2	3	18			30000;30029;30034;30196			
-102	Hæ Dùc M·nh Sü ChiÕn kh¶i	0;100;1834;1	2	4	18			30000;30029;30034;30196			
-103	U Minh Quû S¸t Tu La HuyÕt Y	0;100;2031;1	1	1	20			30000;30029;30034;30196			
-104	U Minh Quû S¸t Tu La HuyÕt Y	0;100;2032;1	1	2	20			30000;30029;30034;30196			
-105	U Minh Quû S¸t Tu La HuyÕt Y	0;100;2033;1	2	3	20			30000;30029;30034;30196			
-106	U Minh Quû S¸t Tu La HuyÕt Y	0;100;2034;1	2	4	20			30000;30029;30034;30196			
-107	V« §æng La S¸t TrÊm HuyÕt Y	0;100;2131;1	1	1	21			30000;30029;30034;30196			
-108	V« §æng La S¸t TrÊm HuyÕt Y	0;100;2132;1	1	2	21			30000;30029;30034;30196			
-109	V« §æng La S¸t TrÊm HuyÕt Y	0;100;2133;1	2	3	21			30000;30029;30034;30196			
-110	V« §æng La S¸t TrÊm HuyÕt Y	0;100;2134;1	2	4	21			30000;30029;30034;30196			
+95	Long Tuong Ngao Khi Battle Armor	0;100;1731;1	1	1	17			30000;30029;30034;30196			
+96	Long Tuong Ngao Khi Battle Armor	0;100;1732;1	1	2	17			30000;30029;30034;30196			
+97	Long Tuong Ngao Khi Battle Armor	0;100;1733;1	2	3	17			30000;30029;30034;30196			
+98	Long Tuong Ngao Khi Battle Armor	0;100;1734;1	2	4	17			30000;30029;30034;30196			
+99	Ho Duc Manh Si Battle Armor	0;100;1831;1	1	1	18			30000;30029;30034;30196			
+100	Ho Duc Manh Si Battle Armor	0;100;1832;1	1	2	18			30000;30029;30034;30196			
+101	Ho Duc Manh Si Battle Armor	0;100;1833;1	2	3	18			30000;30029;30034;30196			
+102	Ho Duc Manh Si Battle Armor	0;100;1834;1	2	4	18			30000;30029;30034;30196			
+103	U Minh Quy Sat Tu La Huyet Y	0;100;2031;1	1	1	20			30000;30029;30034;30196			
+104	U Minh Quy Sat Tu La Huyet Y	0;100;2032;1	1	2	20			30000;30029;30034;30196			
+105	U Minh Quy Sat Tu La Huyet Y	0;100;2033;1	2	3	20			30000;30029;30034;30196			
+106	U Minh Quy Sat Tu La Huyet Y	0;100;2034;1	2	4	20			30000;30029;30034;30196			
+107	Boundless Asura Blood-Drenched Robe	0;100;2131;1	1	1	21			30000;30029;30034;30196			
+108	Boundless Asura Blood-Drenched Robe	0;100;2132;1	1	2	21			30000;30029;30034;30196			
+109	Boundless Asura Blood-Drenched Robe	0;100;2133;1	2	3	21			30000;30029;30034;30196			
+110	Boundless Asura Blood-Drenched Robe	0;100;2134;1	2	4	21			30000;30029;30034;30196			
 111	Tö Vi §¹o Nh©n - Thiªn Phong §¹o Bµo	0;100;23131;1	1	1	23			30000;30029;30034;30196			
 112	Tö Vi §¹o Nh©n - Thiªn Phong §¹o Bµo	0;100;23132;1	1	2	23			30000;30029;30034;30196			
 113	Tiªu Dao ThÇn Sø - K×nh Phong Tr­êng Bµo	0;100;25131;1	1	1	25			30000;30029;30034;30196			
@@ -239,10 +239,10 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 238	Ch­ëng Kinh Thanh Quang Giíi	0;102;1432;1	1	2	14			30000;30031;30036;30196			
 239	Ch­ëng Kinh Thanh Quang Giíi	0;102;1433;1	2	3	14			30000;30031;30036;30196			
 240	Ch­ëng Kinh Thanh Quang Giíi	0;102;1434;1	2	4	14			30000;30031;30036;30196			
-241	Ch­ëng Kinh Thanh Quang Hoµn	0;102;1435;1	1	1	14			30000;30031;30036;30196			
-242	Ch­ëng Kinh Thanh Quang Hoµn	0;102;1436;1	1	2	14			30000;30031;30036;30196			
-243	Ch­ëng Kinh Thanh Quang Hoµn	0;102;1437;1	2	3	14			30000;30031;30036;30196			
-244	Ch­ëng Kinh Thanh Quang Hoµn	0;102;1438;1	2	4	14			30000;30031;30036;30196			
+241	Pure Sutra Holy Radiance Ring	0;102;1435;1	1	1	14			30000;30031;30036;30196			
+242	Pure Sutra Holy Radiance Ring	0;102;1436;1	1	2	14			30000;30031;30036;30196			
+243	Pure Sutra Holy Radiance Ring	0;102;1437;1	2	3	14			30000;30031;30036;30196			
+244	Pure Sutra Holy Radiance Ring	0;102;1438;1	2	4	14			30000;30031;30036;30196			
 245	Th¸i Êt T¶n Nh©n H¹o Nhiªn Giíi	0;102;1531;1	1	1	15			30000;30031;30036;30196			
 246	Th¸i Êt T¶n Nh©n H¹o Nhiªn Giíi	0;102;1532;1	1	2	15			30000;30031;30036;30196			
 247	Th¸i Êt T¶n Nh©n H¹o Nhiªn Giíi	0;102;1533;1	2	3	15			30000;30031;30036;30196			
@@ -251,22 +251,22 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 250	Th¸i Êt T¶n Nh©n H¹o Nhiªn Hoµn	0;102;1536;1	1	2	15			30000;30031;30036;30196			
 251	Th¸i Êt T¶n Nh©n H¹o Nhiªn Hoµn	0;102;1537;1	2	3	15			30000;30031;30036;30196			
 252	Th¸i Êt T¶n Nh©n H¹o Nhiªn Hoµn	0;102;1538;1	2	4	15			30000;30031;30036;30196			
-253	Long T­¬ng T­íng Qu©n Hæ Phï	0;102;1731;1	1	1	17			30000;30031;30036;30196			
-254	Long T­¬ng T­íng Qu©n Hæ Phï	0;102;1732;1	1	2	17			30000;30031;30036;30196			
-255	Long T­¬ng T­íng Qu©n Hæ Phï	0;102;1733;1	2	3	17			30000;30031;30036;30196			
-256	Long T­¬ng T­íng Qu©n Hæ Phï	0;102;1734;1	2	4	17			30000;30031;30036;30196			
-257	Long T­¬ng T­íng Qu©n LÖnh Kú	0;102;1735;1	1	1	17			30000;30031;30036;30196			
-258	Long T­¬ng T­íng Qu©n LÖnh Kú	0;102;1736;1	1	2	17			30000;30031;30036;30196			
-259	Long T­¬ng T­íng Qu©n LÖnh Kú	0;102;1737;1	2	3	17			30000;30031;30036;30196			
-260	Long T­¬ng T­íng Qu©n LÖnh Kú	0;102;1738;1	2	4	17			30000;30031;30036;30196			
-261	Hæ Dùc T­íng Qu©n Hæ Phï	0;102;1831;1	1	1	18			30000;30031;30036;30196			
-262	Hæ Dùc T­íng Qu©n Hæ Phï	0;102;1832;1	1	2	18			30000;30031;30036;30196			
-263	Hæ Dùc T­íng Qu©n Hæ Phï	0;102;1833;1	2	3	18			30000;30031;30036;30196			
-264	Hæ Dùc T­íng Qu©n Hæ Phï	0;102;1834;1	2	4	18			30000;30031;30036;30196			
-265	Hæ Dùc T­íng Qu©n LÖnh Kú	0;102;1835;1	1	1	18			30000;30031;30036;30196			
-266	Hæ Dùc T­íng Qu©n LÖnh Kú	0;102;1836;1	1	2	18			30000;30031;30036;30196			
-267	Hæ Dùc T­íng Qu©n LÖnh Kú	0;102;1837;1	2	3	18			30000;30031;30036;30196			
-268	Hæ Dùc T­íng Qu©n LÖnh Kú	0;102;1838;1	2	4	18			30000;30031;30036;30196			
+253	Dragon Lance General Tiger Tally	0;102;1731;1	1	1	17			30000;30031;30036;30196			
+254	Dragon Lance General Tiger Tally	0;102;1732;1	1	2	17			30000;30031;30036;30196			
+255	Dragon Lance General Tiger Tally	0;102;1733;1	2	3	17			30000;30031;30036;30196			
+256	Dragon Lance General Tiger Tally	0;102;1734;1	2	4	17			30000;30031;30036;30196			
+257	Dragon Lance General Command Banner	0;102;1735;1	1	1	17			30000;30031;30036;30196			
+258	Dragon Lance General Command Banner	0;102;1736;1	1	2	17			30000;30031;30036;30196			
+259	Dragon Lance General Command Banner	0;102;1737;1	2	3	17			30000;30031;30036;30196			
+260	Dragon Lance General Command Banner	0;102;1738;1	2	4	17			30000;30031;30036;30196			
+261	Tiger Wing General Tiger Tally	0;102;1831;1	1	1	18			30000;30031;30036;30196			
+262	Tiger Wing General Tiger Tally	0;102;1832;1	1	2	18			30000;30031;30036;30196			
+263	Tiger Wing General Tiger Tally	0;102;1833;1	2	3	18			30000;30031;30036;30196			
+264	Tiger Wing General Tiger Tally	0;102;1834;1	2	4	18			30000;30031;30036;30196			
+265	Tiger Wing General Command Banner	0;102;1835;1	1	1	18			30000;30031;30036;30196			
+266	Tiger Wing General Command Banner	0;102;1836;1	1	2	18			30000;30031;30036;30196			
+267	Tiger Wing General Command Banner	0;102;1837;1	2	3	18			30000;30031;30036;30196			
+268	Tiger Wing General Command Banner	0;102;1838;1	2	4	18			30000;30031;30036;30196			
 269	U Minh Quû S¸t Tu La HuyÕt Giíi	0;102;2031;1	1	1	20			30000;30031;30036;30196			
 270	U Minh Quû S¸t Tu La HuyÕt Giíi	0;102;2032;1	1	2	20			30000;30031;30036;30196			
 271	U Minh Quû S¸t Tu La HuyÕt Giíi	0;102;2033;1	2	3	20			30000;30031;30036;30196			
@@ -395,26 +395,26 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 394	Thiªn Thñ ThÇn VÖ TiÒm Èn C©n	0;103;642;1	1	2	6			30000;30038;30043;30198		shimen5	
 395	Thiªn Thñ ThÇn VÖ TiÒm Èn C©n	0;103;643;1	2	3	6			30000;30038;30043;30198		shimen5	
 396	Thiªn Thñ ThÇn VÖ TiÒm Èn C©n	0;103;644;1	2	4	6			30000;30038;30043;30198		shimen5	
-397	Kim Quang Th¸nh N÷ PhËt LÖ KÕ	0;103;841;1	2	3	8			30000;30038;30043;30198		shimen5	
-398	Kim Quang Th¸nh N÷ PhËt LÖ KÕ	0;103;842;1	2	4	8			30000;30038;30043;30198		shimen5	
+397	Golden Light Holy Maiden Buddha Grace Hairpin	0;103;841;1	2	3	8			30000;30038;30043;30198		shimen5	
+398	Golden Light Holy Maiden Buddha Grace Hairpin	0;103;842;1	2	4	8			30000;30038;30043;30198		shimen5	
 399	Thiªn ¢m Th¸nh N÷ PhËt VËn KÕ	0;103;941;1	2	3	9			30000;30038;30043;30198		shimen5	
 400	Thiªn ¢m Th¸nh N÷ PhËt VËn KÕ	0;103;942;1	2	4	9			30000;30038;30043;30198		shimen5	
 401	ChÊp Ph¸p Phï T«n C©n	0;103;1141;1	1	1	11			30000;30038;30043;30198		shimen5	
 402	ChÊp Ph¸p Phï T«n C©n	0;103;1142;1	1	2	11			30000;30038;30043;30198		shimen5	
 403	ChÊp Ph¸p Phï T«n C©n	0;103;1143;1	2	3	11			30000;30038;30043;30198		shimen5	
 404	ChÊp Ph¸p Phï T«n C©n	0;103;1144;1	2	4	11			30000;30038;30043;30198		shimen5	
-405	Ch­ëng Bæng Long Chóng C©n	0;103;1241;1	1	1	12			30000;30038;30043;30198		shimen5	
-406	Ch­ëng Bæng Long Chóng C©n	0;103;1242;1	1	2	12			30000;30038;30043;30198		shimen5	
-407	Ch­ëng Bæng Long Chóng C©n	0;103;1243;1	2	3	12			30000;30038;30043;30198		shimen5	
-408	Ch­ëng Bæng Long Chóng C©n	0;103;1244;1	2	4	12			30000;30038;30043;30198		shimen5	
+405	Soaring Dragon Palm Bandana	0;103;1241;1	1	1	12			30000;30038;30043;30198		shimen5	
+406	Soaring Dragon Palm Bandana	0;103;1242;1	1	2	12			30000;30038;30043;30198		shimen5	
+407	Soaring Dragon Palm Bandana	0;103;1243;1	2	3	12			30000;30038;30043;30198		shimen5	
+408	Soaring Dragon Palm Bandana	0;103;1244;1	2	4	12			30000;30038;30043;30198		shimen5	
 409	Th­îng Thanh ThÇn Kh«ng C©n	0;103;1441;1	1	1	14			30000;30038;30043;30198		shimen5	
 410	Th­îng Thanh ThÇn Kh«ng C©n	0;103;1442;1	1	2	14			30000;30038;30043;30198		shimen5	
 411	Th­îng Thanh ThÇn Kh«ng C©n	0;103;1443;1	2	3	14			30000;30038;30043;30198		shimen5	
 412	Th­îng Thanh ThÇn Kh«ng C©n	0;103;1444;1	2	4	14			30000;30038;30043;30198		shimen5	
-413	Tö Tiªu Ngù Kh«ng C©n	0;103;1541;1	1	1	15			30000;30038;30043;30198		shimen5	
-414	Tö Tiªu Ngù Kh«ng C©n	0;103;1542;1	1	2	15			30000;30038;30043;30198		shimen5	
-415	Tö Tiªu Ngù Kh«ng C©n	0;103;1543;1	2	3	15			30000;30038;30043;30198		shimen5	
-416	Tö Tiªu Ngù Kh«ng C©n	0;103;1544;1	2	4	15			30000;30038;30043;30198		shimen5	
+413	Purple Cloud Void-Riding Bandana	0;103;1541;1	1	1	15			30000;30038;30043;30198		shimen5	
+414	Purple Cloud Void-Riding Bandana	0;103;1542;1	1	2	15			30000;30038;30043;30198		shimen5	
+415	Purple Cloud Void-Riding Bandana	0;103;1543;1	2	3	15			30000;30038;30043;30198		shimen5	
+416	Purple Cloud Void-Riding Bandana	0;103;1544;1	2	4	15			30000;30038;30043;30198		shimen5	
 417	TrÊn Qu©n V« Song ChiÕn Kh«i	0;103;1741;1	1	1	17			30000;30038;30043;30198		shimen5	
 418	TrÊn Qu©n V« Song ChiÕn Kh«i	0;103;1742;1	1	2	17			30000;30038;30043;30198		shimen5	
 419	TrÊn Qu©n V« Song ChiÕn Kh«i	0;103;1743;1	2	3	17			30000;30038;30043;30198		shimen5	
@@ -459,34 +459,34 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 458	Thiªn Thñ ThÇn VÖ TiÒm Èn Phôc	0;100;642;1	1	2	6			30000;30039;30044;30198		shimen5	
 459	Thiªn Thñ ThÇn VÖ TiÒm Èn Phôc	0;100;643;1	2	3	6			30000;30039;30044;30198		shimen5	
 460	Thiªn Thñ ThÇn VÖ TiÒm Èn Phôc	0;100;644;1	2	4	6			30000;30039;30044;30198		shimen5	
-461	Kim Quang Th¸nh N÷ PhËt LÖ Y	0;100;841;1	2	3	8			30000;30039;30044;30198		shimen5	
-462	Kim Quang Th¸nh N÷ PhËt LÖ Y	0;100;842;1	2	4	8			30000;30039;30044;30198		shimen5	
+461	Golden Light Holy Maiden Buddha Grace Garment	0;100;841;1	2	3	8			30000;30039;30044;30198		shimen5	
+462	Golden Light Holy Maiden Buddha Grace Garment	0;100;842;1	2	4	8			30000;30039;30044;30198		shimen5	
 463	Thiªn ¢m Th¸nh N÷ PhËt VËn Y	0;100;941;1	2	3	9			30000;30039;30044;30198		shimen5	
 464	Thiªn ¢m Th¸nh N÷ PhËt VËn Y	0;100;942;1	2	4	9			30000;30039;30044;30198		shimen5	
 465	ChÊp Ph¸p Phï T«n Y	0;100;1141;1	1	1	11			30000;30039;30044;30198		shimen5	
 466	ChÊp Ph¸p Phï T«n Y	0;100;1142;1	1	2	11			30000;30039;30044;30198		shimen5	
 467	ChÊp Ph¸p Phï T«n Y	0;100;1143;1	2	3	11			30000;30039;30044;30198		shimen5	
 468	ChÊp Ph¸p Phï T«n Y	0;100;1144;1	2	4	11			30000;30039;30044;30198		shimen5	
-469	Ch­ëng Bæng Long Chóng Y	0;100;1241;1	1	1	12			30000;30039;30044;30198		shimen5	
-470	Ch­ëng Bæng Long Chóng Y	0;100;1242;1	1	2	12			30000;30039;30044;30198		shimen5	
-471	Ch­ëng Bæng Long Chóng Y	0;100;1243;1	2	3	12			30000;30039;30044;30198		shimen5	
-472	Ch­ëng Bæng Long Chóng Y	0;100;1244;1	2	4	12			30000;30039;30044;30198		shimen5	
+469	Soaring Dragon Palm Robe	0;100;1241;1	1	1	12			30000;30039;30044;30198		shimen5	
+470	Soaring Dragon Palm Robe	0;100;1242;1	1	2	12			30000;30039;30044;30198		shimen5	
+471	Soaring Dragon Palm Robe	0;100;1243;1	2	3	12			30000;30039;30044;30198		shimen5	
+472	Soaring Dragon Palm Robe	0;100;1244;1	2	4	12			30000;30039;30044;30198		shimen5	
 473	Th­îng Thanh ThÇn Kh«ng Bµo	0;100;1441;1	1	1	14			30000;30039;30044;30198		shimen5	
 474	Th­îng Thanh ThÇn Kh«ng Bµo	0;100;1442;1	1	2	14			30000;30039;30044;30198		shimen5	
 475	Th­îng Thanh ThÇn Kh«ng Bµo	0;100;1443;1	2	3	14			30000;30039;30044;30198		shimen5	
 476	Th­îng Thanh ThÇn Kh«ng Bµo	0;100;1444;1	2	4	14			30000;30039;30044;30198		shimen5	
-477	Tö Tiªu Ngù Kh«ng Phôc	0;100;1541;1	1	1	15			30000;30039;30044;30198		shimen5	
-478	Tö Tiªu Ngù Kh«ng Phôc	0;100;1542;1	1	2	15			30000;30039;30044;30198		shimen5	
-479	Tö Tiªu Ngù Kh«ng Phôc	0;100;1543;1	2	3	15			30000;30039;30044;30198		shimen5	
-480	Tö Tiªu Ngù Kh«ng Phôc	0;100;1544;1	2	4	15			30000;30039;30044;30198		shimen5	
-481	TrÊn Qu©n V« Song ChiÕn kh¶i	0;100;1741;1	1	1	17			30000;30039;30044;30198		shimen5	
-482	TrÊn Qu©n V« Song ChiÕn kh¶i	0;100;1742;1	1	2	17			30000;30039;30044;30198		shimen5	
-483	TrÊn Qu©n V« Song ChiÕn kh¶i	0;100;1743;1	2	3	17			30000;30039;30044;30198		shimen5	
-484	TrÊn Qu©n V« Song ChiÕn kh¶i	0;100;1744;1	2	4	17			30000;30039;30044;30198		shimen5	
-485	Chinh Lç B¸ Gi¶ ChiÕn kh¶i	0;100;1841;1	1	1	18			30000;30039;30044;30198		shimen5	
-486	Chinh Lç B¸ Gi¶ ChiÕn kh¶i	0;100;1842;1	1	2	18			30000;30039;30044;30198		shimen5	
-487	Chinh Lç B¸ Gi¶ ChiÕn kh¶i	0;100;1843;1	2	3	18			30000;30039;30044;30198		shimen5	
-488	Chinh Lç B¸ Gi¶ ChiÕn kh¶i	0;100;1844;1	2	4	18			30000;30039;30044;30198		shimen5	
+477	Purple Cloud Void-Riding Robe	0;100;1541;1	1	1	15			30000;30039;30044;30198		shimen5	
+478	Purple Cloud Void-Riding Robe	0;100;1542;1	1	2	15			30000;30039;30044;30198		shimen5	
+479	Purple Cloud Void-Riding Robe	0;100;1543;1	2	3	15			30000;30039;30044;30198		shimen5	
+480	Purple Cloud Void-Riding Robe	0;100;1544;1	2	4	15			30000;30039;30044;30198		shimen5	
+481	Garrison Peerless Battle Armor	0;100;1741;1	1	1	17			30000;30039;30044;30198		shimen5	
+482	Garrison Peerless Battle Armor	0;100;1742;1	1	2	17			30000;30039;30044;30198		shimen5	
+483	Garrison Peerless Battle Armor	0;100;1743;1	2	3	17			30000;30039;30044;30198		shimen5	
+484	Garrison Peerless Battle Armor	0;100;1744;1	2	4	17			30000;30039;30044;30198		shimen5	
+485	Conquest Overlord Battle Armor	0;100;1841;1	1	1	18			30000;30039;30044;30198		shimen5	
+486	Conquest Overlord Battle Armor	0;100;1842;1	1	2	18			30000;30039;30044;30198		shimen5	
+487	Conquest Overlord Battle Armor	0;100;1843;1	2	3	18			30000;30039;30044;30198		shimen5	
+488	Conquest Overlord Battle Armor	0;100;1844;1	2	4	18			30000;30039;30044;30198		shimen5	
 489	Diªm La T«n Gi¶ Ma Hån Y	0;100;2041;1	1	1	20			30000;30039;30044;30198		shimen5	
 490	Diªm La T«n Gi¶ Ma Hån Y	0;100;2042;1	1	2	20			30000;30039;30044;30198		shimen5	
 491	Diªm La T«n Gi¶ Ma Hån Y	0;100;2043;1	2	3	20			30000;30039;30044;30198		shimen5	
@@ -523,26 +523,26 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 522	Thiªn Thñ ThÇn VÖ TiÒm Èn Trang	0;101;642;1	1	2	6			30000;30040;30045;30198		shimen5	
 523	Thiªn Thñ ThÇn VÖ TiÒm Èn Trang	0;101;643;1	2	3	6			30000;30040;30045;30198		shimen5	
 524	Thiªn Thñ ThÇn VÖ TiÒm Èn Trang	0;101;644;1	2	4	6			30000;30040;30045;30198		shimen5	
-525	Kim Quang Th¸nh N÷ PhËt LÖ Trang	0;101;841;1	2	3	8			30000;30040;30045;30198		shimen5	
-526	Kim Quang Th¸nh N÷ PhËt LÖ Trang	0;101;842;1	2	4	8			30000;30040;30045;30198		shimen5	
+525	Golden Light Holy Maiden Buddha Grace Robe	0;101;841;1	2	3	8			30000;30040;30045;30198		shimen5	
+526	Golden Light Holy Maiden Buddha Grace Robe	0;101;842;1	2	4	8			30000;30040;30045;30198		shimen5	
 527	Thiªn ¢m Th¸nh N÷ PhËt VËn Trang	0;101;941;1	2	3	9			30000;30040;30045;30198		shimen5	
 528	Thiªn ¢m Th¸nh N÷ PhËt VËn Trang	0;101;942;1	2	4	9			30000;30040;30045;30198		shimen5	
 529	ChÊp Ph¸p Phï T«n Trang	0;101;1141;1	1	1	11			30000;30040;30045;30198		shimen5	
 530	ChÊp Ph¸p Phï T«n Trang	0;101;1142;1	1	2	11			30000;30040;30045;30198		shimen5	
 531	ChÊp Ph¸p Phï T«n Trang	0;101;1143;1	2	3	11			30000;30040;30045;30198		shimen5	
 532	ChÊp Ph¸p Phï T«n Trang	0;101;1144;1	2	4	11			30000;30040;30045;30198		shimen5	
-533	Ch­ëng Bæng Long Chóng Trang	0;101;1241;1	1	1	12			30000;30040;30045;30198		shimen5	
-534	Ch­ëng Bæng Long Chóng Trang	0;101;1242;1	1	2	12			30000;30040;30045;30198		shimen5	
-535	Ch­ëng Bæng Long Chóng Trang	0;101;1243;1	2	3	12			30000;30040;30045;30198		shimen5	
-536	Ch­ëng Bæng Long Chóng Trang	0;101;1244;1	2	4	12			30000;30040;30045;30198		shimen5	
+533	Soaring Dragon Palm Garb	0;101;1241;1	1	1	12			30000;30040;30045;30198		shimen5	
+534	Soaring Dragon Palm Garb	0;101;1242;1	1	2	12			30000;30040;30045;30198		shimen5	
+535	Soaring Dragon Palm Garb	0;101;1243;1	2	3	12			30000;30040;30045;30198		shimen5	
+536	Soaring Dragon Palm Garb	0;101;1244;1	2	4	12			30000;30040;30045;30198		shimen5	
 537	Th­îng Thanh ThÇn Kh«ng Trang	0;101;1441;1	1	1	14			30000;30040;30045;30198		shimen5	
 538	Th­îng Thanh ThÇn Kh«ng Trang	0;101;1442;1	1	2	14			30000;30040;30045;30198		shimen5	
 539	Th­îng Thanh ThÇn Kh«ng Trang	0;101;1443;1	2	3	14			30000;30040;30045;30198		shimen5	
 540	Th­îng Thanh ThÇn Kh«ng Trang	0;101;1444;1	2	4	14			30000;30040;30045;30198		shimen5	
-541	Tö Tiªu Ngù Kh«ng Trang	0;101;1541;1	1	1	15			30000;30040;30045;30198		shimen5	
-542	Tö Tiªu Ngù Kh«ng Trang	0;101;1542;1	1	2	15			30000;30040;30045;30198		shimen5	
-543	Tö Tiªu Ngù Kh«ng Trang	0;101;1543;1	2	3	15			30000;30040;30045;30198		shimen5	
-544	Tö Tiªu Ngù Kh«ng Trang	0;101;1544;1	2	4	15			30000;30040;30045;30198		shimen5	
+541	Purple Cloud Void-Riding Garb	0;101;1541;1	1	1	15			30000;30040;30045;30198		shimen5	
+542	Purple Cloud Void-Riding Garb	0;101;1542;1	1	2	15			30000;30040;30045;30198		shimen5	
+543	Purple Cloud Void-Riding Garb	0;101;1543;1	2	3	15			30000;30040;30045;30198		shimen5	
+544	Purple Cloud Void-Riding Garb	0;101;1544;1	2	4	15			30000;30040;30045;30198		shimen5	
 545	TrÊn Qu©n V« Song Trang	0;101;1741;1	1	1	17			30000;30040;30045;30198		shimen5	
 546	TrÊn Qu©n V« Song Trang	0;101;1742;1	1	2	17			30000;30040;30045;30198		shimen5	
 547	TrÊn Qu©n V« Song Trang	0;101;1743;1	2	3	17			30000;30040;30045;30198		shimen5	
@@ -599,8 +599,8 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 598	Thiªn Thñ ThÇn VÖ TiÒm Èn Hoµn	0;102;648;1	2	4	6			30000;30041;30046;30198		shimen5	
 599	Kim Quang Th¸nh N÷ PhËt LÖ Giíi	0;102;841;1	2	3	8			30000;30041;30046;30198		shimen5	
 600	Kim Quang Th¸nh N÷ PhËt LÖ Giíi	0;102;842;1	2	4	8			30000;30041;30046;30198		shimen5	
-601	Kim Quang Th¸nh N÷ PhËt LÖ ChØ	0;102;845;1	2	3	8			30000;30041;30046;30198		shimen5	
-602	Kim Quang Th¸nh N÷ PhËt LÖ ChØ	0;102;846;1	2	4	8			30000;30041;30046;30198		shimen5	
+601	Golden Light Holy Maiden Buddha Grace Ring	0;102;845;1	2	3	8			30000;30041;30046;30198		shimen5	
+602	Golden Light Holy Maiden Buddha Grace Ring	0;102;846;1	2	4	8			30000;30041;30046;30198		shimen5	
 603	Thiªn ¢m Th¸nh N÷ PhËt VËn Giíi	0;102;941;1	2	3	9			30000;30041;30046;30198		shimen5	
 604	Thiªn ¢m Th¸nh N÷ PhËt VËn Giíi	0;102;942;1	2	4	9			30000;30041;30046;30198		shimen5	
 605	Thiªn ¢m Th¸nh N÷ PhËt VËn ChØ	0;102;945;1	2	3	9			30000;30041;30046;30198		shimen5	
@@ -613,10 +613,10 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 612	ChÊp Ph¸p Phï T«n Giíi	0;102;1146;1	1	2	11			30000;30041;30046;30198		shimen5	
 613	ChÊp Ph¸p Phï T«n Giíi	0;102;1147;1	2	3	11			30000;30041;30046;30198		shimen5	
 614	ChÊp Ph¸p Phï T«n Giíi	0;102;1148;1	2	4	11			30000;30041;30046;30198		shimen5	
-615	Ch­ëng Bæng Long Chóng Béi	0;102;1241;1	1	1	12			30000;30041;30046;30198		shimen5	
-616	Ch­ëng Bæng Long Chóng Béi	0;102;1242;1	1	2	12			30000;30041;30046;30198		shimen5	
-617	Ch­ëng Bæng Long Chóng Béi	0;102;1243;1	2	3	12			30000;30041;30046;30198		shimen5	
-618	Ch­ëng Bæng Long Chóng Béi	0;102;1244;1	2	4	12			30000;30041;30046;30198		shimen5	
+615	Soaring Dragon Palm Pendant	0;102;1241;1	1	1	12			30000;30041;30046;30198		shimen5	
+616	Soaring Dragon Palm Pendant	0;102;1242;1	1	2	12			30000;30041;30046;30198		shimen5	
+617	Soaring Dragon Palm Pendant	0;102;1243;1	2	3	12			30000;30041;30046;30198		shimen5	
+618	Soaring Dragon Palm Pendant	0;102;1244;1	2	4	12			30000;30041;30046;30198		shimen5	
 619	Ch­ëng Bæng Long Chóng Giíi	0;102;1245;1	1	1	12			30000;30041;30046;30198		shimen5	
 620	Ch­ëng Bæng Long Chóng Giíi	0;102;1246;1	1	2	12			30000;30041;30046;30198		shimen5	
 621	Ch­ëng Bæng Long Chóng Giíi	0;102;1247;1	2	3	12			30000;30041;30046;30198		shimen5	
@@ -633,26 +633,26 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 632	Tö Tiªu Ngù Kh«ng Giíi	0;102;1542;1	1	2	15			30000;30041;30046;30198		shimen5	
 633	Tö Tiªu Ngù Kh«ng Giíi	0;102;1543;1	2	3	15			30000;30041;30046;30198		shimen5	
 634	Tö Tiªu Ngù Kh«ng Giíi	0;102;1544;1	2	4	15			30000;30041;30046;30198		shimen5	
-635	Tö Tiªu Ngù Kh«ng Hoµn	0;102;1545;1	1	1	15			30000;30041;30046;30198		shimen5	
-636	Tö Tiªu Ngù Kh«ng Hoµn	0;102;1546;1	1	2	15			30000;30041;30046;30198		shimen5	
-637	Tö Tiªu Ngù Kh«ng Hoµn	0;102;1547;1	2	3	15			30000;30041;30046;30198		shimen5	
-638	Tö Tiªu Ngù Kh«ng Hoµn	0;102;1548;1	2	4	15			30000;30041;30046;30198		shimen5	
-639	TrÊn Qu©n V« Song Hæ Phï	0;102;1741;1	1	1	17			30000;30041;30046;30198		shimen5	
-640	TrÊn Qu©n V« Song Hæ Phï	0;102;1742;1	1	2	17			30000;30041;30046;30198		shimen5	
-641	TrÊn Qu©n V« Song Hæ Phï	0;102;1743;1	2	3	17			30000;30041;30046;30198		shimen5	
-642	TrÊn Qu©n V« Song Hæ Phï	0;102;1744;1	2	4	17			30000;30041;30046;30198		shimen5	
-643	TrÊn Qu©n V« Song LÖnh Kú	0;102;1745;1	1	1	17			30000;30041;30046;30198		shimen5	
-644	TrÊn Qu©n V« Song LÖnh Kú	0;102;1746;1	1	2	17			30000;30041;30046;30198		shimen5	
-645	TrÊn Qu©n V« Song LÖnh Kú	0;102;1747;1	2	3	17			30000;30041;30046;30198		shimen5	
-646	TrÊn Qu©n V« Song LÖnh Kú	0;102;1748;1	2	4	17			30000;30041;30046;30198		shimen5	
-647	Chinh Lç B¸ Gi¶ Hæ Phï	0;102;1841;1	1	1	18			30000;30041;30046;30198		shimen5	
-648	Chinh Lç B¸ Gi¶ Hæ Phï	0;102;1842;1	1	2	18			30000;30041;30046;30198		shimen5	
-649	Chinh Lç B¸ Gi¶ Hæ Phï	0;102;1843;1	2	3	18			30000;30041;30046;30198		shimen5	
-650	Chinh Lç B¸ Gi¶ Hæ Phï	0;102;1844;1	2	4	18			30000;30041;30046;30198		shimen5	
-651	Chinh Lç B¸ Gi¶ LÖnh Kú	0;102;1845;1	1	1	18			30000;30041;30046;30198		shimen5	
-652	Chinh Lç B¸ Gi¶ LÖnh Kú	0;102;1846;1	1	2	18			30000;30041;30046;30198		shimen5	
-653	Chinh Lç B¸ Gi¶ LÖnh Kú	0;102;1847;1	2	3	18			30000;30041;30046;30198		shimen5	
-654	Chinh Lç B¸ Gi¶ LÖnh Kú	0;102;1848;1	2	4	18			30000;30041;30046;30198		shimen5	
+635	Purple Cloud Void-Riding Ring	0;102;1545;1	1	1	15			30000;30041;30046;30198		shimen5	
+636	Purple Cloud Void-Riding Ring	0;102;1546;1	1	2	15			30000;30041;30046;30198		shimen5	
+637	Purple Cloud Void-Riding Ring	0;102;1547;1	2	3	15			30000;30041;30046;30198		shimen5	
+638	Purple Cloud Void-Riding Ring	0;102;1548;1	2	4	15			30000;30041;30046;30198		shimen5	
+639	Garrison Peerless Tiger Tally	0;102;1741;1	1	1	17			30000;30041;30046;30198		shimen5	
+640	Garrison Peerless Tiger Tally	0;102;1742;1	1	2	17			30000;30041;30046;30198		shimen5	
+641	Garrison Peerless Tiger Tally	0;102;1743;1	2	3	17			30000;30041;30046;30198		shimen5	
+642	Garrison Peerless Tiger Tally	0;102;1744;1	2	4	17			30000;30041;30046;30198		shimen5	
+643	Garrison Peerless Command Banner	0;102;1745;1	1	1	17			30000;30041;30046;30198		shimen5	
+644	Garrison Peerless Command Banner	0;102;1746;1	1	2	17			30000;30041;30046;30198		shimen5	
+645	Garrison Peerless Command Banner	0;102;1747;1	2	3	17			30000;30041;30046;30198		shimen5	
+646	Garrison Peerless Command Banner	0;102;1748;1	2	4	17			30000;30041;30046;30198		shimen5	
+647	Conquest Overlord Tiger Tally	0;102;1841;1	1	1	18			30000;30041;30046;30198		shimen5	
+648	Conquest Overlord Tiger Tally	0;102;1842;1	1	2	18			30000;30041;30046;30198		shimen5	
+649	Conquest Overlord Tiger Tally	0;102;1843;1	2	3	18			30000;30041;30046;30198		shimen5	
+650	Conquest Overlord Tiger Tally	0;102;1844;1	2	4	18			30000;30041;30046;30198		shimen5	
+651	Conquest Overlord Command Banner	0;102;1845;1	1	1	18			30000;30041;30046;30198		shimen5	
+652	Conquest Overlord Command Banner	0;102;1846;1	1	2	18			30000;30041;30046;30198		shimen5	
+653	Conquest Overlord Command Banner	0;102;1847;1	2	3	18			30000;30041;30046;30198		shimen5	
+654	Conquest Overlord Command Banner	0;102;1848;1	2	4	18			30000;30041;30046;30198		shimen5	
 655	Diªm La T«n Gi¶ Ma Hån HuyÕt Giíi	0;102;2041;1	1	1	20			30000;30041;30046;30198		shimen5	
 656	Diªm La T«n Gi¶ Ma Hån HuyÕt Giíi	0;102;2042;1	1	2	20			30000;30041;30046;30198		shimen5	
 657	Diªm La T«n Gi¶ Ma Hån HuyÕt Giíi	0;102;2043;1	2	3	20			30000;30041;30046;30198		shimen5	
@@ -733,18 +733,18 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 732	Th­îng Thanh ThÇn Kh«ng KiÕm	0;2;1442;1	1	2	14			30000;30042;30047;30199		shimen5	
 733	Th­îng Thanh ThÇn Kh«ng KiÕm	0;2;1443;1	2	3	14			30000;30042;30047;30199		shimen5	
 734	Th­îng Thanh ThÇn Kh«ng KiÕm	0;2;1444;1	2	4	14			30000;30042;30047;30199		shimen5	
-735	Tö Tiªu Ngù Kh«ng Bót	0;9;1541;1	1	1	15			30000;30042;30047;30199		shimen5	
-736	Tö Tiªu Ngù Kh«ng Bót	0;9;1542;1	1	2	15			30000;30042;30047;30199		shimen5	
-737	Tö Tiªu Ngù Kh«ng Bót	0;9;1543;1	2	3	15			30000;30042;30047;30199		shimen5	
-738	Tö Tiªu Ngù Kh«ng Bót	0;9;1544;1	2	4	15			30000;30042;30047;30199		shimen5	
-739	TrÊn Qu©n V« Song Th­¬ng	0;6;1741;1	1	1	17			30000;30042;30047;30199		shimen5	
-740	TrÊn Qu©n V« Song Th­¬ng	0;6;1742;1	1	2	17			30000;30042;30047;30199		shimen5	
-741	TrÊn Qu©n V« Song Th­¬ng	0;6;1743;1	2	3	17			30000;30042;30047;30199		shimen5	
-742	TrÊn Qu©n V« Song Th­¬ng	0;6;1744;1	2	4	17			30000;30042;30047;30199		shimen5	
-743	Chinh Lç B¸ Gi¶ Cung	0;4;1841;1	1	1	18			30000;30042;30047;30199		shimen5	
-744	Chinh Lç B¸ Gi¶ Cung	0;4;1842;1	1	2	18			30000;30042;30047;30199		shimen5	
-745	Chinh Lç B¸ Gi¶ Cung	0;4;1843;1	2	3	18			30000;30042;30047;30199		shimen5	
-746	Chinh Lç B¸ Gi¶ Cung	0;4;1844;1	2	4	18			30000;30042;30047;30199		shimen5	
+735	Purple Cloud Void-Riding Brush	0;9;1541;1	1	1	15			30000;30042;30047;30199		shimen5	
+736	Purple Cloud Void-Riding Brush	0;9;1542;1	1	2	15			30000;30042;30047;30199		shimen5	
+737	Purple Cloud Void-Riding Brush	0;9;1543;1	2	3	15			30000;30042;30047;30199		shimen5	
+738	Purple Cloud Void-Riding Brush	0;9;1544;1	2	4	15			30000;30042;30047;30199		shimen5	
+739	Garrison Peerless Spear	0;6;1741;1	1	1	17			30000;30042;30047;30199		shimen5	
+740	Garrison Peerless Spear	0;6;1742;1	1	2	17			30000;30042;30047;30199		shimen5	
+741	Garrison Peerless Spear	0;6;1743;1	2	3	17			30000;30042;30047;30199		shimen5	
+742	Garrison Peerless Spear	0;6;1744;1	2	4	17			30000;30042;30047;30199		shimen5	
+743	Conquest Overlord Bow	0;4;1841;1	1	1	18			30000;30042;30047;30199		shimen5	
+744	Conquest Overlord Bow	0;4;1842;1	1	2	18			30000;30042;30047;30199		shimen5	
+745	Conquest Overlord Bow	0;4;1843;1	2	3	18			30000;30042;30047;30199		shimen5	
+746	Conquest Overlord Bow	0;4;1844;1	2	4	18			30000;30042;30047;30199		shimen5	
 747	Diªm La T«n Gi¶ Ma Hån NhÉn	0;7;2041;1	1	1	20			30000;30042;30047;30199		shimen5	
 748	Diªm La T«n Gi¶ Ma Hån NhÉn	0;7;2042;1	1	2	20			30000;30042;30047;30199		shimen5	
 749	Diªm La T«n Gi¶ Ma Hån NhÉn	0;7;2043;1	2	3	20			30000;30042;30047;30199		shimen5	
@@ -1215,26 +1215,26 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 1362	DiÖu D­¬ng-Ma ¶nh ThÇn T«ng Tr¶o	0;11;9009;1			27		1	30000;30125;1007;1027;;		yaoyang_weapon	
 1363	DiÖu D­¬ng-Tª V©n Tiªn Tö PhiÕn	0;13;9010;1			29		1	30000;30125;1008;1028;30618		yaoyang_weapon	
 1364	DiÖu D­¬ng-Phi H¹ Tiªn Tö ¦u Lan Tiªu	0;12;9011;1			30		1	30000;30125;1009;1029;30619		yaoyang_weapon	
-1398	Long §»ng Tø H¶i Qu¸n	0;103;3056;1	1	1			1	1140			
-1399	Long §»ng Tø H¶i Qu¸n	0;103;3057;1	1	2			1	1140			
-1400	Long §»ng Tø H¶i Qu¸n	0;103;3058;1	2	3			1	1140			
-1401	Long §»ng Tø H¶i Qu¸n	0;103;3059;1	2	4			1	1140			
+1398	Dragon Soaring Four Seas Pass	0;103;3056;1	1	1			1	1140			
+1399	Dragon Soaring Four Seas Pass	0;103;3057;1	1	2			1	1140			
+1400	Dragon Soaring Four Seas Pass	0;103;3058;1	2	3			1	1140			
+1401	Dragon Soaring Four Seas Pass	0;103;3059;1	2	4			1	1140			
 1402	Phông Vò Cöu Thiªn Qu¸n	0;103;3060;1	1	1			1	1140			
 1403	Phông Vò Cöu Thiªn Qu¸n	0;103;3061;1	1	2			1	1140			
 1404	Phông Vò Cöu Thiªn Qu¸n	0;103;3062;1	2	3			1	1140			
 1405	Phông Vò Cöu Thiªn Qu¸n	0;103;3063;1	2	4			1	1140			
-1406	Long §»ng Tø H¶i Y	0;100;3056;1	1	1			1	1139			
-1407	Long §»ng Tø H¶i Y	0;100;3057;1	1	2			1	1139			
-1408	Long §»ng Tø H¶i Y	0;100;3058;1	2	3			1	1139			
-1409	Long §»ng Tø H¶i Y	0;100;3059;1	2	4			1	1139			
+1406	Long Dang Tu Hai Robe	0;100;3056;1	1	1			1	1139			
+1407	Long Dang Tu Hai Robe	0;100;3057;1	1	2			1	1139			
+1408	Long Dang Tu Hai Robe	0;100;3058;1	2	3			1	1139			
+1409	Long Dang Tu Hai Robe	0;100;3059;1	2	4			1	1139			
 1410	Phông Vò Cöu Thiªn Y	0;100;3060;1	1	1			1	1139			
 1411	Phông Vò Cöu Thiªn Y	0;100;3061;1	1	2			1	1139			
 1412	Phông Vò Cöu Thiªn Y	0;100;3062;1	2	3			1	1139			
 1413	Phông Vò Cöu Thiªn Y	0;100;3063;1	2	4			1	1139			
-1414	Long §»ng Tø H¶i Trang	0;101;3056;1	1	1			1	1138			
-1415	Long §»ng Tø H¶i Trang	0;101;3057;1	1	2			1	1138			
-1416	Long §»ng Tø H¶i Trang	0;101;3058;1	2	3			1	1138			
-1417	Long §»ng Tø H¶i Trang	0;101;3059;1	2	4			1	1138			
+1414	Long Dang Tu Hai Greaves	0;101;3056;1	1	1			1	1138			
+1415	Long Dang Tu Hai Greaves	0;101;3057;1	1	2			1	1138			
+1416	Long Dang Tu Hai Greaves	0;101;3058;1	2	3			1	1138			
+1417	Long Dang Tu Hai Greaves	0;101;3059;1	2	4			1	1138			
 1418	Phông Vò Cöu Thiªn Trang	0;101;3060;1	1	1			1	1138			
 1419	Phông Vò Cöu Thiªn Trang	0;101;3061;1	1	2			1	1138			
 1420	Phông Vò Cöu Thiªn Trang	0;101;3062;1	2	3			1	1138			
@@ -1363,22 +1363,22 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 1544	Hiªn Viªn §Êu	0;102;8838;1			29		1	1138			
 1545	Hiªn Viªn ChiÕn	0;102;8839;1			30		1	1138			
 1546	Hiªn Viªn §Êu	0;102;8848;1			30		1	1138			
-3402	Kim Cang B¸t Nh· Ch©n QuyÓn 	0;107;204;1			2		1	30079			
-3403	TiÒm Long Tóc DiÖt Ch©n QuyÓn	0;107;205;1			4		1	30079			
-3404	V« TrÇn Bå §Ò Ch©n QuyÓn	0;107;206;1			3		1	30079			
+3402	Vajra Prajna True Manual	0;107;204;1			2		1	30079			
+3403	Hidden Dragon Annihilation True Manual	0;107;205;1			4		1	30079			
+3404	Dustless Bodhi True Manual	0;107;206;1			3		1	30079			
 3405	Thiªn La Liªn Ch©u Ch©n QuyÓn	0;107;207;1			6		1	30079			
-3406	Nh­ ý Kim §Ønh Ch©n QuyÓn	0;107;208;1			8		1	30079			
-3407	BÝch H¶i TuyÖt ¢m Ch©n QuyÓn	0;107;209;1			9		1	30079			
-3408	Hçn §én TrÊn Nh¹c Ch©n QuyÓn	0;107;210;1			11		1	30079			
+3406	Wishful Golden Top True Manual	0;107;208;1			8		1	30079			
+3407	Azure Sea Silent Sound True Manual	0;107;209;1			9		1	30079			
+3408	Chaos Town Mountain True Manual	0;107;210;1			11		1	30079			
 3409	Quú Thiªn Du Long Ch©n QuyÓn	0;107;211;1			12		1	30079			
 3410	HuyÒn ¶nh Mª T«ng Ch©n QuyÓn	0;107;212;1			14		1	30079			
-3411	Qu©n Tö §íi Phong Ch©n QuyÓn	0;107;213;1			15		1	30079			
-3412	TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn	0;107;214;1			17		1	30079			
+3411	Gentleman Welcomes the Wind True Manual	0;107;213;1			15		1	30079			
+3412	Town Army Flying Dragon Spear True Manual	0;107;214;1			17		1	30079			
 3413	Xuyªn V©n L¹c Hång Ch©n QuyÓn	0;107;215;1			18		1	30079			
 3414	HuyÒn Minh Phong Ma Ch©n QuyÓn	0;107;216;1			20		1	30079			
 3415	Linh Cæ HuyÒn Tµ Ch©n QuyÓn	0;107;217;1			21		1	30079			
 3416	Cöu Thiªn Phong L«i Ch©n QuyÓn	0;107;218;1			23		1	30079			
-3417	Håi Phong Tr¶m NhËt Ch©n QuyÓn	0;107;219;1			25		1	30079			
+3417	Returning Wind Slashing Sun Fist Manual	0;107;219;1			25		1	30079			
 3418	Phô Kú Hµnh TrËn Ch©n QuyÓn	0;107;220;1			26		1	30079			
 3419	Ng­ng HuyÕt Phong Hån Ch©n QuyÓn	0;107;221;1			27		1	30079			
 3420	Hång TrÇn Tóy Méng Ch©n QuyÓn	0;107;222;1			29		1	30079			
@@ -1387,15 +1387,15 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 30002	B¸o Vµng B¶o B¶o	0;105;30030;1	0	0	0			30002;;;;;;;;;;;;;;			
 30003	Kim Mao Ng­u B¶o B¶o	0;105;30022;1	0	0	0			30003;;;;;;;;;;;;;;			
 30004	Kim Kú L©n B¶o B¶o	0;105;30017;1	0	0	0			30004;;;;;;;;;;;;;;			
-30005	Ng«i sao may m¾n	2;1;30191;1	0	0	0			30005;;;;;;;;;;;;;;			
+30005	Lucky Star	2;1;30191;1	0	0	0			30005;;;;;;;;;;;;;;			
 30006	N÷ Oa B¶o H¹p	2;1;30154;10	0	0	0			30006;;;;;;;;;;;;;;			
 30007	Ngò Hµnh HuyÒn Th¹ch	2;1;30302;10						30007			
 30008	Vâ l©m b¸o míi	2;1;30314;1						30008			
 30009	Th¸nh VËt S­ M«n	2;1;30311;1						30009			
 30010	TiÓu truyÒn c«ng ®¬n	2;1;30312;1						30010			
-30011	M¶nh Tu Ch©n YÕu QuyÕt	2;1;30315;1						30011			
+30011	Cultivation Truth Fragment	2;1;30315;1						30011			
 30012	TiÓu B¹ch C©u hoµn	2;1;30307;1						30012			
-30013	TiÓu Tam Thanh Hoµn	2;1;30308;1						30013			
+30013	Small Three Purity Ring	2;1;30308;1						30013			
 30014	TiÓu Lôc ThÇn Hoµn	2;1;30309;1						30014			
 30015	TruyÒn C«ng §¬n	2;1;30313;1						30015			
 30016	Thiªn M«n Hång D­îc	1;0;30003;9						30016			
@@ -1403,11 +1403,11 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 30018	TiÓu Nh©n s©m qu¶	2;0;552;1						30018			
 30019	Tinh luyÖn B¨ng Th¹ch	2;1;533;1						30019			
 30020	Ngò Hµnh HuyÒn Th¹ch	2;1;30302;10						30020			
-30021	Båi Nguyªn §¬n	2;1;30351;1						30021			
-30022	Tiªu KiÕp t¸n	2;0;141;1						30022			
+30021	Replenishing Origin Pill	2;1;30351;1						30021			
+30022	Tribulation Dispel Powder	2;0;141;1						30022			
 30023	Cæ Thiªn M«n B¶o R­¬ng	2;1;30374;1						30023			
 30024	Kh¾c b¶n	2;1;30373;1						30024			
-30025	TÈy Tñy linh ®¬n	2;0;137;1						30025			
+30025	Marrow-Cleansing Spirit Pill	2;0;137;1						30025			
 30026	Thiªn M«n Hång D­îc	1;0;30003;9						30048			
 30027	Thiªn M«n Hång D­îc	1;0;30004;9						30049			
 30028	ThÇn N«ng §¬n	2;1;343;1						30050			
@@ -1420,7 +1420,7 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 30035	S­ m«n lÖnh kú	2;1;1017;1						30057			
 30036	Hoµng Kim §¹i Hång Bao (trèng)	2;1;538;1						30058			
 30037	Tö Kim Hång Bao (trèng)	2;1;536;1						30059	720		
-30038	Tø Linh Quy Nguyªn §¬n	2;1;30352;1						30060	720		
+30038	Four Spirits Return to Origin Pill	2;1;30352;1						30060	720		
 30039	Qu©n C«ng §¹i	2;1;9998;1						30061	720		
 30040	Thiªn Th¹ch Tinh Th¹ch	2;1;1009;1						30062	168		
 30041	B¹ch Kim §¹i Hång Bao (kh«ng)	2;1;30228;1						30063	720		
@@ -1783,12 +1783,12 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 30398	Vâ l©m b¸o míi	2;1;30314;1						30132	720		
 30399	Th¸nh VËt S­ M«n	2;1;30311;1						30133	720		
 30400	TruyÒn C«ng §¬n	2;1;30313;1						30134	720		
-30401	M¶nh Tu Ch©n YÕu QuyÕt	2;1;30315;1						30135	720		
+30401	Cultivation Truth Fragment	2;1;30315;1						30135	720		
 30402	TiÓu Nh©n s©m qu¶	2;0;552;1						30136	720		
 30403	H¾c Ngäc §o¹n Tôc Cao	1;0;6;9						30137	720		
 30404	V¹n VËt Quy Nguyªn §¬n	1;0;11;9						30138	720		
-30405	Sinh Sinh Hãa T¸n	1;0;16;9						30139	720		
-30406	Tiªu KiÕp t¸n	2;0;141;1						30140	720		
+30405	Life-Begetting Powder	1;0;16;9						30139	720		
+30406	Tribulation Dispel Powder	2;0;141;1						30140	720		
 30407	Tinh luyÖn B¨ng Th¹ch	2;1;533;1						30141	720		
 30408	Ma §¹o Th¹ch cÊp 2	2;1;30429;1				3100;5		30142	720		
 30409	Th«ng Thiªn LÖnh	2;1;30409;1				3101;10		30143	720		
@@ -1796,7 +1796,7 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 30411	Linh Th¹ch Nguyªn Th¹ch cÊp 3	2;1;30415;1						30145	720		
 30412	Linh Th¹ch Nguyªn Th¹ch cÊp 4	2;1;30416;1						30146	720		
 30413	§¹i Nh©n s©m	2;0;553;1						30147	720		
-30414	§Êu hån	2;1;1157;1						30148	720		
+30414	Soul Duel	2;1;1157;1						30148	720		
 30415	ThÇn hµnh bÝ phæ	0;200;39;1						30149	720		
 30416	Th¸i DÞch Hçn Nguyªn C«ng §å	2;0;1082;1						30150	720		
 30417	Th¸i DÞch Hçn Nguyªn C«ng §å	2;0;1082;10						30151	720		
@@ -1849,13 +1849,13 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 30464	Thiªn HuyÔn Kh¾c B¶n cÊp 2	2;1;30407;1						30202	168		
 30465	TÈy T©m Th¹ch Kho¸ng	2;1;30536;1						30216			
 30466	LuyÖn L« ThiÕt Kho¸ng	2;1;30537;1						30217			
-30467	Tói Huy Ch­¬ng Dòng SÜ	2;1;30542;1						30213	168		
-30468	Tói Huy Ch­¬ng Anh Hïng	2;1;30543;1						30218			
+30467	Brave Warrior Medal Bag	2;1;30542;1						30213	168		
+30468	Hero Medal Bag	2;1;30543;1						30218			
 30469	ThiÕt Tinh cÊp 1	2;1;30533;1						30214			
 30470	ThiÕt Tinh cÊp 2	2;1;30534;1						30215			
 30471	ThiÕt Tinh cÊp 3	2;1;30535;1						30219			
-30472	BÝ Ng©n Chïy	2;1;30539;1						30220			
-30473	BÝ Ng©n To¶n	2;1;30538;1						30221			
+30472	Hidden Silver Mallet	2;1;30539;1						30220			
+30473	Hidden Silver Plate	2;1;30538;1						30221			
 30474	Tèy T©m Th¹ch Kho¸ng *10	2;1;30536;10						30224			
 30475	LuyÖn L« ThiÕt Kho¸ng*10	2;1;30537;10						30225			
 30476	Tinh ThiÕt cÊp 3*10	2;1;30535;10						30226			
@@ -1873,7 +1873,7 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 30488	Kim Mao Ng­u B¶o B¶o	0;105;30022;1					1	30000;30245;30248;30251;30254			
 30489	Hång Mao Ng­u B¶o B¶o	0;105;30023;1					1	30000;30245;30248;30251;30254			
 30490	Lam Mao Ng­u B¶o B¶o	0;105;30024;1					1	30000;30245;30248;30251;30254			
-30491	L¹c §µ Tr¾ng	0;105;148;1					1	30000;30257;30260;30263			
+30491	White Camel	0;105;148;1					1	30000;30257;30260;30263			
 30492	L¹c §µ X¸m	0;105;149;1					1	30000;30257;30260;30263			
 30493	¤ V©n §¹p TuyÕt B¶o B¶o	0;105;30031;1						30265	720		
 30494	§éc Gi¸c Thó B¶o B¶o	0;105;30032;1						30266	720		
@@ -2117,16 +2117,16 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 30732	DiÖu D­¬ng-BÊt §éng Ch©n Tiªn KiÕm	0;2;9006;1			23		1	30000;30698;30639;30656			
 30733	DiÖu D­¬ng-Tª V©n Tiªn Tö PhiÕn	0;13;9010;1			29		1	30000;30698;30640;30657			
 30734	DiÖu D­¬ng-Phi H¹ Tiªn Tö ¦u Lan Tiªu	0;12;9011;1			30		1	30000;30698;30641;30658			
-30735	R­¬ng Huy Ch­¬ng	2;1;30593;1						30701			
+30735	Medal Chest	2;1;30593;1						30701			
 30736	R­¬ng ¸o Choµng	2;1;30594;1						30701			
-30737	R­¬ng Giµy	2;1;30595;1						30701			
-30738	R­¬ng Huy Ch­¬ng Cao CÊp	2;1;30596;1						30702			
+30737	Shoe Chest	2;1;30595;1						30701			
+30738	Advanced Medal Chest	2;1;30596;1						30702			
 30739	R­¬ng ¸o Choµng Cao CÊp	2;1;30597;1						30702			
-30740	R­¬ng Giµy Cao CÊp	2;1;30598;1						30702			
+30740	Advanced Shoe Chest	2;1;30598;1						30702			
 30741	R­¬ng Trang BÞ D­ìng Thµnh	2;1;30599;1						30703			
 30742	R­¬ng Trang BÞ D­ìng Thµnh Cao CÊp	2;1;30600;1					1	30703			
 30743	3000 Ng©n PhiÕu	2;1;30609;1						30700			
-30744	Bè ChÕ Cao §ång Ngoa	0;154;3;1					1	30701			
+30744	Gao Tong Wa Recipe	0;154;3;1					1	30701			
 30745	Cöu Ch©u-Ng­ng Ngäc Thæ Hoµn	0;102;3135;1			2		1	30702			
 30746	Cöu Ch©u-HuyÒn Th¹ch Kim Ngäc	0;102;3136;1			2		1	30702			
 30747	Cöu Ch©u-Ng­ng Ngäc Thæ Hoµn	0;102;3137;1			3		1	30702			
@@ -2600,17 +2600,17 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 31215	Liªu L«i Hæ Dòng SÜ Phï	0;102;30191;1	2	3			1	30881			
 31216	Liªu L«i Hæ Dòng SÜ Phï	0;102;30192;1	2	4			1	30881			
 31217	H¾c Ngäc §o¹n Tôc Cao	1;0;6;1						30882			
-31218	Sinh Sinh Hãa T¸n	1;0;16;1						30883			
+31218	Life-Begetting Powder	1;0;16;1						30883			
 31219	V¹n VËt Quy Nguyªn §¬n	1;0;11;1						30884			
 31220	Cöu chuyÓn håi hån ®¬n	1;0;32;1						30885			
-31221	TÈy TrÇn §an	2;1;30613;1						30886			
+31221	Cleansing Pill	2;1;30613;1						30886			
 31222	Thiªn Lý TruyÒn ¢m Phï	2;1;3508;1						30887			
 31223	¸o Choµng Du HiÖp	0;152;26;1					1	30000;30888;30889;30890;30891;30892;30893;30894			
-31224	Huy Ch­¬ng Du HiÖp	0;153;26;1					1	30000;30888;30895;30896;30897;30898;30899;30900			
+31224	Roaming Hero Medal	0;153;26;1					1	30000;30888;30895;30896;30897;30898;30899;30900			
 31225	Tr­êng Hµi Du HiÖp	0;154;26;1					1	30000;30888;30901;30902;30903;30904;30905;30906			
 31226	¸o Choµng ThiÕt HuyÕt	0;152;27;1					1	30000;30888;30889;30890;30891;30892;30893;30894			
-31227	Huy Ch­¬ng ThiÕt HuyÕt	0;153;27;1					1	30000;30888;30895;30896;30897;30898;30899;30900			
-31228	ChiÕn Hµi ThiÕt HuyÕt	0;154;27;1					1	30000;30888;30901;30902;30903;30904;30905;30906			
+31227	Iron Blood Medal	0;153;27;1					1	30000;30888;30895;30896;30897;30898;30899;30900			
+31228	Iron Blood Boots	0;154;27;1					1	30000;30888;30901;30902;30903;30904;30905;30906			
 31229	¸o Choµng V©n Du	0;152;28;1					1	30000;30888;30889;30890;30891;30892;30893;30894			
 31230	Huy Ch­¬ng V©n Du	0;153;28;1					1	30000;30888;30895;30896;30897;30898;30899;30900			
 31231	§¹o Hµi V©n Du	0;154;28;1					1	30000;30888;30901;30902;30903;30904;30905;30906			
@@ -2719,174 +2719,174 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 31334	Liªu L«i Hæ So¸i HiÖu Kú	0;102;30219;1	2	3			1	30000;31009;31113			
 31335	Liªu L«i Hæ So¸i HiÖu Kú	0;102;30220;1	2	4			1	30000;31010;31114			
 31336	MËt TÞch Tiªu Dao	0;112;224;1					1	31119			
-31337	L¨ng Ba Vi Bé	0;112;78;1					1	31120			
+31337	Lingbo Microstep	0;112;78;1					1	31120			
 31338	MËt TÞch Tiªu Dao Tµn QuyÓn	0;112;225;1					1	31121			
-31339	Kim Cang B¸t Nh· Ch©n QuyÓn 	0;107;204;1						31122			
-31340	TiÒm Long Tóc DiÖt Ch©n QuyÓn	0;107;205;1						31122			
-31341	V« TrÇn Bå §Ò Ch©n QuyÓn	0;107;206;1						31122			
+31339	Vajra Prajna True Manual	0;107;204;1						31122			
+31340	Hidden Dragon Annihilation True Manual	0;107;205;1						31122			
+31341	Dustless Bodhi True Manual	0;107;206;1						31122			
 31342	Thiªn La Liªn Ch©u Ch©n QuyÓn	0;107;207;1						31122			
-31343	Nh­ ý Kim §Ønh Ch©n QuyÓn	0;107;208;1						31122			
-31344	BÝch H¶i TuyÖt ¢m Ch©n QuyÓn	0;107;209;1						31122			
-31345	Hçn §én TrÊn Nh¹c Ch©n QuyÓn	0;107;210;1						31122			
+31343	Wishful Golden Top True Manual	0;107;208;1						31122			
+31344	Azure Sea Silent Sound True Manual	0;107;209;1						31122			
+31345	Chaos Town Mountain True Manual	0;107;210;1						31122			
 31346	Quú Thiªn Du Long Ch©n QuyÓn	0;107;211;1						31122			
 31347	HuyÒn ¶nh Mª T«ng Ch©n QuyÓn	0;107;212;1						31122			
-31348	Qu©n Tö §íi Phong Ch©n QuyÓn	0;107;213;1						31122			
-31349	TrÊn Qu©n Phi Long Th­¬ng Ch©n QuyÓn	0;107;214;1						31122			
+31348	Gentleman Welcomes the Wind True Manual	0;107;213;1						31122			
+31349	Town Army Flying Dragon Spear True Manual	0;107;214;1						31122			
 31350	Xuyªn V©n L¹c Hång Ch©n QuyÓn	0;107;215;1						31122			
 31351	HuyÒn Minh Phong Ma Ch©n QuyÓn	0;107;216;1						31122			
 31352	Linh Cæ HuyÒn Tµ Ch©n QuyÓn	0;107;217;1						31122			
 31353	Cöu Thiªn Phong L«i Ch©n QuyÓn	0;107;218;1						31122			
 31354	Hång TrÇn Tóy Méng Ch©n QuyÓn	0;107;222;1						31122			
 31355	Phong Hoa Thiªn DiÖp Ch©n QuyÓn	0;107;223;1						31122			
-31356	H-LiÖt Nham-Lv4	0;148;53;1						31123			
-31357	H-Ph¸ Kh«ng-Lv4	0;148;54;1						31123			
+31356	H-Fierce Cliff-Lv4	0;148;53;1						31123			
+31357	H-Sky Breaking-Lv4	0;148;54;1						31123			
 31358	H-Tóy KiÕm-Lv4	0;148;55;1						31123			
-31359	H-TËt Phong-Lv4	0;148;56;1						31123			
-31360	H-TÊn Vò-Lv4	0;148;57;1						31123			
-31361	H-¦ng TËp-Lv4	0;148;58;1						31123			
+31359	H-Swift Wind-Lv4	0;148;56;1						31123			
+31360	H-Frost Dance-Lv4	0;148;57;1						31123			
+31361	H-Eagle Strike-Lv4	0;148;58;1						31123			
 31362	H-Linh T©m-Lv4	0;148;59;1						31123			
 31363	H-ThÇn Lùc-Lv4	0;148;60;1						31123			
 31364	H-Ng­ng ThÇn-Lv4	0;148;61;1						31123			
-31365	H-V« Gian-Lv4	0;148;62;1						31123			
-31366	H-V« Cùc-Lv4	0;148;63;1						31123			
+31365	H-No Gap-Lv4	0;148;62;1						31123			
+31366	H-No Limit-Lv4	0;148;63;1						31123			
 31367	H-Cuång NhÉn-Lv4	0;148;64;1						31123			
-31368	H-L¨ng NhuÖ-Lv4	0;148;65;1						31123			
+31368	H-Sharp Edge-Lv4	0;148;65;1						31123			
 31369	H-Linh Viªn-Lv4	0;148;66;1						31123			
-31370	H-H¶i VËn-Lv4	0;148;67;1						31123			
+31370	H-Sea Fortune-Lv4	0;148;67;1						31123			
 31371	H-H¶i T©m-Lv4	0;148;68;1						31123			
-31372	C-LiÖt Nham-Lv4	0;149;53;1						31123			
-31373	C-Ph¸ Kh«ng-Lv4	0;149;54;1						31123			
+31372	C-Liet Nham-Lv4	0;149;53;1						31123			
+31373	C-Pha Khong-Lv4	0;149;54;1						31123			
 31374	C-Tóy KiÕm-Lv4	0;149;55;1						31123			
-31375	C-TËt Phong-Lv4	0;149;56;1						31123			
-31376	C-TÊn Vò-Lv4	0;149;57;1						31123			
+31375	C-Tat Phong-Lv4	0;149;56;1						31123			
+31376	C-Tan Vu-Lv4	0;149;57;1						31123			
 31377	C-Qu¸n Th¹ch-Lv4	0;149;58;1						31123			
-31378	C-Né Ng©m-Lv4	0;149;59;1						31123			
+31378	C-No Ngam-Lv4	0;149;59;1						31123			
 31379	C-Xuyªn V©n-Lv4	0;149;60;1						31123			
 31380	C-ThÇn Lùc-Lv4	0;149;61;1						31123			
 31381	C-Ng­ng ThÇn-Lv4	0;149;62;1						31123			
-31382	C-V« Gian-Lv4	0;149;63;1						31123			
-31383	C-V« Cùc-Lv4	0;149;64;1						31123			
+31382	C-Vo Gian-Lv4	0;149;63;1						31123			
+31383	C-Vo Cuc-Lv4	0;149;64;1						31123			
 31384	C-Cuång NhÉn-Lv4	0;149;65;1						31123			
-31385	C-L¨ng NhuÖ-Lv4	0;149;66;1						31123			
+31385	C-Lang Nhue-Lv4	0;149;66;1						31123			
 31386	C-Linh Viªn-Lv4	0;149;67;1						31123			
-31387	C-H¶i VËn-Lv4	0;149;68;1						31123			
+31387	C-Hai Van-Lv4	0;149;68;1						31123			
 31388	C-H¶i T©m-Lv4	0;149;69;1						31123			
-31389	T-LiÖt Nham-Lv4	0;150;53;1						31123			
-31390	T-Ph¸ Kh«ng-Lv4	0;150;54;1						31123			
+31389	T-Fierce Cliff-Lv4	0;150;53;1						31123			
+31390	T-Sky Breaking-Lv4	0;150;54;1						31123			
 31391	T-Tóy KiÕm-Lv4	0;150;55;1						31123			
-31392	T-TËt Phong-Lv4	0;150;56;1						31123			
-31393	T-TÊn Vò-Lv4	0;150;57;1						31123			
-31394	T-V« L­îng-Lv4	0;150;58;1						31123			
-31395	T-Môc Minh-Lv4	0;150;59;1						31123			
+31392	T-Swift Wind-Lv4	0;150;56;1						31123			
+31393	T-Frost Dance-Lv4	0;150;57;1						31123			
+31394	T-Boundless-Lv4	0;150;58;1						31123			
+31395	T-Eye Closing-Lv4	0;150;59;1						31123			
 31396	T-ThÇn Lùc-Lv4	0;150;60;1						31123			
 31397	T-Ng­ng ThÇn-Lv4	0;150;61;1						31123			
-31398	T-V« Gian-Lv4	0;150;62;1						31123			
-31399	T-V« Cùc-Lv4	0;150;63;1						31123			
+31398	T-No Gap-Lv4	0;150;62;1						31123			
+31399	T-Vo Cuc-Lv4	0;150;63;1						31123			
 31400	T-Cuång NhÉn-Lv4	0;150;64;1						31123			
-31401	T-L¨ng NhuÖ-Lv4	0;150;65;1						31123			
+31401	T-Lang Nhue-Lv4	0;150;65;1						31123			
 31402	T-Linh Viªn-Lv4	0;150;66;1						31123			
-31403	T-H¶i VËn-Lv4	0;150;67;1						31123			
+31403	T-Hai Van-Lv4	0;150;67;1						31123			
 31404	T-H¶i T©m-Lv4	0;150;68;1						31123			
-31405	H-LiÖt Nham-Lv5	0;148;69;1						31124			
-31406	H-Ph¸ Kh«ng-Lv5	0;148;70;1						31124			
+31405	H-Liet Nham-Lv5	0;148;69;1						31124			
+31406	H-Pha Khong-Lv5	0;148;70;1						31124			
 31407	H-Tóy KiÕm-Lv5	0;148;71;1						31124			
-31408	H-TËt Phong-Lv5	0;148;72;1						31124			
-31409	H-TÊn Vò-Lv5	0;148;73;1						31124			
-31410	H-¦ng TËp-Lv5	0;148;74;1						31124			
+31408	H-Tat Phong-Lv5	0;148;72;1						31124			
+31409	H-Tan Vu-Lv5	0;148;73;1						31124			
+31410	H-Ung Tap-Lv5	0;148;74;1						31124			
 31411	H-Linh T©m-Lv5	0;148;75;1						31124			
 31412	H-ThÇn Lùc-Lv5	0;148;76;1						31124			
 31413	H-Ng­ng ThÇn-Lv5	0;148;77;1						31124			
-31414	H-V« Gian-Lv5	0;148;78;1						31124			
-31415	H-V« Cùc-Lv5	0;148;79;1						31124			
+31414	H-Vo Gian-Lv5	0;148;78;1						31124			
+31415	H-Vo Cuc-Lv5	0;148;79;1						31124			
 31416	H-Cuång NhÉn-Lv5	0;148;80;1						31124			
-31417	H-L¨ng NhuÖ-Lv5	0;148;81;1						31124			
+31417	H-Lang Nhue-Lv5	0;148;81;1						31124			
 31418	H-Linh Viªn-Lv5	0;148;82;1						31124			
-31419	H-H¶i VËn-Lv5	0;148;83;1						31124			
+31419	H-Hai Van-Lv5	0;148;83;1						31124			
 31420	H-H¶i T©m-Lv5	0;148;84;1						31124			
-31421	C-LiÖt Nham-Lv5	0;149;70;1						31124			
-31422	C-Ph¸ Kh«ng-Lv5	0;149;71;1						31124			
+31421	C-Liet Nham-Lv5	0;149;70;1						31124			
+31422	C-Pha Khong-Lv5	0;149;71;1						31124			
 31423	C-Tóy KiÕm-Lv5	0;149;72;1						31124			
-31424	C-TËt Phong-Lv5	0;149;73;1						31124			
-31425	C-TÊn Vò-Lv5	0;149;74;1						31124			
+31424	C-Tat Phong-Lv5	0;149;73;1						31124			
+31425	C-Tan Vu-Lv5	0;149;74;1						31124			
 31426	C-Qu¸n Th¹ch-Lv5	0;149;75;1						31124			
-31427	C-Né Ng©m-Lv5	0;149;76;1						31124			
+31427	C-No Ngam-Lv5	0;149;76;1						31124			
 31428	C-Xuyªn V©n-Lv5	0;149;77;1						31124			
 31429	C-ThÇn Lùc-Lv5	0;149;78;1						31124			
 31430	C-Ng­ng ThÇn-Lv5	0;149;79;1						31124			
-31431	C-V« Gian-Lv5	0;149;80;1						31124			
-31432	C-V« Cùc-Lv5	0;149;81;1						31124			
+31431	C-Vo Gian-Lv5	0;149;80;1						31124			
+31432	C-Vo Cuc-Lv5	0;149;81;1						31124			
 31433	C-Cuång NhÉn-Lv5	0;149;82;1						31124			
-31434	C-L¨ng NhuÖ-Lv5	0;149;83;1						31124			
+31434	C-Lang Nhue-Lv5	0;149;83;1						31124			
 31435	C-Linh Viªn-Lv5	0;149;84;1						31124			
-31436	C-H¶i VËn-Lv5	0;149;85;1						31124			
+31436	C-Hai Van-Lv5	0;149;85;1						31124			
 31437	C-H¶i T©m-Lv5	0;149;86;1						31124			
-31438	T-LiÖt Nham-Lv5	0;150;69;1						31124			
-31439	T-Ph¸ Kh«ng-Lv5	0;150;70;1						31124			
+31438	T-Liet Nham-Lv5	0;150;69;1						31124			
+31439	T-Pha Khong-Lv5	0;150;70;1						31124			
 31440	T-Tóy KiÕm-Lv5	0;150;71;1						31124			
-31441	T-TËt Phong-Lv5	0;150;72;1						31124			
-31442	T-TÊn Vò-Lv5	0;150;73;1						31124			
-31443	T-V« L­îng-Lv5	0;150;74;1						31124			
-31444	T-Môc Minh-Lv5	0;150;75;1						31124			
+31441	T-Tat Phong-Lv5	0;150;72;1						31124			
+31442	T-Tan Vu-Lv5	0;150;73;1						31124			
+31443	T-Vo Luong-Lv5	0;150;74;1						31124			
+31444	T-Muc Minh-Lv5	0;150;75;1						31124			
 31445	T-ThÇn Lùc-Lv5	0;150;76;1						31124			
 31446	T-Ng­ng ThÇn-Lv5	0;150;77;1						31124			
-31447	T-V« Gian-Lv5	0;150;78;1						31124			
-31448	T-V« Cùc-Lv5	0;150;79;1						31124			
+31447	T-Vo Gian-Lv5	0;150;78;1						31124			
+31448	T-Vo Cuc-Lv5	0;150;79;1						31124			
 31449	T-Cuång NhÉn-Lv5	0;150;80;1						31124			
-31450	T-L¨ng NhuÖ-Lv5	0;150;81;1						31124			
+31450	T-Lang Nhue-Lv5	0;150;81;1						31124			
 31451	T-Linh Viªn-Lv5	0;150;82;1						31124			
-31452	T-H¶i VËn-Lv5	0;150;83;1						31124			
+31452	T-Hai Van-Lv5	0;150;83;1						31124			
 31453	T-H¶i T©m-Lv5	0;150;84;1						31124			
-31454	H-LiÖt Nham-Lv6	0;148;85;1						31125			
-31455	H-Ph¸ Kh«ng-Lv6	0;148;86;1						31125			
+31454	H-Liet Nham-Lv6	0;148;85;1						31125			
+31455	H-Pha Khong-Lv6	0;148;86;1						31125			
 31456	H-Tóy KiÕm-Lv6	0;148;87;1						31125			
-31457	H-TËt Phong-Lv6	0;148;88;1						31125			
-31458	H-TÊn Vò-Lv6	0;148;89;1						31125			
-31459	H-¦ng TËp-Lv6	0;148;90;1						31125			
+31457	H-Tat Phong-Lv6	0;148;88;1						31125			
+31458	H-Tan Vu-Lv6	0;148;89;1						31125			
+31459	H-Ung Tap-Lv6	0;148;90;1						31125			
 31460	H-Linh T©m-Lv6	0;148;91;1						31125			
 31461	H-ThÇn Lùc-Lv6	0;148;92;1						31125			
 31462	H-Ng­ng ThÇn-Lv6	0;148;93;1						31125			
-31463	H-V« Gian-Lv6	0;148;94;1						31125			
-31464	H-V« Cùc-Lv6	0;148;95;1						31125			
+31463	H-Vo Gian-Lv6	0;148;94;1						31125			
+31464	H-Vo Cuc-Lv6	0;148;95;1						31125			
 31465	H-Cuång NhÉn-Lv6	0;148;96;1						31125			
-31466	H-L¨ng NhuÖ-Lv6	0;148;97;1						31125			
+31466	H-Lang Nhue-Lv6	0;148;97;1						31125			
 31467	H-Linh Viªn-Lv6	0;148;98;1						31125			
-31468	H-H¶i VËn-Lv6	0;148;99;1						31125			
+31468	H-Hai Van-Lv6	0;148;99;1						31125			
 31469	H-H¶i T©m-Lv6	0;148;100;1						31125			
-31470	C-LiÖt Nham-Lv6	0;149;87;1						31125			
-31471	C-Ph¸ Kh«ng-Lv6	0;149;88;1						31125			
+31470	C-Liet Nham-Lv6	0;149;87;1						31125			
+31471	C-Pha Khong-Lv6	0;149;88;1						31125			
 31472	C-Tóy KiÕm-Lv6	0;149;89;1						31125			
-31473	C-TËt Phong-Lv6	0;149;90;1						31125			
-31474	C-TÊn Vò-Lv6	0;149;91;1						31125			
+31473	C-Tat Phong-Lv6	0;149;90;1						31125			
+31474	C-Tan Vu-Lv6	0;149;91;1						31125			
 31475	C-Qu¸n Th¹ch-Lv6	0;149;92;1						31125			
-31476	C-Né Ng©m-Lv6	0;149;93;1						31125			
+31476	C-No Ngam-Lv6	0;149;93;1						31125			
 31477	C-Xuyªn V©n-Lv6	0;149;94;1						31125			
 31478	C-ThÇn Lùc-Lv6	0;149;95;1						31125			
 31479	C-Ng­ng ThÇn-Lv6	0;149;96;1						31125			
-31480	C-V« Gian-Lv6	0;149;97;1						31125			
-31481	C-V« Cùc-Lv6	0;149;98;1						31125			
+31480	C-Vo Gian-Lv6	0;149;97;1						31125			
+31481	C-Vo Cuc-Lv6	0;149;98;1						31125			
 31482	C-Cuång NhÉn-Lv6	0;149;99;1						31125			
-31483	C-L¨ng NhuÖ-Lv6	0;149;100;1						31125			
+31483	C-Lang Nhue-Lv6	0;149;100;1						31125			
 31484	C-Linh Viªn-Lv6	0;149;101;1						31125			
-31485	C-H¶i VËn-Lv6	0;149;102;1						31125			
+31485	C-Hai Van-Lv6	0;149;102;1						31125			
 31486	C-H¶i T©m-Lv6	0;149;103;1						31125			
-31487	T-LiÖt Nham-Lv6	0;150;85;1						31125			
-31488	T-Ph¸ Kh«ng-Lv6	0;150;86;1						31125			
+31487	T-Liet Nham-Lv6	0;150;85;1						31125			
+31488	T-Pha Khong-Lv6	0;150;86;1						31125			
 31489	T-Tóy KiÕm-Lv6	0;150;87;1						31125			
-31490	T-TËt Phong-Lv6	0;150;88;1						31125			
-31491	T-TÊn Vò-Lv6	0;150;89;1						31125			
-31492	T-V« L­îng-Lv6	0;150;90;1						31125			
-31493	T-Môc Minh-Lv6	0;150;91;1						31125			
+31490	T-Tat Phong-Lv6	0;150;88;1						31125			
+31491	T-Tan Vu-Lv6	0;150;89;1						31125			
+31492	T-Vo Luong-Lv6	0;150;90;1						31125			
+31493	T-Muc Minh-Lv6	0;150;91;1						31125			
 31494	T-ThÇn Lùc-Lv6	0;150;92;1						31125			
 31495	T-Ng­ng ThÇn-Lv6	0;150;93;1						31125			
-31496	T-V« Gian-Lv6	0;150;94;1						31125			
-31497	T-V« Cùc-Lv6	0;150;95;1						31125			
+31496	T-Vo Gian-Lv6	0;150;94;1						31125			
+31497	T-Vo Cuc-Lv6	0;150;95;1						31125			
 31498	T-Cuång NhÉn-Lv6	0;150;96;1						31125			
-31499	T-L¨ng NhuÖ-Lv6	0;150;97;1						31125			
+31499	T-Lang Nhue-Lv6	0;150;97;1						31125			
 31500	T-Linh Viªn-Lv6	0;150;98;1						31125			
-31501	T-H¶i VËn-Lv6	0;150;99;1						31125			
+31501	T-Hai Van-Lv6	0;150;99;1						31125			
 31502	T-H¶i T©m-Lv6	0;150;100;1						31125			
 31503	HuyÒn Viªm C­¬ng	2;1;30675;1						31126			
-31504	Viªm Linh Bè	2;1;30676;1						31127			
+31504	Yanling Cloth	2;1;30676;1						31127			
 31505	Ma Lang Gi¸p	2;1;30677;1						31128			
 31506	§Þa Long Gi¸p	2;1;30678;1						31129			
 31507	Tiªn ¢m Ngäc	2;1;30679;1						31130			
@@ -3105,10 +3105,10 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 31720	Hµo HiÖp PhiÕn	0;13;30285;1	2	4	29		1	31131			
 31721	Hµo HiÖp §Þch	0;12;30286;1	2	3	30		1	31131			
 31722	Hµo HiÖp §Þch	0;12;30287;1	2	4	30		1	31131			
-31723	Linh th¹ch	2;1;30680;1						31137			
+31723	Spirit Stone	2;1;30680;1						31137			
 31724	Linh Ngäc	2;1;30682;1						31138			
 31725	Kh¾c b¶n	2;1;30373;1						31139			
-31726	Hu©n ch­¬ng dòng sÜ	2;1;30498;2						31140			
+31726	Brave Warrior Medal	2;1;30498;2						31140			
 31727	HuyÕtTrÝchTh¹ch Lv1	2;22;101;1						31141			
 31728	NguyÖtB¹chTh¹ch Lv1	2;22;201;1						31141			
 31729	Hæ Ph¸ch Th¹ch CÊp 1	2;22;301;1						31141			
@@ -3326,52 +3326,52 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 31941	ChiÕn Cuång Th¸nh Linh Khè	0;101;30205;1	2	3	30		1	30000;31350;31348			
 31942	ChiÕn Cuång Th¸nh Linh Khè	0;101;30206;1	2	4	30		1	30000;31350;31349			
 31943	Ých Thä Diªn D­¬ng CÊp 1	2;150;5;1						31352	168		
-31944	Kim Linh Phô ThÓ CÊp 1	2;150;25;1						31352	168		
-31945	Méc Linh Phô ThÓ CÊp 1	2;150;29;1						31352	168		
+31944	Metal Spirit Attachment Lv 1	2;150;25;1						31352	168		
+31945	Wood Spirit Attachment Lv 1	2;150;29;1						31352	168		
 31946	Thuû Linh Phô ThÓ CÊp 1	2;150;33;1						31352	168		
 31947	Ho¶ Linh Phô ThÓ CÊp 1	2;150;37;1						31352	168		
-31948	Thæ Linh Phô ThÓ CÊp 1	2;150;41;1						31352	168		
-31949	V« H×nh Chi Cæ CÊp 1	2;150;57;1						31352	168		
+31948	Earth Spirit Attachment Lv 1	2;150;41;1						31352	168		
+31949	Formless Ancient Lv 1	2;150;57;1						31352	168		
 31950	Ch©n khÝ hé thÓ CÊp 1	2;150;1;1						31353	168		
-31951	C­êng Th©n B¸ ThÓ CÊp 1	2;150;9;1						31353	168		
-31952	¢m Phong Thùc Cèt CÊp 1	2;150;13;1						31353	168		
-31953	Ph¸ Kh«ng Tr¶m ¶nh CÊp 1	2;150;45;1						31353	168		
+31951	Strong Body Mighty Form Lv 1	2;150;9;1						31353	168		
+31952	Yin Wind Bone Eroding Lv 1	2;150;13;1						31353	168		
+31953	Sky Shattering Shadow Slash Lv 1	2;150;45;1						31353	168		
 31954	S¸t th­¬ng gia n©ng cÊp 1	2;150;49;1						31353	168		
 31955	Ých Thä Diªn D­¬ng CÊp 2	2;150;6;1						31354	168		
-31956	Kim Linh Phô ThÓ CÊp 2	2;150;26;1						31354	168		
-31957	Méc Linh Phô ThÓ CÊp 2	2;150;30;1						31354	168		
-31958	Thuû Linh Phô ThÓ CÊp 2	2;150;34;1						31354	168		
-31959	Ho¶ Linh Phô ThÓ CÊp 2	2;150;38;1						31354	168		
-31960	Thæ Linh Phô ThÓ CÊp 2	2;150;42;1						31354	168		
-31961	V« H×nh Chi Cæ CÊp 2	2;150;58;1						31354	168		
+31956	Metal Spirit Attachment Lv 2	2;150;26;1						31354	168		
+31957	Wood Spirit Attachment Lv 2	2;150;30;1						31354	168		
+31958	Water Spirit Attached Body Lv 2	2;150;34;1						31354	168		
+31959	Fire Spirit Attached Body Lv 2	2;150;38;1						31354	168		
+31960	Earth Spirit Attachment Lv 2	2;150;42;1						31354	168		
+31961	Formless Ancient Lv 2	2;150;58;1						31354	168		
 31962	Ch©n khÝ hé thÓ CÊp 2	2;150;2;1						31355	168		
-31963	C­êng Th©n B¸ ThÓ CÊp 2	2;150;10;1						31355	168		
-31964	¢m Phong Thùc Cèt CÊp 2	2;150;14;1						31355	168		
-31965	Ph¸ Kh«ng Tr¶m ¶nh CÊp 2	2;150;46;1						31355	168		
+31963	Strong Body Mighty Form Lv 2	2;150;10;1						31355	168		
+31964	Yin Wind Bone Eroding Lv 2	2;150;14;1						31355	168		
+31965	Sky Shattering Shadow Slash Lv 2	2;150;46;1						31355	168		
 31966	S¸t th­¬ng gia n©ng cÊp 2	2;150;50;1						31355	168		
 31967	Ých Thä Diªn D­¬ng CÊp 3	2;150;7;1						31356	168		
-31968	Kim Linh Phô ThÓ CÊp 3	2;150;27;1						31356	168		
-31969	Méc Linh Phô ThÓ CÊp 3	2;150;31;1						31356	168		
-31970	Thuû Linh Phô ThÓ CÊp 3	2;150;35;1						31356	168		
-31971	Ho¶ Linh Phô ThÓ CÊp 3	2;150;39;1						31356	168		
-31972	Thæ Linh Phô ThÓ CÊp 3	2;150;43;1						31356	168		
-31973	V« H×nh Chi Cæ CÊp 3	2;150;59;1						31356	168		
+31968	Metal Spirit Attachment Lv 3	2;150;27;1						31356	168		
+31969	Wood Spirit Attachment Lv 3	2;150;31;1						31356	168		
+31970	Water Spirit Attached Body Lv 3	2;150;35;1						31356	168		
+31971	Fire Spirit Attached Body Lv 3	2;150;39;1						31356	168		
+31972	Earth Spirit Attachment Lv 3	2;150;43;1						31356	168		
+31973	Formless Ancient Lv 3	2;150;59;1						31356	168		
 31974	Ch©n khÝ hé thÓ CÊp 3	2;150;3;1						31357	168		
-31975	C­êng Th©n B¸ ThÓ CÊp 3	2;150;11;1						31357	168		
-31976	¢m Phong Thùc Cèt CÊp 3	2;150;15;1						31357	168		
-31977	Ph¸ Kh«ng Tr¶m ¶nh CÊp 3	2;150;47;1						31357	168		
+31975	Strong Body Mighty Form Lv 3	2;150;11;1						31357	168		
+31976	Yin Wind Bone Eroding Lv 3	2;150;15;1						31357	168		
+31977	Sky Shattering Shadow Slash Lv 3	2;150;47;1						31357	168		
 31978	S¸t th­¬ng gia n©ng cÊp 3	2;150;51;1						31357	168		
 31979	Ých Thä Diªn D­¬ng CÊp 4	2;150;8;1						31358	168		
-31980	Kim Linh Phô ThÓ CÊp 4	2;150;28;1						31358	168		
-31981	Méc Linh Phô ThÓ CÊp 4	2;150;32;1						31358	168		
-31982	Thuû Linh Phô ThÓ CÊp 4	2;150;36;1						31358	168		
-31983	Ho¶ Linh Phô ThÓ CÊp 4	2;150;40;1						31358	168		
-31984	Thæ Linh Phô ThÓ CÊp 4	2;150;44;1						31358	168		
-31985	V« H×nh Chi Cæ CÊp 4	2;150;60;1						31358	168		
+31980	Jin Ling Fu Ti Level 4	2;150;28;1						31358	168		
+31981	Mu Ling Fu Ti Level 4	2;150;32;1						31358	168		
+31982	Shui Ling Fu Ti Level 4	2;150;36;1						31358	168		
+31983	Huo Ling Fu Ti Level 4	2;150;40;1						31358	168		
+31984	Tu Ling Fu Ti Level 4	2;150;44;1						31358	168		
+31985	Wu Xing Zhi Gu Level 4	2;150;60;1						31358	168		
 31986	Ch©n khÝ hé thÓ CÊp 4	2;150;4;1						31359	168		
-31987	C­êng Th©n B¸ ThÓ CÊp 4	2;150;12;1						31359	168		
-31988	¢m Phong Thùc Cèt CÊp 4	2;150;16;1						31359	168		
-31989	Ph¸ Kh«ng Tr¶m ¶nh CÊp 4	2;150;48;1						31359	168		
+31987	Qiang Shen Ba Ti Level 4	2;150;12;1						31359	168		
+31988	Yin Feng Shi Gu Level 4	2;150;16;1						31359	168		
+31989	Po Kong Zhan Ying Level 4	2;150;48;1						31359	168		
 31990	S¸t th­¬ng gia n©ng cÊp 4	2;150;52;1						31359	168		
 31991	Tèng_Háa Phông T­íng Qu©n §ao (Trung CÊp)	0;3;30308;1			2		1	31360			
 31992	Tèng_Háa Phông T­íng Qu©n Tr­îng (Trung CÊp)	0;8;30309;1			3		1	31361			
@@ -5248,16 +5248,16 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 33863	NguyÖt §µn Gi¸o Chóng TriÖu Håi LÖnh-T©y H¹	2;1;30833;1				3365;1		31720			
 33864	Tinh §µn Gi¸o Chóng TriÖu Håi LÖnh-Thæ Phån	2;1;30832;1				3365;1		31719			
 33865	ThÇn §µn Gi¸o Chóng TriÖu Håi LÖnh-§¹i Lý	2;1;30834;1				3365;1		31718			
-33866	§æi Tiªu LÖnh	2;95;918;1						31721			
-33867	Kim L¨ng Töu	2;95;822;1						31722			
-33868	Kim L¨ng Töu	2;95;822;1						31723			
-33869	Kim L¨ng Töu	2;95;822;1						31724			
-33870	XÎng Kho B¸u	2;95;927;1				3356;10		31728			
-33871	XÎng Kho B¸u	2;95;927;1				3356;10		31729			
-33872	XÎng Kho B¸u	2;95;927;1				3356;10		31730			
-33873	M¶nh §¸ Kü N¨ng	2;1;10011;1						31731			
-33874	M¶nh §¸ Kü N¨ng	2;1;10011;1						31732			
-33875	M¶nh §¸ Kü N¨ng	2;1;10011;1						31733			
+33866	Exchange Token	2;95;918;1						31721			
+33867	Jinling Wine	2;95;822;1						31722			
+33868	Jinling Wine	2;95;822;1						31723			
+33869	Jinling Wine	2;95;822;1						31724			
+33870	Treasure Shovel	2;95;927;1				3356;10		31728			
+33871	Treasure Shovel	2;95;927;1				3356;10		31729			
+33872	Treasure Shovel	2;95;927;1				3356;10		31730			
+33873	Skill Stone Fragment	2;1;10011;1						31731			
+33874	Skill Stone Fragment	2;1;10011;1						31732			
+33875	Skill Stone Fragment	2;1;10011;1						31733			
 33876	Håi Tiªn §¬n	2;1;30847;1				3357;1		31734			
 33877	Håi Tiªn §¬n	2;1;30847;1				3357;1		31735			
 33878	Håi Tiªn §¬n	2;1;30847;1				3357;1		31736			
@@ -5393,25 +5393,25 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 34008	Ma Lang Gi¸p	2;1;30677;1						31866			
 34009	Ma Lang Gi¸p	2;1;30677;1						31867			
 34010	Ma Lang Gi¸p	2;1;30677;1						31868			
-34011	Viªm Linh Bè	2;1;30676;1						31869			
-34012	Viªm Linh Bè	2;1;30676;1						31870			
-34013	Viªm Linh Bè	2;1;30676;1						31871			
+34011	Yanling Cloth	2;1;30676;1						31869			
+34012	Yanling Cloth	2;1;30676;1						31870			
+34013	Yanling Cloth	2;1;30676;1						31871			
 34014	HuyÒn Viªm C­¬ng	2;1;30675;1						31872			
 34015	HuyÒn Viªm C­¬ng	2;1;30675;1						31873			
 34016	HuyÒn Viªm C­¬ng	2;1;30675;1						31874			
 34017	L­u Li Kim	2;1;30684;1						31875			
 34018	L­u Li Kim	2;1;30684;1						31876			
 34019	L­u Li Kim	2;1;30684;1						31877			
-34020	§iÒn ThÊt Sa §¶m Hoµn	1;0;30006;1						31878			
+34020	Tian Qi Sha Dan Pill	1;0;30006;1						31878			
 34021	Cöu Hoa Ngäc Lé Hoµn	1;0;30007;1						31879			
 34022	Nh©n S©m D­ìng Vinh Hoµn	1;0;30005;1						31880			
 34023	Cöu chuyÓn håi hån ®¬n	1;0;32;1						31881			
-34024	Tu Ch©n YÕu QuyÕt	2;0;554;1						31882	336		
+34024	Xiu Zhen Yao Jue	2;0;554;1						31882	336		
 34025	Qu©n C«ng Ch­¬ng	2;1;9999;1						31883	336		
 34026	Qu©n C«ng §¹i	2;1;9998;1						31884	336		
 34027	Qu©n C«ng Huy Hoµng	2;1;9977;1						31885	336		
 34028	ThÇn N«ng §¬n	2;1;343;1						31886	336		
-34029	Tiªu KiÕp t¸n	2;0;141;1						31887	336		
+34029	Tribulation Dispel Powder	2;0;141;1						31887	336		
 34030	B¹ch C©u Tiªn ®¬n	2;1;1008;1						31888	336		
 34031	Lôc ThÇn Tiªn ®¬n	2;1;1066;1						31889	336		
 34032	Tam Thanh Tiªn ®¬n	2;1;1099;1						31890	336		
@@ -5425,7 +5425,7 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 34040	Danh hiÖu: Chim ¦ng	2;1;30561;1						31898	336		
 34041	Danh hiÖu: ChiÕn Cuång	2;1;30562;1						31899	336		
 34042	Ngùa v»n	0;105;166;1						31900	720		
-34043	C¸o n¨m ®u«i	0;105;161;1						31901	720		
+34043	Five-Tailed Fox	0;105;161;1						31901	720		
 34044	Thá	0;105;30050;1						31902	720		
 34045	Tói trang bÞ Tam D­¬ng Khai Th¸i	2;1;30911;1					1	31904			
 34046	TÈy T©m Th¹ch cÊp 5	2;1;30525;1						31905			
@@ -5436,8 +5436,8 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 34051	CÊp 3 LuyÖn L« ThiÕt	2;1;30529;1						31910			
 34052	CÊp 2 TÈy T©m Th¹ch	2;1;30522;1						31911			
 34053	CÊp 2 LuyÖn L« ThiÕt	2;1;30528;1						31912			
-34054	BÝ Ng©n To¶n	2;1;30538;1						31913			
-34055	BÝ Ng©n Chïy	2;1;30539;1						31914			
+34054	Hidden Silver Plate	2;1;30538;1						31913			
+34055	Hidden Silver Mallet	2;1;30539;1						31914			
 34056	Linh Th¹ch khãa (1)	2;1;30904;1						31935			
 34057	Linh Th¹ch khãa (2)	2;1;30905;1						31935			
 34058	Linh Th¹ch khãa (3)	2;1;30906;1						31935			
@@ -5460,14 +5460,14 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 34075	TÝn VËt cÊp 13	0;155;13;1					1	31928			
 34076	TÝn VËt cÊp 14	0;155;14;1					1	31929			
 34077	TÝn VËt cÊp 15	0;155;15;1					1	31930			
-34078	Th¶o Ph¹t Lªnh 	2;1;30915;1						31931			
+34078	Subjugation Order	2;1;30915;1						31931			
 34079	CÊp 3 TÈy T©m Th¹ch	2;1;30523;1						31932			
 34080	CÊp 3 LuyÖn L« ThiÕt	2;1;30529;1						31933			
 34081	HuyÕtTrÝchTh¹ch Lv2	2;22;102;1						31934			
 34082	NguyÖtB¹chTh¹ch Lv2	2;22;202;1						31934			
 34083	Hæ Ph¸ch Th¹ch CÊp 2	2;22;302;1						31934			
 34084	H¾c DiÖu Th¹ch CÊp 2	2;22;402;1				3398;100		31934			
-34085	§ång TÕ Chi NguyÖn	2;1;30913;1				3384;7		31937			
+34085	Vow of the Same Will	2;1;30913;1				3384;7		31937			
 34086	ThÇn hµnh b¶o ®iÓn	0;200;40;1						31938			
 34087	Tinh Lùc Hoµn	2;1;30555;1				3383;7		31939			
 34088	Hµo HiÖp LÖnh	2;95;2084;1						31940			
@@ -5478,11 +5478,11 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 34093	TÈy T©m Th¹ch cÊp 4	2;1;30524;1						31947			
 34094	LuyÖn L« ThiÕt cÊp 4	2;1;30530;1						31947			
 34095	ThiÕt tinh cÊp 4	2;1;30612;1						31946			
-34096	VÐ TiÕu Y B¹c	2;1;30492;2						31944			
+34096	Silver Tieu Y Token	2;1;30492;2						31944			
 34097	Thiªn th¹ch	2;2;8;2						31943			
 34098	Da Ma Lang	2;1;30672;15						31943			
-34099	Da §Þa Long	2;1;30673;15						31943			
-34100	Viªm Linh Ti	2;1;30671;15						31943			
+34099	Da Di Long	2;1;30673;15						31943			
+34100	Yan Ling Si	2;1;30671;15						31943			
 34101	HuyÒn Viªm ThiÕt	2;1;30670;15						31943			
 34102	Tiªn ¢m Th¹ch	2;1;30674;15						31943			
 34103	Qu©n C«ng Huy Hoµng	2;1;9977;1						31948	168		
@@ -5492,10 +5492,10 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 34107	V¨n Sö ThÊt Qu©n KiÕm	0;105;10108;1					1	31951			
 34108	Cæ Linh Th¹ch	2;1;30368;12						31952			
 34109	Cæ Linh Ngäc	2;1;30369;4						31953			
-34110	Quµ Song §¸n-Th­êng	2;1;30971;1						31954			
+34110	Double Holiday Gift-Standard	2;1;30971;1						31954			
 34111	Da Ma Lang	2;1;30672;5						31955			
-34112	Da §Þa Long	2;1;30673;5						31956			
-34113	Viªm Linh Ti	2;1;30671;5						31957			
+34112	Da Di Long	2;1;30673;5						31956			
+34113	Yan Ling Si	2;1;30671;5						31957			
 34114	HuyÒn Viªm ThiÕt	2;1;30670;5						31958			
 34115	Tiªn ¢m Th¹ch	2;1;30674;5						31959			
 34116	Song §¸n §ai (7 ngµy)	0;108;901;1	1	1				31960	168		
@@ -5536,7 +5536,7 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 34151	Song §¸n Trang (30 ngµy)	0;110;902;1	1	2				31995	720		
 34152	Song §¸n QuÇn (30 ngµy)	0;110;903;1	2	3				31996	720		
 34153	Song §¸n QuÇn (30 ngµy)	0;110;904;1	2	4				31997	720		
-34154	Trøng B¸ Ng¹c	2;1;30970;1						31998			
+34154	Treasure Overlord Jade	2;1;30970;1						31998			
 34155	Xe TuÇn Léc §á (30 ngµy)	0;105;30041;1						31999	720		
 34156	Song §¸n §ai	0;108;901;1	1	1				32000			
 34157	Song §¸n Qu¸n	0;108;902;1	1	2				32001			
@@ -5550,7 +5550,7 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 34165	Song §¸n Trang	0;110;902;1	1	2				32009			
 34166	Song §¸n QuÇn	0;110;903;1	2	3				32010			
 34167	Song §¸n QuÇn	0;110;904;1	2	4				32011			
-34168	Xe TuÇn Léc mµu ®á	0;105;30041;1						32012			
+34168	Red Reindeer Cart	0;105;30041;1						32012			
 34169	Nh¸nh §µo T­¬i (1 ngµy)	0;120;134;1	1	1				32013	24		
 34170	Nh¸nh §µo T­¬i (1 ngµy)	0;120;135;1	1	2				32014	24		
 34171	Nh¸nh §µo T­¬i (1 ngµy)	0;120;136;1	2	3				32015	24		
@@ -5650,24 +5650,24 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 34265	Qu¸n Th«ng QuyÓn	2;114;118;1						32109			
 34266	Ch©n Vâ Thñ Ký	2;114;120;1						32110			
 34267	V¹n Hoa §¬n	2;1;31036;1						32111			
-34268	Kh¸ng Long T¸n	2;1;31037;1						32112			
-34269	Ninh H­ §¬n	2;1;31038;1						32113			
+34268	Anti-Dragon Powder	2;1;31037;1						32112			
+34269	Ningxu Pill	2;1;31038;1						32113			
 34270	TriÓn Phông T¸n	2;1;31039;1						32114			
-34271	TiÕt Cèt T¸n	2;1;31040;1						32115			
-34272	Ph¸ Qu©n §¬n	2;1;31041;1						32116			
+34271	Severing Bone Powder	2;1;31040;1						32115			
+34272	Army-Breaking Pill	2;1;31041;1						32116			
 34273	X¹ Thiªn Lang	0;120;142;1		1			1	31951			
 34274	X¹ Thiªn Lang	0;120;143;1		2			1	31951			
 34275	X¹ Thiªn Lang	0;120;144;1		3			1	31951			
 34276	X¹ Thiªn Lang	0;120;145;1		4			1	31951			
-34277	DiÒu GiÊy B­ím Lam	0;120;100;1		1			1	31951			
-34278	DiÒu GiÊy B­ím Lam	0;120;101;1		2			1	31951			
-34279	DiÒu GiÊy B­ím Lam	0;120;102;1		3			1	31951			
-34280	DiÒu GiÊy B­ím Lam	0;120;103;1		4			1	31951			
+34277	Diem Giay Buom Lam	0;120;100;1		1			1	31951			
+34278	Diem Giay Buom Lam	0;120;101;1		2			1	31951			
+34279	Diem Giay Buom Lam	0;120;102;1		3			1	31951			
+34280	Diem Giay Buom Lam	0;120;103;1		4			1	31951			
 34281	Tinh Hoa UÈn Linh CÊp 4	2;1;30666;1						32117			
-34282	Tinh Hoa UÈn Linh CÊp 5	2;1;30667;1						32118			
-34283	Tinh Hoa UÈn Linh CÊp 5	2;1;30667;1						32119			
-34284	Tinh Hoa UÈn Linh CÊp 6	2;1;30668;1						32120			
-34285	Tinh Hoa UÈn Linh CÊp 6	2;1;30668;1						32121			
+34282	Spirit Essence Tier 5	2;1;30667;1						32118			
+34283	Spirit Essence Tier 5	2;1;30667;1						32119			
+34284	Spirit Essence Gathering Level 6	2;1;30668;1						32120			
+34285	Spirit Essence Gathering Level 6	2;1;30668;1						32121			
 34286	H-LiÖt Nham-Lv7	0;148;101;1						32122			
 34287	H-Ph¸ Kh«ng-Lv7	0;148;102;1						32123			
 34288	H-Tóy KiÕm-Lv7	0;148;103;1						32124			
@@ -5705,10 +5705,10 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 34320	Nãn Khæng T­íc Minh V­¬ng (N÷ gîi c¶m)	0;108;931;1						32156	720		
 34321	Nãn Khæng T­íc Minh V­¬ng (KiÒu n÷)	0;108;932;1						32157	720		
 34322	Tinh Hoa UÈn Linh CÊp 4	2;1;30666;1						32158			
-34323	Tinh Hoa UÈn Linh CÊp 5	2;1;30667;1						32159			
-34324	Tinh Hoa UÈn Linh CÊp 5	2;1;30667;1						32160			
-34325	Tinh Hoa UÈn Linh CÊp 6	2;1;30668;1						32161			
-34326	Tinh Hoa UÈn Linh CÊp 6	2;1;30668;1						32162			
+34323	Spirit Essence Tier 5	2;1;30667;1						32159			
+34324	Spirit Essence Tier 5	2;1;30667;1						32160			
+34325	Spirit Essence Gathering Level 6	2;1;30668;1						32161			
+34326	Spirit Essence Gathering Level 6	2;1;30668;1						32162			
 34327	C-LiÖt Nham-Lv7	0;149;104;1						32163			
 34328	C-Ph¸ Kh«ng-Lv7	0;149;105;1						32164			
 34329	C-Tóy KiÕm-Lv7	0;149;106;1						32165			
@@ -5748,10 +5748,10 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 34363	ƒo Khæng T­íc Minh V­¬ng (N÷ gîi c¶m)	0;109;931;1						32199	720		
 34364	ƒo Khæng T­íc Minh V­¬ng (KiÒu n÷)	0;109;932;1						32200	720		
 34365	Tinh Hoa UÈn Linh CÊp 4	2;1;30666;1						32201			
-34366	Tinh Hoa UÈn Linh CÊp 5	2;1;30667;1						32202			
-34367	Tinh Hoa UÈn Linh CÊp 5	2;1;30667;1						32203			
-34368	Tinh Hoa UÈn Linh CÊp 6	2;1;30668;1						32204			
-34369	Tinh Hoa UÈn Linh CÊp 6	2;1;30668;1						32205			
+34366	Spirit Essence Tier 5	2;1;30667;1						32202			
+34367	Spirit Essence Tier 5	2;1;30667;1						32203			
+34368	Spirit Essence Gathering Level 6	2;1;30668;1						32204			
+34369	Spirit Essence Gathering Level 6	2;1;30668;1						32205			
 34370	T-LiÖt Nham-Lv7	0;150;101;1						32206			
 34371	T-Ph¸ Kh«ng-Lv7	0;150;102;1						32207			
 34372	T-Tóy KiÕm-Lv7	0;150;103;1						32208			
@@ -6005,18 +6005,18 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 34620	Kh¾c B¶n Vì CÊp 1 (§Çu)	2;1;31068;1						32455			
 34621	Kh¾c B¶n Vì CÊp 2 (§Çu)	2;1;31078;1						32456			
 34622	Kh¾c B¶n Linh Ho¹t CÊp 2 (§Çu)	2;1;31073;1						32457			
-34623	Kh¾c B¶n Vì CÊp 1 (¸o)	2;1;31069;1						32458			
-34624	Kh¾c B¶n Vì CÊp 2 (¸o)	2;1;31079;1						32459			
-34625	Kh¾c B¶n Linh Ho¹t CÊp 2 (¸o)	2;1;31074;1						32460			
-34626	Kh¾c B¶n Vì CÊp 1 (QuÇn)	2;1;31070;1						32461			
-34627	Kh¾c B¶n Vì CÊp 2 (QuÇn)	2;1;31080;1						32462			
-34628	Kh¾c B¶n Linh Ho¹t CÊp 2 (QuÇn)	2;1;31075;1						32463			
-34629	Kh¾c B¶n Vì CÊp 1 (NhÉn)	2;1;31071;1						32464			
-34630	Kh¾c B¶n Vì CÊp 2 (NhÉn)	2;1;31081;1						32465			
-34631	Kh¾c B¶n Linh Ho¹t CÊp 2 (NhÉn)	2;1;31076;1						32466			
+34623	Engraving Broken Level 1 (top)	2;1;31069;1						32458			
+34624	Engraving Plate Level 2 (Armor)	2;1;31079;1						32459			
+34625	Flexible Engraving Plate Level 2 (Armor)	2;1;31074;1						32460			
+34626	Engraving Broken Level 1 (pants)	2;1;31070;1						32461			
+34627	Engraving Plate Level 2 (Pants)	2;1;31080;1						32462			
+34628	Flexible Engraving Plate Level 2 (Pants)	2;1;31075;1						32463			
+34629	Engraving Plate Level 1 (Ring)	2;1;31071;1						32464			
+34630	Engraving Plate Level 2 (Ring)	2;1;31081;1						32465			
+34631	Flexible Engraving Plate Level 2 (Ring)	2;1;31076;1						32466			
 34632	Kh¾c B¶n Vì CÊp 1 (Ngäc Béi)	2;1;31072;1						32467			
 34633	Kh¾c B¶n Vì CÊp 2 (Ngäc Béi)	2;1;31082;1						32468			
-34634	Kh¾c B¶n Linh Ho¹t CÊp 2 (Trang Søc)	2;1;31077;1						32469			
+34634	Flexible Engraving Plate Level 2 (Accessory)	2;1;31077;1						32469			
 34635	Tr¸p TÇm B¶o	0;120;195;1	1	1		3464;1		32470			
 34636	Tr¸p TÇm B¶o	0;120;196;1	1	2		3464;1		32470			
 34637	Tr¸p TÇm B¶o	0;120;197;1	2	3		3464;1		32470			
@@ -6393,9 +6393,9 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 35008	Hµo HiÖp Tr¶o	0;11;30741;1	1	2	27			32528			
 35009	Hµo HiÖp Tr¶o	0;11;30741;1	2	3	27			32529			
 35010	Hµo HiÖp Tr¶o	0;11;30741;1	2	4	27			32530			
-35011	Håi Phong Tr¶m NhËt Ch©n QuyÓn (Cao CÊp)	0;107;30035;1						32531			
-35012	Håi Phong Tr¶m NhËt Ch©n QuyÓn (Cao CÊp)	0;107;30035;1						32532			
-35013	Håi Phong Tr¶m NhËt Ch©n QuyÓn (Cao CÊp)	0;107;30035;1						32533			
+35011	Returning Wind Slashing Sun Fist Manual (Advanced)	0;107;30035;1						32531			
+35012	Returning Wind Slashing Sun Fist Manual (Advanced)	0;107;30035;1						32532			
+35013	Returning Wind Slashing Sun Fist Manual (Advanced)	0;107;30035;1						32533			
 35014	Phô Kú Hµnh TrËn Ch©n QuyÓn (Cao CÊp)	0;107;30036;1						32534			
 35015	Phô Kú Hµnh TrËn Ch©n QuyÓn (Cao CÊp)	0;107;30036;1						32535			
 35016	Phô Kú Hµnh TrËn Ch©n QuyÓn (Cao CÊp)	0;107;30036;1						32536			
@@ -6427,7 +6427,7 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 35042	Oanh TrÇn Vò (Kim)	0;120;18;1	1	2				32562			
 35043	Oanh TrÇn Vò (Kim)	0;120;19;1	2	3				32563			
 35044	Oanh TrÇn Vò (Kim)	0;120;20;1	2	4				32564			
-35045	L¹c §µ Tr¾ng	0;105;148;1						32565			
+35045	White Camel	0;105;148;1						32565			
 35046	Lª TuyÕt	0;120;235;1	1	1				32566			
 35047	Lª TuyÕt	0;120;236;1	1	2				32567			
 35048	Lª TuyÕt	0;120;237;1	2	3				32568			
@@ -6440,7 +6440,7 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 35055	Lª Song	0;121;236;1	1	2				32575			
 35056	Lª Song	0;121;237;1	2	3				32576			
 35057	Lª Song	0;121;238;1	2	4				32577			
-35058	Håi Phong Tr¶m NhËt Ch©n QuyÓn	0;107;219;1						31122			
+35058	Returning Wind Slashing Sun Fist Manual	0;107;219;1						31122			
 35059	Phô Kú Hµnh TrËn Ch©n QuyÓn	0;107;220;1						31122			
 35060	Ng­ng HuyÕt Phong Hån Ch©n QuyÓn	0;107;221;1						31122			
 35061	Mò Hµo HiÖp	0;103;30568;1	1	1	25			32734;32770			
@@ -6489,11 +6489,11 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 35104	§«n Hoµng Hæ Ph¸ch	2;1;31119;1				2805;8		32814			
 35105	§«n Hoµng M· N·o	2;1;31121;1				2806;8		32815			
 35106	§« Hoµng HuyÒn Tinh	2;1;31120;1				2807;8		32816			
-35107	L­u Kim	2;1;31096;1				2808;10		32817			
+35107	Liu Jin	2;1;31096;1				2808;10		32817			
 35108	Thiªn V¨n Th¹ch	2;201;13;1				2809;5		32818			
 35109	H¾c B¹ch Kú	2;1;31168;1				2810;1		32819			
 35110	Tr­êng Hµi Du HiÖp	0;154;26;1				2811;1		32820			
-35111	ChiÕn Hµi ThiÕt HuyÕt	0;154;27;1				2822;1		32821			
+35111	Iron Blood Boots	0;154;27;1				2822;1		32821			
 35112	§¹o Hµi V©n Du	0;154;28;1				2823;1		32822			
 35113	Thiªn Tinh Th¹ch	2;1;31191;1				2825;6		32823			
 35114	Hång Liªn Hoa	0;105;30058;1				2824;1		32824			
@@ -8663,8 +8663,8 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 37278	Liªu_Thanh Long Nguyªn So¸i HiÖu Kú	0;102;31413;1	2	4	30		1	34911			
 37279	Thiªn QuyÒn Treo Th­ëng LÖnh	2;1;31197;1						34913	720		
 37280	Ngò H»ng Treo Th­ëng LÖnh	2;1;31198;1						34914	720		
-37281	Ph¸o Nhá	2;1;31204;1				2805;1000		34915			
-37282	Ph¸o Hoa ChiÕn Th¾ng	2;1;31205;10						34916			
+37281	Small Firecracker	2;1;31204;1				2805;1000		34915			
+37282	Victory Fireworks	2;1;31205;10						34916			
 37283	TÈy T©m Th¹ch cÊp 5	2;1;30525;1						34917			
 37284	TÈy T©m Th¹ch cÊp 5	2;1;30525;1						34918			
 37285	TÈy T©m Th¹ch cÊp 5	2;1;30525;1						34919			
@@ -8695,41 +8695,41 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 37310	Thiªn Tinh Th¹ch	2;1;31191;1						34938			
 37311	Kinh M¹ch Ng©n Nh©n	2;1;30731;1						34939	168		
 37312	Kinh M¹ch Ng©n Nh©n	2;1;30731;1						34940	168		
-37313	Tói §¸ Quý CÊp 1	2;1;30998;1						34941			
+37313	Gem Bag Tier 1	2;1;30998;1						34941			
 37314	Tói Trang BÞ Kim Xµ Cuång Vâ cÊp 3	2;1;30544;1						34942			
 37315	CÊp 3 TÈy T©m Th¹ch	2;1;30523;1						34943			
 37316	CÊp 3 LuyÖn L« ThiÕt	2;1;30529;1						34944			
 37317	ThiÕt Tinh cÊp 3	2;1;30535;1						34945			
-37318	§Êu hån	2;1;1157;1						34946			
+37318	Soul Duel	2;1;1157;1						34946			
 37319	Tói Cöu chuyÓn håi hån ®¬n	2;1;3380;1						34947			
 37320	VÐ TiÕu Y Vµng	2;1;30491;1						34948			
 37321	Hép M¶nh Thiªn Th¹ch (Nhá)	2;1;30788;1						34949			
-37322	Th¶o Ph¹t Lªnh 	2;1;30915;1						34950			
+37322	Subjugation Order	2;1;30915;1						34950			
 37323	HuyÒn Th¹ch	2;1;30997;1						34951			
 37324	Thiªn Tinh Th¹ch	2;1;31191;1					1	34952			
 37325	MËt TÝn Tr­ëng M«n	2;1;31060;1						34953			
-37326	Tói §¸ Quý CÊp 2	2;1;30999;1						34954			
+37326	Gem Bag Tier 2	2;1;30999;1						34954			
 37327	Tói Trang BÞ Kim Xµ cÊp 4	2;1;31231;1						34955			
 37328	QuyÕt YÕu Tµn Thiªn	2;1;31231;2						34956			
 37329	TÈy T©m Th¹ch cÊp 4	2;1;30524;1						34957			
 37330	LuyÖn L« ThiÕt cÊp 4	2;1;30530;1						34958			
-37331	§Êu hån	2;1;1157;1						34959			
+37331	Soul Duel	2;1;1157;1						34959			
 37332	Bao Thiªn Th¹ch	2;1;1050;1						34960			
-37333	Th¶o Ph¹t Lªnh 	2;1;30915;1						34961			
+37333	Subjugation Order	2;1;30915;1						34961			
 37334	HuyÒn Th¹ch	2;1;30997;1						34962			
 37335	Thiªn Tinh Th¹ch	2;1;31191;1					1	34963			
 37336	MËt TÝn Tr­ëng M«n	2;1;31060;1						34964			
-37337	LÖnh bµi ®é cèng hiÕn	2;1;30914;1						34965			
-37338	Tói §¸ Quý CÊp 3	2;1;31000;1						34966			
+37337	Contribution Token	2;1;30914;1						34965			
+37338	Gem Bag Tier 3	2;1;31000;1						34966			
 37339	Tói Tam D­¬ng Khai Th¸i	2;1;30911;1					1	34967			
 37340	QuyÕt YÕu Tµn Thiªn	2;1;31231;2						34968			
 37341	TÈy T©m Th¹ch cÊp 5	2;1;30525;1						34969			
 37342	LuyÖn L« ThiÕt cÊp 5	2;1;30531;1						34970			
-37343	§Êu hån	2;1;1157;1						34971			
+37343	Soul Duel	2;1;1157;1						34971			
 37344	Bao Thiªn Th¹ch	2;1;1050;1						34972			
-37345	Th¶o Ph¹t Lªnh 	2;1;30915;1						34973			
+37345	Subjugation Order	2;1;30915;1						34973			
 37346	Thiªn Tinh Th¹ch	2;1;31191;1					1	34974			
-37347	LÖnh bµi ®é cèng hiÕn	2;1;30914;1						34975			
+37347	Contribution Token	2;1;30914;1						34975			
 37348	ChÝnh D­¬ng ®Çu	0;108;668;1	1	1				34976			
 37349	ChÝnh D­¬ng ®Çu	0;108;669;1	1	2				34976			
 37350	ChÝnh D­¬ng ®Çu	0;108;670;1	2	3				34976			
@@ -9029,8 +9029,8 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 37644	®æi Tóy Ph¸ch	0;121;217;1	2	3			1	35024			
 37645	®æi Tóy Ph¸ch	0;121;218;1	2	4			1	35024			
 37646	Gi¸ng Sinh H¹nh Phóc	0;120;37;1					1	35025			
-37647	Xe TuÇn Léc mµu ®á	0;105;30041;1					1	35026			
-37648	Xe TuÇn Léc  xanh lôc	0;105;30042;1					1	35026			
+37647	Red Reindeer Cart	0;105;30041;1					1	35026			
+37648	Green Reindeer Cart	0;105;30042;1					1	35026			
 37649	§æi Linh Th¹ch Khãa-Cao 1	2;1;31249;1					1	35027			
 37650	§æi Linh Th¹ch Khãa-Cao 2	2;1;31250;1					1	35028			
 37651	§æi Linh Th¹ch Khãa-Cao 3	2;1;31251;1					1	35029			
@@ -9133,8 +9133,8 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 37748	H¾c DiÖu Th¹ch CÊp 4	2;22;404;1						35108			
 37749	B¹ch Liªn Hoa	0;105;30057;1				3520;1	1	36054			
 37750	Hång Liªn Hoa	0;105;30058;1				3521;1	1	35109			
-37751	Tö Liªn Hoa	0;105;30059;1				3522;1	1	36054			
-37752	Long M·	0;105;30056;1					1	35109			
+37751	Purple Lotus	0;105;30059;1				3522;1	1	36054			
+37752	Dragon Horse	0;105;30056;1					1	35109			
 37753	T¨ng cÊp Vò KhÝ Âm HuyÕt	0;14;32164;1			31			35111			
 37754	T¨ng cÊp Vò KhÝ Âm HuyÕt	0;2;32192;1			32			35112			
 37755	Mª Tung QuyÓn (Cao)	0;107;30041;1			31			35113			
@@ -12136,14 +12136,14 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 40751	PhiÕu §æi Ngo¹i Trang	2;1;31233;1				3545;10		35985			
 40752	Kinh M¹ch §ång Nh©n	2;1;30730;1				3546;10		35986			
 40753	ChÝ D­¬ng Hoµn	2;1;31255;1				3547;1000		35987			
-40754	Tói §¸ Quý CÊp 4	2;1;31001;1				3548;10	1	35988			
+40754	Gem Bag Tier 4	2;1;31001;1				3548;10	1	35988			
 40755	Kinh M¹ch Ng©n Nh©n	2;1;30731;1				3549;10	1	35989			
 40756	Tói s¸ch kü n¨ng lv5	2;1;31201;1				3550;10	1	35990			
 40757	Tói Tam D­¬ng Khai Th¸i	2;1;30911;1				3551;1	1	35991			
 40758	PhiÕu §æi Ngo¹i Trang	2;1;31233;1				3553;30		35993			
 40759	Kinh M¹ch §ång Nh©n	2;1;30730;1				3554;40		35994			
-40760	Tói §¸ Quý CÊp 4	2;1;31001;1				3555;20	1	35995			
-40761	Tói §¸ Quý CÊp 5	2;1;31024;1				3556;10	1	35996			
+40760	Gem Bag Tier 4	2;1;31001;1				3555;20	1	35995			
+40761	Gem Bag Tier 5	2;1;31024;1				3556;10	1	35996			
 40762	Kinh M¹ch Ng©n Nh©n	2;1;30731;1				3557;20	1	35997			
 40763	H¾c B¹ch Kú	2;1;31168;1				3558;1	1	35998			
 40764	Thiªn M«n Kim LÖnh	2;95;204;1				3559;3	1	35999			
@@ -12249,10 +12249,10 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 40864	Thanh	0;119;308;1		2			1	36030			
 40865	Thanh	0;119;309;1		3			1	36030			
 40866	Thanh	0;119;310;1		4			1	36030			
-40867	B»ng	0;120;311;1		1			1	36031			
-40868	B»ng	0;120;312;1		2			1	36031			
-40869	B»ng	0;120;313;1		3			1	36031			
-40870	B»ng	0;120;314;1		4			1	36031			
+40867	Peng	0;120;311;1		1			1	36031			
+40868	Peng	0;120;312;1		2			1	36031			
+40869	Peng	0;120;313;1		3			1	36031			
+40870	Peng	0;120;314;1		4			1	36031			
 40871	Nh¹c	0;121;307;1		1			1	36032			
 40872	Nh¹c	0;121;308;1		2			1	36032			
 40873	Nh¹c	0;121;309;1		3			1	36032			
@@ -12279,7 +12279,7 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 40894	DiÖp Th­îng Thu Phong	2;1;31162;1					1	36044			
 40895	Hép Ngo¹i Trang TiÒm Long	2;1;31166;1					1	36044			
 40896	Hép quµ S¸ch M· Thiªn H¹	2;1;31199;1					1	36044			
-40897	L¹c §µ Tr¾ng	0;105;184;1					1	36045			
+40897	White Camel	0;105;184;1					1	36045			
 40898	¤ V©n §¹p TuyÕt	0;105;30015;1					1	36045			
 40899	B¸ch ChiÕn Kim Gi¸p	0;105;203;1					1	36045			
 40900	ChiÕn Nghª	0;105;202;1					1	36045			
@@ -12304,18 +12304,18 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 40919	Soa Y	0;120;232;1	1	2			1	36046			
 40920	Soa Y	0;120;233;1	2	3			1	36046			
 40921	Soa Y	0;120;234;1	2	4			1	36046			
-40922	Nh¸nh §µo T­¬i	0;120;134;1	1	1			1	36046			
-40923	Nh¸nh §µo T­¬i	0;120;135;1	1	2			1	36046			
-40924	Nh¸nh §µo T­¬i	0;120;136;1	2	3			1	36046			
-40925	Nh¸nh §µo T­¬i	0;120;137;1	2	4			1	36046			
-40926	Con C¸-Eo (§á)	0;120;126;1	1	1			1	36046			
-40927	Con C¸-Eo (§á)	0;120;127;1	1	2			1	36046			
-40928	Con C¸-Eo (§á)	0;120;128;1	2	3			1	36046			
-40929	Con C¸-Eo (§á)	0;120;129;1	2	4			1	36046			
-40930	Con C¸-L­ng (§á)	0;120;130;1	1	1			1	36046			
-40931	Con C¸-L­ng (§á)	0;120;131;1	1	2			1	36046			
-40932	Con C¸-L­ng (§á)	0;120;132;1	2	3			1	36046			
-40933	Con C¸-L­ng (§á)	0;120;133;1	2	4			1	36046			
+40922	Fresh Peach Branch	0;120;134;1	1	1			1	36046			
+40923	Fresh Peach Branch	0;120;135;1	1	2			1	36046			
+40924	Fresh Peach Branch	0;120;136;1	2	3			1	36046			
+40925	Fresh Peach Branch	0;120;137;1	2	4			1	36046			
+40926	Fish Pendant (Red)	0;120;126;1	1	1			1	36046			
+40927	Fish Pendant (Red)	0;120;127;1	1	2			1	36046			
+40928	Fish Pendant (Red)	0;120;128;1	2	3			1	36046			
+40929	Fish Pendant (Red)	0;120;129;1	2	4			1	36046			
+40930	Fish Charm (Red)	0;120;130;1	1	1			1	36046			
+40931	Fish Charm (Red)	0;120;131;1	1	2			1	36046			
+40932	Fish Charm (Red)	0;120;132;1	2	3			1	36046			
+40933	Fish Charm (Red)	0;120;133;1	2	4			1	36046			
 40934	Hoa Hång §á-Vai	0;119;72;1	1	1			1	36046			
 40935	Hoa Hång §á-Vai	0;119;73;1	1	2			1	36046			
 40936	Hoa Hång §á-Vai	0;119;74;1	2	3			1	36046			
@@ -12427,7 +12427,7 @@ ID	Title	AwrdItem	NeedSex	NeedBody	NeedRoute	AwardTimes	GlobalMsg	ExchangeMode	T
 41042	NguyÖtB¹chTh¹ch Lv3	2;22;203;1				3397;40		36051			
 41043	Hæ Ph¸ch Th¹ch CÊp 3	2;22;303;1				3395;40		36051			
 41044	H¾c DiÖu Th¹ch CÊp 3	2;22;403;1				3396;40		36051			
-41045	Long M·	0;105;30056;1				3523;1	1	36052			
+41045	Dragon Horse	0;105;30056;1				3523;1	1	36052			
 41046	TuyÕt Nghª	0;105;199;1				3514;1	1	36053			
 41047	Chu T­íc Hån	2;1;31514;1						36055			
 41048	Chu T­íc Hån	2;1;31514;1						36056			

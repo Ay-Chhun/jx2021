@@ -21,7 +21,7 @@ local nDeadNum = 0;
 			nKillNum = nKillNum + GetTaskTemp(TOTAL_KILL_NUM);
 		end
 	end
-	news_str = nMurderName.."  ®· giÕt  "..nDecedentName..", sè ng­êi ®éi nµy ®¸nh b¹i hiÖn lµ:"..nKillNum..".";
+	news_str = nMurderName.."  has killed"..nDecedentName..", sè ng­êi ®éi nµy ®¸nh b¹i hiÖn lµ:"..nKillNum..".";
 	PlayerIndex = nDecedentIndex;
 	
 	Msg2MSAll(TEAM_MISSION_ID,news_str);
